@@ -1,0 +1,235 @@
+/* ===========================
+   NXT Premium GenPage Layout
+   =========================== */
+
+:root{
+  --nx-bg: #3b240f;
+  --nx-card: rgba(255,255,255,.06);
+  --nx-card2: rgba(255,255,255,.045);
+  --nx-border: rgba(255,255,255,.10);
+  --nx-border2: rgba(255,255,255,.14);
+
+  --nx-text: rgba(255,255,255,.92);
+  --nx-muted: rgba(255,255,255,.72);
+
+  --nx-accent: #f6c34a;
+  --nx-accent2: #ffb240;
+
+  --nx-radius: 18px;
+}
+
+/* ---------- Page frame width fix ---------- */
+/* aapke screenshot ka main issue yahi hai */
+.shell{
+  width: 100%;
+  max-width: none;              /* remove tight wrapper */
+}
+
+.genp-wrap{
+  padding: 18px 14px;           /* reduce extra side spacing */
+}
+
+.genp-frame{
+  width: 100%;
+  max-width: 1280px;            /* desktop space use */
+  margin: 0 auto;
+  padding: 18px;
+  border-radius: 22px;
+  background: rgba(0,0,0,.10);
+  border: 1px solid rgba(255,255,255,.06);
+}
+
+/* Large screens -> wider */
+@media (min-width: 1400px){
+  .genp-frame{ max-width: 1320px; }
+}
+
+/* ---------- Typography ---------- */
+.nxh1{
+  font-size: clamp(26px, 2.2vw, 40px);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: var(--nx-text);
+  margin: 0 0 10px;
+}
+.nxh2{
+  font-size: clamp(18px, 1.3vw, 24px);
+  line-height: 1.2;
+  color: var(--nx-text);
+}
+.nxlead{
+  color: var(--nx-muted);
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+
+/* ---------- Section spacing (tight but premium) ---------- */
+.nxsec{
+  margin-top: 16px;
+}
+.nxsec__head{
+  margin-bottom: 10px;
+}
+
+/* ---------- Premium cards/panels ---------- */
+.nxpanel,
+.nxbox,
+.nxcard,
+.nxreview-card,
+.tutor-card,
+.blogcard,
+.nxrel__card{
+  border-radius: var(--nx-radius);
+  border: 1px solid var(--nx-border);
+  background: linear-gradient(180deg, var(--nx-card), var(--nx-card2));
+  box-shadow: 0 10px 26px rgba(0,0,0,.18);
+}
+
+/* keep padding consistent */
+.nxpanel{ padding: 14px; }
+.nxbox{ padding: 14px; }
+
+/* ---------- Hero layout: use space ---------- */
+.nxhero{
+  display: grid;
+  grid-template-columns: 1.25fr .75fr; /* more space to content */
+  gap: 16px;
+  align-items: start;
+}
+
+@media (max-width: 980px){
+  .nxhero{ grid-template-columns: 1fr; }
+}
+
+/* ---------- Chips ---------- */
+.nxchips{ display:flex; flex-wrap:wrap; gap:10px; margin-top: 12px; }
+.nxchip{
+  display:inline-flex;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.06);
+  color: rgba(255,255,255,.86);
+  font-size: 12px;
+}
+
+/* ---------- CTA buttons ---------- */
+.nxcta-row{ display:flex; gap:10px; margin-top: 12px; flex-wrap: wrap; }
+.nxbtn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 700;
+  border: 1px solid rgba(255,255,255,.12);
+  text-decoration:none;
+}
+
+.btn-accent{
+  background: linear-gradient(180deg, #ffd36a, #f6c34a);
+  color:#15120b;
+}
+.nxbtn--ghost{
+  background: rgba(255,255,255,.06);
+  color: var(--nx-text);
+}
+
+/* ---------- Lists: more compact ---------- */
+.nxlist{ display:flex; flex-direction:column; gap:8px; }
+.nxlist__item{
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.04);
+  color: rgba(255,255,255,.85);
+}
+
+/* ---------- Two-column panels (YOUR FIX) ---------- */
+.nxsplit{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 14px;
+}
+@media (max-width: 900px){
+  .nxsplit{ grid-template-columns: 1fr; }
+}
+
+/* ---------- Generic grid: increase columns on wide screens ---------- */
+.nxgrid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 12px;
+}
+@media (max-width: 980px){
+  .nxgrid{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+@media (max-width: 560px){
+  .nxgrid{ grid-template-columns: 1fr; }
+}
+
+/* ---------- Breadcrumb/meta row spacing ---------- */
+.genp-top{
+  padding: 10px 10px 0;
+}
+.genp-breadcrumb, .genp-meta{
+  gap: 8px;
+}
+
+/* ---------- Footer gap fix ---------- */
+.footer-modern{
+  margin-top: 20px;
+}
+.nxrel__head{ display:flex; align-items:flex-end; justify-content:space-between; gap:12px; } .nxrel__controls{ display:flex; gap:8px; } .nxrel__btn{ width:38px; height:38px; border-radius:12px; border:1px solid rgba(255,255,255,.14); background:rgba(255,255,255,.06); color:#fff; cursor:pointer; line-height:1; } .nxrel__btn:hover{ background:rgba(255,255,255,.10); } /* Horizontal track */ .nxrel__track{ margin-top:12px; display:flex; gap:12px; overflow-x:auto; overflow-y:visible; /* IMPORTANT: chip cut nahi hogi */ padding:6px 2px 12px; /* IMPORTANT: chip/border ko space */ scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; scroll-padding-left:2px; } /* scrollbar optional */ .nxrel__track::-webkit-scrollbar{ height:8px; } .nxrel__track::-webkit-scrollbar-thumb{ background:rgba(255,255,255,.18); border-radius:999px; } .nxrel__track::-webkit-scrollbar-track{ background:rgba(255,255,255,.06); border-radius:999px; } /* Card */ .nxrel__card{ flex:0 0 auto; min-width: 340px; /* screenshot jaisa wide */ max-width: 380px; scroll-snap-align:start; border-radius:18px; border:1px solid rgba(255,255,255,.10); background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03)); padding:14px 14px 12px; text-decoration:none; color:#fff; /* IMPORTANT: overflow hidden mat karna; warna chip ka border/shine cut lagta hai */ overflow:visible; box-shadow: 0 10px 26px rgba(0,0,0,.18); } .nxrel__card:hover{ transform: translateY(-2px); transition: .18s ease; border-color: rgba(255,255,255,.18); background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04)); } /* Title row + chip (NO overlap) */ .nxrel__top{ display:flex; align-items:flex-start; justify-content:space-between; gap:10px; } /* Title: 2 line clamp + chip ke liye space */ .nxrel__title{ font-weight:700; font-size:14.5px; line-height:1.35; /* clamp 2 lines clean */ display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; /* allow it to shrink so chip always fits */ min-width:0; flex:1 1 auto; } /* Chip: never cut, never overlap */ .nxrel__chip{ flex:0 0 auto; white-space:nowrap; font-size:11px; padding:6px 10px; border-radius:999px; background: rgba(255,178,64,.14); border: 1px solid rgba(255,178,64,.28); color:#ffb240; margin-top:2px; /* make it crisp */ box-shadow: 0 6px 18px rgba(0,0,0,.18); } /* Meta */ .nxrel__meta{ margin-top:10px; font-size:12px; opacity:.78; } /* Mobile */ @media (max-width: 520px){ .nxrel__card{ min-width: 280px; } .nxrel__btn{ width:36px; height:36px; } }
+  /* ===== Premium Schools Fit ===== */
+.nxschoolfit{
+  display:grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 14px;
+  align-items: start;
+}
+
+@media (max-width: 980px){
+  .nxschoolfit{ grid-template-columns: 1fr; }
+}
+
+.nxschoolfit__grid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 12px;
+}
+
+@media (max-width: 520px){
+  .nxschoolfit__grid{ grid-template-columns: 1fr; }
+}
+
+.nxschoolfit__card{
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.04);
+  padding: 14px;
+  box-shadow: 0 10px 22px rgba(0,0,0,.16);
+}
+
+.nxschoolfit__name{
+  font-weight: 800;
+  font-size: 14.5px;
+  line-height: 1.25;
+}
+
+.nxschoolfit__meta{
+  margin-top: 6px;
+  font-size: 12px;
+  opacity: .78;
+}
+
+.nxpanel--tight{ padding: 14px; }
+.nxlist--compact .nxlist__item{
+  padding: 7px 0;
+  border-bottom: 1px dashed rgba(255,255,255,.10);
+}
+.nxschoolfit__title{
+  font-weight: 800;
+  margin-bottom: 8px;
+}

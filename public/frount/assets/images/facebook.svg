@@ -1,0 +1,9 @@
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fbGradient" x1="0" y1="0" x2="24" y2="24">
+      <stop offset="0%" stop-color="#3B82F6"></stop>
+      <stop offset="100%" stop-color="#1E3A8A"></stop>
+    </linearGradient>
+  </defs>
+  <path d="M15 3h-2.5A4.5 4.5 0 008 7.5V10H6v4h2v8h4v-8h3l1-4h-4V7.5a1 1 0 011-1H16V3h-1z" fill="url(#fbGradient)"></path>
+</svg>
