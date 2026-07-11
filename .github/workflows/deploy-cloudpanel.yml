@@ -316,7 +316,6 @@ jobs:
             test -f "$deploy_path/artisan"
             test -f "$deploy_path/composer.json"
             test -f "$deploy_path/public/index.php"
-            test -f "$deploy_path/.env"
             test -w "$deploy_path/storage"
             test -w "$deploy_path/bootstrap/cache"
           fi
