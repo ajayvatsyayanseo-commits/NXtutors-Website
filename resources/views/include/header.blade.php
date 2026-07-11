@@ -34,147 +34,381 @@
   <div class="shell">
   <header class="topbar">
   <div class="topbar-left">
-    <a href="{{ url('/')}}" style="text-decoration: none; color: #fff;"  >
+    <a href="{{ url('/') }}" style="text-decoration: none; color: #fff;">
     <!-- <div class="badge">NXT</div>
     <span class="logo-text">Nxtutors</span> -->
-    <img src="{{ asset('public/storage/logos/' . $setting->logo) }}" style="width: 70px;
+    <img src="{{ asset('public/storage/logos/' . $setting->logo) }}" style="width: 60px;
     border-radius: 50%" alt="logo" />
   </a>
   </div>
 <style>
-   /* ================= HEADER ================= */
+  /* ================= HEADER — NEW DESIGN ================= */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
-.topbar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:20px;
-    position:relative;
-}
+  .topbar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 18px;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    flex-wrap: nowrap;
+  }
 
-.topbar-left{
-    display:flex;
-    align-items:center;
-}
+  /* Logo area */
+  .topbar-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
+  .topbar-left a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+  }
+  .topbar-logo-label {
+    font-size: 11px;
+    color: rgba(255,255,255,0.75);
+    letter-spacing: 0.5px;
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  .topbar-logo-label::after {
+    content: '▲';
+    font-size: 8px;
+    color: rgba(255,255,255,0.5);
+  }
 
-.topbar-right{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    flex-wrap:wrap;
-}
+  /* Right side nav */
+  .topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: nowrap;
+    flex: 1;
+  }
 
-.mobile-menu-btn{
-    display:none;
-    width:42px;
-    height:42px;
-    background:none;
-    border:none;
-    color:#fff;
-    font-size:28px;
-    cursor:pointer;
-    justify-content:center;
-    align-items:center;
-    transition:.3s;
-}
+  /* Divider after Home */
+  .nav-divider {
+    width: 1px;
+    height: 22px;
+    background: rgba(255,255,255,0.18);
+    flex-shrink: 0;
+    margin: 0 2px;
+  }
 
-.mobile-menu-btn:hover{
-    opacity:.8;
-}
+  /* Base pill button */
+  .location-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 15px;
+    border-radius: 50px;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.06);
+    color: #fff;
+    font-size: 13.5px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background .2s, border-color .2s;
+    white-space: nowrap;
+    font-family: 'Inter', sans-serif;
+  }
+  .location-btn:hover {
+    background: rgba(255,255,255,0.13);
+    border-color: rgba(255,255,255,0.25);
+    color: #fff;
+  }
 
-/* ================= MOBILE ================= */
+  /* Dot indicator for Home / active items */
+  .nav-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #e75480;
+    flex-shrink: 0;
+    display: inline-block;
+  }
 
-@media (max-width:991px){
+  /* City icon */
+  .nav-icon {
+    font-size: 13px;
+    opacity: 0.8;
+  }
 
-.topbar{
-    display:grid;
-    grid-template-columns:1fr auto;
-    align-items:center;
-    gap:15px;
-}
+  /* Location dropdown button */
+  #locationBtn {
+    gap: 6px;
+  }
+  .caret {
+    font-size: 10px;
+    opacity: 0.7;
+    margin-left: 2px;
+  }
 
-.topbar-left{
-    justify-self:start;
-}
+  /* Theme picker */
+  .theme-picker { position: relative; }
+  .theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 15px;
+    border-radius: 50px;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.06);
+    color: #fff;
+    font-size: 13.5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background .2s;
+    font-family: 'Inter', sans-serif;
+    white-space: nowrap;
+  }
+  .theme-toggle:hover { background: rgba(255,255,255,0.13); }
+  .theme-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #e75480;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+  .theme-label { font-weight: 500; }
 
-.mobile-menu-btn{
-    display:flex;
-    justify-self:end;
-}
+  .theme-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    background: #2a1030;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 14px;
+    padding: 8px;
+    min-width: 160px;
+    z-index: 9999;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.45);
+  }
+  .theme-menu.open { display: block; }
+  .theme-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 8px 10px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    transition: background .2s;
+  }
+  .theme-option:hover { background: rgba(255,255,255,0.1); }
+  .theme-option-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .theme-option-dot--default { background: #888; }
+  .theme-option-dot--blue    { background: #4a9fff; }
+  .theme-option-dot--green   { background: #4caf50; }
+  .theme-option-dot--yellow  { background: #ffcc00; }
+  .theme-option-dot--pink    { background: #e75480; }
+  .theme-option-dot--orange  { background: #ff7043; }
+  .theme-option-check { margin-left: auto; font-size: 12px; opacity: 0; }
+  .theme-option.selected .theme-option-check { opacity: 1; }
 
-.topbar-right{
-    display:none;
-    grid-column:1/-1;
-    width:100%;
-    margin-top:20px;
-    flex-direction:column;
-    gap:12px;
-    animation:menuFade .35s ease;
-}
+  /* CTA buttons row */
+  .cta-buttons {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: nowrap;
+  }
 
-.topbar-right.active{
-    display:flex;
-}
+  /* WhatsApp CTA — pink solid */
+  .btn-accent.topbar-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 16px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #e75480 0%, #c0407a 100%);
+    color: #fff;
+    font-size: 13.5px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: filter .2s, transform .15s;
+    box-shadow: 0 2px 12px rgba(231,84,128,0.35);
+    font-family: 'Inter', sans-serif;
+  }
+  .btn-accent.topbar-whatsapp:hover {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+  }
+  .dot-online {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    flex-shrink: 0;
+    box-shadow: 0 0 6px rgba(255,255,255,0.6);
+    animation: pulse-dot 1.8s ease-in-out infinite;
+  }
+  @keyframes pulse-dot {
+    0%,100% { opacity:1; transform:scale(1); }
+    50%      { opacity:.6; transform:scale(1.3); }
+  }
 
-.location-btn,
-#locationBtn,
-.theme-picker,
-.theme-toggle,
-.btn,
-.topbar-whatsapp,
-.topbar-partner{
-    width:100%;
-}
+  /* Ghost button — outlined pill */
+  .btn-ghost.topbar-partner {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 15px;
+    border-radius: 50px;
+    border: 1px solid rgba(255,255,255,0.22);
+    background: rgba(255,255,255,0.06);
+    color: #fff;
+    font-size: 13.5px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background .2s, border-color .2s;
+    font-family: 'Inter', sans-serif;
+  }
+  .btn-ghost.topbar-partner:hover {
+    background: rgba(255,255,255,0.13);
+    border-color: rgba(255,255,255,0.35);
+  }
 
-.location-btn,
-.theme-toggle,
-.btn{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:48px;
-}
+  /* Login button */
+  .location-btn.login-btn {
+    gap: 6px;
+  }
 
-.cta-buttons{
-    width:100%;
-    display:flex;
-    flex-direction:column;
-    gap:12px;
-}
+  /* ===== HAMBURGER BUTTON ===== */
+  .mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.14);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0;
+    transition: background .2s;
+    flex-shrink: 0;
+  }
+  .mobile-menu-btn:hover { background: rgba(255,255,255,0.14); }
+  .mobile-menu-btn span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+    transition: transform .3s, opacity .3s;
+  }
+  .mobile-menu-btn.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .mobile-menu-btn.open span:nth-child(2) { opacity: 0; }
+  .mobile-menu-btn.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-.theme-picker{
-    position:relative;
-}
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 1100px) {
+    .topbar { gap: 4px; }
+    .location-btn, .theme-toggle { padding: 6px 11px; font-size: 12.5px; }
+    .btn-accent.topbar-whatsapp, .btn-ghost.topbar-partner { padding: 7px 12px; font-size: 12.5px; }
+  }
 
-.theme-menu{
-    position:static;
-    width:100%;
-}
+  @media (max-width: 991px) {
+    .topbar {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 0;
+      padding: 10px 16px;
+      flex-wrap: wrap;
+    }
+    .topbar-left { justify-self: start; }
+    .mobile-menu-btn { display: flex; justify-self: end; }
 
-}
+    .topbar-right {
+      display: none;
+      grid-column: 1 / -1;
+      width: 100%;
+      margin-top: 14px;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 8px;
+    }
+    .topbar-right.active { display: flex; animation: menuFade .3s ease; }
 
-@keyframes menuFade{
+    .nav-divider { display: none; }
 
-from{
-    opacity:0;
-    transform:translateY(-10px);
-}
+    .location-btn,
+    #locationBtn,
+    .theme-toggle,
+    .btn-accent.topbar-whatsapp,
+    .btn-ghost.topbar-partner {
+      width: 100%;
+      justify-content: center;
+      min-height: 46px;
+      border-radius: 12px;
+    }
 
-to{
-    opacity:1;
-    transform:translateY(0);
-}
+    .cta-buttons {
+      width: 100%;
+      flex-direction: column;
+      gap: 8px;
+    }
 
-}
+    .theme-menu {
+      position: static;
+      border-radius: 12px;
+      margin-top: 4px;
+      width: 100%;
+      box-shadow: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .topbar { padding: 8px 12px; }
+  }
+
+  @keyframes menuFade {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
 </style>
-  <button class="mobile-menu-btn" id="mobileMenuBtn">
-        ☰
-    </button>
+  <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Toggle menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
   <div class="topbar-right" id="topbarMenu">
-    <a class="location-btn"  href="{{ url('/')}}">Home</a>
-
-    <a class="location-btn"  href="{{ url('/')}}/city">City</a>
+    <a class="location-btn" href="{{ url('/') }}">
+      <span class="nav-dot"></span> Home
+    </a>
+    <span class="nav-divider"></span>
+    <a class="location-btn" href="{{ url('/') }}/city">
+      <span class="nav-icon">📍</span> City
+    </a>
  
     <button class="location-btn" id="locationBtn" type="button">
       <span id="userLocation">Detecting location...</span>
@@ -232,19 +466,22 @@ to{
   <a class="btn btn-accent topbar-whatsapp"
      href="#"
      data-modal-target="demoModal">
-    <span class="dot-online"></span>
+    <img src="{{ asset('public/uploads/whatsapp/whatsapp.png') }}" alt="WhatsApp" style="width:18px;height:18px;object-fit:contain;flex-shrink:0;" />
     <span>Chat on WhatsApp</span>
   </a>
 
   <a class="btn btn-ghost topbar-partner"
      href="#"
      data-modal-target="tutorModal">
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16" style="flex-shrink:0"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.029 10 8 10c-2.03 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/></svg>
     New Tutor Partner
   </a>
 
    @if (!session()->has('userid'))
-              <a href="{{ url('/login') }}" class="location-btn">Login</a>
-               
+    <a href="{{ url('/login') }}" class="location-btn login-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16" style="flex-shrink:0"><path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/><path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/></svg>
+      Login
+    </a>
                 @else
                 @php $role = session('join_as'); @endphp
                 @if ($role === 'student')
@@ -544,34 +781,40 @@ document.addEventListener('DOMContentLoaded', function () {
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
+    /* ---- Mobile hamburger ---- */
     const menuBtn = document.getElementById("mobileMenuBtn");
-    const menu = document.getElementById("topbarMenu");
+    const menu    = document.getElementById("topbarMenu");
 
-    if (!menuBtn || !menu) return;
+    if (menuBtn && menu) {
+        menuBtn.addEventListener("click", function () {
+            menu.classList.toggle("active");
+            this.classList.toggle("open");
+        });
 
-    menuBtn.addEventListener("click", function () {
+        window.addEventListener("resize", function () {
+            if (window.innerWidth > 991) {
+                menu.classList.remove("active");
+                menuBtn.classList.remove("open");
+            }
+        });
+    }
 
-        menu.classList.toggle("active");
+    /* ---- Theme dropdown ---- */
+    const themeToggle = document.getElementById("themeToggle");
+    const themeMenu   = document.getElementById("themeMenu");
 
-        if (menu.classList.contains("active")) {
-            this.innerHTML = "✕";
-        } else {
-            this.innerHTML = "☰";
-        }
-
-    });
-
-    // Desktop par resize hone par menu reset
-    window.addEventListener("resize", function () {
-
-        if (window.innerWidth > 991) {
-
-            menu.classList.remove("active");
-            menuBtn.innerHTML = "☰";
-
-        }
-
-    });
+    if (themeToggle && themeMenu) {
+        themeToggle.addEventListener("click", function (e) {
+            e.stopPropagation();
+            themeMenu.classList.toggle("open");
+        });
+        document.addEventListener("click", function () {
+            themeMenu.classList.remove("open");
+        });
+        themeMenu.addEventListener("click", function (e) {
+            e.stopPropagation();
+        });
+    }
 
 });
 </script>

@@ -226,48 +226,243 @@
       
  
 
-      <section class="section section--seo">
-  <div class="seo-layout">
-    <!-- LEFT: TEXT -->
-    <div class="seo-text">
-      <h2 class="section-title">AI-Based Tutor Matching Across India</h2>
+<!-- AI TUTOR MATCHING -->
+<section class="section ai-matching-section">
+  <style>
+    .ai-section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 40px;
+    }
+    
+    .ai-section-header h2 {
+      font-size: clamp(24px, 3.5vw, 32px);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+    
+    .ai-section-header p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--text-subtle, #9ca3af);
+    }
+    
+    /* Top 3 Columns Grid */
+    .ai-grid-top {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+    
+    .ai-card-small {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      padding: 24px;
+      transition: transform 0.2s, background-color 0.2s, border-color 0.2s;
+    }
+    
+    .ai-card-small:hover {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(255, 255, 255, 0.16);
+      transform: translateY(-2px);
+    }
+    
+    .ai-card-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: rgba(251, 191, 36, 0.1);
+      border: 1px solid rgba(251, 191, 36, 0.2);
+      color: var(--accent, #fbbf24);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    
+    .ai-card-small h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    
+    .ai-card-small p {
+      font-size: 13.5px;
+      line-height: 1.6;
+      color: var(--text-subtle, #9ca3af);
+      margin: 0;
+    }
+    
+    /* Large Card Below */
+    .ai-card-large {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 24px;
+      padding: 32px;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    
+    .ai-card-large-content h3 {
+      font-size: clamp(20px, 3vw, 24px);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 14px;
+    }
+    
+    .ai-card-large-content p {
+      font-size: 14.5px;
+      line-height: 1.6;
+      color: var(--text-subtle, #9ca3af);
+      margin: 0 0 24px;
+    }
+    
+    .ai-check-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+    .ai-check-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14.5px;
+      font-weight: 600;
+      color: #fff;
+    }
+    
+    .ai-check-icon {
+      color: #10b981; /* Emerald green checkmark */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .ai-card-large-image {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .ai-card-large-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .ai-image-badge {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 6px 14px;
+      border-radius: 30px;
+      font-size: 11px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 0.5px;
+    }
+    
+    /* Responsive */
+    @media (max-width: 991px) {
+      .ai-grid-top {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .ai-card-large {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 24px;
+      }
+    }
+  </style>
 
-      <p>
-        Nxtutors is an AI-powered tutor and education matching platform connecting parents and
-        students with verified educators across India. We provide home tutors, online tutors,
-        institute mentors and hybrid academic support for Classes 6–12 across CBSE, ICSE, IB,
-        ISC and IGCSE boards.
-      </p>
+  <div class="ai-section-header">
+    <h2>AI-Based Tutor Matching Across India</h2>
+    <p>Nxtutors is an AI-powered tutor and education matching platform connecting parents and students with verified educators across India.</p>
+  </div>
 
-      <p>
-        Instead of browsing random tutor listings, our structured AI recommendation system evaluates
-        academic compatibility and delivers a shortlist of 2–3 high-fit tutors based on subject
-        expertise, board alignment, availability, budget and reliability signals.
-      </p>
-
-      <p>
-        We also support competitive exam preparation including JEE and NEET through specialised
-        mentors and structured learning plans. Parents can book a demo class to evaluate teaching
-        clarity and decide confidently.
-      </p>
-
-      <ul class="seo-points">
-        <li>Verified tutors for home, online and hybrid learning across India.</li>
-        <li>Support for CBSE, ICSE, IB, ISC, IGCSE + JEE &amp; NEET.</li>
-        <li>AI-based shortlisting: get 2–3 best matches instead of long lists.</li>
-      </ul>
+  <!-- Top Row Grid -->
+  <div class="ai-grid-top">
+    <!-- Card 1 -->
+    <div class="ai-card-small">
+      <div class="ai-card-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l-.019.007a1 1 0 0 0-.528.816v8.354a1 1 0 0 0 .528.816l6 2.5.019.007a.5.5 0 0 0 .372 0l6-2.5.019-.007a1 1 0 0 0 .528-.816V4.323a1 1 0 0 0-.528-.816l-6-2.5zM8 4.07 13.06 6.18 8 8.29 2.94 6.18 8 4.07zM2 7.64v4.44a.5.5 0 0 0 .264.44l5.236 2.18v-4.88L2 7.64zm12 0v4.44a.5.5 0 0 1-.264.44l-5.236 2.18v-4.88L14 7.64z"/>
+        </svg>
+      </div>
+      <h3>AI-Based Shortlisting</h3>
+      <p>Instead of browsing random tutor listings, our structured AI recommendation system evaluates academic compatibility and delivers a shortlist.</p>
     </div>
 
-    <!-- RIGHT: IMAGE CARD -->
-    <aside class="seo-image">
-      <div class="seo-image-card">
-        <img
-          src="{{ asset('public/frount/assets') }}/images/aa.png"
-          alt="AI powered tutor matching platform across India" loading="lazy" decoding="async"
-        />
-        <div class="seo-badge">AI-Based · Verified Tutors · India-Wide</div>
+    <!-- Card 2 -->
+    <div class="ai-card-small">
+      <div class="ai-card-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM11 9.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM11 12.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM8 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM8 9.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM8 12.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM5 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM5 9.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM5 12.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+          <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+        </svg>
       </div>
-    </aside>
+      <h3>Academic Support</h3>
+      <p>We provide home tutors, online tutors, institute mentors and hybrid academic support for Classes 6–12 across CBSE, ICSE, IB, ISC and IGCSE boards.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="ai-card-small">
+      <div class="ai-card-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.24 62.24 0 0 1 5.072.56zm3.857 11.758a.5.5 0 0 0 .708-.708L5.707 7.682a.5.5 0 0 0-.708 0l-1.39 1.39a.5.5 0 1 0 .708.708l1.036-1.036 3.576 3.574z"/>
+        </svg>
+      </div>
+      <h3>Demo &amp; Evaluation</h3>
+      <p>We support competitive exam preparation including JEE and NEET. Parents can book a demo class to evaluate teaching clarity and decide confidently.</p>
+    </div>
+  </div>
+
+  <!-- Large Card Below -->
+  <div class="ai-card-large">
+    <div class="ai-card-large-content">
+      <h3>Shortlist of 2–3 High-Fit Tutors</h3>
+      <p>Instead of browsing random tutor listings, our recommendation system evaluates compatibility and delivers a shortlist based on subject expertise, board alignment, availability, budget and reliability signals.</p>
+      <div class="ai-check-list">
+        <div class="ai-check-item">
+          <span class="ai-check-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+          </span>
+          <span>Verified tutors for home, online and hybrid learning across India.</span>
+        </div>
+        <div class="ai-check-item">
+          <span class="ai-check-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+          </span>
+          <span>Support for CBSE, ICSE, IB, ISC, IGCSE + JEE &amp; NEET.</span>
+        </div>
+        <div class="ai-check-item">
+          <span class="ai-check-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+          </span>
+          <span>AI-based shortlisting: get 2–3 best matches instead of long lists.</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="ai-card-large-image">
+      <img src="{{ asset('public/frount/assets') }}/images/aa.png" alt="AI powered tutor matching platform across India" loading="lazy" decoding="async" />
+      <div class="ai-image-badge">AI-Based · Verified Tutors · India-Wide</div>
+    </div>
   </div>
 </section>
 
@@ -291,43 +486,218 @@
 
       <!-- PARENT GUIDE -->
       <section class="section">
-        <div class="section-head section-head--row">
-          <div>
-            <h2 class="section-title">Parent’s Guide — Choosing the right tutor</h2>
-            <p class="section-subtitle">
+        <style>
+          .parent-guide-container {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            margin-top: 15px;
+          }
+          
+          .parent-guide-left {
+            flex: 0 0 320px;
+            max-width: 320px;
+          }
+          
+          .parent-guide-right {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+          }
+          
+          .guide-badge {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: var(--accent, #fbbf24);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+          }
+          
+          .guide-main-title {
+            font-size: clamp(24px, 3.5vw, 32px);
+            font-weight: 800;
+            line-height: 1.25;
+            margin: 0 0 12px;
+            color: #fff;
+          }
+          
+          .guide-main-subtitle {
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--text-subtle, #9ca3af);
+            margin: 0 0 24px;
+          }
+          
+          
+          /* Cards */
+          .guide-card-new {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+          }
+          
+          .guide-card-no {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: var(--accent, #fbbf24);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 20px;
+          }
+          
+          .guide-card-heading {
+            font-size: 18px;
+            font-weight: 700;
+            margin: 0 0 16px;
+            color: #fff;
+          }
+          
+          .guide-card-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+          }
+          
+          .guide-card-list li {
+            display: flex;
+            align-items: flex-start;
+            font-size: 13.5px;
+            line-height: 1.5;
+            color: var(--text-subtle, #9ca3af);
+          }
+          
+          .circle-bullet {
+            width: 8px;
+            height: 8px;
+            border: 1.5px solid var(--accent, #fbbf24);
+            border-radius: 50%;
+            display: inline-block;
+            flex-shrink: 0;
+            margin-right: 10px;
+            margin-top: 5px;
+          }
+          
+          /* Responsive */
+          @media (max-width: 991px) {
+            .parent-guide-container {
+              flex-direction: column;
+              gap: 30px;
+            }
+            .parent-guide-left {
+              max-width: 100%;
+              flex: 1;
+            }
+            .parent-guide-right {
+              width: 100%;
+              gap: 20px;
+            }
+          }
+          
+          @media (max-width: 640px) {
+            .parent-guide-right {
+              grid-template-columns: 1fr;
+              gap: 30px;
+            }
+            .guide-card-no {
+              margin-bottom: 12px;
+            }
+            .guide-card-heading {
+              margin-bottom: 10px;
+            }
+          }
+        </style>
+
+        <div class="parent-guide-container">
+          <!-- Left Column -->
+          <div class="parent-guide-left">
+            <span class="guide-badge">Expert Advice</span>
+            <h2 class="guide-main-title">Parent’s Guide — Choosing the right tutor</h2>
+            <p class="guide-main-subtitle">
               Short, actionable checklist for busy parents: topics to ask, trial class checklist &amp; pricing guidance.
             </p>
           </div>
-          <!-- <a onclick="openPDF()" class="btn btn-ghost btn-small">Download guide (PDF)</a> -->
-        </div>
- 
-        <div class="grid grid--guide">
-          <article class="guide-card">
-            <h3 class="guide-title">Before you speak</h3>
-            <ul class="guide-list">
-              <li>Confirm board &amp; class experience</li>
-              <li>Ask for sample lesson or demo</li>
-              <li>Check availability &amp; location</li>
-            </ul>
-          </article>
-          <article class="guide-card">
-            <h3 class="guide-title">During trial class</h3>
-            <ul class="guide-list">
-              <li>Look for clarity in explanations</li>
-              <li>Check engagement with child</li>
-              <li>Ask for a follow-up plan</li>
-            </ul>
-          </article>
-          <article class="guide-card">
-            <h3 class="guide-title">After hiring</h3>
-            <ul class="guide-list">
-              <li>Set weekly goals</li>
-              <li>Track progress monthly</li>
-              <li>Ask for regular feedback</li>
-            </ul>
-          </article>
+
+          <!-- Right Column -->
+          <div class="parent-guide-right">
+            <!-- Card 1 -->
+            <div class="guide-card-new">
+              <div class="guide-card-no">01</div>
+              <h3 class="guide-card-heading">Before you speak</h3>
+              <ul class="guide-card-list">
+                <li>
+                  <span class="circle-bullet"></span>
+                  <span>Confirm board &amp; class experience</span>
+                </li>
+                <li>
+                  <span class="circle-bullet"></span>
+                  <span>Ask for sample lesson or demo</span>
+                </li>
+                <li>
+                  <span class="circle-bullet"></span>
+                  <span>Check availability &amp; location</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="guide-card-new">
+              <div class="guide-card-no">02</div>
+              <h3 class="guide-card-heading">During trial class</h3>
+              <ul class="guide-card-list">
+                <li>
+                  <span class="circle-bullet"></span>
+                  <span>Look for clarity in explanations</span>
+                </li>
+                <li>
+                  <span class="circle-bullet"></span>
+                  <span>Check engagement with child</span>
+                </li>
+                <li>
+                  <span class="circle-bullet"></span>
+                  <span>Ask for a follow-up plan</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="guide-card-new">
+              <div class="guide-card-no">03</div>
+              <h3 class="guide-card-heading">After hiring</h3>
+              <ul class="guide-card-list">
+                <li>
+                  <span class="circle-bullet"></span>
+                  <span>Set weekly goals</span>
+                </li>
+                <li>
+                  <span class="circle-bullet"></span>
+                  <span>Track progress monthly</span>
+                </li>
+                <li>
+                  <span class="circle-bullet"></span>
+                  <span>Ask for regular feedback</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
+
 
       <!-- TRUSTED BY -->
       <section class="section">
@@ -355,47 +725,237 @@
       </section>
 
  
-<section class="section section--seo">
-  <div class="seo-layout">
-    <!-- LEFT: TEXT -->
-    <aside class="seo-image">
-      <div class="seo-image-card">
-        <img
-          src="{{ asset('public/frount/assets') }}/images/aa1.png"
-          alt="AI tutor matching compatibility system" loading="lazy" decoding="async"
-        />
-        <div class="seo-badge">2–3 Best Matches · Demo First · Verified</div>
+<!-- AI TUTOR MATCHING -->
+<section class="section ai-matching-section">
+  <style>
+    .ai-section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 40px;
+    }
+    
+    .ai-section-header h2 {
+      font-size: clamp(24px, 3.5vw, 32px);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+    
+    .ai-section-header p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--text-subtle, #9ca3af);
+    }
+    
+    /* Top 3 Columns Grid */
+    .ai-grid-top {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+    
+    .ai-card-small {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      padding: 24px;
+      transition: transform 0.2s, background-color 0.2s, border-color 0.2s;
+    }
+    
+    .ai-card-small:hover {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(255, 255, 255, 0.16);
+      transform: translateY(-2px);
+    }
+    
+    .ai-card-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: rgba(251, 191, 36, 0.1);
+      border: 1px solid rgba(251, 191, 36, 0.2);
+      color: var(--accent, #fbbf24);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    
+    .ai-card-small h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    
+    .ai-card-small p {
+      font-size: 13.5px;
+      line-height: 1.6;
+      color: var(--text-subtle, #9ca3af);
+      margin: 0;
+    }
+    
+    /* Large Card Below */
+    .ai-card-large {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 24px;
+      padding: 32px;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    
+    .ai-card-large-content h3 {
+      font-size: clamp(20px, 3vw, 24px);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 14px;
+    }
+    
+    .ai-card-large-content p {
+      font-size: 14.5px;
+      line-height: 1.6;
+      color: var(--text-subtle, #9ca3af);
+      margin: 0 0 24px;
+    }
+    
+    .ai-check-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+    .ai-check-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14.5px;
+      font-weight: 600;
+      color: #fff;
+    }
+    
+    .ai-check-icon {
+      color: #10b981; /* Emerald green checkmark */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .ai-card-large-image {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .ai-card-large-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .ai-image-badge {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 6px 14px;
+      border-radius: 30px;
+      font-size: 11px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 0.5px;
+    }
+    
+    /* Responsive */
+    @media (max-width: 991px) {
+      .ai-grid-top {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .ai-card-large {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 24px;
+      }
+    }
+  </style>
+  
+  <div class="ai-section-header">
+    <h2>How Our AI Tutor Matching System Works</h2>
+    <p>We avoid random listings. Our engine processes structured compatibility parameters to recommend only the top 2–3 precise fits.</p>
+  </div>
+  
+  <!-- Top Row Grid -->
+  <div class="ai-grid-top">
+    <!-- Card 1 -->
+    <div class="ai-card-small">
+      <div class="ai-card-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l-.019.007a1 1 0 0 0-.528.816v8.354a1 1 0 0 0 .528.816l6 2.5.019.007a.5.5 0 0 0 .372 0l6-2.5.019-.007a1 1 0 0 0 .528-.816V4.323a1 1 0 0 0-.528-.816l-6-2.5zM8 4.07 13.06 6.18 8 8.29 2.94 6.18 8 4.07zM2 7.64v4.44a.5.5 0 0 0 .264.44l5.236 2.18v-4.88L2 7.64zm12 0v4.44a.5.5 0 0 1-.264.44l-5.236 2.18v-4.88L14 7.64z"/>
+        </svg>
       </div>
-    </aside>
-    <div class="seo-text">
-      <h2 class="section-title">How Our AI Tutor Matching System Works</h2>
-
-      <p>
-        Our AI engine processes structured compatibility parameters to recommend educators who fit
-        your child’s academic goals — whether it’s school support, foundation building or
-        competitive exam preparation.
-      </p>
-
-      <ul class="seo-points">
-        <li>Subject expertise relevance &amp; teaching experience match</li>
-        <li>Board alignment (CBSE, ICSE, IB, ISC, IGCSE)</li>
-        <li>Class &amp; exam specialization (JEE, NEET)</li>
-        <li>Location feasibility for home tutoring &amp; online readiness</li>
-        <li>Availability overlap with preferred time slots</li>
-        <li>Teaching clarity, feedback signals &amp; outcome patterns</li>
-        <li>Reliability, consistency &amp; profile verification</li>
-        <li>Budget/pricing alignment and communication quality</li>
-      </ul>
-
-      <p>
-        This system helps parents avoid confusion and saves time by delivering 2–3 precise tutor
-        recommendations with high match confidence. You can book a demo to confirm the fit before
-        continuing.
-      </p>
+      <h3>Subject Expertise &amp; Experience</h3>
+      <p>Our AI matches subject relevance, teaching experience, tutoring clarity, feedback signals, and student outcome patterns.</p>
     </div>
 
-    <!-- RIGHT: IMAGE CARD -->
+    <!-- Card 2 -->
+    <div class="ai-card-small">
+      <div class="ai-card-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM11 9.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM11 12.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM8 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM8 9.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM8 12.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM5 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM5 9.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM5 12.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+          <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+        </svg>
+      </div>
+      <h3>Availability &amp; Location</h3>
+      <p>We align your preferred schedule time slots, verify physical location feasibility for home tutoring, and test online readiness.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="ai-card-small">
+      <div class="ai-card-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.24 62.24 0 0 1 5.072.56zm3.857 11.758a.5.5 0 0 0 .708-.708L5.707 7.682a.5.5 0 0 0-.708 0l-1.39 1.39a.5.5 0 1 0 .708.708l1.036-1.036 3.576 3.574z"/>
+        </svg>
+      </div>
+      <h3>Verification &amp; Budget</h3>
+      <p>Every match goes through verification to ensure profile reliability, budget alignment, and communication quality.</p>
+    </div>
+  </div>
+
+  <!-- Large Card Below -->
+  <div class="ai-card-large">
+    <div class="ai-card-large-content">
+      <h3>2–3 Best Matches, Guaranteed</h3>
+      <p>Our system helps parents avoid confusion and saves time by delivering 2–3 precise tutor recommendations with high match confidence. You can book a demo to confirm the fit before continuing.</p>
+      <div class="ai-check-list">
+        <div class="ai-check-item">
+          <span class="ai-check-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+          </span>
+          <span>Board alignment (CBSE, ICSE, IB, ISC, IGCSE)</span>
+        </div>
+        <div class="ai-check-item">
+          <span class="ai-check-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+          </span>
+          <span>Class &amp; exam specialization (JEE, NEET)</span>
+        </div>
+      </div>
+    </div>
     
+    <div class="ai-card-large-image">
+      <img src="{{ asset('public/frount/assets') }}/images/aa1.png" alt="AI tutor matching compatibility system" loading="lazy" decoding="async" />
+      <div class="ai-image-badge">2–3 Best Matches · Demo First · Verified</div>
+    </div>
   </div>
 </section>
  <section class="section">
@@ -408,23 +968,276 @@
   </div>
 
   <div class="review-slider">
-    <button class="rnav rnav--left" type="button" aria-label="Previous">‹</button>
+    <style>
+      .review-slider {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+      
+      .review-track {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        width: 100%;
+        padding: 16px 8px;
+        margin: -16px -8px;
+        scrollbar-width: none; /* Hide scrollbar for Firefox */
+      }
+      
+      .review-track::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for Chrome/Safari */
+      }
+      
+      .review-slide {
+        flex: 0 0 340px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 20px;
+        padding: 20px;
+        transition: background-color 0.2s, border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      
+      .review-slide:hover {
+        background: rgba(255, 255, 255, 0.06);
+        border-color: rgba(255, 255, 255, 0.16);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      }
+      
+      .card-header--review {
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+      }
+      
+      .avatar {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid rgba(255, 255, 255, 0.12);
+        flex-shrink: 0;
+      }
+      
+      .card-title {
+        font-size: 14.5px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 4px;
+      }
+      
+      .card-text {
+        font-size: 13.5px;
+        line-height: 1.55;
+        color: var(--text-subtle, #9ca3af);
+        font-style: italic;
+      }
+      
+      .tutor-meta {
+        margin-top: 10px;
+        font-size: 12px;
+        color: var(--accent, #fbbf24);
+        opacity: 0.85;
+        font-weight: 500;
+      }
+      
+      .rating--big {
+        margin-top: 16px;
+        font-size: 13.5px;
+        font-weight: 700;
+        color: var(--accent, #fbbf24);
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+      
+      /* Navigation Arrows */
+      .rnav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #fff !important;
+        border: 1px solid rgba(0, 0, 0, 0.05) !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+        color: #0f172a !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 10;
+        transition: transform 0.2s, background-color 0.2s, opacity 0.2s;
+        opacity: 0.9;
+        font-size: 18px !important;
+        line-height: 1 !important;
+      }
+      
+      .rnav:hover {
+        opacity: 1;
+        background: #f8fafc !important;
+        transform: translateY(-50%) scale(1.05);
+      }
+      
+      .rnav--left {
+        left: -20px;
+      }
+      
+      .rnav--right {
+        right: -20px;
+      }
+      
+      @media (max-width: 1024px) {
+        .rnav--left { left: -10px; }
+        .rnav--right { right: -10px; }
+      }
+      
+      @media (max-width: 640px) {
+        .review-slide {
+          flex: 0 0 290px;
+          padding: 16px;
+        }
+        .rnav {
+          display: none;
+        }
+      }
+    </style>
+
+    <button class="rnav rnav--left" type="button" aria-label="Previous">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>
+    </button>
 
     <div class="review-track" id="reviewTrack">
       @include('home.partials.review-slider-cards', ['reviews' => $reviews ?? collect()])
     </div>
 
-    <button class="rnav rnav--right" type="button" aria-label="Next">›</button>
+    <button class="rnav rnav--right" type="button" aria-label="Next">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+    </button>
   </div>
 </section>
       <!-- FAQ -->
-     <section class="section">
-  <div class="section-head section-head--row">
-    <h2 class="section-title">Frequently asked questions</h2>
-    <a href="#" class="btn btn-ghost btn-small">More FAQs</a>
-  </div>
+      <section class="section">
+        <style>
+          .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 15px;
+          }
+          
+          @media (max-width: 768px) {
+            .faq-grid {
+              grid-template-columns: 1fr;
+              gap: 12px;
+            }
+          }
+          
+          .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+          }
+          
+          .faq-item {
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 0;
+            overflow: hidden;
+            transition: background-color 0.2s, border-color 0.2s;
+          }
+          
+          .faq-item:hover {
+            background: rgba(255, 255, 255, 0.07);
+            border-color: rgba(255, 255, 255, 0.16);
+          }
+          
+          .faq-item[open] {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(255, 255, 255, 0.16);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+          }
+          
+          .faq-item summary {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+            user-select: none;
+            outline: none;
+            list-style: none; /* Hide default arrow on Firefox/others */
+            transition: color 0.2s;
+          }
+          
+          /* Hide webkit default arrow */
+          .faq-item summary::-webkit-details-marker {
+            display: none;
+          }
+          
+          /* Custom Chevron indicator */
+          .faq-item summary::after {
+            content: '';
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            opacity: 0.7;
+            transition: transform 0.25s ease, opacity 0.2s;
+            flex-shrink: 0;
+            margin-left: 15px;
+          }
+          
+          .faq-item[open] summary::after {
+            transform: rotate(180deg);
+            opacity: 1;
+          }
+          
+          .faq-item p {
+            margin: 0;
+            padding: 0 20px 20px;
+            font-size: 13.5px;
+            line-height: 1.6;
+            color: var(--text-subtle, #9ca3af);
+            border-top: 1px solid rgba(255, 255, 255, 0.04);
+            animation: slideDown 0.25s ease-out;
+          }
+          
+          @keyframes slideDown {
+            from {
+              opacity: 0;
+              transform: translateY(-8px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+        </style>
+        
+        <div class="section-head section-head--row">
+          <h2 class="section-title">Frequently asked questions</h2>
+          <a href="#" class="btn btn-ghost btn-small">More FAQs</a>
+        </div>
+      
+        <div class="faq-grid">
 
-  <div class="faq-grid">
+
     <!-- LEFT COLUMN (6) -->
     <div class="faq-list">
       <details class="faq-item">
@@ -532,17 +1345,97 @@
 
  
       <section class="section">
-        <div class="cta-row">
-          <div class="cta-text">
-            <h3>Book a demo — limited slots today</h3>
-            <p>Get a free 30-minute demo with a top local tutor. Slots fill fast.</p>
-          </div>
-          <div class="cta-actions">
-            <a href="#" class="btn btn-accent">Book demo</a>
-            <a href="#" class="btn btn-ghost">Call us</a>
+        <style>
+          .cta-card-new {
+            background: linear-gradient(135deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 24px;
+            padding: 56px 24px;
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+          }
+          
+          .cta-card-new h3 {
+            color: #fff;
+            font-size: clamp(24px, 4vw, 36px);
+            font-weight: 800;
+            margin: 0 0 16px;
+            line-height: 1.25;
+          }
+          
+          .cta-card-new p {
+            color: var(--text-subtle, #9ca3af);
+            font-size: 15px;
+            line-height: 1.6;
+            max-width: 640px;
+            margin: 0 auto 32px;
+          }
+          
+          .cta-card-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+          }
+          
+          .cta-btn-primary {
+            background: #fff;
+            color: #020617 !important;
+            border: 1px solid transparent;
+            padding: 12px 32px;
+            border-radius: 50px;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.2s, transform 0.15s;
+          }
+          .cta-btn-primary:hover {
+            background: #f1f5f9;
+            transform: translateY(-1px);
+          }
+          
+          .cta-btn-outline {
+            background: transparent;
+            color: #fff !important;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            padding: 12px 32px;
+            border-radius: 50px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: background-color 0.2s, border-color 0.2s, transform 0.15s;
+          }
+          .cta-btn-outline:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.45);
+            transform: translateY(-1px);
+          }
+        </style>
+
+        <div class="cta-card-new">
+          <h3>Book a demo class — limited slots today</h3>
+          <p>Get a free 30-minute demo with a top local tutor. Slots fill fast due to academic demand.</p>
+          <div class="cta-card-buttons">
+            <a href="#" class="cta-btn-primary" data-modal-target="demoModal">Book Free Demo</a>
+            <a href="tel:+917836034313" class="cta-btn-outline">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="vertical-align: middle;">
+                <path d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+              </svg>
+              <span>Call Us Now</span>
+            </a>
           </div>
         </div>
       </section>
+
 
        
 

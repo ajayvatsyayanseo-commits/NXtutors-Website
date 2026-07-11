@@ -22,7 +22,7 @@
       <div>
         <div class="card-title">{{ $name }}</div>
         <div class="card-text">“{{ \Illuminate\Support\Str::limit($text, 120) }}”</div>
-        <div style="margin-top:6px;font-size:12px;opacity:.75;">
+        <div class="tutor-meta">
           Tutor: {{ $r->teacher_name ?? 'Tutor' }}
         </div>
       </div>

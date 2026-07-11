@@ -133,7 +133,7 @@ class NxtSchemaBuilder
                 config('services.nxtutors.facebook'),
                 config('services.nxtutors.instagram'),
                 config('services.nxtutors.linkedin'),
-                env('NXT_GOOGLE_BUSINESS'),
+                config('services.nxtutors.google_business'),
             ])),
         ];
 
@@ -153,7 +153,7 @@ class NxtSchemaBuilder
                 config('services.nxtutors.facebook'),
                 config('services.nxtutors.instagram'),
                 config('services.nxtutors.linkedin'),
-                env('NXT_GOOGLE_BUSINESS'),
+                config('services.nxtutors.google_business'),
             ])),
         ];
 

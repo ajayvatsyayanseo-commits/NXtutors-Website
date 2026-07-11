@@ -11,6 +11,7 @@ use Carbon\Carbon;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Str;
 use App\Models\Register;
+use Illuminate\Support\Facades\Log;
 
 class PricingController extends Controller
 {
@@ -135,7 +136,7 @@ class PricingController extends Controller
         'cashfree_plan_id' => $plan->id,
     ]);
 
-    $baseUrl = env('CASHFREE_ENV') === 'production'
+    $baseUrl = config('services.cashfree.environment') === 'production'
         ? 'https://api.cashfree.com/pg'
         : 'https://sandbox.cashfree.com/pg';
 
@@ -158,14 +159,16 @@ class PricingController extends Controller
     ];
 
     $response = Http::withHeaders([
-        'x-client-id' => env('CASHFREE_APP_ID'),
-        'x-client-secret' => env('CASHFREE_SECRET_KEY'),
-        'x-api-version' => env('CASHFREE_API_VERSION', '2025-01-01'),
+        'x-client-id' => config('services.cashfree.app_id'),
+        'x-client-secret' => config('services.cashfree.secret_key'),
+        'x-api-version' => config('services.cashfree.api_version'),
         'Content-Type' => 'application/json',
-    ])->post($baseUrl . '/orders', $payload);
+    ])->connectTimeout(5)->timeout(20)->retry(1, 250, throw: false)->post($baseUrl . '/orders', $payload);
 
     if (!$response->successful()) {
-        return back()->with('error', 'Payment order creation failed: ' . $response->body());
+        Log::warning('Cashfree order creation failed.', ['status' => $response->status()]);
+
+        return back()->with('error', 'Payment order creation failed. Please try again.');
     }
 
     $data = $response->json();
@@ -176,7 +179,7 @@ class PricingController extends Controller
 
     return view('subscription.cashfree-checkout', [
         'paymentSessionId' => $data['payment_session_id'],
-        'cashfreeMode' => env('CASHFREE_ENV') === 'production' ? 'production' : 'sandbox',
+        'cashfreeMode' => config('services.cashfree.environment') === 'production' ? 'production' : 'sandbox',
         'metatitle' => 'Processing Payment - NXTutors',
         'metakey' => '',
         'metadesc' => '',
@@ -196,15 +199,20 @@ public function paymentSuccess(Request $request)
         return redirect()->route('pricing')->with('error', 'Invalid payment response.');
     }
 
-    $baseUrl = env('CASHFREE_ENV') === 'production'
+    $expectedOrderId = (string) session('cashfree_order_id');
+    if ($expectedOrderId === '' || ! hash_equals($expectedOrderId, (string) $orderId)) {
+        return redirect()->route('pricing')->with('error', 'Invalid payment response.');
+    }
+
+    $baseUrl = config('services.cashfree.environment') === 'production'
         ? 'https://api.cashfree.com/pg'
         : 'https://sandbox.cashfree.com/pg';
 
     $response = Http::withHeaders([
-        'x-client-id' => env('CASHFREE_APP_ID'),
-        'x-client-secret' => env('CASHFREE_SECRET_KEY'),
-        'x-api-version' => env('CASHFREE_API_VERSION', '2025-01-01'),
-    ])->get($baseUrl . '/orders/' . $orderId);
+        'x-client-id' => config('services.cashfree.app_id'),
+        'x-client-secret' => config('services.cashfree.secret_key'),
+        'x-api-version' => config('services.cashfree.api_version'),
+    ])->connectTimeout(5)->timeout(20)->retry(1, 250, throw: false)->get($baseUrl . '/orders/' . $orderId);
 
     if (!$response->successful()) {
         return redirect()->route('pricing')->with('error', 'Payment verification failed.');
@@ -235,9 +243,25 @@ public function paymentSuccess(Request $request)
 
 public function cashfreeWebhook(Request $request)
 {
-    \Log::info('Cashfree Webhook Hit', [
-        'headers' => $request->headers->all(),
-        'body' => $request->all(),
+    $timestamp = (string) $request->header('x-webhook-timestamp');
+    $signature = (string) $request->header('x-webhook-signature');
+    $secret = (string) config('services.cashfree.secret_key');
+
+    if ($timestamp === '' || $signature === '' || $secret === '') {
+        return response()->json(['message' => 'Invalid webhook signature.'], 401);
+    }
+
+    $expected = base64_encode(hash_hmac('sha256', $timestamp.$request->getContent(), $secret, true));
+
+    if (! hash_equals($expected, $signature)) {
+        Log::warning('Cashfree webhook signature verification failed.');
+
+        return response()->json(['message' => 'Invalid webhook signature.'], 401);
+    }
+
+    Log::info('Cashfree webhook verified.', [
+        'event' => $request->input('type'),
+        'order_id' => $request->input('data.order.order_id'),
     ]);
 
     return response()->json([

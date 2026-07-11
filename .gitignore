@@ -20,6 +20,8 @@ yarn-debug.log*
 
 yarn-error.log*
 
+howtorun.md*
+
 
 
 # Environment
@@ -37,6 +39,10 @@ yarn-error.log*
 .env.test.local
 
 .env.production.local
+
+# Local development helpers
+/server.php
+/scripts/cloudpanel-db-tunnel.py
 
 
 
@@ -91,6 +97,9 @@ coverage/
 # Laravel Storage & Caches
 
 /public/storage
+/public/public/storage
+/public/uploads/user
+/public/uploads/private
 
 /storage/*.key
 
@@ -107,6 +116,12 @@ coverage/
 /storage/logs/
 
 /storage/storage/
+
+# Backups and local exports
+*.bak
+*.backup
+*.dump
+*.zip
 
 
 

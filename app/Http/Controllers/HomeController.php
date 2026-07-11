@@ -32,6 +32,23 @@ use Illuminate\Support\Facades\Response;
 
 class HomeController extends Controller
 {
+    public function pageIndex(Request $request)
+    {
+        $pages = GeneratedPage::where('status', 'published')
+            ->latest()
+            ->paginate(12);
+
+        if ($request->ajax()) {
+            return view('pages.partials.page-cards', compact('pages'))->render();
+        }
+
+        $metatitle = '';
+        $metakey = '';
+        $metadesc = '';
+
+        return view('page', compact('pages', 'metatitle', 'metakey', 'metadesc'));
+    }
+
     public function index()
     {
         $pages = GeneratedPage::query()
@@ -61,7 +78,16 @@ class HomeController extends Controller
     ]);
 
     try {
-        $response = Http::timeout(60)->post(env('NXT_AI_FUNCTION_URL'), [
+        $endpoint = config('services.nxtutors.ai_function_url');
+
+        if (! $endpoint) {
+            return response()->json([
+                'success' => false,
+                'reply' => 'AI service is temporarily unavailable.',
+            ], 503);
+        }
+
+        $response = Http::connectTimeout(5)->timeout(60)->retry(1, 250, throw: false)->post($endpoint, [
             'message' => $request->message,
             'source' => 'website',
             'page' => url()->previous(),
@@ -88,7 +114,6 @@ class HomeController extends Controller
         return response()->json([
             'success' => false,
             'reply' => 'AI se connect nahi ho pa raha. Please try again.',
-            'error' => $e->getMessage(),
         ], 500);
     }
 }
