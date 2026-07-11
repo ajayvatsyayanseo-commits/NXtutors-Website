@@ -1,0 +1,16 @@
+[program:nxtutors-pagegen]
+process_name=%(program_name)s_%(process_num)02d
+command=__PHP_BINARY__ __APP_ROOT__/artisan queue:work database --queue=pagegen --sleep=3 --tries=3 --timeout=240 --max-time=3600
+directory=__APP_ROOT__
+user=__SITE_USER__
+numprocs=1
+autostart=true
+autorestart=true
+stopasgroup=true
+killasgroup=true
+stopwaitsecs=300
+redirect_stderr=true
+stdout_logfile=__APP_ROOT__/storage/logs/supervisor-pagegen.log
+stdout_logfile_maxbytes=10MB
+stdout_logfile_backups=5
+environment=APP_ENV="production"
