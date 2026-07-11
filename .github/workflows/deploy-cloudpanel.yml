@@ -347,7 +347,8 @@ jobs:
           chmod 600 .env.next
           mv .env.next .env
           mkdir -p storage/framework/cache/data storage/framework/sessions storage/framework/views storage/logs bootstrap/cache
-          chmod -R ug+rwX storage bootstrap/cache
+          chmod -R ug+rwX storage/framework bootstrap/cache
+          chmod ug+rwX storage 2>/dev/null || true
           test -w storage
           test -w bootstrap/cache
           "$php_binary" artisan optimize:clear
