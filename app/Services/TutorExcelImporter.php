@@ -6,6 +6,7 @@ use App\Models\TutorImport;
 use App\Models\TutorImportRow;
 use Illuminate\Support\Facades\Storage;
 use PhpOffice\PhpSpreadsheet\IOFactory;
+use RuntimeException;
 
 class TutorExcelImporter
 {
@@ -13,7 +14,21 @@ class TutorExcelImporter
     {
         $fullPath = Storage::disk('public')->path($import->file_path);
 
-        $spreadsheet = IOFactory::load($fullPath);
+        if (! is_file($fullPath)) {
+            throw new RuntimeException('Tutor import file is missing.');
+        }
+
+        $maxRows = max(1, (int) config('cost-safety.imports.tutor_max_rows', 250));
+        $reader = IOFactory::createReaderForFile($fullPath);
+        $reader->setReadDataOnly(true);
+        $worksheets = $reader->listWorksheetInfo($fullPath);
+        $totalRows = max(0, (int) ($worksheets[0]['totalRows'] ?? 0) - 1);
+
+        if ($totalRows > $maxRows) {
+            throw new RuntimeException("Tutor workbook has {$totalRows} rows; maximum allowed is {$maxRows}.");
+        }
+
+        $spreadsheet = $reader->load($fullPath);
         $sheet = $spreadsheet->getActiveSheet();
         $rows = $sheet->toArray(null, true, true, true);
 
@@ -28,6 +43,7 @@ class TutorExcelImporter
         }
 
         $count = 0;
+        $seen = [];
 
         foreach ($rows as $r) {
             $payload = [];
@@ -48,6 +64,12 @@ class TutorExcelImporter
     continue;
 }
 
+            $fingerprint = hash('sha256', json_encode($payload, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
+            if (isset($seen[$fingerprint])) {
+                continue;
+            }
+            $seen[$fingerprint] = true;
+
             TutorImportRow::create([
                 'tutor_import_id' => $import->id,
                 'payload' => $payload,
@@ -56,6 +78,8 @@ class TutorExcelImporter
 
             $count++;
         }
+
+        $spreadsheet->disconnectWorksheets();
 
         return $count;
     }

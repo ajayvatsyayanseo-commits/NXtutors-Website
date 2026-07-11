@@ -16,7 +16,7 @@ class PagegenImportController extends Controller
    public function store(Request $request)
 {
     $request->validate([
-        'file' => 'required|file|mimes:xlsx|max:20480', // 20MB
+        'file' => 'required|file|mimes:xlsx|max:'.config('cost-safety.imports.max_file_kb', 10240),
     ]);
 
     $uploaded = $request->file('file');

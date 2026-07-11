@@ -81,7 +81,11 @@ class GenerateFromImportRow implements ShouldBeUnique, ShouldQueue
                     'updated_at' => now(),
                 ]);
         } catch (Throwable $exception) {
-            $this->markFailed($exception);
+            if ($this->attempts() < $this->tries) {
+                $this->releaseForRetry($exception);
+            } else {
+                $this->markFailed($exception);
+            }
 
             throw $exception;
         }
@@ -104,6 +108,18 @@ class GenerateFromImportRow implements ShouldBeUnique, ShouldQueue
             ->update([
                 'status' => 'failed',
                 'error' => $message,
+                'updated_at' => now(),
+            ]);
+    }
+
+    private function releaseForRetry(Throwable $exception): void
+    {
+        PagegenImportRow::query()
+            ->whereKey($this->rowId)
+            ->where('status', 'processing')
+            ->update([
+                'status' => 'pending',
+                'error' => Str::limit(preg_replace('/\s+/', ' ', $exception->getMessage()) ?: 'Retry scheduled.', 500),
                 'updated_at' => now(),
             ]);
     }

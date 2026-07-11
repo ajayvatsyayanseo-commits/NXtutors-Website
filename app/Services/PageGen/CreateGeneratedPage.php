@@ -4,6 +4,7 @@ namespace App\Services\PageGen;
 
 use App\Models\GeneratedPage;
 use App\Services\OpenAiPageGenerator;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
@@ -14,6 +15,37 @@ class CreateGeneratedPage
     ) {}
 
     public function create(array $data, ?int $createdBy = null): GeneratedPage
+    {
+        $intent = [
+            $data['country'] ?? 'India',
+            $data['state'] ?? '',
+            $data['city'] ?? '',
+            $data['location'] ?? '',
+            $data['hyper_location'] ?? '',
+            $data['service_mode'] ?? '',
+            $data['category'] ?? 'academic',
+            $data['skill_name'] ?? '',
+            $data['subjects'] ?? [],
+            $data['boards'] ?? [],
+            $data['classes_tracks'] ?? [],
+        ];
+        $lock = Cache::lock(
+            'pagegen:intent:'.hash('sha256', json_encode($intent, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES)),
+            (int) config('cost-safety.workers.pagegen_timeout', 240) + 60
+        );
+
+        if (! $lock->get()) {
+            throw new \RuntimeException('Generation is already in progress for this page intent.');
+        }
+
+        try {
+            return $this->createWithIntentLock($data, $createdBy);
+        } finally {
+            $lock->release();
+        }
+    }
+
+    private function createWithIntentLock(array $data, ?int $createdBy = null): GeneratedPage
     {
         // -----------------------------
         // 0) Defaults + normalize
@@ -78,8 +110,6 @@ class CreateGeneratedPage
         // -----------------------------
         $canon = trim((string)($data['canonical_target'] ?? ''));
 
-        return DB::transaction(function () use ($data, $createdBy, $canon) {
-
             // (A) Same intent exists? Return it
             if ($canon !== '') {
                 $existing = GeneratedPage::query()
@@ -142,6 +172,23 @@ class CreateGeneratedPage
                     ? ($data['skill_name'] . ' classes in ' . $data['location'] . ' ' . $data['city'])
                     : ($data['city'] . ' ' . $data['location'] . ' tutors')
                 );
+
+            return DB::transaction(function () use ($data, $createdBy, $canon, $ai, $slugBase) {
+                if ($canon !== '') {
+                    $existing = GeneratedPage::query()
+                        ->where('status', 'published')
+                        ->where('city', $data['city'] ?? null)
+                        ->where('location', $data['location'] ?? null)
+                        ->where('service_mode', $data['service_mode'] ?? null)
+                        ->where('payload->category', $data['category'] ?? null)
+                        ->where('payload->canonical_target', $canon)
+                        ->latest('id')
+                        ->first();
+
+                    if ($existing) {
+                        return $existing;
+                    }
+                }
 
             $slug = Str::slug($slugBase) ?: Str::random(8);
 

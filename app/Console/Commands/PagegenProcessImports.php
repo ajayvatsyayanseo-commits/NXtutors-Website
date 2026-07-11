@@ -15,15 +15,37 @@ class PagegenProcessImports extends Command
     protected $signature = 'pagegen:process-imports {--limit=0}';
     protected $description = 'Read pending Excel uploads and dispatch page generation jobs';
 
-    public function handle()
+    private array $premiumSchoolCache = [];
+
+    public function handle(): int
     {
+        $batchSize = max(1, (int) config('cost-safety.imports.batch_size', 25));
+        $maxRows = max(1, (int) config('cost-safety.imports.max_rows', 500));
+
+        $activeImport = PagegenImport::where('status', 'processing')->oldest()->first();
+        if ($activeImport && $this->dispatchOrFinalize($activeImport, $batchSize)) {
+            return self::SUCCESS;
+        }
+
         $import = PagegenImport::where('status', 'pending')->oldest()->first();
 
         if (!$import) {
             $this->info('No pending imports.');
-            return 0;
+            return self::SUCCESS;
         }
 
+        $claimed = PagegenImport::query()
+            ->whereKey($import->id)
+            ->where('status', 'pending')
+            ->update(['status' => 'processing', 'updated_at' => now()]);
+
+        if ($claimed !== 1) {
+            $this->info("Import #{$import->id} was claimed by another scheduler process.");
+
+            return self::SUCCESS;
+        }
+
+        $import->refresh();
         $fullPath = public_path($import->file_path);
 
         $this->info("Import #{$import->id} file: {$import->file_path}");
@@ -34,29 +56,42 @@ class PagegenProcessImports extends Command
             $this->error($msg);
             Log::error($msg);
 
-            $import->update(['status' => 'pending']);
-            return 1;
+            $import->update(['status' => 'failed']);
+
+            return self::FAILURE;
         }
 
-        $import->update(['status' => 'processing']);
-
         try {
-            $spreadsheet = IOFactory::load($fullPath);
+            $reader = IOFactory::createReaderForFile($fullPath);
+            $reader->setReadDataOnly(true);
+            $worksheets = $reader->listWorksheetInfo($fullPath);
+            $totalRows = max(0, (int) ($worksheets[0]['totalRows'] ?? 0) - 1);
+
+            if ($totalRows > $maxRows) {
+                throw new \RuntimeException("Workbook has {$totalRows} rows; maximum allowed is {$maxRows}.");
+            }
+
+            $spreadsheet = $reader->load($fullPath);
             $sheet = $spreadsheet->getActiveSheet();
             $rows = $sheet->toArray(null, true, true, true);
         } catch (\Throwable $e) {
-            $msg = "Excel read failed: " . $e->getMessage();
+            $msg = 'Excel read failed: '.str($e->getMessage())->squish()->limit(300);
             $this->error($msg);
-            Log::error($msg);
+            Log::warning('Page generation import rejected.', [
+                'import_id' => $import->id,
+                'exception' => $e::class,
+            ]);
 
-            $import->update(['status' => 'pending']);
-            return 1;
+            $import->update(['status' => 'failed']);
+
+            return self::FAILURE;
         }
 
         if (count($rows) < 2) {
             $this->warn('Excel has no data rows.');
-            $import->update(['status' => 'done']);
-            return 0;
+            $import->update(['status' => 'failed']);
+
+            return self::FAILURE;
         }
 
         // Header row
@@ -67,11 +102,22 @@ class PagegenProcessImports extends Command
             return preg_replace('/\s+/', ' ', trim((string) $h));
         }, array_values($headerRow));
 
+        $hasLocation = in_array('Location (Sector/Area)', $headers, true)
+            || in_array('Location', $headers, true);
+        if (! in_array('State', $headers, true) || ! in_array('City', $headers, true) || ! $hasLocation) {
+            $this->error('Excel is missing required columns: State, City, and Location.');
+            $import->update(['status' => 'failed']);
+
+            return self::FAILURE;
+        }
+
         $createdCount = 0;
         $skippedCount = 0;
 
-        $limit = (int)$this->option('limit'); // for testing
+        $requestedLimit = (int) $this->option('limit');
+        $limit = $requestedLimit > 0 ? min($requestedLimit, $maxRows) : $maxRows;
         $processed = 0;
+        $seen = [];
 
         foreach ($rows as $row) {
             $processed++;
@@ -100,6 +146,13 @@ class PagegenProcessImports extends Command
                 continue;
             }
 
+            $fingerprint = hash('sha256', json_encode($payload, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
+            if (isset($seen[$fingerprint])) {
+                $skippedCount++;
+                continue;
+            }
+            $seen[$fingerprint] = true;
+
             /**
              * ✅ IMPORTANT FIX:
              * Import time par hi premium_schools inject karo
@@ -116,18 +169,56 @@ class PagegenProcessImports extends Command
                 'created_by' => $import->created_by,
             ]);
 
-            GenerateFromImportRow::dispatch($importRow->id)->onQueue('pagegen');
-
             $createdCount++;
         }
 
-        $this->info("Created {$createdCount} rows & dispatched jobs for import #{$import->id}.");
+        $spreadsheet->disconnectWorksheets();
+        unset($spreadsheet, $rows);
+
+        $this->info("Created {$createdCount} bounded rows for import #{$import->id}.");
         $this->info("Skipped rows: {$skippedCount}.");
 
-        // Mark import done after dispatch
-        $import->update(['status' => 'done']);
+        if ($createdCount === 0) {
+            $import->update(['status' => 'failed']);
 
-        return 0;
+            return self::FAILURE;
+        }
+
+        $this->dispatchOrFinalize($import, $batchSize);
+
+        return self::SUCCESS;
+    }
+
+    private function dispatchOrFinalize(PagegenImport $import, int $batchSize): bool
+    {
+        $pending = $import->rows()->where('status', 'pending')->orderBy('id')->limit($batchSize)->get();
+
+        if ($pending->isNotEmpty()) {
+            foreach ($pending as $row) {
+                GenerateFromImportRow::dispatch($row->id)->onQueue('pagegen');
+            }
+
+            $this->info("Dispatched {$pending->count()} row(s) for import #{$import->id}.");
+
+            return true;
+        }
+
+        if ($import->rows()->where('status', 'processing')->exists()) {
+            $this->info("Import #{$import->id} still has active rows.");
+
+            return true;
+        }
+
+        $rowCount = $import->rows()->count();
+        if ($rowCount === 0) {
+            return false;
+        }
+
+        $hasFailures = $import->rows()->where('status', 'failed')->exists();
+        $import->update(['status' => $hasFailures ? 'failed' : 'done']);
+        $this->info("Import #{$import->id} finalized as {$import->status}.");
+
+        return false;
     }
 
     private function mapToPayload(array $r): array
@@ -262,6 +353,10 @@ class PagegenProcessImports extends Command
         if ($city === '') return [];
 
         $boardCats = $this->buildBoardCats((array)($data['boards'] ?? []));
+        $cacheKey = mb_strtolower($city).'|'.implode(',', $boardCats).'|'.mb_strtolower($loc);
+        if (array_key_exists($cacheKey, $this->premiumSchoolCache)) {
+            return $this->premiumSchoolCache[$cacheKey];
+        }
 
         $q = PremiumSchool::query()
             ->whereRaw('LOWER(city) = LOWER(?)', [$city]);
@@ -304,8 +399,8 @@ class PagegenProcessImports extends Command
         }
 
         // ensure exactly 5
-        if (count($out) === 0) return [];
-        if (count($out) >= 5) return array_slice($out, 0, 5);
+        if (count($out) === 0) return $this->premiumSchoolCache[$cacheKey] = [];
+        if (count($out) >= 5) return $this->premiumSchoolCache[$cacheKey] = array_slice($out, 0, 5);
 
         $i = 0;
         while (count($out) < 5) {
@@ -313,6 +408,6 @@ class PagegenProcessImports extends Command
             $i++;
         }
 
-        return $out;
+        return $this->premiumSchoolCache[$cacheKey] = $out;
     }
 }

@@ -250,18 +250,18 @@ private function normalizeRating($value): int
 private function generateTutorAvatar(): ?string
 {
     try {
-        $apiKey = env('OPENAI_API_KEY');
+        $apiKey = config('services.openai.key');
         if (!$apiKey) {
             Log::error("OPENAI_API_KEY missing");
             return null;
         }
 
         $response = Http::withToken($apiKey)
-            ->connectTimeout(30)
-            ->timeout(180)
-            ->retry(1, 1200)
+            ->connectTimeout((int) config('services.openai.connect_timeout', 10))
+            ->timeout((int) config('services.openai.timeout', 90))
+            ->retry((int) config('services.openai.retry_times', 1), 750, throw: false)
             ->post('https://api.openai.com/v1/images/generations', [
-                'model'  => env('OPENAI_IMAGE_MODEL', 'gpt-image-1.5'),
+                'model'  => config('services.openai.image_model', 'gpt-image-1.5'),
                 'prompt' => 'Realistic professional portrait photo of an Indian male teacher, age 28-40, formal shirt, friendly smile, plain light background, passport size, high quality.',
                 'size'   => '1024x1024',
                 'n'      => 1,
@@ -270,16 +270,15 @@ private function generateTutorAvatar(): ?string
             ]);
 
         if (!$response->ok()) {
-            Log::error("OpenAI image failed", [
+            Log::warning('OpenAI fallback image generation failed.', [
                 'status' => $response->status(),
-                'body'   => $response->body()
             ]);
             return null;
         }
 
         $b64 = data_get($response->json(), 'data.0.b64_json');
         if (!$b64) {
-            Log::error("OpenAI image missing b64_json", ['json' => $response->json()]);
+            Log::warning('OpenAI fallback image response did not contain image data.');
             return null;
         }
 
@@ -312,7 +311,10 @@ private function generateTutorAvatar(): ?string
         return $fileName; // ✅ DB me only filename
 
     } catch (\Throwable $e) {
-        Log::error("Avatar error", ['msg' => $e->getMessage()]);
+        Log::warning('Fallback avatar generation exception.', [
+            'exception' => $e::class,
+            'message' => (string) str($e->getMessage())->squish()->limit(160),
+        ]);
         return null;
     }
 }
@@ -370,7 +372,7 @@ private function generateTutorAvatar(): ?string
 
     $data['user_id'] = $user_id;
 
-    $data['c_password'] = $_POST['password_confirmation'];
+    $data['c_password'] = $password;
 
     $data['date'] = date('Y-m-d, h:i:s a');
 
@@ -424,7 +426,7 @@ private function generateTutorAvatar(): ?string
 
     $data['user_id'] = $user_id;
 
-    $data['c_password'] = $_POST['password_confirmation'];
+    $data['c_password'] = $password;
 
     $data['date'] = date('Y-m-d, h:i:s a');
 
@@ -482,7 +484,7 @@ private function generateTutorAvatar(): ?string
      $data['otp_status'] = 'f';
      $data['status'] = 'f';
 
-    $data['c_password'] = $_POST['cpass_id'];
+    $data['c_password'] = $password;
 
     $data['date'] = date('Y-m-d, h:i:s a');
 
@@ -714,7 +716,7 @@ public function userforget(Request $request){
         }
 
         $user->password = Hash::make($request->newpassword);
-        $user->c_password = $request->newpassword;
+        $user->c_password = $user->password;
 
         $user->otp_status = 't';  
         $user->otp = null;

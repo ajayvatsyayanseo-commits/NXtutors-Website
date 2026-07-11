@@ -3,6 +3,9 @@
 namespace Tests\Feature\CostSafety;
 
 use App\Models\PagegenImportRow;
+use App\Jobs\PageGen\GenerateFromImportRow;
+use App\Models\GeneratedPage;
+use App\Services\PageGen\CreateGeneratedPage;
 use App\Services\Queue\AtomicImportClaim;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -55,5 +58,23 @@ class AtomicImportClaimTest extends TestCase
         ]);
 
         $this->assertFalse(app(AtomicImportClaim::class)->claim(PagegenImportRow::class, $row->id));
+    }
+
+    public function test_duplicate_delivery_does_not_generate_the_row_twice(): void
+    {
+        $row = PagegenImportRow::create([
+            'payload' => ['city' => 'Gurugram'],
+            'status' => 'pending',
+        ]);
+        $page = new GeneratedPage;
+        $page->id = 99;
+        $creator = $this->mock(CreateGeneratedPage::class);
+        $creator->shouldReceive('create')->once()->andReturn($page);
+
+        (new GenerateFromImportRow($row->id))->handle($creator, app(AtomicImportClaim::class));
+        (new GenerateFromImportRow($row->id))->handle($creator, app(AtomicImportClaim::class));
+
+        $this->assertSame('done', $row->fresh()->status);
+        $this->assertSame(99, $row->fresh()->generated_page_id);
     }
 }

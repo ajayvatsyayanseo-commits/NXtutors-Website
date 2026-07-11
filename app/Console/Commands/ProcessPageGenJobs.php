@@ -2,68 +2,73 @@
 
 namespace App\Console\Commands;
 
-use Illuminate\Console\Command;
 use App\Models\PageGenerationJob;
-use Illuminate\Support\Facades\DB;
+use App\Services\PageGen\CreateGeneratedPage;
+use App\Services\Queue\AtomicImportClaim;
+use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
-use App\Services\OpenAiPageGenerator; 
+use Throwable;
 
 class ProcessPageGenJobs extends Command
 {
     protected $signature = 'pagegen:process {--limit=5}';
-    protected $description = 'Process pending page generation jobs from Excel queue';
 
-    public function handle(OpenAiPageGenerator $gen)
+    protected $description = 'Process a bounded number of legacy page generation records';
+
+    public function handle(CreateGeneratedPage $creator, AtomicImportClaim $claimer): int
     {
-        $limit = (int)$this->option('limit');
+        $limit = min(
+            max(1, (int) $this->option('limit')),
+            max(1, (int) config('cost-safety.imports.batch_size', 25))
+        );
 
-        $jobs = PageGenerationJob::where('status','pending')
-            ->orderBy('id','asc')
+        $jobs = PageGenerationJob::whereIn('status', ['pending', 'failed'])
+            ->orderBy('id')
             ->limit($limit)
             ->get();
 
         if ($jobs->isEmpty()) {
-            $this->info("No pending jobs.");
-            return 0;
+            $this->info('No pending jobs.');
+
+            return self::SUCCESS;
         }
 
         foreach ($jobs as $job) {
+            if (! $claimer->claim(PageGenerationJob::class, $job->id)) {
+                continue;
+            }
+
             try {
-                $job->update(['status'=>'processing', 'attempts'=>$job->attempts + 1]);
+                $creator->create((array) $job->payload);
 
-                DB::transaction(function() use ($job, $gen) {
-                    $payload = $job->payload;
-
-                    // ✅ CALL YOUR EXISTING GENERATOR LOGIC
-                    // Example: $gen->generate($payload) + DB insert your page record
-                    // Replace below with your actual service call:
-                    $gen->generateAndStore($payload);
-
-                    $job->update([
+                PageGenerationJob::query()
+                    ->whereKey($job->id)
+                    ->where('status', 'processing')
+                    ->update([
                         'status' => 'done',
                         'error' => null,
                         'processed_at' => now(),
+                        'updated_at' => now(),
                     ]);
-                });
-
                 $this->info("Done job #{$job->id}");
-
-            } catch (\Throwable $e) {
-                Log::error("PageGen job failed", [
+            } catch (Throwable $exception) {
+                $message = (string) str($exception->getMessage())->squish()->limit(500);
+                Log::warning('Legacy page generation job failed.', [
                     'job_id' => $job->id,
-                    'msg' => $e->getMessage()
+                    'exception' => $exception::class,
+                    'message' => $message,
                 ]);
 
-                $job->update([
+                PageGenerationJob::query()->whereKey($job->id)->update([
                     'status' => 'failed',
-                    'error' => $e->getMessage(),
+                    'error' => $message,
                     'processed_at' => now(),
+                    'updated_at' => now(),
                 ]);
-
-                $this->error("Failed job #{$job->id}: ".$e->getMessage());
+                $this->error("Failed job #{$job->id}");
             }
         }
 
-        return 0;
+        return self::SUCCESS;
     }
 }

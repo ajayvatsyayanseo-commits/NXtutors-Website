@@ -21,6 +21,7 @@ use App\Http\Controllers\SuperAdmin\PageGeneratorController;
 use App\Http\Controllers\SuperAdmin\SettingController;
 
 use App\Http\Controllers\GeneratedPageController;
+use App\Http\Controllers\PincodeController;
 
 use App\Http\Controllers\HomeController;
 
@@ -38,93 +39,40 @@ use App\Http\Middleware\TeacherMiddleware;
 
 use App\Http\Controllers\SuperAdmin\PlanController;
 
-use App\Models\GeneratedPage;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Http;
-
 use App\Http\Controllers\PricingController;
 
 use App\Http\Controllers\DemoLeadController;
 
-Route::middleware(['throttle:ip_visit_limit'])->group(function () {
-    require __DIR__.'/web_public.php';
-});
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/sitemap.xml', [HomeController::class, 'sitemap'])
     ->name('sitemap');
 
 Route::post('/ask-nxt-ai', [HomeController::class, 'askNxtAi'])
+    ->middleware('throttle:public-api')
     ->name('ask.nxt.ai');
 
-// Route::post('/get-pincode-details', function (\Illuminate\Http\Request $request) {
-//     $pincode = $request->input('pincode');
-//     $response = Http::withHeaders([
-//         'X-RapidAPI-Key' => 'a9548f489fmshd3d3a7f7eb610bfp1ac0aajsn3b4a158d94cf',
-//         'X-RapidAPI-Host' => 'indian-new-pincode-api.p.rapidapi.com'
-//     ])->get('https://indian-new-pincode-api.p.rapidapi.com/api/Indian-Pincode-Details/', [
-//         'pincode' => $pincode
-//     ]);
-//     // This API returns a top-level array!
-//     return response()->json(['data' => $response->json() ?? []]);
-// });
-
-    Route::get('/test-pincode/{pincode}', function ($pincode) {
-
-    $response = Http::get(
-        'https://api.postalpincode.in/pincode/'.$pincode
-    );
-
-    return response()->json($response->json());
-
-});
-
-
-Route::post('/get-pincode-details', function (Request $request) {
-    $request->validate([
-        'pincode' => 'required|digits:6',
-    ]);
-
-    $response = Http::timeout(10)
-        ->get('https://api.postalpincode.in/pincode/' . $request->pincode);
-
-    if (!$response->successful()) {
-        return response()->json([
-            'status' => false,
-            'message' => 'Pincode API failed',
-        ], 500);
-    }
-
-    $data = $response->json();
-
-    if (empty($data[0]) || ($data[0]['Status'] ?? '') !== 'Success') {
-        return response()->json([
-            'status' => false,
-            'message' => 'Invalid pincode or no data found.',
-            'data' => $data,
-        ], 404);
-    }
-
-    return response()->json([
-        'status' => true,
-        'data' => $data[0]['PostOffice'] ?? [],
-    ]);
-});
+Route::post('/get-pincode-details', [PincodeController::class, 'lookup'])
+    ->middleware('throttle:public-api')
+    ->name('get-pincode-details');
 Route::get('login', [HomeController::class, 'loginpage'])->name('login');
-Route::post('/login', [RegisterController::class, 'userlogin'])->name('login');
+Route::post('/login', [RegisterController::class, 'userlogin'])->middleware('throttle:public-form')->name('login.submit');
 
 Route::get('/pricing', [PricingController::class, 'index'])->name('pricing');
 
 Route::post('/subscription/pay/{plan}', [PricingController::class, 'pay'])
+    ->middleware('throttle:payment')
     ->name('subscription.pay');
 
 Route::post('/subscription/activate-free/{plan}', [PricingController::class, 'activateFree'])
+    ->middleware('throttle:payment')
     ->name('subscription.activate.free');
 
     Route::get('/subscription/payment/success', [PricingController::class, 'paymentSuccess'])
     ->name('subscription.payment.success');
 
 Route::post('/cashfree/webhook', [PricingController::class, 'cashfreeWebhook'])
+    ->middleware('throttle:webhook')
     ->name('cashfree.webhook');
 
 Route::get('/logout', [RegisterController::class, 'logout'])->name('logout');
@@ -135,7 +83,7 @@ Route::get('/subscription/buy/{plan}', [PricingController::class, 'buy'])
 Route::get('/subscription/checkout/{plan}', [PricingController::class, 'checkout'])
     ->name('subscription.checkout');
 Route::get('forget-password', [HomeController::class, 'forgetpage'])->name('forget-password');
-Route::post('/forget', [RegisterController::class, 'userforget'])->name('forget');
+Route::post('/forget', [RegisterController::class, 'userforget'])->middleware('throttle:public-form')->name('forget');
 
     
 Route::get('/home/teachers', [HomeController::class, 'teachers'])->name('home.teachers');
@@ -144,7 +92,7 @@ Route::get('/local-tutors', [HomeController::class, 'localTutors'])->name('home.
 Route::get('/home/blogs', [HomeController::class, 'blogs'])->name('home.blogs');
 
 Route::get('/compare-defaults', [HomeController::class, 'compareDefaults'])->name('home.compareDefaults');
-Route::post('/demo-lead/store', [DemoLeadController::class, 'store'])->name('demo.lead.store');
+Route::post('/demo-lead/store', [DemoLeadController::class, 'store'])->middleware('throttle:public-form')->name('demo.lead.store');
 // routes/web.php
 Route::get('/home/compare-ai', [HomeController::class, 'compareAi'])->name('home.compareAi');
 
@@ -165,20 +113,9 @@ Route::get('course/{slug}', [HomeController::class, 'singlecoursepage'])->name('
 //     return view('page', compact('pages'));
 // })->name('page');
 
-Route::get('/page', function (Request $request) {
-    $pages = GeneratedPage::where('status', 'published')
-        ->latest()
-        ->paginate(12); // 12 cards per load
+Route::get('/page', [HomeController::class, 'pageIndex'])->name('page');
 
     // If AJAX request → return partial HTML
-    if ($request->ajax()) {
-        return view('pages.partials.page-cards', compact('pages'))->render();
-    }
-	 $metatitle = '';
-            $metakey = '';
-            $metadesc = '';
-    return view('page', compact('pages','metatitle','metakey','metadesc'));
-})->name('page');
 
 // Route::get('/p/{slug}', function ($slug) {
 //     $page = GeneratedPage::where('slug',$slug)->where('status','published')->firstOrFail();
@@ -192,7 +129,6 @@ Route::get('/p/{slug}/blogs', [GeneratedPageController::class, 'blogs'])->name('
 Route::get('/blog', [HomeController::class, 'blogIndex'])->name('blog.index');
 Route::get('contact', [HomeController::class, 'contactpage'])->name('contact');
 
-Route::get('/city', [HomeController::class, 'blogIndex'])->name('city.index');
 Route::get('/demo-class', [HomeController::class, 'democlassIndex'])->name('demo-class.index');
 
 Route::get('/pricing-guide', [HomeController::class, 'pricingguideIndex'])->name('pricing-guide.index');
@@ -224,18 +160,18 @@ Route::get('/tutor/{city}/{user_id}/{name}', [HomeController::class, 'showsingle
 
 Route::get('/enquiry_teacher', [StudentenquiryController::class, 'teacherenquiry'])->name('enquiry_teacher');
 
-Route::post('/enquiryregister', [StudentenquiryController::class, 'teacherenquiryupdate'])->name('enquiryregister');
+Route::post('/enquiryregister', [StudentenquiryController::class, 'teacherenquiryupdate'])->middleware('throttle:public-form')->name('enquiryregister');
 
-Route::post('/enquiry', [HomeController::class, 'storeenquiry'])->name('enquiry');
+Route::post('/enquiry', [HomeController::class, 'storeenquiry'])->middleware('throttle:public-form')->name('enquiry');
 
-Route::post('/register', [RegisterController::class, 'userstore'])->name('register');
-Route::post('/check-email', [RegisterController::class, 'checkEmail'])->name('checkEmail');
-Route::post('/check-phone', [RegisterController::class, 'checkPhone'])->name('checkPhone');
-Route::post('/check-otp', [RegisterController::class, 'checkOTP'])->name('checkOTP');
-Route::post('/echeck-otp', [RegisterController::class, 'checkOTP'])->name('echeckOTP');
-Route::post('/verify-otp', [RegisterController::class, 'verifyOtp'])->name('verifyOtp');
+Route::post('/register', [RegisterController::class, 'userstore'])->middleware('throttle:public-form')->name('register');
+Route::post('/check-email', [RegisterController::class, 'checkEmail'])->middleware('throttle:public-form')->name('checkEmail');
+Route::post('/check-phone', [RegisterController::class, 'checkPhone'])->middleware('throttle:public-form')->name('checkPhone');
+Route::post('/check-otp', [RegisterController::class, 'checkOTP'])->middleware('throttle:public-form')->name('checkOTP');
+Route::post('/echeck-otp', [RegisterController::class, 'checkOTP'])->middleware('throttle:public-form')->name('echeckOTP');
+Route::post('/verify-otp', [RegisterController::class, 'verifyOtp'])->middleware('throttle:public-form')->name('verifyOtp');
 
-Route::post('/everify-otp', [RegisterController::class, 'everifyOtp'])->name('everifyOtp');
+Route::post('/everify-otp', [RegisterController::class, 'everifyOtp'])->middleware('throttle:public-form')->name('everifyOtp');
 
  Route::get('/get-child-categories/{parentId}', [CategoryController::class, 'getChildCategories'])->name('getChildCategories');
         Route::get('/get-parent-categories/{catId}', [CategoryController::class, 'getparentCategories'])->name('getparentCategories');
@@ -274,7 +210,7 @@ Route::middleware([TeacherMiddleware::class])->group(function () {
 Route::get('cartlist', [RegisterController::class, 'usercartlist'])->name('cartlist');
 
 Route::get('checkout', [RegisterController::class, 'usercheckout'])->name('checkout');
-Route::post('checkout', [OrderController::class, 'orderplace'])->name('checkout');
+Route::post('checkout', [OrderController::class, 'orderplace'])->name('checkout.store');
 Route::get('success', [OrderController::class, 'userordersuccess'])->name('success'); 
 
 Route::get('/order', [OrderController::class, 'userorderlist'])->name('order');
@@ -302,7 +238,7 @@ Route::middleware([UserMiddleware::class])->group(function () {
 Route::get('cartlist', [RegisterController::class, 'usercartlist'])->name('cartlist');
 
 Route::get('checkout', [RegisterController::class, 'usercheckout'])->name('checkout');
-Route::post('checkout', [OrderController::class, 'orderplace'])->name('checkout');
+Route::post('checkout', [OrderController::class, 'orderplace'])->name('checkout.store');
 Route::get('success', [OrderController::class, 'userordersuccess'])->name('success'); 
 
 Route::get('/order', [OrderController::class, 'userorderlist'])->name('order');
@@ -339,7 +275,8 @@ Route::prefix('super')->name('super.')->group(function () {
         Route::post('/users', [UserManagementController::class, 'store'])->name('users.store');
       // super admin page genrate
        Route::get('/page-generator', [PageGeneratorController::class,'create'])->name('pagegen.create');
-       Route::post('/page-generator', [PageGeneratorController::class,'store'])->name('pagegen.store');
+       Route::post('/page-generator', [PageGeneratorController::class,'store'])
+           ->middleware('throttle:admin-generation')->name('pagegen.store');
         Route::get('/generated-pages', [PageGeneratorController::class,'index'])->name('pagegen.index');
          Route::get('/generated-pages/{page}/edit', [PageGeneratorController::class,'edit'])
         ->name('pagegen.edit');
@@ -349,7 +286,7 @@ Route::prefix('super')->name('super.')->group(function () {
     ->name('pagegen.import.create');
 
     Route::post('/pagegen/import', [PagegenImportController::class, 'store'])
-    ->name('pagegen.import.store');
+    ->middleware('throttle:admin-import')->name('pagegen.import.store');
 
         Route::put('/generated-pages/{page}', [PageGeneratorController::class,'update'])
         ->name('pagegen.update');
@@ -368,7 +305,7 @@ Route::prefix('super')->name('super.')->group(function () {
 
         Route::get('category/get-parent-categories/{catId}', [CategoryController::class, 'getparentCategories'])->name('category.getparentCategories');
 
-         Route::get('category/get-products-by-class/{ccatId}', [CategoryController::class, 'getProductsByClassId'])->name('category.getparentCategories');
+         Route::get('category/get-products-by-class/{ccatId}', [CategoryController::class, 'getProductsByClassId'])->name('category.getProductsByClassId');
 
           Route::get('/category/get-parent-categoriess', [CategoryController::class, 'getParentCategoriess'])->name('category.getparentCategoriess');
 
@@ -401,9 +338,10 @@ Route::prefix('super')->name('super.')->group(function () {
       Route::get('teacher/generate', [RegisterController::class, 'teachergenerate'])->name('teacher.generate');
 
       Route::post('teacher/generate', [RegisterController::class, 'teacherGenerateStore'])
-    ->name('teacher.generate.store');
+    ->middleware('throttle:admin-generation')->name('teacher.generate.store');
       
        Route::post('teacher/import-excel', [TutorImportController::class, 'upload'])
+           ->middleware('throttle:admin-import')
     ->name('teacher.import.excel'); 
       
             // superadmin blog
@@ -459,9 +397,7 @@ Route::delete('plans/delete/{id}', [PlanController::class, 'destroy'])->name('pl
       
     });
 });
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::view('/dashboard', 'dashboard')->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

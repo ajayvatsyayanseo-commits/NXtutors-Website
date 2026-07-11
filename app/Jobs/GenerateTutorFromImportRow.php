@@ -257,7 +257,11 @@ $reg = Register::create([
                 'message' => $message,
             ]);
 
-            $this->markFailed($message);
+            if ($this->attempts() < $this->tries) {
+                $this->releaseForRetry($message);
+            } else {
+                $this->markFailed($message);
+            }
 
             throw $e;
         }
@@ -275,6 +279,18 @@ $reg = Register::create([
             ->where('status', 'processing')
             ->update([
                 'status' => 'failed',
+                'error' => $message,
+                'updated_at' => now(),
+            ]);
+    }
+
+    private function releaseForRetry(string $message): void
+    {
+        TutorImportRow::query()
+            ->whereKey($this->rowId)
+            ->where('status', 'processing')
+            ->update([
+                'status' => 'pending',
                 'error' => $message,
                 'updated_at' => now(),
             ]);

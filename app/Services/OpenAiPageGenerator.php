@@ -2,12 +2,22 @@
 
 namespace App\Services;
 
+use Illuminate\Http\Client\ConnectionException;
+use Illuminate\Http\Client\RequestException;
 use Illuminate\Support\Facades\Http;
+use Throwable;
 
 class OpenAiPageGenerator
 {
     public function generate(array $input): array
     {
+        app(ExternalApiBudget::class)->consume(
+            'openai-page',
+            (int) config('services.openai.page_daily_limit', 100)
+        );
+        $circuit = app(ProviderCircuitBreaker::class);
+        $circuit->ensureAvailable('openai');
+
        // $model = env('OPENAI_MODEL', 'gpt-5-mini');
 
         $model = config('services.openai.model', 'gpt-5-mini');
@@ -461,11 +471,33 @@ class OpenAiPageGenerator
         ];
 
         // ---------- 5) API call ----------
-        $res =  Http::withToken(config('services.openai.key'))
+        $apiKey = (string) config('services.openai.key');
+        if ($apiKey === '') {
+            throw new \RuntimeException('OpenAI is not configured.');
+        }
+
+        $res = Http::withToken($apiKey)
             ->acceptJson()
-            ->connectTimeout(15)
-            ->timeout(180)
-            ->retry(2, 1200)
+            ->connectTimeout((int) config('services.openai.connect_timeout', 10))
+            ->timeout((int) config('services.openai.timeout', 90))
+            ->retry(
+                (int) config('services.openai.retry_times', 1),
+                750,
+                function (Throwable $exception): bool {
+                    if ($exception instanceof ConnectionException) {
+                        return true;
+                    }
+
+                    if ($exception instanceof RequestException && $exception->response) {
+                        $status = $exception->response->status();
+
+                        return $status === 429 || $status >= 500;
+                    }
+
+                    return false;
+                },
+                throw: false
+            )
             ->withOptions([
                 'curl' => [
                     CURLOPT_IPRESOLVE => CURL_IPRESOLVE_V4,
@@ -486,7 +518,8 @@ class OpenAiPageGenerator
             ]);
 
         if (!$res->successful()) {
-            throw new \RuntimeException("OpenAI error: " . $res->body());
+            $circuit->recordFailure('openai');
+            throw new \RuntimeException('OpenAI page generation failed with HTTP '.$res->status().'.');
         }
 
         // ---------- 6) Extract text ----------
@@ -503,13 +536,17 @@ class OpenAiPageGenerator
         }
 
         if (!$text) {
+            $circuit->recordFailure('openai');
             throw new \RuntimeException("OpenAI returned empty output.");
         }
 
         $json = json_decode($text, true);
         if (!is_array($json)) {
-            throw new \RuntimeException("OpenAI output not valid JSON. Raw: " . mb_substr($text, 0, 300));
+            $circuit->recordFailure('openai');
+            throw new \RuntimeException('OpenAI returned malformed page JSON.');
         }
+
+        $circuit->recordSuccess('openai');
 
         // ---------- 7) Sanitization ----------
         $json['local_reviews'] = $this->sanitizeReviews(

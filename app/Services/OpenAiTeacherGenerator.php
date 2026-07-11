@@ -2,18 +2,27 @@
 
 namespace App\Services;
 
+use Illuminate\Http\Client\ConnectionException;
+use Illuminate\Http\Client\RequestException;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
 use App\Models\Register;
+use Throwable;
 
 
 class OpenAiTeacherGenerator
 {
     public function generate(array $data): array
     {
+        app(ExternalApiBudget::class)->consume(
+            'openai-tutor',
+            (int) config('services.openai.tutor_daily_limit', 25)
+        );
+        app(ProviderCircuitBreaker::class)->ensureAvailable('openai');
+
         $tutor = $this->generateTutorJson($data);
 
         // ✅ reviews (robust)
@@ -219,15 +228,26 @@ Return ONLY JSON.";
             $payload['response_format'] = ['type' => 'json_object'];
         }
 
+        $circuit = app(ProviderCircuitBreaker::class);
+        $circuit->ensureAvailable('openai');
+
         $res = Http::withToken($apiKey)
-            ->connectTimeout(30)
-            ->timeout(180)
-            ->retry(2, 1500)
+            ->connectTimeout((int) config('services.openai.connect_timeout', 10))
+            ->timeout((int) config('services.openai.timeout', 90))
+            ->retry(
+                (int) config('services.openai.retry_times', 1),
+                750,
+                fn (Throwable $exception): bool => $this->shouldRetry($exception),
+                throw: false
+            )
             ->post('https://api.openai.com/v1/chat/completions', $payload);
 
         if (!$res->ok()) {
-            throw new \Exception("OpenAI chat failed: " . $res->status() . " " . $res->body());
+            $circuit->recordFailure('openai');
+            throw new \RuntimeException('OpenAI tutor generation failed with HTTP '.$res->status().'.');
         }
+
+        $circuit->recordSuccess('openai');
 
         return (string) data_get($res->json(), 'choices.0.message.content', '');
     }
@@ -250,10 +270,18 @@ Return ONLY JSON.";
                 ? "Realistic professional portrait photo of an Indian female teacher, age 26-40, formal attire, friendly smile, plain light background, passport style, high quality."
                 : "Realistic professional portrait photo of an Indian male teacher, age 28-40, formal shirt, friendly smile, plain light background, passport style, high quality.";
 
+            $circuit = app(ProviderCircuitBreaker::class);
+            $circuit->ensureAvailable('openai');
+
             $res = Http::withToken($apiKey)
-                ->connectTimeout(30)
-                ->timeout(180)
-                ->retry(1, 1200)
+                ->connectTimeout((int) config('services.openai.connect_timeout', 10))
+                ->timeout((int) config('services.openai.timeout', 90))
+                ->retry(
+                    (int) config('services.openai.retry_times', 1),
+                    750,
+                    fn (Throwable $exception): bool => $this->shouldRetry($exception),
+                    throw: false
+                )
                 ->post('https://api.openai.com/v1/images/generations', [
                     //'model' => env('OPENAI_IMAGE_MODEL', 'gpt-image-1.5'),
                     'model' => config('services.openai.image_model', 'gpt-image-1.5'),
@@ -265,15 +293,19 @@ Return ONLY JSON.";
                 ]);
 
             if (!$res->ok()) {
-                Log::error("OpenAI image failed", ['status' => $res->status(), 'body' => $res->body()]);
+                $circuit->recordFailure('openai');
+                Log::warning('OpenAI image generation failed.', ['status' => $res->status()]);
                 return null;
             }
 
             $b64 = data_get($res->json(), 'data.0.b64_json');
             if (!$b64) {
-                Log::error("OpenAI image missing b64_json", ['json' => $res->json()]);
+                $circuit->recordFailure('openai');
+                Log::warning('OpenAI image response did not contain image data.');
                 return null;
             }
+
+            $circuit->recordSuccess('openai');
 
             $binary = base64_decode($b64, true);
             if ($binary === false) {
@@ -300,10 +332,28 @@ Return ONLY JSON.";
             }
 
             return $fileName; // ✅ DB me save this
-        } catch (\Throwable $e) {
-            Log::error("generateTutorAvatar exception", ['msg' => $e->getMessage()]);
+        } catch (Throwable $e) {
+            Log::warning('Tutor avatar generation exception.', [
+                'exception' => $e::class,
+                'message' => (string) str($e->getMessage())->squish()->limit(200),
+            ]);
             return null;
         }
+    }
+
+    private function shouldRetry(Throwable $exception): bool
+    {
+        if ($exception instanceof ConnectionException) {
+            return true;
+        }
+
+        if ($exception instanceof RequestException && $exception->response) {
+            $status = $exception->response->status();
+
+            return $status === 429 || $status >= 500;
+        }
+
+        return false;
     }
 
     /**
