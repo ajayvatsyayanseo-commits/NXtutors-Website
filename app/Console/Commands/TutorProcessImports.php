@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use App\Models\TutorImport;
 use App\Models\TutorImportRow;
 use App\Jobs\GenerateTutorFromImportRow;
 
@@ -13,6 +14,8 @@ class TutorProcessImports extends Command
 
     public function handle()
     {
+        $this->finalizeImports();
+
         $configuredLimit = max(1, (int) config('cost-safety.imports.tutor_batch_size', 2));
         $limit = min(max(1, (int) $this->option('limit')), $configuredLimit);
 
@@ -33,5 +36,39 @@ class TutorProcessImports extends Command
         }
 
         return 0;
+    }
+
+    private function finalizeImports(): void
+    {
+        TutorImport::query()
+            ->whereIn('status', ['pending', 'processing'])
+            ->oldest()
+            ->limit(20)
+            ->get()
+            ->each(function (TutorImport $import): void {
+                $rowCount = $import->rows()->count();
+                if ($rowCount === 0) {
+                    $import->update([
+                        'status' => 'failed',
+                        'error' => 'Import contains no valid rows.',
+                    ]);
+
+                    return;
+                }
+
+                if ($import->rows()->whereIn('status', ['pending', 'processing'])->exists()) {
+                    if ($import->status !== 'processing') {
+                        $import->update(['status' => 'processing']);
+                    }
+
+                    return;
+                }
+
+                $failed = $import->rows()->where('status', 'failed')->count();
+                $import->update([
+                    'status' => $failed > 0 ? 'failed' : 'done',
+                    'error' => $failed > 0 ? "{$failed} row(s) failed generation." : null,
+                ]);
+            });
     }
 }
