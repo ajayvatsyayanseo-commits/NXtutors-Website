@@ -1,24 +1,24 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
 
-APP_DIR="/home/nxtutorsin/htdocs/nxtutors.in"
-PHP_BIN="/usr/bin/php"
-LOG_DIR="$APP_DIR/storage/logs"
+# Deprecated compatibility wrapper. Use Supervisor for persistent workers.
+: "${APP_ROOT:?APP_ROOT must point to the Laravel application root}"
+PHP_BIN="${PHP_BIN:-$(command -v php)}"
+LOCK_FILE="${QUEUE_LOCK_FILE:-/tmp/nxtutors-legacy-queue-worker.lock}"
 
-cd "$APP_DIR" || exit 1
-mkdir -p "$LOG_DIR"
+if [[ ! -f "$APP_ROOT/artisan" ]]; then
+  echo "artisan not found under APP_ROOT=$APP_ROOT" >&2
+  exit 1
+fi
 
-# 10 workers always-on for pagegen + default queues
-for i in 1 2 3 4 5 6 7 8 9 10
-do
-  if ! pgrep -f "artisan queue:work database --queue=pagegen,default --sleep=1 --tries=3 --timeout=300 --max-time=3600 --name=nxw$i" >/dev/null 2>&1
-  then
-    nohup $PHP_BIN artisan queue:work database \
-      --queue=pagegen,default \
-      --sleep=1 \
-      --tries=3 \
-      --timeout=300 \
-      --max-time=3600 \
-      --name=nxw$i \
-      >> "$LOG_DIR/queue-worker-$i.log" 2>&1 &
-  fi
-done
+cd "$APP_ROOT"
+exec 9>"$LOCK_FILE"
+flock -n 9 || exit 0
+
+exec "$PHP_BIN" artisan queue:work \
+  --queue="${QUEUE_NAMES:-pagegen,default}" \
+  --sleep="${QUEUE_SLEEP:-3}" \
+  --tries="${QUEUE_TRIES:-3}" \
+  --timeout="${QUEUE_TIMEOUT:-600}" \
+  --max-jobs="${QUEUE_MAX_JOBS:-10}" \
+  --stop-when-empty

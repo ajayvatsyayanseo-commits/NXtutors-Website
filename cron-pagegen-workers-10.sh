@@ -1,38 +1,25 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-APP_DIR="/home/nxtutorsin/htdocs/nxtutors.in/public"
-PHP_BIN="$(command -v php)"
+# Deprecated compatibility wrapper. Despite the historical filename, this
+# starts at most one finite worker. Use Supervisor for persistent workers.
+: "${APP_ROOT:?APP_ROOT must point to the Laravel application root}"
+PHP_BIN="${PHP_BIN:-$(command -v php)}"
+LOCK_FILE="${QUEUE_LOCK_FILE:-/tmp/nxtutors-default-worker.lock}"
 
-cd "$APP_DIR"
-
-# ✅ Prevent overlapping cron runs
-LOCK_FILE="/tmp/nx_pagegen_workers.lock"
-exec 9>"$LOCK_FILE"
-if ! flock -n 9; then
-  exit 0
+if [[ ! -f "$APP_ROOT/artisan" ]]; then
+  echo "artisan not found under APP_ROOT=$APP_ROOT" >&2
+  exit 1
 fi
 
-# ✅ Ensure cache ok
-$PHP_BIN artisan config:clear >/dev/null 2>&1 || true
-$PHP_BIN artisan cache:clear  >/dev/null 2>&1 || true
+cd "$APP_ROOT"
+exec 9>"$LOCK_FILE"
+flock -n 9 || exit 0
 
-# ✅ Start 10 workers if not already running
-WORKERS=10
-
-for i in $(seq 1 $WORKERS); do
-  if pgrep -f "artisan queue:work.*--name=nxw$i" >/dev/null 2>&1; then
-    continue
-  fi
-
-  nohup $PHP_BIN artisan queue:work \
-    --queue=default \
-    --sleep=1 \
-    --tries=3 \
-    --timeout=120 \
-    --max-time=3500 \
-    --name="nxw$i" \
-    >> storage/logs/queue-worker-$i.log 2>&1 &
-done
-
-exit 0
+exec "$PHP_BIN" artisan queue:work \
+  --queue="${QUEUE_NAMES:-default}" \
+  --sleep="${QUEUE_SLEEP:-3}" \
+  --tries="${QUEUE_TRIES:-3}" \
+  --timeout="${QUEUE_TIMEOUT:-600}" \
+  --max-jobs="${QUEUE_MAX_JOBS:-10}" \
+  --stop-when-empty

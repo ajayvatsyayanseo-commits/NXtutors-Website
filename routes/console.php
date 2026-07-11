@@ -21,15 +21,11 @@ use Illuminate\Support\Facades\Schedule;
 
 Schedule::command('pagegen:process-imports')
     ->everyMinute()
-    ->withoutOverlapping();
-
-Schedule::command('queue:work --queue=pagegen --stop-when-empty --tries=1 --timeout=300')
-    ->everyMinute()
-    ->withoutOverlapping();
+    ->withoutOverlapping(10);
 
 Schedule::command('tutor:process-imports --limit=2')
     ->everyMinute()
-    ->withoutOverlapping();
+    ->withoutOverlapping(10);
 
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());

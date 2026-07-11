@@ -13,7 +13,8 @@ class TutorProcessImports extends Command
 
     public function handle()
     {
-        $limit = (int)$this->option('limit') ?: 1;
+        $configuredLimit = max(1, (int) config('cost-safety.imports.tutor_batch_size', 2));
+        $limit = min(max(1, (int) $this->option('limit')), $configuredLimit);
 
         $rows = TutorImportRow::where('status', 'pending')
             ->orderBy('id')
@@ -26,8 +27,8 @@ class TutorProcessImports extends Command
         }
 
         foreach ($rows as $row) {
-            $row->update(['status' => 'processing']);
-            GenerateTutorFromImportRow::dispatch($row->id);
+            GenerateTutorFromImportRow::dispatch($row->id)
+                ->onQueue((string) config('cost-safety.workers.tutor_queue', 'default'));
             $this->info("Dispatched row #{$row->id}");
         }
 

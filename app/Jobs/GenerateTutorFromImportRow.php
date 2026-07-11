@@ -7,26 +7,72 @@ use App\Models\Register;
 use App\Models\Teacher_review;
 use App\Models\Teacher_courses;
 use App\Services\OpenAiTeacherGenerator;
+use App\Services\Queue\AtomicImportClaim;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Contracts\Queue\ShouldBeUnique;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Queue\Middleware\WithoutOverlapping;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
+use Throwable;
 
-class GenerateTutorFromImportRow implements ShouldQueue
+class GenerateTutorFromImportRow implements ShouldBeUnique, ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
+    public int $tries = 3;
+
+    public int $timeout = 600;
+
+    public bool $failOnTimeout = true;
+
+    public int $uniqueFor = 1800;
+
     public function __construct(public int $rowId) {}
 
-    public function handle(OpenAiTeacherGenerator $gen): void
+    public function uniqueId(): string
     {
-        $row = TutorImportRow::findOrFail($this->rowId);
+        return 'tutor-import-row:'.$this->rowId;
+    }
+
+    public function backoff(): array
+    {
+        return [60, 180, 300];
+    }
+
+    public function retryUntil(): \DateTimeInterface
+    {
+        return now()->addMinutes(30);
+    }
+
+    public function middleware(): array
+    {
+        return [
+            (new WithoutOverlapping($this->uniqueId()))
+                ->dontRelease()
+                ->expireAfter($this->timeout + 60),
+        ];
+    }
+
+    public function handle(OpenAiTeacherGenerator $gen, AtomicImportClaim $claimer): void
+    {
+        $row = TutorImportRow::find($this->rowId);
+
+        if (! $row || $row->status === 'done' || $row->register_id) {
+            return;
+        }
+
+        if (! $claimer->claim(TutorImportRow::class, $this->rowId)) {
+            return;
+        }
+
+        $row->refresh();
         $p = (array)$row->payload;
 
         try {
@@ -202,21 +248,44 @@ $reg = Register::create([
                 'error' => null,
             ]);
 
-        } catch (\Throwable $e) {
-            Log::error("Import row generation failed", [
+        } catch (Throwable $e) {
+            $message = $this->safeError($e);
+
+            Log::warning('Tutor import row generation failed.', [
                 'row_id' => $row->id,
-                'msg' => $e->getMessage(),
-                'file' => $e->getFile(),
-                'line' => $e->getLine(),
+                'exception' => $e::class,
+                'message' => $message,
             ]);
 
-            $row->update([
-                'status' => 'failed',
-                'error' => $e->getMessage(),
-            ]);
+            $this->markFailed($message);
 
             throw $e;
         }
+    }
+
+    public function failed(?Throwable $exception): void
+    {
+        $this->markFailed($exception ? $this->safeError($exception) : 'Tutor generation failed.');
+    }
+
+    private function markFailed(string $message): void
+    {
+        TutorImportRow::query()
+            ->whereKey($this->rowId)
+            ->where('status', 'processing')
+            ->update([
+                'status' => 'failed',
+                'error' => $message,
+                'updated_at' => now(),
+            ]);
+    }
+
+    private function safeError(Throwable $exception): string
+    {
+        return Str::limit(
+            preg_replace('/\s+/', ' ', $exception->getMessage()) ?: 'Tutor generation failed.',
+            500
+        );
     }
 
     /**

@@ -3,73 +3,108 @@
 namespace App\Jobs\PageGen;
 
 use App\Models\PagegenImportRow;
-use App\Models\GeneratedPage;
 use App\Services\PageGen\CreateGeneratedPage;
+use App\Services\Queue\AtomicImportClaim;
 use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldBeUnique;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Queue\Middleware\WithoutOverlapping;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Str;
+use Throwable;
 
-class GenerateFromImportRow implements ShouldQueue
+class GenerateFromImportRow implements ShouldBeUnique, ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
-    public $tries = 3;
+    public int $tries = 3;
+
+    public int $timeout = 240;
+
+    public bool $failOnTimeout = true;
+
+    public int $uniqueFor = 1800;
 
     public function __construct(public int $rowId) {}
 
-    public function handle(CreateGeneratedPage $creator)
+    public function uniqueId(): string
     {
-        $row = PagegenImportRow::findOrFail($this->rowId);
+        return 'pagegen-import-row:'.$this->rowId;
+    }
 
-        // already done
-        if ($row->status === 'done') return;
+    public function backoff(): array
+    {
+        return [30, 120, 300];
+    }
 
-        $payload = is_array($row->payload) ? $row->payload : [];
+    public function retryUntil(): \DateTimeInterface
+    {
+        return now()->addMinutes(20);
+    }
 
-        // ✅ Prevent job duplicate processing
-        if ($row->status === 'processing') {
+    public function middleware(): array
+    {
+        return [
+            (new WithoutOverlapping($this->uniqueId()))
+                ->dontRelease()
+                ->expireAfter($this->timeout + 60),
+        ];
+    }
+
+    public function handle(CreateGeneratedPage $creator, AtomicImportClaim $claimer): void
+    {
+        $row = PagegenImportRow::find($this->rowId);
+
+        if (! $row || $row->status === 'done' || $row->generated_page_id) {
             return;
         }
 
-        $row->update(['status' => 'processing', 'error' => null]);
+        if (! $claimer->claim(PagegenImportRow::class, $this->rowId)) {
+            return;
+        }
+
+        $row->refresh();
+        $payload = is_array($row->payload) ? $row->payload : [];
 
         try {
-            // ✅ NOTE:
-            // Excel se index_flag/canonical_target nahi aa rahe (auto compute hoga CreateGeneratedPage me)
-            // Isliye yaha koi "Skip by index_flag" check nahi hoga.
-
-            // ✅ Optional: prevent same geo+service+category exact duplicates (extra safety)
-            // (Agar aapko chahiye to)
-            // $already = GeneratedPage::query()
-            //     ->where('status','published')
-            //     ->where('state', $payload['state'] ?? null)
-            //     ->where('city', $payload['city'] ?? null)
-            //     ->where('location', $payload['location'] ?? null)
-            //     ->where('service_mode', $payload['service_mode'] ?? null)
-            //     ->where('payload->category', $payload['category'] ?? null)
-            //     ->exists();
-            // if($already){
-            //     $row->update(['status'=>'done','error'=>'Skipped: already exists for same geo+mode+category']);
-            //     return;
-            // }
-
-            // ✅ Create page (CreateGeneratedPage will compute demand/index/canonical + premium schools)
             $page = $creator->create($payload, $row->created_by);
 
-            $row->update([
-                'status' => 'done',
-                'generated_page_id' => $page->id,
-            ]);
+            PagegenImportRow::query()
+                ->whereKey($this->rowId)
+                ->where('status', 'processing')
+                ->update([
+                    'status' => 'done',
+                    'generated_page_id' => $page->id,
+                    'error' => null,
+                    'updated_at' => now(),
+                ]);
+        } catch (Throwable $exception) {
+            $this->markFailed($exception);
 
-        } catch (\Throwable $e) {
-            $row->update([
-                'status' => 'failed',
-                'error' => $e->getMessage(),
-            ]);
-
-            throw $e; // queue retry
+            throw $exception;
         }
+    }
+
+    public function failed(?Throwable $exception): void
+    {
+        $this->markFailed($exception);
+    }
+
+    private function markFailed(?Throwable $exception): void
+    {
+        $message = $exception
+            ? Str::limit(preg_replace('/\s+/', ' ', $exception->getMessage()) ?: 'Generation failed.', 500)
+            : 'Generation failed.';
+
+        PagegenImportRow::query()
+            ->whereKey($this->rowId)
+            ->where('status', 'processing')
+            ->update([
+                'status' => 'failed',
+                'error' => $message,
+                'updated_at' => now(),
+            ]);
     }
 }
