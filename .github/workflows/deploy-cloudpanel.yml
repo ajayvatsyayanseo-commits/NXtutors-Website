@@ -312,12 +312,22 @@ jobs:
             exit 1
           fi
 
+          if [[ -d "$deploy_path/storage" ]] && ! mkdir -p "$deploy_path/storage/framework/cache/data" 2>/dev/null; then
+            mv "$deploy_path/storage" "$deploy_path/storage.predeploy.$(date +%Y%m%d%H%M%S)"
+          fi
+          if [[ -d "$deploy_path/bootstrap/cache" ]] && ! touch "$deploy_path/bootstrap/cache/.deploy-write-test" 2>/dev/null; then
+            mv "$deploy_path/bootstrap/cache" "$deploy_path/bootstrap/cache.predeploy.$(date +%Y%m%d%H%M%S)"
+          fi
+          mkdir -p "$deploy_path/storage/framework/cache/data" "$deploy_path/bootstrap/cache"
+          rm -f "$deploy_path/bootstrap/cache/.deploy-write-test"
+
           PREFLIGHT
 
           "${rsync_run[@]}" -az --delete-delay --delay-updates --omit-dir-times --no-perms --no-owner --no-group \
             -e "$rsync_ssh" \
             --exclude='.env' --exclude='.env.*' --exclude='.git/' --exclude='.github/' \
             --exclude='node_modules/' --exclude='tests/' --exclude='*.sql' --exclude='*.sqlite' \
+            --exclude='storage.predeploy.*' --exclude='bootstrap/cache.predeploy.*' \
             --exclude='storage/logs/***' --exclude='storage/framework/cache/***' \
             --exclude='storage/framework/sessions/***' --exclude='storage/framework/views/***' \
             --exclude='public/storage' --filter='protect public/uploads/***' \
