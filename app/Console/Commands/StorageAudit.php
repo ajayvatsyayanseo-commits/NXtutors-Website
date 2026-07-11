@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Services\StorageRetentionPolicy;
 use Illuminate\Console\Command;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
@@ -12,6 +13,11 @@ class StorageAudit extends Command
     protected $signature = 'app:storage-audit {--delete : Delete expired logs and temporary files only}';
 
     protected $description = 'Report application storage use; read-only unless --delete is explicitly supplied';
+
+    public function __construct(private readonly StorageRetentionPolicy $retentionPolicy)
+    {
+        parent::__construct();
+    }
 
     public function handle(): int
     {
@@ -30,7 +36,7 @@ class StorageAudit extends Command
         $rows = [];
         $deleted = 0;
         foreach ($targets as $label => $path) {
-            $stats = $this->inspect($path, $delete && in_array($label, ['Laravel logs', 'Legacy worker logs', 'Temporary files'], true));
+            $stats = $this->inspect($label, $path, $delete);
             $deleted += $stats['deleted'];
             $rows[] = [$label, $stats['files'], $this->bytes($stats['bytes']), $stats['oldest'] ?: 'n/a'];
         }
@@ -47,16 +53,12 @@ class StorageAudit extends Command
     }
 
     /** @return array{files:int,bytes:int,oldest:?string,deleted:int} */
-    private function inspect(string $path, bool $deleteExpired): array
+    private function inspect(string $area, string $path, bool $deleteExpired): array
     {
         $stats = ['files' => 0, 'bytes' => 0, 'oldest' => null, 'deleted' => 0];
         if (! is_dir($path)) {
             return $stats;
         }
-
-        $logCutoff = now()->subDays(max(1, (int) config('cost-safety.storage.log_retention_days', 14)))->getTimestamp();
-        $temporaryCutoff = now()->subDays(max(1, (int) config('cost-safety.storage.temporary_retention_days', 7)))->getTimestamp();
-        $cutoff = str_contains(str_replace('\\', '/', $path), '/tmp') ? $temporaryCutoff : $logCutoff;
 
         $iterator = new RecursiveIteratorIterator(
             new RecursiveDirectoryIterator($path, RecursiveDirectoryIterator::SKIP_DOTS)
@@ -73,7 +75,7 @@ class StorageAudit extends Command
             $date = date('Y-m-d H:i:s', $file->getMTime());
             $stats['oldest'] = $stats['oldest'] === null || $date < $stats['oldest'] ? $date : $stats['oldest'];
 
-            if ($deleteExpired && $file->getMTime() < $cutoff && @unlink($file->getPathname())) {
+            if ($deleteExpired && $this->retentionPolicy->shouldDelete($area, $file->getMTime(), now()) && @unlink($file->getPathname())) {
                 $stats['deleted']++;
             }
         }
