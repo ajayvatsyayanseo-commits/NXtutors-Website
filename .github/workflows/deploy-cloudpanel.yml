@@ -14,7 +14,8 @@ concurrency:
 
 env:
   PHP_VERSION: "8.2"
-  NODE_VERSION: "20"
+  NODE_VERSION: "20.19.4"
+  NPM_VERSION: "10.8.2"
 
 jobs:
   deploy:
@@ -109,6 +110,9 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          npm install --global "npm@${NPM_VERSION}"
+          node --version
+          npm --version
           npm ci
           npm run build
 
