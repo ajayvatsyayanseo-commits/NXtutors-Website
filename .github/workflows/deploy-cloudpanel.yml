@@ -113,7 +113,7 @@ jobs:
           npm install --global "npm@${NPM_VERSION}"
           node --version
           npm --version
-          npm ci
+          npm ci --legacy-peer-deps=false
           npm run build
 
       - name: Create production environment file
