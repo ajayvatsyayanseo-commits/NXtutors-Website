@@ -2,38 +2,65 @@ name: Deploy to CloudPanel
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   workflow_dispatch:
+
+permissions:
+  contents: read
 
 concurrency:
   group: cloudpanel-production
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 env:
   PHP_VERSION: "8.2"
   NODE_VERSION: "20"
-  CLOUDPANEL_HOST: ${{ vars.CLOUDPANEL_HOST || '13.127.64.109' }}
-  DEPLOY_PATH: ${{ vars.CLOUDPANEL_DEPLOY_PATH || '/home/nxtutors/htdocs/www.nxtutors.com/public' }}
 
 jobs:
   deploy:
     name: Build and deploy Laravel
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     environment: production
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Check required deployment secrets
+      - name: Validate deployment configuration
         env:
-          SSH_USER: ${{ secrets.CLOUDPANEL_SSH_USER }}
-          SSH_PASSWORD: ${{ secrets.CLOUDPANEL_SSH_PASSWORD }}
+          CLOUDPANEL_HOST: ${{ vars.CLOUDPANEL_HOST }}
+          CLOUDPANEL_PORT: ${{ vars.CLOUDPANEL_PORT }}
+          CLOUDPANEL_SSH_USER: ${{ secrets.CLOUDPANEL_SSH_USER }}
+          CLOUDPANEL_SSH_PRIVATE_KEY: ${{ secrets.CLOUDPANEL_SSH_PRIVATE_KEY }}
+          CLOUDPANEL_SSH_PASSWORD: ${{ secrets.CLOUDPANEL_SSH_PASSWORD }}
+          CLOUDPANEL_KNOWN_HOSTS: ${{ secrets.CLOUDPANEL_KNOWN_HOSTS }}
+          DEPLOY_PATH: ${{ vars.DEPLOY_PATH }}
           APP_KEY: ${{ secrets.APP_KEY }}
+          APP_URL: ${{ vars.APP_URL }}
+          DB_CONNECTION: ${{ vars.DB_CONNECTION }}
+          DB_HOST: ${{ secrets.DB_HOST }}
+          DB_PORT: ${{ vars.DB_PORT }}
+          DB_DATABASE: ${{ secrets.DB_DATABASE }}
+          DB_USERNAME: ${{ secrets.DB_USERNAME }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+          DB_CONNECT_TIMEOUT: ${{ vars.DB_CONNECT_TIMEOUT }}
+        shell: bash
         run: |
-          if [ -z "${SSH_USER}" ] || [ -z "${SSH_PASSWORD}" ] || [ -z "${APP_KEY}" ]; then
-            echo "Missing CLOUDPANEL_SSH_USER, CLOUDPANEL_SSH_PASSWORD, or APP_KEY GitHub secret."
+          set -euo pipefail
+          missing=()
+          for name in CLOUDPANEL_HOST CLOUDPANEL_PORT CLOUDPANEL_SSH_USER CLOUDPANEL_KNOWN_HOSTS DEPLOY_PATH APP_KEY APP_URL DB_CONNECTION DB_HOST DB_PORT DB_DATABASE DB_USERNAME DB_PASSWORD; do
+            if [[ -z "${!name:-}" ]]; then missing+=("$name"); fi
+          done
+          if [[ -z "${CLOUDPANEL_SSH_PRIVATE_KEY:-}" && -z "${CLOUDPANEL_SSH_PASSWORD:-}" ]]; then
+            missing+=("CLOUDPANEL_SSH_PRIVATE_KEY or CLOUDPANEL_SSH_PASSWORD")
+          fi
+          if ((${#missing[@]})); then
+            printf 'Missing required GitHub configuration: %s\n' "${missing[*]}"
+            exit 1
+          fi
+          if [[ "$DEPLOY_PATH" == "/" || "$DEPLOY_PATH" == */public ]]; then
+            echo "DEPLOY_PATH must be the Laravel application root, not the public document root."
             exit 1
           fi
 
@@ -43,240 +70,302 @@ jobs:
           php-version: ${{ env.PHP_VERSION }}
           extensions: bcmath, ctype, curl, dom, fileinfo, filter, gd, intl, mbstring, openssl, pdo, pdo_mysql, tokenizer, xml, zip
           coverage: none
+          tools: composer:v2
+
+      - name: Cache Composer downloads
+        uses: actions/cache@v4
+        with:
+          path: ~/.composer/cache/files
+          key: composer-${{ runner.os }}-${{ hashFiles('composer.lock') }}
+          restore-keys: composer-${{ runner.os }}-
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
+          cache: npm
 
-      - name: Prepare build environment
+      - name: Prepare isolated build environment
+        shell: bash
         run: |
+          set -euo pipefail
           cp .env.example .env
+          echo "CI_APP_KEY=base64:$(php -r 'echo base64_encode(random_bytes(32));')" >> "$GITHUB_ENV"
 
-      - name: Install PHP dependencies
+      - name: Install and validate PHP dependencies
+        env:
+          APP_ENV: testing
+          APP_KEY: ${{ env.CI_APP_KEY }}
+          DB_CONNECTION: sqlite
+          DB_DATABASE: ":memory:"
+        shell: bash
         run: |
-          composer validate --no-check-publish
+          set -euo pipefail
+          composer validate --strict
           composer install --no-dev --prefer-dist --no-interaction --optimize-autoloader
-          php artisan key:generate --force
-
-      - name: Install frontend dependencies
-        run: |
-          if [ -f package-lock.json ]; then
-            npm ci
-          else
-            npm install
-          fi
+          composer check-platform-reqs --no-dev
 
       - name: Build frontend assets
-        run: npm run build
-
-      - name: Install deployment tools
+        shell: bash
         run: |
-          sudo apt-get update
-          sudo apt-get install -y rsync sshpass
-
-      - name: Add CloudPanel host key
-        run: |
-          mkdir -p ~/.ssh
-          ssh-keyscan -H "${CLOUDPANEL_HOST}" >> ~/.ssh/known_hosts
-
-      - name: Put site into maintenance mode
-        env:
-          SSH_USER: ${{ secrets.CLOUDPANEL_SSH_USER }}
-          SSH_PASSWORD: ${{ secrets.CLOUDPANEL_SSH_PASSWORD }}
-        run: |
-          sshpass -p "${SSH_PASSWORD}" ssh -o StrictHostKeyChecking=yes "${SSH_USER}@${CLOUDPANEL_HOST}" "
-            mkdir -p '${DEPLOY_PATH}'
-            cd '${DEPLOY_PATH}'
-            if [ -f artisan ]; then
-              php artisan down --retry=60 || true
-            fi
-          "
-
-      - name: Upload application files
-        env:
-          SSH_USER: ${{ secrets.CLOUDPANEL_SSH_USER }}
-          SSH_PASSWORD: ${{ secrets.CLOUDPANEL_SSH_PASSWORD }}
-        run: |
-          sshpass -p "${SSH_PASSWORD}" rsync -az --delete \
-            --exclude='.env' \
-            --exclude='.git/' \
-            --exclude='.github/' \
-            --exclude='.cache/' \
-            --exclude='node_modules/' \
-            --exclude='127_0_0_1.sql' \
-            --exclude='*.sql' \
-            --exclude='*.sqlite' \
-            --exclude='tests/' \
-            --exclude='storage/framework/cache/data/*' \
-            --exclude='storage/framework/sessions/*' \
-            --exclude='storage/framework/testing/*' \
-            --exclude='storage/framework/views/*' \
-            --exclude='storage/logs/*' \
-            --exclude='public/storage/*' \
-            ./ "${SSH_USER}@${CLOUDPANEL_HOST}:${DEPLOY_PATH}/"
+          set -euo pipefail
+          npm ci
+          npm run build
 
       - name: Create production environment file
         env:
           APP_NAME: ${{ vars.APP_NAME }}
-          APP_ENV: ${{ vars.APP_ENV }}
           APP_KEY: ${{ secrets.APP_KEY }}
-          APP_DEBUG: ${{ vars.APP_DEBUG }}
           APP_URL: ${{ vars.APP_URL }}
-          NXT_FACEBOOK: ${{ vars.NXT_FACEBOOK }}
-          NXT_INSTAGRAM: ${{ vars.NXT_INSTAGRAM }}
-          NXT_LINKEDIN: ${{ vars.NXT_LINKEDIN }}
-          NXT_AI_FUNCTION_URL: ${{ secrets.NXT_AI_FUNCTION_URL }}
           APP_LOCALE: ${{ vars.APP_LOCALE }}
           APP_FALLBACK_LOCALE: ${{ vars.APP_FALLBACK_LOCALE }}
-          APP_FAKER_LOCALE: ${{ vars.APP_FAKER_LOCALE }}
-          APP_MAINTENANCE_DRIVER: ${{ vars.APP_MAINTENANCE_DRIVER }}
-          BCRYPT_ROUNDS: ${{ vars.BCRYPT_ROUNDS }}
           LOG_CHANNEL: ${{ vars.LOG_CHANNEL }}
           LOG_STACK: ${{ vars.LOG_STACK }}
-          LOG_DEPRECATIONS_CHANNEL: ${{ vars.LOG_DEPRECATIONS_CHANNEL }}
           LOG_LEVEL: ${{ vars.LOG_LEVEL }}
+          LOG_DAILY_DAYS: ${{ vars.LOG_DAILY_DAYS }}
           DB_CONNECTION: ${{ vars.DB_CONNECTION }}
           DB_HOST: ${{ secrets.DB_HOST }}
-          DB_PORT: ${{ secrets.DB_PORT }}
-          DB_DATABASE: ${{ secrets.DB_DATABASE || vars.DB_DATABASE }}
-          DB_USERNAME: ${{ secrets.DB_USERNAME || vars.DB_USERNAME }}
-          DB_PASSWORD: ${{ secrets.DB_PASSWORD || vars.DB_PASSWORD }}
+          DB_PORT: ${{ vars.DB_PORT }}
+          DB_DATABASE: ${{ secrets.DB_DATABASE }}
+          DB_USERNAME: ${{ secrets.DB_USERNAME }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+          DB_CONNECT_TIMEOUT: ${{ vars.DB_CONNECT_TIMEOUT }}
           SESSION_DRIVER: ${{ vars.SESSION_DRIVER }}
           SESSION_LIFETIME: ${{ vars.SESSION_LIFETIME }}
-          SESSION_ENCRYPT: ${{ vars.SESSION_ENCRYPT }}
-          SESSION_PATH: ${{ vars.SESSION_PATH }}
           SESSION_DOMAIN: ${{ vars.SESSION_DOMAIN }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY || vars.OPENAI_API_KEY }}
-          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
-          OPENAI_IMAGE_MODEL: ${{ vars.OPENAI_IMAGE_MODEL }}
-          CASHFREE_ENV: ${{ vars.CASHFREE_ENV }}
-          CASHFREE_APP_ID: ${{ secrets.CASHFREE_APP_ID || vars.CASHFREE_APP_ID }}
-          CASHFREE_SECRET_KEY: ${{ secrets.CASHFREE_SECRET_KEY || vars.CASHFREE_SECRET_KEY }}
-          CASHFREE_API_VERSION: ${{ vars.CASHFREE_API_VERSION }}
-          BROADCAST_CONNECTION: ${{ vars.BROADCAST_CONNECTION }}
-          FILESYSTEM_DISK: ${{ vars.FILESYSTEM_DISK }}
-          QUEUE_CONNECTION: ${{ vars.QUEUE_CONNECTION }}
           CACHE_STORE: ${{ vars.CACHE_STORE }}
-          MEMCACHED_HOST: ${{ vars.MEMCACHED_HOST }}
-          REDIS_CLIENT: ${{ vars.REDIS_CLIENT }}
+          QUEUE_CONNECTION: ${{ vars.QUEUE_CONNECTION }}
+          DB_QUEUE_RETRY_AFTER: ${{ vars.DB_QUEUE_RETRY_AFTER }}
+          REDIS_QUEUE_RETRY_AFTER: ${{ vars.REDIS_QUEUE_RETRY_AFTER }}
+          PAGEGEN_WORKER_TIMEOUT: ${{ vars.PAGEGEN_WORKER_TIMEOUT }}
+          TUTOR_WORKER_TIMEOUT: ${{ vars.TUTOR_WORKER_TIMEOUT }}
+          QUEUE_WORKER_MAX_JOBS: ${{ vars.QUEUE_WORKER_MAX_JOBS }}
+          TUTOR_QUEUE: ${{ vars.TUTOR_QUEUE }}
+          FILESYSTEM_DISK: ${{ vars.FILESYSTEM_DISK }}
           REDIS_HOST: ${{ vars.REDIS_HOST }}
           REDIS_PASSWORD: ${{ secrets.REDIS_PASSWORD }}
           REDIS_PORT: ${{ vars.REDIS_PORT }}
           MAIL_MAILER: ${{ vars.MAIL_MAILER }}
           MAIL_SCHEME: ${{ vars.MAIL_SCHEME }}
           MAIL_HOST: ${{ secrets.MAIL_HOST }}
-          MAIL_PORT: ${{ secrets.MAIL_PORT }}
+          MAIL_PORT: ${{ vars.MAIL_PORT }}
           MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
           MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
-          MAIL_FROM_ADDRESS: ${{ secrets.MAIL_FROM_ADDRESS }}
-          MAIL_FROM_NAME: ${{ secrets.MAIL_FROM_NAME }}
+          MAIL_FROM_ADDRESS: ${{ vars.MAIL_FROM_ADDRESS }}
+          MAIL_FROM_NAME: ${{ vars.MAIL_FROM_NAME }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+          OPENAI_IMAGE_MODEL: ${{ vars.OPENAI_IMAGE_MODEL }}
+          OPENAI_CONNECT_TIMEOUT: ${{ vars.OPENAI_CONNECT_TIMEOUT }}
+          OPENAI_REQUEST_TIMEOUT: ${{ vars.OPENAI_REQUEST_TIMEOUT }}
+          OPENAI_RETRY_TIMES: ${{ vars.OPENAI_RETRY_TIMES }}
+          OPENAI_PAGE_DAILY_LIMIT: ${{ vars.OPENAI_PAGE_DAILY_LIMIT }}
+          OPENAI_TUTOR_DAILY_LIMIT: ${{ vars.OPENAI_TUTOR_DAILY_LIMIT }}
+          CASHFREE_ENV: ${{ vars.CASHFREE_ENV }}
+          CASHFREE_APP_ID: ${{ secrets.CASHFREE_APP_ID }}
+          CASHFREE_SECRET_KEY: ${{ secrets.CASHFREE_SECRET_KEY }}
+          CASHFREE_API_VERSION: ${{ vars.CASHFREE_API_VERSION }}
+          PINCODE_API_BASE_URL: ${{ vars.PINCODE_API_BASE_URL }}
+          RAPIDAPI_PINCODE_KEY: ${{ secrets.RAPIDAPI_PINCODE_KEY }}
+          RAPIDAPI_PINCODE_HOST: ${{ vars.RAPIDAPI_PINCODE_HOST }}
+          PINCODE_CONNECT_TIMEOUT: ${{ vars.PINCODE_CONNECT_TIMEOUT }}
+          PINCODE_REQUEST_TIMEOUT: ${{ vars.PINCODE_REQUEST_TIMEOUT }}
+          PINCODE_CACHE_SECONDS: ${{ vars.PINCODE_CACHE_SECONDS }}
+          PROVIDER_CIRCUIT_FAILURE_THRESHOLD: ${{ vars.PROVIDER_CIRCUIT_FAILURE_THRESHOLD }}
+          PROVIDER_CIRCUIT_OPEN_SECONDS: ${{ vars.PROVIDER_CIRCUIT_OPEN_SECONDS }}
+          PAGEGEN_IMPORT_MAX_FILE_KB: ${{ vars.PAGEGEN_IMPORT_MAX_FILE_KB }}
+          PAGEGEN_IMPORT_MAX_ROWS: ${{ vars.PAGEGEN_IMPORT_MAX_ROWS }}
+          PAGEGEN_IMPORT_BATCH_SIZE: ${{ vars.PAGEGEN_IMPORT_BATCH_SIZE }}
+          TUTOR_IMPORT_MAX_ROWS: ${{ vars.TUTOR_IMPORT_MAX_ROWS }}
+          TUTOR_IMPORT_BATCH_SIZE: ${{ vars.TUTOR_IMPORT_BATCH_SIZE }}
+          PROCESSING_STALE_AFTER_MINUTES: ${{ vars.PROCESSING_STALE_AFTER_MINUTES }}
+          TEMP_FILE_RETENTION_DAYS: ${{ vars.TEMP_FILE_RETENTION_DAYS }}
+          RATE_LIMIT_PUBLIC_FORM: ${{ vars.RATE_LIMIT_PUBLIC_FORM }}
+          RATE_LIMIT_PUBLIC_API: ${{ vars.RATE_LIMIT_PUBLIC_API }}
+          RATE_LIMIT_PAYMENT: ${{ vars.RATE_LIMIT_PAYMENT }}
+          RATE_LIMIT_WEBHOOK: ${{ vars.RATE_LIMIT_WEBHOOK }}
+          RATE_LIMIT_ADMIN_GENERATION: ${{ vars.RATE_LIMIT_ADMIN_GENERATION }}
+          RATE_LIMIT_ADMIN_IMPORT: ${{ vars.RATE_LIMIT_ADMIN_IMPORT }}
+          NXT_AI_FUNCTION_URL: ${{ secrets.NXT_AI_FUNCTION_URL }}
+          NXT_FACEBOOK: ${{ vars.NXT_FACEBOOK }}
+          NXT_INSTAGRAM: ${{ vars.NXT_INSTAGRAM }}
+          NXT_LINKEDIN: ${{ vars.NXT_LINKEDIN }}
+          NXT_GOOGLE_BUSINESS: ${{ vars.NXT_GOOGLE_BUSINESS }}
           VITE_APP_NAME: ${{ vars.VITE_APP_NAME }}
+        shell: bash
         run: |
+          set -euo pipefail
           umask 077
-          write_env() {
-            value="${!1}"
-            if [ "${value}" = "__FILL_ME__" ]; then
-              value=""
-            fi
-            printf '%s=%s\n' "$1" "${value}"
+          python3 - <<'PY'
+          import os
+
+          keys = (
+              'APP_NAME', 'APP_KEY', 'APP_URL', 'APP_LOCALE', 'APP_FALLBACK_LOCALE',
+              'LOG_CHANNEL', 'LOG_STACK', 'LOG_LEVEL', 'LOG_DAILY_DAYS',
+              'DB_CONNECTION', 'DB_HOST', 'DB_PORT',
+              'DB_DATABASE', 'DB_USERNAME', 'DB_PASSWORD', 'DB_CONNECT_TIMEOUT', 'SESSION_DRIVER',
+              'SESSION_LIFETIME', 'SESSION_DOMAIN', 'CACHE_STORE', 'QUEUE_CONNECTION',
+              'DB_QUEUE_RETRY_AFTER', 'REDIS_QUEUE_RETRY_AFTER', 'PAGEGEN_WORKER_TIMEOUT',
+              'TUTOR_WORKER_TIMEOUT', 'QUEUE_WORKER_MAX_JOBS', 'TUTOR_QUEUE',
+              'FILESYSTEM_DISK', 'REDIS_HOST', 'REDIS_PASSWORD', 'REDIS_PORT',
+              'MAIL_MAILER', 'MAIL_SCHEME', 'MAIL_HOST', 'MAIL_PORT', 'MAIL_USERNAME',
+              'MAIL_PASSWORD', 'MAIL_FROM_ADDRESS', 'MAIL_FROM_NAME', 'OPENAI_API_KEY',
+              'OPENAI_MODEL', 'OPENAI_IMAGE_MODEL', 'OPENAI_CONNECT_TIMEOUT',
+              'OPENAI_REQUEST_TIMEOUT', 'OPENAI_RETRY_TIMES', 'OPENAI_PAGE_DAILY_LIMIT',
+              'OPENAI_TUTOR_DAILY_LIMIT', 'CASHFREE_ENV', 'CASHFREE_APP_ID',
+              'CASHFREE_SECRET_KEY', 'CASHFREE_API_VERSION', 'PINCODE_API_BASE_URL',
+              'RAPIDAPI_PINCODE_KEY', 'RAPIDAPI_PINCODE_HOST', 'PINCODE_CONNECT_TIMEOUT',
+              'PINCODE_REQUEST_TIMEOUT', 'PINCODE_CACHE_SECONDS',
+              'PROVIDER_CIRCUIT_FAILURE_THRESHOLD', 'PROVIDER_CIRCUIT_OPEN_SECONDS',
+              'PAGEGEN_IMPORT_MAX_FILE_KB', 'PAGEGEN_IMPORT_MAX_ROWS',
+              'PAGEGEN_IMPORT_BATCH_SIZE', 'TUTOR_IMPORT_MAX_ROWS', 'TUTOR_IMPORT_BATCH_SIZE',
+              'PROCESSING_STALE_AFTER_MINUTES', 'TEMP_FILE_RETENTION_DAYS',
+              'RATE_LIMIT_PUBLIC_FORM', 'RATE_LIMIT_PUBLIC_API', 'RATE_LIMIT_PAYMENT',
+              'RATE_LIMIT_WEBHOOK', 'RATE_LIMIT_ADMIN_GENERATION', 'RATE_LIMIT_ADMIN_IMPORT',
+              'NXT_AI_FUNCTION_URL',
+              'NXT_FACEBOOK', 'NXT_INSTAGRAM', 'NXT_LINKEDIN', 'NXT_GOOGLE_BUSINESS',
+              'VITE_APP_NAME',
+          )
+
+          def dotenv_quote(value: str) -> str:
+              escaped = (value.replace('\\', '\\\\').replace('"', '\\"')
+                         .replace('$', '\\$').replace('\r', '\\r').replace('\n', '\\n'))
+              return f'"{escaped}"'
+
+          fixed = {'APP_ENV': 'production', 'APP_DEBUG': 'false'}
+          with open('.env.production', 'w', encoding='utf-8', newline='\n') as handle:
+              for key, value in fixed.items():
+                  handle.write(f'{key}={value}\n')
+              for key in keys:
+                  value = os.environ.get(key, '')
+                  if value != '':
+                      handle.write(f'{key}={dotenv_quote(value)}\n')
+          PY
+
+      - name: Configure SSH
+        env:
+          CLOUDPANEL_SSH_PRIVATE_KEY: ${{ secrets.CLOUDPANEL_SSH_PRIVATE_KEY }}
+          CLOUDPANEL_SSH_PASSWORD: ${{ secrets.CLOUDPANEL_SSH_PASSWORD }}
+          CLOUDPANEL_KNOWN_HOSTS: ${{ secrets.CLOUDPANEL_KNOWN_HOSTS }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          install -d -m 700 ~/.ssh
+          printf '%s\n' "$CLOUDPANEL_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/known_hosts
+          if [[ -n "${CLOUDPANEL_SSH_PRIVATE_KEY:-}" ]]; then
+            printf '%s\n' "$CLOUDPANEL_SSH_PRIVATE_KEY" > ~/.ssh/cloudpanel_deploy
+            chmod 600 ~/.ssh/cloudpanel_deploy
+            echo "SSH_AUTH_MODE=key" >> "$GITHUB_ENV"
+          else
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq sshpass
+            echo "SSH_AUTH_MODE=password" >> "$GITHUB_ENV"
+          fi
+
+      - name: Deploy application
+        env:
+          CLOUDPANEL_HOST: ${{ vars.CLOUDPANEL_HOST }}
+          CLOUDPANEL_PORT: ${{ vars.CLOUDPANEL_PORT }}
+          CLOUDPANEL_SSH_USER: ${{ secrets.CLOUDPANEL_SSH_USER }}
+          SSHPASS: ${{ secrets.CLOUDPANEL_SSH_PASSWORD }}
+          DEPLOY_PATH: ${{ vars.DEPLOY_PATH }}
+          PHP_BINARY: ${{ vars.CLOUDPANEL_PHP_BINARY }}
+          CACHE_ROUTES: ${{ vars.CACHE_ROUTES }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          PHP_BINARY="${PHP_BINARY:-php}"
+          CACHE_ROUTES="${CACHE_ROUTES:-true}"
+          target="${CLOUDPANEL_SSH_USER}@${CLOUDPANEL_HOST}"
+          common=(-p "$CLOUDPANEL_PORT" -o BatchMode=yes -o StrictHostKeyChecking=yes)
+          rsync_ssh="ssh -p $CLOUDPANEL_PORT -o StrictHostKeyChecking=yes"
+          if [[ "$SSH_AUTH_MODE" == "key" ]]; then
+            common+=(-i ~/.ssh/cloudpanel_deploy)
+            rsync_ssh+=" -i $HOME/.ssh/cloudpanel_deploy"
+            ssh_run=(ssh "${common[@]}")
+            rsync_run=(rsync)
+          else
+            common=(-p "$CLOUDPANEL_PORT" -o StrictHostKeyChecking=yes)
+            ssh_run=(sshpass -e ssh "${common[@]}")
+            rsync_run=(sshpass -e rsync)
+          fi
+
+          "${ssh_run[@]}" "$target" bash -s -- "$DEPLOY_PATH" "$PHP_BINARY" <<'PREFLIGHT'
+          set -euo pipefail
+          deploy_path="$1"
+          php_binary="$2"
+          mkdir -p "$deploy_path"
+
+          "$php_binary" -r 'exit(PHP_MAJOR_VERSION === 8 && PHP_MINOR_VERSION === 2 ? 0 : 1);' || {
+            echo "CloudPanel CLI PHP must be PHP 8.2." >&2
+            exit 1
           }
 
-          {
-            write_env APP_NAME
-            write_env APP_ENV
-            write_env APP_KEY
-            write_env APP_DEBUG
-            write_env APP_URL
-            write_env NXT_FACEBOOK
-            write_env NXT_INSTAGRAM
-            write_env NXT_LINKEDIN
-            write_env NXT_AI_FUNCTION_URL
-            write_env APP_LOCALE
-            write_env APP_FALLBACK_LOCALE
-            write_env APP_FAKER_LOCALE
-            write_env APP_MAINTENANCE_DRIVER
-            write_env BCRYPT_ROUNDS
-            write_env LOG_CHANNEL
-            write_env LOG_STACK
-            write_env LOG_DEPRECATIONS_CHANNEL
-            write_env LOG_LEVEL
-            write_env DB_CONNECTION
-            write_env DB_HOST
-            write_env DB_PORT
-            write_env DB_DATABASE
-            write_env DB_USERNAME
-            write_env DB_PASSWORD
-            write_env SESSION_DRIVER
-            write_env SESSION_LIFETIME
-            write_env SESSION_ENCRYPT
-            write_env SESSION_PATH
-            write_env SESSION_DOMAIN
-            write_env OPENAI_API_KEY
-            write_env OPENAI_MODEL
-            write_env OPENAI_IMAGE_MODEL
-            write_env CASHFREE_ENV
-            write_env CASHFREE_APP_ID
-            write_env CASHFREE_SECRET_KEY
-            write_env CASHFREE_API_VERSION
-            write_env BROADCAST_CONNECTION
-            write_env FILESYSTEM_DISK
-            write_env QUEUE_CONNECTION
-            write_env CACHE_STORE
-            write_env MEMCACHED_HOST
-            write_env REDIS_CLIENT
-            write_env REDIS_HOST
-            write_env REDIS_PASSWORD
-            write_env REDIS_PORT
-            write_env MAIL_MAILER
-            write_env MAIL_SCHEME
-            write_env MAIL_HOST
-            write_env MAIL_PORT
-            write_env MAIL_USERNAME
-            write_env MAIL_PASSWORD
-            write_env MAIL_FROM_ADDRESS
-            write_env MAIL_FROM_NAME
-            write_env VITE_APP_NAME
-          } > .env.production
+          available_kb="$(df -Pk "$deploy_path" | awk 'NR==2 {print $4}')"
+          if [[ -z "$available_kb" || "$available_kb" -lt 1048576 ]]; then
+            echo "At least 1 GB of free disk space is required before deployment." >&2
+            exit 1
+          fi
 
-      - name: Upload production environment file
+          if [[ -n "$(find "$deploy_path" -mindepth 1 -maxdepth 1 -print -quit)" ]]; then
+            test -f "$deploy_path/artisan"
+            test -f "$deploy_path/composer.json"
+            test -f "$deploy_path/public/index.php"
+            test -f "$deploy_path/.env"
+            test -w "$deploy_path/storage"
+            test -w "$deploy_path/bootstrap/cache"
+          fi
+          PREFLIGHT
+
+          "${rsync_run[@]}" -az --delete-delay --delay-updates --no-perms --no-owner --no-group \
+            -e "$rsync_ssh" \
+            --exclude='.env' --exclude='.env.*' --exclude='.git/' --exclude='.github/' \
+            --exclude='node_modules/' --exclude='tests/' --exclude='*.sql' --exclude='*.sqlite' \
+            --exclude='storage/logs/***' --exclude='storage/framework/cache/***' \
+            --exclude='storage/framework/sessions/***' --exclude='storage/framework/views/***' \
+            --exclude='public/storage' --filter='protect public/uploads/***' \
+            ./ "$target:$DEPLOY_PATH/"
+          "${rsync_run[@]}" -az --chmod=F600 -e "$rsync_ssh" .env.production "$target:$DEPLOY_PATH/.env.next"
+
+          "${ssh_run[@]}" "$target" bash -s -- "$DEPLOY_PATH" "$PHP_BINARY" "$CACHE_ROUTES" <<'REMOTE'
+          set -euo pipefail
+          deploy_path="$1"
+          php_binary="$2"
+          cache_routes="$3"
+          cd "$deploy_path"
+          test -f artisan
+          test -f composer.json
+          test -f public/index.php
+          test -f .env.next
+          chmod 600 .env.next
+          mv .env.next .env
+          mkdir -p storage/framework/cache/data storage/framework/sessions storage/framework/views storage/logs bootstrap/cache
+          chmod -R ug+rwX storage bootstrap/cache
+          test -w storage
+          test -w bootstrap/cache
+          "$php_binary" artisan optimize:clear
+          "$php_binary" artisan storage:link || true
+          "$php_binary" artisan config:cache
+          "$php_binary" artisan view:cache
+          if [[ "$cache_routes" == "true" ]]; then
+            "$php_binary" artisan route:cache
+          fi
+          "$php_binary" artisan queue:restart || true
+          "$php_binary" artisan up || true
+          "$php_binary" artisan about --only=environment
+          "$php_binary" artisan app:cost-health-check
+          REMOTE
+
+      - name: Verify application health
         env:
-          SSH_USER: ${{ secrets.CLOUDPANEL_SSH_USER }}
-          SSH_PASSWORD: ${{ secrets.CLOUDPANEL_SSH_PASSWORD }}
+          APP_URL: ${{ vars.APP_URL }}
+        shell: bash
         run: |
-          sshpass -p "${SSH_PASSWORD}" ssh -o StrictHostKeyChecking=yes "${SSH_USER}@${CLOUDPANEL_HOST}" "
-            set -e
-            cd '${DEPLOY_PATH}'
-            umask 077
-          "
-          sshpass -p "${SSH_PASSWORD}" rsync -az --chmod=F600 .env.production "${SSH_USER}@${CLOUDPANEL_HOST}:${DEPLOY_PATH}/.env"
+          set -euo pipefail
+          curl --fail --silent --show-error --location --retry 3 --retry-delay 5 "${APP_URL%/}/up" >/dev/null
 
-      - name: Finalize Laravel deployment
-        env:
-          SSH_USER: ${{ secrets.CLOUDPANEL_SSH_USER }}
-          SSH_PASSWORD: ${{ secrets.CLOUDPANEL_SSH_PASSWORD }}
-        run: |
-          sshpass -p "${SSH_PASSWORD}" ssh -o StrictHostKeyChecking=yes "${SSH_USER}@${CLOUDPANEL_HOST}" "
-            set -e
-            cd '${DEPLOY_PATH}'
-            trap 'php artisan up || true' EXIT
-
-            if [ ! -f .env ]; then
-              echo 'Missing production .env at ${DEPLOY_PATH}/.env'
-              echo 'Check that the GitHub Actions variables/secrets are configured and the SSH user can write to the deploy path.'
-              exit 1
-            fi
-
-            mkdir -p storage/framework/cache/data storage/framework/sessions storage/framework/testing storage/framework/views storage/logs bootstrap/cache public/storage
-            chmod -R ug+rw storage bootstrap/cache public/storage || true
-
-            php artisan migrate --force
-            php artisan storage:link || true
-            php artisan config:clear
-            php artisan view:clear
-            php artisan event:clear || true
-            php artisan cache:clear || true
-            php artisan config:cache
-            php artisan view:cache
-            php artisan queue:restart || true
-          "
+      - name: Remove local deployment credentials
+        if: always()
+        shell: bash
+        run: rm -f ~/.ssh/cloudpanel_deploy .env.production .env
