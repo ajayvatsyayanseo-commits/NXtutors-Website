@@ -325,7 +325,7 @@
 
             <h2>Login Account</h2>
 
-            <div class="loadergif" style="display:none"><img src="{{ asset('public/frount/assets') }}/images/loading.gif" class="loadinggif" /></div> 
+            <div class="loadergif" style="display:none"><img src="{{ asset('public/frount/assets') }}/images/loading.gif" class="loadinggif" /></div>
             <div id="msgHolderresister"></div>
 
             <form class="login_form" name="login_form" id="login_form" method="post">
@@ -364,20 +364,20 @@
 
             </form>
 
-            <form class="otp_form" name="otp_form" id="otp_form" method="post" style="display: none;"> 
+            <form class="otp_form" name="otp_form" id="otp_form" method="post" style="display: none;">
                 <div class="auth-field">
-                    <input type="text" name="otp" id="otp" placeholder="Enter OTP" required /> 
-                </div> 
-               
-                    <input type="hidden" name="verifyotp" value="1"> 
-                    <button type="submit" name="submit" class="auth-btn"> Submit </button> 
-              
+                    <input type="text" name="otp" id="otp" placeholder="Enter OTP" required />
+                </div>
+
+                    <input type="hidden" name="verifyotp" value="1">
+                    <button type="submit" name="submit" class="auth-btn"> Submit </button>
+
             </form>
 
             <div class="auth-signup">
                 <div class="auth-divider">OR</div>
                 <p>New user? Signup first then</p>
-                <a href="https://wa.me/917836034313?text=Hi%20NXTutors,%20I%20want%20to%20create%20a%20new%20account."
+               <a href="https://wa.me/917836034313?text=Hi%20NXTutors,%20I%20would%20like%20to%20sign%20up%20for%20a%20new%20account.">
                    target="_blank"
                    rel="noopener"
                    class="whatsapp-signup-btn">
@@ -412,7 +412,7 @@ $(document).ready(function() {
     });
 
     $("#login_form").validate({
-        rules: {      
+        rules: {
             email: {
                 required: true,
                 email: true
@@ -435,26 +435,26 @@ $(document).ready(function() {
             $(".loadergif").show();
             $.ajax({
                 type: "POST",
-                url: "{{ route('login') }}",  
+                url: "{{ route('login') }}",
                 data: formData,
                 cache: false,
                 success: function(response) {
-                    $(".loadergif").hide(); 
+                    $(".loadergif").hide();
 
                     var message = response.message || 'An unexpected error occurred.';
                     var error = response.error || 'An error occurred during the request.';
-                    
+
                     if (response.success) {
                         $("#msgHolderresister").html('<div class="alert alert-success">' + message + '</div>');
-                        
+
                         if (response.message === 'Login successful. Redirecting to dashboard.') {
-                          //  window.location.href = "{{ route('user.dashboard') }}";  
+                          //  window.location.href = "{{ route('user.dashboard') }}";
                             if (response.redirect) {
                             // Redirect to the provided URL
                             window.location.href = response.redirect;
                         } else {
                             // Fallback redirect if no redirect URL is provided
-                            window.location.href = "{{ route('user.dashboard') }}";  
+                            window.location.href = "{{ route('user.dashboard') }}";
                         }
                         } else {
                             $(".login_form").hide();
@@ -465,7 +465,7 @@ $(document).ready(function() {
                     }
                 },
                 error: function(xhr, status, error) {
-                    $(".loadergif").hide();  
+                    $(".loadergif").hide();
                     var errorMsg = "An error occurred. Please try again.";
                     if (xhr.responseJSON && xhr.responseJSON.error) {
                         errorMsg = xhr.responseJSON.error;
@@ -479,7 +479,7 @@ $(document).ready(function() {
     });
 
     $("#otp_form").validate({
-        rules: {      
+        rules: {
             otp: {
                 required: true,
                 remote: {
@@ -507,7 +507,7 @@ $(document).ready(function() {
             $(".loadergif").show();
             $.ajax({
                 type: "POST",
-                url: "{{ route('verifyOtp') }}",  
+                url: "{{ route('verifyOtp') }}",
                 data: otpData,
                 cache: false,
                 success: function(response) {
@@ -518,7 +518,7 @@ $(document).ready(function() {
                     $(".otp_form").hide();
                 },
                 error: function(xhr, status, error) {
-                    $(".loadergif").hide();  
+                    $(".loadergif").hide();
                     var errorMsg = "An error occurred during OTP verification. Please try again.";
                     if (xhr.responseJSON && xhr.responseJSON.error) {
                         errorMsg = xhr.responseJSON.error;
