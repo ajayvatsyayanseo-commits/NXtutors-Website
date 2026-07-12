@@ -377,23 +377,17 @@
             <div class="auth-signup">
                 <div class="auth-divider">OR</div>
                 <p>New user? Signup first then</p>
-               <a href="https://wa.me/917836034313?text=Hi%20NXTutors,%20I%20would%20like%20to%20sign%20up%20for%20a%20new%20account.">
+               <a href="https://wa.me/917836034313?text=Hi%20NXTutors,%20I%20would%20like%20to%20sign%20up%20for%20a%20new%20account."
                    target="_blank"
                    rel="noopener"
                    class="whatsapp-signup-btn">
-                    <img src="{{ asset('public/uploads/whatsapp/whatsapp.png') }}" alt="WhatsApp">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48" style="flex-shrink:0;">
+                        <rect width="48" height="48" rx="10" fill="#25D366"/>
+                        <path fill="#fff" d="M24 10C16.27 10 10 16.27 10 24c0 2.52.68 4.88 1.87 6.92L10 38l7.3-1.84A13.94 13.94 0 0024 38c7.73 0 14-6.27 14-14S31.73 10 24 10zm0 25.4a11.34 11.34 0 01-5.78-1.58l-.41-.25-4.27 1.02 1.05-4.15-.27-.43A11.36 11.36 0 0112.6 24C12.6 17.7 17.7 12.6 24 12.6S35.4 17.7 35.4 24 30.3 35.4 24 35.4zm6.2-8.54c-.34-.17-2-.99-2.32-1.1-.31-.11-.54-.17-.76.17-.23.34-.88 1.1-1.08 1.33-.2.23-.4.25-.73.08-.34-.17-1.43-.53-2.72-1.68-1.01-.9-1.69-2.01-1.89-2.35-.2-.34-.02-.52.15-.69.15-.15.34-.4.51-.6.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.08-.17-.76-1.84-1.05-2.52-.27-.66-.55-.57-.76-.58l-.65-.01c-.23 0-.59.08-.9.43-.31.34-1.18 1.16-1.18 2.83 0 1.67 1.21 3.28 1.38 3.51.17.23 2.39 3.65 5.79 5.12.81.35 1.44.56 1.93.71.81.26 1.55.22 2.13.14.65-.1 2-.82 2.29-1.61.28-.79.28-1.47.2-1.61-.09-.14-.31-.22-.65-.39z"/>
+                    </svg>
                     Sign up on WhatsApp
                 </a>
             </div>
-
-            <div style="margin-top:15px;">
-    <a href="https://wa.me/917836034313?text=Hey,%20I%20want%20to%20signup"
-       target="_blank"
-       class="whatsapp-signup-btn">
-        <i class="fa-brands fa-whatsapp"></i>
-        Signup on WhatsApp
-    </a>
-</div>
 
         </div>
 
