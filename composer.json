@@ -26,6 +26,7 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
+            "NxTutors\\DemoCommandCenterAdapter\\": "packages/nxtutors/demo-command-center-adapter/app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         }
