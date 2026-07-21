@@ -20,7 +20,7 @@ final class TutorProjectionRepository
         'id', 'teacher_id', 'tutor_id', 'user_id', 'register_id', 'category_id',
         'course_category_id', 'board_id', 'board', 'class_id', 'class', 'class_name',
         'subject_id', 'subject_ids', 'subject', 'subjects', 'course_id', 'course',
-        'mode', 'class_type', 'status', 'updated_at',
+        'for_class', 'mode', 'class_type', 'status', 'updated_at',
     ];
 
     private const REVIEW_COLUMNS = [
@@ -302,7 +302,7 @@ final class TutorProjectionRepository
                 'source' => $row['_source'],
                 'source_ref' => isset($row['id']) ? (string) $row['id'] : null,
                 'boards' => $this->values($row, ['board', 'board_id', 'category_id', 'course_category_id']),
-                'classes' => $this->values($row, ['class', 'class_name', 'class_id']),
+                'classes' => $this->values($row, ['class', 'class_name', 'class_id', 'for_class']),
                 'subjects' => $this->values($row, ['subject', 'subjects', 'subject_id', 'subject_ids', 'course', 'course_id']),
                 'modes' => $this->values($row, ['mode', 'class_type']),
                 'source_version' => hash('sha256', json_encode($row, JSON_THROW_ON_ERROR)),
@@ -441,7 +441,10 @@ final class TutorProjectionRepository
             $matched = false;
             foreach ($courses as $course) {
                 foreach ($course[$field] as $value) {
-                    if ($this->normalizeComparableValue((string) $value, $filter) === $needle) {
+                    $isMatch = $filter === 'class'
+                        ? $this->classValueMatches((string) $value, (string) $filters[$filter])
+                        : $this->normalizeComparableValue((string) $value, $filter) === $needle;
+                    if ($isMatch) {
                         $matched = true;
                     }
                 }
@@ -452,6 +455,31 @@ final class TutorProjectionRepository
         }
 
         return true;
+    }
+
+    /**
+     * Match a requested class (e.g. "Class 7", "7th", "7") against a stored
+     * class value that may be a single grade ("12"), a range ("6-12", "6 -12",
+     * "6 to 12"), or free text. Ranges are the common case in teacher_courses,
+     * where normalized-string equality ("7" === "6") always failed.
+     */
+    private function classValueMatches(string $storedValue, string $requested): bool
+    {
+        $needle = $this->normalizeComparableValue($requested, 'class');
+        if ($needle === '' || ! ctype_digit($needle)) {
+            return $this->normalizeComparableValue($storedValue, 'class') === $needle;
+        }
+        $target = (int) $needle;
+        preg_match_all('/\d+/', $storedValue, $matches);
+        $numbers = array_map('intval', $matches[0]);
+        if ($numbers === []) {
+            return false;
+        }
+        if (count($numbers) >= 2 && preg_match('/\d+\s*(?:-|to|–|—)\s*\d+/u', $storedValue) === 1) {
+            return $target >= min($numbers) && $target <= max($numbers);
+        }
+
+        return in_array($target, $numbers, true);
     }
 
     /** @param list<string> $columns */
