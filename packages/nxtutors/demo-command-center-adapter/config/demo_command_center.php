@@ -4,9 +4,34 @@ declare(strict_types=1);
 
 $decodedKeys = json_decode((string) env('DEMO_COMMAND_CENTER_HMAC_KEYS_JSON', '{}'), true);
 
+// Every scope the internal routes require. A key given as a bare secret string
+// (the simple {"key-id":"secret"} form) is granted all of them.
+$demoCommandCenterAllScopes = [
+    'demo:identity:read', 'demo:profiles:read', 'demo:profile-phone:read',
+    'demo:tutors:read', 'demo:tutor-contact:read', 'demo:tutor-phone:read',
+    'demo:reference:read', 'demo:regions:read', 'demo:social-proof:read',
+    'demo:plans:read', 'demo:subscriptions:read', 'demo:subscription:write',
+    'demo:projection:write', 'demo:onboarding:write',
+];
+
+// Accept both {"key-id":"secret"} and {"key-id":{"secret":"…","scopes":[…]}}.
+$demoCommandCenterKeys = [];
+if (is_array($decodedKeys)) {
+    foreach ($decodedKeys as $keyId => $definition) {
+        if (is_string($definition)) {
+            $demoCommandCenterKeys[$keyId] = ['secret' => $definition, 'scopes' => $demoCommandCenterAllScopes];
+        } elseif (is_array($definition)) {
+            $definition['scopes'] = (isset($definition['scopes']) && is_array($definition['scopes']))
+                ? $definition['scopes']
+                : $demoCommandCenterAllScopes;
+            $demoCommandCenterKeys[$keyId] = $definition;
+        }
+    }
+}
+
 return [
     'enabled' => filter_var(env('DEMO_COMMAND_CENTER_GATEWAY_ENABLED', false), FILTER_VALIDATE_BOOL),
-    'hmac_keys' => is_array($decodedKeys) ? $decodedKeys : [],
+    'hmac_keys' => $demoCommandCenterKeys,
     'source' => (string) env('DEMO_COMMAND_CENTER_HMAC_SOURCE', 'demo-command-center'),
     'audience' => (string) env('DEMO_COMMAND_CENTER_HMAC_AUDIENCE', 'nxtutors-website-gateway'),
     'replay_window_seconds' => (int) env('DEMO_COMMAND_CENTER_REPLAY_WINDOW_SECONDS', 300),
