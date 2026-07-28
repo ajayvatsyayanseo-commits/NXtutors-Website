@@ -98,9 +98,6 @@ coverage/
 
 # Laravel Storage & Caches
 
-public/storage/*
-!public/storage/category
-!public/storage/logos
 /public/public/storage
 /public/uploads/user
 /public/uploads/private

@@ -372,7 +372,7 @@ jobs:
             --exclude='storage.predeploy.*' --exclude='bootstrap/cache.predeploy.*' \
             --exclude='storage/logs/***' --exclude='storage/framework/cache/***' \
             --exclude='storage/framework/sessions/***' --exclude='storage/framework/views/***' \
-            --exclude='public/storage' --filter='protect public/uploads/***' \
+            --filter='protect public/storage/***' --filter='protect public/uploads/***' \
             ./ "$target:$DEPLOY_PATH/"
           "${rsync_run[@]}" -az --chmod=F600 -e "$rsync_ssh" .env.production "$target:$DEPLOY_PATH/.env.next"
 
