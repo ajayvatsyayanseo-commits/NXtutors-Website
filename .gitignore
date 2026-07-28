@@ -28,6 +28,8 @@ howtorun.md*
 
 .env
 
+.env.example
+
 .env.backup
 
 .env.production
@@ -96,7 +98,9 @@ coverage/
 
 # Laravel Storage & Caches
 
-/public/storage
+public/storage/*
+!public/storage/category
+!public/storage/logos
 /public/public/storage
 /public/uploads/user
 /public/uploads/private
@@ -116,6 +120,7 @@ coverage/
 /storage/logs/
 
 /storage/storage/
+
 
 # Backups and local exports
 *.bak
