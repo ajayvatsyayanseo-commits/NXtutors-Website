@@ -8,7 +8,7 @@
     if ($avatar && str_starts_with($avatar, 'http')) {
         $img = $avatar;
     } else {
-        $img = $avatar ? asset('public/storage/user/'.$avatar) : asset('public/frount/assets/images/tutor1.jpg');
+        $img = $avatar ? asset('storage/user/'.$avatar) : asset('frount/assets/images/tutor1.jpg');
     }
 
     $chip = 'Verified Tutor';
@@ -44,7 +44,7 @@
          alt="{{ $t->name }}"
          class="avatar"
          loading="lazy"   decoding="async"
-         onerror="this.src='{{ asset('public/frount/assets/images/tutor1.jpg') }}'">
+         onerror="this.src='{{ asset('frount/assets/images/tutor1.jpg') }}'">
 
     <div>
       <div class="card-title">{{ $t->name }}</div>

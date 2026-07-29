@@ -41,7 +41,7 @@
             <td>{{ Str::limit($row->author, 20) }}</td>
             <td>
               @if($row->avatar)
-                <img src="{{ asset('public/storage/blog/' . $row->avatar) }}" 
+                <img src="{{ asset('storage/blog/' . $row->avatar) }}" 
                      alt="Avatar" 
                      class="rounded" 
                      style="width: 50px; height: 50px; object-fit: cover;">

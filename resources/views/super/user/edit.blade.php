@@ -257,7 +257,7 @@
                                     <label>User Image</label>
                                     <input type="file" name="avatar" id="avatar" class="form-control">
                                     @if($page && $page->avatar)
-                                        <img src="{{ asset('public/storage/user/'.$page->avatar) }}" id="blah" style="max-width:100px;height:100px;margin-top:8px;">
+                                        <img src="{{ asset('storage/user/'.$page->avatar) }}" id="blah" style="max-width:100px;height:100px;margin-top:8px;">
                                     @else
                                         <img src="javascript:void(0)" id="blah" style="max-width:100px;height:100px;margin-top:8px;display:none;">
                                     @endif
@@ -267,7 +267,7 @@
                                     <label>Degree Image</label>
                                     <input type="file" name="degree" id="degree" class="form-control">
                                     @if($page && $page->degree)
-                                        <img src="{{ asset('public/storage/user/'.$page->degree) }}" id="blah1" style="max-width:100px;height:100px;margin-top:8px;">
+                                        <img src="{{ asset('storage/user/'.$page->degree) }}" id="blah1" style="max-width:100px;height:100px;margin-top:8px;">
                                     @else
                                         <img src="javascript:void(0)" id="blah1" style="max-width:100px;height:100px;margin-top:8px;display:none;">
                                     @endif

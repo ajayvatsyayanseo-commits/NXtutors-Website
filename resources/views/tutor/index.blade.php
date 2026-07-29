@@ -28,8 +28,8 @@
       $avatar = $t->avatar ?? '';
       $img = ($avatar && str_starts_with($avatar,'http'))
           ? $avatar
-          : ($avatar ? asset('public/storage/user/'.$avatar)
-                     : asset('public/frount/assets/images/tutor1.jpg'));
+          : ($avatar ? asset('storage/user/'.$avatar)
+                     : asset('frount/assets/images/tutor1.jpg'));
 
       $profileUrl = !empty($t->slug) ? route('tutor.show', $t->slug) : url('/tutor/'.$t->user_id);
 

@@ -121,7 +121,7 @@
           class="row gy-4 gy-md-5 justify-content-between align-items-center"
         >
           <div class="col-lg-9">
-            <div class="loadergif" style="display:none"><img src="{{ asset('public/frount/assets') }}/images/loading.gif" class="loadinggif"  /></div>
+            <div class="loadergif" style="display:none"><img src="{{ asset('frount/assets') }}/images/loading.gif" class="loadinggif"  /></div>
             <div id="msgHolderresister"></div>
             <h2 class="tl-8-section-title">Enquiry For Teacher</h2>
 

@@ -15,8 +15,8 @@ class NxtSchemaBuilder
         $orgName = config('app.name', 'NXTutors');
 
         // ✅ Update these to real public paths if needed
-        $logoUrl  = $baseUrl . '/public/frount/assets/images/logo.png';
-        $imageUrl = $baseUrl . '/public/frount/assets/images/og-default.jpg';
+        $logoUrl  = $baseUrl . '/frount/assets/images/logo.png';
+        $imageUrl = $baseUrl . '/frount/assets/images/og-default.jpg';
 
         $city     = trim((string)($page->city ?? ''));
         $state    = trim((string)($page->state ?? ''));

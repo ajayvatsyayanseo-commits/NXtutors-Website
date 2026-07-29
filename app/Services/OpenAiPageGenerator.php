@@ -741,7 +741,7 @@ class OpenAiPageGenerator
             $r['location'] = $locText;
 
             $file = $imagePool[$i % count($imagePool)];
-            $r['image'] = "https://nxtutors.in/public/storage/reviews/" . $file;
+            $r['image'] = asset('storage/reviews/' . $file);
         }
         unset($r);
 
@@ -756,7 +756,7 @@ class OpenAiPageGenerator
                     "review" => "Good tutor match and smooth demo experience.",
                     "date" => date('Y-m-d'),
                     "location" => $locText,
-                    "image" => "https://nxtutors.in/public/storage/reviews/" . $file,
+                    "image" => asset('storage/reviews/' . $file),
                 ];
             }
         }

@@ -1,5 +1,5 @@
  @include('include.header')
-<div class="breadcrumb-section pt-40 pb-40" data-background="{{ asset('public/frount/assets') }}/images/shapes/breadcrumb-bg.jpg">
+<div class="breadcrumb-section pt-40 pb-40" data-background="{{ asset('frount/assets') }}/images/shapes/breadcrumb-bg.jpg">
         <div class="container">
             <p class="breadcrumb-text fw-light mb-0"><a href="{{ url('/')}}">Home</a> / <span class="primary-text-color">Cartlist</span></p>
         </div>
@@ -28,7 +28,7 @@
                             <div class="d-flex align-items-center gap-4 product-box">
                                 <button type="button" class="remove_product"><i class="fas fa-close"></i></button>
                                 <div class="feature-image light-bg">
-                                    <img src="{{ asset('public/storage/product_image') }}/{{ $row->productname->avatar}}" class="img-fluid" alt="feature image">
+                                    <img src="{{ asset('storage/product_image') }}/{{ $row->productname->avatar}}" class="img-fluid" alt="feature image">
                                 </div>
                                 <div>
                                     <span class="fs-sm text-uppercase secondary-text-color d-block">{{ $row->productname->mainCategory->cat_title}}</span>

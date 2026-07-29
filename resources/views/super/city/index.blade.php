@@ -47,7 +47,7 @@
 
                 <td>
                   @if($row->avatar)
-                    <img src="{{ asset('public/storage/city/' . $row->avatar) }}"
+                    <img src="{{ asset('storage/city/' . $row->avatar) }}"
                          alt="City"
                          class="rounded"
                          style="width: 50px; height: 50px; object-fit: cover;">

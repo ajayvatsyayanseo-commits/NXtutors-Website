@@ -143,7 +143,7 @@
         <h1>{{ $page->main_title }}</h1>
 
         @if(!empty($page->avatar))
-            <img src="{{ asset('public/storage/page/' . $page->avatar) }}" alt="{{ $page->main_title }}">
+            <img src="{{ asset('storage/page/' . $page->avatar) }}" alt="{{ $page->main_title }}">
         @endif
 
         <div>

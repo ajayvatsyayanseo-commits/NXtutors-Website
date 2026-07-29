@@ -73,7 +73,7 @@
             <div class="form-group mb-3">
                 <label for="logo">Logo</label>
                 @if ($setting->logo)
-                    <img src="{{ asset('public/storage/logos/' . $setting->logo) }}" alt="Logo" width="100" height="100">
+                    <img src="{{ asset('storage/logos/' . $setting->logo) }}" alt="Logo" width="100" height="100">
                 @endif
                 <input type="file" name="logo" id="logo" class="form-control">
             </div>

@@ -24,11 +24,11 @@
   <meta name="google-site-verification" content="6YPIp5C3YKMj872HZZnphViStBtyWOrah5hikhJIz2M"/>
 <meta name="csrf-token" content="{{ csrf_token() }}">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="{{ asset('public/frount/assets') }}/css/styles.css" />
+  <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/styles.css" />
 
-  <link rel="stylesheet" href="{{ asset('public/frount/assets') }}/css/newstyle.css" />
-  <link rel="stylesheet" href="{{ asset('public/frount/assets') }}/css/newhome.css" />
-<link rel="icon" href="{{ asset('public/storage/logos/' . $setting->logo) }}">
+  <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/newstyle.css" />
+  <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/newhome.css" />
+<link rel="icon" href="{{ asset('storage/logos/' . $setting->logo) }}">
 </head>
 <body class="page">
   <div class="shell">
@@ -37,7 +37,7 @@
     <a href="{{ url('/') }}" style="text-decoration: none; color: #fff;">
     <!-- <div class="badge">NXT</div>
     <span class="logo-text">Nxtutors</span> -->
-    <img src="{{ asset('public/storage/logos/' . $setting->logo) }}" style="width: 60px;
+    <img src="{{ asset('storage/logos/' . $setting->logo) }}" style="width: 60px;
     border-radius: 50%" alt="logo" />
   </a>
   </div>

@@ -2,10 +2,10 @@
                                 <div class="myaccount_top"> 
 
                                    @if($user->avatar=='')
-                                   <img src="{{ asset('public/admin/assets') }}/img/profile-img.jpg" />
+                                   <img src="{{ asset('admin/assets') }}/img/profile-img.jpg" />
                                    @else
 
-                                   <img src="{{ asset('public/storage/user') }}/{{ $user->avatar}}" />
+                                   <img src="{{ asset('storage/user') }}/{{ $user->avatar}}" />
                                    @endif
                                 </div>
                                  <h3>Welcome {{ $user->name}}</h3>

@@ -325,7 +325,7 @@
 
             <h2>Login Account</h2>
 
-            <div class="loadergif" style="display:none"><img src="{{ asset('public/frount/assets') }}/images/loading.gif" class="loadinggif" /></div>
+            <div class="loadergif" style="display:none"><img src="{{ asset('frount/assets') }}/images/loading.gif" class="loadinggif" /></div>
             <div id="msgHolderresister"></div>
 
             <form class="login_form" name="login_form" id="login_form" method="post">

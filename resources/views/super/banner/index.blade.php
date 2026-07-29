@@ -56,7 +56,7 @@
                     <td>{{ $row->sub_title}}</td>
                    
                     <td> @if($row->avatar)
-                        <img src="{{ asset('public/storage/banner/' . $row->avatar) }}" alt="Avatar" style="width: 50px; height: 50px;">
+                        <img src="{{ asset('storage/banner/' . $row->avatar) }}" alt="Avatar" style="width: 50px; height: 50px;">
                     @else
                         No Image
                     @endif</td>

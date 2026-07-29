@@ -21,7 +21,7 @@
 
                                                         <tr>             
  
-                                                <td align="center"><a href="{{ url('/') }}"><img src="{{ asset('public/storage/logos/' . $setting->logo) }}"  style="width:200px; height:150px;"  ></a></td>
+                                                <td align="center"><a href="{{ url('/') }}"><img src="{{ asset('storage/logos/' . $setting->logo) }}"  style="width:200px; height:150px;"  ></a></td>
 
  
                                                         </tr> 

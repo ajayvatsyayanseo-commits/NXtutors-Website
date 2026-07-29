@@ -48,7 +48,7 @@
           <label class="form-label">Blog Image</label>
           <input type="file" name="avatar" id="avatar" class="form-control">
           @if($page->avatar)
-            <img src="{{ asset('public/storage/blog/' . $page->avatar) }}" alt="Current Image" 
+            <img src="{{ asset('storage/blog/' . $page->avatar) }}" alt="Current Image" 
                  style="max-width: 100px; height: 100px; margin-top: 10px;">
           @endif
           <small class="text-muted">Leave empty to keep current image</small>

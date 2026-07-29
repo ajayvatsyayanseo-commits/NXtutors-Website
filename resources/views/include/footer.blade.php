@@ -60,9 +60,9 @@
       </p>
 
       <div class="footer-social">
-        <a href="#"><img src="{{ asset('public/frount/assets') }}/images/facebook.svg" alt="Facebook" /></a>
-        <a href="#"><img src="{{ asset('public/frount/assets') }}/images/instagram.svg" alt="Instagram" /></a>
-        <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $setting->phone);}}"><img src="{{ asset('public/frount/assets') }}/images/whatsapp.svg" alt="WhatsApp" /></a>
+        <a href="#"><img src="{{ asset('frount/assets') }}/images/facebook.svg" alt="Facebook" /></a>
+        <a href="#"><img src="{{ asset('frount/assets') }}/images/instagram.svg" alt="Instagram" /></a>
+        <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $setting->phone);}}"><img src="{{ asset('frount/assets') }}/images/whatsapp.svg" alt="WhatsApp" /></a>
       </div>
     </div>
 
@@ -112,7 +112,7 @@
 
 
 
-  <script src="{{ asset('public/frount/assets') }}/js/main.js"></script>
+  <script src="{{ asset('frount/assets') }}/js/main.js"></script>
 
   <script>
 document.addEventListener('DOMContentLoaded', function () {

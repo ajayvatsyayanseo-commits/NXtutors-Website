@@ -1,5 +1,5 @@
  @include('include.header')
-<link rel="stylesheet" href="{{ asset('public/frount/assets') }}/css/newstyle.css">
+<link rel="stylesheet" href="{{ asset('frount/assets') }}/css/newstyle.css">
 
 
     <div class="row">
@@ -125,10 +125,10 @@
                                      <input type="file" class="form-control_file"  name="avatar" id="avatar"  >
                                      
                                     @if($user->avatar=='')
-                                   <img id="blah" class="profile_image" src="{{ asset('public/admin/assets') }}/img/profile-img.jpg" />
+                                   <img id="blah" class="profile_image" src="{{ asset('admin/assets') }}/img/profile-img.jpg" />
                                    @else
 
-                                   <img  id="blah" class="profile_image" src="{{ asset('public/storage/user') }}/{{ $user->avatar}}" />
+                                   <img  id="blah" class="profile_image" src="{{ asset('storage/user') }}/{{ $user->avatar}}" />
                                    @endif
                      
                                     

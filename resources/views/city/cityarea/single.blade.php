@@ -15,8 +15,8 @@
     $cityUrl = !empty($city?->slug) ? url('/city/'.$city->slug) : url('/city');
 
     $cityImg = $city?->avatar
-      ? asset('public/storage/city/'.$city->avatar)
-      : asset('public/frount/assets/images/og-default.jpg');
+      ? asset('storage/city/'.$city->avatar)
+      : asset('frount/assets/images/og-default.jpg');
 
     // -------- Breadcrumb schema ----------
     $breadcrumb = [
@@ -97,7 +97,7 @@
   @if($faqSchema)
     <script type="application/ld+json">{!! json_encode($faqSchema, JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE) !!}</script>
   @endif
-   <link rel="stylesheet" href="{{ asset('public/frount/assets') }}/css/city-area.css" />
+   <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/city-area.css" />
 </head>
 
 <body class="page">
@@ -158,8 +158,8 @@
         $avatar = $t->avatar ?? '';
         $img = ($avatar && str_starts_with($avatar,'http'))
             ? $avatar
-            : ($avatar ? asset('public/storage/user/'.$avatar)
-                      : asset('public/frount/assets/images/tutor1.jpg'));
+            : ($avatar ? asset('storage/user/'.$avatar)
+                      : asset('frount/assets/images/tutor1.jpg'));
 
         // ✅ Chip text from courses (fallback verified tutor)
         $chip = 'Verified Tutor';
@@ -200,7 +200,7 @@
         <div class="tutor-top">
           <div class="tutor-avatar">
             <img src="{{ $img }}" alt="{{ $t->name }}"
-                onerror="this.src='{{ asset('public/frount/assets/images/tutor1.jpg') }}'">
+                onerror="this.src='{{ asset('frount/assets/images/tutor1.jpg') }}'">
             <span class="badge-verified">✔</span>
           </div>
 

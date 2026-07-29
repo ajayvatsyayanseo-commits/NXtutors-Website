@@ -19,8 +19,8 @@
   $canonical = $canonical ?? url()->current();
 
   $img = !empty($tutor->avatar)
-    ? (str_starts_with($tutor->avatar,'http') ? $tutor->avatar : asset('public/storage/user/'.$tutor->avatar))
-    : asset('public/frount/assets/images/tutor1.jpg');
+    ? (str_starts_with($tutor->avatar,'http') ? $tutor->avatar : asset('storage/user/'.$tutor->avatar))
+    : asset('frount/assets/images/tutor1.jpg');
 
   // ✅ WhatsApp Number (change once, use everywhere)
   $waNumber = preg_replace('/[^0-9]/', '', $setting->phone);// ✅ put your real number (without +)
@@ -369,7 +369,7 @@ html {
   details.nxacc summary::-webkit-details-marker{display:none;}
   .nxacc__body{margin-top:10px;color:rgba(226,232,240,.82);font-size:14px;line-height:1.7;}
 </style>
- <link rel="stylesheet" href="{{ asset('public/frount/assets') }}/css/home.css" />
+ <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/home.css" />
 </head>
 
 <body class="page">
@@ -384,7 +384,7 @@ html {
           <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;">
             <img src="{{ $img }}" alt="{{ $tutor->name }}" width="120" height="120"
                 style="border-radius:18px;object-fit:cover;border:1px solid rgba(148,163,184,.35);flex:0 0 auto;"   
-                 onerror="this.src='{{ asset('public/frount/assets/images/tutor1.jpg') }}'">
+                 onerror="this.src='{{ asset('frount/assets/images/tutor1.jpg') }}'">
 
             <div style="flex:1;min-width:240px;">
               <h1 class="nxh1" style="margin:0 0 6px;">{{ $tutor->name }}</h1>
@@ -919,7 +919,7 @@ html {
                 $a = $rt->avatar ?? '';
                 $rtImg = $a && str_starts_with($a,'http')
                   ? $a
-                  : ($a ? asset('public/storage/user/'.$a) : asset('public/frount/assets/images/tutor1.jpg'));
+                  : ($a ? asset('storage/user/'.$a) : asset('frount/assets/images/tutor1.jpg'));
 
                    $encodedId = rtrim(strtr(base64_encode($rt->user_id . '-nxt'), '+/', '-_'), '=');
             
@@ -934,7 +934,7 @@ html {
                 <div style="display:flex;gap:12px;align-items:center;">
                   <img src="{{ $rtImg }}" width="54" height="54"
                        style="border-radius:12px;object-fit:cover;border:1px solid rgba(148,163,184,.35);"
-                       onerror="this.src='{{ asset('public/frount/assets/images/tutor1.jpg') }}'">
+                       onerror="this.src='{{ asset('frount/assets/images/tutor1.jpg') }}'">
                   <div>
                     <div class="nxk">{{ $rt->name }}</div>
                     <div class="nxmuted" style="font-size:12px;">{{ $rt->address ?? '' }}</div>
@@ -965,8 +965,8 @@ html {
           @foreach($latestBlogs as $b)
             @php
               $thumb = !empty($b->avatar)
-                ? (str_starts_with($b->avatar,'http') ? $b->avatar : asset('public/storage/blog/'.$b->avatar))
-                : asset('public/frount/assets/images/blog2.jpg');
+                ? (str_starts_with($b->avatar,'http') ? $b->avatar : asset('storage/blog/'.$b->avatar))
+                : asset('frount/assets/images/blog2.jpg');
             @endphp
 
             <a href="{{ route('blog.show', $b->slug) }}" class="nxcard nxcard--soft nxscroll__card" style="text-decoration:none;color:inherit;">

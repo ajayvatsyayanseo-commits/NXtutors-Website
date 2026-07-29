@@ -5,7 +5,7 @@
  
  @include('include.header')
    <main class="main">
- <link rel="stylesheet" href="{{ asset('public/frount/assets') }}/css/home.css" />
+ <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/home.css" />
 <section class="hero hero--slider">
   <div class="hero-slider" id="heroSlider">
     @php $i=1; @endphp
@@ -18,8 +18,8 @@
     $webpPath = public_path('storage/banner/' . $fileName . '.webp');
 
     $bannerImage = file_exists($webpPath)
-        ? asset('public/storage/banner/' . $fileName . '.webp')
-        : asset('public/storage/banner/' . $originalName);
+        ? asset('storage/banner/' . $fileName . '.webp')
+        : asset('storage/banner/' . $originalName);
 @endphp
     <div class="hero-slide @if($i==1) is-active @endif">
       <div class="hero-bg lazy-bg"
@@ -64,7 +64,7 @@
          
         @foreach($category as $rowcc)
           <a href="{{ url('/')}}/category/{{ $rowcc->slug}}" class="tile">
-            <div class="tile-icon"><img src="{{ asset('public/storage/category') }}/{{ $rowcc->avatar}}" alt="icon" style="width:40px; height:40px; border-radius: 50%;" loading="lazy" decoding="async" /></div>
+            <div class="tile-icon"><img src="{{ asset('storage/category') }}/{{ $rowcc->avatar}}" alt="icon" style="width:40px; height:40px; border-radius: 50%;" loading="lazy" decoding="async" /></div>
             <div class="tile-main">
               <div class="tile-kicker">{{ $rowcc->cat_title}}</div>
               <!-- <div class="tile-title">All Subjects</div>
@@ -460,7 +460,7 @@
     </div>
     
     <div class="ai-card-large-image">
-      <img src="{{ asset('public/frount/assets') }}/images/aa.png" alt="AI powered tutor matching platform across India" loading="lazy" decoding="async" />
+      <img src="{{ asset('frount/assets') }}/images/aa.png" alt="AI powered tutor matching platform across India" loading="lazy" decoding="async" />
       <div class="ai-image-badge">AI-Based · Verified Tutors · India-Wide</div>
     </div>
   </div>
@@ -710,16 +710,16 @@
 
         <div class="logo-row">
           <div class="logo-card">
-            <img src="{{ asset('public/frount/assets') }}/images/logo1.png" loading="lazy" decoding="async" alt="School logo" />
+            <img src="{{ asset('frount/assets') }}/images/logo1.png" loading="lazy" decoding="async" alt="School logo" />
           </div>
           <div class="logo-card">
-            <img src="{{ asset('public/frount/assets') }}/images/logo2.png" loading="lazy" decoding="async" alt="School logo" />
+            <img src="{{ asset('frount/assets') }}/images/logo2.png" loading="lazy" decoding="async" alt="School logo" />
           </div>
           <div class="logo-card">
-            <img src="{{ asset('public/frount/assets') }}/images/logo3.png" loading="lazy" decoding="async" alt="School logo" />
+            <img src="{{ asset('frount/assets') }}/images/logo3.png" loading="lazy" decoding="async" alt="School logo" />
           </div>
           <div class="logo-card">
-            <img src="{{ asset('public/frount/assets') }}/images/logo4.png" loading="lazy" decoding="async" alt="School logo" />
+            <img src="{{ asset('frount/assets') }}/images/logo4.png" loading="lazy" decoding="async" alt="School logo" />
           </div>
         </div>
       </section>
@@ -953,7 +953,7 @@
     </div>
     
     <div class="ai-card-large-image">
-      <img src="{{ asset('public/frount/assets') }}/images/aa1.png" alt="AI tutor matching compatibility system" loading="lazy" decoding="async" />
+      <img src="{{ asset('frount/assets') }}/images/aa1.png" alt="AI tutor matching compatibility system" loading="lazy" decoding="async" />
       <div class="ai-image-badge">2–3 Best Matches · Demo First · Verified</div>
     </div>
   </div>

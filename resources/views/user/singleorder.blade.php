@@ -1,5 +1,5 @@
  @include('include.header')
-<link rel="stylesheet" href="{{ asset('public/frount/assets') }}/css/newstyle.css">
+<link rel="stylesheet" href="{{ asset('frount/assets') }}/css/newstyle.css">
 
 
     <div class="row">
@@ -161,7 +161,7 @@
                         <td>{{ $i}}</td>
                         
                         <td>{{ $row->productname->title }}</td>
-                        <td> <img src="{{ asset('public/storage/product_image') }}/{{ $row->productname->avatar}}" width="100" height="100"   alt="feature image"></td>
+                        <td> <img src="{{ asset('storage/product_image') }}/{{ $row->productname->avatar}}" width="100" height="100"   alt="feature image"></td>
                         <td>{{ $row->price}}</td>
                         <td>{{ $row->qty}}</td>
                         <td>{{ $row->qty * $row->price}}</td>
@@ -206,7 +206,7 @@
          <div id="invoice" class="effect2">
             <div id="invoice-top">
             <div class="logo">
-            <img src="{{ asset('public/storage/logos/' . $setting->logo) }}" class="img">
+            <img src="{{ asset('storage/logos/' . $setting->logo) }}" class="img">
           </div>  
             <!--End Info-->
                <div class="title">
@@ -278,7 +278,7 @@
                            <p class="itemtext">{{ $row->productname->title }}</p>
                         </td>
                         <td class="tableitem">
-                           <img src="{{ asset('public/storage/product_image') }}/{{ $row->productname->avatar}}" width="100" height="100"   alt="feature image">
+                           <img src="{{ asset('storage/product_image') }}/{{ $row->productname->avatar}}" width="100" height="100"   alt="feature image">
                         </td>
                         <td class="tableitem">
                            <p class="itemtext">${{ $row->price}}</p>
@@ -349,7 +349,7 @@
         var printWindow = window.open('', '', 'height=600,width=800');
         
         // Link to the external CSS file
-        var cssLink = '<link rel="stylesheet" type="text/css" href="{{ asset('public/frount/assets') }}/css/print.css">';
+        var cssLink = '<link rel="stylesheet" type="text/css" href="{{ asset('frount/assets') }}/css/print.css">';
         
         printWindow.document.write('<html><head><title>{{ $setting->name}}</title>');
         printWindow.document.write(cssLink); // Include the CSS file

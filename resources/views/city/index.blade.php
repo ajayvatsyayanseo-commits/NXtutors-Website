@@ -25,8 +25,8 @@
 
     foreach($city as $c){
       $img = $c->avatar
-        ? asset('public/storage/city/'.$c->avatar)
-        : asset('public/frount/assets/images/og-default.jpg');
+        ? asset('storage/city/'.$c->avatar)
+        : asset('frount/assets/images/og-default.jpg');
 
       $cityUrl = !empty($c->slug) ? url('/city/'.$c->slug) : url('/city/'.$c->id);
 
@@ -131,7 +131,7 @@
     <div class="grid-3" id="cityGrid">
       @foreach($city as $c)
         @php
-          $img = $c->avatar ? asset('public/storage/city/'.$c->avatar) : asset('public/frount/assets/images/og-default.jpg');
+          $img = $c->avatar ? asset('storage/city/'.$c->avatar) : asset('frount/assets/images/og-default.jpg');
           $cityUrl = !empty($c->slug) ? url('/city/'.$c->slug) : url('/city/'.$c->id);
         @endphp
 

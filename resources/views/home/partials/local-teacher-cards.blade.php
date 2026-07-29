@@ -4,7 +4,7 @@
     $avatar = $t->avatar ?? '';
     $img = ($avatar && str_starts_with($avatar,'http'))
       ? $avatar
-      : ($avatar ? asset('public/storage/user/'.$avatar) : asset('public/frount/assets/images/tutor1.jpg'));
+      : ($avatar ? asset('storage/user/'.$avatar) : asset('frount/assets/images/tutor1.jpg'));
 
     $chip = 'Verified Tutor';
     if (!empty($t->courses) && $t->courses->count()) {
@@ -37,7 +37,7 @@
     <div class="card-header">
       <img src="{{ $img }}" alt="{{ $t->name }}" class="avatar"
            loading="lazy"   decoding="async"
-           onerror="this.src='{{ asset('public/frount/assets/images/tutor1.jpg') }}'">
+           onerror="this.src='{{ asset('frount/assets/images/tutor1.jpg') }}'">
       <div>
         <div class="card-title">{{ $t->name }}</div>
         <div class="card-subtitle">{{ $chip }}</div>

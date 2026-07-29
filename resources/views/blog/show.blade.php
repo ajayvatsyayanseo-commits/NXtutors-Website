@@ -12,14 +12,14 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="{{ $canonical }}">
   @if(!empty($blog->avatar))
-    <meta property="og:image" content="{{ str_starts_with($blog->avatar,'http') ? $blog->avatar : asset('public/storage/blog/'.$blog->avatar) }}">
+    <meta property="og:image" content="{{ str_starts_with($blog->avatar,'http') ? $blog->avatar : asset('storage/blog/'.$blog->avatar) }}">
   @endif
 
   {{-- ✅ JSON-LD Schema --}}
   @php
     $img = !empty($blog->avatar)
-      ? (str_starts_with($blog->avatar,'http') ? $blog->avatar : asset('public/storage/blog/'.$blog->avatar))
-      : asset('public/frount/assets/images/blog1.jpg');
+      ? (str_starts_with($blog->avatar,'http') ? $blog->avatar : asset('storage/blog/'.$blog->avatar))
+      : asset('frount/assets/images/blog1.jpg');
 
     $published = !empty($blog->date) ? $blog->date : null;
 
@@ -49,7 +49,7 @@
         "name" => $siteName,
         "logo" => [
           "@type" => "ImageObject",
-          "url" => asset('public/frount/assets/images/logo1.png')
+          "url" => asset('frount/assets/images/logo1.png')
         ]
       ],
     ];
@@ -218,8 +218,8 @@
           @foreach($related as $b)
             @php
               $thumb = !empty($b->avatar)
-                ? (str_starts_with($b->avatar,'http') ? $b->avatar : asset('public/storage/blog/'.$b->avatar))
-                : asset('public/frount/assets/images/blog2.jpg');
+                ? (str_starts_with($b->avatar,'http') ? $b->avatar : asset('storage/blog/'.$b->avatar))
+                : asset('frount/assets/images/blog2.jpg');
             @endphp
 
             <a href="{{ route('blog.show', $b->slug) }}" class="blog-card" style="text-decoration:none;color:inherit;">

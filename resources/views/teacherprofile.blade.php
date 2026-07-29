@@ -28,14 +28,14 @@
       <div class="container">
         <div class="tl-staff-profile-top">
          <!--  @if($teacher->avatar=='')
-          <img src="{{ asset('public/frount/assets') }}/images/tl-2/teacher-1.jpg" alt="staff image" />
+          <img src="{{ asset('frount/assets') }}/images/tl-2/teacher-1.jpg" alt="staff image" />
           @else
-           <img src="{{ asset('public/storage/user') }}/{{ $teacher->avatar}}" alt="staff image" />
+           <img src="{{ asset('storage/user') }}/{{ $teacher->avatar}}" alt="staff image" />
            @endif -->
           @if($teacher && $teacher->avatar != '')
-    <img src="{{ asset('public/storage/user') }}/{{ $teacher->avatar }}" alt="staff image" />
+    <img src="{{ asset('storage/user') }}/{{ $teacher->avatar }}" alt="staff image" />
 @else
-    <img src="{{ asset('public/frount/assets/images/tl-2/teacher-1.jpg') }}" alt="staff image" />
+    <img src="{{ asset('frount/assets/images/tl-2/teacher-1.jpg') }}" alt="staff image" />
 @endif
           <div class="tl-staff-profile-txt">
             <div class="tl-staff-profile-intro">
@@ -88,7 +88,7 @@
               <div class="tl-1-course">
                 <div class="tl-1-course-img">
                   <img
-                    src="{{ asset('public/storage/category') }}/{{ $rowp->category->avatar}}"
+                    src="{{ asset('storage/category') }}/{{ $rowp->category->avatar}}"
                     alt="Course Image"
                   />
                   <!-- <span class="tl-1-course-price">$53.00</span> -->

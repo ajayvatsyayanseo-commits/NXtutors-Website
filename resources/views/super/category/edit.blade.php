@@ -58,7 +58,7 @@
           @if($data->avatar)
             <div class="current-image mt-2">
               <small class="text-muted">Current Image:</small><br>
-              <img src="{{ asset('public/storage/category/' . $data->avatar) }}" 
+              <img src="{{ asset('storage/category/' . $data->avatar) }}" 
                    class="rounded" 
                    style="max-width: 100px; height: 100px; object-fit: cover;">
             </div>

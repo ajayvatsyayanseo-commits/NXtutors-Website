@@ -11,8 +11,8 @@
     $baseUrl = url('/');
     $pageUrl = url()->current();
     $cityImg = $city->avatar
-      ? asset('public/storage/city/'.$city->avatar)
-      : asset('public/frount/assets/images/og-default.jpg');
+      ? asset('storage/city/'.$city->avatar)
+      : asset('frount/assets/images/og-default.jpg');
 
     $breadcrumb = [
       "@context" => "https://schema.org",

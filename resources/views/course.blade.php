@@ -470,7 +470,7 @@
                                 <div class="nx-card-media">
                                     <a href="{{ url('/') }}/course/{{ $rowp->slug }}">
                                         <img
-                                            src="{{ asset('public/storage/product_image/' . $rowp->avatar) }}"
+                                            src="{{ asset('storage/product_image/' . $rowp->avatar) }}"
                                             alt="{{ $rowp->title }}"
                                         >
                                     </a>

@@ -1,14 +1,14 @@
 @foreach($blogs as $b)
   @php
     $img = !empty($b->avatar)
-      ? (str_starts_with($b->avatar,'http') ? $b->avatar : asset('public/storage/blog/'.$b->avatar))
-      : asset('public/frount/assets/images/og-default.jpg');
+      ? (str_starts_with($b->avatar,'http') ? $b->avatar : asset('storage/blog/'.$b->avatar))
+      : asset('frount/assets/images/og-default.jpg');
   @endphp
 
   <a class="blog-card" href="{{ url('/blog/'.$b->slug) }}">
     <img class="blog-thumb" src="{{ $img }}" alt="{{ $b->title }}"
          loading="lazy"
-         onerror="this.src='{{ asset('public/frount/assets/images/og-default.jpg') }}'">
+         onerror="this.src='{{ asset('frount/assets/images/og-default.jpg') }}'">
 
     <div class="blog-body">
       <h3 class="blog-title">{{ $b->title }}</h3>

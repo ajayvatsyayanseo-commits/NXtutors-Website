@@ -55,7 +55,7 @@
                 
                 <input type="file" name="avatar" id="avatar" class="form-control">
                 @if($page->avatar)
-                <img src="{{ asset('public/storage/banner/' . $page->avatar) }}" alt="Image Preview" class="img-preview" style="max-width: 100px; height: 100px;">
+                <img src="{{ asset('storage/banner/' . $page->avatar) }}" alt="Image Preview" class="img-preview" style="max-width: 100px; height: 100px;">
                 @endif
                 @error('avatar')
                     <div class="text-danger">{{ $message }}</div>

@@ -2,7 +2,7 @@
 
 
     <!--breadcrumb section start-->
-    <div class="breadcrumb-section pt-40 pb-40" data-background="{{ asset('public/frount/assets') }}/images/shapes/breadcrumb-bg.jpg">
+    <div class="breadcrumb-section pt-40 pb-40" data-background="{{ asset('frount/assets') }}/images/shapes/breadcrumb-bg.jpg">
         <div class="container">
             <p class="breadcrumb-text fw-light mb-0"><a href="{{ url('/')}}">Home</a> / <span class="primary-text-color">Checkout</span></p>
         </div>
@@ -119,7 +119,7 @@
                                     <td>
                                         <div class="d-flex align-items-center gap-4 product-box">
                                             <div class="feature-image light-bg">
-                                                <a href="{{url('/')}}/product/{{ $row->productname->slug }}"><img src="{{ asset('public/storage/product_image') }}/{{ $row->productname->avatar}}" class="img-fluid" alt="product"></a>
+                                                <a href="{{url('/')}}/product/{{ $row->productname->slug }}"><img src="{{ asset('storage/product_image') }}/{{ $row->productname->avatar}}" class="img-fluid" alt="product"></a>
                                             </div>
                                             <div>
                                                 <span class="fs-sm text-uppercase secondary-text-color d-block">{{ $row->productname->mainCategory->cat_title}}</span>

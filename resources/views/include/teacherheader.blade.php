@@ -7,9 +7,9 @@
     <title>{{ $setting->name}}</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="{{ asset('public/user') }}/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ asset('user') }}/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"   />
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/user') }}/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('user') }}/css/style.css">
   </head>
 <body>
 
@@ -57,9 +57,9 @@ if (
         <div class="profile clearfix">
           <div class="profile_pic">
             @if($teacher->avatar=='')
-            <img src="{{ asset('public/admin/assets') }}/img/profile-img.jpg" alt="..." class="img-circle profile_img">
+            <img src="{{ asset('admin/assets') }}/img/profile-img.jpg" alt="..." class="img-circle profile_img">
             @else
-            <img src="{{ asset('public/storage/user') }}/{{ $teacher->avatar}}" class="img-circle profile_img" />
+            <img src="{{ asset('storage/user') }}/{{ $teacher->avatar}}" class="img-circle profile_img" />
             @endif
           </div>
           <div class="profile_info">
@@ -128,9 +128,9 @@ if (
             <li class="">
               <a href="{{ route('teacher.profile') }}" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                 @if($teacher->avatar=='')
-                <img src="{{ asset('public/admin/assets') }}/img/profile-img.jpg" />
+                <img src="{{ asset('admin/assets') }}/img/profile-img.jpg" />
                 @else
-                <img src="{{ asset('public/storage/user') }}/{{ $teacher->avatar}}" />
+                <img src="{{ asset('storage/user') }}/{{ $teacher->avatar}}" />
                 @endif {{ $teacher->name}}
                 <span class=" fa fa-angle-down"></span>
               </a>
@@ -151,10 +151,10 @@ if (
                 <li>
                   <a>
                     <span class="image">@if($teacher->avatar=='')
-                                   <img src="{{ asset('public/admin/assets') }}/img/profile-img.jpg" />
+                                   <img src="{{ asset('admin/assets') }}/img/profile-img.jpg" />
                                    @else
 
-                                   <img src="{{ asset('public/storage/user') }}/{{ $teacher->avatar}}" />
+                                   <img src="{{ asset('storage/user') }}/{{ $teacher->avatar}}" />
                                    @endif</span>
                     <span>
                           <span>{{ $teacher->name}}</span>
@@ -168,10 +168,10 @@ if (
                 <li>
                   <a>
                     <span class="image">@if($teacher->avatar=='')
-                                   <img src="{{ asset('public/admin/assets') }}/img/profile-img.jpg" />
+                                   <img src="{{ asset('admin/assets') }}/img/profile-img.jpg" />
                                    @else
 
-                                   <img src="{{ asset('public/storage/user') }}/{{ $teacher->avatar}}" />
+                                   <img src="{{ asset('storage/user') }}/{{ $teacher->avatar}}" />
                                    @endif</span>
                     <span>
                           <span>{{ $teacher->name}}</span>
@@ -185,10 +185,10 @@ if (
                 <li>
                   <a>
                     <span class="image">@if($teacher->avatar=='')
-                                   <img src="{{ asset('public/admin/assets') }}/img/profile-img.jpg" />
+                                   <img src="{{ asset('admin/assets') }}/img/profile-img.jpg" />
                                    @else
 
-                                   <img src="{{ asset('public/storage/user') }}/{{ $teacher->avatar}}" />
+                                   <img src="{{ asset('storage/user') }}/{{ $teacher->avatar}}" />
                                    @endif</span>
                     <span>
                           <span>John Smith</span>
@@ -202,9 +202,9 @@ if (
                 <li>
                   <a>
                     <span class="image">@if($teacher->avatar=='')
-                <img src="{{ asset('public/admin/assets') }}/img/profile-img.jpg" />
+                <img src="{{ asset('admin/assets') }}/img/profile-img.jpg" />
                 @else
-                <img src="{{ asset('public/storage/user') }}/{{ $teacher->avatar}}" />
+                <img src="{{ asset('storage/user') }}/{{ $teacher->avatar}}" />
                 @endif</span>
                     <span>
                           <span>{{ $teacher->name}}</span>

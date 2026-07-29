@@ -1,5 +1,5 @@
  @include('include.header')
-<link rel="stylesheet" href="{{ asset('public/frount/assets') }}/css/newstyle.css">
+<link rel="stylesheet" href="{{ asset('frount/assets') }}/css/newstyle.css">
 
 
      <div class="row">

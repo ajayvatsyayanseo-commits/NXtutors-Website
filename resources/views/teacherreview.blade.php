@@ -222,7 +222,7 @@
       </p>
 
       <div class="loadergif" style="display:none">
-        <img src="{{ asset('public/frount/assets') }}/images/loading.gif" class="loadinggif" />
+        <img src="{{ asset('frount/assets') }}/images/loading.gif" class="loadinggif" />
       </div>
 
       <div id="msgHolderfeedback"></div>

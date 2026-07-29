@@ -271,9 +271,9 @@
           <label for="dob"><i class="fa fa-image"></i> Profile Image</label>
           <input type="file" class="form-control" name="avatar" id="avatar">
            @if($user->avatar=='')
-              <img id="blah" class="profile_image" width="150px" height="150px" src="{{ asset('public/admin/assets') }}/img/profile-img.jpg" />
+              <img id="blah" class="profile_image" width="150px" height="150px" src="{{ asset('admin/assets') }}/img/profile-img.jpg" />
               @else
-             <img  id="blah" class="profile_image" width="150px" height="150px"  src="{{ asset('public/storage/user') }}/{{ $user->avatar}}" />
+             <img  id="blah" class="profile_image" width="150px" height="150px"  src="{{ asset('storage/user') }}/{{ $user->avatar}}" />
              @endif
              @error('avatar')
             <div class="text-danger">{{ $message }}</div>
@@ -320,7 +320,7 @@
           <input type="file" class="form-control" name="degree" id="degree">
            @if($user->degree!='')
               
-             <img  id="blah1" class="profile_image" width="150px" height="150px"  src="{{ asset('public/storage/user') }}/{{ $user->degree}}" />
+             <img  id="blah1" class="profile_image" width="150px" height="150px"  src="{{ asset('storage/user') }}/{{ $user->degree}}" />
             @else
             <img src="javascript:void(0)" id="blah1" class="profile_image" style="display: none;">
             @endif
@@ -374,7 +374,7 @@
           <input type="file" class="form-control" name="frount_image" id="frount_image">
            @if($user->frount_image!='')
               
-             <img  id="blah2" class="profile_image" width="150px" height="150px"  src="{{ asset('public/storage/user') }}/{{ $user->frount_image}}" />
+             <img  id="blah2" class="profile_image" width="150px" height="150px"  src="{{ asset('storage/user') }}/{{ $user->frount_image}}" />
              @else
             <img src="javascript:void(0)" id="blah2" class="profile_image" style="display: none;">
              @endif
@@ -388,7 +388,7 @@
           <input type="file" class="form-control" name="back_image" id="back_image">
            @if($user->back_image!='')
               
-             <img  id="blah3" class="profile_image" width="150px" height="150px"  src="{{ asset('public/storage/user') }}/{{ $user->back_image}}" />
+             <img  id="blah3" class="profile_image" width="150px" height="150px"  src="{{ asset('storage/user') }}/{{ $user->back_image}}" />
              @else
             <img src="javascript:void(0)" id="blah3" class="profile_image" style="display: none;">
              @endif

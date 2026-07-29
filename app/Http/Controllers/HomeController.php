@@ -420,7 +420,7 @@ public function compareAi(Request $request)
         $out[] = [
             'id' => $t->user_id,
             'name' => $t->name,
-            'img' => $t->avatar ? asset('public/storage/user/'.$t->avatar) : asset('public/frount/assets/images/tutor1.jpg'),
+            'img' => $t->avatar ? asset('storage/user/'.$t->avatar) : asset('frount/assets/images/tutor1.jpg'),
             'rating' => number_format($rating, 1),
             'reviews' => $reviews,
             'score' => $score,
@@ -1120,8 +1120,8 @@ public function cityAreaShow($citySlug, $areaSlug)
         $img = $avatar;
     } else {
         $img = $avatar
-            ? asset('public/storage/user/'.$avatar)
-            : asset('public/frount/assets/images/tutor1.jpg');
+            ? asset('storage/user/'.$avatar)
+            : asset('frount/assets/images/tutor1.jpg');
     }
 
     // ✅ Related tutors (same city)
@@ -1292,8 +1292,8 @@ $realUserId = str_replace('-nxt', '', $decoded);
         $img = $avatar;
     } else {
         $img = $avatar
-            ? asset('public/storage/user/'.$avatar)
-            : asset('public/frount/assets/images/tutor1.jpg');
+            ? asset('storage/user/'.$avatar)
+            : asset('frount/assets/images/tutor1.jpg');
     }
 
     // ✅ Related tutors (same city)

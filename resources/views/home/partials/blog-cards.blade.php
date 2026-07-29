@@ -1,14 +1,14 @@
 @foreach($blogs as $b)
   @php
     $thumb = $b->avatar
-      ? asset('public/storage/blog/'.$b->avatar)
-      : asset('public/frount/assets/images/blog1.jpg');
+      ? asset('storage/blog/'.$b->avatar)
+      : asset('frount/assets/images/blog1.jpg');
   @endphp
 
   <article class="blog-card">
     <div class="blog-thumb">
       <img src="{{ $thumb }}" alt="{{ $b->title }}"
-           onerror="this.src='{{ asset('public/frount/assets/images/blog1.jpg') }}'">
+           onerror="this.src='{{ asset('frount/assets/images/blog1.jpg') }}'">
     </div>
 
     <div class="blog-body">

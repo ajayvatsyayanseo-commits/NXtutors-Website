@@ -3,8 +3,8 @@
   $avatar = $t->avatar ?? '';
   $img = ($avatar && str_starts_with($avatar,'http'))
       ? $avatar
-      : ($avatar ? asset('public/storage/user/'.$avatar)
-                 : asset('public/frount/assets/images/tutor1.jpg'));
+      : ($avatar ? asset('storage/user/'.$avatar)
+                 : asset('frount/assets/images/tutor1.jpg'));
 
   $chip = 'Verified Tutor';
   if (!empty($t->courses) && $t->courses->count()) {
@@ -40,7 +40,7 @@ $profileLink = route('tutor.newshow', [
   <div class="tutor-top">
     <div class="tutor-avatar">
       <img src="{{ $img }}" alt="{{ $t->name }}"
-           onerror="this.src='{{ asset('public/frount/assets/images/tutor1.jpg') }}'">
+           onerror="this.src='{{ asset('frount/assets/images/tutor1.jpg') }}'">
       <span class="badge-verified">✔</span>
     </div>
 

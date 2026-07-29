@@ -200,8 +200,8 @@
 
       // ✅ your DB uses avatar, not image
       $img = !empty($b->avatar)
-        ? (str_starts_with($b->avatar,'http') ? $b->avatar : asset('public/storage/blog/'.$b->avatar))
-        : asset('public/frount/assets/images/og-default.jpg');
+        ? (str_starts_with($b->avatar,'http') ? $b->avatar : asset('storage/blog/'.$b->avatar))
+        : asset('frount/assets/images/og-default.jpg');
 
       $plain = trim(preg_replace('/\s+/', ' ', strip_tags($b->short_desc ?? $b->bdesc ?? '')));
       $desc  = \Illuminate\Support\Str::limit($plain, 160);
@@ -222,7 +222,7 @@
           "name" => "NXTutors",
           "logo" => [
             "@type" => "ImageObject",
-            "url" => asset('public/frount/assets/images/logo1.png'),
+            "url" => asset('frount/assets/images/logo1.png'),
           ],
         ],
       ];

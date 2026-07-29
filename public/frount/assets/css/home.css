@@ -209,9 +209,9 @@
     }
 
     /* Banner images */
-    .hero-bg--1 { background-image: url("{{ asset('public/frount/assets') }}/images/hero1.jpg"); }
-    .hero-bg--2 { background-image: url("{{ asset('public/frount/assets') }}/images/hero2.jpg"); }
-    .hero-bg--3 { background-image: url("{{ asset('public/frount/assets') }}/images/hero3.jpg"); }
+    .hero-bg--1 { background-image: url("../images/hero1.jpg"); }
+    .hero-bg--2 { background-image: url("../images/hero2.jpg"); }
+    .hero-bg--3 { background-image: url("../images/hero3.jpg"); }
 
     /* Overlay content */
      .hero-overlay {

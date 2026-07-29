@@ -18,7 +18,7 @@
                         "@type" => "Person",
                         "name" => $teacher->name ?? '',
                         "description" => strip_tags($teacher->profile_desc ?? ''),
-                        "image" => !empty($teacher->avatar) ? asset('public/storage/user/' . $teacher->avatar) : ''
+                        "image" => !empty($teacher->avatar) ? asset('storage/user/' . $teacher->avatar) : ''
                     ];
                 }
             }
@@ -59,7 +59,7 @@
             "@type" => "Course",
             "name" => $rows->title ?? '',
             "description" => strip_tags($rows->short_desc ?? $rows->pdesc ?? ''),
-            "image" => !empty($rows->avatar) ? asset('public/storage/product_image/' . $rows->avatar) : '',
+            "image" => !empty($rows->avatar) ? asset('storage/product_image/' . $rows->avatar) : '',
             "provider" => [
                 "@type" => "Organization",
                 "name" => "NXTutors",
@@ -89,8 +89,8 @@
             $schema["video"] = [
                 "@type" => "VideoObject",
                 "name" => ($rows->title ?? '') . ' Course Video',
-                "thumbnailUrl" => !empty($rows->avatar) ? asset('public/storage/product_image/' . $rows->avatar) : '',
-                "contentUrl" => asset('public/storage/course/' . $rows->video)
+                "thumbnailUrl" => !empty($rows->avatar) ? asset('storage/product_image/' . $rows->avatar) : '',
+                "contentUrl" => asset('storage/course/' . $rows->video)
             ];
         }
     @endphp
@@ -863,7 +863,7 @@
 
                 <div class="nx-panel nx-left-panel">
                     <div class="nx-course-cover">
-                        <img src="{{ asset('public/storage/product_image/' . $rows->avatar) }}" alt="{{ $rows->title }}">
+                        <img src="{{ asset('storage/product_image/' . $rows->avatar) }}" alt="{{ $rows->title }}">
                     </div>
 
                     <h2 class="nx-course-title">{{ $rows->title }}</h2>
@@ -1077,9 +1077,9 @@
 
                                                 <div class="nx-teacher-card">
                                                     @if(empty($rowt->avatar))
-                                                        <img src="{{ asset('public/frount/assets/images/tl-2/teacher-1.jpg') }}" alt="Teacher Image" class="nx-teacher-img">
+                                                        <img src="{{ asset('frount/assets/images/tl-2/teacher-1.jpg') }}" alt="Teacher Image" class="nx-teacher-img">
                                                     @else
-                                                        <img src="{{ asset('public/storage/user/' . $rowt->avatar) }}" alt="Teacher Image" class="nx-teacher-img">
+                                                        <img src="{{ asset('storage/user/' . $rowt->avatar) }}" alt="Teacher Image" class="nx-teacher-img">
                                                     @endif
 
                                                     <h5 class="nx-teacher-name">
@@ -1210,7 +1210,7 @@
                                     @if($x <= 5)
                                         <div class="nx-popular-item">
                                             <img
-                                                src="{{ asset('public/storage/product_image/' . $rowp->avatar) }}"
+                                                src="{{ asset('storage/product_image/' . $rowp->avatar) }}"
                                                 alt="{{ $rowp->title }}"
                                             >
                                             <div>

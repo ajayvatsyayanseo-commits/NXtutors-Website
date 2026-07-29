@@ -56,7 +56,7 @@
     <script type="application/ld+json">{!! $schemaJson !!}</script>
   @endforeach
 </head>
-<link rel="stylesheet" href="{{ asset('public/frount/assets/css/genpage-premium.css') }}">
+<link rel="stylesheet" href="{{ asset('frount/assets/css/genpage-premium.css') }}">
 
  
 
@@ -425,7 +425,7 @@
             <!-- <img class="nxreview-avatar"
                  src="{{ reviewImgUrl($r['image'] ?? null) }}"
                  alt="{{ $r['name'] ?? 'Parent' }}"
-                 onerror="this.src='{{ asset('public/frount/assets/images/tutor1.jpg') }}'"> -->
+                 onerror="this.src='{{ asset('frount/assets/images/tutor1.jpg') }}'"> -->
 
             <div class="nxreview-meta">
               <div class="nxreview-name">{{ $r['name'] ?? 'Parent' }}</div>
