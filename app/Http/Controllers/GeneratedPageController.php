@@ -10,6 +10,9 @@ use Illuminate\Support\Facades\DB;
 
 class GeneratedPageController extends Controller
 {
+    /** Tutors per batch: the first render and every Load More click. */
+    private const TEACHERS_PER_PAGE = 4;
+
     
 
 public function show($slug)
@@ -83,10 +86,14 @@ public function show($slug)
     $mapEmbedUrl = "https://www.google.com/maps?q=" . urlencode($mapQuery) . "&output=embed&z=16";
 
     // ✅ Teachers / Blogs
+    // Four fills the .suggested-grid exactly (4 across on desktop, 2 on a
+    // phone) and matches what Load More fetches per click. The two used to
+    // disagree - 6 served, offset advanced by 4 - so every click re-showed
+    // two tutors the visitor had already seen.
     $teachers = Cache::remember(
-        "genpage:{$page->id}:teachers:limit6:offset0",
+        "genpage:{$page->id}:teachers:limit" . self::TEACHERS_PER_PAGE . ":offset0",
         now()->addMinutes(20),
-        fn () => $this->getTeachersForPage($page, 6, 0)
+        fn () => $this->getTeachersForPage($page, self::TEACHERS_PER_PAGE, 0)
     );
 
     $blogs = Cache::remember(
@@ -168,7 +175,7 @@ public function show($slug)
 
         $offset = (int) request()->get('offset', 0);
 
-        $teachers = $this->getTeachersForPage($page, 6, $offset);
+        $teachers = $this->getTeachersForPage($page, self::TEACHERS_PER_PAGE, $offset);
 
         return view('pages.partials.teacher-cards', [
             'teachers' => $teachers,
@@ -256,6 +263,11 @@ public function show($slug)
 
         $res = $q1->orderByDesc('reviews_count')
             ->orderByDesc('rating_avg')
+            // Most tutors here are tied at 0 reviews and 0 rating. Ordering by
+            // those alone leaves the row order undefined, so LIMIT/OFFSET could
+            // hand back rows it had already served - Load More kept repeating
+            // the same four tutors. A unique final key makes paging stable.
+            ->orderBy('register.id')
             ->offset($offset)->limit($limit)->get();
 
         if ($res->isNotEmpty()) return $res;
@@ -266,6 +278,11 @@ public function show($slug)
 
         $res = $q2->orderByDesc('reviews_count')
             ->orderByDesc('rating_avg')
+            // Most tutors here are tied at 0 reviews and 0 rating. Ordering by
+            // those alone leaves the row order undefined, so LIMIT/OFFSET could
+            // hand back rows it had already served - Load More kept repeating
+            // the same four tutors. A unique final key makes paging stable.
+            ->orderBy('register.id')
             ->offset($offset)->limit($limit)->get();
 
         if ($res->isNotEmpty()) return $res;
@@ -276,6 +293,11 @@ public function show($slug)
 
         return $q3->orderByDesc('reviews_count')
             ->orderByDesc('rating_avg')
+            // Most tutors here are tied at 0 reviews and 0 rating. Ordering by
+            // those alone leaves the row order undefined, so LIMIT/OFFSET could
+            // hand back rows it had already served - Load More kept repeating
+            // the same four tutors. A unique final key makes paging stable.
+            ->orderBy('register.id')
             ->offset($offset)->limit($limit)->get();
     }
 

@@ -151,6 +151,106 @@
                 </div>
               </div>
             </section>
+
+            {{-- ================= TOP TUTORS (DB) =================
+                 Sits directly under the hero: someone landing on a location
+                 page wants the tutors, not the syllabus copy. Four cards in
+                 the same .suggested-grid the home page uses, so the two
+                 surfaces stay one component (4 across on desktop, 2 on a
+                 phone) rather than drifting apart. --}}
+@if(isset($teachers) && $teachers->count())
+<section class="nxsec">
+  <div class="nxsec__head">
+    <div>
+      <h2 class="nxh2">Top Tutors in {{ $page->location }}, {{ $page->city }}</h2>
+      <p class="nxlead">Sorted by reviews &amp; rating</p>
+    </div>
+
+    {{-- The action belongs beside the heading, not stranded under the grid. --}}
+    <button
+      id="loadMoreTeachers"
+      class="btn btn-ghost btn-small"
+      data-offset="4"
+      data-url="{{ route('genpage.teachers', $page->slug) }}"
+    >
+      Load More
+    </button>
+  </div>
+
+  <div class="suggested-grid" id="teachersGrid">
+    @include('pages.partials.teacher-cards', ['teachers' => $teachers])
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const btn = document.getElementById('loadMoreTeachers');
+  const grid = document.getElementById('teachersGrid');
+  if (!btn || !grid) return;
+
+  // Must match the page size the endpoint serves, or the offset walks past
+  // tutors and starts repeating others.
+  const PAGE_SIZE = 4;
+  let loading = false;
+
+  const exhausted = (label) => {
+    btn.textContent = label;
+    btn.disabled = true;
+    btn.style.opacity = '0.7';
+  };
+
+  btn.addEventListener('click', async () => {
+    if (loading) return;
+    loading = true;
+
+    const url = btn.getAttribute('data-url');
+    const offset = parseInt(btn.getAttribute('data-offset') || '0', 10);
+
+    btn.disabled = true;
+    btn.textContent = 'Loading...';
+
+    try {
+      const res = await fetch(url + '?offset=' + offset, {
+        headers: { 'X-Requested-With': 'XMLHttpRequest' }
+      });
+      const html = await res.text();
+
+      if (!html || html.trim().length === 0) {
+        exhausted('No more tutors');
+        return;
+      }
+
+      // The partial renders .tutor-card. This counted .nxcard, which matched
+      // nothing, so the button declared itself exhausted after one click.
+      const tmp = document.createElement('div');
+      tmp.innerHTML = html.trim();
+      const added = tmp.querySelectorAll('.tutor-card').length;
+
+      if (added === 0) {
+        exhausted('No more tutors');
+        return;
+      }
+
+      grid.insertAdjacentHTML('beforeend', html);
+      btn.setAttribute('data-offset', offset + added);
+
+      if (added < PAGE_SIZE) {
+        exhausted('No more tutors');
+      } else {
+        btn.textContent = 'Load More';
+        btn.disabled = false;
+      }
+    } catch (e) {
+      console.error(e);
+      btn.textContent = 'Try again';
+      btn.disabled = false;
+    } finally {
+      loading = false;
+    }
+  });
+});
+</script>
+@endif
 <section class="nxsec">
   <div class="nxsplit">
     {{-- SUBJECTS CONTENT --}}
@@ -569,86 +669,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-            {{-- ================= TUTORS (DB) ================= --}}
-@if(isset($teachers) && $teachers->count())
-<section class="nxsec">
-  <div class="nxsec__head">
-    <h2 class="nxh2">Top Tutors in {{ $page->location }}, {{ $page->city }}</h2>
-    <p class="nxlead">Sorted by reviews & rating</p>
-  </div>
-
-  <div class="nxgrid" id="teachersGrid">
-    @include('pages.partials.teacher-cards', ['teachers' => $teachers])
-  </div>
-
-  <div style="margin-top:16px;text-align:center;">
-    <button
-      id="loadMoreTeachers"
-      class="nxbtn  btn-accent"
-      data-offset="4"
-      data-url="{{ route('genpage.teachers', $page->slug) }}"
-    >
-      Load More
-    </button>
-  </div>
-</section>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const btn = document.getElementById('loadMoreTeachers');
-  const grid = document.getElementById('teachersGrid');
-  if (!btn || !grid) return;
-
-  let loading = false;
-
-  btn.addEventListener('click', async () => {
-    if (loading) return;
-    loading = true;
-
-    const url = btn.getAttribute('data-url');
-    let offset = parseInt(btn.getAttribute('data-offset') || '0', 10);
-
-    btn.disabled = true;
-    btn.textContent = 'Loading...';
-
-    try {
-      const res = await fetch(url + '?offset=' + offset, {
-        headers: { 'X-Requested-With': 'XMLHttpRequest' }
-      });
-      const html = await res.text();
-
-      if (!html || html.trim().length === 0) {
-        btn.textContent = 'No more tutors';
-        btn.style.opacity = '0.7';
-        return;
-      }
-
-      grid.insertAdjacentHTML('beforeend', html);
-      offset += 4;
-      btn.setAttribute('data-offset', offset);
-      btn.textContent = 'Load More';
-      btn.disabled = false;
-
-      // If less than 4 cards returned, disable
-      const tmp = document.createElement('div');
-      tmp.innerHTML = html.trim();
-      if (tmp.querySelectorAll('.nxcard').length < 6) {
-        btn.textContent = 'No more tutors';
-        btn.disabled = true;
-        btn.style.opacity = '0.7';
-      }
-
-    } catch (e) {
-      console.error(e);
-      btn.textContent = 'Try again';
-      btn.disabled = false;
-    } finally {
-      loading = false;
-    }
-  });
-});
-</script>
-@endif
 
 
 @if(isset($relatedPages) && $relatedPages->count())

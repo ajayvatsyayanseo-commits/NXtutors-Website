@@ -1,0 +1,689 @@
+- generic [active] [ref=f3e1]:
+  - link "Skip to main content" [ref=f3e2] [cursor=pointer]:
+    - /url: "#nxt-content"
+  - banner [ref=f3e3]:
+    - link "NXTutors — home" [ref=f3e5] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000
+      - generic [ref=f3e6]: NXTutors
+    - generic [ref=f3e8]:
+      - link "Home" [ref=f3e9] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000
+      - link "Find tutors" [ref=f3e10] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/tutors
+      - button "Change your location" [ref=f3e12] [cursor=pointer]:
+        - generic [ref=f3e13]: Dharuhera - 301019
+        - generic [ref=f3e14]: ▼
+      - 'button "Colour theme: Marigold" [ref=f3e16] [cursor=pointer]':
+        - generic [ref=f3e18]: "Colour theme:"
+        - generic [ref=f3e19]: Marigold
+        - generic [ref=f3e20]: ▾
+      - generic [ref=f3e21]:
+        - link "Chat on WhatsApp" [ref=f3e22] [cursor=pointer]:
+          - /url: "#"
+        - link "New Tutor Partner" [ref=f3e26] [cursor=pointer]:
+          - /url: "#"
+        - button "Log in or sign up" [ref=f3e30] [cursor=pointer]
+  - generic [ref=f3e36]:
+    - main [ref=f3e37]:
+      - generic [ref=f3e39]:
+        - generic [ref=f3e40]:
+          - generic [ref=f3e41]:
+            - link "Home" [ref=f3e42] [cursor=pointer]:
+              - /url: /
+            - generic [ref=f3e43]: ›
+            - link "Pages" [ref=f3e44] [cursor=pointer]:
+              - /url: /page
+            - generic [ref=f3e45]: ›
+            - generic [ref=f3e46]: Best Maths Home Tutor in Sector 14, Gurugram — CBSE Class 6
+          - generic [ref=f3e47]:
+            - generic [ref=f3e48]: Gurugram • Sector 14
+            - generic [ref=f3e49]: Home
+        - generic [ref=f3e50]:
+          - generic [ref=f3e51]:
+            - heading "One-to-one CBSE Maths tuition at home in Sector 14 — Class 6" [level=1] [ref=f3e52]
+            - paragraph [ref=f3e53]: Trusted local tutors who build confidence, clear concepts and lift school grades — personalised lesson plans, weekly practice and home-friendly progress reports.
+            - generic [ref=f3e54]:
+              - generic [ref=f3e55]: Expert CBSE Class 6 Maths tutors — home visits in Sector 14
+              - generic [ref=f3e56]: Structured fortnightly assessment and practice sheets
+              - generic [ref=f3e57]: Safe, vetted tutors with teaching-first approach
+            - generic [ref=f3e58]:
+              - link "Book a Demo" [ref=f3e59] [cursor=pointer]:
+                - /url: "#demoModal"
+              - link "Chat on WhatsApp" [ref=f3e60] [cursor=pointer]:
+                - /url: "#tutorModal"
+          - generic [ref=f3e62]:
+            - generic [ref=f3e63]: Quick Match
+            - generic [ref=f3e64]: Tell us your requirement — we’ll share verified tutors in Gurugram.
+            - list [ref=f3e65]:
+              - listitem [ref=f3e66]: Verified tutors
+              - listitem [ref=f3e67]: Personalized learning
+              - listitem [ref=f3e68]: Flexible Home sessions
+        - generic [ref=f3e69]:
+          - generic [ref=f3e70]:
+            - generic [ref=f3e71]:
+              - heading "Top Tutors in Sector 14, Gurugram" [level=2] [ref=f3e72]
+              - paragraph [ref=f3e73]: Sorted by reviews & rating
+            - button "Load More" [ref=f3e74] [cursor=pointer]
+          - generic [ref=f3e75]:
+            - article [ref=f3e76]:
+              - generic [ref=f3e77]:
+                - img "Kannan Ramaswamy" [ref=f3e78]
+                - generic [ref=f3e79]: Verified
+                - generic [ref=f3e82]: New
+              - generic [ref=f3e83]:
+                - heading "Kannan Ramaswamy" [level=3] [ref=f3e85]
+                - paragraph [ref=f3e86]: Plot No.6789, Sector 14,Gurgaon, Gurugram
+                - generic [ref=f3e89]:
+                  - generic [ref=f3e90]: CBSE
+                  - generic [ref=f3e91]: Class - XI
+                  - generic [ref=f3e92]: Academic (Class XI–XII)
+              - generic [ref=f3e93]:
+                - link "Profile" [ref=f3e94] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/tutor/gurugram/MTEzNi1ueHQ/kannan-ramaswamy
+                - link "WhatsApp" [ref=f3e95] [cursor=pointer]:
+                  - /url: https://wa.me/917836034313?text=Hi%2C+I+want+to+connect+with+tutor+Kannan+Ramaswamy+%28UserID%3A+1136%29.+Page%3A+Best+Maths+Home+Tutor+in+Sector+14%2C+Gurugram+%E2%80%94+CBSE+Class+6+%7C+Sector+14%2C+Gurugram.
+            - article [ref=f3e98]:
+              - generic [ref=f3e99]:
+                - img "Nikhil Nair" [ref=f3e100]
+                - generic [ref=f3e101]: Verified
+                - generic [ref=f3e104]: New
+              - generic [ref=f3e105]:
+                - heading "Nikhil Nair" [level=3] [ref=f3e107]
+                - paragraph [ref=f3e108]: 234, Sector 14, Gurgaon-122003, Gurugram
+                - generic [ref=f3e111]:
+                  - generic [ref=f3e112]: CBSE
+                  - generic [ref=f3e113]: Class - XI
+                  - generic [ref=f3e114]: Academic (Class XI–XII)
+              - generic [ref=f3e115]:
+                - link "Profile" [ref=f3e116] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/tutor/gurugram/MTE0NS1ueHQ/nikhil-nair
+                - link "WhatsApp" [ref=f3e117] [cursor=pointer]:
+                  - /url: https://wa.me/917836034313?text=Hi%2C+I+want+to+connect+with+tutor+Nikhil+Nair+%28UserID%3A+1145%29.+Page%3A+Best+Maths+Home+Tutor+in+Sector+14%2C+Gurugram+%E2%80%94+CBSE+Class+6+%7C+Sector+14%2C+Gurugram.
+            - article [ref=f3e120]:
+              - generic [ref=f3e121]:
+                - img "Rohan Verma" [ref=f3e122]
+                - generic [ref=f3e123]: Verified
+                - generic [ref=f3e126]: New
+              - generic [ref=f3e127]:
+                - heading "Rohan Verma" [level=3] [ref=f3e129]
+                - paragraph [ref=f3e130]: 456, Sector 14A, Gurgaon - 122003, Gurugram
+                - generic [ref=f3e133]:
+                  - generic [ref=f3e134]: CBSE
+                  - generic [ref=f3e135]: Class - XI
+                  - generic [ref=f3e136]: Academic (Class XI–XII)
+              - generic [ref=f3e137]:
+                - link "Profile" [ref=f3e138] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/tutor/gurugram/MTE2Mi1ueHQ/rohan-verma
+                - link "WhatsApp" [ref=f3e139] [cursor=pointer]:
+                  - /url: https://wa.me/917836034313?text=Hi%2C+I+want+to+connect+with+tutor+Rohan+Verma+%28UserID%3A+1162%29.+Page%3A+Best+Maths+Home+Tutor+in+Sector+14%2C+Gurugram+%E2%80%94+CBSE+Class+6+%7C+Sector+14%2C+Gurugram.
+            - article [ref=f3e142]:
+              - generic [ref=f3e143]:
+                - img "Kavita Verma" [ref=f3e144]
+                - generic [ref=f3e145]: Verified
+                - generic [ref=f3e148]: New
+              - generic [ref=f3e149]:
+                - heading "Kavita Verma" [level=3] [ref=f3e151]
+                - paragraph [ref=f3e152]: 275, Sector 14, Gurgaon-122003, Gurugram
+                - generic [ref=f3e155]:
+                  - generic [ref=f3e156]: CBSE
+                  - generic [ref=f3e157]: Class - XI
+                  - generic [ref=f3e158]: Academic (Class XI–XII)
+              - generic [ref=f3e159]:
+                - link "Profile" [ref=f3e160] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/tutor/gurugram/MTE3NS1ueHQ/kavita-verma
+                - link "WhatsApp" [ref=f3e161] [cursor=pointer]:
+                  - /url: https://wa.me/917836034313?text=Hi%2C+I+want+to+connect+with+tutor+Kavita+Verma+%28UserID%3A+1175%29.+Page%3A+Best+Maths+Home+Tutor+in+Sector+14%2C+Gurugram+%E2%80%94+CBSE+Class+6+%7C+Sector+14%2C+Gurugram.
+            - article [ref=f3e652]:
+              - generic [ref=f3e653]:
+                - img "Pankaj saxsena" [ref=f3e654]
+                - generic [ref=f3e655]: Verified
+                - generic [ref=f3e658]: New
+              - generic [ref=f3e659]:
+                - heading "Pankaj saxsena" [level=3] [ref=f3e661]
+                - paragraph [ref=f3e662]: Plot No. 5678, Sector 14, Gurgaon - 122003, Gurugram
+                - generic [ref=f3e665]:
+                  - generic [ref=f3e666]: CBSE
+                  - generic [ref=f3e667]: Class - XI
+                  - generic [ref=f3e668]: Academic (Class XI–XII)
+              - generic [ref=f3e669]:
+                - link "Profile" [ref=f3e670] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/tutor/gurugram/MTE4Mi1ueHQ/pankaj-saxsena
+                - link "WhatsApp" [ref=f3e671] [cursor=pointer]:
+                  - /url: https://wa.me/917836034313?text=Hi%2C+I+want+to+connect+with+tutor+Pankaj+saxsena+%28UserID%3A+1182%29.+Page%3A+Best+Maths+Home+Tutor+in+Sector+14%2C+Gurugram+%E2%80%94+CBSE+Class+6+%7C+Sector+14%2C+Gurugram.
+            - article [ref=f3e674]:
+              - generic [ref=f3e675]:
+                - img "Nisha Chaudhary" [ref=f3e676]
+                - generic [ref=f3e677]: Verified
+                - generic [ref=f3e680]: New
+              - generic [ref=f3e681]:
+                - heading "Nisha Chaudhary" [level=3] [ref=f3e683]
+                - paragraph [ref=f3e684]: Plot No.219, Sector 14, Gurgaon- 122003, Gurugram
+                - generic [ref=f3e687]:
+                  - generic [ref=f3e688]: CBSE
+                  - generic [ref=f3e689]: Class - XI
+                  - generic [ref=f3e690]: Academic (Class XI–XII)
+              - generic [ref=f3e691]:
+                - link "Profile" [ref=f3e692] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/tutor/gurugram/MTE5My1ueHQ/nisha-chaudhary
+                - link "WhatsApp" [ref=f3e693] [cursor=pointer]:
+                  - /url: https://wa.me/917836034313?text=Hi%2C+I+want+to+connect+with+tutor+Nisha+Chaudhary+%28UserID%3A+1193%29.+Page%3A+Best+Maths+Home+Tutor+in+Sector+14%2C+Gurugram+%E2%80%94+CBSE+Class+6+%7C+Sector+14%2C+Gurugram.
+            - article [ref=f3e696]:
+              - generic [ref=f3e697]:
+                - img "Trisha Varma" [ref=f3e698]
+                - generic [ref=f3e699]: Verified
+                - generic [ref=f3e702]: New
+              - generic [ref=f3e703]:
+                - heading "Trisha Varma" [level=3] [ref=f3e705]
+                - paragraph [ref=f3e706]: A-9, Sector 14, Near Power House, Gurugram –, Gurugram
+                - generic [ref=f3e709]:
+                  - generic [ref=f3e710]: CBSE
+                  - generic [ref=f3e711]: Class - XI
+                  - generic [ref=f3e712]: Academic (Class XI–XII)
+              - generic [ref=f3e713]:
+                - link "Profile" [ref=f3e714] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/tutor/gurugram/MTE5Ny1ueHQ/trisha-varma
+                - link "WhatsApp" [ref=f3e715] [cursor=pointer]:
+                  - /url: https://wa.me/917836034313?text=Hi%2C+I+want+to+connect+with+tutor+Trisha+Varma+%28UserID%3A+1197%29.+Page%3A+Best+Maths+Home+Tutor+in+Sector+14%2C+Gurugram+%E2%80%94+CBSE+Class+6+%7C+Sector+14%2C+Gurugram.
+            - article [ref=f3e718]:
+              - generic [ref=f3e719]:
+                - img "Rana thakur" [ref=f3e720]
+                - generic [ref=f3e721]: Verified
+                - generic [ref=f3e724]: New
+              - generic [ref=f3e725]:
+                - heading "Rana thakur" [level=3] [ref=f3e727]
+                - paragraph [ref=f3e728]: 62, Sector 14 Extension, Gurugram – 122002, Gurugram
+                - generic [ref=f3e731]:
+                  - generic [ref=f3e732]: CBSE
+                  - generic [ref=f3e733]: Class - XI
+                  - generic [ref=f3e734]: Academic (Class XI–XII)
+              - generic [ref=f3e735]:
+                - link "Profile" [ref=f3e736] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/tutor/gurugram/MTIwNS1ueHQ/rana-thakur
+                - link "WhatsApp" [ref=f3e737] [cursor=pointer]:
+                  - /url: https://wa.me/917836034313?text=Hi%2C+I+want+to+connect+with+tutor+Rana+thakur+%28UserID%3A+1205%29.+Page%3A+Best+Maths+Home+Tutor+in+Sector+14%2C+Gurugram+%E2%80%94+CBSE+Class+6+%7C+Sector+14%2C+Gurugram.
+        - generic [ref=f3e165]:
+          - generic [ref=f3e166]:
+            - generic [ref=f3e167]:
+              - heading "What we focus on in Class 6 Mathematics" [level=2] [ref=f3e168]
+              - paragraph [ref=f3e169]: "Lessons designed for a middle-school learner: concept clarity, hands-on practice and school exam readiness without pressure."
+            - generic [ref=f3e170]:
+              - generic [ref=f3e171]: "Number sense: whole numbers, factors, multiples — faster mental strategies."
+              - generic [ref=f3e172]: "Fractions & decimals: visual models and stepwise practice."
+              - generic [ref=f3e173]: "Basic geometry: shapes, perimeter, area with simple activities."
+              - generic [ref=f3e174]: "Mensuration foundations: measurement and units used in school problems."
+              - generic [ref=f3e175]: "Data handling basics: charts and simple interpretation."
+              - generic [ref=f3e176]: Problem-solving approach — read, plan, solve, check.
+              - generic [ref=f3e177]: "Homework support: school textbook questions turned into short tutorials."
+              - generic [ref=f3e178]: "Confidence goals: clear explanations, short drills, and one-minute checks."
+          - generic [ref=f3e179]:
+            - generic [ref=f3e180]:
+              - heading "CBSE Class 6 Maths — focused topics we cover" [level=2] [ref=f3e181]
+              - paragraph [ref=f3e182]: Syllabus shaped around NCERT + common school assessments; each topic has a mini-test and practice sheet.
+            - generic [ref=f3e183]:
+              - generic [ref=f3e184]: Knowing our numbers & whole-number operations
+              - generic [ref=f3e185]: "Playing with numbers: factors and multiples"
+              - generic [ref=f3e186]: Decimals and fractions — visual and procedural practice
+              - generic [ref=f3e187]: Basic algebraic thinking — simple expressions
+              - generic [ref=f3e188]: Ratio and basic comparisons
+              - generic [ref=f3e189]: "Geometry essentials: points, lines, angles and polygons"
+              - generic [ref=f3e190]: "Mensuration basics: perimeter and area of simple shapes"
+              - generic [ref=f3e191]: "Data handling: reading charts and drawing bar graphs"
+          - generic [ref=f3e192]:
+            - heading "Tools NXTutors uses for home tuition" [level=2] [ref=f3e194]
+            - generic [ref=f3e195]:
+              - generic [ref=f3e196]: Short, printable practice sheets for every lesson.
+              - generic [ref=f3e197]: Progress tracker that maps topics completed and revision cycles.
+              - generic [ref=f3e198]: Home-friendly manipulatives and visual aids where needed.
+              - generic [ref=f3e199]: "Clear lesson notes for parents: what was taught and next steps."
+          - generic [ref=f3e200]:
+            - heading "What's new for Sector 14 families" [level=2] [ref=f3e202]
+            - generic [ref=f3e203]:
+              - generic [ref=f3e204]: Fortnightly mini-assessments introduced to track progress every two weeks.
+              - generic [ref=f3e205]: Parent-friendly lesson summaries after every session.
+              - generic [ref=f3e206]: Short topic-review videos for tricky Class 6 concepts.
+        - generic [ref=f3e207]:
+          - generic [ref=f3e208]:
+            - heading "Home tuition vs online classes — what suits Class 6 here" [level=2] [ref=f3e209]
+            - paragraph [ref=f3e210]: Choose the right mode for Sector 14, Gurugram.
+          - generic [ref=f3e211]:
+            - generic [ref=f3e212]:
+              - heading "Home Tutoring" [level=3] [ref=f3e213]
+              - generic [ref=f3e214]:
+                - generic [ref=f3e215]: One-to-one attention reduces distraction for younger learners.
+                - generic [ref=f3e216]: Hands-on use of physical manipulatives to build number sense.
+                - generic [ref=f3e217]: Better support for textbook homework and written practice.
+            - generic [ref=f3e218]:
+              - heading "Online Tutoring" [level=3] [ref=f3e219]
+              - generic [ref=f3e220]:
+                - generic [ref=f3e221]: Flexible for families with tight schedules across Gurugram.
+                - generic [ref=f3e222]: Good for revision sessions or a mix of home + online.
+                - generic [ref=f3e223]: Recorded short lessons available if you miss a class.
+          - paragraph [ref=f3e224]:
+            - strong [ref=f3e225]: "Best for:"
+            - text: Home tuition is ideal for Class 6 students in Sector 14 who need steady concept-building and homework support; hybrid works if your child prefers digital tools.
+        - generic [ref=f3e226]:
+          - heading "Why parents in Sector 14 pick NXTutors for Class 6 Maths" [level=2] [ref=f3e228]
+          - generic [ref=f3e229]:
+            - generic [ref=f3e230]: "Home-first delivery: lessons in a familiar setting to boost focus."
+            - generic [ref=f3e232]: Tutor-match based on school textbook (CBSE) and your child’s learning style.
+            - generic [ref=f3e234]: "Clear short-term goals: concept mastery, homework support, and confidence."
+        - generic [ref=f3e236]:
+          - generic [ref=f3e237]:
+            - heading "Nearby Schools & Learning Hubs" [level=2] [ref=f3e238]
+            - paragraph [ref=f3e239]: Top local references around Sector 14, Gurugram
+          - generic [ref=f3e240]:
+            - generic [ref=f3e241]:
+              - heading "Top Schools Nearby" [level=3] [ref=f3e242]
+              - generic [ref=f3e243]:
+                - generic [ref=f3e740]:
+                  - generic [ref=f3e741]: Nearby School 7
+                  - generic [ref=f3e742]: Sector 14, Gurugram
+                  - generic [ref=f3e743]: School
+                - generic [ref=f3e744]:
+                  - generic [ref=f3e745]: Nearby School 8
+                  - generic [ref=f3e746]: Sector 14, Gurugram
+                  - generic [ref=f3e747]: School
+            - generic [ref=f3e252]:
+              - heading "Top Coaching Institutes Nearby" [level=3] [ref=f3e253]
+              - generic [ref=f3e254]:
+                - generic [ref=f3e748]:
+                  - generic [ref=f3e749]: Coaching Institute 7
+                  - generic [ref=f3e750]: Sector 14, Gurugram
+                  - generic [ref=f3e751]: Boards
+                - generic [ref=f3e752]:
+                  - generic [ref=f3e753]: Coaching Institute 8
+                  - generic [ref=f3e754]: Sector 14, Gurugram
+                  - generic [ref=f3e755]: Boards
+        - generic [ref=f3e263]:
+          - generic [ref=f3e264]:
+            - heading "How our tutoring complements premium CBSE schools nearby" [level=2] [ref=f3e265]
+            - paragraph [ref=f3e266]: Short fit reasons — how Class 6 maths tutoring supports students from these schools.
+          - generic [ref=f3e267]:
+            - generic [ref=f3e268]:
+              - generic [ref=f3e269]: Delhi Public School - Sushant Lok
+              - generic [ref=f3e270]: CBSE
+              - generic [ref=f3e271]: Good fit for curriculum pace, assessments and learning support (no partnership claims).
+            - generic [ref=f3e272]:
+              - generic [ref=f3e273]: Lotus Valley International School
+              - generic [ref=f3e274]: CBSE
+              - generic [ref=f3e275]: Good fit for curriculum pace, assessments and learning support (no partnership claims).
+            - generic [ref=f3e276]:
+              - generic [ref=f3e277]: Blue Bells Model School
+              - generic [ref=f3e278]: CBSE
+              - generic [ref=f3e279]: Good fit for curriculum pace, assessments and learning support (no partnership claims).
+            - generic [ref=f3e280]:
+              - generic [ref=f3e281]: Amity International School
+              - generic [ref=f3e282]: CBSE
+              - generic [ref=f3e283]: Good fit for curriculum pace, assessments and learning support (no partnership claims).
+            - generic [ref=f3e284]:
+              - generic [ref=f3e285]: St. Xavier’s High School
+              - generic [ref=f3e286]: CBSE
+              - generic [ref=f3e287]: Good fit for curriculum pace, assessments and learning support (no partnership claims).
+        - generic [ref=f3e289]:
+          - generic [ref=f3e290]:
+            - heading "How our home tuition works (quick)" [level=2] [ref=f3e292]
+            - generic [ref=f3e293]:
+              - generic [ref=f3e294]: Trial session at home — assess gaps and style.
+              - generic [ref=f3e295]: Personalised 8-week plan aligned to CBSE Class 6 syllabus.
+              - generic [ref=f3e296]: Weekly practice sheets + fortnightly progress check-ins.
+              - generic [ref=f3e297]: "Flexible scheduling: weekday evenings or weekend mornings."
+          - generic [ref=f3e298]:
+            - heading "FAQs" [level=2] [ref=f3e300]
+            - generic [ref=f3e301]:
+              - group [ref=f3e302]:
+                - generic "How soon will I see improvement in my child’s maths?" [ref=f3e303] [cursor=pointer]
+                - generic [ref=f3e304]: Most parents see steadier homework completion and fewer careless errors within 4–8 weeks when sessions are consistent and practice sheets are used.
+              - group [ref=f3e305]:
+                - generic "Can the tutor follow my child’s school textbook?" [ref=f3e306] [cursor=pointer]
+              - group [ref=f3e307]:
+                - generic "What safety checks do tutors complete?" [ref=f3e308] [cursor=pointer]
+        - generic [ref=f3e309]:
+          - generic [ref=f3e310]:
+            - heading "Parents Reviews in Sector 14, Gurugram" [level=2] [ref=f3e311]
+            - paragraph [ref=f3e312]: Recent experiences shared by parents & students (4★–5★)
+          - generic [ref=f3e313]:
+            - button "Previous" [ref=f3e314] [cursor=pointer]: ‹
+            - button "Next" [ref=f3e315] [cursor=pointer]: ›
+            - generic [ref=f3e316]:
+              - article [ref=f3e317]:
+                - generic [ref=f3e319]:
+                  - generic [ref=f3e320]: Anita (mother)
+                  - generic [ref=f3e321]:
+                    - generic [ref=f3e322]: ★ ★ ★ ★ ★
+                    - generic [ref=f3e323]: "5.0"
+                    - generic [ref=f3e324]: •
+                    - generic [ref=f3e325]: 2025-11-02
+                  - generic [ref=f3e326]: Sector 14, Gurugram
+                - paragraph [ref=f3e327]: Tutor visited our home in Sector 14 and made fractions easy for my son. Homework is faster now.
+              - article [ref=f3e328]:
+                - generic [ref=f3e330]:
+                  - generic [ref=f3e331]: Rohit (father)
+                  - generic [ref=f3e332]:
+                    - generic [ref=f3e333]: ★ ★ ★ ★ ★
+                    - generic [ref=f3e334]: "5.0"
+                    - generic [ref=f3e335]: •
+                    - generic [ref=f3e336]: 2025-07-15
+                  - generic [ref=f3e337]: Sector 14, Gurugram
+                - paragraph [ref=f3e338]: Weekly practice sheets helped clear basics and improved his school test scores.
+              - article [ref=f3e339]:
+                - generic [ref=f3e341]:
+                  - generic [ref=f3e342]: Sana (mother)
+                  - generic [ref=f3e343]:
+                    - generic [ref=f3e344]: ★ ★ ★ ★ ☆
+                    - generic [ref=f3e345]: "4.0"
+                    - generic [ref=f3e346]: •
+                    - generic [ref=f3e347]: 2025-03-28
+                  - generic [ref=f3e348]: Sector 14, Gurugram
+                - paragraph [ref=f3e349]: Good matching and punctual tutor. We appreciated the short progress notes after sessions.
+              - article [ref=f3e350]:
+                - generic [ref=f3e352]:
+                  - generic [ref=f3e353]: Vikram (parent)
+                  - generic [ref=f3e354]:
+                    - generic [ref=f3e355]: ★ ★ ★ ★ ★
+                    - generic [ref=f3e356]: "5.0"
+                    - generic [ref=f3e357]: •
+                    - generic [ref=f3e358]: 2024-12-10
+                  - generic [ref=f3e359]: Sector 14, Gurugram
+                - paragraph [ref=f3e360]: Clear, calm teaching style — my daughter gained confidence with geometry problems.
+              - article [ref=f3e361]:
+                - generic [ref=f3e363]:
+                  - generic [ref=f3e364]: Meera (mother)
+                  - generic [ref=f3e365]:
+                    - generic [ref=f3e366]: ★ ★ ★ ★ ★
+                    - generic [ref=f3e367]: "5.0"
+                    - generic [ref=f3e368]: •
+                    - generic [ref=f3e369]: 2025-09-04
+                  - generic [ref=f3e370]: Sector 14, Gurugram
+                - paragraph [ref=f3e371]: The fortnightly mini-tests showed real improvement. Tutor adapted quickly to school pace.
+              - article [ref=f3e372]:
+                - generic [ref=f3e374]:
+                  - generic [ref=f3e375]: Kabir (student, Class 6)
+                  - generic [ref=f3e376]:
+                    - generic [ref=f3e377]: ★ ★ ★ ★ ☆
+                    - generic [ref=f3e378]: "4.0"
+                    - generic [ref=f3e379]: •
+                    - generic [ref=f3e380]: 2025-01-20
+                  - generic [ref=f3e381]: Sector 14, Gurugram
+                - paragraph [ref=f3e382]: I liked the tricks for multiplication — now it’s faster and less scary.
+              - article [ref=f3e383]:
+                - generic [ref=f3e385]:
+                  - generic [ref=f3e386]: Pooja (mother)
+                  - generic [ref=f3e387]:
+                    - generic [ref=f3e388]: ★ ★ ★ ★ ★
+                    - generic [ref=f3e389]: "5.0"
+                    - generic [ref=f3e390]: •
+                    - generic [ref=f3e391]: 2024-11-30
+                  - generic [ref=f3e392]: Sector 14, Gurugram
+                - paragraph [ref=f3e393]: Good communication and safe home visits. Homework now takes less time.
+              - article [ref=f3e394]:
+                - generic [ref=f3e396]:
+                  - generic [ref=f3e397]: Anand (father)
+                  - generic [ref=f3e398]:
+                    - generic [ref=f3e399]: ★ ★ ★ ★ ★
+                    - generic [ref=f3e400]: "5.0"
+                    - generic [ref=f3e401]: •
+                    - generic [ref=f3e402]: 2025-05-18
+                  - generic [ref=f3e403]: Sector 14, Gurugram
+                - paragraph [ref=f3e404]: Tutor used simple examples and paper manipulatives — concepts clicked quickly.
+              - article [ref=f3e405]:
+                - generic [ref=f3e407]:
+                  - generic [ref=f3e408]: Riya (mother)
+                  - generic [ref=f3e409]:
+                    - generic [ref=f3e410]: ★ ★ ★ ★ ☆
+                    - generic [ref=f3e411]: "4.0"
+                    - generic [ref=f3e412]: •
+                    - generic [ref=f3e413]: 2025-08-02
+                  - generic [ref=f3e414]: Sector 14, Gurugram
+                - paragraph [ref=f3e415]: Practical approach and clear notes for parents. Our child’s speed improved.
+              - article [ref=f3e416]:
+                - generic [ref=f3e418]:
+                  - generic [ref=f3e419]: Neeraj (parent)
+                  - generic [ref=f3e420]:
+                    - generic [ref=f3e421]: ★ ★ ★ ★ ★
+                    - generic [ref=f3e422]: "5.0"
+                    - generic [ref=f3e423]: •
+                    - generic [ref=f3e424]: 2025-10-22
+                  - generic [ref=f3e425]: Sector 14, Gurugram
+                - paragraph [ref=f3e426]: Flexible scheduling worked well with our routine in Sector 14. Good progress reports.
+              - article [ref=f3e427]:
+                - generic [ref=f3e429]:
+                  - generic [ref=f3e430]: Suman (mother)
+                  - generic [ref=f3e431]:
+                    - generic [ref=f3e432]: ★ ★ ★ ★ ★
+                    - generic [ref=f3e433]: "5.0"
+                    - generic [ref=f3e434]: •
+                    - generic [ref=f3e435]: 2024-09-05
+                  - generic [ref=f3e436]: Sector 14, Gurugram
+                - paragraph [ref=f3e437]: Tutor helped with school homework and test practice — visible results in monthly tests.
+              - article [ref=f3e438]:
+                - generic [ref=f3e440]:
+                  - generic [ref=f3e441]: Ishita (parent)
+                  - generic [ref=f3e442]:
+                    - generic [ref=f3e443]: ★ ★ ★ ★ ☆
+                    - generic [ref=f3e444]: "4.0"
+                    - generic [ref=f3e445]: •
+                    - generic [ref=f3e446]: 2025-06-09
+                  - generic [ref=f3e447]: Sector 14, Gurugram
+                - paragraph [ref=f3e448]: Balanced pace and useful short revision videos for tricky topics.
+        - generic [ref=f3e449]:
+          - generic [ref=f3e450]:
+            - generic [ref=f3e451]:
+              - heading "Related Tutor Pages" [level=2] [ref=f3e452]
+              - paragraph [ref=f3e453]: Explore more areas & subjects near Gurugram
+            - generic [ref=f3e454]:
+              - button "Scroll left" [ref=f3e455] [cursor=pointer]: ‹
+              - button "Scroll right" [ref=f3e456] [cursor=pointer]: ›
+          - generic [ref=f3e457]:
+            - link "Social Science Home Tutor for IB Class 6 — Sector 14, Gurugram View Gurugram • Sector 14" [ref=f3e458] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/p/gurugramsector-14social-science-home-tutor-ib-class-6
+              - generic [ref=f3e459]:
+                - generic [ref=f3e460]: Social Science Home Tutor for IB Class 6 — Sector 14, Gurugram
+                - generic [ref=f3e461]: View
+              - generic [ref=f3e462]: Gurugram • Sector 14
+            - link "Science Home Tutors — Sector 14, Gurugram (IB | Class 6) View Gurugram • Sector 14" [ref=f3e463] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/p/gurugramsector-14best-science-home-tutor-ib-class-6
+              - generic [ref=f3e464]:
+                - generic [ref=f3e465]: Science Home Tutors — Sector 14, Gurugram (IB | Class 6)
+                - generic [ref=f3e466]: View
+              - generic [ref=f3e467]: Gurugram • Sector 14
+            - link "Best Computer Science Home Tutor in Sector 14, Gurugram — IB Class 9 View Gurugram • Sector 14" [ref=f3e468] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/p/gurugramsector-14ibcomputer-science
+              - generic [ref=f3e469]:
+                - generic [ref=f3e470]: Best Computer Science Home Tutor in Sector 14, Gurugram — IB Class 9
+                - generic [ref=f3e471]: View
+              - generic [ref=f3e472]: Gurugram • Sector 14
+            - link "Best Business Studies home tutor in Sector 14 Gurugram for IB Class 11 View Gurugram • Sector 14" [ref=f3e473] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/p/gurugramsector-14business-studies-home-tutor-ib-class-11
+              - generic [ref=f3e474]:
+                - generic [ref=f3e475]: Best Business Studies home tutor in Sector 14 Gurugram for IB Class 11
+                - generic [ref=f3e476]: View
+              - generic [ref=f3e477]: Gurugram • Sector 14
+            - link "Best Accountancy Home Tutor in Sector 14, Gurugram — IB Class 11 View Gurugram • Sector 14" [ref=f3e478] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/p/sector-14-gurugram-accountancy-ib-class-11-home-tutor
+              - generic [ref=f3e479]:
+                - generic [ref=f3e480]: Best Accountancy Home Tutor in Sector 14, Gurugram — IB Class 11
+                - generic [ref=f3e481]: View
+              - generic [ref=f3e482]: Gurugram • Sector 14
+            - link "Best Economics Home Tutor in Sector 14 Gurugram — IB Class 11 View Gurugram • Sector 14" [ref=f3e483] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/p/gurugramsector-14ibeconomics
+              - generic [ref=f3e484]:
+                - generic [ref=f3e485]: Best Economics Home Tutor in Sector 14 Gurugram — IB Class 11
+                - generic [ref=f3e486]: View
+              - generic [ref=f3e487]: Gurugram • Sector 14
+            - link "IB English Home Tutors — Class 6 | Sector 14, Gurugram — NXTutors View Gurugram • Sector 14" [ref=f3e488] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/p/gurugramsector-14best-english-home-tutor-in-sector-14-gurugram-ib-class-6
+              - generic [ref=f3e489]:
+                - generic [ref=f3e490]: IB English Home Tutors — Class 6 | Sector 14, Gurugram — NXTutors
+                - generic [ref=f3e491]: View
+              - generic [ref=f3e492]: Gurugram • Sector 14
+            - link "Best Biology Home Tutor in Sector 14, Gurugram — IB Class 11 View Gurugram • Sector 14" [ref=f3e493] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/p/gurugramsector-14biology-home-tutor-ib-class-11
+              - generic [ref=f3e494]:
+                - generic [ref=f3e495]: Best Biology Home Tutor in Sector 14, Gurugram — IB Class 11
+                - generic [ref=f3e496]: View
+              - generic [ref=f3e497]: Gurugram • Sector 14
+            - link "Home Maths Tutor in Cyber City, Gurugram — Class 1–5 (Jalvau Tower) View Gurugram • Cyber City" [ref=f3e498] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/p/gurugramcyber-citymaths-home-tutor-jalvau-tower
+              - generic [ref=f3e499]:
+                - generic [ref=f3e500]: Home Maths Tutor in Cyber City, Gurugram — Class 1–5 (Jalvau Tower)
+                - generic [ref=f3e501]: View
+              - generic [ref=f3e502]: Gurugram • Cyber City
+            - link "Social Science Home Tutor in Sector 102A, Gurugram — IB Class 6 View Gurugram • Sector 102A" [ref=f3e503] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/p/gurugramsector-102asocial-science-home-tutor-ib-class-6
+              - generic [ref=f3e504]:
+                - generic [ref=f3e505]: Social Science Home Tutor in Sector 102A, Gurugram — IB Class 6
+                - generic [ref=f3e506]: View
+              - generic [ref=f3e507]: Gurugram • Sector 102A
+            - link "Science Home Tutors — Sector 102A, Gurugram | IB Class 6 View Gurugram • Sector 102A" [ref=f3e508] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/p/gurugramsector-102aibscience
+              - generic [ref=f3e509]:
+                - generic [ref=f3e510]: Science Home Tutors — Sector 102A, Gurugram | IB Class 6
+                - generic [ref=f3e511]: View
+              - generic [ref=f3e512]: Gurugram • Sector 102A
+            - link "Computer Science Home Tutors — Sector 102A, Gurugram (IB Class 9) View Gurugram • Sector 102A" [ref=f3e513] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/p/gurugram-sector-102a-computer-science-home-tutor-ib-class-9
+              - generic [ref=f3e514]:
+                - generic [ref=f3e515]: Computer Science Home Tutors — Sector 102A, Gurugram (IB Class 9)
+                - generic [ref=f3e516]: View
+              - generic [ref=f3e517]: Gurugram • Sector 102A
+            - link "Best Business Studies Home Tutor in Sector 102A, Gurugram — IB Class 11 View Gurugram • Sector 102A" [ref=f3e518] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/p/best-business-studies-home-tutor-sector-102a-gurugram-ib-class-11
+              - generic [ref=f3e519]:
+                - generic [ref=f3e520]: Best Business Studies Home Tutor in Sector 102A, Gurugram — IB Class 11
+                - generic [ref=f3e521]: View
+              - generic [ref=f3e522]: Gurugram • Sector 102A
+            - link "Best Accountancy Home Tutor in Sector 102A, Gurugram — IB Class 11 View Gurugram • Sector 102A" [ref=f3e523] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/p/gurugramsector-102aib-accountancy-class-11-home-tutor
+              - generic [ref=f3e524]:
+                - generic [ref=f3e525]: Best Accountancy Home Tutor in Sector 102A, Gurugram — IB Class 11
+                - generic [ref=f3e526]: View
+              - generic [ref=f3e527]: Gurugram • Sector 102A
+            - link "Economics Home Tutors in Sector 102A, Gurugram — IB Class 11 (Home Tuition) View Gurugram • Sector 102A" [ref=f3e528] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/p/gurugramsector-102aibeconomics
+              - generic [ref=f3e529]:
+                - generic [ref=f3e530]: Economics Home Tutors in Sector 102A, Gurugram — IB Class 11 (Home Tuition)
+                - generic [ref=f3e531]: View
+              - generic [ref=f3e532]: Gurugram • Sector 102A
+        - generic [ref=f3e533]:
+          - generic [ref=f3e534]:
+            - heading "Blog & Advice" [level=2] [ref=f3e535]
+            - paragraph [ref=f3e536]:
+              - text: Useful guides for parents and students in
+              - strong [ref=f3e537]: Sector 14, Gurugram
+              - text: . Read tips on choosing the right tutor, exam planning and subject-wise improvement.
+          - generic [ref=f3e538]:
+            - 'link "Fees & Packages in South City II: Best Home Tutors Near You Sector 14 · Gurugram Fees & Packages in South City II: Best Home Tutors Near You Explore home tuition fees in South City II, Gurugram. Compare hourly and monthly tuition c..." [ref=f3e539] [cursor=pointer]':
+              - /url: http://127.0.0.1:8000/blog/fees--packages-in-south-city-ii-best-home-tutors-near-you
+              - 'img "Fees & Packages in South City II: Best Home Tutors Near You" [ref=f3e541]'
+              - generic [ref=f3e542]:
+                - generic [ref=f3e543]: Sector 14 · Gurugram
+                - generic [ref=f3e544]: "Fees & Packages in South City II: Best Home Tutors Near You"
+                - generic [ref=f3e545]: Explore home tuition fees in South City II, Gurugram. Compare hourly and monthly tuition c...
+            - 'link "Board Exam Strategy in South City II: Best Home Tutors Near You Sector 14 · Gurugram Board Exam Strategy in South City II: Best Home Tutors Near You Discover expert board exam tips and strategies in South City II, Gurugram. Get personalize..." [ref=f3e546] [cursor=pointer]':
+              - /url: http://127.0.0.1:8000/blog/board-exam-strategy-in-south-city-ii-best-home-tutors-near-you
+              - 'img "Board Exam Strategy in South City II: Best Home Tutors Near You" [ref=f3e548]'
+              - generic [ref=f3e549]:
+                - generic [ref=f3e550]: Sector 14 · Gurugram
+                - generic [ref=f3e551]: "Board Exam Strategy in South City II: Best Home Tutors Near You"
+                - generic [ref=f3e552]: Discover expert board exam tips and strategies in South City II, Gurugram. Get personalize...
+            - 'link "IB/IGCSE Specialists in South City II: Best Home Tutors Near You Sector 14 · Gurugram IB/IGCSE Specialists in South City II: Best Home Tutors Near You Find expert IB and IGCSE home tutors in South City II, Gurugram. Get personalized coaching..." [ref=f3e553] [cursor=pointer]':
+              - /url: http://127.0.0.1:8000/blog/ibigcse-specialists-in-south-city-ii-best-home-tutors-near-you
+              - 'img "IB/IGCSE Specialists in South City II: Best Home Tutors Near You" [ref=f3e555]'
+              - generic [ref=f3e556]:
+                - generic [ref=f3e557]: Sector 14 · Gurugram
+                - generic [ref=f3e558]: "IB/IGCSE Specialists in South City II: Best Home Tutors Near You"
+                - generic [ref=f3e559]: Find expert IB and IGCSE home tutors in South City II, Gurugram. Get personalized coaching...
+            - 'link "NEET Coaching at Home in South City II: Best Home Tutors Near You Sector 14 · Gurugram NEET Coaching at Home in South City II: Best Home Tutors Near You Find expert NEET home tutors in South City II, Gurugram. Get personalized coaching for bio..." [ref=f3e560] [cursor=pointer]':
+              - /url: http://127.0.0.1:8000/blog/neet-coaching-at-home-in-south-city-ii-best-home-tutors-near-you
+              - 'img "NEET Coaching at Home in South City II: Best Home Tutors Near You" [ref=f3e562]'
+              - generic [ref=f3e563]:
+                - generic [ref=f3e564]: Sector 14 · Gurugram
+                - generic [ref=f3e565]: "NEET Coaching at Home in South City II: Best Home Tutors Near You"
+                - generic [ref=f3e566]: Find expert NEET home tutors in South City II, Gurugram. Get personalized coaching for bio...
+            - 'link "JEE Coaching at Home in South City II: Best Home Tutors Near You Sector 14 · Gurugram JEE Coaching at Home in South City II: Best Home Tutors Near You Find expert JEE home tutors in South City II, Gurugram. Get personalized coaching for JEE..." [ref=f3e567] [cursor=pointer]':
+              - /url: http://127.0.0.1:8000/blog/jee-coaching-at-home-in-south-city-ii-best-home-tutors-near-you
+              - 'img "JEE Coaching at Home in South City II: Best Home Tutors Near You" [ref=f3e569]'
+              - generic [ref=f3e570]:
+                - generic [ref=f3e571]: Sector 14 · Gurugram
+                - generic [ref=f3e572]: "JEE Coaching at Home in South City II: Best Home Tutors Near You"
+                - generic [ref=f3e573]: Find expert JEE home tutors in South City II, Gurugram. Get personalized coaching for JEE...
+            - 'link "English Home Tutor in South City II: Best Home Tutors Near You Sector 14 · Gurugram English Home Tutor in South City II: Best Home Tutors Near You Find expert English home tutors in South City II, Gurugram. Get personalized tutoring for..." [ref=f3e574] [cursor=pointer]':
+              - /url: http://127.0.0.1:8000/blog/english-home-tutor-in-south-city-ii-best-home-tutors-near-you
+              - 'img "English Home Tutor in South City II: Best Home Tutors Near You" [ref=f3e576]'
+              - generic [ref=f3e577]:
+                - generic [ref=f3e578]: Sector 14 · Gurugram
+                - generic [ref=f3e579]: "English Home Tutor in South City II: Best Home Tutors Near You"
+                - generic [ref=f3e580]: Find expert English home tutors in South City II, Gurugram. Get personalized tutoring for...
+          - button "Load More Blogs" [ref=f3e582] [cursor=pointer]
+        - iframe [ref=f3e584]
+        - generic [ref=f3e586]:
+          - generic [ref=f3e587]:
+            - heading "Book a home Maths tutor in Sector 14, Gurugram for CBSE Class 6" [level=2] [ref=f3e588]
+            - paragraph [ref=f3e589]: Trial session, at-home assessment and a tailored 8-week plan; flexible evenings and weekends.
+          - generic [ref=f3e590]:
+            - link "Schedule Trial — Home Tutor" [ref=f3e591] [cursor=pointer]:
+              - /url: "#"
+            - link "Become a Tutor Partner" [ref=f3e592] [cursor=pointer]:
+              - /url: "#tutorModal"
+    - contentinfo [ref=f3e593]:
+      - generic [ref=f3e594]:
+        - generic [ref=f3e595]:
+          - heading "NXTutors" [level=3] [ref=f3e596]
+          - paragraph [ref=f3e597]: Premium home tutoring in Gurugram. Trusted by 4,500+ parents for CBSE, ICSE & IB.
+          - generic [ref=f3e598]:
+            - link "NXTutors on Facebook" [ref=f3e599] [cursor=pointer]:
+              - /url: "#"
+            - link "NXTutors on Instagram" [ref=f3e602] [cursor=pointer]:
+              - /url: "#"
+            - link "NXTutors on WhatsApp" [ref=f3e605] [cursor=pointer]:
+              - /url: https://wa.me/917836034313
+        - generic [ref=f3e608]:
+          - heading "Quick Links" [level=4] [ref=f3e609]
+          - list [ref=f3e610]:
+            - listitem [ref=f3e611]:
+              - link "Home" [ref=f3e612] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000
+            - listitem [ref=f3e613]:
+              - link "Find Tutors" [ref=f3e614] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/tutors
+            - listitem [ref=f3e615]:
+              - link "Become a Tutor" [ref=f3e616] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f3e617]:
+              - link "Demo Class" [ref=f3e618] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/demo-class
+            - listitem [ref=f3e619]:
+              - link "Subscription Plan" [ref=f3e620] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/pricing
+        - generic [ref=f3e621]:
+          - heading "Useful Links" [level=4] [ref=f3e622]
+          - list [ref=f3e623]:
+            - listitem [ref=f3e624]:
+              - link "Blog & Advice" [ref=f3e625] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/blog
+            - listitem [ref=f3e626]:
+              - link "Pricing Guide" [ref=f3e627] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/pricing-guide
+            - listitem [ref=f3e628]:
+              - link "FAQs" [ref=f3e629] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/faqs
+            - listitem [ref=f3e630]:
+              - link "Terms & Conditions" [ref=f3e631] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/terms-conditions
+            - listitem [ref=f3e632]:
+              - link "Privacy Policy" [ref=f3e633] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/privacy-policy
+        - generic [ref=f3e634]:
+          - heading "Contact Us" [level=4] [ref=f3e635]
+          - list [ref=f3e636]:
+            - listitem [ref=f3e637]:
+              - generic [ref=f3e640]: BLK-2/49, NXTUTORS EDTECH PVT LTD, M3M Cosmopolitan, off Golf Course Extension Road, Sector 66, Gurugram, Haryana 122101
+            - listitem [ref=f3e641]:
+              - link "+9178360 34313" [ref=f3e644] [cursor=pointer]:
+                - /url: tel:+917836034313
+            - listitem [ref=f3e645]:
+              - link "support@nxtutors.com" [ref=f3e648] [cursor=pointer]:
+                - /url: mailto:support@nxtutors.com
+          - link "Chat on WhatsApp" [ref=f3e649] [cursor=pointer]:
+            - /url: https://wa.me/917836034313
+      - generic [ref=f3e650]: © 2026 NXTutors — All rights reserved.
