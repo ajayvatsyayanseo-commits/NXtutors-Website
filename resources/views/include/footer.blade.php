@@ -48,21 +48,28 @@
   </div>
 </div>
     <footer class="footer-modern">
-  <div class="footer-bg"></div>
-
   <div class="footer-content">
     <!-- Col 1 -->
-    <div class="footer-col">
+    <div class="footer-col footer-col--brand">
       <h3 class="footer-logo">NXTutors</h3>
       <p class="footer-desc">
-        Premium home tutoring in Gurugram.  
+        Premium home tutoring in Gurugram.
         Trusted by 4,500+ parents for CBSE, ICSE &amp; IB.
       </p>
 
+      {{-- One icon set, one weight, one colour. Brand glyphs drawn inline so
+           they can't disagree with each other the way the old files did. --}}
       <div class="footer-social">
-        <a href="#"><img src="{{ asset('frount/assets') }}/images/facebook.svg" alt="Facebook" /></a>
-        <a href="#"><img src="{{ asset('frount/assets') }}/images/instagram.svg" alt="Instagram" /></a>
-        <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $setting->phone);}}"><img src="{{ asset('frount/assets') }}/images/whatsapp.svg" alt="WhatsApp" /></a>
+        <a href="#" aria-label="NXTutors on Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5h1.65V3.62A22 22 0 0 0 14.3 3.5c-2.4 0-4.05 1.47-4.05 4.16V9.9H7.5V13h2.75v8z"/></svg>
+        </a>
+        <a href="#" aria-label="NXTutors on Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 7.1A4.9 4.9 0 1 0 16.9 12A4.9 4.9 0 0 0 12 7.1m0 8.08A3.18 3.18 0 1 1 15.18 12A3.18 3.18 0 0 1 12 15.18M18.25 6.9a1.14 1.14 0 1 1-1.15-1.15a1.15 1.15 0 0 1 1.15 1.15M21.2 8.05a5.66 5.66 0 0 0-1.55-4a5.7 5.7 0 0 0-4-1.55C14.1 2.41 9.9 2.41 8.35 2.5a5.7 5.7 0 0 0-4 1.54a5.68 5.68 0 0 0-1.55 4c-.09 1.56-.09 5.75 0 7.31a5.66 5.66 0 0 0 1.55 4a5.72 5.72 0 0 0 4 1.55c1.56.09 5.75.09 7.31 0a5.66 5.66 0 0 0 4-1.55a5.68 5.68 0 0 0 1.55-4c.09-1.56.09-5.74 0-7.3m-2.06 8.98a3.22 3.22 0 0 1-1.82 1.82c-1.26.5-4.26.39-5.66.39s-4.4.1-5.66-.39a3.22 3.22 0 0 1-1.82-1.82c-.5-1.26-.39-4.26-.39-5.66s-.1-4.4.39-5.66A3.22 3.22 0 0 1 6.34 3.9c1.26-.5 4.26-.39 5.66-.39s4.4-.1 5.66.39a3.22 3.22 0 0 1 1.82 1.82c.5 1.26.39 4.26.39 5.66s.11 4.4-.39 5.65"/></svg>
+        </a>
+        <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $setting->phone);}}"
+           target="_blank" rel="noopener" aria-label="NXTutors on WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.28-.1-.48-.15-.68.15s-.76.96-.94 1.16c-.17.2-.34.22-.64.08s-1.26-.47-2.39-1.48c-.89-.79-1.48-1.76-1.66-2.06s-.02-.46.13-.6c.14-.14.3-.35.45-.52s.2-.3.3-.5s.05-.37-.03-.52c-.07-.15-.66-1.61-.91-2.2c-.25-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37s-1.03 1.02-1.03 2.48c0 1.46 1.06 2.87 1.21 3.07c.15.2 2.1 3.2 5.08 4.49c.71.3 1.26.49 1.69.62c.71.23 1.36.2 1.87.12c.57-.09 1.76-.72 2-1.42c.25-.69.25-1.29.18-1.41c-.08-.13-.28-.2-.58-.35M12.05 21.8h-.01a9.9 9.9 0 0 1-5.03-1.38l-.36-.22l-3.74.99l1-3.65l-.24-.38A9.86 9.86 0 0 1 2.16 12c0-5.45 4.44-9.89 9.89-9.89c2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.89-9.88 9.89m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.69 1.45h.01c6.55 0 11.89-5.34 11.89-11.89c0-3.18-1.23-6.17-3.48-8.42"/></svg>
+        </a>
       </div>
     </div>
 
@@ -72,7 +79,7 @@
       <ul>
         <li><a href="{{ url('/')}}">Home</a></li>
         <li><a href="{{ url('/')}}/tutors">Find Tutors</a></li>
-        <li><a href="#">Become a Tutor</a></li>
+        <li><a href="#" data-modal-target="tutorModal">Become a Tutor</a></li>
         <li><a href="{{ url('/')}}/demo-class">Demo Class</a></li>
         <li><a href="{{ url('/')}}/pricing">Subscription Plan</a></li>
       </ul>
@@ -94,12 +101,22 @@
     <div class="footer-col">
       <h4>Contact Us</h4>
       <ul class="footer-contact">
-        <li>📍{{ $setting->address }}</li>
-        <li>📞  {{ $setting->phone }}</li>
-        <li>✉️ {{ $setting->email }}</li>
+        <li>
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 1a5 5 0 0 0-5 5c0 3.6 4.4 8.6 4.6 8.8a.5.5 0 0 0 .8 0C8.6 14.6 13 9.6 13 6a5 5 0 0 0-5-5m0 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4"/></svg>
+          <span>{{ $setting->address }}</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M3.65 1.5A1.6 1.6 0 0 1 5.9 2l1 1.5a1.6 1.6 0 0 1-.2 2l-.6.6a.4.4 0 0 0-.06.5A9.7 9.7 0 0 0 9.4 9.96a.4.4 0 0 0 .5-.06l.6-.6a1.6 1.6 0 0 1 2-.2l1.5 1a1.6 1.6 0 0 1 .5 2.25l-.9 1.3a1.7 1.7 0 0 1-1.9.63C8.5 13.2 2.8 7.5 1.72 4.3a1.7 1.7 0 0 1 .63-1.9z"/></svg>
+          <a href="tel:{{ preg_replace('/[^0-9+]/', '', $setting->phone) }}">{{ $setting->phone }}</a>
+        </li>
+        <li>
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M2 3h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1m.4 1.4L8 8.3l5.6-3.9zM2 11.9l4.3-3.2L2 5.7zm12 0V5.7L9.7 8.7z"/></svg>
+          <a href="mailto:{{ $setting->email }}">{{ $setting->email }}</a>
+        </li>
       </ul>
 
-      <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $setting->phone);}}" class="btn-footer">
+      <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $setting->phone);}}"
+         target="_blank" rel="noopener" class="btn-footer">
         Chat on WhatsApp
       </a>
     </div>
@@ -112,7 +129,7 @@
 
 
 
-  <script src="{{ asset('frount/assets') }}/js/main.js"></script>
+  <script src="{{ asset('frount/assets') }}/js/main.js?v={{ $nxtAssetV ?? 1 }}"></script>
 
   <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -249,31 +266,60 @@ Message: ${formData.message || '-'}`;
 </script>
   <script>
   document.addEventListener('DOMContentLoaded', function () {
+    var lastTrigger = null;
+
+    function openModal(modal, trigger) {
+      if (!modal) return;
+      lastTrigger = trigger || null;
+      modal.classList.add('is-active');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('nxt-modal-open');
+      var first = modal.querySelector('input, select, textarea, button:not([data-modal-close])');
+      if (first) first.focus({ preventScroll: true });
+    }
+
+    function closeModal(modal) {
+      if (!modal) return;
+      modal.classList.remove('is-active');
+      modal.setAttribute('aria-hidden', 'true');
+      if (!document.querySelector('.nx-modal.is-active')) {
+        document.body.classList.remove('nxt-modal-open');
+      }
+      if (lastTrigger) { lastTrigger.focus({ preventScroll: true }); lastTrigger = null; }
+    }
+
     // open modal
     document.querySelectorAll('[data-modal-target]').forEach(function (btn) {
       btn.addEventListener('click', function (e) {
         e.preventDefault();
-        var id = this.getAttribute('data-modal-target');
-        var modal = document.getElementById(id);
-        if (modal) modal.classList.add('is-active');
+        openModal(document.getElementById(this.getAttribute('data-modal-target')), this);
       });
     });
 
     // close modal (click on backdrop or close button)
     document.querySelectorAll('[data-modal-close]').forEach(function (el) {
       el.addEventListener('click', function () {
-        var modal = this.closest('.nx-modal');
-        if (modal) modal.classList.remove('is-active');
+        closeModal(this.closest('.nx-modal'));
       });
     });
 
-    // ESC closes any open modal
+    // ESC closes any open modal; Tab stays inside it
     document.addEventListener('keydown', function (e) {
+      var open = document.querySelector('.nx-modal.is-active');
+      if (!open) return;
+
       if (e.key === 'Escape') {
-        document.querySelectorAll('.nx-modal.is-active').forEach(function (m) {
-          m.classList.remove('is-active');
-        });
+        document.querySelectorAll('.nx-modal.is-active').forEach(closeModal);
+        return;
       }
+
+      if (e.key !== 'Tab') return;
+      var f = open.querySelectorAll('a[href], button, input, select, textarea, [tabindex]:not([tabindex="-1"])');
+      f = Array.prototype.filter.call(f, function (el) { return !el.disabled && el.offsetParent !== null; });
+      if (!f.length) return;
+      var first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
     });
   });
 </script>
@@ -528,9 +574,12 @@ document.addEventListener("DOMContentLoaded", function () {
     locationModal.style.display = "none";
   }
 
-  function detectAndSaveCurrentLocation(reloadPage) {
+  // silent = background attempt (page load). Only a person pressing the
+  // "Use Current Location" button earns feedback — a denied permission on
+  // load must never interrupt the visit with a dialog.
+  function detectAndSaveCurrentLocation(reloadPage, silent) {
     if (!navigator.geolocation) {
-      alert("Geolocation not supported.");
+      if (!silent) alert("Geolocation is not supported by this browser.");
       return;
     }
 
@@ -547,11 +596,13 @@ document.addEventListener("DOMContentLoaded", function () {
           if (reloadPage) location.reload();
         } catch (e) {
           console.error(e);
-          alert("Could not detect location.");
+          if (!silent) alert("Could not detect location. Please type your area or pick it on the map.");
         }
       },
       function () {
-        alert("Location permission denied.");
+        if (!silent) alert("Location access is blocked for this site. Type your area or pick it on the map instead.");
+        // Header shows "Set location" so the visitor still has a way in.
+        updateLocationButton("", "", "");
       },
       {
         timeout: 7000,
@@ -615,7 +666,7 @@ document.addEventListener("DOMContentLoaded", function () {
   updateLocationButton(initial.area, initial.city, initial.pin);
 
   if (!initial.area && !initial.city && !initial.pin) {
-    detectAndSaveCurrentLocation(false);
+    detectAndSaveCurrentLocation(false, true);   // background: never alerts
   }
 
   locationBtn?.addEventListener("click", openLocationModal);

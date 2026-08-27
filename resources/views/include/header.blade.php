@@ -21,380 +21,61 @@
  
     <meta name="description" content="{{ $metadesc }}">
 
+  {{--
+    Canonical for every page on the site, emitted here because this include is
+    the one thing every template has in common. The homepage, /city/*,
+    /category/* and /course/* had no canonical at all, which leaves Google to
+    guess which of the URL variants that reach a page is the real one.
+
+    Templates that know better set $canonical (blog, tutor) or $canonicalUrl
+    (generated /p/ pages) before including this file and it is used as-is;
+    everything else self-references. Those templates must NOT emit their own
+    <link rel="canonical"> as well — two canonical tags on one page make Google
+    ignore both.
+  --}}
+  <link rel="canonical" href="{{ $canonical ?? $canonicalUrl ?? url()->current() }}">
+
   <meta name="google-site-verification" content="6YPIp5C3YKMj872HZZnphViStBtyWOrah5hikhJIz2M"/>
 <meta name="csrf-token" content="{{ csrf_token() }}">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/styles.css" />
+  <meta name="theme-color" content="#080E1B">
 
-  <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/newstyle.css" />
-  <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/newhome.css" />
-<link rel="icon" href="{{ asset('storage/logos/' . $setting->logo) }}">
+  {{-- Design system type: Bricolage Grotesque (display) + Manrope (body).
+       Replaces the render-blocking @import that previously sat inside a
+       <style> block in this file. --}}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Manrope:wght@400..800&display=swap">
+
+  {{-- Cache buster: front-end CSS/JS are hand-edited (no build step), so a
+       stale copy would otherwise mix old chrome with new pages. Keyed on the
+       design system's mtime, which changes on every deploy that touches it. --}}
+  @php
+    $nxtAssetV = @filemtime(base_path('public/frount/assets/css/nxt-ds.css')) ?: '1';
+  @endphp
+
+  <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/styles.css?v={{ $nxtAssetV }}" />
+
+  <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/newstyle.css?v={{ $nxtAssetV }}" />
+  <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/newhome.css?v={{ $nxtAssetV }}" />
+
+  {{-- Design system — must stay last so its `body.page` rules win over the
+       per-page <style> blocks that ship inside individual views. --}}
+  <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/nxt-ds.css?v={{ $nxtAssetV }}" />
+<link rel="icon" href="{{ asset('uploads/logo/newlogo.png') }}">
 </head>
 <body class="page">
-  <div class="shell">
+  <a class="nxt-skip" href="#nxt-content">Skip to main content</a>
   <header class="topbar">
   <div class="topbar-left">
-    <a href="{{ url('/') }}" style="text-decoration: none; color: #fff;">
-    <!-- <div class="badge">NXT</div>
-    <span class="logo-text">Nxtutors</span> -->
-    <img src="{{ asset('storage/logos/' . $setting->logo) }}" style="width: 60px;
-    border-radius: 50%" alt="logo" />
+    <a href="{{ url('/') }}" aria-label="NXTutors — home">
+    <img src="{{ asset('uploads/logo/newlogo.png') }}"
+         width="42" height="42" alt="" />
+    <span class="logo-text">NXTutors</span>
+    <span class="logo-mark" aria-hidden="true"></span>
   </a>
   </div>
-<style>
-  /* ================= HEADER — NEW DESIGN ================= */
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
-
-  .topbar {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    padding: 10px 18px;
-    font-family: 'Inter', sans-serif;
-    position: relative;
-    flex-wrap: nowrap;
-  }
-
-  /* Logo area */
-  .topbar-left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2px;
-    flex-shrink: 0;
-    margin-right: 10px;
-  }
-  .topbar-left a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-  }
-  .topbar-logo-label {
-    font-size: 11px;
-    color: rgba(255,255,255,0.75);
-    letter-spacing: 0.5px;
-    margin-top: 3px;
-    display: flex;
-    align-items: center;
-    gap: 3px;
-  }
-  .topbar-logo-label::after {
-    content: '▲';
-    font-size: 8px;
-    color: rgba(255,255,255,0.5);
-  }
-
-  /* Right side nav */
-  .topbar-right {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    flex-wrap: nowrap;
-    flex: 1;
-  }
-
-  /* Divider after Home */
-  .nav-divider {
-    width: 1px;
-    height: 22px;
-    background: rgba(255,255,255,0.18);
-    flex-shrink: 0;
-    margin: 0 2px;
-  }
-
-  /* Base pill button */
-  .location-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 7px 15px;
-    border-radius: 50px;
-    border: 1px solid rgba(255,255,255,0.12);
-    background: rgba(255,255,255,0.06);
-    color: #fff;
-    font-size: 13.5px;
-    font-weight: 500;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background .2s, border-color .2s;
-    white-space: nowrap;
-    font-family: 'Inter', sans-serif;
-  }
-  .location-btn:hover {
-    background: rgba(255,255,255,0.13);
-    border-color: rgba(255,255,255,0.25);
-    color: #fff;
-  }
-
-  /* Dot indicator for Home / active items */
-  .nav-dot {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: #e75480;
-    flex-shrink: 0;
-    display: inline-block;
-  }
-
-  /* City icon */
-  .nav-icon {
-    font-size: 13px;
-    opacity: 0.8;
-  }
-
-  /* Location dropdown button */
-  #locationBtn {
-    gap: 6px;
-  }
-  .caret {
-    font-size: 10px;
-    opacity: 0.7;
-    margin-left: 2px;
-  }
-
-  /* Theme picker */
-  .theme-picker { position: relative; }
-  .theme-toggle {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 7px 15px;
-    border-radius: 50px;
-    border: 1px solid rgba(255,255,255,0.12);
-    background: rgba(255,255,255,0.06);
-    color: #fff;
-    font-size: 13.5px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background .2s;
-    font-family: 'Inter', sans-serif;
-    white-space: nowrap;
-  }
-  .theme-toggle:hover { background: rgba(255,255,255,0.13); }
-  .theme-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #e75480;
-    display: inline-block;
-    flex-shrink: 0;
-  }
-  .theme-label { font-weight: 500; }
-
-  .theme-menu {
-    display: none;
-    position: absolute;
-    top: calc(100% + 8px);
-    left: 0;
-    background: #2a1030;
-    border: 1px solid rgba(255,255,255,0.12);
-    border-radius: 14px;
-    padding: 8px;
-    min-width: 160px;
-    z-index: 9999;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.45);
-  }
-  .theme-menu.open { display: block; }
-  .theme-option {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    width: 100%;
-    padding: 8px 10px;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 13px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-family: 'Inter', sans-serif;
-    transition: background .2s;
-  }
-  .theme-option:hover { background: rgba(255,255,255,0.1); }
-  .theme-option-dot {
-    width: 10px; height: 10px;
-    border-radius: 50%;
-    flex-shrink: 0;
-  }
-  .theme-option-dot--default { background: #888; }
-  .theme-option-dot--blue    { background: #4a9fff; }
-  .theme-option-dot--green   { background: #4caf50; }
-  .theme-option-dot--yellow  { background: #ffcc00; }
-  .theme-option-dot--pink    { background: #e75480; }
-  .theme-option-dot--orange  { background: #ff7043; }
-  .theme-option-check { margin-left: auto; font-size: 12px; opacity: 0; }
-  .theme-option.selected .theme-option-check { opacity: 1; }
-
-  /* CTA buttons row */
-  .cta-buttons {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    flex-wrap: nowrap;
-  }
-
-  /* WhatsApp CTA — pink solid */
-  .btn-accent.topbar-whatsapp {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    padding: 8px 16px;
-    border-radius: 50px;
-    background: linear-gradient(135deg, #e75480 0%, #c0407a 100%);
-    color: #fff;
-    font-size: 13.5px;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    white-space: nowrap;
-    transition: filter .2s, transform .15s;
-    box-shadow: 0 2px 12px rgba(231,84,128,0.35);
-    font-family: 'Inter', sans-serif;
-  }
-  .btn-accent.topbar-whatsapp:hover {
-    filter: brightness(1.1);
-    transform: translateY(-1px);
-  }
-  .dot-online {
-    width: 8px; height: 8px;
-    border-radius: 50%;
-    background: #fff;
-    flex-shrink: 0;
-    box-shadow: 0 0 6px rgba(255,255,255,0.6);
-    animation: pulse-dot 1.8s ease-in-out infinite;
-  }
-  @keyframes pulse-dot {
-    0%,100% { opacity:1; transform:scale(1); }
-    50%      { opacity:.6; transform:scale(1.3); }
-  }
-
-  /* Ghost button — outlined pill */
-  .btn-ghost.topbar-partner {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 7px 15px;
-    border-radius: 50px;
-    border: 1px solid rgba(255,255,255,0.22);
-    background: rgba(255,255,255,0.06);
-    color: #fff;
-    font-size: 13.5px;
-    font-weight: 500;
-    cursor: pointer;
-    text-decoration: none;
-    white-space: nowrap;
-    transition: background .2s, border-color .2s;
-    font-family: 'Inter', sans-serif;
-  }
-  .btn-ghost.topbar-partner:hover {
-    background: rgba(255,255,255,0.13);
-    border-color: rgba(255,255,255,0.35);
-  }
-
-  /* Login button */
-  .location-btn.login-btn {
-    gap: 6px;
-  }
-
-  /* ===== HAMBURGER BUTTON ===== */
-  .mobile-menu-btn {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    width: 40px;
-    height: 40px;
-    background: rgba(255,255,255,0.07);
-    border: 1px solid rgba(255,255,255,0.14);
-    border-radius: 10px;
-    cursor: pointer;
-    padding: 0;
-    transition: background .2s;
-    flex-shrink: 0;
-  }
-  .mobile-menu-btn:hover { background: rgba(255,255,255,0.14); }
-  .mobile-menu-btn span {
-    display: block;
-    width: 20px;
-    height: 2px;
-    background: #fff;
-    border-radius: 2px;
-    transition: transform .3s, opacity .3s;
-  }
-  .mobile-menu-btn.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-  .mobile-menu-btn.open span:nth-child(2) { opacity: 0; }
-  .mobile-menu-btn.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
-  /* ===== RESPONSIVE ===== */
-  @media (max-width: 1100px) {
-    .topbar { gap: 4px; }
-    .location-btn, .theme-toggle { padding: 6px 11px; font-size: 12.5px; }
-    .btn-accent.topbar-whatsapp, .btn-ghost.topbar-partner { padding: 7px 12px; font-size: 12.5px; }
-  }
-
-  @media (max-width: 991px) {
-    .topbar {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      align-items: center;
-      gap: 0;
-      padding: 10px 16px;
-      flex-wrap: wrap;
-    }
-    .topbar-left { justify-self: start; }
-    .mobile-menu-btn { display: flex; justify-self: end; }
-
-    .topbar-right {
-      display: none;
-      grid-column: 1 / -1;
-      width: 100%;
-      margin-top: 14px;
-      flex-direction: column;
-      align-items: stretch;
-      gap: 8px;
-    }
-    .topbar-right.active { display: flex; animation: menuFade .3s ease; }
-
-    .nav-divider { display: none; }
-
-    .location-btn,
-    #locationBtn,
-    .theme-toggle,
-    .btn-accent.topbar-whatsapp,
-    .btn-ghost.topbar-partner {
-      width: 100%;
-      justify-content: center;
-      min-height: 46px;
-      border-radius: 12px;
-    }
-
-    .cta-buttons {
-      width: 100%;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .theme-menu {
-      position: static;
-      border-radius: 12px;
-      margin-top: 4px;
-      width: 100%;
-      box-shadow: none;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .topbar { padding: 8px 12px; }
-  }
-
-  @keyframes menuFade {
-    from { opacity: 0; transform: translateY(-8px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-</style>
   <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Toggle menu" aria-expanded="false">
     <span></span>
     <span></span>
@@ -402,62 +83,62 @@
   </button>
 
   <div class="topbar-right" id="topbarMenu">
-    <a class="location-btn" href="{{ url('/') }}">
-      <span class="nav-dot"></span> Home
-    </a>
-    <span class="nav-divider"></span>
-    <a class="location-btn" href="{{ url('/') }}/city">
-      <span class="nav-icon">📍</span> City
-    </a>
- 
-    <button class="location-btn" id="locationBtn" type="button">
+    <a class="location-btn" href="{{ url('/') }}">Home</a>
+    <a class="location-btn" href="{{ url('/') }}/tutors">Find tutors</a>
+
+    <span class="nav-divider" aria-hidden="true"></span>
+
+    <button class="location-btn nxt-location-btn" id="locationBtn" type="button"
+            aria-haspopup="dialog" aria-label="Change your location">
       <span id="userLocation">Detecting location...</span>
-      <span class="caret">▼</span>
+      <span class="caret" aria-hidden="true">▼</span>
     </button>
 
-    
+
     <div class="theme-picker">
-      <button id="themeToggle" class="theme-toggle">
-        <span class="theme-dot"></span>
+      <button id="themeToggle" class="theme-toggle" type="button"
+              aria-haspopup="true" aria-expanded="false" aria-controls="themeMenu">
+        <span class="theme-dot" aria-hidden="true"></span>
+        <span class="nxt-sr-only">Colour theme:</span>
         <span id="themeLabel" class="theme-label">Default</span>
-        <span class="caret">▾</span>
+        <span class="caret" aria-hidden="true">▾</span>
       </button>
 
-      <div id="themeMenu" class="theme-menu">
-        <button class="theme-option" data-theme-option="default">
+      <div id="themeMenu" class="theme-menu" role="menu" aria-label="Colour theme">
+        <button type="button" role="menuitemradio" aria-checked="false" class="theme-option" data-theme-option="default">
           <span class="theme-option-dot theme-option-dot--default"></span>
           <span>Default</span>
-          <span class="theme-option-check">✓</span>
+          <span class="theme-option-check" aria-hidden="true">✓</span>
         </button>
 
-        <button class="theme-option" data-theme-option="blue">
+        <button type="button" role="menuitemradio" aria-checked="false" class="theme-option" data-theme-option="blue">
           <span class="theme-option-dot theme-option-dot--blue"></span>
           <span>Blue</span>
-          <span class="theme-option-check">✓</span>
+          <span class="theme-option-check" aria-hidden="true">✓</span>
         </button>
 
-        <button class="theme-option" data-theme-option="green">
+        <button type="button" role="menuitemradio" aria-checked="false" class="theme-option" data-theme-option="green">
           <span class="theme-option-dot theme-option-dot--green"></span>
           <span>Green</span>
-          <span class="theme-option-check">✓</span>
+          <span class="theme-option-check" aria-hidden="true">✓</span>
         </button>
 
-        <button class="theme-option" data-theme-option="yellow">
+        <button type="button" role="menuitemradio" aria-checked="false" class="theme-option" data-theme-option="yellow">
           <span class="theme-option-dot theme-option-dot--yellow"></span>
           <span>Yellow</span>
-          <span class="theme-option-check">✓</span>
+          <span class="theme-option-check" aria-hidden="true">✓</span>
         </button>
 
-        <button class="theme-option" data-theme-option="pink">
+        <button type="button" role="menuitemradio" aria-checked="false" class="theme-option" data-theme-option="pink">
           <span class="theme-option-dot theme-option-dot--pink"></span>
           <span>Pink</span>
-          <span class="theme-option-check">✓</span>
+          <span class="theme-option-check" aria-hidden="true">✓</span>
         </button>
 
-        <button class="theme-option" data-theme-option="orange">
+        <button type="button" role="menuitemradio" aria-checked="false" class="theme-option" data-theme-option="orange">
           <span class="theme-option-dot theme-option-dot--orange"></span>
           <span>Orange</span>
-          <span class="theme-option-check">✓</span>
+          <span class="theme-option-check" aria-hidden="true">✓</span>
         </button>
       </div>
     </div>
@@ -477,50 +158,56 @@
     New Tutor Partner
   </a>
 
-   @if (!session()->has('userid'))
-    <a href="{{ url('/login') }}" class="location-btn login-btn">
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16" style="flex-shrink:0"><path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/><path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/></svg>
-      Login
-    </a>
-                @else
-                @php $role = session('join_as'); @endphp
-                @if ($role === 'student')
-                 <a href="{{ route('user.dashboard') }}" class="location-btn"  >
-              Dashboard
-        </a>
-        <a href="{{ route('logout') }}"class="location-btn">
-            <i class="fa-solid fa-right-from-bracket"></i> Logout
-        </a>
-        @elseif ($role === 'teacher')
-        <a href="{{ route('teacher.dashboard') }}" class="location-btn"  >
-              Dashboard
-        </a>
-        <a href="{{ route('logout') }}" class="location-btn"  >
-              Logout
-        </a>
- 
-    
-     @endif
+  {{-- Account: one icon, one menu. Signed out it offers the two ways in;
+       signed in it offers the two ways on. --}}
+  <div class="nxt-account">
+    <button type="button" class="nxt-account__btn" id="accountToggle"
+            aria-haspopup="true" aria-expanded="false" aria-controls="accountMenu"
+            aria-label="{{ session()->has('userid') ? 'Your account' : 'Log in or sign up' }}">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="1.7" stroke-linecap="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="9"/><circle cx="12" cy="10" r="3"/>
+        <path d="M6.2 18.4a6.2 6.2 0 0 1 11.6 0"/>
+      </svg>
+    </button>
 
+    <div class="nxt-account__menu" id="accountMenu" role="menu" aria-label="Account">
+      @if (!session()->has('userid'))
+        <a class="nxt-account__item" role="menuitem" href="{{ url('/login') }}">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/><path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/></svg>
+          Login
+        </a>
+      @else
+        @php $role = session('join_as'); @endphp
+        @if ($role === 'student')
+          <a class="nxt-account__item" role="menuitem" href="{{ route('user.dashboard') }}">Dashboard</a>
+        @elseif ($role === 'teacher')
+          <a class="nxt-account__item" role="menuitem" href="{{ route('teacher.dashboard') }}">Dashboard</a>
+        @endif
+        <a class="nxt-account__item" role="menuitem" href="{{ route('logout') }}">Log out</a>
       @endif
+    </div>
+  </div>
 </div>
 
   </div>
 </header>
+  <div class="shell">
  
 <!-- Book demo class modal -->
-<div id="demoModal" class="nx-modal">
+<div id="demoModal" class="nx-modal" role="dialog" aria-modal="true"
+     aria-labelledby="demoModalTitle" aria-hidden="true">
   <div class="nx-modal__backdrop" data-modal-close></div>
 
   <div class="nx-modal__card nx-modal__card--wide">
-    <button class="nx-modal__close" type="button" data-modal-close>&times;</button>
+    <button class="nx-modal__close" type="button" data-modal-close aria-label="Close">&times;</button>
 
     <div class="nx-modal__content nx-modal__content--split">
       <div class="nx-modal__left">
         <p class="nx-modal__eyebrow">{{ $locationText ?? 'Sector 30, Gurugram' }}</p>
-        <h2 class="nx-modal__title">Book a demo class</h2>
+        <h2 class="nx-modal__title" id="demoModalTitle">Book a demo class</h2>
         <p class="nx-modal__subtitle">
-          Try one session with a top home tutor.
+          One free session with a verified home tutor. No card, no commitment.
         </p>
       </div>
 
@@ -616,18 +303,18 @@
 </div>
 
 <!-- Become tutor partner modal -->
-<div id="tutorModal" class="nx-modal">
+<div id="tutorModal" class="nx-modal" role="dialog" aria-modal="true"
+     aria-labelledby="tutorModalTitle" aria-hidden="true">
   <div class="nx-modal__backdrop" data-modal-close></div>
 
   <div class="nx-modal__card">
-    <button class="nx-modal__close" type="button" data-modal-close>&times;</button>
+    <button class="nx-modal__close" type="button" data-modal-close aria-label="Close">&times;</button>
 
     <div class="nx-modal__content">
       <div class="nx-modal__logo">
-        <!-- Replace with your actual logo image -->
-        <span class="nx-logo-circle">N</span>
+        <span class="nx-logo-circle" aria-hidden="true">N</span>
       </div>
-      <h2 class="nx-modal__title nx-modal__title--center">
+      <h2 class="nx-modal__title nx-modal__title--center" id="tutorModalTitle">
         Become a tutor partner
       </h2>
 
@@ -787,14 +474,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (menuBtn && menu) {
         menuBtn.addEventListener("click", function () {
-            menu.classList.toggle("active");
-            this.classList.toggle("open");
+            const open = menu.classList.toggle("active");
+            this.classList.toggle("open", open);
+            this.setAttribute("aria-expanded", String(open));
+            this.setAttribute("aria-label", open ? "Close menu" : "Open menu");
         });
 
         window.addEventListener("resize", function () {
             if (window.innerWidth > 991) {
                 menu.classList.remove("active");
                 menuBtn.classList.remove("open");
+                menuBtn.setAttribute("aria-expanded", "false");
+                menuBtn.setAttribute("aria-label", "Open menu");
             }
         });
     }
@@ -806,10 +497,44 @@ document.addEventListener("DOMContentLoaded", function () {
     if (themeToggle && themeMenu) {
         themeToggle.addEventListener("click", function (e) {
             e.stopPropagation();
-            themeMenu.classList.toggle("open");
+            const open = themeMenu.classList.toggle("open");
+            themeToggle.setAttribute("aria-expanded", String(open));
         });
         document.addEventListener("click", function () {
             themeMenu.classList.remove("open");
+            themeToggle.setAttribute("aria-expanded", "false");
+        });
+        themeToggle.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") {
+                themeMenu.classList.remove("open");
+                themeMenu.style.display = "none";
+                themeToggle.setAttribute("aria-expanded", "false");
+            }
+        });
+    }
+
+    /* ---- Account menu ---- */
+    const acctToggle = document.getElementById("accountToggle");
+    const acctMenu   = document.getElementById("accountMenu");
+
+    if (acctToggle && acctMenu) {
+        const closeAcct = function () {
+            acctMenu.classList.remove("open");
+            acctToggle.setAttribute("aria-expanded", "false");
+        };
+        acctToggle.addEventListener("click", function (e) {
+            e.stopPropagation();
+            const open = acctMenu.classList.toggle("open");
+            acctToggle.setAttribute("aria-expanded", String(open));
+            if (open) { const f = acctMenu.querySelector("a"); if (f) f.focus(); }
+        });
+        acctMenu.addEventListener("click", function (e) { e.stopPropagation(); });
+        document.addEventListener("click", closeAcct);
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape" && acctMenu.classList.contains("open")) {
+                closeAcct();
+                acctToggle.focus();
+            }
         });
         themeMenu.addEventListener("click", function (e) {
             e.stopPropagation();

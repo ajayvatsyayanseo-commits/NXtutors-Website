@@ -1,0 +1,113 @@
+- generic [active] [ref=f48e1]:
+  - link "Skip to main content" [ref=f48e2] [cursor=pointer]:
+    - /url: "#nxt-content"
+  - banner [ref=f48e3]:
+    - link "NXTutors — home" [ref=f48e5] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000
+      - generic [ref=f48e6]: NXTutors
+    - button "Toggle menu" [ref=f48e8] [cursor=pointer]
+  - generic [ref=f48e12]:
+    - main [ref=f48e13]:
+      - generic [ref=f48e16]:
+        - generic [ref=f48e17]:
+          - generic [ref=f48e18]: Our Premium Courses
+          - heading "CBSE" [level=1] [ref=f48e19]
+          - paragraph [ref=f48e20]: Explore high quality courses and grow your skills with confidence.
+        - generic "Breadcrumb" [ref=f48e21]:
+          - link "Home" [ref=f48e22] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000
+          - generic [ref=f48e23]: /
+          - generic [ref=f48e24]: CBSE
+      - generic [ref=f48e27]:
+        - generic [ref=f48e28]:
+          - generic [ref=f48e29]:
+            - heading "Available Courses" [level=2] [ref=f48e30]
+            - paragraph [ref=f48e31]: Curated programs designed to help students learn better, perform stronger, and grow faster.
+          - generic [ref=f48e32]: 2 courses available
+        - generic [ref=f48e33]:
+          - article [ref=f48e34]:
+            - link [ref=f48e36] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/course/class-1-12-cbse-mathematics
+              - img "Class 1–12 CBSE Mathematics" [ref=f48e37]
+            - generic [ref=f48e38]:
+              - generic [ref=f48e39]: Academic (Class I–XII)
+              - heading [level=3] [ref=f48e41]:
+                - link "Class 1–12 CBSE Mathematics" [ref=f48e42] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/course/class-1-12-cbse-mathematics
+              - paragraph [ref=f48e43]: Comprehensive CBSE Maths course for Classes 1–12 with expert tutors, NCERT-based lessons, and practice tests for strong conceptual clarity.
+              - link "View Course" [ref=f48e45] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/course/class-1-12-cbse-mathematics
+          - article [ref=f48e46]:
+            - link [ref=f48e48] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/course/mathematics
+              - img "Mathematics" [ref=f48e49]
+            - generic [ref=f48e50]:
+              - generic [ref=f48e51]: Academic (Class I–XII)
+              - heading [level=3] [ref=f48e53]:
+                - link "Mathematics" [ref=f48e54] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/course/mathematics
+              - paragraph [ref=f48e55]: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              - link "View Course" [ref=f48e57] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/course/mathematics
+    - contentinfo [ref=f48e58]:
+      - generic [ref=f48e59]:
+        - generic [ref=f48e60]:
+          - heading "NXTutors" [level=3] [ref=f48e61]
+          - paragraph [ref=f48e62]: Premium home tutoring in Gurugram. Trusted by 4,500+ parents for CBSE, ICSE & IB.
+          - generic [ref=f48e63]:
+            - link "NXTutors on Facebook" [ref=f48e64] [cursor=pointer]:
+              - /url: "#"
+            - link "NXTutors on Instagram" [ref=f48e67] [cursor=pointer]:
+              - /url: "#"
+            - link "NXTutors on WhatsApp" [ref=f48e70] [cursor=pointer]:
+              - /url: https://wa.me/917836034313
+        - generic [ref=f48e73]:
+          - heading "Quick Links" [level=4] [ref=f48e74]
+          - list [ref=f48e75]:
+            - listitem [ref=f48e76]:
+              - link "Home" [ref=f48e77] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000
+            - listitem [ref=f48e78]:
+              - link "Find Tutors" [ref=f48e79] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/tutors
+            - listitem [ref=f48e80]:
+              - link "Become a Tutor" [ref=f48e81] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f48e82]:
+              - link "Demo Class" [ref=f48e83] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/demo-class
+            - listitem [ref=f48e84]:
+              - link "Subscription Plan" [ref=f48e85] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/pricing
+        - generic [ref=f48e86]:
+          - heading "Useful Links" [level=4] [ref=f48e87]
+          - list [ref=f48e88]:
+            - listitem [ref=f48e89]:
+              - link "Blog & Advice" [ref=f48e90] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/blog
+            - listitem [ref=f48e91]:
+              - link "Pricing Guide" [ref=f48e92] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/pricing-guide
+            - listitem [ref=f48e93]:
+              - link "FAQs" [ref=f48e94] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/faqs
+            - listitem [ref=f48e95]:
+              - link "Terms & Conditions" [ref=f48e96] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/terms-conditions
+            - listitem [ref=f48e97]:
+              - link "Privacy Policy" [ref=f48e98] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/privacy-policy
+        - generic [ref=f48e99]:
+          - heading "Contact Us" [level=4] [ref=f48e100]
+          - list [ref=f48e101]:
+            - listitem [ref=f48e102]:
+              - generic [ref=f48e105]: BLK-2/49, NXTUTORS EDTECH PVT LTD, M3M Cosmopolitan, off Golf Course Extension Road, Sector 66, Gurugram, Haryana 122101
+            - listitem [ref=f48e106]:
+              - link "+9178360 34313" [ref=f48e109] [cursor=pointer]:
+                - /url: tel:+917836034313
+            - listitem [ref=f48e110]:
+              - link "support@nxtutors.com" [ref=f48e113] [cursor=pointer]:
+                - /url: mailto:support@nxtutors.com
+          - link "Chat on WhatsApp" [ref=f48e114] [cursor=pointer]:
+            - /url: https://wa.me/917836034313
+      - generic [ref=f48e115]: © 2026 NXTutors — All rights reserved.

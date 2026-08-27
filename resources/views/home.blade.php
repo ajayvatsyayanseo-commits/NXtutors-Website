@@ -5,55 +5,698 @@
  
  @include('include.header')
    <main class="main">
- <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/home.css" />
-<section class="hero hero--slider">
-  <div class="hero-slider" id="heroSlider">
-    @php $i=1; @endphp
-    @foreach($banner as $rows)
-    
-    @php
-    $originalName = $rows->avatar;
-    $fileName = pathinfo($originalName, PATHINFO_FILENAME);
+ <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/home.css?v={{ $nxtAssetV ?? 1 }}" />
 
-    $webpPath = public_path('storage/banner/' . $fileName . '.webp');
+{{-- ============================================================
+     Structured data. Google reads this for rich results and AI
+     answer engines read it to decide what NXTutors is and what it
+     can be cited for. Every Q&A below is also visible on the page
+     (the FAQ section), which is what keeps the FAQPage markup
+     eligible rather than spammy.
+     ============================================================ --}}
+@php
+  $nxtHome = url('/');
+  $nxtFaqs = [
+    ['How does Nxtutors AI tutor matching work?', 'Our AI evaluates subject expertise, board alignment, class/exam needs, location feasibility, availability overlap, budget and reliability signals to recommend 2–3 high-fit tutors instead of long random lists.'],
+    ['Do you provide home tutors and online tutors across India?', 'Yes. Nxtutors supports home tutoring, online tutoring, institute mentoring and hybrid learning across India based on tutor availability and feasibility.'],
+    ['Which classes and boards are supported?', 'We support Classes 6–12 across CBSE, ICSE, IB, ISC and IGCSE boards, including foundation support and board exam preparation.'],
+    ['Do you support JEE and NEET preparation?', 'Yes. We match students with specialised JEE/NEET mentors for Physics, Chemistry, Maths and Biology based on goals, level and schedule.'],
+    ['Are tutors verified on Nxtutors?', 'Every educator undergoes structured verification and profile validation. We also track feedback and reliability signals to maintain quality and accountability.'],
+    ['How does the trial/demo class work?', 'A demo is a normal session to evaluate teaching style and student comfort. After the demo, you can continue with the same tutor or request a different match.'],
+    ['What are the typical fees for tutors?', 'Fees depend on class, subject and experience. In most cases, tutoring ranges from ₹800 to ₹2500 per hour. We shortlist tutors aligned to your budget range.'],
+    ['Can I change the tutor after hiring?', 'Yes. If the match is not working, we help you switch quickly by recommending alternate verified tutors with better fit.'],
+    ['How quickly can I get matched with a tutor?', 'Typically you receive 2–3 recommendations within a short time after sharing your requirement — class, subjects, board, location, schedule and budget.'],
+    ['What details should I share to get the best match?', 'Share class/grade, board, subjects, location (city or pincode), preferred days and time slots, mode (home or online) and budget. The more precise the input, the better the match.'],
+    ['Do tutors give homework, tests and progress updates?', 'Many tutors follow structured plans with homework, periodic tests and feedback. You can also request weekly progress updates while finalising the tutor.'],
+    ['Which cities do you currently support?', 'Nxtutors supports tutor matching across India. Availability depends on the tutor network in each area, and online tutoring is available nationwide.'],
+  ];
 
-    $bannerImage = file_exists($webpPath)
-        ? asset('storage/banner/' . $fileName . '.webp')
-        : asset('storage/banner/' . $originalName);
+  $nxtSchema = [
+    '@context' => 'https://schema.org',
+    '@graph' => [
+      [
+        '@type' => 'EducationalOrganization',
+        '@id' => $nxtHome . '#organization',
+        'name' => 'NXTutors',
+        'url' => $nxtHome,
+        'logo' => asset('uploads/logo/newlogo.png'),
+        'description' => 'NXTutors is an AI-powered tutor matching platform that connects parents and students with ID-verified home and online tutors for CBSE, ICSE, IB, ISC and IGCSE, Classes 6–12.',
+        'areaServed' => ['@type' => 'Country', 'name' => 'India'],
+        'address' => [
+          '@type' => 'PostalAddress',
+          'streetAddress' => $setting->address ?? '',
+          'addressCountry' => 'IN',
+        ],
+        'telephone' => $setting->phone ?? '',
+        'email' => $setting->email ?? '',
+      ],
+      [
+        '@type' => 'WebSite',
+        '@id' => $nxtHome . '#website',
+        'url' => $nxtHome,
+        'name' => 'NXTutors',
+        'publisher' => ['@id' => $nxtHome . '#organization'],
+        'inLanguage' => 'en-IN',
+        'potentialAction' => [
+          '@type' => 'SearchAction',
+          'target' => [
+            '@type' => 'EntryPoint',
+            'urlTemplate' => url('/tutors') . '?q={search_term_string}',
+          ],
+          'query-input' => 'required name=search_term_string',
+        ],
+      ],
+      [
+        '@type' => 'Service',
+        'name' => 'AI tutor matching',
+        'serviceType' => 'Home and online tutoring',
+        'provider' => ['@id' => $nxtHome . '#organization'],
+        'areaServed' => ['@type' => 'Country', 'name' => 'India'],
+        'audience' => ['@type' => 'EducationalAudience', 'educationalRole' => 'parent'],
+        'offers' => [
+          '@type' => 'Offer',
+          'priceCurrency' => 'INR',
+          'priceSpecification' => [
+            '@type' => 'PriceSpecification',
+            'minPrice' => 800,
+            'maxPrice' => 2500,
+            'priceCurrency' => 'INR',
+            'unitText' => 'per hour',
+          ],
+        ],
+      ],
+      [
+        '@type' => 'FAQPage',
+        '@id' => $nxtHome . '#faq',
+        'mainEntity' => array_map(fn ($f) => [
+          '@type' => 'Question',
+          'name' => $f[0],
+          'acceptedAnswer' => ['@type' => 'Answer', 'text' => $f[1]],
+        ], $nxtFaqs),
+      ],
+    ],
+  ];
 @endphp
-    <div class="hero-slide @if($i==1) is-active @endif">
-      <div class="hero-bg lazy-bg"
-     data-bg="{{ $bannerImage }}">
-</div>
+<script type="application/ld+json">{!! json_encode($nxtSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
 
-      <div class="hero-overlay">
-        <div class="hero-text"> 
-          <p class="hero-kicker">{{ $rows->sub_title }}   </p>
-          <h1 class="hero-title">{{ $rows->title }}</h1>
-          <p class="hero-subtitle">{{ $rows->banner_desc }}</p>
-        </div>
+{{-- ============================================================
+     HOME HERO
+     ------------------------------------------------------------
+     One cinematic frame: the photograph carries the emotion, the
+     scrim carries the type, and the white search card is the only
+     bright object on screen so the eye lands on it. Copy and the
+     amber accent are pinned to this specific photograph's warm
+     lamplight — see the note on --nxh-gold below.
 
-        <div class="hero-search">
-          <div class="search-box">
-            <span class="search-icon">🔍</span>
-            <input
-              type="text"
-              id="heroSearchInput"
-              class="search-input"
-              placeholder="Search 'Class 10 Maths' or 'home tutor Sector 30'"
-            />
-          </div>
+     Replaces a five-slide rotator that never rotated: main.js
+     bails unless `#heroDots` exists, and this view never rendered
+     it, so slides 2–5 sat at opacity:0 forever while still being
+     parsed. Admin copy still drives the badge, headline and the
+     facts line from the first active banner row.
+     ============================================================ --}}
+@php
+  $hero = $banner->first();
 
-          <button type="button" id="heroSearchBtn" class="btn btn-accent hero-cta">
-            Find Best Tutors
-          </button>
+  // Only real, already-published claims. The footer and the FAQ/JSON-LD on
+  // this same page are the source for all three.
+  $nxtHeroStats = [
+    ['4,500+',      'Families matched',  'families'],
+    ['Classes 6–12','CBSE · ICSE · IB',  'board'],
+    ['₹800–2,500',  'Typical, per hour', 'fee'],
+  ];
+@endphp
+
+<section class="nxh" aria-labelledby="nxhTitle">
+  <img
+    class="nxh__photo"
+    src="{{ asset('storage/Hero/heroimage-1280.webp') }}"
+    srcset="{{ asset('storage/Hero/heroimage-760.webp') }} 760w,
+            {{ asset('storage/Hero/heroimage-1280.webp') }} 1280w,
+            {{ asset('storage/Hero/heroimage-1717.webp') }} 1717w"
+    sizes="100vw"
+    width="1717" height="916"
+    fetchpriority="high" decoding="async"
+    alt="A tutor working through a notebook exercise with a school student at home"
+  />
+  <span class="nxh__scrim" aria-hidden="true"></span>
+
+  <div class="nxh__inner">
+    <p class="nxh__badge">
+      <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false">
+        <path d="M12 2.6l2.7 6.1 6.6.6-5 4.4 1.5 6.5L12 16.8l-5.8 3.4 1.5-6.5-5-4.4 6.6-.6z"/>
+      </svg>
+      {{ $hero?->sub_title ?: 'Premium tutoring. Proven results.' }}
+    </p>
+
+    {{-- Deliberately not $hero->title. The banner row currently holds
+         "Top home tutors in" — a fragment meant to be completed by a detected
+         city, which renders as a broken sentence at H1 size. The badge above
+         still carries the admin's locality copy. Wire the title back here once
+         that column holds a complete headline. --}}
+    <h1 class="nxh__title" id="nxhTitle">
+      Better learning,
+      <span class="nxh__title-line">brighter futures</span>
+    </h1>
+
+    <p class="nxh__sub">
+      Verified home and online tutors for Classes 6–12.
+      Tell us the subject and your locality — our AI returns two or three real
+      matches, not a directory to sift through.
+    </p>
+
+    {{-- Two fields, because two is what the matcher accepts: `search` is
+         OR-matched across subject/board/profile, `place` narrows with AND.
+         A third "Mode" control would look right and filter nothing. --}}
+    <div class="nxh__search">
+      <div class="nxh__field">
+        <label class="nxh__label" for="heroSearchInput">Search classes</label>
+        <div class="nxh__control">
+          <input
+            type="text"
+            id="heroSearchInput"
+            class="nxh__input"
+            placeholder="e.g. Class 10 Maths"
+          />
+          <span class="nxh__control-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.6" y2="16.6"/></svg>
+          </span>
         </div>
       </div>
+
+      <span class="nxh__sep" aria-hidden="true"></span>
+
+      <div class="nxh__field">
+        <label class="nxh__label" for="heroSearchArea">Location</label>
+        <div class="nxh__control">
+          <input
+            type="text"
+            id="heroSearchArea"
+            class="nxh__input"
+            placeholder="Sector or city"
+          />
+          <span class="nxh__control-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          </span>
+        </div>
+      </div>
+
+      {{-- The search handler resets this button with .text(), which would wipe
+           any child element, so the chevron is a ::after and the contents stay
+           plain text. Label must match the strings in the handler below. --}}
+      <button type="button" id="heroSearchBtn" class="nxh__go">Find Tutors</button>
     </div>
-    @php $i++; @endphp
-    @endforeach
+
+    {{-- The reassurance belongs directly under the commit button, not in the
+         stats row. Wording is the demo modal's own promise, kept identical so
+         the two never drift apart. --}}
+    <p class="nxh__reassure">
+      <svg viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false">
+        <path d="M6.4 12.1 2.7 8.4l1.3-1.3 2.4 2.4 5.6-5.6 1.3 1.3z"/>
+      </svg>
+      Free demo class · No card, no commitment
+    </p>
+
+    <ul class="nxh__stats">
+      @foreach($nxtHeroStats as [$figure, $label, $icon])
+        <li class="nxh__stat">
+          <span class="nxh__stat-icon" aria-hidden="true">
+            @if($icon === 'families')
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M16 19v-1.5a3.5 3.5 0 0 0-3.5-3.5h-5A3.5 3.5 0 0 0 4 17.5V19"/><circle cx="10" cy="8" r="3.2"/><path d="M17.5 11.2a3 3 0 1 0-2-5.3"/><path d="M20 19v-1.4a3.3 3.3 0 0 0-2.2-3.1"/></svg>
+            @elseif($icon === 'board')
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.2 12 4l9 4.2-9 4.2z"/><path d="M6.6 10.4V15c0 1.7 2.4 3 5.4 3s5.4-1.3 5.4-3v-4.6"/><path d="M21 8.6v5"/></svg>
+            @else
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 6h9"/><path d="M7 10.5h9"/><path d="M8.6 6c3 0 4.4 1.6 4.4 3.6S11.6 13.2 9 13.2H7l7 6.3"/></svg>
+            @endif
+          </span>
+          <span class="nxh__stat-text">
+            <strong class="nxh__stat-figure">{{ $figure }}</strong>
+            <span class="nxh__stat-label">{{ $label }}</span>
+          </span>
+        </li>
+      @endforeach
+    </ul>
   </div>
+
+  {{-- The reference sweeps into a white page; this page is dark, so the curve
+       is cut in the page's own ground. Same silhouette, right colour. --}}
+  <svg class="nxh__sweep" viewBox="0 0 1440 120" preserveAspectRatio="none"
+       aria-hidden="true" focusable="false">
+    <path d="M0 120h1440V50C1200 96 900 120 720 120S240 96 0 50z"/>
+  </svg>
 </section>
+
+<style>
+/* ---------------------------------------------------------------
+   Home hero. Prefixed `body.page` throughout so these rules carry
+   the same weight as the design system's own component rules and
+   win on document order, without reaching for !important.
+   --------------------------------------------------------------- */
+body.page .nxh{
+  /* Marigold, not var(--accent). The accent is theme-switchable and
+     defaults to acid lime (#a3e635 in styles.css), which fights the amber
+     lamplight in this photograph badly. This hero is art-directed around
+     one specific image, so the warm accent is pinned here — it is also the
+     design system's own documented "Slate & Marigold" hue. */
+  --nxh-gold:  #F5B93F;
+  --nxh-ground:#020617;
+
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  /* Bleeds past the shell's 16px side gutter so the frame reads edge-to-edge,
+     but keeps a positive top margin: at -16px the frame sat flush under the
+     topbar and the WhatsApp button appeared to rest on the photograph. */
+  margin: 12px calc(-1 * var(--nxt-shell-pad, 16px)) 26px;
+  padding: 74px 22px 96px;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  /* Now that it clears the topbar, all four corners round — a frame with a
+     gap above it but square top corners reads as a clipping mistake. */
+  border-radius: 22px;
+  background: #0C1226;
+}
+
+@media (min-width: 720px){
+  body.page .nxh{
+    margin-top: 16px;
+    padding: 96px 48px 112px;
+    min-height: 660px;
+    border-radius: 26px;
+  }
+}
+
+@media (min-width: 1100px){
+  body.page .nxh__inner{ max-width: 680px; }
+}
+
+body.page .nxh__photo{
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  /* The subject sits right of centre in the source frame, so hold that edge
+     while narrow viewports crop the built-in navy gradient off the left. */
+  object-fit: cover;
+  object-position: 74% center;
+}
+
+@media (min-width: 960px){
+  body.page .nxh__photo{ object-position: center; }
+}
+
+/* Mobile: a flat vertical wash, because there is no room to keep a clear
+   text column beside the subject. Desktop: a horizontal fade that leaves
+   the tutor and student fully visible on the right. */
+body.page .nxh__scrim{
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background:
+    linear-gradient(180deg,
+      rgba(6,10,26,.90) 0%,
+      rgba(6,10,26,.74) 45%,
+      rgba(6,10,26,.88) 100%);
+}
+
+@media (min-width: 960px){
+  body.page .nxh__scrim{
+    /* Holds near-opaque past the right edge of the search card (~72%) before
+       releasing, so no white type ever lands on lamplit wood. */
+    background:
+      linear-gradient(100deg,
+        rgba(8,13,30,.96)  0%,
+        rgba(8,13,30,.92) 42%,
+        rgba(8,13,30,.74) 60%,
+        rgba(8,13,30,.34) 76%,
+        rgba(8,13,30,.06) 90%,
+        rgba(8,13,30,0)  100%);
+  }
+}
+
+body.page .nxh__inner{
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+}
+
+/* ---- Badge ---- */
+body.page .nxh__badge{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 20px;
+  padding: 8px 16px 8px 13px;
+  border: 1px solid rgba(245,185,63,.34);
+  border-radius: 999px;
+  background: rgba(10,16,34,.62);
+  backdrop-filter: blur(6px);
+  font-family: var(--nxt-font-body, system-ui), sans-serif;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: .01em;
+  color: #FFF6E4;
+}
+
+body.page .nxh__badge svg{ flex: 0 0 auto; color: var(--nxh-gold); }
+
+/* ---- Headline ------------------------------------------------
+   One colour, on purpose. Splitting a headline white/amber is the
+   move every hero template makes, and it spends the accent twice —
+   here the amber belongs to the button alone, so the eye goes to
+   the thing you can press. Emphasis comes from scale and tracking
+   instead of hue: set large, packed tight, two lines, no tint.
+   -------------------------------------------------------------- */
+body.page .nxh__title{
+  margin: 0 0 18px;
+  font-family: var(--nxt-font-display, system-ui), sans-serif;
+  font-size: clamp(2.1rem, 1.1rem + 5.1vw, 4.6rem);
+  font-weight: 800;
+  line-height: 1.0;
+  letter-spacing: -.038em;
+  color: #fff;
+  text-wrap: balance;
+  text-shadow: 0 2px 20px rgba(2,6,23,.5);
+}
+
+/* Holds the line break at every width rather than leaving it to reflow. */
+body.page .nxh__title-line{
+  display: block;
+  color: inherit;
+}
+
+body.page .nxh__sub{
+  margin: 0;
+  max-width: 44ch;
+  font-family: var(--nxt-font-body, system-ui), sans-serif;
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: rgba(255,255,255,.78);
+}
+
+/* ---- Search card: the only bright object in the frame ---- */
+body.page .nxh__search{
+  display: grid;
+  gap: 10px;
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.5),
+    0 24px 56px rgba(2,6,23,.52),
+    0 4px 12px rgba(2,6,23,.28);
+}
+
+@media (min-width: 620px){
+  body.page .nxh__search{
+    grid-template-columns: minmax(0,1.1fr) auto minmax(0,.9fr) auto;
+    align-items: stretch;
+    gap: 0;
+    padding: 8px;
+  }
+}
+
+body.page .nxh__field{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: 10px 14px;
+  border-radius: 13px;
+  background: #F4F6FA;
+  transition: background var(--nxt-fast, 130ms) var(--nxt-ease, ease);
+}
+
+@media (min-width: 620px){
+  body.page .nxh__field{
+    background: transparent;
+    padding: 8px 18px;
+  }
+  body.page .nxh__field:hover{ background: #F7F9FC; }
+}
+
+body.page .nxh__label{
+  display: block;
+  margin: 0 0 3px;
+  font-family: var(--nxt-font-body, system-ui), sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .085em;
+  text-transform: uppercase;
+  color: #8A93A2;
+}
+
+body.page .nxh__control{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+body.page .nxh__control-icon{
+  display: inline-flex;
+  flex: 0 0 auto;
+  color: #A8B0BE;
+}
+
+/* The design system styles fields by attribute — `body.page input[type="text"]`
+   is (0,2,2) and outranked a plain `.nxh__input` class, which is what painted
+   these inputs as dark grey wells with a 46px floor and a border. Matching on
+   the attribute inside `.nxh` lifts this to (0,3,2) and wins on merit rather
+   than with !important. */
+body.page .nxh input[type="text"],
+body.page .nxh input[type="text"]:hover,
+body.page .nxh input[type="text"]:focus{
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  outline: 0;
+  font-family: var(--nxt-font-body, system-ui), sans-serif;
+  font-size: 15.5px;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -.005em;
+  color: #111827;
+}
+
+body.page .nxh input[type="text"]::placeholder{
+  color: #A8B0BE;
+  font-weight: 500;
+  opacity: 1;
+}
+
+/* Focus lands on the whole field, so the ring reads as one control. */
+body.page .nxh__field:focus-within{
+  background: #fff;
+  outline: 2px solid #111827;
+  outline-offset: -1px;
+}
+
+body.page .nxh__sep{ display: none; }
+
+@media (min-width: 620px){
+  body.page .nxh__sep{
+    display: block;
+    align-self: center;
+    width: 1px;
+    height: 40px;
+    background: #E4E8EF;
+  }
+}
+
+body.page .nxh__go{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 56px;
+  padding: 14px 30px;
+  border: 0;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #FFC957 0%, var(--nxh-gold) 52%, #EFA924 100%);
+  color: #23180A;
+  font-family: var(--nxt-font-body, system-ui), sans-serif;
+  font-size: 15.5px;
+  font-weight: 800;
+  letter-spacing: -.008em;
+  white-space: nowrap;
+  cursor: pointer;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,.45) inset,
+    0 8px 20px rgba(226,150,20,.34);
+  transition: filter var(--nxt-fast, 130ms) var(--nxt-ease, ease),
+              transform var(--nxt-fast, 130ms) var(--nxt-ease, ease),
+              box-shadow var(--nxt-fast, 130ms) var(--nxt-ease, ease);
+}
+
+/* Chevron as a pseudo-element: the handler's .text() call would delete a
+   real child node on the first search. */
+body.page .nxh__go::after{
+  content: "›";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  transform: translateY(-1.5px);
+}
+
+body.page .nxh__go:hover{
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,.5) inset,
+    0 12px 26px rgba(226,150,20,.44);
+}
+
+body.page .nxh__go:active{ transform: none; }
+
+body.page .nxh__go:focus-visible{
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+
+body.page .nxh__go[disabled]{
+  cursor: not-allowed;
+  transform: none;
+  filter: none;
+}
+
+/* ---- Reassurance, immediately under the commit ---- */
+body.page .nxh__reassure{
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 14px 0 0;
+  font-family: var(--nxt-font-body, system-ui), sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: rgba(255,255,255,.7);
+}
+
+body.page .nxh__reassure svg{ flex: 0 0 auto; color: #4ADE80; }
+
+/* ---- Stats: three claims this site already publishes ---- */
+body.page .nxh__stats{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 12px;
+  margin: 26px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+body.page .nxh__stat{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 16px 9px 10px;
+  /* A glass chip per stat: the photograph is busy behind this row, and white
+     type on lamplit wood is the one place legibility actually breaks. */
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 14px;
+  background: rgba(8,13,30,.44);
+  backdrop-filter: blur(7px);
+}
+
+body.page .nxh__stat-icon{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(245,185,63,.38);
+  border-radius: 999px;
+  background: rgba(245,185,63,.13);
+  color: var(--nxh-gold);
+}
+
+body.page .nxh__stat-text{ display: block; }
+
+body.page .nxh__stat-figure{
+  display: block;
+  font-family: var(--nxt-font-display, system-ui), sans-serif;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -.024em;
+  line-height: 1.12;
+  color: #fff;
+}
+
+body.page .nxh__stat-label{
+  display: block;
+  margin-top: 1px;
+  font-family: var(--nxt-font-body, system-ui), sans-serif;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: .01em;
+  color: rgba(255,255,255,.66);
+}
+
+/* ---- Bottom sweep ---- */
+body.page .nxh__sweep{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 62px;
+  fill: var(--nxh-ground);
+  pointer-events: none;
+}
+
+@media (min-width: 720px){
+  body.page .nxh__sweep{ height: 88px; }
+}
+
+/* ---- Phone tune-up: same frame, less air, smaller furniture ---- */
+@media (max-width: 480px){
+  body.page .nxh{
+    margin: 8px calc(-1 * var(--nxt-shell-pad, 16px)) 20px;
+    padding: 52px 16px 74px;
+    min-height: 0;
+    border-radius: 18px;
+  }
+  body.page .nxh__badge{
+    margin-bottom: 14px;
+    padding: 6px 13px 6px 11px;
+    font-size: 11.5px;
+  }
+  body.page .nxh__title{ margin-bottom: 14px; }
+  body.page .nxh__sub{ font-size: 14px; }
+  body.page .nxh__search{
+    margin-top: 22px;
+    padding: 8px;
+    border-radius: 16px;
+  }
+  body.page .nxh__go{ min-height: 50px; }
+  body.page .nxh__reassure{ margin-top: 12px; font-size: 12px; }
+  body.page .nxh__stats{ gap: 8px; margin-top: 20px; }
+  body.page .nxh__stat{
+    /* Content-sized chips: a stretched full-width chip reads as a bar, not
+       a stat. Let each one hug its text and wrap naturally. */
+    flex: 0 1 auto;
+    gap: 9px;
+    padding: 7px 12px 7px 8px;
+    border-radius: 12px;
+  }
+  body.page .nxh__stat-icon{ width: 32px; height: 32px; }
+  body.page .nxh__stat-icon svg{ width: 14px; height: 14px; }
+  body.page .nxh__stat-figure{ font-size: 15.5px; }
+  body.page .nxh__stat-label{ font-size: 10.5px; }
+  body.page .nxh__sweep{ height: 44px; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  body.page .nxh__go{ transition: none; }
+  body.page .nxh__go:hover{ transform: none; }
+}
+</style>
 
 
 <section class="section">
@@ -81,8 +724,8 @@
 <section class="section section--suggested" id="suggestedTeachersSection">
   <div class="section-head">
     <h2 class="section-title" id="suggestedTitle">Suggested for your child</h2>
-    <p id="suggestedSubtitle" style="margin-top:6px;color:#666;"></p>
- 
+    <p id="suggestedSubtitle" style="margin:0;"></p>
+    <a class="btn btn-ghost btn-small" href="{{ route('tutors.index') }}">View all tutors →</a>
   </div>
 
   <!-- <div id="teacherLoading" style="display:none; text-align:center; padding:20px; font-weight:600;">
@@ -120,108 +763,7 @@
  
 </section>
 
-<section class="section" id="nxAskAISection">
-  <div class="nxg-chat-card nxg-glass">
-
-    <div class="nxg-chat-top">
-      <h4>Ask NXT AI</h4>
-      <p>Ask about tutor fit, fees, timing, demo class etc.</p>
-    </div>
-
-    <!-- PRE-DEFINED Q&A -->
-    <div class="nxg-chat-box" id="nxAskAiThread">
-
-      <div class="nxg-msg ai">
-        <small>NXT AI</small>
-        Ask anything about tutors 🙂
-      </div>
-
-      <div class="nxg-msg user">
-        <small>Parent</small>
-        Who is best tutor?
-      </div>
-
-      <div class="nxg-msg ai">
-        <small>NXT AI</small>
-        Best tutor depends on subject fit, experience and availability.
-      </div>
-
-      <div class="nxg-msg user">
-        <small>Parent</small>
-        What are fees?
-      </div>
-
-      <div class="nxg-msg ai">
-        <small>NXT AI</small>
-        Fees usually range between ₹800–₹2500 depending on class and subject.
-      </div>
-
-      <div class="nxg-msg user">
-        <small>Parent</small>
-        Demo class available?
-      </div>
-
-      <div class="nxg-msg ai">
-        <small>NXT AI</small>
-        Yes 👍 You can book a demo class before finalizing tutor.
-      </div>
-
-      <div class="nxg-msg user">
-        <small>Parent</small>
-        Online or home tutor?
-      </div>
-
-      <div class="nxg-msg ai">
-        <small>NXT AI</small>
-        Both options are available — online & home tutors.
-      </div>
-
-    </div>
-
-    <!-- INPUT -->
-    <div class="nxg-chat-input">
-      <input type="text" id="nxAskAiInput" placeholder="Ask anything..." />
-      <button id="nxAskAiSend">Send</button>
-    </div>
-
-  </div>
-</section>
-<section class="section" id="compareSection" style="margin-top:24px;">
- 
-   <div
-    id="compareGrid"
-    data-default-url="{{ route('home.compareDefaults') }}"
-    data-ai-url="{{ route('home.compareAi') }}" style="display:none;"
-  >
-    <div style="padding:12px;color:#94a3b8;">
-      Select tutors to start AI comparison…
-    </div>
-  </div> 
-
-  <div id="compareLoadingWrap" style="display:none;">
-    <div class="nx-compare-loading">
-      <div class="nx-compare-loader-ring"></div>
-
-      <div class="nx-compare-loading-title">
-        NXTutors AI is comparing tutors...
-      </div>
-
-      <div class="nx-compare-loading-sub" id="nxCompareLoadingText">
-        Checking subject fit, experience, rating, location, budget and availability
-      </div>
-
-      <div class="nx-compare-progress">
-        <i id="nxCompareProgressBar"></i>
-      </div>
-
-      <div class="nx-compare-progress-text" id="nxCompareProgressText">
-        Preparing comparison...
-      </div>
-    </div>
-  </div>
-
-  <div id="compareResultsMount"></div>
-</section>
+@include('home.partials.ask-ai')
  
       
  
@@ -471,6 +1013,7 @@
       <section class="section">
         <div class="section-head">
           <h2 class="section-title">Local tutors</h2>
+          <a class="btn btn-ghost btn-small" href="{{ route('tutors.index') }}">View all tutors →</a>
         </div>
 
         <div class="suggested-grid"
@@ -981,10 +1524,15 @@
         gap: 20px;
         overflow-x: auto;
         scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;   /* swipe settles on a whole card */
+        -webkit-overflow-scrolling: touch;
         width: 100%;
         padding: 16px 8px;
         margin: -16px -8px;
         scrollbar-width: none; /* Hide scrollbar for Firefox */
+      }
+      .review-track > * {
+        scroll-snap-align: start;
       }
       
       .review-track::-webkit-scrollbar {
@@ -1111,17 +1659,10 @@
       }
     </style>
 
-    <button class="rnav rnav--left" type="button" aria-label="Previous">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>
-    </button>
-
+    {{-- Swipe/drag to browse — the strip snaps per card; no arrow chrome. --}}
     <div class="review-track" id="reviewTrack">
       @include('home.partials.review-slider-cards', ['reviews' => $reviews ?? collect()])
     </div>
-
-    <button class="rnav rnav--right" type="button" aria-label="Next">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
-    </button>
   </div>
 </section>
       <!-- FAQ -->
@@ -1232,7 +1773,7 @@
         
         <div class="section-head section-head--row">
           <h2 class="section-title">Frequently asked questions</h2>
-          <a href="#" class="btn btn-ghost btn-small">More FAQs</a>
+          <a href="{{ route('faqs.index') }}" class="btn btn-ghost btn-small">More FAQs</a>
         </div>
       
         <div class="faq-grid">
@@ -1436,10 +1977,8 @@
         </div>
       </section>
 
-
-       
-
-      
+      {{-- The sliding strip of every subject we tutor, last thing before the footer. --}}
+      @include('home.partials.course-marquee')
 
     </main>
 
@@ -1450,6 +1989,73 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
 <script>
+// Shared, XSS-safe chat bubble builder used by every Ask-AI handler.
+window.nxgAppendMsg = function(container, text, type){
+  if(!container) return;
+  const isAi = type === "ai";
+  const time = new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+  const wrap = document.createElement("div");
+  wrap.className = "nxg-msg " + type;
+
+  const av = document.createElement("span");
+  av.className = "nxg-av";
+  av.textContent = isAi ? "🤖" : "🧑";
+
+  const name = document.createElement("span");
+  name.className = "nxg-name";
+  name.textContent = isAi ? "NXT AI" : "You";
+
+  if(isAi){
+    const head = document.createElement("div");
+    head.className = "nxg-head";
+    const ts = document.createElement("span");
+    ts.className = "nxg-time";
+    ts.textContent = time;
+    head.appendChild(av);
+    head.appendChild(name);
+    head.appendChild(ts);
+
+    const body = document.createElement("div");
+    body.className = "nxg-text";
+    body.textContent = text;
+
+    const react = document.createElement("div");
+    react.className = "nxg-react";
+    react.innerHTML = '<button type="button" aria-label="Helpful">👍</button><button type="button" aria-label="Not helpful">👎</button>';
+
+    wrap.appendChild(head);
+    wrap.appendChild(body);
+    wrap.appendChild(react);
+  } else {
+    const bubble = document.createElement("div");
+    bubble.className = "nxg-bubble";
+    const body = document.createElement("span");
+    body.className = "nxg-text";
+    body.textContent = text;
+    const ts = document.createElement("span");
+    ts.className = "nxg-time";
+    ts.textContent = time + " ✓";
+    bubble.appendChild(body);
+    bubble.appendChild(ts);
+
+    wrap.appendChild(av);
+    wrap.appendChild(name);
+    wrap.appendChild(bubble);
+  }
+
+  container.appendChild(wrap);
+  container.scrollTop = container.scrollHeight;
+};
+
+// Thumbs up/down toggle (one delegated listener for all AI messages).
+document.addEventListener("click", function(e){
+  const btn = e.target.closest(".nxg-react button");
+  if(!btn) return;
+  const group = btn.parentNode;
+  group.querySelectorAll("button").forEach(b => { if(b !== btn) b.classList.remove("is-on"); });
+  btn.classList.toggle("is-on");
+});
+
 document.addEventListener("DOMContentLoaded", function(){
 
   const input = document.getElementById("nxAskAiInput");
@@ -1485,11 +2091,7 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
   function addMsg(text, type){
-    const div = document.createElement("div");
-    div.className = "nxg-msg " + type;
-    div.innerHTML = `<small>${type === "ai" ? "NXT AI" : "You"}</small>${text}`;
-    chatBox.appendChild(div);
-    chatBox.scrollTop = chatBox.scrollHeight;
+    window.nxgAppendMsg(chatBox, text, type);
   }
 
   function sendMsg(){
@@ -1982,7 +2584,9 @@ function renderComparePieChart(tutors) {
     nxComparePieChart.destroy();
   }
 
-  const colors = ["#f2b24b", "#6c91ff", "#df5aae", "#60c7b2", "#8b7dff"];
+  // Rank order, one accent: leader in the theme accent, the rest neutral.
+  const accent = getComputedStyle(document.documentElement).getPropertyValue("--accent").trim() || "#F5A524";
+  const colors = [accent, "rgba(255,255,255,.34)", "rgba(255,255,255,.22)", "rgba(255,255,255,.16)", "rgba(255,255,255,.12)"];
 
   nxComparePieChart = new Chart(canvas, {
     type: "doughnut",
@@ -2045,11 +2649,7 @@ function renderComparePieChart(tutors) {
       const winner = tutors[0];
 
       function addBubble(text, type) {
-        const div = document.createElement("div");
-        div.className = "nxg-msg " + type;
-        div.innerHTML = `<small>${type === "ai" ? "NXT AI" : "Parent"}</small>${esc(text)}`;
-        chatBox.appendChild(div);
-        chatBox.scrollTop = chatBox.scrollHeight;
+        window.nxgAppendMsg(chatBox, text, type);
       }
 
       function submitAsk(q) {
@@ -2223,110 +2823,72 @@ function renderComparePieChart(tutors) {
 
    
    async function refreshCompare() {
-  const list = loadSelected();
+      let list = loadSelected();
 
-  if (list.length === 0) {
-    if (grid) grid.style.display = "block";
-    if (compareResultsMount) compareResultsMount.innerHTML = "";
-    if (compareLoadingWrap) compareLoadingWrap.style.display = "none";
-    updateCompareButtons();
-    return;
-  }
+      // >3 could only come from stale storage; clamp before anything reads it,
+      // otherwise the tray never renders and every card click just alerts.
+      if (list.length > 3) {
+        list = list.slice(0, 3);
+        saveSelected(list);
+      }
 
-  if (grid) grid.style.display = "none";
+      if (grid) grid.style.display = list.length ? "none" : "block";
+      if (compareLoadingWrap) compareLoadingWrap.style.display = "none";
 
-  if (list.length === 1) {
-    showCompareTrayPhase1(list[0]);
-    updateCompareButtons();
-    return;
-  }
+      if (!list.length && compareResultsMount) compareResultsMount.innerHTML = "";
 
-  if (list.length === 2) {
-    showCompareTrayPhase2(list);
-    updateCompareButtons();
-    return;
-  }
+      showCompareTray(list);
+      updateCompareButtons();
+    }
 
-  if (list.length > 3) {
-    list.splice(3);
-    saveSelected(list);
-  }
-}
+    // One dock for every state: stacked faces, the count, and the single action
+    // that uses them. "×" empties the basket.
+    //
+    // It hangs off <body>, NOT off #compareResultsMount: that mount lives in
+    // .nxg-compare-slot, which nxt-ds.css collapses to display:none while no
+    // real comparison is showing — a tray rendered in there is invisible no
+    // matter how it is positioned, so picks piled up unseen until the
+    // "up to 3 tutors" alert was the only sign anything had been selected.
+    function showCompareTray(list) {
+      let dock = document.getElementById("cmpDock");
 
+      if (!list.length) {
+        if (dock) dock.remove();
+        return;
+      }
 
-// function showCompareTrayPhase1(tutor) {
-//   compareResultsMount.innerHTML = `
-//     <div class="compare-tray">
-//       <div class="compare-card">
-//         <strong>${tutor.name}</strong>
-//         <span>Selected</span>
-//       </div>
+      if (!dock) {
+        dock = document.createElement("div");
+        dock.id = "cmpDock";
+        dock.className = "cmp-dock";
+        document.body.appendChild(dock);
+      }
 
-//       <div class="compare-placeholder">
-//         + Select one more tutor to compare
-//       </div>
-//     </div>
-//   `;
-// }
+      const ready = list.length >= 2;
 
-function showCompareTrayPhase1(tutor) {
-  compareResultsMount.innerHTML = `
-    <div class="compare-tray">
-      <div class="compare-card">
-        <div class="compare-card-top">
-          <strong>${esc(tutor.name)}</strong>
-          <button type="button"
-            class="compare-remove-btn js-compare-remove"
-            data-id="${esc(tutor.id)}">×</button>
+      dock.innerHTML = `
+        <div class="cmp-dock-faces">
+          ${list.map(t => `
+            <img class="cmp-dock-face" src="${esc(t.img || "")}" alt="${esc(t.name || "")}"
+              onerror="this.style.visibility='hidden'">
+          `).join("")}
         </div>
-        <span>Selected</span>
-      </div>
+        <div class="cmp-dock-text">
+          <strong>${list.length} Tutor${list.length > 1 ? "s" : ""} Selected</strong>
+          ${ready ? "" : `<span>Select 1 more to compare</span>`}
+        </div>
+        <button type="button" class="cmp-dock-go" ${ready ? "" : "disabled"}>Compare</button>
+        <button type="button" class="cmp-dock-clear" aria-label="Clear selection">&times;</button>
+      `;
 
-      <div class="compare-placeholder">
-        + Select one more tutor to compare
-      </div>
-    </div>
-  `;
-}
+      const goBtn = dock.querySelector(".cmp-dock-go");
+      if (goBtn && ready) goBtn.addEventListener("click", () => renderAiCompare(list));
 
-function showCompareTrayPhase2(list) {
-  compareResultsMount.innerHTML = `
-    <div class="compare-tray">
-      <div class="compare-tray-list">
-        ${list.map(t => `
-          <div class="compare-card">
-            <div class="compare-card-top">
-              <strong>${t.name}</strong>
-              <button type="button" class="compare-remove-btn" data-id="${t.id}">×</button>
-            </div>
-          </div>
-        `).join("")}
-      </div>
-
-      <div class="compare-actions">
-        <button id="compareNowBtn" class="compare-now-btn" type="button">
-          Compare Now
-        </button>
-      </div>
-    </div>
-  `;
-
-  const compareBtn = document.getElementById("compareNowBtn");
-  if (compareBtn) {
-    compareBtn.addEventListener("click", () => {
-      renderAiCompare(list);
-    });
-  }
-
-  document.querySelectorAll(".compare-remove-btn").forEach(btn => {
-    btn.addEventListener("click", async function () {
-      const id = this.getAttribute("data-id");
-      const updated = loadSelected().filter(x => String(x.id) !== String(id));
-      saveSelected(updated);
-      await refreshCompare();
-    });
-  });
-}
+      dock.querySelector(".cmp-dock-clear").addEventListener("click", async () => {
+        saveSelected([]);
+        await refreshCompare();
+      });
+    }
     document.addEventListener("click", async (e) => {
       const btn = e.target.closest(".js-compare-toggle");
       if (btn) {
@@ -2823,7 +3385,9 @@ function isMobileView() {
 <script>
 $(document).ready(function () {
 
-    const SEARCH_MIN_LOADER_TIME = 15000; // 15 sec
+    // Just enough for the progress bar to read as "working" — the old 15s
+    // theatrical wait made a sub-second query feel broken.
+    const SEARCH_MIN_LOADER_TIME = 1200;
     let teacherProgressTimer = null;
 
     function startTeacherProgress() {
@@ -2914,6 +3478,7 @@ $(document).ready(function () {
             type: 'GET',
             data: {
                 search: search,
+                place: ($('#heroSearchArea').val() || '').trim(),
                 offset: offset,
                 limit: 6
             },
@@ -2922,7 +3487,7 @@ $(document).ready(function () {
                     stopTeacherProgress(true);
 
                     $('#teacherLoading').hide();
-                    $('#heroSearchBtn').prop('disabled', false).text('Find Best Tutors');
+                    $('#heroSearchBtn').prop('disabled', false).text('Find Tutors');
 
                     let cleanResponse = $.trim(response);
 
@@ -2952,7 +3517,7 @@ $(document).ready(function () {
                     }
 
                     let tempDiv = $('<div>').html(cleanResponse);
-                    let loadedCards = tempDiv.find('.card--tutor').length; // FIXED
+                    let loadedCards = tempDiv.find('.tutor-card, .card--tutor').length;
 
                     $('#homeLoadMoreTeachers')
                         .data('query', search)
@@ -2985,7 +3550,7 @@ $(document).ready(function () {
                     stopTeacherProgress(false);
 
                     $('#teacherLoading').hide();
-                    $('#heroSearchBtn').prop('disabled', false).text('Find Best Tutors');
+                    $('#heroSearchBtn').prop('disabled', false).text('Find Tutors');
                     $('#homeLoadMoreTeachers').prop('disabled', false);
 
                     alert('Something went wrong. Please try again.');
@@ -2994,16 +3559,20 @@ $(document).ready(function () {
         });
     }
 
+    // Subject goes to `search` (OR-matched against subjects/boards/profile);
+    // the place field travels separately as `place` and narrows with AND.
+    function heroQuery() {
+        return $('#heroSearchInput').val().trim();
+    }
+
     $('#heroSearchBtn').on('click', function () {
-        let search = $('#heroSearchInput').val().trim();
-        loadTeachers(search, 0, false);
+        loadTeachers(heroQuery(), 0, false);
     });
 
-    $('#heroSearchInput').on('keypress', function (e) {
+    $('#heroSearchInput, #heroSearchArea').on('keypress', function (e) {
         if (e.which === 13) {
             e.preventDefault();
-            let search = $(this).val().trim();
-            loadTeachers(search, 0, false);
+            loadTeachers(heroQuery(), 0, false);
         }
     });
 
@@ -3034,17 +3603,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const thread = document.getElementById('nxAskAiThread');
 
     function addMessage(type, name, text) {
-        const msg = document.createElement('div');
-        msg.className = 'nxg-msg ' + type;
-        msg.innerHTML = '<small>' + name + '</small>' + escapeHtml(text);
-        thread.appendChild(msg);
-        thread.scrollTop = thread.scrollHeight;
-    }
-
-    function escapeHtml(text) {
-        const div = document.createElement('div');
-        div.innerText = text;
-        return div.innerHTML;
+        window.nxgAppendMsg(thread, text, type);
     }
 
     function sendMessage() {
@@ -3055,7 +3614,7 @@ document.addEventListener('DOMContentLoaded', function () {
         input.value = '';
 
         sendBtn.disabled = true;
-        sendBtn.innerText = 'Thinking...';
+        sendBtn.classList.add('is-loading');
 
         fetch("{{ route('ask.nxt.ai') }}", {
             method: 'POST',
@@ -3074,7 +3633,7 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .finally(() => {
             sendBtn.disabled = false;
-            sendBtn.innerText = 'Send';
+            sendBtn.classList.remove('is-loading');
         });
     }
 

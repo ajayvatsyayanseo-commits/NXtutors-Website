@@ -1,0 +1,331 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link [ref=e5] [cursor=pointer]:
+      - /url: https://www.nxtutors.com
+      - img "logo" [ref=e6]
+    - generic [ref=e7]:
+      - link "Home" [ref=e8] [cursor=pointer]:
+        - /url: https://www.nxtutors.com
+      - link "📍 City" [ref=e11] [cursor=pointer]:
+        - /url: https://www.nxtutors.com/city
+        - generic [ref=e12]: 📍
+        - text: City
+      - button "Dharuhera - 301019 ▼" [ref=e13] [cursor=pointer]:
+        - generic [ref=e14]: Dharuhera - 301019
+        - generic [ref=e15]: ▼
+      - button "Default ▾" [ref=e17] [cursor=pointer]:
+        - generic [ref=e19]: Default
+        - generic [ref=e20]: ▾
+      - generic [ref=e21]:
+        - link "Chat on WhatsApp" [ref=e22] [cursor=pointer]:
+          - /url: "#"
+        - link "New Tutor Partner" [ref=e26] [cursor=pointer]:
+          - /url: "#"
+        - link "Login" [ref=e29] [cursor=pointer]:
+          - /url: https://www.nxtutors.com/login
+  - generic [ref=e33]:
+    - main [ref=e34]:
+      - generic [ref=e36]:
+        - article [ref=e37]:
+          - generic [ref=e38]:
+            - img "Sonu" [ref=e39]
+            - generic [ref=e40]:
+              - heading "Sonu" [level=1] [ref=e41]
+              - generic [ref=e42]: • Mundiagaarh , Rajasthan
+              - generic [ref=e43]:
+                - generic [ref=e44]: ✅ Verified
+                - generic [ref=e45]: Academic (Class I–XII)
+                - generic [ref=e46]: "Mode: Home"
+              - generic [ref=e48]: Experienced tutor providing personalised learning plans, regular tests and progress updates.
+              - link "Read full profile ↓" [ref=e49] [cursor=pointer]:
+                - /url: "#aboutTutor"
+        - complementary [ref=e50]:
+          - generic [ref=e51]: Book a Demo
+          - paragraph [ref=e52]: Get a callback within 10 minutes.
+          - generic [ref=e53]:
+            - link "Book Demo" [ref=e54] [cursor=pointer]:
+              - /url: "#demoModal"
+            - link "Chat on WhatsApp" [ref=e55] [cursor=pointer]:
+              - /url: https://wa.me/917836034313?text=Hi%2C+I+want+to+book+a+demo+with+Sonu+in+Mundiagaarh
+          - generic [ref=e57]:
+            - generic [ref=e58]: ✅ Background verified
+            - generic [ref=e59]: ✅ Free demo guidance
+            - generic [ref=e60]: ✅ Regular progress tracking
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - heading "Ask NXT AI" [level=4] [ref=e64]
+          - paragraph [ref=e65]: Ask about tutor fit, fees, timing, demo class etc.
+        - generic [ref=e66]:
+          - generic [ref=e67]:
+            - generic [ref=e68]: NXT AI
+            - text: Ask anything about tutors 🙂
+          - generic [ref=e69]:
+            - generic [ref=e70]: Parent
+            - text: Who is best tutor?
+          - generic [ref=e71]:
+            - generic [ref=e72]: NXT AI
+            - text: Best tutor depends on subject fit, experience and availability.
+          - generic [ref=e73]:
+            - generic [ref=e74]: Parent
+            - text: What are fees?
+          - generic [ref=e75]:
+            - generic [ref=e76]: NXT AI
+            - text: Fees usually range between ₹800–₹2500 depending on class and subject.
+          - generic [ref=e77]:
+            - generic [ref=e78]: Parent
+            - text: Demo class available?
+          - generic [ref=e79]:
+            - generic [ref=e80]: NXT AI
+            - text: Yes 👍 You can book a demo class before finalizing tutor.
+          - generic [ref=e81]:
+            - generic [ref=e82]: Parent
+            - text: Online or home tutor?
+          - generic [ref=e83]:
+            - generic [ref=e84]: NXT AI
+            - text: Both options are available — online & home tutors.
+        - generic [ref=e85]:
+          - textbox "Ask anything..." [ref=e86]
+          - button "Send" [ref=e87] [cursor=pointer]
+      - generic [ref=e88]:
+        - heading "About Sonu" [level=2] [ref=e90]
+        - generic [ref=e91]:
+          - paragraph
+      - generic [ref=e92]:
+        - generic [ref=e93]:
+          - heading "Teaching Details" [level=2] [ref=e94]
+          - paragraph [ref=e95]: Boards, classes and subjects taught
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - generic [ref=e98]: Academic (Class I–XII)
+            - generic [ref=e99]:
+              - generic [ref=e100]: "Board: —"
+              - generic [ref=e101]: "Class: —"
+              - generic [ref=e102]: "Mode: Home"
+            - generic [ref=e103]: Mathematics
+          - generic [ref=e105]:
+            - generic [ref=e106]: Academic (Class I–XII)
+            - generic [ref=e107]:
+              - generic [ref=e108]: "Board: —"
+              - generic [ref=e109]: "Class: —"
+              - generic [ref=e110]: "Mode: Home"
+            - generic [ref=e111]:
+              - generic [ref=e112]: Mathematics
+              - generic [ref=e113]: Class 1–12 CBSE Mathematics
+              - generic [ref=e114]: Class 1–12 ICSE Mathematics
+              - generic [ref=e115]: Class 11–12 ISC Mathematics
+              - generic [ref=e116]: IGCSE Extended Mathematics
+              - generic [ref=e117]: IB MYP Mathematics (MYP 1–5)
+              - generic [ref=e118]: "IB DP Mathematics: Analysis & Approaches (SL & HL)"
+              - generic [ref=e119]: "IB DP Mathematics: Applications & Interpretation (SL & HL)"
+      - generic [ref=e120]:
+        - generic [ref=e121]:
+          - heading "Tutor Reviews" [level=2] [ref=e122]
+          - paragraph
+        - generic [ref=e123] [cursor=pointer]:
+          - generic [ref=e124]:
+            - generic [ref=e125]:
+              - generic [ref=e126]: ⭐ Review Summary
+              - generic [ref=e127]: Tap to see detailed ratings & parent reviews
+            - generic [ref=e128]: Verified Reviews
+          - generic [ref=e129]:
+            - generic [ref=e130]:
+              - generic [ref=e131]: Expertise
+              - generic [ref=e132]: —
+            - generic [ref=e133]:
+              - generic [ref=e134]: Patience
+              - generic [ref=e135]: —
+            - generic [ref=e136]:
+              - generic [ref=e137]: Reliability
+              - generic [ref=e138]: —
+            - generic [ref=e139]:
+              - generic [ref=e140]: Communication
+              - generic [ref=e141]: —
+      - generic [ref=e142]:
+        - generic [ref=e143]:
+          - generic [ref=e144]: ⭐ Sonu Reviews
+          - button "Close" [ref=e146] [cursor=pointer]
+        - generic [ref=e147]:
+          - generic [ref=e148]: Category Ratings
+          - generic [ref=e149]:
+            - generic [ref=e150]: Expertise
+            - generic [ref=e154]: Patience
+            - generic [ref=e158]: Reliability
+            - generic [ref=e162]: Communication
+          - generic [ref=e167]:
+            - generic [ref=e168]: Parents Reviews
+            - generic [ref=e169]: ✅ Verified
+          - generic [ref=e170]: No reviews available yet.
+      - generic [ref=e171]:
+        - generic [ref=e172]:
+          - heading "About Sonu – CBSE Tutor in Mundiagaarh" [level=2] [ref=e173]
+          - paragraph [ref=e174]: Personalised learning plan, weekly progress updates and exam-focused preparation
+        - generic [ref=e176]:
+          - paragraph [ref=e177]: "Sonu is a verified tutor in Mundiagaarh who focuses on concept clarity, regular practice, and confident exam preparation for Classes. Parents looking for a trusted CBSE tutor often need three things: consistent teaching, measurable progress, and a learning plan that fits the student’s pace. This is exactly what Sonu aims to deliver through structured lessons, smart homework, and weekly revisions."
+          - paragraph [ref=e178]: "In every class, topics are broken down into simple steps so students can understand “why” a formula works, not just memorize it. For students who feel stuck or anxious in exams, the first goal is to rebuild confidence using small wins: quick quizzes, doubt-solving sessions, and targeted practice worksheets. Over time, this approach improves speed, accuracy, and marks."
+          - paragraph [ref=e179]: If you want a tutor who can guide your child with discipline while still keeping learning friendly and comfortable, you can book a demo with Sonu. The demo helps us understand the student’s current level and create a realistic learning plan.
+      - generic [ref=e180]:
+        - generic [ref=e181]:
+          - heading "Teaching Expertise & Methodology" [level=2] [ref=e182]
+          - paragraph [ref=e183]: Clear explanations, revision cycles, and exam-oriented practice
+        - generic [ref=e185]:
+          - paragraph [ref=e186]: "Sonu follows a step-by-step teaching style: concept explanation → examples → guided practice → independent homework → revision. This ensures students understand the topic and can solve questions on their own. The tutoring plan is adapted based on the student’s class level, syllabus, and exam schedule."
+          - paragraph [ref=e187]: Weekly progress checks are done using short tests. Mistakes are analyzed to identify weak areas such as calculation errors, missing concepts, or poor time management. Then, the next week’s lessons focus on improving those exact points.
+          - paragraph [ref=e188]: For board exams, special focus is given to important questions, chapter-weightage, and proper answer-writing format. For competitive or advanced preparation, higher-order questions and mixed practice sets are included.
+      - generic [ref=e189]:
+        - generic [ref=e190]:
+          - heading "Subjects & Syllabus Covered" [level=2] [ref=e191]
+          - paragraph [ref=e192]: Chapter-wise details (accordion for better UX)
+        - generic [ref=e193]:
+          - group [ref=e194]:
+            - generic "Core Subjects Covered" [ref=e195] [cursor=pointer]
+            - generic [ref=e196]:
+              - paragraph [ref=e197]: "Subjects: Mathematics, Academic (Class I–XII), Class 1–12 CBSE Mathematics, Class 1–12 ICSE Mathematics, Class 11–12 ISC Mathematics, IGCSE Extended Mathematics, IB MYP Mathematics (MYP 1–5), IB DP Mathematics: Analysis & Approaches (SL & HL)"
+              - paragraph [ref=e198]: For each subject, the plan includes NCERT/board-aligned learning, worksheets, revision notes, and chapter-wise tests.
+          - group [ref=e199]:
+            - generic "Chapter-wise Preparation Approach" [ref=e200] [cursor=pointer]
+          - group [ref=e201]:
+            - generic "Worksheets, Tests & Notes" [ref=e202] [cursor=pointer]
+      - generic [ref=e203]:
+        - generic [ref=e204]:
+          - heading "Home Tutor vs Online Tutor by Sonu" [level=2] [ref=e205]
+          - paragraph [ref=e206]: Choose the best mode for your child’s learning style
+        - generic [ref=e208]:
+          - paragraph [ref=e209]: Home tutoring is ideal if your child needs more focus, personal discipline, and a distraction-free learning environment. It helps especially for younger classes and students who need consistent supervision and regular practice.
+          - paragraph [ref=e210]: Online tutoring is best for flexible schedules, quick doubt sessions, and students who are comfortable learning on screen. It also helps if you want to continue with the same tutor while traveling or changing location.
+      - generic [ref=e211]:
+        - generic [ref=e212]:
+          - heading "Qualifications & Experience" [level=2] [ref=e213]
+          - paragraph [ref=e214]: Academic background, teaching experience, and strengths
+        - generic [ref=e216]:
+          - paragraph [ref=e217]: "Qualification: Qualified and experienced tutor"
+          - paragraph [ref=e218]: "Experience: Experienced in teaching school students with exam-focused learning plans."
+          - paragraph [ref=e219]: Sonu focuses on concept clarity, consistent practice, and building confidence with regular assessments and revision cycles.
+      - generic [ref=e220]:
+        - generic [ref=e221]:
+          - heading "Why Parents Choose Sonu" [level=2] [ref=e222]
+          - paragraph [ref=e223]: Verified profile, progress tracking and personalised teaching
+        - list [ref=e226]:
+          - listitem [ref=e227]: Personalised learning plan based on student’s current level
+          - listitem [ref=e228]: Regular chapter tests and improvement tracking
+          - listitem [ref=e229]: Exam-oriented practice with important questions
+          - listitem [ref=e230]: Friendly teaching style with doubt clearing
+          - listitem [ref=e231]: Verified tutor profile with parent reviews
+      - generic [ref=e232]:
+        - generic [ref=e233]:
+          - heading "Pricing & Mode" [level=2] [ref=e234]
+          - paragraph [ref=e235]: Transparent fee range and flexible classes
+        - generic [ref=e236]:
+          - generic [ref=e237]:
+            - generic [ref=e238]: 💰 Hourly Rates
+            - generic [ref=e239]: Not specified
+            - generic [ref=e240]: Final fee depends on class & location
+          - generic [ref=e241]:
+            - generic [ref=e242]: 📚 Subjects Offered
+            - generic [ref=e243]:
+              - generic [ref=e244]: Mathematics
+              - generic [ref=e245]: Academic (Class I–XII)
+              - generic [ref=e246]: Class 1–12 CBSE Mathematics
+              - generic [ref=e247]: Class 1–12 ICSE Mathematics
+              - generic [ref=e248]: Class 11–12 ISC Mathematics
+              - generic [ref=e249]: IGCSE Extended Mathematics
+              - generic [ref=e250]: IB MYP Mathematics (MYP 1–5)
+              - generic [ref=e251]: "IB DP Mathematics: Analysis & Approaches (SL & HL)"
+      - generic [ref=e252]:
+        - heading "Blog & Advice" [level=2] [ref=e254]
+        - generic [ref=e255]:
+          - 'link "Fees & Packages in South City II: Best Home Tutors Near You Fees & Packages in South City II: Best Home Tutors Near You Read more →" [ref=e256] [cursor=pointer]':
+            - /url: https://www.nxtutors.com/blog/fees--packages-in-south-city-ii-best-home-tutors-near-you
+            - 'img "Fees & Packages in South City II: Best Home Tutors Near You" [ref=e258]'
+            - generic [ref=e259]:
+              - generic [ref=e260]: "Fees & Packages in South City II: Best Home Tutors Near You"
+              - generic [ref=e261]: Read more →
+          - 'link "Board Exam Strategy in South City II: Best Home Tutors Near You Board Exam Strategy in South City II: Best Home Tutors Near You Read more →" [ref=e262] [cursor=pointer]':
+            - /url: https://www.nxtutors.com/blog/board-exam-strategy-in-south-city-ii-best-home-tutors-near-you
+            - 'img "Board Exam Strategy in South City II: Best Home Tutors Near You" [ref=e264]'
+            - generic [ref=e265]:
+              - generic [ref=e266]: "Board Exam Strategy in South City II: Best Home Tutors Near You"
+              - generic [ref=e267]: Read more →
+          - 'link "IB/IGCSE Specialists in South City II: Best Home Tutors Near You IB/IGCSE Specialists in South City II: Best Home Tutors Near You Read more →" [ref=e268] [cursor=pointer]':
+            - /url: https://www.nxtutors.com/blog/ibigcse-specialists-in-south-city-ii-best-home-tutors-near-you
+            - 'img "IB/IGCSE Specialists in South City II: Best Home Tutors Near You" [ref=e270]'
+            - generic [ref=e271]:
+              - generic [ref=e272]: "IB/IGCSE Specialists in South City II: Best Home Tutors Near You"
+              - generic [ref=e273]: Read more →
+          - 'link "NEET Coaching at Home in South City II: Best Home Tutors Near You NEET Coaching at Home in South City II: Best Home Tutors Near You Read more →" [ref=e274] [cursor=pointer]':
+            - /url: https://www.nxtutors.com/blog/neet-coaching-at-home-in-south-city-ii-best-home-tutors-near-you
+            - 'img "NEET Coaching at Home in South City II: Best Home Tutors Near You" [ref=e276]'
+            - generic [ref=e277]:
+              - generic [ref=e278]: "NEET Coaching at Home in South City II: Best Home Tutors Near You"
+              - generic [ref=e279]: Read more →
+          - 'link "JEE Coaching at Home in South City II: Best Home Tutors Near You JEE Coaching at Home in South City II: Best Home Tutors Near You Read more →" [ref=e280] [cursor=pointer]':
+            - /url: https://www.nxtutors.com/blog/jee-coaching-at-home-in-south-city-ii-best-home-tutors-near-you
+            - 'img "JEE Coaching at Home in South City II: Best Home Tutors Near You" [ref=e282]'
+            - generic [ref=e283]:
+              - generic [ref=e284]: "JEE Coaching at Home in South City II: Best Home Tutors Near You"
+              - generic [ref=e285]: Read more →
+          - 'link "English Home Tutor in South City II: Best Home Tutors Near You English Home Tutor in South City II: Best Home Tutors Near You Read more →" [ref=e286] [cursor=pointer]':
+            - /url: https://www.nxtutors.com/blog/english-home-tutor-in-south-city-ii-best-home-tutors-near-you
+            - 'img "English Home Tutor in South City II: Best Home Tutors Near You" [ref=e288]'
+            - generic [ref=e289]:
+              - generic [ref=e290]: "English Home Tutor in South City II: Best Home Tutors Near You"
+              - generic [ref=e291]: Read more →
+    - contentinfo [ref=e292]:
+      - generic [ref=e294]:
+        - generic [ref=e295]:
+          - heading "NXTutors" [level=3] [ref=e296]
+          - paragraph [ref=e297]: Premium home tutoring in Gurugram. Trusted by 4,500+ parents for CBSE, ICSE & IB.
+          - generic [ref=e298]:
+            - link [ref=e299] [cursor=pointer]:
+              - /url: "#"
+              - img "Facebook" [ref=e300]
+            - link [ref=e301] [cursor=pointer]:
+              - /url: "#"
+              - img "Instagram" [ref=e302]
+            - link [ref=e303] [cursor=pointer]:
+              - /url: https://wa.me/917836034313
+              - img "WhatsApp" [ref=e304]
+        - generic [ref=e305]:
+          - heading "Quick Links" [level=4] [ref=e306]
+          - list [ref=e307]:
+            - listitem [ref=e308]:
+              - link "Home" [ref=e309] [cursor=pointer]:
+                - /url: https://www.nxtutors.com
+            - listitem [ref=e310]:
+              - link "Find Tutors" [ref=e311] [cursor=pointer]:
+                - /url: https://www.nxtutors.com/tutors
+            - listitem [ref=e312]:
+              - link "Become a Tutor" [ref=e313] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e314]:
+              - link "Demo Class" [ref=e315] [cursor=pointer]:
+                - /url: https://www.nxtutors.com/demo-class
+            - listitem [ref=e316]:
+              - link "Subscription Plan" [ref=e317] [cursor=pointer]:
+                - /url: https://www.nxtutors.com/pricing
+        - generic [ref=e318]:
+          - heading "Useful Links" [level=4] [ref=e319]
+          - list [ref=e320]:
+            - listitem [ref=e321]:
+              - link "Blog & Advice" [ref=e322] [cursor=pointer]:
+                - /url: https://www.nxtutors.com/blog
+            - listitem [ref=e323]:
+              - link "Pricing Guide" [ref=e324] [cursor=pointer]:
+                - /url: https://www.nxtutors.com/pricing-guide
+            - listitem [ref=e325]:
+              - link "FAQs" [ref=e326] [cursor=pointer]:
+                - /url: https://www.nxtutors.com/faqs
+            - listitem [ref=e327]:
+              - link "Terms & Conditions" [ref=e328] [cursor=pointer]:
+                - /url: https://www.nxtutors.com/terms-conditions
+            - listitem [ref=e329]:
+              - link "Privacy Policy" [ref=e330] [cursor=pointer]:
+                - /url: https://www.nxtutors.com/privacy-policy
+        - generic [ref=e331]:
+          - heading "Contact Us" [level=4] [ref=e332]
+          - list [ref=e333]:
+            - listitem [ref=e334]: 📍BLK-2/49, NXTUTORS EDTECH PVT LTD, M3M Cosmopolitan, off Golf Course Extension Road, Sector 66, Gurugram, Haryana 122101
+            - listitem [ref=e335]: 📞 +9178360 34313
+            - listitem [ref=e336]: ✉️ support@nxtutors.com
+          - link "Chat on WhatsApp" [ref=e337] [cursor=pointer]:
+            - /url: https://wa.me/917836034313
+      - generic [ref=e338]: © 2026 NXTutors — All rights reserved.

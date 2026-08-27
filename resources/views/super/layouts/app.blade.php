@@ -19,7 +19,9 @@
   <div class="container-fluid">
     <a class="navbar-brand" href="{{ route('super.dashboard') }}">NXTutors Super Admin</a>
 
-    <a class="navbar-brand" href="{{ route('super.settings') }}">Setting</a>
+    @auth
+      <a class="navbar-brand" href="{{ route('super.settings') }}">Setting</a>
+    @endauth
 
     @auth
       <form method="POST" action="{{ route('super.logout') }}">

@@ -6,7 +6,6 @@
   {{-- ✅ Meta (old format friendly) --}}
   <title>{{ $tutor->name }} | NXTutors</title>
   <meta name="description" content="View profile of {{ $tutor->name }} - verified home tutor in {{ $tutor->city }}.">
-  <link rel="canonical" href="{{ $canonical }}">
 
   {{-- OG --}}
   <meta property="og:title" content="{{ $tutor->name }} | NXTutors">
@@ -369,7 +368,7 @@ html {
   details.nxacc summary::-webkit-details-marker{display:none;}
   .nxacc__body{margin-top:10px;color:rgba(226,232,240,.82);font-size:14px;line-height:1.7;}
 </style>
- <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/home.css" />
+ <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/home.css?v={{ $nxtAssetV ?? 1 }}" />
 </head>
 
 <body class="page">
@@ -381,10 +380,15 @@ html {
     <section class="nxsec">
       <div class="nxsplit  nxheroRow">
         <article class="nxcard" style="padding:18px;">
-          <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;">
-            <img src="{{ $img }}" alt="{{ $tutor->name }}" width="120" height="120"
-                style="border-radius:18px;object-fit:cover;border:1px solid rgba(148,163,184,.35);flex:0 0 auto;"   
-                 onerror="this.src='{{ asset('frount/assets/images/tutor1.jpg') }}'">
+          <div style="display:flex;gap:22px;align-items:flex-start;flex-wrap:wrap;">
+            <div class="nxhero-photo">
+              <img src="{{ $img }}" alt="{{ $tutor->name }}" width="190" height="230"
+                   onerror="this.src='{{ asset('frount/assets/images/tutor1.jpg') }}'">
+              <span class="badge-verified">
+                <svg width="11" height="11" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M6.5 11.3 3.4 8.2l1.1-1.1 2 2 4.9-4.9 1.1 1.1z"/></svg>
+                Verified
+              </span>
+            </div>
 
             <div style="flex:1;min-width:240px;">
               <h1 class="nxh1" style="margin:0 0 6px;">{{ $tutor->name }}</h1>
@@ -449,72 +453,9 @@ html {
     </section>
 
 
-    <section class="section" id="nxAskAISection">
-  <div class="nxg-chat-card nxg-glass">
-
-    <div class="nxg-chat-top">
-      <h4>Ask NXT AI</h4>
-      <p>Ask about tutor fit, fees, timing, demo class etc.</p>
-    </div>
-
-    <!-- PRE-DEFINED Q&A -->
-    <div class="nxg-chat-box" id="nxAskAiThread">
-
-      <div class="nxg-msg ai">
-        <small>NXT AI</small>
-        Ask anything about tutors 🙂
-      </div>
-
-      <div class="nxg-msg user">
-        <small>Parent</small>
-        Who is best tutor?
-      </div>
-
-      <div class="nxg-msg ai">
-        <small>NXT AI</small>
-        Best tutor depends on subject fit, experience and availability.
-      </div>
-
-      <div class="nxg-msg user">
-        <small>Parent</small>
-        What are fees?
-      </div>
-
-      <div class="nxg-msg ai">
-        <small>NXT AI</small>
-        Fees usually range between ₹800–₹2500 depending on class and subject.
-      </div>
-
-      <div class="nxg-msg user">
-        <small>Parent</small>
-        Demo class available?
-      </div>
-
-      <div class="nxg-msg ai">
-        <small>NXT AI</small>
-        Yes 👍 You can book a demo class before finalizing tutor.
-      </div>
-
-      <div class="nxg-msg user">
-        <small>Parent</small>
-        Online or home tutor?
-      </div>
-
-      <div class="nxg-msg ai">
-        <small>NXT AI</small>
-        Both options are available — online & home tutors.
-      </div>
-
-    </div>
-
-    <!-- INPUT -->
-    <div class="nxg-chat-input">
-      <input type="text" id="nxAskAiInput" placeholder="Ask anything..." />
-      <button id="nxAskAiSend">Send</button>
-    </div>
-
-  </div>
-</section>
+    {{-- The assistant panel is about THIS tutor here: their facts fill the
+         side panel and every chat question carries their context. --}}
+    @include('home.partials.ask-ai', ['kbTutor' => $tutor])
 
    <section class="nxsec" id="aboutTutor" style="padding-top:20px;">
   <div class="nxsec__head">
@@ -765,7 +706,7 @@ html {
     <section class="nxsec">
       <div class="nxsec__head">
         <h2 class="nxh2">Subjects & Syllabus Covered</h2>
-        <p class="nxlead">Chapter-wise details (accordion for better UX)</p>
+        <p class="nxlead">How each subject and chapter is planned, practised and tested</p>
       </div>
 
       <div class="nxcard nxcard--soft" style="padding:16px;">
@@ -882,8 +823,13 @@ html {
               ₹{{ $hourlyMin }}
               @if($hourlyMax) <span style="opacity:.7;font-size:20px;">to</span> ₹{{ $hourlyMax }} @endif
               <span style="opacity:.7;font-size:16px;"> / hour</span>
+            @elseif(!empty($tutor->budget))
+              {{-- The header chip already states this figure; repeat it here
+                   instead of contradicting it with "Not specified". --}}
+              {{ str_contains($tutor->budget, '₹') ? $tutor->budget : '₹'.$tutor->budget }}
+              <span style="opacity:.7;font-size:16px;"> / class</span>
             @else
-              <span style="opacity:.8;font-size:18px;">Not specified</span>
+              <span style="opacity:.8;font-size:18px;">Shared after the demo class</span>
             @endif
           </div>
           <div class="nxlead" style="margin-top:8px;">Final fee depends on class & location</div>
@@ -909,46 +855,46 @@ html {
       <section class="nxsec">
         <div class="nxsec__head">
           <h2 class="nxh2">More tutors in {{ $tutor->city }}</h2>
-          <!-- <p class="nxlead">Horizontal scroll (no vertical infinite list)</p> -->
+          <a class="btn btn-ghost btn-small" href="{{ route('tutors.index') }}">View all tutors →</a>
         </div>
 
-        <div class="nxtutorstrip">
-          <div class="nxtutorstrip__grid">
-            @foreach($relatedTutors as $rt)
-              @php
-                $a = $rt->avatar ?? '';
-                $rtImg = $a && str_starts_with($a,'http')
-                  ? $a
-                  : ($a ? asset('storage/user/'.$a) : asset('frount/assets/images/tutor1.jpg'));
+        {{-- The same record card every other tutor surface uses. --}}
+        <div class="suggested-grid">
+          @foreach($relatedTutors as $rt)
+            @php
+              $a = $rt->avatar ?? '';
+              $rtImg = $a && str_starts_with($a,'http')
+                ? $a
+                : ($a ? asset('storage/user/'.$a) : asset('frount/assets/images/tutor1.jpg'));
 
-                   $encodedId = rtrim(strtr(base64_encode($rt->user_id . '-nxt'), '+/', '-_'), '=');
-            
-            $profileLink = route('tutor.newshow', [
-    'city' => Str::slug($rt->city),
-    'user_id' => $encodedId,
-    'name' => Str::slug($rt->name),
-]);
-              @endphp
+              $rtChips = [];
+              if (!empty($rt->courses) && $rt->courses->count()) {
+                $c = $rt->courses->first();
+                if ($c->board?->cat_title)         $rtChips[] = $c->board->cat_title;
+                if ($c->classCategory?->cat_title) $rtChips[] = $c->classCategory->cat_title;
+                if ($c->category?->cat_title)      $rtChips[] = $c->category->cat_title;
+              }
+              $rtChips = array_slice(array_values(array_unique(array_filter($rtChips))), 0, 3);
 
-              <div class="nxcard nxcard--soft nxtutorstrip__item" style="padding:14px;">
-                <div style="display:flex;gap:12px;align-items:center;">
-                  <img src="{{ $rtImg }}" width="54" height="54"
-                       style="border-radius:12px;object-fit:cover;border:1px solid rgba(148,163,184,.35);"
-                       onerror="this.src='{{ asset('frount/assets/images/tutor1.jpg') }}'">
-                  <div>
-                    <div class="nxk">{{ $rt->name }}</div>
-                    <div class="nxmuted" style="font-size:12px;">{{ $rt->address ?? '' }}</div>
-                  </div>
-                </div>
+              $encodedId = rtrim(strtr(base64_encode($rt->user_id . '-nxt'), '+/', '-_'), '=');
 
-                <div style="margin-top:12px;">
-                  <a class="nxbtn" href="{{ $profileLink }}">
-                    View Profile
-                  </a>
-                </div>
-              </div>
-            @endforeach
-          </div>
+              $profileLink = route('tutor.newshow', [
+                  'city' => Str::slug((string) $rt->city) ?: 'india',
+                  'user_id' => $encodedId,
+                  'name' => Str::slug((string) $rt->name) ?: 'tutor',
+              ]);
+
+              $rtWa = 'https://wa.me/' . $waNumber . '?text=' . rawurlencode("Hi, I want to connect with tutor {$rt->name} (UserID: {$rt->user_id}).");
+            @endphp
+
+            @include('partials.tutor-card', [
+              't' => $rt, 'img' => $rtImg, 'chips' => $rtChips,
+              'rating' => number_format((float)($rt->rating_avg ?? 0), 1),
+              'reviews' => (int)($rt->reviews_count ?? 0),
+              'address' => $rt->address ?? '', 'city' => $rt->city ?? '',
+              'waLink' => $rtWa, 'profileUrl' => $profileLink, 'compare' => null,
+            ])
+          @endforeach
         </div>
       </section>
     @endif
@@ -958,6 +904,7 @@ html {
       <section class="nxsec">
         <div class="nxsec__head">
           <h2 class="nxh2">Blog & Advice</h2>
+          <a class="btn btn-ghost btn-small" href="{{ route('blog.index') }}">View all blogs</a>
           <!-- <p class="nxlead">Horizontal scroll (compact height)</p> -->
         </div>
 
@@ -995,18 +942,67 @@ document.addEventListener('DOMContentLoaded', function () {
     const thread = document.getElementById('nxAskAiThread');
 
     function addMessage(type, name, text) {
-        const msg = document.createElement('div');
-        msg.className = 'nxg-msg ' + type;
-        msg.innerHTML = '<small>' + name + '</small>' + escapeHtml(text);
-        thread.appendChild(msg);
+        const isAi = type === 'ai';
+        const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        const wrap = document.createElement('div');
+        wrap.className = 'nxg-msg ' + type;
+
+        const av = document.createElement('span');
+        av.className = 'nxg-av';
+        av.textContent = isAi ? '🤖' : '🧑';
+
+        const nm = document.createElement('span');
+        nm.className = 'nxg-name';
+        nm.textContent = isAi ? 'NXT AI' : 'You';
+
+        if (isAi) {
+            const head = document.createElement('div');
+            head.className = 'nxg-head';
+            const ts = document.createElement('span');
+            ts.className = 'nxg-time';
+            ts.textContent = time;
+            head.appendChild(av);
+            head.appendChild(nm);
+            head.appendChild(ts);
+
+            const body = document.createElement('div');
+            body.className = 'nxg-text';
+            body.textContent = text;
+
+            const react = document.createElement('div');
+            react.className = 'nxg-react';
+            react.innerHTML = '<button type="button" aria-label="Helpful">👍</button><button type="button" aria-label="Not helpful">👎</button>';
+
+            wrap.appendChild(head);
+            wrap.appendChild(body);
+            wrap.appendChild(react);
+        } else {
+            const bubble = document.createElement('div');
+            bubble.className = 'nxg-bubble';
+            const body = document.createElement('span');
+            body.className = 'nxg-text';
+            body.textContent = text;
+            const ts = document.createElement('span');
+            ts.className = 'nxg-time';
+            ts.textContent = time + ' ✓';
+            bubble.appendChild(body);
+            bubble.appendChild(ts);
+
+            wrap.appendChild(av);
+            wrap.appendChild(nm);
+            wrap.appendChild(bubble);
+        }
+
+        thread.appendChild(wrap);
         thread.scrollTop = thread.scrollHeight;
     }
 
-    function escapeHtml(text) {
-        const div = document.createElement('div');
-        div.innerText = text;
-        return div.innerHTML;
-    }
+    document.addEventListener('click', function (e) {
+        const btn = e.target.closest('.nxg-react button');
+        if (!btn) return;
+        btn.parentNode.querySelectorAll('button').forEach(b => { if (b !== btn) b.classList.remove('is-on'); });
+        btn.classList.toggle('is-on');
+    });
 
     function sendMessage() {
         const message = input.value.trim();
@@ -1016,7 +1012,7 @@ document.addEventListener('DOMContentLoaded', function () {
         input.value = '';
 
         sendBtn.disabled = true;
-        sendBtn.innerText = 'Thinking...';
+        sendBtn.classList.add('is-loading');
 
         fetch("{{ route('ask.nxt.ai') }}", {
             method: 'POST',
@@ -1035,7 +1031,7 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .finally(() => {
             sendBtn.disabled = false;
-            sendBtn.innerText = 'Send';
+            sendBtn.classList.remove('is-loading');
         });
     }
 

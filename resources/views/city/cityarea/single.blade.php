@@ -97,7 +97,7 @@
   @if($faqSchema)
     <script type="application/ld+json">{!! json_encode($faqSchema, JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE) !!}</script>
   @endif
-   <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/city-area.css" />
+   <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/city-area.css?v={{ $nxtAssetV ?? 1 }}" />
 </head>
 
 <body class="page">

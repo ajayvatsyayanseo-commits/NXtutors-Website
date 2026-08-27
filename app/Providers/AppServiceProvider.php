@@ -58,6 +58,24 @@ class AppServiceProvider extends ServiceProvider
             return Limit::perMinute(max(1, (int) config('cost-safety.rate_limits.webhook', 120)))->by($request->ip());
         });
 
+        // The agent tutor feed. Keyed on the agent identity rather than the
+        // IP, because a Lambda fleet arrives from many addresses and a stuck
+        // sync job must not consume the budget a real visitor needs.
+        RateLimiter::for('agent-feed', function (Request $request) {
+            return Limit::perMinute(max(1, (int) config('agent.rate_limit_per_minute', 60)))
+                ->by((string) $request->header('X-Nxt-Agent', $request->ip()));
+        });
+
+        // The agent gateway. A far higher ceiling than the feed: the feed is
+        // one scheduled sweep, while the gateway is called several times per
+        // conversation turn — identity, contacts, availability, quote.
+        // Keyed on the agent identity for the same reason as the feed.
+        RateLimiter::for('agent-gateway', function (Request $request) {
+            return Limit::perMinute(
+                max(1, (int) config('agent.gateway_rate_limit_per_minute', 300))
+            )->by((string) $request->header('X-Nxt-Agent', $request->ip()));
+        });
+
         RateLimiter::for('admin-generation', function (Request $request) {
             return Limit::perMinute(max(1, (int) config('cost-safety.rate_limits.admin_generation', 5)))
                 ->by((string) ($request->user()?->getAuthIdentifier() ?? $request->ip()));

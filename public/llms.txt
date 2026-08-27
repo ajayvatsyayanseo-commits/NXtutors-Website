@@ -1,0 +1,97 @@
+# NXTutors
+
+> NXTutors is an Indian home and online tutoring service that matches students with ID-verified private tutors for CBSE, ICSE, ISC, IB and IGCSE boards, and for JEE, NEET and SAT exam preparation. Instead of returning a long directory to sift through, the platform takes a subject and a locality and proposes two or three specific tutor matches, each offered with a free demo class.
+
+NXTutors operates across 24 Indian cities, with the densest coverage in Gurugram and Delhi NCR. Tutoring is delivered both at home and online. Published typical pricing is ₹800–2,500 per hour, varying by board, class level and subject; the company states it has matched 4,500+ families. A demo class is free and requires no card or commitment.
+
+Operated by NXTUTORS EDTECH PVT LTD, BLK-2/49, M3M Cosmopolitan, off Golf Course Extension Road, Sector 66, Gurugram, Haryana 122101, India. Contact: support@nxtutors.com, +91 78360 34313.
+
+## Core pages
+
+- [NXTutors home](https://www.nxtutors.com/): Overview of the tutor matching service, boards covered and how the matching process works.
+- [Find tutors](https://www.nxtutors.com/tutors): Searchable listing of verified tutors, filterable by subject and locality.
+- [Book a free demo class](https://www.nxtutors.com/demo-class): How to request a no-cost trial lesson before committing.
+- [Pricing plans](https://www.nxtutors.com/pricing): Subscription and package options.
+- [Pricing guide](https://www.nxtutors.com/pricing-guide): Explanation of typical online and home tuition fees in India and what drives the range.
+- [Cities served](https://www.nxtutors.com/city): Index of all city coverage pages.
+- [Courses](https://www.nxtutors.com/course): Index of subject and board-specific course pages.
+- [Blog](https://www.nxtutors.com/blog): Exam preparation guides and locality tutoring guides.
+- [FAQs](https://www.nxtutors.com/faqs): Common questions about tutors, demos, scheduling and fees.
+- [Contact](https://www.nxtutors.com/contact): Company contact details and enquiry form.
+
+## Board and subject courses
+
+- [CBSE Maths, Classes 1–12](https://www.nxtutors.com/course/class-1-12-cbse-mathematics): Expert tutors and online practice across the full CBSE mathematics syllabus.
+- [ICSE Maths, Classes 1–12](https://www.nxtutors.com/course/class-1-12-icse-mathematics): ICSE mathematics tutoring and practice, Classes 1 to 12.
+- [ISC Maths, Classes 11–12](https://www.nxtutors.com/course/class-11-12-isc-mathematics): ISC mathematics tutoring and exam preparation for the senior secondary years.
+- [IGCSE Extended Maths](https://www.nxtutors.com/course/igcse-extended-mathematics): Tutoring and exam preparation for the IGCSE Extended mathematics tier.
+- [IB DP Maths AA (SL & HL)](https://www.nxtutors.com/course/ib-dp-mathematics-analysis-approaches-sl-hl): IB Diploma Analysis and Approaches at Standard and Higher Level.
+- [IB DP Maths AI (SL & HL)](https://www.nxtutors.com/course/ib-dp-mathematics-applications-interpretation-sl-hl): IB Diploma Applications and Interpretation at Standard and Higher Level.
+- [IB MYP Mathematics (MYP 1–5)](https://www.nxtutors.com/course/ib-myp-mathematics-myp-1-5): Concept-led IB Middle Years Programme mathematics tutoring.
+- [Mathematics](https://www.nxtutors.com/course/mathematics): General mathematics tutoring across boards and class levels.
+
+## Board exam study guides
+
+- [CBSE Class 12 Physics strategies](https://www.nxtutors.com/blog/cbse-class-12-physics-strategies): Chapter priority, past-year questions and a revision checklist.
+- [CBSE Class 12 Maths — calculus and algebra](https://www.nxtutors.com/blog/cbse-class-12-maths-calculusalgebra): Topic priority, PYQs and a preparation checklist.
+- [CBSE Class 12 Chemistry — organic and inorganic](https://www.nxtutors.com/blog/cbse-class-12-chemistry-organicinorganic): Chapter weighting, PYQs and revision planning.
+- [ICSE Class 10 Maths boards](https://www.nxtutors.com/blog/icse-class-10-maths-boards): Chapter priority, past papers and an exam checklist.
+- [ICSE Class 10 English papers](https://www.nxtutors.com/blog/icse-class-10-english-papers): Paper structure, chapter priority and preparation tips.
+- [ISC Class 12 Physics](https://www.nxtutors.com/blog/isc-class-12-physics-tips): Syllabus breakdown, notes and an exam checklist.
+- [ISC Class 12 English](https://www.nxtutors.com/blog/isc-class-12-english-literaturelanguage): Literature and language syllabus, PYQs and checklist.
+- [IGCSE Core and Extended Maths](https://www.nxtutors.com/blog/igcse-coreextended-maths): Syllabus differences, notes and exam checklist for both tiers.
+- [IB Physics SL/HL — IA and EE](https://www.nxtutors.com/blog/-ib-physics-slhl-iaee): Internal Assessment and Extended Essay guidance plus syllabus notes.
+- [How to choose a board or stream](https://www.nxtutors.com/blog/how-to-choose-boardstream): Parent guide to selecting between boards and academic streams.
+
+## Competitive exam preparation
+
+- [JEE Physics, topic-wise preparation](https://www.nxtutors.com/blog/jee-physics-topicwise-prep): Topic breakdown, notes and syllabus coverage.
+- [JEE Maths, topic-wise preparation](https://www.nxtutors.com/blog/jee-maths-topicwise-prep): Topic-by-topic preparation plan and syllabus notes.
+- [JEE Chemistry — physical, organic, inorganic](https://www.nxtutors.com/blog/jee-chemistry-physicalorganicinorganic): Branch-by-branch preparation guidance.
+- [NEET Physics high-yield topics](https://www.nxtutors.com/blog/-neet-physics-highyield): Highest-return topics with notes and syllabus breakdown.
+- [SAT Math modules and DSAT](https://www.nxtutors.com/blog/sat-math-modules--dsat): Digital SAT module structure and preparation approach.
+- [JEE Main course](https://www.nxtutors.com/course/jee-main): JEE Main coaching and tutor matching.
+
+## Cities served
+
+- [Gurugram](https://www.nxtutors.com/city/gurugram): Home and online tutors across Gurugram for CBSE, ICSE, IB and IGCSE.
+- [Delhi NCR](https://www.nxtutors.com/city/delhi-ncr): Tutor coverage across the Delhi National Capital Region.
+- [Faridabad](https://www.nxtutors.com/city/faridabad): CBSE, ICSE and IB home and online tutors.
+- [Mumbai](https://www.nxtutors.com/city/mumbai): CBSE, ICSE and IB tutoring across Mumbai.
+- [Pune](https://www.nxtutors.com/city/pune): CBSE, ICSE, IB and IGCSE tutors in Pune.
+- [Bengaluru](https://www.nxtutors.com/city/bengaluru): CBSE, ICSE, IB and IGCSE tutors in Bengaluru.
+- [Hyderabad](https://www.nxtutors.com/city/hyderabad): Home and online tutoring across Hyderabad.
+- [Chennai](https://www.nxtutors.com/city/chennai): CBSE, ICSE and IB tutoring in Chennai.
+- [Kolkata](https://www.nxtutors.com/city/kolkata): Home and online tutors across Kolkata.
+- [Ahmedabad](https://www.nxtutors.com/city/ahmedabad): CBSE, ICSE and IB coaching in Ahmedabad.
+- [Jaipur](https://www.nxtutors.com/city/jaipur): Home and online tutors in Jaipur.
+- [Chandigarh](https://www.nxtutors.com/city/chandigarh): Tutoring across Chandigarh.
+- [Lucknow](https://www.nxtutors.com/city/lucknow): CBSE, ICSE and IB tutors in Lucknow.
+- [Indore](https://www.nxtutors.com/city/indore): Home and online tutors in Indore.
+- [Bhopal](https://www.nxtutors.com/city/bhopal): CBSE, ICSE and IB tutors in Bhopal.
+- [Nagpur](https://www.nxtutors.com/city/nagpur): Home and online tutoring in Nagpur.
+- [Surat](https://www.nxtutors.com/city/surat): CBSE, ICSE, IB and IGCSE tutors in Surat.
+- [Coimbatore](https://www.nxtutors.com/city/coimbatore): Home and online tutors in Coimbatore.
+- [Kochi](https://www.nxtutors.com/city/kochi): CBSE, ICSE, IB and IGCSE tutoring in Kochi.
+- [Thiruvananthapuram](https://www.nxtutors.com/city/thiruvananthapuram): Home and online tutors in Thiruvananthapuram.
+- [Guwahati](https://www.nxtutors.com/city/guwahati): CBSE, ICSE and IB tutors in Guwahati.
+- [Patna](https://www.nxtutors.com/city/patna): Home and online tutoring in Patna.
+- [Ranchi](https://www.nxtutors.com/city/ranchi): CBSE, ICSE and IB tutors in Ranchi.
+- [Jamshedpur](https://www.nxtutors.com/city/tata): Home and online tutors in Jamshedpur.
+
+## Locality tutoring guides (Gurugram)
+
+- [Maths home tutor, Sushant Lok Phase II](https://www.nxtutors.com/blog/maths-home-tutor-in-sushant-lok-phase-ii-best-home-tutors-near-you): CBSE maths tutoring in this Gurugram locality.
+- [Science home tutor, Sushant Lok Phase I](https://www.nxtutors.com/blog/science-home-tutor-in-sushant-lok-phase-i-best-home-tutors-near-you): Physics, chemistry and biology tutors nearby.
+- [English home tutor, DLF Phase 1](https://www.nxtutors.com/blog/english-home-tutor-in-dlf-phase-1-best-home-tutors-near-you): Spoken and written English tutoring in DLF Phase 1.
+- [JEE coaching at home, Sushant Lok Phase I](https://www.nxtutors.com/blog/jee-coaching-at-home-in-sushant-lok-phase-i-best-home-tutors-near-you): JEE physics and maths tutors in the locality.
+- [NEET coaching at home, Sushant Lok Phase II](https://www.nxtutors.com/blog/neet-coaching-at-home-in-sushant-lok-phase-ii-best-home-tutors-near-you): NEET biology and chemistry tutors nearby.
+- [IB and IGCSE specialists, Sushant Lok Phase I](https://www.nxtutors.com/blog/ibigcse-specialists-in-sushant-lok-phase-i-best-home-tutors-near-you): IB and IGCSE subject specialists in the locality.
+- [Home tuition fees, DLF Phase 4](https://www.nxtutors.com/blog/fees--packages-in-dlf-phase-4-best-home-tutors-near-you): Hourly and monthly tuition charges in this area.
+- [Board exam strategy, South City II](https://www.nxtutors.com/blog/board-exam-strategy-in-south-city-ii-best-home-tutors-near-you): Board exam preparation guidance for local students.
+
+## Optional
+
+- [Privacy policy](https://www.nxtutors.com/privacy-policy): How NXTutors handles personal data.
+- [Terms and conditions](https://www.nxtutors.com/terms-conditions): Terms governing use of the service.
+- [XML sitemap](https://www.nxtutors.com/sitemap.xml): Machine-readable index of crawlable URLs.

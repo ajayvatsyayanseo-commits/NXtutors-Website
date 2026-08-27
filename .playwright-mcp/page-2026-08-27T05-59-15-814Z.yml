@@ -1,0 +1,204 @@
+- generic [ref=f26e1]:
+  - link "Skip to main content" [ref=f26e2] [cursor=pointer]:
+    - /url: "#nxt-content"
+  - generic [ref=f26e3]:
+    - banner [ref=f26e4]:
+      - link "NXTutors — home" [ref=f26e6] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000
+        - generic [ref=f26e7]: NXTutors
+      - button "Toggle menu" [ref=f26e9] [cursor=pointer]
+    - generic [ref=f26e13]:
+      - main [ref=f26e14]:
+        - generic [ref=f26e15]:
+          - generic [ref=f26e16]:
+            - img "Gurugram" [ref=f26e17]
+            - generic [ref=f26e18]:
+              - heading "Gurugram" [level=1] [ref=f26e19]
+              - paragraph [ref=f26e20]: Premium education market with high demand for international curricula and personalized tutoring.
+              - generic [ref=f26e21]: Explore Areas
+          - textbox "Search area name..." [ref=f26e23]
+          - generic [ref=f26e24]:
+            - generic [ref=f26e25]:
+              - heading "NXTutors in ATS Triumph, Sector 104 Gurugram — Home & Online Tuition for CBSE & ICSE Boards" [level=3] [ref=f26e26]
+              - paragraph [ref=f26e28]:
+                - text: Looking for experienced
+                - strong [ref=f26e29]: home tutors in ATS Triumph, Sector 104 Gurugram
+                - text: "? NXTutors brings verified, professional educators to your doorstep. Whether your child needs extra help in"
+                - strong [ref=f26e30]: Maths, Science, English, Accounts, Coding, or Languages
+                - text: ", we have personalized options for every learner — from beginners to board exam candidates"
+              - link "View Tutors" [ref=f26e32] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/city/gurugram/ats-triumph-sector-104-gurugram
+            - generic [ref=f26e33]:
+              - heading "NXTutors – Home Tutors in DLF Trinity Towers, Sector 53 (Gurugram)" [level=3] [ref=f26e34]
+              - paragraph [ref=f26e36]:
+                - text: Welcome to
+                - strong [ref=f26e37]: NXTutors DLF Trinity Towers, Sector 53, Gurugram
+                - text: — your local partner for affordable, female, and experienced home tutoring. We serve students from
+                - strong [ref=f26e38]: Class 1 to Class 12
+                - text: ", across"
+                - strong [ref=f26e39]: CBSE & ICSE boards
+                - text: ", providing both"
+                - strong [ref=f26e40]: online and offline
+                - text: tutoring options. Our rates vary from
+                - strong [ref=f26e41]: ₹500/hour up to ₹2,000/hour
+                - text: ", with monthly packages ranging from"
+                - strong [ref=f26e42]: ₹5,000 to ₹30,000
+                - text: ", depending on subject, grade, frequency, and tutor seniority"
+              - link "View Tutors" [ref=f26e44] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/city/gurugram/dlf-trinity-towers-sector-53-gurugram
+            - generic [ref=f26e45]:
+              - heading "NXTutors — Home Tutor Services for M3M Urbana Residences, Sector 67 (Gurugram)" [level=3] [ref=f26e46]
+              - generic [ref=f26e47]:
+                - paragraph [ref=f26e48]: "Our tutors are well aligned with academic structures of:"
+                - paragraph [ref=f26e49]:
+                  - strong [ref=f26e50]: The Shri Ram School, Aravali Campus
+                  - text: — emphasis on CBSE/ICSE and internal assessments
+                - paragraph [ref=f26e51]:
+                  - strong [ref=f26e52]: Heritage Xperiential Learning School, Sector 62
+                  - text: — project work and application-based learning
+                - paragraph [ref=f26e53]:
+                  - strong [ref=f26e54]: GD Goenka Public School, Sohna Road
+                  - text: — strong internal tests and lab-based Science & SST
+                - paragraph [ref=f26e55]:
+                  - strong [ref=f26e56]: Ryan International & Presidium
+                  - text: — holistic education, language, arts & co-curricular balance
+                - paragraph [ref=f26e57]: This ensures that tuition from NXTutors complements your child’s regular school work and exam schedules.
+              - link "View Tutors" [ref=f26e59] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/city/gurugram/m3m-urbana-residences-sector-67-gurugram
+            - generic [ref=f26e60]:
+              - 'heading "NXTutors: Home Tutors in The World Spa (East/West), Sector 30, Gurugram" [level=3] [ref=f26e61]'
+              - paragraph [ref=f26e63]:
+                - text: At
+                - strong [ref=f26e64]: NXTutors
+                - text: ", we provide"
+                - strong [ref=f26e65]: personalized home tutoring
+                - text: in
+                - strong [ref=f26e66]: The World Spa (East/West), Sector 30, Gurugram
+                - text: ", helping students strengthen academic skills, gain confidence, and excel in all subjects. Our tutors cover"
+                - strong [ref=f26e67]: Mathematics, Science, English, Accounts, Coding, and Languages
+                - text: ", with"
+                - strong [ref=f26e68]: both online and offline sessions
+                - text: tailored to each student’s learning style
+              - link "View Tutors" [ref=f26e70] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/city/gurugram/the-world-spa-eastwest-sector-30-gurugram
+            - generic [ref=f26e71]:
+              - heading "Best Home Tutors in Vatika City, Sector 49 Gurugram | Affordable, Experienced & Female Tutors" [level=3] [ref=f26e72]
+              - paragraph [ref=f26e74]:
+                - text: Give your child the advantage of
+                - strong [ref=f26e75]: NXTutors in Vatika City, Sector 49, Gurugram
+                - text: . Experienced, female, and affordable tutors provide
+                - strong [ref=f26e76]: personalized online and offline classes
+                - text: for CBSE & ICSE students.
+              - link "View Tutors" [ref=f26e78] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/city/gurugram/vatika-city-sector-49-gurugram
+            - generic [ref=f26e79]:
+              - 'heading "NXTutors: Home Tutors in Adani Aangan, Sector 89A, Gurugram" [level=3] [ref=f26e80]'
+              - paragraph [ref=f26e82]:
+                - text: NXTutors provides
+                - strong [ref=f26e83]: personalized home tuition
+                - text: in Adani Aangan, Sector 89A, Gurugram. Our
+                - strong [ref=f26e84]: experienced, female, and affordable tutors
+                - text: cater to CBSE and ICSE students from Class 1 to 12. From Maths and Science to Languages, Accounts, and Coding, our tutors combine subject mastery with exam strategies to boost academic performance
+              - link "View Tutors" [ref=f26e86] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/city/gurugram/adani-aangan
+            - generic [ref=f26e87]:
+              - heading "Best Home Tutors in Adani Aangan Phase 2, Sector 88A Gurugram – Female, Experienced & Affordable Tutors | NXTutors" [level=3] [ref=f26e88]
+              - paragraph [ref=f26e90]:
+                - text: Looking for the
+                - strong [ref=f26e91]: best home tutor in Adani Aangan Phase 2, Sector 88A Gurugram
+                - text: "?Welcome to"
+                - strong [ref=f26e92]: NXTutors
+                - text: ", your trusted platform for finding"
+                - strong [ref=f26e93]: qualified, affordable, and verified home tutors
+                - text: for all subjects and classes. We offer
+                - strong [ref=f26e94]: one-on-one tutoring
+                - text: for
+                - strong [ref=f26e95]: CBSE, ICSE, and International Board
+                - text: students, both
+                - strong [ref=f26e96]: online and offline
+              - link "View Tutors" [ref=f26e98] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/city/gurugram/adani-aangan-phase-2
+            - generic [ref=f26e99]:
+              - heading "NXTutors — Home Tutors for Adani M2K Oyster Grande 2, Sector 102, Gurugram" [level=3] [ref=f26e100]
+              - paragraph [ref=f26e102]:
+                - text: Finding the
+                - strong [ref=f26e103]: best home tutor
+                - text: in Adani M2K Oyster Grande 2, Sector 102 (Gurugram), has never been easier. NXTutors connects families with
+                - strong [ref=f26e104]: experienced
+                - text: ","
+                - strong [ref=f26e105]: female
+                - text: ", and"
+                - strong [ref=f26e106]: affordable home tutors
+                - text: for in-home and online tuition across CBSE and ICSE boards. Whether your child needs support in
+                - strong [ref=f26e107]: Maths, Science, English, Accounts, Coding, or Languages
+                - text: ", our personalized lessons ensure concept clarity, exam readiness, and skill development"
+              - link "View Tutors" [ref=f26e109] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/city/gurugram/adani-m2k-oyster-grande-2
+            - generic [ref=f26e110]:
+              - heading "NXTutors – Home Tuition Services at Adani Oyster Grande, Sector 102, Gurugram" [level=3] [ref=f26e111]
+              - paragraph [ref=f26e113]: Adani Oyster Grande is a premium residential project located in Sector 102, Gurugram, offering modern amenities and a serene environment. The locality is well-connected to major educational institutions, making it an ideal place for families seeking quality home tuition services
+              - link "View Tutors" [ref=f26e115] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/city/gurugram/adani-oyster-grande
+          - button "Load More" [ref=f26e117] [cursor=pointer]
+      - contentinfo [ref=f26e118]:
+        - generic [ref=f26e119]:
+          - generic [ref=f26e120]:
+            - heading "NXTutors" [level=3] [ref=f26e121]
+            - paragraph [ref=f26e122]: Premium home tutoring in Gurugram. Trusted by 4,500+ parents for CBSE, ICSE & IB.
+            - generic [ref=f26e123]:
+              - link "NXTutors on Facebook" [ref=f26e124] [cursor=pointer]:
+                - /url: "#"
+              - link "NXTutors on Instagram" [ref=f26e127] [cursor=pointer]:
+                - /url: "#"
+              - link "NXTutors on WhatsApp" [ref=f26e130] [cursor=pointer]:
+                - /url: https://wa.me/917836034313
+          - generic [ref=f26e133]:
+            - heading "Quick Links" [level=4] [ref=f26e134]
+            - list [ref=f26e135]:
+              - listitem [ref=f26e136]:
+                - link "Home" [ref=f26e137] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000
+              - listitem [ref=f26e138]:
+                - link "Find Tutors" [ref=f26e139] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/tutors
+              - listitem [ref=f26e140]:
+                - link "Become a Tutor" [ref=f26e141] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f26e142]:
+                - link "Demo Class" [ref=f26e143] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/demo-class
+              - listitem [ref=f26e144]:
+                - link "Subscription Plan" [ref=f26e145] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/pricing
+          - generic [ref=f26e146]:
+            - heading "Useful Links" [level=4] [ref=f26e147]
+            - list [ref=f26e148]:
+              - listitem [ref=f26e149]:
+                - link "Blog & Advice" [ref=f26e150] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/blog
+              - listitem [ref=f26e151]:
+                - link "Pricing Guide" [ref=f26e152] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/pricing-guide
+              - listitem [ref=f26e153]:
+                - link "FAQs" [ref=f26e154] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/faqs
+              - listitem [ref=f26e155]:
+                - link "Terms & Conditions" [ref=f26e156] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/terms-conditions
+              - listitem [ref=f26e157]:
+                - link "Privacy Policy" [ref=f26e158] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/privacy-policy
+          - generic [ref=f26e159]:
+            - heading "Contact Us" [level=4] [ref=f26e160]
+            - list [ref=f26e161]:
+              - listitem [ref=f26e162]:
+                - generic [ref=f26e165]: BLK-2/49, NXTUTORS EDTECH PVT LTD, M3M Cosmopolitan, off Golf Course Extension Road, Sector 66, Gurugram, Haryana 122101
+              - listitem [ref=f26e166]:
+                - link "+9178360 34313" [ref=f26e169] [cursor=pointer]:
+                  - /url: tel:+917836034313
+              - listitem [ref=f26e170]:
+                - link "support@nxtutors.com" [ref=f26e173] [cursor=pointer]:
+                  - /url: mailto:support@nxtutors.com
+            - link "Chat on WhatsApp" [ref=f26e174] [cursor=pointer]:
+              - /url: https://wa.me/917836034313
+        - generic [ref=f26e175]: © 2026 NXTutors — All rights reserved.

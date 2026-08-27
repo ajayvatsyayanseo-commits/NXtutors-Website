@@ -78,67 +78,10 @@
   <script type="application/ld+json">{!! json_encode($breadcrumb, JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE) !!}</script>
   <script type="application/ld+json">{!! json_encode($tutorListSchema, JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE) !!}</script>
 
+  {{-- Tutor card, filter bar and grid are owned by the design system
+       (css/nxt-ds.css). Only this page's container width lives here. --}}
   <style>
-    .container{max-width:1100px;margin:auto;padding:18px;}
-    .title{color:#fff;font-size:34px;font-weight:800;margin:0 0 12px 0}
-
-    .filterbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:8px}
-    .filterbar input,.filterbar select{
-      background:rgba(255,255,255,0.06);
-      border:1px solid rgba(255,255,255,0.12);
-      color:#fff;
-      padding:10px 12px;
-      border-radius:12px;
-      min-width:200px;
-      outline:none;
-    }
-    .filterbar input::placeholder{color:rgba(255,255,255,0.55)}
-
-    .grid-3{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:16px}
-    @media(max-width:980px){.grid-3{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:580px){.grid-3{grid-template-columns:repeat(2,1fr)}.filterbar input,.filterbar select{min-width:100%}}
-
-    /* ✅ Tutor card */
-    .tutor-card{
-      background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
-      border:1px solid rgba(255,255,255,0.12);
-      border-radius:16px;
-      padding:14px;
-      transition:.25s ease;
-      color:#fff;
-    }
-    .tutor-card:hover{
-      transform:translateY(-4px);
-      box-shadow:0 14px 35px rgba(0,0,0,.45);
-      border-color:rgba(255,255,255,0.22);
-    }
-    .tutor-top{display:flex;gap:12px;align-items:center}
-    .tutor-avatar{position:relative}
-    .tutor-avatar img{
-      width:86px;height:86px;object-fit:cover;border-radius:14px;display:block;
-      border:1px solid rgba(255,255,255,0.12);
-    }
-    .badge-verified{
-      position:absolute;right:-6px;bottom:-6px;
-      background:#2ecc71;color:#000;font-weight:800;font-size:12px;
-      width:26px;height:26px;border-radius:50%;
-      display:grid;place-items:center;
-    }
-    .tutor-name{margin:0;font-size:16px;font-weight:800;line-height:1.2}
-    .tutor-rating{font-size:13px;opacity:.85;margin-top:4px}
-    .tutor-chip{
-      display:inline-block;margin-top:8px;
-      font-size:12px;padding:5px 10px;border-radius:999px;
-      background:rgba(76,141,255,0.18);color:#9fb4ff;
-      border:1px solid rgba(76,141,255,0.22);
-    }
-    .tutor-location{margin-top:10px;font-size:13px;opacity:.8}
-    .tutor-actions{display:flex;gap:10px;margin-top:12px}
-    .btn-outline{
-      background:transparent;border:1px solid rgba(255,255,255,0.22);color:#fff;
-      padding:2px 3px;border-radius:999px;font-weight:800;text-align:center;flex:1;
-    }
-    .btn-outline:hover{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.35)}
+    .container{max-width:1100px;margin:auto;}
   </style>
 </head>
 

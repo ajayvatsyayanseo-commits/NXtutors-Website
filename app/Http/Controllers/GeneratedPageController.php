@@ -25,7 +25,30 @@ public function show($slug)
         $canonicalTarget = (string) data_get($payload, 'canonical_target', '');
 
         $isNoindex = ($indexFlag === 'Noindex');
-        $canonicalUrl = $canonicalTarget ? url($canonicalTarget) : url()->current();
+
+        // canonical_target names a hub page like "/gurugram/sector-56/mathematics"
+        // that this project never built a route for, so every one of these
+        // pointed at a 404. Google honoured it: it dropped the page it was told
+        // was a duplicate and reported the target as "Not found (404)". That is
+        // thousands of pages surrendering themselves to a URL that does not exist.
+        //
+        // So only follow the target if the app can actually serve it, and point
+        // at ourselves otherwise. Asking the router rather than hardcoding the
+        // decision means that if the hub pages do get built later these
+        // canonicals start pointing at them on their own, and can never again
+        // name a 404.
+        $canonicalUrl = url()->current();
+
+        if ($canonicalTarget !== '') {
+            try {
+                app('router')->getRoutes()->match(
+                    \Illuminate\Http\Request::create($canonicalTarget)
+                );
+                $canonicalUrl = url($canonicalTarget);
+            } catch (\Symfony\Component\HttpKernel\Exception\NotFoundHttpException $e) {
+                // Phantom target: keep the self-referencing canonical set above.
+            }
+        }
 
     $country = trim($page->country ?: 'India');
     $state   = trim($page->state ?: '');

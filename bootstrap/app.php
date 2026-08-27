@@ -7,6 +7,14 @@ use Illuminate\Foundation\Configuration\Middleware;
 return Application::configure(basePath: dirname(__DIR__))
     ->withRouting(
         web: __DIR__.'/../routes/web.php',
+        // Signed, read-only, machine-to-machine. See routes/api.php.
+        api: __DIR__.'/../routes/api.php',
+        then: function (): void {
+            // The agent gateway. Separate file so routes/api.php stays
+            // GET-only for the read-only tutor feed.
+            Illuminate\Support\Facades\Route::group([], __DIR__.'/../routes/agent_gateway.php');
+        },
+        apiPrefix: '',
         commands: __DIR__.'/../routes/console.php',
         health: '/up',
     )

@@ -12,16 +12,17 @@
     $payload = is_array($page->payload) ? $page->payload : [];
 
     $indexFlag = (string) data_get($payload, 'index_flag', 'Index');        // Index | Noindex | Skip
-    $canonicalTarget = (string) data_get($payload, 'canonical_target', ''); // "/gurugram/sector-56/mathematics"
 
     $isNoindex = ($indexFlag === 'Noindex');
 
-    // canonical full URL
-    $canonicalUrl = $canonicalTarget ? url($canonicalTarget) : url()->current();
+    // $canonicalUrl and $isNoindex both come from GeneratedPageController::show().
+    // The canonical is worked out there — it has to decide whether this page's
+    // canonical_target is a route the app can actually serve — so don't
+    // recompute it here. Two copies of that rule is how one of them goes stale.
+    $canonicalUrl = $canonicalUrl ?? url()->current();
   @endphp
 
   <meta name="robots" content="{{ $isNoindex ? 'noindex,follow' : 'index,follow' }}">
-  <link rel="canonical" href="{{ $canonicalUrl }}">
 
   {{-- Optional OG --}}
   <meta property="og:url" content="{{ $canonicalUrl }}">
@@ -56,7 +57,7 @@
     <script type="application/ld+json">{!! $schemaJson !!}</script>
   @endforeach
 </head>
-<link rel="stylesheet" href="{{ asset('frount/assets/css/genpage-premium.css') }}">
+<link rel="stylesheet" href="{{ asset('frount/assets/css/genpage-premium.css') }}?v={{ @filemtime(base_path('public/frount/assets/css/genpage-premium.css')) ?: ($nxtAssetV ?? 1) }}">
 
  
 
@@ -143,9 +144,9 @@
                     <b>{{ $page->city }}</b>.
                   </div>
                   <ul class="nxcard__list">
-                    <li>✅ Verified tutors</li>
-                    <li>✅ Personalized learning</li>
-                    <li>✅ Flexible {{ ucfirst($page->service_mode ?? 'home') }} sessions</li>
+                    <li>Verified tutors</li>
+                    <li>Personalized learning</li>
+                    <li>Flexible {{ ucfirst($page->service_mode ?? 'home') }} sessions</li>
                   </ul>
                 </div>
               </div>
@@ -165,7 +166,7 @@
         @if(count($bul))
           <div class="nxlist">
             @foreach($bul as $b)
-              <div class="nxlist__item">• {{ $b }}</div>
+              <div class="nxlist__item">{{ $b }}</div>
             @endforeach
           </div>
         @endif
@@ -185,7 +186,7 @@
         @if(count($topics))
           <div class="nxlist">
             @foreach($topics as $t)
-              <div class="nxlist__item">• {{ $t }}</div>
+              <div class="nxlist__item">{{ $t }}</div>
             @endforeach
           </div>
         @endif
@@ -202,7 +203,7 @@
   @if(count($bul))
     <div class="nxlist">
       @foreach($bul as $b)
-        <div class="nxlist__item">• {{ $b }}</div>
+        <div class="nxlist__item">{{ $b }}</div>
       @endforeach
     </div>
   @endif
@@ -218,7 +219,7 @@
   @if(count($bul))
     <div class="nxlist">
       @foreach($bul as $b)
-        <div class="nxlist__item">• {{ $b }}</div>
+        <div class="nxlist__item">{{ $b }}</div>
       @endforeach
     </div>
   @endif
@@ -243,7 +244,7 @@
       <h3 class="nxh3" style="margin:0 0 10px;">Home Tutoring</h3>
       <div class="nxlist">
         @foreach((array)data_get($hvo,'home_points',[]) as $p)
-          <div class="nxlist__item">• {{ $p }}</div>
+          <div class="nxlist__item">{{ $p }}</div>
         @endforeach
       </div>
     </div>
@@ -252,7 +253,7 @@
       <h3 class="nxh3" style="margin:0 0 10px;">Online Tutoring</h3>
       <div class="nxlist">
         @foreach((array)data_get($hvo,'online_points',[]) as $p)
-          <div class="nxlist__item">• {{ $p }}</div>
+          <div class="nxlist__item">{{ $p }}</div>
         @endforeach
       </div>
     </div>
@@ -369,7 +370,7 @@
 
               <div class="nxlist">
                 @foreach((array)data_get($sections,'services.items', []) as $it)
-                  <div class="nxlist__item">• {{ $it }}</div>
+                  <div class="nxlist__item">{{ $it }}</div>
                 @endforeach
               </div>
             </div>

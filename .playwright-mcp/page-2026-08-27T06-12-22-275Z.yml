@@ -1,0 +1,430 @@
+- generic [active] [ref=f50e1]:
+  - link "Skip to main content" [ref=f50e2] [cursor=pointer]:
+    - /url: "#nxt-content"
+  - banner [ref=f50e3]:
+    - link "NXTutors — home" [ref=f50e5] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000
+      - generic [ref=f50e6]: NXTutors
+    - button "Toggle menu" [ref=f50e8] [cursor=pointer]
+  - generic [ref=f50e13]:
+    - main [ref=f50e14]:
+      - generic [ref=f50e15]:
+        - generic [ref=f50e16]:
+          - img "Gurugram" [ref=f50e18]
+          - generic [ref=f50e19]:
+            - generic [ref=f50e20]:
+              - link "Home" [ref=f50e21] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000
+              - generic [ref=f50e22]: ›
+              - link "Cities" [ref=f50e23] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/city
+              - generic [ref=f50e24]: ›
+              - link "Gurugram" [ref=f50e25] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/city/gurugram
+              - generic [ref=f50e26]: ›
+              - generic [ref=f50e27]: NXTutors in ATS Triumph, Sector 104 Gurugram — Home & Online Tuition for CBSE & ICSE Boards
+            - heading "NXTutors in ATS Triumph, Sector 104 Gurugram — Home & Online Tuition for CBSE & ICSE Boards" [level=1] [ref=f50e28]
+            - paragraph [ref=f50e29]: Looking for experienced home tutors in ATS Triumph, Sector 104 Gurugram? NXTutors brings verified, professional educators to your doorstep. Whether your child needs extra help in Maths, Scie...
+            - generic [ref=f50e30]:
+              - generic [ref=f50e31]:
+                - text: "📍 Pincode:"
+                - strong [ref=f50e32]: "122006"
+              - generic [ref=f50e33]:
+                - text: "⭐ Rating:"
+                - strong [ref=f50e34]: 5.0/5
+              - generic [ref=f50e35]:
+                - text: "🗣 Reviews:"
+                - strong [ref=f50e36]: "7"
+              - generic [ref=f50e37]: ✅ Verified Tutors
+            - generic [ref=f50e38]:
+              - link "View Tutors" [ref=f50e39] [cursor=pointer]:
+                - /url: "#tutors"
+              - link "FAQs" [ref=f50e40] [cursor=pointer]:
+                - /url: "#faqs"
+        - generic [ref=f50e41]:
+          - heading "Tutors Available in NXTutors in ATS Triumph, Sector 104 Gurugram — Home & Online Tuition for CBSE & ICSE Boards" [level=2] [ref=f50e42]
+          - generic [ref=f50e45]:
+            - generic [ref=f50e46]:
+              - generic [ref=f50e47]:
+                - img "Aaditya kashyap" [ref=f50e48]
+                - generic [ref=f50e49]: ✔
+              - generic [ref=f50e50]:
+                - heading "Aaditya kashyap" [level=3] [ref=f50e51]
+                - generic [ref=f50e52]: ⭐ 0.0 (0 reviews)
+                - generic [ref=f50e53]: Verified Tutor
+            - generic [ref=f50e54]: 📍 Sec 37 D gurgaon Signature milliena 3 Tower 9 1001
+            - generic [ref=f50e55]:
+              - link "WhatsApp" [ref=f50e56] [cursor=pointer]:
+                - /url: https://wa.me/917836034313?text=Hi%2C+I+want+to+connect+with+tutor+Aaditya+kashyap+%28UserID%3A+NXT-2026-3FULEA%29.+Area%3A+NXTutors+in+ATS+Triumph%2C+Sector+104+Gurugram+%E2%80%94+Home+%26+Online+Tuition+for+CBSE+%26+ICSE+Boards%2C+Gurugram
+              - link "View Profile" [ref=f50e57] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/tutor/gurgaon/TlhULTIwMjYtM0ZVTEVBLW54dA/aaditya-kashyap
+        - generic [ref=f50e58]:
+          - generic [ref=f50e59]:
+            - heading "About this Area" [level=2] [ref=f50e60]
+            - generic [ref=f50e62]:
+              - paragraph [ref=f50e63]:
+                - strong [ref=f50e64]: ATS Triumph
+                - text: is one of the most premium residential complexes in
+                - strong [ref=f50e65]: Sector 104, Gurugram
+                - text: ", strategically located along the"
+                - strong [ref=f50e66]: Dwarka Expressway
+                - text: . Surrounded by lush landscapes and advanced amenities, it attracts professionals and families seeking a balanced lifestyle — and top-quality education for their children.
+              - paragraph [ref=f50e67]: "The neighborhood is close to leading CBSE schools such as:"
+              - paragraph [ref=f50e68]:
+                - strong [ref=f50e69]: HSV International School
+                - text: ", Sector 104"
+              - paragraph [ref=f50e70]:
+                - strong [ref=f50e71]: Shanti Niketan Public School
+                - text: ", Sector 104"
+              - paragraph [ref=f50e72]:
+                - strong [ref=f50e73]: Lord Krishna Convent School
+                - text: ", Sector 104"
+              - paragraph [ref=f50e74]:
+                - strong [ref=f50e75]: Euro International School
+                - text: ", Sector 109"
+              - paragraph [ref=f50e76]:
+                - strong [ref=f50e77]: GD Goenka Public School
+                - text: ", Sector 107"
+              - paragraph [ref=f50e78]:
+                - text: These schools follow CBSE patterns with monthly assessments, project work, and skill-based learning modules. Families in ATS Triumph often prefer tutors who are familiar with the
+                - strong [ref=f50e79]: academic calendar and exam structure
+                - text: of these institutions.
+              - paragraph [ref=f50e80]: "Common student needs in this area include:"
+              - paragraph [ref=f50e81]:
+                - text: Strengthening
+                - strong [ref=f50e82]: Maths & Science fundamentals
+                - text: from early grades onward.
+              - paragraph [ref=f50e83]:
+                - text: Improving
+                - strong [ref=f50e84]: English grammar, writing, and reading comprehension
+                - text: .
+              - paragraph [ref=f50e85]:
+                - text: Developing exam strategy and
+                - strong [ref=f50e86]: time management
+                - text: for
+                - strong [ref=f50e87]: Classes 10 & 12 CBSE/ICSE
+                - text: .
+              - paragraph [ref=f50e88]:
+                - text: Assistance in
+                - strong [ref=f50e89]: homework, project reports, and internal assessments
+                - text: .
+              - paragraph [ref=f50e90]:
+                - text: Building communication skills and confidence through
+                - strong [ref=f50e91]: Public Speaking & Personality Development
+                - text: .
+              - paragraph [ref=f50e92]:
+                - text: NXTutors ensures parents in
+                - strong [ref=f50e93]: ATS Triumph
+                - text: get local, reliable educators who can travel easily or teach online. Female tutors are preferred by many families for younger children, and our verified network provides both
+                - strong [ref=f50e94]: comfort and trust
+                - text: .
+              - paragraph [ref=f50e95]:
+                - text: The
+                - strong [ref=f50e96]: Dwarka Expressway
+                - text: location allows tutors from nearby sectors (102–110) to reach quickly, minimizing commute delays. Our hybrid model — online theory plus offline revision — ensures every child gets personalized attention, even during busy exam months.
+              - paragraph [ref=f50e97]:
+                - text: Every learner’s journey starts with a
+                - strong [ref=f50e98]: free diagnostic session
+                - text: ", after which we design a tailored study plan and regular progress reviews"
+            - heading "Subjects Covered" [level=2] [ref=f50e99]
+            - generic [ref=f50e101]:
+              - paragraph [ref=f50e102]:
+                - strong [ref=f50e103]: Mathematics
+                - text: (Primary to Class 12 — CBSE & ICSE)
+              - paragraph [ref=f50e104]:
+                - strong [ref=f50e105]: Science
+                - text: (Physics, Chemistry, Biology with practicals)
+              - paragraph [ref=f50e106]:
+                - strong [ref=f50e107]: English
+                - text: (Grammar, Writing, Literature, Comprehension)
+              - paragraph [ref=f50e108]:
+                - strong [ref=f50e109]: Hindi / Sanskrit / French
+                - text: (Language Tutors Available)
+              - paragraph [ref=f50e110]:
+                - strong [ref=f50e111]: Accounts, Economics & Business Studies
+                - text: (Commerce Stream)
+              - paragraph [ref=f50e112]:
+                - strong [ref=f50e113]: Computer Science & Coding
+                - text: (Python, C++, HTML, School Projects)
+              - paragraph [ref=f50e114]:
+                - strong [ref=f50e115]: Personality Development & Public Speaking
+              - paragraph [ref=f50e116]:
+                - strong [ref=f50e117]: Exam Preparation & Homework Help
+            - heading "Teaching Approach" [level=2] [ref=f50e118]
+            - generic [ref=f50e120]:
+              - paragraph [ref=f50e121]:
+                - strong [ref=f50e122]: "Free Diagnostic Session:"
+                - text: We begin with an academic evaluation to understand each student’s gaps.
+              - paragraph [ref=f50e123]:
+                - strong [ref=f50e124]: "Customized Lesson Plan:"
+                - text: Weekly targets designed according to the school syllabus.
+              - paragraph [ref=f50e125]:
+                - strong [ref=f50e126]: "Concept > Rote:"
+                - text: Focus on comprehension before memorization.
+              - paragraph [ref=f50e127]:
+                - strong [ref=f50e128]: "Interactive Learning:"
+                - text: Real-life examples, visuals, and exercises for engagement.
+              - paragraph [ref=f50e129]:
+                - strong [ref=f50e130]: "Board-Exam Strategies:"
+                - text: Time management, answer presentation, and mock tests.
+              - paragraph [ref=f50e131]:
+                - strong [ref=f50e132]: "Continuous Feedback:"
+                - text: Parents receive monthly reports and insights.
+              - paragraph [ref=f50e133]:
+                - strong [ref=f50e134]: "Flexible Modes:"
+                - text: Online, offline, or hybrid sessions as per convenience
+            - heading "Tutor Types" [level=2] [ref=f50e135]
+            - generic [ref=f50e137]:
+              - paragraph [ref=f50e138]:
+                - strong [ref=f50e139]: Female Tutors
+                - text: (for comfort & safety)
+              - paragraph [ref=f50e140]:
+                - strong [ref=f50e141]: Experienced Tutors
+                - text: (5–15 years of teaching)
+              - paragraph [ref=f50e142]:
+                - strong [ref=f50e143]: Affordable Tutors
+                - text: (starting ₹500/hr)
+              - paragraph [ref=f50e144]:
+                - strong [ref=f50e145]: Online Tutors
+                - text: (for convenient schedules)
+              - paragraph [ref=f50e146]:
+                - strong [ref=f50e147]: Home Tutors
+                - text: (with in-person support)
+              - paragraph [ref=f50e148]:
+                - strong [ref=f50e149]: Hybrid Tutors
+                - text: (online + offline combo)
+            - heading "Pricing & Packages" [level=2] [ref=f50e150]
+            - paragraph [ref=f50e153]: "Hourly Classes ₹500/hr → ₹2000/hr Monthly Packages Bronze: ~₹5,000/month (few weekly sessions)Silver: ~₹12,000/month (regular weekly + tests)Gold: ~₹20,000-₹30,000/month (daily/board prep + senior classes)"
+            - heading "Why Choose NXTutors" [level=2] [ref=f50e154]
+            - generic [ref=f50e156]:
+              - paragraph [ref=f50e157]: Tutors familiar with local schools like HSV International & Shanti Niketan.
+              - paragraph [ref=f50e158]: Female and background-verified tutors.
+              - paragraph [ref=f50e159]: CBSE & ICSE expertise for Classes 1–12.
+              - paragraph [ref=f50e160]: Affordable rates and custom plans.
+              - paragraph [ref=f50e161]: Online + home learning for busy families.
+              - paragraph [ref=f50e162]: Regular mock tests, assignments & progress feedback.
+              - paragraph [ref=f50e163]: Trusted by dozens of families in ATS Triumph for consistent results.
+          - complementary [ref=f50e164]:
+            - generic [ref=f50e165]:
+              - heading "Book Free Demo" [level=2] [ref=f50e166]
+              - paragraph [ref=f50e168]: Tell us your class, subject & preferred timing. We’ll connect you with a verified tutor.
+              - link "Get a Call Back" [ref=f50e169] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/contact
+              - link "Explore Tutors" [ref=f50e170] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/tutors
+            - heading "Area Map" [level=2] [ref=f50e171]
+            - paragraph [ref=f50e174]:
+              - iframe [ref=f50e175]
+        - generic [ref=f50e176]:
+          - heading "What Students Say" [level=2] [ref=f50e177]
+          - generic [ref=f50e179]:
+            - generic [ref=f50e180]:
+              - generic [ref=f50e181]:
+                - generic [ref=f50e182]:
+                  - generic [ref=f50e183]:
+                    - paragraph [ref=f50e184]: Rohit Singh
+                    - generic [ref=f50e185]: Punjab
+                  - generic "Rating 5/5" [ref=f50e186]: ★★★★★
+                - generic [ref=f50e187]: Excellent female tutor for English & Science. My daughter’s CBSE scores improved drastically
+              - generic [ref=f50e188]:
+                - generic [ref=f50e189]:
+                  - generic [ref=f50e190]:
+                    - paragraph [ref=f50e191]: Simran Rathore
+                    - generic [ref=f50e192]: Punjab
+                  - generic "Rating 5/5" [ref=f50e193]: ★★★★★
+                - generic [ref=f50e194]: Affordable and flexible. Online backup classes are a lifesaver during busy weeks
+              - generic [ref=f50e195]:
+                - generic [ref=f50e196]:
+                  - generic [ref=f50e197]:
+                    - paragraph [ref=f50e198]: Neha Kapoor
+                    - generic [ref=f50e199]: Rajasthan
+                  - generic "Rating 5/5" [ref=f50e200]: ★★★★★
+                - generic [ref=f50e201]: Maths tutor explains with patience. My son from HSV International now enjoys the subject
+              - generic [ref=f50e202]:
+                - generic [ref=f50e203]:
+                  - generic [ref=f50e204]:
+                    - paragraph [ref=f50e205]: Vikram Mehta
+                    - generic [ref=f50e206]: Delhi
+                  - generic "Rating 5/5" [ref=f50e207]: ★★★★★
+                - generic [ref=f50e208]: Science & Accounts tutors are well-trained and punctual. Good coordination by NXTutors
+              - generic [ref=f50e209]:
+                - generic [ref=f50e210]:
+                  - generic [ref=f50e211]:
+                    - paragraph [ref=f50e212]: Anjali Choudhary
+                    - generic [ref=f50e213]: Punjab
+                  - generic "Rating 5/5" [ref=f50e214]: ★★★★★
+                - generic [ref=f50e215]: They understood my child’s ICSE syllabus perfectly. Concept clarity and weekly updates helped us track progress
+              - generic [ref=f50e216]:
+                - generic [ref=f50e217]:
+                  - generic [ref=f50e218]:
+                    - paragraph [ref=f50e219]: Pooja Sharma
+                    - generic [ref=f50e220]: Rajasthan
+                  - generic "Rating 5/5" [ref=f50e221]: ★★★★★
+                - generic [ref=f50e222]: Reasonable pricing and genuine tutors. Communication was smooth throughout
+              - generic [ref=f50e223]:
+                - generic [ref=f50e224]:
+                  - generic [ref=f50e225]:
+                    - paragraph [ref=f50e226]: Amit Gupta
+                    - generic [ref=f50e227]: Delhi
+                  - generic "Rating 5/5" [ref=f50e228]: ★★★★★
+                - generic [ref=f50e229]: Online classes are clear and interactive. Even board-level topics feel simple now
+            - generic [ref=f50e230]:
+              - button "‹" [ref=f50e231] [cursor=pointer]
+              - button "›" [ref=f50e232] [cursor=pointer]
+        - generic [ref=f50e233]:
+          - heading "FAQs" [level=2] [ref=f50e234]
+          - generic [ref=f50e236]:
+            - generic [ref=f50e237]:
+              - button "Do you cover CBSE & ICSE boards for ATS Triumph students? −" [ref=f50e238] [cursor=pointer]:
+                - generic [ref=f50e239]: Do you cover CBSE & ICSE boards for ATS Triumph students?
+                - generic [ref=f50e240]: −
+              - generic [ref=f50e241]: Yes, we provide board-specific preparation including sample papers and mock tests as per CBSE & ICSE patterns
+            - generic [ref=f50e243]:
+              - button "Are female tutors available for home sessions? +" [ref=f50e244] [cursor=pointer]:
+                - generic [ref=f50e245]: Are female tutors available for home sessions?
+                - generic [ref=f50e246]: +
+              - generic: Absolutely — we have trained and background-verified female tutors for all subjects
+            - generic [ref=f50e248]:
+              - button "What if the assigned tutor doesn’t fit my child’s style? +" [ref=f50e249] [cursor=pointer]:
+                - generic [ref=f50e250]: What if the assigned tutor doesn’t fit my child’s style?
+                - generic [ref=f50e251]: +
+              - generic: We offer free trials and quick replacements until you’re completely satisfied
+            - generic [ref=f50e253]:
+              - button "How do you ensure tutors are trustworthy? +" [ref=f50e254] [cursor=pointer]:
+                - generic [ref=f50e255]: How do you ensure tutors are trustworthy?
+                - generic [ref=f50e256]: +
+              - generic: All tutors undergo ID verification, background checks & demo classes before enrolment
+            - generic [ref=f50e258]:
+              - button "Can I choose online classes instead of home sessions? +" [ref=f50e259] [cursor=pointer]:
+                - generic [ref=f50e260]: Can I choose online classes instead of home sessions?
+                - generic [ref=f50e261]: +
+              - generic: Yes — our online platform supports video lectures, notes sharing & recorded sessions
+            - generic [ref=f50e263]:
+              - button "Do you align teaching with local schools like HSV International or Shanti Niketan +" [ref=f50e264] [cursor=pointer]:
+                - generic [ref=f50e265]: Do you align teaching with local schools like HSV International or Shanti Niketan
+                - generic [ref=f50e266]: +
+              - generic: Yes, lesson plans mirror their curriculum and test patterns for maximum relevance
+            - generic [ref=f50e268]:
+              - button "What’s the pricing range and payment method? +" [ref=f50e269] [cursor=pointer]:
+                - generic [ref=f50e270]: What’s the pricing range and payment method?
+                - generic [ref=f50e271]: +
+              - generic: Hourly plans ₹500–₹2000; monthly ₹5000–₹30000. Online or cash payments accepted
+        - generic [ref=f50e273]:
+          - heading "Related Areas in Gurugram" [level=2] [ref=f50e274]
+          - generic [ref=f50e276]:
+            - 'link "Best Home Tutors in The Aralias Tower A–F, Sector 42 Gurugram | NXTutors 📍 Pincode: 122009 If you reside in The Aralias Towers (A–F), Sector 42, you already understand the importance of high-quality le... View Tutors →" [ref=f50e277] [cursor=pointer]':
+              - /url: http://127.0.0.1:8000/city/gurugram/the-aralias-tower-af
+              - generic [ref=f50e278]: Best Home Tutors in The Aralias Tower A–F, Sector 42 Gurugram | NXTutors
+              - generic [ref=f50e279]: "📍 Pincode: 122009"
+              - generic [ref=f50e280]: If you reside in The Aralias Towers (A–F), Sector 42, you already understand the importance of high-quality le...
+              - generic [ref=f50e281]: View Tutors →
+            - 'link "Best Home Tutors in The Magnolias Towers 1–9, Sector 42 Gurugram | NXTutors 📍 Pincode: 122009 Welcome to NXTutors – Gurugram’s No.1 Home Tutoring Platform, trusted by parents and students across premium r... View Tutors →" [ref=f50e282] [cursor=pointer]':
+              - /url: http://127.0.0.1:8000/city/gurugram/the-magnolias-towers-19
+              - generic [ref=f50e283]: Best Home Tutors in The Magnolias Towers 1–9, Sector 42 Gurugram | NXTutors
+              - generic [ref=f50e284]: "📍 Pincode: 122009"
+              - generic [ref=f50e285]: Welcome to NXTutors – Gurugram’s No.1 Home Tutoring Platform, trusted by parents and students across premium r...
+              - generic [ref=f50e286]: View Tutors →
+            - 'link "Best Home Tutors in The Camellias Towers A–H, Sector 54 (Gurugram) 📍 Pincode: 122009 Welcome to NXTutors, Gurugram’s most trusted platform for personalized home tutoring services in The Camellias... View Tutors →" [ref=f50e287] [cursor=pointer]':
+              - /url: http://127.0.0.1:8000/city/gurugram/the-camellias-towers-ah
+              - generic [ref=f50e288]: Best Home Tutors in The Camellias Towers A–H, Sector 54 (Gurugram)
+              - generic [ref=f50e289]: "📍 Pincode: 122009"
+              - generic [ref=f50e290]: Welcome to NXTutors, Gurugram’s most trusted platform for personalized home tutoring services in The Camellias...
+              - generic [ref=f50e291]: View Tutors →
+            - 'link "Best Home Tutors in The Crest Tower 1–6, Sector 54 (Gurugram) 📍 Pincode: 122009 Welcome to NXTutors – your trusted destination for personalized home tutoring in The Crest, Sector 54 (Gurugra... View Tutors →" [ref=f50e292] [cursor=pointer]':
+              - /url: http://127.0.0.1:8000/city/gurugram/the-crest-tower-16
+              - generic [ref=f50e293]: Best Home Tutors in The Crest Tower 1–6, Sector 54 (Gurugram)
+              - generic [ref=f50e294]: "📍 Pincode: 122009"
+              - generic [ref=f50e295]: Welcome to NXTutors – your trusted destination for personalized home tutoring in The Crest, Sector 54 (Gurugra...
+              - generic [ref=f50e296]: View Tutors →
+            - 'link "Best Home Tutors in DLF Princeton Estate Blocks A–E, Sector 53 (Gurugram) 📍 Pincode: 122009 Welcome to NXTutors – the most trusted home tutoring platform in DLF Princeton Estate, Sector 53 (Gurugram). W... View Tutors →" [ref=f50e297] [cursor=pointer]':
+              - /url: http://127.0.0.1:8000/city/gurugram/dlf-princeton-estate-blocks-ae
+              - generic [ref=f50e298]: Best Home Tutors in DLF Princeton Estate Blocks A–E, Sector 53 (Gurugram)
+              - generic [ref=f50e299]: "📍 Pincode: 122009"
+              - generic [ref=f50e300]: Welcome to NXTutors – the most trusted home tutoring platform in DLF Princeton Estate, Sector 53 (Gurugram). W...
+              - generic [ref=f50e301]: View Tutors →
+            - 'link "Best Home Tutors in DLF Belaire Enclave (Annexe), Sector 54 (Gurugram) 📍 Pincode: 122009 Welcome to NXTutors — your local, trusted tutoring network in Sector 54, Gurugram. If you live in DLF Belaire... View Tutors →" [ref=f50e302] [cursor=pointer]':
+              - /url: http://127.0.0.1:8000/city/gurugram/dlf-belaire-enclave-annexe
+              - generic [ref=f50e303]: Best Home Tutors in DLF Belaire Enclave (Annexe), Sector 54 (Gurugram)
+              - generic [ref=f50e304]: "📍 Pincode: 122009"
+              - generic [ref=f50e305]: Welcome to NXTutors — your local, trusted tutoring network in Sector 54, Gurugram. If you live in DLF Belaire...
+              - generic [ref=f50e306]: View Tutors →
+            - 'link "Best Home Tutors in DLF Silver Oaks, Sector 43 (Gurugram) | Affordable, Female & Experienced Tutors for CBSE & ICSE 📍 Pincode: 122002 Finding the right home tutor for your child in DLF Silver Oaks, Sector 43 (Gurugram) is easier than ever with... View Tutors →" [ref=f50e307] [cursor=pointer]':
+              - /url: http://127.0.0.1:8000/city/gurugram/dlf-silver-oaks
+              - generic [ref=f50e308]: Best Home Tutors in DLF Silver Oaks, Sector 43 (Gurugram) | Affordable, Female & Experienced Tutors for CBSE & ICSE
+              - generic [ref=f50e309]: "📍 Pincode: 122002"
+              - generic [ref=f50e310]: Finding the right home tutor for your child in DLF Silver Oaks, Sector 43 (Gurugram) is easier than ever with...
+              - generic [ref=f50e311]: View Tutors →
+            - 'link "Best Home Tutors in DLF Hamilton Court, Sector 43 (Gurugram) | Affordable, Female & Experienced Tutors for CBSE & ICSE 📍 Pincode: 122009 If you are looking for reliable, result-driven home tutoring for your child living in DLF Hamilton Court, Sect... View Tutors →" [ref=f50e312] [cursor=pointer]':
+              - /url: http://127.0.0.1:8000/city/gurugram/dlf-hamilton-court
+              - generic [ref=f50e313]: Best Home Tutors in DLF Hamilton Court, Sector 43 (Gurugram) | Affordable, Female & Experienced Tutors for CBSE & ICSE
+              - generic [ref=f50e314]: "📍 Pincode: 122009"
+              - generic [ref=f50e315]: If you are looking for reliable, result-driven home tutoring for your child living in DLF Hamilton Court, Sect...
+              - generic [ref=f50e316]: View Tutors →
+            - 'link "Best Home Tutors in DLF Richmond Park, Sector 43 (Gurugram) | Affordable, Female & Experienced Tutors for CBSE & ICSE 📍 Pincode: 122009 At NXTutors, we recognise that every child has unique learning needs. If you reside in the vibrant and well-co... View Tutors →" [ref=f50e317] [cursor=pointer]':
+              - /url: http://127.0.0.1:8000/city/gurugram/dlf-richmond-park
+              - generic [ref=f50e318]: Best Home Tutors in DLF Richmond Park, Sector 43 (Gurugram) | Affordable, Female & Experienced Tutors for CBSE & ICSE
+              - generic [ref=f50e319]: "📍 Pincode: 122009"
+              - generic [ref=f50e320]: At NXTutors, we recognise that every child has unique learning needs. If you reside in the vibrant and well-co...
+              - generic [ref=f50e321]: View Tutors →
+    - contentinfo [ref=f50e322]:
+      - generic [ref=f50e323]:
+        - generic [ref=f50e324]:
+          - heading "NXTutors" [level=3] [ref=f50e325]
+          - paragraph [ref=f50e326]: Premium home tutoring in Gurugram. Trusted by 4,500+ parents for CBSE, ICSE & IB.
+          - generic [ref=f50e327]:
+            - link "NXTutors on Facebook" [ref=f50e328] [cursor=pointer]:
+              - /url: "#"
+            - link "NXTutors on Instagram" [ref=f50e331] [cursor=pointer]:
+              - /url: "#"
+            - link "NXTutors on WhatsApp" [ref=f50e334] [cursor=pointer]:
+              - /url: https://wa.me/917836034313
+        - generic [ref=f50e337]:
+          - heading "Quick Links" [level=4] [ref=f50e338]
+          - list [ref=f50e339]:
+            - listitem [ref=f50e340]:
+              - link "Home" [ref=f50e341] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000
+            - listitem [ref=f50e342]:
+              - link "Find Tutors" [ref=f50e343] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/tutors
+            - listitem [ref=f50e344]:
+              - link "Become a Tutor" [ref=f50e345] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f50e346]:
+              - link "Demo Class" [ref=f50e347] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/demo-class
+            - listitem [ref=f50e348]:
+              - link "Subscription Plan" [ref=f50e349] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/pricing
+        - generic [ref=f50e350]:
+          - heading "Useful Links" [level=4] [ref=f50e351]
+          - list [ref=f50e352]:
+            - listitem [ref=f50e353]:
+              - link "Blog & Advice" [ref=f50e354] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/blog
+            - listitem [ref=f50e355]:
+              - link "Pricing Guide" [ref=f50e356] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/pricing-guide
+            - listitem [ref=f50e357]:
+              - link "FAQs" [ref=f50e358] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/faqs
+            - listitem [ref=f50e359]:
+              - link "Terms & Conditions" [ref=f50e360] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/terms-conditions
+            - listitem [ref=f50e361]:
+              - link "Privacy Policy" [ref=f50e362] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/privacy-policy
+        - generic [ref=f50e363]:
+          - heading "Contact Us" [level=4] [ref=f50e364]
+          - list [ref=f50e365]:
+            - listitem [ref=f50e366]:
+              - generic [ref=f50e369]: BLK-2/49, NXTUTORS EDTECH PVT LTD, M3M Cosmopolitan, off Golf Course Extension Road, Sector 66, Gurugram, Haryana 122101
+            - listitem [ref=f50e370]:
+              - link "+9178360 34313" [ref=f50e373] [cursor=pointer]:
+                - /url: tel:+917836034313
+            - listitem [ref=f50e374]:
+              - link "support@nxtutors.com" [ref=f50e377] [cursor=pointer]:
+                - /url: mailto:support@nxtutors.com
+          - link "Chat on WhatsApp" [ref=f50e378] [cursor=pointer]:
+            - /url: https://wa.me/917836034313
+      - generic [ref=f50e379]: © 2026 NXTutors — All rights reserved.

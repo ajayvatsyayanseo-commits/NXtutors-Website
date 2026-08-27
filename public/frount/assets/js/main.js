@@ -1,100 +1,131 @@
 // ==========================
 // Footer year
 // ==========================
-document.getElementById('year').textContent = new Date().getFullYear();
+// Guarded: a missing #year used to throw here and take the theme picker and
+// hero slider down with it.
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 // ==========================
-// FULL THEME CONFIG
+// Skip-link target — <main> lives in each view, so it gets its id here
+// rather than editing every template.
 // ==========================
+(function () {
+  const main = document.querySelector('main');
+  if (main && !main.id) {
+    main.id = 'nxt-content';
+    main.setAttribute('tabindex', '-1');
+  }
+})();
+
+// ==========================
+// Drag-to-scroll for horizontal strips (reviews, blogs, related rows).
+// Touch swipes natively; this gives the same gesture to mouse users,
+// so the strips need no arrow buttons.
+// ==========================
+document.querySelectorAll('.review-track, .nxscroll, .scroll-row').forEach(function (strip) {
+  let startX = 0, startLeft = 0, dragging = false, moved = false;
+
+  strip.addEventListener('pointerdown', function (e) {
+    if (e.pointerType !== 'mouse') return;   // touch already scrolls
+    dragging = true; moved = false;
+    startX = e.clientX;
+    startLeft = strip.scrollLeft;
+    strip.style.scrollSnapType = 'none';     // snap fights mid-drag updates
+    strip.style.scrollBehavior = 'auto';
+    strip.style.userSelect = 'none';         // else text selection wins the drag
+    e.preventDefault();
+  });
+  window.addEventListener('pointermove', function (e) {
+    if (!dragging) return;
+    const dx = e.clientX - startX;
+    if (Math.abs(dx) > 4) moved = true;
+    strip.scrollLeft = startLeft - dx;
+  });
+  window.addEventListener('pointerup', function () {
+    if (!dragging) return;
+    dragging = false;
+    strip.style.scrollSnapType = '';
+    strip.style.scrollBehavior = '';
+    strip.style.userSelect = '';
+  });
+  // a drag must not fire the card's link on release
+  strip.addEventListener('click', function (e) {
+    if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; }
+  }, true);
+  strip.style.cursor = 'grab';
+});
+
+// ==========================
+// THEME CONFIG
+// --------------------------
+// Every theme shares one neutral slate ground and varies only the accent, so
+// switching themes changes the product's mood, not its identity. Accent text
+// colour is fixed dark because all six accents are light enough to need it.
+// ==========================
+const NXT_GROUND = {
+  bgShell: 'transparent',
+  textMain: '#EEF2F9',
+  textSubtle: '#A6B3CA',
+  cardBg: 'rgba(255,255,255,0.05)',
+  cardBorder: 'rgba(255,255,255,0.09)',
+  tileBg: 'rgba(255,255,255,0.07)',
+  tileBorder: 'rgba(255,255,255,0.12)',
+  accentOnDark: '#0A1020'
+};
+
+// Ground = deep slate, lifted by a single wide accent bloom in the top-left.
+const ground = (tint) =>
+  'radial-gradient(1200px 620px at 12% -8%,' + tint + ' 0%,rgba(8,14,27,0) 62%),' +
+  'linear-gradient(180deg,#0B1424 0%,#080E1B 55%,#060A14 100%)';
+
 const themeConfig = {
   default: {
-    label: 'Default',
-    bgPage: 'radial-gradient(circle at top left,#FDE3FF 0,#B5C8FF 40%,#0A1024 100%)',
-    bgShell: 'rgba(10,16,36,0.80)',
-    textMain: '#ffffff',
-    textSubtle: '#C6CCFF',
-    cardBg: 'rgba(255,255,255,0.08)',
-    cardBorder: 'rgba(255,255,255,0.18)',
-    tileBg: 'rgba(255,255,255,0.10)',
-    tileBorder: 'rgba(255,255,255,0.22)',
-    accent: '#FFB23C',
-    accentOnDark: '#111827',
-    heroTint: 'linear-gradient(120deg,rgba(10,16,36,0.95),rgba(10,16,36,0.6))'
+    ...NXT_GROUND,
+    label: 'Marigold',
+    bgPage: ground('rgba(245,165,36,0.13)'),
+    accent: '#F5A524',
+    heroTint: 'linear-gradient(120deg,rgba(8,14,27,0.94),rgba(8,14,27,0.55))'
   },
 
   blue: {
-    label: 'Blue',
-    bgPage: 'linear-gradient(200deg,#1e3a8a,#0f172a)',
-    bgShell: 'rgba(15,23,42,0.85)',
-    textMain: '#E2E8F0',
-    textSubtle: '#94A3B8',
-    cardBg: 'rgba(255,255,255,0.05)',
-    cardBorder: 'rgba(255,255,255,0.12)',
-    tileBg: 'rgba(255,255,255,0.08)',
-    tileBorder: 'rgba(255,255,255,0.15)',
-    accent: '#3B82F6',
-    accentOnDark: '#ffffff',
-    heroTint: 'linear-gradient(130deg,rgba(30,64,175,0.95),rgba(15,23,42,0.7))'
+    ...NXT_GROUND,
+    label: 'Azure',
+    bgPage: ground('rgba(76,154,255,0.15)'),
+    accent: '#4C9AFF',
+    heroTint: 'linear-gradient(120deg,rgba(8,14,27,0.94),rgba(12,26,52,0.55))'
   },
 
   green: {
-    label: 'Green',
-    bgPage: 'linear-gradient(200deg,#064e3b,#0f172a)',
-    bgShell: 'rgba(6,78,59,0.85)',
-    textMain: '#E7FFEF',
-    textSubtle: '#A7F3D0',
-    cardBg: 'rgba(255,255,255,0.08)',
-    cardBorder: 'rgba(255,255,255,0.18)',
-    tileBg: 'rgba(255,255,255,0.12)',
-    tileBorder: 'rgba(255,255,255,0.22)',
-    accent: '#22C55E',
-    accentOnDark: '#0F172A',
-    heroTint: 'linear-gradient(130deg,rgba(6,95,70,0.95),rgba(15,23,42,0.7))'
+    ...NXT_GROUND,
+    label: 'Jade',
+    bgPage: ground('rgba(53,192,138,0.14)'),
+    accent: '#35C08A',
+    heroTint: 'linear-gradient(120deg,rgba(8,14,27,0.94),rgba(8,32,26,0.55))'
   },
 
   yellow: {
-    label: 'Yellow',
-    bgPage: 'linear-gradient(210deg,#facc15,#0f172a)',
-    bgShell: 'rgba(113,63,18,0.9)',
-    textMain: '#FEFCE8',
-    textSubtle: '#FEF08A',
-    cardBg: 'rgba(0,0,0,0.35)',
-    cardBorder: 'rgba(250,204,21,0.45)',
-    tileBg: 'rgba(0,0,0,0.30)',
-    tileBorder: 'rgba(250,204,21,0.40)',
-    accent: '#FACC15',
-    accentOnDark: '#0F172A',
-    heroTint: 'linear-gradient(130deg,rgba(180,83,9,0.95),rgba(15,23,42,0.7))'
+    ...NXT_GROUND,
+    label: 'Amber',
+    bgPage: ground('rgba(255,203,71,0.14)'),
+    accent: '#FFCB47',
+    heroTint: 'linear-gradient(120deg,rgba(8,14,27,0.94),rgba(34,26,8,0.55))'
   },
 
   pink: {
-    label: 'Pink',
-    bgPage: 'linear-gradient(180deg,#4b0f31,#150314)',
-    bgShell: 'rgba(75,15,49,0.85)',
-    textMain: '#FFE4F0',
-    textSubtle: '#F9A8D4',
-    cardBg: 'rgba(255,255,255,0.08)',
-    cardBorder: 'rgba(255,255,255,0.18)',
-    tileBg: 'rgba(255,255,255,0.12)',
-    tileBorder: 'rgba(255,255,255,0.22)',
-    accent: '#EC4899',
-    accentOnDark: '#0F172A',
-    heroTint: 'linear-gradient(130deg,rgba(157,23,77,0.95),rgba(15,23,42,0.7))'
+    ...NXT_GROUND,
+    label: 'Rose',
+    bgPage: ground('rgba(255,107,157,0.14)'),
+    accent: '#FF6B9D',
+    heroTint: 'linear-gradient(120deg,rgba(8,14,27,0.94),rgba(40,12,28,0.55))'
   },
 
   orange: {
-    label: 'Orange',
-    bgPage: 'linear-gradient(200deg,#7c2d12,#0f172a)',
-    bgShell: 'rgba(124,45,18,0.85)',
-    textMain: '#FFECE1',
-    textSubtle: '#FED7AA',
-    cardBg: 'rgba(255,255,255,0.10)',
-    cardBorder: 'rgba(255,255,255,0.22)',
-    tileBg: 'rgba(255,255,255,0.12)',
-    tileBorder: 'rgba(255,255,255,0.26)',
-    accent: '#FB923C',
-    accentOnDark: '#111827',
-    heroTint: 'linear-gradient(130deg,rgba(180,83,9,0.95),rgba(15,23,42,0.7))'
+    ...NXT_GROUND,
+    label: 'Ember',
+    bgPage: ground('rgba(255,122,69,0.14)'),
+    accent: '#FF7A45',
+    heroTint: 'linear-gradient(120deg,rgba(8,14,27,0.94),rgba(42,20,10,0.55))'
   }
 };
 
@@ -136,7 +167,9 @@ function applyTheme(name) {
 
   // active state tick
   themeOptions.forEach(btn => {
-    btn.dataset.active = btn.getAttribute('data-theme-option') === name ? 'true' : 'false';
+    const isActive = btn.getAttribute('data-theme-option') === name;
+    btn.dataset.active = isActive ? 'true' : 'false';
+    btn.setAttribute('aria-checked', String(isActive));
   });
 
   try {
@@ -171,8 +204,10 @@ themeOptions.forEach(btn => {
   });
 });
 
-// Initial theme
-let initialTheme = 'default';
+// Initial theme. Azure is the house colour a first-time visitor sees; a
+// returning visitor keeps whatever they picked, restored from localStorage
+// just below.
+let initialTheme = 'blue';
 try {
   const saved = localStorage.getItem('nxt_theme');
   if (saved && themeConfig[saved]) initialTheme = saved;
@@ -197,12 +232,22 @@ applyTheme(initialTheme);
   let timer = null;
   const interval = 7000; // 7 seconds
 
+  // Autoplay is motion the visitor did not ask for: honour the OS setting.
+  const stillPreferred = window.matchMedia('(prefers-reduced-motion: reduce)');
+
   function showSlide(index) {
     slides.forEach((slide, i) => {
       slide.classList.toggle('is-active', i === index);
+      slide.setAttribute('aria-hidden', String(i !== index));
     });
     dots.forEach((dot, i) => {
       dot.classList.toggle('is-active', i === index);
+      dot.setAttribute('aria-current', String(i === index));
+      if (!dot.hasAttribute('tabindex') && dot.tagName !== 'BUTTON') {
+        dot.setAttribute('tabindex', '0');
+        dot.setAttribute('role', 'button');
+        dot.setAttribute('aria-label', 'Show slide ' + (i + 1));
+      }
     });
     current = index;
   }
@@ -219,6 +264,7 @@ applyTheme(initialTheme);
 
   function startAuto() {
     stopAuto();
+    if (stillPreferred.matches) return;
     timer = setInterval(nextSlide, interval);
   }
 
@@ -229,11 +275,18 @@ applyTheme(initialTheme);
     }
   }
 
-  // Dot click
+  // Dot click / keyboard
   dots.forEach((dot, index) => {
     dot.addEventListener('click', () => {
       showSlide(index);
       startAuto();
+    });
+    dot.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        showSlide(index);
+        startAuto();
+      }
     });
   });
 
@@ -252,9 +305,17 @@ applyTheme(initialTheme);
     });
   }
 
-  // Pause autoplay on hover (desktop)
+  // Pause autoplay on hover (desktop), on keyboard focus, and in background tabs
   slider.addEventListener('mouseenter', stopAuto);
   slider.addEventListener('mouseleave', startAuto);
+  slider.addEventListener('focusin', stopAuto);
+  slider.addEventListener('focusout', startAuto);
+  document.addEventListener('visibilitychange', () => {
+    document.hidden ? stopAuto() : startAuto();
+  });
+  stillPreferred.addEventListener('change', () => {
+    stillPreferred.matches ? stopAuto() : startAuto();
+  });
 
   // Init
   showSlide(0);

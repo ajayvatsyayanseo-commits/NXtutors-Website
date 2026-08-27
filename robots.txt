@@ -156,4 +156,7 @@ Disallow: /
 # SITEMAP
 # =====================================================
 
-Sitemap: https://nxtutors.com/sitemap.xml
+# The site 301s non-www to www, so advertise the canonical host: a
+# redirecting sitemap URL is one more hop for Google and shows up in
+# Search Console as a redirect.
+Sitemap: https://www.nxtutors.com/sitemap.xml

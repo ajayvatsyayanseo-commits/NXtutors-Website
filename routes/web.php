@@ -48,7 +48,10 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/sitemap.xml', [HomeController::class, 'sitemap'])
     ->name('sitemap');
 
-Route::post('/ask-nxt-ai', [HomeController::class, 'askNxtAi'])
+// NXT AI now runs in-app (Laravel + OpenAI). This route keeps the original
+// name/shape ({message} -> {success, reply, ...}) so existing callers work,
+// and additionally returns `blocks` (tutor cards etc.). See app/NxtAi.
+Route::post('/ask-nxt-ai', [\App\NxtAi\Http\Controllers\ChatController::class, 'chat'])
     ->middleware('throttle:public-api')
     ->name('ask.nxt.ai');
 

@@ -4,16 +4,20 @@
     $avatar = $t->avatar ?? '';
     $img = ($avatar && str_starts_with($avatar,'http'))
       ? $avatar
-      : ($avatar ? asset('storage/user/'.$avatar) : asset('frount/assets/images/tutor1.jpg'));
+      : ($avatar ? asset('storage/user/'.$avatar) : asset('frount/assets/images/avatar-fallback.webp'));
 
-    $chip = 'Verified Tutor';
+    $chips = [];
     if (!empty($t->courses) && $t->courses->count()) {
       $c = $t->courses->first();
-      $parts = [];
-      if ($c->board?->cat_title) $parts[] = $c->board->cat_title;
-      if ($c->category?->cat_title) $parts[] = $c->category->cat_title;
-      if (count($parts)) $chip = implode(' + ', array_slice($parts, 0, 2));
+      if ($c->board?->cat_title)         $chips[] = $c->board->cat_title;
+      if ($c->classCategory?->cat_title) $chips[] = $c->classCategory->cat_title;
+      if ($c->category?->cat_title)      $chips[] = $c->category->cat_title;
     }
+    if (!empty($t->experience)) $chips[] = $t->experience;
+    if (!empty($t->budget))     $chips[] = '₹ '.$t->budget;
+    $chips = array_slice(array_values(array_unique(array_filter($chips))), 0, 3);
+
+    $chip = $chips ? implode(' + ', array_slice($chips, 0, 2)) : 'Verified Tutor';
 
     $rating  = number_format((float)($t->rating_avg ?? 0), 1);
     $reviews = (int)($t->reviews_count ?? 0);
@@ -22,37 +26,31 @@
     $waText = rawurlencode("Hi, I want to talk to tutor: {$t->name}");
     $waLink = "https://wa.me/{$waNumber}?text={$waText}";
 	$profileLink = route('tutor.newshow', [
-    'city' => Str::slug($t->city),
+    'city' => Str::slug((string) $t->city) ?: 'india',
     'user_id' => $t->user_id,
-    'name' => Str::slug($t->name),
+    'name' => Str::slug((string) $t->name) ?: 'tutor',
 ]);
   @endphp
 
-  <article class="card card--compare">
-    <div class="card-header">
-      <img src="{{ $img }}" alt="Tutor" class="avatar"
-           onerror="this.src='{{ asset('frount/assets/images/tutor1.jpg') }}'" loading="lazy" decoding="async" />
-      <div>
-        <div class="card-title">{{ $t->name }}</div>
-        <div class="card-subtitle">{{ $chip }}</div>
-      </div>
-    </div>
-
-    <div class="card-meta"><span class="rating">★ {{ $rating }}</span> ({{ $reviews }} reviews)</div>
-
-    <div class="chip-row">
-      @if(!empty($t->experience)) <span class="chip">{{ $t->experience }}</span> @endif
-      @if(!empty($t->education)) <span class="chip">{{ $t->education }}</span> @endif
-      @if(!empty($t->budget)) <span class="chip">₹ {{ $t->budget }}</span> @endif
-      @if(!empty($t->city)) <span class="chip">{{ $t->city }}</span> @endif
-      @if(!empty($t->pincode)) <span class="chip">{{ $t->pincode }}</span> @endif
-    </div>
-
-    <div class="card-actions">
-      <a href="{{ $profileLink }}" class="btn btn-ghost btn-small">View profile</a>
-      <a href="{{ $waLink }}" class="btn btn-accent btn-small" target="_blank" rel="nofollow noopener">
-        Chat on WhatsApp
-      </a>
-    </div>
-  </article>
+  @include('partials.tutor-card', [
+    't' => $t, 'img' => $img, 'chips' => $chips,
+    'rating' => $rating, 'reviews' => $reviews,
+    'address' => $t->address ?? '', 'city' => $t->city ?? '',
+    'waLink' => $waLink, 'profileUrl' => $profileLink,
+    'compare' => [
+      'id'      => $t->user_id,
+      'name'    => e($t->name),
+      'img'     => $img,
+      'rating'  => $rating,
+      'reviews' => $reviews,
+      'exp'     => e($t->experience ?? ''),
+      'edu'     => e($t->education ?? ''),
+      'budget'  => e($t->budget ?? ''),
+      'chip'    => e($chip),
+      'city'    => e($t->city ?? ''),
+      'pincode' => e($t->pincode ?? ''),
+      'wa'      => e($waLink),
+      'profile' => e($profileLink),
+    ],
+  ])
 @endforeach

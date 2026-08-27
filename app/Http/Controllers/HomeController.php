@@ -51,24 +51,36 @@ class HomeController extends Controller
 
     public function index()
     {
-        $pages = GeneratedPage::query()
-            ->where('status', 'published')
-            ->latest()
-            ->take(10)
-            ->get();
-            $teachers = $this->getHomeTeachers(6, 0);
+        $teachers = $this->getHomeTeachers(6, 0);
             $blogs    = $this->getHomeBlogs(6, 0);
             $reviews  = $this->getHomeReviews(6);
 
             $category = Category::where('pid', 0)->where('status', 't')->take(10)->get(); 
 
-            $banner = Banner::Where('status', 't')->take(5)->get(); 
+            // Everything we teach, for the strip above the footer. Parents
+            // first, then subjects, in the order they were created — that puts
+            // the boards and exams people search for ahead of the class-level
+            // rows. Deduplicated by slug because the slug IS the URL: two
+            // categories sharing one means one page, and listing it twice would
+            // be two identical links to the same place.
+            $courseStrip = Category::query()
+                ->where('status', 't')
+                ->whereNotNull('slug')
+                ->where('slug', '!=', '')
+                ->orderByRaw('CASE WHEN pid IS NULL OR pid = 0 THEN 0 ELSE 1 END')
+                ->orderBy('id')
+                ->get()
+                ->unique('slug')
+                ->take(24)
+                ->values();
+
+            $banner = Banner::Where('status', 't')->take(5)->get();
             $page = Page::Where('status', 't')->where('slug', 'home')->first();
             $metatitle = $page->meta_title ?? null;
             $metakey = $page->meta_keywords ?? null;
             $metadesc = $page->meta_description ?? null;
 
-        return view('home', compact('pages','teachers','category','blogs','banner','reviews','metatitle','metakey','metadesc'));
+        return view('home', compact('teachers','category','courseStrip','blogs','banner','reviews','metatitle','metakey','metadesc'));
     }
 
    public function askNxtAi(Request $request)
@@ -150,8 +162,20 @@ public function sitemap()
     }
 
     // Generated Pages
+    //
+    // A sitemap is a list of pages asking to be indexed, so a page carrying
+    // noindex must never appear in one: Search Console counts every one of
+    // them as an "Excluded by 'noindex' tag" error against the sitemap.
+    // index_flag is the same payload key pages/show.blade.php reads when it
+    // decides whether to emit the noindex meta tag.
     GeneratedPage::where('status', 'published')->chunk(500, function ($pages) use (&$urls, $baseUrl) {
         foreach ($pages as $page) {
+            $indexFlag = (string) data_get($page->payload, 'index_flag', 'Index');
+
+            if ($indexFlag !== 'Index') {
+                continue;
+            }
+
             $urls[] = [
                 'loc' => $baseUrl . '/p/' . $page->slug,
                 'lastmod' => optional($page->updated_at)->toDateString() ?? now()->toDateString(),
@@ -221,16 +245,15 @@ Product::where('status', 't')
                 continue;
             }
 
-            $encodedId = rtrim(
-                strtr(base64_encode($t->user_id . '-nxt'), '+/', '-_'),
-                '='
-            );
+            // Register::profileUrl() is the single source of truth for this
+            // URL, shared with the canonical tag so the two cannot disagree.
+            // It returns null for a tutor with no city, which used to be
+            // written out as the literal "/tutor/city/..." and served a 500.
+            $profileUrl = $t->profileUrl();
 
-            $profileUrl = route('tutor.newshow', [
-                'city' => Str::slug($t->city ?: 'city'),
-                'user_id' => $encodedId,
-                'name' => Str::slug($t->name ?: 'tutor'),
-            ]);
+            if (! $profileUrl) {
+                continue;
+            }
 
             $urls[] = [
                 'loc' => $profileUrl,
@@ -252,11 +275,20 @@ Product::where('status', 't')
     $category = null;
     
     foreach ($slugs as $slug) {
+        // The `orWhere` here used to sit outside a nested closure, so the SQL
+        // read `(slug = ? AND pid IS NULL) OR pid = 0` — the slug stopped
+        // applying the moment the OR was reached and every single-segment
+        // /category/* URL returned the first top-level category. All 74
+        // category URLs in the sitemap served identical content.
         $category = Category::where('slug', $slug)
             ->when($category, function ($query) use ($category) {
+                // A deeper segment must be a child of the segment before it.
                 return $query->where('pid', $category->id);
             }, function ($query) {
-                return $query->whereNull('pid')->orWhere('pid', 0);
+                // The first segment may name a top-level category or a child
+                // one: the sitemap lists every category as /category/{slug}.
+                // Where a slug is used at both levels, top-level wins.
+                return $query->orderByRaw('CASE WHEN pid IS NULL OR pid = 0 THEN 0 ELSE 1 END');
             })
             ->first();
 
@@ -564,8 +596,9 @@ public function compareDefaults(Request $request)
     $offset = (int) $request->get('offset', 0);
     $limit  = (int) $request->get('limit', 6);
     $search = trim($request->get('search', ''));
+    $place  = trim($request->get('place', ''));
 
-    $teachers = $this->getHomeTeachers($limit, $offset, $search);
+    $teachers = $this->getHomeTeachers($limit, $offset, $search, $place);
 
     return view('home.partials.teacher-cards', compact('teachers'));
 }
@@ -609,34 +642,43 @@ public function compareDefaults(Request $request)
     $pincode = trim((string) $request->get('pincode', ''));
     $city    = trim((string) $request->get('city', ''));
 
-    $limit = 6;
+    // Four fills the two-up phone grid exactly.
+    $limit = 4;
 
-    // 1) PINCODE wise
+    // Nearest first, then widen. Each step only tops up what the one before it
+    // could not fill: a thin pincode used to return its two or three tutors and
+    // return straight away, leaving the row half empty even when the same city
+    // had plenty more to offer. A tutor already picked is never repeated.
+    $steps = [];
+
     if ($pincode !== '') {
-        $teachers = $this->baseTeacherQuery()
+        $steps[] = fn () => $this->baseTeacherQuery()
             ->where('register.pincode', $pincode)
             ->limit($limit)
             ->get();
-
-        if ($teachers->count()) {
-            return view('home.partials.local-teacher-cards', compact('teachers'));
-        }
     }
 
-    // 2) CITY wise
     if ($city !== '') {
-        $teachers = $this->baseTeacherQuery()
+        $steps[] = fn () => $this->baseTeacherQuery()
             ->where('register.city', $city)
             ->limit($limit)
             ->get();
-
-        if ($teachers->count()) {
-            return view('home.partials.local-teacher-cards', compact('teachers'));
-        }
     }
 
-    // 3) fallback (top teachers)
-    $teachers = $this->getHomeTeachers($limit, 0);
+    $steps[] = fn () => $this->getHomeTeachers($limit, 0);
+
+    $teachers = collect();
+
+    foreach ($steps as $step) {
+        if ($teachers->count() >= $limit) {
+            break;
+        }
+
+        $teachers = $teachers->concat($step())->unique('user_id')->values();
+    }
+
+    $teachers = $teachers->take($limit);
+
     return view('home.partials.local-teacher-cards', compact('teachers'));
 }
 
@@ -855,7 +897,7 @@ public function cityAreaShow($citySlug, $areaSlug)
     } 
 
 
- private function getHomeTeachers(int $limit = 6, int $offset = 0, string $search = '')
+ private function getHomeTeachers(int $limit = 6, int $offset = 0, string $search = '', string $place = '')
 {
     $ratingsSub = DB::table('teacher_review')
         ->selectRaw("
@@ -1036,6 +1078,26 @@ public function cityAreaShow($citySlug, $areaSlug)
         });
     }
 
+    // -----------------------------------
+    // Place filter (AND) — the hero's "Sector or city" field. Subject terms
+    // are OR-matched above; the place must actually narrow the result, or
+    // "maths gurgaon" returns maths tutors from every city.
+    // -----------------------------------
+    $place = trim($place);
+    if ($place !== '') {
+        $placeTerms = preg_split('/\s+/', $place);
+        $query->where(function ($pq) use ($place, $placeTerms) {
+            $pq->where('register.address', 'like', "%{$place}%")
+               ->orWhere('register.city', 'like', "%{$place}%")
+               ->orWhere('register.pincode', 'like', "%{$place}%");
+            foreach ($placeTerms as $term) {
+                $pq->orWhere('register.address', 'like', "%{$term}%")
+                   ->orWhere('register.city', 'like', "%{$term}%")
+                   ->orWhere('register.pincode', 'like', "%{$term}%");
+            }
+        });
+    }
+
     return $query
         ->orderByDesc('reviews_count')
         ->orderByDesc('rating_avg')
@@ -1091,6 +1153,15 @@ public function cityAreaShow($citySlug, $areaSlug)
         ])
         ->firstOrFail();
 
+    // A tutor with no city has no valid public URL — profileUrl() returns null
+    // for exactly this case. Rendering anyway is what produced the 500s behind
+    // every "/tutor/city/..." URL, "city" being the literal fallback string the
+    // sitemap used to write out. Serve the honest answer instead: there is no
+    // page here until the record has a city.
+    if (! $tutor->profileUrl()) {
+        abort(404);
+    }
+
     // ✅ Use effective courses everywhere (fallback ready)
     $effective = $tutor->effective_courses;
 
@@ -1125,15 +1196,41 @@ public function cityAreaShow($citySlug, $areaSlug)
     }
 
     // ✅ Related tutors (same city)
+    // Same shape the home cards use: ratings joined, courses eager-loaded,
+    // so the shared tutor-card partial can render these too.
+    $relatedRatings = DB::table('teacher_review')
+        ->selectRaw('teacher_review.user_id, COUNT(*) as reviews_count, AVG(teacher_review.rating) as rating_avg')
+        ->where('teacher_review.status', 't')
+        ->groupBy('teacher_review.user_id');
+
     $relatedTutors = Register::query()
         ->from('register')
-        ->select(['user_id','name','avatar','address','city'])
-        ->where('join_as', 'teacher')
-        ->where('status', 't')
-        ->where('city', $tutor->city)
-        ->where('user_id', '!=', $tutor->user_id)
-        ->orderByDesc('id')
-        ->limit(6)
+        ->select([
+            'register.user_id','register.name','register.avatar',
+            'register.address','register.city',
+            DB::raw('COALESCE(rr.reviews_count, 0) as reviews_count'),
+            DB::raw('COALESCE(rr.rating_avg, 0) as rating_avg'),
+        ])
+        ->leftJoinSub($relatedRatings, 'rr', function ($join) {
+            $join->on(
+                DB::raw('register.user_id COLLATE utf8mb4_unicode_ci'),
+                '=',
+                DB::raw('rr.user_id COLLATE utf8mb4_unicode_ci')
+            );
+        })
+        ->with(['courses' => function ($q) {
+            $q->select(['id','user_id','pid','cid','cat_id','sub_id'])
+              ->with(['board:id,cat_title','classCategory:id,cat_title','category:id,cat_title']);
+        }])
+        ->where('register.join_as', 'teacher')
+        ->where('register.status', 't')
+        ->where('register.city', $tutor->city)
+        ->where('register.user_id', '!=', $tutor->user_id)
+        ->orderByDesc('rr.reviews_count')
+        ->orderByDesc('register.id')
+        // Four, to fill the .suggested-grid row exactly — the same grid and the
+        // same count the home page rows use. Three left an empty fourth slot.
+        ->limit(4)
         ->get();
 
     // ✅ Latest blogs (optional)
@@ -1145,8 +1242,10 @@ public function cityAreaShow($citySlug, $areaSlug)
         ->limit(6)
         ->get();
 
-    // ✅ canonical
-    $canonical = route('tutor.show', encrypt($tutor->user_id));
+    // ✅ canonical — must be stable and self-referencing.
+    // encrypt() was used here: its random IV produced a different URL on
+    // every render, so no tutor page ever pointed at itself.
+    $canonical = $tutor->profileUrl() ?? url()->current();
 
     // ✅ Reviews (for bottom sheet / horizontal cards)
     $reviews = $tutor->reviews()
@@ -1263,6 +1362,15 @@ $realUserId = str_replace('-nxt', '', $decoded);
         ])
         ->firstOrFail();
 
+    // A tutor with no city has no valid public URL — profileUrl() returns null
+    // for exactly this case. Rendering anyway is what produced the 500s behind
+    // every "/tutor/city/..." URL, "city" being the literal fallback string the
+    // sitemap used to write out. Serve the honest answer instead: there is no
+    // page here until the record has a city.
+    if (! $tutor->profileUrl()) {
+        abort(404);
+    }
+
     // ✅ Use effective courses everywhere (fallback ready)
     $effective = $tutor->effective_courses;
 
@@ -1297,15 +1405,41 @@ $realUserId = str_replace('-nxt', '', $decoded);
     }
 
     // ✅ Related tutors (same city)
+    // Same shape the home cards use: ratings joined, courses eager-loaded,
+    // so the shared tutor-card partial can render these too.
+    $relatedRatings = DB::table('teacher_review')
+        ->selectRaw('teacher_review.user_id, COUNT(*) as reviews_count, AVG(teacher_review.rating) as rating_avg')
+        ->where('teacher_review.status', 't')
+        ->groupBy('teacher_review.user_id');
+
     $relatedTutors = Register::query()
         ->from('register')
-        ->select(['user_id','name','avatar','address','city'])
-        ->where('join_as', 'teacher')
-        ->where('status', 't')
-        ->where('city', $tutor->city)
-        ->where('user_id', '!=', $tutor->user_id)
-        ->orderByDesc('id')
-        ->limit(6)
+        ->select([
+            'register.user_id','register.name','register.avatar',
+            'register.address','register.city',
+            DB::raw('COALESCE(rr.reviews_count, 0) as reviews_count'),
+            DB::raw('COALESCE(rr.rating_avg, 0) as rating_avg'),
+        ])
+        ->leftJoinSub($relatedRatings, 'rr', function ($join) {
+            $join->on(
+                DB::raw('register.user_id COLLATE utf8mb4_unicode_ci'),
+                '=',
+                DB::raw('rr.user_id COLLATE utf8mb4_unicode_ci')
+            );
+        })
+        ->with(['courses' => function ($q) {
+            $q->select(['id','user_id','pid','cid','cat_id','sub_id'])
+              ->with(['board:id,cat_title','classCategory:id,cat_title','category:id,cat_title']);
+        }])
+        ->where('register.join_as', 'teacher')
+        ->where('register.status', 't')
+        ->where('register.city', $tutor->city)
+        ->where('register.user_id', '!=', $tutor->user_id)
+        ->orderByDesc('rr.reviews_count')
+        ->orderByDesc('register.id')
+        // Four, to fill the .suggested-grid row exactly — the same grid and the
+        // same count the home page rows use. Three left an empty fourth slot.
+        ->limit(4)
         ->get();
 
     // ✅ Latest blogs (optional)
@@ -1317,8 +1451,10 @@ $realUserId = str_replace('-nxt', '', $decoded);
         ->limit(6)
         ->get();
 
-    // ✅ canonical
-    $canonical = route('tutor.show', encrypt($tutor->user_id));
+    // ✅ canonical — must be stable and self-referencing.
+    // encrypt() was used here: its random IV produced a different URL on
+    // every render, so no tutor page ever pointed at itself.
+    $canonical = $tutor->profileUrl() ?? url()->current();
 
     // ✅ Reviews (for bottom sheet / horizontal cards)
     $reviews = $tutor->reviews()

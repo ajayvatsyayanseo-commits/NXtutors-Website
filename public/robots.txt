@@ -1,0 +1,173 @@
+# =====================================================
+# NXTUTORS AI + SEO OPTIMIZED ROBOTS.TXT
+# =====================================================
+#
+# Location note: robots.txt MUST live in the web document root
+# (this "public/" directory) to be served at /robots.txt.
+# The copy at the application root is not web-accessible.
+#
+# Production note: Cloudflare "Managed robots.txt" currently
+# overrides this file at the edge. Until that setting is turned
+# off in the Cloudflare dashboard, this file is not what Google
+# reads, and the Sitemap: directive below is not advertised.
+
+User-agent: *
+Allow: /
+
+# -------------------------
+# IMPORTANT SEO PAGES
+# -------------------------
+
+Allow: /tutors/
+Allow: /home-tutors/
+Allow: /blog/
+Allow: /services/
+Allow: /jee/
+Allow: /neet/
+Allow: /cbse/
+Allow: /isc/
+Allow: /igcse/
+Allow: /ib/
+
+# -------------------------
+# BLOCK SYSTEM PATHS
+# -------------------------
+
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /login/
+Disallow: /register/
+Disallow: /checkout/
+Disallow: /payment/
+Disallow: /api/
+Disallow: /vendor/
+Disallow: /user/
+Disallow: /profile/
+Disallow: /messages/
+Disallow: /settings/
+
+# /storage/ is deliberately crawlable: every public image on this
+# site (tutor portraits, category icons, hero and blog images) is
+# served from /storage/. Blocking it would stop Google fetching
+# images needed to render pages and would remove the site from
+# Google Images.
+
+# -------------------------
+# BLOCK DUPLICATE URLS
+# -------------------------
+
+Disallow: /*?*
+Disallow: /*sort=
+Disallow: /*filter=
+Disallow: /*page=
+Disallow: /*search=
+Disallow: /*utm_
+Disallow: /search/
+
+# -------------------------
+# CRAWL CONTROL
+# -------------------------
+
+Crawl-delay: 5
+
+# =====================================================
+# GOOGLE & BING
+# =====================================================
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# =====================================================
+# AI SEARCH (ALLOW)
+# =====================================================
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# =====================================================
+# AI TRAINING BLOCK
+# =====================================================
+
+User-agent: Google-Extended
+Disallow: /
+
+# =====================================================
+# SEO SCRAPER BLOCK
+# =====================================================
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+# =====================================================
+# AGGRESSIVE BOTS
+# =====================================================
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+# =====================================================
+# SCRIPT SCRAPERS
+# =====================================================
+
+User-agent: python-requests
+Disallow: /
+
+User-agent: curl
+Disallow: /
+
+User-agent: wget
+Disallow: /
+
+User-agent: scrapy
+Disallow: /
+
+User-agent: Go-http-client
+Disallow: /
+
+User-agent: okhttp
+Disallow: /
+
+# =====================================================
+# SITEMAP
+# =====================================================
+
+Sitemap: https://www.nxtutors.com/sitemap.xml

@@ -1,0 +1,393 @@
+- generic [active] [ref=f32e1]:
+  - link "Skip to main content" [ref=f32e2] [cursor=pointer]:
+    - /url: "#nxt-content"
+  - generic [ref=f32e3]:
+    - banner [ref=f32e4]:
+      - link "NXTutors — home" [ref=f32e6] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000
+        - generic [ref=f32e7]: NXTutors
+      - button "Toggle menu" [ref=f32e9] [cursor=pointer]
+    - generic [ref=f32e13]:
+      - main [ref=f32e14]:
+        - generic [ref=f32e15]:
+          - generic [ref=f32e16]:
+            - img "Gurugram" [ref=f32e18]
+            - generic [ref=f32e19]:
+              - generic [ref=f32e20]:
+                - link "Home" [ref=f32e21] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000
+                - generic [ref=f32e22]: ›
+                - link "Cities" [ref=f32e23] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/city
+                - generic [ref=f32e24]: ›
+                - link "Gurugram" [ref=f32e25] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/city/gurugram
+                - generic [ref=f32e26]: ›
+                - generic [ref=f32e27]: NXTutors — Home Tutor Services for M3M Urbana Residences, Sector 67 (Gurugram)
+              - heading "NXTutors — Home Tutor Services for M3M Urbana Residences, Sector 67 (Gurugram)" [level=1] [ref=f32e28]
+              - paragraph [ref=f32e29]: Our tutors are well aligned with academic structures of:The Shri Ram School, Aravali Campus — emphasis on CBSE/ICSE and internal assessmentsHeritage Xperiential Learning School, Sector 62 —...
+              - generic [ref=f32e30]:
+                - generic [ref=f32e31]:
+                  - text: "📍 Pincode:"
+                  - strong [ref=f32e32]: "122001"
+                - generic [ref=f32e33]:
+                  - text: "⭐ Rating:"
+                  - strong [ref=f32e34]: 5.0/5
+                - generic [ref=f32e35]:
+                  - text: "🗣 Reviews:"
+                  - strong [ref=f32e36]: "7"
+                - generic [ref=f32e37]: ✅ Verified Tutors
+              - generic [ref=f32e38]:
+                - link "View Tutors" [ref=f32e39] [cursor=pointer]:
+                  - /url: "#tutors"
+                - link "FAQs" [ref=f32e40] [cursor=pointer]:
+                  - /url: "#faqs"
+          - generic [ref=f32e41]:
+            - heading "Tutors Available in NXTutors — Home Tutor Services for M3M Urbana Residences, Sector 67 (Gurugram)" [level=2] [ref=f32e42]
+            - generic [ref=f32e44]:
+              - generic [ref=f32e45]:
+                - generic [ref=f32e46]:
+                  - generic [ref=f32e47]:
+                    - img "Sneha Joshi" [ref=f32e48]
+                    - generic [ref=f32e49]: ✔
+                  - generic [ref=f32e50]:
+                    - heading "Sneha Joshi" [level=3] [ref=f32e51]
+                    - generic [ref=f32e52]: ⭐ 4.6 (60 reviews)
+                    - generic [ref=f32e53]: Verified Tutor
+                - generic [ref=f32e54]: 📍 GURGAON
+                - generic [ref=f32e55]:
+                  - link "WhatsApp" [ref=f32e56] [cursor=pointer]:
+                    - /url: https://wa.me/917836034313?text=Hi%2C+I+want+to+connect+with+tutor+Sneha+Joshi+%28UserID%3A+2938%29.+Area%3A+NXTutors+%E2%80%94+Home+Tutor+Services+for+M3M+Urbana+Residences%2C+Sector+67+%28Gurugram%29%2C+Gurugram
+                  - link "View Profile" [ref=f32e57] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/tutor/gurgaon/MjkzOC1ueHQ/sneha-joshi
+              - generic [ref=f32e58]:
+                - generic [ref=f32e59]:
+                  - generic [ref=f32e60]:
+                    - img "Sourav joshi" [ref=f32e61]
+                    - generic [ref=f32e62]: ✔
+                  - generic [ref=f32e63]:
+                    - heading "Sourav joshi" [level=3] [ref=f32e64]
+                    - generic [ref=f32e65]: ⭐ 0.0 (0 reviews)
+                    - generic [ref=f32e66]: CBSE • Academic (Class XI–XII)
+                - generic [ref=f32e67]: 📍 House No. 234, Sector 14, Near HUDA Market, Gurugram, Haryana – 122...
+                - generic [ref=f32e68]:
+                  - link "WhatsApp" [ref=f32e69] [cursor=pointer]:
+                    - /url: https://wa.me/917836034313?text=Hi%2C+I+want+to+connect+with+tutor+Sourav+joshi+%28UserID%3A+1013%29.+Area%3A+NXTutors+%E2%80%94+Home+Tutor+Services+for+M3M+Urbana+Residences%2C+Sector+67+%28Gurugram%29%2C+Gurugram
+                  - link "View Profile" [ref=f32e70] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/tutor/arjun-nagar/MTAxMy1ueHQ/sourav-joshi
+          - generic [ref=f32e71]:
+            - generic [ref=f32e72]:
+              - heading "About this Area" [level=2] [ref=f32e73]
+              - generic [ref=f32e75]:
+                - paragraph [ref=f32e76]:
+                  - text: Located in Sector 67, Gurugram,
+                  - strong [ref=f32e77]: M3M Urbana Residences
+                  - text: is known for its premium high-rise living, modern amenities, and proximity to Educational hubs and transport links. Residents here often belong to families working in Gurugram, Delhi NCR, or commuting from other North Indian regions (Punjab, Rajasthan, Delhi). With that demographic comes a high expectation for academic performance, structured learning, and convenience.
+                - paragraph [ref=f32e78]: "Parents in Urbana Residences commonly look for tutors who understand the teaching style of nearby top schools. Our tutors regularly work with students from:"
+                - paragraph [ref=f32e79]:
+                  - strong [ref=f32e80]: The Shri Ram School, Aravali Campus
+                - paragraph [ref=f32e81]:
+                  - strong [ref=f32e82]: GD Goenka Public School, Sohna Road
+                - paragraph [ref=f32e83]:
+                  - strong [ref=f32e84]: Heritage Xperiential Learning School, Sector 62
+                - paragraph [ref=f32e85]:
+                  - strong [ref=f32e86]: Ryan International, Sector 54 & 49
+                - paragraph [ref=f32e87]:
+                  - strong [ref=f32e88]: Presidium School, Sector 57
+                - paragraph [ref=f32e89]:
+                  - text: Because the community has varied schedules, we offer flexible options — after-school offline tuition in Urbana homes, and online live sessions for weekends or when families are away. The expectation is not just subject coaching but performance in
+                  - strong [ref=f32e90]: internal assessments, tests, and board exams
+                  - text: ", with meaningful feedback and reliable punctuality."
+                - paragraph [ref=f32e91]: Safety is a priority — especially for younger children — so NXTutors ensures all tutors are verified, punctual, and aligned with modern teaching aids (whiteboards, online tools). For students preparing for Class 10–12 rounds, competitive exams, coding or commerce stream, Urbana needs strong conceptual clarity, exam strategy, practice papers, and regular mock tests
+              - heading "Subjects Covered" [level=2] [ref=f32e92]
+              - generic [ref=f32e94]:
+                - paragraph [ref=f32e95]: "Mathematics: primary to senior secondary, CBSE/ICSE, problem-solving & Olympiad foundation"
+                - paragraph [ref=f32e96]: "Science: Physics, Chemistry, Biology with conceptual & lab-based illustrations"
+                - paragraph [ref=f32e97]: "English: Grammar, writing, literature, comprehension — CBSE & ICSE style"
+                - paragraph [ref=f32e98]: "Social Studies (SST): History, Geography, Civics, Economics – memory & analytical training"
+                - paragraph [ref=f32e99]: "Commerce: Accounts, Business Studies, Economics stream for 11–12"
+                - paragraph [ref=f32e100]: "Computer Science & Coding: Python, Java basics, HTML/CSS, logic building"
+                - paragraph [ref=f32e101]: "Languages: Hindi, French, Sanskrit; reading, writing, speaking proficiency"
+                - paragraph [ref=f32e102]: "Skill Enrichment: Public speaking, creative writing, critical thinking"
+                - paragraph [ref=f32e103]: "Competitive Exams: Olympiads, NTSE, foundation coaching for Class 6–10"
+              - heading "Teaching Approach" [level=2] [ref=f32e104]
+              - generic [ref=f32e106]:
+                - paragraph [ref=f32e107]:
+                  - strong [ref=f32e108]: "One-on-One Custom Sessions:"
+                  - text: Personalized pace and attention, tailored to student strengths & weaknesses.
+                - paragraph [ref=f32e109]:
+                  - strong [ref=f32e110]: "Conceptual Foundations:"
+                  - text: Building underlying understanding before drills — especially for Science & Maths.
+                - paragraph [ref=f32e111]:
+                  - strong [ref=f32e112]: "Exam-Focused Curriculum:"
+                  - text: School syllabus mapping, previous years’ board question practice, timed mock tests.
+                - paragraph [ref=f32e113]:
+                  - strong [ref=f32e114]: "Adaptive Learning & Remediation:"
+                  - text: Regular assessment, identifying weak topics, focused remedial classes.
+                - paragraph [ref=f32e115]:
+                  - strong [ref=f32e116]: "Homework & Project Support:"
+                  - text: Guidance in assignments, projects for schools like Heritage, Ryan etc.
+                - paragraph [ref=f32e117]:
+                  - strong [ref=f32e118]: "Hybrid Delivery Flexibility:"
+                  - text: Face-to-face when local; online classes with interactive tools when not.
+                - paragraph [ref=f32e119]:
+                  - strong [ref=f32e120]: "Confidence & Communication Skills:"
+                  - text: Emphasis on spoken English, reading fluency, presentation skills.
+                - paragraph [ref=f32e121]:
+                  - strong [ref=f32e122]: "Parent-Tutor Feedback Loop:"
+                  - text: Regular updates and scope to adjust plan as per student progress
+              - heading "Tutor Types" [level=2] [ref=f32e123]
+              - generic [ref=f32e125]:
+                - paragraph [ref=f32e126]:
+                  - strong [ref=f32e127]: "Female Tutors:"
+                  - text: For comfort and safety, especially for younger students.
+                - paragraph [ref=f32e128]:
+                  - strong [ref=f32e129]: "Experienced Subject Experts:"
+                  - text: Ex-school teachers, advanced specialists.
+                - paragraph [ref=f32e130]:
+                  - strong [ref=f32e131]: "Budget Tutors:"
+                  - text: Great foundational tutors starting at lower rate tiers.
+                - paragraph [ref=f32e132]:
+                  - strong [ref=f32e133]: "Premium Tutors:"
+                  - text: For board exam prep and high-stakes exams needing strategic coaching.
+                - paragraph [ref=f32e134]:
+                  - strong [ref=f32e135]: "Online-only Tutors:"
+                  - text: Ideal for flexible schedules or remote learning.
+                - paragraph [ref=f32e136]:
+                  - strong [ref=f32e137]: "Offline Tutors:"
+                  - text: In-home tutoring within Urbana Residences and neighboring sectors.
+              - heading "Pricing & Packages" [level=2] [ref=f32e138]
+              - paragraph [ref=f32e141]: "Hourly Classes ₹500/hr → ₹2000/hr Monthly Packages Bronze: ~₹5,000/month (few weekly sessions)Silver: ~₹12,000/month (regular weekly + tests)Gold: ~₹20,000-₹30,000/month (daily/board prep + senior classes)"
+              - heading "Why Choose NXTutors" [level=2] [ref=f32e142]
+              - generic [ref=f32e144]:
+                - paragraph [ref=f32e145]: Tutors familiar with school standards in and around Sector 67 (e.g. Shri Ram, Heritage, GD Goenka etc.)
+                - paragraph [ref=f32e146]: Verified, background-checked tutors ensuring safety & reliability.
+                - paragraph [ref=f32e147]: "Flexible delivery: home tuition or online depending on your routine."
+                - paragraph [ref=f32e148]: Transparent pricing and no hidden costs.
+                - paragraph [ref=f32e149]: Emphasis on measurable improvement — via tests, reports, mock exams.
+                - paragraph [ref=f32e150]: Tutor matching based on student’s style, subject requirements and preferred tutor type (female, experienced etc.).
+            - complementary [ref=f32e151]:
+              - generic [ref=f32e152]:
+                - heading "Book Free Demo" [level=2] [ref=f32e153]
+                - paragraph [ref=f32e155]: Tell us your class, subject & preferred timing. We’ll connect you with a verified tutor.
+                - link "Get a Call Back" [ref=f32e156] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/contact
+                - link "Explore Tutors" [ref=f32e157] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/tutors
+              - heading "Area Map" [level=2] [ref=f32e158]
+              - paragraph [ref=f32e161]:
+                - iframe [ref=f32e162]:
+                  
+          - generic [ref=f32e163]:
+            - heading "What Students Say" [level=2] [ref=f32e164]
+            - generic [ref=f32e166]:
+              - generic [ref=f32e167]:
+                - generic [ref=f32e168]:
+                  - generic [ref=f32e169]:
+                    - generic [ref=f32e170]:
+                      - paragraph [ref=f32e171]: Rohit Singh
+                      - generic [ref=f32e172]: Punjab
+                    - generic "Rating 5/5" [ref=f32e173]: ★★★★★
+                  - generic [ref=f32e174]: Premium Physics tutor—very rigorous, concept-based and helpful for competitive exams too
+                - generic [ref=f32e175]:
+                  - generic [ref=f32e176]:
+                    - generic [ref=f32e177]:
+                      - paragraph [ref=f32e178]: Simran Rathore
+                      - generic [ref=f32e179]: Punjab
+                    - generic "Rating 5/5" [ref=f32e180]: ★★★★★
+                  - generic [ref=f32e181]: My daughter’s Science marks rose from 72 to 88 after a month of tutoring. The tutor was very patient and aligned with ICSE syllabus
+                - generic [ref=f32e182]:
+                  - generic [ref=f32e183]:
+                    - generic [ref=f32e184]:
+                      - paragraph [ref=f32e185]: Neha Kapoor
+                      - generic [ref=f32e186]: Rajasthan
+                    - generic "Rating 5/5" [ref=f32e187]: ★★★★★
+                  - generic [ref=f32e188]: Female English tutor from NXTutors was wonderful — literature essays and grammar both improved noticeably
+                - generic [ref=f32e189]:
+                  - generic [ref=f32e190]:
+                    - generic [ref=f32e191]:
+                      - paragraph [ref=f32e192]: Vikram Mehta
+                      - generic [ref=f32e193]: Delhi
+                    - generic "Rating 5/5" [ref=f32e194]: ★★★★★
+                  - generic [ref=f32e195]: Affordable Maths tuition for Class 10 – he covered all CBSE sample papers. Boards became much less stressful
+                - generic [ref=f32e196]:
+                  - generic [ref=f32e197]:
+                    - generic [ref=f32e198]:
+                      - paragraph [ref=f32e199]: Anjali Choudhary
+                      - generic [ref=f32e200]: Punjab
+                    - generic "Rating 5/5" [ref=f32e201]: ★★★★★
+                  - generic [ref=f32e202]: Started online sessions for Hindi and Accounts. The tutor made it interactive and easy to understand
+                - generic [ref=f32e203]:
+                  - generic [ref=f32e204]:
+                    - generic [ref=f32e205]:
+                      - paragraph [ref=f32e206]: Pooja Sharma
+                      - generic [ref=f32e207]: Rajasthan
+                    - generic "Rating 5/5" [ref=f32e208]: ★★★★★
+                  - generic [ref=f32e209]: Tutor delivered excellent mock test series and pre-board preparation. My child’s confidence soared
+                - generic [ref=f32e210]:
+                  - generic [ref=f32e211]:
+                    - generic [ref=f32e212]:
+                      - paragraph [ref=f32e213]: Amit Gupta
+                      - generic [ref=f32e214]: Delhi
+                    - generic "Rating 5/5" [ref=f32e215]: ★★★★★
+                  - generic [ref=f32e216]: Appreciate the weekly progress reports. The tutor observed where my son lagged and corrected mistakes promptly
+              - generic [ref=f32e217]:
+                - button "‹" [ref=f32e218] [cursor=pointer]
+                - button "›" [ref=f32e219] [cursor=pointer]
+          - generic [ref=f32e220]:
+            - heading "FAQs" [level=2] [ref=f32e221]
+            - generic [ref=f32e223]:
+              - generic [ref=f32e224]:
+                - button "How do I choose between online and offline tuition in Urbana Residences? −" [ref=f32e225] [cursor=pointer]:
+                  - generic [ref=f32e226]: How do I choose between online and offline tuition in Urbana Residences?
+                  - generic [ref=f32e227]: −
+                - generic [ref=f32e228]: It depends on your child’s learning style and your schedule. Offline sessions are great for hands-on & direct interaction; online gives flexibility especially when commuting or travel is involved. NXTutors supports switching modes as needed.
+              - generic [ref=f32e230]:
+                - button "What is your refund/trial class policy if I’m not satisfied? +" [ref=f32e231] [cursor=pointer]:
+                  - generic [ref=f32e232]: What is your refund/trial class policy if I’m not satisfied?
+                  - generic [ref=f32e233]: +
+                - generic: We offer a trial class so you can evaluate tutor’s style. If unsatisfied, you can request re-assignment or refund for that first session depending on the plan.
+              - generic [ref=f32e235]:
+                - button "Do you handle last-minute exam or board revision requests? +" [ref=f32e236] [cursor=pointer]:
+                  - generic [ref=f32e237]: Do you handle last-minute exam or board revision requests?
+                  - generic [ref=f32e238]: +
+                - generic: Yes— we have tutors available for crash-courses and board exam revisions (in CBSE/ICSE) with intensive schedules and mock test series.
+              - generic [ref=f32e240]:
+                - button "Are study materials and sample papers included in packages? +" [ref=f32e241] [cursor=pointer]:
+                  - generic [ref=f32e242]: Are study materials and sample papers included in packages?
+                  - generic [ref=f32e243]: +
+                - generic: Yes — most plans include syllabus-aligned notes, past years’ question papers, worksheets, and test-series where necessary
+              - generic [ref=f32e245]:
+                - button "How do you ensure tutor’s expertise in specific subjects like Accounts or Computer Science? +" [ref=f32e246] [cursor=pointer]:
+                  - generic [ref=f32e247]: How do you ensure tutor’s expertise in specific subjects like Accounts or Computer Science?
+                  - generic [ref=f32e248]: +
+                - generic: We vet tutors for subject qualifications, teaching experience, and prior success in similar roles. For technical subjects we also check practical exposure or demo sessions
+              - generic [ref=f32e250]:
+                - button "Can I change my tutor if the match is not good? +" [ref=f32e251] [cursor=pointer]:
+                  - generic [ref=f32e252]: Can I change my tutor if the match is not good?
+                  - generic [ref=f32e253]: +
+                - generic: Absolutely — NXTutors offers tutor re-assignment free of charge upon valid request if the tutor is not a good fit
+              - generic [ref=f32e255]:
+                - button "Do tutors observe local school exam schedules? +" [ref=f32e256] [cursor=pointer]:
+                  - generic [ref=f32e257]: Do tutors observe local school exam schedules?
+                  - generic [ref=f32e258]: +
+                - generic: Yes, tutors are familiar with exam timetables of schools in Sector 67 / Gurugram such as The Shri Ram, Heritage, GD Goenka etc., and adjust sessions to support internal exams and board exams
+          - generic [ref=f32e260]:
+            - heading "Related Areas in Gurugram" [level=2] [ref=f32e261]
+            - generic [ref=f32e263]:
+              - 'link "Best Home Tutors in The Aralias Tower A–F, Sector 42 Gurugram | NXTutors 📍 Pincode: 122009 If you reside in The Aralias Towers (A–F), Sector 42, you already understand the importance of high-quality le... View Tutors →" [ref=f32e264] [cursor=pointer]':
+                - /url: http://127.0.0.1:8000/city/gurugram/the-aralias-tower-af
+                - generic [ref=f32e265]: Best Home Tutors in The Aralias Tower A–F, Sector 42 Gurugram | NXTutors
+                - generic [ref=f32e266]: "📍 Pincode: 122009"
+                - generic [ref=f32e267]: If you reside in The Aralias Towers (A–F), Sector 42, you already understand the importance of high-quality le...
+                - generic [ref=f32e268]: View Tutors →
+              - 'link "Best Home Tutors in The Magnolias Towers 1–9, Sector 42 Gurugram | NXTutors 📍 Pincode: 122009 Welcome to NXTutors – Gurugram’s No.1 Home Tutoring Platform, trusted by parents and students across premium r... View Tutors →" [ref=f32e269] [cursor=pointer]':
+                - /url: http://127.0.0.1:8000/city/gurugram/the-magnolias-towers-19
+                - generic [ref=f32e270]: Best Home Tutors in The Magnolias Towers 1–9, Sector 42 Gurugram | NXTutors
+                - generic [ref=f32e271]: "📍 Pincode: 122009"
+                - generic [ref=f32e272]: Welcome to NXTutors – Gurugram’s No.1 Home Tutoring Platform, trusted by parents and students across premium r...
+                - generic [ref=f32e273]: View Tutors →
+              - 'link "Best Home Tutors in The Camellias Towers A–H, Sector 54 (Gurugram) 📍 Pincode: 122009 Welcome to NXTutors, Gurugram’s most trusted platform for personalized home tutoring services in The Camellias... View Tutors →" [ref=f32e274] [cursor=pointer]':
+                - /url: http://127.0.0.1:8000/city/gurugram/the-camellias-towers-ah
+                - generic [ref=f32e275]: Best Home Tutors in The Camellias Towers A–H, Sector 54 (Gurugram)
+                - generic [ref=f32e276]: "📍 Pincode: 122009"
+                - generic [ref=f32e277]: Welcome to NXTutors, Gurugram’s most trusted platform for personalized home tutoring services in The Camellias...
+                - generic [ref=f32e278]: View Tutors →
+              - 'link "Best Home Tutors in The Crest Tower 1–6, Sector 54 (Gurugram) 📍 Pincode: 122009 Welcome to NXTutors – your trusted destination for personalized home tutoring in The Crest, Sector 54 (Gurugra... View Tutors →" [ref=f32e279] [cursor=pointer]':
+                - /url: http://127.0.0.1:8000/city/gurugram/the-crest-tower-16
+                - generic [ref=f32e280]: Best Home Tutors in The Crest Tower 1–6, Sector 54 (Gurugram)
+                - generic [ref=f32e281]: "📍 Pincode: 122009"
+                - generic [ref=f32e282]: Welcome to NXTutors – your trusted destination for personalized home tutoring in The Crest, Sector 54 (Gurugra...
+                - generic [ref=f32e283]: View Tutors →
+              - 'link "Best Home Tutors in DLF Princeton Estate Blocks A–E, Sector 53 (Gurugram) 📍 Pincode: 122009 Welcome to NXTutors – the most trusted home tutoring platform in DLF Princeton Estate, Sector 53 (Gurugram). W... View Tutors →" [ref=f32e284] [cursor=pointer]':
+                - /url: http://127.0.0.1:8000/city/gurugram/dlf-princeton-estate-blocks-ae
+                - generic [ref=f32e285]: Best Home Tutors in DLF Princeton Estate Blocks A–E, Sector 53 (Gurugram)
+                - generic [ref=f32e286]: "📍 Pincode: 122009"
+                - generic [ref=f32e287]: Welcome to NXTutors – the most trusted home tutoring platform in DLF Princeton Estate, Sector 53 (Gurugram). W...
+                - generic [ref=f32e288]: View Tutors →
+              - 'link "Best Home Tutors in DLF Belaire Enclave (Annexe), Sector 54 (Gurugram) 📍 Pincode: 122009 Welcome to NXTutors — your local, trusted tutoring network in Sector 54, Gurugram. If you live in DLF Belaire... View Tutors →" [ref=f32e289] [cursor=pointer]':
+                - /url: http://127.0.0.1:8000/city/gurugram/dlf-belaire-enclave-annexe
+                - generic [ref=f32e290]: Best Home Tutors in DLF Belaire Enclave (Annexe), Sector 54 (Gurugram)
+                - generic [ref=f32e291]: "📍 Pincode: 122009"
+                - generic [ref=f32e292]: Welcome to NXTutors — your local, trusted tutoring network in Sector 54, Gurugram. If you live in DLF Belaire...
+                - generic [ref=f32e293]: View Tutors →
+              - 'link "Best Home Tutors in DLF Silver Oaks, Sector 43 (Gurugram) | Affordable, Female & Experienced Tutors for CBSE & ICSE 📍 Pincode: 122002 Finding the right home tutor for your child in DLF Silver Oaks, Sector 43 (Gurugram) is easier than ever with... View Tutors →" [ref=f32e294] [cursor=pointer]':
+                - /url: http://127.0.0.1:8000/city/gurugram/dlf-silver-oaks
+                - generic [ref=f32e295]: Best Home Tutors in DLF Silver Oaks, Sector 43 (Gurugram) | Affordable, Female & Experienced Tutors for CBSE & ICSE
+                - generic [ref=f32e296]: "📍 Pincode: 122002"
+                - generic [ref=f32e297]: Finding the right home tutor for your child in DLF Silver Oaks, Sector 43 (Gurugram) is easier than ever with...
+                - generic [ref=f32e298]: View Tutors →
+              - 'link "Best Home Tutors in DLF Hamilton Court, Sector 43 (Gurugram) | Affordable, Female & Experienced Tutors for CBSE & ICSE 📍 Pincode: 122009 If you are looking for reliable, result-driven home tutoring for your child living in DLF Hamilton Court, Sect... View Tutors →" [ref=f32e299] [cursor=pointer]':
+                - /url: http://127.0.0.1:8000/city/gurugram/dlf-hamilton-court
+                - generic [ref=f32e300]: Best Home Tutors in DLF Hamilton Court, Sector 43 (Gurugram) | Affordable, Female & Experienced Tutors for CBSE & ICSE
+                - generic [ref=f32e301]: "📍 Pincode: 122009"
+                - generic [ref=f32e302]: If you are looking for reliable, result-driven home tutoring for your child living in DLF Hamilton Court, Sect...
+                - generic [ref=f32e303]: View Tutors →
+              - 'link "Best Home Tutors in DLF Richmond Park, Sector 43 (Gurugram) | Affordable, Female & Experienced Tutors for CBSE & ICSE 📍 Pincode: 122009 At NXTutors, we recognise that every child has unique learning needs. If you reside in the vibrant and well-co... View Tutors →" [ref=f32e304] [cursor=pointer]':
+                - /url: http://127.0.0.1:8000/city/gurugram/dlf-richmond-park
+                - generic [ref=f32e305]: Best Home Tutors in DLF Richmond Park, Sector 43 (Gurugram) | Affordable, Female & Experienced Tutors for CBSE & ICSE
+                - generic [ref=f32e306]: "📍 Pincode: 122009"
+                - generic [ref=f32e307]: At NXTutors, we recognise that every child has unique learning needs. If you reside in the vibrant and well-co...
+                - generic [ref=f32e308]: View Tutors →
+      - contentinfo [ref=f32e309]:
+        - generic [ref=f32e310]:
+          - generic [ref=f32e311]:
+            - heading "NXTutors" [level=3] [ref=f32e312]
+            - paragraph [ref=f32e313]: Premium home tutoring in Gurugram. Trusted by 4,500+ parents for CBSE, ICSE & IB.
+            - generic [ref=f32e314]:
+              - link "NXTutors on Facebook" [ref=f32e315] [cursor=pointer]:
+                - /url: "#"
+              - link "NXTutors on Instagram" [ref=f32e318] [cursor=pointer]:
+                - /url: "#"
+              - link "NXTutors on WhatsApp" [ref=f32e321] [cursor=pointer]:
+                - /url: https://wa.me/917836034313
+          - generic [ref=f32e324]:
+            - heading "Quick Links" [level=4] [ref=f32e325]
+            - list [ref=f32e326]:
+              - listitem [ref=f32e327]:
+                - link "Home" [ref=f32e328] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000
+              - listitem [ref=f32e329]:
+                - link "Find Tutors" [ref=f32e330] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/tutors
+              - listitem [ref=f32e331]:
+                - link "Become a Tutor" [ref=f32e332] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f32e333]:
+                - link "Demo Class" [ref=f32e334] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/demo-class
+              - listitem [ref=f32e335]:
+                - link "Subscription Plan" [ref=f32e336] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/pricing
+          - generic [ref=f32e337]:
+            - heading "Useful Links" [level=4] [ref=f32e338]
+            - list [ref=f32e339]:
+              - listitem [ref=f32e340]:
+                - link "Blog & Advice" [ref=f32e341] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/blog
+              - listitem [ref=f32e342]:
+                - link "Pricing Guide" [ref=f32e343] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/pricing-guide
+              - listitem [ref=f32e344]:
+                - link "FAQs" [ref=f32e345] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/faqs
+              - listitem [ref=f32e346]:
+                - link "Terms & Conditions" [ref=f32e347] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/terms-conditions
+              - listitem [ref=f32e348]:
+                - link "Privacy Policy" [ref=f32e349] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/privacy-policy
+          - generic [ref=f32e350]:
+            - heading "Contact Us" [level=4] [ref=f32e351]
+            - list [ref=f32e352]:
+              - listitem [ref=f32e353]:
+                - generic [ref=f32e356]: BLK-2/49, NXTUTORS EDTECH PVT LTD, M3M Cosmopolitan, off Golf Course Extension Road, Sector 66, Gurugram, Haryana 122101
+              - listitem [ref=f32e357]:
+                - link "+9178360 34313" [ref=f32e360] [cursor=pointer]:
+                  - /url: tel:+917836034313
+              - listitem [ref=f32e361]:
+                - link "support@nxtutors.com" [ref=f32e364] [cursor=pointer]:
+                  - /url: mailto:support@nxtutors.com
+            - link "Chat on WhatsApp" [ref=f32e365] [cursor=pointer]:
+              - /url: https://wa.me/917836034313
+        - generic [ref=f32e366]: © 2026 NXTutors — All rights reserved.

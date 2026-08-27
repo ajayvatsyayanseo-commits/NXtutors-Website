@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <title>{{ $blog->meta_title ?: $blog->title }}</title>
   <meta name="description" content="{{ $blog->meta_desc ?: '' }}">
-  <link rel="canonical" href="{{ $canonical }}">
 
   {{-- OG --}}
   <meta property="og:title" content="{{ $blog->meta_title ?: $blog->title }}">
@@ -148,7 +147,7 @@
 
         {{-- ✅ BODY + SIDEBAR LAYOUT --}}
         <div style="padding:18px;">
-          <div style="display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:16px;align-items:start;">
+          <div class="nx-article-layout">
             {{-- LEFT: Content --}}
             <div>
               <div class="genp-content" style="padding-top:6px;">
@@ -172,7 +171,7 @@
             </div>
 
             {{-- RIGHT: Sticky Sidebar --}}
-            <aside style="position:sticky;top:14px;">
+            <aside class="nx-article-aside">
               <div class="nxcard nxcard--soft" style="padding:14px;">
                 <div style="font-weight:650;margin-bottom:6px;">Need help finding a tutor?</div>
                 <div style="opacity:.85;font-size:13px;line-height:1.55;">
@@ -243,10 +242,22 @@
 
 </div>
 
-{{-- ✅ Responsive fix for sidebar grid --}}
+{{-- Article + sidebar: two columns with room, one column without. The old
+     fix targeted .nxcard[style*=grid-template-columns], but the grid lives on
+     a child div — the selector never matched, so phones got two crushed
+     columns of one word per line. --}}
 <style>
+.nx-article-layout{
+  display:grid;
+  grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);
+  gap:16px;
+  align-items:start;
+}
+.nx-article-aside{ position:sticky; top:80px; }
+
 @media (max-width: 900px){
-  .nxcard[style*="grid-template-columns"]{ grid-template-columns: 1fr !important; }
+  .nx-article-layout{ grid-template-columns:minmax(0,1fr); }
+  .nx-article-aside{ position:static; }
 }
 </style>
 

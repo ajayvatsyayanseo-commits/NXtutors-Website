@@ -1,0 +1,188 @@
+- generic [active] [ref=f47e1]:
+  - link "Skip to main content" [ref=f47e2] [cursor=pointer]:
+    - /url: "#nxt-content"
+  - banner [ref=f47e3]:
+    - link "NXTutors — home" [ref=f47e5] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000
+      - generic [ref=f47e6]: NXTutors
+    - button "Toggle menu" [ref=f47e8] [cursor=pointer]
+  - generic [ref=f47e13]:
+    - main [ref=f47e14]:
+      - generic [ref=f47e15]:
+        - heading "Find Tutors" [level=1] [ref=f47e16]
+        - generic [ref=f47e17]:
+          - textbox "Search name / area" [ref=f47e18]
+          - textbox "City" [ref=f47e19]
+          - textbox "Subject" [ref=f47e20]
+          - combobox [ref=f47e21]:
+            - option "Recommended" [selected]
+            - option "Top Rated"
+          - button "Search" [ref=f47e22] [cursor=pointer]
+        - generic [ref=f47e23]:
+          - article [ref=f47e24]:
+            - generic [ref=f47e25]:
+              - img "abhinandan" [ref=f47e26]
+              - generic [ref=f47e27]: Verified
+              - generic [ref=f47e30]: New
+            - generic [ref=f47e31]:
+              - heading "abhinandan" [level=3] [ref=f47e33]
+              - paragraph [ref=f47e34]: gurgaon
+            - generic [ref=f47e37]:
+              - link "Profile" [ref=f47e38] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/tutor/gurgaon/TlhULTIwMjYtVzdQQlVVLW54dA/abhinandan
+              - link "WhatsApp" [ref=f47e39] [cursor=pointer]:
+                - /url: https://wa.me/917836034313?text=Hi%2C+I+want+to+connect+with+tutor+abhinandan+%28UserID%3A+NXT-2026-W7PBUU%29.
+          - article [ref=f47e42]:
+            - generic [ref=f47e43]:
+              - img "Aaditya kashyap" [ref=f47e44]
+              - generic [ref=f47e45]: Verified
+              - generic [ref=f47e48]: New
+            - generic [ref=f47e49]:
+              - heading "Aaditya kashyap" [level=3] [ref=f47e51]
+              - paragraph [ref=f47e52]: Sec 37 D gurgaon Signature milliena 3 Towe, Gurgaon
+            - generic [ref=f47e55]:
+              - link "Profile" [ref=f47e56] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/tutor/gurgaon/TlhULTIwMjYtM0ZVTEVBLW54dA/aaditya-kashyap
+              - link "WhatsApp" [ref=f47e57] [cursor=pointer]:
+                - /url: https://wa.me/917836034313?text=Hi%2C+I+want+to+connect+with+tutor+Aaditya+kashyap+%28UserID%3A+NXT-2026-3FULEA%29.
+          - article [ref=f47e60]:
+            - generic [ref=f47e61]:
+              - img "Sneha Joshi" [ref=f47e62]
+              - generic [ref=f47e63]: Verified
+              - generic [ref=f47e66]: New
+            - generic [ref=f47e67]:
+              - heading "Sneha Joshi" [level=3] [ref=f47e69]
+              - paragraph [ref=f47e70]: GURGAON
+            - generic [ref=f47e73]:
+              - link "Profile" [ref=f47e74] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/tutor/gurgaon/MjkzOC1ueHQ/sneha-joshi
+              - link "WhatsApp" [ref=f47e75] [cursor=pointer]:
+                - /url: https://wa.me/917836034313?text=Hi%2C+I+want+to+connect+with+tutor+Sneha+Joshi+%28UserID%3A+2938%29.
+          - article [ref=f47e78]:
+            - generic [ref=f47e79]:
+              - img "Neha Bhatia" [ref=f47e80]
+              - generic [ref=f47e81]: Verified
+              - generic [ref=f47e84]: New
+            - generic [ref=f47e85]:
+              - heading "Neha Bhatia" [level=3] [ref=f47e87]
+              - paragraph [ref=f47e88]: Sector 70, Gurugram
+            - generic [ref=f47e91]:
+              - link "Profile" [ref=f47e92] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/tutor/gurugram/MjkzNy1ueHQ/neha-bhatia
+              - link "WhatsApp" [ref=f47e93] [cursor=pointer]:
+                - /url: https://wa.me/917836034313?text=Hi%2C+I+want+to+connect+with+tutor+Neha+Bhatia+%28UserID%3A+2937%29.
+          - article [ref=f47e96]:
+            - generic [ref=f47e97]:
+              - img "Shruti Verma" [ref=f47e98]
+              - generic [ref=f47e99]: Verified
+              - generic [ref=f47e102]: New
+            - generic [ref=f47e103]:
+              - heading "Shruti Verma" [level=3] [ref=f47e105]
+              - paragraph [ref=f47e106]: Sector 47, Gurugram
+            - generic [ref=f47e109]:
+              - link "Profile" [ref=f47e110] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/tutor/gurugram/MjkzNi1ueHQ/shruti-verma
+              - link "WhatsApp" [ref=f47e111] [cursor=pointer]:
+                - /url: https://wa.me/917836034313?text=Hi%2C+I+want+to+connect+with+tutor+Shruti+Verma+%28UserID%3A+2936%29.
+          - article [ref=f47e114]:
+            - generic [ref=f47e115]:
+              - img "Sneha Verma" [ref=f47e116]
+              - generic [ref=f47e117]: Verified
+              - generic [ref=f47e120]: New
+            - generic [ref=f47e121]:
+              - heading "Sneha Verma" [level=3] [ref=f47e123]
+              - paragraph [ref=f47e124]: Sector 23, Gurugram
+            - generic [ref=f47e127]:
+              - link "Profile" [ref=f47e128] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/tutor/gurugram/MjkzNS1ueHQ/sneha-verma
+              - link "WhatsApp" [ref=f47e129] [cursor=pointer]:
+                - /url: https://wa.me/917836034313?text=Hi%2C+I+want+to+connect+with+tutor+Sneha+Verma+%28UserID%3A+2935%29.
+          - article [ref=f47e132]:
+            - generic [ref=f47e133]:
+              - img "Kunal Verma" [ref=f47e134]
+              - generic [ref=f47e135]: Verified
+              - generic [ref=f47e138]: New
+            - generic [ref=f47e139]:
+              - heading "Kunal Verma" [level=3] [ref=f47e141]
+              - paragraph [ref=f47e142]: Sector 31, Gurugram
+            - generic [ref=f47e145]:
+              - link "Profile" [ref=f47e146] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/tutor/gurugram/MjkzNC1ueHQ/kunal-verma
+              - link "WhatsApp" [ref=f47e147] [cursor=pointer]:
+                - /url: https://wa.me/917836034313?text=Hi%2C+I+want+to+connect+with+tutor+Kunal+Verma+%28UserID%3A+2934%29.
+          - article [ref=f47e150]:
+            - generic [ref=f47e151]:
+              - img "Kunal Mehta" [ref=f47e152]
+              - generic [ref=f47e153]: Verified
+              - generic [ref=f47e156]: New
+            - generic [ref=f47e157]:
+              - heading "Kunal Mehta" [level=3] [ref=f47e159]
+              - paragraph [ref=f47e160]: Sector 15, Gurugram
+            - generic [ref=f47e163]:
+              - link "Profile" [ref=f47e164] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/tutor/gurugram/MjkzMy1ueHQ/kunal-mehta
+              - link "WhatsApp" [ref=f47e165] [cursor=pointer]:
+                - /url: https://wa.me/917836034313?text=Hi%2C+I+want+to+connect+with+tutor+Kunal+Mehta+%28UserID%3A+2933%29.
+        - button "Load More" [ref=f47e169] [cursor=pointer]
+    - contentinfo [ref=f47e170]:
+      - generic [ref=f47e171]:
+        - generic [ref=f47e172]:
+          - heading "NXTutors" [level=3] [ref=f47e173]
+          - paragraph [ref=f47e174]: Premium home tutoring in Gurugram. Trusted by 4,500+ parents for CBSE, ICSE & IB.
+          - generic [ref=f47e175]:
+            - link "NXTutors on Facebook" [ref=f47e176] [cursor=pointer]:
+              - /url: "#"
+            - link "NXTutors on Instagram" [ref=f47e179] [cursor=pointer]:
+              - /url: "#"
+            - link "NXTutors on WhatsApp" [ref=f47e182] [cursor=pointer]:
+              - /url: https://wa.me/917836034313
+        - generic [ref=f47e185]:
+          - heading "Quick Links" [level=4] [ref=f47e186]
+          - list [ref=f47e187]:
+            - listitem [ref=f47e188]:
+              - link "Home" [ref=f47e189] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000
+            - listitem [ref=f47e190]:
+              - link "Find Tutors" [ref=f47e191] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/tutors
+            - listitem [ref=f47e192]:
+              - link "Become a Tutor" [ref=f47e193] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f47e194]:
+              - link "Demo Class" [ref=f47e195] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/demo-class
+            - listitem [ref=f47e196]:
+              - link "Subscription Plan" [ref=f47e197] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/pricing
+        - generic [ref=f47e198]:
+          - heading "Useful Links" [level=4] [ref=f47e199]
+          - list [ref=f47e200]:
+            - listitem [ref=f47e201]:
+              - link "Blog & Advice" [ref=f47e202] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/blog
+            - listitem [ref=f47e203]:
+              - link "Pricing Guide" [ref=f47e204] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/pricing-guide
+            - listitem [ref=f47e205]:
+              - link "FAQs" [ref=f47e206] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/faqs
+            - listitem [ref=f47e207]:
+              - link "Terms & Conditions" [ref=f47e208] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/terms-conditions
+            - listitem [ref=f47e209]:
+              - link "Privacy Policy" [ref=f47e210] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/privacy-policy
+        - generic [ref=f47e211]:
+          - heading "Contact Us" [level=4] [ref=f47e212]
+          - list [ref=f47e213]:
+            - listitem [ref=f47e214]:
+              - generic [ref=f47e217]: BLK-2/49, NXTUTORS EDTECH PVT LTD, M3M Cosmopolitan, off Golf Course Extension Road, Sector 66, Gurugram, Haryana 122101
+            - listitem [ref=f47e218]:
+              - link "+9178360 34313" [ref=f47e221] [cursor=pointer]:
+                - /url: tel:+917836034313
+            - listitem [ref=f47e222]:
+              - link "support@nxtutors.com" [ref=f47e225] [cursor=pointer]:
+                - /url: mailto:support@nxtutors.com
+          - link "Chat on WhatsApp" [ref=f47e226] [cursor=pointer]:
+            - /url: https://wa.me/917836034313
+      - generic [ref=f47e227]: © 2026 NXTutors — All rights reserved.

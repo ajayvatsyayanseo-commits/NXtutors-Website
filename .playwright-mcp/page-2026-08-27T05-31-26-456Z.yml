@@ -1,0 +1,593 @@
+- generic [active] [ref=f3e1]:
+  - link "Skip to main content" [ref=f3e2] [cursor=pointer]:
+    - /url: "#nxt-content"
+  - generic [ref=f3e3]:
+    - banner [ref=f3e4]:
+      - link "NXTutors — home" [ref=f3e6] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000
+        - generic [ref=f3e7]: NXTutors
+      - button "Toggle menu" [ref=f3e9] [cursor=pointer]
+    - main [ref=f3e13]:
+      - region [ref=f3e14]:
+        - img "A tutor working through a notebook exercise with a school student at home" [ref=f3e15]
+        - generic [ref=f3e17]:
+          - paragraph [ref=f3e18]: Gurugram · Home online
+          - heading "Better learning, brighter futures" [level=1] [ref=f3e21]:
+            - text: Better learning,
+            - generic [ref=f3e22]: brighter futures
+          - paragraph [ref=f3e23]: Verified home and online tutors for Classes 6–12. Tell us the subject and your locality — our AI returns two or three real matches, not a directory to sift through.
+          - generic [ref=f3e24]:
+            - generic [ref=f3e25]:
+              - generic [ref=f3e26]: Search classes
+              - textbox "Search classes" [ref=f3e28]:
+                - /placeholder: e.g. Class 10 Maths
+            - generic [ref=f3e33]:
+              - generic [ref=f3e34]: Location
+              - textbox "Location" [ref=f3e36]:
+                - /placeholder: Sector or city
+            - button "Find Tutors ›" [ref=f3e41] [cursor=pointer]
+          - paragraph [ref=f3e42]: Free demo class · No card, no commitment
+          - list [ref=f3e45]:
+            - listitem [ref=f3e46]:
+              - generic [ref=f3e53]:
+                - strong [ref=f3e54]: 4,500+
+                - generic [ref=f3e55]: Families matched
+            - listitem [ref=f3e56]:
+              - generic [ref=f3e61]:
+                - strong [ref=f3e62]: Classes 6–12
+                - generic [ref=f3e63]: CBSE · ICSE · IB
+            - listitem [ref=f3e64]:
+              - generic [ref=f3e68]:
+                - strong [ref=f3e69]: ₹800–2,500
+                - generic [ref=f3e70]: Typical, per hour
+      - generic [ref=f3e71]:
+        - heading "Explore Tutors by Subject, Skill & Exam" [level=2] [ref=f3e73]
+        - generic [ref=f3e74]:
+          - link "icon Academic (Class I–XII)" [ref=f3e75] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/category/academic-class-i-xii
+            - img "icon" [ref=f3e77]
+            - generic [ref=f3e78]: Academic (Class I–XII)
+          - link "icon Entrance Exam Preparation" [ref=f3e80] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/category/entrance-exam-preparation
+            - img "icon" [ref=f3e82]
+            - generic [ref=f3e83]: Entrance Exam Preparation
+          - link "icon IT & Software Training" [ref=f3e85] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/category/it-software-training
+            - img "icon" [ref=f3e87]
+            - generic [ref=f3e88]: IT & Software Training
+          - link "icon Professional Courses" [ref=f3e90] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/category/professional-courses
+            - img "icon" [ref=f3e92]
+            - generic [ref=f3e93]: Professional Courses
+          - link "icon Foreign Language Courses" [ref=f3e95] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/category/foreign-language-courses
+            - img "icon" [ref=f3e97]
+            - generic [ref=f3e98]: Foreign Language Courses
+          - link "icon Study Abroad Preparation" [ref=f3e100] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/category/study-abroad-preparation
+            - img "icon" [ref=f3e102]
+            - generic [ref=f3e103]: Study Abroad Preparation
+          - link "icon Creative & Design Courses" [ref=f3e105] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/category/creative-design-courses
+            - img "icon" [ref=f3e107]
+            - generic [ref=f3e108]: Creative & Design Courses
+          - link "icon Health & Fitness" [ref=f3e110] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/category/health-fitness
+            - img "icon" [ref=f3e112]
+            - generic [ref=f3e113]: Health & Fitness
+          - link "icon Academic (Class XI–XII)" [ref=f3e115] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/category/academic-class-xi-xii
+            - img "icon" [ref=f3e117]
+            - generic [ref=f3e118]: Academic (Class XI–XII)
+      - generic [ref=f3e120]:
+        - generic [ref=f3e121]:
+          - heading "Suggested for your child" [level=2] [ref=f3e122]
+          - paragraph
+          - link "View all tutors →" [ref=f3e123] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/tutors
+        - generic [ref=f3e124]:
+          - article [ref=f3e125]:
+            - generic [ref=f3e126]:
+              - img "Kunal Mehta" [ref=f3e127]
+              - generic [ref=f3e128]: Verified
+              - generic [ref=f3e131]: ★ 4.8(60)
+            - generic [ref=f3e132]:
+              - generic [ref=f3e133]:
+                - heading "Kunal Mehta" [level=3] [ref=f3e134]
+                - button "Compare" [ref=f3e135] [cursor=pointer]
+              - paragraph [ref=f3e136]: Sector 15, Gurugram
+            - generic [ref=f3e139]:
+              - link "Profile" [ref=f3e140] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/tutor/gurugram/MjkzMy1ueHQ/kunal-mehta
+              - link "WhatsApp" [ref=f3e141] [cursor=pointer]:
+                - /url: https://wa.me/917836034313?text=Hi%2C%20I%20want%20to%20talk%20to%20tutor%3A%20Kunal%20Mehta
+          - article [ref=f3e142]:
+            - generic [ref=f3e143]:
+              - img "Aarav Verma" [ref=f3e144]
+              - generic [ref=f3e145]: Verified
+              - generic [ref=f3e148]: ★ 4.8(60)
+            - generic [ref=f3e149]:
+              - generic [ref=f3e150]:
+                - heading "Aarav Verma" [level=3] [ref=f3e151]
+                - button "Compare" [ref=f3e152] [cursor=pointer]
+              - paragraph [ref=f3e153]: Sector 45, Gurugram
+            - generic [ref=f3e156]:
+              - link "Profile" [ref=f3e157] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/tutor/gurugram/MjkzMS1ueHQ/aarav-verma
+              - link "WhatsApp" [ref=f3e158] [cursor=pointer]:
+                - /url: https://wa.me/917836034313?text=Hi%2C%20I%20want%20to%20talk%20to%20tutor%3A%20Aarav%20Verma
+          - article [ref=f3e159]:
+            - generic [ref=f3e160]:
+              - img "Shruti Verma" [ref=f3e161]
+              - generic [ref=f3e162]: Verified
+              - generic [ref=f3e165]: ★ 4.8(60)
+            - generic [ref=f3e166]:
+              - generic [ref=f3e167]:
+                - heading "Shruti Verma" [level=3] [ref=f3e168]
+                - button "Compare" [ref=f3e169] [cursor=pointer]
+              - paragraph [ref=f3e170]: Sector 47, Gurugram
+            - generic [ref=f3e173]:
+              - link "Profile" [ref=f3e174] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/tutor/gurugram/MjkzNi1ueHQ/shruti-verma
+              - link "WhatsApp" [ref=f3e175] [cursor=pointer]:
+                - /url: https://wa.me/917836034313?text=Hi%2C%20I%20want%20to%20talk%20to%20tutor%3A%20Shruti%20Verma
+          - article [ref=f3e176]:
+            - generic [ref=f3e177]:
+              - img "Neha Bhatia" [ref=f3e178]
+              - generic [ref=f3e179]: Verified
+              - generic [ref=f3e182]: ★ 4.8(60)
+            - generic [ref=f3e183]:
+              - generic [ref=f3e184]:
+                - heading "Neha Bhatia" [level=3] [ref=f3e185]
+                - button "Compare" [ref=f3e186] [cursor=pointer]
+              - paragraph [ref=f3e187]: Sector 70, Gurugram
+            - generic [ref=f3e190]:
+              - link "Profile" [ref=f3e191] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/tutor/gurugram/MjkzNy1ueHQ/neha-bhatia
+              - link "WhatsApp" [ref=f3e192] [cursor=pointer]:
+                - /url: https://wa.me/917836034313?text=Hi%2C%20I%20want%20to%20talk%20to%20tutor%3A%20Neha%20Bhatia
+      - generic [ref=f3e194]:
+        - generic [ref=f3e195]:
+          - generic [ref=f3e196]:
+            - heading "Ask NXT AI" [level=4] [ref=f3e197]
+            - paragraph [ref=f3e198]: Ask about tutor fees, timing, demo classes, and more.
+          - generic [ref=f3e199]:
+            - generic [ref=f3e200]:
+              - generic [ref=f3e201]: 🧑
+              - generic [ref=f3e202]: You
+              - generic [ref=f3e203]:
+                - generic [ref=f3e204]: What are fees?
+                - generic [ref=f3e205]: 10:30 AM ✓
+            - generic [ref=f3e206]:
+              - generic [ref=f3e207]:
+                - generic [ref=f3e208]: 🤖
+                - generic [ref=f3e209]: NXT AI
+                - generic [ref=f3e210]: 10:30 AM
+              - generic [ref=f3e211]: Fees usually range between ₹800–₹2500 depending on class and subject.
+              - generic [ref=f3e212]:
+                - button "Helpful" [ref=f3e213] [cursor=pointer]: 👍
+                - button "Not helpful" [ref=f3e214] [cursor=pointer]: 👎
+            - generic [ref=f3e215]:
+              - generic [ref=f3e216]: 🧑
+              - generic [ref=f3e217]: You
+              - generic [ref=f3e218]:
+                - generic [ref=f3e219]: Demo class available?
+                - generic [ref=f3e220]: 10:31 AM ✓
+            - generic [ref=f3e221]:
+              - generic [ref=f3e222]:
+                - generic [ref=f3e223]: 🤖
+                - generic [ref=f3e224]: NXT AI
+                - generic [ref=f3e225]: 10:31 AM
+              - generic [ref=f3e226]: Yes 👍 You can book a demo class before finalizing your tutor.
+              - generic [ref=f3e227]:
+                - button "Helpful" [ref=f3e228] [cursor=pointer]: 👍
+                - button "Not helpful" [ref=f3e229] [cursor=pointer]: 👎
+            - generic [ref=f3e230]:
+              - generic [ref=f3e231]: 🧑
+              - generic [ref=f3e232]: You
+              - generic [ref=f3e233]:
+                - generic [ref=f3e234]: What timings are available?
+                - generic [ref=f3e235]: 10:32 AM ✓
+            - generic [ref=f3e236]:
+              - generic [ref=f3e237]:
+                - generic [ref=f3e238]: 🤖
+                - generic [ref=f3e239]: NXT AI
+                - generic [ref=f3e240]: 10:32 AM
+              - generic [ref=f3e241]: Most tutors are available in the evenings and weekends. Specific timing depends on the tutor.
+              - generic [ref=f3e242]:
+                - button "Helpful" [ref=f3e243] [cursor=pointer]: 👍
+                - button "Not helpful" [ref=f3e244] [cursor=pointer]: 👎
+          - generic [ref=f3e245]:
+            - textbox "Ask anything..." [ref=f3e246]
+            - button "Send" [ref=f3e247] [cursor=pointer]
+          - paragraph [ref=f3e251]: NXT AI can make mistakes. Please verify important details.
+        - complementary [ref=f3e252]:
+          - generic [ref=f3e253]:
+            - generic [ref=f3e259] [cursor=pointer]:
+              - generic [ref=f3e260]:
+                - generic [ref=f3e261]: Tutor Fees Overview
+                - generic [ref=f3e262]: Fees
+              - generic [ref=f3e263]: Fees usually range between ₹800–₹2500 depending on class and subject.
+            - generic [ref=f3e272] [cursor=pointer]:
+              - generic [ref=f3e273]:
+                - generic [ref=f3e274]: Fee Payment Policy
+                - generic [ref=f3e275]: Policy
+              - generic [ref=f3e276]: Payments must be made in advance. We accept UPI, cards and net banking.
+            - generic [ref=f3e285] [cursor=pointer]:
+              - generic [ref=f3e286]:
+                - generic [ref=f3e287]: How to Book a Demo Class
+                - generic [ref=f3e288]: FAQ
+              - generic [ref=f3e289]: You can book a demo class before finalizing your tutor.
+            - generic [ref=f3e298] [cursor=pointer]:
+              - generic [ref=f3e299]:
+                - generic [ref=f3e300]: Refund & Cancellation
+                - generic [ref=f3e301]: Policy
+              - generic [ref=f3e302]: If you cancel within 24 hours of booking, you are eligible for a refund.
+            - generic [ref=f3e311] [cursor=pointer]:
+              - generic [ref=f3e312]:
+                - generic [ref=f3e313]: Timings & Availability
+                - generic [ref=f3e314]: Info
+              - generic [ref=f3e315]: Most tutors are available in the evenings and weekends.
+          - generic [ref=f3e319]:
+            - generic [ref=f3e320]: 5 results found
+            - link "View all" [ref=f3e321] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=f3e322]:
+        - generic [ref=f3e323]:
+          - heading "AI-Based Tutor Matching Across India" [level=2] [ref=f3e324]
+          - paragraph [ref=f3e325]: Nxtutors is an AI-powered tutor and education matching platform connecting parents and students with verified educators across India.
+        - generic [ref=f3e326]:
+          - generic [ref=f3e327]:
+            - heading "AI-Based Shortlisting" [level=3] [ref=f3e331]
+            - paragraph [ref=f3e332]: Instead of browsing random tutor listings, our structured AI recommendation system evaluates academic compatibility and delivers a shortlist.
+          - generic [ref=f3e333]:
+            - heading "Academic Support" [level=3] [ref=f3e338]
+            - paragraph [ref=f3e339]: We provide home tutors, online tutors, institute mentors and hybrid academic support for Classes 6–12 across CBSE, ICSE, IB, ISC and IGCSE boards.
+          - generic [ref=f3e340]:
+            - heading "Demo & Evaluation" [level=3] [ref=f3e344]
+            - paragraph [ref=f3e345]: We support competitive exam preparation including JEE and NEET. Parents can book a demo class to evaluate teaching clarity and decide confidently.
+        - generic [ref=f3e346]:
+          - generic [ref=f3e347]:
+            - heading "Shortlist of 2–3 High-Fit Tutors" [level=3] [ref=f3e348]
+            - paragraph [ref=f3e349]: Instead of browsing random tutor listings, our recommendation system evaluates compatibility and delivers a shortlist based on subject expertise, board alignment, availability, budget and reliability signals.
+            - generic [ref=f3e350]:
+              - generic [ref=f3e351]: Verified tutors for home, online and hybrid learning across India.
+              - generic [ref=f3e356]: Support for CBSE, ICSE, IB, ISC, IGCSE + JEE & NEET.
+              - generic [ref=f3e361]: "AI-based shortlisting: get 2–3 best matches instead of long lists."
+          - generic [ref=f3e366]:
+            - img "AI powered tutor matching platform across India"
+            - generic [ref=f3e367]: AI-Based · Verified Tutors · India-Wide
+      - generic [ref=f3e368]:
+        - generic [ref=f3e369]:
+          - heading "Local tutors" [level=2] [ref=f3e370]
+          - link "View all tutors →" [ref=f3e371] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/tutors
+        - generic [ref=f3e372]:
+          - article [ref=f3e373]:
+            - generic [ref=f3e374]:
+              - img "Kunal Mehta" [ref=f3e375]
+              - generic [ref=f3e376]: Verified
+              - generic [ref=f3e379]: ★ 4.8(60)
+            - generic [ref=f3e380]:
+              - generic [ref=f3e381]:
+                - heading "Kunal Mehta" [level=3] [ref=f3e382]
+                - button "Compare" [ref=f3e383] [cursor=pointer]
+              - paragraph [ref=f3e384]: Sector 15, Gurugram
+            - generic [ref=f3e387]:
+              - link "Profile" [ref=f3e388] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/tutor/gurugram/MjkzMy1ueHQ/kunal-mehta
+              - link "WhatsApp" [ref=f3e389] [cursor=pointer]:
+                - /url: https://wa.me/917836034313?text=Hi%2C%20I%20want%20to%20talk%20to%20tutor%3A%20Kunal%20Mehta
+          - article [ref=f3e390]:
+            - generic [ref=f3e391]:
+              - img "Aarav Verma" [ref=f3e392]
+              - generic [ref=f3e393]: Verified
+              - generic [ref=f3e396]: ★ 4.8(60)
+            - generic [ref=f3e397]:
+              - generic [ref=f3e398]:
+                - heading "Aarav Verma" [level=3] [ref=f3e399]
+                - button "Compare" [ref=f3e400] [cursor=pointer]
+              - paragraph [ref=f3e401]: Sector 45, Gurugram
+            - generic [ref=f3e404]:
+              - link "Profile" [ref=f3e405] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/tutor/gurugram/MjkzMS1ueHQ/aarav-verma
+              - link "WhatsApp" [ref=f3e406] [cursor=pointer]:
+                - /url: https://wa.me/917836034313?text=Hi%2C%20I%20want%20to%20talk%20to%20tutor%3A%20Aarav%20Verma
+          - article [ref=f3e407]:
+            - generic [ref=f3e408]:
+              - img "Shruti Verma" [ref=f3e409]
+              - generic [ref=f3e410]: Verified
+              - generic [ref=f3e413]: ★ 4.8(60)
+            - generic [ref=f3e414]:
+              - generic [ref=f3e415]:
+                - heading "Shruti Verma" [level=3] [ref=f3e416]
+                - button "Compare" [ref=f3e417] [cursor=pointer]
+              - paragraph [ref=f3e418]: Sector 47, Gurugram
+            - generic [ref=f3e421]:
+              - link "Profile" [ref=f3e422] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/tutor/gurugram/MjkzNi1ueHQ/shruti-verma
+              - link "WhatsApp" [ref=f3e423] [cursor=pointer]:
+                - /url: https://wa.me/917836034313?text=Hi%2C%20I%20want%20to%20talk%20to%20tutor%3A%20Shruti%20Verma
+          - article [ref=f3e424]:
+            - generic [ref=f3e425]:
+              - img "Neha Bhatia" [ref=f3e426]
+              - generic [ref=f3e427]: Verified
+              - generic [ref=f3e430]: ★ 4.8(60)
+            - generic [ref=f3e431]:
+              - generic [ref=f3e432]:
+                - heading "Neha Bhatia" [level=3] [ref=f3e433]
+                - button "Compare" [ref=f3e434] [cursor=pointer]
+              - paragraph [ref=f3e435]: Sector 70, Gurugram
+            - generic [ref=f3e438]:
+              - link "Profile" [ref=f3e439] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/tutor/gurugram/MjkzNy1ueHQ/neha-bhatia
+              - link "WhatsApp" [ref=f3e440] [cursor=pointer]:
+                - /url: https://wa.me/917836034313?text=Hi%2C%20I%20want%20to%20talk%20to%20tutor%3A%20Neha%20Bhatia
+      - generic [ref=f3e442]:
+        - generic [ref=f3e443]:
+          - generic [ref=f3e444]: Expert Advice
+          - heading "Parent’s Guide — Choosing the right tutor" [level=2] [ref=f3e445]
+          - paragraph [ref=f3e446]: "Short, actionable checklist for busy parents: topics to ask, trial class checklist & pricing guidance."
+        - generic [ref=f3e447]:
+          - generic [ref=f3e448]:
+            - generic [ref=f3e449]: "01"
+            - heading "Before you speak" [level=3] [ref=f3e450]
+            - list [ref=f3e451]:
+              - listitem [ref=f3e452]:
+                - generic [ref=f3e454]: Confirm board & class experience
+              - listitem [ref=f3e455]:
+                - generic [ref=f3e457]: Ask for sample lesson or demo
+              - listitem [ref=f3e458]:
+                - generic [ref=f3e460]: Check availability & location
+          - generic [ref=f3e461]:
+            - generic [ref=f3e462]: "02"
+            - heading "During trial class" [level=3] [ref=f3e463]
+            - list [ref=f3e464]:
+              - listitem [ref=f3e465]:
+                - generic [ref=f3e467]: Look for clarity in explanations
+              - listitem [ref=f3e468]:
+                - generic [ref=f3e470]: Check engagement with child
+              - listitem [ref=f3e471]:
+                - generic [ref=f3e473]: Ask for a follow-up plan
+          - generic [ref=f3e474]:
+            - generic [ref=f3e475]: "03"
+            - heading "After hiring" [level=3] [ref=f3e476]
+            - list [ref=f3e477]:
+              - listitem [ref=f3e478]:
+                - generic [ref=f3e480]: Set weekly goals
+              - listitem [ref=f3e481]:
+                - generic [ref=f3e483]: Track progress monthly
+              - listitem [ref=f3e484]:
+                - generic [ref=f3e486]: Ask for regular feedback
+      - generic [ref=f3e487]:
+        - generic [ref=f3e488]:
+          - heading "Trusted by schools & parents in Gurugram" [level=2] [ref=f3e489]
+          - paragraph [ref=f3e490]: We work with local schools and coaching centres — here are some logos.
+        - generic [ref=f3e491]:
+          - generic [ref=f3e492]:
+            - img "School logo"
+          - generic [ref=f3e493]:
+            - img "School logo"
+          - generic [ref=f3e494]:
+            - img "School logo"
+          - generic [ref=f3e495]:
+            - img "School logo"
+      - generic [ref=f3e496]:
+        - generic [ref=f3e497]:
+          - heading "How Our AI Tutor Matching System Works" [level=2] [ref=f3e498]
+          - paragraph [ref=f3e499]: We avoid random listings. Our engine processes structured compatibility parameters to recommend only the top 2–3 precise fits.
+        - generic [ref=f3e500]:
+          - generic [ref=f3e501]:
+            - heading "Subject Expertise & Experience" [level=3] [ref=f3e505]
+            - paragraph [ref=f3e506]: Our AI matches subject relevance, teaching experience, tutoring clarity, feedback signals, and student outcome patterns.
+          - generic [ref=f3e507]:
+            - heading "Availability & Location" [level=3] [ref=f3e512]
+            - paragraph [ref=f3e513]: We align your preferred schedule time slots, verify physical location feasibility for home tutoring, and test online readiness.
+          - generic [ref=f3e514]:
+            - heading "Verification & Budget" [level=3] [ref=f3e518]
+            - paragraph [ref=f3e519]: Every match goes through verification to ensure profile reliability, budget alignment, and communication quality.
+        - generic [ref=f3e520]:
+          - generic [ref=f3e521]:
+            - heading "2–3 Best Matches, Guaranteed" [level=3] [ref=f3e522]
+            - paragraph [ref=f3e523]: Our system helps parents avoid confusion and saves time by delivering 2–3 precise tutor recommendations with high match confidence. You can book a demo to confirm the fit before continuing.
+            - generic [ref=f3e524]:
+              - generic [ref=f3e525]: Board alignment (CBSE, ICSE, IB, ISC, IGCSE)
+              - generic [ref=f3e530]: Class & exam specialization (JEE, NEET)
+          - generic [ref=f3e535]:
+            - img "AI tutor matching compatibility system"
+            - generic [ref=f3e536]: 2–3 Best Matches · Demo First · Verified
+      - generic [ref=f3e537]:
+        - generic [ref=f3e538]:
+          - generic [ref=f3e539]:
+            - heading "What parents say" [level=2] [ref=f3e540]
+            - paragraph [ref=f3e541]: Real reviews from local parents — quick highlights.
+          - link "All reviews" [ref=f3e542] [cursor=pointer]:
+            - /url: javascript:void(0)
+        - generic [ref=f3e544]:
+          - article [ref=f3e545]:
+            - img "5.0 out of 5" [ref=f3e546]:
+              - generic [ref=f3e547]: ★
+              - generic [ref=f3e548]: ★
+              - generic [ref=f3e549]: ★
+              - generic [ref=f3e550]: ★
+              - generic [ref=f3e551]: ★
+            - blockquote [ref=f3e552]: “Great experience with the tutor.”
+            - generic [ref=f3e553]:
+              - generic [ref=f3e554]: MS
+              - generic [ref=f3e555]:
+                - generic [ref=f3e556]: Meenal Sharma
+                - generic [ref=f3e557]: Parent · tutored by Sneha Joshi
+          - article [ref=f3e558]:
+            - img "5.0 out of 5" [ref=f3e559]:
+              - generic [ref=f3e560]: ★
+              - generic [ref=f3e561]: ★
+              - generic [ref=f3e562]: ★
+              - generic [ref=f3e563]: ★
+              - generic [ref=f3e564]: ★
+            - blockquote [ref=f3e565]: “Great experience with the tutor.”
+            - generic [ref=f3e566]:
+              - generic [ref=f3e567]: SJ
+              - generic [ref=f3e568]:
+                - generic [ref=f3e569]: Suman Joshi
+                - generic [ref=f3e570]: Parent · tutored by Sneha Joshi
+          - article [ref=f3e571]:
+            - img "5.0 out of 5" [ref=f3e572]:
+              - generic [ref=f3e573]: ★
+              - generic [ref=f3e574]: ★
+              - generic [ref=f3e575]: ★
+              - generic [ref=f3e576]: ★
+              - generic [ref=f3e577]: ★
+            - blockquote [ref=f3e578]: “Great experience with the tutor.”
+            - generic [ref=f3e579]:
+              - generic [ref=f3e580]: NS
+              - generic [ref=f3e581]:
+                - generic [ref=f3e582]: Neeta Singh
+                - generic [ref=f3e583]: Parent · tutored by Sneha Joshi
+          - article [ref=f3e584]:
+            - img "5.0 out of 5" [ref=f3e585]:
+              - generic [ref=f3e586]: ★
+              - generic [ref=f3e587]: ★
+              - generic [ref=f3e588]: ★
+              - generic [ref=f3e589]: ★
+              - generic [ref=f3e590]: ★
+            - blockquote [ref=f3e591]: “Great experience with the tutor.”
+            - generic [ref=f3e592]:
+              - generic [ref=f3e593]: PR
+              - generic [ref=f3e594]:
+                - generic [ref=f3e595]: Priya Rani
+                - generic [ref=f3e596]: Parent · tutored by Sneha Joshi
+          - article [ref=f3e597]:
+            - img "5.0 out of 5" [ref=f3e598]:
+              - generic [ref=f3e599]: ★
+              - generic [ref=f3e600]: ★
+              - generic [ref=f3e601]: ★
+              - generic [ref=f3e602]: ★
+              - generic [ref=f3e603]: ★
+            - blockquote [ref=f3e604]: “Great experience with the tutor.”
+            - generic [ref=f3e605]:
+              - generic [ref=f3e606]: AS
+              - generic [ref=f3e607]:
+                - generic [ref=f3e608]: Anita Sharma
+                - generic [ref=f3e609]: Parent · tutored by Sneha Joshi
+          - article [ref=f3e610]:
+            - img "5.0 out of 5" [ref=f3e611]:
+              - generic [ref=f3e612]: ★
+              - generic [ref=f3e613]: ★
+              - generic [ref=f3e614]: ★
+              - generic [ref=f3e615]: ★
+              - generic [ref=f3e616]: ★
+            - blockquote [ref=f3e617]: “Great experience with the tutor.”
+            - generic [ref=f3e618]:
+              - generic [ref=f3e619]: RC
+              - generic [ref=f3e620]:
+                - generic [ref=f3e621]: Ravi Chawla
+                - generic [ref=f3e622]: Parent · tutored by Sneha Joshi
+      - generic [ref=f3e623]:
+        - generic [ref=f3e624]:
+          - heading "Frequently asked questions" [level=2] [ref=f3e625]
+          - link "More FAQs" [ref=f3e626] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/faqs
+        - generic [ref=f3e627]:
+          - generic [ref=f3e628]:
+            - group [ref=f3e629]:
+              - generic "How does Nxtutors AI tutor matching work? ⌄" [ref=f3e630] [cursor=pointer]
+            - group [ref=f3e631]:
+              - generic "Do you provide home tutors and online tutors across India? ⌄" [ref=f3e632] [cursor=pointer]
+            - group [ref=f3e633]:
+              - generic "Which classes and boards are supported? ⌄" [ref=f3e634] [cursor=pointer]
+            - group [ref=f3e635]:
+              - generic "Do you support JEE and NEET preparation? ⌄" [ref=f3e636] [cursor=pointer]
+            - group [ref=f3e637]:
+              - generic "Are tutors verified on Nxtutors? ⌄" [ref=f3e638] [cursor=pointer]
+            - group [ref=f3e639]:
+              - generic "How does the trial/demo class work? ⌄" [ref=f3e640] [cursor=pointer]
+          - generic [ref=f3e641]:
+            - group [ref=f3e642]:
+              - generic "What are the typical fees for tutors? ⌄" [ref=f3e643] [cursor=pointer]
+            - group [ref=f3e644]:
+              - generic "Can I change the tutor after hiring? ⌄" [ref=f3e645] [cursor=pointer]
+            - group [ref=f3e646]:
+              - generic "How quickly can I get matched with a tutor? ⌄" [ref=f3e647] [cursor=pointer]
+            - group [ref=f3e648]:
+              - generic "What details should I share to get the best match? ⌄" [ref=f3e649] [cursor=pointer]
+            - group [ref=f3e650]:
+              - generic "Do tutors give homework, tests and progress updates? ⌄" [ref=f3e651] [cursor=pointer]
+            - group [ref=f3e652]:
+              - generic "Which cities do you currently support? ⌄" [ref=f3e653] [cursor=pointer]
+      - generic [ref=f3e655]:
+        - heading "Book a demo class — limited slots today" [level=3] [ref=f3e656]
+        - paragraph [ref=f3e657]: Get a free 30-minute demo with a top local tutor. Slots fill fast due to academic demand.
+        - generic [ref=f3e658]:
+          - link "Book Free Demo" [ref=f3e659] [cursor=pointer]:
+            - /url: "#"
+          - link "Call Us Now" [ref=f3e660] [cursor=pointer]:
+            - /url: tel:+917836034313
+    - contentinfo [ref=f3e664]:
+      - generic [ref=f3e665]:
+        - generic [ref=f3e666]:
+          - heading "NXTutors" [level=3] [ref=f3e667]
+          - paragraph [ref=f3e668]: Premium home tutoring in Gurugram. Trusted by 4,500+ parents for CBSE, ICSE & IB.
+          - generic [ref=f3e669]:
+            - link "NXTutors on Facebook" [ref=f3e670] [cursor=pointer]:
+              - /url: "#"
+            - link "NXTutors on Instagram" [ref=f3e673] [cursor=pointer]:
+              - /url: "#"
+            - link "NXTutors on WhatsApp" [ref=f3e676] [cursor=pointer]:
+              - /url: https://wa.me/917836034313
+        - generic [ref=f3e679]:
+          - heading "Quick Links" [level=4] [ref=f3e680]
+          - list [ref=f3e681]:
+            - listitem [ref=f3e682]:
+              - link "Home" [ref=f3e683] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000
+            - listitem [ref=f3e684]:
+              - link "Find Tutors" [ref=f3e685] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/tutors
+            - listitem [ref=f3e686]:
+              - link "Become a Tutor" [ref=f3e687] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f3e688]:
+              - link "Demo Class" [ref=f3e689] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/demo-class
+            - listitem [ref=f3e690]:
+              - link "Subscription Plan" [ref=f3e691] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/pricing
+        - generic [ref=f3e692]:
+          - heading "Useful Links" [level=4] [ref=f3e693]
+          - list [ref=f3e694]:
+            - listitem [ref=f3e695]:
+              - link "Blog & Advice" [ref=f3e696] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/blog
+            - listitem [ref=f3e697]:
+              - link "Pricing Guide" [ref=f3e698] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/pricing-guide
+            - listitem [ref=f3e699]:
+              - link "FAQs" [ref=f3e700] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/faqs
+            - listitem [ref=f3e701]:
+              - link "Terms & Conditions" [ref=f3e702] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/terms-conditions
+            - listitem [ref=f3e703]:
+              - link "Privacy Policy" [ref=f3e704] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/privacy-policy
+        - generic [ref=f3e705]:
+          - heading "Contact Us" [level=4] [ref=f3e706]
+          - list [ref=f3e707]:
+            - listitem [ref=f3e708]:
+              - generic [ref=f3e711]: BLK-2/49, NXTUTORS EDTECH PVT LTD, M3M Cosmopolitan, off Golf Course Extension Road, Sector 66, Gurugram, Haryana 122101
+            - listitem [ref=f3e712]:
+              - link "+9178360 34313" [ref=f3e715] [cursor=pointer]:
+                - /url: tel:+917836034313
+            - listitem [ref=f3e716]:
+              - link "support@nxtutors.com" [ref=f3e719] [cursor=pointer]:
+                - /url: mailto:support@nxtutors.com
+          - link "Chat on WhatsApp" [ref=f3e720] [cursor=pointer]:
+            - /url: https://wa.me/917836034313
+      - generic [ref=f3e721]: © 2026 NXTutors — All rights reserved.
+  - generic [ref=f3e723]:
+    - generic [ref=f3e724]:
+      - img "Anjali Sharma" [ref=f3e725]
+      - img "Anjali Sharma" [ref=f3e726]
+    - strong [ref=f3e728]: 2 Tutors Selected
+    - button "Compare" [ref=f3e729] [cursor=pointer]
+    - button "Clear selection" [ref=f3e730] [cursor=pointer]: ×
