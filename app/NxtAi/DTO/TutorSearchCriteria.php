@@ -33,6 +33,25 @@ final class TutorSearchCriteria
     ) {
     }
 
+    /** Same criteria with the subject filter dropped (dead-end fallback). */
+    public function withoutSubject(): self
+    {
+        return new self(
+            city: $this->city,
+            area: $this->area,
+            pincode: $this->pincode,
+            subject: null,
+            classLevel: $this->classLevel,
+            board: $this->board,
+            teachingMode: $this->teachingMode,
+            gender: $this->gender,
+            minExperience: $this->minExperience,
+            maxFee: $this->maxFee,
+            minRating: $this->minRating,
+            limit: $this->limit,
+        );
+    }
+
     /**
      * @param array<string,mixed> $args validated tool arguments
      */
@@ -63,11 +82,37 @@ final class TutorSearchCriteria
             board: self::tidyBoard(self::str($args, 'board')),
             teachingMode: $mode,
             gender: $gender,
-            minExperience: isset($args['minimum_experience']) ? max(0, (int) $args['minimum_experience']) : null,
-            maxFee: isset($args['maximum_fee']) ? max(0, (int) $args['maximum_fee']) : null,
-            minRating: isset($args['minimum_rating']) ? (float) $args['minimum_rating'] : null,
+            // Models tend to fill EVERY property in a schema, so a request with no
+            // budget/rating preference arrives as 0. Treated as a real bound,
+            // maximum_fee=0 excludes every tutor who charges anything. Zero here
+            // means "not specified" — a genuine 0 filter is meaningless anyway.
+            minExperience: self::positiveInt($args, 'minimum_experience'),
+            maxFee: self::positiveInt($args, 'maximum_fee'),
+            minRating: self::positiveFloat($args, 'minimum_rating'),
             limit: $limit,
         );
+    }
+
+    private static function positiveInt(array $args, string $key): ?int
+    {
+        $v = $args[$key] ?? null;
+        if ($v === null || $v === '' || ! is_numeric($v)) {
+            return null;
+        }
+        $n = (int) $v;
+
+        return $n > 0 ? $n : null;
+    }
+
+    private static function positiveFloat(array $args, string $key): ?float
+    {
+        $v = $args[$key] ?? null;
+        if ($v === null || $v === '' || ! is_numeric($v)) {
+            return null;
+        }
+        $n = (float) $v;
+
+        return $n > 0 ? $n : null;
     }
 
     private static function str(array $args, string $key): ?string

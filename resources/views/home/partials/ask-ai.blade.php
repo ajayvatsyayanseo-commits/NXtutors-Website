@@ -11,41 +11,30 @@
 
       <div class="nxg-chat-box" id="nxAskAiThread">
 
-        <div class="nxg-msg user">
-          <span class="nxg-av">🧑</span>
-          <span class="nxg-name">You</span>
-          <div class="nxg-bubble"><span class="nxg-text">What are fees?</span><span class="nxg-time">10:30 AM ✓</span></div>
+        <div class="nxg-msg ai nxg-welcome">
+          <div class="nxg-head"><span class="nxg-av">🤖</span><span class="nxg-name">NXT AI</span></div>
+          <div class="nxg-text nxg-welcome-text">👋 Welcome to NXTutors!<br><span>I'm Ask NXT AI — how can we help you today?</span></div>
         </div>
 
-        <div class="nxg-msg ai">
-          <div class="nxg-head"><span class="nxg-av">🤖</span><span class="nxg-name">NXT AI</span><span class="nxg-time">10:30 AM</span></div>
-          <div class="nxg-text">Fees usually range between ₹800–₹2500 depending on class and subject.</div>
-          <div class="nxg-react"><button type="button" aria-label="Helpful">👍</button><button type="button" aria-label="Not helpful">👎</button></div>
-        </div>
-
-        <div class="nxg-msg user">
-          <span class="nxg-av">🧑</span>
-          <span class="nxg-name">You</span>
-          <div class="nxg-bubble"><span class="nxg-text">Demo class available?</span><span class="nxg-time">10:31 AM ✓</span></div>
-        </div>
-
-        <div class="nxg-msg ai">
-          <div class="nxg-head"><span class="nxg-av">🤖</span><span class="nxg-name">NXT AI</span><span class="nxg-time">10:31 AM</span></div>
-          <div class="nxg-text">Yes 👍 You can book a demo class before finalizing your tutor.</div>
-          <div class="nxg-react"><button type="button" aria-label="Helpful">👍</button><button type="button" aria-label="Not helpful">👎</button></div>
-        </div>
-
-        <div class="nxg-msg user">
-          <span class="nxg-av">🧑</span>
-          <span class="nxg-name">You</span>
-          <div class="nxg-bubble"><span class="nxg-text">What timings are available?</span><span class="nxg-time">10:32 AM ✓</span></div>
-        </div>
-
-        <div class="nxg-msg ai">
-          <div class="nxg-head"><span class="nxg-av">🤖</span><span class="nxg-name">NXT AI</span><span class="nxg-time">10:32 AM</span></div>
-          <div class="nxg-text">Most tutors are available in the evenings and weekends. Specific timing depends on the tutor.</div>
-          <div class="nxg-react"><button type="button" aria-label="Helpful">👍</button><button type="button" aria-label="Not helpful">👎</button></div>
-        </div>
+        {{-- On a tutor profile the assistant opens ABOUT that tutor, with
+             one-tap starters so the parent never has to type the name. --}}
+        @if (!empty($kbTutor))
+          <div class="nxg-msg ai nxg-welcome">
+            <div class="nxg-head"><span class="nxg-av">🤖</span><span class="nxg-name">NXT AI</span></div>
+            <div class="nxg-text">Anything you want to know about {{ $kbTutor->name }}?</div>
+            <div class="nxg-starters">
+              @foreach ([
+                'Fees' => 'What are the fees?',
+                'Subjects & classes' => 'Which subjects and classes are taught?',
+                'Experience' => 'How much teaching experience is there?',
+                'Timings' => 'What timings are available?',
+                'Book a demo' => 'I want to book a demo class',
+              ] as $label => $question)
+                <button type="button" class="nxg-quick nxg-starter" data-q="{{ $question }}">{{ $label }}</button>
+              @endforeach
+            </div>
+          </div>
+        @endif
 
       </div>
 
@@ -167,16 +156,21 @@
     </aside>
 
   </div>
+
 </section>
 
 <script>
-// NXT AI chat client. Runs on window.load so it takes over #nxAskAiSend/#nxAskAiInput
-// after any legacy handlers have bound — cloning the nodes strips those listeners,
-// leaving this as the single owner. All server text is inserted via textContent
-// (never innerHTML) since model output + tutor data are untrusted.
-window.addEventListener('load', function () {
+// NXT AI chat client. Runs at parse time — the markup above it already exists,
+// so it claims #nxAskAiSend/#nxAskAiInput before any DOMContentLoaded handler
+// can, and sets __nxtAiOwned so the older inline clients in home.blade.php /
+// tutor/show.blade.php stand down. It must NOT wait for window.load: on a
+// tutor profile that event can be a minute out, and the chat is dead until then.
+// All server text is inserted via textContent (never innerHTML) since model
+// output + tutor data are untrusted.
+(function () {
   if (window.__nxtAiWired) return;
   window.__nxtAiWired = true;
+  window.__nxtAiOwned = true;
 
   var thread = document.getElementById('nxAskAiThread');
   var oldInput = document.getElementById('nxAskAiInput');
@@ -194,27 +188,15 @@ window.addEventListener('load', function () {
   oldSend.parentNode.replaceChild(send, oldSend);
 
   var endpoint = @json(route('nxt-ai.chat'));
-  @php
-    // Built here, not inline in @json() — Blade's directive parser trips on
-    // parentheses inside string literals.
-    $nxgTutorCtx = '';
-    if (!empty($kbTutor)) {
-      $bits = array_filter([
-        $kbTutor->city ?: null,
-        $kbTutor->budget
-          ? (str_contains($kbTutor->budget, '₹') ? $kbTutor->budget : '₹'.$kbTutor->budget.'/class')
-          : null,
-        $kbTutor->experience ? $kbTutor->experience.' experience' : null,
-      ]);
-      $nxgTutorCtx = 'Question about tutor '.$kbTutor->name
-        .' [ID '.$kbTutor->user_id.($bits ? ', '.implode(', ', $bits) : '').']: ';
-    }
-  @endphp
-  // Set only on tutor profiles (kbTutor passed by the include).
-  window.nxgTutorCtx = @json($nxgTutorCtx);
+  // Set only on tutor profiles (kbTutor passed by the include). The server
+  // resolves this id to the same tutor card the search tools return, so the
+  // model gets real structured context instead of a sentence of guesswork —
+  // and the stored message stays exactly what the parent typed.
+  window.nxgProfileTutorId = @json(!empty($kbTutor) ? (string) $kbTutor->user_id : '');
   var csrf = (document.querySelector('meta[name="csrf-token"]') || {}).content || '';
   var conversationId = null;
   var busy = false;
+  var handedOff = false;
 
   function el(tag, cls, text) {
     var n = document.createElement(tag);
@@ -355,6 +337,58 @@ window.addEventListener('load', function () {
     }
   }
 
+  // Inline so the icon never depends on emoji fonts or CSS escapes.
+  function waIcon() {
+    var NS = 'http://www.w3.org/2000/svg';
+    var svg = document.createElementNS(NS, 'svg');
+    svg.setAttribute('viewBox', '0 0 24 24');
+    svg.setAttribute('fill', 'currentColor');
+    svg.setAttribute('aria-hidden', 'true');
+    var path = document.createElementNS(NS, 'path');
+    path.setAttribute('d', 'M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 1.67c2.2 0 4.27.86 5.83 2.42a8.2 8.2 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.25 8.24a8.23 8.23 0 0 1-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.26-8.24Zm-2.5 4.1c-.19 0-.5.07-.76.35-.26.29-1 .98-1 2.38s1.02 2.76 1.17 2.95c.14.19 2 3.05 4.85 4.16 2.36.93 2.84.75 3.35.7.51-.05 1.65-.67 1.88-1.32.23-.65.23-1.21.16-1.33-.07-.11-.26-.18-.54-.32-.28-.14-1.65-.81-1.9-.9-.26-.1-.44-.14-.63.14-.19.28-.72.9-.88 1.09-.16.19-.32.21-.6.07-.28-.14-1.18-.44-2.25-1.39-.83-.74-1.39-1.66-1.55-1.94-.16-.28-.02-.43.12-.57.13-.13.28-.33.42-.5.14-.16.19-.28.28-.47.1-.19.05-.35-.02-.49-.07-.14-.62-1.51-.86-2.07-.22-.54-.45-.47-.62-.48h-.53Z');
+    svg.appendChild(path);
+    return svg;
+  }
+
+  // Free turns are spent: blur the thread and put a single WhatsApp CTA over it.
+  function renderHandoff(block) {
+    handedOff = true;
+
+    var card = document.querySelector('.nxg-chat-card');
+    if (!card || card.querySelector('.nxg-lock')) return;
+    card.classList.add('is-locked');
+
+    var over = el('div', 'nxg-lock');
+    var box = el('div', 'nxg-lock-box');
+    box.appendChild(el('div', 'nxg-lock-title', block.title || 'Continue on WhatsApp'));
+    box.appendChild(el('div', 'nxg-lock-msg', block.message || 'Chat with the NXTutors team for tutor details and demo booking.'));
+
+    var href = safeHref(block.url);
+    if (href) {
+      var a = el('a', 'nxg-wa-btn');
+      a.setAttribute('href', href);
+      a.setAttribute('target', '_blank');
+      a.setAttribute('rel', 'noopener');
+      a.appendChild(waIcon());
+      a.appendChild(el('span', null, block.cta || 'Open WhatsApp'));
+      box.appendChild(a);
+    }
+    over.appendChild(box);
+    card.appendChild(over);
+
+    lockInput('Continue on WhatsApp');
+  }
+
+  function lockInput(note) {
+    handedOff = true;
+    input.disabled = true;
+    send.disabled = true;
+    input.value = '';
+    input.placeholder = note;
+    var quick = document.querySelector('.nxg-quick-row');
+    if (quick) quick.remove();
+  }
+
   function renderBlocks(blocks) {
     var handledRight = false;
     (blocks || []).forEach(function (b) {
@@ -370,6 +404,8 @@ window.addEventListener('load', function () {
         renderBooking(b, false);
       } else if (b.type === 'booking_success') {
         renderBooking(b, true);
+      } else if (b.type === 'whatsapp_handoff') {
+        renderHandoff(b);
       }
     });
   }
@@ -390,6 +426,20 @@ window.addEventListener('load', function () {
     if (inputRow) inputRow.parentNode.insertBefore(row, inputRow);
   }
 
+  // Tutors sitting in the site's Compare tray (shared localStorage key).
+  // Not sent from a tutor profile: that page is about one tutor, and a stale
+  // shortlist from the home page would drag other tutors into the answer.
+  function compareIds() {
+    if (window.nxgProfileTutorId) return [];
+    try {
+      var list = JSON.parse(localStorage.getItem('nx_compare_tutors') || '[]');
+      if (!Array.isArray(list)) return [];
+      return list.slice(0, 3)
+        .map(function (t) { return String((t && t.id) || '').trim(); })
+        .filter(function (id) { return id !== '' && /^[0-9A-Za-z_-]+$/.test(id); });
+    } catch (e) { return []; }
+  }
+
   function typing() {
     var w = el('div', 'nxg-msg ai nxg-typing');
     var head = el('div', 'nxg-head');
@@ -403,7 +453,7 @@ window.addEventListener('load', function () {
 
   function sendMessage() {
     var val = (input.value || '').trim();
-    if (!val || busy) return;
+    if (!val || busy || handedOff) return;
     busy = true;
     send.disabled = true; send.classList.add('is-loading');
     addUser(val);
@@ -415,7 +465,15 @@ window.addEventListener('load', function () {
       headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': csrf, 'X-Requested-With': 'XMLHttpRequest' },
       // On a tutor profile the question is about THIS tutor — context goes
       // to the AI, but the thread shows only what the user typed.
-      body: JSON.stringify({ message: (window.nxgTutorCtx ? window.nxgTutorCtx + val : val), conversation_id: conversationId })
+      body: JSON.stringify({
+        message: val,
+        conversation_id: conversationId,
+        // The tutor whose profile this is, plus whatever is in the on-page
+        // Compare tray — so "his fees" / "which one is better?" resolve
+        // without the parent naming anyone.
+        profile_tutor_id: window.nxgProfileTutorId || null,
+        compare_ids: compareIds()
+      })
     })
     .then(function (res) { return res.json().then(function (d) { return { status: res.status, data: d }; }); })
     .then(function (r) {
@@ -434,10 +492,22 @@ window.addEventListener('load', function () {
     })
     .finally(function () {
       busy = false;
-      send.disabled = false; send.classList.remove('is-loading');
+      if (!handedOff) { send.disabled = false; }
+      send.classList.remove('is-loading');
       if (nearBottom()) scroll();
     });
   }
+
+  // Tutor-profile starters (rendered server-side) behave like quick replies.
+  thread.querySelectorAll('.nxg-starter').forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      if (handedOff || busy) return;
+      input.value = chip.getAttribute('data-q') || chip.textContent;
+      var group = chip.closest('.nxg-starters');
+      if (group) group.remove();
+      sendMessage();
+    });
+  });
 
   send.addEventListener('click', sendMessage);
   input.addEventListener('keydown', function (e) {
@@ -461,5 +531,5 @@ window.addEventListener('load', function () {
     kbSearch.addEventListener('input', runFilter);
     if (kbClear) kbClear.addEventListener('click', function () { kbSearch.value = ''; runFilter(); kbSearch.focus(); });
   }
-});
+})();
 </script>

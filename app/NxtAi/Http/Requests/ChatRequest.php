@@ -20,6 +20,12 @@ class ChatRequest extends FormRequest
         return [
             'message' => ['required', 'string', 'min:1', 'max:'.$max],
             'conversation_id' => ['nullable', 'string', 'max:64', 'regex:/^[0-9A-Za-z]+$/'],
+            // Tutors the parent currently has in the on-page Compare tray, so
+            // "which one is better?" resolves without them naming anyone.
+            'compare_ids' => ['nullable', 'array', 'max:3'],
+            'compare_ids.*' => ['string', 'max:64', 'regex:/^[0-9A-Za-z_-]+$/'],
+            // The tutor whose profile page the chat is embedded on.
+            'profile_tutor_id' => ['nullable', 'string', 'max:64', 'regex:/^[0-9A-Za-z_-]+$/'],
         ];
     }
 
@@ -34,6 +40,21 @@ class ChatRequest extends FormRequest
     public function userMessage(): string
     {
         return trim((string) $this->validated()['message']);
+    }
+
+    /** @return array<int,string> raw register.user_id values from the Compare tray */
+    public function compareIds(): array
+    {
+        $ids = $this->validated()['compare_ids'] ?? [];
+
+        return is_array($ids) ? array_values(array_unique(array_filter($ids))) : [];
+    }
+
+    public function profileTutorId(): ?string
+    {
+        $id = trim((string) ($this->validated()['profile_tutor_id'] ?? ''));
+
+        return $id === '' ? null : $id;
     }
 
     public function conversationUid(): ?string

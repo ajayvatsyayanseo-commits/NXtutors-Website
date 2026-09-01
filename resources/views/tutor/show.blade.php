@@ -937,6 +937,11 @@ html {
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+    // Superseded by the NXT AI client in home/partials/ask-ai.blade.php,
+    // which claims the widget at parse time. Two clients on one input
+    // means double sends and a chat that ignores tutor cards.
+    if (window.__nxtAiOwned) return;
+
     const input = document.getElementById('nxAskAiInput');
     const sendBtn = document.getElementById('nxAskAiSend');
     const thread = document.getElementById('nxAskAiThread');

@@ -4,9 +4,15 @@ declare(strict_types=1);
 
 namespace App\NxtAi\Http\Controllers;
 
+use App\Models\Setting;
 use App\NxtAi\Agent\NxtAiAgent;
+use App\NxtAi\Models\NxtAiConversation;
+use App\NxtAi\Models\NxtAiMessage;
 use App\NxtAi\Http\Requests\ChatRequest;
 use App\NxtAi\Services\ConversationService;
+use App\NxtAi\Services\TutorSearchService;
+use App\NxtAi\Support\PublicTutorFieldMapper;
+use App\NxtAi\Support\TutorCardMapper;
 use App\NxtAi\Support\ToolContext;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Http\JsonResponse;
@@ -33,7 +39,13 @@ class ChatController
             return $this->fail('NXT AI is currently unavailable.', 503);
         }
 
-        [$userId] = $this->conversations->identity($request);
+        // A tool-calling turn can outlast PHP's 30s default (the HTTP client
+        // alone allows request_timeout per attempt, over several rounds). Left
+        // at the default the process dies fatally and the browser gets a 500
+        // instead of the friendly error below.
+        @set_time_limit((int) config('nxt-ai.max_execution_time', 120));
+
+        [$userId, $guestHash] = $this->conversations->identity($request);
         if ($over = $this->overLimit($request, $userId)) {
             return $over;
         }
@@ -48,7 +60,25 @@ class ChatController
         $history = $this->conversations->history($conversation);
         $context->referencedTutors = $history['lastTutors'];
 
+        // Tutors visible on the page right now — the profile being viewed and/or
+        // the Compare tray. These are what "he"/"them"/"which one" refer to, so
+        // they become the current reference set and the model is told who is on
+        // screen (with real refs, so the tutor tools can look them up).
+        $onScreen = $this->onScreenContext($request);
+        if ($onScreen !== []) {
+            $context->referencedTutors = $onScreen;
+            $history['items'][] = ['role' => 'assistant', 'content' => $this->onScreenHint($onScreen)];
+        }
+
         $userMessage = $request->userMessage();
+
+        // Lead-intake funnel: after the free turns a human takes over on
+        // WhatsApp. Checked before recording/calling OpenAI so the cap also
+        // caps spend, and cannot be bypassed from the browser.
+        if ($handoff = $this->handoff($conversation, $userId, $guestHash)) {
+            return $handoff;
+        }
+
         $this->conversations->recordUser($conversation, $userMessage);
 
         $requestId = (string) Str::uuid();
@@ -82,6 +112,119 @@ class ChatController
                 'request_id' => $requestId,
                 'has_more' => false,
             ],
+        ]);
+    }
+
+    /**
+     * Resolve the tutors visible on the page (profile + Compare tray, as raw
+     * register user ids) into the same public tutor cards the search tools return.
+     *
+     * @return array<int,array<string,mixed>>
+     */
+    private function onScreenContext(ChatRequest $request): array
+    {
+        // On a tutor profile the page is about ONE tutor, so that tutor is the
+        // whole context. Merging the Compare tray in here leaked whichever
+        // tutors the parent had shortlisted on the home page into every
+        // profile-page answer - asking about Neha Bhatia returned Aarav Verma,
+        // because his id was still sitting in localStorage from another page.
+        $profileId = $request->profileTutorId();
+
+        $ids = $profileId !== null
+            ? [$profileId]
+            : array_values(array_unique(array_filter($request->compareIds())));
+
+        if ($ids === []) {
+            return [];
+        }
+
+        $mapper = app(PublicTutorFieldMapper::class);
+        $search = app(TutorSearchService::class);
+        $cards = app(TutorCardMapper::class)->toCards(
+            $search->findManyByRefs(array_map(
+                static fn (string $id): string => $mapper->publicToken($id),
+                $ids
+            ))
+        );
+
+        return $cards;
+    }
+
+    /** @param array<int,array<string,mixed>> $cards */
+    private function onScreenHint(array $cards): string
+    {
+        $parts = [];
+        foreach (array_values($cards) as $i => $c) {
+            $parts[] = ($i + 1).') '.($c['name'] ?? 'Tutor').' ref='.($c['ref'] ?? '');
+        }
+
+        if (count($cards) === 1) {
+            return '(The parent is on '.($cards[0]['name'] ?? 'this tutor').' profile page. '
+                .'EVERY question is about this one tutor unless the parent names someone else: '
+                .implode('; ', $parts).'. Use get_tutor_details with that ref. '
+                .'Do NOT call search_tutors and do NOT mention, list or suggest any other tutor '
+                .'here - the parent is already looking at the one they chose. Never print a ref.)';
+        }
+
+        return '(The parent has these tutors on screen - "them"/"these"/"which one" '
+            .'refers to these, in this order: '.implode('; ', $parts)
+            .'. Use these refs with get_tutor_details / compare_tutors. Never print a ref.)';
+    }
+
+    /**
+     * Once the parent has used their free turns, stop answering and hand the
+     * conversation to WhatsApp. Returns null while turns remain.
+     */
+    private function handoff(NxtAiConversation $conversation, ?string $userId, string $guestHash): ?JsonResponse
+    {
+        $free = (int) config('nxt-ai.free_turns', 4);
+        if ($free <= 0) {
+            return null;
+        }
+
+        // Counted across every conversation this visitor owns, not just the
+        // current one — reloading the page starts a fresh conversation id and
+        // would otherwise hand out another full allowance.
+        $used = NxtAiMessage::query()
+            ->where('role', 'user')
+            ->whereIn('conversation_id', NxtAiConversation::query()
+                ->when(
+                    $userId !== null,
+                    static fn ($q) => $q->where('user_id', $userId),
+                    static fn ($q) => $q->whereNull('user_id')->where('guest_session_hash', $guestHash)
+                )
+                ->select('id'))
+            ->count();
+
+        if ($used < $free) {
+            return null;
+        }
+
+        $number = preg_replace('/\D/', '', (string) (config('nxt-ai.whatsapp_number')
+            ?: optional(Setting::first())->phone));
+
+        $text = 'Hi NXTutors, I was chatting with NXT AI and would like to continue on WhatsApp.';
+        $url = $number !== '' ? 'https://wa.me/'.$number.'?text='.rawurlencode($text) : null;
+
+        $conversation->forceFill(['status' => 'handed_off'])->save();
+
+        return response()->json([
+            'success' => true,
+            'conversation_id' => $conversation->uid,
+            'message_id' => null,
+            'reply' => 'Thanks for chatting with NXT AI! To keep going, our team will help you directly on WhatsApp - they can share tutor details, timings and book your demo class.',
+            'blocks' => array_values(array_filter([
+                $url ? [
+                    'type' => 'whatsapp_handoff',
+                    'title' => 'Continue on WhatsApp',
+                    'message' => 'You have used your free questions. Our team will take it from here - tutor details, timings and demo booking.',
+                    'url' => $url,
+                    'cta' => 'Open WhatsApp',
+                ] : null,
+            ])),
+            'quick_replies' => [],
+            'sources' => [],
+            'meta' => ['request_id' => null, 'has_more' => false, 'handoff' => true],
         ]);
     }
 

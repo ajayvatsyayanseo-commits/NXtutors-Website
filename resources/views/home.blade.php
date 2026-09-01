@@ -1980,6 +1980,9 @@ body.page .nxh__sweep{
       {{-- The sliding strip of every subject we tutor, last thing before the footer. --}}
       @include('home.partials.course-marquee')
 
+      {{-- Coverage band: real city pages, linked, just above the footer. --}}
+      @include('home.partials.cities-served')
+
     </main>
 
   @include('include.footer')
@@ -2057,6 +2060,11 @@ document.addEventListener("click", function(e){
 });
 
 document.addEventListener("DOMContentLoaded", function(){
+
+    // Superseded by the NXT AI client in home/partials/ask-ai.blade.php,
+    // which claims the widget at parse time. Two clients on one input
+    // means double sends and a chat that ignores tutor cards.
+    if (window.__nxtAiOwned) return;
 
   const input = document.getElementById("nxAskAiInput");
   const send = document.getElementById("nxAskAiSend");
@@ -2408,30 +2416,40 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
       `).join("");
 
-      const selectedMobile = top3.map((t, idx) => {
-        const meta =
-          selectedList.find(x => String(x.id) === String(t._compareId || t.id)) || {};
 
-        return `
-          <div class="nxg-mobile-chip">
-            <div class="nxg-mobile-chip__top">
-              <div class="nxg-avatar ${colorClass(idx)}">${avatarLetter(t.name)}</div>
-              <div>
-                <strong>${esc(t.name)}</strong>
-                <span>${esc(getMatchLabel(t._displayScore))}</span>
-              </div>
-            </div>
+      /* The three tags under the headline used to read "2-3 tutors only",
+         "No clipped columns" and "Demo-first decision" - notes about how the
+         component was built, shown to a parent choosing a tutor. These say
+         what the winner is actually strong at, taken from the same scores the
+         table below plots, and fall back to the honest generic line only when
+         nothing scores highly. */
+      const strengthLabels = {
+        _subject: "Teaches the subject you need",
+        _experience: "Most classroom experience",
+        _reviews: "Best parent reviews",
+        _budget: "Best fit for your budget",
+        _availability: "Most flexible timings"
+      };
+      const winnerStrengths = Object.keys(strengthLabels)
+        .map(k => ({ k, v: Number(winner[k]) || 0 }))
+        .sort((a, b) => b.v - a.v)
+        .filter(x => x.v >= 60)
+        .slice(0, 3)
+        .map(x => strengthLabels[x.k]);
+      const heroTags = (winnerStrengths.length ? winnerStrengths : ["Verified tutor", "Free demo class"])
+        .map(t => `<span>${esc(t)}</span>`).join("");
 
-            <div class="nxg-mobile-chip__bottom">
-              <small>${esc(t._displayScore)}/100</small>
-              <div class="nxg-mobile-chip__actions">
-                <a href="${esc(t._wa || meta.wa || '#')}" target="_blank" rel="nofollow noopener">Demo</a>
-                <button type="button" class="nxg-remove-btn js-compare-remove" data-id="${esc(t._compareId || t.id)}">Remove</button>
-              </div>
-            </div>
-          </div>
-        `;
-      }).join("");
+      // How clear the win is, so the copy can be honest about a close call.
+      const winMargin = second ? (Number(winner._displayScore) - Number(second._displayScore)) : null;
+      const marginNote = winMargin === null
+        ? "Book a free demo class to confirm the fit before you commit."
+        : winMargin >= 10
+          ? `A clear lead of ${winMargin} points over ${esc(second.name)} across the signals below.`
+          : winMargin > 0
+            // A 1-9 point gap is inside the noise of any scoring model, so say so.
+            ? `Just ${winMargin} point${winMargin === 1 ? "" : "s"} ahead of ${esc(second.name)} - too close to call on scores alone, so let the demo class decide.`
+            // Identical scores are common with two similar tutors; "0 points ahead" read as a bug.
+            : `Level with ${esc(second.name)} on every signal we can measure. Book a demo with both and pick the one your child responds to.`;
 
       const aiFirstQuestion = `Who is best for my child among ${top3.map(t => t.name).join(", ")}?`;
       const aiReply = `${winner.name} ranks first overall because subject fit, experience and availability are strongest. ${second ? `${second.name} is a good backup option` : ""}${winner._budget < 75 ? ", especially if budget is flexible." : "."}`;
@@ -2457,11 +2475,8 @@ document.addEventListener('DOMContentLoaded', function () {
                   <h3>${esc(winner.name)} is the best overall choice</h3>
                   <p>${esc(recommendationReason || "Best balance of subject fit, experience, reviews, budget and availability.")}</p>
 
-                  <div class="nxg-tags">
-                    <span>2–3 tutors only</span>
-                    <span>No clipped columns</span>
-                    <span>Demo-first decision</span>
-                  </div>
+                  <div class="nxg-tags">${heroTags}</div>
+                  <p class="nxg-hero__margin">${marginNote}</p>
                 </div>
 
                 <div class="nxg-scorecard">
@@ -2475,8 +2490,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 <div class="nxg-panel nxg-glass nxg-selected-panel">
                 <div class="nxg-selected-top">
                   <div class="nxg-selected-chart">
-                    <h4>Score distribution</h4>
-                    <p>Visual comparison of shortlisted tutors by AI match score.</p>
+                    <h4>How close the match is</h4>
+                    <p>Overall score out of 100 for each shortlisted tutor. A wide gap means one is a
+                       clear fit; a narrow one means the demo class is the real decider.</p>
 
                     <div class="nxg-pie-wrap">
                       <canvas id="nxComparePieChart"></canvas>
@@ -2484,8 +2500,8 @@ document.addEventListener('DOMContentLoaded', function () {
                   </div>
 
     <div class="nxg-selected-list-wrap">
-      <h4>Shortlisted tutors</h4>
-<p>AI-ranked tutor list based on overall fit, teaching relevance and session readiness.</p>
+      <h4>Your shortlist</h4>
+<p>Ranked best-fit first. Book a free demo with any of them - there is no charge and no commitment.</p>
 
       <div class="nxg-mini-list nxg-mini-list-scroll ${rankedTutors.length > 3 ? 'has-scroll' : ''}">
         ${leftCards}
@@ -2496,7 +2512,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 <div class="nxg-panel nxg-glass">
                   <h4>Why ${esc(winner.name)} ranks first</h4>
-                  <p>Compare key tutor signals clearly without overflow or clutter.</p>
+                  <p>Every tutor scored on the five things that decide whether tuition works: whether they
+                     teach your subject, how long they have taught it, what other parents said, how the fee
+                     compares, and whether their timings suit you.</p>
 
                   <div class="nxg-head-row">
                     <div class="nxg-head-row__title">Signals</div>
@@ -2508,10 +2526,10 @@ document.addEventListener('DOMContentLoaded', function () {
                   </div>
 
                   <div class="nxg-footer-tags">
-                    <span class="green">Strong fit</span>
-                    <span>Subject + experience lead</span>
-                    <span class="gold">Watch-out</span>
-                    <span>Use demo class as final tie-breaker</span>
+                    <span class="green">Scores are a guide</span>
+                    <span>They rank fit on paper, not how your child gets on with the tutor</span>
+                    <span class="gold">Next step</span>
+                    <span>Book a free demo with your top two and let the lesson decide</span>
                   </div>
                 </div>
 
@@ -2519,56 +2537,6 @@ document.addEventListener('DOMContentLoaded', function () {
               </div>
             </div>
 
-            <div class="nxg-mobile nxg-mobile-preview">
-              <div class="nxg-mobile-frame">
-                <div class="nxg-mobile-inner">
-                  <h3>Compare tutors</h3>
-                  <p>Sticky mobile comparison preview</p>
-
-                  <div class="nxg-mobile-top nxg-glass">
-                    <span class="nxg-pill green">AI Top Pick</span>
-                    <h4>${esc(winner.name)} leads the shortlist</h4>
-                    <p>${esc(recommendationReason || "Best overall fit for experience, reviews and schedule match.")}</p>
-
-                    <div class="nxg-mobile-top__meta">
-                      <small>${esc(winner._displayScore)}/100</small>
-                      <span>Good Match</span>
-                      <a href="${esc(winnerMeta.wa || '#')}" target="_blank" rel="nofollow noopener">Demo</a>
-                    </div>
-                  </div>
-
-                  <h5>Selected tutors</h5>
-                  <div class="nxg-mobile-list">
-                    ${selectedMobile}
-                  </div>
-
-                  <div class="nxg-mobile-win nxg-glass">
-                    <h5>Why ${esc(winner.name)} wins</h5>
-
-                    <div class="nxg-rings nxg-rings--sm">
-                      <div class="nxg-ring gold sm" style="--val:${winner._displayScore}">
-                        <div class="nxg-ring blue sm2" style="--val:${second ? second._displayScore : 0}">
-                          <div class="nxg-ring pink sm3" style="--val:${third ? third._displayScore : 0}">
-                            <div class="nxg-ring-center">
-                              <strong>${esc(winner._displayScore)}</strong>
-                              <span>Top pick</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    ${scoreLine("Subject", winner._subject, "blue")}
-                    ${scoreLine("Experience", winner._experience, "blue")}
-                    ${scoreLine("Reviews", winner._reviews, "blue")}
-                    ${scoreLine("Budget", winner._budget, "blue")}
-                    ${scoreLine("Availability", winner._availability, "blue")}
-
-                    <div class="nxg-mobile-note">Use demo clarity as final decision factor.</div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       `;
@@ -2604,7 +2572,28 @@ function renderComparePieChart(tutors) {
       cutout: "62%",
       plugins: {
         legend: {
-          display: false
+          // A donut of two grey-and-blue arcs is unreadable without hovering,
+          // which is not an option on a phone. Name each slice with its score.
+          display: true,
+          position: "bottom",
+          labels: {
+            color: "rgba(255,255,255,.72)",
+            boxWidth: 10,
+            boxHeight: 10,
+            usePointStyle: true,
+            pointStyle: "circle",
+            padding: 14,
+            font: { size: 12 },
+            generateLabels(chart) {
+              const d = chart.data;
+              return d.labels.map((label, i) => ({
+                text: `${label} — ${d.datasets[0].data[i]}/100`,
+                fillStyle: d.datasets[0].backgroundColor[i],
+                strokeStyle: d.datasets[0].backgroundColor[i],
+                index: i
+              }));
+            }
+          }
         },
         tooltip: {
           callbacks: {
@@ -2638,6 +2627,10 @@ function renderComparePieChart(tutors) {
     }
 
     function wireAskAI(tutors) {
+    // Superseded by the NXT AI client in home/partials/ask-ai.blade.php,
+    // which claims the widget at parse time. Two clients on one input
+    // means double sends and a chat that ignores tutor cards.
+    if (window.__nxtAiOwned) return;
       const input = document.getElementById("nxAskAiInput");
       const send = document.getElementById("nxAskAiSend");
       const chatBox = document.getElementById("nxAskAiThread");
@@ -3598,6 +3591,11 @@ function closePDF() {
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+    // Superseded by the NXT AI client in home/partials/ask-ai.blade.php,
+    // which claims the widget at parse time. Two clients on one input
+    // means double sends and a chat that ignores tutor cards.
+    if (window.__nxtAiOwned) return;
+
     const input = document.getElementById('nxAskAiInput');
     const sendBtn = document.getElementById('nxAskAiSend');
     const thread = document.getElementById('nxAskAiThread');

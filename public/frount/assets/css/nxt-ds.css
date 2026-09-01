@@ -3280,6 +3280,16 @@ body.page .nxg-results:has(#compareLoadingWrap[style*="block"]) .nxg-compare-slo
 }
 
 /* No nested frame — the panel already is the frame. */
+/* ...except while a comparison is showing: home.css then strips the panel's
+   own padding, border and background so there is only ONE card. With both
+   frames gone the wrap's border-radius clipped its first character ("N" of
+   NXTutors) against the flush edge. The rule below restores the inset in that
+   case only, so a comparison is inset by the wrap and everything else stays
+   inset by the panel. */
+body.page .nxg-results:has(#compareResultsMount:not(:empty)) .nxg-compare-slot .nxg-wrap {
+  padding: var(--nxt-s5);
+}
+
 body.page .nxg-compare-slot .nxg-wrap,
 body.page .nxg-compare-slot .nxg-hero,
 body.page .nxg-compare-slot .nx-compare-loading {
@@ -4223,9 +4233,11 @@ body.page .footer-bottom {
 }
 
 .nxmq {
-  --nxmq-cols: 3;          /* cards visible at once */
+  --nxmq-cols: 2;          /* cards visible at once — 2 gives each card room
+                              for its subject list; the keyframe reads the same
+                              variable, so the loop stays seamless */
   --nxmq-gap: var(--nxt-s4);
-  --nxmq-speed: 96s;       /* a reading pace, not a ticker */
+  --nxmq-speed: 128s;      /* wider cards travel further; same reading pace */
   /* --nxmq-n (item count) is set inline by the template. */
   overflow: hidden;
   /* Fade the two edges so cards enter and leave instead of being chopped. */
@@ -4348,9 +4360,11 @@ body.page .footer-bottom {
 
 @media (max-width: 720px) {
   .nxmq {
-    --nxmq-cols: 2;
+    /* One card at a time: at two-up there is not enough width left for the
+       subject chips, and they wrap into a column of single words. */
+    --nxmq-cols: 1;
     --nxmq-gap: var(--nxt-s3);
-    --nxmq-speed: 68s;    /* narrower cards, same reading pace */
+    --nxmq-speed: 90s;    /* narrower cards, same reading pace */
   }
   .nxmq-card {
     gap: var(--nxt-s2);
@@ -4367,6 +4381,75 @@ body.page .footer-bottom {
   .nxmq-card__title {
     font-size: var(--nxt-t-xs);
   }
+}
+
+/* ---- The detail the wider card made room for -------------------------------
+   A second paragraph, the real subject list, and the service facts. All three
+   are plain text: they exist to be read and crawled, so nothing here is
+   clipped or hidden. */
+
+.nxmq-card__more {
+  margin: 0;
+  font-size: var(--nxt-t-xs);
+  line-height: 1.55;
+  color: var(--nxt-text-faint);
+}
+
+.nxmq-card__subjects {
+  display: flex;
+  flex-direction: column;
+  gap: var(--nxt-s2);
+  min-width: 0;
+}
+.nxmq-card__subjects-label {
+  font-size: var(--nxt-t-micro);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--nxt-text-faint);
+}
+.nxmq-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-width: 0;
+}
+.nxmq-chip {
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 1px solid var(--nxt-line);
+  background: var(--nxt-surface-2);
+  font-size: var(--nxt-t-micro);
+  line-height: 1.5;
+  color: var(--nxt-text-dim);
+  white-space: nowrap;
+}
+
+/* Pushed to the bottom so every card's fact row sits on the same line,
+   however much copy sits above it. */
+/* Cards in a row all take the height of the tallest, and the copy varies by a
+   hundred-odd pixels, so the surplus has to go somewhere. Letting the last
+   paragraph grow puts it inside the text block — the card reads as fully set
+   rather than as text with a hole punched under it. */
+.nxmq-card__desc:last-of-type,
+.nxmq-card__more:last-of-type {
+  flex: 1 1 auto;
+}
+
+.nxmq-card__facts {
+  margin-top: auto;
+  padding-top: var(--nxt-s2);
+  border-top: 1px solid var(--nxt-line);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  font-size: var(--nxt-t-micro);
+  color: var(--nxt-text-faint);
+}
+/* Separator drawn rather than typed, so it never lands at the end of a row. */
+.nxmq-fact + .nxmq-fact::before {
+  content: "\00b7";
+  margin-right: 10px;
 }
 
 /* Motion is the whole point of this component, so when it is unwelcome the
@@ -4448,4 +4531,68 @@ body.page .gen-card__bottom {
     -webkit-line-clamp: 5;
             line-clamp: 5;
   }
+}
+
+
+/* ==========================================================================
+   20  CITIES WE SERVE  (the coverage band above the footer)
+   ==========================================================================
+   A plain wrapping list, not a grid: the names are different lengths and a
+   grid would leave a ragged column of whitespace after the short ones. Each
+   item is a link to a city page that exists, so this doubles as internal
+   linking rather than decoration. */
+
+.nxcs-sec {
+  padding-top: var(--nxt-s6);
+}
+.nxcs-title {
+  margin: 0 0 var(--nxt-s2);
+  font-family: var(--nxt-font-display);
+  font-size: var(--nxt-t-micro);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--nxt-text-faint);
+}
+.nxcs-lede {
+  max-width: 68ch;
+  margin: 0 0 var(--nxt-s4);
+  font-size: var(--nxt-t-sm);
+  line-height: 1.6;
+  color: var(--nxt-text-dim);
+}
+.nxcs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--nxt-s2) var(--nxt-s4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nxcs-link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  text-decoration: none;
+  font-size: var(--nxt-t-sm);
+  line-height: 1.7;
+  color: var(--nxt-text-dim);
+  transition: color .15s;
+}
+.nxcs-link:hover,
+.nxcs-link:focus-visible {
+  color: var(--nxt-text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+/* The count is secondary to the name it follows, never the other way round. */
+.nxcs-count {
+  font-size: var(--nxt-t-micro);
+  font-variant-numeric: tabular-nums;
+  color: var(--nxt-text-faint);
+}
+
+@media (max-width: 720px) {
+  .nxcs-list { gap: var(--nxt-s2) var(--nxt-s3); }
+  .nxcs-link { font-size: var(--nxt-t-xs); }
 }

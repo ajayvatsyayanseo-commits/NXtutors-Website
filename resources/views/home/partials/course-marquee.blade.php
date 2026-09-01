@@ -29,35 +29,55 @@
     $clean = fn ($s) => rtrim(trim((string) $s), " \t:-\u{2013}\u{2014},");
 
     /**
-     * Never invented: an admin-written cdesc wins, and the fallback is built
-     * only from categories that actually exist in the database.
+     * The subjects under a card, de-duplicated.
+     *
+     * The class rows were entered many times with different spacing — "Class-I",
+     * "Class- I" and "Class -I" all exist under Academic, which is why it counts
+     * 55 children for 17 real subjects. Collapsing on a whitespace- and
+     * case-insensitive key keeps the first spelling and drops the rest, so the
+     * list never reads as a stutter.
      */
-    $describe = function ($c) use ($parents, $children, $clean) {
-        $written = trim(strip_tags((string) $c->cdesc));
-        if ($written !== '') {
-            return $written;
-        }
-
-        $kids = collect($children[$c->id] ?? [])
+    $subjectsOf = function ($c) use ($children, $clean) {
+        return collect($children[$c->id] ?? [])
             ->pluck('cat_title')
             ->map($clean)
             ->filter()
+            ->unique(fn ($t) => strtolower(preg_replace('/[\s\-]+/', '', $t)))
             ->values();
+    };
 
-        if ($kids->count()) {
-            $shown = $kids->take(3)->implode(', ');
-            $rest  = $kids->count() - min(3, $kids->count());
-
-            return $rest > 0
-                ? "Covers {$shown} and {$rest} more, taught one-to-one at home or online."
-                : "Covers {$shown}, taught one-to-one at home or online.";
+    /**
+     * The card's body copy, as paragraphs.
+     *
+     * An admin-written cdesc still wins outright. Without one, the copy comes
+     * from SubjectCopy, which writes to what the category actually is — a board,
+     * a class level, an entrance exam, a language — instead of repeating one
+     * generic sentence on all 24 cards. See that class for why.
+     */
+    $paragraphs = function ($c) use ($parents, $clean, $subjectsOf) {
+        $written = trim(strip_tags((string) $c->cdesc));
+        if ($written !== '') {
+            return [$written];
         }
 
-        $parent = $c->pid ? $clean($parents[$c->pid] ?? '') : null;
+        return \App\Support\SubjectCopy::paragraphs(
+            $clean($c->cat_title),
+            $c->pid ? $clean($parents[$c->pid] ?? '') : null,
+            $subjectsOf($c)
+        );
+    };
 
-        return $parent
-            ? "Part of {$parent}. One-to-one lessons with verified tutors, at home or online."
-            : 'One-to-one lessons with verified tutors, at home or online.';
+    // Shown as its own line so the facts stay scannable rather than buried in
+    // the prose above them.
+    $facts = function ($c) use ($subjectsOf) {
+        $kids = $subjectsOf($c);
+
+        return array_values(array_filter([
+            $kids->count() ? $kids->count() . ' subjects' : null,
+            'Home &amp; online',
+            'Verified tutors',
+            'Free demo class',
+        ]));
     };
 @endphp
 
@@ -90,13 +110,38 @@
                 <h3 class="nxmq-card__title">{{ $clean($c->cat_title) }}</h3>
               </span>
             </span>
-            <p class="nxmq-card__desc">{{ $describe($c) }}</p>
+            @foreach($paragraphs($c) as $i => $para)
+              <p class="{{ $i === 0 ? 'nxmq-card__desc' : 'nxmq-card__more' }}">{{ $para }}</p>
+            @endforeach
+
+            @php($kids = $subjectsOf($c))
+            @if($kids->count())
+              {{-- Every subject actually taught under this card, named in
+                   crawlable text instead of hidden behind "and 14 more". --}}
+              <span class="nxmq-card__subjects">
+                <span class="nxmq-card__subjects-label">Includes</span>
+                <span class="nxmq-chips">
+                  @foreach($kids as $k)
+                    <span class="nxmq-chip">{{ $k }}</span>
+                  @endforeach
+                </span>
+              </span>
+            @endif
+
+            <span class="nxmq-card__facts">
+              @foreach($facts($c) as $f)
+                <span class="nxmq-fact">{!! $f !!}</span>
+              @endforeach
+            </span>
           </article>
         </li>
       @endforeach
 
-      {{-- Pass 2: the seam filler. Hidden from assistive tech; carries no
-           heading, so it cannot duplicate the outline the first pass builds. --}}
+      {{-- Pass 2: the seam filler. Identical markup to pass 1 — the travel
+           distance is one whole copy, so any difference in card height between
+           the two passes would show as a jump at the loop. Hidden from
+           assistive tech; carries no heading, so it cannot duplicate the
+           outline the first pass builds. --}}
       @foreach($strip as $c)
         <li class="nxmq__item" aria-hidden="true">
           <article class="nxmq-card">
@@ -112,7 +157,27 @@
                 <span class="nxmq-card__title">{{ $clean($c->cat_title) }}</span>
               </span>
             </span>
-            <p class="nxmq-card__desc">{{ $describe($c) }}</p>
+            @foreach($paragraphs($c) as $i => $para)
+              <p class="{{ $i === 0 ? 'nxmq-card__desc' : 'nxmq-card__more' }}">{{ $para }}</p>
+            @endforeach
+
+            @php($kids = $subjectsOf($c))
+            @if($kids->count())
+              <span class="nxmq-card__subjects">
+                <span class="nxmq-card__subjects-label">Includes</span>
+                <span class="nxmq-chips">
+                  @foreach($kids as $k)
+                    <span class="nxmq-chip">{{ $k }}</span>
+                  @endforeach
+                </span>
+              </span>
+            @endif
+
+            <span class="nxmq-card__facts">
+              @foreach($facts($c) as $f)
+                <span class="nxmq-fact">{!! $f !!}</span>
+              @endforeach
+            </span>
           </article>
         </li>
       @endforeach
@@ -132,14 +197,29 @@
       'itemListElement' => $strip->values()->map(fn ($c, $i) => [
           '@type'    => 'ListItem',
           'position' => $i + 1,
-          'item'     => [
+          'item'     => array_filter([
               '@type'       => 'Service',
               'name'        => $clean($c->cat_title),
               'serviceType' => 'Tutoring',
-              'description' => $describe($c),
+              // Matches the two paragraphs the card actually renders.
+              'description' => implode(' ', $paragraphs($c)),
               'areaServed'  => ['@type' => 'Country', 'name' => 'India'],
               'provider'    => ['@type' => 'Organization', 'name' => 'NXTutors'],
-          ],
+              // The same subject names shown as chips, so the structured data
+              // never claims more than the visible text.
+              'hasOfferCatalog' => $subjectsOf($c)->count() ? [
+                  '@type' => 'OfferCatalog',
+                  'name'  => $clean($c->cat_title) . ' subjects',
+                  'itemListElement' => $subjectsOf($c)->map(fn ($s) => [
+                      '@type' => 'Offer',
+                      'itemOffered' => [
+                          '@type' => 'Service',
+                          'name' => $s,
+                          'serviceType' => 'Tutoring',
+                      ],
+                  ])->all(),
+              ] : null,
+          ]),
       ])->all(),
   ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
   </script>

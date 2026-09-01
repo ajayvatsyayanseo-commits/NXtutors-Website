@@ -49,6 +49,14 @@ final class OpenAiResponseParser
             }
         }
 
+        // A turn truncated by max_output_tokens yields no text and no tool call.
+        // Surfacing it as a failure keeps it out of the silent-fallback path.
+        if ($text === '' && $toolCalls === []
+            && ($json['status'] ?? null) === 'incomplete') {
+            return OpenAiTurn::failure('OpenAI response truncated: '
+                .(string) ($json['incomplete_details']['reason'] ?? 'unknown'), 502);
+        }
+
         // Fallback: some responses expose a flattened `output_text`.
         if ($text === '' && is_string($json['output_text'] ?? null)) {
             $text = (string) $json['output_text'];

@@ -26,7 +26,9 @@ final class SearchTutorsTool implements Tool
     {
         return 'Search and rank NXTutors tutors from the database by city, area, pincode, '
             .'subject, class, board, teaching mode (online/home), gender, experience, fee and rating. '
-            .'Use this whenever the parent wants tutor recommendations or matches.';
+            .'Use this whenever the parent wants tutor recommendations or matches. '
+            .'Pass ONLY the properties the parent actually stated — omit every other property '
+            .'rather than sending a guess, an empty string or 0.';
     }
 
     public function parameters(): array
@@ -41,10 +43,11 @@ final class SearchTutorsTool implements Tool
                 'class_level' => ['type' => 'string', 'description' => 'Class/grade, e.g. Class 10'],
                 'board' => ['type' => 'string', 'description' => 'Board, e.g. CBSE, ICSE'],
                 'teaching_mode' => ['type' => 'string', 'enum' => ['online', 'home', 'either']],
-                'gender' => ['type' => 'string', 'enum' => ['male', 'female']],
-                'minimum_experience' => ['type' => 'integer', 'description' => 'Minimum years of experience'],
-                'maximum_fee' => ['type' => 'integer', 'description' => 'Maximum fee in rupees'],
-                'minimum_rating' => ['type' => 'number', 'description' => 'Minimum average rating 0-5'],
+                'gender' => ['type' => 'string', 'enum' => ['male', 'female'],
+                    'description' => 'ONLY when the parent explicitly asked for a male or female tutor. Omit otherwise.'],
+                'minimum_experience' => ['type' => 'integer', 'description' => 'Minimum years of experience. Omit unless stated.'],
+                'maximum_fee' => ['type' => 'integer', 'description' => 'Maximum fee in rupees. Omit unless the parent gave a budget.'],
+                'minimum_rating' => ['type' => 'number', 'description' => 'Minimum average rating 0-5. Omit unless stated.'],
                 'limit' => ['type' => 'integer', 'description' => 'How many tutors to return (1-6, default 3)'],
             ],
             'additionalProperties' => false,
@@ -86,6 +89,10 @@ final class SearchTutorsTool implements Tool
             data: [
                 'count' => count($cards),
                 'criteria' => $criteria->toArray(),
+                // Set when no tutor was tagged with the requested subject and we
+                // fell back to the location match — tell the parent, do not
+                // present these as subject matches.
+                'relaxed_filter' => $result['relaxed'] ?? null,
                 // Compact list for the model to reference by position/ref (no private data).
                 'tutors' => array_map(static fn ($c, $i) => [
                     'index' => $i + 1,
@@ -101,7 +108,7 @@ final class SearchTutorsTool implements Tool
             ],
             blocks: [[
                 'type' => 'tutor_cards',
-                'title' => $this->cardsTitle($criteria),
+                'title' => $this->cardsTitle($criteria, $result['relaxed'] ?? null),
                 'items' => $cards,
             ]],
             quickReplies: array_values(array_filter([
@@ -113,9 +120,12 @@ final class SearchTutorsTool implements Tool
         );
     }
 
-    private function cardsTitle(TutorSearchCriteria $c): string
+    private function cardsTitle(TutorSearchCriteria $c, ?string $relaxed = null): string
     {
         $where = $c->city ? ' in '.$c->city : ($c->pincode ? ' near '.$c->pincode : '');
+        if ($relaxed === 'subject') {
+            return 'Other tutors'.($where ?: ' available');
+        }
         $what = $c->subject ? $c->subject.' tutors' : 'tutor matches';
 
         return 'Top '.ucfirst($what).$where;

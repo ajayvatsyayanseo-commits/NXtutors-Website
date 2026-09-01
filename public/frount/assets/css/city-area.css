@@ -424,6 +424,17 @@ body.page{
   padding: 26px 28px;
 }
 
+/* The decorative glow is .hero::before at right:-70px / width:320px — it bleeds past
+   the corner on purpose and is meant to be clipped by the .hero{overflow:hidden}
+   declared earlier in this file. nxt-ds.css ships `body.page .hero{overflow:visible}`,
+   which outranks a bare `.hero`, so the blob escaped and made the document ~57px wider
+   than a 414px viewport: the empty strip down the right edge on mobile. This file loads
+   after nxt-ds.css, so matching its specificity restores the clipping. Do not simplify
+   this back to `.hero{}` — it loses the cascade fight. */
+body.page .hero{
+  overflow: hidden;
+}
+
 /* IMAGE */
 .hero-img{
   width: 220px;

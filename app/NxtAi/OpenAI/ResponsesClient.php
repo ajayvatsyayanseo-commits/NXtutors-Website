@@ -25,13 +25,15 @@ final class ResponsesClient implements OpenAiChat
 
     public function respond(string $instructions, array $input, array $tools, int $maxOutputTokens): OpenAiTurn
     {
-        $key = (string) config('services.openai.key');
+        $key = (string) config('nxt-ai.api_key');
         if ($key === '') {
             throw NxtAiException::missingApiKey();
         }
 
+        $model = (string) config('nxt-ai.model');
+
         $payload = [
-            'model' => (string) config('nxt-ai.model'),
+            'model' => $model,
             'instructions' => $instructions,
             'input' => $input,
             'tools' => $tools,
@@ -40,6 +42,13 @@ final class ResponsesClient implements OpenAiChat
             'max_output_tokens' => $maxOutputTokens,
             'store' => false, // do not persist conversation content on OpenAI
         ];
+
+        // Reasoning models (gpt-5*) spend max_output_tokens on hidden reasoning
+        // before emitting anything. Left at default they burn the whole budget
+        // and return status=incomplete with no text and no tool call.
+        if (str_starts_with($model, 'gpt-5') || str_starts_with($model, 'o1') || str_starts_with($model, 'o3')) {
+            $payload['reasoning'] = ['effort' => (string) config('nxt-ai.reasoning_effort', 'low')];
+        }
 
         try {
             $response = Http::withToken($key)

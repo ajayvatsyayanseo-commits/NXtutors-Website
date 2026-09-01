@@ -12,6 +12,11 @@ class CityNormalizer
     private const ALIASES = [
         'gurgaon' => 'Gurugram',
         'gurugram' => 'Gurugram',
+        // Common misspellings — 'girgaon' is also a real Mumbai locality,
+        // but on a tutor site it is overwhelmingly a typo for Gurgaon.
+        'girgaon' => 'Gurugram',
+        'gurgao' => 'Gurugram',
+        'gurgoan' => 'Gurugram',
         'bangalore' => 'Bengaluru',
         'bengaluru' => 'Bengaluru',
         'new delhi' => 'Delhi',

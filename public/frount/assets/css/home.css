@@ -758,10 +758,14 @@
 .nxg-mini-bar.gold i,
 .nxg-line.gold i{ background:var(--accent,#F5A524); }
 
+/* 30% white on this panel is all but invisible: the runner-up's bar read as
+   empty even at 74/100, which looks like a bug rather than a close second.
+   Ranks stay distinguishable while the leader keeps the accent. */
 .nxg-mini-bar.blue i,
-.nxg-line.blue i,
+.nxg-line.blue i{ background:rgba(255,255,255,.62); }
+
 .nxg-mini-bar.pink i,
-.nxg-line.pink i{ background:rgba(255,255,255,.30); }
+.nxg-line.pink i{ background:rgba(255,255,255,.42); }
 
 /* =========================
    COMPARE TRAY
@@ -970,6 +974,7 @@
   flex-direction:column;
   min-height:620px;
   max-height:620px;
+  position:relative; /* anchors the WhatsApp lock overlay */
 }
 
 .nxg-chat-top{
@@ -1086,10 +1091,15 @@
 
 .nxg-msg.ai .nxg-text{
   font-size:13px;
-  line-height:1.55;
+  line-height:1.6;
   color:rgba(255,255,255,.92);
   word-break:break-word;
+  /* The model answers in lines/paragraphs; textContent keeps the newlines,
+     so honour them instead of collapsing everything into one block. */
+  white-space:pre-wrap;
 }
+/* Blank line between paragraphs reads as separation, not a gap. */
+.nxg-msg.ai .nxg-text:not(.nxg-welcome-text){ margin:0; }
 
 .nxg-react{
   display:flex;
@@ -1321,6 +1331,103 @@
   .nxg-results{ min-height:0; max-height:420px; }
 }
 
+/* The honest read on how close the win is, under the headline. */
+.nxg-hero__margin {
+  margin: 10px 0 0;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, .62);
+}
+
+/* ---- Comparison: one column, full width ------------------------------------
+   The comparison shipped as a three-column grid (240px / fluid / 360px) sitting
+   inside a two-column shell whose right column was a decorative phone mockup
+   repeating the same result. Inside the assistant panel that is four nested
+   columns fighting over ~40% of the page, which is why the score gauges and the
+   signals table were cut off.
+
+   Stacked, every block gets the full width it was designed for, and it degrades
+   to the same thing on a phone instead of needing a separate mobile branch. */
+.nxg-shell,
+.nxg-grid,
+.nxg-selected-top {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+/* The chart box reserved a fixed 260px while the canvas draws at its own
+   aspect ratio, so a tall empty band sat under the pie. Let the wrapper take
+   the canvas height instead of dictating it. */
+.nxg-pie-wrap {
+  height: auto;
+  min-height: 220px;
+}
+/* Stacked, the shortlist has the full width and no longer needs to scroll
+   inside a 260px window with the rest of the card empty beneath it. */
+.nxg-mini-list-scroll {
+  max-height: none;
+  overflow-y: visible;
+}
+
+/* The phone mockup is a design artefact: it renders the winner, the score and
+   the shortlist a second time, so on a real phone the page said everything
+   twice. The live layout above is already responsive. */
+.nxg-mobile-preview {
+  display: none;
+}
+
+/* ---- While a comparison is on screen ---------------------------------------
+   The comparison renders into #compareResultsMount, which lives inside
+   .nxg-results — a ~40% grid column pinned to a 620px frame (420px under
+   980px). A comparison is a wide, tall thing: score gauges, a metric table,
+   one column per tutor. Inside that frame it was cut off and had to be
+   scrolled in a box.
+
+   Nothing moves in the DOM. The panel simply stops being a fixed box for as
+   long as a comparison exists: the column spans the layout, the height cap
+   lifts, and the knowledge list steps aside so the comparison owns the area.
+   All of it reverts on its own when the mount is emptied.
+
+   :has() is doing the detection, so a browser without it just keeps today's
+   behaviour rather than breaking. */
+/* NOT single-column: collapsing the layout drops the panel BELOW the chat card,
+   which is exactly the "it shows down there, not in the same place" problem.
+   The two columns stay; only the panel's fixed height is lifted. */
+.nxg-results:has(#compareResultsMount:not(:empty)) {
+  min-height: 0;
+  max-height: none;
+  overflow: visible;
+  /* The comparison brings its own card (.nxg-wrap: 26px padding, 30px radius,
+     border, shadow). Keeping the panel's card around it meant a card inside a
+     card — a double border, doubled padding, and the inner corner radius
+     cropping the "N" of the heading. While a comparison is shown the panel
+     becomes a plain container and lets .nxg-wrap be the only card. */
+  padding: 0;
+  gap: 0;
+  border: 0;
+  background: none;
+  border-radius: 0;
+}
+/* The knowledge base is not the answer to "compare these tutors". */
+.nxg-results:has(#compareResultsMount:not(:empty)) .nxg-results-search,
+.nxg-results:has(#compareResultsMount:not(:empty)) .nxg-results-list,
+.nxg-results:has(#compareResultsMount:not(:empty)) .nxg-results-foot {
+  display: none;
+}
+
+/* Grid and flex children default to min-width:auto, which lets a wide table
+   push the panel past the viewport instead of scrolling inside it. */
+.nxg-compare-slot,
+#compareResultsMount,
+#compareGrid {
+  min-width: 0;
+}
+/* If a comparison table is still wider than a phone, it scrolls itself rather
+   than dragging the whole page sideways. */
+#compareResultsMount {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 .nxg-chat-actions{
   display:flex;
   gap:8px;
@@ -1411,6 +1518,57 @@
 }
 .nxg-quick:hover{ background:rgba(97,127,255,.24); }
 .nxg-typing .nxg-text{ opacity:.6; font-style:italic; }
+
+/* Opening greeting — second line sits under the wave, not the emoji column. */
+.nxg-welcome-text{ font-size:14px; }
+.nxg-welcome-text span{ display:inline-block; padding-left:1.6em; opacity:.85; }
+
+/* Free-turn limit reached: blur the conversation, centre one WhatsApp CTA. */
+.nxg-chat-card.is-locked > .nxg-chat-box,
+.nxg-chat-card.is-locked > .nxg-chat-input,
+.nxg-chat-card.is-locked > .nxg-quick-row{
+  filter:blur(4px);
+  pointer-events:none;
+  user-select:none;
+}
+.nxg-lock{
+  position:absolute;
+  inset:0;
+  z-index:3;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  border-radius:26px;
+  background:rgba(8,13,30,.55);
+}
+.nxg-lock-box{
+  max-width:330px;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+}
+.nxg-lock-title{ font-size:16px; font-weight:700; color:#fff; }
+.nxg-lock-msg{ font-size:13px; line-height:1.55; color:rgba(255,255,255,.78); }
+.nxg-lock .nxg-wa-btn{ margin-top:4px; }
+.nxg-wa-btn svg{ width:17px; height:17px; flex:0 0 auto; }
+
+/* Tutor-profile starter chips under the opening question. */
+.nxg-starters{ display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
+
+.nxg-wa-btn{
+  display:inline-flex; align-items:center; gap:8px;
+  padding:11px 20px; border-radius:999px;
+  background:#25D366; color:#06301a;
+  font-size:13px; font-weight:700; text-decoration:none;
+  box-shadow:0 6px 18px rgba(37,211,102,.28);
+}
+.nxg-wa-btn:hover{ background:#1fbe5a; }
+.nxg-chat-input input:disabled{ opacity:.6; cursor:not-allowed; }
+
+
 
 /* =========================
    MOBILE PREVIEW

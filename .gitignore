@@ -22,16 +22,13 @@ yarn-error.log*
 
 howtorun.md*
 
+.env.bak-before-nxtai-block
 
+.env.bak-before-nxtai-block
 
 # Environment
 
 .env
-
-# .env.example is intentionally NOT ignored: it holds no secrets (every
-# key is empty or a framework default) and the deploy workflow copies it
-# to .env in "Prepare isolated build environment". Ignoring it broke the
-# build with: cp: cannot stat '.env.example': No such file or directory
 
 .env.backup
 

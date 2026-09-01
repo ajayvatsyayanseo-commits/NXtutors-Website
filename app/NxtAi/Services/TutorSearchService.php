@@ -9,6 +9,7 @@ use App\NxtAi\DTO\TutorSearchCriteria;
 use App\NxtAi\Ranking\TutorRanker;
 use App\NxtAi\Support\CityNormalizer;
 use App\NxtAi\Support\PublicTutorFieldMapper;
+use App\NxtAi\Support\SubjectNormalizer;
 use App\NxtAi\Support\TutorCardMapper;
 use Illuminate\Support\Facades\DB;
 
@@ -21,7 +22,10 @@ use Illuminate\Support\Facades\DB;
  */
 final class TutorSearchService
 {
-    private const CANDIDATE_POOL = 80;
+    // Content filters (subject/class/board/mode) are applied in PHP AFTER this
+    // cut, so the pool must be wide enough that a subject search is not
+    // starved by whichever 80 tutors happen to have the most reviews.
+    private const CANDIDATE_POOL = 240;
 
     public function __construct(
         private readonly PublicTutorFieldMapper $mapper,
@@ -31,7 +35,7 @@ final class TutorSearchService
     }
 
     /**
-     * @return array{cards:array<int,array<string,mixed>>, matched:int, pool:int}
+     * @return array{cards:array<int,array<string,mixed>>, matched:int, pool:int, relaxed:?string}
      */
     public function search(TutorSearchCriteria $c): array
     {
@@ -44,6 +48,16 @@ final class TutorSearchService
         }
 
         $filtered = $this->applyContentFilters($public, $c);
+        $relaxed = null;
+
+        // A subject nobody in this city is tagged with would otherwise dead-end
+        // the chat. Show the location matches instead and report the relaxation
+        // so the caller can say so honestly.
+        if ($filtered === [] && $c->subject !== null && $public !== []) {
+            $filtered = $this->applyContentFilters($public, $c->withoutSubject());
+            $relaxed = $filtered !== [] ? 'subject' : null;
+        }
+
         $ranked = $this->ranker->rank($filtered, $c);
         $top = array_slice($ranked, 0, $c->limit);
 
@@ -51,6 +65,7 @@ final class TutorSearchService
             'cards' => $this->cardMapper->toCards($top),
             'matched' => count($filtered),
             'pool' => $pool->count(),
+            'relaxed' => $relaxed,
         ];
     }
 
@@ -157,7 +172,7 @@ final class TutorSearchService
     {
         return array_values(array_filter($tutors, function (array $t) use ($c): bool {
             // Subject is a hard filter: a Hindi tutor must not answer a Maths query.
-            if ($c->subject !== null && ! $this->listMatch($t['subjects'] ?? [], $c->subject)) {
+            if ($c->subject !== null && ! $this->subjectMatch($t['subjects'] ?? [], $c->subject)) {
                 return false;
             }
             // Budget: exclude only tutors whose known minimum fee exceeds the cap.
@@ -173,6 +188,22 @@ final class TutorSearchService
 
             return true;
         }));
+    }
+
+    /**
+     * Match a subject against its whole alias set. The DB stores "Maths" while
+     * the normalizer canonicalises to "Mathematics"; comparing only the
+     * canonical form matched nothing.
+     */
+    private function subjectMatch(array $haystack, string $subject): bool
+    {
+        foreach (SubjectNormalizer::searchTerms($subject) as $term) {
+            if ($this->listMatch($haystack, $term)) {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     private function listMatch(array $haystack, string $needle): bool

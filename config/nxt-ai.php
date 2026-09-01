@@ -19,11 +19,19 @@ return [
     |--------------------------------------------------------------------------
     | Falls back to the app-wide services.openai.model so a single env drives it.
     */
+    // Dedicated key so the assistant can be billed/rotated separately;
+    // falls back to the app-wide key when unset.
+    'api_key' => env('OPENAI_API_KEY_NXT_AI', env('OPENAI_API_KEY')),
     'model' => env('NXT_AI_MODEL', env('OPENAI_MODEL', 'gpt-5-mini')),
+    'reasoning_effort' => env('NXT_AI_REASONING_EFFORT', 'low'),
     'max_tool_rounds' => (int) env('NXT_AI_MAX_TOOL_ROUNDS', 4),
-    'max_output_tokens' => (int) env('NXT_AI_MAX_OUTPUT_TOKENS', 700),
+    // Must cover hidden reasoning tokens too, or the turn returns empty.
+    'max_output_tokens' => (int) env('NXT_AI_MAX_OUTPUT_TOKENS', 1600),
     'connect_timeout' => (int) env('NXT_AI_CONNECT_TIMEOUT', 10),
     'request_timeout' => (int) env('NXT_AI_REQUEST_TIMEOUT', 60),
+    // Must exceed max_tool_rounds x request_timeout, or PHP kills the
+    // request mid-turn and the browser sees a 500.
+    'max_execution_time' => (int) env('NXT_AI_MAX_EXECUTION_TIME', 120),
     'daily_call_limit' => (int) env('NXT_AI_DAILY_LIMIT', 400),
 
     /*
@@ -33,6 +41,17 @@ return [
     */
     'max_results' => (int) env('NXT_AI_MAX_RESULTS', 6),
     'default_recommendations' => 3,
+
+    /*
+    |--------------------------------------------------------------------------
+    | Free turns before WhatsApp handoff
+    |--------------------------------------------------------------------------
+    | The assistant is a lead-intake funnel, not an unlimited chatbot. After
+    | this many questions the conversation is handed to a human on WhatsApp.
+    | Enforced server-side (before OpenAI is called), so it also caps spend.
+    */
+    'free_turns' => (int) env('NXT_AI_FREE_TURNS', 4),
+    'whatsapp_number' => env('NXT_AI_WHATSAPP_NUMBER'),
 
     /*
     |--------------------------------------------------------------------------

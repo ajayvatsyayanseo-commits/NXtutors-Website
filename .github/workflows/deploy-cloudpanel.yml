@@ -215,6 +215,34 @@ jobs:
           DEMO_COMMAND_CENTER_SUBSCRIPTION_PAID_STATUS: ${{ vars.DEMO_COMMAND_CENTER_SUBSCRIPTION_PAID_STATUS }}
           DEMO_COMMAND_CENTER_SUBSCRIPTION_TYPE: ${{ vars.DEMO_COMMAND_CENTER_SUBSCRIPTION_TYPE }}
           NXT_AI_FUNCTION_URL: ${{ secrets.NXT_AI_FUNCTION_URL }}
+          # Ask NXT AI (in-app OpenAI agent). The key is optional: when unset the
+          # module falls back to OPENAI_API_KEY above. Unset vars are omitted from
+          # .env entirely, so config/nxt-ai.php defaults apply.
+          OPENAI_API_KEY_NXT_AI: ${{ secrets.OPENAI_API_KEY_NXT_AI }}
+          # Kill switch. Accepts either a variable or a secret: the environment is
+          # at GitHub's 100-variable cap, and secrets have their own quota, so this
+          # can still be set when no variable slot is free. Unset = enabled (the
+          # config/nxt-ai.php default).
+          NXT_AI_ENABLED: ${{ vars.NXT_AI_ENABLED || secrets.NXT_AI_ENABLED }}
+          NXT_AI_MODEL: ${{ vars.NXT_AI_MODEL }}
+          NXT_AI_REASONING_EFFORT: ${{ vars.NXT_AI_REASONING_EFFORT }}
+          NXT_AI_MAX_TOOL_ROUNDS: ${{ vars.NXT_AI_MAX_TOOL_ROUNDS }}
+          NXT_AI_MAX_OUTPUT_TOKENS: ${{ vars.NXT_AI_MAX_OUTPUT_TOKENS }}
+          NXT_AI_CONNECT_TIMEOUT: ${{ vars.NXT_AI_CONNECT_TIMEOUT }}
+          NXT_AI_REQUEST_TIMEOUT: ${{ vars.NXT_AI_REQUEST_TIMEOUT }}
+          NXT_AI_MAX_EXECUTION_TIME: ${{ vars.NXT_AI_MAX_EXECUTION_TIME }}
+          NXT_AI_MAX_RESULTS: ${{ vars.NXT_AI_MAX_RESULTS }}
+          NXT_AI_DAILY_LIMIT: ${{ vars.NXT_AI_DAILY_LIMIT }}
+          NXT_AI_LOG_CONTENT: ${{ vars.NXT_AI_LOG_CONTENT }}
+          NXT_AI_RATE_PER_MINUTE: ${{ vars.NXT_AI_RATE_PER_MINUTE }}
+          NXT_AI_RATE_GUEST_PER_DAY: ${{ vars.NXT_AI_RATE_GUEST_PER_DAY }}
+          NXT_AI_RATE_USER_PER_DAY: ${{ vars.NXT_AI_RATE_USER_PER_DAY }}
+          NXT_AI_CONFIRMATION_TTL: ${{ vars.NXT_AI_CONFIRMATION_TTL }}
+          NXT_AI_FREE_TURNS: ${{ vars.NXT_AI_FREE_TURNS }}
+          NXT_AI_WHATSAPP_NUMBER: ${{ vars.NXT_AI_WHATSAPP_NUMBER }}
+          NXT_AI_HISTORY_MESSAGES: ${{ vars.NXT_AI_HISTORY_MESSAGES }}
+          NXT_AI_MESSAGE_MAX_CHARS: ${{ vars.NXT_AI_MESSAGE_MAX_CHARS }}
+          NXT_AI_GUEST_RETENTION_DAYS: ${{ vars.NXT_AI_GUEST_RETENTION_DAYS }}
           NXT_FACEBOOK: ${{ vars.NXT_FACEBOOK }}
           NXT_INSTAGRAM: ${{ vars.NXT_INSTAGRAM }}
           NXT_LINKEDIN: ${{ vars.NXT_LINKEDIN }}
@@ -269,6 +297,16 @@ jobs:
               'DEMO_COMMAND_CENTER_SUBSCRIPTION_PAID_STATUS',
               'DEMO_COMMAND_CENTER_SUBSCRIPTION_TYPE',
               'NXT_AI_FUNCTION_URL',
+              'OPENAI_API_KEY_NXT_AI', 'NXT_AI_ENABLED', 'NXT_AI_MODEL',
+              'NXT_AI_REASONING_EFFORT', 'NXT_AI_MAX_TOOL_ROUNDS',
+              'NXT_AI_MAX_OUTPUT_TOKENS', 'NXT_AI_CONNECT_TIMEOUT',
+              'NXT_AI_REQUEST_TIMEOUT', 'NXT_AI_MAX_EXECUTION_TIME',
+              'NXT_AI_MAX_RESULTS', 'NXT_AI_DAILY_LIMIT', 'NXT_AI_LOG_CONTENT',
+              'NXT_AI_RATE_PER_MINUTE', 'NXT_AI_RATE_GUEST_PER_DAY',
+              'NXT_AI_RATE_USER_PER_DAY', 'NXT_AI_CONFIRMATION_TTL',
+              'NXT_AI_FREE_TURNS', 'NXT_AI_WHATSAPP_NUMBER',
+              'NXT_AI_HISTORY_MESSAGES', 'NXT_AI_MESSAGE_MAX_CHARS',
+              'NXT_AI_GUEST_RETENTION_DAYS',
               'NXT_FACEBOOK', 'NXT_INSTAGRAM', 'NXT_LINKEDIN', 'NXT_GOOGLE_BUSINESS',
               'VITE_APP_NAME',
           )
@@ -394,6 +432,11 @@ jobs:
           test -w bootstrap/cache
           "$php_binary" artisan optimize:clear
           "$php_binary" artisan migrate --force --path=packages/nxtutors/demo-command-center-adapter/database/migrations
+          # Ask NXT AI tables. The migrations live under app/NxtAi and are
+          # registered by NxtAiServiceProvider::loadMigrationsFrom, but the
+          # --path above scopes migrate to one package, so they need their own
+          # run or the chat 500s on every request with "table not found".
+          "$php_binary" artisan migrate --force --path=app/NxtAi/Database/Migrations
           "$php_binary" artisan storage:link || true
           "$php_binary" artisan config:cache
           "$php_binary" artisan view:cache
