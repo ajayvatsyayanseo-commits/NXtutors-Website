@@ -38,6 +38,51 @@ class AppServiceProvider extends ServiceProvider
 
         View::share('setting', $setting);
 
+        /*
+         * Asset cache-buster, shared so every view has it.
+         *
+         * It used to be computed inside include/header.blade.php. An included
+         * Blade view has its own scope, so $nxtAssetV never reached the views
+         * doing the including: home.blade.php and tutor/show.blade.php both
+         * link home.css with "?v={{ $nxtAssetV ?? 1 }}", which silently
+         * resolved to the literal 1. home.css therefore never busted and edits
+         * to it were served from cache indefinitely.
+         *
+         * Newest mtime across the folder, so touching any stylesheet busts them
+         * all - a rule moving between files cannot leave a stale pair behind.
+         */
+        View::share('nxtAssetV', (static function (): string {
+            $newest = 0;
+            foreach (glob(public_path('frount/assets/css/*.css')) ?: [] as $file) {
+                $newest = max($newest, (int) @filemtime($file));
+            }
+
+            return (string) ($newest ?: 1);
+        })());
+
+        /*
+         * Asset cache-buster, shared so every view has it.
+         *
+         * It used to be computed inside include/header.blade.php. An included
+         * Blade view has its own scope, so `$nxtAssetV` never reached the views
+         * doing the including: home.blade.php and tutor/show.blade.php both link
+         * home.css with `?v={{ $nxtAssetV ?? 1 }}`, which silently resolved to
+         * the literal 1. home.css therefore never busted, and edits to it were
+         * served from cache indefinitely.
+         *
+         * Newest mtime across the folder, so touching any stylesheet busts them
+         * all - a rule moving between files cannot leave a stale pair behind.
+         */
+        View::share('nxtAssetV', (static function (): string {
+            $files = glob(public_path('frount/assets/css/*.css')) ?: [];
+            $newest = 0;
+            foreach ($files as $file) {
+                $newest = max($newest, (int) @filemtime($file));
+            }
+
+            return (string) ($newest ?: 1);
+        })());
+
         RateLimiter::for('ip_visit_limit', function (Request $request) {
             return Limit::perMinute(10)->by($request->ip());
         });

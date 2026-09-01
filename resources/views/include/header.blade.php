@@ -52,7 +52,8 @@
        stale copy would otherwise mix old chrome with new pages. Keyed on the
        design system's mtime, which changes on every deploy that touches it. --}}
   @php
-    $nxtAssetV = @filemtime(base_path('public/frount/assets/css/nxt-ds.css')) ?: '1';
+    // Shared by AppServiceProvider so includes and their parents agree.
+    $nxtAssetV = $nxtAssetV ?? '1';
   @endphp
 
   <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/styles.css?v={{ $nxtAssetV }}" />

@@ -342,6 +342,14 @@
     var NS = 'http://www.w3.org/2000/svg';
     var svg = document.createElementNS(NS, 'svg');
     svg.setAttribute('viewBox', '0 0 24 24');
+    // Sized on the element, not only in CSS. An SVG with just a viewBox has no
+    // intrinsic size, so if the stylesheet is stale or missing it expands to
+    // fill its container and swallows the page.
+    svg.setAttribute('width', '18');
+    svg.setAttribute('height', '18');
+    svg.style.width = '18px';
+    svg.style.height = '18px';
+    svg.style.flex = '0 0 auto';
     svg.setAttribute('fill', 'currentColor');
     svg.setAttribute('aria-hidden', 'true');
     var path = document.createElementNS(NS, 'path');
