@@ -22,7 +22,22 @@ return [
     // Dedicated key so the assistant can be billed/rotated separately;
     // falls back to the app-wide key when unset.
     'api_key' => env('OPENAI_API_KEY_NXT_AI', env('OPENAI_API_KEY')),
-    'model' => env('NXT_AI_MODEL', env('OPENAI_MODEL', 'gpt-5-mini')),
+    /*
+    | The fallback chain ends at a literal because a bad value here takes the
+    | whole feature down with a 400 and no visible reason: production ran with
+    | OPENAI_MODEL="gpt-" (a truncated GitHub Actions variable) and every chat
+    | answered "I couldn't complete that just now". A model id that cannot be
+    | one is ignored rather than sent, so a typo degrades to the default
+    | instead of an outage. Real ids look like gpt-4o-mini / gpt-5-mini / o3.
+    */
+    'model' => (static function (): string {
+        $default = 'gpt-5-mini';
+        $model = trim((string) env('NXT_AI_MODEL', env('OPENAI_MODEL', $default)));
+
+        return preg_match('/^[a-z][a-z0-9]*(?:[.\-][a-z0-9]+)+$/i', $model) === 1
+            ? $model
+            : $default;
+    })(),
     'reasoning_effort' => env('NXT_AI_REASONING_EFFORT', 'low'),
     'max_tool_rounds' => (int) env('NXT_AI_MAX_TOOL_ROUNDS', 4),
     // Must cover hidden reasoning tokens too, or the turn returns empty.
