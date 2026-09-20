@@ -264,6 +264,12 @@ public function cashfreeWebhook(Request $request)
         'order_id' => $request->input('data.order.order_id'),
     ]);
 
+    // A package payment is the dashboard's money-in path: it credits the family
+    // wallet through the ledger, keyed on Cashfree's own event id so a
+    // redelivery credits once. Anything else on this endpoint is a subscription
+    // payment and is left to the pricing flow.
+    app(\App\Nxt\Dashboard\Services\Purchases::class)->fromCashfreeWebhook($request->all());
+
     return response()->json([
         'message' => 'Webhook received'
     ], 200);

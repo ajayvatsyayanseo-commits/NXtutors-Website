@@ -11,6 +11,7 @@ use App\Http\Controllers\SuperAdmin\CityAreaController;
 
 use App\Http\Controllers\SuperAdmin\PageController;
 use App\Http\Controllers\RegisterController;
+use App\Nxt\Dashboard\Http\Controllers\DashboardEntryController;
 use App\Http\Controllers\OrderController;
 
 use App\Http\Controllers\SuperAdmin\DashboardController;
@@ -194,7 +195,9 @@ Route::get('{slug}/teacher/{slug1}/{id}', [HomeController::class, 'singleteacher
 
 Route::middleware([TeacherMiddleware::class])->group(function () {
     Route::prefix('teacher')->name('teacher.')->group(function () {
-        Route::get('/dashboard', [RegisterController::class, 'teacherdashboard'])->name('dashboard');
+        // Hands off to the Next.js dashboard when NXT_DASHBOARD_URL is set, and
+        // renders the old Blade view when it is not. See DashboardEntryController.
+        Route::get('/dashboard', [DashboardEntryController::class, 'tutor'])->name('dashboard');
 
          Route::get('/my-plan', [PricingController::class, 'teacherMyPlan'])->name('my-plan');
 
@@ -225,7 +228,7 @@ Route::post('/cartlist', [OrderController::class, 'updateCart'])->name('cartlist
 
 Route::middleware([UserMiddleware::class])->group(function () {
     Route::prefix('user')->name('user.')->group(function () {
-        Route::get('/dashboard', [RegisterController::class, 'dashboard'])->name('dashboard');
+        Route::get('/dashboard', [DashboardEntryController::class, 'student'])->name('dashboard');
 
          Route::get('/my-plan', [PricingController::class, 'studentMyPlan'])->name('my-plan');
 

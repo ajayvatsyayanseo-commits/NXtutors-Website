@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\NxtAi\Http\Controllers;
 
 use App\Models\Setting;
+use App\Nxt\Dashboard\Services\Entitlements;
 use App\NxtAi\Agent\NxtAiAgent;
 use App\NxtAi\Models\NxtAiConversation;
 use App\NxtAi\Models\NxtAiMessage;
@@ -30,6 +31,7 @@ class ChatController
     public function __construct(
         private readonly NxtAiAgent $agent,
         private readonly ConversationService $conversations,
+        private readonly Entitlements $entitlements,
     ) {
     }
 
@@ -79,9 +81,31 @@ class ChatController
             return $handoff;
         }
 
+        $requestId = (string) Str::uuid();
+
+        // The entitlement meter, charged before the model call and given back
+        // if the generation fails. `ai.messages` is the headline meter on the
+        // pricing page and nothing in production consumed it, so every account
+        // had unlimited AI and the upgrade prompt never fired. Guests are not
+        // metered here: the free-turn handoff above is their ceiling.
+        $charge = null;
+
+        if ($userId !== null) {
+            $charge = $this->entitlements->consume(
+                $userId,
+                Entitlements::AI_MESSAGES,
+                'ai-message:'.$requestId,
+                referenceType: 'conversation',
+                referenceId: $conversation->uid,
+            );
+
+            if ($charge === null) {
+                return $this->outOfCredits($userId, $conversation->uid);
+            }
+        }
+
         $this->conversations->recordUser($conversation, $userMessage);
 
-        $requestId = (string) Str::uuid();
         $startedAt = microtime(true);
 
         $result = $this->agent->run($userMessage, $history['items'], $context);
@@ -91,6 +115,11 @@ class ChatController
         $this->telemetry($requestId, $conversation->uid, $result, $latencyMs);
 
         if (! $result->ok) {
+            // A failed generation costs the family nothing.
+            if ($charge !== null) {
+                $this->entitlements->refund($charge, 'generation_failed');
+            }
+
             return $this->fail($result->reply, $result->httpStatus ?? 503, $conversation->uid);
         }
 
@@ -226,6 +255,48 @@ class ChatController
             'sources' => [],
             'meta' => ['request_id' => null, 'has_more' => false, 'handoff' => true],
         ]);
+    }
+
+    /**
+     * The meter said no. The upgrade is named inline, at the moment it blocks,
+     * with the cheapest plan that would have allowed the message — never as a
+     * banner and never before the block.
+     */
+    private function outOfCredits(string $userId, string $conversationUid): JsonResponse
+    {
+        $gate = $this->entitlements->check($userId, Entitlements::AI_MESSAGES);
+
+        $daily = $gate['daily_limit'] !== null && $gate['daily_remaining'] === 0 && ($gate['remaining'] ?? 1) > 0;
+
+        return response()->json([
+            'success' => false,
+            'conversation_id' => $conversationUid,
+            'reply' => $daily
+                ? 'You have used today\'s free AI questions. They reset tomorrow morning.'
+                : 'You have used all your AI credits for this month.',
+            'blocks' => array_values(array_filter([
+                $gate['upgrade_plan'] ? [
+                    'type' => 'upgrade',
+                    'title' => 'Keep asking with '.$gate['upgrade_plan'],
+                    'message' => 'Your plan includes '.($gate['limit'] ?? 0).' AI messages a month.',
+                    'plan' => $gate['upgrade_plan'],
+                    'cta' => 'See plans',
+                    'url' => '/pricing',
+                ] : null,
+            ])),
+            'quick_replies' => [],
+            'sources' => [],
+            'meta' => [
+                'request_id' => null,
+                'has_more' => false,
+                'meter' => [
+                    'feature' => $gate['feature'],
+                    'used' => $gate['used'],
+                    'limit' => $gate['limit'],
+                    'reset_at' => $gate['reset_at'],
+                ],
+            ],
+        ], 402);
     }
 
     /** Layered rate limit: per-minute burst + per-day cap, keyed by user or guest. */

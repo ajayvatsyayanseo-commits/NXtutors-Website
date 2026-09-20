@@ -28,13 +28,15 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::table('register', function (Blueprint $table): void {
-            $table->string('phone_hash', 32)->nullable()->after('phone');
-            // Not unique: two rows can legitimately carry one number (a parent
-            // who also registered as a tutor), and a unique index would make
-            // that an insert failure on a live signup form.
-            $table->index('phone_hash', 'register_phone_hash_index');
-        });
+        if (Schema::hasTable('register')) {
+            Schema::table('register', function (Blueprint $table): void {
+                $table->string('phone_hash', 32)->nullable()->after('phone');
+                // Not unique: two rows can legitimately carry one number (a parent
+                // who also registered as a tutor), and a unique index would make
+                // that an insert failure on a live signup form.
+                $table->index('phone_hash', 'register_phone_hash_index');
+            });
+        }
 
         Schema::table('demo_leads', function (Blueprint $table): void {
             $table->string('phone_hash', 32)->nullable()->after('phone');
@@ -44,10 +46,12 @@ return new class extends Migration
 
     public function down(): void
     {
-        Schema::table('register', function (Blueprint $table): void {
-            $table->dropIndex('register_phone_hash_index');
-            $table->dropColumn('phone_hash');
-        });
+        if (Schema::hasTable('register')) {
+            Schema::table('register', function (Blueprint $table): void {
+                $table->dropIndex('register_phone_hash_index');
+                $table->dropColumn('phone_hash');
+            });
+        }
 
         Schema::table('demo_leads', function (Blueprint $table): void {
             $table->dropIndex('demo_leads_phone_hash_index');
