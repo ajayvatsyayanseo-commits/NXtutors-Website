@@ -411,7 +411,7 @@ class StudentController extends DashboardController
 
     public function tutorProfile(Request $request, string $tutorUserId): JsonResponse
     {
-        $tutor = Register::where('user_id', $tutorUserId)->where('join_as', 'teacher')->first();
+        $tutor = Register::where('user_id', $tutorUserId)->where('join_as', 'teacher')->publiclyVisible()->first();
 
         if (! $tutor) {
             return $this->fail('not_found', 'That tutor does not exist.', 404);

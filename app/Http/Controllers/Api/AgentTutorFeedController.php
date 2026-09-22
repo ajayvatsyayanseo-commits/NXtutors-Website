@@ -85,7 +85,7 @@ final class AgentTutorFeedController extends Controller
     {
         return Register::query()
             ->where('join_as', 'teacher')
-            ->where('status', 't')
+            ->publiclyVisible()
             ->whereNotNull('user_id')
             ->where('user_id', '<>', '')
             ->with([

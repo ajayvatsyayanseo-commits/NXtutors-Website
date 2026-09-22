@@ -46,7 +46,72 @@ class Register extends Model
          'profile_desc',
          'pro_desc'
     ];
+    // hidden_until, deletion_requested_at, delete_after and deleted_at are
+    // deliberately not fillable: only App\Services\AccountLifecycle sets them.
  public $timestamps = false;
+
+    /** "Hidden until I turn it back on" — stored as a date nobody will reach. */
+    public const HIDDEN_INDEFINITELY = '9999-12-31 00:00:00';
+
+    protected $casts = [
+        'hidden_until' => 'datetime',
+        'deletion_requested_at' => 'datetime',
+        'delete_after' => 'datetime',
+        'deleted_at' => 'datetime',
+    ];
+
+    /**
+     * Tutors that may appear on any public surface: listings, profile pages,
+     * the sitemap, search, the AI assistant and the agent feeds. Every one of
+     * those must go through this (or visibleSql() for raw queries) so a hidden
+     * or deleted profile disappears everywhere at once.
+     */
+    public function scopePubliclyVisible($query, string $table = 'register')
+    {
+        $query->where("$table.status", 't');
+
+        // The auto-deploy does not run migrations, so code can briefly be live
+        // before the columns exist. Fall back to the old rule rather than 500.
+        if (! self::hasVisibilityColumns()) {
+            return $query;
+        }
+
+        return $query->whereNull("$table.deleted_at")
+            ->where(fn ($q) => $q->whereNull("$table.hidden_until")->orWhere("$table.hidden_until", '<=', now()));
+    }
+
+    /** Checked once per application instance (per request, per test). */
+    private static function hasVisibilityColumns(): bool
+    {
+        $key = 'register.visibility_columns';
+        if (! app()->bound($key)) {
+            app()->instance($key, \Illuminate\Support\Facades\Schema::hasColumn('register', 'hidden_until')
+                && \Illuminate\Support\Facades\Schema::hasColumn('register', 'deleted_at'));
+        }
+
+        return app($key);
+    }
+
+    /** The same rule for DB::table() queries. */
+    public static function applyPublicVisibility($query, string $table = 'register')
+    {
+        return (new static)->scopePubliclyVisible($query, $table);
+    }
+
+    public function isHidden(): bool
+    {
+        return $this->hidden_until !== null && $this->hidden_until->isFuture();
+    }
+
+    public function isHiddenIndefinitely(): bool
+    {
+        return $this->isHidden() && $this->hidden_until->year >= 9999;
+    }
+
+    public function isDeletionPending(): bool
+    {
+        return $this->delete_after !== null && $this->deleted_at === null;
+    }
 
  public function reviews()
 {

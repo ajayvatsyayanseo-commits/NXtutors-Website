@@ -77,7 +77,12 @@ class ResolveDashboardIdentity
     {
         $register = Register::where('user_id', $userId)->first();
 
-        return $register ? DashboardIdentity::fromRegister($register) : null;
+        // An erased account is gone, whatever session or token still names it.
+        if (! $register || $register->deleted_at !== null) {
+            return null;
+        }
+
+        return DashboardIdentity::fromRegister($register);
     }
 
     private function deny(string $code, string $message, int $status): JsonResponse

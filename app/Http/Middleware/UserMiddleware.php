@@ -11,6 +11,14 @@ class UserMiddleware
     {
         if (session()->has('userid')) {
             $user = Register::where('user_id', session()->get('userid'))->first();
+
+            // An erased account is signed out, whatever session still names it.
+            if ($user && $user->deleted_at !== null) {
+                session()->flush();
+
+                return redirect('/login');
+            }
+
             view()->share('user', $user);
         }
 

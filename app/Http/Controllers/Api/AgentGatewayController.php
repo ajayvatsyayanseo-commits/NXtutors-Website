@@ -97,6 +97,7 @@ final class AgentGatewayController extends Controller
         $tutor = Register::query()
             ->where('user_id', $ref)
             ->where('join_as', 'teacher')
+            ->publiclyVisible()
             ->first();
 
         if ($tutor === null) {
@@ -163,6 +164,7 @@ final class AgentGatewayController extends Controller
         $tutor = Register::query()
             ->where('user_id', $ref)
             ->where('join_as', 'teacher')
+            ->publiclyVisible()
             ->first();
 
         if ($tutor === null) {

@@ -81,6 +81,22 @@ final class DashboardIdentity
             // browse, and the form that asks them for a review.
             'public_url' => $this->isTutor() ? $r->profileUrl() : null,
             'review_url' => $this->isTutor() ? route('teacher', $r->user_id) : null,
+            'account' => $this->accountState(),
+        ];
+    }
+
+    /** Hidden or not, and whether a deletion is counting down. */
+    public function accountState(): array
+    {
+        $r = $this->register;
+
+        return [
+            'hidden' => $r->isHidden(),
+            'hidden_until' => $r->isHidden() && ! $r->isHiddenIndefinitely() ? $r->hidden_until?->toIso8601String() : null,
+            'hidden_indefinitely' => $r->isHiddenIndefinitely(),
+            'deletion_pending' => $r->isDeletionPending(),
+            'delete_after' => $r->isDeletionPending() ? $r->delete_after?->toIso8601String() : null,
+            'has_password' => (string) $r->password !== '',
         ];
     }
 }

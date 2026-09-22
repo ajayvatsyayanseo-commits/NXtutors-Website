@@ -237,7 +237,7 @@ public function show($slug)
                 );
             })
             ->where('register.join_as', 'teacher')
-            ->where('register.status', 't')
+            ->publiclyVisible('register')
             ->whereNotNull('register.user_id')
             ->with([
                 'courses' => function ($q) {

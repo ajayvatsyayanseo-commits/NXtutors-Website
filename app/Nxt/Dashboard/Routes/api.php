@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use App\Nxt\Dashboard\Http\Controllers\AccountController;
 use App\Nxt\Dashboard\Http\Controllers\MeController;
 use App\Nxt\Dashboard\Http\Controllers\MessageController;
 use App\Nxt\Dashboard\Http\Controllers\ProfileController;
@@ -45,6 +46,11 @@ Route::prefix('api/dashboard/v1')
             Route::patch('/profile', [ProfileController::class, 'update']);
             Route::post('/profile/avatar', [ProfileController::class, 'avatar']);
             Route::post('/profile/password', [ProfileController::class, 'password']);
+
+            // Hide profile (tutors) and delete account (everyone).
+            Route::post('/account/visibility', [AccountController::class, 'visibility']);
+            Route::post('/account/deletion', [AccountController::class, 'requestDeletion']);
+            Route::delete('/account/deletion', [AccountController::class, 'cancelDeletion']);
             Route::get('/plans', [ProfileController::class, 'plans']);
 
             // Messages: both roles use the same three endpoints, and the

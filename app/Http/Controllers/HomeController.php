@@ -239,7 +239,7 @@ Product::where('status', 't')
 
     // Tutors
  Register::where('join_as', 'teacher')
-    ->where('status', 't')
+    ->publiclyVisible()
     ->chunk(500, function ($teachers) use (&$urls) {
         foreach ($teachers as $t) {
             if (!$t->user_id) {
@@ -345,6 +345,7 @@ private function getHomeReviews(int $limit = 12)
             );
         })
         ->where('tr.status', 't')
+        ->tap(fn ($q) => Register::applyPublicVisibility($q, 'teacher'))
         ->select([
             'tr.id',
             'tr.user_id as teacher_user_id',
@@ -738,7 +739,7 @@ private function baseTeacherQuery()
             );
         })
         ->where('register.join_as', 'teacher')
-        ->where('register.status', 't')
+        ->publiclyVisible('register')
         ->whereNotNull('register.user_id')
         ->with([
             'courses' => function ($q) {
@@ -872,7 +873,7 @@ public function cityAreaShow($citySlug, $areaSlug)
     ->get();
 
      $areaTutors = Register::where('join_as', 'teacher')
-        ->where('status', 't')
+        ->publiclyVisible()
         ->when(!empty($area->pincode), function($q) use ($area){
             $q->where('pincode', $area->pincode);
         })
@@ -886,7 +887,7 @@ public function cityAreaShow($citySlug, $areaSlug)
 
     if ($areaTutors->count() == 0) {
         $tutors = Register::where('join_as', 'teacher')
-            ->where('status', 't')
+            ->publiclyVisible()
             ->where('city', $city->city_name)   // ✅ register.city match
             ->orderByDesc('user_id')
             ->take(9)
@@ -988,7 +989,7 @@ public function cityAreaShow($citySlug, $areaSlug)
             );
         })
         ->where('register.join_as', 'teacher')
-        ->where('register.status', 't')
+        ->publiclyVisible('register')
         ->whereNotNull('register.user_id')
         ->with([
             'courses' => function ($q) {
@@ -1151,7 +1152,7 @@ public function cityAreaShow($citySlug, $areaSlug)
         ->from('register')
         ->where('user_id', $decodedUserId)
         ->where('join_as', 'teacher')
-        ->where('status', 't')
+        ->publiclyVisible()
         ->with([
             'courses' => function ($q) {
                 $q->select(['id','user_id','pid','cid','cat_id','sub_id'])
@@ -1237,7 +1238,7 @@ public function cityAreaShow($citySlug, $areaSlug)
               ->with(['board:id,cat_title','classCategory:id,cat_title','category:id,cat_title']);
         }])
         ->where('register.join_as', 'teacher')
-        ->where('register.status', 't')
+        ->publiclyVisible('register')
         ->where('register.city', $tutor->city)
         ->where('register.user_id', '!=', $tutor->user_id)
         ->orderByDesc('rr.reviews_count')
@@ -1363,7 +1364,7 @@ $realUserId = str_replace('-nxt', '', $decoded);
         ->from('register')
         ->where('user_id', $realUserId)
         ->where('join_as', 'teacher')
-        ->where('status', 't')
+        ->publiclyVisible()
         ->with([
             'courses' => function ($q) {
                 $q->select(['id','user_id','pid','cid','cat_id','sub_id'])
@@ -1449,7 +1450,7 @@ $realUserId = str_replace('-nxt', '', $decoded);
               ->with(['board:id,cat_title','classCategory:id,cat_title','category:id,cat_title']);
         }])
         ->where('register.join_as', 'teacher')
-        ->where('register.status', 't')
+        ->publiclyVisible('register')
         ->where('register.city', $tutor->city)
         ->where('register.user_id', '!=', $tutor->user_id)
         ->orderByDesc('rr.reviews_count')
@@ -1588,6 +1589,7 @@ private function tutorsListQuery(Request $request)
 {
     $q = Register::query()
         ->where('join_as', 'teacher')          // ✅ change if your role value different
+        ->publiclyVisible()
         ->orderByDesc('id')
         ->with(['courses.board','courses.category']); // optional if you have relations
 

@@ -42,7 +42,7 @@
 
     // One grouped query rather than a count per city.
     $tutorCounts = collect();
-    foreach (DB::table('register')->where('join_as', 'teacher')->where('status', 't')
+    foreach (\App\Models\Register::applyPublicVisibility(DB::table('register')->where('join_as', 'teacher'))
         ->select(DB::raw('city'), DB::raw('COUNT(*) as n'))->groupBy('city')->get() as $row) {
         $k = $keyOf($row->city);
         if ($k === '') {

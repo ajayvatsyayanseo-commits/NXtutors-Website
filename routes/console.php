@@ -60,6 +60,12 @@ Schedule::command('nxt-dashboard:reliability')
     ->dailyAt('03:30')
     ->withoutOverlapping(30);
 
+// Accounts whose owner asked for deletion and whose chosen delay (24h / 3 days
+// / 7 days) has passed. Ten minutes keeps "deleted after 24 hours" honest.
+Schedule::command('accounts:purge-deleted')
+    ->everyTenMinutes()
+    ->withoutOverlapping(10);
+
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->purpose('Display an inspiring quote');

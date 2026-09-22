@@ -147,7 +147,7 @@ final class TutorSearchService
         return Register::query()
             ->from('register')
             ->where('register.join_as', 'teacher')
-            ->where('register.status', 't')
+            ->publiclyVisible('register')
             ->leftJoinSub($ratings, 'r', function ($join) use ($collate): void {
                 $join->on(
                     DB::raw('register.user_id'.$collate),

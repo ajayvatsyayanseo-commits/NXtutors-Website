@@ -180,7 +180,7 @@ class TutorReviewController extends Controller
     {
         return Register::where('user_id', $userId)
             ->where('join_as', 'teacher')
-            ->where('status', 't')
+            ->publiclyVisible()
             ->first();
     }
 
