@@ -11,7 +11,6 @@ use App\Models\Wish;
 use App\Models\Cart;
 use App\Models\Order;
 use App\Models\Category;
-use App\Models\Teacher_review;
 use App\Models\Teacher_courses;
 use App\Models\Student_Enquiry_Managment;
 use App\Models\Student_Enquiry_Course;
@@ -34,12 +33,6 @@ class RegisterController extends Controller
                  return view('super.user.index', compact('pages'));  
     }
   
-  public function teacherreviewlist()
-    {
-     $pages = Teacher_review::all();  
-      return view('super.user.reviewindex', compact('pages'));  
-    }
-
     public function indexteacher()
     {
         $pages = Register::where('join_as', 'teacher')->orderBy('id', 'DESC')->get();
@@ -144,29 +137,8 @@ public function teacherGenerateStore(Request $request, OpenAiTeacherGenerator $g
                 'profile_desc' => $profileDesc,
             ]);
 
-            // ✅ Reviews insert (30)
-            $reviewRows = [];
-            foreach (array_slice(($ai['reviews'] ?? []), 0, 30) as $r) {
-
-    $reviewRows[] = [
-        'name' => $r['reviewer_name'] ?? 'Student',
-        'user_id' => (string)$userId,
-
-        // ✅ FORCE numeric values
-        'rating' => (string)($r['rating'] ?? 5),
-        'expertise' => $this->normalizeRating($r['expertise'] ?? 5),
-        'patience' => $this->normalizeRating($r['patience'] ?? 5),
-        'reliability' => $this->normalizeRating($r['reliability'] ?? 5),
-        'communication' => $this->normalizeRating($r['communication'] ?? 5),
-
-        'message' => $r['message'] ?? '',
-        'date' => now()->format('Y-m-d'),
-        'status' => 't',
-    ];
-}
-            if (!empty($reviewRows)) {
-                Teacher_review::insert($reviewRows);
-            }
+            // No reviews are created here: they come only from real
+            // students and parents through the verified review form.
 
             // ✅ Courses insert (subjects × boards)
             $courseRows = [];
@@ -217,34 +189,6 @@ private function safeJsonDecode(string $text)
     }
 
     return null;
-}
-
-private function normalizeRating($value): int
-{
-    if (is_numeric($value)) {
-        return max(1, min(5, (int)$value));
-    }
-
-    $map = [
-        'poor' => 2,
-        'average' => 3,
-        'good' => 4,
-        'very good' => 5,
-        'excellent' => 5,
-        'outstanding' => 5,
-        'very patient' => 5,
-        'patient' => 4,
-        'moderately patient' => 3,
-        'reliable' => 4,
-        'always reliable' => 5,
-        'generally reliable' => 4,
-        'clear communication' => 5,
-        'good communication' => 4,
-        'excellent communication' => 5,
-    ];
-
-    $key = strtolower(trim($value));
-    return $map[$key] ?? 5;
 }
 
 private function generateTutorAvatar(): ?string

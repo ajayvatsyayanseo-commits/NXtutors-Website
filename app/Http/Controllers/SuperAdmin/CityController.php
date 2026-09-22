@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 use App\Models\City;
-use App\Models\Teacher_review;
 use Illuminate\Support\Facades\Storage;
 
 class CityController extends Controller
@@ -21,21 +20,6 @@ class CityController extends Controller
         return view('super.city.add');
     }
 
-    public function teacherreviewlist()
-    {
-     $pages = Teacher_review::all();  
-      return view('super.user.reviewindex', compact('pages'));  
-    }
-    public function teacherfeedback(Request $request){
-
-        $data = $request->all();
-        $data['date'] = date('Y-m-d');
-        $data['status'] = 't';
-        Teacher_review::create($data);
-
-        return response()->json(['message' => '<div class="alert alert-success">Thanks for share your feedback.</div>']);
-
-    }
     public function store(Request $request)
   {
     $request->validate([

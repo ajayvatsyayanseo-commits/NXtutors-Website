@@ -86,6 +86,10 @@ class TutorDirectory
                 'communication' => (float) $r->communication,
                 'message' => $r->message,
                 'date' => $r->date,
+                'photo_url' => $r->photoUrl(),
+                'email_verified' => $r->isEmailVerified(),
+                'context' => $r->contextLine() ?: null,
+                'tags' => $r->tagLabels(),
             ])->all(),
         ];
     }

@@ -386,6 +386,16 @@ html {
   .nxscroll__card{flex:0 0 340px;max-width:340px;scroll-snap-align:start;padding:14px;}
   @media(max-width:640px){.nxscroll__card{flex-basis:82vw;max-width:82vw;}}
 
+  /* Review cards */
+  .nxrv__head{display:flex;gap:10px;align-items:center;}
+  .nxrv__avatar{width:44px;height:44px;border-radius:50%;object-fit:cover;flex:0 0 auto;border:1px solid rgba(148,163,184,.25);}
+  .nxrv__avatar--initials{display:grid;place-items:center;background:rgba(56,189,248,.16);color:#7dd3fc;font-weight:900;font-size:15px;}
+  .nxrv__verified{font-size:11px;font-weight:800;color:#34d399;margin-top:2px;}
+  .nxrv__tags{display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
+  .nxrv__tag{font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;border:1px solid rgba(148,163,184,.25);background:rgba(255,255,255,.05);}
+  .nxrv__tag b{margin-left:4px;opacity:.75;}
+  .nxrv__scores{display:flex;flex-wrap:wrap;gap:4px 12px;margin-top:10px;font-size:12px;opacity:.85;}
+
   /* ✅ Bottom sheet */
   .nxsheet__backdrop{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;z-index:2000;}
   .nxsheet{position:fixed;left:0;right:0;bottom:0;transform:translateY(100%);transition:transform .22s ease;z-index:2001;max-height:86vh;overflow:auto;border-top-left-radius:18px;border-top-right-radius:18px;}
@@ -627,6 +637,21 @@ html {
             </div>
           @endforeach
         </div>
+
+        @if(!empty($topTags))
+          <div class="nxrv__tags" style="margin-top:14px;">
+            <span class="nxmuted" style="font-size:12px;font-weight:800;">Families mention most:</span>
+            @foreach($topTags as $tagLabel => $tagCount)
+              <span class="nxrv__tag">{{ $tagLabel }} <b>{{ $tagCount }}</b></span>
+            @endforeach
+          </div>
+        @endif
+      </div>
+
+      <div style="margin-top:12px;">
+        <a class="nxreadmore" href="{{ route('teacher', $tutor->user_id) }}" rel="nofollow">
+          Taught by {{ $tutor->name }}? Write a review →
+        </a>
       </div>
     </section>
 
@@ -671,26 +696,62 @@ html {
         @if(!empty($reviews) && $reviews->count())
           <div class="nxscroll" style="margin-top:12px;">
             @foreach($reviews as $rev)
-              <div class="nxcard nxcard--soft nxscroll__card">
-                <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start;">
-                  <div class="nxk">{{ $rev->name ?? 'Parent' }}</div>
+              <article class="nxcard nxcard--soft nxscroll__card">
+                <div class="nxrv__head">
+                  @if($rev->photoUrl())
+                    <img class="nxrv__avatar" src="{{ $rev->photoUrl() }}" alt="{{ $rev->name }}" loading="lazy" width="44" height="44">
+                  @else
+                    <span class="nxrv__avatar nxrv__avatar--initials" aria-hidden="true">{{ $rev->initials() }}</span>
+                  @endif
+                  <div style="flex:1;min-width:0;">
+                    <div class="nxk">{{ $rev->name ?? 'Parent' }}</div>
+                    @if($rev->isEmailVerified())
+                      <div class="nxrv__verified">✓ Verified email</div>
+                    @endif
+                  </div>
                   @if(!empty($rev->rating)) <span class="nxchip">⭐ {{ $rev->rating }}/5</span> @endif
                 </div>
 
-                <div class="nxlead" style="margin-top:10px;">{{ $rev->message ?? '' }}</div>
+                @if($rev->contextLine())
+                  <div class="nxmuted" style="font-size:12px;margin-top:8px;">{{ $rev->contextLine() }}</div>
+                @endif
+
+                <div class="nxlead" style="margin-top:10px;white-space:pre-line;">{{ $rev->message ?? '' }}</div>
+
+                @if($rev->tagLabels())
+                  <div class="nxrv__tags" style="margin-top:10px;">
+                    @foreach($rev->tagLabels() as $tagLabel)
+                      <span class="nxrv__tag">{{ $tagLabel }}</span>
+                    @endforeach
+                  </div>
+                @endif
+
+                @if($rev->expertise || $rev->patience || $rev->reliability || $rev->communication)
+                  <div class="nxrv__scores">
+                    @foreach(\App\Support\ReviewOptions::SCORES as $scoreField => $scoreLabel)
+                      @if($rev->{$scoreField})
+                        <span>{{ $scoreLabel }} <b>{{ (float) $rev->{$scoreField} }}</b></span>
+                      @endif
+                    @endforeach
+                  </div>
+                @endif
 
                 <div class="nxdivider"></div>
 
                 <div class="nxmuted" style="font-size:12px;">
-                  @if(!empty($rev->date)) {{ $rev->date }} @endif
-                  @if(!empty($tutor->for_class)) • Class: {{ $tutor->for_class }} @endif
+                  @if(!empty($rev->date)) {{ rescue(fn () => \Illuminate\Support\Carbon::parse($rev->date)->format('M Y'), $rev->date, false) }} @endif
+                  @if($rev->duration) • Studied {{ \Illuminate\Support\Str::lower(\App\Support\ReviewOptions::label(\App\Support\ReviewOptions::DURATIONS, $rev->duration) ?? '') }} @endif
                 </div>
-              </div>
+              </article>
             @endforeach
           </div>
         @else
           <div class="nxlead" style="margin-top:10px;">No reviews available yet.</div>
         @endif
+
+        <a class="nxreadmore" style="margin-top:14px;" href="{{ route('teacher', $tutor->user_id) }}" rel="nofollow">
+          Write a review for {{ $tutor->name }} →
+        </a>
       </div>
     </div>
 

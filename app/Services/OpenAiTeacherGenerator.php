@@ -25,15 +25,16 @@ class OpenAiTeacherGenerator
 
         $tutor = $this->generateTutorJson($data);
 
-        // ✅ reviews (robust)
-        $reviews = $this->generateReviewsJson($data, $tutor);
-
         // ✅ avatar (gender-based)
         $avatarPath = $this->generateTutorAvatar($tutor['gender'] ?? null);
 
         return [
             'tutor'       => $tutor,
-            'reviews'     => $reviews,
+            // Reviews are no longer generated. A review must come from a real
+            // student or parent through the verified review form; invented
+            // ones mislead families and put the site's review markup at risk
+            // with Google. Callers still read this key, so it stays, empty.
+            'reviews'     => [],
             'avatar_path' => $avatarPath, // ✅ store this in DB
         ];
     }
@@ -127,77 +128,6 @@ Return ONLY JSON.";
     throw new \Exception("Tutor JSON could not generate unique name after retries.");
 }
 
-
-    /**
-     * ✅ Reviews JSON (30 total; safer 10+10+10)
-     * IMPORTANT: We return { "reviews": [...] } as JSON object.
-     */
-    private function generateReviewsJson(array $data, array $tutor): array
-    {
-        $all = [];
-
-        $boards = isset($data['boards']) ? implode(', ', (array)$data['boards']) : '';
-        $subject = $data['main_subject'] ?? 'subject';
-        $area = $data['area'] ?? '';
-        $city = $data['city'] ?? '';
-        $state = $data['state'] ?? '';
-        $forClass = $data['for_class'] ?? '';
-        $experience = $tutor['experience'] ?? '5 Years';
-        $tutorName = $tutor['name'] ?? 'Tutor';
-
-        foreach ([10, 10, 10] as $count) {
-
-            $prompt = "Generate {$count} unique SEO reviews.
-Return STRICT JSON in this exact shape:
-{ \"reviews\": [ ... ] }
-
-Tutor:
-name: {$tutorName}
-subject: {$subject}
-area: {$area}
-city: {$city}
-state: {$state}
-boards: {$boards}
-for_class: {$forClass}
-experience: {$experience}
-
-Rules:
-- Each review 35-55 words (short)
-- Natural Indian English (parents + students mix)
-- Include keywords naturally: 'home tutor in {$area}', '{$subject} tutor in {$city}', 'CBSE tutor'
-- No repetition
-Each review object keys exactly:
-reviewer_name, rating, expertise, patience, reliability, communication, message
-Return ONLY JSON.";
-
-            // ✅ JSON enforce + bigger tokens
-            $json = $this->chat($prompt, 3500, true);
-            $decoded = $this->safeJsonDecode($json);
-
-            $reviews = is_array($decoded) ? ($decoded['reviews'] ?? null) : null;
-
-            if (!is_array($reviews) || count($reviews) < 5) {
-                throw new \Exception("Reviews JSON invalid from AI. Raw: " . mb_substr($json, 0, 300));
-            }
-
-            foreach ($reviews as $r) {
-                if (!is_array($r)) continue;
-
-                // ✅ sanitize + defaults
-                $r['reviewer_name']  = (string)($r['reviewer_name'] ?? 'Student');
-                $r['rating']         = (float)($r['rating'] ?? 5);
-                $r['expertise']      = (float)($r['expertise'] ?? 9);
-                $r['patience']       = (float)($r['patience'] ?? 9);
-                $r['reliability']    = (float)($r['reliability'] ?? 9);
-                $r['communication']  = (float)($r['communication'] ?? 9);
-                $r['message']        = (string)($r['message'] ?? '');
-
-                $all[] = $r;
-            }
-        }
-
-        return array_slice($all, 0, 30);
-    }
 
     /**
      * ✅ Chat call

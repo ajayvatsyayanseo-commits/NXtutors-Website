@@ -4,7 +4,6 @@ namespace App\Jobs;
 
 use App\Models\TutorImportRow;
 use App\Models\Register;
-use App\Models\Teacher_review;
 use App\Models\Teacher_courses;
 use App\Services\OpenAiTeacherGenerator;
 use App\Services\Queue\AtomicImportClaim;
@@ -193,27 +192,8 @@ $reg = Register::create([
 ]);
 
 
-                // Reviews insert (30)
-                $reviewRows = [];
-                foreach (array_slice(($ai['reviews'] ?? []), 0, 30) as $r) {
-                    $reviewRows[] = [
-                        'name' => $r['reviewer_name'] ?? 'Student',
-                        'user_id' => (string)$userId,
-
-                        'rating' => (string)($r['rating'] ?? 5),
-                        'expertise' => $this->normalizeRating($r['expertise'] ?? 5),
-                        'patience' => $this->normalizeRating($r['patience'] ?? 5),
-                        'reliability' => $this->normalizeRating($r['reliability'] ?? 5),
-                        'communication' => $this->normalizeRating($r['communication'] ?? 5),
-
-                        'message' => $r['message'] ?? '',
-                        'date' => now()->format('Y-m-d'),
-                        'status' => 't',
-                    ];
-                }
-                if (!empty($reviewRows)) {
-                    Teacher_review::insert($reviewRows);
-                }
+                // No reviews are created here: they come only from real
+                // students and parents through the verified review form.
 
                 // Courses insert (subjects × boards)
                 $courseRows = [];
@@ -402,17 +382,6 @@ $reg = Register::create([
         return [$city, $state];
     }
 
-    /**
-     * Same normalizeRating concept as your controller
-     * (Ensure numeric 1..10, string output)
-     */
-    private function normalizeRating($v): string
-    {
-        $n = (float)$v;
-        if ($n < 1) $n = 1;
-        if ($n > 10) $n = 10;
-        return (string)round($n, 1);
-    }
 //     private function asString($v): string
 // {
 //     if (is_array($v)) {

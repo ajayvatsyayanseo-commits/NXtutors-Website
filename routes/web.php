@@ -27,6 +27,8 @@ use App\Http\Controllers\PincodeController;
 use App\Http\Controllers\HomeController;
 
 use App\Http\Controllers\SuperAdmin\PagegenImportController;
+use App\Http\Controllers\SuperAdmin\ReviewModerationController;
+use App\Http\Controllers\TutorReviewController;
 
 use App\Http\Controllers\SuperAdmin\BannerController;
 
@@ -254,9 +256,13 @@ Route::get('/order/{id}', [OrderController::class, 'vieworder'])->name('order.vi
 Route::post('/cartlist', [OrderController::class, 'updateCart'])->name('cartlist');
 });
 
-  Route::get('teacher/{id}', [HomeController::class, 'singleteacherreview'])->name('teacher');
+  // The "review this tutor" link tutors share. Nothing submitted here is
+  // published until an admin approves it in super/teacher/review.
+  Route::get('teacher/{id}', [TutorReviewController::class, 'show'])->name('teacher');
 
-  Route::post('/feedback', [CityController::class, 'teacherfeedback'])->name('feedback');
+  Route::post('/feedback', [TutorReviewController::class, 'store'])->middleware('throttle:public-form')->name('feedback');
+
+  Route::get('/review/verify/{token}', [TutorReviewController::class, 'verify'])->middleware('throttle:public-form')->name('review.verify');
 
 Route::prefix('super')->name('super.')->group(function () {
 
@@ -340,7 +346,10 @@ Route::prefix('super')->name('super.')->group(function () {
         Route::put('teacher/edit/{id}', [RegisterController::class, 'teacherupdate'])->name('teacher.update');
         Route::delete('teacher/delete/{id}', [RegisterController::class, 'teacherdestroy'])->name('teacher.destroy');
       
-      Route::get('teacher/review', [RegisterController::class, 'teacherreviewlist'])->name('teacher.review');
+      Route::get('teacher/review', [ReviewModerationController::class, 'index'])->name('teacher.review');
+      Route::post('teacher/review/{id}/approve', [ReviewModerationController::class, 'approve'])->whereNumber('id')->name('teacher.review.approve');
+      Route::post('teacher/review/{id}/reject', [ReviewModerationController::class, 'reject'])->whereNumber('id')->name('teacher.review.reject');
+      Route::delete('teacher/review/{id}', [ReviewModerationController::class, 'destroy'])->whereNumber('id')->name('teacher.review.destroy');
       Route::get('teacher/generate', [RegisterController::class, 'teachergenerate'])->name('teacher.generate');
 
       Route::post('teacher/generate', [RegisterController::class, 'teacherGenerateStore'])

@@ -20,6 +20,7 @@ use App\Models\City_area;
 use App\Models\City_area_course;
 use App\Models\City_area_faqs;
 use App\Models\Register;
+use App\Models\Teacher_review;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Http;
@@ -310,6 +311,27 @@ Product::where('status', 't')
     })->where('status', 't')->orderBy('id', 'desc')->get();
 
     return view('singlecat', compact('category', 'children' , 'products','metatitle','metakey','metadesc'));
+}
+
+/**
+ * The tags families picked most often across a tutor's published reviews,
+ * as [label => count], most frequent first.
+ */
+private function topReviewTags(string $tutorUserId, int $limit = 6): array
+{
+    $counts = [];
+    Teacher_review::where('user_id', $tutorUserId)
+        ->where('status', 't')
+        ->whereNotNull('tags')
+        ->get(['tags'])
+        ->each(function (Teacher_review $r) use (&$counts): void {
+            foreach ($r->tagLabels() as $label) {
+                $counts[$label] = ($counts[$label] ?? 0) + 1;
+            }
+        });
+    arsort($counts);
+
+    return array_slice($counts, 0, $limit, true);
 }
 
 private function getHomeReviews(int $limit = 12)
@@ -758,14 +780,6 @@ private function baseTeacherQuery()
       return view('login', compact('metatitle','metakey','metadesc'));
     }
 
-        public function singleteacherreview($id){
-          $page = Page::Where('status', 't')->where('slug', 'privacy')->first();
-          $teacher = Register::Where('user_id', $id)->first();
-          $metatitle = $page->meta_title ?? null;
-          $metakey = $page->meta_keywords ?? null;
-          $metadesc = $page->meta_description ?? null;
-          return view('teacherreview' , compact('page','metatitle','metakey','metadesc','teacher'));
-    }
     public function singleteacherprofile($slug, $slug1,$id){
           $page = Page::Where('status', 't')->where('slug', 'privacy')->first();
           $userid = base64_decode($id);
@@ -1272,6 +1286,8 @@ public function cityAreaShow($citySlug, $areaSlug)
         $ratingCards[$k] = $v ? round($v, 1) : null;
     }
 
+    $topTags = $this->topReviewTags((string) $tutor->user_id);
+
 
     $subjectsOffered = [];
     if ($effective && $effective->count()) {
@@ -1316,6 +1332,7 @@ public function cityAreaShow($citySlug, $areaSlug)
         'ratingCards',
         'avgRating',
         'reviewCount',
+        'topTags',
         'subjectsOffered',
         'hourlyMin',
         'hourlyMax',
@@ -1481,6 +1498,8 @@ $realUserId = str_replace('-nxt', '', $decoded);
         $ratingCards[$k] = $v ? round($v, 1) : null;
     }
 
+    $topTags = $this->topReviewTags((string) $tutor->user_id);
+
     // ✅ Subjects offered from effective courses
     $subjectsOffered = [];
     if ($effective && $effective->count()) {
@@ -1525,6 +1544,7 @@ $realUserId = str_replace('-nxt', '', $decoded);
         'ratingCards',
         'avgRating',
         'reviewCount',
+        'topTags',
         'subjectsOffered',
         'hourlyMin',
         'hourlyMax',

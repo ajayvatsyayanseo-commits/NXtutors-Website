@@ -77,6 +77,10 @@ final class DashboardIdentity
             'document_number' => $r->document_number,
             'status' => $r->status,
             'joined_on' => $r->date,
+            // Two different links a tutor shares: the public profile families
+            // browse, and the form that asks them for a review.
+            'public_url' => $this->isTutor() ? $r->profileUrl() : null,
+            'review_url' => $this->isTutor() ? route('teacher', $r->user_id) : null,
         ];
     }
 }

@@ -20,6 +20,7 @@
  <meta name="title" content="{{ $metatitle }}">
  
     <meta name="description" content="{{ $metadesc }}">
+  @isset($metarobots)<meta name="robots" content="{{ $metarobots }}">@endisset
 
   {{--
     Canonical for every page on the site, emitted here because this include is
