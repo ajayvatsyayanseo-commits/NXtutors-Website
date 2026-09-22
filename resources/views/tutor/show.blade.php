@@ -185,6 +185,42 @@
   $exp  = trim((string)($tutor->experience ?? ''));
   $classFor = trim((string)($tutor->for_class ?? ''));
 
+  // Experience is stored as "8", "8 years", "8 Years", "12+"… The chip adds
+  // its own unit, so it takes the number only; the long form gets a unit
+  // when the tutor typed a bare number.
+  $expYears = preg_match('/\d+(?:\.\d+)?\+?/', $exp, $expMatch) ? $expMatch[0] : '';
+  $expText  = ($expYears !== '' && $exp === $expYears) ? $exp.' years' : $exp;
+
+  // The About text is plain text from the tutor's profile form. Blank lines
+  // separate blocks; a block whose lines all start with "•" or "-" is a list;
+  // a short single line is a heading; anything else is a paragraph. Every
+  // piece is escaped, because this is tutor input rendered on a public page.
+  $aboutText = trim(str_replace("\r", '', (string)($tutor->profile_desc ?? '')));
+  $aboutHtml = null;
+  if ($aboutText !== '') {
+    $aboutHtml = '';
+    foreach (preg_split('/\n\s*\n/', $aboutText) as $block) {
+      $lines = array_values(array_filter(array_map('trim', explode("\n", $block)), 'strlen'));
+      if (!$lines) continue;
+      $isList = count(array_filter($lines, fn ($l) => preg_match('/^[•\-]\s*/u', $l))) === count($lines);
+      if ($isList) {
+        $aboutHtml .= '<ul class="nxabout__list">';
+        foreach ($lines as $l) $aboutHtml .= '<li>'.e(preg_replace('/^[•\-]\s*/u', '', $l)).'</li>';
+        $aboutHtml .= '</ul>';
+      } elseif (count($lines) === 1 && mb_strlen($lines[0]) <= 80 && !preg_match('/[.!?]$/u', $lines[0])) {
+        $aboutHtml .= '<h3 class="nxabout__h">'.e(rtrim($lines[0], ':')).'</h3>';
+      } else {
+        $aboutHtml .= '<p>'.implode('<br>', array_map('e', $lines)).'</p>';
+      }
+    }
+  }
+
+  // The short line under the name: the tutor's own 160-character summary when
+  // they wrote one, otherwise the start of the About text.
+  $summaryText = trim((string)($tutor->pro_desc ?? ''))
+    ?: Str::limit(preg_replace('/\s+/u', ' ', $aboutText), 240)
+    ?: 'Experienced tutor providing personalised learning plans, regular tests and progress updates.';
+
   // best effort boards/classes from courses
   $boardList = [];
   $classList = [];
@@ -258,6 +294,14 @@ html {
     backdrop-filter: blur(10px);
   }
   .nxcard--soft{box-shadow:0 12px 30px rgba(0,0,0,.28);}
+
+  /* About text, built from the tutor's plain-text profile */
+  .nxabout{line-height:1.8;font-size:15px;}
+  .nxabout p{margin:0 0 12px;}
+  .nxabout__h{font-size:16px;font-weight:800;margin:18px 0 8px;}
+  .nxabout__h:first-child{margin-top:0;}
+  .nxabout__list{margin:0 0 12px;padding-left:20px;}
+  .nxabout__list li{margin:4px 0;}
 
   .nxclamp-4{
   display:-webkit-box;
@@ -403,8 +447,8 @@ html {
                 <span class="nxchip nxchip--ok">✅ Verified</span>
                 <span class="nxchip">{{ $chip }}</span>
 
-                @if(!empty($tutor->experience))
-                  <span class="nxchip">⭐ {{ $tutor->experience }} yrs exp</span>
+                @if($expYears !== '')
+                  <span class="nxchip">⭐ {{ $expYears }} yrs exp</span>
                 @endif
 
                 @if(!empty($tutor->budget))
@@ -417,7 +461,7 @@ html {
               <div class="nxdivider"></div>
 
               <div class="nxlead nxclamp-4" style="margin:0;">
-  {{ $tutor->profile_desc ?? $tutor->pro_desc ?? 'Experienced tutor providing personalised learning plans, regular tests and progress updates.' }}
+  {{ $summaryText }}
 </div>
 
 <a class="nxreadmore" href="#aboutTutor" onclick="scrollToAbout(event)">
@@ -463,7 +507,7 @@ html {
   </div>
 
   <div class="nxcard nxcard--soft" style="padding:20px;">
-    {!! $aboutHtml ?? '<p>'.$tutor->profile_desc.'</p>' !!}
+    <div class="nxabout">{!! $aboutHtml ?? '<p>'.e($summaryText).'</p>' !!}</div>
   </div>
 </section>
 
@@ -780,7 +824,7 @@ html {
             <b>Qualification:</b> {{ $qual ?: 'Qualified and experienced tutor' }} @if($deg) ({{ $deg }}) @endif
           </p>
           <p>
-            <b>Experience:</b> {{ $exp ?: 'Experienced in teaching school students with exam-focused learning plans.' }}
+            <b>Experience:</b> {{ $expText ?: 'Experienced in teaching school students with exam-focused learning plans.' }}
           </p>
           <p>
             {{ $tutor->name }} focuses on concept clarity, consistent practice, and building confidence with regular assessments and revision cycles.
