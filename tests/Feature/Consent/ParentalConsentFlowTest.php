@@ -55,6 +55,12 @@ final class ParentalConsentFlowTest extends TestCase
         ]);
 
         $this->flow = app(ParentalConsentFlow::class);
+
+        // The site footer reads the settings row, which AppServiceProvider
+        // shares only outside tests — as in the review-flow tests.
+        \Illuminate\Support\Facades\View::share('setting', (object) [
+            'name' => 'NXTutors', 'email' => '', 'phone' => '', 'address' => '',
+        ]);
     }
 
     private function request(): string
@@ -293,15 +299,87 @@ final class ParentalConsentFlowTest extends TestCase
         $this->assertNull($this->flow->parentPhoneFor('S-nobody'));
     }
 
-    public function test_requesting_notifies_the_family_with_the_reviewable_notice(): void
+    // ------------------------------------------------ who may not consent
+
+    public function test_a_tutors_number_cannot_be_the_parent(): void
     {
-        config()->set('nxt-dashboard.consent_notice', 'The notice legal signed off.');
+        DB::table('register')->insert([
+            'user_id' => 'T-12', 'name' => 'Meera', 'join_as' => 'teacher', 'phone' => '+91 90000 11111',
+        ]);
 
-        $code = $this->flow->requestAndNotify(self::STUDENT, self::PARENT_PHONE, self::PURPOSE);
+        $this->expectException(\Illuminate\Validation\ValidationException::class);
 
-        $notification = DB::table('nxt_notifications')->where('event', 'consent.requested')->first();
-        $this->assertNotNull($notification);
-        $this->assertStringContainsString($code, $notification->title);
-        $this->assertSame('The notice legal signed off.', $notification->body);
+        $this->flow->request(self::STUDENT, '9000011111', self::PURPOSE);
+    }
+
+    public function test_nothing_is_sent_to_the_students_own_inbox(): void
+    {
+        /* The old requestAndNotify put the code in the child's inbox, so the
+           child could consent for the parent. The link goes to the parent. */
+        $this->flow->requestLink(self::STUDENT, self::PARENT_PHONE, self::PURPOSE);
+
+        $this->assertSame(0, DB::table('nxt_notifications')->count());
+    }
+
+    // ----------------------------------------------------- the parent's link
+
+    public function test_the_parent_confirms_from_the_link_and_says_who_they_are(): void
+    {
+        $link = $this->flow->requestLink(self::STUDENT, self::PARENT_PHONE, self::PURPOSE);
+
+        $this->get($link['url'])->assertOk()->assertSee('Confirm for Aarav');
+
+        $this->post(route('consent.confirm', [$link['id'], $link['token']]), [
+            'role' => 'mother',
+            'adult' => '1',
+        ])->assertOk()->assertSee('Thank you');
+
+        $consent = $this->flow->current(self::STUDENT, self::PURPOSE);
+        $this->assertNotNull($consent);
+        $this->assertSame('mother', $consent->evidence['actor']);
+        $this->assertTrue($consent->evidence['declared_adult']);
+        $this->assertSame('whatsapp_link', $consent->evidence['confirmed_channel']);
+    }
+
+    public function test_without_the_adult_declaration_nothing_is_recorded(): void
+    {
+        $link = $this->flow->requestLink(self::STUDENT, self::PARENT_PHONE, self::PURPOSE);
+
+        $this->from($link['url'])
+            ->post(route('consent.confirm', [$link['id'], $link['token']]), ['role' => 'father'])
+            ->assertSessionHasErrors('adult');
+
+        $this->assertNull($this->flow->current(self::STUDENT, self::PURPOSE));
+    }
+
+    public function test_a_role_outside_parent_or_guardian_is_refused(): void
+    {
+        $link = $this->flow->requestLink(self::STUDENT, self::PARENT_PHONE, self::PURPOSE);
+
+        $this->from($link['url'])
+            ->post(route('consent.confirm', [$link['id'], $link['token']]), ['role' => 'brother', 'adult' => '1'])
+            ->assertSessionHasErrors('role');
+
+        $this->assertNull($this->flow->current(self::STUDENT, self::PURPOSE));
+    }
+
+    public function test_a_wrong_token_shows_the_same_page_as_an_expired_one(): void
+    {
+        $link = $this->flow->requestLink(self::STUDENT, self::PARENT_PHONE, self::PURPOSE);
+
+        $this->get(route('consent.show', [$link['id'], 'not-the-token']))
+            ->assertOk()->assertSee('This link is not valid')->assertDontSee('Aarav');
+
+        $this->travel(49)->hours();
+        $this->get($link['url'])->assertOk()->assertSee('This link is not valid');
+    }
+
+    public function test_a_link_works_once(): void
+    {
+        $link = $this->flow->requestLink(self::STUDENT, self::PARENT_PHONE, self::PURPOSE);
+        $form = ['role' => 'guardian', 'adult' => '1'];
+
+        $this->post(route('consent.confirm', [$link['id'], $link['token']]), $form)->assertSee('Thank you');
+        $this->post(route('consent.confirm', [$link['id'], $link['token']]), $form)->assertSee('This link is not valid');
     }
 }

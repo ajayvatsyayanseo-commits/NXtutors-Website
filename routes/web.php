@@ -264,6 +264,13 @@ Route::post('/cartlist', [OrderController::class, 'updateCart'])->name('cartlist
 
   Route::get('/review/verify/{token}', [TutorReviewController::class, 'verify'])->middleware('throttle:public-form')->name('review.verify');
 
+  // Parental consent from the WhatsApp "Confirm" link, for a student who
+  // signed up without their parent in the chat (DPDP Act 2023).
+  Route::get('/consent/{id}/{token}', [\App\Http\Controllers\ParentalConsentController::class, 'show'])
+      ->middleware('throttle:public-form')->name('consent.show');
+  Route::post('/consent/{id}/{token}', [\App\Http\Controllers\ParentalConsentController::class, 'confirm'])
+      ->middleware('throttle:public-form')->name('consent.confirm');
+
 Route::prefix('super')->name('super.')->group(function () {
 
     // Super Admin Login

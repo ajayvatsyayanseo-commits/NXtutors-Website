@@ -5,11 +5,12 @@ declare(strict_types=1);
 namespace App\Nxt\Dashboard\Services;
 
 use App\Models\Register;
-use App\Nxt\Dashboard\Models\AppNotification;
 use App\Nxt\Dashboard\Models\ParentalConsent;
 use App\NxtAi\Support\AgentPseudonymiser;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
+use Illuminate\Validation\ValidationException;
 
 /**
  * Collecting verifiable parental consent, and proving later that it happened.
@@ -50,6 +51,9 @@ class ParentalConsentFlow
      */
     private const VALID_FOR_HOURS = 48;
 
+    /** Who may consent for a child (DPDP Act 2023, s.9): a parent or lawful guardian. */
+    public const GUARDIAN_ROLES = ['mother', 'father', 'guardian'];
+
     /**
      * Ask a family to consent, and return the code for delivery.
      *
@@ -68,8 +72,11 @@ class ParentalConsentFlow
         string $purpose,
         ?string $parentName = null,
         ?string $consentVersion = null,
+        ?string $secret = null,
     ): string {
-        $code = str_pad((string) random_int(0, 999999), 6, '0', STR_PAD_LEFT);
+        $this->assertNotATutor($parentPhone);
+
+        $code = $secret ?? str_pad((string) random_int(0, 999999), 6, '0', STR_PAD_LEFT);
         $version = $consentVersion ?? (string) config('nxt-dashboard.consent_version', 'v1');
 
         DB::transaction(function () use ($studentUserId, $parentPhone, $purpose, $parentName, $version, $code): void {
@@ -109,41 +116,104 @@ class ParentalConsentFlow
     }
 
     /**
-     * Ask, and tell the family what the code is.
+     * Ask a parent to consent from a link, and return the link.
      *
-     * In-app only, as everywhere else on this platform: WhatsApp and SMS belong
-     * to the Messaging Gateway with its caps and quiet hours, and this is the
-     * single place the template hangs off once that exists.
+     * For when the student is the one signing up (BLOCKERS D12 in the Student
+     * agent): the parent is not in the conversation, so they get a WhatsApp
+     * message with a Confirm button that opens this link. Possession of the
+     * link is possession of the parent's WhatsApp, which is the proof.
      *
-     * The wording is a placeholder and is marked as one. What a parent is told
-     * before they consent is a legal question, not an engineering one, and it
-     * lives in config so it can be replaced by whoever signs it off without a
-     * code change.
+     * Replaces `requestAndNotify`, which put the code in the *student's* own
+     * inbox — so the child could consent on the parent's behalf, which is the
+     * one thing verifiable parental consent exists to prevent.
+     *
+     * @return array{id: string, token: string, url: string}
      */
-    public function requestAndNotify(
+    public function requestLink(
         string $studentUserId,
         string $parentPhone,
         string $purpose,
         ?string $parentName = null,
-    ): string {
-        $code = $this->request($studentUserId, $parentPhone, $purpose, $parentName);
+    ): array {
+        $token = Str::random(48);
+        $this->request($studentUserId, $parentPhone, $purpose, $parentName, secret: $token);
 
-        AppNotification::create([
-            'user_id' => $studentUserId,
-            'role' => 'student',
-            'event' => 'consent.requested',
-            'title' => 'Please confirm: code '.$code,
-            'body' => (string) config(
-                'nxt-dashboard.consent_notice',
-                'Enter this code to confirm you are the parent or guardian and '
-                .'agree to NXTutors processing your child\'s learning records.'
-            ),
-            'deep_link' => '/user/consent',
-            'channel' => 'in_app',
-            'status' => 'sent',
+        $id = (string) ParentalConsent::query()
+            ->where('active_key', ParentalConsent::activeKeyFor($studentUserId, $purpose))
+            ->value('id');
+
+        return ['id' => $id, 'token' => $token, 'url' => route('consent.show', [$id, $token])];
+    }
+
+    /**
+     * The pending consent a link names, if the link is still good. Read-only.
+     */
+    public function pendingForLink(string $id, string $token): ?ParentalConsent
+    {
+        $consent = ParentalConsent::query()->find($id);
+
+        if ($consent === null
+            || $consent->status !== ParentalConsent::STATUS_PENDING
+            || $consent->active_key === null
+            || $consent->code_hash === null
+            || $consent->expires_at === null
+            || $consent->expires_at->isPast()
+            || $consent->attempts >= self::MAX_ATTEMPTS
+            || ! Hash::check($token, $consent->code_hash)) {
+            return null;
+        }
+
+        return $consent;
+    }
+
+    /**
+     * The parent confirms from the link, saying who they are.
+     *
+     * The declaration is part of the evidence, not a formality: consent from
+     * someone who is not the parent or a lawful guardian, or not an adult, is
+     * not consent. Both are recorded against the row.
+     */
+    public function confirmLink(string $id, string $token, string $role, bool $declaredAdult, array $evidence = []): bool
+    {
+        if (! in_array($role, self::GUARDIAN_ROLES, true) || ! $declaredAdult) {
+            return false;
+        }
+
+        $consent = ParentalConsent::query()->find($id);
+        if ($consent === null) {
+            return false;
+        }
+
+        return $this->confirm($consent->student_user_id, $consent->purpose, $token, $evidence + [
+            'actor' => $role,
+            'declared_adult' => true,
+            'channel' => 'whatsapp_link',
         ]);
+    }
 
-        return $code;
+    /**
+     * Refuses a number that belongs to a tutor on the platform.
+     *
+     * A tutor approving data processing for a child they teach — or any child
+     * — is not a parent consenting. Matched on the last ten digits, so +91 and
+     * spacing do not get a tutor's number past it.
+     */
+    private function assertNotATutor(string $parentPhone): void
+    {
+        $digits = preg_replace('/\D/', '', $parentPhone) ?? '';
+        $last10 = strlen($digits) >= 10 ? substr($digits, -10) : $digits;
+
+        $isTutor = $last10 !== '' && Register::query()
+            ->where('join_as', 'teacher')
+            // Stored numbers carry spaces and dashes as typed; compare digits.
+            ->whereRaw("REPLACE(REPLACE(phone, ' ', ''), '-', '') LIKE ?", ['%'.$last10])
+            ->exists();
+
+        if ($isTutor) {
+            throw ValidationException::withMessages([
+                'parent_phone' => 'This number belongs to a tutor on NXTutors, so it cannot give consent as a parent.',
+            ]);
+        }
     }
 
     /**
@@ -188,11 +258,15 @@ class ParentalConsentFlow
                 // The code has done its job. Keeping it would only mean a
                 // leaked table let somebody replay a confirmation.
                 'code_hash' => null,
-                'evidence' => array_merge($consent->evidence ?? [], [
+                'evidence' => array_merge($consent->evidence ?? [], array_filter([
                     'confirmed_ip' => $evidence['ip'] ?? null,
                     'confirmed_channel' => $evidence['channel'] ?? 'in_app',
                     'consent_version' => $consent->consent_version,
-                ]),
+                    // Who said they were consenting, and that they are an
+                    // adult: a named allow-list, not whatever a caller passed.
+                    'actor' => $evidence['actor'] ?? null,
+                    'declared_adult' => $evidence['declared_adult'] ?? null,
+                ], fn ($value) => $value !== null)),
             ])->save();
 
             return true;

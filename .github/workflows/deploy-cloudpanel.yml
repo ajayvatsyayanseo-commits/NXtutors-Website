@@ -458,6 +458,12 @@ jobs:
           # --path above scopes migrate to one package, so they need their own
           # run or the chat 500s on every request with "table not found".
           "$php_binary" artisan migrate --force --path=app/NxtAi/Database/Migrations
+          # Dashboard tables, for the same reason. Checked on production before
+          # this was added (migrate:status, 2026-09-23): all eight existing
+          # Dashboard migrations are recorded as Ran in batch 12, so this only
+          # runs what is new — without it the alert dedupe column and the
+          # parental consent table would never be created.
+          "$php_binary" artisan migrate --force --path=app/Nxt/Dashboard/Database/Migrations
           "$php_binary" artisan storage:link || true
           "$php_binary" artisan config:cache
           "$php_binary" artisan view:cache
