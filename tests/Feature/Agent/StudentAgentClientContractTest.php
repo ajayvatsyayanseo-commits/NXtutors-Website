@@ -82,6 +82,12 @@ final class StudentAgentClientContractTest extends TestCase
             'status' => 't',
             'phone_hash' => self::PHONE_HASH,
         ]);
+
+        // The routes refuse a child without consent; this test is about the
+        // signature gate, so the recorded student is a consented one.
+        config()->set('agent.hash_pepper', 'student-agent-test-pepper');
+        $flow = app(\App\Nxt\Dashboard\Services\ParentalConsentFlow::class);
+        $flow->confirm(self::STUDENT, 'learning_records', $flow->request(self::STUDENT, '9876543210', 'learning_records'));
     }
 
     /**

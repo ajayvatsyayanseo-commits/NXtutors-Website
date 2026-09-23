@@ -56,6 +56,9 @@ final class StudentAgentController extends Controller
     /** A window longer than this is a backfill, and backfills are paged. */
     private const MAX_WINDOW_DAYS = 400;
 
+    /** The consent purpose every read and the alert write are processed under. */
+    private const CONSENT_PURPOSE = 'learning_records';
+
     // ------------------------------------------------------------ reads
 
     /**
@@ -72,6 +75,9 @@ final class StudentAgentController extends Controller
         $studentUserId = $this->resolveStudent($ref);
         if ($studentUserId === null) {
             return response()->json(['error' => 'student_not_found'], 404);
+        }
+        if (($refused = $this->withoutConsent($studentUserId)) !== null) {
+            return $refused;
         }
 
         [$since, $until, $error] = $this->window($request);
@@ -122,6 +128,9 @@ final class StudentAgentController extends Controller
         $studentUserId = $this->resolveStudent($ref);
         if ($studentUserId === null) {
             return response()->json(['error' => 'student_not_found'], 404);
+        }
+        if (($refused = $this->withoutConsent($studentUserId)) !== null) {
+            return $refused;
         }
 
         [$since, $until, $error] = $this->window($request);
@@ -184,6 +193,9 @@ final class StudentAgentController extends Controller
         $studentUserId = $this->resolveStudent($ref);
         if ($studentUserId === null) {
             return response()->json(['error' => 'student_not_found'], 404);
+        }
+        if (($refused = $this->withoutConsent($studentUserId)) !== null) {
+            return $refused;
         }
 
         $lead = DB::table('nxt_leads')
@@ -300,6 +312,9 @@ final class StudentAgentController extends Controller
         if ($studentUserId === null) {
             return response()->json(['error' => 'student_not_found'], 404);
         }
+        if (($refused = $this->withoutConsent($studentUserId)) !== null) {
+            return $refused;
+        }
 
         $key = trim((string) $request->header('X-Idempotency-Key', ''));
         if ($key === '' || strlen($key) > 191) {
@@ -358,6 +373,28 @@ final class StudentAgentController extends Controller
     }
 
     // ---------------------------------------------------------- internals
+
+    /**
+     * A 403 unless this child's data may be processed, else null.
+     *
+     * Enforced here, on every route that touches a child's records, rather than
+     * left to the agent to check `/consent` first. A gate the caller is trusted
+     * to consult is not a gate: a bug, a stale cache or a retry that skips the
+     * check would otherwise read a child's attendance after consent was refused
+     * or withdrawn. The agent's client already treats 403 as FORBIDDEN.
+     *
+     * Every failure mode answers the same way — never asked, pending, expired,
+     * withdrawn — so the response says nothing about which one it was.
+     */
+    private function withoutConsent(string $studentUserId): ?JsonResponse
+    {
+        if (app(ParentalConsentFlow::class)->current($studentUserId, self::CONSENT_PURPOSE) !== null) {
+            return null;
+        }
+
+        return response()->json(['error' => 'consent_required'], 403)
+            ->header('Cache-Control', 'no-store');
+    }
 
     /**
      * `stu_<hash>` or a bare `register.user_id` to a `user_id`, or null.

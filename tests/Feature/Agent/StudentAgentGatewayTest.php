@@ -57,6 +57,11 @@ final class StudentAgentGatewayTest extends TestCase
             ['user_id' => self::STUDENT, 'name' => 'Aarav', 'join_as' => 'student', 'status' => 't', 'phone_hash' => 'a1b2c3d4e5f60718'],
             ['user_id' => self::TUTOR, 'name' => 'Meera', 'join_as' => 'teacher', 'status' => 't', 'phone_hash' => null],
         ]);
+
+        // Every route refuses a child without consent. Most tests here are
+        // about something else, so they start from a consented student and the
+        // consent section below takes it away where that is the point.
+        $this->grantConsent();
     }
 
     /** @return array<string,string> */
@@ -449,15 +454,23 @@ final class StudentAgentGatewayTest extends TestCase
             ]);
     }
 
+    private function forgetConsent(): void
+    {
+        DB::table('nxt_parental_consents')->delete();
+    }
+
     public function test_no_consent_record_reads_as_not_consented(): void
     {
         /* Fails closed. "We could not find a record" must never be delivered
            to the agent as anything an agent could read as permission. */
+        $this->forgetConsent();
+
         $this->agentGet($this->consentPath())->assertOk()->assertJson(['verified' => false]);
     }
 
     public function test_an_unconfirmed_request_reads_as_not_consented(): void
     {
+        $this->forgetConsent();
         config()->set('agent.hash_pepper', 'student-agent-test-pepper');
         app(\App\Nxt\Dashboard\Services\ParentalConsentFlow::class)
             ->request(self::STUDENT, '9876543210', 'learning_records');
@@ -509,5 +522,81 @@ final class StudentAgentGatewayTest extends TestCase
         $path = '/api/agent/v1/students/'.self::STUDENT.'/consent';
 
         $this->postJson($path, [], $this->signed('POST', $path, '[]'))->assertStatus(405);
+    }
+
+    // ------------------------------------------------------- consent gate
+
+    /** @return array<string,array{0:string}> */
+    public static function protectedReads(): array
+    {
+        $window = '?since=2026-09-01T00:00:00Z&until=2026-10-01T00:00:00Z';
+
+        return [
+            'attendance' => ['/attendance'.$window],
+            'session-logs' => ['/session-logs'.$window],
+            'goals' => ['/goals'],
+        ];
+    }
+
+    /**
+     * @dataProvider protectedReads
+     */
+    public function test_a_child_without_consent_is_refused_on_every_read(string $suffix): void
+    {
+        /* Enforced here rather than trusted to the agent. A caller that skips
+           /consent — through a bug, a stale cache or a retry — must still get
+           nothing. */
+        $this->makeSession('s1', '2026-09-02 10:00:00', 'confirmed', '["Fractions"]');
+        $this->forgetConsent();
+
+        $response = $this->agentGet('/api/agent/v1/students/'.self::STUDENT.$suffix)
+            ->assertStatus(403)
+            ->assertExactJson(['error' => 'consent_required']);
+
+        $this->assertStringNotContainsString('Fractions', (string) $response->getContent());
+    }
+
+    /**
+     * @dataProvider protectedReads
+     */
+    public function test_withdrawing_consent_stops_every_read_at_once(string $suffix): void
+    {
+        app(\App\Nxt\Dashboard\Services\ParentalConsentFlow::class)
+            ->withdraw(self::STUDENT, 'learning_records');
+
+        $this->agentGet('/api/agent/v1/students/'.self::STUDENT.$suffix)->assertStatus(403);
+    }
+
+    public function test_a_pending_consent_does_not_open_the_reads(): void
+    {
+        $this->forgetConsent();
+        app(\App\Nxt\Dashboard\Services\ParentalConsentFlow::class)
+            ->request(self::STUDENT, '9876543210', 'learning_records');
+
+        $this->agentGet('/api/agent/v1/students/'.self::STUDENT.'/goals')->assertStatus(403);
+    }
+
+    public function test_consent_for_another_purpose_does_not_open_the_reads(): void
+    {
+        $this->forgetConsent();
+        $this->grantConsent('marketing');
+
+        $this->agentGet('/api/agent/v1/students/'.self::STUDENT.'/goals')->assertStatus(403);
+    }
+
+    public function test_no_alert_is_recorded_for_a_child_without_consent(): void
+    {
+        $this->forgetConsent();
+
+        $this->postAlert('student:S-77:alert:attendance:2026-09')
+            ->assertStatus(403)
+            ->assertExactJson(['error' => 'consent_required']);
+
+        $this->assertSame(0, AppNotification::query()->count());
+    }
+
+    public function test_an_unknown_student_is_still_a_404_before_consent_is_considered(): void
+    {
+        $this->agentGet('/api/agent/v1/students/S-nobody/goals')->assertStatus(404);
     }
 }
