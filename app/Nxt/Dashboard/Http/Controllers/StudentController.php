@@ -591,9 +591,16 @@ class StudentController extends DashboardController
             'checked_out_at' => $session->checked_out_at?->toIso8601String(),
             'confirmed_at' => $session->confirmed_at?->toIso8601String(),
             'can_confirm' => $session->status === 'checked_out',
+            // Null for a manual check-in: it never confirms on its own, and
+            // showing a countdown would tell the family their silence is a yes.
             'auto_confirms_at' => $session->status === 'checked_out' && $session->checked_out_at
-                ? $session->checked_out_at->copy()->addHours(24)->toIso8601String()
+                && ! $this->sessions->needsFamilyConfirmation($session)
+                ? $session->checked_out_at->copy()
+                    ->addHours((int) config('nxt-dashboard.auto_confirm_hours', 24))
+                    ->toIso8601String()
                 : null,
+            'needs_your_confirmation' => $session->status === 'checked_out'
+                && $this->sessions->needsFamilyConfirmation($session),
         ];
 
         if ($withEvents) {

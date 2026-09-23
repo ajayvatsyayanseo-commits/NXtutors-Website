@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Nxt\Dashboard\Services;
 
+use App\Nxt\Dashboard\Models\AppNotification;
 use App\Nxt\Dashboard\Models\AttendanceEvent;
 use App\Nxt\Dashboard\Models\Dispute;
 use App\Nxt\Dashboard\Models\Homework;
@@ -227,6 +228,7 @@ class SessionFlow
                 }
 
                 $this->emit('session.checked_out', $session, ['topics' => $topics]);
+                $this->askFamilyToConfirm($session);
 
                 return $session->fresh();
             },
@@ -577,6 +579,12 @@ class SessionFlow
                 continue;
             }
 
+            // Silence confirms a class only when something other than the
+            // tutor proved it happened. See escalateUnconfirmedManual().
+            if ($this->needsFamilyConfirmation($session)) {
+                continue;
+            }
+
             try {
                 $this->confirm($session, 'system', automatic: true);
                 $confirmed++;
@@ -586,6 +594,85 @@ class SessionFlow
         }
 
         return $confirmed;
+    }
+
+    /**
+     * Manual check-ins the family never answered, handed to ops.
+     *
+     * A manual check-in is the tutor's word alone: no code the family read out,
+     * no location the phone proved. The auto-confirm timer skips them, so
+     * without this they would sit held forever — the tutor unpaid, the family's
+     * money frozen. After `manual_review_after_hours` of silence the class
+     * becomes a dispute raised by the system, which holds the payout exactly as
+     * a parent's dispute does and puts it in front of the people who can ring
+     * the family. Ops settles it with resolveDispute(), either way.
+     */
+    public function escalateUnconfirmedManual(): int
+    {
+        $after = (int) config('nxt-dashboard.manual_review_after_hours', 48);
+
+        $due = TutoringSession::where('status', 'checked_out')
+            ->where('checked_out_at', '<=', now()->subHours($after))
+            ->pluck('id');
+
+        $escalated = 0;
+
+        foreach ($due as $id) {
+            $session = TutoringSession::find($id);
+
+            if (! $session || ! $this->needsFamilyConfirmation($session)) {
+                continue;
+            }
+
+            try {
+                $this->transition(
+                    $session,
+                    ['checked_out'],
+                    'This class is no longer awaiting confirmation.',
+                    function (TutoringSession $session) use ($after): Dispute {
+                        $session->update(['status' => 'disputed']);
+
+                        $this->recordEvent($session, 'dispute', 'system', 'timer', payload: [
+                            'reason' => 'unconfirmed_manual_check_in',
+                        ]);
+
+                        $dispute = Dispute::create([
+                            'session_id' => $session->id,
+                            'raised_by_user_id' => 'system',
+                            'reason' => 'unconfirmed_manual_check_in',
+                            'detail' => "Checked in manually and not confirmed by the family within {$after} hours.",
+                            'status' => 'open',
+                        ]);
+
+                        $this->emit('session.disputed', $session, ['reason' => 'unconfirmed_manual_check_in']);
+
+                        return $dispute;
+                    },
+                );
+
+                $escalated++;
+            } catch (ValidationException) {
+                // The family confirmed or disputed it between the read and the claim.
+            }
+        }
+
+        return $escalated;
+    }
+
+    /**
+     * Whether silence may not stand in for the family's yes.
+     *
+     * True when the check-in was manual — chosen, or a geo-fence that could not
+     * be verified and was downgraded. A parent OTP, a verified geo-fence and an
+     * online join are evidence from outside the tutor's own claim. A class with
+     * no check-in event at all predates the event log and keeps the old rule.
+     */
+    public function needsFamilyConfirmation(TutoringSession $session): bool
+    {
+        return AttendanceEvent::where('session_id', $session->id)
+            ->where('kind', 'check_in')
+            ->orderByDesc('server_time')
+            ->value('method') === 'manual';
     }
 
     /**
@@ -770,6 +857,40 @@ class SessionFlow
      * Publishing straight to the stream from here would lose the event whenever
      * the process died between the commit and the publish.
      */
+    /**
+     * Tell the family a class is waiting for their yes or no.
+     *
+     * In-app, as every family-facing message on this platform is today; the
+     * WhatsApp template hangs off this same call once Meta approves it, so one
+     * place decides what the family is told. What it says differs on purpose:
+     * for a manual check-in the family's answer is the only proof there is,
+     * and they are told so.
+     */
+    private function askFamilyToConfirm(TutoringSession $session): void
+    {
+        $subject = $session->subject ?? 'tuition';
+
+        if ($this->needsFamilyConfirmation($session)) {
+            $title = "Did today's {$subject} class happen? Please confirm";
+            $body = 'Your tutor checked in without the class code, so only you can confirm this '
+                .'class took place. It will not be paid until you confirm it or our team checks with you.';
+        } else {
+            $hours = (int) config('nxt-dashboard.auto_confirm_hours', 24);
+            $title = "Confirm today's {$subject} class";
+            $body = "Tap Confirm if the class went ahead, or Dispute if it did not. It confirms "
+                ."automatically in {$hours} hours if we hear nothing.";
+        }
+
+        AppNotification::create([
+            'user_id' => $session->student_user_id,
+            'role' => 'student',
+            'event' => 'session.confirm_requested',
+            'title' => $title,
+            'body' => $body,
+            'deep_link' => '/user/learn?session='.$session->id,
+        ]);
+    }
+
     private function emit(string $event, TutoringSession $session, array $extra = []): void
     {
         OutboxEvent::create([

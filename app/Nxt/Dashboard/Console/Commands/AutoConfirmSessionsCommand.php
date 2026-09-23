@@ -28,6 +28,14 @@ class AutoConfirmSessionsCommand extends Command
             ? 'Nothing due for auto-confirmation.'
             : "Auto-confirmed {$count} class(es).");
 
+        // Same clock, same cadence: manual check-ins the timer skipped go to
+        // ops once the family has been silent long enough.
+        $escalated = $sessions->escalateUnconfirmedManual();
+
+        if ($escalated > 0) {
+            $this->info("Sent {$escalated} unconfirmed manual check-in(s) to ops for review.");
+        }
+
         return self::SUCCESS;
     }
 }

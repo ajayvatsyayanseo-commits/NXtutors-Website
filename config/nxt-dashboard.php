@@ -34,6 +34,11 @@ return [
     |---------------------------------------------------------------------------
     */
     'auto_confirm_hours' => (int) env('NXT_AUTO_CONFIRM_HOURS', 24),
+    // A class checked in manually — no parent code, no verified location — is
+    // only the tutor's word, so silence never confirms it. If the family has
+    // neither confirmed nor disputed it this long after check-out, it goes to
+    // ops as a dispute instead of paying out.
+    'manual_review_after_hours' => (int) env('NXT_MANUAL_REVIEW_AFTER_HOURS', 48),
     'free_cancellation_hours' => (int) env('NXT_FREE_CANCELLATION_HOURS', 12),
     'lead_expiry_hours' => (int) env('NXT_LEAD_EXPIRY_HOURS', 24),
     'geofence_radius_m' => (int) env('NXT_GEOFENCE_RADIUS_M', 150),

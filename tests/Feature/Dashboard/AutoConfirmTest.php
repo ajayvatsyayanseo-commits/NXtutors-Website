@@ -545,7 +545,98 @@ class AutoConfirmTest extends DashboardTestCase
      * the money production would move. The clock is left at the end of the
      * class and callers travel forward themselves to reach the window.
      */
-    private function teachAndCheckOut(Package $package, Carbon $startsAt): TutoringSession
+    // ----------------------------------------------- manual check-ins (the tutor's word)
+
+    public function test_a_manual_check_in_is_not_confirmed_by_silence(): void
+    {
+        $session = $this->teachAndCheckOut($this->makePackage(), Carbon::parse('2026-09-16 10:00:00'), 'manual');
+
+        Carbon::setTestNow(now()->addHours(30));
+
+        $this->assertSame(0, $this->sessions()->autoConfirmDue());
+        $this->assertSame('checked_out', $session->fresh()->status);
+        $this->assertBalance(self::TUTOR, Ledger::TUTOR_PAYABLE, 0);
+    }
+
+    public function test_a_geofence_that_could_not_be_verified_counts_as_manual(): void
+    {
+        // No address coordinates: the fence cannot be checked, so the claim is
+        // downgraded to manual and must not pay out on silence either.
+        $session = $this->teachAndCheckOut($this->makePackage(), Carbon::parse('2026-09-16 10:00:00'), 'geofence');
+
+        $this->assertTrue($this->sessions()->needsFamilyConfirmation($session));
+        Carbon::setTestNow(now()->addHours(30));
+        $this->assertSame(0, $this->sessions()->autoConfirmDue());
+    }
+
+    public function test_the_family_can_still_confirm_a_manual_check_in(): void
+    {
+        $session = $this->teachAndCheckOut($this->makePackage(), Carbon::parse('2026-09-16 10:00:00'), 'manual');
+
+        $this->sessions()->confirm($session, self::STUDENT);
+
+        $this->assertSame('confirmed', $session->fresh()->status);
+        $this->assertBalance(self::TUTOR, Ledger::TUTOR_PAYABLE, self::PAYABLE_PAISE);
+    }
+
+    public function test_an_unanswered_manual_check_in_goes_to_ops_and_stays_held(): void
+    {
+        $session = $this->teachAndCheckOut($this->makePackage(), Carbon::parse('2026-09-16 10:00:00'), 'manual');
+
+        Carbon::setTestNow(now()->addHours(47));
+        $this->assertSame(0, $this->sessions()->escalateUnconfirmedManual(), 'Not before 48 hours.');
+
+        Carbon::setTestNow(now()->addHours(1));
+        $this->assertSame(1, $this->sessions()->escalateUnconfirmedManual());
+
+        $this->assertSame('disputed', $session->fresh()->status);
+        $dispute = \App\Nxt\Dashboard\Models\Dispute::where('session_id', $session->id)->sole();
+        $this->assertSame('unconfirmed_manual_check_in', $dispute->reason);
+        $this->assertSame('system', $dispute->raised_by_user_id);
+        $this->assertBalance(self::STUDENT, Ledger::HELD, self::RATE_PAISE);
+        $this->assertBalance(self::TUTOR, Ledger::TUTOR_PAYABLE, 0);
+
+        $this->assertSame(0, $this->sessions()->escalateUnconfirmedManual(), 'Escalated once, not every run.');
+    }
+
+    public function test_ops_can_settle_an_escalated_manual_check_in_either_way(): void
+    {
+        $session = $this->teachAndCheckOut($this->makePackage(), Carbon::parse('2026-09-16 10:00:00'), 'manual');
+        Carbon::setTestNow(now()->addHours(48));
+        $this->sessions()->escalateUnconfirmedManual();
+
+        $dispute = \App\Nxt\Dashboard\Models\Dispute::where('session_id', $session->id)->sole();
+        $this->sessions()->resolveDispute($dispute, 'ops-1', inFavourOfTutor: true);
+
+        $this->assertSame('confirmed', $session->fresh()->status);
+        $this->assertBalance(self::TUTOR, Ledger::TUTOR_PAYABLE, self::PAYABLE_PAISE);
+    }
+
+    public function test_a_proved_class_is_not_sent_to_ops(): void
+    {
+        $session = $this->teachAndCheckOut($this->makePackage(), Carbon::parse('2026-09-16 10:00:00'));
+
+        Carbon::setTestNow(now()->addHours(48));
+
+        $this->assertSame(0, $this->sessions()->escalateUnconfirmedManual());
+        $this->assertSame(1, $this->sessions()->autoConfirmDue());
+    }
+
+    public function test_the_family_is_asked_to_confirm_and_told_how_it_resolves(): void
+    {
+        $manual = $this->teachAndCheckOut($this->makePackage(), Carbon::parse('2026-09-16 10:00:00'), 'manual');
+        $proved = $this->teachAndCheckOut($this->makePackage(), Carbon::parse('2026-09-17 10:00:00'));
+
+        $asked = \App\Nxt\Dashboard\Models\AppNotification::where('event', 'session.confirm_requested')
+            ->get()->keyBy(fn ($n) => str_contains($n->deep_link, $manual->id) ? 'manual' : 'proved');
+
+        $this->assertStringContainsString('only you can confirm', $asked['manual']->body);
+        $this->assertStringNotContainsString('automatically', $asked['manual']->body);
+        $this->assertStringContainsString('automatically in 24 hours', $asked['proved']->body);
+        $this->assertStringContainsString($proved->id, $asked['proved']->deep_link);
+    }
+
+    private function teachAndCheckOut(Package $package, Carbon $startsAt, string $method = 'parent_otp'): TutoringSession
     {
         Carbon::setTestNow(self::NOW);
 
@@ -554,7 +645,14 @@ class AutoConfirmTest extends DashboardTestCase
         $session = $this->sessions()->schedule($package, $startsAt, 60, 'home', 'Flat 402, Sector 45');
 
         Carbon::setTestNow($startsAt);
-        $session = $this->sessions()->checkIn($session, $package->tutor_user_id, 'geofence', 28.4595, 77.0266, 12);
+        // The family's code, which is proof the class happened. This used to
+        // be a geo-fence against an address with no coordinates — which is
+        // silently a manual check-in, and manual check-ins no longer confirm
+        // on silence.
+        $code = $method === 'parent_otp'
+            ? app(\App\Nxt\Dashboard\Services\CheckInProof::class)->issue($session)
+            : null;
+        $session = $this->sessions()->checkIn($session, $package->tutor_user_id, $method, code: $code);
 
         Carbon::setTestNow($startsAt->copy()->addHour());
 
