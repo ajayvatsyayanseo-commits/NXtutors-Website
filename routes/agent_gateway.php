@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use App\Http\Controllers\Api\AgentGatewayController;
+use App\Http\Controllers\Api\StudentAgentController;
 use App\Http\Middleware\VerifyAgentSignature;
 use Illuminate\Support\Facades\Route;
 
@@ -46,4 +47,24 @@ Route::middleware([VerifyAgentSignature::class, 'throttle:agent-gateway'])
             ->name('subscriptions.activate');
         Route::get('/operators/{operatorRef}/regions', [AgentGatewayController::class, 'regionAuthorization'])
             ->name('operators.regions');
+
+        /*
+         * The Student agent. Three reads and one write, behind the same
+         * signature gate as everything above.
+         *
+         * It owns the analytics over attendance and syllabus coverage and
+         * nothing else — Session owns whether a class happened — so it reads
+         * classes and topic logs and never writes either. The one write is a
+         * notification: the agent raises an alert and stops, because its
+         * contract forbids it from messaging a parent, and this site decides
+         * what to do with the fact.
+         */
+        Route::get('/students/{ref}/attendance', [StudentAgentController::class, 'attendance'])
+            ->name('students.attendance');
+        Route::get('/students/{ref}/session-logs', [StudentAgentController::class, 'sessionLogs'])
+            ->name('students.session-logs');
+        Route::get('/students/{ref}/goals', [StudentAgentController::class, 'goals'])
+            ->name('students.goals');
+        Route::post('/students/{ref}/alerts', [StudentAgentController::class, 'recordAlert'])
+            ->name('students.alerts');
     });
