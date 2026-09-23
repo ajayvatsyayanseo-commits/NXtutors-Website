@@ -37,6 +37,17 @@
             "body_base64": null
         },
         {
+            "method": "GET",
+            "uri": "/api/agent/v1/students/stu_abc/consent?purpose=learning_records",
+            "headers": {
+                "X-Nxt-Signature": "v1=29c19614b4bc42ae87c97bc6c3590e0158f9cbb9ea08fd1653539269dfed765f",
+                "X-Nxt-Timestamp": "1758600000",
+                "X-Nxt-Agent": "student_agent",
+                "Accept": "application/json"
+            },
+            "body_base64": null
+        },
+        {
             "method": "POST",
             "uri": "/api/agent/v1/students/stu_abc/alerts",
             "headers": {

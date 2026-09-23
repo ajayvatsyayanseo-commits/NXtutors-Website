@@ -80,4 +80,30 @@ return [
         'Tutor Featured' => 10,
     ],
 
+    /*
+    |---------------------------------------------------------------------------
+    | Verifiable parental consent (DPDP Act 2023)
+    |---------------------------------------------------------------------------
+    |
+    | PLACEHOLDER WORDING — NOT LEGALLY REVIEWED.
+    |
+    | What a parent is told before they consent is a legal question, not an
+    | engineering one, so the text lives here rather than in the service: it can
+    | be replaced by whoever signs it off without a code change, and the version
+    | recorded against each consent says which text that parent actually saw.
+    |
+    | Bump `consent_version` whenever the notice changes in a way that alters
+    | what was agreed to. Consents already recorded keep their own version, so
+    | a later question about what someone agreed to has an answer.
+    |
+    */
+    'consent_version' => env('NXT_CONSENT_VERSION', 'v1-draft'),
+
+    'consent_notice' => env(
+        'NXT_CONSENT_NOTICE',
+        'Enter this code to confirm you are the parent or guardian of this student '
+        .'and agree to NXTutors recording their attendance, topics covered and '
+        .'progress. You can withdraw this at any time from your account.'
+    ),
+
 ];

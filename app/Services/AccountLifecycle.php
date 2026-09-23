@@ -63,6 +63,14 @@ class AccountLifecycle
     /** Rows kept (other people or the law rely on them) with personal fields blanked. */
     private const ANONYMISE = [
         'nxt_leads' => ['by' => 'student_user_id', 'set' => ['contact_name' => null, 'student_name' => null, 'phone' => null, 'phone_hash' => null]],
+        // The consent record is kept: "we had permission, from this date to
+        // that one" is the evidence that this erasure was itself lawful, and
+        // deleting it would destroy the proof along with the data. The parent's
+        // name is not needed for that and goes. `parent_phone_hash` stays —
+        // it is a pseudonym rather than a number, and it is the only thing
+        // that makes the record mean anything. Flagged in the D10 write-up as
+        // a question for whoever signs off the DPDP position.
+        'nxt_parental_consents' => ['by' => 'student_user_id', 'set' => ['parent_name' => null]],
         'nxt_sessions' => ['by' => 'student_user_id', 'set' => ['address' => null, 'address_lat' => null, 'address_lng' => null, 'meeting_url' => null]],
         'order_managment' => ['by' => 'user_id', 'set' => ['fname' => null, 'lname' => null, 'copmany' => null, 'street_address' => null, 'phone' => null, 'email' => null, 'note' => null]],
     ];
@@ -143,6 +151,15 @@ class AccountLifecycle
 
             $this->eraseAiConversations($userId);
             $this->eraseReviews($userId, $email);
+
+            // Consent has to stop being live at the same moment the data goes,
+            // not when some later job notices. It is a status change rather
+            // than a delete, so it is done by the service that owns those
+            // transitions — behind a table guard, because this runs against a
+            // production schema that may not have the migration yet.
+            if (Schema::hasTable('nxt_parental_consents')) {
+                app(\App\Nxt\Dashboard\Services\ParentalConsentFlow::class)->withdrawAll($userId);
+            }
 
             if ($phoneHash && Schema::hasTable('demo_leads')) {
                 DB::table('demo_leads')->where('phone_hash', $phoneHash)->delete();

@@ -59,6 +59,7 @@ final class AgentGatewaySignatureTest extends TestCase
             'student attendance' => ['GET', '/api/agent/v1/students/S-1/attendance'],
             'student session logs' => ['GET', '/api/agent/v1/students/S-1/session-logs'],
             'student goals' => ['GET', '/api/agent/v1/students/S-1/goals'],
+            'student consent' => ['GET', '/api/agent/v1/students/S-1/consent'],
             'student alerts' => ['POST', '/api/agent/v1/students/S-1/alerts'],
         ];
     }

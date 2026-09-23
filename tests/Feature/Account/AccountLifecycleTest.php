@@ -178,6 +178,31 @@ class AccountLifecycleTest extends TestCase
         $this->assertSame(0, DB::table('teacher_review')->where('email', 'ravi@example.com')->count());
     }
 
+    public function test_erasure_stops_consent_being_live_but_keeps_the_record(): void
+    {
+        /* Two obligations that pull in opposite directions, and both are met.
+           Processing must stop at the moment of erasure — an agent asking
+           "may I?" the next minute must be told no. But "we had permission,
+           from this date to that one" is the evidence that this very erasure
+           was lawful, so the row survives with its dates intact. */
+        config()->set('agent.hash_pepper', 'account-test-pepper');
+
+        $flow = app(\App\Nxt\Dashboard\Services\ParentalConsentFlow::class);
+        $code = $flow->request(self::STUDENT, '9876543210', 'learning_records');
+        $flow->confirm(self::STUDENT, 'learning_records', $code);
+        $this->assertNotNull($flow->current(self::STUDENT, 'learning_records'));
+
+        app(AccountLifecycle::class)->purge(Register::where('user_id', self::STUDENT)->firstOrFail());
+
+        $this->assertNull($flow->current(self::STUDENT, 'learning_records'));
+
+        $row = DB::table('nxt_parental_consents')->where('student_user_id', self::STUDENT)->first();
+        $this->assertNotNull($row, 'the consent record was deleted along with the data it permitted');
+        $this->assertNotNull($row->verified_at);
+        $this->assertNotNull($row->withdrawn_at);
+        $this->assertNull($row->parent_name, 'the parent name is not needed to prove consent existed');
+    }
+
     public function test_cancelling_restores_the_account_and_its_visibility(): void
     {
         $this->withSession(['userid' => self::TUTOR])

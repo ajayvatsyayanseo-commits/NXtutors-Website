@@ -419,4 +419,95 @@ final class StudentAgentGatewayTest extends TestCase
 
         $this->assertStringContainsString('needs attention', (string) AppNotification::query()->sole()->title);
     }
+
+    // ------------------------------------------------------------- consent
+
+    private function consentPath(string $purpose = 'learning_records'): string
+    {
+        return '/api/agent/v1/students/'.self::STUDENT.'/consent?purpose='.$purpose;
+    }
+
+    private function grantConsent(string $purpose = 'learning_records'): void
+    {
+        config()->set('agent.hash_pepper', 'student-agent-test-pepper');
+
+        $flow = app(\App\Nxt\Dashboard\Services\ParentalConsentFlow::class);
+        $code = $flow->request(self::STUDENT, '9876543210', $purpose);
+        $flow->confirm(self::STUDENT, $purpose, $code);
+    }
+
+    public function test_a_verified_consent_is_reported_to_the_agent(): void
+    {
+        $this->grantConsent();
+
+        $this->agentGet($this->consentPath())
+            ->assertOk()
+            ->assertJson([
+                'verified' => true,
+                'method' => 'parent_otp',
+                'purpose' => 'learning_records',
+            ]);
+    }
+
+    public function test_no_consent_record_reads_as_not_consented(): void
+    {
+        /* Fails closed. "We could not find a record" must never be delivered
+           to the agent as anything an agent could read as permission. */
+        $this->agentGet($this->consentPath())->assertOk()->assertJson(['verified' => false]);
+    }
+
+    public function test_an_unconfirmed_request_reads_as_not_consented(): void
+    {
+        config()->set('agent.hash_pepper', 'student-agent-test-pepper');
+        app(\App\Nxt\Dashboard\Services\ParentalConsentFlow::class)
+            ->request(self::STUDENT, '9876543210', 'learning_records');
+
+        $this->agentGet($this->consentPath())->assertOk()->assertJson(['verified' => false]);
+    }
+
+    public function test_a_withdrawn_consent_reads_as_not_consented(): void
+    {
+        $this->grantConsent();
+        app(\App\Nxt\Dashboard\Services\ParentalConsentFlow::class)
+            ->withdraw(self::STUDENT, 'learning_records');
+
+        $this->agentGet($this->consentPath())->assertOk()->assertJson(['verified' => false]);
+    }
+
+    public function test_consent_for_one_purpose_is_not_reported_for_another(): void
+    {
+        $this->grantConsent('learning_records');
+
+        $this->agentGet($this->consentPath('marketing'))->assertOk()->assertJson(['verified' => false]);
+    }
+
+    public function test_an_unknown_student_is_a_404_not_an_unconsented_one(): void
+    {
+        /* Different problems. A typo that read as "not consented" would have
+           the agent quietly skip a real child instead of reporting it. */
+        $this->agentGet('/api/agent/v1/students/S-nobody/consent')
+            ->assertStatus(404)
+            ->assertJson(['error' => 'student_not_found']);
+    }
+
+    public function test_no_phone_number_appears_in_a_consent_response(): void
+    {
+        $this->grantConsent();
+
+        $response = $this->agentGet($this->consentPath())->assertOk();
+
+        $this->assertStringNotContainsString('9876543210', (string) $response->getContent());
+        $this->assertStringStartsWith('ph_', (string) $response->json('parent_record_ref'));
+    }
+
+    public function test_there_is_no_route_for_an_agent_to_grant_consent(): void
+    {
+        /* The boundary, pinned. Issuing a code means messaging a family, which
+           the agent's contract forbids, and a permission an automated caller
+           can mint for itself is not a permission. If a POST is ever added
+           here, this fails and somebody has to argue for it. */
+        $path = '/api/agent/v1/students/'.self::STUDENT.'/consent';
+
+        $this->postJson($path, [], $this->signed('POST', $path, '[]'))->assertStatus(405);
+    }
 }

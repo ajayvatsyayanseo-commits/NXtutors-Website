@@ -7,6 +7,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Models\Register;
 use App\Nxt\Dashboard\Models\AppNotification;
+use App\Nxt\Dashboard\Services\ParentalConsentFlow;
 use App\NxtAi\Support\AgentPseudonymiser;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -220,6 +221,61 @@ final class StudentAgentController extends Controller
             'captured_at' => $lead->created_at
                 ? Carbon::parse($lead->created_at)->toIso8601ZuluString()
                 : null,
+        ]);
+    }
+
+    /**
+     * `GET /students/{ref}/consent` — may this child's data be processed?
+     *
+     * The DPDP Act 2023 requires verifiable parental consent before a child's
+     * personal data is processed, and the agent's §5 forbids it from creating
+     * a student profile without one. This is where it asks.
+     *
+     * **Read only, and deliberately so.** There is no route for an agent to
+     * request or grant consent, and there should not be: issuing a code means
+     * messaging a family, which §5 forbids, and a permission an automated
+     * caller can mint for itself is not a permission. Collection happens
+     * through {@see \App\Nxt\Dashboard\Services\ParentalConsentFlow} on this
+     * side, driven by a person.
+     *
+     * Fails closed in every direction. No record, an unconfirmed one, an
+     * expired one and a withdrawn one all answer `verified: false`, because an
+     * agent that could tell them apart would eventually treat one of them as
+     * good enough. A missing student is the one exception and is still a 404:
+     * "this child does not exist" is a different problem from "this child has
+     * not consented", and conflating them would have the agent quietly skip a
+     * typo instead of reporting it.
+     */
+    public function consent(Request $request, string $ref): JsonResponse
+    {
+        $studentUserId = $this->resolveStudent($ref);
+        if ($studentUserId === null) {
+            return response()->json(['error' => 'student_not_found'], 404);
+        }
+
+        $purpose = (string) $request->query('purpose', 'learning_records');
+        $consent = app(ParentalConsentFlow::class)->current($studentUserId, $purpose);
+
+        if ($consent === null) {
+            return $this->ok([
+                'student_ref' => $this->studentRef($ref, $studentUserId),
+                'purpose' => $purpose,
+                'verified' => false,
+            ]);
+        }
+
+        return $this->ok([
+            'student_ref' => $this->studentRef($ref, $studentUserId),
+            'purpose' => $purpose,
+            'verified' => true,
+            'recorded_at' => $consent->verified_at?->toIso8601ZuluString(),
+            'method' => 'parent_otp',
+            // There is no parent record to point at, so the reference is the
+            // pseudonym every agent already uses for a person. It is enough to
+            // say "this number consented" without this response — or the table
+            // behind it — ever carrying the number.
+            'parent_record_ref' => 'ph_'.$consent->parent_phone_hash,
+            'consent_version' => $consent->consent_version,
         ]);
     }
 

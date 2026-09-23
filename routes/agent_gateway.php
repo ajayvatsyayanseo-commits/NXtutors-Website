@@ -65,6 +65,15 @@ Route::middleware([VerifyAgentSignature::class, 'throttle:agent-gateway'])
             ->name('students.session-logs');
         Route::get('/students/{ref}/goals', [StudentAgentController::class, 'goals'])
             ->name('students.goals');
+
+        /*
+         * Consent is readable and not writable, on purpose. Issuing a code
+         * means messaging a family, which the agent's contract forbids, and a
+         * permission an automated caller can grant itself is not one. There is
+         * no POST here and there should never be.
+         */
+        Route::get('/students/{ref}/consent', [StudentAgentController::class, 'consent'])
+            ->name('students.consent');
         Route::post('/students/{ref}/alerts', [StudentAgentController::class, 'recordAlert'])
             ->name('students.alerts');
     });
