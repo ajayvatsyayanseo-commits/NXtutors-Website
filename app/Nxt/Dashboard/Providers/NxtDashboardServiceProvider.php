@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Nxt\Dashboard\Providers;
 
 use App\Nxt\Dashboard\Console\Commands\AutoConfirmSessionsCommand;
+use App\Nxt\Dashboard\Console\Commands\DeliverAgentEventsCommand;
 use App\Nxt\Dashboard\Console\Commands\IssueCheckInCodesCommand;
 use App\Nxt\Dashboard\Console\Commands\RecomputeReliabilityCommand;
 use App\Nxt\Dashboard\Console\Commands\RelayOutboxCommand;
@@ -44,6 +45,7 @@ class NxtDashboardServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 AutoConfirmSessionsCommand::class,
+                DeliverAgentEventsCommand::class,
                 IssueCheckInCodesCommand::class,
                 RecomputeReliabilityCommand::class,
                 RelayOutboxCommand::class,

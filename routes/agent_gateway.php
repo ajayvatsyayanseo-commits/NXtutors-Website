@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use App\Http\Controllers\Api\AgentGatewayController;
+use App\Http\Controllers\Api\SessionAgentController;
 use App\Http\Controllers\Api\StudentAgentController;
 use App\Http\Middleware\VerifyAgentSignature;
 use Illuminate\Support\Facades\Route;
@@ -76,4 +77,21 @@ Route::middleware([VerifyAgentSignature::class, 'throttle:agent-gateway'])
             ->name('students.consent');
         Route::post('/students/{ref}/alerts', [StudentAgentController::class, 'recordAlert'])
             ->name('students.alerts');
+
+        /*
+         * The Session agent. Three reads and one write.
+         *
+         * This site owns classes; the agent books a family's timetable by
+         * asking SessionFlow, which applies every rule the tutor's own screen
+         * does, and reads back what happened for timesheets and the daily
+         * roll-up. No response here names a student or carries an address.
+         */
+        Route::get('/packages/{id}', [SessionAgentController::class, 'package'])
+            ->name('packages.show');
+        Route::post('/packages/{id}/sessions', [SessionAgentController::class, 'scheduleClass'])
+            ->name('packages.sessions.schedule');
+        Route::get('/tutors/{ref}/sessions', [SessionAgentController::class, 'tutorSessions'])
+            ->name('tutors.sessions');
+        Route::get('/sessions', [SessionAgentController::class, 'daySessions'])
+            ->name('sessions.day');
     });
