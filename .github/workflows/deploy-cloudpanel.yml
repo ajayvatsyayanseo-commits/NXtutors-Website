@@ -233,6 +233,10 @@ jobs:
           # cannot be set.
           AGENT_FEED_ALLOWED_AGENTS: ${{ vars.AGENT_FEED_ALLOWED_AGENTS || secrets.AGENT_FEED_ALLOWED_AGENTS }}
           AGENT_DEFAULT_COUNTRY_CODE: ${{ vars.AGENT_DEFAULT_COUNTRY_CODE }}
+          # Where class events are pushed for the Session agent. Both unset =
+          # off. Secrets rather than variables: the variable quota is full.
+          NXT_SESSION_AGENT_EVENTS_URL: ${{ secrets.NXT_SESSION_AGENT_EVENTS_URL }}
+          NXT_SESSION_AGENT_EVENTS_SECRET: ${{ secrets.NXT_SESSION_AGENT_EVENTS_SECRET }}
           NXT_AI_FUNCTION_URL: ${{ secrets.NXT_AI_FUNCTION_URL }}
           # Ask NXT AI (in-app OpenAI agent). The key is optional: when unset the
           # module falls back to OPENAI_API_KEY above. Unset vars are omitted from
@@ -317,6 +321,7 @@ jobs:
               'DEMO_COMMAND_CENTER_SUBSCRIPTION_TYPE',
               'AGENT_FEED_SIGNING_KEY', 'AGENT_HASH_PEPPER',
               'AGENT_FEED_ALLOWED_AGENTS', 'AGENT_DEFAULT_COUNTRY_CODE',
+              'NXT_SESSION_AGENT_EVENTS_URL', 'NXT_SESSION_AGENT_EVENTS_SECRET',
               'NXT_AI_FUNCTION_URL',
               'OPENAI_API_KEY_NXT_AI', 'NXT_AI_ENABLED', 'NXT_AI_MODEL',
               'NXT_AI_REASONING_EFFORT', 'NXT_AI_MAX_TOOL_ROUNDS',

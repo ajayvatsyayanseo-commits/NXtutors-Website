@@ -46,9 +46,13 @@ class SessionFlow
     /**
      * Schedule a class against a funded package.
      *
-     * Three guards: a session may not be scheduled past the package balance,
-     * two classes with the same student may not overlap, and the family's
-     * wallet has to be able to fund the hold the class takes.
+     * Four guards: the package must be live and the class must fall before it
+     * expires; a session may not be scheduled past the package balance; two
+     * classes with the same student may not overlap; and the family's wallet
+     * has to be able to fund the hold the class takes.
+     *
+     * `$scheduleKey` makes an agent's booking safe to retry (a unique column);
+     * the tutor's own screen passes none.
      */
     public function schedule(
         Package $package,
@@ -58,14 +62,14 @@ class SessionFlow
         ?string $address = null,
         ?string $meetingUrl = null,
         ?string $subject = null,
+        ?string $scheduleKey = null,
     ): TutoringSession {
-        if ($package->sessions_used >= $package->sessions_total) {
-            throw ValidationException::withMessages([
-                'package' => 'This package has no classes left. Ask the family to renew and the slot will hold.',
-            ]);
-        }
-
-        return DB::transaction(function () use ($package, $startsAt, $plannedMin, $mode, $address, $meetingUrl, $subject) {
+        return DB::transaction(function () use ($package, $startsAt, $plannedMin, $mode, $address, $meetingUrl, $subject, $scheduleKey) {
+            // Re-read under a lock, for the same reason every transition does:
+            // two bookings racing for the last class on a package both passed a
+            // balance check made against the model the caller was holding.
+            $package = Package::whereKey($package->id)->lockForUpdate()->first() ?? $package;
+            $this->assertBookable($package, $startsAt);
             $this->assertNoOverlap($package->student_user_id, $package->tutor_user_id, $startsAt, $plannedMin);
             $this->ledger->assertCanHold($package->student_user_id, $package->rate_paise);
 
@@ -85,6 +89,7 @@ class SessionFlow
                 'status' => 'scheduled',
                 'fee_paise' => $package->rate_paise,
                 'commission_paise' => $commission,
+                'schedule_key' => $scheduleKey,
             ]);
 
             $this->ledger->holdForSession($session, $package->student_user_id);
@@ -786,6 +791,46 @@ class SessionFlow
         });
     }
 
+    /**
+     * Classes booked on a package that have not yet been delivered.
+     *
+     * `sessions_used` rises only at check-out, so it says nothing about the
+     * classes already in the diary. A balance check against it alone let a
+     * ten-class package be booked thirty times ahead, and the family paid for
+     * ten.
+     */
+    public function bookedAhead(Package $package): int
+    {
+        return TutoringSession::where('package_id', $package->id)
+            ->whereIn('status', ['scheduled', 'checked_in'])
+            ->count();
+    }
+
+    /**
+     * Is there room on this package for one more class at this time?
+     */
+    private function assertBookable(Package $package, \DateTimeInterface $startsAt): void
+    {
+        if ($package->status !== 'active') {
+            throw ValidationException::withMessages([
+                'package' => 'This package has ended. Ask the family to renew and the slot will hold.',
+            ]);
+        }
+
+        if ($package->expires_at !== null && $startsAt >= $package->expires_at) {
+            throw ValidationException::withMessages([
+                'package' => 'This class falls after the package expires on '
+                    .$package->expires_at->timezone('Asia/Kolkata')->format('j M Y').'.',
+            ]);
+        }
+
+        if ($package->sessions_used + $this->bookedAhead($package) >= $package->sessions_total) {
+            throw ValidationException::withMessages([
+                'package' => 'This package has no classes left. Ask the family to renew and the slot will hold.',
+            ]);
+        }
+    }
+
     private function assertNoOverlap(string $studentUserId, string $tutorUserId, \DateTimeInterface $startsAt, int $plannedMin): void
     {
         $start = \Illuminate\Support\Carbon::instance(
@@ -898,11 +943,16 @@ class SessionFlow
             'event' => $event,
             'payload' => array_merge([
                 'session_id' => $session->id,
+                'package_id' => $session->package_id,
                 'student_user_id' => $session->student_user_id,
                 'tutor_user_id' => $session->tutor_user_id,
                 'subject' => $session->subject,
                 'starts_at' => $session->starts_at?->toIso8601String(),
                 'status' => $session->status,
+                // What a tutor's timesheet is built from, so a subscriber does
+                // not have to call back for every event it receives.
+                'planned_min' => $session->planned_min,
+                'actual_min' => $session->actual_min,
             ], $extra),
             'correlation_id' => CorrelationId::current(),
         ]);

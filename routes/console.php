@@ -43,6 +43,14 @@ Schedule::command('nxt-dashboard:relay-outbox')
     ->everyMinute()
     ->withoutOverlapping(5);
 
+// The same events, pushed to the agents that subscribe to them (the Session
+// agent's timesheets and roll-up), each with its own delivery record so an
+// agent that is down never holds back the relay above. With no subscriber
+// configured it finds nothing to do.
+Schedule::command('nxt-dashboard:deliver-agent-events')
+    ->everyMinute()
+    ->withoutOverlapping(5);
+
 // The parent's check-in code goes out with the reminder, an hour before class.
 Schedule::command('nxt-dashboard:issue-check-in-codes')
     ->everyTenMinutes()

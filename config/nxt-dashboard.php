@@ -71,6 +71,44 @@ return [
 
     /*
     |---------------------------------------------------------------------------
+    | Agent event subscribers
+    |---------------------------------------------------------------------------
+    |
+    | Outbox events pushed to agents by nxt-dashboard:deliver-agent-events, with
+    | their own delivery record per agent. That record is separate from the relay
+    | above, so an agent that is down can never hold back a family's
+    | notification.
+    |
+    | A subscriber with no URL or no secret is off; that is the default. Bodies
+    | are signed exactly as the agents sign what they send here (X-Nxt-Signature
+    | over METHOD\nPATH\nTIMESTAMP\nsha256(body)), each with its own secret.
+    | `omit` drops payload keys an agent has no business holding.
+    |
+    */
+    'agent_events' => [
+        'batch' => (int) env('NXT_AGENT_EVENTS_BATCH', 200),
+        'max_attempts' => (int) env('NXT_AGENT_EVENTS_MAX_ATTEMPTS', 10),
+        // Older undelivered events are left alone: an agent switched on today
+        // is not flooded with last year's history.
+        'lookback_hours' => (int) env('NXT_AGENT_EVENTS_LOOKBACK_HOURS', 72),
+        'timeout_seconds' => (int) env('NXT_AGENT_EVENTS_TIMEOUT', 5),
+        'subscribers' => [
+            'session_agent' => [
+                'url' => env('NXT_SESSION_AGENT_EVENTS_URL'),
+                'secret' => env('NXT_SESSION_AGENT_EVENTS_SECRET'),
+                'events' => [
+                    'session.scheduled', 'session.checked_in', 'session.checked_out',
+                    'session.confirmed', 'session.disputed', 'session.dispute_resolved',
+                    'session.no_show', 'session.cancelled', 'session.abandoned',
+                ],
+                // Timesheets and the roll-up are about tutors and classes.
+                'omit' => ['student_user_id'],
+            ],
+        ],
+    ],
+
+    /*
+    |---------------------------------------------------------------------------
     | Commission by tutor plan
     |---------------------------------------------------------------------------
     |
