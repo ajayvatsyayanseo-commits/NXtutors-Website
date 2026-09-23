@@ -50,9 +50,12 @@ final class StudentAgentGatewayTest extends TestCase
             $t->dateTime('deleted_at')->nullable();
         });
 
+        // Both rows carry the same keys: a multi-row insert with differing
+        // columns is a hard error on SQLite ("all VALUES must have the same
+        // number of terms") even though MySQL would accept it.
         DB::table('register')->insert([
-            ['user_id' => self::STUDENT, 'name' => 'Aarav', 'join_as' => 'student', 'phone_hash' => 'a1b2c3d4e5f60718'],
-            ['user_id' => self::TUTOR, 'name' => 'Meera', 'join_as' => 'teacher'],
+            ['user_id' => self::STUDENT, 'name' => 'Aarav', 'join_as' => 'student', 'status' => 't', 'phone_hash' => 'a1b2c3d4e5f60718'],
+            ['user_id' => self::TUTOR, 'name' => 'Meera', 'join_as' => 'teacher', 'status' => 't', 'phone_hash' => null],
         ]);
     }
 
@@ -70,9 +73,18 @@ final class StudentAgentGatewayTest extends TestCase
         ];
     }
 
+    /**
+     * `get()`, not `getJson()`.
+     *
+     * `getJson` serialises an empty payload to `[]` and sends it as the body
+     * even on a GET, which no real agent does — the agent signs `sha256(b"")`.
+     * Signing what the framework happens to send would pin a test artefact
+     * instead of the production contract, and every one of these would pass
+     * against a middleware that had stopped verifying reads at all.
+     */
     private function agentGet(string $path): \Illuminate\Testing\TestResponse
     {
-        return $this->getJson($path, $this->signed('GET', $path));
+        return $this->get($path, $this->signed('GET', $path));
     }
 
     private function makeSession(string $id, string $startsAt, string $status, ?string $topics = null): void
@@ -253,10 +265,13 @@ final class StudentAgentGatewayTest extends TestCase
     {
         $this->makeSession('s1', '2026-09-01 10:00:00', 'confirmed');
 
-        $body = $this->agentGet('/api/agent/v1/students/'.self::STUDENT.'/attendance?since=2026-09-01T00:00:00Z')
-            ->getContent();
+        $response = $this->agentGet('/api/agent/v1/students/'.self::STUDENT.'/attendance?since=2026-09-01T00:00:00Z');
 
-        $this->assertStringNotContainsString('phone', (string) $body);
+        // assertOk first, on purpose: a 401 body contains no phone number
+        // either, so without this the assertion below passes while proving
+        // nothing at all.
+        $response->assertOk();
+        $this->assertStringNotContainsString('phone', (string) $response->getContent());
     }
 
     // ---------------------------------------------------------- session logs
