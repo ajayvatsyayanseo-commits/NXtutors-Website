@@ -214,6 +214,25 @@ jobs:
           DEMO_COMMAND_CENTER_SUBSCRIPTION_ACTIVE_STATUS: ${{ vars.DEMO_COMMAND_CENTER_SUBSCRIPTION_ACTIVE_STATUS }}
           DEMO_COMMAND_CENTER_SUBSCRIPTION_PAID_STATUS: ${{ vars.DEMO_COMMAND_CENTER_SUBSCRIPTION_PAID_STATUS }}
           DEMO_COMMAND_CENTER_SUBSCRIPTION_TYPE: ${{ vars.DEMO_COMMAND_CENTER_SUBSCRIPTION_TYPE }}
+          # Agent feed and gateway: the read-only tutor feed, the Demo Command
+          # Center gateway and the Student agent routes all authenticate with
+          # these. They were missing from this list, and the remote step does
+          # `mv .env.next .env` — the file is replaced wholesale, so a value set
+          # by hand on the box survives exactly until the next push to main.
+          #
+          # The failure is silent in both directions. With no signing key
+          # VerifyAgentSignature refuses every request as 503
+          # `feed_not_configured`; with no pepper AgentPseudonymiser throws, so
+          # every lookup misses and — because an unresolvable contact fails
+          # closed as opted-out — every message the agent tries to send is
+          # suppressed without an error anywhere.
+          AGENT_FEED_SIGNING_KEY: ${{ secrets.AGENT_FEED_SIGNING_KEY }}
+          AGENT_HASH_PEPPER: ${{ secrets.AGENT_HASH_PEPPER }}
+          # Variable-or-secret, as NXT_AI_ENABLED below: the environment is at
+          # GitHub's 100-variable cap, and this must not be the setting that
+          # cannot be set.
+          AGENT_FEED_ALLOWED_AGENTS: ${{ vars.AGENT_FEED_ALLOWED_AGENTS || secrets.AGENT_FEED_ALLOWED_AGENTS }}
+          AGENT_DEFAULT_COUNTRY_CODE: ${{ vars.AGENT_DEFAULT_COUNTRY_CODE }}
           NXT_AI_FUNCTION_URL: ${{ secrets.NXT_AI_FUNCTION_URL }}
           # Ask NXT AI (in-app OpenAI agent). The key is optional: when unset the
           # module falls back to OPENAI_API_KEY above. Unset vars are omitted from
@@ -296,6 +315,8 @@ jobs:
               'DEMO_COMMAND_CENTER_SUBSCRIPTION_ACTIVE_STATUS',
               'DEMO_COMMAND_CENTER_SUBSCRIPTION_PAID_STATUS',
               'DEMO_COMMAND_CENTER_SUBSCRIPTION_TYPE',
+              'AGENT_FEED_SIGNING_KEY', 'AGENT_HASH_PEPPER',
+              'AGENT_FEED_ALLOWED_AGENTS', 'AGENT_DEFAULT_COUNTRY_CODE',
               'NXT_AI_FUNCTION_URL',
               'OPENAI_API_KEY_NXT_AI', 'NXT_AI_ENABLED', 'NXT_AI_MODEL',
               'NXT_AI_REASONING_EFFORT', 'NXT_AI_MAX_TOOL_ROUNDS',
@@ -437,6 +458,12 @@ jobs:
           # --path above scopes migrate to one package, so they need their own
           # run or the chat 500s on every request with "table not found".
           "$php_binary" artisan migrate --force --path=app/NxtAi/Database/Migrations
+          # Dashboard tables, for the same reason. Checked on production before
+          # this was added (migrate:status, 2026-09-23): all eight existing
+          # Dashboard migrations are recorded as Ran in batch 12, so this only
+          # runs what is new — without it the alert dedupe column and the
+          # parental consent table would never be created.
+          "$php_binary" artisan migrate --force --path=app/Nxt/Dashboard/Database/Migrations
           "$php_binary" artisan storage:link || true
           "$php_binary" artisan config:cache
           "$php_binary" artisan view:cache
