@@ -68,13 +68,36 @@
           {{-- TOP META --}}
           {{-- ============================= --}}
           <div class="genp-top">
-            <div class="genp-breadcrumb">
-              <a href="/" class="genp-link">Home</a>
+            {{-- India › state › city › area › this page, instead of the old
+                 "Home › Pages", so every generated page links up to the city
+                 and area hubs it belongs to. --}}
+            @php
+              $gpCitySlug = \App\Support\Geo::slugFor($page->city);
+              $gpCity = $gpCitySlug !== '' ? \App\Models\City::where('slug', $gpCitySlug)->where('status', 't')->first(['city_name', 'slug']) : null;
+              $gpArea = $gpCity ? \App\Support\CityHub::areaFor($gpCity->slug, $page->location) : null;
+              $gpSiblings = $gpCity && trim((string) $page->location) !== ''
+                ? \App\Support\CityHub::pages($gpCity->slug)
+                    ->filter(fn ($p) => strcasecmp(trim((string) $p->location), trim((string) $page->location)) === 0 && $p->slug !== $page->slug)
+                    ->take(24)->values()
+                : collect();
+            @endphp
+            <nav class="genp-breadcrumb" aria-label="Breadcrumb">
+              <a href="{{ url('/') }}" class="genp-link">Home</a>
               <span class="genp-sep">›</span>
-              <a href="/page" class="genp-link">Pages</a>
+              <a href="{{ url('/city') }}" class="genp-link">India</a>
+              @if($gpCity)
+                <span class="genp-sep">›</span>
+                <a href="{{ url('/city') }}#{{ \App\Support\Geo::stateSlug(\App\Support\Geo::stateOf($gpCity->slug)) }}" class="genp-link">{{ \App\Support\Geo::stateOf($gpCity->slug) }}</a>
+                <span class="genp-sep">›</span>
+                <a href="{{ url('/city/'.$gpCity->slug) }}" class="genp-link">{{ $gpCity->city_name }}</a>
+                @if($gpArea)
+                  <span class="genp-sep">›</span>
+                  <a href="{{ url('/city/'.$gpCity->slug.'/'.$gpArea->slug) }}" class="genp-link">{{ $gpArea->name }}</a>
+                @endif
+              @endif
               <span class="genp-sep">›</span>
               <span class="genp-current">{{ $page->title }}</span>
-            </div>
+            </nav>
 
             <div class="genp-meta">
               <span class="genp-pill">{{ $page->city }} • {{ $page->location }}</span>
@@ -845,6 +868,34 @@ document.addEventListener('DOMContentLoaded', function () {
             <article class="genp-content">
               {!! $page->html !!}
             </article>
+          @endif
+
+          {{-- Sibling subjects and boards in the same locality, and the way
+               up to the area and city hubs. --}}
+          @if($gpSiblings->count() || $gpCity)
+            <section class="nxsec genp-more" aria-labelledby="genpMoreTitle">
+              <h2 class="nxh2" id="genpMoreTitle">More home tutors in {{ $page->location ?: $page->city }}</h2>
+              @if($gpSiblings->count())
+                <ul class="genp-more__list">
+                  @foreach($gpSiblings as $sib)
+                    <li><a href="{{ url('/p/'.$sib->slug) }}">{{ $sib->title }}</a></li>
+                  @endforeach
+                </ul>
+              @endif
+              @if($gpCity)
+                <p class="genp-more__up">
+                  @if($gpArea)<a href="{{ url('/city/'.$gpCity->slug.'/'.$gpArea->slug) }}">All tutors in {{ $gpArea->name }}</a> · @endif
+                  <a href="{{ url('/city/'.$gpCity->slug) }}">Home tutors across {{ $gpCity->city_name }}</a> ·
+                  <a href="{{ url('/city') }}">All cities in India</a>
+                </p>
+              @endif
+            </section>
+            <style>
+              .genp-more__list{list-style:none;margin:10px 0 0;padding:0;columns:2 280px;column-gap:24px}
+              .genp-more__list li{break-inside:avoid;padding:4px 0;font-size:14px;line-height:1.4}
+              .genp-more a{color:#c9d6ff}
+              .genp-more__up{margin-top:12px;line-height:1.8}
+            </style>
           @endif
 
         </div>

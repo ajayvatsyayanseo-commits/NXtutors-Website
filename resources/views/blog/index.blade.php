@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  @php $metatitle = 'Blogs - NXTutors'; @endphp
-  @php $metadesc = 'Latest blogs and guides by NXTutors'; @endphp
+  @php $metatitle = 'Study Guides for CBSE, ICSE, IB, JEE & NEET | NXTutors Blog'; @endphp
+  @php $metadesc = 'Board-by-board study plans, JEE and NEET preparation, SAT and IELTS guides, and advice on choosing a home tutor, plus local guides for Gurugram neighbourhoods.'; @endphp
   <style>
     /* ====== Page container ====== */
 .container{
@@ -259,7 +259,7 @@
 
   <section class="nxsec">
     <div class="nxsec__head">
-      <h1 class="nxh1">Blogs</h1>
+      <h1 class="nxh1">Guides for parents and students</h1>
 
       <form id="blogFilter" class="filterbar">
         <input type="text" name="q" placeholder="Search blogs..." value="{{ request('q') }}">
@@ -281,6 +281,72 @@
       </button>
     </div>
   </section>
+
+  {{-- Every guide as a plain link, grouped by topic; local guides grouped by
+       neighbourhood and linked to that neighbourhood's area page. The cards
+       above load nine at a time by AJAX, which search engines do not click. --}}
+  @php
+    $topicPosts = \Illuminate\Support\Facades\DB::table('blog_managment')
+      ->where('status', 't')->whereNotNull('slug')->where('slug', '!=', '')
+      ->orderBy('title')->get(['title', 'slug']);
+    $byTopic = [];
+    foreach ($topicPosts as $tp) {
+      $byTopic[\App\Support\BlogTopics::of($tp->slug)][] = $tp;
+    }
+    $byLocality = [];
+    foreach ($byTopic['city'] ?? [] as $tp) {
+      $byLocality[\App\Support\BlogTopics::localityOf($tp->slug) ?? 'other'][] = $tp;
+    }
+  @endphp
+  <section class="nxsec topics" aria-labelledby="topicsTitle">
+    <h2 class="nxh2" id="topicsTitle">Browse guides by topic</h2>
+    <div class="topic-grid">
+      @foreach(\App\Support\BlogTopics::TOPICS as $key => $label)
+        @continue($key === 'city' || empty($byTopic[$key]))
+        <div class="topic" id="topic-{{ $key }}">
+          <h3>{{ $label }}</h3>
+          <ul>
+            @foreach($byTopic[$key] as $tp)
+              <li><a href="{{ url('/blog/'.trim($tp->slug)) }}">{{ $tp->title }}</a></li>
+            @endforeach
+          </ul>
+        </div>
+      @endforeach
+    </div>
+
+    @if(count($byLocality))
+      <h2 class="nxh2" id="topic-city">{{ \App\Support\BlogTopics::TOPICS['city'] }}</h2>
+      <div class="topic-grid">
+        @foreach($byLocality as $loc => $posts)
+          @php $locArea = $loc !== 'other' ? \App\Support\CityHub::areaFor('gurugram', str_replace('-', ' ', $loc)) : null; @endphp
+          <div class="topic">
+            <h3>
+              @if($locArea)
+                <a href="{{ url('/city/gurugram/'.$locArea->slug) }}">Home tutors in {{ $locArea->name }}, Gurugram</a>
+              @else
+                {{ ucwords(str_replace('-', ' ', $loc)) }}
+              @endif
+            </h3>
+            <ul>
+              @foreach($posts as $tp)
+                <li><a href="{{ url('/blog/'.trim($tp->slug)) }}">{{ $tp->title }}</a></li>
+              @endforeach
+            </ul>
+          </div>
+        @endforeach
+      </div>
+    @endif
+
+    <p class="topic-up">Looking for a tutor rather than a guide? <a href="{{ url('/city') }}">Find home tutors in your city →</a></p>
+  </section>
+  <style>
+    .topics{color:#fff}
+    .topic-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;margin:12px 0 24px}
+    .topic h3{font-size:15px;font-weight:800;margin:0 0 6px}
+    .topic ul{list-style:none;margin:0;padding:0}
+    .topic li{padding:4px 0;font-size:14px;line-height:1.4}
+    .topics a{color:#c9d6ff}
+  </style>
 
 </main>
 

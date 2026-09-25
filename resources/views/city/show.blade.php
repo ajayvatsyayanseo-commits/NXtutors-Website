@@ -18,8 +18,9 @@
       "@type" => "BreadcrumbList",
       "itemListElement" => [
         ["@type"=>"ListItem","position"=>1,"name"=>"Home","item"=>$baseUrl],
-        ["@type"=>"ListItem","position"=>2,"name"=>"Cities","item"=>url('/city')],
-        ["@type"=>"ListItem","position"=>3,"name"=>$city->city_name,"item"=>$pageUrl],
+        ["@type"=>"ListItem","position"=>2,"name"=>"India","item"=>url('/city')],
+        ["@type"=>"ListItem","position"=>3,"name"=>$hubState,"item"=>url('/city').'#'.\App\Support\Geo::stateSlug($hubState)],
+        ["@type"=>"ListItem","position"=>4,"name"=>$city->city_name,"item"=>$pageUrl],
       ],
     ];
 
@@ -33,6 +34,7 @@
       "address" => [
         "@type" => "PostalAddress",
         "addressLocality" => $city->city_name,
+        "addressRegion" => $hubState,
         "addressCountry" => "IN",
       ],
     ];
@@ -109,6 +111,27 @@
       padding:10px 16px;border-radius:999px;font-weight:800;text-align:center;flex:1;
     }
     .btn-outline:hover{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.35)}
+    .crumbs{font-size:13px;color:#fff;opacity:.75;margin:0 0 10px}
+    .crumbs a{color:#c9d6ff}
+    .stats{list-style:none;display:flex;flex-wrap:wrap;gap:8px 16px;margin:10px 0 0;padding:0;font-size:14px}
+    .stats strong{color:#9fb4ff}
+    .blk{margin-top:36px;color:#fff}
+    .blk h2,.sub-h{font-size:22px;font-weight:900;margin:0 0 12px;color:#fff}
+    .sub-h{margin-top:36px}
+    .blk a{color:#c9d6ff}
+    .tutor-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+    .tutor-card a{display:grid;grid-template-columns:56px 1fr;grid-template-rows:auto auto;column-gap:12px;align-items:center;padding:12px;border-radius:14px;border:1px solid rgba(255,255,255,.12);text-decoration:none;color:#fff}
+    .tutor-card img{grid-row:span 2;width:56px;height:56px;border-radius:50%;object-fit:cover}
+    .t-name{font-weight:800}
+    .t-meta{font-size:13px;opacity:.7}
+    .more{margin-top:10px}
+    .track-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
+    .track h3{font-size:15px;font-weight:800;margin:0 0 6px}
+    .track ul,.guide-list{list-style:none;margin:0;padding:0}
+    .track li,.guide-list li{padding:4px 0;font-size:14px;line-height:1.4}
+    .faq{border-bottom:1px solid rgba(255,255,255,.12);padding:10px 0}
+    .faq summary{cursor:pointer;font-weight:700}
+    .faq p{opacity:.85;margin:8px 0 0;line-height:1.6}
     .all-areas{margin-top:36px;color:#fff}
     .all-areas h2{font-size:22px;font-weight:900;margin:0 0 6px}
     .all-areas p{opacity:.8;margin:0 0 14px;max-width:760px}
@@ -124,27 +147,55 @@
 <main class="main">
   <div class="container">
 
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="{{ url('/') }}">Home</a> ›
+      <a href="{{ url('/city') }}">India</a> ›
+      <a href="{{ url('/city') }}#{{ \App\Support\Geo::stateSlug($hubState) }}">{{ $hubState }}</a> ›
+      <span>{{ $city->city_name }}</span>
+    </nav>
+
     <div class="hero">
-      <img src="{{ $cityImg }}" alt="{{ $city->city_name }}">
+      <img src="{{ $cityImg }}" alt="Home tutors in {{ $city->city_name }}">
       <div>
         {{-- The bare city name said nothing a parent searches for. The old
              name is added in brackets because "Gurgaon" still out-searches
              "Gurugram" several times over. --}}
-        @php
-          $cityAka = [
-            'gurugram'  => 'Gurgaon',
-            'bengaluru' => 'Bangalore',
-            'mumbai'    => 'Bombay',
-          ][strtolower((string) $city->slug)] ?? null;
-        @endphp
+        @php $cityAka = \App\Support\Geo::akaOf((string) $city->slug); @endphp
         <h1>Home &amp; Online Tutors in {{ $city->city_name }}@if($cityAka) ({{ $cityAka }})@endif</h1>
         <p>
           {{ $city->city_desc  }}
         </p>
-        <span class="chip">Explore Areas</span>
+        <ul class="stats">
+          @if($hubCounts['tutors'] > 0)<li><strong>{{ number_format($hubCounts['tutors']) }}</strong> verified tutors</li>@endif
+          @if($allAreas->count() > 0)<li><strong>{{ number_format($allAreas->count()) }}</strong> areas covered</li>@endif
+          @if($hubPages->count() > 0)<li><strong>{{ number_format($hubPages->count()) }}</strong> subject &amp; board pages</li>@endif
+          <li>Free demo class</li>
+        </ul>
       </div>
     </div>
 
+    @if($hubTutors->count())
+    <section class="blk" aria-labelledby="tutorsTitle">
+      <h2 id="tutorsTitle">Verified home tutors in {{ $city->city_name }}</h2>
+      <ul class="tutor-grid">
+        @foreach($hubTutors as $t)
+          @php $tUrl = $t->profileUrl(); @endphp
+          @continue(! $tUrl)
+          <li class="tutor-card">
+            <a href="{{ $tUrl }}">
+              <img src="{{ !empty($t->avatar) ? (str_starts_with($t->avatar, 'http') ? $t->avatar : asset('storage/user/'.$t->avatar)) : asset('frount/assets/images/tutor1.jpg') }}" alt="{{ $t->name }}, home tutor in {{ $city->city_name }}" loading="lazy" width="56" height="56">
+              <span class="t-name">{{ $t->name }}</span>
+              <span class="t-meta">Home tutor · {{ $city->city_name }}</span>
+            </a>
+          </li>
+        @endforeach
+      </ul>
+      <p class="more"><a href="{{ url('/tutors') }}">See all tutors →</a></p>
+    </section>
+    @endif
+
+    @if($allAreas->count())
+    <h2 class="sub-h">Find tutors in your area of {{ $city->city_name }}</h2>
     {{-- ✅ Search + button --}}
     <div class="filterbar">
   <input type="text" id="areaSearch" placeholder="Search area name..." autocomplete="off">
@@ -164,6 +215,7 @@
         Load More
       </button>
     </div>
+    @endif
 
     {{-- Every area as a plain link: the cards above stop at nine and load
          the rest by AJAX, which search engines do not trigger. --}}
@@ -182,7 +234,85 @@
     </section>
     @endif
 
+    {{-- The city's own generated subject / board pages, grouped by track.
+         When the city has area pages those carry the full lists and this
+         shows a sample; otherwise this is the only path to them, so all are listed. --}}
+    @if(count($hubTracks))
+    <section class="blk" aria-labelledby="popTitle">
+      <h2 id="popTitle">Popular tutor searches in {{ $city->city_name }}</h2>
+      <div class="track-grid">
+        @foreach($hubTracks as $key => $list)
+          <div class="track">
+            <h3>{{ \App\Support\CityHub::TRACKS[$key][0] }} home tutors</h3>
+            <ul>
+              @foreach($allAreas->count() ? $list->take(10) : $list as $gp)
+                <li><a href="{{ url('/p/'.$gp->slug) }}">{{ $gp->title }}</a></li>
+              @endforeach
+            </ul>
+          </div>
+        @endforeach
+      </div>
+    </section>
+    @endif
+
+    {{-- Long-form, city-specific guide where one has been written
+         (resources/views/city/content/<slug>.blade.php). --}}
+    @includeIf('city.content.' . $city->slug, ['city' => $city, 'allAreas' => $allAreas, 'hubCounts' => $hubCounts])
+
+    @php
+      $faqAreas = $allAreas->take(5)->map(fn ($a) => trim((string) $a->name) !== '' ? $a->name : $a->main_title)->implode(', ');
+      $cityFaqs = [
+        ['How much does a home tutor cost in '.$city->city_name.'?',
+         'Fees depend on the class, the subject and the tutor\'s experience. Across NXTutors most sessions fall between ₹800 and ₹2,500 an hour, with board-exam, IB and JEE/NEET preparation at the upper end. You see each tutor\'s fee before the demo class.'],
+        ['Which areas of '.$city->city_name.' do your tutors cover?',
+         $allAreas->count()
+           ? 'Tutors currently cover '.$allAreas->count().' areas of '.$city->city_name.', including '.$faqAreas.'. Each area page lists the tutors nearest to it.'
+           : 'We match tutors by locality and pincode anywhere in '.$city->city_name.'. If no home tutor is close enough, we arrange an online tutor instead.'],
+        ['Which boards and exams do tutors in '.$city->city_name.' teach?',
+         'CBSE, ICSE and ISC, IB and IGCSE for Classes 6 to 12, plus JEE and NEET preparation, at home or online.'],
+        ['Is the first class free?',
+         'Yes. The first session is a free demo class, so you can judge the tutor\'s teaching style before deciding. If the fit is not right, we suggest another tutor.'],
+      ];
+      $cityFaqLd = [
+        '@context' => 'https://schema.org',
+        '@type' => 'FAQPage',
+        'mainEntity' => array_map(fn ($f) => ['@type' => 'Question', 'name' => $f[0], 'acceptedAnswer' => ['@type' => 'Answer', 'text' => $f[1]]], $cityFaqs),
+      ];
+    @endphp
+    <section class="blk" aria-labelledby="faqTitle">
+      <h2 id="faqTitle">Home tuition in {{ $city->city_name }}: common questions</h2>
+      @foreach($cityFaqs as $f)
+        <details class="faq"><summary>{{ $f[0] }}</summary><p>{{ $f[1] }}</p></details>
+      @endforeach
+    </section>
+    <script type="application/ld+json">{!! json_encode($cityFaqLd, JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE) !!}</script>
+
+    <section class="blk" aria-labelledby="nearTitle">
+      <h2 id="nearTitle">Home tutors in other cities</h2>
+      @if($hubNearby->count())
+        <p><strong>Nearby in {{ $hubState }}{{ in_array($city->slug, ['delhi-ncr','gurugram','faridabad']) ? ' and NCR' : '' }}:</strong>
+          @foreach($hubNearby as $n)<a href="{{ url('/city/'.$n->slug) }}">{{ $n->city_name }}</a>@if(!$loop->last), @endif @endforeach
+        </p>
+      @endif
+      <p><strong>Across India:</strong>
+        @foreach($hubOthers as $n)<a href="{{ url('/city/'.$n->slug) }}">{{ $n->city_name }}</a>@if(!$loop->last), @endif @endforeach
+        · <a href="{{ url('/city') }}">All cities by state →</a>
+      </p>
+    </section>
+
+    @if($hubGuides->count())
+    <section class="blk" aria-labelledby="guideTitle">
+      <h2 id="guideTitle">Guides for {{ $city->city_name }} parents and students</h2>
+      <ul class="guide-list">
+        @foreach($hubGuides->take(12) as $g)
+          <li><a href="{{ url('/blog/'.$g->slug) }}">{{ $g->title }}</a></li>
+        @endforeach
+      </ul>
+    </section>
+    @endif
+
   </div>
+
 </main>
 
 @include('include.footer')

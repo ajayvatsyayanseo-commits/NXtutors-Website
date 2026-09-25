@@ -15,7 +15,7 @@
       <div class="blog-kicker">Latest • {{ $b->date ?? '' }}</div>
 
       <h3 class="blog-title">
-        <a href="{{ url('/blog/'.$b->slug) }}" style="color:inherit;text-decoration:none;">
+        <a href="{{ url('/blog/'.trim($b->slug)) }}" style="color:inherit;text-decoration:none;">
           {{ $b->title }}
         </a>
       </h3>

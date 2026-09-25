@@ -5,7 +5,7 @@
       : asset('frount/assets/images/og-default.jpg');
   @endphp
 
-  <a class="blog-card" href="{{ url('/blog/'.$b->slug) }}">
+  <a class="blog-card" href="{{ url('/blog/'.trim($b->slug)) }}">
     <img class="blog-thumb" src="{{ $img }}" alt="{{ $b->title }}"
          loading="lazy"
          onerror="this.src='{{ asset('frount/assets/images/og-default.jpg') }}'">

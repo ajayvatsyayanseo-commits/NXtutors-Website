@@ -1026,7 +1026,7 @@ html {
                 : asset('frount/assets/images/blog2.jpg');
             @endphp
 
-            <a href="{{ route('blog.show', $b->slug) }}" class="nxcard nxcard--soft nxscroll__card" style="text-decoration:none;color:inherit;">
+            <a href="{{ route('blog.show', trim($b->slug)) }}" class="nxcard nxcard--soft nxscroll__card" style="text-decoration:none;color:inherit;">
               <div style="height:140px;overflow:hidden;border-radius:14px;border:1px solid rgba(148,163,184,.18);">
                 <img src="{{ $thumb }}" alt="{{ $b->title }}" style="width:100%;height:100%;object-fit:cover;">
               </div>

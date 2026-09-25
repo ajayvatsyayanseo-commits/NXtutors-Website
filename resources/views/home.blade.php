@@ -153,12 +153,13 @@
          city, which renders as a broken sentence at H1 size. The badge above
          still carries the admin's locality copy. Wire the title back here once
          that column holds a complete headline. --}}
-    {{-- The H1 names what the page is for: home tuition in Gurugram, where
-         NXTutors is based and most of its tutors are, and online everywhere
-         else. "Better learning, brighter futures" matched no search at all. --}}
+    {{-- The H1 names what the page is for: verified home tutors across India's
+         cities and online tutoring everywhere. "Better learning, brighter
+         futures" matched no search at all. City-level wording belongs on the
+         /city pages, not here. --}}
     <h1 class="nxh__title" id="nxhTitle">
-      Home tutors in Gurugram,
-      <span class="nxh__title-line">online across India</span>
+      Home tutors across India,
+      <span class="nxh__title-line">online wherever you are</span>
     </h1>
 
     <p class="nxh__sub">
@@ -1245,12 +1246,12 @@ body.page .nxh__sweep{
       </section>
 
 
-      @include('home.partials.gurugram-areas')
+      @include('home.partials.top-cities')
 
       <!-- TRUSTED BY -->
       <section class="section">
         <div class="section-head">
-          <h2 class="section-title">Trusted by schools &amp; parents in Gurugram</h2>
+          <h2 class="section-title">Trusted by schools &amp; parents</h2>
           <p class="section-subtitle">
             We work with local schools and coaching centres — here are some logos.
           </p>
@@ -1986,6 +1987,8 @@ body.page .nxh__sweep{
       @include('home.partials.course-marquee')
 
       {{-- Coverage band: real city pages, linked, just above the footer. --}}
+      @include('home.partials.guides')
+
       @include('home.partials.cities-served')
 
     </main>

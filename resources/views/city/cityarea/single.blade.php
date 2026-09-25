@@ -23,9 +23,10 @@
       "@type" => "BreadcrumbList",
       "itemListElement" => [
         ["@type"=>"ListItem","position"=>1,"name"=>"Home","item"=>$baseUrl],
-        ["@type"=>"ListItem","position"=>2,"name"=>"Cities","item"=>url('/city')],
-        ["@type"=>"ListItem","position"=>3,"name"=>$city?->city_name ?? "City","item"=>$cityUrl],
-        ["@type"=>"ListItem","position"=>4,"name"=>$area->main_title ?? $area->name,"item"=>$pageUrl],
+        ["@type"=>"ListItem","position"=>2,"name"=>"India","item"=>url('/city')],
+        ["@type"=>"ListItem","position"=>3,"name"=>$areaState ?? "India","item"=>url('/city').'#'.\App\Support\Geo::stateSlug($areaState ?? '')],
+        ["@type"=>"ListItem","position"=>4,"name"=>$city?->city_name ?? "City","item"=>$cityUrl],
+        ["@type"=>"ListItem","position"=>5,"name"=>$area->name ?: ($area->main_title ?? ''),"item"=>$pageUrl],
       ],
     ];
 
@@ -97,6 +98,12 @@
     <script type="application/ld+json">{!! json_encode($faqSchema, JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE) !!}</script>
   @endif
    <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/city-area.css?v={{ $nxtAssetV ?? 1 }}" />
+  <style>
+    .area-links{list-style:none;margin:0;padding:0;columns:2 280px;column-gap:24px}
+    .area-links li{break-inside:avoid;padding:4px 0;font-size:14px;line-height:1.4}
+    .area-links a,.area-up a{color:#c9d6ff}
+    .area-up{margin:0;line-height:1.8}
+  </style>
 </head>
 
 <body class="page">
@@ -113,9 +120,10 @@
       <div class="hero-body">
         <div class="crumb">
           <a href="{{ url('/') }}">Home</a> <span>›</span>
-          <a href="{{ url('/city') }}">Cities</a> <span>›</span>
+          <a href="{{ url('/city') }}">India</a> <span>›</span>
+          <a href="{{ url('/city') }}#{{ \App\Support\Geo::stateSlug($areaState ?? '') }}">{{ $areaState }}</a> <span>›</span>
           <a href="{{ $cityUrl }}">{{ $city?->city_name ?? 'City' }}</a> <span>›</span>
-          <span>{{ $area->main_title ?? $area->name }}</span>
+          <span>{{ $area->name ?: ($area->main_title ?? '') }}</span>
         </div>
 
         <h1 class="hero-title">{{ $area->main_title ?? $area->name }}</h1>
@@ -128,8 +136,12 @@
           @if(!empty($area->pincode))
             <div class="badge">📍 Pincode: <strong>{{ $area->pincode }}</strong></div>
           @endif
-          <div class="badge">⭐ Rating: <strong>{{ number_format((float)($area->average_rating ?? 0), 1) }}/5</strong></div>
-          <div class="badge">🗣 Reviews: <strong>{{ (int)($area->review?->where('review_status','t')->count() ?? 0) }}</strong></div>
+          {{-- A 0.0/5 rating beside 0 reviews reads as a bad review; show it only once there are reviews. --}}
+          @php $areaReviewCount = (int)($area->review?->where('review_status','t')->count() ?? 0); @endphp
+          @if($areaReviewCount > 0 && (float)($area->average_rating ?? 0) > 0)
+            <div class="badge">⭐ Rating: <strong>{{ number_format((float)$area->average_rating, 1) }}/5</strong></div>
+            <div class="badge">🗣 Reviews: <strong>{{ $areaReviewCount }}</strong></div>
+          @endif
           <div class="badge">✅ Verified Tutors</div>
         </div>
 
@@ -369,7 +381,7 @@
     {{-- RELATED AREAS --}}
 @if(isset($relatedAreas) && $relatedAreas->count())
 <section class="cardx block section" id="related-areas">
-  <h2 class="h2"><span></span>Related Areas in {{ $area->city?->city_name }}</h2>
+  <h2 class="h2"><span></span>Home tutors in areas near {{ $area->name ?: $area->main_title }}</h2>
 
   <div class="rel-grid">
     @foreach($relatedAreas as $ra)
@@ -395,6 +407,38 @@
   </div>
 </section>
 @endif
+
+    {{-- This area's own subject / board pages and local guides, then the
+         way back up to the city, state and India. --}}
+    @if(isset($areaPages) && $areaPages->count())
+    <section class="cardx block section" id="area-searches">
+      <h2 class="h2"><span></span>Subject and board tutors in {{ $area->name ?: $area->main_title }}</h2>
+      <ul class="area-links">
+        @foreach($areaPages->take(60) as $gp)
+          <li><a href="{{ url('/p/'.$gp->slug) }}">{{ $gp->title }}</a></li>
+        @endforeach
+      </ul>
+    </section>
+    @endif
+
+    @if(isset($areaGuides) && $areaGuides->count())
+    <section class="cardx block section" id="area-guides">
+      <h2 class="h2"><span></span>Guides for families in {{ $area->name ?: $area->main_title }}</h2>
+      <ul class="area-links">
+        @foreach($areaGuides as $g)
+          <li><a href="{{ url('/blog/'.$g->slug) }}">{{ $g->title }}</a></li>
+        @endforeach
+      </ul>
+    </section>
+    @endif
+
+    <section class="cardx block section" id="area-up">
+      <p class="area-up">
+        More in {{ $city?->city_name }}: <a href="{{ $cityUrl }}">all home tutors and areas in {{ $city?->city_name }}</a>
+        · <a href="{{ url('/city') }}#{{ \App\Support\Geo::stateSlug($areaState ?? '') }}">other cities in {{ $areaState }}</a>
+        · <a href="{{ url('/city') }}">all cities in India</a>
+      </p>
+    </section>
 
 
   

@@ -158,13 +158,13 @@
               {{-- ✅ Prev/Next Buttons --}}
               <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px;">
                 @if($prev)
-                  <a class="btn btn-ghost" href="{{ route('blog.show', $prev->slug) }}">
+                  <a class="btn btn-ghost" href="{{ route('blog.show', trim($prev->slug)) }}">
                     ← {{ \Illuminate\Support\Str::limit($prev->title, 42) }}
                   </a>
                 @endif
 
                 @if($next)
-                  <a class="btn btn-accent" href="{{ route('blog.show', $next->slug) }}">
+                  <a class="btn btn-accent" href="{{ route('blog.show', trim($next->slug)) }}">
                     {{ \Illuminate\Support\Str::limit($next->title, 42) }} →
                   </a>
                 @endif
@@ -181,7 +181,7 @@
 
                 <div style="margin-top:12px;display:flex;flex-direction:column;gap:10px;">
                   <a class="btn btn-accent btn-full" href="#" data-modal-target="demoModal">Book Demo on WhatsApp</a>
-                  <a class="btn btn-ghost btn-full" href="{{ url('/page') }}">Explore Pages</a>
+                  <a class="btn btn-ghost btn-full" href="{{ url('/city') }}">Find tutors in your city</a>
                 </div>
               </div>
 
@@ -190,7 +190,7 @@
                   <div style="font-weight:650;margin-bottom:10px;">More Reads</div>
                   <div style="display:flex;flex-direction:column;gap:10px;">
                     @foreach($related->take(4) as $r)
-                      <a href="{{ route('blog.show', $r->slug) }}"
+                      <a href="{{ route('blog.show', trim($r->slug)) }}"
                          style="text-decoration:none;color:inherit;border:1px solid rgba(255,255,255,0.12);border-radius:14px;padding:10px;background:rgba(255,255,255,0.06);">
                         <div style="font-weight:650;font-size:13px;">
                           {{ \Illuminate\Support\Str::limit($r->title, 64) }}
@@ -222,7 +222,7 @@
                 : asset('frount/assets/images/blog2.jpg');
             @endphp
 
-            <a href="{{ route('blog.show', $b->slug) }}" class="blog-card" style="text-decoration:none;color:inherit;">
+            <a href="{{ route('blog.show', trim($b->slug)) }}" class="blog-card" style="text-decoration:none;color:inherit;">
               <div class="blog-thumb">
                 <img src="{{ $thumb }}" alt="{{ $b->title }}">
               </div>
@@ -236,6 +236,50 @@
         </div>
       </section>
     @endif
+
+    {{-- Where to go next: a local guide links to its area and city pages;
+         any guide links to the rest of its topic and to the tutor directory.
+         This is what ties the blog into the city → area structure. --}}
+    @php
+      $postTopic = \App\Support\BlogTopics::of((string) $blog->slug);
+      $postLocality = $postTopic === 'city' ? \App\Support\BlogTopics::localityOf((string) $blog->slug) : null;
+      $postArea = $postLocality ? \App\Support\CityHub::areaFor('gurugram', str_replace('-', ' ', $postLocality)) : null;
+      $relatedSlugs = isset($related) ? $related->pluck('slug')->map(fn ($s) => trim($s))->all() : [];
+      $sameTopic = \Illuminate\Support\Facades\DB::table('blog_managment')
+        ->where('status', 't')->where('id', '!=', $blog->id)->whereNotNull('slug')->where('slug', '!=', '')
+        ->orderByDesc('id')->get(['title', 'slug'])
+        ->filter(fn ($b) => \App\Support\BlogTopics::of($b->slug) === $postTopic
+            && ($postLocality === null || \App\Support\BlogTopics::localityOf($b->slug) === $postLocality)
+            && ! in_array(trim($b->slug), $relatedSlugs, true))
+        ->take(8);
+    @endphp
+    <section class="nxsec blog-next" aria-labelledby="blogNextTitle">
+      <h2 class="nxh2" id="blogNextTitle">
+        {{ $postArea ? 'More for families in '.$postArea->name : 'More '.\App\Support\BlogTopics::TOPICS[$postTopic].' guides' }}
+      </h2>
+      @if($sameTopic->count())
+        <ul class="blog-next__list">
+          @foreach($sameTopic as $b)
+            <li><a href="{{ url('/blog/'.trim($b->slug)) }}">{{ $b->title }}</a></li>
+          @endforeach
+        </ul>
+      @endif
+      <p class="blog-next__up">
+        @if($postArea)
+          <a href="{{ url('/city/gurugram/'.$postArea->slug) }}">Home tutors in {{ $postArea->name }}</a> ·
+          <a href="{{ url('/city/gurugram') }}">Home tutors across Gurugram</a> ·
+        @else
+          <a href="{{ url('/blog') }}#topic-{{ $postTopic }}">All {{ \App\Support\BlogTopics::TOPICS[$postTopic] }} guides</a> ·
+        @endif
+        <a href="{{ url('/city') }}">Find a home tutor in your city</a>
+      </p>
+      <style>
+        .blog-next__list{list-style:none;margin:10px 0 0;padding:0;columns:2 280px;column-gap:24px}
+        .blog-next__list li{break-inside:avoid;padding:4px 0;font-size:14px;line-height:1.4}
+        .blog-next a{color:#c9d6ff}
+        .blog-next__up{margin-top:12px;line-height:1.8}
+      </style>
+    </section>
 
   </main>
 

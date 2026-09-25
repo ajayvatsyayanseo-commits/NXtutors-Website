@@ -190,7 +190,7 @@ public function sitemap()
     Blog::where('status', 't')->chunk(500, function ($blogs) use (&$urls, $baseUrl) {
         foreach ($blogs as $blog) {
             $urls[] = [
-                'loc' => $baseUrl . '/blog/' . $blog->slug,
+                'loc' => $baseUrl . '/blog/' . trim($blog->slug),
                 'lastmod' => optional($blog->updated_at)->toDateString() ?? now()->toDateString(),
                 'priority' => '0.7',
                 'changefreq' => 'weekly',
@@ -560,10 +560,19 @@ public function compareDefaults(Request $request)
     
     public function showsingleblog($slug)
     {
+        // A few slugs were saved with a trailing tab or space, so their clean
+        // URL 404'd and only ".../slug%09" worked. Match either form, and send
+        // the stray form to the clean one.
+        $clean = trim((string) $slug);
+
         $blog = Blog::query()
-        ->where('slug', $slug)
         ->where('status', 't')
+        ->where(fn ($q) => $q->whereIn('slug', [$clean, $clean . "	", $clean . ' ', $slug]))
         ->firstOrFail();
+
+        if ($slug !== $clean) {
+            return redirect()->route('blog.show', $clean, 301);
+        }
 
     // ✅ Prev / Next (by id)
     $prev = Blog::query()
@@ -855,7 +864,19 @@ private function baseTeacherQuery()
             $metakey = '';
             $metadesc = $city->meta_desc;
 
-    return view('city.show', compact('city','areas','allAreas','metatitle','metakey','metadesc'));
+    // Link blocks: tutors, the city's own generated pages by board / exam,
+    // neighbouring city pages and guides. See App\Support\CityHub.
+    $hubPages   = \App\Support\CityHub::pages($city->slug);
+    $hubTracks  = \App\Support\CityHub::byTrack($hubPages);
+    $hubTutors  = \App\Support\CityHub::tutors($city->slug, 6);
+    $hubCounts  = \App\Support\Geo::counts()[$city->slug] ?? ['tutors' => 0, 'areas' => 0, 'pages' => 0];
+    $hubState   = \App\Support\Geo::stateOf($city->slug);
+    $hubNearby  = City::where('status', 't')->whereIn('slug', \App\Support\Geo::neighbours($city->slug))->orderBy('city_name')->get(['city_name', 'slug']);
+    $hubOthers  = City::where('status', 't')->where('slug', '!=', $city->slug)->whereNotIn('slug', $hubNearby->pluck('slug'))->orderBy('city_name')->get(['city_name', 'slug']);
+    $hubGuides  = \App\Support\CityHub::guides($allAreas->pluck('slug')->map(fn ($s) => trim($s, '-'))->all(), 6);
+
+    return view('city.show', compact('city','areas','allAreas','metatitle','metakey','metadesc',
+        'hubPages','hubTracks','hubTutors','hubCounts','hubState','hubNearby','hubOthers','hubGuides'));
 }
 
 
@@ -900,12 +921,31 @@ public function cityAreaShow($citySlug, $areaSlug)
         ->where('status', 't')
         ->firstOrFail();
 
-    $relatedAreas = City_area::where('city_id', $area->city_id)
-    ->where('status', 't')
-    ->where('id', '!=', $area->id)
-    ->latest('id')
-    ->limit(9)
-    ->get();
+    // Nearby areas: same pincode first, then the areas either side of this
+    // one alphabetically (societies in one sector tend to sort together),
+    // instead of the nine most recently added anywhere in the city.
+    $siblings = City_area::where('city_id', $area->city_id)
+        ->where('status', 't')
+        ->where('id', '!=', $area->id)
+        ->whereNotNull('slug')->where('slug', '!=', '')
+        ->orderBy('name')
+        ->get();
+
+    $samePin = !empty($area->pincode)
+        ? $siblings->where('pincode', $area->pincode)
+        : collect();
+
+    $pos = $siblings->search(fn ($a) => strcmp((string) $a->name, (string) $area->name) > 0);
+    $pos = $pos === false ? $siblings->count() : $pos;
+    $around = $siblings->slice(max(0, $pos - 6), 12);
+
+    $relatedAreas = $samePin->concat($around)->unique('id')->take(12)->values();
+
+    // Link blocks for this area: its own generated subject / board pages and
+    // its local guide posts. See App\Support\CityHub.
+    $areaPages  = \App\Support\CityHub::pagesForArea(\App\Support\CityHub::pages($city->slug), $area);
+    $areaGuides = \App\Support\CityHub::guides([trim((string) $area->slug, '-')], 3);
+    $areaState  = \App\Support\Geo::stateOf($city->slug);
 
      $areaTutors = Register::where('join_as', 'teacher')
         ->publiclyVisible()
@@ -935,7 +975,7 @@ public function cityAreaShow($citySlug, $areaSlug)
             $metakey = '';
             $metadesc = $city->meta_desc;
 
-    return view('city.cityarea.single', compact('city', 'area','relatedAreas','tutors','tutorScope','metatitle','metakey','metadesc'));
+    return view('city.cityarea.single', compact('city', 'area','relatedAreas','tutors','tutorScope','metatitle','metakey','metadesc','areaPages','areaGuides','areaState'));
 }
    public function contactpage()
     {
