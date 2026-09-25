@@ -259,3 +259,7 @@ a.nx-card:hover{transform:translateY(-2px);border-color:var(--nxt-line-strong)}
   .faq-grid.nx-faq-folded .faq-list:first-of-type .faq-item:nth-of-type(n+6){display:none}
 }
 .nx-faq-more{display:flex;justify-content:center;margin-top:var(--nxt-s3)}
+
+/* a checklist inside a narrow card is one column, not a grid that overflows it */
+.nx-subcard .nx-checklist,.nx-guide__card .nx-checklist{grid-template-columns:minmax(0,1fr);margin:8px 0 0}
+.nx-subcard .nx-checklist li{padding:8px 10px}
