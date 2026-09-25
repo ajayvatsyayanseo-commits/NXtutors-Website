@@ -78,6 +78,8 @@ class GeoStructureTest extends TestCase
             ['id' => 3, 'city_name' => 'Faridabad', 'slug' => 'faridabad'],
             ['id' => 4, 'city_name' => 'Kolkata', 'slug' => 'kolkata'],
             ['id' => 5, 'city_name' => 'Delhi NCR', 'slug' => 'delhi-ncr'],
+            ['id' => 6, 'city_name' => 'Patna', 'slug' => 'patna'],
+            ['id' => 7, 'city_name' => 'Chandigarh', 'slug' => 'chandigarh'],
         ]);
         DB::table('city_area_list_managment')->insert([
             ['city_id' => 1, 'name' => 'DLF Phase 4', 'slug' => 'dlf-phase-4', 'main_title' => 'Home Tutors in DLF Phase 4'],
@@ -127,7 +129,7 @@ class GeoStructureTest extends TestCase
     public function test_states_are_grouped_and_sorted(): void
     {
         $groups = Geo::groupByState(DB::table('city_managment')->get());
-        $this->assertSame(['Delhi NCR', 'Haryana', 'Maharashtra', 'West Bengal'], array_keys($groups));
+        $this->assertSame(['Bihar', 'Chandigarh', 'Delhi NCR', 'Haryana', 'Maharashtra', 'West Bengal'], array_keys($groups));
         $this->assertSame(['Faridabad', 'Gurugram'], array_map(fn ($c) => $c->city_name, $groups['Haryana']));
     }
 
@@ -252,6 +254,23 @@ class GeoStructureTest extends TestCase
         $page = $this->withoutExceptionHandling()->get('/city/gurugram/dlf-phase-4');
         $page->assertSee('<title>Home Tutors in DLF Phase 4, Gurgaon – CBSE, IB, JEE | NXTutors</title>', false);
         $page->assertSee('<h1 class="hero-title">Home Tutors in DLF Phase 4, Gurugram</h1>', false);
+    }
+
+    public function test_metro_city_guides_render_on_their_own_pages_only(): void
+    {
+        $this->withoutExceptionHandling();
+        foreach ([
+            'mumbai' => 'Home tuition in Mumbai',
+            'delhi-ncr' => 'Home tuition in Delhi NCR',
+            'patna' => 'Home tuition in Patna',
+            'chandigarh' => 'Home tuition in Chandigarh',
+        ] as $slug => $heading) {
+            $html = $this->get('/city/' . $slug)->assertOk()->getContent();
+            $this->assertStringContainsString($heading, $html, $slug);
+            $text = preg_replace('/\s+/', ' ', strip_tags(preg_replace('#<(script|style).*?</>#s', '', $html)));
+            $this->assertGreaterThan(2500, str_word_count($text), $slug . ' page is substantial');
+            $this->assertStringNotContainsString('a complete guide for parents', $html, $slug . ' must not show the Gurugram guide');
+        }
     }
 
     public function test_chat_page_hint_sets_place_and_subject_defaults(): void
