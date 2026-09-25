@@ -195,7 +195,7 @@
     $pos = 1;
 
     foreach($blogs as $b){
-      $postUrl = url('/blog/'.$b->slug);
+      $postUrl = url('/blog/'.trim($b->slug));
 
       // ✅ your DB uses avatar, not image
       $img = !empty($b->avatar)
@@ -348,6 +348,7 @@
     .topics a{color:#c9d6ff}
   </style>
 
+  @include('home.partials.ask-ai', ['aiPage' => ['type' => 'directory']])
 </main>
 
 @include('include.footer')

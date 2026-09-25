@@ -70,6 +70,10 @@ class ChatController
         if ($onScreen !== []) {
             $context->referencedTutors = $onScreen;
             $history['items'][] = ['role' => 'assistant', 'content' => $this->onScreenHint($onScreen)];
+        } elseif ($pageHint = $this->pageHint($request->pageContext())) {
+            // Not on a tutor profile: tell the model which page the parent is
+            // reading, so "find me a tutor" means one near this city or area.
+            $history['items'][] = ['role' => 'assistant', 'content' => $pageHint];
         }
 
         $userMessage = $request->userMessage();
@@ -198,6 +202,36 @@ class ChatController
         return '(The parent has these tutors on screen - "them"/"these"/"which one" '
             .'refers to these, in this order: '.implode('; ', $parts)
             .'. Use these refs with get_tutor_details / compare_tutors. Never print a ref.)';
+    }
+
+    /**
+     * A one-line note about the page the chat sits on. The values were
+     * validated to plain words in ChatRequest; they only set defaults, and
+     * whatever the parent actually says overrides them.
+     *
+     * @param  array<string,string>  $page
+     */
+    private function pageHint(array $page): ?string
+    {
+        $place = implode(', ', array_filter([$page['area'] ?? null, $page['city'] ?? null]));
+        $what = implode(' ', array_filter([$page['board'] ?? null, $page['subject'] ?? null, $page['class'] ?? null]));
+
+        if ($place === '' && $what === '' && empty($page['topic'])) {
+            return null;
+        }
+
+        $where = match ($page['type'] ?? 'other') {
+            'city' => 'the city page for '.$place,
+            'area' => 'the area page for '.$place,
+            'subject' => 'the page for '.($what !== '' ? $what.' ' : '').'home tutors'.($place !== '' ? ' in '.$place : ''),
+            'blog' => 'a guide'.(! empty($page['topic']) ? ' titled "'.$page['topic'].'"' : ''),
+            default => 'a page'.($place !== '' ? ' about '.$place : ''),
+        };
+
+        return '(The parent is reading '.$where.'. '
+            .($place !== '' ? 'When they ask for tutors, fees or availability without naming a place, use '.$place.' as the location. ' : '')
+            .($what !== '' ? 'Unless they say otherwise, assume they mean '.$what.'. ' : '')
+            .'If they name a different place, subject or class, follow what they say. Do not mention this note.)';
     }
 
     /**

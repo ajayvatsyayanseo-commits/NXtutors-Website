@@ -174,25 +174,13 @@
       </div>
     </div>
 
-    @if($hubTutors->count())
-    <section class="blk" aria-labelledby="tutorsTitle">
-      <h2 id="tutorsTitle">Verified home tutors in {{ $city->city_name }}</h2>
-      <ul class="tutor-grid">
-        @foreach($hubTutors as $t)
-          @php $tUrl = $t->profileUrl(); @endphp
-          @continue(! $tUrl)
-          <li class="tutor-card">
-            <a href="{{ $tUrl }}">
-              <img src="{{ !empty($t->avatar) ? (str_starts_with($t->avatar, 'http') ? $t->avatar : asset('storage/user/'.$t->avatar)) : asset('frount/assets/images/tutor1.jpg') }}" alt="{{ $t->name }}, home tutor in {{ $city->city_name }}" loading="lazy" width="56" height="56">
-              <span class="t-name">{{ $t->name }}</span>
-              <span class="t-meta">Home tutor · {{ $city->city_name }}</span>
-            </a>
-          </li>
-        @endforeach
-      </ul>
-      <p class="more"><a href="{{ url('/tutors') }}">See all tutors →</a></p>
-    </section>
-    @endif
+    {{-- The home page's suggested-tutor cards and Ask NXT AI, tuned to this city. --}}
+    @include('partials.page-assist', [
+      'assistTeachers' => $hubTutors,
+      'assistTitle' => 'Suggested home tutors in '.$city->city_name,
+      'assistSub' => 'Verified tutors near you, sorted by reviews and rating',
+      'aiPage' => ['type' => 'city', 'city' => $city->city_name],
+    ])
 
     @if($allAreas->count())
     <h2 class="sub-h">Find tutors in your area of {{ $city->city_name }}</h2>

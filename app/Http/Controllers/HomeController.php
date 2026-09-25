@@ -637,7 +637,9 @@ public function compareDefaults(Request $request)
       $metakey = $blog->meta_key ?? null;
       $metadesc = $blog->meta_desc ?? null;
 
-    return view('blog.show', compact('blog','prev','next','related','canonical','metatitle','metakey','metadesc'));
+    $pageTeachers = $this->getHomeTeachers(4, 0);
+
+    return view('blog.show', compact('blog','prev','next','related','canonical','metatitle','metakey','metadesc','pageTeachers'));
     }
 
     //  public function teachers(Request $request)
@@ -737,6 +739,30 @@ public function compareDefaults(Request $request)
     $teachers = $teachers->take($limit);
 
     return view('home.partials.local-teacher-cards', compact('teachers'));
+}
+
+/**
+ * Tutors for the "Suggested tutors" cards on a city, area or guide page, in
+ * the same shape as the home page's cards (ratings, courses): same pincode
+ * first, then the rest of the city, then the home page's picks if the city
+ * has none yet.
+ */
+private function pageTeachers(?string $citySlug, ?string $pincode = null, int $limit = 4)
+{
+    $picked = collect();
+    $names = $citySlug ? \App\Support\CityHub::rawNames('register', $citySlug) : [];
+
+    if ($names && $pincode) {
+        $picked = $this->baseTeacherQuery()->whereIn('register.city', $names)
+            ->where('register.pincode', $pincode)->limit($limit)->get();
+    }
+    if ($names && $picked->count() < $limit) {
+        $picked = $picked->concat($this->baseTeacherQuery()->whereIn('register.city', $names)
+            ->whereNotIn('register.user_id', $picked->pluck('user_id')->all() ?: ['-'])
+            ->limit($limit - $picked->count())->get());
+    }
+
+    return $picked->count() ? $picked->values() : $this->getHomeTeachers($limit, 0);
 }
 
 private function baseTeacherQuery()
@@ -868,7 +894,7 @@ private function baseTeacherQuery()
     // neighbouring city pages and guides. See App\Support\CityHub.
     $hubPages   = \App\Support\CityHub::pages($city->slug);
     $hubTracks  = \App\Support\CityHub::byTrack($hubPages);
-    $hubTutors  = \App\Support\CityHub::tutors($city->slug, 6);
+    $hubTutors  = $this->pageTeachers($city->slug, null, 4);
     $hubCounts  = \App\Support\Geo::counts()[$city->slug] ?? ['tutors' => 0, 'areas' => 0, 'pages' => 0];
     $hubState   = \App\Support\Geo::stateOf($city->slug);
     $hubNearby  = City::where('status', 't')->whereIn('slug', \App\Support\Geo::neighbours($city->slug))->orderBy('city_name')->get(['city_name', 'slug']);

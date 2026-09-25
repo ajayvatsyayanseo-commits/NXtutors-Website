@@ -190,6 +190,7 @@
       </section>
     @endforeach
 
+  @include('home.partials.ask-ai', ['aiPage' => ['type' => 'directory']])
   </div>
 </main>
 

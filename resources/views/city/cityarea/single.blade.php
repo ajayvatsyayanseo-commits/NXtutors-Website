@@ -251,6 +251,9 @@
 
 
     {{-- MAIN GRID --}}
+    {{-- Ask NXT AI, tuned to this area (the tutors section above is the page's own). --}}
+    @include('home.partials.ask-ai', ['aiPage' => ['type' => 'area', 'city' => $city?->city_name ?? '', 'area' => $area->name ?: '']])
+
     <section class="grid2 section">
 
       {{-- LEFT --}}

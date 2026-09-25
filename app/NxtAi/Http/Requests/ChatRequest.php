@@ -26,6 +26,17 @@ class ChatRequest extends FormRequest
             'compare_ids.*' => ['string', 'max:64', 'regex:/^[0-9A-Za-z_-]+$/'],
             // The tutor whose profile page the chat is embedded on.
             'profile_tutor_id' => ['nullable', 'string', 'max:64', 'regex:/^[0-9A-Za-z_-]+$/'],
+            // The page the chat is embedded on (city, area, subject page, guide),
+            // so "find me a tutor" defaults to that place and subject. Plain
+            // words only: it is passed to the model as a hint.
+            'page' => ['nullable', 'array'],
+            'page.type' => ['nullable', 'string', 'in:home,city,area,subject,blog,directory,other'],
+            'page.city' => ['nullable', 'string', 'max:60', 'regex:/^[\pL\pN .,()&\x27-]*$/u'],
+            'page.area' => ['nullable', 'string', 'max:100', 'regex:/^[\pL\pN .,()&\x27\/-]*$/u'],
+            'page.board' => ['nullable', 'string', 'max:40', 'regex:/^[\pL\pN .,()&\/-]*$/u'],
+            'page.subject' => ['nullable', 'string', 'max:60', 'regex:/^[\pL\pN .,()&\/-]*$/u'],
+            'page.class' => ['nullable', 'string', 'max:40', 'regex:/^[\pL\pN .,()&\/-]*$/u'],
+            'page.topic' => ['nullable', 'string', 'max:120', 'regex:/^[\pL\pN .,:;()&\x27\/?!–—-]*$/u'],
         ];
     }
 
@@ -55,6 +66,29 @@ class ChatRequest extends FormRequest
         $id = trim((string) ($this->validated()['profile_tutor_id'] ?? ''));
 
         return $id === '' ? null : $id;
+    }
+
+    /**
+     * The page the parent is on, trimmed to the fields that are set.
+     *
+     * @return array{type?:string, city?:string, area?:string, board?:string, subject?:string, class?:string, topic?:string}
+     */
+    public function pageContext(): array
+    {
+        $page = $this->validated()['page'] ?? [];
+        if (! is_array($page)) {
+            return [];
+        }
+
+        $out = [];
+        foreach (['type', 'city', 'area', 'board', 'subject', 'class', 'topic'] as $k) {
+            $v = trim(preg_replace('/\s+/', ' ', (string) ($page[$k] ?? '')));
+            if ($v !== '') {
+                $out[$k] = $v;
+            }
+        }
+
+        return $out;
     }
 
     public function conversationUid(): ?string

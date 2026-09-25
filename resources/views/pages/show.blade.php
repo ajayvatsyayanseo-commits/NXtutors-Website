@@ -270,6 +270,13 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 @endif
+
+            {{-- Ask NXT AI, tuned to this subject, board and locality. --}}
+            @php
+              $gpBoard = is_array($page->boards) ? (string) (array_values($page->boards)[0] ?? '') : '';
+              $gpSubject = is_array($page->subjects) ? (string) (array_values($page->subjects)[0] ?? '') : '';
+            @endphp
+            @include('home.partials.ask-ai', ['aiPage' => ['type' => 'subject', 'city' => $gpCity->city_name ?? (string) $page->city, 'area' => (string) $page->location, 'board' => $gpBoard, 'subject' => $gpSubject]])
 <section class="nxsec">
   <div class="nxsplit">
     {{-- SUBJECTS CONTENT --}}
@@ -868,6 +875,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <article class="genp-content">
               {!! $page->html !!}
             </article>
+            @include('home.partials.ask-ai', ['aiPage' => ['type' => 'subject', 'city' => $gpCity->city_name ?? (string) $page->city, 'area' => (string) $page->location]])
           @endif
 
           {{-- Sibling subjects and boards in the same locality, and the way

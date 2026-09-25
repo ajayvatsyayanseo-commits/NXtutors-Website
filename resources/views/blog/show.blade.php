@@ -206,6 +206,14 @@
       </article>
     </section>
 
+    {{-- The home page's suggested tutors and Ask NXT AI, tuned to this guide. --}}
+    @include('partials.page-assist', [
+      'assistTeachers' => $pageTeachers ?? collect(),
+      'assistTitle' => 'Want a tutor for this?',
+      'assistSub' => 'Verified tutors, sorted by reviews and rating',
+      'aiPage' => ['type' => 'blog', 'topic' => (string) $blog->title],
+    ])
+
     {{-- ✅ RELATED GRID (Full) --}}
     @if(isset($related) && $related->count())
       <section class="nxsec">

@@ -1,3 +1,46 @@
+@php
+  /*
+   * Page awareness. Pages other than home pass $aiPage, e.g.
+   *   ['type' => 'area', 'city' => 'Gurugram', 'area' => 'DLF Phase 4']
+   *   ['type' => 'subject', 'city' => 'Kolkata', 'area' => 'Salt Lake', 'board' => 'CBSE', 'subject' => 'Maths']
+   *   ['type' => 'blog', 'topic' => 'JEE Physics topic-wise prep']
+   * It changes the greeting and one-tap starters here, and is sent with every
+   * message so the assistant defaults to this place and subject (see
+   * ChatController::pageHint). Anything the parent types overrides it.
+   */
+  // Trimmed to the characters and lengths ChatRequest accepts, so an odd
+  // character in a blog title can never make the chat request fail validation.
+  $aiCaps = ['type' => 20, 'city' => 60, 'area' => 100, 'board' => 40, 'subject' => 60, 'class' => 40, 'topic' => 120];
+  $aiPage = collect((array) ($aiPage ?? []))
+      ->only(array_keys($aiCaps))
+      ->map(fn ($v, $k) => is_string($v) ? mb_substr(trim(preg_replace('/\s+/u', ' ', preg_replace('/[^\pL\pN .,:;()&\x27\/?!–—-]+/u', ' ', $v))), 0, $aiCaps[$k]) : '')
+      ->map(fn ($v, $k) => in_array($k, ['city', 'area', 'board', 'subject', 'class'], true) ? preg_replace('/[:;?!–—]/u', ' ', $v) : $v)
+      ->filter(fn ($v) => trim((string) $v) !== '')
+      ->all();
+  $aiPlace = implode(', ', array_filter([$aiPage['area'] ?? null, $aiPage['city'] ?? null]));
+  $aiWhat = trim(implode(' ', array_filter([$aiPage['board'] ?? null, $aiPage['subject'] ?? null])));
+  $aiType = $aiPage['type'] ?? 'home';
+
+  $aiStarters = [];
+  if (empty($kbTutor) && $aiType !== 'home') {
+      $tutorPhrase = ($aiWhat !== '' ? $aiWhat . ' ' : '') . 'home tutor' . ($aiPlace !== '' ? ' in ' . $aiPlace : '');
+      $aiStarters = array_filter([
+          'Find a tutor' => 'Find me a ' . $tutorPhrase,
+          'Fees' => $aiPlace !== '' ? 'What do home tutors in ' . $aiPlace . ' charge?' : 'What are the tutor fees?',
+          'Book a free demo' => 'I want to book a free demo class',
+          'Online option' => $aiPlace !== '' ? null : 'Can the classes be online?',
+          'Help with this topic' => $aiType === 'blog' && !empty($aiPage['topic']) ? 'I need a tutor to help with: ' . $aiPage['topic'] : null,
+      ]);
+  }
+  $aiGreeting = match (true) {
+      !empty($kbTutor) => null,
+      $aiType === 'blog' => 'Want a tutor to help with this?',
+      $aiWhat !== '' && $aiPlace !== '' => 'Looking for a ' . $aiWhat . ' home tutor in ' . $aiPlace . '?',
+      $aiPlace !== '' => 'Looking for a home tutor in ' . $aiPlace . '?',
+      $aiType !== 'home' => 'Looking for a home or online tutor?',
+      default => null,
+  };
+@endphp
 <section class="section" id="nxAskAISection">
   <div class="nxg-ai-layout">
 
@@ -6,7 +49,16 @@
 
       <div class="nxg-chat-top">
         <h4>Ask NXT AI</h4>
-        <p>Ask about tutor fees, timing, demo classes, and more.</p>
+        <p>
+          @if($aiPlace !== '' && empty($kbTutor))
+            Ask about tutors, fees and demo classes in {{ $aiPlace }}.
+          @else
+            Ask about tutor fees, timing, demo classes, and more.
+          @endif
+        </p>
+        @if($aiType !== 'home' || !empty($kbTutor))
+          <a class="nxg-home-link" href="{{ url('/') }}">← NXTutors home</a>
+        @endif
       </div>
 
       <div class="nxg-chat-box" id="nxAskAiThread">
@@ -15,6 +67,22 @@
           <div class="nxg-head"><span class="nxg-av">🤖</span><span class="nxg-name">NXT AI</span></div>
           <div class="nxg-text nxg-welcome-text">👋 Welcome to NXTutors!<br><span>I'm Ask NXT AI — how can we help you today?</span></div>
         </div>
+
+        {{-- On a city, area, subject or guide page the assistant opens about
+             that page, with one-tap starters in its words. --}}
+        @if ($aiGreeting)
+          <div class="nxg-msg ai nxg-welcome">
+            <div class="nxg-head"><span class="nxg-av">🤖</span><span class="nxg-name">NXT AI</span></div>
+            <div class="nxg-text">{{ $aiGreeting }}</div>
+            @if (count($aiStarters))
+              <div class="nxg-starters">
+                @foreach ($aiStarters as $label => $question)
+                  <button type="button" class="nxg-quick nxg-starter" data-q="{{ $question }}">{{ $label }}</button>
+                @endforeach
+              </div>
+            @endif
+          </div>
+        @endif
 
         {{-- On a tutor profile the assistant opens ABOUT that tutor, with
              one-tap starters so the parent never has to type the name. --}}
@@ -159,6 +227,11 @@
 
 </section>
 
+<style>
+  .nxg-home-link{display:inline-block;margin-top:6px;font-size:13px;color:#c9d6ff;text-decoration:none}
+  .nxg-home-link:hover{text-decoration:underline}
+</style>
+
 <script>
 // NXT AI chat client. Runs at parse time — the markup above it already exists,
 // so it claims #nxAskAiSend/#nxAskAiInput before any DOMContentLoaded handler
@@ -193,6 +266,9 @@
   // model gets real structured context instead of a sentence of guesswork —
   // and the stored message stays exactly what the parent typed.
   window.nxgProfileTutorId = @json(!empty($kbTutor) ? (string) $kbTutor->user_id : '');
+  // The page this chat sits on (city / area / subject / guide); see the
+  // $aiPage note at the top of this file.
+  window.nxgPageContext = @json(empty($kbTutor) ? (object) $aiPage : (object) []);
   var csrf = (document.querySelector('meta[name="csrf-token"]') || {}).content || '';
   var conversationId = null;
   var busy = false;
@@ -480,7 +556,8 @@
         // Compare tray — so "his fees" / "which one is better?" resolve
         // without the parent naming anyone.
         profile_tutor_id: window.nxgProfileTutorId || null,
-        compare_ids: compareIds()
+        compare_ids: compareIds(),
+        page: window.nxgPageContext || null
       })
     })
     .then(function (res) { return res.json().then(function (d) { return { status: res.status, data: d }; }); })
