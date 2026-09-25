@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Find Tutors - NXTutors</title>
-  <meta name="description" content="Find verified tutors near you.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  @php $metatitle = 'Find Tutors - NXTutors'; @endphp
+  @php $metadesc = 'Find verified tutors near you.'; @endphp
   @include('include.header')
 
   {{-- ✅ Tutors List Schema (Breadcrumb + ItemList) --}}

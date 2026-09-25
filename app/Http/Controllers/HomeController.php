@@ -210,6 +210,31 @@ public function sitemap()
         }
     });
 
+    // City area pages (/city/{city}/{area}). The city page only links the
+    // first nine and loads the rest by AJAX, so without this list Google had
+    // no way to find most of the 150 Gurugram society and sector pages.
+    // The table has no timestamps, so no lastmod rather than a made-up one.
+    City_area::where('status', 't')
+        ->whereNotNull('slug')
+        ->where('slug', '!=', '')
+        ->whereHas('city', fn ($q) => $q->where('status', 't'))
+        ->with('city:id,slug')
+        ->orderBy('id')
+        ->chunk(500, function ($areas) use (&$urls, $baseUrl) {
+            foreach ($areas as $area) {
+                if (empty($area->city?->slug)) {
+                    continue;
+                }
+
+                $urls[] = [
+                    'loc' => $baseUrl . '/city/' . $area->city->slug . '/' . $area->slug,
+                    'lastmod' => null,
+                    'priority' => '0.7',
+                    'changefreq' => 'monthly',
+                ];
+            }
+        });
+
     Category::where('status', 't')
     ->whereNotNull('slug')
     ->chunk(500, function ($categories) use (&$urls, $baseUrl) {
@@ -815,12 +840,22 @@ private function baseTeacherQuery()
         ->orderBy('name')
         ->take(9)
         ->get();
-      
+
+    // Every area as a plain link. The cards above stop at nine and fetch the
+    // rest by AJAX, which Google does not click, so this list is the only
+    // crawlable path from the city hub to most of its area pages.
+    $allAreas = City_area::where('status','t')
+        ->where('city_id', $city->id)
+        ->whereNotNull('slug')
+        ->where('slug', '!=', '')
+        ->orderBy('name')
+        ->get(['id', 'name', 'main_title', 'slug']);
+
              $metatitle = $city->meta_title;
             $metakey = '';
             $metadesc = $city->meta_desc;
 
-    return view('city.show', compact('city','areas','metatitle','metakey','metadesc'));
+    return view('city.show', compact('city','areas','allAreas','metatitle','metakey','metadesc'));
 }
 
 

@@ -153,9 +153,12 @@
          city, which renders as a broken sentence at H1 size. The badge above
          still carries the admin's locality copy. Wire the title back here once
          that column holds a complete headline. --}}
+    {{-- The H1 names what the page is for: home tuition in Gurugram, where
+         NXTutors is based and most of its tutors are, and online everywhere
+         else. "Better learning, brighter futures" matched no search at all. --}}
     <h1 class="nxh__title" id="nxhTitle">
-      Better learning,
-      <span class="nxh__title-line">brighter futures</span>
+      Home tutors in Gurugram,
+      <span class="nxh__title-line">online across India</span>
     </h1>
 
     <p class="nxh__sub">
@@ -1241,6 +1244,8 @@ body.page .nxh__sweep{
         </div>
       </section>
 
+
+      @include('home.partials.gurugram-areas')
 
       <!-- TRUSTED BY -->
       <section class="section">

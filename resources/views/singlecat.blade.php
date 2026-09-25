@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>{{ $metatitle }}</title>
-    <meta name="title" content="{{ $metatitle }}">
+    @php $metatitle = $metatitle; @endphp
     <meta name="keywords" content="{{ $metakey }}">
-    <meta name="description" content="{{ $metadesc }}">
+    @php $metadesc = $metadesc; @endphp
     @include('include.header')
 
     <style>

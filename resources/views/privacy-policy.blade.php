@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>{{ $metatitle ?: ($page->main_title ?? 'Privacy Policy') . ' | NXTutors' }}</title>
-    <meta name="title" content="{{ $metatitle ?: ($page->main_title ?? 'Privacy Policy') . ' | NXTutors' }}">
+    @php $metatitle = $metatitle ?: ($page->main_title ?? 'Privacy Policy') . ' | NXTutors'; @endphp
     <meta name="keywords" content="{{ $metakey }}">
-    <meta name="description" content="{{ $metadesc ?: 'How NXTutors collects, uses and protects the personal information of students, parents and tutors, and how to request access to or deletion of your data.' }}">
+    @php $metadesc = $metadesc ?: 'How NXTutors collects, uses and protects the personal information of students, parents and tutors, and how to request access to or deletion of your data.'; @endphp
     @include('include.header')
 </head>
 <body class="page">

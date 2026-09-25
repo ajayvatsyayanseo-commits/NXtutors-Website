@@ -12,10 +12,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>{{ $metatitle ?: 'Contact NXTutors | Home & Online Tuition in Gurugram' }}</title>
-    <meta name="title" content="{{ $metatitle ?: 'Contact NXTutors | Home & Online Tuition in Gurugram' }}">
+    @php $metatitle = $metatitle ?: 'Contact NXTutors | Home & Online Tuition in Gurugram'; @endphp
     <meta name="keywords" content="{{ $metakey }}">
-    <meta name="description" content="{{ $metadesc ?: 'Talk to NXTutors about home and online tutoring for CBSE, ICSE, IB and IGCSE. Call, WhatsApp or email us, or book a free demo class. Office in Sector 66, Gurugram.' }}">
+    @php $metadesc = $metadesc ?: 'Talk to NXTutors about home and online tutoring for CBSE, ICSE, IB and IGCSE. Call, WhatsApp or email us, or book a free demo class. Office in Sector 66, Gurugram.'; @endphp
     @include('include.header')
 </head>
 <body class="page">
@@ -510,8 +509,11 @@ body.page .nxct-faq__a{
   </section>
 </main>
 
-<script type="application/ld+json">
-{!! json_encode([
+{{-- Built in a php block, not inline in the echo: Blade compiles a quoted '@context'
+     outside php blocks as its own context directive, which printed PHP source
+     into the JSON-LD and made the whole block unreadable to Google. --}}
+@php
+  $nxContactLd = [
   '@context' => 'https://schema.org',
   '@type' => 'ContactPage',
   'url' => url()->current(),
@@ -539,8 +541,9 @@ body.page .nxct-faq__a{
       'availableLanguage' => ['en', 'hi'],
     ],
   ],
-], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
-</script>
+];
+@endphp
+<script type="application/ld+json">{!! json_encode($nxContactLd, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
 
 @include('include.footer')
 </body>

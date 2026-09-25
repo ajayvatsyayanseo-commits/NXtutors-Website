@@ -3,16 +3,9 @@
 <head>
   <meta charset="utf-8">
 
-  {{-- ✅ Meta (old format friendly) --}}
-  <title>{{ $tutor->name }} | NXTutors</title>
-  <meta name="description" content="View profile of {{ $tutor->name }} - verified home tutor in {{ $tutor->city }}.">
-
-  {{-- OG --}}
-  <meta property="og:title" content="{{ $tutor->name }} | NXTutors">
-  <meta property="og:description" content="Verified tutor in {{ $tutor->city }}.">
-  <meta property="og:type" content="profile">
-  <meta property="og:url" content="{{ $canonical }}">
-  <meta property="og:image" content="{{ $img }}">
+  {{-- Title, description and Open Graph are emitted by include.header from
+       $metatitle / $metadesc / $ogImage / $ogType, set below once $img and the
+       subjects are known. --}}
 @php use Illuminate\Support\Str; @endphp
 @php
   $canonical = $canonical ?? url()->current();
@@ -61,6 +54,18 @@
   $subjectsTaught = $subjectsOffered ?? [];
   $subjectsTaught = array_values(array_filter(array_unique($subjectsTaught)));
   $subjectsTaught = array_slice($subjectsTaught, 0, 12);
+
+  // Title and description. "Name | NXTutors" said nothing a searcher types;
+  // the subject and city are what "maths tutor in gurgaon" actually matches.
+  $metaCity  = $city !== '' ? ucwords(strtolower($city)) : '';
+  $metaSubj  = $subjectsTaught[0] ?? '';
+  $metaRole  = trim($metaSubj . ' Home Tutor');
+  $metatitle = $tutor->name . ' – ' . $metaRole . ($metaCity !== '' ? ' in ' . $metaCity : '') . ' | NXTutors';
+  $metadesc  = 'Profile of ' . $tutor->name . ', a verified ' . strtolower($metaRole)
+             . ($metaCity !== '' ? ' in ' . $metaCity : '')
+             . '. See subjects, boards, experience and fees, and book a free demo class on NXTutors.';
+  $ogImage   = $img;
+  $ogType    = 'profile';
 
   // ✅ JSON-LD: ProfilePage
   $schemaWebPage = [

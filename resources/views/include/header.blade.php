@@ -1,4 +1,16 @@
-   <title>{{ $metatitle }}</title>
+  {{--
+    The ONLY place <title>, meta title/description and Open Graph are written.
+    Templates set $metatitle / $metadesc (and optionally $ogImage, $ogType)
+    before including this file; they must not print their own <title> or
+    description. They used to, and every /city, area, /p/ and tutor page went
+    out with two titles and two descriptions — on the area pages the second
+    pair was the whole city's, so 150 pages told Google they were one page.
+  --}}
+  @php
+    $metatitle = trim((string) ($metatitle ?? '')) ?: 'NXTutors';
+    $metadesc  = trim((string) ($metadesc ?? ''));
+  @endphp
+  <title>{{ $metatitle }}</title>
   <meta charset="UTF-8" />
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WYQKGZVSL0"></script>
@@ -19,7 +31,7 @@
 </script>
  <meta name="title" content="{{ $metatitle }}">
  
-    <meta name="description" content="{{ $metadesc }}">
+  @if($metadesc !== '')<meta name="description" content="{{ $metadesc }}">@endif
   @isset($metarobots)<meta name="robots" content="{{ $metarobots }}">@endisset
 
   {{--
@@ -35,6 +47,19 @@
     ignore both.
   --}}
   <link rel="canonical" href="{{ $canonical ?? $canonicalUrl ?? url()->current() }}">
+
+  {{-- Open Graph / Twitter: what WhatsApp, Facebook and X show when a parent
+       shares a link. Blog posts set $nxtOwnOg and print their own. --}}
+  @if(empty($nxtOwnOg))
+  <meta property="og:site_name" content="NXTutors">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:type" content="{{ $ogType ?? 'website' }}">
+  <meta property="og:url" content="{{ $canonical ?? $canonicalUrl ?? url()->current() }}">
+  <meta property="og:title" content="{{ $metatitle }}">
+  @if($metadesc !== '')<meta property="og:description" content="{{ $metadesc }}">@endif
+  <meta property="og:image" content="{{ $ogImage ?? asset('storage/Hero/heroimage-1280.webp') }}">
+  <meta name="twitter:card" content="summary_large_image">
+  @endif
 
   <meta name="google-site-verification" content="6YPIp5C3YKMj872HZZnphViStBtyWOrah5hikhJIz2M"/>
 <meta name="csrf-token" content="{{ csrf_token() }}">

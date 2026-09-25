@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Find City - NXTutors</title>
-  <meta name="description" content="Find cities where NXTutors is available.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  @php $metatitle = 'Find City - NXTutors'; @endphp
+  @php $metadesc = 'Find cities where NXTutors is available.'; @endphp
   @include('include.header')
 
   @php
@@ -26,7 +25,7 @@
     foreach($city as $c){
       $img = $c->avatar
         ? asset('storage/city/'.$c->avatar)
-        : asset('frount/assets/images/og-default.jpg');
+        : asset('storage/Hero/heroimage-1280.webp');
 
       $cityUrl = !empty($c->slug) ? url('/city/'.$c->slug) : url('/city/'.$c->id);
 
@@ -131,7 +130,7 @@
     <div class="grid-3" id="cityGrid">
       @foreach($city as $c)
         @php
-          $img = $c->avatar ? asset('storage/city/'.$c->avatar) : asset('frount/assets/images/og-default.jpg');
+          $img = $c->avatar ? asset('storage/city/'.$c->avatar) : asset('storage/Hero/heroimage-1280.webp');
           $cityUrl = !empty($c->slug) ? url('/city/'.$c->slug) : url('/city/'.$c->id);
         @endphp
 

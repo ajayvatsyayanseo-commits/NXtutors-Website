@@ -2,11 +2,9 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>{{ $metatitle ?? 'Pricing Plans - NXTutors' }}</title>
-    <meta name="title" content="{{ $metatitle ?? 'Pricing Plans - NXTutors' }}">
+    @php $metatitle = $metatitle ?? 'Pricing Plans - NXTutors'; @endphp
     <meta name="keywords" content="{{ $metakey ?? 'NXTutors pricing, student plans, tutor plans' }}">
-    <meta name="description" content="{{ $metadesc ?? 'Choose NXTutors student and tutor subscription plans.' }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @php $metadesc = $metadesc ?? 'Choose NXTutors student and tutor subscription plans.'; @endphp
 
     @include('include.header')
 </head>

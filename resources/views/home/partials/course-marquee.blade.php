@@ -114,7 +114,7 @@
               <p class="{{ $i === 0 ? 'nxmq-card__desc' : 'nxmq-card__more' }}">{{ $para }}</p>
             @endforeach
 
-            @php($kids = $subjectsOf($c))
+            @php $kids = $subjectsOf($c); @endphp
             @if($kids->count())
               {{-- Every subject actually taught under this card, named in
                    crawlable text instead of hidden behind "and 14 more". --}}
@@ -161,7 +161,7 @@
               <p class="{{ $i === 0 ? 'nxmq-card__desc' : 'nxmq-card__more' }}">{{ $para }}</p>
             @endforeach
 
-            @php($kids = $subjectsOf($c))
+            @php $kids = $subjectsOf($c); @endphp
             @if($kids->count())
               <span class="nxmq-card__subjects">
                 <span class="nxmq-card__subjects-label">Includes</span>
@@ -186,8 +186,11 @@
 
   {{-- The services these cards describe, listed once — the clone is never counted.
        No url on the items: these cards are descriptions, not links. --}}
-  <script type="application/ld+json">
-  {!! json_encode([
+  {{-- Built in a php block, not inline in the echo: Blade compiles a quoted '@context'
+       outside php blocks as its own context directive, which printed PHP source
+       into the JSON-LD and made the whole block unreadable to Google. --}}
+  @php
+    $nxcmLd = [
       '@context' => 'https://schema.org',
       '@type'    => 'ItemList',
       '@id'      => url()->current() . '#subjects',
@@ -221,7 +224,8 @@
               ] : null,
           ]),
       ])->all(),
-  ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
-  </script>
+  ];
+  @endphp
+  <script type="application/ld+json">{!! json_encode($nxcmLd, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
 </section>
 @endif

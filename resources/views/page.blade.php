@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>NXTutors</title>
+  @php $metatitle = 'NXTutors'; @endphp
  @include('include.header')
  <style>
    .gen-load-more {

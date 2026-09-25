@@ -82,8 +82,11 @@
   {{-- The cities this band links to. Only those with tutors on record are
        claimed as served areas; the rest are still linked above but not asserted
        here as places we have supply in. --}}
-  <script type="application/ld+json">
-  {!! json_encode([
+  {{-- Built in a php block, not inline in the echo: Blade compiles a quoted '@context'
+       outside php blocks as its own context directive, which printed PHP source
+       into the JSON-LD and made the whole block unreadable to Google. --}}
+  @php
+    $nxcsLd = [
       '@context' => 'https://schema.org',
       '@type'    => 'Service',
       '@id'      => url()->current() . '#coverage',
@@ -95,7 +98,8 @@
           'name'  => $c['name'],
           'url'   => url('city/' . $c['slug']),
       ])->values()->all(),
-  ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
-  </script>
+  ];
+  @endphp
+  <script type="application/ld+json">{!! json_encode($nxcsLd, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
 </section>
 @endif

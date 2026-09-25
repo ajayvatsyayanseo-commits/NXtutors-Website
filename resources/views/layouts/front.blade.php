@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>@yield('title','NXTutors')</title>
-  <meta name="description" content="@yield('meta_desc','')">
+  @php
+    $metatitle = $__env->yieldContent('title', 'NXTutors');
+    $metadesc = $__env->yieldContent('meta_desc', '');
+  @endphp
   @include('include.header')
   @stack('head')
 </head>

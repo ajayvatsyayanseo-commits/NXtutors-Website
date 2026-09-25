@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>{{ $area->meta_title ?? ($area->main_title.' - NXTutors') }}</title>
-  <meta name="description" content="{{ $area->meta_desc ?? \Illuminate\Support\Str::limit(strip_tags($area->short_desc ?? $area->area_desc ?? ''), 160) }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  @php $metatitle = $area->meta_title ?? ($area->main_title.' - NXTutors'); @endphp
+  @php $metadesc = $area->meta_desc ?? \Illuminate\Support\Str::limit(strip_tags($area->short_desc ?? $area->area_desc ?? ''), 160); @endphp
   @include('include.header')
 @php use Illuminate\Support\Str; @endphp
   @php
@@ -16,7 +15,7 @@
 
     $cityImg = $city?->avatar
       ? asset('storage/city/'.$city->avatar)
-      : asset('frount/assets/images/og-default.jpg');
+      : asset('storage/Hero/heroimage-1280.webp');
 
     // -------- Breadcrumb schema ----------
     $breadcrumb = [

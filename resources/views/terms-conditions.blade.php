@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>{{ $metatitle ?: ($page->main_title ?? 'Terms & Conditions') . ' | NXTutors' }}</title>
-    <meta name="title" content="{{ $metatitle ?: ($page->main_title ?? 'Terms & Conditions') . ' | NXTutors' }}">
+    @php $metatitle = $metatitle ?: ($page->main_title ?? 'Terms & Conditions') . ' | NXTutors'; @endphp
     <meta name="keywords" content="{{ $metakey }}">
-    <meta name="description" content="{{ $metadesc ?: 'The terms governing use of NXTutors online and home tuition services — registration, tutor matching, payments and refunds, scheduling, conduct and intellectual property.' }}">
+    @php $metadesc = $metadesc ?: 'The terms governing use of NXTutors online and home tuition services — registration, tutor matching, payments and refunds, scheduling, conduct and intellectual property.'; @endphp
     @include('include.header')
 </head>
 <body class="page">

@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Blogs - NXTutors</title>
-  <meta name="description" content="Latest blogs and guides by NXTutors">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  @php $metatitle = 'Blogs - NXTutors'; @endphp
+  @php $metadesc = 'Latest blogs and guides by NXTutors'; @endphp
   <style>
     /* ====== Page container ====== */
 .container{

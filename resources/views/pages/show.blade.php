@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>{{ $page->meta_title ?? $page->title }}</title>
-  <meta name="description" content="{{ $page->meta_description }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  @php $metatitle = $page->meta_title ?? $page->title; @endphp
+  @php $metadesc = $page->meta_description; @endphp
 
   {{-- ✅ SEO SAFE SCALE: Noindex + Canonical --}}
   @php
@@ -24,10 +23,7 @@
 
   <meta name="robots" content="{{ $isNoindex ? 'noindex,follow' : 'index,follow' }}">
 
-  {{-- Optional OG --}}
-  <meta property="og:url" content="{{ $canonicalUrl }}">
-  <meta property="og:title" content="{{ $page->meta_title ?? $page->title }}">
-  <meta property="og:description" content="{{ $page->meta_description }}">
+  {{-- Open Graph comes from include.header (url = $canonicalUrl). --}}
 
   @include('include.header')
 

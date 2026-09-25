@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>{{ $city->meta_title ?? ($city->city_name.' - NXTutors') }}</title>
-  <meta name="description" content="{{ $city->meta_desc ?? ('Find verified tutors in '.$city->city_name.'. Explore areas and book a tutor.') }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  @php $metatitle = $city->meta_title ?? ($city->city_name.' - NXTutors'); @endphp
+  @php $metadesc = $city->meta_desc ?? ('Find verified tutors in '.$city->city_name.'. Explore areas and book a tutor.'); @endphp
   @include('include.header')
 
   @php
@@ -12,7 +11,7 @@
     $pageUrl = url()->current();
     $cityImg = $city->avatar
       ? asset('storage/city/'.$city->avatar)
-      : asset('frount/assets/images/og-default.jpg');
+      : asset('storage/Hero/heroimage-1280.webp');
 
     $breadcrumb = [
       "@context" => "https://schema.org",
@@ -110,6 +109,13 @@
       padding:10px 16px;border-radius:999px;font-weight:800;text-align:center;flex:1;
     }
     .btn-outline:hover{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.35)}
+    .all-areas{margin-top:36px;color:#fff}
+    .all-areas h2{font-size:22px;font-weight:900;margin:0 0 6px}
+    .all-areas p{opacity:.8;margin:0 0 14px;max-width:760px}
+    .all-areas__list{list-style:none;margin:0;padding:0;columns:3 220px;column-gap:24px}
+    .all-areas__list li{break-inside:avoid;padding:4px 0;font-size:14px}
+    .all-areas__list a{color:#c9d6ff;text-decoration:none}
+    .all-areas__list a:hover{text-decoration:underline}
   </style>
 </head>
 
@@ -121,7 +127,17 @@
     <div class="hero">
       <img src="{{ $cityImg }}" alt="{{ $city->city_name }}">
       <div>
-        <h1>{{ $city->city_name }}</h1>
+        {{-- The bare city name said nothing a parent searches for. The old
+             name is added in brackets because "Gurgaon" still out-searches
+             "Gurugram" several times over. --}}
+        @php
+          $cityAka = [
+            'gurugram'  => 'Gurgaon',
+            'bengaluru' => 'Bangalore',
+            'mumbai'    => 'Bombay',
+          ][strtolower((string) $city->slug)] ?? null;
+        @endphp
+        <h1>Home &amp; Online Tutors in {{ $city->city_name }}@if($cityAka) ({{ $cityAka }})@endif</h1>
         <p>
           {{ $city->city_desc  }}
         </p>
@@ -148,6 +164,23 @@
         Load More
       </button>
     </div>
+
+    {{-- Every area as a plain link: the cards above stop at nine and load
+         the rest by AJAX, which search engines do not trigger. --}}
+    @if(isset($allAreas) && $allAreas->count())
+    <section class="all-areas" aria-labelledby="allAreasTitle">
+      <h2 id="allAreasTitle">All areas we cover in {{ $city->city_name }}@if($cityAka) ({{ $cityAka }})@endif</h2>
+      <p>
+        Home tutors for {{ $allAreas->count() }} sectors and societies in {{ $city->city_name }}.
+        Open your area to see tutors near you, subjects and fees, and book a free demo class.
+      </p>
+      <ul class="all-areas__list">
+        @foreach($allAreas as $a)
+          <li><a href="{{ url('/city/'.$city->slug.'/'.$a->slug) }}">{{ trim((string) $a->name) !== '' ? $a->name : $a->main_title }}</a></li>
+        @endforeach
+      </ul>
+    </section>
+    @endif
 
   </div>
 </main>

@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>{{ $blog->meta_title ?: $blog->title }}</title>
-  <meta name="description" content="{{ $blog->meta_desc ?: '' }}">
+  @php $metatitle = $blog->meta_title ?: $blog->title; @endphp
+  @php $nxtOwnOg = true; @endphp
+  @php $metadesc = $blog->meta_desc ?: ''; @endphp
 
   {{-- OG --}}
   <meta property="og:title" content="{{ $blog->meta_title ?: $blog->title }}">

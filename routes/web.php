@@ -152,6 +152,9 @@ Route::get('/blog/{slug}', [HomeController::class, 'showsingleblog'])->name('blo
 
 Route::get('/tutors', [HomeController::class, 'tutorsIndex'])->name('tutors.index');
 Route::get('/city', [HomeController::class, 'cityIndex'])->name('city.index');
+// "Gurgaon" is still what most parents type, and /city/gurgaon was a 404.
+Route::permanentRedirect('/city/gurgaon', '/city/gurugram');
+Route::permanentRedirect('/city/gurgaon/{areaSlug}', '/city/gurugram/{areaSlug}');
 Route::get('/city/{slug}', [HomeController::class, 'cityShow'])->name('city.show');
 Route::get('/city/{slug}/areas/load', [HomeController::class, 'cityAreasLoad'])->name('city.areas.load');
 Route::get('/city/{citySlug}/{areaSlug}', [HomeController::class, 'cityAreaShow'])
