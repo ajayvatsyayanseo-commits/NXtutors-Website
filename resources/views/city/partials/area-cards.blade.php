@@ -1,8 +1,9 @@
 @forelse($areas as $a)
  
 
-  <div class="area-card" data-name="{{ strtolower($a->main_title) }}">
-    <h3 class="area-name">{{ $a->main_title }}</h3>
+  @php $aName = \App\Support\CityHub::cleanAreaName($a->name, $a->slug); @endphp
+  <div class="area-card" data-name="{{ strtolower($aName.' '.$a->main_title) }}">
+    <h3 class="area-name">Home tutors in {{ $aName }}</h3>
 
     <div class="area-meta">
       {!! $a->short_desc !!}

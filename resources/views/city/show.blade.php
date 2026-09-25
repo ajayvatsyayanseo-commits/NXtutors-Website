@@ -216,7 +216,7 @@
       </p>
       <ul class="all-areas__list">
         @foreach($allAreas as $a)
-          <li><a href="{{ url('/city/'.$city->slug.'/'.$a->slug) }}">{{ trim((string) $a->name) !== '' ? $a->name : $a->main_title }}</a></li>
+          <li><a href="{{ url('/city/'.$city->slug.'/'.$a->slug) }}">{{ \App\Support\CityHub::cleanAreaName($a->name, $a->slug) }}</a></li>
         @endforeach
       </ul>
     </section>
@@ -248,7 +248,7 @@
     @includeIf('city.content.' . $city->slug, ['city' => $city, 'allAreas' => $allAreas, 'hubCounts' => $hubCounts])
 
     @php
-      $faqAreas = $allAreas->take(5)->map(fn ($a) => trim((string) $a->name) !== '' ? $a->name : $a->main_title)->implode(', ');
+      $faqAreas = $allAreas->take(5)->map(fn ($a) => \App\Support\CityHub::cleanAreaName($a->name, $a->slug))->implode(', ');
       $cityFaqs = [
         ['How much does a home tutor cost in '.$city->city_name.'?',
          'Fees depend on the class, the subject and the tutor\'s experience. Across NXTutors most sessions fall between ₹800 and ₹2,500 an hour, with board-exam, IB and JEE/NEET preparation at the upper end. You see each tutor\'s fee before the demo class.'],

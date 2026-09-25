@@ -23,6 +23,10 @@ class GeoStructureTest extends TestCase
         Cache::flush();
         // Production queries name a MySQL collation; give SQLite the same name.
         DB::connection()->getPdo()->sqliteCreateCollation('utf8mb4_unicode_ci', 'strcmp');
+        \Illuminate\Support\Facades\View::share('setting', new class {
+            public function __get($k) { return $k === 'phone' ? '+91 78360 34313' : ''; }
+            public function __isset($k) { return true; }
+        });
 
         Schema::create('city_managment', function ($t) {
             $t->id(); $t->string('city_name'); $t->string('slug')->nullable(); $t->text('city_desc')->nullable();
@@ -176,10 +180,6 @@ class GeoStructureTest extends TestCase
     public function test_full_pages_render(): void
     {
         $this->withoutExceptionHandling();
-        \Illuminate\Support\Facades\View::share('setting', new class {
-            public function __get($k) { return $k === 'phone' ? '+91 78360 34313' : ''; }
-            public function __isset($k) { return true; }
-        });
         $g = $this->get('/city/gurugram')->assertOk();
         $g->assertSee('<a href="' . url('/city') . '#haryana">Haryana</a>', false);
         $g->assertSee('Popular tutor searches in Gurugram');
@@ -222,6 +222,36 @@ class GeoStructureTest extends TestCase
         $this->get('/blog/-neet-biology-ncertfirst')->assertOk();
         $this->get('/blog/maths-home-tutor-in-dlf-phase-4-best-home-tutors-near-you')->assertOk()
             ->assertSee(url('/city/gurugram/dlf-phase-4'), false);
+    }
+
+    public function test_area_titles_and_h1s_are_built_from_the_area_name(): void
+    {
+        $this->assertSame('Vatika City, Sector 49', CityHub::cleanAreaName('(Vatika City, Sector 49 (Gurugram))'));
+        $this->assertSame('Sector 59', CityHub::cleanAreaName('Sector 59, Gurugram'));
+        $this->assertSame('Huda Plots', CityHub::cleanAreaName('', 'huda-plots-'));
+
+        $seo = CityHub::areaSeo((object) ['name' => 'DLF Phase 4', 'slug' => 'dlf-phase-4', 'meta_desc' => 'x'], 'gurugram', 'Gurugram');
+        $this->assertSame('Home Tutors in DLF Phase 4, Gurgaon – CBSE, IB, JEE | NXTutors', $seo['title']);
+        $this->assertSame('Home Tutors in DLF Phase 4, Gurugram', $seo['h1']);
+        $this->assertStringStartsWith('Verified home tutors in DLF Phase 4, Gurugram', $seo['desc'], 'a 1-character typed description is replaced');
+
+        $long = CityHub::areaSeo((object) ['name' => 'Golf Course Road interface (E-Block side)', 'slug' => 'x'], 'gurugram', 'Gurugram');
+        $this->assertLessThanOrEqual(70, mb_strlen($long['title']));
+
+        // Two areas with the same name get told apart.
+        DB::table('city_area_list_managment')->insert([
+            ['city_id' => 1, 'name' => 'HUDA plots', 'slug' => 'huda-plots', 'pincode' => '122001', 'main_title' => 'a'],
+            ['city_id' => 1, 'name' => 'HUDA plots', 'slug' => 'huda-plots-', 'pincode' => '122018', 'main_title' => 'b'],
+        ]);
+        Cache::flush();
+        $a = CityHub::areaSeo((object) ['name' => 'HUDA plots', 'slug' => 'huda-plots', 'pincode' => '122001'], 'gurugram', 'Gurugram');
+        $b = CityHub::areaSeo((object) ['name' => 'HUDA plots', 'slug' => 'huda-plots-', 'pincode' => '122018'], 'gurugram', 'Gurugram');
+        $this->assertNotSame($a['title'], $b['title']);
+        $this->assertStringContainsString('HUDA plots (122001)', $a['h1']);
+
+        $page = $this->withoutExceptionHandling()->get('/city/gurugram/dlf-phase-4');
+        $page->assertSee('<title>Home Tutors in DLF Phase 4, Gurgaon – CBSE, IB, JEE | NXTutors</title>', false);
+        $page->assertSee('<h1 class="hero-title">Home Tutors in DLF Phase 4, Gurugram</h1>', false);
     }
 
     public function test_chat_page_hint_sets_place_and_subject_defaults(): void

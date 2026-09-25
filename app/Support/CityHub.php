@@ -130,17 +130,88 @@ class CityHub
             return null;
         }
 
-        $areas = collect(Cache::remember("cityhub.areas.v1.$citySlug", 3600, fn () => DB::table('city_area_list_managment as a')
+        $areas = self::areaList($citySlug);
+
+        return $areas->first(fn ($a) => self::norm($a->name) === $loc)
+            ?? $areas->first(fn ($a) => (bool) preg_match('/\b' . preg_quote($loc, '/') . '\b/', self::norm($a->name)));
+    }
+
+    /**
+     * An area's name as a place, for titles, headings and link text:
+     * "(Vatika City, Sector 49 (Gurugram))" → "Vatika City, Sector 49".
+     * Falls back to the slug when the name field is empty.
+     */
+    public static function cleanAreaName(?string $name, ?string $slug = null): string
+    {
+        $n = trim((string) $name);
+        while ($n !== '' && str_starts_with($n, '(') && str_ends_with($n, ')')) {
+            $n = trim(substr($n, 1, -1));
+        }
+        $n = preg_replace('/[\s,]*\(?\b(gurugram|gurgaon)\b\)?\s*$/iu', '', $n);
+        $n = trim(preg_replace('/\s+/u', ' ', $n), " ,-–");
+
+        if ($n === '') {
+            $n = ucwords(trim(str_replace('-', ' ', (string) $slug)));
+        }
+
+        return $n;
+    }
+
+    /**
+     * Title, H1 and meta description for an area page, built from the area's
+     * name. The hand-typed titles in Super Admin averaged 106 characters (Google
+     * shows about 60) and most repeated "Affordable, Female & Experienced";
+     * these are short, consistent, and name the place first.
+     *
+     * The description typed in Super Admin is kept when it is a sensible
+     * length; otherwise one is written from the name.
+     *
+     * @return array{name:string, title:string, h1:string, desc:string}
+     */
+    public static function areaSeo(object $area, string $citySlug, string $cityName): array
+    {
+        $name = self::cleanAreaName($area->name ?? '', $area->slug ?? '');
+
+        // Two area pages with the same name ("HUDA plots") get their pincode,
+        // so no two pages share a title.
+        $siblings = self::areaList($citySlug)->filter(fn ($a) => strcasecmp(self::cleanAreaName($a->name, $a->slug), $name) === 0);
+        if ($siblings->count() > 1) {
+            $pinIsUnique = ! empty($area->pincode) && $siblings->where('pincode', (string) $area->pincode)->count() === 1;
+            $name .= $pinIsUnique ? ' (' . $area->pincode . ')' : ' (' . ucwords(str_replace('-', ' ', trim((string) $area->slug, '-'))) . ')';
+        }
+
+        // "Gurgaon" in the title because it is still what most people type;
+        // the H1 and the rest of the page use the current name.
+        $titleCity = Geo::akaOf($citySlug) && $citySlug === 'gurugram' ? Geo::akaOf($citySlug) : $cityName;
+        $base = 'Home Tutors in ' . $name . ', ' . $titleCity;
+        $title = mb_strlen($base . ' – CBSE, IB, JEE | NXTutors') <= 65
+            ? $base . ' – CBSE, IB, JEE | NXTutors'
+            : (mb_strlen($base . ' | NXTutors') <= 70 ? $base . ' | NXTutors' : $base);
+
+        $typed = trim(preg_replace('/\s+/u', ' ', strip_tags((string) ($area->meta_desc ?? ''))));
+        $desc = (mb_strlen($typed) >= 70 && mb_strlen($typed) <= 170 && ! str_contains($typed, 'NxtTutors'))
+            ? $typed
+            : 'Verified home tutors in ' . $name . ', ' . $cityName . ' for CBSE, ICSE, IB and IGCSE, Classes 6–12, and JEE/NEET. See tutors near you and book a free demo class.';
+
+        return [
+            'name'  => $name,
+            'title' => $title,
+            'h1'    => 'Home Tutors in ' . $name . ', ' . $cityName,
+            'desc'  => $desc,
+        ];
+    }
+
+    /** Active areas of a city (name, slug, pincode), cached. */
+    public static function areaList(string $citySlug): Collection
+    {
+        return collect(Cache::remember("cityhub.areas.v2.$citySlug", 3600, fn () => DB::table('city_area_list_managment as a')
             ->join('city_managment as c', 'c.id', '=', 'a.city_id')
             ->where('c.slug', $citySlug)->where('a.status', 't')
             ->whereNotNull('a.slug')->where('a.slug', '!=', '')
             ->orderBy('a.name')
-            ->get(['a.name', 'a.slug'])
-            ->map(fn ($a) => (object) ['name' => (string) $a->name, 'slug' => (string) $a->slug])
+            ->get(['a.name', 'a.slug', 'a.pincode'])
+            ->map(fn ($a) => (object) ['name' => (string) $a->name, 'slug' => (string) $a->slug, 'pincode' => (string) $a->pincode])
             ->all()));
-
-        return $areas->first(fn ($a) => self::norm($a->name) === $loc)
-            ?? $areas->first(fn ($a) => (bool) preg_match('/\b' . preg_quote($loc, '/') . '\b/', self::norm($a->name)));
     }
 
     /**

@@ -972,6 +972,8 @@ public function cityAreaShow($citySlug, $areaSlug)
     $areaPages  = \App\Support\CityHub::pagesForArea(\App\Support\CityHub::pages($city->slug), $area);
     $areaGuides = \App\Support\CityHub::guides([trim((string) $area->slug, '-')], 3);
     $areaState  = \App\Support\Geo::stateOf($city->slug);
+    // Clean title, H1 and description from the area's name; see CityHub::areaSeo.
+    $areaSeo    = \App\Support\CityHub::areaSeo($area, $city->slug, $city->city_name);
 
      $areaTutors = Register::where('join_as', 'teacher')
         ->publiclyVisible()
@@ -1001,7 +1003,7 @@ public function cityAreaShow($citySlug, $areaSlug)
             $metakey = '';
             $metadesc = $city->meta_desc;
 
-    return view('city.cityarea.single', compact('city', 'area','relatedAreas','tutors','tutorScope','metatitle','metakey','metadesc','areaPages','areaGuides','areaState'));
+    return view('city.cityarea.single', compact('city', 'area','relatedAreas','tutors','tutorScope','metatitle','metakey','metadesc','areaPages','areaGuides','areaState','areaSeo'));
 }
    public function contactpage()
     {

@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  @php $metatitle = $area->meta_title ?? ($area->main_title.' - NXTutors'); @endphp
-  @php $metadesc = $area->meta_desc ?? \Illuminate\Support\Str::limit(strip_tags($area->short_desc ?? $area->area_desc ?? ''), 160); @endphp
+  {{-- Title and description come from CityHub::areaSeo (built from the area's
+       name), not the hand-typed Super Admin title, which ran to 100+ characters. --}}
+  @php $metatitle = $areaSeo['title'] ?? ($area->meta_title ?? $area->main_title); @endphp
+  @php $metadesc = $areaSeo['desc'] ?? ($area->meta_desc ?? ''); @endphp
   @include('include.header')
 @php use Illuminate\Support\Str; @endphp
   @php
@@ -26,7 +28,7 @@
         ["@type"=>"ListItem","position"=>2,"name"=>"India","item"=>url('/city')],
         ["@type"=>"ListItem","position"=>3,"name"=>$areaState ?? "India","item"=>url('/city').'#'.\App\Support\Geo::stateSlug($areaState ?? '')],
         ["@type"=>"ListItem","position"=>4,"name"=>$city?->city_name ?? "City","item"=>$cityUrl],
-        ["@type"=>"ListItem","position"=>5,"name"=>$area->name ?: ($area->main_title ?? ''),"item"=>$pageUrl],
+        ["@type"=>"ListItem","position"=>5,"name"=>$areaSeo['name'] ?? $area->name,"item"=>$pageUrl],
       ],
     ];
 
@@ -34,7 +36,7 @@
     $placeSchema = [
       "@context" => "https://schema.org",
       "@type" => "Place",
-      "name" => ($area->main_title ?? $area->name),
+      "name" => ($areaSeo['name'] ?? $area->name).', '.($city?->city_name ?? ''),
       "url" => $pageUrl,
       "image" => $cityImg,
       "description" => $area->meta_desc ?? strip_tags($area->short_desc ?? ''),
@@ -123,10 +125,10 @@
           <a href="{{ url('/city') }}">India</a> <span>›</span>
           <a href="{{ url('/city') }}#{{ \App\Support\Geo::stateSlug($areaState ?? '') }}">{{ $areaState }}</a> <span>›</span>
           <a href="{{ $cityUrl }}">{{ $city?->city_name ?? 'City' }}</a> <span>›</span>
-          <span>{{ $area->name ?: ($area->main_title ?? '') }}</span>
+          <span>{{ $areaSeo['name'] ?? $area->name }}</span>
         </div>
 
-        <h1 class="hero-title">{{ $area->main_title ?? $area->name }}</h1>
+        <h1 class="hero-title">{{ $areaSeo['h1'] ?? ($area->main_title ?? $area->name) }}</h1>
 
         <p class="hero-sub">
           {!! $area->short_desc ? \Illuminate\Support\Str::limit(strip_tags($area->short_desc), 190) : 'Find verified tutors near you with flexible timing, experienced teachers, and a free demo class.' !!}
@@ -155,7 +157,7 @@
       <section class="cardx block section" id="tutors">
   <h2 class="h2"><span></span>
     @if(($tutorScope ?? 'area') === 'area')
-      Tutors Available in {{ $area->main_title ?? $area->name }}
+      Tutors available in {{ $areaSeo['name'] ?? $area->name }}
     @else
       No tutors found in this area — Showing tutors in {{ $city->city_name }}
     @endif
@@ -252,7 +254,7 @@
 
     {{-- MAIN GRID --}}
     {{-- Ask NXT AI, tuned to this area (the tutors section above is the page's own). --}}
-    @include('home.partials.ask-ai', ['aiPage' => ['type' => 'area', 'city' => $city?->city_name ?? '', 'area' => $area->name ?: '']])
+    @include('home.partials.ask-ai', ['aiPage' => ['type' => 'area', 'city' => $city?->city_name ?? '', 'area' => $areaSeo['name'] ?? ($area->name ?: '')]])
 
     <section class="grid2 section">
 
@@ -384,13 +386,13 @@
     {{-- RELATED AREAS --}}
 @if(isset($relatedAreas) && $relatedAreas->count())
 <section class="cardx block section" id="related-areas">
-  <h2 class="h2"><span></span>Home tutors in areas near {{ $area->name ?: $area->main_title }}</h2>
+  <h2 class="h2"><span></span>Home tutors in areas near {{ $areaSeo['name'] ?? $area->name }}</h2>
 
   <div class="rel-grid">
     @foreach($relatedAreas as $ra)
       <a class="rel-card"
          href="{{ url('/') }}/city/{{ $area->city?->slug }}/{{ $ra->slug }}">
-        <div class="rel-title">{{ $ra->main_title ?? $ra->name }}</div>
+        <div class="rel-title">Home tutors in {{ \App\Support\CityHub::cleanAreaName($ra->name, $ra->slug) }}</div>
 
         @if(!empty($ra->pincode))
           <div class="rel-meta">📍 Pincode: {{ $ra->pincode }}</div>
@@ -415,7 +417,7 @@
          way back up to the city, state and India. --}}
     @if(isset($areaPages) && $areaPages->count())
     <section class="cardx block section" id="area-searches">
-      <h2 class="h2"><span></span>Subject and board tutors in {{ $area->name ?: $area->main_title }}</h2>
+      <h2 class="h2"><span></span>Subject and board tutors in {{ $areaSeo['name'] ?? $area->name }}</h2>
       <ul class="area-links">
         @foreach($areaPages->take(60) as $gp)
           <li><a href="{{ url('/p/'.$gp->slug) }}">{{ $gp->title }}</a></li>
@@ -426,7 +428,7 @@
 
     @if(isset($areaGuides) && $areaGuides->count())
     <section class="cardx block section" id="area-guides">
-      <h2 class="h2"><span></span>Guides for families in {{ $area->name ?: $area->main_title }}</h2>
+      <h2 class="h2"><span></span>Guides for families in {{ $areaSeo['name'] ?? $area->name }}</h2>
       <ul class="area-links">
         @foreach($areaGuides as $g)
           <li><a href="{{ url('/blog/'.$g->slug) }}">{{ $g->title }}</a></li>
