@@ -151,7 +151,7 @@
           <div class="nx-article-layout">
             {{-- LEFT: Content --}}
             <div>
-              <div class="genp-content" style="padding-top:6px;">
+              <div class="genp-content nx-article" style="padding-top:6px;">
                 {!! $blog->bdesc !!}
               </div>
 
@@ -261,32 +261,31 @@
             && ! in_array(trim($b->slug), $relatedSlugs, true))
         ->take(8);
     @endphp
-    <section class="nxsec blog-next" aria-labelledby="blogNextTitle">
-      <h2 class="nxh2" id="blogNextTitle">
-        {{ $postArea ? 'More for families in '.$postArea->name : 'More '.\App\Support\BlogTopics::TOPICS[$postTopic].' guides' }}
-      </h2>
+    <section class="nxsec blog-next nx-sec" aria-labelledby="blogNextTitle">
+      <div class="nx-sec__head">
+        <h2 class="nx-sec__title" id="blogNextTitle">
+          {{ $postArea ? 'More for families in '.$postArea->name : 'More '.\App\Support\BlogTopics::TOPICS[$postTopic].' guides' }}
+        </h2>
+        <a class="nx-sec__action" href="{{ url('/blog') }}#topic-{{ $postTopic }}">All guides →</a>
+      </div>
       @if($sameTopic->count())
-        <ul class="blog-next__list">
+        <div class="nx-rail">
           @foreach($sameTopic as $b)
-            <li><a href="{{ url('/blog/'.trim($b->slug)) }}">{{ $b->title }}</a></li>
+            <a class="nx-card" href="{{ url('/blog/'.trim($b->slug)) }}">
+              <span class="nx-card__kicker">{{ \App\Support\BlogTopics::TOPICS[$postTopic] }}</span>
+              <span class="nx-card__title">{{ $b->title }}</span>
+              <span class="nx-card__meta">Read the guide →</span>
+            </a>
           @endforeach
-        </ul>
+        </div>
       @endif
-      <p class="blog-next__up">
+      <ul class="nx-chips nx-chips--rail" style="margin-top:var(--nxt-s5)">
         @if($postArea)
-          <a href="{{ url('/city/gurugram/'.$postArea->slug) }}">Home tutors in {{ $postArea->name }}</a> ·
-          <a href="{{ url('/city/gurugram') }}">Home tutors across Gurugram</a> ·
-        @else
-          <a href="{{ url('/blog') }}#topic-{{ $postTopic }}">All {{ \App\Support\BlogTopics::TOPICS[$postTopic] }} guides</a> ·
+          <li><a class="nx-chip" href="{{ url('/city/gurugram/'.$postArea->slug) }}">Home tutors in {{ $postArea->name }}</a></li>
+          <li><a class="nx-chip" href="{{ url('/city/gurugram') }}">Home tutors across Gurugram</a></li>
         @endif
-        <a href="{{ url('/city') }}">Find a home tutor in your city</a>
-      </p>
-      <style>
-        .blog-next__list{list-style:none;margin:10px 0 0;padding:0;columns:2 280px;column-gap:24px}
-        .blog-next__list li{break-inside:avoid;padding:4px 0;font-size:14px;line-height:1.4}
-        .blog-next a{color:#c9d6ff}
-        .blog-next__up{margin-top:12px;line-height:1.8}
-      </style>
+        <li><a class="nx-chip" href="{{ url('/city') }}">Find a home tutor in your city</a></li>
+      </ul>
     </section>
 
   </main>

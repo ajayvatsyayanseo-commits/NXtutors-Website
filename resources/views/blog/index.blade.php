@@ -298,55 +298,62 @@
       $byLocality[\App\Support\BlogTopics::localityOf($tp->slug) ?? 'other'][] = $tp;
     }
   @endphp
-  <section class="nxsec topics" aria-labelledby="topicsTitle">
-    <h2 class="nxh2" id="topicsTitle">Browse guides by topic</h2>
-    <div class="topic-grid">
+  <section class="nxsec topics nx-sec" aria-labelledby="topicsTitle">
+    <div class="nx-sec__head">
+      <div>
+        <h2 class="nx-sec__title" id="topicsTitle">Browse guides by topic</h2>
+        <p class="nx-sec__sub">Every guide on NXTutors, grouped by what you are looking for.</p>
+      </div>
+      <a class="nx-sec__action" href="{{ url('/city') }}">Find a tutor in your city →</a>
+    </div>
+    <div class="nx-grid">
       @foreach(\App\Support\BlogTopics::TOPICS as $key => $label)
         @continue($key === 'city' || empty($byTopic[$key]))
-        <div class="topic" id="topic-{{ $key }}">
-          <h3>{{ $label }}</h3>
+        <div class="nx-card" id="topic-{{ $key }}">
+          <span class="nx-card__kicker">{{ count($byTopic[$key]) }} guides</span>
+          <h3 class="nx-card__title">{{ $label }}</h3>
           <ul>
-            @foreach($byTopic[$key] as $tp)
-              <li><a href="{{ url('/blog/'.trim($tp->slug)) }}">{{ $tp->title }}</a></li>
-            @endforeach
+            @foreach(array_slice($byTopic[$key], 0, 5) as $tp)<li><a href="{{ url('/blog/'.trim($tp->slug)) }}">{{ $tp->title }}</a></li>@endforeach
           </ul>
+          @if(count($byTopic[$key]) > 5)
+            <details class="nx-more">
+              <summary><span class="nx-more__closed">{{ count($byTopic[$key]) - 5 }} more</span><span class="nx-more__open">Fewer</span></summary>
+              <ul>
+                @foreach(array_slice($byTopic[$key], 5) as $tp)<li><a href="{{ url('/blog/'.trim($tp->slug)) }}">{{ $tp->title }}</a></li>@endforeach
+              </ul>
+            </details>
+          @endif
         </div>
       @endforeach
     </div>
 
     @if(count($byLocality))
-      <h2 class="nxh2" id="topic-city">{{ \App\Support\BlogTopics::TOPICS['city'] }}</h2>
-      <div class="topic-grid">
+      <div class="nx-sec__head" style="margin-top:var(--nxt-s7)" id="topic-city">
+        <div>
+          <h2 class="nx-sec__title">{{ \App\Support\BlogTopics::TOPICS['city'] }}</h2>
+          <p class="nx-sec__sub">Neighbourhood guides for Gurugram, each linked to that area's tutors.</p>
+        </div>
+      </div>
+      <div class="nx-rail">
         @foreach($byLocality as $loc => $posts)
           @php $locArea = $loc !== 'other' ? \App\Support\CityHub::areaFor('gurugram', str_replace('-', ' ', $loc)) : null; @endphp
-          <div class="topic">
-            <h3>
+          <div class="nx-card">
+            <span class="nx-card__kicker">{{ count($posts) }} guides</span>
+            <h3 class="nx-card__title">
               @if($locArea)
-                <a href="{{ url('/city/gurugram/'.$locArea->slug) }}">Home tutors in {{ $locArea->name }}, Gurugram</a>
+                <a href="{{ url('/city/gurugram/'.$locArea->slug) }}" style="color:inherit;text-decoration:none">{{ $locArea->name }}, Gurugram →</a>
               @else
                 {{ ucwords(str_replace('-', ' ', $loc)) }}
               @endif
             </h3>
             <ul>
-              @foreach($posts as $tp)
-                <li><a href="{{ url('/blog/'.trim($tp->slug)) }}">{{ $tp->title }}</a></li>
-              @endforeach
+              @foreach($posts as $tp)<li><a href="{{ url('/blog/'.trim($tp->slug)) }}">{{ \Illuminate\Support\Str::before($tp->title, ' in ') ?: $tp->title }}</a></li>@endforeach
             </ul>
           </div>
         @endforeach
       </div>
     @endif
-
-    <p class="topic-up">Looking for a tutor rather than a guide? <a href="{{ url('/city') }}">Find home tutors in your city →</a></p>
   </section>
-  <style>
-    .topics{color:#fff}
-    .topic-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;margin:12px 0 24px}
-    .topic h3{font-size:15px;font-weight:800;margin:0 0 6px}
-    .topic ul{list-style:none;margin:0;padding:0}
-    .topic li{padding:4px 0;font-size:14px;line-height:1.4}
-    .topics a{color:#c9d6ff}
-  </style>
 
   @include('home.partials.ask-ai', ['aiPage' => ['type' => 'directory']])
 </main>

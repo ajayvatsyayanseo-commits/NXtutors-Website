@@ -66,15 +66,12 @@
   </ul>
 
   @if($tcOthers->count())
-    <p class="nxtc-more">
-      Also in:
-      @foreach($tcOthers as $c)
-        <a href="{{ url('city/' . $c->slug) }}">{{ $c->city_name }}</a>@if(! $loop->last), @endif
-      @endforeach
-    </p>
+    <h3 class="nx-card__kicker" style="margin:var(--nxt-s5) 0 var(--nxt-s3)">Also in</h3>
+    <ul class="nx-chips nx-chips--rail">
+      @foreach($tcOthers as $c)<li><a class="nx-chip" href="{{ url('city/' . $c->slug) }}">{{ $c->city_name }}</a></li>@endforeach
+      <li><a class="nx-chip nx-chip--muted" href="{{ url('city') }}">All cities by state →</a></li>
+    </ul>
   @endif
-
-  <p class="nxtc-all"><a href="{{ url('city') }}">Browse all cities by state →</a></p>
 
   <style>
     .nxtc-grid{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
@@ -85,9 +82,6 @@
     .nxtc-name{font-weight:800;font-size:16px}
     .nxtc-meta{font-size:13px;opacity:.7}
     .nxtc-stats{font-size:13px;color:#9fb4ff;font-weight:700}
-    .nxtc-more{margin:16px 0 0;font-size:14px;line-height:1.9;opacity:.9}
-    .nxtc-more a,.nxtc-all a{color:#c9d6ff}
-    .nxtc-all{margin:8px 0 0;font-weight:800}
   </style>
 </section>
 @endif

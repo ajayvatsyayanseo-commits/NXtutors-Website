@@ -41,7 +41,14 @@
       default => null,
   };
 @endphp
-<section class="section" id="nxAskAISection">
+{{-- The chat's styles live in home.css. The home page and tutor profiles
+     already load it; everywhere else it is loaded here, once. --}}
+@if(!request()->routeIs('home', 'tutor.newshow', 'tutor.show'))
+  @once
+    <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/home.css?v={{ $nxtAssetV ?? 1 }}" />
+  @endonce
+@endif
+<section class="section{{ request()->routeIs('home') ? '' : ' nxg-compact' }}" id="nxAskAISection">
   <div class="nxg-ai-layout">
 
     <!-- ===== CHAT ===== -->

@@ -90,6 +90,9 @@
   {{-- Design system — must stay last so its `body.page` rules win over the
        per-page <style> blocks that ship inside individual views. --}}
   <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/nxt-ds.css?v={{ $nxtAssetV }}" />
+  {{-- Hub components (chips, rails, tabs, FAQ grid, city guides); see nx-hub.css. --}}
+  <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/nx-hub.css?v={{ $nxtAssetV }}" />
+  <script src="{{ asset('frount/assets') }}/js/nx-hub.js?v={{ $nxtAssetV }}" defer></script>
 <link rel="icon" href="{{ asset('uploads/logo/newlogo.png') }}">
 </head>
 <body class="page">

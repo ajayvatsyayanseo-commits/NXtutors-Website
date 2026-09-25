@@ -17,10 +17,10 @@
   };
 @endphp
 
-<article class="dl-guide" aria-labelledby="dlGuideTitle">
+<article class="nx-guide dl-guide" aria-labelledby="dlGuideTitle">
   <h2 id="dlGuideTitle">Home tuition in Delhi NCR: a parent's guide to Delhi, Noida, Greater Noida and Ghaziabad</h2>
 
-  <p class="dl-lede">
+  <p class="nx-guide__lede dl-lede">
     Ask ten Delhi parents about tuition and you will hear ten versions of the same worry: the board result, the
     coaching timetable, the Class 11 stream decision, and whether there is any time left for the child to breathe.
     The region is also spread across Delhi and Uttar Pradesh, joined by the Metro and divided by traffic. This guide
@@ -28,7 +28,7 @@
     school needs, what tuition costs and how to judge a tutor in the first week.
   </p>
 
-  <nav class="dl-toc" aria-label="In this guide">
+  <nav class="nx-guide__toc dl-toc" aria-label="In this guide">
     <strong>In this guide:</strong>
     <a href="#dl-how">How matching works</a> ·
     <a href="#dl-where">Where our tutors teach</a> ·
@@ -43,7 +43,9 @@
     <a href="#dl-calendar">The school year</a> ·
     <a href="#dl-start">Getting started</a>
   </nav>
+  <div class="nx-guide__body">
 
+  <section class="nx-guide__sec">
   <h2 id="dl-how">How we find a tutor for your child</h2>
   <p>
     You do not have to scroll through hundreds of profiles. You give us seven pieces of information: the student's
@@ -63,7 +65,9 @@
     whatever the student is studying that week. If it does not click, say so and we arrange the next tutor. Switching
     costs nothing, and you are not tied into a package.
   </p>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="dl-where">Where our tutors teach across Delhi NCR</h2>
   <p>
     @if($hubCounts['tutors'] > 0)
@@ -74,7 +78,8 @@
     available across Delhi and the neighbouring cities of Uttar Pradesh. Each part of the region has its own school
     mix, its own commute and its own busiest hours, so it helps to think in zones.
   </p>
-
+    <div class="nx-guide__cards">
+      <div class="nx-guide__card">
   <h3>South Delhi</h3>
   <p>
     Colonies such as {!! $dA('greater-kailash', 'Greater Kailash') !!}, {!! $dA('saket', 'Saket') !!},
@@ -82,7 +87,8 @@
     {!! $dA('vasant-kunj', 'Vasant Kunj') !!} have a wide spread of schools, from long-established CBSE schools to a
     handful offering IB or Cambridge programmes. Requests here often come for senior-class Maths and Science, for
     English writing, and for students who already attend a coaching centre and need someone to clear doubts at home.  </p>
-
+      </div>
+      <div class="nx-guide__card">
   <h3>West Delhi, Dwarka and Janakpuri</h3>
   <p>
     {!! $dA('dwarka', 'Dwarka') !!} is a city in its own right, with numbered sectors, group housing societies and a
@@ -91,7 +97,8 @@
     neighbourhoods where tutors have often taught for years. Within Dwarka it makes sense to match inside the
     sub-city, because crossing to the far side of it at 6 pm takes longer than it should.
   </p>
-
+      </div>
+      <div class="nx-guide__card">
   <h3>North Delhi</h3>
   <p>
     {!! $dA('rohini', 'Rohini') !!}, {!! $dA('pitampura', 'Pitampura') !!}, {!! $dA('shalimar-bagh', 'Shalimar Bagh') !!}
@@ -100,7 +107,8 @@
     and GTB Nagar, are known for coaching centres and a large student population, including many postgraduates
     who teach school students alongside their own studies.
   </p>
-
+      </div>
+      <div class="nx-guide__card">
   <h3>East Delhi and Mayur Vihar</h3>
   <p>
     Across the Yamuna, {!! $dA('mayur-vihar', 'Mayur Vihar') !!}, {!! $dA('patparganj', 'Patparganj') !!},
@@ -108,14 +116,16 @@
     housing societies. Families here often compare Delhi-based tutors with ones from Noida, since the border is minutes
     away; we consider both, as long as the actual evening route is reasonable.
   </p>
-
+      </div>
+      <div class="nx-guide__card">
   <h3>Central Delhi</h3>
   <p>
     {!! $dA('karol-bagh', 'Karol Bagh') !!}, {!! $dA('rajinder-nagar', 'Rajinder Nagar') !!} and
     {!! $dA('patel-nagar', 'Patel Nagar') !!} sit close to several Metro lines, which widens the pool of tutors who
     can reach you.
   </p>
-
+      </div>
+      <div class="nx-guide__card">
   <h3>Noida and Greater Noida</h3>
   <p>
     Noida's sectors and high-rise societies, from the older sectors near the Delhi border to
@@ -125,7 +135,8 @@
     while the local tutor pool catches up. In {!! $dA('greater-noida', 'Greater Noida') !!} proper, distances are
     longer and weekend mornings are often easier to fill than weekday evenings.
   </p>
-
+      </div>
+      <div class="nx-guide__card">
   <h3>Ghaziabad</h3>
   <p>
     {!! $dA('indirapuram', 'Indirapuram') !!}, {!! $dA('vaishali', 'Vaishali') !!},
@@ -134,13 +145,18 @@
     schools close by. Indirapuram and Vaishali are compact and well connected, so tutors can usually reach them easily; the
     newer townships further out lean more on online sessions.
   </p>
+      </div>
+    </div>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="dl-boards">Boards: mostly CBSE, with ICSE, IB and IGCSE too</h2>
   <p>
     Delhi is CBSE country. The board's headquarters is in the city, and most students in Delhi, Noida and Ghaziabad
     sit CBSE exams, with some Noida and Ghaziabad schools following the UP Board.
   </p>
-
+    <div class="nx-guide__cards">
+      <div class="nx-guide__card">
   <h3>CBSE</h3>
   <p>
     The NCERT textbook is the backbone of every CBSE paper, and board questions follow its language and examples
@@ -149,23 +165,30 @@
     and previous years' papers, and teach the student to lay out answers the way the marking scheme rewards: formula,
     substitution, units, final answer. A tutor who skips NCERT for harder books is not helping before the boards.
   </p>
-
+      </div>
+      <div class="nx-guide__card">
   <h3>ICSE and ISC</h3>
   <p>
     A smaller number of Delhi NCR schools follow the CISCE board. ICSE and ISC students carry more content per subject
     and write longer answers, and English (both Language and Literature) is weighed more heavily than in CBSE. Tutors
     need to know the prescribed texts and the project work each subject requires.
   </p>
-
+      </div>
+      <div class="nx-guide__card">
   <h3>IB and Cambridge IGCSE</h3>
   <p>
     International schools in South Delhi, Noida and elsewhere in the region offer the IB Diploma or Cambridge IGCSE
     and A Levels. These students need tutors who understand internal assessments, command words and mark schemes.
     Such specialists are fewer, so we often match them online rather than settle for a near-miss in person.
   </p>
+      </div>
+    </div>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="dl-classes">What each stage of school needs</h2>
-
+    <div class="nx-guide__cards">
+      <div class="nx-guide__card">
   <h3>Nursery to Class 5: early foundations</h3>
   <p>
     Delhi's nursery and entry-level admissions put many families through a stressful season before the child has
@@ -173,14 +196,16 @@
     fluency in English and Hindi, number sense, handwriting and the habit of sitting with a task. A short, regular
     session two or three times a week with a warm, patient tutor does more than long weekend marathons.
   </p>
-
+      </div>
+      <div class="nx-guide__card">
   <h3>Classes 6 to 8: building the base</h3>
   <p>
     These years set up everything that follows. Fractions, integers, early algebra and basic geometry in Maths;
     reading a diagram and explaining a process in Science; and grammar in English, Hindi and Sanskrit, which many
     Delhi schools teach as a third language. A tutor's job here is to catch shaky topics before they become gaps.
   </p>
-
+      </div>
+      <div class="nx-guide__card">
   <h3>Classes 9 and 10: the board years begin</h3>
   <p>
     Board results carry real weight in Delhi homes. Relatives ask, schools publish toppers, and the Class 10 score
@@ -190,7 +215,8 @@
     <a href="{{ url('/blog/cbse-class-10-maths-preparation') }}">CBSE Class 10 Maths preparation</a> sets out one
     such plan.
   </p>
-
+      </div>
+      <div class="nx-guide__card">
   <h3>Classes 11 and 12: stream choice and dual goals</h3>
   <p>
     The stream decision (Science with Maths or Biology, Commerce, or Humanities) is often made within weeks of the
@@ -201,7 +227,11 @@
     all-rounder. For Physics, see our <a href="{{ url('/blog/cbse-class-12-physics-strategies') }}">CBSE Class 12
     Physics strategies</a>.
   </p>
+      </div>
+    </div>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="dl-entrance">JEE, NEET and CUET alongside coaching</h2>
   <p>
     Delhi has long been one of India's coaching capitals. Whole neighbourhoods, such as the belt around Kalu Sarai in
@@ -226,7 +256,9 @@
     Our <a href="{{ url('/blog/cuet-preparation-2025-complete-ug-subject-strategies-syllabus-tips-pyqs-and-checklist') }}">CUET
     preparation guide</a> covers subject choice and practice in detail.
   </p>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="dl-subjects">Subjects Delhi NCR families ask for</h2>
   <p>
     Maths and Science lead in every zone, followed by the commerce subjects (Accountancy, Economics and Business
@@ -237,7 +269,9 @@
     <li><strong>Commerce with Maths.</strong> Many Delhi students take Maths alongside Commerce, often with an eye on economics or finance courses through CUET. Applied Maths and Class 11 Accountancy are frequent requests.</li>
     <li><strong>Humanities.</strong> Political Science, History, Geography and Psychology are popular in Delhi, and CUET makes them count for university admission. Writing structured answers is the main skill tutors work on.</li>
   </ul>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="dl-mode">Home tuition or online in Delhi NCR?</h2>
   <p>
     Both work, and the right answer often changes with the season. Home tuition suits younger children and
@@ -252,7 +286,9 @@
     We can set up home, online or hybrid tuition with the same tutor. For a fuller comparison, read
     <a href="{{ url('/blog/online-vs-offline-tutoring') }}">online versus offline tutoring</a>.
   </p>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="dl-fees">What tuition costs, and why</h2>
   <p>
     Across NXTutors, most sessions cost between <strong>₹800 and ₹2,500 an hour</strong>. In Delhi NCR, these are
@@ -269,7 +305,9 @@
     You see each tutor's fee before the demo, and we only shortlist within your budget. Our
     <a href="{{ url('/pricing-guide') }}">pricing guide</a> breaks this down further by class and subject.
   </p>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="dl-choose">How to judge a tutor in the first week</h2>
   <p>Qualifications on a profile tell you a little. The demo and the first few sessions tell you much more. Watch for:</p>
   <ol>
@@ -284,7 +322,9 @@
     If several answers are no, tell us and we arrange a demo with the next tutor. Give a new tutor six to eight weeks
     before judging results.
   </p>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="dl-safety">Safety and verification</h2>
   <p>
     Every tutor on NXTutors is ID-verified and goes through a profile check before being shortlisted, and we keep
@@ -297,7 +337,9 @@
     <li>Keep an adult at home during sessions with younger children, and use a common room.</li>
     <li>If anything about a tutor's conduct worries you, contact us directly. We act on it the same day.</li>
   </ul>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="dl-calendar">Planning around the Delhi NCR school year</h2>
   <p>Most schools in the region begin their session in April. For a student facing boards, the year usually runs like this:</p>
   <ul>
@@ -310,7 +352,9 @@
   <p>
     Starting in April gives a tutor the whole year; starting in November shifts the work towards practice.
   </p>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="dl-start">Getting started</h2>
   <p>
     Tell us the student's class, board and subjects, your colony, sector or society, and the times that suit you. We
@@ -324,17 +368,8 @@
     <a href="{{ url('/city/gurugram') }}">Gurugram</a> and <a href="{{ url('/city/faridabad') }}">Faridabad</a>, and
     tutors in <a href="{{ url('/city') }}">cities across India</a>.
   </p>
+  </section>
+
+  </div>
 </article>
 
-<style>
-  .dl-guide{margin-top:40px;color:#fff;line-height:1.7;max-width:860px}
-  .dl-guide h2{font-size:24px;font-weight:900;margin:36px 0 12px;scroll-margin-top:90px}
-  .dl-guide h3{font-size:18px;font-weight:800;margin:22px 0 8px}
-  .dl-guide p,.dl-guide li{opacity:.9}
-  .dl-guide ul,.dl-guide ol{padding-left:20px}
-  .dl-guide li{margin:6px 0}
-  .dl-guide a{color:#c9d6ff}
-  .dl-lede{font-size:17px}
-  .dl-toc{margin:18px 0;padding:14px 16px;border:1px solid rgba(255,255,255,.14);border-radius:14px;font-size:14px;line-height:2}
-  .dl-note{margin-top:20px;font-size:14px;opacity:.8}
-</style>

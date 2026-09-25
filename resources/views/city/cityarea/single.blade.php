@@ -101,10 +101,6 @@
   @endif
    <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/city-area.css?v={{ $nxtAssetV ?? 1 }}" />
   <style>
-    .area-links{list-style:none;margin:0;padding:0;columns:2 280px;column-gap:24px}
-    .area-links li{break-inside:avoid;padding:4px 0;font-size:14px;line-height:1.4}
-    .area-links a,.area-up a{color:#c9d6ff}
-    .area-up{margin:0;line-height:1.8}
   </style>
 </head>
 
@@ -416,34 +412,44 @@
     {{-- This area's own subject / board pages and local guides, then the
          way back up to the city, state and India. --}}
     @if(isset($areaPages) && $areaPages->count())
-    <section class="cardx block section" id="area-searches">
+    <section class="cardx block section nx-sec" id="area-searches" style="margin-top:0">
       <h2 class="h2"><span></span>Subject and board tutors in {{ $areaSeo['name'] ?? $area->name }}</h2>
-      <ul class="area-links">
-        @foreach($areaPages->take(60) as $gp)
-          <li><a href="{{ url('/p/'.$gp->slug) }}">{{ $gp->title }}</a></li>
-        @endforeach
+      <ul class="nx-chips">
+        @foreach($areaPages->take(18) as $gp)<li><a class="nx-chip" href="{{ url('/p/'.$gp->slug) }}">{{ $gp->title }}</a></li>@endforeach
       </ul>
+      @if($areaPages->count() > 18)
+        <details class="nx-more">
+          <summary><span class="nx-more__closed">Show {{ $areaPages->count() - 18 }} more</span><span class="nx-more__open">Show fewer</span></summary>
+          <ul class="nx-chips">
+            @foreach($areaPages->slice(18)->take(60) as $gp)<li><a class="nx-chip" href="{{ url('/p/'.$gp->slug) }}">{{ $gp->title }}</a></li>@endforeach
+          </ul>
+        </details>
+      @endif
     </section>
     @endif
 
     @if(isset($areaGuides) && $areaGuides->count())
     <section class="cardx block section" id="area-guides">
       <h2 class="h2"><span></span>Guides for families in {{ $areaSeo['name'] ?? $area->name }}</h2>
-      <ul class="area-links">
+      <div class="nx-rail">
         @foreach($areaGuides as $g)
-          <li><a href="{{ url('/blog/'.$g->slug) }}">{{ $g->title }}</a></li>
+          <a class="nx-card" href="{{ url('/blog/'.$g->slug) }}">
+            <span class="nx-card__kicker">{{ \App\Support\BlogTopics::TOPICS[\App\Support\BlogTopics::of($g->slug)] }}</span>
+            <span class="nx-card__title">{{ $g->title }}</span>
+            <span class="nx-card__meta">Read the guide →</span>
+          </a>
         @endforeach
-      </ul>
+      </div>
     </section>
     @endif
 
-    <section class="cardx block section" id="area-up">
-      <p class="area-up">
-        More in {{ $city?->city_name }}: <a href="{{ $cityUrl }}">all home tutors and areas in {{ $city?->city_name }}</a>
-        · <a href="{{ url('/city') }}#{{ \App\Support\Geo::stateSlug($areaState ?? '') }}">other cities in {{ $areaState }}</a>
-        · <a href="{{ url('/city') }}">all cities in India</a>
-      </p>
-    </section>
+    <nav class="nx-sec" aria-label="More places" style="margin-top:var(--nxt-s5)">
+      <ul class="nx-chips nx-chips--rail">
+        <li><a class="nx-chip" href="{{ $cityUrl }}">All areas in {{ $city?->city_name }}</a></li>
+        <li><a class="nx-chip" href="{{ url('/city') }}#{{ \App\Support\Geo::stateSlug($areaState ?? '') }}">Other cities in {{ $areaState }}</a></li>
+        <li><a class="nx-chip" href="{{ url('/city') }}">All cities in India</a></li>
+      </ul>
+    </nav>
 
 
   

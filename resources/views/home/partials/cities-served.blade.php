@@ -35,30 +35,18 @@
     Pick a city to see verified tutors near you, their subjects and fees, and to book a free demo class.
   </p>
 
-  <div class="nxcs-states">
+  <div class="nx-grid nx-grid--tight" style="margin-top:var(--nxt-s4)">
     @foreach($csStates as $state => $list)
-      <div class="nxcs-state">
-        <h3 class="nxcs-state-h">
-          <a href="{{ url('city') }}#{{ Geo::stateSlug($state) }}">{{ $state }}</a>
-        </h3>
-        <ul class="nxcs-list">
+      <div class="nx-card">
+        <a class="nx-card__kicker" style="text-decoration:none" href="{{ url('city') }}#{{ Geo::stateSlug($state) }}">{{ $state }}</a>
+        <ul class="nx-chips" style="margin-top:6px">
           @foreach($list as $c)
-            <li class="nxcs-item">
-              <a class="nxcs-link" href="{{ url('city/' . $c->slug) }}">
-                <span class="nxcs-name">{{ $c->city_name }}</span>
-              </a>
-            </li>
+            <li style="border:0;padding:0"><a class="nx-chip" href="{{ url('city/' . $c->slug) }}">{{ $c->city_name }}</a></li>
           @endforeach
         </ul>
       </div>
     @endforeach
   </div>
-
-  <style>
-    .nxcs-states{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px 22px;margin-top:14px}
-    .nxcs-state-h{font-size:13px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;margin:0 0 6px}
-    .nxcs-state-h a{color:#9fb4ff;text-decoration:none}
-  </style>
 
   @php
     $nxcsLd = [

@@ -18,10 +18,10 @@
   $cAreas = $allAreas->count();
 @endphp
 
-<article class="ch-guide" aria-labelledby="chGuideTitle">
+<article class="nx-guide ch-guide" aria-labelledby="chGuideTitle">
   <h2 id="chGuideTitle">Home tuition in Chandigarh, Mohali and Panchkula: a parent's guide to the tricity</h2>
 
-  <p class="ch-lede">
+  <p class="nx-guide__lede ch-lede">
     Few Indian cities make it as easy to find a tutor nearby as Chandigarh does. The sector grid means a tutor in
     Sector 21 knows exactly how far Sector 35 is, and a family in Mohali can tell at a glance whether a tutor from
     Panchkula is realistic on a weekday evening. What makes the tricity unusual is everything else: three
@@ -31,7 +31,7 @@
     what to look for before you commit.
   </p>
 
-  <nav class="ch-toc" aria-label="In this guide">
+  <nav class="nx-guide__toc ch-toc" aria-label="In this guide">
     <strong>In this guide:</strong>
     <a href="#ch-how">How matching works</a> ·
     <a href="#ch-where">Where tutors teach</a> ·
@@ -48,7 +48,9 @@
     <a href="#ch-calendar">The school year</a> ·
     <a href="#ch-start">Getting started</a>
   </nav>
+  <div class="nx-guide__body">
 
+  <section class="nx-guide__sec">
   <h2 id="ch-how">How we find a tutor for your family</h2>
   <p>
     You fill in one short request: the student's class and board, the subjects, your sector or locality, the days
@@ -68,7 +70,9 @@
     that week, so you judge real teaching. If it does not click, say so and we arrange the next tutor. Switching is
     free, and there is no lock-in.
   </p>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="ch-where">Where our tutors teach across the tricity</h2>
   <p>
     @if($hubCounts['tutors'] > 0)
@@ -80,7 +84,8 @@
     @if($cAreas > 0) with {{ number_format($cAreas) }} localities listed on their own pages above. @else and we are adding locality pages as the network grows. @endif
     Here is how the tricity breaks down from a tuition point of view.
   </p>
-
+    <div class="nx-guide__cards">
+      <div class="nx-guide__card">
   <h3>Chandigarh: the sectors and Manimajra</h3>
   <p>
     The northern sectors near the Capitol Complex and Sukhna Lake, such as {!! $cA('sector-8', 'Sector 8') !!},
@@ -93,7 +98,8 @@
     {!! $cA('manimajra', 'Manimajra') !!}, on the eastern edge, sits between Chandigarh and Panchkula and often draws
     tutors from both.
   </p>
-
+      </div>
+      <div class="nx-guide__card">
   <h3>Mohali: phases, sectors and Aerocity</h3>
   <p>
     Mohali's older phases, such as {!! $cA('phase-3b2-mohali', 'Phase 3B2') !!}, {!! $cA('phase-7-mohali', 'Phase 7') !!}
@@ -103,14 +109,16 @@
     young families. Here the number of tutors living close by is still catching up, so weekend mornings and hybrid
     arrangements help.
   </p>
-
+      </div>
+      <div class="nx-guide__card">
   <h3>Panchkula and Chandimandir</h3>
   <p>
     Panchkula's sectors, from the older ones like {!! $cA('sector-7-panchkula', 'Sector 7') !!} and
     {!! $cA('sector-11-panchkula', 'Sector 11') !!} to the newer ones further out, are well planned and calm, and have
     a strong base of home tutors who have taught for many years. Families in and around Chandimandir Cantonment usually look to Panchkula-based tutors.
   </p>
-
+      </div>
+      <div class="nx-guide__card">
   <h3>Zirakpur, Kharar and New Chandigarh</h3>
   <p>
     The growing suburbs of {!! $cA('zirakpur', 'Zirakpur') !!}, {!! $cA('kharar', 'Kharar') !!} and
@@ -119,14 +127,19 @@
     on the same side of it. Where the choice nearby is thin, online sessions with a stronger specialist are often the
     better answer.
   </p>
+      </div>
+    </div>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="ch-boards">Three boards in one urban area</h2>
   <p>
     Because Chandigarh is a Union Territory with Punjab on one side and Haryana on the other, parents here meet more
     school boards than in most cities. A tutor who knows one board well may not know another, so we always ask which
     one the student is on.
   </p>
-
+    <div class="nx-guide__cards">
+      <div class="nx-guide__card">
   <h3>CBSE</h3>
   <p>
     CBSE is the most common board across the tricity, and it follows the NCERT textbooks closely. Board papers draw
@@ -134,7 +147,8 @@
     assertion–reason questions. A good CBSE tutor starts from the NCERT chapter, then uses sample papers and previous
     years' questions, and teaches the student to set out answers step by step the way the marking scheme rewards.
   </p>
-
+      </div>
+      <div class="nx-guide__card">
   <h3>Punjab School Education Board (PSEB)</h3>
   <p>
     Many schools in Mohali and the wider Punjab side follow the Punjab board. The syllabus covers much of the same
@@ -142,7 +156,8 @@
     students study partly in Punjabi. Tutors should work from the board's own textbooks and past papers rather than
     assume CBSE material will fit.
   </p>
-
+      </div>
+      <div class="nx-guide__card">
   <h3>Haryana Board (HBSE)</h3>
   <p>
     In Panchkula, a good number of students are on the Board of School Education Haryana. The same principle applies:
@@ -150,22 +165,29 @@
     Panchkula and Chandigarh sometimes switch between HBSE and CBSE, and a tutor who knows both makes that much
     easier.
   </p>
-
+      </div>
+      <div class="nx-guide__card">
   <h3>ICSE and international curricula</h3>
   <p>
     A smaller group of tricity schools follow ICSE and ISC, which expect longer, more detailed written answers, and a
     few offer international programmes such as IB or Cambridge. Specialist tutors for these are fewer, so we often
     widen the search to online tutors for Higher Level or A Level subjects.
   </p>
+      </div>
+    </div>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="ch-classes">What tuition looks like class by class</h2>
-
+    <div class="nx-guide__cards">
+      <div class="nx-guide__card">
   <h3>Primary and middle school (Classes 1 to 8)</h3>
   <p>
     The goal here is steady habits and secure basics: reading with understanding, number sense and neat written work. One or two sessions a week is plenty. For many tricity families, middle school is
     also when Punjabi or Hindi as a second or third language starts to need attention at home.
   </p>
-
+      </div>
+      <div class="nx-guide__card">
   <h3>Classes 9 and 10</h3>
   <p>
     Maths and Science get noticeably harder in Class 9, and Class 10 board exams follow straight after. A sensible
@@ -173,7 +195,8 @@
     second half of the year. This is also where many students begin a foundation course for JEE or NEET, and a tutor
     can make sure school marks do not slip while that happens.
   </p>
-
+      </div>
+      <div class="nx-guide__card">
   <h3>Classes 11 and 12</h3>
   <p>
     Stream choice shapes everything after Class 10. Science students most often need help with Physics and Maths;
@@ -183,7 +206,11 @@
     <a href="{{ url('/blog/how-to-choose-boardstream') }}">choosing a board and stream</a> may help if that decision
     is still open.
   </p>
+      </div>
+    </div>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="ch-jee-neet">JEE, NEET and the tricity's exam culture</h2>
   <p>
     The tricity has a long tradition of students preparing for engineering and medical entrance exams, and of
@@ -201,7 +228,9 @@
     preparation. For JEE Maths, see our <a href="{{ url('/blog/jee-maths-topicwise-prep') }}">topic-wise preparation
     guide</a>.
   </p>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="ch-abroad">Preparing to study abroad: IELTS, TOEFL and SAT</h2>
   <p>
     Chandigarh and the surrounding region of Punjab have a strong tradition of students going overseas for
@@ -216,7 +245,9 @@
   <p>
     These tests are held many times a year, so start a few months before the intended test date and well before application deadlines. Online sessions suit this work, since much of the practice is on screen anyway.
   </p>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="ch-languages">Punjabi, Hindi and English</h2>
   <p>
     Language needs in the tricity vary with where the student goes to school. In Punjab, including Mohali, Punjabi is
@@ -229,7 +260,9 @@
     everything from reading and spoken confidence for younger children to literature and essay writing in the senior
     classes, and naturally overlaps with IELTS and TOEFL preparation for older students.
   </p>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="ch-mode">Home tuition or online tuition?</h2>
   <p>
     Home tuition remains popular here, and the compact sectors make it practical.
@@ -244,7 +277,9 @@
     mean starting over. For a longer comparison, read <a href="{{ url('/blog/online-vs-offline-tutoring') }}">online
     versus offline tutoring</a>.
   </p>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="ch-fees">What tuition costs in the tricity</h2>
   <p>
     Across NXTutors, most sessions fall between <strong>₹800 and ₹2,500 an hour</strong>. Where a particular tutor
@@ -261,7 +296,9 @@
     You see every shortlisted tutor's fee before the demo. Our <a href="{{ url('/pricing-guide') }}">pricing guide</a>
     has a fuller breakdown by class and subject.
   </p>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="ch-choose">A checklist for picking the right tutor</h2>
   <p>Use the demo class to answer these questions:</p>
   <ol>
@@ -274,7 +311,9 @@
     <li><strong>Was the student comfortable?</strong> For younger children especially, this matters more than any degree.</li>
   </ol>
   <p>If several answers are no, tell us and we will arrange a demo with the next tutor on the list.</p>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="ch-transfers">Families who transfer mid-year</h2>
   <p>
     The tricity has many families whose work moves them on a schedule that ignores the school calendar: defence
@@ -289,7 +328,9 @@
   <p>
     Online sessions can begin before the move itself.
   </p>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="ch-safety">Safety and verification</h2>
   <p>
     Every tutor on NXTutors is ID-verified and goes through a profile check before being shortlisted to a family, and
@@ -298,7 +339,9 @@
     tutor's name and timing if you live in a gated complex. If anything about a tutor's conduct worries you, contact
     us straight away and we will act on it.
   </p>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="ch-calendar">Planning around the tricity school year</h2>
   <p>
     Most schools here begin their session in April. A typical year for a student in a board class looks like this:
@@ -315,7 +358,9 @@
   <p>
     Starting early gives a tutor a full year; starting later still helps, but the focus shifts to practising papers.
   </p>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="ch-start">Getting started</h2>
   <p>
     Tell us the student's class, board and subjects, your sector, phase or town, and the times that suit you. We
@@ -328,17 +373,8 @@
     <a href="{{ url('/city/delhi-ncr') }}">Delhi NCR</a> and <a href="{{ url('/city') }}">other cities across
     India</a>.
   </p>
+  </section>
+
+  </div>
 </article>
 
-<style>
-  .ch-guide{margin-top:40px;color:#fff;line-height:1.7;max-width:860px}
-  .ch-guide h2{font-size:24px;font-weight:900;margin:36px 0 12px;scroll-margin-top:90px}
-  .ch-guide h3{font-size:18px;font-weight:800;margin:22px 0 8px}
-  .ch-guide p,.ch-guide li{opacity:.9}
-  .ch-guide ul,.ch-guide ol{padding-left:20px}
-  .ch-guide li{margin:6px 0}
-  .ch-guide a{color:#c9d6ff}
-  .ch-lede{font-size:17px}
-  .ch-toc{margin:18px 0;padding:14px 16px;border:1px solid rgba(255,255,255,.14);border-radius:14px;font-size:14px;line-height:2}
-  .ch-note{margin-top:20px;font-size:14px;opacity:.8}
-</style>

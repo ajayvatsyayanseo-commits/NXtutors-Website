@@ -881,29 +881,23 @@ document.addEventListener('DOMContentLoaded', function () {
           {{-- Sibling subjects and boards in the same locality, and the way
                up to the area and city hubs. --}}
           @if($gpSiblings->count() || $gpCity)
-            <section class="nxsec genp-more" aria-labelledby="genpMoreTitle">
-              <h2 class="nxh2" id="genpMoreTitle">More home tutors in {{ $page->location ?: $page->city }}</h2>
+            <section class="nxsec genp-more nx-sec" aria-labelledby="genpMoreTitle">
+              <div class="nx-sec__head">
+                <h2 class="nx-sec__title" id="genpMoreTitle">More home tutors in {{ $page->location ?: $page->city }}</h2>
+              </div>
               @if($gpSiblings->count())
-                <ul class="genp-more__list">
-                  @foreach($gpSiblings as $sib)
-                    <li><a href="{{ url('/p/'.$sib->slug) }}">{{ $sib->title }}</a></li>
-                  @endforeach
+                <ul class="nx-chips">
+                  @foreach($gpSiblings as $sib)<li><a class="nx-chip" href="{{ url('/p/'.$sib->slug) }}">{{ $sib->title }}</a></li>@endforeach
                 </ul>
               @endif
               @if($gpCity)
-                <p class="genp-more__up">
-                  @if($gpArea)<a href="{{ url('/city/'.$gpCity->slug.'/'.$gpArea->slug) }}">All tutors in {{ $gpArea->name }}</a> · @endif
-                  <a href="{{ url('/city/'.$gpCity->slug) }}">Home tutors across {{ $gpCity->city_name }}</a> ·
-                  <a href="{{ url('/city') }}">All cities in India</a>
-                </p>
+                <ul class="nx-chips nx-chips--rail" style="margin-top:var(--nxt-s4)">
+                  @if($gpArea)<li><a class="nx-chip" href="{{ url('/city/'.$gpCity->slug.'/'.$gpArea->slug) }}">All tutors in {{ $gpArea->name }}</a></li>@endif
+                  <li><a class="nx-chip" href="{{ url('/city/'.$gpCity->slug) }}">Home tutors across {{ $gpCity->city_name }}</a></li>
+                  <li><a class="nx-chip" href="{{ url('/city') }}">All cities in India</a></li>
+                </ul>
               @endif
             </section>
-            <style>
-              .genp-more__list{list-style:none;margin:10px 0 0;padding:0;columns:2 280px;column-gap:24px}
-              .genp-more__list li{break-inside:avoid;padding:4px 0;font-size:14px;line-height:1.4}
-              .genp-more a{color:#c9d6ff}
-              .genp-more__up{margin-top:12px;line-height:1.8}
-            </style>
           @endif
 
         </div>

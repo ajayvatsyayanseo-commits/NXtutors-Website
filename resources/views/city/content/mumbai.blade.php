@@ -18,10 +18,10 @@
   };
 @endphp
 
-<article class="mb-guide" aria-labelledby="mbGuideTitle">
+<article class="nx-guide mb-guide" aria-labelledby="mbGuideTitle">
   <h2 id="mbGuideTitle">Home tuition in Mumbai: a practical guide for parents</h2>
 
-  <p class="mb-lede">
+  <p class="nx-guide__lede mb-lede">
     In Mumbai, the hardest part of finding a tutor is often not the teaching but the journey. A brilliant Physics
     tutor in Andheri is of little use to a family in Chembur if the 6 pm crossing takes an hour. Add a city where one
     building can house children in State Board, CBSE, ICSE and IB schools, a monsoon that can shut roads for a day, and
@@ -30,7 +30,7 @@
     travel, what each board and entrance exam expects, what tuition costs and how to judge a tutor in the first lesson.
   </p>
 
-  <nav class="mb-toc" aria-label="In this guide">
+  <nav class="nx-guide__toc mb-toc" aria-label="In this guide">
     <strong>In this guide:</strong>
     <a href="#mb-how">How matching works</a> ·
     <a href="#mb-where">Zones and travel</a> ·
@@ -46,7 +46,9 @@
     <a href="#mb-calendar">The Mumbai school year</a> ·
     <a href="#mb-start">Getting started</a>
   </nav>
+  <div class="nx-guide__body">
 
+  <section class="nx-guide__sec">
   <h2 id="mb-how">How we find a tutor for your family</h2>
   <p>
     You give us seven things: the student's class, board, subjects, your locality, the days and times that are free,
@@ -63,7 +65,9 @@
     studying that week. If it does not click, tell us and we arrange the next one. Changing tutors costs nothing, at
     the demo stage or three months in.
   </p>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="mb-where">Where our tutors travel in Mumbai</h2>
   <p>
     @if($hubCounts['tutors'] > 0)
@@ -74,7 +78,8 @@
     Because travel shapes everything here, it helps to think of the city in five broad zones, each with its own
     rhythm.
   </p>
-
+    <div class="nx-guide__cards">
+      <div class="nx-guide__card">
   <h3>South Mumbai: Colaba to Worli</h3>
   <p>
     Families in {!! $mA('colaba', 'Colaba') !!}, {!! $mA('cuffe-parade', 'Cuffe Parade') !!},
@@ -84,7 +89,8 @@
     suburbs. That makes early-afternoon slots, before the evening rush northwards, easier to fill than 7 pm ones, and
     it is one reason online sessions are common here for senior-level subjects.
   </p>
-
+      </div>
+      <div class="nx-guide__card">
   <h3>The western line: Bandra to Borivali</h3>
   <p>
     The stretch from {!! $mA('bandra', 'Bandra') !!} and {!! $mA('khar', 'Khar') !!} through
@@ -95,7 +101,8 @@
     between Malad and Borivali rather than in Bandra. East–west crossings, such as Andheri West to Andheri East,
     can take longer than the distance suggests, so we check which side of the tracks both of you are on.
   </p>
-
+      </div>
+      <div class="nx-guide__card">
   <h3>The central line: Dadar to Mulund</h3>
   <p>
     {!! $mA('dadar', 'Dadar') !!}, {!! $mA('matunga', 'Matunga') !!}, {!! $mA('sion', 'Sion') !!},
@@ -104,14 +111,16 @@
     SSC and HSC students for years. Requests here lean towards State Board and CBSE Maths and Science, commerce
     subjects for junior college, and Marathi and Hindi support.
   </p>
-
+      </div>
+      <div class="nx-guide__card">
   <h3>Powai</h3>
   <p>
     {!! $mA('powai', 'Powai') !!} sits between the two lines and draws a lot of families with IB, IGCSE and CBSE
     schoolchildren. Because the roads in and out are few and busy, tutors who already live in or near Powai are the
     easiest to schedule on weekdays; others can often manage weekend mornings.
   </p>
-
+      </div>
+      <div class="nx-guide__card">
   <h3>Thane and Navi Mumbai</h3>
   <p>
     {!! $mA('thane', 'Thane') !!} and Navi Mumbai nodes such as {!! $mA('vashi', 'Vashi') !!},
@@ -120,7 +129,11 @@
     locally. Newer townships sometimes have fewer tutors close by than demand would suggest, and hybrid arrangements
     help bridge that.
   </p>
+      </div>
+    </div>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="mb-boards">The boards Mumbai students sit</h2>
   <p>
     Mumbai is one of the few cities where a tutor may teach four different curricula in one week. We match on the
@@ -132,16 +145,20 @@
     <li><strong>ICSE and ISC.</strong> Many of the city's older private schools follow CISCE. ICSE asks for more content and longer, exact answers, particularly in English, History and the sciences. See our <a href="{{ url('/blog/icse-class-10-maths-boards') }}">ICSE Class 10 Maths guide</a> for how board-year preparation should be paced.</li>
     <li><strong>IB and Cambridge IGCSE / A Levels.</strong> Mumbai has a large cluster of international schools. Here the tutor needs to know internal assessments, the Extended Essay and command terms, and how Cambridge papers are marked. A tutor can guide this work, but must never write it for the student.</li>
   </ul>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="mb-classes">What tuition looks like at each stage</h2>
-
+    <div class="nx-guide__cards">
+      <div class="nx-guide__card">
   <h3>Primary and Classes 5 to 7</h3>
   <p>
     At this stage, most Mumbai families want help with reading habits, arithmetic and, very often, a second or third
     language. Once or twice a week is plenty. The best tutors here keep sessions short and structured, and leave the
     child a little more confident each time rather than simply finishing the homework for them.
   </p>
-
+      </div>
+      <div class="nx-guide__card">
   <h3>Classes 8 to 10</h3>
   <p>
     The step up in algebra, geometry and science usually happens in Class 8 or 9. For SSC students, Class 10 is a
@@ -149,7 +166,8 @@
     colleges and streams can be steep. For CBSE and ICSE students it is the first board exam. In all three cases, a
     sensible plan finishes the syllabus by around November and leaves the last months for timed papers.
   </p>
-
+      </div>
+      <div class="nx-guide__card">
   <h3>Junior college: Classes 11 and 12</h3>
   <p>
     Many Mumbai students move to a junior college after Class 10, which can mean a new building, a new timetable and
@@ -158,7 +176,11 @@
     Economics and Maths or Statistics. At this level we usually recommend a separate specialist for each difficult
     subject. If the choice of stream is still open, our guide on <a href="{{ url('/blog/how-to-choose-boardstream') }}">choosing a board and stream</a> may help.
   </p>
+      </div>
+    </div>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="mb-entrance">JEE, NEET and MHT-CET alongside the boards</h2>
   <p>
     Science students in Mumbai often prepare for more than one entrance exam at once. Each has a different shape:
@@ -174,7 +196,9 @@
     squeezed out. A student commuting to coaching on a crowded train after junior college has little energy left, so
     we often suggest short, focused tuition sessions on non-coaching days rather than daily ones.
   </p>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="mb-commerce">Commerce, CA Foundation and languages</h2>
   <p>
     Commerce is a strong stream in Mumbai, and many students choose it with a clear plan to pursue Chartered
@@ -191,7 +215,9 @@
     <li><strong>French, German and Spanish.</strong> Offered in many ICSE, IGCSE and IB schools. We look for tutors who know the specific syllabus, since a school French paper is different from a general conversation class.</li>
     <li><strong>English.</strong> Mostly requested for ICSE and ISC Literature, IB English, and essay writing in senior classes.</li>
   </ul>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="mb-mode">Home, online or hybrid: what works in Mumbai</h2>
   <p>
     Home tuition remains the first choice for younger children and for subjects where a tutor needs to watch the
@@ -207,7 +233,9 @@
     We can arrange all three with the same tutor. For a fuller comparison, see our guide on
     <a href="{{ url('/blog/online-vs-offline-tutoring') }}">online versus offline tutoring</a>.
   </p>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="mb-space">Making room to study in a Mumbai flat</h2>
   <p>
     Space is tight in many Mumbai homes, and a tutor may have to work at the dining table while the rest of the
@@ -219,7 +247,9 @@
     <li>For online sessions, a pair of earphones with a microphone and a phone stand to show written work are enough; an expensive setup is not needed.</li>
     <li>If the flat is simply too busy in the evening, ask about an earlier slot or a weekend morning when the home is quieter.</li>
   </ul>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="mb-fees">What tuition costs in Mumbai</h2>
   <p>
     Across NXTutors, most sessions fall between <strong>₹800 and ₹2,500 an hour</strong>. In Mumbai, these are the
@@ -236,7 +266,9 @@
     You will see each shortlisted tutor's fee before the demo, and we only suggest tutors within the budget you
     give us. Our <a href="{{ url('/pricing-guide') }}">pricing guide</a> breaks this down by class and subject.
   </p>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="mb-choose">What to watch for in the demo class</h2>
   <p>Use the free demo to test the tutor on the things that matter most over a full school year:</p>
   <ol>
@@ -250,7 +282,9 @@
   <p>
     If the demo leaves you unsure, say so. We will line up the next tutor on your shortlist at no cost.
   </p>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="mb-safety">Safety, verification and building security</h2>
   <p>
     Every NXTutors tutor is ID-verified and passes a profile check before being suggested to any family, and we keep
@@ -260,7 +294,9 @@
     take place in a shared room rather than a bedroom, and that you check your society's rules on visitor timings
     before fixing a late slot. If anything about a tutor's conduct worries you, contact us straight away.
   </p>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="mb-calendar">Planning around the Mumbai school year</h2>
   <p>
     Mumbai does not run on one academic calendar. State Board schools generally begin in June, many CBSE and ICSE
@@ -277,7 +313,9 @@
     The earlier a tutor joins, the more time goes into understanding rather than last-minute practice. A tutor who
     starts in December can still help, but the work will be almost entirely exam technique.
   </p>
+  </section>
 
+  <section class="nx-guide__sec">
   <h2 id="mb-start">Getting started</h2>
   <p>
     Tell us the student's class, board, subjects, your neighbourhood or nearest station, and the times that suit you.
@@ -289,17 +327,8 @@
     Elsewhere in Maharashtra, we also match tutors in <a href="{{ url('/city/pune') }}">Pune</a> and
     <a href="{{ url('/city/nagpur') }}">Nagpur</a>, and in <a href="{{ url('/city') }}">cities across India</a>.
   </p>
+  </section>
+
+  </div>
 </article>
 
-<style>
-  .mb-guide{margin-top:40px;color:#fff;line-height:1.7;max-width:860px}
-  .mb-guide h2{font-size:24px;font-weight:900;margin:36px 0 12px;scroll-margin-top:90px}
-  .mb-guide h3{font-size:18px;font-weight:800;margin:22px 0 8px}
-  .mb-guide p,.mb-guide li{opacity:.9}
-  .mb-guide ul,.mb-guide ol{padding-left:20px}
-  .mb-guide li{margin:6px 0}
-  .mb-guide a{color:#c9d6ff}
-  .mb-lede{font-size:17px}
-  .mb-toc{margin:18px 0;padding:14px 16px;border:1px solid rgba(255,255,255,.14);border-radius:14px;font-size:14px;line-height:2}
-  .mb-note{margin-top:20px;font-size:14px;opacity:.8}
-</style>

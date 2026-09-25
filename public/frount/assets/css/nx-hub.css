@@ -1,0 +1,261 @@
+/* ==========================================================================
+   NX HUB — the components behind the India → state → city → area pages:
+   chips, card rails, tabbed link sets, collapsible "show all" lists, the
+   FAQ grid and the long-form city guide layout.
+
+   Built only on the nxt-ds.css tokens so it matches the rest of the site.
+   Every link these components show is in the HTML from the start (tabs and
+   "show all" hide with CSS, not by loading later), so search engines see the
+   same links a visitor can reach.
+   ========================================================================== */
+
+/* ---------- section scaffolding ---------- */
+.nx-sec{margin-top:var(--nxt-s7);color:var(--nxt-text)}
+.nx-sec__head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:var(--nxt-s3) var(--nxt-s5);margin-bottom:var(--nxt-s5)}
+.nx-sec__title{font-family:var(--nxt-font-display);font-size:var(--nxt-t-h2);line-height:var(--nxt-lh-snug);font-weight:800;margin:0;color:var(--nxt-text);letter-spacing:-.01em}
+.nx-sec__sub{margin:6px 0 0;color:var(--nxt-text-dim);font-size:var(--nxt-t-sm);max-width:62ch}
+.nx-sec__action{font-size:var(--nxt-t-sm);font-weight:700;color:var(--nxt-accent);text-decoration:none;white-space:nowrap}
+.nx-sec__action:hover{text-decoration:underline}
+
+/* ---------- chips ---------- */
+.nx-chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:var(--nxt-s2)}
+.nx-chip{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:var(--nxt-r-pill);
+  background:var(--nxt-surface);border:1px solid var(--nxt-line);color:var(--nxt-text);font-size:var(--nxt-t-sm);
+  line-height:1.3;text-decoration:none;transition:border-color var(--nxt-fast) var(--nxt-ease),background var(--nxt-fast) var(--nxt-ease)}
+.nx-chip:hover{border-color:var(--nxt-accent-line);background:var(--nxt-surface-2)}
+.nx-chip__n{font-size:var(--nxt-t-micro);font-weight:800;color:var(--nxt-on-accent);background:var(--nxt-accent);border-radius:var(--nxt-r-pill);padding:1px 7px}
+.nx-chip--muted{color:var(--nxt-text-dim)}
+
+/* chips that scroll sideways on phones instead of wrapping into a wall */
+@media (max-width:719px){
+  .nx-chips--rail{flex-wrap:nowrap;overflow-x:auto;scroll-snap-type:x proximity;padding-bottom:6px;
+    margin-inline:calc(var(--nxt-s4) * -1);padding-inline:var(--nxt-s4);scrollbar-width:none;
+    -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 16px,#000 calc(100% - 24px),transparent 100%);
+            mask-image:linear-gradient(90deg,transparent 0,#000 16px,#000 calc(100% - 24px),transparent 100%)}
+  .nx-chips--rail::-webkit-scrollbar{display:none}
+  .nx-chips--rail > *{scroll-snap-align:start;flex:0 0 auto}
+}
+
+/* ---------- cards ---------- */
+.nx-card{display:flex;flex-direction:column;gap:6px;padding:var(--nxt-s5);border-radius:var(--nxt-r-md);
+  background:linear-gradient(180deg,var(--nxt-surface-2),var(--nxt-surface));border:1px solid var(--nxt-line);
+  color:var(--nxt-text);text-decoration:none;min-width:0;transition:transform var(--nxt-base) var(--nxt-ease),border-color var(--nxt-base) var(--nxt-ease)}
+a.nx-card:hover{transform:translateY(-2px);border-color:var(--nxt-line-strong)}
+.nx-card__kicker{font-size:var(--nxt-t-micro);font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--nxt-accent)}
+.nx-card__title{font-family:var(--nxt-font-display);font-weight:700;font-size:var(--nxt-t-h4);line-height:var(--nxt-lh-snug);margin:0}
+.nx-card__meta{font-size:var(--nxt-t-xs);color:var(--nxt-text-dim)}
+.nx-card ul{list-style:none;margin:6px 0 0;padding:0}
+.nx-card li{padding:5px 0;border-top:1px solid var(--nxt-line);font-size:var(--nxt-t-sm);line-height:1.4}
+.nx-card li:first-child{border-top:0}
+.nx-card li a{color:var(--nxt-text);text-decoration:none}
+.nx-card li a:hover{color:var(--nxt-accent)}
+
+/* grid on wide screens, swipeable rail on phones */
+.nx-rail{display:grid;gap:var(--nxt-s4);grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+@media (max-width:719px){
+  .nx-rail{grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:minmax(240px,82%);overflow-x:auto;
+    scroll-snap-type:x mandatory;margin-inline:calc(var(--nxt-s4) * -1);padding:2px var(--nxt-s4) 10px;scrollbar-width:none}
+  .nx-rail::-webkit-scrollbar{display:none}
+  .nx-rail > *{scroll-snap-align:start}
+}
+.nx-grid{display:grid;gap:var(--nxt-s4);grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+
+/* ---------- "show all" ---------- */
+.nx-more{margin-top:var(--nxt-s3)}
+.nx-more > summary{list-style:none;display:inline-flex;align-items:center;gap:8px;cursor:pointer;padding:9px 16px;
+  border-radius:var(--nxt-r-pill);border:1px solid var(--nxt-line-strong);color:var(--nxt-text);font-size:var(--nxt-t-sm);font-weight:700}
+.nx-more > summary::-webkit-details-marker{display:none}
+.nx-more > summary::after{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform var(--nxt-fast)}
+.nx-more[open] > summary::after{transform:rotate(-135deg) translateY(-2px)}
+.nx-more[open] > summary .nx-more__closed{display:none}
+.nx-more:not([open]) > summary .nx-more__open{display:none}
+.nx-more > summary:hover{border-color:var(--nxt-accent-line)}
+.nx-more > .nx-chips,.nx-more > .nx-grid{margin-top:var(--nxt-s3)}
+
+/* ---------- tabs (radio + :has, all panels in the HTML) ---------- */
+.nx-tabs__bar{display:flex;gap:var(--nxt-s2);overflow-x:auto;scrollbar-width:none;padding-bottom:4px;margin-bottom:var(--nxt-s4)}
+.nx-tabs__bar::-webkit-scrollbar{display:none}
+.nx-tabs__radio{position:absolute;opacity:0;pointer-events:none}
+.nx-tabs__tab{flex:0 0 auto;cursor:pointer;padding:9px 16px;border-radius:var(--nxt-r-pill);border:1px solid var(--nxt-line);
+  background:var(--nxt-surface);color:var(--nxt-text-dim);font-size:var(--nxt-t-sm);font-weight:700;user-select:none}
+.nx-tabs__tab small{font-weight:800;margin-left:4px;opacity:.75}
+.nx-tabs__radio:focus-visible + .nx-tabs__tab{outline:2px solid var(--nxt-focus);outline-offset:2px}
+.nx-tabs__panel + .nx-tabs__panel{margin-top:var(--nxt-s5)}
+.nx-tabs__panel-title{font-size:var(--nxt-t-sm);font-weight:800;color:var(--nxt-text-dim);margin:0 0 var(--nxt-s3)}
+@supports selector(:has(*)){
+  .nx-tabs .nx-tabs__panel{display:none}
+  .nx-tabs .nx-tabs__panel + .nx-tabs__panel{margin-top:0}
+  .nx-tabs .nx-tabs__panel-title{display:none}
+  .nx-tabs:has(.nx-tabs__radio:nth-of-type(1):checked) .nx-tabs__panel:nth-of-type(1),
+  .nx-tabs:has(.nx-tabs__radio:nth-of-type(2):checked) .nx-tabs__panel:nth-of-type(2),
+  .nx-tabs:has(.nx-tabs__radio:nth-of-type(3):checked) .nx-tabs__panel:nth-of-type(3),
+  .nx-tabs:has(.nx-tabs__radio:nth-of-type(4):checked) .nx-tabs__panel:nth-of-type(4),
+  .nx-tabs:has(.nx-tabs__radio:nth-of-type(5):checked) .nx-tabs__panel:nth-of-type(5),
+  .nx-tabs:has(.nx-tabs__radio:nth-of-type(6):checked) .nx-tabs__panel:nth-of-type(6),
+  .nx-tabs:has(.nx-tabs__radio:nth-of-type(7):checked) .nx-tabs__panel:nth-of-type(7){display:block}
+  .nx-tabs:has(.nx-tabs__radio:nth-of-type(1):checked) .nx-tabs__tab:nth-of-type(1),
+  .nx-tabs:has(.nx-tabs__radio:nth-of-type(2):checked) .nx-tabs__tab:nth-of-type(2),
+  .nx-tabs:has(.nx-tabs__radio:nth-of-type(3):checked) .nx-tabs__tab:nth-of-type(3),
+  .nx-tabs:has(.nx-tabs__radio:nth-of-type(4):checked) .nx-tabs__tab:nth-of-type(4),
+  .nx-tabs:has(.nx-tabs__radio:nth-of-type(5):checked) .nx-tabs__tab:nth-of-type(5),
+  .nx-tabs:has(.nx-tabs__radio:nth-of-type(6):checked) .nx-tabs__tab:nth-of-type(6),
+  .nx-tabs:has(.nx-tabs__radio:nth-of-type(7):checked) .nx-tabs__tab:nth-of-type(7){
+    background:var(--nxt-accent);border-color:var(--nxt-accent);color:var(--nxt-on-accent)}
+}
+
+/* ---------- FAQ: two-column accordion ---------- */
+.nx-faq{display:grid;gap:var(--nxt-s3);grid-template-columns:1fr;align-items:start}
+@media (min-width:900px){.nx-faq{grid-template-columns:1fr 1fr}}
+.nx-faq__item{border-radius:var(--nxt-r-md);background:var(--nxt-surface);border:1px solid var(--nxt-line);transition:border-color var(--nxt-fast)}
+.nx-faq__item[open]{border-color:var(--nxt-accent-line);background:var(--nxt-surface-2)}
+.nx-faq__item > summary{list-style:none;cursor:pointer;display:flex;gap:var(--nxt-s3);align-items:flex-start;justify-content:space-between;
+  padding:var(--nxt-s4) var(--nxt-s5);font-weight:700;font-size:var(--nxt-t-body);line-height:var(--nxt-lh-snug);color:var(--nxt-text)}
+.nx-faq__item > summary::-webkit-details-marker{display:none}
+.nx-faq__item > summary::after{content:"+";flex:0 0 26px;height:26px;border-radius:50%;display:grid;place-items:center;
+  background:var(--nxt-surface-2);color:var(--nxt-accent);font-size:18px;font-weight:700;line-height:1}
+.nx-faq__item[open] > summary::after{content:"–"}
+.nx-faq__item > p{margin:0;padding:0 var(--nxt-s5) var(--nxt-s5);color:var(--nxt-text-dim);line-height:var(--nxt-lh-body);font-size:var(--nxt-t-sm)}
+
+/* ---------- stat tiles ---------- */
+.nx-stats{list-style:none;margin:var(--nxt-s4) 0 0;padding:0;display:flex;flex-wrap:wrap;gap:var(--nxt-s2)}
+.nx-stats li{display:flex;flex-direction:column;padding:10px 14px;border-radius:var(--nxt-r-sm);background:var(--nxt-surface);border:1px solid var(--nxt-line);min-width:110px}
+.nx-stats strong{font-family:var(--nxt-font-display);font-size:1.25rem;line-height:1.1;color:var(--nxt-text)}
+.nx-stats span{font-size:var(--nxt-t-xs);color:var(--nxt-text-dim)}
+
+/* ---------- breadcrumb ---------- */
+.nx-crumbs{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:var(--nxt-t-xs);color:var(--nxt-text-faint);margin:0 0 var(--nxt-s3)}
+.nx-crumbs a{color:var(--nxt-text-dim);text-decoration:none}
+.nx-crumbs a:hover{color:var(--nxt-accent)}
+.nx-crumbs span[aria-current]{color:var(--nxt-text)}
+
+/* ==========================================================================
+   Long-form city guide (resources/views/city/content/*.blade.php)
+   Phones: a sticky, swipeable contents bar, and the guide folded after the
+   first sections with "Read the full guide". Desktop: contents in a sticky
+   left column. Sub-sections (zones, boards, class bands) become cards and
+   bullet lists become tiles, so it reads as a guide rather than a wall.
+   ========================================================================== */
+.nx-guide{margin-top:var(--nxt-s8);color:var(--nxt-text);display:grid;gap:0 var(--nxt-s7);grid-template-columns:minmax(0,1fr)}
+.nx-guide > h2:first-child{font-family:var(--nxt-font-display);font-size:var(--nxt-t-h1);line-height:var(--nxt-lh-tight);font-weight:800;margin:0 0 var(--nxt-s4);letter-spacing:-.015em}
+.nx-guide__lede{font-size:1.0625rem;line-height:var(--nxt-lh-body);color:var(--nxt-text-dim);max-width:var(--nxt-measure);margin:0 0 var(--nxt-s5)}
+
+.nx-guide__toc{font-size:0;display:flex;gap:var(--nxt-s2);overflow-x:auto;scrollbar-width:none;position:sticky;top:var(--nx-sticky-top,64px);z-index:5;
+  padding:10px 0;margin:0 calc(var(--nxt-s4) * -1) var(--nxt-s5);padding-inline:var(--nxt-s4);
+  background:linear-gradient(180deg,var(--nxt-ink-900) 70%,transparent)}
+.nx-guide__toc::-webkit-scrollbar{display:none}
+.nx-guide__toc strong{display:none}
+.nx-guide__toc a{flex:0 0 auto;font-size:var(--nxt-t-xs);font-weight:700;padding:7px 12px;border-radius:var(--nxt-r-pill);border:1px solid var(--nxt-line);
+  background:var(--nxt-surface);color:var(--nxt-text-dim);text-decoration:none;white-space:nowrap}
+.nx-guide__toc a:hover,.nx-guide__toc a.is-active{color:var(--nxt-on-accent);background:var(--nxt-accent);border-color:var(--nxt-accent)}
+
+.nx-guide__body{min-width:0;position:relative}
+.nx-guide__sec{scroll-margin-top:120px;padding-top:var(--nxt-s6);border-top:1px solid var(--nxt-line);margin-top:var(--nxt-s6)}
+.nx-guide__sec:first-child{border-top:0;margin-top:0;padding-top:0}
+.nx-guide__sec > h2{font-family:var(--nxt-font-display);font-size:var(--nxt-t-h2);line-height:var(--nxt-lh-snug);font-weight:800;margin:0 0 var(--nxt-s3);
+  display:flex;gap:12px;align-items:center}
+.nx-guide__sec > h2::before{content:"";flex:0 0 4px;align-self:stretch;min-height:1.1em;border-radius:4px;background:var(--nxt-accent)}
+.nx-guide__sec p{margin:0 0 var(--nxt-s3);line-height:var(--nxt-lh-body);color:var(--nxt-text-dim);max-width:var(--nxt-measure)}
+.nx-guide__sec p strong,.nx-guide__sec li strong{color:var(--nxt-text)}
+.nx-guide a{color:var(--nxt-accent)}
+
+/* bullet lists → tiles */
+.nx-guide__sec > ul,.nx-guide__sec > ol,.nx-guide__card > ul{list-style:none;margin:var(--nxt-s4) 0;padding:0;display:grid;gap:var(--nxt-s3);
+  grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.nx-guide__sec > ul > li,.nx-guide__sec > ol > li,.nx-guide__card > ul > li{padding:var(--nxt-s4);border-radius:var(--nxt-r-md);background:var(--nxt-surface);
+  border:1px solid var(--nxt-line);line-height:1.55;font-size:var(--nxt-t-sm);color:var(--nxt-text-dim)}
+.nx-guide__sec > ul > li > strong:first-child,.nx-guide__sec > ol > li > strong:first-child{display:block;margin-bottom:4px;font-size:var(--nxt-t-body)}
+.nx-guide__sec > ol{counter-reset:nxg}
+.nx-guide__sec > ol > li{counter-increment:nxg;position:relative;padding-top:calc(var(--nxt-s4) + 30px)}
+.nx-guide__sec > ol > li::before{content:counter(nxg);position:absolute;top:var(--nxt-s4);left:var(--nxt-s4);width:26px;height:26px;border-radius:50%;
+  display:grid;place-items:center;background:var(--nxt-accent);color:var(--nxt-on-accent);font-weight:800;font-size:var(--nxt-t-xs)}
+
+/* h3 sub-sections → card grid */
+.nx-guide__cards{display:grid;gap:var(--nxt-s3);grid-template-columns:repeat(auto-fill,minmax(280px,1fr));margin:var(--nxt-s4) 0}
+.nx-guide__card{padding:var(--nxt-s5);border-radius:var(--nxt-r-md);background:linear-gradient(180deg,var(--nxt-surface-2),var(--nxt-surface));border:1px solid var(--nxt-line)}
+.nx-guide__card > h3{font-family:var(--nxt-font-display);font-size:var(--nxt-t-h4);font-weight:700;margin:0 0 8px;color:var(--nxt-text)}
+.nx-guide__card p{font-size:var(--nxt-t-sm);margin-bottom:8px}
+.nx-guide__card p:last-child{margin-bottom:0}
+
+/* the fold */
+.nx-guide__body.is-folded{max-height:1150px;overflow:hidden;-webkit-mask-image:linear-gradient(180deg,#000 75%,transparent);mask-image:linear-gradient(180deg,#000 75%,transparent)}
+.nx-guide__unfold{display:flex;justify-content:center;margin-top:var(--nxt-s3)}
+.nx-guide__unfold button{cursor:pointer;padding:12px 22px;border-radius:var(--nxt-r-pill);border:0;background:var(--nxt-accent);color:var(--nxt-on-accent);
+  font-weight:800;font-size:var(--nxt-t-sm);box-shadow:var(--nxt-e2)}
+
+@media (min-width:1100px){
+  .nx-guide{grid-template-columns:230px minmax(0,1fr)}
+  .nx-guide > h2:first-child,.nx-guide__lede{grid-column:1 / -1}
+  .nx-guide__toc{grid-column:1;flex-direction:column;align-self:start;overflow:visible;top:96px;margin:0;padding:0;background:none;gap:4px}
+  .nx-guide__toc strong{display:block;font-size:var(--nxt-t-micro);letter-spacing:.08em;text-transform:uppercase;color:var(--nxt-text-faint);margin-bottom:6px}
+  .nx-guide__toc a{border:0;background:none;padding:6px 10px;border-left:2px solid var(--nxt-line);border-radius:0;white-space:normal}
+  .nx-guide__toc a:hover,.nx-guide__toc a.is-active{background:var(--nxt-surface);color:var(--nxt-text);border-left-color:var(--nxt-accent)}
+  .nx-guide__body{grid-column:2}
+  .nx-guide__unfold{grid-column:2}
+  .nx-guide__body.is-folded{max-height:1500px}
+}
+
+/* ==========================================================================
+   Blog articles (.nx-article, set on the post body in blog/show). The post
+   HTML comes from the admin editor; nx-hub.js only regroups it for reading:
+   a contents bar from the H2s, "Label – text" runs as tiles, runs of short
+   lines as a checklist, and H3 sub-sections as cards.
+   ========================================================================== */
+.nx-article{color:var(--nxt-text-dim);line-height:var(--nxt-lh-body)}
+.nx-article h2{font-family:var(--nxt-font-display);font-size:var(--nxt-t-h2);line-height:var(--nxt-lh-snug);color:var(--nxt-text);
+  margin:var(--nxt-s7) 0 var(--nxt-s3);display:flex;gap:12px;align-items:center;scroll-margin-top:120px}
+.nx-article h2::before{content:"";flex:0 0 4px;align-self:stretch;min-height:1.1em;border-radius:4px;background:var(--nxt-accent)}
+.nx-article > h2:first-child,.nx-article__toc + h2{margin-top:0}
+.nx-article h3{font-family:var(--nxt-font-display);font-size:var(--nxt-t-h4);color:var(--nxt-text);margin:var(--nxt-s5) 0 6px}
+.nx-article p{margin:0 0 var(--nxt-s3);max-width:74ch}
+.nx-article strong{color:var(--nxt-text)}
+.nx-article a{color:var(--nxt-accent)}
+
+.nx-article__toc{display:flex;gap:var(--nxt-s2);overflow-x:auto;scrollbar-width:none;margin:0 0 var(--nxt-s5);padding-bottom:4px}
+.nx-article__toc::-webkit-scrollbar{display:none}
+.nx-article__toc a{flex:0 0 auto;font-size:var(--nxt-t-xs);font-weight:700;padding:7px 12px;border-radius:var(--nxt-r-pill);border:1px solid var(--nxt-line);
+  background:var(--nxt-surface);color:var(--nxt-text-dim);text-decoration:none;white-space:nowrap}
+.nx-article__toc a:hover{color:var(--nxt-on-accent);background:var(--nxt-accent);border-color:var(--nxt-accent)}
+
+.nx-tiles{display:grid;gap:var(--nxt-s3);grid-template-columns:repeat(auto-fill,minmax(220px,1fr));margin:var(--nxt-s3) 0 var(--nxt-s5)}
+.nx-article .nx-tile{margin:0;max-width:none;padding:var(--nxt-s4);border-radius:var(--nxt-r-md);background:var(--nxt-surface);border:1px solid var(--nxt-line);font-size:var(--nxt-t-sm);line-height:1.5}
+.nx-tile > strong:first-child{display:block;color:var(--nxt-text);font-size:var(--nxt-t-body);margin-bottom:4px}
+
+.nx-checklist{list-style:none;margin:var(--nxt-s3) 0 var(--nxt-s5);padding:0;display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.nx-checklist li{display:flex;gap:10px;align-items:flex-start;padding:10px 14px;border-radius:var(--nxt-r-sm);background:var(--nxt-surface);border:1px solid var(--nxt-line);font-size:var(--nxt-t-sm);line-height:1.45}
+.nx-checklist li::before{content:"✓";flex:0 0 20px;height:20px;border-radius:50%;display:grid;place-items:center;background:var(--nxt-verify-soft);color:var(--nxt-verify);font-weight:800;font-size:12px}
+
+.nx-subcards{display:grid;gap:var(--nxt-s3);grid-template-columns:repeat(auto-fill,minmax(240px,1fr));margin:var(--nxt-s3) 0 var(--nxt-s5)}
+.nx-subcard{padding:var(--nxt-s4) var(--nxt-s5);border-radius:var(--nxt-r-md);background:linear-gradient(180deg,var(--nxt-surface-2),var(--nxt-surface));border:1px solid var(--nxt-line)}
+.nx-article .nx-subcard h3{margin-top:0}
+.nx-subcard p{font-size:var(--nxt-t-sm);margin-bottom:6px}
+
+/* ---------- tighter variants ---------- */
+.nx-grid--tight{grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:var(--nxt-s3)}
+.nx-grid--tight .nx-card{padding:var(--nxt-s4)}
+
+/* the site's heading rules outrank plain element selectors inside the guide */
+.nx-guide .nx-guide__card > h3{font-family:var(--nxt-font-display);font-size:var(--nxt-t-h4);line-height:var(--nxt-lh-snug);font-weight:700;margin:0 0 8px}
+
+/* area cards: a swipeable row on phones instead of nine stacked cards */
+@media (max-width:719px){
+  #areasGrid{display:grid;grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:78%;overflow-x:auto;scroll-snap-type:x mandatory;
+    gap:var(--nxt-s3);margin-inline:calc(var(--nxt-s4) * -1);padding:2px var(--nxt-s4) 10px;scrollbar-width:none}
+  #areasGrid::-webkit-scrollbar{display:none}
+  #areasGrid > *{scroll-snap-align:start}
+  /* outside the home page the chat's help list is hidden on phones */
+  #nxAskAISection.nxg-compact .nxg-results{display:none}
+}
+
+/* the post body's own rules (underlined links, list indents, big h3s) are
+   more specific than plain classes; these win back the components */
+.nx-article .nx-article__toc a{text-decoration:none;color:var(--nxt-text-dim)}
+.nx-article .nx-article__toc a:hover{color:var(--nxt-on-accent)}
+.nx-article ul.nx-checklist{padding-left:0;margin-left:0}
+.nx-article .nx-subcard h3,.nx-article .nx-subcards h3{font-size:var(--nxt-t-h4);line-height:var(--nxt-lh-snug);margin:0 0 6px}
+
+/* home FAQ on phones: first five, then "Show all" (all answers stay in the HTML) */
+@media (max-width:719px){
+  .faq-grid.nx-faq-folded .faq-list:nth-of-type(n+2){display:none}
+  .faq-grid.nx-faq-folded .faq-list:first-of-type .faq-item:nth-of-type(n+6){display:none}
+}
+.nx-faq-more{display:flex;justify-content:center;margin-top:var(--nxt-s3)}

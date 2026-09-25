@@ -172,7 +172,7 @@ class GeoStructureTest extends TestCase
         $this->assertStringContainsString('Home tutors in India’s major cities', $top);
         $this->assertStringContainsString('href="' . url('city/gurugram') . '"', $top);
         $this->assertStringContainsString('2 tutors', $top);
-        $this->assertStringContainsString('Also in:', $top);
+        $this->assertStringContainsString('>Also in<', $top);
 
         $served = view('home.partials.cities-served')->render();
         $this->assertStringContainsString('href="' . url('city') . '#haryana"', $served);
@@ -180,7 +180,7 @@ class GeoStructureTest extends TestCase
 
         $guides = view('home.partials.guides')->render();
         $this->assertStringContainsString(url('blog/-neet-biology-ncertfirst') . '"', $guides);
-        $this->assertStringContainsString('Local guides for 1 neighbourhoods', $guides);
+        $this->assertStringContainsString('Plus local guides for 1 neighbourhoods', $guides);
     }
 
     public function test_full_pages_render(): void

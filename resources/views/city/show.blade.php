@@ -111,34 +111,12 @@
       padding:10px 16px;border-radius:999px;font-weight:800;text-align:center;flex:1;
     }
     .btn-outline:hover{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.35)}
-    .crumbs{font-size:13px;color:#fff;opacity:.75;margin:0 0 10px}
-    .crumbs a{color:#c9d6ff}
-    .stats{list-style:none;display:flex;flex-wrap:wrap;gap:8px 16px;margin:10px 0 0;padding:0;font-size:14px}
-    .stats strong{color:#9fb4ff}
-    .blk{margin-top:36px;color:#fff}
-    .blk h2,.sub-h{font-size:22px;font-weight:900;margin:0 0 12px;color:#fff}
-    .sub-h{margin-top:36px}
-    .blk a{color:#c9d6ff}
-    .tutor-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
-    .tutor-card a{display:grid;grid-template-columns:56px 1fr;grid-template-rows:auto auto;column-gap:12px;align-items:center;padding:12px;border-radius:14px;border:1px solid rgba(255,255,255,.12);text-decoration:none;color:#fff}
-    .tutor-card img{grid-row:span 2;width:56px;height:56px;border-radius:50%;object-fit:cover}
-    .t-name{font-weight:800}
-    .t-meta{font-size:13px;opacity:.7}
-    .more{margin-top:10px}
-    .track-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
-    .track h3{font-size:15px;font-weight:800;margin:0 0 6px}
-    .track ul,.guide-list{list-style:none;margin:0;padding:0}
-    .track li,.guide-list li{padding:4px 0;font-size:14px;line-height:1.4}
-    .faq{border-bottom:1px solid rgba(255,255,255,.12);padding:10px 0}
-    .faq summary{cursor:pointer;font-weight:700}
-    .faq p{opacity:.85;margin:8px 0 0;line-height:1.6}
-    .all-areas{margin-top:36px;color:#fff}
-    .all-areas h2{font-size:22px;font-weight:900;margin:0 0 6px}
-    .all-areas p{opacity:.8;margin:0 0 14px;max-width:760px}
-    .all-areas__list{list-style:none;margin:0;padding:0;columns:3 220px;column-gap:24px}
-    .all-areas__list li{break-inside:avoid;padding:4px 0;font-size:14px}
-    .all-areas__list a{color:#c9d6ff;text-decoration:none}
-    .all-areas__list a:hover{text-decoration:underline}
+    /* hero stacks on phones instead of squeezing the text beside the image */
+    @media(max-width:640px){
+      .city-hero{flex-direction:column;align-items:flex-start}
+      .city-hero img{width:88px;height:88px}
+      .city-hero h1{font-size:26px}
+    }
   </style>
 </head>
 
@@ -147,29 +125,27 @@
 <main class="main">
   <div class="container">
 
-    <nav class="crumbs" aria-label="Breadcrumb">
-      <a href="{{ url('/') }}">Home</a> ›
-      <a href="{{ url('/city') }}">India</a> ›
-      <a href="{{ url('/city') }}#{{ \App\Support\Geo::stateSlug($hubState) }}">{{ $hubState }}</a> ›
-      <span>{{ $city->city_name }}</span>
+    <nav class="nx-crumbs" aria-label="Breadcrumb">
+      <a href="{{ url('/') }}">Home</a> <span aria-hidden="true">›</span>
+      <a href="{{ url('/city') }}">India</a> <span aria-hidden="true">›</span>
+      <a href="{{ url('/city') }}#{{ \App\Support\Geo::stateSlug($hubState) }}">{{ $hubState }}</a> <span aria-hidden="true">›</span>
+      <span aria-current="page">{{ $city->city_name }}</span>
     </nav>
 
-    <div class="hero">
-      <img src="{{ $cityImg }}" alt="Home tutors in {{ $city->city_name }}">
+    <div class="hero city-hero">
+      <img src="{{ $cityImg }}" alt="Home tutors in {{ $city->city_name }}" width="130" height="130">
       <div>
         {{-- The bare city name said nothing a parent searches for. The old
              name is added in brackets because "Gurgaon" still out-searches
              "Gurugram" several times over. --}}
         @php $cityAka = \App\Support\Geo::akaOf((string) $city->slug); @endphp
         <h1>Home &amp; Online Tutors in {{ $city->city_name }}@if($cityAka) ({{ $cityAka }})@endif</h1>
-        <p>
-          {{ $city->city_desc  }}
-        </p>
-        <ul class="stats">
-          @if($hubCounts['tutors'] > 0)<li><strong>{{ number_format($hubCounts['tutors']) }}</strong> verified tutors</li>@endif
-          @if($allAreas->count() > 0)<li><strong>{{ number_format($allAreas->count()) }}</strong> areas covered</li>@endif
-          @if($hubPages->count() > 0)<li><strong>{{ number_format($hubPages->count()) }}</strong> subject &amp; board pages</li>@endif
-          <li>Free demo class</li>
+        <p>{{ $city->city_desc }}</p>
+        <ul class="nx-stats">
+          @if($hubCounts['tutors'] > 0)<li><strong>{{ number_format($hubCounts['tutors']) }}</strong><span>verified tutors</span></li>@endif
+          @if($allAreas->count() > 0)<li><strong>{{ number_format($allAreas->count()) }}</strong><span>areas covered</span></li>@endif
+          @if($hubPages->count() > 0)<li><strong>{{ number_format($hubPages->count()) }}</strong><span>subject &amp; board pages</span></li>@endif
+          <li><strong>Free</strong><span>demo class</span></li>
         </ul>
       </div>
     </div>
@@ -182,63 +158,88 @@
       'aiPage' => ['type' => 'city', 'city' => $city->city_name],
     ])
 
+    {{-- Areas: search + cards (nine, more by AJAX), then every area as a
+         chip. The first chips show; the rest sit in "Show all", still in the
+         HTML, because the cards' AJAX is not something search engines click. --}}
     @if($allAreas->count())
-    <h2 class="sub-h">Find tutors in your area of {{ $city->city_name }}</h2>
-    {{-- ✅ Search + button --}}
-    <div class="filterbar">
-  <input type="text" id="areaSearch" placeholder="Search area name..." autocomplete="off">
-</div>
+    <section class="nx-sec" aria-labelledby="allAreasTitle">
+      <div class="nx-sec__head">
+        <div>
+          <h2 class="nx-sec__title" id="allAreasTitle">Find tutors in your area of {{ $city->city_name }}</h2>
+          <p class="nx-sec__sub">{{ number_format($allAreas->count()) }} sectors and societies. Open yours for the nearest tutors, subjects and fees.</p>
+        </div>
+      </div>
 
-    {{-- ✅ Grid --}}
-    <div class="grid-3" id="areasGrid">
-      @include('city.partials.area-cards', ['areas'=>$areas])
-    </div>
+      <div class="filterbar">
+        <input type="text" id="areaSearch" placeholder="Search your sector or society…" autocomplete="off">
+      </div>
+      <div class="grid-3" id="areasGrid">
+        @include('city.partials.area-cards', ['areas' => $areas])
+      </div>
+      <div style="margin-top:16px;text-align:center;">
+        <button id="loadMoreAreas" class="nxbtn btn-accent"
+                data-offset="{{ $areas->count() }}"
+                data-url="{{ route('city.areas.load', $city->slug) }}">Load more areas</button>
+      </div>
 
-    {{-- ✅ Load more --}}
-    <div style="margin-top:16px;text-align:center;">
-      <button id="loadMoreAreas"
-              class="nxbtn btn-accent"
-              data-offset="{{ $areas->count() }}"
-              data-url="{{ route('city.areas.load', $city->slug) }}">
-        Load More
-      </button>
-    </div>
-    @endif
-
-    {{-- Every area as a plain link: the cards above stop at nine and load
-         the rest by AJAX, which search engines do not trigger. --}}
-    @if(isset($allAreas) && $allAreas->count())
-    <section class="all-areas" aria-labelledby="allAreasTitle">
-      <h2 id="allAreasTitle">All areas we cover in {{ $city->city_name }}@if($cityAka) ({{ $cityAka }})@endif</h2>
-      <p>
-        Home tutors for {{ $allAreas->count() }} sectors and societies in {{ $city->city_name }}.
-        Open your area to see tutors near you, subjects and fees, and book a free demo class.
-      </p>
-      <ul class="all-areas__list">
-        @foreach($allAreas as $a)
-          <li><a href="{{ url('/city/'.$city->slug.'/'.$a->slug) }}">{{ \App\Support\CityHub::cleanAreaName($a->name, $a->slug) }}</a></li>
-        @endforeach
+      @php
+        $chipAreas = $allAreas->map(fn ($a) => ['url' => url('/city/'.$city->slug.'/'.$a->slug), 'name' => \App\Support\CityHub::cleanAreaName($a->name, $a->slug)]);
+        $chipFirst = $chipAreas->take(24);
+        $chipRest = $chipAreas->slice(24);
+      @endphp
+      <h3 class="nx-card__kicker" style="margin:var(--nxt-s6) 0 var(--nxt-s3)">All {{ number_format($allAreas->count()) }} areas A–Z</h3>
+      <ul class="nx-chips">
+        @foreach($chipFirst as $c)<li><a class="nx-chip" href="{{ $c['url'] }}">{{ $c['name'] }}</a></li>@endforeach
       </ul>
+      @if($chipRest->count())
+        <details class="nx-more">
+          <summary><span class="nx-more__closed">Show all {{ number_format($allAreas->count()) }} areas</span><span class="nx-more__open">Show fewer</span></summary>
+          <ul class="nx-chips">
+            @foreach($chipRest as $c)<li><a class="nx-chip" href="{{ $c['url'] }}">{{ $c['name'] }}</a></li>@endforeach
+          </ul>
+        </details>
+      @endif
     </section>
     @endif
 
-    {{-- The city's own generated subject / board pages, grouped by track.
-         When the city has area pages those carry the full lists and this
-         shows a sample; otherwise this is the only path to them, so all are listed. --}}
+    {{-- The city's own subject / board pages as tabs (JEE, NEET, IB …). All
+         panels are in the HTML; CSS shows one at a time. With area pages
+         the full lists live there, so a city shows twelve per tab plus
+         "Show all"; without them this is the only path, so all are listed. --}}
     @if(count($hubTracks))
-    <section class="blk" aria-labelledby="popTitle">
-      <h2 id="popTitle">Popular tutor searches in {{ $city->city_name }}</h2>
-      <div class="track-grid">
+    <section class="nx-sec" aria-labelledby="popTitle">
+      <div class="nx-sec__head">
+        <div>
+          <h2 class="nx-sec__title" id="popTitle">Popular tutor searches in {{ $city->city_name }}</h2>
+          <p class="nx-sec__sub">Home tutors by board and exam — pick one to see subjects, classes and localities.</p>
+        </div>
+      </div>
+      <div class="nx-tabs">
+        <div class="nx-tabs__bar" role="tablist">
+          @foreach($hubTracks as $key => $list)
+            <input class="nx-tabs__radio" type="radio" name="popTracks" id="popTrack-{{ $key }}" @if($loop->first) checked @endif>
+            <label class="nx-tabs__tab" for="popTrack-{{ $key }}" role="tab">{{ \App\Support\CityHub::TRACKS[$key][0] }}<small>{{ $list->count() }}</small></label>
+          @endforeach
+        </div>
+        <div class="nx-tabs__panels">
         @foreach($hubTracks as $key => $list)
-          <div class="track">
-            <h3>{{ \App\Support\CityHub::TRACKS[$key][0] }} home tutors</h3>
-            <ul>
-              @foreach($allAreas->count() ? $list->take(10) : $list as $gp)
-                <li><a href="{{ url('/p/'.$gp->slug) }}">{{ $gp->title }}</a></li>
-              @endforeach
+          @php $shown = $allAreas->count() ? $list->take(12) : $list->take(30); $more = $allAreas->count() ? $list->slice(12)->take(60) : $list->slice(30); @endphp
+          <div class="nx-tabs__panel" role="tabpanel">
+            <h3 class="nx-tabs__panel-title">{{ \App\Support\CityHub::TRACKS[$key][0] }} home tutors</h3>
+            <ul class="nx-chips">
+              @foreach($shown as $gp)<li><a class="nx-chip" href="{{ url('/p/'.$gp->slug) }}">{{ $gp->title }}</a></li>@endforeach
             </ul>
+            @if($more->count())
+              <details class="nx-more">
+                <summary><span class="nx-more__closed">Show {{ number_format($more->count()) }} more</span><span class="nx-more__open">Show fewer</span></summary>
+                <ul class="nx-chips">
+                  @foreach($more as $gp)<li><a class="nx-chip" href="{{ url('/p/'.$gp->slug) }}">{{ $gp->title }}</a></li>@endforeach
+                </ul>
+              </details>
+            @endif
           </div>
         @endforeach
+        </div>
       </div>
     </section>
     @endif
@@ -267,37 +268,52 @@
         'mainEntity' => array_map(fn ($f) => ['@type' => 'Question', 'name' => $f[0], 'acceptedAnswer' => ['@type' => 'Answer', 'text' => $f[1]]], $cityFaqs),
       ];
     @endphp
-    <section class="blk" aria-labelledby="faqTitle">
-      <h2 id="faqTitle">Home tuition in {{ $city->city_name }}: common questions</h2>
-      @foreach($cityFaqs as $f)
-        <details class="faq"><summary>{{ $f[0] }}</summary><p>{{ $f[1] }}</p></details>
-      @endforeach
+    <section class="nx-sec" aria-labelledby="faqTitle">
+      <div class="nx-sec__head">
+        <h2 class="nx-sec__title" id="faqTitle">Home tuition in {{ $city->city_name }}: common questions</h2>
+      </div>
+      <div class="nx-faq">
+        @foreach($cityFaqs as $f)
+          <details class="nx-faq__item" @if($loop->first) open @endif><summary>{{ $f[0] }}</summary><p>{{ $f[1] }}</p></details>
+        @endforeach
+      </div>
     </section>
     <script type="application/ld+json">{!! json_encode($cityFaqLd, JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE) !!}</script>
 
-    <section class="blk" aria-labelledby="nearTitle">
-      <h2 id="nearTitle">Home tutors in other cities</h2>
-      @if($hubNearby->count())
-        <p><strong>Nearby in {{ $hubState }}{{ in_array($city->slug, ['delhi-ncr','gurugram','faridabad']) ? ' and NCR' : '' }}:</strong>
-          @foreach($hubNearby as $n)<a href="{{ url('/city/'.$n->slug) }}">{{ $n->city_name }}</a>@if(!$loop->last), @endif @endforeach
-        </p>
-      @endif
-      <p><strong>Across India:</strong>
-        @foreach($hubOthers as $n)<a href="{{ url('/city/'.$n->slug) }}">{{ $n->city_name }}</a>@if(!$loop->last), @endif @endforeach
-        · <a href="{{ url('/city') }}">All cities by state →</a>
-      </p>
-    </section>
-
     @if($hubGuides->count())
-    <section class="blk" aria-labelledby="guideTitle">
-      <h2 id="guideTitle">Guides for {{ $city->city_name }} parents and students</h2>
-      <ul class="guide-list">
-        @foreach($hubGuides->take(12) as $g)
-          <li><a href="{{ url('/blog/'.$g->slug) }}">{{ $g->title }}</a></li>
+    <section class="nx-sec" aria-labelledby="guideTitle">
+      <div class="nx-sec__head">
+        <h2 class="nx-sec__title" id="guideTitle">Guides for {{ $city->city_name }} parents and students</h2>
+        <a class="nx-sec__action" href="{{ url('/blog') }}">All guides →</a>
+      </div>
+      <div class="nx-rail">
+        @foreach($hubGuides->take(8) as $g)
+          <a class="nx-card" href="{{ url('/blog/'.$g->slug) }}">
+            <span class="nx-card__kicker">{{ \App\Support\BlogTopics::TOPICS[\App\Support\BlogTopics::of($g->slug)] }}</span>
+            <span class="nx-card__title">{{ $g->title }}</span>
+            <span class="nx-card__meta">Read the guide →</span>
+          </a>
         @endforeach
-      </ul>
+      </div>
     </section>
     @endif
+
+    <section class="nx-sec" aria-labelledby="nearTitle">
+      <div class="nx-sec__head">
+        <h2 class="nx-sec__title" id="nearTitle">Home tutors in other cities</h2>
+        <a class="nx-sec__action" href="{{ url('/city') }}">All cities by state →</a>
+      </div>
+      @if($hubNearby->count())
+        <h3 class="nx-card__kicker" style="margin:0 0 var(--nxt-s3)">Nearby in {{ $hubState }}{{ in_array($city->slug, ['delhi-ncr','gurugram','faridabad']) ? ' and NCR' : '' }}</h3>
+        <ul class="nx-chips nx-chips--rail" style="margin-bottom:var(--nxt-s5)">
+          @foreach($hubNearby as $n)<li><a class="nx-chip" href="{{ url('/city/'.$n->slug) }}">{{ $n->city_name }}</a></li>@endforeach
+        </ul>
+      @endif
+      <h3 class="nx-card__kicker" style="margin:0 0 var(--nxt-s3)">Across India</h3>
+      <ul class="nx-chips nx-chips--rail">
+        @foreach($hubOthers as $n)<li><a class="nx-chip" href="{{ url('/city/'.$n->slug) }}">{{ $n->city_name }}</a></li>@endforeach
+      </ul>
+    </section>
 
   </div>
 

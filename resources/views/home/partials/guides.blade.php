@@ -31,35 +31,27 @@
     <p class="section-subtitle">Board-by-board study plans, JEE and NEET preparation, and how to choose the right tutor.</p>
   </div>
 
-  <div class="nxgd-grid">
+  <div class="nx-rail">
     @foreach($gdOrder as $topic)
       @continue(empty($gdByTopic[$topic]))
-      <div class="nxgd-col">
-        <h3 class="nxgd-h">{{ BlogTopics::TOPICS[$topic] }}</h3>
-        <ul class="nxgd-list">
-          @foreach(array_slice($gdByTopic[$topic], 0, 5) as $p)
+      <div class="nx-card">
+        <span class="nx-card__kicker">{{ count($gdByTopic[$topic]) }} guides</span>
+        <h3 class="nx-card__title">{{ BlogTopics::TOPICS[$topic] }}</h3>
+        <ul>
+          @foreach(array_slice($gdByTopic[$topic], 0, 4) as $p)
             <li><a href="{{ url('blog/' . trim($p->slug)) }}">{{ $p->title }}</a></li>
           @endforeach
         </ul>
+        <a class="nx-sec__action" style="margin-top:auto;padding-top:8px" href="{{ url('blog') }}#topic-{{ $topic }}">All {{ strtolower(BlogTopics::TOPICS[$topic]) }} →</a>
       </div>
     @endforeach
   </div>
 
-  <p class="nxgd-all">
+  <p style="margin:var(--nxt-s4) 0 0;font-size:var(--nxt-t-sm);color:var(--nxt-text-dim)">
     @if(!empty($gdByTopic['city']))
-      Local guides for {{ count($gdByTopic['city']) }} neighbourhoods are on each area page. ·
+      Plus local guides for {{ count(array_unique(array_map(fn ($p) => \App\Support\BlogTopics::localityOf($p->slug), $gdByTopic['city']))) }} neighbourhoods on their area pages ·
     @endif
-    <a href="{{ url('blog') }}">All guides →</a>
+    <a class="nx-sec__action" href="{{ url('blog') }}">All guides →</a>
   </p>
-
-  <style>
-    .nxgd-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:16px}
-    .nxgd-h{font-size:15px;font-weight:800;margin:0 0 8px;color:#fff}
-    .nxgd-list{list-style:none;margin:0;padding:0}
-    .nxgd-list li{padding:5px 0;font-size:14px;line-height:1.4}
-    .nxgd-list a,.nxgd-all a{color:#c9d6ff;text-decoration:none}
-    .nxgd-list a:hover,.nxgd-all a:hover{text-decoration:underline}
-    .nxgd-all{margin:14px 0 0;font-size:14px;opacity:.9}
-  </style>
 </section>
 @endif
