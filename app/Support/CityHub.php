@@ -53,13 +53,13 @@ class CityHub
      */
     public static function pages(string $citySlug): Collection
     {
-        return collect(Cache::remember("cityhub.pages.v1.$citySlug", 3600, function () use ($citySlug) {
+        return collect(Cache::remember("cityhub.pages.v2.$citySlug", 3600, function () use ($citySlug) {
             $names = self::rawNames('generated_pages', $citySlug);
             if (! $names) {
                 return [];
             }
 
-            return DB::table('generated_pages')
+            return self::indexable(DB::table('generated_pages'))
                 ->where('status', 'published')
                 ->whereIn('city', $names)
                 ->orderBy('title')
@@ -67,6 +67,24 @@ class CityHub
                 ->map(fn ($p) => (object) ['slug' => $p->slug, 'title' => $p->title, 'location' => $p->location])
                 ->all();
         }));
+    }
+
+    /**
+     * Only generated pages meant to be indexed: the same rule as the sitemap
+     * and pages/show (payload index_flag, "Index" when absent). Kolkata has
+     * ~1,200 published pages but only ~370 indexable; linking the rest from
+     * hubs sent crawlers to pages that then say noindex. A LIKE on the stored
+     * JSON works the same on MySQL and SQLite.
+     */
+    public static function indexable($query)
+    {
+        foreach (['Noindex', 'Skip'] as $flag) {
+            $query->where(fn ($q) => $q->whereNull('payload')
+                ->orWhere(fn ($qq) => $qq->where('payload', 'not like', '%"index_flag":"' . $flag . '"%')
+                    ->where('payload', 'not like', '%"index_flag": "' . $flag . '"%')));
+        }
+
+        return $query;
     }
 
     /** Group pages by board / exam track. @return array<string, Collection> */

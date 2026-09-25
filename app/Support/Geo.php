@@ -113,7 +113,7 @@ class Geo
      */
     public static function counts(): array
     {
-        return Cache::remember('geo.counts.v1', 3600, function () {
+        return Cache::remember('geo.counts.v2', 3600, function () {
             $out = [];
             $bump = function (string $slug, string $key, int $n) use (&$out) {
                 if ($slug === '') {
@@ -135,7 +135,7 @@ class Geo
                 $bump((string) $row->slug, 'areas', (int) $row->n);
             }
 
-            foreach (DB::table('generated_pages')->where('status', 'published')
+            foreach (CityHub::indexable(DB::table('generated_pages'))->where('status', 'published')
                 ->select('city', DB::raw('COUNT(*) as n'))->groupBy('city')->get() as $row) {
                 $bump(self::slugFor($row->city), 'pages', (int) $row->n);
             }

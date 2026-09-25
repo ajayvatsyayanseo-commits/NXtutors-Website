@@ -97,6 +97,10 @@ class GeoStructureTest extends TestCase
             ['slug' => 'sector-49-cbse-maths', 'title' => 'CBSE Maths Home Tutor in Sector 49', 'city' => 'Gurugram', 'location' => 'Sector 49'],
             ['slug' => 'salt-lake-jee', 'title' => 'JEE Home Tutor in Salt Lake', 'city' => 'Kolkata', 'location' => 'Salt Lake'],
         ]);
+        DB::table('generated_pages')->insert([
+            ['slug' => 'salt-lake-noindex', 'title' => 'NEET Home Tutor in Salt Lake', 'city' => 'Kolkata', 'location' => 'Salt Lake', 'payload' => '{"index_flag":"Noindex"}'],
+            ['slug' => 'salt-lake-indexed', 'title' => 'IB Home Tutor in Salt Lake', 'city' => 'Kolkata', 'location' => 'Salt Lake', 'payload' => '{"index_flag":"Index","x":1}'],
+        ]);
         DB::table('blog_managment')->insert([
             ['title' => 'CBSE Class 10 Maths', 'slug' => 'cbse-class-10-maths-preparation'],
             ['title' => 'NEET Biology', 'slug' => "-neet-biology-ncertfirst\t"],
@@ -123,7 +127,7 @@ class GeoStructureTest extends TestCase
         $this->assertSame(2, $c['gurugram']['pages']);
         $this->assertSame(1, $c['mumbai']['tutors']);
         $this->assertSame(1, $c['delhi-ncr']['tutors']);
-        $this->assertSame(1, $c['kolkata']['pages']);
+        $this->assertSame(2, $c['kolkata']['pages'], 'the noindex page is not counted');
     }
 
     public function test_states_are_grouped_and_sorted(): void
@@ -195,6 +199,8 @@ class GeoStructureTest extends TestCase
         $g->assertDontSee('<a href="' . e(url('/city/gurugram/dlf-phase-1')) . '">', false);
 
         $this->get('/city/kolkata')->assertOk()->assertSee(url('/p/salt-lake-jee'), false)
+            ->assertSee(url('/p/salt-lake-indexed'), false)
+            ->assertDontSee(url('/p/salt-lake-noindex'), false)
             ->assertDontSee('a complete guide for parents');
 
         $this->get('/city')->assertOk()
