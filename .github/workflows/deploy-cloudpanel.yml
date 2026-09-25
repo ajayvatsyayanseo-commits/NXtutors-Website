@@ -464,6 +464,10 @@ jobs:
           # runs what is new — without it the alert dedupe column and the
           # parental consent table would never be created.
           "$php_binary" artisan migrate --force --path=app/Nxt/Dashboard/Database/Migrations
+          # SEO data changes (page and city meta that Super Admin would
+          # otherwise edit by hand). Scoped to its own folder so the legacy
+          # database/migrations set is never run on production by accident.
+          "$php_binary" artisan migrate --force --path=database/migrations/seo
           "$php_binary" artisan storage:link || true
           "$php_binary" artisan config:cache
           "$php_binary" artisan view:cache
