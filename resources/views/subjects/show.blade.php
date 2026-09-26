@@ -23,7 +23,7 @@
           'name' => $page['title'],
           'description' => $page['description'],
           'inLanguage' => 'en-IN',
-          'author' => $lead ? ['@type' => 'Person', 'name' => $lead['name'], 'jobTitle' => $lead['role'], 'url' => $lead['profile_url']] : null,
+          'author' => $authors->map(fn ($a) => array_filter(['@type' => empty($a['user_id']) ? 'Organization' : 'Person', 'name' => $a['name'], 'jobTitle' => empty($a['user_id']) ? null : $a['role'], 'url' => $a['author_url'] ?? $a['profile_url']]))->values()->all() ?: null,
         ],
         [
           '@type' => 'BreadcrumbList',
@@ -85,7 +85,7 @@
         @if($lead)
           <p class="nx-byline">
             @if($lead['image'])<img src="{{ $lead['image'] }}" alt="{{ $lead['name'] }}" width="32" height="32" loading="lazy">@endif
-            <span>Guide by <a href="#authors">{{ $lead['name'] }}</a> · {{ $lead['role'] }}</span>
+            <span>Guide by <a href="{{ $lead['author_url'] ?? '#authors' }}">{{ $lead['name'] }}</a>@if($authors->count() > 1) with {{ $authors->slice(1)->pluck('name')->join(', ') }}@endif · {{ $lead['role'] }}</span>
           </p>
         @endif
       </div>
@@ -167,7 +167,7 @@
               <div class="nx-author__top">
                 <img src="{{ $a['image'] ?: asset('frount/assets/images/tutor1.jpg') }}" alt="{{ $a['name'] }}" width="64" height="64" loading="lazy">
                 <div>
-                  <h3 class="nx-card__title">{{ $a['name'] }}</h3>
+                  <h3 class="nx-card__title">@if(!empty($a['author_url']))<a href="{{ $a['author_url'] }}">{{ $a['name'] }}</a>@else{{ $a['name'] }}@endif</h3>
                   <span class="nx-card__meta">{{ $a['role'] }}</span>
                 </div>
               </div>
@@ -176,7 +176,11 @@
                 @if($a['experience'] !== '')<li><span>Teaching</span>{{ \App\Support\SubjectLinks::experience($a['experience']) }}</li>@endif
                 @if(!empty($a['user_id']))<li><span>Verified</span>ID-verified NXTutors tutor</li>@else<li><span>Team</span>Written and reviewed by NXTutors tutors</li>@endif
               </ul>
-              @if($a['profile_url'])<a class="nx-sec__action" href="{{ $a['profile_url'] }}">View profile and book a demo →</a>@endif
+              @if(!empty($a['bio']))<p class="nx-card__meta">{{ \Illuminate\Support\Str::limit($a['bio'], 170) }}</p>@endif
+              <div class="nx-cta-row">
+                @if(!empty($a['author_url']))<a class="nx-sec__action" href="{{ $a['author_url'] }}">All guides by {{ strtok($a['name'], ' ') }} →</a>@endif
+                @if(!empty($a['user_id']) && $a['profile_url'])<a class="nx-sec__action" href="{{ $a['profile_url'] }}">Profile and demo →</a>@endif
+              </div>
             </article>
           @endforeach
         </div>

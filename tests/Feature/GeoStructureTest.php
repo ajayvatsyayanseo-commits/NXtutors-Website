@@ -365,4 +365,34 @@ class GeoStructureTest extends TestCase
         $this->assertSame('Admin', DB::table('blog_managment')->where('slug', 'cbse-class-10-science-notes')->value('author'));
         $this->assertStringContainsString('Class 10 Science', (string) DB::table('blog_managment')->where('slug', 'cbse-class-10-science-notes')->value('bdesc'));
     }
+
+    public function test_author_pages_list_their_guides_and_names_are_fixed(): void
+    {
+        DB::table('register')->insert([
+            ['user_id' => '1997', 'name' => 'Ajay Vatsyayan', 'city' => 'Wazirabad', 'join_as' => 'teacher', 'status' => 't'],
+            ['user_id' => 'NXT-2026-W7PBUU', 'name' => 'abhinandan', 'city' => 'gurgaon', 'join_as' => 'teacher', 'status' => 't'],
+            ['user_id' => 'NXT-2026-3FULEA', 'name' => 'Aaditya kashyap', 'city' => 'Gurgaon', 'join_as' => 'teacher', 'status' => 't'],
+        ]);
+
+        $html = $this->withoutExceptionHandling()->get('/authors/ajay-vatsyayan')->assertOk()->getContent();
+        $this->assertSame(1, substr_count($html, '<h1'));
+        $this->assertStringContainsString('"@type":"ProfilePage"', $html);
+        $this->assertStringContainsString(url('/ib-maths-tutor'), $html);
+        $this->assertStringContainsString(url('/isc-maths-tutor'), $html);
+        $this->get('/authors')->assertOk()->assertSee('Abhinandan Tiwary');
+        $this->get('/ib-maths-tutor')->assertOk()->assertSee(url('/authors/ajay-vatsyayan'), false);
+
+        $m = require database_path('migrations/seo/2026_09_26_220000_fix_author_tutor_names.php');
+        $m->up();
+        $this->assertSame('Abhinandan Tiwary', DB::table('register')->where('user_id', 'NXT-2026-W7PBUU')->value('name'));
+        $this->assertSame('Aaditya Kashyap', DB::table('register')->where('user_id', 'NXT-2026-3FULEA')->value('name'));
+
+        // The old profile URL (name slug "abhinandan") now 301s to the new one.
+        $token = rtrim(strtr(base64_encode('NXT-2026-W7PBUU-nxt'), '+/', '-_'), '=');
+        $this->withExceptionHandling()->get('/tutor/gurgaon/' . $token . '/abhinandan')
+            ->assertStatus(301)->assertRedirect(url('/tutor/gurgaon/' . $token . '/abhinandan-tiwary'));
+
+        $m->down();
+        $this->assertSame('abhinandan', DB::table('register')->where('user_id', 'NXT-2026-W7PBUU')->value('name'));
+    }
 }

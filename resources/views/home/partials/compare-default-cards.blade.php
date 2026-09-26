@@ -27,7 +27,7 @@
     $waLink = "https://wa.me/{$waNumber}?text={$waText}";
 	$profileLink = route('tutor.newshow', [
     'city' => Str::slug((string) $t->city) ?: 'india',
-    'user_id' => $t->user_id,
+    'user_id' => rtrim(strtr(base64_encode($t->user_id . '-nxt'), '+/', '-_'), '='),
     'name' => Str::slug((string) $t->name) ?: 'tutor',
 ]);
   @endphp

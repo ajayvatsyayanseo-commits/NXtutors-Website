@@ -112,6 +112,16 @@ class SubjectPageController extends Controller
             ->filter(fn ($p, $k) => $k !== $key && ($k === $root || ($p['parent'] ?? null) === $root) && view()->exists('subjects.content.' . $p['view']))
             ->map(fn ($p, $k) => ['url' => url('/' . $k), 'label' => $p['h1']]);
 
+        // The same board's page elsewhere: IB Gurgaon <-> IB national, and
+        // ICSE <-> ISC, which parents treat as one ladder.
+        $boardOf = fn (?string $b) => $b === 'ISC' ? 'ICSE' : $b;
+        if (! empty($page['board'])) {
+            $family = $family->merge(collect($pages)
+                ->filter(fn ($p, $k) => $k !== $key && ($p['subject'] ?? null) === ($page['subject'] ?? null)
+                    && $boardOf($p['board'] ?? null) === $boardOf($page['board']) && view()->exists('subjects.content.' . $p['view']))
+                ->map(fn ($p, $k) => ['url' => url('/' . $k), 'label' => $p['h1']]));
+        }
+
         $otherSubjects = collect($pages)
             ->filter(fn ($p, $k) => empty($p['parent']) && ($p['subject'] ?? null) !== ($page['subject'] ?? null) && view()->exists('subjects.content.' . $p['view']))
             ->map(fn ($p, $k) => ['url' => url('/' . $k), 'label' => $p['h1']]);

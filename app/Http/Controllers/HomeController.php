@@ -220,6 +220,14 @@ public function sitemap()
         ];
     }
 
+    // Author pages (/authors, /authors/{slug}).
+    $urls[] = ['loc' => $baseUrl . '/authors', 'lastmod' => null, 'priority' => '0.5', 'changefreq' => 'monthly'];
+    foreach (config('nx_authors', []) as $author) {
+        if (! empty($author['slug'])) {
+            $urls[] = ['loc' => $baseUrl . '/authors/' . $author['slug'], 'lastmod' => null, 'priority' => '0.6', 'changefreq' => 'weekly'];
+        }
+    }
+
     // City area pages (/city/{city}/{area}). The city page only links the
     // first nine and loads the rest by AJAX, so without this list Google had
     // no way to find most of the 150 Gurugram society and sector pages.
@@ -1500,6 +1508,13 @@ $realUserId = str_replace('-nxt', '', $decoded);
     // page here until the record has a city.
     if (! $tutor->profileUrl()) {
         abort(404);
+    }
+
+    // One URL per tutor: a stale city or name slug (an old link, or a name
+    // corrected since) 301s to the canonical profile URL.
+    $canonicalPath = parse_url($tutor->profileUrl(), PHP_URL_PATH);
+    if ($canonicalPath && '/' . ltrim(request()->path(), '/') !== $canonicalPath) {
+        return redirect()->to($tutor->profileUrl(), 301);
     }
 
     // ✅ Use effective courses everywhere (fallback ready)

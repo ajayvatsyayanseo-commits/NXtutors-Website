@@ -3,7 +3,7 @@
   CBSE figures come from the CBSE Mathematics (041) curriculum for Classes XI-XII
   2026-27 (cbseacademic.nic.in, CurriculumMain27/SecPart2/Maths_SecP2_2026-27.pdf)
   and the Class XII 2026-27 sample question paper (web_material/SQP/ClassXII_2026_27).
-  ISC section marks follow the CISCE Mathematics (860) Class XII regulations
+  ISC unit marks follow the CISCE ISC Mathematics (860) syllabus for the 2027 exam (no Section B/C choice from 2027); earlier text followed the Class XII regulations
   (revised syllabus 2026). NXTutors facts are limited to published policy.
   FAQs render from faqs/maths-home-tutor--class-12.php.
 --}}
@@ -153,29 +153,34 @@
   <section class="nx-guide__sec">
   <h2 id="m12-isc">ISC Class 12 maths</h2>
   <p>
-    ISC Mathematics (860) in Class 12 has a three-hour theory paper of 80 marks and project work of 20 marks. The
-    theory has a compulsory Section A and a choice of either Section B or Section C. In CISCE's most recent
-    regulations the marks are distributed as follows:
+    ISC Mathematics (860) in Class 12 has a three-hour theory paper of 80 marks and project work of 20 marks. Until
+    the 2026 exam the paper had a compulsory Section A and a choice of Section B or Section C. From the 2027 exam,
+    CISCE's syllabus drops that choice: every student takes the same seven units, with theory marks as follows:
   </p>
   <div class="nx-table-wrap">
   <table class="nx-table">
     <thead>
-      <tr><th scope="col">Section</th><th scope="col">Units</th><th scope="col">Marks</th></tr>
+      <tr><th scope="col">Unit</th><th scope="col">Marks</th></tr>
     </thead>
     <tbody>
-      <tr><td>A (compulsory)</td><td>Relations and Functions 10; Algebra 10; Calculus 32; Probability 13</td><td>65</td></tr>
-      <tr><td>B (either B or C)</td><td>Vectors 5; Three-dimensional Geometry 6; Applications of Integrals 4</td><td>15</td></tr>
-      <tr><td>C (either B or C)</td><td>Application of Calculus 5; Linear Regression 6; Linear Programming 4</td><td>15</td></tr>
-      <tr><td>Project work</td><td>Assessed internally</td><td>20</td></tr>
+      <tr><td>Relations and Functions</td><td>10</td></tr>
+      <tr><td>Algebra</td><td>10</td></tr>
+      <tr><td>Calculus</td><td>35</td></tr>
+      <tr><td>Vector Algebra</td><td>5</td></tr>
+      <tr><td>Three-dimensional Geometry</td><td>6</td></tr>
+      <tr><td>Linear Programming</td><td>5</td></tr>
+      <tr><td>Probability</td><td>9</td></tr>
+      <tr><td><strong>Theory total</strong></td><td><strong>80</strong></td></tr>
+      <tr><td>Project work (two projects)</td><td>20</td></tr>
     </tbody>
   </table>
   </div>
   <p>
-    Calculus is again the centre of the paper. The choice between Sections B and C is usually made with the school:
-    Section B continues the vectors and 3D geometry that JEE and engineering courses rely on, while Section C covers
-    applied topics such as regression and linear programming. ISC examiners expect complete working and clear
-    diagrams. Check the CISCE regulations for your exam year before relying on these numbers. Gurugram families can
-    also see our <a href="{{ url('/icse-maths-tutor-gurgaon') }}">ICSE and ISC maths tutors in Gurgaon</a>.
+    Calculus is again the centre of the paper, and the unit list is now close to CBSE's. Linear regression and the
+    commerce applications of calculus have moved to ISC Applied Mathematics, a separate subject. ISC examiners expect
+    complete working and clear diagrams. Check the CISCE syllabus and specimen paper for your exam year before relying
+    on these numbers; our <a href="{{ url('/isc-maths-tutor') }}">ISC maths tutor guide</a> covers the paper in full,
+    and Gurugram families can also see our <a href="{{ url('/icse-maths-tutor-gurgaon') }}">ICSE and ISC maths tutors in Gurgaon</a>.
   </p>
   </section>
 

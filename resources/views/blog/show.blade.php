@@ -29,6 +29,8 @@
 
     $siteName = 'NXTutors';
     $authorName = !empty($blog->author) ? $blog->author : $siteName;
+    $authorCfg = \App\Support\SubjectLinks::authorByName($blog->author ?? null);
+    $authorUrl = !empty($authorCfg['slug']) ? url('/authors/' . $authorCfg['slug']) : null;
 
     $blogPosting = [
       "@context" => "https://schema.org",
@@ -41,8 +43,9 @@
         "@id" => $canonical
       ],
       "author" => [
-        "@type" => "Person",
-        "name" => $authorName
+        "@type" => ($authorCfg && empty($authorCfg['user_id'])) || !$authorCfg && $authorName === $siteName ? "Organization" : "Person",
+        "name" => $authorCfg['name'] ?? $authorName,
+        "url" => $authorUrl ?? url('/'),
       ],
       "publisher" => [
         "@type" => "Organization",
@@ -111,7 +114,7 @@
 
         <div class="genp-meta">
           @if(!empty($authorName))
-            <span class="genp-pill">{{ $authorName }}</span>
+            @if($authorUrl)<a class="genp-pill" href="{{ $authorUrl }}">{{ $authorCfg['name'] }}</a>@else<span class="genp-pill">{{ $authorName }}</span>@endif
           @endif
           @if(!empty($blog->date))
             <span class="genp-pill genp-pill--muted">{{ $blog->date }}</span>
@@ -137,7 +140,7 @@
               {{ $blog->title }}
             </h1>
             <div style="display:flex;gap:10px;flex-wrap:wrap;opacity:.9;">
-              <span class="chip chip--soft">{{ $authorName }}</span>
+              @if($authorUrl)<a class="chip chip--soft" href="{{ $authorUrl }}">{{ $authorCfg['name'] }}</a>@else<span class="chip chip--soft">{{ $authorName }}</span>@endif
               @if(!empty($blog->date))
                 <span class="chip chip--soft">{{ $blog->date }}</span>
               @endif
@@ -216,16 +219,20 @@
             <img src="{{ $postAuthor['image'] ?: asset('frount/assets/images/tutor1.jpg') }}" alt="{{ $postAuthor['name'] }}" width="64" height="64" loading="lazy">
             <div>
               <span class="nx-card__kicker">Written by</span>
-              <h2 class="nx-card__title">{{ $postAuthor['name'] }}</h2>
+              <h2 class="nx-card__title"><a href="{{ $postAuthor['author_url'] }}">{{ $postAuthor['name'] }}</a></h2>
               <span class="nx-card__meta">{{ $postAuthor['role'] }}</span>
             </div>
           </div>
           <ul class="nx-author__facts">
             @if($postAuthor['education'] !== '')<li><span>Qualification</span>{{ $postAuthor['education'] }}</li>@endif
             @if($postAuthor['experience'] !== '')<li><span>Teaching</span>{{ \App\Support\SubjectLinks::experience($postAuthor['experience']) }}</li>@endif
-            <li><span>Verified</span>ID-verified NXTutors tutor</li>
+            @if(!empty($postAuthor['user_id']))<li><span>Verified</span>ID-verified NXTutors tutor</li>@else<li><span>Team</span>Written and reviewed by NXTutors tutors</li>@endif
           </ul>
-          @if($postAuthor['profile_url'])<a class="nx-sec__action" href="{{ $postAuthor['profile_url'] }}">View profile and book a demo →</a>@endif
+          @if(!empty($postAuthor['bio']))<p class="nx-card__meta">{{ $postAuthor['bio'] }}</p>@endif
+          <div class="nx-cta-row">
+            <a class="nx-sec__action" href="{{ $postAuthor['author_url'] }}">All guides by {{ strtok($postAuthor['name'], ' ') }} →</a>
+            @if(!empty($postAuthor['user_id']) && $postAuthor['profile_url'])<a class="nx-sec__action" href="{{ $postAuthor['profile_url'] }}">Profile and demo →</a>@endif
+          </div>
         </article>
       </section>
     @endif

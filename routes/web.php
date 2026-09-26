@@ -159,6 +159,8 @@ foreach (array_keys(config('subject_pages', [])) as $subjectPageKey) {
         ->defaults('key', $subjectPageKey)
         ->name('subject.' . str_replace('/', '.', $subjectPageKey));
 }
+Route::get('/authors', [\App\Http\Controllers\AuthorController::class, 'index'])->name('authors.index');
+Route::get('/authors/{slug}', [\App\Http\Controllers\AuthorController::class, 'show'])->name('authors.show');
 Route::get('/city', [HomeController::class, 'cityIndex'])->name('city.index');
 // "Gurgaon" is still what most parents type, and /city/gurgaon was a 404.
 Route::permanentRedirect('/city/gurgaon', '/city/gurugram');

@@ -48,13 +48,13 @@
   </div>
 </div>
     <footer class="footer-modern">
-  <div class="footer-content">
+  <div class="footer-content footer-content--5">
     <!-- Col 1 -->
     <div class="footer-col footer-col--brand">
       <h3 class="footer-logo">NXTutors</h3>
       <p class="footer-desc">
-        Premium home tutoring in Gurugram.
-        Trusted by 4,500+ parents for CBSE, ICSE &amp; IB.
+        Verified home and online tutors across India, from Gurugram and Delhi NCR to every major city.
+        Trusted by 4,500+ parents for CBSE, ICSE, ISC, IB, IGCSE and state boards.
       </p>
 
       {{-- One icon set, one weight, one colour. Brand glyphs drawn inline so
@@ -91,11 +91,29 @@
       <ul>
         <li><a href="{{ url('/')}}/blog">Blog &amp; Advice</a></li>
         <li><a href="{{ url('/')}}/pricing-guide">Pricing Guide</a></li>
+        <li><a href="{{ url('/')}}/authors">Our Authors</a></li>
         <li><a href="{{ url('/')}}/faqs">FAQs</a></li>
         <li><a href="{{ url('/')}}/terms-conditions">Terms &amp; Conditions</a></li>
         <li><a href="{{ url('/')}}/privacy-policy">Privacy Policy</a></li>
       </ul>
     </div>
+
+    <!-- Subjects: the national subject and board pages, linked site-wide. -->
+    @php
+      $footerSubjects = collect(\App\Support\SubjectLinks::live())
+        ->filter(fn ($p, $k) => empty($p['city']) && (empty($p['parent']) || (! empty($p['board']) && empty($p['class']))))
+        ->map(fn ($p, $k) => ['url' => url('/' . $k), 'label' => $p['label'] ?? $p['h1']]);
+    @endphp
+    @if($footerSubjects->count())
+      <div class="footer-col footer-col--subjects">
+        <h4>Subjects</h4>
+        <ul>
+          @foreach($footerSubjects as $fs)
+            <li><a href="{{ $fs['url'] }}">{{ $fs['label'] }}</a></li>
+          @endforeach
+        </ul>
+      </div>
+    @endif
 
     <!-- Col 4 -->
     <div class="footer-col">

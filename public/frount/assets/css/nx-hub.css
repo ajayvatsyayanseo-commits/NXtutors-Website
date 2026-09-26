@@ -316,3 +316,13 @@ a.nx-card:hover{transform:translateY(-2px);border-color:var(--nxt-line-strong)}
 @media (max-width:719px){
   .nx-subject .suggested-grid > *:nth-child(n+5){display:none}
 }
+
+/* Footer with a Subjects column (include/footer): five columns on desktop;
+   on tablet and phone the subjects list spans the row in two columns. */
+body.page .footer-content.footer-content--5{grid-template-columns:1.4fr 1fr 1fr 1fr 1.4fr}
+@media (max-width:1024px){
+  body.page .footer-content.footer-content--5{grid-template-columns:repeat(2,minmax(0,1fr))}
+  body.page .footer-content--5 .footer-col--subjects{grid-column:1 / -1}
+  body.page .footer-content--5 .footer-col--subjects ul{columns:2;column-gap:var(--nxt-s4)}
+  body.page .footer-content--5 .footer-col--subjects li{break-inside:avoid}
+}

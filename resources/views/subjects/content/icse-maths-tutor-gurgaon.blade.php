@@ -4,8 +4,9 @@
   (80 marks; Section A compulsory, 40 marks; Section B any four questions) is
   taken from the CISCE ICSE 2026 Mathematics specimen paper; the 80 + 20 split
   and the Class 10 units from the CISCE ICSE Mathematics syllabus. ISC is kept
-  brief and general (80-mark theory paper with a compulsory Section A and a
-  choice of Section B or C, plus 20 marks of project work). Schools are named
+  brief: from the 2027 exam, ISC Mathematics (860) has seven compulsory units
+  and no Section B/C choice (CISCE ISC Mathematics syllabus 2027 and 2028),
+  with an 80-mark theory paper plus 20 marks of project work. Schools are named
   only as schools our students attend, never as partners; each was checked
   earlier against the school's own website (see maths-home-tutor-gurgaon).
   FAQs render from faqs/icse-maths-tutor-gurgaon.php.
@@ -271,10 +272,11 @@
   <h2 id="icm-isc">ISC maths in Classes 11 and 12, briefly</h2>
   <p>
     ISC maths is a big step up from ICSE Class 10. The Class 12 examination has an 80-mark theory paper and 20 marks for
-    project work. The theory paper has a compulsory Section A, covering areas such as relations and functions, matrices
-    and determinants, calculus and probability, and then a choice of Section B (vectors, three-dimensional geometry and
-    applications of integrals) or Section C (applications of maths in commerce and economics, such as linear
-    regression). Schools decide which of B or C they teach, so the tutor must know the student's exact combination.
+    project work. Until 2026 the paper had a compulsory Section A and a choice of Section B or Section C. From the 2027
+    exam, CISCE's ISC Mathematics syllabus has no such choice: every student covers the same seven units, from relations
+    and functions, algebra and calculus to vectors, three-dimensional geometry, linear programming and probability.
+    Commerce-minded students who want the applied topics now take ISC Applied Mathematics, a separate subject. Our
+    <a href="{{ url('/isc-maths-tutor') }}">ISC maths tutor guide</a> sets out the current paper in full.
   </p>
   <p>
     Class 11 carries much of the foundation for Class 12 (functions, limits and the start of calculus), and students

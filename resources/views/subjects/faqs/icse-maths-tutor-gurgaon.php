@@ -15,7 +15,7 @@ return [
     ],
     [
         'Do you have ISC maths tutors for Classes 11 and 12?',
-        'Yes. ISC maths has a compulsory section and a choice of Section B or Section C in Class 12, plus project work, so we match tutors who know the exact combination your child\'s school teaches. Many ISC science students also prepare for JEE, and we can find tutors who plan both together.',
+        'Yes. From the 2027 exam, ISC Class 12 maths is one 80-mark theory paper covering seven compulsory units (there is no longer a Section B or C choice), plus 20 marks of project work, so we match tutors who teach the current CISCE syllabus. Many ISC science students also prepare for JEE, and we can find tutors who plan both together.',
     ],
     [
         'Is online ICSE maths tuition as good as home tuition?',

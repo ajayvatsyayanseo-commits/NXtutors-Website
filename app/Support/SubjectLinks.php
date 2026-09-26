@@ -78,6 +78,8 @@ class SubjectLinks
      */
     public static function withProfile(array $a): array
     {
+        $a['author_url'] = ! empty($a['slug']) ? url('/authors/' . $a['slug']) : null;
+
         // The team has no tutor profile: logo, no personal facts, link to all tutors.
         if (empty($a['user_id'])) {
             return $a + ['image' => asset('uploads/logo/newlogo.png'), 'education' => '', 'experience' => '', 'profile_url' => url('/tutors')];
@@ -103,6 +105,37 @@ class SubjectLinks
         }
 
         return $raw;
+    }
+
+    /** Author config (with key) for an author page slug, or null. */
+    public static function authorBySlug(string $slug): ?array
+    {
+        foreach (config('nx_authors', []) as $key => $a) {
+            if (($a['slug'] ?? null) === $slug) {
+                return $a + ['key' => $key];
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * Live subject pages an author signs, lead-author pages first:
+     * [['url','label','title','lead'], …]
+     */
+    public static function pagesBy(string $authorKey): array
+    {
+        return collect(self::live())
+            ->filter(fn ($p) => in_array($authorKey, $p['authors'] ?? [], true))
+            ->map(fn ($p, $k) => [
+                'url' => url('/' . $k),
+                'label' => $p['h1'],
+                'lede' => $p['lede'] ?? '',
+                'kicker' => trim(($p['board'] ?? '') . ' ' . ($p['subject'] ?? '') . (! empty($p['city']) ? ' · ' . $p['city'] : '')),
+                'lead' => ($p['authors'][0] ?? null) === $authorKey,
+            ])
+            ->sortByDesc('lead')
+            ->values()->all();
     }
 
     /** Author config for a blog "author" string, or null. */
