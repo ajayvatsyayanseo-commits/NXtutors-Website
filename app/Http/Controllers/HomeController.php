@@ -131,12 +131,30 @@ class HomeController extends Controller
     }
 }
 
+/**
+ * Sitemap index (/sitemap.xml) and one sitemap per section
+ * (/sitemap-{section}.xml), so Search Console reports indexing per section.
+ */
+public const SITEMAP_SECTIONS = ['pages', 'subjects', 'cities', 'areas', 'blog', 'local-pages', 'courses', 'tutors'];
+
 public function sitemap()
 {
-    $urls = [];
-
     $baseUrl = 'https://www.nxtutors.com';
 
+    return response()
+        ->view('sitemap-index', ['sitemaps' => array_map(fn ($s) => $baseUrl . '/sitemap-' . $s . '.xml', self::SITEMAP_SECTIONS)])
+        ->header('Content-Type', 'application/xml');
+}
+
+public function sitemapSection(string $section)
+{
+    abort_unless(in_array($section, self::SITEMAP_SECTIONS, true), 404);
+
+    $urls = [];
+    $baseUrl = 'https://www.nxtutors.com';
+
+    switch ($section) {
+    case 'pages':
     // Static URLs
     $staticUrls = [
     '/',
@@ -162,42 +180,30 @@ public function sitemap()
         ];
     }
 
-    // Generated Pages
-    //
-    // A sitemap is a list of pages asking to be indexed, so a page carrying
-    // noindex must never appear in one: Search Console counts every one of
-    // them as an "Excluded by 'noindex' tag" error against the sitemap.
-    // index_flag is the same payload key pages/show.blade.php reads when it
-    // decides whether to emit the noindex meta tag.
-    GeneratedPage::where('status', 'published')->chunk(500, function ($pages) use (&$urls, $baseUrl) {
-        foreach ($pages as $page) {
-            $indexFlag = (string) data_get($page->payload, 'index_flag', 'Index');
-
-            if ($indexFlag !== 'Index') {
-                continue;
-            }
-
-            $urls[] = [
-                'loc' => $baseUrl . '/p/' . $page->slug,
-                'lastmod' => optional($page->updated_at)->toDateString() ?? now()->toDateString(),
-                'priority' => '0.8',
-                'changefreq' => 'weekly',
-            ];
+    // Author pages (/authors, /authors/{slug}).
+    $urls[] = ['loc' => $baseUrl . '/authors', 'lastmod' => null, 'priority' => '0.5', 'changefreq' => 'monthly'];
+    foreach (config('nx_authors', []) as $author) {
+        if (! empty($author['slug'])) {
+            $urls[] = ['loc' => $baseUrl . '/authors/' . $author['slug'], 'lastmod' => null, 'priority' => '0.6', 'changefreq' => 'weekly'];
         }
-    });
+    }
 
-    // Blogs
-    Blog::where('status', 't')->chunk(500, function ($blogs) use (&$urls, $baseUrl) {
-        foreach ($blogs as $blog) {
-            $urls[] = [
-                'loc' => $baseUrl . '/blog/' . trim($blog->slug),
-                'lastmod' => optional($blog->updated_at)->toDateString() ?? now()->toDateString(),
-                'priority' => '0.7',
-                'changefreq' => 'weekly',
-            ];
-        }
-    });
+        break;
 
+    case 'subjects':
+    // Subject pages (/maths-home-tutor, …) — only those whose guide exists.
+    foreach (array_keys(\App\Support\SubjectLinks::live()) as $subjectKey) {
+        $urls[] = [
+            'loc' => $baseUrl . '/' . $subjectKey,
+            'lastmod' => null,
+            'priority' => str_contains($subjectKey, '/') ? '0.8' : '0.9',
+            'changefreq' => 'weekly',
+        ];
+    }
+
+        break;
+
+    case 'cities':
     // Cities
     City::where('status', 't')->chunk(500, function ($cities) use (&$urls, $baseUrl) {
         foreach ($cities as $city) {
@@ -210,24 +216,9 @@ public function sitemap()
         }
     });
 
-    // Subject pages (/maths-home-tutor, …) — only those whose guide exists.
-    foreach (array_keys(\App\Support\SubjectLinks::live()) as $subjectKey) {
-        $urls[] = [
-            'loc' => $baseUrl . '/' . $subjectKey,
-            'lastmod' => null,
-            'priority' => str_contains($subjectKey, '/') ? '0.8' : '0.9',
-            'changefreq' => 'weekly',
-        ];
-    }
+        break;
 
-    // Author pages (/authors, /authors/{slug}).
-    $urls[] = ['loc' => $baseUrl . '/authors', 'lastmod' => null, 'priority' => '0.5', 'changefreq' => 'monthly'];
-    foreach (config('nx_authors', []) as $author) {
-        if (! empty($author['slug'])) {
-            $urls[] = ['loc' => $baseUrl . '/authors/' . $author['slug'], 'lastmod' => null, 'priority' => '0.6', 'changefreq' => 'weekly'];
-        }
-    }
-
+    case 'areas':
     // City area pages (/city/{city}/{area}). The city page only links the
     // first nine and loads the rest by AJAX, so without this list Google had
     // no way to find most of the 150 Gurugram society and sector pages.
@@ -253,6 +244,51 @@ public function sitemap()
             }
         });
 
+        break;
+
+    case 'blog':
+    // Blogs
+    Blog::where('status', 't')->chunk(500, function ($blogs) use (&$urls, $baseUrl) {
+        foreach ($blogs as $blog) {
+            $urls[] = [
+                'loc' => $baseUrl . '/blog/' . trim($blog->slug),
+                'lastmod' => optional($blog->updated_at)->toDateString() ?? now()->toDateString(),
+                'priority' => '0.7',
+                'changefreq' => 'weekly',
+            ];
+        }
+    });
+
+        break;
+
+    case 'local-pages':
+    // Generated Pages
+    //
+    // A sitemap is a list of pages asking to be indexed, so a page carrying
+    // noindex must never appear in one: Search Console counts every one of
+    // them as an "Excluded by 'noindex' tag" error against the sitemap.
+    // index_flag is the same payload key pages/show.blade.php reads when it
+    // decides whether to emit the noindex meta tag.
+    GeneratedPage::where('status', 'published')->chunk(500, function ($pages) use (&$urls, $baseUrl) {
+        foreach ($pages as $page) {
+            $indexFlag = (string) data_get($page->payload, 'index_flag', 'Index');
+
+            if ($indexFlag !== 'Index') {
+                continue;
+            }
+
+            $urls[] = [
+                'loc' => $baseUrl . '/p/' . $page->slug,
+                'lastmod' => optional($page->updated_at)->toDateString() ?? now()->toDateString(),
+                'priority' => '0.8',
+                'changefreq' => 'weekly',
+            ];
+        }
+    });
+
+        break;
+
+    case 'courses':
     Category::where('status', 't')
     ->whereNotNull('slug')
     ->chunk(500, function ($categories) use (&$urls, $baseUrl) {
@@ -280,6 +316,9 @@ Product::where('status', 't')
         }
     });
 
+        break;
+
+    case 'tutors':
     // Tutors
  Register::where('join_as', 'teacher')
     ->publiclyVisible()
@@ -307,6 +346,9 @@ Product::where('status', 't')
             ];
         }
     });
+
+        break;
+    }
 
     return response()
         ->view('sitemap', compact('urls'))

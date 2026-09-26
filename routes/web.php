@@ -50,6 +50,9 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/sitemap.xml', [HomeController::class, 'sitemap'])
     ->name('sitemap');
+Route::get('/sitemap-{section}.xml', [HomeController::class, 'sitemapSection'])
+    ->where('section', implode('|', HomeController::SITEMAP_SECTIONS))
+    ->name('sitemap.section');
 
 // NXT AI now runs in-app (Laravel + OpenAI). This route keeps the original
 // name/shape ({message} -> {success, reply, ...}) so existing callers work,

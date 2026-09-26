@@ -325,7 +325,10 @@ class GeoStructureTest extends TestCase
         // linked from the rest of the site
         $this->get('/city/gurugram')->assertSee(url('/maths-home-tutor-gurgaon'), false);
         $this->assertStringContainsString(url('/maths-home-tutor'), view('home.partials.top-cities')->render());
-        $this->get('/sitemap.xml')->assertSee('/maths-home-tutor/class-10', false);
+        $this->get('/sitemap.xml')->assertOk()->assertSee('<sitemapindex', false)->assertSee('/sitemap-subjects.xml', false);
+        $this->get('/sitemap-subjects.xml')->assertOk()->assertSee('/maths-home-tutor/class-10', false)->assertSee('/ib-maths-tutor', false);
+        $this->get('/sitemap-pages.xml')->assertOk()->assertSee('/authors/ajay-vatsyayan', false);
+        $this->withExceptionHandling()->get('/sitemap-nope.xml')->assertNotFound();
     }
 
     public function test_class12_guides_migration_touches_only_its_three_posts(): void
