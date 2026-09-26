@@ -4,6 +4,10 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\DB;
 
 /**
+ * Second batch of tutor-written guides (the Class 12 maths, physics and
+ * chemistry rewrites). Same logic as 2026_09_26_120000, limited to ONLY,
+ * because that migration has already run on production.
+ *
  * Publishes the tutor-written guides in database/seo-content/blog.
  *
  * Each post is a pair: {slug}.html (the body) and {slug}.json (title,
@@ -15,8 +19,9 @@ use Illuminate\Support\Facades\DB;
 return new class extends Migration
 {
     private const ONLY = [
-        'cbse-class-10-maths-preparation',
-        'cbse-class-10-science-notes',
+        'cbse-class-12-maths-calculusalgebra',
+        'cbse-class-12-physics-strategies',
+        'cbse-class-12-chemistry-organicinorganic',
     ];
 
     private function dir(): string

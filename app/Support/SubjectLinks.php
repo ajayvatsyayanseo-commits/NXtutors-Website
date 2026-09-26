@@ -78,6 +78,11 @@ class SubjectLinks
      */
     public static function withProfile(array $a): array
     {
+        // The team has no tutor profile: logo, no personal facts, link to all tutors.
+        if (empty($a['user_id'])) {
+            return $a + ['image' => asset('uploads/logo/newlogo.png'), 'education' => '', 'experience' => '', 'profile_url' => url('/tutors')];
+        }
+
         $row = \App\Models\Register::query()->where('user_id', $a['user_id'] ?? '')->publiclyVisible()->first();
 
         $avatar = (string) ($row->avatar ?? '');

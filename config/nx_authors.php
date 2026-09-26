@@ -29,6 +29,14 @@ return [
         'role' => 'Maths tutor · Class 10 CBSE and ICSE specialist',
         'subjects' => ['Mathematics'],
     ],
+    // Pages without a named tutor are credited to the team.
+    'nxtutors' => [
+        'user_id' => null,
+        'name' => 'NXTutors Academic Team',
+        'names' => ['nxtutors', 'nxtutors academic team', 'nxtutors team'],
+        'role' => 'Subject tutors and editors at NXTutors, Gurugram',
+        'subjects' => ['Mathematics', 'Science', 'Physics', 'Chemistry'],
+    ],
     'aaditya' => [
         'user_id' => 'NXT-2026-3FULEA',
         'name' => 'Aaditya Kashyap',

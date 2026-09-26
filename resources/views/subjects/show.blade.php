@@ -6,11 +6,12 @@
 
   @php
     $lead = $authors->first();
-    $crumbs = [['Home', url('/')]];
-    if (!empty($page['parent']) && isset($pages[$page['parent']])) {
-      $crumbs[] = [$pages[$page['parent']]['label'] ?? $pages[$page['parent']]['h1'], url('/' . $page['parent'])];
+    // Home › pillar › city page › this page, following the parent chain.
+    $chain = [];
+    for ($k = $page['parent'] ?? null, $guard = 0; $k && isset($pages[$k]) && $guard < 4; $k = $pages[$k]['parent'] ?? null, $guard++) {
+      array_unshift($chain, [$pages[$k]['label'] ?? $pages[$k]['h1'], url('/' . $k)]);
     }
-    $crumbs[] = [$page['label'] ?? $page['h1'], $page['url']];
+    $crumbs = array_merge([['Home', url('/')]], $chain, [[$page['label'] ?? $page['h1'], $page['url']]]);
 
     $ld = [
       '@context' => 'https://schema.org',
@@ -173,7 +174,7 @@
               <ul class="nx-author__facts">
                 @if($a['education'] !== '')<li><span>Qualification</span>{{ $a['education'] }}</li>@endif
                 @if($a['experience'] !== '')<li><span>Teaching</span>{{ \App\Support\SubjectLinks::experience($a['experience']) }}</li>@endif
-                <li><span>Verified</span>ID-verified NXTutors tutor</li>
+                @if(!empty($a['user_id']))<li><span>Verified</span>ID-verified NXTutors tutor</li>@else<li><span>Team</span>Written and reviewed by NXTutors tutors</li>@endif
               </ul>
               @if($a['profile_url'])<a class="nx-sec__action" href="{{ $a['profile_url'] }}">View profile and book a demo →</a>@endif
             </article>

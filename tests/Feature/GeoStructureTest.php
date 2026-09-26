@@ -328,6 +328,21 @@ class GeoStructureTest extends TestCase
         $this->get('/sitemap.xml')->assertSee('/maths-home-tutor/class-10', false);
     }
 
+    public function test_class12_guides_migration_touches_only_its_three_posts(): void
+    {
+        DB::table('blog_managment')->insert(['title' => 'Old physics', 'slug' => 'cbse-class-12-physics-strategies', 'bdesc' => '<p>old</p>', 'author' => 'Admin']);
+        $m = require database_path('migrations/seo/2026_09_26_180000_publish_seo_blog_posts_class12.php');
+
+        $m->up();
+        $this->assertSame('NXTutors Academic Team', DB::table('blog_managment')->where('slug', 'cbse-class-12-physics-strategies')->value('author'));
+        $this->assertSame('Ajay Vatsyayan', DB::table('blog_managment')->where('slug', 'cbse-class-12-maths-calculusalgebra')->value('author'));
+        $this->assertGreaterThan(4000, str_word_count(strip_tags((string) DB::table('blog_managment')->where('slug', 'cbse-class-12-chemistry-organicinorganic')->value('bdesc'))));
+        $this->assertNotSame('Abhinandan Tiwary', DB::table('blog_managment')->where('slug', 'cbse-class-10-maths-preparation')->value('author'), 'the Class 10 posts are left alone');
+
+        $m->down();
+        $this->assertSame('Admin', DB::table('blog_managment')->where('slug', 'cbse-class-12-physics-strategies')->value('author'));
+    }
+
     public function test_blog_migration_publishes_guides_and_rolls_back(): void
     {
         DB::table('blog_managment')->where('slug', 'like', 'cbse-class-10-%')->delete();
