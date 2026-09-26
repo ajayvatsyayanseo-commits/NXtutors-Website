@@ -37,6 +37,7 @@
       $aiType === 'blog' => 'Want a tutor to help with this?',
       $aiWhat !== '' && $aiPlace !== '' => 'Looking for a ' . $aiWhat . ' home tutor in ' . $aiPlace . '?',
       $aiPlace !== '' => 'Looking for a home tutor in ' . $aiPlace . '?',
+      $aiWhat !== '' => 'Looking for a ' . $aiWhat . (!empty($aiPage['class']) ? ' tutor for ' . $aiPage['class'] : ' home tutor') . '?',
       $aiType !== 'home' => 'Looking for a home or online tutor?',
       default => null,
   };

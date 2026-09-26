@@ -151,6 +151,14 @@ Route::get('/blog/load', [HomeController::class, 'blogLoad'])->name('blog.load')
 Route::get('/blog/{slug}', [HomeController::class, 'showsingleblog'])->name('blog.show');
 
 Route::get('/tutors', [HomeController::class, 'tutorsIndex'])->name('tutors.index');
+// Subject pages (/maths-home-tutor, /maths-home-tutor/class-10, …), one
+// route per entry in config/subject_pages.php so no catch-all can swallow
+// other URLs. See SubjectPageController.
+foreach (array_keys(config('subject_pages', [])) as $subjectPageKey) {
+    Route::get('/' . $subjectPageKey, [\App\Http\Controllers\SubjectPageController::class, 'show'])
+        ->defaults('key', $subjectPageKey)
+        ->name('subject.' . str_replace('/', '.', $subjectPageKey));
+}
 Route::get('/city', [HomeController::class, 'cityIndex'])->name('city.index');
 // "Gurgaon" is still what most parents type, and /city/gurgaon was a 404.
 Route::permanentRedirect('/city/gurgaon', '/city/gurugram');

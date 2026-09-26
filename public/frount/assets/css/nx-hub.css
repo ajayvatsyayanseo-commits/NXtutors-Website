@@ -263,3 +263,56 @@ a.nx-card:hover{transform:translateY(-2px);border-color:var(--nxt-line-strong)}
 /* a checklist inside a narrow card is one column, not a grid that overflows it */
 .nx-subcard .nx-checklist,.nx-guide__card .nx-checklist{grid-template-columns:minmax(0,1fr);margin:8px 0 0}
 .nx-subcard .nx-checklist li{padding:8px 10px}
+
+/* ==========================================================================
+   Subject pages (resources/views/subjects/show.blade.php)
+   Colour roles: navy surfaces = calm and trust; amber accent = the one
+   action per screen (free demo); green = the verified promise.
+   ========================================================================== */
+.nx-subject{color:var(--nxt-text)}
+.nx-shero{display:grid;gap:var(--nxt-s5);grid-template-columns:minmax(0,1fr);padding:var(--nxt-s6);border-radius:var(--nxt-r-lg);
+  background:radial-gradient(120% 90% at 0% 0%,color-mix(in srgb,var(--nxt-accent) 10%,transparent),transparent 55%),linear-gradient(180deg,var(--nxt-surface-2),var(--nxt-surface));
+  border:1px solid var(--nxt-line)}
+@media (min-width:960px){.nx-shero{grid-template-columns:minmax(0,1fr) 300px;align-items:center;padding:var(--nxt-s7)}}
+.nx-shero__title{font-family:var(--nxt-font-display);font-size:var(--nxt-t-h1);line-height:var(--nxt-lh-tight);font-weight:800;margin:8px 0 var(--nxt-s3);letter-spacing:-.015em}
+.nx-shero__lede{color:var(--nxt-text-dim);font-size:1.0625rem;line-height:var(--nxt-lh-body);max-width:60ch;margin:0}
+.nx-trust{list-style:none;margin:var(--nxt-s4) 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px 16px}
+.nx-trust li{display:flex;align-items:center;gap:8px;font-size:var(--nxt-t-sm);color:var(--nxt-text)}
+.nx-trust li::before{content:"✓";flex:0 0 20px;height:20px;border-radius:50%;display:grid;place-items:center;background:var(--nxt-verify-soft);color:var(--nxt-verify);font-weight:800;font-size:12px}
+.nx-cta-row{display:flex;flex-wrap:wrap;gap:var(--nxt-s3);margin-top:var(--nxt-s5)}
+.nx-cta{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 22px;border-radius:var(--nxt-r-pill);font-weight:800;font-size:var(--nxt-t-sm);text-decoration:none;transition:transform var(--nxt-fast),background var(--nxt-fast)}
+.nx-cta--primary{background:var(--nxt-accent);color:var(--nxt-on-accent);box-shadow:var(--nxt-e2)}
+.nx-cta--primary:hover{transform:translateY(-1px)}
+.nx-cta--ghost{border:1px solid var(--nxt-line-strong);color:var(--nxt-text)}
+.nx-cta--ghost:hover{background:var(--nxt-surface-2)}
+.nx-byline{display:flex;align-items:center;gap:10px;margin:var(--nxt-s5) 0 0;font-size:var(--nxt-t-xs);color:var(--nxt-text-dim)}
+.nx-byline img{width:32px;height:32px;border-radius:50%;object-fit:cover;border:1px solid var(--nxt-line-strong)}
+.nx-byline a{color:var(--nxt-text);font-weight:700}
+.nx-stats--stack{flex-direction:column;margin:0}
+.nx-stats--stack li{min-width:0}
+@media (max-width:959px){.nx-stats--stack{flex-direction:row;flex-wrap:wrap}.nx-stats--stack li{flex:1 1 140px}}
+
+.nx-author__top{display:flex;gap:var(--nxt-s3);align-items:center}
+.nx-author__top img{width:64px;height:64px;border-radius:50%;object-fit:cover;border:2px solid var(--nxt-accent-line)}
+.nx-author__facts{list-style:none;margin:var(--nxt-s3) 0;padding:0}
+.nx-card .nx-author__facts li{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-top:1px solid var(--nxt-line);font-size:var(--nxt-t-sm)}
+.nx-author__facts li span{color:var(--nxt-text-faint);font-size:var(--nxt-t-xs);text-transform:uppercase;letter-spacing:.06em}
+
+.nx-cta-band{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--nxt-s5);padding:var(--nxt-s6);border-radius:var(--nxt-r-lg);
+  background:linear-gradient(135deg,color-mix(in srgb,var(--nxt-accent) 14%,transparent),var(--nxt-surface));border:1px solid var(--nxt-accent-line)}
+.nx-cta-band .nx-cta-row{margin-top:0}
+
+/* tables inside guides */
+.nx-table-wrap{overflow-x:auto;margin:var(--nxt-s4) 0;border-radius:var(--nxt-r-md);border:1px solid var(--nxt-line)}
+.nx-table{width:100%;border-collapse:collapse;font-size:var(--nxt-t-sm);min-width:420px}
+.nx-table th{text-align:left;background:var(--nxt-surface-2);color:var(--nxt-text);font-weight:800;padding:10px 14px;font-size:var(--nxt-t-xs);text-transform:uppercase;letter-spacing:.05em}
+.nx-table td{padding:10px 14px;border-top:1px solid var(--nxt-line);color:var(--nxt-text-dim)}
+.nx-table tr:hover td{background:var(--nxt-surface)}
+.nx-article table{width:100%;border-collapse:collapse;font-size:var(--nxt-t-sm);margin:var(--nxt-s4) 0;display:block;overflow-x:auto}
+.nx-article th{text-align:left;background:var(--nxt-surface-2);color:var(--nxt-text);padding:10px 14px}
+.nx-article td{padding:10px 14px;border-top:1px solid var(--nxt-line)}
+
+/* subject pages on phones: four tutor cards, then the guide */
+@media (max-width:719px){
+  .nx-subject .suggested-grid > *:nth-child(n+5){display:none}
+}

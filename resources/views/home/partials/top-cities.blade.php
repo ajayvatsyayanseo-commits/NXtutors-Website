@@ -65,6 +65,14 @@
     @endforeach
   </ul>
 
+  @php $tcSubjects = \App\Support\SubjectLinks::pillars(); @endphp
+  @if(count($tcSubjects))
+    <h3 class="nx-card__kicker" style="margin:var(--nxt-s5) 0 var(--nxt-s3)">Popular subjects</h3>
+    <ul class="nx-chips nx-chips--rail">
+      @foreach($tcSubjects as $sp)<li><a class="nx-chip" href="{{ $sp['url'] }}">{{ $sp['label'] }}</a></li>@endforeach
+    </ul>
+  @endif
+
   @if($tcOthers->count())
     <h3 class="nx-card__kicker" style="margin:var(--nxt-s5) 0 var(--nxt-s3)">Also in</h3>
     <ul class="nx-chips nx-chips--rail">

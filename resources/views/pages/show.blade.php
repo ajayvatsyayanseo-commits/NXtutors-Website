@@ -893,6 +893,8 @@ document.addEventListener('DOMContentLoaded', function () {
               @if($gpCity)
                 <ul class="nx-chips nx-chips--rail" style="margin-top:var(--nxt-s4)">
                   @if($gpArea)<li><a class="nx-chip" href="{{ url('/city/'.$gpCity->slug.'/'.$gpArea->slug) }}">All tutors in {{ $gpArea->name }}</a></li>@endif
+                  @php $gpSubjectPage = \App\Support\SubjectLinks::forSubject($page->slug.' '.$page->title, $gpCity->slug); @endphp
+                  @if($gpSubjectPage)<li><a class="nx-chip" href="{{ $gpSubjectPage['url'] }}">{{ $gpSubjectPage['label'] }}</a></li>@endif
                   <li><a class="nx-chip" href="{{ url('/city/'.$gpCity->slug) }}">Home tutors across {{ $gpCity->city_name }}</a></li>
                   <li><a class="nx-chip" href="{{ url('/city') }}">All cities in India</a></li>
                 </ul>

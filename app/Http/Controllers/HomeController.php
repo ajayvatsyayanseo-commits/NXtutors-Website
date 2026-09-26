@@ -210,6 +210,16 @@ public function sitemap()
         }
     });
 
+    // Subject pages (/maths-home-tutor, …) — only those whose guide exists.
+    foreach (array_keys(\App\Support\SubjectLinks::live()) as $subjectKey) {
+        $urls[] = [
+            'loc' => $baseUrl . '/' . $subjectKey,
+            'lastmod' => null,
+            'priority' => str_contains($subjectKey, '/') ? '0.8' : '0.9',
+            'changefreq' => 'weekly',
+        ];
+    }
+
     // City area pages (/city/{city}/{area}). The city page only links the
     // first nine and loads the rest by AJAX, so without this list Google had
     // no way to find most of the 150 Gurugram society and sector pages.

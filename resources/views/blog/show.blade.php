@@ -141,7 +141,7 @@
               @if(!empty($blog->date))
                 <span class="chip chip--soft">{{ $blog->date }}</span>
               @endif
-              <span class="chip chip--soft">5–7 min read</span>
+              <span class="chip chip--soft">{{ max(2, (int) ceil(str_word_count(strip_tags((string) $blog->bdesc)) / 200)) }} min read</span>
             </div>
           </div>
         </div>
@@ -205,6 +205,30 @@
         </div>
       </article>
     </section>
+
+    {{-- Author box when the post is by one of our named tutors. --}}
+    @php $postAuthor = \App\Support\SubjectLinks::authorByName($blog->author ?? null); @endphp
+    @if($postAuthor)
+      @php $postAuthor = \App\Support\SubjectLinks::withProfile($postAuthor); @endphp
+      <section class="nxsec nx-sec" aria-label="About the author">
+        <article class="nx-card nx-author" style="max-width:720px">
+          <div class="nx-author__top">
+            <img src="{{ $postAuthor['image'] ?: asset('frount/assets/images/tutor1.jpg') }}" alt="{{ $postAuthor['name'] }}" width="64" height="64" loading="lazy">
+            <div>
+              <span class="nx-card__kicker">Written by</span>
+              <h2 class="nx-card__title">{{ $postAuthor['name'] }}</h2>
+              <span class="nx-card__meta">{{ $postAuthor['role'] }}</span>
+            </div>
+          </div>
+          <ul class="nx-author__facts">
+            @if($postAuthor['education'] !== '')<li><span>Qualification</span>{{ $postAuthor['education'] }}</li>@endif
+            @if($postAuthor['experience'] !== '')<li><span>Teaching</span>{{ \App\Support\SubjectLinks::experience($postAuthor['experience']) }}</li>@endif
+            <li><span>Verified</span>ID-verified NXTutors tutor</li>
+          </ul>
+          @if($postAuthor['profile_url'])<a class="nx-sec__action" href="{{ $postAuthor['profile_url'] }}">View profile and book a demo →</a>@endif
+        </article>
+      </section>
+    @endif
 
     {{-- The home page's suggested tutors and Ask NXT AI, tuned to this guide. --}}
     @include('partials.page-assist', [

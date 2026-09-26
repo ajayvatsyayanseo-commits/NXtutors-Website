@@ -445,6 +445,7 @@
 
     <nav class="nx-sec" aria-label="More places" style="margin-top:var(--nxt-s5)">
       <ul class="nx-chips nx-chips--rail">
+        @foreach(\App\Support\SubjectLinks::forCity($city?->slug) as $sp)<li><a class="nx-chip" href="{{ $sp['url'] }}">{{ $sp['label'] }}</a></li>@endforeach
         <li><a class="nx-chip" href="{{ $cityUrl }}">All areas in {{ $city?->city_name }}</a></li>
         <li><a class="nx-chip" href="{{ url('/city') }}#{{ \App\Support\Geo::stateSlug($areaState ?? '') }}">Other cities in {{ $areaState }}</a></li>
         <li><a class="nx-chip" href="{{ url('/city') }}">All cities in India</a></li>
