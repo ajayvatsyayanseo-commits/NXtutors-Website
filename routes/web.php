@@ -50,6 +50,9 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/sitemap.xml', [HomeController::class, 'sitemap'])
     ->name('sitemap');
+Route::get('/search/suggest.json', [\App\Http\Controllers\SearchSuggestController::class, 'index'])->name('search.suggest');
+Route::post('/search/event', [\App\Http\Controllers\SearchSuggestController::class, 'event'])
+    ->middleware('throttle:public-api')->name('search.event');
 Route::get('/sitemap-{section}.xml', [HomeController::class, 'sitemapSection'])
     ->where('section', implode('|', HomeController::SITEMAP_SECTIONS))
     ->name('sitemap.section');

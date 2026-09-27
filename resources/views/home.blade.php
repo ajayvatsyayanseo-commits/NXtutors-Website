@@ -165,9 +165,9 @@
     </h1>
 
     <p class="nxh__sub">
-      Verified home and online tutors for school subjects, board and entrance
-      exams, languages and skills. Tell us what you want to learn and your
-      locality — we return two or three real matches, not a directory to sift through.
+      Verified home and online tutors for school subjects, boards and entrance
+      exams. Tell us what you want to learn and your locality — we return two
+      or three real matches, not a directory to sift through.
     </p>
 
     {{-- Two fields, because two is what the matcher accepts: `search` is
@@ -182,10 +182,8 @@
             id="heroSearchInput"
             class="nxh__input"
             placeholder="e.g. Class 10 Maths, IB Physics, JEE"
-            list="nxLearnList"
             autocomplete="off"
           />
-          @include('home.partials.learn-datalist')
           <span class="nxh__control-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.6" y2="16.6"/></svg>
           </span>
@@ -1638,6 +1636,7 @@ body.page .nxh__sweep{
     </main>
 
   @include('include.footer')
+  <script src="{{ asset('frount/assets/js/nx-suggest.js') }}?v={{ $nxtAssetV ?? 1 }}" defer></script>
  
  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
@@ -3124,6 +3123,7 @@ $(document).ready(function () {
             data: {
                 search: search,
                 place: ($('#heroSearchArea').val() || '').trim(),
+                sid: window.nxSearchSid ? window.nxSearchSid() : '',
                 offset: offset,
                 limit: 6
             },

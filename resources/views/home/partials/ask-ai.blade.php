@@ -39,7 +39,6 @@
           'Tutor fees' => 'What are the tutor fees?',
           'Home or online?' => 'Can the classes be at home or online?',
           'Book a free demo' => 'I want to book a free demo class',
-          'Languages & skills' => 'Do you have tutors for languages, music or coding?',
       ];
   }
   $aiGreeting = match (true) {

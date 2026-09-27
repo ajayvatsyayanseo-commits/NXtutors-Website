@@ -68,6 +68,7 @@ class GeoStructureTest extends TestCase
             foreach (['meta_title','meta_description','hyper_location','page_type','service_mode','primary_keyword','subjects','boards','classes_tracks','html','schemas','payload','sections','faqs','interlinks','local_reviews','local_schools','local_institutes','canonical_target'] as $c) { $t->text($c)->nullable(); }
             $t->boolean('is_premium')->default(false); $t->unsignedBigInteger('created_by')->nullable(); $t->timestamps();
         });
+        (require base_path('app/NxtAi/Database/Migrations/2026_09_28_000001_create_search_events_table.php'))->up();
         Schema::create('blog_managment', function ($t) {
             $t->id(); $t->string('title'); $t->string('slug'); $t->string('status')->default('t');
             foreach (['bdesc','avatar','meta_title','meta_key','meta_desc','author','date'] as $c) { $t->text($c)->nullable(); }
@@ -397,5 +398,30 @@ class GeoStructureTest extends TestCase
 
         $m->down();
         $this->assertSame('abhinandan', DB::table('register')->where('user_id', 'NXT-2026-W7PBUU')->value('name'));
+    }
+
+    public function test_search_parser_suggestions_and_logging(): void
+    {
+        $q = \App\Support\SearchQuery::parse('IB maths home tutor DLF Phase 4 gurgaon');
+        $this->assertSame('Mathematics', $q['subject']);
+        $this->assertSame('IB', $q['board']);
+        $this->assertSame('home', $q['mode']);
+        $this->assertSame('Gurugram', $q['city']);
+        $this->assertSame('DLF Phase 4', $q['area']);
+
+        // Whole words: "German" is a language, not a request for a male tutor.
+        $this->assertNull(\App\Support\SearchQuery::parse('german')['gender']);
+        $this->assertSame('female', \App\Support\SearchQuery::parse('female chemistry tutor class 12')['gender']);
+        $this->assertSame('Class 12', \App\Support\SearchQuery::parse('female chemistry tutor class 12')['class']);
+        $this->assertFalse(\App\Support\SearchQuery::parse('Ajay')['known'], 'a name falls back to text search');
+
+        $json = $this->withoutExceptionHandling()->get('/search/suggest.json')->assertOk()->json();
+        $labels = array_column($json['items'], 'l');
+        $this->assertContains('IB Maths', $labels);
+        $this->assertNotContains('Guitar', $labels, 'nobody teaches it, so it is never suggested');
+        $this->assertContains('DLF Phase 4', array_column($json['places'], 'l'));
+
+        $this->post('/search/event', ['k' => 'pick', 'sid' => 'abc123', 'q' => 'ib m', 'pick' => 'IB Maths'])->assertNoContent();
+        $this->assertSame('IB Maths', \Illuminate\Support\Facades\DB::table('search_events')->where('kind', 'pick')->value('pick'));
     }
 }

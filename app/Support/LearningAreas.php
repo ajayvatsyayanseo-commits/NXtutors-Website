@@ -9,6 +9,9 @@ namespace App\Support;
  */
 class LearningAreas
 {
+    /** An item without its own page needs this many tutors to be offered. */
+    public const MIN_TUTORS = 2;
+
     /** @return array<string, array{label:string, items:array}> */
     public static function areas(): array
     {
@@ -23,7 +26,7 @@ class LearningAreas
             $items = [];
             foreach ($area['items'] as $item) {
                 $url = ! empty($item['page']) && isset($live[$item['page']]) ? url('/' . $item['page']) : null;
-                if (! $url && (int) ($item['tutors'] ?? 0) < 1) {
+                if (! $url && (int) ($item['tutors'] ?? 0) < self::MIN_TUTORS) {
                     continue;
                 }
                 $items[] = $item + ['url' => $url, 'search' => $item['search'] ?? $item['label']];

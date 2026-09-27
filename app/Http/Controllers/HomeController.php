@@ -739,7 +739,50 @@ public function compareDefaults(Request $request)
     $search = trim($request->get('search', ''));
     $place  = trim($request->get('place', ''));
 
+    // A search we understand (subject, board, class, place…) goes through the
+    // same ranked search as NXT AI and the subject pages. Anything else, such
+    // as a tutor's name, keeps the plain text search below.
+    $q = \App\Support\SearchQuery::parse($search, $place);
+    if ($q['known'] || (($q['city'] || $q['board'] || $q['class']) && $q['rest'] === '')) {
+        $limit = max(1, min($limit, 12));
+        $result = app(\App\NxtAi\Services\TutorSearchService::class)->search(new \App\NxtAi\DTO\TutorSearchCriteria(
+            city: $q['city'],
+            area: $q['area'],
+            pincode: $q['pincode'],
+            subject: $q['subject'],
+            classLevel: $q['class'],
+            board: $q['board'],
+            teachingMode: $q['mode'],
+            gender: $q['gender'],
+            limit: min($offset + $limit, 60),
+        ));
+        $cards = array_slice($result['cards'] ?? [], $offset, $limit);
+        if ($offset === 0) {
+            \App\Support\SearchEvents::record('search', [
+                'sid' => $request->get('sid'), 'q' => $search . ($place !== '' ? ' | ' . $place : ''),
+                'subject' => $q['subject'], 'city' => $q['city'], 'area' => $q['area'], 'mode' => $q['mode'],
+                'results' => ($result['relaxed'] ?? null) ? 0 : (int) ($result['matched'] ?? 0),
+            ]);
+        }
+        if (! $cards) {
+            return response('');
+        }
+
+        return view('home.partials.search-cards', [
+            'cards' => $cards,
+            // Said once, above the first page of results, when the subject had
+            // to be dropped to find anyone.
+            'relaxed' => $offset === 0 && ($result['relaxed'] ?? null) === 'subject' ? $q['subject'] : null,
+        ]);
+    }
+
     $teachers = $this->getHomeTeachers($limit, $offset, $search, $place);
+    if ($offset === 0 && ($search !== '' || $place !== '')) {
+        \App\Support\SearchEvents::record('search', [
+            'sid' => $request->get('sid'), 'q' => $search . ($place !== '' ? ' | ' . $place : ''),
+            'results' => $teachers->count(),
+        ]);
+    }
 
     return view('home.partials.teacher-cards', compact('teachers'));
 }
@@ -1115,29 +1158,17 @@ public function cityAreaShow($citySlug, $areaSlug)
     $femaleWords = ['female', 'lady', 'woman', 'girl', 'maam', 'mam', 'madam'];
     $maleWords   = ['male', 'sir', 'man', 'boy'];
 
-    foreach ($femaleWords as $word) {
-        if (str_contains($searchLower, $word)) {
-            $genderFilter = 'female';
-            break;
-        }
-    }
-
-    if (!$genderFilter) {
-        foreach ($maleWords as $word) {
-            if (str_contains($searchLower, $word)) {
-                $genderFilter = 'male';
-                break;
-            }
-        }
+    // Whole words only: "german" is not a request for a male tutor, and
+    // "female" must not also read as "male".
+    $wordRx = fn (array $words) => '/\b(?:' . implode('|', array_map(fn ($w) => preg_quote($w, '/'), $words)) . ')\b/i';
+    if (preg_match($wordRx($femaleWords), $searchLower)) {
+        $genderFilter = 'female';
+    } elseif (preg_match($wordRx($maleWords), $searchLower)) {
+        $genderFilter = 'male';
     }
 
     // gender-related words remove from search string
-    $removeWords = array_merge($femaleWords, $maleWords);
-    $cleanSearch = $searchLower;
-
-    foreach ($removeWords as $word) {
-        $cleanSearch = str_ireplace($word, ' ', $cleanSearch);
-    }
+    $cleanSearch = preg_replace($wordRx(array_merge($femaleWords, $maleWords)), ' ', $searchLower);
 
     $cleanSearch = preg_replace('/\s+/', ' ', $cleanSearch);
     $cleanSearch = trim($cleanSearch);
