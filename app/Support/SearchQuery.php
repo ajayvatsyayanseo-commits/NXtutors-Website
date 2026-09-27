@@ -96,6 +96,14 @@ class SearchQuery
             }
         }
 
+        // "Sector 66" with no area page of its own is still an area: it ranks
+        // tutors in that sector, then its zone (App\Support\Zones).
+        if ($out['area'] === null && preg_match('/\bsector\s*(\d{1,3}[a-z]?)\b/', self::clean($place.' '.$search), $m)) {
+            $out['area'] = 'Sector '.strtoupper($m[1]);
+            $s = ' '.trim(preg_replace('/\bsector\s*'.preg_quote($m[1], '/').'\b/', ' ', $s, 1)).' ';
+            $out['city'] ??= 'Gurugram';
+        }
+
         $words = array_values(array_filter(preg_split('/\s+/', trim($s)), fn ($w) => $w !== '' && ! in_array($w, self::FILLER, true)));
         $out['rest'] = implode(' ', $words);
         [$out['subject'], $out['known']] = self::findSubject($out['rest']);
@@ -144,6 +152,9 @@ class SearchQuery
             'chem' => 'Chemistry', 'chemistry' => 'Chemistry', 'bio' => 'Biology', 'biology' => 'Biology',
             'sst' => 'Social Science', 'eco' => 'Economics', 'accounts' => 'Accountancy', 'cs' => 'Computer Science',
             'iit' => 'JEE', 'iit jee' => 'JEE', 'jee' => 'JEE', 'neet' => 'NEET',
+            // School subjects that have their own page are skipped below (those
+            // items are board/class pages), so name them here.
+            'science' => 'Science', 'sci' => 'Science', 'english' => 'English',
         ];
         foreach (config('learning_areas.areas', []) as $area) {
             foreach ($area['items'] as $item) {
