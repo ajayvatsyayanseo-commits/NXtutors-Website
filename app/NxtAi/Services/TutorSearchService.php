@@ -39,7 +39,23 @@ final class TutorSearchService
      */
     public function search(TutorSearchCriteria $c): array
     {
+        // The pool is capped at 240 by reviews, which could all teach
+        // something else; with a subject, tutors whose bio mentions it are
+        // added. The PHP filter below still decides exactly who matches.
         $pool = $this->candidateQuery($c)->limit(self::CANDIDATE_POOL)->get();
+        if ($c->subject !== null && ($terms = SubjectNormalizer::searchTerms($c->subject)) !== []) {
+            // Only the tutor's own columns: no cross-table join, whose
+            // collations differ on MySQL.
+            $byBio = $this->candidateQuery($c)->where(function ($w) use ($terms): void {
+                foreach ($terms as $term) {
+                    $like = '%'.str_replace(['%', '_'], ['\%', '\_'], $term).'%';
+                    $w->orWhere('register.profile', 'like', $like)
+                        ->orWhere('register.profile_desc', 'like', $like)
+                        ->orWhere('register.pro_desc', 'like', $like);
+                }
+            })->limit(self::CANDIDATE_POOL)->get();
+            $pool = $pool->concat($byBio)->unique('user_id')->values();
+        }
 
         // Map to public arrays (private columns never included).
         $public = [];
@@ -53,7 +69,11 @@ final class TutorSearchService
         // A subject nobody in this city is tagged with would otherwise dead-end
         // the chat. Show the location matches instead and report the relaxation
         // so the caller can say so honestly.
-        if ($filtered === [] && $c->subject !== null && $public !== []) {
+        if ($filtered === [] && $c->subject !== null) {
+            $public = [];
+            foreach ($this->candidateQuery($c->withoutSubject())->limit(self::CANDIDATE_POOL)->get() as $tutor) {
+                $public[] = $this->mapper->toPublicArray($tutor);
+            }
             $filtered = $this->applyContentFilters($public, $c->withoutSubject());
             $relaxed = $filtered !== [] ? 'subject' : null;
         }
