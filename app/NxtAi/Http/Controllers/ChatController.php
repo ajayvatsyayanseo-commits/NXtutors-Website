@@ -355,7 +355,16 @@ class ChatController
     /** Layered rate limit: per-minute burst + per-day cap, keyed by user or guest. */
     private function overLimit(ChatRequest $request, ?string $userId): ?JsonResponse
     {
-        $key = $userId !== null ? 'u:'.$userId : 'g:'.sha1($request->session()->getId() ?: $request->ip());
+        // A guest who keeps the session cookie is counted per session. One who
+        // does not (a script, or a bot calling the endpoint directly) gets a
+        // fresh session every request, so is counted per IP address instead;
+        // otherwise the limit, and the OpenAI spend it protects, never applied.
+        $hasSession = $request->hasCookie((string) config('session.cookie'));
+        $key = match (true) {
+            $userId !== null => 'u:'.$userId,
+            $hasSession => 'g:'.sha1($request->session()->getId()),
+            default => 'ip:'.sha1((string) $request->ip()),
+        };
 
         $perMin = (int) config('nxt-ai.rate.per_minute', 12);
         if (RateLimiter::tooManyAttempts('nxtai:min:'.$key, $perMin)) {

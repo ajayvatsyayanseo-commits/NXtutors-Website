@@ -30,6 +30,7 @@ class TutorSearchIntegrationTest extends TestCase
 
     private function createLegacyTables(): void
     {
+        Schema::dropIfExists('register'); // a migration may already have made it, with another shape
         Schema::create('register', function ($t): void {
             $t->increments('id');
             $t->string('user_id')->nullable();
@@ -57,6 +58,7 @@ class TutorSearchIntegrationTest extends TestCase
             $t->string('document_number')->nullable();
         });
 
+        Schema::dropIfExists('teacher_review'); // a migration may already have made it, with another shape
         Schema::create('teacher_review', function ($t): void {
             $t->increments('id');
             $t->string('user_id')->nullable();
@@ -64,6 +66,7 @@ class TutorSearchIntegrationTest extends TestCase
             $t->string('status')->nullable();
         });
 
+        Schema::dropIfExists('teacher_courses'); // a migration may already have made it, with another shape
         Schema::create('teacher_courses', function ($t): void {
             $t->bigIncrements('id');
             $t->string('user_id')->nullable();
@@ -76,6 +79,7 @@ class TutorSearchIntegrationTest extends TestCase
         });
 
         // Empty parallel-schema tables so eager loads resolve cleanly.
+        Schema::dropIfExists('teacher_course_managment'); // a migration may already have made it, with another shape
         Schema::create('teacher_course_managment', function ($t): void {
             $t->increments('id');
             $t->string('user_id')->nullable();
@@ -84,6 +88,7 @@ class TutorSearchIntegrationTest extends TestCase
             $t->string('cat_id')->nullable();
             $t->string('sub_id')->nullable();
         });
+        Schema::dropIfExists('category'); // a migration may already have made it, with another shape
         Schema::create('category', function ($t): void {
             $t->increments('id');
             $t->string('pid')->nullable();

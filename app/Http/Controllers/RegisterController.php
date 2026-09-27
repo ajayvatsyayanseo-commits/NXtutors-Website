@@ -406,7 +406,7 @@ private function generateTutorAvatar(): ?string
  
     // $data['avatar'] = $fileName;
     // }
-    $otp = rand(9999, 1111);
+    $otp = random_int(1000, 9999); // 4 digits, from a secure source
     $page = Register::orderBy('id', 'desc')
                  ->first();  
     if (!$page || empty($page->user_id)) {  
@@ -414,8 +414,8 @@ private function generateTutorAvatar(): ?string
 } else {
     $user_id = $page->user_id + 1;  
 }
-    $name = $_POST['name'];
-    $password  =Hash::make($_POST['cpass_id']);
+    $name = (string) $request->input('name');
+    $password = Hash::make((string) $request->input('cpass_id'));
 
     $data['password'] = $password;
 
@@ -434,18 +434,20 @@ private function generateTutorAvatar(): ?string
 
     $subject = "Otp verification ";
 
-    $to = $_POST['email'];
+    $to = (string) $request->input('email');
     
     $setting = Setting::first();
 
-    $from = $setting->email;
+    $from = $setting->email ?? 'support@nxtutors.com';
 
 $message = view('emails.otp', compact('name', 'otp' ))->render();
        $headers = "From: $from\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
-    $mailss = mail($to, $subject, $message, $headers);
+    // A mail-server hiccup must not lose the sign-up: the row is still
+    // created and the OTP can be resent.
+    $mailss = @mail($to, $subject, $message, $headers);
     Register::create($data);
     return response()->json(['message' => '<div class="alert alert-success">We send an OTP on your email address for verification.</div>']);
  }   

@@ -2,18 +2,19 @@
 
 namespace Tests\Feature;
 
-// use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Tests\Concerns\LegacySchema;
 use Tests\TestCase;
 
 class ExampleTest extends TestCase
 {
-    /**
-     * A basic test example.
-     */
+    use LegacySchema, RefreshDatabase;
+
+    /** The home page renders on an empty site. */
     public function test_the_application_returns_a_successful_response(): void
     {
-        $response = $this->get('/');
+        $this->createLegacySchema();
 
-        $response->assertStatus(200);
+        $this->get('/')->assertStatus(200);
     }
 }
