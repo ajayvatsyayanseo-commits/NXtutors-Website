@@ -35,11 +35,11 @@
   function load() {
     if (dict || loading) return loading;
     try {
-      var cached = JSON.parse(sessionStorage.getItem('nx_sugg') || 'null');
+      var cached = JSON.parse(sessionStorage.getItem('nx_sugg2') || 'null');
       if (cached && cached.items) { dict = prep(cached); return Promise.resolve(dict); }
     } catch (e) {}
     loading = fetch(SRC, { credentials: 'same-origin' }).then(function (r) { return r.json(); }).then(function (d) {
-      try { sessionStorage.setItem('nx_sugg', JSON.stringify(d)); } catch (e) {}
+      try { sessionStorage.setItem('nx_sugg2', JSON.stringify(d)); } catch (e) {}
       dict = prep(d);
       return dict;
     }).catch(function () { loading = null; });
@@ -164,6 +164,8 @@
       var withCls = cls && !hasClass ? cls : null;
       var phrase = subj + (mode === 'online' ? ' online tutor' : ' home tutor') + (withCls ? ' for Class ' + withCls : '') + (here ? ' in ' + here : '');
       var s = 3 * m + 1.5 * Math.min(1, (i.n || 20) / 20) + (here ? 1.2 : 0) + 0.5 * pop(phrase);
+      // Too few tutors yet: offered as a demo request the team matches.
+      if (i.r) { add(i.l + ' — request a tutor, matched in 10 min', s, { request: i.s }); return; }
       // Its own page when the item itself is what was typed.
       if (i.u && !place && textMatch(t.t, whole) >= 0.8) add(i.l + ' — tutors & guide', s + 2, { url: i.u });
       add(phrase, s, { search: subj + (withCls ? ' class ' + withCls : '') + (mode ? ' ' + mode : ''), place: here });
@@ -258,6 +260,15 @@
     log(s.label);
     close();
     if (s.action.url) { window.location.href = s.action.url; return; }
+    if (s.action.request) {
+      // Open the demo form with the subject filled in (footer + header scripts).
+      var b = document.createElement('button');
+      b.type = 'button'; b.hidden = true;
+      b.setAttribute('data-modal-target', 'demoModal');
+      b.setAttribute('data-demo-subject', s.action.request);
+      document.body.appendChild(b); b.click(); b.remove();
+      return;
+    }
     input.value = s.action.search;
     if (placeInput && s.action.place) placeInput.value = s.action.place;
     if (goBtn) goBtn.click();

@@ -1,8 +1,9 @@
 {{--
   "Find a tutor for…": the five learning areas as tabs (config/learning_areas.php).
-  Items with their own guide page are cards that link there; the rest are chips
-  that run the hero search for that subject. Items nobody teaches are left out
-  (App\Support\LearningAreas).
+  Items with their own guide page are cards that link there; items with tutors
+  are chips that run the hero search; items with too few tutors yet are "on
+  request" chips that open the demo form with the subject filled in, so the
+  team matches them (App\Support\LearningAreas).
 --}}
 @php $nxAreas = \App\Support\LearningAreas::areas(); @endphp
 @if(count($nxAreas))
@@ -22,7 +23,8 @@
       @foreach($nxAreas as $key => $area)
         @php
           $withPage = array_values(array_filter($area['items'], fn ($i) => $i['url']));
-          $noPage = array_values(array_filter($area['items'], fn ($i) => ! $i['url']));
+          $noPage = array_values(array_filter($area['items'], fn ($i) => ! $i['url'] && empty($i['on_request'])));
+          $onRequest = array_values(array_filter($area['items'], fn ($i) => ! empty($i['on_request'])));
         @endphp
         <div class="nx-tabs__panel" role="tabpanel">
           <h3 class="nx-tabs__panel-title">{{ $area['label'] }}</h3>
@@ -42,6 +44,14 @@
             <ul class="nx-chips">
               @foreach($noPage as $it)
                 <li><button type="button" class="nx-chip" data-hero-search="{{ $it['search'] }}">{{ $it['label'] }}</button></li>
+              @endforeach
+            </ul>
+          @endif
+          @if(count($onRequest))
+            <p class="nx-explore__more">On request · {{ strtolower(config('tutors.match_promise')) }}</p>
+            <ul class="nx-chips">
+              @foreach($onRequest as $it)
+                <li><button type="button" class="nx-chip nx-chip--request" data-modal-target="demoModal" data-demo-subject="{{ $it['search'] }}">{{ $it['label'] }}</button></li>
               @endforeach
             </ul>
           @endif

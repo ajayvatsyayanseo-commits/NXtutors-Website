@@ -67,6 +67,8 @@ final class PublicTutorFieldMapper
             'rating' => $rating['avg'],
             'review_count' => $rating['count'],
             'description' => $this->snippet((string) ($t->profile_desc ?? $t->profile ?? $t->pro_desc ?? '')),
+            // A model profile, shown honestly as a sample (config/tutors.php).
+            'is_sample' => (bool) ($t->is_sample ?? false),
             'image_url' => $this->imageUrl($t->avatar),
             'profile_url' => $this->profileUrl($t),
         ];
@@ -81,14 +83,16 @@ final class PublicTutorFieldMapper
         $modes = [];
 
         foreach ($this->safeCourses($t) as $c) {
-            // String-schema (teacher_courses): plain columns.
-            if (isset($c->subject) && $c->subject !== null && $c->subject !== '') {
+            // String-schema (teacher_courses): plain columns. Scalars only: on
+            // the id-schema `board` is a related Category model, and casting it
+            // printed the whole record ({"id":2,"slug":"cbse",…}) as a chip.
+            if (isset($c->subject) && is_scalar($c->subject) && $c->subject !== '') {
                 $subjects[] = (string) $c->subject;
             }
-            if (isset($c->board) && $c->board !== null && $c->board !== '') {
+            if (isset($c->board) && is_scalar($c->board) && $c->board !== '') {
                 $boards[] = (string) $c->board;
             }
-            if (isset($c->for_class) && $c->for_class !== null && $c->for_class !== '') {
+            if (isset($c->for_class) && is_scalar($c->for_class) && $c->for_class !== '') {
                 $classes[] = (string) $c->for_class;
             }
             foreach (['class_type', 'mode'] as $modeCol) {

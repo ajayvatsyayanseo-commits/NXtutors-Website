@@ -106,8 +106,9 @@
       <section class="section section--suggested nx-assist" aria-labelledby="subjectTutorsTitle">
         <div class="section-head">
           <h2 class="section-title" id="subjectTutorsTitle">
-            {{ !empty($tutors['relaxed']) ? 'Verified tutors' : 'Verified ' . strtolower($page['subject'] ?? '') . ' tutors' }}@if(!empty($page['class'])) for {{ $page['class'] }}@endif @if(!empty($page['city'])) in {{ $page['city'] }}@endif
+            {{ !empty($tutors['relaxed']) ? 'Tutors' : ucfirst(strtolower($page['subject'] ?? '')) . ' tutors' }}@if(!empty($page['class'])) for {{ $page['class'] }}@endif @if(!empty($page['city'])) in {{ $page['city'] }}@endif
           </h2>
+          <p class="section-subtitle" style="margin:0">Verified tutors first; sample profiles are marked. {{ config('tutors.match_promise') }}.</p>
           <a class="btn btn-ghost btn-small" href="{{ route('tutors.index') }}">View all tutors →</a>
         </div>
         <div class="suggested-grid">

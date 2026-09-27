@@ -35,9 +35,8 @@
   <div class="section-head">
     <h2 class="section-title" id="topCitiesTitle">Home tutors in India’s major cities</h2>
     <p class="section-subtitle">
-      Verified home tutors in {{ $tcCities->count() }} cities
-      @if($tcTutorTotal > 0) ({{ number_format($tcTutorTotal) }} tutors and growing) @endif,
-      and online tutoring everywhere in India. Pick your city for local tutors, areas and fees.
+      Home tutors in {{ $tcCities->count() }} cities, and online tutoring everywhere in India.
+      Pick your city for local tutors, areas and fees.
     </p>
   </div>
 
@@ -55,7 +54,8 @@
           </span>
           @if($n['tutors'] > 0 || $n['areas'] > 0)
             <span class="nxtc-stats">
-              @if($n['tutors'] > 0){{ number_format($n['tutors']) }} tutors @endif
+              {{-- Profiles, not "verified tutors": the count includes sample profiles. --}}
+              @if($n['tutors'] > 0){{ number_format($n['tutors']) }} {{ $n['tutors'] === 1 ? 'profile' : 'profiles' }} @endif
               @if($n['tutors'] > 0 && $n['areas'] > 0) · @endif
               @if($n['areas'] > 0){{ number_format($n['areas']) }} areas @endif
             </span>

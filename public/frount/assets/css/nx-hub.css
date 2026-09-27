@@ -397,3 +397,19 @@ body.page .footer-content--5 .footer-col--subjects ul{display:grid;grid-template
 .nx-filters{flex:1 0 100%;margin-top:8px}
 .nx-filters__grid{display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));margin-top:10px}
 body.page .filterbar .nx-filters{grid-column:1 / -1}
+
+/* ---------- tutor card: sample profiles (partials/tutor-card) ---------- */
+.badge-sample{position:absolute;top:10px;left:10px;font-size:11px;font-weight:800;letter-spacing:.02em;padding:4px 9px;border-radius:999px;
+  background:rgba(15,23,42,.78);color:#e2e8f0;border:1px dashed rgba(226,232,240,.5)}
+.tutor-card .tutor-match{font-size:12.5px;white-space:normal;text-align:center;line-height:1.2}
+.tutor-reach{margin:0 0 2px;font-size:12px;font-weight:700;color:var(--nxt-accent)}
+.nx-sample-note{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:14px 16px;border-radius:var(--nxt-r-md);
+  border:1px dashed var(--nxt-accent-line);background:var(--nxt-surface);color:var(--nxt-text)}
+
+/* ---------- home: About NXTutors (long-form copy, collapsed) ---------- */
+.nx-about__lede{max-width:880px;color:var(--nxt-text-dim);margin:0 0 var(--nxt-s3)}
+.nx-about__grid{display:grid;gap:var(--nxt-s4);grid-template-columns:repeat(auto-fill,minmax(260px,1fr));margin-top:var(--nxt-s4)}
+.nx-about__grid h3,.nx-about__h{font-size:var(--nxt-t-h5,17px);margin:0 0 6px}
+.nx-about__grid p{margin:0;color:var(--nxt-text-dim)}
+.nx-about__h{margin-top:var(--nxt-s5)}
+.nx-chip--request{border-style:dashed}

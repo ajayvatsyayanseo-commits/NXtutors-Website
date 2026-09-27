@@ -61,7 +61,7 @@
   $metaSubj  = $subjectsTaught[0] ?? '';
   $metaRole  = trim($metaSubj . ' Home Tutor');
   $metatitle = $tutor->name . ' – ' . $metaRole . ($metaCity !== '' ? ' in ' . $metaCity : '') . ' | NXTutors';
-  $metadesc  = 'Profile of ' . $tutor->name . ', a verified ' . strtolower($metaRole)
+  $metadesc  = 'Profile of ' . $tutor->name . (empty($tutor->is_sample) ? ', a verified ' : ', a sample profile of a ') . strtolower($metaRole)
              . ($metaCity !== '' ? ' in ' . $metaCity : '')
              . '. See subjects, boards, experience and fees, and book a free demo class on NXTutors.';
   $ogImage   = $img;
@@ -435,6 +435,18 @@ html {
 
   <main class="main">
 
+    {{-- A model profile is shown for what it is (config/tutors.php). --}}
+    @php $isSampleProfile = ! empty($tutor->is_sample); @endphp
+    @if($isSampleProfile)
+      <section class="nxsec">
+        <div class="nx-sample-note">
+          <strong>This is a sample profile.</strong>
+          It shows the kind of tutor we match. {{ config('tutors.match_promise') }}.
+          <a href="#" class="nx-cta nx-cta--primary" data-modal-target="demoModal">Get a verified tutor</a>
+        </div>
+      </section>
+    @endif
+
     {{-- ✅ 1) Tutor Hero Card --}}
     <section class="nxsec">
       <div class="nxsplit  nxheroRow">
@@ -443,10 +455,14 @@ html {
             <div class="nxhero-photo">
               <img src="{{ $img }}" alt="{{ $tutor->name }}" width="190" height="230"
                    onerror="this.src='{{ asset('frount/assets/images/tutor1.jpg') }}'">
+              @if($isSampleProfile)
+                <span class="badge-sample">Sample profile</span>
+              @else
               <span class="badge-verified">
                 <svg width="11" height="11" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M6.5 11.3 3.4 8.2l1.1-1.1 2 2 4.9-4.9 1.1 1.1z"/></svg>
                 Verified
               </span>
+              @endif
             </div>
 
             <div style="flex:1;min-width:240px;">
@@ -459,7 +475,7 @@ html {
               </div>
 
               <div class="nxstat">
-                <span class="nxchip nxchip--ok">✅ Verified</span>
+                @unless($isSampleProfile)<span class="nxchip nxchip--ok">✅ Verified</span>@endunless
                 <span class="nxchip">{{ $chip }}</span>
 
                 @if($expYears !== '')
@@ -503,7 +519,7 @@ html {
           <div class="nxdivider"></div>
 
           <div class="nxlead" style="margin:0;">
-            <div>✅ Background verified</div>
+            @unless($isSampleProfile)<div>✅ Background verified</div>@endunless
             <div>✅ Free demo guidance</div>
             <div>✅ Regular progress tracking</div>
           </div>
@@ -695,7 +711,7 @@ html {
 
         <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;">
           <div class="nxk">Parents Reviews</div>
-          <span class="nxchip nxchip--ok">✅ Verified</span>
+          @unless($isSampleProfile)<span class="nxchip nxchip--ok">✅ Verified</span>@endunless
         </div>
 
         @if(!empty($reviews) && $reviews->count())
@@ -770,7 +786,7 @@ html {
       <div class="nxcard nxcard--soft" style="padding:16px;">
         <div class="nxlead" style="line-height:1.8;">
           <p>
-            {{ $tutor->name }} is a verified tutor in {{ $area ?: $city }} who focuses on concept clarity, regular practice,
+            {{ $tutor->name }} is {{ $isSampleProfile ? 'a sample profile of a tutor' : 'a verified tutor' }} in {{ $area ?: $city }} who focuses on concept clarity, regular practice,
             and confident exam preparation for {{ $classStr }}. Parents looking for a trusted {{ $boardStr }} tutor often
             need three things: consistent teaching, measurable progress, and a learning plan that fits the student’s pace.
             This is exactly what {{ $tutor->name }} aims to deliver through structured lessons, smart homework, and weekly revisions.

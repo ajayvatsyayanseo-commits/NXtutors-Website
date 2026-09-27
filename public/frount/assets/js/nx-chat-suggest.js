@@ -17,12 +17,12 @@
   function load() {
     if (dict) return;
     try {
-      var c = JSON.parse(sessionStorage.getItem('nx_sugg') || 'null');
+      var c = JSON.parse(sessionStorage.getItem('nx_sugg2') || 'null');
       if (c && c.items) { dict = c; return; }
     } catch (e) {}
     fetch('/search/suggest.json', { credentials: 'same-origin' }).then(function (r) { return r.json(); }).then(function (d) {
       dict = d;
-      try { sessionStorage.setItem('nx_sugg', JSON.stringify(d)); } catch (e) {}
+      try { sessionStorage.setItem('nx_sugg2', JSON.stringify(d)); } catch (e) {}
     }).catch(function () {});
   }
 

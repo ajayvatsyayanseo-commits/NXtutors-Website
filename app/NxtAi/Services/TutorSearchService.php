@@ -27,6 +27,9 @@ final class TutorSearchService
     // starved by whichever 80 tutors happen to have the most reviews.
     private const CANDIDATE_POOL = 240;
 
+    // Below this many real (non-sample) tutors in the city, widen the search.
+    private const MIN_REAL = 3;
+
     public function __construct(
         private readonly PublicTutorFieldMapper $mapper,
         private readonly TutorCardMapper $cardMapper,
@@ -39,23 +42,20 @@ final class TutorSearchService
      */
     public function search(TutorSearchCriteria $c): array
     {
-        // The pool is capped at 240 by reviews, which could all teach
-        // something else; with a subject, tutors whose bio mentions it are
-        // added. The PHP filter below still decides exactly who matches.
-        $pool = $this->candidateQuery($c)->limit(self::CANDIDATE_POOL)->get();
-        if ($c->subject !== null && ($terms = SubjectNormalizer::searchTerms($c->subject)) !== []) {
-            // Only the tutor's own columns: no cross-table join, whose
-            // collations differ on MySQL.
-            $byBio = $this->candidateQuery($c)->where(function ($w) use ($terms): void {
-                foreach ($terms as $term) {
-                    $like = '%'.str_replace(['%', '_'], ['\%', '\_'], $term).'%';
-                    $w->orWhere('register.profile', 'like', $like)
-                        ->orWhere('register.profile_desc', 'like', $like)
-                        ->orWhere('register.pro_desc', 'like', $like);
-                }
-            })->limit(self::CANDIDATE_POOL)->get();
-            $pool = $pool->concat($byBio)->unique('user_id')->values();
+        // Same question, same answer for ten minutes: the cascade can run
+        // several pooled queries, and tutor data changes slowly.
+        try {
+            return \Illuminate\Support\Facades\Cache::remember(
+                'tsearch.v1.'.md5(serialize($c)), 600, fn () => $this->searchNow($c)
+            );
+        } catch (\Throwable $e) {
+            return $this->searchNow($c);
         }
+    }
+
+    private function searchNow(TutorSearchCriteria $c): array
+    {
+        $pool = $this->pool($c);
 
         // Map to public arrays (private columns never included).
         $public = [];
@@ -65,6 +65,32 @@ final class TutorSearchService
 
         $filtered = $this->applyContentFilters($public, $c);
         $relaxed = null;
+        $widened = null;
+
+        // Location cascade: area and zone are ranked inside the city; if the
+        // city has fewer than MIN_REAL real tutors who fit, widen to the
+        // state, then to online-capable tutors anywhere in India. The ranker
+        // labels each card with how far it had to go.
+        if ($c->city !== null && $c->teachingMode !== 'online' && $this->realCount($filtered) < self::MIN_REAL) {
+            foreach (['state', 'country'] as $level) {
+                $wider = [];
+                foreach ($this->widerPool($c, $level) as $tutor) {
+                    $wider[] = $this->mapper->toPublicArray($tutor);
+                }
+                $wider = $this->applyContentFilters($wider, $c);
+                if ($level === 'country') {
+                    $wider = array_values(array_filter($wider, fn ($t) => $this->canTeachOnline($t)));
+                }
+                $before = count($filtered);
+                $filtered = $this->mergeByRef($filtered, $wider);
+                if (count($filtered) > $before) {
+                    $widened = $level;
+                }
+                if ($this->realCount($filtered) >= self::MIN_REAL) {
+                    break;
+                }
+            }
+        }
 
         // A subject nobody in this city is tagged with would otherwise dead-end
         // the chat. Show the location matches instead and report the relaxation
@@ -86,6 +112,8 @@ final class TutorSearchService
             'matched' => count($filtered),
             'pool' => $pool->count(),
             'relaxed' => $relaxed,
+            'widened' => $widened,
+            'real' => $this->realCount($filtered),
         ];
     }
 
@@ -118,7 +146,81 @@ final class TutorSearchService
         return $out;
     }
 
-    private function candidateQuery(TutorSearchCriteria $c)
+    /**
+     * The candidate pool: the top CANDIDATE_POOL by reviews, plus, with a
+     * subject, tutors whose own bio mentions it (those were often outside the
+     * first 240). Own columns only: no cross-table join, whose collations
+     * differ on MySQL. The PHP filters decide exactly who matches.
+     */
+    private function pool(TutorSearchCriteria $c, ?array $cityAliases = null)
+    {
+        $pool = $this->candidateQuery($c, $cityAliases)->limit(self::CANDIDATE_POOL)->get();
+        if ($c->subject !== null && ($terms = SubjectNormalizer::searchTerms($c->subject)) !== []) {
+            $byBio = $this->candidateQuery($c, $cityAliases)->where(function ($w) use ($terms): void {
+                foreach ($terms as $term) {
+                    $like = '%'.str_replace(['%', '_'], ['\%', '\_'], $term).'%';
+                    $w->orWhere('register.profile', 'like', $like)
+                        ->orWhere('register.profile_desc', 'like', $like)
+                        ->orWhere('register.pro_desc', 'like', $like);
+                }
+            })->limit(self::CANDIDATE_POOL)->get();
+            $pool = $pool->concat($byBio)->unique('user_id')->values();
+        }
+
+        return $pool;
+    }
+
+    /** Tutors in the rest of the city's state, or anywhere (country). */
+    private function widerPool(TutorSearchCriteria $c, string $level)
+    {
+        if ($level === 'country') {
+            return $this->pool(new TutorSearchCriteria(
+                subject: $c->subject, classLevel: $c->classLevel, board: $c->board,
+                teachingMode: 'online', gender: $c->gender, limit: $c->limit,
+            ));
+        }
+
+        $slug = \App\Support\Geo::slugFor((string) $c->city);
+        $state = $slug !== '' ? \App\Support\Geo::stateOf($slug) : '';
+        if ($state === '') {
+            return collect();
+        }
+        $aliases = [];
+        foreach (\App\Support\Geo::CITIES as $citySlug => $info) {
+            if ($citySlug !== $slug && ($info['state'] ?? null) === $state) {
+                $aliases = array_merge($aliases, [$citySlug], $info['aliases'] ?? [], \App\Support\Zones::rawCityNames($citySlug));
+            }
+        }
+
+        return $aliases === [] ? collect() : $this->pool($c, array_values(array_unique(array_map('strtolower', $aliases))));
+    }
+
+    private function realCount(array $tutors): int
+    {
+        return count(array_filter($tutors, fn ($t) => empty($t['is_sample'])));
+    }
+
+    private function canTeachOnline(array $t): bool
+    {
+        $modes = array_map('strtolower', (array) ($t['teaching_modes'] ?? []));
+
+        return $modes === [] || in_array('online', $modes, true);
+    }
+
+    private function mergeByRef(array $a, array $b): array
+    {
+        $seen = array_flip(array_column($a, 'ref'));
+        foreach ($b as $t) {
+            if (! isset($seen[$t['ref']])) {
+                $a[] = $t;
+                $seen[$t['ref']] = true;
+            }
+        }
+
+        return $a;
+    }
+
+    private function candidateQuery(TutorSearchCriteria $c, ?array $cityAliasesOverride = null)
     {
         $q = $this->baseQuery();
 
@@ -127,10 +229,10 @@ final class TutorSearchService
         // Home or unspecified: location is hard and tolerant: pincode and/or
         // the city's aliases plus every locality-style "city" value that
         // belongs to it ("Wazirabad", "Sector 37D" are Gurugram).
-        $cityAliases = $c->city !== null && $c->teachingMode !== 'online'
+        $cityAliases = $cityAliasesOverride ?? ($c->city !== null && $c->teachingMode !== 'online'
             ? array_values(array_unique(array_merge(CityNormalizer::aliasesFor($c->city), \App\Support\Zones::rawCityNames($c->city))))
-            : [];
-        $pincode = $c->teachingMode === 'online' ? null : $c->pincode;
+            : []);
+        $pincode = $c->teachingMode === 'online' || $cityAliasesOverride !== null ? null : $c->pincode;
         if ($pincode !== null || $cityAliases !== []) {
             $q->where(function ($w) use ($pincode, $cityAliases): void {
                 $has = false;
@@ -150,7 +252,9 @@ final class TutorSearchService
             $q->whereRaw('LOWER(register.gender) = ?', [$c->gender]);
         }
 
-        return $q->orderByDesc('reviews_count')
+        // Real tutors enter the capped pool before sample profiles.
+        return $q->realFirst('register')
+            ->orderByDesc('reviews_count')
             ->orderByDesc('rating_avg')
             ->orderBy('register.id');
     }

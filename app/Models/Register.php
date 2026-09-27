@@ -93,6 +93,32 @@ class Register extends Model
         return app($key);
     }
 
+    /**
+     * Whether the is_sample column exists yet (the deploy runs migrations
+     * after the code is live). Checked once per application instance.
+     */
+    public static function hasSampleColumn(): bool
+    {
+        $key = 'register.sample_column';
+        if (! app()->bound($key)) {
+            try {
+                app()->instance($key, \Illuminate\Support\Facades\Schema::hasColumn('register', 'is_sample'));
+            } catch (\Throwable $e) {
+                app()->instance($key, false);
+            }
+        }
+
+        return app($key);
+    }
+
+    /**
+     * Real tutors before sample profiles (config/tutors.php) in any list.
+     */
+    public function scopeRealFirst($query, string $table = 'register')
+    {
+        return self::hasSampleColumn() ? $query->orderBy("$table.is_sample") : $query;
+    }
+
     /** The same rule for DB::table() queries. */
     public static function applyPublicVisibility($query, string $table = 'register')
     {

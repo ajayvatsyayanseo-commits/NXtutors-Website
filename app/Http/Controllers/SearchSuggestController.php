@@ -19,7 +19,7 @@ use Throwable;
  */
 class SearchSuggestController extends Controller
 {
-    public const CACHE_KEY = 'search.suggest.v1';
+    public const CACHE_KEY = 'search.suggest.v2';
 
     public function index()
     {
@@ -57,6 +57,7 @@ class SearchSuggestController extends Controller
                     'a' => $i['aka'] ?? null,
                     'n' => (int) ($i['tutors'] ?? 0),
                     'g' => $area,
+                    'r' => ! empty($i['on_request']) ? 1 : null, // offered as a demo request
                 ], fn ($v) => $v !== null && $v !== []);
             }
         }

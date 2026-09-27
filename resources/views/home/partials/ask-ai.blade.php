@@ -639,3 +639,13 @@
   {{-- Predicted questions while typing (no server call per keystroke). --}}
   <script src="{{ asset('frount/assets/js/nx-chat-suggest.js') }}?v={{ $nxtAssetV ?? 1 }}" defer></script>
 @endonce
+@once
+  {{-- Compare tutors: the Compare button on every tutor card and the AI
+       comparison in this panel. Chart.js draws the comparison chart; the
+       home page loads it itself. --}}
+  @if(!request()->routeIs('home'))
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2" defer></script>
+  @endif
+  <script src="{{ asset('frount/assets/js/nx-compare.js') }}?v={{ $nxtAssetV ?? 1 }}" defer></script>
+@endonce

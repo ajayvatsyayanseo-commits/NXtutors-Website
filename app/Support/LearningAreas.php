@@ -3,9 +3,10 @@
 namespace App\Support;
 
 /**
- * The five learning areas (config/learning_areas.php) resolved for display:
- * each item gets its live page URL, if any, and only items parents can
- * actually be served (a live page, or tutors who teach it) are returned.
+ * The learning areas (config/learning_areas.php) resolved for display: each
+ * item gets its live page URL, if any. Items with no page and fewer than
+ * MIN_TUTORS tutors are marked on_request: offered as a demo request the
+ * team matches ("verified tutor in 10 minutes"), never as an empty search.
  */
 class LearningAreas
 {
@@ -26,10 +27,10 @@ class LearningAreas
             $items = [];
             foreach ($area['items'] as $item) {
                 $url = ! empty($item['page']) && isset($live[$item['page']]) ? url('/' . $item['page']) : null;
-                if (! $url && (int) ($item['tutors'] ?? 0) < self::MIN_TUTORS) {
-                    continue;
-                }
-                $items[] = $item + ['url' => $url, 'search' => $item['search'] ?? $item['label']];
+                // No page and too few tutors yet: still offered, "on request",
+                // as a demo request the team fills (and a recruiting signal).
+                $onRequest = ! $url && (int) ($item['tutors'] ?? 0) < self::MIN_TUTORS;
+                $items[] = $item + ['url' => $url, 'search' => $item['search'] ?? $item['label'], 'on_request' => $onRequest];
             }
             if ($items) {
                 $areas[$key] = ['label' => $area['label'], 'items' => $items];
@@ -56,7 +57,7 @@ class LearningAreas
         $all = collect(self::areas())->flatMap(fn ($a, $k) => collect($a['items'])->map(fn ($i) => $i + ['area' => $k]));
         $core = $all->filter(fn ($i) => in_array($i['label'], ['Maths', 'Science', 'Physics', 'Chemistry', 'JEE Physics', 'NEET Biology', 'IB Maths'], true));
         // Languages and skills earn a place only with a real bench of tutors.
-        $other = $all->filter(fn ($i) => in_array($i['area'], ['languages', 'skills'], true) && (int) ($i['tutors'] ?? 0) >= 5)
+        $other = $all->filter(fn ($i) => empty($i['on_request']) && in_array($i['area'], ['languages', 'skills', 'professional'], true) && (int) ($i['tutors'] ?? 0) >= 5)
             ->sortByDesc(fn ($i) => (int) ($i['tutors'] ?? 0));
 
         return $core->concat($other)->unique('label')->take($limit)->values()->all();

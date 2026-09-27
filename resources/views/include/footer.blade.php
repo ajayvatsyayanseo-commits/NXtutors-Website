@@ -79,7 +79,7 @@
       <ul>
         <li><a href="{{ url('/')}}">Home</a></li>
         <li><a href="{{ url('/')}}/tutors">Find Tutors</a></li>
-        <li><a href="#" data-modal-target="tutorModal">Become a Tutor</a></li>
+        <li><a href="{{ url('/become-a-tutor') }}">Become a Tutor</a></li>
         <li><a href="{{ url('/')}}/demo-class">Demo Class</a></li>
         <li><a href="{{ url('/')}}/pricing">Subscription Plan</a></li>
       </ul>
@@ -306,12 +306,13 @@ Message: ${formData.message || '-'}`;
       if (lastTrigger) { lastTrigger.focus({ preventScroll: true }); lastTrigger = null; }
     }
 
-    // open modal
-    document.querySelectorAll('[data-modal-target]').forEach(function (btn) {
-      btn.addEventListener('click', function (e) {
-        e.preventDefault();
-        openModal(document.getElementById(this.getAttribute('data-modal-target')), this);
-      });
+    // open modal: one delegated listener, so triggers added after load
+    // (search results, sample tutor cards) open it too.
+    document.addEventListener('click', function (e) {
+      var btn = e.target.closest ? e.target.closest('[data-modal-target]') : null;
+      if (!btn) return;
+      e.preventDefault();
+      openModal(document.getElementById(btn.getAttribute('data-modal-target')), btn);
     });
 
     // close modal (click on backdrop or close button)
@@ -390,6 +391,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (lon) localStorage.setItem("nx_lon", lon); else localStorage.removeItem("nx_lon");
 
     updateLocationButton(area, city, pin);
+    // Pages that personalise by place (the home page's suggested tutors)
+    // listen for this instead of needing a reload.
+    document.dispatchEvent(new CustomEvent("nx:location", { detail: { area: area, city: city, pin: pin } }));
   }
 
   async function reverseGeocode(lat, lon) {

@@ -173,7 +173,7 @@ class GeoStructureTest extends TestCase
         $top = view('home.partials.top-cities')->render();
         $this->assertStringContainsString('Home tutors in India’s major cities', $top);
         $this->assertStringContainsString('href="' . url('city/gurugram') . '"', $top);
-        $this->assertStringContainsString('2 tutors', $top);
+        $this->assertStringContainsString('2 profiles', $top);
         $this->assertStringContainsString('>Also in<', $top);
 
         $served = view('home.partials.cities-served')->render();
@@ -418,7 +418,8 @@ class GeoStructureTest extends TestCase
         $json = $this->withoutExceptionHandling()->get('/search/suggest.json')->assertOk()->json();
         $labels = array_column($json['items'], 'l');
         $this->assertContains('IB Maths', $labels);
-        $this->assertNotContains('Guitar', $labels, 'nobody teaches it, so it is never suggested');
+        $guitar = collect($json['items'])->firstWhere('l', 'Guitar');
+        $this->assertSame(1, $guitar['r'] ?? null, 'nobody teaches it yet: offered as a request, never as a search');
         $this->assertContains('DLF Phase 4', array_column($json['places'], 'l'));
 
         $this->post('/search/event', ['k' => 'pick', 'sid' => 'abc123', 'q' => 'ib m', 'pick' => 'IB Maths'])->assertNoContent();
@@ -478,5 +479,57 @@ class GeoStructureTest extends TestCase
         $this->assertContains('JEE', $caps['subjects']);
         $this->assertContains('IB', $caps['boards']);
         $this->assertNotContains('English', $caps['subjects'], 'mentioning English is not teaching it');
+    }
+
+    public function test_sample_profiles_are_shown_honestly_after_real_tutors(): void
+    {
+        Schema::table('register', fn ($t) => $t->boolean('is_sample')->default(false));
+        app()->forgetInstance('register.sample_column');
+        DB::table('register')->insert([
+            ['user_id' => 601, 'name' => 'Model Tutor', 'city' => 'Gurgaon', 'join_as' => 'teacher', 'status' => 't', 'is_sample' => 1, 'pro_desc' => 'I teach maths for CBSE.'],
+            ['user_id' => 602, 'name' => 'Real Tutor', 'city' => 'Gurgaon', 'join_as' => 'teacher', 'status' => 't', 'is_sample' => 0, 'pro_desc' => 'I teach maths for CBSE and IB.'],
+        ]);
+
+        $cards = app(\App\NxtAi\Services\TutorSearchService::class)->search(new \App\NxtAi\DTO\TutorSearchCriteria(
+            city: 'Gurugram', subject: 'Mathematics', limit: 5,
+        ))['cards'];
+        $this->assertSame('Real Tutor', $cards[0]['name'], 'real tutors rank before samples');
+        $this->assertTrue($cards[1]['is_sample']);
+
+        $html = view('subjects.partials.tutor-cards', ['cards' => $cards])->render();
+        $this->assertSame(1, substr_count($html, 'Sample profile'));
+        $this->assertSame(1, substr_count($html, 'js-compare-toggle'), 'Compare on the real tutor only');
+        $this->assertStringContainsString('Get matched in 10 min', $html);
+        $this->assertStringNotContainsString('"slug"', $html, 'no raw database records on cards');
+
+        // The sample's own profile page says so, and stays out of Google.
+        $token = rtrim(strtr(base64_encode('601-nxt'), '+/', '-_'), '=');
+        $this->withoutExceptionHandling()->get('/tutor/gurgaon/' . $token . '/model-tutor')
+            ->assertOk()->assertSee('This is a sample profile')->assertSee('name="robots" content="noindex, follow"', false);
+    }
+
+    public function test_search_widens_to_the_state_then_online(): void
+    {
+        DB::table('register')->insert([
+            ['user_id' => 701, 'name' => 'Faridabad Tutor', 'city' => 'Faridabad', 'join_as' => 'teacher', 'status' => 't', 'class_type' => null, 'pro_desc' => 'Physics tutor for Class 12.'],
+            ['user_id' => 702, 'name' => 'Patna Online', 'city' => 'Patna', 'join_as' => 'teacher', 'status' => 't', 'class_type' => 'online', 'pro_desc' => 'Physics tutor, online.'],
+        ]);
+        $r = app(\App\NxtAi\Services\TutorSearchService::class)->search(new \App\NxtAi\DTO\TutorSearchCriteria(
+            city: 'Gurugram', subject: 'Physics', limit: 5,
+        ));
+        $names = array_column($r['cards'], 'name');
+        $this->assertContains('Faridabad Tutor', $names, 'same state (Haryana)');
+        $this->assertContains('Patna Online', $names, 'then online anywhere');
+        $this->assertSame('country', $r['widened']);
+        $labels = array_column($r['cards'], 'place_label', 'name');
+        $this->assertSame('In Haryana', $labels['Faridabad Tutor']);
+    }
+
+    public function test_on_request_items_and_the_tutor_recruitment_page(): void
+    {
+        $html = view('home.partials.explore')->render();
+        $this->assertStringContainsString('data-demo-subject="Guitar"', $html, 'no tutors yet: offered on request');
+        $this->withoutExceptionHandling()->get('/become-a-tutor')->assertOk()
+            ->assertSee('Home Tuition Jobs', false)->assertSee('Tutors needed')->assertSee('"@type":"FAQPage"', false);
     }
 }

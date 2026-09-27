@@ -169,6 +169,7 @@ public function sitemapSection(string $section)
     '/terms-conditions',
     '/privacy-policy',
     '/tutors',
+    '/become-a-tutor',
 ];
 
     foreach ($staticUrls as $url) {
@@ -343,7 +344,8 @@ Product::where('status', 't')
             // written out as the literal "/tutor/city/..." and served a 500.
             $profileUrl = $t->profileUrl();
 
-            if (! $profileUrl) {
+            // Sample (model) profiles stay out of Google (config/tutors.php).
+            if (! $profileUrl || ! empty($t->is_sample)) {
                 continue;
             }
 
@@ -762,6 +764,8 @@ public function compareDefaults(Request $request)
         $result = $service->search($criteria($mode, min($offset + $limit, 60)));
         $cards = array_slice($result['cards'] ?? [], $offset, $limit);
         $exact = ($result['relaxed'] ?? null) ? 0 : (int) ($result['matched'] ?? 0);
+        // What the bar counts: verified (real) tutors only, never samples.
+        $exactReal = ($result['relaxed'] ?? null) ? 0 : (int) ($result['real'] ?? 0);
 
         // Home and online answer different questions, so the first page says
         // how many of each match, and offers online honestly when home tutors
@@ -770,10 +774,11 @@ public function compareDefaults(Request $request)
         if ($offset === 0 && $q['subject'] && $q['city']) {
             $other = $mode === 'online' ? 'home' : 'online';
             $otherResult = $service->search($criteria($other, 1));
-            $otherExact = ($otherResult['relaxed'] ?? null) ? 0 : (int) ($otherResult['matched'] ?? 0);
+            $otherReal = ($otherResult['relaxed'] ?? null) ? 0 : (int) ($otherResult['real'] ?? 0);
             $counts = [
-                'home' => $mode === 'online' ? $otherExact : $exact,
-                'online' => $mode === 'online' ? $exact : $otherExact,
+                'home' => $mode === 'online' ? $otherReal : $exactReal,
+                'online' => $mode === 'online' ? $exactReal : $otherReal,
+                'widened' => $result['widened'] ?? null,
                 'mode' => $mode ?: 'either',
                 // The home count is city-wide (ranked by nearness), so it names the city.
                 'area' => $q['city'],
@@ -940,6 +945,7 @@ private function baseTeacherQuery()
               DB::raw('COALESCE(r.reviews_count, 0) as reviews_count'),
               DB::raw('COALESCE(r.rating_avg, 0) as rating_avg'),
             ])
+        ->when(Register::hasSampleColumn(), fn ($q) => $q->addSelect('register.is_sample'))
         ->leftJoinSub($ratingsSub, 'r', function ($join) {
             $join->on(
                 DB::raw('register.user_id COLLATE utf8mb4_unicode_ci'),
@@ -1221,6 +1227,7 @@ public function cityAreaShow($citySlug, $areaSlug)
             DB::raw('COALESCE(r.reviews_count, 0) as reviews_count'),
             DB::raw('COALESCE(r.rating_avg, 0) as rating_avg'),
         ])
+        ->when(Register::hasSampleColumn(), fn ($q) => $q->addSelect('register.is_sample'))
         ->leftJoinSub($ratingsSub, 'r', function ($join) {
             $join->on(
                 DB::raw('register.user_id COLLATE utf8mb4_unicode_ci'),
@@ -1354,6 +1361,7 @@ public function cityAreaShow($citySlug, $areaSlug)
     }
 
     return $query
+        ->realFirst('register')
         ->orderByDesc('reviews_count')
         ->orderByDesc('rating_avg')
         ->offset($offset)
@@ -1564,7 +1572,7 @@ public function cityAreaShow($citySlug, $areaSlug)
 
     // A profile carrying another tutor's bio stays reachable but is kept out of
     // the index until the tutor writes their own (App\Support\CopiedBios).
-    $metarobots = \App\Support\CopiedBios::has((string) $tutor->user_id) ? 'noindex, follow' : null;
+    $metarobots = (\App\Support\CopiedBios::has((string) $tutor->user_id) || ! empty($tutor->is_sample)) ? 'noindex, follow' : null;
     return view('tutor.show', compact('metarobots', 
         'tutor',
         'img',
@@ -1786,7 +1794,7 @@ $realUserId = str_replace('-nxt', '', $decoded);
 
     // A profile carrying another tutor's bio stays reachable but is kept out of
     // the index until the tutor writes their own (App\Support\CopiedBios).
-    $metarobots = \App\Support\CopiedBios::has((string) $tutor->user_id) ? 'noindex, follow' : null;
+    $metarobots = (\App\Support\CopiedBios::has((string) $tutor->user_id) || ! empty($tutor->is_sample)) ? 'noindex, follow' : null;
     return view('tutor.show', compact('metarobots', 
         'tutor',
         'img',

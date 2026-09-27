@@ -50,16 +50,19 @@ final class TutorRanker
             $t['_exp'] = (int) ($t['experience_years'] ?? 0);
             $t['_complete'] = $this->completeness($t);
             $t['_i'] = $i;
+            $t['_real'] = empty($t['is_sample']) ? 1 : 0;
+            $t['place_label'] = $this->placeLabel($t, $c);
             $scored[] = $t;
         }
 
+        // Real tutors first, always; sample profiles after them (config/tutors.php).
         usort($scored, function (array $a, array $b): int {
-            return [$b['match_score'], $b['_conf'], $b['_exp'], $b['_complete'], $a['_i']]
-                <=> [$a['match_score'], $a['_conf'], $a['_exp'], $a['_complete'], $b['_i']];
+            return [$b['_real'], $b['match_score'], $b['_conf'], $b['_exp'], $b['_complete'], $a['_i']]
+                <=> [$a['_real'], $a['match_score'], $a['_conf'], $a['_exp'], $a['_complete'], $b['_i']];
         });
 
         return array_map(static function (array $t): array {
-            unset($t['_conf'], $t['_exp'], $t['_complete'], $t['_i']);
+            unset($t['_conf'], $t['_exp'], $t['_complete'], $t['_i'], $t['_real']);
 
             return $t;
         }, $scored);
@@ -190,50 +193,76 @@ final class TutorRanker
     }
 
     /**
-     * Home-tutor distance in tiers (no coordinates on profiles):
-     *   same pincode, or teaches / travels to the parent's area   1.0
-     *   same zone of the city (config/zones.php)                   0.8
-     *   same city                                                  0.5
+     * Home-tutor distance as a smooth decay over tiers (no coordinates on
+     * profiles), s = e^(-d/2):
+     *   same pincode, or teaches / travels to the area   d = 0    s = 1.00
+     *   same zone of the city (config/zones.php)          d = 0.5  s = 0.78
+     *   same city                                         d = 1    s = 0.61
+     *   same state                                        d = 2    s = 0.37
+     *   elsewhere in India (online-capable)               d = 3.5  s = 0.17
+     * With no area asked, the city itself is the target (d = 0).
      */
     private function locationScore(array $t, TutorSearchCriteria $c): array
     {
+        [$d, $why] = $this->locationTier($t, $c);
+
+        return $d === null ? [0.0, null] : [exp(-$d / 2), $why];
+    }
+
+    /** @return array{0:?float, 1:?string} tier distance and the reason shown */
+    private function locationTier(array $t, TutorSearchCriteria $c): array
+    {
         if ($c->pincode !== null && (string) ($t['pincode'] ?? '') === $c->pincode) {
-            return [1.0, 'Same pincode ('.$c->pincode.')'];
+            return [0.0, 'Same pincode ('.$c->pincode.')'];
         }
 
         $area = trim((string) $c->area);
         if ($area !== '') {
             $where = $this->ci(((string) ($t['area'] ?? '')).' '.((string) ($t['city'] ?? '')));
             if (str_contains($where, $this->ci($area))) {
-                return [1.0, 'In '.$area];
+                return [0.0, 'In '.$area];
             }
             foreach ((array) ($t['travel_areas'] ?? []) as $ta) {
                 if ($ta !== '' && (str_contains($this->ci($ta), $this->ci($area)) || str_contains($this->ci($area), $this->ci($ta)))) {
-                    return [1.0, 'Travels to '.$area];
+                    return [0.0, 'Travels to '.$area];
                 }
             }
-
             $zone = \App\Support\Zones::of($c->city, $area);
             if ($zone !== null) {
                 $tutorZones = array_filter(array_merge(
                     [$t['zone'] ?? null],
                     array_map(fn ($ta) => \App\Support\Zones::of($c->city, (string) $ta), (array) ($t['travel_areas'] ?? []))
                 ));
-                if (in_array($zone, $tutorZones, true) || in_array($this->ci($zone), array_map([$this, 'ci'], (array) ($t['travel_areas'] ?? [])), true)) {
-                    return [0.8, 'Near '.$area.' ('.$zone.')'];
+                if (in_array($zone, $tutorZones, true)) {
+                    return [0.5, 'Near '.$area.' ('.$zone.')'];
                 }
             }
         }
 
-        if ($c->city !== null) {
-            $tutorCity = (string) ($t['home_city'] ?? '') ?: (string) ($t['city'] ?? '');
-            if ($this->ci($tutorCity) === $this->ci($c->city)
-                || \App\Support\Geo::slugFor($tutorCity) !== '' && \App\Support\Geo::slugFor($tutorCity) === \App\Support\Geo::slugFor($c->city)) {
-                return [$area !== '' ? 0.5 : 1.0, 'In '.$c->city];
-            }
+        if ($c->city === null) {
+            return [null, null];
+        }
+        $want = \App\Support\Geo::slugFor($c->city);
+        $tutorCity = (string) ($t['home_city'] ?? '') ?: (string) ($t['city'] ?? '');
+        $tutorSlug = \App\Support\Geo::slugFor($tutorCity);
+        if (($want !== '' && $tutorSlug === $want) || $this->ci($tutorCity) === $this->ci($c->city)) {
+            return [$area !== '' ? 1.0 : 0.0, 'In '.$c->city];
+        }
+        if ($want !== '' && $tutorSlug !== '' && \App\Support\Geo::stateOf($tutorSlug) === \App\Support\Geo::stateOf($want)) {
+            return [2.0, 'In '.\App\Support\Geo::stateOf($want)];
         }
 
-        return [0.0, null];
+        return [3.5, $tutorCity !== '' ? 'From '.ucwords($tutorCity).' · online' : 'Online'];
+    }
+
+    /** The short place line on a result card ("In Sector 56", "In Haryana"). */
+    private function placeLabel(array $t, TutorSearchCriteria $c): ?string
+    {
+        if ($c->city === null && $c->pincode === null && $c->area === null) {
+            return null;
+        }
+
+        return $this->locationTier($t, $c)[1];
     }
 
     private function classMatch(array $classes, ?string $needle): bool

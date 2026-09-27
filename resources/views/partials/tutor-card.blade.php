@@ -20,6 +20,11 @@
     $compare    optional array of data-* attributes; renders the Compare
                 control when present. Text-only by contract — the compare
                 script rewrites this button's textContent.
+    $sample     optional bool; defaults to $t->is_sample. A model profile
+                (config/tutors.php) is shown honestly: no Verified badge,
+                rating or Compare, a "Sample profile" label, and the
+                10-minute match as its action.
+    $placeLabel optional search line ("In Sector 56", "In Haryana").
 --}}
 @php
   // "Sector 15, Gurugram" — but never "gurgaon, gurgaon" when the stored
@@ -34,35 +39,43 @@
     if ($bit !== '') $parts[] = $bit;
   }
   $place = implode(', ', $parts);
+  $isSample = (bool) ($sample ?? ($t->is_sample ?? false));
 @endphp
 <article class="tutor-card">
   <div class="tutor-photo">
     <img src="{{ $img }}" alt="{{ $t->name }}" loading="lazy" decoding="async"
          onerror="this.src='{{ asset('frount/assets/images/tutor1.jpg') }}'">
 
-    <span class="badge-verified">
-      <svg width="11" height="11" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M6.5 11.3 3.4 8.2l1.1-1.1 2 2 4.9-4.9 1.1 1.1z"/></svg>
-      Verified
-    </span>
-
-    {{-- The score belongs on the face it describes. --}}
-    @if((int) $reviews > 0)
-      <span class="tutor-score">★ {{ $rating }}<span class="tutor-score__n">({{ $reviews }})</span></span>
+    @if($isSample)
+      <span class="badge-sample">Sample profile</span>
     @else
-      <span class="tutor-score tutor-score--new">New</span>
+      <span class="badge-verified">
+        <svg width="11" height="11" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M6.5 11.3 3.4 8.2l1.1-1.1 2 2 4.9-4.9 1.1 1.1z"/></svg>
+        Verified
+      </span>
+
+      {{-- The score belongs on the face it describes. --}}
+      @if((int) $reviews > 0)
+        <span class="tutor-score">★ {{ $rating }}<span class="tutor-score__n">({{ $reviews }})</span></span>
+      @else
+        <span class="tutor-score tutor-score--new">New</span>
+      @endif
     @endif
   </div>
 
   <div class="tutor-body">
     <div class="tutor-headline">
       <h3 class="tutor-name">{{ $t->name }}</h3>
-      @if(!empty($compare))
+      @if(!empty($compare) && ! $isSample)
         <button type="button" class="btn btn-ghost btn-small js-compare-toggle tutor-compare"
           @foreach($compare as $key => $value) data-{{ $key }}="{{ $value }}" @endforeach
         >Compare</button>
       @endif
     </div>
 
+    @if(!empty($placeLabel))
+      <p class="tutor-reach">{{ $placeLabel }}</p>
+    @endif
     @if(!empty($place))
       <p class="tutor-location">
         <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 1a5 5 0 0 0-5 5c0 3.6 4.4 8.6 4.6 8.8a.5.5 0 0 0 .8 0C8.6 14.6 13 9.6 13 6a5 5 0 0 0-5-5m0 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4"/></svg>
@@ -79,6 +92,12 @@
     @endif
   </div>
 
+  @if($isSample)
+  <div class="tutor-actions">
+    <a class="btn-outline" href="{{ $profileUrl }}" rel="nofollow">View sample</a>
+    <a class="nxbtn tutor-match" href="#" data-modal-target="demoModal" title="{{ config('tutors.match_promise') }}">Get matched in 10 min</a>
+  </div>
+  @else
   <div class="tutor-actions">
     <a class="btn-outline" href="{{ $profileUrl }}">Profile</a>
     <a class="nxbtn tutor-wa" href="{{ $waLink }}" target="_blank" rel="nofollow noopener">
@@ -86,4 +105,5 @@
       WhatsApp
     </a>
   </div>
+  @endif
 </article>

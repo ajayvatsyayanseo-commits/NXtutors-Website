@@ -126,7 +126,9 @@ return [
             'title' => 'Fee Payment Policy',
             'type' => 'Policy',
             'tags' => ['payment', 'pay', 'upi', 'card', 'net banking', 'advance', 'refund'],
-            'snippet' => 'Fees are agreed directly with the tutor. NXTutors helps you discover and shortlist tutors; final payment terms are confirmed with the tutor before classes begin.',
+            // Confirmed by Ajay on 28 Sep 2026: payment is in advance. Same
+            // wording as the policy card in the Ask NXT AI panel.
+            'snippet' => 'Payments are made in advance. We accept UPI, cards and net banking. If you cancel within 24 hours of booking, you are eligible for a refund.',
             'url' => '/tutors',
         ],
         [

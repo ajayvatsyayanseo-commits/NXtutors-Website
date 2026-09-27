@@ -165,6 +165,7 @@ foreach (array_keys(config('subject_pages', [])) as $subjectPageKey) {
         ->defaults('key', $subjectPageKey)
         ->name('subject.' . str_replace('/', '.', $subjectPageKey));
 }
+Route::get('/become-a-tutor', [\App\Http\Controllers\BecomeTutorController::class, 'show'])->name('become-tutor');
 Route::get('/authors', [\App\Http\Controllers\AuthorController::class, 'index'])->name('authors.index');
 Route::get('/authors/{slug}', [\App\Http\Controllers\AuthorController::class, 'show'])->name('authors.show');
 Route::get('/city', [HomeController::class, 'cityIndex'])->name('city.index');

@@ -22,6 +22,7 @@ final class LocalAnswer
     /** intent key => [pattern, knowledge key] (first match wins) */
     private const INTENTS = [
         'fees' => ['/\b(?:fee|fees|charge|charges|cost|costs|price|pricing|rate|rates|how much|kitna|kitne)\b/', 'fees'],
+        'payment' => ['/\b(?:payment|pay|advance|refund|cancel|cancellation|upi|card|net banking)\b/', 'fee_payment'],
         'switch' => ['/\b(?:change|switch|replace)\b.*\btutor\b|\btutor\b.*\b(?:change|switch|replace)\b/', 'switch'],
         'demo' => ['/\b(?:demo|trial)\b/', 'demo'],
         'timings' => ['/\b(?:timing|timings|slot|slots|availability|available|weekend|weekends|evening|evenings)\b/', 'timings'],

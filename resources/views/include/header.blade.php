@@ -441,7 +441,23 @@ document.addEventListener('DOMContentLoaded', function () {
         renderTags();
       }
     });
+
+    // Lets other scripts add a value (e.g. "request a Guitar tutor" opens
+    // the demo form with Guitar already filled in).
+    window.nxTagAdd = window.nxTagAdd || {};
+    window.nxTagAdd[inputId] = function (value) {
+      value = String(value || '').trim();
+      if (value !== '' && !values.includes(value)) { values.push(value); renderTags(); }
+    };
   }
+
+  // [data-demo-subject]: open the demo form with that subject filled in.
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest ? e.target.closest('[data-demo-subject]') : null;
+    if (el && window.nxTagAdd && window.nxTagAdd.subjectInput) {
+      window.nxTagAdd.subjectInput(el.getAttribute('data-demo-subject'));
+    }
+  });
 
   setupTagInput('boardInput', 'boardTags', 'selectedBoards');
   setupTagInput('classInput', 'classTags', 'selectedClasses');

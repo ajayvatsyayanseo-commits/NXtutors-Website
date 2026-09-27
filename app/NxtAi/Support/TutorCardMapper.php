@@ -35,6 +35,9 @@ final class TutorCardMapper
             'gender' => $t['gender'] ?? null,
             'education' => $t['education'] ?? null,
             'match_reasons' => $t['match_reasons'] ?? [],
+            'is_sample' => (bool) ($t['is_sample'] ?? false),
+            'experience_years' => $t['experience_years'] ?? null,
+            'place_label' => $t['place_label'] ?? null,
         ];
 
         if (($t['experience_years'] ?? null) !== null && $t['experience_years'] > 0) {
