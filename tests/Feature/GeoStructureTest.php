@@ -479,6 +479,9 @@ class GeoStructureTest extends TestCase
         $this->assertContains('JEE', $caps['subjects']);
         $this->assertContains('IB', $caps['boards']);
         $this->assertNotContains('English', $caps['subjects'], 'mentioning English is not teaching it');
+
+        $cs = new \App\Models\Register(['name' => 'Dev', 'pro_desc' => 'B.Tech in Computer Science; I teach maths for Class 10.']);
+        $this->assertNotContains('Science', app(\App\NxtAi\Support\PublicTutorFieldMapper::class)->capabilities($cs)['subjects'], 'a B.Tech is not a science tutor');
     }
 
     public function test_sample_profiles_are_shown_honestly_after_real_tutors(): void

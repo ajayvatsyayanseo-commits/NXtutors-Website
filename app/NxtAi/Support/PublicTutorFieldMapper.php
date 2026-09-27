@@ -123,7 +123,8 @@ final class PublicTutorFieldMapper
                 'Physics' => '/\bphysics\b/',
                 'Chemistry' => '/\bchemistry\b/',
                 'Biology' => '/\bbiology\b/',
-                'Science' => '/\bscience\b/',
+                // Not "computer science" (a B.Tech) or data/social/political science.
+                'Science' => '/(?<!computer )(?<!data )(?<!social )(?<!political )\bscience\b/',
                 'English' => '/\benglish (?:grammar|literature|language)\b|\bteach(?:es|ing)? english\b/',
                 'Hindi' => '/\bhindi (?:grammar|literature|language)\b|\bteach(?:es|ing)? hindi\b/',
                 'Accountancy' => '/\baccount(?:s|ancy)\b/',

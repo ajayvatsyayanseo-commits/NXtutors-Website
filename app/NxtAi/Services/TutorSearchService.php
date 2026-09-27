@@ -46,7 +46,7 @@ final class TutorSearchService
         // several pooled queries, and tutor data changes slowly.
         try {
             return \Illuminate\Support\Facades\Cache::remember(
-                'tsearch.v2.'.md5(serialize($c)), 600, fn () => $this->searchNow($c)
+                'tsearch.v3.'.md5(serialize($c)), 600, fn () => $this->searchNow($c)
             );
         } catch (\Throwable $e) {
             return $this->searchNow($c);
