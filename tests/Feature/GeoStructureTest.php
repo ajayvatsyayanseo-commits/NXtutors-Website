@@ -468,4 +468,15 @@ class GeoStructureTest extends TestCase
         $this->get('/home/teachers?search=maths&place=gurgaon&mode=online&offset=0&limit=6')->assertOk();
         $this->assertSame('online', \Illuminate\Support\Facades\DB::table('search_events')->where('kind', 'search')->latest('id')->value('mode'));
     }
+
+    public function test_subjects_and_boards_are_read_from_the_bio(): void
+    {
+        $t = new \App\Models\Register(['name' => 'Asha', 'pro_desc' => 'I teach Maths and Physics for IB and CBSE students, and JEE aspirants.']);
+        $caps = app(\App\NxtAi\Support\PublicTutorFieldMapper::class)->capabilities($t);
+        $this->assertContains('Maths', $caps['subjects']);
+        $this->assertContains('Physics', $caps['subjects']);
+        $this->assertContains('JEE', $caps['subjects']);
+        $this->assertContains('IB', $caps['boards']);
+        $this->assertNotContains('English', $caps['subjects'], 'mentioning English is not teaching it');
+    }
 }

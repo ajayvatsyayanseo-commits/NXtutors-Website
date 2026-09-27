@@ -109,6 +109,36 @@ final class PublicTutorFieldMapper
             }
         }
 
+        // Most profiles carry only a category ("Academic (Class I–XII)") in
+        // their courses, and name the subjects and boards in the bio. Read
+        // those too, or a Maths tutor never matches a Maths search.
+        $bio = mb_strtolower(strip_tags(implode(' ', [(string) ($t->profile ?? ''), (string) ($t->profile_desc ?? ''), (string) ($t->pro_desc ?? '')])));
+        if ($bio !== '') {
+            foreach ([
+                'Maths' => '/\b(?:maths?|mathematics)\b/',
+                'Physics' => '/\bphysics\b/',
+                'Chemistry' => '/\bchemistry\b/',
+                'Biology' => '/\bbiology\b/',
+                'Science' => '/\bscience\b/',
+                'English' => '/\benglish (?:grammar|literature|language)\b|\bteach(?:es|ing)? english\b/',
+                'Hindi' => '/\bhindi (?:grammar|literature|language)\b|\bteach(?:es|ing)? hindi\b/',
+                'Accountancy' => '/\baccount(?:s|ancy)\b/',
+                'Economics' => '/\beconomics\b/',
+                'Computer Science' => '/\bcomputer science\b/',
+                'JEE' => '/\b(?:iit[- ]?)?jee\b/',
+                'NEET' => '/\bneet\b/',
+            ] as $subject => $pattern) {
+                if (preg_match($pattern, $bio)) {
+                    $subjects[] = $subject;
+                }
+            }
+            foreach (['CBSE' => '/\bcbse\b/', 'ICSE' => '/\bicse\b/', 'ISC' => '/\bisc\b/', 'IB' => '/\bib\b/', 'IGCSE' => '/\bigcse\b/'] as $board => $pattern) {
+                if (preg_match($pattern, $bio)) {
+                    $boards[] = $board;
+                }
+            }
+        }
+
         // Teaching mode also hinted by the register-level class_type.
         $modes = array_merge($modes, $this->modeTokens((string) ($t->class_type ?? '')));
 
