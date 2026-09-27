@@ -94,4 +94,21 @@ class ChatEndpointTest extends TestCase
             ->assertStatus(503)
             ->assertJson(['success' => false]);
     }
+
+    public function test_common_questions_are_answered_without_openai(): void
+    {
+        $fake = $this->fakeAi(); // nothing queued: calling the model would fail
+
+        $data = $this->postJson('/nxt-ai/chat', ['message' => 'What are the tutor fees?'])
+            ->assertStatus(200)->assertJson(['success' => true])->json();
+        $this->assertTrue($data['meta']['local']);
+        $this->assertStringContainsString('₹800', $data['reply']);
+
+        $this->assertTrue($this->postJson('/nxt-ai/chat', ['message' => 'How does the free demo work?'])->json('meta.local'));
+
+        // Searches and bookings still go to the agent.
+        $this->assertNull(\App\NxtAi\Support\LocalAnswer::match('maths tutor fees in Gurugram'));
+        $this->assertNull(\App\NxtAi\Support\LocalAnswer::match('I want to book a free demo class'));
+        $this->assertNull(\App\NxtAi\Support\LocalAnswer::match('find me a physics tutor'));
+    }
 }

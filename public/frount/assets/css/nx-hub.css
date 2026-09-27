@@ -378,3 +378,5 @@ body.page .footer-content--5 .footer-col--subjects ul{display:grid;grid-template
 .nx-sugg__item:hover,.nx-sugg__item.is-active{background:#eef4ff}
 .nx-sugg__tag{flex:0 0 auto;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;background:#e0ecff;color:#1d4ed8}
 @media (max-width:640px){.nx-sugg{max-height:60vh}}
+/* chat predictions open upwards: the input sits at the bottom of the card */
+.nx-sugg--chat{top:auto;bottom:calc(100% + 6px)}

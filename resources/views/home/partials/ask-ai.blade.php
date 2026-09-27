@@ -635,3 +635,7 @@
   }
 })();
 </script>
+@once
+  {{-- Predicted questions while typing (no server call per keystroke). --}}
+  <script src="{{ asset('frount/assets/js/nx-chat-suggest.js') }}?v={{ $nxtAssetV ?? 1 }}" defer></script>
+@endonce

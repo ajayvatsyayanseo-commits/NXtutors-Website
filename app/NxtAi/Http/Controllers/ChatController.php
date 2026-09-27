@@ -85,6 +85,25 @@ class ChatController
             return $handoff;
         }
 
+        // Common, general questions (fees, how the demo works, timings) are
+        // answered from the knowledge base without calling OpenAI: the same
+        // reply the tools would give, no model cost, no AI-message charge.
+        if ($local = \App\NxtAi\Support\LocalAnswer::match($userMessage)) {
+            $this->conversations->recordUser($conversation, $userMessage);
+            $message = $this->conversations->recordAssistant($conversation, $local['reply'], $local['blocks'], ['local' => $local['key']]);
+
+            return response()->json([
+                'success' => true,
+                'conversation_id' => $conversation->uid,
+                'message_id' => (string) $message->id,
+                'reply' => $local['reply'],
+                'blocks' => $local['blocks'],
+                'quick_replies' => $local['quick_replies'],
+                'sources' => $this->sources($local['blocks']),
+                'meta' => ['request_id' => null, 'has_more' => false, 'local' => true],
+            ]);
+        }
+
         $requestId = (string) Str::uuid();
 
         // The entitlement meter, charged before the model call and given back

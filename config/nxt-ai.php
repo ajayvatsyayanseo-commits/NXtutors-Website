@@ -154,6 +154,14 @@ return [
             'url' => '/tutors',
         ],
         [
+            'key' => 'switch',
+            'title' => 'Changing Your Tutor',
+            'type' => 'FAQ',
+            'tags' => ['change tutor', 'switch tutor', 'replace tutor', 'not happy', 'another tutor'],
+            'snippet' => 'Yes. If the match is not working, tell us and we recommend other verified tutors who fit better. Switching tutor is free.',
+            'url' => '/faqs',
+        ],
+        [
             'key' => 'how_to_choose',
             'title' => 'How to Choose the Right Tutor',
             'type' => 'Guide',

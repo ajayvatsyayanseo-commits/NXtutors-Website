@@ -182,6 +182,16 @@ class SearchQuery
     /** lowercased place phrase => [city name, area name|null], cached a day */
     public static function places(): array
     {
+        // Reading a query must never break a request: no place list, no places.
+        try {
+            return self::loadPlaces();
+        } catch (\Throwable $e) {
+            return [];
+        }
+    }
+
+    private static function loadPlaces(): array
+    {
         return Cache::remember('search.places.v1', 86400, function () {
             $cities = DB::table('city_managment')->where('status', 't')->whereNotNull('slug')->get(['id', 'city_name', 'slug']);
             $out = [];
