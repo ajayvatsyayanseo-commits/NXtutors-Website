@@ -49,7 +49,7 @@
       @endphp
       <li class="nxtc-card">
         <a class="nxtc-link" href="{{ url('city/' . $c->slug) }}">
-          <span class="nxtc-name">Home tutors in {{ $c->city_name }}</span>
+          <span class="nxtc-name">Home tutors in {{ \App\Support\Geo::displayName($c->slug, $c->city_name) }}</span>
           <span class="nxtc-meta">
             {{ Geo::stateOf($c->slug) }}@if($aka) · also {{ $aka }}@endif
           </span>
@@ -65,18 +65,12 @@
     @endforeach
   </ul>
 
-  @php $tcSubjects = \App\Support\SubjectLinks::pillars(); @endphp
-  @if(count($tcSubjects))
-    <h3 class="nx-card__kicker" style="margin:var(--nxt-s5) 0 var(--nxt-s3)">Popular subjects</h3>
-    <ul class="nx-chips nx-chips--rail">
-      @foreach($tcSubjects as $sp)<li><a class="nx-chip" href="{{ $sp['url'] }}">{{ $sp['label'] }}</a></li>@endforeach
-    </ul>
-  @endif
+  {{-- Subjects are linked from the Explore tabs at the top of the page. --}}
 
   @if($tcOthers->count())
     <h3 class="nx-card__kicker" style="margin:var(--nxt-s5) 0 var(--nxt-s3)">Also in</h3>
     <ul class="nx-chips nx-chips--rail">
-      @foreach($tcOthers as $c)<li><a class="nx-chip" href="{{ url('city/' . $c->slug) }}">{{ $c->city_name }}</a></li>@endforeach
+      @foreach($tcOthers as $c)<li><a class="nx-chip" href="{{ url('city/' . $c->slug) }}">{{ \App\Support\Geo::displayName($c->slug, $c->city_name) }}</a></li>@endforeach
       <li><a class="nx-chip nx-chip--muted" href="{{ url('city') }}">All cities by state →</a></li>
     </ul>
   @endif

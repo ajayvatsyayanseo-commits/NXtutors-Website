@@ -204,15 +204,10 @@ themeOptions.forEach(btn => {
   });
 });
 
-// Initial theme. Azure is the house colour a first-time visitor sees; a
-// returning visitor keeps whatever they picked, restored from localStorage
-// just below.
-let initialTheme = 'blue';
-try {
-  const saved = localStorage.getItem('nxt_theme');
-  if (saved && themeConfig[saved]) initialTheme = saved;
-} catch (e) {}
-applyTheme(initialTheme);
+// Initial theme: Azure, the house colour.
+// The picker is gone from the header, so a colour saved by an older visit
+// is ignored: everyone sees the house colour.
+applyTheme('blue');
 
 // ==========================
 // HERO SLIDER

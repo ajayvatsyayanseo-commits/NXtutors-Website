@@ -125,53 +125,8 @@
     </button>
 
 
-    <div class="theme-picker">
-      <button id="themeToggle" class="theme-toggle" type="button"
-              aria-haspopup="true" aria-expanded="false" aria-controls="themeMenu">
-        <span class="theme-dot" aria-hidden="true"></span>
-        <span class="nxt-sr-only">Colour theme:</span>
-        <span id="themeLabel" class="theme-label">Default</span>
-        <span class="caret" aria-hidden="true">▾</span>
-      </button>
-
-      <div id="themeMenu" class="theme-menu" role="menu" aria-label="Colour theme">
-        <button type="button" role="menuitemradio" aria-checked="false" class="theme-option" data-theme-option="default">
-          <span class="theme-option-dot theme-option-dot--default"></span>
-          <span>Default</span>
-          <span class="theme-option-check" aria-hidden="true">✓</span>
-        </button>
-
-        <button type="button" role="menuitemradio" aria-checked="false" class="theme-option" data-theme-option="blue">
-          <span class="theme-option-dot theme-option-dot--blue"></span>
-          <span>Blue</span>
-          <span class="theme-option-check" aria-hidden="true">✓</span>
-        </button>
-
-        <button type="button" role="menuitemradio" aria-checked="false" class="theme-option" data-theme-option="green">
-          <span class="theme-option-dot theme-option-dot--green"></span>
-          <span>Green</span>
-          <span class="theme-option-check" aria-hidden="true">✓</span>
-        </button>
-
-        <button type="button" role="menuitemradio" aria-checked="false" class="theme-option" data-theme-option="yellow">
-          <span class="theme-option-dot theme-option-dot--yellow"></span>
-          <span>Yellow</span>
-          <span class="theme-option-check" aria-hidden="true">✓</span>
-        </button>
-
-        <button type="button" role="menuitemradio" aria-checked="false" class="theme-option" data-theme-option="pink">
-          <span class="theme-option-dot theme-option-dot--pink"></span>
-          <span>Pink</span>
-          <span class="theme-option-check" aria-hidden="true">✓</span>
-        </button>
-
-        <button type="button" role="menuitemradio" aria-checked="false" class="theme-option" data-theme-option="orange">
-          <span class="theme-option-dot theme-option-dot--orange"></span>
-          <span>Orange</span>
-          <span class="theme-option-check" aria-hidden="true">✓</span>
-        </button>
-      </div>
-    </div>
+    {{-- One house colour for everyone (Azure, set in main.js). The colour
+         picker used to sit here and showed parents a stray "Azure" label. --}}
 
      <div class="cta-buttons">
   <a class="btn btn-accent topbar-whatsapp"

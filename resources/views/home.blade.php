@@ -17,18 +17,18 @@
 @php
   $nxtHome = url('/');
   $nxtFaqs = [
-    ['How does Nxtutors AI tutor matching work?', 'Our AI evaluates subject expertise, board alignment, class/exam needs, location feasibility, availability overlap, budget and reliability signals to recommend 2–3 high-fit tutors instead of long random lists.'],
-    ['Do you provide home tutors and online tutors across India?', 'Yes. Nxtutors supports home tutoring, online tutoring, institute mentoring and hybrid learning across India based on tutor availability and feasibility.'],
+    ['How does NXTutors AI tutor matching work?', 'Our AI evaluates subject expertise, board alignment, class/exam needs, location feasibility, availability overlap, budget and reliability signals to recommend 2–3 high-fit tutors instead of long random lists.'],
+    ['Do you provide home tutors and online tutors across India?', 'Yes. NXTutors supports home tutoring, online tutoring, institute mentoring and hybrid learning across India based on tutor availability and feasibility.'],
     ['Which classes and boards are supported?', 'We support Classes 6–12 across CBSE, ICSE, IB, ISC and IGCSE boards, including foundation support and board exam preparation.'],
     ['Do you support JEE and NEET preparation?', 'Yes. We match students with specialised JEE/NEET mentors for Physics, Chemistry, Maths and Biology based on goals, level and schedule.'],
-    ['Are tutors verified on Nxtutors?', 'Every educator undergoes structured verification and profile validation. We also track feedback and reliability signals to maintain quality and accountability.'],
+    ['Are tutors verified on NXTutors?', 'Every educator undergoes structured verification and profile validation. We also track feedback and reliability signals to maintain quality and accountability.'],
     ['How does the trial/demo class work?', 'A demo is a normal session to evaluate teaching style and student comfort. After the demo, you can continue with the same tutor or request a different match.'],
     ['What are the typical fees for tutors?', 'Fees depend on class, subject and experience. In most cases, tutoring ranges from ₹800 to ₹2500 per hour. We shortlist tutors aligned to your budget range.'],
     ['Can I change the tutor after hiring?', 'Yes. If the match is not working, we help you switch quickly by recommending alternate verified tutors with better fit.'],
     ['How quickly can I get matched with a tutor?', 'Typically you receive 2–3 recommendations within a short time after sharing your requirement — class, subjects, board, location, schedule and budget.'],
     ['What details should I share to get the best match?', 'Share class/grade, board, subjects, location (city or pincode), preferred days and time slots, mode (home or online) and budget. The more precise the input, the better the match.'],
     ['Do tutors give homework, tests and progress updates?', 'Many tutors follow structured plans with homework, periodic tests and feedback. You can also request weekly progress updates while finalising the tutor.'],
-    ['Which cities do you currently support?', 'Nxtutors supports tutor matching across India. Availability depends on the tutor network in each area, and online tutoring is available nationwide.'],
+    ['Which cities do you currently support?', 'NXTutors supports tutor matching across India. Availability depends on the tutor network in each area, and online tutoring is available nationwide.'],
   ];
 
   $nxtSchema = [
@@ -145,7 +145,9 @@
       <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false">
         <path d="M12 2.6l2.7 6.1 6.6.6-5 4.4 1.5 6.5L12 16.8l-5.8 3.4 1.5-6.5-5-4.4 6.6-.6z"/>
       </svg>
-      {{ $hero?->sub_title ?: 'Premium tutoring. Proven results.' }}
+      {{-- Fixed, not the banner row: that held "Gurugram · Home online",
+           which contradicts a pan-India headline. --}}
+      Across India · Home &amp; online
     </p>
 
     {{-- Deliberately not $hero->title. The banner row currently holds
@@ -163,9 +165,9 @@
     </h1>
 
     <p class="nxh__sub">
-      Verified home and online tutors for Classes 6–12.
-      Tell us the subject and your locality — our AI returns two or three real
-      matches, not a directory to sift through.
+      Verified home and online tutors for school subjects, board and entrance
+      exams, languages and skills. Tell us what you want to learn and your
+      locality — we return two or three real matches, not a directory to sift through.
     </p>
 
     {{-- Two fields, because two is what the matcher accepts: `search` is
@@ -173,14 +175,17 @@
          A third "Mode" control would look right and filter nothing. --}}
     <div class="nxh__search">
       <div class="nxh__field">
-        <label class="nxh__label" for="heroSearchInput">Search classes</label>
+        <label class="nxh__label" for="heroSearchInput">What do you want to learn?</label>
         <div class="nxh__control">
           <input
             type="text"
             id="heroSearchInput"
             class="nxh__input"
-            placeholder="e.g. Class 10 Maths"
+            placeholder="e.g. Class 10 Maths, IB Physics, JEE"
+            list="nxLearnList"
+            autocomplete="off"
           />
+          @include('home.partials.learn-datalist')
           <span class="nxh__control-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.6" y2="16.6"/></svg>
           </span>
@@ -219,6 +224,8 @@
       </svg>
       Free demo class · No card, no commitment
     </p>
+
+    @include('home.partials.popular-searches')
 
     <ul class="nxh__stats">
       @foreach($nxtHeroStats as [$figure, $label, $icon])
@@ -703,26 +710,8 @@ body.page .nxh__sweep{
 </style>
 
 
-<section class="section">
-        <div class="section-head">
-          <h2 class="section-title">Explore Tutors by Subject, Skill & Exam</h2>
-        </div>
-        <div class="grid grid--categories">
-         
-        @foreach($category as $rowcc)
-          <a href="{{ url('/')}}/category/{{ $rowcc->slug}}" class="tile">
-            <div class="tile-icon"><img src="{{ asset('storage/category') }}/{{ $rowcc->avatar}}" alt="icon" style="width:40px; height:40px; border-radius: 50%;" loading="lazy" decoding="async" /></div>
-            <div class="tile-main">
-              <div class="tile-kicker">{{ $rowcc->cat_title}}</div>
-              <!-- <div class="tile-title">All Subjects</div>
-              <div class="tile-meta">18 tutors nearby</div> -->
-            </div>
-          </a>
-            @endforeach
-
-         
-        </div>
-      </section>
+{{-- Replaces nine thin /category tiles (most had 0–1 courses). --}}
+@include('home.partials.explore')
     
 
 <section class="section section--suggested" id="suggestedTeachersSection">
@@ -772,7 +761,9 @@ body.page .nxh__sweep{
       
  
 
-<!-- AI TUTOR MATCHING -->
+
+
+ <!-- AI TUTOR MATCHING -->
 <section class="section ai-matching-section">
   <style>
     .ai-section-header {
@@ -935,12 +926,12 @@ body.page .nxh__sweep{
       }
     }
   </style>
-
+  
   <div class="ai-section-header">
-    <h2>AI-Based Tutor Matching Across India</h2>
-    <p>Nxtutors is an AI-powered tutor and education matching platform connecting parents and students with verified educators across India.</p>
+    <h2>How NXTutors finds the right tutor</h2>
+    <p>No long lists to sift through. Tell us the subject, class and area; we check subject, board, location, timing and budget, and share two or three tutors who fit.</p>
   </div>
-
+  
   <!-- Top Row Grid -->
   <div class="ai-grid-top">
     <!-- Card 1 -->
@@ -950,8 +941,8 @@ body.page .nxh__sweep{
           <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l-.019.007a1 1 0 0 0-.528.816v8.354a1 1 0 0 0 .528.816l6 2.5.019.007a.5.5 0 0 0 .372 0l6-2.5.019-.007a1 1 0 0 0 .528-.816V4.323a1 1 0 0 0-.528-.816l-6-2.5zM8 4.07 13.06 6.18 8 8.29 2.94 6.18 8 4.07zM2 7.64v4.44a.5.5 0 0 0 .264.44l5.236 2.18v-4.88L2 7.64zm12 0v4.44a.5.5 0 0 1-.264.44l-5.236 2.18v-4.88L14 7.64z"/>
         </svg>
       </div>
-      <h3>AI-Based Shortlisting</h3>
-      <p>Instead of browsing random tutor listings, our structured AI recommendation system evaluates academic compatibility and delivers a shortlist.</p>
+      <h3>Subject Expertise &amp; Experience</h3>
+      <p>We match the subject, class, board and exam you need to tutors who teach exactly that, with their experience and parent reviews.</p>
     </div>
 
     <!-- Card 2 -->
@@ -962,8 +953,8 @@ body.page .nxh__sweep{
           <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
         </svg>
       </div>
-      <h3>Academic Support</h3>
-      <p>We provide home tutors, online tutors, institute mentors and hybrid academic support for Classes 6–12 across CBSE, ICSE, IB, ISC and IGCSE boards.</p>
+      <h3>Availability &amp; Location</h3>
+      <p>We align your preferred schedule time slots, verify physical location feasibility for home tutoring, and test online readiness.</p>
     </div>
 
     <!-- Card 3 -->
@@ -973,63 +964,208 @@ body.page .nxh__sweep{
           <path d="M5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.24 62.24 0 0 1 5.072.56zm3.857 11.758a.5.5 0 0 0 .708-.708L5.707 7.682a.5.5 0 0 0-.708 0l-1.39 1.39a.5.5 0 1 0 .708.708l1.036-1.036 3.576 3.574z"/>
         </svg>
       </div>
-      <h3>Demo &amp; Evaluation</h3>
-      <p>We support competitive exam preparation including JEE and NEET. Parents can book a demo class to evaluate teaching clarity and decide confidently.</p>
+      <h3>Verification &amp; Budget</h3>
+      <p>Every match goes through verification to ensure profile reliability, budget alignment, and communication quality.</p>
     </div>
   </div>
 
   <!-- Large Card Below -->
   <div class="ai-card-large">
     <div class="ai-card-large-content">
-      <h3>Shortlist of 2–3 High-Fit Tutors</h3>
-      <p>Instead of browsing random tutor listings, our recommendation system evaluates compatibility and delivers a shortlist based on subject expertise, board alignment, availability, budget and reliability signals.</p>
+      <h3>Two or three matches, demo first</h3>
+      <p>You meet a short list, not a directory, and the first class is a free demo. If the fit is not right, switching tutor is free.</p>
       <div class="ai-check-list">
         <div class="ai-check-item">
           <span class="ai-check-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
           </span>
-          <span>Verified tutors for home, online and hybrid learning across India.</span>
+          <span>Board alignment (CBSE, ICSE, IB, ISC, IGCSE)</span>
         </div>
         <div class="ai-check-item">
           <span class="ai-check-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
           </span>
-          <span>Support for CBSE, ICSE, IB, ISC, IGCSE + JEE &amp; NEET.</span>
-        </div>
-        <div class="ai-check-item">
-          <span class="ai-check-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
-          </span>
-          <span>AI-based shortlisting: get 2–3 best matches instead of long lists.</span>
+          <span>Class &amp; exam specialization (JEE, NEET)</span>
         </div>
       </div>
     </div>
     
     <div class="ai-card-large-image">
-      <img src="{{ asset('frount/assets') }}/images/aa.png" alt="AI powered tutor matching platform across India" loading="lazy" decoding="async" />
-      <div class="ai-image-badge">AI-Based · Verified Tutors · India-Wide</div>
+      <img src="{{ asset('frount/assets') }}/images/aa1.png" alt="AI tutor matching compatibility system" loading="lazy" decoding="async" />
+      <div class="ai-image-badge">2–3 Best Matches · Demo First · Verified</div>
     </div>
   </div>
 </section>
 
-  
+      {{-- Only when there are real reviews: an empty "What parents say" hurts trust more than none. --}}
+      @if(($reviews ?? collect())->count())
+<section class="section">
+  <div class="section-head section-head--row">
+    <div>
+      <h2 class="section-title">What parents say</h2>
+      <p class="section-subtitle">Real reviews from local parents — quick highlights.</p>
+    </div>
+    <a href="javascript:void(0)" class="btn btn-ghost btn-small">All reviews</a>
+  </div>
 
-      <section class="section">
-        <div class="section-head">
-          <h2 class="section-title">Local tutors</h2>
-          <a class="btn btn-ghost btn-small" href="{{ route('tutors.index') }}">View all tutors →</a>
-        </div>
+  <div class="review-slider">
+    <style>
+      .review-slider {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+      
+      .review-track {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;   /* swipe settles on a whole card */
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+        padding: 16px 8px;
+        margin: -16px -8px;
+        scrollbar-width: none; /* Hide scrollbar for Firefox */
+      }
+      .review-track > * {
+        scroll-snap-align: start;
+      }
+      
+      .review-track::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for Chrome/Safari */
+      }
+      
+      .review-slide {
+        flex: 0 0 340px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 20px;
+        padding: 20px;
+        transition: background-color 0.2s, border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      
+      .review-slide:hover {
+        background: rgba(255, 255, 255, 0.06);
+        border-color: rgba(255, 255, 255, 0.16);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      }
+      
+      .card-header--review {
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+      }
+      
+      .avatar {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid rgba(255, 255, 255, 0.12);
+        flex-shrink: 0;
+      }
+      
+      .card-title {
+        font-size: 14.5px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 4px;
+      }
+      
+      .card-text {
+        font-size: 13.5px;
+        line-height: 1.55;
+        color: var(--text-subtle, #9ca3af);
+        font-style: italic;
+      }
+      
+      .tutor-meta {
+        margin-top: 10px;
+        font-size: 12px;
+        color: var(--accent, #fbbf24);
+        opacity: 0.85;
+        font-weight: 500;
+      }
+      
+      .rating--big {
+        margin-top: 16px;
+        font-size: 13.5px;
+        font-weight: 700;
+        color: var(--accent, #fbbf24);
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+      
+      /* Navigation Arrows */
+      .rnav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #fff !important;
+        border: 1px solid rgba(0, 0, 0, 0.05) !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+        color: #0f172a !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 10;
+        transition: transform 0.2s, background-color 0.2s, opacity 0.2s;
+        opacity: 0.9;
+        font-size: 18px !important;
+        line-height: 1 !important;
+      }
+      
+      .rnav:hover {
+        opacity: 1;
+        background: #f8fafc !important;
+        transform: translateY(-50%) scale(1.05);
+      }
+      
+      .rnav--left {
+        left: -20px;
+      }
+      
+      .rnav--right {
+        right: -20px;
+      }
+      
+      @media (max-width: 1024px) {
+        .rnav--left { left: -10px; }
+        .rnav--right { right: -10px; }
+      }
+      
+      @media (max-width: 640px) {
+        .review-slide {
+          flex: 0 0 290px;
+          padding: 16px;
+        }
+        .rnav {
+          display: none;
+        }
+      }
+    </style>
 
-        <div class="suggested-grid"
-             id="localTutorsRow"
-             data-url="{{ route('home.localTutors') }}">
-          {{-- Initial fallback (page load pe) --}}
-          @include('home.partials.local-teacher-cards', ['teachers' => $teachers ?? collect()])
-        </div>
-      </section>
+    {{-- Swipe/drag to browse — the strip snaps per card; no arrow chrome. --}}
+    <div class="review-track" id="reviewTrack">
+      @include('home.partials.review-slider-cards', ['reviews' => $reviews ?? collect()])
+    </div>
+  </div>
+</section>
+      @endif
 
-       
- 
+      @include('home.partials.guides')
 
       <!-- PARENT GUIDE -->
       <section class="section">
@@ -1246,431 +1382,26 @@ body.page .nxh__sweep{
       </section>
 
 
-      @include('home.partials.top-cities')
 
-      <!-- TRUSTED BY -->
-      <section class="section">
+      {{-- Cities: the metro cards and the state directory under two tabs. --}}
+      <section class="section" aria-labelledby="homeCitiesTitle">
         <div class="section-head">
-          <h2 class="section-title">Trusted by schools &amp; parents</h2>
-          <p class="section-subtitle">
-            We work with local schools and coaching centres — here are some logos.
-          </p>
+          <h2 class="section-title" id="homeCitiesTitle">Home tutors across India</h2>
         </div>
-
-        <div class="logo-row">
-          <div class="logo-card">
-            <img src="{{ asset('frount/assets') }}/images/logo1.png" loading="lazy" decoding="async" alt="School logo" />
+        <div class="nx-tabs nx-home-cities">
+          <div class="nx-tabs__bar" role="tablist">
+            <input class="nx-tabs__radio" type="radio" name="homeCities" id="homeCities-top" checked>
+            <label class="nx-tabs__tab" for="homeCities-top" role="tab">Top cities</label>
+            <input class="nx-tabs__radio" type="radio" name="homeCities" id="homeCities-state">
+            <label class="nx-tabs__tab" for="homeCities-state" role="tab">By state</label>
           </div>
-          <div class="logo-card">
-            <img src="{{ asset('frount/assets') }}/images/logo2.png" loading="lazy" decoding="async" alt="School logo" />
-          </div>
-          <div class="logo-card">
-            <img src="{{ asset('frount/assets') }}/images/logo3.png" loading="lazy" decoding="async" alt="School logo" />
-          </div>
-          <div class="logo-card">
-            <img src="{{ asset('frount/assets') }}/images/logo4.png" loading="lazy" decoding="async" alt="School logo" />
+          <div class="nx-tabs__panels">
+            <div class="nx-tabs__panel" role="tabpanel">@include('home.partials.top-cities')</div>
+            <div class="nx-tabs__panel" role="tabpanel">@include('home.partials.cities-served')</div>
           </div>
         </div>
       </section>
 
- 
-<!-- AI TUTOR MATCHING -->
-<section class="section ai-matching-section">
-  <style>
-    .ai-section-header {
-      text-align: center;
-      max-width: 700px;
-      margin: 0 auto 40px;
-    }
-    
-    .ai-section-header h2 {
-      font-size: clamp(24px, 3.5vw, 32px);
-      font-weight: 800;
-      color: #fff;
-      margin-bottom: 12px;
-    }
-    
-    .ai-section-header p {
-      font-size: 15px;
-      line-height: 1.6;
-      color: var(--text-subtle, #9ca3af);
-    }
-    
-    /* Top 3 Columns Grid */
-    .ai-grid-top {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      margin-bottom: 24px;
-    }
-    
-    .ai-card-small {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 20px;
-      padding: 24px;
-      transition: transform 0.2s, background-color 0.2s, border-color 0.2s;
-    }
-    
-    .ai-card-small:hover {
-      background: rgba(255, 255, 255, 0.06);
-      border-color: rgba(255, 255, 255, 0.16);
-      transform: translateY(-2px);
-    }
-    
-    .ai-card-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      background: rgba(251, 191, 36, 0.1);
-      border: 1px solid rgba(251, 191, 36, 0.2);
-      color: var(--accent, #fbbf24);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 20px;
-    }
-    
-    .ai-card-small h3 {
-      font-size: 17px;
-      font-weight: 700;
-      color: #fff;
-      margin-bottom: 10px;
-    }
-    
-    .ai-card-small p {
-      font-size: 13.5px;
-      line-height: 1.6;
-      color: var(--text-subtle, #9ca3af);
-      margin: 0;
-    }
-    
-    /* Large Card Below */
-    .ai-card-large {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 24px;
-      padding: 32px;
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 40px;
-      align-items: center;
-    }
-    
-    .ai-card-large-content h3 {
-      font-size: clamp(20px, 3vw, 24px);
-      font-weight: 800;
-      color: #fff;
-      margin-bottom: 14px;
-    }
-    
-    .ai-card-large-content p {
-      font-size: 14.5px;
-      line-height: 1.6;
-      color: var(--text-subtle, #9ca3af);
-      margin: 0 0 24px;
-    }
-    
-    .ai-check-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-    
-    .ai-check-item {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 14.5px;
-      font-weight: 600;
-      color: #fff;
-    }
-    
-    .ai-check-icon {
-      color: #10b981; /* Emerald green checkmark */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    .ai-card-large-image {
-      position: relative;
-      border-radius: 16px;
-      overflow: hidden;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-    }
-    
-    .ai-card-large-image img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    
-    .ai-image-badge {
-      position: absolute;
-      bottom: 16px;
-      left: 16px;
-      background: rgba(15, 23, 42, 0.85);
-      backdrop-filter: blur(8px);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      padding: 6px 14px;
-      border-radius: 30px;
-      font-size: 11px;
-      font-weight: 700;
-      color: #fff;
-      letter-spacing: 0.5px;
-    }
-    
-    /* Responsive */
-    @media (max-width: 991px) {
-      .ai-grid-top {
-        grid-template-columns: 1fr;
-        gap: 16px;
-      }
-      .ai-card-large {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        padding: 24px;
-      }
-    }
-  </style>
-  
-  <div class="ai-section-header">
-    <h2>How Our AI Tutor Matching System Works</h2>
-    <p>We avoid random listings. Our engine processes structured compatibility parameters to recommend only the top 2–3 precise fits.</p>
-  </div>
-  
-  <!-- Top Row Grid -->
-  <div class="ai-grid-top">
-    <!-- Card 1 -->
-    <div class="ai-card-small">
-      <div class="ai-card-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-          <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l-.019.007a1 1 0 0 0-.528.816v8.354a1 1 0 0 0 .528.816l6 2.5.019.007a.5.5 0 0 0 .372 0l6-2.5.019-.007a1 1 0 0 0 .528-.816V4.323a1 1 0 0 0-.528-.816l-6-2.5zM8 4.07 13.06 6.18 8 8.29 2.94 6.18 8 4.07zM2 7.64v4.44a.5.5 0 0 0 .264.44l5.236 2.18v-4.88L2 7.64zm12 0v4.44a.5.5 0 0 1-.264.44l-5.236 2.18v-4.88L14 7.64z"/>
-        </svg>
-      </div>
-      <h3>Subject Expertise &amp; Experience</h3>
-      <p>Our AI matches subject relevance, teaching experience, tutoring clarity, feedback signals, and student outcome patterns.</p>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="ai-card-small">
-      <div class="ai-card-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-          <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM11 9.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM11 12.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM8 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM8 9.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM8 12.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM5 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM5 9.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM5 12.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-          <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-        </svg>
-      </div>
-      <h3>Availability &amp; Location</h3>
-      <p>We align your preferred schedule time slots, verify physical location feasibility for home tutoring, and test online readiness.</p>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="ai-card-small">
-      <div class="ai-card-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-          <path d="M5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.24 62.24 0 0 1 5.072.56zm3.857 11.758a.5.5 0 0 0 .708-.708L5.707 7.682a.5.5 0 0 0-.708 0l-1.39 1.39a.5.5 0 1 0 .708.708l1.036-1.036 3.576 3.574z"/>
-        </svg>
-      </div>
-      <h3>Verification &amp; Budget</h3>
-      <p>Every match goes through verification to ensure profile reliability, budget alignment, and communication quality.</p>
-    </div>
-  </div>
-
-  <!-- Large Card Below -->
-  <div class="ai-card-large">
-    <div class="ai-card-large-content">
-      <h3>2–3 Best Matches, Guaranteed</h3>
-      <p>Our system helps parents avoid confusion and saves time by delivering 2–3 precise tutor recommendations with high match confidence. You can book a demo to confirm the fit before continuing.</p>
-      <div class="ai-check-list">
-        <div class="ai-check-item">
-          <span class="ai-check-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
-          </span>
-          <span>Board alignment (CBSE, ICSE, IB, ISC, IGCSE)</span>
-        </div>
-        <div class="ai-check-item">
-          <span class="ai-check-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
-          </span>
-          <span>Class &amp; exam specialization (JEE, NEET)</span>
-        </div>
-      </div>
-    </div>
-    
-    <div class="ai-card-large-image">
-      <img src="{{ asset('frount/assets') }}/images/aa1.png" alt="AI tutor matching compatibility system" loading="lazy" decoding="async" />
-      <div class="ai-image-badge">2–3 Best Matches · Demo First · Verified</div>
-    </div>
-  </div>
-</section>
- <section class="section">
-  <div class="section-head section-head--row">
-    <div>
-      <h2 class="section-title">What parents say</h2>
-      <p class="section-subtitle">Real reviews from local parents — quick highlights.</p>
-    </div>
-    <a href="javascript:void(0)" class="btn btn-ghost btn-small">All reviews</a>
-  </div>
-
-  <div class="review-slider">
-    <style>
-      .review-slider {
-        position: relative;
-        display: flex;
-        align-items: center;
-        width: 100%;
-      }
-      
-      .review-track {
-        display: flex;
-        gap: 20px;
-        overflow-x: auto;
-        scroll-behavior: smooth;
-        scroll-snap-type: x mandatory;   /* swipe settles on a whole card */
-        -webkit-overflow-scrolling: touch;
-        width: 100%;
-        padding: 16px 8px;
-        margin: -16px -8px;
-        scrollbar-width: none; /* Hide scrollbar for Firefox */
-      }
-      .review-track > * {
-        scroll-snap-align: start;
-      }
-      
-      .review-track::-webkit-scrollbar {
-        display: none; /* Hide scrollbar for Chrome/Safari */
-      }
-      
-      .review-slide {
-        flex: 0 0 340px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background: rgba(255, 255, 255, 0.04);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 20px;
-        padding: 20px;
-        transition: background-color 0.2s, border-color 0.2s, transform 0.2s, box-shadow 0.2s;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      }
-      
-      .review-slide:hover {
-        background: rgba(255, 255, 255, 0.06);
-        border-color: rgba(255, 255, 255, 0.16);
-        transform: translateY(-2px);
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-      }
-      
-      .card-header--review {
-        display: flex;
-        gap: 16px;
-        align-items: flex-start;
-      }
-      
-      .avatar {
-        width: 48px;
-        height: 48px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 2px solid rgba(255, 255, 255, 0.12);
-        flex-shrink: 0;
-      }
-      
-      .card-title {
-        font-size: 14.5px;
-        font-weight: 700;
-        color: #fff;
-        margin-bottom: 4px;
-      }
-      
-      .card-text {
-        font-size: 13.5px;
-        line-height: 1.55;
-        color: var(--text-subtle, #9ca3af);
-        font-style: italic;
-      }
-      
-      .tutor-meta {
-        margin-top: 10px;
-        font-size: 12px;
-        color: var(--accent, #fbbf24);
-        opacity: 0.85;
-        font-weight: 500;
-      }
-      
-      .rating--big {
-        margin-top: 16px;
-        font-size: 13.5px;
-        font-weight: 700;
-        color: var(--accent, #fbbf24);
-        display: flex;
-        align-items: center;
-        gap: 4px;
-      }
-      
-      /* Navigation Arrows */
-      .rnav {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background: #fff !important;
-        border: 1px solid rgba(0, 0, 0, 0.05) !important;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
-        color: #0f172a !important;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        z-index: 10;
-        transition: transform 0.2s, background-color 0.2s, opacity 0.2s;
-        opacity: 0.9;
-        font-size: 18px !important;
-        line-height: 1 !important;
-      }
-      
-      .rnav:hover {
-        opacity: 1;
-        background: #f8fafc !important;
-        transform: translateY(-50%) scale(1.05);
-      }
-      
-      .rnav--left {
-        left: -20px;
-      }
-      
-      .rnav--right {
-        right: -20px;
-      }
-      
-      @media (max-width: 1024px) {
-        .rnav--left { left: -10px; }
-        .rnav--right { right: -10px; }
-      }
-      
-      @media (max-width: 640px) {
-        .review-slide {
-          flex: 0 0 290px;
-          padding: 16px;
-        }
-        .rnav {
-          display: none;
-        }
-      }
-    </style>
-
-    {{-- Swipe/drag to browse — the strip snaps per card; no arrow chrome. --}}
-    <div class="review-track" id="reviewTrack">
-      @include('home.partials.review-slider-cards', ['reviews' => $reviews ?? collect()])
-    </div>
-  </div>
-</section>
       <!-- FAQ -->
       <section class="section">
         <style>
@@ -1788,7 +1519,7 @@ body.page .nxh__sweep{
     <!-- LEFT COLUMN (6) -->
     <div class="faq-list">
       <details class="faq-item">
-        <summary>How does Nxtutors AI tutor matching work?</summary>
+        <summary>How does NXTutors AI tutor matching work?</summary>
         <p>
           Our AI evaluates subject expertise, board alignment, class/exam needs, location feasibility,
           availability overlap, budget and reliability signals to recommend 2–3 high-fit tutors instead
@@ -1799,7 +1530,7 @@ body.page .nxh__sweep{
       <details class="faq-item">
         <summary>Do you provide home tutors and online tutors across India?</summary>
         <p>
-          Yes. Nxtutors supports home tutoring, online tutoring, institute mentoring and hybrid learning
+          Yes. NXTutors supports home tutoring, online tutoring, institute mentoring and hybrid learning
           across India based on tutor availability and feasibility.
         </p>
       </details>
@@ -1821,7 +1552,7 @@ body.page .nxh__sweep{
       </details>
 
       <details class="faq-item">
-        <summary>Are tutors verified on Nxtutors?</summary>
+        <summary>Are tutors verified on NXTutors?</summary>
         <p>
           Every educator undergoes structured verification and profile validation. We also track feedback and
           reliability signals to maintain quality and accountability.
@@ -1882,7 +1613,7 @@ body.page .nxh__sweep{
       <details class="faq-item">
         <summary>Which cities do you currently support?</summary>
         <p>
-          Nxtutors supports tutor matching across India. Availability depends on tutor network in each area, and
+          NXTutors supports tutor matching across India. Availability depends on tutor network in each area, and
           online tutoring is available nationwide.
         </p>
       </details>
@@ -1890,106 +1621,19 @@ body.page .nxh__sweep{
   </div>
 </section>
 
- 
+      {{-- Closing call to action: the amber primary is the page's one main action. --}}
       <section class="section">
-        <style>
-          .cta-card-new {
-            background: linear-gradient(135deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%);
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            border-radius: 24px;
-            padding: 56px 24px;
-            text-align: center;
-            max-width: 1000px;
-            margin: 0 auto;
-            position: relative;
-            overflow: hidden;
-          }
-          
-          .cta-card-new h3 {
-            color: #fff;
-            font-size: clamp(24px, 4vw, 36px);
-            font-weight: 800;
-            margin: 0 0 16px;
-            line-height: 1.25;
-          }
-          
-          .cta-card-new p {
-            color: var(--text-subtle, #9ca3af);
-            font-size: 15px;
-            line-height: 1.6;
-            max-width: 640px;
-            margin: 0 auto 32px;
-          }
-          
-          .cta-card-buttons {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 16px;
-            flex-wrap: wrap;
-          }
-          
-          .cta-btn-primary {
-            background: #fff;
-            color: #020617 !important;
-            border: 1px solid transparent;
-            padding: 12px 32px;
-            border-radius: 50px;
-            font-size: 15px;
-            font-weight: 700;
-            cursor: pointer;
-            text-decoration: none;
-            transition: background-color 0.2s, transform 0.15s;
-          }
-          .cta-btn-primary:hover {
-            background: #f1f5f9;
-            transform: translateY(-1px);
-          }
-          
-          .cta-btn-outline {
-            background: transparent;
-            color: #fff !important;
-            border: 1px solid rgba(255, 255, 255, 0.25);
-            padding: 12px 32px;
-            border-radius: 50px;
-            font-size: 15px;
-            font-weight: 600;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            transition: background-color 0.2s, border-color 0.2s, transform 0.15s;
-          }
-          .cta-btn-outline:hover {
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(255, 255, 255, 0.45);
-            transform: translateY(-1px);
-          }
-        </style>
-
-        <div class="cta-card-new">
-          <h3>Book a demo class — limited slots today</h3>
-          <p>Get a free 30-minute demo with a top local tutor. Slots fill fast due to academic demand.</p>
-          <div class="cta-card-buttons">
-            <a href="#" class="cta-btn-primary" data-modal-target="demoModal">Book Free Demo</a>
-            <a href="tel:+917836034313" class="cta-btn-outline">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="vertical-align: middle;">
-                <path d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-              </svg>
-              <span>Call Us Now</span>
-            </a>
+        <div class="nx-sec nx-cta-band" aria-label="Book a demo">
+          <div>
+            <h2 class="nx-sec__title">Try a tutor before you decide</h2>
+            <p class="nx-sec__sub">Tell us the subject, class and your area. We share two or three matched tutors, and the first class is a free demo. No card, no commitment.</p>
+          </div>
+          <div class="nx-cta-row">
+            <a class="nx-cta nx-cta--primary" href="#" data-modal-target="demoModal">Book a free demo class</a>
+            <a class="nx-cta nx-cta--ghost" href="tel:+917836034313">Call us</a>
           </div>
         </div>
       </section>
-
-      {{-- The sliding strip of every subject we tutor, last thing before the footer. --}}
-      @include('home.partials.course-marquee')
-
-      {{-- Coverage band: real city pages, linked, just above the footer. --}}
-      @include('home.partials.guides')
-
-      @include('home.partials.cities-served')
 
     </main>
 
@@ -3566,14 +3210,31 @@ $(document).ready(function () {
         return $('#heroSearchInput').val().trim();
     }
 
+    // Results land in "Suggested for your child"; take the parent there.
+    function showResults() {
+        const el = document.getElementById('suggestedTeachersSection');
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
     $('#heroSearchBtn').on('click', function () {
         loadTeachers(heroQuery(), 0, false);
+        showResults();
+    });
+
+    // Popular-search chips and "find a tutor" chips in Explore fill the
+    // search box and run the same search.
+    $(document).on('click', '[data-hero-search]', function (e) {
+        e.preventDefault();
+        $('#heroSearchInput').val($(this).data('hero-search'));
+        loadTeachers(heroQuery(), 0, false);
+        showResults();
     });
 
     $('#heroSearchInput, #heroSearchArea').on('keypress', function (e) {
         if (e.which === 13) {
             e.preventDefault();
             loadTeachers(heroQuery(), 0, false);
+            showResults();
         }
     });
 

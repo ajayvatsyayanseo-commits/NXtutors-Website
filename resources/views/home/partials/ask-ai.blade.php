@@ -31,6 +31,16 @@
           'Online option' => $aiPlace !== '' ? null : 'Can the classes be online?',
           'Help with this topic' => $aiType === 'blog' && !empty($aiPage['topic']) ? 'I need a tutor to help with: ' . $aiPage['topic'] : null,
       ]);
+  } elseif (empty($kbTutor)) {
+      // Home: one-tap starts, so the chat opens with something to press
+      // instead of an empty box.
+      $aiStarters = [
+          'Find a tutor near me' => 'Find me a home tutor near me',
+          'Tutor fees' => 'What are the tutor fees?',
+          'Home or online?' => 'Can the classes be at home or online?',
+          'Book a free demo' => 'I want to book a free demo class',
+          'Languages & skills' => 'Do you have tutors for languages, music or coding?',
+      ];
   }
   $aiGreeting = match (true) {
       !empty($kbTutor) => null,
@@ -39,7 +49,7 @@
       $aiPlace !== '' => 'Looking for a home tutor in ' . $aiPlace . '?',
       $aiWhat !== '' => 'Looking for a ' . $aiWhat . (!empty($aiPage['class']) ? ' tutor for ' . $aiPage['class'] : ' home tutor') . '?',
       $aiType !== 'home' => 'Looking for a home or online tutor?',
-      default => null,
+      default => 'Tell me the subject, class and your area, or tap one of these:',
   };
 @endphp
 {{-- The chat's styles live in home.css. The home page and tutor profiles

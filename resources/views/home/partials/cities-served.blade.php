@@ -41,7 +41,7 @@
         <a class="nx-card__kicker" style="text-decoration:none" href="{{ url('city') }}#{{ Geo::stateSlug($state) }}">{{ $state }}</a>
         <ul class="nx-chips" style="margin-top:6px">
           @foreach($list as $c)
-            <li style="border:0;padding:0"><a class="nx-chip" href="{{ url('city/' . $c->slug) }}">{{ $c->city_name }}</a></li>
+            <li style="border:0;padding:0"><a class="nx-chip" href="{{ url('city/' . $c->slug) }}">{{ \App\Support\Geo::displayName($c->slug, $c->city_name) }}</a></li>
           @endforeach
         </ul>
       </div>

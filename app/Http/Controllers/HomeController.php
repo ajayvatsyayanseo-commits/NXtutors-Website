@@ -289,10 +289,19 @@ public function sitemapSection(string $section)
         break;
 
     case 'courses':
+    // Only categories with at least one live course, each URL once, and
+    // never a duplicate spelling ("class--x"); see showCategory().
+    $withCourses = Product::where('status', 't')->get(['cat_id', 'pid', 'cid'])
+        ->flatMap(fn ($p) => [$p->cat_id, $p->pid, $p->cid])->filter()->unique()->all();
+    $seenCats = [];
     Category::where('status', 't')
     ->whereNotNull('slug')
-    ->chunk(500, function ($categories) use (&$urls, $baseUrl) {
+    ->chunk(500, function ($categories) use (&$urls, &$seenCats, $baseUrl, $withCourses) {
         foreach ($categories as $cat) {
+            if (! in_array($cat->id, $withCourses) || str_contains($cat->slug, '--') || isset($seenCats[$cat->slug])) {
+                continue;
+            }
+            $seenCats[$cat->slug] = true;
             $urls[] = [
                 'loc' => $baseUrl . '/category/' . $cat->slug,
                 'lastmod' => optional($cat->updated_at)->toDateString() ?? now()->toDateString(),
@@ -357,6 +366,13 @@ Product::where('status', 't')
 
     public function showCategory($slug1, $slug2 = null, $slug3 = null)
 {
+    // "class--x" and "class---xi" are duplicate spellings of "class-x" left
+    // by the admin; one URL per class, so they 301 to the clean slug.
+    $clean = array_map(fn ($s) => $s === null ? null : preg_replace('/-{2,}/', '-', $s), [$slug1, $slug2, $slug3]);
+    if ($clean !== [$slug1, $slug2, $slug3] && Category::where('slug', $clean[0])->exists()) {
+        return redirect()->to(url('/category/' . implode('/', array_filter($clean))), 301);
+    }
+
     $slugs = array_filter([$slug1, $slug2, $slug3]);
     $category = null;
     
@@ -385,9 +401,7 @@ Product::where('status', 't')
 
     $children = $category->childcatlist()->get();
 
-    $metatitle = $category->meta_title ?? null; ;
-    $metakey = '' ;
-    $metadesc =$category->meta_desc ?? null; ;;
+    $metakey = '';
 
      $products = Product::where(function($query) use ($category) {
         $query->where('cat_id', $category->id)
@@ -395,7 +409,15 @@ Product::where('status', 't')
               ->orWhere('cid', $category->id);
     })->where('status', 't')->orderBy('id', 'desc')->get();
 
-    return view('singlecat', compact('category', 'children' , 'products','metatitle','metakey','metadesc'));
+    // Admin meta first; otherwise a real title instead of the bare site name.
+    $catName = html_entity_decode(trim(rtrim((string) $category->cat_title, ':')), ENT_QUOTES);
+    $metatitle = trim((string) $category->meta_title) ?: $catName . ' Tutors – Home & Online | NXTutors';
+    $metadesc = trim((string) $category->meta_desc) ?: 'Verified ' . $catName . ' tutors on NXTutors, at home or online across India. See courses, compare tutors and book a free demo class.';
+    // A category with no courses is an empty page: keep it out of the index
+    // (and out of the sitemap) until it has something to show.
+    $metarobots = $products->isEmpty() ? 'noindex, follow' : null;
+
+    return view('singlecat', compact('category', 'children' , 'products','metatitle','metakey','metadesc','metarobots'));
 }
 
 /**

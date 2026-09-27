@@ -50,7 +50,7 @@ class Geo
         'guwahati'           => ['state' => 'Assam',            'metro' => false, 'aka' => null,        'aliases' => []],
         'patna'              => ['state' => 'Bihar',            'metro' => false, 'aka' => null,        'aliases' => []],
         'ranchi'             => ['state' => 'Jharkhand',        'metro' => false, 'aka' => null,        'aliases' => []],
-        'tata'               => ['state' => 'Jharkhand',        'metro' => false, 'aka' => 'Jamshedpur','aliases' => ['jamshedpur', 'tatanagar']],
+        'tata'               => ['state' => 'Jharkhand',        'metro' => false, 'aka' => 'Jamshedpur','aliases' => ['jamshedpur', 'tatanagar'], 'display' => 'Jamshedpur'],
     ];
 
     public const OTHER_STATE = 'Other cities';
@@ -85,6 +85,15 @@ class Geo
     public static function isMetro(string $slug): bool
     {
         return (bool) (self::CITIES[$slug]['metro'] ?? false);
+    }
+
+    /**
+     * The name parents know a city by, for links and chips: the admin row
+     * for Jamshedpur is called "Tata" (slug kept for its URL).
+     */
+    public static function displayName(string $slug, string $name): string
+    {
+        return self::CITIES[$slug]['display'] ?? $name;
     }
 
     public static function akaOf(string $slug): ?string
