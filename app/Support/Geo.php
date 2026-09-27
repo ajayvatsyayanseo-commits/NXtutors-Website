@@ -28,7 +28,7 @@ class Geo
      */
     public const CITIES = [
         'delhi-ncr'          => ['state' => 'Delhi NCR',        'metro' => true,  'aka' => 'New Delhi', 'aliases' => ['delhi', 'new delhi', 'noida', 'greater noida', 'ghaziabad', 'gautam budh', 'gautam budh nagar', 'gautam buddha nagar', 'khora', 'indirapuram', 'dwarka', 'saket']],
-        'gurugram'           => ['state' => 'Haryana',          'metro' => true,  'aka' => 'Gurgaon',   'aliases' => ['gurgaon', 'gurugram', 'dlf qe', 'dlf-qe']],
+        'gurugram'           => ['state' => 'Haryana',          'metro' => true,  'aka' => 'Gurgaon',   'aliases' => ['gurgaon', 'gurugram', 'dlf qe', 'dlf-qe', 'wazirabad', 'sikanderpur', 'nathupur', 'chakkarpur', 'jharsa', 'kanhai', 'badshahpur', 'sohna road', 'golf course road']],
         'faridabad'          => ['state' => 'Haryana',          'metro' => false, 'aka' => null,        'aliases' => []],
         'mumbai'             => ['state' => 'Maharashtra',      'metro' => true,  'aka' => 'Bombay',    'aliases' => ['bombay', 'navi mumbai', 'thane', 'colaba', 'tardeo', 'boriwali west', 'borivali west', 'borivali', 'thakur village', 'andheri', 'powai', 'bandra']],
         'pune'               => ['state' => 'Maharashtra',      'metro' => true,  'aka' => null,        'aliases' => []],

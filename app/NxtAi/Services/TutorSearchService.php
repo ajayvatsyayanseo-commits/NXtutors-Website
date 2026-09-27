@@ -46,7 +46,7 @@ final class TutorSearchService
         // several pooled queries, and tutor data changes slowly.
         try {
             return \Illuminate\Support\Facades\Cache::remember(
-                'tsearch.v1.'.md5(serialize($c)), 600, fn () => $this->searchNow($c)
+                'tsearch.v2.'.md5(serialize($c)), 600, fn () => $this->searchNow($c)
             );
         } catch (\Throwable $e) {
             return $this->searchNow($c);
@@ -66,6 +66,8 @@ final class TutorSearchService
         $filtered = $this->applyContentFilters($public, $c);
         $relaxed = null;
         $widened = null;
+        // Real tutors actually in the city, before any widening.
+        $realLocal = $this->realCount($filtered);
 
         // Location cascade: area and zone are ranked inside the city; if the
         // city has fewer than MIN_REAL real tutors who fit, widen to the
@@ -114,6 +116,7 @@ final class TutorSearchService
             'relaxed' => $relaxed,
             'widened' => $widened,
             'real' => $this->realCount($filtered),
+            'real_local' => $relaxed ? 0 : ($c->city !== null && $c->teachingMode !== 'online' ? $realLocal : $this->realCount($filtered)),
         ];
     }
 

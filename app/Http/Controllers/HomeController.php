@@ -765,7 +765,9 @@ public function compareDefaults(Request $request)
         $cards = array_slice($result['cards'] ?? [], $offset, $limit);
         $exact = ($result['relaxed'] ?? null) ? 0 : (int) ($result['matched'] ?? 0);
         // What the bar counts: verified (real) tutors only, never samples.
-        $exactReal = ($result['relaxed'] ?? null) ? 0 : (int) ($result['real'] ?? 0);
+        // Home counts only real tutors in the city itself, not those the
+        // cascade brought in from the state or online.
+        $exactReal = ($result['relaxed'] ?? null) ? 0 : (int) ($mode === 'online' ? ($result['real'] ?? 0) : ($result['real_local'] ?? 0));
 
         // Home and online answer different questions, so the first page says
         // how many of each match, and offers online honestly when home tutors
@@ -774,7 +776,7 @@ public function compareDefaults(Request $request)
         if ($offset === 0 && $q['subject'] && $q['city']) {
             $other = $mode === 'online' ? 'home' : 'online';
             $otherResult = $service->search($criteria($other, 1));
-            $otherReal = ($otherResult['relaxed'] ?? null) ? 0 : (int) ($otherResult['real'] ?? 0);
+            $otherReal = ($otherResult['relaxed'] ?? null) ? 0 : (int) ($other === 'online' ? ($otherResult['real'] ?? 0) : ($otherResult['real_local'] ?? 0));
             $counts = [
                 'home' => $mode === 'online' ? $otherReal : $exactReal,
                 'online' => $mode === 'online' ? $exactReal : $otherReal,

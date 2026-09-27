@@ -252,7 +252,7 @@ final class TutorRanker
             return [2.0, 'In '.\App\Support\Geo::stateOf($want)];
         }
 
-        return [3.5, $tutorCity !== '' ? 'From '.ucwords($tutorCity).' · online' : 'Online'];
+        return [3.5, $tutorCity !== '' ? 'From '.ucwords(mb_strtolower($tutorCity)).' · online' : 'Online'];
     }
 
     /** The short place line on a result card ("In Sector 56", "In Haryana"). */
