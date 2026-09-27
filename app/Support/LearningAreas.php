@@ -55,7 +55,9 @@ class LearningAreas
     {
         $all = collect(self::areas())->flatMap(fn ($a, $k) => collect($a['items'])->map(fn ($i) => $i + ['area' => $k]));
         $core = $all->filter(fn ($i) => in_array($i['label'], ['Maths', 'Science', 'Physics', 'Chemistry', 'JEE Physics', 'NEET Biology', 'IB Maths'], true));
-        $other = $all->filter(fn ($i) => in_array($i['area'], ['languages', 'skills'], true))->sortByDesc(fn ($i) => (int) ($i['tutors'] ?? 0));
+        // Languages and skills earn a place only with a real bench of tutors.
+        $other = $all->filter(fn ($i) => in_array($i['area'], ['languages', 'skills'], true) && (int) ($i['tutors'] ?? 0) >= 5)
+            ->sortByDesc(fn ($i) => (int) ($i['tutors'] ?? 0));
 
         return $core->concat($other)->unique('label')->take($limit)->values()->all();
     }

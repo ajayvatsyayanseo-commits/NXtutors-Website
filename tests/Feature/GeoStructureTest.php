@@ -450,4 +450,22 @@ class GeoStructureTest extends TestCase
         $token = rtrim(strtr(base64_encode('502-nxt'), '+/', '-_'), '=');
         $this->get('/tutor/mumbai/' . $token . '/dhruve-more')->assertOk()->assertSee('name="robots" content="noindex, follow"', false);
     }
+
+    public function test_home_zones_city_mapping_and_filters(): void
+    {
+        $this->assertSame('Golf Course Extension Road', \App\Support\Zones::of('Gurugram', 'Sector 57'));
+        $this->assertSame('Golf Course Road', \App\Support\Zones::of('Gurgaon', 'DLF Phase 4'));
+        $this->assertSame('Dwarka Expressway', \App\Support\Zones::of('Gurugram', 'Sector 37D'), 'a named place beats its sector number');
+        $this->assertNull(\App\Support\Zones::of('Mumbai', 'Sector 57'), 'no zones configured for that city');
+
+        $this->assertSame('Gurugram', \App\Support\Zones::cityOf('gurgaon'));
+        $this->assertSame('Gurugram', \App\Support\Zones::cityOf('Sector 37D'));
+        $this->assertSame('Gurugram', \App\Support\Zones::cityOf('DLF Phase 4'), 'an area page name maps to its city');
+
+        $this->withoutExceptionHandling();
+        $this->get('/tutors?subject=maths&mode=online&board=IB')->assertOk()->assertSee('More filters');
+        $this->get('/tutors/load?offset=0&subject=maths&mode=home&city=gurgaon')->assertOk();
+        $this->get('/home/teachers?search=maths&place=gurgaon&mode=online&offset=0&limit=6')->assertOk();
+        $this->assertSame('online', \Illuminate\Support\Facades\DB::table('search_events')->where('kind', 'search')->latest('id')->value('mode'));
+    }
 }

@@ -743,25 +743,47 @@ public function compareDefaults(Request $request)
     // same ranked search as NXT AI and the subject pages. Anything else, such
     // as a tutor's name, keeps the plain text search below.
     $q = \App\Support\SearchQuery::parse($search, $place);
+    // The mode switch (Home / Online / Either) beats a mode word in the text.
+    $mode = in_array($request->get('mode'), ['home', 'online'], true) ? $request->get('mode') : $q['mode'];
     if ($q['known'] || (($q['city'] || $q['board'] || $q['class']) && $q['rest'] === '')) {
         $limit = max(1, min($limit, 12));
-        $result = app(\App\NxtAi\Services\TutorSearchService::class)->search(new \App\NxtAi\DTO\TutorSearchCriteria(
+        $service = app(\App\NxtAi\Services\TutorSearchService::class);
+        $criteria = fn (?string $m, int $n) => new \App\NxtAi\DTO\TutorSearchCriteria(
             city: $q['city'],
             area: $q['area'],
             pincode: $q['pincode'],
             subject: $q['subject'],
             classLevel: $q['class'],
             board: $q['board'],
-            teachingMode: $q['mode'],
+            teachingMode: $m,
             gender: $q['gender'],
-            limit: min($offset + $limit, 60),
-        ));
+            limit: $n,
+        );
+        $result = $service->search($criteria($mode, min($offset + $limit, 60)));
         $cards = array_slice($result['cards'] ?? [], $offset, $limit);
+        $exact = ($result['relaxed'] ?? null) ? 0 : (int) ($result['matched'] ?? 0);
+
+        // Home and online answer different questions, so the first page says
+        // how many of each match, and offers online honestly when home tutors
+        // nearby are few (never padding the list with tutors who cannot travel).
+        $counts = null;
+        if ($offset === 0 && $q['subject'] && $q['city']) {
+            $other = $mode === 'online' ? 'home' : 'online';
+            $otherResult = $service->search($criteria($other, 1));
+            $otherExact = ($otherResult['relaxed'] ?? null) ? 0 : (int) ($otherResult['matched'] ?? 0);
+            $counts = [
+                'home' => $mode === 'online' ? $otherExact : $exact,
+                'online' => $mode === 'online' ? $exact : $otherExact,
+                'mode' => $mode ?: 'either',
+                'area' => $q['area'] ?: $q['city'],
+            ];
+        }
+
         if ($offset === 0) {
             \App\Support\SearchEvents::record('search', [
                 'sid' => $request->get('sid'), 'q' => $search . ($place !== '' ? ' | ' . $place : ''),
-                'subject' => $q['subject'], 'city' => $q['city'], 'area' => $q['area'], 'mode' => $q['mode'],
-                'results' => ($result['relaxed'] ?? null) ? 0 : (int) ($result['matched'] ?? 0),
+                'subject' => $q['subject'], 'city' => $q['city'], 'area' => $q['area'], 'mode' => $mode,
+                'results' => $exact,
             ]);
         }
         if (! $cards) {
@@ -773,6 +795,7 @@ public function compareDefaults(Request $request)
             // Said once, above the first page of results, when the subject had
             // to be dropped to find anyone.
             'relaxed' => $offset === 0 && ($result['relaxed'] ?? null) === 'subject' ? $q['subject'] : null,
+            'counts' => $counts,
         ]);
     }
 
@@ -1789,21 +1812,30 @@ $realUserId = str_replace('-nxt', '', $decoded);
 {
     $limit = 8;
 
-    $teachers = $this->tutorsListQuery($request)
-        ->limit($limit)
-        ->get();
-     
+    // Structured filters ("More filters") use the same ranked search as the
+    // home page and NXT AI; a plain name/area search keeps the old list.
+    $filtered = $this->filteredTutorCards($request, 0, 9);
+
+    $teachers = $filtered === null
+        ? $this->tutorsListQuery($request)->limit($limit)->get()
+        : collect();
+
             $metatitle = '';
             $metakey = '';
             $metadesc = '';
 
-    return view('tutor.index', compact('teachers','metatitle','metakey','metadesc'));
+    return view('tutor.index', compact('teachers','metatitle','metakey','metadesc','filtered'));
 }
 
 public function tutorsLoad(Request $request)
 {
     $limit  = 8;
     $offset = (int) $request->get('offset', 0);
+
+    $filtered = $this->filteredTutorCards($request, $offset, 6);
+    if ($filtered !== null) {
+        return $filtered ? view('subjects.partials.tutor-cards', ['cards' => $filtered])->render() : '';
+    }
 
     $teachers = $this->tutorsListQuery($request)
         ->offset($offset)
@@ -1812,6 +1844,57 @@ public function tutorsLoad(Request $request)
 
     // ✅ Return only cards HTML (same as genpage)
     return view('tutor.partials.cards', compact('teachers'))->render();
+}
+
+/**
+ * Find Tutors with structured filters: subject, board, class, mode, gender,
+ * budget, experience, rating, city and area. Null when none is set, so the
+ * plain listing is used.
+ *
+ * @return array<int,array<string,mixed>>|null tutor cards for this page
+ */
+private function filteredTutorCards(Request $request, int $offset, int $limit): ?array
+{
+    $keys = ['subject', 'board', 'class', 'mode', 'gender', 'max_fee', 'min_exp', 'min_rating', 'city', 'area'];
+    if (! collect($keys)->contains(fn ($k) => trim((string) $request->get($k, '')) !== '')) {
+        return null;
+    }
+
+    $text = fn ($k, $max = 60) => ($v = trim(mb_substr(strip_tags((string) $request->get($k, '')), 0, $max))) === '' ? null : $v;
+    $subject = $text('subject');
+    if ($subject) {
+        $parsed = \App\Support\SearchQuery::parse($subject);
+        $subject = $parsed['subject'] ?? $subject;
+    }
+    $city = $text('city');
+    if ($city) {
+        $city = \App\Support\Zones::cityOf($city) ?? $city;
+    }
+
+    $result = app(\App\NxtAi\Services\TutorSearchService::class)->search(new \App\NxtAi\DTO\TutorSearchCriteria(
+        city: $city,
+        area: $text('area', 100),
+        subject: $subject,
+        classLevel: $text('class') ? \App\NxtAi\Support\ClassNormalizer::normalize($text('class')) : null,
+        board: in_array($request->get('board'), ['CBSE', 'ICSE', 'ISC', 'IB', 'IGCSE', 'State Board'], true) ? $request->get('board') : null,
+        teachingMode: in_array($request->get('mode'), ['home', 'online'], true) ? $request->get('mode') : null,
+        gender: in_array($request->get('gender'), ['male', 'female'], true) ? $request->get('gender') : null,
+        minExperience: $request->filled('min_exp') ? max(0, min(40, (int) $request->get('min_exp'))) : null,
+        maxFee: $request->filled('max_fee') ? max(100, min(20000, (int) $request->get('max_fee'))) : null,
+        minRating: $request->filled('min_rating') ? max(0, min(5, (float) $request->get('min_rating'))) : null,
+        limit: min($offset + $limit, 60),
+    ));
+
+    if ($offset === 0) {
+        \App\Support\SearchEvents::record('search', [
+            'q' => 'filters: ' . http_build_query($request->only($keys)),
+            'subject' => $subject, 'city' => $city, 'area' => $text('area', 100), 'mode' => $request->get('mode'),
+            'results' => ($result['relaxed'] ?? null) ? 0 : (int) ($result['matched'] ?? 0),
+        ]);
+    }
+
+    // Filters are exact: a relaxed (subject dropped) result is no result here.
+    return ($result['relaxed'] ?? null) ? [] : array_slice($result['cards'] ?? [], $offset, $limit);
 }
 
 private function tutorsListQuery(Request $request)

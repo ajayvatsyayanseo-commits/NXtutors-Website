@@ -44,7 +44,8 @@ class Register extends Model
          'document_number',
          'profile',
          'profile_desc',
-         'pro_desc'
+         'pro_desc',
+        'travel_areas',
     ];
     // hidden_until, deletion_requested_at, delete_after and deleted_at are
     // deliberately not fillable: only App\Services\AccountLifecycle sets them.

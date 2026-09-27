@@ -373,6 +373,7 @@ Route::prefix('super')->name('super.')->group(function () {
         Route::delete('teacher/delete/{id}', [RegisterController::class, 'teacherdestroy'])->name('teacher.destroy');
       
       Route::get('teacher/review', [ReviewModerationController::class, 'index'])->name('teacher.review');
+      Route::get('search-gaps', [\App\Http\Controllers\SuperAdmin\SearchGapsController::class, 'index'])->name('search.gaps');
       Route::post('teacher/review/{id}/approve', [ReviewModerationController::class, 'approve'])->whereNumber('id')->name('teacher.review.approve');
       Route::post('teacher/review/{id}/reject', [ReviewModerationController::class, 'reject'])->whereNumber('id')->name('teacher.review.reject');
       Route::delete('teacher/review/{id}', [ReviewModerationController::class, 'destroy'])->whereNumber('id')->name('teacher.review.destroy');

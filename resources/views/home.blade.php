@@ -213,6 +213,14 @@
       <button type="button" id="heroSearchBtn" class="nxh__go">Find Tutors</button>
     </div>
 
+    {{-- Home and online follow different matching rules (see TutorSearchService):
+         home = tutors who can reach your area; online = the best fit anywhere. --}}
+    <div class="nxh__modes" role="radiogroup" aria-label="Tutor mode">
+      <button type="button" role="radio" class="nxh__mode" data-hero-mode="either" aria-checked="true">Either</button>
+      <button type="button" role="radio" class="nxh__mode" data-hero-mode="home" aria-checked="false">Home tutor</button>
+      <button type="button" role="radio" class="nxh__mode" data-hero-mode="online" aria-checked="false">Online</button>
+    </div>
+
     {{-- The reassurance belongs directly under the commit button, not in the
          stats row. Wording is the demo modal's own promise, kept identical so
          the two never drift apart. --}}
@@ -3124,6 +3132,7 @@ $(document).ready(function () {
                 search: search,
                 place: ($('#heroSearchArea').val() || '').trim(),
                 sid: window.nxSearchSid ? window.nxSearchSid() : '',
+                mode: window.nxHeroMode || '',
                 offset: offset,
                 limit: 6
             },
@@ -3220,6 +3229,23 @@ $(document).ready(function () {
         loadTeachers(heroQuery(), 0, false);
         showResults();
     });
+
+    // Home / Online / Either: remembered on this device; changing it re-runs
+    // the current search. The results bar's "Home · N / Online · M" buttons
+    // use the same switch.
+    function setMode(m, rerun) {
+        window.nxHeroMode = (m === 'home' || m === 'online') ? m : '';
+        try { localStorage.setItem('nx_mode', m); } catch (e) {}
+        $('[data-hero-mode]').each(function () {
+            $(this).attr('aria-checked', $(this).data('hero-mode') === (m || 'either') ? 'true' : 'false');
+        });
+        if (rerun && (heroQuery() || ($('#heroSearchArea').val() || '').trim())) {
+            loadTeachers(heroQuery(), 0, false);
+        }
+    }
+    try { setMode(localStorage.getItem('nx_mode') || 'either', false); } catch (e) { setMode('either', false); }
+    $(document).on('click', '[data-hero-mode]', function () { setMode($(this).data('hero-mode'), true); });
+    $(document).on('click', '[data-mode-set]', function () { setMode($(this).data('mode-set'), true); });
 
     // Popular-search chips and "find a tutor" chips in Explore fill the
     // search box and run the same search.

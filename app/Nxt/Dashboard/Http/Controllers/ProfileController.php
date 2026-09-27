@@ -68,6 +68,8 @@ class ProfileController extends DashboardController
                 'district' => 'nullable|string|max:100',
                 'state' => 'nullable|string|max:100',
                 'pincode' => 'nullable|string|max:12',
+                // Home tutors: sectors, societies or zones they travel to, comma-separated.
+                'travel_areas' => 'nullable|string|max:500',
             ],
             'learning' => [
                 'for_class' => 'nullable|string|max:60',

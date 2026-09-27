@@ -46,6 +46,14 @@ final class PublicTutorFieldMapper
             'gender' => $this->cleanGender($t->gender),
             'city' => $this->clean((string) ($t->city ?? '')),
             'area' => $this->clean((string) ($t->address ?? '')),
+            // Home-tutor matching: the city a locality-style "city" belongs to,
+            // its zone, and the areas the tutor says they travel to.
+            'home_city' => $homeCity = \App\Support\Zones::cityOf((string) ($t->city ?? '')),
+            'zone' => \App\Support\Zones::of($homeCity, ((string) ($t->address ?? '')) . ' ' . ((string) ($t->city ?? ''))),
+            'travel_areas' => array_values(array_filter(array_map(
+                fn ($a) => $this->clean(trim($a)),
+                explode(',', (string) ($t->travel_areas ?? ''))
+            ))),
             'pincode' => $this->clean((string) ($t->pincode ?? '')),
             'subjects' => $caps['subjects'],
             'classes' => $caps['classes'],

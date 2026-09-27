@@ -268,6 +268,17 @@
         </div>
 
         <div class="form-group col-lg-12">
+          <label for="travel_areas"><i class="fa fa-route"></i> Areas I travel to (home tuition)</label>
+          <input type="text" class="form-control" name="travel_areas" id="travel_areas" maxlength="500"
+                 placeholder="e.g. Sector 56, Sector 57, Golf Course Extension Road, DLF Phase 4"
+                 value="{{ old('travel_areas', $teacher->travel_areas ?? '') }}">
+          <small class="text-muted">Sectors, societies or areas you can reach for home classes, separated by commas. Parents searching there will see you first.</small>
+          @error('travel_areas')
+            <div class="text-danger">{{ $message }}</div>
+          @enderror
+        </div>
+
+        <div class="form-group col-lg-12">
           <label for="dob"><i class="fa fa-city"></i>Address</label>
           <textarea class="form-control" id="address" name="address">{{ old('address', $teacher->address)}}</textarea>
           @error('address')

@@ -91,22 +91,60 @@
     <h1 class="title">Find Tutors</h1>
 
     <form id="tutorFilter" class="filterbar">
-      <input type="text" name="q" placeholder="Search name / area" value="{{ request('q') }}">
+      <input type="text" name="subject" placeholder="Subject, e.g. Maths, IELTS" value="{{ request('subject') }}">
       <input type="text" name="city" placeholder="City" value="{{ request('city') }}">
-      <input type="text" name="subject" placeholder="Subject" value="{{ request('subject') }}">
-
-      <select name="sort">
-        <option value="">Recommended</option>
-        <option value="rating" @selected(request('sort')==='rating')>Top Rated</option>
+      <input type="text" name="area" placeholder="Sector or area" value="{{ request('area') }}">
+      <select name="mode" aria-label="Home or online">
+        <option value="">Home or online</option>
+        <option value="home" @selected(request('mode')==='home')>Home tutor</option>
+        <option value="online" @selected(request('mode')==='online')>Online</option>
       </select>
-
       <button class="nxbtn btn-accent" type="submit">Search</button>
+
+      {{-- Professional search: collapsed until a parent wants it. --}}
+      <details class="nx-more nx-filters" @if(request()->hasAny(['board','class','gender','max_fee','min_exp','min_rating','q'])) open @endif>
+        <summary><span class="nx-more__closed">More filters</span><span class="nx-more__open">Fewer filters</span></summary>
+        <div class="nx-filters__grid">
+          <select name="board" aria-label="Board">
+            <option value="">Any board</option>
+            @foreach(['CBSE','ICSE','ISC','IB','IGCSE','State Board'] as $b)<option value="{{ $b }}" @selected(request('board')===$b)>{{ $b }}</option>@endforeach
+          </select>
+          <select name="class" aria-label="Class">
+            <option value="">Any class</option>
+            @foreach(array_merge(['LKG','UKG'], array_map(fn ($n) => 'Class '.$n, range(1, 12))) as $cl)<option value="{{ $cl }}" @selected(request('class')===$cl)>{{ $cl }}</option>@endforeach
+          </select>
+          <select name="gender" aria-label="Tutor gender">
+            <option value="">Any tutor</option>
+            <option value="female" @selected(request('gender')==='female')>Female tutor</option>
+            <option value="male" @selected(request('gender')==='male')>Male tutor</option>
+          </select>
+          <input type="number" name="max_fee" min="100" step="100" placeholder="Max fee ₹/hour" value="{{ request('max_fee') }}">
+          <select name="min_exp" aria-label="Experience">
+            <option value="">Any experience</option>
+            @foreach([2,5,10] as $y)<option value="{{ $y }}" @selected((string) request('min_exp')===(string) $y)>{{ $y }}+ years</option>@endforeach
+          </select>
+          <select name="min_rating" aria-label="Rating">
+            <option value="">Any rating</option>
+            @foreach(['4','4.5'] as $r)<option value="{{ $r }}" @selected((string) request('min_rating')===$r)>{{ $r }}★ and above</option>@endforeach
+          </select>
+          <input type="text" name="q" placeholder="Tutor name" value="{{ request('q') }}">
+        </div>
+      </details>
     </form>
 
     <div class="grid-3" id="tutorsGrid">
-      @include('tutor.partials.cards', ['teachers'=>$teachers])
+      @if(isset($filtered) && $filtered !== null)
+        @if(count($filtered))
+          @include('subjects.partials.tutor-cards', ['cards' => $filtered])
+        @else
+          <p style="grid-column:1/-1">No tutor matches all of these filters yet. Try fewer filters, or <a href="{{ url('/demo-class') }}">tell us what you need</a> and we will find one.</p>
+        @endif
+      @else
+        @include('tutor.partials.cards', ['teachers'=>$teachers])
+      @endif
     </div>
 
+    @if(!isset($filtered) || $filtered === null || count($filtered) >= 9)
     <div style="margin-top:16px;text-align:center;">
       <button id="loadMoreTutors"
               class="nxbtn btn-accent"
@@ -115,6 +153,7 @@
         Load More
       </button>
     </div>
+    @endif
   </div>
 </main>
 

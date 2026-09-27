@@ -1121,6 +1121,8 @@ $teacher_course_ids = $request->input('teacher_course_id', []);
             'state' => 'nullable|string|max:100',
             'pincode' => 'nullable|numeric',
             'address' => 'nullable|string',
+            // Home tutors: sectors, societies or zones they travel to.
+            'travel_areas' => 'nullable|string|max:500',
         ];
     }
 

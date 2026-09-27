@@ -83,7 +83,9 @@ final class TutorRanker
             $active['board'] = self::WEIGHTS['board'];
         }
         if ($c->city !== null || $c->pincode !== null || $c->area !== null) {
-            $active['location'] = self::WEIGHTS['location'];
+            // Online: location is only a small tie-breaker (same city helps if
+            // the family ever wants a home session). Home: it decides a lot.
+            $active['location'] = $c->teachingMode === 'online' ? 0.03 : self::WEIGHTS['location'];
         }
         if ($c->teachingMode !== null && $c->teachingMode !== 'either') {
             $active['mode'] = self::WEIGHTS['mode'];
@@ -187,16 +189,48 @@ final class TutorRanker
         return count(array_filter($checks)) / count($checks);
     }
 
+    /**
+     * Home-tutor distance in tiers (no coordinates on profiles):
+     *   same pincode, or teaches / travels to the parent's area   1.0
+     *   same zone of the city (config/zones.php)                   0.8
+     *   same city                                                  0.5
+     */
     private function locationScore(array $t, TutorSearchCriteria $c): array
     {
         if ($c->pincode !== null && (string) ($t['pincode'] ?? '') === $c->pincode) {
             return [1.0, 'Same pincode ('.$c->pincode.')'];
         }
-        if ($c->city !== null && $this->ci((string) ($t['city'] ?? '')) === $this->ci($c->city)) {
-            return [1.0, 'In '.$c->city];
+
+        $area = trim((string) $c->area);
+        if ($area !== '') {
+            $where = $this->ci(((string) ($t['area'] ?? '')).' '.((string) ($t['city'] ?? '')));
+            if (str_contains($where, $this->ci($area))) {
+                return [1.0, 'In '.$area];
+            }
+            foreach ((array) ($t['travel_areas'] ?? []) as $ta) {
+                if ($ta !== '' && (str_contains($this->ci($ta), $this->ci($area)) || str_contains($this->ci($area), $this->ci($ta)))) {
+                    return [1.0, 'Travels to '.$area];
+                }
+            }
+
+            $zone = \App\Support\Zones::of($c->city, $area);
+            if ($zone !== null) {
+                $tutorZones = array_filter(array_merge(
+                    [$t['zone'] ?? null],
+                    array_map(fn ($ta) => \App\Support\Zones::of($c->city, (string) $ta), (array) ($t['travel_areas'] ?? []))
+                ));
+                if (in_array($zone, $tutorZones, true) || in_array($this->ci($zone), array_map([$this, 'ci'], (array) ($t['travel_areas'] ?? [])), true)) {
+                    return [0.8, 'Near '.$area.' ('.$zone.')'];
+                }
+            }
         }
-        if ($c->area !== null && $c->area !== '' && str_contains($this->ci((string) ($t['area'] ?? '')), $this->ci($c->area))) {
-            return [0.7, 'Near '.$c->area];
+
+        if ($c->city !== null) {
+            $tutorCity = (string) ($t['home_city'] ?? '') ?: (string) ($t['city'] ?? '');
+            if ($this->ci($tutorCity) === $this->ci($c->city)
+                || \App\Support\Geo::slugFor($tutorCity) !== '' && \App\Support\Geo::slugFor($tutorCity) === \App\Support\Geo::slugFor($c->city)) {
+                return [$area !== '' ? 0.5 : 1.0, 'In '.$c->city];
+            }
         }
 
         return [0.0, null];

@@ -380,3 +380,20 @@ body.page .footer-content--5 .footer-col--subjects ul{display:grid;grid-template
 @media (max-width:640px){.nx-sugg{max-height:60vh}}
 /* chat predictions open upwards: the input sits at the bottom of the card */
 .nx-sugg--chat{top:auto;bottom:calc(100% + 6px)}
+
+/* ---------- home: Home / Online / Either (hero) and the results bar ---------- */
+.nxh__modes{display:flex;gap:6px;margin:10px 0 0;flex-wrap:wrap}
+.nxh__mode{font:inherit;font-size:12.5px;font-weight:600;cursor:pointer;padding:6px 12px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.22);background:rgba(8,14,27,.45);color:#fff}
+.nxh__mode[aria-checked="true"]{background:#fff;color:#0b1220;border-color:#fff}
+.nx-modebar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 10px}
+.nx-modebar__opt{font:inherit;font-size:13px;font-weight:700;cursor:pointer;padding:8px 14px;border-radius:999px;
+  border:1px solid var(--nxt-line);background:var(--nxt-surface);color:var(--nxt-text-dim)}
+.nx-modebar__opt.is-on{background:var(--nxt-accent);border-color:var(--nxt-accent);color:var(--nxt-on-accent)}
+.nx-modebar__note{flex:1 0 100%;margin:4px 0 0;font-size:13px;color:var(--nxt-text-dim)}
+.nx-linkbtn{font:inherit;background:none;border:0;padding:0;color:var(--nxt-accent);text-decoration:underline;cursor:pointer}
+
+/* ---------- Find Tutors: collapsed "More filters" ---------- */
+.nx-filters{flex:1 0 100%;margin-top:8px}
+.nx-filters__grid{display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));margin-top:10px}
+body.page .filterbar .nx-filters{grid-column:1 / -1}

@@ -59,6 +59,7 @@ final class DashboardIdentity
             'district' => $r->district,
             'state' => $r->state,
             'pincode' => $r->pincode,
+            'travel_areas' => $r->travel_areas ?? null,
             'address' => $r->address,
             'gender' => $r->gender,
             'dob' => $r->dob,

@@ -102,13 +102,20 @@ final class TutorSearchService
     {
         $q = $this->baseQuery();
 
-        // Location (hard, tolerant): pincode and/or city aliases.
-        $cityAliases = $c->city !== null ? CityNormalizer::aliasesFor($c->city) : [];
-        if ($c->pincode !== null || $cityAliases !== []) {
-            $q->where(function ($w) use ($c, $cityAliases): void {
+        // Online: where the tutor lives does not matter, so no location
+        // filter (the ranker still gives same-city a small edge).
+        // Home or unspecified: location is hard and tolerant: pincode and/or
+        // the city's aliases plus every locality-style "city" value that
+        // belongs to it ("Wazirabad", "Sector 37D" are Gurugram).
+        $cityAliases = $c->city !== null && $c->teachingMode !== 'online'
+            ? array_values(array_unique(array_merge(CityNormalizer::aliasesFor($c->city), \App\Support\Zones::rawCityNames($c->city))))
+            : [];
+        $pincode = $c->teachingMode === 'online' ? null : $c->pincode;
+        if ($pincode !== null || $cityAliases !== []) {
+            $q->where(function ($w) use ($pincode, $cityAliases): void {
                 $has = false;
-                if ($c->pincode !== null) {
-                    $w->where('register.pincode', $c->pincode);
+                if ($pincode !== null) {
+                    $w->where('register.pincode', $pincode);
                     $has = true;
                 }
                 if ($cityAliases !== []) {
@@ -173,6 +180,12 @@ final class TutorSearchService
         return array_values(array_filter($tutors, function (array $t) use ($c): bool {
             // Subject is a hard filter: a Hindi tutor must not answer a Maths query.
             if ($c->subject !== null && ! $this->subjectMatch($t['subjects'] ?? [], $c->subject)) {
+                return false;
+            }
+            // Mode is hard only when the tutor's modes are known: a home-only
+            // tutor is not an online match, and the reverse. Unknown = either.
+            $modes = array_map('strtolower', (array) ($t['teaching_modes'] ?? []));
+            if (in_array($c->teachingMode, ['online', 'home'], true) && $modes !== [] && ! in_array($c->teachingMode, $modes, true)) {
                 return false;
             }
             // Budget: exclude only tutors whose known minimum fee exceeds the cap.
