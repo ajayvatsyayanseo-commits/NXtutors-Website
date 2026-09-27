@@ -775,7 +775,8 @@ public function compareDefaults(Request $request)
                 'home' => $mode === 'online' ? $otherExact : $exact,
                 'online' => $mode === 'online' ? $exact : $otherExact,
                 'mode' => $mode ?: 'either',
-                'area' => $q['area'] ?: $q['city'],
+                // The home count is city-wide (ranked by nearness), so it names the city.
+                'area' => $q['city'],
             ];
         }
 

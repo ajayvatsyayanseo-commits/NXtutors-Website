@@ -6,14 +6,14 @@
   @endphp
   <div class="nx-modebar" style="grid-column:1/-1">
     <button type="button" class="nx-modebar__opt @if($cm === 'home') is-on @endif" data-mode-set="home">
-      Home · {{ $counts['home'] }} {{ $counts['home'] === 1 ? 'tutor' : 'tutors' }} near {{ $counts['area'] }}
+      Home · {{ $counts['home'] }} {{ $counts['home'] === 1 ? 'tutor' : 'tutors' }} in {{ $counts['area'] }}
     </button>
     <button type="button" class="nx-modebar__opt @if($cm === 'online') is-on @endif" data-mode-set="online">
       Online · {{ $counts['online'] }} {{ $counts['online'] === 1 ? 'tutor' : 'tutors' }}
     </button>
     @if($fewHome)
       <p class="nx-modebar__note">
-        Only {{ $counts['home'] }} home {{ $counts['home'] === 1 ? 'tutor' : 'tutors' }} near {{ $counts['area'] }} so far.
+        Only {{ $counts['home'] }} home {{ $counts['home'] === 1 ? 'tutor' : 'tutors' }} in {{ $counts['area'] }} so far.
         {{ $counts['online'] }} online {{ $counts['online'] === 1 ? 'tutor teaches' : 'tutors teach' }} this —
         <button type="button" class="nx-linkbtn" data-mode-set="online">show online tutors</button>.
       </p>
