@@ -39,7 +39,7 @@ class CityHub
         }
 
         return Register::where('join_as', 'teacher')
-            ->publiclyVisible()
+            ->listable()
             ->whereIn('city', $names)
             ->orderByDesc('user_id')
             ->limit($limit)

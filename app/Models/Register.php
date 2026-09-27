@@ -98,6 +98,24 @@ class Register extends Model
         return (new static)->scopePubliclyVisible($query, $table);
     }
 
+    /**
+     * Visible AND fit to list: search, suggestions, home cards, city counts
+     * and the sitemap. Leaves out profiles carrying another tutor's bio
+     * (App\Support\CopiedBios); those stay reachable by their own link.
+     */
+    public function scopeListable($query, string $table = 'register')
+    {
+        $this->scopePubliclyVisible($query, $table);
+        $copied = \App\Support\CopiedBios::list();
+
+        return $copied ? $query->whereNotIn("$table.user_id", $copied) : $query;
+    }
+
+    public static function applyListable($query, string $table = 'register')
+    {
+        return (new static)->scopeListable($query, $table);
+    }
+
     public function isHidden(): bool
     {
         return $this->hidden_until !== null && $this->hidden_until->isFuture();

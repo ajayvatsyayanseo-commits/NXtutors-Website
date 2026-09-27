@@ -330,7 +330,7 @@ Product::where('status', 't')
     case 'tutors':
     // Tutors
  Register::where('join_as', 'teacher')
-    ->publiclyVisible()
+    ->listable()
     ->chunk(500, function ($teachers) use (&$urls) {
         foreach ($teachers as $t) {
             if (!$t->user_id) {
@@ -924,7 +924,7 @@ private function baseTeacherQuery()
             );
         })
         ->where('register.join_as', 'teacher')
-        ->publiclyVisible('register')
+        ->listable('register')
         ->whereNotNull('register.user_id')
         ->with([
             'courses' => function ($q) {
@@ -1101,7 +1101,7 @@ public function cityAreaShow($citySlug, $areaSlug)
     $areaSeo    = \App\Support\CityHub::areaSeo($area, $city->slug, $city->city_name);
 
      $areaTutors = Register::where('join_as', 'teacher')
-        ->publiclyVisible()
+        ->listable()
         ->when(!empty($area->pincode), function($q) use ($area){
             $q->where('pincode', $area->pincode);
         })
@@ -1115,7 +1115,7 @@ public function cityAreaShow($citySlug, $areaSlug)
 
     if ($areaTutors->count() == 0) {
         $tutors = Register::where('join_as', 'teacher')
-            ->publiclyVisible()
+            ->listable()
             ->where('city', $city->city_name)   // ✅ register.city match
             ->orderByDesc('user_id')
             ->take(9)
@@ -1205,7 +1205,7 @@ public function cityAreaShow($citySlug, $areaSlug)
             );
         })
         ->where('register.join_as', 'teacher')
-        ->publiclyVisible('register')
+        ->listable('register')
         ->whereNotNull('register.user_id')
         ->with([
             'courses' => function ($q) {
@@ -1454,7 +1454,7 @@ public function cityAreaShow($citySlug, $areaSlug)
               ->with(['board:id,cat_title','classCategory:id,cat_title','category:id,cat_title']);
         }])
         ->where('register.join_as', 'teacher')
-        ->publiclyVisible('register')
+        ->listable('register')
         ->where('register.city', $tutor->city)
         ->where('register.user_id', '!=', $tutor->user_id)
         ->orderByDesc('rr.reviews_count')
@@ -1538,7 +1538,10 @@ public function cityAreaShow($citySlug, $areaSlug)
       $metakey ='';
       $metadesc =$tutor->profile_desc ?? null;
 
-    return view('tutor.show', compact(
+    // A profile carrying another tutor's bio stays reachable but is kept out of
+    // the index until the tutor writes their own (App\Support\CopiedBios).
+    $metarobots = \App\Support\CopiedBios::has((string) $tutor->user_id) ? 'noindex, follow' : null;
+    return view('tutor.show', compact('metarobots', 
         'tutor',
         'img',
         'chip',
@@ -1673,7 +1676,7 @@ $realUserId = str_replace('-nxt', '', $decoded);
               ->with(['board:id,cat_title','classCategory:id,cat_title','category:id,cat_title']);
         }])
         ->where('register.join_as', 'teacher')
-        ->publiclyVisible('register')
+        ->listable('register')
         ->where('register.city', $tutor->city)
         ->where('register.user_id', '!=', $tutor->user_id)
         ->orderByDesc('rr.reviews_count')
@@ -1757,7 +1760,10 @@ $realUserId = str_replace('-nxt', '', $decoded);
       $metakey ='';
       $metadesc =$tutor->profile_desc ?? null;
 
-    return view('tutor.show', compact(
+    // A profile carrying another tutor's bio stays reachable but is kept out of
+    // the index until the tutor writes their own (App\Support\CopiedBios).
+    $metarobots = \App\Support\CopiedBios::has((string) $tutor->user_id) ? 'noindex, follow' : null;
+    return view('tutor.show', compact('metarobots', 
         'tutor',
         'img',
         'chip',
@@ -1812,7 +1818,7 @@ private function tutorsListQuery(Request $request)
 {
     $q = Register::query()
         ->where('join_as', 'teacher')          // ✅ change if your role value different
-        ->publiclyVisible()
+        ->listable()
         ->orderByDesc('id')
         ->with(['courses.board','courses.category']); // optional if you have relations
 

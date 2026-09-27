@@ -132,7 +132,7 @@ class Geo
                 $out[$slug][$key] += $n;
             };
 
-            foreach (Register::applyPublicVisibility(DB::table('register')->where('join_as', 'teacher'))
+            foreach (Register::applyListable(DB::table('register')->where('join_as', 'teacher'))
                 ->select('city', DB::raw('COUNT(*) as n'))->groupBy('city')->get() as $row) {
                 $bump(self::slugFor($row->city), 'tutors', (int) $row->n);
             }

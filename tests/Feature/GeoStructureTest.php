@@ -424,4 +424,30 @@ class GeoStructureTest extends TestCase
         $this->post('/search/event', ['k' => 'pick', 'sid' => 'abc123', 'q' => 'ib m', 'pick' => 'IB Maths'])->assertNoContent();
         $this->assertSame('IB Maths', \Illuminate\Support\Facades\DB::table('search_events')->where('kind', 'pick')->value('pick'));
     }
+
+    public function test_copied_bios_are_left_out_of_lists_but_stay_reachable(): void
+    {
+        $bio = 'Expert maths and physics tutor in Gurugram with over 9 years of dedicated teaching experience, Mr. Rajveer Singh has established himself as one of the best physics and mathematics tutors in Gurugram for class 11 and 12.';
+        DB::table('register')->insert([
+            ['user_id' => 501, 'name' => 'Rajveer Singh', 'city' => 'Gurgaon', 'join_as' => 'teacher', 'status' => 't', 'pro_desc' => 'Rajveer Singh – ' . $bio],
+            ['user_id' => 502, 'name' => 'Dhruve More', 'city' => 'Mumbai', 'join_as' => 'teacher', 'status' => 't', 'pro_desc' => 'Dhruve More – ' . $bio],
+            ['user_id' => 503, 'name' => 'Kamal', 'city' => 'Mumbai', 'join_as' => 'teacher', 'status' => 't', 'pro_desc' => 'Kamal – ' . $bio],
+            ['user_id' => 504, 'name' => 'Satyam', 'city' => 'Mumbai', 'join_as' => 'teacher', 'status' => 't', 'pro_desc' => 'Satyam – ' . $bio],
+        ]);
+        \Illuminate\Support\Facades\Cache::flush();
+
+        $this->assertTrue(\App\Support\CopiedBios::has('502'));
+        $this->assertTrue(\App\Support\CopiedBios::has('504'));
+        $this->assertFalse(\App\Support\CopiedBios::has('501'), 'the tutor the bio is about keeps it');
+
+        $listed = \App\Models\Register::where('join_as', 'teacher')->listable()->pluck('user_id')->map(fn ($v) => (string) $v)->all();
+        $this->assertContains('501', $listed);
+        $this->assertNotContains('502', $listed);
+
+        $this->withoutExceptionHandling()->get('/sitemap-tutors.xml')->assertOk()->assertDontSee('/dhruve-more', false)->assertSee('/rajveer-singh', false);
+
+        // Still reachable by its own link, but not indexed.
+        $token = rtrim(strtr(base64_encode('502-nxt'), '+/', '-_'), '=');
+        $this->get('/tutor/mumbai/' . $token . '/dhruve-more')->assertOk()->assertSee('name="robots" content="noindex, follow"', false);
+    }
 }
