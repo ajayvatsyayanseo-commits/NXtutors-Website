@@ -537,7 +537,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 acctToggle.focus();
             }
         });
-        themeMenu.addEventListener("click", function (e) {
+        if (themeMenu) themeMenu.addEventListener("click", function (e) {
             e.stopPropagation();
         });
     }

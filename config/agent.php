@@ -66,7 +66,12 @@ return [
      * Optional allowlist of agent identifiers (the X-Nxt-Agent header). Empty
      * means any correctly-signed caller is accepted.
      */
-    'allowed_agents' => array_values(array_filter(
-        explode(',', (string) env('AGENT_FEED_ALLOWED_AGENTS', 'tutor_match_meta_agent'))
-    )),
+    // lead_intake_agent is always allowed: it is the one WhatsApp door and
+    // reads Refs (docs/contracts/lead-intake-handoff-v1.md). It still has to sign.
+    // An empty list still means "any signed caller".
+    'allowed_agents' => (function (): array {
+        $list = array_values(array_filter(explode(',', (string) env('AGENT_FEED_ALLOWED_AGENTS', 'tutor_match_meta_agent'))));
+
+        return $list === [] ? [] : array_values(array_unique([...$list, 'lead_intake_agent']));
+    })(),
 ];

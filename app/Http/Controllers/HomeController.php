@@ -473,7 +473,10 @@ public function compareAi(Request $request)
 {
     $ids = collect(explode(',', (string)$request->ids))
         ->filter()
-        ->map(fn($x) => (int)$x)
+        // Ids are strings: "1997" and "NXT-2026-W7PBUU" alike. An (int) cast
+        // turned the second kind into 0, so those tutors vanished from Compare.
+        ->map(fn($x) => trim((string) $x))
+        ->filter(fn($x) => preg_match('/^[0-9A-Za-z_-]{1,64}$/', $x) === 1)
         ->unique()
         ->take(6)
         ->values();
@@ -506,8 +509,11 @@ public function compareAi(Request $request)
 
         $rating  = (float)($t->rating_avg ?? 0);
         $reviews = (int)($t->reviews_count ?? 0);
-        $exp     = (int)preg_replace('/\D+/', '', (string)($t->experience ?? '0'));
-        $budget  = (int)preg_replace('/\D+/', '', (string)($t->budget ?? '0'));
+        // "14+ years" is 14 and "3000-5000 per hour" starts at 3000; stripping
+        // non-digits read them as 14 and 30005000.
+        $feeParser = app(\App\NxtAi\Support\PublicTutorFieldMapper::class);
+        $exp     = (int) ($feeParser->parseExperience((string)($t->experience ?? '')) ?? 0);
+        $budget  = (int) ($feeParser->parseFee((string)($t->budget ?? ''))['min'] ?? 0);
 
         // ---- Compatibility components (0-100 each, weighted) ----
         $subjectFit = 70; // default

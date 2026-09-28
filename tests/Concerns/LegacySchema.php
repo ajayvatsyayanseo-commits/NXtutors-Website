@@ -22,7 +22,7 @@ trait LegacySchema
             'register' => ['phone_hash', 'user_id', 'name', 'email', 'password', 'user_type', 'phone', 'dob', 'avatar', 'gender', 'date',
                 'address', 'city', 'district', 'state', 'pincode', 'c_password', 'otp', 'class_type', 'otp_status', 'status', 'join_as',
                 'for_class', 'frount_image', 'back_image', 'degree', 'experience', 'education', 'budget', 'other_education', 'document_type',
-                'document_number', 'profile', 'profile_desc', 'pro_desc', 'travel_areas', 'hidden_until', 'deleted_at', 'delete_after', 'deletion_requested_at'],
+                'document_number', 'profile', 'profile_desc', 'pro_desc', 'travel_areas', 'other_names', 'hidden_until', 'deleted_at', 'delete_after', 'deletion_requested_at'],
             'pages' => ['title', 'slug', 'status', 'description', 'meta_title', 'meta_keywords', 'meta_description', 'avatar'],
             'banner_manager' => ['title', 'sub_title', 'description', 'avatar', 'status', 'link'],
             'category' => ['pid', 'cid', 'slug', 'cat_title', 'cdesc', 'avatar', 'meta_title', 'meta_desc', 'status'],

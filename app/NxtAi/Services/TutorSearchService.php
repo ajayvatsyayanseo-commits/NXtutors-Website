@@ -120,6 +120,38 @@ final class TutorSearchService
         ];
     }
 
+    /**
+     * Tutors whose name, or a name they are also known by, contains the
+     * first word typed ("Abhinandan", "Ajay Sir"). Used by the Lead Intake
+     * agent to find the tutor a parent names on WhatsApp; the caller ranks.
+     *
+     * @return array<int,array<string,mixed>> public tutor arrays
+     */
+    public function findByName(string $name, int $limit = 30): array
+    {
+        $words = array_values(array_filter(
+            preg_split('/\s+/u', mb_strtolower(trim(preg_replace('/[^\pL\pN ]+/u', ' ', $name) ?? ''))) ?: [],
+            fn ($w) => mb_strlen($w) >= 2
+        ));
+        if ($words === []) {
+            return [];
+        }
+        $like = '%'.str_replace(['%', '_'], ['\%', '\_'], $words[0]).'%';
+        $hasOther = \Illuminate\Support\Facades\Schema::hasColumn('register', 'other_names');
+
+        $out = [];
+        foreach ($this->baseQuery()->where(function ($w) use ($like, $hasOther): void {
+            $w->where('register.name', 'like', $like);
+            if ($hasOther) {
+                $w->orWhere('register.other_names', 'like', $like);
+            }
+        })->limit($limit)->get() as $tutor) {
+            $out[] = $this->mapper->toPublicArray($tutor);
+        }
+
+        return $out;
+    }
+
     /** Resolve a single active tutor by its public base64 token. */
     public function findByRef(string $ref): ?array
     {

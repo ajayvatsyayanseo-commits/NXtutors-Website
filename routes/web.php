@@ -104,6 +104,10 @@ Route::get('/local-tutors', [HomeController::class, 'localTutors'])->name('home.
 Route::get('/home/blogs', [HomeController::class, 'blogs'])->name('home.blogs');
 
 Route::get('/compare-defaults', [HomeController::class, 'compareDefaults'])->name('home.compareDefaults');
+// WhatsApp buttons: record a Ref (App\Services\WhatsAppHandoff), then open WhatsApp.
+Route::get('/wa/tutor/{ref}', [\App\Http\Controllers\WhatsAppController::class, 'tutor'])->middleware('throttle:60,1')->where('ref', '[A-Za-z0-9_-]+')->name('wa.tutor');
+Route::get('/wa', [\App\Http\Controllers\WhatsAppController::class, 'go'])->middleware('throttle:60,1')->name('wa.go');
+Route::post('/wa/handoff', [\App\Http\Controllers\WhatsAppController::class, 'store'])->middleware('throttle:30,1')->name('wa.handoff');
 Route::post('/demo-lead/store', [DemoLeadController::class, 'store'])->middleware('throttle:public-form')->name('demo.lead.store');
 // routes/web.php
 Route::get('/home/compare-ai', [HomeController::class, 'compareAi'])->name('home.compareAi');
@@ -374,6 +378,8 @@ Route::prefix('super')->name('super.')->group(function () {
         Route::delete('teacher/delete/{id}', [RegisterController::class, 'teacherdestroy'])->name('teacher.destroy');
       
       Route::get('teacher/review', [ReviewModerationController::class, 'index'])->name('teacher.review');
+      Route::get('refs', [\App\Http\Controllers\SuperAdmin\HandoffController::class, 'index'])->name('refs.index');
+      Route::get('ref/{code}', [\App\Http\Controllers\SuperAdmin\HandoffController::class, 'show'])->name('refs.show');
       Route::get('search-gaps', [\App\Http\Controllers\SuperAdmin\SearchGapsController::class, 'index'])->name('search.gaps');
       Route::post('teacher/review/{id}/approve', [ReviewModerationController::class, 'approve'])->whereNumber('id')->name('teacher.review.approve');
       Route::post('teacher/review/{id}/reject', [ReviewModerationController::class, 'reject'])->whereNumber('id')->name('teacher.review.reject');

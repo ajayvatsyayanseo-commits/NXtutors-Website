@@ -81,7 +81,7 @@ class ChatController
         // Lead-intake funnel: after the free turns a human takes over on
         // WhatsApp. Checked before recording/calling OpenAI so the cap also
         // caps spend, and cannot be bypassed from the browser.
-        if ($handoff = $this->handoff($conversation, $userId, $guestHash)) {
+        if ($handoff = $this->handoff($conversation, $userId, $guestHash, $request)) {
             return $handoff;
         }
 
@@ -257,7 +257,7 @@ class ChatController
      * Once the parent has used their free turns, stop answering and hand the
      * conversation to WhatsApp. Returns null while turns remain.
      */
-    private function handoff(NxtAiConversation $conversation, ?string $userId, string $guestHash): ?JsonResponse
+    private function handoff(NxtAiConversation $conversation, ?string $userId, string $guestHash, ?ChatRequest $request = null): ?JsonResponse
     {
         $free = (int) config('nxt-ai.free_turns', 4);
         if ($free <= 0) {
@@ -282,11 +282,42 @@ class ChatController
             return null;
         }
 
-        $number = preg_replace('/\D/', '', (string) (config('nxt-ai.whatsapp_number')
-            ?: optional(Setting::first())->phone));
+        // The Ref carries this chat to Lead Intake (docs/contracts/lead-intake-handoff-v1.md),
+        // so the team carries on instead of asking again. A reload starts an empty
+        // conversation: then the visitor's latest chat with questions is the one.
+        $chat = $conversation;
+        if (! NxtAiMessage::where('conversation_id', $conversation->id)->where('role', 'user')->exists()) {
+            $chat = NxtAiConversation::query()
+                ->when($userId !== null,
+                    static fn ($q) => $q->where('user_id', $userId),
+                    static fn ($q) => $q->whereNull('user_id')->where('guest_session_hash', $guestHash))
+                ->whereIn('id', NxtAiMessage::where('role', 'user')->select('conversation_id'))
+                ->latest('id')->first() ?? $conversation;
+        }
 
-        $text = 'Hi NXTutors, I was chatting with NXT AI and would like to continue on WhatsApp.';
-        $url = $number !== '' ? 'https://wa.me/'.$number.'?text='.rawurlencode($text) : null;
+        $handoffs = app(\App\Services\WhatsAppHandoff::class);
+        $url = null;
+        if ($handoffs->number() !== '') {
+            try {
+                $onScreen = $request ? $this->onScreenContext($request) : [];
+                $mapper = app(PublicTutorFieldMapper::class);
+                $search = app(TutorSearchService::class);
+                $ids = array_values(array_filter(array_map(fn ($c) => $search->decodeRef((string) ($c['ref'] ?? '')), $onScreen)));
+                $h = $handoffs->create([
+                    'kind' => 'chat',
+                    'intent' => 'chat_continue',
+                    'source_url' => $request?->headers->get('referer'),
+                    'primary_tutor_id' => $request?->profileTutorId() && in_array($request->profileTutorId(), $ids, true) ? $request->profileTutorId() : null,
+                    'tutors' => array_map(fn ($id) => ['id' => $id, 'role' => $id === $request?->profileTutorId() ? 'primary' : 'shown'], $ids) ?: null,
+                    'conversation_uid' => $chat->uid,
+                    'known' => $request ? $handoffs->knownFromPage($request->pageContext()) : [],
+                ]);
+                $url = $handoffs->waUrl($handoffs->textFor($h), $h);
+            } catch (\Throwable $e) {
+                Log::warning('nxt_ai.handoff_ref_failed', ['error' => $e->getMessage()]);
+                $url = $handoffs->waUrl('Hi NXTutors, I was chatting with NXT AI and would like to continue on WhatsApp.');
+            }
+        }
 
         $conversation->forceFill(['status' => 'handed_off'])->save();
 

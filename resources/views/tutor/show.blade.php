@@ -529,9 +529,14 @@ html {
             <a class="nxbtn nxbtn--accent" href="#demoModal" data-modal-target="demoModal">Book Demo</a>
 
             {{-- ✅ WhatsApp CTA (required) --}}
-            <a class="nxbtn" target="_blank"
-               href="https://wa.me/{{ $waNumber }}?text={{ urlencode('Hi, I want to book a demo with '.$tutor->name.' in '.$tutor->city) }}">
+            <a class="nxbtn" target="_blank" rel="nofollow noopener"
+               href="{{ \App\Support\Wa::tutor($tutor->user_id, 'profile') }}">
               Chat on WhatsApp
+            </a>
+
+            {{-- The chat below already knows this tutor (kbTutor). --}}
+            <a class="nxbtn nxbtn--ghost" href="#nxAskAISection" data-ask-ai>
+              Ask AI about {{ \Illuminate\Support\Str::before(trim($tutor->name), ' ') ?: $tutor->name }}
             </a>
           </div>
 
@@ -1057,7 +1062,7 @@ html {
                   'name' => Str::slug((string) $rt->name) ?: 'tutor',
               ]);
 
-              $rtWa = 'https://wa.me/' . $waNumber . '?text=' . rawurlencode("Hi, I want to connect with tutor {$rt->name} (UserID: {$rt->user_id}).");
+              $rtWa = \App\Support\Wa::tutor($rt->user_id, 'related');
             @endphp
 
             @include('partials.tutor-card', [
@@ -1225,7 +1230,7 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="nxsticky">
     <a class="nxbtn nxbtn--accent" href="#demoModal" data-modal-target="demoModal">Book Demo</a>
     <a class="nxbtn" target="_blank"
-       href="https://wa.me/{{ $waNumber }}?text={{ urlencode('Hi, I want to book a demo with '.$tutor->name.' in '.$tutor->city) }}">
+       href="{{ \App\Support\Wa::tutor($tutor->user_id, 'profile') }}">
       WhatsApp
     </a>
   </div>

@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const defaultUrl = grid.dataset.defaultUrl || "";
     const aiUrlBase = grid.dataset.aiUrl || "";
+    const waHandoffUrl = grid.dataset.waUrl || "";
 
     let compareProgressTimer = null;
     let compareResizeObserver = null;
@@ -658,6 +659,11 @@ function renderComparePieChart(tutors) {
         compareResultsMount.innerHTML = uiHtml;
       }
 
+      if (compareResultsMount) {
+        compareResultsMount.insertAdjacentHTML("afterbegin", compareActionsHtml(tutors));
+        wireCompareActions(tutors);
+      }
+
       applyCompareLayoutMode();
       wireAskAI(tutors);
       renderComparePieChart(tutors);
@@ -681,6 +687,76 @@ function renderComparePieChart(tutors) {
           //compareResultsMount.scrollIntoView({ behavior: "smooth", block: "start" });
         }
       }, 120);
+    }
+
+    // What a parent can do with a comparison: book the top tutor, ask the
+    // AI about these tutors, or hand the whole comparison to our team on
+    // WhatsApp. The WhatsApp buttons carry a Ref (POST /wa/handoff), so Lead
+    // Intake knows who was compared and does not ask again.
+    function compareActionsHtml(tutors) {
+      const winner = tutors[0] || {};
+      const first = (winner.name || "the top tutor").split(" ")[0];
+      return `
+        <div class="nxg-cmp-actions" role="group" aria-label="Next steps">
+          <button type="button" class="nxg-cmp-act nxg-cmp-act--wa" data-act="book">
+            Book a free demo with ${esc(first)} on WhatsApp
+          </button>
+          <button type="button" class="nxg-cmp-act" data-act="ask">Ask AI about these tutors</button>
+          <button type="button" class="nxg-cmp-act" data-act="help">Help me choose on WhatsApp</button>
+          ${winner._profile && winner._profile !== "#" ? `<a class="nxg-cmp-act" href="${esc(winner._profile)}">View ${esc(first)}'s profile</a>` : ""}
+        </div>`;
+    }
+
+    function wireCompareActions(tutors) {
+      const bar = compareResultsMount && compareResultsMount.querySelector(".nxg-cmp-actions");
+      if (!bar) return;
+      const ids = tutors.map(t => String(t._compareId || t.id || "")).filter(Boolean);
+
+      bar.addEventListener("click", async (e) => {
+        const btn = e.target.closest("[data-act]");
+        if (!btn) return;
+        const act = btn.dataset.act;
+
+        if (act === "ask") {
+          if (typeof window.nxgAskAboutCompare === "function") {
+            window.nxgAskAboutCompare(tutors.map(t => t.name).filter(Boolean));
+          } else {
+            const box = document.getElementById("nxAskAiInput");
+            if (box) { box.value = "Which of these tutors is best for my child?"; box.focus(); }
+          }
+          return;
+        }
+
+        // Open the tab inside the click, then point it at WhatsApp.
+        const win = window.open("", "_blank");
+        let url = (tutors[0] && tutors[0]._wa) || "#";
+        try {
+          const csrf = (document.querySelector('meta[name="csrf-token"]') || {}).content || "";
+          const r = await fetch(waHandoffUrl, {
+            method: "POST",
+            headers: { "Content-Type": "application/json", "Accept": "application/json", "X-CSRF-TOKEN": csrf, "X-Requested-With": "XMLHttpRequest" },
+            body: JSON.stringify({
+              kind: "compare",
+              tutor_ids: ids,
+              pick_id: act === "book" ? ids[0] : null,
+              from: location.pathname + location.search,
+              page_title: document.title,
+              known: window.nxgPageContext ? {
+                subjects: window.nxgPageContext.subject ? [window.nxgPageContext.subject] : [],
+                board: window.nxgPageContext.board || null,
+                student_class: window.nxgPageContext.class || null,
+                city: window.nxgPageContext.city || null,
+                locality: window.nxgPageContext.area || null
+              } : {}
+            })
+          });
+          const d = r.ok ? await r.json() : null;
+          if (d && d.url) url = d.url;
+        } catch (err) { /* falls back to the tutor's own WhatsApp button */ }
+
+        if (url === "#") { if (win) win.close(); return; }
+        if (win && !win.closed) win.location.href = url; else window.location.href = url;
+      });
     }
 
     function updateCompareButtons() {
@@ -746,7 +822,7 @@ function renderComparePieChart(tutors) {
         </div>
         <div class="cmp-dock-text">
           <strong>${list.length} Tutor${list.length > 1 ? "s" : ""} Selected</strong>
-          ${ready ? "" : `<span>Select 1 more to compare</span>`}
+          ${ready ? `<span>Then ask our AI which one fits your child</span>` : `<span>Select 1 more to compare</span>`}
         </div>
         <button type="button" class="cmp-dock-go" ${ready ? "" : "disabled"}>Compare</button>
         <button type="button" class="cmp-dock-clear" aria-label="Clear selection">&times;</button>

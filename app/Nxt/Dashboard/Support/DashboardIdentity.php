@@ -60,6 +60,7 @@ final class DashboardIdentity
             'state' => $r->state,
             'pincode' => $r->pincode,
             'travel_areas' => $r->travel_areas ?? null,
+            'other_names' => $r->other_names ?? null,
             'address' => $r->address,
             'gender' => $r->gender,
             'dob' => $r->dob,

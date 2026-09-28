@@ -20,14 +20,9 @@
     $rating  = number_format((float)($t->rating_avg ?? 0), 1);
     $reviews = (int)($t->reviews_count ?? 0);
 
-    // The page context stays in the message — it is how the desk knows which
-    // area page the parent came from.
-    $waText = "Hi, I want to connect with tutor {$t->name} (UserID: {$t->user_id}).";
-    if (isset($page)) {
-      $waText .= " Page: {$page->title} | {$page->location}, {$page->city}.";
-    }
-    $waNumber = preg_replace('/[^0-9]/', '', $setting->phone);
-    $waLink = "https://wa.me/" . $waNumber . "?text=" . urlencode($waText);
+    // Opens WhatsApp with a Ref (App\Support\Wa): the exact tutor and this
+    // page (its URL and place) reach Lead Intake and the desk.
+    $waLink = \App\Support\Wa::tutor($t->user_id, 'card', isset($page) ? ['city' => $page->city ?? null, 'area' => $page->location ?? null] : []);
 
     $encodedId = rtrim(strtr(base64_encode($t->user_id . '-nxt'), '+/', '-_'), '=');
     $profileUrl = route('tutor.newshow', [

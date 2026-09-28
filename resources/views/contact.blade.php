@@ -6,7 +6,7 @@
   $nxAddress = $setting->address ?? 'BLK-2/49, NXTUTORS EDTECH PVT LTD, M3M Cosmopolitan, off Golf Course Extension Road, Sector 66, Gurugram, Haryana 122101';
   $nxPhoneDigits = preg_replace('/[^0-9]/', '', $nxPhone);
   $nxPhoneTel    = preg_replace('/[^0-9+]/', '', $nxPhone);
-  $nxWa = 'https://wa.me/'.$nxPhoneDigits.'?text='.rawurlencode('Hi NXTutors, I would like to know more about home tuition.');
+  $nxWa = \App\Support\Wa::page('contact');
 @endphp
 <!doctype html>
 <html lang="en">

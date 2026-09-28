@@ -45,6 +45,10 @@ Disallow: /user/
 Disallow: /profile/
 Disallow: /messages/
 Disallow: /settings/
+Disallow: /wa$
+Disallow: /wa?
+Disallow: /wa/
+# /wa and /wa/tutor/… open WhatsApp and record a Ref; nothing to index.
 
 # /storage/ is deliberately crawlable: every public image on this
 # site (tutor portraits, category icons, hero and blog images) is

@@ -1194,7 +1194,7 @@
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
 
-                        <a href="https://wa.me/919876543210" class="nx-btn-secondary">
+                        <a href="{{ \App\Support\Wa::page('course') }}" class="nx-btn-secondary" target="_blank" rel="nofollow noopener">
                             Talk on WhatsApp
                         </a>
                     </div>

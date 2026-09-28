@@ -187,11 +187,8 @@
         $rating = number_format($avgRating, 1);
 
         // ✅ WhatsApp link (number apna set kar lena)
-        $waText = "Hi, I want to connect with tutor {$t->name} (UserID: {$t->user_id}).";
-        $waText .= " Area: " . ($area->main_title ?? $area->name) . ", " . ($city->city_name ?? '');
-        $waNumber = preg_replace('/[^0-9]/', '', $setting->phone);
-
-      $waLink = "https://wa.me/" . $waNumber . "?text=" . urlencode($waText);
+        // Opens WhatsApp with a Ref (App\Support\Wa): the exact tutor and this area page.
+        $waLink = \App\Support\Wa::tutor($t->user_id, 'card', ['city' => $city->city_name ?? null, 'area' => $area->name ?? null]);
  
     $citySlug = Str::slug($t->city ?? $city->name ?? request()->segment(2) ?? 'city');
 

@@ -66,8 +66,8 @@
         <a href="#" aria-label="NXTutors on Instagram">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 7.1A4.9 4.9 0 1 0 16.9 12A4.9 4.9 0 0 0 12 7.1m0 8.08A3.18 3.18 0 1 1 15.18 12A3.18 3.18 0 0 1 12 15.18M18.25 6.9a1.14 1.14 0 1 1-1.15-1.15a1.15 1.15 0 0 1 1.15 1.15M21.2 8.05a5.66 5.66 0 0 0-1.55-4a5.7 5.7 0 0 0-4-1.55C14.1 2.41 9.9 2.41 8.35 2.5a5.7 5.7 0 0 0-4 1.54a5.68 5.68 0 0 0-1.55 4c-.09 1.56-.09 5.75 0 7.31a5.66 5.66 0 0 0 1.55 4a5.72 5.72 0 0 0 4 1.55c1.56.09 5.75.09 7.31 0a5.66 5.66 0 0 0 4-1.55a5.68 5.68 0 0 0 1.55-4c.09-1.56.09-5.74 0-7.3m-2.06 8.98a3.22 3.22 0 0 1-1.82 1.82c-1.26.5-4.26.39-5.66.39s-4.4.1-5.66-.39a3.22 3.22 0 0 1-1.82-1.82c-.5-1.26-.39-4.26-.39-5.66s-.1-4.4.39-5.66A3.22 3.22 0 0 1 6.34 3.9c1.26-.5 4.26-.39 5.66-.39s4.4-.1 5.66.39a3.22 3.22 0 0 1 1.82 1.82c.5 1.26.39 4.26.39 5.66s.11 4.4-.39 5.65"/></svg>
         </a>
-        <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $setting->phone);}}"
-           target="_blank" rel="noopener" aria-label="NXTutors on WhatsApp">
+        <a href="{{ \App\Support\Wa::page('footer', $aiPage ?? []) }}"
+           target="_blank" rel="nofollow noopener" aria-label="NXTutors on WhatsApp">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.28-.1-.48-.15-.68.15s-.76.96-.94 1.16c-.17.2-.34.22-.64.08s-1.26-.47-2.39-1.48c-.89-.79-1.48-1.76-1.66-2.06s-.02-.46.13-.6c.14-.14.3-.35.45-.52s.2-.3.3-.5s.05-.37-.03-.52c-.07-.15-.66-1.61-.91-2.2c-.25-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37s-1.03 1.02-1.03 2.48c0 1.46 1.06 2.87 1.21 3.07c.15.2 2.1 3.2 5.08 4.49c.71.3 1.26.49 1.69.62c.71.23 1.36.2 1.87.12c.57-.09 1.76-.72 2-1.42c.25-.69.25-1.29.18-1.41c-.08-.13-.28-.2-.58-.35M12.05 21.8h-.01a9.9 9.9 0 0 1-5.03-1.38l-.36-.22l-3.74.99l1-3.65l-.24-.38A9.86 9.86 0 0 1 2.16 12c0-5.45 4.44-9.89 9.89-9.89c2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.89-9.88 9.89m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.69 1.45h.01c6.55 0 11.89-5.34 11.89-11.89c0-3.18-1.23-6.17-3.48-8.42"/></svg>
         </a>
       </div>
@@ -133,8 +133,8 @@
         </li>
       </ul>
 
-      <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $setting->phone);}}"
-         target="_blank" rel="noopener" class="btn-footer">
+      <a href="{{ \App\Support\Wa::page('footer', $aiPage ?? []) }}"
+         target="_blank" rel="nofollow noopener" class="btn-footer">
         Chat on WhatsApp
       </a>
     </div>
@@ -159,8 +159,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const submitBtn = document.getElementById('demoSubmitBtn');
 
     const whatsappNumber = "{{ preg_replace('/[^0-9]/', '', $setting->phone) }}";
-    const locationText = @json($locationText ?? 'Sector 30, Gurugram');
+    // The page's place, else the city the site detected; never a made-up default
+    // (this was "Sector 30, Gurugram" for every lead).
+    let savedCity = '';
+    try { savedCity = localStorage.getItem('nx_city') || ''; } catch (e) {}
+    const locationText = @json($locationText ?? '') || savedCity;
     const storeUrl = "{{ route('demo.lead.store') }}";
+    const handoffUrl = "{{ route('wa.handoff') }}";
     const sourcePage = window.location.href;
 
     chips.forEach(chip => {
@@ -180,8 +185,11 @@ document.addEventListener('DOMContentLoaded', function () {
             name: form.querySelector('[name="name"]')?.value.trim() || '',
             phone: form.querySelector('[name="phone"]')?.value.trim() || '',
             service: form.querySelector('[name="service"]')?.value.trim() || '',
-            subject: form.querySelector('[name="subject"]')?.value.trim() || '',
-            child_class: form.querySelector('[name="child_class"]')?.value.trim() || '',
+            // The form's tag inputs are "subjects" / "classes" / "boards"; reading
+            // "subject" / "child_class" sent every lead with these empty.
+            subject: (form.querySelector('[name="subjects"]') || form.querySelector('[name="subject"]'))?.value.trim() || '',
+            child_class: (form.querySelector('[name="classes"]') || form.querySelector('[name="child_class"]'))?.value.trim() || '',
+            board: form.querySelector('[name="boards"]')?.value.trim() || '',
             preferred_time: form.querySelector('[name="preferred_time"]')?.value.trim() || '',
             mode: form.querySelector('[name="mode"]')?.value.trim() || '',
             location: locationText,
@@ -202,6 +210,10 @@ document.addEventListener('DOMContentLoaded', function () {
         submitBtn.disabled = true;
         submitBtn.innerText = 'Please wait...';
 
+        // Open the tab now, while this is still the parent's click; a window
+        // opened after the saves below is blocked as a pop-up.
+        const waWin = window.open('', '_blank');
+
         try {
             const csrfToken = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content');
 
@@ -209,6 +221,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 alert('CSRF token not found. Please add <meta name="csrf-token" content=\"{{ csrf_token() }}\"> in head.');
                 submitBtn.disabled = false;
                 submitBtn.innerText = 'Book demo on WhatsApp';
+                if (waWin) waWin.close();
                 return;
             }
 
@@ -233,6 +246,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 alert('Server returned invalid response. Check Laravel route/controller/logs.');
                 submitBtn.disabled = false;
                 submitBtn.innerText = 'Book demo on WhatsApp';
+                if (waWin) waWin.close();
                 return;
             }
 
@@ -248,23 +262,53 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 submitBtn.disabled = false;
                 submitBtn.innerText = 'Book demo on WhatsApp';
+                if (waWin) waWin.close();
                 return;
             }
 
-            const whatsappMessage = `Hello, I want to book a demo class.
+            // On a tutor's profile the demo is with that tutor, and the Ref says which one.
+            const profileTutorId = window.nxgProfileTutorId || '';
+            const profileTutorName = window.nxgProfileTutorName || '';
+            const whatsappMessage = `Hello, I want to book a demo class${profileTutorName ? ' with ' + profileTutorName : ''}.
 
 Name: ${formData.name}
 Phone: +91 ${formData.phone}
 Service: ${formData.service || '-'}
 Subject: ${formData.subject || '-'}
+Board: ${formData.board || '-'}
 Class: ${formData.child_class || '-'}
 Preferred Time: ${formData.preferred_time || '-'}
 Mode: ${formData.mode || '-'}
 Location: ${formData.location || '-'}
 Message: ${formData.message || '-'}`;
 
-            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
-            window.open(whatsappUrl, '_blank');
+            // A Ref carries the form to Lead Intake, so it does not ask again.
+            let whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+            try {
+                const ref = await fetch(handoffUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json', 'X-CSRF-TOKEN': csrfToken, 'X-Requested-With': 'XMLHttpRequest' },
+                    body: JSON.stringify({
+                        kind: 'demo_form',
+                        tutor_ids: profileTutorId ? [profileTutorId] : [],
+                        pick_id: profileTutorId || null,
+                        from: location.pathname + location.search,
+                        page_title: document.title,
+                        text: whatsappMessage,
+                        known: {
+                            subjects: formData.subject ? formData.subject.split(',').map(s => s.trim()).filter(Boolean) : [],
+                            board: formData.board.split(',')[0].trim() || null,
+                            student_class: formData.child_class.split(',')[0].trim() || null,
+                            tuition_mode: formData.mode || null,
+                            preferred_time: formData.preferred_time || null,
+                            city: formData.location || null
+                        }
+                    })
+                }).then(r => r.ok ? r.json() : null);
+                if (ref && ref.url) whatsappUrl = ref.url;
+            } catch (refError) { /* WhatsApp still opens, without a Ref */ }
+
+            if (waWin && !waWin.closed) { waWin.location.href = whatsappUrl; } else { window.location.href = whatsappUrl; }
 
             form.reset();
             if (subjectInput) subjectInput.value = 'Math';
@@ -275,7 +319,8 @@ Message: ${formData.message || '-'}`;
             submitBtn.innerText = 'Book demo on WhatsApp';
         } catch (error) {
             console.error('Fetch error:', error);
-            alert('Something went wrong. Please check console and Laravel logs.');
+            if (waWin) waWin.close();
+            alert('Something went wrong. Please try again.');
             submitBtn.disabled = false;
             submitBtn.innerText = 'Book demo on WhatsApp';
         }

@@ -61,6 +61,9 @@ class ProfileController extends DashboardController
                 'email' => ['required', 'email', 'max:255', Rule::unique('register', 'email')->ignore($register->id)],
                 'dob' => 'nullable|string|max:32',
                 'gender' => 'nullable|in:male,female,other',
+                // Other names parents know the tutor by ("Ajay Sir"), comma-separated,
+                // so a parent who types one on WhatsApp reaches the right tutor.
+                'other_names' => 'nullable|string|max:255',
             ],
             'address' => [
                 'address' => 'nullable|string|max:1000',

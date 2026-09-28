@@ -27,9 +27,8 @@
     $rating  = number_format((float)($t->rating_avg ?? 0), 1);
     $reviews = (int)($t->reviews_count ?? 0);
 
-    $waNumber = preg_replace('/[^0-9]/', '', $setting->phone);
-    $waText = rawurlencode("Hi, I want to talk to tutor: {$t->name}");
-    $waLink = "https://wa.me/{$waNumber}?text={$waText}";
+    // Opens WhatsApp with a Ref, so Lead Intake knows exactly which tutor (App\Support\Wa).
+    $waLink = \App\Support\Wa::tutor($t->user_id, 'card', $aiPage ?? []);
 
     $encodedId = rtrim(strtr(base64_encode($t->user_id . '-nxt'), '+/', '-_'), '=');
 

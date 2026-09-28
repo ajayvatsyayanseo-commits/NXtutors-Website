@@ -130,7 +130,8 @@
         </button>
       </div>
 
-      <p class="nxg-chat-foot">NXT AI can make mistakes. Please verify important details.</p>
+      <p class="nxg-chat-foot">NXT AI can make mistakes. Please verify important details.
+        <a href="#" class="nxg-chat-wa" id="nxAskAiWa" rel="nofollow">Continue on WhatsApp</a></p>
     </div>
 
     <!-- ===== KNOWLEDGE BASE ===== -->
@@ -202,7 +203,8 @@
    <div
     id="compareGrid"
     data-default-url="{{ route('home.compareDefaults') }}"
-    data-ai-url="{{ route('home.compareAi') }}" style="display:none;"
+    data-ai-url="{{ route('home.compareAi') }}"
+    data-wa-url="{{ route('wa.handoff') }}" style="display:none;"
   >
     <div style="padding:12px;color:#94a3b8;">
       Select tutors to start AI comparison…
@@ -283,11 +285,16 @@
   // model gets real structured context instead of a sentence of guesswork —
   // and the stored message stays exactly what the parent typed.
   window.nxgProfileTutorId = @json(!empty($kbTutor) ? (string) $kbTutor->user_id : '');
+  window.nxgProfileTutorName = @json(!empty($kbTutor) && empty($kbTutor->is_sample) ? (string) $kbTutor->name : '');
   // The page this chat sits on (city / area / subject / guide); see the
   // $aiPage note at the top of this file.
   window.nxgPageContext = @json(empty($kbTutor) ? (object) $aiPage : (object) []);
   var csrf = (document.querySelector('meta[name="csrf-token"]') || {}).content || '';
+  // Kept for this browser tab, so a reload continues the same chat (and the
+  // WhatsApp Ref carries all of it), instead of starting over.
+  var CONV_KEY = 'nx_ai_conv:' + location.pathname;
   var conversationId = null;
+  try { conversationId = sessionStorage.getItem(CONV_KEY) || null; } catch (e) {}
   var busy = false;
   var handedOff = false;
 
@@ -581,7 +588,10 @@
     .then(function (r) {
       t.remove();
       var d = r.data || {};
-      if (d.conversation_id) conversationId = d.conversation_id;
+      if (d.conversation_id) {
+        conversationId = d.conversation_id;
+        try { sessionStorage.setItem(CONV_KEY, conversationId); } catch (e) {}
+      }
       addAi(d.reply || 'Sorry, I could not answer that.', {muted: !d.success});
       if (d.success) {
         renderBlocks(d.blocks);
@@ -609,6 +619,72 @@
       if (group) group.remove();
       sendMessage();
     });
+  });
+
+  // "Ask AI about these tutors" from a comparison (nx-compare.js). The
+  // compared tutors travel with every message (compareIds), so the chat
+  // already knows who "them" is; this only brings the chat into view and
+  // offers the questions parents ask at this point.
+  window.nxgAskAboutCompare = function (names) {
+    var section = document.getElementById('nxAskAISection');
+    if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (handedOff) return;
+    var who = (names || []).slice(0, 3);
+    var pair = who.length >= 2 ? who.slice(0, -1).join(', ') + ' and ' + who[who.length - 1] : 'these tutors';
+    renderQuickReplies([
+      'Which of ' + pair + ' is best for my child?',
+      'Compare their fees',
+      'Who can teach at home near me?',
+      'What do parents say about them?'
+    ]);
+    setTimeout(function () { input.focus(); }, 400);
+  };
+
+  // Continue on WhatsApp at any point: the Ref carries this chat, the tutors
+  // on screen and the page to Lead Intake, so nobody has to repeat themselves.
+  var waLink = document.getElementById('nxAskAiWa');
+  if (waLink) {
+    waLink.addEventListener('click', function (e) {
+      e.preventDefault();
+      var win = window.open('', '_blank');
+      var ctx = window.nxgPageContext || {};
+      var tutorIds = window.nxgProfileTutorId ? [window.nxgProfileTutorId] : compareIds();
+      fetch(@json(route('wa.handoff')), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json', 'X-CSRF-TOKEN': csrf, 'X-Requested-With': 'XMLHttpRequest' },
+        body: JSON.stringify({
+          kind: 'chat',
+          conversation_id: conversationId,
+          tutor_ids: tutorIds,
+          pick_id: window.nxgProfileTutorId || null,
+          from: location.pathname + location.search,
+          page_title: document.title,
+          known: {
+            subjects: ctx.subject ? [ctx.subject] : [],
+            board: ctx.board || null,
+            student_class: ctx['class'] || null,
+            city: ctx.city || null,
+            locality: ctx.area || null
+          }
+        })
+      })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) {
+        if (d && d.url) { if (win && !win.closed) win.location.href = d.url; else window.location.href = d.url; }
+        else if (win) win.close();
+      })
+      .catch(function () { if (win) win.close(); });
+    });
+  }
+
+  // "Ask AI about <tutor>" buttons: bring the chat into view, ready to type.
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('[data-ask-ai]');
+    if (!a) return;
+    e.preventDefault();
+    var section = document.getElementById('nxAskAISection');
+    if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    setTimeout(function () { if (!handedOff) input.focus(); }, 400);
   });
 
   send.addEventListener('click', sendMessage);

@@ -2313,3 +2313,33 @@
   /* clears the tutor profile's sticky CTA bar when both are on screen */
   body:has(.nxsticky) .cmp-dock{ bottom: 78px; }
 }
+
+/* Next steps after a comparison (nx-compare.js compareActionsHtml). */
+.nxg-cmp-actions{
+  display:flex; flex-wrap:wrap; gap:8px;
+  margin:0 0 12px;
+}
+.nxg-cmp-act{
+  display:inline-flex; align-items:center; justify-content:center;
+  min-height:40px; padding:9px 16px; border-radius:999px;
+  border:1px solid rgba(148,163,184,.45);
+  background:rgba(255,255,255,.08); color:inherit;
+  font:inherit; font-size:13px; font-weight:600; line-height:1.2;
+  text-decoration:none; cursor:pointer;
+}
+.nxg-cmp-act:hover{ border-color:#25D366; }
+.nxg-cmp-act--wa{
+  background:#25D366; border-color:#25D366; color:#06301a;
+  box-shadow:0 6px 18px rgba(37,211,102,.28);
+}
+.nxg-cmp-act--wa:hover{ background:#1fbe5a; }
+@media (max-width:600px){
+  .nxg-cmp-act{ flex:1 1 100%; }
+}
+
+/* "Continue on WhatsApp" under the chat: available at any point. */
+.nxg-chat-wa{
+  display:inline-block; margin-left:6px;
+  color:#25D366; font-weight:600; text-decoration:none;
+}
+.nxg-chat-wa:hover{ text-decoration:underline; }

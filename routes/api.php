@@ -32,6 +32,9 @@ Route::middleware([VerifyAgentSignature::class, 'throttle:agent-feed'])
     ->name('internal.agent.')
     ->group(function (): void {
         Route::get('/tutors', [AgentTutorFeedController::class, 'index'])->name('tutors');
+        // Lead Intake: the context behind a WhatsApp Ref, and tutors by name (docs/contracts/lead-intake-handoff-v1.md).
+        Route::get('/tutors/resolve', [\App\Http\Controllers\Api\AgentHandoffController::class, 'resolve'])->name('tutors.resolve');
+        Route::get('/handoffs/{code}', [\App\Http\Controllers\Api\AgentHandoffController::class, 'show'])->name('handoffs.show');
     });
 
 /*

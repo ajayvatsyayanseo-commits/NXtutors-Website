@@ -20,7 +20,7 @@ final class PublicTutorFieldMapper
 {
     /** Public columns that are safe to read off the model. */
     public const PUBLIC_COLUMNS = [
-        'name', 'gender', 'avatar', 'address', 'city', 'district', 'state',
+        'name', 'other_names', 'gender', 'avatar', 'address', 'city', 'district', 'state',
         'pincode', 'experience', 'education', 'other_education', 'budget',
         'for_class', 'class_type', 'profile', 'profile_desc', 'pro_desc',
     ];
@@ -43,6 +43,11 @@ final class PublicTutorFieldMapper
         return [
             'ref' => $this->publicToken((string) $t->user_id),
             'name' => $this->clean((string) ($t->name ?? 'Tutor')),
+            // Names the tutor is also known by ("Ajay Sir"), for matching what a parent types.
+            'other_names' => array_values(array_filter(array_map(
+                fn ($n) => $this->clean(trim($n)),
+                explode(',', (string) ($t->other_names ?? ''))
+            ))),
             'gender' => $this->cleanGender($t->gender),
             'city' => $this->clean((string) ($t->city ?? '')),
             'area' => $this->clean((string) ($t->address ?? '')),
