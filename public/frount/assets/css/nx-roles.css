@@ -1,0 +1,159 @@
+/* ==========================================================================
+   Colour roles: one job per colour (agreed 28 Sep 2026).
+
+   Before this, five colours all said "click here" (azure buttons, marigold
+   hero button, leftover lime, WhatsApp green, TutorTwin indigo), and links
+   were the same off-white as the text around them. The eye could not learn
+   what a colour meant. Now each colour means exactly one thing:
+
+     marigold  --nxt-action  the main action on a screen (find a tutor, book a demo)
+     sky blue  --nxt-link    links and information (underlined in running text)
+     indigo    --nxt-ai      anything AI: NXT AI chat, AI compare, TutorTwin
+     green     --nxt-whatsapp only buttons that open WhatsApp
+     green     --nxt-verify  only "verified" and success
+     white     selected state (a chosen tab, filter or toggle), dark text on it
+
+   Gold stars on ratings stay gold: that is a convention every parent reads.
+   Everything decorative (bullets, dots, markers) is neutral, so colour is
+   left for meaning. Loaded last (header), so these rules settle the roles.
+   ========================================================================== */
+:root{
+  --nxt-action:#F5A524;
+  --nxt-on-action:#0A1020;
+  --nxt-link:#6CB0FF;           /* 7.6:1 on the page ground, 5.9:1 on cards */
+  --nxt-link-line:rgba(108,176,255,.45);
+  --nxt-ai:#A5B4FC;             /* indigo text on dark, 9:1 */
+  --nxt-ai-fill:#4F46E5;        /* indigo fill, white text 6.3:1 */
+  --nxt-ai-soft:rgba(99,102,241,.16);
+  --nxt-ai-line:rgba(129,140,248,.45);
+  --nxt-selected-bg:#EEF2F9;
+  --nxt-selected-ink:#0A1020;
+}
+
+/* ---- links and information: sky blue ---------------------------------- */
+body.page .main p > a:not([class]),
+body.page .genp-content a:not([class]),
+body.page .blog-text a:not([class]),
+body.page .nx-guide a:not([class]),
+body.page .nx-article a:not([class]),
+body.page .nx-checkbox a,
+body.page .auth-links a,
+body.page .auth-signup a,
+body.page .nxt-coverage__col a,
+body.page .location-map-link,
+body.page .nx-linkbtn,
+body.page .nx-sec__action,
+body.page .nx-twin__teachers .nx-card__meta{
+  color:var(--nxt-link);
+  text-decoration:underline;
+  text-decoration-color:var(--nxt-link-line);
+  text-underline-offset:3px;
+}
+body.page .nx-sec__action{text-decoration:none}
+body.page .nx-sec__action:hover{text-decoration:underline}
+body.page a{text-decoration-color:var(--nxt-link-line)}
+body.page .nx-card li a:hover,
+body.page .nx-crumbs a:hover,
+body.page .page-hero__crumbs a:hover,
+body.page .genp-link:hover,
+body.page .footer-col ul a:hover,
+body.page .footer-col ul li a:hover,
+body.page .nxt-account__item:hover,
+body.page .nx-article .nx-article__toc a:hover{color:var(--nxt-link)}
+body.page .tutor-reach{color:var(--nxt-link)}
+
+/* ---- labels: neutral, not a fourth "look here" colour ------------------ */
+body.page .nx-card__kicker,
+body.page .nxk,
+body.page .nx-modal__eyebrow,
+body.page .auth-eyebrow,
+body.page .seo-badge,
+body.page .tile:hover .tile-kicker{color:var(--nxt-text-dim)}
+body.page .footer-contact li > svg,
+body.page .footer-logo{color:var(--nxt-text)}
+
+/* ---- selected state: white with dark text, like the hero's mode pills -- */
+body.page .nx-tabs__tab,
+body.page .nx-modebar__opt,
+body.page .nx-guide__toc a{transition:background var(--nxt-fast),color var(--nxt-fast),border-color var(--nxt-fast)}
+body.page .nx-tabs:has(.nx-tabs__radio:nth-of-type(1):checked) .nx-tabs__tab:nth-of-type(1),
+body.page .nx-tabs:has(.nx-tabs__radio:nth-of-type(2):checked) .nx-tabs__tab:nth-of-type(2),
+body.page .nx-tabs:has(.nx-tabs__radio:nth-of-type(3):checked) .nx-tabs__tab:nth-of-type(3),
+body.page .nx-tabs:has(.nx-tabs__radio:nth-of-type(4):checked) .nx-tabs__tab:nth-of-type(4),
+body.page .nx-tabs:has(.nx-tabs__radio:nth-of-type(5):checked) .nx-tabs__tab:nth-of-type(5),
+body.page .nx-tabs:has(.nx-tabs__radio:nth-of-type(6):checked) .nx-tabs__tab:nth-of-type(6),
+body.page .nx-tabs:has(.nx-tabs__radio:nth-of-type(7):checked) .nx-tabs__tab:nth-of-type(7),
+body.page .nx-modebar__opt.is-on,
+body.page .nx-guide__toc a.is-active,
+body.page .tutor-compare.is-selected,
+body.page .pricing-tab-btn.active,
+body.page .pricing-tab-btn[aria-selected="true"]{
+  background:var(--nxt-selected-bg);border-color:var(--nxt-selected-bg);color:var(--nxt-selected-ink);
+}
+body.page .nx-chip__n{background:var(--nxt-surface-3);color:var(--nxt-text)}
+body.page .nx-guide__toc a:hover:not(.is-active),
+body.page .nx-article__toc a:hover{background:var(--nxt-surface-2);border-color:var(--nxt-line-strong);color:var(--nxt-text)}
+body.page .tutor-compare:hover:not(.is-selected){border-color:var(--nxt-line-strong);color:var(--nxt-text)}
+
+/* ---- decoration: neutral ---------------------------------------------- */
+body.page .circle-bullet,
+body.page .review-avatar{background:var(--nxt-surface-2);border-color:var(--nxt-line-strong);color:var(--nxt-text)}
+body.page .nav-dot,
+body.page .hero-dot.is-active{background:var(--nxt-text)}
+body.page .nx-guide__sec > h2::before,
+body.page .nx-article h2::before{background:var(--nxt-line-strong)}
+body.page .nx-guide__sec > ol > li::before{background:var(--nxt-surface-3);color:var(--nxt-text)}
+body.page .faq-item:hover summary::after,
+body.page .nxacc:hover summary::after,
+body.page .faq-item[open] summary::after,
+body.page .nxacc[open] summary::after,
+body.page .nx-faq__item > summary::after{color:var(--nxt-text-dim)}
+body.page .faq-item[open],
+body.page .nxacc[open],
+body.page .nx-faq__item[open]{border-color:var(--nxt-line-strong)}
+body.page .nx-author__top img{border-color:var(--nxt-line-strong)}
+body.page .nx-sample-note{border-color:var(--nxt-line-strong)}
+body.page blockquote{border-left-color:var(--nxt-link)}
+
+/* ---- focus: its own visible ring, not the action colour --------------- */
+body.page input:focus,
+body.page select:focus,
+body.page textarea:focus,
+body.page .nx-field__phone:focus-within,
+body.page .search-box:focus-within,
+body.page .hero-search:focus-within,
+body.page .tl-7-contact-form input:focus,
+body.page .tl-7-contact-form textarea:focus{border-color:var(--nxt-focus);box-shadow:0 0 0 3px rgba(143,194,255,.28)}
+
+/* ---- WhatsApp: only WhatsApp is green ---------------------------------- */
+body.page .btn-footer,
+body.page .btn-footer:hover,
+body.page a.btn-accent[href*="/wa"]{background:var(--nxt-whatsapp);color:#06301a;border-color:var(--nxt-whatsapp)}
+
+/* ---- AI: indigo (NXT AI chat, AI compare, TutorTwin) -------------------- */
+body.page .nxg-pill{background:var(--nxt-ai-soft);border-color:var(--nxt-ai-line);color:var(--nxt-ai)}
+body.page .nxg-line.c1 > i,
+body.page .nxg-line.c1 > span,
+body.page .nxg-line.c1::after,
+body.page .nx-compare-progress > i{background:var(--nxt-ai-fill)}
+body.page .nxg-avatar.c1{background:var(--nxt-ai-soft);border-color:var(--nxt-ai-line);color:var(--nxt-ai)}
+body.page .nxg-ring.gold{color:var(--nxt-ai)}
+body.page .nx-compare-loader-ring{border-top-color:var(--nxt-ai)}
+
+/* ---- action: marigold, with dark ink ----------------------------------- */
+body.page .btn-accent:not(.topbar-whatsapp):not(.nxbtn--ghost):not([href*="/wa"]),
+body.page .nx-cta--primary,
+body.page .location-btn-primary,
+body.page .compare-now-btn,
+body.page .nxbtn--accent{background:var(--nxt-action);border-color:var(--nxt-action);color:var(--nxt-on-action)}
+body.page .nx-cta--primary:hover,
+body.page .location-btn-primary:hover,
+body.page .compare-now-btn:hover,
+body.page .nxbtn--accent:hover{background:#FFB940;color:var(--nxt-on-action)}
+
+/* ---- ground: cool and calm, whatever the action colour ----------------
+   A cool background makes the warm action colour stand out; tinting the
+   page itself marigold turned the edges muddy brown and took the pop away
+   from the buttons. The side glows stay the site's familiar slate blue. */
+body.page::before{background:linear-gradient(90deg,rgba(76,154,255,.22) 0%,rgba(76,154,255,.08) 55%,transparent 100%)}
+body.page::after{background:linear-gradient(270deg,rgba(76,154,255,.22) 0%,rgba(76,154,255,.08) 55%,transparent 100%)}

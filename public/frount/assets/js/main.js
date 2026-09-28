@@ -83,7 +83,8 @@ const themeConfig = {
   default: {
     ...NXT_GROUND,
     label: 'Marigold',
-    bgPage: ground('rgba(245,165,36,0.13)'),
+    // Cool ground under a warm accent: a marigold-tinted page turned muddy.
+    bgPage: ground('rgba(76,154,255,0.15)'),
     accent: '#F5A524',
     heroTint: 'linear-gradient(120deg,rgba(8,14,27,0.94),rgba(8,14,27,0.55))'
   },
@@ -204,10 +205,12 @@ themeOptions.forEach(btn => {
   });
 });
 
-// Initial theme: Azure, the house colour.
+// Initial theme: Marigold, the action colour (see css/nx-roles.css: marigold
+// means "act here"; links are blue, AI is indigo). The page ground stays the
+// cool slate blue, so the warm action colour is what stands out.
 // The picker is gone from the header, so a colour saved by an older visit
 // is ignored: everyone sees the house colour.
-applyTheme('blue');
+applyTheme('default');
 
 // ==========================
 // HERO SLIDER

@@ -92,6 +92,8 @@
   <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/nxt-ds.css?v={{ $nxtAssetV }}" />
   {{-- Hub components (chips, rails, tabs, FAQ grid, city guides); see nx-hub.css. --}}
   <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/nx-hub.css?v={{ $nxtAssetV }}" />
+  {{-- Colour roles (one job per colour); loaded last so it settles them. See nx-roles.css. --}}
+  <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/nx-roles.css?v={{ $nxtAssetV }}" />
   <script src="{{ asset('frount/assets') }}/js/nx-hub.js?v={{ $nxtAssetV }}" defer></script>
 <link rel="icon" href="{{ asset('uploads/logo/newlogo.png') }}">
 </head>
