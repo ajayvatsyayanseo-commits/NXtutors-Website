@@ -252,6 +252,9 @@
         </li>
       @endforeach
     </ul>
+
+    {{-- TutorTwin, the WhatsApp AI tutor: one line, under the search it must not compete with. --}}
+    @include('partials.tutortwin-strip', ['placement' => 'home_hero'])
   </div>
 
   {{-- The reference sweeps into a white page; this page is dark, so the curve
