@@ -47,7 +47,13 @@
         $aka = Geo::akaOf($c->slug);
       @endphp
       <li class="nxtc-card">
-        <a class="nxtc-link" href="{{ url('city/' . $c->slug) }}">
+        @php $tcHue = ['#38BDF8','#A78BFA','#34D399','#F472B6','#2DD4BF','#FBBF24'][crc32($c->slug) % 6]; @endphp
+        <a class="nxtc-link" href="{{ url('city/' . $c->slug) }}" style="--tc:{{ $tcHue }}">
+          {{-- A small skyline, one calm colour per city, so the grid is not a wall of text. --}}
+          <svg class="nxtc-sky" viewBox="0 0 96 40" aria-hidden="true" focusable="false">
+            <rect x="0" y="18" width="12" height="22" rx="2"/><rect x="14" y="8" width="14" height="32" rx="2"/><rect x="30" y="22" width="10" height="18" rx="2"/>
+            <path d="M42 40 V16 Q50 4 58 16 V40 Z"/><rect x="60" y="12" width="12" height="28" rx="2"/><rect x="74" y="24" width="10" height="16" rx="2"/><rect x="86" y="16" width="10" height="24" rx="2"/>
+          </svg>
           <span class="nxtc-name">Home tutors in {{ \App\Support\Geo::displayName($c->slug, $c->city_name) }}</span>
           <span class="nxtc-meta">
             {{ Geo::stateOf($c->slug) }}@if($aka) · also {{ $aka }}@endif

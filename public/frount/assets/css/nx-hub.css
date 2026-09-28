@@ -730,3 +730,68 @@ body.page .nxgd-foot a{color:var(--nxt-link,#6CB0FF);font-weight:700}
   .nxgd-card,.nxgd-cover__front,.nxgd-cover__back{transition:none}
   .nxgd-card:hover,.nxgd-card:hover .nxgd-cover__front,.nxgd-card:hover .nxgd-cover__back{transform:none}
 }
+
+/* ---------- How it works (home/partials/how-it-works) --------------------
+   Three drawn steps joined by a dashed path: one journey, read left to
+   right. Step 2 (matching) is the AI colour; the people steps are warm. */
+.nx-how__eyebrow,.nx-pg__eyebrow{display:inline-flex;margin-bottom:8px;padding:5px 12px;border-radius:var(--nxt-r-pill);font-size:var(--nxt-t-xs);font-weight:800;letter-spacing:.04em;text-transform:uppercase}
+.nx-how__eyebrow{background:rgba(245,165,36,.14);border:1px solid rgba(245,165,36,.45);color:#FCD34D}
+.nx-how__steps{position:relative;list-style:none;margin:var(--nxt-s6) 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--nxt-s5);counter-reset:none}
+.nx-how__steps::before{content:"";position:absolute;left:16%;right:16%;top:104px;border-top:2px dashed rgba(165,180,252,.35);z-index:0}
+.nx-how__step{position:relative;z-index:1;display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:var(--nxt-s4) var(--nxt-s5) var(--nxt-s5);border-radius:var(--nxt-r-lg);
+  background:linear-gradient(180deg,color-mix(in srgb,var(--hw) 12%,transparent),rgba(255,255,255,.025) 60%);border:1px solid color-mix(in srgb,var(--hw) 30%,transparent);
+  transition:transform var(--nxt-base) var(--nxt-ease),box-shadow var(--nxt-base)}
+.nx-how__step:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(3,7,18,.45)}
+.nx-how__step--ai{box-shadow:0 0 0 1px rgba(129,140,248,.25),0 20px 50px rgba(49,46,129,.35)}
+.nx-how__art{position:relative;margin:0 auto 4px;width:100%;max-width:260px}
+.nx-how__art svg{display:block;width:100%;height:auto}
+.nx-how__nix{position:absolute;right:-6px;bottom:-4px;filter:drop-shadow(0 8px 16px rgba(99,102,241,.6))}
+.nx-how__no{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--hw);color:#0A1020;font-weight:800;font-size:15px;box-shadow:0 0 0 5px color-mix(in srgb,var(--hw) 22%,transparent)}
+body.page .nx-how__step h3{margin:4px 0 0;font-family:var(--nxt-font-display);font-size:var(--nxt-t-h4);color:var(--nxt-text)}
+.nx-how__step p{margin:0;color:var(--nxt-text-dim);font-size:var(--nxt-t-sm);line-height:1.55}
+.nx-how__foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--nxt-s4);margin-top:var(--nxt-s5)}
+.nx-how__trust{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.nx-how__trust li{padding:6px 12px;border-radius:var(--nxt-r-pill);background:rgba(52,199,123,.1);border:1px solid rgba(52,199,123,.35);color:#A7F3D0;font-size:var(--nxt-t-xs);font-weight:700}
+.nx-how__trust li::before{content:"✓ "}
+.nx-how__cta{display:flex;flex-wrap:wrap;gap:10px}
+body.page .nx-how__primary,body.page .nx-how__secondary{display:inline-flex;align-items:center;min-height:46px;padding:11px 20px;border-radius:var(--nxt-r-pill);font-weight:800;font-size:var(--nxt-t-sm);text-decoration:none}
+body.page .nx-how__primary{background:var(--nxt-action,#F5A524);color:var(--nxt-on-action,#0A1020);box-shadow:0 10px 26px rgba(245,165,36,.3)}
+body.page .nx-how__secondary{border:1px solid var(--nxt-line-strong);color:var(--nxt-text)}
+@media (max-width:860px){
+  .nx-how__steps{grid-template-columns:minmax(0,1fr)}
+  .nx-how__steps::before{display:none} /* the numbers carry the order; a line behind the cards crossed the text */
+  .nx-how__art{max-width:220px}
+}
+
+/* ---------- Parent's guide (home/partials/parent-guide) ------------------ */
+.nx-pg__intro{display:grid;grid-template-columns:180px minmax(0,1fr);gap:var(--nxt-s5);align-items:center}
+.nx-pg__art{width:100%;height:auto;filter:drop-shadow(0 14px 26px rgba(3,7,18,.5))}
+.nx-pg__eyebrow{background:rgba(52,199,123,.14);border:1px solid rgba(52,199,123,.4);color:#A7F3D0}
+body.page .nx-pg__title{margin:0 0 8px;font-family:var(--nxt-font-display);font-size:var(--nxt-t-h2);line-height:1.15;color:var(--nxt-text)}
+.nx-pg__title span{color:#86EFAC}
+.nx-pg__lede{margin:0;max-width:60ch;color:var(--nxt-text-dim);font-size:var(--nxt-t-body)}
+body.page .nx-pg__link{display:inline-block;margin-top:10px;color:var(--nxt-link,#6CB0FF);font-weight:700;font-size:var(--nxt-t-sm);text-decoration:none}
+body.page .nx-pg__link::after{content:" →"}
+body.page .nx-pg__link:hover{text-decoration:underline}
+.nx-pg__stages{list-style:none;margin:var(--nxt-s5) 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--nxt-s4)}
+.nx-pg__stages > li{position:relative;padding:var(--nxt-s5);border-radius:var(--nxt-r-lg);background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.08);border-top:3px solid var(--pg)}
+.nx-pg__stage{display:block;margin-bottom:10px;color:var(--pg);font-family:var(--nxt-font-display);font-size:var(--nxt-t-h4);font-weight:700}
+.nx-pg__stages ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.nx-pg__stages ul li{position:relative;padding-left:26px;color:var(--nxt-text);font-size:var(--nxt-t-sm);line-height:1.45}
+.nx-pg__stages ul li::before{content:"";position:absolute;left:0;top:1px;width:18px;height:18px;border-radius:50%;
+  background:rgba(52,199,123,.16) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%2334C77B' d='M6.4 11.1 3.4 8.1l1.1-1.1 1.9 1.9 5-5 1.1 1.1z'/%3E%3C/svg%3E") center/12px no-repeat}
+@media (max-width:760px){
+  .nx-pg__intro{grid-template-columns:110px minmax(0,1fr);gap:var(--nxt-s4)}
+  .nx-pg__stages{grid-template-columns:minmax(0,1fr)}
+}
+
+/* ---------- city cards: a small skyline in each city's own calm colour --- */
+body.page .nxtc-link{position:relative;overflow:hidden;padding-top:14px;transition:transform var(--nxt-base) var(--nxt-ease),border-color var(--nxt-base),box-shadow var(--nxt-base)}
+body.page .nxtc-link:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--tc) 55%,transparent);box-shadow:0 16px 36px rgba(3,7,18,.45)}
+.nxtc-sky{width:84px;height:auto;margin-bottom:6px;fill:var(--tc);opacity:.75}
+body.page .nxtc-link:hover .nxtc-sky{opacity:1}
+body.page .nxtc-stats{color:var(--tc)}
+@media (prefers-reduced-motion:reduce){.nx-how__step,body.page .nxtc-link{transition:none}.nx-how__step:hover,body.page .nxtc-link:hover{transform:none}}
+/* Section heads that carry a label: label above the heading, not beside it. */
+body.page .nx-how .section-head,body.page .nxgd-sec .section-head{display:block}
+body.page .nx-how .section-head .section-title,body.page .nxgd-sec .section-head .section-title{margin-top:0}
