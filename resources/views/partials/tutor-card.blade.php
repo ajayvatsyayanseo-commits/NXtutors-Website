@@ -93,7 +93,7 @@
   </div>
 
   @if($isSample)
-  <div class="tutor-actions">
+  <div class="tutor-actions tutor-actions--sample">
     <a class="btn-outline" href="{{ $profileUrl }}" rel="nofollow">View sample</a>
     <a class="nxbtn tutor-match" href="#" data-modal-target="demoModal" title="{{ config('tutors.match_promise') }}">Get matched in 10 min</a>
   </div>

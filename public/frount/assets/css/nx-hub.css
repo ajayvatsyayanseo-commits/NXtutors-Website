@@ -427,3 +427,10 @@ body.page .filterbar .nx-filters{grid-column:1 / -1}
 .nx-twin__foot{margin:var(--nxt-s4) 0 0;color:var(--nxt-text-dim);font-size:var(--nxt-t-sm)}
 .nx-twin__foot a{color:var(--nxt-accent);text-decoration:none}
 .nx-twin__foot a:hover{text-decoration:underline}
+
+/* Sample cards: "View sample" and "Get matched in 10 min" are both long. Side
+   by side in a two-up phone card (~190px) they could not shrink and their text
+   ran into each other; stacked, each gets the full width and may wrap. */
+.tutor-card .tutor-actions.tutor-actions--sample{display:grid;grid-template-columns:minmax(0,1fr)!important;gap:8px}
+.tutor-card .tutor-actions > *{min-width:0;overflow-wrap:anywhere}
+.tutor-card .tutor-actions--sample > *{white-space:normal!important;line-height:1.25}
