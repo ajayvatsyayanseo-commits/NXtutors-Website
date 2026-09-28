@@ -101,8 +101,11 @@ class WhatsAppHandoff
     /** A tutor as the message names them: "Ajay Vatsyayan (Maths, Physics · Gurugram)". */
     public function tutorLabel(array $t): string
     {
+        // Subjects only: a course category such as "Academic (Class I–XII)" is not one.
+        $subjects = array_values(array_filter((array) ($t['subjects'] ?? []),
+            fn ($s) => is_string($s) && ! preg_match('/academic|class|\(/i', $s)));
         $bits = array_filter([
-            implode(', ', array_slice((array) ($t['subjects'] ?? []), 0, 2)),
+            implode(', ', array_slice($subjects, 0, 2)),
             ($t['home_city'] ?? null) ?: ($t['city'] ?? null),
         ]);
 
