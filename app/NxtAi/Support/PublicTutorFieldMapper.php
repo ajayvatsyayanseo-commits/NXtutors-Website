@@ -134,7 +134,9 @@ final class PublicTutorFieldMapper
                 'Hindi' => '/\bhindi (?:grammar|literature|language)\b|\bteach(?:es|ing)? hindi\b/',
                 'Accountancy' => '/\baccount(?:s|ancy)\b/',
                 'Economics' => '/\beconomics\b/',
-                'Computer Science' => '/\bcomputer science\b/',
+                // Taught, not studied: "B.Tech (Computer Science)" is a degree and
+                // put "Computer Science" on the cards of Maths tutors.
+                'Computer Science' => '/\b(?:teach(?:es|ing)?|tutor(?:ing)?|classes?|lessons?|coaching)\s+(?:\w+\s+){0,3}computer science\b|\bcomputer science\s+(?:tutor|tuition|teacher|classes?|lessons?|coaching|for class)\b/',
                 'JEE' => '/\b(?:iit[- ]?)?jee\b/',
                 'NEET' => '/\bneet\b/',
             ] as $subject => $pattern) {
