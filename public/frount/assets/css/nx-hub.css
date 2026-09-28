@@ -635,3 +635,9 @@ body.page #nxAskAISection{overflow-x:clip}
 @media (max-width:719px){
   .nx-chips--rail,.nx-rail{margin-inline:-12px;padding-inline:12px}
 }
+@media (max-width:719px){
+  body.page .nx-guide__toc,.nx-guide__toc{margin-inline:-12px;padding-inline:12px}
+}
+@media (max-width:719px){
+  #areasGrid{margin-inline:-12px;padding-inline:12px}
+}
