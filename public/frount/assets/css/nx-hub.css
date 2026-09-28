@@ -795,3 +795,21 @@ body.page .nxtc-stats{color:var(--tc)}
 /* Section heads that carry a label: label above the heading, not beside it. */
 body.page .nx-how .section-head,body.page .nxgd-sec .section-head{display:block}
 body.page .nx-how .section-head .section-title,body.page .nxgd-sec .section-head .section-title{margin-top:0}
+
+/* ---------- tutor profile: quick facts, jump links, empty reviews --------- */
+body.page .nxqf-wrap{padding-top:0}
+.nxqf{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:0}
+.nxqf > div{padding:12px 14px;border-radius:var(--nxt-r-md);background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.025));border:1px solid rgba(255,255,255,.09)}
+.nxqf dt{color:var(--nxt-text-faint);font-size:var(--nxt-t-micro);font-weight:800;letter-spacing:.07em;text-transform:uppercase}
+.nxqf dd{margin:4px 0 0;color:var(--nxt-text);font-weight:800;font-size:var(--nxt-t-sm);line-height:1.35}
+/* Jump links stay in reach while a parent scrolls a long profile. */
+.nxjump{position:sticky;top:var(--nx-sticky-top,64px);z-index:20;display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin-top:12px;padding:8px;
+  border-radius:var(--nxt-r-pill);background:rgba(8,14,27,.82);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(10px)}
+.nxjump::-webkit-scrollbar{display:none}
+body.page .nxjump a{flex:0 0 auto;padding:8px 14px;border-radius:var(--nxt-r-pill);color:var(--nxt-text-dim);font-size:var(--nxt-t-sm);font-weight:700;text-decoration:none;white-space:nowrap}
+body.page .nxjump a:hover{background:var(--nxt-surface-2);color:var(--nxt-text)}
+body.page .nxjump a[href="#nxAskAISection"]{color:var(--nxt-ai,#A5B4FC)}
+html{scroll-padding-top:130px}
+.nxrv-empty{padding:18px}
+body.page .nxrv-empty__cta{display:inline-flex;margin-top:12px}
+@media (max-width:700px){.nxjump{border-radius:var(--nxt-r-md)}}

@@ -218,6 +218,10 @@
   // a short single line is a heading; anything else is a paragraph. Every
   // piece is escaped, because this is tutor input rendered on a public page.
   $aboutText = trim(str_replace("\r", '', (string)($tutor->profile_desc ?? '')));
+  // A tutor who has written a full bio does not need the templated blocks
+  // ("About X – Board Tutor in Area", methodology, home vs online, why parents
+  // choose): they only repeat it, and repeated boilerplate reads as thin content.
+  $richBio = mb_strlen(trim(strip_tags(((string) ($tutor->profile ?? '')).' '.((string) ($tutor->profile_desc ?? ''))))) >= 600;
   $aboutHtml = null;
   if ($aboutText !== '') {
     $aboutHtml = '';
@@ -399,6 +403,11 @@ html {
   }
   .nxsticky a{flex:1;max-width:240px;}
   @media(max-width:700px){.nxsticky{display:flex;}}
+  /* On a laptop the booking stays one click away as a floating pill. */
+  @media(min-width:701px){
+    .nxsticky{display:flex;left:auto;right:24px;bottom:24px;padding:8px;border:1px solid rgba(148,163,184,.28);border-radius:999px;box-shadow:0 18px 40px rgba(2,6,23,.55);}
+    .nxsticky a{flex:0 0 auto;max-width:none;padding-inline:18px;}
+  }
 
   /* ✅ Review Summary Card */
   .nxsummary{cursor:pointer;}
@@ -556,6 +565,39 @@ html {
     </section>
 
 
+    {{-- Quick facts and jump links: the five things a parent checks first, in
+         one row, then a way to jump to each part of a long profile. --}}
+    @php
+      $qfBoards = array_values(array_filter($knowsAbout ?? [], fn ($k) => preg_match('/^(CBSE|ICSE|ISC|IB|IGCSE|State)/i', (string) $k)));
+      $qfMode = strtolower((string) $teachingMode) === 'both' ? 'Home & online' : ucfirst((string) $teachingMode);
+      $qfFee = $hourlyMin ? '₹'.number_format($hourlyMin).($hourlyMax ? '–₹'.number_format($hourlyMax) : '').'/hr' : (!empty($tutor->budget) ? (str_contains($tutor->budget, '₹') ? $tutor->budget : '₹'.$tutor->budget) : null);
+      $qfAreas = !empty($coversWholeCity) ? 'All over '.$homeCity : (!empty($travelAreas) ? count($travelAreas).' areas in '.$homeCity : ($homeCity ?: null));
+      $qf = array_filter([
+        'Experience' => $expYears !== '' ? rtrim($expYears, '+').'+ years' : null,
+        'Boards' => $qfBoards ? implode(' · ', array_slice(array_unique($qfBoards), 0, 4)) : null,
+        'Fee' => $isSampleProfile ? null : $qfFee,
+        'Mode' => $qfMode ?: null,
+        'Home classes' => $qfAreas,
+      ]);
+    @endphp
+    <section class="nxsec nxqf-wrap" aria-label="Quick facts">
+      @if($qf)
+        <dl class="nxqf">
+          @foreach($qf as $qfLabel => $qfValue)
+            <div><dt>{{ $qfLabel }}</dt><dd>{{ $qfValue }}</dd></div>
+          @endforeach
+        </dl>
+      @endif
+      <nav class="nxjump" aria-label="On this profile">
+        <a href="#aboutTutor">About</a>
+        <a href="#teaching">What {{ \Illuminate\Support\Str::before(trim($tutor->name), ' ') }} teaches</a>
+        @if(!empty($travelAreas))<a href="#areasServed">Areas</a>@endif
+        <a href="#pricing">Fees &amp; mode</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#nxAskAISection">Ask AI</a>
+      </nav>
+    </section>
+
     {{-- The assistant panel is about THIS tutor here: their facts fill the
          side panel and every chat question carries their context. --}}
     @include('home.partials.ask-ai', ['kbTutor' => $tutor])
@@ -572,7 +614,7 @@ html {
 
 
     {{-- ✅ 2) Teaching Details (courses + coursess fallback) --}}
-    <section class="nxsec">
+    <section class="nxsec" id="teaching">
       <div class="nxsec__head">
         <h2 class="nxh2">Teaching Details</h2>
         <p class="nxlead">Boards, classes and subjects taught</p>
@@ -590,26 +632,18 @@ html {
                 @endif
               </div>
 
+              @php
+                // Only facts that exist: a missing board or class is left out, never "—".
+                $tdBoard = $course instanceof \App\Models\Teacher_course ? ($course->board?->cat_title ?? null) : ($course->board ?? null);
+                $tdClass = $course instanceof \App\Models\Teacher_course ? ($course->classCategory?->cat_title ?? null) : ($course->for_class ?? ($tutor->for_class ?? null));
+              @endphp
               <div class="nxlead" style="margin-top:10px;">
-                <div>Board:
-                  <b>
-                    @if($course instanceof \App\Models\Teacher_course)
-                      {{ $course->board?->cat_title ?? '—' }}
-                    @else
-                      {{ $course->board ?? '—' }}
-                    @endif
-                  </b>
-                </div>
-
-                <div>Class:
-                  <b>
-                    @if($course instanceof \App\Models\Teacher_course)
-                      {{ $course->classCategory?->cat_title ?? '—' }}
-                    @else
-                      {{ $course->for_class ?? ($tutor->for_class ?? '—') }}
-                    @endif
-                  </b>
-                </div>
+                @if(is_scalar($tdBoard) && trim((string) $tdBoard) !== '')
+                  <div>Board: <b>{{ $tdBoard }}</b></div>
+                @endif
+                @if(is_scalar($tdClass) && trim((string) $tdClass) !== '')
+                  <div>Class: <b>{{ $tdClass }}</b></div>
+                @endif
 
                 <div>Mode:
                   <b>
@@ -657,7 +691,7 @@ html {
       ];
     @endphp
 
-    <section class="nxsec">
+    <section class="nxsec" id="reviews">
       <div class="nxsec__head">
         <h2 class="nxh2">Tutor Reviews</h2>
         <p class="nxlead">
@@ -666,6 +700,13 @@ html {
         </p>
       </div>
 
+      @if(empty($reviewCount))
+        <div class="nxcard nxcard--soft nxrv-empty">
+          <div class="nxk">No reviews yet</div>
+          <p class="nxlead" style="margin:6px 0 0;">{{ \Illuminate\Support\Str::before(trim($tutor->name), ' ') }} is new to reviews on NXTutors. The free demo class is the best way to judge: meet the tutor before you decide.</p>
+          <a class="nxbtn nxbtn--accent nxrv-empty__cta" href="#demoModal" data-modal-target="demoModal">Book a free demo class</a>
+        </div>
+      @else
       <div class="nxcard nxcard--soft nxsummary" id="openReviewSheet" style="padding:16px;">
         <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;">
           <div>
@@ -676,7 +717,7 @@ html {
         </div>
 
         <div class="nxsummary__grid">
-          @foreach($r as $label => $val)
+          @foreach(array_filter($r) as $label => $val)
             <div class="nxmini">
               <div class="nxmini__t">{{ $label }}</div>
               <div class="nxmini__v">
@@ -696,6 +737,7 @@ html {
           </div>
         @endif
       </div>
+      @endif
 
       <div style="margin-top:12px;">
         <a class="nxreadmore" href="{{ route('teacher', $tutor->user_id) }}" rel="nofollow">
@@ -805,6 +847,7 @@ html {
     </div>
 
     {{-- ✅ 4) Long-form Content (Target 2200–2600 words) --}}
+    @unless($richBio)
     <section class="nxsec">
       <div class="nxsec__head">
         <h2 class="nxh2">About {{ $tutor->name }} – {{ $boardStr }} Tutor in {{ $area ?: $city }}</h2>
@@ -831,7 +874,9 @@ html {
         </div>
       </div>
     </section>
+    @endunless
 
+    @unless($richBio)
     <section class="nxsec">
       <div class="nxsec__head">
         <h2 class="nxh2">Teaching Expertise & Methodology</h2>
@@ -856,6 +901,7 @@ html {
         </div>
       </div>
     </section>
+    @endunless
 
     <section class="nxsec">
       <div class="nxsec__head">
@@ -902,6 +948,7 @@ html {
       </div>
     </section>
 
+    @unless($richBio)
     <section class="nxsec">
       <div class="nxsec__head">
         <h2 class="nxh2">Home Tutor vs Online Tutor by {{ $tutor->name }}</h2>
@@ -921,6 +968,7 @@ html {
         </div>
       </div>
     </section>
+    @endunless
 
     <section class="nxsec">
       <div class="nxsec__head">
@@ -943,6 +991,7 @@ html {
       </div>
     </section>
 
+    @unless($richBio)
     <section class="nxsec">
       <div class="nxsec__head">
         <h2 class="nxh2">Why Parents Choose {{ $tutor->name }}</h2>
@@ -961,6 +1010,7 @@ html {
         </div>
       </div>
     </section>
+    @endunless
 
     @if($travelAreas)
     <section class="nxsec" id="areasServed">
@@ -991,7 +1041,7 @@ html {
     @endif
 
     {{-- ✅ 5) Pricing / Mode --}}
-    <section class="nxsec">
+    <section class="nxsec" id="pricing">
       <div class="nxsec__head">
         <h2 class="nxh2">Pricing & Mode</h2>
         <p class="nxlead">Transparent fee range and flexible classes</p>
