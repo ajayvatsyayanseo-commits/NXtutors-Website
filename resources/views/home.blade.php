@@ -718,7 +718,12 @@ body.page .nxh__sweep{
 
 {{-- Replaces nine thin /category tiles (most had 0–1 courses). --}}
 @include('home.partials.explore')
-    
+
+{{-- Directly under "Find a tutor for…": the visitor has just decided they want
+     help and is choosing HOW to get it - a tutor who visits, or one on
+     WhatsApp. --}}
+@include('home.partials.tutortwin')
+
 
 <section class="section section--suggested" id="suggestedTeachersSection">
   <div class="section-head">

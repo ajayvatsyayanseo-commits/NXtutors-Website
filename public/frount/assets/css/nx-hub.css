@@ -413,3 +413,17 @@ body.page .filterbar .nx-filters{grid-column:1 / -1}
 .nx-about__grid p{margin:0;color:var(--nxt-text-dim)}
 .nx-about__h{margin-top:var(--nxt-s5)}
 .nx-chip--request{border-style:dashed}
+
+/* ---------- TutorTwin: the WhatsApp product, on the homepage ---------- */
+/* Two cards, not the auto-fill grid the rest of the page uses: these are the
+   only two doors into TutorTwin and they should read as a pair, side by side
+   on a laptop and stacked on a phone. */
+.nx-twin__grid{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.nx-twin__card{gap:10px}
+.nx-twin__lede{margin:0;color:var(--nxt-text-dim);font-size:var(--nxt-t-sm);line-height:var(--nxt-lh-body)}
+/* The list inherits .nx-card li, which already gives each row a top rule. */
+.nx-twin__card ul{margin-top:8px}
+.nx-twin__card .nx-card__meta{margin-top:auto;padding-top:10px;color:var(--nxt-accent);font-weight:700}
+.nx-twin__foot{margin:var(--nxt-s4) 0 0;color:var(--nxt-text-dim);font-size:var(--nxt-t-sm)}
+.nx-twin__foot a{color:var(--nxt-accent);text-decoration:none}
+.nx-twin__foot a:hover{text-decoration:underline}
