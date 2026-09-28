@@ -39,7 +39,25 @@ class TutorTwinHomeSectionTest extends TestCase
     {
         config(['tutortwin.api' => 'https://api.example.test']);
         Cache::flush();
-        Http::fake(['api.example.test/public/plans' => Http::response($this->plans($withTrial))]);
+        Http::fake([
+            'api.example.test/public/plans' => Http::response($this->plans($withTrial)),
+            'api.example.test/public/tutor-plans' => Http::response([
+                ['code' => 'T1M', 'price_paise' => 399900, 'duration_days' => 30, 'seats' => 25],
+                ['code' => 'T3M', 'price_paise' => 799900, 'duration_days' => 90, 'seats' => 25],
+            ]),
+        ]);
+    }
+
+    public function test_the_teacher_advert_sells_free_sign_up_with_the_live_plan(): void
+    {
+        $this->createLegacySchema();
+        $this->live();
+        $html = $this->get('/')->getContent();
+
+        $this->assertStringContainsString('Sign up free as a teacher', $html);
+        $this->assertStringContainsString('25 student seats · plans from ₹3,999/month', $html);
+        $this->assertStringContainsString('report to parents every Sunday', $html);
+        $this->assertStringContainsString('role="img" aria-label="Sketch: a teacher asleep', $html, 'the picture is described for screen readers');
     }
 
     public function test_the_home_page_advertises_tutortwin_with_tracked_absolute_links(): void

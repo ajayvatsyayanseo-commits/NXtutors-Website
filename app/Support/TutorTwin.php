@@ -132,6 +132,40 @@ final class TutorTwin
         return $p ? 'from ₹'.number_format($p).'/month' : null;
     }
 
+    /**
+     * The cheapest monthly teacher plan: ['price' => 3999, 'seats' => 25], or
+     * null when TutorTwin's /public/tutor-plans cannot be read. Cached like plans().
+     */
+    public static function teacherPlan(): ?array
+    {
+        $key = 'tutortwin.tutor_plans.v1';
+        $plans = Cache::get($key);
+        if (! is_array($plans)) {
+            $plans = [];
+            if ((string) config('tutortwin.api') !== '') {
+                try {
+                    foreach ((array) Http::timeout(3)->acceptJson()->get(config('tutortwin.api').'/public/tutor-plans')->json() as $p) {
+                        if (is_array($p) && (int) ($p['price_paise'] ?? 0) > 0) {
+                            $plans[] = $p;
+                        }
+                    }
+                } catch (Throwable) {
+                    $plans = [];
+                }
+                Cache::put($key, $plans, $plans ? now()->addHours(6) : now()->addMinutes(10));
+            }
+        }
+
+        $best = null;
+        foreach ($plans as $p) {
+            if ((int) ($p['duration_days'] ?? 0) === 30 && ($best === null || (int) $p['price_paise'] < (int) $best['price_paise'])) {
+                $best = $p;
+            }
+        }
+
+        return $best ? ['price' => intdiv((int) $best['price_paise'], 100), 'seats' => (int) ($best['seats'] ?? 0)] : null;
+    }
+
     /** "Try 1 day for ₹49", or null when there is no trial. */
     public static function trialLabel(): ?string
     {
