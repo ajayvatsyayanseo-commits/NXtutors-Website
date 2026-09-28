@@ -3135,7 +3135,7 @@ body.page th {
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--nxt-text-faint);
+  color: var(--nxt-text-dim); /* faint was 4.3:1 on the header row */
 }
 body.page tbody tr:hover {
   background: var(--nxt-surface);

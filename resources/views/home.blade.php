@@ -652,10 +652,10 @@ body.page .nxh__stat-label{
   display: block;
   margin-top: 1px;
   font-family: var(--nxt-font-body, system-ui), sans-serif;
-  font-size: 11.5px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: .01em;
-  color: rgba(255,255,255,.66);
+  color: rgba(255,255,255,.72);
 }
 
 /* ---- Bottom sweep ---- */
@@ -708,7 +708,7 @@ body.page .nxh__sweep{
   body.page .nxh__stat-icon{ width: 32px; height: 32px; }
   body.page .nxh__stat-icon svg{ width: 14px; height: 14px; }
   body.page .nxh__stat-figure{ font-size: 15.5px; }
-  body.page .nxh__stat-label{ font-size: 10.5px; }
+  body.page .nxh__stat-label{ font-size: 12px; }
   body.page .nxh__sweep{ height: 44px; }
 }
 
@@ -921,7 +921,7 @@ body.page .nxh__sweep{
       border: 1px solid rgba(255, 255, 255, 0.15);
       padding: 6px 14px;
       border-radius: 30px;
-      font-size: 11px;
+      font-size: 12px;
       font-weight: 700;
       color: #fff;
       letter-spacing: 0.5px;
@@ -1210,7 +1210,7 @@ body.page .nxh__sweep{
             background: rgba(255, 255, 255, 0.06);
             border: 1px solid rgba(255, 255, 255, 0.12);
             color: var(--accent, #fbbf24);
-            font-size: 11px;
+            font-size: 12px;
             font-weight: 700;
             letter-spacing: 0.8px;
             margin-bottom: 16px;
