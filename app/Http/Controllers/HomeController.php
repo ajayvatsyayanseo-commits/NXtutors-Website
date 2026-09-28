@@ -743,7 +743,7 @@ public function compareDefaults(Request $request)
     public function teachers(Request $request)
 {
     $offset = (int) $request->get('offset', 0);
-    $limit  = (int) $request->get('limit', 6);
+    $limit  = (int) $request->get('limit', 8); // fills 4-up and 2-up grids with no orphan row
     $search = trim($request->get('search', ''));
     $place  = trim($request->get('place', ''));
 

@@ -22,8 +22,6 @@
     $uid = ! empty($c['ref']) ? $searchService->decodeRef((string) $c['ref']) : null;
     // Opens WhatsApp with a Ref, so Lead Intake knows exactly which tutor (App\Support\Wa).
     $waLink = \App\Support\Wa::tutor($uid, 'card', $aiPage ?? []);
-    // Opens WhatsApp with a Ref, so Lead Intake knows exactly which tutor (App\Support\Wa).
-    $waLink = \App\Support\Wa::tutor($uid, 'card', $aiPage ?? []);
   @endphp
   @include('partials.tutor-card', [
     't' => $t,
@@ -37,6 +35,10 @@
     'profileUrl' => $profile,
     'sample' => ! empty($c['is_sample']),
     'placeLabel' => $c['place_label'] ?? null,
+    'subjects' => (array) ($c['subjects'] ?? []),
+    'boards' => (array) ($c['boards'] ?? []),
+    'expYears' => $c['experience_years'] ?? null,
+    'feeLabel' => $c['fee_label'] ?? null,
     'compare' => $uid ? [
       'id' => $uid,
       'name' => e($c['name'] ?? ''),

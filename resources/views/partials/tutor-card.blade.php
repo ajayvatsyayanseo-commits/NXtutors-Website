@@ -1,30 +1,35 @@
 {{--
   Tutor record card — the one component every tutor surface uses.
 
-  The portrait leads, a stamped VERIFIED seal sits on it, and everything below
-  is filed in a fixed order: name and score, place, what they teach, then the
-  two things you can do next. Used by /tutors, the home "Suggested" and
-  "Local tutors" rows, and the compare grid, so a tutor looks the same
-  wherever a parent meets them.
+  Every card is filed in the same order, so a parent compares like with like:
+  portrait (or an initials avatar), name with its verified seal, where they
+  are, what they teach, which boards, then experience and fee, then the two
+  things you can do next. Used by /tutors, the home "Suggested" and "Local
+  tutors" rows, subject and city pages and the compare grid.
 
   Expects:
-    $t          tutor row (needs ->name)
-    $img        resolved portrait URL
-    $chips      array of subject/board labels (may be empty)
+    $t          tutor row (needs ->name); an App\Models\Register lets the card
+                work out subjects, boards, experience and fee itself
+    $img        resolved portrait URL ('' or the generic fallback = no photo)
+    $chips      array of labels (fallback when boards are not known)
     $rating     formatted rating string, e.g. "4.8"
     $reviews    int review count
     $address    street/area (may be ''), composed with $city below
     $city       city name (may be '')
-    $waLink     WhatsApp deep link
+    $waLink     WhatsApp link (App\Support\Wa)
     $profileUrl profile URL
     $compare    optional array of data-* attributes; renders the Compare
                 control when present. Text-only by contract — the compare
                 script rewrites this button's textContent.
     $sample     optional bool; defaults to $t->is_sample. A model profile
-                (config/tutors.php) is shown honestly: no Verified badge,
-                rating or Compare, a "Sample profile" label, and the
-                10-minute match as its action.
+                (config/tutors.php) is shown honestly: no Verified seal,
+                rating, experience, fee or Compare; a "Sample profile" label,
+                and the 10-minute match as its action.
     $placeLabel optional search line ("In Sector 56", "In Haryana").
+    $subjects, $boards, $expYears, $feeLabel
+                optional, for callers that already have them (search cards).
+
+  Copy rule: facts only. Nothing is shown as "—"; a missing fact is left out.
 --}}
 @php
   // "Sector 15, Gurugram" — but never "gurgaon, gurgaon" when the stored
@@ -40,11 +45,48 @@
   }
   $place = implode(', ', $parts);
   $isSample = (bool) ($sample ?? ($t->is_sample ?? false));
+
+  // What they teach, their boards, experience and fee: from the caller when it
+  // has them, else from the tutor record (PublicTutorFieldMapper, the one place
+  // that turns a tutor into public data).
+  $tcMapper = app(\App\NxtAi\Support\PublicTutorFieldMapper::class);
+  $tcCaps = (! isset($subjects) || ! isset($boards)) && $t instanceof \App\Models\Register ? $tcMapper->capabilities($t) : null;
+  $notSubject = fn ($s) => is_string($s) && $s !== '' && ! preg_match('/academic|class|\(|\bboth\b|online|home/i', $s);
+  $tcSubjects = array_slice(array_values(array_filter((array) ($subjects ?? ($tcCaps['subjects'] ?? [])), $notSubject)), 0, 3);
+  $tcBoards = array_slice(array_values(array_filter((array) ($boards ?? ($tcCaps['boards'] ?? [])), fn ($b) => is_string($b) && $b !== '')), 0, 3);
+  if (! $tcBoards) {
+    // No boards known: keep the caller's chips, minus labels a parent cannot use.
+    $tcBoards = array_slice(array_values(array_filter((array) ($chips ?? []), fn ($c) => is_string($c) && ! preg_match('/^academic|^class\s*-|^(home|online|both)$/i', trim($c)))), 0, 3);
+  }
+  $tcExp = $expYears ?? $tcMapper->parseExperience((string) ($t->experience ?? ''));
+  $tcFee = $feeLabel ?? $tcMapper->parseFee((string) ($t->budget ?? ''))['label'];
+  if ($tcFee) {
+    $tcFee = str_replace(' / hour', '/hr', $tcFee);
+  }
+
+  // No photo: an initials avatar in a calm colour chosen by name, instead of
+  // a grey silhouette that reads as "nobody here".
+  $tcImg = trim((string) ($img ?? ''));
+  $tcNoPhoto = $tcImg === '' || str_contains($tcImg, 'avatar-fallback') || str_contains($tcImg, '/images/tutor1.jpg');
+  $tcWords = preg_split('/\s+/', trim((string) $t->name)) ?: [];
+  $tcInitials = mb_strtoupper(mb_substr($tcWords[0] ?? 'T', 0, 1).(count($tcWords) > 1 ? mb_substr(end($tcWords), 0, 1) : ''));
+  $tcHues = [['#4F46E5', '#7C3AED'], ['#0E7490', '#0891B2'], ['#B45309', '#D97706'], ['#9D174D', '#BE185D'], ['#166534', '#15803D'], ['#1D4ED8', '#2563EB']];
+  $tcHue = $tcHues[crc32((string) $t->name) % count($tcHues)];
 @endphp
-<article class="tutor-card">
-  <div class="tutor-photo">
-    <img src="{{ $img }}" alt="{{ $t->name }}" loading="lazy" decoding="async"
-         onerror="this.src='{{ asset('frount/assets/images/tutor1.jpg') }}'">
+<article class="tutor-card{{ $isSample ? ' tutor-card--sample' : '' }}">
+  <div class="tutor-photo{{ $tcNoPhoto ? ' tutor-photo--mono' : '' }}">
+    @if($tcNoPhoto)
+      <svg class="tutor-mono" viewBox="0 0 160 120" role="img" aria-label="{{ $t->name }}" preserveAspectRatio="xMidYMid slice">
+        <defs><linearGradient id="tm{{ crc32((string) $t->name.($profileUrl ?? '')) }}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{{ $tcHue[0] }}"/><stop offset="1" stop-color="{{ $tcHue[1] }}"/></linearGradient></defs>
+        <rect width="160" height="120" fill="url(#tm{{ crc32((string) $t->name.($profileUrl ?? '')) }})"/>
+        <circle cx="132" cy="18" r="34" fill="#fff" opacity=".08"/><circle cx="20" cy="108" r="26" fill="#fff" opacity=".06"/>
+        <path d="M112 86 q10 -6 20 0 v14 q-10 -6 -20 0 z M132 86 q10 -6 20 0 v14 q-10 -6 -20 0 z" fill="#fff" opacity=".22"/>
+        <text x="80" y="72" text-anchor="middle" font-family="'Bricolage Grotesque',Manrope,system-ui,sans-serif" font-size="40" font-weight="800" fill="#fff" letter-spacing="1">{{ $tcInitials }}</text>
+      </svg>
+    @else
+      <img src="{{ $tcImg }}" alt="{{ $t->name }}" loading="lazy" decoding="async"
+           onerror="this.src='{{ asset('frount/assets/images/tutor1.jpg') }}'">
+    @endif
 
     @if($isSample)
       <span class="badge-sample">Sample profile</span>
@@ -54,11 +96,9 @@
         Verified
       </span>
 
-      {{-- The score belongs on the face it describes. --}}
+      {{-- A score only when parents have given one; no "New" placeholder. --}}
       @if((int) $reviews > 0)
         <span class="tutor-score">★ {{ $rating }}<span class="tutor-score__n">({{ $reviews }})</span></span>
-      @else
-        <span class="tutor-score tutor-score--new">New</span>
       @endif
     @endif
   </div>
@@ -83,12 +123,23 @@
       </p>
     @endif
 
-    @if(!empty($chips))
+    @if($tcSubjects)
+      <p class="tutor-teaches"><span>Teaches</span> {{ implode(' · ', $tcSubjects) }}</p>
+    @endif
+
+    @if($tcBoards)
       <div class="tutor-tags">
-        @foreach($chips as $chip)
+        @foreach($tcBoards as $chip)
           <span class="tutor-chip">{{ $chip }}</span>
         @endforeach
       </div>
+    @endif
+
+    @if(! $isSample && ($tcExp || $tcFee))
+      <dl class="tutor-facts">
+        @if($tcExp)<div><dt>Experience</dt><dd>{{ $tcExp }}+ yrs</dd></div>@endif
+        @if($tcFee)<div><dt>Fee</dt><dd>{{ $tcFee }}</dd></div>@endif
+      </dl>
     @endif
   </div>
 

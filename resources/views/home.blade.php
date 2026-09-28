@@ -2352,7 +2352,7 @@ $(document).ready(function () {
                 sid: window.nxSearchSid ? window.nxSearchSid() : '',
                 mode: window.nxHeroMode || '',
                 offset: offset,
-                limit: 6
+                limit: 8 // two full rows of four on desktop, four rows of two on a phone
             },
             success: function(response) {
                 finishAfterDelay(requestStart, minTime, function () {

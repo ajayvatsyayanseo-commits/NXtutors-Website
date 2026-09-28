@@ -641,3 +641,18 @@ body.page #nxAskAISection{overflow-x:clip}
 @media (max-width:719px){
   #areasGrid{margin-inline:-12px;padding-inline:12px}
 }
+
+/* ---------- tutor card anatomy (partials/tutor-card) ---------------------
+   Same order on every card: portrait, name + seal, place, "Teaches", boards,
+   experience and fee, actions. Facts are read in one sweep, top to bottom. */
+.tutor-mono{display:block;width:100%;height:auto;aspect-ratio:4/3}
+body.page .tutor-teaches{margin:6px 0 0;color:var(--nxt-text);font-size:var(--nxt-t-sm);font-weight:600;line-height:1.4}
+body.page .tutor-teaches span{display:inline-block;margin-right:6px;color:var(--nxt-text-faint);font-size:var(--nxt-t-micro);font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+body.page .tutor-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(78px,1fr));gap:8px;margin:10px 0 0;padding-top:10px;border-top:1px solid var(--nxt-line)}
+body.page .tutor-facts div{min-width:0}
+body.page .tutor-facts dt{white-space:nowrap;color:var(--nxt-text-faint);font-size:var(--nxt-t-micro);font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+body.page .tutor-facts dd{margin:2px 0 0;color:var(--nxt-text);font-size:var(--nxt-t-sm);font-weight:700;overflow-wrap:anywhere}
+/* Sample profiles are honest and quieter: softer portrait, dashed frame. */
+body.page .tutor-card--sample{border-style:dashed;border-color:var(--nxt-line-strong)}
+body.page .tutor-card--sample .tutor-photo img{filter:saturate(.55) brightness(.92)}
+body.page .tutor-card--sample .tutor-name{color:var(--nxt-text-dim)}
