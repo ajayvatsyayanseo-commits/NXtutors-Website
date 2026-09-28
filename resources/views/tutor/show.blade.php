@@ -322,7 +322,8 @@ html {
   .nxabout p{margin:0 0 12px;}
   /* About 70 characters a line: at full card width it ran ~135, and the eye
      lost its place going back to the start of each line. */
-  .nxabout p,.nxabout__list,.nxabout__h{max-width:70ch;}
+  body.page .nxcard--soft .nxabout p,body.page .nxcard--soft .nxabout__list,body.page .nxcard--soft .nxabout__h,
+  body.page .nxabout p,body.page .nxabout__list{max-width:70ch;} /* outranks .nxcard--soft p{max-width:none} */
   .nxabout__h{font-size:16px;font-weight:800;margin:18px 0 8px;}
   .nxabout__h:first-child{margin-top:0;}
   .nxabout__list{margin:0 0 12px;padding-left:20px;}

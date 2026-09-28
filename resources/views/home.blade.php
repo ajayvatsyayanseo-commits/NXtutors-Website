@@ -685,7 +685,7 @@ body.page .nxh__sweep{
   body.page .nxh__badge{
     margin-bottom: 14px;
     padding: 6px 13px 6px 11px;
-    font-size: 11.5px;
+    font-size: 12px;
   }
   body.page .nxh__title{ margin-bottom: 14px; }
   body.page .nxh__sub{ font-size: 14px; }
