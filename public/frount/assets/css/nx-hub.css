@@ -441,6 +441,8 @@ body.page .filterbar .nx-filters{grid-column:1 / -1}
   background:var(--nxt-whatsapp);color:#06301a;font-weight:800;font-size:var(--nxt-t-body);text-decoration:none;
   box-shadow:0 8px 24px color-mix(in srgb,var(--nxt-whatsapp) 30%,transparent);transition:transform var(--nxt-fast) var(--nxt-ease),background var(--nxt-fast)}
 .nx-twin__btn:hover{background:#1fbe5a;transform:translateY(-1px)}
+/* body.page a sets color:inherit and outranks the class alone; dark ink on green is 8.6:1. */
+body.page .nx-twin__btn,body.page .nx-twin__btn:hover{color:#06301a}
 .nx-twin__more{color:#c7d2fe;font-weight:700;font-size:var(--nxt-t-sm);text-decoration:none}
 .nx-twin__more:hover{text-decoration:underline}
 .nx-twin__fine{margin:var(--nxt-s4) 0 0;max-width:60ch;color:var(--nxt-text-faint);font-size:var(--nxt-t-xs);line-height:1.55}
