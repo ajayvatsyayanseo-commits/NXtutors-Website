@@ -1565,8 +1565,11 @@ public function cityAreaShow($citySlug, $areaSlug)
     $subjectsOffered = array_slice($subjectsOffered, 0, 8);
 
     // ✅ Hourly rate / budget
-    $hourlyMin = $tutor->budget ? (int) $tutor->budget : null;
-    $hourlyMax = $tutor->budget ? ((int) $tutor->budget + 300) : null;
+    // An hourly range only when the tutor stated one ("3000-5000 per hour").
+    // This used to print budget and budget+300 as an invented range.
+    $fee = (new \App\NxtAi\Support\PublicTutorFieldMapper)->parseFee((string) ($tutor->budget ?? ''));
+    $hourlyMin = ! empty($fee['per_hour']) ? $fee['min'] : null;
+    $hourlyMax = ! empty($fee['per_hour']) && $fee['max'] !== $fee['min'] ? $fee['max'] : null;
       
       $metatitle =$tutor->profile ?? null;
       $metakey ='';
@@ -1787,8 +1790,11 @@ $realUserId = str_replace('-nxt', '', $decoded);
     $subjectsOffered = array_slice($subjectsOffered, 0, 8);
 
     // ✅ Hourly rate / budget
-    $hourlyMin = $tutor->budget ? (int) $tutor->budget : null;
-    $hourlyMax = $tutor->budget ? ((int) $tutor->budget + 300) : null;
+    // An hourly range only when the tutor stated one ("3000-5000 per hour").
+    // This used to print budget and budget+300 as an invented range.
+    $fee = (new \App\NxtAi\Support\PublicTutorFieldMapper)->parseFee((string) ($tutor->budget ?? ''));
+    $hourlyMin = ! empty($fee['per_hour']) ? $fee['min'] : null;
+    $hourlyMax = ! empty($fee['per_hour']) && $fee['max'] !== $fee['min'] ? $fee['max'] : null;
       
       $metatitle =$tutor->profile ?? null;
       $metakey ='';

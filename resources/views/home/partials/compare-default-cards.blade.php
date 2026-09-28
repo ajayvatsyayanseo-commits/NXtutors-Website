@@ -14,7 +14,7 @@
       if ($c->category?->cat_title)      $chips[] = $c->category->cat_title;
     }
     if (!empty($t->experience)) $chips[] = $t->experience;
-    if (!empty($t->budget))     $chips[] = '₹ '.$t->budget;
+    if (!empty($t->budget))     $chips[] = (new \App\NxtAi\Support\PublicTutorFieldMapper)->parseFee((string) $t->budget)['label'] ?: $t->budget;
     $chips = array_slice(array_values(array_unique(array_filter($chips))), 0, 3);
 
     $chip = $chips ? implode(' + ', array_slice($chips, 0, 2)) : 'Verified Tutor';

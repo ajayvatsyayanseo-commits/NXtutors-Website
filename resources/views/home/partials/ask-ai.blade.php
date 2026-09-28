@@ -162,7 +162,7 @@
                     ($kbTutor->experience ? $kbTutor->experience . ' experience.' : '')) ?: 'Verified tutor on NXTutors.'],
               $kbSubjects ? ['Subjects taught', 'Subjects', implode(', ', $kbSubjects)] : null,
               !empty($kbTutor->budget)
-                ? ['Fees', 'Fees', '₹' . $kbTutor->budget . ' per class. Final fee depends on class and location.']
+                ? ['Fees', 'Fees', (function ($b) { $f = (new \App\NxtAi\Support\PublicTutorFieldMapper)->parseFee($b); return $f['label'] ? $f['label'] . (empty($f['per_hour']) ? ' per class' : '') : $b; })((string) $kbTutor->budget) . '. Final fee depends on class and location.']
                 : ['Fees', 'Fees', 'Shared after the demo class — depends on class and location.'],
               ['Location & mode', 'Info',
                trim(($kbTutor->address ? $kbTutor->address . ', ' : '') . ($kbTutor->city ?? '')) . '. Home and online options available.'],

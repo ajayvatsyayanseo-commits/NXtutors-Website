@@ -19,7 +19,7 @@ return [
     'Gurugram' => [
         'Golf Course Road' => [
             'sectors' => [27, 28, 42, 43, 52, 53, 54],
-            'names' => ['dlf phase', 'golf course road', 'sushant lok 1', 'sushant lok i', 'wazirabad', 'dlf city'],
+            'names' => ['dlf phase', 'golf course road', 'sushant lok 1', 'sushant lok i', 'wazirabad', 'dlf city', 'ardee city'],
         ],
         'MG Road & Cyber City' => [
             'sectors' => [24, 25, 26, 29],
@@ -27,7 +27,7 @@ return [
         ],
         'Central Gurugram' => [
             'sectors' => [30, 31, 32, 38, 39, 40, 41, 44, 45, 46],
-            'names' => ['huda city centre', 'sushant lok 2', 'sushant lok ii', 'sushant lok 3', 'kanhai', 'jharsa'],
+            'names' => ['huda city centre', 'south city 1','sushant lok 2', 'sushant lok ii', 'sushant lok 3', 'kanhai', 'jharsa'],
         ],
         'Golf Course Extension Road' => [
             'sectors' => [55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66],

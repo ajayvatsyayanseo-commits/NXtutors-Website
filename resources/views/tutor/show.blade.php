@@ -161,6 +161,18 @@
     }
   }
 
+  // Areas the tutor travels to for home classes, grouped by zone
+  // (config/zones.php). When they reach every zone of the city, the page
+  // says so ("all over Gurugram") instead of implying only the listed names.
+  $travelAreas = array_values(array_filter(array_map('trim', explode(',', (string) ($tutor->travel_areas ?? '')))));
+  $homeCity = \App\Support\Zones::cityOf((string) ($tutor->city ?? '')) ?: (string) ($tutor->city ?? '');
+  $travelByZone = [];
+  foreach ($travelAreas as $ta) {
+    $travelByZone[\App\Support\Zones::of($homeCity, $ta) ?? 'Other areas'][] = $ta;
+  }
+  $cityZones = array_keys(config('zones.' . $homeCity, []));
+  $coversWholeCity = $cityZones && ! array_diff($cityZones, array_keys($travelByZone));
+
   // ✅ Service Schema (teaching mode)
   $schemaService = [
     "@context" => "https://schema.org",
@@ -173,10 +185,15 @@
       "@id"   => $canonical."#tutor",
       "name"  => $tutor->name ?? 'Tutor'
     ],
-    "areaServed" => [
-      "@type" => "Place",
-      "name"  => $city ?: "India"
-    ],
+    "areaServed" => $travelAreas
+      ? array_merge(
+          [["@type" => "City", "name" => $homeCity ?: ($city ?: "India")]],
+          array_map(fn ($a) => ["@type" => "Place", "name" => $a . ($homeCity ? ", $homeCity" : "")], $travelAreas)
+        )
+      : [
+          "@type" => "Place",
+          "name"  => $city ?: "India"
+        ],
     "brand" => [
       "@type" => "Brand",
       "name"  => "NXTutors"
@@ -482,7 +499,9 @@ html {
                   <span class="nxchip">⭐ {{ $expYears }} yrs exp</span>
                 @endif
 
-                @if(!empty($tutor->budget))
+                @if($hourlyMin)
+                  <span class="nxchip">💰 ₹{{ number_format($hourlyMin) }}@if($hourlyMax)–₹{{ number_format($hourlyMax) }}@endif/hour</span>
+                @elseif(!empty($tutor->budget))
                   <span class="nxchip"> {{ $tutor->budget }}/class</span>
                 @endif
 
@@ -934,6 +953,34 @@ html {
       </div>
     </section>
 
+    @if($travelAreas)
+    <section class="nxsec" id="areasServed">
+      <div class="nxsec__head">
+        <h2 class="nxh2">Home classes {{ $coversWholeCity ? 'all over' : 'in' }} {{ $homeCity }}</h2>
+        <p class="nxlead">
+          @if($coversWholeCity)
+            {{ $tutor->name }} travels for home classes across every part of {{ $homeCity }}, including these areas. Online classes are available anywhere.
+          @else
+            Areas {{ $tutor->name }} travels to for home classes. Online classes are available anywhere.
+          @endif
+        </p>
+      </div>
+
+      <div class="nxgrid">
+        @foreach($travelByZone as $zone => $places)
+          <div class="nxcard nxcard--soft" style="padding:16px;">
+            <div class="nxk">📍 {{ $zone }}</div>
+            <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;">
+              @foreach($places as $p)
+                <span class="nxchip">{{ $p }}</span>
+              @endforeach
+            </div>
+          </div>
+        @endforeach
+      </div>
+    </section>
+    @endif
+
     {{-- ✅ 5) Pricing / Mode --}}
     <section class="nxsec">
       <div class="nxsec__head">
@@ -946,8 +993,8 @@ html {
           <div class="nxk">💰 Hourly Rates</div>
           <div style="margin-top:10px;font-size:34px;font-weight:900;">
             @if($hourlyMin)
-              ₹{{ $hourlyMin }}
-              @if($hourlyMax) <span style="opacity:.7;font-size:20px;">to</span> ₹{{ $hourlyMax }} @endif
+              ₹{{ number_format($hourlyMin) }}
+              @if($hourlyMax) <span style="opacity:.7;font-size:20px;">to</span> ₹{{ number_format($hourlyMax) }} @endif
               <span style="opacity:.7;font-size:16px;"> / hour</span>
             @elseif(!empty($tutor->budget))
               {{-- The header chip already states this figure; repeat it here

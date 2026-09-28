@@ -204,18 +204,19 @@ final class PublicTutorFieldMapper
         $nums = array_values(array_filter($nums, static fn ($n) => $n > 0));
 
         if ($nums === []) {
-            return ['min' => null, 'max' => null, 'label' => null];
+            return ['min' => null, 'max' => null, 'label' => null, 'per_hour' => false];
         }
 
         $min = min($nums);
         $max = max($nums);
-        // Deliberately no "per hour" — the schema has no fee unit, so we never
-        // claim one (spec: never present budget as per-hour without proof).
+        // The schema has no fee unit, so "per hour" is shown only when the
+        // tutor wrote it ("3000-5000 per hour"); it is never assumed.
         $label = $min === $max
             ? '₹'.number_format($min)
             : '₹'.number_format($min).'–₹'.number_format($max);
+        $perHour = preg_match('~\b(?:hours?|hrs?)\b|/\s*h\b~i', $budget) === 1;
 
-        return ['min' => $min, 'max' => $max, 'label' => $label];
+        return ['min' => $min, 'max' => $max, 'label' => $label.($perHour ? ' / hour' : ''), 'per_hour' => $perHour];
     }
 
     public function parseExperience(string $raw): ?int
