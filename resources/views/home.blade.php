@@ -461,11 +461,11 @@ body.page .nxh__label{
   display: block;
   margin: 0 0 3px;
   font-family: var(--nxt-font-body, system-ui), sans-serif;
-  font-size: 10.5px;
+  font-size: 12px;
   font-weight: 700;
-  letter-spacing: .085em;
+  letter-spacing: .07em;
   text-transform: uppercase;
-  color: #8A93A2;
+  color: #5B6472; /* 6.1:1 on the white search box (was #8A93A2, 3.1:1) */
 }
 
 body.page .nxh__control{

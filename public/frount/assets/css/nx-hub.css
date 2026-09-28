@@ -283,6 +283,9 @@ a.nx-card:hover{transform:translateY(-2px);border-color:var(--nxt-line-strong)}
 .nx-cta{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 22px;border-radius:var(--nxt-r-pill);font-weight:800;font-size:var(--nxt-t-sm);text-decoration:none;transition:transform var(--nxt-fast),background var(--nxt-fast)}
 .nx-cta--primary{background:var(--nxt-accent);color:var(--nxt-on-accent);box-shadow:var(--nxt-e2)}
 .nx-cta--primary:hover{transform:translateY(-1px)}
+/* body.page a{color:inherit} outranked the class, putting light text on the
+   accent (2.54:1); the accent's own dark ink is 7:1 or better on every theme. */
+body.page .nx-cta--primary,body.page .nx-cta--primary:hover{color:var(--nxt-on-accent)}
 .nx-cta--ghost{border:1px solid var(--nxt-line-strong);color:var(--nxt-text)}
 .nx-cta--ghost:hover{background:var(--nxt-surface-2)}
 .nx-byline{display:flex;align-items:center;gap:10px;margin:var(--nxt-s5) 0 0;font-size:var(--nxt-t-xs);color:var(--nxt-text-dim)}
@@ -399,7 +402,7 @@ body.page .footer-content--5 .footer-col--subjects ul{display:grid;grid-template
 body.page .filterbar .nx-filters{grid-column:1 / -1}
 
 /* ---------- tutor card: sample profiles (partials/tutor-card) ---------- */
-.badge-sample{position:absolute;top:10px;left:10px;font-size:11px;font-weight:800;letter-spacing:.02em;padding:4px 9px;border-radius:999px;
+.badge-sample{position:absolute;top:10px;left:10px;font-size:12px;font-weight:800;letter-spacing:.02em;padding:4px 9px;border-radius:999px;
   background:rgba(15,23,42,.78);color:#e2e8f0;border:1px dashed rgba(226,232,240,.5)}
 .tutor-card .tutor-match{font-size:12.5px;white-space:normal;text-align:center;line-height:1.2}
 .tutor-reach{margin:0 0 2px;font-size:12px;font-weight:700;color:var(--nxt-accent)}
@@ -486,7 +489,7 @@ body.page .nx-twin__btn,body.page .nx-twin__btn:hover{color:#06301a}
   background:color-mix(in srgb,#4f46e5 16%,rgba(8,14,27,.72));color:var(--nxt-text);text-decoration:none;text-align:left;
   transition:border-color var(--nxt-fast),background var(--nxt-fast)}
 .nx-twin-strip:hover{border-color:#a5b4fc;background:color-mix(in srgb,#4f46e5 24%,rgba(8,14,27,.72))}
-.nx-twin-strip__badge{flex:0 0 auto;padding:3px 8px;border-radius:var(--nxt-r-pill);background:#6366f1;color:#fff;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.nx-twin-strip__badge{flex:0 0 auto;padding:3px 8px;border-radius:var(--nxt-r-pill);background:#4f46e5;color:#fff;font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
 .nx-twin-strip__text{flex:1 1 auto;min-width:0;font-size:var(--nxt-t-xs);line-height:1.4;color:var(--nxt-text-dim)}
 .nx-twin-strip__text strong{color:var(--nxt-text);margin-right:4px}
 .nx-twin-strip__go{flex:0 0 auto;display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--nxt-r-pill);

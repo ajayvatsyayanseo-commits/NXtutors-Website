@@ -87,7 +87,8 @@
   --nxt-t-body: 0.9375rem;
   --nxt-t-sm: 0.875rem;
   --nxt-t-xs: 0.8125rem;
-  --nxt-t-micro: 0.6875rem;
+  /* 12px: the smallest size used for anything a person has to read (was 11px). */
+  --nxt-t-micro: 0.75rem;
 
   --nxt-lh-tight: 1.1;
   --nxt-lh-snug: 1.3;
