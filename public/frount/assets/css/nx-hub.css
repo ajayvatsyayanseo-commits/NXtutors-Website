@@ -548,3 +548,84 @@ body.page .nx-twin__btn,body.page .nx-twin__btn:hover{color:#06301a}
 @media (prefers-reduced-motion:reduce){.nx-twin-t__btn{transition:none}.nx-twin-t__btn:hover{transform:none}}
 /* body.page h3 resets margins; give the teacher advert's heading its air back. */
 body.page .nx-twin-t__title{margin:var(--nxt-s4) 0 var(--nxt-s3)}
+
+/* ======================================================================
+   AI-first section (home/partials/ai-first) and the NXT AI chat panel.
+   Indigo is the AI colour. A soft "bloom" of light behind each makes them
+   read as a lit surface instead of dissolving into the dark page; the
+   teacher side of every picture is warm, so AI (cool) and people (warm)
+   read apart at a glance.
+   ====================================================================== */
+.nx-aif{position:relative;isolation:isolate;padding-block:var(--nxt-s7)}
+.nx-aif__bloom{position:absolute;inset:0 -4vw;z-index:-1;pointer-events:none;
+  background:radial-gradient(40% 55% at 78% 22%,rgba(124,58,237,.30),transparent 70%),
+             radial-gradient(38% 50% at 12% 70%,rgba(56,189,248,.16),transparent 70%),
+             radial-gradient(30% 40% at 88% 80%,rgba(245,158,11,.12),transparent 70%)}
+.nx-aif__head{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:var(--nxt-s6);align-items:center}
+.nx-aif__eyebrow{display:inline-flex;padding:5px 12px;border-radius:var(--nxt-r-pill);background:rgba(99,102,241,.18);border:1px solid rgba(129,140,248,.45);
+  color:#C7D2FE;font-size:var(--nxt-t-xs);font-weight:800;letter-spacing:.04em;text-transform:uppercase}
+body.page .nx-aif__title{margin:var(--nxt-s4) 0 var(--nxt-s3);font-family:var(--nxt-font-display);font-size:var(--nxt-t-h1);line-height:1.1;letter-spacing:-.015em;text-wrap:balance}
+.nx-aif__title span{background:linear-gradient(90deg,#FBBF24,#FB923C);-webkit-background-clip:text;background-clip:text;color:transparent}
+.nx-aif__lede{margin:0;max-width:56ch;color:var(--nxt-text-dim);font-size:1.0625rem;line-height:var(--nxt-lh-body)}
+.nx-aif__art{margin:0;display:flex;flex-direction:column;align-items:center}
+.nx-aif__pair{display:flex;align-items:flex-end;justify-content:center;gap:4px}
+.nx-aif__pair .nx-mascot{filter:drop-shadow(0 14px 26px rgba(99,102,241,.55))}
+.nx-aif__teacher{filter:drop-shadow(0 14px 26px rgba(245,158,11,.35))}
+.nx-aif__spark{align-self:center;animation:nxAifTwinkle 3.2s ease-in-out infinite}
+@keyframes nxAifTwinkle{0%,100%{transform:scale(1) rotate(0)}50%{transform:scale(1.18) rotate(18deg)}}
+.nx-aif__caption{display:flex;gap:92px;margin-top:6px;font-size:var(--nxt-t-xs);font-weight:800;letter-spacing:.03em}
+.nx-aif__caption span:first-child{color:#A5B4FC}.nx-aif__caption span:last-child{color:#FBBF24}
+
+.nx-aif__cards{list-style:none;margin:var(--nxt-s6) 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--nxt-s4)}
+.nx-aif__card{position:relative;display:flex;flex-direction:column;gap:8px;padding:var(--nxt-s5);border-radius:var(--nxt-r-lg);
+  background:linear-gradient(180deg,rgba(99,102,241,.14),rgba(255,255,255,.03) 55%);border:1px solid rgba(129,140,248,.28);
+  transition:transform var(--nxt-base) var(--nxt-ease),border-color var(--nxt-base),box-shadow var(--nxt-base)}
+.nx-aif__card:hover{transform:translateY(-3px);border-color:rgba(165,180,252,.6);box-shadow:0 18px 40px rgba(49,46,129,.35)}
+.nx-aif__card::before{content:"";position:absolute;inset:0 0 auto;height:3px;border-radius:var(--nxt-r-lg) var(--nxt-r-lg) 0 0;background:linear-gradient(90deg,#6366F1,#A855F7,#38BDF8)}
+.nx-aif__ico{width:56px;height:56px}
+.nx-aif__ico--mascot{display:grid;place-items:end center;height:62px}
+body.page .nx-aif__card h3{margin:6px 0 0;font-family:var(--nxt-font-display);font-size:var(--nxt-t-h4);color:var(--nxt-text)}
+.nx-aif__card p{margin:0;color:var(--nxt-text-dim);font-size:var(--nxt-t-sm);line-height:1.55}
+body.page .nx-aif__link{margin-top:auto;padding-top:6px;color:var(--nxt-link,#6CB0FF);font-weight:700;font-size:var(--nxt-t-sm);text-decoration:none}
+body.page .nx-aif__link::after{content:" →"}
+body.page .nx-aif__link:hover{text-decoration:underline}
+
+.nx-aif__people{margin-top:var(--nxt-s5);padding:var(--nxt-s5) var(--nxt-s6);border-radius:var(--nxt-r-lg);
+  background:linear-gradient(135deg,rgba(52,199,123,.10),rgba(255,255,255,.03));border:1px solid rgba(52,199,123,.35)}
+.nx-aif__people-head{display:flex;align-items:center;gap:12px}
+body.page .nx-aif__people h3{margin:0;font-family:var(--nxt-font-display);font-size:var(--nxt-t-h3)}
+.nx-aif__people ul{list-style:none;margin:var(--nxt-s4) 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px var(--nxt-s6)}
+.nx-aif__people li{position:relative;padding-left:24px;color:var(--nxt-text-dim);font-size:var(--nxt-t-sm);line-height:1.55}
+.nx-aif__people li::before{content:"";position:absolute;left:0;top:7px;width:10px;height:10px;border-radius:50%;background:#34C77B;box-shadow:0 0 0 4px rgba(52,199,123,.18)}
+.nx-aif__people strong{color:var(--nxt-text)}
+@media (max-width:1000px){.nx-aif__cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:760px){
+  .nx-aif__head{grid-template-columns:minmax(0,1fr)}
+  .nx-aif__art{order:-1}
+  .nx-aif__pair .nx-mascot{width:118px;height:auto}.nx-aif__teacher{width:118px;height:auto}
+  .nx-aif__caption{gap:56px}
+  .nx-aif__people ul{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:520px){.nx-aif__cards{grid-template-columns:minmax(0,1fr)}}
+
+/* ---- the NXT AI chat panel: lit, not dissolved -------------------------- */
+body.page .nxg-ai-layout{position:relative;isolation:isolate}
+body.page .nxg-ai-layout::before{content:"";position:absolute;inset:-40px -30px;z-index:-1;pointer-events:none;
+  background:radial-gradient(45% 60% at 30% 30%,rgba(99,102,241,.28),transparent 70%),radial-gradient(35% 50% at 85% 75%,rgba(56,189,248,.14),transparent 70%)}
+body.page .nxg-chat-card.nxg-glass{background:linear-gradient(180deg,rgba(79,70,229,.22),rgba(15,22,42,.92) 38%);
+  border:1px solid rgba(129,140,248,.5);box-shadow:0 0 0 1px rgba(99,102,241,.18),0 30px 70px rgba(30,27,75,.55)}
+body.page .nxg-chat-top{display:flex;align-items:center;gap:12px}
+body.page .nxg-chat-top .nx-mascot{flex:0 0 auto;filter:drop-shadow(0 6px 14px rgba(99,102,241,.6))}
+body.page .nxg-chat-top h4{color:#fff}
+body.page .nxg-chat-top h4 span{color:#A5B4FC}
+body.page .nxg-msg.ai{background:rgba(99,102,241,.12);border-color:rgba(129,140,248,.28)}
+body.page .nxg-quick{background:rgba(99,102,241,.2);border-color:rgba(165,180,252,.45);color:#EEF2FF}
+body.page .nxg-quick:hover{background:rgba(99,102,241,.36)}
+body.page .nxg-chat-input button{background:linear-gradient(135deg,#6366F1,#7C3AED);box-shadow:0 8px 20px rgba(99,102,241,.45)}
+body.page .nxg-chat-input button:hover{background:linear-gradient(135deg,#7C83F6,#8B5CF6)}
+body.page .nxg-results{background:linear-gradient(180deg,rgba(56,189,248,.08),rgba(255,255,255,.03) 40%);border-color:rgba(125,211,252,.28)}
+@media (prefers-reduced-motion:reduce){.nx-aif__spark{animation:none}.nx-aif__card{transition:none}.nx-aif__card:hover{transform:none}}
+/* The glows may spread past a section's edge but never widen the page. */
+.nx-aif{overflow-x:clip}
+body.page #nxAskAISection{overflow-x:clip}
+@supports not (overflow:clip){.nx-aif,body.page #nxAskAISection{overflow-x:hidden}}

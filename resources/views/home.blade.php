@@ -28,6 +28,8 @@
     ['How quickly can I get matched with a tutor?', 'Typically you receive 2–3 recommendations within a short time after sharing your requirement — class, subjects, board, location, schedule and budget.'],
     ['What details should I share to get the best match?', 'Share class/grade, board, subjects, location (city or pincode), preferred days and time slots, mode (home or online) and budget. The more precise the input, the better the match.'],
     ['Do tutors give homework, tests and progress updates?', 'Many tutors follow structured plans with homework, periodic tests and feedback. You can also request weekly progress updates while finalising the tutor.'],
+    ['How does NXTutors use AI?', 'AI shortlists two or three verified tutors for your subject, board and area; NXT AI answers questions about fees, timings and demo classes at any hour; and TutorTwin, our AI tutor on WhatsApp, helps with homework between classes. Verified teachers do the teaching, and the free demo class decides the match.'],
+    ['Is TutorTwin a real teacher?', 'No. TutorTwin is an AI tutor on WhatsApp and never pretends to be a person. It can make mistakes, so check important answers. On a HumanAI plan a real teacher also reads the chat and replies, and those messages are marked as theirs.'],
     ['Which cities do you currently support?', 'NXTutors supports tutor matching across India. Availability depends on the tutor network in each area, and online tutoring is available nationwide.'],
   ];
 
@@ -1418,6 +1420,9 @@ body.page .nxh__sweep{
 
       @include('home.partials.about-seo')
 
+      {{-- How NXTutors uses AI, and where people take over (claim: "AI-first tutoring, with real teachers"). --}}
+      @include('home.partials.ai-first')
+
       <!-- FAQ -->
       <section class="section">
         <style>
@@ -1582,6 +1587,13 @@ body.page .nxh__sweep{
           continue with the same tutor or request a different match.
         </p>
       </details>
+
+      <details class="faq-item">
+        <summary>How does NXTutors use AI?</summary>
+        <p>
+          AI shortlists two or three verified tutors for your subject, board and area; NXT AI answers questions about fees, timings and demo classes at any hour; and TutorTwin, our AI tutor on WhatsApp, helps with homework between classes. Verified teachers do the teaching, and the free demo class decides the match.
+        </p>
+      </details>
     </div>
 
     <!-- RIGHT COLUMN (6) -->
@@ -1631,6 +1643,13 @@ body.page .nxh__sweep{
         <p>
           NXTutors supports tutor matching across India. Availability depends on tutor network in each area, and
           online tutoring is available nationwide.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Is TutorTwin a real teacher?</summary>
+        <p>
+          No. TutorTwin is an AI tutor on WhatsApp and never pretends to be a person. It can make mistakes, so check important answers. On a HumanAI plan a real teacher also reads the chat and replies, and those messages are marked as theirs.
         </p>
       </details>
     </div>

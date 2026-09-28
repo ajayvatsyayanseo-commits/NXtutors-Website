@@ -65,7 +65,10 @@
     <div class="nxg-chat-card nxg-glass">
 
       <div class="nxg-chat-top">
-        <h4>Ask NXT AI</h4>
+        {{-- Nix, the NXT AI mascot: the face of every AI feature. --}}
+        @include('partials.ai-mascot', ['size' => 52])
+        <div>
+        <h4>Ask <span>NXT AI</span></h4>
         <p>
           @if($aiPlace !== '' && empty($kbTutor))
             Ask about tutors, fees and demo classes in {{ $aiPlace }}.
@@ -76,6 +79,7 @@
         @if($aiType !== 'home' || !empty($kbTutor))
           <a class="nxg-home-link" href="{{ url('/') }}">← NXTutors home</a>
         @endif
+        </div>
       </div>
 
       <div class="nxg-chat-box" id="nxAskAiThread">
