@@ -144,7 +144,9 @@ class WhatsAppHandoff
 
                 return $h->kind === 'tutor_profile'
                     ? 'Hi, I\'d like to book a free demo class with '.$this->tutorLabel($t).'.'
-                    : 'Hi, I\'d like to know more about '.$this->tutorLabel($t).' and book a demo.';
+                    // No "book a demo" here: Lead Intake routes those words straight to
+                    // demo booking, and a card tap is an enquiry it should answer itself.
+                    : 'Hi, I\'d like to know more about '.$this->tutorLabel($t).'.';
 
             case 'compare':
                 $names = [];
