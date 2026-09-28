@@ -257,16 +257,52 @@
 <div class="shell">
 <main class="main">
 
-  <section class="nxsec">
-    <div class="nxsec__head">
-      <h1 class="nxh1">Guides for parents and students</h1>
+  {{-- Head: what this is, a search, and the topics as one-tap chips. --}}
+  <section class="nxsec nxbl-head">
+    <span class="nxgd-eyebrow">Free guides · no sign-up needed</span>
+    <h1 class="nxh1">Guides for parents and students</h1>
+    <p class="nxbl-sub">Board-by-board study plans, JEE and NEET preparation, and how to choose, try and work with a tutor.</p>
+    <form id="blogFilter" class="nxbl-search" role="search">
+      <label class="nxbl-sr" for="blogSearch">Search the guides</label>
+      <input id="blogSearch" type="search" name="q" placeholder="Search guides, e.g. Class 10 maths, IB, NEET" value="{{ request('q') }}">
+      <button class="nxbtn btn-accent" type="submit">Search</button>
+    </form>
+    <nav class="nxbl-chips" aria-label="Guide topics">
+      @foreach(\App\Support\BlogTopics::TOPICS as $tKey => $tLabel)
+        @continue($tKey === 'city')
+        <a href="#topic-{{ $tKey }}">{{ $tLabel }}</a>
+      @endforeach
+      <a href="#topic-city">Local guides</a>
+    </nav>
+  </section>
 
-      <form id="blogFilter" class="filterbar">
-        <input type="text" name="q" placeholder="Search blogs..." value="{{ request('q') }}">
-        <input type="text" name="category" placeholder="Category slug" value="{{ request('category') }}">
-        <button class="nxbtn btn-accent" type="submit">Search</button>
-      </form>
-    </div>
+  {{-- Start here: the guides written to be read first. --}}
+  @if(!empty($featured) && $featured->count())
+    <section class="nxsec" aria-labelledby="startHereTitle">
+      <h2 class="nx-sec__title" id="startHereTitle">Start here</h2>
+      <div class="nxbl-feature">
+        @foreach($featured as $fi => $fb)
+          @php
+            $fImg = !empty($fb->avatar) ? (str_starts_with($fb->avatar, 'http') ? $fb->avatar : asset('storage/blog/'.$fb->avatar)) : asset('frount/assets/images/og-default.jpg');
+            $fWords = str_word_count(strip_tags((string) $fb->bdesc));
+          @endphp
+          <a class="nxbl-fcard{{ $fi === 0 ? ' nxbl-fcard--lead' : '' }}" href="{{ url('/blog/'.trim($fb->slug)) }}">
+            <img src="{{ $fImg }}" alt="" loading="{{ $fi === 0 ? 'eager' : 'lazy' }}" decoding="async">
+            <span class="nxbl-fcard__body">
+              <span class="nxbl-meta">{{ max(1, (int) round($fWords / 200)) }} min read · {{ $fb->author ?: 'NXTutors' }}</span>
+              <span class="nxbl-fcard__title">{{ $fb->title }}</span>
+              @if($fi === 0)
+                <span class="nxbl-fcard__desc">{{ \Illuminate\Support\Str::limit(trim(preg_replace('/\s+/', ' ', strip_tags((string) $fb->bdesc))), 150) }}</span>
+              @endif
+            </span>
+          </a>
+        @endforeach
+      </div>
+    </section>
+  @endif
+
+  <section class="nxsec" aria-labelledby="latestTitle">
+    <h2 class="nx-sec__title" id="latestTitle">{{ request('q') ? 'Results for “'.request('q').'”' : 'Latest guides' }}</h2>
 
     <div class="bloggrid" id="blogsGrid">
       @include('blog.partials.cards', ['blogs' => $blogs])
@@ -309,7 +345,9 @@
     <div class="nx-grid">
       @foreach(\App\Support\BlogTopics::TOPICS as $key => $label)
         @continue($key === 'city' || empty($byTopic[$key]))
-        <div class="nx-card" id="topic-{{ $key }}">
+        @php $tTint = ['boards' => ['#22D3EE', '#0E7490'], 'entrance' => ['#FBBF24', '#F472B6'], 'choose' => ['#4ADE80', '#15803D'], 'abroad' => ['#38BDF8', '#9F1239'], 'skills' => ['#FBBF24', '#F472B6']][$key] ?? ['#818CF8', '#4F46E5']; @endphp
+        <div class="nx-card nxbl-topic" id="topic-{{ $key }}" style="--gd-a:{{ $tTint[0] }};--gd-b:{{ $tTint[1] }}">
+          <div class="nxbl-topic__cover" aria-hidden="true">@include('home.partials.guide-cover', ['topic' => $key])</div>
           <span class="nx-card__kicker">{{ count($byTopic[$key]) }} guides</span>
           <h3 class="nx-card__title">{{ $label }}</h3>
           <ul>
@@ -334,7 +372,10 @@
           <p class="nx-sec__sub">Neighbourhood guides for Gurugram, each linked to that area's tutors.</p>
         </div>
       </div>
-      <div class="nx-rail">
+      {{-- Collapsed: these near-identical local posts are for visitors from an area page, not the first thing to read here. --}}
+      <details class="nx-more nxbl-local">
+        <summary><span class="nx-more__closed">Show guides for {{ count($byLocality) }} neighbourhoods</span><span class="nx-more__open">Hide neighbourhood guides</span></summary>
+      <div class="nx-rail" style="margin-top:var(--nxt-s4)">
         @foreach($byLocality as $loc => $posts)
           @php $locArea = $loc !== 'other' ? \App\Support\CityHub::areaFor('gurugram', str_replace('-', ' ', $loc)) : null; @endphp
           <div class="nx-card">
@@ -352,6 +393,7 @@
           </div>
         @endforeach
       </div>
+      </details>
     @endif
   </section>
 

@@ -251,6 +251,10 @@ public function sitemapSection(string $section)
     // Blogs
     Blog::where('status', 't')->chunk(500, function ($blogs) use (&$urls, $baseUrl) {
         foreach ($blogs as $blog) {
+            // Locality posts are noindex (showsingleblog); a sitemap must not list them.
+            if (\App\Support\BlogTopics::of(trim((string) $blog->slug)) === 'city') {
+                continue;
+            }
             $urls[] = [
                 'loc' => $baseUrl . '/blog/' . trim($blog->slug),
                 'lastmod' => optional($blog->updated_at)->toDateString() ?? now()->toDateString(),
@@ -729,7 +733,12 @@ public function compareDefaults(Request $request)
 
     $pageTeachers = $this->getHomeTeachers(4, 0);
 
-    return view('blog.show', compact('blog','prev','next','related','canonical','metatitle','metakey','metadesc','pageTeachers'));
+    // Locality posts are near-duplicates of each other (the same guide with a
+    // sector name swapped in). Kept for visitors and internal links, out of
+    // Google's index so they do not dilute the real guides.
+    $metarobots = \App\Support\BlogTopics::of(trim((string) $blog->slug)) === 'city' ? 'noindex, follow' : null;
+
+    return view('blog.show', compact('blog','prev','next','related','canonical','metatitle','metakey','metadesc','pageTeachers','metarobots'));
     }
 
     //  public function teachers(Request $request)
@@ -1961,12 +1970,18 @@ public function blogIndex(Request $request)
 
     $blogs = $this->blogListQuery($request)->limit($limit)->get();
 
+    // "Start here": the parent guides written to be read first, in this order.
+    // Missing ones are simply skipped.
+    $featuredSlugs = ['demo-class-checklist-for-parents', 'home-tutor-vs-online-tutor', 'how-nxtutors-uses-ai', 'tutortwin-whatsapp-homework-help-guide'];
+    $featured = $request->filled('q') ? collect() : Blog::query()->where('status', 't')->whereIn('slug', $featuredSlugs)->get()
+        ->sortBy(fn ($b) => array_search(trim((string) $b->slug), $featuredSlugs, true))->values();
+
       $page = Page::Where('status', 't')->where('slug', 'blog')->first();
       $metatitle = $page->meta_title ?? null;
       $metakey = $page->meta_keywords ?? null;
       $metadesc = $page->meta_description ?? null;
 
-    return view('blog.index', compact('blogs','metatitle','metakey','metadesc'));
+    return view('blog.index', compact('blogs','featured','metatitle','metakey','metadesc'));
 }
 
 public function democlassIndex(){
@@ -2023,6 +2038,15 @@ public function blogLoad(Request $request)
 private function blogListQuery(Request $request)
 {
     $q = Blog::query()->where('status', 't')->orderByDesc('id');
+
+    // The ~80 near-identical locality posts ("... in South City II: Best Home
+    // Tutors Near You") buried the national guides; they have their own
+    // section and area pages. A search still finds them.
+    if (! $request->filled('q') && ! $request->boolean('local')) {
+        $q->where('slug', 'not like', '%-near-you%')
+          ->where('slug', 'not like', '%best-home-tutors%')
+          ->where('slug', 'not like', '%coaching-at-home%');
+    }
 
     if ($request->filled('q')) {
         $search = $request->q;

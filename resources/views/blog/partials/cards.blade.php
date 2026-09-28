@@ -11,6 +11,12 @@
          onerror="this.src='{{ asset('frount/assets/images/og-default.jpg') }}'">
 
     <div class="blog-body">
+      @php
+        // Topic, reading time and author: what a parent weighs before opening a guide.
+        $bTopic = \App\Support\BlogTopics::TOPICS[\App\Support\BlogTopics::of(trim((string) $b->slug))] ?? null;
+        $bMins = max(1, (int) round(str_word_count(strip_tags((string) ($b->bdesc ?? ''))) / 200));
+      @endphp
+      <span class="blog-meta">{{ $bTopic ? $bTopic.' · ' : '' }}{{ $bMins }} min read{{ !empty($b->author) ? ' · '.$b->author : '' }}</span>
       <h3 class="blog-title">{{ $b->title }}</h3>
       <p class="blog-desc">{{ \Illuminate\Support\Str::limit(strip_tags($b->short_desc ?? $b->bdesc ?? ''), 90) }}</p>
       <span class="blog-read">Read more →</span>

@@ -37,7 +37,7 @@ class BlogTopics
         if (preg_match('/\b(cbse|icse|isc|igcse|ib)\b/', str_replace('-', ' ', $s))) {
             return 'boards';
         }
-        if (preg_match('/choose|online-vs-offline|fees/', $s)) {
+        if (preg_match('/choose|online-vs-offline|fees|demo-class|home-tutor-vs-online|how-nxtutors|tutortwin/', $s)) {
             return 'choose';
         }
 
