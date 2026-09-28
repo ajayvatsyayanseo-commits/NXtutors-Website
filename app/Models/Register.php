@@ -240,7 +240,7 @@ public function getEffectiveCoursesAttribute()
             $phone = (string) ($model->phone ?? '');
             $model->phone_hash = $phone === ''
                 ? null
-                : \App\NxtAi\Support\AgentPseudonymiser::fromConfig()->phoneHash($phone);
+                : \App\NxtAi\Support\AgentPseudonymiser::tryPhoneHash($phone);
         });
     }
 }

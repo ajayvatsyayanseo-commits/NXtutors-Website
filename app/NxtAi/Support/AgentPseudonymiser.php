@@ -50,6 +50,25 @@ final class AgentPseudonymiser
         return new self($pepper);
     }
 
+    /**
+     * The phone hash for a row being saved, or null when the pepper is not
+     * configured. A parent's demo request or a tutor's sign-up must never be
+     * lost to a missing agent setting: with no AGENT_HASH_PEPPER in
+     * production every demo form returned a 500 and nothing was saved. The
+     * error is logged loudly instead, and `php artisan agent:backfill-phone-hashes`
+     * (BackfillAgentPhoneHashes) fills the hashes in once the pepper is set.
+     */
+    public static function tryPhoneHash(string $phone): ?string
+    {
+        try {
+            return self::fromConfig()->phoneHash($phone);
+        } catch (\RuntimeException $e) {
+            \Illuminate\Support\Facades\Log::critical('agent.hash_pepper_missing', ['error' => $e->getMessage()]);
+
+            return null;
+        }
+    }
+
     /** `9876543210` or `+91 98765 43210` -> `ph_a1b2c3d4e5f60718`. */
     public function phone(string $phone): string
     {
