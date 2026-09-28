@@ -258,7 +258,7 @@ final class PublicTutorFieldMapper
             return $avatar;
         }
 
-        return $this->asset('storage/user/'.$avatar);
+        return \App\Support\TutorPhoto::url($avatar);
     }
 
     private function asset(string $path): string

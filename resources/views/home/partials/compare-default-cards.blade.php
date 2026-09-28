@@ -4,7 +4,7 @@
     $avatar = $t->avatar ?? '';
     $img = ($avatar && str_starts_with($avatar,'http'))
       ? $avatar
-      : ($avatar ? asset('storage/user/'.$avatar) : asset('frount/assets/images/avatar-fallback.webp'));
+      : ($avatar ? \App\Support\TutorPhoto::url($avatar) : asset('frount/assets/images/avatar-fallback.webp'));
 
     $chips = [];
     if (!empty($t->courses) && $t->courses->count()) {

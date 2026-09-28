@@ -3,7 +3,7 @@
     $avatar = $r->parent_avatar ?? '';
     $pimg = ($avatar && str_starts_with($avatar,'http'))
       ? $avatar
-      : ($avatar ? asset('storage/user/'.$avatar) : asset('frount/assets/images/parent1.jpg'));
+      : ($avatar ? \App\Support\TutorPhoto::url($avatar) : asset('frount/assets/images/parent1.jpg'));
 
     $rating = number_format((float)($r->rating ?? 0), 1);
     $stars  = max(0, min(5, (int) round((float)($r->rating ?? 0))));

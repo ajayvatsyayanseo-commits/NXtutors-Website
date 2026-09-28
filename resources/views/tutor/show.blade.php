@@ -11,7 +11,7 @@
   $canonical = $canonical ?? url()->current();
 
   $img = !empty($tutor->avatar)
-    ? (str_starts_with($tutor->avatar,'http') ? $tutor->avatar : asset('storage/user/'.$tutor->avatar))
+    ? (str_starts_with($tutor->avatar,'http') ? $tutor->avatar : \App\Support\TutorPhoto::url($tutor->avatar))
     : asset('frount/assets/images/tutor1.jpg');
 
   // ✅ WhatsApp Number (change once, use everywhere)
@@ -991,7 +991,7 @@ html {
               $a = $rt->avatar ?? '';
               $rtImg = $a && str_starts_with($a,'http')
                 ? $a
-                : ($a ? asset('storage/user/'.$a) : asset('frount/assets/images/tutor1.jpg'));
+                : ($a ? \App\Support\TutorPhoto::url($a) : asset('frount/assets/images/tutor1.jpg'));
 
               $rtChips = [];
               if (!empty($rt->courses) && $rt->courses->count()) {

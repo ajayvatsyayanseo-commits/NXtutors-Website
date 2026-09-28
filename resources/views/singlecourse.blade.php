@@ -17,7 +17,7 @@
                         "@type" => "Person",
                         "name" => $teacher->name ?? '',
                         "description" => strip_tags($teacher->profile_desc ?? ''),
-                        "image" => !empty($teacher->avatar) ? asset('storage/user/' . $teacher->avatar) : ''
+                        "image" => !empty($teacher->avatar) ? \App\Support\TutorPhoto::url($teacher->avatar) : ''
                     ];
                 }
             }
@@ -1078,7 +1078,7 @@
                                                     @if(empty($rowt->avatar))
                                                         <img src="{{ asset('frount/assets/images/tl-2/teacher-1.jpg') }}" alt="Teacher Image" class="nx-teacher-img">
                                                     @else
-                                                        <img src="{{ asset('storage/user/' . $rowt->avatar) }}" alt="Teacher Image" class="nx-teacher-img">
+                                                        <img src="{{ \App\Support\TutorPhoto::url($rowt->avatar) }}" alt="Teacher Image" class="nx-teacher-img">
                                                     @endif
 
                                                     <h5 class="nx-teacher-name">

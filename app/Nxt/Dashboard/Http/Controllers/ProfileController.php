@@ -40,7 +40,7 @@ class ProfileController extends DashboardController
             'sections' => $this->sectionsFor($identity),
             'courses' => $this->courses($identity->userId),
             'avatar_url' => $identity->register->avatar
-                ? url('/uploads/'.$identity->register->avatar)
+                ? \App\Support\TutorPhoto::url($identity->register->avatar)
                 : null,
         ]);
     }
@@ -132,11 +132,14 @@ class ProfileController extends DashboardController
         $file = $request->file('avatar');
         $name = time().'-'.preg_replace('/[^A-Za-z0-9._-]/', '', (string) $file->getClientOriginalName());
 
-        $file->move(public_path('uploads'), $name);
+        // public/storage/user is where every public page reads photos from.
+        // (This used to write to public/uploads, so dashboard uploads showed
+        // as broken photos; App\Support\TutorPhoto still finds those.)
+        $file->move(public_path('storage/user'), $name);
 
         $identity->register->update(['avatar' => $name]);
 
-        return $this->ok(['avatar' => $name, 'avatar_url' => url('/uploads/'.$name)]);
+        return $this->ok(['avatar' => $name, 'avatar_url' => \App\Support\TutorPhoto::url($name)]);
     }
 
     /**

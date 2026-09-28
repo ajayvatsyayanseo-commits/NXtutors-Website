@@ -9,7 +9,7 @@
     if ($avatar && str_starts_with($avatar, 'http')) {
         $img = $avatar;
     } else {
-        $img = $avatar ? asset('storage/user/'.$avatar) : asset('frount/assets/images/avatar-fallback.webp');
+        $img = $avatar ? \App\Support\TutorPhoto::url($avatar) : asset('frount/assets/images/avatar-fallback.webp');
     }
 
     $chips = [];

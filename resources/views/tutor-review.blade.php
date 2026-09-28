@@ -2,7 +2,7 @@
 @php
   use App\Support\ReviewOptions;
   $tutorImg = !empty($teacher->avatar)
-    ? (str_starts_with($teacher->avatar, 'http') ? $teacher->avatar : asset('storage/user/'.$teacher->avatar))
+    ? (str_starts_with($teacher->avatar, 'http') ? $teacher->avatar : \App\Support\TutorPhoto::url($teacher->avatar))
     : asset('frount/assets/images/tutor1.jpg');
   $stars = ['rating' => 'Overall'] + ReviewOptions::SCORES;
 @endphp

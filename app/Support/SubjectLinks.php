@@ -88,7 +88,7 @@ class SubjectLinks
         $row = \App\Models\Register::query()->where('user_id', $a['user_id'] ?? '')->publiclyVisible()->first();
 
         $avatar = (string) ($row->avatar ?? '');
-        $a['image'] = $avatar !== '' ? (str_starts_with($avatar, 'http') ? $avatar : asset('storage/user/' . $avatar)) : null;
+        $a['image'] = $avatar !== '' ? (str_starts_with($avatar, 'http') ? $avatar : \App\Support\TutorPhoto::url($avatar)) : null;
         $a['education'] = trim((string) ($row->education ?? ''));
         $a['experience'] = trim((string) ($row->experience ?? ''));
         $a['profile_url'] = $row?->profileUrl();

@@ -4,7 +4,7 @@
     $avatar = $t->avatar ?? '';
     $img = ($avatar && str_starts_with($avatar,'http'))
         ? $avatar
-        : ($avatar ? asset('storage/user/'.$avatar)
+        : ($avatar ? \App\Support\TutorPhoto::url($avatar)
                    : asset('frount/assets/images/tutor1.jpg'));
 
     // Subject / board labels — up to three, from the tutor's first course.
