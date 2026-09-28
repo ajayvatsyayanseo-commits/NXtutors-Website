@@ -629,3 +629,9 @@ body.page .nxg-results{background:linear-gradient(180deg,rgba(56,189,248,.08),rg
 .nx-aif{overflow-x:clip}
 body.page #nxAskAISection{overflow-x:clip}
 @supports not (overflow:clip){.nx-aif,body.page #nxAskAISection{overflow-x:hidden}}
+/* Phone rails bleed to the screen edge by exactly the page gutter. The shell
+   pads 12px on phones, not the 16px (--nxt-s4) these assumed, so every rail
+   overhung the screen by 4px and the whole page scrolled sideways. */
+@media (max-width:719px){
+  .nx-chips--rail,.nx-rail{margin-inline:-12px;padding-inline:12px}
+}
