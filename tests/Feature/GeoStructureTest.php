@@ -275,7 +275,7 @@ class GeoStructureTest extends TestCase
         ] as $slug => $heading) {
             $html = $this->get('/city/' . $slug)->assertOk()->getContent();
             $this->assertStringContainsString($heading, $html, $slug);
-            $text = preg_replace('/\s+/', ' ', strip_tags(preg_replace('#<(script|style).*?</>#s', '', $html)));
+            $text = preg_replace('/\s+/', ' ', strip_tags(preg_replace('#<(script|style)\b.*?</\1>#s', '', $html)));
             $this->assertGreaterThan(2500, str_word_count($text), $slug . ' page is substantial');
             $this->assertStringNotContainsString('a complete guide for parents', $html, $slug . ' must not show the Gurugram guide');
         }
