@@ -19,7 +19,12 @@
   subdomain - `url()` here would point back at this site.
 --}}
 @php
-  $ttPrice = \App\Support\TutorTwin::priceLabel();
+  // Live plans (App\Support\TutorTwin). Photos, PDFs and voice notes are on Pro
+  // and the trial, not on Solo, so the photo promise is priced with Pro.
+  $ttTrial = \App\Support\TutorTwin::trial();
+  $ttTrialLabel = \App\Support\TutorTwin::trialLabel();
+  $ttFrom = \App\Support\TutorTwin::fromPrice();
+  $ttPhotoFrom = \App\Support\TutorTwin::fromPrice(true);
 @endphp
 <section class="section nx-twin" aria-labelledby="nxTwinTitle">
   <div class="nx-twin__hero">
@@ -39,11 +44,24 @@
       </ul>
 
       <div class="nx-twin__cta">
-        <a class="nx-twin__btn" href="{{ \App\Support\TutorTwin::link('/payment', 'home_section', 'start') }}" target="_blank" rel="noopener" data-nx-twin="home_section_start">
-          Start TutorTwin{{ $ttPrice ? ' · '.$ttPrice : '' }}
+        <a class="nx-twin__btn" href="{{ \App\Support\TutorTwin::link('/payment', 'home_section', $ttTrial ? 'trial' : 'start') }}" target="_blank" rel="noopener" data-nx-twin="{{ $ttTrial ? 'home_section_trial' : 'home_section_start' }}">
+          {{ $ttTrialLabel ?? ('Start TutorTwin'.($ttFrom ? ' · from ₹'.number_format($ttFrom).'/month' : '')) }}
         </a>
-        <a class="nx-twin__more" href="{{ \App\Support\TutorTwin::link('/', 'home_section', 'how_it_works') }}" target="_blank" rel="noopener" data-nx-twin="home_section_more">See how it works →</a>
+        <a class="nx-twin__more" href="{{ \App\Support\TutorTwin::link('/', 'home_section', 'how_it_works') }}" target="_blank" rel="noopener" data-nx-twin="home_section_more">See plans and how it works →</a>
       </div>
+      @if($ttTrial || $ttFrom)
+        <p class="nx-twin__price">
+          @if($ttTrial)
+            {{ $ttTrial['answers'] }} answers{{ $ttTrial['photos'] ? ', photos included' : '' }}.
+          @endif
+          @if($ttFrom)
+            {{ $ttTrial ? 'Then plans' : 'Plans' }} from ₹{{ number_format($ttFrom) }}/month{{
+              $ttPhotoFrom === $ttFrom ? ', photos included'
+              : ' for typed questions'.($ttPhotoFrom ? '; photos, PDFs and voice notes on Pro, from ₹'.number_format($ttPhotoFrom).'/month' : '')
+            }}.
+          @endif
+        </p>
+      @endif
       <p class="nx-twin__fine">
         No app to install. Maths, Physics, Chemistry, Biology, English, Computer Science, Social Science and Economics.
         It is an AI, so check important answers. Want a real teacher in the same chat?

@@ -21,13 +21,25 @@ class TutorTwinHomeSectionTest extends TestCase
 {
     use LegacySchema, RefreshDatabase;
 
-    private function plans(): array
+    /** The shape of TutorTwin's /public/plans on 28 Sep 2026. */
+    private function plans(bool $withTrial = true): array
     {
-        return [
-            ['code' => '1M', 'duration_days' => 30, 'currency' => 'INR', 'price_minor' => 119900],
-            ['code' => '3M', 'duration_days' => 90, 'currency' => 'INR', 'price_minor' => 249900],
-            ['code' => 'ALL1M', 'duration_days' => 30, 'currency' => 'INR', 'price_minor' => 499900],
-        ];
+        $photos = fn (int $n) => ['answers_included' => 15, 'photos_per_day' => $n];
+
+        return array_values(array_filter([
+            $withTrial ? ['code' => 'TRIAL', 'tier' => 'TRIAL', 'duration_days' => 1, 'currency' => 'INR', 'price_minor' => 4900, 'limits' => $photos(15)] : null,
+            ['code' => 'SOLO1M', 'tier' => 'SOLO', 'duration_days' => 30, 'currency' => 'INR', 'price_minor' => 49900, 'limits' => $photos(0)],
+            ['code' => 'SOLO3M', 'tier' => 'SOLO', 'duration_days' => 90, 'currency' => 'INR', 'price_minor' => 129900, 'limits' => $photos(0)],
+            ['code' => '1M', 'tier' => 'PRO', 'duration_days' => 30, 'currency' => 'INR', 'price_minor' => 99900, 'limits' => $photos(60)],
+            ['code' => 'ALL1M', 'tier' => 'ELITE', 'duration_days' => 30, 'currency' => 'INR', 'price_minor' => 399900, 'limits' => $photos(200)],
+        ]));
+    }
+
+    private function live(bool $withTrial = true): void
+    {
+        config(['tutortwin.api' => 'https://api.example.test']);
+        Cache::flush();
+        Http::fake(['api.example.test/public/plans' => Http::response($this->plans($withTrial))]);
     }
 
     public function test_the_home_page_advertises_tutortwin_with_tracked_absolute_links(): void
@@ -62,21 +74,47 @@ class TutorTwinHomeSectionTest extends TestCase
 
         // No API (the test default): no price at all, never a stale typed one.
         $this->assertNull(TutorTwin::priceLabel());
-        $this->assertStringNotContainsString('₹999', $this->get('/')->getContent());
+        $html = $this->get('/')->getContent();
+        $this->assertStringNotContainsString('Try 1 day', $html);
+        $this->assertStringNotContainsString('/month for typed', $html);
+        $this->assertStringContainsString('Start TutorTwin', $html);
 
-        config(['tutortwin.api' => 'https://api.example.test']);
-        Cache::forget('tutortwin.from_price');
-        Http::fake(['api.example.test/public/plans' => Http::response($this->plans())]);
+        $this->live();
+        $this->assertSame('Try 1 day for ₹49', TutorTwin::trialLabel());
+        $this->assertSame('from ₹499/month', TutorTwin::priceLabel(), 'cheapest monthly plan, trial excluded');
+        $this->assertSame('from ₹999/month', TutorTwin::priceLabel(true), 'cheapest monthly plan with photos (Pro)');
+    }
 
-        $this->assertSame('from ₹1,199/month', TutorTwin::priceLabel(), 'cheapest monthly single subject');
-        $this->assertStringContainsString('Start TutorTwin · from ₹1,199/month', $this->get('/')->getContent());
+    /** The trial leads; the cheaper Solo price is quoted only for typed questions. */
+    public function test_the_trial_leads_and_the_photo_promise_is_priced_with_pro(): void
+    {
+        $this->createLegacySchema();
+        $this->live();
+        $html = $this->get('/')->getContent();
+
+        $this->assertStringContainsString('Try 1 day for ₹49', $html);
+        $this->assertStringContainsString('15 answers, photos included.', $html);
+        $this->assertStringContainsString('from ₹499/month for typed questions; photos, PDFs and voice notes on Pro, from ₹999/month', $html);
+        $this->assertStringContainsString('utm_content=trial', $html);
+        // The hero strip promises photos: never next to the Solo (typed-only) price.
+        $this->assertDoesNotMatchRegularExpression('/Send a photo[^<]*₹499/u', $html);
+    }
+
+    public function test_without_a_trial_the_button_starts_at_the_live_monthly_price(): void
+    {
+        $this->createLegacySchema();
+        $this->live(false);
+        $html = $this->get('/')->getContent();
+
+        $this->assertStringContainsString('Start TutorTwin · from ₹499/month', $html);
+        $this->assertMatchesRegularExpression('/Send a photo[^<]*from ₹999\/month/u', $html, 'strip quotes the photo plan');
     }
 
     public function test_a_failing_price_api_never_breaks_the_page(): void
     {
         $this->createLegacySchema();
         config(['tutortwin.api' => 'https://api.example.test']);
-        Cache::forget('tutortwin.from_price');
+        Cache::flush();
         Http::fake(['api.example.test/*' => Http::response('down', 500)]);
 
         $this->get('/')->assertOk()->assertSee('Start TutorTwin', false);

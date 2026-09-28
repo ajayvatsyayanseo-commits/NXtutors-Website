@@ -14,7 +14,8 @@
 --}}
 @php
   $ttSubject = \App\Support\TutorTwin::subjectFor($subject ?? null);
-  $ttPrice = \App\Support\TutorTwin::priceLabel();
+  // The line promises photos, so it quotes the trial or the cheapest plan with photos (Pro), never Solo.
+  $ttPrice = \App\Support\TutorTwin::trialLabel() ?? \App\Support\TutorTwin::priceLabel(true);
   $ttHook = $ttSubject ? $ttSubject.' doubt at 11pm?' : 'Stuck on homework at 11pm?';
 @endphp
 <a class="nx-twin-strip" href="{{ \App\Support\TutorTwin::link('/', $placement ?? 'page_hero', $ttSubject ? \Illuminate\Support\Str::slug($ttSubject) : null) }}"

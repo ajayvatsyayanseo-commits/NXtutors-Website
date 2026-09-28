@@ -12,15 +12,18 @@ use Throwable;
  * Two rules every placement follows:
  *  - every link carries UTM tags naming the surface (home_hero, profile, a
  *    subject page…), so TutorTwin's analytics show which placement sells;
- *  - the price is TutorTwin's live "from" price, or no price at all, never a
- *    number typed into a template that silently goes stale.
+ *  - prices are TutorTwin's live ones, read from its public plan list, or no
+ *    price at all, never a number typed into a template that goes stale.
  *
- * What the copy may claim is limited to what the product does today: see
- * the never-claim list in docs and the TutorTwin README (it is an AI, it can
- * make mistakes, maths is not machine-verified, no free trial).
+ * The plan list has tiers (28 Sep 2026): a paid 1-day TRIAL, SOLO (typed
+ * questions only), PRO (adds photos, PDFs and voice notes) and ELITE (all
+ * subjects). What a price is quoted for matters: a "send a photo" promise
+ * may only sit next to the price of a plan that includes photos.
  */
 final class TutorTwin
 {
+    private const CACHE = 'tutortwin.plans.v2';
+
     public static function base(): string
     {
         return rtrim((string) config('tutortwin.url', 'https://nxtutortwin.nxtutors.com'), '/');
@@ -40,51 +43,101 @@ final class TutorTwin
     }
 
     /**
-     * The cheapest monthly single-subject price in rupees, from TutorTwin's
-     * public plans, or null when it cannot be read. Cached for 6 hours; a
-     * failed read is cached for 10 minutes so a TutorTwin outage never slows
-     * this site's pages.
+     * TutorTwin's public INR plans, or [] when they cannot be read. Cached for
+     * 6 hours; a failed read for 10 minutes, so an outage never slows a page.
+     *
+     * @return list<array<string,mixed>>
      */
-    public static function fromPrice(): ?int
+    public static function plans(): array
     {
-        $cached = Cache::get('tutortwin.from_price');
-        if ($cached !== null) {
-            return $cached === 0 ? null : (int) $cached;
+        $cached = Cache::get(self::CACHE);
+        if (is_array($cached)) {
+            return $cached;
+        }
+        if ((string) config('tutortwin.api') === '') {
+            return []; // no API configured (tests, local): no prices shown
         }
 
-        $price = null;
-        if ((string) config('tutortwin.api') === '') {
-            return null; // no API configured (tests, local): no price shown
-        }
+        $plans = [];
         try {
-            $plans = Http::timeout(2)->acceptJson()->get(config('tutortwin.api').'/public/plans')->json();
-            foreach ((array) $plans as $p) {
-                if (! is_array($p) || ($p['currency'] ?? 'INR') !== 'INR' || str_starts_with((string) ($p['code'] ?? ''), 'ALL')) {
-                    continue;
-                }
-                if ((int) ($p['duration_days'] ?? 0) !== 30) {
-                    continue;
-                }
-                $rupees = intdiv((int) ($p['price_minor'] ?? $p['price_paise'] ?? 0), 100);
-                if ($rupees > 0 && ($price === null || $rupees < $price)) {
-                    $price = $rupees;
+            foreach ((array) Http::timeout(3)->acceptJson()->get(config('tutortwin.api').'/public/plans')->json() as $p) {
+                if (is_array($p) && ($p['currency'] ?? 'INR') === 'INR' && (int) ($p['price_minor'] ?? $p['price_paise'] ?? 0) > 0) {
+                    $plans[] = $p;
                 }
             }
         } catch (Throwable) {
-            $price = null;
+            $plans = [];
         }
 
-        Cache::put('tutortwin.from_price', $price ?? 0, $price ? now()->addHours(6) : now()->addMinutes(10));
+        Cache::put(self::CACHE, $plans, $plans ? now()->addHours(6) : now()->addMinutes(10));
 
-        return $price;
+        return $plans;
     }
 
-    /** "from ₹1,199/month", or null when the price is unknown. */
-    public static function priceLabel(): ?string
+    private static function rupees(array $p): int
     {
-        $p = self::fromPrice();
+        return intdiv((int) ($p['price_minor'] ?? $p['price_paise'] ?? 0), 100);
+    }
+
+    private static function tier(array $p): string
+    {
+        return strtoupper((string) ($p['tier'] ?? (($p['code'] ?? '') === 'TRIAL' ? 'TRIAL' : '')));
+    }
+
+    /** The paid trial, when TutorTwin offers one: ['price' => 49, 'days' => 1, 'answers' => 15, 'photos' => true]. */
+    public static function trial(): ?array
+    {
+        foreach (self::plans() as $p) {
+            if (self::tier($p) === 'TRIAL') {
+                return [
+                    'price' => self::rupees($p),
+                    'days' => max(1, (int) ($p['duration_days'] ?? 1)),
+                    'answers' => (int) ($p['limits']['answers_included'] ?? 0),
+                    'photos' => (int) ($p['limits']['photos_per_day'] ?? 0) > 0,
+                ];
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * The cheapest 30-day plan in rupees (trial excluded), optionally only
+     * among plans that include photos. Null when unknown.
+     */
+    public static function fromPrice(bool $withPhotos = false): ?int
+    {
+        $best = null;
+        foreach (self::plans() as $p) {
+            if (self::tier($p) === 'TRIAL' || (int) ($p['duration_days'] ?? 0) !== 30) {
+                continue;
+            }
+            if ($withPhotos && (int) ($p['limits']['photos_per_day'] ?? 0) <= 0) {
+                continue;
+            }
+            $r = self::rupees($p);
+            if ($best === null || $r < $best) {
+                $best = $r;
+            }
+        }
+
+        return $best;
+    }
+
+    /** "from ₹499/month", or null when the price is unknown. */
+    public static function priceLabel(bool $withPhotos = false): ?string
+    {
+        $p = self::fromPrice($withPhotos);
 
         return $p ? 'from ₹'.number_format($p).'/month' : null;
+    }
+
+    /** "Try 1 day for ₹49", or null when there is no trial. */
+    public static function trialLabel(): ?string
+    {
+        $t = self::trial();
+
+        return $t ? 'Try '.$t['days'].' day'.($t['days'] > 1 ? 's' : '').' for ₹'.number_format($t['price']) : null;
     }
 
     /**

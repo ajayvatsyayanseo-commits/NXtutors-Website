@@ -448,6 +448,7 @@ body.page .filterbar .nx-filters{grid-column:1 / -1}
 body.page .nx-twin__btn,body.page .nx-twin__btn:hover{color:#06301a}
 .nx-twin__more{color:#c7d2fe;font-weight:700;font-size:var(--nxt-t-sm);text-decoration:none}
 .nx-twin__more:hover{text-decoration:underline}
+.nx-twin__price{margin:var(--nxt-s3) 0 0;max-width:60ch;color:var(--nxt-text-dim);font-size:var(--nxt-t-sm);line-height:1.5}
 .nx-twin__fine{margin:var(--nxt-s4) 0 0;max-width:60ch;color:var(--nxt-text-faint);font-size:var(--nxt-t-xs);line-height:1.55}
 .nx-twin .nx-twin__fine a,body.page .nx-twin .nx-twin__fine a{color:#c7d2fe}
 
