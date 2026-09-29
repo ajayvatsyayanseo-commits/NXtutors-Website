@@ -1068,7 +1068,8 @@ private function baseTeacherQuery()
     $hubState   = \App\Support\Geo::stateOf($city->slug);
     $hubNearby  = City::where('status', 't')->whereIn('slug', \App\Support\Geo::neighbours($city->slug))->orderBy('city_name')->get(['city_name', 'slug']);
     $hubOthers  = City::where('status', 't')->where('slug', '!=', $city->slug)->whereNotIn('slug', $hubNearby->pluck('slug'))->orderBy('city_name')->get(['city_name', 'slug']);
-    $hubGuides  = \App\Support\CityHub::guides($allAreas->pluck('slug')->map(fn ($s) => trim($s, '-'))->all(), 6);
+    $hubGuides  = \App\Support\CityHub::guides($allAreas->pluck('slug')->map(fn ($s) => trim($s, '-'))->all(), 6,
+        array_values(array_filter([$city->slug, strtolower((string) \App\Support\Geo::akaOf($city->slug))])));
 
     return view('city.show', compact('city','areas','allAreas','metatitle','metakey','metadesc',
         'hubPages','hubTracks','hubTutors','hubCounts','hubState','hubNearby','hubOthers','hubGuides'));

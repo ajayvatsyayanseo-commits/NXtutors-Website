@@ -298,7 +298,7 @@
         <a class="nx-sec__action" href="{{ url('/blog') }}">All guides →</a>
       </div>
       <div class="nx-rail">
-        @foreach($hubGuides->take(8) as $g)
+        @foreach($hubGuides->take(12) as $g)
           <a class="nx-card" href="{{ url('/blog/'.$g->slug) }}">
             <span class="nx-card__kicker">{{ \App\Support\BlogTopics::TOPICS[\App\Support\BlogTopics::of($g->slug)] }}</span>
             <span class="nx-card__title">{{ $g->title }}</span>

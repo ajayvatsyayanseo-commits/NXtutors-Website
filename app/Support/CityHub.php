@@ -237,7 +237,7 @@ class CityHub
      * Guides to show on a city or area page: the local posts for the given
      * area slugs first, then a few national board / exam guides.
      */
-    public static function guides(array $areaSlugs = [], int $national = 6): Collection
+    public static function guides(array $areaSlugs = [], int $national = 6, array $cityWords = []): Collection
     {
         $posts = collect(Cache::remember('cityhub.blogs.v1', 3600, fn () => DB::table('blog_managment')
             ->where('status', 't')->whereNotNull('slug')->where('slug', '!=', '')
@@ -251,7 +251,17 @@ class CityHub
         $nat = $posts->filter(fn ($b) => in_array(BlogTopics::of($b->slug), ['boards', 'entrance', 'choose'], true))
             ->take($national);
 
-        return $local->values()->concat($nat->values());
+        // The city's own guide cluster ("home-tuition-fees-gurgaon", zone guides)
+        // leads: written for this city and indexed, unlike the locality posts.
+        $cluster = $cityWords
+            ? $posts->filter(fn ($b) => BlogTopics::of($b->slug) !== 'city'
+                && preg_match('/(^|-)(' . implode('|', array_map(fn ($w) => preg_quote($w, '/'), $cityWords)) . ')(-|$)/', $b->slug))
+            : collect();
+
+        // Area pages (no city words) keep their own locality post first.
+        return $cityWords
+            ? $cluster->values()->concat($nat->values())->concat($local->values())->unique('slug')->values()
+            : $local->values()->concat($nat->values());
     }
 
     /**
