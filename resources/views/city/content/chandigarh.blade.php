@@ -76,7 +76,7 @@
   <h2 id="ch-where">Where our tutors teach across the tricity</h2>
   <p>
     @if($hubCounts['tutors'] > 0)
-      {{ number_format($hubCounts['tutors']) }} verified tutors are
+      {{ number_format($hubCounts['tutors']) }} tutor profiles are
     @else
       Our tutors are
     @endif

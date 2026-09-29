@@ -127,7 +127,7 @@
         <h1 class="hero-title">{{ $areaSeo['h1'] ?? ($area->main_title ?? $area->name) }}</h1>
 
         <p class="hero-sub">
-          {!! $area->short_desc ? \Illuminate\Support\Str::limit(strip_tags($area->short_desc), 190) : 'Find verified tutors near you with flexible timing, experienced teachers, and a free demo class.' !!}
+          {!! $area->short_desc ? \Illuminate\Support\Str::limit(strip_tags($area->short_desc), 190) : 'Find tutors near you with flexible timing, experienced teachers, and a free demo class.' !!}
         </p>
 
         <div class="hero-badges">

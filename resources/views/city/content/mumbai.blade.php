@@ -71,7 +71,7 @@
   <h2 id="mb-where">Where our tutors travel in Mumbai</h2>
   <p>
     @if($hubCounts['tutors'] > 0)
-      NXTutors currently has {{ number_format($hubCounts['tutors']) }} verified tutors listed for Mumbai.
+      NXTutors currently has {{ number_format($hubCounts['tutors']) }} tutor profiles listed for Mumbai.
     @else
       We are building our tutor network across Mumbai zone by zone.
     @endif

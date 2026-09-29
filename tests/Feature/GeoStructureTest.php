@@ -94,6 +94,9 @@ class GeoStructureTest extends TestCase
             ['user_id' => 13, 'name' => 'D', 'city' => 'Noida', 'join_as' => 'teacher', 'status' => 't'],
             ['user_id' => 14, 'name' => 'Hidden', 'city' => 'Gurgaon', 'join_as' => 'teacher', 'status' => 'f'],
         ]);
+        // All fixture pages count as kept in the index (config/generated_pages.php)
+        // except 'salt-lake-noindex', whose payload says Noindex anyway.
+        config(['generated_pages.indexable' => ['gurugramdlf-phase-4-ib-physics', 'sector-49-cbse-maths', 'salt-lake-jee', 'salt-lake-noindex', 'salt-lake-indexed']]);
         DB::table('generated_pages')->insert([
             ['slug' => 'gurugramdlf-phase-4-ib-physics', 'title' => 'IB Physics Home Tutor in DLF Phase 4', 'city' => 'Gurugram', 'location' => 'DLF Phase 4'],
             ['slug' => 'sector-49-cbse-maths', 'title' => 'CBSE Maths Home Tutor in Sector 49', 'city' => 'Gurugram', 'location' => 'Sector 49'],
@@ -108,6 +111,35 @@ class GeoStructureTest extends TestCase
             ['title' => 'NEET Biology', 'slug' => "-neet-biology-ncertfirst\t"],
             ['title' => 'Maths tutor DLF 4', 'slug' => 'maths-home-tutor-in-dlf-phase-4-best-home-tutors-near-you'],
         ]);
+    }
+
+    public function test_generated_pages_off_the_keep_list_are_noindexed_and_left_out(): void
+    {
+        config(['generated_pages.indexable' => ['salt-lake-jee']]);
+
+        $this->get('/p/sector-49-cbse-maths')->assertOk()->assertSee('<meta name="robots" content="noindex,follow">', false);
+        $this->get('/p/salt-lake-jee')->assertOk()->assertSee('<meta name="robots" content="index,follow">', false);
+
+        $map = $this->get('/sitemap-local-pages.xml')->assertOk();
+        $map->assertSee('/p/salt-lake-jee', false);
+        $map->assertDontSee('/p/sector-49-cbse-maths', false);
+
+        $this->get('/city/gurugram')->assertOk()->assertDontSee(url('/p/sector-49-cbse-maths'), false);
+    }
+
+    public function test_old_profile_urls_redirect_to_the_profile_page(): void
+    {
+        $to = \App\Models\Register::where('user_id', 10)->first()->profileUrl();
+
+        $this->get('/gurugram/teacher/a/' . base64_encode('10'))->assertStatus(301)->assertRedirect($to);
+        $this->get('/gurugram/teacher/nobody/' . base64_encode('999'))->assertNotFound();
+    }
+
+    public function test_area_descriptions_never_claim_verified_tutors(): void
+    {
+        $typed = str_repeat('Verified home tutors near DLF Phase 4 with a free demo. ', 2);
+        $seo = CityHub::areaSeo((object) ['name' => 'DLF Phase 4', 'slug' => 'dlf-phase-4', 'meta_desc' => $typed], 'gurugram', 'Gurugram');
+        $this->assertStringNotContainsStringIgnoringCase('verified', $seo['desc']);
     }
 
     public function test_city_names_map_to_city_pages_whatever_the_spelling(): void
@@ -243,7 +275,7 @@ class GeoStructureTest extends TestCase
         $seo = CityHub::areaSeo((object) ['name' => 'DLF Phase 4', 'slug' => 'dlf-phase-4', 'meta_desc' => 'x'], 'gurugram', 'Gurugram');
         $this->assertSame('Home Tutors in DLF Phase 4, Gurgaon – CBSE, IB, JEE | NXTutors', $seo['title']);
         $this->assertSame('Home Tutors in DLF Phase 4, Gurugram', $seo['h1']);
-        $this->assertStringStartsWith('Verified home tutors in DLF Phase 4, Gurugram', $seo['desc'], 'a 1-character typed description is replaced');
+        $this->assertStringStartsWith('Home tutors in DLF Phase 4, Gurugram', $seo['desc'], 'a 1-character typed description is replaced');
 
         $long = CityHub::areaSeo((object) ['name' => 'Golf Course Road interface (E-Block side)', 'slug' => 'x'], 'gurugram', 'Gurugram');
         $this->assertLessThanOrEqual(70, mb_strlen($long['title']));

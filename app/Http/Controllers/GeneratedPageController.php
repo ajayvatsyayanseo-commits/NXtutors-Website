@@ -27,7 +27,8 @@ public function show($slug)
         $indexFlag = (string) data_get($payload, 'index_flag', 'Index');
         $canonicalTarget = (string) data_get($payload, 'canonical_target', '');
 
-        $isNoindex = ($indexFlag === 'Noindex');
+        // Most generated pages are kept out of the index; see config/generated_pages.php.
+        $isNoindex = ! \App\Support\GeneratedPageIndex::indexable($page);
 
         // canonical_target names a hub page like "/gurugram/sector-56/mathematics"
         // that this project never built a route for, so every one of these

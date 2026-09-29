@@ -276,9 +276,8 @@ public function sitemapSection(string $section)
     // decides whether to emit the noindex meta tag.
     GeneratedPage::where('status', 'published')->chunk(500, function ($pages) use (&$urls, $baseUrl) {
         foreach ($pages as $page) {
-            $indexFlag = (string) data_get($page->payload, 'index_flag', 'Index');
-
-            if ($indexFlag !== 'Index') {
+            // Same rule as the page's robots tag (config/generated_pages.php).
+            if (! \App\Support\GeneratedPageIndex::indexable($page)) {
                 continue;
             }
 
@@ -1014,16 +1013,14 @@ private function baseTeacherQuery()
     }
 
     public function singleteacherprofile($slug, $slug1,$id){
-          $page = Page::Where('status', 't')->where('slug', 'privacy')->first();
-          $userid = base64_decode($id);
-          $teacher = Register::Where('user_id', $userid)->first();
+          // Old profile URLs (/gurugram/teacher/name/MjAyMw==) rendered a second,
+          // self-canonical copy of each profile with a bio for a title, competing
+          // with /tutor/{city}/{id}/{name}. Send them to the one profile page.
+          $teacher = Register::where('user_id', base64_decode($id, true) ?: '')->first();
+          $to = $teacher?->profileUrl();
+          abort_unless($to, 404);
 
-          $totalcourse = Teacher_course::where('user_id', $userid)->count();
-          $course = Teacher_course::where('user_id', $userid)->get();
-          $metatitle = $teacher->profile ?? null;
-          $metakey = $page->meta_keywords ?? null;
-          $metadesc = $teacher->pro_desc ?? null;
-          return view('teacherprofile' , compact('page','metatitle','metakey','metadesc','teacher','totalcourse','course',));
+          return redirect()->to($to, 301);
     }
 
 

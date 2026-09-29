@@ -71,7 +71,7 @@
   <h2 id="dl-where">Where our tutors teach across Delhi NCR</h2>
   <p>
     @if($hubCounts['tutors'] > 0)
-      {{ number_format($hubCounts['tutors']) }} verified tutors are
+      {{ number_format($hubCounts['tutors']) }} tutor profiles are
     @else
       Our tutors are
     @endif

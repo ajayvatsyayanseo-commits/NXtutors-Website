@@ -53,7 +53,7 @@ class CityHub
      */
     public static function pages(string $citySlug): Collection
     {
-        return collect(Cache::remember("cityhub.pages.v2.$citySlug", 3600, function () use ($citySlug) {
+        return collect(Cache::remember("cityhub.pages.v3.$citySlug", 3600, function () use ($citySlug) {
             $names = self::rawNames('generated_pages', $citySlug);
             if (! $names) {
                 return [];
@@ -84,7 +84,8 @@ class CityHub
                     ->where('payload', 'not like', '%"index_flag": "' . $flag . '"%')));
         }
 
-        return $query;
+        // And only the pages kept in the index (config/generated_pages.php).
+        return $query->whereIn('slug', GeneratedPageIndex::slugs());
     }
 
     /** Group pages by board / exam track. @return array<string, Collection> */
@@ -207,9 +208,9 @@ class CityHub
             : (mb_strlen($base . ' | NXTutors') <= 70 ? $base . ' | NXTutors' : $base);
 
         $typed = trim(preg_replace('/\s+/u', ' ', strip_tags((string) ($area->meta_desc ?? ''))));
-        $desc = (mb_strlen($typed) >= 70 && mb_strlen($typed) <= 170 && ! str_contains($typed, 'NxtTutors'))
+        $desc = (mb_strlen($typed) >= 70 && mb_strlen($typed) <= 170 && ! str_contains($typed, 'NxtTutors') && stripos($typed, 'verified') === false)
             ? $typed
-            : 'Verified home tutors in ' . $name . ', ' . $cityName . ' for CBSE, ICSE, IB and IGCSE, Classes 6–12, and JEE/NEET. See tutors near you and book a free demo class.';
+            : 'Home tutors in ' . $name . ', ' . $cityName . ' for CBSE, ICSE, IB and IGCSE, Classes 6–12, and JEE/NEET. Compare tutors near you and book a free demo class.';
 
         return [
             'name'  => $name,

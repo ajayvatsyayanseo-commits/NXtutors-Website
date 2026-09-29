@@ -12,7 +12,7 @@
 
     $indexFlag = (string) data_get($payload, 'index_flag', 'Index');        // Index | Noindex | Skip
 
-    $isNoindex = ($indexFlag === 'Noindex');
+    $isNoindex = $isNoindex ?? ($indexFlag === 'Noindex');
 
     // $canonicalUrl and $isNoindex both come from GeneratedPageController::show().
     // The canonical is worked out there — it has to decide whether this page's

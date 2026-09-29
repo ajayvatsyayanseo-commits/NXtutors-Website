@@ -173,7 +173,7 @@
                 {{ $state }}@if($aka) · also known as {{ $aka }}@endif
                 @if($n['tutors'] > 0 || $n['areas'] > 0)
                   <br><strong>
-                    @if($n['tutors'] > 0){{ number_format($n['tutors']) }} verified tutors @endif
+                    @if($n['tutors'] > 0){{ number_format($n['tutors']) }} tutor profiles @endif
                     @if($n['tutors'] > 0 && $n['areas'] > 0) · @endif
                     @if($n['areas'] > 0){{ number_format($n['areas']) }} areas covered @endif
                   </strong>

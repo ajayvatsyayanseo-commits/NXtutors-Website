@@ -122,7 +122,7 @@ class Geo
      */
     public static function counts(): array
     {
-        return Cache::remember('geo.counts.v2', 3600, function () {
+        return Cache::remember('geo.counts.v3', 3600, function () {
             $out = [];
             $bump = function (string $slug, string $key, int $n) use (&$out) {
                 if ($slug === '') {

@@ -77,7 +77,7 @@
   <h2 id="gg-where">Where our tutors teach in Gurugram</h2>
   <p>
     @if($ggTutors > 0)
-      {{ number_format($ggTutors) }} verified tutors
+      {{ number_format($ggTutors) }} tutor profiles
     @else
       Our tutors
     @endif

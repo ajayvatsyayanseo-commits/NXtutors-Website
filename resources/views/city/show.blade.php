@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   @php $metatitle = $city->meta_title ?? ($city->city_name.' - NXTutors'); @endphp
-  @php $metadesc = $city->meta_desc ?? ('Find verified tutors in '.$city->city_name.'. Explore areas and book a tutor.'); @endphp
+  @php $metadesc = $city->meta_desc ?? ('Find home tutors in '.$city->city_name.'. Explore areas and book a tutor.'); @endphp
   @include('include.header')
 
   @php
@@ -142,7 +142,7 @@
         <h1>Home &amp; Online Tutors in {{ $city->city_name }}@if($cityAka) ({{ $cityAka }})@endif</h1>
         <p>{{ $city->city_desc }}</p>
         <ul class="nx-stats">
-          @if($hubCounts['tutors'] > 0)<li><strong>{{ number_format($hubCounts['tutors']) }}</strong><span>verified tutors</span></li>@endif
+          @if($hubCounts['tutors'] > 0)<li><strong>{{ number_format($hubCounts['tutors']) }}</strong><span>tutor profiles</span></li>@endif
           @if($allAreas->count() > 0)<li><strong>{{ number_format($allAreas->count()) }}</strong><span>areas covered</span></li>@endif
           @if($hubPages->count() > 0)<li><strong>{{ number_format($hubPages->count()) }}</strong><span>subject &amp; board pages</span></li>@endif
           <li><strong>Free</strong><span>demo class</span></li>

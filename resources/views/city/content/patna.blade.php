@@ -75,7 +75,7 @@
   <h2 id="pt-where">Where our tutors teach in Patna</h2>
   <p>
     @if($hubCounts['tutors'] > 0)
-      NXTutors currently has {{ number_format($hubCounts['tutors']) }} verified tutors listed for Patna,
+      NXTutors currently has {{ number_format($hubCounts['tutors']) }} tutor profiles listed for Patna,
     @else
       We are building our tutor network in Patna,
     @endif
