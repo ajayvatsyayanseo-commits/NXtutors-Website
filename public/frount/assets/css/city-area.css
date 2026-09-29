@@ -604,40 +604,41 @@ body.page .hero{
 @media(max-width: 980px){ .tutors-grid{ grid-template-columns: repeat(2, minmax(0,1fr)); } }
 @media(max-width: 580px){ .tutors-grid{ grid-template-columns: 1fr; } }
 
-/* your tutor card css */
-.tutor-card{
+/* Old area-page tutor card, scoped so it cannot restyle the shared
+   card (partials/tutor-card) the area page now uses. */
+.tutors-grid .tutor-card{
   background:linear-gradient(180deg,#1c2330,#151b26);
   border:1px solid #2a3242;
   border-radius:16px;
   padding:16px;
   transition:.25s ease;
 }
-.tutor-card:hover{
+.tutors-grid .tutor-card:hover{
   transform:translateY(-4px);
   box-shadow:0 10px 30px rgba(0,0,0,.4);
 }
-.tutor-top{ display:flex; gap:14px; }
-.tutor-avatar{ position:relative; }
-.tutor-avatar img{
+.tutors-grid .tutor-top{ display:flex; gap:14px; }
+.tutors-grid .tutor-avatar{ position:relative; }
+.tutors-grid .tutor-avatar img{
   width:92px; height:92px; object-fit:cover; border-radius:14px;
 }
-.badge-verified{
+.tutors-grid .badge-verified{
   position:absolute; bottom:-6px; right:-6px;
   background:#2ecc71; color:#000;
   font-size:12px; padding:4px 6px; border-radius:50%;
   font-weight:700;
 }
-.tutor-info{ flex:1; }
-.tutor-name{ margin:0; font-size:18px; font-weight:700; color:#fff; }
-.tutor-rating{ font-size:14px; opacity:.85; margin:4px 0; }
-.tutor-rating span{ opacity:.7; }
-.tutor-chip{
+.tutors-grid .tutor-info{ flex:1; }
+.tutors-grid .tutor-name{ margin:0; font-size:18px; font-weight:700; color:#fff; }
+.tutors-grid .tutor-rating{ font-size:14px; opacity:.85; margin:4px 0; }
+.tutors-grid .tutor-rating span{ opacity:.7; }
+.tutors-grid .tutor-chip{
   display:inline-block; font-size:12px;
   padding:4px 10px; border-radius:999px;
   background:#24314d; color:#9fb4ff;
 }
-.tutor-location{ margin-top:10px; font-size:13px; opacity:.8; }
-.tutor-actions{ display:flex; gap:10px; margin-top:14px; }
+.tutors-grid .tutor-location{ margin-top:10px; font-size:13px; opacity:.8; }
+.tutors-grid .tutor-actions{ display:flex; gap:10px; margin-top:14px; }
 
 .btn-accent{
   flex:1; text-decoration:none; text-align:center;

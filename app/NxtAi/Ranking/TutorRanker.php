@@ -321,29 +321,10 @@ final class TutorRanker
         return false;
     }
 
-    /**
-     * Whether a travel-area entry covers the searched area. Whole words only
-     * ("Sector 5" is not in "Sector 56"), and a range such as "Sector 56–66"
-     * or "DLF Phase 1–5" covers every number in it.
-     */
+    /** See App\Support\TravelAreas::entryCovers (shared with the area pages). */
     private function travelsTo(string $entry, string $area): bool
     {
-        $e = $this->ci($entry);
-        $a = $this->ci($area);
-        if ($e === '' || $a === '') {
-            return false;
-        }
-        $has = fn (string $hay, string $needle) => preg_match('/(?<![a-z0-9])'.preg_quote($needle, '/').'(?![a-z0-9])/u', $hay) === 1;
-        if ($has($e, $a) || $has($a, $e)) {
-            return true;
-        }
-        if (preg_match('/^(.*?)(\d{1,3})\s*(?:-|–|to)\s*(\d{1,3})$/u', $e, $r)
-            && preg_match('/^(.*?)(\d{1,3})[a-z]?$/u', $a, $q)
-            && trim($r[1]) === trim($q[1])) {
-            return (int) $q[2] >= (int) $r[2] && (int) $q[2] <= (int) $r[3];
-        }
-
-        return false;
+        return \App\Support\TravelAreas::entryCovers($entry, $area);
     }
 
     private function ci(string $v): string

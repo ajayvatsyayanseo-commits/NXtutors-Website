@@ -1168,11 +1168,38 @@ public function cityAreaShow($citySlug, $areaSlug)
         $tutorScope = 'city';
     }
 
+    // Tutors who say they travel here ("Areas I travel to") come first, then
+    // the ones found by pincode or city above. See App\Support\TravelAreas.
+    $areaName = $areaSeo['name'] ?? (string) $area->name;
+    $travellers = \App\Support\TravelAreas::tutorsFor($city->city_name, $areaName);
+    if ($travellers->isNotEmpty()) {
+        $tutors = $travellers->concat($tutors)->unique('user_id')->values();
+        $tutorScope = 'area';
+    }
+    $tutors = $tutors->sortBy(fn ($t) => (int) ($t->is_sample ?? 0))->values();
+
+    // The zone block: how home tuition works in this part of the city, its
+    // guide, and other areas in the same zone (config/zone_guides.php).
+    $zoneName  = \App\Support\Zones::of($city->city_name, $areaName);
+    $zoneGuide = $zoneName ? config('zone_guides.' . \App\Support\Zones::cityKey($city->city_name) . '.' . $zoneName) : null;
+    $zoneAreas = collect();
+    if ($zoneGuide) {
+        $zoneAreas = \App\Support\CityHub::areaList($city->slug)
+            ->filter(fn ($a) => $a->slug !== $area->slug && \App\Support\Zones::of($city->city_name, \App\Support\CityHub::cleanAreaName($a->name, $a->slug)) === $zoneName)
+            ->sortBy(fn ($a) => $a->name, SORT_NATURAL | SORT_FLAG_CASE)->values();
+        // The twelve either side of this area, so each page links a different
+        // set of neighbours instead of every page the same first twelve.
+        $zPos = $zoneAreas->search(fn ($a) => strnatcasecmp($a->name, (string) $area->name) > 0);
+        $zPos = $zPos === false ? $zoneAreas->count() : $zPos;
+        $zoneAreas = $zoneAreas->slice(max(0, min($zPos - 6, $zoneAreas->count() - 12)), 12)->values();
+        $zoneGuide['live'] = ! empty($zoneGuide['guide']) && Blog::where('status', 't')->where('slug', $zoneGuide['guide'])->exists();
+    }
+
              $metatitle = $city->meta_title;
             $metakey = '';
             $metadesc = $city->meta_desc;
 
-    return view('city.cityarea.single', compact('city', 'area','relatedAreas','tutors','tutorScope','metatitle','metakey','metadesc','areaPages','areaGuides','areaState','areaSeo'));
+    return view('city.cityarea.single', compact('city', 'area','relatedAreas','tutors','tutorScope','metatitle','metakey','metadesc','areaPages','areaGuides','areaState','areaSeo','zoneName','zoneGuide','zoneAreas'));
 }
    public function contactpage()
     {

@@ -142,6 +142,26 @@ class GeoStructureTest extends TestCase
         $this->assertStringNotContainsStringIgnoringCase('verified', $seo['desc']);
     }
 
+    public function test_area_pages_show_their_zone_block(): void
+    {
+        $page = $this->get('/city/gurugram/dlf-phase-4')->assertOk();
+        $page->assertSee('Home tuition in DLF Phase 4: what to know');
+        $page->assertSee('Golf Course Road · Gurugram');
+        // The zone's blog guide is linked only once it is published.
+        $page->assertDontSee('/blog/gurgaon-golf-course-road-dlf-tuition-guide', false);
+
+        DB::table('blog_managment')->insert(['title' => 'Golf Course Road guide', 'slug' => 'gurgaon-golf-course-road-dlf-tuition-guide']);
+        $this->get('/city/gurugram/dlf-phase-4')->assertSee('/blog/gurgaon-golf-course-road-dlf-tuition-guide', false);
+    }
+
+    public function test_travel_area_entries_cover_areas_and_ranges(): void
+    {
+        $this->assertTrue(\App\Support\TravelAreas::entryCovers('DLF Phase 1–5', 'DLF Phase 4'));
+        $this->assertTrue(\App\Support\TravelAreas::entryCovers('Sector 56–66', 'Sector 59'));
+        $this->assertFalse(\App\Support\TravelAreas::entryCovers('Sector 5', 'Sector 56'));
+        $this->assertTrue(\App\Support\TravelAreas::entryCovers('Nirvana Country', 'nirvana country'));
+    }
+
     public function test_city_names_map_to_city_pages_whatever_the_spelling(): void
     {
         $this->assertSame('gurugram', Geo::slugFor('Gurgaon'));

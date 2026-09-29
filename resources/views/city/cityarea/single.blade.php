@@ -151,98 +151,32 @@
     </section>
 
       <section class="cardx block section" id="tutors">
+  {{-- Shared tutor cards (partials/tutor-card): real tutors carry the
+       Verified seal, sample profiles are labelled and come last. --}}
   <h2 class="h2"><span></span>
     @if(($tutorScope ?? 'area') === 'area')
-      Tutors available in {{ $areaSeo['name'] ?? $area->name }}
+      Tutors for {{ $areaSeo['name'] ?? $area->name }}
     @else
-      No tutors found in this area — Showing tutors in {{ $city->city_name }}
+      Tutors in {{ $city->city_name }}
     @endif
   </h2>
+  <p class="nxarea-note">
+    @if(($tutorScope ?? 'area') === 'area')
+      Tutors who live in or travel to {{ $areaSeo['name'] ?? $area->name }} come first. Sample profiles are marked.
+    @else
+      We have no tutor listed in {{ $areaSeo['name'] ?? $area->name }} yet, so these are tutors across {{ $city->city_name }}; tell us your slot and we check who can reach you. Sample profiles are marked.
+    @endif
+  </p>
 
-  <div class="tutors-grid">
-    @php $a=1; @endphp
-    @forelse($tutors as $t)
-    @if($a<=6)
-      @php
-        $avatar = $t->avatar ?? '';
-        $img = ($avatar && str_starts_with($avatar,'http'))
-            ? $avatar
-            : ($avatar ? \App\Support\TutorPhoto::url($avatar)
-                      : asset('frount/assets/images/tutor1.jpg'));
-
-        // ✅ Chip text from courses (fallback verified tutor)
-        $chip = 'Verified Tutor';
-        if (!empty($t->courses) && $t->courses->count()) {
-          $c = $t->courses->first();
-          $parts = [];
-          // Teacher_course me board/category relations ho to ye work karega
-          if ($c->board?->cat_title) $parts[] = $c->board->cat_title;
-          if ($c->category?->cat_title) $parts[] = $c->category->cat_title;
-          if ($parts) $chip = implode(' • ', array_slice($parts,0,2));
-        }
-
-        // ✅ rating + reviews (Register->reviews relation)
-        $reviewsCount = (int) ($t->reviews?->count() ?? 0);
-        $avgRating = (float) ($t->reviews?->avg('rating') ?? 0);
-        $rating = number_format($avgRating, 1);
-
-        // ✅ WhatsApp link (number apna set kar lena)
-        // Opens WhatsApp with a Ref (App\Support\Wa): the exact tutor and this area page.
-        $waLink = \App\Support\Wa::tutor($t->user_id, 'card', ['city' => $city->city_name ?? null, 'area' => $area->name ?? null]);
- 
-    $citySlug = Str::slug($t->city ?? $city->name ?? request()->segment(2) ?? 'city');
-
-     $encodedId = rtrim(strtr(base64_encode($t->user_id . '-nxt'), '+/', '-_'), '=');
-
-    $profileLink = route('tutor.newshow', [
-        'city' => $citySlug,
-        'user_id' => $encodedId,
-        'name' => Str::slug($t->name ?? 'tutor'),
-    ]);
- 
-      @endphp
-
-      <div class="tutor-card">
-        <div class="tutor-top">
-          <div class="tutor-avatar">
-            <img src="{{ $img }}" alt="{{ $t->name }}"
-                onerror="this.src='{{ asset('frount/assets/images/tutor1.jpg') }}'">
-            <span class="badge-verified">✔</span>
-          </div>
-
-          <div class="tutor-info">
-            <h3 class="tutor-name">{{ $t->name }}</h3>
-
-            <div class="tutor-rating">
-              ⭐ {{ $rating }}
-              <span>({{ $reviewsCount }} reviews)</span>
-            </div>
-
-            <span class="tutor-chip">{{ $chip }}</span>
-          </div>
-        </div>
-
-        <div class="tutor-location">
-          📍 {{ \Illuminate\Support\Str::limit($t->address ?? ($t->city ?? ''), 70) }}
-        </div>
-
-        <div class="tutor-actions">
-          <a href="{{ $waLink }}" target="_blank" class="btn-accent" rel="nofollow noopener">
-            WhatsApp
-          </a>
-
-          <a href="{{ $profileLink }}" class="btn-outline">
-            View Profile
-          </a>
-        </div>
-      </div>
-      @endif
-       @php $a++; @endphp
-    @empty
-      <div class="empty">No tutors available right now.</div>
-    @endforelse
+  <div class="suggested-grid nxarea-tutors">
+    @include('pages.partials.teacher-cards', ['teachers' => $tutors->take(8), 'page' => (object) ['city' => $city->city_name, 'location' => $areaSeo['name'] ?? $area->name]])
   </div>
+  @if($tutors->isEmpty())
+    <div class="empty">No tutors available right now.</div>
+  @endif
 </section>
+
+    @includeWhen(!empty($zoneGuide), 'city.cityarea.partials.zone-guide')
 
 
     {{-- MAIN GRID --}}

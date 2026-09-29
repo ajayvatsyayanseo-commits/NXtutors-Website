@@ -851,3 +851,16 @@ body.page .blog-meta{display:block;margin-bottom:6px}
 }
 @media (max-width:520px){.nxbl-fcard{grid-template-columns:110px minmax(0,1fr)}.nxbl-fcard--lead{grid-template-columns:minmax(0,1fr)}}
 @media (prefers-reduced-motion:reduce){.nxbl-fcard{transition:none}.nxbl-fcard:hover{transform:none}}
+
+/* ---------- area pages: tutor note and zone block (city/cityarea) ---------- */
+body.page .nxarea-note{margin:4px 0 14px;color:var(--nxt-muted,#B7C0D1);font-size:15px;line-height:1.55;max-width:70ch}
+body.page .nxarea-tutors{margin-top:6px}
+body.page .nxzone p{line-height:1.7;max-width:72ch}
+body.page .nxzone__eyebrow{display:inline-flex;margin-bottom:8px;padding:5px 12px;border-radius:999px;font-size:12px;font-weight:600;letter-spacing:.02em;color:#E6EBF5;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14)}
+body.page .nxzone__h3{margin:18px 0 8px;font-size:17px;font-weight:700}
+body.page .nxzone__tips{margin:0 0 6px;padding-left:20px;line-height:1.65;max-width:72ch}
+body.page .nxzone__tips li{margin:4px 0}
+body.page .nxzone__areas{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+body.page .nxzone__areas a{display:inline-block;padding:6px 12px;border-radius:999px;font-size:14px;color:var(--nxt-link);border:1px solid var(--nxt-link-line);text-decoration:none}
+body.page .nxzone__areas a:hover{background:rgba(108,176,255,.1)}
+body.page .nxzone__more a{color:var(--nxt-link);text-decoration:underline;text-decoration-color:var(--nxt-link-line);text-underline-offset:3px}
