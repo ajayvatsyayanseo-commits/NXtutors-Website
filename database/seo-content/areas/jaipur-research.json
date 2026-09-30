@@ -1,0 +1,430 @@
+{
+  "areas": {
+    "c-scheme": {
+      "name": "C-Scheme",
+      "zone": "C-Scheme, Bani Park & Vidhyadhar Nagar",
+      "type": "mixed",
+      "about": "<p>C-Scheme sits at the heart of Jaipur and works as the city's main business district, with government offices, corporate offices and hotels close to homes. Housing is mostly apartment buildings of three and four bedrooms, alongside older bungalows on tree-lined streets. Statue Circle is the familiar landmark, and neighbouring pockets include Ashok Nagar, Sangram Colony and Sindhi Camp.</p><p>For home tuition, the mix of apartment blocks and offices shapes the visit. Many buildings ask visitors to sign in at the gate, so share the tutor's name and class timing with security in advance. Parking on the main roads is tight during office hours, so after-school evening slots or weekend mornings suit tutors coming by car or scooter. Sindhi Camp station on the Pink Line is close by, with an auto or a short walk for the last leg. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/c-scheme-jaipur-overview-piffid",
+        "https://www.squareyards.com/c-scheme-in-jaipur-overview-16608",
+        "https://en.wikipedia.org/wiki/Pink_Line_(Jaipur_Metro)"
+      ]
+    },
+    "civil-lines": {
+      "name": "Civil Lines",
+      "zone": "C-Scheme, Bani Park & Vidhyadhar Nagar",
+      "type": "mixed",
+      "about": "<p>Civil Lines is an older, green part of central Jaipur where large government bungalows, including Lok Bhavan, the Governor's residence, sit along wide tree-lined avenues. Around this official core are private homes and apartment buildings, with Sodala, Shyam Nagar and Vaishali Nagar among the neighbouring areas, and Ajmer Road running along its edge.</p><p>Civil Lines station on the Pink Line, open since June 2015, stands on the elevated Ajmer Road stretch, and the Railway Station stop is the next one towards the old city, so a tutor can arrive by metro and take an auto for the last leg. Addresses can be hard to find among the large plots, so families should share the full address and a landmark before the first class. Apartment buildings usually need gate registration, while independent homes allow doorstep visits. Evening traffic on Ajmer Road is heavy, so plan class timings with a margin. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Civil_Lines_metro_station_(Jaipur)",
+        "https://en.wikipedia.org/wiki/Lok_Bhavan,_Jaipur",
+        "https://www.squareyards.com/property-rates/civil-lines-jaipur"
+      ]
+    },
+    "bani-park": {
+      "name": "Bani Park",
+      "zone": "C-Scheme, Bani Park & Vidhyadhar Nagar",
+      "type": "residential",
+      "about": "<p>Bani Park is one of the older residential areas of Jaipur, close to the main railway station and the Sindhi Camp bus stand. Independent houses dominate here rather than large apartment complexes, and heritage homes stand alongside newer residential buildings on tree-lined streets. Shastri Nagar, Vidhyadhar Nagar and C-Scheme are nearby localities.</p><p>Because most families live in independent houses, tutors usually reach the doorstep directly, though street parking can be limited on the station side. The Sindhi Camp and Railway Station stops on the Pink Line serve the area, which helps tutors travelling from Mansarovar, Shyam Nagar or the old city; an auto or a short walk covers the last stretch. Roads towards the station and bus stand fill up in the evening, so a slightly earlier or later slot can save time. For specialist subjects, online classes add more choice. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/bani-park-in-jaipur-overview-3128",
+        "https://en.wikipedia.org/wiki/Pink_Line_(Jaipur_Metro)",
+        "https://www.squareyards.com/shastri-nagar-in-jaipur-overview-3129"
+      ]
+    },
+    "shastri-nagar": {
+      "name": "Shastri Nagar",
+      "zone": "C-Scheme, Bani Park & Vidhyadhar Nagar",
+      "type": "residential",
+      "about": "<p>Shastri Nagar is a settled residential locality in north Jaipur, next to Bani Park, Vidhyadhar Nagar, Subhash Nagar and the Jhotwara Road side. It forms part of the city's residential spread beyond the walled old city, with independent homes and apartment buildings, and local markets, schools and clinics close to most streets.</p><p>Families here find home tuition practical because the locality sits within easy reach of tutors living in Bani Park, Vidhyadhar Nagar and central Jaipur. Independent houses allow doorstep visits, while apartment blocks may ask for gate registration. The Pink Line does not pass through Shastri Nagar; the nearest stops are towards Sindhi Camp and the railway station, so most tutors come by scooter or auto. Planned stops on the metro's Orange Line, now under construction, include Pani Pech and Ambabari nearby, which may improve access once the line opens. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/shastri-nagar-in-jaipur-overview-3129",
+        "https://en.wikipedia.org/wiki/Orange_Line_(Jaipur_Metro)",
+        "https://en.wikipedia.org/wiki/Pink_Line_(Jaipur_Metro)"
+      ]
+    },
+    "vidhyadhar-nagar": {
+      "name": "Vidhyadhar Nagar",
+      "zone": "C-Scheme, Bani Park & Vidhyadhar Nagar",
+      "type": "residential",
+      "about": "<p>Vidhyadhar Nagar is a planned residential township in north Jaipur, conceived as a satellite town on a grid inspired by the old walled city. It is organised into numbered sectors with a central spine, and homes range from independent houses on plots to apartment buildings. Neighbouring areas include Shastri Nagar, Jhotwara, Murlipura, Bani Park and the Sikar Road corridor.</p><p>The sector layout makes addresses easy to find, and tutors can usually reach independent homes at the doorstep. In apartment buildings, share the tutor's details with the guard before the first class. Sikar Road carries heavy traffic at peak hours, so evening classes work better with a little buffer. There is no metro station here yet; the Orange Line under construction plans stops at Vidhyadhar Nagar and Ambabari, and until it opens most tutors travel by scooter or auto. Online classes suit specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/vidhyadhar-nagar-in-jaipur-overview-3111",
+        "https://www.99acres.com/vidhyadhar-nagar-jaipur-overview-piffid",
+        "https://en.wikipedia.org/wiki/Orange_Line_(Jaipur_Metro)",
+        "https://www.ribaj.com/intelligence/vidhyadhar-nagar-india-balkrishna-vithaldas-doshi/"
+      ]
+    },
+    "jhotwara": {
+      "name": "Jhotwara",
+      "zone": "C-Scheme, Bani Park & Vidhyadhar Nagar",
+      "type": "mixed",
+      "about": "<p>Jhotwara is a suburban area in the north-west of Jaipur whose growth came with the Jhotwara Industrial Area, one of the city's older manufacturing zones. Housing is varied, from independent houses and builder floors to newer residential complexes, and Kalwar Road and Khatipura Road link it with the rest of the city. Nearby pockets include Khatipura, Gokulpura and Anand Nagar.</p><p>Most families live in independent homes or small builder-floor buildings, so tutors generally reach the door directly and parking is simpler than in the city centre. Dahar Ka Balaji railway station lies in the vicinity, and the Pink Line can be reached at Chandpole for travel towards the old city, with an auto for the rest of the trip. Evening traffic builds up on Kalwar Road, so slightly earlier class slots help. Specialist subjects are often easier to arrange online. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jhotwara",
+        "https://www.squareyards.com/jhotwara-in-jaipur-overview-3124"
+      ]
+    },
+    "sikar-road": {
+      "name": "Sikar Road",
+      "zone": "C-Scheme, Bani Park & Vidhyadhar Nagar",
+      "type": "mixed",
+      "about": "<p>Sikar Road is the northern corridor out of Jaipur, part of National Highway 52 towards Chomu and Sikar. Homes along it and in the colonies behind it include plotted layouts, apartment projects and villa townships, with Vidhyadhar Nagar, Murlipura, Harmada, Ambabari and the Vishwakarma Industrial Area as neighbouring areas.</p><p>Because the corridor is long, the right tutor depends on which end the family lives: colonies near Vidhyadhar Nagar and Ambabari are easier for tutors from central Jaipur, while newer layouts further out suit tutors living nearby. Gated townships usually register visitors at the gate. There is no metro on this side yet; the Orange Line under construction plans stops at Harmada and Todi Mod in the north, and for now most tutors travel by scooter or auto. Traffic on the highway builds up in the evening, so plan timings with a margin. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/sikar-road-in-jaipur-overview-16711",
+        "https://en.wikipedia.org/wiki/National_Highway_52_(India)",
+        "https://en.wikipedia.org/wiki/Orange_Line_(Jaipur_Metro)"
+      ]
+    },
+    "raja-park": {
+      "name": "Raja Park",
+      "zone": "Raja Park, Jawahar Nagar & Bapu Nagar",
+      "type": "mixed",
+      "about": "<p>Raja Park is a busy residential-cum-commercial locality in central Jaipur, bordered by Adarsh Nagar, Jawahar Nagar and Tilak Nagar. Its main road is lined with shops, eateries and showrooms, while the lanes behind it hold builder floors, older independent houses and some apartment buildings. Govind Marg and Tonk Road link it with the rest of the city.</p><p>For a tutor, the market road and the residential lanes behave very differently. The main road is crowded in the evening and parking there is hard, so families on inner lanes should share a landmark and suggest where a two-wheeler can stand. Builder floors usually mean a doorstep visit without gate formalities. The Pink Line does not reach Raja Park, so tutors mostly come by scooter, car or auto from Jawahar Nagar, Bapu Nagar and nearby areas. Weekend morning slots avoid the busiest market hours. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/raja-park-in-jaipur-overview-4834",
+        "https://www.99acres.com/raja-park-jaipur-overview-piffid"
+      ]
+    },
+    "jawahar-nagar": {
+      "name": "Jawahar Nagar",
+      "zone": "Raja Park, Jawahar Nagar & Bapu Nagar",
+      "type": "residential",
+      "about": "<p>Jawahar Nagar is one of Jaipur's older residential localities, lying in the central-eastern part of the city just outside the walled old city. It is divided into Sectors 1 to 5, with independent houses and ground-plus-one homes on tree-lined streets and some mid-rise apartment buildings. Raja Park, Adarsh Nagar, Tilak Nagar and Bapu Nagar are neighbouring areas.</p><p>Most homes are independent houses, so tutors can usually come straight to the door and park outside on the inner sector roads. Families should mention the sector number with the address. Tonk Road and Govind Marg carry the heavier traffic around the locality, so evening classes are easier to reach from the sector side. There is no metro station within the locality, so tutors travel by scooter, car or auto. For advanced board or entrance subjects, online classes add more tutor choice. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/jawahar-nagar-in-jaipur-overview-4848",
+        "https://www.99acres.com/jawahar-nagar-jaipur-overview-piffid"
+      ]
+    },
+    "adarsh-nagar": {
+      "name": "Adarsh Nagar",
+      "zone": "Raja Park, Jawahar Nagar & Bapu Nagar",
+      "type": "residential",
+      "about": "<p>Adarsh Nagar is an established residential neighbourhood in central Jaipur, surrounded by Raja Park, Jawahar Nagar, Tilak Nagar and Sethi Colony, with the Agra Road side close by. Homes are a blend of older independent houses, builder floors and apartment buildings of two to five bedrooms, and the area keeps a calm family atmosphere with daily markets nearby.</p><p>Visits are usually simple: independent houses and builder floors mean the tutor comes to the door, while apartment buildings may need the guard to be told in advance. Peak-hour traffic and parking can be tight near the market roads, so evening classes should allow some spare time, and families can suggest a spot for the tutor's two-wheeler. City buses serve the area, but there is no metro station nearby, so tutors mostly come by scooter or auto from Raja Park, Jawahar Nagar and the central city. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/adarsh-nagar-in-jaipur-overview-3146",
+        "https://www.99acres.com/adarsh-nagar-jaipur-overview-piffid"
+      ]
+    },
+    "tilak-nagar": {
+      "name": "Tilak Nagar",
+      "zone": "Raja Park, Jawahar Nagar & Bapu Nagar",
+      "type": "residential",
+      "about": "<p>Tilak Nagar is a centrally located residential area near Raja Park, Adarsh Nagar, Bapu Nagar, Jawahar Nagar and the Rambagh side, with the Moti Doongri temple close by. Streets are green and fairly quiet, and homes are a mix of independent houses and multi-storey apartment buildings, including a number of newer apartment projects.</p><p>Tutors reach independent houses at the doorstep, while newer apartment buildings usually register visitors at the gate, so share the tutor's name ahead of the first class. Roads around Moti Doongri and towards Tonk Road get busy in the evening, so plan class timings with a margin. There is no metro in the locality; tutors from Raja Park, Bapu Nagar and nearby areas mostly travel by scooter or auto. Online classes suit specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/tilak-nagar-in-jaipur-overview-3140",
+        "https://www.99acres.com/tilak-nagar-jaipur-overview-piffid"
+      ]
+    },
+    "bapu-nagar": {
+      "name": "Bapu Nagar",
+      "zone": "Raja Park, Jawahar Nagar & Bapu Nagar",
+      "type": "residential",
+      "about": "<p>Bapu Nagar is a central Jaipur locality between Tonk Road and C-Scheme, close to Malviya Nagar and the Jawahar Circle stretch. Housing is a mix of older bungalows and newer apartment buildings, with independent floors and plots too, and the area has an established residential feel with schools and markets nearby. Tilak Nagar and Jawahar Nagar are neighbouring areas.</p><p>The main road to the airport and Tonk Road both run close by, which makes Bapu Nagar easy to reach from south and central Jaipur. Traffic near the Bapu Nagar junction builds up at peak hours and inner roads are narrow, so a slightly earlier or later class slot helps. Bungalows usually allow doorstep visits, while apartment blocks may ask visitors to sign in. Gandhinagar railway station lies nearby on the Tonk Road side, and tutors often come by scooter or auto from Malviya Nagar, Bajaj Nagar and Raja Park. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/bapu-nagar-in-jaipur-overview-4823",
+        "https://www.99acres.com/bapu-nagar-jaipur-overview-piffid",
+        "https://www.squareyards.com/jawahar-nagar-in-jaipur-overview-4848"
+      ]
+    },
+    "bajaj-nagar": {
+      "name": "Bajaj Nagar",
+      "zone": "Raja Park, Jawahar Nagar & Bapu Nagar",
+      "type": "mixed",
+      "about": "<p>Bajaj Nagar is a residential-cum-commercial locality near Tonk Road, known for its markets and close to Malviya Nagar, Bapu Nagar, Milap Nagar and Gopalpura. Independent houses and flats are the common home types, and the area draws families who want a central address. Gandhinagar railway station, which mainly serves the southern side of the city, stands in the Bajaj Nagar area.</p><p>The locality sits between Tonk Road and the main road to the airport, so tutors from Malviya Nagar, Durgapura and the central city can reach it without crossing the old city. Market roads fill up in the evening, so families on inner lanes should share a landmark. Independent houses mean doorstep visits, while flats in apartment buildings may need gate registration. A Gandhinagar Station stop is planned on the metro's Orange Line, now under construction, which should make travel easier once it opens. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Gandhinagar_Jaipur_railway_station",
+        "https://www.squareyards.com/bajaj-nagar-in-jaipur-overview-69509",
+        "https://en.wikipedia.org/wiki/Orange_Line_(Jaipur_Metro)"
+      ]
+    },
+    "vaishali-nagar": {
+      "name": "Vaishali Nagar",
+      "zone": "Vaishali Nagar & West Jaipur",
+      "type": "mixed",
+      "about": "<p>Vaishali Nagar is a large residential and commercial neighbourhood in western Jaipur, bounded by Queens Road to the east, the Delhi Bypass to the west, Ajmer Road to the south and Sirsi Road to the north. Housing covers apartment buildings, gated communities, independent houses and builder floors, with shops and eateries concentrated along main roads such as Amrapali Marg. Chitrakoot, Nirman Nagar and Shyam Nagar are neighbouring areas.</p><p>Because the area mixes gated communities with independent homes, the visit routine varies street by street: societies ask for gate registration, while houses allow a doorstep visit. The market stretch around Amrapali Circle is busy in the evening, so class timings should include some spare time. The Pink Line does not run through Vaishali Nagar; tutors from Chitrakoot, Nirman Nagar and Shyam Nagar usually come by scooter or car, and families deep inside the colony may prefer online classes for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vaishali_Nagar_(Jaipur)",
+        "https://www.squareyards.com/vaishali-nagar-in-jaipur-overview-3125"
+      ]
+    },
+    "chitrakoot": {
+      "name": "Chitrakoot",
+      "zone": "Vaishali Nagar & West Jaipur",
+      "type": "residential",
+      "about": "<p>Chitrakoot is a planned neighbourhood along Ajmer Road in west Jaipur, with Vaishali Nagar to its north. The area is organised into 12 sectors, ten of them mainly residential and two set aside for commercial and social use. Housing includes independent houses and apartment buildings, and the 200 Feet Bypass runs close by, linking the colony with other main roads.</p><p>The sector numbering helps a tutor find the home quickly, so families should always give the sector along with the plot or flat number. Independent houses allow doorstep visits, while apartment complexes usually register visitors at the gate. Ajmer Road and the 200 Feet Bypass carry heavy traffic in the evening, so tutors coming from Vaishali Nagar, Nirman Nagar or Shyam Nagar should plan some spare time. There is no metro station in Chitrakoot, so most tutors travel by scooter or car. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chitrakoot_Colony",
+        "https://www.squareyards.com/chitrakoot-in-jaipur-overview-4840"
+      ]
+    },
+    "nirman-nagar": {
+      "name": "Nirman Nagar",
+      "zone": "Vaishali Nagar & West Jaipur",
+      "type": "residential",
+      "about": "<p>Nirman Nagar is a residential locality in west Jaipur, linked by Ajmer Road, Kings Road, the Gopalpura Bypass and the 200 Feet Bypass, with Mansarovar, Vaishali Nagar and Shyam Nagar nearby. Homes range from independent houses to high-rise apartment buildings. The western terminal of the Pink Line, Mansarovar station, stands in the Padmavati Colony part of Nirman Nagar.</p><p>Metro access is a real advantage here: Mansarovar and New Aatish Market stations have been open since June 2015, so tutors from Shyam Nagar, Sodala or the railway station side can ride the Pink Line and take an auto or walk for the last leg. Apartment buildings generally ask for gate registration, while independent houses are reached at the doorstep. Evening traffic on Ajmer Road and the bypass roads is heavy, so classes should allow some spare time. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/nirman-nagar-in-jaipur-overview-4827",
+        "https://en.wikipedia.org/wiki/Mansarovar_metro_station",
+        "https://en.wikipedia.org/wiki/New_Aatish_Market_metro_station"
+      ]
+    },
+    "shyam-nagar": {
+      "name": "Shyam Nagar",
+      "zone": "Vaishali Nagar & West Jaipur",
+      "type": "residential",
+      "about": "<p>Shyam Nagar is a residential locality in west-central Jaipur, beyond the old city, connected by New Sanganer Road, Ajmer Road and the Gopalpura Bypass. Its neighbours include Ram Nagar, Nirman Nagar, Sodala, Hawa Sadak and Ganesh Nagar, and homes are a mix of apartments and independent houses across different budgets, with parks spread through the colony.</p><p>Two Pink Line stations serve the area, Shyam Nagar and Vivek Vihar, both on New Sanganer Road and open since June 2015. That makes it easy for tutors from Mansarovar, Civil Lines or the railway station side to arrive by metro and finish the trip on foot or by auto. Independent houses allow doorstep visits, while apartment buildings may ask visitors to sign in. New Sanganer Road gets crowded in the evening, so plan class timings with a margin. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/shyam-nagar-in-jaipur-overview-3126",
+        "https://en.wikipedia.org/wiki/Shyam_Nagar_metro_station",
+        "https://en.wikipedia.org/wiki/Vivek_Vihar_metro_station"
+      ]
+    },
+    "sodala": {
+      "name": "Sodala",
+      "zone": "Vaishali Nagar & West Jaipur",
+      "type": "residential",
+      "about": "<p>Sodala is a residential area in central-west Jaipur, surrounded by Shyam Nagar, Civil Lines, Ram Nagar, Modi Nagar and Roop Vihar Colony. It has apartment buildings, builder floors and independent houses, and roads such as Ajmer Road, Hawa Sadak and New Sanganer Road run close by.</p><p>Ram Nagar metro station on Hawa Sadak, open since June 2015, lies in Sodala, and Civil Lines station on the elevated Ajmer Road stretch is also near, so tutors coming from Mansarovar or the old city can use the Pink Line and walk or take an auto from the station. Many families live in builder floors, where the tutor comes straight to the door, while apartment buildings may need gate registration. Evening traffic on Ajmer Road is heavy, so class times should include some spare time. Specialist subjects are easy to add online. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/sodala-in-jaipur-overview-3153",
+        "https://en.wikipedia.org/wiki/Ram_Nagar_metro_station",
+        "https://en.wikipedia.org/wiki/Civil_Lines_metro_station_(Jaipur)"
+      ]
+    },
+    "ajmer-road": {
+      "name": "Ajmer Road",
+      "zone": "Vaishali Nagar & West Jaipur",
+      "type": "mixed",
+      "about": "<p>Ajmer Road is the six-lane main road running south-west from the city towards Ajmer, part of National Highway 48. The colonies along it, including Nirman Nagar, Sanjay Nagar, Rajni Vihar, Jagdishpuri and Jagdamba Nagar, mix independent houses with apartment buildings, and further out there are larger townships and villa projects. Industrial units and new residential projects share the corridor.</p><p>Because the corridor is long, the right tutor depends on where the family lives: colonies near Civil Lines and Sodala connect to the Pink Line's Civil Lines station on the elevated Ajmer Road stretch, while outer townships are easier for tutors living nearby. Townships usually register visitors at the gate, so share the tutor's details in advance. Traffic on Ajmer Road is heavy at peak hours, so evening classes should allow some spare time, and online classes can fill gaps for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/ajmer-road-in-jaipur-overview-4811",
+        "https://en.wikipedia.org/wiki/National_Highway_48_(India)",
+        "https://en.wikipedia.org/wiki/Civil_Lines_metro_station_(Jaipur)"
+      ]
+    },
+    "mansarovar": {
+      "name": "Mansarovar",
+      "zone": "Mansarovar & Sanganer",
+      "type": "residential",
+      "about": "<p>Mansarovar is a large residential area in south-west Jaipur, planned by the Jaipur Development Authority, with the Rajasthan Housing Board also running housing schemes here; until 2010 it was often described as Asia's largest colony. Homes include housing board flats, independent houses, plots, villas and apartment complexes, and the main roads are New Sanganer Road, Shipra Path, Madhyam Marg and the Gopalpura Bypass.</p><p>The Pink Line begins at Mansarovar station and runs east along New Sanganer Road through New Aatish Market and Vivek Vihar, all open since June 2015, so tutors from Shyam Nagar, Civil Lines and the railway station side can come by metro and take an auto or walk for the last leg. Housing board flats and independent homes are usually reached at the door, while newer apartment complexes register visitors at the gate. Shipra Path is busy in the evening, so plan timings with a margin. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mansarovar_(Jaipur)",
+        "https://www.squareyards.com/mansarovar-in-jaipur-overview-3104",
+        "https://en.wikipedia.org/wiki/Mansarovar_metro_station",
+        "https://rhb.rajasthan.gov.in/content/dam/raj/udh/organizations/rajasthan-housing-board/pdf/div%20vi%20mansarovar.pdf"
+      ]
+    },
+    "gopalpura-bypass": {
+      "name": "Gopalpura Bypass",
+      "zone": "Mansarovar & Sanganer",
+      "type": "mixed",
+      "about": "<p>Gopalpura Bypass is a busy main road and residential belt in south Jaipur, linking the Tonk Road side with Mansarovar, Durgapura and Nirman Nagar. The road is lined with showrooms, shops and many coaching institutes, while the colonies behind it hold independent houses, builder floors and apartment buildings, and a large student population lives in the area.</p><p>For families, the coaching crowd matters when setting class times: the main road is packed through the day and into the early evening, so late-evening or weekend slots are easier for a visiting tutor. Durgapura and Gandhinagar railway stations are the nearest rail links. The Pink Line does not come here, though a Gopalpura stop is planned on the metro's Orange Line, now under construction. Houses and builder floors allow doorstep visits, while apartment blocks may need gate registration. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/gopalpura-bypass-jaipur-overview-piffid",
+        "https://www.squareyards.com/mansarovar-in-jaipur-overview-3104",
+        "https://en.wikipedia.org/wiki/Orange_Line_(Jaipur_Metro)"
+      ]
+    },
+    "sanganer": {
+      "name": "Sanganer",
+      "zone": "Mansarovar & Sanganer",
+      "type": "mixed",
+      "about": "<p>Sanganer is a historic town on the southern side of Jaipur, now part of the city's growth and home to Jaipur International Airport. It is known for hand-block textile printing and handmade paper, a craft here since the eighteenth century, and for an old Digambar Jain temple. Housing is a mix of independent houses, plots and a growing number of apartment projects, with Mansarovar, Pratap Nagar and Mohanpura nearby.</p><p>Tonk Road and the airport road link Sanganer with the rest of the city, and Sanganer and Durgapura railway stations are the nearest rail links. Older lanes near the town centre are narrow, so tutors on two-wheelers find visits easier, while newer apartment projects ask visitors to register at the gate. Tonk Road is busy at peak hours, so evening classes should allow some spare time. A stop near Sanganer is planned on the metro's Orange Line, and specialist subjects are often easier to arrange online. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sanganer",
+        "https://www.squareyards.com/sanganer-in-jaipur-overview-3106",
+        "https://en.wikipedia.org/wiki/Orange_Line_(Jaipur_Metro)"
+      ]
+    },
+    "pratap-nagar": {
+      "name": "Pratap Nagar",
+      "zone": "Mansarovar & Sanganer",
+      "type": "residential",
+      "about": "<p>Pratap Nagar is one of Jaipur's largest residential areas, lying on Tonk Road on the southern side of the city near Sanganer and the airport. Much of it was developed by the Rajasthan Housing Board in numbered sectors, with the Jaipur Development Authority also active here, and flats in housing board blocks and apartment complexes are the main home type. Haldighati Marg and Chetak Marg are among its internal roads.</p><p>The area is popular with students because colleges and coaching institutes are within reach. Housing board blocks usually allow a doorstep visit, while newer gated complexes register visitors at the gate, so share the tutor's name and the sector number in advance. Durgapura and Sanganer railway stations are the nearest rail links, and Haldighati Gate is among the planned stops on the metro's Orange Line, now under construction. Tonk Road is busy at peak hours, so allow some spare time for evening classes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Pratap_Nagar,_Jaipur",
+        "https://www.squareyards.com/pratap-nagar-in-jaipur-overview-3144",
+        "https://rhb.rajasthan.gov.in/content/dam/raj/udh/organizations/rajasthan-housing-board/pdf/E-Services/E-Auction/Pratap%20Nagar%20Details%2027.091.pdf",
+        "https://en.wikipedia.org/wiki/Orange_Line_(Jaipur_Metro)"
+      ]
+    },
+    "malviya-nagar": {
+      "name": "Malviya Nagar",
+      "zone": "Malviya Nagar, Jagatpura & Tonk Road",
+      "type": "mixed",
+      "about": "<p>Malviya Nagar is a busy, well-known part of south Jaipur, close to Durgapura, Jawahar Nagar, Jagatpura, Bajaj Nagar and Sanganer. It is known for wide roads, a popular local market, restaurants and shopping centres, and homes range from builder floors and apartments to villas and plotted houses. Jawahar Circle garden, on the main road to the airport, lies within the area.</p><p>Tonk Road and the main road to the airport both run close by, so tutors from Bapu Nagar, Durgapura and Jagatpura can reach Malviya Nagar without much difficulty outside peak hours. The market and restaurant roads fill up in the evening, so an earlier slot after school often works better. Builder floors usually mean a doorstep visit, while apartment complexes ask visitors to register at the gate. Gandhinagar and Durgapura railway stations are nearby, but there is no metro here yet. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Malviya_Nagar_(Rajasthan)",
+        "https://www.squareyards.com/malviya-nagar-in-jaipur-overview-4822",
+        "https://en.wikipedia.org/wiki/Jawahar_Circle"
+      ]
+    },
+    "jagatpura": {
+      "name": "Jagatpura",
+      "zone": "Malviya Nagar, Jagatpura & Tonk Road",
+      "type": "residential",
+      "about": "<p>Jagatpura is a mid-segment residential area in south Jaipur, near Malviya Nagar, Sitapura, Pratap Nagar and the airport. Apartments dominate the housing, with plotted colonies, independent houses and villa projects too, and many families live in gated complexes. The long Jagatpura flyover is a familiar landmark linking the area with the rest of the city.</p><p>Getor Jagatpura railway station serves the area, and Durgapura station is also within reach. Because gated complexes are common, families should register the tutor at the gate before the first class and share the tower and flat number. Tutors mostly come by scooter or car from Malviya Nagar, Pratap Nagar and nearby colonies, and for specialist subjects online classes widen the choice. Roads near the flyover get busy in the evening, so plan class timings with a margin. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Getor_Jagatpura_railway_station",
+        "https://www.squareyards.com/jagatpura-in-jaipur-overview-3101",
+        "https://www.99acres.com/jagatpura-jaipur-overview-piffid"
+      ]
+    },
+    "tonk-road": {
+      "name": "Tonk Road",
+      "zone": "Malviya Nagar, Jagatpura & Tonk Road",
+      "type": "mixed",
+      "about": "<p>Tonk Road is one of Jaipur's main arteries, part of National Highway 52, running south from the city centre past Gandhinagar railway station at Tonk Phatak, Bajaj Nagar, Durgapura and Pratap Nagar towards Sanganer and on to Tonk. Colonies along it mix independent houses, builder floors and apartment buildings, with offices, showrooms and shops on the main road itself.</p><p>For home tuition, the useful question is which side of Tonk Road the family lives on, because crossing the road at peak hours takes time, and a tutor already on the same side is often easier. Gandhinagar and Durgapura railway stations are close to the road, and the metro's Orange Line, now under construction, is planned along this north-south route with stops such as Gandhinagar Station and Durgapura. Apartment buildings usually register visitors at the gate, while houses allow doorstep visits. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/National_Highway_52_(India)",
+        "https://en.wikipedia.org/wiki/Gandhinagar_Jaipur_railway_station",
+        "https://en.wikipedia.org/wiki/Pratap_Nagar,_Jaipur",
+        "https://en.wikipedia.org/wiki/Orange_Line_(Jaipur_Metro)"
+      ]
+    },
+    "durgapura": {
+      "name": "Durgapura",
+      "zone": "Malviya Nagar, Jagatpura & Tonk Road",
+      "type": "residential",
+      "about": "<p>Durgapura is an organised residential area in south Jaipur, close to Tonk Road and near Malviya Nagar, the Gopalpura Bypass and Mansarovar. Homes are a mix of independent houses and apartment buildings, from traditional designs to modern flats, and the colony has parks and well-laid roads.</p><p>Durgapura railway station, on the North Western Railway, gives the area its own rail link, and Gandhinagar station is also nearby. Tonk Road and the airport road make it easy for tutors from Malviya Nagar, Bajaj Nagar and Pratap Nagar to reach. A Durgapura stop is also planned on the metro's Orange Line, now under construction. Independent houses mean a doorstep visit, while apartment buildings may ask the tutor to register at the gate. Tonk Road is busy at peak hours, so allow some spare time for evening classes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Durgapura_railway_station",
+        "https://www.squareyards.com/durgapura-in-jaipur-overview-3102",
+        "https://en.wikipedia.org/wiki/Orange_Line_(Jaipur_Metro)"
+      ]
+    }
+  },
+  "zone_facts": {
+    "C-Scheme, Bani Park & Vidhyadhar Nagar": [
+      {
+        "fact": "Civil Lines, Railway Station and Sindhi Camp are elevated Pink Line stations opened on 3 June 2015; the line connects Mansarovar with Jaipur Junction and the Sindhi Camp bus stand.",
+        "source": "https://en.wikipedia.org/wiki/Pink_Line_(Jaipur_Metro)"
+      },
+      {
+        "fact": "The Pink Line's underground extension from Chandpole to Badi Chaupar, under the old city, opened on 23 September 2020.",
+        "source": "https://en.wikipedia.org/wiki/Jaipur_Metro"
+      },
+      {
+        "fact": "Civil Lines metro station (code CLJP) stands on the elevated Ajmer Road stretch and serves the Civil Lines colony.",
+        "source": "https://en.wikipedia.org/wiki/Civil_Lines_metro_station_(Jaipur)"
+      },
+      {
+        "fact": "Lok Bhavan, the Governor's residence, was formed from two Civil Lines bungalows, Kothis No. 9 and 10, after 1 November 1956.",
+        "source": "https://en.wikipedia.org/wiki/Lok_Bhavan,_Jaipur"
+      },
+      {
+        "fact": "Vidhyadhar Nagar was planned as a satellite town for Jaipur, based on the 3 x 3 grid of the original walled city.",
+        "source": "https://www.ribaj.com/intelligence/vidhyadhar-nagar-india-balkrishna-vithaldas-doshi/"
+      },
+      {
+        "fact": "National Highway 52 runs through Sikar, Chomu, Jaipur, Tonk, Bundi and Kota; its northern approach to Jaipur is known locally as Sikar Road.",
+        "source": "https://en.wikipedia.org/wiki/National_Highway_52_(India)"
+      },
+      {
+        "fact": "The planned Orange Line includes stations at Todi Mod, Harmada, Vidhyadhar Nagar, Ambabari and Pani Pech in the north of the city.",
+        "source": "https://en.wikipedia.org/wiki/Orange_Line_(Jaipur_Metro)"
+      }
+    ],
+    "Raja Park, Jawahar Nagar & Bapu Nagar": [
+      {
+        "fact": "Gandhinagar Jaipur railway station (code GADJ) is in the Bajaj Nagar area, close to Tonk Road and the main road to the airport, and mainly serves the southern areas of the city.",
+        "source": "https://en.wikipedia.org/wiki/Gandhinagar_Jaipur_railway_station"
+      },
+      {
+        "fact": "Gandhinagar Jaipur is described as the first railway station in India run entirely by women.",
+        "source": "https://en.wikipedia.org/wiki/Gandhinagar_Jaipur_railway_station"
+      },
+      {
+        "fact": "Jawahar Nagar is divided into Sectors 1 to 5, and PIN code 302004 covers Jawahar Nagar with adjoining parts of Raja Park and Adarsh Nagar.",
+        "source": "https://www.99acres.com/jawahar-nagar-jaipur-overview-piffid"
+      },
+      {
+        "fact": "The planned Orange Line includes stops at Rambagh Circle and Gandhinagar Station on its north-south route.",
+        "source": "https://en.wikipedia.org/wiki/Orange_Line_(Jaipur_Metro)"
+      },
+      {
+        "fact": "Bapu Nagar sits between Tonk Road and C-Scheme, with PIN code 302015.",
+        "source": "https://www.99acres.com/bapu-nagar-jaipur-overview-piffid"
+      }
+    ],
+    "Vaishali Nagar & West Jaipur": [
+      {
+        "fact": "Vaishali Nagar is bounded by Queens Road to the east, the Delhi Bypass to the west, Ajmer Road to the south and Sirsi Road to the north.",
+        "source": "https://en.wikipedia.org/wiki/Vaishali_Nagar_(Jaipur)"
+      },
+      {
+        "fact": "Chitrakoot lies along Ajmer Road and is organised into 12 sectors, 10 mainly residential and 2 for commercial and social use.",
+        "source": "https://en.wikipedia.org/wiki/Chitrakoot_Colony"
+      },
+      {
+        "fact": "Mansarovar metro station, the western terminal of the Pink Line, is at Padmavati Colony, Nirman Nagar; it opened on 3 June 2015.",
+        "source": "https://en.wikipedia.org/wiki/Mansarovar_metro_station"
+      },
+      {
+        "fact": "Shyam Nagar and Vivek Vihar stations stand on New Sanganer Road and Ram Nagar station on Hawa Sadak in Sodala; all opened on 3 June 2015.",
+        "source": "https://en.wikipedia.org/wiki/Pink_Line_(Jaipur_Metro)"
+      },
+      {
+        "fact": "Ajmer Road is part of National Highway 48, which runs through Jaipur and Ajmer.",
+        "source": "https://en.wikipedia.org/wiki/National_Highway_48_(India)"
+      }
+    ],
+    "Mansarovar & Sanganer": [
+      {
+        "fact": "Mansarovar was planned by the Jaipur Development Authority and was described as Asia's largest colony until 2010.",
+        "source": "https://en.wikipedia.org/wiki/Mansarovar_(Jaipur)"
+      },
+      {
+        "fact": "Metro service reached Mansarovar on 3 June 2015 with the opening of the Pink Line.",
+        "source": "https://en.wikipedia.org/wiki/Mansarovar_(Jaipur)"
+      },
+      {
+        "fact": "The Jaipur Development Authority was set up under the Jaipur Development Authority Act, 1982.",
+        "source": "https://indiankanoon.org/doc/105378770/"
+      },
+      {
+        "fact": "Jaipur International Airport is located in Sanganer, which is known for textile printing and handmade paper.",
+        "source": "https://en.wikipedia.org/wiki/Sanganer"
+      },
+      {
+        "fact": "Pratap Nagar lies on Tonk Road and is an area of development for the Rajasthan Housing Board and the Jaipur Development Authority.",
+        "source": "https://en.wikipedia.org/wiki/Pratap_Nagar,_Jaipur"
+      },
+      {
+        "fact": "The foundation stone of Jaipur Metro Phase 2, a north-south corridor from Prahladpura to Todi Mod with 36 stations, was laid on 4 July 2026.",
+        "source": "https://telanganatoday.com/pm-modi-lays-foundation-stone-for-rs-13037-crore-jaipur-metro-phase-2-project"
+      },
+      {
+        "fact": "Planned Orange Line stops in this zone include Gopalpura, Jaipur Airport, Sanganer PS, Haldighati Gate and Sitapura.",
+        "source": "https://en.wikipedia.org/wiki/Orange_Line_(Jaipur_Metro)"
+      }
+    ],
+    "Malviya Nagar, Jagatpura & Tonk Road": [
+      {
+        "fact": "Malviya Nagar is in south Jaipur, close to Durgapura, Jawahar Nagar, Jagatpura and Sanganer.",
+        "source": "https://en.wikipedia.org/wiki/Malviya_Nagar_(Rajasthan)"
+      },
+      {
+        "fact": "Jawahar Circle is on the main road to the airport in Malviya Nagar, near the airport.",
+        "source": "https://en.wikipedia.org/wiki/Jawahar_Circle"
+      },
+      {
+        "fact": "Getor Jagatpura railway station (code GTJT) serves the Jagatpura area on the North Western Railway.",
+        "source": "https://en.wikipedia.org/wiki/Getor_Jagatpura_railway_station"
+      },
+      {
+        "fact": "Durgapura railway station (code DPA) is on the North Western Railway's Jaipur division.",
+        "source": "https://en.wikipedia.org/wiki/Durgapura_railway_station"
+      },
+      {
+        "fact": "Tonk Road is part of National Highway 52, which links Jaipur with Tonk, Bundi and Kota.",
+        "source": "https://en.wikipedia.org/wiki/National_Highway_52_(India)"
+      },
+      {
+        "fact": "The Orange Line, under construction with opening planned for September 2031, includes stops at Gandhinagar Station, Gopalpura and Durgapura along the Tonk Road side.",
+        "source": "https://en.wikipedia.org/wiki/Orange_Line_(Jaipur_Metro)"
+      }
+    ]
+  }
+}

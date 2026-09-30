@@ -83,6 +83,62 @@ class BlogGurgaonClusterTest extends TestCase
         'south-pune-tuition-guide',
     ];
 
+    private const INDORE = [
+        'home-tuition-fees-indore',
+        'vijay-nagar-and-east-indore-tuition-guide',
+        'central-and-south-indore-tuition-guide',
+    ];
+
+    private const CHANDIGARH = [
+        'home-tuition-fees-chandigarh',
+        'chandigarh-sectors-tuition-guide',
+        'mohali-and-panchkula-tuition-guide',
+    ];
+
+    private const JAIPUR = [
+        'home-tuition-fees-jaipur',
+        'central-and-north-jaipur-tuition-guide',
+        'south-and-west-jaipur-tuition-guide',
+    ];
+
+    private const LUCKNOW = [
+        'home-tuition-fees-lucknow',
+        'gomti-nagar-and-trans-gomti-tuition-guide',
+        'central-and-south-lucknow-tuition-guide',
+    ];
+
+    private const CHENNAI = [
+        'home-tuition-fees-chennai',
+        'south-chennai-tuition-guide',
+        'omr-and-ecr-tuition-guide',
+        'west-and-north-chennai-tuition-guide',
+    ];
+
+    private const AHMEDABAD = [
+        'home-tuition-fees-ahmedabad',
+        'west-ahmedabad-tuition-guide',
+        'east-ahmedabad-tuition-guide',
+    ];
+
+    private const KOLKATA = [
+        'home-tuition-fees-kolkata',
+        'south-kolkata-tuition-guide',
+        'salt-lake-and-new-town-tuition-guide',
+        'north-kolkata-and-howrah-tuition-guide',
+    ];
+
+    private const BHOPAL = [
+        'home-tuition-fees-bhopal',
+        'south-and-central-bhopal-tuition-guide',
+        'bhel-and-old-bhopal-tuition-guide',
+    ];
+
+    private const PATNA = [
+        'home-tuition-fees-patna',
+        'north-and-west-patna-tuition-guide',
+        'south-and-old-patna-tuition-guide',
+    ];
+
     private function migration(): object
     {
         return require database_path('migrations/seo/2026_09_29_120000_publish_gurgaon_guide_cluster.php');
@@ -90,7 +146,7 @@ class BlogGurgaonClusterTest extends TestCase
 
     public function test_every_post_has_its_files_and_follows_the_content_rules(): void
     {
-        foreach (array_merge(self::NEW, self::ROUND2, self::NOIDA, self::GREATER_NOIDA, self::GHAZIABAD, self::FARIDABAD, self::DELHI, self::MUMBAI, self::BENGALURU, self::HYDERABAD, self::PUNE, ['-ib-math-aaai-slhl', '-ib-physics-slhl-iaee']) as $slug) {
+        foreach (array_merge(self::NEW, self::ROUND2, self::NOIDA, self::GREATER_NOIDA, self::GHAZIABAD, self::FARIDABAD, self::DELHI, self::MUMBAI, self::BENGALURU, self::HYDERABAD, self::PUNE, self::INDORE, self::CHANDIGARH, self::JAIPUR, self::LUCKNOW, self::CHENNAI, self::AHMEDABAD, self::KOLKATA, self::BHOPAL, self::PATNA, ['-ib-math-aaai-slhl', '-ib-physics-slhl-iaee']) as $slug) {
             $html = (string) @file_get_contents(database_path("seo-content/blog/$slug.html"));
             $meta = json_decode((string) @file_get_contents(database_path("seo-content/blog/$slug.json")), true) ?: [];
 
@@ -108,7 +164,7 @@ class BlogGurgaonClusterTest extends TestCase
             $this->assertDoesNotMatchRegularExpression('/\b\d[\d,]*\+?\s+verified tutors\b/i', $text, $slug);
             $this->assertDoesNotMatchRegularExpression('/<(h1|script|img|style)\b/i', $html, $slug);
         }
-        foreach (array_merge(self::NEW, self::ROUND2, self::NOIDA, self::GREATER_NOIDA, self::GHAZIABAD, self::FARIDABAD, self::DELHI, self::MUMBAI, self::BENGALURU, self::HYDERABAD, self::PUNE) as $slug) {
+        foreach (array_merge(self::NEW, self::ROUND2, self::NOIDA, self::GREATER_NOIDA, self::GHAZIABAD, self::FARIDABAD, self::DELHI, self::MUMBAI, self::BENGALURU, self::HYDERABAD, self::PUNE, self::INDORE, self::CHANDIGARH, self::JAIPUR, self::LUCKNOW, self::CHENNAI, self::AHMEDABAD, self::KOLKATA, self::BHOPAL, self::PATNA) as $slug) {
             $this->assertFileExists(public_path("storage/blog/$slug.jpg"));
         }
     }

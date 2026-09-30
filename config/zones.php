@@ -396,4 +396,239 @@ return [
             'names' => ['katraj', 'bibwewadi', 'dhankawadi', 'sinhagad road'],
         ],
     ],
+    // Indore (1 Oct 2026), from database/seo-content/areas/indore-research.json.
+    'Indore' => [
+        'Vijay Nagar & AB Road' => [
+            'sectors' => [],
+            'names' => ['vijay nagar', 'scheme no 54', 'scheme no 74', 'scheme no 78', 'scheme no 114', 'sukhliya', 'super corridor'],
+        ],
+        'Palasia & Central Indore' => [
+            'sectors' => [],
+            'names' => ['old palasia', 'new palasia', 'race course road', 'manorama ganj', 'geeta bhawan', 'lig colony', 'saket nagar', 'tilak nagar'],
+        ],
+        'Nipania, Bicholi & Ring Road' => [
+            'sectors' => [],
+            'names' => ['nipania', 'mahalaxmi nagar', 'bicholi mardana', 'scheme no 140', 'pipliyahana', 'scheme no 94', 'khajrana', 'kanadia road'],
+        ],
+        'Bhawarkua, Rajendra Nagar & Rau' => [
+            'sectors' => [],
+            'names' => ['bhawarkua', 'sapna sangeeta road', 'navlakha', 'sudama nagar', 'rajendra nagar', 'bijalpur', 'rau', 'silicon city'],
+        ],
+    ],
+    // Chandigarh (1 Oct 2026), from database/seo-content/areas/chandigarh-research.json.
+    'Chandigarh' => [
+        'Panchkula & Zirakpur' => [
+            'sectors' => [],
+            'names' => ['panchkula', 'mansa devi complex panchkula', 'zirakpur'],
+        ],
+        'Chandigarh Sectors 1–30' => [
+            'sectors' => [],
+            'names' => ['sector 8', 'sector 9', 'sector 10', 'sector 11', 'sector 15', 'sector 16', 'sector 18', 'sector 19', 'sector 21', 'sector 22', 'sector 27'],
+        ],
+        'Chandigarh Sectors 31–56 & Manimajra' => [
+            'sectors' => [],
+            'names' => ['sector 33', 'sector 35', 'sector 36', 'sector 38', 'sector 40', 'sector 44', 'sector 46', 'sector 49', 'manimajra'],
+        ],
+        'Mohali' => [
+            'sectors' => [],
+            'names' => ['mohali', 'aerocity mohali', 'sas nagar'],
+        ],
+    ],
+    // Jaipur (1 Oct 2026), from database/seo-content/areas/jaipur-research.json.
+    'Jaipur' => [
+        'C-Scheme, Bani Park & Vidhyadhar Nagar' => [
+            'sectors' => [],
+            'names' => ['c scheme', 'civil lines', 'bani park', 'shastri nagar', 'vidhyadhar nagar', 'jhotwara', 'sikar road'],
+        ],
+        'Raja Park, Jawahar Nagar & Bapu Nagar' => [
+            'sectors' => [],
+            'names' => ['raja park', 'jawahar nagar', 'adarsh nagar', 'tilak nagar', 'bapu nagar', 'bajaj nagar'],
+        ],
+        'Vaishali Nagar & West Jaipur' => [
+            'sectors' => [],
+            'names' => ['vaishali nagar', 'chitrakoot', 'nirman nagar', 'shyam nagar', 'sodala', 'ajmer road'],
+        ],
+        'Mansarovar & Sanganer' => [
+            'sectors' => [],
+            'names' => ['mansarovar', 'gopalpura bypass', 'sanganer', 'pratap nagar'],
+        ],
+        'Malviya Nagar, Jagatpura & Tonk Road' => [
+            'sectors' => [],
+            'names' => ['malviya nagar', 'jagatpura', 'tonk road', 'durgapura'],
+        ],
+    ],
+    // Lucknow (1 Oct 2026), from database/seo-content/areas/lucknow-research.json.
+    'Lucknow' => [
+        'Gomti Nagar, Indira Nagar & Chinhat' => [
+            'sectors' => [],
+            'names' => ['gomti nagar', 'gomti nagar extension', 'indira nagar', 'chinhat'],
+        ],
+        'Mahanagar, Aliganj & Jankipuram' => [
+            'sectors' => [],
+            'names' => ['mahanagar', 'nishatganj', 'nirala nagar', 'kapoorthala', 'aliganj', 'vikas nagar', 'jankipuram', 'jankipuram extension jankipuram vistar', 'jankipuram vistar'],
+        ],
+        'Hazratganj, Lalbagh & Aminabad' => [
+            'sectors' => [],
+            'names' => ['hazratganj', 'lalbagh', 'aminabad', 'aishbagh', 'chowk', 'rajendra nagar'],
+        ],
+        'Alambagh, Ashiyana & Rajajipuram' => [
+            'sectors' => [],
+            'names' => ['alambagh', 'ashiyana', 'rajajipuram', 'lda colony kanpur road scheme', 'krishna nagar', 'sarojini nagar'],
+        ],
+        'Sushant Golf City, Vrindavan Yojana & Telibagh' => [
+            'sectors' => [],
+            'names' => ['sushant golf city', 'vrindavan yojana', 'telibagh'],
+        ],
+    ],
+    // Chennai (1 Oct 2026), from database/seo-content/areas/chennai-research.json.
+    'Chennai' => [
+        'Adyar, Besant Nagar & Mylapore' => [
+            'sectors' => [],
+            'names' => ['adyar', 'besant nagar', 'thiruvanmiyur', 'mylapore', 'alwarpet'],
+        ],
+        'T Nagar, Nungambakkam & Kodambakkam' => [
+            'sectors' => [],
+            'names' => ['t nagar', 'nungambakkam', 'kodambakkam', 'west mambalam', 'saidapet'],
+        ],
+        'Velachery, Guindy & Tambaram' => [
+            'sectors' => [],
+            'names' => ['guindy', 'velachery', 'madipakkam', 'nanganallur', 'pallikaranai', 'medavakkam', 'chromepet', 'tambaram'],
+        ],
+        'OMR & ECR' => [
+            'sectors' => [],
+            'names' => ['perungudi', 'thoraipakkam', 'sholinganallur', 'navalur', 'kelambakkam', 'neelankarai', 'omr', 'ecr', 'karapakkam'],
+        ],
+        'Anna Nagar, Kilpauk & Aminjikarai' => [
+            'sectors' => [],
+            'names' => ['anna nagar', 'anna nagar west', 'shenoy nagar', 'kilpauk', 'aminjikarai', 'arumbakkam', 'purasawalkam'],
+        ],
+        'Vadapalani, KK Nagar & Porur' => [
+            'sectors' => [],
+            'names' => ['vadapalani', 'kk nagar', 'ashok nagar', 'virugambakkam', 'valasaravakkam', 'porur'],
+        ],
+        'Mogappair, Ambattur & Avadi' => [
+            'sectors' => [],
+            'names' => ['mogappair', 'ambattur', 'avadi'],
+        ],
+        'Perambur, Kolathur & North Chennai' => [
+            'sectors' => [],
+            'names' => ['perambur', 'villivakkam', 'kolathur', 'royapuram', 'tondiarpet'],
+        ],
+    ],
+    // Ahmedabad (1 Oct 2026), from database/seo-content/areas/ahmedabad-research.json.
+    'Ahmedabad' => [
+        'Navrangpura, Paldi & Ellisbridge' => [
+            'sectors' => [],
+            'names' => ['navrangpura', 'ellisbridge', 'paldi', 'ambawadi', 'vasna'],
+        ],
+        'Satellite, Vastrapur & Bodakdev' => [
+            'sectors' => [],
+            'names' => ['satellite', 'jodhpur', 'vastrapur', 'bodakdev', 'thaltej', 'memnagar'],
+        ],
+        'Prahlad Nagar, Bopal & Shela' => [
+            'sectors' => [],
+            'names' => ['prahlad nagar', 'bopal', 'south bopal', 'shela'],
+        ],
+        'Naranpura, Gota & Chandkheda' => [
+            'sectors' => [],
+            'names' => ['naranpura', 'ghatlodia', 'gota', 'chandkheda', 'sabarmati'],
+        ],
+        'Maninagar, Isanpur & Kankaria' => [
+            'sectors' => [],
+            'names' => ['maninagar', 'kankaria', 'khokhra', 'isanpur', 'ghodasar'],
+        ],
+        'Nikol, Naroda & Bapunagar' => [
+            'sectors' => [],
+            'names' => ['nikol', 'naroda', 'bapunagar', 'vastral', 'odhav', 'amraiwadi'],
+        ],
+        'Shahibaug, Asarwa & Meghaninagar' => [
+            'sectors' => [],
+            'names' => ['shahibaug', 'asarwa', 'meghaninagar'],
+        ],
+    ],
+    // Kolkata (1 Oct 2026), from database/seo-content/areas/kolkata-research.json.
+    'Kolkata' => [
+        'Behala & New Alipore' => [
+            'sectors' => [],
+            'names' => ['behala', 'new alipore', 'thakurpukur'],
+        ],
+        'Ballygunge, Gariahat & Alipore' => [
+            'sectors' => [],
+            'names' => ['ballygunge', 'bhowanipore', 'kalighat', 'alipore', 'dhakuria', 'jodhpur park', 'lake gardens', 'gariahat', 'elgin'],
+        ],
+        'Tollygunge, Jadavpur & Garia' => [
+            'sectors' => [],
+            'names' => ['tollygunge', 'golf green', 'regent park', 'jadavpur', 'bansdroni', 'naktala', 'baghajatin', 'garia'],
+        ],
+        'Kasba & EM Bypass South' => [
+            'sectors' => [],
+            'names' => ['kasba', 'santoshpur', 'mukundapur', 'patuli'],
+        ],
+        'Salt Lake' => [
+            'sectors' => [],
+            'names' => ['salt lake', 'bidhannagar'],
+        ],
+        'New Town & Rajarhat' => [
+            'sectors' => [],
+            'names' => ['new town action area i', 'new town action area ii', 'new town action area iii', 'rajarhat chinar park teghoria', 'new town', 'newtown'],
+        ],
+        'Lake Town, Dum Dum & Baguiati' => [
+            'sectors' => [],
+            'names' => ['lake town', 'bangur avenue', 'kestopur', 'baguiati', 'dum dum incl nagerbazar'],
+        ],
+        'North Kolkata' => [
+            'sectors' => [],
+            'names' => ['shyambazar', 'bagbazar', 'sovabazar', 'maniktala', 'belgachia', 'sinthee'],
+        ],
+        'Howrah' => [
+            'sectors' => [],
+            'names' => ['shibpur', 'salkia', 'santragachi', 'howrah'],
+        ],
+    ],
+    // Bhopal (1 Oct 2026), from database/seo-content/areas/bhopal-research.json.
+    'Bhopal' => [
+        'Arera Colony, Shahpura & Kolar Road' => [
+            'sectors' => [],
+            'names' => ['arera colony', 'shahpura', 'kolar road', 'chuna bhatti', 'bawadiya kalan'],
+        ],
+        'MP Nagar, TT Nagar & Shivaji Nagar' => [
+            'sectors' => [],
+            'names' => ['mp nagar', 'tt nagar', 'shivaji nagar', 'tulsi nagar', 'jahangirabad'],
+        ],
+        'Hoshangabad Road, Misrod & Katara Hills' => [
+            'sectors' => [],
+            'names' => ['hoshangabad road', 'misrod', 'katara hills', 'bagmugaliya'],
+        ],
+        'BHEL, Awadhpuri & Ayodhya Bypass' => [
+            'sectors' => [],
+            'names' => ['piplani', 'govindpura', 'indrapuri', 'awadhpuri', 'ayodhya bypass', 'saket nagar', 'bhel'],
+        ],
+        'Old City, Lalghati & Bairagarh' => [
+            'sectors' => [],
+            'names' => ['old city', 'idgah hills', 'kohefiza', 'lalghati', 'bairagarh'],
+        ],
+    ],
+    // Patna (1 Oct 2026), from database/seo-content/areas/patna-research.json.
+    'Patna' => [
+        'Boring Road & Patliputra' => [
+            'sectors' => [],
+            'names' => ['boring road', 'sri krishna puri', 'boring canal road', 'kidwaipuri', 'patliputra colony', 'digha', 'shastri nagar', 'shivpuri'],
+        ],
+        'Bailey Road & Danapur' => [
+            'sectors' => [],
+            'names' => ['bailey road', 'raja bazar', 'rukanpura', 'saguna more', 'danapur', 'khagaul'],
+        ],
+        'Kankarbagh & Rajendra Nagar' => [
+            'sectors' => [],
+            'names' => ['kankarbagh', 'rajendra nagar', 'kadamkuan', 'bhootnath road'],
+        ],
+        'Gandhi Maidan, Ashok Rajpath & Old Patna' => [
+            'sectors' => [],
+            'names' => ['bankipur and gandhi maidan', 'ashok rajpath', 'patna city old city', 'gandhi maidan', 'bankipore'],
+        ],
+        'Anisabad, Gardanibagh & Phulwari' => [
+            'sectors' => [],
+            'names' => ['anisabad', 'gardanibagh', 'phulwari sharif'],
+        ],
+    ],
 ];

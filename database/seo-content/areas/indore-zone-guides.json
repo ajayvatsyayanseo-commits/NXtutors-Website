@@ -1,0 +1,46 @@
+{
+  "Vijay Nagar & AB Road": {
+    "intro": [
+      "Vijay Nagar, Scheme 54, Scheme 74, Scheme 78, Scheme 114, Sukhliya and the Super Corridor make up Indore's planned north-east. Vijay Nagar, developed by the Indore Development Authority between MR-9, MR-10 and the Eastern Ring Road, is now a commercial hub as well as a suburb. The numbered IDA schemes around it mix plotted independent houses, IDA housing and apartment buildings, while Sukhliya grew from a rural area into colonies of plotted homes.",
+      "This is the only part of Indore the metro serves so far. The Yellow Line's first five stations, along the Super Corridor, opened on 31 May 2025, and regular service on the next eleven, from Super Corridor 2 to Malviya Nagar Chauraha, began on 6 September 2026, with stops at MR 10 Road, ISBT, Hira Nagar, Meghdoot Garden and Vijay Nagar Chauraha. Townships along the Super Corridor are still filling up, so many tutors travel out from Vijay Nagar or Sukhliya."
+    ],
+    "tips": [
+      "Name the nearest Yellow Line station when you send a request: Vijay Nagar Chauraha or Meghdoot Garden for the schemes, Hira Nagar or MR 10 Road for Sukhliya, and the Super Corridor stations for the townships.",
+      "In the IDA schemes, give the scheme, sector and plot number with a map pin; in a Super Corridor township, add the tutor's name to the gate register before the demo.",
+      "The squares around Vijay Nagar get crowded in the evening shopping hours, so ask for a slot that starts before that rush rather than one that ends in it."
+    ]
+  },
+  "Palasia & Central Indore": {
+    "intro": [
+      "Old Palasia, New Palasia, Race Course Road, Manorama Ganj, Geeta Bhawan, LIG Colony, Saket Nagar and Tilak Nagar form the settled centre of Indore along and around AB Road. AB Road separates Old and New Palasia, where houses and apartment buildings sit among clinics, shops and offices. Geeta Bhawan combines IDA flats, cooperative housing societies and private houses, LIG Colony runs in lettered IDA sectors, and Manorama Ganj is known for its quiet, green lanes.",
+      "Palasia is also an education hub full of coaching institutes, which shapes what families here ask for: a tutor who supports school work alongside coaching. No metro station is open in this zone yet; the Yellow Line is planned to continue through Bengali Square, Patrakar Colony and an underground station at Palasia Square towards the railway station. The old BRTS lanes on AB Road have been dismantled, so tutors arrive by city bus, auto or two-wheeler."
+    ],
+    "tips": [
+      "Parking near Palasia and Geeta Bhawan squares is tight in the evening, so a tutor who comes by auto or two-wheeler is often easier to keep than one who drives.",
+      "If the student already attends coaching in Palasia, share that timetable in the request, so the tutor's slot sits before or after coaching rather than squeezed between.",
+      "In the IDA sectors of LIG Colony and in private houses the tutor comes straight to the door; in Geeta Bhawan's societies and larger apartment buildings, put the name on the register first."
+    ]
+  },
+  "Nipania, Bicholi & Ring Road": {
+    "intro": [
+      "Nipania, Mahalaxmi Nagar, Khajrana, Scheme 94, Scheme 140, Pipliyahana, Kanadia Road and Bicholi Mardana follow the six-lane Ring Road round the east of Indore. Mahalaxmi Nagar has become a cluster of high-rise buildings since the 2000s, and Nipania is filling with apartment societies and gated projects. Khajrana is older, with lanes around its Ganesh temple, while the IDA schemes, Pipliyahana and Kanadia Road are planned layouts of plots, houses and apartment buildings.",
+      "The Ring Road, built by the Indore Development Authority, links the zone through junctions at Mahalaxmi, Malviya Nagar, Khajrana Ganesh Temple, Bengali Square and World Cup Square, with flyovers at Bengali Square, World Cup Square and Teen Imli Square. Malviya Nagar Chauraha is the eastern end of the working Yellow Line; Mumtaj Bag Colony, Khajrana Square, Bengali Square and Patrakar Colony are approved stations that have not opened. Bicholi Mardana, near the bypass, is still developing."
+    ],
+    "tips": [
+      "For Mahalaxmi Nagar and Nipania, a tutor on the metro can come to Malviya Nagar Chauraha and finish by auto; elsewhere in the zone, look for someone who already works along the Ring Road.",
+      "Ring Road junctions crowd at office closing time, and Khajrana's temple junction is busy on festival days and weekends, so fix weekday slots either side of those peaks.",
+      "In Bicholi Mardana and the newer parts of Kanadia Road, fewer tutors live close by, so pair a tutor from Pipliyahana or Bengali Square with online sessions for specialist subjects."
+    ]
+  },
+  "Bhawarkua, Rajendra Nagar & Rau": {
+    "intro": [
+      "Bhawarkua, Navlakha, Sapna Sangeeta Road, Sudama Nagar, Rajendra Nagar, Bijalpur, Rau and Silicon City run south-west from the centre along AB Road. Bhawarkua, on AB Road and the Ujjain to Khandwa road, has hosted university campuses since the 1950s and is a busy student hub with coaching institutes and hostels. Navlakha is known for its temple and long-distance bus stand, while Sudama Nagar and Rajendra Nagar are mainly independent houses on quieter, greener roads.",
+      "Further out, Bijalpur has grown from farmland into mid-income apartments and houses, and Rau, a nagar panchayat on AB Road between Rajendra Nagar and Mhow, is where the Pithampur road branches off; Silicon City is its newer residential quarter. There is no metro here. Rajendra Nagar and Rau stations are on the Akola to Ratlam line, Saifee Nagar is the halt nearest Bhawarkua, and city buses run along AB Road through the day."
+    ],
+    "tips": [
+      "Around Bhawarkua the roads stay crowded with students for most of the day, so an early evening or later slot is steadier, and a landmark helps the tutor find the house.",
+      "In Rau and Silicon City fewer tutors live locally, so expect one from Rajendra Nagar or Bijalpur, and register their name at the gate of any newer gated project.",
+      "AB Road towards Rau gets heavier at school and office closing times; setting the class a little later in the evening keeps it on time week after week."
+    ]
+  }
+}

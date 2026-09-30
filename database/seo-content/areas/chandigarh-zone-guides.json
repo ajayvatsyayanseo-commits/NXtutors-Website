@@ -1,0 +1,46 @@
+{
+  "Chandigarh Sectors 1–30": {
+    "intro": [
+      "Sectors 1 to 30 are Chandigarh's first phase, laid out as low-rise plotted neighbourhoods around Sector 17, the central business district. Sector 22 was the first to be built, Sector 1 holds the Capitol Complex and Sukhna Lake, and the top row of Sectors 8, 9 and 10 is mostly independent houses, bungalows and government residences. Sector 15 sits beside the university campus in Sector 14, with paying-guest homes among family houses.",
+      "Getting around depends on the grid's main roads, called Margs: Madhya Marg, Jan Marg, Dakshin Marg and Himalaya Marg, with Paths such as Sarovar Path and Sukhna Path around the sectors. The inter-state bus terminal in Sector 17 serves Sectors 16, 18, 21 and 22. Most homes open straight onto the street, though builder floors in Sectors 11, 21 and 27 share one entrance between several families."
+    ],
+    "tips": [
+      "Send the sector, the block letter, the house number and, for a builder floor, which bell to ring; no gate register is usually involved in these sectors.",
+      "Set evening lessons to start before the return rush on Madhya Marg and Dakshin Marg, especially if the tutor is coming from Panchkula, Mohali or Zirakpur.",
+      "Near the Sector 16 stadium, the Sector 22 street market or Sadar Bazaar in 19-C, agree a parking spot at the first visit, or pick a tutor who comes by bus and auto."
+    ]
+  },
+  "Chandigarh Sectors 31–56 & Manimajra": {
+    "intro": [
+      "The second-phase sectors south of Dakshin Marg were built at nearly four times the density of the north, with four-storey apartments for government employees in Sectors 31 to 47. Chandigarh Housing Board blocks run through Sectors 38 to 41, 44 to 47, 51, 52 and 55, while the cooperative group housing societies of Sectors 48 to 51 brought apartment living to the city. Houses and floors remain in Sectors 33, 35, 36 and 46.",
+      "Manimajra, an old town with a fort from the early sixteenth century, was notified as Sector 13 in February 2020 and now mixes old lanes with planned complexes and an IT park. It sits at Housing Board Chowk, the key junction of the Panchkula commute on Madhya Marg. The Sector 43 inter-state bus terminal serves the south-western sectors, and Chandigarh Junction railway station lies on the eastern side."
+    ],
+    "tips": [
+      "For housing-board flats in Sectors 38, 40, 44 or 46, share the sub-sector, block and flat number; numbering such as 44-A, 44-C and 44-D confuses first-time visitors.",
+      "In the Sector 49 societies, give the guard the tutor's name before the demo so later visits go through without a stop at the gate.",
+      "In Manimajra, avoid lesson times when Housing Board Chowk is at its busiest, and agree where the tutor can park in the narrow old-town lanes."
+    ]
+  },
+  "Mohali": {
+    "intro": [
+      "Mohali, officially Sahibzada Ajit Singh Nagar, grew from an industrial estate started in 1967, and its township was founded on 1 November 1975. It continues Chandigarh's grid on the Punjab side, but its first eleven sectors are called phases, so Phase 5 is Sector 59, Phase 7 is Sector 61 and Phase 10 is Sector 64. The early phases are mostly independent houses and villas; Phase 10 and Sector 70 add apartment complexes.",
+      "The Greater Mohali master plan reaches Sector 128 and includes Aerocity, a newer township of plots beside the international airport, and IT City in Sectors 82, 82A and 83A. There is no metro. SAS Nagar Mohali railway station lies on the direct Chandigarh–Ludhiana line, National Highway 5 runs through Kharar and Mohali into Chandigarh, and Airport Road links Aerocity with Mohali's older phases and Zirakpur."
+    ],
+    "tips": [
+      "Phase 7 borders Chandigarh's Sector 52, so for Phases 3B2, 5 and 7 a tutor from Chandigarh's southern sectors is as practical as one from Mohali.",
+      "In Phase 10 and Sector 70 apartment complexes, register the tutor's name at the gate; houses and floors in the same sectors are reached at the door.",
+      "Aerocity has fewer tutors living inside it so far, so consider tutors from the phases or Zirakpur, and plan around match days near the Phase 9 stadiums."
+    ]
+  },
+  "Panchkula & Zirakpur": {
+    "intro": [
+      "Panchkula was planned by Haryana in the 1970s on a sector system like Chandigarh's. Sectors 8 and 15 are largely plotted houses and builder floors, with Sector 15 running its own full market. Mansa Devi Complex spreads over Sectors 4, 5 and 6 and takes its name from the Mata Mansa Devi temple, which draws large crowds during Navratra. Chandimandir Cantonment, headquarters of the Army's Western Command, lies in the north.",
+      "Zirakpur belongs to Mohali district in Punjab but works as Panchkula's southern neighbour: Peer Muchalla adjoins Panchkula's Sectors 20 and 21. It grew from villages such as Baltana and Dhakoli into a town of gated societies at the junction of the highways to Shimla, Ambala and Patiala. National Highway 5 enters Haryana here, and the redeveloped Chandigarh Junction has a station building on the Panchkula side."
+    ],
+    "tips": [
+      "Panchkula Sector 20 and most of Zirakpur are gated societies, so register the tutor at the gate once and check where visitors can park inside.",
+      "Tutors crossing between Panchkula and Chandigarh use Madhya Marg and Housing Board Chowk, so set evening lessons before the office rush or choose a tutor from your own side.",
+      "In Mansa Devi Complex, move lessons earlier in the day or online during Navratra weeks, when temple crowds fill the roads around the sectors."
+    ]
+  }
+}

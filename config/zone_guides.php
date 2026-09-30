@@ -1088,4 +1088,655 @@ return [
             ],
         ],
     ],
+    // Chandigarh (1 Oct 2026), from database/seo-content/areas/chandigarh-zone-guides.json.
+    'Chandigarh' => [
+        'Chandigarh Sectors 1–30' => [
+            'guide' => 'chandigarh-sectors-tuition-guide',
+            'intro' => [
+                'Sectors 1 to 30 are Chandigarh\'s first phase, laid out as low-rise plotted neighbourhoods around Sector 17, the central business district. Sector 22 was the first to be built, Sector 1 holds the Capitol Complex and Sukhna Lake, and the top row of Sectors 8, 9 and 10 is mostly independent houses, bungalows and government residences. Sector 15 sits beside the university campus in Sector 14, with paying-guest homes among family houses.',
+                'Getting around depends on the grid\'s main roads, called Margs: Madhya Marg, Jan Marg, Dakshin Marg and Himalaya Marg, with Paths such as Sarovar Path and Sukhna Path around the sectors. The inter-state bus terminal in Sector 17 serves Sectors 16, 18, 21 and 22. Most homes open straight onto the street, though builder floors in Sectors 11, 21 and 27 share one entrance between several families.',
+            ],
+            'tips' => [
+                'Send the sector, the block letter, the house number and, for a builder floor, which bell to ring; no gate register is usually involved in these sectors.',
+                'Set evening lessons to start before the return rush on Madhya Marg and Dakshin Marg, especially if the tutor is coming from Panchkula, Mohali or Zirakpur.',
+                'Near the Sector 16 stadium, the Sector 22 street market or Sadar Bazaar in 19-C, agree a parking spot at the first visit, or pick a tutor who comes by bus and auto.',
+            ],
+        ],
+        'Chandigarh Sectors 31–56 & Manimajra' => [
+            'guide' => 'chandigarh-sectors-tuition-guide',
+            'intro' => [
+                'The second-phase sectors south of Dakshin Marg were built at nearly four times the density of the north, with four-storey apartments for government employees in Sectors 31 to 47. Chandigarh Housing Board blocks run through Sectors 38 to 41, 44 to 47, 51, 52 and 55, while the cooperative group housing societies of Sectors 48 to 51 brought apartment living to the city. Houses and floors remain in Sectors 33, 35, 36 and 46.',
+                'Manimajra, an old town with a fort from the early sixteenth century, was notified as Sector 13 in February 2020 and now mixes old lanes with planned complexes and an IT park. It sits at Housing Board Chowk, the key junction of the Panchkula commute on Madhya Marg. The Sector 43 inter-state bus terminal serves the south-western sectors, and Chandigarh Junction railway station lies on the eastern side.',
+            ],
+            'tips' => [
+                'For housing-board flats in Sectors 38, 40, 44 or 46, share the sub-sector, block and flat number; numbering such as 44-A, 44-C and 44-D confuses first-time visitors.',
+                'In the Sector 49 societies, give the guard the tutor\'s name before the demo so later visits go through without a stop at the gate.',
+                'In Manimajra, avoid lesson times when Housing Board Chowk is at its busiest, and agree where the tutor can park in the narrow old-town lanes.',
+            ],
+        ],
+        'Mohali' => [
+            'guide' => 'mohali-and-panchkula-tuition-guide',
+            'intro' => [
+                'Mohali, officially Sahibzada Ajit Singh Nagar, grew from an industrial estate started in 1967, and its township was founded on 1 November 1975. It continues Chandigarh\'s grid on the Punjab side, but its first eleven sectors are called phases, so Phase 5 is Sector 59, Phase 7 is Sector 61 and Phase 10 is Sector 64. The early phases are mostly independent houses and villas; Phase 10 and Sector 70 add apartment complexes.',
+                'The Greater Mohali master plan reaches Sector 128 and includes Aerocity, a newer township of plots beside the international airport, and IT City in Sectors 82, 82A and 83A. There is no metro. SAS Nagar Mohali railway station lies on the direct Chandigarh–Ludhiana line, National Highway 5 runs through Kharar and Mohali into Chandigarh, and Airport Road links Aerocity with Mohali\'s older phases and Zirakpur.',
+            ],
+            'tips' => [
+                'Phase 7 borders Chandigarh\'s Sector 52, so for Phases 3B2, 5 and 7 a tutor from Chandigarh\'s southern sectors is as practical as one from Mohali.',
+                'In Phase 10 and Sector 70 apartment complexes, register the tutor\'s name at the gate; houses and floors in the same sectors are reached at the door.',
+                'Aerocity has fewer tutors living inside it so far, so consider tutors from the phases or Zirakpur, and plan around match days near the Phase 9 stadiums.',
+            ],
+        ],
+        'Panchkula & Zirakpur' => [
+            'guide' => 'mohali-and-panchkula-tuition-guide',
+            'intro' => [
+                'Panchkula was planned by Haryana in the 1970s on a sector system like Chandigarh\'s. Sectors 8 and 15 are largely plotted houses and builder floors, with Sector 15 running its own full market. Mansa Devi Complex spreads over Sectors 4, 5 and 6 and takes its name from the Mata Mansa Devi temple, which draws large crowds during Navratra. Chandimandir Cantonment, headquarters of the Army\'s Western Command, lies in the north.',
+                'Zirakpur belongs to Mohali district in Punjab but works as Panchkula\'s southern neighbour: Peer Muchalla adjoins Panchkula\'s Sectors 20 and 21. It grew from villages such as Baltana and Dhakoli into a town of gated societies at the junction of the highways to Shimla, Ambala and Patiala. National Highway 5 enters Haryana here, and the redeveloped Chandigarh Junction has a station building on the Panchkula side.',
+            ],
+            'tips' => [
+                'Panchkula Sector 20 and most of Zirakpur are gated societies, so register the tutor at the gate once and check where visitors can park inside.',
+                'Tutors crossing between Panchkula and Chandigarh use Madhya Marg and Housing Board Chowk, so set evening lessons before the office rush or choose a tutor from your own side.',
+                'In Mansa Devi Complex, move lessons earlier in the day or online during Navratra weeks, when temple crowds fill the roads around the sectors.',
+            ],
+        ],
+    ],
+    // Jaipur (1 Oct 2026), from database/seo-content/areas/jaipur-zone-guides.json.
+    'Jaipur' => [
+        'C-Scheme, Bani Park & Vidhyadhar Nagar' => [
+            'guide' => 'central-and-north-jaipur-tuition-guide',
+            'intro' => [
+                'C-Scheme, Civil Lines, Bani Park, Shastri Nagar, Vidhyadhar Nagar, Jhotwara and Sikar Road make up central and north Jaipur. C-Scheme is the business district, with apartment buildings and older bungalows between offices and hotels, and Civil Lines keeps large government bungalows on wide avenues. Bani Park is mostly independent houses near the railway station, while Vidhyadhar Nagar was planned as a satellite town on the walled city\'s grid, in numbered sectors along a central spine.',
+                'Only the southern edge has a metro. Civil Lines, Railway Station and Sindhi Camp are elevated Pink Line stations, open since 3 June 2015. North of them, Shastri Nagar, Vidhyadhar Nagar, Jhotwara and the Sikar Road corridor on National Highway 52 depend on roads, and tutors mostly come by scooter or auto. The planned Orange Line lists stops at Pani Pech, Ambabari, Vidhyadhar Nagar, Harmada and Todi Mod, but it is not open yet.',
+            ],
+            'tips' => [
+                'In C-Scheme apartment buildings, give security the tutor\'s name and the lesson time before the first visit; in Bani Park and Vidhyadhar Nagar houses, the tutor usually comes straight to the door.',
+                'Give the sector number with every Vidhyadhar Nagar address, and on Sikar Road say which end of the corridor you live on, since that decides which tutors can reach you.',
+                'Parking in C-Scheme is scarce in office hours and roads near the station fill up in the evening, so weekend mornings or slightly later evening slots are easier for a visiting tutor.',
+            ],
+        ],
+        'Raja Park, Jawahar Nagar & Bapu Nagar' => [
+            'guide' => 'central-and-north-jaipur-tuition-guide',
+            'intro' => [
+                'Raja Park, Jawahar Nagar, Adarsh Nagar, Tilak Nagar, Bapu Nagar and Bajaj Nagar are established localities just outside the walled city, east and south-east of C-Scheme. Jawahar Nagar runs in Sectors 1 to 5 of independent homes on leafy streets, Raja Park pairs a busy market road with builder floors behind it, Tilak Nagar near the Moti Doongri temple has newer apartment projects, and Bapu Nagar sits between Tonk Road and C-Scheme with bungalows beside apartment blocks.',
+                'No metro station lies inside this zone, so tutors travel by scooter, car or auto, and one who already lives here is worth asking for. Gandhinagar Jaipur railway station, in the Bajaj Nagar area and known as a station run entirely by women, mainly serves the southern side of the city. The planned Orange Line lists stops at Rambagh Circle and Gandhinagar Station. Most homes are houses or builder floors, so visits rarely involve a gate desk.',
+            ],
+            'tips' => [
+                'Include the sector number with a Jawahar Nagar address, and in Raja Park or Bajaj Nagar share a landmark on your inner lane rather than the market road.',
+                'Suggest a place where the tutor can park a two-wheeler, because market roads in Raja Park and Adarsh Nagar are crowded in the evening.',
+                'Weekend mornings avoid the busiest shopping hours; on weekdays, an early after-school slot usually beats the evening peak around Tonk Road.',
+            ],
+        ],
+        'Vaishali Nagar & West Jaipur' => [
+            'guide' => 'south-and-west-jaipur-tuition-guide',
+            'intro' => [
+                'Vaishali Nagar, Chitrakoot, Nirman Nagar, Shyam Nagar, Sodala and the Ajmer Road corridor form west Jaipur. Vaishali Nagar is bounded by the Delhi Bypass, Ajmer Road and Sirsi Road and mixes gated communities, apartments, houses and builder floors. Chitrakoot has 12 sectors, ten mainly residential. Nirman Nagar runs from houses to high-rise apartments, Shyam Nagar has parks and homes across budgets, and Ajmer Road, part of National Highway 48, adds colonies and larger townships further out.',
+                'This is where the Pink Line helps most. Mansarovar station, the western terminal, stands in Nirman Nagar; Shyam Nagar and Vivek Vihar stations are on New Sanganer Road; Ram Nagar station on Hawa Sadak is in Sodala; and Civil Lines station sits on the elevated Ajmer Road stretch, all open since June 2015. Vaishali Nagar and Chitrakoot have no station, so tutors there usually come by scooter or car.',
+            ],
+            'tips' => [
+                'Near Shyam Nagar, Sodala or Nirman Nagar, ask whether the tutor travels by metro; a station close to your home widens the pool of tutors who can come.',
+                'Always give the sector with a Chitrakoot address, and in Vaishali Nagar gated communities register the tutor at the gate before the demo.',
+                'Ajmer Road and the 200 Feet Bypass are heavy in the evening, so leave slack in the lesson time or keep an online session for exam weeks.',
+            ],
+        ],
+        'Mansarovar & Sanganer' => [
+            'guide' => 'south-and-west-jaipur-tuition-guide',
+            'intro' => [
+                'Mansarovar, Gopalpura Bypass, Pratap Nagar and Sanganer make up the south-west and south of the city. Mansarovar was planned by the Jaipur Development Authority, with Rajasthan Housing Board schemes too, and until 2010 was often described as Asia\'s largest colony. Pratap Nagar, on Tonk Road, grew in numbered Housing Board sectors of flats. Sanganer, an old town known for hand-block printing and handmade paper, is home to the airport, and Gopalpura Bypass is a busy road lined with coaching institutes.',
+                'The Pink Line begins at Mansarovar and runs east along New Sanganer Road through New Aatish Market and Vivek Vihar, all open since 3 June 2015. Beyond that the zone depends on roads and rail, with Durgapura, Gandhinagar and Sanganer stations as the nearest rail links. The planned Orange Line lists stops at Gopalpura, Jaipur Airport, Sanganer PS, Haldighati Gate and Sitapura, and it is still under construction.',
+            ],
+            'tips' => [
+                'Housing board blocks in Mansarovar and Pratap Nagar are usually doorstep visits, but give the scheme or sector number as well as the flat, since similar addresses repeat.',
+                'On Gopalpura Bypass the coaching crowd fills the road through the day, so late-evening or weekend lessons are easier for a visiting tutor.',
+                'In Sanganer\'s older lanes a tutor on a two-wheeler finds the house more easily; in newer apartment projects, register the tutor at the gate first.',
+            ],
+        ],
+        'Malviya Nagar, Jagatpura & Tonk Road' => [
+            'guide' => 'south-and-west-jaipur-tuition-guide',
+            'intro' => [
+                'Malviya Nagar, Jagatpura, Durgapura and the Tonk Road corridor form south Jaipur\'s growth belt. Malviya Nagar has wide roads, a popular market and homes from builder floors to villas, with the main road to the airport running through it. Jagatpura is mid-segment and mostly apartments, many in gated complexes, with its long flyover as the landmark. Durgapura is an organised colony of houses and apartments, and Tonk Road, part of National Highway 52, carries offices and showrooms.',
+                'Rail, not metro, serves this belt for now. Durgapura and Getor Jagatpura stations are on the North Western Railway, and Gandhinagar station stands close to Tonk Road. The Orange Line, planned and under construction, follows the north-south route with stops such as Gandhinagar Station, Gopalpura and Durgapura, and the foundation stone for Metro Phase 2 was laid on 4 July 2026. Until it opens, tutors come by scooter or car.',
+            ],
+            'tips' => [
+                'Say which side of Tonk Road you live on; crossing it at peak hours is slow, so a tutor already on your side is easier to keep.',
+                'In Jagatpura\'s gated complexes, register the tutor at the gate and share the tower and flat number before the first class.',
+                'Malviya Nagar\'s market and restaurant roads fill up in the evening, so an earlier slot straight after school often works better.',
+            ],
+        ],
+    ],
+    // Indore (1 Oct 2026), from database/seo-content/areas/indore-zone-guides.json.
+    'Indore' => [
+        'Vijay Nagar & AB Road' => [
+            'guide' => 'vijay-nagar-and-east-indore-tuition-guide',
+            'intro' => [
+                'Vijay Nagar, Scheme 54, Scheme 74, Scheme 78, Scheme 114, Sukhliya and the Super Corridor make up Indore\'s planned north-east. Vijay Nagar, developed by the Indore Development Authority between MR-9, MR-10 and the Eastern Ring Road, is now a commercial hub as well as a suburb. The numbered IDA schemes around it mix plotted independent houses, IDA housing and apartment buildings, while Sukhliya grew from a rural area into colonies of plotted homes.',
+                'This is the only part of Indore the metro serves so far. The Yellow Line\'s first five stations, along the Super Corridor, opened on 31 May 2025, and regular service on the next eleven, from Super Corridor 2 to Malviya Nagar Chauraha, began on 6 September 2026, with stops at MR 10 Road, ISBT, Hira Nagar, Meghdoot Garden and Vijay Nagar Chauraha. Townships along the Super Corridor are still filling up, so many tutors travel out from Vijay Nagar or Sukhliya.',
+            ],
+            'tips' => [
+                'Name the nearest Yellow Line station when you send a request: Vijay Nagar Chauraha or Meghdoot Garden for the schemes, Hira Nagar or MR 10 Road for Sukhliya, and the Super Corridor stations for the townships.',
+                'In the IDA schemes, give the scheme, sector and plot number with a map pin; in a Super Corridor township, add the tutor\'s name to the gate register before the demo.',
+                'The squares around Vijay Nagar get crowded in the evening shopping hours, so ask for a slot that starts before that rush rather than one that ends in it.',
+            ],
+        ],
+        'Palasia & Central Indore' => [
+            'guide' => 'central-and-south-indore-tuition-guide',
+            'intro' => [
+                'Old Palasia, New Palasia, Race Course Road, Manorama Ganj, Geeta Bhawan, LIG Colony, Saket Nagar and Tilak Nagar form the settled centre of Indore along and around AB Road. AB Road separates Old and New Palasia, where houses and apartment buildings sit among clinics, shops and offices. Geeta Bhawan combines IDA flats, cooperative housing societies and private houses, LIG Colony runs in lettered IDA sectors, and Manorama Ganj is known for its quiet, green lanes.',
+                'Palasia is also an education hub full of coaching institutes, which shapes what families here ask for: a tutor who supports school work alongside coaching. No metro station is open in this zone yet; the Yellow Line is planned to continue through Bengali Square, Patrakar Colony and an underground station at Palasia Square towards the railway station. The old BRTS lanes on AB Road have been dismantled, so tutors arrive by city bus, auto or two-wheeler.',
+            ],
+            'tips' => [
+                'Parking near Palasia and Geeta Bhawan squares is tight in the evening, so a tutor who comes by auto or two-wheeler is often easier to keep than one who drives.',
+                'If the student already attends coaching in Palasia, share that timetable in the request, so the tutor\'s slot sits before or after coaching rather than squeezed between.',
+                'In the IDA sectors of LIG Colony and in private houses the tutor comes straight to the door; in Geeta Bhawan\'s societies and larger apartment buildings, put the name on the register first.',
+            ],
+        ],
+        'Nipania, Bicholi & Ring Road' => [
+            'guide' => 'vijay-nagar-and-east-indore-tuition-guide',
+            'intro' => [
+                'Nipania, Mahalaxmi Nagar, Khajrana, Scheme 94, Scheme 140, Pipliyahana, Kanadia Road and Bicholi Mardana follow the six-lane Ring Road round the east of Indore. Mahalaxmi Nagar has become a cluster of high-rise buildings since the 2000s, and Nipania is filling with apartment societies and gated projects. Khajrana is older, with lanes around its Ganesh temple, while the IDA schemes, Pipliyahana and Kanadia Road are planned layouts of plots, houses and apartment buildings.',
+                'The Ring Road, built by the Indore Development Authority, links the zone through junctions at Mahalaxmi, Malviya Nagar, Khajrana Ganesh Temple, Bengali Square and World Cup Square, with flyovers at Bengali Square, World Cup Square and Teen Imli Square. Malviya Nagar Chauraha is the eastern end of the working Yellow Line; Mumtaj Bag Colony, Khajrana Square, Bengali Square and Patrakar Colony are approved stations that have not opened. Bicholi Mardana, near the bypass, is still developing.',
+            ],
+            'tips' => [
+                'For Mahalaxmi Nagar and Nipania, a tutor on the metro can come to Malviya Nagar Chauraha and finish by auto; elsewhere in the zone, look for someone who already works along the Ring Road.',
+                'Ring Road junctions crowd at office closing time, and Khajrana\'s temple junction is busy on festival days and weekends, so fix weekday slots either side of those peaks.',
+                'In Bicholi Mardana and the newer parts of Kanadia Road, fewer tutors live close by, so pair a tutor from Pipliyahana or Bengali Square with online sessions for specialist subjects.',
+            ],
+        ],
+        'Bhawarkua, Rajendra Nagar & Rau' => [
+            'guide' => 'central-and-south-indore-tuition-guide',
+            'intro' => [
+                'Bhawarkua, Navlakha, Sapna Sangeeta Road, Sudama Nagar, Rajendra Nagar, Bijalpur, Rau and Silicon City run south-west from the centre along AB Road. Bhawarkua, on AB Road and the Ujjain to Khandwa road, has hosted university campuses since the 1950s and is a busy student hub with coaching institutes and hostels. Navlakha is known for its temple and long-distance bus stand, while Sudama Nagar and Rajendra Nagar are mainly independent houses on quieter, greener roads.',
+                'Further out, Bijalpur has grown from farmland into mid-income apartments and houses, and Rau, a nagar panchayat on AB Road between Rajendra Nagar and Mhow, is where the Pithampur road branches off; Silicon City is its newer residential quarter. There is no metro here. Rajendra Nagar and Rau stations are on the Akola to Ratlam line, Saifee Nagar is the halt nearest Bhawarkua, and city buses run along AB Road through the day.',
+            ],
+            'tips' => [
+                'Around Bhawarkua the roads stay crowded with students for most of the day, so an early evening or later slot is steadier, and a landmark helps the tutor find the house.',
+                'In Rau and Silicon City fewer tutors live locally, so expect one from Rajendra Nagar or Bijalpur, and register their name at the gate of any newer gated project.',
+                'AB Road towards Rau gets heavier at school and office closing times; setting the class a little later in the evening keeps it on time week after week.',
+            ],
+        ],
+    ],
+    // Lucknow (1 Oct 2026), from database/seo-content/areas/lucknow-zone-guides.json.
+    'Lucknow' => [
+        'Gomti Nagar, Indira Nagar & Chinhat' => [
+            'guide' => 'gomti-nagar-and-trans-gomti-tuition-guide',
+            'intro' => [
+                'Gomti Nagar, Gomti Nagar Extension, Indira Nagar and Chinhat make up the eastern side of Lucknow. Gomti Nagar is a planned township whose khands all begin with V, such as Vibhuti, Vishwas, Vivek and Vijay Khand; its first two phases are fully built, with plotted houses beside apartment blocks and offices. The Extension, in numbered sectors on Shaheed Path, mixes authority plots and flats with private towers, while Indira Nagar grew from four planned blocks to twenty-five.',
+                'Indira Nagar holds the northern end of the Red Line: Lekhraj Market, Bhootnath Market, Indira Nagar and Munshi Pulia stations opened on 8 March 2019, and Gomti Nagar families use them too. Gomti Nagar railway station in Vivek Khand is on the suburban line. Chinhat, long known for pottery, sits where Shaheed Path meets Faizabad Road, and neither Chinhat nor the Extension has a metro station, so tutors there arrive by road.',
+            ],
+            'tips' => [
+                'Pick the station by colony: Munshi Pulia or Indira Nagar for most Indira Nagar blocks, Bhootnath or Lekhraj Market for the market side and the older Gomti Nagar khands next to them.',
+                'In Gomti Nagar Extension and the Faizabad Road townships, ask the gate for a standing entry pass in the first week so a regular tutor is not stopped at every visit.',
+                'Office traffic builds on Gomti Nagar\'s commercial roads and on Shaheed Path in the evening, so a tutor living in the same khands or sectors keeps an early-evening slot most reliably.',
+            ],
+        ],
+        'Mahanagar, Aliganj & Jankipuram' => [
+            'guide' => 'gomti-nagar-and-trans-gomti-tuition-guide',
+            'intro' => [
+                'This is the Trans-Gomti zone north of the river: Mahanagar, Nirala Nagar, Nishatganj and Kapoorthala nearer the centre, then Aliganj, Vikas Nagar, Jankipuram and Jankipuram Extension further out. Most families live in independent houses on plotted lanes. Aliganj runs in lettered sectors from A and B through to K, L and N, Vikas Nagar in numbered ones, and Jankipuram and its Vistar are development authority schemes where plots, villas and newer apartment towers sit side by side.',
+                'A metro station once planned for Mahanagar was dropped, so the southern colonies use Badshahnagar, IT College and Vishwavidyalaya, elevated Red Line stations opened on 8 March 2019; Badshahnagar also meets the railway station of that name. North of Aliganj the stations fall away, and Jankipuram and its extension depend on road travel along Sitapur Road, Kursi Road and the Ring Road near Tedhi Pulia, with some sectors of the extension still filling up.',
+            ],
+            'tips' => [
+                'Give the sector letter and house number for Aliganj, the sector number for Vikas Nagar, and a map pin for Jankipuram Extension, where some lanes are still new.',
+                'For Jankipuram and Vikas Nagar, a tutor living in Aliganj, Jankipuram or Kapoorthala is easier to keep than one crossing the Ring Road from the south every evening.',
+                'On the Kapoorthala and Nishatganj market roads parking outside is hard, so suggest a side lane to a driving tutor, or choose one who comes by metro to IT College.',
+            ],
+        ],
+        'Hazratganj, Lalbagh & Aminabad' => [
+            'guide' => 'central-and-south-lucknow-tuition-guide',
+            'intro' => [
+                'The old centre covers Hazratganj, Lalbagh, Aminabad, Chowk, Aishbagh and Rajendra Nagar. Hazratganj\'s market began in 1827, took its name in 1842 and was rebuilt in a Victorian style after 1857; Aminabad is one of the city\'s oldest and busiest markets, and Chowk is the crowded historic core near the Imambaras. Homes are mostly flats above or behind shops and in older buildings, while Rajendra Nagar, on the site of the 1916 Congress session, is mid-rise flats near Charbagh.',
+                'Hussainganj, Sachivalaya, which stands in Lalbagh, and Hazratganj are underground Red Line stations opened on 8 March 2019, and Charbagh is both the main railway station and a metro stop. Aishbagh has its own railway junction. On 12 August 2025 the Union Cabinet approved the Charbagh to Vasant Kunj Blue Line, now under construction and planned to serve Aminabad, Pandeyganj and Chowk; until it opens, the old-city lanes rely on autos, two-wheelers and walking.',
+            ],
+            'tips' => [
+                'Car parking is scarce across this zone, so a tutor who rides the Red Line to Hazratganj, Sachivalaya or Charbagh and walks the last stretch is the steadiest choice.',
+                'Older buildings often have no guard or lift, so send the floor number and a landmark near the entrance, and be ready to call down on the first visit.',
+                'Market crowds in Aminabad and Chowk peak in the late afternoon and evening, so weekend mornings, weekday afternoons or online sessions are easier to keep regular.',
+            ],
+        ],
+        'Alambagh, Ashiyana & Rajajipuram' => [
+            'guide' => 'central-and-south-lucknow-tuition-guide',
+            'intro' => [
+                'The Kanpur Road side of south Lucknow takes in Alambagh, Rajajipuram, LDA Colony, Ashiyana, Krishna Nagar and Sarojini Nagar. Alambagh, named after a palace and garden that became a fort in 1857, is a busy mix of houses, floors and a few gated complexes around the city\'s biggest bus terminal. Rajajipuram runs in blocks A to F, LDA Colony is the authority\'s Kanpur Road scheme in lettered sectors, and Ashiyana and Krishna Nagar are mostly independent houses.',
+                'The metro started here. The first Red Line section, eight stations from Transport Nagar to Charbagh, opened on 5 September 2017, bringing Alambagh, Alambagh ISBT, Singar Nagar and Krishna Nagar stations, and the line reached the airport through Amausi on 8 March 2019. Krishna Nagar station serves LDA Colony and Ashiyana too. Sarojini Nagar, on the airport side, adds housing board flats and an industrial pocket at Nadarganj, and Alamnagar railway station sits near Rajajipuram.',
+            ],
+            'tips' => [
+                'Use Krishna Nagar station for LDA Colony and Ashiyana, Alambagh for Rajajipuram and Alambagh, and Transport Nagar or Amausi for Sarojini Nagar, then a short auto ride.',
+                'In the plotted sectors the tutor parks at the door; in the gated complexes of Alambagh and Sarojini Nagar, register the tutor\'s name at the gate before the demo.',
+                'Kanpur Road is heaviest at office hours in the morning and evening, so set a class time that avoids the peak rather than one that has to cross it.',
+            ],
+        ],
+        'Sushant Golf City, Vrindavan Yojana & Telibagh' => [
+            'guide' => 'central-and-south-lucknow-tuition-guide',
+            'intro' => [
+                'The south-eastern belt along Shaheed Path covers Sushant Golf City, Vrindavan Yojana and Telibagh. Shaheed Path, opened in 2012, curves from Transport Nagar on Kanpur Road across Raebareli Road and Sultanpur Road to Chinhat. Sushant Golf City is a large township built around an 18-hole golf course, mostly gated towers with villas and plots. Vrindavan Yojana is a UP Awas Vikas Parishad township on Raebareli Road in numbered sectors, and Telibagh beside it is mainly independent houses.',
+                'No station serves this belt; the nearest Red Line stop is Transport Nagar on Kanpur Road, so every home visit here is by car, two-wheeler or cab along Shaheed Path or Raebareli Road. That makes the tutor pool mostly people who already live in these townships or close by. Gated towers expect visitor registration and often an approved entry pass for a regular teacher, while houses in Telibagh and much of Vrindavan Yojana open straight onto the lane.',
+            ],
+            'tips' => [
+                'Arrange the entry pass for a regular tutor with the township gate before the demo, and share the tower and flat number with the tutor in advance.',
+                'Raebareli Road is slow at school and office times, so for Telibagh and Vrindavan Yojana pick an after-school slot that starts a little later.',
+                'For senior specialist subjects such as ISC Physics, IB Maths or JEE work, consider online lessons when the right tutor lives across the city in Gomti Nagar or Aliganj.',
+            ],
+        ],
+    ],
+    // Ahmedabad (1 Oct 2026), from database/seo-content/areas/ahmedabad-zone-guides.json.
+    'Ahmedabad' => [
+        'Navrangpura, Paldi & Ellisbridge' => [
+            'guide' => 'west-ahmedabad-tuition-guide',
+            'intro' => [
+                'Navrangpura, Ellisbridge, Paldi, Ambawadi and Vasna form the older heart of West Ahmedabad, just across the Sabarmati from the walled city. Navrangpura was among the first areas to develop beyond the old walls, and Ellisbridge takes its name from the steel bridge completed in 1892. Housing mixes older low-rise blocks, independent houses, a few Art Deco era homes in Paldi and newer towers, with shops and offices along the main roads.',
+                'This is the zone where Ahmedabad\'s two metro lines meet. Old High Court is the interchange between the Blue and Red Lines, both opened here on 30 September 2022, and the Red Line runs south through Ellisbridge, Paldi and Ambawadi to its terminus at APMC in Vasna. Tutors from the northern suburbs or from the east bank can therefore ride in by train and finish with a short auto trip or a walk.',
+            ],
+            'tips' => [
+                'Name the nearest Red Line stop in your request, Paldi or APMC for example, so we can start with tutors who already ride that line.',
+                'In apartment buildings tell the watchman the tutor\'s name before the first visit; for an independent house, share the lane and a nearby landmark instead.',
+                'The roads towards the bridges are slowest at office hours, so a late-afternoon or weekend-morning slot is the easiest one to keep week after week.',
+            ],
+        ],
+        'Satellite, Vastrapur & Bodakdev' => [
+            'guide' => 'west-ahmedabad-tuition-guide',
+            'intro' => [
+                'Satellite, Jodhpur, Vastrapur, Bodakdev, Thaltej and Memnagar line SG Highway, the Sarkhej–Gandhinagar road that forms part of National Highway 147. Satellite is one of the long-established western areas, with apartment complexes and bungalows on plotted lanes, Vastrapur surrounds its lake, Bodakdev pairs gated towers with bungalows, Thaltej grew around an old village and its lake, and Memnagar is mostly two- and three-bedroom flats in mid-rise societies.',
+                'The Blue Line serves only the northern half of this zone. Gurukul Road station is in Memnagar, Doordarshan Kendra and Thaltej opened on 30 September 2022, and Thaltej Gam became the western terminus on 8 December 2024. Satellite, Jodhpur and Vastrapur have no station of their own, so most tutors there arrive by two-wheeler, auto, BRTS or city bus, and gated towers along the highway often log a phone number for every visitor.',
+            ],
+            'tips' => [
+                'For Thaltej, Bodakdev and Memnagar, a tutor living on the Blue Line can ride to Thaltej Gam, Thaltej or Gurukul Road and take an auto for the last part.',
+                'Many towers here ask for a visitor\'s phone number at the gate, so register the tutor\'s details with security before the demo class.',
+                'Highway service lanes thicken in the evening rush; a class that begins in the late afternoon, or on a weekend morning, starts on time more often.',
+            ],
+        ],
+        'Prahlad Nagar, Bopal & Shela' => [
+            'guide' => 'west-ahmedabad-tuition-guide',
+            'intro' => [
+                'Prahlad Nagar, Bopal, South Bopal and Shela make up the city\'s south-western growth corridor. Prahlad Nagar mixes premium gated flats with a large cluster of offices and shops beside SG Highway. Bopal grew from 18,553 people in 2001 to 55,068 in 2011, and joined Ghuma as a municipality in 2015 before coming under the municipal corporation. South Bopal is almost entirely modern gated complexes, and Shela, towards Sanand, is newer still.',
+                'No metro station serves any locality in this zone. The outer ring road, opened in 2004, carries most traffic past the Bopal junction, and BRTS Route 17 runs to South Bopal from the Satellite side. Most tutors therefore travel by two-wheeler. Large complexes may register visitors at the main gate and again at the tower, and families here often pair a nearby home tutor for core subjects with online lessons for specialist ones.',
+            ],
+            'tips' => [
+                'Look first at tutors who already live in Bopal, South Bopal or Shela; a tutor from the far side of the river may find the trip hard to repeat each week.',
+                'In township-style complexes allow extra time for the first visit, since the tutor may be checked at the main gate and again at your tower.',
+                'Ring-road junctions are busiest at office hours, so fix a late-afternoon slot, and add an online session for any subject without a local specialist.',
+            ],
+        ],
+        'Naranpura, Gota & Chandkheda' => [
+            'guide' => 'west-ahmedabad-tuition-guide',
+            'intro' => [
+                'Naranpura, Ghatlodia, Gota, Chandkheda and Sabarmati form the northern part of the west bank, reaching towards Gandhinagar. Naranpura mixes budget blocks, mid-segment societies and large bungalows around Vijay Char Rasta, Ghatlodia is densely built and largely low-rise, and Gota grew after SG Highway was built. Chandkheda, a panchayat until it joined the municipal corporation on 19 January 2008, holds housing board societies and company colonies, and Sabarmati includes older homes and railway colony areas.',
+                'The Red Line runs the length of the zone, from Motera Stadium through Sabarmati and AEC to Vijay Nagar, which serves Naranpura; it opened to the public on 6 October 2022. From Motera Stadium the Gandhinagar line has run since 16 September 2024, and its final section into the capital opened on 11 January 2026. Gota and Ghatlodia have no station, so BRTS Route 9, which ends in Gota, and two-wheelers fill the gap.',
+            ],
+            'tips' => [
+                'Families in Chandkheda and Sabarmati can widen their choice to tutors travelling in from Gandhinagar on the metro via Motera Stadium.',
+                'In Gota and Ghatlodia, where there is no station, choose a tutor who already travels your side of SG Highway or the ring road by two-wheeler.',
+                'Vijay Char Rasta and the roads around it crowd up in the evening, so a Naranpura class that starts before the rush is simpler to keep.',
+            ],
+        ],
+        'Maninagar, Isanpur & Kankaria' => [
+            'guide' => 'east-ahmedabad-tuition-guide',
+            'intro' => [
+                'Maninagar, Kankaria, Khokhra, Isanpur and Ghodasar sit in the south of the east bank. Maninagar is an established residential and market district divided by the railway line, with older houses on busy streets and newer flats towards New Maninagar. Kankaria surrounds the city\'s largest lake, completed in 1451, whose redeveloped lakefront opened on 25 December 2008. Khokhra grew around textile mills, while Isanpur and Ghodasar are mainly low-rise apartment buildings.',
+                'Rail is the strength of this zone. Maninagar railway station on the main line to Mumbai has a footbridge to the BRTS bus station, Kankaria East opened to commuters as an underground Blue Line station on 5 March 2024, and Apparel Park and Amraiwadi stations are close to Khokhra. Low-rise blocks mean the tutor usually reaches the flat door after a quick call from the entrance, and independent houses open onto the street.',
+            ],
+            'tips' => [
+                'Mention whether you are nearer Maninagar railway station, Kankaria East or Apparel Park, since tutors can arrive by train, metro or BRTS.',
+                'Around Kankaria Lake, Sundays, holidays and the December carnival bring crowds, so weekday evenings or weekend mornings are the better lesson slots.',
+                'Market roads near Maninagar station fill up in the evening; an earlier after-school slot keeps the tutor\'s arrival time steady.',
+            ],
+        ],
+        'Nikol, Naroda & Bapunagar' => [
+            'guide' => 'east-ahmedabad-tuition-guide',
+            'intro' => [
+                'Nikol, Naroda, Bapunagar, Vastral, Odhav and Amraiwadi make up the east of the city, where mill history meets the ring-road suburbs. Bapunagar was set up in the early 1960s for textile mill workers and later became a diamond-cutting centre. Amraiwadi still shows former mill chawls beside newer flats, Naroda has an old village core and a newer side, and Nikol and Vastral have grown quickly with new apartment buildings near the ring road.',
+                'Ahmedabad\'s metro began here: the first section, Vastral Gam to Apparel Park, opened on 4 March 2019, with Nirant Cross Road, Vastral and Rabari Colony in between, and Amraiwadi station followed on 18 May 2019. Naroda has a railway station on the line to Udaipur but no metro. Odhav and Naroda also hold large industrial estates, so shift changes as well as office hours affect how quickly a tutor can cross the zone.',
+            ],
+            'tips' => [
+                'Vastral, Amraiwadi and parts of Nikol are well placed for tutors riding the Blue Line; name the station nearest your home in the request.',
+                'In Bapunagar and Juna Naroda most visits are to doorsteps in narrow lanes, where a tutor on a two-wheeler is far more practical than one in a car.',
+                'Industrial shift times load the roads around Odhav and Naroda, so agree a mid-evening lesson that avoids them and keep it fixed.',
+            ],
+        ],
+        'Shahibaug, Asarwa & Meghaninagar' => [
+            'guide' => 'east-ahmedabad-tuition-guide',
+            'intro' => [
+                'Shahibaug, Asarwa and Meghaninagar form the north-central part of the east bank, just across the river from the western city. Shahibaug takes its name from a royal garden palace built in 1622 and is now mostly spacious three- and four-bedroom flats. Asarwa is an older neighbourhood where large medical and teaching campuses sit among independent homes and mid-income apartments, and Meghaninagar is an affordable to mid-budget area of houses and flats.',
+                'Asarva railway station on the Udaipur line serves the zone, and the nearest metro stops are the Blue Line\'s underground stations at Shahpur, Gheekanta and Kalupur Railway Station, opened on 30 September 2022. Most tutors therefore arrive by road along Airport Road, Camp Road or Riverfront Road. Apartment buildings expect a name at the gate and a call to the flat, while older homes in Asarwa and Meghaninagar open directly onto the lane.',
+            ],
+            'tips' => [
+                'Share the tutor\'s name with the gate in advance, since Shahibaug apartment buildings usually confirm each visitor with a call to the flat.',
+                'Traffic near the medical campuses in Asarwa stays heavy through the day, so fix an evening lesson time in advance rather than an afternoon one.',
+                'A tutor from elsewhere on the east bank usually has the simpler journey here; if you want a west-bank specialist, consider an online session.',
+            ],
+        ],
+    ],
+    // Chennai (1 Oct 2026), from database/seo-content/areas/chennai-zone-guides.json.
+    'Chennai' => [
+        'Adyar, Besant Nagar & Mylapore' => [
+            'guide' => 'south-chennai-tuition-guide',
+            'intro' => [
+                'Mylapore, Alwarpet, Adyar, Besant Nagar and Thiruvanmiyur make up Chennai\'s older southern coast. Mylapore has settlement records going back to the first century BCE and centres on its temple and tank, with old houses on narrow lanes near apartment blocks. Alwarpet grew from garden estates north of the Adyar River. Adyar, part of the city since 1948, is a set of named nagars, and Besant Nagar was laid out by the Tamil Nadu Housing Board from the early 1970s.',
+                'The MRTS is the main rail link. It reached Thirumayilai in October 1997 and was extended to Thiruvanmiyur in January 2004, with stops at Mandaveli, Kotturpuram, Kasturba Nagar and Indira Nagar. Teynampet on the Metro Blue Line, open since May 2018, is closest for Alwarpet. The Purple and Yellow metro lines are under construction through the zone. Besant Nagar has no station of its own, so tutors arriving by train finish the trip by auto.',
+            ],
+            'tips' => [
+                'Name the MRTS station nearest your home when you send the request: Thirumayilai or Mandaveli for Mylapore, Kasturba Nagar or Indira Nagar for Adyar, Thiruvanmiyur for Besant Nagar and Thiruvanmiyur.',
+                'On temple festival days around the Mylapore tank, move the lesson to a morning or switch it online for that day.',
+                'Besant Nagar\'s numbered streets are easy to find, but beach evenings at weekends are crowded, so weekday or morning slots suit home visits better.',
+            ],
+        ],
+        'T Nagar, Nungambakkam & Kodambakkam' => [
+            'guide' => 'south-chennai-tuition-guide',
+            'intro' => [
+                'T Nagar, Nungambakkam, Kodambakkam, West Mambalam and Saidapet form the busy centre-west of the city. T Nagar was planned in 1923–25 after the Long Tank was drained, and shops have outnumbered houses there since the 1950s. Nungambakkam mixes offices along its High Road with flats behind it. Kodambakkam is home to the Tamil film industry, West Mambalam is dense and market-led, and Saidapet on the Adyar River mixes old streets with newer gated complexes.',
+                'The South Line of the suburban railway, opened in 1931, stops at Nungambakkam, Kodambakkam, Mambalam and Saidapet, so tutors from as far as Tambaram can come by train. The Metro Blue Line serves AG–DMS, Teynampet, Nandanam and Saidapet, with Thousand Lights added in February 2019, and the Green Line stations at Ashok Nagar and Vadapalani lie just to the west. The Yellow Line is under construction through Nandanam and Kodambakkam.',
+            ],
+            'tips' => [
+                'A tutor who comes by suburban train to Mambalam, Kodambakkam or Nungambakkam is usually more punctual here than one who drives.',
+                'In West Mambalam and older T Nagar streets, send a landmark and the house number; parking a car is hard, so a two-wheeler or walk from the station is normal.',
+                'Keep lessons away from shopping weekends and festival seasons near the T Nagar bazaar streets, when crowds slow every route in.',
+            ],
+        ],
+        'Velachery, Guindy & Tambaram' => [
+            'guide' => 'south-chennai-tuition-guide',
+            'intro' => [
+                'This southern zone runs from Guindy and Velachery through Madipakkam, Nanganallur, Pallikaranai and Medavakkam, then down GST Road to Chromepet and Tambaram. Guindy\'s homes sit in pockets between an industrial estate, a national park and campuses. Velachery grew quickly into apartment complexes beside houses, Madipakkam has its lake, Pallikaranai its protected marsh and Nanganallur its many temples. Tambaram has been a city corporation since November 2021, and Chromepet now falls within it.',
+                'Rail arrives in three forms. The Blue Line has stopped at Little Mount, Guindy, Alandur, Nanganallur Road and Meenambakkam since September 2016. The MRTS has reached Velachery since November 2007 and, since March 2026, continues through Puzhuthivakkam and Adambakkam to St Thomas Mount. Suburban trains run along GST Road to Tambaram, one of the area\'s main terminals. Medavakkam and Pallikaranai still have no station, and the Red Line serving them is under construction.',
+            ],
+            'tips' => [
+                'Along GST Road, look for a tutor who uses the suburban train to Chromepet or Tambaram and walks or takes an auto from the station.',
+                'In Medavakkam and Pallikaranai, where there is no rail yet, a tutor from Velachery, Madipakkam or Medavakkam itself on a two-wheeler is the practical choice.',
+                'Kathipara, Vijayanagar and GST Road are heavy at office hours, so set lessons just before or after the rush rather than inside it.',
+            ],
+        ],
+        'OMR & ECR' => [
+            'guide' => 'omr-and-ecr-tuition-guide',
+            'intro' => [
+                'The OMR IT corridor and the East Coast Road run side by side south of Thiruvanmiyur. On the OMR, Perungudi changed from a village into offices and homes, Thoraipakkam is mostly flats and gated communities beside the Pallikaranai marsh, and Sholinganallur, annexed in 2011 as ward 200, mixes a housing-board township with large gated campuses. Further south, Navalur was a village until around 2010 and Kelambakkam remains a village panchayat. On the ECR, Neelankarai is bungalows, villas and row houses by the sea.',
+                'Rail is thin here. Perungudi has had an MRTS station since November 2007, but the rest of the corridor depends on roads. The Purple Line is under construction along the OMR through Thoraipakkam, Sholinganallur and Navallur, and the Red Line will meet it at Sholinganallur; neither is open. The Pallavaram–Thoraipakkam Radial Road links the OMR with GST Road. Most tutors here travel by two-wheeler, bus or cab from nearby localities.',
+            ],
+            'tips' => [
+                'Gated communities on the OMR often want a resident to approve each visitor, so add the tutor as a regular guest in the society app before the demo.',
+                'Set home lessons after the evening office rush on the OMR has eased, or on weekends, and keep one online session for doubts on the busiest days.',
+                'For IB, IGCSE or senior specialist papers, consider an online tutor from elsewhere in India if no home tutor along the corridor fits your board.',
+            ],
+        ],
+        'Anna Nagar, Kilpauk & Aminjikarai' => [
+            'guide' => 'west-and-north-chennai-tuition-guide',
+            'intro' => [
+                'Anna Nagar, Anna Nagar West, Shenoy Nagar, Kilpauk, Aminjikarai, Arumbakkam and Purasawalkam form the central-west belt. Anna Nagar was laid out by the Tamil Nadu Housing Board in the early 1970s on a grid of numbered avenues with plots, flats and parks. Shenoy Nagar began as housing for middle-income families, Kilpauk was a cantonment before independence, Aminjikarai is a group of colonies beside a commercial belt, and Purasawalkam, granted to the East India Company in 1693, keeps old lanes and markets.',
+                'Poonamallee High Road, built in the 1850s as the Grand Western Trunk Road, runs through Kilpauk, Aminjikarai and Arumbakkam to Koyambedu. The Green Line serves the zone well: Arumbakkam and Koyambedu opened in June 2015, and the underground section opened in May 2017 added Thirumangalam, Anna Nagar Tower, Anna Nagar East and Shenoy Nagar. Anna Nagar West has one of the city\'s largest bus terminals, and a Red Line station there is under construction.',
+            ],
+            'tips' => [
+                'Give the avenue or street number and block; Anna Nagar\'s grid makes homes easy to find, so a tutor rarely loses time searching.',
+                'A tutor on the Green Line can reach Anna Nagar, Shenoy Nagar or Arumbakkam by metro and walk the last few streets.',
+                'Near the 2nd Avenue shops and Purasawalkam\'s market streets, parking is limited, so book a slot before the early-evening rush.',
+            ],
+        ],
+        'Vadapalani, KK Nagar & Porur' => [
+            'guide' => 'west-and-north-chennai-tuition-guide',
+            'intro' => [
+                'Vadapalani, Ashok Nagar, KK Nagar, Virugambakkam, Valasaravakkam and Porur run west from the film district along Arcot Road. Vadapalani grew around a late nineteenth-century Murugan temple and is densely built with flats and older houses. Ashok Nagar, founded in 1964, and KK Nagar, a 1970s grid of sectors each with a central park, share a housing-board history and numbered streets. Virugambakkam joined the city in 1973, Valasaravakkam in 2011, and Porur\'s Mount-Poonamallee Road stretch has become an IT corridor.',
+                'Vadapalani and Ashok Nagar have been on the Green Line since June 2015, and the Inner Ring Road links Koyambedu, Vadapalani and Kathipara. West of Vadapalani the Yellow Line, with stations planned at Virugambakkam South, Alwarthirunagar, Valasaravakkam and Porur Junction, is under construction, so for now homes there are reached by bus along Arcot Road or by metro to Vadapalani and an auto. Porur Junction brings three main roads together.',
+            ],
+            'tips' => [
+                'In Ashok Nagar and KK Nagar, give the sector or road number; the numbering makes homes easy to locate for a tutor coming from the metro.',
+                'Beyond Vadapalani, choose a tutor who lives along Arcot Road or in Porur, since there is no working metro west of Vadapalani yet.',
+                'Arcot Road and Porur Junction are busiest at office hours, so late-afternoon or weekend lessons keep to time more easily.',
+            ],
+        ],
+        'Mogappair, Ambattur & Avadi' => [
+            'guide' => 'west-and-north-chennai-tuition-guide',
+            'intro' => [
+                'Mogappair, Ambattur and Avadi form the western belt of the city. Mogappair, split into East and West, grew from a village on the state highway between Ambattur and Anna Nagar and mixes flats with plotted homes. Ambattur grew after the Second World War around an industrial estate commissioned in 1964, with established colonies of houses and flats. Avadi became Tamil Nadu\'s 15th municipal corporation in 2019 and is known for defence manufacturing and research establishments and housing-board estates.',
+                'The suburban line from Chennai Central to Arakkonam is the backbone, with stations at Pattaravakkam, Ambattur, Thirumullaivoyal, Annanur and Avadi; its first stretch was electrified in November 1979 and the Villivakkam–Avadi section in October 1986. Mogappair has no station of its own and relies on Thirumangalam and Koyambedu on the Green Line or on buses. The Chennai-Tiruvallur High Road runs through Ambattur and Avadi, and the Outer Ring Road passes western Avadi.',
+            ],
+            'tips' => [
+                'For Ambattur and Avadi, a tutor who takes the local train and finishes with a short auto ride is the steadiest option.',
+                'Defence areas and gated estates in Avadi may need entry details in advance, so send the tutor the address, a contact number and gate instructions before the demo.',
+                'In Mogappair, ask whether the tutor will come by bus, by metro to Thirumangalam or by two-wheeler, and fix the time to avoid the Inner Ring Road rush.',
+            ],
+        ],
+        'Perambur, Kolathur & North Chennai' => [
+            'guide' => 'west-and-north-chennai-tuition-guide',
+            'intro' => [
+                'Perambur, Villivakkam, Kolathur, Royapuram and Tondiarpet carry the city\'s railway history. Royapuram\'s station opened in June 1856 as South India\'s first terminus, and Perambur, where railway workshops were set up the same year, has the second oldest station in the city. Tondiarpet mixes trading and small factories with homes, Villivakkam is densely built on both sides of the railway, and Kolathur, one of the city\'s older housing colonies, is known for its ornamental fish trade.',
+                'Suburban trains serve Perambur and Villivakkam on the line towards Avadi and Arakkonam, and Tondiarpet on the line towards Gummidipoondi. The Blue Line reached Washermanpet in February 2019, and its northern extension, including a Tondiarpet station, opened in February 2021. Red Line stations at Kolathur Junction and Villivakkam are under construction. The northern arm of the Inner Ring Road runs from Padi towards Madhavaram, and many older lanes are narrow.',
+            ],
+            'tips' => [
+                'Parking near the market streets and the Kasimedu harbour is tight, so a tutor arriving by train, metro or auto is easier to keep.',
+                'In old lanes, share a landmark and the door number; in newer apartment buildings, give the tutor\'s name at the gate before the first class.',
+                'Market roads in Perambur and Royapuram are crowded in the evening, so a slightly earlier lesson slot usually works better.',
+            ],
+        ],
+    ],
+    // Bhopal (1 Oct 2026), from database/seo-content/areas/bhopal-zone-guides.json.
+    'Bhopal' => [
+        'Arera Colony, Shahpura & Kolar Road' => [
+            'guide' => 'south-and-central-bhopal-tuition-guide',
+            'intro' => [
+                'Arera Colony, Shahpura, Kolar Road, Chuna Bhatti and Bawadiya Kalan make up Bhopal\'s southern residential belt. Arera Colony is laid out in eight sectors, E-1 to E-8: the older E-1 to E-5 are streets of bungalows and independent houses, E-6 and E-7 were built as housing board colonies and E-8 is a private extension, with Bittan Market for daily shopping. Shahpura surrounds Shahpura Lake with colonies, houses and small apartment buildings.',
+                'Further south the character changes. Kolar Road is a long corridor of plotted colonies, newer gated projects and villa communities, with Chuna Bhatti at its city end, while Bawadiya Kalan, between the Kolar Road side and Hoshangabad Road, is growing fast and many of its families live in apartments. Link Road Number 3 joins Arera Colony to Rani Kamlapati railway station, a stop on the metro\'s operating section, but Kolar Road has no metro or rail stop.',
+            ],
+            'tips' => [
+                'In Arera Colony, give the sector number, E-1 to E-8, with the house number; in the older sectors the tutor comes straight to the door, and Bittan Market makes a handy landmark.',
+                'On Kolar Road, in Chuna Bhatti and in Bawadiya Kalan, register the tutor\'s name with the gate or society office before the demo, since many homes are in gated projects.',
+                'The link roads and the Kolar Road stretch fill up at office hours, so an early-evening slot, fixed a little before or after the rush, is the one most likely to hold.',
+            ],
+        ],
+        'MP Nagar, TT Nagar & Shivaji Nagar' => [
+            'guide' => 'south-and-central-bhopal-tuition-guide',
+            'intro' => [
+                'MP Nagar, TT Nagar, Shivaji Nagar, Tulsi Nagar and Jahangirabad form the centre of the city south of the Upper Lake. MP Nagar, short for Maharana Pratap Nagar, is the main office and commercial district, divided into zones, with coaching centres on its main roads and flats on its residential streets. TT Nagar grew around New Market as government housing, and North TT Nagar now holds the smart city redevelopment on about 354 acres of government land.',
+                'Shivaji Nagar and Tulsi Nagar are largely government-owned housing beside private houses and builder floors; the smart city plan was first proposed for them before moving to North TT Nagar. Jahangirabad, near the Lower Lake, is older and denser. MP Nagar and Board Office Square are stations on the Orange Line priority section, open to passengers since 21 December 2025, while Pul Bogda and Aishbagh, near Jahangirabad, are planned stations on the unopened northern part.',
+            ],
+            'tips' => [
+                'For government quarters in TT Nagar, Shivaji Nagar and Tulsi Nagar, send the block and quarter number with a landmark, because many homes have no street address.',
+                'A tutor can ride the Orange Line to MP Nagar or Board Office Square and finish by auto or on foot; parking in MP Nagar\'s commercial blocks is tight, so the metro often works better.',
+                'In Jahangirabad\'s inner lanes the tutor usually parks at the lane mouth and walks in, so share a landmark, and prefer an afternoon or early-evening slot before market traffic peaks.',
+            ],
+        ],
+        'Hoshangabad Road, Misrod & Katara Hills' => [
+            'guide' => 'south-and-central-bhopal-tuition-guide',
+            'intro' => [
+                'Hoshangabad Road, also called Narmadapuram Road, Misrod, Katara Hills and Bagmugaliya form Bhopal\'s south-eastern growth belt. The main road leaves the city towards Misrod and Mandideep, with older colonies of houses beside apartment towers, gated townships and villa projects. Misrod, on the NH-46 stretch towards Nagpur, has grown into a large suburb of townships, apartments and plotted layouts, and some large plots are still available there.',
+                'Katara Hills is newer, built up through planned communities, villas and residential plots, and reached by Hoshangabad Road and 200 Feet Road. Bagmugaliya, next to Katara Hills and Jatkhedi, mixes apartments, houses, villas and plots. The bus corridor that once ran down Hoshangabad Road was ordered shut in December 2023 and removed in stages from January 2024. Misrod has a station on the Bhopal–Itarsi line, though few trains stop there.',
+            ],
+            'tips' => [
+                'Most homes here sit inside gated townships or apartment projects, so put the tutor\'s name on the gate list or visitor app before the demo, and share the tower and flat number.',
+                'Public transport thins out away from the main road, so a tutor who lives on the same stretch of the corridor, in Misrod, Bagmugaliya or Katara Hills, is the easiest to keep.',
+                'Hoshangabad Road is heavy at office hours in both directions, so set lessons after the evening rush has eased, or use an online session on the busiest weekdays.',
+            ],
+        ],
+        'BHEL, Awadhpuri & Ayodhya Bypass' => [
+            'guide' => 'bhel-and-old-bhopal-tuition-guide',
+            'intro' => [
+                'Piplani, Govindpura, Indrapuri, Awadhpuri, Ayodhya Bypass and Saket Nagar make up the eastern side of Bhopal, around the BHEL township. The township was planned around the public-sector engineering plant and divided into neighbourhoods of four to five sectors each, with parks, community halls, a library, shopping centres and banks. Piplani holds the factory and its offices, and Govindpura adds a large industrial estate of units supplying the plant, alongside quarters and private colonies.',
+                'Indrapuri is a colony of independent houses known by its lettered sectors, Awadhpuri a settled area of two- and three-bedroom homes, and Saket Nagar, on the southern side, is home to many retired BHEL employees. The colonies along Ayodhya Bypass, such as Ayodhya Nagar, add apartments, villas and houses. The bypass is being widened up to Ratnagiri Tiraha, the planned eastern end of the metro\'s Blue Line, which is still under construction.',
+            ],
+            'tips' => [
+                'Township quarters are identified by sector and quarter number rather than street name, so send both with a landmark before the first visit; parking is usually easy.',
+                'Plant shift timings and the widening work on Ayodhya Bypass shape traffic, so check shift start and end times and prefer a tutor from the same side of the bypass.',
+                'Saket Nagar lies close to Alkapuri station on the operating Orange Line section, so a tutor from the city side can arrive by metro; elsewhere in this zone tutors come by road.',
+            ],
+        ],
+        'Old City, Lalghati & Bairagarh' => [
+            'guide' => 'bhel-and-old-bhopal-tuition-guide',
+            'intro' => [
+                'The Old City, Idgah Hills, Kohefiza, Lalghati and Bairagarh lie north and west of the Upper Lake. The Old City grew under Bhopal\'s nawabs and begums, with narrow lanes, family houses above or behind shops, and bazaars such as Chowk Bazaar and Sarafa around the Jama Masjid of 1837. Idgah Hills rises above it on winding roads, while Kohefiza is a settled area of housing colonies and housing board homes near VIP Road.',
+                'Lalghati, along the lake, adds apartments and villa projects around a busy junction. Bairagarh, officially Sant Hirdaram Nagar, began as one of the oldest camps for Sindhi families after Partition and grew into a market town; its station took the new name in 2018. Bhopal Junction and the Nadra Bus Stand are planned stations on the unopened northern part of the Orange Line, and VIP Road, four lanes along the lake, leads to the airport.',
+            ],
+            'tips' => [
+                'In the Old City and Bairagarh, many doors cannot be reached by car, so the tutor parks a two-wheeler where the lane narrows; name a mosque, temple or market corner as the landmark.',
+                'On Idgah Hills, share the house or building name as well as the number, since roads climb and wind and a first visit is easier with a clear reference point.',
+                'Evening traffic at Lalghati Chouraha, on VIP Road and in the market streets is heavy, so an afternoon or early-evening slot, set before the busy hour, is easier to keep.',
+            ],
+        ],
+    ],
+    // Kolkata (1 Oct 2026), from database/seo-content/areas/kolkata-zone-guides.json.
+    'Kolkata' => [
+        'Ballygunge, Gariahat & Alipore' => [
+            'guide' => 'south-kolkata-tuition-guide',
+            'intro' => [
+                'Ballygunge, Bhowanipore, Kalighat, Alipore, Dhakuria, Jodhpur Park and Lake Gardens make up the old heart of South Kolkata. Ballygunge\'s mansions date from the 1930s and 1940s, Bhowanipore was one of the villages the East India Company acquired in 1758, and Jodhpur Park was split into about 450 plots by a housing co-operative in 1947. Housing is mostly family houses and older buildings, with apartment blocks added on many streets, and Alipore keeps its colonial-era bungalows.',
+                'This is where the Blue Line began: its first stretch opened on 24 October 1984, and Jatin Das Park, Kalighat and Rabindra Sarobar followed in April 1986. Ballygunge Junction, Dhakuria and Lake Gardens are stops on the Sealdah South suburban lines, while Alipore uses Majerhat and Kidderpore on the Circular section. Gariahat Market spreads around the crossing, which is the busiest point of the zone at weekends and in the festive season.',
+            ],
+            'tips' => [
+                'Tell the tutor which Blue Line stop to use: Netaji Bhavan or Jatin Das Park for Bhowanipore, Kalighat for the temple area, Rabindra Sarobar for Lake Gardens and Jodhpur Park.',
+                'Avoid weekend evenings near the Gariahat crossing and the weeks before Durga Puja; a weekday afternoon or an online session keeps the routine going.',
+                'In older houses, say which floor and which bell; in apartment buildings with a staffed gate, give the tutor\'s name in advance.',
+            ],
+        ],
+        'Tollygunge, Jadavpur & Garia' => [
+            'guide' => 'south-kolkata-tuition-guide',
+            'intro' => [
+                'Tollygunge, Golf Green, Regent Park, Jadavpur, Bansdroni, Naktala, Baghajatin and Garia run south along the Adi Ganga. Much of the zone took shape after 1947, when families from East Pakistan settled here; by 1949 Jadavpur alone held about forty refugee colonies, Bijoygarh among them. Tollygunge is the centre of the Bengali film industry, Golf Green is low-rise flats among green spaces, Bansdroni is almost wholly residential, and Garia is split between two civic bodies.',
+                'The Blue Line is the backbone. It reached Tollygunge in 1986, Garia Bazar on 22 August 2009 with Netaji, Masterda Surya Sen and Gitanjali, and New Garia on 7 October 2010. Jadavpur, Baghajatin and Garia also have stations on the Sealdah South lines, and Tollygunge has one on the Budge Budge line. Homes are family houses in the lanes and apartment buildings on the main roads, so most visits are straight to the door.',
+            ],
+            'tips' => [
+                'Pick the stop nearest your home: Mahanayak Uttam Kumar for Tollygunge and Golf Green, Masterda Surya Sen for Bansdroni, Gitanjali for Naktala, Kavi Nazrul for Garia and Baghajatin.',
+                'Keep lessons away from college and office hours around the 8B crossing in Jadavpur; weekend mornings are the calmest slot.',
+                'The main road from Tollygunge to Garia slows in the evening peak, so a tutor using the metro keeps time better than one driving.',
+            ],
+        ],
+        'Behala & New Alipore' => [
+            'guide' => 'south-kolkata-tuition-guide',
+            'intro' => [
+                'Behala, New Alipore and Thakurpukur form the south-western side of the city along Diamond Harbour Road. Behala is one of Kolkata\'s oldest and largest residential areas, spread across wards 115 to 132 and taking in pockets such as Barisha, Sarsuna, Parnasree Pally and Haridevpur. New Alipore was laid out in the 1950s as a planned suburb of lettered blocks, and Thakurpukur, once part of the Barisha estate, is densely built along busy market streets.',
+                'The Purple Line runs along Diamond Harbour Road. Joka to Taratala, with Thakurpukur, Sakherbazar, Behala Chowrasta and Behala Bazar, was inaugurated on 30 December 2022, and the extension to Majerhat on 6 March 2024. New Alipore has two suburban stations of its own, New Alipore and Majerhat, and Majerhat links the southern lines with the Circular Railway. Old family houses sit beside newer apartment buildings and builder floors.',
+            ],
+            'tips' => [
+                'Name your Purple Line stop, such as Behala Chowrasta, Sakherbazar or Thakurpukur, so the tutor can plan the short auto ride from there.',
+                'Diamond Harbour Road is slow in the evening peak; a tutor coming by road should aim for an afternoon or a weekend morning.',
+                'For New Alipore, share the block letter as well as the house number, since the suburb is still organised by lettered blocks.',
+            ],
+        ],
+        'Kasba & EM Bypass South' => [
+            'guide' => 'south-kolkata-tuition-guide',
+            'intro' => [
+                'Kasba, Santoshpur, Mukundapur and Patuli line the southern stretch of the Eastern Metropolitan Bypass, which opened in 1982. Kasba was a small hamlet until a rail overbridge in 1978 and a connector road to the bypass brought offices and housing. Santoshpur was still largely marsh and fields in the 1970s, Mukundapur is mostly newer apartment projects, and Patuli grew around a planned township with about 4,500 serviced plots designed for some 55,000 people.',
+                'The Orange Line runs along the bypass. Kavi Subhash to Hemanta Mukhopadhyay, with Satyajit Ray, Jyotirindra Nandi and Kavi Sukanta, opened on 6 March 2024, and the line reached Beleghata on 22 August 2025. On the railway side, Ballygunge Junction, Jadavpur and Baghajatin serve the western edge. Inner paras keep older houses, but many families here, especially close to the bypass, live in newer complexes that register visitors at the gate.',
+            ],
+            'tips' => [
+                'Send the tutor\'s name and lesson time to the complex gate before the demo, and ask for a standing entry if the tutor will come every week.',
+                'The bypass junctions are heavy in the evening rush, so book an afternoon or weekend slot, or pick a tutor who arrives on the Orange Line.',
+                'In Patuli, give the block and plot number; in Santoshpur and Kasba, a para name and a landmark help a first-time tutor.',
+            ],
+        ],
+        'Salt Lake' => [
+            'guide' => 'salt-lake-and-new-town-tuition-guide',
+            'intro' => [
+                'Salt Lake, officially Bidhannagar, was built on reclaimed wetland east of the city. Reclamation of Sector I was finished in 1965, plots were handed out from 1966, and the first residents moved into a house in AB Block on 9 March 1970. Sectors II and III were reclaimed by 1969, and the township took the name Bidhannagar in 1973. Most homes are independent houses on plots, arranged in lettered blocks along numbered avenues and cross roads.',
+                'The Green Line opened here in February 2020, from Salt Lake Sector V through Karunamoyee, Central Park, City Centre and Bengal Chemical to Salt Lake Stadium. On 22 August 2025 it was joined end to end, so it now runs to Sealdah, Esplanade and Howrah Maidan. Bidhannagar Road station serves the western side, and the Salt Lake to Kestopur bridge has linked the township with VIP Road since 2022.',
+            ],
+            'tips' => [
+                'Write the address the Salt Lake way: block letters, house number and the nearest avenue, because tutors navigate by those.',
+                'Houses open onto the street, so there is usually no gate register; just tell the tutor which bell to ring.',
+                'Roads towards Sector V and the bypass fill at office hours, so early evenings and weekends are easier lesson times.',
+            ],
+        ],
+        'New Town & Rajarhat' => [
+            'guide' => 'salt-lake-and-new-town-tuition-guide',
+            'intro' => [
+                'New Town was begun in the late 1990s and is run today by the New Town Kolkata Development Authority, with HIDCO planning its projects. It is divided into Action Areas I, II and III, with a central business district between the first two. Action Area I mixes plotted blocks, housing estates and private complexes, Action Area II centres on Eco Park, and Action Area III is mostly two- and three-bedroom flats. Rajarhat, including Chinar Park and Teghoria, is the older area around it.',
+                'Biswa Bangla Sarani, the Major Arterial Road, links the Action Areas and heads towards the airport, and Rajarhat Main Road runs from near Baguiati through Chinar Park. The Orange Line\'s New Town stations, including Nazrul Tirtha and Eco Park, are under construction, so today tutors arrive by bus, cab or two-wheeler, often after the Green Line to Salt Lake Sector V. Since June 2015 Rajarhat has been part of the Bidhannagar Municipal Corporation.',
+            ],
+            'tips' => [
+                'Almost every home is in a gated complex, so give the security desk the tutor\'s name, phone number, tower and flat before the first class.',
+                'A tutor who already lives in New Town, Rajarhat or Baguiati is the easiest match while the Orange Line stations are being built.',
+                'Keep lessons clear of office-hour peaks at the Chinar Park crossing and Teghoria, and use online sessions for subjects with few local tutors.',
+            ],
+        ],
+        'Lake Town, Dum Dum & Baguiati' => [
+            'guide' => 'salt-lake-and-new-town-tuition-guide',
+            'intro' => [
+                'Lake Town, Bangur Avenue, Kestopur, Baguiati and Dum Dum sit along VIP Road and Jessore Road on the north-eastern side of the city. VIP Road, finished in 1962, runs from Ultadanga to the airport past most of the zone. Lake Town and Bangur Avenue belong to South Dum Dum Municipality, while Kestopur and Baguiati are in the Bidhannagar Municipal Corporation. Homes range from older houses and builder floors to mid-rise flats and some gated complexes.',
+                'Dum Dum and Belgachia opened on the Blue Line on 12 November 1984, Dum Dum Junction is on the Sealdah to Ranaghat line and starts the Circular Railway, and since 22 August 2025 the Yellow Line has run from Noapara through Dum Dum Cantonment to the airport. The Ultadanga flyover opened in 2011 and the flyover over VIP Road at Baguiati in March 2015. Baguiati has no metro station of its own yet.',
+            ],
+            'tips' => [
+                'For Baguiati and Kestopur, share an exact landmark off VIP Road, since addresses are spread over several sub-localities.',
+                'VIP Road and Jessore Road carry airport traffic, so leave a margin around the evening peak when fixing the lesson time.',
+                'Dum Dum is among the easiest places in the city to reach by train or metro, which widens the pool of tutors who can come.',
+            ],
+        ],
+        'North Kolkata' => [
+            'guide' => 'north-kolkata-and-howrah-tuition-guide',
+            'intro' => [
+                'Shyambazar, Bagbazar, Sovabazar, Maniktala, Belgachia and Sinthee make up the oldest part of the city. Bagbazar grew out of the historic village of Sutanuti beside the Hooghly, Sovabazar was a wealthy merchant quarter whose family mansions have held Durga Puja since 1757, and Maniktala joined the city under the 1923 Calcutta Municipal Act. Lanes of older family houses with verandahs and latticework remain, though many plots have been rebuilt as small apartment buildings.',
+                'Belgachia has had a Blue Line station since 1984, Shyambazar and Sovabazar Sutanuti opened in February 1995 along with Girish Park, and the line was extended to Baranagar and Dakshineswar in February 2021. The Circular Railway stops at Bagbazar and Sovabazar Ahiritola, and ferries run from Bagbazar Ghat. Most visits are to a family house or a small building at street level, so there is rarely any gate formality.',
+            ],
+            'tips' => [
+                'Public transport usually beats a car here: the last few steps are often on foot through narrow lanes from Shyambazar, Sovabazar Sutanuti or Girish Park.',
+                'The Shyambazar five-point crossing and the market roads are crowded at school and office hours, so mid-afternoon or later evening works better.',
+                'In Puja season the heritage lanes fill with visitors; move lessons earlier or online for those weeks.',
+            ],
+        ],
+        'Howrah' => [
+            'guide' => 'north-kolkata-and-howrah-tuition-guide',
+            'intro' => [
+                'Shibpur, Salkia and Santragachi lie on the west bank of the Hooghly. Shibpur covers Howrah Municipal Corporation wards 25 to 45 except 43, with a densely built old core and newer multi-storey complexes. Salkia in north Howrah is anchored by a market more than a century old and has mid-size apartment buildings and older houses. Santragachi, on the Kona Expressway, is known for its railway junction and for a lake that draws migratory birds each winter.',
+                'On 6 March 2024 the Green Line began running under the Hooghly from Esplanade to Howrah and Howrah Maidan, and since 22 August 2025 it has continued without a break to Salt Lake Sector V. Santragachi Junction is on the South Eastern Railway, Liluah and Tikiapara serve Salkia, a central bus terminus opened on the Kona Expressway in 2015, and ferries cross from the Golabari and Bandhaghat ghats.',
+            ],
+            'tips' => [
+                'Ask for a tutor who already teaches on the Howrah side, or one who can use the Green Line to Howrah or Howrah Maidan.',
+                'In Santragachi\'s gated complexes, share the tower, flat number and gate rules with the tutor before the demo.',
+                'Give an exact lane landmark in Salkia and old Shibpur, and allow extra time on the Kona Expressway at office hours.',
+            ],
+        ],
+    ],
+    // Patna (1 Oct 2026), from database/seo-content/areas/patna-zone-guides.json.
+    'Patna' => [
+        'Boring Road & Patliputra' => [
+            'guide' => 'north-and-west-patna-tuition-guide',
+            'intro' => [
+                'Boring Road, Sri Krishna Puri, Kidwaipuri, Boring Canal Road, Shivpuri, Patliputra Colony, Shastri Nagar and Digha make up the settled colonies between central Patna and the Ganga. Boring Road itself is now mostly shops, offices and coaching classes, so families live a turn away in Nageshwar Colony, Sri Krishna Puri, Buddha Colony or Anandpuri. Patliputra Colony was formed in 1954 as a cooperative housing society for government officials, and Digha has grown from farmland into old houses and high-rise blocks.',
+                'There is no metro station in this zone yet, so tutors come by two-wheeler, auto or car. Digha Bridge Halt, opened in November 2017 beside the Digha-Sonpur rail-road bridge, links the riverside with Patliputra Junction and Patna Junction, and the Ganga riverfront expressway starts at Digha. Most homes are houses or low-rise buildings, so a tutor arrives at a door or a single gate rather than a township desk, and a tutor from the next colony is often the easiest match.',
+            ],
+            'tips' => [
+                'Give a colony name and lane landmark rather than just Boring Road, because most homes sit in Sri Krishna Puri, Nageshwar Colony, Kidwaipuri or Anandpuri off the main road.',
+                'Avoid the evening rush at the Boring Road crossing: set lessons before it builds, or pick a tutor who lives in your own colony and can walk or ride over.',
+                'For Digha\'s towers, register the tutor at the gate before the demo; a tutor coming from the Patliputra side can use the riverfront expressway to skip the inner roads.',
+            ],
+        ],
+        'Bailey Road & Danapur' => [
+            'guide' => 'north-and-west-patna-tuition-guide',
+            'intro' => [
+                'Bailey Road runs west from near the Income Tax roundabout, past the administrative quarter, into a long corridor of two- and three-bedroom flats that ends at Danapur. Raja Bazar has small complexes by local builders, Rukanpura holds Patliputra Junction, Saguna More mixes large gated townships with smaller buildings, and Danapur keeps its own municipal council and a cantonment established in 1765. Khagaul, next door, is an old town that holds Danapur railway station, headquarters of the Danapur division.',
+                'The Red Line of Patna Metro is being built beneath Bailey Road, with planned stations at Danapur, Saguna Mor, RPS Mor, Patliputra, Raja Bazar, Patna Zoo, Vikas Bhawan and Vidyut Bhawan, but none is open yet. Until then tutors travel by two-wheeler, auto or car, and construction barriers can slow parts of the road. Apartment buildings and townships register visitors at the gate, and homes inside the cantonment follow their own entry rules, so the family should check how a tutor is admitted.',
+            ],
+            'tips' => [
+                'Ask a township\'s main gate whether a standing visitor pass can be issued for a regular tutor, so each lesson does not start with fresh paperwork.',
+                'Choose a tutor from the same stretch of Bailey Road, such as Saguna More with Danapur or Raja Bazar with Rukanpura, and keep lessons outside office hours.',
+                'If the home is inside Danapur Cantonment, confirm the visitor procedure before the demo and share it with the tutor in advance.',
+            ],
+        ],
+        'Kankarbagh & Rajendra Nagar' => [
+            'guide' => 'south-and-old-patna-tuition-guide',
+            'intro' => [
+                'Kankarbagh, one of Patna\'s largest residential colonies, runs from Ashok Nagar to Kumhrar, where the remains of ancient Pataliputra include a Mauryan pillared hall. It mixes houses, builder floors and apartment buildings around markets on the main road and the 90 Feet road. Rajendra Nagar is a planned colony on numbered roads with parks between blocks, Kadamkuan is crowded and central near the station, and Bhootnath Road runs through Bahadurpur between the Old and New Bypass roads.',
+                'This is the zone the metro already serves. The Blue Line opened to the public on 7 October 2025 between Bhootnath, Zero Mile and the Patliputra Bus Terminal, and on 2 July 2026 it reached Malahi Pakri on the 90 Feet road, with trains passing Khemnichak until that station is built. The underground section towards Rajendra Nagar and Patna Junction is under construction. Rajendra Nagar Terminal, opened in 2003, and Patna Junction give tutors rail links as well.',
+            ],
+            'tips' => [
+                'Look for a tutor living near Bhootnath or Malahi Pakri station: they can come by metro and finish with a short auto ride instead of fighting main-road traffic.',
+                'In Rajendra Nagar share the road number and house or building name; in Kadamkuan send a precise lane landmark, because parking and lanes are tight.',
+                'Bhootnath Road and the market roads fill when coaching batches change over, so fix a lesson time that avoids those changeover hours.',
+            ],
+        ],
+        'Gandhi Maidan, Ashok Rajpath & Old Patna' => [
+            'guide' => 'south-and-old-patna-tuition-guide',
+            'intro' => [
+                'This is Patna\'s historic spine along the Ganga. Bankipur grew as the colonial civil station after 1765 around the ground now called Gandhi Maidan, with the Golghar granary of 1784 to 1786 nearby and flats among the shops of the commercial blocks to the south. Ashok Rajpath runs from near Golghar to Didarganj, with colleges on its northern side and old houses and markets on its southern side, and Patna City, the old eastern town, is a trading centre of close-built neighbourhoods.',
+                'Patna Junction, opened in 1862 as Bankipore Junction, and Patna Sahib station on the old city side are the rail anchors. The Ganga riverfront expressway, complete from Digha to Didarganj since April 2025, meets Ashok Rajpath at nine points, which lets tutors from the north-west reach the zone quickly. Underground Blue Line stations at Gandhi Maidan and Akashvani are still under construction, so most tutors ride in, and in the old city\'s lanes a two-wheeler or e-rickshaw beats a car.',
+            ],
+            'tips' => [
+                'Keep lessons away from college opening and closing times on Ashok Rajpath, and give the tutor a lane landmark rather than just the road name.',
+                'In Patna City share a landmark such as a well-known shop or gali name, and a phone number, because house numbers are hard to follow in the older lanes.',
+                'For flats near Gandhi Maidan, tell the building gate the tutor\'s name in advance, and plan online sessions on days when big events are held at the Maidan.',
+            ],
+        ],
+        'Anisabad, Gardanibagh & Phulwari' => [
+            'guide' => 'south-and-old-patna-tuition-guide',
+            'intro' => [
+                'The south-west of Patna is its growing edge. Anisabad is a developing neighbourhood around a busy roundabout, with apartment buildings of one to four bedrooms, plotted homes and builder floors. Gardanibagh is established housing near the Secretariat area, bordered by Kidwaipuri, Jakkanpur and Rajbanshi Nagar, where a state project of 752 flats for officers was taken up from 2020. Phulwari Sharif, known for its Sufi heritage, is among the fastest-growing parts of the metropolitan region, with new apartment buildings spreading beyond its old core.',
+                'There is no metro in this zone yet. Phulwari Sharif has its own station on the Howrah-Delhi main line, Patna Junction is close to Gardanibagh, and National Highway 139 runs through Phulwari. An elevated four-lane road from the Anisabad roundabout through Phulwari has been planned, and the elevated corridor towards Digha already helps tutors travelling north. Government housing campuses and newer buildings check visitors at the gate, while plotted lanes allow a tutor to arrive at the door.',
+            ],
+            'tips' => [
+                'Pick a tutor who lives on your side of the Anisabad roundabout, because crossing it at peak hours is the slowest part of most trips here.',
+                'For a government housing campus in Gardanibagh, give the tutor the block and flat number and tell the gate before the first lesson.',
+                'In Phulwari Sharif\'s newer buildings, register the tutor once with the guard; for specialist subjects taught by tutors in north Patna, add online sessions.',
+            ],
+        ],
+    ],
 ];

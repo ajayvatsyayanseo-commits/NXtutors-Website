@@ -1,0 +1,573 @@
+{
+  "areas": {
+    "navrangpura": {
+      "name": "Navrangpura",
+      "zone": "Navrangpura, Paldi & Ellisbridge",
+      "type": "mixed",
+      "about": "<p>Navrangpura was one of the first neighbourhoods to develop outside Ahmedabad's old walled city, on the western side of the Sabarmati, and it still mixes residential societies with busy commercial streets. Homes range from older low-rise apartment blocks and independent houses to newer high-rise flats and a few penthouses, while offices, shops and cafes line CG Road and the streets around Vijay Cross Roads. Neighbours include Ellisbridge, Paldi, Ambawadi and Naranpura.</p><p>The Blue Line of the Ahmedabad Metro runs through the area, with SP Stadium and Commerce Six Road stations, and Old High Court station nearby is the interchange with the Red Line. For a tutor, a metro ride plus a short auto trip works from most of the city. In apartment buildings the tutor usually signs in with the watchman; in independent houses the visit is straight to the door. CG Road and the main crossroads get crowded in the evening, so an early-evening slot or a weekend morning is easier to keep. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Navrangpura",
+        "https://www.squareyards.com/navrangpura-in-ahmedabad-overview-1204",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Ahmedabad_Metro)"
+      ]
+    },
+    "ellisbridge": {
+      "name": "Ellisbridge",
+      "zone": "Navrangpura, Paldi & Ellisbridge",
+      "type": "mixed",
+      "about": "<p>Ellisbridge takes its name from the bridge across the Sabarmati that was rebuilt in steel in 1892, and the locality at its western end is one of the older, well-settled parts of West Ahmedabad. Housing is a mix of apartment buildings, some independent homes and plots, with the Law Garden area, the riverfront and office stretches along Ashram Road close by. Navrangpura and Paldi are its immediate neighbours.</p><p>Gandhigram station on the Red Line of the Ahmedabad Metro is located in Ellisbridge, next to Gandhigram railway station, and the Old High Court interchange with the Blue Line is one stop north. Tutors coming from the northern or southern suburbs can ride the Red Line and walk or take an auto for the last stretch. Older apartment buildings usually have a watchman who notes visitors, while independent homes mean a direct doorstep visit. Ashram Road and the bridge approaches are slow at office hours, so a late-afternoon or weekend class suits most families. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ellis_Bridge",
+        "https://en.wikipedia.org/wiki/Gandhigram_metro_station",
+        "https://www.99acres.com/ellisbridge-ahmedabad-west-overview-piffid",
+        "https://en.wikipedia.org/wiki/Red_Line_(Ahmedabad_Metro)"
+      ]
+    },
+    "paldi": {
+      "name": "Paldi",
+      "zone": "Navrangpura, Paldi & Ellisbridge",
+      "type": "mixed",
+      "about": "<p>Paldi is an established residential area in south-west Ahmedabad, on the western side of the Sabarmati, known for a balanced mix of old and new housing. Traditional neighbourhoods with independent houses, including several homes from the Art Deco period, sit alongside apartment complexes, builder floors and small commercial pockets, and a number of company offices are based here. Ellisbridge, Ambawadi and Vasna are its neighbours, with Ashram Road linking it to the central parts of the city.</p><p>The Red Line of the Ahmedabad Metro has a station named Paldi, between Gandhigram and Shreyas, so a tutor coming from Vasna, Naranpura or Sabarmati can ride the metro and finish the trip on foot or by auto. In older lanes parking can be limited, so tutors often come by two-wheeler, while apartment complexes usually note visitors at the gate. Evening traffic builds on the roads towards the bridges, so an early-evening class keeps the timing steady. Families wanting a specialist for board or entrance subjects can mix home classes with online sessions. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Paldi_(Ahmedabad)",
+        "https://www.squareyards.com/paldi-in-ahmedabad-overview-1206",
+        "https://en.wikipedia.org/wiki/Red_Line_(Ahmedabad_Metro)"
+      ]
+    },
+    "ambawadi": {
+      "name": "Ambawadi",
+      "zone": "Navrangpura, Paldi & Ellisbridge",
+      "type": "residential",
+      "about": "<p>Ambawadi is a settled residential locality in West Ahmedabad, with Paldi, Navrangpura, Vasna and Satellite around it. Most homes are apartments, from older low-rise blocks to newer towers, with independent houses, villas and a few penthouses in quieter pockets, plus shops and offices along the main roads. Shreyas station on the Red Line of the Ahmedabad Metro is located in the Sukhipura part of Ambawadi, near a public garden.</p><p>For a tutor, Shreyas and Paldi stations on the Red Line make the metro a practical option from Vasna in the south or Naranpura and Sabarmati in the north, with an auto for the final stretch. Apartment societies usually ask visitors to sign in at the gate, so sharing the tutor's name with the guard in advance saves time. Main roads in the area get crowded at school and office hours, so late-afternoon and weekend slots are easier. Students who need specialist help in subjects such as advanced maths or computer science can add online classes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Shreyas_metro_station",
+        "https://www.squareyards.com/ambawadi-in-ahmedabad-overview-1209",
+        "https://www.squareyards.com/paldi-in-ahmedabad-overview-1206",
+        "https://en.wikipedia.org/wiki/Red_Line_(Ahmedabad_Metro)"
+      ]
+    },
+    "vasna": {
+      "name": "Vasna",
+      "zone": "Navrangpura, Paldi & Ellisbridge",
+      "type": "residential",
+      "about": "<p>Vasna lies in the south-western part of West Ahmedabad, with Paldi, Ambawadi, Jivraj Park, Vishala and Juhapura among its neighbours. Housing is mostly multi-storey apartment societies aimed at middle and upper-middle-income families, with some independent houses and villas, and local shops spread along the main roads. The 132 Feet Ring Road and Vasna Road carry most of the traffic in and out of the locality.</p><p>The Red Line of the Ahmedabad Metro ends at APMC station in Vasna, with Jivraj Park and Rajiv Nagar the next stations north, so tutors from Paldi, Ellisbridge or the northern suburbs can reach the area by metro and take an auto or walk the last part. City buses also serve the locality. Most visits are to apartment societies where the guard notes visitors at the gate, and two-wheeler parking is usually simpler than car parking. Ring road traffic peaks at office hours, so an after-school slot before the evening rush works well. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Red_Line_(Ahmedabad_Metro)",
+        "https://en.wikipedia.org/wiki/APMC_metro_station",
+        "https://www.squareyards.com/vasna-in-ahmedabad-overview-1183"
+      ]
+    },
+    "satellite": {
+      "name": "Satellite",
+      "zone": "Satellite, Vastrapur & Bodakdev",
+      "type": "residential",
+      "about": "<p>Satellite is one of West Ahmedabad's long-established residential areas, lying between Jodhpur and Vastrapur, with Bodakdev, Ramdev Nagar, Shyamal, Nehru Nagar and Prahlad Nagar close by. Housing is mainly apartment complexes of varying age, alongside bungalows and villas on plotted lanes and a good spread of shops along the main roads. SG Highway and the 132 Feet Ring Road are its main road links to the rest of the city.</p><p>Satellite has no metro station of its own at present, so tutors usually arrive by two-wheeler, car or auto, or by BRTS and city buses on the nearby corridors. Gated apartment societies generally register visitors at the gate, while bungalow homes allow a direct doorstep visit with easier parking. The ring road junctions and SG Highway are busiest at office hours, so a tutor coming from farther away is easier to book for a late-afternoon or weekend slot. Where a local specialist is hard to find for a subject, online classes can fill the gap. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/satellite-in-ahmedabad-overview-1194",
+        "https://en.wikipedia.org/wiki/List_of_Ahmedabad_Metro_stations",
+        "https://en.wikipedia.org/wiki/Ahmedabad_Bus_Rapid_Transit_System"
+      ]
+    },
+    "jodhpur": {
+      "name": "Jodhpur",
+      "zone": "Satellite, Vastrapur & Bodakdev",
+      "type": "residential",
+      "about": "<p>Jodhpur, in West Ahmedabad, is a largely residential locality next to Satellite, with Shivranjani, Vastrapur, Prahlad Nagar, Shyamal, Vejalpur, Nehru Nagar and Jivraj Park around it. Apartments are the main housing type, along with builder floors, independent houses and some villas, and shops and offices line the busier roads. SG Highway is its main road link, connecting it with the northern and southern ends of the western city.</p><p>There is no metro station inside Jodhpur, so most tutors come by two-wheeler or auto; a BRTS route runs from the Shivranjani crossroads towards Bopal, which helps some tutors from that side. In apartment societies the watchman usually keeps a visitor register, so tell the gate before the first class. Traffic around the Shivranjani junction and SG Highway builds in the evening, so a class that starts before the office rush, or on a weekend morning, is easier to keep. Families near the Vejalpur side can also look at tutors based in Prahlad Nagar and Satellite. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/jodhpur-in-ahmedabad-overview-1593",
+        "https://en.wikipedia.org/wiki/Bopal",
+        "https://en.wikipedia.org/wiki/List_of_Ahmedabad_Metro_stations"
+      ]
+    },
+    "vastrapur": {
+      "name": "Vastrapur",
+      "zone": "Satellite, Vastrapur & Bodakdev",
+      "type": "residential",
+      "about": "<p>Vastrapur is a residential area in West Ahmedabad built around Vastrapur Lake, a lakeside open space that has long hosted music performances. It lies beside SG Highway, with Bodakdev, Satellite, Memnagar and Jodhpur as neighbours. Homes are mostly apartments, from older mid-rise blocks to newer towers, with bungalows in some lanes, and shops and eateries are spread along the highway and the roads leading to it.</p><p>The Blue Line of the Ahmedabad Metro runs through neighbouring Memnagar and Thaltej, with Gurukul Road, Doordarshan Kendra and Thaltej stations, so tutors can combine the metro with an auto for the final part. Many families here live in gated societies where the guard records visitors, and some ask for the tutor's details before the first visit. SG Highway is busiest at office hours, so evening classes should allow for that, and weekend mornings are often the calmest slot. Students preparing for competitive exams can add online sessions with a subject specialist. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vastrapur",
+        "https://www.squareyards.com/vastrapur-in-ahmedabad-overview-1591",
+        "https://en.wikipedia.org/wiki/Gurukul_Road_metro_station",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Ahmedabad_Metro)"
+      ]
+    },
+    "bodakdev": {
+      "name": "Bodakdev",
+      "zone": "Satellite, Vastrapur & Bodakdev",
+      "type": "mixed",
+      "about": "<p>Bodakdev is one of West Ahmedabad's higher-end residential areas, set along SG Highway, which here forms part of National Highway 147. Housing is mainly apartment towers and gated societies, with a notable share of independent houses and bungalows on plotted streets, while offices, restaurants and shops line the highway side. Neighbours include Satellite, Thaltej, Vastrapur and Shilaj.</p><p>Thaltej Gam station, which became the western end of the Blue Line in December 2024, and Thaltej station are the nearest metro stops for most of the locality, with an auto covering the final stretch. Many towers have gate security that logs every visitor and may ask for a phone number, so it helps to inform the gate before the tutor's first visit. Service lanes along SG Highway slow down in the evening rush, so a class that begins in the late afternoon is easier to keep on time. Online classes suit subjects where a specialist tutor is needed. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/bodakdev-in-ahmedabad-overview-1344",
+        "https://www.squareyards.com/blog/bodakdev-nearest-metro-station",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Ahmedabad_Metro)",
+        "https://en.wikipedia.org/wiki/Sarkhej%E2%80%93Gandhinagar_Highway"
+      ]
+    },
+    "thaltej": {
+      "name": "Thaltej",
+      "zone": "Satellite, Vastrapur & Bodakdev",
+      "type": "residential",
+      "about": "<p>Thaltej is a suburb on the western edge of Ahmedabad that grew around an old village and its lake, and it now falls in the North West Zone of the Ahmedabad Municipal Corporation. SG Highway runs through the area, with an underpass at the Thaltej junction. Housing ranges from multi-storey apartments and gated societies to bungalows, villas and plotted homes, aimed largely at middle and upper-middle-income families. Neighbours include Bodakdev, Vastrapur, Memnagar, Ghatlodia and Sola.</p><p>Thaltej sits at the western end of the Ahmedabad Metro Blue Line: Thaltej station opened in September 2022 and Thaltej Gam followed in December 2024, giving tutors a direct ride from Navrangpura, the old city and the eastern suburbs. From the station, an auto or a short walk completes the trip. Gated societies usually record visitors at the gate, while plotted homes offer easy parking at the door. SG Highway is heavy at office hours, so plan evening classes with some margin, or pick a weekend morning for longer sessions. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Thaltej",
+        "https://www.squareyards.com/thaltej-in-ahmedabad-overview-1178",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Ahmedabad_Metro)",
+        "https://en.wikipedia.org/wiki/Sarkhej%E2%80%93Gandhinagar_Highway"
+      ]
+    },
+    "memnagar": {
+      "name": "Memnagar",
+      "zone": "Satellite, Vastrapur & Bodakdev",
+      "type": "residential",
+      "about": "<p>Memnagar is a residential locality in West Ahmedabad with Navrangpura, Naranpura, Ghatlodia and Vastrapur around it and the Gurukul area next door. Housing is mainly 2 and 3 BHK apartments in mid-rise societies, with some independent houses, villas and builder floors. SG Highway and the 132 Feet Ring Road give it road links across the western city and north towards Gandhinagar.</p><p>Gurukul Road station on the Blue Line of the Ahmedabad Metro is located in Memnagar, and Doordarshan Kendra station is the next stop west, so tutors can reach the area directly by metro from Navrangpura, the old city or Thaltej. Many homes are in societies with a gate where visitors are noted, and parking inside is often limited, so tutors on two-wheelers find it easiest. Roads near the ring road junctions slow down at office hours; an after-school slot before the evening rush tends to work well. Online classes can support specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Gurukul_Road_metro_station",
+        "https://www.squareyards.com/memnagar-in-ahmedabad-overview-1202",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Ahmedabad_Metro)"
+      ]
+    },
+    "prahlad-nagar": {
+      "name": "Prahlad Nagar",
+      "zone": "Prahlad Nagar, Bopal & Shela",
+      "type": "mixed",
+      "about": "<p>Prahlad Nagar in south-west Ahmedabad sits right alongside SG Highway and combines premium apartment societies with a large cluster of offices and shopping centres. Most homes are flats in gated complexes, with a limited number of villas, penthouses and independent houses; vacant land is scarce, so new large projects are rare. Neighbours include Satellite, Jodhpur, Makarba, Vejalpur, Shyamal and Ramdev Nagar.</p><p>There is no metro station in Prahlad Nagar at present, so tutors come by two-wheeler, auto or car, and BRTS and city buses also serve the area. Gated societies typically ask visitors to register at the gate, and entry is often confirmed with the family by phone, which is worth setting up before the first class. Office traffic makes SG Highway and the inner roads slow in the evening, so a late-afternoon or weekend class is easier to schedule. Online classes are a practical addition for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/prahlad-nagar-in-ahmedabad-overview-1199",
+        "https://en.wikipedia.org/wiki/List_of_Ahmedabad_Metro_stations",
+        "https://en.wikipedia.org/wiki/Sarkhej%E2%80%93Gandhinagar_Highway"
+      ]
+    },
+    "bopal": {
+      "name": "Bopal",
+      "zone": "Prahlad Nagar, Bopal & Shela",
+      "type": "residential",
+      "about": "<p>Bopal, on the south-western edge of Ahmedabad, grew quickly from a village into a large suburb: its population rose sharply between 2001 and 2011, and Bopal and neighbouring Ghuma were combined into a municipality in 2015 before coming under the Ahmedabad Municipal Corporation. Housing is mostly mid-priced multi-storey apartments and gated societies, with villas in newer pockets. The SP Ring Road carries most traffic past the Bopal crossroads, and South Bopal, Shela and Ghuma are its neighbours.</p><p>Bopal has no metro station, but a BRTS route links the area with the Shivranjani crossroads, and many tutors travel by two-wheeler. Most visits are to gated societies where the guard logs visitors, and two-wheeler parking is usually available near the gate. The Bopal crossroads and the SP Ring Road junction get crowded at office hours, so timing a class for the late afternoon helps. For senior-school specialist subjects, online classes widen the choice of tutors. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bopal",
+        "https://www.squareyards.com/bopal-in-ahmedabad-overview-1196",
+        "https://en.wikipedia.org/wiki/Sardar_Patel_Ring_Road",
+        "https://www.99acres.com/articles/ahmedabad-bopal-shela-and-ghuma-to-come-under-amc-jurisdiction-nid.html"
+      ]
+    },
+    "south-bopal": {
+      "name": "South Bopal",
+      "zone": "Prahlad Nagar, Bopal & Shela",
+      "type": "residential",
+      "about": "<p>South Bopal, often shortened to SoBo, is the newer southern part of Bopal and has become a popular address for families moving from older parts of the city. Housing is almost entirely apartments and flats in modern gated complexes, with a few villas and a stretch of shops and offices. Neighbours include Bopal, Shela, Ghuma, Ambli and Makarba, and a public park with fitness facilities and sports courts opened here in 2018.</p><p>BRTS Route 17 runs between Nehru Nagar and South Bopal, which helps tutors coming from the Satellite side, while most others use two-wheelers along the SP Ring Road and SG Highway. There is no metro station in the area. Gated societies generally register visitors at the gate and some issue a visitor pass, so sharing the tutor's details in advance avoids delays. Roads towards SG Highway and the ring road junctions slow at office hours, so late-afternoon or weekend classes are the easiest to keep regular. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bopal",
+        "https://www.squareyards.com/south-bopal-in-ahmedabad-overview-19148",
+        "https://en.wikipedia.org/wiki/Ahmedabad_Bus_Rapid_Transit_System"
+      ]
+    },
+    "shela": {
+      "name": "Shela",
+      "zone": "Prahlad Nagar, Bopal & Shela",
+      "type": "residential",
+      "about": "<p>Shela is a fast-developing residential locality on the western outskirts of Ahmedabad, beyond South Bopal, with road links towards Sanand and Telav. Housing is dominated by newer apartment towers and township-style gated projects, alongside residential plots, villas and some independent houses. The SP Ring Road connects it with the rest of the city, Shela Road is the main internal route, and South Bopal, Ghuma and Shantipura are close by.</p><p>There is no metro or suburban rail station in Shela, so tutors usually travel by two-wheeler or car via the SP Ring Road and South Bopal. Many families live in large gated complexes where visitors are registered at the main gate and sometimes again at the tower, so allow a little extra time for the first visit. As the locality sits on the city's edge, families often combine a home tutor for core subjects with online classes for specialist ones. Ring road junctions are busiest at office hours, so late-afternoon slots are the easiest to fix. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/shela-in-ahmedabad-overview-1604",
+        "https://www.squareyards.com/south-bopal-in-ahmedabad-overview-19148",
+        "https://en.wikipedia.org/wiki/List_of_Ahmedabad_Metro_stations"
+      ]
+    },
+    "naranpura": {
+      "name": "Naranpura",
+      "zone": "Naranpura, Gota & Chandkheda",
+      "type": "residential",
+      "about": "<p>Naranpura is a settled residential neighbourhood in West Ahmedabad, with Navrangpura, Memnagar, Ghatlodia, Nava Vadaj and Vijay Nagar around it. Housing ranges from budget apartment blocks and mid-segment societies to large bungalows, with busy shopping streets around Vijay Char Rasta and along Ankur Road. The area spans several municipal wards and gives its name to an assembly constituency formed in 2008.</p><p>Vijay Nagar station on the Red Line of the Ahmedabad Metro sits in the Naranpura area, and Gujarat University station on the Blue Line also carries a Naranpura address, so tutors can reach it by metro from Paldi, Vasna, Sabarmati or Thaltej. Where internal roads are narrow, a two-wheeler is easier than a car, and many buildings have a watchman who notes visitors. Vijay Char Rasta and the roads around it get crowded in the evening, so a class that begins before the rush is simpler to keep on time. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vijay_Nagar_metro_station",
+        "https://en.wikipedia.org/wiki/Gujarat_University_metro_station",
+        "https://www.squareyards.com/naranpura-in-ahmedabad-overview-1203",
+        "https://en.wikipedia.org/wiki/Naranpura"
+      ]
+    },
+    "ghatlodia": {
+      "name": "Ghatlodia",
+      "zone": "Naranpura, Gota & Chandkheda",
+      "type": "residential",
+      "about": "<p>Ghatlodia, also spelt Ghatlodiya, is a well-established and densely built residential area in north-west Ahmedabad, with Naranpura, Memnagar, Thaltej, Chandlodiya, Nirnay Nagar and Chanakyapuri around it. Much of the housing is low-rise, with apartment societies of 2 and 3 BHK flats, independent houses and some villas. SG Highway and the 132 Feet Ring Road are the main road links, and Chandlodiya railway station is nearby.</p><p>There is no metro station inside Ghatlodia; tutors often use the Blue Line to Gurukul Road or Thaltej and then an auto, or come directly by two-wheeler. Many homes are in older societies where visitors go straight to the door, while newer apartment buildings keep a register at the gate. The ring road and Sola Road get busy at office hours, so late-afternoon and weekend slots are the easiest to fix. Online classes help with specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/ghatlodia-in-ahmedabad-overview-1329",
+        "https://en.wikipedia.org/wiki/Thaltej",
+        "https://en.wikipedia.org/wiki/List_of_Ahmedabad_Metro_stations"
+      ]
+    },
+    "gota": {
+      "name": "Gota",
+      "zone": "Naranpura, Gota & Chandkheda",
+      "type": "residential",
+      "about": "<p>Gota is a residential neighbourhood in north-west Ahmedabad that grew after SG Highway was built, and it now falls in the city's North West Zone. It is known mainly for mid-range apartment societies, with builder floors, penthouses and some shops and offices along the main roads. Neighbours include Chandlodiya, Vasant Nagar, Jagatpur, Ognaj, Chanakyapuri and New Ranip.</p><p>SG Highway runs through Gota, and BRTS Route 9 ends at the Gota and Vasant Nagar Township area, giving tutors a bus option from other parts of the city. There is no metro station in Gota itself, so most tutors come by two-wheeler or car. Apartment societies usually note visitors at the gate, and some ask the family to confirm by phone. The highway and its junctions are busy at office hours, so a class timed before the evening rush keeps the schedule steady. For specialist subjects, online classes add more choice. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/gota-in-ahmedabad-overview-1274",
+        "https://en.wikipedia.org/wiki/Sarkhej%E2%80%93Gandhinagar_Highway",
+        "https://en.wikipedia.org/wiki/Ahmedabad_Bus_Rapid_Transit_System",
+        "https://en.wikipedia.org/wiki/Thaltej"
+      ]
+    },
+    "chandkheda": {
+      "name": "Chandkheda",
+      "zone": "Naranpura, Gota & Chandkheda",
+      "type": "residential",
+      "about": "<p>Chandkheda is a well-developed area in north-west Ahmedabad, west of the Sabarmati, with Gandhinagar to its north. Once a separate panchayat, it became part of the Ahmedabad Municipal Corporation in January 2008. Growth was driven partly by staff housing for a large public-sector office nearby, and homes include large housing board societies, company colonies, apartment complexes, builder floors and independent houses. Neighbours include Motera, Sabarmati, Gota, Jagatpur and Zundal.</p><p>The wide New CG Road is the main spine of the locality and leads towards Gandhinagar, while Tragad Road serves many residential pockets. The Red Line of the Ahmedabad Metro starts at Motera Stadium next door, where the Gandhinagar line also begins, so tutors can travel by metro and take an auto for the last part. Large societies usually have a gate register, while independent houses mean a doorstep visit with easier parking. New CG Road is busiest at office hours, so plan evening classes accordingly. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chandkheda",
+        "https://www.squareyards.com/chandkheda-in-ahmedabad-overview-1188",
+        "https://en.wikipedia.org/wiki/Red_Line_(Ahmedabad_Metro)",
+        "https://en.wikipedia.org/wiki/Yellow_Line_(Ahmedabad_Metro)"
+      ]
+    },
+    "sabarmati": {
+      "name": "Sabarmati",
+      "zone": "Naranpura, Gota & Chandkheda",
+      "type": "mixed",
+      "about": "<p>Sabarmati is a large, long-settled area in the north of West Ahmedabad, named after the river it lies along, with Chandkheda, Motera, Ranip, Vijay Nagar and Koteshwar around it. Apartments make up most of the housing, alongside older independent homes and railway colony areas, and shops line the main road. Sabarmati railway station is a key rail point, and a Red Line metro station linked to it is still under construction.</p><p>Sabarmati station on the Red Line of the Ahmedabad Metro, opened in 2022, serves the area, with AEC the next stop south and Motera Stadium, where the Gandhinagar line begins, one stop north. Tutors coming from Paldi, Vasna or Naranpura can travel straight up the Red Line and finish by auto. Housing societies usually keep a visitor register, while older independent homes mean a direct doorstep visit. Roads near the main junctions slow at peak hours, so allow some margin for evening classes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/sabarmati-in-ahmedabad-overview-1326",
+        "https://en.wikipedia.org/wiki/Red_Line_(Ahmedabad_Metro)",
+        "https://en.wikipedia.org/wiki/List_of_Ahmedabad_Metro_stations"
+      ]
+    },
+    "maninagar": {
+      "name": "Maninagar",
+      "zone": "Maninagar, Isanpur & Kankaria",
+      "type": "mixed",
+      "about": "<p>Maninagar is an established residential and commercial part of south Ahmedabad, on the east side of the Sabarmati, and Kankaria Lake lies within the wider area. The railway line splits the locality into two parts. Housing ranges from older independent houses on busy market streets to apartment blocks, with newer flats towards New Maninagar. Neighbouring localities include Kankaria, Khokhra, Isanpur, Ghodasar, Jamalpur and Behrampura, and Maninagar is also the city's entrance to the Ahmedabad–Vadodara Expressway.</p><p>Maninagar railway station on the Ahmedabad–Mumbai main line sits in the middle of the locality and has a footbridge to the BRTS bus station, so a tutor can arrive by train or bus and walk or take an auto for the last stretch. There is no metro station in Maninagar itself. In older houses a tutor usually goes straight to the door, while apartment blocks may ask for a name at the gate. Market roads near the station fill up in the evening, so an earlier after-school slot is easier, and online sessions suit specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Maninagar",
+        "https://en.wikipedia.org/wiki/Maninagar_railway_station",
+        "https://www.squareyards.com/mani-nagar-in-ahmedabad-overview-1336"
+      ]
+    },
+    "kankaria": {
+      "name": "Kankaria",
+      "zone": "Maninagar, Isanpur & Kankaria",
+      "type": "residential",
+      "about": "<p>Kankaria is the neighbourhood around Kankaria Lake, the city's largest lake, completed in 1451 and given a redeveloped lakefront that opened in December 2008. The homes around it are a mix of older houses and apartment buildings on the streets leading to the lake and to Maninagar. Neighbouring pockets include Maninagar, Khokhra, Sarangpur, Geeta Mandir and Bhulabhai Park, which puts families close to both the old city and the southern residential areas.</p><p>Kankaria East, an underground station on the Blue Line, opened to commuters in March 2024 and links the area with Kalupur Railway Station to the west and Apparel Park to the east. Maninagar railway station is the other rail option nearby. Tutors visiting apartment buildings should expect a gate entry, while older houses usually open straight onto the street. Roads around the lake get busy on Sundays, holidays and during the December carnival, so weekday evening or weekend morning slots work better, with online classes as a backup. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kankaria_Lake",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Ahmedabad_Metro)",
+        "https://www.squareyards.com/kankaria-in-ahmedabad-overview-1335"
+      ]
+    },
+    "khokhra": {
+      "name": "Khokhra",
+      "zone": "Maninagar, Isanpur & Kankaria",
+      "type": "residential",
+      "about": "<p>Khokhra is a residential neighbourhood next to Maninagar in south-east Ahmedabad. It grew around textile mills; most of them have closed and their land has been turned into housing and colleges. Today the area has a strong community character, with apartments, independent houses and some villas side by side. Nearby localities include Maninagar, Amraiwadi, Gomtipur, Jashodanagar, Shankarpura and Isanpur.</p><p>Maninagar railway station is close at hand, and the Blue Line's Apparel Park and Amraiwadi metro stations are nearby, so a tutor can come by train or metro and finish by auto. Khokhra Road links the area with Amraiwadi and with Maninagar station. For independent houses the tutor goes straight to the doorstep; newer apartment buildings usually keep a visitor register at the gate. Mid-evening slots avoid the busiest traffic on the roads towards Maninagar, and online lessons are an option for senior-class specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Khokhra",
+        "https://www.squareyards.com/khokhra-in-ahmedabad-overview-1560"
+      ]
+    },
+    "isanpur": {
+      "name": "Isanpur",
+      "zone": "Maninagar, Isanpur & Kankaria",
+      "type": "residential",
+      "about": "<p>Isanpur began as a small village beside Ahmedabad and is now part of the city's south zone, within the Maninagar assembly seat. Most homes are low-rise apartment buildings, with newer projects coming up as the locality grows. It sits between Maninagar and the southern edge of the city, with Ghodasar, Khokhra, Narol and New Maninagar as neighbours.</p><p>Two railway stations serve the area, Maninagar and Vatva, with autos covering the final stretch to most homes. Because many buildings are low-rise, tutors usually reach the flat door without a long gate process, although a quick call from the entrance helps in larger complexes. Evening traffic builds on the main roads towards Maninagar, so booking a lesson a little before or after the rush is sensible. For subjects that need a specialist teacher, online classes work well alongside a home tutor. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Isanpur",
+        "https://www.squareyards.com/isanpur-in-ahmedabad-overview-1331",
+        "https://www.99acres.com/ghodasar-ahmedabad-east-overview-piffid"
+      ]
+    },
+    "ghodasar": {
+      "name": "Ghodasar",
+      "zone": "Maninagar, Isanpur & Kankaria",
+      "type": "residential",
+      "about": "<p>Ghodasar is a quiet residential locality in south-east Ahmedabad, grouped by property portals under Ahmedabad East. It is known mainly for apartment living, with flats, some builder floors and a few independent houses. Its neighbours are Isanpur, Khokhra, Narol and New Maninagar, and Hari Om Nagar and Samrat Nagar are nearby pockets, so families here are close to the wider Maninagar area.</p><p>The locality has no metro station, so tutors usually travel by road, and Maninagar railway station is the nearest main rail point, with an auto for the last part of the journey. Apartment buildings generally have a gate where visitors give a flat number, and parking for a two-wheeler is easier inside society compounds than on the street. Evening traffic towards Maninagar and Isanpur can slow a visit, so a fixed weekday slot agreed in advance helps. Online classes suit subjects where a local specialist is hard to find. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ghodasar",
+        "https://www.squareyards.com/ghodasar-in-ahmedabad-overview-40253",
+        "https://www.99acres.com/ghodasar-ahmedabad-east-overview-piffid"
+      ]
+    },
+    "nikol": {
+      "name": "Nikol",
+      "zone": "Nikol, Naroda & Bapunagar",
+      "type": "residential",
+      "about": "<p>Nikol is a fast-growing residential area in east Ahmedabad, bordered by the SP Ring Road and the Narol–Naroda road. Its neighbours include Naroda, Nava Naroda, Kathwada and Odhav. Housing is mostly apartment buildings, including newer high-rises near the ring road, along with a sizeable stock of independent houses and some villas.</p><p>Naroda railway station is the nearest rail link, and metro users can take the Blue Line's eastern stations such as Vastral Gam or Rabari Colony and finish the trip by auto. Many families live in gated apartment societies, so tutors should expect gate registration and should confirm visitor parking; in independent houses the tutor goes straight to the door. The SP Ring Road and the roads towards Naroda are busiest at office hours, so late-afternoon or early-evening slots are easier. Online lessons help for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/nikol-in-ahmedabad-overview-1181",
+        "https://en.wikipedia.org/wiki/Sardar_Patel_Ring_Road",
+        "https://en.wikipedia.org/wiki/Nikol_Assembly_constituency"
+      ]
+    },
+    "naroda": {
+      "name": "Naroda",
+      "zone": "Nikol, Naroda & Bapunagar",
+      "type": "mixed",
+      "about": "<p>Naroda lies in north-east Ahmedabad and is known for its large industrial estate, the Naroda GIDC. It has two parts: Juna Naroda, the old village core, and Nava Naroda, the newer residential side. Homes are a mix of independent houses and apartment buildings, and the SP Ring Road passes in front of the area. Neighbouring localities include Nikol, Hanspura and New India Colony, and Bapunagar is nearby.</p><p>Naroda railway station, on the Ahmedabad–Udaipur line, sits in the GIDC area, and buses and autos cover the rest of the locality. There is no metro station in Naroda, so tutors mostly come by road. In Juna Naroda many homes open straight onto the lane, while Nava Naroda has more apartment societies with gate entry and visitor parking inside. Industrial and ring-road traffic is heaviest at shift and office times, so mid-evening lessons are usually smoother, and online classes can cover subjects where a nearby specialist is not available. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Naroda",
+        "https://en.wikipedia.org/wiki/Naroda_railway_station",
+        "https://www.squareyards.com/naroda-in-ahmedabad-overview-1558"
+      ]
+    },
+    "bapunagar": {
+      "name": "Bapunagar",
+      "zone": "Nikol, Naroda & Bapunagar",
+      "type": "mixed",
+      "about": "<p>Bapunagar was set up in the early 1960s as housing for textile mill workers, when Ahmedabad was a major mill town. After the mills closed it became a leading diamond-cutting centre, and many families trace their roots to the Saurashtra region. It remains an older residential and trading area with a busy local market, surrounded by Krishna Nagar, Rakhial, Saraspur, Saijpur Bogha and the Naroda Road area.</p><p>Housing is dense, with independent houses, older low-rise blocks and some newer apartment buildings, so most tutor visits are doorstep visits in narrow residential lanes. Parking a car can be difficult; a two-wheeler or an auto is the practical choice. The market roads around Bapunagar get crowded in the evening, so tutors often prefer a late-afternoon slot or an agreed time after the market rush. For senior-class specialist subjects, online lessons give access to a wider pool of teachers. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bapunagar",
+        "https://www.squareyards.com/bapunagar-in-ahmedabad-overview-1553"
+      ]
+    },
+    "vastral": {
+      "name": "Vastral",
+      "zone": "Nikol, Naroda & Bapunagar",
+      "type": "residential",
+      "about": "<p>Vastral is a suburban area on the eastern edge of Ahmedabad that has grown from a quiet village into an active residential zone along the SP Ring Road. Most homes are apartment buildings, many of them newly built, alongside some villas and independent houses. It is bordered by Odhav, Ramol, Singarwa, Amraiwadi and New Maninagar.</p><p>Vastral has three stations on the Blue Line of the Ahmedabad Metro: Vastral Gam, the eastern end of the line, Nirant Cross Road and Vastral, all opened in March 2019. A tutor can ride the metro and take a short auto ride from the station. Apartment societies here usually ask visitors to sign in at the gate, so share the tutor's name in advance. Roads along the ring road get busy at peak hours, so booking lessons outside the office rush helps. Online classes are useful for subjects where a local specialist is not available. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vastral",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Ahmedabad_Metro)",
+        "https://en.wikipedia.org/wiki/Vastral_Gam_metro_station",
+        "https://www.squareyards.com/vastral-in-ahmedabad-overview-1197"
+      ]
+    },
+    "odhav": {
+      "name": "Odhav",
+      "zone": "Nikol, Naroda & Bapunagar",
+      "type": "mixed",
+      "about": "<p>Odhav is an industrial and residential area in east Ahmedabad, built around the Odhav GIDC industrial estate and part of the city's East Zone. Alongside factories and workshops there are apartment buildings, independent houses and some villas, with residential growth spreading towards Vastral. The SP Ring Road runs past the area, and Nikol, Vastral and Adinath Nagar are close by.</p><p>Odhav Road is the main local link and leads towards Amraiwadi, where the nearest Blue Line metro stations are; from there an auto completes the trip. Tutors should check whether a home is in an apartment society, which may need gate registration, or an independent house, where they can go straight to the door. Industrial traffic peaks around shift changes, so fixing a lesson time away from those hours makes visits easier. Online lessons are a good choice for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Odhav",
+        "https://www.squareyards.com/odhav-in-ahmedabad-overview-1275",
+        "https://en.wikipedia.org/wiki/Sardar_Patel_Ring_Road"
+      ]
+    },
+    "amraiwadi": {
+      "name": "Amraiwadi",
+      "zone": "Nikol, Naroda & Bapunagar",
+      "type": "mixed",
+      "about": "<p>Amraiwadi is an old, densely populated neighbourhood in east Ahmedabad whose history goes back to a 15th-century royal garden. In the last century it became a cotton-mill district, and its housing still reflects that, with former mill chawls, older homes and newer flats together. Today it is a mixed area of homes, shops and small industry, next to Rabari Colony, CTM, Khokhra and Satyam Nagar.</p><p>Metro access is good: Amraiwadi station on the Blue Line opened in May 2019, and Apparel Park and Rabari Colony stations are nearby, so a tutor can reach most homes by metro and a short walk or auto ride. Maninagar railway station is also within reach. Many homes open directly onto the lane, while newer apartment blocks may have gate entry. The main roads through the area are busy in the evening, so lessons slightly earlier or later than the peak are easier, and online classes help with specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Amraiwadi",
+        "https://en.wikipedia.org/wiki/Apparel_Park_metro_station",
+        "https://www.squareyards.com/amraiwadi-in-ahmedabad-overview-1214"
+      ]
+    },
+    "shahibaug": {
+      "name": "Shahibaug",
+      "zone": "Shahibaug, Asarwa & Meghaninagar",
+      "type": "residential",
+      "about": "<p>Shahibaug lies on the east bank of the Sabarmati in north-central Ahmedabad and takes its name from a royal garden palace built in 1622. It has long been one of the city's well-off residential districts, and today most homes are apartments, many of them spacious three- and four-bedroom flats. Neighbouring localities include Asarwa, Girdhar Nagar, Madhupura, Dudheshwar, Meghaninagar and Keshav Nagar.</p><p>Riverfront Road and Airport Road are the main links, and Ahmedabad railway station at Kalupur is within reach. For a tutor, apartment buildings mean a visitor entry at the gate and a quick call to the family, so share the tutor's name beforehand. Evening traffic on Airport Road and the roads towards the old city builds up after office hours, so a late-afternoon slot usually works better. For specialist board or entrance subjects, online sessions add flexibility. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Shahibaug",
+        "https://www.squareyards.com/shahibagh-in-ahmedabad-overview-1180"
+      ]
+    },
+    "asarwa": {
+      "name": "Asarwa",
+      "zone": "Shahibaug, Asarwa & Meghaninagar",
+      "type": "mixed",
+      "about": "<p>Asarwa is an older neighbourhood in the central zone of Ahmedabad, east of the Sabarmati and next to Shahibaug. Large medical and teaching campuses sit alongside housing, which includes older independent homes and mid-income apartment buildings. Nearby localities include Shahibaug, Chamanpura, Girdhar Nagar and Meghaninagar, and the area connects to the rest of the city through Camp Road and the bridges over the river.</p><p>Asarva railway station on the Ahmedabad–Udaipur line serves the neighbourhood, and the nearest metro stations are on the Blue Line, so most tutors come by road or auto. Apartment buildings usually ask visitors to register at the gate, while older homes open directly onto the lane. Traffic near the medical campuses is heavy through the day, so an evening lesson time agreed in advance is often easier. Online classes help families who need a subject specialist. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Asarwa",
+        "https://en.wikipedia.org/wiki/Asarva_railway_station",
+        "https://www.squareyards.com/asarwa-in-ahmedabad-overview-66489"
+      ]
+    },
+    "meghaninagar": {
+      "name": "Meghaninagar",
+      "zone": "Shahibaug, Asarwa & Meghaninagar",
+      "type": "residential",
+      "about": "<p>Meghaninagar is a residential locality in the eastern part of Ahmedabad, east of the Sabarmati. It is an affordable to mid-budget area with a mix of independent houses and apartment buildings, and it is popular with both owners and tenants. Its neighbours include Asarwa, Shahibaug, Kalapi Nagar, the Ahmedabad Cantonment area and the Naroda Road belt.</p><p>There is no metro station in the locality, so tutors usually travel by road, and Asarva railway station on the Ahmedabad–Udaipur line is the nearest rail point, followed by an auto ride. In independent houses the tutor can go straight to the door, while apartment blocks may keep a visitor register at the gate. The roads towards Asarwa and Naroda Road are busiest at office hours, so a mid-evening lesson is often smoother. Online lessons are useful for subjects where a local specialist is hard to find. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/meghani-nagar-in-ahmedabad-overview-66441",
+        "https://www.99acres.com/meghani-nagar-ahmedabad-east-overview-piffid",
+        "https://en.wikipedia.org/wiki/Asarva_railway_station"
+      ]
+    }
+  },
+  "zone_facts": {
+    "Navrangpura, Paldi & Ellisbridge": [
+      {
+        "fact": "The steel Ellis Bridge across the Sabarmati was completed in 1892, replacing an earlier wooden bridge, and was declared a protected heritage structure in 1989.",
+        "source": "https://en.wikipedia.org/wiki/Ellis_Bridge"
+      },
+      {
+        "fact": "Navrangpura was one of the first areas to be developed outside Ahmedabad's Old City.",
+        "source": "https://en.wikipedia.org/wiki/Navrangpura"
+      },
+      {
+        "fact": "Old High Court is the interchange between the Blue Line and the Red Line of the Ahmedabad Metro; both western sections were inaugurated on 30 September 2022.",
+        "source": "https://en.wikipedia.org/wiki/Red_Line_(Ahmedabad_Metro)"
+      },
+      {
+        "fact": "The Blue Line crosses the Sabarmati between Old High Court and Shahpur stations, moving from elevated track to an underground section.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Ahmedabad_Metro)"
+      },
+      {
+        "fact": "Red Line stations in this zone include Gandhigram (Ellisbridge), Paldi and Shreyas (Ambawadi); the Red Line was inaugurated on 30 September 2022 and opened to the public on 6 October 2022.",
+        "source": "https://en.wikipedia.org/wiki/Ahmedabad_Metro"
+      },
+      {
+        "fact": "The Red Line's southern terminus is APMC station in Vasna, with Jivraj Park and Rajiv Nagar as the next stations north.",
+        "source": "https://en.wikipedia.org/wiki/Red_Line_(Ahmedabad_Metro)"
+      }
+    ],
+    "Satellite, Vastrapur & Bodakdev": [
+      {
+        "fact": "The Sarkhej-Gandhinagar (SG) Highway forms a major part of NH 147, connecting Sarkhej with Chiloda near Gandhinagar.",
+        "source": "https://en.wikipedia.org/wiki/Sarkhej%E2%80%93Gandhinagar_Highway"
+      },
+      {
+        "fact": "SG Highway has a Thaltej underpass among its grade separators.",
+        "source": "https://en.wikipedia.org/wiki/Sarkhej%E2%80%93Gandhinagar_Highway"
+      },
+      {
+        "fact": "The Blue Line section from Apparel Park to Thaltej, including Gujarat University, Gurukul Road, Doordarshan Kendra and Thaltej stations, opened on 30 September 2022.",
+        "source": "https://en.wikipedia.org/wiki/Ahmedabad_Metro"
+      },
+      {
+        "fact": "Thaltej Gam station opened on 8 December 2024 as the western terminus of the Blue Line.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Ahmedabad_Metro)"
+      },
+      {
+        "fact": "Gurukul Road metro station is located in Memnagar.",
+        "source": "https://en.wikipedia.org/wiki/Gurukul_Road_metro_station"
+      },
+      {
+        "fact": "Thaltej falls under Ward 8 of the North West Zone of the Ahmedabad Municipal Corporation.",
+        "source": "https://en.wikipedia.org/wiki/Thaltej"
+      }
+    ],
+    "Prahlad Nagar, Bopal & Shela": [
+      {
+        "fact": "The Sardar Patel (SP) Ring Road, maintained by the Ahmedabad Urban Development Authority, is about 76 km long; Bopal and Sarkhej are among its major junctions.",
+        "source": "https://en.wikipedia.org/wiki/Sardar_Patel_Ring_Road"
+      },
+      {
+        "fact": "Bopal and neighbouring Ghuma were merged and given municipality status in 2015.",
+        "source": "https://en.wikipedia.org/wiki/Bopal"
+      },
+      {
+        "fact": "Bopal's population rose from 18,553 in 2001 to 55,068 in 2011.",
+        "source": "https://en.wikipedia.org/wiki/Bopal"
+      },
+      {
+        "fact": "Bopal, Shela and Ghuma were brought under the Ahmedabad Municipal Corporation's jurisdiction.",
+        "source": "https://www.99acres.com/articles/ahmedabad-bopal-shela-and-ghuma-to-come-under-amc-jurisdiction-nid.html"
+      },
+      {
+        "fact": "Ahmedabad BRTS (Janmarg) Route 17 runs from Nehru Nagar to South Bopal.",
+        "source": "https://en.wikipedia.org/wiki/Ahmedabad_Bus_Rapid_Transit_System"
+      },
+      {
+        "fact": "Ahmedabad BRTS opened its first corridor on 14 October 2009 and, as of March 2025, ran 18 routes with 197 stations.",
+        "source": "https://en.wikipedia.org/wiki/Ahmedabad_Bus_Rapid_Transit_System"
+      }
+    ],
+    "Naranpura, Gota & Chandkheda": [
+      {
+        "fact": "The Red Line from Motera Stadium to APMC was inaugurated on 30 September 2022 and opened to the public on 6 October 2022.",
+        "source": "https://en.wikipedia.org/wiki/Ahmedabad_Metro"
+      },
+      {
+        "fact": "Vijay Nagar metro station on the Red Line serves the Naranpura neighbourhood.",
+        "source": "https://en.wikipedia.org/wiki/Vijay_Nagar_metro_station"
+      },
+      {
+        "fact": "Sabarmati Railway Station metro station on the Red Line is listed as under construction.",
+        "source": "https://en.wikipedia.org/wiki/List_of_Ahmedabad_Metro_stations"
+      },
+      {
+        "fact": "Phase 2 towards Gandhinagar: the Yellow Line from Motera Stadium and the Violet Line from GNLU to GIFT City opened on 16 September 2024.",
+        "source": "https://en.wikipedia.org/wiki/Ahmedabad_Metro"
+      },
+      {
+        "fact": "The final Yellow Line section to Mahatma Mandir in Gandhinagar was inaugurated on 11 January 2026.",
+        "source": "https://en.wikipedia.org/wiki/Yellow_Line_(Ahmedabad_Metro)"
+      },
+      {
+        "fact": "Chandkheda panchayat was incorporated into the Ahmedabad Municipal Corporation on 19 January 2008.",
+        "source": "https://en.wikipedia.org/wiki/Chandkheda"
+      },
+      {
+        "fact": "Ahmedabad BRTS Route 9 terminates at Gota / Vasant Nagar Township.",
+        "source": "https://en.wikipedia.org/wiki/Ahmedabad_Bus_Rapid_Transit_System"
+      },
+      {
+        "fact": "The Naranpura assembly constituency, formed in 2008, covers Wards 11 to 14 of the Ahmedabad Municipal Corporation.",
+        "source": "https://en.wikipedia.org/wiki/Naranpura"
+      }
+    ],
+    "Maninagar, Isanpur & Kankaria": [
+      {
+        "fact": "Kankaria Lake, in the Maninagar area, was completed in 1451; its redeveloped lakefront was inaugurated on 25 December 2008.",
+        "source": "https://en.wikipedia.org/wiki/Kankaria_Lake"
+      },
+      {
+        "fact": "Maninagar railway station is on the Ahmedabad–Mumbai main line (Western Railway) and has a footbridge to the BRTS bus station.",
+        "source": "https://en.wikipedia.org/wiki/Maninagar_railway_station"
+      },
+      {
+        "fact": "Kankaria East, an underground Blue Line station, was inaugurated on 30 September 2022 and opened to commuters on 5 March 2024.",
+        "source": "https://deshgujarat.com/2024/03/04/kankaria-east-metro-station-now-operational/"
+      },
+      {
+        "fact": "Apparel Park, an elevated Blue Line station in Amraiwadi, opened on 4 March 2019 and serves as the line's depot station.",
+        "source": "https://en.wikipedia.org/wiki/Apparel_Park_metro_station"
+      },
+      {
+        "fact": "Maninagar is the city's entrance to the Ahmedabad–Vadodara Expressway.",
+        "source": "https://en.wikipedia.org/wiki/Maninagar"
+      },
+      {
+        "fact": "Isanpur, once a village beside Ahmedabad, is in the city's South Zone and the Maninagar assembly constituency.",
+        "source": "https://en.wikipedia.org/wiki/Isanpur"
+      }
+    ],
+    "Nikol, Naroda & Bapunagar": [
+      {
+        "fact": "The first Ahmedabad Metro section, Vastral Gam to Apparel Park on the Blue Line (Vastral Gam, Nirant Cross Road, Vastral, Rabari Colony, Apparel Park), opened on 4 March 2019.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Ahmedabad_Metro)"
+      },
+      {
+        "fact": "Amraiwadi metro station on the Blue Line opened to the public on 18 May 2019.",
+        "source": "https://en.wikipedia.org/wiki/Amraiwadi"
+      },
+      {
+        "fact": "The Blue Line was extended from Apparel Park through the old city and across the Sabarmati to Thaltej, inaugurated on 30 September 2022.",
+        "source": "https://en.wikipedia.org/wiki/Ahmedabad_Metro"
+      },
+      {
+        "fact": "The SP Ring Road, built by AUDA and opened in 2004, passes Naroda, Nikol, Odhav, Vastral and Ramol on the city's east side.",
+        "source": "https://en.wikipedia.org/wiki/Sardar_Patel_Ring_Road"
+      },
+      {
+        "fact": "Naroda railway station, in the Naroda GIDC area, is on the Ahmedabad–Udaipur line.",
+        "source": "https://en.wikipedia.org/wiki/Naroda_railway_station"
+      },
+      {
+        "fact": "Bapunagar was established in the early 1960s as housing for textile mill workers and later became a major diamond-cutting centre.",
+        "source": "https://en.wikipedia.org/wiki/Bapunagar"
+      },
+      {
+        "fact": "Naroda has two parts, Juna Naroda (Old Naroda) and Nava Naroda (New Naroda).",
+        "source": "https://en.wikipedia.org/wiki/Naroda"
+      }
+    ],
+    "Shahibaug, Asarwa & Meghaninagar": [
+      {
+        "fact": "Shahibaug takes its name from a royal garden palace built in 1622 on the bank of the Sabarmati, now known as Moti Shahi Mahal.",
+        "source": "https://en.wikipedia.org/wiki/Shahibaug"
+      },
+      {
+        "fact": "Asarva railway station, on the Ahmedabad–Udaipur line, has 3 platforms and is one of the main stations on that line.",
+        "source": "https://en.wikipedia.org/wiki/Asarva_railway_station"
+      },
+      {
+        "fact": "The Blue Line crosses the Sabarmati between Old High Court and Shahpur; Shahpur, Gheekanta and Kalupur Railway Station are underground stations opened on 30 September 2022.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Ahmedabad_Metro)"
+      },
+      {
+        "fact": "Shahibaug falls in the Asarwa assembly constituency and the Ahmedabad East parliamentary constituency.",
+        "source": "https://en.wikipedia.org/wiki/Shahibaug"
+      }
+    ]
+  }
+}

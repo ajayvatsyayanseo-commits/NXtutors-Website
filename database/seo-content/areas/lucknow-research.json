@@ -1,0 +1,431 @@
+{
+  "areas": {
+    "gomti-nagar": {
+      "name": "Gomti Nagar",
+      "zone": "Gomti Nagar, Indira Nagar & Chinhat",
+      "type": "mixed",
+      "about": "<p>Gomti Nagar is a large planned township on the banks of the Gomti, laid out in khands whose names all begin with V, such as Vibhuti Khand, Vishwas Khand, Vivek Khand and Vijay Khand. Its first two phases are fully built up, with independent houses and plotted homes on wide sector roads alongside apartment blocks, gated complexes, offices, hotels and busy commercial strips. Shaheed Path connects it with Gomti Nagar Extension, and Indira Nagar is its neighbour.</p><p>Gomti Nagar railway station in Vivek Khand is a suburban and main-line stop, and the Red Line metro is reached at stations in neighbouring Indira Nagar, such as Indira Nagar and Munshi Pulia. For a tutor, a visit to an independent house usually means a doorstep arrival with street parking, while apartment complexes expect gate registration, so share the tower and flat number in advance. Office traffic builds on the main commercial roads in the evening, so early-evening slots are easier when the tutor lives within the same khands. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Gomti_Nagar",
+        "https://en.wikipedia.org/wiki/Gomti_Nagar_railway_station",
+        "https://www.squareyards.com/gomti-nagar-in-lucknow-overview-2844"
+      ]
+    },
+    "gomti-nagar-extension": {
+      "name": "Gomti Nagar Extension",
+      "zone": "Gomti Nagar, Indira Nagar & Chinhat",
+      "type": "mixed",
+      "about": "<p>Gomti Nagar Extension is the newer, still-developing phase of the Gomti Nagar township, arranged in numbered sectors along Shaheed Path. The Lucknow Development Authority has laid out plots and built its own apartment complexes here, while private high-rise towers and gated townships make up much of the rest, with plotted homes in several sectors. Large shopping and commercial developments line Shaheed Path, which ties the area to older Gomti Nagar and on to the Kanpur Road and Faizabad Road ends of the city.</p><p>There is no metro station inside the extension today, so most tutors arrive by car, two-wheeler or auto from Gomti Nagar, Chinhat or the Shaheed Path belt. Gated societies usually register visitors at the main gate and may issue an entry pass for regular visits, which is worth arranging before the first class. Weekday evenings on Shaheed Path can be heavy near the commercial stretches, so agree a fixed slot in advance, and use online sessions when a specialist subject teacher lives elsewhere in the city. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Gomti_Nagar",
+        "https://en.wikipedia.org/wiki/Shaheed_Path",
+        "https://www.99acres.com/residential-land-in-sector-4-gomti-nagar-lucknow-ffid"
+      ]
+    },
+    "indira-nagar": {
+      "name": "Indira Nagar",
+      "zone": "Gomti Nagar, Indira Nagar & Chinhat",
+      "type": "residential",
+      "about": "<p>Indira Nagar is one of the largest planned colonies in Lucknow, developed by the UP Housing and Development Board and grown from four original blocks into a grid of sectors and lettered blocks. Most of the housing is independent houses and builder floors on plotted lanes, with some flats and villas, and neighbourhood markets such as Bhootnath and Lekhraj form its commercial core. Ring Road and Faizabad Road are among the main roads serving the colony, and Gomti Nagar lies next door.</p><p>The Red Line runs right through the colony, with Lekhraj Market, Bhootnath Market, Indira Nagar and Munshi Pulia stations all opened in March 2019; Munshi Pulia is the northern end of the line, with entrances from Sector 16 and from Sectors 13 and 14. A tutor coming from central Lucknow can take the metro and walk or take an auto for the last leg, and most homes open straight onto the street, so there is no society gate to clear. Market roads get crowded in the evening, so allow for that when choosing the class time. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Indira_Nagar,_Lucknow",
+        "https://en.wikipedia.org/wiki/Munshi_Pulia_metro_station",
+        "https://www.squareyards.com/indira-nagar-in-lucknow-overview-2845"
+      ]
+    },
+    "chinhat": {
+      "name": "Chinhat",
+      "zone": "Gomti Nagar, Indira Nagar & Chinhat",
+      "type": "residential",
+      "about": "<p>Chinhat lies on the eastern side of the city along Faizabad Road, the highway towards Ayodhya, and it is where Shaheed Path meets that road. Long known for its pottery, it has grown into a residential area of independent houses and residential plots, with apartment projects and townships added along the main road. Gomti Nagar, Matiyari, Kamta and Deva Road are its neighbours, and Kotwali Road and Satrikh Road lead off the highway into the settled pockets.</p><p>Malhaur and Gomti Nagar railway stations are the nearest rail stops, but there is no metro station in Chinhat itself, so tutors mostly travel by road from Gomti Nagar, Indira Nagar or nearby colonies. Independent homes usually mean doorstep visits with parking on the lane, while townships along Faizabad Road register visitors at the gate. Traffic on the highway is heaviest at office hours, so a late-afternoon or weekend slot is easier to keep regular, and online classes cover subjects where no specialist lives nearby. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Shaheed_Path",
+        "https://www.squareyards.com/chinhat-in-lucknow-overview-2846",
+        "https://www.99acres.com/chinhat-lucknow-overview-piffid",
+        "https://en.wikipedia.org/wiki/Gomti_Nagar_railway_station"
+      ]
+    },
+    "mahanagar": {
+      "name": "Mahanagar",
+      "zone": "Mahanagar, Aliganj & Jankipuram",
+      "type": "residential",
+      "about": "<p>Mahanagar is an established residential and commercial locality in north-central Lucknow, part of the Trans-Gomti side of the city. Housing is a mix of independent houses, villas and apartment buildings, and much of what changes hands is resale because few new projects are built here. Kapoorthala, Vishnupuri, Badshah Nagar, Nirala Nagar and Nishatganj surround it, and Purania Road and Kapoorthala Road are among its main links.</p><p>A metro station once planned for Mahanagar was dropped from the final Red Line, so the area is served by the nearby Badshahnagar and IT College stations, both opened in March 2019. Badshahnagar metro station also connects with Badshahnagar railway station. A tutor can ride the metro and take an auto or walk the last leg, and most independent homes allow a straight doorstep arrival without any gate formalities. Market roads around the main crossings are busiest in the evening, so allow some slack in the timing of weekday classes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mahanagar_metro_station",
+        "https://en.wikipedia.org/wiki/Badshahnagar_metro_station",
+        "https://en.wikipedia.org/wiki/Trans-Gomti_area",
+        "https://www.squareyards.com/mahanagar-in-lucknow-overview-2840"
+      ]
+    },
+    "nishatganj": {
+      "name": "Nishatganj",
+      "zone": "Mahanagar, Aliganj & Jankipuram",
+      "type": "mixed",
+      "about": "<p>Nishatganj is a central locality between Hazratganj and Mahanagar, with Butler Colony, Nirala Nagar and Hasanganj also nearby. It has a busy market along its main roads, and its housing is split between apartment buildings and independent houses, many in the older lanes behind the shopfronts. Clinics, offices and shops sit alongside homes, giving the area a mixed character.</p><p>IT College metro station on the Red Line, opened in March 2019, is close by, and Badshahnagar railway station is also near. That makes the area easy for tutors from Aliganj, Indira Nagar or Hazratganj to reach by metro, with a short walk or auto ride to the door. Apartment buildings may ask for the visitor's name at the entrance, while houses in the lanes allow a direct arrival. The route between Nishatganj and Gomti Nagar is heavily used at office hours, so keep classes outside the evening rush where possible. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/nishat-ganj-in-lucknow-overview-4445",
+        "https://en.wikipedia.org/wiki/Red_Line_(Lucknow_Metro)",
+        "https://en.wikipedia.org/wiki/IT_Chauraha_metro_station"
+      ]
+    },
+    "nirala-nagar": {
+      "name": "Nirala Nagar",
+      "zone": "Mahanagar, Aliganj & Jankipuram",
+      "type": "residential",
+      "about": "<p>Nirala Nagar is an upmarket residential neighbourhood in north-central Lucknow known for its parks, wide roads and planned layout. Homes are a mix of independent houses, villas and apartments ranging from compact flats to larger family units. Aliganj, Mahanagar, Nishatganj and Kapoorthala lie around it, and the central business district of Hazratganj is within easy reach.</p><p>The nearest metro stop is IT College station on the Red Line, and trains run from there to Hazratganj, Charbagh and the airport. Tutors from across the city can therefore arrive by metro and walk or take an auto to the house. Independent homes usually mean a doorstep visit with room to park on the street, while apartment buildings may keep a visitor register at the entrance. Evening traffic builds on the roads leading towards Hazratganj, so a slightly earlier start helps on school days. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/niralanagar-in-lucknow-overview-2839",
+        "https://en.wikipedia.org/wiki/Trans-Gomti_area",
+        "https://en.wikipedia.org/wiki/Red_Line_(Lucknow_Metro)"
+      ]
+    },
+    "kapoorthala": {
+      "name": "Kapoorthala",
+      "zone": "Mahanagar, Aliganj & Jankipuram",
+      "type": "mixed",
+      "about": "<p>Kapoorthala is a residential and commercial hub in north Lucknow, bordering Aliganj, Mahanagar Extension and Chandganj, with Nirala Nagar and Nishatganj close by. Its main road is lined with shops, eateries and offices, while the lanes behind hold independent houses and apartment buildings. Kapoorthala Road and Chandganj Road link it with Aliganj and Mahanagar.</p><p>IT College and Vishwavidyalaya stations on the Red Line are the nearest metro stops, and tutors often finish the trip by auto or on foot. Because the market road is busy through the day, parking right outside can be hard, so a tutor visiting a house on the main stretch should plan a spot in a side lane. Apartment buildings may ask for a name at the entrance, while houses in the lanes allow a direct arrival. A weekend morning can be an easier time for the first demo class. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/kapoorthala-in-lucknow-overview-99902",
+        "https://www.99acres.com/kapoorthla-lucknow-overview-piffid",
+        "https://en.wikipedia.org/wiki/Red_Line_(Lucknow_Metro)"
+      ]
+    },
+    "aliganj": {
+      "name": "Aliganj",
+      "zone": "Mahanagar, Aliganj & Jankipuram",
+      "type": "residential",
+      "about": "<p>Aliganj is one of the largest residential localities in north Lucknow, often described as second only to Indira Nagar in size. It is planned in lettered sectors, from Sectors A and B through to Sectors K, L and N, and most homes are independent houses on plotted layouts, many developed under Lucknow Development Authority schemes, with some apartments and plots. Sitapur Road, Kursi Road, Purania Road and the Ring Road near Tedhi Pulia connect it with the rest of the city.</p><p>Kapoorthala, Vikas Nagar, Nirala Nagar and Jankipuram are its neighbours. The closest metro stop is Badshahnagar on the Red Line, and tutors usually take an auto or drive from there. Independent houses mean a straight doorstep arrival, and a sector letter with a house number makes the first visit easy to find. Market stretches inside the sectors are busiest in the evening, so after-school slots that start a little earlier suit families who want a regular routine. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/aliganj-lucknow-overview-piffid",
+        "https://www.squareyards.com/aliganj-in-lucknow-overview-2838",
+        "https://en.wikipedia.org/wiki/Trans-Gomti_area"
+      ]
+    },
+    "vikas-nagar": {
+      "name": "Vikas Nagar",
+      "zone": "Mahanagar, Aliganj & Jankipuram",
+      "type": "residential",
+      "about": "<p>Vikas Nagar is a settled residential locality in north Lucknow between Kalyanpur and Aliganj, arranged in numbered sectors. Independent houses are the most common home type, followed by apartments and builder floors. Kursi Road and the Ring Road run through it, and Adil Nagar, Vishnupuri, Khurram Nagar and Aliganj are its neighbours.</p><p>The nearest Red Line stations are Badshahnagar, IT College and Munshi Pulia, none of them inside the locality, so a tutor typically finishes the journey by auto or comes all the way by road. Most families live in independent houses, which means no gate registration and easy parking on the sector lanes. Ring Road traffic can slow evening journeys, so a tutor living in Aliganj, Jankipuram or Kapoorthala is the practical choice for regular home classes, with online sessions for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/vikas-nagar-in-lucknow-overview-4451",
+        "https://www.99acres.com/vikas-nagar-lucknow-overview-piffid",
+        "https://en.wikipedia.org/wiki/Trans-Gomti_area"
+      ]
+    },
+    "jankipuram": {
+      "name": "Jankipuram",
+      "zone": "Mahanagar, Aliganj & Jankipuram",
+      "type": "residential",
+      "about": "<p>Jankipuram is a residential neighbourhood in the north of the city, developed largely under Lucknow Development Authority schemes in lettered sectors. It mixes independent houses and villas with planned township developments and apartment towers, and a large engineering institute sits in the middle of the locality. Main links include the Lucknow to Sitapur highway, the university's new campus road and Madiyaon road, and Aliganj, Adil Nagar, Madiyaon and Jankipuram Extension lie around it.</p><p>There is no metro station in Jankipuram, and the nearest Red Line stops are well to the south, so most tutors come by two-wheeler, car or auto. Many homes are on plotted lanes where a tutor can park outside, while the apartment towers and townships ask visitors to register at the gate. Tutors who live in Jankipuram itself, Aliganj or Vikas Nagar are easiest to schedule for evening classes, and online lessons fill gaps for senior-school specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/jankipuram-in-lucknow-overview-2836",
+        "https://en.wikipedia.org/wiki/Trans-Gomti_area",
+        "https://www.onefivenine.com/india/villages/Lucknow/Lucknow/Sector-F-Jankipuram"
+      ]
+    },
+    "jankipuram-extension": {
+      "name": "Jankipuram Extension (Jankipuram Vistar)",
+      "zone": "Mahanagar, Aliganj & Jankipuram",
+      "type": "residential",
+      "about": "<p>Jankipuram Extension, also called Jankipuram Vistar, is a newer Lucknow Development Authority scheme beside Jankipuram, laid out in numbered sectors. Much of the land is still sold as residential plots, and homes are a mix of independent houses, villas and apartment buildings, including authority-built flats. Kursi Road and IIM Road are the main nearby roads, and Jankipuram, Tiwaripur and Gaurabagh are its neighbours.</p><p>With no metro in this belt, tutors arrive by road, and a map pin or clear landmark helps on a first visit because some sectors are still filling up. Independent houses usually allow parking at the gate, while apartment complexes register visitors at the entrance. A home tutor from Jankipuram or Aliganj can cover school subjects, and online classes are a sensible way to add exam preparation or a specialist subject without a long evening journey for the teacher. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/jankipuram-extension-in-lucknow-overview-2837",
+        "https://www.realestateindia.com/lucknow-property/lda-plots-for-sale-in-jankipuram-vistar-ff2d.htm",
+        "http://www.onefivenine.com/india/villages/Lucknow/Lucknow/Jankipuram-Vistar"
+      ]
+    },
+    "hazratganj": {
+      "name": "Hazratganj",
+      "zone": "Hazratganj, Lalbagh & Aminabad",
+      "type": "mixed",
+      "about": "<p>Hazratganj is the central business district of Lucknow, a market that dates from the 1820s and was remodelled in a Victorian style after 1857. Its streets hold shops, offices, cafés and hotels, and homes here are mostly flats above shopfronts or in older buildings on the side streets, with quieter residential pockets in neighbouring Butler Colony, Hasanganj and Civil Lines. The main crossing at its heart is often called the busiest in the city.</p><p>Hazratganj metro station on the Red Line, underground and open since March 2019, sits in the district, with Sachivalaya and IT College stations close by, so tutors from almost anywhere on the line can arrive by metro and walk the last stretch. Parking is limited on the market streets, which makes the metro the easier choice. Upper-floor flats may need a call from the ground floor on arrival. Shopping crowds peak in the evening and at weekends, so a late-afternoon weekday slot is often simpler. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hazratganj",
+        "https://en.wikipedia.org/wiki/Red_Line_(Lucknow_Metro)",
+        "https://www.squareyards.com/hazratganj-in-lucknow-overview-2857"
+      ]
+    },
+    "lalbagh": {
+      "name": "Lalbagh",
+      "zone": "Hazratganj, Lalbagh & Aminabad",
+      "type": "mixed",
+      "about": "<p>Lalbagh is an old central neighbourhood next to Hazratganj, with Aminabad, Husainganj, Civil Lines and Ghasyari Mandi around it. Its housing is mainly apartment buildings and flats above shops, with a smaller number of independent houses, and banks, hotels and offices share the streets with homes.</p><p>Sachivalaya metro station on the Red Line, underground and opened in March 2019, is in Lalbagh, and Hazratganj and Hussainganj stations are one stop either side. That gives tutors a straightforward metro trip from the Alambagh side or from Indira Nagar, with a short walk to the door. Street parking is scarce in the lanes, so the metro is usually easier than driving. Flats in older buildings may not have a lift or a guard, so share the floor and a landmark in advance. Evening market hours bring the most traffic, so afternoon classes tend to run more smoothly. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sachivalaya_metro_station",
+        "https://www.squareyards.com/lalbagh-in-lucknow-overview-6053",
+        "https://en.wikipedia.org/wiki/Red_Line_(Lucknow_Metro)"
+      ]
+    },
+    "aminabad": {
+      "name": "Aminabad",
+      "zone": "Hazratganj, Lalbagh & Aminabad",
+      "type": "mixed",
+      "about": "<p>Aminabad is one of the oldest and busiest markets in Lucknow, and the neighbourhood around it is a dense mix of shops, wholesale lanes and homes. Residents mostly live in flats and older buildings above or behind the shops, and neighbouring areas include Lalbagh, Wazirganj, Maulviganj, Naka Hindola and Lalkuan.</p><p>Sachivalaya on the Red Line is the nearest working metro station today. The East-West Blue Line from Charbagh to Vasant Kunj, approved by the Union Cabinet in August 2025 and now under construction, will have an underground station at Aminabad. Until then, tutors usually come by metro and auto or by two-wheeler, because car parking in the market lanes is very limited. Market crowds are heaviest in the late afternoon and evening, so weekend morning classes or online sessions can be easier to keep regular. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/aminabad-in-lucknow-overview-2858",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Lucknow_Metro)",
+        "https://www.tribuneindia.com/news/business/lucknow-metro-gets-cabinet-nod-for-11-16-km-phase-1b-expansion-worth-rs-5801-crore"
+      ]
+    },
+    "aishbagh": {
+      "name": "Aishbagh",
+      "zone": "Hazratganj, Lalbagh & Aminabad",
+      "type": "mixed",
+      "about": "<p>Aishbagh is an older central neighbourhood with a mix of historic and newer buildings, including apartment blocks and some villas. It is surrounded by Kaiserbagh, Nakkhas, Thakurganj and Rajendra Nagar, and Naka Hindola is close by. Aishbagh Road is the main route through the area, with Mohan Road and the road towards Alambagh also serving it.</p><p>Aishbagh Junction is an important railway station where many trains halt, and Charbagh on the Red Line is the nearest metro stop. Tutors often come by two-wheeler or auto from Charbagh, Rajajipuram or Alambagh. The area is densely built and its roads get crowded at peak hours, so a class timed away from the office rush works better. Apartment buildings may keep a visitor register at the entrance, while older houses usually open straight onto the lane, so a nearby landmark helps a tutor find the right door on the first visit. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/aishbagh-in-lucknow-overview-2859",
+        "https://en.wikipedia.org/wiki/Aishbagh_Junction_railway_station",
+        "https://en.wikipedia.org/wiki/Red_Line_(Lucknow_Metro)"
+      ]
+    },
+    "chowk": {
+      "name": "Chowk",
+      "zone": "Hazratganj, Lalbagh & Aminabad",
+      "type": "mixed",
+      "about": "<p>Chowk is the historic heart of old Lucknow, a crowded market district of narrow lanes near the Bara and Chota Imambara, with neighbours such as Husainabad, Daulatganj, Yahiyaganj and Saadatganj. Homes are mostly builder floors and apartments in older buildings, often above shops, and daily needs are close at hand.</p><p>Chowk has no metro station yet. The Blue Line approved in August 2025 is planned to serve the old city's commercial hubs, including Aminabad, Pandeyganj and Chowk, along with the medical college area. For now, tutors mostly come by two-wheeler or auto, since cars struggle in the lanes, and a landmark near the house helps on a first visit. Evening market crowds make afternoon or morning classes easier, and online lessons suit specialist subjects where the right teacher lives across the city. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/chowk-in-lucknow-overview-4473",
+        "https://www.tribuneindia.com/news/business/lucknow-metro-gets-cabinet-nod-for-11-16-km-phase-1b-expansion-worth-rs-5801-crore",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Lucknow_Metro)"
+      ]
+    },
+    "rajendra-nagar": {
+      "name": "Rajendra Nagar",
+      "zone": "Hazratganj, Lalbagh & Aminabad",
+      "type": "residential",
+      "about": "<p>Rajendra Nagar is a residential colony in central Lucknow, developed for housing on the ground where the Lucknow Session of the Congress was held in 1916. It is bordered by Moti Nagar to the south, Tilak Nagar to the west and Dugawan and Raniganj to the east, and Aishbagh, Naka Hindola and Charbagh are close. Housing is largely apartments in mid-rise buildings, and Aishbagh Road is among its main links.</p><p>Charbagh, the city's main railway station and a Red Line metro stop, is close by, so tutors can travel by metro to Charbagh and finish by auto. Apartment buildings may ask visitors to sign in, and parking is easier inside compounds than on the narrow roads. Traffic around Charbagh is heavy at train and office times, so fix a class time that avoids the evening rush, and consider online sessions for subjects that need a specialist. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rajendra_Nagar,_Lucknow",
+        "https://www.99acres.com/rajendra-nagar-lucknow-overview-piffid",
+        "https://www.squareyards.com/aishbagh-in-lucknow-overview-2859"
+      ]
+    },
+    "alambagh": {
+      "name": "Alambagh",
+      "zone": "Alambagh, Ashiyana & Rajajipuram",
+      "type": "mixed",
+      "about": "<p>Alambagh is a busy residential and commercial area near Kanpur Road in the south of the city, with a history that goes back to a palace and garden that was turned into a fort in 1857. It has independent houses, builder floors, apartments and some gated communities, and a large morning vegetable market. Its neighbours include LDA Colony, Singar Nagar, Krishna Nagar and Ashiyana.</p><p>Two Red Line stations serve it, Alambagh and Alambagh ISBT, both opened in September 2017, and the Alambagh bus terminal is the biggest in the city. A tutor can reach most homes by metro plus a short auto ride, and independent houses allow a straight doorstep arrival, while gated communities keep a visitor register. Kanpur Road is heavy with traffic at rush hour, so a class time that avoids the evening peak keeps visits on time. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Alambagh",
+        "https://en.wikipedia.org/wiki/Red_Line_(Lucknow_Metro)",
+        "https://www.squareyards.com/alambagh-in-lucknow-overview-2855"
+      ]
+    },
+    "ashiyana": {
+      "name": "Ashiyana",
+      "zone": "Alambagh, Ashiyana & Rajajipuram",
+      "type": "residential",
+      "about": "<p>Ashiyana is a residential area in south Lucknow known more for independent houses than for high-rise towers, with builder floors, apartments and plots also available. It sits between Alambagh and Parag, with LDA Colony, Sharda Nagar, Telibagh and Krishna Nagar around it, and its sectors form part of the Lucknow Development Authority's Kanpur Road scheme.</p><p>Ashiyana Road, Quila Road and Bijnor Road are the main local links. The nearest metro stops are Krishna Nagar and Singar Nagar on the Red Line, and Krishna Nagar station serves the LDA Colony and Ashiyana side; tutors usually take an auto from there. Most homes open onto sector lanes, so parking outside is easy and there is rarely a society gate to clear. Evening traffic on the roads towards Kanpur Road is worth factoring in when fixing the class time. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/ashiyana-in-lucknow-overview-4453",
+        "https://en.wikipedia.org/wiki/Krishna_Nagar_metro_station_(Lucknow)",
+        "https://www.onefivenine.com/india/villages/Lucknow/Lucknow/Kanpur-Road-Ashiyana-Colony"
+      ]
+    },
+    "rajajipuram": {
+      "name": "Rajajipuram",
+      "zone": "Alambagh, Ashiyana & Rajajipuram",
+      "type": "residential",
+      "about": "<p>Rajajipuram is a well-planned residential colony arranged in lettered blocks from A to F, with wide roads and parks. Homes include independent houses, flats in mid-rise and high-rise buildings, villas and plots, and there are also hostels and paying-guest homes. Talkatora Road, Mohan Road and the Hardoi bypass link it with the rest of the city, and Talkatora, Alambagh, Dubagga and Krishna Nagar are within reach.</p><p>The nearest metro station is Alambagh on the Red Line, and Alamnagar railway station is close by, so tutors often combine the train or metro with an auto ride. Independent houses in the blocks mean a doorstep arrival with parking outside, while apartment buildings may keep a visitor book. A block letter and house number are usually enough to find a home on the first visit. Evening traffic on the main roads towards Charbagh is the main thing to plan around when fixing the class time. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/rajajipuram-in-lucknow-overview-2856",
+        "https://www.99acres.com/rajaji-puram-lucknow-overview-piffid",
+        "https://en.wikipedia.org/wiki/Red_Line_(Lucknow_Metro)"
+      ]
+    },
+    "lda-colony": {
+      "name": "LDA Colony (Kanpur Road Scheme)",
+      "zone": "Alambagh, Ashiyana & Rajajipuram",
+      "type": "residential",
+      "about": "<p>LDA Colony is the Lucknow Development Authority's large Kanpur Road scheme in south Lucknow, laid out in lettered sectors such as B, C, D, D-1, E, F, G, H and K. Homes are mainly independent houses and plots, with some authority-built flats and apartment buildings. Ashiyana, Krishna Nagar, Alambagh and Transport Nagar are its neighbours, and main links include Quila Road, Ashiyana Road and Transport Nagar Road.</p><p>Krishna Nagar metro station on the Red Line, open since September 2017, serves Krishna Nagar, the LDA Colony and Ashiyana, and Transport Nagar station further south sits where Shaheed Path meets Kanpur Road. A tutor can come by metro and auto, or by road along Kanpur Road. Independent homes mean a doorstep arrival and easy parking in the sector lanes. Kanpur Road traffic peaks in the morning and evening, so schedule classes with that in mind, and use online classes for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/lda-colony-lucknow-overview-piffid",
+        "https://en.wikipedia.org/wiki/Krishna_Nagar_metro_station_(Lucknow)",
+        "https://en.wikipedia.org/wiki/Transport_Nagar_metro_station",
+        "https://www.onefivenine.com/india/villages/Lucknow/Lucknow/Kanpur-Road-Sector-G"
+      ]
+    },
+    "krishna-nagar": {
+      "name": "Krishna Nagar",
+      "zone": "Alambagh, Ashiyana & Rajajipuram",
+      "type": "residential",
+      "about": "<p>Krishna Nagar is a residential area on the Kanpur Road side of south Lucknow, where independent houses dominate, followed by villas and some apartments. Alambagh, LDA Colony, Singar Nagar, Transport Nagar, Manas Nagar and Sindhunagar surround it, and local markets serve everyday needs.</p><p>Krishna Nagar metro station on the Red Line opened in September 2017 in Baldi Khera, with Singar Nagar and Transport Nagar stations on either side, which makes this one of the easier southern neighbourhoods to reach by metro. Tutors from Alambagh, Charbagh or central Lucknow can ride the metro and walk or take an auto for the final stretch. Houses usually allow a tutor to park at the door, and there is rarely a society gate to clear. Connecting roads get busy with commercial traffic in the evening, so leave a little margin in the class timing. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Krishna_Nagar_metro_station_(Lucknow)",
+        "https://www.squareyards.com/krishna-nagar-in-lucknow-overview-6051",
+        "https://en.wikipedia.org/wiki/Red_Line_(Lucknow_Metro)"
+      ]
+    },
+    "sarojini-nagar": {
+      "name": "Sarojini Nagar",
+      "zone": "Alambagh, Ashiyana & Rajajipuram",
+      "type": "mixed",
+      "about": "<p>Sarojini Nagar lies along Kanpur Road on the airport side of the city, with Amausi, Transport Nagar, Bijnor and Nadarganj around it. Housing is a mix of independent houses, apartments, villas and plots, including state housing board flats, and an industrial area sits nearby at Nadarganj, giving the locality a mixed character.</p><p>Amausi and CCS International Airport stations form the southern end of the Red Line, and Transport Nagar station also serves this side of Kanpur Road, while Amausi has a railway station on the Kanpur line. Tutors commonly come by metro and auto, or by road along the highway. Independent homes allow parking at the gate, and apartment complexes register visitors at the entrance. The highway can be slow at office hours, so a fixed weekend or early-evening slot is easier to keep. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/sarojini-nagar-in-lucknow-overview-2864",
+        "https://www.99acres.com/sarojini-nagar-lucknow-overview-piffid",
+        "https://en.wikipedia.org/wiki/Red_Line_(Lucknow_Metro)"
+      ]
+    },
+    "sushant-golf-city": {
+      "name": "Sushant Golf City",
+      "zone": "Sushant Golf City, Vrindavan Yojana & Telibagh",
+      "type": "residential",
+      "about": "<p>Sushant Golf City is a large hi-tech township on Shaheed Path and the Lucknow to Sultanpur highway, planned around an 18-hole championship golf course. Housing is mostly apartments in gated towers, with residential plots, villas and condominiums, and commercial blocks and a large shopping mall sit along its main avenue. Awadh Vihar Yojana and Arjunganj are nearby.</p><p>There is no metro station in the township, so tutors travel by car, two-wheeler or cab, usually via Shaheed Path from Gomti Nagar, Vrindavan Yojana or Telibagh. Gated towers typically need visitor registration at the gate and sometimes an approved entry pass for a regular tutor, so arrange this before the first class. Shaheed Path and the highway get busy around the shopping and office stretches in the evening, and online sessions are a practical option when the right specialist lives on the far side of the city. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/sushant-golf-city-in-lucknow-overview-2868",
+        "https://www.99acres.com/sushant-golf-city-lucknow-overview-piffid",
+        "https://en.wikipedia.org/wiki/Shaheed_Path"
+      ]
+    },
+    "vrindavan-yojana": {
+      "name": "Vrindavan Yojana",
+      "zone": "Sushant Golf City, Vrindavan Yojana & Telibagh",
+      "type": "residential",
+      "about": "<p>Vrindavan Yojana is a planned township of the UP Awas Vikas Parishad on Raebareli Road in south Lucknow, divided into numbered sectors across several schemes. It begins just beyond the Shaheed Path junction and has apartments, independent houses, builder floors and residential plots. Telibagh, Sushant Golf City, Sarada Nagar and Mohanlalganj are among its neighbours.</p><p>The township has no metro station, and the nearest Red Line stops are over on the Kanpur Road side, such as Transport Nagar, so most tutors arrive by road along Raebareli Road or Shaheed Path. Independent houses let a tutor park outside, while apartment complexes register visitors at the gate. Raebareli Road is busy at school and office times, so choose a slot that avoids them, and a tutor living in Telibagh or elsewhere in the township is easiest for regular classes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/vrindavan-yojna-in-lucknow-overview-2865",
+        "https://www.realestateindia.com/lucknow-property/vrindavan-yojna-overview.htm",
+        "https://en.wikipedia.org/wiki/Shaheed_Path"
+      ]
+    },
+    "telibagh": {
+      "name": "Telibagh",
+      "zone": "Sushant Golf City, Vrindavan Yojana & Telibagh",
+      "type": "residential",
+      "about": "<p>Telibagh is a quiet residential neighbourhood on Raebareli Road in south Lucknow, where independent houses make up most homes, alongside plots, builder floors and apartments. Vrindavan Yojana, Shaheed Path, Bhadruk and Mohanlalganj are around it, and Raebareli Road links it with the city centre and the airport side.</p><p>There is no metro station in Telibagh, and the nearest Red Line stop is Transport Nagar on Kanpur Road, so tutors usually come by two-wheeler, car or auto. Houses open onto the lane, so there is usually no gate to clear and parking outside is simple. Raebareli Road can be slow at school and office hours, so after-school slots that begin a little later work better, and online lessons help when a specialist subject teacher is based across the city. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/telibagh-in-lucknow-overview-6119",
+        "https://www.realestateindia.com/lucknow-property/vrindavan-yojna-overview.htm"
+      ]
+    }
+  },
+  "zone_facts": {
+    "Gomti Nagar, Indira Nagar & Chinhat": [
+      {
+        "fact": "Gomti Nagar's khands all begin with the letter V; phases one and two are fully occupied while the Extension is still being developed.",
+        "source": "https://en.wikipedia.org/wiki/Gomti_Nagar"
+      },
+      {
+        "fact": "Gomti Nagar railway station (code GTNR) is in Vivek Khand on the Barabanki–Lucknow suburban line and serves Gomti Nagar, Indira Nagar, Chinhat and Kamta.",
+        "source": "https://en.wikipedia.org/wiki/Gomti_Nagar_railway_station"
+      },
+      {
+        "fact": "Indira Nagar is a UP Housing and Development Board colony that grew from four planned blocks to 25 blocks.",
+        "source": "https://en.wikipedia.org/wiki/Indira_Nagar,_Lucknow"
+      },
+      {
+        "fact": "Lekhraj Market, Bhootnath Market, Indira Nagar and Munshi Pulia stations on the Lucknow Metro Red Line opened on 8 March 2019.",
+        "source": "https://en.wikipedia.org/wiki/Red_Line_(Lucknow_Metro)"
+      },
+      {
+        "fact": "Munshi Pulia, in Sector 16 of Indira Nagar, is the northern terminus of the Red Line.",
+        "source": "https://en.wikipedia.org/wiki/Munshi_Pulia_metro_station"
+      },
+      {
+        "fact": "Shaheed Path, a four-lane outer road opened in 2012, starts at Transport Nagar on Kanpur Road and meets Ayodhya (Faizabad) Road at Chinhat, with connections to Gomti Nagar and Gomti Nagar Extension.",
+        "source": "https://en.wikipedia.org/wiki/Shaheed_Path"
+      }
+    ],
+    "Mahanagar, Aliganj & Jankipuram": [
+      {
+        "fact": "The Trans-Gomti area includes Mahanagar, Vikas Nagar, Nirala Nagar, Aliganj and Jankipuram.",
+        "source": "https://en.wikipedia.org/wiki/Trans-Gomti_area"
+      },
+      {
+        "fact": "A Mahanagar metro station was dropped from the final Red Line; the area is served by Badshahnagar and IT College stations.",
+        "source": "https://en.wikipedia.org/wiki/Mahanagar_metro_station"
+      },
+      {
+        "fact": "Badshahnagar metro station opened on 8 March 2019 and connects with Badshahnagar railway station.",
+        "source": "https://en.wikipedia.org/wiki/Badshahnagar_metro_station"
+      },
+      {
+        "fact": "Vishwavidyalaya, IT College and Badshahnagar stations are elevated Red Line stations opened on 8 March 2019.",
+        "source": "https://en.wikipedia.org/wiki/Red_Line_(Lucknow_Metro)"
+      },
+      {
+        "fact": "Aliganj is divided into lettered sectors and is reached via Sitapur Road, Kursi Road, Purania Road and the Ring Road at Tedhi Pulia.",
+        "source": "https://www.99acres.com/aliganj-lucknow-overview-piffid"
+      },
+      {
+        "fact": "Jankipuram Vistar (Jankipuram Extension) is a Lucknow Development Authority scheme with numbered sectors.",
+        "source": "https://www.realestateindia.com/lucknow-property/lda-plots-for-sale-in-jankipuram-vistar-ff2d.htm"
+      }
+    ],
+    "Hazratganj, Lalbagh & Aminabad": [
+      {
+        "fact": "Hazratganj's market began in 1827, took the name Hazratganj in 1842, and was remodelled in a Victorian style after 1857.",
+        "source": "https://en.wikipedia.org/wiki/Hazratganj"
+      },
+      {
+        "fact": "Hussainganj, Sachivalaya and Hazratganj are underground Red Line stations opened on 8 March 2019.",
+        "source": "https://en.wikipedia.org/wiki/Red_Line_(Lucknow_Metro)"
+      },
+      {
+        "fact": "Sachivalaya metro station is located in Lalbagh.",
+        "source": "https://en.wikipedia.org/wiki/Sachivalaya_metro_station"
+      },
+      {
+        "fact": "The Union Cabinet approved Phase-1B of Lucknow Metro (Charbagh–Vasant Kunj, 12 stations: 7 underground and 5 elevated) on 12 August 2025, to serve old-city hubs including Aminabad, Yahiyaganj, Pandeyganj and Chowk.",
+        "source": "https://www.tribuneindia.com/news/business/lucknow-metro-gets-cabinet-nod-for-11-16-km-phase-1b-expansion-worth-rs-5801-crore"
+      },
+      {
+        "fact": "Aminabad is one of the planned underground stations on the Blue Line, which is under construction.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Lucknow_Metro)"
+      },
+      {
+        "fact": "Aishbagh Junction railway station has 6 platforms and was converted from metre gauge to broad gauge from 2016.",
+        "source": "https://en.wikipedia.org/wiki/Aishbagh_Junction_railway_station"
+      },
+      {
+        "fact": "Rajendra Nagar stands on the site of the 1916 Lucknow Session of the Congress.",
+        "source": "https://en.wikipedia.org/wiki/Rajendra_Nagar,_Lucknow"
+      }
+    ],
+    "Alambagh, Ashiyana & Rajajipuram": [
+      {
+        "fact": "The Red Line's first section, Transport Nagar to Charbagh with 8 stations, opened on 5 September 2017.",
+        "source": "https://en.wikipedia.org/wiki/Lucknow_Metro"
+      },
+      {
+        "fact": "The Red Line was extended to CCS International Airport (via Amausi) and to Munshi Pulia on 8 March 2019.",
+        "source": "https://en.wikipedia.org/wiki/Lucknow_Metro"
+      },
+      {
+        "fact": "Alambagh was converted into a fort in November 1857, and its bus depot is the biggest bus terminal in the city.",
+        "source": "https://en.wikipedia.org/wiki/Alambagh"
+      },
+      {
+        "fact": "Krishna Nagar metro station, opened in September 2017, serves Krishna Nagar, the LDA Colony and Ashiyana.",
+        "source": "https://en.wikipedia.org/wiki/Krishna_Nagar_metro_station_(Lucknow)"
+      },
+      {
+        "fact": "Transport Nagar metro station is on Kanpur Road where it intersects Shaheed Path.",
+        "source": "https://en.wikipedia.org/wiki/Transport_Nagar_metro_station"
+      },
+      {
+        "fact": "Singar Nagar metro station, in the Alambagh area, opened in September 2017.",
+        "source": "https://en.wikipedia.org/wiki/Singar_Nagar_metro_station"
+      }
+    ],
+    "Sushant Golf City, Vrindavan Yojana & Telibagh": [
+      {
+        "fact": "Shaheed Path links Kanpur Road with Ayodhya Road by way of the Sultanpur Road and Raebareli Road highways.",
+        "source": "https://en.wikipedia.org/wiki/Shaheed_Path"
+      },
+      {
+        "fact": "Sushant Golf City is a hi-tech township on Amar Shaheed Path and the Lucknow–Sultanpur highway with an 18-hole golf course.",
+        "source": "https://www.squareyards.com/sushant-golf-city-in-lucknow-overview-2868"
+      },
+      {
+        "fact": "Vrindavan Yojana is a UP Awas Vikas Parishad township on Raebareli Road.",
+        "source": "https://www.squareyards.com/vrindavan-yojna-in-lucknow-overview-2865"
+      },
+      {
+        "fact": "Raebareli Road passes through Telibagh.",
+        "source": "https://www.squareyards.com/telibagh-in-lucknow-overview-6119"
+      }
+    ]
+  }
+}

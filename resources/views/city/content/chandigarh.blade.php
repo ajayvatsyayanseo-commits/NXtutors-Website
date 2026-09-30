@@ -1,380 +1,433 @@
 {{--
   Long-form guide for the Chandigarh city page (included by city/show.blade.php
-  when a file named after the city slug exists). Written for parents across the
-  Chandigarh tricity (Chandigarh, Mohali and Panchkula) choosing a home tutor.
-  Every figure is either live from the database or a published NXTutors policy;
-  no schools or coaching institutes are named.
+  when a file named after the city slug exists). It covers the tricity:
+  Chandigarh, Mohali and Panchkula, with Zirakpur. Figures are either live from
+  the database or published NXTutors policy; local facts come from the cited
+  research in database/seo-content/areas/chandigarh-research.json. No school,
+  college, society, developer, hospital, mall or person is named.
 
-  Area links render only when that area page exists and is active, so adding,
-  renaming or disabling an area in Super Admin cannot leave a broken link here.
+  Area links render only when that area page exists and is active, so renaming
+  or disabling an area in Super Admin cannot leave a broken link here.
 --}}
 @php
-  $cAreaSlugs = $allAreas->pluck('slug')->map(fn ($s) => (string) $s)->all();
-  $cA = function (string $slug, string $label) use ($cAreaSlugs) {
-      return in_array($slug, $cAreaSlugs, true)
+  $cgAreaSlugs = $allAreas->pluck('slug')->map(fn ($s) => (string) $s)->all();
+  $cgA = function (string $slug, string $label) use ($cgAreaSlugs) {
+      return in_array($slug, $cgAreaSlugs, true)
           ? '<a href="' . e(url('/city/chandigarh/' . $slug)) . '">' . e($label) . '</a>'
           : e($label);
   };
-  $cAreas = $allAreas->count();
+  $cgTutors = (int) ($hubCounts['tutors'] ?? 0);
+  $cgAreas = $allAreas->count();
 @endphp
 
-<article class="nx-guide ch-guide" aria-labelledby="chGuideTitle">
-  <h2 id="chGuideTitle">Home tuition in Chandigarh, Mohali and Panchkula: a parent's guide to the tricity</h2>
+<article class="nx-guide cg-guide" aria-labelledby="cgGuideTitle">
+  <h2 id="cgGuideTitle">Home tuition across the tricity: Chandigarh, Mohali, Panchkula and Zirakpur</h2>
 
-  <p class="nx-guide__lede ch-lede">
-    Few Indian cities make it as easy to find a tutor nearby as Chandigarh does. The sector grid means a tutor in
-    Sector 21 knows exactly how far Sector 35 is, and a family in Mohali can tell at a glance whether a tutor from
-    Panchkula is realistic on a weekday evening. What makes the tricity unusual is everything else: three
-    administrations sharing one urban area, three different school boards in common use, a deep-rooted habit of
-    preparing for JEE, NEET and government exams, and a steady stream of students getting ready to study abroad.
-    This guide explains how NXTutors finds tutors for tricity families, how those differences affect the choice, and
-    what to look for before you commit.
+  <p class="nx-guide__lede cg-lede">
+    Chandigarh was drawn on paper before a single house went up, as a grid of numbered neighbourhood units called
+    sectors, and Mohali and Panchkula copied the idea on either side. That makes addresses easy: a house number, a sector
+    and a block letter tell a tutor almost everything. What the grid hides is that one urban area answers to a Union Territory,
+    Punjab and Haryana at once, so the sector you live in can decide the school board, the roads a tutor uses and
+    the mix of houses, housing-board flats and gated societies around you. There is no metro yet, so every home
+    lesson rides on a scooter, a car, a city bus or an auto.
   </p>
-
-  <nav class="nx-guide__toc ch-toc" aria-label="In this guide">
+  <nav class="nx-guide__toc cg-toc" aria-label="In this guide">
     <strong>In this guide:</strong>
-    <a href="#ch-how">How matching works</a> ·
-    <a href="#ch-where">Where tutors teach</a> ·
-    <a href="#ch-boards">Boards in the tricity</a> ·
-    <a href="#ch-classes">Class by class</a> ·
-    <a href="#ch-jee-neet">JEE &amp; NEET</a> ·
-    <a href="#ch-abroad">IELTS, TOEFL &amp; SAT</a> ·
-    <a href="#ch-languages">Languages</a> ·
-    <a href="#ch-mode">Home or online</a> ·
-    <a href="#ch-fees">Fees</a> ·
-    <a href="#ch-choose">Choosing a tutor</a> ·
-    <a href="#ch-transfers">Transfers mid-year</a> ·
-    <a href="#ch-safety">Safety</a> ·
-    <a href="#ch-calendar">The school year</a> ·
-    <a href="#ch-start">Getting started</a>
+    <a href="#cg-how">How matching works</a> ·
+    <a href="#cg-zones">The four zones</a> ·
+    <a href="#cg-boards">Boards</a> ·
+    <a href="#cg-classes">Classes</a> ·
+    <a href="#cg-subjects">Subjects</a> ·
+    <a href="#cg-jee-neet">JEE &amp; NEET</a> ·
+    <a href="#cg-mode">Home or online</a> ·
+    <a href="#cg-fees">Fees</a> ·
+    <a href="#cg-choose">The demo class</a> ·
+    <a href="#cg-calendar">The school year</a> ·
+    <a href="#cg-start">Getting started</a>
   </nav>
   <div class="nx-guide__body">
 
   <section class="nx-guide__sec">
-  <h2 id="ch-how">How we find a tutor for your family</h2>
+  <h2 id="cg-how">How does NXTutors find a tutor for a tricity family?</h2>
   <p>
-    You fill in one short request: the student's class and board, the subjects, your sector or locality, the days
-    and times that suit you, whether you want the tutor at home or online, and roughly what you want to spend. We
-    read it as a whole, not as a keyword search, and come back with two or three tutors who fit every part of it.
+    You fill in one request: the student's class and board, the subjects, your sector or phase (with its block or
+    house number), the free evenings or weekend slots, whether you want lessons at home, online or a mix, and a
+    budget. From that we put forward two or three tutors who fit. Every profile shows the tutor's fee before you
+    book anything, and the first lesson with whichever tutor you choose is a free demo. In the tricity, four things
+    shape that shortlist more than anywhere else:
   </p>
-  <p>In the tricity, a few things carry more weight than they would elsewhere:</p>
   <ul>
-    <li><strong>Which side of the border you live on.</strong> A student in a Mohali school may be on the Punjab board, and one in Panchkula on the Haryana board, even if the family lives a few kilometres from the Chandigarh boundary. We match to the board the student actually sits, because the textbooks and paper patterns differ.</li>
-    <li><strong>Sector distance, honestly measured.</strong> The grid makes distances easy to read, but crossing from one city to another at peak hours is a different matter. We look at the tutor's starting point and your time slot, not just the kilometres.</li>
-    <li><strong>A realistic time slot.</strong> After-school hours are the busiest, especially for students who also attend coaching. If your preferred slot is crowded, we tell you and suggest tutors with a genuine opening.</li>
-    <li><strong>Budget.</strong> We only put forward tutors within the range you give us, and you see each fee before any lesson.</li>
-    <li><strong>How the tutor has done so far.</strong> Reviews from families, reliability and how long students stay with a tutor all count.</li>
+    <li><strong>Which side of the border?</strong> A family in Mohali, Panchkula or Chandigarh proper may sit a few sectors from each other yet study under different boards, so we match the board before the postcode.</li>
+    <li><strong>Which road will the tutor use?</strong> With no metro, the question is whether a tutor comes along Madhya Marg, Dakshin Marg, Airport Road or the highway through Zirakpur, and at what hour.</li>
+    <li><strong>House, flat or society?</strong> The first-phase sectors are mostly plotted houses with their own gate; the southern sectors add housing-board flats; Sector 49, Panchkula Sector 20 and much of Zirakpur are gated societies with a guard.</li>
+    <li><strong>What exactly is the goal?</strong> A Class 7 learner needing steady homework help and a Class 12 student balancing boards with JEE need very different people, even in the same street.</li>
   </ul>
   <p>
-    The next step is a <strong>free demo class</strong>. It is an ordinary lesson on whatever the student is studying
-    that week, so you judge real teaching. If it does not click, say so and we arrange the next tutor. Switching is
-    free, and there is no lock-in.
+    The demo is an ordinary lesson on whatever chapter is current at school. If the fit is wrong, we line up the next
+    tutor on your list, and changing tutor later costs nothing.
   </p>
   </section>
 
   <section class="nx-guide__sec">
-  <h2 id="ch-where">Where our tutors teach across the tricity</h2>
+  <h2 id="cg-zones">The tricity in four zones</h2>
   <p>
-    @if($hubCounts['tutors'] > 0)
-      {{ number_format($hubCounts['tutors']) }} tutor profiles are
+    @if($cgTutors > 0)
+      The tutors shown on this page come from {{ number_format($cgTutors) }} tutor profiles,
     @else
-      Our tutors are
+      The tutors shown on this page come from our tutor profiles,
     @endif
-    currently available to families in the Chandigarh area,
-    @if($cAreas > 0) with {{ number_format($cAreas) }} localities listed on their own pages above. @else and we are adding locality pages as the network grows. @endif
-    Here is how the tricity breaks down from a tuition point of view.
+    and @if($cgAreas > 0){{ number_format($cgAreas) }} sectors, phases and towns @else each sector, phase and town @endif
+    in the tricity can carry a page of its own. Each of those pages puts tutors in that locality first, then tutors
+    from the rest of its zone, then online tutors. For planning home lessons we split the tricity into four zones,
+    moving roughly from the older north of Chandigarh to its outer towns:
+    <a href="#cg-north">Chandigarh Sectors 1–30</a>, <a href="#cg-south">Chandigarh Sectors 31–56 &amp;
+    Manimajra</a>, <a href="#cg-mohali">Mohali</a> and <a href="#cg-panchkula">Panchkula &amp; Zirakpur</a>. These
+    groupings are ours and follow how tutors travel, not municipal or state lines.
   </p>
-    <div class="nx-guide__cards">
-      <div class="nx-guide__card">
-  <h3>Chandigarh: the sectors and Manimajra</h3>
-  <p>
-    The northern sectors near the Capitol Complex and Sukhna Lake, such as {!! $cA('sector-8', 'Sector 8') !!},
-    {!! $cA('sector-9', 'Sector 9') !!}, {!! $cA('sector-10', 'Sector 10') !!} and {!! $cA('sector-11', 'Sector 11') !!},
-    are older, quieter and mostly made up of houses, and many families here work at PGI or Panjab University nearby.
-    The central sectors around {!! $cA('sector-22', 'Sector 22') !!} and Sector 17 are well connected in every
-    direction, which makes them a natural meeting point for tutors. The southern sectors in the 30s and 40s, including
-    {!! $cA('sector-35', 'Sector 35') !!}, {!! $cA('sector-38', 'Sector 38') !!} and {!! $cA('sector-44', 'Sector 44') !!},
-    are densely populated and home to many experienced tutors, so evening slots are easier to fill here.
-    {!! $cA('manimajra', 'Manimajra') !!}, on the eastern edge, sits between Chandigarh and Panchkula and often draws
-    tutors from both.
-  </p>
-      </div>
-      <div class="nx-guide__card">
-  <h3>Mohali: phases, sectors and Aerocity</h3>
-  <p>
-    Mohali's older phases, such as {!! $cA('phase-3b2-mohali', 'Phase 3B2') !!}, {!! $cA('phase-7-mohali', 'Phase 7') !!}
-    and {!! $cA('phase-10-mohali', 'Phase 10') !!}, sit close to the Chandigarh border, and tutors move between them
-    and the southern Chandigarh sectors easily. The newer numbered sectors to the south and west, and the
-    {!! $cA('aerocity-mohali', 'Aerocity') !!} area off Airport Road, have grown quickly with high-rise societies and
-    young families. Here the number of tutors living close by is still catching up, so weekend mornings and hybrid
-    arrangements help.
-  </p>
-      </div>
-      <div class="nx-guide__card">
-  <h3>Panchkula and Chandimandir</h3>
-  <p>
-    Panchkula's sectors, from the older ones like {!! $cA('sector-7-panchkula', 'Sector 7') !!} and
-    {!! $cA('sector-11-panchkula', 'Sector 11') !!} to the newer ones further out, are well planned and calm, and have
-    a strong base of home tutors who have taught for many years. Families in and around Chandimandir Cantonment usually look to Panchkula-based tutors.
-  </p>
-      </div>
-      <div class="nx-guide__card">
-  <h3>Zirakpur, Kharar and New Chandigarh</h3>
-  <p>
-    The growing suburbs of {!! $cA('zirakpur', 'Zirakpur') !!}, {!! $cA('kharar', 'Kharar') !!} and
-    {!! $cA('new-chandigarh', 'New Chandigarh') !!} have filled with new apartment societies in recent years. Roads
-    into Chandigarh from these towns can be slow in the evening, so we prefer tutors who live in the suburb itself or
-    on the same side of it. Where the choice nearby is thin, online sessions with a stronger specialist are often the
-    better answer.
-  </p>
-      </div>
-    </div>
   </section>
 
   <section class="nx-guide__sec">
-  <h2 id="ch-boards">Three boards in one urban area</h2>
+  <h3 id="cg-north">Chandigarh Sectors 1–30: the first-phase grid of plotted homes</h3>
   <p>
-    Because Chandigarh is a Union Territory with Punjab on one side and Haryana on the other, parents here meet more
-    school boards than in most cities. A tutor who knows one board well may not know another, so we always ask which
-    one the student is on.
+    Sectors 1 to 30 were built in the city's first phase as low-rise plotted neighbourhoods, with Sector 17 as the
+    central business district. Sector 1 holds the Capitol Complex, declared a UNESCO World Heritage Site in July 2016,
+    and Sukhna Lake, made in 1958 by damming the Sukhna Choe. {!! $cgA('sector-22', 'Sector 22') !!} was the first
+    sector to be developed and is still among the busiest, with a long street market beside its main market.
+    Along the top row, {!! $cgA('sector-8', 'Sector 8') !!} is an older sector of houses and low-rise blocks around a
+    busy market, {!! $cgA('sector-9', 'Sector 9') !!} has bungalows and government residences on wide, tree-lined
+    streets, and {!! $cgA('sector-10', 'Sector 10') !!} runs from one-kanal homes to duplexes beside the Leisure
+    Valley green belt and the Government Museum and Art Gallery.
+  </p>
+  <p>
+    To the west, {!! $cgA('sector-11', 'Sector 11') !!} mixes builder floors and houses around two government
+    college campuses, and {!! $cgA('sector-15', 'Sector 15') !!}, beside the large university campus in Sector 14,
+    has paying-guest homes among the family houses, so postgraduate students and researchers who tutor often live
+    within walking distance. {!! $cgA('sector-16', 'Sector 16') !!} holds the Rose Garden and the cricket stadium on
+    Jan Marg; {!! $cgA('sector-18', 'Sector 18') !!} is a quiet sector of houses next to Sector 17 and its bus
+    terminal; {!! $cgA('sector-19', 'Sector 19') !!} pairs houses with housing-board flats around Sadar Bazaar in
+    19-C; {!! $cgA('sector-21', 'Sector 21') !!} is closely built in blocks A to D along Dakshin Marg; and
+    {!! $cgA('sector-27', 'Sector 27') !!}, on the eastern side, suits tutors coming in from Panchkula or Manimajra.
+  </p>
+  <p>
+    Almost every visit here is a doorbell rather than a gate register, though builder floors need the floor and the
+    right bell spelled out. The Chandigarh Transport Undertaking's inter-state bus terminal in Sector 17 puts
+    Sectors 16, 18, 21 and 22 within an easy bus ride. Madhya Marg fills in the office rush, so an evening lesson
+    that starts before the return traffic is easier to keep.
+  </p>
+  </section>
+
+  <section class="nx-guide__sec">
+  <h3 id="cg-south">Chandigarh Sectors 31–56 &amp; Manimajra: flats, housing-board blocks and an old town</h3>
+  <p>
+    The second phase changed the pattern. Sectors 31 to 47 were built with four-storey apartments for government
+    employees, at nearly four times the density of the northern sectors, and Chandigarh Housing Board blocks are
+    spread across Sectors 38 to 41, 44 to 47, 51, 52 and 55. {!! $cgA('sector-33', 'Sector 33') !!}, near the old
+    village of Burail, is mostly houses and floors around the Terraced Garden of 1979, home to the annual
+    chrysanthemum show. {!! $cgA('sector-35', 'Sector 35') !!} wraps quiet residential pockets round one of south
+    Chandigarh's busiest markets, and {!! $cgA('sector-36', 'Sector 36') !!} centres on the Garden of Fragrance, laid
+    out in 1998 in concentric circles.
+  </p>
+  <p>
+    {!! $cgA('sector-38', 'Sector 38') !!} mixes houses with housing-board flats, while Sector 38 West is a separate
+    pocket with its own market. {!! $cgA('sector-40', 'Sector 40') !!} is mid-budget flats and houses, known for the
+    Sunday second-hand bike market in 40-C. {!! $cgA('sector-44', 'Sector 44') !!} runs in sub-sectors 44-A, 44-C
+    and 44-D, from one-room flats to larger units, right beside the Sector 43 bus terminal.
+    {!! $cgA('sector-46', 'Sector 46') !!} is one of the few southern sectors where independent houses come up
+    regularly. {!! $cgA('sector-49', 'Sector 49') !!} belongs to the belt of Sectors 48 to 51 where cooperative group
+    housing societies brought apartment living to the city.
+  </p>
+  <p>
+    {!! $cgA('manimajra', 'Manimajra') !!}, an old town from the early sixteenth century with its fort still
+    standing, stayed outside the grid until the Administration notified it as Sector 13 in February 2020; the
+    original plan had skipped that number. It mixes old-town lanes with planned complexes, an IT park and a large
+    motor market, and sits at Housing Board Chowk, where the Panchkula commute meets Madhya Marg. Chandigarh
+    Junction, on the Delhi–Ambala–Kalka line opened in 1891, is on this side. Housing-board blocks rarely have
+    staffed gates, the societies of Sector 49 do, and Manimajra's lanes make parking the thing to agree first.
+  </p>
+  </section>
+
+  <section class="nx-guide__sec">
+  <h3 id="cg-mohali">Mohali: phases, sectors and Aerocity on the Punjab side</h3>
+  <p>
+    Mohali, officially Sahibzada Ajit Singh Nagar, grew from an industrial estate begun in 1967, and the township's
+    foundation stone was laid on 1 November 1975. It extends Chandigarh's grid, but its first eleven sectors are
+    known as phases: Phase 7 is Sector 61 and Phase 8 is Sector 62. It became a separate district, carved out of
+    Rupnagar, in 2006, and the Greater Mohali master plan now runs up to Sector 128, with IT City in Sectors 82,
+    82A and 83A.
+  </p>
+  <p>
+    {!! $cgA('mohali-phase-3b2', 'Phase 3B2') !!} is houses and villas round its own market and gurdwara, and
+    {!! $cgA('mohali-phase-5', 'Phase 5') !!}, also numbered Sector 59, is largely independent houses of varied sizes.
+    {!! $cgA('mohali-phase-7', 'Phase 7') !!}, on Sarovar Path, borders Chandigarh's Sector 52 and has one of Mohali's
+    main markets, so tutors from Chandigarh's southern sectors reach it easily. {!! $cgA('mohali-phase-10', 'Phase 10') !!},
+    or Sector 64, has many three-bedroom flats beside Phase 9, which holds the cricket and hockey stadiums.
+    {!! $cgA('mohali-sector-70', 'Sector 70') !!} mixes apartment complexes with LIG, MIG and HIG houses and around
+    ten parks, beside the villages of Mattaur and Sohana. {!! $cgA('aerocity-mohali', 'Aerocity') !!}, planned
+    beside the international airport, is a newer township of plots and houses along Airport Road.
+  </p>
+  <p>
+    The early phases are doorstep visits; apartment complexes in Phase 10 and Sector 70 want a name at the gate.
+    SAS Nagar Mohali station lies on the direct Chandigarh–Ludhiana line, completed in April 2013, and National
+    Highway 5 runs through Kharar and Mohali into Chandigarh. Aerocity has fewer tutors living inside it yet, so
+    families there often draw on the phases, Zirakpur or Chandigarh, or go online for a specialist.
+  </p>
+  </section>
+
+  <section class="nx-guide__sec">
+  <h3 id="cg-panchkula">Panchkula &amp; Zirakpur: Haryana's sector city and the southern gateway</h3>
+  <p>
+    Haryana planned Panchkula in the 1970s on a sector system much like Chandigarh's, so addresses read the same way.
+    {!! $cgA('panchkula-sector-8', 'Sector 8') !!} is plotted houses and builder floors, many with three to five
+    bedrooms, near the Himalayan Expressway and Budhanpur Road. {!! $cgA('panchkula-sector-15', 'Sector 15') !!} is
+    self-contained, with a full market whose tuition centres mean plenty of teachers already work nearby.
+    {!! $cgA('mansa-devi-complex-panchkula', 'Mansa Devi Complex') !!}, or MDC, spreads over Sectors 4, 5 and 6
+    and takes its name from the Mata Mansa Devi temple, whose Navratra crowds are worth planning lessons around.
+    Further north, Chandimandir Cantonment is the headquarters of the Army's Western Command.
+  </p>
+  <p>
+    Towards the south, {!! $cgA('panchkula-sector-20', 'Sector 20') !!} is one of Panchkula's main apartment
+    sectors, built up with group housing and cooperative societies, and {!! $cgA('panchkula-sector-21', 'Sector 21') !!}
+    mixes houses, flats and plots; Peer Muchalla in Zirakpur adjoins both. {!! $cgA('zirakpur', 'Zirakpur') !!}
+    itself falls in Mohali district, on the Punjab side, and grew from villages such as Baltana and Dhakoli into a
+    town of gated societies at the junction of the highways to Shimla, Ambala and Patiala; it is often called the
+    gateway to Chandigarh from Delhi.
+  </p>
+  <p>
+    National Highway 5 enters Haryana at Zirakpur and runs on through Panchkula, Pinjore and Kalka, and the
+    redeveloped Chandigarh Junction has a station building on the Panchkula side too. Society gates dominate Sector
+    20 and Zirakpur, so register the tutor once at the start. The highway and Housing Board Chowk carry heavy
+    commuter traffic, which makes a tutor from your own side of the chowk the steadier choice.
+  </p>
+  </section>
+
+  <section class="nx-guide__sec">
+  <h2 id="cg-boards">Which boards do tricity tutors teach?</h2>
+  <p>
+    Tricity families study under up to five boards, and a tutor fluent in one is not automatically at ease in
+    another, so the board is the first thing we match. CBSE, CISCE and the international programmes are national or
+    global; the two state boards follow the state line.
   </p>
     <div class="nx-guide__cards">
       <div class="nx-guide__card">
   <h3>CBSE</h3>
   <p>
-    CBSE is the most common board across the tricity, and it follows the NCERT textbooks closely. Board papers draw
-    on NCERT examples and exercises and include a large share of competency-based items such as case studies and
-    assertion–reason questions. A good CBSE tutor starts from the NCERT chapter, then uses sample papers and previous
-    years' questions, and teaches the student to set out answers step by step the way the marking scheme rewards.
+    CBSE papers rest on the NCERT textbooks, and a good share of each paper now tests whether a student can apply
+    an idea: case-based passages, assertion–reason items and familiar concepts placed in new settings. The tutor to
+    look for works through the NCERT chapter first, then the board's sample papers and marking schemes, and insists
+    on written steps so method marks are banked.
   </p>
       </div>
       <div class="nx-guide__card">
-  <h3>Punjab School Education Board (PSEB)</h3>
+  <h3>ICSE and ISC</h3>
   <p>
-    Many schools in Mohali and the wider Punjab side follow the Punjab board. The syllabus covers much of the same
-    ground as CBSE, but the textbooks, question styles and the weight given to certain chapters differ, and some
-    students study partly in Punjabi. Tutors should work from the board's own textbooks and past papers rather than
-    assume CBSE material will fit.
+    CISCE sets the ICSE at Class 10 and the ISC at Class 12. Both expect long written answers over a wide syllabus,
+    with prescribed literature in English. The usual difficulty is keeping every chapter fresh rather than any single
+    hard topic, so a tutor should run a repeating revision cycle and timed writing, and keep an eye on project work.
   </p>
       </div>
       <div class="nx-guide__card">
-  <h3>Haryana Board (HBSE)</h3>
+  <h3>IB and IGCSE</h3>
   <p>
-    In Panchkula, a good number of students are on the Board of School Education Haryana. The same principle applies:
-    the tutor needs the board's prescribed books and a feel for how its papers are set. Families who move between
-    Panchkula and Chandigarh sometimes switch between HBSE and CBSE, and a tutor who knows both makes that much
-    easier.
+    The IB Diploma mixes final exams with internal assessment, and its Mathematics comes as Analysis and Approaches or
+    Applications and Interpretation, each at Standard or Higher Level. A tutor may discuss an Internal Assessment or
+    Extended Essay but must not write it. Cambridge IGCSE rewards command words, the right tier and past papers
+    marked against the official scheme.
   </p>
       </div>
       <div class="nx-guide__card">
-  <h3>ICSE and international curricula</h3>
+  <h3>Punjab School Education Board</h3>
   <p>
-    A smaller group of tricity schools follow ICSE and ISC, which expect longer, more detailed written answers, and a
-    few offer international programmes such as IB or Cambridge. Specialist tutors for these are fewer, so we often
-    widen the search to online tutors for Higher Level or A Level subjects.
+    On the Mohali side, including Zirakpur, some families study under the Punjab School Education Board. Its
+    textbooks and papers are its own, so a tutor should work from the board's prescribed books and past papers
+    rather than assume CBSE material fits, and should check the current syllabus on the board's website.
+  </p>
+      </div>
+      <div class="nx-guide__card">
+  <h3>Board of School Education Haryana</h3>
+  <p>
+    In Panchkula, the Board of School Education Haryana is the state option. The same rule applies: teach from the
+    board's own books, practise its past papers, and confirm the scheme each year on its official site. A tutor who
+    knows both this board and CBSE helps a family that changes schools across the Panchkula–Chandigarh line.
   </p>
       </div>
     </div>
   </section>
 
   <section class="nx-guide__sec">
-  <h2 id="ch-classes">What tuition looks like class by class</h2>
+  <h2 id="cg-classes">What should tuition cover at each stage?</h2>
     <div class="nx-guide__cards">
       <div class="nx-guide__card">
-  <h3>Primary and middle school (Classes 1 to 8)</h3>
+  <h3>Classes 1 to 8</h3>
   <p>
-    The goal here is steady habits and secure basics: reading with understanding, number sense and neat written work. One or two sessions a week is plenty. For many tricity families, middle school is
-    also when Punjabi or Hindi as a second or third language starts to need attention at home.
+    The primary and middle years are about habits: reading with understanding, quick number work, fractions and
+    decimals, the first taste of algebra, and neat, complete answers. One or two lessons a week with a tutor beside
+    the child is usually enough, and a tutor from the next sector or phase keeps that routine easy.
   </p>
       </div>
       <div class="nx-guide__card">
   <h3>Classes 9 and 10</h3>
   <p>
-    Maths and Science get noticeably harder in Class 9, and Class 10 board exams follow straight after. A sensible
-    plan covers Class 9 thoroughly, then in Class 10 moves from teaching to chapter tests and full papers during the
-    second half of the year. This is also where many students begin a foundation course for JEE or NEET, and a tutor
-    can make sure school marks do not slip while that happens.
+    Maths and Science jump in difficulty in Class 9, and the Class 10 board year builds directly on it, so gaps
+    carried forward surface at the worst moment. Teach Class 9 fully, then in Class 10 move from chapters to tests
+    to full papers in the second half of the year. See our
+    <a href="{{ url('/blog/cbse-class-10-maths-preparation') }}">Class 10 Maths preparation plan</a> and
+    <a href="{{ url('/blog/cbse-class-10-science-notes') }}">Class 10 Science notes</a>.
   </p>
       </div>
       <div class="nx-guide__card">
   <h3>Classes 11 and 12</h3>
   <p>
-    Stream choice shapes everything after Class 10. Science students most often need help with Physics and Maths;
-    commerce students with Accountancy and Economics; humanities students with Political Science, History and
-    English writing, which also matter for those with an eye on civil services later. At this level we usually
-    suggest a separate specialist for each subject. Our guide on
-    <a href="{{ url('/blog/how-to-choose-boardstream') }}">choosing a board and stream</a> may help if that decision
-    is still open.
+    After Class 10 the stream decides the tuition. Science students most often need Physics and Maths, commerce
+    students Accountancy and Economics, and a separate specialist per subject usually works better than one
+    all-rounder. Our <a href="{{ url('/blog/cbse-class-12-physics-strategies') }}">Class 12 Physics strategies</a>
+    and <a href="{{ url('/blog/cbse-class-12-maths-calculusalgebra') }}">Class 12 calculus and algebra guide</a> go
+    further.
   </p>
       </div>
     </div>
   </section>
 
   <section class="nx-guide__sec">
-  <h2 id="ch-jee-neet">JEE, NEET and the tricity's exam culture</h2>
+  <h2 id="cg-subjects">Which subjects can a tricity tutor take on?</h2>
   <p>
-    The tricity has a long tradition of students preparing for engineering and medical entrance exams, and of
-    families encouraging careers in government and the defence services. Most JEE and NEET aspirants here join a
-    coaching programme. A home or online tutor adds the most value alongside it:
+    Tutors on NXTutors cover Mathematics, Physics, Chemistry, Biology, English, Computer Science, Accountancy,
+    Economics, Business Studies and Hindi, and many handle every subject for the primary classes. The tricity has
+    dedicated pages for <a href="{{ url('/maths-home-tutor-chandigarh') }}">maths home tutors in Chandigarh</a>,
+    <a href="{{ url('/science-home-tutor-chandigarh') }}">science home tutors</a>,
+    <a href="{{ url('/physics-home-tutor-chandigarh') }}">physics home tutors</a> and
+    <a href="{{ url('/chemistry-home-tutor-chandigarh') }}">chemistry home tutors</a>, each with local tutors and
+    board-by-board detail. Class 12 Chemistry deserves a word: its physical, organic and inorganic parts reward
+    different habits, as our <a href="{{ url('/blog/cbse-class-12-chemistry-organicinorganic') }}">organic and
+    inorganic Chemistry guide</a> explains. For older students applying overseas, online tutors also prepare
+    <a href="{{ url('/blog/ielts-writing-preparation-2025') }}">IELTS Writing</a>,
+    <a href="{{ url('/blog/ielts-speaking-preparation') }}">IELTS Speaking</a> and the
+    <a href="{{ url('/blog/sat-math-modules--dsat') }}">digital SAT Maths modules</a>.
+  </p>
+  </section>
+
+  <section class="nx-guide__sec">
+  <h2 id="cg-jee-neet">Can a home tutor support JEE or NEET preparation here?</h2>
+  <p>
+    Yes, working next to a coaching programme rather than instead of it. The hours a tutor adds pay off in three
+    ways:
   </p>
   <ul>
-    <li><strong>Working through the coaching material.</strong> Large batches leave questions unanswered. A tutor who goes through the student's own sheets and test papers each week keeps small doubts from piling up.</li>
-    <li><strong>Balancing boards and entrance exams.</strong> Class 12 students need both. Much of the NCERT content overlaps, and a tutor can plan revision so each supports the other.</li>
-    <li><strong>Rescuing one subject.</strong> A student strong in two subjects and weak in the third often gains more from focused one-to-one time on that subject than from longer hours in all three.</li>
+    <li><strong>Clearing the coaching pile.</strong> Each week the tutor goes through unsolved sheet problems and every question the student got wrong in the last test.</li>
+    <li><strong>One revision for two exams.</strong> NCERT content from Classes 11 and 12 feeds both the board papers and the entrance tests, so a single plan serves both.</li>
+    <li><strong>Lifting the weak subject.</strong> Time aimed at the subject that pulls the total down does more than the same hours spread evenly across three.</li>
   </ul>
   <p>
-    JEE Main is held in two sessions in the first half of the year, followed by JEE Advanced for those who qualify;
-    NEET UG is held once a year in spring. For NEET, careful study of the NCERT Biology books is the backbone of
-    preparation. For JEE Maths, see our <a href="{{ url('/blog/jee-maths-topicwise-prep') }}">topic-wise preparation
-    guide</a>.
+    NTA runs JEE Main in two sessions in the first half of the year, and qualifiers can sit JEE Advanced; NEET UG
+    is held once a year, with Biology carrying half the marks, so close reading of the NCERT Biology books is the
+    core of preparation. Take every date from that year's official bulletin. Our topic plans cover
+    <a href="{{ url('/blog/jee-maths-topicwise-prep') }}">JEE Maths</a>,
+    <a href="{{ url('/blog/jee-physics-topicwise-prep') }}">JEE Physics</a>,
+    <a href="{{ url('/blog/jee-chemistry-physicalorganicinorganic') }}">JEE Chemistry</a> and
+    <a href="{{ url('/blog/-neet-biology-ncertfirst') }}">NEET Biology, starting from NCERT</a>. When coaching runs
+    late into the evening, a short online session for doubts often fits better than a home visit.
   </p>
   </section>
 
   <section class="nx-guide__sec">
-  <h2 id="ch-abroad">Preparing to study abroad: IELTS, TOEFL and SAT</h2>
+  <h2 id="cg-mode">Should lessons be at home or online in the tricity?</h2>
   <p>
-    Chandigarh and the surrounding region of Punjab have a strong tradition of students going overseas for
-    undergraduate and postgraduate study, and many families start planning while the student is still in school.
-    Tutoring helps most with the tests that stand between a student and an application.
+    A tutor at the table suits younger children and any subject where the written working counts as much as the
+    answer, such as Maths or Chemistry numericals. Online lessons reach tutors across India, which matters most for
+    IB, IGCSE and senior specialist papers. In the tricity, travel settles much of the choice:
   </p>
   <ul>
-    <li><strong>IELTS.</strong> Most students find Writing and Speaking the hardest parts. A tutor who gives detailed feedback on essays and runs mock speaking interviews is worth more than any volume of practice tests. See our guides to <a href="{{ url('/blog/ielts-writing-preparation-2025') }}">IELTS Writing</a> and <a href="{{ url('/blog/ielts-speaking-preparation') }}">IELTS Speaking</a>.</li>
-    <li><strong>TOEFL.</strong> Required by some universities, particularly in North America. It is computer-based and leans on academic reading and listening, so practice on screen with timed tasks matters.</li>
-    <li><strong>SAT.</strong> For students aiming at US undergraduate courses, the digital SAT tests reading, writing and maths in adaptive modules. Students strong in CBSE maths still need practice with its question style; our <a href="{{ url('/blog/sat-math-modules--dsat') }}">SAT Maths guide</a> explains the format.</li>
+    <li><strong>No metro yet.</strong> The tricity has no metro in operation; the revived Chandigarh Metro, cleared in July 2024, is planned for a first phase between 2027 and 2034. Until then tutors come by road.</li>
+    <li><strong>Two commuter corridors.</strong> Madhya Marg carries most of the morning traffic between Panchkula and Chandigarh, through Housing Board Chowk, and the highway through Zirakpur carries the southern flow. Evening slots set just before the return rush are the ones that last.</li>
+    <li><strong>Bus terminals as meeting points.</strong> The inter-state bus terminals in Sectors 17 and 43 put the sectors around them within reach of tutors who travel by bus, with an auto for the last stretch.</li>
+    <li><strong>Local calendars.</strong> Match days near the stadiums in Sector 16 and Mohali's Phase 9, and Navratra near the Mansa Devi temple, are good weeks to switch a lesson online.</li>
   </ul>
   <p>
-    These tests are held many times a year, so start a few months before the intended test date and well before application deadlines. Online sessions suit this work, since much of the practice is on screen anyway.
+    Many families settle on a weekly home lesson plus a short online doubt session with the same tutor. Our
+    <a href="{{ url('/blog/home-tutor-vs-online-tutor') }}">comparison of home and online tutors</a> and the piece
+    on <a href="{{ url('/blog/online-vs-offline-tutoring') }}">online versus offline tutoring</a> weigh the two.
   </p>
   </section>
 
   <section class="nx-guide__sec">
-  <h2 id="ch-languages">Punjabi, Hindi and English</h2>
+  <h2 id="cg-fees">What does a home tutor cost in the tricity?</h2>
   <p>
-    Language needs in the tricity vary with where the student goes to school. In Punjab, including Mohali, Punjabi is
-    a compulsory subject in schools, so families who have moved from other states often need help for a child
-    starting Punjabi late, beginning with the Gurmukhi script. In Chandigarh and Panchkula, Punjabi is widely offered
-    as a second or third language alongside Hindi and, in some schools, Sanskrit.
-  </p>
-  <p>
-    Hindi tutoring is most often about grammar and written expression in the board classes. English tutoring covers
-    everything from reading and spoken confidence for younger children to literature and essay writing in the senior
-    classes, and naturally overlaps with IELTS and TOEFL preparation for older students.
-  </p>
-  </section>
-
-  <section class="nx-guide__sec">
-  <h2 id="ch-mode">Home tuition or online tuition?</h2>
-  <p>
-    Home tuition remains popular here, and the compact sectors make it practical.
-    It suits younger children, students who lose focus on a screen, and subjects where handwritten working matters.
-    Online tuition widens the field to specialists for IB, A Levels, IELTS or JEE Advanced, and saves travel in the
-    suburbs.
-  </p>
-  <p>
-    The weather plays a part too. Dense fog on winter mornings and evenings, and the heat of May and June, can make
-    travel unpleasant or unreliable. Many families switch to online sessions for those weeks and return to home
-    visits afterwards. We can arrange home, online or hybrid tuition with the same tutor, so that change does not
-    mean starting over. For a longer comparison, read <a href="{{ url('/blog/online-vs-offline-tutoring') }}">online
-    versus offline tutoring</a>.
-  </p>
-  </section>
-
-  <section class="nx-guide__sec">
-  <h2 id="ch-fees">What tuition costs in the tricity</h2>
-  <p>
-    Across NXTutors, most sessions fall between <strong>₹800 and ₹2,500 an hour</strong>. Where a particular tutor
-    sits depends on a handful of things:
+    Across NXTutors, most home-tuition sessions fall between ₹800 and ₹2,500 an hour; Classes 11–12, IB/IGCSE and
+    JEE/NEET sit toward the upper end; specialists for IB HL or JEE Advanced can charge more. Each tutor sets their
+    own fee, and three things usually move it:
   </p>
   <ul>
-    <li><strong>Level.</strong> Senior classes cost more than primary and middle school.</li>
-    <li><strong>What is being prepared.</strong> JEE Advanced problem-solving, NEET Biology depth, IB or A Level subjects, and test preparation such as IELTS or SAT sit towards the upper end.</li>
-    <li><strong>Experience.</strong> Tutors with long board-exam experience and good reviews charge more.</li>
-    <li><strong>Crossing city lines.</strong> A tutor travelling from Panchkula to Mohali in the evening may price the journey in; one in your own sector usually will not.</li>
-    <li><strong>How often.</strong> Many tutors offer a lower hourly rate for three or more sessions a week, or for a monthly plan.</li>
+    <li><strong>The class and the board.</strong> Primary lessons tend to cost less than senior classes, and IB or IGCSE work sits higher.</li>
+    <li><strong>How specialised the help is.</strong> JEE Advanced problem work, IB Higher Level and support around coursework sit at the top.</li>
+    <li><strong>The journey.</strong> A tutor crossing from Panchkula to Mohali, or through Housing Board Chowk at rush hour, may build that in; one from your own sector or phase usually does not.</li>
   </ul>
   <p>
-    You see every shortlisted tutor's fee before the demo. Our <a href="{{ url('/pricing-guide') }}">pricing guide</a>
-    has a fuller breakdown by class and subject.
+    You see every shortlisted fee before the demo, and we do not suggest tutors above the budget you give. The
+    <a href="{{ url('/pricing-guide') }}">pricing guide</a> breaks fees down by class and subject, and our
+    <a href="{{ url('/blog/home-tuition-fees-chandigarh') }}">guide to home tuition fees in Chandigarh</a> looks at
+    the tricity in more detail.
   </p>
   </section>
 
   <section class="nx-guide__sec">
-  <h2 id="ch-choose">A checklist for picking the right tutor</h2>
-  <p>Use the demo class to answer these questions:</p>
+  <h2 id="cg-choose">What should you watch for in the demo class?</h2>
+  <p>A profile earns a tutor a place on your list; the demo shows whether they belong there. Watch five things:</p>
   <ol>
-    <li><strong>Does the tutor know your board?</strong> Ask which textbook they teach from and how that board's papers are set. The answer for PSEB or HBSE should not be the same as for CBSE.</li>
-    <li><strong>Did they check what the student already knows</strong> before explaining anything new?</li>
-    <li><strong>Was the student working</strong>, solving and answering, for most of the lesson?</li>
-    <li><strong>Can they fit around coaching?</strong> If the student attends a coaching programme, ask how the tutor would use its sheets and tests rather than repeat them.</li>
-    <li><strong>Is there a plan?</strong> A good tutor will say what they intend to cover in the next four weeks and how they will check it.</li>
-    <li><strong>Are the practicalities clear?</strong> Travel time, what happens in fog or heavy rain, and how missed sessions are made up.</li>
-    <li><strong>Was the student comfortable?</strong> For younger children especially, this matters more than any degree.</li>
+    <li><strong>Did they test before teaching?</strong> A good tutor finds out what the student already knows before explaining anything.</li>
+    <li><strong>Who held the pen?</strong> Your child should spend most of the lesson solving and answering, not watching.</li>
+    <li><strong>Do they know your board?</strong> Ask how this year's paper is set. The answer for the Punjab or Haryana board should not be the CBSE answer.</li>
+    <li><strong>Is there a plan?</strong> What will the next four weeks cover, and how will you see progress?</li>
+    <li><strong>Does the journey work?</strong> Which road, what time, and what happens on a match day or festival evening?</li>
   </ol>
-  <p>If several answers are no, tell us and we will arrange a demo with the next tutor on the list.</p>
+  <p>
+    For a gated society in Sector 49, Panchkula Sector 20 or Zirakpur, give the guard the tutor's name or add it to
+    the visitor app before the demo. For a house or builder floor, send the sector, block, house number, floor and a
+    map pin. Keep lessons in a shared room with an adult at home. Our
+    <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist for parents</a> and the guide
+    to <a href="{{ url('/blog/how-to-choose-boardstream') }}">choosing a board and stream</a> go further.
+  </p>
   </section>
 
   <section class="nx-guide__sec">
-  <h2 id="ch-transfers">Families who transfer mid-year</h2>
-  <p>
-    The tricity has many families whose work moves them on a schedule that ignores the school calendar: defence
-    families posted to or from Chandimandir, doctors and staff at PGI, faculty at Panjab University, and officers in
-    central and state government. A mid-year move often means a change of school and board at the same time.
-  </p>
+  <h2 id="cg-calendar">When in the school year should tuition start?</h2>
+  <p>CBSE's academic session begins in April, and a board year tends to fall into five parts:</p>
   <ul>
-    <li><strong>Coming in from another state board.</strong> The content is often familiar but the order of chapters differs. A tutor can map what the new school has already covered and fill the gaps in a few weeks.</li>
-    <li><strong>Moving between CBSE, PSEB and HBSE within the tricity.</strong> Textbooks, languages and question styles change. Language requirements, especially Punjabi on the Punjab side, often need the most attention.</li>
-    <li><strong>Arriving in Class 9 or Class 11.</strong> These years feed directly into the board exams, so we look for tutors who can start within days, not weeks.</li>
+    <li><strong>April to June:</strong> new books and the summer break, the easiest time to begin and to mend last year's gaps.</li>
+    <li><strong>July to September:</strong> regular weekly lessons beside school, chapter tests, and first-term exams in many schools.</li>
+    <li><strong>October to December:</strong> finishing the syllabus, with pre-board exams in many schools near the new year.</li>
+    <li><strong>January to March:</strong> board exams after a run of sample papers; the first JEE Main session usually falls here as well.</li>
+    <li><strong>April to May:</strong> the second JEE Main session, then JEE Advanced and NEET UG, while IB and Cambridge students sit their May papers.</li>
   </ul>
   <p>
-    Online sessions can begin before the move itself.
+    State boards publish their own calendars, so Punjab and Haryana board families should check the board's notices.
+    A spring start gives a tutor the whole year; a winter start still helps, with the weight on papers and timing.
   </p>
   </section>
 
   <section class="nx-guide__sec">
-  <h2 id="ch-safety">Safety and verification</h2>
+  <h2 id="cg-start">How do you get started in the tricity?</h2>
   <p>
-    Every tutor on NXTutors is ID-verified and goes through a profile check before being shortlisted to a family, and
-    we keep tracking reviews and reliability after that. For home sessions, simple habits help: schedule lessons when
-    an adult is at home, use a shared room rather than a bedroom, and let your society's security desk know the
-    tutor's name and timing if you live in a gated complex. If anything about a tutor's conduct worries you, contact
-    us straight away and we will act on it.
+    Send us the class, the board, the subjects, your sector or phase with its block, and the slots that suit you. We
+    come back with two or three matched tutors; you pick one for a free demo and decide afterwards. Choose your
+    locality from the zones above, browse <a href="{{ url('/tutors') }}">all tutors</a> or book a
+    <a href="{{ url('/demo-class') }}">free demo class</a>. If no home tutor is close enough yet, an online tutor
+    from elsewhere in India can begin right away.
   </p>
-  </section>
-
-  <section class="nx-guide__sec">
-  <h2 id="ch-calendar">Planning around the tricity school year</h2>
   <p>
-    Most schools here begin their session in April. A typical year for a student in a board class looks like this:
+    Planning for one part of the tricity? Our local guides cover
+    <a href="{{ url('/blog/chandigarh-sectors-tuition-guide') }}">Chandigarh's sectors</a> and
+    <a href="{{ url('/blog/mohali-and-panchkula-tuition-guide') }}">Mohali and Panchkula</a>.
   </p>
-  <ul>
-    <li><strong>April and May:</strong> a good time to begin with a tutor, while the new syllabus is just starting.</li>
-    <li><strong>Summer vacation:</strong> the hottest weeks, useful for fixing gaps from the year before, often online.</li>
-    <li><strong>July to September:</strong> regular teaching, chapter tests and the first term exams.</li>
-    <li><strong>October to December:</strong> finish the syllabus; pre-board exams often start in December or January.</li>
-    <li><strong>Winter break and fog season:</strong> many schools close for part of late December and January. It is valuable revision time, and online sessions avoid foggy roads.</li>
-    <li><strong>February and March:</strong> board exams, with JEE Main's first session early in the year.</li>
-    <li><strong>April and May:</strong> JEE Main's second session, JEE Advanced and NEET UG.</li>
-  </ul>
-  <p>
-    Starting early gives a tutor a full year; starting later still helps, but the focus shifts to practising papers.
-  </p>
-  </section>
-
-  <section class="nx-guide__sec">
-  <h2 id="ch-start">Getting started</h2>
-  <p>
-    Tell us the student's class, board and subjects, your sector, phase or town, and the times that suit you. We
-    will come back with two or three matched tutors, you choose one for a free demo, and you decide after that.
-    Browse <a href="{{ url('/tutors') }}">our tutors</a> or book a <a href="{{ url('/demo-class') }}">free demo
-    class</a> to begin.
-  </p>
-  <p class="ch-note">
-    Looking outside the tricity? We also have tutors in <a href="{{ url('/city/gurugram') }}">Gurugram</a>,
-    <a href="{{ url('/city/delhi-ncr') }}">Delhi NCR</a> and <a href="{{ url('/city') }}">other cities across
+  <p class="cg-note">
+    Looking elsewhere? See home tutors in <a href="{{ url('/city/delhi') }}">Delhi</a>,
+    <a href="{{ url('/city/gurugram') }}">Gurugram</a> and <a href="{{ url('/city/faridabad') }}">Faridabad</a>,
+    the <a href="{{ url('/city/delhi-ncr') }}">Delhi NCR</a> hub, or <a href="{{ url('/city') }}">cities across
     India</a>.
+  </p>
+  <p class="cg-note">
+    Teaching in the tricity? See <a href="{{ url('/tuition-jobs/chandigarh') }}">home tuition jobs in
+    Chandigarh</a> and the sectors where families are asking for tutors.
   </p>
   </section>
 
   </div>
 </article>
-

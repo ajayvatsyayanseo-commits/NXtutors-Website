@@ -237,14 +237,14 @@ class GeoStructureTest extends TestCase
             ->assertSee('Tutors needed')
             ->assertSee('"@type":"FAQPage"', false);
         // A city with nothing real behind it: live for recruitment, not indexed, not in the sitemap.
-        $this->get('/tuition-jobs/chandigarh')->assertOk()->assertSee('<meta name="robots" content="noindex, follow">', false);
+        $this->get('/tuition-jobs/delhi-ncr')->assertOk()->assertSee('<meta name="robots" content="noindex, follow">', false);
         $this->get('/tuition-jobs/mumbai')->assertOk()->assertDontSee('noindex', false); // a real tutor lives there
         $this->get('/tuition-jobs')->assertOk()->assertSee('Home tuition and online tutor jobs in India')->assertSee(url('/tuition-jobs/state/haryana'), false);
         $this->get('/tuition-jobs/state/haryana')->assertOk()->assertSee(url('/tuition-jobs/faridabad'), false)->assertDontSee('noindex', false);
         $this->withExceptionHandling()->get('/tuition-jobs/nowhere')->assertNotFound();
         $this->get('/tuition-jobs/state/nowhere')->assertNotFound();
         $map = $this->get('/sitemap-pages.xml');
-        $map->assertSee('/tuition-jobs/gurugram', false)->assertSee('/tuition-jobs/state/haryana', false)->assertSee('/tuition-jobs/faridabad', false)->assertDontSee('/tuition-jobs/chandigarh', false);
+        $map->assertSee('/tuition-jobs/gurugram', false)->assertSee('/tuition-jobs/state/haryana', false)->assertSee('/tuition-jobs/faridabad', false)->assertDontSee('/tuition-jobs/delhi-ncr"', false);
     }
 
     public function test_about_text_fills_only_empty_new_areas_and_rolls_back(): void
@@ -468,6 +468,186 @@ class GeoStructureTest extends TestCase
         $launch->down();
         $this->assertSame(0, DB::table('city_area_list_managment')->where('page_schema', 'seo-2026-10-02-pune')->count());
         $this->assertSame($cityId, DB::table('city_managment')->where('slug', 'pune')->value('id'), 'the city row stays');
+    }
+
+    public function test_indore_areas_launch_safely(): void
+    {
+        if (! DB::table('city_managment')->where('slug', 'indore')->exists()) {
+            DB::table('city_managment')->insert(['city_name' => 'Indore', 'slug' => 'indore']);
+        }
+        $cityId = DB::table('city_managment')->where('slug', 'indore')->value('id');
+        $launch = require database_path('migrations/seo/2026_10_02_140000_indore_areas.php');
+        $launch->up();
+        $launch->up();
+
+        $this->assertSame('Vijay Nagar & AB Road', \App\Support\Zones::of('Indore', 'Vijay Nagar'));
+        $this->assertGreaterThanOrEqual(26, DB::table('city_area_list_managment')->where('city_id', $cityId)->count());
+        $this->get('/city/indore/vijay-nagar')->assertOk()->assertSee('Vijay Nagar at a glance', false);
+        $this->get('/tuition-jobs/indore')->assertOk()->assertSee('Where in Indore tutors are needed');
+
+        $launch->down();
+        $this->assertSame(0, DB::table('city_area_list_managment')->where('page_schema', 'seo-2026-10-02-indore')->count());
+        $this->assertSame($cityId, DB::table('city_managment')->where('slug', 'indore')->value('id'), 'the city row stays');
+    }
+
+    public function test_chandigarh_areas_launch_safely(): void
+    {
+        if (! DB::table('city_managment')->where('slug', 'chandigarh')->exists()) {
+            DB::table('city_managment')->insert(['city_name' => 'Chandigarh', 'slug' => 'chandigarh']);
+        }
+        $cityId = DB::table('city_managment')->where('slug', 'chandigarh')->value('id');
+        $launch = require database_path('migrations/seo/2026_10_02_150000_chandigarh_areas.php');
+        $launch->up();
+        $launch->up();
+
+        $this->assertSame('Chandigarh Sectors 31–56 & Manimajra', \App\Support\Zones::of('Chandigarh', 'Sector 35'));
+        $this->assertGreaterThanOrEqual(27, DB::table('city_area_list_managment')->where('city_id', $cityId)->count());
+        $this->get('/city/chandigarh/sector-35')->assertOk()->assertSee('Sector 35 at a glance', false);
+        $this->get('/tuition-jobs/chandigarh')->assertOk()->assertSee('Where in Chandigarh tutors are needed');
+
+        $launch->down();
+        $this->assertSame(0, DB::table('city_area_list_managment')->where('page_schema', 'seo-2026-10-02-chandigarh')->count());
+        $this->assertSame($cityId, DB::table('city_managment')->where('slug', 'chandigarh')->value('id'), 'the city row stays');
+    }
+
+    public function test_jaipur_areas_launch_safely(): void
+    {
+        if (! DB::table('city_managment')->where('slug', 'jaipur')->exists()) {
+            DB::table('city_managment')->insert(['city_name' => 'Jaipur', 'slug' => 'jaipur']);
+        }
+        $cityId = DB::table('city_managment')->where('slug', 'jaipur')->value('id');
+        $launch = require database_path('migrations/seo/2026_10_02_160000_jaipur_areas.php');
+        $launch->up();
+        $launch->up();
+
+        $this->assertSame('Vaishali Nagar & West Jaipur', \App\Support\Zones::of('Jaipur', 'Vaishali Nagar'));
+        $this->assertGreaterThanOrEqual(22, DB::table('city_area_list_managment')->where('city_id', $cityId)->count());
+        $this->get('/city/jaipur/vaishali-nagar')->assertOk()->assertSee('Vaishali Nagar at a glance', false);
+        $this->get('/tuition-jobs/jaipur')->assertOk()->assertSee('Where in Jaipur tutors are needed');
+
+        $launch->down();
+        $this->assertSame(0, DB::table('city_area_list_managment')->where('page_schema', 'seo-2026-10-02-jaipur')->count());
+        $this->assertSame($cityId, DB::table('city_managment')->where('slug', 'jaipur')->value('id'), 'the city row stays');
+    }
+
+    public function test_lucknow_areas_launch_safely(): void
+    {
+        if (! DB::table('city_managment')->where('slug', 'lucknow')->exists()) {
+            DB::table('city_managment')->insert(['city_name' => 'Lucknow', 'slug' => 'lucknow']);
+        }
+        $cityId = DB::table('city_managment')->where('slug', 'lucknow')->value('id');
+        $launch = require database_path('migrations/seo/2026_10_02_170000_lucknow_areas.php');
+        $launch->up();
+        $launch->up();
+
+        $this->assertSame('Gomti Nagar, Indira Nagar & Chinhat', \App\Support\Zones::of('Lucknow', 'Gomti Nagar'));
+        $this->assertGreaterThanOrEqual(22, DB::table('city_area_list_managment')->where('city_id', $cityId)->count());
+        $this->get('/city/lucknow/gomti-nagar')->assertOk()->assertSee('Gomti Nagar at a glance', false);
+        $this->get('/tuition-jobs/lucknow')->assertOk()->assertSee('Where in Lucknow tutors are needed');
+
+        $launch->down();
+        $this->assertSame(0, DB::table('city_area_list_managment')->where('page_schema', 'seo-2026-10-02-lucknow')->count());
+        $this->assertSame($cityId, DB::table('city_managment')->where('slug', 'lucknow')->value('id'), 'the city row stays');
+    }
+
+    public function test_chennai_areas_launch_safely(): void
+    {
+        if (! DB::table('city_managment')->where('slug', 'chennai')->exists()) {
+            DB::table('city_managment')->insert(['city_name' => 'Chennai', 'slug' => 'chennai']);
+        }
+        $cityId = DB::table('city_managment')->where('slug', 'chennai')->value('id');
+        $launch = require database_path('migrations/seo/2026_10_02_190000_chennai_areas.php');
+        $launch->up();
+        $launch->up();
+
+        $this->assertSame('Adyar, Besant Nagar & Mylapore', \App\Support\Zones::of('Chennai', 'Adyar'));
+        $this->assertGreaterThanOrEqual(40, DB::table('city_area_list_managment')->where('city_id', $cityId)->count());
+        $this->get('/city/chennai/adyar')->assertOk()->assertSee('Adyar at a glance', false);
+        $this->get('/tuition-jobs/chennai')->assertOk()->assertSee('Where in Chennai tutors are needed');
+
+        $launch->down();
+        $this->assertSame(0, DB::table('city_area_list_managment')->where('page_schema', 'seo-2026-10-02-chennai')->count());
+        $this->assertSame($cityId, DB::table('city_managment')->where('slug', 'chennai')->value('id'), 'the city row stays');
+    }
+
+    public function test_ahmedabad_areas_launch_safely(): void
+    {
+        if (! DB::table('city_managment')->where('slug', 'ahmedabad')->exists()) {
+            DB::table('city_managment')->insert(['city_name' => 'Ahmedabad', 'slug' => 'ahmedabad']);
+        }
+        $cityId = DB::table('city_managment')->where('slug', 'ahmedabad')->value('id');
+        $launch = require database_path('migrations/seo/2026_10_02_210000_ahmedabad_areas.php');
+        $launch->up();
+        $launch->up();
+
+        $this->assertSame('Satellite, Vastrapur & Bodakdev', \App\Support\Zones::of('Ahmedabad', 'Satellite'));
+        $this->assertGreaterThanOrEqual(29, DB::table('city_area_list_managment')->where('city_id', $cityId)->count());
+        $this->get('/city/ahmedabad/satellite')->assertOk()->assertSee('Satellite at a glance', false);
+        $this->get('/tuition-jobs/ahmedabad')->assertOk()->assertSee('Where in Ahmedabad tutors are needed');
+
+        $launch->down();
+        $this->assertSame(0, DB::table('city_area_list_managment')->where('page_schema', 'seo-2026-10-02-ahmedabad')->count());
+        $this->assertSame($cityId, DB::table('city_managment')->where('slug', 'ahmedabad')->value('id'), 'the city row stays');
+    }
+
+    public function test_kolkata_areas_launch_safely(): void
+    {
+        if (! DB::table('city_managment')->where('slug', 'kolkata')->exists()) {
+            DB::table('city_managment')->insert(['city_name' => 'Kolkata', 'slug' => 'kolkata']);
+        }
+        $cityId = DB::table('city_managment')->where('slug', 'kolkata')->value('id');
+        $launch = require database_path('migrations/seo/2026_10_02_200000_kolkata_areas.php');
+        $launch->up();
+        $launch->up();
+
+        $this->assertSame('Ballygunge, Gariahat & Alipore', \App\Support\Zones::of('Kolkata', 'Ballygunge'));
+        $this->assertGreaterThanOrEqual(38, DB::table('city_area_list_managment')->where('city_id', $cityId)->count());
+        $this->get('/city/kolkata/ballygunge')->assertOk()->assertSee('Ballygunge at a glance', false);
+        $this->get('/tuition-jobs/kolkata')->assertOk()->assertSee('Where in Kolkata tutors are needed');
+
+        $launch->down();
+        $this->assertSame(0, DB::table('city_area_list_managment')->where('page_schema', 'seo-2026-10-02-kolkata')->count());
+        $this->assertSame($cityId, DB::table('city_managment')->where('slug', 'kolkata')->value('id'), 'the city row stays');
+    }
+
+    public function test_bhopal_areas_launch_safely(): void
+    {
+        if (! DB::table('city_managment')->where('slug', 'bhopal')->exists()) {
+            DB::table('city_managment')->insert(['city_name' => 'Bhopal', 'slug' => 'bhopal']);
+        }
+        $cityId = DB::table('city_managment')->where('slug', 'bhopal')->value('id');
+        $launch = require database_path('migrations/seo/2026_10_02_220000_bhopal_areas.php');
+        $launch->up();
+        $launch->up();
+
+        $this->assertSame('Arera Colony, Shahpura & Kolar Road', \App\Support\Zones::of('Bhopal', 'Arera Colony'));
+        $this->assertGreaterThanOrEqual(20, DB::table('city_area_list_managment')->where('city_id', $cityId)->count());
+        $this->get('/city/bhopal/arera-colony')->assertOk()->assertSee('Arera Colony at a glance', false);
+        $this->get('/tuition-jobs/bhopal')->assertOk()->assertSee('Where in Bhopal tutors are needed');
+
+        $launch->down();
+        $this->assertSame(0, DB::table('city_area_list_managment')->where('page_schema', 'seo-2026-10-02-bhopal')->count());
+        $this->assertSame($cityId, DB::table('city_managment')->where('slug', 'bhopal')->value('id'), 'the city row stays');
+    }
+
+    public function test_patna_areas_launch_safely(): void
+    {
+        if (! DB::table('city_managment')->where('slug', 'patna')->exists()) {
+            DB::table('city_managment')->insert(['city_name' => 'Patna', 'slug' => 'patna']);
+        }
+        $cityId = DB::table('city_managment')->where('slug', 'patna')->value('id');
+        $launch = require database_path('migrations/seo/2026_10_02_180000_patna_areas.php');
+        $launch->up();
+        $launch->up();
+
+        $this->assertSame('Kankarbagh & Rajendra Nagar', \App\Support\Zones::of('Patna', 'Kankarbagh'));
+        $this->assertGreaterThanOrEqual(19, DB::table('city_area_list_managment')->where('city_id', $cityId)->count());
+        $this->get('/city/patna/kankarbagh')->assertOk()->assertSee('Kankarbagh at a glance', false);
+        $this->get('/tuition-jobs/patna')->assertOk()->assertSee('Where in Patna tutors are needed');
+
+        $launch->down();
+        $this->assertSame(0, DB::table('city_area_list_managment')->where('page_schema', 'seo-2026-10-02-patna')->count());
+        $this->assertSame($cityId, DB::table('city_managment')->where('slug', 'patna')->value('id'), 'the city row stays');
     }
 
     public function test_city_names_map_to_city_pages_whatever_the_spelling(): void
