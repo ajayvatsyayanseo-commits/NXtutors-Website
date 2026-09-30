@@ -224,4 +224,176 @@ return [
             'names' => ['laxmi nagar', 'preet vihar', 'nirman vihar', 'karkardooma', 'anand vihar', 'vivek vihar', 'surajmal vihar', 'krishna nagar', 'geeta colony', 'shahdara', 'dilshad garden', 'yamuna vihar'],
         ],
     ],
+    // Mumbai (1 Oct 2026), from database/seo-content/areas/mumbai-research.json.
+    'Mumbai' => [
+        'South Mumbai' => [
+            'sectors' => [],
+            'names' => ['colaba', 'cuffe parade', 'malabar hill', 'breach candy', 'tardeo'],
+        ],
+        'Worli, Dadar & Central Mumbai' => [
+            'sectors' => [],
+            'names' => ['worli', 'prabhadevi', 'lower parel', 'parel', 'dadar', 'matunga', 'mahim', 'sion'],
+        ],
+        'Bandra, Khar & Santacruz' => [
+            'sectors' => [],
+            'names' => ['bandra west', 'bandra east', 'khar west and east', 'santacruz west', 'santacruz east kalina vakola'],
+        ],
+        'Vile Parle & Juhu' => [
+            'sectors' => [],
+            'names' => ['vile parle west', 'vile parle east', 'juhu'],
+        ],
+        'Andheri & Jogeshwari' => [
+            'sectors' => [],
+            'names' => ['andheri west', 'versova seven bungalows yari road', 'lokhandwala', 'andheri east', 'jogeshwari west incl oshiwara', 'jogeshwari east', 'oshiwara'],
+        ],
+        'Goregaon & Malad' => [
+            'sectors' => [],
+            'names' => ['goregaon west', 'bangur nagar', 'goregaon east', 'malad west', 'malad east'],
+        ],
+        'Kandivali, Borivali & Dahisar' => [
+            'sectors' => [],
+            'names' => ['kandivali west', 'charkop', 'mahavir nagar', 'kandivali east', 'thakur village', 'borivali west', 'borivali east', 'dahisar west', 'dahisar east'],
+        ],
+        'Chembur, Ghatkopar & Powai' => [
+            'sectors' => [],
+            'names' => ['chembur', 'ghatkopar', 'vikhroli', 'powai', 'kanjurmarg'],
+        ],
+        'Bhandup & Mulund' => [
+            'sectors' => [],
+            'names' => ['bhandup', 'mulund'],
+        ],
+        'Thane' => [
+            'sectors' => [],
+            'names' => ['naupada', 'thane east kopri', 'vartak nagar', 'majiwada', 'kolshet road', 'manpada', 'ghodbunder road', 'kasarvadavali', 'kopri', 'thane west'],
+        ],
+        'Navi Mumbai' => [
+            'sectors' => [],
+            'names' => ['vashi', 'sanpada', 'nerul', 'seawoods', 'cbd belapur', 'kharghar', 'airoli', 'ghansoli', 'kopar khairane', 'panvel', 'navi mumbai'],
+        ],
+    ],
+    // Bengaluru (1 Oct 2026), from database/seo-content/areas/bengaluru-research.json.
+    'Bengaluru' => [
+        'Koramangala, HSR & Bellandur' => [
+            'sectors' => [],
+            'names' => ['koramangala', 'hsr layout', 'bellandur', 'sarjapur road'],
+        ],
+        'Jayanagar, JP Nagar & Banashankari' => [
+            'sectors' => [],
+            'names' => ['jayanagar', 'basavanagudi', 'jp nagar', 'banashankari', 'kumaraswamy layout', 'kanakapura road'],
+        ],
+        'BTM, Bannerghatta Road & Electronic City' => [
+            'sectors' => [],
+            'names' => ['btm layout', 'bannerghatta road', 'arekere', 'bommanahalli', 'begur', 'electronic city'],
+        ],
+        'Indiranagar & Old Airport Road' => [
+            'sectors' => [],
+            'names' => ['indiranagar', 'domlur', 'cv raman nagar', 'old airport road'],
+        ],
+        'Whitefield, Marathahalli & KR Puram' => [
+            'sectors' => [],
+            'names' => ['whitefield', 'marathahalli', 'kr puram', 'mahadevapura', 'brookefield'],
+        ],
+        'Hennur, Kalyan Nagar & Banaswadi' => [
+            'sectors' => [],
+            'names' => ['hennur', 'kalyan nagar', 'hrbr layout', 'banaswadi', 'thanisandra'],
+        ],
+        'Hebbal, RT Nagar & Yelahanka' => [
+            'sectors' => [],
+            'names' => ['hebbal', 'rt nagar', 'yelahanka'],
+        ],
+        'Malleshwaram, Rajajinagar & Yeshwanthpur' => [
+            'sectors' => [],
+            'names' => ['malleshwaram', 'sadashivanagar', 'rajajinagar', 'mahalakshmi layout', 'yeshwanthpur'],
+        ],
+        'Vijayanagar, RR Nagar & Kengeri' => [
+            'sectors' => [],
+            'names' => ['basaveshwaranagar', 'vijayanagar', 'nagarbhavi', 'rr nagar rajarajeshwari nagar', 'kengeri', 'rajarajeshwari nagar'],
+        ],
+        'Frazer Town, Richmond Town & Ulsoor' => [
+            'sectors' => [],
+            'names' => ['frazer town', 'cooke town', 'richmond town', 'ulsoor halasuru'],
+        ],
+    ],
+    // Hyderabad (1 Oct 2026), from database/seo-content/areas/hyderabad-research.json.
+    'Hyderabad' => [
+        'Gachibowli, Kondapur & Madhapur' => [
+            'sectors' => [],
+            'names' => ['gachibowli', 'kondapur', 'madhapur', 'nanakramguda', 'hitec city', 'financial district'],
+        ],
+        'Kukatpally, Miyapur & Nizampet' => [
+            'sectors' => [],
+            'names' => ['kukatpally', 'kphb colony', 'miyapur', 'nizampet', 'bachupally'],
+        ],
+        'Manikonda, Narsingi & Kokapet' => [
+            'sectors' => [],
+            'names' => ['manikonda', 'khajaguda', 'narsingi', 'kokapet'],
+        ],
+        'Chandanagar, Lingampally & Tellapur' => [
+            'sectors' => [],
+            'names' => ['chandanagar', 'hafeezpet', 'serilingampally lingampally', 'tellapur', 'lingampally', 'lingampalli'],
+        ],
+        'Banjara Hills, Jubilee Hills & Somajiguda' => [
+            'sectors' => [],
+            'names' => ['jubilee hills', 'banjara hills', 'film nagar', 'somajiguda'],
+        ],
+        'Ameerpet, Begumpet & Punjagutta' => [
+            'sectors' => [],
+            'names' => ['ameerpet', 'begumpet', 'punjagutta'],
+        ],
+        'Khairatabad, Himayatnagar & Abids' => [
+            'sectors' => [],
+            'names' => ['khairatabad', 'himayatnagar', 'abids'],
+        ],
+        'Secunderabad, Marredpally & Tarnaka' => [
+            'sectors' => [],
+            'names' => ['secunderabad', 'marredpally', 'tarnaka', 'malkajgiri'],
+        ],
+        'Sainikpuri, Alwal & Trimulgherry' => [
+            'sectors' => [],
+            'names' => ['sainikpuri', 'alwal', 'trimulgherry', 'bowenpally'],
+        ],
+        'Uppal, Habsiguda & Nacharam' => [
+            'sectors' => [],
+            'names' => ['uppal', 'habsiguda', 'nacharam', 'ramanthapur', 'boduppal', 'nagole'],
+        ],
+        'Dilsukhnagar, LB Nagar & Vanasthalipuram' => [
+            'sectors' => [],
+            'names' => ['dilsukhnagar', 'lb nagar', 'kothapet', 'vanasthalipuram', 'saroornagar', 'malakpet', 'chaitanyapuri'],
+        ],
+        'Mehdipatnam, Tolichowki & Attapur' => [
+            'sectors' => [],
+            'names' => ['mehdipatnam', 'tolichowki', 'attapur', 'rajendranagar'],
+        ],
+    ],
+    // Pune (1 Oct 2026), from database/seo-content/areas/pune-research.json.
+    'Pune' => [
+        'Kothrud, Karve Nagar & Deccan' => [
+            'sectors' => [],
+            'names' => ['kothrud', 'karve nagar', 'erandwane', 'deccan gymkhana', 'shivajinagar', 'model colony', 'warje', 'prabhat road', 'deccan'],
+        ],
+        'Aundh, Baner & Pashan' => [
+            'sectors' => [],
+            'names' => ['bavdhan', 'aundh', 'baner', 'balewadi', 'pashan', 'sus'],
+        ],
+        'Wakad, Hinjewadi & Pimpri-Chinchwad' => [
+            'sectors' => [],
+            'names' => ['wakad', 'hinjewadi', 'pimple saudagar', 'pimple nilakh', 'pimpri', 'chinchwad', 'nigdi and pradhikaran', 'pimpri chinchwad', 'pcmc', 'pradhikaran', 'akurdi'],
+        ],
+        'Viman Nagar, Kalyani Nagar & Kharadi' => [
+            'sectors' => [],
+            'names' => ['viman nagar', 'kalyani nagar', 'kharadi', 'wagholi', 'yerawada', 'vadgaon sheri'],
+        ],
+        'Koregaon Park, Camp & Wanowrie' => [
+            'sectors' => [],
+            'names' => ['koregaon park', 'camp', 'wanowrie', 'salunke vihar'],
+        ],
+        'Hadapsar, Kondhwa & NIBM' => [
+            'sectors' => [],
+            'names' => ['hadapsar', 'magarpatta', 'kondhwa', 'nibm road', 'undri'],
+        ],
+        'Katraj, Bibwewadi & Sinhagad Road' => [
+            'sectors' => [],
+            'names' => ['katraj', 'bibwewadi', 'dhankawadi', 'sinhagad road'],
+        ],
+    ],
 ];

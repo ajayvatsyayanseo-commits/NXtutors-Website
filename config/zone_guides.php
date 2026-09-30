@@ -596,4 +596,496 @@ return [
             ],
         ],
     ],
+    // Mumbai (1 Oct 2026), from database/seo-content/areas/mumbai-zone-guides.json.
+    'Mumbai' => [
+        'South Mumbai' => [
+            'guide' => 'south-and-central-mumbai-tuition-guide',
+            'intro' => [
+                'South Mumbai covers the southern tip of the island city: Colaba, Cuffe Parade, Malabar Hill, Breach Candy and Tardeo. Colaba mixes preserved colonial-era buildings with later apartment blocks along its causeway, and its southern end is a military cantonment. Cuffe Parade, laid out in 1906, pairs residential towers with office high-rises, Malabar Hill keeps a few bungalows among its towers, and Tardeo stretches from Nana Chowk to Haji Ali Junction.',
+                'The older rail gateways are Churchgate on the Western line, CSMT on the Central and Harbour lines, and Mumbai Central, right beside Tardeo. Since October 2025 the underground Line 3 has run through to Cuffe Parade, with stations at Churchgate, CSMT, Grant Road and Mahalaxmi, so tutors from Dadar and the airport side can come straight down. The Coastal Road, opened in March 2024, tunnels beneath Malabar Hill and follows the Breach Candy shore towards Worli.',
+            ],
+            'tips' => [
+                'Most homes here are towers with a staffed lobby desk, so give the building staff the tutor\'s name and flat number before the demo; inside the defence area, ask about the visitor entry process first.',
+                'Tell the tutor which station suits your address: Line 3 at Cuffe Parade or Churchgate for Colaba and Cuffe Parade, Mumbai Central for Tardeo and Breach Candy, and a taxi or bus up the hill for Malabar Hill.',
+                'Office traffic around Nariman Point and the seafront builds at the start and end of the working day, so a late-afternoon or weekend slot is usually easier to hold each week.',
+            ],
+        ],
+        'Worli, Dadar & Central Mumbai' => [
+            'guide' => 'south-and-central-mumbai-tuition-guide',
+            'intro' => [
+                'This zone runs from Worli and Lower Parel up through Prabhadevi, Parel, Dadar, Matunga, Mahim and Sion. Worli, Lower Parel and Parel were once the textile-mill district, and many mill compounds are now offices and high-rise homes, though older chawls survive in Parel\'s lanes. Dadar, Matunga and Sion grew from the Bombay Improvement Trust\'s scheme of 1899–1900, so their older colonies keep regular streets of low and mid-rise buildings, while Mahim meets Bandra across an 1845 causeway.',
+                'Rail links are unusually dense. Dadar is the only station on both the Central and Western lines, Matunga has a station on each of the three lines, and Mahim Junction serves the Western and Harbour lines. Line 3 added stations at Dadar, Siddhivinayak, Worli, Shitaladevi Mandir and Acharya Atre Chowk in 2025. Sion, on the Central line, is also where the Eastern Express Highway and the old Agra Road head north towards the eastern suburbs.',
+            ],
+            'tips' => [
+                'In the older buildings of Dadar, Matunga and Sion a tutor usually walks straight up to the flat, but redeveloped towers in Worli and Lower Parel run strict visitor desks, so register the tutor there in advance.',
+                'Pick the station by line: Dadar for tutors on either main line, Matunga or King\'s Circle depending on the tutor\'s line, Lower Parel or Line 3 for Worli, and Prabhadevi or Parel for Prabhadevi.',
+                'Avoid timing a lesson just as office crowds pass through Dadar station, and near Prabhadevi choose a weekday other than Tuesday, when roads around the temple are crowded.',
+            ],
+        ],
+        'Bandra, Khar & Santacruz' => [
+            'guide' => 'mumbai-western-suburbs-tuition-guide',
+            'intro' => [
+                'Bandra, Khar and Santacruz are each split into West and East by the Western line. Bandra West runs from village enclaves such as Ranwar and the slopes of Pali Hill to cooperative buildings and new towers, while Bandra East holds Kherwadi, the Government Colony and Kalanagar beside the Bandra Kurla Complex offices. Khar grew around its station after 1924, and Santacruz West\'s older cooperative societies are steadily being rebuilt as towers, with Kalina and Vakola to the east.',
+                'All three stations, Bandra, Khar Road and Santacruz, are served by both the Western and Harbour lines, so tutors can arrive from the western suburbs or from the harbour side. Line 3 has run underground here since October 2024, with stations at Bandra Colony, Bandra Kurla Complex and Santacruz on the highway at Vakola. The Western Express Highway starts in Bandra East, and the Bandra–Worli Sea Link carries road traffic south to the island city.',
+            ],
+            'tips' => [
+                'Say which side of the tracks you live on: the west exits of Bandra, Khar Road and Santacruz serve the sea side, while the east exits and Line 3 suit Bandra East, Kalina and Vakola.',
+                'In Ranwar and Khar Danda\'s village lanes a tutor usually walks to the door, while towers keep a watchman or gate register, so share the tutor\'s name and flat number in advance.',
+                'Hill Road and Linking Road fill with shoppers on evenings and weekends, and office traffic around the business district peaks at day\'s start and end, so a slightly earlier class runs more smoothly.',
+            ],
+        ],
+        'Vile Parle & Juhu' => [
+            'guide' => 'mumbai-western-suburbs-tuition-guide',
+            'intro' => [
+                'Vile Parle West, Vile Parle East and Juhu sit between Santacruz and Andheri. Both halves of Vile Parle are settled residential suburbs with large Marathi and Gujarati communities and a long reputation as an education centre, so tutors for board and college subjects often live nearby. Housing is mostly cooperative societies and mid-rise buildings. Juhu faces the Arabian Sea and includes much of the planned JVPD Scheme, whose lanes run between the beach and the Western Express Highway.',
+                'Vile Parle station, opened in 1906, serves both the Western and Harbour lines, with the west exit leading into Vile Parle West and the east exit into the older lanes towards the highway. Juhu has no railway station of its own, so tutors ride to Santacruz, Vile Parle or Andheri and finish by auto, or use the D N Nagar metro. Juhu Tara Road follows the coast, and Juhu\'s aerodrome sent off the country\'s first airmail flight in 1932.',
+            ],
+            'tips' => [
+                'For Juhu, agree the drop-off point with the tutor: Vile Parle or Santacruz station plus an auto for the southern lanes, and D N Nagar metro for the northern side towards Versova.',
+                'Standalone homes in Juhu usually mean the tutor goes straight to the door, while society buildings in Vile Parle keep a visitor register, so pass the tutor\'s details to the watchman before the first class.',
+                'Roads near the colleges get crowded at college hours, and beach roads fill on weekend evenings, so weekday afternoons or mornings are easier slots to keep regular.',
+            ],
+        ],
+        'Andheri & Jogeshwari' => [
+            'guide' => 'mumbai-western-suburbs-tuition-guide',
+            'intro' => [
+                'Andheri and Jogeshwari make up the busiest stretch of the western suburbs. Andheri West takes in Four Bungalows, D N Nagar, Versova with Seven Bungalows and Yari Road, and Lokhandwala, built on once-marshy land and now a lively area of towers and societies. Andheri East runs past the highway to Chakala, Marol, Sahar and the MIDC estates, mixing homes with offices. Jogeshwari West includes Oshiwara and Behram Baug, and Jogeshwari East follows the link road towards Vikhroli.',
+                'This is where the metro network meets. Andheri station, on the Western and Harbour lines, is the busiest on the Western Railway, and Line 1 has nine of its twelve stations in Andheri. Line 2A meets Line 1 at D N Nagar, Line 7 links to it at Gundavali, and Line 3 has served Marol Naka, MIDC Andheri and SEEPZ since October 2024. The Harbour line reached Jogeshwari and Goregaon in 2018, and Line 6 from Lokhandwala is under construction.',
+            ],
+            'tips' => [
+                'Match the metro to your block: Versova or D N Nagar on Line 1 for Seven Bungalows and D N Nagar, Line 2A\'s Oshiwara stations for Oshiwara and Lokhandwala, and Marol Naka or Chakala for Andheri East.',
+                'Most Lokhandwala and Oshiwara towers have a gate desk and tight parking, so register the tutor as a regular visitor and suggest they come by metro rather than car.',
+                'The Andheri-Kurla Road and the Jogeshwari–Vikhroli Link Road carry heavy office traffic, so families along them often pick classes outside rush hours or move some sessions online.',
+            ],
+        ],
+        'Goregaon & Malad' => [
+            'guide' => 'mumbai-western-suburbs-tuition-guide',
+            'intro' => [
+                'Goregaon and Malad sit north of Jogeshwari, each divided by the Western line. Goregaon West is made of settled pockets such as Motilal Nagar, Jawahar Nagar, Unnat Nagar and Bangur Nagar, a planned neighbourhood of more than twenty cooperative societies from the mid-1970s. Goregaon East reaches towards Aarey and Film City, with office parks beside gated complexes. Malad West runs from Orlem and Evershine Nagar to the Marve and Madh shore, and Malad East covers Kurar Village, Dindoshi and Appa Pada.',
+                'Goregaon station has served the Harbour line as well as the Western line since March 2018, and Ram Mandir, opened in December 2016, serves the Oshiwara side. Two metro lines run north to south: Line 2A along Link Road, with stations at Goregaon West, Bangur Nagar, Lower Malad, Malad West and Valnai–Meeth Chowky, and Line 7 along the Western Express Highway, with Aarey, Goregaon East, Dindoshi and Kurar. Malad station is on the Western line only.',
+            ],
+            'tips' => [
+                'West of the tracks, Line 2A along Link Road reaches most societies; east of them, Line 7 on the highway is the easier route, so tell the tutor which side and which station.',
+                'Inner lanes in Kurar Village and Appa Pada are narrow, so for the first visit send a landmark and clear directions; in gated complexes, add the tutor to the visitor app beforehand.',
+                'Link Road, the highway and the roads to Film City are busiest at office hours, so evening lessons that start a little after the rush tend to begin on time.',
+            ],
+        ],
+        'Kandivali, Borivali & Dahisar' => [
+            'guide' => 'mumbai-western-suburbs-tuition-guide',
+            'intro' => [
+                'The northern end of the Western line covers Kandivali, Borivali and Dahisar. Kandivali West has high-rise towers in Mahavir Nagar and low-rise sector housing in Charkop, laid out by the state housing board, while Kandivali East holds large complexes including the Thakur Village township. Borivali West takes in IC Colony, Eksar and Shimpoli, and Borivali East is bounded by the national park. Dahisar, part of Thane district until 1956, is the city\'s northernmost suburb.',
+                'Borivali is the busiest station on the Western suburban line and a terminus for slow, semi-fast and fast trains, and Kandivali station dates from 1907. Line 2A runs along New Link Road on the west side and Line 7 along the Western Express Highway on the east; both opened their first sections in April 2022 and meet at Dahisar East. From there, Line 9 has carried passengers north to Kashigaon in Mira-Bhayandar since April 2026.',
+            ],
+            'tips' => [
+                'Charkop\'s numbered sectors make homes easy to find once the tutor has the sector and plot number, so share both with a landmark; row houses usually mean a knock on the door.',
+                'Townships such as Thakur Village check visitors at the main gate and sometimes again in the lobby, so send the tutor\'s name and flat number to security in advance.',
+                'Link Road and the highway slow down at school closing time and in the evening rush, so a slot just after the peak keeps lessons on time; Borivali\'s many train services widen the tutor pool.',
+            ],
+        ],
+        'Chembur, Ghatkopar & Powai' => [
+            'guide' => 'mumbai-central-suburbs-tuition-guide',
+            'intro' => [
+                'This eastern zone takes in Chembur, Ghatkopar, Vikhroli, Powai and Kanjurmarg. Chembur, on the old Trombay Island, grew after Partition and ranges from bungalows and planned colonies to modern buildings. Ghatkopar has large Marathi and Gujarati communities in older societies and redeveloped towers on both sides of the line. Vikhroli mixes Tagore Nagar and Kannamwar Nagar with industrial land by the mangroves, Powai surrounds its lake with high-rise gated complexes, and Kanjurmarg is mostly newer apartments.',
+                'Chembur and Tilak Nagar are on the Harbour line; Ghatkopar, Vikhroli and Kanjurmarg are on the Central line. Ghatkopar is also the eastern end of Line 1, so tutors from Andheri can come across without changing at Dadar. Powai has no station, and Kanjurmarg, built in 1968, is its rail access. By road, the Eastern Express Highway, the Eastern Freeway, the Santacruz–Chembur Link Road and the Jogeshwari–Vikhroli Link Road all cross the zone.',
+            ],
+            'tips' => [
+                'For Powai, a tutor usually comes to Kanjurmarg station and takes an auto, or drives along the link road, so check the route and whether the complex has guest parking.',
+                'Chembur\'s bungalows and older buildings often mean doorstep entry, while Powai and Vikhroli complexes almost always need gate registration, so share the tutor\'s details in advance.',
+                'The Jogeshwari–Vikhroli Link Road and the highway approaches are among the busiest roads at office hours, so avoid fixing lessons right at the start or end of the working day.',
+            ],
+        ],
+        'Bhandup & Mulund' => [
+            'guide' => 'mumbai-central-suburbs-tuition-guide',
+            'intro' => [
+                'Bhandup and Mulund are the last Central line suburbs before Thane. Bhandup is split into East and West: the West has the old Agra Road as its main road and an industrial estate, while the East runs along the Eastern Express Highway. Much former industrial land has become large housing complexes, so many families live in gated societies near older buildings around Shivaji Talao. Mulund was laid out from 1922 on a grid of streets at right angles.',
+                'On the Central line the stations run Kanjur Marg, Bhandup, Nahur, Mulund and then Thane, so tutors from Thane, Ghatkopar and the rest of the line can arrive directly. The Mulund–Airoli Bridge links the Eastern Express Highway with Navi Mumbai, which brings tutors from Airoli within reach by road. Metro Line 4, from Wadala to Kasarvadavali, is under construction along the old Agra Road through both suburbs and is not yet carrying passengers.',
+            ],
+            'tips' => [
+                'Mulund\'s grid streets make it easy to direct a tutor from the station on foot; give the street and building name, and for the east side say so, since both halves share one station.',
+                'Newer complexes set back from the main road register visitors and have limited guest parking, while older buildings nearer the stations are simpler, so tell the tutor which applies.',
+                'The main road through Bhandup West and the junctions near Mulund West are slow at peak hours, so an evening lesson is more reliable if it starts after the office rush.',
+            ],
+        ],
+        'Thane' => [
+            'guide' => 'thane-and-navi-mumbai-tuition-guide',
+            'intro' => [
+                'Thane, with its own municipal corporation since 1982, has two very different kinds of neighbourhood. Near the station are the older areas: Naupada, with mid-rise blocks and shops at street level, Thane East centred on Kopri across the tracks, and Vartak Nagar, built around a large state housing board colony. Further out along Ghodbunder Road, Majiwada, Kolshet Road, Manpada and Kasarvadavali have filled with high-rise gated townships over the past two decades.',
+                'Thane station, the destination of India\'s first passenger train in April 1853, is on the Central line and is the starting point of the Trans-Harbour line to Vashi and Panvel, which has carried passengers since November 2004. The Eastern Express Highway runs past Thane East, and Ghodbunder Road leaves it at Kapurbawdi and Majiwada. Metro Lines 4 and 4A are under construction along that road, so for now tutors reach the townships by bus, auto or two-wheeler.',
+            ],
+            'tips' => [
+                'Near the station, in Naupada and Kopri, a tutor can walk from the train and usually just signs in with the watchman; along Ghodbunder Road, register a regular tutor with township security once.',
+                'With homes spread along a long road, choose a tutor from your own pocket of the corridor, such as Manpada or Kasarvadavali, rather than one crossing from the station side.',
+                'Majiwada junction and Ghodbunder Road are slowest in the morning and evening rush, so weekend or mid-afternoon lessons are often steadier, with online sessions for specialist subjects.',
+            ],
+        ],
+        'Navi Mumbai' => [
+            'guide' => 'thane-and-navi-mumbai-tuition-guide',
+            'intro' => [
+                'Navi Mumbai was planned from 1971 as a new town across the harbour and built by CIDCO in nodes of numbered sectors. Vashi was the first, just over Thane Creek, followed by Sanpada, Nerul, Seawoods and CBD Belapur, which holds the civic headquarters beside the Parsik Hills. Airoli, Ghansoli and Kopar Khairane line the Thane–Belapur Road to the north, while Kharghar and Panvel, including New Panvel, come under the Panvel Municipal Corporation, formed in 2016.',
+                'Two suburban lines serve the nodes. The Harbour line reached Vashi in May 1992 and Panvel in June 1998, and the Trans-Harbour line links Thane with Airoli, Ghansoli, Kopar Khairane, Turbhe, Vashi, Nerul and Panvel. Navi Mumbai Metro Line 1 has run since November 2023 from CBD Belapur through Kharghar to Pendhar. By road, the Sion–Panvel Highway and Palm Beach Road connect the southern nodes, and the Mulund–Airoli Bridge crosses to Mumbai.',
+            ],
+            'tips' => [
+                'Give the node, sector and plot or building number with a landmark; CIDCO\'s sector grid makes almost any home easy to find once the tutor has those three.',
+                'Match the line to the node: Trans-Harbour trains for Airoli, Ghansoli and Kopar Khairane, the Harbour line for Vashi to Panvel, and the Navi Mumbai metro for Kharghar sectors away from the station.',
+                'Roads near Vashi station, the Thane–Belapur Road and Palm Beach Road fill up at office hours, so plan evening sessions a little later, and look first for a tutor from your own or a neighbouring node.',
+            ],
+        ],
+    ],
+    // Bengaluru (1 Oct 2026), from database/seo-content/areas/bengaluru-zone-guides.json.
+    'Bengaluru' => [
+        'Koramangala, HSR & Bellandur' => [
+            'guide' => 'south-bengaluru-tuition-guide',
+            'intro' => [
+                'Koramangala, HSR Layout, Bellandur and Sarjapur Road make up the south-east office belt around the Outer Ring Road. Koramangala runs in eight numbered blocks split by the Inner Ring Road, with older houses on its cross roads. HSR Layout, begun by the Bangalore Development Authority in 1985, has seven sectors on a grid. Bellandur and the Sarjapur Road corridor, through Kasavanahalli, Carmelaram and Doddakannelli, grew later with the tech parks and are mostly gated apartment communities and villa townships.',
+                'Central Silk Board station, at the zone\'s western corner, has been on the Yellow Line since August 2025, and it helps tutors reaching Koramangala and the HSR side. East of it, the Blue Line along the ORR is under construction, with HSR Layout, Agara and Ibbaluru stations planned but none open, so Bellandur and Sarjapur Road depend on tutors who come by road. In the towers, the security desk registers every visitor; in Koramangala\'s inner blocks the tutor usually rings the bell.',
+            ],
+            'tips' => [
+                'Pre-register the tutor with your society\'s security desk and share the tower and flat number; on Sarjapur Road keep the same weekly slot so the guard recognises them.',
+                'Ask for a tutor who lives on your side of the Outer Ring Road; crossing it at office opening or closing time makes a weekday lesson hard to keep on time.',
+                'For HSR Layout give the sector, main and cross numbers; for Koramangala give the block number, since the Inner Ring Road separates blocks 1 to 4 from 5 to 8.',
+            ],
+        ],
+        'Jayanagar, JP Nagar & Banashankari' => [
+            'guide' => 'south-bengaluru-tuition-guide',
+            'intro' => [
+                'This is the planned south of the city. Jayanagar, founded in 1948 and long the city\'s southern edge at South End Circle, is independent houses in numbered blocks, with shops in the 3rd and 4th Blocks. Basavanagudi, beside Lalbagh, is older and named after the Bull Temple. JP Nagar\'s phases and Banashankari\'s six stages were laid out from the late 1970s, Kumaraswamy Layout sits between them, and Kanakapura Road carries newer apartment projects further south.',
+                'The Green Line is the zone\'s backbone. Its stations from Lalbagh through South End Circle, Jayanagar, Banashankari, Jaya Prakash Nagar and Yelachenahalli opened on 18 June 2017, and the Kanakapura Road extension from Konanakunte Cross to Silk Institute followed on 15 January 2021. The Green and Yellow lines meet near Jayanagar, bringing BTM-side tutors within one change. Most homes are houses, so the tutor comes to the door with no gate list to arrange.',
+            ],
+            'tips' => [
+                'Share the block, stage or phase with the cross and main road numbers; Banashankari has six stages and JP Nagar\'s phases stretch a long way south, so the number matters.',
+                'Choose a tutor who comes by Green Line to the nearest station and walks or takes a short auto; parking near the Jayanagar 4th Block shops is tight in the evening.',
+                'On the newer Kanakapura Road apartment projects, register the tutor at the gate, and in the farthest pockets consider one online session a week.',
+            ],
+        ],
+        'BTM, Bannerghatta Road & Electronic City' => [
+            'guide' => 'south-bengaluru-tuition-guide',
+            'intro' => [
+                'BTM Layout, named after Byrasandra, Tavarekere and Madiwala, sits between Hosur Road and Bannerghatta Road, with the Outer Ring Road splitting its 1st Stage from the later stages. Bannerghatta Road runs south past Arekere, Hulimavu and Gottigere through older layouts and gated towers. Bommanahalli and Begur lie off Hosur Road, and Begur holds the oldest known inscription naming Bengaluru. Electronic City, set up in 1978 as a state industrial township, is phases of IT campuses and large apartment communities.',
+                'The Yellow Line, opened on 10 August 2025, runs sixteen stations from the Jayanagar end to Bommasandra, including BTM Layout, Central Silk Board, Bommanahalli, Hongasandra, Hosa Road and Electronic City. The elevated Hosur Road expressway has carried through traffic since January 2010. On Bannerghatta Road the Pink Line\'s elevated section is built but not yet open, so Arekere and Hulimavu families still rely on tutors travelling by road or taking the Yellow Line and an auto.',
+            ],
+            'tips' => [
+                'Along Hosur Road, pick a tutor within a few Yellow Line stops of your station, and agree the exit and auto point so the last leg is simple.',
+                'In Electronic City, office shift changes shape local traffic, so set the lesson away from shift times and register the tutor with the society gate beforehand.',
+                'On Bannerghatta Road, older layout houses are a doorstep visit while towers need a gate entry; until the Pink Line opens, count on road travel for tutors.',
+            ],
+        ],
+        'Indiranagar & Old Airport Road' => [
+            'guide' => 'east-bengaluru-tuition-guide',
+            'intro' => [
+                'Indiranagar, Domlur and CV Raman Nagar form the compact eastern inner belt. Indiranagar began as a BDA layout of large houses in the late 1970s, and its independent homes now stand among apartment buildings off 100 Feet Road and 80 Feet Road. Domlur belonged to the Civil and Military Station until 1949 and keeps a Chola-era temple. CV Raman Nagar, sometimes called Greater Indiranagar, stretches towards Baiyappanahalli with a research staff township, houses and gated complexes.',
+                'Old Airport Road takes its name from the HAL airport, which ended scheduled commercial flights on 24 May 2008. Namma Metro started here: the first Purple Line section, from the centre to Baiyappanahalli, opened on 20 October 2011 with two stations inside Indiranagar. Domlur has no station, but its bus terminus helps tutors on BMTC buses, and the Domlur flyover, open since July 2006, is where Old Airport Road, 100 Feet Road and the Inner Ring Road meet.',
+            ],
+            'tips' => [
+                'In Indiranagar, start lessons before the evening crowd builds on 100 Feet Road, so a tutor arriving from the station keeps to time week after week.',
+                'For Domlur, suggest the tutor take the Purple Line to Indiranagar and an auto, or a bus to the Domlur terminus, and avoid office closing time at the flyover.',
+                'In CV Raman Nagar\'s township and gated complexes, give the tutor\'s name to the gate in advance; Baiyappanahalli is the nearest station for the last leg.',
+            ],
+        ],
+        'Whitefield, Marathahalli & KR Puram' => [
+            'guide' => 'east-bengaluru-tuition-guide',
+            'intro' => [
+                'The eastern tech belt runs from KR Puram, where Old Madras Road meets the Outer Ring Road, through Mahadevapura to Whitefield and Brookefield, with Marathahalli at the junction of the ORR and Old Airport Road. Whitefield began in 1882 as a settlement of the Eurasian and Anglo-Indian Association and stayed a village until an IT park came in the late 1990s. Today the zone is mostly apartment towers and gated villa communities, with builder floors and houses on older streets.',
+                'The Purple Line reached Whitefield (Kadugodi) on 26 March 2023, and since the Baiyappanahalli to KR Puram gap closed on 9 October 2023 one line runs from the centre through Singayyanapalya, Hoodi, Kundalahalli and Hopefarm Channasandra. Marathahalli has no station yet: its Blue Line stop is under construction, and the nearest rail halt is Bellandur Road. KR Puram\'s railway station, on the Chennai line, is crossed by a cable-stayed bridge opened in 2003.',
+            ],
+            'tips' => [
+                'Most homes have a security desk and some ask for photo ID on the first visit, so share the tutor\'s details with the society before the demo.',
+                'Near a Purple Line station, a tutor coming by metro plus a short auto is steadier than one driving; around Marathahalli, choose a tutor from your side of the ORR.',
+                'Time weekday lessons in the gap between school and the evening office rush on ITPL Road, Whitefield Main Road and the ORR, or keep one session online.',
+            ],
+        ],
+        'Hennur, Kalyan Nagar & Banaswadi' => [
+            'guide' => 'north-bengaluru-tuition-guide',
+            'intro' => [
+                'North-east of the centre, Hennur, Kalyan Nagar, HRBR Layout, Banaswadi and Thanisandra sit around the Outer Ring Road. Kalyan Nagar and HRBR Layout are settled colonies of independent houses and builder floors on numbered blocks and wide roads. Banaswadi, once a village on the city\'s edge, mixes bungalows, houses and flats. Hennur, just outside the ORR, has apartments and villa communities along Hennur Road, while Thanisandra, on the route north, is mainly gated apartment complexes.',
+                'No metro runs through this zone yet. The Blue Line from KR Puram towards the airport, with stations planned at Horamavu, HRBR Layout, Kalyana Nagara, HBR Layout and Nagawara, is under construction. For now the nearest open stations are Baiyappanahalli and Benniganahalli on the Purple Line, and Banaswadi railway station in Maruthi Sevanagar sits on the Yesvantpur to Baiyappanahalli line. Most tutors therefore arrive by bus, two-wheeler or cab.',
+            ],
+            'tips' => [
+                'Prefer a tutor who already lives in Hennur, Kalyan Nagar, Kothanur or Banaswadi; with no metro yet, a short road trip is what keeps weekday lessons regular.',
+                'In HRBR Layout and Kalyan Nagar, the block and cross numbers make the house easy to find; mention where a two-wheeler can be parked near the cafe streets.',
+                'In Thanisandra\'s gated complexes, give the tutor\'s name and phone number to the security desk before the demo, and favour after-school or weekend slots.',
+            ],
+        ],
+        'Hebbal, RT Nagar & Yelahanka' => [
+            'guide' => 'north-bengaluru-tuition-guide',
+            'intro' => [
+                'This zone follows Bellary Road (NH 44) north towards the airport at Devanahalli, which opened in May 2008. Hebbal, known for its lake, is where the Outer Ring Road meets NH 44 at a large flyover, and homes range from high-rise societies to older houses. RT Nagar, a long-settled locality of two blocks, is houses and builder floors, often with shops below. Yelahanka is older than Bengaluru itself, with an Old Town and a New Town planned in the early 1980s.',
+                'The Blue Line stations at Hebbala, Kodigehalli, Jakkuru Cross and Yelahanka are under construction, so there is no metro in the zone yet. Yelahanka Junction is a railway junction and Hebbal has a station, but most tutors arrive by road. Yelahanka\'s Air Force Station hosts the biennial Aero India show. New Town houses are doorstep visits; the newer apartment societies register visitors at the gate.',
+            ],
+            'tips' => [
+                'Choose a tutor who lives on your side of the Hebbal flyover; airport and office traffic funnels through it, and weekday evening lessons slip when it is crossed.',
+                'In RT Nagar\'s market lanes, tell the tutor where a two-wheeler can safely be parked, and share a landmark along with the block number.',
+                'In Yelahanka, a tutor from Yelahanka itself suits regular classes; give the New Town stage or the Old Town landmark with the address.',
+            ],
+        ],
+        'Malleshwaram, Rajajinagar & Yeshwanthpur' => [
+            'guide' => 'west-and-central-bengaluru-tuition-guide',
+            'intro' => [
+                'The north-west inner belt joins some of the city\'s oldest planned neighbourhoods. Malleshwaram was laid out in 1889 around Sampige Road and Margosa Road; Sadashivanagar was built in the 1960s and 1970s on former palace gardens once called Palace Orchards; and Rajajinagar was inaugurated on 3 July 1949 with separate housing and industrial areas. Mahalakshmi Layout, sometimes called Temple Layout, is houses and floors on layout plots, and Yeshwanthpur grew around a railway junction commissioned in 1881.',
+                'The Green Line\'s Reach 3 opened on 1 March 2014, from Sampige Road through Srirampura, Rajajinagar, Mahalakshmi and Sandal Soap Factory to Yeshwanthpur, whose station faces the railway junction on Tumkur Road. Most homes are houses or small buildings, so there is rarely a society desk to clear. Sadashivanagar\'s larger houses often have a guard at the gate, and Yeshwanthpur\'s apartment complexes may keep visitor registers.',
+            ],
+            'tips' => [
+                'Pick a tutor on the Green Line: Malleshwaram, Rajajinagar and Mahalakshmi Layout are each within a short walk or auto of a station.',
+                'In Malleshwaram, give the cross and main road numbers; the market roads fill up in the evening, so a slightly earlier slot helps.',
+                'Chord Road and Tumkur Road slow down at peak hours, so on weekdays a lesson a little later in the evening is easier to reach on time.',
+            ],
+        ],
+        'Vijayanagar, RR Nagar & Kengeri' => [
+            'guide' => 'west-and-central-bengaluru-tuition-guide',
+            'intro' => [
+                'West Bengaluru runs out along Mysore Road. Basaveshwaranagar, first called West of Chord Road, grew in the 1970s and 1980s on hilly streets; Vijayanagar, between Mysore Road and Magadi Road, takes in Hampinagar and Attiguppe; Nagarbhavi\'s 2nd Stage is a BDA layout in numbered blocks. RR Nagar, or Rajarajeshwari Nagar, is entered through an arch on Mysore Road, and Kengeri began as a BDA satellite town with access to the NICE Road and the Bengaluru–Mysuru Expressway.',
+                'The Purple Line opened westward in three steps: Hosahalli, Vijayanagar, Attiguppe and Deepanjali Nagar on 16 November 2015; Rajarajeshwari Nagar, Pattanagere and the two Kengeri stations on 30 August 2021; and Challaghatta on 9 October 2023. Kengeri railway station on the Mysuru line stands near the metro. Most homes in the plotted layouts are houses with space to park a two-wheeler, while the newer apartment projects in RR Nagar and Kengeri keep a visitor list.',
+            ],
+            'tips' => [
+                'Look for a tutor along the Purple Line: a ride between Vijayanagar, RR Nagar and Kengeri plus a short auto avoids Mysore Road at rush hour.',
+                'For Basaveshwaranagar and Nagarbhavi, share the stage, block and a map pin; Basaveshwaranagar\'s streets are hilly and some are steep, so a pin saves a search.',
+                'In RR Nagar and Kengeri apartment complexes, add the tutor to the visitor list before the demo, and in outlying layouts keep one session online.',
+            ],
+        ],
+        'Frazer Town, Richmond Town & Ulsoor' => [
+            'guide' => 'west-and-central-bengaluru-tuition-guide',
+            'intro' => [
+                'The old Cantonment side of central Bengaluru holds some of the city\'s oldest residential streets. Richmond Town was established in 1883, Cooke Town was laid out around 1900 and Frazer Town, officially Pulakeshi Nagar, was founded in 1906. Ulsoor, officially Halasuru, dates back further, with a British military station set up in 1807 beside Halasuru Lake, the only surviving tank built by the Gowda rulers. Heritage bungalows now share lanes with apartment buildings.',
+                'Halasuru and Trinity stations came with the first Purple Line section on 20 October 2011, and the underground city-centre stretch followed on 30 April 2016, which suits Ulsoor and Richmond Town. Frazer Town and Cooke Town have no open station: the Pink Line\'s underground Pottery Town station is under construction, so tutors come by road or take the Purple Line and an auto. Bangalore East and Banaswadi railway stations are close to Frazer Town and Cooke Town.',
+            ],
+            'tips' => [
+                'In Richmond Town and newer buildings in Cooke Town, a guard often stands at the entrance, so give the tutor\'s name and flat number in advance.',
+                'Shopping streets in Frazer Town and near the central shopping district fill up in the evenings; an afternoon or early evening slot is easier to keep.',
+                'For Ulsoor, a tutor on the Purple Line can walk from Halasuru or Trinity station; in Frazer Town, agree an auto point from the nearest open station.',
+            ],
+        ],
+    ],
+    // Pune (1 Oct 2026), from database/seo-content/areas/pune-zone-guides.json.
+    'Pune' => [
+        'Kothrud, Karve Nagar & Deccan' => [
+            'guide' => 'west-pune-tuition-guide',
+            'intro' => [
+                'Kothrud, Karve Nagar, Erandwane, Deccan Gymkhana, Shivajinagar, Model Colony and Warje make up the settled residential belt on the west bank of the Mutha. Kothrud sits below the Vetal Tekdi hills with Paud Road running west through it, Karve Nagar was once called Hingne, and Warje, a farming village until about 1970, joined the city in 2001. Erandwane and Model Colony keep older bungalows on leafy lanes, while newer societies have replaced many older blocks.',
+                'No other zone is as well served by the metro. The Aqua Line has run from Vanaz through Anand Nagar and Paud Phata since March 2022 and through Deccan Gymkhana to District Court since August 2023, when Shivaji Nagar opened on the Purple Line. District Court links the two lines, so a tutor from Pimpri or Swargate needs only one change. Karve Nagar and Warje have no station of their own, so tutors there usually come by two-wheeler.',
+            ],
+            'tips' => [
+                'Pick the station first: Vanaz or Anand Nagar for most of Kothrud and Warje, Paud Phata for Erandwane, Deccan Gymkhana for Deccan and Model Colony, Shivaji Nagar for Shivajinagar.',
+                'For a bungalow or small building in Erandwane or Model Colony, share the lane and a map pin; for a Kothrud or Warje complex, put the tutor on the gate register before the demo.',
+                'Paud Road and the main road towards Deccan are slow in the early evening, so start the lesson before that rush or after it has cleared.',
+            ],
+        ],
+        'Aundh, Baner & Pashan' => [
+            'guide' => 'west-pune-tuition-guide',
+            'intro' => [
+                'Aundh, Baner, Balewadi, Pashan, Sus and Bavdhan line the Katraj–Dehu Road bypass on Pune\'s western edge. Aundh grew into an upmarket suburb from the mid-1990s along University Road, Baner was farmland until the IT boom of the 2000s, and Balewadi joined the municipal corporation in 1997 with twenty-two other villages. Pashan has a lake on the Ramnadi stream known for migratory birds, Sus sits in a valley between hills, and Bavdhan lies beside Chandani Chowk.',
+                'This zone had no working metro station at the time of writing. Line 3, from Maan near Hinjewadi to Shivajinagar, is being built with stations planned at Balewadi High Street, Balewadi Phata, Baner Gaon, Baner Pashan Link Road and Aundh, and its first section has safety approval but had not opened to passengers. The Aqua Line\'s extension towards Chandani Chowk is also under construction. For now, nearly all tutors travel by road, usually from the next suburb.',
+            ],
+            'tips' => [
+                'Ask for a tutor who lives in a neighbouring suburb, such as Baner for Balewadi or Pashan for Sus; with no metro yet, a short two-wheeler ride is what keeps lessons regular.',
+                'Almost every home here is in a gated society, so share the tutor\'s name, tower and flat with the gate a day before the demo.',
+                'Baner Road and University Road fill up at the end of the office day, so a later evening or weekend slot is easier to hold week after week.',
+            ],
+        ],
+        'Wakad, Hinjewadi & Pimpri-Chinchwad' => [
+            'guide' => 'west-pune-tuition-guide',
+            'intro' => [
+                'This zone joins the IT suburbs of Hinjewadi and Wakad with Pimpri-Chinchwad, whose municipal corporation was set up in 1982. Hinjewadi, also spelt Hinjawadi, is built around a large IT park developed in three phases, and Wakad next door is mostly apartment complexes. Pimple Saudagar and Pimple Nilakh are society neighbourhoods, Pimpri\'s industrial growth began in 1954, Chinchwad lies on the Pavana river, and Nigdi is largely the planned Pradhikaran sectors of the new-town development authority.',
+                'The Purple Line runs from PCMC Bhavan in Pimpri to Swargate, opening in March 2022 and reaching Swargate in September 2024, and its extension through Chinchwad and Akurdi to Nigdi and Bhakti Shakti is under construction. Suburban trains on the Pune–Lonavala line stop at Pimpri, Chinchwad and Akurdi. Line 3\'s planned stops in Hinjewadi and at Wakad Chowk had not opened to passengers at the time of writing, so the IT suburbs still depend on road travel.',
+            ],
+            'tips' => [
+                'For Pimpri and nearby, a tutor from the old city can come by Purple Line to PCMC Bhavan; for Chinchwad and Nigdi, a suburban train to Chinchwad or Akurdi is often simpler.',
+                'Hinjewadi-bound traffic makes office hours slow near the bypass, so Wakad and Hinjewadi families find an early-evening or weekend slot easier.',
+                'Row houses in the Nigdi sectors are doorstep visits, but the townships of Wakad, Hinjewadi and Pimple Saudagar need a gate entry before the first lesson.',
+            ],
+        ],
+        'Viman Nagar, Kalyani Nagar & Kharadi' => [
+            'guide' => 'east-pune-tuition-guide',
+            'intro' => [
+                'Viman Nagar, Kalyani Nagar, Yerawada, Vadgaon Sheri, Kharadi and Wagholi follow Nagar Road, the Pune to Ahmednagar road, from Yerawada out to the north-eastern edge. Viman Nagar, whose name means airport town, lies just south of the airport at Lohegaon, Kalyani Nagar faces Koregaon Park across the Mula-Mutha, and the central part of Vadgaon Sheri is widely called New Kalyani Nagar. Kharadi was a village until IT offices arrived around 2005, and Wagholi joined the municipal corporation in 2021.',
+                'The Aqua Line\'s eastern section opened in March 2024 with stations at Bund Garden, Kalyani Nagar and Ramwadi, the terminus beside Viman Nagar, and Yerwada station followed in August 2024. That puts three localities on one line from Vanaz. Kharadi and Wagholi have no station yet; an extension from Ramwadi towards Wagholi has central government approval, but it is not yet built. Most homes are in gated societies, and Airport Road branches from Nagar Road at Yerawada.',
+            ],
+            'tips' => [
+                'Use Kalyani Nagar station for Kalyani Nagar, Yerwada for Yerawada and Ramwadi for Viman Nagar and Vadgaon Sheri; Kharadi and Wagholi homes usually need a tutor who rides in from nearby.',
+                'Nagar Road and Airport Road fill up at the start and end of the working day, so let the class begin after the evening wave has passed.',
+                'Large Kharadi and Wagholi societies can limit visitor parking; sort out the gate pass and a parking spot, or a drop point, before the demo.',
+            ],
+        ],
+        'Koregaon Park, Camp & Wanowrie' => [
+            'guide' => 'east-pune-tuition-guide',
+            'intro' => [
+                'Koregaon Park, Camp, Wanowrie and Salunke Vihar sit south of the river around the old cantonment. Camp is the everyday name for the Pune Cantonment, established in 1817 over the villages of Mali, Munjeri, Wanowrie and Ghorpuri and still run by its cantonment board. Koregaon Park was laid out in the early 1920s on Ghorpuri land as Koregaon Road Estate, Wanowrie is now settled housing towards Hadapsar, and Salunke Vihar is a quieter pocket where many retired defence personnel live.',
+                'Bund Garden station on the Aqua Line, open since March 2024, serves Koregaon Park, and the Pune Railway Station metro stop, open since August 2023, serves the Camp side alongside Pune Junction. Wanowrie and Salunke Vihar have no station close by, so tutors there come by two-wheeler, bus or auto. Housing ranges from British-era bungalows and older villas to builder floors and apartment societies, and some army areas have entry rules of their own.',
+            ],
+            'tips' => [
+                'If you live near an army area, check the entry rules and any pass the tutor needs before the first visit, not on the day.',
+                'Restaurant traffic fills lanes six and seven of Koregaon Park at night and Camp\'s shopping streets are busiest on weekend evenings, so weekday after-school slots are usually smoother.',
+                'In a bungalow the tutor can usually park in the lane and come to the gate; in apartment buildings and Salunke Vihar societies, leave the name in the visitor log.',
+            ],
+        ],
+        'Hadapsar, Kondhwa & NIBM' => [
+            'guide' => 'south-pune-tuition-guide',
+            'intro' => [
+                'Hadapsar, Magarpatta, Kondhwa, NIBM Road and Undri form the south-east\'s belt of large societies and gated townships. Hadapsar, on Solapur Road, part of National Highway 65, was the site of the Battle of Poona in 1802 and grew fast after 1990 as industry and then IT offices arrived. Magarpatta is a 182-hectare gated township inside it, developed through land pooling from 2000. Kondhwa is made up of Kondhwa Budruk and Kondhwa Khurd, and Undri lies beyond NIBM Road.',
+                'There is no metro in this zone. Hadapsar railway station runs local trains towards Daund, the Gadital bus station links Hadapsar with city and state buses, and Swargate, at the southern end of the Purple Line, is the closest metro stop for Kondhwa and NIBM Road. Most tutors therefore arrive by two-wheeler, bus or auto, and entry to the townships and larger societies is controlled at the gate, often down to the cluster and tower.',
+            ],
+            'tips' => [
+                'With no metro nearby, ask first for a tutor already living in Hadapsar, Kondhwa or NIBM Road; a long cross-city ride is the most common reason a timetable slips.',
+                'For Magarpatta and the townships, send the tutor\'s name with the cluster, tower and flat to the gate before the demo so the first visit is not held up.',
+                'NIBM Road and Katraj to Kondhwa Road carry heavy school and office traffic, so a slot just after the school rush tends to be the easiest to keep.',
+            ],
+        ],
+        'Katraj, Bibwewadi & Sinhagad Road' => [
+            'guide' => 'south-pune-tuition-guide',
+            'intro' => [
+                'Katraj, Bibwewadi, Dhankawadi and Sinhagad Road cover south Pune as it climbs from Swargate towards the hills. Katraj lies at the foot of the Katraj Ghat on Satara Road, National Highway 48, known for its Peshwa-era lake and the zoo park beside it. Bibwewadi is an established area near Market Yard, Dhankawadi was a small village until it joined the city in 1995, and Sinhagad Road runs from near Sarasbaug to the base of Sinhagad fort.',
+                'The Purple Line has reached Swargate, underground, since September 2024, and an underground extension to Katraj, approved in August 2024 but not yet built, has planned stations at Market Yard, Bibwewadi, Padmavati, Balaji Nagar and Katraj. Until it opens, tutors ride to Swargate and finish by bus or auto, or come by two-wheeler. Sinhagad Road has no metro, and housing across the zone mixes independent houses and builder floors with societies.',
+            ],
+            'tips' => [
+                'A tutor coming by metro gets off at Swargate; for Katraj or Dhankawadi, check that the onward bus or auto fits the lesson time before fixing a weekly slot.',
+                'Along Sinhagad Road, give the name of your neighbourhood as well, such as Vadgaon Budruk or Dhayari, because the road is long and the name alone does not pin down a home.',
+                'Satara Road and Sinhagad Road are heavy at school and office hours; start before or after the rush, and use an online lesson on the heaviest rain days.',
+            ],
+        ],
+    ],
+    // Hyderabad (1 Oct 2026), from database/seo-content/areas/hyderabad-zone-guides.json.
+    'Hyderabad' => [
+        'Gachibowli, Kondapur & Madhapur' => [
+            'guide' => 'west-hyderabad-tuition-guide',
+            'intro' => [
+                'Gachibowli, Kondapur, Madhapur and Nanakramguda make up the office heart of west Hyderabad. HITEC City, inaugurated in November 1998, grew around Madhapur, which was a small rocky village until the early 1990s, and the Financial District now runs along Gachibowli\'s southern side. Homes are mostly high-rise towers and gated communities set among office parks, with villa enclaves in Gachibowli and settled colonies such as Kavuri Hills and Patrika Nagar in Madhapur.',
+                'The Blue Line opened from Ameerpet to HITEC City in March 2019 and reached Raidurg, its western terminus, that November, with Madhapur and Durgam Cheruvu stations on the way. The MMTS has Hi-Tech City and Hafizpet stations nearby. Gachibowli, Kondapur and Nanakramguda have no station inside them, so tutors usually ride to HITEC City or Raidurg and take an auto or cab, while the Outer Ring Road meets the zone at Gachibowli and Nanakramguda.',
+            ],
+            'tips' => [
+                'Register the tutor with your tower\'s visitor app or security desk before the demo, and say whether the guard will call the flat before letting them up.',
+                'Name the right station: HITEC City suits Kondapur and Madhapur, Raidurg suits Gachibowli and Nanakramguda, and Hafizpet on the MMTS helps a tutor coming from the Lingampalli line.',
+                'Office traffic on the old Mumbai Highway and near the Outer Ring Road junctions builds up as offices close, so pick a slot that ends before then or move to a weekend morning.',
+            ],
+        ],
+        'Kukatpally, Miyapur & Nizampet' => [
+            'guide' => 'west-hyderabad-tuition-guide',
+            'intro' => [
+                'Kukatpally, KPHB Colony, Miyapur, Nizampet and Bachupally form the dense north-western end of Hyderabad along the Mumbai Highway, NH 65. Kukatpally began as an industrial corridor and grew from the early 1990s into one of the city\'s most populated suburbs. KPHB Colony is a planned housing board township laid out in numbered phases, while Miyapur has added high-rise communities beside older colonies. Nizampet and Bachupally, once villages, are now apartment blocks, gated colonies and independent houses.',
+                'The Red Line opened from Miyapur to Ameerpet in November 2017, with eleven stations including Miyapur, KPHB Colony, Kukatpally, Balanagar and Moosapet, and the metro depot sits beside the Miyapur terminus. Tutors from Ameerpet or the city centre can ride straight up the line. Nizampet Road links Nizampet to Bachupally and the highway, and a flyover at Bachupally carries traffic between Miyapur X Roads and Gandimaisamma, so the northern colonies are reached by auto or bus from the Red Line.',
+            ],
+            'tips' => [
+                'For KPHB and Kukatpally, choose a tutor who comes by Red Line and walks or takes a short auto; many homes sit close to a station.',
+                'In Nizampet and Bachupally, share the colony name, a landmark and a map pin, since the last leg from the metro is along busy Nizampet Road or the Bachupally road.',
+                'The highway and Miyapur X Roads are heavy in the evening peak, so start lessons before the rush or leave a margin after it.',
+            ],
+        ],
+        'Manikonda, Narsingi & Kokapet' => [
+            'guide' => 'west-hyderabad-tuition-guide',
+            'intro' => [
+                'Manikonda, Khajaguda, Narsingi and Kokapet sit south-west of the Financial District and have changed quickly in recent years. Manikonda is made up of two revenue villages, Manikonda and Puppalaguda, with high-rise townships beside independent houses. Narsingi is the headquarters of Gandipet mandal, Kokapet lies in the same mandal, and both have become areas of very tall residential towers, villa enclaves and gated communities. Khajaguda is known for its ancient granite hill and lake.',
+                'The Outer Ring Road, an eight-lane expressway opened in stages between 2008 and 2016, has interchanges at Narsingi and Kokapet, and much of Kokapet is a planned layout with wide roads sold through public e-auctions. There is no metro station in the zone; Raidurg, at the western end of the Blue Line, is the nearest. Most tutors therefore come by road, via the ORR, Shaikpet Main Road or Khajaguda Main Road, and some finish from Raidurg by cab.',
+            ],
+            'tips' => [
+                'Expect towers to register every visitor and sometimes call up for approval, so send the tutor\'s name and the tower and flat number a day ahead.',
+                'Ask shortlisted tutors how they will travel: most come by two-wheeler or car via the ORR, and a tutor already teaching in the Financial District is often the steadiest choice.',
+                'Because the local pool of tutors is still growing, consider one home lesson a week with an online session for specialist subjects or revision.',
+            ],
+        ],
+        'Chandanagar, Lingampally & Tellapur' => [
+            'guide' => 'west-hyderabad-tuition-guide',
+            'intro' => [
+                'Chandanagar, Hafeezpet, Serilingampally and Tellapur run along the north-western edge of the IT belt. Chandanagar is a mature suburb on the Mumbai Highway, widened to six lanes here, with builder floors, apartment blocks and independent houses in colonies off the main road. Hafeezpet splits into Old and New Hafeezpet. Serilingampally, usually called Lingampally, is its mandal\'s headquarters, and Tellapur, across the line in Sangareddy district, is one of the fastest-growing localities of gated communities and towers.',
+                'This is the MMTS zone. The suburban line, whose first phase opened in August 2003, runs through Borabanda, Hi-Tech City, Hafizpet and Chandanagar to Lingampalli, the network\'s terminus and a starting point for long-distance trains. Miyapur on the Red Line is the nearest metro station for Chandanagar and Hafeezpet. Tellapur has no rail of its own, so tutors reach it by road or take the train to Lingampalli and finish by auto or cab.',
+            ],
+            'tips' => [
+                'Ask tutors from further away whether they can use the MMTS; a train to Chandanagar, Hafizpet or Lingampalli and a short auto is often quicker than the highway.',
+                'In Chandanagar and Hafeezpet, give the colony and house number for an independent home; in Tellapur, register the tutor at the community gate before the first visit.',
+                'Tellapur journeys can be long for tutors from the city, so weekend slots or a mix of home and online lessons tend to hold up better.',
+            ],
+        ],
+        'Banjara Hills, Jubilee Hills & Somajiguda' => [
+            'guide' => 'central-hyderabad-tuition-guide',
+            'intro' => [
+                'Banjara Hills, Jubilee Hills, Film Nagar and Somajiguda are the established hillside neighbourhoods of central-west Hyderabad. Banjara Hills runs along Road No. 1 to Road No. 14, with hotels and offices on Roads 1 and 3. Jubilee Hills grew from a plan first proposed in 1963, and Road Nos. 36 and 37 form its commercial spine. Film Nagar began as a colony for the Telugu film industry, and Somajiguda, on Raj Bhavan Road, has become a business district.',
+                'Homes range from large independent houses and villas on the slopes to newer apartment buildings, some gated, and in Somajiguda mostly flats in lanes such as Sangeet Nagar and Matha Nagar. The Blue Line section opened in March 2019 brought Road No. 5 Jubilee Hills, Yusufguda and Peddamma Gudi, and Jubilee Hills Check Post, opened in May 2019, is the highest metro station in Hyderabad. Punjagutta on the Red Line and the Necklace Road MMTS station serve the eastern side.',
+            ],
+            'tips' => [
+                'Give the road number and house number together, since the numbered roads wind up the hill and a tutor coming from the station needs both.',
+                'Pick the right stop: Jubilee Hills Check Post for Film Nagar and the western roads, Punjagutta or Khairatabad for Somajiguda and eastern Banjara Hills.',
+                'Roads 1, 3 and 36 and Raj Bhavan Road carry heavy office traffic, so set weekday lessons before the evening rush or use weekend mornings.',
+            ],
+        ],
+        'Ameerpet, Begumpet & Punjagutta' => [
+            'guide' => 'central-hyderabad-tuition-guide',
+            'intro' => [
+                'Ameerpet, Begumpet and Punjagutta form the busy junction of the city\'s metro network, north and west of Hussain Sagar. Ameerpet is known across Hyderabad for software-training institutes, student hostels and paying-guest homes, with older houses and flats in the lanes behind. Begumpet began as a small suburb between Hyderabad and Secunderabad, and its airport now handles training and charter flights. Punjagutta is a shopping and office stretch whose twin flyovers carry traffic over the junction.',
+                'Ameerpet station is the interchange between the Red and Blue Lines, so tutors living anywhere along either line can reach the zone without leaving the metro. The Blue Line from Nagole opened here in November 2017, with Rasoolpura, Prakash Nagar and Begumpet stations, and Begumpet\'s MMTS station sits beside its metro stop. Punjagutta has been on the Red Line since September 2018. Residential pockets such as Dwarakapuri and the Officers Colony lie behind Punjagutta\'s main road.',
+            ],
+            'tips' => [
+                'Use the interchange: a tutor from Miyapur, LB Nagar, Nagole or HITEC City can reach Ameerpet directly, which widens the choice of tutors.',
+                'Ameerpet\'s main road is crowded with students and shoppers in the evening, so fix a slot just before the rush or later in the evening.',
+                'In the colony lanes behind the main roads, share a landmark and the floor, since many buildings hold several households and hostels.',
+            ],
+        ],
+        'Khairatabad, Himayatnagar & Abids' => [
+            'guide' => 'central-hyderabad-tuition-guide',
+            'intro' => [
+                'Khairatabad, Himayatnagar and Abids make up the old commercial centre on the southern and eastern sides of Hussain Sagar. Khairatabad, founded in the seventeenth century, grew around a five-road junction and is known citywide for its very large Ganesh idol each year. Himayatnagar developed from the mid-1960s and mixes shops and offices with homes. Abids is one of Hyderabad\'s oldest business areas, and Abids Road, lined with textile and jewellery shops, links the old and new city.',
+                'Rail choices are wide. Khairatabad has a Red Line station and an MMTS station on the Falaknuma and Lingampalli routes, Assembly station sits near the Public Gardens and Nampally, and the Green Line, opened in February 2020, stops at RTC X Roads, Chikkadpally, Narayanguda and Sultan Bazaar. Homes are mostly flats and older houses in close lanes, where parking is scarce, so a tutor arriving by train or metro and walking is usually the more dependable choice.',
+            ],
+            'tips' => [
+                'For Himayatnagar, Narayanguda or Chikkadpally on the Green Line are the easiest stops; for Abids, Assembly or Nampally; for Khairatabad, its own metro or MMTS station.',
+                'Market streets in Abids and Sultan Bazaar are busiest in the evenings and at weekends, so weekday afternoon or early-evening lessons are simpler.',
+                'Tell the building\'s watchman the tutor\'s name and regular days, since older multi-storey buildings often have no formal visitor desk.',
+            ],
+        ],
+        'Secunderabad, Marredpally & Tarnaka' => [
+            'guide' => 'secunderabad-tuition-guide',
+            'intro' => [
+                'Secunderabad, Marredpally, Tarnaka and Malkajgiri form the core of the twin city north-east of Hussain Sagar. Secunderabad was founded in 1806 as a British cantonment, and busy market roads around the railway station give way to quieter colonies. Marredpally divides into East and West, with builder floors and houses in colonies such as Aswini Colony. Tarnaka, on the Inner Ring Road, began with large bungalows and added apartments from around 2000. Malkajgiri takes in Neredmet, Moula Ali and Safilguda.',
+                'Secunderabad Junction is the zonal headquarters of the South Central Railway and the main MMTS hub, with Secunderabad East on the Blue Line and Secunderabad West on the Green Line beside it. Parade Ground, next to the Jubilee Bus Station, is where the Blue and Green Lines meet. Tarnaka and Mettuguda are Blue Line stops, and Malkajgiri Junction is on the MMTS route to Bolarum. Most homes are houses and apartment buildings, with relatively few large gated communities in Malkajgiri.',
+            ],
+            'tips' => [
+                'Parade Ground is the easiest meeting point for tutors from both the Blue and Green Lines, with a short auto to Marredpally.',
+                'Roads around Secunderabad station and Tukaram Gate are heavy at office hours, so fix a lesson a little before or after the peak.',
+                'In Tarnaka and Malkajgiri, share the colony name, such as Vijayapuri or Neredmet, with a map pin, since many inner lanes look alike.',
+            ],
+        ],
+        'Sainikpuri, Alwal & Trimulgherry' => [
+            'guide' => 'secunderabad-tuition-guide',
+            'intro' => [
+                'Sainikpuri, Alwal, Trimulgherry and Bowenpally lie in the green cantonment country north of Secunderabad. Sainikpuri began as a co-operative housing venture for retired army personnel, on large plots along numbered, tree-lined roads, with Kapra Lake on its eastern edge. Trimulgherry grew around a military base established in 1857, and Alwal, historically part of the cantonment, is known for its old temples. Bowenpally, Old and New, sits near Begumpet Airport where the highways to Nizamabad and Pune meet.',
+                'The metro does not reach this far north, so the MMTS is the rail option. Alwal station lies between Cavalry Barracks and Bolarum Bazar on the Bolarum route, Ammuguda serves the Neredmet side close to Sainikpuri, and Fatehnagar is nearest for Bowenpally. MMTS services from Secunderabad through Bolarum to Medchal were inaugurated in April 2023. Homes are mostly independent houses, plotted colonies and apartment buildings, and most tutors arrive by two-wheeler, with room to park outside houses.',
+            ],
+            'tips' => [
+                'Look first for tutors already living in the northern colonies, since a cross-city journey by road is long and rail links here are limited.',
+                'Near defence areas, colony gates may check visitors, so give the tutor your house number and the gate to use before the first lesson.',
+                'Main roads towards Secunderabad are busy at office hours; a lesson that starts after the evening rush keeps a regular timetable easier.',
+            ],
+        ],
+        'Uppal, Habsiguda & Nacharam' => [
+            'guide' => 'east-and-south-hyderabad-tuition-guide',
+            'intro' => [
+                'Uppal, Habsiguda, Nacharam, Ramanthapur, Boduppal and Nagole make up the eastern edge of the city around the Warangal highway and the Inner Ring Road. Uppal\'s international cricket stadium is the landmark most people give. Habsiguda grew from a hamlet and has research campuses along its main road. Nacharam pairs an industrial area of small units with residential colonies, Ramanthapur is older and settled, and Boduppal, between the Nacharam–Mallapur road and the Warangal highway, is largely independent houses.',
+                'The first stage of the Blue Line, Nagole to Ameerpet with fourteen stations, opened in November 2017 and was later extended to HITEC City and Raidurg. Nagole, the eastern terminus beside the Uppal depot, Uppal, Stadium and Habsiguda serve this zone, so a tutor from the west can ride straight across the city. Nagole grew as a middle-class housing area in the early 1990s. Many homes are family houses, with apartment blocks on the main roads.',
+            ],
+            'tips' => [
+                'Uppal X Roads and the Warangal highway are heavy at office hours, so evening lessons are steadier when they start after the rush.',
+                'For Boduppal and Ramanthapur, which have no station inside, a tutor usually takes the Blue Line to Uppal, Nagole or Habsiguda and then an auto, so add a landmark to your address.',
+                'In apartment buildings, tell the watchman the tutor\'s name and timing; in independent houses, a house number and colony name are enough.',
+            ],
+        ],
+        'Dilsukhnagar, LB Nagar & Vanasthalipuram' => [
+            'guide' => 'east-and-south-hyderabad-tuition-guide',
+            'intro' => [
+                'Dilsukhnagar, Kothapet, LB Nagar, Saroornagar, Malakpet and Vanasthalipuram run south-east along the Hyderabad–Vijayawada highway. Dilsukhnagar began as a suburb on farmland and is now a main commercial hub of the east, and Kothapet\'s fruit market moved here from Jambagh in 1980. Saroornagar grew around a lake built in the late sixteenth century, Malakpet has held the race course since 1886, and Vanasthalipuram, once forest and hunting ground, keeps a deer park on its edge.',
+                'The Red Line from Ameerpet to LB Nagar opened in September 2018, with stations at Malakpet, New Market, Musarambagh, Dilsukhnagar, Chaitanyapuri and LB Nagar, the southern terminus. Malakpet also has an MMTS station. Housing is a mix of independent houses, builder floors and apartment buildings, with many families in their own homes on colony roads, especially in Saroornagar and Vanasthalipuram, where plotted colonies are common and tutors ride the metro to LB Nagar and take an auto.',
+            ],
+            'tips' => [
+                'Dilsukhnagar Main Road, the Kothapet market stretch and LB Nagar crossroads are busy for much of the day, so a tutor arriving by metro is usually more punctual than one driving.',
+                'Name the closest station: Chaitanyapuri for Kothapet, Dilsukhnagar or LB Nagar for Saroornagar, Malakpet for the old Malakpet lanes.',
+                'For Vanasthalipuram, allow time for the auto ride along the highway from LB Nagar and prefer a slot after the evening peak.',
+            ],
+        ],
+        'Mehdipatnam, Tolichowki & Attapur' => [
+            'guide' => 'east-and-south-hyderabad-tuition-guide',
+            'intro' => [
+                'Mehdipatnam, Tolichowki, Attapur and Rajendranagar form the south-west of the city, north and south of the Musi. Mehdipatnam is a busy junction with a large bus depot and a well-known shopping market, and colonies such as Humayun Nagar, Murad Nagar and Rethibowli. Tolichowki, on the road to Gachibowli, has become home to many families working in IT. Attapur is mostly apartment buildings, and Rajendranagar\'s growing colonies include Budwel, Kismatpur and Bandlaguda.',
+                'The elevated expressway to the airport starts at Mehdipatnam and passes over Attapur to Aramghar, where it joins NH 44; it opened in October 2009, and many Attapur addresses are given by its pillar numbers. A six-lane flyover from Tolichowki eases the way through Shaikpet to the IT district. There is no metro in this zone, so tutors come by bus or two-wheeler, and the nearest MMTS stations are Lakdikapool and Nampally.',
+            ],
+            'tips' => [
+                'In Attapur, give the expressway pillar number along with your address; tutors use it to find the right side road.',
+                'The Mehdipatnam junction and Tolichowki crossroads are crowded at office hours, so lessons that start after the evening rush run more reliably.',
+                'Rajendranagar\'s colonies are spread out, so send an exact map pin and landmark, and consider online lessons when a specialist cannot travel that far.',
+            ],
+        ],
+    ],
 ];

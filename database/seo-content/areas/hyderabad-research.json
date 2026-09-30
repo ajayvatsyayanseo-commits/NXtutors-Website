@@ -1,0 +1,900 @@
+{
+  "areas": {
+    "gachibowli": {
+      "name": "Gachibowli",
+      "zone": "Gachibowli, Kondapur & Madhapur",
+      "type": "mixed",
+      "about": "<p>Gachibowli is a large neighbourhood in Serilingampally mandal of Ranga Reddy district, on the western side of Hyderabad, and one of the city's main IT and office hubs, with the Financial District along its southern side. Homes are mostly high-rise apartment towers and gated communities, with some gated villa enclaves among office parks and rocky hillocks. The old Mumbai Highway is the main road linking it to the rest of the city, and the Outer Ring Road meets it at a multi-level junction. Neighbours include Kondapur, Madhapur, Nanakramguda, Raidurg and Khajaguda.</p><p>Gachibowli has no metro station of its own; Raidurg, the western end of the Blue Line, is the usual stop, so a tutor coming by metro finishes the trip by auto or cab. Most families live in gated societies, so expect visitor registration at the gate and allow for it when fixing a start time. Office traffic on the old Mumbai Highway and near the ORR junction builds up on weekdays, so after-school slots that finish before office closing time tend to run more smoothly. Online classes suit specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Gachibowli",
+        "https://www.nobroker.in/locality-iq/gachibowli-hyderabad-liqlt",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Hyderabad_Metro)"
+      ]
+    },
+    "kondapur": {
+      "name": "Kondapur",
+      "zone": "Gachibowli, Kondapur & Madhapur",
+      "type": "mixed",
+      "about": "<p>Kondapur lies in Serilingampally mandal, between HITEC City and Gachibowli. It grew quickly from the late 1990s as IT offices spread across the western suburbs, and today it is mainly apartment blocks and gated communities, with some villas and a busy commercial stretch of shops, clinics and car showrooms. Neighbours include Gachibowli, Madhapur, Kothaguda and Whitefields. The Gachibowli to Miyapur road runs through the area.</p><p>There is no metro station inside Kondapur. HITEC City station on the Blue Line is the usual metro stop, and Hafeezpet on the MMTS suburban rail is the nearest train station, with an auto or bus covering the last stretch. With so many homes in gated societies, tutors should expect to be registered at the gate, and visitor parking inside complexes can be limited. Junctions around Kothaguda get crowded at office hours, so evening classes are easier to keep on time if they start before the rush. For advanced or niche subjects, online lessons are a practical choice. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kondapur",
+        "https://www.nobroker.in/locality-iq/kondapur-hyderabad-liqlt",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Hyderabad_Metro)"
+      ]
+    },
+    "madhapur": {
+      "name": "Madhapur",
+      "zone": "Gachibowli, Kondapur & Madhapur",
+      "type": "mixed",
+      "about": "<p>Madhapur was a small rocky village until the early 1990s and is now the centre of Hyderabad's IT corridor, with HITEC City, inaugurated in 1998, as its commercial core. Around the office towers are residential towers, apartment buildings, serviced rentals and paying-guest homes, and settled colonies such as Kavuri Hills and Patrika Nagar. Madhapur touches Jubilee Hills, Kondapur, Gachibowli, Hafeezpet, Khajaguda and Raidurg, with Kukatpally to the north.</p><p>The Blue Line of the Hyderabad Metro has Madhapur, Durgam Cheruvu and HITEC City stations in the area, all opened in 2019, and the Hi-Tech City station of the MMTS suburban rail is nearby. A tutor can usually arrive by metro and take a short auto ride to the door. Apartment buildings and gated towers usually ask visitors to sign in at the gate, and street parking is tight. Weekday evening office traffic around HITEC City is heavy, so a class straight after school or a weekend slot works well. Online classes are an easy fallback for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Madhapur",
+        "https://www.nobroker.in/locality-iq/madhapur-hyderabad-liqlt",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Hyderabad_Metro)",
+        "https://en.wikipedia.org/wiki/Hyderabad_MMTS"
+      ]
+    },
+    "nanakramguda": {
+      "name": "Nanakramguda",
+      "zone": "Gachibowli, Kondapur & Madhapur",
+      "type": "mixed",
+      "about": "<p>Nanakramguda is a fast-growing residential location in Serilingampally mandal and part of Hyderabad's Financial District, where IT parks and business towers stand alongside some of the city's tallest apartment buildings. Most families here live in high-rise gated communities. The neighbourhood has a lake of its own and an old village temple, and it borders Gachibowli, Khajaguda, Manikonda, Kokapet, Kondapur and Raidurg.</p><p>The Outer Ring Road has an interchange at Nanakramguda, which makes the locality easy to reach by road from Narsingi, Kokapet and Gachibowli, but there is no metro station here; Raidurg on the Blue Line is the nearest, and a tutor arriving by metro will need a cab or auto for the last part. Gated towers usually require visitor entry at the gate and sometimes a call to the flat, so share the tutor's name in advance. Roads around the Financial District fill up when offices open and close, so a class timed between those peaks, or at the weekend, is easier to keep regular. Online sessions work well for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Nanakramguda",
+        "https://en.wikipedia.org/wiki/Outer_Ring_Road,_Hyderabad",
+        "https://en.wikipedia.org/wiki/Manikonda"
+      ]
+    },
+    "kukatpally": {
+      "name": "Kukatpally",
+      "zone": "Kukatpally, Miyapur & Nizampet",
+      "type": "mixed",
+      "about": "<p>Kukatpally is a large north-western suburb of Hyderabad in Medchal-Malkajgiri district, among the most densely populated parts of the city. It began as an industrial corridor and grew quickly from the early 1990s into a residential area of high-rise apartments, older independent houses and the large KPHB Colony, with a busy commercial belt along the Mumbai Highway (NH 65). Neighbours include KPHB Colony, Balanagar, Moosapet, Nizampet and Miyapur, with HITEC City to the south-west.</p><p>Kukatpally is well placed for tutors who travel by metro. The Red Line runs along the highway with Kukatpally, KPHB Colony and JNTU College stations, opened in November 2017, and Balanagar and Moosapet close by. Many homes are within a short auto or walk of a station. Apartment blocks may ask visitors to sign a register, while independent houses in the inner lanes are simple doorstep visits. Traffic on the highway and at the Kukatpally Y junction is heavy at peak hours, so allow extra time for early-evening classes. Online lessons are a good fit for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kukatpally",
+        "https://en.wikipedia.org/wiki/Red_Line_(Hyderabad_Metro)",
+        "https://www.nobroker.in/locality-iq/kukatpally-hyderabad-liqlt"
+      ]
+    },
+    "kphb-colony": {
+      "name": "KPHB Colony",
+      "zone": "Kukatpally, Miyapur & Nizampet",
+      "type": "residential",
+      "about": "<p>KPHB Colony, the Kukatpally Housing Board Colony, is a large planned township in Kukatpally laid out in numbered phases, each with its own blocks of flats, independent houses, parks and local shopping. Families here often live in older housing board flats or in houses on the colony's grid of roads, and newer apartment buildings have filled in over the years. The colony sits beside the Mumbai Highway, with Kukatpally, Nizampet and the Malaysian Township area as neighbours.</p><p>KPHB Colony and JNTU College stations on the Red Line, both opened in November 2017, serve the colony, so a tutor can come by metro and usually walk or take a short auto ride. The Hi-Tech City MMTS station is also within reach for those coming from the suburban rail side. Independent houses are a direct doorstep visit, while gated apartment buildings will ask visitors to sign in. The highway and the flyover near JNTU College station are busy at peak hours, so plan early-evening classes with some margin. Online classes are handy for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Red_Line_(Hyderabad_Metro)",
+        "https://www.nobroker.in/locality-iq/k-p-h-b-phase-9-kukatpally-hyderabad-liqlt",
+        "https://en.wikipedia.org/wiki/Kukatpally"
+      ]
+    },
+    "miyapur": {
+      "name": "Miyapur",
+      "zone": "Kukatpally, Miyapur & Nizampet",
+      "type": "residential",
+      "about": "<p>Miyapur is a neighbourhood in north-west Hyderabad on the Mumbai Highway (NH 65), and the western terminus of the Red Line of the Hyderabad Metro, with the Miyapur metro depot beside the station. The area has seen a boom in high-rise building and has a mix of affordable and premium apartment communities, along with older colonies. Neighbours include Chandanagar, Hafeezpet, Madinaguda, Bachupally, Nizampet and Kukatpally, and a ring road connects it to Gachibowli.</p><p>The Red Line has run from Miyapur since November 2017, which makes the metro a simple option for a tutor coming from Kukatpally, Ameerpet or further along the line, with an auto for the final stretch to the society gate. Gated apartment communities generally register visitors, so share the tutor's details in advance. Traffic on the highway and at Miyapur X roads is heavy in the morning and evening peaks, so after-school slots that start before the evening rush are easier. For specialist subjects, online classes are a sensible option. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Miyapur",
+        "https://en.wikipedia.org/wiki/Red_Line_(Hyderabad_Metro)",
+        "https://www.nobroker.in/locality-iq/miyapur-hyderabad-liqlt"
+      ]
+    },
+    "nizampet": {
+      "name": "Nizampet",
+      "zone": "Kukatpally, Miyapur & Nizampet",
+      "type": "residential",
+      "about": "<p>Nizampet is a former village on the north-western edge of Hyderabad, in Bachupally mandal of Medchal-Malkajgiri district, that has grown into a large residential suburb. Homes are mostly apartment buildings in independent colonies, with some gated communities, villas and independent houses. Well-known colonies include Hyder Nagar, Madhura Nagar and Ram Naresh Colony. Nizampet Road is the main artery, linking it to Bachupally and the Mumbai Highway, and neighbours include Kukatpally, Miyapur, Bachupally, Pragathi Nagar and Gajularamaram.</p><p>The nearest metro stop is JNTU College on the Red Line, so a tutor coming by metro usually takes an auto or bus along Nizampet Road for the last part. In the colonies, many buildings are small apartment blocks where a tutor goes straight to the door, while gated communities will ask for visitor entry. Nizampet Road gets congested at school and office hours, so schedule evening classes with a buffer. Online tutoring is a good option for specialist subjects or when weekday travel is tight. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Nizampet",
+        "https://www.nobroker.in/locality-iq/nizampet-hyderabad-liqlt",
+        "https://en.wikipedia.org/wiki/Red_Line_(Hyderabad_Metro)"
+      ]
+    },
+    "bachupally": {
+      "name": "Bachupally",
+      "zone": "Kukatpally, Miyapur & Nizampet",
+      "type": "residential",
+      "about": "<p>Bachupally is a suburb and mandal headquarters in Medchal-Malkajgiri district, north of Miyapur and Nizampet. It has grown as a residential area of gated colonies, apartment buildings and independent houses, with a number of lakes around it and research campuses nearby. The main road runs from Miyapur X roads towards Gandimaisamma, and a flyover at Bachupally carries through traffic. Neighbours include Miyapur, Nizampet, Pragathi Nagar, Mallampet and Bowrampet, and the Outer Ring Road is within reach.</p><p>The closest metro stations are Miyapur and JNTU College on the Red Line, and Hafeezpet is the nearest MMTS station, so a tutor using public transport will usually finish the journey by auto or bus. In gated colonies expect visitor registration; in independent houses the tutor comes straight to the door, and parking is generally easier than in the denser suburbs. The Miyapur to Bachupally road is busy at school and office hours, so evening classes need a little slack. Online classes help for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bachupally",
+        "https://en.wikipedia.org/wiki/Miyapur",
+        "https://en.wikipedia.org/wiki/Red_Line_(Hyderabad_Metro)"
+      ]
+    },
+    "manikonda": {
+      "name": "Manikonda",
+      "zone": "Manikonda, Narsingi & Kokapet",
+      "type": "residential",
+      "about": "<p>Manikonda is a residential and commercial neighbourhood in Ranga Reddy district made up of two revenue villages, Manikonda and Puppalaguda. It grew quickly with the IT companies nearby and is now home mainly to middle and upper-middle income families working in the IT corridor and Financial District. Housing ranges from high-rise townships and apartment blocks to independent houses in colonies such as Alkapur Township and Chitrapuri Colony. Neighbours include Khajaguda, Gachibowli, Nanakramguda and Shaikpet.</p><p>The nearest metro station is Raidurg on the Blue Line, so a tutor coming by metro finishes the journey by auto or cab. Shaikpet Main Road and the Outer Ring Road are the main routes into the area. In apartment townships, visitor registration at the gate is normal; in independent houses the tutor can come straight to the door, though lanes can be narrow for parking. Roads towards the IT corridor are crowded at office hours, so an early-evening or weekend class is easier to keep steady. Specialist subjects can be taken online. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Manikonda",
+        "https://www.nobroker.in/locality-iq/manikonda-hyderabad-liqlt"
+      ]
+    },
+    "khajaguda": {
+      "name": "Khajaguda",
+      "zone": "Manikonda, Narsingi & Kokapet",
+      "type": "mixed",
+      "about": "<p>Khajaguda is a commercial and residential neighbourhood between Manikonda and Gachibowli, next to the Financial District and HITEC City. It is known for the Khajaguda rock formation and hills, an ancient granite outcrop that is popular for hiking and bouldering, and for a lake. Homes are largely apartment complexes and gated towers, set beside large office buildings. Khajaguda Main Road and link roads connect it to the Outer Ring Road, and neighbours include Manikonda, Nanakramguda, Gachibowli and Raidurg.</p><p>Raidurg on the Blue Line is the closest metro station, so a tutor arriving by metro needs a short auto or cab ride. Gated apartment complexes will register visitors at the gate, so share the tutor's name ahead of the first class. Khajaguda Main Road and the stretches towards the ORR get heavy during office hours, so a class timed just after school or at the weekend is simpler to keep on schedule. Online lessons are useful for specialist subjects or exam-season revision. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Khajaguda",
+        "https://www.nobroker.in/locality-iq/khajaguda-manikonda-jagir-hyderabad-liqlt"
+      ]
+    },
+    "narsingi": {
+      "name": "Narsingi",
+      "zone": "Manikonda, Narsingi & Kokapet",
+      "type": "residential",
+      "about": "<p>Narsingi is a satellite town in Ranga Reddy district and the headquarters of Gandipet mandal, on the south-western side of the IT corridor. The Outer Ring Road passes through it with an interchange here, and the town has become known for new high-rise residential towers, some among the tallest in the city, along with premium gated communities and villa enclaves. Kokapet, the Financial District and Manikonda lie close by.</p><p>Narsingi has no metro station; Raidurg on the Blue Line is the nearest, so most tutors come by road, often using the ORR, or by metro and then a cab. Almost all newer homes are in gated towers, so visitor registration and sometimes a call from security to the flat are routine. Traffic near the ORR interchange and on internal roads builds up at office hours, so an after-school slot before the evening rush, or a weekend class, is easier to sustain. For specialist or advanced subjects, online tutoring is a practical choice. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Narsingi,_Ranga_Reddy",
+        "https://www.nobroker.in/locality-iq/narsingi-hyderabad-liqlt",
+        "https://en.wikipedia.org/wiki/Outer_Ring_Road,_Hyderabad"
+      ]
+    },
+    "kokapet": {
+      "name": "Kokapet",
+      "zone": "Manikonda, Narsingi & Kokapet",
+      "type": "mixed",
+      "about": "<p>Kokapet is a suburb in Gandipet mandal of Ranga Reddy district, next to the Financial District and Narsingi. It has grown from a small village into an area of high-rise apartment towers, gated communities, luxury villas and office buildings, including some of the tallest buildings in South India. A large part of it is the Neopolis layout developed by the Hyderabad Metropolitan Development Authority, with wide planned roads. The Outer Ring Road runs through Kokapet, and neighbours include Narsingi, Nanakramguda and Gandipet.</p><p>There is no metro station in Kokapet; Raidurg on the Blue Line is the nearest, so tutors usually travel by road via the ORR or Gandipet Main Road. Nearly every home is in a gated community or tower, so expect visitor registration, and some complexes will ask the family to approve entry. The newer roads are wide, but junctions near the ORR are busy at office hours, so plan an early-evening or weekend class. Because the pool of nearby tutors is still growing, online classes are a useful option for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kokapet",
+        "https://www.nobroker.in/locality-iq/kokapet-hyderabad-liqlt",
+        "https://www.deccanchronicle.com/nation/current-affairs/030823/neopolis-layout-record-e-auction-earnings.html"
+      ]
+    },
+    "chandanagar": {
+      "name": "Chandanagar",
+      "zone": "Chandanagar, Lingampally & Tellapur",
+      "type": "mixed",
+      "about": "<p>Chandanagar is a mature residential suburb in Ranga Reddy district on the Mumbai Highway (NH 65), which has been widened to six lanes through the area. It has a mix of commercial frontage and housing colonies, including builder floors, standalone apartment blocks, gated communities and independent houses. Colonies such as HUDA Colony, Engineers Enclave and Tara Nagar sit off the highway. Neighbours include Miyapur, Hafeezpet, Madinaguda, Gangaram and Serilingampally.</p><p>Chandanagar has its own station on the MMTS suburban rail line to Lingampalli, and Miyapur on the Red Line is the nearest metro station, so a tutor can arrive by train or metro and take an auto for the last leg. In independent houses and builder floors the tutor comes straight to the door; gated communities will register visitors. The highway is busy in the morning and evening peaks, so after-school slots are easier when they avoid the office rush. Online lessons work well for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chandanagar",
+        "https://en.wikipedia.org/wiki/Hyderabad_MMTS",
+        "https://www.nobroker.in/locality-iq/chanda-nagar-colony-bandam-kommu-hyderabad-liqlt"
+      ]
+    },
+    "hafeezpet": {
+      "name": "Hafeezpet",
+      "zone": "Chandanagar, Lingampally & Tellapur",
+      "type": "residential",
+      "about": "<p>Hafeezpet is a neighbourhood in Ranga Reddy district, close to Kukatpally, Madhapur, Miyapur and Kondapur. It is divided into Old Hafeezpet and New Hafeezpet and has a mix of apartments, gated communities, villas and independent houses. The Gachibowli to Miyapur road and the Mumbai Highway both serve the area.</p><p>Hafeezpet has its own MMTS suburban rail station on the line to Lingampalli, and Miyapur on the Red Line is the nearest metro station, so tutors can come by train or metro and take a short auto ride. In independent houses the tutor goes straight to the door, while gated communities will ask for visitor entry. Signals on the main roads get backed up at peak hours, so allow a margin for evening classes. Online lessons are a convenient option for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hafeezpet",
+        "https://www.nobroker.in/locality-iq/hafeezpet-hyderabad-liqlt",
+        "https://en.wikipedia.org/wiki/Hyderabad_MMTS"
+      ]
+    },
+    "serilingampally": {
+      "name": "Serilingampally (Lingampally)",
+      "zone": "Chandanagar, Lingampally & Tellapur",
+      "type": "mixed",
+      "about": "<p>Serilingampally, often called Lingampally, is a major suburb in the north-west of Hyderabad and the headquarters of Serilingampally mandal in Ranga Reddy district. It has attracted heavy IT-linked growth because of its closeness to HITEC City and Gachibowli, and housing ranges from gated societies and high-rise towers to older colonies with independent houses. Main routes include the Mumbai Highway, the old Mumbai Highway, Nallagandla Road and BHEL Road, and neighbours include Chandanagar, Nallagandla, Gachibowli and Tellapur.</p><p>Lingampalli railway station is the terminus of the MMTS suburban rail and also a starting point for long-distance trains, which makes it easy for tutors from other parts of the city to reach by train and then auto. Gated societies will register visitors, while independent houses in the older colonies are a doorstep visit. Roads around the station get busy at peak hours, so allow extra time for early-evening classes. For specialist subjects, online tutoring is a good alternative. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Serilingampally",
+        "https://en.wikipedia.org/wiki/Hyderabad_MMTS",
+        "https://www.nobroker.in/locality-iq/lingampally-hyderabad-liqlt"
+      ]
+    },
+    "tellapur": {
+      "name": "Tellapur",
+      "zone": "Chandanagar, Lingampally & Tellapur",
+      "type": "residential",
+      "about": "<p>Tellapur is a satellite town in Ramachandrapuram mandal of Sangareddy district, on the western edge of the Hyderabad Metropolitan Region, and one of its fastest-growing localities thanks to the nearby IT hubs and the Outer Ring Road. Housing is largely gated communities, high-rise apartment towers and luxury villas, several of them among the taller residential buildings on this side of the city. Nallagandla, HUDA Layout and Lingampally are close neighbours, with Gachibowli further east.</p><p>Most tutors reach Tellapur by road or take a train to Lingampalli and then an auto or cab. Nearly all homes are in gated communities, so visitor registration and a call from the gate are standard. Roads towards the ORR and Gachibowli get busy in office hours, so after-school or weekend classes are easier to keep regular. Because travel can be long for some tutors, online classes are a practical option, particularly for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tellapur",
+        "https://www.nobroker.in/locality-iq/tellapur-hyderabad-liqlt"
+      ]
+    },
+    "jubilee-hills": {
+      "name": "Jubilee Hills",
+      "zone": "Banjara Hills, Jubilee Hills & Somajiguda",
+      "type": "residential",
+      "about": "<p>Jubilee Hills lies in the west of Hyderabad, next to Banjara Hills, with Film Nagar, Yousufguda, Borabanda and the Madhapur side of the city among its neighbours. The locality grew from a plan first proposed in 1963 and is laid out along numbered roads, with Road No. 36 acting as its busy commercial spine. Housing is a mix of large independent houses and villas on the hill slopes and newer apartment buildings, some of them gated.</p><p>The Blue Line of the Hyderabad Metro runs through the area, with stations at Road No. 5 Jubilee Hills, Jubilee Hills Check Post and Peddamma Gudi. A tutor visiting an independent house usually goes straight to the door, while apartment complexes expect the visitor's name to be registered at the gate. Tutors who come by metro normally finish the trip by auto from the nearest station. Evening sessions near Road No. 36 and the check post junction are easier to fix a little before or after office traffic, and online classes help when a specialist subject needs a tutor from further away. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jubilee_Hills",
+        "https://www.nobroker.in/locality-iq/jubilee-hills-hyderabad-liqlt",
+        "https://en.wikipedia.org/wiki/Jubilee_Hills_Check_Post_metro_station"
+      ]
+    },
+    "banjara-hills": {
+      "name": "Banjara Hills",
+      "zone": "Banjara Hills, Jubilee Hills & Somajiguda",
+      "type": "mixed",
+      "about": "<p>Banjara Hills is an established upmarket neighbourhood in central-west Hyderabad, bordered by Jubilee Hills, Somajiguda, Punjagutta and Srinagar Colony. It is organised along numbered roads from Road No. 1 to Road No. 14, and much of the business activity, including hotels and offices, sits on Roads 1 and 3. Away from these, homes range from independent houses and villas to multi-storey apartment buildings.</p><p>Punjagutta station on the Red Line serves the eastern side, Jubilee Hills Check Post station on the Blue Line serves the western roads, and Khairatabad is the nearest MMTS station. For a parent, this means a tutor can usually reach the main road by metro and take an auto for the last stretch up the numbered roads. Independent houses make for an easy doorstep arrival with some room to park a two-wheeler, while apartment buildings ask visitors to sign in with security. The main numbered roads are busy at office hours, so a session slot away from the evening rush works better for many families. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Banjara_Hills",
+        "https://www.nobroker.in/locality-iq/banjara-hills-hyderabad-liqlt",
+        "https://www.squareyards.com/sale/independent-houses-for-sale-in-banjara-hills-hyderabad",
+        "https://en.wikipedia.org/wiki/Jubilee_Hills_Check_Post_metro_station"
+      ]
+    },
+    "film-nagar": {
+      "name": "Film Nagar",
+      "zone": "Banjara Hills, Jubilee Hills & Somajiguda",
+      "type": "residential",
+      "about": "<p>Film Nagar is a residential neighbourhood in the west of Hyderabad that spans parts of Jubilee Hills and Banjara Hills. It began as a colony for people from the Telugu film industry, and several film studios still stand in and around it, which is why the area is often linked with Tollywood. Its green residential lanes hold a mix of independent houses and apartment buildings, with Jubilee Hills on one side and the Toli Chowki side of the city on the other.</p><p>The nearest metro station is Jubilee Hills Check Post on the Blue Line, and tutors coming by metro usually take an auto into the inner lanes. Independent houses mean the tutor comes straight to the door, while apartment buildings ask for the visitor's name at the entrance. Because the area is on the edge of two busy neighbourhoods, it helps to agree a regular weekday slot that avoids the evening office rush. For subjects where a specialist is hard to find nearby, online classes are a practical option. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Film_Nagar",
+        "https://www.nobroker.in/locality-iq/film-nagar-jubilee-hills-hyderabad-liqlt",
+        "https://en.wikipedia.org/wiki/Jubilee_Hills_Check_Post_metro_station"
+      ]
+    },
+    "somajiguda": {
+      "name": "Somajiguda",
+      "zone": "Banjara Hills, Jubilee Hills & Somajiguda",
+      "type": "mixed",
+      "about": "<p>Somajiguda sits on either side of Raj Bhavan Road in central Hyderabad, close to Begumpet, Punjagutta and Khairatabad. It began as a residential locality and has gradually become a business district, with offices, hotels and a long run of jewellery showrooms. Homes today are mostly apartment buildings in the inner lanes, in pockets such as Sangeet Nagar, B. S. Maqta and Matha Nagar.</p><p>Metro access is through Punjagutta and Khairatabad stations on the Red Line, and the Necklace Road and Khairatabad MMTS stations are also close by. A tutor coming by train or metro normally finishes the journey on foot or by auto into the residential lanes. Apartment buildings here usually ask visitors to register at the entrance, and street parking can be tight, so a tutor arriving by metro is often simpler. Raj Bhavan Road carries heavy office traffic, so an early evening slot before the peak, or a weekend class, tends to suit families. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Somajiguda",
+        "https://www.nobroker.in/locality-iq/somajiguda-hyderabad-liqlt",
+        "https://en.wikipedia.org/wiki/Necklace_Road_railway_station"
+      ]
+    },
+    "ameerpet": {
+      "name": "Ameerpet",
+      "zone": "Ameerpet, Begumpet & Punjagutta",
+      "type": "mixed",
+      "about": "<p>Ameerpet is a busy residential and commercial hub in north-west central Hyderabad, bordered by Begumpet, S. R. Nagar, Punjagutta, Balkampet and Sanath Nagar. It is widely known as a training and coaching centre, with many software-training institutes, shops and hostels for students and young professionals. Housing includes older independent houses, apartment buildings, some gated complexes and a large number of paying-guest homes.</p><p>Ameerpet metro station is the interchange between the Red Line and the Blue Line, so tutors from both lines can reach the area without changing mode, and S. R. Nagar station on the Red Line is next door. For a home tuition visit, the last leg is usually a short walk or an auto ride from the station into the colony lanes. Apartment buildings expect visitors to sign in, while houses allow a doorstep arrival. The main road through Ameerpet is crowded at peak hours, so a slot just before or after the evening rush makes the visit more predictable. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ameerpet",
+        "https://www.nobroker.in/locality-iq/ameerpet-hyderabad-liqlt",
+        "https://en.wikipedia.org/wiki/Red_Line_(Hyderabad_Metro)"
+      ]
+    },
+    "begumpet": {
+      "name": "Begumpet",
+      "zone": "Ameerpet, Begumpet & Punjagutta",
+      "type": "mixed",
+      "about": "<p>Begumpet is an inner-city locality just north of Hussain Sagar, originally a small suburb between Hyderabad and Secunderabad and now a major commercial and residential area. Its neighbours include Ameerpet, Sanath Nagar, Balkampet, Rasoolpura and Bowenpally, and the Greenlands flyover links it to Punjagutta. Begumpet Airport, closed to regular passenger flights, still handles training and charter flying. Homes range from independent houses to apartment buildings.</p><p>Begumpet is unusually well served by rail. The Blue Line stops at Begumpet, Prakash Nagar and Rasoolpura, and Begumpet railway station on the MMTS sits next to the metro station. A tutor can therefore arrive by metro or local train and take a short auto ride to the door. Independent houses mean a doorstep arrival, while apartment buildings expect names at the gate. Traffic through the flyovers and the main road is heaviest at office hours, so evening classes are easier to fix a little earlier or later than the peak. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Begumpet",
+        "https://en.wikipedia.org/wiki/Begumpet_railway_station",
+        "https://www.nobroker.in/locality-iq/begumpet-hyderabad-liqlt"
+      ]
+    },
+    "punjagutta": {
+      "name": "Punjagutta",
+      "zone": "Ameerpet, Begumpet & Punjagutta",
+      "type": "mixed",
+      "about": "<p>Punjagutta is a commercial and residential area in central-west Hyderabad that links Ameerpet, Banjara Hills, Somajiguda and Khairatabad. Twin flyovers carry traffic over the Punjagutta junction, and the area has offices, jewellery shops and large retail buildings along the main road. Behind them are residential pockets such as Punjagutta Officers Colony, Dwarakapuri and Nagarjuna Hills, with apartments and some independent houses.</p><p>Punjagutta station on the Red Line opened in September 2018, and Ameerpet, the Red and Blue Line interchange, is one stop away. Begumpet is the nearest MMTS station. For home tuition, the colonies behind the main road are generally quieter and easier for a tutor to reach on foot or by auto from the metro. Apartment buildings expect visitors to be registered, while houses allow a direct doorstep arrival. The junction is busy at peak times, so an evening class that starts before the rush suits most families. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Panjagutta",
+        "https://www.nobroker.in/locality-iq/punjagutta-hyderabad-liqlt",
+        "https://en.wikipedia.org/wiki/Punjagutta_metro_station"
+      ]
+    },
+    "khairatabad": {
+      "name": "Khairatabad",
+      "zone": "Khairatabad, Himayatnagar & Abids",
+      "type": "mixed",
+      "about": "<p>Khairatabad is an old neighbourhood of central Hyderabad, founded in the seventeenth century, around a five-road junction that connects Somajiguda, Ameerpet, Hussain Sagar, Lakdi-ka-pul and Anandnagar. Raj Bhavan Road runs from the junction, and the area has several government and institutional buildings. It is also known across the city for its very large Ganesh idol during the annual festival. Homes are mainly apartment buildings and older houses in the lanes off the main roads.</p><p>Khairatabad has both a Red Line metro station and an MMTS station, the latter on the Lingampalli and Falaknuma routes, so tutors from many parts of the city can arrive by rail. The last leg to a home is usually a walk or a short auto ride. Apartment buildings ask visitors to sign in, and parking in the older lanes is limited, which makes a tutor coming by metro or train convenient. The junction is among the busiest in the city, so evening sessions are easier to schedule before or after the peak. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Khairatabad",
+        "https://en.wikipedia.org/wiki/Khairatabad_railway_station",
+        "https://en.wikipedia.org/wiki/Red_Line_(Hyderabad_Metro)"
+      ]
+    },
+    "himayatnagar": {
+      "name": "Himayatnagar",
+      "zone": "Khairatabad, Himayatnagar & Abids",
+      "type": "mixed",
+      "about": "<p>Himayatnagar lies on the south-eastern side of Hussain Sagar in central Hyderabad, with Narayanguda to the north, Basheerbagh to the west and Hyderguda to the east. It developed into a residential and commercial area around the mid-1960s, and today it mixes shops and offices with homes. The residential lanes hold multi-storey buildings and independent houses, and Gagan Mahal, Domalguda and Ashok Nagar are close by.</p><p>The nearest metro stations are Narayanguda and Chikkadpally on the Green Line, which opened in February 2020, with Assembly station on the Red Line also within reach. Tutors arriving by metro usually take an auto or walk into the inner lanes. Multi-storey buildings may ask visitors to sign in, while independent houses allow a doorstep arrival. The main roads through the area are busy in the evening, so a class slot that starts before the evening rush works well for many families. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Himayatnagar,_Hyderabad",
+        "https://www.nobroker.in/locality-iq/himayath-nagar-hyderabad-liqlt",
+        "https://en.wikipedia.org/wiki/Green_Line_(Hyderabad_Metro)"
+      ]
+    },
+    "abids": {
+      "name": "Abids",
+      "zone": "Khairatabad, Himayatnagar & Abids",
+      "type": "mixed",
+      "about": "<p>Abids is one of the oldest business areas of Hyderabad, in the inner city between Basheerbagh to the north, Nampally to the west, Koti to the east and Chaderghat to the south. Abids Road is an arterial road linking the old and new parts of the city, lined with shops selling textiles, jewellery, footwear and electronics. Homes are a mix of older independent houses, and multi-storey residential buildings, with Sultan Bazaar and Hyderguda nearby.</p><p>Nampally, Gandhi Bhavan and Assembly stations on the Red Line serve the area, and Hyderabad Deccan station at Nampally is the nearest suburban rail station. Because Abids is a dense market area, parking is limited, and tutors often arrive by metro or bus and walk the last part. Families in residential buildings may need to inform the watchman about a regular tutor. Shopping streets are busiest in the evenings and on weekends, so a weekday afternoon or early evening slot is usually simpler. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Abids",
+        "https://www.nobroker.in/locality-iq/abids-hyderabad-liqlt",
+        "https://en.wikipedia.org/wiki/Assembly_metro_station"
+      ]
+    },
+    "secunderabad": {
+      "name": "Secunderabad",
+      "zone": "Secunderabad, Marredpally & Tarnaka",
+      "type": "mixed",
+      "about": "<p>Secunderabad is Hyderabad's twin city, founded in 1806 as a British cantonment and separated from Hyderabad by Hussain Sagar. It merged into a single municipal corporation with Hyderabad in 1960, though the cantonment board still manages large parts of it. Its many neighbourhoods include Marredpally, Tarnaka, Trimulgherry and Bowenpally, and the city mixes busy market roads around the railway station with quieter colonies of independent houses and apartment buildings.</p><p>Secunderabad Junction is the headquarters of the South Central Railway and the hub of the MMTS local train network. Secunderabad East on the Blue Line and Secunderabad West on the Green Line serve the station, and Parade Ground is the interchange between those two lines. Tutors can therefore arrive by metro or local train and take an auto to the door. Cantonment colonies and gated complexes may ask visitors to register at the gate. Roads around the station are crowded at peak hours, so class timings are easier just outside the rush. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Secunderabad",
+        "https://en.wikipedia.org/wiki/Secunderabad_Junction_railway_station",
+        "https://en.wikipedia.org/wiki/Parade_Ground_metro_station"
+      ]
+    },
+    "marredpally": {
+      "name": "Marredpally",
+      "zone": "Secunderabad, Marredpally & Tarnaka",
+      "type": "residential",
+      "about": "<p>Marredpally is a residential suburb of Secunderabad divided into East Marredpally and West Marredpally, with Karkhana, Tukaram Gate, Nehru Nagar and Mahendra Hills among its neighbours. Services are shared between the cantonment board and the municipal corporation. West Marredpally has builder floors, independent houses and apartment buildings in colonies such as Aswini Colony and Nehru Nagar, while East Marredpally mixes mid-rise apartments with individual homes.</p><p>Parade Ground, the interchange between the Blue and Green Lines of the metro, is the nearest metro station, and Secunderabad Junction serves both long-distance and MMTS trains. A tutor coming by metro or train usually takes an auto for the last leg into the colonies. Independent houses and builder floors allow a doorstep arrival, while apartment buildings expect visitors to be registered. Roads towards Secunderabad station and Tukaram Gate are busy at office hours, so an evening class set a little before or after the peak works better. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Marredpally",
+        "https://www.nobroker.in/locality-iq/west-marredpally-hyderabad-liqlt",
+        "https://www.nobroker.in/locality-iq/east-marredpally-hyderabad-liqlt"
+      ]
+    },
+    "tarnaka": {
+      "name": "Tarnaka",
+      "zone": "Secunderabad, Marredpally & Tarnaka",
+      "type": "residential",
+      "about": "<p>Tarnaka is an established residential area on the eastern side of Secunderabad, along the Inner Ring Road, with Habsiguda, Malkajgiri, Nacharam, South Lallaguda and Mettuguda as neighbours. It began as an area of large bungalows and villas and has added many apartments and commercial buildings since around 2000, while keeping much of its greenery. Housing today includes apartments, independent houses and builder floors, as well as rental rooms used by students.</p><p>Tarnaka station on the Blue Line opened in November 2017, with Mettuguda and Habsiguda stations on either side. For a tutor, that means arriving by metro and then walking or taking an auto into colonies such as Vijayapuri and Snehapuri. Houses and builder floors usually allow a doorstep arrival, while apartment buildings ask for the visitor's name. Parking can be scarce near the main road, so a tutor arriving by metro is often simpler. The ring road is busy at office hours, which is worth keeping in mind when setting a class time. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tarnaka",
+        "https://en.wikipedia.org/wiki/Tarnaka_metro_station",
+        "https://www.nobroker.in/locality-iq/tarnaka-hyderabad-liqlt"
+      ]
+    },
+    "malkajgiri": {
+      "name": "Malkajgiri",
+      "zone": "Secunderabad, Marredpally & Tarnaka",
+      "type": "residential",
+      "about": "<p>Malkajgiri is a large suburb in the north-east of Hyderabad, in Medchal-Malkajgiri district, taking in former hamlets such as Neredmet, Moula Ali, Safilguda and Ramakrishnapuram. It is organised into sub-areas including Old Malkajgiri, Malkajgiri X Roads, Old and New Mirzalguda, Anutex and Hanumanpet. Most housing is independent houses and apartment buildings in traditional inner colonies, with relatively few gated communities, and Tarnaka and Nacharam lie close by.</p><p>Rail is the area's strength: Malkajgiri Junction sits on the Secunderabad–Bolarum MMTS route, and the suburb has several other local stations. The nearest metro station is Mettuguda on the Blue Line. A tutor can come by local train or metro and finish the trip by auto. In the inner colonies, independent houses mean a doorstep arrival, and apartment buildings usually just need the visitor's name at the gate. Roads such as AOC Main Road and the Inner Ring Road are busy at office hours, so plan class timings around them. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Malkajgiri",
+        "https://en.wikipedia.org/wiki/Malkajgiri_Junction_railway_station",
+        "https://www.nobroker.in/locality-iq/malkajgiri-hyderabad-liqlt"
+      ]
+    },
+    "sainikpuri": {
+      "name": "Sainikpuri",
+      "zone": "Sainikpuri, Alwal & Trimulgherry",
+      "type": "residential",
+      "about": "<p>Sainikpuri is a residential neighbourhood in north-east Hyderabad that started as a co-operative housing venture for retired army personnel and now includes civilian homes too. Its original plots were large, and many houses have lawns and gardens along numbered, tree-lined roads, though apartments are gradually replacing some older homes. Neighbours include Kapra, Yapral, Dr. A. S. Rao Nagar, Neredmet, Vayupuri and Defence Colony, with Kapra Lake on the eastern edge.</p><p>The nearest suburban rail station is Ammuguda on the Secunderabad–Bolarum MMTS route; the metro is further away, so most tutors come by road. Independent houses on the wide roads make a doorstep visit simple, with space to park, while gated communities and apartment complexes ask for visitor registration at the gate. The Sainikpuri–ECIL road and the approach from A. S. Rao Nagar are busy at office hours, so a steady weekday slot outside the rush helps. For specialist subjects, online classes widen the choice of tutors. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sainikpuri",
+        "https://www.nobroker.in/locality-iq/sainikpuri-hyderabad-liqlt",
+        "https://en.wikipedia.org/wiki/Ammuguda_railway_station"
+      ]
+    },
+    "alwal": {
+      "name": "Alwal",
+      "zone": "Sainikpuri, Alwal & Trimulgherry",
+      "type": "residential",
+      "about": "<p>Alwal is a suburb in the north of Secunderabad, in Medchal-Malkajgiri district, and was historically part of the British cantonment. The Alwal circle covers Alwal, Macha Bollaram and Venkatapuram, and neighbours include Bowenpally, Trimulgherry and Old Alwal. Army areas lie around it. Housing is a mix of independent houses, apartment buildings and plotted colonies, and the locality is known for its old temples.</p><p>Alwal railway station is on the Secunderabad–Bolarum MMTS route, with Cavalry Barracks and Bolarum Bazar as neighbouring stops, and it serves Alwal, Old Alwal, Venkatapuram and nearby areas. The metro does not reach this far north, so tutors arrive by local train, bus or two-wheeler. Independent houses in plotted colonies usually allow a doorstep arrival with parking, while apartment complexes register visitors at the gate. Main roads towards Secunderabad are busy at peak hours, so agree a class time that avoids them. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Alwal",
+        "https://en.wikipedia.org/wiki/Alwal_railway_station",
+        "https://www.nobroker.in/locality-iq/alwal-hyderabad-liqlt"
+      ]
+    },
+    "trimulgherry": {
+      "name": "Trimulgherry",
+      "zone": "Sainikpuri, Alwal & Trimulgherry",
+      "type": "mixed",
+      "about": "<p>Trimulgherry, also written Tirumalagiri, is a major suburb of Secunderabad that grew around a military cantonment base established in 1857, and the cantonment board still governs it. Neighbours include Karkhana, Bowenpally, Alwal, Lal Bazaar and R. K. Puram. Alongside the defence areas, the past two decades have brought many colonies, townships and apartment buildings, as well as older independent houses.</p><p>The area is reached mainly by road, and the nearest metro station is Parade Ground, the Blue and Green Line interchange. The Secunderabad–Bolarum MMTS route passes to the north, with Cavalry Barracks station giving access to the cantonment area. For a tutor visit, colonies and apartment complexes may ask visitors to register at the gate, especially near the cantonment areas. Independent houses usually allow a doorstep arrival with parking. Roads towards Secunderabad are busy at office hours, so an evening slot outside the peak is easier. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Trimulgherry",
+        "https://www.nobroker.in/locality-iq/trimalgherry-hyderabad-liqlt",
+        "https://en.wikipedia.org/wiki/Cavalry_Barracks_railway_station"
+      ]
+    },
+    "bowenpally": {
+      "name": "Bowenpally",
+      "zone": "Sainikpuri, Alwal & Trimulgherry",
+      "type": "residential",
+      "about": "<p>Bowenpally is a locality on the north-western fringe of Secunderabad, made up of Old Bowenpally and New Bowenpally, with Trimulgherry, Karkhana, Sikh Village and Hasmathpet nearby. It is largely upper-middle-class, with residential colonies, gated communities, apartment buildings and individual houses. The area sits near Begumpet Airport and where the highways to Nizamabad and to Pune meet, and it has grown from a village-like settlement into a busy residential area.</p><p>The closest MMTS station is Fatehnagar, and the nearest metro stations are some way off, so most tutors arrive by road on two-wheelers or by bus and auto. Independent houses usually allow a doorstep arrival, while gated communities and apartment complexes register visitors at the gate. The national highway through the area carries heavy traffic at office hours, so an evening class set a little before or after the peak is simpler to keep regular. Online classes are useful for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bowenpally",
+        "https://www.nobroker.in/locality-iq/hasmathpet-bowenpally-hyderabad-liqlt"
+      ]
+    },
+    "uppal": {
+      "name": "Uppal",
+      "zone": "Uppal, Habsiguda & Nacharam",
+      "type": "mixed",
+      "about": "<p>Uppal sits on the eastern edge of Hyderabad where the Warangal highway meets the Inner Ring Road, with Habsiguda and Ramanthapur to the west, Nagole to the south and Boduppal further east. Housing is mainly apartment blocks, followed by independent houses and plots in older colonies, and an industrial development area lies beside the residential streets. The international cricket stadium is the landmark most people give for directions.</p><p>Two stations on the Metro Blue Line, Uppal and Stadium, serve the locality, and Nagole, the line's eastern terminus, is one stop away. A tutor coming by metro usually finishes the trip by auto from Uppal X Roads. The crossing and the highway get heavy at office hours, so evening slots work better when they start a little after the rush. In apartment blocks, share the tutor's name with the gate beforehand; in independent houses the tutor comes straight to the door. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Uppal,_Hyderabad",
+        "https://en.wikipedia.org/wiki/Uppal_metro_station",
+        "https://www.99acres.com/uppal-hyderabad-overview-piffid",
+        "https://en.wikipedia.org/wiki/Boduppal"
+      ]
+    },
+    "habsiguda": {
+      "name": "Habsiguda",
+      "zone": "Uppal, Habsiguda & Nacharam",
+      "type": "mixed",
+      "about": "<p>Habsiguda lies between Tarnaka and Uppal in east Hyderabad, with Nacharam to the north-east and Ramanthapur to the south. It grew from a small hamlet into a busy neighbourhood, and several national research institutes occupy large campuses along its main road, alongside older residential streets and newer apartment buildings.</p><p>Homes are mostly apartment buildings, with a smaller share of independent houses and plots on the side lanes. The Metro Blue Line has a station at Habsiguda, and the neighbouring stops at Tarnaka and NGRI are on the same line, so a tutor from Secunderabad, Ameerpet or Uppal can arrive by metro and walk or take a short auto ride to the lane. The main road is busy at school and office hours; a slot that begins after the evening peak is easier for both sides. Apartment buildings often keep a visitor register, so tell the watchman the tutor's name and timing. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Habsiguda",
+        "https://en.wikipedia.org/wiki/Habsiguda_metro_station",
+        "https://www.squareyards.com/habsiguda-in-hyderabad-overview-2780"
+      ]
+    },
+    "nacharam": {
+      "name": "Nacharam",
+      "zone": "Uppal, Habsiguda & Nacharam",
+      "type": "mixed",
+      "about": "<p>Nacharam is a residential and industrial neighbourhood in Uppal mandal, next to Mallapur, Habsiguda and HMT Nagar. Its industrial development area on the Nacharam–Mallapur road holds small units making fabrication, clothing, rubber goods and furniture, and Nacharam Main Road is known for its shoe factories and footwear shops. Residential colonies such as Bapuji Nagar, Annapurna Colony and Raghavendra Nagar sit around this belt, with newer apartment buildings added since the 2000s.</p><p>For a home tutor, the nearest metro stop is Habsiguda on the Blue Line, and the rest of the trip is usually an auto ride along Nacharam Main Road. Moula Ali and Malkajgiri railway stations are also close for tutors coming from the north. The main road is busy with shoppers and factory traffic on weekdays, so fix a regular time that avoids the office rush. Independent houses allow a doorstep visit, while apartment buildings expect the tutor's details at the gate. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Nacharam",
+        "https://www.99acres.com/nacharam-secunderabad-overview-piffid",
+        "https://www.nobroker.in/locality-iq/industrial-development-area-nacharam-hyderabad-liqlt"
+      ]
+    },
+    "ramanthapur": {
+      "name": "Ramanthapur",
+      "zone": "Uppal, Habsiguda & Nacharam",
+      "type": "residential",
+      "about": "<p>Ramanthapur lies between Uppal and Amberpet on the road from Uppal towards Kachiguda, with Habsiguda, Kothapet and Gaddiannaram among its neighbours. It is an older, settled part of east Hyderabad that has filled in steadily with new residential buildings over the decades.</p><p>Housing is a mix of 2 and 3 BHK apartments, independent houses and a few builder floors, so families here range from those in walk-up buildings to those in their own family homes. There is no metro station inside the locality; tutors usually take the Blue Line to Uppal or Habsiguda and finish the journey by auto, or come by city bus along the Uppal road. The Uppal–Amberpet road is busy at office hours, which makes a slightly later evening slot more reliable. In independent houses the tutor rings at the door; apartment buildings may ask for the tutor's name at the entrance. For subjects that are hard to find locally, such as IB or IGCSE sciences, an online tutor is a practical choice. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ramanthapur",
+        "https://www.99acres.com/ramanthapur-hyderabad-overview-piffid",
+        "https://www.nobroker.in/locality-iq/ramanthapur-hyderabad-liqlt"
+      ]
+    },
+    "boduppal": {
+      "name": "Boduppal",
+      "zone": "Uppal, Habsiguda & Nacharam",
+      "type": "residential",
+      "about": "<p>Boduppal is at the eastern end of the city, spread between the Nacharam–Mallapur road and the Warangal highway, with Uppal, Peerzadiguda and Chengicherla as neighbours. It became a municipality in 2016 and a municipal corporation in 2019, and it has grown quickly into a major residential area.</p><p>Independent houses make up a large share of homes, alongside 2 BHK apartments, villa communities and open plots, so many visits are to a family's own house rather than a tall tower. The nearest metro stops are Uppal and Nagole on the Blue Line, from where tutors usually take an auto into the colony; Moula Ali and Cherlapally railway stations serve the area to the north. The Warangal highway gets crowded at office hours, so a regular slot set after the evening peak works well. Gated villa communities will want the tutor's name registered at the gate, while plotted colonies are simple doorstep visits. Where a specialist subject tutor cannot travel this far east, online classes fill the gap. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Boduppal",
+        "https://www.99acres.com/boduppal-hyderabad-overview-piffid",
+        "https://en.wikipedia.org/wiki/Uppal_metro_station"
+      ]
+    },
+    "nagole": {
+      "name": "Nagole",
+      "zone": "Uppal, Habsiguda & Nacharam",
+      "type": "residential",
+      "about": "<p>Nagole sits on the Inner Ring Road in Uppal mandal, between Uppal to the north and LB Nagar to the south. It grew in the early 1990s as a housing area for middle-class families, and values rose again in the late 2000s once the metro was announced and infrastructure around it grew.</p><p>Nagole station is the eastern terminus of the Metro Blue Line, which opened to Ameerpet in November 2017 and now runs through Begumpet and HITEC City to Raidurg. That makes Nagole one of the easier eastern localities for a tutor to reach from the west of the city, with a short auto ride from the station into the colonies. Homes are a mix of apartment buildings and independent houses, so arrangements vary: society gates will ask for the tutor's name, while independent houses are doorstep visits. The Inner Ring Road near the station is busy at office hours, so plan evening sessions to begin once that traffic eases. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Nagole",
+        "https://en.wikipedia.org/wiki/Nagole_metro_station",
+        "https://www.nobroker.in/locality-iq/nagole-hyderabad-liqlt"
+      ]
+    },
+    "dilsukhnagar": {
+      "name": "Dilsukhnagar",
+      "zone": "Dilsukhnagar, LB Nagar & Vanasthalipuram",
+      "type": "mixed",
+      "about": "<p>Dilsukhnagar began as a residential suburb on farmland and has become one of the main commercial hubs of east Hyderabad, with the large fruit market at Kothapet next door and a city bus depot in the area. Malakpet lies to the west, Kothapet and Chaitanyapuri to the east, and Saroornagar to the south. Multi-storey apartment buildings and independent houses both form a large part of the housing, with shops lining the main road.</p><p>Dilsukhnagar station on the Metro Red Line, which opened on 24 September 2018, links the area to Malakpet, the city centre and on to Miyapur, and the next stops, Chaitanyapuri and LB Nagar, also serve its eastern side. Tutors coming by metro can usually walk or take a short auto ride to the lane. Dilsukhnagar Main Road is very busy, so parents often choose early-evening or weekend slots that avoid the peak. Apartment buildings may keep a visitor book at the gate; houses are straightforward doorstep visits. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dilsukhnagar",
+        "https://en.wikipedia.org/wiki/Dilsukhnagar_metro_station",
+        "https://www.99acres.com/dilsukh-nagar-hyderabad-overview-piffid"
+      ]
+    },
+    "lb-nagar": {
+      "name": "LB Nagar",
+      "zone": "Dilsukhnagar, LB Nagar & Vanasthalipuram",
+      "type": "mixed",
+      "about": "<p>LB Nagar (Lal Bahadur Nagar) is a commercial and residential hub in the south-east, grouped around the busy LB Nagar crossroads on the Vijayawada highway, with the Inner Ring Road also passing through. Around it are Karmanghat, Lingojiguda, Vanasthalipuram, Hayathnagar, Dilsukhnagar and parts of Saroornagar and Gaddiannaram. Apartments are the most common homes today, but many older independent houses remain in the colonies.</p><p>LB Nagar station is the southern terminus of the Metro Red Line, which opened from Ameerpet to LB Nagar on 24 September 2018 and runs through Malakpet and the city centre to Miyapur. Victoria Memorial station, one stop earlier, serves the same locality. For families, this means a tutor from Ameerpet, Kukatpally or the old city can come by metro and finish by auto or on foot. Traffic at the crossroads is heavy at office hours, so fix sessions after the evening rush. In apartment buildings, register the tutor with security; in independent houses the tutor can come straight to the door. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/L._B._Nagar",
+        "https://en.wikipedia.org/wiki/Red_Line_(Hyderabad_Metro)",
+        "https://en.wikipedia.org/wiki/Victoria_Memorial_metro_station",
+        "https://www.99acres.com/lb-nagar-hyderabad-overview-piffid"
+      ]
+    },
+    "kothapet": {
+      "name": "Kothapet",
+      "zone": "Dilsukhnagar, LB Nagar & Vanasthalipuram",
+      "type": "mixed",
+      "about": "<p>Kothapet is a commercial and residential suburb along a strip of the Vijayawada highway, between Dilsukhnagar and LB Nagar, with Chaitanyapuri as its most familiar sub-area. It is home to one of the largest fruit markets in Telangana, which brings heavy market traffic to the main road.</p><p>The residential lanes behind the highway hold apartment buildings and many independent houses, including plenty of family homes around Chaitanyapuri. Chaitanyapuri station on the Metro Red Line, opened on 24 September 2018, is the local stop, with Dilsukhnagar and Victoria Memorial stations on either side, so a tutor can reach most lanes by metro and a short walk or auto. The highway near the market is busy for much of the day and again at office closing time, so evening sessions are easier if they start after the peak. Houses here are simple doorstep visits; apartment buildings may ask the tutor to sign in. For advanced or board-specific subjects, parents here also mix a home tutor with online classes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kothapet,_Hyderabad",
+        "https://en.wikipedia.org/wiki/Chaitanyapuri_metro_station",
+        "https://www.99acres.com/kothapet-hyderabad-overview-piffid"
+      ]
+    },
+    "vanasthalipuram": {
+      "name": "Vanasthalipuram",
+      "zone": "Dilsukhnagar, LB Nagar & Vanasthalipuram",
+      "type": "residential",
+      "about": "<p>Vanasthalipuram is a residential neighbourhood on the Vijayawada highway beyond LB Nagar, in Hayathnagar mandal, with Hayathnagar and Mansoorabad as neighbours. Its name comes from its past as forest land and a hunting ground, and a deer park on its edge still keeps a green patch. The area is often called a retirees' paradise, though real estate growth linked to IT jobs at nearby Adibatla has brought newer residents too.</p><p>Many homes here are independent houses on plotted colonies, including a HUDA-approved colony, with apartment buildings on newer plots. The nearest metro is LB Nagar at the end of the Red Line; tutors coming from the city usually ride the metro to LB Nagar and take an auto along the highway into the colony. The highway is busy at office hours, so plan a regular slot around those times. Most visits are doorstep visits to independent houses; apartment buildings may ask for the tutor's name at the gate. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vanasthalipuram",
+        "https://www.squareyards.com/vanasthalipuram-in-hyderabad-overview-1147",
+        "https://www.nobroker.in/properties-for-sale-in-huda-sai-nagar-colony-vanasthalipuram-hyderabad"
+      ]
+    },
+    "saroornagar": {
+      "name": "Saroornagar",
+      "zone": "Dilsukhnagar, LB Nagar & Vanasthalipuram",
+      "type": "residential",
+      "about": "<p>Saroornagar lies south of Dilsukhnagar and west of LB Nagar, and its municipal wards include Rama Krishna Puram, Kothapet, Chaitanyapuri and Gaddiannaram. The area grew around the Saroornagar Lake, a Qutb Shahi-era tank from the late sixteenth century that is still its main landmark.</p><p>Homes are a mix of independent houses, builder floors and apartment buildings, and many families live in their own houses on colony roads. There is no metro station inside Saroornagar, but Dilsukhnagar, Chaitanyapuri, Victoria Memorial and LB Nagar stations on the Red Line are close to its edges, so tutors typically combine the metro with a short auto ride. The main roads towards Dilsukhnagar and LB Nagar are heavy at office hours, which favours late-afternoon or later evening slots. Independent houses and builder floors mean the tutor usually comes straight to the family's door. For subjects with few local teachers, online tuition is a sensible option. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Saroornagar",
+        "https://www.nobroker.in/locality-iq/saroornagar-hyderabad-liqlt",
+        "https://en.wikipedia.org/wiki/Victoria_Memorial_metro_station"
+      ]
+    },
+    "malakpet": {
+      "name": "Malakpet",
+      "zone": "Dilsukhnagar, LB Nagar & Vanasthalipuram",
+      "type": "mixed",
+      "about": "<p>Malakpet is an old, established part of Hyderabad on the eastern side of the old city, bordered by Amberpet and Musarambagh to the north, Dilsukhnagar to the east, Chaderghat to the west and Saidabad to the south. The Hyderabad race course has been here since 1886, and the Nalgonda X Roads junction is its main commercial point. The locality divides into Old Malakpet and New Malakpet.</p><p>Housing is a dense mix of older independent houses, builder floors and apartment buildings, many of them long-standing family homes. Malakpet station on the Metro Red Line, opened on 24 September 2018, serves the area, and a suburban MMTS station adds a second rail link. Traffic at Nalgonda X Roads is heavy through the day, so a tutor coming by metro and walking the last stretch is often more reliable than one driving. Houses and builder floors are usually doorstep visits. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Malakpet",
+        "https://en.wikipedia.org/wiki/Malakpet_metro_station",
+        "https://www.nobroker.in/locality-iq/malakpet-hyderabad-liqlt"
+      ]
+    },
+    "mehdipatnam": {
+      "name": "Mehdipatnam",
+      "zone": "Mehdipatnam, Tolichowki & Attapur",
+      "type": "mixed",
+      "about": "<p>Mehdipatnam is a busy junction area in the west of the city, north of the Musi river near Asif Nagar, with colonies such as Humayun Nagar, Laxminagar, Murad Nagar and Rethibowli around it and Attapur and Tolichowki close by. An army base, a large bus depot and a well-known jewellery and shopping market give it a strongly commercial core, with residential colonies spreading out behind.</p><p>Homes range from independent houses of two or three floors in Rethibowli and nearby lanes to apartment buildings on the main roads. The bus depot makes Mehdipatnam a hub for buses to Secunderabad, Uppal, Gachibowli and many other parts of the city, and the elevated expressway to the airport begins here. The nearest suburban rail stations are at Lakdikapool and Nampally. The Mehdipatnam junction is heavy at office hours, so weekday sessions are smoother if they start after the evening rush. In independent houses the tutor comes to the door; apartment buildings may keep a visitor register. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mehdipatnam",
+        "https://en.wikipedia.org/wiki/P._V._Narasimha_Rao_Expressway",
+        "https://www.nobroker.in/locality-iq/rethibowli-mehdipatnam-hyderabad-liqlt"
+      ]
+    },
+    "tolichowki": {
+      "name": "Tolichowki",
+      "zone": "Mehdipatnam, Tolichowki & Attapur",
+      "type": "residential",
+      "about": "<p>Tolichowki lies west of Mehdipatnam on the road towards Gachibowli, with Film Nagar to the north and Golconda Fort and the Qutb Shahi tombs nearby. Its closeness to Gachibowli, Madhapur, Manikonda and Kondapur has made it a popular home for families working in IT, and it is known for its restaurants, including a cluster of Arab cuisine.</p><p>Housing is mostly apartment buildings, many with ready-to-move 3 BHK flats, and neighbouring colonies include Nizam Colony, Janaki Nagar Colony and Al Hasnath Colony. Buses link Tolichowki with Mehdipatnam, Abids, Koti and HITEC City, and a long flyover now carries traffic from Tolichowki towards Shaikpet and the IT district. The Tolichowki crossroads still gets crowded at office hours, so tutors coming from Mehdipatnam or Gachibowli do better with slots set after the evening peak. Apartment buildings usually ask for a visitor entry at the gate, so share the tutor's name and timing in advance. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tolichowki",
+        "https://www.99acres.com/tolichowki-hyderabad-overview-piffid",
+        "https://www.thenewsminute.com/telangana/hyderabad-s-new-shaikpet-flyover-inaugurated-ktr-union-tourism-min-159380"
+      ]
+    },
+    "attapur": {
+      "name": "Attapur",
+      "zone": "Mehdipatnam, Tolichowki & Attapur",
+      "type": "mixed",
+      "about": "<p>Attapur is a commercial and residential area in south-west Hyderabad, next to Mehdipatnam and Rajendranagar. The elevated expressway to the airport runs through it, and many addresses here are given by the pillar number of the expressway above the road. Older landmarks include the Mushk Mahal of 1681 and the Rambagh temple.</p><p>Apartment buildings are the most common homes, with independent houses and a few villa communities on the side roads. Tutors usually come by bus or two-wheeler from Mehdipatnam, or by road from Gachibowli and the Outer Ring Road side. The road under the expressway is busy at office hours, which makes a later evening slot easier. For an apartment visit, give the tutor's name and flat number to security beforehand; independent houses are simple doorstep visits. Families who want a specialist subject tutor from further away often choose online classes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Attapur",
+        "https://en.wikipedia.org/wiki/P._V._Narasimha_Rao_Expressway",
+        "https://www.99acres.com/attapur-gudimalkapur-hyderabad-overview-piffid",
+        "https://www.squareyards.com/attapur-in-hyderabad-overview-1144"
+      ]
+    },
+    "rajendranagar": {
+      "name": "Rajendranagar",
+      "zone": "Mehdipatnam, Tolichowki & Attapur",
+      "type": "mixed",
+      "about": "<p>Rajendranagar is a large mandal in south-west Hyderabad, much of it taken up by the campuses of agricultural, veterinary and horticultural universities and a national rural development institute. The residential parts that matter for home tuition are colonies such as Budwel, Kismatpur, Bandlaguda and Sikanderguda, which have grown quickly in recent years, with Attapur to the north.</p><p>Homes here are a mix of independent houses, apartment buildings and builder floors, plus newer high-rise and villa communities on larger plots. Most tutors travel by two-wheeler or bus via Attapur and Mehdipatnam or by the Outer Ring Road from the west. Because distances between colonies are wide, it helps to share an exact pin location and the nearest landmark with the tutor. Gated communities will ask for the tutor's name at the gate, while plotted colonies are doorstep visits. Where a specialist subject tutor cannot travel this far, online classes are a practical option. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rajendranagar",
+        "https://www.squareyards.com/sale/property-for-sale-in-rajendra-nagar-hyderabad",
+        "https://www.squareyards.com/sale/independent-houses-for-sale-in-rajendra-nagar-hyderabad"
+      ]
+    }
+  },
+  "zone_facts": {
+    "Gachibowli, Kondapur & Madhapur": [
+      {
+        "fact": "HITEC City, the IT business district centred on Madhapur, was inaugurated on 22 November 1998.",
+        "source": "https://en.wikipedia.org/wiki/HITEC_City"
+      },
+      {
+        "fact": "The Blue Line section from Ameerpet to HITEC City opened on 20 March 2019.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Hyderabad_Metro)"
+      },
+      {
+        "fact": "The final Blue Line section from HITEC City to Raidurg opened on 29 November 2019; Raidurg is the line's western terminus.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Hyderabad_Metro)"
+      },
+      {
+        "fact": "Blue Line stations in the area include Jubilee Hills Check Post, Peddamma Gudi, Madhapur, Durgam Cheruvu, HITEC City and Raidurg.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Hyderabad_Metro)"
+      },
+      {
+        "fact": "The MMTS suburban rail line to Lingampalli has stations at Hi-Tech City and Hafizpet; the first MMTS phase was inaugurated on 9 August 2003.",
+        "source": "https://en.wikipedia.org/wiki/Hyderabad_MMTS"
+      },
+      {
+        "fact": "The Outer Ring Road has interchanges at Gachibowli and Nanakramguda.",
+        "source": "https://en.wikipedia.org/wiki/Outer_Ring_Road,_Hyderabad"
+      },
+      {
+        "fact": "The old Mumbai Highway is the main road connecting Gachibowli to the rest of Hyderabad.",
+        "source": "https://www.nobroker.in/locality-iq/gachibowli-hyderabad-liqlt"
+      },
+      {
+        "fact": "A four-lane bidirectional flyover from Shilpa Layout at Gachibowli was inaugurated on 25 November 2022.",
+        "source": "https://en.wikipedia.org/wiki/Gachibowli"
+      }
+    ],
+    "Kukatpally, Miyapur & Nizampet": [
+      {
+        "fact": "The Red Line section from Miyapur to Ameerpet, with 11 stations, opened to the public on 29 November 2017.",
+        "source": "https://en.wikipedia.org/wiki/Red_Line_(Hyderabad_Metro)"
+      },
+      {
+        "fact": "Red Line stations in the area are Miyapur, JNTU College, KPHB Colony, Kukatpally, Balanagar and Moosapet.",
+        "source": "https://en.wikipedia.org/wiki/Red_Line_(Hyderabad_Metro)"
+      },
+      {
+        "fact": "The Red Line runs between Miyapur and LB Nagar; the Ameerpet to LB Nagar section opened on 24 September 2018.",
+        "source": "https://en.wikipedia.org/wiki/Red_Line_(Hyderabad_Metro)"
+      },
+      {
+        "fact": "Miyapur station is the Red Line's terminus, with the Miyapur metro depot beside it.",
+        "source": "https://en.wikipedia.org/wiki/Miyapur"
+      },
+      {
+        "fact": "National Highway 65, the Mumbai highway, passes through Kukatpally and Miyapur.",
+        "source": "https://en.wikipedia.org/wiki/Kukatpally"
+      },
+      {
+        "fact": "A flyover at Bachupally carries traffic on the corridor between Miyapur X roads and Gandimaisamma.",
+        "source": "https://en.wikipedia.org/wiki/Bachupally"
+      },
+      {
+        "fact": "Kukatpally and Nizampet are in Medchal-Malkajgiri district; Nizampet is in Bachupally mandal.",
+        "source": "https://en.wikipedia.org/wiki/Nizampet"
+      }
+    ],
+    "Manikonda, Narsingi & Kokapet": [
+      {
+        "fact": "The Outer Ring Road is an eight-lane expressway built from 2006, with sections opened in phases between November 2008 and July 2016.",
+        "source": "https://en.wikipedia.org/wiki/Outer_Ring_Road,_Hyderabad"
+      },
+      {
+        "fact": "The Outer Ring Road has interchanges at Narsingi and Kokapet.",
+        "source": "https://en.wikipedia.org/wiki/Outer_Ring_Road,_Hyderabad"
+      },
+      {
+        "fact": "Narsingi is the headquarters of Gandipet mandal in Ranga Reddy district, and Kokapet lies in the same mandal.",
+        "source": "https://en.wikipedia.org/wiki/Narsingi,_Ranga_Reddy"
+      },
+      {
+        "fact": "The Neopolis layout at Kokapet was developed by the Hyderabad Metropolitan Development Authority and sold through e-auctions.",
+        "source": "https://www.deccanchronicle.com/nation/current-affairs/030823/neopolis-layout-record-e-auction-earnings.html"
+      },
+      {
+        "fact": "Manikonda is made up of two revenue villages, Manikonda and Puppalaguda, and its closest metro station is Raidurg.",
+        "source": "https://en.wikipedia.org/wiki/Manikonda"
+      },
+      {
+        "fact": "Raidurg station, the western end of the Blue Line, opened on 29 November 2019.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Hyderabad_Metro)"
+      },
+      {
+        "fact": "The Khajaguda rock formation is an outcrop of ancient gneissic granite, popular for hiking and bouldering.",
+        "source": "https://en.wikipedia.org/wiki/Khajaguda"
+      }
+    ],
+    "Chandanagar, Lingampally & Tellapur": [
+      {
+        "fact": "Lingampalli railway station is the terminus of the Hyderabad MMTS and also an origin for long-distance trains.",
+        "source": "https://en.wikipedia.org/wiki/Serilingampally"
+      },
+      {
+        "fact": "The MMTS line to Lingampalli has stations at Borabanda, Hi-Tech City, Hafizpet, Chandanagar and Lingampalli.",
+        "source": "https://en.wikipedia.org/wiki/Hyderabad_MMTS"
+      },
+      {
+        "fact": "The first phase of the MMTS suburban rail was inaugurated on 9 August 2003.",
+        "source": "https://en.wikipedia.org/wiki/Hyderabad_MMTS"
+      },
+      {
+        "fact": "The Mumbai Highway (NH 65) through Chandanagar has been widened to six lanes.",
+        "source": "https://en.wikipedia.org/wiki/Chandanagar"
+      },
+      {
+        "fact": "Serilingampally is the headquarters of Serilingampally mandal in Ranga Reddy district.",
+        "source": "https://en.wikipedia.org/wiki/Serilingampally"
+      },
+      {
+        "fact": "Tellapur is in Ramachandrapuram mandal of Sangareddy district, within the Hyderabad Metropolitan Region.",
+        "source": "https://en.wikipedia.org/wiki/Tellapur"
+      }
+    ],
+    "Banjara Hills, Jubilee Hills & Somajiguda": [
+      {
+        "fact": "The Blue Line section from Ameerpet towards HITEC City opened on 20 March 2019, including Road No. 5 Jubilee Hills and Yusufguda stations.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Hyderabad_Metro)"
+      },
+      {
+        "fact": "Jubilee Hills Check Post metro station on the Blue Line opened on 18 May 2019 and is the highest metro station in Hyderabad; it serves Film Nagar and parts of Jubilee Hills and Banjara Hills.",
+        "source": "https://en.wikipedia.org/wiki/Jubilee_Hills_Check_Post_metro_station"
+      },
+      {
+        "fact": "Punjagutta metro station on the Red Line opened on 24 September 2018 with the Ameerpet–LB Nagar section.",
+        "source": "https://en.wikipedia.org/wiki/Punjagutta_metro_station"
+      },
+      {
+        "fact": "The idea of Jubilee Hills was first proposed in 1963, and Road Nos. 36 and 37 form its commercial spine.",
+        "source": "https://en.wikipedia.org/wiki/Jubilee_Hills"
+      },
+      {
+        "fact": "Banjara Hills is laid out on numbered roads from Road No. 1 to Road No. 14, with major businesses concentrated on Roads 1 and 3.",
+        "source": "https://en.wikipedia.org/wiki/Banjara_Hills"
+      },
+      {
+        "fact": "Necklace Road MMTS station serves Somajiguda and the Raj Bhavan area.",
+        "source": "https://en.wikipedia.org/wiki/Necklace_Road_railway_station"
+      }
+    ],
+    "Ameerpet, Begumpet & Punjagutta": [
+      {
+        "fact": "The Red Line opened from Miyapur to Ameerpet on 29 November 2017 and from Ameerpet to LB Nagar on 24 September 2018.",
+        "source": "https://en.wikipedia.org/wiki/Red_Line_(Hyderabad_Metro)"
+      },
+      {
+        "fact": "Ameerpet metro station is the interchange between the Red Line and the Blue Line.",
+        "source": "https://en.wikipedia.org/wiki/Red_Line_(Hyderabad_Metro)"
+      },
+      {
+        "fact": "The Blue Line opened from Nagole to Ameerpet on 29 November 2017, with stations including Rasoolpura, Prakash Nagar and Begumpet.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Hyderabad_Metro)"
+      },
+      {
+        "fact": "Begumpet railway station is on the MMTS Hyderabad–Lingampalli and Falaknuma–Lingampalli routes and connects with the adjacent Begumpet metro station on the Blue Line.",
+        "source": "https://en.wikipedia.org/wiki/Begumpet_railway_station"
+      },
+      {
+        "fact": "Begumpet Airport no longer handles regular commercial flights but remains in use for training and charter flights.",
+        "source": "https://en.wikipedia.org/wiki/Begumpet"
+      },
+      {
+        "fact": "Twin flyovers carry traffic across the Punjagutta junction.",
+        "source": "https://en.wikipedia.org/wiki/Panjagutta"
+      }
+    ],
+    "Khairatabad, Himayatnagar & Abids": [
+      {
+        "fact": "Khairatabad railway station is on the MMTS Secunderabad–Falaknuma and Hyderabad–Lingampalli routes and connects with Khairatabad metro station on the Red Line.",
+        "source": "https://en.wikipedia.org/wiki/Khairatabad_railway_station"
+      },
+      {
+        "fact": "The Green Line opened from Parade Ground to MG Bus Station on 8 February 2020, with stations including RTC X Roads, Chikkadpally, Narayanguda and Sultan Bazaar.",
+        "source": "https://en.wikipedia.org/wiki/Green_Line_(Hyderabad_Metro)"
+      },
+      {
+        "fact": "Assembly metro station on the Red Line opened on 24 September 2018, near the Public Gardens and Nampally railway station.",
+        "source": "https://en.wikipedia.org/wiki/Assembly_metro_station"
+      },
+      {
+        "fact": "Tank Bund Road runs along the dam on the eastern side of Hussain Sagar and connects Hyderabad and Secunderabad.",
+        "source": "https://en.wikipedia.org/wiki/Tank_Bund_Road"
+      },
+      {
+        "fact": "Necklace Road runs along Hussain Sagar, forming a loop with Tank Bund Road, and has its own MMTS station.",
+        "source": "https://en.wikipedia.org/wiki/Necklace_Road"
+      },
+      {
+        "fact": "Abids Road is an arterial road connecting the old and new parts of the city.",
+        "source": "https://en.wikipedia.org/wiki/Abids"
+      }
+    ],
+    "Secunderabad, Marredpally & Tarnaka": [
+      {
+        "fact": "Secunderabad was established in 1806 as a British cantonment and is separated from Hyderabad by Hussain Sagar.",
+        "source": "https://en.wikipedia.org/wiki/Secunderabad"
+      },
+      {
+        "fact": "Secunderabad merged with Hyderabad to form a single municipal corporation in 1960.",
+        "source": "https://en.wikipedia.org/wiki/Secunderabad"
+      },
+      {
+        "fact": "Secunderabad Junction is the zonal headquarters of the South Central Railway and the main hub of the MMTS network, with Secunderabad East (Blue Line) and Secunderabad West (Green Line) metro stations.",
+        "source": "https://en.wikipedia.org/wiki/Secunderabad_Junction_railway_station"
+      },
+      {
+        "fact": "Parade Ground metro station is the interchange between the Blue Line and the Green Line and connects to the Jubilee Bus Station.",
+        "source": "https://en.wikipedia.org/wiki/Parade_Ground_metro_station"
+      },
+      {
+        "fact": "Tarnaka metro station on the Blue Line opened with the Nagole–Ameerpet section in November 2017.",
+        "source": "https://en.wikipedia.org/wiki/Tarnaka_metro_station"
+      },
+      {
+        "fact": "Malkajgiri Junction railway station is on the MMTS Secunderabad–Bolarum route.",
+        "source": "https://en.wikipedia.org/wiki/Malkajgiri_Junction_railway_station"
+      }
+    ],
+    "Sainikpuri, Alwal & Trimulgherry": [
+      {
+        "fact": "Alwal railway station is on the MMTS Secunderabad–Bolarum route, between Cavalry Barracks and Bolarum Bazar.",
+        "source": "https://en.wikipedia.org/wiki/Alwal_railway_station"
+      },
+      {
+        "fact": "Ammuguda railway station on the Secunderabad–Bolarum route serves Ammuguda, Neredmet and Ramakrishnapuram.",
+        "source": "https://en.wikipedia.org/wiki/Ammuguda_railway_station"
+      },
+      {
+        "fact": "MMTS Phase II services between Secunderabad, Bolarum and Medchal were inaugurated on 8 April 2023.",
+        "source": "https://en.wikipedia.org/wiki/Hyderabad_Multi-Modal_Transport_System"
+      },
+      {
+        "fact": "Sainikpuri began as a co-operative housing society for retired army personnel, and Kapra Lake lies on its eastern boundary.",
+        "source": "https://en.wikipedia.org/wiki/Sainikpuri"
+      },
+      {
+        "fact": "Trimulgherry grew around a military cantonment base established in 1857 and falls under the Secunderabad Cantonment Board.",
+        "source": "https://en.wikipedia.org/wiki/Trimulgherry"
+      },
+      {
+        "fact": "Bowenpally's closest MMTS station is Fatehnagar.",
+        "source": "https://en.wikipedia.org/wiki/Bowenpally"
+      }
+    ],
+    "Uppal, Habsiguda & Nacharam": [
+      {
+        "fact": "The Metro Blue Line's first stage, Nagole to Ameerpet (14 stations), opened in November 2017; it was extended to HITEC City in March 2019 and to Raidurg in November 2019.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Hyderabad_Metro)"
+      },
+      {
+        "fact": "Blue Line stations in this zone, from the eastern end, are Nagole, Uppal, Stadium, NGRI and Habsiguda, with Tarnaka next.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Hyderabad_Metro)"
+      },
+      {
+        "fact": "Nagole station, on the Inner Ring Road, is the eastern terminus of the Blue Line and is near the metro's Uppal depot.",
+        "source": "https://en.wikipedia.org/wiki/Nagole_metro_station"
+      },
+      {
+        "fact": "Uppal is the headquarters of Uppal mandal in Medchal-Malkajgiri district; its GHMC circle covers Chilukanagar, Habsiguda, Ramanthapur and Uppal wards.",
+        "source": "https://en.wikipedia.org/wiki/Uppal,_Hyderabad"
+      },
+      {
+        "fact": "Nacharam's industrial development area houses small-scale units in fabrication, clothing, tyres, rubber and furniture.",
+        "source": "https://en.wikipedia.org/wiki/Nacharam"
+      },
+      {
+        "fact": "Boduppal lies between the Nacharam–Mallapur road and the Warangal highway; it became a municipality in 2016 and a municipal corporation on 23 July 2019.",
+        "source": "https://en.wikipedia.org/wiki/Boduppal"
+      }
+    ],
+    "Dilsukhnagar, LB Nagar & Vanasthalipuram": [
+      {
+        "fact": "The Metro Red Line opened from Miyapur to Ameerpet on 29 November 2017 and from Ameerpet to LB Nagar on 24 September 2018.",
+        "source": "https://en.wikipedia.org/wiki/Red_Line_(Hyderabad_Metro)"
+      },
+      {
+        "fact": "Red Line stations in this zone are Malakpet, New Market, Musarambagh, Dilsukhnagar, Chaitanyapuri, Victoria Memorial and LB Nagar, the southern terminus.",
+        "source": "https://en.wikipedia.org/wiki/Red_Line_(Hyderabad_Metro)"
+      },
+      {
+        "fact": "Victoria Memorial metro station is in LB Nagar, between Chaitanyapuri and LB Nagar stations.",
+        "source": "https://en.wikipedia.org/wiki/Victoria_Memorial_metro_station"
+      },
+      {
+        "fact": "The Kothapet fruit market was moved to the Dilsukhnagar area from Jambagh in 1980.",
+        "source": "https://en.wikipedia.org/wiki/Dilsukhnagar"
+      },
+      {
+        "fact": "Kothapet lies along a strip of NH65, the Hyderabad–Vijayawada highway, and is served by Chaitanyapuri metro station.",
+        "source": "https://en.wikipedia.org/wiki/Kothapet,_Hyderabad"
+      },
+      {
+        "fact": "Saroornagar Lake was built in the late sixteenth century during the Qutb Shahi era to irrigate farmland.",
+        "source": "https://en.wikipedia.org/wiki/Saroornagar"
+      },
+      {
+        "fact": "Malakpet has both a Red Line metro station and a suburban MMTS station; the Hyderabad race course moved to Malakpet in 1886.",
+        "source": "https://en.wikipedia.org/wiki/Malakpet"
+      }
+    ],
+    "Mehdipatnam, Tolichowki & Attapur": [
+      {
+        "fact": "The elevated expressway to the airport runs from Mehdipatnam to Aramghar, where it joins NH44; it opened to traffic on 19 October 2009.",
+        "source": "https://en.wikipedia.org/wiki/P._V._Narasimha_Rao_Expressway"
+      },
+      {
+        "fact": "The elevated expressway passes through Attapur.",
+        "source": "https://en.wikipedia.org/wiki/Attapur"
+      },
+      {
+        "fact": "Mehdipatnam has a major city bus depot with routes to Secunderabad, Uppal, Gachibowli and other parts of the city; the nearest MMTS stations are Nampally and Lakdikapool.",
+        "source": "https://en.wikipedia.org/wiki/Mehdipatnam"
+      },
+      {
+        "fact": "A six-lane flyover takes off at Tolichowki and runs through OU Colony and Shaikpet, easing the Mehdipatnam–Tolichowki–Gachibowli corridor.",
+        "source": "https://www.thenewsminute.com/telangana/hyderabad-s-new-shaikpet-flyover-inaugurated-ktr-union-tourism-min-159380"
+      },
+      {
+        "fact": "The Outer Ring Road, an eight-lane ring expressway completed in 2018, has interchanges at Narsingi and Shamshabad on this side of the city.",
+        "source": "https://en.wikipedia.org/wiki/Outer_Ring_Road,_Hyderabad"
+      },
+      {
+        "fact": "Rajendranagar mandal hosts the state agricultural, veterinary and horticultural universities and the National Institute of Rural Development; Budwel and Kismatpur are among its growing residential areas.",
+        "source": "https://en.wikipedia.org/wiki/Rajendranagar"
+      }
+    ]
+  }
+}

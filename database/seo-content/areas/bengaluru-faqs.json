@@ -1,0 +1,830 @@
+{
+  "koramangala": [
+    [
+      "Which road splits Koramangala's eight blocks into two halves?",
+      "The Inner Ring Road. Blocks 1 to 4 lie on one side and blocks 5 to 8 on the other, so tell the tutor your block number when you book. A tutor already living on your side of the Inner Ring Road avoids crossing the busiest junctions at peak hours."
+    ],
+    [
+      "Will a tutor need to sign in at the gate for a Koramangala home?",
+      "It depends on the home. Bungalows and independent houses on the quieter cross roads get a direct doorstep visit, while apartment buildings usually ask for the tutor's name at the gate. Share the block, cross road and building name before the demo so the first visit starts on time."
+    ],
+    [
+      "Where do Koramangala tutors usually travel in from, and when is the easiest slot?",
+      "From HSR Layout, Madiwala, Adugodi, Vivek Nagar and Domlur, mostly by road. Evening traffic on Hosur Road and the main junctions builds heavily, so an early-evening slot or a weekend morning keeps classes regular. Central Silk Board station on the Yellow Line helps tutors who prefer to come in by metro."
+    ],
+    [
+      "How many tutor options does NXTutors send for a Koramangala request?",
+      "Two or three. NXTutors matches each Koramangala request with two or three tutors, listing those closest to your block first, then others in the Koramangala, HSR & Bellandur zone, then the rest of Bengaluru, and finally online tutors. You compare them before booking any free demo."
+    ]
+  ],
+  "hsr-layout": [
+    [
+      "How many sectors does HSR Layout have, and how are its roads arranged?",
+      "Seven sectors, laid out on a grid by the Bangalore Development Authority from 1985. Main roads run north to south and cross roads east to west, so a sector number plus the main and cross road numbers is enough for a tutor to find your house quickly."
+    ],
+    [
+      "Which metro station is closest to HSR Layout right now?",
+      "Central Silk Board on the Yellow Line, open since August 2025, which serves the HSR side of the junction. An HSR Layout station on the Blue Line is under construction along the Outer Ring Road and is not open yet, so tutors finish the trip into the sectors by auto."
+    ],
+    [
+      "Do HSR Layout families need to register a tutor with apartment security?",
+      "Only in apartment communities. Independent houses, builder floors and plotted homes allow a direct doorstep visit, but apartment blocks ask for gate registration. Silk Board junction is busy at office hours, so choose a slot outside them and keep it the same each week to make entry routine."
+    ],
+    [
+      "Is the first class with an HSR Layout tutor free on NXTutors?",
+      "Yes, the first class is a free demo. NXTutors suggests two or three tutors for HSR Layout, and you can try a demo with each before paying anyone. If the tutor you pick stops suiting your child later, switching to another is also free."
+    ]
+  ],
+  "bellandur": [
+    [
+      "How do tutors travel to Bellandur while the metro is not open?",
+      "By road. The Blue Line along the Outer Ring Road is under construction and no section is open, so tutors reach Bellandur by road from HSR Layout, Sarjapur Road or Marathahalli. Choosing a tutor from one of these nearby areas keeps weekday travel short and predictable."
+    ],
+    [
+      "What should Bellandur parents share with the gate before a tutor's first visit?",
+      "The tutor's name, plus your tower and flat number. Most Bellandur homes are in gated apartment communities with visitor registration, so sending these details in advance means the tutor is waved through quickly. Keeping the same weekly slot also helps security recognise the tutor."
+    ],
+    [
+      "Which hours suit home classes near the Outer Ring Road in Bellandur?",
+      "After the evening peak or at the weekend. Office traffic on the Outer Ring Road is heavy in the morning and from early evening, so a later evening slot or a weekend class is easier to keep. Online classes also help when a specialist subject needs a tutor from farther away."
+    ],
+    [
+      "What do Bellandur home tutors charge through NXTutors?",
+      "Across NXTutors, most home-tuition sessions fall between ₹800 and ₹2,500 an hour; Classes 11–12, IB/IGCSE and JEE/NEET sit toward the upper end; specialists for IB HL or JEE Advanced can charge more. Every tutor sets their own rate, and NXTutors shows it to you before the free demo class."
+    ]
+  ],
+  "sarjapur-road": [
+    [
+      "Which localities count as part of the Sarjapur Road belt?",
+      "Kasavanahalli, Carmelaram, Chikkabellandur and Doddakannelli are among them. The road runs south-east from the Agara, Ibbaluru and Bellandur junction on the Outer Ring Road towards Dommasandra and Sarjapura, so name your exact locality when booking a tutor, as travel differs a lot along the corridor."
+    ],
+    [
+      "Can a tutor come by metro to a home on Sarjapur Road?",
+      "No, there is no metro line on Sarjapur Road yet. Tutors come by road from HSR Layout, Bellandur or Koramangala, usually by bus, cab or two-wheeler, so a tutor based in one of those areas is the practical choice for weekly home classes."
+    ],
+    [
+      "How can Sarjapur Road families make gate entry easy for a regular tutor?",
+      "Pre-register the tutor with the society gate and keep one fixed weekly slot. Nearly every home on the corridor is inside a gated community, villa township or high-rise tower, and a repeated time lets security recognise the visitor without fresh calls each week."
+    ],
+    [
+      "Can I change tutors later if the Sarjapur Road match does not work out?",
+      "Yes, and it costs nothing. NXTutors lets families switch tutors free of charge at any point, and a replacement is drawn from the same order: tutors near the corridor first, then elsewhere in Bengaluru, then online. Each new tutor still starts with a free demo."
+    ]
+  ],
+  "jayanagar": [
+    [
+      "Which metro stations serve Jayanagar?",
+      "South End Circle and Jayanagar on the Green Line, both open since June 2017. Rashtreeya Vidyalaya Road station, also nearby, links the Green Line with the Yellow Line towards BTM Layout and Hosur Road, which helps tutors coming in from the south-east."
+    ],
+    [
+      "Does a Jayanagar tutor ring the doorbell or check in at a gate?",
+      "Usually the doorbell. Much of Jayanagar is independent houses on tree-lined streets, with low-rise apartments added over time, so most tutors walk straight to the door. Only the newer apartment buildings may keep a visitor book at the entrance for the first visit."
+    ],
+    [
+      "Is it better for a tutor to drive or take the metro to Jayanagar 4th Block?",
+      "The metro is often simpler. Parking near the 4th Block shops is tight in the evening, so a tutor using the Green Line plus a short auto ride arrives more predictably. Tutors from Basavanagudi, JP Nagar, Banashankari, Wilson Garden and BTM Layout are all close by."
+    ],
+    [
+      "Does NXTutors show the tutor's fee before a Jayanagar demo?",
+      "Yes. Every tutor NXTutors suggests for Jayanagar lists their own hourly fee, and you see it before agreeing to the demo. The demo itself is free, so you can compare two or three tutors on teaching and cost together before committing."
+    ]
+  ],
+  "basavanagudi": [
+    [
+      "Which metro stations can tutors use to reach Basavanagudi?",
+      "Lalbagh and South End Circle on the Green Line, open since June 2017, are both close to Basavanagudi. From either, a tutor can walk or take a short auto ride to your house, which is usually quicker than driving through the market streets in the evening."
+    ],
+    [
+      "Are most Basavanagudi homes independent houses, and what does that mean for a tutor?",
+      "Yes, many are older independent houses with gardens, some of them heritage homes, alongside low-rise apartment buildings. For a tutor that means a direct doorstep visit in most cases, though street parking near the busy market street is limited in the evening, so coming by metro is easier."
+    ],
+    [
+      "Which landmarks help a new tutor find a home in Basavanagudi?",
+      "The Bull Temple and Bugle Rock park are the familiar ones, and Lalbagh lies right beside the locality. Mentioning the nearest of these with your cross road helps a first-time tutor. Families here often keep a steady weekly slot, adding online classes for specialist subjects."
+    ],
+    [
+      "Which tutors does NXTutors list first for a Basavanagudi request?",
+      "Those living closest to Basavanagudi come first. After them, NXTutors adds tutors from the wider Jayanagar, JP Nagar & Banashankari zone, then the rest of Bengaluru, then online tutors, keeping the shortlist to two or three names you can each try in a free demo."
+    ]
+  ],
+  "jp-nagar": [
+    [
+      "Why should JP Nagar parents give their phase number when booking a tutor?",
+      "Because the phases are spread out. The early phases lie inside the Outer Ring Road, the middle ones stretch towards Puttenahalli and Arekere, and the later ones reach Gottigere and Anjanapura, so the phase and cross road decide which tutors can reach you easily."
+    ],
+    [
+      "Which metro station is inside JP Nagar?",
+      "Jaya Prakash Nagar on the Green Line, open since June 2017. Banashankari and Rashtreeya Vidyalaya Road stations are also nearby, the latter linking to the Yellow Line, so tutors from BTM Layout or Jayanagar can reach the inner phases by metro and a short auto ride."
+    ],
+    [
+      "Do JP Nagar tutors need gate passes?",
+      "Only for apartment complexes. Independent houses and villas usually allow a doorstep visit, while apartment complexes need gate entry arranged in advance. For the outer phases, where travel is longer, many families combine a nearby home tutor with online classes for some subjects."
+    ],
+    [
+      "How much does a home tutor in JP Nagar cost on NXTutors?",
+      "Across NXTutors, most home-tuition sessions fall between ₹800 and ₹2,500 an hour; Classes 11–12, IB/IGCSE and JEE/NEET sit toward the upper end; specialists for IB HL or JEE Advanced can charge more. The exact figure depends on the tutor, and it is shown on each profile before the free first class."
+    ]
+  ],
+  "banashankari": [
+    [
+      "How are Banashankari's six stages split?",
+      "Stages 1 to 3 lie inside the Outer Ring Road, and stages 4 to 6 extend into south-west Bengaluru. The locality stretches from Mysore Road to Kanakapura Road, so the stage number matters when choosing a tutor who can reach you regularly."
+    ],
+    [
+      "Is there a metro station at Banashankari?",
+      "Yes, Banashankari station on the Green Line, open since June 2017, plus a large bus station. A tutor visiting the inner stages can come by metro and walk or take an auto, while the outer stages are easier to reach by road."
+    ],
+    [
+      "Which neighbouring areas can tutors come from for a Banashankari home?",
+      "Basavanagudi and Hanumanthanagar to the north, Jayanagar and JP Nagar to the east, and Uttarahalli to the south. Most homes are independent houses, so the tutor reaches your door directly. Families in the farther stages often use online classes too."
+    ],
+    [
+      "What happens after I request a Banashankari tutor on NXTutors?",
+      "You get two or three matched tutors. NXTutors picks them from Banashankari and nearby first, then from across the zone and city, and each profile shows the tutor's fee. You then book a free demo with whichever tutors you like before deciding."
+    ]
+  ],
+  "kumaraswamy-layout": [
+    [
+      "Which pockets are included around Kumaraswamy Layout?",
+      "Vasanthapura, Subramanyapura and Yelachenahalli are among the nearby pockets. The layout itself has two stages, the first being the larger, and sits within the wider Banashankari area close to Kanakapura Road and JP Nagar, so tell the tutor your stage and nearest pocket."
+    ],
+    [
+      "Which Green Line stations are nearest to Kumaraswamy Layout?",
+      "Banashankari, Jaya Prakash Nagar and Yelachenahalli are all close by, and BMTC buses link the area to central Bengaluru. A tutor using the metro usually finishes with a short walk or auto ride to your house, which avoids the busier road junctions at peak times."
+    ],
+    [
+      "Is parking easy for a tutor visiting a Kumaraswamy Layout house?",
+      "Usually, yes. Most homes are detached houses or small apartment buildings, so a tutor walks straight to the door and street parking is simpler than in busier commercial areas. Evening traffic on Kanakapura Road builds at peak hours, so an early slot works well."
+    ],
+    [
+      "Can I try more than one Kumaraswamy Layout tutor before paying?",
+      "Yes. NXTutors offers two or three matched tutors, and the first class with each is a free demo, so you can compare them. Only once you choose one do regular paid classes begin, at the fee already listed on that tutor's profile."
+    ]
+  ],
+  "kanakapura-road": [
+    [
+      "Which metro stations opened on Kanakapura Road in 2021?",
+      "Konanakunte Cross, Doddakallasandra, Vajarahalli and Thalaghattapura, on the Green Line extension opened in January 2021, along with a terminus further south. A tutor from Jayanagar, Banashankari or Kumaraswamy Layout can ride straight down the line and finish with a short walk or auto."
+    ],
+    [
+      "What gate details should a Kanakapura Road family share with a tutor?",
+      "Your society name, tower and flat number, plus a heads-up to security. Most newer homes on the corridor are in gated societies, and registering the tutor at the gate before the first class avoids delays. Plotted layouts and villa projects further out may be simpler doorstep visits."
+    ],
+    [
+      "When is traffic worst for tutors on Kanakapura Road?",
+      "At office hours around the NICE Road junction and on the main carriageway. Weekend slots or later evening classes are easier for tutors coming by road, and families in the farther pockets often choose online classes for some subjects instead of a long weekly trip."
+    ],
+    [
+      "Does NXTutors look beyond Kanakapura Road if no tutor lives nearby?",
+      "Yes, in stages. NXTutors first lists tutors living along the corridor, then those elsewhere in the Jayanagar, JP Nagar & Banashankari zone, then across Bengaluru, and finally online tutors from anywhere in India. You still receive two or three options, each with a free demo."
+    ]
+  ],
+  "btm-layout": [
+    [
+      "What does BTM in BTM Layout stand for?",
+      "Byrasandra, Tavarekere and Madiwala, the three villages the layout grew around. It sits between Hosur Road and Bannerghatta Road, and the Outer Ring Road divides the 1st Stage from the later stages, so share your stage when you book a tutor."
+    ],
+    [
+      "Which Yellow Line stations serve BTM Layout?",
+      "BTM Layout and Central Silk Board, both opened in August 2025 on the line from Rashtreeya Vidyalaya Road to Bommasandra. A tutor can arrive by metro and finish with a short walk or auto, which is often easier than driving through the junction."
+    ],
+    [
+      "Is Silk Board junction a problem for BTM Layout class timings?",
+      "It can be at peak hours, when the junction is congested. Time sessions away from office rush, or use online classes for specialist subjects. Independent houses and bungalows give a direct doorstep visit, while apartments and gated communities need gate entry."
+    ],
+    [
+      "Does a BTM Layout family pay anything for the NXTutors demo class?",
+      "No. The first class with any tutor NXTutors matches to your BTM Layout request is a free demo. You receive two or three tutors, try the ones you like, and only begin regular paid classes once you have chosen the tutor who suits your child."
+    ]
+  ],
+  "bannerghatta-road": [
+    [
+      "Is the Pink Line on Bannerghatta Road open yet?",
+      "Not yet. The elevated Pink Line section from Kalena Agrahara to Tavarekere, with stations such as Hulimavu, is built but not yet open. Until it opens, most tutors come by road, or use the Yellow Line where it crosses near the Outer Ring Road and finish by auto."
+    ],
+    [
+      "Which localities lie along Bannerghatta Road?",
+      "JP Nagar, Arekere, Hulimavu, Bilekahalli and Gottigere, running south from the Adugodi end towards Bannerghatta and Anekal. Knowing which stretch you live on helps match you with tutors who live along the same part of the road, which keeps travel simple."
+    ],
+    [
+      "Do Bannerghatta Road homes need tutor registration at the gate?",
+      "In gated apartments and premium communities, yes, so share the tutor's details with security in advance. Older layouts off the main road usually allow a doorstep visit. Peak-hour traffic around junctions such as Dairy Circle is heavy, so agree a slot outside office rush."
+    ],
+    [
+      "How does NXTutors choose tutors for a Bannerghatta Road family?",
+      "By distance first. NXTutors shortlists tutors living on or near Bannerghatta Road, then widens to the BTM, Bannerghatta Road & Electronic City zone, then Bengaluru and online. You get two or three names with fees visible, and can switch later at no cost."
+    ]
+  ],
+  "arekere": [
+    [
+      "Which layouts make up Arekere?",
+      "Ramaswamy Layout, Samrat Layout, Puttenahalli, Bilekahalli and Shantiniketan Layout are among them, alongside a Bangalore Development Authority layout from the late 1970s. Bannerghatta Road runs right through the area, so give the tutor your layout name and nearest cross road."
+    ],
+    [
+      "How do tutors reach Arekere while the Pink Line is not open?",
+      "By road, or via the Yellow Line and an auto. The Pink Line's elevated section along Bannerghatta Road passes through Arekere and is built, but it is not yet open, so tutors from JP Nagar or Hulimavu usually ride a two-wheeler or take a bus."
+    ],
+    [
+      "Which neighbours of Arekere can a home tutor come from?",
+      "JP Nagar to the west and Hulimavu to the south-east are the closest. Homes in the older layouts allow a doorstep visit, while apartment complexes built after the early 2000s need gate registration. Plan around office traffic on Bannerghatta Road when fixing the slot."
+    ],
+    [
+      "What hourly rates do Arekere home tutors set on NXTutors?",
+      "Across NXTutors, most home-tuition sessions fall between ₹800 and ₹2,500 an hour; Classes 11–12, IB/IGCSE and JEE/NEET sit toward the upper end; specialists for IB HL or JEE Advanced can charge more. Rates vary by tutor, subject and class, and each one is listed on the tutor's profile ahead of the free demo."
+    ]
+  ],
+  "bommanahalli": [
+    [
+      "Which metro stations are closest to Bommanahalli?",
+      "Bommanahalli station on the Yellow Line, opened in August 2025, with Hongasandra next to it towards Electronic City and Central Silk Board in the other direction. A tutor from BTM Layout, HSR Layout or Begur can ride the metro and finish with a short auto trip."
+    ],
+    [
+      "Does the Hosur Road expressway help tutors reach Bommanahalli?",
+      "Not much for local trips. The elevated expressway carries through traffic to Electronic City, while local traffic uses the road below, where evenings are heavy. That is why a metro ride or a tutor living close by keeps weekday classes on time."
+    ],
+    [
+      "Are most Bommanahalli families in gated societies?",
+      "Many are. The area grew as a home for people working in Electronic City and along the Outer Ring Road, so apartment buildings and large gated communities stand beside older houses. Gated societies need visitor registration; older houses usually mean a doorstep visit."
+    ],
+    [
+      "Will NXTutors match a Bommanahalli family with more than one tutor?",
+      "Yes, with two or three. NXTutors ranks tutors living near Bommanahalli first and fills any gap from the surrounding zone, then the rest of Bengaluru, then online. Try the ones you like in a free demo; the fee is on each profile."
+    ]
+  ],
+  "begur": [
+    [
+      "Why is Begur important in Bengaluru's history?",
+      "An inscription at the Panchalingeshwara temple in Begur is the oldest known reference to a place called Bengaluru. The area was notable under the Western Ganga and Chola rulers and also has the Nageshwara temple and a small circular fort. Today it is mainly residential."
+    ],
+    [
+      "How do tutors get to Begur from the metro?",
+      "They ride the Yellow Line to a Hosur Road station, opened in August 2025, and finish by auto. Begur Road links the area to Hosur Road on one side and Bannerghatta Road on the other, and BMTC buses serve it too."
+    ],
+    [
+      "Which tutors are closest to Begur, and what timing works?",
+      "Tutors from HSR Layout, BTM Layout and Bommanahalli are the nearest. Begur Road is busy at peak times, so keep sessions outside office rush. Apartment complexes need gate registration, while older houses and independent homes allow a direct doorstep visit."
+    ],
+    [
+      "Can I see a Begur tutor's charges before the trial class?",
+      "Yes. NXTutors shows every suggested tutor's own fee on their profile, so you know the cost before the free demo. Tutors set their rates themselves, and you can compare two or three matched options for Begur side by side before booking."
+    ]
+  ],
+  "electronic-city": [
+    [
+      "Which Yellow Line stops lie around Electronic City?",
+      "Electronic City, Konappana Agrahara, Beratena Agrahara and Hosa Road, on the line opened in August 2025. Tutors from Bommanahalli, Begur or BTM Layout can ride the metro and take an auto for the last leg to your society or villa, so they do not need to drive."
+    ],
+    [
+      "Is the elevated expressway useful for Electronic City tuition?",
+      "Yes, for tutors coming by road from the Silk Board end. The expressway from Silk Board to Electronic City opened in January 2010 and carries through traffic above Hosur Road, which makes the trip from BTM Layout or Bommanahalli more predictable."
+    ],
+    [
+      "How do office shifts in Electronic City affect home tuition slots?",
+      "They shape local traffic, so plan sessions around shift timings in Phase I and Phase II. Most homes are in gated societies with visitor registration, so share tower and flat details early. Online classes cover specialist subjects when no nearby tutor fits."
+    ],
+    [
+      "What if the first Electronic City tutor is not the right fit?",
+      "You can switch without paying extra. NXTutors lets families move to another tutor at no charge, choosing again from tutors near Electronic City, then the wider zone, city and online. Every replacement still begins with a free demo class, so nothing is lost by asking."
+    ]
+  ],
+  "indiranagar": [
+    [
+      "Which Purple Line stations are in Indiranagar?",
+      "Two: Indiranagar and Swami Vivekananda Road, both open since the first section in 2011. A tutor coming by metro usually has only a short walk or auto ride to the door, which is simpler than finding evening parking near the shopping streets."
+    ],
+    [
+      "Which are the main roads through Indiranagar?",
+      "100 Feet Road and 80 Feet Road are the main arteries, and their shopping stretches fill up in the evening. Sessions that start before the evening rush are easier to keep regular, especially for tutors coming from the HAL 2nd and 3rd Stages, Domlur or CV Raman Nagar."
+    ],
+    [
+      "Do Indiranagar apartment buildings ask for a tutor's name at the gate?",
+      "Some do. Older independent houses let the tutor reach the doorstep directly, while apartment buildings and builder floors may ask for a name at the gate. Nearby pockets such as Binnamangala, Kodihalli and Thippasandra follow the same mix, so check with your building first."
+    ],
+    [
+      "How does NXTutors shortlist tutors for Indiranagar?",
+      "It starts with tutors living in or near Indiranagar, then moves out to the Indiranagar & Old Airport Road zone, then the rest of Bengaluru, then online. From that order NXTutors sends two or three matches, each offering a free first demo."
+    ]
+  ],
+  "domlur": [
+    [
+      "Is there a metro station in Domlur?",
+      "No. The nearest is Indiranagar on the Purple Line, so tutors arriving by metro take an auto or bus for the last stretch. The large bus terminus at Domlur also helps tutors who travel by BMTC from other parts of the city."
+    ],
+    [
+      "When is the Domlur flyover junction easiest for a tutor to cross?",
+      "Away from office closing time. The flyover, opened in 2006 where Old Airport Road, 100 Feet Road and the Inner Ring Road meet, carries heavy office traffic, so mid-afternoon or weekend classes are easier to schedule than slots at the end of the office day."
+    ],
+    [
+      "Is a Domlur class held in a house or an apartment block?",
+      "Either, as Domlur mixes independent houses, builder floors and apartments, with office parks close by. For independent houses the tutor comes straight to the door, while apartment buildings may keep a visitor log at the gate. Tutors often live in Indiranagar, HAL 2nd Stage, Kodihalli or Jogupalya."
+    ],
+    [
+      "What is the usual fee range for a Domlur home tutor through NXTutors?",
+      "Across NXTutors, most home-tuition sessions fall between ₹800 and ₹2,500 an hour; Classes 11–12, IB/IGCSE and JEE/NEET sit toward the upper end; specialists for IB HL or JEE Advanced can charge more. Within that pattern, each Domlur tutor fixes their own fee and displays it before you book a free trial class."
+    ]
+  ],
+  "cv-raman-nagar": [
+    [
+      "Which metro station do tutors use for CV Raman Nagar?",
+      "Baiyappanahalli on the Purple Line, one of the first stations opened in 2011, is the closest. Tutors usually finish the trip by auto, heading along Old Madras Road or Kaggadasapura Main Road depending on which side of the locality you live."
+    ],
+    [
+      "Does a tutor need gate registration in CV Raman Nagar?",
+      "Inside the research staff township or a gated community, yes, so register the tutor in advance. Independent houses and older apartment blocks are usually simple doorstep visits. Share which of these you live in when requesting a tutor, so the first visit starts smoothly."
+    ],
+    [
+      "Which slots avoid tech park traffic in CV Raman Nagar?",
+      "After-school slots that avoid shift changes. Old Madras Road and the tech park approach roads fill up at office hours, so an early evening class usually runs on time. Families wanting a specialist subject often combine home visits with online classes."
+    ],
+    [
+      "Can CV Raman Nagar parents change tutor midway through the year?",
+      "Yes, at any time and free of charge. NXTutors will offer another tutor from near CV Raman Nagar, the wider zone or online, and the replacement also starts with a free demo so your child can try the new teaching style first."
+    ]
+  ],
+  "whitefield": [
+    [
+      "When did the Purple Line reach Whitefield?",
+      "In March 2023, with stations including Kundalahalli, Pattandur Agrahara, Kadugodi Tree Park, Hopefarm Channasandra and the terminus at Whitefield (Kadugodi). Since October 2023 the line runs continuously to the city centre, so tutors from KR Puram or farther west can travel by metro and finish by auto."
+    ],
+    [
+      "Do Whitefield gated communities need a tutor's details before the first class?",
+      "Usually, yes. Apartment towers and gated villa communities often ask families to register tutor details with security before the demo. Independent houses and builder floors in older pockets are simpler doorstep visits, so tell the tutor which kind of home you have."
+    ],
+    [
+      "Which roads should Whitefield tutors avoid at office hours?",
+      "Whitefield Main Road, ITPL Road and the Hope Farm junction are the busiest. Time evening sessions away from shift changes, and consider a tutor from Kadugodi, Hoodi, Varthur, Brookefield or Hagadur, who has a shorter local trip to reach you."
+    ],
+    [
+      "Who appears first when a Whitefield family asks NXTutors for a tutor?",
+      "Tutors who live in or travel to Whitefield. If there are too few, NXTutors widens the search to the Whitefield, Marathahalli & KR Puram zone, then Bengaluru, then online, and sends two or three matches, each with the fee shown before a free demo."
+    ]
+  ],
+  "marathahalli": [
+    [
+      "Does Marathahalli have a metro station yet?",
+      "Not yet. A Marathahalli station on the Blue Line between Central Silk Board and KR Puram is under construction, with opening planned for December 2027. The nearest rail stop is Bellandur Road station, so most tutors arrive by bus, two-wheeler or cab."
+    ],
+    [
+      "Why does it help to pick a Marathahalli tutor from the same side of the ORR?",
+      "Because the Outer Ring Road junction at Marathahalli is one of the city's heaviest traffic points. A tutor who lives on your side avoids crossing it, which keeps late-afternoon or weekend classes regular. Nearby options include Kundalahalli, Munnekollal, Kadubeesanahalli, Brookefield and Doddanekundi."
+    ],
+    [
+      "Will a Marathahalli apartment complex ask the tutor to register?",
+      "Typically yes, apartment complexes ask for visitor registration at the gate. Housing here is a dense mix of apartments, builder floors and independent houses on side lanes, and the houses usually allow a doorstep visit. Share the gate or lane name when booking."
+    ],
+    [
+      "Is the NXTutors demo for Marathahalli families free?",
+      "It is. NXTutors gives Marathahalli families two or three matched tutors, and the first session with each is free, with no obligation to continue. Regular classes then run at the fee the chosen tutor listed on their profile before the demo."
+    ]
+  ],
+  "kr-puram": [
+    [
+      "Can a tutor reach KR Puram directly by metro?",
+      "Yes. Krishnarajapura station on the Purple Line opened in March 2023, and since October 2023 the line runs continuously west through Benniganahalli and Baiyappanahalli, so tutors from Indiranagar, CV Raman Nagar or Whitefield can reach KR Puram by train and walk or take an auto."
+    ],
+    [
+      "Is the Blue Line interchange at KR Puram open?",
+      "No, the Blue Line interchange towards Central Silk Board and the airport is still under construction. For now, KR Puram is served by the Purple Line and by its railway station on the Bengaluru to Chennai line, crossed by a cable-stayed bridge opened in 2003."
+    ],
+    [
+      "Which KR Puram junction should tutors plan around?",
+      "The Old Madras Road and Outer Ring Road junction during office peaks. Tutors walking or taking an auto from the station should allow extra time there. Housing is mostly apartments, where gates may ask for a visitor entry, plus independent houses and builder floors on older streets."
+    ],
+    [
+      "Does NXTutors include tutors from Ramamurthy Nagar or Mahadevapura for KR Puram?",
+      "Yes, if they are close. NXTutors lists tutors nearest to KR Puram first, which often includes neighbours such as Ramamurthy Nagar, Mahadevapura and Dooravani Nagar, before widening to the zone, city and online. You get two or three tutors to try in free demos."
+    ]
+  ],
+  "mahadevapura": [
+    [
+      "Which metro station was earlier called Mahadevapura?",
+      "Singayyanapalya, on Whitefield Main Road, opened in March 2023 on the Purple Line. Garudacharapalya and Hoodi stations lie further east, and KR Puram is the nearest mainline railway station, so a tutor coming by metro usually covers the final stretch by auto."
+    ],
+    [
+      "What might a Mahadevapura society ask of a visiting tutor?",
+      "Gate registration and, in some societies, photo ID on the first visit. Most families here live in apartment complexes or gated communities, so share the tutor's details with security ahead of the demo. Villas, builder floors and plots are sometimes simpler doorstep visits."
+    ],
+    [
+      "Why pick a tutor from the same belt in Mahadevapura?",
+      "Because office traffic on the Outer Ring Road and Whitefield Main Road can delay anyone crossing the area. A tutor living between KR Puram, Hoodi, Doddanekundi and Marathahalli starts early-evening sessions more reliably than one coming from across the city."
+    ],
+    [
+      "How many tutor profiles will NXTutors suggest for Mahadevapura?",
+      "Normally two or three, picked for Mahadevapura by distance. Each profile shows the tutor's fee, and you can book a free demo with any of them. If no tutor lives close enough, NXTutors adds tutors from the nearby zone or online options instead."
+    ]
+  ],
+  "brookefield": [
+    [
+      "Which metro station is on the Brookefield side?",
+      "Kundalahalli on the Purple Line, opened in March 2023, sits on the Brookefield side of the EPIP Zone. Tutors from Indiranagar, KR Puram or Whitefield can reach the area by metro and finish on foot or by auto, rather than driving along Varthur Road at peak times."
+    ],
+    [
+      "Should Brookefield parents add the tutor to the visitor list?",
+      "Yes, before the demo class. Most homes are in gated apartment complexes, with some villas and plots, and adding the tutor's name to the visitor list means entry goes smoothly on the first day and every week after that, without calls to the flat."
+    ],
+    [
+      "Which weekday window suits Brookefield classes?",
+      "The gap between school hours and the evening rush. ITPL Road and the approaches to the ORR are busy at the start and end of the office day, so a mid-afternoon or early evening class is easier to keep. Tutors from Whitefield, Kundalahalli or Marathahalli are nearby."
+    ],
+    [
+      "How are tutor fees set for Brookefield home tuition on NXTutors?",
+      "Across NXTutors, most home-tuition sessions fall between ₹800 and ₹2,500 an hour; Classes 11–12, IB/IGCSE and JEE/NEET sit toward the upper end; specialists for IB HL or JEE Advanced can charge more. Each tutor chooses their own fee, and Brookefield families see it on the profile before any free demo is booked."
+    ]
+  ],
+  "hennur": [
+    [
+      "Will Hennur get a metro station?",
+      "Not inside Hennur itself. The nearest planned stops are HRBR Layout and Kalyana Nagara on the Blue Line from KR Puram to the airport, which is under construction and due in December 2028. Until then, tutors mostly come by bus, two-wheeler or cab."
+    ],
+    [
+      "Why are Hennur tutors often chosen from Kalyan Nagar or Kothanur?",
+      "Because Hennur Road carries steady traffic towards the Outer Ring Road. A tutor who already lives in Hennur, Kalyan Nagar or Kothanur avoids that stretch, so weekday sessions go more smoothly. Byrathi, HRBR Layout and HBR Layout are other nearby bases."
+    ],
+    [
+      "Are Hennur homes mostly gated or independent?",
+      "Both. Apartment complexes and gated villa communities line the main road, usually with pre-registration at the gate, while the layouts behind hold independent houses, builder floors and plots, which are simple doorstep visits. Tell the tutor which kind of home you have."
+    ],
+    [
+      "Does NXTutors offer online tutors if none live near Hennur?",
+      "Yes. NXTutors looks for tutors in Hennur first, then across the Hennur, Kalyan Nagar & Banaswadi zone and the rest of Bengaluru, and adds online tutors when needed. You still receive two or three choices and a free demo with each."
+    ]
+  ],
+  "kalyan-nagar": [
+    [
+      "What does Kalyan Nagar usually include?",
+      "It is often taken to include HRBR Layout and Chelekere, with Kammanahalli and Hennur next door. It lies near Banaswadi and Horamavu, with Hennur Road on one side and the Outer Ring Road close by, so tutors from all these areas can reach it easily."
+    ],
+    [
+      "When will the Kalyana Nagara metro station open?",
+      "It is planned for December 2028. Kalyana Nagara is a Blue Line station under construction on the Outer Ring Road section from KR Puram to the airport. Until then, tutors arrive mainly by bus, two-wheeler or cab and plan around office traffic."
+    ],
+    [
+      "Is two-wheeler parking a problem near Kalyan Nagar's cafe streets?",
+      "It can be tight in the evening. Most homes are independent houses or small buildings, so the tutor usually comes straight to the door, but a slot right after school avoids both the cafe crowd and the worst of the ORR office traffic."
+    ],
+    [
+      "What will a Kalyan Nagar tutor cost per hour via NXTutors?",
+      "Across NXTutors, most home-tuition sessions fall between ₹800 and ₹2,500 an hour; Classes 11–12, IB/IGCSE and JEE/NEET sit toward the upper end; specialists for IB HL or JEE Advanced can charge more. Kalyan Nagar tutors each set their own figure, visible on the profile well before your free demo."
+    ]
+  ],
+  "hrbr-layout": [
+    [
+      "Is it easy for a tutor to find an address in HRBR Layout?",
+      "Yes. HRBR Layout is a planned layout organised into numbered blocks with wide roads and parks, so the block and cross numbers lead a tutor straight to your house. Most homes are independent houses or builder buildings, so the family simply meets the tutor at the door."
+    ],
+    [
+      "Is the planned HRBR Layout Blue Line station open yet?",
+      "No, it is under construction on the line between KR Puram and the airport, with opening planned for December 2028. Until then, tutors come by bus, two-wheeler or cab from Banaswadi, Lingarajapuram, Kalyan Nagar or Channasandra, which all lie close by."
+    ],
+    [
+      "Which time slot suits regular classes in HRBR Layout?",
+      "After school. Evening office traffic on the Outer Ring Road, which runs along the edge of the layout, is the main timing factor, so an early slot keeps classes regular. Online sessions can cover specialist subjects where a nearby tutor is not available."
+    ],
+    [
+      "What does the NXTutors match look like for an HRBR Layout request?",
+      "A short list of two or three tutors, with those closest to HRBR Layout at the top. Each profile shows the tutor's own fee, and every tutor offers a free first demo, so you can compare before booking regular classes through NXTutors."
+    ]
+  ],
+  "banaswadi": [
+    [
+      "Where is Banaswadi railway station?",
+      "In Maruthi Sevanagar, on the line linking Yesvantpur and Baiyappanahalli. Tutors coming by metro instead use Baiyappanahalli or Benniganahalli on the Purple Line and take an auto or bus for the last part of the trip into the residential streets."
+    ],
+    [
+      "Which areas surround Banaswadi?",
+      "Lingarajapuram, Nagawara, Thanisandra, Krishnarajapuram, Benniganahalli, Baiyappanahalli and Maruthi Sevanagar border it, with Kammanahalli, HRBR Layout and Kalyan Nagar alongside. Tutors from any of these can reach you without long trips, and the Outer Ring Road links the area to the eastern IT belt."
+    ],
+    [
+      "Do Banaswadi tutors come to the door or the gate?",
+      "Mostly the door. Many homes are independent houses or bungalows, where the tutor comes straight in, though builder floors and apartments may have a gate. Banaswadi Main Road gets busy at office hours, so late-afternoon slots are easier to keep."
+    ],
+    [
+      "Can Banaswadi families swap to a different tutor after starting?",
+      "Yes, switching is free with NXTutors. Ask for another match and NXTutors will suggest tutors near Banaswadi first, then from the wider zone or online. The new tutor gives a free demo too, and their fee is visible on the profile beforehand."
+    ]
+  ],
+  "thanisandra": [
+    [
+      "Where is the nearest metro to Thanisandra?",
+      "Nagawara, next door, where a Blue Line station on the route from KR Puram to the airport is under construction and planned for December 2028. There is no station in Thanisandra itself, so for now tutors come by bus, two-wheeler or cab."
+    ],
+    [
+      "What should Thanisandra families give the security desk?",
+      "The tutor's name and phone number, before the demo. Most homes are flats in gated societies, with some independent houses on the older lanes, and security desks usually want visitor details in advance. Keeping the same slot each week helps too."
+    ],
+    [
+      "When does Thanisandra Main Road get too busy for tuition trips?",
+      "At office hours, when it carries heavy traffic, so weekend and after-school slots are the easiest to keep. Tutors from Hebbal, Nagawara, Kammanahalli or Kothanur can often avoid the main road. Online classes suit families wanting a specialist subject tutor."
+    ],
+    [
+      "Is a Thanisandra tutor's rate visible before the free demo?",
+      "Yes. Every NXTutors profile carries the tutor's own rate, so a Thanisandra family knows the cost before the demo, which is free. With two or three matched tutors to compare, you can weigh fee, subject fit and timing together before you commit."
+    ]
+  ],
+  "hebbal": [
+    [
+      "Has the metro reached Hebbal yet?",
+      "No. Hebbala station on the Blue Line from KR Puram to the airport is under construction and planned for December 2028. Hebbal does have a railway station, but most tutors come by bus, two-wheeler or cab for now, so plan the slot around road travel."
+    ],
+    [
+      "Why does the Hebbal flyover matter for tutor timing?",
+      "The flyover, where the Outer Ring Road meets Bellary Road to the airport, carries heavy airport and office traffic. A tutor who lives on the same side of the flyover is more reliable for weekday evenings than one who must cross it."
+    ],
+    [
+      "Which neighbourhoods around Hebbal can tutors come from?",
+      "Kanaka Nagar, Nagavara, Kaval Byrasandra, Ganga Nagar and Mathikere are close by, with Hennur and Yelahanka further out. Gated societies need visitor registration, while independent houses on the older side streets are simple doorstep visits for the tutor each week."
+    ],
+    [
+      "What happens if no tutor lives near Hebbal for my subject?",
+      "NXTutors widens the search step by step. Tutors near Hebbal come first, then the Hebbal, RT Nagar & Yelahanka zone, then the rest of Bengaluru, and online tutors if still needed. Either way, you receive two or three matched tutors and a free demo."
+    ]
+  ],
+  "rt-nagar": [
+    [
+      "How do tutors reach RT Nagar without a metro station?",
+      "By BMTC bus, two-wheeler or auto. The nearest metro will be Hebbala on the Blue Line, which is under construction and planned for December 2028, so road travel is the norm until then, and roads lead out to Hebbal, Yeshwanthpur and the city centre."
+    ],
+    [
+      "Does a tutor go straight to the door in RT Nagar?",
+      "Usually. The two blocks are mostly independent houses, builder floors and a smaller number of apartments, often with shops below and homes above. Parking a two-wheeler on the busier market lanes needs some care, so share an easy spot to stop."
+    ],
+    [
+      "Can an RT Nagar tutor avoid the Hebbal flyover at peak time?",
+      "Yes, if they live in RT Nagar or Hebbal. Those tutors can often fit regular weekday evening visits without crossing the flyover in the rush, which is why a local tutor is usually the practical choice for a fixed weekly slot."
+    ],
+    [
+      "How does NXTutors decide which RT Nagar tutors to suggest?",
+      "Nearness first. Tutors based in RT Nagar lead the list, followed by others in the zone, then Bengaluru and online. From these, NXTutors offers two or three tutors whose fees you see upfront, and each gives a free demo before you decide."
+    ]
+  ],
+  "yelahanka": [
+    [
+      "What is the difference between Yelahanka Old Town and New Town?",
+      "New Town is a planned township developed by the Karnataka Housing Board in the early 1980s, with independent houses and plots in layouts. Old Town holds older homes, and apartment complexes are growing across both. In New Town houses the tutor usually comes straight to the door."
+    ],
+    [
+      "Can a tutor reach Yelahanka by train?",
+      "Yes. Yelahanka Junction is a railway junction, and tutors also come by bus or two-wheeler. A Yelahanka station on the Blue Line is under construction and planned for December 2028, so there is no metro option yet for tutor travel."
+    ],
+    [
+      "Why is a local tutor useful in Yelahanka?",
+      "Because Bellary Road runs through Yelahanka towards the airport and carries airport traffic, while Doddaballapur Road crosses the area. A tutor from Yelahanka itself, Jakkur, Puttenahalli or Attur suits regular weekday classes. Apartment societies ask for gate registration before the first visit."
+    ],
+    [
+      "What are typical home tuition rates in Yelahanka on NXTutors?",
+      "Across NXTutors, most home-tuition sessions fall between ₹800 and ₹2,500 an hour; Classes 11–12, IB/IGCSE and JEE/NEET sit toward the upper end; specialists for IB HL or JEE Advanced can charge more. Yelahanka tutors fix their own amounts, and NXTutors displays each one before the free demo begins."
+    ]
+  ],
+  "malleshwaram": [
+    [
+      "Which Green Line stops put a tutor within reach of Malleshwaram?",
+      "Sampige Road, Srirampura and Sandal Soap Factory on the Green Line, with Malleswaram railway station nearby. Tutors from Rajajinagar or further along the line can come by metro and finish with a short auto ride, rather than hunting for parking on the market roads."
+    ],
+    [
+      "Is gate registration needed for a Malleshwaram tutor?",
+      "Rarely. Most tutor visits are straight to the doorstep of an older independent house or a small apartment block, so there is seldom a society gate. Share the cross road and main road numbers from the grid around Sampige Road and Margosa Road."
+    ],
+    [
+      "Which evening slot suits Malleshwaram families?",
+      "A slightly earlier one. The main market roads get busy in the evening, so starting before the rush is easier for everyone. Tutors often come from neighbouring Rajajinagar, Yeshwanthpur, Seshadripuram or Sadashivanagar, which keeps travel short in this area laid out in 1889."
+    ],
+    [
+      "Can a Malleshwaram family try two tutors before choosing?",
+      "Yes, even three. NXTutors matches each Malleshwaram request with two or three tutors, and a demo with any of them costs nothing. Compare how each explains the subject, then continue with the one your child prefers, at the fee already shown on their profile."
+    ]
+  ],
+  "sadashivanagar": [
+    [
+      "What was Sadashivanagar called before?",
+      "Palace Orchards. It was built in the 1960s and 1970s on former royal gardens and renamed later. It lies east of Malleshwaram, with Vyalikaval and Palace Guttahalli to the south and Hebbal to the north, so tutors from these areas are close."
+    ],
+    [
+      "Do Sadashivanagar houses have security at the gate?",
+      "Many do. Homes are mostly large independent houses and bungalows on wide, quiet roads, often with security staff at the gate, so share the tutor's name in advance. The smaller number of apartment buildings, including some on Bellary Road, follow the same practice."
+    ],
+    [
+      "How does a tutor get to Sadashivanagar by metro?",
+      "By the Green Line to one of the Malleshwaram stations, then an auto for the last stretch, as there is no station inside the locality. Tutors driving along Bellary Road should avoid the heavy evening traffic by choosing an early or late slot."
+    ],
+    [
+      "Does NXTutors charge families to switch a Sadashivanagar tutor?",
+      "No, switching is free. If a Sadashivanagar tutor stops suiting your child, NXTutors suggests replacements, nearest ones first, and you can try each in a free demo. Online tutors are also an option for specialist board subjects, alongside home visits."
+    ]
+  ],
+  "rajajinagar": [
+    [
+      "When was Rajajinagar planned, and how is it laid out?",
+      "It was inaugurated in 1949 as a planned suburb, with land split between housing plots and an industrial area that still exists as the Rajajinagar Industrial Suburb. It is organised into numbered blocks, so your block number is the first detail to give a tutor."
+    ],
+    [
+      "Which metro stations are on Chord Road near Rajajinagar?",
+      "Rajajinagar on the Green Line, with Mahalakshmi and Srirampura close by. The metro plus a short walk or auto is the easiest way in for tutors from Malleshwaram, Yeshwanthpur or the city centre, since Chord Road is slow at peak hours."
+    ],
+    [
+      "Will a Rajajinagar tutor come to the front door or a building gate?",
+      "Either. Independent houses on the original plots stand beside apartment buildings that replaced many of them, so check whether your building has a gate check-in. Street parking is tight on busier block roads, which makes metro travel handy for the tutor each week."
+    ],
+    [
+      "Is the NXTutors first class with a Rajajinagar tutor free?",
+      "Yes, the first class is always a free demo. NXTutors suggests two or three tutors near Rajajinagar, Basaveshwaranagar or Mahalakshmi Layout, and you decide after the demos whether to continue, at the fee each tutor listed clearly on their profile in advance."
+    ]
+  ],
+  "mahalakshmi-layout": [
+    [
+      "Why is Mahalakshmi Layout sometimes called Temple Layout?",
+      "After the Hanuman temple, its most familiar landmark. The layout sits next to Rajajinagar, Basaveshwaranagar and Yeshwanthpur, and with Nandini Layout, Kurubarahalli and Nagapura it forms one of the larger residential stretches in north-west Bengaluru, so tutors come from all around."
+    ],
+    [
+      "Which metro station is closest to Mahalakshmi Layout?",
+      "Mahalakshmi station on the Green Line, on Chord Road, with Rajajinagar station close by. Tutors from Malleshwaram, Rajajinagar or Yeshwanthpur can use the metro and a short auto ride. Chord Road slows in the evening rush, so agree a slot that avoids it."
+    ],
+    [
+      "Do tutors in Mahalakshmi Layout face society gates?",
+      "Rarely. Homes are largely independent houses and builder floors on layout plots, with some 2 and 3 BHK apartment buildings, so most tutors arrive at the doorstep. Chord Road and Tumkur Road run along the edges, which helps tutors find the approach."
+    ],
+    [
+      "What fee should Mahalakshmi Layout parents expect from an NXTutors tutor?",
+      "Across NXTutors, most home-tuition sessions fall between ₹800 and ₹2,500 an hour; Classes 11–12, IB/IGCSE and JEE/NEET sit toward the upper end; specialists for IB HL or JEE Advanced can charge more. The figure for any particular tutor is theirs to set and appears on their profile before the free demo."
+    ]
+  ],
+  "yeshwanthpur": [
+    [
+      "Which metro station faces Yesvantpur Junction?",
+      "Yeshwanthpur station on the Green Line, which stands on Tumkur Road opposite the railway junction commissioned in 1881. Goraguntepalya is the next stop north, so tutors from Malleshwaram, Rajajinagar or Peenya can come by metro and finish by auto to your home."
+    ],
+    [
+      "Do Yeshwanthpur homes need visitor registration?",
+      "It depends on the building. Older houses in pockets like Subedarpalya are simple doorstep visits, while gated apartment complexes usually register visitors at the gate. Check what your building needs before the first class so the tutor is not held up."
+    ],
+    [
+      "Which time suits weekday tuition near Tumkur Road in Yeshwanthpur?",
+      "Slightly later in the evening. Tumkur Road carries heavy traffic at peak hours and industrial areas sit beside the housing, so a class after the rush is easier to reach. Tutors from Jalahalli, Nandini Layout or Mahalakshmi Layout are close by."
+    ],
+    [
+      "Where does NXTutors find tutors for Yeshwanthpur?",
+      "Close to home first. NXTutors starts with tutors near Yeshwanthpur, then looks across the Malleshwaram, Rajajinagar & Yeshwanthpur zone, then Bengaluru, then online, and sends two or three matches. Each shows a fee before the demo, which is free, so you can compare them."
+    ]
+  ],
+  "basaveshwaranagar": [
+    [
+      "Why do some residents call Basaveshwaranagar West of Chord Road?",
+      "Because it grew in the 1970s and 1980s as an extension west of Chord Road, and that was its first name. It lies west of Rajajinagar, with Mahalakshmi Layout to the north, Vijayanagar to the south and Kamakshipalya nearby, all within easy reach for tutors."
+    ],
+    [
+      "Is Basaveshwaranagar hilly for a tutor on a two-wheeler?",
+      "Some streets are steep, as the terrain is hilly, but street parking is available on most inner roads. Homes are independent houses and 2 and 3 BHK apartment buildings, so a tutor usually just rings the bell at the door of a house or small building."
+    ],
+    [
+      "Which metro stations do tutors use for Basaveshwaranagar?",
+      "Rajajinagar on the Green Line or Vijayanagar on the Purple Line, then an auto for the last leg, since no station lies inside the locality. Chord Road gets crowded at school and office hours, so a mid-evening class is easier to reach on time."
+    ],
+    [
+      "Will NXTutors suggest tutors from outside Basaveshwaranagar?",
+      "Only after local ones. NXTutors lists tutors in or near Basaveshwaranagar first, then from the Vijayanagar, RR Nagar & Kengeri zone, then the rest of Bengaluru and online. You get two or three tutors, and each first class is a free demo."
+    ]
+  ],
+  "vijayanagar": [
+    [
+      "Which Purple Line stations serve Vijayanagar?",
+      "Vijayanagar, Attiguppe and Hosahalli, all opened in November 2015, with a large bus terminal near Attiguppe station. Tutors from Rajajinagar, the city centre or RR Nagar can come by metro and walk or take an auto to the door of your house."
+    ],
+    [
+      "Which sub-localities belong to Vijayanagar?",
+      "Hampinagar, Saraswatinagar, Govindrajnagar and Attiguppe are among them. The area lies between Mysore Road and Magadi Road, with Chord Road passing through, and borders Basaveshwaranagar, Rajajinagar, Deepanjali Nagar, Chandra Layout, Nagarbhavi and Kamakshipalya, so tutors from these nearby pockets are common."
+    ],
+    [
+      "Are most Vijayanagar homes doorstep visits for a tutor?",
+      "Yes. Tree-lined streets of independent houses make up much of the area, with apartment buildings mixed in, so most home tutors simply walk up to the door. Chord Road and Magadi Road fill up at peak hours, so allow for that when fixing a weekday slot."
+    ],
+    [
+      "Can I see Vijayanagar tutors' fees and try a demo before committing?",
+      "Yes to both. NXTutors shows every matched tutor's fee on the profile, and the first class is a free demo, so you can judge cost and teaching together. For Vijayanagar you usually receive two or three tutors to choose from."
+    ]
+  ],
+  "nagarbhavi": [
+    [
+      "How is Nagarbhavi 2nd Stage laid out?",
+      "In numbered blocks, laid out by the Bangalore Development Authority, with named layouts such as Annapoorneshwari Nagar and Vinayaka Layout. Nagarbhavi also has a 1st Stage, so give the tutor your stage, block and layout name to make the first visit simple."
+    ],
+    [
+      "Is parking easy for a tutor in Nagarbhavi?",
+      "Usually. Housing is mostly independent houses on plotted layouts, with apartment buildings on some main roads, so tutors make doorstep visits and a two-wheeler parks easily. The Outer Ring Road runs past the area and links it to the rest of west Bengaluru."
+    ],
+    [
+      "Which metro stations are nearest to Nagarbhavi?",
+      "Vijayanagar and Attiguppe on the Purple Line. Tutors without their own vehicle generally combine the metro with an auto, and those from Vijayanagar or Chandra Layout have a short trip. For higher-level board subjects, online sessions can supplement a local home tutor."
+    ],
+    [
+      "What do Nagarbhavi families usually pay a home tutor found on NXTutors?",
+      "Across NXTutors, most home-tuition sessions fall between ₹800 and ₹2,500 an hour; Classes 11–12, IB/IGCSE and JEE/NEET sit toward the upper end; specialists for IB HL or JEE Advanced can charge more. Nagarbhavi tutors set individual rates, and every fee is on view before the no-cost demo."
+    ]
+  ],
+  "rr-nagar": [
+    [
+      "Where does RR Nagar get its name?",
+      "From the Rajarajeshwari temple, whose foundation was laid in the early 1960s; the full name is Rajarajeshwari Nagar. The suburb lies along Mysore Road in south-west Bengaluru and is entered through a well-known arch on the main road, a handy landmark for a new tutor."
+    ],
+    [
+      "Which Purple Line stations are nearest to RR Nagar?",
+      "Rajarajeshwari Nagar station, opened in August 2021, with Pantharapalya-Nayandahalli next to it towards the city. Tutors from Vijayanagar or Kengeri get a direct metro ride and then a short auto to the house, which avoids driving on Mysore Road at office hours."
+    ],
+    [
+      "Do RR Nagar apartment projects need visitor registration?",
+      "The gated ones do, so add the tutor to the visitor list before the first class. Independent houses on the older layouts are doorstep visits. Nagarbhavi to the north, Hosakerehalli to the east and Kengeri to the south-west are handy tutor bases."
+    ],
+    [
+      "How long is the tutor shortlist NXTutors sends for RR Nagar?",
+      "Two or three names. NXTutors picks them from tutors closest to RR Nagar first, then the rest of the zone and city, with online tutors if needed. You see each fee in advance and can take a free demo with every one."
+    ]
+  ],
+  "kengeri": [
+    [
+      "How well is Kengeri linked by metro and rail?",
+      "Pattanagere, Kengeri Bus Terminal and Kengeri on the Purple Line, opened in August 2021, with Challaghatta added in October 2023. Kengeri railway station on the Mysuru-Bengaluru line sits near the metro, so tutors from Vijayanagar or RR Nagar can travel by train."
+    ],
+    [
+      "Will a Kengeri tutor meet a society gate or a front door?",
+      "Either. Independent houses and builder floors in the satellite town layouts are doorstep visits, while newer gated apartment complexes and plotted developments may register visitors at the gate. Tell the tutor which applies before the first visit, so there is no confusion on the day."
+    ],
+    [
+      "Does Mysore Road traffic matter for Kengeri classes?",
+      "Mainly for tutors coming by road at rush hour. Those using the metro are largely unaffected. Kengeri borders RR Nagar, Nagarbhavi, Ullal, Uttarahalli and Kumbalgodu, and has access to the NICE Road and the Bengaluru-Mysuru Expressway, so tutors come from several directions."
+    ],
+    [
+      "Does NXTutors show a Kengeri tutor's hourly charge before the demo?",
+      "Always. Each tutor lists an hourly fee on their NXTutors profile, so Kengeri families compare costs before the demo, which is free. If the chosen tutor later stops working out, moving to another tutor costs nothing extra either, and the new tutor gives a free demo too."
+    ]
+  ],
+  "frazer-town": [
+    [
+      "Can a tutor take the metro all the way to Frazer Town?",
+      "Not yet. The Pink Line's underground Pottery Town station nearby is under construction, so for now tutors come by road or combine a Purple Line ride with an auto. Bangalore East railway station, on the locality's edge, is another option."
+    ],
+    [
+      "What types of homes will a Frazer Town tutor visit?",
+      "Heritage bungalows, older independent homes and multi-storey apartments, with a few gated complexes. A tutor may be buzzed in at a building gate or simply walk up to the house, so say which applies. Mosque Road and Promenade Road are handy reference points."
+    ],
+    [
+      "Which class times suit Frazer Town families?",
+      "Afternoon or early evening. The shopping streets get crowded in the evenings, so later slots are harder for tutors coming by road. Tutors from Cooke Town, Cox Town, Benson Town or Richards Town are close by and can often walk over."
+    ],
+    [
+      "Does NXTutors consider online tutors for Frazer Town?",
+      "Yes, after nearby ones. NXTutors first offers tutors near Frazer Town, then from the Frazer Town, Richmond Town & Ulsoor zone and the wider city, and finally online tutors across India. Every family still gets two or three options with a free demo."
+    ]
+  ],
+  "cooke-town": [
+    [
+      "When was Cooke Town laid out?",
+      "Around 1900, as one of the older Cantonment neighbourhoods of central Bengaluru. It keeps some of its colonial-era streetscape, with parks and quiet lanes, and is surrounded by Frazer Town, Cox Town, Pottery Town, Richards Town and Kadamba Nagara, so tutors from these neighbours are nearby."
+    ],
+    [
+      "Which stations are close to Cooke Town?",
+      "Bangalore East and Banaswadi railway stations. The Pink Line's Pottery Town station, still under construction, will serve this side of the city; until it opens, tutors mostly arrive by road or by Purple Line and auto. Share a nearby park as a landmark."
+    ],
+    [
+      "Will a Cooke Town tutor register with a guard?",
+      "Only in gated apartments. Many old bungalows have been replaced by apartment buildings, so homes now mix independent houses, low-rise flats and some gated complexes. Weekday evening traffic toward the main roads is heavy, so an early slot helps the tutor arrive on time."
+    ],
+    [
+      "What is the price of home tuition in Cooke Town through NXTutors?",
+      "Across NXTutors, most home-tuition sessions fall between ₹800 and ₹2,500 an hour; Classes 11–12, IB/IGCSE and JEE/NEET sit toward the upper end; specialists for IB HL or JEE Advanced can charge more. Cooke Town tutors decide their own fee, which appears on the profile before you book the complimentary demo."
+    ]
+  ],
+  "richmond-town": [
+    [
+      "Which metro station is nearest to Richmond Town?",
+      "MG Road on the Purple Line is the nearest open station, and tutors usually take an auto from there. Richmond Town is bordered by Shanthinagar and Langford Town, so tutors living in those areas are also within easy reach of your home."
+    ],
+    [
+      "Do Richmond Town apartment buildings have guards at the entrance?",
+      "Many do, so parents should give the tutor's details at the gate. Housing ranges from older colonial-era blocks and houses to modern apartment buildings. For older houses the tutor may come straight to the door, but it helps to confirm the entrance."
+    ],
+    [
+      "Why might a weekend slot suit Richmond Town families?",
+      "Because central roads such as Hosur Road are congested at office hours, a later evening or weekend slot is more reliable for home classes. Richmond Town was established in 1883 as part of the Bangalore Cantonment and remains a busy central area."
+    ],
+    [
+      "Can a Richmond Town family switch tutors if needed?",
+      "Yes, and there is no fee for switching. NXTutors will line up another tutor near Richmond Town or in the surrounding zone, or an online tutor, and the new tutor also starts with a free demo so you can check the fit again."
+    ]
+  ],
+  "ulsoor": [
+    [
+      "Which two Purple Line stops are in Ulsoor?",
+      "Trinity and Halasuru on the Purple Line, part of the first section opened in October 2011, with Halasuru station on Old Madras Road. Tutors from Indiranagar or the city centre can come straight by metro and walk the last part."
+    ],
+    [
+      "What is Halasuru Lake, and why do tutors use it as a landmark?",
+      "It is the old tank at the heart of Ulsoor, officially Halasuru, and the locality's name comes from a jackfruit orchard beside it. Giving the tutor your position relative to the lake is a simple way to guide a first visit."
+    ],
+    [
+      "Do Ulsoor homes need gate sign-in for a tutor?",
+      "Some do. Old independent houses in the lanes near the temples allow street parking and a doorstep visit, while standalone apartment buildings and gated societies may ask the tutor to sign in. Indiranagar, Jogupalya and Cambridge Layout are the neighbouring tutor bases."
+    ],
+    [
+      "What does an Ulsoor family receive after sending a request to NXTutors?",
+      "A set of two or three tutors, sorted with those nearest Ulsoor first. Each profile shows the fee the tutor has set, and you can take a free demo with any of them before choosing. Switching later is free too, and NXTutors handles the new match."
+    ]
+  ]
+}

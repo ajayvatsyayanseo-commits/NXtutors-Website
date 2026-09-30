@@ -228,7 +228,7 @@
   <h3 id="dl-lodhi">Lodhi Colony, Jangpura and Nizamuddin: the quiet band south of the centre</h3>
   <p>
     {!! $dlA('lodhi-colony', 'Lodhi Colony') !!}, built in the 1940s for government employees and run by the New Delhi
-    Municipal Council, is known as India's first open-air public art district for its murals.
+    Municipal Council, is known for the murals painted across its walls.
     {!! $dlA('jangpura', 'Jangpura') !!}, on Mathura Road, grew sharply in 1950 and 1951 and is now mostly builder
     floors. {!! $dlA('nizamuddin-east', 'Nizamuddin East') !!} has 286 houses and 32 public parks beside the railway
     station, and {!! $dlA('nizamuddin-west', 'Nizamuddin West') !!} is bungalows and floors around a historic dargah.

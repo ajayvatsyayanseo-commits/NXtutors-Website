@@ -1,0 +1,805 @@
+{
+  "areas": {
+    "koramangala": {
+      "name": "Koramangala",
+      "zone": "Koramangala, HSR & Bellandur",
+      "type": "mixed",
+      "about": "<p>Koramangala was planned as a suburb after independence and filled up from the late 1970s. It is laid out in eight numbered blocks, with the Inner Ring Road separating blocks 1 to 4 from blocks 5 to 8, and Hosur Road running along one side. The older inner lanes still hold bungalows and independent houses on tree-lined streets, while newer apartment buildings sit between them. Busier stretches such as 80 Feet Road carry cafes, offices and co-working spaces, as the area is now also a well-known startup hub.</p><p>For a home tutor, the quieter residential cross roads mean a doorstep visit at most houses, while apartment buildings usually ask for a name at the gate. Neighbours include HSR Layout, Madiwala, Adugodi, Vivek Nagar and Domlur, so tutors often come in from these areas by road. Evening traffic on Hosur Road and the main junctions is heavy, so an early-evening slot or a weekend morning works better, and online sessions suit specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Koramangala",
+        "https://www.squareyards.com/koramangala-in-bangalore-overview-653",
+        "https://en.wikipedia.org/wiki/Bangalore_Development_Authority"
+      ]
+    },
+    "hsr-layout": {
+      "name": "HSR Layout",
+      "zone": "Koramangala, HSR & Bellandur",
+      "type": "residential",
+      "about": "<p>HSR Layout takes its name from Hosur Road and Sarjapur Road, the two roads it sits between. The Bangalore Development Authority began developing it in 1985, and it is divided into seven sectors on a grid, with main roads running north to south and cross roads east to west. Housing is a mix of independent houses, builder floors and plotted homes alongside apartment communities, with many parks spread across the sectors.</p><p>The Outer Ring Road runs along its edge, and Central Silk Board station on the Yellow Line of Namma Metro, opened in August 2025, serves the HSR and BTM side of the junction. The Blue Line, now under construction along the Outer Ring Road, will add an HSR Layout station. A tutor coming by metro usually takes an auto for the last leg into the sectors. Houses and builder floors allow a direct doorstep visit, while apartment blocks need gate registration. Silk Board junction is busy at office hours, so plan sessions around them. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/HSR_Layout",
+        "https://www.squareyards.com/hsr-layout-in-bangalore-overview-679",
+        "https://en.wikipedia.org/wiki/Central_Silk_Board_metro_station",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Namma_Metro)"
+      ]
+    },
+    "bellandur": {
+      "name": "Bellandur",
+      "zone": "Koramangala, HSR & Bellandur",
+      "type": "mixed",
+      "about": "<p>Bellandur is a south-east suburb bounded by HSR Layout on the west, Sarjapur Road on the south and Bellandur Lake on the north. It was largely rural until the IT expansion along the Outer Ring Road, which passes through it and links east and south Bengaluru. Several large tech parks now sit inside the locality, and housing is mostly modern apartment complexes and gated societies built for people working nearby.</p><p>Most homes here are in gated apartment communities, so a tutor should expect visitor registration at the gate and should share the tower and flat number in advance. There is no operating metro station yet; the Blue Line along the Outer Ring Road is under construction, so tutors arrive by road from HSR Layout, Sarjapur Road or Marathahalli. Office traffic on the Outer Ring Road is heavy in the morning and from early evening, so a slot after the evening peak or at the weekend is easier, and online classes help for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bellandur",
+        "https://www.squareyards.com/bellandur-in-bangalore-overview-599",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Namma_Metro)"
+      ]
+    },
+    "sarjapur-road": {
+      "name": "Sarjapur Road",
+      "zone": "Koramangala, HSR & Bellandur",
+      "type": "residential",
+      "about": "<p>Sarjapur Road runs south-east from the Agara, Ibbaluru and Bellandur junction on the Outer Ring Road towards Dommasandra and Sarjapura town. The localities along it include Kasavanahalli, Carmelaram, Chikkabellandur and Doddakannelli. Housing is dominated by large gated communities, high-rise apartment towers and villa townships, with some plotted development, and the corridor has grown on the back of the IT parks around Bellandur and the Outer Ring Road.</p><p>There is no metro line on Sarjapur Road yet, so tutors come by road from HSR Layout, Bellandur or Koramangala, often by bus, cab or two-wheeler. Nearly every home is inside a gated society, so parents should pre-register the tutor at the gate and keep the same time slot each week to make entry smooth. Traffic builds heavily at office hours near the Outer Ring Road end, so weekend mornings or later evening sessions are practical, and many families here mix home visits with online classes for advanced subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/sarjapur-road-in-bangalore-overview-1534",
+        "https://en.wikipedia.org/wiki/Bellandur",
+        "https://en.wikipedia.org/wiki/Outer_Ring_Road,_Bangalore"
+      ]
+    },
+    "jayanagar": {
+      "name": "Jayanagar",
+      "zone": "Jayanagar, JP Nagar & Banashankari",
+      "type": "mixed",
+      "about": "<p>Jayanagar was founded in 1948 as one of the first planned neighbourhoods of Bengaluru and was long treated as the city's southern edge, marked by South End Circle. It is divided into numbered blocks, with the 3rd and 4th Blocks acting as the main shopping and commercial area and the rest largely residential. Much of the housing is independent houses on tree-lined streets, with low-rise apartments added over time.</p><p>The Green Line of Namma Metro has served the area since June 2017 through South End Circle and Jayanagar stations, and Rashtreeya Vidyalaya Road station links the Green Line with the Yellow Line towards BTM Layout and Hosur Road. Neighbours include Basavanagudi, JP Nagar, Banashankari, Wilson Garden and BTM Layout. Because most homes are independent houses, a tutor usually rings the doorbell directly, though parking near the 4th Block shops is tight in the evening, so the metro plus a short auto ride is often simpler. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jayanagar,_Bengaluru",
+        "https://en.wikipedia.org/wiki/Green_Line_(Namma_Metro)",
+        "https://en.wikipedia.org/wiki/Jayanagar_metro_station",
+        "https://www.squareyards.com/sale/independent-houses-for-sale-in-jayanagar-bangalore"
+      ]
+    },
+    "basavanagudi": {
+      "name": "Basavanagudi",
+      "zone": "Jayanagar, JP Nagar & Banashankari",
+      "type": "mixed",
+      "about": "<p>Basavanagudi is one of the oldest residential localities of Bengaluru, lying beside Jayanagar and Lalbagh. It takes its name from the Bull Temple, since basava means bull and gudi means temple in Kannada, and Bugle Rock park is another local landmark. Gandhi Bazaar, on DVG Road, is the busy market street for flowers, fruit and vegetables. Housing is largely older independent houses with gardens, some of them heritage homes, along with low-rise apartment buildings.</p><p>National College station on the Green Line of Namma Metro, open since June 2017, serves Basavanagudi, and Lalbagh and South End Circle stations are also close by, so a tutor can come by metro and walk or take a short auto ride. Independent houses mean a direct doorstep visit, but street parking around Gandhi Bazaar is limited in the evening, so metro travel is the easier choice. Families here often prefer steady weekly slots and use online classes for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Basavanagudi",
+        "https://en.wikipedia.org/wiki/National_College_metro_station",
+        "https://www.squareyards.com/basavanagudi-in-bangalore-overview-3379"
+      ]
+    },
+    "jp-nagar": {
+      "name": "JP Nagar",
+      "zone": "Jayanagar, JP Nagar & Banashankari",
+      "type": "residential",
+      "about": "<p>JP Nagar was developed by the Bangalore Development Authority in the late 1970s and 1980s as the city expanded south. It is split into numbered phases: the early phases lie inside the Outer Ring Road, the middle phases stretch towards Puttenahalli and Arekere, and the later phases reach Gottigere and Anjanapura. The locality is mainly residential, with independent houses, apartments and some villas, and 24th Main Road works as a key internal connector.</p><p>Jaya Prakash Nagar station on the Green Line of Namma Metro opened in June 2017, and Banashankari and Rashtreeya Vidyalaya Road stations are nearby. The Outer Ring Road and Kanakapura Road are the main road links, and neighbours include Jayanagar, Banashankari, BTM Layout, Hulimavu and Kumaraswamy Layout. Since the phases are spread out, parents should share the exact phase and cross road when booking. Houses usually allow a doorstep visit, while apartment complexes need gate entry, and online classes are useful for the outer phases. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/J._P._Nagar,_Bangalore",
+        "https://en.wikipedia.org/wiki/Green_Line_(Namma_Metro)",
+        "https://www.squareyards.com/sale/property-for-sale-in-jp-nagar-bangalore"
+      ]
+    },
+    "banashankari": {
+      "name": "Banashankari",
+      "zone": "Jayanagar, JP Nagar & Banashankari",
+      "type": "residential",
+      "about": "<p>Banashankari is one of the largest localities of Bengaluru, stretching from Mysore Road to Kanakapura Road. It is named after the Banashankari Amma Temple on Kanakapura Road and is divided into six stages: the 1st to 3rd stages lie inside the Outer Ring Road, while the 4th to 6th stages extend into south-west Bengaluru. It is a well-established residential area with a mix of independent homes and apartments.</p><p>Banashankari station on the Green Line of Namma Metro has been open since June 2017, and the area also has a large bus station. Neighbours include Basavanagudi and Hanumanthanagar to the north, Jayanagar and JP Nagar to the east, and Uttarahalli to the south. A tutor visiting the inner stages can often use the metro and walk or take an auto, while the outer stages are easier by road. Independent houses usually mean a direct doorstep visit. Online classes are a practical option for families in the farther stages. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Banashankari",
+        "https://en.wikipedia.org/wiki/Green_Line_(Namma_Metro)",
+        "https://www.squareyards.com/banashankari-in-bangalore-overview-617"
+      ]
+    },
+    "kumaraswamy-layout": {
+      "name": "Kumaraswamy Layout",
+      "zone": "Jayanagar, JP Nagar & Banashankari",
+      "type": "residential",
+      "about": "<p>Kumaraswamy Layout was laid out by the Bangalore Development Authority in the late 1970s and sits within the wider Banashankari area, close to Kanakapura Road and JP Nagar. It has two stages, the first being the larger, and includes nearby pockets such as ISRO Layout, Vasanthapura, Subramanyapura and Yelachenahalli. Housing is mostly detached houses and small or medium apartment buildings rather than large towers.</p><p>Three Green Line stations of Namma Metro, Banashankari, Jaya Prakash Nagar and Yelachenahalli, are close to the area, and BMTC buses link it to central Bengaluru. With so many detached homes, a tutor can usually walk straight up to the door, and street parking is simpler than in the busier commercial areas. Tutors often come from Banashankari, JP Nagar and Jayanagar. Evening traffic on Kanakapura Road builds at peak hours, so an early slot works well, and online sessions cover subjects where a local specialist is harder to find. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kumaraswamy_Layout",
+        "https://www.squareyards.com/kumaraswamy-layout-in-bangalore-overview-696",
+        "https://en.wikipedia.org/wiki/Green_Line_(Namma_Metro)"
+      ]
+    },
+    "kanakapura-road": {
+      "name": "Kanakapura Road",
+      "zone": "Jayanagar, JP Nagar & Banashankari",
+      "type": "residential",
+      "about": "<p>Kanakapura Road runs south from Banashankari and JP Nagar towards Thalaghattapura and on to Kanakapura town. The southern stretch has grown quickly since the Green Line of Namma Metro was extended in January 2021 with stations at Konanakunte Cross, Doddakallasandra, Vajarahalli, Thalaghattapura and Silk Institute. Housing along the corridor is mainly apartment projects and gated communities, with plotted layouts and some villa projects further out.</p><p>The metro makes tutor travel straightforward: a tutor from Jayanagar, Banashankari or Kumaraswamy Layout can ride the Green Line and take a short walk or auto from the nearest station. Most newer homes are in gated societies, so register the tutor at the gate and share the tower and flat number. The NICE Road junction and the main carriageway get busy at office hours, so weekend and later evening slots are easier. For the farther pockets, online classes are a sensible option. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Green_Line_(Namma_Metro)",
+        "https://en.wikipedia.org/wiki/Doddakallasandra_metro_station",
+        "https://www.squareyards.com/kanakapura-road-in-bangalore-overview-3378"
+      ]
+    },
+    "btm-layout": {
+      "name": "BTM Layout",
+      "zone": "BTM, Bannerghatta Road & Electronic City",
+      "type": "mixed",
+      "about": "<p>BTM Layout takes its name from Byrasandra, Tavarekere and Madiwala, the villages it was built around. It sits between Hosur Road and Bannerghatta Road, with the Outer Ring Road dividing the 1st Stage from the later stages. Housing is a mix of independent houses, bungalows, low- and mid-rise apartments and some gated communities, and the main roads are lined with cafes, boutiques and shops, with a large student and young professional population.</p><p>Metro access improved in August 2025 when the Yellow Line opened with BTM Layout and Central Silk Board stations, running from Rashtreeya Vidyalaya Road to Bommasandra. Neighbours include Koramangala, HSR Layout, JP Nagar and Jayanagar. A tutor can come by metro and finish with a short walk or auto ride. Independent houses give a direct doorstep visit, while apartments need gate entry. Silk Board junction is congested at peak hours, so time sessions away from office rush, or use online classes for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BTM_Layout",
+        "https://en.wikipedia.org/wiki/Yellow_Line_(Namma_Metro)",
+        "https://www.squareyards.com/btm-layout-in-bangalore-overview-684"
+      ]
+    },
+    "bannerghatta-road": {
+      "name": "Bannerghatta Road",
+      "zone": "BTM, Bannerghatta Road & Electronic City",
+      "type": "mixed",
+      "about": "<p>Bannerghatta Road branches off Hosur Road near Adugodi and runs south past JP Nagar, Arekere, Hulimavu, Bilekahalli and Gottigere towards Bannerghatta and Anekal. The city stretch combines mid-range apartments, premium gated communities, older homes and residential layouts with hospitals, colleges, offices and busy retail. Grade-separated underpasses carry traffic under its busiest junctions, including Dairy Circle.</p><p>The elevated section of the Pink Line of Namma Metro, from Kalena Agrahara to Tavarekere with stations such as Hulimavu and Jaya Prakash Nagar 4th Phase, is built and awaiting opening. The Yellow Line already crosses the road near the Outer Ring Road and will interchange with the Pink Line there, linking the area to BTM Layout and Hosur Road. Until the Pink Line opens, most tutors come by road. Gated apartments need visitor registration, while older layouts allow a doorstep visit. Peak-hour traffic on the main road is heavy, so agree a slot outside office rush. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bannerghatta_Road",
+        "https://en.wikipedia.org/wiki/Pink_Line_(Namma_Metro)",
+        "https://www.squareyards.com/bannerghatta-road-in-bangalore-overview-3377"
+      ]
+    },
+    "arekere": {
+      "name": "Arekere",
+      "zone": "BTM, Bannerghatta Road & Electronic City",
+      "type": "residential",
+      "about": "<p>Arekere lies on Bannerghatta Road in south Bengaluru, and the main road runs right through it. It is made up of several residential layouts, among them Arekere Mico Layout, a Bangalore Development Authority layout from the late 1970s, along with Ramaswamy Layout, Samrat Layout, Puttenahalli, Bilekahalli and Shantiniketan Layout. Housing mixes older independent houses in these layouts with apartment buildings and gated communities that came up after the early 2000s.</p><p>Vijaya Bank Employees Layout lies to its north-east and Hulimavu to its south-east, with JP Nagar to the west. The Pink Line of Namma Metro along Bannerghatta Road passes through the area; its elevated section is built but not yet open, so for now tutors travel by road or come via the Yellow Line and an auto. Homes in the older layouts allow a doorstep visit, while apartment complexes need gate registration. Plan around office traffic on Bannerghatta Road, and keep online classes for advanced subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Arekere",
+        "https://www.squareyards.com/arekere-in-bangalore-overview-3375",
+        "https://en.wikipedia.org/wiki/Pink_Line_(Namma_Metro)"
+      ]
+    },
+    "bommanahalli": {
+      "name": "Bommanahalli",
+      "zone": "BTM, Bannerghatta Road & Electronic City",
+      "type": "mixed",
+      "about": "<p>Bommanahalli lies along Hosur Road in south Bengaluru, between Silk Board and Electronic City, and gives its name to one of the administrative zones of the city corporation. It has grown as a residential area for people working in Electronic City and along the Outer Ring Road, with apartment buildings and large gated communities beside older houses, colleges and commercial stretches on the highway.</p><p>Bommanahalli station on the Yellow Line of Namma Metro opened in August 2025, with Hongasandra station next to it towards Electronic City and Central Silk Board station in the other direction. The elevated expressway above Hosur Road carries through traffic to Electronic City, while local traffic uses the road below. A tutor from BTM Layout, HSR Layout or Begur can come by metro and take a short auto ride. Gated societies need visitor registration, and evening traffic on Hosur Road is heavy, so choose a slot outside office hours. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bommanahalli",
+        "https://en.wikipedia.org/wiki/Bommanahalli_metro_station",
+        "https://www.squareyards.com/bommanahalli-in-bangalore-overview-658"
+      ]
+    },
+    "begur": {
+      "name": "Begur",
+      "zone": "BTM, Bannerghatta Road & Electronic City",
+      "type": "residential",
+      "about": "<p>Begur is a south-east suburb off Hosur Road with a long history. It was a notable place under the Western Ganga and Chola rulers, and an inscription at the Panchalingeshwara temple is the oldest known reference to a place called Bengaluru. The Nageshwara temple and a small Chola-era circular fort are also here. Today Begur is mainly residential, with modern apartment complexes and gated communities alongside older houses and independent homes.</p><p>Begur Road links the area with Hosur Road on one side and Bannerghatta Road on the other, and tutors often come from nearby HSR Layout, BTM Layout and Bommanahalli. The nearest metro stops are the Yellow Line stations on Hosur Road, opened in August 2025, so tutors usually come by metro and finish by auto, or travel by road. BMTC buses also serve the area. Apartment complexes need gate registration, while houses allow a doorstep visit. Begur Road is busy at peak times, so keep sessions outside office rush hours. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Begur,_Bangalore",
+        "https://www.squareyards.com/begur-in-bangalore-overview-600",
+        "https://www.squareyards.com/begur-road-in-bangalore-overview-3582",
+        "https://en.wikipedia.org/wiki/Yellow_Line_(Namma_Metro)"
+      ]
+    },
+    "electronic-city": {
+      "name": "Electronic City",
+      "zone": "BTM, Bannerghatta Road & Electronic City",
+      "type": "mixed",
+      "about": "<p>Electronic City was set up in 1978 by the state electronics development corporation as an industrial township on Hosur Road, near the villages of Konappana Agrahara and Doddathogur. It is organised in phases, with Phase I and Phase II the main residential and office areas, and it hosts a large number of IT and ITES campuses. Around them are big gated apartment communities, some villas and older village pockets such as Konappana Agrahara, Doddathogur and Carmelaram.</p><p>Two links make tutor travel easier. The elevated expressway from Silk Board to Electronic City opened in January 2010, and the Yellow Line of Namma Metro opened in August 2025 with Electronic City, Konappana Agrahara, Beratena Agrahara and Hosa Road stations nearby. A tutor from Bommanahalli, Begur or BTM Layout can ride the metro and take an auto for the last leg. Most homes are in gated societies with visitor registration. Office shift timings shape local traffic, so plan sessions around them, and use online classes for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Electronic_City",
+        "https://en.wikipedia.org/wiki/Yellow_Line_(Namma_Metro)",
+        "https://en.wikipedia.org/wiki/Hosur_Road",
+        "https://www.squareyards.com/electronic-city-in-bangalore-overview-593"
+      ]
+    },
+    "indiranagar": {
+      "name": "Indiranagar",
+      "zone": "Indiranagar & Old Airport Road",
+      "type": "mixed",
+      "about": "<p>Indiranagar in east Bengaluru was formed as a Bangalore Development Authority layout in the late 1970s and began as a quiet suburb of large bungalows and independent houses. Since the IT boom it has become a mix of homes and busy commercial streets, with older independent houses standing alongside apartment buildings and builder floors. 100 Feet Road, CMH Road and 80 Feet Road are the main arteries, and neighbouring pockets include HAL 2nd and 3rd Stages, Binnamangala, Kodihalli, Thippasandra, Domlur and CV Raman Nagar.</p><p>The Purple Line runs through the locality, with Indiranagar and Swami Vivekananda Road stations open since 2011, so a tutor coming by metro usually has only a short walk or auto ride to the door. In independent houses the tutor reaches the doorstep directly, while apartment buildings may ask for a name at the gate. The shopping stretches of 100 Feet Road and CMH Road fill up in the evenings, so sessions that start before the evening rush are easier to keep regular. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Indiranagar,_Bangalore",
+        "https://en.wikipedia.org/wiki/Purple_Line_(Namma_Metro)",
+        "https://www.squareyards.com/indiranagar-in-bangalore-overview-668"
+      ]
+    },
+    "domlur": {
+      "name": "Domlur",
+      "zone": "Indiranagar & Old Airport Road",
+      "type": "mixed",
+      "about": "<p>Domlur is one of the older localities of east Bengaluru. It was part of the Civil and Military Station until 1949 and has a Chola-era temple with Tamil inscriptions. It sits where Old Airport Road, 100 Feet Road and the Inner Ring Road meet at the Domlur flyover, opened in 2006. Housing is a mix of independent houses, builder floors and apartments, with office parks close by. Neighbouring areas include Indiranagar, HAL 2nd Stage, Kodihalli, Defence Colony and Jogupalya.</p><p>Domlur has no metro station of its own; the nearest is Indiranagar on the Purple Line, so tutors arriving by metro usually take an auto or bus for the last stretch. The large bus terminus at Domlur helps tutors who travel by BMTC. Because the flyover junction carries heavy office traffic, families often find mid-afternoon or weekend sessions easier to schedule than slots at office closing time. For independent houses the tutor comes straight to the door; apartment buildings may keep a visitor log at the gate. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Domlur",
+        "https://www.squareyards.com/domlur-in-bangalore-overview-1764"
+      ]
+    },
+    "cv-raman-nagar": {
+      "name": "CV Raman Nagar",
+      "zone": "Indiranagar & Old Airport Road",
+      "type": "mixed",
+      "about": "<p>CV Raman Nagar, sometimes called Greater Indiranagar, lies east of Indiranagar between Kaggadasapura and Baiyappanahalli. Housing ranges from a government research staff township to independent houses, older apartment blocks and newer gated communities, and a large tech park sits inside the locality. Old Madras Road runs along one side, while Kaggadasapura Main Road serves the residential streets towards Kaggadasapura.</p><p>Baiyappanahalli, one of the first Purple Line stations opened in 2011, is the closest metro stop, so a tutor can come by metro and finish the trip by auto. Visits inside the township or a gated community usually need the family to register the tutor at the gate in advance, while independent houses are simple doorstep visits. Old Madras Road and the tech park approach roads fill up at office hours, so after-school slots that avoid shift changes work well. Families who want a specialist subject teacher often combine home visits with online classes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/C._V._Raman_Nagar",
+        "https://www.squareyards.com/cv-raman-nagar-in-bangalore-overview-622",
+        "https://en.wikipedia.org/wiki/Baiyappanahalli_metro_station"
+      ]
+    },
+    "whitefield": {
+      "name": "Whitefield",
+      "zone": "Whitefield, Marathahalli & KR Puram",
+      "type": "mixed",
+      "about": "<p>Whitefield began in 1882 as a settlement on land granted to the Eurasian and Anglo-Indian Association and stayed a small village until the late 1990s, when a large IT park opened here. Today it is a large residential and office district of apartment towers, gated villa communities, independent houses and builder floors. Neighbouring areas include Kadugodi, Hoodi, Varthur, Brookefield, Hagadur and Mahadevapura.</p><p>The Purple Line reached Whitefield in March 2023, with stations including Kundalahalli, Pattandur Agrahara, Kadugodi Tree Park, Hopefarm Channasandra and the terminus at Whitefield (Kadugodi), and Whitefield railway station is on the Bengaluru to Chennai line. Many tutors come by metro and take an auto for the last leg. Gated communities usually need tutor details registered with security before the first class. Whitefield Main Road, ITPL Road and the Hope Farm junction are busy at office hours, so evening sessions run more smoothly when timed away from shift changes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Whitefield,_Bangalore",
+        "https://en.wikipedia.org/wiki/Whitefield_(Kadugodi)_metro_station",
+        "https://www.squareyards.com/whitefield-in-bangalore-overview-591"
+      ]
+    },
+    "marathahalli": {
+      "name": "Marathahalli",
+      "zone": "Whitefield, Marathahalli & KR Puram",
+      "type": "mixed",
+      "about": "<p>Marathahalli is a major eastern suburb built around the junction of the Outer Ring Road and Old Airport Road, where a bridge carries Old Airport Road over the railway line. It links the older city with the Whitefield and ORR office belts, and its housing is a dense mix of apartment complexes, builder floors and independent houses on the side lanes. Nearby localities include Kundalahalli, Munnekollal, Kadubeesanahalli, Brookefield and Doddanekundi.</p><p>There is no metro station yet: a Marathahalli station is under construction on the Blue Line between Central Silk Board and KR Puram, with opening planned for December 2027. The nearest rail stop is Bellandur Road station, so most tutors arrive by bus, two-wheeler or cab. The ORR junction is one of the city's heaviest traffic points, which makes a tutor living on the same side of the ORR the practical choice, with late-afternoon or weekend slots for regular classes. Apartment complexes typically ask for visitor registration at the gate. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Marathahalli",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Namma_Metro)",
+        "https://www.squareyards.com/marathahalli-in-bangalore-overview-615"
+      ]
+    },
+    "kr-puram": {
+      "name": "KR Puram",
+      "zone": "Whitefield, Marathahalli & KR Puram",
+      "type": "mixed",
+      "about": "<p>Krishnarajapuram, usually called KR Puram, is the headquarters of Bengaluru East taluk and a transport hub where Old Madras Road meets the Outer Ring Road. Its railway station on the Bengaluru to Chennai line is crossed by a cable-stayed bridge opened in 2003, and Vengayyana Lake sits in the heart of the area. Housing is mostly apartments, with independent houses, builder floors and plots on the older streets. Neighbours include Ramamurthy Nagar, Mahadevapura and Dooravani Nagar.</p><p>Krishnarajapura metro station on the Purple Line opened in March 2023 and was linked west to Baiyappanahalli through Benniganahalli in October 2023, so tutors from Indiranagar, CV Raman Nagar or Whitefield can reach KR Puram directly by train. A Blue Line interchange towards Central Silk Board and the airport is under construction. Tutors walking or taking an auto from the station should allow extra time around the Old Madras Road and ORR junction during office peaks. Apartment gates may ask for a visitor entry. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Krishnarajapuram",
+        "https://en.wikipedia.org/wiki/Krishnarajapura_metro_station",
+        "https://en.wikipedia.org/wiki/Benniganahalli_metro_station",
+        "https://www.squareyards.com/kr-puram-in-bangalore-overview-590"
+      ]
+    },
+    "mahadevapura": {
+      "name": "Mahadevapura",
+      "zone": "Whitefield, Marathahalli & KR Puram",
+      "type": "mixed",
+      "about": "<p>Mahadevapura in east Bengaluru was once a separate city municipal council and is now an administrative zone and an assembly constituency. It lies between KR Puram to the north and Hoodi to the south, with Doddanekundi and Marathahalli nearby, and forms part of the city's main IT belt along the Outer Ring Road and Whitefield Road. Housing is largely apartment complexes and gated communities, with some villas, builder floors and plots.</p><p>Singayyanapalya station on the Purple Line, earlier named Mahadevapura, opened on Whitefield Main Road in March 2023, with Garudacharapalya and Hoodi stations further east, and KR Puram is the nearest mainline railway station. A tutor coming by metro usually covers the final stretch by auto. Most families live in societies where the tutor must be registered at the gate, and some ask for photo ID on the first visit. With office traffic on the ORR and Whitefield Main Road, early-evening sessions start more reliably when the tutor lives within the same belt. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mahadevapura",
+        "https://en.wikipedia.org/wiki/Singayyanapalya_metro_station",
+        "https://www.squareyards.com/mahadevpura-in-bangalore-overview-628"
+      ]
+    },
+    "brookefield": {
+      "name": "Brookefield",
+      "zone": "Whitefield, Marathahalli & KR Puram",
+      "type": "mixed",
+      "about": "<p>Brookefield was set up in the late nineteenth century as an Anglo-Indian settlement and grew quickly from the late 1990s as offices spread along ITPL Road. Today it is mostly apartment complexes, with some villas and plots, and it borders Whitefield, Kundalahalli, Marathahalli, Varthur, Kadugodi, Hoodi and the EPIP Zone. Varthur Road is the main four-lane link back towards the city.</p><p>Kundalahalli station on the Purple Line, opened in March 2023, sits on the Brookefield side of the EPIP Zone, so tutors from Indiranagar, KR Puram or Whitefield can reach the area by metro and finish on foot or by auto. Most homes are in gated complexes, so the family should add the tutor to the visitor list before the demo class. ITPL Road and the approaches to the ORR are busy at the start and end of the office day, so weekday sessions fit well in the gap between school hours and the evening rush. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Brookefield",
+        "https://en.wikipedia.org/wiki/Kundalahalli_metro_station",
+        "https://www.squareyards.com/brookefield-in-bangalore-overview-637"
+      ]
+    },
+    "hennur": {
+      "name": "Hennur",
+      "zone": "Hennur, Kalyan Nagar & Banaswadi",
+      "type": "residential",
+      "about": "<p>Hennur lies in north-east Bengaluru along Hennur Road, just outside the Outer Ring Road, and has grown from a quiet suburb into a busy residential area. Housing is varied: apartment complexes and gated villa communities along the main road, with independent houses, builder floors and plots in the layouts behind. Neighbouring areas include Kalyan Nagar, HRBR Layout, HBR Layout, Kothanur and Byrathi.</p><p>Hennur has no metro station yet. The nearest planned stops are HRBR Layout and Kalyana Nagara on the Blue Line from KR Puram to the airport, due in December 2028, so for now tutors mostly come by bus, two-wheeler or cab. Hennur Road carries steady traffic towards the ORR, which is why weekday sessions go more smoothly with a tutor who already lives in Hennur, Kalyan Nagar or Kothanur. Gated communities usually ask families to pre-register the tutor at the gate, while independent houses are simple doorstep visits. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/hennur-in-bangalore-overview-597",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Namma_Metro)",
+        "https://en.wikipedia.org/wiki/Kalyan_Nagar"
+      ]
+    },
+    "kalyan-nagar": {
+      "name": "Kalyan Nagar",
+      "zone": "Hennur, Kalyan Nagar & Banaswadi",
+      "type": "residential",
+      "about": "<p>Kalyan Nagar is a settled residential area in north-east Bengaluru, near Banaswadi and Horamavu, with Hennur Road on one side and the Outer Ring Road close by. It is often taken to include HRBR Layout and Chelekere, and its organised colony streets hold independent houses and builder floors alongside newer apartment blocks. Kammanahalli and Hennur are next door, and the area is known for its cafe and restaurant streets.</p><p>A Blue Line station named Kalyana Nagara is being built on the ORR section from KR Puram to the airport, with opening planned for December 2028. Until then, tutors arrive mainly by bus, two-wheeler or cab. Because most homes are independent houses or small buildings, the tutor usually comes straight to the door, though two-wheeler parking near the cafe stretches can be tight in the evening. Weekday sessions right after school tend to avoid the worst of the ORR office traffic. Online classes suit families wanting a specialist subject tutor. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kalyan_Nagar",
+        "https://www.squareyards.com/kalyan-nagar-in-bangalore-overview-688",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Namma_Metro)"
+      ]
+    },
+    "hrbr-layout": {
+      "name": "HRBR Layout",
+      "zone": "Hennur, Kalyan Nagar & Banaswadi",
+      "type": "residential",
+      "about": "<p>HRBR Layout is a planned residential layout in north-east Bengaluru, often counted as part of Kalyan Nagar, organised into numbered blocks with wide roads and parks. Most homes are independent houses and multi-floor builder buildings on individual sites, with a smaller number of apartments. Banaswadi, Lingarajapuram, Kalyan Nagar and Channasandra lie close by, and the Outer Ring Road runs along its edge.</p><p>The Blue Line under construction between KR Puram and the airport has a station named HRBR Layout, with opening planned for December 2028. Until it opens, tutors come by bus, two-wheeler or cab. The block and cross numbering makes addresses easy to find, and in most houses the family simply meets the tutor at the door, so there is no gate registration to arrange. Evening office traffic on the ORR is the main timing factor, so after-school slots work well for regular classes, and online sessions can cover specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/hrbr-layout-in-bangalore-overview-3607",
+        "https://en.wikipedia.org/wiki/Kalyan_Nagar",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Namma_Metro)"
+      ]
+    },
+    "banaswadi": {
+      "name": "Banaswadi",
+      "zone": "Hennur, Kalyan Nagar & Banaswadi",
+      "type": "residential",
+      "about": "<p>Banaswadi in north-east Bengaluru was once little more than a village on the city's edge and has grown into a largely residential area with busier commercial streets. Housing is a mix of independent houses, bungalows, builder floors and apartments. It is bounded by Lingarajapuram, Nagawara, Thanisandra, Krishnarajapuram, Benniganahalli, Baiyappanahalli and Maruthi Sevanagar, with Kammanahalli, HRBR Layout and Kalyan Nagar alongside.</p><p>Banaswadi railway station, on the line linking Yesvantpur and Baiyappanahalli, sits in Maruthi Sevanagar, and the Outer Ring Road connects the area to the eastern IT belt. The nearest metro stations are Baiyappanahalli, Benniganahalli and Swami Vivekananda Road on the Purple Line, so a tutor taking the metro usually needs an auto or bus for the last part. Many homes are independent houses where the tutor comes straight to the door. Banaswadi Main Road gets busy at office hours, so late-afternoon slots are easier to keep. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Banaswadi",
+        "https://en.wikipedia.org/wiki/Banaswadi_railway_station",
+        "https://www.squareyards.com/banaswadi-in-bangalore-overview-692"
+      ]
+    },
+    "thanisandra": {
+      "name": "Thanisandra",
+      "zone": "Hennur, Kalyan Nagar & Banaswadi",
+      "type": "residential",
+      "about": "<p>Thanisandra is a north Bengaluru neighbourhood on the route towards Kempegowda International Airport, adjoining Hebbal, Nagawara and Kammanahalli, with Kothanur close by. Once a small village area, it has filled with apartment complexes as professionals moved north, and most homes today are flats in gated societies, with some independent houses along the older lanes. Thanisandra Main Road and the Outer Ring Road are the main connecting roads.</p><p>There is no metro station in Thanisandra itself. Nagawara, next door, is a station under construction on the Blue Line from KR Puram to the airport, planned for December 2028, so for now tutors come by bus, two-wheeler or cab. Since most families live in gated societies, share the tutor's name and phone number with the security desk before the demo. Thanisandra Main Road carries heavy office traffic, so weekend and after-school slots are the easiest to keep. Online classes suit families looking for a specialist subject tutor. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Thanisandra",
+        "https://www.squareyards.com/thanisandra-in-bangalore-overview-592",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Namma_Metro)"
+      ]
+    },
+    "hebbal": {
+      "name": "Hebbal",
+      "zone": "Hebbal, RT Nagar & Yelahanka",
+      "type": "mixed",
+      "about": "<p>Hebbal in north Bengaluru is known for its lake and for the large flyover where the Outer Ring Road meets Bellary Road (NH 44), the main road to Kempegowda International Airport. Housing ranges from high-rise apartments and gated societies to mid-range flats, independent houses and villas. Neighbouring areas include Kanaka Nagar, Nagavara, Kaval Byrasandra, Ganga Nagar and Mathikere, with Hennur and Yelahanka further out.</p><p>There is no metro yet: Hebbala station is under construction on the Blue Line from KR Puram to the airport, planned for December 2028, and Hebbal also has a railway station. Most tutors come by bus, two-wheeler or cab. The flyover and Bellary Road carry heavy airport and office traffic, so a tutor who lives on the same side of the flyover is more reliable for weekday evenings. Gated societies need visitor registration; independent houses on the older side streets are simple doorstep visits. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hebbal,_Bengaluru",
+        "https://www.squareyards.com/hebbal-in-bangalore-overview-609",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Namma_Metro)"
+      ]
+    },
+    "rt-nagar": {
+      "name": "RT Nagar",
+      "zone": "Hebbal, RT Nagar & Yelahanka",
+      "type": "residential",
+      "about": "<p>RT Nagar, short for Rabindranath Tagore Nagar, is a long-established residential area in north Bengaluru made up of two blocks. Its lanes hold independent houses, builder floors and a smaller number of apartments, often with shops on the ground floor and homes above. Schools, markets and parks sit within the locality, and roads lead out to Hebbal, Yeshwanthpur and the city centre, which makes it a practical family address.</p><p>RT Nagar has no metro station, so tutors generally arrive by BMTC bus, two-wheeler or auto; the nearest metro will be Hebbala on the Blue Line, planned for December 2028. Because most homes are independent houses or small buildings, the tutor usually reaches the doorstep directly, though parking a two-wheeler on the busier market lanes needs some care. Tutors living in RT Nagar or Hebbal can often fit in regular weekday evening visits without crossing the Hebbal flyover at peak time. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/R._T._Nagar",
+        "https://www.squareyards.com/rt-nagar-in-bangalore-overview-1447",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Namma_Metro)"
+      ]
+    },
+    "yelahanka": {
+      "name": "Yelahanka",
+      "zone": "Hebbal, RT Nagar & Yelahanka",
+      "type": "mixed",
+      "about": "<p>Yelahanka is an old town in north Bengaluru that predates the city itself. It is split into Yelahanka Old Town and Yelahanka New Town, a planned township developed by the Karnataka Housing Board in the early 1980s. Housing includes independent houses and plots in the New Town layouts, older homes in the Old Town and a growing number of apartment complexes. The Yelahanka Air Force Station, host of the Aero India show, is here, and Jakkur, Puttenahalli and Attur are nearby.</p><p>Bellary Road (NH 44) runs through Yelahanka towards Kempegowda International Airport, and Doddaballapur Road crosses the area. Yelahanka Junction is a railway junction, and a Yelahanka station is under construction on the Blue Line, planned for December 2028. Until the metro opens, tutors come by bus, two-wheeler or train. In New Town houses the tutor usually comes straight to the door, while apartment societies ask for gate registration. With airport traffic on Bellary Road, a tutor from Yelahanka itself suits regular weekday classes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Yelahanka",
+        "https://www.squareyards.com/yelahanka-in-bangalore-overview-610",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Namma_Metro)"
+      ]
+    },
+    "malleshwaram": {
+      "name": "Malleshwaram",
+      "zone": "Malleshwaram, Rajajinagar & Yeshwanthpur",
+      "type": "residential",
+      "about": "<p>Malleshwaram is one of Bengaluru's oldest planned neighbourhoods, laid out in 1889 and named after the Kadu Malleshwara temple. Its grid of cross roads and mains is organised around Sampige Road and Margosa Road, with Rajajinagar, Yeshwanthpur, Seshadripuram and Sadashivanagar as neighbours. Housing is a mix of older independent houses, many now being rebuilt as small apartment blocks, and newer 2 and 3 BHK flats.</p><p>For families here, most tutor visits are straight to the doorstep of a house or a small building, so there is rarely a society gate to register at. The Green Line serves the area through Sampige Road, Srirampura and Sandal Soap Factory stations, and Malleswaram railway station sits nearby, so tutors from Rajajinagar or further along the line can come by metro and finish with a short auto ride. The main market roads get busy in the evening, which makes a slightly earlier slot easier for everyone. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Malleshwaram",
+        "https://www.nobroker.in/locality-iq/malleswaram-bangalore-liqlt",
+        "https://en.wikipedia.org/wiki/Green_Line_(Namma_Metro)"
+      ]
+    },
+    "sadashivanagar": {
+      "name": "Sadashivanagar",
+      "zone": "Malleshwaram, Rajajinagar & Yeshwanthpur",
+      "type": "residential",
+      "about": "<p>Sadashivanagar was built in the 1960s and 1970s on former royal gardens and was known as Palace Orchards until it was renamed. It lies east of Malleshwaram, with Vyalikaval and Palace Guttahalli to the south, the palace grounds to the east and Hebbal to the north. Sankey Tank, with its walking trail, is the local landmark.</p><p>Homes are mostly large independent houses and bungalows on wide, quiet roads, with a smaller number of apartment buildings, including some on Bellary Road. Many houses have security staff at the gate, so parents usually share the tutor's name in advance. There is no metro station inside the locality; tutors coming by Green Line typically get off at one of the Malleshwaram stations and take an auto for the last stretch, or come by road along Bellary Road. Evening traffic on Bellary Road is heavy, so tutors often prefer an early or late slot. For specialist board subjects, online classes are a practical option alongside home visits. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sadashivanagar",
+        "https://www.99acres.com/independent-house-in-sadashiva-nagar-bangalore-north-ffid",
+        "https://en.wikipedia.org/wiki/Malleshwaram"
+      ]
+    },
+    "rajajinagar": {
+      "name": "Rajajinagar",
+      "zone": "Malleshwaram, Rajajinagar & Yeshwanthpur",
+      "type": "mixed",
+      "about": "<p>Rajajinagar was inaugurated in 1949 as a planned suburb, with its land divided between housing plots and an industrial area that still exists as the Rajajinagar Industrial Suburb. It is organised into numbered blocks and borders Malleshwaram, Basaveshwaranagar, Mahalakshmi Layout and Vijayanagar. Chord Road, Magadi Road and Tumkur Road are the main roads around it.</p><p>The housing is a mix of independent houses on the original plots and apartment buildings that have replaced many of them, so a tutor may walk straight to a front door or check in at a building gate. The Green Line runs along Chord Road with Rajajinagar and Kuvempu Road stations, which makes the metro plus a short walk or auto the easiest way in for tutors from Malleshwaram, Yeshwanthpur or the city centre. Street parking is tight on the busier block roads, and Chord Road is slow at peak hours, so plan the class time around that. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rajajinagar",
+        "https://www.nobroker.in/locality-iq/rajajinagar-bangalore-liqlt",
+        "https://en.wikipedia.org/wiki/Rajajinagar_metro_station"
+      ]
+    },
+    "mahalakshmi-layout": {
+      "name": "Mahalakshmi Layout",
+      "zone": "Malleshwaram, Rajajinagar & Yeshwanthpur",
+      "type": "residential",
+      "about": "<p>Mahalakshmi Layout is a residential neighbourhood in north-west Bengaluru, next to Rajajinagar, Basaveshwaranagar and Yeshwanthpur, and with Nandini Layout, Kurubarahalli and Nagapura it forms one of the larger residential stretches in this part of the city. It is sometimes called Temple Layout, after the Hanuman temple that is its most familiar landmark.</p><p>Homes are largely independent houses and builder-built floors on layout plots, with some 2 and 3 BHK apartment buildings, so most tutors arrive at the doorstep rather than a society gate. Chord Road and Tumkur Road run along its edges. The Green Line's Mahalakshmi station on Chord Road serves the layout, with Rajajinagar station close by, so tutors can use the metro and a short auto ride from Malleshwaram, Rajajinagar or Yeshwanthpur. Chord Road slows in the evening rush, so it helps to agree a slot that avoids it. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mahalakshmi_Layout",
+        "https://www.nobroker.in/locality-iq/mahalakshmi-layout-bangalore-liqlt",
+        "https://en.wikipedia.org/wiki/Mahalakshmi_metro_station"
+      ]
+    },
+    "yeshwanthpur": {
+      "name": "Yeshwanthpur",
+      "zone": "Malleshwaram, Rajajinagar & Yeshwanthpur",
+      "type": "mixed",
+      "about": "<p>Yeshwanthpur sits north of Malleshwaram in north-west Bengaluru and is widely known for Yesvantpur Junction, a railway station commissioned in 1881, and for the city's largest wholesale market for agricultural produce. Tumkur Road runs through it, and industrial areas sit alongside the housing, with Peenya, Jalahalli, Nandini Layout and Mahalakshmi Layout nearby.</p><p>Residential options range from older houses in pockets like Subedarpalya to gated apartment complexes, so check whether your building needs visitors to register at the gate before the first class. The Green Line's Yeshwanthpur station stands on Tumkur Road opposite the railway junction, and Goraguntepalya is the next stop north, which makes metro plus auto the natural route for tutors from Malleshwaram, Rajajinagar or Peenya. Tumkur Road carries heavy traffic at peak hours, so weekday evening classes work better slightly later. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Yeshwanthpur",
+        "https://www.nobroker.in/locality-iq/yeshwanthpur-bangalore-liqlt",
+        "https://en.wikipedia.org/wiki/Yeshwanthpur_metro_station"
+      ]
+    },
+    "basaveshwaranagar": {
+      "name": "Basaveshwaranagar",
+      "zone": "Vijayanagar, RR Nagar & Kengeri",
+      "type": "residential",
+      "about": "<p>Basaveshwaranagar grew in the 1970s and 1980s as an extension west of Chord Road, which is why older residents still call it West of Chord Road. It lies west of Rajajinagar, with Mahalakshmi Layout to the north, Vijayanagar to the south and Kamakshipalya nearby. Several employer housing layouts were developed here, and the terrain is hilly, with some steep streets.</p><p>It is a settled, green residential area of independent houses and 2 and 3 BHK apartment buildings. For a tutor this usually means ringing the bell at a house or a small building, with street parking available on most inner roads. There is no metro station inside the locality: tutors typically use Rajajinagar on the Green Line or Vijayanagar on the Purple Line and take an auto for the last leg. Chord Road is the main approach and gets crowded at school and office hours, so a mid-evening class is easier to reach on time. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Basaveshwaranagar",
+        "https://www.nobroker.in/locality-iq/basaveshwara-nagar-bangalore-liqlt",
+        "https://en.wikipedia.org/wiki/Rajajinagar_metro_station"
+      ]
+    },
+    "vijayanagar": {
+      "name": "Vijayanagar",
+      "zone": "Vijayanagar, RR Nagar & Kengeri",
+      "type": "residential",
+      "about": "<p>Vijayanagar is a residential neighbourhood in west Bengaluru, named after the Vijayanagara Empire and lying between Mysore Road and Magadi Road, with Chord Road passing through. Basaveshwaranagar and Rajajinagar lie to the north, Deepanjali Nagar and Chandra Layout to the south, and Nagarbhavi and Kamakshipalya to the west. Hampinagar, Saraswatinagar, Govindrajnagar and Attiguppe are among its sub-localities.</p><p>Tree-lined streets of independent houses make up much of the area, with apartment buildings mixed in, so most home tutors simply walk up to the door. Metro access is strong: the Purple Line stations at Vijayanagar, Attiguppe and Hosahalli opened in November 2015, and a large bus terminal sits near Attiguppe station. Tutors from Rajajinagar, the city centre or RR Nagar can come by metro and walk or take an auto. Chord Road and Magadi Road fill up at peak hours, so allow for that when fixing a weekday slot. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vijayanagar,_Bangalore",
+        "https://www.nobroker.in/locality-iq/vijayanagar-bangalore-liqlt",
+        "https://en.wikipedia.org/wiki/Purple_Line_(Namma_Metro)"
+      ]
+    },
+    "nagarbhavi": {
+      "name": "Nagarbhavi",
+      "zone": "Vijayanagar, RR Nagar & Kengeri",
+      "type": "residential",
+      "about": "<p>Nagarbhavi lies in west Bengaluru between Mysore Road and Magadi Road, with Vijayanagar and Chandra Layout on one side and a large university campus area nearby. It is divided into 1st Stage and 2nd Stage, and the 2nd Stage was laid out by the Bangalore Development Authority in numbered blocks, with named layouts such as Annapoorneshwari Nagar, Vinayaka Layout and NGEF Layout.</p><p>Housing is mostly independent houses on plotted BDA layouts, with apartment buildings on some main roads, which means doorstep visits and usually easy parking for a tutor on a two-wheeler. The Outer Ring Road runs past the area and is the main link to other parts of west Bengaluru. The nearest metro stations are Vijayanagar and Attiguppe on the Purple Line, so tutors without their own vehicle generally combine the metro with an auto. For higher-level board subjects, online sessions can supplement a local home tutor. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Nagarbhavi",
+        "https://www.nobroker.in/locality-iq/bda-layout-nagarbhavi-bangalore-liqlt",
+        "https://en.wikipedia.org/wiki/Purple_Line_(Namma_Metro)"
+      ]
+    },
+    "rr-nagar": {
+      "name": "RR Nagar (Rajarajeshwari Nagar)",
+      "zone": "Vijayanagar, RR Nagar & Kengeri",
+      "type": "residential",
+      "about": "<p>Rajarajeshwari Nagar, usually shortened to RR Nagar, is a suburb in south-west Bengaluru along Mysore Road, entered through a well-known arch on the main road. Nagarbhavi lies to the north and north-west, Hosakerehalli to the east and Kengeri to the south-west. It takes its name from the Rajarajeshwari temple, whose foundation was laid in the early 1960s.</p><p>The locality mixes independent houses on older layouts with a growing number of apartment projects, some of them gated, so families in complexes should add the tutor to the visitor list before the first class. Rajarajeshwari Nagar station on the Purple Line opened in August 2021, with Pantharapalya-Nayandahalli and Jnanabharathi stations on either side, giving tutors from Vijayanagar or Kengeri a direct metro ride and a short auto to the house. Mysore Road and the Outer Ring Road are the main routes and are slow in office hours, so evening classes are easier a little later. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rajarajeshwari_Nagar",
+        "https://www.nobroker.in/locality-iq/rr-nagar-bangalore-liqlt",
+        "https://en.wikipedia.org/wiki/Purple_Line_(Namma_Metro)"
+      ]
+    },
+    "kengeri": {
+      "name": "Kengeri",
+      "zone": "Vijayanagar, RR Nagar & Kengeri",
+      "type": "residential",
+      "about": "<p>Kengeri is a western suburb on Mysore Road, first developed as a satellite town by the Bangalore Development Authority and later brought inside city limits. It borders Rajarajeshwari Nagar to the east, Nagarbhavi and Ullal to the north, Uttarahalli to the south and Kumbalgodu to the west, and has access to the NICE Road and the Bengaluru-Mysuru Expressway.</p><p>Homes range from independent houses and builder floors in the satellite town layouts to newer gated apartment complexes and plotted developments, so the first visit may involve either a front door or a society gate. Transit is a strength here. The Purple Line's Pattanagere, Kengeri Bus Terminal and Kengeri stations opened in August 2021, with Challaghatta added in October 2023, and Kengeri railway station on the Mysuru-Bengaluru line sits near the metro. That lets tutors from Vijayanagar or RR Nagar travel by metro; Mysore Road traffic matters mainly for those coming by road at rush hour. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kengeri",
+        "https://www.nobroker.in/locality-iq/kengeri-bangalore-liqlt",
+        "https://en.wikipedia.org/wiki/Kengeri_railway_station",
+        "https://en.wikipedia.org/wiki/Purple_Line_(Namma_Metro)"
+      ]
+    },
+    "frazer-town": {
+      "name": "Frazer Town",
+      "zone": "Frazer Town, Richmond Town & Ulsoor",
+      "type": "mixed",
+      "about": "<p>Frazer Town, officially Pulakeshi Nagar, was founded in 1906 as part of the old Cantonment side of central Bengaluru. Mosque Road, Coles Road and Promenade Road are among its main streets, and it sits beside Cooke Town, Cox Town, Benson Town and Richards Town. Bangalore East railway station, a British-era station, is on its edge.</p><p>The housing is a mix of heritage bungalows, older independent homes and multi-storey apartments, with a few gated complexes, so a tutor may be buzzed in at a building gate or simply walk up to the house. There is no metro station open in Frazer Town yet; the Pink Line's underground Pottery Town station nearby is under construction, so for now tutors usually come by road or combine a Purple Line ride with an auto. Its shopping streets get crowded in the evenings, so parents often choose an afternoon or early evening class. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Frazer_Town",
+        "https://www.nobroker.in/locality-iq/frazer-town-bangalore-liqlt",
+        "https://en.wikipedia.org/wiki/Pottery_Town_metro_station"
+      ]
+    },
+    "cooke-town": {
+      "name": "Cooke Town",
+      "zone": "Frazer Town, Richmond Town & Ulsoor",
+      "type": "residential",
+      "about": "<p>Cooke Town was laid out around 1900 and is one of the older Cantonment neighbourhoods of central Bengaluru. It is surrounded by Frazer Town, Cox Town, Pottery Town, Richards Town and Kadamba Nagara, and it keeps some of its colonial-era streetscape with parks and quiet lanes.</p><p>Many of the old bungalows have been replaced by apartment buildings, so homes today are a blend of independent houses, low-rise flats and some gated apartments. That means tutors may register with a guard in a complex or ring the bell of a house. Bangalore East and Banaswadi railway stations are close by, and the Pink Line's Pottery Town station, still under construction, will serve this side of the city; until it opens, tutors mostly arrive by road or by Purple Line and auto. Weekday evening traffic toward the main roads is heavy, so an early slot helps. For specialist subjects, online classes are an easy addition. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cooke_Town",
+        "https://www.nobroker.in/locality-iq/cooke-town-bangalore-liqlt",
+        "https://en.wikipedia.org/wiki/Pottery_Town_metro_station"
+      ]
+    },
+    "richmond-town": {
+      "name": "Richmond Town",
+      "zone": "Frazer Town, Richmond Town & Ulsoor",
+      "type": "mixed",
+      "about": "<p>Richmond Town was established in 1883 as part of the Bangalore Cantonment and is now a central residential area. It is bordered by Shanthinagar, Langford Town and Ashok Nagar, and Richmond Road, Langford Road and Hosur Road are the main roads through and around it. The Brigade Road shopping area is close by.</p><p>Housing ranges from older colonial-era blocks and houses to modern apartment buildings, many with a guard at the entrance, so parents should give the tutor's details at the gate. The nearest open metro station is MG Road on the Purple Line, and tutors usually take an auto from there. Central roads such as Richmond Road and Hosur Road are congested at office hours, which makes a later evening or weekend slot more reliable for home classes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Richmond_Town",
+        "https://www.nobroker.in/locality-iq/richmond-town-bangalore-liqlt",
+        "https://en.wikipedia.org/wiki/Purple_Line_(Namma_Metro)"
+      ]
+    },
+    "ulsoor": {
+      "name": "Ulsoor (Halasuru)",
+      "zone": "Frazer Town, Richmond Town & Ulsoor",
+      "type": "mixed",
+      "about": "<p>Ulsoor, officially Halasuru, is one of the oldest neighbourhoods in Bengaluru, near the eastern end of MG Road. Its name comes from a jackfruit orchard beside Halasuru Lake, a tank built by Kempe Gowda II that is still the area's centrepiece. A British military station was set up here in 1807, and the locality is also known for its temples and markets. Indiranagar, Jogupalya and Cambridge Layout are its neighbours.</p><p>Homes include old independent houses in the lanes near the temples, standalone apartment buildings and some gated societies, so tutors may park on the street or sign in at a gate. Metro access is good: Trinity and Halasuru stations on the Purple Line, part of the first section opened in October 2011, serve the area, with Halasuru station on Old Madras Road. Tutors from Indiranagar or the city centre can come straight by metro. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ulsoor",
+        "https://www.squareyards.com/halasuru-in-bangalore-overview-10406",
+        "https://en.wikipedia.org/wiki/Purple_Line_(Namma_Metro)"
+      ]
+    }
+  },
+  "zone_facts": {
+    "Koramangala, HSR & Bellandur": [
+      {
+        "fact": "HSR Layout (Hosur Sarjapur Road Layout) was initially developed by the Bangalore Development Authority in 1985 and is divided into seven sectors.",
+        "source": "https://en.wikipedia.org/wiki/HSR_Layout"
+      },
+      {
+        "fact": "Koramangala is divided into eight blocks, with the Inner Ring Road separating blocks 1-4 from blocks 5-8.",
+        "source": "https://en.wikipedia.org/wiki/Koramangala"
+      },
+      {
+        "fact": "The Outer Ring Road, built by the Bangalore Development Authority in sections between 1996 and 2002, passes through HSR Layout and on towards Marathahalli.",
+        "source": "https://en.wikipedia.org/wiki/Outer_Ring_Road,_Bangalore"
+      },
+      {
+        "fact": "The Outer Ring Road passes through Bellandur, making it a transit point between east and south Bengaluru.",
+        "source": "https://en.wikipedia.org/wiki/Bellandur"
+      },
+      {
+        "fact": "The Blue Line of Namma Metro (Central Silk Board to KR Puram, Phase 2A) is under construction along the Outer Ring Road with stations including HSR Layout, Agara and Ibbaluru; no section is open yet.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Namma_Metro)"
+      },
+      {
+        "fact": "Central Silk Board station on the Yellow Line opened in August 2025 and is planned as an interchange with the Blue Line.",
+        "source": "https://en.wikipedia.org/wiki/Central_Silk_Board_metro_station"
+      },
+      {
+        "fact": "Sarjapur Road runs from the Agara-Ibbaluru-Bellandur junction on the Outer Ring Road towards Dommasandra and Sarjapura.",
+        "source": "https://www.squareyards.com/sarjapur-road-in-bangalore-overview-1534"
+      }
+    ],
+    "Jayanagar, JP Nagar & Banashankari": [
+      {
+        "fact": "Jayanagar was founded in 1948 as one of the first planned neighbourhoods of Bengaluru.",
+        "source": "https://en.wikipedia.org/wiki/Jayanagar,_Bengaluru"
+      },
+      {
+        "fact": "The Bangalore Development Authority was established on 6 January 1976, succeeding the City Improvement Trust Board (1945-1976), which laid out Jayanagar.",
+        "source": "https://en.wikipedia.org/wiki/Bangalore_Development_Authority"
+      },
+      {
+        "fact": "The Green Line stations from National College through Lalbagh, South End Circle, Jayanagar, Rashtreeya Vidyalaya Road, Banashankari, Jaya Prakash Nagar and Yelachenahalli opened on 18 June 2017.",
+        "source": "https://en.wikipedia.org/wiki/Green_Line_(Namma_Metro)"
+      },
+      {
+        "fact": "The Green Line extension along Kanakapura Road (Konanakunte Cross, Doddakallasandra, Vajarahalli, Thalaghattapura, Silk Institute) opened on 15 January 2021.",
+        "source": "https://en.wikipedia.org/wiki/Green_Line_(Namma_Metro)"
+      },
+      {
+        "fact": "Rashtreeya Vidyalaya Road station is the interchange between the Green Line and the Yellow Line.",
+        "source": "https://en.wikipedia.org/wiki/Yellow_Line_(Namma_Metro)"
+      },
+      {
+        "fact": "JP Nagar was developed by the BDA in the late 1970s and early 1980s; its early phases lie inside the Outer Ring Road.",
+        "source": "https://en.wikipedia.org/wiki/J._P._Nagar,_Bangalore"
+      },
+      {
+        "fact": "Banashankari has six stages; stages 1-3 lie within the Outer Ring Road and the locality stretches from Mysore Road to Kanakapura Road.",
+        "source": "https://en.wikipedia.org/wiki/Banashankari"
+      }
+    ],
+    "BTM, Bannerghatta Road & Electronic City": [
+      {
+        "fact": "The Yellow Line of Namma Metro (Rashtreeya Vidyalaya Road to Bommasandra, 16 stations) was inaugurated on 10 August 2025, with passenger services from 11 August 2025.",
+        "source": "https://en.wikipedia.org/wiki/Yellow_Line_(Namma_Metro)"
+      },
+      {
+        "fact": "Yellow Line stations include Ragigudda, BTM Layout, Central Silk Board, Bommanahalli, Hongasandra, Kudlu Gate, Singasandra, Hosa Road, Beratena Agrahara and Electronic City, running parallel to Hosur Road south of Silk Board.",
+        "source": "https://en.wikipedia.org/wiki/Yellow_Line_(Namma_Metro)"
+      },
+      {
+        "fact": "The Hosur Road elevated expressway from Silk Board to Electronic City was inaugurated on 22 January 2010.",
+        "source": "https://en.wikipedia.org/wiki/Hosur_Road"
+      },
+      {
+        "fact": "Electronic City was established in 1978 by KEONICS as an industrial township on Hosur Road.",
+        "source": "https://en.wikipedia.org/wiki/Electronic_City"
+      },
+      {
+        "fact": "BTM Layout is named after Byrasandra, Tavarekere and Madiwala; the Outer Ring Road separates its 1st Stage from the later stages.",
+        "source": "https://en.wikipedia.org/wiki/BTM_Layout"
+      },
+      {
+        "fact": "The elevated section of the Pink Line along Bannerghatta Road (Kalena Agrahara to Tavarekere, including Hulimavu station) is built and awaiting opening, listed for November 2026.",
+        "source": "https://en.wikipedia.org/wiki/Pink_Line_(Namma_Metro)"
+      },
+      {
+        "fact": "An inscription at the Panchalingeshwara temple in Begur is the oldest existing reference to a place called Bengaluru.",
+        "source": "https://en.wikipedia.org/wiki/Begur,_Bangalore"
+      }
+    ],
+    "Indiranagar & Old Airport Road": [
+      {
+        "fact": "The first Namma Metro section, from MG Road to Baiyappanahalli on today's Purple Line, opened on 20 October 2011 and includes Indiranagar and Swami Vivekananda Road stations.",
+        "source": "https://en.wikipedia.org/wiki/Baiyappanahalli_metro_station"
+      },
+      {
+        "fact": "Indiranagar was formed as a Bangalore Development Authority layout in the late 1970s; 100 Feet Road, CMH Road and 80 Feet Road are its main arterial roads.",
+        "source": "https://en.wikipedia.org/wiki/Indiranagar,_Bangalore"
+      },
+      {
+        "fact": "The Purple Line has two stations in Indiranagar: Indiranagar and Swami Vivekananda Road.",
+        "source": "https://en.wikipedia.org/wiki/Indiranagar,_Bangalore"
+      },
+      {
+        "fact": "The Domlur flyover, at the junction of Old Airport Road, 100 Feet Road and the Inner Ring Road, opened to the public on 12 July 2006.",
+        "source": "https://en.wikipedia.org/wiki/Domlur"
+      },
+      {
+        "fact": "Domlur was part of the Bangalore Civil and Military Station until it was transferred to Mysore State in 1949.",
+        "source": "https://en.wikipedia.org/wiki/Domlur"
+      },
+      {
+        "fact": "Old Airport Road is named for HAL Airport, which stopped scheduled commercial flights on 24 May 2008 when operations moved to Kempegowda International Airport.",
+        "source": "https://en.wikipedia.org/wiki/HAL_Airport"
+      }
+    ],
+    "Whitefield, Marathahalli & KR Puram": [
+      {
+        "fact": "The Purple Line extension from Krishnarajapura to Whitefield (Kadugodi) opened to the public on 26 March 2023; Whitefield (Kadugodi) is the eastern terminus.",
+        "source": "https://en.wikipedia.org/wiki/Whitefield_(Kadugodi)_metro_station"
+      },
+      {
+        "fact": "The Baiyappanahalli–Benniganahalli–KR Puram gap opened on 9 October 2023, giving a continuous Purple Line from the city centre to Whitefield.",
+        "source": "https://en.wikipedia.org/wiki/Benniganahalli_metro_station"
+      },
+      {
+        "fact": "Purple Line stations from KR Puram to Whitefield: Krishnarajapura, Singayyanapalya, Garudacharapalya, Hoodi, Seetharampalya, Kundalahalli, Nallurhalli, Sri Sathya Sai Hospital, Pattandur Agrahara, Kadugodi Tree Park, Hopefarm Channasandra, Whitefield (Kadugodi).",
+        "source": "https://en.wikipedia.org/wiki/Purple_Line_(Namma_Metro)"
+      },
+      {
+        "fact": "Singayyanapalya metro station was earlier named Mahadevapura.",
+        "source": "https://en.wikipedia.org/wiki/Singayyanapalya_metro_station"
+      },
+      {
+        "fact": "Whitefield began in 1882 on land granted by the Maharaja of Mysore to the Eurasian and Anglo-Indian Association; two four-lane roads link it to the city: Whitefield Road via Mahadevapura and Varthur Road (Old Airport Road) via Marathahalli.",
+        "source": "https://en.wikipedia.org/wiki/Whitefield,_Bangalore"
+      },
+      {
+        "fact": "Marathahalli sits at the junction of the Outer Ring Road and Old Airport Road and has no railway station of its own; the nearest is Bellandur Road.",
+        "source": "https://en.wikipedia.org/wiki/Marathahalli"
+      },
+      {
+        "fact": "Old Madras Road and the Outer Ring Road meet at KR Puram, whose railway station on the Bengaluru–Chennai line is spanned by a cable-stayed bridge opened in 2003.",
+        "source": "https://en.wikipedia.org/wiki/Krishnarajapuram"
+      },
+      {
+        "fact": "Blue Line Phase 2A (Central Silk Board–KR Puram, including Marathahalli, Doddanekundi and ISRO stations) is under construction, with opening expected in December 2027.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Namma_Metro)"
+      }
+    ],
+    "Hennur, Kalyan Nagar & Banaswadi": [
+      {
+        "fact": "Blue Line Phase 2B (KR Puram–airport) stations in this belt include Kasturi Nagara, Horamavu, HRBR Layout, Kalyana Nagara, HBR Layout and Nagawara; all are under construction, with opening expected in December 2028.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Namma_Metro)"
+      },
+      {
+        "fact": "The Outer Ring Road passes through Banaswadi, linking the north-east to KR Puram, Mahadevapura and Marathahalli.",
+        "source": "https://en.wikipedia.org/wiki/Outer_Ring_Road,_Bangalore"
+      },
+      {
+        "fact": "Banaswadi railway station, in Maruthi Sevanagar, is on the line linking Yesvantpur Junction and Baiyappanahalli and has three platforms.",
+        "source": "https://en.wikipedia.org/wiki/Banaswadi_railway_station"
+      },
+      {
+        "fact": "The nearest metro stations to Banaswadi are Swami Vivekananda Road, Baiyappanahalli and Benniganahalli on the Purple Line.",
+        "source": "https://en.wikipedia.org/wiki/Banaswadi"
+      },
+      {
+        "fact": "Kalyan Nagar lies near Banaswadi and Horamavu along Hennur Road and includes HRBR Layout and Chelekere.",
+        "source": "https://en.wikipedia.org/wiki/Kalyan_Nagar"
+      },
+      {
+        "fact": "Thanisandra adjoins Hebbal, Nagawara and Kammanahalli and lies on the route to Kempegowda International Airport.",
+        "source": "https://en.wikipedia.org/wiki/Thanisandra"
+      }
+    ],
+    "Hebbal, RT Nagar & Yelahanka": [
+      {
+        "fact": "The Hebbal flyover links the Outer Ring Road with Airport Road (NH 44); all arterial roads to Kempegowda International Airport intersect at Hebbal.",
+        "source": "https://en.wikipedia.org/wiki/Hebbal,_Bengaluru"
+      },
+      {
+        "fact": "Kempegowda International Airport at Devanahalli opened in May 2008 and is reached by NH 44 (Bellary Road) through Hebbal and Yelahanka.",
+        "source": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport"
+      },
+      {
+        "fact": "Blue Line Phase 2B stations Hebbala, Kodigehalli, Jakkuru Cross, Yelahanka, Bagalur Cross, Doddajala, Airport City and KIAL Terminals are under construction, with opening expected in December 2028.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Namma_Metro)"
+      },
+      {
+        "fact": "Yelahanka Junction (code YNK) is a junction station of South Western Railway; NH 44 and Doddaballapur Road (State Highway 9) pass through Yelahanka.",
+        "source": "https://en.wikipedia.org/wiki/Yelahanka"
+      },
+      {
+        "fact": "Yelahanka New Town was developed as a planned township by the Karnataka Housing Board in the early 1980s.",
+        "source": "https://en.wikipedia.org/wiki/Yelahanka"
+      },
+      {
+        "fact": "Yelahanka Air Force Station hosts the biennial Aero India air show.",
+        "source": "https://en.wikipedia.org/wiki/Yelahanka"
+      }
+    ],
+    "Malleshwaram, Rajajinagar & Yeshwanthpur": [
+      {
+        "fact": "The Green Line's Reach 3, from Sampige Road to Yeshwanthpur, opened on 1 March 2014, with stations including Srirampura, Kuvempu Road, Rajajinagar, Mahalakshmi, Sandal Soap Factory and Yeshwanthpur.",
+        "source": "https://en.wikipedia.org/wiki/Green_Line_(Namma_Metro)"
+      },
+      {
+        "fact": "The Green Line connects the north-western suburbs along Tumkur Road with Majestic and southern Bengaluru.",
+        "source": "https://en.wikipedia.org/wiki/Green_Line_(Namma_Metro)"
+      },
+      {
+        "fact": "Yeshwanthpur metro station is on Tumkur Road, opposite Yesvantpur Junction railway station.",
+        "source": "https://en.wikipedia.org/wiki/Yeshwanthpur_metro_station"
+      },
+      {
+        "fact": "Yesvantpur Junction railway station was commissioned in 1881.",
+        "source": "https://en.wikipedia.org/wiki/Yeshwanthpur"
+      },
+      {
+        "fact": "Malleshwaram was laid out in 1889 and is served by Sampige Road, Sandal Soap Factory and Srirampura metro stations.",
+        "source": "https://en.wikipedia.org/wiki/Malleshwaram"
+      },
+      {
+        "fact": "Rajajinagar was inaugurated on 3 July 1949 as a planned suburb with separate housing and industrial areas.",
+        "source": "https://en.wikipedia.org/wiki/Rajajinagar"
+      },
+      {
+        "fact": "Sadashivanagar was developed in the 1960s and 1970s on former palace gardens and was earlier known as Palace Orchards.",
+        "source": "https://en.wikipedia.org/wiki/Sadashivanagar"
+      }
+    ],
+    "Vijayanagar, RR Nagar & Kengeri": [
+      {
+        "fact": "The Purple Line's western stations from Magadi Road to Mysuru Road, including Hosahalli, Vijayanagar, Attiguppe and Deepanjali Nagar, opened on 16 November 2015.",
+        "source": "https://en.wikipedia.org/wiki/Purple_Line_(Namma_Metro)"
+      },
+      {
+        "fact": "The extension from Mysuru Road to Kengeri, with Pantharapalya-Nayandahalli, Rajarajeshwari Nagar, Jnanabharathi, Pattanagere, Kengeri Bus Terminal and Kengeri stations, opened on 30 August 2021.",
+        "source": "https://en.wikipedia.org/wiki/Purple_Line_(Namma_Metro)"
+      },
+      {
+        "fact": "Challaghatta, the western terminus of the Purple Line, opened on 9 October 2023.",
+        "source": "https://en.wikipedia.org/wiki/Purple_Line_(Namma_Metro)"
+      },
+      {
+        "fact": "Mysore Road, the stretch from central Bengaluru to the Kengeri NICE Road junction, is part of NH-275 after being taken over by NHAI in 2014.",
+        "source": "https://en.wikipedia.org/wiki/Mysore_Road"
+      },
+      {
+        "fact": "Kengeri railway station is on the Mysuru-KSR Bengaluru line, near the Purple Line's Kengeri metro station.",
+        "source": "https://en.wikipedia.org/wiki/Kengeri_railway_station"
+      },
+      {
+        "fact": "Basaveshwaranagar was developed in the 1970s and 1980s as an extension and was first called West of Chord Road.",
+        "source": "https://en.wikipedia.org/wiki/Basaveshwaranagar"
+      }
+    ],
+    "Frazer Town, Richmond Town & Ulsoor": [
+      {
+        "fact": "The first Purple Line section, Baiyappanahalli to MG Road, opened on 20 October 2011 and includes Halasuru and Trinity stations.",
+        "source": "https://en.wikipedia.org/wiki/Purple_Line_(Namma_Metro)"
+      },
+      {
+        "fact": "The Purple Line's underground section, including Cubbon Park and MG Road stations, opened on 30 April 2016.",
+        "source": "https://en.wikipedia.org/wiki/Purple_Line_(Namma_Metro)"
+      },
+      {
+        "fact": "Pottery Town station on the Pink Line underground section is under construction and is expected to serve Frazer Town, Cox Town and Richards Town.",
+        "source": "https://en.wikipedia.org/wiki/Pottery_Town_metro_station"
+      },
+      {
+        "fact": "Frazer Town was founded in 1906 and is officially named Pulakeshi Nagar; Bangalore East railway station lies in the locality.",
+        "source": "https://en.wikipedia.org/wiki/Frazer_Town"
+      },
+      {
+        "fact": "Richmond Town was established in 1883 as part of the Bangalore Cantonment.",
+        "source": "https://en.wikipedia.org/wiki/Richmond_Town"
+      },
+      {
+        "fact": "Halasuru Lake, built by Kempe Gowda II, is the only surviving tank built by the Gowda rulers in Bengaluru.",
+        "source": "https://en.wikipedia.org/wiki/Ulsoor"
+      },
+      {
+        "fact": "Cooke Town, laid out in 1900, is adjacent to Bangalore East and Banaswadi railway stations.",
+        "source": "https://en.wikipedia.org/wiki/Cooke_Town"
+      }
+    ]
+  }
+}

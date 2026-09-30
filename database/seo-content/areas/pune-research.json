@@ -1,0 +1,652 @@
+{
+  "areas": {
+    "kothrud": {
+      "name": "Kothrud",
+      "zone": "Kothrud, Karve Nagar & Deccan",
+      "type": "residential",
+      "about": "<p>Kothrud is a long-established residential suburb in west-central Pune, with the Vetal Tekdi hills to the north and Karve Nagar and the Mutha river to the south. Paud Road runs west from Paud Phata through the suburb, and the Katraj–Dehu Road bypass on the Mumbai–Bengaluru highway marks its western edge. Most families live in apartment buildings and housing societies, and many older buildings have been redeveloped into taller blocks in recent years.</p><p>The Aqua Line of Pune Metro has served Kothrud since March 2022, with stations at Vanaz, Anand Nagar and Paud Phata (earlier called Ideal Colony), so a tutor from Deccan or the city centre can come by metro and walk or take an auto for the last stretch. Erandwane, Karve Nagar, Warje and Bavdhan are the neighbouring areas most tutors travel from. In a society, ask the gate to register the tutor once so later visits are quick, and allow extra time around the evening rush on Paud Road and the main road towards Deccan. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kothrud",
+        "https://en.wikipedia.org/wiki/Aqua_Line_(Pune_Metro)",
+        "https://en.wikipedia.org/wiki/List_of_roads_in_Pune",
+        "https://www.nobroker.in/locality-iq/kothrud-pune-liqlt"
+      ]
+    },
+    "karve-nagar": {
+      "name": "Karve Nagar",
+      "zone": "Kothrud, Karve Nagar & Deccan",
+      "type": "residential",
+      "about": "<p>Karve Nagar, once known as Hingne, is an old residential neighbourhood of south-west Pune bordered by Kothrud and Warje, with Erandwane and Hingne Khurd close by. The main road from Deccan to Warje passes through it, and DP Road is the other local connector. Housing is mostly apartment buildings and builder floors, from compact flats to larger family homes, on quiet lanes off the main roads.</p><p>There is no metro station inside Karve Nagar; the nearest Aqua Line stops are to the north towards Erandwane and Kothrud, with SNDT College station among them, so tutors coming by metro usually finish the trip by auto or on foot. PMPML buses link the area with Deccan and Swargate. Many families here prefer a tutor from Kothrud, Warje or Erandwane who can come by two-wheeler. In smaller buildings the tutor reaches the doorstep directly, while larger societies ask for a name at the gate. Evening sessions work better when they avoid the peak on the main road towards Deccan. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Karvenagar",
+        "https://www.nobroker.in/locality-iq/karve-nagar-pune-liqlt",
+        "https://www.squareyards.com/karve-nagar-in-pune-overview-2197",
+        "https://en.wikipedia.org/wiki/List_of_roads_in_Pune"
+      ]
+    },
+    "erandwane": {
+      "name": "Erandwane",
+      "zone": "Kothrud, Karve Nagar & Deccan",
+      "type": "residential",
+      "about": "<p>Erandwane is a premium, largely residential part of central-west Pune that takes in Prabhat Road and Law College Road, with Deccan Gymkhana, Kothrud and Shivajinagar around it. Law College Road runs from Shivajinagar to Nal Stop, Prabhat Road runs west from Prabhat Square, and Paud Road begins at Paud Phata in Erandwane. Apartments make up most of the housing, but tree-lined lanes still hold older bungalows, and the area has a long tradition of educational institutions and student hostels.</p><p>Two Aqua Line stations sit at the edge of the locality: SNDT College at Nal Stop and Paud Phata, both open since March 2022, with Garware College station towards Deccan. A tutor living anywhere along the Vanaz–Ramwadi line can reach the area by metro and walk the rest. Older bungalows and small buildings mean the tutor often comes straight to the door, while newer complexes run a gate register. Parking on the narrower lanes can be tight, so a tutor on a two-wheeler is often the easier choice for regular visits. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Erandwane",
+        "https://en.wikipedia.org/wiki/List_of_roads_in_Pune",
+        "https://www.squareyards.com/erandwane-in-pune-overview-2198",
+        "https://en.wikipedia.org/wiki/SNDT_College_metro_station"
+      ]
+    },
+    "deccan-gymkhana": {
+      "name": "Deccan Gymkhana",
+      "zone": "Kothrud, Karve Nagar & Deccan",
+      "type": "mixed",
+      "about": "<p>Deccan Gymkhana, usually just called Deccan, is a central Pune area named after the sports club at its heart and lying along the Mutha river. Shivajinagar, Erandwane and Sadashiv Peth are its nearest neighbours, and the main road towards Kothrud and Warje starts here. Homes are a mix of older bungalows and houses with newer multi-storey apartment buildings, set among shops, cafés, bookshops and institutions that keep the streets busy through the day.</p><p>Deccan Gymkhana station on the Aqua Line opened in August 2023, and Garware College station just to the west has run since March 2022, so tutors from Kothrud, Vanaz or across the river can come by metro. The same line continues east to District Court, where it meets the Purple Line. Because the area is commercial as well as residential, parking near the main roads is limited; metro or bus plus a short walk is often simpler than driving. For older bungalows the tutor comes to the door, and for apartment buildings a note to the watchman helps. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Deccan_Gymkhana",
+        "https://www.nobroker.in/locality-iq/deccan-gymkhana-pune-liqlt",
+        "https://en.wikipedia.org/wiki/Aqua_Line_(Pune_Metro)",
+        "https://en.wikipedia.org/wiki/List_of_roads_in_Pune"
+      ]
+    },
+    "shivajinagar": {
+      "name": "Shivajinagar",
+      "zone": "Kothrud, Karve Nagar & Deccan",
+      "type": "mixed",
+      "about": "<p>Shivajinagar is an inner suburb on the west bank of the Mutha river, once the village of Bhamburde, with Vetal and Hanuman hills to its west. It is one of Pune's main civic and educational districts, holding government offices, the district courts, colleges and theatres alongside residential lanes and apartment buildings. University Road runs from the Aundh bridge to Shivajinagar, and the old Mumbai–Pune highway begins here.</p><p>Transit is the strongest in west Pune. Shivaji Nagar station on the Purple Line opened in August 2023, District Court is the interchange with the Aqua Line, and Shivajinagar railway station has suburban trains towards Lonavala. Line 3 from Hinjewadi is being built to end here. A tutor from Pimpri-Chinchwad, Kothrud or the old city can therefore arrive by train or metro and walk the last part. Weekday traffic around University Road and the court area is heavy at office hours, so late-afternoon or weekend sessions are easier to keep on time. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Shivajinagar,_Pune",
+        "https://en.wikipedia.org/wiki/Purple_Line_(Pune_Metro)",
+        "https://en.wikipedia.org/wiki/List_of_roads_in_Pune",
+        "https://en.wikipedia.org/wiki/Pink_Line_(Pune_Metro)"
+      ]
+    },
+    "model-colony": {
+      "name": "Model Colony",
+      "zone": "Kothrud, Karve Nagar & Deccan",
+      "type": "residential",
+      "about": "<p>Model Colony is a quiet, planned residential pocket within Shivajinagar in central Pune, developed in the mid-twentieth century with an orderly layout, wide internal roads and plenty of trees. Deccan Gymkhana and Gokhalenagar are its closest neighbours, with University Road and the rest of Shivajinagar a short way off. Homes are a mix of standalone houses, older apartment buildings and newer residential blocks.</p><p>Several metro stations are within reach: Shivaji Nagar on the Purple Line, and Deccan Gymkhana and Chhatrapati Sambhaji Udyan on the Aqua Line, so a tutor from Kothrud, Pimpri or the old city can travel by metro and take an auto or walk from the station. In standalone houses the tutor usually comes straight to the gate or door; apartment buildings may ask for a name to be left with the watchman. Parking on the inner lanes is manageable, but the approach roads through Shivajinagar are slower at office hours, so fix a time that avoids the evening peak. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/model-colony-shivaji-nagar-pune-liqlt",
+        "https://www.squareyards.com/model-colony-in-pune-overview-4386",
+        "https://en.wikipedia.org/wiki/Purple_Line_(Pune_Metro)",
+        "https://en.wikipedia.org/wiki/Aqua_Line_(Pune_Metro)"
+      ]
+    },
+    "warje": {
+      "name": "Warje",
+      "zone": "Kothrud, Karve Nagar & Deccan",
+      "type": "residential",
+      "about": "<p>Warje is a suburb on the bank of the Mutha river in south-west Pune, bordered by Kothrud to the north and by Karve Nagar, Bavdhan, Shivane, Dhayari and Narhe around it. It was a farming village until about 1970 and joined the city in 2001. Since then fields have given way to apartment complexes, and the Malwadi side in particular grew fast with large housing complexes after 2000.</p><p>The Katraj–Dehu Road bypass on the Mumbai–Bengaluru highway runs through Warje, and the main road from Deccan through Kothrud and Karve Nagar ends here, so tutors from across west Pune can reach it by road. The nearest metro stations are on the Aqua Line in Kothrud, with Vanaz the closest, and buses leave from the Ganpati Matha stop. Most homes are in gated complexes where the tutor's name goes on the visitor list, and parking inside is usually easy. Plan visits away from the highway junction's busiest hours, as crossings there slow down at peak time. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Warje",
+        "https://en.wikipedia.org/wiki/List_of_roads_in_Pune",
+        "https://www.nobroker.in/locality-iq/warje-pune-liqlt"
+      ]
+    },
+    "bavdhan": {
+      "name": "Bavdhan",
+      "zone": "Aundh, Baner & Pashan",
+      "type": "residential",
+      "about": "<p>Bavdhan is a residential suburb in south-west Pune, made up of Bavdhan Budruk and Bavdhan Khurd, and part of the Pune Municipal Corporation. Roads link it with Kothrud, Paud Road, Baner, Aundh, Pashan and Sus, and Chandani Chowk, where several major roads meet, sits at its edge. Most families live in apartment buildings and gated societies, with some independent houses in older pockets.</p><p>Both the Katraj–Dehu Road bypass and Paud Road pass through Bavdhan. The nearest working metro station is Vanaz on the Aqua Line, and the line's extension from Vanaz towards Chandani Chowk is under construction, so for now a tutor coming by metro finishes the trip by auto. Buses run to Hinjewadi, Pashan and Deccan. Tutors from Kothrud, Pashan or Warje can usually come by two-wheeler. Societies here normally ask visitors to register at the gate, and the Chandani Chowk junction is slow at peak hours, which matters when you fix an early-evening slot. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bavdhan",
+        "https://en.wikipedia.org/wiki/List_of_roads_in_Pune",
+        "https://en.wikipedia.org/wiki/Aqua_Line_(Pune_Metro)",
+        "https://www.nobroker.in/locality-iq/chandani-chowk-bavdhan-pune-liqlt"
+      ]
+    },
+    "aundh": {
+      "name": "Aundh",
+      "zone": "Aundh, Baner & Pashan",
+      "type": "residential",
+      "about": "<p>Aundh is a western Pune neighbourhood that grew from a village into an upmarket residential area from the mid-1990s. It stretches along University Road up to the bridge over the Mula river, with Sangvi across the river and Baner and Pashan as neighbours. Housing ranges from apartment buildings and gated societies to independent houses and villas, and the main road through the area was redesigned under the Smart City programme with footpaths and cycle tracks.</p><p>The Aundh–Ravet road starts here and leads towards Pimple Saudagar and Wakad. Metro Line 3, from Hinjewadi to Shivajinagar, is being built along Aundh with stations planned at Aundh and Sakal Nagar, but it was not yet open to passengers at the time of writing; for now tutors rely on road, bus or the suburban rail station at Shivajinagar. Tutors from Baner, Pashan, Pimple Nilakh or Shivajinagar can reach most homes quickly by two-wheeler. Societies ask for gate entry, and University Road is heavy at office hours, so plan sessions around it. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Aundh,_Pune",
+        "https://en.wikipedia.org/wiki/List_of_roads_in_Pune",
+        "https://en.wikipedia.org/wiki/Pink_Line_(Pune_Metro)",
+        "https://www.nobroker.in/locality-iq/aundh-pune-liqlt"
+      ]
+    },
+    "baner": {
+      "name": "Baner",
+      "zone": "Aundh, Baner & Pashan",
+      "type": "mixed",
+      "about": "<p>Baner lies in the western metropolitan corridor of Pune, with Aundh to the north, Balewadi to the west and Pashan to the south, and Pimple Nilakh across the Mula river. A farming village until the IT boom of the 2000s, it is now both a residential and commercial hub, with large office buildings alongside high-rise apartment complexes and gated communities. Baner Hill rises on its southern side.</p><p>The Katraj–Dehu Road bypass runs along Baner, and Baner Road leads east to Aundh and University Road. Metro Line 3 is being built through Baner with stations planned at Baner Gaon, Baner Pashan Link Road and Balewadi Phata; its first section, from Maan to Balewadi, has safety approval, but no station in Baner was open to passengers at the time of writing. Most tutors come from Aundh, Balewadi, Pashan or Pimple Nilakh by two-wheeler. Gated societies here expect visitor registration, and office traffic on Baner Road is heavy in the evening, so a slightly later or weekend slot helps. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Baner",
+        "https://en.wikipedia.org/wiki/List_of_roads_in_Pune",
+        "https://en.wikipedia.org/wiki/Pink_Line_(Pune_Metro)",
+        "https://www.nobroker.in/locality-iq/baner-pune-liqlt"
+      ]
+    },
+    "balewadi": {
+      "name": "Balewadi",
+      "zone": "Aundh, Baner & Pashan",
+      "type": "residential",
+      "about": "<p>Balewadi is a residential suburb in the western metropolitan corridor of Pune, next to Baner, Aundh and Mahalunge. It was a village at the city's edge until 1997, when it joined the Pune Municipal Corporation along with twenty-two other villages. Today it is mostly high-rise apartment complexes and gated societies, with the busy High Street area for restaurants and a large sports complex that hosted the 1994 National Games.</p><p>The Katraj–Dehu Road bypass passes through Balewadi, and Baner Road connects it with central Pune. Metro Line 3 is being built here, with stations named Balewadi High Street, Balewadi Phata and Mitcon Balewadi among others; the first section, from Maan to Balewadi, has received safety approval, though it had not opened to passengers at the time of writing. Until it does, tutors from Baner, Wakad or Aundh come by road. Societies register visitors at the gate, and evening traffic from the Hinjewadi side builds up, so book sessions with that in mind. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Balewadi",
+        "https://en.wikipedia.org/wiki/List_of_roads_in_Pune",
+        "https://en.wikipedia.org/wiki/Pink_Line_(Pune_Metro)",
+        "https://www.nobroker.in/locality-iq/balewadi-pune-liqlt"
+      ]
+    },
+    "pashan": {
+      "name": "Pashan",
+      "zone": "Aundh, Baner & Pashan",
+      "type": "mixed",
+      "about": "<p>Pashan is a western suburb of Pune bordered by Baner to the north, Sus to the west and Bavdhan to the south. Its name comes from the word for stone, and a man-made lake on the Ramnadi stream is a well-known spot for migratory birds. The area is mainly residential, with apartment buildings and societies, but several large government and research campuses also occupy land here.</p><p>The Katraj–Dehu Road bypass runs through Pashan, and the Pashan–Sus Road heads west from here through Sus. Pashan Road leads towards the bypass and the expressway, and PMPML buses link the area with central Pune. Metro Line 3 has a station planned at Baner Pashan Link Road on the Baner side, but it was not open at the time of writing, so tutors usually arrive by two-wheeler from Baner, Aundh, Bavdhan or Sus. Societies ask for gate entry, while smaller buildings let the tutor straight up. For senior-school specialist subjects, an online tutor can fill gaps between home visits. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Pashan",
+        "https://en.wikipedia.org/wiki/List_of_roads_in_Pune",
+        "https://en.wikipedia.org/wiki/Pink_Line_(Pune_Metro)"
+      ]
+    },
+    "sus": {
+      "name": "Sus",
+      "zone": "Aundh, Baner & Pashan",
+      "type": "residential",
+      "about": "<p>Sus is a newer residential area in the north-west of the Pune metropolitan area, within the Pune Municipal Corporation. It lies in a valley with hills on both sides, including Baner Hill, Pashan Hill and the Lavale hills, and grew quickly after the city limits expanded in the late 1990s. Most families live in apartment complexes and gated societies built for people working in the IT belt.</p><p>The Pashan–Sus Road is the main link to Pashan and the city, and the Katraj–Dehu Road bypass close by gives quick access to Baner, Wakad, Pimpri-Chinchwad and the Mumbai–Pune Expressway. There is no metro station in Sus, so tutors come by road, most often from Pashan, Baner, Bavdhan or Balewadi. Gated societies here usually need the tutor's details at the gate before the first class, so share them a day ahead. Because the approach is along a single main road, a regular slot outside the evening office peak keeps sessions on time, and online classes work well for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sus,_Pune",
+        "https://en.wikipedia.org/wiki/List_of_roads_in_Pune"
+      ]
+    },
+    "wakad": {
+      "name": "Wakad",
+      "zone": "Wakad, Hinjewadi & Pimpri-Chinchwad",
+      "type": "residential",
+      "about": "<p>Wakad is a neighbourhood in Pimpri-Chinchwad, governed by the Pimpri Chinchwad Municipal Corporation. Pimple Nilakh and Pimple Saudagar lie to its east, Thergaon, Chinchwad and Ravet to the north, and the Mula river with Baner and Balewadi beyond it to the south. Close to the Hinjewadi IT park, it has become a large residential area of apartment complexes and gated societies home to many IT families.</p><p>The Katraj–Dehu Road bypass runs through Wakad, and the BRTS roads towards Bhosari and Kiwale, Kalewadi Road and Datta Mandir Road carry local traffic. Metro Line 3 has a station planned at Wakad Chowk; the line has received safety approval for its first section but had not opened to passengers at the time of writing. Tutors usually come from Pimple Saudagar, Thergaon, Hinjewadi or Baner by two-wheeler. Almost every society registers visitors at the gate, and Hinjewadi-bound traffic makes office hours slow near the bypass, so an early-evening or weekend slot is easier to keep. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Wakad",
+        "https://en.wikipedia.org/wiki/List_of_roads_in_Pune",
+        "https://en.wikipedia.org/wiki/Pink_Line_(Pune_Metro)"
+      ]
+    },
+    "hinjewadi": {
+      "name": "Hinjewadi",
+      "zone": "Wakad, Hinjewadi & Pimpri-Chinchwad",
+      "type": "mixed",
+      "about": "<p>Hinjewadi, also spelt Hinjawadi, is a north-west Pune suburb known above all for its large IT park, which the state industrial development corporation built in three phases. Marunji lies to its north, Maan to the west, Wakad to the east and Mahalunge to the south. Around the park, large apartment townships and gated societies house many of the people who work there, so homes and offices sit side by side.</p><p>Metro Line 3 starts at Maan and runs through Hinjewadi Phase II and Phase I towards Wakad, Balewadi and Shivajinagar. Its first section has received safety approval, though it had not opened to passengers at the time of writing. Roads here are very busy at office hours, with heavy vehicles restricted in the morning and evening peaks, so tutors usually prefer early-evening or weekend classes timed against the office rush. Most tutors come from Wakad, Maan or nearby townships. Township gates need visitor entry, and online classes are a practical option for specialist senior-school subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hinjawadi",
+        "https://en.wikipedia.org/wiki/Pink_Line_(Pune_Metro)",
+        "https://www.nobroker.in/locality-iq/hinjewadi-pune-liqlt"
+      ]
+    },
+    "pimple-saudagar": {
+      "name": "Pimple Saudagar",
+      "zone": "Wakad, Hinjewadi & Pimpri-Chinchwad",
+      "type": "residential",
+      "about": "<p>Pimple Saudagar is a residential neighbourhood of Pimpri-Chinchwad, under the Pimpri Chinchwad Municipal Corporation. It sits next to Rahatani, Pimple Gurav and Pimpri Gaon, with Wakad and Pimple Nilakh close by, and a bridge links it with Pimprigaon across the river. Housing is a mix of established and newer societies, largely apartment complexes favoured by young families and IT professionals.</p><p>The Aundh–Ravet BRTS road and the Wakad–Bhosari BRTS road are the main routes, which makes bus travel practical. The Purple Line's northern stations at Sant Tukaram Nagar and PCMC Bhavan, open since March 2022, and Pimpri railway station on the suburban line are the nearest rail links, so a tutor coming from Pune by metro or train usually takes an auto for the last part. Most tutors live in Wakad, Rahatani, Pimple Gurav or Pimpri. Societies normally keep a visitor register, and evening traffic on the BRTS roads is worth allowing for. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Pimple_Saudagar",
+        "https://www.nobroker.in/locality-iq/pimple-saudagar-pune-liqlt",
+        "https://en.wikipedia.org/wiki/Pimpri",
+        "https://en.wikipedia.org/wiki/Purple_Line_(Pune_Metro)"
+      ]
+    },
+    "pimple-nilakh": {
+      "name": "Pimple Nilakh",
+      "zone": "Wakad, Hinjewadi & Pimpri-Chinchwad",
+      "type": "residential",
+      "about": "<p>Pimple Nilakh is a residential locality in the Pimpri Chinchwad Municipal Corporation area, on the north bank of the Mula river with Baner and Aundh across the water. Wakad and Pimple Saudagar are its neighbours, and Vishal Nagar is one of its main parts. Most homes are in apartment buildings and residential societies, with a small share of independent houses and builder floors.</p><p>The Aundh–Ravet BRTS road, New DP Road and Balewadi Road are the main connectors. There is no metro station in Pimple Nilakh itself; Metro Line 3 is being built across the river through Baner and Aundh but was not open at the time of writing, so tutors come by road, often from Aundh, Baner, Wakad or Pimple Saudagar by two-wheeler. Many buildings are mid-sized societies where a watchman takes the tutor's name; smaller buildings let them come straight up. Bridge crossings towards Aundh and Baner slow down at office hours, so plan timing around them. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/pimple-nilakh-pune-liqlt",
+        "https://www.squareyards.com/pimple-nilakh-in-pune-overview-822",
+        "https://en.wikipedia.org/wiki/Wakad"
+      ]
+    },
+    "pimpri": {
+      "name": "Pimpri",
+      "zone": "Wakad, Hinjewadi & Pimpri-Chinchwad",
+      "type": "mixed",
+      "about": "<p>Pimpri is the neighbourhood that gives the Pimpri Chinchwad Municipal Corporation, set up in 1982, part of its name. Industrial growth began here in 1954 with a large public-sector antibiotics plant, and factories, markets and homes still sit close together. Surrounding areas include Chinchwad, Kalewadi, Pimple Saudagar, Pimple Gurav, Kasarwadi, Bhosari and Chikhali, and housing ranges from older buildings near the market to newer apartment complexes.</p><p>Pimpri is the northern end of the Purple Line: PCMC Bhavan and Sant Tukaram Nagar stations opened in March 2022, with the line running south to Shivajinagar and Swargate. Pimpri railway station also has suburban trains on the Pune–Lonavala line, and the old Mumbai–Pune highway passes through. That makes it one of the easiest places in the zone for a tutor to reach from central Pune by metro. Older buildings often let the tutor come straight to the door, while newer societies register visitors. Highway traffic is heavy at shift and office times, so fix sessions to avoid those hours. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Pimpri",
+        "https://en.wikipedia.org/wiki/Purple_Line_(Pune_Metro)",
+        "https://en.wikipedia.org/wiki/List_of_roads_in_Pune"
+      ]
+    },
+    "chinchwad": {
+      "name": "Chinchwad",
+      "zone": "Wakad, Hinjewadi & Pimpri-Chinchwad",
+      "type": "mixed",
+      "about": "<p>Chinchwad is a well-established locality of Pimpri-Chinchwad on the Pavana river, north-west of the old city of Pune. Its parts include Chinchwadgaon, Bijlinagar and Dalvinagar, with Akurdi and Pradhikaran next door. Large factories grew up here from the 1990s, and homes range from older houses in the village core to apartment complexes and gated townships.</p><p>Chinchwad railway station has suburban trains on the Pune–Lonavala line, and the old Mumbai–Pune highway passes through. The Purple Line is being extended north from PCMC Bhavan with a station planned at Chinchwad, then Akurdi, Nigdi and Bhakti Shakti; until it opens, the nearest metro stop is PCMC Bhavan in Pimpri, with an auto for the last part. PMPML buses and the Rainbow BRTS also serve the area. Most tutors come from Pimpri, Akurdi, Nigdi or Thergaon. Townships ask for gate registration, and highway traffic is heaviest at factory and office hours. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chinchwad",
+        "https://en.wikipedia.org/wiki/Purple_Line_(Pune_Metro)",
+        "https://en.wikipedia.org/wiki/List_of_roads_in_Pune"
+      ]
+    },
+    "nigdi": {
+      "name": "Nigdi and Pradhikaran",
+      "zone": "Wakad, Hinjewadi & Pimpri-Chinchwad",
+      "type": "residential",
+      "about": "<p>Nigdi is a neighbourhood at the north-western end of Pimpri-Chinchwad, bordering Akurdi, Chinchwad and Dehu Road. Much of it is Pradhikaran, the planned area laid out in numbered sectors by the Pimpri Chinchwad New Town Development Authority, which has its headquarters here. Housing in the sectors is a mix of independent houses, row houses and apartment complexes, with Yamuna Nagar and other older pockets nearby.</p><p>The old Mumbai–Pune highway passes through Nigdi, and Bhakti Shakti has a major bus terminal. Akurdi railway station, in Sector 26, has suburban trains on the Pune–Lonavala line. The Purple Line's extension from PCMC Bhavan through Chinchwad and Akurdi to Nigdi and Bhakti Shakti is under construction, so for now metro travellers change to a bus or auto at PCMC Bhavan. Most tutors come from Akurdi, Chinchwad or Ravet. In independent houses and row houses the tutor comes straight to the door, while societies keep a gate register. Weekend slots suit families whose children travel far to school. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Nigdi",
+        "https://www.99acres.com/pradhikaran-nigdi-pune-west-overview-piffid",
+        "https://en.wikipedia.org/wiki/Purple_Line_(Pune_Metro)",
+        "https://en.wikipedia.org/wiki/List_of_roads_in_Pune"
+      ]
+    },
+    "viman-nagar": {
+      "name": "Viman Nagar",
+      "zone": "Viman Nagar, Kalyani Nagar & Kharadi",
+      "type": "mixed",
+      "about": "<p>Viman Nagar sits just south of Pune airport in the eastern corridor of the city, and its name means airport town in Marathi. Before independence the area was known as Dunkirk Lines. Today it mixes apartment complexes and a few row-house pockets with offices, restaurants and shops, and it borders Kalyani Nagar, Vadgaon Sheri, Kharadi and Yerawada. The Pune to Ahmednagar road, known locally as Nagar Road, runs along its edge.</p><p>Ramwadi, the eastern end of the Pune Metro Aqua Line, stands on Nagar Road beside the locality, so a tutor coming from the Deccan, Shivajinagar or station side can ride the metro and take an auto for the last stretch. Most families live in gated societies, so a tutor is usually registered at the gate once. Nagar Road and Airport Road get heavy around office hours, so evening classes work better when they start a little before the rush or after it has eased. Parents who want a specialist for IB, IGCSE or senior science often pair a local tutor with online sessions. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Viman_Nagar",
+        "https://www.nobroker.in/locality-iq/viman-nagar-pune-liqlt",
+        "https://en.wikipedia.org/wiki/Ramwadi_metro_station"
+      ]
+    },
+    "kalyani-nagar": {
+      "name": "Kalyani Nagar",
+      "zone": "Viman Nagar, Kalyani Nagar & Kharadi",
+      "type": "residential",
+      "about": "<p>Kalyani Nagar is a mainly residential neighbourhood in east Pune, bounded to the south by the Mula-Mutha river with Koregaon Park on the far bank. A bridge across the river joins the two. Once almost wholly residential, it now mixes apartment societies and some villas with offices, an IT park and restaurants along its main roads. It is administered by the Nagar Road-Wadgaonsheri ward office of the Pune Municipal Corporation and has Viman Nagar and Vadgaon Sheri as neighbours.</p><p>Kalyani Nagar has its own station on the Pune Metro Aqua Line, opened on 6 March 2024, which gives tutors living along the Vanaz to Ramwadi route a simple way in, with a short walk or auto ride to the home. Yerawada and Ramwadi stations are next to it on either side. Apartment societies here expect visitors to be logged at the gate, so a fixed weekly slot helps the guard desk recognise the tutor. Weekday evenings near the river bridge and Nagar Road can be slow, so an early evening slot or a weekend class is often easier for both sides. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kalyani_Nagar",
+        "https://en.wikipedia.org/wiki/Kalyani_Nagar_metro_station",
+        "https://www.squareyards.com/kalyani-nagar-in-pune-overview-844"
+      ]
+    },
+    "kharadi": {
+      "name": "Kharadi",
+      "zone": "Viman Nagar, Kalyani Nagar & Kharadi",
+      "type": "mixed",
+      "about": "<p>Kharadi was a village on the banks of the Mula-Mutha river until IT offices began arriving around 2005, and it is now a major office hub. Most families live in apartment towers and gated societies, with 2 and 3 BHK homes common. The locality is bordered by Lohegaon to the north, Wagholi to the east, Viman Nagar and Vadgaon Sheri to the west, and the river with Hadapsar and Magarpatta to the south.</p><p>Nagar Road runs along the northern side, and the Kharadi to Mundhwa and Kharadi to Hadapsar bypass roads carry traffic south across the river. There is no metro station inside Kharadi yet; the nearest is Ramwadi on the Aqua Line, so tutors usually come by two-wheeler, bus or auto. Large societies ask for gate registration and may limit visitor parking, so sort both out before the first class. Office traffic on Nagar Road and the bypass roads builds up at the start and end of the working day, so start the class after that wave, and use online lessons for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kharadi",
+        "https://www.nobroker.in/locality-iq/kharadi-pune-liqlt",
+        "https://en.wikipedia.org/wiki/List_of_roads_in_Pune"
+      ]
+    },
+    "wagholi": {
+      "name": "Wagholi",
+      "zone": "Viman Nagar, Kalyani Nagar & Kharadi",
+      "type": "residential",
+      "about": "<p>Wagholi lies on the Pune to Ahmednagar road on the north-eastern edge of the city and was added to the Pune Municipal Corporation area in 2021. The old village core still has individual homes, but most newer housing is in apartment societies and gated complexes that grew up to serve people working in the Kharadi and Viman Nagar offices. Kharadi, Lohegaon and Bakori are its neighbours.</p><p>The main highway, now signed as the Pune to Ahilyanagar road, is the spine of the area, with Lohegaon Road, Awhalwadi Road and Bakori Road branching off it. There is no metro here yet, although an Aqua Line extension from Ramwadi towards Wagholi has been approved, so tutors reach homes by two-wheeler, bus or auto from Kharadi and the Nagar Road side. Many societies are spread out, so a clear block number and gate pass save time on the first visit. Highway traffic peaks at office hours; a later evening or weekend slot is usually easier, and online classes help families further out. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Wagholi,_Pune",
+        "https://www.nobroker.in/locality-iq/wagholi-pune-liqlt",
+        "https://en.wikipedia.org/wiki/Pune_Metro"
+      ]
+    },
+    "yerawada": {
+      "name": "Yerawada",
+      "zone": "Viman Nagar, Kalyani Nagar & Kharadi",
+      "type": "mixed",
+      "about": "<p>Yerawada is a large, densely built neighbourhood north of the Mula-Mutha river, reached from Bund Garden across an old river bridge. It has a historic palace and garden, and it also holds office parks and other large campuses, so homes sit in distinct pockets rather than one continuous estate. Housing ranges from independent houses and older builder floors to newer apartment buildings. Koregaon Park, Kalyani Nagar, Viman Nagar, Vishrantwadi and Khadki lie around it, and Nagar Road begins here.</p><p>Yerwada station on the Pune Metro Aqua Line opened on 21 August 2024, between Bund Garden and Kalyani Nagar, so a tutor from Deccan, Shivajinagar or the station area can ride the metro and walk or take an auto to the lane. In independent houses the tutor comes straight to the door, while apartment blocks may keep a visitor register. Airport Road branches off at Yerawada, and the junctions around the river bridges get busy at office times, so plan class timing around that. Parents wanting a board specialist can combine a nearby tutor with online sessions. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Yerawada",
+        "https://en.wikipedia.org/wiki/Yerwada_metro_station",
+        "https://www.nobroker.in/locality-iq/yerawada-pune-liqlt",
+        "https://en.wikipedia.org/wiki/List_of_roads_in_Pune"
+      ]
+    },
+    "vadgaon-sheri": {
+      "name": "Vadgaon Sheri",
+      "zone": "Viman Nagar, Kalyani Nagar & Kharadi",
+      "type": "residential",
+      "about": "<p>Vadgaon Sheri, also spelt Wadgaon Sheri, lies between Nagar Road to the north and the Mula-Mutha river to the south. Once a village outside the city, it is now a busy residential area of apartment buildings and gated societies, with some older independent houses on the inner lanes. Its central part, formerly Digambar Nagar, is now widely called New Kalyani Nagar. Koregaon Park, Kalyani Nagar, Viman Nagar, Chandan Nagar and Kharadi all border it.</p><p>The Pune Municipal Corporation ward office sits on Nagar Road, which is also the quickest way in for most tutors. Ramwadi, the Aqua Line terminus, is on Nagar Road on the Viman Nagar side, so a tutor using the metro can finish the trip by auto or on foot. Somnath Nagar Road, Anand Park Road and the main Wadgaon Sheri road link the inner pockets. Gated societies usually ask for a one-time gate registration; in older houses the tutor rings at the door. Keep classes clear of the Nagar Road office rush, and use online lessons for subjects that need a specialist. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vadgaon_Sheri",
+        "https://www.nobroker.in/locality-iq/wadgaon-sheri-pune-liqlt",
+        "https://en.wikipedia.org/wiki/Ramwadi_metro_station"
+      ]
+    },
+    "koregaon-park": {
+      "name": "Koregaon Park",
+      "zone": "Koregaon Park, Camp & Wanowrie",
+      "type": "residential",
+      "about": "<p>Koregaon Park was laid out in the early 1920s on land of the old Ghorpuri village and was first called Koregaon Road Estate. Its leafy lanes still carry British-era bungalows under old trees, alongside newer premium apartment buildings. North Main Road and South Main Road run through it, with numbered lanes between them; lanes six and seven are known for restaurants and galleries. The Bund Garden bridge links it to Yerawada, another river bridge joins Kalyani Nagar, and Camp, Ghorpadi and Sangamvadi are close by.</p><p>Bund Garden station on the Pune Metro Aqua Line is the closest metro stop, with Yerwada station across the river, so tutors can use the metro and take an auto into the lanes. Pune Junction railway station is also near. In bungalows the tutor usually comes straight to the gate and parking on the lane is simple, while apartment buildings keep a visitor log. Evenings bring restaurant traffic into lanes six and seven, so an after-school slot before that tends to be smoother. Families after IB or IGCSE specialists often mix home visits with online classes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Koregaon_Park",
+        "https://www.nobroker.in/locality-iq/koregaon-park-pune-liqlt",
+        "https://en.wikipedia.org/wiki/Aqua_Line_(Pune_Metro)"
+      ]
+    },
+    "camp": {
+      "name": "Camp",
+      "zone": "Koregaon Park, Camp & Wanowrie",
+      "type": "mixed",
+      "about": "<p>Camp is the everyday name for the Pune Cantonment, set up in 1817 to house troops and still run by the Pune Cantonment Board rather than the municipal corporation. It is known for its shopping streets, MG Road and East Street, and for a central belt of open ground once used for drills. Homes are a mix of apartments, older villas and builder floors, with army areas close by. Koregaon Park, Wanowrie, Fatima Nagar, Swargate and the old peths of the city surround it.</p><p>Pune Junction railway station is close to Camp, and the Pune Railway Station stop on the Aqua Line gives tutors from across the city a metro route before a short auto ride. Solapur Road starts near Pulgate and runs through Camp towards Hadapsar. The lanes are narrow and parking near the shopping streets is tight, so tutors often come on two-wheelers or by auto. Army areas have their own entry rules, so confirm access before the first visit. Shopping crowds peak on weekend evenings, so weekday after-school slots are usually easier for a regular class. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Pune_Cantonment",
+        "https://www.squareyards.com/camp-in-pune-overview-2203",
+        "https://en.wikipedia.org/wiki/List_of_roads_in_Pune",
+        "https://en.wikipedia.org/wiki/Aqua_Line_(Pune_Metro)"
+      ]
+    },
+    "wanowrie": {
+      "name": "Wanowrie",
+      "zone": "Koregaon Park, Camp & Wanowrie",
+      "type": "residential",
+      "about": "<p>Wanowrie lies south of Camp, towards Hadapsar, and was one of the four villages taken into the Pune Cantonment when it was planned in 1817. Today it is a settled residential area with older housing pockets alongside apartment complexes, and a smaller share of villas. The Ramtekdi industrial area lies to the east and Wanwadi to the west, while NIBM Road, Salunke Vihar and Fatima Nagar are close neighbours to the south and north.</p><p>There is no metro station in Wanowrie itself, so tutors usually come by two-wheeler, bus or auto, with Pune Junction railway station and Camp the nearest transport points. Roads lead from here to Solapur Road, Magarpatta and Hadapsar, which makes the area reachable for tutors living in east and south Pune. Most apartment complexes register visitors at the gate; a regular fixed slot means the guard soon knows the tutor. Traffic towards Solapur Road and Hadapsar builds up at office times, so plan the class start around it. For specialist board subjects, online sessions can sit alongside a local tutor. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/wanowrie-in-pune-overview-858",
+        "https://en.wikipedia.org/wiki/Pune_Cantonment"
+      ]
+    },
+    "salunke-vihar": {
+      "name": "Salunke Vihar",
+      "zone": "Koregaon Park, Camp & Wanowrie",
+      "type": "residential",
+      "about": "<p>Salunke Vihar, also written Salunkhe Vihar, is a settled residential pocket in south-east Pune between Wanowrie, Kondhwa and NIBM Road, with Kedari Nagar and Mohammed Wadi close by. Many retired defence personnel live here, and there is a sub-locality known as Sainik Vihar. Housing is a mix of independent homes and apartment societies, and ready 2 and 3 BHK flats are the most common homes on offer.</p><p>Salunke Vihar Road runs through the area, connecting north to Wanowrie and Camp and south to NIBM Road and Kondhwa, with Kedari Nagar Road and Mohammed Wadi Road branching off. There is no metro station close by; Swargate on the Purple Line is the nearest, so most tutors travel by two-wheeler, bus or auto. Independent homes let a tutor come straight to the door, while societies keep a visitor register and sometimes ask for an ID at the gate. Evening traffic builds where Salunke Vihar Road meets Wanowrie and NIBM Road, so a class timed a little before or after that is easier. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/salunkhe-vihar-pune-liqlt",
+        "https://www.squareyards.com/wanowrie-in-pune-overview-858",
+        "https://www.squareyards.com/kondhwa-in-pune-overview-816"
+      ]
+    },
+    "hadapsar": {
+      "name": "Hadapsar",
+      "zone": "Hadapsar, Kondhwa & NIBM",
+      "type": "mixed",
+      "about": "<p>Hadapsar is a large suburb in east Pune on Solapur Road, part of National Highway 65. It was the site of the Battle of Poona in 1802 and grew fast after 1990 as industry and later IT offices arrived. Housing ranges from the old Hadapsar village and Gadital area to apartment societies and large gated townships, including Magarpatta and Amanora. Fursungi, Manjri, Mundhwa, Kharadi across the river and Fatima Nagar surround it.</p><p>Hadapsar railway station serves local trains running south towards Daund, and the Hadapsar Gadital bus station links the area with PMPML and state buses. There is no metro line here yet, so tutors mostly come by two-wheeler, bus or auto. Township and society gates ask visitors to register, so send the tutor's name and flat details to the gate before the demo. Solapur Road and the bypass roads towards Kharadi are heavy at office times; set the class for when those roads ease. Online lessons help with specialist subjects or late evening classes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hadapsar",
+        "https://en.wikipedia.org/wiki/Hadapsar_railway_station",
+        "https://www.nobroker.in/locality-iq/hadapsar-pune-liqlt",
+        "https://en.wikipedia.org/wiki/List_of_roads_in_Pune"
+      ]
+    },
+    "magarpatta": {
+      "name": "Magarpatta",
+      "zone": "Hadapsar, Kondhwa & NIBM",
+      "type": "mixed",
+      "about": "<p>Magarpatta is a planned, gated township within Hadapsar, developed through land pooling; its name means land of the Magar family. Building began in 2000. Homes are in apartment clusters, from 1 to 4 BHK, and a few villa clusters with row houses and bungalows. The township also holds an office area, a large central park, shops and schools, and about a third of it is green cover. Hadapsar surrounds it, with Mundhwa and Kharadi to the north.</p><p>Solapur Road passes near the township and the Mundhwa to Kharadi road leads north to the Nagar Road side. Hadapsar railway station is the nearest rail point, and there is no metro line here yet, so tutors come by two-wheeler, bus or auto. Entry is controlled, so families should add the tutor's details at the gate before the first visit and let them know which cluster and tower to go to. Office traffic at the township gates peaks around shift changes, so an after-school slot that avoids those hours works well. Online classes suit specialist board subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Magarpatta",
+        "https://en.wikipedia.org/wiki/Hadapsar",
+        "https://en.wikipedia.org/wiki/Hadapsar_railway_station"
+      ]
+    },
+    "kondhwa": {
+      "name": "Kondhwa",
+      "zone": "Hadapsar, Kondhwa & NIBM",
+      "type": "residential",
+      "about": "<p>Kondhwa is a large residential suburb in south Pune made up of Kondhwa Budruk and Kondhwa Khurd. Housing here covers older cooperative societies, mid-rise apartments from the 2000s, newer high-rise gated townships with clubhouses and quieter rows of villas. NIBM Road, Wanowrie, Undri, Mohammed Wadi, Salunke Vihar and Lullanagar are its neighbours, so a tutor from any of these areas is close at hand.</p><p>The suburb is linked to the city by NIBM Road, Salunke Vihar Road and Katraj to Kondhwa Road, which also leads to the Pune to Satara road. There is no metro station in Kondhwa; Swargate on the Purple Line is the closest, and Pune Junction is the nearest main railway station, so most tutors come by two-wheeler, PMPML bus or auto. Gated townships ask for gate registration, while older societies are usually simpler to enter. Katraj to Kondhwa Road and NIBM Road carry heavy school and office traffic, so plan class timing around those peaks, and add online sessions for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/kondhwa-in-pune-overview-816",
+        "https://www.nobroker.in/locality-iq/nibm-pune-liqlt"
+      ]
+    },
+    "nibm-road": {
+      "name": "NIBM Road",
+      "zone": "Hadapsar, Kondhwa & NIBM",
+      "type": "residential",
+      "about": "<p>NIBM Road is a residential area in south-east Pune that takes its name from the main road running through it, between Kondhwa and Wanowrie. Most housing is in apartment societies and gated communities, with some villas, and the main road also has a string of shops and commercial buildings. Undri, Mohammed Wadi, Salunke Vihar and Kondhwa Budruk surround it, and the area is popular with IT professionals who work in the Hadapsar office belt.</p><p>NIBM Road, NIBM Post Office Road and Salunke Vihar Road are the main routes in, connecting to Wanowrie, Camp and Kondhwa. There is no metro station nearby; the Purple Line stations at Mandai and Swargate are the closest, and Pune Junction is the main railway station, so tutors usually arrive by two-wheeler, bus or auto. Societies register visitors at the gate, so share the tutor's name with the security desk in advance. The main road is busy at school and office hours; a slot just after school rush works well, and online classes can cover specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/nibm-pune-liqlt",
+        "https://www.squareyards.com/kondhwa-in-pune-overview-816"
+      ]
+    },
+    "undri": {
+      "name": "Undri",
+      "zone": "Hadapsar, Kondhwa & NIBM",
+      "type": "residential",
+      "about": "<p>Undri lies in south-east Pune beyond NIBM Road, with Pisoli, Handewadi, Hadapsar and Kondhwa around it. It is a newer residential area of mid-segment apartment societies, some plotted land and builder-floor homes, and it has a quieter, more residential feel than NIBM Road. Gated societies with play areas and shops on site are common, which suits families with school-going children.</p><p>The road links are NIBM Road, Kondhwa Road and the Katraj to Hadapsar bypass. There is no metro in Undri; the Purple Line ends at Swargate, with an extension towards Katraj under construction, so tutors travel by two-wheeler, bus or auto. Because many tutors will come from Kondhwa, NIBM Road or Hadapsar, it helps to give clear directions to the society gate and the tower. Gate registration is standard in societies. School and office hours bring heavy traffic on NIBM Road and the bypass, so fix the class time with that in mind, and use online lessons for specialist or advanced subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/undri-in-pune-overview-812",
+        "https://www.squareyards.com/kondhwa-in-pune-overview-816"
+      ]
+    },
+    "katraj": {
+      "name": "Katraj",
+      "zone": "Katraj, Bibwewadi & Sinhagad Road",
+      "type": "residential",
+      "about": "<p>Katraj lies at the foot of the Katraj Ghat in south Pune, on the Pune to Satara road, National Highway 48. It is known for its Peshwa-era lake, which once supplied water to the city, and for the zoo park beside it. The old village and the area around the lake became part of the city in recent decades and are now ringed by housing: independent houses, cooperative societies and newer apartment complexes. Dhankawadi, Bibwewadi, Anjani Nagar and Gokul Nagar are close by.</p><p>PMPML buses run from the Katraj bus depot, and the Katraj to Dehu Road bypass meets the highway here. The Purple Line currently ends at Swargate; its extension to Katraj, with stations planned at Market Yard, Bibwewadi, Padmavati, Balaji Nagar and Katraj, is under construction. Until then tutors come by bus, two-wheeler or auto. In independent houses the tutor rings at the door; societies keep a visitor register. The highway and Katraj to Kondhwa Road are busy at school and office hours, so choose a class slot around them, and add online lessons where a specialist is needed. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Katraj",
+        "https://www.nobroker.in/locality-iq/katraj-pune-liqlt",
+        "https://en.wikipedia.org/wiki/Purple_Line_(Pune_Metro)"
+      ]
+    },
+    "bibwewadi": {
+      "name": "Bibwewadi",
+      "zone": "Katraj, Bibwewadi & Sinhagad Road",
+      "type": "residential",
+      "about": "<p>Bibwewadi is an established, largely residential area in south Pune off Satara Road, with Kondhwa, Wanwadi and Parvati around it and Market Yard and Sahakar Nagar close by. Housing is a mix of independent houses, builder floors and apartment buildings, with a few gated communities, and 1 to 3 BHK flats are typical. Mukund Nagar and the Market Yard side are among its familiar pockets.</p><p>Satara Road and Bibwewadi to Kondhwa Road are the main routes. Swargate, the Purple Line terminus, is the nearest metro stop today, and the extension towards Katraj now under construction includes stations at Market Yard and Bibwewadi. Tutors can take the metro to Swargate and finish by bus or auto, or come directly by two-wheeler. In independent houses and builder floors the tutor usually comes straight up; apartment buildings may keep a visitor book. Satara Road is heavy at school and office hours, so a class starting after the evening school traffic suits most homes, with online sessions for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/bibwewadi-pune-bibwewadi-pune-liqlt",
+        "https://en.wikipedia.org/wiki/List_of_roads_in_Pune",
+        "https://en.wikipedia.org/wiki/Purple_Line_(Pune_Metro)"
+      ]
+    },
+    "dhankawadi": {
+      "name": "Dhankawadi",
+      "zone": "Katraj, Bibwewadi & Sinhagad Road",
+      "type": "residential",
+      "about": "<p>Dhankawadi was a small village on the southern edge of Pune that became part of the city in 1995. It has been built up steadily since 2000 and is now home to middle-class and upper-middle-class families in independent houses, apartment complexes and a few gated communities. It sits on the old highway just north of where the bypass branches off, with Katraj, Bibwewadi, Ambegaon Pathar and Sahakar Nagar as neighbours, and the Katraj lake area close by.</p><p>Dhankawadi Road and the Pune to Satara highway are the main links, and Hatti Chowk is a familiar bus point. The nearest metro stop is Swargate at the end of the Purple Line; the Katraj extension under construction will bring stations closer. Tutors mostly arrive by two-wheeler, bus or auto, and many live in the surrounding south Pune areas. In houses the tutor comes to the door; in apartment complexes a visitor entry at the gate is normal. The highway gets crowded at school and office times, so plan the start of class around that, and use online classes for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dhankawadi",
+        "https://www.nobroker.in/locality-iq/dhankawadi-pune-liqlt",
+        "https://en.wikipedia.org/wiki/List_of_roads_in_Pune"
+      ]
+    },
+    "sinhagad-road": {
+      "name": "Sinhagad Road",
+      "zone": "Katraj, Bibwewadi & Sinhagad Road",
+      "type": "residential",
+      "about": "<p>Sinhagad Road is the long road that leaves the city near Sarasbaug and runs south-west towards the base of Sinhagad fort, and the name is also used for the string of residential areas along it. These include Vitthalwadi, Anand Nagar, Hingne Khurd, Vadgaon Budruk and Dhayari. Vadgaon Budruk, for example, was mostly farmland before the 1990s and is now dominated by apartment complexes, home to many middle-class families and IT professionals, with students renting rooms too.</p><p>A long flyover now carries traffic over the busiest section of the road, and Dhayari connects to the Mumbai to Bengaluru highway. There is no metro on Sinhagad Road; Swargate on the Purple Line and SNDT College on the Aqua Line are the nearest, so tutors mostly come by two-wheeler, bus or auto. Gated complexes register visitors at the gate. Peak-hour traffic along the road is heavy; start classes before or after the rush, and use online lessons where a specialist is needed. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_roads_in_Pune",
+        "https://en.wikipedia.org/wiki/Vadgaon_Budruk",
+        "https://www.nobroker.in/locality-iq/vadgaon-budruk-pune-liqlt",
+        "https://en.wikipedia.org/wiki/Dhayari"
+      ]
+    }
+  },
+  "zone_facts": {
+    "Kothrud, Karve Nagar & Deccan": [
+      {
+        "fact": "The Aqua Line (Vanaz–Ramwadi) opened its first section, Vanaz to Garware College, on 6 March 2022, with stations at Vanaz, Anand Nagar, Paud Phata, SNDT College and Garware College.",
+        "source": "https://en.wikipedia.org/wiki/Aqua_Line_(Pune_Metro)"
+      },
+      {
+        "fact": "The Aqua Line was extended from Garware College through Deccan Gymkhana and Chhatrapati Sambhaji Udyan to District Court and Ruby Hall Clinic on 1 August 2023.",
+        "source": "https://en.wikipedia.org/wiki/Aqua_Line_(Pune_Metro)"
+      },
+      {
+        "fact": "Paud Phata station was called Ideal Colony, and SNDT College station was called Nal Stop, until December 2025.",
+        "source": "https://en.wikipedia.org/wiki/Paud_Phata_metro_station"
+      },
+      {
+        "fact": "Shivaji Nagar station on the Purple Line (PCMC–Swargate) opened on 1 August 2023; District Court is the interchange between the Purple and Aqua Lines.",
+        "source": "https://en.wikipedia.org/wiki/Purple_Line_(Pune_Metro)"
+      },
+      {
+        "fact": "The main road from Deccan runs through Shivajinagar, Erandwane, Kothrud and Karve Nagar to Warje; Paud Road starts at Paud Phata and runs west through Kothrud and Bavdhan Khurd.",
+        "source": "https://en.wikipedia.org/wiki/List_of_roads_in_Pune"
+      },
+      {
+        "fact": "University Road (Ganeshkhind Road) runs from the bridge in Aundh to Shivajinagar.",
+        "source": "https://en.wikipedia.org/wiki/List_of_roads_in_Pune"
+      },
+      {
+        "fact": "The Katraj–Dehu Road bypass on the Mumbai–Bengaluru highway forms the western boundary of Kothrud.",
+        "source": "https://en.wikipedia.org/wiki/Kothrud"
+      }
+    ],
+    "Aundh, Baner & Pashan": [
+      {
+        "fact": "The Katraj–Dehu Road bypass, Pune's western bypass on the Mumbai–Bengaluru highway, passes through Balewadi, Baner, Pashan, Bavdhan Budruk and Bavdhan Khurd.",
+        "source": "https://en.wikipedia.org/wiki/List_of_roads_in_Pune"
+      },
+      {
+        "fact": "Metro Line 3 (Pink Line), from Maan near Hinjewadi to District Court via Shivajinagar, is a 23-station elevated line under construction, with stations planned at Balewadi High Street, Balewadi Phata, Baner Gaon, Baner Pashan Link Road, Aundh and Sakal Nagar.",
+        "source": "https://en.wikipedia.org/wiki/Pink_Line_(Pune_Metro)"
+      },
+      {
+        "fact": "The Commissioner of Metro Rail Safety has approved passenger operations on Line 3's first 12-station section, from Maan to Balewadi; the line had not opened to passengers at the time of writing.",
+        "source": "https://en.wikipedia.org/wiki/Pink_Line_(Pune_Metro)"
+      },
+      {
+        "fact": "University Road starts at the bridge over the Mula in Aundh and runs to Shivajinagar.",
+        "source": "https://en.wikipedia.org/wiki/List_of_roads_in_Pune"
+      },
+      {
+        "fact": "The Pashan–Sus Road runs west from Pashan through Sus towards Nande and Chande.",
+        "source": "https://en.wikipedia.org/wiki/List_of_roads_in_Pune"
+      },
+      {
+        "fact": "Balewadi was a village until 1997, when it was merged into the Pune Municipal Corporation with 22 other villages.",
+        "source": "https://en.wikipedia.org/wiki/Balewadi"
+      },
+      {
+        "fact": "The Aqua Line's extension west from Vanaz towards Chandani Chowk, next to Bavdhan, is under construction.",
+        "source": "https://en.wikipedia.org/wiki/Aqua_Line_(Pune_Metro)"
+      }
+    ],
+    "Wakad, Hinjewadi & Pimpri-Chinchwad": [
+      {
+        "fact": "The Purple Line's first section, from PCMC Bhavan to Phugewadi, opened on 6 March 2022, with stations at PCMC Bhavan, Sant Tukaram Nagar, Nashik Phata, Kasarwadi and Phugewadi.",
+        "source": "https://en.wikipedia.org/wiki/Purple_Line_(Pune_Metro)"
+      },
+      {
+        "fact": "The Purple Line reached Swargate on 29 September 2024, linking Pimpri-Chinchwad directly with Shivajinagar and the old city.",
+        "source": "https://en.wikipedia.org/wiki/Purple_Line_(Pune_Metro)"
+      },
+      {
+        "fact": "An extension of the Purple Line from PCMC Bhavan to Chinchwad, Akurdi, Nigdi and Bhakti Shakti is under construction.",
+        "source": "https://en.wikipedia.org/wiki/Purple_Line_(Pune_Metro)"
+      },
+      {
+        "fact": "Metro Line 3 is planned to run from Maan through Hinjewadi Phase II and Phase I and Wakad Chowk towards Balewadi and Shivajinagar; it had not opened to passengers at the time of writing.",
+        "source": "https://en.wikipedia.org/wiki/Pink_Line_(Pune_Metro)"
+      },
+      {
+        "fact": "The Pimpri Chinchwad Municipal Corporation was set up in 1982.",
+        "source": "https://en.wikipedia.org/wiki/Pimpri"
+      },
+      {
+        "fact": "The old Mumbai–Pune highway passes through Kasarwadi, Pimpri, Chinchwad and Nigdi; the Katraj–Dehu Road bypass passes through Ravet, Tathawade and Wakad.",
+        "source": "https://en.wikipedia.org/wiki/List_of_roads_in_Pune"
+      },
+      {
+        "fact": "Chinchwad railway station is on the Pune–Lonavala suburban line.",
+        "source": "https://en.wikipedia.org/wiki/Chinchwad"
+      },
+      {
+        "fact": "The Pimpri Chinchwad New Town Development Authority, which planned the Pradhikaran sectors, has its headquarters in Nigdi.",
+        "source": "https://en.wikipedia.org/wiki/Nigdi"
+      }
+    ],
+    "Viman Nagar, Kalyani Nagar & Kharadi": [
+      {
+        "fact": "The Pune Metro Aqua Line runs from Vanaz to Ramwadi; its Ruby Hall Clinic to Ramwadi section, with Bund Garden, Kalyani Nagar and Ramwadi stations, opened on 6 March 2024.",
+        "source": "https://en.wikipedia.org/wiki/Aqua_Line_(Pune_Metro)"
+      },
+      {
+        "fact": "Yerwada metro station on the Aqua Line opened on 21 August 2024, several months after the rest of the Ramwadi section, because its entry and exit points had to be revised.",
+        "source": "https://en.wikipedia.org/wiki/Yerwada_metro_station"
+      },
+      {
+        "fact": "Ramwadi is the elevated eastern terminus of the Aqua Line, located in Viman Nagar.",
+        "source": "https://en.wikipedia.org/wiki/Ramwadi_metro_station"
+      },
+      {
+        "fact": "Nagar Road (the Pune to Ahmednagar road, State Highway 27) starts at Yerawada and passes through Vadgaon Sheri, Kharadi and Wagholi; Airport Road branches from it at Yerawada.",
+        "source": "https://en.wikipedia.org/wiki/List_of_roads_in_Pune"
+      },
+      {
+        "fact": "Pune Airport is at Lohegaon, a civil enclave within the Indian Air Force station; its new terminal opened to passengers on 14 July 2024.",
+        "source": "https://en.wikipedia.org/wiki/Pune_Airport"
+      },
+      {
+        "fact": "An Aqua Line extension from Ramwadi towards Wagholi has central government approval, with completion targeted for 2030.",
+        "source": "https://en.wikipedia.org/wiki/Pune_Metro"
+      },
+      {
+        "fact": "Wagholi was added to the Pune Municipal Corporation area in 2021.",
+        "source": "https://en.wikipedia.org/wiki/Wagholi,_Pune"
+      }
+    ],
+    "Koregaon Park, Camp & Wanowrie": [
+      {
+        "fact": "The Pune Cantonment (Camp) was established in 1817 to house troops and is run by the Pune Cantonment Board.",
+        "source": "https://en.wikipedia.org/wiki/Pune_Cantonment"
+      },
+      {
+        "fact": "The cantonment was planned over four villages: Mali, Munjeri, Wanowrie and Ghorpuri.",
+        "source": "https://en.wikipedia.org/wiki/Pune_Cantonment"
+      },
+      {
+        "fact": "MG Road and East Street in Camp are known shopping streets.",
+        "source": "https://en.wikipedia.org/wiki/Pune_Cantonment"
+      },
+      {
+        "fact": "Koregaon Park was developed in the early 1920s on Ghorpuri village land and was originally called Koregaon Road Estate.",
+        "source": "https://en.wikipedia.org/wiki/Koregaon_Park"
+      },
+      {
+        "fact": "Bund Garden station on the Aqua Line opened on 6 March 2024; Pune Railway Station metro stop opened on 1 August 2023.",
+        "source": "https://en.wikipedia.org/wiki/Aqua_Line_(Pune_Metro)"
+      },
+      {
+        "fact": "Solapur Road, part of National Highway 65, begins at Pulgate and runs through Camp and Hadapsar towards Solapur.",
+        "source": "https://en.wikipedia.org/wiki/List_of_roads_in_Pune"
+      }
+    ],
+    "Hadapsar, Kondhwa & NIBM": [
+      {
+        "fact": "Solapur Road (National Highway 65) passes through Hadapsar, Manjri and Loni on its way to Solapur.",
+        "source": "https://en.wikipedia.org/wiki/List_of_roads_in_Pune"
+      },
+      {
+        "fact": "Hadapsar railway station serves local trains towards Daund and was developed to take load off Pune Junction.",
+        "source": "https://en.wikipedia.org/wiki/Hadapsar_railway_station"
+      },
+      {
+        "fact": "Magarpatta is a 182-hectare gated township in Hadapsar; construction began in 2000 and it is described as India's first successful land pooling plan.",
+        "source": "https://en.wikipedia.org/wiki/Magarpatta"
+      },
+      {
+        "fact": "The Battle of Poona was fought at Hadapsar on 25 October 1802.",
+        "source": "https://en.wikipedia.org/wiki/Hadapsar"
+      },
+      {
+        "fact": "Kondhwa is made up of Kondhwa Budruk and Kondhwa Khurd and is linked to the city by NIBM Road, Salunke Vihar Road and Katraj to Kondhwa Road.",
+        "source": "https://www.squareyards.com/kondhwa-in-pune-overview-816"
+      },
+      {
+        "fact": "Undri's road links are NIBM Road, Kondhwa Road and the Katraj to Hadapsar bypass.",
+        "source": "https://www.squareyards.com/undri-in-pune-overview-812"
+      }
+    ],
+    "Katraj, Bibwewadi & Sinhagad Road": [
+      {
+        "fact": "The Purple Line's District Court to Swargate section, with Kasba Peth, Mahatma Phule Mandai and Swargate stations, opened on 29 September 2024.",
+        "source": "https://en.wikipedia.org/wiki/Purple_Line_(Pune_Metro)"
+      },
+      {
+        "fact": "Swargate is the underground terminus of the Purple Line and is planned as a hub linked with the PMPML and MSRTC Swargate bus stations.",
+        "source": "https://en.wikipedia.org/wiki/Swargate_metro_station"
+      },
+      {
+        "fact": "An underground Purple Line extension from Swargate to Katraj (Line 1B) was approved in August 2024, with completion targeted for February 2029; planned stations are Market Yard, Bibwewadi, Padmavati, Balaji Nagar and Katraj.",
+        "source": "https://en.wikipedia.org/wiki/Purple_Line_(Pune_Metro)"
+      },
+      {
+        "fact": "Satara Road (National Highway 48) starts at Swargate and passes through Parvati, Bibwewadi and Katraj.",
+        "source": "https://en.wikipedia.org/wiki/List_of_roads_in_Pune"
+      },
+      {
+        "fact": "Sinhagad Road starts near Sarasbaug and ends at Atkarwadi at the base of Sinhagad.",
+        "source": "https://en.wikipedia.org/wiki/List_of_roads_in_Pune"
+      },
+      {
+        "fact": "Katraj lies at the foot of the Katraj Ghat and is known for its Peshwa-era lake that once supplied water to the city.",
+        "source": "https://en.wikipedia.org/wiki/Katraj"
+      },
+      {
+        "fact": "Dhankawadi was a small village incorporated into Pune in 1995.",
+        "source": "https://en.wikipedia.org/wiki/Dhankawadi"
+      }
+    ]
+  }
+}
