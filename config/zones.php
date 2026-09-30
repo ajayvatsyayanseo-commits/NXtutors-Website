@@ -81,4 +81,32 @@ return [
             'names' => ['gaur chowk', 'noida extension border'],
         ],
     ],
+    // Greater Noida incl. Greater Noida West (30 Sep 2026), from database/seo-content/areas/greater-noida-research.json.
+    // Greek-letter sectors are matched by full name ("pi 1", "mu 2"), never bare "pi"/"mu".
+    'Greater Noida' => [
+        'Greater Noida West' => [
+            'sectors' => [1, 2, 3, 4, 10, 12, 16],
+            'names' => ['techzone 4', 'gaur city 1', 'gaur city 2', 'shahberi', 'greater noida west', 'noida extension', 'gaur chowk', 'ek murti'],
+        ],
+        'Alpha–Delta & Pari Chowk' => [
+            'sectors' => [],
+            'names' => ['alpha 1', 'alpha 2', 'beta 1', 'beta 2', 'gamma 1', 'gamma 2', 'delta 1', 'delta 2', 'delta 3', 'sector p 3', 'sector p 4', 'jagat farm', 'alpha', 'beta', 'gamma', 'delta'],
+        ],
+        'Omega, Chi & Phi' => [
+            'sectors' => [],
+            'names' => ['omega 1', 'omega 2', 'chi 2', 'chi 3', 'chi 4', 'chi 5', 'phi 2', 'phi 3', 'pari chowk'],
+        ],
+        'Pi, Sigma & Sectors 36–37' => [
+            'sectors' => [36, 37],
+            'names' => ['swarn nagri', 'pi 1', 'pi 2', 'sigma 1', 'sigma 2', 'sigma 3', 'sigma 4', 'kasna'],
+        ],
+        'Zeta & Eta' => [
+            'sectors' => [],
+            'names' => ['zeta 1', 'zeta 2', 'eta 1', 'eta 2'],
+        ],
+        'Omicron, Mu & Xu' => [
+            'sectors' => [],
+            'names' => ['omicron 1', 'omicron 1a', 'omicron 2', 'omicron 3', 'mu 1', 'mu 2', 'xu 1', 'xu 2', 'xu 3', 'surajpur'],
+        ],
+    ],
 ];

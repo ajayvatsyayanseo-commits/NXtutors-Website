@@ -301,11 +301,35 @@ class GeoStructureTest extends TestCase
         $this->assertNull(DB::table('city_managment')->where('slug', 'noida')->value('id'));
     }
 
+    public function test_greater_noida_launches_with_greek_sector_zones(): void
+    {
+        $launch = require database_path('migrations/seo/2026_09_30_190000_launch_greater_noida_city_and_areas.php');
+        $launch->up();
+        $launch->up();
+
+        $this->assertSame('greater-noida', Geo::slugFor('Greater Noida West'));
+        $this->assertSame('greater-noida', Geo::slugFor('Noida Extension'));
+        $this->assertSame('noida', Geo::slugFor('Noida'));
+        $this->assertSame('Zeta & Eta', \App\Support\Zones::of('Greater Noida', 'Eta 1'));
+        $this->assertSame('Omicron, Mu & Xu', \App\Support\Zones::of('Greater Noida', 'Mu 2'));
+        $this->assertSame('Greater Noida West', \App\Support\Zones::of('Greater Noida', 'Sector 16'));
+
+        $id = DB::table('city_managment')->where('slug', 'greater-noida')->value('id');
+        $this->assertGreaterThanOrEqual(50, DB::table('city_area_list_managment')->where('city_id', $id)->count());
+        $this->get('/city/greater-noida/alpha-1')->assertOk()->assertSee('Alpha 1 at a glance')->assertSee('Alpha 1 is in the Alpha–Delta &amp; Pari Chowk part of Greater Noida', false);
+        $this->get('/tuition-jobs/greater-noida')->assertOk()->assertSee('Where in Greater Noida tutors are needed');
+
+        $launch->down();
+        $this->assertNull(DB::table('city_managment')->where('slug', 'greater-noida')->value('id'));
+    }
+
     public function test_city_names_map_to_city_pages_whatever_the_spelling(): void
     {
         $this->assertSame('gurugram', Geo::slugFor('Gurgaon'));
         $this->assertSame('mumbai', Geo::slugFor('Colaba'));
-        $this->assertSame('delhi-ncr', Geo::slugFor('Greater Noida'));
+        $this->assertSame('greater-noida', Geo::slugFor('Greater Noida'));
+        $this->assertSame('greater-noida', Geo::slugFor('Noida Extension'));
+        $this->assertSame('delhi-ncr', Geo::slugFor('Delhi NCR'));
         $this->assertSame('', Geo::slugFor('Atlantis'));
         $this->assertSame('Haryana', Geo::stateOf('gurugram'));
         $this->assertContains('delhi-ncr', Geo::neighbours('gurugram'));

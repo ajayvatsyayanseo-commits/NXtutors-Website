@@ -27,8 +27,9 @@ class Geo
      * that belong to it.
      */
     public const CITIES = [
-        'delhi-ncr'          => ['state' => 'Delhi NCR',        'metro' => true,  'aka' => 'New Delhi', 'display' => 'Delhi NCR', 'aliases' => ['delhi', 'new delhi', 'greater noida', 'ghaziabad', 'khora', 'indirapuram', 'dwarka', 'saket']],
-        // Noida has its own city page from 30 Sep 2026 (NCR roll-out, Noida first).
+        'delhi-ncr'          => ['state' => 'Delhi NCR',        'metro' => true,  'aka' => 'New Delhi', 'display' => 'Delhi NCR', 'aliases' => ['delhi', 'new delhi', 'ghaziabad', 'khora', 'indirapuram', 'dwarka', 'saket']],
+        // Noida and Greater Noida have their own city pages from 30 Sep 2026 (NCR roll-out).
+        'greater-noida'      => ['state' => 'Uttar Pradesh',    'metro' => false, 'aka' => null, 'display' => 'Greater Noida', 'aliases' => ['greater noida', 'gr noida', 'greater noida west', 'noida extension', 'noida extn', 'gaur city']],
         'noida'              => ['state' => 'Uttar Pradesh',    'metro' => false, 'aka' => null,        'aliases' => ['noida', 'gautam budh', 'gautam buddh', 'gautam budh nagar', 'gautam buddh nagar', 'gautam buddha nagar', 'noida sector']],
         'gurugram'           => ['state' => 'Haryana',          'metro' => true,  'aka' => 'Gurgaon',   'aliases' => ['gurgaon', 'gurugram', 'dlf qe', 'dlf-qe', 'wazirabad', 'sikanderpur', 'nathupur', 'chakkarpur', 'jharsa', 'kanhai', 'badshahpur', 'sohna road', 'golf course road']],
         'faridabad'          => ['state' => 'Haryana',          'metro' => false, 'aka' => null,        'aliases' => []],

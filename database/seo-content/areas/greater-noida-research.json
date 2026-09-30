@@ -1,0 +1,781 @@
+{
+  "areas": {
+    "sector-1": {
+      "name": "Sector 1",
+      "zone": "Greater Noida West",
+      "type": "residential",
+      "about": "<p>Sector 1 sits on the Bisrakh side of Greater Noida West, with the old Bisrakh Jalalpur village right next to it and Sector 2, Patwari and Techzone 4 as neighbours. Most families here live in mid-segment group-housing societies, and property portals note that flats in this sector tend to have more open space than in the denser pockets around Techzone 4. A few builder floors and plots also appear in listings. The Greater Noida West Link Road and Bisrakh Road are the main connections.</p><p>Nearly every home is inside a gated society, so a tutor usually registers at the gate or is approved on the society app before the first class; share the tower and flat number in advance. Residents mention water supply, drainage in the monsoon and traffic as recurring issues, and public transport is thin, so tutors mostly come by bike, car or e-rickshaw. Evening slots near the main roads can run late. For specialist subjects or exam-season revision, online classes are a sensible back-up. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/sector-1-greater-noida-west-greater-noida-overview-piffid",
+        "https://www.squareyards.com/sector-1-greater-noida-in-greater-noida-overview-309",
+        "https://en.wikipedia.org/wiki/Greater_Noida"
+      ]
+    },
+    "sector-2": {
+      "name": "Sector 2",
+      "zone": "Greater Noida West",
+      "type": "residential",
+      "about": "<p>Around Patwari village, Sector 2 is a developing housing pocket along the Noida–Greater Noida link road on the western edge of Greater Noida West. Sector 1, Sector 3 and Techzone 4 are its neighbours, and Ek Murti Chowk is the usual reference point for directions. Housing is mostly two- and three-bedroom flats in newer high-rise societies, with some residential plots also listed on property portals.</p><p>Because many towers are recent, some internal roads and approaches are still being finished, so give your tutor a clear pin location and the correct gate to use. Societies here generally ask visitors to register at the gate, so add the tutor as an expected guest before the first class. There is no metro in the sector yet; tutors usually arrive by two-wheeler, car or shared auto, and the link road gets slow in the evening rush. Weekend or early-evening slots are easier to keep regular. For advanced board or entrance-exam subjects, an online tutor widens the choice beyond who can travel in. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/sector-2-greater-noida-overview-piffid",
+        "https://www.squareyards.com/patwari-in-greater-noida-overview-2186",
+        "https://en.wikipedia.org/wiki/Greater_Noida"
+      ]
+    },
+    "sector-3": {
+      "name": "Sector 3",
+      "zone": "Greater Noida West",
+      "type": "residential",
+      "about": "<p>Quieter than the busy Gaur Chowk belt, Sector 3 is one of the GNIDA sectors listed as part of Greater Noida West, sitting beside Sector 1, Sector 2 and Sector 10. The sector mixes group-housing societies with plotted development and wide internal roads, and it is still filling in, so some stretches have more open land than finished homes. Families here are often first-time buyers who moved for a planned-township setting.</p><p>What this means for tutoring: in a society, the tutor clears the security gate or visitor app, while in a plotted house they can come straight to the door. Because the sector is still developing, shops, coaching centres and public transport are thinner than in older parts of Noida Extension, so most tutors travel by bike or car from neighbouring sectors. Fixing a regular weekly slot helps, and sharing a map pin avoids wrong turns on newer roads. Online lessons work well for specialist subjects or when a home tutor is hard to find nearby. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Greater_Noida",
+        "https://www.squareyards.com/sector-3-greater-noida-in-greater-noida-overview-64661",
+        "https://www.propertypistol.com/locality/6107a356-74d1-4c91-b145-0a6ad0b2aba4/sector-3-greater-noida"
+      ]
+    },
+    "sector-4": {
+      "name": "Sector 4",
+      "zone": "Greater Noida West",
+      "type": "mixed",
+      "about": "<p>Much of Noida Extension's daily life meets in Sector 4. High-rise apartments make up most of the housing, with a small number of builder floors and houses, and the sector also holds a large mall, shopping plazas and plenty of retail around Gaur Chowk, also known as Char Murti or Kisan Chowk. Internal roads feed onto the 130 m road and Greater Noida West Road. Sector 16C, Gaur City 2, Techzone 4 and Shahberi are neighbours. The planned Aqua Line extension from Noida Sector 51 is proposed to end in Sector 4 near Kisan Chowk.</p><p>For now the nearest working metro is Noida Sector 51, so tutors rely on bikes, cars or shared autos. The chowk area is congested at peak hours and has seen underpass work, so allow slack in the timetable. Almost every family is in a gated society; register the tutor at the gate before the first class. Online sessions suit specialist subjects or heavy-traffic days. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/sector-4-greater-noida-in-greater-noida-overview-2177",
+        "https://www.businesstoday.in/india/story/fed-up-with-noida-traffic-this-metro-extension-could-save-you-time-if-approved-today-544670-2026-07-23",
+        "https://www.squareyards.com/blog/greater-noida-west-nearest-metro-station",
+        "https://en.wikipedia.org/wiki/Greater_Noida"
+      ]
+    },
+    "sector-10": {
+      "name": "Sector 10",
+      "zone": "Greater Noida West",
+      "type": "residential",
+      "about": "<p>Along Greater Noida West Road, Sector 10 is a fast-growing housing sector where most families live in high-rise societies, and three- and four-bedroom flats make up the largest share of homes. Sector 12, Sector 16 and Sector 16C are close by, and the sector has a mix of ready homes and towers still under construction. The planned layout gives it wider roads and green belts than the older village-side areas of Noida Extension.</p><p>Societies here usually run a visitor app or gate register, so approve your tutor in advance and share the tower and flat number. With no metro inside Greater Noida West yet, tutors travel by two-wheeler, car or shared auto, and traffic builds near the chowks on Greater Noida West Road in the evening. Where construction is still going on, dust and patchy stretches of road are common, so a clear pin location helps. Online classes are a practical choice for advanced maths, sciences or languages, alongside a home tutor for younger children. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/sector-10-greater-noida-west-greater-noida-overview-piffid",
+        "https://en.wikipedia.org/wiki/Greater_Noida"
+      ]
+    },
+    "sector-12": {
+      "name": "Sector 12",
+      "zone": "Greater Noida West",
+      "type": "residential",
+      "about": "<p>The 130 m wide link road runs straight through Sector 12, which makes it one of the better-connected sectors of Greater Noida West for trips towards Noida and Greater Noida. Housing is almost entirely high-rise societies, mostly three- and four-bedroom flats in the mid to premium bracket, and many towers are ready to move into. Sector 10 is a neighbour, and Gaur Chowk (Kisan Chowk) is the main junction for traffic heading towards NH-24 and Noida.</p><p>For a home tutor, the main road access is an advantage, but society security is strict: tutors are usually entered on a visitor app or gate list, so set that up before the first class. The link road and the chowks along it are busy in the evening rush, so a slot that avoids the peak keeps classes on time. Public transport is limited to buses and shared autos, and most tutors come by bike or car. For specialist subjects or senior board years, pairing a home tutor with online sessions works well. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/sector-12-greater-noida-west-greater-noida-overview-piffid",
+        "https://unrealinvestors.com/sector-12-greater-noida-west-greater-noida-extension/",
+        "https://en.wikipedia.org/wiki/Greater_Noida"
+      ]
+    },
+    "sector-16b": {
+      "name": "Sector 16B",
+      "zone": "Greater Noida West",
+      "type": "residential",
+      "about": "<p>Families in Sector 16B mostly live in mid-segment societies with two- and three-bedroom flats. The sector sits in the middle of Greater Noida West beside the Noida–Greater Noida link road, and Ek Murti Chowk, also called Buddha Chowk, is the landmark most people use for directions. Techzone 4, Sector 16C, Sector 4, Gaur City and Shahberi are all nearby, and the sector is distinct from Sector 16 next door.</p><p>Because nearly every home is in a gated society, tutors are usually registered at the gate or approved on a visitor app, so do this before the first class. Ek Murti Chowk and Gaur Chowk both get crowded in the evening, and the authority has been reshaping the Ek Murti roundabout, so leave some slack in the timetable. The nearest working metro is Noida Sector 51, and most tutors arrive by bike, car or shared auto. Plenty of tutors already teach in the surrounding sectors, which helps with regular slots. Online lessons suit specialist subjects or exam-season revision. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/sector-16-b-greater-noida-overview-piffid",
+        "https://www.indiatvnews.com/uttar-pradesh/greater-noida-to-get-new-elevated-road-underpass-soon-traffic-jams-will-be-reduced-check-details-2024-12-13-966093",
+        "https://en.wikipedia.org/wiki/Greater_Noida"
+      ]
+    },
+    "sector-16c": {
+      "name": "Sector 16C",
+      "zone": "Greater Noida West",
+      "type": "residential",
+      "about": "<p>Most of Sector 16C is taken up by the large Gaur City 2 township, so the sector is almost entirely apartment towers, with one- to four-bedroom flats and a few retail plazas for daily shopping. Sector 16, Sector 16B, Sector 10 and Sector 4 border it, and Gaur Chowk is the busy junction residents pass through on their way to Noida, Ghaziabad or NH-24.</p><p>For home tuition, the upside is density: many tutors already teach in the neighbouring towers, so finding someone for the evening is usually easier here than in newer sectors. The downside is gate formalities and traffic. Societies ask visitors to register at the gate or on an app, and Gaur Chowk is a known bottleneck at peak hours. Residents also point to weak public transport, so tutors mostly come by bike or car rather than bus. Asking for the tower and flat number in advance saves time at the gate. For specialist or senior-school subjects, online classes are a practical back-up. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/sector-16c-greater-noida-overview-piffid",
+        "https://www.squareyards.com/sector-16c-greater-noida-in-greater-noida-overview-487",
+        "https://en.wikipedia.org/wiki/Greater_Noida"
+      ]
+    },
+    "techzone-4": {
+      "name": "Techzone 4",
+      "zone": "Greater Noida West",
+      "type": "mixed",
+      "about": "<p>Despite the name, Techzone 4 has turned into one of the densest apartment belts in Greater Noida West, with dozens of high-rise societies sitting alongside some corporate buildings and daily-use shops. Ek Murti Chowk is the main landmark, and Gaur City 1, Sector 1, Sector 2, Sector 4 and Sector 16B surround it.</p><p>With so many families close together, tutors often teach several students in the same area, which makes weekday evening slots easier to find. The trade-offs are traffic and gate checks. Peak-hour congestion around Ek Murti Chowk is common, internal roads are still patchy in places, and residents report dust from ongoing construction and waterlogging in the monsoon. Public transport is mainly shared autos and cabs, with the nearest working metro at Noida Sector 51, so tutors usually come by bike or car. Every society has its own entry process, so register your tutor on the visitor app or at the gate before the first class. For specialist subjects or rainy weeks, online classes keep lessons going. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/tech-zone-4-greater-noida-in-greater-noida-overview-343",
+        "https://www.99acres.com/techzone-4-greater-noida-west-greater-noida-overview-piffid",
+        "https://en.wikipedia.org/wiki/Greater_Noida"
+      ]
+    },
+    "gaur-city-1": {
+      "name": "Gaur City 1",
+      "zone": "Greater Noida West",
+      "type": "residential",
+      "about": "<p>Gaur City 1 is a large apartment township in Sector 4 of Greater Noida West, next to Char Murti Chowk, the junction also called Gaur Chowk or Kisan Chowk. A large mall sits on the 130 m road nearby, and the township has its own commercial complexes and parks. It connects to the rest of the region through Greater Noida West Road and the Noida–Greater Noida link road, with Techzone 4, Sector 16C and Gaur City 2 as neighbours.</p><p>Homes are flats in high-rise towers, so a tutor needs gate approval before each visit; adding them as a regular visitor saves time at the entrance. The chowk is one of the busiest in Noida Extension, and the authority has been building an underpass there, so evening traffic can hold tutors up. The nearest working metro is Noida Sector 51, and the planned Aqua Line extension is proposed to end near Kisan Chowk. Online classes suit specialist subjects or days when the roads are jammed. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://x.com/IndiaPostOffice/status/1227119081267970048",
+        "https://www.india.com/business/greater-noida-west-underpass-planned-at-noida-extensions-busiest-crossroad-at-char-murti-chowk-6570068/",
+        "https://www.businesstoday.in/india/story/fed-up-with-noida-traffic-this-metro-extension-could-save-you-time-if-approved-today-544670-2026-07-23",
+        "https://moneytreerealty.com/blog/gaur-city-mall-noida-extension"
+      ]
+    },
+    "gaur-city-2": {
+      "name": "Gaur City 2",
+      "zone": "Greater Noida West",
+      "type": "residential",
+      "about": "<p>Covering much of Sector 16C, Gaur City 2 is the second big township of Greater Noida West. It is built mainly as apartment towers, with one-, two- and three-bedroom flats making up most homes, plus shopping plazas, temples and community spaces inside. Gaur City 1, Sector 4, Sector 16C, Techzone 4 and Haibatpur are its neighbours, and the Greater Noida West link road is the main route out.</p><p>Towers are close together, so a tutor who already teaches in the township can often fit in another student on the same evening. Every tower sits behind society security, so get your tutor approved on the visitor system before the first class. Residents regularly complain about traffic and poor road surfaces around the township, especially near the chowks, so it is worth planning class times around the evening rush. There is no metro inside Greater Noida West yet; tutors usually travel by bike, car or shared auto. For senior board years or specialist subjects, an online tutor can fill gaps. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/gaur-city-2-in-greater-noida-overview-2184",
+        "https://www.99acres.com/sector-16c-greater-noida-overview-piffid",
+        "https://www.squareyards.com/blog/greater-noida-west-nearest-metro-station"
+      ]
+    },
+    "shahberi": {
+      "name": "Shahberi",
+      "zone": "Greater Noida West",
+      "type": "mixed",
+      "about": "<p>Shahberi is one of the original villages of Greater Noida West, and it still feels different from the tower sectors around it. Homes are mainly builder floors and smaller apartment buildings, and the locality is known across NCR for its furniture market. It sits next to Crossings Republik on the Ghaziabad side, with Sector 4, Sector 16B, Sector 16C, Gaur City 2 and Techzone 4 close by.</p><p>Because many families live in builder floors rather than gated societies, a tutor can often come straight to the door without gate registration, though the lanes are narrow and a precise map pin helps. The market area gets crowded, especially at weekends. There is no metro here; tutors usually come by bike or e-rickshaw from nearby sectors. Parents who find travel unreliable often mix home visits with online classes, which also suit specialist subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/shahberi-in-greater-noida-overview-9168",
+        "https://www.99acres.com/shahberi-greater-noida-overview-piffid",
+        "https://en.wikipedia.org/wiki/Greater_Noida"
+      ]
+    },
+    "alpha-1": {
+      "name": "Alpha 1",
+      "zone": "Alpha–Delta & Pari Chowk",
+      "type": "mixed",
+      "about": "<p>Among the oldest Greek-letter sectors of Greater Noida, Alpha 1 is a GNIDA plotted sector laid out in blocks A to E. Most families live in independent houses and builder floors, with a few flats, and a busy commercial belt of shops, banks and eateries sits inside the sector. The ALPHA 1 station of the Aqua Line stands in Block E, and Pari Chowk, where the Noida–Greater Noida Expressway ends, is next door. Alpha 2, Beta 1, Gamma 1, Delta 1 and Knowledge Park I are the neighbours, and the sector connects to the Surajpur–Kasna road.</p><p>Because homes are houses and floors, a tutor usually rings your bell directly, with no society gate to clear. Residents rate the metro and the easy supply of autos and cabs highly, so a tutor from another sector can ride the Aqua Line and finish on an e-rickshaw. Traffic around Pari Chowk builds up at peak hours, so leave a little slack in early-evening slots. Online classes suit specialist boards such as IB or IGCSE. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/alpha-1-greater-noida-in-greater-noida-overview-541",
+        "https://en.wikipedia.org/wiki/ALPHA_1_metro_station",
+        "https://en.wikipedia.org/wiki/Noida%E2%80%93Greater_Noida_Expressway",
+        "https://www.99acres.com/alpha-1-greater-noida-overview-piffid"
+      ]
+    },
+    "alpha-2": {
+      "name": "Alpha 2",
+      "zone": "Alpha–Delta & Pari Chowk",
+      "type": "residential",
+      "about": "<p>Alpha 2 is one of the early GNIDA sectors, a plotted area with blocks such as F, G, H and I where plots carry independent houses and builder floors. A main market handles groceries, pharmacies and eateries, and residents on property portals often mention markets within walking reach. Alpha 1 sits alongside, and the ALPHA 1 and DELTA 1 stations of the Aqua Line are the nearest metro stops, with Pari Chowk and the Noida–Greater Noida Expressway close by.</p><p>Tutors come straight to the door here, since there are no society gates to register at. Residents give good marks for public transport, metro access and cab and auto availability, which widens the pool of tutors willing to travel in, including those who arrive by metro and finish the trip by e-rickshaw. Keep weekday slots a little flexible when traffic builds near Pari Chowk. For board-specific or advanced subjects, an online tutor is worth considering. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/alpha-2-greater-noida-overview-piffid",
+        "https://www.99acres.com/alpha-2-greater-noida-reviews-and-ratings-wrffid",
+        "https://www.99acres.com/block-i-alpha-2-greater-noida-overview-piffid"
+      ]
+    },
+    "beta-1": {
+      "name": "Beta 1",
+      "zone": "Alpha–Delta & Pari Chowk",
+      "type": "residential",
+      "about": "<p>Mostly independent houses in two- and three-bedroom layouts, Beta 1 is a plotted GNIDA sector next to Alpha 1, Gamma 1 and Beta 2. Jagat Farm market sits right at its edge in Gamma 1, and the Surajpur–Kasna road, 6th Meridian Road and 1st Cross Road link the sector to the rest of the city. ALPHA 1 is the closest Aqua Line station, and the Noida–Greater Noida Expressway starts from nearby Pari Chowk.</p><p>Since families live in houses rather than towers, a tutor walks straight up to the door with no gate pass. Green spaces such as the J Block park and the Knowledge Park I park are close, handy for a short break between sessions for younger children. Evening crowds around Jagat Farm and Pari Chowk can slow a tutor coming from further away, so a tutor from the Alpha, Gamma or Delta sectors keeps timing reliable. Online classes cover specialist subjects well. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/sale/property-for-sale-in-gn-sector-beta-i-greater-noida",
+        "https://en.wikipedia.org/wiki/Jagat_Farm_market",
+        "https://en.wikipedia.org/wiki/Gamma_I,_Greater_Noida"
+      ]
+    },
+    "beta-2": {
+      "name": "Beta 2",
+      "zone": "Alpha–Delta & Pari Chowk",
+      "type": "residential",
+      "about": "<p>Often called the heart of Greater Noida by its residents, Beta 2 is a fully occupied plotted GNIDA sector of independent houses and builder floors, with a smaller share of flats. It borders Gamma 2 and sits close to Beta 1, with markets, banks and bus stops within walking reach and the Aqua Line stations at ALPHA 1 and DELTA 1 nearby. Many tenants in the sector are college students.</p><p>For parents this means no gate registration: the tutor simply arrives at your door. Residents praise the public transport, cab and auto availability, well-kept roads and safety at night, so a tutor can reach late-evening sessions without trouble. With so many homes let to students, check a tutor's board-exam experience carefully during the demo rather than relying on word of mouth. Online tutors suit specialist subjects or exam weeks. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/beta-2-greater-noida-overview-piffid",
+        "https://www.99acres.com/beta-2-greater-noida-reviews-and-ratings-wrffid",
+        "https://en.wikipedia.org/wiki/Gamma_II,_Greater_Noida"
+      ]
+    },
+    "gamma-1": {
+      "name": "Gamma 1",
+      "zone": "Alpha–Delta & Pari Chowk",
+      "type": "mixed",
+      "about": "<p>Home to Jagat Farm, one of the busiest marketplaces in Greater Noida, Gamma 1 is a commercial-cum-residential GNIDA sector. Away from the market, the blocks are mostly independent houses on individual plots. The sector is bordered by Gamma 2, Beta 1 and Knowledge Park I and III, with the Surajpur–Kasna road along the market side. ALPHA 1 is the nearest Aqua Line station, and Pari Chowk and Tugalpur are close.</p><p>Houses mean a tutor rings your doorbell directly, with no society gate. The catch is the market: the roads around Jagat Farm get crowded in the evening, when shoppers and street-food stalls are busiest. Ask a tutor to park or be dropped on your block's inner road rather than at the market front. Families wanting a specialist board tutor can mix an online teacher with a local home tutor for school subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Gamma_I,_Greater_Noida",
+        "https://en.wikipedia.org/wiki/Jagat_Farm_market",
+        "https://www.squareyards.com/sale/independent-houses-for-sale-in-gn-sector-gamma-i-greater-noida"
+      ]
+    },
+    "gamma-2": {
+      "name": "Gamma 2",
+      "zone": "Alpha–Delta & Pari Chowk",
+      "type": "residential",
+      "about": "<p>A settled residential sector of the older Greek-letter belt, Gamma 2 lies between Gamma 1, Delta 3 and Beta 2. Housing is mainly independent houses on GNIDA plots, many built as ground-plus-one or ground-plus-two homes, and commercial plots in the sector are auctioned by the authority. The sector once housed GNIDA's registry office. DELTA 1 and ALPHA 1 are the closest Aqua Line stations.</p><p>Because homes are individual houses, tutors reach your door without gate formalities or visitor apps. A tutor living in the Beta, Gamma or Delta sectors can usually fit sessions in soon after school hours, while one travelling from Noida will come via the Expressway and Pari Chowk, which is slower at rush hour. Consider online lessons for specialist subjects or when you need a teacher from outside Greater Noida. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Gamma_II,_Greater_Noida",
+        "https://www.nobroker.in/independent-house-for-sale-in-gamma-ii-greater-noida"
+      ]
+    },
+    "delta-1": {
+      "name": "Delta 1",
+      "zone": "Alpha–Delta & Pari Chowk",
+      "type": "residential",
+      "about": "<p>Independent homes built by local builders make up most of Delta 1, a plotted GNIDA sector in blocks A to F with builder floors mixed in. The DELTA 1 station of the Aqua Line stands in Block A, with the GNIDA Office and ALPHA 1 stations on either side. A bi-weekly market runs in the sector, and the Alpha 2 main market is also close.</p><p>For home tuition this is easy territory: the tutor comes straight to your door, and one travelling by metro can get off at DELTA 1 and walk or take an e-rickshaw. Online tutors also suit specialist boards such as IB, IGCSE or ISC. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/delta-1-greater-noida-overview-piffid",
+        "https://en.wikipedia.org/wiki/DELTA_1_metro_station",
+        "https://www.squareyards.com/sale/property-for-sale-in-gn-sector-delta-i-greater-noida"
+      ]
+    },
+    "delta-2": {
+      "name": "Delta 2",
+      "zone": "Alpha–Delta & Pari Chowk",
+      "type": "residential",
+      "about": "<p>Delta 2 is an established GNIDA sector of residential plots and ready-built independent houses, arranged in blocks G to K. It belongs to the Delta group of sectors with Delta 1 and Delta 3 in the central Greek-letter belt, and the DELTA 1 station on the Aqua Line is the nearest metro, giving a direct ride towards Pari Chowk and Noida. Sector roads link it to the Noida–Greater Noida Expressway.</p><p>With families in houses rather than gated towers, the tutor arrives at your door without any registration at a gate. Evening traffic mostly builds near Pari Chowk and the markets rather than inside the blocks, so a tutor from the neighbouring Delta or Gamma sectors is usually the most reliable choice for weekday sessions. For specialist subjects such as IB or IGCSE Maths, an online tutor widens the choice. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/delta-2-greater-noida-overview-piffid",
+        "https://www.99acres.com/residential-land-in-delta-2-greater-noida-ffid",
+        "https://en.wikipedia.org/wiki/DELTA_1_metro_station"
+      ]
+    },
+    "delta-3": {
+      "name": "Delta 3",
+      "zone": "Alpha–Delta & Pari Chowk",
+      "type": "residential",
+      "about": "<p>On the eastern side of the older Greek-letter belt, Delta 3 is a planned GNIDA sector of residential plots and independent houses, with wide internal roads, community parks and local shopping complexes. It borders Gamma 2, and the DELTA 1 and GNIDA Office stations on the Aqua Line are the metro stops that serve it, with railway links from Boraki and Dadri stations further out.</p><p>Being a house-and-plot sector, it has no society gates: a tutor comes straight to your home and can park outside. Portal listings here are mostly plots and independent houses, so expect a spread-out, low-rise feel rather than dense blocks. For regular weekday evening sessions, a tutor living in the Delta or Gamma sectors is easier to schedule than one travelling by metro from Noida. Online lessons suit specialist subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/property-in-delta-3-greater-noida-ffid",
+        "https://en.wikipedia.org/wiki/Gamma_II,_Greater_Noida",
+        "https://en.wikipedia.org/wiki/GNIDA_Office_metro_station"
+      ]
+    },
+    "sector-p-3": {
+      "name": "Sector P-3",
+      "zone": "Alpha–Delta & Pari Chowk",
+      "type": "residential",
+      "about": "<p>Close to Pari Chowk, Sector P-3 is one of the larger plotted sectors of Greater Noida, with GNIDA-allotted plots holding a mix of independent houses and builder floors. Pari Chowk is the nearest Aqua Line station, with Knowledge Park II and ALPHA 1 also in reach, and the sector gives easy access to both the Noida–Greater Noida Expressway and the Yamuna Expressway.</p><p>Families live in houses and floors, so tutors come straight to the door without gate checks. Evening traffic around Pari Chowk matters for tutors coming from Noida, so a tutor based in Greater Noida is often more punctual for weekday slots. Online classes help for specialist subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/sector-p-3-greater-noida-overview-piffid",
+        "https://en.wikipedia.org/wiki/Pari_Chowk_metro_station"
+      ]
+    },
+    "sector-p-4": {
+      "name": "Sector P-4 (Builders Area)",
+      "zone": "Alpha–Delta & Pari Chowk",
+      "type": "residential",
+      "about": "<p>Listed on property portals as the Builders Area, Sector P-4 is mostly made up of group-housing societies, where families live in apartment towers with lifts, parks and parking. Nearby areas include Jalvayu Vihar, Chi 3 and Phi 2, and the Knowledge Park II and Pari Chowk stations on the Aqua Line are the closest metro stops.</p><p>Society living changes the tutor routine: expect gate registration, visitor passes or app approval before each class, so set up a regular entry for your tutor with security early on. Some societies allow small-group sessions in common rooms, subject to their rules, which can cut costs for neighbours. Evening traffic around Pari Chowk can delay tutors, and online classes are a practical option for specialist subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/sector-p4-greater-noida-overview-piffid",
+        "https://www.99acres.com/property-in-sector-p4-greater-noida-ffid"
+      ]
+    },
+    "sector-36": {
+      "name": "Sector 36",
+      "zone": "Pi, Sigma & Sectors 36–37",
+      "type": "residential",
+      "about": "<p>Wide roads and privately owned independent houses give Sector 36 a low-density feel, with no large township-style blocks. The sector is in the Rho zone near Pari Chowk, and its neighbours include Sector 37, Swarn Nagri, Sigma 1 and the Pi sectors. The Knowledge Park institutions are close, and the Noida–Greater Noida Expressway and Yamuna Expressway both link the area to Noida and beyond.</p><p>With homes set on plots rather than in towers, a tutor comes straight to your door, and quiet internal roads make home visits simple. Residents' reviews are more mixed than in the older Alpha and Beta sectors, so meet the tutor in the demo class and agree timings clearly. A tutor who rides a two-wheeler or lives in the nearby sectors is usually the practical choice for weekday evenings. Online tutors are useful for specialist boards. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/sector-36-greater-noida-overview-piffid",
+        "https://www.squareyards.com/sector-37-greater-noida-in-greater-noida-overview-97324"
+      ]
+    },
+    "sector-37": {
+      "name": "Sector 37",
+      "zone": "Pi, Sigma & Sectors 36–37",
+      "type": "residential",
+      "about": "<p>Plots dominate Sector 37, a GNIDA residential sector where families build independent houses and many rented homes are two-bedroom units. It sits beside Sector 36, Omicron 1, Pi 1 and 2 and Sigma 2, with local markets in Kyampur nearby. Residents rate the public transport, nearby metro and roads well but mention pollution and frequent parking problems.</p><p>Tutors come directly to the house, with no society gate to clear, but with parking often tight, a tutor on a two-wheeler or dropped by auto has the easiest arrival. Because the sector borders several other plotted areas, there is usually a choice of tutors living close by, which helps with regular weekday slots. Online classes work well for specialist subjects or when you want a tutor from further afield. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/sector-37-greater-noida-in-greater-noida-overview-97324",
+        "https://www.99acres.com/sector-37-greater-noida-overview-piffid"
+      ]
+    },
+    "swarn-nagri": {
+      "name": "Swarn Nagri",
+      "zone": "Pi, Sigma & Sectors 36–37",
+      "type": "residential",
+      "about": "<p>One of the established residential sectors developed by GNIDA, Swarn Nagri mixes independent houses, builder floors and villas on plots with a few group-housing apartment blocks. Its neighbours include Omega 1, Sector 36, Rho 1, Pi 1 and 2, Sigma 2 and the Phi sectors, and it lies near Pari Chowk and Knowledge Park. Residents speak of well-lit streets, plenty of parks and green areas, and a good water supply.</p><p>For most families in houses and floors, a tutor comes straight to the door. In the apartment blocks, expect gate registration or visitor passes, so share your tutor's details with security in advance. Tutors here usually arrive by two-wheeler or auto, which makes someone from the neighbouring sectors the easiest fit for regular weekday classes. Online tutors suit specialist subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/sector-swarn-nagri-in-greater-noida-overview-4775",
+        "https://www.squareyards.com/reviews/locality/sector-swarn-nagri-in-greater-noida/64655"
+      ]
+    },
+    "omega-1": {
+      "name": "Omega 1",
+      "zone": "Omega, Chi & Phi",
+      "type": "residential",
+      "about": "<p>Omega 1 lies in south-western Greater Noida, directly below Omega 2, with Phi 1, Phi 2 and Chi 3 along its southern edge. Much of the sector is taken up by large gated communities, and property portals list a mix of bungalows, villas and multi-storey flats here, so a family may live in an independent house inside a walled colony or in an apartment tower. The head office of the Yamuna Expressway authority also sits in Omega 1, and Pari Chowk, where the Noida–Greater Noida Expressway ends, is the nearest big junction.</p><p>Nearly every home tuition visit here starts at a colony or society gate, so register the tutor's name and vehicle with security before the first class. The handiest Aqua Line stop is Pari Chowk in neighbouring Knowledge Park I, with an auto or e-rickshaw for the last stretch. The Pari Chowk roundabout jams at office hours, so evening slots need a little slack, and online classes suit specialist subjects such as IB or IGCSE maths. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Omega_I,_Greater_Noida",
+        "https://www.99acres.com/sector-omega-1-greater-noida-overview-piffid",
+        "https://en.wikipedia.org/wiki/Noida%E2%80%93Greater_Noida_Expressway"
+      ]
+    },
+    "omega-2": {
+      "name": "Omega 2",
+      "zone": "Omega, Chi & Phi",
+      "type": "residential",
+      "about": "<p>Sandwiched between Knowledge Park I to the north and Omega 1 to the south, with Psi 1 on its western side, Omega 2 is the residential sector that sits right beside Pari Chowk. Much of the sector is a large integrated township, so housing here is a mix of apartment blocks, residential plots and independent houses rather than one single type. The Yamuna Expressway is close by, and the Noida–Greater Noida Expressway finishes at Pari Chowk next door.</p><p>Pari Chowk metro station, just across in Knowledge Park I, puts Omega 2 on the Aqua Line, which makes it one of the easier sectors for a tutor coming by metro from Noida or other parts of Greater Noida. Families in the township blocks should expect gate entry and visitor logging, while house owners can have the tutor come straight to the door. The college belt of Knowledge Park to the north adds traffic around the roundabout at peak hours, so weekend or late-evening slots are often calmer. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Omega_II,_Greater_Noida",
+        "https://www.99acres.com/nri-city-greater-noida-overview-piffid",
+        "https://en.wikipedia.org/wiki/Pari_Chowk_metro_station",
+        "https://en.wikipedia.org/wiki/Knowledge_Park_I,_Greater_Noida"
+      ]
+    },
+    "pi-1": {
+      "name": "Pi 1",
+      "zone": "Pi, Sigma & Sectors 36–37",
+      "type": "residential",
+      "about": "<p>Locals usually speak of Pi 1 and Pi 2 together as Sector Pi, a spaced-out part of Greater Noida with broad internal roads. Pi 2, Swarn Nagri and Phi 1 are among its neighbours, and Delta 1 lies close by. Housing is mixed: ready apartment societies make up most homes, alongside villa enclaves and cooperative colonies of residential plots where families have built their own houses.</p><p>Which metro station a tutor uses depends on the pocket: Delta 1 is the usual stop, while Alpha 1, Pari Chowk and GNIDA Office also serve parts of the sector, with an e-rickshaw or auto for the last leg. Residents mention traffic jams at Pari Chowk during peak hours and patchy street lighting on some roads, so many parents prefer afternoon or early-evening classes. Apartment societies need visitor registration at the gate, while plotted homes allow doorstep visits. Online sessions work well for specialist subjects or exam-season revision. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/pi-greater-noida-in-greater-noida-overview-492",
+        "https://www.99acres.com/sector-pi-1-greater-noida-overview-piffid",
+        "https://www.propertypistol.com/locality/724d9bc2-f12b-4133-965c-006be482b8fc/sector-pi-1"
+      ]
+    },
+    "pi-2": {
+      "name": "Pi 2",
+      "zone": "Pi, Sigma & Sectors 36–37",
+      "type": "residential",
+      "about": "<p>The quieter half of Sector Pi, Pi 2 shares its layout of wide roads and green belts with Pi 1 next door, and Delta 1 is a close neighbour. Property portals show that most homes here are flats in group-housing societies, with a smaller number of villas, residential plots and independent floors. It is a settled, largely residential pocket rather than a commercial one.</p><p>For tutors travelling by metro, the Alpha 1, Delta 1 and GNIDA Office stations on the Aqua Line are the usual commute points, followed by an e-rickshaw ride into the sector. Because most families live in gated societies, tutors should be added to the visitor list or security app before the first class to avoid delays at the gate. Pari Chowk traffic can slow tutors coming from the Expressway side in the evening peak, so it helps to fix a regular slot. Online tutors are an easy option for less common subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/sector-pi-2-greater-noida-overview-piffid",
+        "https://www.squareyards.com/pi-greater-noida-in-greater-noida-overview-492",
+        "https://en.wikipedia.org/wiki/DELTA_1_metro_station"
+      ]
+    },
+    "sigma-1": {
+      "name": "Sigma 1",
+      "zone": "Pi, Sigma & Sectors 36–37",
+      "type": "residential",
+      "about": "<p>Out towards Kasna, Sigma 1 is a developing sector where much of the land is still in the form of residential plots, alongside standalone houses, villas and a few apartment complexes. Sigma 2, Sigma 3 and Sector 36 are its near neighbours, and Kasna lies just beyond, which keeps banks, ATMs and shops within easy reach.</p><p>Metro access is less direct than in the sectors near Pari Chowk: Delta 1 on the Aqua Line is the usual station, and the last stretch is by auto or e-rickshaw. The Surajpur–Kasna road is known for potholes and roadside encroachment by vendors and autos, which slows traffic at busy hours, so tutors coming from the Expressway side should plan for that. In plotted streets the tutor comes straight to the house with no society gate to clear, and online classes help when a specialist tutor is too far away. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/sigma-1-greater-noida-overview-piffid",
+        "https://www.squareyards.com/kasna-in-greater-noida-overview-756",
+        "https://en.wikipedia.org/wiki/DELTA_1_metro_station"
+      ]
+    },
+    "sigma-2": {
+      "name": "Sigma 2",
+      "zone": "Pi, Sigma & Sectors 36–37",
+      "type": "residential",
+      "about": "<p>Plotted housing defines Sigma 2. Most homes on the market here are residential plots in gated colonies, many of them freehold, where families build independent houses to their own design, and there are far fewer flats than in the sectors around Pari Chowk. Sigma 1 and Sigma 3 sit alongside it, and the Kasna side of Greater Noida is close by.</p><p>Many streets are still filling up with new houses, so a tutor may need a clear location pin and a landmark for the first visit. Gated plotted colonies usually have a guard at the entrance, but once the tutor's name is noted the visit is to the doorstep. Public transport is thinner than near the metro corridor, and most tutors arrive by scooter or car, or take the Aqua Line to Delta 1 and then an auto. For subjects where local choice is limited, online tutors are a practical option. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/residential-land-in-sigma-2-greater-noida-ffid",
+        "https://www.squareyards.com/sale/plots-for-sale-in-gn-sector-sigma-ii-greater-noida",
+        "https://www.99acres.com/sigma-1-greater-noida-overview-piffid"
+      ]
+    },
+    "sigma-3": {
+      "name": "Sigma 3",
+      "zone": "Pi, Sigma & Sectors 36–37",
+      "type": "residential",
+      "about": "<p>Wide roads and plenty of open land set the tone in Sigma 3, a planned residential sector next to Sigma 1, Sigma 2 and Sector 36. Villas and plots make up much of what is listed here, and newer premium high-rise gated projects are adding apartments, so the sector now has both independent homes and tower living. Families often choose it to build a house of their own.</p><p>Pari Chowk is the main junction for reaching the rest of Greater Noida and the Expressway, and the Aqua Line stations at Alpha 1 and Delta 1 are the likely stops for a tutor using the metro. In the new gated projects expect gate registration, basement parking rules and security checks, while villa and plot owners can welcome a tutor at the door. With the sector still growing, a home tutor may come from Pi or Kasna rather than next door, and online classes fill any gaps. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/sigma-3-greater-noida-overview-piffid",
+        "https://www.squareyards.com/sale/property-for-sale-in-sigma-iii-greater-noida",
+        "https://en.wikipedia.org/wiki/ALPHA_1_metro_station"
+      ]
+    },
+    "sigma-4": {
+      "name": "Sigma 4",
+      "zone": "Pi, Sigma & Sectors 36–37",
+      "type": "residential",
+      "about": "<p>Sigma 4 is a mid-segment residential sector near Sector P3, Sector 36 and Sector 31, where most families live in apartment societies, with some plots and houses in between. Greenbelts and parks run in front of many homes, and the Yamuna Expressway and the Noida–Greater Noida Expressway are the main road links to the wider NCR.</p><p>Society gates will want the tutor's details, and a steady weekday slot helps. Home tutors from Pi, Sigma and nearby sectors can usually reach the area. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/sigma-4-greater-noida-overview-piffid",
+        "https://www.99acres.com/sigma-4-greater-noida-reviews-and-ratings-wrffid"
+      ]
+    },
+    "zeta-1": {
+      "name": "Zeta 1",
+      "zone": "Zeta & Eta",
+      "type": "residential",
+      "about": "<p>In the north-eastern part of Greater Noida, Zeta 1 is an organised sector of wide internal roads and neat blocks, with Eta 1, Eta 2 and the Delta sectors around it. Apartments in gated societies account for most homes, but villas, plots, independent houses and builder floors are all found here, so the housing is more varied than in newer sectors.</p><p>Residents praise the green, clean and low-traffic feel of the sector but note that public transport is limited and markets are not on the doorstep. The nearest Aqua Line stations are Delta 1 and GNIDA Office, and local buses link the area to Pari Chowk, Alpha, Delta and Knowledge Park. A tutor coming by metro will need an auto for the last leg, so many families use tutors from Zeta, Eta and Delta. Society flats need gate registration, while villas and houses allow doorstep visits. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/zeta-i-greater-noida-in-greater-noida-overview-323",
+        "https://www.99acres.com/sector-zeta-1-greater-noida-overview-piffid",
+        "https://en.wikipedia.org/wiki/GNIDA_Office_metro_station"
+      ]
+    },
+    "zeta-2": {
+      "name": "Zeta 2",
+      "zone": "Zeta & Eta",
+      "type": "residential",
+      "about": "<p>Next to Zeta 1 and Eta 2, Zeta 2 is a residential sector on the eastern side of Greater Noida, with Delta 2, Beta 2 and Gamma 2 further along and the villages of Tilapta, Gulistanpur and Thapkhera nearby. Most homes are ready apartments in societies, followed by villas and plotted houses, and the market is mainly resale.</p><p>The GNIDA Office station on the Aqua Line is the usual metro stop, and Boraki and Dadri railway stations also serve the area, so a tutor coming from Noida will typically combine the metro with an auto or their own two-wheeler. Shopping trips tend to head to the Delta 2 market. With society living the norm, share the tutor's details with the gate in advance. Because the sector sits away from the Pari Chowk corridor, online classes are handy for specialist subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/zeta-ii-greater-noida-in-greater-noida-overview-64603",
+        "https://www.99acres.com/zeta-2-greater-noida-overview-piffid"
+      ]
+    },
+    "eta-1": {
+      "name": "Eta 1",
+      "zone": "Zeta & Eta",
+      "type": "residential",
+      "about": "<p>A GNIDA-developed sector with a large stock of residential plots, Eta 1 is where many families live in independent houses built on authority plots, with a smaller share of flats. It lies beside Zeta 1, Zeta 2 and Eta 2, with the Delta sectors and the villages of Jaitpur and Gulistanpur close by. Parks and wide internal roads run through its residential blocks.</p><p>Because most homes are houses rather than towers, a tutor can usually come straight to the door without a society gate or app entry. The Aqua Line's GNIDA Office and Depot stations are the nearest metro points, with an auto or e-rickshaw for the last leg, and tutors from Zeta, Delta and Eta 2 are the most practical choice for regular home visits. Online classes are a good fallback for specialist subjects or exam-time revision. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/residential-land-in-eta-1-greater-noida-ffid",
+        "https://www.squareyards.com/zeta-ii-greater-noida-in-greater-noida-overview-64603",
+        "https://en.wikipedia.org/wiki/GNIDA_Office_metro_station"
+      ]
+    },
+    "eta-2": {
+      "name": "Eta 2",
+      "zone": "Zeta & Eta",
+      "type": "residential",
+      "about": "<p>Eta 2 is an emerging GNIDA sector next to Eta 1 and Zeta 2, with a green, open feel and big roads. Most homes listed here are apartments in newer group-housing societies, with residential plots alongside, and some society blocks sit near the Depot station at the end of the Aqua Line.</p><p>Residents mention ongoing construction dust and noise, roadside parking that squeezes traffic, limited shopping and a market that is some way off, so plan the tutor's route in advance. Depot and Delta 1 stations are the usual metro points, and some residents feel the link from the station to their society is weak, so a tutor may prefer to ride in. New societies generally ask for visitor registration at the gate. Online lessons work well while the area's facilities catch up. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/eta-2-greater-noida-overview-piffid",
+        "https://www.99acres.com/eta-2-greater-noida-reviews-and-ratings-wrffid",
+        "https://www.99acres.com/flats-in-eta-2-greater-noida-ffid"
+      ]
+    },
+    "chi-2": {
+      "name": "Chi 2",
+      "zone": "Omega, Chi & Phi",
+      "type": "residential",
+      "about": "<p>Most families in Chi 2 live in flats inside gated group-housing societies, including a large township built for Army families. The sector sits in the Chi–Phi belt of south-western Greater Noida, with Chi 1 to the north and Chi 3 to the south, and Pari Chowk, where the Yamuna Expressway begins, is the main junction nearby. Knowledge Park II and Alpha 1 are the Aqua Line stations residents use, and a local market, clinics and grocery shops serve the area.</p><p>Because homes are in gated societies, a home tutor usually has to be registered at the gate before the first class, so share the tutor's name and phone number with security a day ahead. Public transport inside the Chi sectors is limited, so most tutors come by two-wheeler, or by metro and then an auto or e-rickshaw from the station. Traffic builds up around Pari Chowk in the evening, so a fixed, slightly earlier slot works better. For specialist boards or subjects, online classes widen the choice. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/sector-chi-2-greater-noida-overview-piffid",
+        "https://en.wikipedia.org/wiki/Chi_III,_Greater_Noida",
+        "https://en.wikipedia.org/wiki/Chi_I,_Greater_Noida",
+        "https://www.99acres.com/chi-phi-greater-noida-overview-piffid"
+      ]
+    },
+    "chi-3": {
+      "name": "Chi 3",
+      "zone": "Omega, Chi & Phi",
+      "type": "residential",
+      "about": "<p>Chi 3 combines GNIDA residential plots, where families have built independent houses, with a handful of apartment societies and a small commercial complex. Phi 1, Chi 1 and Chi 2 lie to its north, Chi 4 to the south and Phi 3 to the east, so it sits in the middle of the Chi–Phi belt. Pari Chowk is the usual reference point: the Yamuna Expressway starts there, and Pari Chowk and Knowledge Park II are the nearest stations on the Aqua Line.</p><p>In the plotted lanes a tutor can come straight to your door, with no society gate to clear; in the apartment blocks, add the tutor to the visitor list first. Residents of the Chi–Phi sectors say buses and shared autos are thin on the ground, so tutors mostly travel by two-wheeler, or take the metro and finish the last stretch by e-rickshaw. Evening classes can run late when Pari Chowk is congested, so an early-evening timing is safer. Online classes suit specialist subjects such as IB or IGCSE maths. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chi_III,_Greater_Noida",
+        "https://www.squareyards.com/chi-iii-greater-noida-in-greater-noida-overview-539",
+        "https://www.99acres.com/residential-land-in-sector-chi-3-greater-noida-ffid",
+        "https://www.99acres.com/chi-phi-greater-noida-overview-piffid"
+      ]
+    },
+    "chi-4": {
+      "name": "Chi 4",
+      "zone": "Omega, Chi & Phi",
+      "type": "residential",
+      "about": "<p>Much of Chi 4 is laid out as GNIDA residential plots with independent houses, and the sector also has a high-rise society and blocks of smaller flats. Chi 3 lies to the north, Chi 5 to the west and Phi 4 to the east, with Kasna close by on the eastern side. Knowledge Park II and Pari Chowk are the nearest Aqua Line stops, and Pari Chowk is also where the Yamuna Expressway begins, so most trips in and out pass through that junction.</p><p>Homes on plots mean a tutor can usually ring the bell and start, while families in the societies should register the tutor at the gate before the first class. With limited buses and autos inside the Chi sectors, tutors tend to arrive by two-wheeler, or by metro and e-rickshaw. Plan around evening congestion at Pari Chowk, and keep online sessions in mind for specialist subjects or exam-season revision when a local specialist is hard to find. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chi_IV,_Greater_Noida",
+        "https://www.99acres.com/sector-chi-4-greater-noida-overview-piffid",
+        "https://www.99acres.com/residential-land-in-sector-chi-4-greater-noida-ffid",
+        "https://www.squareyards.com/kasna-in-greater-noida-overview-756"
+      ]
+    },
+    "chi-5": {
+      "name": "Chi 5",
+      "zone": "Omega, Chi & Phi",
+      "type": "residential",
+      "about": "<p>On the western edge of Greater Noida, Chi 5 borders Noida's Sector 150 and sits along the Yamuna Expressway corridor. It is a group-housing sector: high-rise societies with two- and three-bedroom flats make up most homes, with a few low-rise builder-floor blocks. Chi 3 and Chi 4 lie to the east, and residents reach the Aqua Line at Knowledge Park II or Pari Chowk, with the Noida–Greater Noida Expressway also within reach.</p><p>Almost every tutor visit here starts at a society gate, so add the tutor to the visitor list and tell security which tower and flat to send them to. Residents like the open, green surroundings and wide roads, but public transport inside the sector is limited, so most tutors travel by two-wheeler, or by metro plus e-rickshaw. Evening traffic near Pari Chowk can delay late slots, so earlier timings are more reliable. Online classes are a practical option for specialist subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chi_V,_Greater_Noida",
+        "https://www.squareyards.com/chi-v-greater-noida-in-greater-noida-overview-318",
+        "https://www.99acres.com/sector-chi-5-greater-noida-overview-piffid"
+      ]
+    },
+    "phi-2": {
+      "name": "Phi 2",
+      "zone": "Omega, Chi & Phi",
+      "type": "residential",
+      "about": "<p>Phi 2 sits between Omega 1 to the north, Phi 1 to the west and Swarn Nagri to the east, with Kasna close by. Homes here are mostly flats in mid-sized, ready-to-move group-housing societies, which makes it one of the more affordable addresses in the Chi–Phi belt. Pari Chowk metro station on the Aqua Line is the main link, with Knowledge Park II and Alpha 1 as alternatives, and residents rate cab and auto availability, public transport and road upkeep well.</p><p>For a home tutor, the first step is getting their name on the society's visitor list so the guard lets them in without delay. Because autos are easy to find, a tutor who comes by metro can finish the trip quickly from Pari Chowk, though the junction itself is busy in the evening. Families who want a specialist for board exams or competitive-exam maths can pair a local tutor with online sessions. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Phi_II,_Greater_Noida",
+        "https://www.99acres.com/sector-phi-2-greater-noida-overview-piffid",
+        "https://www.squareyards.com/kasna-in-greater-noida-overview-756"
+      ]
+    },
+    "phi-3": {
+      "name": "Phi 3",
+      "zone": "Omega, Chi & Phi",
+      "type": "residential",
+      "about": "<p>Phi 3 is largely a sector of independent houses on GNIDA plots, with a few newer apartment projects alongside. Phi 1 and Phi 2 border it to the north and Chi 3 and Chi 4 to the west, placing it in the middle of the Chi–Phi belt south of Pari Chowk. Residents describe roomy, well-ventilated houses with parking in front and several parks inside the colony, and they use Pari Chowk and Knowledge Park II stations on the Aqua Line.</p><p>Houses mean doorstep tutoring: the tutor parks outside and comes straight in, with no gate pass needed. Residents do note that some roads go quiet after dark and that park upkeep is patchy, so many families prefer daytime or early-evening classes, particularly when the tutor is travelling alone. Most tutors come by two-wheeler, or by metro followed by an e-rickshaw. For subjects where a local tutor is hard to find, online classes fill the gap. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Phi_III,_Greater_Noida",
+        "https://www.99acres.com/sector-phi-3-greater-noida-overview-piffid",
+        "https://www.99acres.com/sector-phi-3-greater-noida-reviews-and-ratings-wrffid"
+      ]
+    },
+    "omicron-1": {
+      "name": "Omicron 1",
+      "zone": "Omicron, Mu & Xu",
+      "type": "residential",
+      "about": "<p>Omicron 1 is the most apartment-heavy of the Omicron sectors, with high-rise group-housing societies making up most homes and a smaller share of builder floors and plots. Omicron 1A, Omicron 2 and Xu 1 are its neighbours, and the Sigma sectors are close by. Internal roads lead out to the Surajpur–Kasna road and on towards the Noida–Greater Noida Expressway, and the Ecotech 1 and Surajpur Site IV industrial areas are nearby.</p><p>Metro access is the weak point: the nearest Aqua Line stop is GNIDA Office, so a tutor usually finishes the journey by shared auto or e-rickshaw. Local buses and autos do run towards Pari Chowk, but connecting roads get congested at peak hours, so weekday evening slots should allow some slack. In the societies, register the tutor at the gate before the first visit. Online classes are useful for specialist subjects and busy exam weeks. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/omicron-i-greater-noida-in-greater-noida-overview-489",
+        "https://www.99acres.com/omicron-1-greater-noida-overview-piffid"
+      ]
+    },
+    "omicron-1a": {
+      "name": "Omicron 1A",
+      "zone": "Omicron, Mu & Xu",
+      "type": "residential",
+      "about": "<p>Quiet and leafy, Omicron 1A is a plotted GNIDA sector of independent houses and villas, with a block of authority-built flats as well. It sits beside Omicron 1, residents reach the rest of the city along the Noida–Greater Noida link road, and GNIDA Office is the nearest Aqua Line station. People who live here like the clean roads and low pollution, but point out that there is no market, school or hospital inside the sector itself.</p><p>For tutoring, the plotted layout helps: apart from the flats, tutors come straight to the door with no society gate. The catch is public transport. Residents say autos and buses are hard to find inside the sector, although cabs are easy to book, so a tutor with their own two-wheeler is the most dependable choice. Fixing a regular weekly slot saves repeated travel planning, and online classes cover specialist subjects that nearby tutors may not teach. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/omicron-1-a-greater-noida-overview-piffid",
+        "https://www.99acres.com/omicron-1-a-greater-noida-reviews-and-ratings-wrffid"
+      ]
+    },
+    "omicron-2": {
+      "name": "Omicron 2",
+      "zone": "Omicron, Mu & Xu",
+      "type": "residential",
+      "about": "<p>Omicron 2 is a plotted sector made up almost entirely of independent houses and villas, many of them compact two-bedroom homes, laid out around plenty of parks with a green belt along its edge. Omicron 1, Omicron 3 and the Mu sectors are its neighbours. The Noida–Greater Noida link road is the main route out, the Eastern Peripheral Expressway is within reach, and Delta 1 and Alpha 1 are among the Aqua Line stations residents use.</p><p>Because families live in houses rather than gated towers, a tutor can come straight to the door and start without a gate pass. The sector is quiet and public transport inside it is limited, so tutors usually travel by two-wheeler rather than depending on autos. Residents have raised drinking-water quality as a concern, worth knowing if a tutor asks for water during a long session. For specialist subjects or board-exam revision, an online tutor is a practical addition. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/sector-omicron-2-greater-noida-overview-piffid",
+        "https://www.99acres.com/omicron-1-greater-noida-overview-piffid",
+        "https://www.squareyards.com/xu-2-greater-noida-in-greater-noida-overview-64981"
+      ]
+    },
+    "omicron-3": {
+      "name": "Omicron 3",
+      "zone": "Omicron, Mu & Xu",
+      "type": "residential",
+      "about": "<p>Omicron 3 has a mix of group-housing societies and GNIDA residential plots with independent houses, and it is one of the more affordable sectors on this side of Greater Noida. Mu, Mu 1 and Omicron 2 border it, and Xu 1 and Xu 2 are close. GNIDA Office and Delta 1 are the Aqua Line stations residents use, and Boraki railway station is another commute point for families who travel further afield.</p><p>Residents mention low pollution, nearby schools and reasonable public transport. In the societies the tutor will need to be registered with security before the first class; in the plotted blocks they can come straight to the door. Most tutors arrive by two-wheeler, or by metro and then a shared auto. Online classes are a useful option for specialist subjects or when a family wants a tutor from further away. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/sector-omicron-3-greater-noida-overview-piffid",
+        "https://www.99acres.com/residential-land-in-sector-omicron-3-greater-noida-ffid",
+        "https://www.squareyards.com/xu-1-greater-noida-in-greater-noida-overview-64979"
+      ]
+    },
+    "mu-1": {
+      "name": "Mu 1",
+      "zone": "Omicron, Mu & Xu",
+      "type": "residential",
+      "about": "<p>Independent houses and villas on GNIDA plots make up most of Mu 1, with only a few flats. Its neighbours include Mu 2, Xu 1 and the Omicron sectors, and residents can head out towards the Noida–Greater Noida Expressway, the Yamuna Expressway or the Eastern Peripheral Expressway. GNIDA Office is the Aqua Line station commonly used, and Boraki railway station is another option for longer journeys.</p><p>Residents say markets are within walking distance, roads are well kept and public transport is reasonable, which makes tutor travel simpler than in some neighbouring sectors. With houses rather than gated towers, a tutor can come directly to your door without a gate pass. Most still prefer to ride their own two-wheeler, so ask about travel when you fix timings. Online classes help for specialist subjects or exam-season revision. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/sector-mu-1-greater-noida-overview-piffid",
+        "https://www.squareyards.com/xu-1-greater-noida-in-greater-noida-overview-64979"
+      ]
+    },
+    "mu-2": {
+      "name": "Mu 2",
+      "zone": "Omicron, Mu & Xu",
+      "type": "residential",
+      "about": "<p>Mu 2 is known mainly for its GNIDA housing-scheme flats, built by the authority itself, alongside residential plots with independent houses. It is next to Mu 1 and Xu 2, near the Omicron sectors, and the upcoming Boraki railway station is on this side of the city. The Aqua Line is reached at GNIDA Office, while the Noida–Greater Noida and Yamuna expressways are further out.</p><p>Residents who have reviewed the sector mention easy cab and auto availability, good public transport and nearby schools, so a tutor without a vehicle can still reach you from the metro. In the flat blocks, give the tutor's name at the gate before the first class; plotted homes need no pass. Mu 2 is a quiet, lower-cost part of Greater Noida, and families wanting a specialist tutor can combine home classes with online sessions. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/sector-mu-2-greater-noida-overview-piffid",
+        "https://www.squareyards.com/xu-2-greater-noida-in-greater-noida-overview-64981"
+      ]
+    },
+    "xu-1": {
+      "name": "Xu 1",
+      "zone": "Omicron, Mu & Xu",
+      "type": "residential",
+      "about": "<p>Xu 1 is a plotted GNIDA sector where independent houses make up nearly all homes, with a few authority-built houses and some vacant plots still waiting to be built on. Omicron 1, Omicron 3, Mu 1, Mu 2, Xu 3 and Sigma 2 surround it, with Mathurapur village and the Ecotech industrial area nearby. The Aqua Line is reached at GNIDA Office, and both the Yamuna Expressway and the Noida–Greater Noida Expressway are within reach by road.</p><p>With houses rather than gated societies, a tutor can come straight to your door without a gate pass. Public transport inside the sector is limited, so tutors who ride their own two-wheeler are the easiest to fix; ask about this during the demo class. Local shops and markets are in the neighbouring sectors. Online classes are a good choice for specialist subjects or when a local tutor for a particular board is hard to find. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/xu-1-greater-noida-in-greater-noida-overview-64979",
+        "https://www.99acres.com/sector-xu-1-greater-noida-overview-piffid",
+        "https://www.99acres.com/independent-house-in-sector-xu-1-greater-noida-ffid"
+      ]
+    },
+    "xu-2": {
+      "name": "Xu 2",
+      "zone": "Omicron, Mu & Xu",
+      "type": "residential",
+      "about": "<p>Xu 2 is made up of residential plots and independent houses, with very few apartments. It borders Xu 1, Xu 3 and Mu 2, sits near Omicron 1, 2 and 3 and Sigma 2, and has Raipur Bangar village as a neighbour. The Surajpur–Kasna road is the main link, and residents reach the Aqua Line at Alpha 1 or Delta 1. It is calmer and less congested than central Greater Noida, with wide internal roads, green spaces and easy parking.</p><p>That quiet has a cost for tutor travel: residents say autos and buses rarely come inside the sector, so families rely on their own vehicles or cabs. A tutor who rides a two-wheeler is therefore the most practical choice, and with houses there is no gate pass to arrange. Some families feel the area is remote and short of well-known schools nearby, which makes a steady home tutor more valuable. Online classes help for specialist subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/xu-2-greater-noida-in-greater-noida-overview-64981",
+        "https://www.99acres.com/sector-xu-2-greater-noida-overview-piffid"
+      ]
+    },
+    "xu-3": {
+      "name": "Xu 3",
+      "zone": "Omicron, Mu & Xu",
+      "type": "residential",
+      "about": "<p>Xu 3 is a mid-budget GNIDA sector known for its independent houses on residential plots. It lies beside Xu 1 and Xu 2, with Raipur village close by, and residents can reach both the Eastern Peripheral Expressway and the Yamuna Expressway. Pari Chowk is the nearest big junction, and the Surajpur industrial area is on the same side of the city. Residents praise the build quality of homes and the natural surroundings.</p><p>For a parent arranging a home tutor, the plotted layout is simple: the tutor comes to your door with no society gate. What residents flag is the shortage of shops and public transport inside the sector, so tutors generally need their own two-wheeler, and it is worth confirming this at the demo stage. Tutors who live in the neighbouring Xu, Mu and Omicron sectors are the easiest to keep on a regular timetable. Online classes cover specialist subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/sector-xu-3-greater-noida-overview-piffid",
+        "https://www.squareyards.com/xu-2-greater-noida-in-greater-noida-overview-64981"
+      ]
+    }
+  },
+  "zone_facts": {
+    "Greater Noida West": [
+      {
+        "fact": "Greater Noida West lies within the GNIDA notified area and includes Sectors 1, 2, 3, 4, 10, 12, 16B, 16C, Techzone and Knowledge Park 5, reached from Noida Sector 121 by a road that crosses the Hindon river.",
+        "source": "https://en.wikipedia.org/wiki/Greater_Noida"
+      },
+      {
+        "fact": "The Greater Noida West area takes in 16 villages, including Shahberi, Bisrakh, Patwari, Haibatpur and Itaida.",
+        "source": "https://en.wikipedia.org/wiki/Greater_Noida"
+      },
+      {
+        "fact": "The Aqua Line of Noida Metro runs from Noida Sector 51 to Depot station in Greater Noida and opened on 25 January 2019; there is no operational metro station inside Greater Noida West.",
+        "source": "https://en.wikipedia.org/wiki/Aqua_Line_(Noida_Metro)"
+      },
+      {
+        "fact": "Noida Sector 51 on the Aqua Line is the nearest working metro station for Greater Noida West and connects by skywalk to Sector 52 on the Delhi Metro Blue Line.",
+        "source": "https://www.squareyards.com/blog/greater-noida-west-nearest-metro-station"
+      },
+      {
+        "fact": "A planned Aqua Line extension from Noida Sector 51 to Greater Noida West Sector 4 near Kisan Chowk, with stations at Sectors 61, 70, 122, 123 and Greater Noida Sector 4, was placed before the Public Investment Board in July 2026; it is planned, not open.",
+        "source": "https://www.businesstoday.in/india/story/fed-up-with-noida-traffic-this-metro-extension-could-save-you-time-if-approved-today-544670-2026-07-23"
+      },
+      {
+        "fact": "GNIDA issued a tender for an underpass at Char Murti Chowk, described as the busiest crossroad in Noida Extension, used by traffic between Gaur City, Pratap Vihar and Surajpur.",
+        "source": "https://www.india.com/business/greater-noida-west-underpass-planned-at-noida-extensions-busiest-crossroad-at-char-murti-chowk-6570068/"
+      },
+      {
+        "fact": "The Greater Noida Authority has considered an elevated road along the 130 m road from Kisan Chowk to Knowledge Park 5 and began reducing the size of the Ek Murti roundabout.",
+        "source": "https://www.indiatvnews.com/uttar-pradesh/greater-noida-to-get-new-elevated-road-underpass-soon-traffic-jams-will-be-reduced-check-details-2024-12-13-966093"
+      },
+      {
+        "fact": "Bisrakh Jalalpur, a village near Kisan Chowk in Greater Noida West, is traditionally regarded as the birthplace of Ravana.",
+        "source": "https://en.wikipedia.org/wiki/Bisrakh"
+      }
+    ],
+    "Alpha–Delta & Pari Chowk": [
+      {
+        "fact": "The Aqua Line of the Noida Metro opened on 25 January 2019 with 21 stations from Noida Sector 51 to Depot; its Greater Noida stops are Knowledge Park II, Pari Chowk, ALPHA 1, DELTA 1, GNIDA Office and Depot.",
+        "source": "https://en.wikipedia.org/wiki/Aqua_Line_(Noida_Metro)"
+      },
+      {
+        "fact": "The six-lane Noida–Greater Noida Expressway runs from the Mahamaya flyover in Noida and ends at Pari Chowk, Greater Noida.",
+        "source": "https://en.wikipedia.org/wiki/Noida%E2%80%93Greater_Noida_Expressway"
+      },
+      {
+        "fact": "ALPHA 1 metro station is located in Block E, Alpha I.",
+        "source": "https://en.wikipedia.org/wiki/ALPHA_1_metro_station"
+      },
+      {
+        "fact": "DELTA 1 metro station is located in Block A, Delta I, between the ALPHA 1 and GNIDA Office stations.",
+        "source": "https://en.wikipedia.org/wiki/DELTA_1_metro_station"
+      },
+      {
+        "fact": "GNIDA Office metro station is in Knowledge Park IV.",
+        "source": "https://en.wikipedia.org/wiki/GNIDA_Office_metro_station"
+      },
+      {
+        "fact": "Greater Noida's sectors are named after letters of the Greek alphabet; Alpha, Beta and Gamma are the oldest sectors.",
+        "source": "https://en.wikipedia.org/wiki/Greater_Noida"
+      },
+      {
+        "fact": "Jagat Farm, one of Greater Noida's busiest marketplaces, is in the south of Gamma I, bordered by the Surajpur–Kasna road and Beta I; its nearest metro station is Alpha 1.",
+        "source": "https://en.wikipedia.org/wiki/Jagat_Farm_market"
+      },
+      {
+        "fact": "Pari Chowk metro station lies in the Knowledge Park I area, at Tugalpur village.",
+        "source": "https://en.wikipedia.org/wiki/Pari_Chowk_metro_station"
+      }
+    ],
+    "Pi, Sigma & Sectors 36–37": [
+      {
+        "fact": "Sector 37's neighbouring localities include Sector 36, Omicron I, Pi I and II and Sigma II.",
+        "source": "https://www.squareyards.com/sector-37-greater-noida-in-greater-noida-overview-97324"
+      },
+      {
+        "fact": "Swarn Nagri's neighbouring localities include Omega I, Sector 36, Rho I, Pi I and II, Sigma II and the Phi sectors.",
+        "source": "https://www.squareyards.com/sector-swarn-nagri-in-greater-noida-overview-4775"
+      },
+      {
+        "fact": "Sector 36 lies in the Rho zone of Greater Noida near Pari Chowk and is mainly independent, privately owned houses on wide roads.",
+        "source": "https://www.99acres.com/sector-36-greater-noida-overview-piffid"
+      },
+      {
+        "fact": "In Sector 37, plots make up the great majority of properties listed for sale, alongside independent houses.",
+        "source": "https://www.squareyards.com/sector-37-greater-noida-in-greater-noida-overview-97324"
+      },
+      {
+        "fact": "The Aqua Line's Greater Noida stations, in order, are Knowledge Park II, Pari Chowk, Alpha 1, Delta 1, GNIDA Office and Depot; all opened on 25 January 2019.",
+        "source": "https://en.wikipedia.org/wiki/List_of_Noida_Metro_stations"
+      },
+      {
+        "fact": "Alpha 1 metro station is in Block E, Alpha I, between Pari Chowk and Delta 1 stations.",
+        "source": "https://en.wikipedia.org/wiki/ALPHA_1_metro_station"
+      },
+      {
+        "fact": "Delta 1 metro station is in Block A, Delta I, between Alpha 1 and GNIDA Office stations.",
+        "source": "https://en.wikipedia.org/wiki/DELTA_1_metro_station"
+      },
+      {
+        "fact": "Kasna's neighbouring localities include Surajpur Site 4, Surajpur Site 5, Sigma I, Chi IV and Phi II.",
+        "source": "https://www.squareyards.com/kasna-in-greater-noida-overview-756"
+      },
+      {
+        "fact": "Sigma 1 is near Sigma 2, Sigma 3 and Sector 36, Greater Noida.",
+        "source": "https://www.99acres.com/sigma-1-greater-noida-overview-piffid"
+      },
+      {
+        "fact": "Greater Noida's sectors are named after letters of the Greek alphabet.",
+        "source": "https://en.wikipedia.org/wiki/Greater_Noida"
+      }
+    ],
+    "Omega, Chi & Phi": [
+      {
+        "fact": "The Noida–Greater Noida Expressway is a six-lane expressway running from Mahamaya flyover in Noida to Pari Chowk in Greater Noida.",
+        "source": "https://en.wikipedia.org/wiki/Noida%E2%80%93Greater_Noida_Expressway"
+      },
+      {
+        "fact": "Pari Chowk metro station on the Aqua Line is in Knowledge Park I and opened on 25 January 2019.",
+        "source": "https://en.wikipedia.org/wiki/Pari_Chowk_metro_station"
+      },
+      {
+        "fact": "Knowledge Park I is bordered by Knowledge Park II to the west and Omega II to the south.",
+        "source": "https://en.wikipedia.org/wiki/Knowledge_Park_I,_Greater_Noida"
+      },
+      {
+        "fact": "Omega II is bordered by Omega I to the south, Psi I to the west and Knowledge Park I to the north, and is close to the Yamuna Expressway.",
+        "source": "https://en.wikipedia.org/wiki/Omega_II,_Greater_Noida"
+      },
+      {
+        "fact": "Omega I houses the head office of the Yamuna Expressway Industrial Development Authority and borders Phi I, Phi II and Chi III to the south.",
+        "source": "https://en.wikipedia.org/wiki/Omega_I,_Greater_Noida"
+      },
+      {
+        "fact": "Knowledge Park III, north of Knowledge Park II, is a largely institutional sector with several universities and colleges.",
+        "source": "https://en.wikipedia.org/wiki/Knowledge_Park_III,_Greater_Noida"
+      },
+      {
+        "fact": "The Yamuna Expressway's northern end is at Pari Chowk, Greater Noida; it was formally inaugurated on 9 August 2012.",
+        "source": "https://en.wikipedia.org/wiki/Yamuna_Expressway"
+      },
+      {
+        "fact": "The Noida Metro Aqua Line runs from Noida Sector 51 to Depot Station in Greater Noida and has been operational since 25 January 2019.",
+        "source": "https://en.wikipedia.org/wiki/Aqua_Line_(Noida_Metro)"
+      },
+      {
+        "fact": "Knowledge Park II and Pari Chowk are consecutive Aqua Line stations; Pari Chowk station is in the Knowledge Park I area (Tugalpur village).",
+        "source": "https://en.wikipedia.org/wiki/Pari_Chowk_metro_station"
+      },
+      {
+        "fact": "Chi V is bordered by Chi IV and Chi III to the east and Noida Sector 150 to the west.",
+        "source": "https://en.wikipedia.org/wiki/Chi_V,_Greater_Noida"
+      },
+      {
+        "fact": "Phi II is bordered by Omega I to the north, Phi I to the west and Swarn Nagri to the east.",
+        "source": "https://en.wikipedia.org/wiki/Phi_II,_Greater_Noida"
+      },
+      {
+        "fact": "Kasna is a largely plotted locality whose neighbours include Chi IV, Phi I, Phi II, Sigma I and the Gautam Buddha University area, with access to the Noida–Greater Noida and Yamuna expressways via Pari Chowk.",
+        "source": "https://www.squareyards.com/kasna-in-greater-noida-overview-756"
+      }
+    ],
+    "Zeta & Eta": [
+      {
+        "fact": "GNIDA Office metro station is in Knowledge Park IV, between Delta 1 and Depot stations, and opened on 25 January 2019.",
+        "source": "https://en.wikipedia.org/wiki/GNIDA_Office_metro_station"
+      },
+      {
+        "fact": "Depot station is the southern terminus of the Noida Metro Aqua Line, which runs from Noida Sector 51.",
+        "source": "https://en.wikipedia.org/wiki/Aqua_Line_(Noida_Metro)"
+      },
+      {
+        "fact": "Zeta II's neighbouring localities include Zeta I, Eta I, Eta II, Delta II, Beta II and Gamma II, and the villages of Tilapta, Gulistanpur and Thapkhera.",
+        "source": "https://www.squareyards.com/zeta-ii-greater-noida-in-greater-noida-overview-64603"
+      },
+      {
+        "fact": "Commute points for Zeta 2 include GNIDA Office metro station and Boraki and Dadri railway stations.",
+        "source": "https://www.99acres.com/zeta-2-greater-noida-overview-piffid"
+      }
+    ],
+    "Omicron, Mu & Xu": [
+      {
+        "fact": "GNIDA Office metro station on the Aqua Line is in Knowledge Park IV and opened on 25 January 2019.",
+        "source": "https://en.wikipedia.org/wiki/GNIDA_Office_metro_station"
+      },
+      {
+        "fact": "Depot Station is the southern terminus of the Aqua Line, after Delta 1 and GNIDA Office.",
+        "source": "https://en.wikipedia.org/wiki/Depot_Station_metro_station_(Noida)"
+      },
+      {
+        "fact": "Omicron I connects via arterial routes to the Noida–Greater Noida Expressway and Surajpur–Kasna Road, with GNIDA Office the closest metro station; its neighbours include Omicron II, Omicron III, the Sigma sectors and the Xu sectors.",
+        "source": "https://www.squareyards.com/omicron-i-greater-noida-in-greater-noida-overview-489"
+      },
+      {
+        "fact": "Xu 2's neighbours include Omicron I–III, Sigma II, Xu 1, Xu 3, Mu 2 and Raipur Bangar.",
+        "source": "https://www.squareyards.com/xu-2-greater-noida-in-greater-noida-overview-64981"
+      },
+      {
+        "fact": "Boraki (Bodaki) railway station is listed as a commute point for Sector Mu 2 and neighbouring sectors.",
+        "source": "https://www.99acres.com/sector-mu-2-greater-noida-overview-piffid"
+      }
+    ]
+  }
+}
