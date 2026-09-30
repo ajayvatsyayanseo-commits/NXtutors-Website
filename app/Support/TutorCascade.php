@@ -105,7 +105,7 @@ class TutorCascade
      */
     private static function pool(): array
     {
-        return Cache::remember('tutorcascade.pool.v1', 900, function () {
+        return Cache::remember('tutorcascade.pool.v2', 900, function () {
             $cols = ['id', 'user_id', 'name', 'city', 'address', 'pincode', 'class_type'];
             foreach (['travel_areas', 'is_sample'] as $c) {
                 if (Schema::hasColumn('register', $c)) {
