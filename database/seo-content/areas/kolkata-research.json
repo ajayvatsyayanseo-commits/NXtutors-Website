@@ -1,0 +1,729 @@
+{
+  "areas": {
+    "ballygunge": {
+      "name": "Ballygunge",
+      "zone": "Ballygunge, Gariahat & Alipore",
+      "type": "mixed",
+      "about": "<p>Ballygunge is one of the older and more affluent parts of South Kolkata, including the Gariahat shopping crossing. Large family mansions went up here in the 1930s and 1940s, and many streets now mix those houses with apartment buildings. Gariahat Market, one of the city's busiest, spreads along Gariahat Road and the lanes around the crossing. The area is bounded by Park Circus to the north, Kasba and the railway line to the east, Dhakuria and the Rabindra Sarobar lake to the south, and Bhowanipore and Lansdowne to the west.</p><p>Ballygunge Junction station on the Sealdah South suburban lines sits on the eastern side, Kalighat and Jatin Das Park on the Blue Line are the nearest metro stops to the west, and Kavi Sukanta and Hemanta Mukhopadhyay on the Orange Line lie across the railway towards the EM Bypass. Older houses mean a doorstep visit; apartment buildings often note visitors at the gate. The Gariahat crossing is crowded on weekend evenings and in the festive season, so plan lesson times around it. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ballygunge",
+        "https://en.wikipedia.org/wiki/Orange_Line_(Kolkata_Metro)",
+        "https://en.wikipedia.org/wiki/Sealdah_South_lines",
+        "https://www.squareyards.com/gariahat-in-kolkata-overview-1254"
+      ]
+    },
+    "bhowanipore": {
+      "name": "Bhowanipore",
+      "zone": "Ballygunge, Gariahat & Alipore",
+      "type": "mixed",
+      "about": "<p>Bhowanipore is an old neighbourhood of south-central Kolkata, lying just south of the Maidan edge, and this page also covers the Elgin Road, Gokhale Road and Woodburn Park pockets. It was among the villages the East India Company acquired in 1758 and grew into a settled residential district in the early twentieth century as new roads opened it up. Gujarati families settled in the Lansdowne and Chakraberia belt, Punjabi families in other pockets, and Bengali middle-class households across the rest, so the housing is mostly older buildings with some newer apartment blocks among shops and offices.</p><p>Three Blue Line stations serve the area, Rabindra Sadan, Netaji Bhavan and Jatin Das Park, so the metro and a short walk is a practical way in for tutors coming from Tollygunge, Garia or north Kolkata. Kalighat, Alipore and Ballygunge are the immediate neighbours. Office traffic on the main roads is heavy on weekday evenings, so an early-evening or weekend-morning slot is easier to keep, and online sessions suit specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bhowanipore",
+        "https://en.wikipedia.org/wiki/List_of_Kolkata_Metro_stations",
+        "https://www.squareyards.com/bhowanipore-in-kolkata-overview-2154"
+      ]
+    },
+    "kalighat": {
+      "name": "Kalighat",
+      "zone": "Ballygunge, Gariahat & Alipore",
+      "type": "mixed",
+      "about": "<p>Kalighat grew around its famous temple beside the Adi Ganga, the old course of the river that still runs along the neighbourhood as Tolly's Nullah. It was one of the original villages of the early Company estate of Calcutta, and traders travelling on the river once halted here to visit the temple. Today the temple lanes are full of shops and pilgrims, while the streets further out hold older family houses and apartment buildings. Neighbours include Bhowanipore, Chetla, Lake Gardens and the Rashbehari area towards Ballygunge.</p><p>Kalighat and Jatin Das Park stations on the Blue Line serve the area, so tutors from Tollygunge, Garia or central Kolkata can reach most homes by metro and a short walk or rickshaw. The streets near the temple are very crowded on festival days and weekends, so lessons in those lanes are easier to schedule on weekday evenings. In apartment buildings, families usually tell the caretaker when a tutor is expected, and online classes save a long trip for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kalighat",
+        "https://en.wikipedia.org/wiki/Kalighat_metro_station",
+        "https://en.wikipedia.org/wiki/Lake_Gardens"
+      ]
+    },
+    "alipore": {
+      "name": "Alipore",
+      "zone": "Ballygunge, Gariahat & Alipore",
+      "type": "mixed",
+      "about": "<p>Alipore is known for its old bungalows, government residences and colonial-era buildings, with newer apartment buildings added in recent years. It is bordered by Tolly's Nullah to the north, Bhowanipore to the east, Diamond Harbour Road to the west and New Alipore to the south, with Taratala, Tollygunge and Kalighat close by. The zoological garden, the national library in the Belvedere estate and the district court complex all sit here, so a large share of the land is institutional rather than residential.</p><p>The nearest suburban stations are Majerhat and Kidderpore on the Circular section, and Majerhat is also the current terminus of the Purple Line metro from Joka through Behala. Kalighat and Jatin Das Park on the Blue Line are the usual metro stops on the eastern side. Many larger homes and apartment buildings have a staffed gate, so families should share the tutor's name in advance. Diamond Harbour Road is busy in the evening peak, which makes an earlier slot more reliable for tutors driving in. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Alipore",
+        "https://www.squareyards.com/alipore-in-kolkata-overview-1235",
+        "https://en.wikipedia.org/wiki/Purple_Line_(Kolkata_Metro)"
+      ]
+    },
+    "dhakuria": {
+      "name": "Dhakuria",
+      "zone": "Ballygunge, Gariahat & Alipore",
+      "type": "residential",
+      "about": "<p>Dhakuria is a long-settled South Kolkata neighbourhood with several buildings that predate 1900, though most of its growth came from the late 1950s onwards. Unlike the wide, tree-lined roads of Ballygunge, it developed as a denser middle-class area of family houses and small apartment buildings, and several of its older pockets are still known by the family names of their paras. It is surrounded by Ballygunge and Kasba to the north, Haltu to the east, Jadavpur and Garia to the south, and Lake Gardens and Jodhpur Park to the west.</p><p>Dhakuria station on the Sealdah South suburban lines is the local railway stop, and Gariahat Road runs through the area. For the metro, Rabindra Sarobar on the Blue Line lies to the west, while Kavi Sukanta and Hemanta Mukhopadhyay on the Orange Line are on the EM Bypass side, so most tutors finish the trip by auto or rickshaw. Houses in the inner lanes usually mean a doorstep visit. Gariahat Road gets busy at peak hours, so weekend mornings are easy slots. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dhakuria",
+        "https://en.wikipedia.org/wiki/Sealdah_South_lines",
+        "https://en.wikipedia.org/wiki/Orange_Line_(Kolkata_Metro)"
+      ]
+    },
+    "jodhpur-park": {
+      "name": "Jodhpur Park",
+      "zone": "Ballygunge, Gariahat & Alipore",
+      "type": "residential",
+      "about": "<p>Jodhpur Park is a planned residential neighbourhood in South Kolkata. In 1947 a co-operative housing society bought the land and divided it into about 450 residential plots, with space set aside for a market and other facilities, which is why its streets are laid out in a regular pattern. Today the locality mixes independent family houses with smaller boutique apartment buildings, and many families have lived here for generations. It borders Dhakuria to the north and east, Gariahat Road on the east, Jadavpur to the south and Lake Gardens to the west.</p><p>The nearest metro station is Rabindra Sarobar on the Blue Line, reached by a short auto ride, and Dhakuria station on the Sealdah South lines is also close. The Jadavpur connector to the EM Bypass starts at the south-eastern corner, which helps tutors coming from the eastern side of the city. Most homes are independent houses where the tutor goes straight to the door, and quieter inner roads make weekday evening visits simple. Home tutors cover school subjects in person, while online sessions work for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jodhpur_Park",
+        "https://www.squareyards.com/jodhpur-park-in-kolkata-overview-2109",
+        "https://en.wikipedia.org/wiki/Rabindra_Sarobar_metro_station"
+      ]
+    },
+    "lake-gardens": {
+      "name": "Lake Gardens",
+      "zone": "Ballygunge, Gariahat & Alipore",
+      "type": "residential",
+      "about": "<p>Lake Gardens is a South Kolkata neighbourhood just south of the Rabindra Sarobar lake, bordered by Kalighat to the north, Jodhpur Park to the east, Tollygunge to the south and the Charu Market area to the west. Its streets hold a mix of older family houses and apartment buildings, and the lake is the local landmark. The neighbourhood is linked to Howrah, Sealdah and Salt Lake by a wide range of buses and autos.</p><p>Rabindra Sarobar station on the Blue Line is a short auto ride away, and Lake Gardens station on the Budge Budge branch of the Sealdah South suburban lines serves the area by train. That gives tutors from Behala, Jadavpur or central Kolkata two rail options before a short last leg. Independent houses usually mean a doorstep visit, while apartment buildings may ask visitors to sign in. Roads near the lake fill up in the evening peak, so an afternoon or weekend slot is easier, and online sessions suit specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lake_Gardens",
+        "https://en.wikipedia.org/wiki/Rabindra_Sarobar_metro_station",
+        "https://en.wikipedia.org/wiki/Sealdah_South_lines"
+      ]
+    },
+    "tollygunge": {
+      "name": "Tollygunge",
+      "zone": "Tollygunge, Jadavpur & Garia",
+      "type": "mixed",
+      "about": "<p>Tollygunge is a large South Kolkata neighbourhood and the centre of the Bengali film industry, with several film studios alongside its homes. After 1947 large numbers of refugees from what was then East Pakistan settled here, which shaped much of its present character. Homes range from older family houses in the lanes to apartment buildings on the main roads. It borders Lake Gardens, Golf Green and Behala, with Haridevpur, Kudghat, Ranikuthi and Bansdroni close by.</p><p>Three Blue Line stations serve the area, Mahanayak Uttam Kumar, Rabindra Sarobar and Netaji, and Tollygunge also has a railway station on the Budge Budge suburban line. Most tutors can therefore reach a home by metro and a short auto ride. Buildings with a guard usually note a visitor's name, while houses mean a doorstep visit. The main roads near the metro stations and studios are busy in the evening peak, so an early-evening or weekend-morning slot works better, and online sessions suit specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tollygunge",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Kolkata_Metro)",
+        "https://en.wikipedia.org/wiki/Sealdah_South_lines"
+      ]
+    },
+    "golf-green": {
+      "name": "Golf Green",
+      "zone": "Tollygunge, Jadavpur & Garia",
+      "type": "residential",
+      "about": "<p>Golf Green is a residential locality in South Kolkata that takes its name from the nearby golf club and course. Much of it is made up of low-rise apartment buildings set among green spaces and sports grounds, with some newer residential buildings added over time. It sits between Jadavpur, Tollygunge, Lake Gardens and Jodhpur Park, and falls within three wards of the municipal corporation.</p><p>The nearest metro stations are Rabindra Sarobar and Mahanayak Uttam Kumar on the Blue Line, so tutors from Behala, Kalighat or Garia usually take the metro and then an auto for the last stretch. Jadavpur and Lake Gardens railway stations are other options for tutors coming by suburban train. In the apartment blocks, a tutor is often let in by the family or a caretaker rather than a formal gate desk. Roads towards Jadavpur fill up in the evening, so weekday afternoons and weekend mornings are easier times for lessons. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Golf_Green",
+        "https://www.squareyards.com/sale/apartments-for-sale-in-golf-green-kolkata",
+        "https://en.wikipedia.org/wiki/Jadavpur"
+      ]
+    },
+    "regent-park": {
+      "name": "Regent Park",
+      "zone": "Tollygunge, Jadavpur & Garia",
+      "type": "residential",
+      "about": "<p>Regent Park is a residential locality in the Tollygunge area of South Kolkata, with its own police station. Nearby localities include Haridevpur, Kudghat, Ranikuthi, Netaji Nagar and Bansdroni, and it links easily to Bijoygarh, Golf Green and Naktala. Housing is mostly apartment buildings, many of them compact family flats, with some older houses on the side roads.</p><p>Mahanayak Uttam Kumar, Netaji and Masterda Surya Sen stations on the Blue Line are all within reach, so tutors coming from Kalighat, Garia or central Kolkata usually take the metro and an auto for the last part. Tutors from Behala and Jadavpur often come by bus. Smaller apartment buildings usually let a tutor straight in once the family confirms, while larger ones may ask for a name at the gate. The main road towards Garia is busy in the evening peak, so an earlier slot or a weekend morning works well, and online classes are available for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Regent_Park,_Kolkata",
+        "https://www.squareyards.com/regent-park-in-kolkata-overview-2169",
+        "https://www.99acres.com/regent-park-kolkata-south-overview-piffid"
+      ]
+    },
+    "jadavpur": {
+      "name": "Jadavpur",
+      "zone": "Tollygunge, Jadavpur & Garia",
+      "type": "mixed",
+      "about": "<p>Jadavpur's present shape comes from the years after 1947, when refugees from East Pakistan set up colonies here; by 1949 there were around forty in the area, including Bijoygarh, which quickly built its own schools, market and post office. Today it is a busy mixed neighbourhood with a large university campus, the commercial hub around the 8B bus terminus, and residential pockets such as Bijoygarh and Sulekha. Homes are mostly family houses and apartment buildings. It is bounded by Jodhpur Park and Dhakuria to the north, Tollygunge and Golf Green to the west, Santoshpur and Garfa to the east, and Baghajatin and Garia to the south.</p><p>Jadavpur station on the Sealdah South suburban lines serves the area, and the nearest metro stops are Mahanayak Uttam Kumar and Rabindra Sarobar on the Blue Line or Satyajit Ray on the Orange Line, each an auto ride away. The 8B crossing is very busy at college and office hours, so weekend or early-afternoon slots are easier. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jadavpur",
+        "https://en.wikipedia.org/wiki/Sealdah_South_lines",
+        "https://en.wikipedia.org/wiki/Orange_Line_(Kolkata_Metro)"
+      ]
+    },
+    "bansdroni": {
+      "name": "Bansdroni",
+      "zone": "Tollygunge, Jadavpur & Garia",
+      "type": "residential",
+      "about": "<p>Bansdroni is an almost wholly residential neighbourhood in the Tollygunge area, lying along the main road between Tollygunge and Garia. Its name is linked to an old bamboo grove, and in the seventeenth century, when the Adi Ganga was still the main flow of the river, it served as a small port. Nearly every building here is a home, with a mix of older houses and newer apartment buildings, local fresh produce and fish markets, and pockets such as Subhash Park, Dinesh Palli and Congress Nagar. Garia, Naktala, Ranikuthi and Tollygunge are all close by.</p><p>Masterda Surya Sen station on the Blue Line is the local metro stop, so tutors from Kalighat, Tollygunge or Garia can travel by metro and walk or take a rickshaw for the rest. Most homes are houses or small buildings where the tutor goes straight to the door. The main road through the area is slow in the evening peak, so an afternoon or weekend-morning lesson is easier to keep. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bansdroni",
+        "https://www.squareyards.com/bansdroni-in-kolkata-overview-1269",
+        "https://en.wikipedia.org/wiki/List_of_Kolkata_Metro_stations"
+      ]
+    },
+    "naktala": {
+      "name": "Naktala",
+      "zone": "Tollygunge, Jadavpur & Garia",
+      "type": "residential",
+      "about": "<p>Naktala is a residential neighbourhood in the Garia area of South Kolkata, lying beside Tolly's Nullah, the old channel of the Adi Ganga. It was once forest, swampland and quiet farmland, and grew into a busy neighbourhood after independence as families migrated from East Bengal. Homes are mostly family houses and mid-sized apartment buildings, and the locality is known for its Durga Puja celebrations and local markets. Bansdroni, Netaji Nagar, Patuli and Garia are the nearby localities.</p><p>Gitanjali station on the Blue Line is the closest metro stop, so tutors from Tollygunge, Kalighat or central Kolkata can use the metro and finish the trip on foot or by rickshaw. Buses along the main road between Tollygunge and Garia are another option. Many homes are houses where the tutor goes straight to the door, while apartment buildings may ask for a name at the entrance. Evening peak traffic on the main road makes a late-afternoon or weekend slot easier. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Naktala",
+        "https://www.squareyards.com/naktala-in-kolkata-overview-4285",
+        "https://en.wikipedia.org/wiki/List_of_Kolkata_Metro_stations"
+      ]
+    },
+    "baghajatin": {
+      "name": "Baghajatin",
+      "zone": "Tollygunge, Jadavpur & Garia",
+      "type": "residential",
+      "about": "<p>Baghajatin is a residential neighbourhood in South Kolkata named after the freedom fighter known as Bagha Jatin. It is bounded by Jadavpur and Santoshpur to the north, Chak Garia and Panchasayar to the east, Patuli to the south and Regent Estate to the west. The locality has little space left for new projects, so most homes are older houses and multi-storey apartment buildings, and it has become a popular food spot in recent years.</p><p>Baghajatin station on the Sealdah South suburban lines and the EM Bypass are the area's two main links. For the metro, Kavi Nazrul on the Blue Line and Satyajit Ray on the Orange Line are both within an auto ride, which helps tutors coming from Tollygunge, Kasba or Garia. Houses usually mean a doorstep visit, while apartment buildings may ask for the tutor's name. Traffic around the station and the bypass junction builds up in the evening, so weekday afternoons or weekend mornings are easier times. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Baghajatin",
+        "https://www.squareyards.com/bagha-jatin-in-kolkata-overview-4322",
+        "https://en.wikipedia.org/wiki/Orange_Line_(Kolkata_Metro)"
+      ]
+    },
+    "garia": {
+      "name": "Garia",
+      "zone": "Tollygunge, Jadavpur & Garia",
+      "type": "mixed",
+      "about": "<p>Garia sits on the banks of the Adi Ganga at the southern edge of Kolkata and is one of the major shopping areas of the south, with markets and malls near its main crossings. Part of it falls under the Kolkata Municipal Corporation and part under the Rajpur Sonarpur Municipality. Housing covers apartments, builder floors, independent houses and plots, from older lanes to newer residential buildings. Jadavpur lies to the north and Bansdroni and Tollygunge to the north-west, with Patuli and Naktala close by.</p><p>Garia is well served by rail. Kavi Nazrul and Shahid Khudiram are on the Blue Line, and Kavi Subhash is the terminus of the Orange Line along the EM Bypass. Garia and New Garia stations on the Sealdah South suburban lines add a train option. Crossings near the markets are busy in the evenings, so tutors often prefer afternoon or weekend-morning slots. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Garia",
+        "https://en.wikipedia.org/wiki/Kavi_Subhash_metro_station",
+        "https://en.wikipedia.org/wiki/Garia_railway_station",
+        "https://www.squareyards.com/garia-in-kolkata-overview-1233"
+      ]
+    },
+    "behala": {
+      "name": "Behala",
+      "zone": "Behala & New Alipore",
+      "type": "residential",
+      "about": "<p>Behala is one of the oldest residential areas of Kolkata and one of its largest, spread across many wards in the south-west of the city. It takes in pockets such as Barisha, Sakherbazar, Parnasree Pally, Sarsuna, Behala Chowrasta, Haridevpur and Joka, many of which were once separate villages. Housing is dense and mixed, with old family houses standing beside newer apartment buildings and builder floors. Diamond Harbour Road is the main artery, with a parallel road carrying much of the local traffic.</p><p>The Purple Line metro runs along Diamond Harbour Road, with stations at Joka, Thakurpukur, Sakherbazar, Behala Chowrasta, Behala Bazar, Taratala and Majerhat, so most homes are a short auto ride from a station. Majerhat, Brace Bridge and New Alipore stations on the suburban network serve the northern side. Houses usually mean a doorstep visit, while newer buildings may ask for a tutor's name at the gate. Diamond Harbour Road is slow in the evening peak, so an afternoon or weekend-morning slot is easier for tutors coming by road. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behala",
+        "https://en.wikipedia.org/wiki/Purple_Line_(Kolkata_Metro)",
+        "https://www.squareyards.com/behala-in-kolkata-overview-1229"
+      ]
+    },
+    "new-alipore": {
+      "name": "New Alipore",
+      "zone": "Behala & New Alipore",
+      "type": "residential",
+      "about": "<p>New Alipore was laid out in the 1950s as a planned residential suburb to house the growing population of the city, and it is still organised in lettered blocks. It is bordered by the Budge Budge railway line to the north, Chetla to the east, Diamond Harbour Road to the west and Behala to the south, with Tollygunge and Taratala close by. Homes are a mix of independent houses on plots and apartment buildings along residential roads.</p><p>The area has two railway stations of its own, New Alipore and Majerhat, both on the Budge Budge section of the suburban network, and Majerhat is also a junction with the Circular Railway. On the Purple Line, Majerhat and Taratala stations serve the western side, while tutors coming from Kalighat or Tollygunge on the Blue Line finish the trip by auto. Independent houses usually mean a doorstep visit. Diamond Harbour Road is busy in the evening peak, so tutors from Behala or Alipore should allow extra time or choose an earlier slot. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/New_Alipore",
+        "https://en.wikipedia.org/wiki/Sealdah_South_lines",
+        "https://en.wikipedia.org/wiki/Purple_Line_(Kolkata_Metro)",
+        "https://www.squareyards.com/new-alipore-in-kolkata-overview-1408"
+      ]
+    },
+    "thakurpukur": {
+      "name": "Thakurpukur",
+      "zone": "Behala & New Alipore",
+      "type": "residential",
+      "about": "<p>Thakurpukur is a densely built residential locality in the south-western part of the city, along Diamond Harbour Road beyond the main Behala stretch. It was historically part of the Barisha estate and now covers two municipal wards, with busy local market streets and a mix of older houses and newer apartment buildings. Behala, Sakherbazar, Joka and Taratala are reached along the same main road.</p><p>Thakurpukur station on the Purple Line opened in December 2022 and sits on Diamond Harbour Road, so tutors from Behala, Taratala or New Alipore can come by metro and walk or take a rickshaw to the door. Joka and Sakherbazar stations are the next stops on either side. Many homes are houses or small buildings where the tutor goes straight in, while larger apartment buildings may ask for a name at the gate. The main road is slow in the evening peak, so an afternoon or weekend-morning lesson is easier for tutors travelling by road, and online sessions suit specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Thakurpukur",
+        "https://en.wikipedia.org/wiki/Purple_Line_(Kolkata_Metro)",
+        "https://www.squareyards.com/thakurpukur-in-kolkata-overview-2152"
+      ]
+    },
+    "kasba": {
+      "name": "Kasba",
+      "zone": "Kasba & EM Bypass South",
+      "type": "mixed",
+      "about": "<p>Kasba sits between the Sealdah South railway line to the west and the EM Bypass to the east, with Tiljala to the north and Dhakuria and Haltu to the south. It began as a small hamlet and grew quickly after a rail overbridge opened in 1978 and a connector road linked it to the EM Bypass, which drew offices, hospitals and housing along that corridor. Homes are a mix of older residential buildings in the inner paras and newer apartment complexes near the bypass. The area is also known for its large Durga Puja celebrations.</p><p>Ballygunge Junction is the nearest suburban railway station, and VIP Bazar and Hemanta Mukhopadhyay stations on the Orange Line serve the bypass side. Tutors from Ballygunge, Jadavpur or Garia can therefore come by train or metro and finish by auto. Apartment complexes usually register visitors at the gate, so families should share the tutor's name in advance. The connector junction and the bypass are busy in the evening peak, so an afternoon or weekend slot is easier. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kasba,_Kolkata",
+        "https://www.squareyards.com/kasba-in-kolkata-overview-1406",
+        "https://en.wikipedia.org/wiki/Orange_Line_(Kolkata_Metro)"
+      ]
+    },
+    "santoshpur": {
+      "name": "Santoshpur",
+      "zone": "Kasba & EM Bypass South",
+      "type": "residential",
+      "about": "<p>Santoshpur is a residential neighbourhood within the wider Jadavpur area, loosely bounded by Garfa to the north, the EM Bypass to the east and Baghajatin to the west and south. As late as the 1970s much of it was still marshy land and fields; homes were first built mainly in the 1950s and 1960s on the eastern side of Jadavpur station, largely by families who came from East Bengal. Today it has a mix of family houses and apartment buildings, and the local lake is a popular walking spot. Survey Park, Ajoy Nagar and Mukundapur lie towards the bypass.</p><p>Jadavpur and Baghajatin stations on the Sealdah South suburban lines serve the area, and Satyajit Ray and Jyotirindra Nandi on the Orange Line along the EM Bypass have been open since March 2024. Tutors can reach most homes by train or metro plus an auto. Houses usually mean a doorstep visit, while complexes may ask for a name at the gate. The bypass is busy in the evening peak, so weekday afternoons or weekend mornings are easier slots. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Santoshpur,_Kolkata",
+        "https://www.squareyards.com/santoshpur-in-kolkata-overview-1251",
+        "https://en.wikipedia.org/wiki/Orange_Line_(Kolkata_Metro)"
+      ]
+    },
+    "mukundapur": {
+      "name": "Mukundapur",
+      "zone": "Kasba & EM Bypass South",
+      "type": "mixed",
+      "about": "<p>Mukundapur lies on the south-eastern fringe of Kolkata, at the edge of the municipal corporation area, with the EM Bypass running through it. It has become a medical hub, with several large hospitals along the bypass, and most homes are apartments in newer residential projects, with older houses in the inner lanes. Ajoy Nagar, Santoshpur, Kalikapur and Garia are the nearby localities.</p><p>The Orange Line, opened along the EM Bypass in March 2024, has Jyotirindra Nandi station at Mukundapur and Satyajit Ray station at Panchasayar, with Kavi Sukanta at Kalikapur further north. That lets tutors from Garia or Kasba travel by metro, while tutors from Jadavpur often come by bus or auto. Apartment complexes usually register visitors at the gate, so families should share the tutor's name and timing in advance. Traffic near the hospitals and bypass junctions is heavy in the evening, so an afternoon or weekend-morning lesson is easier, and online classes suit specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mukundapur,_Kolkata",
+        "https://www.squareyards.com/mukundapur-in-kolkata-overview-1266",
+        "https://en.wikipedia.org/wiki/Orange_Line_(Kolkata_Metro)"
+      ]
+    },
+    "patuli": {
+      "name": "Patuli",
+      "zone": "Kasba & EM Bypass South",
+      "type": "residential",
+      "about": "<p>Patuli is a planned residential area on the eastern side of the EM Bypass near Garia, built around a planned township developed by the state's metropolitan development authority. The township is divided into blocks on both sides of the bypass connector, with serviced plots for family houses, group housing apartments and land for markets and other facilities. It lies next to Garia, with Baghajatin to the north and Naktala and Panchasayar nearby.</p><p>Kavi Nazrul and Shahid Khudiram on the Blue Line and Kavi Subhash, the southern end of the Orange Line, all serve the area; Blue Line trains currently stop at Shahid Khudiram while Kavi Subhash's Blue Line platforms are rebuilt. Baghajatin and Garia stations on the suburban network are also close. Plot houses mean a doorstep visit, while group housing may ask for a name at the gate. The bypass connector is busy in the evening peak, so an afternoon or weekend slot is easier for tutors coming by road. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Baishnabghata_Patuli_Township",
+        "https://kmda.wb.gov.in/page/cms/baishnabghat-patuli_township_3d8899",
+        "https://en.wikipedia.org/wiki/Kavi_Subhash_metro_station"
+      ]
+    },
+    "salt-lake-sector-1": {
+      "name": "Salt Lake Sector I",
+      "zone": "Salt Lake",
+      "type": "residential",
+      "about": "<p>Salt Lake Sector I is the oldest part of Bidhannagar, the planned township built on reclaimed wetlands east of central Kolkata. Reclamation here was finished in 1965 and plots were handed out from the following year, so the sector is made up mostly of independent houses on plotted blocks with letter codes such as AA, AB, AC, AD, AE, BD and BE, laid out along numbered avenues and cross roads. The Green Line runs above 3rd Avenue, with City Centre and Central Park stations inside the sector, while EM Bypass and VIP Road link it with the rest of the city.</p><p>For a home tutor, block letter and house number are the whole address, so share both along with the nearest avenue. Most homes open straight onto the street, which means no society gate to clear, and a tutor coming by metro can walk or take a short auto or rickshaw ride from City Centre or Central Park. Office-hour traffic builds on the roads towards EM Bypass and Sector V, so early evening or weekend slots tend to suit families here. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Salt_Lake_City,_Kolkata",
+        "https://en.wikipedia.org/wiki/Central_Park_metro_station",
+        "https://en.wikipedia.org/wiki/City_Center_metro_station",
+        "https://www.99acres.com/sector-1-salt-lake-kolkata-east-overview-piffid"
+      ]
+    },
+    "salt-lake-sector-2": {
+      "name": "Salt Lake Sector II",
+      "zone": "Salt Lake",
+      "type": "residential",
+      "about": "<p>Sector II covers the middle of Salt Lake, with residential blocks such as BL, DL and EE along wide planned streets. It was reclaimed by 1969 and is described on property portals as a well-planned neighbourhood that mainly offers independent houses, with some apartment buildings mixed in. Karunamoyee station on the Green Line stands at DJ Block beside the Karunamoyee bus terminal, and the next stop east is Salt Lake Sector V, the IT district. VIP Road and EM Bypass connect the sector with the airport side and with central Kolkata.</p><p>Because a metro station and a large bus terminal sit within the sector, tutors travelling from Dum Dum, Sealdah or Howrah can reach many blocks without a car. Houses usually mean a doorstep visit with no gate register, though a few apartment buildings keep a visitor book at the entrance. Roads leading to Sector V and EM Bypass get busy in office hours, so late afternoon or weekend sessions are easier to schedule. Families wanting coaching in a specialist subject can combine a home tutor with online classes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bidhannagar",
+        "https://en.wikipedia.org/wiki/Karunamoyee_metro_station",
+        "https://www.99acres.com/sector-2-salt-lake-kolkata-east-overview-piffid"
+      ]
+    },
+    "salt-lake-sector-3": {
+      "name": "Salt Lake Sector III",
+      "zone": "Salt Lake",
+      "type": "residential",
+      "about": "<p>Sector III was reclaimed in the same phase as Sector II and today holds blocks such as FD, FE, GD, HA, IB and LA, along with the main office of the Bidhannagar Municipal Corporation in FD Block. Homes are largely independent houses on plots, with a smaller number of apartment buildings. For the metro, families use the Green Line stations at Salt Lake Stadium and Bengal Chemical, both on EM Bypass, or Karunamoyee further inside Salt Lake.</p><p>Inner streets are quieter than the main avenues, which suits evening tuition at home, and most houses have their own gate, so a tutor simply rings the bell. Tutors using the metro often get down at Salt Lake Stadium or Karunamoyee and finish the trip by auto or rickshaw. Share the block letter and house number when booking, since that is how every Salt Lake address is written. EM Bypass is busy at office hours, so a slot after the evening rush or at the weekend is often simpler. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bidhannagar",
+        "https://en.wikipedia.org/wiki/Salt_Lake_Stadium_metro_station",
+        "https://www.99acres.com/sector-3-salt-lake-kolkata-east-overview-piffid",
+        "https://www.99acres.com/ha-block-sector-3-salt-lake-kolkata-east-overview-piffid"
+      ]
+    },
+    "new-town-action-area-1": {
+      "name": "New Town Action Area I",
+      "zone": "New Town & Rajarhat",
+      "type": "mixed",
+      "about": "<p>Action Area I is the first phase of New Town, the planned township developed by HIDCO from the late 1990s and run today by the New Town Kolkata Development Authority. It is divided into sub-areas such as 1A, where plots in blocks AA to AF sit alongside government housing estates and private apartment complexes, and newer office buildings line the main road. Biswa Bangla Gate stands over Biswa Bangla Sarani, the Major Arterial Road, at Narkelbagan, and the road continues towards Salt Lake Sector V and the airport.</p><p>The Orange Line is being built along the Major Arterial Road, with Nazrul Tirtha station planned for Action Area 1A, but it is not yet running, so today the nearest working metro is Salt Lake Sector V on the Green Line, followed by an auto or bus. Buses from the New Town depot and the Balaka terminus also serve the area. Complexes register visitors at the gate, so give your tutor the tower and flat number in advance; plotted houses are a simple doorstep visit. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/New_Town,_Kolkata",
+        "https://en.wikipedia.org/wiki/Orange_Line_(Kolkata_Metro)",
+        "https://www.99acres.com/new-town-action-area-1a-kolkata-east-overview-piffid",
+        "https://nkdamar.org/storage/files/areacode-nkda.pdf"
+      ]
+    },
+    "new-town-action-area-2": {
+      "name": "New Town Action Area II",
+      "zone": "New Town & Rajarhat",
+      "type": "residential",
+      "about": "<p>Action Area II lies on the far side of the central business district that separates it from Action Area I, and Eco Park, the large green belt of New Town, sits at its heart. Sub-areas run from 2A onwards, and housing is dominated by apartment complexes, many of them with three-bedroom flats. Biswa Bangla Sarani and Rajarhat Main Road are the key connectors, linking the area with Salt Lake, Chinar Park and the airport side.</p><p>An Eco Park metro station on the Orange Line is under construction in Action Area IIE, in the middle of Biswa Bangla Sarani, but until it opens tutors arrive by bus, cab or auto, often after changing from the Green Line at Salt Lake Sector V. Most homes are inside gated complexes, so ask the security desk to note the tutor's name and phone number before the first class. Wide arterial roads make car and two-wheeler visits straightforward, while visitor parking inside complexes varies. For subjects with few local tutors, online classes are a practical option. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/New_Town,_Kolkata",
+        "https://en.wikipedia.org/wiki/Eco_Park_metro_station_(Kolkata)",
+        "https://99acres.com/new-town-action-area-2-kolkata-east-overview-piffid"
+      ]
+    },
+    "new-town-action-area-3": {
+      "name": "New Town Action Area III",
+      "zone": "New Town & Rajarhat",
+      "type": "residential",
+      "about": "<p>Action Area III is the third planned phase of New Town, a mid-segment area made up largely of two- and three-bedroom apartments in complexes and several sub-townships. New Town Road is its main link to Biswa Bangla Sarani, and Gitanjali Road also serves the area. HIDCO has proposed a ropeway or light rail link from here to Biswa Bangla Gate in Action Area I, but that remains a proposal rather than a working service.</p><p>No metro station is open near Action Area III, so most tutors come by bus, app cab or their own two-wheeler. That makes it a good fit for a tutor who already lives in New Town, Rajarhat or Baguiati. Gated complexes here keep visitor registers, so share the tower, flat number and any gate-pass rules with the tutor in advance. Where local supply for a subject is thin, online classes fill the gap well, and a home tutor can handle the core subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/New_Town,_Kolkata",
+        "https://www.99acres.com/action-area-3-kolkata-east-overview-piffid"
+      ]
+    },
+    "rajarhat": {
+      "name": "Rajarhat (Chinar Park, Teghoria)",
+      "zone": "New Town & Rajarhat",
+      "type": "mixed",
+      "about": "<p>Rajarhat is the older area around which New Town was planned, and since June 2015 its former Rajarhat-Gopalpur municipality has been part of the Bidhannagar Municipal Corporation. Rajarhat Main Road runs from Jora Mandir near Baguiati through Chinar Park, where it crosses the Major Arterial Road, on to Rajarhat Chowmatha. Teghoria sits at the junction of VIP Road and Biswa Bangla Sarani. Chinar Park has a large stock of ready flats in apartment complexes, and the wider Rajarhat belt grew into an IT hub through the 2010s.</p><p>Buses along VIP Road and Rajarhat Main Road are the usual way in, as the metro station at VIP Road is still under construction. The Chinar Park crossing and the VIP Road junction at Teghoria get heavy in office hours, so book tuition slots away from the morning and evening peaks. Complexes will ask for the tutor's details at the gate, while houses on side roads are a doorstep visit. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rajarhat",
+        "https://en.wikipedia.org/wiki/Teghoria",
+        "https://www.99acres.com/flats-in-chinar-park-kolkata-east-ffid"
+      ]
+    },
+    "lake-town": {
+      "name": "Lake Town",
+      "zone": "Lake Town, Dum Dum & Baguiati",
+      "type": "residential",
+      "about": "<p>Lake Town is a planned residential area in South Dum Dum Municipality, known for its large open spaces, parks and a lake. It lies between VIP Road and Jessore Road, with Bangur Avenue, Dum Dum Park, Nagerbazar, Dakshindari and the Kalindi housing estate among its neighbours. Homes are a mix of apartment buildings, builder floors and older houses, and the Ultadanga flyover, opened in 2011, carries traffic from EM Bypass onto VIP Road.</p><p>The nearest suburban stations are Bidhannagar Road and Dum Dum Junction, and the Blue Line can be reached at Belgachia or Dum Dum, so tutors from north Kolkata often travel by train or metro and finish the trip by auto or bus along VIP Road. Many homes are in smaller buildings where the tutor goes straight to the door; larger complexes will want a name noted at the gate. VIP Road is the airport road and gets crowded at peak hours, so an early or later evening slot usually helps. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lake_Town,_Kolkata",
+        "https://en.wikipedia.org/wiki/VIP_Road,_Kolkata",
+        "https://www.99acres.com/flats-for-rent-in-lake-town-kolkata-north-ffid"
+      ]
+    },
+    "bangur-avenue": {
+      "name": "Bangur Avenue",
+      "zone": "Lake Town, Dum Dum & Baguiati",
+      "type": "residential",
+      "about": "<p>Bangur Avenue is a residential neighbourhood of South Dum Dum Municipality, with Jessore Road along its northern edge and VIP Road along its southern edge. Lake Town, Dum Dum Park and Shyamnagar are its neighbours and share its postal code, and the area falls under the Lake Town police station. Homes are mainly low- and mid-rise apartment buildings, with some independent houses still standing among them.</p><p>Rail users can come in through Bidhannagar Road or Patipukur stations on the suburban network, while buses on both main roads, including a route that runs to Shapoorji in New Town, bring tutors in from nearby areas. Most visits are to a flat in a small building or to a house, so the tutor usually goes straight to the door, though a few larger buildings keep a visitor register. Jessore Road and VIP Road both carry airport traffic, so leave room for the evening peak when fixing a class time. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bangur_Avenue",
+        "https://99acres.com/property-in-bangur-north-kolkata-ffid"
+      ]
+    },
+    "kestopur": {
+      "name": "Kestopur",
+      "zone": "Lake Town, Dum Dum & Baguiati",
+      "type": "residential",
+      "about": "<p>Kestopur is a residential neighbourhood of the Bidhannagar Municipal Corporation, with VIP Road along its western boundary and Salt Lake close by. Two roads shape it: Kestopur Main Road, which runs from Belgachia Road through Dum Dum Park, and Canal Side Road running parallel to it. Since 2022 the Salt Lake–Kestopur Bridge has given a direct crossing between Salt Lake and VIP Road. Housing is a mix of apartment buildings and independent houses, with a large number of flats on offer.</p><p>Karunamoyee and Salt Lake Sector V on the Green Line are the nearest metro stations, and Belgachia and Dum Dum on the Blue Line serve tutors coming from north Kolkata. The last leg is usually an auto along Kestopur Main Road or Canal Side Road. Residents mention traffic and parking pressure, so a tutor on a two-wheeler often has the easiest time, and visits planned outside the VIP Road rush run more smoothly. Flats in smaller buildings are a doorstep visit, while complexes ask for a name at the gate. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kestopur",
+        "https://en.wikipedia.org/wiki/VIP_Road,_Kolkata",
+        "https://www.99acres.com/kestopur-kolkata-north-overview-piffid"
+      ]
+    },
+    "baguiati": {
+      "name": "Baguiati",
+      "zone": "Lake Town, Dum Dum & Baguiati",
+      "type": "residential",
+      "about": "<p>Baguiati is a busy neighbourhood on VIP Road in the Bidhannagar Municipal Corporation, taking in sub-localities such as Deshbandhu Nagar, Ashwini Nagar, Jyangra, Raghunathpur and Arjunpur. A flyover from Dum Dum Park to Raghunathpur, opened in March 2015, carries through traffic above VIP Road, and Baguiati Bazar is the local market. Housing is an affordable mix of flats, independent houses and builder floors, with Teghoria and the Rajarhat side as neighbours.</p><p>There is no metro station inside Baguiati yet; tutors usually take the Blue Line to Belgachia or the Green Line to the Salt Lake stations and then a bus or auto along VIP Road, which is served by many state and private routes. Addresses are spread across several sub-localities off VIP Road, so share an exact landmark with a first-time tutor. Houses and small buildings mean doorstep visits, while gated complexes register guests. Weekday evenings on VIP Road are crowded, so earlier or weekend slots are easier. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Baguiati",
+        "https://en.wikipedia.org/wiki/VIP_Road,_Kolkata",
+        "https://www.99acres.com/baguiati-kolkata-north-overview-piffid"
+      ]
+    },
+    "dum-dum": {
+      "name": "Dum Dum (incl. Nagerbazar)",
+      "zone": "Lake Town, Dum Dum & Baguiati",
+      "type": "mixed",
+      "about": "<p>Dum Dum is a large suburban area on the northern side of the city, split between the Dum Dum, North Dum Dum and South Dum Dum municipalities, with Dum Dum Cantonment, Motilal Colony, Gora Bazar and the Nagerbazar market crossing among its localities. It is one of the city's main transit hubs: Dum Dum Junction sits on the Sealdah–Ranaghat line and starts the Circular Railway, Dum Dum Cantonment is on the Sealdah–Bangaon line, and the Blue Line metro has served Dum Dum since 1984. Since August 2025 the Yellow Line has run from Noapara through Dum Dum Cantonment and Jessore Road to the airport.</p><p>Homes are mainly apartments in older and newer buildings, and independent houses are still common. Jessore Road runs through the area as the main road. For tutors this is one of the easiest parts of the city to reach by train or metro, with an auto or rickshaw for the last stretch, and flats in small buildings usually mean going straight to the door. Jessore Road carries airport and highway traffic, so allow extra margin at office hours. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dum_Dum",
+        "https://en.wikipedia.org/wiki/Nagerbazar",
+        "https://en.wikipedia.org/wiki/Yellow_Line_(Kolkata_Metro)",
+        "https://www.99acres.com/dum-dum-kolkata-north-overview-piffid"
+      ]
+    },
+    "shyambazar": {
+      "name": "Shyambazar",
+      "zone": "North Kolkata",
+      "type": "mixed",
+      "about": "<p>Shyambazar is one of the oldest neighbourhoods of north Kolkata, spread across municipal wards 8 to 12 and known for its five-point crossing, where Barrackpore Trunk Road meets several other main roads. It is also a major shopping area for jewellery, textiles and festival goods. The lanes behind the main roads hold older houses with verandahs, iron latticework and louvred windows, and many plots have been rebuilt as apartment buildings.</p><p>Shyambazar station on the Blue Line opened in 1995, and Kolkata railway station is nearby, so tutors from Dum Dum, Belgachia or central Kolkata can come without a car. The last few steps are often on foot through the lanes, so metro or bus is usually the practical choice. Most homes are family houses or small buildings without a society gate, and the tutor goes straight to the door. The crossing is crowded at school and office hours, so mid-afternoon or later evening classes avoid the worst of it. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Shyambazar",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Kolkata_Metro)",
+        "https://www.99acres.com/shyam-bazaar-kolkata-north-overview-piffid"
+      ]
+    },
+    "bagbazar": {
+      "name": "Bagbazar",
+      "zone": "North Kolkata",
+      "type": "residential",
+      "about": "<p>Bagbazar is a riverside neighbourhood of north Kolkata that grew out of the historic village of Sutanuti and spans municipal wards 7 and 8. The old Chitpur Road runs north to south through it, and Bagbazar Street runs east from Bagbazar Ghat on the Hooghly to one of the main north–south avenues. It developed as a residential quarter of old Bengali families, and older family houses still line many of its lanes.</p><p>Transport is varied: Bagbazar station on the Circular Railway, Shyambazar on the Blue Line, ferries from Bagbazar Ghat, and buses across Chitpur Bridge. A tutor coming by metro usually walks or takes a rickshaw from Shyambazar. Visits are almost always to a family home at street level, so there is no gate register, and public transport tends to be simpler than a car. For advanced or specialist subjects, families can pair a local tutor with online classes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bagbazar",
+        "https://en.wikipedia.org/wiki/Kolkata_Circular_Railway"
+      ]
+    },
+    "sovabazar": {
+      "name": "Sovabazar",
+      "zone": "North Kolkata",
+      "type": "residential",
+      "about": "<p>Sovabazar is a heritage neighbourhood of north Kolkata lying between the Hooghly on the west and Hatibagan and Shyambazar on the east, and covering parts of municipal wards 8, 9, 10, 18 and 19. It grew as a wealthy merchant quarter in the eighteenth and nineteenth centuries, and its old family mansions still host well-known Durga Puja celebrations. Kumartuli, Bagbazar, Shyampukur and Ahiritola are its neighbours.</p><p>The area has two rail links: Sovabazar Sutanuti station on the Blue Line, opened in 1995, and Sovabazar Ahiritola station on the Circular Railway near the river. Buses run along the old Chitpur Road and the main avenue to the east. Most families live in older houses or apartment buildings, so a tutor generally goes to the door without any gate formality. Plan around the Durga Puja season, when the lanes fill with visitors, and around market-hour crowds on the main roads. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sovabazar",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Kolkata_Metro)",
+        "https://en.wikipedia.org/wiki/Kolkata_Circular_Railway"
+      ]
+    },
+    "maniktala": {
+      "name": "Maniktala",
+      "zone": "North Kolkata",
+      "type": "residential",
+      "about": "<p>Maniktala is a north Kolkata locality built around Maniktala Crossing, where the Upper Circular Road meets Maniktala Main Road. It was once a separate suburban municipality and was merged into Kolkata under the 1923 municipal act; the Upper Circular Road itself dates from 1799, laid along the old Maratha Ditch. Neighbours include Shyambazar, Kankurgachi, Rajabazar and Girish Park, and housing is mainly apartments with some older houses and independent floors.</p><p>Girish Park on the Blue Line and Sealdah on the Green Line are the metro stations used most, and many buses run along the two main roads. From either station an auto or bus covers the last stretch. Visits are usually to a flat in a mid-size building or a family house, and larger buildings may ask a visitor to sign in. The crossing is busy at office and school hours, so an evening slot after the rush tends to work. Online tuition suits specialist subjects if a local tutor is not free. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Maniktala",
+        "https://www.99acres.com/manictala-kolkata-north-overview-piffid"
+      ]
+    },
+    "belgachia": {
+      "name": "Belgachia",
+      "zone": "North Kolkata",
+      "type": "residential",
+      "about": "<p>Belgachia is a north Kolkata neighbourhood on Belgachia Road, which is part of Jessore Road, and covers municipal wards 3 and 5. Local roads connect it with Tala, Paikpara and Northern Avenue. The area mixes old and new buildings: ready two-bedroom apartments by local builders sit beside older houses, and landmarks include an old mansion and a Jain temple built in 1914.</p><p>Belgachia station on the Blue Line has been open since 1984, and Kolkata railway station is also close, so tutors from Dum Dum, Shyambazar or central Kolkata can arrive by metro or train and walk or take an auto for the last part. Families mostly live in flats in small buildings or in family houses, so the tutor usually goes straight to the door, though newer buildings may keep a visitor register. Jessore Road carries heavy traffic at office hours, so evening classes after the peak are simpler to keep on time. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Belgachia",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Kolkata_Metro)",
+        "https://www.99acres.com/belgachia-kolkata-north-overview-piffid"
+      ]
+    },
+    "sinthee": {
+      "name": "Sinthee",
+      "zone": "North Kolkata",
+      "type": "residential",
+      "about": "<p>Sinthee is a north Kolkata neighbourhood in municipal ward 2, bounded by Barrackpore Trunk Road and Cossipore on the west, Dum Dum Road on the south, Baranagar on the north and the Dum Dum municipalities on the east. Sinthee More on BT Road is its main junction, with frequent state and private buses including a route to Esplanade. Homes are mostly apartments, with some independent houses and builder floors, and South Sinthee and Purba Sinthee are among its parts.</p><p>Dum Dum metro station on the Blue Line and Dum Dum Junction on the suburban network are the nearest rail links, so tutors from Dum Dum, Belgachia or Shyambazar can reach the area easily. From the station or the More, an auto usually covers the last stretch to a flat or house, and most buildings are small enough that there is no gate formality. BT Road is heavily used at office hours, so book class slots with some slack either side. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sinthee",
+        "https://www.99acres.com/sinthee-kolkata-north-overview-piffid"
+      ]
+    },
+    "shibpur": {
+      "name": "Shibpur",
+      "zone": "Howrah",
+      "type": "residential",
+      "about": "<p>Shibpur is a large neighbourhood of Howrah on the west bank of the Hooghly, covering most Howrah Municipal Corporation wards from 25 to 45. Its main roads are the Grand Trunk Road and Andul Road, Foreshore Road along the river and the Kona Expressway, and its neighbours include Mandirtala, Santragachi, Ramrajatala and the Botanical Garden area. The older core is densely built, with houses along narrow lanes, while multi-storey apartment complexes have come up in recent years.</p><p>Since March 2024 the Green Line has crossed under the Hooghly to Howrah and Howrah Maidan stations, and since August 2025 it has run straight through to Sealdah and Salt Lake, which widens the pool of tutors who can reach Shibpur. Shalimar on the South Eastern Railway is the nearby terminus, and ferries run from the riverside ghats. In the old lanes a tutor goes straight to the door, often on foot or by rickshaw from the main road, while complexes register visitors at the gate. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Shibpur",
+        "https://en.wikipedia.org/wiki/Green_Line_(Kolkata_Metro)"
+      ]
+    },
+    "salkia": {
+      "name": "Salkia",
+      "zone": "Howrah",
+      "type": "residential",
+      "about": "<p>Salkia is an old neighbourhood of north Howrah on the west bank of the Hooghly, with Pilkhana to the south, Liluah and Ghusuri to the north and Bamangachi to the west. The Grand Trunk Road runs along its western side, and Haragunge Bazaar, a market more than a century old, anchors the commercial streets. Housing is mainly ready apartments in mid-size buildings along with older independent houses.</p><p>Howrah station is the main rail hub nearby, with Liluah and Tikiapara as the local suburban stations, and the Green Line from Howrah now links the area with Esplanade, Sealdah and Salt Lake. Ferries from Golabari and Bandhaghat ghats cross the river, and buses run to Howrah station, Esplanade and Sealdah. Tutors usually finish the trip by auto or rickshaw, and visits are to a flat or family house, in most cases without a society gate. Market streets get crowded in the evening, so give the tutor an exact lane landmark. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Salkia",
+        "https://en.wikipedia.org/wiki/Green_Line_(Kolkata_Metro)",
+        "https://www.99acres.com/salkia-howrah-overview-piffid"
+      ]
+    },
+    "santragachi": {
+      "name": "Santragachi",
+      "zone": "Howrah",
+      "type": "residential",
+      "about": "<p>Santragachi is a Howrah neighbourhood along the Kona Expressway, covering municipal wards 46 and 47, and widely known for Santragachi Junction on the South Eastern Railway and for Santragachi Jheel, a lake that draws migratory birds in winter. Housing is dominated by two- and three-bedroom flats in apartment complexes, and Shibpur is a neighbour. A central bus terminus on the Kona Expressway opened in 2015.</p><p>Santragachi Junction is one of the intercity railway junctions of Howrah and Kolkata, with local trains on the South Eastern suburban network, so tutors from elsewhere in Howrah can come by train, while those from Kolkata use the Kona Expressway or change from the Green Line at Howrah. Most families live in gated complexes that log visitors, so share the tower, flat number and gate rules in advance. The expressway is busy at office hours, so weekday evening classes need a margin. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Santragachi",
+        "https://www.99acres.com/santragachi-howrah-overview-piffid"
+      ]
+    }
+  },
+  "zone_facts": {
+    "Ballygunge, Gariahat & Alipore": [
+      {
+        "fact": "The first stretch of the Kolkata Metro Blue Line, Esplanade to Bhowanipore (Netaji Bhavan), including Park Street, Maidan and Rabindra Sadan, opened on 24 October 1984.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Kolkata_Metro)"
+      },
+      {
+        "fact": "The Bhowanipore to Tollygunge section of the Blue Line, with Jatin Das Park, Kalighat, Rabindra Sarobar and Mahanayak Uttam Kumar stations, opened on 29 April 1986.",
+        "source": "https://en.wikipedia.org/wiki/List_of_Kolkata_Metro_stations"
+      },
+      {
+        "fact": "Ballygunge Junction is an interchange station on the Sealdah South suburban lines; Park Circus, Dhakuria and Lake Gardens stations are on the same network.",
+        "source": "https://en.wikipedia.org/wiki/Sealdah_South_lines"
+      },
+      {
+        "fact": "Gariahat Market spreads across Rashbehari Avenue, Gariahat Road and nearby lanes and is one of the largest and busiest markets in Kolkata.",
+        "source": "https://en.wikipedia.org/wiki/Ballygunge"
+      },
+      {
+        "fact": "Large mansions were built in Ballygunge in the 1930s and 1940s as wealthy families moved south from north Calcutta.",
+        "source": "https://en.wikipedia.org/wiki/Ballygunge"
+      },
+      {
+        "fact": "In 1947 a co-operative housing society acquired the Jodhpur Park land and sub-divided it into about 450 residential plots.",
+        "source": "https://en.wikipedia.org/wiki/Jodhpur_Park"
+      },
+      {
+        "fact": "Alipore is served by Majerhat and Kidderpore stations on the Circular section of the Kolkata Suburban Railway.",
+        "source": "https://en.wikipedia.org/wiki/Alipore"
+      }
+    ],
+    "Tollygunge, Jadavpur & Garia": [
+      {
+        "fact": "The Blue Line extension from Tollygunge to Garia Bazar (Kavi Nazrul), with Netaji, Masterda Surya Sen and Gitanjali stations, opened on 22 August 2009.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Kolkata_Metro)"
+      },
+      {
+        "fact": "The Blue Line was extended from Garia Bazar to New Garia (Kavi Subhash), including Shahid Khudiram station, on 7 October 2010.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Kolkata_Metro)"
+      },
+      {
+        "fact": "After cracks were found in its supporting piers on 28 July 2025, the Blue Line platforms at Kavi Subhash were closed and Blue Line trains terminate at Shahid Khudiram; the Orange Line still serves Kavi Subhash.",
+        "source": "https://en.wikipedia.org/wiki/Kavi_Subhash_metro_station"
+      },
+      {
+        "fact": "Tollygunge is the centre of the Bengali film industry and has a railway station on the Budge Budge suburban line.",
+        "source": "https://en.wikipedia.org/wiki/Tollygunge"
+      },
+      {
+        "fact": "After 1947 refugees from East Pakistan set up colonies in Jadavpur; by 1949 there were about 40 such colonies in the area, including Bijoygarh.",
+        "source": "https://en.wikipedia.org/wiki/Jadavpur"
+      },
+      {
+        "fact": "Garia is split between Kolkata Municipal Corporation wards and the Rajpur Sonarpur Municipality, and lies on the banks of the Adi Ganga.",
+        "source": "https://en.wikipedia.org/wiki/Garia"
+      },
+      {
+        "fact": "Garia railway station is on the Sealdah South main line, between New Garia and Narendrapur.",
+        "source": "https://en.wikipedia.org/wiki/Garia_railway_station"
+      }
+    ],
+    "Behala & New Alipore": [
+      {
+        "fact": "The Joka to Taratala section of the Purple Line, with Thakurpukur, Sakherbazar, Behala Chowrasta and Behala Bazar stations, was inaugurated on 30 December 2022.",
+        "source": "https://en.wikipedia.org/wiki/Purple_Line_(Kolkata_Metro)"
+      },
+      {
+        "fact": "The Taratala to Majerhat extension of the Purple Line was inaugurated on 6 March 2024; Joka to Majerhat is the operational stretch.",
+        "source": "https://en.wikipedia.org/wiki/Purple_Line_(Kolkata_Metro)"
+      },
+      {
+        "fact": "Behala Chowrasta station is elevated directly above the Behala Chowrasta intersection on Diamond Harbour Road.",
+        "source": "https://en.wikipedia.org/wiki/Behala_Chowrasta_metro_station"
+      },
+      {
+        "fact": "Diamond Harbour Road is Behala's main traffic artery, and Behala is spread across Kolkata Municipal Corporation wards 115 to 132.",
+        "source": "https://en.wikipedia.org/wiki/Behala"
+      },
+      {
+        "fact": "New Alipore was created as a planned residential suburb in the 1950s and has two railway stations, New Alipore and Majerhat, on the Budge Budge section.",
+        "source": "https://en.wikipedia.org/wiki/New_Alipore"
+      },
+      {
+        "fact": "Majerhat is the junction where the Sealdah South suburban section connects with the Kolkata Circular Railway.",
+        "source": "https://en.wikipedia.org/wiki/Sealdah_South_lines"
+      }
+    ],
+    "Kasba & EM Bypass South": [
+      {
+        "fact": "The Eastern Metropolitan Bypass became operational in 1982 and runs from Ultadanga in north Kolkata to Baruipur; it is maintained by the Kolkata Metropolitan Development Authority.",
+        "source": "https://en.wikipedia.org/wiki/Eastern_Metropolitan_Bypass"
+      },
+      {
+        "fact": "The Kavi Subhash to Hemanta Mukhopadhyay section of the Orange Line along the EM Bypass was inaugurated on 6 March 2024.",
+        "source": "https://en.wikipedia.org/wiki/Orange_Line_(Kolkata_Metro)"
+      },
+      {
+        "fact": "The Orange Line was extended from Hemanta Mukhopadhyay to Beleghata on 22 August 2025, with commercial services from 25 August 2025.",
+        "source": "https://en.wikipedia.org/wiki/Orange_Line_(Kolkata_Metro)"
+      },
+      {
+        "fact": "Orange Line stations on the southern bypass include Satyajit Ray (Panchasayar), Jyotirindra Nandi (Mukundapur), Kavi Sukanta (Kalikapur), Hemanta Mukhopadhyay (Ruby crossing) and VIP Bazar.",
+        "source": "https://en.wikipedia.org/wiki/Orange_Line_(Kolkata_Metro)"
+      },
+      {
+        "fact": "Kasba grew after a rail overbridge opened in 1978 and a connector road linked it to the EM Bypass.",
+        "source": "https://en.wikipedia.org/wiki/Kasba,_Kolkata"
+      },
+      {
+        "fact": "The Baishnabghata Patuli Township, developed by the KMDA, was designed for a population of about 55,000 with about 4,500 serviced plots.",
+        "source": "https://kmda.wb.gov.in/page/cms/baishnabghat-patuli_township_3d8899"
+      }
+    ],
+    "Salt Lake": [
+      {
+        "fact": "Salt Lake (Bidhannagar) was built on reclaimed wetlands; reclamation of Sector I was completed in 1965 with plot distribution from 1966, and Sectors II and III were reclaimed by 1969.",
+        "source": "https://en.wikipedia.org/wiki/Bidhannagar"
+      },
+      {
+        "fact": "The first residents of the township moved into a house in AB Block, Sector I, on 9 March 1970; the township was renamed Bidhannagar in 1973.",
+        "source": "https://en.wikipedia.org/wiki/Salt_Lake_City,_Kolkata"
+      },
+      {
+        "fact": "The Green Line's first section, Salt Lake Sector V to Salt Lake Stadium (via Karunamoyee, Central Park, City Centre and Bengal Chemical), opened in February 2020.",
+        "source": "https://en.wikipedia.org/wiki/Green_Line_(Kolkata_Metro)"
+      },
+      {
+        "fact": "The Green Line was joined end to end on 22 August 2025 when the Sealdah–Esplanade section opened, giving a continuous metro from Salt Lake Sector V to Howrah Maidan.",
+        "source": "https://en.wikipedia.org/wiki/Green_Line_(Kolkata_Metro)"
+      },
+      {
+        "fact": "Sector V is the commercial and IT sector of Salt Lake, administered by the Nabadiganta Industrial Township Authority (set up in 2006) within the Bidhannagar Municipal Corporation area.",
+        "source": "https://en.wikipedia.org/wiki/Salt_Lake_City,_Kolkata"
+      },
+      {
+        "fact": "Bidhannagar Road railway station in Ultadanga, renamed from Ultadanga Road in 1972, serves Salt Lake on the Sealdah–Ranaghat line and the Circular Railway.",
+        "source": "https://en.wikipedia.org/wiki/Bidhannagar_Road_railway_station"
+      },
+      {
+        "fact": "The Salt Lake–Kestopur Bridge, opened in 2022, links Salt Lake directly with Kestopur and VIP Road.",
+        "source": "https://en.wikipedia.org/wiki/Kestopur"
+      }
+    ],
+    "New Town & Rajarhat": [
+      {
+        "fact": "New Town development began in the late 1990s; the New Town Kolkata Development Authority Act, 2007 took effect in November 2008, with HIDCO planning and executing projects.",
+        "source": "https://en.wikipedia.org/wiki/New_Town,_Kolkata"
+      },
+      {
+        "fact": "New Town is divided into Action Areas I, II and III, with a Central Business District between Action Areas I and II.",
+        "source": "https://en.wikipedia.org/wiki/New_Town,_Kolkata"
+      },
+      {
+        "fact": "Biswa Bangla Sarani (the Major Arterial Road) links Action Areas I and II and runs towards the airport.",
+        "source": "https://en.wikipedia.org/wiki/New_Town,_Kolkata"
+      },
+      {
+        "fact": "The Orange Line's New Town stations (including Nazrul Tirtha in Action Area 1A and Eco Park) are under construction; its open sections run only from Kavi Subhash to Beleghata (March 2024 and August 2025).",
+        "source": "https://en.wikipedia.org/wiki/Orange_Line_(Kolkata_Metro)"
+      },
+      {
+        "fact": "Eco Park metro station is being built in the middle of Biswa Bangla Sarani in Action Area IIE.",
+        "source": "https://en.wikipedia.org/wiki/Eco_Park_metro_station_(Kolkata)"
+      },
+      {
+        "fact": "The Bidhannagar Municipal Corporation was constituted on 18 June 2015 by merging the Bidhannagar and Rajarhat-Gopalpur municipal areas.",
+        "source": "https://en.wikipedia.org/wiki/Rajarhat"
+      },
+      {
+        "fact": "Rajarhat Main Road runs from Jora Mandir near Baguiati through Chinar Park to Rajarhat Chowmatha; VIP Road meets Biswa Bangla Sarani at Teghoria.",
+        "source": "https://en.wikipedia.org/wiki/Teghoria"
+      }
+    ],
+    "Lake Town, Dum Dum & Baguiati": [
+      {
+        "fact": "VIP Road (Kazi Nazrul Islam Avenue), completed in 1962, runs from Ultadanga to the airport past Lake Town, Bangur Avenue, Dum Dum Park, Kestopur, Baguiati, Teghoria and Kaikhali.",
+        "source": "https://en.wikipedia.org/wiki/VIP_Road,_Kolkata"
+      },
+      {
+        "fact": "The Ultadanga flyover opened in 2011 and the Kestopur–Baguiati flyover over VIP Road in March 2015.",
+        "source": "https://en.wikipedia.org/wiki/VIP_Road,_Kolkata"
+      },
+      {
+        "fact": "Dum Dum and Belgachia stations on the Blue Line opened on 12 November 1984.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Kolkata_Metro)"
+      },
+      {
+        "fact": "The Yellow Line opened on 22 August 2025 from Noapara via Dum Dum Cantonment and Jessore Road to Jai Hind (Biman Bandar) at the airport; the Birati section is under construction.",
+        "source": "https://en.wikipedia.org/wiki/Yellow_Line_(Kolkata_Metro)"
+      },
+      {
+        "fact": "Dum Dum Junction is on the Sealdah–Ranaghat line and Dum Dum Cantonment on the Sealdah–Bangaon line; Jessore Road (NH 12) is the main road through Dum Dum.",
+        "source": "https://en.wikipedia.org/wiki/Dum_Dum"
+      },
+      {
+        "fact": "Lake Town, Bangur Avenue and Nagerbazar fall under South Dum Dum Municipality, while Kestopur and Baguiati are in the Bidhannagar Municipal Corporation.",
+        "source": "https://en.wikipedia.org/wiki/Lake_Town,_Kolkata"
+      }
+    ],
+    "North Kolkata": [
+      {
+        "fact": "The Blue Line's first section opened on 24 October 1984; Shyambazar and Sovabazar Sutanuti stations opened on 15 February 1995 and Girish Park on 19 February 1995.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Kolkata_Metro)"
+      },
+      {
+        "fact": "Dakshineswar and Baranagar stations extended the Blue Line north on 22 February 2021.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Kolkata_Metro)"
+      },
+      {
+        "fact": "The Circular Railway's Bagbazar–Prinsep Ghat line opened to passengers on 15 August 1984 and reached Dum Dum by June 1990; north Kolkata stops include Bagbazar and Sovabazar Ahiritola.",
+        "source": "https://en.wikipedia.org/wiki/Kolkata_Circular_Railway"
+      },
+      {
+        "fact": "Shyambazar five-point crossing is a major north Kolkata junction where Barrackpore Trunk Road and other main roads meet.",
+        "source": "https://en.wikipedia.org/wiki/Shyambazar"
+      },
+      {
+        "fact": "Maniktala, Cossipore and Chitpur were amalgamated with Kolkata under the 1923 Calcutta Municipal Act; the Upper Circular Road was created in 1799 along the former Maratha Ditch.",
+        "source": "https://en.wikipedia.org/wiki/Maniktala"
+      },
+      {
+        "fact": "Sovabazar's family mansion Durga Puja celebrations date from 1757.",
+        "source": "https://en.wikipedia.org/wiki/Sovabazar"
+      }
+    ],
+    "Howrah": [
+      {
+        "fact": "The Green Line's under-river section from Esplanade to Howrah Maidan, with Howrah and Howrah Maidan stations, opened on 6 March 2024.",
+        "source": "https://en.wikipedia.org/wiki/Green_Line_(Kolkata_Metro)"
+      },
+      {
+        "fact": "Since 22 August 2025 the Green Line runs continuously from Howrah Maidan to Salt Lake Sector V.",
+        "source": "https://en.wikipedia.org/wiki/Green_Line_(Kolkata_Metro)"
+      },
+      {
+        "fact": "Santragachi Junction is one of the five intercity railway junctions of Howrah-Kolkata, on the South Eastern Railway.",
+        "source": "https://en.wikipedia.org/wiki/Santragachi"
+      },
+      {
+        "fact": "The Kona Expressway runs through Santragachi, where a central bus terminus opened in 2015.",
+        "source": "https://en.wikipedia.org/wiki/Santragachi"
+      },
+      {
+        "fact": "Shibpur covers Howrah Municipal Corporation wards 25 to 45 (except 43) and is served by the Grand Trunk Road/Andul Road, Foreshore Road and the Kona Expressway.",
+        "source": "https://en.wikipedia.org/wiki/Shibpur"
+      },
+      {
+        "fact": "Salkia has ferry services from Golabari and Bandhaghat ghats, with Liluah and Tikiapara as nearby suburban stations.",
+        "source": "https://en.wikipedia.org/wiki/Salkia"
+      }
+    ]
+  }
+}
