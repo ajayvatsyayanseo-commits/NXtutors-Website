@@ -34,4 +34,4 @@ A page = the modules that are TRUE for it. Never include a module with placehold
 ## Uniqueness check
 Run `python .claude/skills/nxt-location-modules/similarity.py URL1 URL2 [URL3 ...]` (live or local preview URLs). It prints a **content** ratio (chrome removed: header, nav, footer, pop-up forms, Ask NXT AI panel, sitewide link rails) and a full-page ratio for reference. Judge by the content ratio.
 
-Baseline (30 Sep 2026, Gurugram): different zones 0.35–0.45; same-zone neighbours 0.55; new pages without "About" text worst.
+Baseline (30 Sep 2026, Gurugram, after the glance/About/FAQ upgrade): different zones 0.33–0.38 ✔; same-zone neighbours 0.54–0.61, the shared part being the live tutor list (same tutors genuinely serve adjacent sectors) — it falls as tutors add travel areas. Before: 0.41–0.70.
