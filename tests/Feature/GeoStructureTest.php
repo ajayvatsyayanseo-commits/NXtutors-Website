@@ -208,6 +208,33 @@ class GeoStructureTest extends TestCase
         $this->get('/sitemap-areas.xml')->assertOk();
     }
 
+    public function test_area_tutors_cascade_with_a_reason_on_each_card(): void
+    {
+        $html = $this->get('/city/gurugram/dlf-phase-4')->assertOk()->getContent();
+        $this->assertStringContainsString('Elsewhere in Gurugram', $html);
+        $this->assertStringNotContainsString('>Hidden<', $html, 'hidden tutors never appear');
+        // Few real tutors nearby: tutors are asked to join, with the area filled in.
+        $this->assertStringContainsString('become-a-tutor?area=DLF+Phase+4', $html);
+        $this->assertStringContainsString(url('/tuition-jobs/gurugram'), $html);
+    }
+
+    public function test_duplicate_and_misplaced_area_pages_redirect(): void
+    {
+        config(['area_redirects.gurugram' => ['dlf-phase-4-old' => 'dlf-phase-4', 'noida-project' => '/city/delhi-ncr']]);
+        $this->get('/city/gurugram/dlf-phase-4-old')->assertStatus(301)->assertRedirect(url('/city/gurugram/dlf-phase-4'));
+        $this->get('/city/gurugram/noida-project')->assertStatus(301)->assertRedirect(url('/city/delhi-ncr'));
+    }
+
+    public function test_tuition_jobs_page_for_cities_with_zones_only(): void
+    {
+        $this->get('/tuition-jobs/gurugram')->assertOk()
+            ->assertSee('Home tuition jobs in Gurgaon (Gurugram)')
+            ->assertSee('Tutors needed')
+            ->assertSee('"@type":"FAQPage"', false);
+        $this->withExceptionHandling()->get('/tuition-jobs/mumbai')->assertNotFound();
+        $this->get('/sitemap-pages.xml')->assertSee('/tuition-jobs/gurugram', false);
+    }
+
     public function test_city_names_map_to_city_pages_whatever_the_spelling(): void
     {
         $this->assertSame('gurugram', Geo::slugFor('Gurgaon'));

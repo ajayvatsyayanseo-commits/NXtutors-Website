@@ -873,3 +873,23 @@ body.page .nxdemand__what{font-weight:600;color:#EEF2F9}
 body.page .legal-note{max-width:860px;margin:0 auto 40px;padding:0 12px}
 body.page .legal-note h2{font-size:20px;margin:0 0 8px}
 body.page .legal-note p{line-height:1.7;color:#C7D2E0}
+
+/* ---------- area pages: "Teach in this area" (city/cityarea/single) ---------- */
+body.page .nxrecruit{margin-top:16px;padding:16px 18px;border-radius:14px;border:1px dashed rgba(255,255,255,.22);background:rgba(255,255,255,.03);display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center}
+body.page .nxrecruit p{flex:1 1 320px;margin:0;line-height:1.6;color:#C7D2E0}
+body.page .nxrecruit__more{color:var(--nxt-link);text-decoration:underline;text-decoration-color:var(--nxt-link-line);text-underline-offset:3px;font-size:14px}
+.nx-form__alt{margin:12px 0 0;text-align:center;font-size:14px;color:#B7C0D1}
+.nx-form__alt a{color:var(--nxt-link);text-decoration:underline;text-underline-offset:3px}
+
+/* ---------- /tuition-jobs/{city} ---------- */
+body.page .nxjobs-zones{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));margin-top:12px}
+body.page .nxjobs-zone{padding:14px 16px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12)}
+body.page .nxjobs-zone h3{margin:0 0 6px;font-size:17px}
+body.page .nxjobs-zone p{margin:8px 0 0;font-size:14px;line-height:1.6}
+body.page .nxjobs-zone a{color:var(--nxt-link)}
+body.page .nxjobs-zone__tag{display:inline-block;padding:3px 10px;border-radius:999px;font-size:12px;font-weight:700;background:rgba(255,255,255,.08);color:#C7D2E0}
+body.page .nxjobs-zone--needed{border-color:rgba(245,165,36,.55)}
+body.page .nxjobs-zone--needed .nxjobs-zone__tag{background:rgba(245,165,36,.16);color:#FCD34D}
+body.page .nxjobs-steps,body.page .nxjobs-list{line-height:1.7;max-width:78ch;padding-left:20px}
+body.page .nxjobs-steps li,body.page .nxjobs-list li{margin:6px 0}
+body.page .nxjobs-cities{margin-top:12px}body.page .nxjobs-cities a{color:var(--nxt-link);text-decoration:underline;text-underline-offset:3px}

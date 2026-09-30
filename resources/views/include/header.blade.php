@@ -305,11 +305,14 @@
         Become a tutor partner
       </h2>
 
-      <form class="nx-form" id="tutorForm">
+      {{-- Tutor applications go to WhatsApp (the button says so): the script
+           below writes the details into the message. It used to have no field
+           names, no action and no script, so every application was lost. --}}
+      <form class="nx-form" id="tutorForm" data-wa="{{ preg_replace('/\D+/', '', (string) config('nxt-ai.whatsapp_number')) }}">
         <div class="nx-form__row">
           <label class="nx-field">
             <span class="nx-field__label">Your name</span>
-            <input type="text" class="nx-field__input" placeholder="Name" />
+            <input type="text" name="t_name" class="nx-field__input" placeholder="Name" required />
           </label>
         </div>
 
@@ -317,13 +320,13 @@
           <label class="nx-field">
             <span class="nx-field__label">Subjects</span>
             <input type="text" class="nx-field__input"
-                   placeholder="List subjects you can teach" />
+                   name="t_subjects" placeholder="List subjects you can teach" required />
           </label>
 
           <label class="nx-field">
             <span class="nx-field__label">Classes</span>
             <input type="text" class="nx-field__input"
-                   placeholder="Select grade levels" />
+                   name="t_classes" placeholder="e.g. Class 6–10, IB DP" />
           </label>
         </div>
 
@@ -331,20 +334,27 @@
           <label class="nx-field">
             <span class="nx-field__label">Experience</span>
             <input type="text" class="nx-field__input"
-                   placeholder="Years taught" />
+                   name="t_experience" placeholder="Years taught" />
           </label>
 
           <label class="nx-field">
-            <span class="nx-field__label">Location</span>
+            <span class="nx-field__label">Where you live</span>
             <input type="text" class="nx-field__input"
-                   placeholder="Base of operation" />
+                   name="t_location" placeholder="Area and city, e.g. Sector 57, Gurugram" required />
+          </label>
+        </div>
+
+        <div class="nx-form__row">
+          <label class="nx-field">
+            <span class="nx-field__label">Areas you can travel to (home tuition)</span>
+            <input type="text" name="t_travel" class="nx-field__input" placeholder="e.g. Sector 50–57, Sohna Road, South City 2" />
           </label>
         </div>
 
         <div class="nx-form__row nx-form__row--split">
           <label class="nx-field">
             <span class="nx-field__label">Preferred mode</span>
-            <select class="nx-field__input">
+            <select name="t_mode" class="nx-field__input">
               <option>In person</option>
               <option>Online</option>
               <option>Hybrid</option>
@@ -354,7 +364,7 @@
           <label class="nx-field">
             <span class="nx-field__label">Hourly rate</span>
             <input type="text" class="nx-field__input"
-                   placeholder="Proposed range (INR)" />
+                   name="t_rate" placeholder="Proposed range (INR)" />
           </label>
         </div>
 
@@ -362,22 +372,22 @@
           <label class="nx-field">
             <span class="nx-field__label">Days taught</span>
             <input type="text" class="nx-field__input"
-                   placeholder="Select availability" />
+                   name="t_days" placeholder="Select availability" />
           </label>
 
           <label class="nx-field">
             <span class="nx-field__label">WhatsApp number</span>
             <div class="nx-field__phone">
               <span class="nx-field__code">+91</span>
-              <input type="tel" class="nx-field__input" placeholder="Phone" />
+              <input type="tel" name="t_phone" class="nx-field__input" placeholder="Phone" required />
             </div>
           </label>
         </div>
 
         <div class="nx-form__row nx-form__row--inline">
           <label class="nx-checkbox">
-            <input type="checkbox" />
-            <span>I agree to Nxtutors <a href="#">terms</a></span>
+            <input type="checkbox" name="t_terms" required />
+            <span>I agree to the NXTutors <a href="{{ url('/terms-conditions') }}">terms</a></span>
           </label>
         </div>
 
@@ -387,6 +397,37 @@
           </button>
         </div>
       </form>
+      <p class="nx-form__alt">Prefer to build your full profile now? <a href="{{ url('/login') }}">Create your tutor account</a>.</p>
+      <script>
+      (function () {
+        var form = document.getElementById('tutorForm');
+        if (!form) return;
+        // Arriving from an area page ("Teach in Sector 57"): fill in the place.
+        try {
+          var q = new URLSearchParams(location.search), area = q.get('area'), city = q.get('city');
+          if (area) {
+            // Open the form straight away (footer.blade.php handles the click).
+            window.addEventListener('load', function () {
+              var opener = document.querySelector('[data-modal-target="tutorModal"]');
+              if (opener) opener.click();
+            });
+            form.t_travel.value = area;
+            form.t_location.placeholder = 'Where you live, e.g. near ' + area + (city ? ', ' + city : '');
+          }
+        } catch (e) {}
+        form.addEventListener('submit', function (ev) {
+          ev.preventDefault();
+          var f = form, v = function (n) { return (f[n] && f[n].value || '').trim(); };
+          var lines = ['Hi, I would like to join NXTutors as a tutor (tutor application).',
+            'Name: ' + v('t_name'), 'Subjects: ' + v('t_subjects'), 'Classes: ' + v('t_classes'),
+            'Experience: ' + v('t_experience'), 'I live in: ' + v('t_location'), 'I can travel to: ' + v('t_travel'),
+            'Mode: ' + v('t_mode'), 'Hourly rate: ' + v('t_rate'), 'Days: ' + v('t_days'), 'WhatsApp: +91 ' + v('t_phone')];
+          var text = lines.filter(function (l) { return !/: (\+91 )?$/.test(l); }).join("\n");
+          var num = f.getAttribute('data-wa') || '';
+          window.open('https://wa.me/' + num + '?text=' + encodeURIComponent(text), '_blank', 'noopener');
+        });
+      })();
+      </script>
     </div>
   </div>
 </div>

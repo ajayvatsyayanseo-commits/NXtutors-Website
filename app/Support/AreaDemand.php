@@ -74,12 +74,45 @@ class AreaDemand
         }
     }
 
+    /** Recent requests anywhere in a city, same safeguards (for the tuition-jobs page). */
+    public static function recentForCity(string $city): ?array
+    {
+        try {
+            return Cache::remember('areademand.city.v1.' . md5(mb_strtolower($city)), 21600, function () use ($city) {
+                if (! Schema::hasTable('demo_leads')) {
+                    return null;
+                }
+                $pool = self::leads()->filter(fn ($l) => Zones::cityOf((string) $l->location) === $city || Zones::of($city, (string) $l->location) !== null);
+
+                return self::rows($pool, $city, 10);
+            });
+        } catch (Throwable $e) {
+            return null;
+        }
+    }
+
     private static function build(string $city, string $areaName, ?string $zone): ?array
     {
         if (! Schema::hasTable('demo_leads')) {
             return null;
         }
-        $leads = DB::table('demo_leads')
+        $leads = self::leads();
+
+        $areaRe = '/(?<![a-z0-9])' . preg_quote(mb_strtolower($areaName), '/') . '(?![a-z0-9])/u';
+        $pool = $leads->filter(fn ($l) => preg_match($areaRe, mb_strtolower((string) $l->location . ' ' . str_replace('-', ' ', (string) $l->source_page))) === 1);
+        $scope = 'area';
+        if ($pool->count() < self::MIN_REQUESTS && $zone !== null) {
+            $scope = $zone;
+            $pool = $leads->filter(fn ($l) => Zones::of($city, (string) $l->location) === $zone);
+        }
+
+        return self::rows($pool, $scope, self::SHOW);
+    }
+
+    /** Recent demo requests, minus test entries and parents who opted out. */
+    private static function leads(): Collection
+    {
+        return DB::table('demo_leads')
             ->where('created_at', '>=', now()->subDays(self::DAYS))
             ->orderByDesc('created_at')
             ->limit(2000)
@@ -87,25 +120,19 @@ class AreaDemand
             ->reject(fn ($l) => preg_match('/\btest\b/i', (string) $l->name) === 1)
             // Parents who asked to be left out (privacy policy): demo_leads ids.
             ->reject(fn ($l) => in_array((int) $l->id, array_map('intval', (array) config('tutors.demand_exclude_ids', [])), true));
+    }
 
-        $areaRe = '/(?<![a-z0-9])' . preg_quote(mb_strtolower($areaName), '/') . '(?![a-z0-9])/u';
-        $inArea = $leads->filter(fn ($l) => preg_match($areaRe, mb_strtolower((string) $l->location . ' ' . str_replace('-', ' ', (string) $l->source_page))) === 1);
-
-        $scope = 'area';
-        $pool = $inArea;
-        if ($pool->count() < self::MIN_REQUESTS && $zone !== null) {
-            $scope = $zone;
-            $pool = $leads->filter(fn ($l) => Zones::of($city, (string) $l->location) === $zone);
-        }
+    /** Whitelisted rows, month only; null below the minimum. */
+    private static function rows(Collection $pool, string $scope, int $show): ?array
+    {
         if ($pool->count() < self::MIN_REQUESTS) {
             return null;
         }
-
         $rows = $pool->map(function ($l) {
             $what = self::describe($l);
 
             return $what === null ? null : ['month' => date('M Y', strtotime((string) $l->created_at)), 'what' => $what];
-        })->filter()->unique(fn ($r) => $r['month'] . '|' . $r['what'])->take(self::SHOW)->values();
+        })->filter()->unique(fn ($r) => $r['month'] . '|' . $r['what'])->take($show)->values();
 
         return $rows->count() >= self::MIN_REQUESTS ? ['scope' => $scope, 'rows' => $rows->all()] : null;
     }

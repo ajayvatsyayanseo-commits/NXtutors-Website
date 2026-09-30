@@ -276,6 +276,12 @@ public function sitemapSection(string $section)
     '/tutors',
     '/become-a-tutor',
 ];
+    // Tutor-side city pages, for cities with zones set up (TuitionJobsController).
+    foreach (array_keys(config('zones', [])) as $zoneCity) {
+        if ($zSlug = \App\Support\Geo::slugFor($zoneCity)) {
+            $staticUrls[] = '/tuition-jobs/' . $zSlug;
+        }
+    }
 
     foreach ($staticUrls as $url) {
         $urls[] = [
@@ -1175,6 +1181,11 @@ public function cityAreasLoad(Request $request, $slug)
 
 public function cityAreaShow($citySlug, $areaSlug)
 {
+    // Duplicate or misplaced area pages go to the right one (config/area_redirects.php).
+    if ($to = config('area_redirects.' . $citySlug . '.' . $areaSlug)) {
+        return redirect()->to(str_starts_with($to, '/') ? url($to) : url('/city/' . $citySlug . '/' . $to), 301);
+    }
+
     $city = City::where('slug', $citySlug)
         ->where('status', 't')
         ->firstOrFail();
@@ -1218,39 +1229,15 @@ public function cityAreaShow($citySlug, $areaSlug)
     // Clean title, H1 and description from the area's name; see CityHub::areaSeo.
     $areaSeo    = \App\Support\CityHub::areaSeo($area, $city->slug, $city->city_name);
 
-     $areaTutors = Register::where('join_as', 'teacher')
-        ->listable()
-        ->when(!empty($area->pincode), function($q) use ($area){
-            $q->where('pincode', $area->pincode);
-        })
-        ->orderByDesc('user_id')
-        ->take(9)
-        ->get();
-
-    // ✅ fallback to CITY tutors if area empty
-    $tutors = $areaTutors;
-    $tutorScope = 'area';
-
-    if ($areaTutors->count() == 0) {
-        $tutors = Register::where('join_as', 'teacher')
-            ->listable()
-            ->where('city', $city->city_name)   // ✅ register.city match
-            ->orderByDesc('user_id')
-            ->take(9)
-            ->get();
-
-        $tutorScope = 'city';
-    }
-
-    // Tutors who say they travel here ("Areas I travel to") come first, then
-    // the ones found by pincode or city above. See App\Support\TravelAreas.
+    // Tutors nearest first: in the area, travelling here, nearby in the
+    // zone, elsewhere in the city, then online tutors from the state and the
+    // rest of India, each card labelled with why it is shown, so no page is
+    // ever empty (App\Support\TutorCascade).
     $areaName = $areaSeo['name'] ?? (string) $area->name;
-    $travellers = \App\Support\TravelAreas::tutorsFor($city->city_name, $areaName);
-    if ($travellers->isNotEmpty()) {
-        $tutors = $travellers->concat($tutors)->unique('user_id')->values();
-        $tutorScope = 'area';
-    }
-    $tutors = $tutors->sortBy(fn ($t) => (int) ($t->is_sample ?? 0))->values();
+    $tutorCards = \App\Support\TutorCascade::forArea($city->slug, $city->city_name, $areaName,
+        \App\Support\CityHub::zoneOfArea($city->slug, $city->city_name, $area), (string) ($area->pincode ?? ''));
+    $tutors = $tutorCards->pluck('tutor');
+    $tutorScope = $tutorCards->contains(fn ($c) => $c['tier'] <= 3) ? 'area' : 'city';
 
     // The zone block: how home tuition works in this part of the city, its
     // guide, and other areas in the same zone (config/zone_guides.php).
@@ -1276,7 +1263,7 @@ public function cityAreaShow($citySlug, $areaSlug)
             $metakey = '';
             $metadesc = $city->meta_desc;
 
-    return view('city.cityarea.single', compact('city', 'area','relatedAreas','tutors','tutorScope','metatitle','metakey','metadesc','areaPages','areaGuides','areaState','areaSeo','zoneName','zoneGuide','zoneAreas','areaDemand'));
+    return view('city.cityarea.single', compact('city', 'area','relatedAreas','tutors','tutorScope','metatitle','metakey','metadesc','areaPages','areaGuides','areaState','areaSeo','zoneName','zoneGuide','zoneAreas','areaDemand','tutorCards'));
 }
    public function contactpage()
     {

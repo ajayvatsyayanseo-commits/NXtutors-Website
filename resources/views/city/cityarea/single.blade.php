@@ -162,17 +162,27 @@
   </h2>
   <p class="nxarea-note">
     @if(($tutorScope ?? 'area') === 'area')
-      Tutors who live in or travel to {{ $areaSeo['name'] ?? $area->name }} come first. Sample profiles are marked.
+      Nearest first: tutors in or travelling to {{ $areaSeo['name'] ?? $area->name }}, then nearby, then online. Each card says why it is shown; sample profiles are marked.
     @else
       We have no tutor listed in {{ $areaSeo['name'] ?? $area->name }} yet, so these are tutors across {{ $city->city_name }}; tell us your slot and we check who can reach you. Sample profiles are marked.
     @endif
   </p>
 
   <div class="suggested-grid nxarea-tutors">
-    @include('pages.partials.teacher-cards', ['teachers' => $tutors->take(8), 'page' => (object) ['city' => $city->city_name, 'location' => $areaSeo['name'] ?? $area->name]])
+    @include('pages.partials.teacher-cards', ['teachers' => $tutors->take(8), 'placeLabels' => $tutorCards->mapWithKeys(fn ($c) => [(string) $c['tutor']->user_id => $c['label']])->all(), 'page' => (object) ['city' => $city->city_name, 'location' => $areaSeo['name'] ?? $area->name]])
   </div>
   @if($tutors->isEmpty())
     <div class="empty">No tutors available right now.</div>
+  @endif
+
+  {{-- Few real tutors close by: ask tutors who live near here to join. --}}
+  @php $realNear = $tutorCards->filter(fn ($c) => $c['tier'] <= 3 && empty($c['tutor']->is_sample))->count(); @endphp
+  @if($realNear < 2)
+    <div class="nxrecruit">
+      <p><strong>Tutor near {{ $areaSeo['name'] ?? $area->name }}?</strong> Families here are looking for tutors. Register, add {{ $areaSeo['name'] ?? $area->name }} to the areas you travel to, and appear on this page once approved.</p>
+      <a class="nxbtn btn-accent" href="{{ url('/become-a-tutor') }}?area={{ urlencode($areaSeo['name'] ?? $area->name) }}&amp;city={{ urlencode($city->city_name) }}">Teach in {{ $areaSeo['name'] ?? $area->name }}</a>
+      <a class="nxrecruit__more" href="{{ url('/tuition-jobs/' . $city->slug) }}">See tuition jobs in {{ $city->city_name }} →</a>
+    </div>
   @endif
 </section>
 

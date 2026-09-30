@@ -406,6 +406,10 @@
     <a href="{{ url('/city/delhi-ncr') }}">Delhi NCR</a> and <a href="{{ url('/city/faridabad') }}">Faridabad</a>, and
     in <a href="{{ url('/city') }}">cities across India</a>.
   </p>
+  <p class="gg-note">
+    Are you a tutor? See <a href="{{ url('/tuition-jobs/gurugram') }}">home tuition jobs in Gurgaon</a> and the areas
+    where families need tutors now.
+  </p>
   </section>
 
   </div>

@@ -37,5 +37,7 @@
     'rating' => $rating, 'reviews' => $reviews,
     'address' => $t->address ?? '', 'city' => $t->city ?? '',
     'waLink' => $waLink, 'profileUrl' => $profileUrl, 'compare' => null,
+    // Why this tutor is shown here ("Travels to Sector 57"), from callers that know.
+    'placeLabel' => ($placeLabels ?? [])[(string) $t->user_id] ?? null,
   ])
 @endforeach
