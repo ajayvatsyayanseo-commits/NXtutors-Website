@@ -893,3 +893,10 @@ body.page .nxjobs-zone--needed .nxjobs-zone__tag{background:rgba(245,165,36,.16)
 body.page .nxjobs-steps,body.page .nxjobs-list{line-height:1.7;max-width:78ch;padding-left:20px}
 body.page .nxjobs-steps li,body.page .nxjobs-list li{margin:6px 0}
 body.page .nxjobs-cities{margin-top:12px}body.page .nxjobs-cities a{color:var(--nxt-link);text-decoration:underline;text-underline-offset:3px}
+
+/* ---------- area pages: "{Area} at a glance" ---------- */
+body.page .nxglance p{line-height:1.7;max-width:76ch}
+body.page .nxglance .nx-table{min-width:0}
+body.page .nxglance th{text-transform:none;letter-spacing:0;font-size:14px;width:34%;vertical-align:top;background:rgba(255,255,255,.04)}
+body.page .nxglance td{font-size:14.5px;color:#DCE3EE}
+body.page .nxglance a{color:var(--nxt-link)}

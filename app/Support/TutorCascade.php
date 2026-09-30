@@ -29,11 +29,24 @@ class TutorCascade
     /** @return Collection<int, array{tutor: Register, label: string, tier: int}> */
     public static function forArea(string $citySlug, string $cityName, string $areaName, ?string $zone, ?string $pincode = null, int $limit = self::LIMIT): Collection
     {
+        $ranked = self::rank($citySlug, $cityName, $areaName, $zone, $pincode)
+            ->sortBy(fn ($t) => [$t['sample'], $t['tier'], -$t['id']])
+            ->take($limit)->values();
+
+        $models = Register::whereIn('user_id', $ranked->pluck('user_id'))->get()->keyBy(fn ($m) => (string) $m->user_id);
+
+        return $ranked->map(fn ($t) => isset($models[$t['user_id']]) ? ['tutor' => $models[$t['user_id']], 'label' => $t['label'], 'tier' => $t['tier']] : null)
+            ->filter()->values();
+    }
+
+    /** Every tutor with its tier and label for this area (no database access). */
+    private static function rank(string $citySlug, string $cityName, string $areaName, ?string $zone, ?string $pincode): Collection
+    {
         $state = Geo::stateOf($citySlug);
         $area = mb_strtolower(trim($areaName));
         $areaRe = '/(?<![a-z0-9])' . preg_quote($area, '/') . '(?![a-z0-9])/u';
 
-        $ranked = collect(self::pool())->map(function (array $t) use ($citySlug, $cityName, $state, $area, $areaRe, $areaName, $zone, $pincode) {
+        return collect(self::pool())->map(function (array $t) use ($citySlug, $cityName, $state, $area, $areaRe, $areaName, $zone, $pincode) {
             $inCity = $t['city_slug'] === $citySlug;
             $tier = null;
             $label = null;
@@ -53,14 +66,31 @@ class TutorCascade
             }
 
             return $tier === null ? null : $t + ['tier' => $tier, 'label' => $label];
-        })->filter()
-            ->sortBy(fn ($t) => [$t['sample'], $t['tier'], -$t['id']])
-            ->take($limit)->values();
+        })->filter()->values();
+    }
 
-        $models = Register::whereIn('user_id', $ranked->pluck('user_id'))->get()->keyBy(fn ($m) => (string) $m->user_id);
+    /**
+     * Real (non-sample) tutors for one area: living there, listing it under
+     * "Areas I travel to", or covering its zone. For the area "at a glance".
+     *
+     * @return array{in: int, travel: int, zone: int}
+     */
+    public static function realCountsFor(string $citySlug, string $cityName, string $areaName, ?string $zone, ?string $pincode = null): array
+    {
+        $out = ['in' => 0, 'travel' => 0, 'zone' => 0];
+        foreach (self::rank($citySlug, $cityName, $areaName, $zone, $pincode) as $c) {
+            if ($c['sample']) {
+                continue;
+            }
+            match ($c['tier']) {
+                1 => $out['in']++,
+                2 => $out['travel']++,
+                3 => $out['zone']++,
+                default => null,
+            };
+        }
 
-        return $ranked->map(fn ($t) => isset($models[$t['user_id']]) ? ['tutor' => $models[$t['user_id']], 'label' => $t['label'], 'tier' => $t['tier']] : null)
-            ->filter()->values();
+        return $out;
     }
 
     /**

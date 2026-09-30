@@ -212,6 +212,9 @@ class GeoStructureTest extends TestCase
     {
         $html = $this->get('/city/gurugram/dlf-phase-4')->assertOk()->getContent();
         $this->assertStringContainsString('Elsewhere in Gurugram', $html);
+        // Area-specific facts, not template text.
+        $this->assertStringContainsString('DLF Phase 4 at a glance', $html);
+        $this->assertStringContainsString('DLF Phase 4 is in the Golf Course Road part of Gurugram.', $html);
         $this->assertStringNotContainsString('>Hidden<', $html, 'hidden tutors never appear');
         // Few real tutors nearby: tutors are asked to join, with the area filled in.
         $this->assertStringContainsString('become-a-tutor?area=DLF+Phase+4', $html);

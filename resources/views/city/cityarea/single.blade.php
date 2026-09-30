@@ -150,6 +150,8 @@
       </div>
     </section>
 
+    @includeWhen(!empty($glance), 'city.cityarea.partials.area-glance')
+
       <section class="cardx block section" id="tutors">
   {{-- Shared tutor cards (partials/tutor-card): real tutors carry the
        Verified seal, sample profiles are labelled and come last. --}}
@@ -325,30 +327,14 @@
     {{-- RELATED AREAS --}}
 @if(isset($relatedAreas) && $relatedAreas->count())
 <section class="cardx block section" id="related-areas">
-  <h2 class="h2"><span></span>Home tutors in areas near {{ $areaSeo['name'] ?? $area->name }}</h2>
-
-  <div class="rel-grid">
-    @foreach($relatedAreas as $ra)
-      <a class="rel-card"
-         href="{{ url('/') }}/city/{{ $area->city?->slug }}/{{ $ra->slug }}">
-        <div class="rel-title">Home tutors in {{ \App\Support\CityHub::cleanAreaName($ra->name, $ra->slug) }}</div>
-
-        @if(!empty($ra->pincode))
-          <div class="rel-meta">📍 Pincode: {{ $ra->pincode }}</div>
-        @endif
-
-        @if(!empty($ra->short_desc))
-          <div class="rel-desc">
-            {{ \Illuminate\Support\Str::limit(strip_tags($ra->short_desc), 110) }}
-          </div>
-        @else
-          <div class="rel-desc">Explore tutors & subjects in this area.</div>
-        @endif
-
-        <div class="rel-btn">View Tutors →</div>
-      </a>
+  {{-- Names and links only: other pages' descriptions copied here made
+       neighbouring pages look alike. Same-zone neighbours when known. --}}
+  <h2 class="h2"><span></span>@if($zoneName)More areas in {{ $zoneName }}@else Areas near {{ $areaSeo['name'] ?? $area->name }}@endif</h2>
+  <ul class="nxzone__areas">
+    @foreach(($neighbours ?? collect())->take(12) as $nb)
+      <li><a href="{{ url('/city/' . $city->slug . '/' . $nb->slug) }}">{{ $nb->name }}</a></li>
     @endforeach
-  </div>
+  </ul>
 </section>
 @endif
 

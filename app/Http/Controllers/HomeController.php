@@ -1259,11 +1259,45 @@ public function cityAreaShow($citySlug, $areaSlug)
     // Anonymised recent requests near this area (App\Support\AreaDemand).
     $areaDemand = \App\Support\AreaDemand::recentFor($city->city_name, $areaName, $zoneName);
 
+    // "{Area} at a glance": facts true for this area only, so neighbouring
+    // pages differ in substance (see .claude/skills/nxt-location-modules).
+    $neighbours = ($zoneAreas->isNotEmpty() ? $zoneAreas : $relatedAreas)
+        ->map(fn ($a) => (object) ['name' => \App\Support\CityHub::cleanAreaName($a->name, $a->slug), 'slug' => $a->slug])->values();
+    $glance = [
+        'zone' => $zoneName,
+        'neighbours' => $neighbours->take(4),
+        'pincode' => trim((string) ($area->pincode ?? '')),
+        'counts' => \App\Support\TutorCascade::realCountsFor($city->slug, $city->city_name, $areaName,
+            $zoneName, (string) ($area->pincode ?? '')),
+        'asked' => collect($areaDemand['rows'] ?? [])->pluck('what')->take(3)->all(),
+        'sector' => config('area_sectors.' . $city->slug . '.' . trim((string) $area->slug, ' ')),
+    ];
+
+    // Guides: the zone's guide first, then two of the city's own guides picked
+    // by area, so neighbouring pages do not all list the same three.
+    $cityWords = array_values(array_filter([$city->slug, strtolower((string) \App\Support\Geo::akaOf($city->slug))]));
+    $cluster = \App\Support\CityHub::guides([], 0, $cityWords)
+        ->reject(fn ($g) => str_contains($g->slug, 'tuition-guide'))->values();
+    $picked = collect();
+    if ($zoneGuide && ! empty($zoneGuide['live'])) {
+        $zg = \App\Support\CityHub::guides([], 0, $cityWords)->firstWhere('slug', $zoneGuide['guide']);
+        if ($zg) {
+            $picked->push($zg);
+        }
+    }
+    if ($cluster->isNotEmpty()) {
+        $start = crc32((string) $area->slug) % $cluster->count();
+        for ($i = 0; $i < min(2, $cluster->count()); $i++) {
+            $picked->push($cluster[($start + $i * 5) % $cluster->count()]);
+        }
+    }
+    $areaGuides = $picked->isNotEmpty() ? $picked->unique('slug')->values() : $areaGuides;
+
              $metatitle = $city->meta_title;
             $metakey = '';
             $metadesc = $city->meta_desc;
 
-    return view('city.cityarea.single', compact('city', 'area','relatedAreas','tutors','tutorScope','metatitle','metakey','metadesc','areaPages','areaGuides','areaState','areaSeo','zoneName','zoneGuide','zoneAreas','areaDemand','tutorCards'));
+    return view('city.cityarea.single', compact('city', 'area','relatedAreas','tutors','tutorScope','metatitle','metakey','metadesc','areaPages','areaGuides','areaState','areaSeo','zoneName','zoneGuide','zoneAreas','areaDemand','tutorCards','glance','neighbours'));
 }
    public function contactpage()
     {
