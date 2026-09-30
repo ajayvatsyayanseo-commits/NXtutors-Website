@@ -202,11 +202,13 @@ private function areaSitemapUrls(?int $cityId, string $baseUrl): array
         ->orderBy('id')
         ->chunk(500, function ($areas) use (&$urls, $baseUrl) {
             foreach ($areas as $area) {
-                if (empty($area->city?->slug)) {
+                $loc = $baseUrl . '/city/' . ($area->city?->slug ?? '') . '/' . $area->slug;
+                // Two rows can share a slug (huda-plots-): list each URL once.
+                if (empty($area->city?->slug) || isset($urls[$loc])) {
                     continue;
                 }
-                $urls[] = [
-                    'loc' => $baseUrl . '/city/' . $area->city->slug . '/' . $area->slug,
+                $urls[$loc] = [
+                    'loc' => $loc,
                     'lastmod' => null,
                     'priority' => '0.7',
                     'changefreq' => 'monthly',
@@ -214,7 +216,7 @@ private function areaSitemapUrls(?int $cityId, string $baseUrl): array
             }
         });
 
-    return $urls;
+    return array_values($urls);
 }
 
 /**
