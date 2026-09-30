@@ -171,7 +171,8 @@
   </p>
 
   <div class="suggested-grid nxarea-tutors">
-    @include('pages.partials.teacher-cards', ['teachers' => $tutors->take(8), 'placeLabels' => $tutorCards->mapWithKeys(fn ($c) => [(string) $c['tutor']->user_id => $c['label']])->all(), 'page' => (object) ['city' => $city->city_name, 'location' => $areaSeo['name'] ?? $area->name]])
+    {{-- No tutor in or near the area yet: the same city-wide list would repeat on every page of the city, so show fewer. --}}
+    @include('pages.partials.teacher-cards', ['teachers' => $tutors->take(($tutorScope ?? 'area') === 'area' ? 8 : 4), 'placeLabels' => $tutorCards->mapWithKeys(fn ($c) => [(string) $c['tutor']->user_id => $c['label']])->all(), 'page' => (object) ['city' => $city->city_name, 'location' => $areaSeo['name'] ?? $area->name]])
   </div>
   @if($tutors->isEmpty())
     <div class="empty">No tutors available right now.</div>

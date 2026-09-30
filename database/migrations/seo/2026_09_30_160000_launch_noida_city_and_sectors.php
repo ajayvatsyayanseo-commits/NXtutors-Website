@@ -1,0 +1,79 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
+
+/**
+ * Noida gets its own city page (NCR roll-out, 30 Sep 2026; before this
+ * Noida tutors were filed under "Delhi NCR") and 79 residential sector
+ * pages, each with "About this area" text researched from cited sources
+ * (database/seo-content/areas/noida-research.json). Zones are in
+ * config/zones.php['Noida'].
+ *
+ * Existing rows are never touched: a city or sector slug that already
+ * exists is skipped. down() removes only rows this migration inserted.
+ */
+return new class extends Migration
+{
+    private const MARK = 'seo-2026-09-30-noida';
+
+    private function research(): array
+    {
+        return json_decode((string) @file_get_contents(database_path('seo-content/areas/noida-research.json')), true) ?: [];
+    }
+
+    public function up(): void
+    {
+        if (! Schema::hasTable('city_managment') || ! Schema::hasTable('city_area_list_managment')) {
+            return;
+        }
+
+        $cityId = DB::table('city_managment')->where('slug', 'noida')->value('id');
+        if (! $cityId) {
+            $cityCols = array_flip(Schema::getColumnListing('city_managment'));
+            $cityId = DB::table('city_managment')->insertGetId(array_intersect_key([
+                'city_name' => 'Noida',
+                'slug' => 'noida',
+                'city_desc' => 'Home and online tutors across Noida, from the older sectors around Sector 18 and the Botanical Garden to the Sector 62 belt, the Aqua Line sectors and the societies along the Noida Expressway. CBSE, ICSE, IB and IGCSE, Classes 1–12, JEE and NEET, with a free demo class.',
+                'meta_title' => 'Home Tutors in Noida – CBSE, ICSE, IB, JEE | NXTutors',
+                'meta_desc' => 'Home tutors in Noida for Classes 1–12, CBSE, ICSE, IB, IGCSE, JEE and NEET, sector by sector from Old Noida to the Expressway. See fees and book a free demo.',
+                'avatar' => '',
+                'status' => 't',
+            ], $cityCols));
+        }
+
+        $cols = array_flip(Schema::getColumnListing('city_area_list_managment'));
+        foreach (($this->research()['areas'] ?? []) as $slug => $a) {
+            if (DB::table('city_area_list_managment')->where('city_id', $cityId)->whereIn('slug', [$slug, $slug . '-', '-' . $slug])->exists()) {
+                continue;
+            }
+            $row = [
+                'city_id' => $cityId,
+                'areapid' => 0,
+                'name' => $a['name'],
+                'main_title' => 'Home Tutors in ' . $a['name'] . ', Noida',
+                'slug' => $slug,
+                'status' => 't',
+                'page_schema' => self::MARK,
+                'area_desc' => trim((string) ($a['about'] ?? '')),
+            ];
+            foreach (['teacher_approch', 'area_map', 'pincode', 'why_choose', 'short_desc', 'package', 'tutor_types', 'subjects_covered_desc', 'meta_title', 'meta_desc'] as $c) {
+                $row[$c] = '';
+            }
+            DB::table('city_area_list_managment')->insert(array_intersect_key($row, $cols));
+        }
+    }
+
+    public function down(): void
+    {
+        if (! Schema::hasTable('city_managment') || ! Schema::hasTable('city_area_list_managment')) {
+            return;
+        }
+        DB::table('city_area_list_managment')->where('page_schema', self::MARK)->delete();
+        $cityId = DB::table('city_managment')->where('slug', 'noida')->where('meta_title', 'Home Tutors in Noida – CBSE, ICSE, IB, JEE | NXTutors')->value('id');
+        if ($cityId && ! DB::table('city_area_list_managment')->where('city_id', $cityId)->exists()) {
+            DB::table('city_managment')->where('id', $cityId)->delete();
+        }
+    }
+};

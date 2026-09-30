@@ -213,7 +213,7 @@ class GeoStructureTest extends TestCase
         $html = $this->get('/city/gurugram/dlf-phase-4')->assertOk()->getContent();
         $this->assertStringContainsString('Elsewhere in Gurugram', $html);
         // A home tutor in a neighbouring NCR city (the Noida tutor) comes next.
-        $this->assertStringContainsString('Nearby in NCR · Delhi NCR', $html);
+        $this->assertStringContainsString('Nearby in NCR · Noida', $html);
         // Area-specific facts, not template text.
         $this->assertStringContainsString('DLF Phase 4 at a glance', $html);
         $this->assertStringContainsString('DLF Phase 4 is in the Golf Course Road part of Gurugram.', $html);
@@ -277,6 +277,30 @@ class GeoStructureTest extends TestCase
         $this->assertSame(0, DB::table('city_area_related_faqs_managment')->where('area_id', $id)->count());
     }
 
+    public function test_noida_launches_as_its_own_city_with_zoned_sector_pages(): void
+    {
+        $launch = require database_path('migrations/seo/2026_09_30_160000_launch_noida_city_and_sectors.php');
+        $faqs = require database_path('migrations/seo/2026_09_30_170000_faqs_for_noida_sectors.php');
+        $launch->up();
+        $launch->up();
+        $faqs->up();
+
+        $this->assertSame('noida', Geo::slugFor('Noida'));
+        $this->assertSame('noida', Geo::slugFor('Gautam Buddh Nagar'));
+        $noidaId = DB::table('city_managment')->where('slug', 'noida')->value('id');
+        $this->assertGreaterThanOrEqual(70, DB::table('city_area_list_managment')->where('city_id', $noidaId)->count());
+
+        $page = $this->get('/city/noida/sector-62')->assertOk();
+        $page->assertSee('Sector 62 at a glance')->assertSee('Sector 62 Belt · Noida')->assertSee('"@type":"FAQPage"', false);
+        $this->get('/city/noida')->assertOk()->assertSee('/city/noida/sector-62', false)->assertDontSee('verified tutors');
+        $this->get('/sitemap.xml')->assertSee('/sitemap-areas-noida.xml', false);
+        $this->get('/tuition-jobs/noida')->assertOk()->assertSee('Where in Noida tutors are needed');
+
+        $faqs->down();
+        $launch->down();
+        $this->assertNull(DB::table('city_managment')->where('slug', 'noida')->value('id'));
+    }
+
     public function test_city_names_map_to_city_pages_whatever_the_spelling(): void
     {
         $this->assertSame('gurugram', Geo::slugFor('Gurgaon'));
@@ -295,7 +319,7 @@ class GeoStructureTest extends TestCase
         $this->assertSame(2, $c['gurugram']['areas']);
         $this->assertSame(2, $c['gurugram']['pages']);
         $this->assertSame(1, $c['mumbai']['tutors']);
-        $this->assertSame(1, $c['delhi-ncr']['tutors']);
+        $this->assertSame(1, $c['noida']['tutors'], 'Noida has its own city page since 30 Sep 2026');
         $this->assertSame(2, $c['kolkata']['pages'], 'the noindex page is not counted');
     }
 

@@ -54,4 +54,31 @@ return [
             'names' => ['palam vihar', 'old gurgaon', 'old gurugram', 'sadar bazar', 'shivaji nagar', 'new colony', 'laxman vihar', 'krishna colony'],
         ],
     ],
+    // Noida (30 Sep 2026): from the sector research in database/seo-content/areas/noida-research.json.
+    'Noida' => [
+        'Old Noida' => [
+            'sectors' => [11, 12, 14, 15, 17, 19, 20, 21, 22, 23, 25, 26, 27, 28, 29, 30, 31, 33],
+            'names' => ['old noida', 'atta market', 'film city'],
+        ],
+        'Central Noida' => [
+            'sectors' => [34, 35, 36, 37, 39, 40, 41, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53],
+            'names' => ['botanical garden', 'city centre', 'central noida'],
+        ],
+        'Sector 62 Belt' => [
+            'sectors' => [55, 56, 61, 62],
+            'names' => ['sector 62', 'electronic city'],
+        ],
+        'Sectors 70–82' => [
+            'sectors' => [70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 82],
+            'names' => ['nsez'],
+        ],
+        'Noida Expressway' => [
+            'sectors' => [92, 93, 99, 100, 104, 105, 107, 108, 110, 128, 134, 137, 143, 144, 150, 151, 168],
+            'names' => ['noida expressway', 'expressway'],
+        ],
+        'Near Noida Extension' => [
+            'sectors' => [115, 116, 117, 118, 119, 120, 121, 122],
+            'names' => ['gaur chowk', 'noida extension border'],
+        ],
+    ],
 ];

@@ -125,4 +125,79 @@ return [
             ],
         ],
     ],
+    // Noida (30 Sep 2026), from database/seo-content/areas/noida-zone-guides.json.
+    'Noida' => [
+        'Old Noida' => [
+            'guide' => 'old-and-central-noida-tuition-guide',
+            'intro' => [
+                'Old Noida, the first sectors at the Delhi end of the city from Sector 11 to Sector 33, is mostly independent houses and builder floors on Noida Authority plots, many allotted in the 1980s, with a few RWA colonies and gated societies. Sector 15A, where the DND Flyway lands, is low-density bungalows and villas. CBSE is the most common board in Noida, with ICSE, IB and IGCSE also taught.',
+                'The Blue Line runs through the zone, with stations at Noida Sector 15, 16 and 18 and Botanical Garden, so tutors who travel by metro can reach many homes on foot. In houses and floors there is no gate pass to arrange. The main thing to plan around is evening traffic towards the DND and the Film City Flyover.',
+            ],
+            'tips' => [
+                'A tutor coming from outside the zone is best booked before the evening rush towards the DND and the Mahamaya Flyover.',
+                'Tell the tutor where to park: older lanes and the roads around busy sector markets fill up in the evening.',
+                'If a tutor travels by metro, ask which station they will use, so you can give simple walking directions from it.',
+            ],
+        ],
+        'Central Noida' => [
+            'guide' => 'old-and-central-noida-tuition-guide',
+            'intro' => [
+                'Central Noida, from the Botanical Garden and Noida City Centre through Sectors 34 to 53, is largely plotted Noida Authority housing: Sectors 50 and 51 each have around a thousand houses in lettered blocks, alongside group-housing blocks, builder floors and urban villages such as Morna, Sadarpur and Baraula. Tutors can be matched for CBSE, ICSE and the international boards, from primary classes to Class 12.',
+                'This is the best-connected zone for tutors who use the metro. The Blue Line stops at Noida Sector 34, Noida City Centre, Golf Course and Noida Sector 52, and the Aqua Line starts at Noida Sector 51, linked to Sector 52 by a walkway. Tutors who drive meet peak-hour congestion on Dadri Main Road and Amrapali Road.',
+            ],
+            'tips' => [
+                'Ask tutors who live along the Blue or Aqua Line: they can reach most of this zone without driving.',
+                'In the plotted blocks the tutor comes straight to your door; in a group-housing block, add them to the visitor list once.',
+                'If the tutor drives in on Dadri Main Road or Amrapali Road, a slot before the evening peak keeps the class on time.',
+            ],
+        ],
+        'Sector 62 Belt' => [
+            'guide' => 'noida-sector-62-and-70s-tuition-guide',
+            'intro' => [
+                'The Sector 62 belt, Sectors 55, 56, 61 and 62, sits beside one of Noida\'s biggest office and institutional areas along NH-9. Housing ranges from cooperative group housing societies with two- and three-bedroom flats in Sector 62, to mixed societies, floors and houses in Sector 61, plotted houses in Sector 55 and Noida Authority Janta and LIG flats in Sector 56. Tutors can be matched for CBSE, ICSE and the international boards.',
+                'The Blue Line extension serves the belt at Noida Sector 61, Sector 59, Sector 62 and Noida Electronic City, and Sector 52 links to the Aqua Line. Office traffic is the main constraint: residents report congestion on NH-9 at peak hours and near the office belts and stations, so timing matters more here than distance.',
+            ],
+            'tips' => [
+                'Avoid starting a class at the office rush: an after-school slot or one after the evening peak is easier for tutors to keep.',
+                'In Sectors 55 and 56 the nearest metro stations are outside the sector, so expect tutors to arrive by two-wheeler, auto or cab.',
+                'In a CGHS society, register the tutor at the gate once so later visits start on time.',
+            ],
+        ],
+        'Sectors 70–82' => [
+            'guide' => 'noida-sector-62-and-70s-tuition-guide',
+            'intro' => [
+                'Sectors 70 to 82 have two halves. Sectors 74 to 79 are mainly high-rise gated group-housing societies built on large plots allotted to builders, while Sectors 70 to 73 are lower-rise, with builder floors, independent houses, smaller societies and Sarfabad village in Sector 73. Sector 82 is an older pocket-based sector with housing from EWS flats to HIG duplexes. Tutors can be matched for all boards and classes.',
+                'The Aqua Line serves the belt from Noida Sector 50, Sector 76, Sector 101 and NSEZ, so tutors who live along it can ride in and walk to your tower. Vikas Marg is the main road, and residents report heavy congestion on it at office peak hours, with bottlenecks at the Sector 71/51 intersection and near Sector 101 station.',
+            ],
+            'tips' => [
+                'In the tower sectors, pass the tutor\'s name to security and your block before the first class, and keep the same weekly slot.',
+                'A tutor based inside the belt avoids the Vikas Marg and Sector 71/51 bottlenecks at peak hours.',
+                'Ask tutors who live on the Aqua Line: a metro ride plus a short walk is often quicker than driving in the evening.',
+            ],
+        ],
+        'Noida Expressway' => [
+            'guide' => 'noida-expressway-and-extension-tuition-guide',
+            'intro' => [
+                'The sectors along the Noida–Greater Noida Expressway, from Sector 92 to Sector 168, are dominated by high-rise gated societies with two- to four-bedroom flats across affordable, mid and premium segments, with offices and business parks nearby. A few sectors near the start of the belt, such as 92, 99 and 108, are plotted with independent houses. Tutors can be matched for CBSE, ICSE, IB and IGCSE.',
+                'The expressway carries heavy peak-hour traffic, with slow-moving traffic in both directions in the evening, so a tutor from a nearby sector who can use local roads is the most reliable choice. The Aqua Line runs along much of the expressway, with stations including Noida Sector 137 and Sectors 142 to 148, which helps tutors who come by metro.',
+            ],
+            'tips' => [
+                'Ask for tutors in neighbouring sectors first; a tutor who has to drive along the expressway at peak hour will struggle to arrive on time.',
+                'For specialist subjects, a hybrid plan with one home session a week and online classes in between makes a tutor from further away practical.',
+                'Large societies can take several minutes from gate to tower: pre-approve the visit and build that into the start time.',
+            ],
+        ],
+        'Near Noida Extension' => [
+            'guide' => 'noida-expressway-and-extension-tuition-guide',
+            'intro' => [
+                'The sectors towards the Greater Noida West border, Sectors 115 to 122, mix large gated societies with plotted sectors and old villages. Sectors 119 to 121 are mainly group housing, Sector 121 has one society of about 2,600 flats, and some societies are still being completed. Sectors 116 and 122 are plotted Noida Authority sectors, and Sector 115 is centred on Sorkha village and the Harit Upvan urban forest.',
+                'Getting here can be slow: Gaur Chowk, the junction towards Noida Extension, carries heavy daily traffic while an underpass is built, and residents report stray cattle on some roads. The nearest metro for Sectors 115 and 116 is Noida Sector 76 on the Aqua Line. A tutor who already teaches in the same cluster of sectors is usually the steadiest choice.',
+            ],
+            'tips' => [
+                'In a big society, ask whether the tutor already teaches another family there: it makes a regular slot easier to keep.',
+                'A tutor coming through Gaur Chowk in the evening should allow extra time, or teach online on busy days.',
+                'Where few tutors live nearby, start with online classes and add a home session once you find the right tutor.',
+            ],
+        ],
+    ],
 ];

@@ -29,7 +29,7 @@ return [
         'mahindra-luminare-c' => 'mahindra-luminare',
         // Not in Gurugram.
         'bptp-parklands' => '/city/faridabad',
-        'ats-greens-1' => '/city/delhi-ncr',
-        'ats-green-valley-pockets' => '/city/delhi-ncr',
+        'ats-greens-1' => '/city/noida',
+        'ats-green-valley-pockets' => '/city/noida',
     ],
 ];
