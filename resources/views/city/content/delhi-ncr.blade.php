@@ -1,12 +1,15 @@
 {{--
-  Long-form guide for the Delhi NCR city page (included by city/show.blade.php
-  when a file named after the city slug exists). Covers Delhi, Noida, Greater
-  Noida and Ghaziabad; Gurugram and Faridabad have their own city pages and are
-  linked, not covered. Every figure here is either live from the database or a
-  published NXTutors policy, and no school is named as a partner.
+  Hub guide for the Delhi NCR region page (included by city/show.blade.php
+  when a file named after the city slug exists). Delhi NCR is six city pages:
+  Delhi, Gurugram, Noida, Greater Noida, Ghaziabad and Faridabad. This file
+  summarises each one and sends parents to it; zone names come from
+  config/zones.php, transport facts from the six city hubs and the research
+  files in database/seo-content/areas. Every figure is either live from the
+  database or a published NXTutors policy, and no school is named.
 
-  Area links render only when that area page exists and is active, so renaming
-  or disabling an area in Super Admin cannot leave a broken link here.
+  $dA is kept for any area link on this page: it renders a link only when that
+  area page exists and is active, so renaming or disabling an area in Super
+  Admin cannot leave a broken link here.
 --}}
 @php
   $dAreaSlugs = $allAreas->pluck('slug')->map(fn ($s) => (string) $s)->all();
@@ -18,168 +21,300 @@
 @endphp
 
 <article class="nx-guide dl-guide" aria-labelledby="dlGuideTitle">
-  <h2 id="dlGuideTitle">Home tuition in Delhi NCR: a parent's guide to Delhi, Noida, Greater Noida and Ghaziabad</h2>
+  <h2 id="dlGuideTitle">Home tuition across Delhi NCR: one region, six cities</h2>
 
   <p class="nx-guide__lede dl-lede">
-    Ask ten Delhi parents about tuition and you will hear ten versions of the same worry: the board result, the
-    coaching timetable, the Class 11 stream decision, and whether there is any time left for the child to breathe.
-    The region is also spread across Delhi and Uttar Pradesh, joined by the Metro and divided by traffic. This guide
-    explains how NXTutors finds the right tutor in Delhi, Noida, Greater Noida and Ghaziabad, what each stage of
-    school needs, what tuition costs and how to judge a tutor in the first week.
+    Delhi NCR is six cities, each with its own street plan, transport and evening rush: Delhi, Gurugram, Noida, Greater Noida, Ghaziabad and Faridabad. Every one of
+    them has a full NXTutors city page with zones, locality pages, subject pages and local guides. This page is the
+    map that joins them: find your city below, then read on for what every NCR family shares, from boards and fees to
+    the demo class and the school year.
   </p>
 
   <nav class="nx-guide__toc dl-toc" aria-label="In this guide">
     <strong>In this guide:</strong>
     <a href="#dl-how">How matching works</a> ·
-    <a href="#dl-where">Where our tutors teach</a> ·
+    <a href="#dl-delhi">Delhi</a> ·
+    <a href="#dl-gurugram">Gurugram</a> ·
+    <a href="#dl-noida">Noida</a> ·
+    <a href="#dl-greater-noida">Greater Noida</a> ·
+    <a href="#dl-ghaziabad">Ghaziabad</a> ·
+    <a href="#dl-faridabad">Faridabad</a> ·
+    <a href="#dl-travel">Travelling across NCR</a> ·
     <a href="#dl-boards">Boards</a> ·
-    <a href="#dl-classes">Class by class</a> ·
-    <a href="#dl-entrance">JEE, NEET &amp; CUET</a> ·
-    <a href="#dl-subjects">Subjects</a> ·
-    <a href="#dl-mode">Home or online</a> ·
+    <a href="#dl-classes">Stage by stage</a> ·
     <a href="#dl-fees">Fees</a> ·
-    <a href="#dl-choose">Choosing a tutor</a> ·
-    <a href="#dl-safety">Safety</a> ·
+    <a href="#dl-choose">The demo class</a> ·
+    <a href="#dl-safety">Safety at home</a> ·
     <a href="#dl-calendar">The school year</a> ·
     <a href="#dl-start">Getting started</a>
   </nav>
   <div class="nx-guide__body">
 
   <section class="nx-guide__sec">
-  <h2 id="dl-how">How we find a tutor for your child</h2>
+  <h2 id="dl-how">How matching works across NCR</h2>
   <p>
-    You do not have to scroll through hundreds of profiles. You give us seven pieces of information: the student's
-    class, board, the subjects that need help, your locality, the days and times you can manage, whether you want the
-    tutor at home, online or a mix of both, and what you are comfortable spending. From that, we put forward two or
-    three tutors, and each of them fits the whole brief, not only the subject.
+    Send one request: class, board, subjects, your locality down to the block, pocket, sector or tower, free days and
+    hours, home or online or both, and a rough budget. We come back with two or three matched tutors. Each one's fee is visible
+    before the demo, the first class with the tutor you pick is a free demo, and if you want to change tutor later,
+    that switch is free as well.
   </p>
-  <p>In Delhi NCR, a few details in that brief tend to decide the match:</p>
+  <p>
+    On every locality page in the region, tutors appear in the same order. It is a cascade that starts at your door
+    and widens only when it has to:
+  </p>
+  <ol>
+    <li><strong>Your own locality.</strong> Tutors who are based in your sector, colony, khand or pocket come first, followed by tutors who have told us they already travel there.</li>
+    <li><strong>Your zone.</strong> Next are home tutors from neighbouring localities in the same zone. Zones follow the way people get around, so a zone is a sensible evening trip, not an administrative boundary.</li>
+    <li><strong>The rest of your city.</strong> Then home tutors from elsewhere in the same city.</li>
+    <li><strong>Nearby NCR cities.</strong> Then come home tutors based in another NCR city, marked "Nearby in NCR". State lines are not travel lines: a tutor in Kaushambi can be nearer to a family in East Delhi than a tutor in Dwarka is.</li>
+    <li><strong>Online.</strong> Last are online tutors, first from your own state and then from across India.</li>
+  </ol>
+  <p>
+    Each tutor card carries its label, so you know whether the person can come to the house.
+    @if($hubCounts['tutors'] > 0)
+      The Delhi NCR list on this page draws on {{ number_format($hubCounts['tutors']) }} tutor profiles,
+    @else
+      The Delhi NCR list on this page draws on our tutor profiles,
+    @endif
+    and each city page below shows its own list with the same labels.
+  </p>
+  </section>
+
+  <section class="nx-guide__sec">
+  <h2 id="dl-delhi">Delhi: twelve zones, joined by the metro</h2>
+  <p>
+    Delhi holds the widest range of homes in the region. Much of the south and west grew as colonies laid out after
+    Partition, and many of those plots have since been rebuilt as builder floors with a different family on each
+    level, so a tutor usually just rings the bell. The two DDA sub-cities, Dwarka in the south-west and Rohini in the
+    north-west, run on sectors and pockets, and cooperative group housing there means a guard who wants the tutor's
+    name before the first lesson. Across the Yamuna, East Delhi moves from planned DDA pockets to the crowded lanes
+    around Shahdara, and around North Campus and Rajinder Nagar family homes share streets with coaching centres and
+    student lets that stay busy late.
+  </p>
+  <p>
+    Here the nearest station often decides the shortlist more than distance: a tutor on your line, or one change
+    away, is easier to keep through a school year than one driving across the city. East
+    Delhi families usually do better starting with tutors who already teach on the trans-Yamuna side. CBSE is the
+    board most Delhi students sit, ICSE and ISC have a solid following, and a smaller group study for the IB or
+    Cambridge IGCSE.
+  </p>
+  <p>
+    <strong>Zones:</strong> GK, Defence Colony &amp; Lajpat Nagar · Saket, Malviya Nagar &amp; Hauz Khas · Kalkaji,
+    CR Park &amp; Sarita Vihar · Vasant Kunj, Vasant Vihar &amp; Palam · Dwarka · Janakpuri, Rajouri Garden &amp;
+    Punjabi Bagh · Karol Bagh, Patel Nagar &amp; Rajinder Nagar · Lodhi Colony, Jangpura &amp; Nizamuddin · Rohini ·
+    Pitampura, Model Town &amp; North Campus · Mayur Vihar, Patparganj &amp; IP Extension · Laxmi Nagar, Preet Vihar
+    &amp; Shahdara.
+  </p>
+  <p>
+    Open the <a href="{{ url('/city/delhi') }}">Delhi city page</a> for every colony and sector, or read the local
+    guides to <a href="{{ url('/blog/south-delhi-tuition-guide') }}">South Delhi</a> and
+    <a href="{{ url('/blog/east-delhi-tuition-guide') }}">East Delhi</a>.
+  </p>
+  </section>
+
+  <section class="nx-guide__sec">
+  <h2 id="dl-gurugram">Gurugram: nine zones and a long evening peak</h2>
+  <p>
+    Gurugram stretches from the old town and the plotted HUDA sectors in the north-west to the high-rise belts along
+    Golf Course Extension Road, Sohna Road and the newer sectors off NH-48 and the Dwarka Expressway. The older city
+    has plenty of experienced tutors living close by, and it is also where tutors for Hindi and Sanskrit are easiest to
+    find. In the newest sectors many families moved in recently and the local pool of tutors is still growing, so
+    weekend mornings and a mix of home visits and online lessons are the usual way to bridge the gap.
+  </p>
+  <p>
+    International boards feature strongly here, particularly around Golf Course Road and its extension, where parents often want help with one piece of the course, such as an IB internal
+    assessment or IGCSE practical questions, rather than general homework support. Road distance is misleading in this
+    city: a short hop in the afternoon can take far longer at six, so where the tutor sets out from and the time of the
+    lesson count more than the map. NXTutors' own office is in Sector 66, on Golf Course Extension Road.
+  </p>
+  <p>
+    <strong>Zones:</strong> Golf Course Road · MG Road &amp; Cyber City · Central Gurugram · Golf Course Extension
+    Road · Sohna Road · Southern Peripheral Road · New Gurugram · Dwarka Expressway · Old Gurugram.
+  </p>
+  <p>
+    Open the <a href="{{ url('/city/gurugram') }}">Gurugram city page</a>, or read the guides to
+    <a href="{{ url('/blog/gurgaon-golf-course-road-dlf-tuition-guide') }}">Golf Course Road and the DLF phases</a> and
+    <a href="{{ url('/blog/new-gurgaon-dwarka-expressway-tuition-guide') }}">New Gurugram and Dwarka Expressway</a>.
+  </p>
+  </section>
+
+  <section class="nx-guide__sec">
+  <h2 id="dl-noida">Noida: six zones on a numbered grid</h2>
+  <p>
+    Noida was planned as a grid of numbered sectors, and the number on your address says a good deal about the kind of
+    home a tutor will walk into. The earliest sectors, at the Delhi end, are mostly independent houses and builder
+    floors on authority plots, where a tutor comes straight to the door. The belts along the expressway and towards
+    the Greater Noida West border are mostly towers, where the tutor needs clearing at a security desk. Plenty of
+    sectors mix the two, and several still contain old urban villages.
+  </p>
+  <p>
+    Two metro lines carry many tutors. The Blue Line crosses Old and Central Noida out to Noida Electronic City, and
+    the Aqua Line begins at Sector 51 and heads south towards Greater Noida, joined to Sector 52 on the Blue Line by a
+    walkway. The slow points at peak hours are the expressway, Vikas Marg, NH-9 near the office belts, and the
+    approaches to the DND and Gaur Chowk. Noida is in Uttar Pradesh, so UP Board schools sit alongside CBSE, ICSE and
+    the international boards.
+  </p>
+  <p>
+    <strong>Zones:</strong> Old Noida · Central Noida · Sector 62 Belt · Sectors 70–82 · Noida Expressway · Near
+    Noida Extension.
+  </p>
+  <p>
+    Open the <a href="{{ url('/city/noida') }}">Noida city page</a>, or read the guides to
+    <a href="{{ url('/blog/old-and-central-noida-tuition-guide') }}">Old and Central Noida</a> and
+    <a href="{{ url('/blog/noida-expressway-and-extension-tuition-guide') }}">the Noida Expressway and Extension sectors</a>.
+  </p>
+  </section>
+
+  <section class="nx-guide__sec">
+  <h2 id="dl-greater-noida">Greater Noida: towers in the west, plots in the Greek-letter sectors</h2>
+  <p>
+    Greater Noida behaves like two separate towns. Greater Noida West, still widely called Noida Extension, is an
+    almost unbroken run of high-rise townships: nearly every lesson begins at a gate, but density helps, because a
+    tutor who already teaches in one complex can often fit in a second student the same evening. The older city to
+    the south-east names its sectors after Greek letters, and much of it is plotted housing where the tutor simply
+    arrives at the front door.
+  </p>
+  <p>
+    How a tutor reaches you depends on which half you live in. The Aqua Line serves the older core, with stations
+    such as Pari Chowk, Alpha 1, Delta 1 and GNIDA Office before it ends at Depot, but Greater Noida West has no
+    working station of its own; the nearest is Noida Sector 51, and the extension towards it is still only planned.
+    In several plotted sectors buses and shared autos are scarce, so a tutor with a two-wheeler reaches far more homes.
+    As in Noida, the UP Board is part of the mix.
+  </p>
+  <p>
+    <strong>Zones:</strong> Greater Noida West · Alpha–Delta &amp; Pari Chowk · Pi, Sigma &amp; Sectors 36–37 ·
+    Omega, Chi &amp; Phi · Zeta &amp; Eta · Omicron, Mu &amp; Xu.
+  </p>
+  <p>
+    Open the <a href="{{ url('/city/greater-noida') }}">Greater Noida city page</a>, or read the guides to
+    <a href="{{ url('/blog/greater-noida-west-tuition-guide') }}">Greater Noida West</a> and
+    <a href="{{ url('/blog/greater-noida-sectors-tuition-guide') }}">the Greek-letter sectors</a>.
+  </p>
+  </section>
+
+  <section class="nx-guide__sec">
+  <h2 id="dl-ghaziabad">Ghaziabad: seven zones on two banks of the Hindon</h2>
+  <p>
+    The Hindon runs through the middle of Ghaziabad and shapes tuition on each side. To the west, Indirapuram, Vaishali,
+    Vasundhara, Kaushambi and Sahibabad sit hard against the Delhi and Noida borders, a patchwork of khands, pockets
+    and numbered sectors where towers and builder floors stand next to each other. To the east is the older, mostly
+    plotted city around Raj Nagar and Kavi Nagar, with the newer high-rise belt of Raj Nagar Extension and the NH-9
+    corridor beyond it.
+  </p>
+  <p>
+    Three rail networks reach the city: the Blue Line branch that finishes at Vaishali, the Red Line along GT Road to
+    Shaheed Sthal, and Namo Bharat trains calling at Sahibabad, Ghaziabad, Guldhar and Duhai. Many tutors stay on one
+    bank of the river, so a shortlist begins with those already teaching on yours. Ghaziabad is in Uttar Pradesh, and
+    for UP Board students the medium of instruction, Hindi or English, matters as much as the subject.
+  </p>
+  <p>
+    <strong>Zones:</strong> Indirapuram · Vaishali &amp; Kaushambi · Vasundhara · Sahibabad &amp; Rajendra Nagar ·
+    Surya Nagar &amp; Ramprastha · Raj Nagar, Kavi Nagar &amp; Old Ghaziabad · Raj Nagar Extension &amp; NH-9
+    Corridor.
+  </p>
+  <p>
+    Open the <a href="{{ url('/city/ghaziabad') }}">Ghaziabad city page</a>, or read the guides to
+    <a href="{{ url('/blog/indirapuram-tuition-guide') }}">Indirapuram</a> and
+    <a href="{{ url('/blog/raj-nagar-and-old-ghaziabad-tuition-guide') }}">Raj Nagar and old Ghaziabad</a>.
+  </p>
+  </section>
+
+  <section class="nx-guide__sec">
+  <h2 id="dl-faridabad">Faridabad: seven zones from Mathura Road to Neharpar</h2>
+  <p>
+    Faridabad falls into four quite different parts. The old town and NIT, the industrial township built after
+    Partition, are close-packed lanes of houses and floors: no gate to clear, but very little parking. The planned HSVP
+    sectors on either side of Mathura Road are largely plotted, with wider roads and parks. To the west the land climbs
+    into the Aravalli around Surajkund, and east of the Agra canal lies Greater Faridabad, known locally as Neharpar, a
+    newer belt of gated towers.
+  </p>
+  <p>
+    The Violet Line is the city's backbone, running down Mathura Road from the Delhi border to Ballabhgarh, so a tutor
+    living near it can reach much of the older city without a vehicle, and the northern sectors can draw on tutors from
+    South Delhi as easily as on local ones. Neharpar has no metro, so tutors cross the canal by road. Faridabad is in
+    Haryana, so HBSE schools are common alongside CBSE and the other boards, and the medium of teaching is worth
+    stating when you ask.
+  </p>
+  <p>
+    <strong>Zones:</strong> NIT &amp; Old Faridabad · Central Sectors (Mathura Road) · Sectors 28–31 &amp; 37 ·
+    Surajkund &amp; Sainik Colony · Ballabhgarh &amp; Southern Sectors · Greater Faridabad (Sectors 75–80) · Greater
+    Faridabad (Sectors 81–89).
+  </p>
+  <p>
+    Open the <a href="{{ url('/city/faridabad') }}">Faridabad city page</a>, or read the guides to
+    <a href="{{ url('/blog/nit-and-central-faridabad-tuition-guide') }}">NIT and central Faridabad</a> and
+    <a href="{{ url('/blog/greater-faridabad-neharpar-tuition-guide') }}">Greater Faridabad and Neharpar</a>.
+  </p>
+  </section>
+
+  <section class="nx-guide__sec">
+  <h2 id="dl-travel">Travelling between NCR cities</h2>
+  <p>
+    Sometimes the right tutor lives on the other side of a state line. Whether that works depends on the route at your
+    slot, not on the border. These are the cross-city links our city pages describe:
+  </p>
   <ul>
-    <li><strong>Which side of the river, and which state.</strong> A tutor in Laxmi Nagar and a family in Indirapuram are close on a map but separated by the Yamuna, a state border and some of the busiest crossings in the region. We look at where the tutor actually travels from.</li>
-    <li><strong>The school's own pace.</strong> Two CBSE schools in the same colony can be months apart in the syllabus, and one may test far more often than the other. We ask what the school has covered so the tutor starts in the right place.</li>
-    <li><strong>Coaching commitments.</strong> If the student already goes to a coaching centre three evenings a week, the tutor has to fit the other days, and ideally work from the same material.</li>
-    <li><strong>Language comfort.</strong> Some students learn best when a tutor can also explain in Hindi; others want English only. Tell us which.</li>
+    <li><strong>Delhi and Noida.</strong> The Blue Line runs from Dwarka through central Delhi into Noida. The Magenta Line links Janakpuri West and South Delhi with Botanical Garden, where it meets the Blue Line. By road, the DND Flyway connects the Nizamuddin side and Mayur Vihar with Noida.</li>
+    <li><strong>Delhi and Ghaziabad.</strong> The Blue Line branch from Yamuna Bank ends at Vaishali. The Red Line crosses from Rithala in the north-west, through Shahdara, to Shaheed Sthal. Namo Bharat trains leave Anand Vihar, where the Blue and Pink Lines, the railway terminal and the interstate bus terminus meet, for Sahibabad, Ghaziabad, Guldhar and Duhai. The Hindon Elevated Road joins Raj Nagar Extension to UP Gate on the Delhi border.</li>
+    <li><strong>Noida and Ghaziabad.</strong> Noida Electronic City station on the Blue Line has an exit on the Indirapuram side.</li>
+    <li><strong>Noida and Greater Noida.</strong> The Aqua Line runs from Noida Sector 51 to Depot, and the Noida–Greater Noida Expressway runs from the Mahamaya Flyover to Pari Chowk. Greater Noida West is reached from Noida Sector 121 by a road across the Hindon.</li>
+    <li><strong>Delhi and Faridabad.</strong> The Violet Line continues past Sarita Vihar and Badarpur Border into Faridabad and down Mathura Road to Ballabhgarh.</li>
+    <li><strong>Delhi, Gurugram and Faridabad.</strong> The Dwarka Expressway passes Dwarka's Sectors 21 and 22 on its way into Gurugram's newer sectors, and the Gurugram–Faridabad road crosses the Aravalli near Surajkund.</li>
   </ul>
   <p>
-    Once you have the shortlist, you pick one tutor for a <strong>free demo class</strong>. It is a real lesson on
-    whatever the student is studying that week. If it does not click, say so and we arrange the next tutor. Switching
-    costs nothing, and you are not tied into a package.
+    Treat traffic as a timing question. Bridges, border crossings and big junctions are where evening trips stretch
+    most, so a tutor from another city arrives on time more often if the lesson starts before the office rush, runs
+    later, or moves to a weekend morning. Where a slot means a long drive both ways, one home lesson a week plus online
+    sessions is easier to sustain. Poor winter air has at times moved school classes online across the region, so agree
+    an online fallback with the tutor before pre-board season.
   </p>
   </section>
 
   <section class="nx-guide__sec">
-  <h2 id="dl-where">Where our tutors teach across Delhi NCR</h2>
+  <h2 id="dl-boards">Boards across Delhi NCR</h2>
   <p>
-    @if($hubCounts['tutors'] > 0)
-      {{ number_format($hubCounts['tutors']) }} tutor profiles are
-    @else
-      Our tutors are
-    @endif
-    available across Delhi and the neighbouring cities of Uttar Pradesh. Each part of the region has its own school
-    mix, its own commute and its own busiest hours, so it helps to think in zones.
-  </p>
-    <div class="nx-guide__cards">
-      <div class="nx-guide__card">
-  <h3>South Delhi</h3>
-  <p>
-    Colonies such as {!! $dA('greater-kailash', 'Greater Kailash') !!}, {!! $dA('saket', 'Saket') !!},
-    {!! $dA('malviya-nagar', 'Malviya Nagar') !!}, {!! $dA('hauz-khas', 'Hauz Khas') !!} and
-    {!! $dA('vasant-kunj', 'Vasant Kunj') !!} have a wide spread of schools, from long-established CBSE schools to a
-    handful offering IB or Cambridge programmes. Requests here often come for senior-class Maths and Science, for
-    English writing, and for students who already attend a coaching centre and need someone to clear doubts at home.  </p>
-      </div>
-      <div class="nx-guide__card">
-  <h3>West Delhi, Dwarka and Janakpuri</h3>
-  <p>
-    {!! $dA('dwarka', 'Dwarka') !!} is a city in its own right, with numbered sectors, group housing societies and a
-    large number of CBSE schools. {!! $dA('janakpuri', 'Janakpuri') !!}, {!! $dA('rajouri-garden', 'Rajouri Garden') !!},
-    {!! $dA('punjabi-bagh', 'Punjabi Bagh') !!} and {!! $dA('paschim-vihar', 'Paschim Vihar') !!} have settled family
-    neighbourhoods where tutors have often taught for years. Within Dwarka it makes sense to match inside the
-    sub-city, because crossing to the far side of it at 6 pm takes longer than it should.
-  </p>
-      </div>
-      <div class="nx-guide__card">
-  <h3>North Delhi</h3>
-  <p>
-    {!! $dA('rohini', 'Rohini') !!}, {!! $dA('pitampura', 'Pitampura') !!}, {!! $dA('shalimar-bagh', 'Shalimar Bagh') !!}
-    and {!! $dA('model-town', 'Model Town') !!} are dense, school-focused neighbourhoods with strong demand for CBSE
-    board classes and for commerce subjects. The areas around the university's North Campus, including Mukherjee Nagar
-    and GTB Nagar, are known for coaching centres and a large student population, including many postgraduates
-    who teach school students alongside their own studies.
-  </p>
-      </div>
-      <div class="nx-guide__card">
-  <h3>East Delhi and Mayur Vihar</h3>
-  <p>
-    Across the Yamuna, {!! $dA('mayur-vihar', 'Mayur Vihar') !!}, {!! $dA('patparganj', 'Patparganj') !!},
-    {!! $dA('preet-vihar', 'Preet Vihar') !!} and {!! $dA('laxmi-nagar', 'Laxmi Nagar') !!} are full of cooperative group
-    housing societies. Families here often compare Delhi-based tutors with ones from Noida, since the border is minutes
-    away; we consider both, as long as the actual evening route is reasonable.
-  </p>
-      </div>
-      <div class="nx-guide__card">
-  <h3>Central Delhi</h3>
-  <p>
-    {!! $dA('karol-bagh', 'Karol Bagh') !!}, {!! $dA('rajinder-nagar', 'Rajinder Nagar') !!} and
-    {!! $dA('patel-nagar', 'Patel Nagar') !!} sit close to several Metro lines, which widens the pool of tutors who
-    can reach you.
-  </p>
-      </div>
-      <div class="nx-guide__card">
-  <h3>Noida and Greater Noida</h3>
-  <p>
-    Noida's sectors and high-rise societies, from the older sectors near the Delhi border to
-    {!! $dA('sector-62-noida', 'Sector 62') !!}, the Expressway sectors such as
-    {!! $dA('sector-137-noida', 'Sector 137') !!}, and {!! $dA('greater-noida-west', 'Greater Noida West') !!}
-    (Noida Extension), house many young families who moved for work. In newer societies, hybrid arrangements help
-    while the local tutor pool catches up. In {!! $dA('greater-noida', 'Greater Noida') !!} proper, distances are
-    longer and weekend mornings are often easier to fill than weekday evenings.
-  </p>
-      </div>
-      <div class="nx-guide__card">
-  <h3>Ghaziabad</h3>
-  <p>
-    {!! $dA('indirapuram', 'Indirapuram') !!}, {!! $dA('vaishali', 'Vaishali') !!},
-    {!! $dA('vasundhara', 'Vasundhara') !!}, {!! $dA('raj-nagar-extension', 'Raj Nagar Extension') !!} and
-    {!! $dA('crossings-republik', 'Crossings Republik') !!} are dominated by large societies with CBSE-affiliated
-    schools close by. Indirapuram and Vaishali are compact and well connected, so tutors can usually reach them easily; the
-    newer townships further out lean more on online sessions.
-  </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="nx-guide__sec">
-  <h2 id="dl-boards">Boards: mostly CBSE, with ICSE, IB and IGCSE too</h2>
-  <p>
-    Delhi is CBSE country. The board's headquarters is in the city, and most students in Delhi, Noida and Ghaziabad
-    sit CBSE exams, with some Noida and Ghaziabad schools following the UP Board.
+    The national boards run through all six cities, and each state adds its own. Name the board with every request,
+    and for a state board the medium too.
   </p>
     <div class="nx-guide__cards">
       <div class="nx-guide__card">
   <h3>CBSE</h3>
   <p>
-    The NCERT textbook is the backbone of every CBSE paper, and board questions follow its language and examples
-    closely. Papers now carry a large share of competency-based questions: case-based items, assertion and reason,
-    and source or data-based questions. A CBSE tutor should work NCERT line by line first, then move to sample papers
-    and previous years' papers, and teach the student to lay out answers the way the marking scheme rewards: formula,
-    substitution, units, final answer. A tutor who skips NCERT for harder books is not helping before the boards.
+    The most widely taught board in every NCR city. Papers are rooted in the NCERT books, and a large share now tests
+    whether a student can apply an idea: case passages, assertion and reason, data and source questions. Look for a
+    tutor who teaches from the textbook outward, works through the board's sample papers and makes the student show
+    each step so method marks are kept.
   </p>
       </div>
       <div class="nx-guide__card">
   <h3>ICSE and ISC</h3>
   <p>
-    A smaller number of Delhi NCR schools follow the CISCE board. ICSE and ISC students carry more content per subject
-    and write longer answers, and English (both Language and Literature) is weighed more heavily than in CBSE. Tutors
-    need to know the prescribed texts and the project work each subject requires.
+    CISCE schools appear across the region in smaller numbers. The syllabus is broad and answers run long, especially
+    in English, History and the sciences. The tutor's real job is coverage and pace: a revision cycle that reaches
+    every chapter, timed writing, and knowledge of the prescribed texts and project work.
   </p>
       </div>
       <div class="nx-guide__card">
   <h3>IB and Cambridge IGCSE</h3>
   <p>
-    International schools in South Delhi, Noida and elsewhere in the region offer the IB Diploma or Cambridge IGCSE
-    and A Levels. These students need tutors who understand internal assessments, command words and mark schemes.
-    Such specialists are fewer, so we often match them online rather than settle for a near-miss in person.
+    Offered in parts of every city and concentrated in a few. IB grades combine exams with internal assessment, which
+    a tutor may guide but never write. IGCSE rewards exam craft: command words, the right tier, past papers marked
+    against the official scheme. Specialists are fewer, so online lessons often widen the choice.
+  </p>
+      </div>
+      <div class="nx-guide__card">
+  <h3>HBSE in Haryana</h3>
+  <p>
+    In Gurugram and Faridabad some schools follow the Board of School Education Haryana, which sets its own papers
+    for Classes 10 and 12. Lessons may be in Hindi or English, so name the board and the medium when you ask for a
+    tutor.
+  </p>
+      </div>
+      <div class="nx-guide__card">
+  <h3>UP Board in Uttar Pradesh</h3>
+  <p>
+    Noida, Greater Noida and Ghaziabad have schools under UPMSP, whose students sit the High School and Intermediate
+    exams. Much of the content overlaps with NCERT, but question style and medium can differ, so we match on both.
   </p>
       </div>
     </div>
@@ -189,187 +324,145 @@
   <h2 id="dl-classes">What each stage of school needs</h2>
     <div class="nx-guide__cards">
       <div class="nx-guide__card">
-  <h3>Nursery to Class 5: early foundations</h3>
+  <h3>Nursery to Class 5: habits first</h3>
   <p>
-    Delhi's nursery and entry-level admissions put many families through a stressful season before the child has
-    even started school. Once they are in, what young children need is not drilling but steady foundations: reading
-    fluency in English and Hindi, number sense, handwriting and the habit of sitting with a task. A short, regular
-    session two or three times a week with a warm, patient tutor does more than long weekend marathons.
+    Young children gain most from calm, regular help rather than drilling: reading with understanding in English and
+    Hindi, a feel for numbers, neat handwriting and the ability to stay with a task for twenty minutes. Two or three
+    short lessons a week with a patient tutor at home do more than one long weekend session.
   </p>
       </div>
       <div class="nx-guide__card">
-  <h3>Classes 6 to 8: building the base</h3>
+  <h3>Classes 6 to 8: closing gaps early</h3>
   <p>
-    These years set up everything that follows. Fractions, integers, early algebra and basic geometry in Maths;
-    reading a diagram and explaining a process in Science; and grammar in English, Hindi and Sanskrit, which many
-    Delhi schools teach as a third language. A tutor's job here is to catch shaky topics before they become gaps.
+    These are the years when later trouble starts quietly: fractions, negative numbers and the first algebra in Maths,
+    reading a labelled diagram in Science, and grammar in English, Hindi and a third language such as Sanskrit. A good
+    tutor spots the weak chapter now, while fixing it takes weeks rather than a whole term.
   </p>
       </div>
       <div class="nx-guide__card">
-  <h3>Classes 9 and 10: the board years begin</h3>
+  <h3>Classes 9 and 10: the first board cycle</h3>
   <p>
-    Board results carry real weight in Delhi homes. Relatives ask, schools publish toppers, and the Class 10 score
-    affects which stream a student gets in Class 11 in some schools. That pressure is best handled with a plan: finish
-    Class 9 properly, since much of Class 10 builds on it, then in Class 10 move from teaching to chapter tests to full
-    papers, leaving the last months for revision. Our guide to
-    <a href="{{ url('/blog/cbse-class-10-maths-preparation') }}">CBSE Class 10 Maths preparation</a> sets out one
+    Treat Class 9 as a real year, not a warm-up, because much of the Class 10 paper leans on it. In Class 10 the rhythm
+    shifts from teaching to chapter tests to full papers, with the last months kept for revision. Our
+    <a href="{{ url('/blog/cbse-class-10-maths-preparation') }}">CBSE Class 10 Maths preparation</a> guide lays out one
     such plan.
   </p>
       </div>
       <div class="nx-guide__card">
-  <h3>Classes 11 and 12: stream choice and dual goals</h3>
+  <h3>Classes 11 and 12: streams, coaching and entrance exams</h3>
   <p>
-    The stream decision (Science with Maths or Biology, Commerce, or Humanities) is often made within weeks of the
-    Class 10 result. A tutor can help by showing the student what Class 11 Physics or Accountancy actually feels like
-    first; see <a href="{{ url('/blog/how-to-choose-boardstream') }}">choosing a board and stream</a>. Class 11 is then
-    the year students most often underestimate, and much of the JEE and NEET syllabus comes from it. In Class 12 the
-    student is aiming at the board result and an entrance exam at once, so subject specialists work better than one
-    all-rounder. For Physics, see our <a href="{{ url('/blog/cbse-class-12-physics-strategies') }}">CBSE Class 12
-    Physics strategies</a>.
+    The stream decision often comes within weeks of the Class 10 result; see
+    <a href="{{ url('/blog/how-to-choose-boardstream') }}">choosing a board and stream</a>. Class 11 is the year most
+    often underrated, though Class 12 and much of the JEE and NEET syllabi stand on it; one specialist per subject
+    usually beats an all-rounder. Alongside coaching, a home tutor helps most by clearing doubts from the coaching
+    sheets, lifting the one weak subject and keeping boards in the plan. Students aiming at central universities,
+    several of them in Delhi, also sit CUET UG, conducted by NTA. Useful reading: <a href="{{ url('/blog/cbse-class-12-physics-strategies') }}">Class 12
+    Physics strategies</a>, the <a href="{{ url('/blog/jee-physics-topicwise-prep') }}">topic-wise JEE Physics
+    guide</a> and our
+    <a href="{{ url('/blog/cuet-preparation-2025-complete-ug-subject-strategies-syllabus-tips-pyqs-and-checklist') }}">CUET
+    preparation guide</a>.
   </p>
       </div>
     </div>
   </section>
 
   <section class="nx-guide__sec">
-  <h2 id="dl-entrance">JEE, NEET and CUET alongside coaching</h2>
+  <h2 id="dl-fees">What tuition costs in NCR, and why</h2>
   <p>
-    Delhi has long been one of India's coaching capitals. Whole neighbourhoods, such as the belt around Kalu Sarai in
-    South Delhi, are known for entrance-exam institutes, and many students in Noida and Ghaziabad travel to coaching
-    centres or join their local branches. A home tutor does not replace that. Where a tutor helps is in the gaps
-    coaching leaves:
+    Across NXTutors, most home-tuition sessions fall between ₹800 and ₹2,500 an hour; Classes 11–12, IB/IGCSE and
+    JEE/NEET sit toward the upper end; specialists for IB HL or JEE Advanced can charge more. Tutors set their own fee,
+    and you see each tutor's fee before the demo. Within that range, a quote moves with:
   </p>
   <ul>
-    <li><strong>Doubts that never get asked.</strong> In a batch of a hundred, a quiet student rarely raises a hand. A tutor working through the student's own coaching sheets and marked tests catches what was skipped and separates careless errors from real gaps.</li>
-    <li><strong>The weak subject.</strong> Many aspirants are comfortable in two subjects and losing marks in the third. Focused one-to-one time on that subject is often the best use of a limited budget. Our <a href="{{ url('/blog/jee-physics-topicwise-prep') }}">topic-wise JEE Physics guide</a> may help you plan.</li>
-    <li><strong>Boards and entrance together.</strong> Much of the NCERT content serves both, and a tutor can plan the year so that board preparation is not squeezed out.</li>
+    <li><strong>Stage.</strong> Primary and middle-school lessons cost less than senior-class work.</li>
+    <li><strong>Board.</strong> International-board specialists are scarcer and usually charge more for the same class.</li>
+    <li><strong>Goal.</strong> Homework support is a different job from entrance-exam problem sets.</li>
+    <li><strong>Journey.</strong> A tutor crossing a river, a canal or a state border at peak hour may build that time into the fee; one from your own sector often will not.</li>
+    <li><strong>Frequency and mode.</strong> Some tutors quote less per hour for three or more lessons a week, and online lessons remove travel from the equation.</li>
   </ul>
   <p>
-    JEE Main is held in two sessions early in the year, with JEE Advanced later for those who qualify. NEET UG is
-    usually held in May, and its Biology section rewards very close NCERT reading.
-  </p>
-  <p>
-    <strong>CUET</strong> matters especially in Delhi, because admission to Delhi University's undergraduate courses
-    runs through it. CUET UG is usually held in May and June, just after the boards. Students need to choose their
-    domain subjects to match the courses they want, keep up practice in the language and general test sections, and
-    revise Class 12 content quickly in a multiple-choice format. A tutor can help with the subjects and the timing.
-    Our <a href="{{ url('/blog/cuet-preparation-2025-complete-ug-subject-strategies-syllabus-tips-pyqs-and-checklist') }}">CUET
-    preparation guide</a> covers subject choice and practice in detail.
+    The <a href="{{ url('/pricing-guide') }}">pricing guide</a> breaks this down by class and subject, and each city
+    has its own fee guide:
+    <a href="{{ url('/blog/home-tuition-fees-delhi') }}">Delhi</a>,
+    <a href="{{ url('/blog/home-tuition-fees-gurgaon') }}">Gurugram</a>,
+    <a href="{{ url('/blog/home-tuition-fees-noida') }}">Noida</a>,
+    <a href="{{ url('/blog/home-tuition-fees-greater-noida') }}">Greater Noida</a>,
+    <a href="{{ url('/blog/home-tuition-fees-ghaziabad') }}">Ghaziabad</a> and
+    <a href="{{ url('/blog/home-tuition-fees-faridabad') }}">Faridabad</a>.
   </p>
   </section>
 
   <section class="nx-guide__sec">
-  <h2 id="dl-subjects">Subjects Delhi NCR families ask for</h2>
-  <p>
-    Maths and Science lead in every zone, followed by the commerce subjects (Accountancy, Economics and Business
-    Studies), English, and Computer Science. A few Delhi-specific patterns:
-  </p>
-  <ul>
-    <li><strong>Hindi and Sanskrit.</strong> Both are widely taught in Delhi schools, and Sanskrit in particular is a subject where parents cannot always help at home. We have tutors for grammar, literature and board-paper practice.</li>
-    <li><strong>Commerce with Maths.</strong> Many Delhi students take Maths alongside Commerce, often with an eye on economics or finance courses through CUET. Applied Maths and Class 11 Accountancy are frequent requests.</li>
-    <li><strong>Humanities.</strong> Political Science, History, Geography and Psychology are popular in Delhi, and CUET makes them count for university admission. Writing structured answers is the main skill tutors work on.</li>
-  </ul>
-  </section>
-
-  <section class="nx-guide__sec">
-  <h2 id="dl-mode">Home tuition or online in Delhi NCR?</h2>
-  <p>
-    Both work, and the right answer often changes with the season. Home tuition suits younger children and
-    hand-written working; online widens the choice of tutor and removes travel.
-  </p>
-  <p>Two things push many Delhi NCR families towards a mix:</p>
-  <ul>
-    <li><strong>Winter smog.</strong> In recent winters, air quality in Delhi NCR has at times turned severe enough for schools to close or move classes online, often during the weeks before pre-boards. An arrangement where the tutor can move online without losing the slot means those days are not wasted, and nobody has to travel through the haze.</li>
-    <li><strong>Distance and the Metro.</strong> Many tutors travel by Metro. The Blue Line runs from Dwarka through central Delhi to Noida and Vaishali, and the Aqua Line continues into Greater Noida, so a tutor near a station on your line may reach you faster than one closer by road. Where the trip is still long, one home visit a week plus online sessions often works best.</li>
-  </ul>
-  <p>
-    We can set up home, online or hybrid tuition with the same tutor. For a fuller comparison, read
-    <a href="{{ url('/blog/online-vs-offline-tutoring') }}">online versus offline tutoring</a>.
-  </p>
-  </section>
-
-  <section class="nx-guide__sec">
-  <h2 id="dl-fees">What tuition costs, and why</h2>
-  <p>
-    Across NXTutors, most sessions cost between <strong>₹800 and ₹2,500 an hour</strong>. In Delhi NCR, these are
-    the things that move a quote up or down:
-  </p>
-  <ul>
-    <li><strong>The stage.</strong> Primary and middle-school sessions sit at the lower end; Class 11 and 12 and entrance-focused sessions sit higher.</li>
-    <li><strong>The board.</strong> IB and IGCSE specialists are fewer and usually charge more than CBSE tutors at the same level.</li>
-    <li><strong>The goal.</strong> Helping with homework costs less than a tutor who is building a JEE Advanced problem set or planning a CUET subject strategy.</li>
-    <li><strong>The commute.</strong> A tutor crossing the Yamuna or a state border in the evening rush builds that time into the fee. One in your own block or sector often will not.</li>
-    <li><strong>How often.</strong> Many tutors reduce the hourly rate for three or more sessions a week, and online sessions can cost less because there is no travel.</li>
-  </ul>
-  <p>
-    You see each tutor's fee before the demo, and we only shortlist within your budget. Our
-    <a href="{{ url('/pricing-guide') }}">pricing guide</a> breaks this down further by class and subject.
-  </p>
-  </section>
-
-  <section class="nx-guide__sec">
-  <h2 id="dl-choose">How to judge a tutor in the first week</h2>
-  <p>Qualifications on a profile tell you a little. The demo and the first few sessions tell you much more. Watch for:</p>
+  <h2 id="dl-choose">Choosing a tutor at the demo</h2>
+  <p>A profile shows qualifications; the free demo shows teaching. While it runs, and afterwards, notice:</p>
   <ol>
-    <li><strong>Diagnosis before teaching.</strong> Did the tutor check what the student already knows, perhaps with a few quick questions, before explaining anything?</li>
-    <li><strong>Hands on the pencil.</strong> Was the student solving and speaking for a good part of the hour, or just nodding along?</li>
-    <li><strong>Knowledge of the paper.</strong> Can the tutor tell you how this year's board or entrance paper is structured and how marks are given?</li>
-    <li><strong>Respect for the coaching schedule.</strong> If your child has coaching, did the tutor ask about it and offer to work with it?</li>
-    <li><strong>A plan you can check.</strong> Did the tutor say what they will cover in the next four weeks and how you will know it is working?</li>
-    <li><strong>Your child's verdict.</strong> Ask them privately whether they could ask this person a "silly" question. If not, keep looking.</li>
+    <li><strong>Questions before explanations.</strong> Did the tutor find out what the student already knows before starting to teach?</li>
+    <li><strong>Who did the work.</strong> Was the student writing, solving and talking for much of the hour, or mainly listening?</li>
+    <li><strong>The current paper.</strong> Can the tutor describe how this year's board or entrance paper is set and marked?</li>
+    <li><strong>The journey.</strong> For home lessons, ask where the tutor will set out from and how they travel at that hour. A tutor who cannot keep the slot in week three is no help.</li>
+    <li><strong>A plan.</strong> Did they say what the next four weeks will cover and how you will see progress?</li>
+    <li><strong>Your child's view.</strong> Ask privately whether they would feel comfortable asking this person a basic question.</li>
   </ol>
   <p>
-    If several answers are no, tell us and we arrange a demo with the next tutor. Give a new tutor six to eight weeks
-    before judging results.
+    If several answers are no, tell us and the next tutor on your list gets a demo. Once you choose, allow six to eight
+    weeks before judging results. Our <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class
+    checklist</a> has more to look for.
   </p>
   </section>
 
   <section class="nx-guide__sec">
-  <h2 id="dl-safety">Safety and verification</h2>
+  <h2 id="dl-safety">Safety at home</h2>
   <p>
-    Every tutor on NXTutors is ID-verified and goes through a profile check before being shortlisted, and we keep
-    tracking reviews and reliability for as long as they teach with us. In Delhi NCR's gated societies and RWA-managed
-    colonies, a few habits make home tuition smoother and safer:
+    Whichever tutor you choose, a few household habits keep home lessons safe, calm and on time:
   </p>
   <ul>
-    <li>Register the tutor at the society gate or in your visitor-management app, so every entry is logged and the guard is not calling you at the start of every session.</li>
-    <li>If your society limits evening visitor hours, tell us when you book so the slot fits.</li>
-    <li>Keep an adult at home during sessions with younger children, and use a common room.</li>
-    <li>If anything about a tutor's conduct worries you, contact us directly. We act on it the same day.</li>
+    <li>Plan lessons for times when an adult is at home, particularly with younger children.</li>
+    <li>Hold the class in a shared room, such as the living or dining area, rather than a bedroom, with the door open.</li>
+    <li>In a gated society, add the tutor to the visitor app or the gate register once, so every entry is logged and the first lesson does not start with a phone call from the guard.</li>
+    <li>Before the first visit, send the tower and flat, or the block, house number and a landmark, and check any evening visitor limits your society sets.</li>
+    <li>For online lessons, let the child join from a shared space and keep the meeting link with a parent.</li>
+    <li>Talk to your child after the first few lessons about how they felt. If anything about a tutor's conduct worries you, stop the lessons and contact us.</li>
   </ul>
   </section>
 
   <section class="nx-guide__sec">
-  <h2 id="dl-calendar">Planning around the Delhi NCR school year</h2>
-  <p>Most schools in the region begin their session in April. For a student facing boards, the year usually runs like this:</p>
+  <h2 id="dl-calendar">Planning around the NCR school year</h2>
+  <p>Most schools across the six cities start their session in April. For a student facing boards, a typical year runs:</p>
   <ul>
-    <li><strong>April to June:</strong> the best time to start. The new syllabus is only beginning, and the long summer break, which Delhi's heat makes a stay-at-home season anyway, is ideal for fixing old gaps.</li>
-    <li><strong>July to September:</strong> steady teaching alongside school, with chapter tests before mid-term exams.</li>
-    <li><strong>October to December:</strong> finishing the syllabus. This is also when smog can disrupt school, so it helps to have online sessions ready. Many schools hold pre-boards from December into January.</li>
-    <li><strong>January to March:</strong> full papers and revision, with CBSE board exams from February and JEE Main's first session early in the year.</li>
-    <li><strong>April to June:</strong> JEE Main's second session, JEE Advanced, NEET UG usually in May, and CUET UG usually in May and June.</li>
+    <li><strong>April to June:</strong> a strong time to begin. The new syllabus is only starting, and the long, hot summer break leaves room to repair old gaps.</li>
+    <li><strong>July to September:</strong> steady teaching alongside school, with chapter tests before the mid-term exams.</li>
+    <li><strong>October to December:</strong> completing the syllabus. Many schools hold pre-boards around the turn of the year, and winter air can disrupt school, so keep the online fallback ready.</li>
+    <li><strong>January to March:</strong> full papers and revision. CBSE and CISCE board exams begin in February, state boards publish their own timetables, and JEE Main's first session usually falls early in the year.</li>
+    <li><strong>April to June:</strong> JEE Main's second session, JEE Advanced, NEET UG, CUET UG and the May sessions for IB and Cambridge students.</li>
   </ul>
   <p>
-    Starting in April gives a tutor the whole year; starting in November shifts the work towards practice.
+    Dates change each year, so check the official notices. Starting in April gives a tutor the whole year; starting in
+    November shifts the work towards practice papers.
   </p>
   </section>
 
   <section class="nx-guide__sec">
   <h2 id="dl-start">Getting started</h2>
   <p>
-    Tell us the student's class, board and subjects, your colony, sector or society, and the times that suit you. We
-    reply with two or three matched tutors, you pick one for a free demo class, and you decide after that. You can
-    browse <a href="{{ url('/tutors') }}">all tutors</a> or go straight to a
-    <a href="{{ url('/demo-class') }}">free demo class</a>. Our office is in Sector 66, Gurugram, so the whole of NCR
-    is home ground for us.
+    Pick your city page and send one request; we reply with two or three matched tutors, and you choose one for a free
+    demo class. You can also browse <a href="{{ url('/tutors') }}">all tutors</a> or book a <a href="{{ url('/demo-class') }}">free demo
+    class</a> straight away. Our office is in Sector 66, Gurugram, and home tutoring covers the NCR cities where our
+    tutors live, with online tutoring available across India.
+  </p>
+  <p>
+    City pages: <a href="{{ url('/city/delhi') }}">Delhi</a> ·
+    <a href="{{ url('/city/gurugram') }}">Gurugram</a> ·
+    <a href="{{ url('/city/noida') }}">Noida</a> ·
+    <a href="{{ url('/city/greater-noida') }}">Greater Noida</a> ·
+    <a href="{{ url('/city/ghaziabad') }}">Ghaziabad</a> ·
+    <a href="{{ url('/city/faridabad') }}">Faridabad</a>.
   </p>
   <p class="dl-note">
-    Living in Haryana's side of NCR? We have separate guides for
-    <a href="{{ url('/city/gurugram') }}">Gurugram</a> and <a href="{{ url('/city/faridabad') }}">Faridabad</a>, and
-    tutors in <a href="{{ url('/city') }}">cities across India</a>.
+    Are you a tutor? See home tuition jobs in <a href="{{ url('/tuition-jobs/state/delhi') }}">Delhi</a>,
+    <a href="{{ url('/tuition-jobs/state/haryana') }}">Haryana</a> (Gurugram and Faridabad) and
+    <a href="{{ url('/tuition-jobs/state/uttar-pradesh') }}">Uttar Pradesh</a> (Noida, Greater Noida and Ghaziabad).
   </p>
   </section>
 
   </div>
 </article>
-
