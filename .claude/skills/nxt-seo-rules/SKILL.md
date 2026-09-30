@@ -52,6 +52,7 @@ Padding to reach a floor is a breach; add a real module instead (see `nxt-locati
 - Sitemaps: `sitemap.xml` index → per-section files, **`sitemap-areas-{city}.xml` per city**, **`sitemap-blog-{topic}.xml` per topic**. Never a lastmod of "today" without a real change. Noindexed pages never in a sitemap.
 
 ## 6. How work ships
+- **Column lengths (outage 30 Sep 2026, ~20 min):** tests run on SQLite, which ignores VARCHAR limits; production MySQL does not. A too-long string makes the migration fail mid-deploy, the post-migrate steps never run and the whole site returns 500. Keep inserted strings under the column limit: `city_managment.city_desc`, `meta_title`, `meta_desc` and most short text columns are VARCHAR(255); long text goes in TEXT columns (`area_desc`, `bdesc`, FAQ answers). If unsure, `mb_substr($x, 0, 250)`. After any failed deploy, check the live site at once and fix forward.
 - Production DB changes only by migration (in `database/migrations/seo`, run by the deploy) **with a working down()**; never edit prod by hand; never ask for the CloudPanel password.
 - Commit as `ajayvatsyayanseo-commits <ajayvatsyayanseo@gmail.com>`; tests (`php artisan test`) must pass; after deploy, verify live with curl (status, title, robots, key blocks).
 - Blog bodies: `database/seo-content/blog/{slug}.html` + `.json`, covers `public/storage/blog/{slug}.jpg`, published by migration.
