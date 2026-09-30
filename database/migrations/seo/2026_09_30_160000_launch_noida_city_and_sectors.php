@@ -35,7 +35,8 @@ return new class extends Migration
             $cityId = DB::table('city_managment')->insertGetId(array_intersect_key([
                 'city_name' => 'Noida',
                 'slug' => 'noida',
-                'city_desc' => 'Home and online tutors across Noida, from the older sectors around Sector 18 and the Botanical Garden to the Sector 62 belt, the Aqua Line sectors and the societies along the Noida Expressway. CBSE, ICSE, IB and IGCSE, Classes 1–12, JEE and NEET, with a free demo class.',
+                // city_desc is VARCHAR(255) in production: keep it short.
+                'city_desc' => 'Home and online tutors across Noida, from Old Noida to the Sector 62 belt and the Noida Expressway: CBSE, ICSE, IB and IGCSE, Classes 1–12, JEE and NEET. Free demo class.',
                 'meta_title' => 'Home Tutors in Noida – CBSE, ICSE, IB, JEE | NXTutors',
                 'meta_desc' => 'Home tutors in Noida for Classes 1–12, CBSE, ICSE, IB, IGCSE, JEE and NEET, sector by sector from Old Noida to the Expressway. See fees and book a free demo.',
                 'avatar' => '',
