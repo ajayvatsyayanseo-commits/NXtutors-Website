@@ -255,6 +255,19 @@ class GeoStructureTest extends TestCase
         $this->assertSame('', DB::table('city_area_list_managment')->where('slug', 'sector-14')->value('area_desc'));
     }
 
+    public function test_new_area_faqs_are_added_once_where_none_exist_and_rolled_back(): void
+    {
+        DB::table('city_area_list_managment')->insert(['city_id' => 1, 'name' => 'Palam Vihar', 'slug' => 'palam-vihar', 'main_title' => 'x']);
+        $m = require database_path('migrations/seo/2026_09_30_150000_faqs_for_new_gurugram_areas.php');
+        $m->up();
+        $m->up();
+        $id = DB::table('city_area_list_managment')->where('slug', 'palam-vihar')->value('id');
+        $this->assertSame(4, DB::table('city_area_related_faqs_managment')->where('area_id', $id)->count());
+        $this->get('/city/gurugram/palam-vihar')->assertOk()->assertSee('"@type":"FAQPage"', false);
+        $m->down();
+        $this->assertSame(0, DB::table('city_area_related_faqs_managment')->where('area_id', $id)->count());
+    }
+
     public function test_city_names_map_to_city_pages_whatever_the_spelling(): void
     {
         $this->assertSame('gurugram', Geo::slugFor('Gurgaon'));
