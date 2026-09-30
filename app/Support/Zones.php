@@ -3,7 +3,9 @@
 namespace App\Support;
 
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 use Throwable;
 
 /**
@@ -91,6 +93,51 @@ class Zones
         }
 
         return preg_match('/^sector\s*\d{1,3}[a-z]?$/', $k) ? 'Gurugram' : null;
+    }
+
+    /** A zone's URL slug: "MG Road & Cyber City" -> "mg-road-cyber-city". */
+    public static function slug(string $zone): string
+    {
+        return Str::slug(str_replace(['–', '—'], '-', $zone));
+    }
+
+    /** The zone of a city (page slug or name) whose slug this is, or null. */
+    public static function fromSlug(?string $city, string $slug): ?string
+    {
+        foreach (array_keys(config('zones.' . self::cityKey($city), [])) as $zone) {
+            if (self::slug((string) $zone) === $slug) {
+                return (string) $zone;
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * Active area pages of a city whose zone is this one, the same way an
+     * area page finds its zone (CityHub::zoneOfArea: its name, else its
+     * sector in config/area_sectors.php), sorted by name.
+     *
+     * @return Collection<int, object{name:string, slug:string, pincode:string}>
+     */
+    public static function areasIn(string $citySlug, string $zone): Collection
+    {
+        // Grouped once per city (the hub and sitemap ask for every zone).
+        $byZone = Cache::remember('zones.areasin.v1.' . $citySlug, 3600, function () use ($citySlug) {
+            $cityName = self::cityKey($citySlug);
+            $out = [];
+            foreach (CityHub::areaList($citySlug)->unique('slug') as $a) {
+                if (($z = CityHub::zoneOfArea($citySlug, $cityName, $a)) !== null) {
+                    $out[$z][] = $a;
+                }
+            }
+
+            return $out;
+        });
+
+        return collect($byZone[$zone] ?? [])
+            ->sortBy(fn ($a) => CityHub::cleanAreaName($a->name, $a->slug), SORT_NATURAL | SORT_FLAG_CASE)
+            ->values();
     }
 
     public static function cityKey(?string $city): string

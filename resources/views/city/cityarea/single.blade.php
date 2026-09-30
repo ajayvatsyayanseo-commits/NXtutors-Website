@@ -53,7 +53,9 @@
     $avg = (float)($area->average_rating ?? 0);
     $countReviews = (int)($activeReviews->count());
 
-    if($countReviews > 0 && $avg > 0){
+    // Off: star ratings on a Place are not eligible for review snippets and
+    // read as self-served reviews (Google review-snippet guidelines).
+    if(false && $countReviews > 0 && $avg > 0){
       $placeSchema["aggregateRating"] = [
         "@type" => "AggregateRating",
         "ratingValue" => number_format($avg, 1, '.', ''),

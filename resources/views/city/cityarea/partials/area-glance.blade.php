@@ -31,7 +31,7 @@
   <div class="nx-table-wrap">
     <table class="nx-table">
       <tbody>
-        @if($glance['zone'])<tr><th scope="row">Zone</th><td>{{ $glance['zone'] }}, {{ $gCity }}</td></tr>@endif
+        @if($glance['zone'])<tr><th scope="row">Zone</th><td>@if(!empty($zoneUrl))<a href="{{ $zoneUrl }}">{{ $glance['zone'] }}</a>@else{{ $glance['zone'] }}@endif, {{ $gCity }}</td></tr>@endif
         @if($glance['sector'])<tr><th scope="row">Sector</th><td>{{ $glance['sector'] }}</td></tr>@endif
         @if($glance['pincode'] !== '')<tr><th scope="row">PIN code</th><td>{{ $glance['pincode'] }}</td></tr>@endif
         @if($glance['neighbours']->isNotEmpty())

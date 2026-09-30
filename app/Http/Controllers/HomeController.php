@@ -135,7 +135,7 @@ class HomeController extends Controller
  * Sitemap index (/sitemap.xml) and one sitemap per section
  * (/sitemap-{section}.xml), so Search Console reports indexing per section.
  */
-public const SITEMAP_SECTIONS = ['pages', 'subjects', 'cities', 'areas', 'blog', 'local-pages', 'courses', 'tutors'];
+public const SITEMAP_SECTIONS = ['pages', 'subjects', 'cities', 'areas', 'blog', 'local-pages', 'courses', 'tutors', 'zones'];
 
 public function sitemap()
 {
@@ -146,8 +146,12 @@ public function sitemap()
     // no single file grows past the 50,000-URL limit as cities are added.
     // The combined sitemap-areas.xml and sitemap-blog.xml still answer, but
     // are no longer listed.
-    $sections = array_values(array_diff(self::SITEMAP_SECTIONS, ['areas', 'blog']));
+    $sections = array_values(array_diff(self::SITEMAP_SECTIONS, ['areas', 'blog', 'zones']));
     $maps = array_map(fn ($s) => $baseUrl . '/sitemap-' . $s . '.xml', $sections);
+    // Zone pages only once at least one passes the ZonePages gate.
+    if ($this->zoneSitemapUrls($baseUrl) !== []) {
+        $maps[] = $baseUrl . '/sitemap-zones.xml';
+    }
 
     $citySlugs = City::where('status', 't')->whereNotNull('slug')->where('slug', '!=', '')
         ->whereIn('id', City_area::where('status', 't')->whereNotNull('slug')->where('slug', '!=', '')->select('city_id'))
@@ -215,6 +219,27 @@ private function areaSitemapUrls(?int $cityId, string $baseUrl): array
                 ];
             }
         });
+
+    return array_values($urls);
+}
+
+/**
+ * Live zone pages (App\Support\ZonePages gate), each once, lastmod from the
+ * city's zone JSON file (the only thing that changes the page's own text).
+ *
+ * @return list<array{loc: string, lastmod: ?string, priority: string, changefreq: string}>
+ */
+private function zoneSitemapUrls(string $baseUrl): array
+{
+    $urls = [];
+    $slugs = City::where('status', 't')->whereNotNull('slug')->where('slug', '!=', '')->orderBy('slug')->pluck('slug')->unique();
+    foreach ($slugs as $slug) {
+        $lastmod = \App\Support\ZonePages::lastmod($slug);
+        foreach (\App\Support\ZonePages::live($slug) as $z) {
+            $loc = $baseUrl . '/city/' . $slug . '/zone/' . $z->slug;
+            $urls[$loc] ??= ['loc' => $loc, 'lastmod' => $lastmod, 'priority' => '0.8', 'changefreq' => 'monthly'];
+        }
+    }
 
     return array_values($urls);
 }
@@ -342,6 +367,11 @@ public function sitemapSection(string $section)
 
     case 'areas':
         $urls = $this->areaSitemapUrls(null, $baseUrl);
+        break;
+
+    case 'zones':
+        $urls = $this->zoneSitemapUrls($baseUrl);
+        abort_if($urls === [], 404);
         break;
 
 
@@ -1160,8 +1190,11 @@ private function baseTeacherQuery()
     $hubGuides  = \App\Support\CityHub::guides($allAreas->pluck('slug')->map(fn ($s) => trim($s, '-'))->all(), 6,
         array_values(array_filter([$city->slug, strtolower((string) \App\Support\Geo::akaOf($city->slug))])));
 
+    // Live zone pages (App\Support\ZonePages) as a "Browse by zone" chip list.
+    $hubZones   = \App\Support\ZonePages::live($city->slug);
+
     return view('city.show', compact('city','areas','allAreas','metatitle','metakey','metadesc',
-        'hubPages','hubTracks','hubTutors','hubCounts','hubState','hubNearby','hubOthers','hubGuides'));
+        'hubPages','hubTracks','hubTutors','hubCounts','hubState','hubNearby','hubOthers','hubGuides','hubZones'));
 }
 
 
@@ -1266,6 +1299,9 @@ public function cityAreaShow($citySlug, $areaSlug)
         $zoneGuide['live'] = ! empty($zoneGuide['guide']) && Blog::where('status', 't')->where('slug', $zoneGuide['guide'])->exists();
     }
 
+    // The zone's own page, when it passes the ZonePages gate.
+    $zoneUrl = \App\Support\ZonePages::liveUrl($city->slug, $zoneName);
+
     // Anonymised recent requests near this area (App\Support\AreaDemand).
     $areaDemand = \App\Support\AreaDemand::recentFor($city->city_name, $areaName, $zoneName);
 
@@ -1307,7 +1343,7 @@ public function cityAreaShow($citySlug, $areaSlug)
             $metakey = '';
             $metadesc = $city->meta_desc;
 
-    return view('city.cityarea.single', compact('city', 'area','relatedAreas','tutors','tutorScope','metatitle','metakey','metadesc','areaPages','areaGuides','areaState','areaSeo','zoneName','zoneGuide','zoneAreas','areaDemand','tutorCards','glance','neighbours'));
+    return view('city.cityarea.single', compact('city', 'area','relatedAreas','tutors','tutorScope','metatitle','metakey','metadesc','areaPages','areaGuides','areaState','areaSeo','zoneName','zoneGuide','zoneAreas','areaDemand','tutorCards','glance','neighbours','zoneUrl'));
 }
    public function contactpage()
     {

@@ -184,6 +184,16 @@
       </section>
     @endif
 
+    {{-- Zone pages that pass the ZonePages gate (written text + 3 areas). --}}
+    @if(isset($hubZones) && $hubZones->count())
+      <section class="nx-sec" aria-labelledby="byZoneTitle">
+        <div class="nx-sec__head"><h2 class="nx-sec__title" id="byZoneTitle">Browse by zone</h2></div>
+        <ul class="nx-chips nx-chips--rail">
+          @foreach($hubZones as $z)<li><a class="nx-chip" href="{{ $z->url }}">{{ $z->name }}</a></li>@endforeach
+        </ul>
+      </section>
+    @endif
+
     {{-- Areas: search + cards (nine, more by AJAX), then every area as a
          chip. The first chips show; the rest sit in "Show all", still in the
          HTML, because the cards' AJAX is not something search engines click. --}}

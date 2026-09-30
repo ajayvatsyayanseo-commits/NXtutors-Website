@@ -32,6 +32,10 @@
 
   {{-- Neighbouring areas are listed once, in the "More areas" section. --}}
 
+  @if(!empty($zoneUrl))
+    <p class="nxzone__more"><a href="{{ $zoneUrl }}">Home tutors across {{ $zoneName }} →</a></p>
+  @endif
+
   <p class="nxzone__more">
     See all areas and our full guide for <a href="{{ url('/city/'.$city->slug) }}">home tutors in {{ $city->city_name }}</a>.
   </p>

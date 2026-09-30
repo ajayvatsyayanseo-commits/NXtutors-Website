@@ -74,6 +74,22 @@ class AreaDemand
         }
     }
 
+    /** Recent requests anywhere in one zone of a city, same safeguards (zone pages). */
+    public static function recentForZone(string $city, string $zone): ?array
+    {
+        try {
+            return Cache::remember('areademand.zone.v1.' . md5(mb_strtolower($city . '|' . $zone)), 21600, function () use ($city, $zone) {
+                if (! Schema::hasTable('demo_leads')) {
+                    return null;
+                }
+
+                return self::rows(self::leads()->filter(fn ($l) => Zones::of($city, (string) $l->location) === $zone), $zone, self::SHOW);
+            });
+        } catch (Throwable $e) {
+            return null;
+        }
+    }
+
     /** Recent requests anywhere in a city, same safeguards (for the tuition-jobs page). */
     public static function recentForCity(string $city): ?array
     {

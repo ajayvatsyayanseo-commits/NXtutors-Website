@@ -40,6 +40,20 @@ class TutorCascade
             ->filter()->values();
     }
 
+    /**
+     * Tutors for a zone page: those living in the zone or listing a place in
+     * it under "Areas I travel to" ("Covers {zone}"), then the rest of the
+     * cascade (city, NCR, state online, India online). Real before sample.
+     *
+     * @return Collection<int, array{tutor: Register, label: string, tier: int}>
+     */
+    public static function forZone(string $citySlug, string $cityName, string $zone, int $limit = self::LIMIT): Collection
+    {
+        return self::forArea($citySlug, $cityName, '', $zone, null, $limit)
+            ->map(fn ($c) => $c['tier'] === 3 ? ['label' => 'Covers ' . $zone] + $c : $c)
+            ->values();
+    }
+
     /** Every tutor with its tier and label for this area (no database access). */
     private static function rank(string $citySlug, string $cityName, string $areaName, ?string $zone, ?string $pincode): Collection
     {

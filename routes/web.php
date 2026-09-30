@@ -186,8 +186,12 @@ Route::get('/city', [HomeController::class, 'cityIndex'])->name('city.index');
 // "Gurgaon" is still what most parents type, and /city/gurgaon was a 404.
 Route::permanentRedirect('/city/gurgaon', '/city/gurugram');
 Route::permanentRedirect('/city/gurgaon/{areaSlug}', '/city/gurugram/{areaSlug}');
+Route::permanentRedirect('/city/gurgaon/zone/{zoneSlug}', '/city/gurugram/zone/{zoneSlug}');
 Route::get('/city/{slug}', [HomeController::class, 'cityShow'])->name('city.show');
 Route::get('/city/{slug}/areas/load', [HomeController::class, 'cityAreasLoad'])->name('city.areas.load');
+// Zone pages (ZonePages gate: written text + at least three area pages, else 404).
+Route::get('/city/{citySlug}/zone/{zoneSlug}', [\App\Http\Controllers\ZonePageController::class, 'show'])
+    ->where(['citySlug' => '[a-z0-9-]+', 'zoneSlug' => '[a-z0-9-]+'])->name('city.zone.show');
 Route::get('/city/{citySlug}/{areaSlug}', [HomeController::class, 'cityAreaShow'])
     ->name('city.area.show');
 
