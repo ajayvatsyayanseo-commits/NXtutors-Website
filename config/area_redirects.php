@@ -32,4 +32,11 @@ return [
         'ats-greens-1' => '/city/noida',
         'ats-green-valley-pockets' => '/city/noida',
     ],
+    // Gurugram societies that were filed under the wrong city (found 1 Oct 2026).
+    'kochi' => [
+        'ireo-skyon' => '/city/gurugram/ireo-skyon-towers-bd',
+    ],
+    'guwahati' => [
+        'mapsko-mountville' => '/city/gurugram',
+    ],
 ];

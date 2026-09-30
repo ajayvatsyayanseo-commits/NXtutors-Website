@@ -126,7 +126,31 @@ class SubjectPageController extends Controller
             ->filter(fn ($p, $k) => empty($p['parent']) && ($p['subject'] ?? null) !== ($page['subject'] ?? null) && view()->exists('subjects.content.' . $p['view']))
             ->map(fn ($p, $k) => ['url' => url('/' . $k), 'label' => $p['h1']]);
 
-        return ['family' => $family->values()->all(), 'subjects' => $otherSubjects->values()->all()];
+        // Same city: its other subject pages, then its published local guides
+        // (zone guides from config/zone_guides.php plus the fee post).
+        $city = [];
+        if (! empty($page['city_slug'])) {
+            $city = collect($pages)
+                ->filter(fn ($p, $k) => $k !== $key && ($p['city_slug'] ?? null) === $page['city_slug'] && view()->exists('subjects.content.' . $p['view']))
+                ->map(fn ($p, $k) => ['url' => url('/' . $k), 'label' => $p['h1']])
+                ->values()->all();
+            $slugs = collect(config('zone_guides.' . \App\Support\Zones::cityKey($page['city'] ?? ''), []))
+                ->pluck('guide')->filter()->unique()
+                ->prepend('home-tuition-fees-' . ($page['city_slug'] === 'gurugram' ? 'gurgaon' : $page['city_slug']))
+                ->values()->all();
+            try {
+                $titles = \Illuminate\Support\Facades\DB::table('blog_managment')->where('status', 't')->whereIn('slug', $slugs)->pluck('title', 'slug');
+            } catch (\Throwable $e) {
+                $titles = collect();
+            }
+            foreach ($slugs as $slug) {
+                if (isset($titles[$slug])) {
+                    $city[] = ['url' => url('/blog/' . $slug), 'label' => $titles[$slug]];
+                }
+            }
+        }
+
+        return ['family' => $family->values()->all(), 'subjects' => $otherSubjects->values()->all(), 'city' => $city];
     }
 
     /** Guides for this subject, newest first. */

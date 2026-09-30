@@ -142,6 +142,17 @@
       </section>
     @endif
 
+    @if(!empty($related['city']))
+      <section class="nx-sec" aria-labelledby="cityMoreTitle">
+        <div class="nx-sec__head">
+          <h2 class="nx-sec__title" id="cityMoreTitle">More for families in {{ $page['city'] }}</h2>
+        </div>
+        <ul class="nx-chips nx-chips--rail">
+          @foreach($related['city'] as $r)<li><a class="nx-chip" href="{{ $r['url'] }}">{{ $r['label'] }}</a></li>@endforeach
+        </ul>
+      </section>
+    @endif
+
     @include('subjects.content.' . $page['view'], ['page' => $page, 'allAreas' => $allAreas])
 
     @if(count($faqs))
