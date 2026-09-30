@@ -238,6 +238,23 @@ class GeoStructureTest extends TestCase
         $this->get('/sitemap-pages.xml')->assertSee('/tuition-jobs/gurugram', false);
     }
 
+    public function test_about_text_fills_only_empty_new_areas_and_rolls_back(): void
+    {
+        DB::table('city_area_list_managment')->insert([
+            ['city_id' => 1, 'name' => 'Sector 14', 'slug' => 'sector-14', 'main_title' => 'x', 'area_desc' => ''],
+            ['city_id' => 1, 'name' => 'Sector 15', 'slug' => 'sector-15', 'main_title' => 'x', 'area_desc' => '<p>Written in Super Admin</p>'],
+        ]);
+        $m = require database_path('migrations/seo/2026_09_30_140000_about_text_for_new_gurugram_areas.php');
+        $m->up();
+
+        $this->assertStringContainsString('Sector 14', (string) DB::table('city_area_list_managment')->where('slug', 'sector-14')->value('area_desc'));
+        $this->assertSame('<p>Written in Super Admin</p>', DB::table('city_area_list_managment')->where('slug', 'sector-15')->value('area_desc'));
+        $this->assertDoesNotMatchRegularExpression('/\d\s*km\b/', (string) DB::table('city_area_list_managment')->where('slug', 'sector-14')->value('area_desc'));
+
+        $m->down();
+        $this->assertSame('', DB::table('city_area_list_managment')->where('slug', 'sector-14')->value('area_desc'));
+    }
+
     public function test_city_names_map_to_city_pages_whatever_the_spelling(): void
     {
         $this->assertSame('gurugram', Geo::slugFor('Gurgaon'));

@@ -10,7 +10,10 @@
 
   {{-- One paragraph here (the same for every area in the zone); the area's
        own facts are in "at a glance" and the full text in the zone guide. --}}
-  @if(!empty($zoneGuide['intro'][0]))<p>{{ $zoneGuide['intro'][0] }}</p>@endif
+  {{-- When the zone's full guide is live, it carries the zone text; the page
+       keeps only the practical tips (identical zone text on every area page
+       made neighbouring pages look alike). --}}
+  @if(empty($zoneGuide['live']) && !empty($zoneGuide['intro'][0]))<p>{{ $zoneGuide['intro'][0] }}</p>@endif
 
   @if(!empty($zoneGuide['tips']))
     <h3 class="nxzone__h3">Before the first class</h3>

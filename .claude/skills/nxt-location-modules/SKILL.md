@@ -28,8 +28,10 @@ A page = the modules that are TRUE for it. Never include a module with placehold
 ## Rules
 - Only create area × subject pages where there is demand (GSC impressions or requests) **and** supply (≥1 real tutor living in/travelling to the area for that subject, or online tutors for it). Otherwise the area page + city×subject page already cover it.
 - Constant modules (fees, how NXTutors works) must stay short; the variable modules carry the length.
-- Similarity to any sibling page must be **≤ 40%** (run the check below). Above that, add a variable module or merge the pages.
+- **Content** similarity (site chrome excluded) to any sibling page must be **≤ 0.40** across zones and **≤ 0.50** between neighbours in the same zone (they legitimately share tutors and zone tips). Above that, add a variable module or merge the pages.
 - Titles/H1s: "{Subject} {Level} Tutor in {Area}, {City}"; never "best".
 
 ## Uniqueness check
-Run `python .claude/skills/nxt-location-modules/similarity.py URL1 URL2 [URL3 ...]` (live or local preview URLs). It strips scripts/styles/nav/footer, compares visible text pairwise and prints word counts and similarity. Target: every pair ≤ 0.40.
+Run `python .claude/skills/nxt-location-modules/similarity.py URL1 URL2 [URL3 ...]` (live or local preview URLs). It prints a **content** ratio (chrome removed: header, nav, footer, pop-up forms, Ask NXT AI panel, sitewide link rails) and a full-page ratio for reference. Judge by the content ratio.
+
+Baseline (30 Sep 2026, Gurugram): different zones 0.35–0.45; same-zone neighbours 0.55; new pages without "About" text worst.
