@@ -323,6 +323,28 @@ class GeoStructureTest extends TestCase
         $this->assertNull(DB::table('city_managment')->where('slug', 'greater-noida')->value('id'));
     }
 
+    public function test_ghaziabad_launches_split_by_the_hindon(): void
+    {
+        $launch = require database_path('migrations/seo/2026_10_01_100000_launch_ghaziabad_city_and_areas.php');
+        $launch->up();
+        $launch->up();
+
+        $this->assertSame('ghaziabad', Geo::slugFor('Indirapuram'));
+        $this->assertSame('ghaziabad', Geo::slugFor('Raj Nagar Extension'));
+        $this->assertSame('', Geo::slugFor('Vaishali'), 'also a district in Bihar');
+        $this->assertSame('Raj Nagar Extension & NH-9 Corridor', \App\Support\Zones::of('Ghaziabad', 'Raj Nagar Extension'));
+        $this->assertSame('Raj Nagar, Kavi Nagar & Old Ghaziabad', \App\Support\Zones::of('Ghaziabad', 'Raj Nagar'));
+        $this->assertSame('Indirapuram', \App\Support\Zones::of('Ghaziabad', 'Nyay Khand 2, Indirapuram'));
+
+        $id = DB::table('city_managment')->where('slug', 'ghaziabad')->value('id');
+        $this->assertGreaterThanOrEqual(70, DB::table('city_area_list_managment')->where('city_id', $id)->count());
+        $this->get('/city/ghaziabad/raj-nagar-extension')->assertOk()->assertSee('Raj Nagar Extension at a glance')->assertSee('Raj Nagar Extension is in the Raj Nagar Extension &amp; NH-9 Corridor part of Ghaziabad', false);
+        $this->get('/tuition-jobs/ghaziabad')->assertOk()->assertSee('Where in Ghaziabad tutors are needed');
+
+        $launch->down();
+        $this->assertNull(DB::table('city_managment')->where('slug', 'ghaziabad')->value('id'));
+    }
+
     public function test_city_names_map_to_city_pages_whatever_the_spelling(): void
     {
         $this->assertSame('gurugram', Geo::slugFor('Gurgaon'));

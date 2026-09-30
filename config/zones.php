@@ -109,4 +109,36 @@ return [
             'names' => ['omicron 1', 'omicron 1a', 'omicron 2', 'omicron 3', 'mu 1', 'mu 2', 'xu 1', 'xu 2', 'xu 3', 'surajpur'],
         ],
     ],
+    // Ghaziabad (30 Sep 2026), from database/seo-content/areas/ghaziabad-research.json.
+    // Order matters: "raj nagar extension" is matched before "raj nagar".
+    'Ghaziabad' => [
+        'Indirapuram' => [
+            'sectors' => [],
+            'names' => ['indirapuram', 'ahinsa khand', 'nyay khand', 'shakti khand', 'gyan khand', 'niti khand', 'abhay khand', 'vaibhav khand', 'kanawani', 'makanpur'],
+        ],
+        'Vaishali & Kaushambi' => [
+            'sectors' => [],
+            'names' => ['vaishali', 'kaushambi'],
+        ],
+        'Vasundhara' => [
+            'sectors' => [],
+            'names' => ['vasundhara'],
+        ],
+        'Sahibabad & Rajendra Nagar' => [
+            'sectors' => [],
+            'names' => ['rajendra nagar', 'shalimar garden', 'sahibabad', 'shyam park', 'pasonda', 'shaheed nagar', 'mohan nagar', 'garima garden', 'arthala', 'karhera'],
+        ],
+        'Surya Nagar & Ramprastha' => [
+            'sectors' => [],
+            'names' => ['surya nagar', 'ramprastha', 'brij vihar', 'chander nagar'],
+        ],
+        'Raj Nagar Extension & NH-9 Corridor' => [
+            'sectors' => [],
+            'names' => ['raj nagar extension', 'rajnagar extension', 'vijay nagar', 'pratap vihar', 'siddharth vihar', 'crossings republik', 'crossing republik'],
+        ],
+        'Raj Nagar, Kavi Nagar & Old Ghaziabad' => [
+            'sectors' => [],
+            'names' => ['raj nagar', 'rajnagar', 'kavi nagar', 'shastri nagar', 'nehru nagar', 'lohia nagar', 'patel nagar', 'sanjay nagar', 'govindpuram', 'nandgram', 'madhuban bapudham', 'ambedkar road'],
+        ],
+    ],
 ];
