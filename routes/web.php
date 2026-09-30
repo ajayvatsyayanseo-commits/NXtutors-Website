@@ -175,6 +175,8 @@ foreach (array_keys(config('subject_pages', [])) as $subjectPageKey) {
         ->name('subject.' . str_replace('/', '.', $subjectPageKey));
 }
 // Tutor-side city pages: where tutors are needed (TuitionJobsController).
+Route::get('/tuition-jobs', [\App\Http\Controllers\TuitionJobsController::class, 'india'])->name('tuition-jobs.india');
+Route::get('/tuition-jobs/state/{state}', [\App\Http\Controllers\TuitionJobsController::class, 'state'])->where('state', '[a-z0-9-]+')->name('tuition-jobs.state');
 Route::get('/tuition-jobs/{city}', [\App\Http\Controllers\TuitionJobsController::class, 'show'])->where('city', '[a-z0-9-]+')->name('tuition-jobs');
 Route::get('/become-a-tutor', [\App\Http\Controllers\BecomeTutorController::class, 'show'])->name('become-tutor');
 Route::get('/authors', [\App\Http\Controllers\AuthorController::class, 'index'])->name('authors.index');

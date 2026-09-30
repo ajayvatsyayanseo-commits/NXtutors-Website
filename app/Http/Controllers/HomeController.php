@@ -276,10 +276,17 @@ public function sitemapSection(string $section)
     '/tutors',
     '/become-a-tutor',
 ];
-    // Tutor-side city pages, for cities with zones set up (TuitionJobsController).
-    foreach (array_keys(config('zones', [])) as $zoneCity) {
-        if ($zSlug = \App\Support\Geo::slugFor($zoneCity)) {
-            $staticUrls[] = '/tuition-jobs/' . $zSlug;
+    // Tutor-side pages (TuitionJobsController): India always; a state or city
+    // only when something real is behind it (zones, a real tutor, requests).
+    $staticUrls[] = '/tuition-jobs';
+    foreach ((new \App\Http\Controllers\TuitionJobsController)->states() as $jobState) {
+        if ($jobState['indexable'] && $jobState['name'] !== \App\Support\Geo::OTHER_STATE) {
+            $staticUrls[] = '/tuition-jobs/state/' . $jobState['slug'];
+        }
+        foreach ($jobState['cities'] as $jobCity) {
+            if ($jobCity->indexable) {
+                $staticUrls[] = '/tuition-jobs/' . $jobCity->slug;
+            }
         }
     }
 

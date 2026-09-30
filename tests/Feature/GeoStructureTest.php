@@ -234,8 +234,15 @@ class GeoStructureTest extends TestCase
             ->assertSee('Home tuition jobs in Gurgaon (Gurugram)')
             ->assertSee('Tutors needed')
             ->assertSee('"@type":"FAQPage"', false);
-        $this->withExceptionHandling()->get('/tuition-jobs/mumbai')->assertNotFound();
-        $this->get('/sitemap-pages.xml')->assertSee('/tuition-jobs/gurugram', false);
+        // A city with nothing real behind it: live for recruitment, not indexed, not in the sitemap.
+        $this->get('/tuition-jobs/faridabad')->assertOk()->assertSee('<meta name="robots" content="noindex, follow">', false);
+        $this->get('/tuition-jobs/mumbai')->assertOk()->assertDontSee('noindex', false); // a real tutor lives there
+        $this->get('/tuition-jobs')->assertOk()->assertSee('Home tuition and online tutor jobs in India')->assertSee(url('/tuition-jobs/state/haryana'), false);
+        $this->get('/tuition-jobs/state/haryana')->assertOk()->assertSee(url('/tuition-jobs/faridabad'), false)->assertDontSee('noindex', false);
+        $this->withExceptionHandling()->get('/tuition-jobs/nowhere')->assertNotFound();
+        $this->get('/tuition-jobs/state/nowhere')->assertNotFound();
+        $map = $this->get('/sitemap-pages.xml');
+        $map->assertSee('/tuition-jobs/gurugram', false)->assertSee('/tuition-jobs/state/haryana', false)->assertDontSee('/tuition-jobs/faridabad', false);
     }
 
     public function test_about_text_fills_only_empty_new_areas_and_rolls_back(): void

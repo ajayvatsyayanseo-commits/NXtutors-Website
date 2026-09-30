@@ -93,6 +93,18 @@ class TutorCascade
         return $out;
     }
 
+    /** Real (non-sample) tutors whose home city is this city page. */
+    public static function realTutorsInCity(string $citySlug): int
+    {
+        return collect(self::pool())->filter(fn ($t) => ! $t['sample'] && $t['city_slug'] === $citySlug)->count();
+    }
+
+    /** Real tutors who teach online, anywhere in India. */
+    public static function realOnlineTutors(): int
+    {
+        return collect(self::pool())->filter(fn ($t) => ! $t['sample'] && $t['online'])->count();
+    }
+
     /**
      * Real (non-sample) tutors per zone of a city: living in the zone or
      * listing it (or a place in it) under "Areas I travel to". For the

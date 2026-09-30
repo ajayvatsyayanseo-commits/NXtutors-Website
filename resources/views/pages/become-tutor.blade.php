@@ -43,7 +43,7 @@
           <a class="nx-cta nx-cta--primary" href="#" data-modal-target="tutorModal">Join as a tutor</a>
           <a class="nx-cta nx-cta--ghost" href="#categories">See what parents are asking for</a>
         </div>
-        <p class="nx-shero__lede nxjobs-cities">Tuition jobs by city: <a href="{{ url('/tuition-jobs/gurugram') }}">Gurgaon (Gurugram)</a></p>
+        <p class="nx-shero__lede nxjobs-cities">Tuition jobs: <a href="{{ url('/tuition-jobs') }}">all India, by state and city</a> · <a href="{{ url('/tuition-jobs/gurugram') }}">Gurgaon</a></p>
       </div>
       <aside class="nx-shero__side" aria-label="How it works">
         <ul class="nx-stats nx-stats--stack">
