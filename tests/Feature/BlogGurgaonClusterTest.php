@@ -139,6 +139,46 @@ class BlogGurgaonClusterTest extends TestCase
         'south-and-old-patna-tuition-guide',
     ];
 
+    private const THIRUVANANTHAPURAM = [
+        'home-tuition-fees-thiruvananthapuram',
+        'thiruvananthapuram-tuition-guide',
+    ];
+
+    private const NAGPUR = [
+        'home-tuition-fees-nagpur',
+        'nagpur-tuition-guide',
+    ];
+
+    private const RANCHI = [
+        'home-tuition-fees-ranchi',
+        'ranchi-tuition-guide',
+    ];
+
+    private const TATA = [
+        'home-tuition-fees-jamshedpur',
+        'jamshedpur-tuition-guide',
+    ];
+
+    private const KOCHI = [
+        'home-tuition-fees-kochi',
+        'kochi-tuition-guide',
+    ];
+
+    private const SURAT = [
+        'home-tuition-fees-surat',
+        'surat-tuition-guide',
+    ];
+
+    private const COIMBATORE = [
+        'home-tuition-fees-coimbatore',
+        'coimbatore-tuition-guide',
+    ];
+
+    private const GUWAHATI = [
+        'home-tuition-fees-guwahati',
+        'guwahati-tuition-guide',
+    ];
+
     private function migration(): object
     {
         return require database_path('migrations/seo/2026_09_29_120000_publish_gurgaon_guide_cluster.php');
@@ -146,7 +186,7 @@ class BlogGurgaonClusterTest extends TestCase
 
     public function test_every_post_has_its_files_and_follows_the_content_rules(): void
     {
-        foreach (array_merge(self::NEW, self::ROUND2, self::NOIDA, self::GREATER_NOIDA, self::GHAZIABAD, self::FARIDABAD, self::DELHI, self::MUMBAI, self::BENGALURU, self::HYDERABAD, self::PUNE, self::INDORE, self::CHANDIGARH, self::JAIPUR, self::LUCKNOW, self::CHENNAI, self::AHMEDABAD, self::KOLKATA, self::BHOPAL, self::PATNA, ['-ib-math-aaai-slhl', '-ib-physics-slhl-iaee']) as $slug) {
+        foreach (array_merge(self::NEW, self::ROUND2, self::NOIDA, self::GREATER_NOIDA, self::GHAZIABAD, self::FARIDABAD, self::DELHI, self::MUMBAI, self::BENGALURU, self::HYDERABAD, self::PUNE, self::INDORE, self::CHANDIGARH, self::JAIPUR, self::LUCKNOW, self::CHENNAI, self::AHMEDABAD, self::KOLKATA, self::BHOPAL, self::PATNA, self::THIRUVANANTHAPURAM, self::NAGPUR, self::RANCHI, self::TATA, self::KOCHI, self::SURAT, self::COIMBATORE, ['-ib-math-aaai-slhl', '-ib-physics-slhl-iaee']) as $slug) {
             $html = (string) @file_get_contents(database_path("seo-content/blog/$slug.html"));
             $meta = json_decode((string) @file_get_contents(database_path("seo-content/blog/$slug.json")), true) ?: [];
 
@@ -164,7 +204,7 @@ class BlogGurgaonClusterTest extends TestCase
             $this->assertDoesNotMatchRegularExpression('/\b\d[\d,]*\+?\s+verified tutors\b/i', $text, $slug);
             $this->assertDoesNotMatchRegularExpression('/<(h1|script|img|style)\b/i', $html, $slug);
         }
-        foreach (array_merge(self::NEW, self::ROUND2, self::NOIDA, self::GREATER_NOIDA, self::GHAZIABAD, self::FARIDABAD, self::DELHI, self::MUMBAI, self::BENGALURU, self::HYDERABAD, self::PUNE, self::INDORE, self::CHANDIGARH, self::JAIPUR, self::LUCKNOW, self::CHENNAI, self::AHMEDABAD, self::KOLKATA, self::BHOPAL, self::PATNA) as $slug) {
+        foreach (array_merge(self::NEW, self::ROUND2, self::NOIDA, self::GREATER_NOIDA, self::GHAZIABAD, self::FARIDABAD, self::DELHI, self::MUMBAI, self::BENGALURU, self::HYDERABAD, self::PUNE, self::INDORE, self::CHANDIGARH, self::JAIPUR, self::LUCKNOW, self::CHENNAI, self::AHMEDABAD, self::KOLKATA, self::BHOPAL, self::PATNA, self::THIRUVANANTHAPURAM, self::NAGPUR, self::RANCHI, self::TATA, self::KOCHI, self::SURAT, self::COIMBATORE) as $slug) {
             $this->assertFileExists(public_path("storage/blog/$slug.jpg"));
         }
     }

@@ -631,4 +631,157 @@ return [
             'names' => ['anisabad', 'gardanibagh', 'phulwari sharif'],
         ],
     ],
+    // Thiruvananthapuram (1 Oct 2026), from database/seo-content/areas/thiruvananthapuram-research.json.
+    'Thiruvananthapuram' => [
+        'Kowdiar & Pattom' => [
+            'sectors' => [],
+            'names' => ['kowdiar', 'vellayambalam', 'sasthamangalam', 'pattom', 'kesavadasapuram'],
+        ],
+        'Peroorkada & Vattiyoorkavu' => [
+            'sectors' => [],
+            'names' => ['peroorkada', 'kudappanakunnu', 'vattiyoorkavu', 'nalanchira'],
+        ],
+        'Ulloor & Kazhakkoottam' => [
+            'sectors' => [],
+            'names' => ['ulloor', 'sreekaryam', 'kazhakkoottam'],
+        ],
+        'Thycaud & Karamana' => [
+            'sectors' => [],
+            'names' => ['vazhuthacaud', 'thycaud', 'poojappura', 'thirumala', 'karamana', 'nemom'],
+        ],
+    ],
+    // Nagpur (1 Oct 2026), from database/seo-content/areas/nagpur-research.json.
+    'Nagpur' => [
+        'Central West Nagpur' => [
+            'sectors' => [],
+            'names' => ['dharampeth', 'gokulpeth', 'ramdaspeth', 'civil lines', 'shankar nagar', 'bajaj nagar', 'laxmi nagar', 'dhantoli'],
+        ],
+        'Hingna Road and Ring Road' => [
+            'sectors' => [],
+            'names' => ['pratap nagar', 'trimurti nagar', 'jaitala'],
+        ],
+        'Wardha Road' => [
+            'sectors' => [],
+            'names' => ['khamla', 'sonegaon', 'somalwada', 'manish nagar', 'besa'],
+        ],
+        'North Nagpur' => [
+            'sectors' => [],
+            'names' => ['sadar', 'seminary hills', 'gittikhadan', 'mankapur', 'koradi road', 'zingabai takli'],
+        ],
+        'East and South-East Nagpur' => [
+            'sectors' => [],
+            'names' => ['nandanvan', 'wathoda', 'wardhaman nagar', 'manewada', 'hudkeshwar'],
+        ],
+    ],
+    // Ranchi (1 Oct 2026), from database/seo-content/areas/ranchi-research.json.
+    'Ranchi' => [
+        'Kanke Road, Morabadi & Bariatu' => [
+            'sectors' => [],
+            'names' => ['kanke road', 'morabadi', 'bariatu'],
+        ],
+        'Lalpur, Kokar & Namkum' => [
+            'sectors' => [],
+            'names' => ['lalpur', 'kokar', 'namkum'],
+        ],
+        'Harmu, Argora & Ratu Road' => [
+            'sectors' => [],
+            'names' => ['harmu', 'argora', 'ashok nagar', 'kadru', 'pundag', 'ratu road'],
+        ],
+        'Doranda, Hinoo & Hatia' => [
+            'sectors' => [],
+            'names' => ['doranda', 'hinoo', 'dhurwa hec area', 'hatia', 'tupudana'],
+        ],
+    ],
+    // Jamshedpur (1 Oct 2026), from database/seo-content/areas/tata-research.json.
+    'Jamshedpur' => [
+        'Central Jamshedpur' => [
+            'sectors' => [],
+            'names' => ['bistupur', 'sakchi', 'circuit house area', 'golmuri', 'sidhgora'],
+        ],
+        'West Jamshedpur & Kharkai Side' => [
+            'sectors' => [],
+            'names' => ['kadma', 'sonari', 'adityapur', 'gamharia'],
+        ],
+        'South Jamshedpur & Tatanagar' => [
+            'sectors' => [],
+            'names' => ['jugsalai', 'burmamines', 'parsudih'],
+        ],
+        'East Jamshedpur' => [
+            'sectors' => [],
+            'names' => ['telco colony', 'birsanagar', 'baridih', 'govindpur'],
+        ],
+        'Mango & Dimna' => [
+            'sectors' => [],
+            'names' => ['mango', 'dimna'],
+        ],
+    ],
+    // Kochi (1 Oct 2026), from database/seo-content/areas/kochi-research.json.
+    'Kochi' => [
+        'Central Ernakulam' => [
+            'sectors' => [],
+            'names' => ['marine drive', 'kaloor', 'kadavanthra', 'panampilly nagar', 'thevara', 'pachalam'],
+        ],
+        'Edappally & North Kochi' => [
+            'sectors' => [],
+            'names' => ['edappally', 'elamakkara', 'palarivattom', 'cheranallur', 'kalamassery', 'aluva'],
+        ],
+        'Kakkanad & East Kochi' => [
+            'sectors' => [],
+            'names' => ['kakkanad', 'thrikkakara', 'vazhakkala', 'vennala', 'thammanam'],
+        ],
+        'Vyttila & Tripunithura' => [
+            'sectors' => [],
+            'names' => ['vyttila', 'elamkulam', 'maradu', 'tripunithura'],
+        ],
+        'West Kochi & Islands' => [
+            'sectors' => [],
+            'names' => ['fort kochi', 'mattancherry', 'palluruthy', 'vypin'],
+        ],
+    ],
+    // Surat (1 Oct 2026), from database/seo-content/areas/surat-research.json.
+    'Surat' => [
+        'Adajan, Pal & Rander' => [
+            'sectors' => [],
+            'names' => ['adajan', 'pal', 'palanpur', 'rander', 'jahangirpura'],
+        ],
+        'Central Surat, Athwa & Ghod Dod Road' => [
+            'sectors' => [],
+            'names' => ['nanpura', 'majura gate', 'athwa', 'ghod dod road', 'parle point'],
+        ],
+        'Piplod, Vesu & Dumas Road' => [
+            'sectors' => [],
+            'names' => ['piplod', 'city light', 'vesu', 'dumas road'],
+        ],
+        'Udhna, Althan & Pandesara' => [
+            'sectors' => [],
+            'names' => ['althan', 'bhatar', 'udhna', 'pandesara'],
+        ],
+        'Katargam, Varachha & Sarthana' => [
+            'sectors' => [],
+            'names' => ['katargam', 'amroli', 'varachha', 'mota varachha', 'sarthana', 'yogi chowk'],
+        ],
+    ],
+    // Coimbatore (1 Oct 2026), from database/seo-content/areas/coimbatore-research.json.
+    'Coimbatore' => [
+        'RS Puram, Race Course & Gandhipuram' => [
+            'sectors' => [],
+            'names' => ['rs puram', 'race course', 'gandhipuram', 'tatabad', 'saibaba colony'],
+        ],
+        'Saravanampatti, Ganapathy & Thudiyalur' => [
+            'sectors' => [],
+            'names' => ['saravanampatti', 'ganapathy', 'thudiyalur'],
+        ],
+        'Peelamedu, Kalapatti & Avinashi Road' => [
+            'sectors' => [],
+            'names' => ['peelamedu', 'kalapatti', 'avinashi road'],
+        ],
+        'Ramanathapuram, Singanallur & Trichy Road' => [
+            'sectors' => [],
+            'names' => ['ramanathapuram', 'sowripalayam', 'singanallur', 'ondipudur'],
+        ],
+        'Podanur, Kuniyamuthur & Vadavalli' => [
+            'sectors' => [],
+            'names' => ['podanur', 'sundarapuram', 'kurichi', 'kuniyamuthur', 'kovaipudur', 'selvapuram', 'vadavalli'],
+        ],
+    ],
 ];

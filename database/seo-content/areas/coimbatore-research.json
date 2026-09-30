@@ -1,0 +1,377 @@
+{
+  "areas": {
+    "rs-puram": {
+      "name": "RS Puram",
+      "zone": "RS Puram, Race Course & Gandhipuram",
+      "type": "mixed",
+      "about": "<p>RS Puram, short for Rathina Sabapathi Puram, is a planned neighbourhood in western Coimbatore, laid out with straight roads between Mettupalayam Road on the east and Thadagam Road on the west. It is also one of the city's busiest shopping districts, so its main streets carry shops, showrooms and offices while many of the side roads are residential. Saibaba Colony, Sukrawarpettai and the Ukkadam side of the old town are its neighbours.</p><p>Because the layout is a grid, a tutor can usually find a home by its road and door number without much searching. Parking is easier on the residential cross roads than on the shopping streets, which fill up in the evening and at weekends, so an after-school slot before the shopping crowd builds is simpler to keep. Coimbatore Junction and Coimbatore North Junction are both a short auto ride away for tutors who come by train. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/R._S._Puram,_Coimbatore",
+        "https://en.wikipedia.org/wiki/Saibaba_Colony",
+        "https://en.wikipedia.org/wiki/Coimbatore_North_Junction_railway_station"
+      ]
+    },
+    "race-course": {
+      "name": "Race Course",
+      "zone": "RS Puram, Race Course & Gandhipuram",
+      "type": "residential",
+      "about": "<p>Race Course is an upmarket residential pocket close to the city centre, known for tree-lined streets and a popular walking track that draws residents in the early morning and evening. Apartments, many of them with three bedrooms, are the most common homes here. Red Fields, Gopalapuram and ATT Colony are close by, and Ramanathapuram lies on its Trichy Road side.</p><p>Coimbatore Junction is the nearest main railway station, and Avinashi Road leads from this side of town towards Peelamedu and the airport, so tutors coming from the eastern suburbs have a direct route. Apartment buildings here usually have a security desk, so it helps to give the tutor's name to the guard before the first class. The walking track and the roads around it become busy at the start and end of the day, which is worth keeping in mind when fixing an early-morning or late-evening session for a board-exam student. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/race-course-coimbatore-overview-piffid",
+        "https://en.wikipedia.org/wiki/Ramanathapuram,_Coimbatore",
+        "https://en.wikipedia.org/wiki/Cosmopolitan_Club_(Coimbatore)"
+      ]
+    },
+    "gandhipuram": {
+      "name": "Gandhipuram",
+      "zone": "RS Puram, Race Course & Gandhipuram",
+      "type": "mixed",
+      "about": "<p>Gandhipuram, once known as Katoor, grew into one of Coimbatore's main commercial centres after the central bus terminus opened here in 1974. The Gandhipuram Central Bus Terminus handles town buses to every part of the city as well as long-distance services, and the area is crossed by Cross Cut Road, 100 Feet Road and Sathy Road, with a two-tier flyover over the busiest stretch. Homes are a mix of apartments and compact independent houses on the lanes behind the shops.</p><p>Ram Nagar, Tatabad, Sivananda Colony, Rathinapuri, Sidhapudur and Ganapathy all border Gandhipuram, so tutors from these neighbourhoods can reach a family easily, and many tutors from further away travel in by bus. Traffic around the bus terminus is heaviest at the morning and evening rush, so a mid-afternoon or weekend slot tends to run more smoothly. Where parking near a building is tight, ask the tutor to use the nearest side street and walk the last stretch. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Gandhipuram,_Coimbatore",
+        "https://www.squareyards.com/gandhipuram-in-coimbatore-overview-6597"
+      ]
+    },
+    "tatabad": {
+      "name": "Tatabad",
+      "zone": "RS Puram, Race Course & Gandhipuram",
+      "type": "mixed",
+      "about": "<p>Tatabad is a residential and commercial neighbourhood just north-west of Gandhipuram, laid out as a grid of eleven numbered streets, from Tatabad 1st Street to 11th Street, with larger roads such as Power House Road and 100 Feet Road along its edges. Coimbatore North Junction railway station stands in the neighbourhood, and Sivananda Colony lies alongside it.</p><p>The numbered streets make homes easy to find, which is useful for a new tutor on the first visit. Tatabad sits close to the Gandhipuram bus terminus and to Coimbatore North Junction, where commuter trains on the Mettupalayam line stop, so tutors from the northern suburbs can arrive by bus or train and finish the trip by auto or on foot. For an apartment building, share the flat number with the guard in advance. The larger roads around the neighbourhood are busy at office hours, so late afternoon is a practical time for school-day classes, and online sessions can cover specialist subjects that are harder to staff locally. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tatabad",
+        "https://en.wikipedia.org/wiki/Gandhipuram,_Coimbatore",
+        "https://en.wikipedia.org/wiki/Coimbatore_North_Junction_railway_station"
+      ]
+    },
+    "saibaba-colony": {
+      "name": "Saibaba Colony",
+      "zone": "RS Puram, Race Course & Gandhipuram",
+      "type": "residential",
+      "about": "<p>Saibaba Colony takes its name from the Saibaba temple at its centre and lies north of Gandhipuram, between Mettupalayam Road and Thadagam Road. It is a quiet, densely settled residential area of mostly independent houses, though apartment buildings have been going up since around 2010. One main road is lined with shops and banks, and the colony has several neighbourhood parks used by walkers.</p><p>RS Puram, Goundampalayam and the Coimbatore North Junction side of Tatabad border the colony, and Coimbatore North Junction is the nearest railway station. The Saibaba Colony bus terminus links it with the rest of the city. Since most families live in houses, a tutor normally rings the bell at the gate and is inside at once; in the newer apartment buildings the guard may ask for a flat number. Mettupalayam Road carries heavy traffic in the morning and evening, so tutors travelling from the north often prefer an early-evening start. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Saibaba_Colony",
+        "https://en.wikipedia.org/wiki/Coimbatore_North_Junction_railway_station",
+        "https://en.wikipedia.org/wiki/R._S._Puram,_Coimbatore"
+      ]
+    },
+    "saravanampatti": {
+      "name": "Saravanampatti",
+      "zone": "Saravanampatti, Ganapathy & Thudiyalur",
+      "type": "mixed",
+      "about": "<p>Saravanampatti lies on Sathy Road on Coimbatore's northern edge. It was a panchayat town until 2011, when it became part of the Coimbatore Corporation, and it has grown quickly around an IT special economic zone and other office parks. Apartment complexes are now the main form of housing, with newer villa communities and plotted layouts around them. Vilankurichi, Chinnavedampatti, Keeranatham and Kalapatti are nearby.</p><p>Many families here live in gated apartment complexes, so parents should register the tutor at the gate or on the society's visitor app before the first class. Because a large share of residents work in the offices nearby, classes often suit weekday early evenings or weekend mornings, and Sathy Road is at its busiest when offices open and close. For senior-school subjects or international curricula, a mix of home classes with a nearby tutor and online classes with a specialist works well. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Saravanampatti",
+        "https://www.squareyards.com/saravanampatti-in-coimbatore-overview-6613"
+      ]
+    },
+    "ganapathy": {
+      "name": "Ganapathy",
+      "zone": "Saravanampatti, Ganapathy & Thudiyalur",
+      "type": "residential",
+      "about": "<p>Ganapathy is a residential neighbourhood in north-eastern Coimbatore and is described as the most densely populated area within the corporation's limits. Sathy Road runs through its middle, and Avarampalayam Road, FCI Road, Athipalayam Road and Rathinapuri Road link it to the surrounding areas. Homes range from independent houses on narrow streets to newer apartment buildings and a few villa projects.</p><p>The neighbourhood borders Gandhipuram, Rathinapuri, Chinnavedampatti, Vilankurichi and Peelamedu, so tutors from several directions can reach it. Town buses on Sathy Road connect Ganapathy with Gandhipuram and Ukkadam, and Coimbatore North Junction is the nearest railway station. Sathy Road is heavily congested at rush hour, so for school-day tuition a slot away from the peak, or a tutor who lives on the same side of the road, saves travel time. In the dense inner streets it helps to share a nearby landmark along with the house number, and online classes are a good option for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ganapathy,_Coimbatore",
+        "https://www.squareyards.com/sale/property-for-sale-in-ganapathy-coimbatore"
+      ]
+    },
+    "thudiyalur": {
+      "name": "Thudiyalur",
+      "zone": "Saravanampatti, Ganapathy & Thudiyalur",
+      "type": "residential",
+      "about": "<p>Thudiyalur sits on Mettupalayam Road in Coimbatore North taluk and was a panchayat town until it was brought into the Coimbatore Corporation in 2011. It is a settled residential area that is growing fast, with independent houses and plotted layouts forming most of the housing and a smaller number of apartment and villa projects. Nearby localities include Vellakinar, NGGO Colony and GN Mills.</p><p>Thudiyalur railway station, a short walk from the Thudiyalur bus stand, is served by local MEMU trains between Coimbatore Junction and Mettupalayam, so a tutor from the city side can come by train and walk or take an auto for the last stretch. Most homes are houses with their own gate, which means no society registration and easy parking outside. Mettupalayam Road is getting busier, so it is sensible to agree a fixed weekday slot that avoids the rush, and to use online classes for subjects where a local specialist is not available. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Thudiyalur",
+        "https://en.wikipedia.org/wiki/Thudiyalur_railway_station",
+        "https://www.squareyards.com/thudiyalur-in-coimbatore-overview-6623"
+      ]
+    },
+    "peelamedu": {
+      "name": "Peelamedu",
+      "zone": "Peelamedu, Kalapatti & Avinashi Road",
+      "type": "mixed",
+      "about": "<p>Peelamedu is a large neighbourhood in eastern Coimbatore, founded in the early eighteenth century and now one of the city's main commercial and educational areas. Avinashi Road runs along it, and the elevated expressway above that road ends at the Goldwins junction in Peelamedu. Housing is varied: independent houses, apartment buildings, villa communities and plots, with IT parks and textile industry nearby.</p><p>Neighbours include Uppilipalayam, Singanallur, Varadharajapuram, Gandhimanagar, Vilankurichi, Chinniampalayam, Kalapatti and SIHS Colony. Pilamedu railway station, on the main line through Coimbatore, lies between Singanallur and Coimbatore North Junction, and the airport is on the eastern stretch of Avinashi Road. Families in apartment complexes should add the tutor to the visitor list; those in houses can simply share the address. Avinashi Road is busy at office hours, so a class timed after the evening rush is often easier for tutors coming from the city side. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Peelamedu",
+        "https://en.wikipedia.org/wiki/Peelamedu_railway_station",
+        "https://www.squareyards.com/peelamedu-in-coimbatore-overview-6575"
+      ]
+    },
+    "kalapatti": {
+      "name": "Kalapatti",
+      "zone": "Peelamedu, Kalapatti & Avinashi Road",
+      "type": "residential",
+      "about": "<p>Kalapatti lies off Avinashi Road on Coimbatore's eastern side, close to the airport. It was a panchayat town until 2011, when it was merged into the Coimbatore Corporation along with areas such as Vilankurichi, and it now forms part of the corporation's east zone. Plots and independent houses make up most of the housing, though apartments and villas are growing as more working professionals settle close to their offices.</p><p>Saravanampatti, Kurumbapalayam, Cheran Ma Nagar, Goldwins and Peelamedu are the nearby areas, so tutors from both the Avinashi Road and Sathy Road sides can reach Kalapatti. Houses in plotted layouts mean the tutor normally parks at the gate and walks in, while newer complexes may need a visitor entry. Some layouts are spread out and not every street is well known, so share a map pin with the tutor before the first class. Online sessions can fill in for subjects where a specialist is not nearby. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kalapatti",
+        "https://www.squareyards.com/kalapatti-in-coimbatore-overview-6618",
+        "https://en.wikipedia.org/wiki/Peelamedu"
+      ]
+    },
+    "avinashi-road": {
+      "name": "Avinashi Road",
+      "zone": "Peelamedu, Kalapatti & Avinashi Road",
+      "type": "mixed",
+      "about": "<p>Avinashi Road is Coimbatore's main east-west arterial road, running from the Uppilipalayam flyover near Grey Town through Lakshmi Mills, Peelamedu, Nava India, Chinniampalayam and past the airport to the Neelambur bypass junction, where it meets NH 544. Offices, IT parks, hotels and shops line the road, while the residential streets behind it hold apartments, villas and independent houses.</p><p>The elevated expressway on Avinashi Road, a four-lane flyover above Avinashi Road from Uppilipalayam to the Goldwins junction in Peelamedu, opened in October 2025, which has made cross-town trips along this belt quicker. A metro corridor along the road has been proposed but is not sanctioned. For a family living just off the road, the tutor's route matters more than distance: a tutor from the same side of the road avoids U-turns and junction waits. Apartment complexes usually ask for visitor registration, and weekday office traffic is heaviest in the morning and early evening. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Avinashi_Road,_Coimbatore",
+        "https://en.wikipedia.org/wiki/G._D._Naidu_Elevated_Expressway",
+        "https://en.wikipedia.org/wiki/Coimbatore_Metro"
+      ]
+    },
+    "ramanathapuram": {
+      "name": "Ramanathapuram",
+      "zone": "Ramanathapuram, Singanallur & Trichy Road",
+      "type": "residential",
+      "about": "<p>Ramanathapuram, in south-eastern Coimbatore, has been part of the city corporation since 1882 and is one of its well-developed residential neighbourhoods. Trichy Road passes through the middle of the locality, and Puliakulam Road, Nanjundapuram Road, Sowripalayam Road, 80 Feet Road and the Sungam bypass road link it with the rest of the city. Homes are a mix of independent houses, apartments and a few villa projects.</p><p>The neighbourhood borders Town Hall, Race Course, Puliakulam, Ukkadam, Singanallur, Sowripalayam and Nanjundapuram, which gives families a wide pool of tutors living close by. Coimbatore Junction is the nearest main railway station. In houses the tutor comes to the door; apartment buildings usually have a guard who will ask for the flat number. Trichy Road is busiest at the office rush, so parents on the far side of the main road may want a tutor who lives on the same side, and online sessions can cover advanced subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ramanathapuram,_Coimbatore",
+        "https://www.squareyards.com/property-rates/ramanathapuram-coimbatore",
+        "https://en.wikipedia.org/wiki/Trichy_Road,_Coimbatore"
+      ]
+    },
+    "sowripalayam": {
+      "name": "Sowripalayam",
+      "zone": "Ramanathapuram, Singanallur & Trichy Road",
+      "type": "residential",
+      "about": "<p>Sowripalayam grew from a village into a residential neighbourhood between Trichy Road and the Peelamedu side of the city. Sowripalayam Road runs through it and joins Trichy Road at Sowripalayam Pirivu, and the locality is known for mid-income housing, mainly ready apartment buildings built by local builders, alongside older houses. GV Residency, Anna Nagar and Uppilipalayam are nearby.</p><p>The neighbourhood borders Ramanathapuram and Singanallur, so tutors from both areas can get here with little difficulty, and Pilamedu railway station serves this side of the city. In smaller apartment buildings, a tutor usually signs in with the watchman at the entrance, so let him know about regular class days. Evening traffic on Trichy Road can slow the last part of the journey, so an early-evening start that ends before dinner often suits both the student and the tutor. For senior-school or specialist subjects, online classes add more choice. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/sowripalayam-coimbatore-overview-piffid",
+        "https://en.wikipedia.org/wiki/Ramanathapuram,_Coimbatore",
+        "https://en.wikipedia.org/wiki/Trichy_Road,_Coimbatore"
+      ]
+    },
+    "singanallur": {
+      "name": "Singanallur",
+      "zone": "Ramanathapuram, Singanallur & Trichy Road",
+      "type": "residential",
+      "about": "<p>Singanallur is a major residential locality in eastern Coimbatore, on Trichy Road, with the Noyyal river to its south. It was a separate municipality until it merged with Coimbatore in 1982. Singanallur Lake, declared a biodiversity conservation zone in 2013, and the Singanallur bus terminus, a hub for buses to southern and central Tamil Nadu, are its main landmarks. Housing includes apartments, independent houses, villas and plots.</p><p>Ramanathapuram, Ondipudur, Vellalore, Varadharajapuram and Neelikonampalayam surround it. Singanallur railway station, at Neelikonampalayam, lies between Irugur and Pilamedu on the main line, and the airport is not far off. Tutors from Ramanathapuram and Ondipudur can reach most homes easily, and the tutor normally comes straight to the door in houses and signs in at the gate in apartment complexes. The Singanallur junction on Trichy Road is one of the busiest points on the road, so timing classes away from the evening rush helps. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Singanallur",
+        "https://en.wikipedia.org/wiki/Singanallur_railway_station",
+        "https://www.squareyards.com/singanallur-in-coimbatore-overview-6555"
+      ]
+    },
+    "ondipudur": {
+      "name": "Ondipudur",
+      "zone": "Ramanathapuram, Singanallur & Trichy Road",
+      "type": "residential",
+      "about": "<p>Ondipudur is a residential neighbourhood in south-eastern Coimbatore that has been part of the corporation since 1981 and now falls in its east zone. Trichy Road, part of NH 81, is its main road, and a flyover carries it over the railway line here; Irugur Road and Peedampalli Road are the other main routes. Singanallur, Vellalore, Irugur, Pallapalayam and SIHS Colony border the locality.</p><p>Tutor visits are straightforward: in a house the tutor comes to the gate, and in an apartment building the guard will ask for the flat number. Tutors from Singanallur next door are the natural first choice, and those from Irugur and SIHS Colony are close as well. Singanallur railway station is the nearest stop on the main line. Trichy Road carries steady traffic towards Sulur and the city, so weekday classes in the late afternoon or on weekend mornings are easier to keep on schedule. Online tutors are useful for exam-focused or specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ondipudur",
+        "https://en.wikipedia.org/wiki/Trichy_Road,_Coimbatore",
+        "https://en.wikipedia.org/wiki/Singanallur"
+      ]
+    },
+    "podanur": {
+      "name": "Podanur",
+      "zone": "Podanur, Kuniyamuthur & Vadavalli",
+      "type": "residential",
+      "about": "<p>Podanur grew around one of the oldest railway junctions in South India, opened in 1862 on the line to Madras, and the town's early development followed the railway. Podanur Junction serves the main line through Coimbatore and the Coimbatore to Pollachi line. Today the area is mostly residential plots and independent houses, with some apartments. Chettipalayam Road, a four-lane road with a flyover over the railway, runs from Podanur towards Chettipalayam.</p><p>Kurichi, Sundarapuram and Nanjundapuram are the neighbouring areas, so tutors from the Pollachi Road side of the city can reach Podanur easily. A tutor coming by train can get off at Podanur Junction and take an auto for the last leg. Because most homes are houses, the tutor usually parks at the gate and comes straight in. Roads near the station get busy at peak times, so leave some slack in the schedule, and consider online classes for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Podanur",
+        "https://en.wikipedia.org/wiki/Podanur_Junction_railway_station",
+        "https://en.wikipedia.org/wiki/Podanur-Chettipalayam_Road",
+        "https://www.99acres.com/podanur-coimbatore-overview-piffid"
+      ]
+    },
+    "sundarapuram": {
+      "name": "Sundarapuram",
+      "zone": "Podanur, Kuniyamuthur & Vadavalli",
+      "type": "residential",
+      "about": "<p>Sundarapuram is a mid-segment residential locality in southern Coimbatore, lying off Pollachi Road, part of NH 948. Madukkarai Road and Sarada Mill Road are its main connecting roads, and the neighbourhood includes the LIC Colony area. Housing is a mix of residential plots, houses built on them and ready apartments.</p><p>Kurichi, Podanur and Kuniyamuthur are the neighbouring areas, and Podanur Junction on the Coimbatore to Pollachi line is the closest railway station. Town buses run frequently along Pollachi Road, so a tutor without a vehicle can still reach most homes and walk the last stretch. In a house, the tutor simply arrives at the gate; in an apartment building, let the guard know the class days. Pollachi Road is busiest when offices and schools open and close, so late afternoon is a good time for a regular class. For senior-school subjects, a nearby home tutor can be paired with an online specialist. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/sundarapuram-coimbatore-overview-piffid",
+        "https://en.wikipedia.org/wiki/Kurichi",
+        "https://www.squareyards.com/kuniyamuthur-in-coimbatore-overview-6584"
+      ]
+    },
+    "kurichi": {
+      "name": "Kurichi",
+      "zone": "Podanur, Kuniyamuthur & Vadavalli",
+      "type": "residential",
+      "about": "<p>Kurichi is a large neighbourhood in southern Coimbatore, north of the Kurichi Kulam lake. It was upgraded to a municipality in 2004 and later merged into the Coimbatore Corporation, and its population in 2011 was over one lakh. It borders Podanur, Sundarapuram, Kuniyamuthur, Nanjundapuram and Ukkadam, and Pollachi Road runs along its side.</p><p>Kurichi is a big area, so share the street name and a nearby landmark with a new tutor before the first class. Tutors from Sundarapuram, Kuniyamuthur and Podanur live close by, and Podanur Junction is the nearest railway station for anyone travelling by train. The Ukkadam end of the neighbourhood is close to the Ukkadam bus terminus, which links it with the whole city. Traffic builds up on Pollachi Road towards Ukkadam in the evening, so a tutor from the same side of town is easier to schedule, and online classes can add subject specialists. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kurichi",
+        "https://en.wikipedia.org/wiki/Ukkadam",
+        "https://www.99acres.com/sundarapuram-coimbatore-overview-piffid"
+      ]
+    },
+    "kuniyamuthur": {
+      "name": "Kuniyamuthur",
+      "zone": "Podanur, Kuniyamuthur & Vadavalli",
+      "type": "residential",
+      "about": "<p>Kuniyamuthur lies on the road from Coimbatore to Palakkad, on the city's south-western side, and was a separate municipality with close to one lakh residents in 2011. It is a quiet residential pocket away from the crowded core, where independent houses and plots are more common than apartments and many families build their own homes. A few villa and apartment projects have also come up.</p><p>The neighbourhood is surrounded by Kovaipudur, Perur, Selvapuram, Sundarapuram, Sundakkamuthur, Kurichi and Ukkadam, which gives families a good spread of tutors nearby. Most homes are houses with a gate, so the tutor simply parks and walks in. Palakkad Road leads towards Ukkadam and the city centre and is busiest at the morning and evening rush, so a tutor coming from the centre will find a mid-afternoon or early-evening slot easier. Online tutors can add subjects where local choice is limited. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kuniyamuthur",
+        "https://www.squareyards.com/kuniyamuthur-in-coimbatore-overview-6584"
+      ]
+    },
+    "kovaipudur": {
+      "name": "Kovaipudur",
+      "zone": "Podanur, Kuniyamuthur & Vadavalli",
+      "type": "residential",
+      "about": "<p>Kovaipudur is a large township at the foothills of the Western Ghats on the south-western fringe of Coimbatore, set up in the late 1970s and now within the Coimbatore Corporation. It sits at the mouth of the Palghat Pass near the Madukkarai hills, and its breezy, cooler climate has earned it the nickname Little Ooty. The township is home to about 7,500 families and includes the Regional Transport Office for Coimbatore West.</p><p>Homes are spread across the township's residential streets and an integrated township with a golf course, where the gate may ask for visitor details before a tutor is let in. Kuniyamuthur is the neighbouring area on the city side, and tutors often come from there or from Sundarapuram and Kurichi. Because Kovaipudur is on the edge of the city, a family may find fewer tutors living inside the township itself; combining a nearby home tutor with online classes for specialist subjects widens the choice. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kovaipudur",
+        "https://www.squareyards.com/kuniyamuthur-in-coimbatore-overview-6584"
+      ]
+    },
+    "selvapuram": {
+      "name": "Selvapuram",
+      "zone": "Podanur, Kuniyamuthur & Vadavalli",
+      "type": "mixed",
+      "about": "<p>Selvapuram, once called Pallapalayam, is a well-established neighbourhood on the banks of the Noyyal river and has been part of Coimbatore since 1866. It is both residential and industrial, and it falls in the corporation's south zone. Siruvani Road is its main road, with Ponnaiyarajapuram Road, the Ukkadam bypass road and the Sundakamuthur bypass road linking it to nearby areas. Independent houses and small apartment buildings make up most of the housing.</p><p>Selvapuram shares borders with Town Hall, Perur, Chokkampudur, Ukkadam, Ponnaiyarajapuram and Telugupalayam, and local buses connect it with Gandhipuram, Ukkadam and Coimbatore Junction. For home tuition, this means a good pool of tutors from the older neighbourhoods around it. Houses usually open to the street, so the tutor comes straight to the door. The bypass roads towards Ukkadam are busiest at peak hours, so an early-evening class is easier to keep on time, and online tutors are available for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Selvapuram",
+        "https://www.squareyards.com/selvapuram-in-coimbatore-overview-6558"
+      ]
+    },
+    "vadavalli": {
+      "name": "Vadavalli",
+      "zone": "Podanur, Kuniyamuthur & Vadavalli",
+      "type": "residential",
+      "about": "<p>Vadavalli lies on Marudamalai Road at the foothills of the Western Ghats, on Coimbatore's western edge, and came into the city corporation's limits in 2011. Once an agricultural village, it is now a popular residential area, known for the Murugan temple on Marudamalai hill nearby. Independent houses are the most common homes, followed by low-rise apartments, villas and residential plots. Thadagam Road, Kanuvai Road and the road to Thondamuthur connect it with the surroundings.</p><p>Somayampalayam, Veerakeralam, Velandipalayam, TVS Nagar and PN Pudur are the nearby localities, and Coimbatore North Junction is the railway station most used by residents. Buses run through the day towards the city. Most visits are to houses, so the tutor parks at the gate; in villa communities, add the tutor to the visitor list. As Vadavalli is towards the edge of the city, tutors from the western neighbourhoods are the easiest to schedule, and online classes help with specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vadavalli",
+        "https://www.squareyards.com/vadavalli-in-coimbatore-overview-6612",
+        "https://en.wikipedia.org/wiki/Coimbatore_North_Junction_railway_station"
+      ]
+    }
+  },
+  "zone_facts": {
+    "RS Puram, Race Course & Gandhipuram": [
+      {
+        "fact": "RS Puram is a planned neighbourhood between Mettupalayam Road (east) and Thadagam Road (west), named after the founder of modern Coimbatore.",
+        "source": "https://en.wikipedia.org/wiki/R._S._Puram,_Coimbatore"
+      },
+      {
+        "fact": "Gandhipuram, formerly Katoor, developed after the central bus terminus was built in 1974; the Gandhipuram Central Bus Terminus runs intercity and interstate services.",
+        "source": "https://en.wikipedia.org/wiki/Gandhipuram,_Coimbatore"
+      },
+      {
+        "fact": "Coimbatore North Junction (Vadakovai) is in Tatabad/Sivananda Colony and serves the Chennai–Coimbatore line and the Coimbatore–Mettupalayam branch line.",
+        "source": "https://en.wikipedia.org/wiki/Coimbatore_North_Junction_railway_station"
+      },
+      {
+        "fact": "Coimbatore Junction opened on 1 February 1873 and lies on the Jolarpettai–Shoranur main line.",
+        "source": "https://en.wikipedia.org/wiki/Coimbatore_Junction_railway_station"
+      },
+      {
+        "fact": "Saibaba Colony lies between Mettupalayam Road and Thadagam Road and borders RS Puram, Coimbatore North Junction and Goundampalayam.",
+        "source": "https://en.wikipedia.org/wiki/Saibaba_Colony"
+      },
+      {
+        "fact": "Tatabad is laid out as a grid of eleven numbered streets.",
+        "source": "https://en.wikipedia.org/wiki/Tatabad"
+      }
+    ],
+    "Saravanampatti, Ganapathy & Thudiyalur": [
+      {
+        "fact": "Saravanampatti lies on Sathy Road and was a panchayat town until it was incorporated into the Coimbatore Corporation in 2011.",
+        "source": "https://en.wikipedia.org/wiki/Saravanampatti"
+      },
+      {
+        "fact": "Thudiyalur was a panchayat town until 2011, when it was integrated into the Coimbatore Corporation.",
+        "source": "https://en.wikipedia.org/wiki/Thudiyalur"
+      },
+      {
+        "fact": "Thudiyalur railway station, reopened in July 2017, is served by local MEMU trains between Coimbatore Junction and Mettupalayam.",
+        "source": "https://en.wikipedia.org/wiki/Thudiyalur_railway_station"
+      },
+      {
+        "fact": "Ganapathy is described as the most densely populated area within the Coimbatore Corporation, with Sathy Road as its central artery.",
+        "source": "https://en.wikipedia.org/wiki/Ganapathy,_Coimbatore"
+      },
+      {
+        "fact": "Metro Phase I proposed a corridor along Sathyamangalam (Sathy) Road towards Valiyampalayam Pirivu; the Union Government returned the proposal in 2025 and it remains unsanctioned.",
+        "source": "https://en.wikipedia.org/wiki/Coimbatore_Metro"
+      },
+      {
+        "fact": "Coimbatore Suburban Railway is planned; local passenger trains already run from Coimbatore Junction on the Mettupalayam, Pollachi, Tiruppur and Palakkad routes, but the proposed circular line is not implemented.",
+        "source": "https://en.wikipedia.org/wiki/Coimbatore_Suburban_Railway"
+      }
+    ],
+    "Peelamedu, Kalapatti & Avinashi Road": [
+      {
+        "fact": "Avinashi Road runs from the Uppilipalayam flyover near Grey Town to the Neelambur bypass junction, where it meets NH 544; it has been widened to six lanes.",
+        "source": "https://en.wikipedia.org/wiki/Avinashi_Road,_Coimbatore"
+      },
+      {
+        "fact": "The G. D. Naidu Elevated Expressway, a four-lane flyover along Avinashi Road from Uppilipalayam to Goldwins junction in Peelamedu, was opened in October 2025.",
+        "source": "https://en.wikipedia.org/wiki/G._D._Naidu_Elevated_Expressway"
+      },
+      {
+        "fact": "Pilamedu (Peelamedu) railway station lies on the Jolarpettai–Shoranur line between Singanallur and Coimbatore North Junction.",
+        "source": "https://en.wikipedia.org/wiki/Peelamedu_railway_station"
+      },
+      {
+        "fact": "Kalapatti was a panchayat town until 2011, when it was merged into the Coimbatore Corporation's east zone.",
+        "source": "https://en.wikipedia.org/wiki/Kalapatti"
+      },
+      {
+        "fact": "The proposed Metro Phase I Red Line would run from Ukkadam to Neelambur via Avinashi Road, but the Union Government returned the Coimbatore metro proposal in 2025, citing the 2011 population criterion.",
+        "source": "https://en.wikipedia.org/wiki/Coimbatore_Metro"
+      },
+      {
+        "fact": "Peelamedu's foundation stone was laid on 11 November 1711.",
+        "source": "https://en.wikipedia.org/wiki/Peelamedu"
+      }
+    ],
+    "Ramanathapuram, Singanallur & Trichy Road": [
+      {
+        "fact": "Trichy Road is part of NH 81 and runs from Coimbatore Junction through Ramanathapuram, Singanallur and Ondipudur towards Sulur and Karanampettai.",
+        "source": "https://en.wikipedia.org/wiki/Trichy_Road,_Coimbatore"
+      },
+      {
+        "fact": "Ramanathapuram has been part of the Coimbatore Corporation since 1882.",
+        "source": "https://en.wikipedia.org/wiki/Ramanathapuram,_Coimbatore"
+      },
+      {
+        "fact": "The former Singanallur Municipality merged with Coimbatore in 1982; Singanallur Lake was declared a biodiversity conservation zone in 2013.",
+        "source": "https://en.wikipedia.org/wiki/Singanallur"
+      },
+      {
+        "fact": "Singanallur railway station, at Neelikonampalayam, lies between Irugur and Pilamedu stations.",
+        "source": "https://en.wikipedia.org/wiki/Singanallur_railway_station"
+      },
+      {
+        "fact": "Ondipudur has been part of the Coimbatore Corporation since 1981 and falls in its east zone.",
+        "source": "https://en.wikipedia.org/wiki/Ondipudur"
+      },
+      {
+        "fact": "The Singanallur Bus Terminus on Trichy Road is a hub for buses towards southern and central districts.",
+        "source": "https://en.wikipedia.org/wiki/Singanallur"
+      }
+    ],
+    "Podanur, Kuniyamuthur & Vadavalli": [
+      {
+        "fact": "Podanur Junction opened in 1862 and serves the Jolarpettai–Shoranur line and the Coimbatore–Pollachi line.",
+        "source": "https://en.wikipedia.org/wiki/Podanur_Junction_railway_station"
+      },
+      {
+        "fact": "Chettipalayam Road (SH 162) links Podanur Junction with the Coimbatore Integrated Bus Terminus; the Podanur flyover over the railway opened in 2018.",
+        "source": "https://en.wikipedia.org/wiki/Podanur-Chettipalayam_Road"
+      },
+      {
+        "fact": "Kurichi was upgraded to a municipality in 2004 and later merged into the Coimbatore Corporation.",
+        "source": "https://en.wikipedia.org/wiki/Kurichi"
+      },
+      {
+        "fact": "Kovaipudur township was set up in the late 1970s at the foothills of the Western Ghats and houses the Coimbatore West Regional Transport Office.",
+        "source": "https://en.wikipedia.org/wiki/Kovaipudur"
+      },
+      {
+        "fact": "Vadavalli lies on Marudamalai Road at the foothills of the Western Ghats.",
+        "source": "https://en.wikipedia.org/wiki/Vadavalli"
+      },
+      {
+        "fact": "Selvapuram has been part of the Coimbatore municipal area since 1866 and its main road is Siruvani Road.",
+        "source": "https://en.wikipedia.org/wiki/Selvapuram"
+      },
+      {
+        "fact": "Ukkadam Bus Terminus serves city buses and intercity buses to Pollachi, Palakkad, Palani, Valparai and Thrissur.",
+        "source": "https://en.wikipedia.org/wiki/Ukkadam"
+      }
+    ]
+  }
+}

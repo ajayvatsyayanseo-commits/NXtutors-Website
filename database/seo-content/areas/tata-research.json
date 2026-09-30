@@ -1,0 +1,319 @@
+{
+  "areas": {
+    "bistupur": {
+      "name": "Bistupur",
+      "zone": "Central Jamshedpur",
+      "type": "mixed",
+      "about": "<p>Bistupur is one of the earliest settlements laid out during the planning of Jamshedpur and began life as a commercial area. Today it is the city's main business address, with showrooms, hotels, restaurants, offices and clubs along its roads, and it is also counted among the more affluent neighbourhoods. The Kharkai river runs along its western side, with Adityapur across the water, Jugsalai to the south, Kadma and Dhatkidih to the north, and Northern Town and the steel works to the east.</p><p>Homes here are mostly apartments in two and three bedroom layouts, with some older bungalows in the quieter lanes, so a tutor may visit either a building with a gate register or a house with a doorstep entrance. Parking is easier in the residential lanes than on the busy shopping roads. Families also use Adityapur and Tatanagar stations for travel, and the Kharkai bridges link Bistupur with Adityapur for tutors coming from the west. Evening slots work more smoothly when timed around the market rush. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bistupur",
+        "https://www.99acres.com/bistupur-jamshedpur-overview-piffid",
+        "https://en.wikipedia.org/wiki/Adityapur"
+      ]
+    },
+    "sakchi": {
+      "name": "Sakchi",
+      "zone": "Central Jamshedpur",
+      "type": "mixed",
+      "about": "<p>Sakchi is one of the oldest neighbourhoods of Jamshedpur. It began as a village chosen in 1904 as the site for the steel plant around which the city grew, and it is home to the city's oldest market. It is bounded by Bistupur to the west, the Subarnarekha river to the north, Kalimati to the south and Bhalubasa to the east, with Kasidih, the Circuit House Area and Baradwari close by.</p><p>Housing is a mix of older houses in busy lanes and apartment buildings with two and three bedroom flats. Sakchi Golchakkar is one of the city's busiest crossings, and Kalimati Road and Straight Mile Road carry much of the local traffic, so tutors often avoid market hours when planning a visit. Buses and autos run from Sakchi across the Subarnarekha to Mango, which makes it easy for tutors living on the other bank to come over. Houses allow doorstep arrival, while flats may ask for a name at the gate. Tatanagar is the main station for families here. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sakchi",
+        "https://www.99acres.com/sakchi-jamshedpur-overview-piffid",
+        "https://en.wikipedia.org/wiki/Mango_(Jamshedpur)"
+      ]
+    },
+    "circuit-house-area": {
+      "name": "Circuit House Area",
+      "zone": "Central Jamshedpur",
+      "type": "residential",
+      "about": "<p>Circuit House Area is a compact residential pocket in central Jamshedpur, sharing the 831001 postcode with Sakchi and Bistupur. It sits among Sakchi, Kasidih, Baradwari, Kadma and Sonari, so it is closely linked to both the old market core and the western residential belt. Local history records that troops stayed at the Circuit House during the Second World War.</p><p>Homes are a mix of independent houses and a smaller number of flats in buildings near the main road, several with covered car parking. For a home tutor this usually means a straightforward doorstep visit, and a short gate registration where there is a building. Because the neighbourhood is so central, a tutor from Sakchi, Bistupur, Kadma or Sonari can reach it by auto or two-wheeler without crossing a river, which makes regular weekday slots easy to arrange. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/property-in-circuit-house-area-jamshedpur-ffid",
+        "https://www.99acres.com/sakchi-jamshedpur-overview-piffid",
+        "https://en.wikipedia.org/wiki/Bistupur"
+      ]
+    },
+    "golmuri": {
+      "name": "Golmuri",
+      "zone": "Central Jamshedpur",
+      "type": "mixed",
+      "about": "<p>Golmuri is listed among the city-centre neighbourhoods of Jamshedpur, along with Sakchi, Bistupur and Sidhgora, and it is known both as a residential area and for Golmuri Market. Neighbouring localities are Bhalubasa, Sitaramdera and New Sitaramdera, with Sidhgora and Agrico close by and the eastern colonies further along Golmuri Road. Places of worship of several faiths stand in the locality, reflecting a mixed community.</p><p>Families live in a mix of houses and flats, and residents describe the streets away from the market as quiet and green. That suits home tuition: tutors can usually park at the door, and building visits need only a quick word at the entrance. Tatanagar is the main station for the area, with the smaller Salgajhari halt also used by residents. Golmuri Road links the locality with the eastern colonies, so tutors from nearby colonies can reach it easily outside market hours. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jamshedpur",
+        "https://www.99acres.com/golmuri-jamshedpur-overview-piffid",
+        "https://en.wikipedia.org/wiki/List_of_neighbourhoods_of_Jamshedpur"
+      ]
+    },
+    "sidhgora": {
+      "name": "Sidhgora",
+      "zone": "Central Jamshedpur",
+      "type": "residential",
+      "about": "<p>Sidhgora is a central Jamshedpur locality close to the steel works, listed among the city-centre neighbourhoods along with Sakchi, Bistupur and Golmuri. Its immediate neighbours are Agrico, Vidyapati Nagar, Bhalubasa, Golmuri and Baradwari, and Sitaramdera lies just beyond. The area mixes older homes with newer residential buildings, reflecting parts that have been developed in recent years.</p><p>Housing includes independent houses, plots and a small number of apartment buildings, so most tuition visits are to a family home rather than a gated complex. Tutors living in Agrico, Golmuri or Sakchi are only a short ride away, and roads through the area connect easily with the central market districts. For subjects where a specialist tutor is not available locally, families here often combine a nearby home tutor with online classes. Weekday evening slots are usually the simplest to arrange. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_neighbourhoods_of_Jamshedpur",
+        "https://www.99acres.com/flats-in-sidhgora-jamshedpur-ffid"
+      ]
+    },
+    "kadma": {
+      "name": "Kadma",
+      "zone": "West Jamshedpur & Kharkai Side",
+      "type": "residential",
+      "about": "<p>Kadma is a large residential neighbourhood in western Jamshedpur, with Sonari next door and Bistupur and Sakchi close by. It contains both older company quarters and privately built apartment buildings, and civic services are split between the company-run utility for the quarters and the notified area committee for most other homes. The Kadma Sonari Link Road and Marine Drive connect it with the rest of the western side of the city.</p><p>For a tutor, the company quarters are usually simple doorstep visits, while the newer apartment buildings may keep a visitor register at the gate. There is a bridge between Kadma and Adityapur across the Kharkai, giving tutors from Adityapur a direct route and a shortcut towards NH 18 via Marine Drive. Adityapur station is the nearest rail point for many families. Kadma Market is a local landmark, and roads near it get busy in the evening, so slots just before or after that rush are easiest. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kadma,_Jamshedpur",
+        "https://www.99acres.com/kadma-jamshedpur-overview-piffid",
+        "https://en.wikipedia.org/wiki/Adityapur"
+      ]
+    },
+    "sonari": {
+      "name": "Sonari",
+      "zone": "West Jamshedpur & Kharkai Side",
+      "type": "residential",
+      "about": "<p>Sonari is often described as the largest residential area of Jamshedpur and has one of the highest numbers of housing societies in the city. It is divided into North, West, East and South layouts, and its northern edge reaches Domuhani, the meeting point of the Subarnarekha and Kharkai rivers. Local markets include Adarsh Nagar Market, Aerodrome Market and the Domuhani haat, and the city's small airport is also here.</p><p>Many families live in apartment societies, where tutors should expect gate registration and visitor parking rules, alongside houses in the older parts of the layouts. Marine Drive runs along the western corridor and links Sonari with Kadma, Adityapur, Sakchi and Bistupur. The Domuhani bridge over the Subarnarekha connects Sonari with Dobo on the Chandil side, which is useful for tutors coming from across the river. Marine Drive traffic is lighter outside office hours, which is worth keeping in mind for evening classes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sonari,_Jamshedpur",
+        "https://avenuemail.in/domuhani-bridge-over-subernarekha-to-be-operational-by-dec-31/",
+        "https://en.wikipedia.org/wiki/Kadma,_Jamshedpur"
+      ]
+    },
+    "adityapur": {
+      "name": "Adityapur",
+      "zone": "West Jamshedpur & Kharkai Side",
+      "type": "mixed",
+      "about": "<p>Adityapur is a separate municipal corporation in Seraikela Kharsawan district that forms part of the wider Jamshedpur urban area. The Kharkai river surrounds it on three sides and separates it from Jamshedpur proper, and the large Adityapur industrial area sits alongside its residential colonies. Its markets include Adityapur Market and the area around Aakash Vani Chowk.</p><p>Homes range from independent houses and plots to a good number of apartment societies built by local developers, so a tutor may need a gate pass in some buildings and simply ring the bell in others. Two bridges cross the Kharkai into the city: one to Bistupur and one to Kadma, the latter giving a route towards NH 18 via Marine Drive. Adityapur station on the Howrah to Mumbai line serves the area. Tutors from Bistupur, Kadma and Sonari commonly teach here, and peak-hour traffic on the bridges is worth avoiding. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Adityapur",
+        "https://en.wikipedia.org/wiki/Adityapur_railway_station",
+        "https://www.99acres.com/adityapur-jamshedpur-overview-piffid"
+      ]
+    },
+    "gamharia": {
+      "name": "Gamharia",
+      "zone": "West Jamshedpur & Kharkai Side",
+      "type": "mixed",
+      "about": "<p>Gamharia lies on the western edge of the Jamshedpur area in Seraikela Kharsawan district, beyond Adityapur along the Kandra road. It has its own industrial area and is also a growing residential locality, with neighbouring places such as Chota Gamaria, Dhirajganj and Narayanpur. Gamharia Junction station on the Howrah to Mumbai main line is located on the Kandra road and serves local families.</p><p>Housing is mainly plots and independent houses, with some newer apartment buildings, so most tutor visits are doorstep arrivals with easy parking. The NH 118 corridor runs through Adityapur towards Kandra, linking Gamharia with Adityapur, Sonari and Bistupur. Because the locality sits further out, families often pair a nearby home tutor for regular school subjects with online classes for specialist or senior subjects. Tutors from Adityapur are the most practical choice for home visits. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Gamharia_Junction_railway_station",
+        "https://www.99acres.com/gamharia-jamshedpur-overview-piffid",
+        "https://en.wikipedia.org/wiki/National_Highway_118_(India)"
+      ]
+    },
+    "jugsalai": {
+      "name": "Jugsalai",
+      "zone": "South Jamshedpur & Tatanagar",
+      "type": "mixed",
+      "about": "<p>Jugsalai is a township and business centre next to Tatanagar station, governed by its own municipal council within the Jamshedpur urban agglomeration. It is often called the wholesale market of Jamshedpur, and the area's first police station opened here in 1912. Neighbouring places include Kitadih, Harharguttu and the railway colony around Tatanagar, with Bistupur to the north.</p><p>Much of the housing is in apartment buildings put up by local builders, often three bedroom flats, along with older family homes in the market lanes. Market streets can be crowded during trading hours, so tutors usually prefer early morning or later evening slots and parking just off the main lanes. Tatanagar station is right beside the locality, and Salgajhari and Adityapur stations are other options. Tutors from Bistupur, Parsudih and Burmamines are the natural pool for home visits here. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jugsalai",
+        "https://www.99acres.com/jugsalai-jamshedpur-overview-piffid",
+        "https://en.wikipedia.org/wiki/Tatanagar_Junction_railway_station"
+      ]
+    },
+    "burmamines": {
+      "name": "Burmamines",
+      "zone": "South Jamshedpur & Tatanagar",
+      "type": "residential",
+      "about": "<p>Burmamines is a locality in the southern part of Jamshedpur, listed with Jugsalai, Kadma, Birsanagar and Bagbera among the southern neighbourhoods of the city. It adjoins Parsudih on the far side of Tatanagar station, and Jugsalai and Telco are also close neighbours. The locality is often written as Burma Mines, which is useful to know when searching for an address.</p><p>Homes are largely independent houses with some flats as well, so a tutor normally arrives at the door and can usually park outside. Tatanagar station is the nearest rail point and the station roads are the main way in, so tutors coming from the city centre should allow for traffic around the station at train times. Tutors from Jugsalai, Parsudih and Telco Colony can cover the area comfortably, and online classes are a good fit for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jamshedpur",
+        "https://en.wikipedia.org/wiki/Parsudih",
+        "https://www.99acres.com/independent-house-in-burma-mines-jamshedpur-ffid"
+      ]
+    },
+    "parsudih": {
+      "name": "Parsudih",
+      "zone": "South Jamshedpur & Tatanagar",
+      "type": "residential",
+      "about": "<p>Parsudih is a residential area on the outskirts of Jamshedpur, on the other side of Tatanagar station towards the Chaibasa highway. Its parts include Pramatha Nagar, Haludbani and Khasmahal, and it borders Jugsalai, Sunder Nagar, Bagbera, Telco and Burmamines. The locality has its own police station.</p><p>Most families live in private houses and apartment buildings rather than large gated complexes, so tutors are usually received at the doorstep or after a quick entry at a building gate. Tatanagar station is close by, and Salgajhari is also used for local travel. The Chaibasa road is the main approach, and school-time traffic near the station crossing is the thing to plan around. Tutors from Jugsalai, Burmamines and Telco Colony can reach Parsudih without crossing a river, which suits regular weekly schedules. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Parsudih",
+        "https://www.99acres.com/parsudih-jamshedpur-overview-piffid"
+      ]
+    },
+    "telco-colony": {
+      "name": "Telco Colony",
+      "zone": "East Jamshedpur",
+      "type": "residential",
+      "about": "<p>Telco Colony is a planned township in eastern Jamshedpur, built to house the workforce of a nearby vehicle works, and it is one of the more developed residential areas of the city. Its neighbours include Birsanagar, Ghorabandha and Parsudih, and Telco Road and Namdih Road connect it with the rest of the city. Salgajhari station is the nearest rail point for residents.</p><p>Housing is a mix of township quarters and privately built apartment buildings, most with two and three bedroom flats. Quarters are usually easy doorstep visits, while apartment buildings may ask tutors to sign in at the gate. Golmuri Road leads towards the city centre, so tutors from Golmuri, Birsanagar and Govindpur can reach the colony without trouble. Slots are easiest once factory shift traffic has cleared from the main roads. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/telco-colony-jamshedpur-overview-piffid",
+        "https://en.wikipedia.org/wiki/List_of_neighbourhoods_of_Jamshedpur",
+        "https://en.wikipedia.org/wiki/Jamshedpur"
+      ]
+    },
+    "birsanagar": {
+      "name": "Birsanagar",
+      "zone": "East Jamshedpur",
+      "type": "residential",
+      "about": "<p>Birsanagar is a large residential part of eastern Jamshedpur, divided into twelve zones that are split further into smaller sections. It sits near Baridih, Vijaya Gardens and Telco Colony, and has its own police station. Local shopping is centred on Birsanagar Market, Plaza Market and nearby complexes.</p><p>Homes are mostly independent houses on plotted lanes, with some rented rooms and a few apartment buildings, so a tutor usually arrives at the door and parks outside. Because the zones spread widely, it helps to share the zone number and a landmark when booking a demo. Salgajhari station is the local rail point, Tatanagar is reached via Station Road, and Straight Mile Road leads towards the city centre. Tutors from Baridih and Telco Colony are the most convenient choice for regular visits. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Birsanagar",
+        "https://www.99acres.com/birsanagar-jamshedpur-overview-piffid"
+      ]
+    },
+    "baridih": {
+      "name": "Baridih",
+      "zone": "East Jamshedpur",
+      "type": "residential",
+      "about": "<p>Baridih is a residential locality in eastern Jamshedpur and marks one end of Straight Mile Road, the longest arterial road in the city, which runs from Baridih to Dhatkidih. It is close to Birsanagar, Vijaya Gardens and Baridih Basti, and Baridih Market is a local shopping point. Birsanagar and Telco Colony lie further east.</p><p>Homes are mainly apartments and houses, mostly with two and three bedroom layouts, so a tutor could visit either an apartment building with a gate register or an independent house. Straight Mile Road gives a direct route to the central areas, and Tatanagar is reached by road via Kadani Road. Tutors from Birsanagar, Sidhgora and Telco Colony can reach Baridih easily, and weekday evening slots are simplest once office traffic on Straight Mile Road eases. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jamshedpur",
+        "https://www.99acres.com/baridih-jamshedpur-overview-piffid",
+        "https://www.99acres.com/sakchi-jamshedpur-overview-piffid"
+      ]
+    },
+    "govindpur": {
+      "name": "Govindpur",
+      "zone": "East Jamshedpur",
+      "type": "residential",
+      "about": "<p>Govindpur is a locality on the eastern side of Jamshedpur, near Gadhra, Chhota Gobindpur and Jojobera. Govindpur station, a passenger halt on the Howrah to Mumbai line, is located at Subhash Nagar in Khankripara. Government Market Road, Karpoori Park Road and Satyendra Road are the main local roads, with Golmuri Road leading back towards the city.</p><p>The area is known for affordable plots and independent houses built by local builders, with a handful of apartment buildings, so tutor visits are usually doorstep arrivals with space to park. Plaza Market is the nearby shopping area. Salgajhari station is another rail option for families. Because Govindpur is further from the centre, tutors from Telco Colony, Parsudih and Birsanagar are the most practical for home visits, and online classes help for specialist or senior subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Govindpur_railway_station",
+        "https://www.99acres.com/govindpur-jamshedpur-overview-piffid",
+        "https://en.wikipedia.org/wiki/List_of_neighbourhoods_of_Jamshedpur"
+      ]
+    },
+    "mango": {
+      "name": "Mango",
+      "zone": "Mango & Dimna",
+      "type": "mixed",
+      "about": "<p>Mango lies across the Subarnarekha river from the city centre and is linked to Sakchi by three bridges built side by side. It is governed by its own civic body within the Jamshedpur area and has grown from a small town into a large residential suburb. Nearby places include Dimna, Jawahar Nagar, Jharkhand Colony, Azad Nagar and Pardih, and the NH 18 runs through the area on the Dimna to Pardih stretch.</p><p>Housing is a mix of apartment complexes, builder buildings and independent houses, so some visits need gate registration and others are simple doorstep arrivals. Buses and autos run regularly between Sakchi and Mango, which helps tutors travelling from the city side. The Mango bridge and the Pardih and Dimna junctions get heavy traffic, and an elevated road is under construction on this stretch, so tutors usually plan visits outside the busiest hours. Tutors living in Mango itself are often the easiest choice. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mango_(Jamshedpur)",
+        "https://www.99acres.com/mango-jamshedpur-overview-piffid",
+        "https://avenuemail.in/easier-travel-from-jamshedpur-to-odisha-and-kolkata/"
+      ]
+    },
+    "dimna": {
+      "name": "Dimna",
+      "zone": "Mango & Dimna",
+      "type": "residential",
+      "about": "<p>Dimna is a residential locality on the Mango side of the Subarnarekha, near Mango, Jharkhand Colony and Ripit Colony. NH 18 passes through the area, giving road links towards Dhanbad in one direction and Baripada and Balasore in the other, and Dimna Chowk is a key junction on the highway. Dimna Lake, one of the city's drinking water reservoirs, lies further out.</p><p>Homes are a mix of apartment buildings and independent houses, and residents mention easy auto and cab availability. For tutors, a visit usually means either a quick gate entry at a building or arriving straight at the door. Traffic at Dimna Chowk can be heavy, and work on the elevated road between Pardih and Baliguma is under way, so off-peak slots are worth choosing. Tutors from Mango and nearby colonies are the most practical, with online classes as an option for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/dimna-jamshedpur-overview-piffid",
+        "https://avenuemail.in/easier-travel-from-jamshedpur-to-odisha-and-kolkata/",
+        "https://en.wikipedia.org/wiki/Jamshedpur"
+      ]
+    }
+  },
+  "zone_facts": {
+    "Central Jamshedpur": [
+      {
+        "fact": "Sakchi, one of the oldest neighbourhoods of Jamshedpur, was chosen in 1904 as the site for the steel plant around which the city grew; the first steel ingot was rolled on 16 February 1912.",
+        "source": "https://en.wikipedia.org/wiki/Sakchi"
+      },
+      {
+        "fact": "Sakchi Market is the oldest market in the city, and Sakchi Golchakkar is one of its busiest intersections.",
+        "source": "https://en.wikipedia.org/wiki/Sakchi"
+      },
+      {
+        "fact": "Bistupur was one of the earliest settlements formed during the planning of Jamshedpur and is now a business hub with showrooms, hotels, restaurants and offices.",
+        "source": "https://en.wikipedia.org/wiki/Bistupur"
+      },
+      {
+        "fact": "Straight Mile Road, the longest arterial road in the city, connects Dhatkidih to Baridih.",
+        "source": "https://en.wikipedia.org/wiki/Jamshedpur"
+      },
+      {
+        "fact": "The city lies at the confluence of the Kharkai and Subarnarekha rivers; the Subarnarekha is its principal river.",
+        "source": "https://en.wikipedia.org/wiki/Jamshedpur"
+      },
+      {
+        "fact": "Tatanagar railway station was originally called Kalimati and was renamed in 1919.",
+        "source": "https://en.wikipedia.org/wiki/Tatanagar_Junction_railway_station"
+      }
+    ],
+    "West Jamshedpur & Kharkai Side": [
+      {
+        "fact": "Adityapur is a municipal corporation in Seraikela Kharsawan district, separated from Jamshedpur by the Kharkai river.",
+        "source": "https://en.wikipedia.org/wiki/Adityapur"
+      },
+      {
+        "fact": "Two bridges cross the Kharkai between Adityapur and the city: one to Bistupur and one to Kadma, the latter giving a shortcut to NH 18 via Marine Drive.",
+        "source": "https://en.wikipedia.org/wiki/Adityapur"
+      },
+      {
+        "fact": "Adityapur station is on the Howrah–Nagpur–Mumbai line, in the Chakradharpur division of South Eastern Railway.",
+        "source": "https://en.wikipedia.org/wiki/Adityapur_railway_station"
+      },
+      {
+        "fact": "Gamharia Junction, on the Kandra road, is on the Howrah–Nagpur–Mumbai main line, with the line towards Asansol branching there.",
+        "source": "https://en.wikipedia.org/wiki/Gamharia_Junction_railway_station"
+      },
+      {
+        "fact": "NH 118, a spur of NH 18, runs from Asanboni near Jamshedpur through Jamshedpur, Adityapur and Kandra.",
+        "source": "https://en.wikipedia.org/wiki/National_Highway_118_(India)"
+      },
+      {
+        "fact": "Sonari's northern edge is Domuhani, the confluence of the Subarnarekha and Kharkai rivers; Marine Drive links Sonari with Kadma, Adityapur, Sakchi and Bistupur.",
+        "source": "https://en.wikipedia.org/wiki/Sonari,_Jamshedpur"
+      },
+      {
+        "fact": "The four-lane Domuhani bridge over the Subarnarekha links Sonari with Dobo on the Chandil side in Seraikela Kharsawan district.",
+        "source": "https://avenuemail.in/domuhani-bridge-over-subernarekha-to-be-operational-by-dec-31/"
+      }
+    ],
+    "South Jamshedpur & Tatanagar": [
+      {
+        "fact": "Tatanagar Junction, the city's main railway station, opened in 1910 and is in the Chakradharpur division of South Eastern Railway.",
+        "source": "https://en.wikipedia.org/wiki/Tatanagar_Junction_railway_station"
+      },
+      {
+        "fact": "Tatanagar lies on the Howrah–Nagpur–Mumbai line, the Asansol–Tatanagar–Kharagpur line and the branch line towards Badampahar.",
+        "source": "https://en.wikipedia.org/wiki/Tatanagar_Junction_railway_station"
+      },
+      {
+        "fact": "Jugsalai is a township and business centre adjacent to Tatanagar station, often called the wholesale market of Jamshedpur; its first police station opened in 1912.",
+        "source": "https://en.wikipedia.org/wiki/Jugsalai"
+      },
+      {
+        "fact": "Parsudih lies on the other side of Tatanagar station towards the Chaibasa highway and borders Jugsalai, Bagbera, Telco and Burmamines.",
+        "source": "https://en.wikipedia.org/wiki/Parsudih"
+      },
+      {
+        "fact": "Jugsalai is governed by its own municipal council within the Jamshedpur urban agglomeration.",
+        "source": "https://en.wikipedia.org/wiki/Jamshedpur"
+      }
+    ],
+    "East Jamshedpur": [
+      {
+        "fact": "Eastern Jamshedpur includes Telco Colony, Birsanagar, Baridih, Govindpur, Nildih and Ghorabandha.",
+        "source": "https://en.wikipedia.org/wiki/List_of_neighbourhoods_of_Jamshedpur"
+      },
+      {
+        "fact": "Birsanagar is divided into twelve zones, which are further split into smaller zones.",
+        "source": "https://en.wikipedia.org/wiki/Birsanagar"
+      },
+      {
+        "fact": "Govindpur station, a passenger halt at Subhash Nagar, Khankripara, is on the Howrah–Nagpur–Mumbai line in the Chakradharpur division.",
+        "source": "https://en.wikipedia.org/wiki/Govindpur_railway_station"
+      },
+      {
+        "fact": "Straight Mile Road runs from Baridih to Dhatkidih and is the longest arterial road in the city.",
+        "source": "https://en.wikipedia.org/wiki/Jamshedpur"
+      }
+    ],
+    "Mango & Dimna": [
+      {
+        "fact": "Mango lies across the Subarnarekha from the city and is connected to it by three bridges laid side by side.",
+        "source": "https://en.wikipedia.org/wiki/Mango_(Jamshedpur)"
+      },
+      {
+        "fact": "Mango is administered by its own civic body, separate from the Jamshedpur notified area committee.",
+        "source": "https://en.wikipedia.org/wiki/Mango_(Jamshedpur)"
+      },
+      {
+        "fact": "NH 18 passes through Jamshedpur on its route from Dhanbad via Purulia to Baharagora, Baripada and Balasore.",
+        "source": "https://en.wikipedia.org/wiki/National_Highway_18_(India)"
+      },
+      {
+        "fact": "An elevated corridor is being built on NH 18 (formerly NH 33) from Pardih Kali Mandir to Baliguma via Dimna Chowk, to take heavy vehicles off the Pardih, Mango and Dimna roads.",
+        "source": "https://avenuemail.in/easier-travel-from-jamshedpur-to-odisha-and-kolkata/"
+      },
+      {
+        "fact": "Buses and auto-rickshaws run regularly between Sakchi and Mango.",
+        "source": "https://en.wikipedia.org/wiki/Mango_(Jamshedpur)"
+      }
+    ]
+  }
+}

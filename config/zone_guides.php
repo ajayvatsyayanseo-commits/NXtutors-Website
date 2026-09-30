@@ -1739,4 +1739,421 @@ return [
             ],
         ],
     ],
+    // Thiruvananthapuram (1 Oct 2026), from database/seo-content/areas/thiruvananthapuram-zone-guides.json.
+    'Thiruvananthapuram' => [
+        'Kowdiar & Pattom' => [
+            'guide' => 'thiruvananthapuram-tuition-guide',
+            'intro' => [
+                'Kowdiar, Vellayambalam, Sasthamangalam, Pattom and Kesavadasapuram form the central-north belt of Thiruvananthapuram. Kowdiar is where the Rajapatha, the old royal road, begins before running down through Vellayambalam to East Fort. Housing leans towards large independent houses and villas on wide roads in Kowdiar and Sasthamangalam, with apartment buildings, many of them resale flats, filling in around Vellayambalam and the side streets off Pattom. Government offices and cultural venues sit close to the homes here.',
+                'The zone is built around busy junctions. Vellayambalam is a roundabout where roads from Kowdiar, Sasthamangalam, East Fort, Thycaud and Thampanoor meet; Pattom brings four roads together, including NH 66 towards north Kerala, and is a major stop for buses to Thampanoor and East Fort; at Kesavadasapuram, MC Road begins and meets NH 66. That makes the area easy to reach by bus or auto, but every junction slows sharply at office hours.',
+            ],
+            'tips' => [
+                'Book lessons to start after the evening office rush at Pattom, Vellayambalam and Kesavadasapuram; a slightly later slot usually keeps the tutor on time week after week.',
+                'In an apartment building, give the tutor\'s name and visiting days to the security desk once; in a Kowdiar or Sasthamangalam house, say which gate to use and where a scooter can stand.',
+                'Tell us the junction you live nearest to, since Pattom, Vellayambalam and Kesavadasapuram each draw on different bus routes and so on different tutors.',
+            ],
+        ],
+        'Peroorkada & Vattiyoorkavu' => [
+            'guide' => 'thiruvananthapuram-tuition-guide',
+            'intro' => [
+                'Peroorkada, Kudappanakunnu, Vattiyoorkavu and Nalanchira make up the northern suburbs, a zone of villas, independent houses and residential plots with fewer flats than the centre. Peroorkada is a corporation ward on the road towards Nedumangad and includes gated villa communities. Kudappanakunnu is home to the Civil Station and the District Collector\'s office, with villas and houses around them. Vattiyoorkavu is comparatively high-lying, crossed by the Killi and Karamana rivers, and has become popular with middle-class families.',
+                'Nalanchira sits on MC Road between Mannanthala and Pananvila, in named residential nagars, and is known for its many schools and training institutes. Buses run from the Vattiyoorkavu stop to East Fort, MC Road carries services towards Kesavadasapuram, and the Sreekaryam–Peroorkada Road links the zone to NH 66. A flyover has been approved at the Peroorkada junction. Traffic peaks follow government office hours around the Civil Station and school hours along MC Road.',
+            ],
+            'tips' => [
+                'In a gated villa community, register the tutor at the main gate before the first class so entry does not eat into the lesson; independent houses usually need only the house name and lane.',
+                'Around Kudappanakunnu, plan after-school lessons to begin once the government offices have emptied; along MC Road in Nalanchira, wait until the school and institute crowd has cleared.',
+                'Allow some buffer around the Peroorkada junction while the approved flyover work goes on, and send a map pin, since many homes here are known by house name rather than number.',
+            ],
+        ],
+        'Ulloor & Kazhakkoottam' => [
+            'guide' => 'thiruvananthapuram-tuition-guide',
+            'intro' => [
+                'Ulloor, Sreekaryam and Kazhakkoottam line the NH 66 corridor running north-east from the city towards the IT park. Ulloor sits between Kesavadasapuram and Sreekaryam and is known for its large medical campus and hospitals, with houses, apartment buildings and plots behind the main road. Sreekaryam, roughly midway between Kazhakkoottam and Palayam, is an education and research hub where apartment projects, rented houses and gated villa communities are popular with people working at the IT park.',
+                'Kazhakkoottam is the city\'s IT suburb and one of its fastest-growing areas. The IT park, dedicated in November 1995, stands beside NH 66, and the junction where the highway meets the Kazhakkoottam–Kovalam bypass has had an elevated four-lane flyover since December 2022. Kazhakuttam railway station and frequent buses along NH 66 connect the area with the city. A metro route along this corridor has been proposed but is not built.',
+            ],
+            'tips' => [
+                'With many parents on IT shifts, set lessons around shift-change times or move one session a week to the weekend, and ask for a tutor who can switch to online on long workdays.',
+                'Apartment projects and villa communities along NH 66 register visitors, so arrange a standing entry for the tutor in the first week instead of a call from the gate each time.',
+                'Near Ulloor, route the tutor around the hospital junction at peak hours, especially for homes on the Akkulam road or in the inner lanes behind the main road.',
+            ],
+        ],
+        'Thycaud & Karamana' => [
+            'guide' => 'thiruvananthapuram-tuition-guide',
+            'intro' => [
+                'Thycaud, Vazhuthacaud, Poojappura, Thirumala, Karamana and Nemom make up the south and west of the city. Thycaud is a residential locality of villas and houses next to Thampanoor, where Thiruvananthapuram Central railway station, opened in 1931, stands opposite the central bus station. Vazhuthacaud mixes homes, many in newer apartment buildings, with offices, the radio station and a theatre. Poojappura combines homes with state government offices, and Thirumala is a quiet hillside suburb of houses and villas.',
+                'Karamana is green and densely lived in, with the river running through it and traditional theruvu, narrow streets of wall-sharing houses, in its older core. NH 66 passes through Karamana and Nemom on its way south towards Kanyakumari. Nemom\'s railway station was renamed Thiruvananthapuram South in 2024 and is being developed as a satellite to Central. With Thampanoor and the East Fort bus terminal close by, this is the easiest zone to reach by public transport.',
+            ],
+            'tips' => [
+                'In Karamana\'s old streets, favour a tutor who comes on foot or by scooter, and agree where a two-wheeler can be parked before the first lesson.',
+                'Around Thampanoor, Vazhuthacaud and Poojappura the roads are heaviest at office hours, so evening lessons that start after the rush are easier to keep on time.',
+                'For Thirumala and Nemom, where most homes are independent houses, share the house name, the lane and a landmark; the tutor usually has doorstep access and room to park.',
+            ],
+        ],
+    ],
+    // Nagpur (1 Oct 2026), from database/seo-content/areas/nagpur-zone-guides.json.
+    'Nagpur' => [
+        'Central West Nagpur' => [
+            'guide' => 'nagpur-tuition-guide',
+            'intro' => [
+                'Dharampeth, Gokulpeth, Shankar Nagar, Bajaj Nagar, Laxmi Nagar, Ramdaspeth, Dhantoli and Civil Lines make up the established centre-west of Nagpur, just west of Sitabuldi, the city\'s main market. Homes are a mix of apartment buildings and older family houses set among shops, cafés, clinics and offices. Ramdaspeth is known for larger apartments, Dhantoli for its many clinics, and Civil Lines, laid out in the British period, for wide avenues, bungalows and government colonies.',
+                'The metro serves this zone well. Sitabuldi is the interchange between the Orange and Aqua Lines; the Aqua Line opened west from Sitabuldi in January 2020 with stops at Shankar Nagar Square and LAD Square on North Ambazari Road, Congress Nagar on the Orange Line sits in Dhantoli, and Zero Mile Freedom Park and Kasturchand Park serve Civil Lines. Street parking near markets and clinics is tight, so the metro and two-wheelers are the easier ways in.',
+            ],
+            'tips' => [
+                'Ask for a tutor who comes by metro or two-wheeler; parking near the Dharampeth market lanes and Dhantoli\'s clinic streets is hard to find in the evening.',
+                'Book after-school slots before the evening shopping rush on the main roads, and in Civil Lines allow extra time on days when legislative sessions or official events are on.',
+                'In government colonies and apartment buildings, give the gate the tutor\'s name and timing before the first lesson; bungalows and older houses usually open straight onto the road.',
+            ],
+        ],
+        'Hingna Road and Ring Road' => [
+            'guide' => 'nagpur-tuition-guide',
+            'intro' => [
+                'Pratap Nagar, Trimurti Nagar and Jaitala form the planned south-west of Nagpur, between the Ring Road and Hingna Road. Pratap Nagar runs along the Ring Road with plotted-layout homes and apartment buildings in pockets such as Padole Layout and Gayatri Nagar. Trimurti Nagar is laid out on a regular plan with wide roads and shops around its square, and Jaitala, reached by Jaitala Road from Hingna Road near Parsodi, has many independent houses alongside newer flats.',
+                'The Aqua Line runs along Hingna Road to its western terminus at Lokmanya Nagar, with Subhash Nagar station in Parsodi and Rachana Ring Road Junction north-west of Trimurti Nagar Square. Hingna Road continues as a state highway to the industrial estate at Hingna, and Phase II of the metro, under construction, includes an extension from Lokmanya Nagar towards Hingna. Wide streets make parking easy, but the Ring Road fills with office traffic in the evening.',
+            ],
+            'tips' => [
+                'For a tutor coming from the centre, use Subhash Nagar or Rachana Ring Road Junction station plus an auto, and set the lesson to start after the Ring Road evening peak.',
+                'Plotted-layout houses here usually let the tutor park at the door; say which lane and plot number in the layout, since many layouts look alike from the main road.',
+                'Newer apartment buildings in Jaitala and Pratap Nagar may keep a visitor register, so share the tutor\'s name with the gate before the demo class.',
+            ],
+        ],
+        'Wardha Road' => [
+            'guide' => 'nagpur-tuition-guide',
+            'intro' => [
+                'Khamla, Sonegaon, Somalwada, Manish Nagar and Besa line Wardha Road on the airport side of south Nagpur. Housing is dominated by two- and three-bedroom apartment buildings, with independent homes in the older layouts and villas, houses and plots in Besa\'s newer layouts along Besa-Pipla Road. Manish Nagar is linked to Wardha Road by a railway underbridge, and the airport and the MIHAN area lie further south along the same corridor, reached by Wardha Road and the Outer Ring Road.',
+                'The Orange Line first opened on 8 March 2019 between Sitabuldi and Khapri, running along Wardha Road, so this zone has a string of stations. Ujjwal Nagar, also known as Somalwada, serves Manish Nagar, Besa and Beltarodi, Airport station in New Manish Nagar is linked by feeder bus to the terminal, and Jaiprakash Nagar station is the usual link for Khamla. Wardha Road carries heavy traffic in the morning and evening peaks.',
+            ],
+            'tips' => [
+                'Pick a tutor on the Orange Line where you can: most homes are an auto ride from a Wardha Road station, which is easier than driving the road at peak hours.',
+                'Around Manish Nagar, allow a little extra time for the railway crossing and underpass at busy hours, especially for lessons that start in the early evening.',
+                'Apartment gates along Wardha Road keep visitor registers, so give the tutor\'s name and visiting days in advance and ask the gate to note them for every week.',
+            ],
+        ],
+        'North Nagpur' => [
+            'guide' => 'nagpur-tuition-guide',
+            'intro' => [
+                'Sadar, Seminary Hills, Gittikhadan, Mankapur, Koradi Road and Zingabai Takli make up North Nagpur. Sadar is a busy mixed locality with a commercial high street on Mount Road and flats and older houses behind it. Seminary Hills, named after a seminary whose classes began in 1851, has wooded slopes, government offices, Air Force establishments and residential colonies. Further out, Gittikhadan on Katol Road and the Koradi Road belt have many plotted layouts of independent houses.',
+                'Mankapur is crossed by Chhindwara Road and the Ring Road, and Zingabai Takli lies near Godhani Road and Godhani railway station. Metro coverage is thin: Kasturchand Park and Zero Mile Freedom Park on the Orange Line serve the southern edge near Sadar, and the line\'s northern section along Kamptee Road opened in December 2022, but most homes are reached by two-wheeler, car or auto along Katol, Koradi and Chhindwara Roads.',
+            ],
+            'tips' => [
+                'Favour a tutor with a two-wheeler or one living in North Nagpur, since most of Koradi Road, Mankapur and Zingabai Takli is some way from a metro station.',
+                'In Seminary Hills, government colonies have gated entrances, so inform security before the tutor arrives and ask the tutor to carry identification.',
+                'Near Sadar\'s Mount Road the evening crowd makes parking hard; ask the tutor to come a little early, and on Katol and Chhindwara Roads plan lessons after the office peak.',
+            ],
+        ],
+        'East and South-East Nagpur' => [
+            'guide' => 'nagpur-tuition-guide',
+            'intro' => [
+                'Nandanvan, Wathoda, Wardhaman Nagar, Manewada and Hudkeshwar cover the east and south-east of Nagpur. Nandanvan is a large, densely populated residential area of flats and family homes along Taj Bagh Road and the Middle Ring Road. Wathoda is developing, with houses, new apartment complexes and plots near Kharbi. Wardhaman Nagar is mixed, with homes and apartment buildings among shops and businesses along Bhandara Road near Lakadganj, and Itwari and Kalamna are its nearest railway stations.',
+                'Manewada, part of the Nagpur South area, has flats and plotted-layout houses along Besa Road, and Hudkeshwar, on the south-eastern edge, is mostly two- and three-bedroom apartments along Hudkeshwar Road. The Aqua Line\'s eastern section to Prajapati Nagar at Old Pardi Naka opened to the public in December 2022, with Vaishnodevi Square in Padole Nagar among its stations, but Manewada and Hudkeshwar have no metro and depend on road travel.',
+            ],
+            'tips' => [
+                'Bhandara Road carries heavy goods traffic, so for Wardhaman Nagar book lessons outside peak hours and ask the tutor to allow extra time on the main road.',
+                'For Manewada and Hudkeshwar, look first for tutors who live in the south-east or ride a two-wheeler, since the metro does not reach these localities.',
+                'Large new complexes in Wathoda and Hudkeshwar register visitors at the gate; share the tutor\'s details before the demo, and for plotted houses give the layout name and a map pin.',
+            ],
+        ],
+    ],
+    // Surat (1 Oct 2026), from database/seo-content/areas/surat-zone-guides.json.
+    'Surat' => [
+        'Adajan, Pal & Rander' => [
+            'guide' => 'surat-tuition-guide',
+            'intro' => [
+                'Adajan, Pal, Palanpur, Rander and Jahangirpura make up the western bank of the Tapi, all inside the municipal West Zone. Adajan faces Athwa across the river and mixes mid-segment flats with independent homes, Pal and Palanpur are mostly societies of ready 2 and 3 BHK apartments around Bhesan Road, and Jahangirpura, at the north-western edge near Variav and Dabholi, has flats alongside plotted houses on Hazira-Sayan Road.',
+                'Rander is the old heart of this bank, a trading town long before Surat became a port, with narrow lanes of family houses now ringed by newer lift buildings. Buses do much of the work here: Phase 2 Sitilink BRTS corridors start at Adajan Patiya for Jahangirpura and Pal RTO, and another runs from Pal RTO across the city. The Green Line metro through Bhesan, Palanpur Road and Adajan Gam is under construction and not yet open.',
+            ],
+            'tips' => [
+                'Look for a tutor who already lives on the western bank; crossing the Tapi bridges at office hours is the slowest part of any trip into Adajan or Pal.',
+                'In Pal and Palanpur societies, give the tutor\'s name and flat number to the gate before the first class; in Rander\'s old lanes, send a landmark and say where a two-wheeler can be parked.',
+                'If you live near Adajan Patiya or a Pal RTO corridor stop, mention it in the request, because tutors who travel by Sitilink bus can then be included.',
+            ],
+        ],
+        'Central Surat, Athwa & Ghod Dod Road' => [
+            'guide' => 'surat-tuition-guide',
+            'intro' => [
+                'Nanpura, Majura Gate, Athwa, Ghod Dod Road and Parle Point form the old centre south of the river. Nanpura has its own Central Zone ward office and keeps apartments, builder floors and older houses side by side; Majura Gate is a Ring Road junction ringed by offices, shops and mid-segment flats; and Athwa, which includes Athwalines and Athwa Gate, holds the South West Zone\'s administrative building facing Adajan across the Tapi.',
+                'Ghod Dod Road, named after horse races held on it in the 1900s and rebuilt as a retail street in the 1980s, runs from Majura Gate to Parle Point, with premium 3 BHK apartments behind its shops. Surat railway station and Udhna Junction are the rail points and Sitilink buses cover the surrounding roads. Majura Gate is planned as the interchange of both metro lines, which are still under construction.',
+            ],
+            'tips' => [
+                'On Ghod Dod Road and around Parle Point, fix the lesson straight after school, before the evening shopping crowd fills the road and the side streets.',
+                'For a house in Nanpura\'s narrow lanes, a tutor on a two-wheeler or in an auto is easier to keep than one who drives a car and must hunt for parking.',
+                'Because this zone sits in the middle of the city, you can widen the search to tutors from Adajan, Piplod and City Light without adding much travel.',
+            ],
+        ],
+        'Piplod, Vesu & Dumas Road' => [
+            'guide' => 'surat-tuition-guide',
+            'intro' => [
+                'Piplod, City Light, Vesu and Dumas Road are the newer, south-western side of the city, in the municipal South West Zone. Piplod is upmarket, with ready apartments and villas; City Light is mid-segment 2 and 3 BHK societies near Parle Point and Althan; Vesu is high-rise gated complexes, business parks and shopping centres along VIP Road; and Dumas Road carries gated societies towards Magdalla, the airport and the Arabian Sea coast.',
+                'Gaurav Path, the expressway that links the city with its airport, Magdalla port and Dumas village, runs through Piplod with a dedicated BRTS lane, so tutors without a vehicle can arrive by Sitilink bus. The Red Line metro has stations planned at VIP Road, Bhimrad, Convention Center and Dream City; trial runs began in March 2026, but the line is not open to passengers, so autos and two-wheelers still finish most trips.',
+            ],
+            'tips' => [
+                'Nearly every home here is in a gated society, so ask security for a standing visitor entry after the demo instead of registering the tutor afresh each week.',
+                'VIP Road and Dumas Road peak at office hours and on weekend evenings; a fixed weekday slot outside those peaks is the one most likely to hold all year.',
+                'If you are close to Gaurav Path, say so in the request, because the BRTS lane there brings in tutors who travel by bus.',
+            ],
+        ],
+        'Udhna, Althan & Pandesara' => [
+            'guide' => 'surat-tuition-guide',
+            'intro' => [
+                'Udhna, Althan, Bhatar and Pandesara make up the southern belt, where industrial estates sit beside affordable and mid-budget homes. Althan and Bhatar share one South West Zone ward area, Althan with 2 and 3 BHK societies and Bhatar with 1 and 2 BHK flats around Bhatar Char Rasta, while Udhna, along the Surat-Navsari highway, and Pandesara, a former village turned industrial hub with a housing board colony, fall in the South Zone.',
+                'This side is well served by rail and bus. Udhna Junction is on the Delhi-Mumbai and Ahmedabad-Mumbai main lines and starts the line to Jalgaon, and the first Sitilink corridor, from Udhana Darwaja to Sachin GIDC Naka, has run here since January 2014. Metro trial runs use the elevated stretch from Dream City to Althan Tenement, but passengers cannot ride it yet, and Pandesara is outside the first phase.',
+            ],
+            'tips' => [
+                'Industrial shift changes fill the highway and estate roads in Udhna and Pandesara, so agree a class time that falls after the shift traffic has cleared.',
+                'In housing board blocks and small buildings the tutor usually comes straight to the flat; in Althan and Bhatar societies, register the name at the gate desk once.',
+                'A tutor from Bhatar, City Light or Vesu can reach Althan without crossing the river, so include those neighbours when the nearest list is short.',
+            ],
+        ],
+        'Katargam, Varachha & Sarthana' => [
+            'guide' => 'surat-tuition-guide',
+            'intro' => [
+                'Katargam, Amroli, Varachha, Mota Varachha, Sarthana and Yogi Chowk lie north and east of the Tapi, in the North and East Zones. This is the diamond side of Surat: Katargam holds much of the trade and the North Zone office, Varachha is a hub of cutting and polishing, and many families here trace their roots to Saurashtra. Homes are mostly affordable 1 and 2 BHK flats, with newer multi-storey societies in Mota Varachha and Sarthana.',
+                'Amroli joined the city in 2006 along with Chhaprabhatha and Kosad, and Katargam was a nagar panchayat before that. Utran, Kosad and Surat stations serve the zone, and Sitilink BRTS runs from Katargam Darwaja to Kosad and via Canal Road to Sarthana Jakat Naka. The Red Line will start at Sarthana and pass Nature Park, Varachha Chopati Garden and Kapodra, but it is still being built.',
+            ],
+            'tips' => [
+                'Diamond-unit shift times shape traffic in Katargam and Varachha, so choose an evening slot that starts after the shift rush rather than during it.',
+                'In the smaller apartment buildings the tutor usually walks straight up; in newer Mota Varachha and Sarthana societies, the gate notes visitors on the first day.',
+                'Amroli and Mota Varachha sit on the northern edge, so many families pair a nearby tutor for regular subjects with an online specialist for senior papers.',
+            ],
+        ],
+    ],
+    // Ranchi (1 Oct 2026), from database/seo-content/areas/ranchi-zone-guides.json.
+    'Ranchi' => [
+        'Kanke Road, Morabadi & Bariatu' => [
+            'guide' => 'ranchi-tuition-guide',
+            'intro' => [
+                'Kanke Road, Morabadi and Bariatu make up the residential north of Ranchi. Kanke Road forks off Circular Road beyond Kutchery and heads towards Kanke and the Kanke Dam reservoir, with colonies such as Jawahar Nagar, Hatma and Indrapuri Colony behind it. Morabadi, also written Morhabadi, surrounds its large maidan, and Bariatu takes in the housing colony, Rani Bagan, Jora Talab and Sarhul Nagar. Older independent houses sit alongside newer apartment buildings, many with three-bedroom flats.',
+                'There is no rail line inside the zone, so tutors arrive by road. The Bajra–Bariatu Road and Joda Talab Road serve Bariatu, Morabadi Road and Karamtoli Road lead into Morabadi, and the Kanke–Patratu Road and the Ranchi Ring Road link the northern end of Kanke Road with the rest of the city. Autos and cabs are easy to find, and markets sit close to most homes. Tutors from Lalpur and the centre have several routes to choose between.',
+            ],
+            'tips' => [
+                'On days when the Morabadi ground hosts a large event, the roads around it fill up; book a morning slot or move that evening\'s lesson online.',
+                'Apartment buildings on Kanke Road and in Bariatu keep a gate register, so send the tutor\'s name and flat number to the guard before the demo.',
+                'For homes towards Kanke, pick a tutor from the northern colonies themselves, since the stretch from the centre along Kanke Road is slow at office closing time.',
+            ],
+        ],
+        'Lalpur, Kokar & Namkum' => [
+            'guide' => 'ranchi-tuition-guide',
+            'intro' => [
+                'Lalpur, Kokar and Namkum run from the commercial centre of Ranchi out to its south-eastern edge. Lalpur Chowk, where Circular Road meets Old Hazaribagh Road, sits in one of the city\'s main business districts, with Burdwan Compound and Kantatoli close by. Kokar is an industrial area run by the state\'s industrial development authority, surrounded by flats in Tiril Basti, Bank Colony and Vasuki Nagar. Namkum, further out, mixes an industrial estate with plots, houses and new gated enclaves.',
+                'Rail is closer here than anywhere else in the city. Ranchi Junction, opened in 1908 and headquarters of the railway\'s Ranchi division, is near Lalpur, and Namkon station on the Gomoh–Hatia line serves Namkum. The Kantatoli flyover, opened in October 2024, carries traffic from the Kokar side over the Kantatoli junction towards Bahu Bazar. Roads around Lalpur stay busy for much of the day, and parking near the chowk is limited, so the last leg is often an auto.',
+            ],
+            'tips' => [
+                'For Lalpur and the compounds near the chowk, fix a slot slightly away from the office and market rush, and ask the tutor to finish the trip by auto or e-rickshaw rather than hunt for parking.',
+                'Namkum homes are spread out: a tutor with their own two-wheeler is the practical choice, and a map pin with the enclave gate saves a missed demo.',
+                'Kokar apartment blocks usually register visitors, so share the building name and the tutor\'s details with the gate before the first lesson.',
+            ],
+        ],
+        'Harmu, Argora & Ratu Road' => [
+            'guide' => 'ranchi-tuition-guide',
+            'intro' => [
+                'Harmu, Argora and Ratu Road form the planned residential west of Ranchi. Harmu Housing Colony, set up in the early 1960s along Bypass Road, is one of the largest residential areas in the city, and Ashok Nagar beside it began in 1975 as a cooperative colony of senior state government employees, laid out in plots. Kadru holds the A. G. Colony, Pundag has newer apartment enclaves towards Rishabh Nagar, and Ratu Road runs north-west from Kutchery past Piska More and Vikas Nagar.',
+                'Argora has its own railway station on the South Eastern Railway, which serves most of the zone, while Ranchi Junction is reached via Station Road. Bypass Road, also called Harmu Road, is the main spine, with Argora Road, Pundag Road, AG Colony Road and the Kadru–Kumhartoli Road feeding it. The Ratu Road elevated corridor, opened in July 2025, lifts through traffic above the old road from near Raj Bhavan past Piska More, easing movement below.',
+            ],
+            'tips' => [
+                'Bypass Road and Argora Chowk are congested at peak hours, so ask the tutor to leave a little buffer for evening slots or choose a time after the office rush.',
+                'In Ashok Nagar and the older Harmu lanes the tutor can usually park at the door; in Pundag\'s enclaves, register the tutor\'s name at the gate first.',
+                'Kadru\'s lanes are narrow, so a tutor on a two-wheeler is easier to keep than one travelling by car.',
+            ],
+        ],
+        'Doranda, Hinoo & Hatia' => [
+            'guide' => 'ranchi-tuition-guide',
+            'intro' => [
+                'Doranda, Hinoo and Hatia make up Ranchi\'s south, from an old business district to a planned township. Doranda has South Office Para, North Office Para and Shyamali Colony around its markets. Hinoo is where the city\'s airport stands, with Shukla Colony and Kilburn Colony nearby. Dhurwa grew around the sector township of the heavy engineering plant set up in 1958, where the international cricket stadium also stands. Hatia adjoins it, and Tupudana lies on the Ranchi–Khunti road.',
+                'Hatia station, with three platforms, is both a terminus and a transit stop for the south, and Argora and Ranchi Junction serve Doranda and Hinoo. The Ranchi Ring Road, in use since 2008, passes close to Tupudana, where the state\'s industrial development authority developed an industrial area in two phases. Staff colonies and sector roads mean easy parking in Dhurwa and Hatia, while Doranda\'s market roads are busier. Homes further south are spread out and greener than the centre.',
+            ],
+            'tips' => [
+                'On cricket match days the roads near the stadium in Dhurwa fill up, so move that evening\'s lesson online or to the morning.',
+                'Some staff colonies in Dhurwa and Hatia ask visitors to sign in; give the tutor the sector or colony name and the gate to use.',
+                'For Tupudana and the outer south, a tutor on their own two-wheeler from Hatia or Dhurwa is the practical match, with online classes for specialist subjects.',
+            ],
+        ],
+    ],
+    // Jamshedpur (1 Oct 2026), from database/seo-content/areas/tata-zone-guides.json.
+    'Jamshedpur' => [
+        'Central Jamshedpur' => [
+            'guide' => 'jamshedpur-tuition-guide',
+            'intro' => [
+                'Central Jamshedpur is the old heart of the city: Sakchi, Bistupur, Circuit House Area, Golmuri and Sidhgora. Sakchi was the village chosen in 1904 as the site of the steel plant, and it has the city\'s oldest market and the busy Sakchi Golchakkar. Bistupur, one of the earliest planned settlements, is now the main business district. Circuit House Area is a compact pocket of houses, while Golmuri and Sidhgora mix older homes, newer buildings and quiet, green streets.',
+                'Straight Mile Road, the longest arterial road in the city, and Kalimati Road carry much of the traffic through the zone. Tatanagar is the main station for most families here, and the small Salgajhari halt is used from the Golmuri side. Because the zone sits on the city bank rather than across a river, tutors from Kadma, Sonari, Agrico or Golmuri can reach it by auto or two-wheeler without a bridge. Housing is a blend of apartments and independent houses.',
+            ],
+            'tips' => [
+                'Sakchi Market and the Bistupur shopping roads are crowded in the evening, so book a slot before the market rush or ask the tutor to park in a residential lane.',
+                'Flats in Bistupur and Sakchi often keep a gate register; houses in Circuit House Area and Sidhgora are simple doorstep visits.',
+                'Tutors living in Sakchi or Golmuri can also cover families across the Subarnarekha in Mango, since buses and autos run regularly between Sakchi and Mango.',
+            ],
+        ],
+        'West Jamshedpur & Kharkai Side' => [
+            'guide' => 'jamshedpur-tuition-guide',
+            'intro' => [
+                'West Jamshedpur and the Kharkai side take in Kadma and Sonari on the city bank and Adityapur and Gamharia across the Kharkai. Sonari is often described as the city\'s largest residential area, with many housing societies in its North, West, East and South layouts and the small airport. Kadma mixes older company quarters with private apartment buildings. Adityapur is a separate municipal corporation in Seraikela Kharsawan district, and Gamharia, beyond it on the Kandra road, is mostly plots and houses.',
+                'Bridges define this zone. Two cross the Kharkai from Adityapur, one to Bistupur and one to Kadma, and the four-lane Domuhani bridge links Sonari with Dobo on the Chandil side. Marine Drive runs along the western corridor, joining Sonari, Kadma, Adityapur, Sakchi and Bistupur. Adityapur station and Gamharia Junction sit on the Howrah–Nagpur–Mumbai line, and NH 118 passes through Adityapur towards Kandra. Domuhani, at Sonari\'s northern tip, is where the Subarnarekha and Kharkai meet.',
+            ],
+            'tips' => [
+                'Sonari and Adityapur societies usually register visitors and set parking rules, so send the tutor\'s name and vehicle number to the gate before the demo.',
+                'Kharkai bridge traffic peaks at office hours; a tutor from the same bank, or a slot after the rush, keeps lessons regular.',
+                'For Gamharia, a tutor from Adityapur is the practical home-visit match, with online classes for senior or specialist subjects.',
+            ],
+        ],
+        'South Jamshedpur & Tatanagar' => [
+            'guide' => 'jamshedpur-tuition-guide',
+            'intro' => [
+                'South Jamshedpur grows out of Tatanagar Junction, which opened in 1910 as Kalimati and took its present name in 1919. The station stands on the Howrah–Nagpur–Mumbai line, the Asansol–Tatanagar–Kharagpur line and the branch towards Badampahar. Jugsalai, right beside it, is a township with its own municipal council and the city\'s wholesale market. Parsudih lies on the far side of the station towards the Chaibasa highway, and Burmamines, often written Burma Mines, sits next to it.',
+                'Housing here is mostly private houses and apartment buildings rather than large gated complexes. Jugsalai has many builder-built flats alongside older family homes in its market lanes, Parsudih takes in Pramatha Nagar, Haludbani and Khasmahal, and Burmamines is largely independent houses. The station roads are the main way in from the centre, and Salgajhari is a second rail option. Tutors from Jugsalai, Parsudih, Burmamines and Telco Colony can move around the zone without crossing a river.',
+            ],
+            'tips' => [
+                'Jugsalai\'s market lanes crowd during trading hours, so early-morning or later-evening slots are easier, with parking just off the main lanes.',
+                'Train times bring extra traffic to the Tatanagar station roads and crossing; allow a buffer for tutors coming to Parsudih or Burmamines from the centre.',
+                'Write Burmamines as Burma Mines as well when sharing an address, since both spellings are in use.',
+            ],
+        ],
+        'East Jamshedpur' => [
+            'guide' => 'jamshedpur-tuition-guide',
+            'intro' => [
+                'East Jamshedpur is the city\'s belt of planned and plotted colonies: Telco Colony, Birsanagar, Baridih and Govindpur. Telco Colony is a township built for the workforce of a nearby vehicle works, with quarters and private flats. Birsanagar is divided into twelve zones, each split into smaller sections, and is mostly independent houses on plotted lanes. Baridih marks the eastern end of Straight Mile Road, and Govindpur, near Gadhra and Jojobera, is known for affordable plots and houses.',
+                'Rail is light but useful. Salgajhari is the local station for Telco Colony and Birsanagar, and Govindpur has a passenger halt at Subhash Nagar in Khankripara on the Howrah–Nagpur–Mumbai line. Golmuri Road leads back towards the centre, and Straight Mile Road gives Baridih a direct run to Dhatkidih. Birsanagar Market, Plaza Market and Baridih Market are the local shopping points. Most homes allow parking at the door, which makes regular home lessons straightforward for tutors living in the zone.',
+            ],
+            'tips' => [
+                'In Birsanagar, always give the zone number and a landmark when booking the demo, because the zones spread over a wide area.',
+                'Around Telco Colony, set lesson times after factory shift traffic has cleared from the main roads.',
+                'For Govindpur, a tutor from Telco Colony, Parsudih or Birsanagar is the most practical, with online sessions for specialist senior subjects.',
+            ],
+        ],
+        'Mango & Dimna' => [
+            'guide' => 'jamshedpur-tuition-guide',
+            'intro' => [
+                'Mango and Dimna lie across the Subarnarekha from the city centre. Mango is joined to Sakchi by three bridges built side by side and is run by its own civic body; it has grown from a small town into a large residential suburb of apartment complexes, builder buildings and independent houses around Jawahar Nagar, Jharkhand Colony, Azad Nagar and Pardih. Dimna, beside Ripit Colony, is residential too, with Dimna Lake, a drinking water reservoir, further out.',
+                'NH 18 runs through the zone on its way from Dhanbad via Purulia to Baharagora, Baripada and Balasore, and Dimna Chowk is a key junction on it. An elevated corridor is under construction from Pardih Kali Mandir to Baliguma via Dimna Chowk, meant to take heavy vehicles off the local roads. Buses and autos run regularly between Sakchi and Mango, and residents mention easy auto and cab availability, but the bridge and the junctions slow down at busy hours.',
+            ],
+            'tips' => [
+                'Choose a tutor who lives on the Mango side where possible; a daily crossing of the Subarnarekha bridges is the hardest part of any schedule here.',
+                'While the NH 18 elevated corridor is being built, pick off-peak slots and keep online lessons for evenings when traffic at Dimna Chowk and Pardih is heaviest.',
+                'Apartment complexes in Mango ask for a name at the gate, while independent houses in Dimna are doorstep visits; say which applies when booking.',
+            ],
+        ],
+    ],
+    // Kochi (1 Oct 2026), from database/seo-content/areas/kochi-zone-guides.json.
+    'Kochi' => [
+        'Central Ernakulam' => [
+            'guide' => 'kochi-tuition-guide',
+            'intro' => [
+                'Central Ernakulam takes in Marine Drive, Kaloor, Pachalam, Kadavanthra, Panampilly Nagar and Thevara, the older heart of the mainland. Marine Drive was built from the 1980s on land reclaimed from the backwater, and the blocks behind its walkway are mostly high-rise apartments. Panampilly Nagar was laid out as a planned settlement from 1978, Kadavanthra mixes offices with residential colonies, and Pachalam and Thevara keep older houses on quieter roads close to the water.',
+                'The Blue Line runs through the middle of the zone. Kaloor and Town Hall opened in October 2017, and Ernakulam South, Kadavanthra and Elamkulam followed in September 2019, with Town Hall and Ernakulam South connecting to the main railway stations. The High Court Water Metro terminal near Marine Drive has linked the centre with Fort Kochi and Vypin since April 2023. Kadavanthra Junction is one of the busiest crossings in the city, which matters for tutors who drive.',
+            ],
+            'tips' => [
+                'In the towers along Marine Drive, give the tutor\'s name to the reception or security desk before the demo and ask the building where a visitor may park.',
+                'Tutors coming from the north or south can use Kaloor, Town Hall, Ernakulam South or Kadavanthra station and finish by auto; Thevara has no station, so the auto leg is longer.',
+                'Kadavanthra Junction and the Kaloor stadium area slow down at peak hours and on event days, so fix lesson times that avoid them or move that day\'s class online.',
+            ],
+        ],
+        'Edappally & North Kochi' => [
+            'guide' => 'kochi-tuition-guide',
+            'intro' => [
+                'Edappally and North Kochi follow the highway and the metro from Edappally, Elamakkara and Palarivattom up through Cheranallur and Kalamassery to Aluva on the Periyar. Edappally is one of the city\'s main road hubs, where the national highways meet the Kochi Bypass under a flyover opened in 2016. Kalamassery is a municipality long known for its factories and campuses, with housing growing around them, and Aluva has been a municipality since 1921, on the river where it divides in two.',
+                'This is the oldest stretch of the Kochi Metro: the section from Aluva to Palarivattom, with stations including Kalamassery, Pathadipalam and Edapally, opened to the public in June 2017, and Kalamassery station connects with the railway. Cheranallur gained a Water Metro terminal in March 2024 on the route to Eloor. An extension from Aluva towards the airport and Angamaly is still only a proposal, so today\'s plans should rest on the line that is running.',
+            ],
+            'tips' => [
+                'A tutor who lives near a Blue Line station between Aluva and Palarivattom can reach most homes in this zone with a short auto ride at the end, which beats driving through Edappally junction.',
+                'In Kalamassery and Cheranallur, set class times away from shift changes at the industrial gates and heavy container traffic on the highway, when roads are at their slowest.',
+                'In Aluva, move lessons near the riverbank earlier or online during the Sivarathri festival crowds; houses in the town usually have space to park at the gate.',
+            ],
+        ],
+        'Kakkanad & East Kochi' => [
+            'guide' => 'kochi-tuition-guide',
+            'intro' => [
+                'Kakkanad and East Kochi cover Kakkanad, Thrikkakara, Vazhakkala, Vennala and Thammanam. Kakkanad grew from villages among paddy fields into the headquarters of Ernakulam district, with the Civil Station, a special economic zone and several IT parks, and most homes there are apartment complexes and gated villa communities. It lies within Thrikkakara municipality, formed in November 2010, whose older parts near the temple are houses on plots, while Vennala and Thammanam mix older homes, housing colonies and newer apartments.',
+                'There is no metro station in this zone yet. The Pink Line, planned to run from Kaloor through Palarivattom Junction, Vazhakkala and Kakkanad Junction to the IT parks, is under construction. For now the Seaport–Airport Road carries most traffic, and the Water Metro between Vyttila and a terminal at Chittethukara, open since April 2023, is the one link by water. Office-hour traffic towards the IT parks is heavy, so the timing of a lesson matters here more than anywhere.',
+            ],
+            'tips' => [
+                'Book weekday classes for after the office rush towards the IT parks, or use weekend mornings, because the Seaport–Airport Road is slowest at the start and end of the working day.',
+                'Gated communities in Kakkanad register every visitor, so add the tutor to the visitor list or app before the demo and ask where the tutor should park.',
+                'Vennala and Thammanam families can draw on tutors who come via Vyttila or Palarivattom stations; in Thrikkakara, plan around the temple festival days, when roads near the temple are crowded.',
+            ],
+        ],
+        'Vyttila & Tripunithura' => [
+            'guide' => 'kochi-tuition-guide',
+            'intro' => [
+                'Vyttila and Tripunithura cover the southern approaches to the city: Vyttila, Elamkulam, Maradu and Tripunithura. Vyttila, a panchayat until 1967, is densely residential with towers, houses and villas around one of the largest junctions in Kerala. Elamkulam holds named residential colonies of independent houses, with newer apartments towards the Chilavannur backwater. Maradu, on river islands at the mouth of Vembanad Lake, is led by apartment towers, and Tripunithura, once capital of the Kingdom of Cochin, keeps palaces and older family houses.',
+                'Vyttila is Kochi\'s main interchange, where the mobility hub for buses, the Blue Line station and the Water Metro to Kakkanad meet. Flyovers at Vyttila and at Kundannoor junction in Maradu opened in January 2021. The Blue Line runs on through Thaikoodam, opened in 2019, Pettah, opened in 2020, and Vadakkekotta, opened in 2022, to Thrippunithura Terminal, its southern end since March 2024. That gives this zone some of the widest choice of tutors who can arrive by train.',
+            ],
+            'tips' => [
+                'Car trips through the Vyttila and Kundannoor junctions are slow at peak hours, so a tutor who comes by metro and takes a short auto keeps to time more reliably.',
+                'In Maradu\'s high-rise complexes, gate registration is standard and visitor parking is usually inside the complex; confirm both with the security desk before the demo.',
+                'During the temple festival in Tripunithura\'s old town, shift that week\'s lessons earlier in the day or hold them online, since the centre is crowded.',
+            ],
+        ],
+        'West Kochi & Islands' => [
+            'guide' => 'kochi-tuition-guide',
+            'intro' => [
+                'West Kochi and the islands lie across the harbour: Fort Kochi, Mattancherry, Palluruthy and Vypin. Fort Kochi, where the Portuguese built a fort in 1503, became a municipality in 1866, and its old houses and warehouses are now homes, guest houses and cafes. Mattancherry, long a centre of the spice trade, has close-packed trading streets. Palluruthy takes in Thoppumpady, Perumpadappu, Edakochi, Mundamveli and Kumbalangi, and Vypin is a long barrier island run by six gram panchayats.',
+                'There is no metro on this side of the harbour, so boats and bridges set the routes. The High Court Water Metro routes to Fort Kochi and Vypin opened in April 2023, and Mattancherry was added in October 2025 via Willingdon Island. The Goshree bridges, built in 2004, join Vypin to the mainland through Vallarpadam and Mulavukad, and Thoppumpady is the road gateway to Palluruthy. Most families live in independent houses, so the tutor usually comes straight to the door.',
+            ],
+            'tips' => [
+                'Ask first for a tutor who lives on your side of the harbour; for tutors coming from Ernakulam, the Water Metro and a short walk from the jetty is often steadier than the bridges.',
+                'In the lanes of Fort Kochi and Mattancherry, parking is scarce and tourist streets fill later in the day, so earlier slots and a tutor on foot or on a two-wheeler work well.',
+                'For specialist subjects in the northern villages of Vypin, or around Palluruthy when the bridge approaches are busy, pair a local home tutor with online classes.',
+            ],
+        ],
+    ],
+    // Coimbatore (1 Oct 2026), from database/seo-content/areas/coimbatore-zone-guides.json.
+    'Coimbatore' => [
+        'RS Puram, Race Course & Gandhipuram' => [
+            'guide' => 'coimbatore-tuition-guide',
+            'intro' => [
+                'RS Puram, Tatabad, Saibaba Colony, Race Course and Gandhipuram form the centre of Coimbatore. RS Puram is a grid of straight roads between Mettupalayam Road and Thadagam Road, busy with shops on its main streets and residential on its cross roads. Tatabad runs in eleven numbered streets, Saibaba Colony is mostly independent houses with newer apartment buildings, and Race Course has tree-lined streets of apartments around a popular walking track.',
+                'Gandhipuram, once known as Katoor, became a commercial centre after its central bus terminus opened in 1974, and town buses from there reach every part of the city. Rail is close too: Coimbatore Junction, open since 1873, is on the main line, and Coimbatore North Junction in Tatabad serves the Chennai line and the branch to Mettupalayam. Apartments here have a guard at the entrance; houses open straight onto the street.',
+            ],
+            'tips' => [
+                'Book the class soon after school, before the evening shopping crowd fills the main streets of RS Puram and the roads around the Gandhipuram terminus.',
+                'Share the road name and door number; in RS Puram and Tatabad\'s numbered streets that is usually enough for a tutor to find the house on the first visit.',
+                'A tutor without a vehicle can arrive by town bus to Gandhipuram or by train to Coimbatore North Junction, so mention the nearest stop in your request.',
+            ],
+        ],
+        'Saravanampatti, Ganapathy & Thudiyalur' => [
+            'guide' => 'coimbatore-tuition-guide',
+            'intro' => [
+                'This northern zone follows two roads out of the city. Sathy Road runs through Ganapathy, described as the most densely populated area inside the corporation, and on to Saravanampatti, which has grown quickly around an IT special economic zone and other office parks. Mettupalayam Road leads to Thudiyalur, a settled area of independent houses and plotted layouts. Saravanampatti and Thudiyalur were both panchayat towns until they joined the corporation in 2011.',
+                'Housing changes sharply across the zone: narrow streets of houses in Ganapathy, gated apartment complexes and villa communities in Saravanampatti, and houses with their own gates in Thudiyalur. Thudiyalur railway station, reopened in 2017, is served by local MEMU trains between Coimbatore Junction and Mettupalayam. Sathy Road has no railway, and a metro corridor along it has only been proposed, not sanctioned, so buses and two-wheelers carry most tutors.',
+            ],
+            'tips' => [
+                'In Saravanampatti complexes, add the tutor to the visitor app or the gate list before the demo, and ask for a standing entry once the tutor is chosen.',
+                'Sathy Road is heaviest when offices open and close, so a class after the evening office rush or on a weekend morning suits many working parents here.',
+                'In Thudiyalur, a tutor from the city side can take a MEMU train to Thudiyalur station and walk or take an auto from there; in Ganapathy, add a landmark to the house number.',
+            ],
+        ],
+        'Peelamedu, Kalapatti & Avinashi Road' => [
+            'guide' => 'coimbatore-tuition-guide',
+            'intro' => [
+                'Avinashi Road is Coimbatore\'s main east-west arterial, running from the Uppilipalayam flyover near Grey Town past Peelamedu and the airport to the Neelambur junction on NH 544. Offices, IT parks and hotels line it, with apartments, villas and independent houses on the streets behind. Peelamedu, whose foundation stone was laid in 1711, is a large commercial and educational neighbourhood with every type of home, from plots to villa communities.',
+                'Kalapatti, near the airport, was a panchayat town until 2011 and now sits in the corporation\'s east zone; plots and houses still make up most of it, with apartments growing. The elevated expressway on Avinashi Road carries traffic above the road from Uppilipalayam to the Goldwins junction in Peelamedu. Pilamedu railway station is on the main line, and a metro corridor along Avinashi Road has been proposed but is not sanctioned.',
+            ],
+            'tips' => [
+                'For a home just off Avinashi Road, ask for a tutor who lives on the same side of the road, which saves U-turns and waits at the junctions.',
+                'Some Kalapatti layouts are spread out and their streets are not widely known, so send the tutor a map pin before the first class.',
+                'Office traffic peaks on Avinashi Road in the morning and early evening; a class that begins after the evening rush is easier for tutors coming from the city side.',
+            ],
+        ],
+        'Ramanathapuram, Singanallur & Trichy Road' => [
+            'guide' => 'coimbatore-tuition-guide',
+            'intro' => [
+                'Trichy Road, part of NH 81, leaves the centre near Coimbatore Junction and runs through Ramanathapuram, Singanallur and Ondipudur towards Sulur. Ramanathapuram has been inside the corporation since 1882 and mixes independent houses, apartments and a few villa projects. Sowripalayam, between Trichy Road and the Peelamedu side, grew from a village into a neighbourhood of mid-income apartment buildings put up by local builders, alongside older homes.',
+                'Singanallur was a separate municipality until 1982; the Noyyal river runs to its south, and its lake was declared a biodiversity conservation zone in 2013. Ondipudur has been part of the city since 1981 and falls in the east zone. The Singanallur bus terminus serves routes to southern and central Tamil Nadu, and Singanallur railway station, at Neelikonampalayam, lies on the main line between Irugur and Pilamedu.',
+            ],
+            'tips' => [
+                'If you live on the far side of Trichy Road from the city, ask for a tutor from your own side to avoid crossing the busy road at rush hour.',
+                'In the smaller apartment buildings of Sowripalayam and Ramanathapuram, tell the watchman the class days so the tutor is let in without delay each week.',
+                'The Singanallur junction is among the busiest points on Trichy Road, so start lessons before or after the evening rush rather than during it.',
+            ],
+        ],
+        'Podanur, Kuniyamuthur & Vadavalli' => [
+            'guide' => 'coimbatore-tuition-guide',
+            'intro' => [
+                'This zone wraps round the south and west of the city. Podanur grew around a railway junction opened in 1862, which now serves the main line and the line to Pollachi. Sundarapuram and Kurichi lie along Pollachi Road; Kurichi, north of its lake, became a municipality in 2004 before merging with the city. Selvapuram, on the Noyyal, has been part of Coimbatore since 1866, with Siruvani Road as its main road.',
+                'West and south-west, the city meets the Western Ghats. Kuniyamuthur is on the road to Palakkad, where many families build their own houses; Kovaipudur is a township set up in the late 1970s at the foothills; and Vadavalli, on Marudamalai Road, is a former farming village that came into the corporation in 2011. Most homes across the zone are independent houses, and the Ukkadam bus terminus links them with the city.',
+            ],
+            'tips' => [
+                'Most visits here are to houses, so the tutor parks at the gate; for villa communities and the gated part of Kovaipudur, add the tutor to the visitor list first.',
+                'Kovaipudur and Vadavalli sit at the edge of the city, so pair a nearby home tutor with online lessons when a specialist subject is needed.',
+                'Tutors coming by train can use Podanur Junction and finish by auto; in a big area such as Kurichi, share the street name and a landmark before the first class.',
+            ],
+        ],
+    ],
 ];

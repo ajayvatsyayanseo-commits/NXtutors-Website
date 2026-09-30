@@ -1,0 +1,425 @@
+{
+  "areas": {
+    "dharampeth": {
+      "name": "Dharampeth",
+      "zone": "Central West Nagpur",
+      "type": "mixed",
+      "about": "<p>Dharampeth is one of Nagpur's established central-west neighbourhoods, a residential and commercial hub where apartment buildings and family homes sit close to busy shopping streets. Its neighbours include Gokulpeth, Shivaji Nagar, Khare Town and Shankar Nagar, and Sitabuldi, the city's main market area, lies to the east. Shankar Nagar Square station, on North Ambazari Road at Khare Town, is the nearest Aqua Line stop, with LAD Square the next station towards Lokmanya Nagar.</p><p>For home tuition, most families live in independent homes or smaller apartment buildings, so a tutor usually reaches the door directly or signs in once at a building gate. Parking is tight near the market lanes, and many tutors find the metro plus a short auto ride simpler than driving. Evening sessions go more smoothly when booked slightly after the shopping rush on the main roads. Families wanting specialist board or entrance subjects often combine home visits with online classes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/dharampeth-nagpur-overview-piffid",
+        "https://en.wikipedia.org/wiki/Shankar_Nagar_Square_metro_station",
+        "https://en.wikipedia.org/wiki/List_of_localities_in_Nagpur"
+      ]
+    },
+    "gokulpeth": {
+      "name": "Gokulpeth",
+      "zone": "Central West Nagpur",
+      "type": "mixed",
+      "about": "<p>Gokulpeth is a compact, well-placed locality in the Dharampeth part of central-west Nagpur, sharing the 440010 postal area with Dharampeth, Shivaji Nagar and Shankar Nagar. It lies close to Ram Nagar and Uday Nagar, and residents are near Sitabuldi market, Dharampeth and Lokmat Square for shopping and daily errands. Homes are a mix of apartments and older family houses set among shops, cafés and small offices.</p><p>Aqua Line stations along North Ambazari Road, such as Shankar Nagar Square, serve the wider Dharampeth area, so a tutor coming across the city can use the metro and take an auto or walk for the last stretch. Two-wheelers are the easiest way to park near the market lanes. Afternoon slots straight after school tend to be calmer than late evening, when the shopping streets fill up. Online lessons work well for subjects that need a specialist teacher from elsewhere in the city. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "http://www.onefivenine.com/india/villages/Nagpur/Nagpur/Gokulpeth",
+        "https://www.99acres.com/gokulpeth-nagpur-overview-piffid",
+        "https://www.99acres.com/dharampeth-nagpur-overview-piffid"
+      ]
+    },
+    "ramdaspeth": {
+      "name": "Ramdaspeth",
+      "zone": "Central West Nagpur",
+      "type": "mixed",
+      "about": "<p>Ramdaspeth is a premium central locality between Dhantoli, Khare Town and Congress Nagar, known for larger three and four-bedroom apartments alongside shops, restaurants and commercial offices. It shares the 440010 postal area with Dharampeth and sits close to Civil Lines and the city centre, which makes it one of the more convenient addresses for families who want everything nearby.</p><p>Most homes are in apartment buildings, so tutors should expect a visitor entry at the gate and should share their name with the family in advance. Congress Nagar station on the Orange Line lies in neighbouring Dhantoli, and the Aqua Line stops on North Ambazari Road are also within reach by auto, which suits tutors who prefer not to drive into busy central streets. Evening traffic builds up around the commercial stretches, so earlier weekday slots are easier to keep on time. Specialist subjects can be taken online. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/ramdas-peth-nagpur-overview-piffid",
+        "https://en.wikipedia.org/wiki/Congress_Nagar_metro_station",
+        "https://en.wikipedia.org/wiki/List_of_localities_in_Nagpur"
+      ]
+    },
+    "civil-lines": {
+      "name": "Civil Lines",
+      "zone": "Central West Nagpur",
+      "type": "mixed",
+      "about": "<p>Civil Lines grew in the British period as a low-density area for civil officials, with wide avenues, bungalows with gardens and administrative buildings; the Vidhan Bhavan, where the winter session of the Maharashtra Legislature is held, stands here. Housing today includes old bungalows, government colonies and some apartments. Neighbours include Sadar, Ravi Nagar, Telangkhedi, Uday Nagar, Ramdaspeth and Sitabuldi.</p><p>Government housing colonies usually have a gate where visitors give their details, while bungalows open straight onto the road with ample space to park. On the metro, Zero Mile Freedom Park and Kasturchand Park stations on the Orange Line serve this side of the centre, with an auto for the last stretch. During legislative sessions and official events some roads can be busier than usual, so allow extra margin on those days. Parents can add online sessions for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vidhan_Bhavan,_Nagpur",
+        "https://www.99acres.com/civil-lines-nagpur-overview-piffid",
+        "https://en.wikipedia.org/wiki/Orange_Line_(Nagpur_Metro)"
+      ]
+    },
+    "shankar-nagar": {
+      "name": "Shankar Nagar",
+      "zone": "Central West Nagpur",
+      "type": "mixed",
+      "about": "<p>Shankar Nagar is a densely built central-west locality with a mix of homes and commercial buildings, lying next to Bajaj Nagar, Dharampeth and Shivaji Nagar. It has its own Aqua Line station, Shankar Nagar Square, on North Ambazari Road, which links it east to Sitabuldi and the railway station and west towards Hingna Road and Lokmanya Nagar. Ajni railway station, on the Delhi-Chennai line, is the nearest main-line railway stop.</p><p>This is one of the easier localities for a visiting tutor who does not drive: the metro stops in the neighbourhood itself, and most homes are a short walk or auto ride away. Apartment buildings may keep a visitor register at the gate. Street parking is limited around the square, so two-wheelers are more practical than cars. Weekday evening traffic at the main junction is heavier, so a slightly earlier start helps. Online classes suit subjects that need a specialist. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/shankar-nagar-nagpur-overview-piffid",
+        "https://en.wikipedia.org/wiki/Shankar_Nagar_Square_metro_station",
+        "https://en.wikipedia.org/wiki/Aqua_Line_(Nagpur_Metro)"
+      ]
+    },
+    "bajaj-nagar": {
+      "name": "Bajaj Nagar",
+      "zone": "Central West Nagpur",
+      "type": "residential",
+      "about": "<p>Bajaj Nagar is a well-established residential area in central-west Nagpur, bordered by Abhyankar Nagar, Shankar Nagar and Laxmi Nagar. Housing is mostly apartments and family homes in a settled, densely built setting, with shops and clinics close by. It shares the 440010 postal area with Dharampeth and Shankar Nagar.</p><p>The nearest metro stop is LAD Square on the Aqua Line, which lies on North Ambazari Road, so a tutor can arrive by metro and cover the last stretch on foot or by auto. Parents in apartment buildings should let the gate know when a tutor is expected, which saves time at the start of each class. Inner lanes are narrow in places, so two-wheelers are easier to park than cars. After-school and early evening slots are popular here, and booking early in the week helps. Specialist subjects can also be covered online. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/bajaj-nagar-nagpur-overview-piffid",
+        "https://en.wikipedia.org/wiki/LAD_Square_metro_station",
+        "https://en.wikipedia.org/wiki/List_of_localities_in_Nagpur"
+      ]
+    },
+    "laxmi-nagar": {
+      "name": "Laxmi Nagar",
+      "zone": "Central West Nagpur",
+      "type": "residential",
+      "about": "<p>Laxmi Nagar is a premium residential locality in the 440022 postal area, mostly made up of three-bedroom apartments and family homes. It is surrounded by Bajaj Nagar, Abhyankar Nagar, Madhav Nagar, Pratap Nagar, Shankar Nagar and Surendra Nagar, and the Ring Road connects it to Wardha Road, the national highway towards the airport side of the city.</p><p>Rahate Colony station on the Orange Line is the usual metro link, with an auto for the final stretch, while Ajni railway station is the nearest main-line stop. Apartment buildings commonly register visitors, so families should share the tutor's name and timing with the gate. Traffic on the Ring Road builds up in the evening peak, and tutors coming from the Wardha Road side should plan for it. Families who want a specialist teacher for senior classes can combine home tuition with online lessons. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/laxminagar-nagpur-overview-piffid",
+        "https://en.wikipedia.org/wiki/Rahate_Colony_metro_station",
+        "https://en.wikipedia.org/wiki/List_of_localities_in_Nagpur"
+      ]
+    },
+    "dhantoli": {
+      "name": "Dhantoli",
+      "zone": "Central West Nagpur",
+      "type": "mixed",
+      "about": "<p>Dhantoli is an old central neighbourhood that historically housed the treasurer of the Raja of Nagpur. Today it is densely built and known for its many clinics and medical practices, with older homes and apartment buildings in between, and landmarks such as Patwardhan Grounds, which hosts exhibitions and public events. It lies next to Ramdaspeth and Congress Nagar.</p><p>Congress Nagar station on the Orange Line is located in Dhantoli, so tutors can reach most homes by metro and a short walk. Parking is difficult on streets lined with clinics, especially in the morning and evening consulting hours, so tutors coming by car should allow time to find a spot. Many families live in older independent homes where the tutor comes straight to the door. Online classes are a useful option for subjects that need a teacher from another part of the city. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dhantoli",
+        "https://en.wikipedia.org/wiki/Congress_Nagar_metro_station",
+        "https://en.wikipedia.org/wiki/List_of_localities_in_Nagpur"
+      ]
+    },
+    "pratap-nagar": {
+      "name": "Pratap Nagar",
+      "zone": "Hingna Road and Ring Road",
+      "type": "residential",
+      "about": "<p>Pratap Nagar is a residential area along the Ring Road in south-west Nagpur, in the 440022 postal area that also covers pockets such as Padole Layout and Gayatri Nagar. Housing is a mix of plotted-layout homes and apartment buildings, many of them on or just off the Ring Road. Laxmi Nagar, Trimurti Nagar and Jaitala are among its neighbours.</p><p>There is no metro station inside the locality, but the Ring Road leads to Rachana Ring Road Junction station on the Aqua Line at Hingna Road, from where an auto covers the last leg. In independent houses the tutor usually comes straight to the door; apartment buildings may ask for a visitor entry. The Ring Road carries heavy traffic at office hours, so tutors travelling across the city do better with slots that avoid the evening peak. Families can use online classes for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "http://www.onefivenine.com/india/villages/Nagpur/Nagpur/Ring-Road-Padole-Layout",
+        "https://en.wikipedia.org/wiki/Rachana_Ring_Road_Junction_metro_station",
+        "https://en.wikipedia.org/wiki/List_of_localities_in_Nagpur"
+      ]
+    },
+    "trimurti-nagar": {
+      "name": "Trimurti Nagar",
+      "zone": "Hingna Road and Ring Road",
+      "type": "residential",
+      "about": "<p>Trimurti Nagar is a planned residential locality with wide roads and a regular layout, lying between the Ring Road and Hingna Road in south-west Nagpur. Homes range from independent houses on plotted layouts to apartment buildings, with shops concentrated around Trimurti Nagar Square. Neighbouring areas include Pratap Nagar, Jaitala and Surve Nagar.</p><p>Two Aqua Line stations on Hingna Road, Subhash Nagar and Rachana Ring Road Junction, are the closest metro stops, so a tutor can arrive by metro and use an auto for the last leg. The wide streets make parking easier than in the older central areas, and many houses allow the tutor straight to the door. Ring Road traffic is heavier in the evening, so tutors crossing the city should build in a margin. Specialist subjects can be added through online lessons. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/trimurti-nagar-nagpur-overview-piffid",
+        "https://en.wikipedia.org/wiki/Rachana_Ring_Road_Junction_metro_station",
+        "https://en.wikipedia.org/wiki/Subhash_Nagar_metro_station_(Nagpur)"
+      ]
+    },
+    "jaitala": {
+      "name": "Jaitala",
+      "zone": "Hingna Road and Ring Road",
+      "type": "residential",
+      "about": "<p>Jaitala is a mid-segment residential area on the western side of Nagpur, reached by Jaitala Road, which links it to Hingna Road near Parsodi and Subhash Nagar. It has a good share of independent houses on plotted layouts alongside newer apartment buildings, and its neighbours include Trimurti Nagar, Pratap Nagar and Parsodi.</p><p>Subhash Nagar station on the Aqua Line, located in Parsodi, is the nearest metro stop, and autos cover the stretch along Jaitala Road. In independent homes the tutor comes straight to the door and can usually park outside, which suits tutors on two-wheelers. Newer apartment buildings are more likely to register visitors at the gate. Hingna Road gets busy with commuter traffic in the evening, so tutors coming from the city centre should allow for that. Online classes help where a specialist teacher is needed. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/jaitala-road-nagpur-overview-piffid",
+        "https://en.wikipedia.org/wiki/Subhash_Nagar_metro_station_(Nagpur)",
+        "http://www.onefivenine.com/india/villages/Nagpur/Nagpur/Jaitala"
+      ]
+    },
+    "khamla": {
+      "name": "Khamla",
+      "zone": "Wardha Road",
+      "type": "residential",
+      "about": "<p>Khamla is a residential locality in south-west Nagpur, close to Wardha Road and the airport side of the city, and its housing is mostly two and three-bedroom apartments with some independent homes. Its neighbours include Pande Layout, Atrey Layout, Tatya Tope Nagar and Jaiprakash Nagar, and it falls in the 440025 postal area.</p><p>Orange Line stations on Wardha Road, such as Jaiprakash Nagar, are the usual metro link, with an auto for the final stretch into the layouts. Ajni is the nearest main-line railway station. Apartment buildings generally ask visitors to sign in, so families should inform the gate before the first class. Traffic around Khamla Square and on Wardha Road builds up in the evening, which makes earlier slots easier for tutors travelling in. Specialist board or entrance subjects can be arranged online. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/khamla-nagpur-overview-piffid",
+        "https://www.99acres.com/pande-layout-nagpur-overview-piffid",
+        "https://en.wikipedia.org/wiki/Jaiprakash_Nagar_metro_station"
+      ]
+    },
+    "sonegaon": {
+      "name": "Sonegaon",
+      "zone": "Wardha Road",
+      "type": "mixed",
+      "about": "<p>Sonegaon lies along Wardha Road on the airport side of south Nagpur, with neighbouring pockets such as Rajiv Nagar, Jaiprakash Nagar and Savitri Vihar. Housing is a mix of apartment buildings and independent homes, with the airport and airport-related land close by. Two Orange Line stations serve the area: Ujjwal Nagar and Airport, the latter linked by a feeder bus to the airport terminal.</p><p>The metro makes Sonegaon straightforward for tutors who do not drive, since most homes are an auto ride from a Wardha Road station. Ajni and Khapri are the nearest railway stations. Apartment buildings usually keep a visitor register, while independent homes let the tutor come straight in. Wardha Road carries heavy traffic in the morning and evening peaks, so tutors should plan around those hours. Families can mix home tuition with online classes for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "http://www.onefivenine.com/india/villages/Nagpur/Nagpur/Wardha-Road-Sonegaon",
+        "https://en.wikipedia.org/wiki/Airport_metro_station_(Nagpur)",
+        "https://en.wikipedia.org/wiki/Ujjwal_Nagar_metro_station"
+      ]
+    },
+    "somalwada": {
+      "name": "Somalwada",
+      "zone": "Wardha Road",
+      "type": "residential",
+      "about": "<p>Somalwada sits on Wardha Road in south Nagpur, next to Manish Nagar and Manish Layout, and is dominated by ready two and three-bedroom apartment buildings along with some independent houses. It is part of the 440025 postal area, and the airport and the MIHAN special economic zone lie further south along the same corridor.</p><p>Ujjwal Nagar station on the Orange Line, also known as Somalwada station, serves the locality directly, and Jaiprakash Nagar station is also close by on Wardha Road. That makes the metro the simplest option for tutors coming from the city centre. Apartment gates usually register visitors, so families should share the tutor's name in advance. Wardha Road traffic is heaviest at office hours, and weekday evening classes are easier to keep on time when they start a little after the rush. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/somalwada-wardha-road-nagpur-overview-piffid",
+        "https://en.wikipedia.org/wiki/Ujjwal_Nagar_metro_station",
+        "https://en.wikipedia.org/wiki/Jaiprakash_Nagar_metro_station"
+      ]
+    },
+    "manish-nagar": {
+      "name": "Manish Nagar",
+      "zone": "Wardha Road",
+      "type": "residential",
+      "about": "<p>Manish Nagar is a popular residential locality near Wardha Road in south Nagpur, with apartment buildings and independent homes, and neighbours including Somalwada, New Manish Nagar, Besa and Beltarodi. Wardha Road and the Outer Ring Road connect it to the airport and the MIHAN area, and a railway underbridge has eased access between Wardha Road and the locality.</p><p>Ujjwal Nagar station on the Orange Line serves Manish Nagar, New Manish Nagar, Besa and Beltarodi, so tutors can take the metro and an auto for the last stretch. City buses also link the area to Wardha Road and the centre. Many families live in gated apartment buildings, where the tutor's name should be shared with the gate. Traffic around the railway crossing and underpass builds up in peak hours, so tutors should allow a little extra time. Online classes suit specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/manish-nagar-nagpur-overview-piffid",
+        "https://en.wikipedia.org/wiki/Ujjwal_Nagar_metro_station",
+        "http://www.onefivenine.com/india/villages/Nagpur/Nagpur/Manish-Nagar-Somalwada"
+      ]
+    },
+    "besa": {
+      "name": "Besa",
+      "zone": "Wardha Road",
+      "type": "residential",
+      "about": "<p>Besa is a growing mid-segment locality in south Nagpur, stretching along Besa-Pipla Road and close to Manish Nagar, Manewada and Beltarodi. Housing is varied: apartment buildings, villas, independent houses and plots in newer layouts, with nearby pockets such as Abhay Nagar, Omkar Nagar and Revati Nagar.</p><p>There is no metro station in Besa itself; Ujjwal Nagar station on the Orange Line, which serves Besa and Beltarodi, is the usual link, with an auto for the final leg. Newer apartment buildings commonly use gate registration, while independent homes let the tutor come straight to the door and park outside. Roads towards Manish Nagar and Wardha Road are busier at office hours, so tutors travelling in from the city should allow for that. Families can pair a local home tutor with online classes for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/besa-nagpur-overview-piffid",
+        "https://www.99acres.com/articles/invest-in-besa-pipla-road-nagpur.html",
+        "https://en.wikipedia.org/wiki/Ujjwal_Nagar_metro_station"
+      ]
+    },
+    "sadar": {
+      "name": "Sadar",
+      "zone": "North Nagpur",
+      "type": "mixed",
+      "about": "<p>Sadar is a busy mixed-use locality north of the city centre, known for its commercial high street along Mount Road and its food outlets, with homes, mostly two-bedroom apartments and older houses, on the side streets. Mount Road, Futala Road and Red Cross Road run through the area, and it is close to Civil Lines, Raj Nagar, Mohan Nagar and New Colony, with Katol Road nearby.</p><p>Parking is the main practical issue here, since the commercial roads get crowded in the evening, so tutors should plan to use an auto or a two-wheeler and arrive a little early. Apartment buildings may ask visitors to sign in, while houses on quieter lanes are easier to reach. Orange Line stations in the Kasturchand Park and Zero Mile area serve the central stretch to the south. Families who want a specialist teacher for senior classes can add online lessons. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/sadar-nagpur-overview-piffid",
+        "http://www.onefivenine.com/india/villages/Nagpur/Nagpur/Mount-Road-Sadar",
+        "https://www.99acres.com/civil-lines-nagpur-overview-piffid"
+      ]
+    },
+    "seminary-hills": {
+      "name": "Seminary Hills",
+      "zone": "North Nagpur",
+      "type": "mixed",
+      "about": "<p>Seminary Hills takes its name from a Catholic seminary that began in 1851 and later built on the wooded hill slopes. The area mixes government facilities, including central government offices and Air Force establishments, with residential colonies, apartments and houses, plus green spaces such as the Japanese Rose Garden. It lies near Civil Lines, Ravi Nagar, Sadar and Katol Road.</p><p>Government colonies and offices usually have gated entrances, so tutors should carry identification and families should inform security in advance. There is no metro station in the area; tutors often come by two-wheeler, or take the Orange Line to Kasturchand Park and an auto from there. The hilly, green roads are generally calm, though morning and evening office traffic around the government campuses is heavier. Parents can mix home tuition with online lessons for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://nagpurx.com/seminary-hills-nagpur/",
+        "https://www.99acres.com/seminary-hills-nagpur-overview-piffid",
+        "https://en.wikipedia.org/wiki/Nagpur"
+      ]
+    },
+    "gittikhadan": {
+      "name": "Gittikhadan",
+      "zone": "North Nagpur",
+      "type": "residential",
+      "about": "<p>Gittikhadan is a residential locality in north-west Nagpur along Katol Road, in the 440013 postal area. It includes pockets such as KT Nagar, Friends Colony and Rajiv Gandhi Nagar, with a mix of independent houses on plotted layouts and apartment buildings, and a local market and street food along the main road.</p><p>Metro stations are some way off, so most tutors reach Gittikhadan by two-wheeler, car or auto along Katol Road; Gaddi Godam Square on the Orange Line and Nagpur Junction railway station are the nearest rail links. In independent homes the tutor comes straight to the door and can usually park outside. Katol Road is busier at office hours, so evening classes are easier to keep on time with a small margin. Online lessons are a practical option for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/gittikhadan-nagpur-overview-piffid",
+        "http://www.onefivenine.com/india/villages/Nagpur/Nagpur/Katol-Road-Gittikhadan",
+        "https://en.wikipedia.org/wiki/State_Highway_248_(Maharashtra)"
+      ]
+    },
+    "mankapur": {
+      "name": "Mankapur",
+      "zone": "North Nagpur",
+      "type": "residential",
+      "about": "<p>Mankapur is a mid-segment residential area in north Nagpur, in the 440030 postal area, offering mainly two and three-bedroom apartments alongside independent homes. Chhindwara Road and the Katol bypass pass through the area, the Ring Road crosses it, and Zingabai Takli, Koradi Road and Godhani Road lie close by.</p><p>There is no metro station nearby, so tutors usually travel by two-wheeler, car or auto, which is easy given the major roads through the locality. Godhani is the nearest suburban railway station for the Zingabai Takli side. Apartment buildings may ask visitors to register at the gate, while independent homes let the tutor come straight in. Highway traffic on Chhindwara Road is heavy at peak hours, so evening sessions are easier to keep on time with a margin. Families can add online classes for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/mankapur-nagpur-overview-piffid",
+        "http://www.onefivenine.com/india/villages/Nagpur/Nagpur/Koradi-Road-New-Mankapur",
+        "https://www.99acres.com/zingabai-takli-nagpur-overview-piffid"
+      ]
+    },
+    "koradi-road": {
+      "name": "Koradi Road",
+      "zone": "North Nagpur",
+      "type": "residential",
+      "about": "<p>Koradi Road is a mid-segment housing belt in north Nagpur, running out of the city towards Koradi, with ready apartment buildings, independent houses and a large number of plotted layouts. Neighbouring pockets include Arya Nagar, Om Nagar, Shambhu Nagar and Mankapur, with Zingabai Takli to the west.</p><p>The metro does not serve this corridor, so most tutors come by two-wheeler, car or auto along the main road. Many homes are independent houses on plotted layouts, where the tutor goes straight to the door and can park outside; newer apartment buildings may have a gate register. The main road carries commuter traffic morning and evening, so tutors travelling out from the centre should time classes to avoid the peak. For specialist board or entrance subjects, families can mix a local tutor with online lessons. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/koradi-road-nagpur-overview-piffid",
+        "https://houssed.com/location-review/nagpur/koradi-road-real-estate-guide",
+        "https://en.wikipedia.org/wiki/List_of_localities_in_Nagpur"
+      ]
+    },
+    "zingabai-takli": {
+      "name": "Zingabai Takli",
+      "zone": "North Nagpur",
+      "type": "residential",
+      "about": "<p>Zingabai Takli is a mid-segment residential locality in north Nagpur, in the 440030 postal area, where most homes are two-bedroom apartments and houses. It is close to Mankapur, Koradi Road, Gorewada and Shambhu Nagar, and Godhani Road runs through the area towards Godhani railway station.</p><p>With no metro nearby, tutors normally reach Zingabai Takli by two-wheeler or auto, and Godhani railway station is the nearest rail link. Families in independent houses can offer easy parking outside, while apartment buildings may need a visitor entry at the gate. Roads towards Mankapur and the Ring Road are busier at office hours, so tutors coming from the city should plan evening classes accordingly. Online lessons help families find specialist teachers without extra travel. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/zingabai-takli-nagpur-overview-piffid",
+        "https://en.wikipedia.org/wiki/Godhani_railway_station",
+        "https://pincode.net.in/zingabai-takli-geeta-nagar-godhani-road-mankapur-nagpur-urban-maharashtra-440030"
+      ]
+    },
+    "nandanvan": {
+      "name": "Nandanvan",
+      "zone": "East and South-East Nagpur",
+      "type": "residential",
+      "about": "<p>Nandanvan is a large, densely populated residential locality in east Nagpur, with apartment buildings and family homes and nearby pockets such as NIT Colony, Shastri Nagar and Shrikrishna Nagar. Taj Bagh Road passes through it towards Dighori and the highway, and the Middle Ring Road runs along one side.</p><p>Ambedkar Square station on the Aqua Line, reached via Great Nag Road, is the usual metro link, with an auto covering the last stretch. Many families live in older independent homes where the tutor comes straight to the door, while newer buildings may register visitors at the gate. Great Nag Road and the Ring Road are busy at office hours, so tutors travelling from the western side of the city should allow for that. Online lessons work well for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/nandanvan-nagpur-overview-piffid",
+        "https://en.wikipedia.org/wiki/Ambedkar_Square_metro_station",
+        "http://www.onefivenine.com/india/villages/Nagpur/Nagpur/Middle-Ring-Road-Nandanvan"
+      ]
+    },
+    "wathoda": {
+      "name": "Wathoda",
+      "zone": "East and South-East Nagpur",
+      "type": "residential",
+      "about": "<p>Wathoda is a developing residential area in east Nagpur, with independent houses, newer apartment complexes and plots. It lies near Kharbi, Shrikrishna Nagar and Hiwari Layout, and the Ring Road passes close by, linking it with the national highways that run through the city.</p><p>Metro stations are not within walking distance, so tutors usually come by two-wheeler, car or auto. In the larger new apartment complexes the gate normally asks visitors to register, and families should share the tutor's details before the first class; independent houses are simpler, with parking outside. The area is quieter than central Nagpur, but Ring Road traffic picks up in the evening peak. Parents looking for specialist board or entrance teachers can combine a local home tutor with online sessions. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/wathoda-nagpur-overview-piffid",
+        "http://www.onefivenine.com/india/villages/Nagpur/Nagpur/Wathoda-Layout",
+        "https://en.wikipedia.org/wiki/Outer_Ring_Road,_Nagpur"
+      ]
+    },
+    "wardhaman-nagar": {
+      "name": "Wardhaman Nagar",
+      "zone": "East and South-East Nagpur",
+      "type": "mixed",
+      "about": "<p>Wardhaman Nagar is a mixed residential and commercial area in east Nagpur along Bhandara Road, in the 440008 postal area. It lies near Lakadganj and the Transport Nagar area, with homes and apartment buildings alongside shops and businesses on the main road. Itwari and Kalamna are the nearest railway stations.</p><p>The Aqua Line's eastern stations, including Vaishnodevi Square in Padole Nagar and the Prajapati Nagar terminal at Old Pardi Naka, serve this side of the city, with an auto for the last stretch. Bhandara Road carries heavy traffic, including goods vehicles, so tutors should allow extra time and prefer slots outside peak hours. Apartment buildings may ask visitors to register, while houses on the inner lanes are easier to reach. Specialist subjects can be taken online. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "http://www.onefivenine.com/india/villages/Nagpur/Nagpur/Bhandara-Road-Wardhaman-Nagar-Colony",
+        "https://en.wikipedia.org/wiki/Vaishnodevi_Square_metro_station",
+        "https://en.wikipedia.org/wiki/Prajapati_Nagar_metro_station"
+      ]
+    },
+    "manewada": {
+      "name": "Manewada",
+      "zone": "East and South-East Nagpur",
+      "type": "residential",
+      "about": "<p>Manewada is a mid-segment residential locality in south-east Nagpur, part of the Nagpur South area, with apartment buildings and independent houses on plotted layouts. Besa Road runs through it, and nearby pockets include Omkar Nagar, Geeta Nagar, Sewadal Nagar, Akash Nagar and Shahu Nagar, with Hudkeshwar Road and Pipla Road close by.</p><p>The metro does not reach Manewada, so tutors usually arrive by two-wheeler, car or auto. Independent houses let the tutor come straight to the door with parking outside, while apartment buildings may keep a gate register. Besa Road and the roads towards the Ring Road get busy at office hours, so evening classes are easier to keep on time with a small buffer. Families wanting specialist teachers for senior classes can combine home tuition with online lessons. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/manewada-nagpur-overview-piffid",
+        "http://www.onefivenine.com/india/villages/Nagpur/Nagpur/Besa-Road-Geeta-Nagar",
+        "https://www.onefivenine.com/india/villages/Nagpur/Nagpur/Manewada-_1a-Besa-Road-Manewada"
+      ]
+    },
+    "hudkeshwar": {
+      "name": "Hudkeshwar",
+      "zone": "East and South-East Nagpur",
+      "type": "residential",
+      "about": "<p>Hudkeshwar is a residential area on the south-eastern edge of Nagpur, spread along Hudkeshwar Road, where most housing is two and three-bedroom apartments, followed by independent houses and plots. It lies close to Manewada and Pipla Road, and the main road has a growing mix of shops and services alongside homes.</p><p>With no metro in this part of the city, tutors come by two-wheeler, car or auto along Hudkeshwar Road. Newer apartment buildings generally register visitors, so families should inform the gate in advance; independent homes are simpler, with space to park outside. Traffic on Hudkeshwar Road and towards Manewada is heavier at office hours, so tutors travelling from central Nagpur should plan evening classes with a margin. Online lessons are useful for specialist board or entrance subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/hudkeshwar-road-nagpur-overview-piffid",
+        "https://www.99acres.com/hudkeshwar-nagpur-overview-piffid",
+        "https://www.homes247.in/locality-overview/hudkeshwar-road-in-nagpur-overview-3030-31"
+      ]
+    }
+  },
+  "zone_facts": {
+    "Central West Nagpur": [
+      {
+        "fact": "Sitabuldi is described as the heart of the city and its major commercial market area.",
+        "source": "https://en.wikipedia.org/wiki/Nagpur"
+      },
+      {
+        "fact": "Sitabuldi is the interchange station between the Orange Line and the Aqua Line of Nagpur Metro.",
+        "source": "https://en.wikipedia.org/wiki/Nagpur_Metro"
+      },
+      {
+        "fact": "The Aqua Line opened on 28 January 2020 between Sitabuldi and Lokmanya Nagar; the rest of Phase I opened on 11 December 2022.",
+        "source": "https://en.wikipedia.org/wiki/Aqua_Line_(Nagpur_Metro)"
+      },
+      {
+        "fact": "Shankar Nagar Square metro station on the Aqua Line lies on North Ambazari Road at Khare Town, Dharampeth.",
+        "source": "https://en.wikipedia.org/wiki/Shankar_Nagar_Square_metro_station"
+      },
+      {
+        "fact": "Congress Nagar metro station on the Orange Line is located in Dhantoli.",
+        "source": "https://en.wikipedia.org/wiki/Congress_Nagar_metro_station"
+      },
+      {
+        "fact": "The foundation stone of Vidhan Bhavan in Civil Lines was laid in 1912; the winter session of the Maharashtra Legislature is held there.",
+        "source": "https://en.wikipedia.org/wiki/Vidhan_Bhavan,_Nagpur"
+      },
+      {
+        "fact": "The Nagpur Improvement Trust, the city's planning body, was founded in 1936.",
+        "source": "https://en.wikipedia.org/wiki/Nagpur"
+      }
+    ],
+    "Hingna Road and Ring Road": [
+      {
+        "fact": "The Aqua Line (East-West corridor) runs west from Sitabuldi to its western terminus at Lokmanya Nagar; the Sitabuldi-Lokmanya Nagar section opened on 28 January 2020.",
+        "source": "https://en.wikipedia.org/wiki/Aqua_Line_(Nagpur_Metro)"
+      },
+      {
+        "fact": "Rachana Ring Road Junction metro station is on Hingna Road, north-west of Trimurti Nagar Square.",
+        "source": "https://en.wikipedia.org/wiki/Rachana_Ring_Road_Junction_metro_station"
+      },
+      {
+        "fact": "Subhash Nagar metro station on the Aqua Line is located in Parsodi.",
+        "source": "https://en.wikipedia.org/wiki/Subhash_Nagar_metro_station_(Nagpur)"
+      },
+      {
+        "fact": "State Highway 255 connects Nagpur with Hingna, and Hingna MIDC lies along it.",
+        "source": "https://en.wikipedia.org/wiki/State_Highway_255_(Maharashtra)"
+      },
+      {
+        "fact": "Phase II of Nagpur Metro includes a Lokmanya Nagar-Hingna extension with seven stations.",
+        "source": "https://en.wikipedia.org/wiki/Nagpur_Metro"
+      }
+    ],
+    "Wardha Road": [
+      {
+        "fact": "The Orange Line first opened on 8 March 2019 between Sitabuldi and Khapri, running along Wardha Road.",
+        "source": "https://en.wikipedia.org/wiki/Orange_Line_(Nagpur_Metro)"
+      },
+      {
+        "fact": "South of the Airport station the Orange Line runs at grade through the MIHAN area near Khapri.",
+        "source": "https://en.wikipedia.org/wiki/Nagpur_Metro"
+      },
+      {
+        "fact": "Ujjwal Nagar metro station, also known as Somalwada, is in Sonegaon and serves Manish Nagar, Besa and Beltarodi.",
+        "source": "https://en.wikipedia.org/wiki/Ujjwal_Nagar_metro_station"
+      },
+      {
+        "fact": "Airport metro station is in New Manish Nagar, Sonegaon, and is linked by a feeder bus to the city's international airport.",
+        "source": "https://en.wikipedia.org/wiki/Airport_metro_station_(Nagpur)"
+      },
+      {
+        "fact": "Two national highways pass through Nagpur: NH 44 (Srinagar-Kanyakumari) and NH 53 (Mumbai-Kolkata).",
+        "source": "https://en.wikipedia.org/wiki/Transport_in_Nagpur"
+      },
+      {
+        "fact": "The Outer Ring Road around Nagpur links NH 44, NH 53 and NH 47 with several state highways.",
+        "source": "https://en.wikipedia.org/wiki/Outer_Ring_Road,_Nagpur"
+      }
+    ],
+    "North Nagpur": [
+      {
+        "fact": "The Orange Line's northern section from Automotive Square runs along Kamptee Road and opened on 11 December 2022.",
+        "source": "https://en.wikipedia.org/wiki/Orange_Line_(Nagpur_Metro)"
+      },
+      {
+        "fact": "Kasturchand Park and Zero Mile Freedom Park stations on the Orange Line opened on 21 August 2021.",
+        "source": "https://en.wikipedia.org/wiki/Orange_Line_(Nagpur_Metro)"
+      },
+      {
+        "fact": "Seminary Hills is named after a Catholic seminary whose classes began in 1851; a permanent building on the hill slopes followed in 1896.",
+        "source": "https://nagpurx.com/seminary-hills-nagpur/"
+      },
+      {
+        "fact": "Maharashtra State Highway 248 runs north-west from Nagpur towards Warud.",
+        "source": "https://en.wikipedia.org/wiki/State_Highway_248_(Maharashtra)"
+      },
+      {
+        "fact": "Phase II of Nagpur Metro extends the Orange Line from Automotive Square towards Kanhan, and was reported in progress beyond Khairi towards Kamptee.",
+        "source": "https://swarajyamag.com/news-brief/nagpur-metro-phase-2-kamptee-corridor-progressing-rapidly-nearing-completion"
+      }
+    ],
+    "East and South-East Nagpur": [
+      {
+        "fact": "The Aqua Line's eastern section from Sitabuldi to Prajapati Nagar was inaugurated on 11 December 2022 and opened to the public on 12 December 2022.",
+        "source": "https://en.wikipedia.org/wiki/Prajapati_Nagar_metro_station"
+      },
+      {
+        "fact": "Prajapati Nagar, the eastern terminal of the Aqua Line, is at Old Pardi Naka, Surya Nagar.",
+        "source": "https://en.wikipedia.org/wiki/Prajapati_Nagar_metro_station"
+      },
+      {
+        "fact": "Vaishnodevi Square metro station on the Aqua Line is located in Padole Nagar.",
+        "source": "https://en.wikipedia.org/wiki/Vaishnodevi_Square_metro_station"
+      },
+      {
+        "fact": "Mahal is the oldest locality in Nagpur, where the city was founded.",
+        "source": "https://en.wikipedia.org/wiki/List_of_localities_in_Nagpur"
+      },
+      {
+        "fact": "Phase II of Nagpur Metro includes a corridor towards Transport Nagar and was targeted for completion by December 2027.",
+        "source": "https://swarajyamag.com/news-brief/nagpur-metro-phase-2-kamptee-corridor-progressing-rapidly-nearing-completion"
+      }
+    ]
+  }
+}

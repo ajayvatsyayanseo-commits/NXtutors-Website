@@ -1,0 +1,416 @@
+{
+  "areas": {
+    "marine-drive": {
+      "name": "Marine Drive",
+      "zone": "Central Ernakulam",
+      "type": "mixed",
+      "about": "<p>Marine Drive is the waterfront edge of central Ernakulam, a promenade built on land reclaimed from the backwater and developed by the Greater Cochin Development Authority from the 1980s. Coastal rules later ruled out the planned road, so the waterfront became a walkway, and the blocks behind it filled with high-rise apartments, offices, shops and hotels. The walkway runs from the High Court junction end towards Rajendra Maidan, with the older streets of Broadway and the city centre just inland.</p><p>Most families here live in apartment towers, so a tutor should expect to register at the building reception or security desk and check where visitors may park. The High Court water metro terminal, open since April 2023, sits near the northern end and links the area by boat with Fort Kochi, Vypin and the islands, while M. G. Road metro station is a short auto ride inland. Evening crowds along the promenade and the central streets make early evening slots more practical than late ones for tutors coming by road. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Marine_Drive,_Kochi",
+        "https://en.wikipedia.org/wiki/High_Court_water_metro_station",
+        "https://en.wikipedia.org/wiki/Kochi_Water_Metro"
+      ]
+    },
+    "kaloor": {
+      "name": "Kaloor",
+      "zone": "Central Ernakulam",
+      "type": "mixed",
+      "about": "<p>Kaloor sits near the geographic centre of Kochi, with Ernakulam North to the west, Palarivattom to the east and Edappally to the north. Once mainly residential, it grew into a busy commercial and institutional district in the late twentieth century, and it is widely known for its large international stadium and its city bus station. Homes are a mix of older houses in the side lanes and apartment buildings closer to the main roads, with Kaloor–Kadavanthra Road running south from the area.</p><p>Kaloor has two metro stations on the Blue Line, Kaloor and JLN Stadium, both open since 2017, so a tutor can travel by metro and finish the trip on foot or by auto. JLN Stadium is also the starting point of the Pink Line now under construction towards Kakkanad. Match days and events at the stadium bring heavy traffic, so it helps to fix class timings that avoid them. Houses in the lanes allow doorstep arrival, while apartment blocks usually keep a visitor register at the gate. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kaloor",
+        "https://en.wikipedia.org/wiki/List_of_Kochi_Metro_stations",
+        "https://en.wikipedia.org/wiki/Kochi_Metro"
+      ]
+    },
+    "kadavanthra": {
+      "name": "Kadavanthra",
+      "zone": "Central Ernakulam",
+      "type": "mixed",
+      "about": "<p>Kadavanthra is a commercial and residential neighbourhood of central Ernakulam, lying between Sahodaran Ayyappan Road on the east and the Giri Nagar canal on the west, close to Chilavannur lake and Ernakulam Junction railway station. The headquarters of the Greater Cochin Development Authority is here. Its residential colonies include Panampilly Nagar, Giri Nagar, Gandhi Nagar and Jawahar Nagar, which hold a mix of independent houses and apartment buildings.</p><p>Two main roads meet at Kadavanthra Junction: Sahodaran Ayyappan Road, running east towards Vyttila, and Kaloor–Kadavanthra Road, running north. The junction is one of the busiest in the city, so tutors driving in usually allow extra time in the morning and evening rush. Kadavanthra metro station on the Blue Line, open since 2019, is the easiest way in, with Elamkulam station just to the east. For homes in the inner colonies, a short walk or auto from the station is normally enough, and houses allow doorstep arrival. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kadavanthra",
+        "https://en.wikipedia.org/wiki/Kadavanthra_metro_station",
+        "https://en.wikipedia.org/wiki/List_of_Kochi_Metro_stations"
+      ]
+    },
+    "panampilly-nagar": {
+      "name": "Panampilly Nagar",
+      "zone": "Central Ernakulam",
+      "type": "residential",
+      "about": "<p>Panampilly Nagar is a planned residential area in central Ernakulam, developed from 1978 on former marshy and cultivated land. The first phase was a low-income housing colony with small plots, followed by middle-income units, and over the years the area has become home mainly to professional families. Shops and private offices are concentrated along Main Avenue and near the South Overbridge, while the inner streets stay residential with independent houses and low-rise apartment buildings.</p><p>It sits within the wider Kadavanthra area, next to Giri Nagar and the South Overbridge that crosses the railway near Ernakulam Junction station. The Ernakulam South and Kadavanthra metro stations on the Blue Line are both within easy auto range. An active residents' association looks after the neighbourhood, and the grid of cross roads makes houses simple to find, so tutors can usually reach the doorstep directly and park on the street. Main Avenue gets busy in the evening, so tutors are advised to use the inner roads. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Panampilly_Nagar",
+        "https://en.wikipedia.org/wiki/Kadavanthra",
+        "https://en.wikipedia.org/wiki/List_of_Kochi_Metro_stations"
+      ]
+    },
+    "thevara": {
+      "name": "Thevara",
+      "zone": "Central Ernakulam",
+      "type": "residential",
+      "about": "<p>Thevara is the southern tip of mainland Ernakulam, a quiet waterfront ward with Ravipuram and Kadavanthra to the north and Maradu to the south. It is the first residential area on the mainland side after crossing the Venduruthy Bridge from Willingdon Island, and its main road runs down from Kacheripady to Thevara Junction. Homes are a mix of older houses and apartment buildings, many close to the backwater.</p><p>Thevara ferry and the Konthuruthy crossing link the area by water with Kumbalam, Nettoor and other parts of the city, which is useful for tutors living across the backwater. By road, a tutor from central Ernakulam comes down the main road towards Thevara Junction, and one from West Kochi comes across the Venduruthy Bridge. There is no metro station in Thevara itself, so an auto from the stations in central Ernakulam is the usual last leg. Independent houses allow doorstep arrival, while apartment buildings will ask visitors to sign in. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Thevara",
+        "https://en.wikipedia.org/wiki/Neighbourhoods_of_Kochi"
+      ]
+    },
+    "pachalam": {
+      "name": "Pachalam",
+      "zone": "Central Ernakulam",
+      "type": "residential",
+      "about": "<p>Pachalam is a residential neighbourhood between Marine Drive and Kaloor in the north of Ernakulam city. It has Mulavukad to the west, the Vaduthala and Chittoor areas to the north, Elamakkara to the north-east and Kaloor to the south-east. The area holds housing colonies and older homes along narrow roads, with Goshree Bridge Road, Marine Drive and Chittoor Road giving access from the main city.</p><p>The Pachalam railway overbridge, opened in 2015, finally gave the area a direct road link over the railway line, and most tutors now use it to come in from Kaloor and Palarivattom. The inner roads are narrow, so a two-wheeler or auto is often easier than a car, and parking near the house is worth confirming before the first visit. Tutors coming by metro can get off in Kaloor and take an auto. Many homes are independent houses, which allow doorstep arrival. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Pachalam",
+        "https://en.wikipedia.org/wiki/Neighbourhoods_of_Kochi"
+      ]
+    },
+    "edappally": {
+      "name": "Edappally",
+      "zone": "Edappally & North Kochi",
+      "type": "mixed",
+      "about": "<p>Edappally is a northern Kochi neighbourhood that was once the seat of the Edappally chiefs and a panchayat before it joined the Kochi Corporation. It is one of the city's main road hubs: NH 66 and NH 544 meet the Kochi Bypass at Edappally junction, and a flyover over the junction opened in 2016. Large shopping and hospital campuses stand near the junction, while residential pockets such as Ponekkara, Elamakkara and Amrita Nagar spread out behind it, towards the edge of Kalamassery.</p><p>Transport options are good. Edapally and Changampuzha Park metro stations on the Blue Line have been open since June 2017, and Edappally railway station is on the line towards Guruvayur. Homes range from independent houses in the older lanes to apartment towers near the highway, so tutors should expect gate registration at larger complexes. Traffic builds up around the junction at peak hours and at weekends, so tutors living nearby, or those who take the metro and then an auto, keep to time more easily. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Edappally",
+        "https://en.wikipedia.org/wiki/Changampuzha_Park_metro_station",
+        "https://en.wikipedia.org/wiki/Kochi_Bypass"
+      ]
+    },
+    "elamakkara": {
+      "name": "Elamakkara",
+      "zone": "Edappally & North Kochi",
+      "type": "residential",
+      "about": "<p>Elamakkara is a residential area in the north of Ernakulam city, counted among the residential zones of the wider Edappally area and lying to the north-east of Pachalam. Local roads such as Puthukkalavattom Road and Pottakuzhy Road link it with Pachalam, Kaloor and Edappally. Much of the housing is independent homes and smaller apartment buildings on quiet residential streets, with temples and neighbourhood shops spread through the area.</p><p>The nearest metro station is Changampuzha Park on the Blue Line, open since 2017, with Edappally railway station also nearby. Tutors usually take the metro and finish the trip by auto, or ride in on a two-wheeler through Pachalam or Kaloor. Streets here are narrower than the main roads, so parking should be agreed with the family in advance. Most houses allow doorstep arrival, which suits early morning and weekend classes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Edappally",
+        "https://en.wikipedia.org/wiki/Pachalam",
+        "https://www.99acres.com/elamakkara-kochi-overview-piffid"
+      ]
+    },
+    "palarivattom": {
+      "name": "Palarivattom",
+      "zone": "Edappally & North Kochi",
+      "type": "mixed",
+      "about": "<p>Palarivattom is a residential and commercial neighbourhood east of central Ernakulam and one of the city's key road junctions, where routes from the city centre meet the Kochi Bypass (NH 66) on the way to Kakkanad. It has Kaloor to the west, Vazhakkala to the east, Edappally and Mamangalam to the north, and Kathrikadavu, Thammanam and Vyttila to the south. Homes range from older houses to newer apartment buildings, mixed with offices, shops and institutions.</p><p>Palarivattom metro station on the Blue Line opened with the first section in June 2017, and a new station, Palarivattom Junction, is planned on the Pink Line to Kakkanad, which is still under construction. The flyover over the bypass junction was rebuilt and reopened in 2021. Tutors should avoid the junction at office hours where possible. Residential streets on either side of the bypass allow doorstep arrival at houses, while apartment complexes will ask for gate registration. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Palarivattom",
+        "https://en.wikipedia.org/wiki/Kochi_Metro",
+        "https://en.wikipedia.org/wiki/Kochi_Bypass",
+        "https://en.wikipedia.org/wiki/Palarivattom_Flyover_scam"
+      ]
+    },
+    "cheranallur": {
+      "name": "Cheranallur",
+      "zone": "Edappally & North Kochi",
+      "type": "residential",
+      "about": "<p>Cheranallur is a panchayat on the northern edge of Kochi, on the bank of the Periyar, forming the northern tip of the Ernakulam assembly constituency. It sits where NH 66 meets the highway to the Vallarpadam container terminal, and it borders Edappally, Kalamassery, Eloor and Varapuzha. Unlike the corporation wards to its south, it is a panchayat area, and its homes are spread across residential wards between the highway and the river.</p><p>Cheranallur has had a water metro terminal since March 2024, on the route that links South Chittoor with Eloor, and an older ferry also connects Eloor, Mannamthuruth and Cheranallur. Most tutors, though, arrive by road from Edappally along NH 66. Heavy container traffic on the highway junction makes it worth scheduling classes away from peak truck movement. Houses usually allow doorstep arrival, and families further out often mix home visits with online classes for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cheranallur",
+        "https://en.wikipedia.org/wiki/Kochi_Water_Metro"
+      ]
+    },
+    "kalamassery": {
+      "name": "Kalamassery",
+      "zone": "Edappally & North Kochi",
+      "type": "mixed",
+      "about": "<p>Kalamassery is a municipality on the northern side of Kochi, long known as an industrial area, with large factory, university and research campuses alongside expanding housing. Its population has grown steadily since the 1980s, and it borders Thrikkakara, Edappally, Vallarpadam and Kadamakkudy. The first completed section of the Seaport–Airport Road starts at the HMT junction here and runs south-east towards Kakkanad and Tripunithura.</p><p>Three Blue Line metro stations serve the area: Kalamassery, Cochin University and Pathadipalam, all open since June 2017, and Kalamassery also has a railway station with a metro interchange. Housing ranges from older independent homes to newer residential developments, so the visit routine varies. Houses allow doorstep arrival, while apartment complexes ask for gate registration. Traffic on the highway and around the industrial gates is heavy at shift changes, so tutors are advised to plan around those times. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kalamassery",
+        "https://en.wikipedia.org/wiki/List_of_Kochi_Metro_stations",
+        "https://en.wikipedia.org/wiki/Seaport-Airport_Road"
+      ]
+    },
+    "aluva": {
+      "name": "Aluva",
+      "zone": "Edappally & North Kochi",
+      "type": "mixed",
+      "about": "<p>Aluva is a municipality in the northern part of the Kochi metropolitan area, formed in 1921, on the banks of the Periyar river where it divides into two branches. The riverside sandbanks host the Aluva Sivarathri festival each year, one of Kerala's largest religious gatherings. The town borders Kalamassery, Edathala and Angamaly on the airport side, and combines a busy market centre with residential areas of independent houses and newer apartment buildings.</p><p>Aluva is the northern terminus of the Kochi Metro Blue Line, open since June 2017, and its railway station is one of the busiest in the Kochi area. A Phase 3 metro extension towards the airport and Angamaly is only at the proposal stage. Tutors from the town can reach most homes directly, and those coming from central Ernakulam can use the metro and then an auto. Classes near the river are worth rescheduling during the Sivarathri crowds, and houses usually have space to park at the gate. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Aluva",
+        "https://en.wikipedia.org/wiki/Kochi_Metro",
+        "https://en.wikipedia.org/wiki/List_of_Kochi_Metro_stations"
+      ]
+    },
+    "kakkanad": {
+      "name": "Kakkanad",
+      "zone": "Kakkanad & East Kochi",
+      "type": "mixed",
+      "about": "<p>Kakkanad is the eastern suburb that grew from a cluster of villages among paddy fields and wetlands into one of the fastest-growing parts of the Kochi region. It is the headquarters of Ernakulam district, with the Civil Station housing the collectorate and transport office, and it is home to the Cochin Special Economic Zone and several large IT parks. Housing is mostly apartment complexes and gated villa communities, with localities such as Edachira, Chittethukara, Thuthiyoor and Palachuvadu around it.</p><p>The Seaport–Airport Road runs through Kakkanad and carries most traffic in and out. There is no metro here yet: the Pink Line from JLN Stadium through Kakkanad Junction to the IT parks is under construction. The water metro has linked Vyttila with a terminal at Chittethukara since April 2023. Gated communities ask visitors to register at the gate. Office-hour traffic towards the IT parks is heavy, so tutors are advised to plan classes after that rush. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kakkanad",
+        "https://en.wikipedia.org/wiki/Kochi_Metro",
+        "https://www.onmanorama.com/news/kerala/2026/09/22/kochi-metro-pink-line-rail-arrival.html",
+        "https://en.wikipedia.org/wiki/Kakkanad_water_metro_station"
+      ]
+    },
+    "thrikkakara": {
+      "name": "Thrikkakara",
+      "zone": "Kakkanad & East Kochi",
+      "type": "residential",
+      "about": "<p>Thrikkakara is a municipality in eastern Kochi, formed on 30 November 2010, which includes Kakkanad and its surrounding localities within its wards. The name is linked with the Thrikkakara temple and the Vamana legend, and the temple festival draws large crowds from all communities. Away from the office belt, the area around the temple is residential, with independent houses on plots as well as newer apartment buildings, and it borders Kalamassery to the north.</p><p>Being a large municipality, Thrikkakara has no single transit point. The Blue Line stations at Pathadipalam and Cochin University are reachable from the northern side, while southern parts use the Seaport–Airport Road towards Kakkanad. Tutors often come by two-wheeler, and houses allow doorstep arrival with easy parking. During the temple festival, roads near the temple get crowded, so shifting a class earlier or moving it online for those days is sensible. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Thrikkakara",
+        "https://en.wikipedia.org/wiki/Kalamassery",
+        "https://en.wikipedia.org/wiki/Kakkanad"
+      ]
+    },
+    "vazhakkala": {
+      "name": "Vazhakkala",
+      "zone": "Kakkanad & East Kochi",
+      "type": "residential",
+      "about": "<p>Vazhakkala is a residential neighbourhood in Thrikkakara municipality, between Palarivattom and Kakkanad. It sits near the district Civil Station and the special economic zone, and its churches and temples go back well over a century. Housing is mainly independent homes on residential lanes, with apartment buildings spreading along the main road towards Kakkanad as the area grows.</p><p>Vazhakkala has no metro station yet, but a station of that name is planned on the Pink Line from JLN Stadium to Kakkanad, which is under construction. Until then, tutors reach the area by road through Palarivattom or along the Seaport–Airport Road, and a two-wheeler or auto is the practical choice. Traffic on the road towards Kakkanad is heaviest at office hours, so late afternoon or weekend slots are easier. Most families live in houses where tutors can come straight to the door. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vazhakkala",
+        "https://en.wikipedia.org/wiki/Kochi_Metro",
+        "https://en.wikipedia.org/wiki/Palarivattom"
+      ]
+    },
+    "vennala": {
+      "name": "Vennala",
+      "zone": "Kakkanad & East Kochi",
+      "type": "residential",
+      "about": "<p>Vennala is a residential ward of Kochi stretching from Alinchuvadu to Arkakkadavu, with Kathrikadavu and Thammanam to the north, Kakkanad to the east, and Kadavanthra and Vyttila to the south. Its temple and churches anchor an older settlement, and nearness to the Vyttila transport hub has drawn builders to put up new housing around it. Homes today are a mix of older independent houses and newer apartment buildings and villa projects.</p><p>Most tutors arrive by road from Vyttila or Palarivattom. Vyttila metro station and the mobility hub are the nearest public transport points, with an auto for the last leg, and families on the northern side can also use Palarivattom station. Residential roads are quiet compared with the main junctions, so parking at independent houses is usually simple, while newer complexes will expect visitor registration. Evening classes are easier if the tutor avoids the Vyttila junction at rush hour. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vennala",
+        "https://en.wikipedia.org/wiki/Vyttila",
+        "https://en.wikipedia.org/wiki/Thammanam"
+      ]
+    },
+    "thammanam": {
+      "name": "Thammanam",
+      "zone": "Kakkanad & East Kochi",
+      "type": "residential",
+      "about": "<p>Thammanam is a residential ward that lies roughly midway between Palarivattom and Vyttila, on the road that connects the two junctions. Neighbouring areas include Palarivattom, Vyttila, Kathrikadavu, Vennala, Kadavanthra, Kaloor and Vazhakkala. Recent decades have brought housing colonies, apartment buildings and small hotels, and families from across Kerala and India have moved in; a church, a temple and a mosque stand close together in the ward.</p><p>Tutors can come in along the Palarivattom–Vyttila road or from the city centre on Thammanam–Pullepady Road through Kathrikadavu. The Kochi Bypass (NH 66) runs just to the east. Palarivattom and Vyttila metro stations on the Blue Line are both an auto ride away. Housing-colony homes allow doorstep arrival, while apartment buildings expect visitors to sign in, and the connecting road gets busy at school and office hours. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Thammanam",
+        "https://www.99acres.com/thammanam-kochi-overview-piffid"
+      ]
+    },
+    "vyttila": {
+      "name": "Vyttila",
+      "zone": "Vyttila & Tripunithura",
+      "type": "mixed",
+      "about": "<p>Vyttila is a southern Kochi neighbourhood on former paddy land that was a panchayat until it merged with the Kochi Corporation in 1967. Its junction, where the Kochi Bypass (NH 66) crosses Sahodaran Ayyappan Road, is described as the busiest and largest intersection in Kerala, and a flyover above it opened in January 2021. The area is densely residential, with high-rise apartments, independent houses and villas, and it adjoins Janatha, Thykoodam and Ponnurunni.</p><p>Vyttila is Kochi's main transport interchange. Its mobility hub gathers long-distance buses, Vyttila metro station has been on the Blue Line since 2019, and the water metro has run from Vyttila to Kakkanad since April 2023. Tutors can come from almost anywhere by public transport and take a short auto ride to the home. Car trips through the junction are slow at peak hours, so metro plus auto is often more reliable. Apartment towers ask for gate registration, and houses allow doorstep arrival. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vyttila",
+        "https://en.wikipedia.org/wiki/Vyttila_flyover",
+        "https://en.wikipedia.org/wiki/Kochi_Water_Metro",
+        "https://en.wikipedia.org/wiki/List_of_Kochi_Metro_stations"
+      ]
+    },
+    "elamkulam": {
+      "name": "Elamkulam",
+      "zone": "Vyttila & Tripunithura",
+      "type": "residential",
+      "about": "<p>Elamkulam is a ward between Kadavanthra and Vyttila, running from the bridge over the old Tripunithura lagoon to Elamkulam junction on the main road towards Vyttila. It shares the Kadavanthra postal area. Its named residential colonies, such as Kumaranasan Nagar and Nethaji Nagar, hold independent houses, while newer apartment buildings have come up towards the Chilavannur backwater. Navy quarters also sit near the junction.</p><p>Elamkulam metro station on the Blue Line opened in September 2019 and is placed so that tutors can walk into most colonies or take a short auto. Roads such as Chilavannur Road and the road towards the Fatima church lead off the junction into the residential pockets. Sahodaran Ayyappan Road gets congested at peak times, so metro travel is usually steadier than driving. Colony houses allow doorstep arrival, and waterfront apartment buildings ask visitors to register. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Elamkulam,_Kochi",
+        "https://en.wikipedia.org/wiki/Kadavanthra",
+        "https://en.wikipedia.org/wiki/List_of_Kochi_Metro_stations"
+      ]
+    },
+    "maradu": {
+      "name": "Maradu",
+      "zone": "Vyttila & Tripunithura",
+      "type": "residential",
+      "about": "<p>Maradu is a municipality on low-lying river islands at the mouth of Vembanad Lake, just south of Vyttila. It became a municipality in November 2010 after decades as a panchayat. Three national highways meet at Kundannoor junction within Maradu: NH 66 (the Kochi Bypass), NH 85 towards Madurai and NH 966B towards Willingdon Island, and the Kundannoor flyover opened in January 2021. Housing is led by apartment towers and gated developments, along with villas, with Nettoor, Poonithura and Konthuruthy nearby.</p><p>Tutors coming from Ernakulam use the bypass through Vyttila or cross from Thevara. The Blue Line stations at Thaikoodam and Pettah serve the Vyttila side, and an auto covers the last leg. Many families live in high-rise complexes, so visitor registration at the gate is standard and parking is usually inside the complex. Kundannoor junction is busy at peak hours, so tutors living in Maradu or the neighbouring islands are the easiest match. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Maradu",
+        "https://en.wikipedia.org/wiki/Kundannoor_flyover",
+        "https://en.wikipedia.org/wiki/Kochi_Bypass",
+        "https://www.99acres.com/maradu-kochi-overview-piffid"
+      ]
+    },
+    "tripunithura": {
+      "name": "Tripunithura",
+      "zone": "Vyttila & Tripunithura",
+      "type": "residential",
+      "about": "<p>Tripunithura is a municipality to the south-east of Ernakulam and the former capital of the Kingdom of Cochin, where members of the old royal family still live. The Hill Palace, once the royal residence, is now a museum, and the Sree Poornathrayeesa temple with its annual Vrishchikoltsavam festival is at the heart of the old town. Palaces and older family houses in the town centre sit beside newer apartment buildings along the main roads.</p><p>Tripunithura is well connected. Three Blue Line stations serve it: Vadakkekotta and SN Junction opened in September 2022, and Thrippunithura Terminal opened on 6 March 2024 as the line's southern end. The railway station is on the line to Kottayam, and the Seaport–Airport Road reaches Karingachira nearby. Tutors from Ernakulam can come by metro and walk or take an auto to the house. During the temple festival the old town is crowded, so shift classes or hold them online on those days. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tripunithura",
+        "https://en.wikipedia.org/wiki/List_of_Kochi_Metro_stations",
+        "https://en.wikipedia.org/wiki/Thrippunithura_Terminal_metro_station"
+      ]
+    },
+    "fort-kochi": {
+      "name": "Fort Kochi",
+      "zone": "West Kochi & Islands",
+      "type": "residential",
+      "about": "<p>Fort Kochi is the historic heart of West Kochi, on the water-bound western side of the city next to Mattancherry. The Portuguese arrived in 1503 and built the first European fort in India here, the Dutch held it from 1663, and the British from about 1795; it became a municipality in 1866. Its streets are lined with old colonial houses, churches and warehouses, many now homes, guest houses and cafes, and the Chinese fishing nets on the shore are a city landmark.</p><p>The water metro route from High Court to Fort Kochi opened in April 2023, and regular boats also cross to Vypin. By road, tutors from Ernakulam come through Thoppumpady and Mattancherry. Streets in the old quarter are narrow and busy with visitors, especially during the carnival season, so a two-wheeler or walking from the jetty works better than a car. Most families live in independent houses where tutors can go straight to the door, and online classes suit specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Fort_Kochi",
+        "https://en.wikipedia.org/wiki/Kochi_Water_Metro"
+      ]
+    },
+    "mattancherry": {
+      "name": "Mattancherry",
+      "zone": "West Kochi & Islands",
+      "type": "mixed",
+      "about": "<p>Mattancherry is a historic ward of West Kochi next to Fort Kochi, long a centre of the spice trade and of the city's Jewish community. The palace built in 1555 and renovated by the Dutch now houses a museum, and the Paradesi Synagogue of 1568 stands on Jew Street. Konkani and Gujarati communities have deep roots here, and the housing is a close-packed mix of old houses, narrow trading streets and converted warehouses.</p><p>Mattancherry got its water metro link in October 2025, on the route from High Court via Willingdon Island, so tutors from Ernakulam can come by boat and walk in. Road access is through Thoppumpady. Lanes in the old quarter are narrow and parking is scarce, so tutors should come on foot or by two-wheeler, and the tourist streets are quieter early in the day. Many homes are older houses with doorstep access, and families often combine a local home tutor with online classes for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mattancherry",
+        "https://en.wikipedia.org/wiki/Kochi_Water_Metro"
+      ]
+    },
+    "palluruthy": {
+      "name": "Palluruthy",
+      "zone": "West Kochi & Islands",
+      "type": "residential",
+      "about": "<p>Palluruthy is a large water-bound region in West Kochi, taking in Thoppumpady, Perumpadappu, Edakochi, Mundamveli and Kumbalangi, with Mattancherry, Fort Kochi and Willingdon Island nearby. It is known for its temples, backwaters and an annual trade fair held in the Malayalam month of Dhanu. Housing is mostly independent homes and villas, many built by local developers, spread through neighbourhood lanes.</p><p>Thoppumpady is the gateway, where the bridges from Willingdon Island and the mainland land, and buses to Edakochi and Perumpadappu run through it and Palluruthy. Tutors from Ernakulam usually come by road across these bridges, and the bridge approaches are busy at peak hours, so it helps to schedule classes after the rush. There is no metro in West Kochi, so a two-wheeler or bus plus auto is the usual way in. Independent houses allow doorstep arrival and have space to park. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Palluruthy",
+        "https://en.wikipedia.org/wiki/Thoppumpady",
+        "https://www.99acres.com/palluruthy-kochi-overview-piffid"
+      ]
+    },
+    "vypin": {
+      "name": "Vypin",
+      "zone": "West Kochi & Islands",
+      "type": "residential",
+      "about": "<p>Vypin is a long barrier island between the Arabian Sea and the Kochi backwaters, forming part of the city's island group with Vallarpadam and Mulavukad. It is governed by six gram panchayats, Elamkunnapuzha, Njarackal, Nayarambalam, Edavanakkad, Kuzhuppilly and Pallippuram, and its villages include Puthuvype, Nedungad and Cherai. Njarakkal is among the more densely settled parts, and homes are mostly independent houses set along the island's main road and village lanes.</p><p>The Goshree bridges, completed in 2004, link Vypin with the mainland at Ernakulam through Vallarpadam and Mulavukad. The water metro has run from High Court to Vypin since April 2023, and boats also cross to Fort Kochi. Tutors living on the island are the easiest match for regular classes at home, while those from the mainland usually come by water metro or across the bridges. Houses allow doorstep arrival, and online classes suit specialist subjects in the northern villages. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vypin",
+        "https://en.wikipedia.org/wiki/Kochi_Water_Metro"
+      ]
+    }
+  },
+  "zone_facts": {
+    "Central Ernakulam": [
+      {
+        "fact": "Kochi Metro's first section, Aluva to Palarivattom, was inaugurated on 17 June 2017; the extension to Maharaja's College through JLN Stadium, Kaloor, Town Hall and M.G. Road opened on 3 October 2017.",
+        "source": "https://en.wikipedia.org/wiki/Kochi_Metro"
+      },
+      {
+        "fact": "The Maharaja's College to Thaikoodam extension, including Ernakulam South, Kadavanthra and Elamkulam stations, opened in September 2019.",
+        "source": "https://en.wikipedia.org/wiki/List_of_Kochi_Metro_stations"
+      },
+      {
+        "fact": "Town Hall and Ernakulam South metro stations provide transfers to the Ernakulam Town and Ernakulam Junction railway stations.",
+        "source": "https://en.wikipedia.org/wiki/List_of_Kochi_Metro_stations"
+      },
+      {
+        "fact": "The High Court water metro terminal opened to the public on 26 April 2023 and is the start of routes to Vypin, Fort Kochi, Mattancherry and South Chittoor.",
+        "source": "https://en.wikipedia.org/wiki/Kochi_Water_Metro"
+      },
+      {
+        "fact": "Marine Drive was developed by the Greater Cochin Development Authority from the 1980s on land reclaimed from the backwater; coastal rules later turned the planned road into a walkway.",
+        "source": "https://en.wikipedia.org/wiki/Marine_Drive,_Kochi"
+      },
+      {
+        "fact": "Kadavanthra Junction, where Sahodaran Ayyappan Road meets Kaloor–Kadavanthra Road, is one of the busiest intersections in the city.",
+        "source": "https://en.wikipedia.org/wiki/Kadavanthra"
+      },
+      {
+        "fact": "Panampilly Nagar was developed as a planned residential settlement in 1978.",
+        "source": "https://en.wikipedia.org/wiki/Panampilly_Nagar"
+      }
+    ],
+    "Edappally & North Kochi": [
+      {
+        "fact": "The Kochi Bypass is the NH 66 segment from Edappally to Aroor via Palarivattom, Vyttila, Kundannoor and Madavana.",
+        "source": "https://en.wikipedia.org/wiki/Kochi_Bypass"
+      },
+      {
+        "fact": "NH 544 and NH 66 meet the Kochi Bypass at Edappally junction, and a flyover over the junction opened in 2016.",
+        "source": "https://en.wikipedia.org/wiki/Edappally"
+      },
+      {
+        "fact": "Aluva metro station is the northern terminus of the Blue Line; the Aluva–Palarivattom section, including Kalamassery, Cochin University, Pathadipalam, Edapally and Changampuzha Park, opened to the public on 19 June 2017.",
+        "source": "https://en.wikipedia.org/wiki/List_of_Kochi_Metro_stations"
+      },
+      {
+        "fact": "Kalamassery metro station offers a transfer to the Indian Railways station at Kalamassery.",
+        "source": "https://en.wikipedia.org/wiki/List_of_Kochi_Metro_stations"
+      },
+      {
+        "fact": "The first completed phase of the Seaport–Airport Road, opened in May 2003, runs from HMT junction in Kalamassery to Karingachira near Tripunithura; the HMT–airport stretch is still being developed.",
+        "source": "https://en.wikipedia.org/wiki/Seaport-Airport_Road"
+      },
+      {
+        "fact": "The Cheranallur water metro terminal opened on 14 March 2024 on the South Chittoor–Eloor route.",
+        "source": "https://en.wikipedia.org/wiki/Kochi_Water_Metro"
+      },
+      {
+        "fact": "A Phase 3 metro extension from Aluva to Angamaly via the airport is at the proposal stage, with its detailed project report submitted in September 2026.",
+        "source": "https://en.wikipedia.org/wiki/Kochi_Metro"
+      }
+    ],
+    "Kakkanad & East Kochi": [
+      {
+        "fact": "Thrikkakara Municipality was formed on 30 November 2010 and includes Kakkanad.",
+        "source": "https://en.wikipedia.org/wiki/Thrikkakara"
+      },
+      {
+        "fact": "Kakkanad is the administrative headquarters of Ernakulam district, with the Civil Station housing the District Collectorate.",
+        "source": "https://en.wikipedia.org/wiki/Kakkanad"
+      },
+      {
+        "fact": "The Kochi Metro Pink Line (Phase 2) runs from JLN Stadium to Infopark via Kakkanad, with planned stations including Palarivattom Junction, Chembumukku, Vazhakkala, Kakkanad Junction, Cochin SEZ and Chittethukara; its foundation stone was laid on 1 September 2022 and construction began in July 2024.",
+        "source": "https://en.wikipedia.org/wiki/Kochi_Metro"
+      },
+      {
+        "fact": "KMRL dropped its plan to open the Pink Line in stages and, as of September 2026, targets opening the full corridor in August 2027.",
+        "source": "https://www.onmanorama.com/news/kerala/2026/09/22/kochi-metro-pink-line-rail-arrival.html"
+      },
+      {
+        "fact": "The Vyttila–Kakkanad water metro route opened to the public on 27 April 2023; the Kakkanad terminal is at Chittethukara.",
+        "source": "https://en.wikipedia.org/wiki/Kakkanad_water_metro_station"
+      },
+      {
+        "fact": "The Seaport–Airport Road passes through Kakkanad on its route between Kalamassery and Tripunithura.",
+        "source": "https://en.wikipedia.org/wiki/Seaport-Airport_Road"
+      }
+    ],
+    "Vyttila & Tripunithura": [
+      {
+        "fact": "The Vyttila and Kundannoor flyovers on the Kochi Bypass (NH 66) opened on 9 January 2021.",
+        "source": "https://en.wikipedia.org/wiki/Vyttila_flyover"
+      },
+      {
+        "fact": "Vyttila Mobility Hub, a multimodal bus, metro and water transport interchange, was partly commissioned in February 2011.",
+        "source": "https://en.wikipedia.org/wiki/Vyttila"
+      },
+      {
+        "fact": "Thaikoodam metro station opened in September 2019 and Pettah on 7 September 2020.",
+        "source": "https://en.wikipedia.org/wiki/List_of_Kochi_Metro_stations"
+      },
+      {
+        "fact": "Vadakkekotta and SN Junction metro stations opened on 1 September 2022, and Thrippunithura Terminal opened on 6 March 2024, completing the Aluva–Tripunithura Blue Line.",
+        "source": "https://en.wikipedia.org/wiki/Thrippunithura_Terminal_metro_station"
+      },
+      {
+        "fact": "NH 66, NH 85 and NH 966B meet at Kundannoor junction in Maradu, which became a municipality in November 2010.",
+        "source": "https://en.wikipedia.org/wiki/Maradu"
+      },
+      {
+        "fact": "Tripunithura was the capital of the Kingdom of Cochin; the Hill Palace, former royal residence, is now a museum.",
+        "source": "https://en.wikipedia.org/wiki/Tripunithura"
+      }
+    ],
+    "West Kochi & Islands": [
+      {
+        "fact": "The High Court–Fort Kochi and High Court–Vypin water metro routes opened in April 2023.",
+        "source": "https://en.wikipedia.org/wiki/Kochi_Water_Metro"
+      },
+      {
+        "fact": "The High Court–Mattancherry water metro route via Willingdon Island opened on 11 October 2025.",
+        "source": "https://en.wikipedia.org/wiki/Kochi_Water_Metro"
+      },
+      {
+        "fact": "The Portuguese built Fort Manuel at Fort Kochi in 1503; Fort Kochi became a municipality in 1866.",
+        "source": "https://en.wikipedia.org/wiki/Fort_Kochi"
+      },
+      {
+        "fact": "The Mattancherry Palace dates from 1555 and was renovated by the Dutch in 1663; the Paradesi Synagogue dates from 1568.",
+        "source": "https://en.wikipedia.org/wiki/Mattancherry"
+      },
+      {
+        "fact": "The Goshree bridges, built in 2004, connect Vypin, Vallarpadam and Mulavukad islands with mainland Ernakulam.",
+        "source": "https://en.wikipedia.org/wiki/Vypin"
+      },
+      {
+        "fact": "Palluruthy region includes Thoppumpady, Perumpadappu, Edakochi, Mundamveli and Kumbalangi.",
+        "source": "https://en.wikipedia.org/wiki/Palluruthy"
+      }
+    ]
+  }
+}

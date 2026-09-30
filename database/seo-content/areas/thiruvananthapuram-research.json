@@ -1,0 +1,312 @@
+{
+  "areas": {
+    "kowdiar": {
+      "name": "Kowdiar",
+      "zone": "Kowdiar & Pattom",
+      "type": "residential",
+      "about": "<p>Kowdiar is one of Thiruvananthapuram's established upmarket neighbourhoods, sitting between Vellayambalam and Peroorkada. It marks the start of the Rajapatha, the old royal road that runs down to East Fort. Homes here are a mix of large independent houses and villas on wide, tree-lined roads, with a growing number of apartment complexes, most of them sold as resale flats rather than new launches.</p><p>Main links run towards Peroorkada junction, towards Pattom junction and along the road to PMG, so a tutor coming from most central localities has a straightforward bus or auto ride. In an independent house the tutor usually reaches the door directly and street parking is manageable; in an apartment complex, give the tutor's name to the security desk once so later visits are quick. Evening sessions work well if the tutor avoids the office rush at the Pattom and Vellayambalam junctions. For specialist or board-specific subjects that nearby tutors may not cover, online classes are a practical option. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kowdiar",
+        "https://www.99acres.com/flats-in-kowdiar-trivandrum-ffid",
+        "https://www.99acres.com/independent-house-in-kowdiar-trivandrum-ffid"
+      ]
+    },
+    "vellayambalam": {
+      "name": "Vellayambalam",
+      "zone": "Kowdiar & Pattom",
+      "type": "mixed",
+      "about": "<p>Vellayambalam is a well-known junction on the Rajapatha between Kowdiar and East Fort, where the roads from Kowdiar, Sasthamangalam, East Fort, Thycaud and Thampanoor meet at a roundabout. Around it sit government offices and cultural venues, with homes in the lanes behind. Apartments make up much of the housing on offer, alongside villas, and neighbouring localities include Vazhuthacaud, Sasthamangalam and Jawahar Nagar.</p><p>Because so many roads meet here, a tutor can reach Vellayambalam easily by city bus or auto from almost any direction. The flip side is that the junction gets busy when offices open and close, so late-afternoon or early-evening slots that avoid those peaks are easier for regular classes. Families in apartment buildings should let the gate staff know the tutor's name and visiting days, and should mention visitor parking if the tutor rides a scooter. Students who need an uncommon subject or a specific board can combine a local tutor with online sessions. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vellayambalam",
+        "https://www.99acres.com/vellayambalam-trivandrum-overview-piffid",
+        "https://www.99acres.com/flats-in-vellayambalam-trivandrum-ffid"
+      ]
+    },
+    "sasthamangalam": {
+      "name": "Sasthamangalam",
+      "zone": "Kowdiar & Pattom",
+      "type": "residential",
+      "about": "<p>Sasthamangalam is a residential ward of Thiruvananthapuram city, known for its old Mahadevar temple, one of the temples traditionally visited by the Travancore royal family. It lies close to Vellayambalam, with Vattiyoorkavu further out. Housing is a mix of independent houses of different sizes and apartments, mostly three-bedroom flats, along with some plots still being built on.</p><p>For home tuition, the quieter residential lanes help: a tutor visiting an independent house can usually park at the gate and go straight in. In a flat, a one-time registration with the building's security keeps weekly visits smooth. Tutors often come in from Vellayambalam, Kowdiar or Vattiyoorkavu by bus or auto, so it is worth setting a class time that avoids the evening rush at the Vellayambalam junction. Families who want a subject specialist, such as for advanced science or a particular board, can add online classes to a local tutor's visits. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sasthamangalam",
+        "https://www.99acres.com/sasthamangalam-trivandrum-overview-piffid",
+        "https://en.wikipedia.org/wiki/Vattiyoorkavu"
+      ]
+    },
+    "pattom": {
+      "name": "Pattom",
+      "zone": "Kowdiar & Pattom",
+      "type": "mixed",
+      "about": "<p>Pattom is a busy suburb north of the city centre, built around one of Thiruvananthapuram's main intersections, where four roads meet, including NH 66 towards north Kerala. Although shopping complexes and office buildings line the main roads, much of Pattom is residential, with a mix of independent houses and apartment buildings in the side streets.</p><p>Pattom is a major stop for buses running to and from the central bus station at Thampanoor and the city bus station at East Fort, so tutors from across the city can reach it without a car, and autos and cabs are easy to find. The junction itself gets crowded at office hours, so classes in the late afternoon or after the evening rush are more reliable. In apartment buildings, share the tutor's details with the security desk in advance; in independent houses, the tutor usually comes straight to the door. The city's metro is still at planning stage. Online sessions suit students who need a specialist for one subject. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Pattom",
+        "https://www.99acres.com/pattom-trivandrum-overview-piffid",
+        "https://www.99acres.com/independent-house-in-pattom-trivandrum-ffid"
+      ]
+    },
+    "kesavadasapuram": {
+      "name": "Kesavadasapuram",
+      "zone": "Kowdiar & Pattom",
+      "type": "mixed",
+      "about": "<p>Kesavadasapuram is the major junction where NH 66 meets MC Road (State Highway 1), which starts here and runs north towards Kottayam. It is a commercial and educational hub, with several colleges and schools nearby. Homes are in the residential pockets around the junction, including Pillaveedu Nagar, with Muttada and Parottukonam close by. Housing is a mix of apartment buildings and independent houses, with some residential plots.</p><p>Sitting on two main roads makes Kesavadasapuram easy for a tutor to reach by bus from the city centre, from the NH 66 side towards Ulloor and Sreekaryam, or from the MC Road side. The junction is at its busiest at school and office hours, so weekday classes are easier to keep on time if they start after the evening peak. In apartment buildings, tell the security desk the tutor's name once; in houses in the lanes, parking is usually simpler. A metro corridor through the junction has been proposed but not built. Online classes help for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kesavadasapuram",
+        "https://en.wikipedia.org/wiki/Main_Central_Road",
+        "https://www.99acres.com/kesavadasapuram-trivandrum-overview-piffid",
+        "https://en.wikipedia.org/wiki/Thiruvananthapuram_Metro"
+      ]
+    },
+    "peroorkada": {
+      "name": "Peroorkada",
+      "zone": "Peroorkada & Vattiyoorkavu",
+      "type": "residential",
+      "about": "<p>Peroorkada is a suburb and corporation ward in the north of Thiruvananthapuram, reached from Kowdiar and sitting on the road towards Nedumangad, which is being widened to four lanes. It has local markets within walking distance and good bus links. Housing leans towards independent houses and villas, including gated villa communities, with a smaller number of apartment buildings.</p><p>For a tutor, the villa-heavy layout means most visits are to an individual gate with easy parking. In a gated community, the family should register the tutor at the main gate so entry does not hold up the class. Buses and autos are easy to find, so tutors from Kowdiar, Kudappanakunnu or Vattiyoorkavu can manage the trip without their own vehicle. A flyover project has been approved at the Peroorkada junction, so during construction the family and tutor should allow extra buffer around the junction at peak hours. Online sessions help for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Peroorkada",
+        "https://www.99acres.com/peroorkada-trivandrum-overview-piffid",
+        "https://www.99acres.com/independent-house-in-peroorkada-trivandrum-ffid"
+      ]
+    },
+    "kudappanakunnu": {
+      "name": "Kudappanakunnu",
+      "zone": "Peroorkada & Vattiyoorkavu",
+      "type": "mixed",
+      "about": "<p>Kudappanakunnu is home to the Civil Station and the District Collector's office, which makes it the administrative headquarters of Thiruvananthapuram district. The state broadcaster's Doordarshan Kendra is here too, as is the old Kunnath Mahadeva temple. Around these offices, the neighbourhood is mostly homes: villas and independent houses, residential plots and a few apartment projects. Neighbouring localities include Vazhayila, Nalanchira, Muttada and Mannanthala.</p><p>Local roads such as MLA Road and the lanes around the Civil Station carry most of the traffic, and it is heaviest when government offices open and close. A tutor coming for an after-school class should aim to arrive after that rush. Bus services link Kudappanakunnu with the city centre, and the nearest main stop for many homes is at Mannanthala. Villas and houses usually mean the tutor reaches the doorstep directly with room to park, while villa communities may ask visitors to sign in at the gate. Online classes can fill gaps in specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kudappanakunnu",
+        "https://www.99acres.com/kudappanakunnu-trivandrum-overview-piffid"
+      ]
+    },
+    "vattiyoorkavu": {
+      "name": "Vattiyoorkavu",
+      "zone": "Peroorkada & Vattiyoorkavu",
+      "type": "residential",
+      "about": "<p>Vattiyoorkavu is a comparatively high-lying residential area in the north-east of the city, crossed by the Killi and Karamana rivers. Once a largely artisan settlement, it has become a sought-after area for middle-class families. Villas and residential plots make up much of the housing, with apartment complexes and upmarket villa projects added in recent decades. Nearby localities include Sasthamangalam, Maruthamkuzhi, Kulasekharam, Manikanteswaram and Nettayam.</p><p>Regular buses run from the Vattiyoorkavu stop to East Fort and other parts of the city, and there are auto and taxi stands near the junction, so a tutor without a vehicle can still manage the last leg. Vattiyoorkavu also acts as a link to outlying places such as Aruvikkara, so the main junction is busier at school and office hours; slots after that peak work better. Tutors visiting independent villas usually go straight to the door, while gated communities need a gate entry. Families looking for a specialist can add online sessions. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vattiyoorkavu",
+        "https://www.99acres.com/vattiyoorkavu-trivandrum-overview-piffid"
+      ]
+    },
+    "nalanchira": {
+      "name": "Nalanchira",
+      "zone": "Peroorkada & Vattiyoorkavu",
+      "type": "residential",
+      "about": "<p>Nalanchira is a middle-class residential suburb on MC Road, lying between Mannanthala and Pananvila, with Muttada, Parottukonam and Paruthippara nearby. It is known locally for its many schools, colleges and training institutes. The locality is made up of named residential pockets such as Benedict Nagar, Rajeev Gandhi Nagar and Rose Nagar, with residential plots, villas and a smaller number of apartment buildings.</p><p>MC Road is the main route in and out, carrying buses towards Kesavadasapuram and the city centre in one direction and towards Mannanthala in the other. Because so many students travel to institutes here, the road is busiest at school opening and closing times; tuition slots in the early evening, after that crowd clears, are easier for a visiting tutor. Most homes in the residential nagars are independent houses where the tutor comes straight to the door, while villa projects and apartment buildings may ask for gate registration. For specialist subjects, online classes are a useful addition. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Nalanchira",
+        "https://www.99acres.com/nalanchira-trivandrum-overview-piffid",
+        "https://en.wikipedia.org/wiki/Main_Central_Road"
+      ]
+    },
+    "ulloor": {
+      "name": "Ulloor",
+      "zone": "Ulloor & Kazhakkoottam",
+      "type": "mixed",
+      "about": "<p>Ulloor lies on the old NH 66 route between Kesavadasapuram and Sreekaryam, and is widely known for the large medical campus and hospitals clustered here. Behind the main road, Ulloor is a residential area with independent houses, some apartment buildings and a good share of residential plots. The road from Ulloor towards Akkulam has double-storey houses and rental homes, and nearby pockets include Prashanth Nagar and Pulayanarcottah.</p><p>The hospital traffic keeps the main junction busy through much of the day, so tutors visiting homes along the Akkulam road or in the inner lanes should plan their route to avoid the junction at peak hours. Buses along NH 66 connect Ulloor with the city centre and with Sreekaryam and Kazhakkoottam, and autos are easy to find for the last stretch. Independent houses usually allow doorstep access and easy parking; apartment buildings will want the tutor's name at the gate. The proposed metro corridor lists a station here but is not yet built. Online tutors cover specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ulloor",
+        "https://en.wikipedia.org/wiki/Thiruvananthapuram_Metro",
+        "https://www.ekeralarealestate.com/independent-house-for-rent-at-ulloor-akkulam-road-trivandrum/"
+      ]
+    },
+    "sreekaryam": {
+      "name": "Sreekaryam",
+      "zone": "Ulloor & Kazhakkoottam",
+      "type": "mixed",
+      "about": "<p>Sreekaryam is a locality on NH 66, north of Ulloor and roughly midway between Kazhakkoottam and the city centre at Palayam. It is an education and research hub, with an engineering college, schools and a central research institute nearby. Housing is a mix of apartment projects with two- and three-bedroom flats, independent houses for rent and gated villa communities, many of them popular with people working at the IT park towards Kazhakkoottam.</p><p>NH 66 is the main spine, so buses between the city and Kazhakkoottam stop here and a tutor from either side can reach Sreekaryam easily. The highway is busy at school, college and IT-shift times, so evening classes work better once the rush has eased. Gated villa communities and apartment buildings usually need the tutor to be registered at the gate, while independent houses give doorstep access. A metro corridor along this stretch of NH 66 has been proposed but not built. Families wanting a specialist for one subject can add online classes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sreekaryam",
+        "https://en.wikipedia.org/wiki/Thiruvananthapuram_Metro",
+        "https://www.helloaddress.com/2-bhk-apartment-for-rent-in-sreekariyam-295"
+      ]
+    },
+    "kazhakkoottam": {
+      "name": "Kazhakkoottam",
+      "zone": "Ulloor & Kazhakkoottam",
+      "type": "mixed",
+      "about": "<p>Kazhakkoottam is the city's IT suburb, a major junction where NH 66 from the city meets the Kazhakkoottam–Kovalam bypass, with an elevated highway carrying through traffic above the junction. The IT park beside NH 66 drives demand for housing here, and Kazhakkoottam is among the fastest-growing parts of the city. Homes include apartment projects close to the IT park, villa communities, independent houses and residential plots.</p><p>Kazhakuttam railway station and frequent buses along NH 66 connect the area with the rest of the city, and autos handle the last stretch to most homes. Traffic peaks with IT shift changes, so tuition slots set around those shift times, or at weekends, are easier to keep. Apartment projects and villa communities usually require the tutor to be registered at the gate, while independent houses give doorstep access with room to park. A metro route to Kazhakkoottam is proposed but not built. With many working parents, online classes are a useful option on busy weekdays. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kazhakoottam",
+        "https://en.wikipedia.org/wiki/Kazhakoottam_flyover",
+        "https://www.99acres.com/villas-in-kazhakootam-trivandrum-ffid",
+        "https://en.wikipedia.org/wiki/Technopark,_Trivandrum"
+      ]
+    },
+    "vazhuthacaud": {
+      "name": "Vazhuthacaud",
+      "zone": "Thycaud & Karamana",
+      "type": "mixed",
+      "about": "<p>Vazhuthacaud is a central locality that combines homes with offices and cultural venues, including the city's radio station and a theatre. It lies between East Fort, Thycaud and Vellayambalam, and is known for an old Mahaganapathi temple. Homes here include apartment buildings, many of them fairly new, independent houses, and some plots, mostly two- and three-bedroom homes.</p><p>Main roads connect Vazhuthacaud with Thycaud, Chalai and Palayam, so tutors from the city centre, Vellayambalam or Poojappura can reach it easily by bus or auto. Because offices and large schools sit nearby, traffic is heavy when schools open and close; tuition slots after the school rush make visits more reliable. In apartment buildings, the tutor's name should be left with the security desk so that entry is quick. Parking can be tight in the busier lanes, so a family in an independent house might offer the gate area for a scooter. Online classes help for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vazhuthacaud",
+        "https://www.99acres.com/vazhuthacaud-trivandrum-overview-piffid"
+      ]
+    },
+    "thycaud": {
+      "name": "Thycaud",
+      "zone": "Thycaud & Karamana",
+      "type": "residential",
+      "about": "<p>Thycaud is a central residential locality close to Thampanoor, with Vazhuthacaud and Jagathy as its neighbours. Homes are a mix of villas and independent houses, with some apartment buildings. Being close to Thiruvananthapuram Central railway station and the central bus station opposite it at Thampanoor makes Thycaud one of the easiest localities for a tutor to reach from almost anywhere in the city.</p><p>A tutor can come in by bus to Thampanoor and take an auto for the last short leg, or ride straight in from Vazhuthacaud or Poojappura. The roads around Thampanoor are among the busiest in the city, so classes that avoid the morning and evening office rush are easier to keep on time. Most visits to houses in the lanes go straight to the door; in apartment buildings, the tutor should be registered with the security desk once. Students preparing for a particular board or entrance exam can combine a local tutor with online classes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/thycaud-trivandrum-overview-piffid",
+        "https://en.wikipedia.org/wiki/Thiruvananthapuram_Central_railway_station",
+        "https://en.wikipedia.org/wiki/Thampanoor"
+      ]
+    },
+    "poojappura": {
+      "name": "Poojappura",
+      "zone": "Thycaud & Karamana",
+      "type": "mixed",
+      "about": "<p>Poojappura is a suburb in the south-east of the city, surrounded by Jagathy, Karamana, Mudavanmugal and Thirumala. Its name recalls the place where the Travancore kings came for worship during the Navaratri festival. Today it is a mix of homes and state government offices. Housing is a mix of residential plots, villas and independent houses, with several apartment projects offering two- and three-bedroom flats.</p><p>The Trivandrum–Nagercoil highway runs close by, and Poojappura is well linked by bus to Thampanoor and the city centre, with Thiruvananthapuram Central station not far away. Tutors from Jagathy, Thirumala or Karamana have a short ride. Government office hours bring the heaviest traffic, so evening classes after the office rush are easier to keep. Apartment projects usually ask visitors to sign in at the gate, while independent houses give the tutor direct access and space for a two-wheeler. Online classes are a good way to cover specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Poojappura",
+        "https://www.99acres.com/poojappura-trivandrum-overview-piffid"
+      ]
+    },
+    "thirumala": {
+      "name": "Thirumala",
+      "zone": "Thycaud & Karamana",
+      "type": "residential",
+      "about": "<p>Thirumala, whose name means holy hill, is a quiet, mostly residential suburb on higher ground near Pangode and not far from Vazhuthacaud. It sits on the road towards Kattakkada and is known for its hilltop temple with views over the city. Housing is mainly independent houses and villas, with residential plots.</p><p>Private and state transport buses run to Thirumala from the central bus station at Thampanoor and from East Fort, and the locality is linked to Poojappura by road, so a tutor from Poojappura, Jagathy or Vazhuthacaud has a simple trip. Because most homes are independent houses, the tutor usually goes straight to the gate and parking is easy. The main road towards Kattakkada is the one to watch at school and office hours. Evening and weekend slots are usually the smoothest. Families wanting a specialist for board or entrance preparation can add online classes to local home tuition. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Thirumala,_Thiruvananthapuram",
+        "https://www.99acres.com/thirumala-trivandrum-overview-piffid"
+      ]
+    },
+    "karamana": {
+      "name": "Karamana",
+      "zone": "Thycaud & Karamana",
+      "type": "residential",
+      "about": "<p>Karamana is a suburb on the southern side of the city, described as one of the most densely populated but green parts of Thiruvananthapuram. The Karamana river runs through it, and NH 66 passes through on its way south towards Kanyakumari. Its older core has traditional theruvu, narrow wall-sharing streets of joined houses, while newer homes include independent houses on residential plots. Kaladi lies close by.</p><p>The narrow heritage streets mean a tutor on a scooter or on foot often has an easier time than one in a car, and parking may need to be arranged with the family. NH 66 is a main trade and travel route, so the highway through Karamana is busiest at office hours; classes set after the evening rush are easier. Buses along NH 66 link Karamana with Thampanoor, and tutors from Poojappura, Thycaud or Nemom can reach it quickly. Independent houses mean doorstep access in most cases. Online classes help when a specialist subject tutor is hard to find locally. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Karamana",
+        "https://keralarealestate.com/search-property-karamana"
+      ]
+    },
+    "nemom": {
+      "name": "Nemom",
+      "zone": "Thycaud & Karamana",
+      "type": "mixed",
+      "about": "<p>Nemom is a suburb on the southern edge of the corporation area, surrounded by Thirumala to the north, Malayinkeezhu, Balaramapuram, Kovalam and Thiruvallam. NH 66 is its main road, linking it with the city centre and with Neyyattinkara and Vizhinjam. Nemom has government offices, a medical college and some industry alongside homes. Housing is mainly independent houses and villas, with plenty of residential plots.</p><p>Nemom's railway station was renamed Thiruvananthapuram South in 2024 and is being developed as a satellite station to Central. Buses along NH 66 connect with Karamana and Thampanoor, so tutors from Karamana, Poojappura or Thirumala have a direct route, with an auto for the last leg. Most homes are independent houses, so the tutor usually has doorstep access and space to park. Traffic on NH 66 is heaviest at school and office hours, so evening classes are easier to keep. For specialist subjects, online tutors are a practical addition. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Nemom",
+        "https://www.99acres.com/nemom-trivandrum-overview-piffid",
+        "https://www.onmanorama.com/news/kerala/2024/08/06/centre-approves-renaming-nemom-kochuveli-stations-tvm-south-north.html"
+      ]
+    }
+  },
+  "zone_facts": {
+    "Kowdiar & Pattom": [
+      {
+        "fact": "Kesavadasapuram junction is where NH 66 meets MC Road (State Highway 1).",
+        "source": "https://en.wikipedia.org/wiki/Kesavadasapuram"
+      },
+      {
+        "fact": "MC Road (State Highway 1) starts at Kesavadasapuram in Thiruvananthapuram and runs north to Angamaly.",
+        "source": "https://en.wikipedia.org/wiki/Main_Central_Road"
+      },
+      {
+        "fact": "Pattom junction is the meeting point of four roads, including NH 66 towards north Kerala, and is a major bus stop for services to Thampanoor and East Fort.",
+        "source": "https://en.wikipedia.org/wiki/Pattom"
+      },
+      {
+        "fact": "Kowdiar is the starting point of the Rajapatha (Royal Path), which runs to East Fort via Vellayambalam.",
+        "source": "https://en.wikipedia.org/wiki/Kowdiar"
+      },
+      {
+        "fact": "Roads connecting Kowdiar, Sasthamangalam, East Fort, Thycaud and Thampanoor meet at Vellayambalam junction.",
+        "source": "https://en.wikipedia.org/wiki/Vellayambalam"
+      },
+      {
+        "fact": "Thiruvananthapuram Metro is a proposed project to be implemented by Kochi Metro Rail Limited; it is not under construction.",
+        "source": "https://en.wikipedia.org/wiki/Thiruvananthapuram_Metro"
+      }
+    ],
+    "Peroorkada & Vattiyoorkavu": [
+      {
+        "fact": "Kudappanakunnu houses the District Collector's office and Civil Station, the administrative headquarters of Thiruvananthapuram district.",
+        "source": "https://en.wikipedia.org/wiki/Kudappanakunnu"
+      },
+      {
+        "fact": "Nalanchira lies on MC Road (Main Central Road).",
+        "source": "https://en.wikipedia.org/wiki/Nalanchira"
+      },
+      {
+        "fact": "Vattiyoorkavu is a comparatively high-lying area in north-eastern Thiruvananthapuram, crossed by the Killi and Karamana rivers.",
+        "source": "https://en.wikipedia.org/wiki/Vattiyoorkavu"
+      },
+      {
+        "fact": "Buses run from the Vattiyoorkavu stop to East Fort and other parts of the city.",
+        "source": "https://en.wikipedia.org/wiki/Vattiyoorkavu"
+      },
+      {
+        "fact": "Peroorkada is Ward 31 of the Thiruvananthapuram Corporation; a flyover at Peroorkada was cleared for construction from September 2025.",
+        "source": "https://en.wikipedia.org/wiki/Peroorkada"
+      },
+      {
+        "fact": "MC Road passes the Mannanthala area, which is linked to Sreekaryam by the Sreekaryam–Peroorkada Road.",
+        "source": "https://en.wikipedia.org/wiki/Main_Central_Road"
+      }
+    ],
+    "Ulloor & Kazhakkoottam": [
+      {
+        "fact": "Kazhakkoottam is the junction where NH 66 from the city meets the Kazhakkoottam–Kovalam bypass, which is part of NH 66.",
+        "source": "https://en.wikipedia.org/wiki/Kazhakoottam"
+      },
+      {
+        "fact": "The Kazhakkoottam flyover, an elevated four-lane stretch of NH 66 above the junction, opened to traffic on 3 December 2022.",
+        "source": "https://en.wikipedia.org/wiki/Kazhakoottam_flyover"
+      },
+      {
+        "fact": "Technopark at Kazhakkoottam, along NH 66, was formally dedicated in November 1995.",
+        "source": "https://en.wikipedia.org/wiki/Technopark,_Trivandrum"
+      },
+      {
+        "fact": "Kazhakuttam railway station serves the Kazhakkoottam area.",
+        "source": "https://en.wikipedia.org/wiki/Kazhakoottam"
+      },
+      {
+        "fact": "NH 66 runs through Sreekaryam, which lies north of Ulloor, midway between Kazhakkoottam and Palayam.",
+        "source": "https://en.wikipedia.org/wiki/Sreekaryam"
+      },
+      {
+        "fact": "The proposed Thiruvananthapuram Metro route listed on Wikipedia includes stations at Kazhakuttam, Technopark, Kariavattom, Sreekaryam, Ulloor and Kesavadasapuram; the project is not built, and reported phase 1 alignments differ.",
+        "source": "https://en.wikipedia.org/wiki/Thiruvananthapuram_Metro"
+      },
+      {
+        "fact": "The Kerala Chief Minister approved the phase 1 metro alignment in October 2025, with Kochi Metro Rail Limited as implementing agency.",
+        "source": "https://metrorailnews.in/thiruvananthapuram-metro-phase-1-alignment/"
+      }
+    ],
+    "Thycaud & Karamana": [
+      {
+        "fact": "Thiruvananthapuram Central railway station at Thampanoor was inaugurated on 4 November 1931 and stands opposite the central bus station.",
+        "source": "https://en.wikipedia.org/wiki/Thiruvananthapuram_Central_railway_station"
+      },
+      {
+        "fact": "Nemom railway station was renamed Thiruvananthapuram South and Kochuveli was renamed Thiruvananthapuram North in August 2024, as satellite stations for Central.",
+        "source": "https://www.onmanorama.com/news/kerala/2024/08/06/centre-approves-renaming-nemom-kochuveli-stations-tvm-south-north.html"
+      },
+      {
+        "fact": "Thiruvananthapuram North (formerly Kochuveli, code TVCN) is a satellite terminal to reduce congestion at Central.",
+        "source": "https://en.wikipedia.org/wiki/Thiruvananthapuram_North_railway_station"
+      },
+      {
+        "fact": "NH 66 passes through Karamana, a major transit point for travel towards Kanyakumari district.",
+        "source": "https://en.wikipedia.org/wiki/Karamana"
+      },
+      {
+        "fact": "Karamana has traditional theruvu (wall-sharing streets).",
+        "source": "https://en.wikipedia.org/wiki/Karamana"
+      },
+      {
+        "fact": "The city bus terminal is at East Fort, and the central bus station is at Thampanoor.",
+        "source": "https://en.wikipedia.org/wiki/Transport_in_Thiruvananthapuram"
+      },
+      {
+        "fact": "Poojappura is surrounded by Jagathy, Karamana, Mudavanmugal and Thirumala.",
+        "source": "https://en.wikipedia.org/wiki/Poojappura"
+      }
+    ]
+  }
+}

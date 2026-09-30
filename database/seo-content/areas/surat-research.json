@@ -1,0 +1,400 @@
+{
+  "areas": {
+    "adajan": {
+      "name": "Adajan",
+      "zone": "Adajan, Pal & Rander",
+      "type": "residential",
+      "about": "<p>Adajan sits on the western bank of the Tapi, across the river from Athwa, and falls in the West Zone of the Surat Municipal Corporation, where Adajan Gam and Adajan Patiya are separate ward areas. Housing is a mix of mid-segment apartment buildings and independent houses, with the Adajan Patiya side offering many independent homes alongside newer flats. Rander Road and the Adajan flyover carry most local traffic, Hazira Road is close by, and a cable-stayed bridge opened in 2018 joins Adajan to Athwa alongside the older road bridges.</p><p>Adajan Patiya is the starting point of two Sitilink BRTS corridors, one running to Jahangirpura and one to Pal RTO, so a tutor without a vehicle can reach the area by bus. Adajan Gam is also a station on the Surat Metro Green Line, which is still under construction. In apartment blocks the tutor is usually entered at the security desk on the first visit, while in the house lanes they come straight to the door. Bridge approaches fill up at office hours, so plan the slot around that. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/adajan-surat-overview-piffid",
+        "https://www.99acres.com/adajan-patiya-surat-overview-piffid",
+        "https://en.wikipedia.org/wiki/Surat_BRTS",
+        "https://en.wikipedia.org/wiki/Cable_Bridge_(Surat,_India)"
+      ]
+    },
+    "pal": {
+      "name": "Pal",
+      "zone": "Adajan, Pal & Rander",
+      "type": "residential",
+      "about": "<p>Pal is a mid-segment residential locality in western Surat, part of the West Zone where Pal and the Pal transfer station area are listed as ward areas. It lies beside Palanpur and Palanpur Jakatnaka, with Adajan to the east, and most homes are in apartment buildings and residential societies, with local markets within walking reach. Hazira Road passes close by, linking Pal with the Adajan side and the industrial belt to the west.</p><p>Public transport is a practical option here. The Sitilink BRTS runs a corridor from Adajan Patiya to Pal RTO and another from Pal RTO across the city, and autos and cabs are easy to find. The Surat Metro Green Line from Bhesan to Saroli will pass through the neighbouring Palanpur side once it opens. For a tutor, society gates usually ask for a name and flat number at the first visit, and a regular weekday slot helps the guards recognise them. Families who want a specialist for a senior board subject often mix home lessons with online sessions. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/pal-surat-overview-piffid",
+        "https://www.suratmunicipal.gov.in/Zones/Wards?ZoneId=NZCQm6DXhojGS1zR6oPE5Q%3D%3D",
+        "https://en.wikipedia.org/wiki/Surat_BRTS"
+      ]
+    },
+    "palanpur": {
+      "name": "Palanpur",
+      "zone": "Adajan, Pal & Rander",
+      "type": "residential",
+      "about": "<p>Palanpur is a mid-segment locality in west Surat, next to Pal and Palanpur Jakatnaka, and is counted as its own ward area (Palanpore) in the municipal West Zone. The housing stock is mostly ready 2 BHK and 3 BHK apartments built by city-based developers, so most families live in multi-storey societies rather than independent houses. Bhesan Road is one of the main roads through the area, and there are several business parks close by.</p><p>Palanpur Road is a station on the Surat Metro Green Line, which runs from Bhesan to Saroli and is still under construction, so for now a tutor comes by two-wheeler, auto or Sitilink bus from the Pal RTO and Adajan Patiya corridors. Residents point to easy cab and auto availability and public transport that runs even at odd hours. Because nearly every home is in a society, the tutor should expect gate registration on the first visit and should share a phone number with the parent in advance. Evening slots after school are the usual choice for board-year students. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/palanpur-surat-overview-piffid",
+        "https://en.wikipedia.org/wiki/Green_Line_(Surat_Metro)",
+        "https://www.suratmunicipal.gov.in/Zones/Wards?ZoneId=NZCQm6DXhojGS1zR6oPE5Q%3D%3D"
+      ]
+    },
+    "rander": {
+      "name": "Rander",
+      "zone": "Adajan, Pal & Rander",
+      "type": "residential",
+      "about": "<p>Rander is one of the oldest settlements on the Tapi, a trading town long before Surat grew into a port, and its merchants once traded with Africa, the Middle East and Southeast Asia before trade shifted to Surat in the sixteenth century. Today it is part of the municipal West Zone, whose zonal office sits at Tadwadi on New Rander Road. The old core has narrow lanes and family houses, while newer apartment buildings with lifts and parking have come up around it.</p><p>Rander lies close to Palanpur Patiya, Tadwadi and Jahangirabad, with Adajan to the south along Rander Road. Residents mention markets within walking reach and easy auto availability, and the Sitilink BRTS corridors from Adajan Patiya run nearby. In the older lanes a tutor can usually come straight to the door but may need to park a little away and walk in, while the newer apartment blocks have a gate desk. Market hours on the main roads get busy, so a fixed early evening time works well for regular classes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rander",
+        "https://www.99acres.com/rander-surat-overview-piffid",
+        "https://www.suratmunicipal.gov.in/Zones/Wards?ZoneId=NZCQm6DXhojGS1zR6oPE5Q%3D%3D"
+      ]
+    },
+    "jahangirpura": {
+      "name": "Jahangirpura",
+      "zone": "Adajan, Pal & Rander",
+      "type": "residential",
+      "about": "<p>Jahangirpura is an affordable to mid-segment locality at the north-western edge of the city, listed as a ward area in the municipal West Zone. It sits near Dabholi, Variav and Jothan, and its housing is mostly 2 BHK and 3 BHK apartments by local developers, along with residential plots where families have built their own houses. Hazira-Sayan Road is the main road link to the rest of the city.</p><p>Two Sitilink BRTS corridors end at Jahangirpura, one from Adajan Patiya and one from the Katargam side, so buses connect it with both banks of the river. Utran is the nearest railway station. The metro does not reach this area in its first phase. A tutor living in Adajan, Rander or Katargam can reach Jahangirpura directly, and residents describe well-kept roads and easy auto availability. In apartment societies the tutor is registered at the gate, while plotted houses are reached at the doorstep. Because the area is on the outer side of the city, many families also use online classes for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/jahangir-pura-surat-overview-piffid",
+        "https://en.wikipedia.org/wiki/Surat_BRTS",
+        "https://www.suratmunicipal.gov.in/Zones/Wards?ZoneId=NZCQm6DXhojGS1zR6oPE5Q%3D%3D"
+      ]
+    },
+    "nanpura": {
+      "name": "Nanpura",
+      "zone": "Central Surat, Athwa & Ghod Dod Road",
+      "type": "mixed",
+      "about": "<p>Nanpura is an old central neighbourhood of Surat, close to Majura Gate, Kailash Nagar and Athwa Gate, and it has its own ward office in the municipal Central Zone. Homes here are a mix of apartments, builder floors and older independent houses, so the area feels more like the old city than the planned western suburbs. Surat railway station and Udhna Junction are the nearest rail points, and shops and offices line the main roads.</p><p>Because Nanpura is so central, tutors from Athwa, Adajan, Ghod Dod Road and the old city can all reach it without a long ride, and Sitilink buses run through the surrounding roads. Majura Gate, next door, is planned as the interchange of the two Surat Metro lines, which are still under construction. In the older buildings the tutor usually comes to the door directly, but parking in the narrow lanes can be tight, so a two-wheeler or auto works better than a car. Shopping hours make the main roads busy, so an afternoon or early evening slot is easier to keep. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/nanpura-surat-overview-piffid",
+        "https://www.suratmunicipal.gov.in/Zones/Wards?ZoneId=NifrTxTpQi0Mc8IGmRI02w%3D%3D",
+        "https://en.wikipedia.org/wiki/Surat_Metro"
+      ]
+    },
+    "majura-gate": {
+      "name": "Majura Gate",
+      "zone": "Central Surat, Athwa & Ghod Dod Road",
+      "type": "mixed",
+      "about": "<p>Majura Gate is a central junction area where the Surat Ring Road passes through, with Nanpura, Sagrampura and the start of Ghod Dod Road around it. It has a strong commercial side with offices and shops, and the homes nearby are mostly 2 BHK and 3 BHK apartments in mid-segment buildings. Udhna Junction is reached along the Ring Road, and the route to the airport runs out along Dumas Road.</p><p>Majura Gate appears on both lines of the Surat Metro, the Red Line from Sarthana to Dream City and the Green Line from Bhesan to Saroli, and is planned as the interchange between them, though neither line is open for passengers yet. Until then, Sitilink buses, autos and two-wheelers are the usual way in. Ring Road traffic is heavy in office and market hours, so a tutor coming from across the city should build in extra time or pick a slot outside those peaks. Most homes here are flats with a watchman at the entrance, and a quick call from the parent on the first visit helps. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/majura-gate-surat-overview-piffid",
+        "https://en.wikipedia.org/wiki/Red_Line_(Surat_Metro)",
+        "https://en.wikipedia.org/wiki/Green_Line_(Surat_Metro)",
+        "https://themetrorailguy.com/surat-metro-information-route-maps-fares-tenders-updates/"
+      ]
+    },
+    "athwa": {
+      "name": "Athwa",
+      "zone": "Central Surat, Athwa & Ghod Dod Road",
+      "type": "residential",
+      "about": "<p>Athwa, including Athwalines and the Athwa Gate area, is a well-established part of the municipal South West Zone, whose zonal office is at Athwalines. It sits on the southern bank of the Tapi facing Adajan, next to Ghod Dod Road, and offers a mix of ready apartments, independent houses and some plots. Dumas Road and the Ring Road give it links to the rest of the city, and a cable-stayed bridge opened in October 2018 connects Athwa with Adajan across the river.</p><p>Athwa Chopati is a station on the Surat Metro Green Line, which is under construction, so for now tutors come by two-wheeler, auto or Sitilink bus. Because the area is central, tutors from Adajan, Nanpura, Piplod and City Light can all reach it easily. Apartment buildings have a watchman at the gate, while in the house lanes the tutor comes to the door. The bridge approaches and the roads towards Ghod Dod Road get crowded in the evening, so an afternoon slot or a slightly later evening one is often easier. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Athwalines",
+        "https://www.99acres.com/athwalines-surat-overview-piffid",
+        "https://en.wikipedia.org/wiki/Cable_Bridge_(Surat,_India)",
+        "https://en.wikipedia.org/wiki/Green_Line_(Surat_Metro)"
+      ]
+    },
+    "ghod-dod-road": {
+      "name": "Ghod Dod Road",
+      "zone": "Central Surat, Athwa & Ghod Dod Road",
+      "type": "mixed",
+      "about": "<p>Ghod Dod Road runs from Majura Gate to Parle Point and is one of the main shopping streets of Surat; the name means horse racing in Gujarati, from the races held here in the 1900s, and the road was rebuilt in the 1980s into a retail hub. Behind the shopfronts it is a premium housing belt dominated by ready 3 BHK apartments, with Athwalines, Subhash Nagar and Kailash Nagar along the stretch and Bhatar close by.</p><p>The road itself has no metro yet, but Majura Gate at its northern end is on both Surat Metro lines, which are still under construction. Sitilink buses, autos and cabs are easy to find, and Udhna Junction and Surat railway station are the rail points. For a tutor, the main thing is timing: shoppers fill the road in the evening, so reaching a home here just after school hours, or coming in from a side road, is easier than arriving at peak shopping time. Most apartment buildings have a watchman who notes visitors on the first day. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ghod_Dod_Road",
+        "https://www.99acres.com/ghod-dod-road-surat-overview-piffid",
+        "https://en.wikipedia.org/wiki/Red_Line_(Surat_Metro)"
+      ]
+    },
+    "parle-point": {
+      "name": "Parle Point",
+      "zone": "Central Surat, Athwa & Ghod Dod Road",
+      "type": "mixed",
+      "about": "<p>Parle Point is the junction at the southern end of Ghod Dod Road, with Athwalines, Piplod and City Light as its neighbours. It is a busy commercial node with offices, cafes and family restaurants, and the homes around it are mostly apartments, with a few villas and plots. Daily needs such as supermarkets, banks and pharmacies are close at hand, and coaching centres are common in the surrounding roads.</p><p>Because it sits between the old central areas and the newer south-western suburbs, Parle Point is easy for tutors coming from Athwa, Piplod, City Light or Ghod Dod Road. Sitilink buses and autos serve the junction, and residents mention easy cab availability and markets within walking reach. The junction is crowded in the evening when restaurants and shops are busy, so a tutor should allow for that or choose a slightly earlier slot. In apartment buildings the watchman usually asks for the flat number on the first visit, after which regular classes run smoothly. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/parle-point-surat-overview-piffid",
+        "https://en.wikipedia.org/wiki/Ghod_Dod_Road",
+        "https://en.wikipedia.org/wiki/Piplod,_Surat"
+      ]
+    },
+    "piplod": {
+      "name": "Piplod",
+      "zone": "Piplod, Vesu & Dumas Road",
+      "type": "residential",
+      "about": "<p>Piplod is an upmarket locality in the Athwalines part of the city, south of the Tapi, and is its own ward area in the municipal South West Zone. Its homes are mostly ready apartments and villas by local developers. Gaurav Path, the expressway that links the city with its airport, Magdalla port and Dumas village, runs through Piplod with a dedicated BRTS lane, and Kargil Chowk is one of its main junctions. Vesu Main Road and the Udhna-Magdalla Road connect it with Rundh, Magdalla and Althan.</p><p>The BRTS lane on Gaurav Path means a tutor without a vehicle can reach Piplod by Sitilink bus, and autos and cabs are easy to find. Traffic builds up on the Vesu and Dumas Road junctions at office hours, so an early evening slot, or one after the rush, is easier to keep regular. In gated apartment societies the tutor is registered at the gate, while villa lanes allow a doorstep visit. Neighbouring City Light, Parle Point and Vesu give families a good pool of tutors nearby. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Piplod,_Surat",
+        "https://en.wikipedia.org/wiki/Gaurav_Path",
+        "https://www.99acres.com/piplod-surat-overview-piffid",
+        "https://www.suratmunicipal.gov.in/Zones/Wards?ZoneId=cr2vE8NwKbvzeGl4zCq0WA%3D%3D"
+      ]
+    },
+    "city-light": {
+      "name": "City Light",
+      "zone": "Piplod, Vesu & Dumas Road",
+      "type": "residential",
+      "about": "<p>City Light is a mid-segment residential area, treated by property listings as part of the wider Athwa area and listed as its own ward area in the municipal South West Zone. Homes are mainly ready 2 BHK and 3 BHK apartments in multi-storey societies. It sits close to Parle Point, Piplod and Althan and borders Pandesara, while the Ring Road, Vesu Canal Road and Surat-Dumas Road carry its traffic to the rest of the city.</p><p>Residents mention good public transport, easy auto availability and well-kept roads, and Sitilink buses serve the surrounding main roads. The Surat Metro Red Line, still under construction, passes along the Althan side next door. For a tutor this is a straightforward area to visit: most families live in societies with a gate desk, so the tutor is registered once and then waved through. Tutors from Athwa, Ghod Dod Road, Piplod and Vesu can all reach City Light easily. The canal road junctions are busiest at office hours, so a steady weekday slot a little after that works well. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/city-light-surat-overview-piffid",
+        "https://www.suratmunicipal.gov.in/Zones/Wards?ZoneId=cr2vE8NwKbvzeGl4zCq0WA%3D%3D",
+        "https://en.wikipedia.org/wiki/Pandesara"
+      ]
+    },
+    "vesu": {
+      "name": "Vesu",
+      "zone": "Piplod, Vesu & Dumas Road",
+      "type": "residential",
+      "about": "<p>Vesu is a suburban area in the South West Zone of Surat and one of its newest expansions, with large residential complexes, business parks and shopping centres. Homes are mostly high-rise apartments in gated societies, many at the luxury end, and Bhimrad is a neighbouring area. VIP Road runs through it, and the Udhna-Magdalla Road, Surat-Dumas Road and Vesu Canal Road connect Vesu with the rest of the city, while the airport at Magdalla is close by.</p><p>The Surat Metro Red Line, which runs from Sarthana to Dream City, has stations planned at VIP Road and Bhimrad on this side, and trial runs began in March 2026 on the elevated stretch from Dream City to Althan Tenement; the line had not opened to passengers when this was checked. Until then, tutors come by two-wheeler, auto or Sitilink bus. Almost every home is in a gated society, so the tutor needs to be registered at the gate and sometimes given a visitor pass by the family. Evening peaks on VIP Road and Dumas Road are worth planning around. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vesu",
+        "https://www.99acres.com/vesu-surat-overview-piffid",
+        "https://en.wikipedia.org/wiki/Red_Line_(Surat_Metro)",
+        "https://metrorailnews.in/surat-metro-trial-run-began-on-8km-section/"
+      ]
+    },
+    "dumas-road": {
+      "name": "Dumas Road",
+      "zone": "Piplod, Vesu & Dumas Road",
+      "type": "residential",
+      "about": "<p>Dumas Road is the main road running south-west from central Surat towards Magdalla, the airport and Dumas beach on the Arabian Sea coast, and a residential belt has grown along it. Homes are mostly mid-segment apartments in gated societies, with Piplod and Vesu on either side of the road. In municipal terms the stretch falls in the South West Zone, which lists Dumas, Gaviyar and Rundh-Magdalla among its ward areas.</p><p>Residents mention good public transport, easy cab availability and well-maintained roads. The Surat Metro Red Line, under construction, runs along the Vesu and VIP Road side towards Dream City rather than along Dumas Road itself, so the road remains a bus, auto and two-wheeler route for now. For tutors, the useful point is that families here nearly all live in gated societies, so gate registration and a visitor entry are normal. Traffic on Dumas Road is busiest at office hours and on weekend evenings, so a regular weekday slot outside those times is easier to keep. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/dumas-road-surat-overview-piffid",
+        "https://en.wikipedia.org/wiki/Dumas_Beach",
+        "https://en.wikipedia.org/wiki/Surat_International_Airport",
+        "https://www.suratmunicipal.gov.in/Zones/Wards?ZoneId=cr2vE8NwKbvzeGl4zCq0WA%3D%3D"
+      ]
+    },
+    "althan": {
+      "name": "Althan",
+      "zone": "Udhna, Althan & Pandesara",
+      "type": "residential",
+      "about": "<p>Althan is an affordable to mid-budget locality in the southern part of the city, sharing the Althan-Bhatar ward area of the municipal South West Zone. Homes are mostly 2 BHK and 3 BHK apartments built by city-based developers. The Udhna-Magdalla Road, VIP Road and Bhatar Road connect it with Udhna, Magdalla and Umrao Nagar, and New Althan, Bhatar Char Rasta and New City Light are its neighbours, with Pandesara beyond.</p><p>Althan is where the Surat Metro is closest to opening. The Red Line has stations planned at Althan Tenament and Althan Gam, and trial runs began in March 2026 on the elevated stretch from Dream City to Althan Tenement, though the line had not opened to passengers when this was checked. Until then, tutors use Sitilink buses, autos and two-wheelers, and Udhna Junction is the nearest railway station. Most families live in apartment societies with a gate desk, so the tutor is registered once. Tutors from Bhatar, City Light, Vesu and Udhna can reach Althan without crossing the river. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/althan-surat-overview-piffid",
+        "https://en.wikipedia.org/wiki/Red_Line_(Surat_Metro)",
+        "https://metrorailnews.in/surat-metro-trial-run-began-on-8km-section/",
+        "https://www.suratmunicipal.gov.in/Zones/Wards?ZoneId=cr2vE8NwKbvzeGl4zCq0WA%3D%3D"
+      ]
+    },
+    "bhatar": {
+      "name": "Bhatar",
+      "zone": "Udhna, Althan & Pandesara",
+      "type": "residential",
+      "about": "<p>Bhatar is a mid-segment residential locality between Ghod Dod Road and Althan, sharing the Althan-Bhatar ward area of the municipal South West Zone. The housing is mostly ready 1 BHK and 2 BHK apartments by city-based builders, with Bhatar Char Rasta as the main local junction. Bhatar Road, Vesu Canal Road and the Bhatar-Bamroli Road connect it with Athwa, Althan and Rundh.</p><p>Residents mention good connectivity, and Sitilink buses and autos serve the main roads. The Surat Metro Red Line, which is still under construction, runs along the Althan side next door, with trial runs on the stretch towards Dream City since March 2026. For a tutor, Bhatar is easy to reach from Ghod Dod Road, Athwa, City Light and Althan. Most homes are in apartment buildings with a watchman, so the tutor gives the flat number on the first day and is then known at the gate. The junctions on Bhatar Road are busy in the evening, so arriving a little before the rush helps. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/bhatar-surat-overview-piffid",
+        "https://www.99acres.com/althan-surat-overview-piffid",
+        "https://www.suratmunicipal.gov.in/Zones/Wards?ZoneId=cr2vE8NwKbvzeGl4zCq0WA%3D%3D",
+        "https://en.wikipedia.org/wiki/Red_Line_(Surat_Metro)"
+      ]
+    },
+    "udhna": {
+      "name": "Udhna",
+      "zone": "Udhna, Althan & Pandesara",
+      "type": "mixed",
+      "about": "<p>Udhna, also written Udhana, is a large suburban area in the south of Surat, lying mainly along the Surat-Navsari highway, and it is one of the city's main industrial areas. Homes are mostly affordable 1 BHK and 2 BHK apartments and houses, set among several industrial estates. Its neighbours include Pandesara, Bhestan and Bamroli, and in municipal terms it falls in the South Zone, with Udhna Gam and Udhna Sandh as ward areas.</p><p>Udhna Junction railway station, on the Delhi-Mumbai and Ahmedabad-Mumbai main lines and the start of the line to Jalgaon, is in the area, and Bhestan station is close by. The city's first BRTS corridor, from Udhana Darwaja to Sachin GIDC Naka, serves this side of the city, and residents mention good public transport and easy auto availability. For a tutor, the highway and industrial roads are busiest at shift-change and office hours, so an evening slot after that works better. Many homes are houses or small buildings where the tutor comes straight to the door. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Udhna",
+        "https://en.wikipedia.org/wiki/Udhna_Junction_railway_station",
+        "https://www.99acres.com/udhana-surat-overview-piffid",
+        "https://en.wikipedia.org/wiki/Surat_BRTS"
+      ]
+    },
+    "pandesara": {
+      "name": "Pandesara",
+      "zone": "Udhna, Althan & Pandesara",
+      "type": "mixed",
+      "about": "<p>Pandesara was once a small village and grew into a large industrial and commercial hub after industries were set up here, and it now has a sizeable residential population too. It borders City Light, Althan, Sachin and Udhna, and in municipal terms it falls in the South Zone, whose ward areas include Pandesara-Housing and Pandesara-Bamroli. Alongside the industrial estates there is a housing board colony and a mix of small apartment buildings and houses.</p><p>Udhna Junction is the nearest railway station, and the Udhana main road and the Bamroli-Althan road link Pandesara with the rest of the city. Residents mention good public transport, easy auto availability and markets within walking reach. The metro does not serve Pandesara in its first phase. For a tutor, the industrial roads are busiest at shift-change hours, so it is worth fixing a class time that avoids them. Housing board blocks and small buildings usually allow the tutor to come straight to the flat, and families often add online classes for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Pandesara",
+        "https://www.99acres.com/pandesara-surat-overview-piffid",
+        "https://www.99acres.com/gujarat-housing-board-pandesara-surat-overview-piffid"
+      ]
+    },
+    "katargam": {
+      "name": "Katargam",
+      "zone": "Katargam, Varachha & Sarthana",
+      "type": "mixed",
+      "about": "<p>Katargam is a dense suburb north of the Tapi. It was a nagar panchayat in the 1970s before joining the Surat Municipal Corporation, and today the North Zone office is here. It is a major centre of Surat's diamond industry, much of its population traces its roots to Saurashtra, and it has a riverside promenade on the Tapi known as the Causeway. Homes are mostly affordable apartments, with Patel Nagar and Narayan Nagar among its neighbourhoods.</p><p>Ramkatha Road, Dabholi Road and Amroli Road link Katargam with Adajan, Mota Varachha and Jahangirpura, and Surat and Utran railway stations are both close. Sitilink BRTS corridors run from Katargam Darwaja to Kosad and towards Jahangirpura. The metro does not pass through Katargam in its first phase. For a tutor, the lanes near the diamond workshops get busy when shifts start and end, so a fixed evening slot after that is easier. Apartment buildings here are often smaller, and the tutor usually goes straight to the door. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Katargam",
+        "https://www.99acres.com/katargam-surat-overview-piffid",
+        "https://en.wikipedia.org/wiki/Surat_BRTS"
+      ]
+    },
+    "amroli": {
+      "name": "Amroli",
+      "zone": "Katargam, Varachha & Sarthana",
+      "type": "residential",
+      "about": "<p>Amroli is an affordable locality on the north side of Surat, and it became part of the city in 2006 when the Amroli, Chhaprabhatha and Kosad municipalities were merged into the Surat Municipal Corporation. It sits in the municipal North Zone, near Chhaprabhatha, Kosad and Utran. Homes are mostly 1 BHK and 2 BHK apartments, with some independent houses.</p><p>Utran and Kosad railway stations are the nearest rail points, and the Sitilink BRTS corridor from Katargam Darwaja to Kosad serves the area. Residents mention good public transport and markets within walking reach. The metro does not reach Amroli in its first phase. For a tutor, Amroli is easily reached from Katargam and Mota Varachha, and families in small apartment buildings usually let the tutor come straight up. Because it is on the northern edge of the city, many families combine a nearby home tutor for regular subjects with online lessons for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/amroli-surat-overview-piffid",
+        "https://en.wikipedia.org/wiki/Katargam",
+        "https://en.wikipedia.org/wiki/Surat_BRTS"
+      ]
+    },
+    "varachha": {
+      "name": "Varachha",
+      "zone": "Katargam, Varachha & Sarthana",
+      "type": "mixed",
+      "about": "<p>Varachha is a suburb in the East Zone of Surat and a major hub of diamond cutting and polishing, much of it run by families who moved here from Saurashtra, along with embroidery units. Homes are mostly affordable 1 BHK and 2 BHK apartments in closely built neighbourhoods such as Matavadi and Trikamnagar, close to the Bombay Market area. Varachha Road and the Surat-Kamrej highway carry most of its traffic.</p><p>The Surat Metro Red Line, from Sarthana to Dream City, is being built through this side of the city, with stations such as Varachha Chopati Garden and Kapodra, but it is not open yet. For now, Surat railway station, Utran station and Sitilink buses serve the area, and autos are easy to find. For a tutor, diamond-unit shift times shape the traffic, so it helps to fix a class after the evening rush. In smaller apartment buildings the tutor usually comes straight to the door, and tutors from Katargam, Kapodra and Sarthana can reach Varachha easily. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Varachha",
+        "https://www.99acres.com/varachha-surat-overview-piffid",
+        "https://en.wikipedia.org/wiki/Red_Line_(Surat_Metro)"
+      ]
+    },
+    "mota-varachha": {
+      "name": "Mota Varachha",
+      "zone": "Katargam, Varachha & Sarthana",
+      "type": "residential",
+      "about": "<p>Mota Varachha is an affordable residential area on the north-eastern side of Surat, near Nana Varachha, Amroli and Utran, and it falls in the East Zone of the Surat Municipal Corporation, which has two ward offices here. Housing is mostly 2 BHK and 3 BHK apartments by local developers, many of them in newer multi-storey societies, with Abrama Road among the local roads.</p><p>Utran and Kosad railway stations are the nearest rail points, and autos and Sitilink buses connect the area with Katargam and Varachha. The metro does not reach Mota Varachha in its first phase. For a tutor, the newer societies usually have a gate desk where the tutor is noted on the first visit, and a regular weekday slot helps the guards recognise them. Tutors from Katargam, Amroli, Sarthana and Varachha can reach the area easily. Families often combine a nearby home tutor for everyday subjects with online classes for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/mota-varachha-surat-overview-piffid",
+        "https://www.suratmunicipal.gov.in/Zones/East/EastZoneB"
+      ]
+    },
+    "sarthana": {
+      "name": "Sarthana",
+      "zone": "Katargam, Varachha & Sarthana",
+      "type": "residential",
+      "about": "<p>Sarthana, around Sarthana Jakat Naka and Sarthana Gam, is on the eastern edge of Surat, near Nana Varachha, Chikuwadi and Yogi Chowk. It falls in the municipal East Zone, with separate ward offices for Sarthana Jakat Naka and Sarthana Gam. Homes are mostly apartments in residential societies, and residents describe well-lit streets.</p><p>Sarthana is the eastern terminus of the Surat Metro Red Line, which will run through Varachha and the city centre to Dream City, with Nature Park as the next station; the line is still under construction. Sarthana Jakat Naka is already the end point of one of the first Sitilink BRTS corridors, which runs across the city by way of Canal Road, so a tutor can reach the area by bus. Utran and Kosad are the nearest railway stations. For a tutor, society gates here usually note visitors on the first visit, and a two-wheeler is the easiest way to get around the inner roads. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/sarthana-jakatnaka-surat-overview-piffid",
+        "https://en.wikipedia.org/wiki/Red_Line_(Surat_Metro)",
+        "https://en.wikipedia.org/wiki/Surat_BRTS"
+      ]
+    },
+    "yogi-chowk": {
+      "name": "Yogi Chowk",
+      "zone": "Katargam, Varachha & Sarthana",
+      "type": "residential",
+      "about": "<p>Yogi Chowk is an affordable residential area in eastern Surat, near Simada Gam, Chikuwadi and Punagam, with Sarthana and Nana Varachha close by. Housing is mostly ready apartments built by local builders, set around busy local shopping streets, and the area is reached mainly by Yogi Chowk Road and nearby link roads. Surat railway station is reached by way of the Varachha flyover and the Surat-Kamrej highway.</p><p>The area is not on a metro line yet; the Red Line under construction passes through Sarthana and Varachha nearby. Sitilink buses and autos serve the main roads, and the BRTS corridor to Sarthana Jakat Naka runs close by. For a tutor, the shopping streets around the chowk are busy in the evening, so a slot just after school, or a later one, keeps the travel simple. Most families live in apartment buildings where the tutor gives the flat number at the entrance on the first visit, and nearby tutors from Varachha, Sarthana and Kapodra can reach the area easily. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/yogi-chowk-surat-overview-piffid",
+        "https://www.99acres.com/sarthana-jakatnaka-surat-overview-piffid",
+        "https://en.wikipedia.org/wiki/Red_Line_(Surat_Metro)"
+      ]
+    }
+  },
+  "zone_facts": {
+    "Adajan, Pal & Rander": [
+      {
+        "fact": "Adajan Gam, Adajan Patiya, Pal, Palanpore, Rander, Jahangirpura, Bhesan and Variav are among the ward areas of the Surat Municipal Corporation's West Zone (Rander).",
+        "source": "https://www.suratmunicipal.gov.in/Zones/Wards?ZoneId=NZCQm6DXhojGS1zR6oPE5Q%3D%3D"
+      },
+      {
+        "fact": "Phase 2 of the Sitilink BRTS includes corridors from Adajan Patiya to Jahangirpura, from Adajan Patiya to Pal RTO, and from Pal RTO across the city.",
+        "source": "https://en.wikipedia.org/wiki/Surat_BRTS"
+      },
+      {
+        "fact": "The Surat Metro Green Line runs from Bhesan to Saroli, with stations including Bhesan, Palanpur Road, Adajan Gam and Athwa Chopati; it is under construction and expected to be operational by December 2027.",
+        "source": "https://en.wikipedia.org/wiki/Green_Line_(Surat_Metro)"
+      },
+      {
+        "fact": "A cable-stayed bridge over the Tapi connecting Athwa and Adajan was inaugurated on 2 October 2018 after construction began in 2010.",
+        "source": "https://en.wikipedia.org/wiki/Cable_Bridge_(Surat,_India)"
+      },
+      {
+        "fact": "Rander was a trading settlement from around 200 AD; after Portuguese forces sacked it in 1530, maritime trade shifted to the neighbouring port of Surat.",
+        "source": "https://en.wikipedia.org/wiki/Rander"
+      }
+    ],
+    "Central Surat, Athwa & Ghod Dod Road": [
+      {
+        "fact": "Ghod Dod Road stretches from Majura Gate to Parle Point; it was rebuilt in the 1980s into a major shopping hub and its name means horse racing, from races held there in the 1900s.",
+        "source": "https://en.wikipedia.org/wiki/Ghod_Dod_Road"
+      },
+      {
+        "fact": "Athwalines is a suburban area in the South West Zone of Surat, and the zone's administrative building is at Athwalines.",
+        "source": "https://en.wikipedia.org/wiki/Athwalines"
+      },
+      {
+        "fact": "Majura Gate is a station on both the Red Line (Sarthana to Dream City) and the Green Line (Bhesan to Saroli) of the Surat Metro, both under construction.",
+        "source": "https://en.wikipedia.org/wiki/Red_Line_(Surat_Metro)"
+      },
+      {
+        "fact": "Nanpura and Sagrampura have ward offices in the Surat Municipal Corporation's Central Zone.",
+        "source": "https://www.suratmunicipal.gov.in/Zones/Wards?ZoneId=NifrTxTpQi0Mc8IGmRI02w%3D%3D"
+      },
+      {
+        "fact": "Surat railway station, built in 1860, is under the Western Railway zone.",
+        "source": "https://en.wikipedia.org/wiki/Surat"
+      },
+      {
+        "fact": "The Surat Ring Road passes through the Majura Gate locality.",
+        "source": "https://www.99acres.com/majura-gate-surat-overview-piffid"
+      }
+    ],
+    "Piplod, Vesu & Dumas Road": [
+      {
+        "fact": "Gaurav Path is an expressway in Piplod designed to connect Surat with its airport, Magdalla port and Dumas village, with three lanes each way, service lanes and a BRTS lane.",
+        "source": "https://en.wikipedia.org/wiki/Gaurav_Path"
+      },
+      {
+        "fact": "Vesu is a suburban area in the South West Zone of Surat and one of its newest expansions, with residential complexes, business parks and shopping centres.",
+        "source": "https://en.wikipedia.org/wiki/Vesu"
+      },
+      {
+        "fact": "Surat International Airport is located in Magdalla.",
+        "source": "https://en.wikipedia.org/wiki/Surat_International_Airport"
+      },
+      {
+        "fact": "Piplod, Vesu, City Light, Dumas, Gaviyar and Rundh-Magdalla are ward areas of the South West Zone (Athwa).",
+        "source": "https://www.suratmunicipal.gov.in/Zones/Wards?ZoneId=cr2vE8NwKbvzeGl4zCq0WA%3D%3D"
+      },
+      {
+        "fact": "The Surat Metro Red Line from Sarthana to Dream City has stations planned at VIP Road, Bhimrad, Convention Center and Dream City on this side of the city; the line is under construction.",
+        "source": "https://en.wikipedia.org/wiki/Red_Line_(Surat_Metro)"
+      },
+      {
+        "fact": "Dumas Beach lies on the Arabian Sea south-west of the city.",
+        "source": "https://en.wikipedia.org/wiki/Dumas_Beach"
+      }
+    ],
+    "Udhna, Althan & Pandesara": [
+      {
+        "fact": "Trial runs on the Surat Metro began on 29 March 2026 on the elevated section between Dream City and Althan Tenement, ahead of operational clearance.",
+        "source": "https://metrorailnews.in/surat-metro-trial-run-began-on-8km-section/"
+      },
+      {
+        "fact": "The Surat Metro is being implemented by Gujarat Metro Rail Corporation; as of the latest update no section had opened for passenger service, and phase one is due for completion by December 2027.",
+        "source": "https://en.wikipedia.org/wiki/Surat_Metro"
+      },
+      {
+        "fact": "Udhna Junction railway station serves the New Delhi-Mumbai main line, the Udhna-Jalgaon line and the Ahmedabad-Mumbai main line, under the Western Railway zone.",
+        "source": "https://en.wikipedia.org/wiki/Udhna_Junction_railway_station"
+      },
+      {
+        "fact": "Phase 1 of the Sitilink BRTS included the corridor from Udhana Darwaja to Sachin GIDC Naka; the system has been operational since 26 January 2014.",
+        "source": "https://en.wikipedia.org/wiki/Surat_BRTS"
+      },
+      {
+        "fact": "Pandesara grew from a small village into an industrial hub and borders City Light, Althan, Sachin and Udhna.",
+        "source": "https://en.wikipedia.org/wiki/Pandesara"
+      },
+      {
+        "fact": "Udhna lies mainly along the Surat-Navsari highway and is an industrial area of the city.",
+        "source": "https://en.wikipedia.org/wiki/Udhna"
+      }
+    ],
+    "Katargam, Varachha & Sarthana": [
+      {
+        "fact": "Varachha is in the East Zone of Surat and is a major hub of diamond cutting and polishing.",
+        "source": "https://en.wikipedia.org/wiki/Varachha"
+      },
+      {
+        "fact": "Katargam was a nagar panchayat in the 1970s before joining the Surat Municipal Corporation; in 2006 the municipalities of Amroli, Chhaprabhatha and Kosad were also amalgamated.",
+        "source": "https://en.wikipedia.org/wiki/Katargam"
+      },
+      {
+        "fact": "The Surat Metro Red Line starts at Sarthana and runs through Nature Park, Varachha Chopati Garden and Kapodra, with an underground section through Labheshwar Chowk and Surat Railway Station; it is under construction.",
+        "source": "https://en.wikipedia.org/wiki/Red_Line_(Surat_Metro)"
+      },
+      {
+        "fact": "Phase 1 of the Sitilink BRTS included a corridor via Canal Road to Sarthana Jakat Naka, and Phase 2 added a corridor from Katargam Darwaja to Kosad.",
+        "source": "https://en.wikipedia.org/wiki/Surat_BRTS"
+      },
+      {
+        "fact": "Utran railway station, on the New Delhi-Mumbai and Ahmedabad-Mumbai main lines, lies close to Surat railway station on the north side.",
+        "source": "https://en.wikipedia.org/wiki/Utran_railway_station"
+      }
+    ]
+  }
+}
