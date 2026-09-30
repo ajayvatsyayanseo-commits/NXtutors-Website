@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Schema;
  *   2. lists the area under "Areas I travel to"  "Travels to Sector 57"
  *   3. lists the zone, or lives in it            "Nearby · Golf Course Extension Road"
  *   4. elsewhere in the city                     "Elsewhere in Gurugram"
+ *   4b. home tutor in a neighbouring NCR city    "Nearby in NCR · Delhi NCR"
  *   5. in the same state, teaches online         "Online · Faridabad"
  *   6. anywhere in India, teaches online         "Online · Kolkata"
  *
@@ -46,7 +47,9 @@ class TutorCascade
         $area = mb_strtolower(trim($areaName));
         $areaRe = '/(?<![a-z0-9])' . preg_quote($area, '/') . '(?![a-z0-9])/u';
 
-        return collect(self::pool())->map(function (array $t) use ($citySlug, $cityName, $state, $area, $areaRe, $areaName, $zone, $pincode) {
+        $ncr = in_array($citySlug, Geo::NCR, true);
+
+        return collect(self::pool())->map(function (array $t) use ($citySlug, $cityName, $state, $area, $areaRe, $areaName, $zone, $pincode, $ncr) {
             $inCity = $t['city_slug'] === $citySlug;
             $tier = null;
             $label = null;
@@ -59,10 +62,13 @@ class TutorCascade
                 [$tier, $label] = [3, 'Nearby · ' . $zone];
             } elseif ($inCity) {
                 [$tier, $label] = [4, 'Elsewhere in ' . $cityName];
+            } elseif ($t['home'] && $ncr && in_array($t['city_slug'], Geo::NCR, true)) {
+                // A home tutor in a neighbouring NCR city can come to the house.
+                [$tier, $label] = [5, 'Nearby in NCR · ' . $t['city_name']];
             } elseif ($t['online'] && $t['state'] === $state && $state !== Geo::OTHER_STATE) {
-                [$tier, $label] = [5, 'Online · ' . $t['city_name']];
+                [$tier, $label] = [6, 'Online · ' . $t['city_name']];
             } elseif ($t['online']) {
-                [$tier, $label] = [6, 'Online' . ($t['city_name'] !== '' ? ' · ' . $t['city_name'] : '')];
+                [$tier, $label] = [7, 'Online' . ($t['city_name'] !== '' ? ' · ' . $t['city_name'] : '')];
             }
 
             return $tier === null ? null : $t + ['tier' => $tier, 'label' => $label];
@@ -147,7 +153,7 @@ class TutorCascade
      */
     private static function pool(): array
     {
-        return Cache::remember('tutorcascade.pool.v2', 900, function () {
+        return Cache::remember('tutorcascade.pool.v3', 900, function () {
             $cols = ['id', 'user_id', 'name', 'city', 'address', 'pincode', 'class_type'];
             foreach (['travel_areas', 'is_sample'] as $c) {
                 if (Schema::hasColumn('register', $c)) {
@@ -170,6 +176,8 @@ class TutorCascade
                     'pincode' => trim((string) $t->pincode),
                     'travel' => TravelAreas::entries($t->travel_areas ?? ''),
                     'online' => preg_match('/online|both/i', (string) $t->class_type) === 1,
+                    // Home unless the tutor teaches online only.
+                    'home' => ! preg_match('/^\s*online\s*$/i', (string) $t->class_type),
                     'sample' => (int) ($t->is_sample ?? 0),
                 ];
             })->all();

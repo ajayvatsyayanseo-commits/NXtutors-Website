@@ -55,6 +55,13 @@ class Geo
 
     public const OTHER_STATE = 'Other cities';
 
+    /**
+     * City pages in the National Capital Region. Home tutors in one of these
+     * can reasonably reach a neighbouring one (Dwarka to Palam Vihar, Noida to
+     * Indirapuram), so the tutor cascade offers them before online tutors.
+     */
+    public const NCR = ['delhi-ncr', 'delhi', 'gurugram', 'faridabad', 'noida', 'greater-noida', 'ghaziabad'];
+
     /** Map any typed city name to a city page slug, or '' when it is not one. */
     public static function slugFor(?string $name): string
     {
