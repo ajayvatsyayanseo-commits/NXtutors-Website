@@ -153,4 +153,10 @@ class SubjectLinks
 
         return null;
     }
+
+    /** Lowercase a label for running text but keep acronyms ("IB Maths" -> "IB maths", "JEE" stays). */
+    public static function lcLabel(?string $label): string
+    {
+        return (string) preg_replace_callback('/\b[A-Z][a-z]+\b/u', fn ($m) => strtolower($m[0]), (string) $label);
+    }
 }

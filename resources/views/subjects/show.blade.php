@@ -93,7 +93,7 @@
       <aside class="nx-shero__side" aria-label="At a glance">
         <ul class="nx-stats nx-stats--stack">
           @if(($tutors['matched'] ?? 0) > 0 && empty($tutors['relaxed']))
-            <li><strong>{{ number_format($tutors['matched']) }}</strong><span>matching {{ strtolower($page['subject_label'] ?? ($page['subject'] ?? '')) }} tutors @if(!empty($page['city'])) in {{ $page['city'] }} @endif</span></li>
+            <li><strong>{{ number_format($tutors['matched']) }}</strong><span>matching {{ \App\Support\SubjectLinks::lcLabel($page['subject_label'] ?? ($page['subject'] ?? '')) }} tutors @if(!empty($page['city'])) in {{ $page['city'] }} @endif</span></li>
           @endif
           <li><strong>₹800–2,500</strong><span>typical per hour across NXTutors</span></li>
           <li><strong>Free</strong><span>first demo class; switching tutor is free</span></li>
@@ -106,7 +106,7 @@
       <section class="section section--suggested nx-assist" aria-labelledby="subjectTutorsTitle">
         <div class="section-head">
           <h2 class="section-title" id="subjectTutorsTitle">
-            {{ !empty($tutors['relaxed']) ? 'Tutors' : ucfirst(strtolower($page['subject_label'] ?? ($page['subject'] ?? ''))) . ' tutors' }}@if(!empty($page['class'])) for {{ $page['class'] }}@endif @if(!empty($page['city'])) in {{ $page['city'] }}@endif
+            {{ !empty($tutors['relaxed']) ? 'Tutors' : ucfirst(\App\Support\SubjectLinks::lcLabel($page['subject_label'] ?? ($page['subject'] ?? ''))) . ' tutors' }}@if(!empty($page['class'])) for {{ $page['class'] }}@endif @if(!empty($page['city'])) in {{ $page['city'] }}@endif
           </h2>
           <p class="section-subtitle" style="margin:0">Verified tutors first; sample profiles are marked. {{ config('tutors.match_promise') }}.</p>
           <a class="btn btn-ghost btn-small" href="{{ route('tutors.index') }}">View all tutors →</a>
@@ -128,7 +128,7 @@
     @if(count($related['family']) || count($related['subjects']) || !empty($page['city_slug']))
       <section class="nx-sec" aria-labelledby="exploreTitle">
         <div class="nx-sec__head">
-          <h2 class="nx-sec__title" id="exploreTitle">Find the right {{ strtolower($page['subject_label'] ?? ($page['subject'] ?? '')) }} tutor faster</h2>
+          <h2 class="nx-sec__title" id="exploreTitle">Find the right {{ \App\Support\SubjectLinks::lcLabel($page['subject_label'] ?? ($page['subject'] ?? '')) }} tutor faster</h2>
         </div>
         <ul class="nx-chips nx-chips--rail">
           @foreach($related['family'] as $r)<li><a class="nx-chip" href="{{ $r['url'] }}">{{ $r['label'] }}</a></li>@endforeach
@@ -219,7 +219,7 @@
 
     <section class="nx-sec nx-cta-band" aria-label="Book a demo">
       <div>
-        <h2 class="nx-sec__title">Try a {{ strtolower($page['subject_label'] ?? ($page['subject'] ?? '')) }} tutor before you decide</h2>
+        <h2 class="nx-sec__title">Try a {{ \App\Support\SubjectLinks::lcLabel($page['subject_label'] ?? ($page['subject'] ?? '')) }} tutor before you decide</h2>
         <p class="nx-sec__sub">Tell us the class, board and your area. We share two or three matched tutors, and the first class is a free demo.</p>
       </div>
       <div class="nx-cta-row">

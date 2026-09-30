@@ -62,7 +62,7 @@ class SubjectPageController extends Controller
      */
     private function tutors(array $page): array
     {
-        $key = 'subject.tutors.v1.' . md5(json_encode([$page['subject'] ?? null, $page['class'] ?? null, $page['city'] ?? null, $page['board'] ?? null]));
+        $key = 'subject.tutors.v1.' . md5(json_encode([$page['subject'] ?? null, $page['class'] ?? null, $page['city'] ?? null, $page['board'] ?? null, $page['gender'] ?? null]));
 
         try {
             return Cache::remember($key, 900, function () use ($page) {
@@ -71,6 +71,7 @@ class SubjectPageController extends Controller
                     subject: $page['subject'] ?? null,
                     classLevel: $page['class'] ?? null,
                     board: $page['board'] ?? null,
+                    gender: $page['gender'] ?? null,
                     limit: 8,
                 ));
 
