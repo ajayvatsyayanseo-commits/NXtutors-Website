@@ -187,6 +187,27 @@ class GeoStructureTest extends TestCase
         $this->assertSame(1, DB::table('city_area_list_managment')->where('slug', 'dlf-phase-4')->count());
     }
 
+    public function test_sitemaps_split_areas_by_city_and_posts_by_topic(): void
+    {
+        $index = $this->get('/sitemap.xml')->assertOk();
+        $index->assertSee('/sitemap-areas-gurugram.xml', false)
+            ->assertSee('/sitemap-blog-boards.xml', false)
+            ->assertSee('/sitemap-blog-entrance.xml', false)
+            ->assertDontSee('/sitemap-areas.xml', false)
+            ->assertDontSee('/sitemap-blog.xml', false)
+            ->assertDontSee('/sitemap-blog-city.xml', false)
+            ->assertDontSee('/sitemap-areas-mumbai.xml', false); // no area pages
+
+        $this->get('/sitemap-areas-gurugram.xml')->assertOk()->assertSee('/city/gurugram/dlf-phase-4', false);
+        $this->get('/sitemap-blog-boards.xml')->assertOk()->assertSee('/blog/cbse-class-10-maths-preparation', false)
+            ->assertDontSee('near-you', false);
+        $this->withExceptionHandling();
+        $this->get('/sitemap-areas-mumbai.xml')->assertNotFound();
+        $this->get('/sitemap-blog-city.xml')->assertNotFound();
+        // The combined files still answer for anything that saved them.
+        $this->get('/sitemap-areas.xml')->assertOk();
+    }
+
     public function test_city_names_map_to_city_pages_whatever_the_spelling(): void
     {
         $this->assertSame('gurugram', Geo::slugFor('Gurgaon'));

@@ -53,6 +53,11 @@ Route::get('/sitemap.xml', [HomeController::class, 'sitemap'])
 Route::get('/search/suggest.json', [\App\Http\Controllers\SearchSuggestController::class, 'index'])->name('search.suggest');
 Route::post('/search/event', [\App\Http\Controllers\SearchSuggestController::class, 'event'])
     ->middleware('throttle:public-api')->name('search.event');
+// One sitemap per city for area pages, one per topic for blog posts.
+Route::get('/sitemap-areas-{city}.xml', [HomeController::class, 'sitemapAreas'])
+    ->where('city', '[a-z0-9-]+')->name('sitemap.areas');
+Route::get('/sitemap-blog-{topic}.xml', [HomeController::class, 'sitemapBlog'])
+    ->where('topic', '[a-z]+')->name('sitemap.blog');
 Route::get('/sitemap-{section}.xml', [HomeController::class, 'sitemapSection'])
     ->where('section', implode('|', HomeController::SITEMAP_SECTIONS))
     ->name('sitemap.section');

@@ -141,11 +141,116 @@ public function sitemap()
 {
     $baseUrl = 'https://www.nxtutors.com';
 
+    // Area pages get one sitemap per city and blog posts one per topic, so
+    // Search Console reports indexing city by city and topic by topic, and
+    // no single file grows past the 50,000-URL limit as cities are added.
+    // The combined sitemap-areas.xml and sitemap-blog.xml still answer, but
+    // are no longer listed.
+    $sections = array_values(array_diff(self::SITEMAP_SECTIONS, ['areas', 'blog']));
+    $maps = array_map(fn ($s) => $baseUrl . '/sitemap-' . $s . '.xml', $sections);
+
+    $citySlugs = City::where('status', 't')->whereNotNull('slug')->where('slug', '!=', '')
+        ->whereIn('id', City_area::where('status', 't')->whereNotNull('slug')->where('slug', '!=', '')->select('city_id'))
+        ->orderBy('slug')->pluck('slug');
+    foreach ($citySlugs as $slug) {
+        $maps[] = $baseUrl . '/sitemap-areas-' . $slug . '.xml';
+    }
+
+    $topics = collect($this->blogSitemapUrls(null, $baseUrl, true))->unique()->sort()->values();
+    foreach ($topics as $topic) {
+        $maps[] = $baseUrl . '/sitemap-blog-' . $topic . '.xml';
+    }
+
     return response()
-        ->view('sitemap-index', ['sitemaps' => array_map(fn ($s) => $baseUrl . '/sitemap-' . $s . '.xml', self::SITEMAP_SECTIONS)])
+        ->view('sitemap-index', ['sitemaps' => $maps])
         ->header('Content-Type', 'application/xml');
 }
 
+/** Area pages of one city: /sitemap-areas-{city}.xml. */
+public function sitemapAreas(string $city)
+{
+    $cityRow = City::where('status', 't')->where('slug', $city)->first();
+    abort_unless($cityRow, 404);
+
+    $urls = $this->areaSitemapUrls($cityRow->id, 'https://www.nxtutors.com');
+    abort_if($urls === [], 404);
+
+    return response()->view('sitemap', compact('urls'))->header('Content-Type', 'application/xml');
+}
+
+/** Blog posts of one topic (App\Support\BlogTopics): /sitemap-blog-{topic}.xml. */
+public function sitemapBlog(string $topic)
+{
+    abort_unless(isset(\App\Support\BlogTopics::TOPICS[$topic]) && $topic !== 'city', 404);
+
+    $urls = $this->blogSitemapUrls($topic, 'https://www.nxtutors.com');
+    abort_if($urls === [], 404);
+
+    return response()->view('sitemap', compact('urls'))->header('Content-Type', 'application/xml');
+}
+
+/** @return list<array{loc: string, lastmod: ?string, priority: string, changefreq: string}> */
+private function areaSitemapUrls(?int $cityId, string $baseUrl): array
+{
+    $urls = [];
+    // The area table has no timestamps, so no lastmod rather than a made-up one.
+    City_area::where('status', 't')
+        ->whereNotNull('slug')->where('slug', '!=', '')
+        ->when($cityId !== null, fn ($q) => $q->where('city_id', $cityId))
+        ->whereHas('city', fn ($q) => $q->where('status', 't'))
+        ->with('city:id,slug')
+        ->orderBy('id')
+        ->chunk(500, function ($areas) use (&$urls, $baseUrl) {
+            foreach ($areas as $area) {
+                if (empty($area->city?->slug)) {
+                    continue;
+                }
+                $urls[] = [
+                    'loc' => $baseUrl . '/city/' . $area->city->slug . '/' . $area->slug,
+                    'lastmod' => null,
+                    'priority' => '0.7',
+                    'changefreq' => 'monthly',
+                ];
+            }
+        });
+
+    return $urls;
+}
+
+/**
+ * Indexable blog posts (never the noindexed locality posts), optionally of
+ * one topic. With $topicsOnly, returns the topic of each post instead.
+ */
+private function blogSitemapUrls(?string $topic, string $baseUrl, bool $topicsOnly = false): array
+{
+    $out = [];
+    Blog::where('status', 't')->chunk(500, function ($blogs) use (&$out, $topic, $baseUrl, $topicsOnly) {
+        foreach ($blogs as $blog) {
+            $slug = trim((string) $blog->slug);
+            $t = \App\Support\BlogTopics::of($slug);
+            if ($slug === '' || $t === 'city' || ($topic !== null && $t !== $topic)) {
+                continue;
+            }
+            if ($topicsOnly) {
+                $out[] = $t;
+                continue;
+            }
+            // The real edit date where the table has one, else the publish
+            // date; never "today", which teaches Google to ignore lastmod.
+            $date = $blog->updated_at ?? null;
+            $lastmod = $date ? \Illuminate\Support\Carbon::parse($date)->toDateString()
+                : (preg_match('/^\d{4}-\d{2}-\d{2}/', (string) ($blog->date ?? ''), $m) ? $m[0] : null);
+            $out[] = [
+                'loc' => $baseUrl . '/blog/' . $slug,
+                'lastmod' => $lastmod,
+                'priority' => '0.7',
+                'changefreq' => 'weekly',
+            ];
+        }
+    });
+
+    return $out;
+}
 public function sitemapSection(string $section)
 {
     abort_unless(in_array($section, self::SITEMAP_SECTIONS, true), 404);
@@ -175,7 +280,7 @@ public function sitemapSection(string $section)
     foreach ($staticUrls as $url) {
         $urls[] = [
             'loc' => $baseUrl . $url,
-            'lastmod' => now()->toDateString(),
+            'lastmod' => null, // no edit date for static pages: never claim "today"
             'priority' => $url === '/' ? '1.0' : '0.8',
             'changefreq' => 'daily',
         ];
@@ -210,7 +315,7 @@ public function sitemapSection(string $section)
         foreach ($cities as $city) {
             $urls[] = [
                 'loc' => $baseUrl . '/city/' . $city->slug,
-                'lastmod' => optional($city->updated_at)->toDateString() ?? now()->toDateString(),
+                'lastmod' => optional($city->updated_at)->toDateString(),
                 'priority' => '0.8',
                 'changefreq' => 'weekly',
             ];
@@ -220,51 +325,14 @@ public function sitemapSection(string $section)
         break;
 
     case 'areas':
-    // City area pages (/city/{city}/{area}). The city page only links the
-    // first nine and loads the rest by AJAX, so without this list Google had
-    // no way to find most of the 150 Gurugram society and sector pages.
-    // The table has no timestamps, so no lastmod rather than a made-up one.
-    City_area::where('status', 't')
-        ->whereNotNull('slug')
-        ->where('slug', '!=', '')
-        ->whereHas('city', fn ($q) => $q->where('status', 't'))
-        ->with('city:id,slug')
-        ->orderBy('id')
-        ->chunk(500, function ($areas) use (&$urls, $baseUrl) {
-            foreach ($areas as $area) {
-                if (empty($area->city?->slug)) {
-                    continue;
-                }
-
-                $urls[] = [
-                    'loc' => $baseUrl . '/city/' . $area->city->slug . '/' . $area->slug,
-                    'lastmod' => null,
-                    'priority' => '0.7',
-                    'changefreq' => 'monthly',
-                ];
-            }
-        });
-
+        $urls = $this->areaSitemapUrls(null, $baseUrl);
         break;
+
 
     case 'blog':
-    // Blogs
-    Blog::where('status', 't')->chunk(500, function ($blogs) use (&$urls, $baseUrl) {
-        foreach ($blogs as $blog) {
-            // Locality posts are noindex (showsingleblog); a sitemap must not list them.
-            if (\App\Support\BlogTopics::of(trim((string) $blog->slug)) === 'city') {
-                continue;
-            }
-            $urls[] = [
-                'loc' => $baseUrl . '/blog/' . trim($blog->slug),
-                'lastmod' => optional($blog->updated_at)->toDateString() ?? now()->toDateString(),
-                'priority' => '0.7',
-                'changefreq' => 'weekly',
-            ];
-        }
-    });
-
+        $urls = $this->blogSitemapUrls(null, $baseUrl);
         break;
+
 
     case 'local-pages':
     // Generated Pages
@@ -283,7 +351,7 @@ public function sitemapSection(string $section)
 
             $urls[] = [
                 'loc' => $baseUrl . '/p/' . $page->slug,
-                'lastmod' => optional($page->updated_at)->toDateString() ?? now()->toDateString(),
+                'lastmod' => optional($page->updated_at)->toDateString(),
                 'priority' => '0.8',
                 'changefreq' => 'weekly',
             ];
@@ -308,7 +376,7 @@ public function sitemapSection(string $section)
             $seenCats[$cat->slug] = true;
             $urls[] = [
                 'loc' => $baseUrl . '/category/' . $cat->slug,
-                'lastmod' => optional($cat->updated_at)->toDateString() ?? now()->toDateString(),
+                'lastmod' => optional($cat->updated_at)->toDateString(),
                 'priority' => '0.8',
                 'changefreq' => 'weekly',
             ];
@@ -322,7 +390,7 @@ Product::where('status', 't')
         foreach ($courses as $course) {
             $urls[] = [
                 'loc' => $baseUrl . '/course/' . $course->slug,
-                'lastmod' => optional($course->updated_at)->toDateString() ?? now()->toDateString(),
+                'lastmod' => optional($course->updated_at)->toDateString(),
                 'priority' => '0.8',
                 'changefreq' => 'weekly',
             ];
@@ -354,7 +422,7 @@ Product::where('status', 't')
 
             $urls[] = [
                 'loc' => $profileUrl,
-                'lastmod' => optional($t->updated_at)->toDateString() ?? now()->toDateString(),
+                'lastmod' => optional($t->updated_at)->toDateString(),
                 'priority' => '0.7',
                 'changefreq' => 'weekly',
             ];
