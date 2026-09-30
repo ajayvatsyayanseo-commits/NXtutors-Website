@@ -58,7 +58,13 @@
   // Title and description. "Name | NXTutors" said nothing a searcher types;
   // the subject and city are what "maths tutor in gurgaon" actually matches.
   $metaCity  = $city !== '' ? ucwords(strtolower($city)) : '';
-  $metaSubj  = $subjectsTaught[0] ?? '';
+  // A real subject ("Mathematics"), never a category label such as
+  // "Academic (Class I–XII)": the same filter the tutor cards use.
+  $isSubj = fn ($v) => is_string($v) && trim($v) !== '' && ! preg_match('/academic|class|\(|\bboth\b|online|home/i', $v);
+  $metaCaps = $tutor instanceof \App\Models\Register ? app(\App\NxtAi\Support\PublicTutorFieldMapper::class)->capabilities($tutor) : [];
+  // Named authors (config/nx_authors.php) carry their subject there too.
+  $metaAuthor = collect(config('nx_authors', []))->first(fn ($a) => (string) ($a['user_id'] ?? '') !== '' && (string) $a['user_id'] === (string) $tutor->user_id);
+  $metaSubj = collect($metaCaps['subjects'] ?? [])->merge($subjectsTaught)->merge($metaAuthor['subjects'] ?? [])->first($isSubj) ?? '';
   $metaRole  = trim($metaSubj . ' Home Tutor');
   $metatitle = $tutor->name . ' – ' . $metaRole . ($metaCity !== '' ? ' in ' . $metaCity : '') . ' | NXTutors';
   $metadesc  = 'Profile of ' . $tutor->name . (empty($tutor->is_sample) ? ', a verified ' : ', a sample profile of a ') . strtolower($metaRole)

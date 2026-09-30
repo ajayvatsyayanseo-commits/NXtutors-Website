@@ -47,9 +47,14 @@
         'address' => [
           '@type' => 'PostalAddress',
           'streetAddress' => $setting->address ?? '',
+          // The office (Sector 66); split out so Google can place it.
+          'addressLocality' => 'Gurugram',
+          'addressRegion' => 'Haryana',
+          'postalCode' => '122101',
           'addressCountry' => 'IN',
         ],
-        'telephone' => $setting->phone ?? '',
+        // "+9178360 34313" as stored; schema wants one clean international number.
+        'telephone' => ($nxtTel = preg_replace('/\D+/', '', (string) ($setting->phone ?? ''))) !== '' ? '+' . $nxtTel : '',
         'email' => $setting->email ?? '',
       ],
       [

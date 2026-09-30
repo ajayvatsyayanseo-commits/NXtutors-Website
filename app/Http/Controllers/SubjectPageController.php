@@ -143,10 +143,33 @@ class SubjectPageController extends Controller
             return collect();
         }
 
-        return DB::table('blog_managment')
+        $all = DB::table('blog_managment')
             ->where('status', 't')->whereNotNull('slug')->where('slug', '!=', '')
             ->orderByDesc('id')->get(['title', 'slug'])
-            ->map(fn ($b) => (object) ['title' => $b->title, 'slug' => trim($b->slug)])
+            ->map(fn ($b) => (object) ['title' => $b->title, 'slug' => trim($b->slug)]);
+
+        // City pages (maths-home-tutor-gurgaon, ib-maths-tutor-gurgaon...) lead
+        // with that city's own guides: this subject, then this board, then
+        // fees and hiring safely. Zone guides stay on the area pages.
+        $local = collect();
+        if (! empty($page['city_slug'])) {
+            $words = array_filter([$page['city_slug'], strtolower((string) \App\Support\Geo::akaOf($page['city_slug']))]);
+            $near = ['Mathematics' => '/jee|cbse-class-10/', 'Science' => '/cbse-class-10/', 'Physics' => '/jee|neet/', 'Chemistry' => '/jee|neet/'][$page['subject'] ?? ''] ?? '/$^/';
+            $board = preg_match('/^(ib|igcse|icse)-/', (string) ($page['view'] ?? ''), $m) ? $m[1] : null;
+            $local = $all->filter(fn ($b) => BlogTopics::of($b->slug) !== 'city'
+                    && ! str_contains($b->slug, 'tuition-guide')
+                    && preg_match('/(^|-)(' . implode('|', $words) . ')(-|$)/', $b->slug))
+                ->map(fn ($b) => [$b, match (true) {
+                    (bool) preg_match($pattern, $b->slug) => 0,
+                    $board !== null && str_contains($b->slug, $board) => 1,
+                    (bool) preg_match($near, $b->slug) => 1,
+                    (bool) preg_match('/fees|choose/', $b->slug) => 2,
+                    default => 9,
+                }])
+                ->filter(fn ($r) => $r[1] < 9)->sortBy(fn ($r) => $r[1])->map(fn ($r) => $r[0])->values();
+        }
+
+        return $local->concat($all
             ->filter(fn ($b) => preg_match($pattern, $b->slug) && BlogTopics::of($b->slug) !== 'city')
             // This page's class first, then board guides, study-abroad last.
             ->sortBy(fn ($b) => match (true) {
@@ -155,6 +178,6 @@ class SubjectPageController extends Controller
                 BlogTopics::of($b->slug) === 'abroad' => 3,
                 default => 2,
             })
-            ->take(8)->values();
+            )->unique('slug')->take(8)->values();
     }
 }

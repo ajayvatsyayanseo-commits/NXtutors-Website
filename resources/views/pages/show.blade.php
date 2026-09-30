@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  @php $metatitle = $page->meta_title ?? $page->title; @endphp
-  @php $metadesc = $page->meta_description; @endphp
+  @php $metatitle = ($metatitle ?? null) ?: ($page->meta_title ?? $page->title); @endphp
+  @php $metadesc = ($metadesc ?? null) ?: $page->meta_description; @endphp
 
   {{-- ✅ SEO SAFE SCALE: Noindex + Canonical --}}
   @php

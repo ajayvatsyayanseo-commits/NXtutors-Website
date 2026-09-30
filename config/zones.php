@@ -31,7 +31,7 @@ return [
         ],
         'Golf Course Extension Road' => [
             'sectors' => [55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66],
-            'names' => ['golf course extension', 'gcer'],
+            'names' => ['golf course extension', 'gcer', 'huda plots'],
         ],
         'Sohna Road' => [
             'sectors' => [47, 48, 49, 50, 51, 67, 68, 69, 70, 71, 72],

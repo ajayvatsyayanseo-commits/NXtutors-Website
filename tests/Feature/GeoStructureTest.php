@@ -162,6 +162,31 @@ class GeoStructureTest extends TestCase
         $this->assertTrue(\App\Support\TravelAreas::entryCovers('Nirvana Country', 'nirvana country'));
     }
 
+    public function test_indexed_generated_pages_lead_their_title_with_home_tutor_in_the_area(): void
+    {
+        config(['generated_pages.seo' => ['sector-49-cbse-maths' => ['Sector 49', 'Gurugram', 'CBSE Maths, Class 10']]]);
+
+        $this->get('/p/sector-49-cbse-maths')->assertOk()
+            ->assertSee('<title>Home Tutor in Sector 49, Gurugram – CBSE Maths, Class 10</title>', false)
+            ->assertSee('Home tutor for CBSE Maths, Class 10 in Sector 49, Gurugram.', false);
+    }
+
+    public function test_new_area_pages_are_added_once_and_rolled_back(): void
+    {
+        $m = require database_path('migrations/seo/2026_09_30_110000_add_old_and_central_gurugram_area_pages.php');
+        $m->up();
+        $m->up();
+
+        $this->assertSame(1, DB::table('city_area_list_managment')->where('slug', 'palam-vihar')->count());
+        $this->get('/city/gurugram/palam-vihar')->assertOk()
+            ->assertSee('Home Tutors in Palam Vihar, Gurugram')
+            ->assertSee('Old Gurugram · Gurugram');
+
+        $m->down();
+        $this->assertSame(0, DB::table('city_area_list_managment')->where('slug', 'palam-vihar')->count());
+        $this->assertSame(1, DB::table('city_area_list_managment')->where('slug', 'dlf-phase-4')->count());
+    }
+
     public function test_city_names_map_to_city_pages_whatever_the_spelling(): void
     {
         $this->assertSame('gurugram', Geo::slugFor('Gurgaon'));

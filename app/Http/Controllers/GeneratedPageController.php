@@ -159,8 +159,14 @@ public function show($slug)
 );
   
    $metatitle = $page->meta_title;
+   // Indexed pages get a title that leads with "Home Tutor in {area}".
+   $pageSeo = \App\Support\GeneratedPageIndex::seo($page);
             $metakey = '';
             $metadesc =  $page->meta_description;
+   if ($pageSeo) {
+       $metatitle = $pageSeo['title'];
+       $metadesc = $pageSeo['desc'];
+   }
 
     return view('pages.show', compact('page', 'teachers', 'blogs', 'mapQuery', 'mapEmbedUrl','metatitle','metakey','metadesc', 'hyper','relatedPages','isNoindex', 'canonicalUrl', 'indexFlag'));
 }

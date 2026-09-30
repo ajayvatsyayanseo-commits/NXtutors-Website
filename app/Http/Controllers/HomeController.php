@@ -697,6 +697,11 @@ public function compareDefaults(Request $request)
         ->where('status', 't')
         ->where('id', '!=', $blog->id)
         ->select(['id','title','slug','avatar'])
+        // Not the noindexed locality posts (BlogTopics "city"): related links
+        // should lead to guides Google can index, such as the city clusters.
+        ->where('slug', 'not like', '%-near-you%')
+        ->where('slug', 'not like', '%best-home-tutors%')
+        ->where('slug', 'not like', '%coaching-at-home%')
         ->orderByDesc('id');
 
     if ($tokens->count()) {

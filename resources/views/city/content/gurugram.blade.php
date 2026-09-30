@@ -133,8 +133,9 @@
       <div class="nx-guide__card">
   <h3>Old Gurgaon, Palam Vihar and the HUDA sectors</h3>
   <p>
-    The older city around Sadar Bazaar, Palam Vihar and the {!! $ggA('huda-plots', 'HUDA plotted sectors') !!} has some
-    of the most experienced tutors in Gurugram, many of whom have taught board classes for over a decade. Demand here is
+    The older city around Sadar Bazaar, {!! $ggA('palam-vihar', 'Palam Vihar') !!} and the plotted sectors such as
+    {!! $ggA('sector-14', 'Sector 14') !!}, {!! $ggA('sector-15', 'Sector 15') !!} and {!! $ggA('sector-23', 'Sector 23') !!} has many
+    experienced tutors living close by, so home classes are usually easy to arrange. Demand here is
     strongest for CBSE Maths, Science and Accountancy, and for Hindi and Sanskrit, which are harder to find tutors for in
     the newer parts of the city.
   </p>

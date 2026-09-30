@@ -42,6 +42,21 @@
 
   <script type="application/ld+json">{!! json_encode($breadcrumb, JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE) !!}</script>
   <script type="application/ld+json">{!! json_encode($placeSchema, JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE) !!}</script>
+  @php
+    // Home tutoring in this city as a service of the organisation on the home
+    // page (same @id), with the fee range NXTutors publishes.
+    $serviceSchema = [
+      "@context" => "https://schema.org",
+      "@type" => "Service",
+      "name" => "Home tutoring in ".$city->city_name,
+      "serviceType" => "Home and online tutoring",
+      "url" => $pageUrl,
+      "provider" => ["@type" => "EducationalOrganization", "@id" => rtrim(url('/'), '/')."#organization", "name" => "NXTutors"],
+      "areaServed" => ["@type" => "City", "name" => $city->city_name],
+      "offers" => ["@type" => "Offer", "priceCurrency" => "INR", "priceSpecification" => ["@type" => "PriceSpecification", "minPrice" => 800, "maxPrice" => 2500, "priceCurrency" => "INR", "unitText" => "per hour"]],
+    ];
+  @endphp
+  <script type="application/ld+json">{!! json_encode($serviceSchema, JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE) !!}</script>
 
   <style>
     .container{max-width:1100px;margin:auto;padding:18px;}
