@@ -532,7 +532,7 @@
     Tell us the class, the exam year, whether your child takes Mathematics or Applied Mathematics, the topics causing
     trouble, whether JEE is also a goal, your city and the slots that suit you. We shortlist two or three matched ISC
     maths tutors, you pick one for a <a href="{{ url('/demo-class') }}">free demo class</a>, and switching later is free.
-    Every tutor is ID-verified before being shortlisted. For more on maths boards and exams, browse our
+    Tutors go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before they are shortlisted. For more on maths boards and exams, browse our
     <a href="{{ url('/blog') }}">blog</a>.
   </p>
   </section>

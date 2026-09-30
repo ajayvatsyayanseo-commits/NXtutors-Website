@@ -67,7 +67,7 @@
   <p>
     You then book a <strong>free demo class</strong> with the tutor you prefer. It is a normal maths lesson on whatever
     your child is studying that week, so you see how the tutor actually teaches. If it is not right, tell us and we set
-    up the next tutor. Switching is free. Every tutor is ID-verified before being shortlisted to a family.
+    up the next tutor. Switching is free. Tutors go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before they are shortlisted to a family.
   </p>
   <p>
     On this page, Ajay Vatsyayan writes about IB, IGCSE and ISC maths, and Abhinandan Tiwary about Class 10 CBSE and
@@ -381,7 +381,7 @@
     <li><strong>Register the tutor on your society's visitor app.</strong> Most gated societies in Gurugram use a visitor-management app; pre-approving the tutor logs every entry and saves waiting at the gate.</li>
     <li><strong>Have an adult at home.</strong> Especially for younger students, schedule sessions when a parent or trusted adult is in.</li>
     <li><strong>Use a common area.</strong> A dining table works better for maths than a bedroom anyway: space for notebooks and good light.</li>
-    <li><strong>Tell us about any concern.</strong> If anything about a tutor's conduct worries you, contact us directly and we act on it the same day.</li>
+    <li><strong>Tell us about any concern.</strong> If anything about a tutor's conduct worries you, tell us straight away.</li>
   </ul>
   </section>
 

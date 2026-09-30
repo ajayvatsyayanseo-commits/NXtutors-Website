@@ -39,6 +39,6 @@ return [
     ],
     [
         'Is there a free demo class, and can we change tutors later?',
-        'Yes. We shortlist two or three matched IGCSE maths tutors and you choose one for a free demo class. If the fit is not right we arrange another tutor, and switching later is free. Every tutor on NXTutors is ID-verified.',
+        'Yes. We shortlist two or three matched IGCSE maths tutors and you choose one for a free demo class. If the fit is not right we arrange another tutor, and switching later is free. Tutors who join NXTutors go through an ID check.',
     ],
 ];

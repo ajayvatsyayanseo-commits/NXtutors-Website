@@ -81,6 +81,7 @@
         <li><a href="{{ url('/')}}/tutors">Find Tutors</a></li>
         <li><a href="{{ url('/become-a-tutor') }}">Become a Tutor</a></li>
         <li><a href="{{ url('/tuition-jobs') }}">Tuition Jobs</a></li>
+        <li><a href="{{ url('/how-we-verify-tutors') }}">How we verify tutors</a></li>
         <li><a href="{{ url('/')}}/demo-class">Demo Class</a></li>
         <li><a href="{{ url('/')}}/pricing">Subscription Plan</a></li>
       </ul>

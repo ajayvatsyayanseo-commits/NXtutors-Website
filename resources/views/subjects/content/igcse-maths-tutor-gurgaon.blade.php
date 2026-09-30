@@ -331,7 +331,7 @@
     Tell us the student's grade, tier (Core or Extended, or not yet decided), exam series, whether Additional Maths is
     in the picture, your sector or society and the slots you prefer. We shortlist two or three matched IGCSE maths
     tutors, you pick one for a <a href="{{ url('/demo-class') }}">free demo class</a>, and switching later is free.
-    Every tutor is ID-verified. You can also browse <a href="{{ url('/tutors') }}">tutors</a> yourself.
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>. You can also browse <a href="{{ url('/tutors') }}">tutors</a> yourself.
   </p>
   </section>
 

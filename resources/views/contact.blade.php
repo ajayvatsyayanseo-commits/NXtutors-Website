@@ -469,7 +469,7 @@ body.page .nxct-faq__a{
       </li>
       <li class="nxct-step">
         <h3>We shortlist two or three tutors</h3>
-        <p>Matched on subject and board experience, distance from you, availability and budget. Every tutor is ID-verified.</p>
+        <p>Matched on subject and board experience, distance from you, availability and budget. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>.</p>
       </li>
       <li class="nxct-step">
         <h3>You take a free demo class</h3>

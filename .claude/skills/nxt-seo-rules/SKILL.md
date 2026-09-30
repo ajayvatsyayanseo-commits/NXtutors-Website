@@ -12,6 +12,7 @@ nxtutors.com is a tutor-matching platform (Laravel 12, repo `~/NXtutors-Website`
 - Home tutoring across Gurugram (and cities where tutors exist), online tutoring across India. Office: **Sector 66, Gurugram**.
 - Fees, the only allowed sentence: "Across NXTutors, most home-tuition sessions fall between ₹800 and ₹2,500 an hour; Classes 11–12, IB/IGCSE and JEE/NEET sit toward the upper end; specialists for IB HL or JEE Advanced can charge more."
 - Tutors set their own fee. Tutor plans are **paid** (/pricing): never say joining is free.
+- Tutor ID check (confirmed by Ajay, 1 Oct 2026): tutors who join confirm phone/email with a one-time code and upload a government photo ID that the team reviews before the profile goes live; real tutors who pass carry a **Verified** badge. Say "tutors who join go through an ID check" and link `/how-we-verify-tutors`. It is **not** a police or background check. Never "every tutor on NXTutors is verified" (sample profiles exist), never promise response times ("same day").
 - Claim: "AI-first tutoring, with real teachers". Never "India's first", "No. 1", "best", "guaranteed".
 
 ## 2. Hard content rules (a breach = do not publish)

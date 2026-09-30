@@ -510,7 +510,7 @@
     To get started, tell us the student's grade, board and syllabus code, tier (or that it is not decided yet), exam
     series, your city and area, whether you want home or online tuition, and the slots that suit you. We shortlist two
     or three matched tutors, you choose one for a <a href="{{ url('/demo-class') }}">free demo class</a>, and switching
-    later is free. Every tutor on NXTutors is ID-verified.
+    later is free. Tutors who join NXTutors go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>.
   </p>
   </section>
 

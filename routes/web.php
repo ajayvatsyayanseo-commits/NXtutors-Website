@@ -179,6 +179,7 @@ Route::get('/tuition-jobs', [\App\Http\Controllers\TuitionJobsController::class,
 Route::get('/tuition-jobs/state/{state}', [\App\Http\Controllers\TuitionJobsController::class, 'state'])->where('state', '[a-z0-9-]+')->name('tuition-jobs.state');
 Route::get('/tuition-jobs/{city}', [\App\Http\Controllers\TuitionJobsController::class, 'show'])->where('city', '[a-z0-9-]+')->name('tuition-jobs');
 Route::get('/become-a-tutor', [\App\Http\Controllers\BecomeTutorController::class, 'show'])->name('become-tutor');
+Route::get('/how-we-verify-tutors', [\App\Http\Controllers\VerifyTutorsController::class, 'show'])->name('verify-tutors');
 Route::get('/authors', [\App\Http\Controllers\AuthorController::class, 'index'])->name('authors.index');
 Route::get('/authors/{slug}', [\App\Http\Controllers\AuthorController::class, 'show'])->name('authors.show');
 Route::get('/city', [HomeController::class, 'cityIndex'])->name('city.index');

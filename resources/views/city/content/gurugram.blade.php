@@ -371,7 +371,7 @@
     and we keep tracking reviews and reliability afterwards. For home sessions we recommend a few simple practices that
     most Gurugram families already follow: schedule sessions when an adult is at home, hold them in a common area rather
     than a bedroom, and register the tutor with your society's visitor-management app so entry is logged. If anything
-    about a tutor's conduct concerns you, contact us directly and we act on it the same day.
+    about a tutor's conduct concerns you, tell us straight away.
   </p>
   </section>
 

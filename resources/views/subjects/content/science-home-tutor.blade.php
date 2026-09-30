@@ -310,7 +310,7 @@
     <li><strong>We shortlist two or three matched tutors</strong> who fit the class, board and subjects as well as the timing, location and budget.</li>
     <li><strong>You book a free demo class</strong> with the tutor you like best. The demo is a normal lesson on the student's current chapter, so you see real teaching.</li>
     <li><strong>You decide after the demo.</strong> If it is not right, tell us and we suggest another tutor. Switching is free, and there is no long contract.</li>
-    <li><strong>Every tutor is ID-verified</strong> and profile-checked before being shortlisted, and we keep tracking reviews and reliability afterwards.</li>
+    <li><strong>Tutors go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a></strong> before they are shortlisted, and you judge the fit yourself in the free demo class.</li>
   </ol>
   <p>
     Start by browsing <a href="{{ url('/tutors') }}">all tutors</a> or booking a

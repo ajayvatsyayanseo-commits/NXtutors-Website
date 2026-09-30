@@ -424,7 +424,7 @@
     To start, tell us the student's course (AA or AI), level (SL or HL), exam year, current grade or recent marks, what
     is going wrong, your city and locality, and whether you want home, online or hybrid sessions. We shortlist two or
     three matched IB maths tutors, you choose one for a <a href="{{ url('/demo-class') }}">free demo class</a>, and
-    switching tutor later is free. Every tutor is ID-verified before being shortlisted. You can also browse
+    switching tutor later is free. Tutors go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before they are shortlisted. You can also browse
     <a href="{{ url('/tutors') }}">all tutors</a> first.
   </p>
   <p>
