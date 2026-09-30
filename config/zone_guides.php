@@ -2156,4 +2156,67 @@ return [
             ],
         ],
     ],
+    // Guwahati (1 Oct 2026), from database/seo-content/areas/guwahati-zone-guides.json.
+    'Guwahati' => [
+        'Old City & Riverfront' => [
+            'guide' => 'guwahati-tuition-guide',
+            'intro' => [
+                'Pan Bazar, Paltan Bazaar, Uzan Bazar and Ulubari make up the old core of Guwahati on the south bank of the Brahmaputra. Pan Bazar is known for bookshops, printing presses and the medicine trade, with the Dighalipukhuri tank and Kachari Ghat nearby. Uzan Bazar is one of the oldest settlements and holds the historic Rajbari compound, while Ulubari sits between Paltan Bazaar and Bhangagarh where GS Road starts its run south.',
+                'Guwahati railway station, the busiest in the city, stands in Paltan Bazaar with the state transport bus terminal at its rear, so this is the easiest zone for a tutor to reach by public transport. Homes are flats above or behind shops, older houses in the lanes and low-rise apartment buildings towards Ulubari. The market streets and the station area stay crowded through the working day, which shapes when a class can start on time.',
+            ],
+            'tips' => [
+                'Share a lane landmark, such as the nearest tank, ghat or shop, and the floor number, because many homes sit above or behind market frontages.',
+                'Book an early morning, later evening or weekend slot so the tutor is not caught in office and market hours around the station.',
+                'Tutors from across the city can come by train or bus here, so it is worth asking for a subject specialist rather than settling for whoever lives closest.',
+            ],
+        ],
+        'Chandmari & Zoo Road' => [
+            'guide' => 'guwahati-tuition-guide',
+            'intro' => [
+                'Chandmari, Zoo Road, Lachit Nagar and Bhangagarh form a belt east of the old centre. Chandmari is one of the oldest localities, with the city\'s radio centre, many schools and coaching classes, and a playground that has hosted Bohag Bihu every year since 1961. Zoo Road runs from Chandmari to Ganeshguri past the state zoo, and the VIP Road links it with the eastern side of Guwahati.',
+                'Lachit Nagar, near Zoo Tiniali and South Sarania, connects GS Road with the Zoo Road side through Rajgarh Road, and Bhangagarh is a busy market locality on GS Road. Housing mixes older independent houses, three-bedroom builder floors and multistorey apartments, with many flats rented by students and small families. Evening coaching fills the roads and the calendar, so home lessons here run most smoothly when the slot is fixed in advance.',
+            ],
+            'tips' => [
+                'Agree a weekday slot that does not clash with your child\'s coaching batch, and keep it the same each week.',
+                'In the narrower Lachit Nagar and Chandmari lanes, tell the tutor where a two-wheeler or car can be parked.',
+                'Apartment buildings on Zoo Road often keep a visitor register, so give the guard the tutor\'s name before the demo class.',
+            ],
+        ],
+        'GS Road & Dispur' => [
+            'guide' => 'guwahati-tuition-guide',
+            'intro' => [
+                'Dispur has been the capital of Assam since 1973, and Ganeshguri, Rukminigaon, Hatigaon and Kahilipara grew up around its capital complex to form the southern sub-centre of the city. Dispur holds the Secretariat and the Legislative Assembly, with GS Road and the Assam Trunk Road passing through. Ganeshguri is the commercial heart of this side, where Zoo Road ends, and the tea auction centre sits close to the capital complex.',
+                'Most families live in apartment buildings with two- and three-bedroom flats, while builder floors, independent houses and some larger villas fill the older lanes of Hatigaon and Kahilipara. Buses from every direction pass through Ganeshguri, which widens the choice of tutors for families on this stretch. Government office hours around the capital complex and the evening rush on GS Road are the two busy windows to plan class timings around.',
+            ],
+            'tips' => [
+                'Avoid office opening and closing times near the capital complex; an after-school slot outside those hours is easier for a visiting tutor.',
+                'Pass the building name, flat number and a phone number for the guard to the tutor before the first class.',
+                'If your home is a short walk off GS Road, say so: a tutor coming by bus then has an easy last stretch on foot or by auto.',
+            ],
+        ],
+        'Beltola & Khanapara' => [
+            'guide' => 'guwahati-tuition-guide',
+            'intro' => [
+                'Beltola, Survey, Six Mile, Khanapara and Basistha make up the far south of Guwahati, running towards the Meghalaya border. Beltola was a small kingdom that lasted until 1947 and has grown quickly since the 1980s; its twice-weekly Beltola Bazar still meets in the middle of the locality. Six Mile sits on GS Road with a flyover up to the national highway, and Khanapara is a hub for regional road transport.',
+                'Basistha, at the southern edge beside the Garbhanga forest, is known for its temple and ashram on the Basistha river, and the national highway passes through Basistha Chariali. Homes range from multistorey apartments and large complexes to traditional houses and plots in quieter lanes. Most tutors arrive by city bus or auto along GS Road or the highway, and Narangi station is an alternative rail point for the Six Mile side.',
+            ],
+            'tips' => [
+                'Keep class times away from Beltola Bazar market days if you live close to it.',
+                'For large complexes in Basistha or Khanapara, give the tower and flat number along with the gate you want the tutor to use.',
+                'Where a specialist tutor lives far to the north of the city, pair a nearby tutor for school subjects with online classes for the specialist paper.',
+            ],
+        ],
+        'Maligaon, Jalukbari & North Guwahati' => [
+            'guide' => 'guwahati-tuition-guide',
+            'intro' => [
+                'Maligaon, Adabari and Jalukbari form Guwahati\'s western corridor, the main rail and road link out of the city. Maligaon, below the Nilachal hill, is the headquarters of the Northeast Frontier Railway and has Kamakhya Junction, the city\'s second-largest station. Adabari centres on its tiniali, where the Pandu Port Road meets the Assam Trunk Road, and on a bus depot for lower Assam. Jalukbari, on the river, has a large student population.',
+                'North Guwahati, on the north bank of the Brahmaputra, is being gradually taken into the city limits. Three bridges now cross the river: the Saraighat bridge of 1962, the New Saraighat bridge of 2017 and the six-lane bridge to North Guwahati, opened in February 2026. South of the river, apartment gates are common; on the north bank, houses and plots are spread out, so tutors from the same side matter most.',
+            ],
+            'tips' => [
+                'On the south bank, tell the tutor whether Kamakhya Junction or a city bus to Adabari Tiniali is the easier way in, and name a precise pick-up point.',
+                'In North Guwahati, ask for a tutor who already lives on the north bank and share a clear landmark, since lanes can be hard to find.',
+                'Plan around the busy junctions at Jalukbari and Adabari, and around Durga Puja in Maligaon, switching to an online class on those evenings.',
+            ],
+        ],
+    ],
 ];

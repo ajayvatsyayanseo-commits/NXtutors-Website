@@ -790,6 +790,26 @@ class GeoStructureTest extends TestCase
         $this->assertSame($cityId, DB::table('city_managment')->where('slug', 'coimbatore')->value('id'), 'the city row stays');
     }
 
+    public function test_guwahati_areas_launch_safely(): void
+    {
+        if (! DB::table('city_managment')->where('slug', 'guwahati')->exists()) {
+            DB::table('city_managment')->insert(['city_name' => 'Guwahati', 'slug' => 'guwahati']);
+        }
+        $cityId = DB::table('city_managment')->where('slug', 'guwahati')->value('id');
+        $launch = require database_path('migrations/seo/2026_10_03_170000_guwahati_areas.php');
+        $launch->up();
+        $launch->up();
+
+        $this->assertSame('GS Road & Dispur', \App\Support\Zones::of('Guwahati', 'Dispur'));
+        $this->assertGreaterThanOrEqual(17, DB::table('city_area_list_managment')->where('city_id', $cityId)->count());
+        $this->get('/city/guwahati/dispur')->assertOk()->assertSee('Dispur at a glance', false);
+        $this->get('/tuition-jobs/guwahati')->assertOk()->assertSee('Where in Guwahati tutors are needed');
+
+        $launch->down();
+        $this->assertSame(0, DB::table('city_area_list_managment')->where('page_schema', 'seo-2026-10-02-guwahati')->count());
+        $this->assertSame($cityId, DB::table('city_managment')->where('slug', 'guwahati')->value('id'), 'the city row stays');
+    }
+
     public function test_city_names_map_to_city_pages_whatever_the_spelling(): void
     {
         $this->assertSame('gurugram', Geo::slugFor('Gurgaon'));

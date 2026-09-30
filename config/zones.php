@@ -784,4 +784,27 @@ return [
             'names' => ['podanur', 'sundarapuram', 'kurichi', 'kuniyamuthur', 'kovaipudur', 'selvapuram', 'vadavalli'],
         ],
     ],
+    // Guwahati (1 Oct 2026), from database/seo-content/areas/guwahati-research.json.
+    'Guwahati' => [
+        'Old City & Riverfront' => [
+            'sectors' => [],
+            'names' => ['pan bazar', 'paltan bazaar', 'uzan bazar', 'ulubari'],
+        ],
+        'Chandmari & Zoo Road' => [
+            'sectors' => [],
+            'names' => ['chandmari', 'zoo road', 'lachit nagar', 'bhangagarh'],
+        ],
+        'GS Road & Dispur' => [
+            'sectors' => [],
+            'names' => ['ganeshguri', 'dispur', 'rukminigaon', 'hatigaon', 'kahilipara'],
+        ],
+        'Beltola & Khanapara' => [
+            'sectors' => [],
+            'names' => ['beltola', 'survey', 'six mile', 'khanapara', 'basistha'],
+        ],
+        'Maligaon, Jalukbari & North Guwahati' => [
+            'sectors' => [],
+            'names' => ['maligaon', 'adabari', 'jalukbari', 'north guwahati'],
+        ],
+    ],
 ];
