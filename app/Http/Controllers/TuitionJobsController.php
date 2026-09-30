@@ -31,7 +31,7 @@ class TuitionJobsController extends Controller
         $online = TutorCascade::realOnlineTutors();
 
         $faqs = [
-            ['How do I find home tuition or online tutor jobs in India on NXTutors?', 'Apply on WhatsApp or create your tutor account with your subjects, classes, city and the areas you can travel to. After our team checks your identity document, you appear on the matching city, area and subject pages and in the two or three tutors we shortlist for each family request.'],
+            ['How do I find home tuition or online tutor jobs in India on NXTutors?', 'Apply on WhatsApp with your subjects, classes, city and the areas you can travel to; our team sets up your tutor account with you. After our team checks your identity document, you appear on the matching city, area and subject pages and in the two or three tutors we shortlist for each family request.'],
             ['Can I teach online from any city?', 'Yes. Choose online or both on your profile. Online requests can come from families anywhere in India; home requests come only from the areas you list, so you are never sent across a city you cannot reach.'],
             ['Who sets the fee?', 'You do. Put your fee per class on your profile; families see it before the free demo class. Across NXTutors, most home-tuition sessions fall between ₹800 and ₹2,500 an hour.'],
             ['What does it cost to join?', 'See the tutor plans on our pricing page before you sign up; what each plan includes is listed there.'],
@@ -54,7 +54,7 @@ class TuitionJobsController extends Controller
 
         $label = $group['name'];
         $faqs = [
-            ['How do I get tuition jobs in ' . $label . '?', 'Create your tutor profile with your city and the areas you can travel to, or apply on WhatsApp. After our identity check you appear on the pages for your city and areas, and in shortlists for families near you. Online classes can come from anywhere in India.'],
+            ['How do I get tuition jobs in ' . $label . '?', 'Apply on WhatsApp with your city and the areas you can travel to; our team sets up your profile with you. After our identity check you appear on the pages for your city and areas, and in shortlists for families near you. Online classes can come from anywhere in India.'],
             ['Which cities in ' . $label . ' does NXTutors cover?', 'The cities listed on this page have their own tutor pages for families. If your town is not listed, apply anyway: add your town and online teaching, and we open new cities where tutors and families are.'],
             ['Who sets the fee?', 'You do; families see it before the free demo class. Across NXTutors, most home-tuition sessions fall between ₹800 and ₹2,500 an hour.'],
         ];
@@ -94,7 +94,7 @@ class TuitionJobsController extends Controller
         $stateSlug = Geo::stateSlug($stateName);
 
         $faqs = [
-            ['How do I get home tuition jobs in ' . $label . ' through NXTutors?', 'Apply on WhatsApp or create your tutor account, and list the areas of ' . $cityName . ' you can travel to. After our team checks your identity document, you appear on those area pages and in our shortlists, and families book a free demo class with you.'],
+            ['How do I get home tuition jobs in ' . $label . ' through NXTutors?', 'Apply on WhatsApp and list the areas of ' . $cityName . ' you can travel to. After our team checks your identity document, you appear on those area pages and in our shortlists, and families book a free demo class with you.'],
             ['How much can a home tutor earn in ' . $label . '?', 'You set your own fee per class, and families see it before the demo. Across NXTutors, most home-tuition sessions fall between ₹800 and ₹2,500 an hour; Classes 11–12, IB, IGCSE, JEE and NEET sit toward the upper end.'],
             ['Can I teach online as well as at home?', 'Yes. Choose home, online or both. Online classes can come from families anywhere in India; home requests come from the areas you list.'],
             ['What does it cost to join?', 'See the tutor plans on our pricing page before you sign up; what each plan includes is listed there.'],

@@ -181,7 +181,7 @@
   @php $realNear = $tutorCards->filter(fn ($c) => $c['tier'] <= 3 && empty($c['tutor']->is_sample))->count(); @endphp
   @if($realNear < 2)
     <div class="nxrecruit">
-      <p><strong>Tutor near {{ $areaSeo['name'] ?? $area->name }}?</strong> Families here are looking for tutors. Register, add {{ $areaSeo['name'] ?? $area->name }} to the areas you travel to, and appear on this page once approved.</p>
+      <p><strong>Tutor near {{ $areaSeo['name'] ?? $area->name }}?</strong> Families here are looking for tutors. Apply on WhatsApp, add {{ $areaSeo['name'] ?? $area->name }} to the areas you travel to, and appear on this page once approved.</p>
       <a class="nxbtn btn-accent" href="{{ url('/become-a-tutor') }}?area={{ urlencode($areaSeo['name'] ?? $area->name) }}&amp;city={{ urlencode($city->city_name) }}">Teach in {{ $areaSeo['name'] ?? $area->name }}</a>
       <a class="nxrecruit__more" href="{{ url('/tuition-jobs/' . $city->slug) }}">See tuition jobs in {{ $city->city_name }} →</a>
     </div>

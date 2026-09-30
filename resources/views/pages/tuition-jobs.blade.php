@@ -65,7 +65,7 @@
         </ul>
         <div class="nx-cta-row">
           <a class="nx-cta nx-cta--primary" href="#" data-modal-target="tutorModal">Apply on WhatsApp</a>
-          <a class="nx-cta nx-cta--ghost" href="{{ url('/login') }}">Create your tutor account</a>
+          <a class="nx-cta nx-cta--ghost" href="{{ url('/login') }}">Tutor login</a>
         </div>
       </div>
     </section>
@@ -148,7 +148,7 @@
     <section class="nx-sec" aria-labelledby="howTitle">
       <div class="nx-sec__head"><h2 class="nx-sec__title" id="howTitle">How tuition jobs on NXTutors work</h2></div>
       <ol class="nxjobs-steps">
-        <li><strong>Apply.</strong> Send your details on WhatsApp, or create your tutor account with your full profile.</li>
+        <li><strong>Apply.</strong> Send your details on WhatsApp; our team replies and sets up your tutor account with you.</li>
         <li><strong>Get checked.</strong> Our team checks your identity document and your profile. Verified tutors are shown first.</li>
         <li><strong>List your areas.</strong> Add the neighbourhoods you can reach for home classes, and whether you also teach online.</li>
         <li><strong>Appear where families look.</strong> You show on the area and subject pages you cover, marked "In" or "Travels to" that area, and in the two or three tutors we shortlist for each request.</li>
@@ -176,7 +176,7 @@
     <section class="nx-sec nx-cta-band" aria-label="Apply">
       <div>
         <h2 class="nx-sec__title">Start teaching {{ $level === 'india' ? 'with NXTutors' : 'in ' . $label }}</h2>
-        <p class="nx-sec__sub">Apply in two minutes on WhatsApp, or <a href="{{ url('/login') }}">create your tutor account</a>. See <a href="{{ url('/pricing') }}">tutor plans</a>@if($level === 'city') and <a href="{{ url('/city/' . $cityRow->slug) }}">home tuition in {{ $cityName }}</a>@endif.</p>
+        <p class="nx-sec__sub">Apply in two minutes on WhatsApp. Already a tutor with us? <a href="{{ url('/login') }}">Log in</a> to update your areas. See <a href="{{ url('/pricing') }}">tutor plans</a>@if($level === 'city') and <a href="{{ url('/city/' . $cityRow->slug) }}">home tuition in {{ $cityName }}</a>@endif.</p>
       </div>
       <div class="nx-cta-row"><a class="nx-cta nx-cta--primary" href="#" data-modal-target="tutorModal">Apply on WhatsApp</a></div>
     </section>

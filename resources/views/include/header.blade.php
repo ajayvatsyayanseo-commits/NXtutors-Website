@@ -397,7 +397,7 @@
           </button>
         </div>
       </form>
-      <p class="nx-form__alt">Prefer to build your full profile now? <a href="{{ url('/login') }}">Create your tutor account</a>.</p>
+      <p class="nx-form__alt">Already a tutor with us? <a href="{{ url('/login') }}">Log in</a> to update your profile and areas.</p>
       <script>
       (function () {
         var form = document.getElementById('tutorForm');
