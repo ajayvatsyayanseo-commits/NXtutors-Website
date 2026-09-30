@@ -369,6 +369,27 @@ class GeoStructureTest extends TestCase
         }
     }
 
+    public function test_delhi_launches_as_its_own_city(): void
+    {
+        $launch = require database_path('migrations/seo/2026_10_01_170000_launch_delhi_city_and_areas.php');
+        $launch->up();
+        $launch->up();
+
+        $this->assertSame('delhi', Geo::slugFor('New Delhi'));
+        $this->assertSame('delhi', Geo::slugFor('Dwarka'));
+        $this->assertSame('delhi-ncr', Geo::slugFor('Delhi NCR'));
+        $this->assertSame('Dwarka', \App\Support\Zones::of('Delhi', 'Dwarka Sector 12'));
+        $this->assertSame('Karol Bagh, Patel Nagar & Rajinder Nagar', \App\Support\Zones::of('Delhi', 'Old Rajinder Nagar'));
+
+        $id = DB::table('city_managment')->where('slug', 'delhi')->value('id');
+        $this->assertGreaterThanOrEqual(100, DB::table('city_area_list_managment')->where('city_id', $id)->count());
+        $this->get('/city/delhi/rohini-sector-9')->assertOk()->assertSee('Rohini Sector 9 at a glance')->assertSee('Rohini Sector 9 is in the Rohini part of Delhi', false);
+        $this->get('/tuition-jobs/delhi')->assertOk()->assertSee('Where in Delhi tutors are needed');
+
+        $launch->down();
+        $this->assertNull(DB::table('city_managment')->where('slug', 'delhi')->value('id'));
+    }
+
     public function test_city_names_map_to_city_pages_whatever_the_spelling(): void
     {
         $this->assertSame('gurugram', Geo::slugFor('Gurgaon'));

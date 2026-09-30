@@ -173,4 +173,55 @@ return [
             'names' => ['neharpar', 'greater faridabad'],
         ],
     ],
+    // Delhi (30 Sep 2026), from database/seo-content/areas/delhi-research.json.
+    'Delhi' => [
+        'Dwarka' => [
+            'sectors' => [],
+            'names' => ['dwarka'],
+        ],
+        'Vasant Kunj, Vasant Vihar & Palam' => [
+            'sectors' => [],
+            'names' => ['vasant kunj', 'vasant vihar', 'munirka', 'r k puram', 'palam', 'mahavir enclave', 'dabri', 'sagarpur'],
+        ],
+        'GK, Defence Colony & Lajpat Nagar' => [
+            'sectors' => [],
+            'names' => ['greater kailash 1', 'greater kailash 2', 'defence colony', 'lajpat nagar', 'south extension', 'east of kailash', 'pamposh enclave', 'greater kailash', 'gk 1', 'gk 2'],
+        ],
+        'Saket, Malviya Nagar & Hauz Khas' => [
+            'sectors' => [],
+            'names' => ['saket', 'malviya nagar', 'hauz khas', 'green park', 'safdarjung enclave', 'sheikh sarai', 'panchsheel park', 'sarvodaya enclave', 'shivalik', 'sainik farm', 'chhatarpur', 'mehrauli'],
+        ],
+        'Kalkaji, CR Park & Sarita Vihar' => [
+            'sectors' => [],
+            'names' => ['kalkaji', 'chittaranjan park', 'alaknanda', 'nehru enclave', 'sarita vihar', 'jasola vihar', 'cr park', 'c r park'],
+        ],
+        'Janakpuri, Rajouri Garden & Punjabi Bagh' => [
+            'sectors' => [],
+            'names' => ['janakpuri', 'vikaspuri', 'uttam nagar', 'tilak nagar', 'subhash nagar', 'hari nagar', 'rajouri garden', 'punjabi bagh', 'paschim vihar', 'kirti nagar', 'moti nagar', 'naraina vihar'],
+        ],
+        'Karol Bagh, Patel Nagar & Rajinder Nagar' => [
+            'sectors' => [],
+            'names' => ['karol bagh', 'old rajinder nagar', 'new rajinder nagar', 'east patel nagar', 'west patel nagar', 'rajinder nagar', 'rajendra nagar', 'patel nagar'],
+        ],
+        'Lodhi Colony, Jangpura & Nizamuddin' => [
+            'sectors' => [],
+            'names' => ['lodhi colony', 'jangpura', 'nizamuddin east', 'nizamuddin west', 'nizamuddin'],
+        ],
+        'Rohini' => [
+            'sectors' => [],
+            'names' => ['rohini'],
+        ],
+        'Pitampura, Model Town & North Campus' => [
+            'sectors' => [],
+            'names' => ['pitampura', 'kohat enclave', 'prashant vihar', 'shalimar bagh', 'ashok vihar', 'model town', 'adarsh nagar', 'gtb nagar', 'mukherjee nagar', 'kamla nagar', 'civil lines', 'north campus', 'kingsway camp'],
+        ],
+        'Mayur Vihar, Patparganj & IP Extension' => [
+            'sectors' => [],
+            'names' => ['mayur vihar', 'patparganj', 'ip extension', 'pandav nagar', 'vasundhara enclave', 'mandawali', 'shakarpur'],
+        ],
+        'Laxmi Nagar, Preet Vihar & Shahdara' => [
+            'sectors' => [],
+            'names' => ['laxmi nagar', 'preet vihar', 'nirman vihar', 'karkardooma', 'anand vihar', 'vivek vihar', 'surajmal vihar', 'krishna nagar', 'geeta colony', 'shahdara', 'dilshad garden', 'yamuna vihar'],
+        ],
+    ],
 ];

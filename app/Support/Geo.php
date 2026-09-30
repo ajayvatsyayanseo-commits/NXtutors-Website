@@ -27,7 +27,9 @@ class Geo
      * that belong to it.
      */
     public const CITIES = [
-        'delhi-ncr'          => ['state' => 'Delhi NCR',        'metro' => true,  'aka' => 'New Delhi', 'display' => 'Delhi NCR', 'aliases' => ['delhi', 'new delhi', 'dwarka', 'saket']],
+        // Delhi NCR is the hub for the NCR cities; Delhi itself has its own page from 30 Sep 2026.
+        'delhi-ncr'          => ['state' => 'Delhi NCR',        'metro' => true,  'aka' => null,        'display' => 'Delhi NCR', 'aliases' => ['delhi ncr', 'ncr', 'delhi/ncr']],
+        'delhi'              => ['state' => 'Delhi',            'metro' => true,  'aka' => 'New Delhi', 'display' => 'Delhi', 'aliases' => ['delhi', 'new delhi', 'nct delhi', 'south delhi', 'north delhi', 'east delhi', 'west delhi', 'dwarka', 'saket', 'rohini', 'janakpuri', 'pitampura', 'lajpat nagar', 'mayur vihar', 'vasant kunj', 'laxmi nagar', 'rajouri garden', 'greater kailash', 'punjabi bagh', 'preet vihar']],
         // Noida, Greater Noida and Ghaziabad have their own city pages from 30 Sep 2026 (NCR roll-out).
         // "Vaishali" is not an alias: it is also a district in Bihar.
         'ghaziabad'          => ['state' => 'Uttar Pradesh',    'metro' => false, 'aka' => null,        'aliases' => ['ghaziabad', 'gzb', 'khora', 'indirapuram', 'vasundhara', 'kaushambi', 'raj nagar extension', 'rajnagar extension', 'crossings republik', 'sahibabad']],
@@ -117,7 +119,7 @@ class Geo
     public static function neighbours(string $slug): array
     {
         $state = self::stateOf($slug);
-        $ncr = ['delhi-ncr', 'gurugram', 'faridabad'];
+        $ncr = ['delhi-ncr', 'delhi', 'gurugram', 'faridabad'];
 
         return collect(self::CITIES)
             ->filter(fn ($c, $s) => $s !== $slug && ($c['state'] === $state || (in_array($slug, $ncr, true) && in_array($s, $ncr, true))))
