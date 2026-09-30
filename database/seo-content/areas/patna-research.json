@@ -1,0 +1,397 @@
+{
+  "areas": {
+    "boring-road": {
+      "name": "Boring Road",
+      "zone": "Boring Road & Patliputra",
+      "type": "mixed",
+      "about": "<p>Boring Road is a well-known central Patna address, a busy road that begins at a junction with Bailey Road and runs north towards the Pani Tanki end. In the early twentieth century it was lined with officials' houses, and it later became the city's fashionable residential district before shops, restaurants, car showrooms, offices and coaching institutes took over much of the frontage. Commercial-cum-residential apartment buildings now stand along the road, with older houses in the lanes behind.</p><p>The main residential colonies that open off it are Nageshwar Colony, Sri Krishna Puri and North Sri Krishna Puri, so most tuition homes are a short turn away from the main road rather than on it. The crossing at Boring Road is known for heavy traffic, so tutors often prefer slots that avoid the evening rush, and a tutor living in the adjoining colonies can simply walk or ride over. Apartment buildings may ask visitors to sign in at the gate, while houses in the lanes allow doorstep arrival. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Boring_Road",
+        "https://www.squareyards.com/north-sri-krishna-puri-in-patna-overview-22181"
+      ]
+    },
+    "sri-krishna-puri": {
+      "name": "Sri Krishna Puri",
+      "zone": "Boring Road & Patliputra",
+      "type": "residential",
+      "about": "<p>Sri Krishna Puri and North Sri Krishna Puri are established residential colonies that sit alongside Boring Road, and together with Nageshwar Colony they make up the main housing belt on either side of that road. North Sri Krishna Puri is mostly apartment buildings with two- and three-bedroom flats, while older independent homes remain in the inner lanes of both colonies.</p><p>Neighbouring localities include Patliputra Colony, Kidwaipuri, Anandpuri, North Shastri Nagar and Rajapur, so tutors who already teach in the Boring Road area can usually take on a home here without a long journey. There is no metro station in these colonies yet; most tutors come by two-wheeler, car or auto, and Patna Junction is the main railway station for the area. For flats, share the building name, floor and a phone number for the guard, and for houses a clear lane landmark helps on the first visit. Evening traffic builds where the colonies meet Boring Road, so a fixed weekday slot agreed in advance keeps classes regular. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Boring_Road",
+        "https://www.squareyards.com/north-sri-krishna-puri-in-patna-overview-22181"
+      ]
+    },
+    "boring-canal-road": {
+      "name": "Boring Canal Road",
+      "zone": "Boring Road & Patliputra",
+      "type": "residential",
+      "about": "<p>Boring Canal Road runs as East and West Boring Canal Road through a group of central residential colonies close to Boring Road. Buddha Colony, a spacious colony with broad roads and lanes, is bounded by East Boring Canal Road, and Kidwaipuri lies close by, with apartment buildings and small commercial centres near Nageshwar Colony. On the western side, Anandpuri is mainly apartment buildings with some builder floors and independent homes, and it borders Patliputra Colony, Kidwaipuri, Shivpuri and Boring Road.</p><p>This is a mid-rise area rather than a tower-block one, so most visits are to a flat in a small building or to a house on a colony lane. Tutors usually arrive by two-wheeler or auto, and Patna Junction is the nearest major railway station. Buildings with a guard may want the tutor's name in advance, and parking on narrower lanes is easier for a two-wheeler than a car. Shops along the canal road get busy in the evenings, so early-evening sessions are simpler for a tutor who lives in the same cluster of colonies. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Buddha_Colony",
+        "https://en.wikipedia.org/wiki/Kidwaipuri",
+        "https://www.squareyards.com/anandpuri-in-patna-overview-3060"
+      ]
+    },
+    "kidwaipuri": {
+      "name": "Kidwaipuri",
+      "zone": "Boring Road & Patliputra",
+      "type": "residential",
+      "about": "<p>Kidwaipuri, also known as P&T Colony, is a small, well-planned residential colony in central Patna. It sits next to Nageshwar Colony, and Sri Krishna Nagar and Buddha Colony mark its other boundaries. Being close to both Boring Road and Boring Canal Road, it has apartment buildings and small commercial centres near the Nageshwar Colony side, along with homes on its quieter internal roads.</p><p>Its central position is its main advantage for home tuition: tutors from Boring Road, Sri Krishna Puri, Anandpuri and the Patliputra side can all reach it easily, and Patna Junction is the nearest major railway station. Most visits are to a flat in a low-rise building or to a house, so arrival is usually at the door or at a single building gate. Two-wheelers are the practical choice on colony roads. Nearby Boring Road is busy in the evenings, so weekday sessions scheduled before or after the office rush tend to start on time, and online classes suit subjects where the right specialist lives further away. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kidwaipuri",
+        "https://www.squareyards.com/north-sri-krishna-puri-in-patna-overview-22181"
+      ]
+    },
+    "patliputra-colony": {
+      "name": "Patliputra Colony",
+      "zone": "Boring Road & Patliputra",
+      "type": "residential",
+      "about": "<p>Patliputra Colony, officially Pataliputra Housing Colony, was formed in 1954 as a cooperative housing society originally meant for government officials, and it is still run by its cooperative society. It has independent houses alongside newer apartment buildings, with some shops and businesses. The colony is bounded by the Kurji-Rajapur road, Gosain Tola, New Patliputra Colony and Rajeev Nagar, and the Patliputra Industrial Area lies next to it.</p><p>Boring Road and Anandpuri are close neighbours, and Kurji and Digha lie towards the river, so the colony sits between central Patna and the northern riverside localities. For tutors, many homes here are independent houses where arrival is at the doorstep; apartment buildings may keep a visitor register at the gate. There is no metro station in the colony, so tutors come by two-wheeler, car or auto. The roads towards Boring Road carry heavy evening traffic, so a tutor based in the colony or nearby is the easiest match for regular weekday classes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Pataliputra_Housing_Colony",
+        "https://www.squareyards.com/patliputra-colony-in-patna-overview-3061"
+      ]
+    },
+    "digha": {
+      "name": "Digha",
+      "zone": "Boring Road & Patliputra",
+      "type": "residential",
+      "about": "<p>Digha is a residential neighbourhood in north-western Patna on the bank of the Ganga. Farmland in the colonial era, it has become a densely built colony where traditional houses stand alongside newer high-rise apartment blocks. Gola Road links it to Bailey Road, and the elevated corridor from Digha towards Phulwari Sharif has made the western parts of the city easier to reach. The Digha-Sonpur rail-road bridge crosses the river here, and Digha is the western end of the Ganga riverfront expressway towards Gandhi Maidan and the old city.</p><p>Digha Bridge Halt, opened in 2017, has passenger trains towards Patliputra Junction and Patna Junction, and Patliputra Junction is also close by. Kurji and North Shastri Nagar are neighbouring localities. For tutors, homes range from houses on busy lanes to towers with gate registration, so confirm the building and entry process before the first class. The riverfront expressway and the elevated corridor help tutors coming from Boring Road or Patliputra Colony avoid some of the older inner roads in the evening. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Digha,_Patna",
+        "https://en.wikipedia.org/wiki/Digha_Bridge_Halt_railway_station",
+        "https://en.wikipedia.org/wiki/Loknayak_Ganga_Path",
+        "https://www.squareyards.com/digha-in-patna-overview-3088"
+      ]
+    },
+    "shastri-nagar": {
+      "name": "Shastri Nagar",
+      "zone": "Boring Road & Patliputra",
+      "type": "residential",
+      "about": "<p>Shastri Nagar is a residential locality near Bailey Road, with a Shastri Nagar stop on Bailey Road beside Rajbansi Nagar. Its housing is mainly apartments and builder floors, much of it in small and mid-sized buildings by local builders, and North Shastri Nagar extends towards Digha. In 2026 the state cabinet approved preparation of a comprehensive development plan for Rajbanshi Nagar and Shastri Nagar.</p><p>Because it sits close to Bailey Road, Shastri Nagar is easy for tutors travelling from the Patliputra, Boring Road and Raja Bazar sides. The Red Line metro under Bailey Road is still under construction, so for now tutors arrive by two-wheeler, car or auto. Most buildings are small enough that a phone call to the family at the gate is all that is needed, though larger buildings may keep a visitor register. Bailey Road is one of the city's main roads and gets crowded at office hours, so agree a slot that avoids the evening peak, and use online classes for subjects where the right tutor lives across the city. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/shastri-nagar-in-patna-overview-3098",
+        "https://www.99acres.com/shastri-nagar-patna-overview-piffid",
+        "https://en.wikipedia.org/wiki/Bailey_Road,_Patna"
+      ]
+    },
+    "shivpuri": {
+      "name": "Shivpuri",
+      "zone": "Boring Road & Patliputra",
+      "type": "residential",
+      "about": "<p>Shivpuri is a residential neighbourhood in central Patna that takes its name from a Shiv temple at its entrance near the old railway crossing. It stretches north to south from the college end near Boring Road down to BSEB Colony in Patel Nagar, with Mohanpur and Punaichak to the east and Patel Nagar, Indrapuri and Mahesh Nagar to the west. The Radha Krishna temple with its Sai shrine is a well-known local landmark.</p><p>Anandpuri and Boring Road are close neighbours, which makes Shivpuri convenient for tutors who already teach in the Boring Road and Patliputra belt. Tutors mostly come by two-wheeler or auto; give a lane landmark such as Shiv Market or the temple for the first visit, and check whether the home is a house with doorstep arrival or a flat with a building gate. The Thursday crowd around the temple and the evening rush towards Boring Road are worth planning around when choosing a class time, and online sessions are a good fallback for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Shivpuri,_Patna",
+        "https://www.squareyards.com/anandpuri-in-patna-overview-3060"
+      ]
+    },
+    "bailey-road": {
+      "name": "Bailey Road",
+      "zone": "Bailey Road & Danapur",
+      "type": "mixed",
+      "about": "<p>Bailey Road is the main western artery of Patna, starting near the Income Tax roundabout and running through the heart of the city to Danapur. The eastern stretch is lined with major public buildings such as the High Court, the state museum, the zoo and the Secretariat, while further west the road passes a long belt of apartment buildings, mostly two- and three-bedroom flats, with localities such as Shastri Nagar, Raja Bazar, Rukanpura and Saguna More opening off it.</p><p>The Red Line of Patna Metro is being built underground beneath Bailey Road, with planned stations at Danapur, Saguna Mor, RPS Mor, Patliputra, Raja Bazar, Patna Zoo, Vikas Bhawan and Vidyut Bhawan; the line is not yet open. For now tutors travel by two-wheeler, car or auto, and construction work can slow parts of the road. Apartment buildings along Bailey Road usually register visitors at the gate. Office-hour traffic is heavy, so choose slots outside the evening peak or pick a tutor from the same stretch of the road. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bailey_Road,_Patna",
+        "https://en.wikipedia.org/wiki/Red_Line_(Patna_Metro)",
+        "https://www.99acres.com/flats-in-bailey-road-patna-ffid"
+      ]
+    },
+    "raja-bazar": {
+      "name": "Raja Bazar",
+      "zone": "Bailey Road & Danapur",
+      "type": "residential",
+      "about": "<p>Raja Bazar is a residential locality on Bailey Road in western Patna, with Sheikhpura, Khajpura and Jagdeo Path as its neighbours. Housing is mainly apartment buildings of two- and three-bedroom flats in small complexes by local builders, with daily shopping along the main road.</p><p>Raja Bazar is one of the planned stations on the Red Line of Patna Metro, which is being built beneath Bailey Road and is still under construction. Until it opens, tutors reach the area by two-wheeler, car or auto along Bailey Road. Because the locality sits in the middle of the Bailey Road belt, tutors from Shastri Nagar, Rukanpura and Patliputra Colony can often reach it easily. Apartment buildings may ask for the tutor's name at the gate, so share it with the guard before the demo. Bailey Road is crowded during office hours and around metro work sites, so set a regular slot outside the evening peak. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/raja-bazar-in-patna-overview-22218",
+        "https://en.wikipedia.org/wiki/Red_Line_(Patna_Metro)",
+        "https://en.wikipedia.org/wiki/Bailey_Road,_Patna"
+      ]
+    },
+    "rukanpura": {
+      "name": "Rukanpura",
+      "zone": "Bailey Road & Danapur",
+      "type": "residential",
+      "about": "<p>Rukanpura is a residential locality in the West End of Patna, close to Bailey Road. It is home to Patliputra Junction, the railway station built to ease the load on the city's older stations, which lies on the line towards Sonepur and Hajipur and has become the fourth terminal of the Danapur division. Housing is mostly apartment buildings with two- and three-bedroom flats, many of them on lanes just off Bailey Road.</p><p>Rukanpura is also a planned station on the Red Line of Patna Metro, and underground work between Patna Junction and Rukanpura has begun along Bailey Road; the line is not open yet. For now tutors come by two-wheeler, car or auto, and construction barriers on Bailey Road can slow travel, so allow extra margin for the first few classes. Buildings usually have a guard who will ask for the family's flat number. Neighbouring Raja Bazar, Saguna More and Patliputra Colony give a wide pool of nearby tutors. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Patliputra_Junction_railway_station",
+        "https://en.wikipedia.org/wiki/Red_Line_(Patna_Metro)",
+        "https://patnapress.com/patna-metro-underground-work-bailey-road-rukunpura-construction/"
+      ]
+    },
+    "saguna-more": {
+      "name": "Saguna More",
+      "zone": "Bailey Road & Danapur",
+      "type": "residential",
+      "about": "<p>Saguna More is a western Patna locality on Bailey Road, between central Patna and Danapur. It has grown into a housing hub dominated by three-bedroom apartments, followed by residential plots, with independent houses and builder floors as well. Large gated townships with many towers stand alongside smaller apartment buildings, and the Bailey Road stretch towards Danapur continues to fill with new flats and shops. Bailey Road and the Saguna-Danapur main road are its two main routes.</p><p>Saguna Mor is one of the planned stations on the Red Line of Patna Metro beneath Bailey Road, with RPS Mor next along towards central Patna; the line is still under construction. Tutors therefore arrive by two-wheeler, car or auto. In the larger townships, register the tutor at the main gate and ask whether a regular visitor pass can be issued. The junction gets busy at office hours, so evening classes are easiest with a tutor living in Saguna More, RPS More or Danapur, and online classes help when a specialist tutor lives across the city. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/saguna-more-in-patna-overview-22066",
+        "https://www.99acres.com/property-in-saguna-more-patna-ffid",
+        "https://en.wikipedia.org/wiki/Red_Line_(Patna_Metro)"
+      ]
+    },
+    "danapur": {
+      "name": "Danapur",
+      "zone": "Bailey Road & Danapur",
+      "type": "mixed",
+      "about": "<p>Danapur lies at the western end of Bailey Road and has its own municipal body, the Danapur Nizamat council, though it now functions as part of Patna's urban spread. It is home to Danapur Cantonment, set up in the eighteenth century and one of the oldest cantonments in the country, and the regimental centre of the Bihar Regiment. Housing is mostly apartments, with independent houses, plots and builder floors, and a road along the Digha-Danapur canal links it to the Digha side.</p><p>Danapur railway station, the headquarters of the Danapur railway division on the Delhi-Kolkata main line, actually stands in neighbouring Khagaul. The Red Line of Patna Metro is planned to start at Danapur Cantonment and run beneath Bailey Road, but it is still under construction. For tutors, cantonment areas have their own entry rules, so check with the family how a visitor is admitted; civilian apartment buildings usually register visitors at the gate. Bailey Road towards the city is busy at office hours, so a tutor from Danapur or Saguna More is the most practical match. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Danapur",
+        "https://en.wikipedia.org/wiki/Danapur_Cantonment",
+        "https://www.squareyards.com/danapur-in-patna-overview-3063",
+        "https://en.wikipedia.org/wiki/Red_Line_(Patna_Metro)"
+      ]
+    },
+    "khagaul": {
+      "name": "Khagaul",
+      "zone": "Bailey Road & Danapur",
+      "type": "residential",
+      "about": "<p>Khagaul is a long-settled town next to Danapur on the western side of Patna, with its own municipal council and wards, and it forms part of the Danapur-cum-Khagaul block. Its main landmark for travellers is Danapur railway station, which stands within Khagaul and serves as the headquarters of the Danapur railway division on the Delhi-Kolkata main line. The town has an old history and is traditionally linked with an ancient observatory.</p><p>For families here, Danapur, Saguna More and the western end of Bailey Road are the nearest places to find a home tutor, and the railway station makes Khagaul easy to reach for tutors coming by train from other parts of the city. Most tutors, though, arrive by two-wheeler or auto. Ask the family whether the home is a house with doorstep arrival or a flat with a gate, and give a clear landmark and phone number for the first visit. Roads around the station are busiest at train times and in the evening, so choose a regular slot with some margin, and consider online classes for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Khagaul",
+        "https://en.wikipedia.org/wiki/Danapur_railway_station"
+      ]
+    },
+    "kankarbagh": {
+      "name": "Kankarbagh",
+      "zone": "Kankarbagh & Rajendra Nagar",
+      "type": "residential",
+      "about": "<p>Kankarbagh is one of Patna's largest residential colonies, stretching roughly from Ashok Nagar in the south-west to Kumhrar in the north-east. It is a mix of independent houses, builder floors, plots and a growing number of apartment buildings, with busy markets along Kankarbagh Main Road, the 90 Feet road and PC Colony Road. Neighbouring areas include Ashok Nagar, Chitragupt Nagar, Jogipur and Rajendra Nagar, and the Kumhrar archaeological park and a large sports complex are local landmarks.</p><p>Malahi Pakri metro station, at the roundabout on the 90 Feet road, opened in July 2026 as an extension of the Blue Line and serves Kankarbagh, with trains running via Bhootnath towards Zero Mile and the Patliputra bus terminal. Rajendra Nagar Terminal and Patna Junction are close by for rail. Tutors can come by metro and take an auto for the last stretch, or ride in directly. Houses mean doorstep arrival, while apartment buildings may keep a gate register. Main-road markets are busy in the evenings, so set a regular slot with some margin. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kankarbagh",
+        "https://en.wikipedia.org/wiki/Malahi_Pakri_metro_station",
+        "https://www.squareyards.com/kankarbagh-in-patna-overview-3059"
+      ]
+    },
+    "rajendra-nagar": {
+      "name": "Rajendra Nagar",
+      "zone": "Kankarbagh & Rajendra Nagar",
+      "type": "residential",
+      "about": "<p>Rajendra Nagar is a planned residential colony in east-central Patna, laid out between Kumhrar and Nala roads and divided by numbered roads, with parks and playing fields between the blocks. Bihar's largest stadium stands in the colony. Housing is a mix of older independent houses and newer apartment buildings, and Lohanipur, Bahadurpur and Kadamkuan are its neighbours.</p><p>Rajendra Nagar Terminal, opened in 2003 to ease the load on Patna Junction, is the colony's railway station on the Howrah-Delhi main line. The underground section of the Blue Line from Patna Junction towards Rajendra Nagar, with stations at Rajendra Nagar and the stadium, is under construction; the nearest open metro station today is Malahi Pakri in Kankarbagh. The numbered roads make homes easy to find, so share the road number and house or building name with the tutor. Traffic near the terminal and on the main roads builds at peak hours, so agree a weekday slot that avoids train rush times. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rajendra_Nagar,_Patna",
+        "https://en.wikipedia.org/wiki/Rajendra_Nagar_Terminal_railway_station",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Patna_Metro)",
+        "https://www.squareyards.com/rajendra-nagar-in-patna-overview-22213"
+      ]
+    },
+    "kadamkuan": {
+      "name": "Kadamkuan",
+      "zone": "Kankarbagh & Rajendra Nagar",
+      "type": "mixed",
+      "about": "<p>Kadamkuan is a centrally placed locality of Patna close to the railway station and major markets, and its police station also serves neighbouring Rajendra Nagar. Housing is a mix of apartments, builder floors and plots, with shops and some warehouses in between, and Lohanipur shares its postal office. Two-bedroom flats are the most common rental homes.</p><p>Because it is so central, Kadamkuan is within easy reach of tutors from Rajendra Nagar, Kankarbagh and the Gandhi Maidan side, and Patna Junction and Rajendra Nagar Terminal are both close for rail. The underground Blue Line through this part of the city is still under construction. Roads here stay crowded through much of the day and parking is limited, so tutors usually prefer a two-wheeler and a precise lane landmark. For a regular class, pick a tutor who lives nearby and keep the timing fixed, and use online sessions when a specialist subject teacher lives further away. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/kadamkuan-in-patna-overview-22142",
+        "https://en.wikipedia.org/wiki/Rajendra_Nagar,_Patna"
+      ]
+    },
+    "bhootnath-road": {
+      "name": "Bhootnath Road",
+      "zone": "Kankarbagh & Rajendra Nagar",
+      "type": "residential",
+      "about": "<p>Bhootnath Road is a busy road in eastern Patna that connects the Old Bypass Road, also called Kankarbagh Main Road, with the New Bypass Road. It passes through Bahadurpur Housing Colony, an established residential area, and the city's television tower is a nearby landmark. The surrounding area is densely built, with residential complexes, schools, coaching centres and shops, and Kumhrar and Mundrikayan are among the localities along it.</p><p>Bhootnath metro station, at the southern end of the road on the New Bypass, was one of the first Patna Metro stations when the Blue Line opened to the public in October 2025. Trains run towards Zero Mile and the Patliputra bus terminal, and since July 2026 also to Malahi Pakri in Kankarbagh. Tutors can use the metro and a short auto ride, or come by two-wheeler. Flats in residential complexes usually need gate registration. The road carries heavy traffic when coaching classes change over, so settle a slot that avoids those hours. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bhootnath_Road",
+        "https://en.wikipedia.org/wiki/Bhootnath_metro_station",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Patna_Metro)"
+      ]
+    },
+    "bankipur": {
+      "name": "Bankipur and Gandhi Maidan",
+      "zone": "Gandhi Maidan, Ashok Rajpath & Old Patna",
+      "type": "mixed",
+      "about": "<p>Bankipur, often written Bankipore, grew as the colonial civil station of Patna after the 1760s and was the city's administrative centre. It lies on the southern bank of the Ganga around Gandhi Maidan, the large ground once called Bankipore Maidan, with the Golghar granary of the 1780s nearby. Ashok Rajpath, Bailey Road and Buddha Marg connect it with the rest of the city, and the Exhibition Road and Frazer Road commercial district, with residential apartments among its hotels and shops, lies just to the south.</p><p>Patna Junction, originally called Bankipore Junction, is the nearest main station, and the underground Blue Line with stations at Gandhi Maidan and Akashvani is under construction. The Ganga riverfront expressway runs along the river here, which helps tutors coming from Digha. Many families live in apartment buildings in this central district, so ask whether gate entry needs the tutor's name in advance. Central roads are crowded at office hours and during events at the Maidan, so keep sessions to fixed, off-peak times. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bankipore",
+        "https://en.wikipedia.org/wiki/Exhibition_Road,_Patna",
+        "https://en.wikipedia.org/wiki/Frazer_Road",
+        "https://en.wikipedia.org/wiki/Loknayak_Ganga_Path"
+      ]
+    },
+    "ashok-rajpath": {
+      "name": "Ashok Rajpath",
+      "zone": "Gandhi Maidan, Ashok Rajpath & Old Patna",
+      "type": "mixed",
+      "about": "<p>Ashok Rajpath is the historic road that runs from around Golghar parallel to the Ganga, past Gandhi Maidan, through to the old city and Didarganj. Its northern side is lined with university colleges and other institutions, while the southern side has old shops, markets, private houses and religious buildings, so families here often live in older houses close to the market frontage. A double-decker flyover is being built on part of the road.</p><p>The Ganga riverfront expressway runs parallel along the river and connects with Ashok Rajpath at several points, which gives tutors a quicker way to reach this belt from Digha or the old city. The underground Blue Line will have stations along this stretch, but it is still under construction. Ashok Rajpath is one of the busiest roads in Patna, so tutors are advised to use a two-wheeler, to avoid college opening and closing times, and to ask for a lane landmark. Families here also find online classes practical for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ashok_Rajpath",
+        "https://en.wikipedia.org/wiki/Loknayak_Ganga_Path",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Patna_Metro)"
+      ]
+    },
+    "patna-city": {
+      "name": "Patna City (old city)",
+      "zone": "Gandhi Maidan, Ashok Rajpath & Old Patna",
+      "type": "mixed",
+      "about": "<p>Patna City is the old eastern part of Patna and one of the district's six subdivisions, linked to central Patna by Ashok Rajpath. It is a major trading centre with residential neighbourhoods such as Bengali Colony, Jhauganj, Lodi Katra, Rambagh, Kali Asthan, Nehru Tola, Marufganj, Harmandir Gali, Machharhatta, Hajiganj, Mirchai Gali and Bihar Mills Colony. It is also a sacred city for Sikhs and home to many temples and mosques.</p><p>Patna Sahib railway station, formerly Patna City station and one of the oldest in the area, lies on the main line towards Howrah. The eastern end of the Ganga riverfront expressway at Didarganj, fully open since 2025, has made the old city much easier to reach from the western side of Patna. Many homes are older houses in the city's lanes, where arrival is at the doorstep and two-wheelers or e-rickshaws work better than cars. Share a clear lane landmark and phone number before the first class, keep a fixed slot, and use online classes when a specialist tutor lives across the city. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Patna_City",
+        "https://en.wikipedia.org/wiki/Patna_Sahib_railway_station",
+        "https://en.wikipedia.org/wiki/Loknayak_Ganga_Path"
+      ]
+    },
+    "anisabad": {
+      "name": "Anisabad",
+      "zone": "Anisabad, Gardanibagh & Phulwari",
+      "type": "mixed",
+      "about": "<p>Anisabad is a developing neighbourhood in south-western Patna with a mix of homes and businesses, centred on the busy Anisabad roundabout. Housing includes apartment buildings of one to four bedrooms, plotted homes and builder floors, along with shops and offices, and Phulwari Sharif and Jagdeo Path are among its neighbours. An elevated four-lane road from Anisabad through Phulwari Sharif has been planned to ease traffic on this route.</p><p>There is no metro station in Anisabad, so tutors come by two-wheeler, car or auto, and Patna Junction is the main railway station for longer trips. Because the roundabout carries heavy traffic at peak times, evening classes run more smoothly with a tutor who lives in Anisabad or the nearby Phulwari side. On plotted lanes the tutor can arrive at the doorstep, while apartment buildings may ask for the tutor's name at the gate. Online classes are a good choice for specialist subjects when the right tutor lives in north or central Patna. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/anisabad-in-patna-overview-3065",
+        "https://www.squareyards.com/phulwari-sharif-in-patna-overview-3066",
+        "https://patnapress.com/patna-news-chief-minister-nitish-kumar-greenlights-anishabad-phulwari-aiims-elevated-road-project-work-to-begin-this-december/"
+      ]
+    },
+    "gardanibagh": {
+      "name": "Gardanibagh",
+      "zone": "Anisabad, Gardanibagh & Phulwari",
+      "type": "residential",
+      "about": "<p>Gardanibagh is an established residential locality in central-south Patna, surrounded by Bailey Road, Kidwaipuri, Jakkanpur, the Frazer Road area, Rajbanshi Nagar and the Patna-Gaya road. It lies close to the Secretariat area, and a large state project of several hundred flats for government officers has been taken up here, alongside private apartment buildings. Local markets and good road links make it a practical base for families.</p><p>Patna Junction is close by, which suits tutors who travel in by train, and the planned Blue and Red Line stations in the central area are still under construction. Most tutors come by two-wheeler or auto. Government housing campuses and apartment buildings usually check visitors at the gate, so give the tutor the block and flat number and tell the guard in advance. Roads towards the station and Bailey Road are busiest at office hours, so a fixed early-evening slot with a tutor from Gardanibagh, Rajbanshi Nagar or Kidwaipuri works well. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/gardanibagh-in-patna-overview-3094",
+        "https://indiainvestmentgrid.gov.in/opportunities/nip-project/612941",
+        "https://en.wikipedia.org/wiki/Hardinge_Road"
+      ]
+    },
+    "phulwari-sharif": {
+      "name": "Phulwari Sharif",
+      "zone": "Anisabad, Gardanibagh & Phulwari",
+      "type": "mixed",
+      "about": "<p>Phulwari Sharif is an urban area on the south-western side of Patna, within the Patna metropolitan region and among the fastest-growing parts of the city. Once known mainly for its Sufi heritage and historic shrines, it has spread well beyond its old core, with a large medical campus adding to its growth. National Highway 139 runs through the area, and housing ranges from apartment buildings, which make up much of the newer supply, to independent houses, plots and builder floors.</p><p>Phulwari Sharif railway station on the Howrah-Delhi main line gives the area its own rail link. Anisabad, Khajpura and Beur are nearby areas, and the elevated corridor towards Digha improves travel to the northern side of the city. Tutors mostly arrive by two-wheeler, car or auto. Independent houses allow doorstep arrival, while newer apartment buildings usually register visitors. Traffic between Anisabad and Phulwari builds at peak hours, so pick a tutor from Phulwari or Anisabad for regular classes, and online sessions for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Phulwari_Sharif",
+        "https://en.wikipedia.org/wiki/Phulwari_Sharif_railway_station",
+        "https://www.squareyards.com/phulwari-sharif-in-patna-overview-3066"
+      ]
+    }
+  },
+  "zone_facts": {
+    "Boring Road & Patliputra": [
+      {
+        "fact": "Patliputra Colony (Pataliputra Housing Colony) was formed in 1954 as a cooperative housing society originally meant for government officials, and is run by the Patliputra Cooperative Society.",
+        "source": "https://en.wikipedia.org/wiki/Pataliputra_Housing_Colony"
+      },
+      {
+        "fact": "Boring Road was lined with government officials' houses in the early twentieth century and later became a commercial and residential hub; Nageshwar Colony, Sri Krishna Puri and North Sri Krishna Puri adjoin it.",
+        "source": "https://en.wikipedia.org/wiki/Boring_Road"
+      },
+      {
+        "fact": "Kidwaipuri is also known as P&T Colony and adjoins Nageshwar Colony, Sri Krishna Nagar and Buddha Colony.",
+        "source": "https://en.wikipedia.org/wiki/Kidwaipuri"
+      },
+      {
+        "fact": "Digha Bridge Halt railway station (DGBH) opened on 25 November 2017, near the Digha-Sonpur rail-road bridge.",
+        "source": "https://en.wikipedia.org/wiki/Digha_Bridge_Halt_railway_station"
+      },
+      {
+        "fact": "The Digha-Sonpur rail-road bridge across the Ganga was completed in January 2016.",
+        "source": "https://en.wikipedia.org/wiki/Patliputra_Junction_railway_station"
+      },
+      {
+        "fact": "The Ganga riverfront expressway starts at Digha; its first phase from Digha opened on 24 June 2022.",
+        "source": "https://en.wikipedia.org/wiki/Loknayak_Ganga_Path"
+      }
+    ],
+    "Bailey Road & Danapur": [
+      {
+        "fact": "Bailey Road connects Patna with Danapur, starting near the Income Tax roundabout and ending in Danapur.",
+        "source": "https://en.wikipedia.org/wiki/Bailey_Road,_Patna"
+      },
+      {
+        "fact": "The Red Line (East-West corridor) of Patna Metro, from Danapur Cantonment to Khemnichak with 14 stations, is under construction; no Red Line station is open yet.",
+        "source": "https://en.wikipedia.org/wiki/Red_Line_(Patna_Metro)"
+      },
+      {
+        "fact": "Planned Red Line stations beneath Bailey Road include Danapur, Saguna Mor, RPS Mor, Patliputra, Raja Bazar, Patna Zoo, Vikas Bhawan and Vidyut Bhawan.",
+        "source": "https://en.wikipedia.org/wiki/Bailey_Road,_Patna"
+      },
+      {
+        "fact": "Patliputra Junction (PPTA) is in the Rukanpura area near Bailey Road and is the fourth terminal of the Danapur railway division.",
+        "source": "https://en.wikipedia.org/wiki/Patliputra_Junction_railway_station"
+      },
+      {
+        "fact": "Danapur Cantonment was established in 1765 and is the second-oldest cantonment in India; it is the regimental centre of the Bihar Regiment.",
+        "source": "https://en.wikipedia.org/wiki/Danapur_Cantonment"
+      },
+      {
+        "fact": "Danapur railway station (DNR), headquarters of the Danapur railway division, is located in Khagaul on the Delhi-Kolkata main line.",
+        "source": "https://en.wikipedia.org/wiki/Danapur_railway_station"
+      }
+    ],
+    "Kankarbagh & Rajendra Nagar": [
+      {
+        "fact": "The first Patna Metro section, on the Blue Line between Bhootnath, Zero Mile and Patliputra Bus Terminal, was inaugurated on 6 October 2025 and opened to the public on 7 October 2025.",
+        "source": "https://en.wikipedia.org/wiki/Zero_Mile_metro_station"
+      },
+      {
+        "fact": "Blue Line services were extended to Malahi Pakri, serving Kankarbagh, on 2 July 2026; trains pass Khemnichak without stopping until its construction is complete.",
+        "source": "https://en.wikipedia.org/wiki/Malahi_Pakri_metro_station"
+      },
+      {
+        "fact": "The underground Blue Line section from Rajendra Nagar to Patna Junction, with seven underground stations, is under construction.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Patna_Metro)"
+      },
+      {
+        "fact": "Rajendra Nagar Terminal (RJPB) opened as a full station on 31 March 2003 to decongest Patna Junction.",
+        "source": "https://en.wikipedia.org/wiki/Rajendra_Nagar_Terminal_railway_station"
+      },
+      {
+        "fact": "Rajendra Nagar is a planned colony divided by numbered roads, with parks and playing fields.",
+        "source": "https://en.wikipedia.org/wiki/Rajendra_Nagar,_Patna"
+      },
+      {
+        "fact": "Bhootnath Road links the Old Bypass Road (Kankarbagh Main Road) with the New Bypass Road (NH-30) and passes through Bahadurpur Housing Colony.",
+        "source": "https://en.wikipedia.org/wiki/Bhootnath_Road"
+      },
+      {
+        "fact": "Kumhrar, at the north-eastern edge of Kankarbagh, holds excavated remains of ancient Pataliputra including an 80-pillared hall of the Mauryan period.",
+        "source": "https://en.wikipedia.org/wiki/Kumhrar"
+      }
+    ],
+    "Gandhi Maidan, Ashok Rajpath & Old Patna": [
+      {
+        "fact": "Patna Junction (PNBE), opened in 1862 and originally called Bankipore Junction, is managed by the Danapur division of East Central Railway.",
+        "source": "https://en.wikipedia.org/wiki/Patna_Junction_railway_station"
+      },
+      {
+        "fact": "Bankipore developed as the colonial civil station after 1765; Gandhi Maidan was formerly Bankipore Maidan and Golghar was built in 1784-1786.",
+        "source": "https://en.wikipedia.org/wiki/Bankipore"
+      },
+      {
+        "fact": "Ashok Rajpath runs roughly from Golghar parallel to the Ganga and ends at Didarganj, linking central Patna with Patna City.",
+        "source": "https://en.wikipedia.org/wiki/Ashok_Rajpath"
+      },
+      {
+        "fact": "The Ganga riverfront expressway from Digha to Deedarganj opened in phases between 24 June 2022 and 10 April 2025, and connects with Ashok Rajpath at nine points.",
+        "source": "https://en.wikipedia.org/wiki/Loknayak_Ganga_Path"
+      },
+      {
+        "fact": "Patna Sahib railway station (PNC), formerly Patna City station, serves the old city on the Howrah-Patna main line.",
+        "source": "https://en.wikipedia.org/wiki/Patna_Sahib_railway_station"
+      },
+      {
+        "fact": "Planned underground Blue Line stations in this area include Patna Junction, Akashvani and Gandhi Maidan; they are under construction.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Patna_Metro)"
+      }
+    ],
+    "Anisabad, Gardanibagh & Phulwari": [
+      {
+        "fact": "Phulwari Sharif is part of the Patna metropolitan region, with National Highway 139 running through it.",
+        "source": "https://en.wikipedia.org/wiki/Phulwari_Sharif"
+      },
+      {
+        "fact": "Phulwari Sharif railway station (PWS) lies on the Howrah-Delhi main line.",
+        "source": "https://en.wikipedia.org/wiki/Phulwari_Sharif_railway_station"
+      },
+      {
+        "fact": "An elevated four-lane road from Anisabad roundabout through Phulwari Sharif has been planned, with ramps at both ends.",
+        "source": "https://patnapress.com/patna-news-chief-minister-nitish-kumar-greenlights-anishabad-phulwari-aiims-elevated-road-project-work-to-begin-this-december/"
+      },
+      {
+        "fact": "A state staff-housing project of 752 flats for officers was taken up at Gardanibagh, starting in 2020.",
+        "source": "https://indiainvestmentgrid.gov.in/opportunities/nip-project/612941"
+      },
+      {
+        "fact": "Gardanibagh is bordered by Bailey Road, Kidwaipuri, Jakkanpur, the Frazer Road area, Rajbanshi Nagar and the Patna-Gaya road.",
+        "source": "https://www.squareyards.com/gardanibagh-in-patna-overview-3094"
+      }
+    ]
+  }
+}

@@ -2,375 +2,428 @@
   Long-form guide for the Patna city page (included by city/show.blade.php
   when a file named after the city slug exists). Written for Patna parents
   choosing a home tutor, not for search engines: every figure here is either
-  live from the database or a published NXTutors policy. No schools or
-  coaching institutes are named.
+  live from the database or a published NXTutors policy, local facts come from
+  the cited research in database/seo-content/areas/patna-research.json, and no
+  school, college, coaching institute, society, developer, hospital or mall is
+  named.
 
-  Area links render only when that area page exists and is active, so adding,
-  renaming or disabling an area in Super Admin cannot leave a broken link here.
+  Area links render only when that area page exists and is active, so renaming
+  or disabling an area in Super Admin cannot leave a broken link here.
 --}}
 @php
   $ptAreaSlugs = $allAreas->pluck('slug')->map(fn ($s) => (string) $s)->all();
-  $pA = function (string $slug, string $label) use ($ptAreaSlugs) {
+  $ptA = function (string $slug, string $label) use ($ptAreaSlugs) {
       return in_array($slug, $ptAreaSlugs, true)
           ? '<a href="' . e(url('/city/patna/' . $slug)) . '">' . e($label) . '</a>'
           : e($label);
   };
+  $ptTutors = (int) ($hubCounts['tutors'] ?? 0);
   $ptAreas = $allAreas->count();
 @endphp
 
 <article class="nx-guide pt-guide" aria-labelledby="ptGuideTitle">
-  <h2 id="ptGuideTitle">Home tuition in Patna: a practical guide for parents</h2>
+  <h2 id="ptGuideTitle">Home tuition in Patna: a parent's guide from Digha to Patna City</h2>
 
   <p class="nx-guide__lede pt-lede">
-    In Patna, conversations about school very quickly become conversations about JEE and NEET. Many families plan for
-    engineering or medical entrance years before Class 11, and the city has a long tradition of coaching classes and
-    self-study that goes with it. The question most parents here face is not whether their child will study hard, but how
-    to make that effort count: whether to send a teenager to Kota or Delhi, or keep them at home with the right support;
-    how to handle a CBSE or BSEB board year alongside coaching; and how to spend a tuition budget wisely. This guide sets
-    out how NXTutors finds home tutors in Patna and what to look for when you choose one.
+    Patna is a long city laid along the south bank of the Ganga. At its western end sit Danapur and its cantonment;
+    Bailey Road carries the apartment belt east towards the old civil station at Bankipur and Gandhi Maidan; the colonies
+    of Boring Road and Patliputra fill the ground between Bailey Road and the river; Kankarbagh and Rajendra Nagar
+    spread south-east of the railway; and Ashok Rajpath runs on to the lanes of Patna City. It is also a city where
+    school and entrance preparation run side by side, so for many teenagers the tutor's hour has to fit between a
+    school day and a coaching batch. Where you live, and when your child is actually free, decide which tutor can
+    keep coming.
   </p>
-
   <nav class="nx-guide__toc pt-toc" aria-label="In this guide">
     <strong>In this guide:</strong>
     <a href="#pt-how">How matching works</a> ·
-    <a href="#pt-where">Localities</a> ·
-    <a href="#pt-boards">CBSE, BSEB and ICSE</a> ·
-    <a href="#pt-classes">Class by class</a> ·
-    <a href="#pt-jee-neet">JEE &amp; NEET at home</a> ·
-    <a href="#pt-medium">Hindi to English medium</a> ·
+    <a href="#pt-zones">The five zones</a> ·
+    <a href="#pt-boards">Boards</a> ·
+    <a href="#pt-classes">Classes</a> ·
     <a href="#pt-subjects">Subjects</a> ·
+    <a href="#pt-jee-neet">JEE &amp; NEET</a> ·
     <a href="#pt-mode">Home or online</a> ·
     <a href="#pt-fees">Fees</a> ·
-    <a href="#pt-choose">Choosing a tutor</a> ·
-    <a href="#pt-safety">Safety</a> ·
-    <a href="#pt-calendar">The Patna school year</a> ·
+    <a href="#pt-choose">The demo class</a> ·
+    <a href="#pt-calendar">The school year</a> ·
     <a href="#pt-start">Getting started</a>
   </nav>
   <div class="nx-guide__body">
 
   <section class="nx-guide__sec">
-  <h2 id="pt-how">How we find the right tutor for your child</h2>
+  <h2 id="pt-how">How does NXTutors match a Patna family with a tutor?</h2>
   <p>
-    You fill in one short request: the student's class and board, the subjects where help is needed, your locality in
-    Patna, the days and times that are free after school and coaching, whether you want the tutor at home or online, and
-    what you can spend. From that, we put forward two or three tutors who fit the whole picture. We do not send a list of
-    fifty names to call one by one.
+    It starts with a single request. Write down the class and board, the subjects that need help, your locality with a
+    landmark, the free slots once school and any coaching are over, and whether you want lessons at home, online or a
+    mix of the two, plus a monthly budget. From that we suggest two or three tutors. Each tutor's fee is visible before
+    you meet, and the opening lesson with whichever one you pick is a free demo. For Patna, the shortlist turns on
+    four questions:
   </p>
-  <p>Behind that shortlist are a few questions we ask about every tutor:</p>
   <ul>
-    <li><strong>Have they taught this exact combination before?</strong> Teaching BSEB Class 10 Science in Hindi medium is a different job from teaching CBSE Class 12 Chemistry to a NEET aspirant. We match on board, class and medium, not only the subject name.</li>
-    <li><strong>Can they reach you reliably?</strong> A tutor across town, or on the far side of the railway line, may look close on a map but be slow to reach in the evening. We look at where the tutor travels from and at what time.</li>
-    <li><strong>Does their free time match the student's free time?</strong> Many Patna students attend school in the morning and coaching in the afternoon or evening, so the only open window may be early morning or late evening. We only suggest tutors who genuinely have that slot.</li>
-    <li><strong>Are they inside your budget?</strong> Every tutor's fee is shown before you meet them.</li>
-    <li><strong>What do other families say?</strong> Reviews, punctuality and how long students stay with a tutor all count.</li>
+    <li><strong>Which side of the city?</strong> Patna stretches a long way east to west, so a tutor already teaching along your stretch of Bailey Road, or in your part of Kankarbagh, is easier to keep than one crossing from the far end.</li>
+    <li><strong>When is the student truly free?</strong> If a coaching batch fills the afternoon, the realistic slot may be early morning or late evening; we only suggest tutors who can take that hour.</li>
+    <li><strong>Which board, and in which language?</strong> BSEB, CBSE, ICSE and ISC, and IB or IGCSE each ask for different preparation, and some students are comfortable in Hindi, some in English, many in a mix.</li>
+    <li><strong>House, flat or township?</strong> A house in a colony lane means a doorbell; an apartment building or gated township means a guard who wants the tutor's name first.</li>
   </ul>
   <p>
-    You then take a <strong>free demo class</strong> with the tutor you prefer. It should be a real lesson on whatever the
-    student is studying that week, so you can see how the tutor teaches. If it does not feel right, tell us and we arrange
-    another demo with someone else. Changing tutor costs nothing.
+    Treat the demo as an ordinary lesson on whatever the class is doing that week. If the fit is wrong, another tutor
+    from the shortlist is arranged, and changing tutor later is free as well.
   </p>
   </section>
 
   <section class="nx-guide__sec">
-  <h2 id="pt-where">Where our tutors teach in Patna</h2>
+  <h2 id="pt-zones">Patna, zone by zone</h2>
   <p>
-    @if($hubCounts['tutors'] > 0)
-      NXTutors currently has {{ number_format($hubCounts['tutors']) }} tutor profiles listed for Patna,
+    @if($ptTutors > 0)
+      Tutors shown for Patna come from {{ number_format($ptTutors) }} tutor profiles,
     @else
-      We are building our tutor network in Patna,
+      Tutors shown for Patna come from our tutor profiles,
     @endif
-    and we arrange home tuition across the city
-    @if($ptAreas > 0)
-      &mdash; {{ number_format($ptAreas) }} localities are already listed on this page.
-    @else
-      &mdash; tell us your locality and we will look for the nearest suitable tutor.
-    @endif
-    Where no home tutor is close enough, an experienced online tutor is always an option. Each part of the city has its
-    own character when it comes to tuition.
+    and @if($ptAreas > 0){{ number_format($ptAreas) }} Patna localities @else each Patna locality @endif
+    have a page of their own. On each, tutors who live in that locality are listed first, then tutors from the same
+    zone, then tutors across the city, then online tutors. To plan home lessons we split the city into five zones,
+    working from the north-west round to the south-west:
+    <a href="#pt-boring">Boring Road and Patliputra</a>, <a href="#pt-bailey">Bailey Road and Danapur</a>,
+    <a href="#pt-kankarbagh">Kankarbagh and Rajendra Nagar</a>, <a href="#pt-old">Gandhi Maidan, Ashok Rajpath and Old
+    Patna</a> and <a href="#pt-south">Anisabad, Gardanibagh and Phulwari</a>. These are our own planning groups, not
+    municipal wards.
   </p>
-    <div class="nx-guide__cards">
-      <div class="nx-guide__card">
-  <h3>Boring Road, Patliputra Colony and the western side</h3>
-  <p>
-    Around {!! $pA('boring-road', 'Boring Road') !!}, {!! $pA('patliputra-colony', 'Patliputra Colony') !!} and
-    {!! $pA('ashiana-nagar', 'Ashiana Nagar') !!}, many families have children in CBSE schools and a good number are
-    already enrolled in entrance coaching from Class 9 or 10. Families here often ask for Class 11 and 12 Physics,
-    Chemistry and Maths, and for tutors who can work through coaching material rather than repeat school lessons.
-   
-  </p>
-      </div>
-      <div class="nx-guide__card">
-  <h3>Bailey Road and Danapur</h3>
-  <p>
-    Along {!! $pA('bailey-road', 'Bailey Road') !!} and out towards {!! $pA('danapur', 'Danapur') !!}, homes are more
-    spread out and travel times are longer. Families here often choose a tutor who comes two or three times a week for
-    longer sessions, rather than daily short visits, and are more open to a mix of home and online classes.
-  </p>
-      </div>
-      <div class="nx-guide__card">
-  <h3>Kankarbagh, Rajendra Nagar and Kadamkuan</h3>
-  <p>
-    {!! $pA('kankarbagh', 'Kankarbagh') !!} is one of the largest residential areas in the city, and together with
-    {!! $pA('rajendra-nagar', 'Rajendra Nagar') !!} and {!! $pA('kadamkuan', 'Kadamkuan') !!} it has long been home to
-    students preparing for competitive exams, including many who live in hostels or rented rooms near coaching classes.
-    Families here ask us for a wide mix: BSEB matric and intermediate preparation, CBSE board classes, and one-to-one
-    doubt sessions for JEE and NEET.
-  </p>
-      </div>
-      <div class="nx-guide__card">
-  <h3>Bankipur and the Gandhi Maidan area</h3>
-  <p>
-    The older central city around {!! $pA('bankipur', 'Bankipur') !!} and {!! $pA('gandhi-maidan', 'Gandhi Maidan') !!}
-    has a mix of long-settled families and students who have come from other districts of Bihar to study in Patna. Families
-    here often ask for help moving from Hindi-medium to English-medium study, for BSEB board preparation, and
-    for English and Mathematics in the lower secondary classes.
-  </p>
-      </div>
-    </div>
   </section>
 
   <section class="nx-guide__sec">
-  <h2 id="pt-boards">CBSE, BSEB and ICSE: what each board asks for</h2>
+  <h3 id="pt-boring">Boring Road and Patliputra: colonies between the city centre and the river</h3>
   <p>
-    Patna students sit several different boards, and the right tutor for one is not always the right tutor for another.
+    {!! $ptA('boring-road', 'Boring Road') !!} was once lined with officials' houses and became the city's
+    fashionable address before shops, offices and coaching classes took over the frontage; most homes now lie in the
+    colonies a turn off it. {!! $ptA('sri-krishna-puri', 'Sri Krishna Puri') !!} and North Sri Krishna Puri are
+    mostly flats with older houses in the inner lanes, and {!! $ptA('kidwaipuri', 'Kidwaipuri') !!}, also called P&amp;T
+    Colony, is small and well planned. {!! $ptA('boring-canal-road', 'Boring Canal Road') !!} runs east and west
+    through Buddha Colony and Anandpuri, and {!! $ptA('shivpuri', 'Shivpuri') !!} is named after the Shiv temple at its
+    entrance. {!! $ptA('patliputra-colony', 'Patliputra Colony') !!} was formed in 1954 as a cooperative housing
+    society for government officials and is still run by it; {!! $ptA('shastri-nagar', 'Shastri Nagar') !!} is flats
+    and builder floors near Bailey Road; and {!! $ptA('digha', 'Digha') !!}, once farmland on the Ganga, now mixes old
+    houses with high-rise blocks.
+  </p>
+  <p>
+    No metro reaches this zone yet. Rail comes in at Digha Bridge Halt, opened in November 2017 beside the Digha-Sonpur
+    rail-road bridge, and the Ganga riverfront expressway, whose first phase opened from Digha on 24 June 2022, lets
+    tutors skirt the inner roads. Most visits are to a house or a low-rise building, so arrival is at the door or at a
+    single gate. The Boring Road crossing fills up in the evening, which makes a tutor from the next colony the
+    simplest match.
+  </p>
+  </section>
+
+  <section class="nx-guide__sec">
+  <h3 id="pt-bailey">Bailey Road and Danapur: the apartment corridor to the cantonment</h3>
+  <p>
+    {!! $ptA('bailey-road', 'Bailey Road') !!} runs from near the Income Tax roundabout through the administrative
+    quarter and then past a long belt of two- and three-bedroom flats all the way to Danapur.
+    {!! $ptA('raja-bazar', 'Raja Bazar') !!} is small complexes by local builders.
+    {!! $ptA('rukanpura', 'Rukanpura') !!}, in the West End, holds Patliputra Junction, the fourth terminal of the
+    Danapur railway division. {!! $ptA('saguna-more', 'Saguna More') !!} has grown into a hub of three-bedroom flats,
+    with large gated townships beside smaller buildings. {!! $ptA('danapur', 'Danapur') !!} keeps its own municipal
+    council and a cantonment set up in 1765, and next door {!! $ptA('khagaul', 'Khagaul') !!} is an old town whose
+    station, confusingly, is Danapur railway station, headquarters of the division on the Delhi-Kolkata main line.
+  </p>
+  <p>
+    The Red Line of Patna Metro is being built beneath Bailey Road, with planned stations at Danapur, Saguna Mor, RPS
+    Mor, Patliputra, Raja Bazar, Patna Zoo, Vikas Bhawan and Vidyut Bhawan; none is open yet, so for now tutors ride or
+    take an auto. Townships and larger buildings register visitors, so ask about a standing pass. Cantonment homes have
+    their own entry rules. Office hours are the slowest on this road; later evening slots, or a tutor from the same
+    stretch, work better.
+  </p>
+  </section>
+
+  <section class="nx-guide__sec">
+  <h3 id="pt-kankarbagh">Kankarbagh and Rajendra Nagar: the metro side of the city</h3>
+  <p>
+    {!! $ptA('kankarbagh', 'Kankarbagh') !!} is one of Patna's largest residential colonies, running from Ashok Nagar
+    to Kumhrar, where the excavated remains of ancient Pataliputra include a Mauryan hall of eighty pillars. It mixes
+    houses, builder floors and newer apartment buildings around busy markets on the main road and the 90 Feet road.
+    {!! $ptA('rajendra-nagar', 'Rajendra Nagar') !!} is a planned colony set out on numbered roads with parks between
+    the blocks, served by Rajendra Nagar Terminal, opened in 2003 to take load off Patna Junction.
+    {!! $ptA('kadamkuan', 'Kadamkuan') !!} is central and crowded, with flats, floors and shops close to the station,
+    and {!! $ptA('bhootnath-road', 'Bhootnath Road') !!} runs through the Bahadurpur colony between the Old and
+    New Bypass roads.
+  </p>
+  <p>
+    This is the only zone with a working metro. The Blue Line's first section, Bhootnath to Zero Mile and the
+    Patliputra Bus Terminal, opened to the public on 7 October 2025, and on 2 July 2026 trains were extended to Malahi
+    Pakri, at the roundabout on the 90 Feet road; they pass Khemnichak without stopping until that station is
+    finished. The underground section towards Rajendra Nagar and Patna Junction is still under construction. Road
+    numbers make Rajendra Nagar easy to find; in Kadamkuan, send a lane landmark.
+  </p>
+  </section>
+
+  <section class="nx-guide__sec">
+  <h3 id="pt-old">Gandhi Maidan, Ashok Rajpath and Old Patna: the historic spine along the Ganga</h3>
+  <p>
+    {!! $ptA('bankipur', 'Bankipur') !!} grew as the colonial civil station after 1765 around the ground now called
+    Gandhi Maidan, with Golghar, the granary of 1784 to 1786, close by; the commercial blocks to its south hold flats
+    among the hotels and shops. {!! $ptA('ashok-rajpath', 'Ashok Rajpath') !!} runs from near Golghar parallel to the
+    river as far as Didarganj, colleges and institutions on its northern side and old houses, markets and places of
+    worship on its southern side. At its far end, {!! $ptA('patna-city', 'Patna City') !!}, the old eastern town, is a
+    trading centre of neighbourhoods such as Jhauganj, Marufganj and Hajiganj, and a sacred city for Sikhs.
+  </p>
+  <p>
+    Patna Junction, opened in 1862 as Bankipore Junction, anchors the west of the zone, and Patna Sahib station serves
+    the old city. The Ganga riverfront expressway, complete from Digha to Didarganj since April 2025, meets Ashok
+    Rajpath at nine points, so tutors from the north-west can cross quickly. Underground Blue Line stations at Gandhi
+    Maidan and Akashvani are under construction. Ashok Rajpath is busiest when colleges open and close; in the old
+    city's lanes a two-wheeler or e-rickshaw beats a car.
+  </p>
+  </section>
+
+  <section class="nx-guide__sec">
+  <h3 id="pt-south">Anisabad, Gardanibagh and Phulwari: the growing south-west</h3>
+  <p>
+    {!! $ptA('anisabad', 'Anisabad') !!} is a developing neighbourhood around a busy roundabout, with apartment
+    buildings of one to four bedrooms, plotted homes and builder floors. {!! $ptA('gardanibagh', 'Gardanibagh') !!},
+    close to the Secretariat area and bordered by Kidwaipuri, Jakkanpur and Rajbanshi Nagar, is established housing
+    where a state project of 752 flats for officers was taken up from 2020. {!! $ptA('phulwari-sharif', 'Phulwari
+    Sharif') !!}, known for its Sufi heritage and historic shrines, is among the fastest-growing parts of the
+    metropolitan region, with National Highway 139 running through it and new apartment buildings spreading well
+    beyond the old core.
+  </p>
+  <p>
+    Phulwari Sharif has its own station on the Howrah-Delhi main line, and Patna Junction is close to Gardanibagh.
+    There is no metro here yet. An elevated four-lane road from the Anisabad roundabout through Phulwari has been
+    planned, and the elevated corridor towards Digha already helps tutors travelling north. Government housing
+    campuses and newer buildings check visitors at the gate; plotted lanes allow doorstep arrival. The roundabout is
+    slowest at peak hours, so a tutor from the same side of it is the steadiest choice.
+  </p>
+  </section>
+
+  <section class="nx-guide__sec">
+  <h2 id="pt-boards">Which boards do Patna tutors teach?</h2>
+  <p>
+    Patna students sit the Bihar board, CBSE, CISCE's ICSE and ISC, and a smaller number follow IB or Cambridge IGCSE.
+    A tutor who is strong on one board is not automatically right for another, so board and class are matched
+    together.
   </p>
     <div class="nx-guide__cards">
-      <div class="nx-guide__card">
-  <h3>CBSE</h3>
-  <p>
-    Many private schools in Patna follow CBSE. The board's papers stay close to the NCERT textbooks, and a growing share of
-    each paper is made up of case-based, assertion–reason and application questions. For a Patna student who also
-    prepares for JEE or NEET, the good news is that NCERT is the common ground: a tutor who teaches NCERT thoroughly is
-    helping with both at once. What entrance-focused CBSE students often lack is practice in writing complete, step-by-step
-    answers.
-  </p>
-      </div>
       <div class="nx-guide__card">
   <h3>Bihar School Examination Board (BSEB)</h3>
   <p>
-    A large number of Patna students study under the BSEB, which conducts the Class 10 (matric) and Class 12
-    (intermediate) examinations. BSEB papers include a significant objective (multiple-choice) section along with
-    subjective questions, so preparation needs both speed and written answers. The matric and intermediate exams are
-    usually held in February, earlier than many parents expect, which means revision has to start well before the
-    winter. Students may take their papers in Hindi or English, and a tutor who can teach comfortably in both is often
-    the best fit.
+    The Bihar School Examination Board conducts the state's Class 10 (matric) and Class 12 (intermediate)
+    examinations. A tutor for a BSEB student should work from the board's prescribed textbooks and its own model and
+    past papers, and should be comfortable teaching in the language the student reads most easily. Formats and dates
+    change, so take them only from the board's official website.
+  </p>
+      </div>
+      <div class="nx-guide__card">
+  <h3>CBSE</h3>
+  <p>
+    CBSE papers are rooted in the NCERT textbooks, and a growing share of each paper tests whether a student can apply
+    an idea to an unfamiliar situation. For a Patna teenager also preparing for JEE or NEET this is useful: careful
+    NCERT work serves both goals. The gap entrance students usually show is in writing: full, stepwise board answers
+    after months of objective practice.
   </p>
       </div>
       <div class="nx-guide__card">
   <h3>ICSE and ISC</h3>
   <p>
-    A smaller number of Patna schools follow the CISCE curriculum. ICSE and ISC ask for longer and more precise written
-    answers, especially in English, History and the sciences, and the syllabus is broad. We match tutors who know the prescribed
-    texts and project requirements.
+    ICSE at Class 10 and ISC at Class 12 set long written papers over a wide syllabus, with literature texts in
+    English. The challenge is covering every chapter and keeping answers precise, so a tutor should plan revision in
+    rounds, set timed writing and keep an eye on each subject's project work.
+  </p>
+      </div>
+      <div class="nx-guide__card">
+  <h3>IB and IGCSE</h3>
+  <p>
+    Families following the IB Diploma or Cambridge IGCSE, often after a move from another city, usually find the
+    closest specialist online. IB assesses coursework as well as final papers, and a tutor may guide an Internal
+    Assessment or Extended Essay but never write it; IGCSE rewards past-paper practice against the official mark
+    scheme.
   </p>
       </div>
     </div>
   </section>
 
   <section class="nx-guide__sec">
-  <h2 id="pt-classes">Tuition needs, class by class</h2>
+  <h2 id="pt-classes">What should a tutor focus on, class by class?</h2>
     <div class="nx-guide__cards">
       <div class="nx-guide__card">
-  <h3>Classes 1 to 5</h3>
+  <h3>Classes 1 to 8</h3>
   <p>
-    At this age, the aim is reading fluently, writing neatly, and being comfortable with numbers. A tutor who sits with the
-    child for an hour three or four evenings a week, checks homework and builds good habits is usually what families want.
-    For children in English-medium schools whose home language is Hindi, Bhojpuri, Magahi or Maithili, gentle daily
-    practice in reading English aloud makes a large difference.
-  </p>
-      </div>
-      <div class="nx-guide__card">
-  <h3>Classes 6 to 8</h3>
-  <p>
-    Middle school is where Mathematics and Science start to separate students. Topics like fractions, integers, basic
-    algebra and simple equations are the foundation for everything that follows. Before any "foundation" course, make sure
-    the school syllabus is truly understood; a child secure in Class 7 Mathematics copes with foundation material later.
+    The early years are about fluent reading, secure arithmetic and neat, complete written work. For a child who
+    speaks Hindi, Bhojpuri, Magahi or Maithili at home and studies in English, a few minutes of reading aloud in each
+    lesson helps more than extra worksheets. Before any foundation course for entrance exams, make sure school maths
+    up to Class 8 is genuinely understood.
   </p>
       </div>
       <div class="nx-guide__card">
   <h3>Classes 9 and 10</h3>
   <p>
-    Class 9 is often the year a Patna student first joins a coaching class, and also the year school Mathematics and
-    Science become noticeably harder. Trying to do both without support can leave gaps in each. A home tutor at this
-    stage typically keeps the school syllabus on track, prepares the student for the matric or CBSE Class 10 exam, and
-    makes sure coaching work does not crowd out board preparation.
+    Class 9 is often when a Patna student first joins a coaching batch, and the same year school Maths and Science get
+    harder. The tutor's job is to keep the school syllabus moving so the matric or Class 10 board year is not squeezed.
+    Our <a href="{{ url('/blog/cbse-class-10-maths-preparation') }}">Class 10 Maths preparation plan</a> and
+    <a href="{{ url('/blog/cbse-class-10-science-notes') }}">Class 10 Science notes</a> follow the NCERT chapters.
   </p>
       </div>
       <div class="nx-guide__card">
   <h3>Classes 11 and 12</h3>
   <p>
-    For many Patna families, the senior classes are where tuition matters most, especially in the science stream. Class 11 is
-    the difficult year: the jump from Class 10 is sharp, and a large part of the JEE and NEET syllabus is taught in it.
-    Students who fall behind in Class 11 Physics or Maths often struggle for the rest of their preparation. We usually
-    suggest a specialist tutor for each difficult subject rather than one tutor for everything.
+    Class 11 is the hardest step: the syllabus jumps, and much of the entrance syllabus is taught in it. A student who
+    loses Class 11 Physics or Maths rarely recovers it in Class 12, so pick one specialist per difficult subject. See
+    our <a href="{{ url('/blog/cbse-class-12-physics-strategies') }}">Class 12 Physics strategies</a> for the board
+    year.
   </p>
       </div>
     </div>
   </section>
 
   <section class="nx-guide__sec">
-  <h2 id="pt-jee-neet">JEE and NEET preparation without leaving home</h2>
+  <h2 id="pt-subjects">Which subjects can a Patna tutor cover?</h2>
   <p>
-    Every year many Patna families weigh the same decision: send their child to Kota or Delhi for two years of coaching,
-    or keep them in Patna. Moving away suits some students, but it is expensive, and not every sixteen-year-old copes
-    well alone. Plenty of families decide that their child studies better at
-    home, with local coaching and a home tutor filling the gaps. That arrangement works when the tutor has a clear role:
+    Physics, Chemistry, Mathematics and Biology are what most Patna parents ask about first, especially from Class 9.
+    Tutors on NXTutors also teach English, Hindi, Sanskrit, Social Science, Computer Science, Accountancy, Economics
+    and Business Studies, and many cover every subject for primary classes. Patna has its own pages for
+    <a href="{{ url('/maths-home-tutor-patna') }}">maths home tutors</a>,
+    <a href="{{ url('/science-home-tutor-patna') }}">science home tutors</a>,
+    <a href="{{ url('/physics-home-tutor-patna') }}">physics home tutors</a> and
+    <a href="{{ url('/chemistry-home-tutor-patna') }}">chemistry home tutors</a>.
+  </p>
+  <p>
+    In Maths, find where understanding first broke, even if that is two classes back. In Physics, reason from the idea
+    rather than a formula sheet. Chemistry needs three habits at once, numericals for Physical, reaction patterns for
+    Organic and close reading for Inorganic, as our
+    <a href="{{ url('/blog/cbse-class-12-chemistry-organicinorganic') }}">guide to Class 12 Organic and Inorganic
+    Chemistry</a> explains. A student moving from Hindi-medium study into English-medium books needs a tutor who
+    teaches technical words in both languages and then lets the Hindi fall away; our
+    <a href="{{ url('/blog/spoken-english-for-students') }}">spoken English guide for students</a> adds practice at
+    home.
+  </p>
+  </section>
+
+  <section class="nx-guide__sec">
+  <h2 id="pt-jee-neet">Can a home tutor help with JEE or NEET in Patna?</h2>
+  <p>
+    Yes, and in Patna that usually means working next to a coaching batch rather than instead of it. Many families
+    weigh sending a sixteen-year-old to another city against keeping them at home with local coaching and a tutor.
+    Staying home works when the tutor has a defined job:
   </p>
   <ul>
-    <li><strong>Clearing doubts from coaching.</strong> Large coaching batches move fast. A tutor who goes through the student's own coaching modules and test papers each week makes sure nothing is left half-understood.</li>
-    <li><strong>Balancing boards and the entrance exam.</strong> Class 12 students still need a good board result. A tutor can plan revision so that board and entrance preparation reinforce each other.</li>
-    <li><strong>Rescuing one weak subject.</strong> A student may be comfortable in Chemistry and Biology and struggling in Physics. Focused one-to-one work on that one subject is usually a better use of money than extra hours everywhere.</li>
+    <li><strong>A weekly clean-up.</strong> Go through the coaching sheets and the last test, and clear every question left half-understood before the next batch moves on.</li>
+    <li><strong>One plan for boards and entrance.</strong> Class 12 NCERT sits under both the board papers and the entrance syllabus, so revision can be planned to serve the two together.</li>
+    <li><strong>Hours where the marks are lost.</strong> Concentrated time on the single weakest subject is worth more than extra hours spread across all three.</li>
+    <li><strong>A fixed slot around the batch.</strong> Early mornings, late evenings or a weekend block, agreed once and kept.</li>
   </ul>
   <p>
-    JEE Main is held in two sessions early in the year, and those who qualify go on to JEE Advanced. NEET UG is usually
-    held in May. For NEET, Biology carries the most marks and is almost entirely NCERT-based, so line-by-line NCERT work
-    matters more than extra question banks; see our note on
-    <a href="{{ url('/blog/-neet-biology-ncertfirst') }}">an NCERT-first approach to NEET Biology</a>. For JEE, our
-    topic-wise guides for <a href="{{ url('/blog/jee-physics-topicwise-prep') }}">Physics</a> and
-    <a href="{{ url('/blog/jee-maths-topicwise-prep') }}">Maths</a> are a useful starting point to discuss with a tutor.
+    NTA holds JEE Main in two sessions in the first half of the year, and candidates who qualify may go on to JEE
+    Advanced. NEET UG is held once a year, and Biology makes up half of its marks, so NCERT Biology deserves line-by-line
+    reading. Dates come only from that year's official information bulletin. Our topic plans for
+    <a href="{{ url('/blog/jee-maths-topicwise-prep') }}">JEE Maths</a>,
+    <a href="{{ url('/blog/jee-physics-topicwise-prep') }}">JEE Physics</a> and
+    <a href="{{ url('/blog/jee-chemistry-physicalorganicinorganic') }}">JEE Chemistry</a>, and our
+    <a href="{{ url('/blog/-neet-biology-ncertfirst') }}">NCERT-first approach to NEET Biology</a>, are good to share
+    with a tutor. Our comparison of
+    <a href="{{ url('/blog/jee-preparation-gurgaon-coaching-or-home-tutor') }}">coaching and a home tutor for JEE</a>
+    was written for Gurugram, but its reasoning holds in Patna.
   </p>
   </section>
 
   <section class="nx-guide__sec">
-  <h2 id="pt-medium">Moving from Hindi medium to English medium</h2>
+  <h2 id="pt-mode">Home or online tuition in Patna?</h2>
   <p>
-    Many Patna students change medium at some point: from a Hindi-medium school to an English-medium one, from BSEB to
-    CBSE after Class 10, or into English-language coaching material for JEE and NEET. The subject knowledge is usually
-    there. What slows them down is reading questions quickly in English, understanding technical terms, and writing
-    answers confidently.
-  </p>
-  <p>A tutor who has helped students through this change will usually:</p>
-  <ul>
-    <li>teach new terms in both languages at first (for example, explaining "velocity" alongside its Hindi meaning) and then gradually drop the Hindi;</li>
-    <li>have the student read questions aloud and restate them in their own words, so that comprehension is checked, not assumed;</li>
-    <li>build a short personal glossary for each subject, revised every week;</li>
-    <li>practise writing answers in simple, correct English rather than memorised paragraphs.</li>
-  </ul>
-  <p>
-    Most students settle in within a few months with this kind of support. For confidence in speaking, our guide to
-    <a href="{{ url('/blog/spoken-english-for-students') }}">spoken English for students</a> has exercises that can be
-    done at home.
-  </p>
-  </section>
-
-  <section class="nx-guide__sec">
-  <h2 id="pt-subjects">Subjects Patna families ask for</h2>
-  <p>
-    In a city so focused on engineering and medical entrance, Physics, Chemistry, Mathematics and Biology are the subjects
-    parents ask about first, especially in Classes 9 to 12. We also arrange tutors for English, Hindi, Sanskrit and Social Science for board classes, Accountancy and Economics for commerce
-    students, and Computer Science, as well as primary classes, where one tutor usually covers all subjects.
-  </p>
-  <p>
-    In <strong>Mathematics</strong>, gaps build on each other, so a tutor should find where understanding first broke down,
-    even if that is two classes back. In <strong>Physics</strong>, the aim is reasoning from the concept, not memorising
-    formula sheets. <strong>Chemistry</strong> needs three approaches at once: numericals for Physical, reaction patterns
-    for Organic, and careful NCERT reading for Inorganic. For Class 10 Science, our
-    <a href="{{ url('/blog/cbse-class-10-science-notes') }}">CBSE Class 10 Science notes</a> are a helpful companion to
-    tuition, and much of that material also serves BSEB students.
-  </p>
-  </section>
-
-  <section class="nx-guide__sec">
-  <h2 id="pt-mode">Home tuition, online tuition, or both</h2>
-  <p>
-    Home tuition is the first choice for most Patna families, and it suits younger children, students who lose focus on a
-    screen, and subjects that need a lot of written working.
-  </p>
-  <p>
-    Online tuition has its place too. For a specialist subject, such as advanced JEE Mathematics or a particular board's
-    Literature syllabus, the best available tutor may not live in Patna at all. Online sessions also help when travel is
-    difficult: in the May–June heat, when monsoon rain waterlogs roads, or around Chhath and other festivals.
-  </p>
-  <p>
-    Many families settle on a hybrid: the tutor comes home two or three times a week, and a short online session is added
-    for doubts before a test. Our article on
-    <a href="{{ url('/blog/online-vs-offline-tutoring') }}">online versus offline tutoring</a> covers the trade-offs in more
-    detail.
-  </p>
-  </section>
-
-  <section class="nx-guide__sec">
-  <h2 id="pt-fees">What home tuition costs, and how to get value</h2>
-  <p>
-    Across NXTutors, most sessions cost between <strong>₹800 and ₹2,500 an hour</strong>. The fee for any particular
-    tutor depends on:
+    A tutor at the table suits younger children, students who drift on a screen, and subjects where the written
+    working is the point, such as Maths and Physics numericals. Online lessons bring in specialists from across India,
+    which matters most for IB, IGCSE, ISC electives and advanced entrance problems. In Patna, transport shapes the
+    choice:
   </p>
   <ul>
-    <li><strong>The class.</strong> Primary and middle-school tuition sits at the lower end; Classes 11 and 12 higher.</li>
-    <li><strong>The subject and goal.</strong> Entrance-level Physics or Mathematics costs more than school-level support in the same subject.</li>
-    <li><strong>The tutor's experience.</strong> Tutors with many years of board and entrance teaching, and good reviews, charge more.</li>
-    <li><strong>Travel.</strong> A tutor who lives nearby can often offer a better rate than one who crosses the city.</li>
-    <li><strong>How often, and how long.</strong> Many tutors reduce the hourly rate for regular weekly sessions or a monthly arrangement.</li>
+    <li><strong>A young metro.</strong> The open Blue Line stations are Bhootnath, Zero Mile, the Patliputra Bus Terminal and Malahi Pakri; a tutor living near one of them can reach Kankarbagh without a vehicle.</li>
+    <li><strong>Lines still being built.</strong> The Red Line under Bailey Road and the underground Blue Line section towards Patna Junction are under construction, so most tutors still travel by two-wheeler or auto.</li>
+    <li><strong>The riverfront road.</strong> The Ganga riverfront expressway links Digha with Gandhi Maidan and Didarganj, which shortens trips between the north-west and the old city.</li>
+    <li><strong>Heat, rain and festivals.</strong> On the hottest afternoons, the heaviest monsoon days and around Chhath, a planned online lesson keeps the week intact.</li>
   </ul>
   <p>
-    If you are working to a fixed monthly amount, it is often better to choose fewer, longer sessions (say, three
-    sessions of ninety minutes a week) than five short ones. A longer session leaves time to teach, practise and check,
-    and the tutor spends less time travelling. Put the budget where the difficulty is: one strong Physics tutor may do
-    more good than cheaper help in four subjects. You see every shortlisted tutor's fee before
-    the demo. Our <a href="{{ url('/pricing-guide') }}">pricing guide</a> breaks costs down further.
+    Many families settle on two or three home lessons a week and a short online session before tests, all with the same
+    tutor. Our <a href="{{ url('/blog/home-tutor-vs-online-tutor') }}">home tutor or online tutor comparison</a> sets
+    out the trade-offs.
   </p>
   </section>
 
   <section class="nx-guide__sec">
-  <h2 id="pt-choose">Questions to ask before you decide</h2>
-  <p>Use the demo class to answer these for yourself:</p>
+  <h2 id="pt-fees">How much does a home tutor cost in Patna?</h2>
+  <p>
+    Across NXTutors, most home-tuition sessions fall between <strong>₹800 and ₹2,500 an hour</strong>; Classes 11–12,
+    IB/IGCSE and JEE/NEET sit toward the upper end; specialists for IB HL or JEE Advanced can charge more. Each tutor
+    sets their own fee, and in practice it moves with:
+  </p>
+  <ul>
+    <li><strong>The class.</strong> Primary and middle-school lessons usually cost less than senior-school ones.</li>
+    <li><strong>The goal.</strong> Entrance-level Physics or Maths is priced above school-level help in the same subject.</li>
+    <li><strong>The distance.</strong> A tutor coming from the far end of the city may factor in the ride; one from your own zone often does not.</li>
+    <li><strong>The pattern.</strong> Fewer, longer lessons often give better value than many short ones on a fixed monthly budget.</li>
+  </ul>
+  <p>
+    Spend where the difficulty is: one strong tutor for the weakest subject usually does more than cheaper help in four.
+    Every shortlisted fee is shown before the demo, and nobody above your budget is suggested. The
+    <a href="{{ url('/pricing-guide') }}">pricing guide</a> breaks fees down by class and subject, and our post on
+    <a href="{{ url('/blog/home-tuition-fees-patna') }}">home tuition fees in Patna</a> looks at the local picture.
+  </p>
+  </section>
+
+  <section class="nx-guide__sec">
+  <h2 id="pt-choose">How do you judge a tutor at the demo class?</h2>
+  <p>A profile earns a place on the shortlist; the demo shows whether the tutor should stay. Watch for these:</p>
   <ol>
-    <li><strong>Did the tutor ask what the student is doing in school and in coaching</strong> before starting? A good tutor wants to know the whole timetable.</li>
-    <li><strong>Did they check the student's understanding with a question or two</strong>, instead of teaching from the beginning of the chapter?</li>
-    <li><strong>Is the language right?</strong> Could the student follow comfortably, whether the lesson was in Hindi, English or a mix?</li>
-    <li><strong>Do they know the board?</strong> Ask how the BSEB objective section or the CBSE case-based questions should be approached this year.</li>
-    <li><strong>Did the student solve problems themselves</strong> during the lesson, or only watch?</li>
-    <li><strong>Did they propose a plan</strong> for the next four weeks, with a way to measure progress?</li>
+    <li><strong>The whole timetable.</strong> Did the tutor ask about school, coaching and tests before planning anything?</li>
+    <li><strong>A quick check first.</strong> Did they test what the student already knows instead of starting the chapter from page one?</li>
+    <li><strong>The right language.</strong> Could the student follow easily, whether the lesson ran in Hindi, English or both?</li>
+    <li><strong>Board knowledge.</strong> Could they say how your board's paper for this year is set, without guessing?</li>
+    <li><strong>Work by the student.</strong> Did your child solve problems during the hour, or only watch?</li>
+    <li><strong>A realistic slot.</strong> Can they come at that time every week, from where they live?</li>
   </ol>
   <p>
-    If the demo leaves you unsure, say so. We will arrange another tutor from the shortlist at no cost.
+    For a township or apartment building, give the guard the tutor's name before the demo; for a house, send the lane,
+    a landmark and a map pin. Hold lessons in a shared room with an adult at home. Our
+    <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist for parents</a> and our guide to
+    <a href="{{ url('/blog/how-to-choose-boardstream') }}">choosing a board and stream</a> go further.
   </p>
   </section>
 
   <section class="nx-guide__sec">
-  <h2 id="pt-safety">Safety and verification</h2>
-  <p>
-    Every tutor on NXTutors is ID-verified and goes through a profile check before being suggested to a family, and we
-    continue to track reviews and reliability once lessons begin. For home tuition, we suggest a few simple habits: hold
-    sessions when a parent or another adult is at home, use a common room rather than a bedroom, and keep the tutor's
-    details and schedule where the family can see them. If anything about a tutor's behaviour worries you, contact us
-    and we will act promptly.
-  </p>
-  </section>
-
-  <section class="nx-guide__sec">
-  <h2 id="pt-calendar">Planning around the Patna school year</h2>
-  <p>
-    Most CBSE schools in Patna begin their new session in April, and BSEB classes follow a broadly similar year. A typical
-    year for a student in a board or entrance class looks like this:
-  </p>
+  <h2 id="pt-calendar">When should tuition begin in the school year?</h2>
+  <p>CBSE's session opens in April, and a Patna board or entrance year tends to fall into five parts:</p>
   <ul>
-    <li><strong>April to June:</strong> the best time to start with a tutor. The syllabus is fresh, and the summer holidays give time to repair gaps, although the afternoons are very hot, so morning or evening slots work better.</li>
-    <li><strong>July to September:</strong> the monsoon months. Keep a regular rhythm and agree with the tutor in advance on switching to online when heavy rain makes travel difficult.</li>
-    <li><strong>October to November:</strong> Durga Puja, Diwali and Chhath fall in these months, and many families travel or host relatives. Plan lighter weeks around the festivals and make up the time before or after.</li>
-    <li><strong>December to January:</strong> finish the syllabus and move to full papers. BSEB students especially need to be revising by now, since their exams come early.</li>
-    <li><strong>February to May:</strong> BSEB matric and intermediate exams (usually February), CBSE board exams from February, JEE Main in two sessions early in the year, and NEET UG usually in May.</li>
+    <li><strong>April to June:</strong> new books, and the summer break to repair old gaps; morning or evening slots avoid the worst afternoon heat.</li>
+    <li><strong>July to September:</strong> steady weekly lessons through the monsoon, with online as the agreed back-up on the wettest days.</li>
+    <li><strong>October to November:</strong> Durga Puja, Diwali and Chhath; plan lighter weeks and make up the hours either side.</li>
+    <li><strong>December to February:</strong> finish the syllabus, move to full papers and pre-boards, and check the board's own notices for exam dates.</li>
+    <li><strong>March to May:</strong> board papers finish, the second JEE Main session and JEE Advanced follow, and NEET UG comes round.</li>
   </ul>
   <p>
-    Starting in April gives a tutor a full year to work with. Starting later still helps, with more focus on practice.
+    Confirm every date from official notices. An April start gives a full year; a later start still helps, with more
+    weight on papers and technique.
   </p>
   </section>
 
   <section class="nx-guide__sec">
-  <h2 id="pt-start">Getting started</h2>
+  <h2 id="pt-start">How do you get started in Patna?</h2>
   <p>
-    Tell us the student's class, board, medium and subjects, your locality in Patna, and the times that suit you around
-    school and coaching. We will suggest two or three tutors, you choose one for a free demo, and you decide after that.
-    You can browse <a href="{{ url('/tutors') }}">all tutors</a> or book a
-    <a href="{{ url('/demo-class') }}">free demo class</a> now.
+    Send the class, board, subjects, your locality with a landmark, and the hours that work around school and coaching.
+    We suggest two or three tutors; you choose one for a free demo and decide after it. Choose your locality from the
+    list on this page, browse <a href="{{ url('/tutors') }}">all tutors</a> or book a
+    <a href="{{ url('/demo-class') }}">free demo class</a>. If no home tutor is near enough yet, an online tutor from
+    elsewhere in India can begin straight away.
+  </p>
+  <p>
+    Planning for one side of the city? Our local guides cover
+    <a href="{{ url('/blog/north-and-west-patna-tuition-guide') }}">north and west Patna</a>, from Digha and Boring
+    Road to Danapur, and <a href="{{ url('/blog/south-and-old-patna-tuition-guide') }}">south and old Patna</a>, from
+    Kankarbagh and Phulwari to Patna City.
   </p>
   <p class="pt-note">
-    Looking outside Patna? We also arrange tutors in <a href="{{ url('/city/ranchi') }}">Ranchi</a>,
-    <a href="{{ url('/city/tata') }}">Jamshedpur</a> and <a href="{{ url('/city/kolkata') }}">Kolkata</a>, and in
+    Looking beyond Patna? See home tutors in <a href="{{ url('/city/ranchi') }}">Ranchi</a>,
+    <a href="{{ url('/city/kolkata') }}">Kolkata</a> and <a href="{{ url('/city/lucknow') }}">Lucknow</a>, or
     <a href="{{ url('/city') }}">cities across India</a>.
+  </p>
+  <p class="pt-note">
+    Teaching in Patna? See <a href="{{ url('/tuition-jobs/patna') }}">home tuition jobs in Patna</a> and the
+    localities where families are asking for tutors.
   </p>
   </section>
 
   </div>
 </article>
-
