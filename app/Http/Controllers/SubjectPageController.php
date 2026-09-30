@@ -137,7 +137,7 @@ class SubjectPageController extends Controller
             'Science' => '/science|neet|biology|chemistry|physics/',
             'Physics' => '/physics/',
             'Chemistry' => '/chemistry/',
-        ][$page['subject'] ?? ''] ?? null;
+        ][$page['subject'] ?? ''] ?? ($page['guide_pattern'] ?? null);
 
         if (! $pattern) {
             return collect();

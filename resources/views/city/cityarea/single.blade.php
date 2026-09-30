@@ -176,6 +176,8 @@
   @endif
 </section>
 
+    @includeWhen(!empty($areaDemand), 'city.cityarea.partials.area-demand')
+
     @includeWhen(!empty($zoneGuide), 'city.cityarea.partials.zone-guide')
 
 

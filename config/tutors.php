@@ -26,5 +26,9 @@ return [
     ],
 
     // Shown on sample cards and in the search results bar.
+    // demo_leads ids left out of the anonymised request summaries on area
+    // pages, for parents who asked (App\Support\AreaDemand, privacy policy).
+    'demand_exclude_ids' => [],
+
     'match_promise' => 'We match you with a verified tutor in 10 minutes',
 ];

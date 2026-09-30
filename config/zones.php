@@ -26,7 +26,7 @@ return [
             'names' => ['mg road', 'cyber city', 'cyber hub', 'udyog vihar', 'nathupur', 'sikanderpur', 'dlf qe'],
         ],
         'Central Gurugram' => [
-            'sectors' => [30, 31, 32, 38, 39, 40, 41, 44, 45, 46],
+            'sectors' => [30, 31, 32, 33, 38, 39, 40, 41, 44, 45, 46],
             'names' => ['huda city centre', 'south city 1','sushant lok 2', 'sushant lok ii', 'sushant lok 3', 'kanhai', 'jharsa'],
         ],
         'Golf Course Extension Road' => [

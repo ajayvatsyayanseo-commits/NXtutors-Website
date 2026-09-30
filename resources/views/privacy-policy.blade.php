@@ -27,6 +27,12 @@
 
   @include('partials.legal-doc', ['page' => $page])
 
+  {{-- Added 30 Sep 2026 with the area-page request summaries (App\Support\AreaDemand). --}}
+  <section class="legal-note" id="anonymised-requests">
+    <h2>Anonymised request summaries</h2>
+    <p>To help families see what others nearby look for, our area pages may show short summaries of recent tutor requests: the month, the class, the board and the subject only (for example, "Oct 2026 · Class 10 · CBSE · Maths"). We never show a name, phone number, email address, school, housing society or exact date, and we show these summaries only where there are enough requests that no family can be identified. To ask us to leave your request out, write to support@nxtutors.com.</p>
+  </section>
+
 </main>
 
 @include('include.footer')

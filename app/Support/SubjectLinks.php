@@ -36,7 +36,7 @@ class SubjectLinks
     public static function forCity(?string $citySlug): array
     {
         $local = collect(self::live())
-            ->filter(fn ($p) => $citySlug && ($p['city_slug'] ?? null) === $citySlug && empty($p['class']))
+            ->filter(fn ($p) => $citySlug && ($p['city_slug'] ?? null) === $citySlug)
             ->map(fn ($p, $k) => ['url' => url('/' . $k), 'label' => $p['h1'], 'subject' => $p['subject']]);
 
         $covered = $local->pluck('subject')->all();

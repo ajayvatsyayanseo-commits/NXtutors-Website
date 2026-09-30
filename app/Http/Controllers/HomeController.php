@@ -1186,12 +1186,12 @@ public function cityAreaShow($citySlug, $areaSlug)
 
     // The zone block: how home tuition works in this part of the city, its
     // guide, and other areas in the same zone (config/zone_guides.php).
-    $zoneName  = \App\Support\Zones::of($city->city_name, $areaName);
+    $zoneName  = \App\Support\CityHub::zoneOfArea($city->slug, $city->city_name, $area);
     $zoneGuide = $zoneName ? config('zone_guides.' . \App\Support\Zones::cityKey($city->city_name) . '.' . $zoneName) : null;
     $zoneAreas = collect();
     if ($zoneGuide) {
         $zoneAreas = \App\Support\CityHub::areaList($city->slug)
-            ->filter(fn ($a) => $a->slug !== $area->slug && \App\Support\Zones::of($city->city_name, \App\Support\CityHub::cleanAreaName($a->name, $a->slug)) === $zoneName)
+            ->filter(fn ($a) => $a->slug !== $area->slug && \App\Support\CityHub::zoneOfArea($city->slug, $city->city_name, $a) === $zoneName)
             ->sortBy(fn ($a) => $a->name, SORT_NATURAL | SORT_FLAG_CASE)->values();
         // The twelve either side of this area, so each page links a different
         // set of neighbours instead of every page the same first twelve.
@@ -1201,11 +1201,14 @@ public function cityAreaShow($citySlug, $areaSlug)
         $zoneGuide['live'] = ! empty($zoneGuide['guide']) && Blog::where('status', 't')->where('slug', $zoneGuide['guide'])->exists();
     }
 
+    // Anonymised recent requests near this area (App\Support\AreaDemand).
+    $areaDemand = \App\Support\AreaDemand::recentFor($city->city_name, $areaName, $zoneName);
+
              $metatitle = $city->meta_title;
             $metakey = '';
             $metadesc = $city->meta_desc;
 
-    return view('city.cityarea.single', compact('city', 'area','relatedAreas','tutors','tutorScope','metatitle','metakey','metadesc','areaPages','areaGuides','areaState','areaSeo','zoneName','zoneGuide','zoneAreas'));
+    return view('city.cityarea.single', compact('city', 'area','relatedAreas','tutors','tutorScope','metatitle','metakey','metadesc','areaPages','areaGuides','areaState','areaSeo','zoneName','zoneGuide','zoneAreas','areaDemand'));
 }
    public function contactpage()
     {

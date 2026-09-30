@@ -210,7 +210,7 @@ class CityHub
         $typed = trim(preg_replace('/\s+/u', ' ', strip_tags((string) ($area->meta_desc ?? ''))));
         $desc = (mb_strlen($typed) >= 70 && mb_strlen($typed) <= 170 && ! str_contains($typed, 'NxtTutors') && stripos($typed, 'verified') === false)
             ? $typed
-            : 'Home tutors in ' . $name . ', ' . $cityName . ' for CBSE, ICSE, IB and IGCSE, Classes 6–12, and JEE/NEET. Compare tutors near you and book a free demo class.';
+            : 'Home tutors in ' . $name . ', ' . $cityName . ' for CBSE, ICSE, IB and IGCSE, Classes 1–12, JEE and NEET. Most fees ₹800–2,500/hr; free demo class.';
 
         return [
             'name'  => $name,
@@ -221,6 +221,21 @@ class CityHub
     }
 
     /** Active areas of a city (name, slug, pincode), cached. */
+    /**
+     * The zone of an area page: from its name ("Sector 57", "DLF Phase 4"),
+     * else from its known sector (config/area_sectors.php) for pages named
+     * after a housing society.
+     */
+    public static function zoneOfArea(string $citySlug, string $cityName, object $area): ?string
+    {
+        $zone = Zones::of($cityName, self::cleanAreaName($area->name ?? '', $area->slug ?? ''));
+        if ($zone === null && ($sector = config('area_sectors.' . $citySlug . '.' . trim((string) ($area->slug ?? ''))))) {
+            $zone = Zones::of($cityName, preg_replace('/\bsectors\b/i', 'Sector', is_array($sector) ? ($sector['sector'] ?? '') : (string) $sector));
+        }
+
+        return $zone;
+    }
+
     public static function areaList(string $citySlug): Collection
     {
         return collect(Cache::remember("cityhub.areas.v2.$citySlug", 3600, fn () => DB::table('city_area_list_managment as a')

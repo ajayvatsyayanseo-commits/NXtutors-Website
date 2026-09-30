@@ -22,6 +22,12 @@ class BlogGurgaonClusterTest extends TestCase
         'old-gurgaon-palam-vihar-tuition-guide',
     ];
 
+    private const ROUND2 = [
+        'moving-to-gurgaon-school-and-tutoring-guide', 'switching-cbse-to-ib-or-igcse-gurgaon', 'cambridge-vs-edexcel-igcse-gurgaon',
+        'class-11-stream-choice-gurgaon', 'study-abroad-from-gurgaon-sat-ap-ib-timeline', 'olympiad-preparation-gurgaon-imo-nso-rmo',
+        'study-routine-long-commute-gurgaon',
+    ];
+
     private function migration(): object
     {
         return require database_path('migrations/seo/2026_09_29_120000_publish_gurgaon_guide_cluster.php');
@@ -29,7 +35,7 @@ class BlogGurgaonClusterTest extends TestCase
 
     public function test_every_post_has_its_files_and_follows_the_content_rules(): void
     {
-        foreach (array_merge(self::NEW, ['-ib-math-aaai-slhl', '-ib-physics-slhl-iaee']) as $slug) {
+        foreach (array_merge(self::NEW, self::ROUND2, ['-ib-math-aaai-slhl', '-ib-physics-slhl-iaee']) as $slug) {
             $html = (string) @file_get_contents(database_path("seo-content/blog/$slug.html"));
             $meta = json_decode((string) @file_get_contents(database_path("seo-content/blog/$slug.json")), true) ?: [];
 
@@ -47,7 +53,7 @@ class BlogGurgaonClusterTest extends TestCase
             $this->assertDoesNotMatchRegularExpression('/\b\d[\d,]*\+?\s+verified tutors\b/i', $text, $slug);
             $this->assertDoesNotMatchRegularExpression('/<(h1|script|img|style)\b/i', $html, $slug);
         }
-        foreach (self::NEW as $slug) {
+        foreach (array_merge(self::NEW, self::ROUND2) as $slug) {
             $this->assertFileExists(public_path("storage/blog/$slug.jpg"));
         }
     }
@@ -79,5 +85,16 @@ class BlogGurgaonClusterTest extends TestCase
 
         $guides = \App\Support\CityHub::guides([], 6, ['gurugram', 'gurgaon']);
         $this->assertContains($guides->first()->slug, self::NEW);
+    }
+
+    public function test_round_two_publishes_once_and_rolls_back(): void
+    {
+        $this->createLegacySchema();
+        $m = require database_path('migrations/seo/2026_09_30_120000_publish_gurgaon_guides_round2.php');
+        $m->up();
+        $m->up();
+        $this->assertSame(count(self::ROUND2), DB::table('blog_managment')->count());
+        $m->down();
+        $this->assertSame(0, DB::table('blog_managment')->count());
     }
 }

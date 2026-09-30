@@ -864,3 +864,12 @@ body.page .nxzone__areas{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;
 body.page .nxzone__areas a{display:inline-block;padding:6px 12px;border-radius:999px;font-size:14px;color:var(--nxt-link);border:1px solid var(--nxt-link-line);text-decoration:none}
 body.page .nxzone__areas a:hover{background:rgba(108,176,255,.1)}
 body.page .nxzone__more a{color:var(--nxt-link);text-decoration:underline;text-decoration-color:var(--nxt-link-line);text-underline-offset:3px}
+
+/* ---------- area pages: anonymised recent requests (city/cityarea/partials/area-demand) ---------- */
+body.page .nxdemand__list{list-style:none;margin:0 0 6px;padding:0;display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+body.page .nxdemand__list li{display:flex;gap:12px;align-items:baseline;padding:10px 14px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1)}
+body.page .nxdemand__month{flex:0 0 auto;font-size:12px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;color:#B7C0D1}
+body.page .nxdemand__what{font-weight:600;color:#EEF2F9}
+body.page .legal-note{max-width:860px;margin:0 auto 40px;padding:0 12px}
+body.page .legal-note h2{font-size:20px;margin:0 0 8px}
+body.page .legal-note p{line-height:1.7;color:#C7D2E0}
