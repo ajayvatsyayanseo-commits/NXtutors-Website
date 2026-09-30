@@ -1,0 +1,819 @@
+{
+  "areas": {
+    "nit-faridabad": {
+      "name": "NIT Faridabad",
+      "zone": "NIT & Old Faridabad",
+      "type": "mixed",
+      "about": "<p>NIT, short for New Industrial Township, grew out of the resettlement of families displaced by Partition, and it remains one of the oldest and busiest parts of Faridabad. Homes are mostly independent houses and builder floors on older lanes, spread across numbered areas such as NIT 1, NIT 2, NIT 3 and NIT 5, with long-established local markets and workshops alongside. The township runs along Mathura Road (the old NH-2), with Bata Chowk and Neelam Chowk Ajronda stations on the Violet Line at its edges, and Sectors 15 and 16A close by.</p><p>For a tutor, NIT is a doorstep visit: there are no society gates to clear, but lanes are narrow and parking near the markets is tight, so a two-wheeler, or the metro plus an auto for the last leg, works better than a car. Market roads fill up in the evening, so an early after-school slot is easier to keep regular. A home tutor for school subjects can be paired with online classes for specialist boards or exam preparation. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Faridabad",
+        "https://www.99acres.com/nit-faridabad-overview-piffid",
+        "https://www.squareyards.com/new-industrial-township-2-in-faridabad-overview-2974",
+        "https://en.wikipedia.org/wiki/Bata_Chowk_metro_station"
+      ]
+    },
+    "old-faridabad": {
+      "name": "Old Faridabad",
+      "zone": "NIT & Old Faridabad",
+      "type": "mixed",
+      "about": "<p>Old Faridabad is the historic core of a city founded in 1607, and it is still a dense, lived-in area of independent houses, builder floors and plots, mixed with traditional markets and roadside shops. It sits beside Sectors 16, 17, 18 and 19, with Faridabad railway station in Sector 20A and the Old Faridabad metro station on the Violet Line in Sector 16A, right on Mathura Road. The bypass road and Badkhal Road also pass close by.</p><p>Tutors reach most homes directly at the doorstep, since there are few gated complexes, but lanes are narrow and the markets draw crowds in the evening. Coming by metro and walking or taking an auto for the last stretch is usually simpler than driving in. Early after-school sessions and weekend mornings tend to be easier to hold steady than late-evening ones on busy market days. For senior-class subjects that need a specialist, online sessions can sit alongside a local home tutor. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Faridabad",
+        "https://en.wikipedia.org/wiki/Old_Faridabad_metro_station",
+        "https://en.wikipedia.org/wiki/Faridabad_railway_station",
+        "https://www.99acres.com/old-faridabad-overview-piffid"
+      ]
+    },
+    "jawahar-colony": {
+      "name": "Jawahar Colony",
+      "zone": "NIT & Old Faridabad",
+      "type": "residential",
+      "about": "<p>Jawahar Colony is an older, closely built residential pocket on the NIT side of Faridabad, made up mainly of independent houses and small flats rather than apartment towers. It lies near Mathura Road (the old NH-2) and the main railway line, with NIT 5 and Sectors 15, 16 and 16A as its neighbours, and the Violet Line stations along Mathura Road are a short auto ride away.</p><p>Homes open straight onto the lane, so a tutor walks up to the door without any gate registration, although parking is limited and a two-wheeler is handier than a car. Crossing the railway line and Mathura Road can be slow in the evening rush, so a slot soon after school, or on weekend mornings, is easier to keep regular. Students in higher classes who need a specialist for a particular board or subject can add online classes if a local match is not available straight away. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/jawahar-colony-in-faridabad-overview-44011",
+        "https://www.99acres.com/jawahar-colony-faridabad-overview-piffid",
+        "https://en.wikipedia.org/wiki/National_Highway_44_(India)"
+      ]
+    },
+    "dabua-colony": {
+      "name": "Dabua Colony",
+      "zone": "NIT & Old Faridabad",
+      "type": "residential",
+      "about": "<p>Dabua Colony is an established, affordable residential colony within Sector 50, bounded by Dabua Pali Road, Shahid Bhagat Singh Road and 27 Feet Road. Its neighbours include Old Janta Colony, New Janta Colony, Feroz Gandhi Colony and Nawada Koh, and the local sabzi mandi serves as the everyday market. Air Force Road and the connecting roads lead out towards NIT and Mathura Road.</p><p>Most homes are reached directly at the doorstep, so there is no gate registration to arrange, but a tutor should share the block and nearest landmark, as the lanes can be confusing on a first visit. Neelam Chowk Ajronda is among the nearer Violet Line stations, so a tutor coming by metro will usually need an auto for the last leg. Evening traffic builds on the roads towards NIT, so an early after-school slot is easier to keep, and online classes can fill any gap for specialist subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/dabua-colony-sector-50-faridabad-liqlt",
+        "https://en.wikipedia.org/wiki/Neelam_Chowk_Ajronda_metro_station"
+      ]
+    },
+    "sector-7": {
+      "name": "Sector 7",
+      "zone": "Central Sectors (Mathura Road)",
+      "type": "residential",
+      "about": "<p>Towards the southern end of the central belt, Sector 7 is a mid-range residential sector of builder floors, independent houses and some residential plots. Sectors 3, 4, 6, 8 and 9 and Ballabhgarh lie around it. Sant Surdas (Sihi) and Escorts Mujesar are the nearby Violet Line stations, and Sant Surdas Marg and Mathura Road carry most of the traffic in and out.</p><p>Because this is a plotted sector, most homes are visited at the doorstep with no gate formalities, and parking outside a house is usually possible. Tutors living in Sectors 8 and 9 or in Ballabhgarh are close by, while one coming from further up Mathura Road can take the metro and finish by auto. Traffic around the metro stations builds at peak hours, so a slot soon after school is more reliable than a late one. For specialist board subjects or competitive exams, online classes are a practical addition. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/sector-7-in-faridabad-overview-63971",
+        "https://www.nobroker.in/locality-iq/sector-7-faridabad-liqlt",
+        "https://www.99acres.com/sector-7-faridabad-overview-piffid"
+      ]
+    },
+    "sector-8": {
+      "name": "Sector 8",
+      "zone": "Central Sectors (Mathura Road)",
+      "type": "residential",
+      "about": "<p>Sector 8 is one of the older sectors in the southern part of the central belt and has a mainly residential character, with plotted homes, builder floors and independent houses alongside some multi-storey buildings. Its neighbours are Sectors 4, 7, 9 and 10 and the Chawla Colony side of Ballabhgarh, and the Violet Line stations along Mathura Road serve the area.</p><p>On these plotted streets a tutor can usually come straight to the door without any gate formalities. Tutors from Sectors 7, 9 and 10 are close neighbours, which keeps travel simple, while someone coming from further north can take the metro and finish the trip by auto. Keep regular sessions clear of the evening rush on Mathura Road, and consider online classes for specialist boards or competitive-exam subjects where a local match is harder to find. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/sector-8-in-faridabad-overview-175",
+        "https://www.99acres.com/sector-8-faridabad-overview-piffid"
+      ]
+    },
+    "sector-9": {
+      "name": "Sector 9",
+      "zone": "Central Sectors (Mathura Road)",
+      "type": "residential",
+      "about": "<p>A planned HUDA sector in the southern part of the city, Sector 9 is mainly residential, with independent houses, builder floors and low-rise buildings on wide, clean internal roads. It sits beside Sectors 10, 11, 12 and 13, and Escorts Mujesar on the Violet Line is the usual metro stop, with Mathura Road the main route north towards NIT and Delhi.</p><p>Because homes are on plotted streets rather than in towers, a tutor simply comes to the door of the house, and parking is usually manageable. Mathura Road is slow at school and office peak hours, so an afternoon or early-evening slot suits tutors coming from further away better than a late one. Tutors from the neighbouring sectors can often walk or ride over. For specialist boards or senior-class subjects, online classes are a practical option alongside a home tutor. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-9-faridabad-liqlt",
+        "https://www.nobroker.in/locality-iq/sector-12-faridabad-liqlt",
+        "https://en.wikipedia.org/wiki/Faridabad"
+      ]
+    },
+    "sector-10": {
+      "name": "Sector 10",
+      "zone": "Central Sectors (Mathura Road)",
+      "type": "residential",
+      "about": "<p>Much of Sector 10 is a Housing Board Colony, often written as Sector 10 HBC, laid out in lettered blocks and pockets of independent houses, builder floors and housing board flats, with local parks and markets. Sectors 7, 9, 11, 11C and 12 surround it. Bata Chowk and Neelam Chowk Ajronda on the Violet Line, along with Faridabad New Town railway station, are the usual rail links, and Mathura Road is close at hand.</p><p>Tutors should note the block and pocket in the address, because many lanes look alike on a first visit. Homes are reached at the doorstep, so there is no gate registration, and a two-wheeler makes the short hops between sectors easy. Mathura Road is busiest at peak hours, so tutors coming by road from other parts of the city will find an early after-school slot easier to keep. Online classes can cover specialist subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-10-hbc-faridabad-liqlt",
+        "https://www.99acres.com/sector-10-hbc-faridabad-overview-piffid"
+      ]
+    },
+    "sector-11": {
+      "name": "Sector 11",
+      "zone": "Central Sectors (Mathura Road)",
+      "type": "residential",
+      "about": "<p>With several parks and a quiet residential feel, Sector 11 offers independent floors and apartments across a range of budgets. Sectors 7, 8 and 10 and Sanjay Colony lie around it. Escorts Mujesar is the nearest Violet Line station, with Sant Surdas (Sihi) a little further, and Sant Surdas Marg and Mathura Road are the main roads in and out.</p><p>Most homes are on plotted streets, so a tutor comes to the door directly, although apartment buildings may ask for the visitor's name at the entrance. A tutor arriving by metro at Escorts Mujesar needs only a short auto ride for the last leg. Roads near Mathura Road are congested at peak times, so it helps to fix a slot soon after school rather than in the evening rush. For board-specific or exam subjects, online classes can supplement a local tutor. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-11-faridabad-liqlt",
+        "https://www.nobroker.in/locality-iq/sector-10-hbc-faridabad-liqlt"
+      ]
+    },
+    "sector-12": {
+      "name": "Sector 12",
+      "zone": "Central Sectors (Mathura Road)",
+      "type": "mixed",
+      "about": "<p>Sector 12 combines homes with some of Faridabad's main public spaces: the Haryana state sports complex and a large town park are here, along with apartments, builder floors and independent houses. Bata Chowk station on the Violet Line stands on Mathura Road in Sector 12, and Sectors 9, 10, 11, 13 and 14 are its neighbours, linked by Sector 15 Road and Maharishi Parashar Marg.</p><p>For a tutor, the metro to Bata Chowk and a short auto ride covers most addresses. Apartment residents may need to register the tutor at the gate on the first visit, while house owners can simply share the address and a landmark. Roads around the sports complex, shopping centres and Maharishi Parashar Marg get busy in the evening, so an early after-school slot is easier to keep. Online classes can cover specialist boards. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-12-faridabad-liqlt",
+        "https://en.wikipedia.org/wiki/Bata_Chowk_metro_station"
+      ]
+    },
+    "sector-14": {
+      "name": "Sector 14",
+      "zone": "Central Sectors (Mathura Road)",
+      "type": "residential",
+      "about": "<p>Central and mostly residential, Sector 14 is made up of plotted houses, builder floors and some apartment buildings, with its shopping centred on the HUDA market. It borders Sectors 12, 13 and 15 near Mathura Road. Neelam Chowk Ajronda and Bata Chowk are the nearer Violet Line stations, and Lal Bahadur Shastri Marg and Sector 15 Road connect it to the rest of the city.</p><p>Internal roads are wide, so a tutor can usually park near the house and come straight to the door. In the few apartment buildings, share the tutor's name with the gate in advance. The market area and the roads towards Mathura Road are busiest in the evening, so a slot soon after school works well. Tutors from Sectors 12, 15 and 16 are close neighbours, and online classes can be added for specialist subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-14-faridabad-liqlt",
+        "https://www.99acres.com/independent-house-in-sector-14-faridabad-ffid"
+      ]
+    },
+    "sector-15": {
+      "name": "Sector 15",
+      "zone": "Central Sectors (Mathura Road)",
+      "type": "residential",
+      "about": "<p>One of the established central sectors, Sector 15 has independent houses, builder floors and residential plots, a family atmosphere and a busy main market. It lies next to Sectors 14 and 16 and close to Ajronda, with Neelam Chowk Ajronda and Bata Chowk as the nearest Violet Line stations, while Sector 15 Road, Lal Bahadur Shastri Marg and Maharishi Parashar Marg link it to Mathura Road.</p><p>With plotted homes and wide internal roads, tutors can come straight to the door and usually find parking. The main market and the roads towards Neelam Chowk get crowded in the evening, so an after-school slot before the rush is easier to keep. A tutor coming by metro can take an auto from Neelam Chowk Ajronda for the last leg. For specialist boards or senior-class subjects, online classes can run alongside a home tutor. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-15-faridabad-liqlt",
+        "https://www.99acres.com/sector-15-faridabad-overview-piffid",
+        "https://en.wikipedia.org/wiki/Neelam_Chowk_Ajronda_metro_station"
+      ]
+    },
+    "sector-15a": {
+      "name": "Sector 15A",
+      "zone": "Central Sectors (Mathura Road)",
+      "type": "residential",
+      "about": "<p>Sector 15A is a planned residential sector of independent houses and builder floors with broad streets, and it is home to the Neelam Chowk Ajronda metro station on Mathura Road. Sectors 15 and 16A and the NIT area are next door, and Faridabad New Town railway station on the Agra–Delhi line is also nearby.</p><p>Having a Violet Line station inside the sector makes 15A easy for tutors from across the city: they can take the metro and walk or take a short auto ride to the house. Homes are visited at the doorstep, so no gate registration is usually needed. Mathura Road around Neelam Chowk is busy at peak hours, so tutors arriving by road should plan around the evening rush, and an early after-school slot is the easiest to keep. Online classes are a good fit for specialist boards. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Neelam_Chowk_Ajronda_metro_station",
+        "https://www.squareyards.com/sector-15a-in-faridabad-overview-183",
+        "https://www.99acres.com/sector-15-a-faridabad-overview-piffid"
+      ]
+    },
+    "sector-16": {
+      "name": "Sector 16",
+      "zone": "Central Sectors (Mathura Road)",
+      "type": "residential",
+      "about": "<p>Sector 16 is a centrally placed, established sector of spacious independent houses and builder floors rather than high-rise towers, with its own community centre, parks and the busy Sector 16 market. Sectors 16A, 17, 18 and 19 surround it, Old Faridabad is next door, and the Old Faridabad station on the Violet Line is the metro stop most residents use.</p><p>Parking around the Sector 16 market gets tight in the evening, so tutors are better off arriving by two-wheeler, or by metro followed by a short auto ride. Homes are visited at the doorstep, with no gate formalities in most lanes. Because the connecting roads are busy at peak hours, a slot soon after school or on weekend mornings is easier to keep regular. Tutors from Sectors 15, 17 and 18 are close by, and online classes can cover specialist subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-16-faridabad-liqlt",
+        "https://www.squareyards.com/sector-16-in-faridabad-overview-184",
+        "https://en.wikipedia.org/wiki/Old_Faridabad_metro_station"
+      ]
+    },
+    "sector-16a": {
+      "name": "Sector 16A",
+      "zone": "Central Sectors (Mathura Road)",
+      "type": "residential",
+      "about": "<p>Home to the Old Faridabad metro station on Mathura Road, Sector 16A is a compact central sector of mainly independent houses. Sectors 15A, 16 and 20A lie around it, with Jawahar Colony and the NIT 5 side of the old township close by, and Faridabad railway station is in the neighbouring Sector 20A.</p><p>With both the Violet Line and the railway station nearby, this is one of the easier sectors for a tutor to reach without a car: the metro and a short walk or auto ride cover most addresses. Homes are visited at the doorstep. Mathura Road near the station is busy at peak hours, so an after-school slot before the evening rush is the simplest to keep, and weekend mornings work well for longer sessions. Online classes can be added for specialist boards or exam subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Old_Faridabad_metro_station",
+        "https://www.nobroker.in/locality-iq/sector-16a-faridabad-liqlt",
+        "https://www.squareyards.com/jawahar-colony-in-faridabad-overview-44011",
+        "https://en.wikipedia.org/wiki/Faridabad_railway_station"
+      ]
+    },
+    "sector-17": {
+      "name": "Sector 17",
+      "zone": "Central Sectors (Mathura Road)",
+      "type": "residential",
+      "about": "<p>Sector 17 is one of the more upmarket HUDA sectors, with independent houses, villas and builder floors on wide, green roads, plus a few gated societies. Sectors 16 and 18 lie alongside, the Old Faridabad station on the Violet Line serves it, and the Faridabad bypass road and Mathura Road (the old NH-2) provide the main road links.</p><p>Most homes are independent, so tutors come directly to the door and can usually park outside. In the gated societies, the tutor's name should be registered with security before the first visit. A tutor using the metro will need an auto from Old Faridabad for the last leg. The bypass and Mathura Road are busiest at peak hours, so an after-school slot before the evening rush is the easiest to keep. For specialist boards, online classes work well alongside a home tutor. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/sector-17-in-faridabad-overview-186",
+        "https://www.nobroker.in/locality-iq/sector-17-faridabad-liqlt",
+        "https://en.wikipedia.org/wiki/Old_Faridabad_metro_station"
+      ]
+    },
+    "sector-18": {
+      "name": "Sector 18",
+      "zone": "Central Sectors (Mathura Road)",
+      "type": "residential",
+      "about": "<p>An established central sector, Sector 18 has mid-income housing made up of independent houses, standalone buildings and rental floors of varying sizes. Sectors 16 and 17 are its neighbours, Old Faridabad and Badkhal Mor are the nearest Violet Line stations, and Ambedkar Marg and Kheri Road carry most local traffic.</p><p>Homes are reached at the doorstep, so there is no gate registration to arrange, and tutors from Sectors 16 and 17 are a short ride away. A tutor coming by metro can take an auto from Old Faridabad to finish the trip. Roads towards Mathura Road and Kheri Road are busy in the evening, so a session soon after school or on a weekend morning is easier to keep on schedule. Online classes can cover specialist boards or senior-class subjects where a local match takes longer to find. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-18-faridabad-liqlt",
+        "https://en.wikipedia.org/wiki/Old_Faridabad_metro_station"
+      ]
+    },
+    "sector-19": {
+      "name": "Sector 19",
+      "zone": "Central Sectors (Mathura Road)",
+      "type": "residential",
+      "about": "<p>Sitting right next to Badkhal Mor station on the Violet Line, Sector 19 is an established sector made up mostly of builder floors, with steady rental demand from working families. Old Faridabad, Sector 16 and Rajendra Colony are its neighbours, and the Badkhal flyover connects it to Badkhal Mor and the road towards Surajkund.</p><p>The metro station on its doorstep makes Sector 19 easy for tutors from across the city: most can walk from the station or take a very short auto ride. Builder floors mean the tutor comes straight to the door, though it helps to share the floor number in advance. The Badkhal flyover and Mathura Road are busy at peak hours, so tutors arriving by road will find an early after-school slot easier to keep. Online classes can fill in for specialist subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Badkhal_Mor_metro_station",
+        "https://www.nobroker.in/locality-iq/sector-19-faridabad-liqlt",
+        "https://www.squareyards.com/sector-16-in-faridabad-overview-184"
+      ]
+    },
+    "sector-21": {
+      "name": "Sector 21A, 21B and 21D",
+      "zone": "Central Sectors (Mathura Road)",
+      "type": "residential",
+      "about": "<p>The Sector 21 pockets between Old Faridabad and Badkhal, 21A, 21B and 21D, are residential areas of independent houses, builder floors and some multi-storey apartments. 21B is the closest to Old Faridabad railway station and to the Old Faridabad and Badkhal Mor metro stations, while 21A and 21D lie towards Badkhal and the Badkhal flyover, next to Sector 21C.</p><p>In the house-and-floor lanes a tutor comes straight to the door, while apartment buildings may ask for the tutor's name at the gate. Tutors using the metro can finish the trip by auto from Old Faridabad or Badkhal Mor; 21D is further from the stations, so a two-wheeler is handier there. The Badkhal flyover and nearby roads are busy at peak hours, so an early after-school slot is easier to hold steady. Online classes can cover specialist boards. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-21a-faridabad-liqlt",
+        "https://www.nobroker.in/locality-iq/sector-21b-faridabad-liqlt",
+        "https://www.nobroker.in/locality-iq/sector-21d-faridabad-liqlt"
+      ]
+    },
+    "sector-21c": {
+      "name": "Sector 21C",
+      "zone": "Central Sectors (Mathura Road)",
+      "type": "residential",
+      "about": "<p>Stretching along the Surajkund–Badkhal road, Sector 21C is a HUDA-developed residential sector that mixes builder floors and independent homes with some apartment buildings. It borders Sectors 21A, 26 and 27A and the Rajendra Colony side of Old Faridabad, and Badkhal Mor, Sector 28 and Mewla Maharajpur are the nearest Violet Line stations.</p><p>In the plotted parts, a tutor comes straight to the house, while apartment buildings usually want the tutor's name registered at the gate before the first class. A tutor coming by metro will need an auto for the last leg from Badkhal Mor or Sector 28. The Surajkund–Badkhal road is busy at peak hours, so an after-school slot before the evening rush is easier to keep. The sector's residential feel suits regular home classes, and online sessions can cover specialist boards. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-21c-faridabad-liqlt",
+        "https://www.99acres.com/sector-21c-faridabad-overview-piffid"
+      ]
+    },
+    "sector-28": {
+      "name": "Sector 28",
+      "zone": "Sectors 28–31 & 37",
+      "type": "residential",
+      "about": "<p>Sector 28 is an HSVP (formerly HUDA) sector off Mathura Road (the old NH-2), and it has its own station on the Delhi Metro Violet Line, named Sector 28, between Mewla Maharajpur and Badkal Mor. Much of the housing is plotted, and many older houses have been rebuilt as three- and four-bedroom builder floors, with a HUDA market for daily shopping. Sector 29 lies next door, and Sectors 30 and 31 are close by.</p><p>For home tuition, plotted streets are easy: a tutor usually reaches the door without gate registration, though builder floors may have a shared entry and an intercom. Tutors coming from Delhi or Ballabhgarh can take the Violet Line to Sector 28 and walk or take an auto for the last leg, which helps avoid peak-hour traffic on Mathura Road. Evening slots after the office rush are often easiest to keep. For specialist subjects such as IB, IGCSE or advanced maths, online sessions widen the choice. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sector_28_metro_station",
+        "https://www.99acres.com/sector-28-faridabad-overview-piffid",
+        "https://www.squareyards.com/sale/property-for-sale-in-sector-28-faridabad"
+      ]
+    },
+    "sector-29": {
+      "name": "Sector 29",
+      "zone": "Sectors 28–31 & 37",
+      "type": "residential",
+      "about": "<p>Next to Sector 28 and Sector 30, Sector 29 is a settled residential sector with a mix of independent houses, builder floors and some flats in gated societies. Sector 28 station on the Violet Line is the nearest metro stop, Badkal Mor is the next option, and there is a bus stop at the Sector 28/29 chowk. Mawai and the older parts of Faridabad are also close.</p><p>Most homes are on plotted streets, so a tutor can usually come straight to the door; flats in gated societies ask for visitor entry at the gate, so it helps to share the tutor's name with security in advance. The metro to Sector 28 plus a short auto ride works well for tutors travelling from other parts of the city, and it avoids the busiest stretch of Mathura Road at peak hours. Families who want a specialist for board-exam science, IB or IGCSE often combine a local home tutor with online classes. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sos-enclave-sector-29-faridabad-liqlt",
+        "https://en.wikipedia.org/wiki/Sector_28_metro_station"
+      ]
+    },
+    "sector-30": {
+      "name": "Sector 30",
+      "zone": "Sectors 28–31 & 37",
+      "type": "mixed",
+      "about": "<p>Sector 30 is widely known for the Faridabad Police Lines, which includes residential quarters, a parade ground and police offices, so part of the sector is institutional. Around it are residential pockets with flats and builder floors, and nearby colonies include Indraprastha Colony and Dheeraj Nagar. Old Sher Shah Suri Road runs close by, and Sector 28 and Mewla Maharajpur are the nearest Violet Line stations.</p><p>For a tutor, the timing matters more than the address: roads towards Mathura Road get busy around office hours, so late-afternoon or evening slots are usually easier to hold each week. Homes in private blocks are reached at the doorstep, so a clear address and landmark are usually all a tutor needs. Metro plus an auto ride suits tutors coming from other sectors, and online classes help for specialist subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-30-faridabad-liqlt",
+        "https://www.mappls.com/place-police+line+ground-42-police+lines-sector+30-faridabad-haryana-121003-C742DS@zdata=MjguNDQwNTQzKzc3LjMyMTI5NCsxNytDNzQyRFMrK25yed"
+      ]
+    },
+    "sector-31": {
+      "name": "Sector 31",
+      "zone": "Sectors 28–31 & 37",
+      "type": "mixed",
+      "about": "<p>Mewla Maharajpur station on the Violet Line stands within Sector 31, and Sector 28 station is also close, which makes this one of the easier sectors to reach by metro. The sector mixes homes with shops and offices along Mathura Road and Old Sher Shah Suri Road. Housing is a mix of independent houses, builder floors and some apartments, and neighbouring areas include Sector 32, Chander Nagar, Jal Vayu Vihar and Patel Nagar.</p><p>Tutors can take the metro to either station and finish the trip on foot or by auto, which is usually more reliable than driving along Old Sher Shah Suri Road when it is busy in office hours. In plotted streets the tutor comes to the door; in apartment blocks, a gate pass or name at security is common. For senior-school maths, physics or coding, families here often add an online specialist to a home tutor who helps with regular homework. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mewla_Maharajpur_metro_station",
+        "https://www.nobroker.in/locality-iq/sector-31-faridabad-liqlt"
+      ]
+    },
+    "sector-37": {
+      "name": "Sector 37",
+      "zone": "Sectors 28–31 & 37",
+      "type": "residential",
+      "about": "<p>On the Delhi-border edge of Faridabad, Sector 37 is a green, largely residential HSVP sector with independent houses, builder floors and some apartments. Neighbouring areas include Sectors 27D, 34, 35 and 38 and the Sehatpur village area. Sarai is the nearest Violet Line station, with Badarpur Border also close, and Mathura Road gives direct road access to Delhi.</p><p>Because it sits close to the border, the sector draws tutors from both south Delhi and central Faridabad; the metro to Sarai and a short auto ride is the usual route, and it avoids queues at the border crossing on Mathura Road during peak hours. Plotted streets mean doorstep visits, while apartment blocks may register visitors at the gate. For niche boards or subjects, an online tutor can fill the gap alongside a home tutor for regular schoolwork. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-37-faridabad-liqlt",
+        "https://www.99acres.com/sector-37-faridabad-overview-piffid",
+        "https://en.wikipedia.org/wiki/Sarai_metro_station"
+      ]
+    },
+    "sector-43": {
+      "name": "Sector 43",
+      "zone": "Surajkund & Sainik Colony",
+      "type": "mixed",
+      "about": "<p>Sector 43 sits along the Surajkund–Badkhal Road at the foot of the Aravalli hills, with a university campus and several large school campuses alongside housing, which gives it a mixed character. Homes range from builder floors to apartments in group-housing societies. Greenfield Colony and Sectors 42, 44, 45 and 46 lie around it, and Surajkund is a short drive along the same road.</p><p>Metro users usually get off at NHPC Chowk, Mewla Maharajpur or Sector 28 on the Violet Line and take an auto up towards the hills, so a tutor's arrival depends on the last leg rather than the train. Society flats generally need the tutor to be registered at the gate; builder floors are simpler. Traffic on the Surajkund–Badkhal Road builds up at school and college timings, so a slightly later evening slot often works better. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/sector-43-in-faridabad-overview-220",
+        "https://www.nobroker.in/locality-iq/sector-45-faridabad-liqlt"
+      ]
+    },
+    "sector-45": {
+      "name": "Sector 45",
+      "zone": "Surajkund & Sainik Colony",
+      "type": "residential",
+      "about": "<p>Between Sector 43 and Sector 46, Sector 45 is a mainly residential area with a mix of mid-rise apartment blocks, builder floors and some independent houses. Indraprastha Colony, Greenfields and the Mewla Maharajpur village area are nearby, and both Mathura Road and the Surajkund–Badkhal Road are within easy reach. The nearest Violet Line stations are Sector 28, NHPC Chowk and Mewla Maharajpur.</p><p>Tutors coming by metro can reach any of those three stations and take an auto for the last stretch into the sector. In apartment blocks, parents usually need to add the tutor to the visitor list at the gate before the first class; independent houses and floors are simpler. Evening traffic towards Mathura Road can slow arrivals, so agreeing a fixed slot that avoids the office rush helps. For advanced or specialist subjects, online lessons are a practical option. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-45-faridabad-liqlt",
+        "https://www.squareyards.com/sector-45-in-faridabad-overview-222"
+      ]
+    },
+    "sector-46": {
+      "name": "Sector 46",
+      "zone": "Surajkund & Sainik Colony",
+      "type": "residential",
+      "about": "<p>Sector 46 is a quiet, green residential sector near the Aravalli hills, with a mix of apartment complexes, builder floors and plotted houses. It sits beside Sectors 45 and 47, and the Surajkund–Badkhal Road and Mewla Maharajpur Road link it to Mathura Road and to Surajkund. Sector 28 station on the Violet Line is the nearest metro stop, though most residents use an auto to reach it.</p><p>For tutors this means the metro alone does not reach the door: an auto or own vehicle is needed for the last part of the trip, and arrivals are steadier outside peak hours. Plotted streets allow doorstep visits, while apartment complexes typically register visitors at the gate. Many families here start with a local home tutor for daily schoolwork and bring in an online specialist for senior-school maths, science or coding. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-46-faridabad-liqlt",
+        "https://www.99acres.com/sector-46-faridabad-overview-piffid"
+      ]
+    },
+    "sector-48": {
+      "name": "Sector 48",
+      "zone": "Surajkund & Sainik Colony",
+      "type": "residential",
+      "about": "<p>Sector 48 is an older residential area near the Gurugram–Faridabad road, with independent houses and apartments, many of them in long-established blocks. Badkhal Enclave, Nehru Colony, Frontier Colony, Jamai Colony and Sainik Colony in Sector 49 are its neighbours. Old Faridabad and Badkal Mor are the nearest Violet Line stations, and Faridabad railway station is also nearby.</p><p>Because the metro stations are not on the doorstep, tutors usually finish the journey by auto or come by their own vehicle, so an evening slot that avoids the office rush is easier to keep. Most homes are independent houses or floors, which means the tutor can come straight to the door without gate registration. For board-exam preparation or specialist subjects, families can pair a nearby home tutor with online classes. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-48-faridabad-liqlt",
+        "https://www.nobroker.in/locality-iq/sainik-colony-sector-49-faridabad-liqlt"
+      ]
+    },
+    "sainik-colony": {
+      "name": "Sainik Colony",
+      "zone": "Surajkund & Sainik Colony",
+      "type": "residential",
+      "about": "<p>Sainik Colony, in Sector 49, was settled largely by ex-servicemen and their families and remains a well-planned, mostly residential colony of independent houses, builder floors and plots, with a few apartment blocks. Aravali Vihar, IP Extension 2 and Nehru Colony also fall within Sector 49, and Sector 48 and Badkhal Enclave are next door. The Gurugram–Faridabad road and Badkhal Pali Road are the main routes out, and Badkhal Lake and the Aravalli hills are nearby.</p><p>The nearest Violet Line stations, Badkal Mor and Bata Chowk, are some way off, so tutors usually come by auto or their own vehicle rather than relying on the metro. That makes timing important: afternoons and later evenings avoid the rush on the Gurugram–Faridabad road. Most visits are straight to the door of an independent house or floor. For specialist boards or senior-school subjects, online tutors add choice beyond the local area. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sainik-colony-sector-49-faridabad-liqlt",
+        "https://www.nobroker.in/locality-iq/sector-49-faridabad-liqlt",
+        "https://www.99acres.com/independent-house-in-sainik-colony-faridabad-ffid"
+      ]
+    },
+    "charmwood-village": {
+      "name": "Charmwood Village",
+      "zone": "Surajkund & Sainik Colony",
+      "type": "residential",
+      "about": "<p>Charmwood Village is a large residential township off the Surajkund–Badkhal Road, close to Surajkund and the Delhi border, and the name is widely used for the whole locality. Housing here includes apartment blocks, villas and independent houses. Lakkarpur and Sector 39 lie next to it, and the Mehrauli–Badarpur Road links the area towards Delhi, with the Aravalli hills close by.</p><p>The nearest metro stations are on the Violet Line at Badarpur Border and Tughlakabad on the Delhi side, so most tutors arrive by auto, cab or their own vehicle. Apartment blocks and villa enclaves have guarded gates, so it helps to register the tutor with security before the first class. Traffic around Surajkund builds up during events such as the February crafts fair, so parents may want to switch to online lessons on those days. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/charmwood-village-sector-39-faridabad-liqlt",
+        "https://www.nobroker.in/locality-iq/surajkund-faridabad-liqlt",
+        "https://www.squareyards.com/faridabad-residential-property/eros-charmwood-village/488/project"
+      ]
+    },
+    "ballabhgarh": {
+      "name": "Ballabhgarh",
+      "zone": "Ballabhgarh & Southern Sectors",
+      "type": "mixed",
+      "about": "<p>Ballabhgarh is the old market town at the southern end of Faridabad and a tehsil of the district. It grew around the palace built when the town was founded in 1739, still known as Raja Nahar Singh Mahal. Homes here fall into two groups: the older colonies around the main market, with independent houses and small builder floors on narrow plots, and the newer HSVP sectors on the bypass side, with larger plots and wider roads. Mathura Road runs through the town, and the Ballabhgarh railway station sits beside the Raja Nahar Singh metro station, the southern end of the Violet Line.</p><p>A tutor can reach most of the town by metro to Raja Nahar Singh and then an auto or e-rickshaw for the last stretch. Lanes in the old colonies are tight, so a tutor on a two-wheeler is often the easiest option, and plotted sectors allow a doorstep visit without gate formalities. Mathura Road and the market area are busiest at school and office hours, so late-afternoon or weekend slots are usually easier to fix, and online classes suit specialist subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ballabhgarh",
+        "https://en.wikipedia.org/wiki/Raja_Nahar_Singh_metro_station",
+        "https://www.nobroker.in/locality-iq/ballabhgarh-faridabad-liqlt",
+        "https://www.squareyards.com/ballabhgarh-in-faridabad-overview-4703"
+      ]
+    },
+    "adarsh-nagar-ballabhgarh": {
+      "name": "Adarsh Nagar, Ballabhgarh",
+      "zone": "Ballabhgarh & Southern Sectors",
+      "type": "residential",
+      "about": "<p>Adarsh Nagar is one of the established colonies of old-town Ballabhgarh, grouped with neighbours such as Chawla Colony, Sector 1 and Sector 4. Housing is mostly individual homes and low-rise builder floors on smaller plots, built up over many years rather than planned as a single sector. Everyday shopping is close by in the Ballabhgarh main market, and the Ballabhgarh railway station and the Raja Nahar Singh metro station on the Violet Line are the usual rail links for the area.</p><p>A home tutor visiting Adarsh Nagar will normally come by metro or train to Ballabhgarh and finish the trip by auto or e-rickshaw, or ride in on a two-wheeler through the colony lanes. There are no society gates to clear, but parking a car in the inner streets can be awkward, so parents often agree a pickup point. Evenings near the market get crowded, so a fixed weekly slot helps, and online sessions are a good fit for board-exam subjects that need a specialist. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/ballabhgarh-in-faridabad-overview-4703",
+        "https://www.onefivenine.com/india/villages/Faridabad/Ballabgarh/Adarsh-Nagar",
+        "https://en.wikipedia.org/wiki/Raja_Nahar_Singh_metro_station"
+      ]
+    },
+    "sector-2": {
+      "name": "Sector 2",
+      "zone": "Ballabhgarh & Southern Sectors",
+      "type": "residential",
+      "about": "<p>On the Ballabhgarh side of the city, Sector 2 is a settled HSVP sector next to Sectors 1, 3 and 4. Most homes are independent houses and builder floors on plotted land, with some authority flats and a few apartment blocks, and colonies such as Kundan Colony sit alongside it. Local markets, clinics and parks cover daily needs. Tigaon Road and Mohna Road are the main local routes, and the Raja Nahar Singh metro station on the Violet Line is the nearest metro stop for the area.</p><p>Because the sector is largely plotted, a tutor can usually come straight to the door without society registration. Tutors from Ballabhgarh and the neighbouring sectors often travel by two-wheeler; those coming from further up the city can take the Violet Line to Raja Nahar Singh and an auto from there. Connecting roads fill up at peak hours, so parents tend to prefer early-evening or weekend classes, and online lessons cover subjects where a local specialist is hard to find. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-2-faridabad-liqlt",
+        "https://www.squareyards.com/sector-2-in-faridabad-overview-169"
+      ]
+    },
+    "sector-3": {
+      "name": "Sector 3",
+      "zone": "Ballabhgarh & Southern Sectors",
+      "type": "residential",
+      "about": "<p>Sector 3 lies along the Faridabad Bypass Road in the Ballabhgarh area, bordered by Sectors 2, 4 and 7. It is an HSVP sector with a mix of independent houses, builder floors and plotted properties, plus a few apartment societies, and it has its own internal roads, parks and neighbourhood shops. Tigaon Road and the Gurgaon Canal Road serve the sector. For rail and metro, residents use the Ballabhgarh railway station and the Sant Surdas (Sihi) and Raja Nahar Singh stations on the Violet Line.</p><p>For a tutor, most addresses are plotted houses, so the visit is a simple doorstep one with no gate log. Tutors living in Ballabhgarh or nearby sectors can ride over quickly, while those from central Faridabad can come by metro and take an auto for the last leg. Traffic on the bypass and Mathura Road builds up at rush hour, so agreeing a slightly later start time works well, and online classes are handy for higher-level science or maths. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-3-faridabad-liqlt",
+        "https://www.squareyards.com/sector-3-in-faridabad-overview-63963"
+      ]
+    },
+    "sector-4": {
+      "name": "Sector 4",
+      "zone": "Ballabhgarh & Southern Sectors",
+      "type": "residential",
+      "about": "<p>Sector 4 is a developed plotted sector in Ballabhgarh, next to Sector 3 and the old-town area around Chawla Colony. Homes are mainly independent houses on residential plots, with some newer builder floors. The Ballabhgarh railway station on the Delhi–Mumbai line is close at hand, and the Violet Line stations at Sant Surdas (Sihi) and Raja Nahar Singh link the sector to the rest of Faridabad and Delhi. Mohna Road runs nearby.</p><p>Parents here generally get home visits without any gate formalities, since the sector is made up of independent houses. A tutor can arrive by train or metro and cover the last stretch by auto, or come by two-wheeler from the surrounding sectors. Roadworks and school-time traffic can slow things down around Mohna Road and Mathura Road, so leave some buffer when fixing a class time, and consider online lessons for specialist subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/sector-4-in-faridabad-overview-171",
+        "https://www.nobroker.in/locality-iq/sector-4-ballabhgarh-faridabad-liqlt",
+        "https://en.wikipedia.org/wiki/Ballabhgarh_railway_station"
+      ]
+    },
+    "sector-5": {
+      "name": "Sector 5",
+      "zone": "Ballabhgarh & Southern Sectors",
+      "type": "residential",
+      "about": "<p>Sector 5 is a residential HSVP sector in the southern part of the city, near Sector 3 and the Mujesar and Sihi villages. It has a mix of plots, independent houses and builder floors, with some flats, and is described as a quiet area that is still close to shops. Mathura Road and the Faridabad Bypass Road are the main routes, and Faridabad New Town railway station and the Violet Line stations along Mathura Road are the usual public transport links.</p><p>A tutor coming to Sector 5 will usually reach a house door directly, which keeps visits simple. Tutors from Ballabhgarh or the Mujesar side can ride over, and others can take the Violet Line and finish by auto. Mathura Road is heavy at school and office hours, so late-afternoon, evening or weekend slots are easier to keep regular, and online classes can fill gaps for subjects such as advanced maths or computer science. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-5-faridabad-liqlt",
+        "https://www.squareyards.com/sector-5-in-faridabad-overview-63967"
+      ]
+    },
+    "sector-22": {
+      "name": "Sector 22",
+      "zone": "Ballabhgarh & Southern Sectors",
+      "type": "mixed",
+      "about": "<p>Sector 22 combines housing with commerce and sits beside Sector 23 and Jawahar Colony, with industrial areas close by. Homes are mainly independent houses and builder floors in a planned layout, and the busy Sector 22 market serves the neighbourhood. Dr Rajendra Prasad Marg is the main road through the area and connects it to Mathura Road. For rail, Faridabad New Town station is the nearer stop, and the Violet Line can be reached at Escorts Mujesar.</p><p>Most visits are to plotted houses, so a tutor can come to the door without society paperwork. Tutors living in Sector 23, Jawahar Colony or Ballabhgarh can reach by two-wheeler, and those from further away can use the metro and an auto. Market hours and factory shift changes add traffic, so parents often settle on a steady evening or weekend slot, with online lessons for subjects that need a specialist teacher. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-22-faridabad-liqlt",
+        "https://www.squareyards.com/sector-22-in-faridabad-overview-64013"
+      ]
+    },
+    "sector-23": {
+      "name": "Sector 23 & Sanjay Colony",
+      "zone": "Ballabhgarh & Southern Sectors",
+      "type": "mixed",
+      "about": "<p>Sector 23 includes the long-established Sanjay Colony and sits next to Sector 22 and Jawahar Colony, with the Sarurpur industrial area nearby. Housing is largely independent houses and builder floors, many of them two or three storeys on small plots, along with some apartments and plenty of rental homes. Dr Rajendra Prasad Marg and the Sohna Road link the area to Mathura Road, and the Violet Line stations at Sant Surdas (Sihi) and Raja Nahar Singh are the usual metro stops.</p><p>Streets in parts of Sanjay Colony are narrow, so tutors often come by two-wheeler rather than car, and parents may need to share clear landmarks for the house. There are no society gates to clear in most of the area. Tutors from Ballabhgarh or central Faridabad can take the metro and an auto for the last leg. Industrial traffic peaks at shift times, so evening or weekend classes are easier to fix, and online tutors are an option for specialist subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-23-faridabad-liqlt",
+        "https://www.squareyards.com/sector-23-in-faridabad-overview-197",
+        "https://www.nobroker.in/locality-iq/sanjay-colony-sector-23-faridabad-liqlt"
+      ]
+    },
+    "sector-55": {
+      "name": "Sector 55",
+      "zone": "Ballabhgarh & Southern Sectors",
+      "type": "residential",
+      "about": "<p>Along the Ballabhgarh–Sohna Road, Sector 55 is a developing residential sector near Sectors 23, 52 and 56A. Most homes are independent houses and builder floors on HSVP plots, with some low-rise apartments, and the area is seen as an affordable, family-oriented part of south Faridabad. A local HSVP market handles daily shopping. Ballabhgarh railway station and the Raja Nahar Singh metro station on the Violet Line are the main public transport links.</p><p>A tutor visiting a plotted home here can come straight to the door. Tutors from Ballabhgarh and the neighbouring sectors usually ride in, while those from central Faridabad often take the metro to Raja Nahar Singh and then an auto along the Sohna Road. Traffic on this road and around the Ballabhgarh market builds up at peak hours, so a regular late-afternoon or weekend slot tends to work best, and online classes help with specialist subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-55-faridabad-liqlt",
+        "https://www.squareyards.com/sector-55-in-faridabad-overview-64083",
+        "https://www.onefivenine.com/india/villages/Faridabad/Faridabad/Ballabhgarh_1asohna-Road-Sector-55"
+      ]
+    },
+    "sector-56": {
+      "name": "Sector 56",
+      "zone": "Ballabhgarh & Southern Sectors",
+      "type": "residential",
+      "about": "<p>Sector 56 sits on the Ballabhgarh–Sohna Road, beside Sectors 55, 56A and 57. It is mostly plotted, with HSVP plots, independent houses and builder floors, plus a few affordable housing projects. The Faridabad Bypass Road and the Sohna Road give access across the city and towards Gurugram, while the industrial sectors to the south provide nearby jobs. Ballabhgarh railway station and the Raja Nahar Singh metro station on the Violet Line are the usual links.</p><p>For most homes a tutor can come directly to the door; the few group-housing projects may ask for gate registration. Tutors from Ballabhgarh or the next sectors typically come by two-wheeler, and those from further north can use the metro and an auto. The Sohna Road carries heavy traffic at shift times and school hours, so fixing an evening or weekend slot keeps classes regular, and online lessons are useful for specialist subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-56-faridabad-liqlt",
+        "https://www.squareyards.com/sector-56-in-faridabad-overview-233"
+      ]
+    },
+    "sector-57": {
+      "name": "Sector 57",
+      "zone": "Ballabhgarh & Southern Sectors",
+      "type": "mixed",
+      "about": "<p>Sector 57 mixes housing with industry, next to Sector 56 and close to the industrial Sectors 58 and 59. Homes are mainly independent houses and builder floors, with some flats and a steady rental market for people working nearby. The Ballabhgarh–Sohna Road and Samaypur Road are the local routes, with Mathura Road not far away. Ballabhgarh railway station and the Raja Nahar Singh metro station on the Violet Line serve the area.</p><p>Most tutor visits are to plotted houses, so no society registration is needed. Tutors from Ballabhgarh and the nearby sectors can ride over, while others can take the metro to Raja Nahar Singh and an auto. Factory shift changes and rush hour on Mathura Road make some times busy, so parents do well to fix an evening or weekend slot, and online tutors cover specialist subjects that are harder to find locally. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-57-faridabad-liqlt",
+        "https://www.squareyards.com/sector-57-in-faridabad-overview-235"
+      ]
+    },
+    "sector-62": {
+      "name": "Sector 62",
+      "zone": "Ballabhgarh & Southern Sectors",
+      "type": "residential",
+      "about": "<p>Sector 62 is a planned HSVP sector in the Ballabhgarh area, grouped with Sectors 61, 63, 64 and 65. Its layout includes group housing, authority-built flats (including EWS flats), plotted houses and independent homes, along with green belts and space for a community centre and shops. The Ballabhgarh–Mohna Road and Mathura Road connect the sector, and the Violet Line can be taken from Raja Nahar Singh.</p><p>Families in plotted houses can have a tutor come to the door, while those in the flats may need to register the tutor at the gate. Public transport inside the sector is limited, so tutors usually come by two-wheeler, or by metro to Raja Nahar Singh and then an auto. Construction on the Mohna Road can slow traffic, so allow some flexibility in timings, and use online classes for subjects that need a specialist. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/sector-62-in-faridabad-overview-240",
+        "https://www.nobroker.in/locality-iq/sector-62-faridabad-liqlt"
+      ]
+    },
+    "sector-64": {
+      "name": "Sector 64",
+      "zone": "Ballabhgarh & Southern Sectors",
+      "type": "residential",
+      "about": "<p>Among the newer HSVP sectors around Ballabhgarh, Sector 64 sits next to Sectors 63 and 65. It is largely plotted, with HSVP residential plots, independent houses and a growing number of newly built builder floors. The Faridabad Bypass Road and Mohna Road give the main road access, and the Ballabhgarh main market is close for shopping. For rail and metro, residents use the Ballabhgarh railway station and the Raja Nahar Singh station on the Violet Line.</p><p>Since most homes are independent houses or floors, a tutor can usually come straight to the door. Tutors from Ballabhgarh and the adjoining sectors tend to ride over, while those from central Faridabad can use the metro and take an auto from Raja Nahar Singh. The bypass and Mohna Road are busier at school and office times, so an early-evening or weekend class is often easier, and online lessons suit specialist subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-64-faridabad-liqlt",
+        "https://www.99acres.com/huda-plots-sector-64-sector-64-faridabad-npxid-r270561",
+        "https://www.99acres.com/sector-64-faridabad-overview-piffid"
+      ]
+    },
+    "sector-65": {
+      "name": "Sector 65",
+      "zone": "Ballabhgarh & Southern Sectors",
+      "type": "residential",
+      "about": "<p>Sector 65 is mostly residential and forms part of the Ballabhgarh cluster with Sectors 62 and 64, Adarsh Nagar and Sahupura. It offers a wider mix than the older sectors: plots and independent houses sit alongside builder floors and several group-housing societies with basic amenities. Mohna Road is the key local route, and residents reach the Ballabhgarh railway station and the Raja Nahar Singh metro station on the Violet Line for longer trips.</p><p>Visits differ by housing type. In plotted streets a tutor can walk up to the door, while group-housing societies usually ask for the tutor to be registered at the gate. Tutors from Ballabhgarh and nearby sectors often come by two-wheeler, and others by metro plus auto. Internal roads can be rough in places and traffic builds at peak hours, so agree a regular slot with some buffer, and consider online classes for specialist subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-65-faridabad-liqlt",
+        "https://www.squareyards.com/sector-65-in-faridabad-overview-243"
+      ]
+    },
+    "sector-75": {
+      "name": "Sector 75",
+      "zone": "Greater Faridabad (Sectors 75–80)",
+      "type": "residential",
+      "about": "<p>Sector 75 sits at the southern edge of Greater Faridabad, the planned side of the city across the Agra canal, where Sectors 75 to 89 are set aside for housing. Homes here are a mix of multi-storey gated societies and builder floors with two and three bedroom layouts. It adjoins Sectors 76, 79 and 80, and the Faridabad Bypass Road and the DND–Faridabad–Sohna highway (NH-148NA) are the main road links towards the rest of the city.</p><p>For tuition, most visits mean a gated society, so tutors should expect registration at the gate and a call from the parent before entry. The Violet Line does not cross the canal; the nearest station usually quoted is Escorts Mujesar, with an auto or cab for the last leg. Evening classes are easier to keep on time if the tutor avoids the office-hour rush on the canal crossings. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-75-faridabad-liqlt",
+        "https://en.wikipedia.org/wiki/Neharpar",
+        "https://en.wikipedia.org/wiki/Agra_Canal"
+      ]
+    },
+    "sector-76": {
+      "name": "Sector 76",
+      "zone": "Greater Faridabad (Sectors 75–80)",
+      "type": "residential",
+      "about": "<p>Apartments in gated societies, builder floors and some plots make up the housing in Sector 76, one of the residential sectors of Greater Faridabad (Neharpar). Its neighbours include Sectors 75, 77, 79 and 80, with the industrial Sectors 72 to 74 and villages such as Neemka to one side. Tigaon Road and the DND–Faridabad–Sohna highway (NH-148NA) are the main roads in and out.</p><p>Tutors living in the old city reach the sector over the Agra canal, so it pays to plan the route before the first class. Sant Surdas (Sihi) and Escorts Mujesar on the Violet Line are the stations usually given for this area, followed by an auto ride. Families in societies should share gate-entry details in advance, and for specialist subjects many parents here mix a local home tutor with online sessions. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-76-faridabad-liqlt",
+        "https://en.wikipedia.org/wiki/Neharpar"
+      ]
+    },
+    "sector-77": {
+      "name": "Sector 77",
+      "zone": "Greater Faridabad (Sectors 75–80)",
+      "type": "residential",
+      "about": "<p>Housing in Sector 77 ranges from builder floors to large gated townships, with apartments and independent houses in one to four bedroom sizes. The sector lies among Sectors 75, 76 and 78 in Greater Faridabad, with Neemka village and the Tigaon side nearby. Tigaon Road and NH-148NA serve the area, and the Faridabad Bypass Road links it to the older parts of the city across the Agra canal.</p><p>A tutor coming by metro would normally use Escorts Mujesar on the Violet Line and then take an auto across the canal. In townships and societies, a visitor pass or gate registration is common, while builder floors usually allow a doorstep visit. Weekday evening slots work well when timed to avoid peak traffic on the canal bridges, and online classes are a practical option for less common subjects or board-specific coaching. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-77-faridabad-liqlt",
+        "https://en.wikipedia.org/wiki/Neharpar",
+        "https://en.wikipedia.org/wiki/Agra_Canal"
+      ]
+    },
+    "sector-78": {
+      "name": "Sector 78",
+      "zone": "Greater Faridabad (Sectors 75–80)",
+      "type": "residential",
+      "about": "<p>Much of Sector 78 is apartment living, with one, two and three bedroom flats in gated societies. It sits in the middle of the southern Greater Faridabad sectors, bordered by Sectors 75, 76, 77, 79, 80 and 81, with Tigaon Road as a main link. Sector 78 is one of the residential sectors that Greater Faridabad was planned around, on the far side of the Agra canal from the old city.</p><p>Metro users usually head for Bata Chowk or Escorts Mujesar on the Violet Line and finish the trip by auto, as no line runs inside Greater Faridabad. Society gates generally ask visitors to register, so parents should add the tutor to their visitor list. Because many families here live close together in large societies, a tutor who teaches two or three students in the same area can keep travel manageable. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-78-faridabad-liqlt",
+        "https://en.wikipedia.org/wiki/Neharpar",
+        "https://en.wikipedia.org/wiki/Agra_Canal"
+      ]
+    },
+    "sector-79": {
+      "name": "Sector 79",
+      "zone": "Greater Faridabad (Sectors 75–80)",
+      "type": "mixed",
+      "about": "<p>Along with its homes, Sector 79 holds one of Greater Faridabad's busiest spots: a large open-air shopping, office and dining street that draws visitors from across the area. Housing is a mix of apartment societies, independent houses and low-rise buildings. The sector borders Sectors 78 and 80, with Sectors 75 and 76 close by, all part of the residential belt across the Agra canal.</p><p>The commercial street makes the sector easy for a tutor to find, but evenings and weekends can be crowded around it, so arriving a little early helps. Families in societies should arrange gate entry for the tutor, while independent houses usually allow a doorstep visit. The nearest Violet Line stations are on the old-city side of the canal, so most tutors come by two-wheeler, cab, or metro plus auto. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Neharpar",
+        "https://www.nobroker.in/locality-iq/sector-79-faridabad-liqlt",
+        "https://houssed.com/commercial/faridabad/omaxe-group/omaxe-world-street-142775"
+      ]
+    },
+    "sector-80": {
+      "name": "Sector 80",
+      "zone": "Greater Faridabad (Sectors 75–80)",
+      "type": "residential",
+      "about": "<p>Sector 80 is mostly two and three bedroom apartments in gated societies, set on the sector roads of Greater Faridabad. It adjoins Sectors 79 and 81, with Sectors 76, 78 and 84 nearby and Badauli village on one side. The sector is one of the residential sectors on the Neharpar side of the Agra canal, planned with wide sector roads between blocks.</p><p>Because the Violet Line stays on the old-city side of the canal, a tutor without a vehicle will need a metro ride followed by an auto or cab. Inside societies, gate registration is the norm, so a quick call from the parent before each visit saves time. Lying on the border between the southern and northern Neharpar sectors, Sector 80 can draw tutors from both sides, and online classes fill gaps for specialist subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-80-faridabad-liqlt",
+        "https://en.wikipedia.org/wiki/Neharpar"
+      ]
+    },
+    "sector-81": {
+      "name": "Sector 81",
+      "zone": "Greater Faridabad (Sectors 81–89)",
+      "type": "residential",
+      "about": "<p>Gated apartment societies dominate Sector 81, one of the sectors that saw the most housing development in Greater Faridabad. It sits next to Sectors 80, 82, 83 and 86, with villages such as Bathola and Kheri Khurd nearby. Kheri Road and NH-148NA are the key roads, and crossing the Agra canal brings you towards Mathura Road and the older sectors.</p><p>Neelam Chowk Ajronda and Bata Chowk on the Violet Line are the stations commonly given for Sector 81, with an auto for the last stretch. Large societies mean gate registration and sometimes a visitor pass, so parents should share the tutor's details in advance. Evening traffic builds up on the canal crossings, so tutors travelling from the old city do well to leave some margin for the first few visits. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-81-faridabad-liqlt",
+        "https://en.wikipedia.org/wiki/Neharpar",
+        "https://www.99acres.com/articles/neharpar-faridabad-locality-watch-for-delhi-ncr-real-estate.html"
+      ]
+    },
+    "sector-82": {
+      "name": "Sector 82",
+      "zone": "Greater Faridabad (Sectors 81–89)",
+      "type": "residential",
+      "about": "<p>High-rise gated societies, including affordable-housing blocks, make up most homes in Sector 82, with some independent houses as well. The sector lies between Sectors 81, 83 and 84 in Greater Faridabad, near Kheri Khurd and Budena villages. Kheri Road and NH-148NA connect it across the Agra canal to the old city and Mathura Road.</p><p>Tutors coming by metro usually get off at Neelam Chowk Ajronda or Bata Chowk on the Violet Line and take an auto from there. Each society runs its own gate checks, so a visitor entry arranged by the parent avoids delays at the gate. For families in tall towers, online classes are a convenient back-up on busy days, while regular home visits suit younger children and board-exam revision. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-82-faridabad-liqlt",
+        "https://www.squareyards.com/sector-82-in-faridabad-overview-260",
+        "https://en.wikipedia.org/wiki/Neharpar"
+      ]
+    },
+    "sector-83": {
+      "name": "Sector 83",
+      "zone": "Greater Faridabad (Sectors 81–89)",
+      "type": "residential",
+      "about": "<p>Newer apartment complexes and some independent houses give Sector 83 a mostly high-rise feel, and it is often named among the most developed sectors of Neharpar. Neighbours include Sectors 78, 81, 82 and 84. Tigaon Road runs nearby, and the sector roads lead back to the Agra canal crossings towards the old city.</p><p>The Violet Line is on the far side of the canal, with Bata Chowk and Neelam Chowk Ajronda usually given as the nearest stations, so metro plus auto is the usual public-transport route. Society gates expect visitors to register, which parents can make easier by pre-approving the tutor. With many families in the same societies, tutors often group nearby students, and online sessions help with specialist or higher-class subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-83-faridabad-liqlt",
+        "https://en.wikipedia.org/wiki/Neharpar",
+        "https://www.99acres.com/articles/neharpar-faridabad-locality-watch-for-delhi-ncr-real-estate.html"
+      ]
+    },
+    "sector-84": {
+      "name": "Sector 84",
+      "zone": "Greater Faridabad (Sectors 81–89)",
+      "type": "residential",
+      "about": "<p>Blocks of plots and houses sit alongside two and three bedroom apartments in Sector 84, which is organised into lettered blocks with its own block markets. The sector adjoins Sectors 83, 85 and 89 in Greater Faridabad and is reached along Kheri Road. It is one of the residential sectors on the Neharpar side of the Agra canal.</p><p>For houses in the blocks, tutors can usually go straight to the door, while societies will ask for gate registration. Violet Line stations are across the canal on the old-city side, so tutors without a vehicle rely on metro plus auto. Parents may find tutors living within Greater Faridabad itself easier to schedule for evening classes, with online tutors for subjects that are harder to find locally. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-84-faridabad-liqlt",
+        "https://www.onefivenine.com/india/villages/Faridabad/Faridabad/Kheri-Road-Sector-84",
+        "https://en.wikipedia.org/wiki/Neharpar"
+      ]
+    },
+    "sector-85": {
+      "name": "Sector 85",
+      "zone": "Greater Faridabad (Sectors 81–89)",
+      "type": "residential",
+      "about": "<p>Sector 85 is largely builder apartments and affordable-housing societies, with gated complexes offering security and family amenities. Bathola village and Sectors 83, 84, 86, 87 and 88 surround it, all within Greater Faridabad. Sector roads link it to Kheri Road and the Agra canal crossings that lead towards the old city.</p><p>The Violet Line stations usually mentioned for this sector are Old Faridabad and Neelam Chowk Ajronda, both across the canal, so an auto or shared ride covers the last leg. Most visits are to gated societies, where gate registration and a parent's confirmation call are routine. Scheduling classes a little outside the evening rush helps tutors coming from the old city keep to time, and online classes suit specialist subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-85-faridabad-liqlt",
+        "https://en.wikipedia.org/wiki/Neharpar",
+        "https://www.99acres.com/articles/neharpar-faridabad-locality-watch-for-delhi-ncr-real-estate.html"
+      ]
+    },
+    "sector-86": {
+      "name": "Sector 86",
+      "zone": "Greater Faridabad (Sectors 81–89)",
+      "type": "residential",
+      "about": "<p>Close to the Faridabad Bypass Road, Sector 86 combines gated apartment societies with builder floors and some independent houses, from affordable to mid-budget. It sits beside Sectors 81, 85, 87 and 88, facing the older sectors across the Agra canal, and Kheri Road and Mathura Road are within reach over the canal crossings.</p><p>Neelam Chowk Ajronda and Old Faridabad on the Violet Line are the stations most often given for Sector 86, followed by an auto ride. Builder floors usually allow a doorstep visit, while societies expect the tutor to register at the gate. Because it is one of the nearer Neharpar sectors to the old city, tutors from both sides of the canal can serve it, with online classes for specialist subjects. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-86-faridabad-liqlt",
+        "https://www.squareyards.com/sector-86-in-faridabad-overview-264",
+        "https://en.wikipedia.org/wiki/Neharpar"
+      ]
+    },
+    "sector-87": {
+      "name": "Sector 87",
+      "zone": "Greater Faridabad (Sectors 81–89)",
+      "type": "residential",
+      "about": "<p>Residential plots, builder floors, independent houses and newer apartment projects are all found in Sector 87, a developing Neharpar sector. It borders Sectors 86 and 88 and faces older neighbourhoods such as Bharat Colony and Sectors 16 to 18 across the Agra canal. Kheri Road and the Faridabad Bypass Road are its main road links.</p><p>Being close to the canal crossing on Kheri Road, it is one of the easier Greater Faridabad sectors to reach from the old city. Tutors using the Violet Line get off on the Mathura Road side and continue by auto. Plotted homes usually mean a doorstep visit, while apartment projects will ask for gate entry, so parents should confirm the arrangement before the first demo class. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/sector-87-in-faridabad-overview-265",
+        "https://en.wikipedia.org/wiki/Neharpar",
+        "https://www.nobroker.in/pg-near-kheri-pul-bridge-old-faridabad-faridabad"
+      ]
+    },
+    "sector-88": {
+      "name": "Sector 88",
+      "zone": "Greater Faridabad (Sectors 81–89)",
+      "type": "mixed",
+      "about": "<p>Sector 88 is home to a large multi-speciality hospital that opened in August 2022, alongside apartment societies, builder floors and plotted developments. It borders Sectors 85, 86 and 89, with villages such as Tikawali close by. Kheri Road is the main link back across the Agra canal towards the old city.</p><p>There is no metro station inside Greater Faridabad; the Violet Line stations usually given for Sector 88 include Bata Chowk and Badkhal Mor, followed by an auto or cab. Traffic around the hospital can be heavy at times, so tutors should plan their route. Society gates will ask for registration, while plotted homes are usually a doorstep visit. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-88-faridabad-liqlt",
+        "https://en.wikipedia.org/wiki/Amrita_Hospital,_Faridabad",
+        "https://www.squareyards.com/sector-88-in-faridabad-overview-266",
+        "https://en.wikipedia.org/wiki/Neharpar"
+      ]
+    },
+    "sector-89": {
+      "name": "Sector 89",
+      "zone": "Greater Faridabad (Sectors 81–89)",
+      "type": "residential",
+      "about": "<p>At the northern end of the residential belt in Greater Faridabad, Sector 89 has relatively new housing societies with modern amenities, along with some independent houses. It adjoins Sectors 84, 85, 86 and 88, with Tikawali village nearby. Kheri Road, its own sector road and NH-148NA are the main links towards the Agra canal and the rest of the city.</p><p>Like the rest of Neharpar, it has no metro station of its own, so tutors who use the Violet Line need an auto or cab after crossing the canal. Most visits are to gated societies, which means gate registration and sometimes a visitor pass. Families here often combine a home tutor from a neighbouring sector with online classes for specialist subjects and exam preparation. Home tutors from nearby sectors and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sector-89-faridabad-liqlt",
+        "https://en.wikipedia.org/wiki/Neharpar"
+      ]
+    }
+  },
+  "zone_facts": {
+    "NIT & Old Faridabad": [
+      {
+        "fact": "Faridabad was founded in 1607 by Sheikh Farid, treasurer to the Mughal emperor Jahangir, to protect the Grand Trunk Road between Delhi and Agra.",
+        "source": "https://en.wikipedia.org/wiki/Faridabad"
+      },
+      {
+        "fact": "After Independence, over 50,000 refugees displaced by Partition were resettled in Faridabad under the leadership of Kamaladevi Chattopadhyay, laying the base of the New Industrial Township (NIT).",
+        "source": "https://en.wikipedia.org/wiki/Faridabad"
+      },
+      {
+        "fact": "In 1949 about 30,000 refugees were lodged in camps near the old Faridabad town; the Indian Co-operative Union, with Kamaladevi Chattopadhyay as its first president, mobilised them to build the township, which grew into a working industrial town within three years.",
+        "source": "https://www.theheritagelab.in/faridabad-township-partition-refugees/"
+      },
+      {
+        "fact": "Old Faridabad metro station on the Violet Line, in Sector 16A on Delhi–Mathura Road, opened on 6 September 2015 and serves Old Faridabad and Sectors 16, 17 and 18.",
+        "source": "https://en.wikipedia.org/wiki/Old_Faridabad_metro_station"
+      },
+      {
+        "fact": "Bata Chowk metro station stands on Mathura Road in Sector 12, New Industrial Town, and opened on 6 September 2015.",
+        "source": "https://en.wikipedia.org/wiki/Bata_Chowk_metro_station"
+      },
+      {
+        "fact": "Faridabad railway station (code FDB) is in Sector 20A, Old Faridabad, on the Agra–Delhi chord in the Delhi division of Northern Railway; Faridabad New Town is the next station.",
+        "source": "https://en.wikipedia.org/wiki/Faridabad_railway_station"
+      }
+    ],
+    "Central Sectors (Mathura Road)": [
+      {
+        "fact": "The Violet Line section from Badarpur Border to Escorts Mujesar, with nine stations including Old Faridabad, Neelam Chowk Ajronda, Bata Chowk and Badkhal Mor, opened on 6 September 2015.",
+        "source": "https://en.wikipedia.org/wiki/Violet_Line_(Delhi_Metro)"
+      },
+      {
+        "fact": "The Violet Line extension from Escorts Mujesar to Raja Nahar Singh (Ballabhgarh), adding Sant Surdas (Sihi) and Raja Nahar Singh stations, opened on 19 November 2018.",
+        "source": "https://en.wikipedia.org/wiki/Violet_Line_(Delhi_Metro)"
+      },
+      {
+        "fact": "Neelam Chowk Ajronda metro station is on Mathura Road in Sector 15A, between Old Faridabad and Bata Chowk stations.",
+        "source": "https://en.wikipedia.org/wiki/Neelam_Chowk_Ajronda_metro_station"
+      },
+      {
+        "fact": "Badkhal Mor metro station is in Sector 19, between Sector 28 and Old Faridabad stations, and opened on 6 September 2015.",
+        "source": "https://en.wikipedia.org/wiki/Badkhal_Mor_metro_station"
+      },
+      {
+        "fact": "Mathura Road through Faridabad and Palwal is now part of NH-44, which took over the Delhi–Agra section of the former NH-2.",
+        "source": "https://en.wikipedia.org/wiki/National_Highway_44_(India)"
+      },
+      {
+        "fact": "Faridabad expanded along Mathura Road with planned sectors developed by the Haryana Urban Development Authority (HUDA, now HSVP).",
+        "source": "https://en.wikipedia.org/wiki/Faridabad"
+      }
+    ],
+    "Sectors 28–31 & 37": [
+      {
+        "fact": "The Violet Line's Faridabad extension, from Badarpur Border to Escorts Mujesar, opened on 6 September 2015, including Sarai, NHPC Chowk, Mewla Maharajpur, Sector 28, Badkhal Mor and Old Faridabad stations.",
+        "source": "https://en.wikipedia.org/wiki/Violet_Line_(Delhi_Metro)"
+      },
+      {
+        "fact": "Sarai metro station is on Mathura Road (NH-19).",
+        "source": "https://en.wikipedia.org/wiki/Violet_Line_(Delhi_Metro)"
+      },
+      {
+        "fact": "NHPC Chowk station is named after NHPC Limited, whose headquarters stands next to it near Mathura Road.",
+        "source": "https://en.wikipedia.org/wiki/NHPC_Chowk_metro_station"
+      },
+      {
+        "fact": "Mewla Maharajpur metro station is in Sector 31, Faridabad; the chhatri and old well at Mewla were notified as state-protected monuments in June 2018.",
+        "source": "https://en.wikipedia.org/wiki/Mewla_Maharajpur_metro_station"
+      },
+      {
+        "fact": "Sector 28 station is an elevated Violet Line station between Mewla Maharajpur and Badkhal Mor.",
+        "source": "https://en.wikipedia.org/wiki/Sector_28_metro_station"
+      }
+    ],
+    "Surajkund & Sainik Colony": [
+      {
+        "fact": "Surajkund is a 10th-century reservoir in the Aravalli range in Faridabad district; the name means 'Lake of the Sun'.",
+        "source": "https://en.wikipedia.org/wiki/Surajkund"
+      },
+      {
+        "fact": "The Surajkund International Crafts Mela is held every February.",
+        "source": "https://en.wikipedia.org/wiki/Surajkund"
+      },
+      {
+        "fact": "The Gurugram–Faridabad road passes through the Aravalli area around Surajkund.",
+        "source": "https://en.wikipedia.org/wiki/Surajkund"
+      },
+      {
+        "fact": "Anangpur Dam, an 8th-century Tomar-era water-harvesting structure, stands near Anangpur village upstream of Surajkund.",
+        "source": "https://en.wikipedia.org/wiki/Anangpur_Dam"
+      },
+      {
+        "fact": "The Surajkund–Badkhal Road links Sector 43 with both Surajkund and Badkhal.",
+        "source": "https://www.squareyards.com/sector-43-in-faridabad-overview-220"
+      }
+    ],
+    "Ballabhgarh & Southern Sectors": [
+      {
+        "fact": "The Violet Line extension from Escorts Mujesar to Raja Nahar Singh (Ballabhgarh) was inaugurated on 19 November 2018, adding two elevated stations, Sant Surdas (Sihi) and Raja Nahar Singh.",
+        "source": "https://www.businesstoday.in/latest/economy-politics/story/pm-modi-inaugurates-new-section-of-delhi-metro-to-increase-connectivity-to-ncr-111493-2018-11-19"
+      },
+      {
+        "fact": "Raja Nahar Singh station is the southern terminus of the Delhi Metro Violet Line and connects with Ballabhgarh railway station.",
+        "source": "https://en.wikipedia.org/wiki/Raja_Nahar_Singh_metro_station"
+      },
+      {
+        "fact": "Escorts Mujesar station on Mathura Road opened on 6 September 2015 as part of the Violet Line's Faridabad corridor.",
+        "source": "https://en.wikipedia.org/wiki/Escorts_Mujesar_metro_station"
+      },
+      {
+        "fact": "Ballabhgarh railway station (code BVH) is on the New Delhi–Mumbai main line and the New Delhi–Agra chord, in Northern Railway's Delhi division, and is served by EMU trains.",
+        "source": "https://en.wikipedia.org/wiki/Ballabhgarh_railway_station"
+      },
+      {
+        "fact": "Ballabhgarh was founded in 1739 by Raja Balram Singh, who built the Nahar Singh Mahal palace the same year; it is a tehsil of Faridabad district.",
+        "source": "https://en.wikipedia.org/wiki/Ballabhgarh"
+      },
+      {
+        "fact": "Mathura Road, the Delhi–Agra highway through Faridabad and Ballabhgarh, was numbered NH-2 before the 2010 renumbering; the Delhi–Agra route is now NH-44.",
+        "source": "https://en.wikipedia.org/wiki/National_Highway_19_(India)"
+      }
+    ],
+    "Greater Faridabad (Sectors 75–80)": [
+      {
+        "fact": "The Agra canal is the landmark that separates Greater Faridabad (Neharpar) from the older part of Faridabad.",
+        "source": "https://en.wikipedia.org/wiki/Agra_Canal"
+      },
+      {
+        "fact": "In Greater Faridabad (Neharpar), Sectors 66 to 74 are industrial sectors and Sectors 75 to 89 are residential sectors.",
+        "source": "https://en.wikipedia.org/wiki/Neharpar"
+      },
+      {
+        "fact": "The Violet Line's Faridabad section (Badarpur to Escorts Mujesar) opened on 6 September 2015 and was extended to Raja Nahar Singh (Ballabhgarh) on 19 November 2018; its Faridabad stations are Sarai, NHPC Chowk, Mewla Maharajpur, Sector 28, Badkhal Mor, Old Faridabad, Neelam Chowk Ajronda, Bata Chowk, Escorts Mujesar, Sant Surdas (Sihi) and Raja Nahar Singh.",
+        "source": "https://en.wikipedia.org/wiki/Violet_Line_(Delhi_Metro)"
+      },
+      {
+        "fact": "The DND–Faridabad–Sohna highway (NH-148NA), which links to the Delhi–Mumbai Expressway, runs on the Faridabad Bypass Road from Sector 37 to Kail Gaon near Ballabhgarh and crosses the Agra canal at Sehatpur bridge; a spur towards Jewar Airport starts at Sector 65 and was reported as under construction.",
+        "source": "https://en.wikipedia.org/wiki/DND%E2%80%93KMP_Expressway"
+      },
+      {
+        "fact": "The Faridabad–Noida–Ghaziabad (FNG) Expressway's Faridabad section starts at the Agra canal overbridge linking Badkhal Road with Mata Amritanandamayi Road; the Haryana section was reported as partly complete in June 2025, with remaining work awaiting revised cost approvals, so it should not be described as open.",
+        "source": "https://en.wikipedia.org/wiki/Faridabad%E2%80%93Noida%E2%80%93Ghaziabad_Expressway"
+      },
+      {
+        "fact": "Sector 79 hosts a large open-air shopping, office and dining street, described as the biggest shopping complex of the area.",
+        "source": "https://houssed.com/commercial/faridabad/omaxe-group/omaxe-world-street-142775"
+      }
+    ],
+    "Greater Faridabad (Sectors 81–89)": [
+      {
+        "fact": "The Agra canal is the landmark that separates Greater Faridabad (Neharpar) from the older part of Faridabad.",
+        "source": "https://en.wikipedia.org/wiki/Agra_Canal"
+      },
+      {
+        "fact": "In Greater Faridabad (Neharpar), Sectors 66 to 74 are industrial sectors and Sectors 75 to 89 are residential sectors.",
+        "source": "https://en.wikipedia.org/wiki/Neharpar"
+      },
+      {
+        "fact": "The Violet Line's Faridabad section (Badarpur to Escorts Mujesar) opened on 6 September 2015 and was extended to Raja Nahar Singh (Ballabhgarh) on 19 November 2018; its Faridabad stations are Sarai, NHPC Chowk, Mewla Maharajpur, Sector 28, Badkhal Mor, Old Faridabad, Neelam Chowk Ajronda, Bata Chowk, Escorts Mujesar, Sant Surdas (Sihi) and Raja Nahar Singh.",
+        "source": "https://en.wikipedia.org/wiki/Violet_Line_(Delhi_Metro)"
+      },
+      {
+        "fact": "The DND–Faridabad–Sohna highway (NH-148NA), which links to the Delhi–Mumbai Expressway, runs on the Faridabad Bypass Road from Sector 37 to Kail Gaon near Ballabhgarh and crosses the Agra canal at Sehatpur bridge; a spur towards Jewar Airport starts at Sector 65 and was reported as under construction.",
+        "source": "https://en.wikipedia.org/wiki/DND%E2%80%93KMP_Expressway"
+      },
+      {
+        "fact": "The Faridabad–Noida–Ghaziabad (FNG) Expressway's Faridabad section starts at the Agra canal overbridge linking Badkhal Road with Mata Amritanandamayi Road; the Haryana section was reported as partly complete in June 2025, with remaining work awaiting revised cost approvals, so it should not be described as open.",
+        "source": "https://en.wikipedia.org/wiki/Faridabad%E2%80%93Noida%E2%80%93Ghaziabad_Expressway"
+      },
+      {
+        "fact": "Amrita Hospital, a multi-speciality hospital on Mata Amritanandamayi Marg in Sector 88, was inaugurated in August 2022.",
+        "source": "https://en.wikipedia.org/wiki/Amrita_Hospital,_Faridabad"
+      }
+    ]
+  }
+}

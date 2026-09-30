@@ -141,4 +141,36 @@ return [
             'names' => ['raj nagar', 'rajnagar', 'kavi nagar', 'shastri nagar', 'nehru nagar', 'lohia nagar', 'patel nagar', 'sanjay nagar', 'govindpuram', 'nandgram', 'madhuban bapudham', 'ambedkar road'],
         ],
     ],
+    // Faridabad (30 Sep 2026), from database/seo-content/areas/faridabad-research.json.
+    // Named places first, then HSVP sector numbers ("sector 21c" counts as 21).
+    'Faridabad' => [
+        'NIT & Old Faridabad' => [
+            'sectors' => [],
+            'names' => ['nit', 'new industrial township', 'old faridabad', 'jawahar colony', 'dabua colony'],
+        ],
+        'Central Sectors (Mathura Road)' => [
+            'sectors' => [7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18, 19, 21],
+            'names' => [],
+        ],
+        'Sectors 28–31 & 37' => [
+            'sectors' => [28, 29, 30, 31, 37],
+            'names' => [],
+        ],
+        'Surajkund & Sainik Colony' => [
+            'sectors' => [43, 45, 46, 48, 49],
+            'names' => ['sainik colony', 'charmwood', 'surajkund'],
+        ],
+        'Ballabhgarh & Southern Sectors' => [
+            'sectors' => [2, 3, 4, 5, 22, 23, 55, 56, 57, 62, 64, 65],
+            'names' => ['ballabhgarh', 'ballabgarh', 'sanjay colony'],
+        ],
+        'Greater Faridabad (Sectors 75–80)' => [
+            'sectors' => [75, 76, 77, 78, 79, 80],
+            'names' => [],
+        ],
+        'Greater Faridabad (Sectors 81–89)' => [
+            'sectors' => [81, 82, 83, 84, 85, 86, 87, 88, 89],
+            'names' => ['neharpar', 'greater faridabad'],
+        ],
+    ],
 ];

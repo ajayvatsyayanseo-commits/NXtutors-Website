@@ -42,6 +42,11 @@ class BlogGurgaonClusterTest extends TestCase
         'raj-nagar-and-old-ghaziabad-tuition-guide',
     ];
 
+    private const FARIDABAD = [
+        'home-tuition-fees-faridabad', 'nit-and-central-faridabad-tuition-guide', 'greater-faridabad-neharpar-tuition-guide',
+        'ballabhgarh-and-surajkund-tuition-guide',
+    ];
+
     private function migration(): object
     {
         return require database_path('migrations/seo/2026_09_29_120000_publish_gurgaon_guide_cluster.php');
@@ -49,7 +54,7 @@ class BlogGurgaonClusterTest extends TestCase
 
     public function test_every_post_has_its_files_and_follows_the_content_rules(): void
     {
-        foreach (array_merge(self::NEW, self::ROUND2, self::NOIDA, self::GREATER_NOIDA, self::GHAZIABAD, ['-ib-math-aaai-slhl', '-ib-physics-slhl-iaee']) as $slug) {
+        foreach (array_merge(self::NEW, self::ROUND2, self::NOIDA, self::GREATER_NOIDA, self::GHAZIABAD, self::FARIDABAD, ['-ib-math-aaai-slhl', '-ib-physics-slhl-iaee']) as $slug) {
             $html = (string) @file_get_contents(database_path("seo-content/blog/$slug.html"));
             $meta = json_decode((string) @file_get_contents(database_path("seo-content/blog/$slug.json")), true) ?: [];
 
@@ -67,7 +72,7 @@ class BlogGurgaonClusterTest extends TestCase
             $this->assertDoesNotMatchRegularExpression('/\b\d[\d,]*\+?\s+verified tutors\b/i', $text, $slug);
             $this->assertDoesNotMatchRegularExpression('/<(h1|script|img|style)\b/i', $html, $slug);
         }
-        foreach (array_merge(self::NEW, self::ROUND2, self::NOIDA, self::GREATER_NOIDA, self::GHAZIABAD) as $slug) {
+        foreach (array_merge(self::NEW, self::ROUND2, self::NOIDA, self::GREATER_NOIDA, self::GHAZIABAD, self::FARIDABAD) as $slug) {
             $this->assertFileExists(public_path("storage/blog/$slug.jpg"));
         }
     }

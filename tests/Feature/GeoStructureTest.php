@@ -237,14 +237,14 @@ class GeoStructureTest extends TestCase
             ->assertSee('Tutors needed')
             ->assertSee('"@type":"FAQPage"', false);
         // A city with nothing real behind it: live for recruitment, not indexed, not in the sitemap.
-        $this->get('/tuition-jobs/faridabad')->assertOk()->assertSee('<meta name="robots" content="noindex, follow">', false);
+        $this->get('/tuition-jobs/chandigarh')->assertOk()->assertSee('<meta name="robots" content="noindex, follow">', false);
         $this->get('/tuition-jobs/mumbai')->assertOk()->assertDontSee('noindex', false); // a real tutor lives there
         $this->get('/tuition-jobs')->assertOk()->assertSee('Home tuition and online tutor jobs in India')->assertSee(url('/tuition-jobs/state/haryana'), false);
         $this->get('/tuition-jobs/state/haryana')->assertOk()->assertSee(url('/tuition-jobs/faridabad'), false)->assertDontSee('noindex', false);
         $this->withExceptionHandling()->get('/tuition-jobs/nowhere')->assertNotFound();
         $this->get('/tuition-jobs/state/nowhere')->assertNotFound();
         $map = $this->get('/sitemap-pages.xml');
-        $map->assertSee('/tuition-jobs/gurugram', false)->assertSee('/tuition-jobs/state/haryana', false)->assertDontSee('/tuition-jobs/faridabad', false);
+        $map->assertSee('/tuition-jobs/gurugram', false)->assertSee('/tuition-jobs/state/haryana', false)->assertSee('/tuition-jobs/faridabad', false)->assertDontSee('/tuition-jobs/chandigarh', false);
     }
 
     public function test_about_text_fills_only_empty_new_areas_and_rolls_back(): void
@@ -343,6 +343,30 @@ class GeoStructureTest extends TestCase
 
         $launch->down();
         $this->assertNull(DB::table('city_managment')->where('slug', 'ghaziabad')->value('id'));
+    }
+
+    public function test_faridabad_areas_launch_without_touching_the_city_row(): void
+    {
+        $existing = DB::table('city_managment')->where('slug', 'faridabad')->value('id');
+        $launch = require database_path('migrations/seo/2026_10_01_140000_faridabad_areas.php');
+        $launch->up();
+        $launch->up();
+
+        $this->assertSame('faridabad', Geo::slugFor('Ballabgarh'));
+        $this->assertSame('NIT & Old Faridabad', \App\Support\Zones::of('Faridabad', 'NIT Faridabad'));
+        $this->assertSame('Central Sectors (Mathura Road)', \App\Support\Zones::of('Faridabad', 'Sector 21C'));
+        $this->assertSame('Greater Faridabad (Sectors 81–89)', \App\Support\Zones::of('Faridabad', 'Sector 86'));
+
+        $id = DB::table('city_managment')->where('slug', 'faridabad')->value('id');
+        $this->assertGreaterThanOrEqual(55, DB::table('city_area_list_managment')->where('city_id', $id)->count());
+        $this->get('/city/faridabad/sector-86')->assertOk()->assertSee('Sector 86 at a glance')->assertSee('Sector 86 is in the Greater Faridabad (Sectors 81–89) part of Faridabad', false);
+        $this->get('/tuition-jobs/faridabad')->assertOk()->assertSee('Where in Faridabad tutors are needed');
+
+        $launch->down();
+        $this->assertSame(0, DB::table('city_area_list_managment')->where('city_id', $id)->where('page_schema', 'seo-2026-10-01-faridabad')->count());
+        if ($existing) {
+            $this->assertSame($existing, DB::table('city_managment')->where('slug', 'faridabad')->value('id'), 'the existing city row stays');
+        }
     }
 
     public function test_city_names_map_to_city_pages_whatever_the_spelling(): void

@@ -34,7 +34,7 @@ class Geo
         'greater-noida'      => ['state' => 'Uttar Pradesh',    'metro' => false, 'aka' => null, 'display' => 'Greater Noida', 'aliases' => ['greater noida', 'gr noida', 'greater noida west', 'noida extension', 'noida extn', 'gaur city']],
         'noida'              => ['state' => 'Uttar Pradesh',    'metro' => false, 'aka' => null,        'aliases' => ['noida', 'gautam budh', 'gautam buddh', 'gautam budh nagar', 'gautam buddh nagar', 'gautam buddha nagar', 'noida sector']],
         'gurugram'           => ['state' => 'Haryana',          'metro' => true,  'aka' => 'Gurgaon',   'aliases' => ['gurgaon', 'gurugram', 'dlf qe', 'dlf-qe', 'wazirabad', 'sikanderpur', 'nathupur', 'chakkarpur', 'jharsa', 'kanhai', 'badshahpur', 'sohna road', 'golf course road']],
-        'faridabad'          => ['state' => 'Haryana',          'metro' => false, 'aka' => null,        'aliases' => []],
+        'faridabad'          => ['state' => 'Haryana',          'metro' => false, 'aka' => null,        'aliases' => ['faridabad', 'fbd', 'ballabhgarh', 'ballabgarh', 'greater faridabad', 'neharpar', 'nit faridabad']],
         'mumbai'             => ['state' => 'Maharashtra',      'metro' => true,  'aka' => 'Bombay',    'aliases' => ['bombay', 'navi mumbai', 'thane', 'colaba', 'tardeo', 'boriwali west', 'borivali west', 'borivali', 'thakur village', 'andheri', 'powai', 'bandra']],
         'pune'               => ['state' => 'Maharashtra',      'metro' => true,  'aka' => null,        'aliases' => []],
         'nagpur'             => ['state' => 'Maharashtra',      'metro' => false, 'aka' => null,        'aliases' => []],
