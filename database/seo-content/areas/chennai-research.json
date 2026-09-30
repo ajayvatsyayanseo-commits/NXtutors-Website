@@ -1,0 +1,746 @@
+{
+  "areas": {
+    "adyar": {
+      "name": "Adyar",
+      "zone": "Adyar, Besant Nagar & Mylapore",
+      "type": "residential",
+      "about": "<p>Adyar lies on the southern bank of the Adyar River in south Chennai, with Besant Nagar, Thiruvanmiyur, Taramani and Kotturpuram around it and Raja Annamalaipuram across the river. It is made up of named residential nagars, among them Gandhi Nagar, Kasturba Nagar, Indira Nagar, Shastri Nagar and Venkatarathnam Nagar, where independent houses on leafy streets sit beside low-rise apartment blocks. It has been part of the city since 1948 and remains one of its most sought-after addresses.</p><p>Lattice Bridge Road runs north to south from the Adyar signal towards Thiruvanmiyur, and a main east–west road crosses it at that junction. The MRTS has stations at Kasturba Nagar, Indira Nagar and Thiruvanmiyur, and Metro Line 3 (Purple Line) is under construction with stations planned at Adyar Junction and Adyar Depot. Most tutor visits are a doorstep call at a house or a quick sign-in at a small apartment gate; tutors coming by MRTS usually finish the trip by auto. Evening traffic builds at the Adyar signal, so families often fix an early or late slot. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Adyar,_Chennai",
+        "https://en.wikipedia.org/wiki/Chennai_Mass_Rapid_Transit_System",
+        "https://en.wikipedia.org/wiki/Line_3_(Chennai_Metro)"
+      ]
+    },
+    "besant-nagar": {
+      "name": "Besant Nagar",
+      "zone": "Adyar, Besant Nagar & Mylapore",
+      "type": "residential",
+      "about": "<p>Besant Nagar is a coastal residential neighbourhood in south Chennai, developed by the Tamil Nadu Housing Board from the early 1970s into the early 1980s as a planned layout of residential plots, apartments and parks. Its streets now mix independent houses on those plots, newer apartment buildings and some government quarters, with cafes and shops clustered near the beachfront. Adyar and Thiruvanmiyur are its neighbours, and the Bay of Bengal forms its eastern edge.</p><p>There is no rail station inside the locality; the nearest MRTS stations are in neighbouring Adyar and Thiruvanmiyur, and the busy Besant Nagar bus terminus runs a large number of city routes. A tutor arriving by train will normally take an auto for the last leg. Because the planned layout keeps most homes on regular numbered streets, finding a house is simple, and parking a two-wheeler outside is usually easy. Weekend evenings near the beach get crowded, so weekday or morning slots suit tutor visits better. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Besant_Nagar",
+        "https://en.wikipedia.org/wiki/Adyar,_Chennai",
+        "https://en.wikipedia.org/wiki/Chennai_Mass_Rapid_Transit_System"
+      ]
+    },
+    "thiruvanmiyur": {
+      "name": "Thiruvanmiyur",
+      "zone": "Adyar, Besant Nagar & Mylapore",
+      "type": "residential",
+      "about": "<p>Thiruvanmiyur is a largely residential neighbourhood in south Chennai, with Taramani to the north and Perungudi and Kottivakkam to the south. Its old core grew around an ancient Shiva temple mentioned in Sangam literature, and around it are streets of independent houses and apartment blocks, plus a beach with a walkers' promenade. The East Coast Road begins here, and the OMR and Lattice Bridge Road also pass through, which makes it a hinge between Adyar and the IT corridor.</p><p>Thiruvanmiyur station on the MRTS connects the area north to Mylapore and Chennai Beach and south to Velachery and St Thomas Mount, and a large bus terminus serves city and long-distance routes. Metro Line 3 is under construction with a Thiruvanmiyur station planned. Tutors from Adyar, Besant Nagar, Velachery or the OMR can reach the area easily, though the junctions where the ECR and OMR start get heavy at office hours, so late-afternoon sessions work better than the early-evening rush. Apartment blocks usually ask visitors to sign in at the gate. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Thiruvanmiyur",
+        "https://en.wikipedia.org/wiki/Chennai_Mass_Rapid_Transit_System",
+        "https://en.wikipedia.org/wiki/East_Coast_Road",
+        "https://en.wikipedia.org/wiki/Line_3_(Chennai_Metro)"
+      ]
+    },
+    "mylapore": {
+      "name": "Mylapore",
+      "zone": "Adyar, Besant Nagar & Mylapore",
+      "type": "residential",
+      "about": "<p>Mylapore is one of Chennai's oldest neighbourhoods, with records of settlement going back to the first century BCE. It is bordered by Triplicane, Royapettah, Alwarpet and Mandaveli, with the coast to the east. Life centres on the old temple, its large tank and the market streets around them, where older houses on narrow lanes stand beside apartment buildings on tree-lined avenues. The temple's annual Panguni festival draws visitors from across the country.</p><p>The MRTS runs along the eastern side with stations at Light House, Thirumayilai and Mandaveli, linking Mylapore with Chennai Beach and with Velachery further south. Thirumayilai is also planned as an interchange on the under-construction Metro Line 3 and Line 4. For tutor visits, the older lanes near the tank are tight for cars, so tutors often come by two-wheeler or auto and walk the last stretch; apartment buildings may ask for a name at the gate. Festival days bring crowds around the temple, so families plan sessions around them. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mylapore",
+        "https://en.wikipedia.org/wiki/Chennai_Mass_Rapid_Transit_System",
+        "https://en.wikipedia.org/wiki/Line_3_(Chennai_Metro)",
+        "https://en.wikipedia.org/wiki/Yellow_Line_(Chennai_Metro)"
+      ]
+    },
+    "alwarpet": {
+      "name": "Alwarpet",
+      "zone": "Adyar, Besant Nagar & Mylapore",
+      "type": "mixed",
+      "about": "<p>Alwarpet is a central Chennai neighbourhood north of the Adyar River, lying between Teynampet, Mylapore, Abhiramapuram and Raja Annamalaipuram, with Nandanam and Mandaveli close by. It grew from late eighteenth-century garden estates into a mature urban area of residential streets and apartment buildings, while offices, clinics and cultural venues line the main roads. It forms part of Zone IX of the Greater Chennai Corporation.</p><p>The nearest working metro is Teynampet station on the Blue Line, open since 2018, and the MRTS stations in Mylapore are also close. Metro Line 4 (Yellow Line) is under construction with an underground Alwarpet station, along with nearby stations at Bharathidasan Road and Boat Club. Many homes are flats in small and mid-sized buildings, so a tutor usually gives a name to the watchman and parks on the street. Main roads slow down in the evening office rush, so tutors travelling from Nungambakkam or T Nagar often prefer an earlier slot. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Alwarpet",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Chennai_Metro)",
+        "https://en.wikipedia.org/wiki/Yellow_Line_(Chennai_Metro)"
+      ]
+    },
+    "t-nagar": {
+      "name": "T Nagar",
+      "zone": "T Nagar, Nungambakkam & Kodambakkam",
+      "type": "mixed",
+      "about": "<p>T Nagar was laid out between 1923 and 1925 under the Mambalam town planning scheme, after the Long Tank on the city's western edge was drained. Its streets radiate from a central park, and though it began as a residential suburb, shops and commercial buildings have outnumbered houses since the 1950s. It is now one of India's biggest shopping districts, known for textiles and jewellery along Pondy Bazaar and the streets near it. Saidapet, West Mambalam and Kodambakkam border it.</p><p>Away from the bazaar streets, residential pockets hold older independent houses and a growing number of apartment buildings. Mambalam suburban station sits at the western edge, reached through a subway from West Mambalam, and the T Nagar bus terminus handles many city routes. Metro Line 4 is under construction with a Panagal Park station. Shopping crowds make the commercial streets slow at weekends and in festival seasons, so tutors usually aim for residential streets at quieter times and park away from the main bazaars. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/T._Nagar",
+        "https://en.wikipedia.org/wiki/West_Mambalam",
+        "https://en.wikipedia.org/wiki/Yellow_Line_(Chennai_Metro)"
+      ]
+    },
+    "nungambakkam": {
+      "name": "Nungambakkam",
+      "zone": "T Nagar, Nungambakkam & Kodambakkam",
+      "type": "mixed",
+      "about": "<p>Nungambakkam is an upscale central Chennai neighbourhood whose history goes back to the Chola period; it came under the East India Company through a Mughal grant in 1708. Its neighbours include Chetput, Egmore, Aminjikarai, Choolaimedu, Kodambakkam, T Nagar, Thousand Lights and Teynampet. Once a spread of garden estates, it is now a mix of offices, shops and restaurants along Nungambakkam High Road, with residential streets of apartments, builder-floor buildings and some independent houses behind them.</p><p>Nungambakkam station on the suburban line is among the city's busiest, linking the area with Egmore, Mambalam, Guindy and Tambaram, and Thousand Lights station on the Metro Blue Line is in the neighbouring locality. A tutor coming by train or metro usually covers the last leg by auto. Apartment buildings here often have a watchman register and limited visitor parking, so a two-wheeler or cab drop is simpler than a car. The High Road and its junctions are heavy in the office rush, so late-afternoon or weekend slots tend to work well. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Nungambakkam",
+        "https://en.wikipedia.org/wiki/South_Line,_Chennai_Suburban",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Chennai_Metro)",
+        "https://www.99acres.com/residential-apartments-in-nungambakkam-chennai-central-ffid"
+      ]
+    },
+    "kodambakkam": {
+      "name": "Kodambakkam",
+      "zone": "T Nagar, Nungambakkam & Kodambakkam",
+      "type": "mixed",
+      "about": "<p>Kodambakkam is a central Chennai neighbourhood known as the home of the Tamil film industry, whose nickname comes from the area's name. It is bounded by Nungambakkam, West Mambalam, T Nagar, Vadapalani, Choolaimedu, KK Nagar and Ashok Nagar. Film studios and business premises sit alongside residential streets, where older bungalows are gradually giving way to multi-storey apartment buildings. The area got one of the city's first flyovers in 1967, linking it with Vadapalani, Ashok Nagar and KK Nagar.</p><p>Kodambakkam station on the suburban line runs trains towards Egmore and Tambaram, and Green Line metro stations at Vadapalani and Ashok Nagar serve the neighbouring localities to the west. Metro Line 4 is under construction with Kodambakkam and Kodambakkam Powerhouse stations. For tutors, independent houses usually mean a doorstep visit, while apartment buildings expect a name at the gate. The flyover and main roads towards Vadapalani get congested in the evening, so tutors coming from T Nagar or Nungambakkam often pick earlier sessions. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kodambakkam",
+        "https://en.wikipedia.org/wiki/Green_Line_(Chennai_Metro)",
+        "https://en.wikipedia.org/wiki/Yellow_Line_(Chennai_Metro)",
+        "https://www.squareyards.com/kodambakkam-in-chennai-overview-4155"
+      ]
+    },
+    "west-mambalam": {
+      "name": "West Mambalam",
+      "zone": "T Nagar, Nungambakkam & Kodambakkam",
+      "type": "residential",
+      "about": "<p>West Mambalam is a dense residential and market neighbourhood between Kodambakkam to the north and Saidapet to the south, with T Nagar and Nandanam on its eastern side and Ashok Nagar to the west. It grew after Mambalam station opened in 1911 on the railway line towards Kanchipuram, and its streets are packed with independent houses, small apartment buildings, temples more than a century old and neighbourhood shops.</p><p>Mambalam station is one of the busiest suburban stations in Chennai, and a subway under the tracks links West Mambalam with T Nagar. The nearest metro is Ashok Nagar station on the Green Line. Because many streets are narrow, parking a car is hard, and most tutors arrive by two-wheeler, on foot from the station or by auto. Houses usually mean a doorstep visit, and small apartment buildings rarely have more than a watchman. The market streets and the station area are crowded in the morning and evening rush, so mid-afternoon or late-evening slots can be easier. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/West_Mambalam",
+        "https://en.wikipedia.org/wiki/T._Nagar",
+        "https://en.wikipedia.org/wiki/Green_Line_(Chennai_Metro)"
+      ]
+    },
+    "saidapet": {
+      "name": "Saidapet",
+      "zone": "T Nagar, Nungambakkam & Kodambakkam",
+      "type": "mixed",
+      "about": "<p>Saidapet is a historic neighbourhood in south-west Chennai on the Adyar River, and it served as the headquarters of the old Chingleput district from 1859 to 1968. It is bounded by Nandanam, Raja Annamalaipuram and Guindy, with West Mambalam, T Nagar and Ekkaduthangal close by. The housing mix is wide: older working-class streets and weaving and dyeing workshops near the river, independent houses and flats, and a few newer gated complexes.</p><p>Rail links are good. Saidapet station is on the suburban line, while Saidapet and Little Mount stations on the Metro Blue Line serve the western and southern parts. The main arterial road towards Guindy and the city centre runs through, and the GST Road starts close by. Tutors from T Nagar, Guindy or Nandanam can reach most homes by metro or train with a short auto ride, while gated complexes ask visitors to register at the gate. The arterial road and the river bridge are busy at office hours, so sessions just after school hours often suit both sides. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Saidapet",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Chennai_Metro)",
+        "https://en.wikipedia.org/wiki/South_Line,_Chennai_Suburban"
+      ]
+    },
+    "guindy": {
+      "name": "Guindy",
+      "zone": "Velachery, Guindy & Tambaram",
+      "type": "mixed",
+      "about": "<p>Guindy is a major transport node in south Chennai. At its Kathipara junction, the main road from the city centre, the Mount–Poonamallee Road, the Inner Ring Road, 100 Feet Road and the GST Road all meet. A large share of the land is taken by an industrial estate for small and medium firms, a national park and several institutional campuses, so homes are concentrated in residential pockets between them. Saidapet, Kotturpuram, Adyar, Velachery, Alandur and Ekkaduthangal are its neighbours.</p><p>Guindy station on the suburban line and Guindy metro station on the Blue Line serve the area, and Little Mount metro station is nearby. That makes Guindy easy for tutors from almost anywhere on the Blue Line or the suburban line, with an auto for the last leg. Whether the home is in an apartment block or an independent house, it helps to share a landmark and gate details before the first class. Kathipara and the roads feeding it are heavy at office hours, so tutors coming by road plan around the rush. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Guindy",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Chennai_Metro)",
+        "https://en.wikipedia.org/wiki/South_Line,_Chennai_Suburban"
+      ]
+    },
+    "velachery": {
+      "name": "Velachery",
+      "zone": "Velachery, Guindy & Tambaram",
+      "type": "mixed",
+      "about": "<p>Velachery is a large residential and commercial neighbourhood in south Chennai with roots in Chola-period inscriptions. Guindy lies to the north, Taramani to the east, Perungudi to the south-east, the Pallikaranai marsh to the south, and Madipakkam and Adambakkam to the west. It grew quickly from the late twentieth century, and today apartment complexes sit alongside independent houses, with IT offices and a large mall adding commercial weight.</p><p>Velachery Main Road, the 100 Feet bypass and Taramani Link Road are the main routes, and Vijayanagar junction is one of the busiest points in the city. Velachery station has been on the MRTS since 2007, and since March 2026 the line continues to Puzhuthivakkam and St Thomas Mount, where it meets the metro. Tutors from Guindy, Adyar or Madipakkam can reach most homes by train or bus with an auto for the last leg. Apartment complexes usually register visitors at the gate. Traffic around Vijayanagar is heavy in the office rush, so sessions are easier just before or after it. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Velachery",
+        "https://en.wikipedia.org/wiki/Chennai_Mass_Rapid_Transit_System",
+        "https://en.wikipedia.org/wiki/Velachery_railway_station"
+      ]
+    },
+    "madipakkam": {
+      "name": "Madipakkam",
+      "zone": "Velachery, Guindy & Tambaram",
+      "type": "residential",
+      "about": "<p>Madipakkam is a residential locality in south Chennai, lying between Velachery, Nanganallur, Adambakkam and Pallikaranai, with Medavakkam further south. Its landmark is a large lake, and the housing is mostly low-rise apartment buildings and independent houses on plotted streets, with small neighbourhood markets serving each part. It is now part of the Greater Chennai Corporation.</p><p>There is no metro here yet. Puzhuthivakkam station, opened on the MRTS extension in March 2026, and Velachery station are the nearest rail points, and Metro Line 5 is under construction with a station named Madipakkam. Tutors from Velachery, Nanganallur or Pallikaranai can reach most streets easily by two-wheeler, while a tutor using rail needs an auto or bus for the last leg. Apartment buildings are small enough that visitors usually just tell the watchman, and houses mean a doorstep visit. Roads towards Velachery are slow at peak hours, so plan sessions around the office rush. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Madipakkam,_Chennai",
+        "https://www.nobroker.in/locality-iq/madipakkam-chennai-liqlt",
+        "https://en.wikipedia.org/wiki/Chennai_Mass_Rapid_Transit_System",
+        "https://en.wikipedia.org/wiki/Line_5_(Chennai_Metro)"
+      ]
+    },
+    "nanganallur": {
+      "name": "Nanganallur",
+      "zone": "Velachery, Guindy & Tambaram",
+      "type": "residential",
+      "about": "<p>Nanganallur is a residential neighbourhood in south Chennai near the airport, bordered by Tirusulam, Puzhuthivakkam, Pallavaram and Madipakkam. It is known as a temple town for its many Hindu temples, and it has grown steadily since the mid-1980s as apartments, shops and restaurants filled in the older layouts. Housing today is a mix of multi-storey flats by local builders, independent houses and builder floors. It became part of the Greater Chennai Corporation in 2011 and falls in the Alandur zone.</p><p>Nanganallur Road metro station on the Blue Line is nearby, and Pazhavanthangal and Meenambakkam stations on the suburban line also serve the area. The Inner Ring Road links it to Velachery, and the GST Road and 200 Feet Radial Road are close. A tutor arriving by metro or train will usually take an auto or walk to the home. Independent houses mean a doorstep visit, while flats have a watchman. Streets around the main temples get busy on festival days and weekend evenings, so weekday sessions are usually smoother. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Nanganallur",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Chennai_Metro)",
+        "https://www.99acres.com/property-in-nanganallur-chennai-south-ffid"
+      ]
+    },
+    "pallikaranai": {
+      "name": "Pallikaranai",
+      "zone": "Velachery, Guindy & Tambaram",
+      "type": "residential",
+      "about": "<p>Pallikaranai is a residential area in south Chennai known for the large freshwater marsh beside it, a major part of which has been a reserve forest since 2007. It is surrounded by Madipakkam, Velachery, Perungudi, Kovilambakkam, Thoraipakkam, Nanmangalam, Medavakkam and Karapakkam. Once a village, it has become a popular housing area and joined the Chennai Corporation in 2011. Homes range from apartment complexes and gated communities to independent villas and plotted developments.</p><p>Two main roads shape the area: Velachery Main Road towards Tambaram and Sholinganallur, and the Pallavaram–Thoraipakkam Radial Road, which meet at a grade separator. Tutors who use the MRTS usually get off at Velachery and take an auto, but most come by two-wheeler, bus or cab from Velachery, Medavakkam or the OMR. Gated communities register visitors at the gate, and some ask a resident to confirm, so families should share details in advance. The two main roads are busy in the office rush, so late-afternoon sessions are often easier. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Pallikaranai",
+        "https://www.ghar.tv/chennai/pallikaranai/",
+        "https://en.wikipedia.org/wiki/Chennai_Mass_Rapid_Transit_System"
+      ]
+    },
+    "medavakkam": {
+      "name": "Medavakkam",
+      "zone": "Velachery, Guindy & Tambaram",
+      "type": "residential",
+      "about": "<p>Medavakkam is a fast-growing southern suburb of Chennai, next to Sholinganallur, Madipakkam, Selaiyur, Keelkattalai, Velachery and Tambaram, and a hub for newer areas such as Ponmar, Ottiyambakkam and Sithalapakkam. It sits on the Velachery–Tambaram road, and the Medavakkam–Sholinganallur road links it to the OMR IT corridor. Housing is a mix of two- and three-bedroom apartments, independent houses and plotted layouts.</p><p>There is no rail line here yet; Metro Line 5 is under construction with stations named Medavakkam I and Medavakkam II and further stops at Perumbakkam and Sholinganallur. Until it opens, tutors come by road, most often by two-wheeler from Velachery, Madipakkam, Pallikaranai or the OMR side. Apartment complexes usually register visitors at the gate, while houses on plotted streets mean a doorstep visit with easy parking. The main junction and the road towards Velachery are congested at office hours, so families often settle on late-afternoon or weekend slots. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Medavakkam",
+        "https://en.wikipedia.org/wiki/Line_5_(Chennai_Metro)",
+        "https://www.squareyards.com/medavakkam-in-chennai-overview-1036"
+      ]
+    },
+    "chromepet": {
+      "name": "Chromepet",
+      "zone": "Velachery, Guindy & Tambaram",
+      "type": "residential",
+      "about": "<p>Chromepet is a dense residential suburb on the GST Road in south Chennai, south of the airport. Its name comes from a chrome leather company set up here in 1912. Once part of Pallavaram municipality, it now falls under the Tambaram City Municipal Corporation, with Pallavaram, Tambaram and Thirumudivakkam as neighbours. Housing is a mix of apartments, independent houses and older residential layouts, and its markets and shops are long established.</p><p>Chromepet station on the suburban line carries much of the daily travel towards Guindy, Mambalam and Tambaram, while the GST Road and the 200 Feet Radial Road towards Thoraipakkam are the main road links. A tutor arriving by train can walk or take an auto from the station. Houses mean a doorstep visit, while apartment blocks usually have a watchman or gate register. The GST Road is heavy in the office rush and around the flyover, so tutors travelling by road from Pallavaram or Tambaram often choose times just outside it. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chromepet",
+        "https://en.wikipedia.org/wiki/South_Line,_Chennai_Suburban",
+        "https://www.99acres.com/chromepet-chennai-south-overview-piffid"
+      ]
+    },
+    "tambaram": {
+      "name": "Tambaram",
+      "zone": "Velachery, Guindy & Tambaram",
+      "type": "residential",
+      "about": "<p>Tambaram is a large suburban city in the Chennai metropolitan area, governed since November 2021 by the Tambaram City Municipal Corporation, which merged several municipalities and town panchayats. It is commonly split into East Tambaram and West Tambaram, and the housing includes older independent houses, builder floors in plotted layouts and newer apartment complexes. An air force station and a large export processing zone on the GST Road are local landmarks.</p><p>Tambaram station is one of the four main railway terminals in the Chennai area, and suburban trains run frequently towards Guindy, Mambalam and Chennai Beach; Tambaram Sanatorium is the next stop towards Chromepet. The GST Road and the Velachery–Tambaram road connect it with Chromepet, Velachery and Guindy. Tutors living in Tambaram, Chromepet or Perungalathur can usually reach homes by train or two-wheeler, with an auto for the last leg. Gated complexes register visitors, while houses mean a doorstep visit. The GST Road is busy at office hours, so sessions just before or after the rush work well. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tambaram",
+        "https://en.wikipedia.org/wiki/South_Line,_Chennai_Suburban",
+        "https://www.squareyards.com/tambaram-in-chennai-overview-1073"
+      ]
+    },
+    "perungudi": {
+      "name": "Perungudi",
+      "zone": "OMR & ECR",
+      "type": "mixed",
+      "about": "<p>Perungudi sits on the OMR IT corridor between Taramani and Thoraipakkam, with Kottivakkam and Palavakkam on the ECR side and Velachery and Thiruvanmiyur nearby. It changed from a small village into a busy residential and commercial area after the IT boom, and it joined the Chennai Corporation in 2011. Large office buildings line the OMR, while the streets behind them hold apartment buildings and houses, home to many working families.</p><p>Perungudi station on the MRTS links the area with Velachery, Thiruvanmiyur, Mylapore and Chennai Beach, and Metro Line 3 is under construction along the OMR with Kandanchavadi and Perungudi stations. A tutor using the MRTS will usually take an auto from the station. Apartment complexes ask visitors to register at the gate, and some need the resident to confirm first. The OMR is heavy when offices open and close, so sessions work well either before the evening rush or later in the evening. For specialist subjects, online classes can save a trip across the corridor. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Perungudi",
+        "https://en.wikipedia.org/wiki/Chennai_Mass_Rapid_Transit_System",
+        "https://en.wikipedia.org/wiki/Line_3_(Chennai_Metro)"
+      ]
+    },
+    "thoraipakkam": {
+      "name": "Thoraipakkam",
+      "zone": "OMR & ECR",
+      "type": "mixed",
+      "about": "<p>Thoraipakkam stretches along the OMR south of Perungudi, on the eastern edge of the Pallikaranai marsh. Its neighbours include Perungudi, Neelankarai, Palavakkam, Karapakkam, Pallikaranai, Injambakkam and Okkiyam Thoraipakkam. Once a village panchayat, it became part of the Greater Chennai Corporation in 2011. Homes are mainly flats in multi-storey buildings and gated communities, with some independent houses, and several large IT offices sit along the main road.</p><p>The Pallavaram–Thoraipakkam Radial Road runs west from here to the GST Road, making Thoraipakkam a meeting point for traffic from Chromepet and Pallavaram and from the OMR. There is no rail station yet; Metro Line 3 is under construction with Thoraipakkam, Mettukuppam and PTC Colony stations. Tutors usually come by two-wheeler, bus or shared auto from nearby areas. Gated communities ask for visitor registration and sometimes resident approval, so share the tutor's name ahead of the first class. The junction of the radial road and the OMR is congested at office hours. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Thoraipakkam",
+        "https://en.wikipedia.org/wiki/Line_3_(Chennai_Metro)",
+        "https://www.99acres.com/articles/invest-in-thoraipakkam-chennai.html"
+      ]
+    },
+    "sholinganallur": {
+      "name": "Sholinganallur",
+      "zone": "OMR & ECR",
+      "type": "mixed",
+      "about": "<p>Sholinganallur is a major junction on the OMR where the road from Medavakkam and Tambaram meets the IT corridor, with a link east to the East Coast Road. It was annexed into the Chennai Corporation in 2011 as ward 200, the city's last ward. The Tamil Nadu Housing Board created a satellite township here, and today the area mixes large gated apartment communities, budget flats and IT parks, with Akkarai, Panaiyur and Uthandi on the ECR side.</p><p>There is no rail line yet, but Sholinganallur will be an interchange: Metro Line 3 along the OMR and Line 5 from Medavakkam and Perumbakkam are both under construction with stations here. For now tutors come by road from Thoraipakkam, Medavakkam, Navalur or the ECR localities. Large gated communities have gate registration and sometimes resident approval, so families should add the tutor as a regular visitor. The Sholinganallur junction is heavy when offices open and close, so tutors often prefer evening slots after the peak or weekend sessions. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sholinganallur",
+        "https://en.wikipedia.org/wiki/Line_3_(Chennai_Metro)",
+        "https://en.wikipedia.org/wiki/Line_5_(Chennai_Metro)",
+        "https://www.nobroker.in/locality-iq/sholinganallur-chennai-liqlt"
+      ]
+    },
+    "navalur": {
+      "name": "Navalur",
+      "zone": "OMR & ECR",
+      "type": "residential",
+      "about": "<p>Navalur is a southern suburb on the OMR between Sholinganallur and Kelambakkam, in Thiruporur taluk of Chengalpattu district. It was a village until around 2010, and the growth of the IT corridor has turned it into a busy residential area. Housing is mostly two- and three-bedroom apartments and villa communities, along with plots, and neighbouring areas include Semmancheri, Thalambur, Siruseri and Egattur.</p><p>Metro Line 3 is under construction along the OMR with a Navallur station, and the line continues to Siruseri and the SIPCOT IT park. Until it opens, tutors reach homes by two-wheeler, bus or cab along the OMR, often from Sholinganallur, Siruseri or Kelambakkam. Many families live in gated complexes, so tutors need to register at the gate and may be asked for ID on the first visit. OMR traffic is heaviest when offices open and close, so evening sessions after the peak work well. For specialist subjects where no local tutor is free, online classes are a practical option. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Navalur",
+        "https://en.wikipedia.org/wiki/Line_3_(Chennai_Metro)",
+        "https://www.99acres.com/navalur-chennai-south-overview-piffid"
+      ]
+    },
+    "kelambakkam": {
+      "name": "Kelambakkam",
+      "zone": "OMR & ECR",
+      "type": "residential",
+      "about": "<p>Kelambakkam lies on the OMR at the southern end of Chennai's IT corridor, in Thiruporur taluk of Chengalpattu district, and it is still governed as a village panchayat. The Chennai Metropolitan Development Authority has identified it as a growth node for the southern corridor. The Vandalur–Kelambakkam Road runs west towards the GST Road, and neighbours include Pudupakkam, Padur, Kovalam and Thaiyur. Housing is a mix of plotted layouts, apartment complexes and villa communities, many inside gated campuses.</p><p>There is no rail or metro here; Metro Line 3, under construction, is planned to end at the SIPCOT IT park near Siruseri to the north. Families rely on roads, so home tutors usually come from Kelambakkam itself, Navalur, Siruseri or Padur by two-wheeler. Gated communities register visitors, while plotted layouts have independent houses with a doorstep visit and easy parking. For specialist subjects, online tutoring widens the choice, with a home tutor for younger children. The OMR junction is busy at office hours, so sessions are easier later in the evening. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kelambakkam",
+        "https://en.wikipedia.org/wiki/Line_3_(Chennai_Metro)",
+        "https://www.99acres.com/kelambakkam-chennai-south-overview-piffid"
+      ]
+    },
+    "neelankarai": {
+      "name": "Neelankarai",
+      "zone": "OMR & ECR",
+      "type": "residential",
+      "about": "<p>Neelankarai, whose name means 'blue shore', is a coastal locality on the East Coast Road in south Chennai. Palavakkam lies to the north, Vettuvankeni to the south, Thoraipakkam to the west and the Bay of Bengal to the east, so it runs parallel to the Thoraipakkam stretch of the OMR. Most homes are bungalows, villas, row houses and independent houses, with a few low-rise apartment buildings and gated communities, and the beach is part of daily life for many families.</p><p>There is no rail station here, so tutors come by road along the ECR from Thiruvanmiyur, Palavakkam and Injambakkam, or across from Thoraipakkam on the OMR. Independent houses and villas usually mean a doorstep visit, with a watchman at the gate in larger homes, and parking is rarely a problem. The ECR can slow down at weekends with beach and leisure traffic, so weekday sessions are simpler. Families wanting specialist board or exam subjects often combine a nearby home tutor with online classes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Neelankarai",
+        "https://en.wikipedia.org/wiki/East_Coast_Road",
+        "https://www.squareyards.com/neelankarai-in-chennai-overview-2382"
+      ]
+    },
+    "anna-nagar": {
+      "name": "Anna Nagar",
+      "zone": "Anna Nagar, Kilpauk & Aminjikarai",
+      "type": "residential",
+      "about": "<p>Anna Nagar is a planned township laid out by the Tamil Nadu Housing Board in the early 1970s, after the 1968 trade fair held on the site. The board created residential plots, apartments, commercial complexes, wide roads and large parks, and the numbered avenues run in a grid, with the 2nd, 4th and 6th Avenues east to west and the odd-numbered avenues north to south. Homes are a mix of independent houses on plots and apartment buildings, with shops and restaurants concentrated along 2nd Avenue, Shanthi Colony and the Thirumangalam junction.</p><p>Three underground Green Line stations serve the area: Anna Nagar East, Anna Nagar Tower and Thirumangalam, all opened in May 2017. Neighbours include Shenoy Nagar, Kilpauk, Arumbakkam, Koyambedu, Villivakkam and Anna Nagar West. Because the grid and avenue numbers make addresses easy to find, tutors reach most homes at the doorstep, and apartment buildings usually need only a quick word at the gate. Evening sessions near the 2nd Avenue shopping stretch are easier to reach before the early-evening rush. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Anna_Nagar",
+        "https://en.wikipedia.org/wiki/Green_Line_(Chennai_Metro)"
+      ]
+    },
+    "anna-nagar-west": {
+      "name": "Anna Nagar West",
+      "zone": "Anna Nagar, Kilpauk & Aminjikarai",
+      "type": "residential",
+      "about": "<p>Anna Nagar West is the western part of the Anna Nagar township, planned with residential plots, apartments, commercial complexes, wide roads, school zones and parks. Its roads follow the same grid pattern as the rest of Anna Nagar, and its edges are set by Park Road, the 6th Avenue, the Inner Ring Road, Ambattur Main Road and MTH Road. Padi lies to the north, Villivakkam to the north-east, Anna Nagar to the east and Mogappair East to the south.</p><p>The Anna Nagar West bus terminus on the Inner Ring Road is one of the largest in the city, and the nearest working metro stop is Thirumangalam on the Green Line. A Red Line station named Anna Nagar West is under construction as part of Chennai Metro Phase II. For a tutor, the grid means independent houses have a doorstep entry and flats usually have a small gate register. The Inner Ring Road carries heavy traffic at office hours, so weekday lessons suit the late afternoon or on weekend mornings. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Anna_Nagar_West",
+        "https://en.wikipedia.org/wiki/Anna_Nagar",
+        "https://en.wikipedia.org/wiki/Red_Line_(Chennai_Metro)"
+      ]
+    },
+    "shenoy-nagar": {
+      "name": "Shenoy Nagar",
+      "zone": "Anna Nagar, Kilpauk & Aminjikarai",
+      "type": "residential",
+      "about": "<p>Shenoy Nagar is a middle-class residential neighbourhood within the Greater Anna Nagar area, first planned as housing for middle-income families. It is bounded by Anna Nagar to the north-west, Kilpauk to the north-east, Chetpet to the south-east, Aminjikarai to the south and Arumbakkam to the south-west. The streets hold a mix of older houses and low-rise apartment buildings, and a large public park and a skating park sit in the neighbourhood.</p><p>Shenoy Nagar metro station on the Green Line opened in May 2017 as part of the underground stretch from Thirumangalam to Nehru Park, so a tutor from Anna Nagar, Kilpauk or Egmore can arrive by metro and walk the last leg. Houses usually mean a doorstep visit, while apartment blocks may ask for a name at the entrance. Poonamallee High Road runs close by and is busiest at office hours, so evening lessons are easier to schedule a little after the peak. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Shenoy_Nagar",
+        "https://en.wikipedia.org/wiki/Green_Line_(Chennai_Metro)"
+      ]
+    },
+    "kilpauk": {
+      "name": "Kilpauk",
+      "zone": "Anna Nagar, Kilpauk & Aminjikarai",
+      "type": "mixed",
+      "about": "<p>Kilpauk is a semi-residential neighbourhood off Poonamallee High Road that was a cantonment for British troops before independence. Large institutional campuses, including a historic water-treatment works and major medical institutions, sit beside residential streets of independent houses and apartment buildings. Neighbouring localities are Chetpet, Kellys, Egmore, Ayanavaram, Anna Nagar, Purasawalkam and Choolaimedu.</p><p>Two Green Line stations are within reach: Kilpauk Medical College and Nehru Park, both opened in May 2017 on the underground section. Parents in flats should expect tutors to sign in at the gate, while house visits are usually straight to the door. Poonamallee High Road, originally built in the 1850s as the Grand Western Trunk Road, is a busy arterial through the area, so tutors travelling across from Anna Nagar or Purasawalkam do better with a metro ride and a short auto or walk. Specialist board or exam subjects are also easy to arrange online. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kilpauk",
+        "https://en.wikipedia.org/wiki/Green_Line_(Chennai_Metro)",
+        "https://en.wikipedia.org/wiki/Poonamallee_High_Road"
+      ]
+    },
+    "aminjikarai": {
+      "name": "Aminjikarai",
+      "zone": "Anna Nagar, Kilpauk & Aminjikarai",
+      "type": "mixed",
+      "about": "<p>Aminjikarai sits on land shaped by the Cooum river and was added to Madras District in 1946; neighbouring Anna Nagar and Arumbakkam were carved out later. It is made up of residential colonies such as Mehta Nagar, Gill Nagar, Railway Colony and Collectorate Colony, with older houses and apartment buildings, alongside a busy commercial belt with markets and a large shopping centre. Arumbakkam lies to the west, Chetpet to the east, Choolaimedu to the south and Nungambakkam to the north.</p><p>Poonamallee High Road runs through the locality and links it to Kilpauk in the east and Arumbakkam and Koyambedu in the west. Nearby Green Line stations include Shenoy Nagar and Pachaiyappa's College, which opened in May 2017. Tutors coming from Anna Nagar or Kilpauk can use the metro and finish by auto. In colony streets the tutor usually rings at the door; apartment blocks may ask for a gate entry. Lessons are easier to keep on time when they avoid the evening peak on the main road. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Aminjikarai",
+        "https://en.wikipedia.org/wiki/Poonamallee_High_Road",
+        "https://en.wikipedia.org/wiki/Green_Line_(Chennai_Metro)"
+      ]
+    },
+    "arumbakkam": {
+      "name": "Arumbakkam",
+      "zone": "Anna Nagar, Kilpauk & Aminjikarai",
+      "type": "residential",
+      "about": "<p>Arumbakkam was a mango-growing area until around 1960 and grew into a residential locality of colonies such as Jaganathan Nagar, Jai Nagar, the bank staff colonies and MMDA Colony. Housing is a mix of independent houses, government-built colony homes and apartment buildings, with a neighbourhood park in Jai Nagar. It is surrounded by Koyambedu, Aminjikarai and Anna Nagar, and its main roads are Poonamallee High Road and the Inner Ring Road, which meet at the Koyambedu grade separator built in 2011.</p><p>Arumbakkam metro station on the Green Line opened in June 2015 on the first section from Koyambedu to Alandur, and the CMBT and Vadapalani stations are next door on the same line. That makes it simple for a tutor from Vadapalani, Anna Nagar or Ashok Nagar to arrive by metro and walk to the colony. In MMDA Colony and similar layouts, visits are mostly to the doorstep. Traffic around the Koyambedu junction builds at office hours, so plan lesson times around it. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Arumbakkam",
+        "https://en.wikipedia.org/wiki/Green_Line_(Chennai_Metro)"
+      ]
+    },
+    "purasawalkam": {
+      "name": "Purasawalkam",
+      "zone": "Anna Nagar, Kilpauk & Aminjikarai",
+      "type": "mixed",
+      "about": "<p>Purasawalkam is one of the older parts of the city: it was granted to the East India Company in 1693, and its main road, Purasawalkam High Road, follows a natural ridge that was lined with neem trees in 1868. Today it is a residential and shopping area where busy markets for clothing, jewellery and food sit alongside old family houses, narrow lanes and newer apartment buildings. Neighbours include Kilpauk, Ayanavaram, Otteri, Choolai, Egmore, Chetpet, Doveton and Pudupet.</p><p>The nearest Green Line stops are Kilpauk Medical College and Nehru Park, and Chennai Central is close at hand for tutors coming by suburban train. In the old lanes a tutor usually walks the last part and knocks at the door, while apartment buildings may keep a visitor register. Parking is limited near the market streets, so metro or bus plus a short walk works better than a car. Weekday evenings are the busiest time on the High Road, so a slightly earlier slot helps. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Purasawalkam",
+        "https://www.squareyards.com/purasawakkam-in-chennai-overview-1047",
+        "https://en.wikipedia.org/wiki/Green_Line_(Chennai_Metro)"
+      ]
+    },
+    "vadapalani": {
+      "name": "Vadapalani",
+      "zone": "Vadapalani, KK Nagar & Porur",
+      "type": "mixed",
+      "about": "<p>Vadapalani, whose name means North Palani, grew around a Murugan temple built in the late nineteenth century and is now one of the busiest and most densely populated parts of the city. Apartment buildings and older houses sit beside film studios and cinema-related businesses, shopping centres and a large bus terminus on Arcot Road. Adjacent localities are Saligramam, Virugambakkam, Kodambakkam, Koyambedu and Ashok Nagar.</p><p>Vadapalani metro station on the Green Line opened in June 2015, and the station is also the planned eastern end of the first Yellow Line section towards Porur and Poonamallee, which is still under construction. The Inner Ring Road passes through the area and links it to Koyambedu and Kathipara. Because Arcot Road and the Inner Ring Road are heavy at office hours, tutors often take the metro and walk or use an auto for the last stretch. Most families here live in flats, so allow a moment for gate entry. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vadapalani",
+        "https://en.wikipedia.org/wiki/Green_Line_(Chennai_Metro)",
+        "https://en.wikipedia.org/wiki/Inner_Ring_Road,_Chennai",
+        "https://en.wikipedia.org/wiki/Yellow_Line_(Chennai_Metro)"
+      ]
+    },
+    "kk-nagar": {
+      "name": "KK Nagar",
+      "zone": "Vadapalani, KK Nagar & Porur",
+      "type": "residential",
+      "about": "<p>KK Nagar is a planned locality developed in the 1970s and early 1980s, laid out as a grid of rectangular sectors, each with several streets and a park near the centre. Housing is mainly apartment buildings and housing-board flats with some independent houses, and the Tamil Nadu Housing Board development of the 1970s covered this area together with Ashok Nagar. Ashok Nagar lies to the east and Vadapalani is the nearest commercial centre, with MGR Nagar, Nesapakkam, Ramapuram and Saidapet around it.</p><p>The nearest metro station is Ashok Nagar on the Green Line, open since June 2015, and a bus terminus sits on the main road. The sector-and-street numbering makes addresses easy to find, so tutors rarely lose time searching. The area already has many tuition centres and bookshops, and home tutoring fits well for families who prefer one-to-one lessons at home. For flats, expect a short check at the gate; for houses, the tutor comes straight to the door. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/K._K._Nagar,_Chennai",
+        "https://en.wikipedia.org/wiki/Ashok_Nagar,_Chennai",
+        "https://en.wikipedia.org/wiki/Green_Line_(Chennai_Metro)"
+      ]
+    },
+    "ashok-nagar": {
+      "name": "Ashok Nagar",
+      "zone": "Vadapalani, KK Nagar & Porur",
+      "type": "residential",
+      "about": "<p>Ashok Nagar was established in 1964 and grew in the 1970s when the Tamil Nadu Housing Board built flats for middle-income families here and in neighbouring KK Nagar. It is known for broad roads, a road-numbering system and the Ashok Pillar, a lion-topped column at its centre, with a shopping complex near the pillar dating from 1974. Housing-board flats and newer apartments sit beside independent houses. KK Nagar lies to the west, Vadapalani to the north, Kodambakkam to the north-east and Saidapet to the south.</p><p>Ashok Nagar metro station on the Green Line opened in June 2015 and links the area directly to Vadapalani, Koyambedu, Anna Nagar and Alandur. Tutors from across west Chennai can come by metro and walk a few streets. The numbered roads make homes easy to locate, and flats may need a gate entry. Weekday evenings around the pillar junction are busy, so a lesson a little after the rush is often smoother. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ashok_Nagar,_Chennai",
+        "https://en.wikipedia.org/wiki/Green_Line_(Chennai_Metro)"
+      ]
+    },
+    "virugambakkam": {
+      "name": "Virugambakkam",
+      "zone": "Vadapalani, KK Nagar & Porur",
+      "type": "residential",
+      "about": "<p>Virugambakkam was a village of paddy fields until the 1970s, although film studios arrived here from 1948, and it was formally made part of the city in 1973. It is now a middle-class residential area of colonies with independent houses and apartment buildings. Saligramam lies to the east, Koyambedu to the north, Alwarthirunagar to the west and south-west, and KK Nagar and Ramavaram to the south-east.</p><p>Arcot Road, one of the city's arterial roads, runs along the area, and Kaliamman Koil Street links it to Koyambedu. Yellow Line stations at Virugambakkam South and Alwarthirunagar are under construction as part of Chennai Metro Phase II; until they open, tutors use the Vadapalani Green Line station and finish by auto, or come by bus along Arcot Road. Visits to houses are usually doorstep; flats may keep a visitor book. Arcot Road is busiest at office hours, so a late-afternoon or weekend slot works well. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Virugambakkam",
+        "https://en.wikipedia.org/wiki/Yellow_Line_(Chennai_Metro)"
+      ]
+    },
+    "valasaravakkam": {
+      "name": "Valasaravakkam",
+      "zone": "Vadapalani, KK Nagar & Porur",
+      "type": "residential",
+      "about": "<p>Valasaravakkam is a residential suburb on Arcot Road that was a separate municipality until October 2011, when it became part of the Chennai Corporation. Homes are mostly apartment buildings with some independent houses, and the area is popular with working professionals and families. Maduravoyal lies to the north, Alapakkam to the west, Virugambakkam to the east and Ramapuram to the south.</p><p>A Yellow Line station named Valasaravakkam is under construction on Arcot Road, on the metro section between Vadapalani and Porur; for now, tutors usually come by bus along Arcot Road or ride the Green Line to Vadapalani and take an auto for the last leg. For apartment buildings, share the flat number and a contact name so the gate can let the tutor in. Arcot Road is heavy at office hours, so weekday lessons are easier in the late afternoon, and online sessions help for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Valasaravakkam",
+        "https://en.wikipedia.org/wiki/Yellow_Line_(Chennai_Metro)",
+        "https://www.squareyards.com/valasaravakkam-in-chennai-overview-4152"
+      ]
+    },
+    "porur": {
+      "name": "Porur",
+      "zone": "Vadapalani, KK Nagar & Porur",
+      "type": "mixed",
+      "about": "<p>Porur has history going back to the Chola period, with a temple inscription of the eleventh or twelfth century, and it stayed largely rural until industries arrived in the 1960s. It became a town panchayat in 1977 and joined the Greater Chennai Corporation in 2011. Today it is mainly residential, with apartment buildings and older houses, while the Mount-Poonamallee Road stretch has become an important IT corridor. Karambakkam and Alapakkam lie to the north, Valasaravakkam and Ramapuram to the east and Mugalivakkam to the south.</p><p>Porur Junction is where Arcot Road, Mount-Poonamallee Road and Kundrathur Road meet, and the Chennai Bypass crosses the area. Porur Junction and Porur Bypass are stations on the Yellow Line of Chennai Metro Phase II, still under construction. For now tutors mostly arrive by road, so apartment buildings should be told to expect the tutor at the gate. The junction is congested at office hours, so late-afternoon or weekend lessons are easier, and online classes help for less common subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Porur",
+        "https://en.wikipedia.org/wiki/Yellow_Line_(Chennai_Metro)"
+      ]
+    },
+    "mogappair": {
+      "name": "Mogappair",
+      "zone": "Mogappair, Ambattur & Avadi",
+      "type": "residential",
+      "about": "<p>Mogappair is a residential neighbourhood in north-western Chennai, divided into Mogappair East and Mogappair West, on the state highway between Ambattur and Anna Nagar and west of the Inner Ring Road. It grew from a small village, part of which still survives in the south-west, and its streets mix apartment buildings with older plotted homes. Industrial estates at Padi and Ambattur lie to the north and west, and Anna Nagar West is the neighbour to the north-east.</p><p>The nearest metro stations are Thirumangalam and Koyambedu on the Green Line, and suburban trains stop at Ambattur, Pattaravakkam and Korattur. Several bus terminals run many routes through Mogappair East and West, so a tutor can reach most streets by bus or metro plus an auto. Independent houses usually mean a doorstep visit, while apartment blocks may ask the tutor to sign in. The Inner Ring Road and the Ambattur side are busiest at office hours, so plan evening lessons with that in mind. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mogappair",
+        "https://www.squareyards.com/mogappair-in-chennai-overview-1078",
+        "https://en.wikipedia.org/wiki/Green_Line_(Chennai_Metro)"
+      ]
+    },
+    "ambattur": {
+      "name": "Ambattur",
+      "zone": "Mogappair, Ambattur & Avadi",
+      "type": "mixed",
+      "about": "<p>Ambattur grew after the Second World War as part of the city's auto belt, and its industrial estate, commissioned in 1964, is one of the largest small-scale industrial estates in South Asia. Around it are established residential colonies with independent houses, apartment buildings and older layouts. Neighbours include Avadi, Anna Nagar, Korattur, Padi, Mogappair, Kallikuppam, Surapet, Ayappakkam, Athipet and Thiruverkadu, and the Chennai-Tiruvallur High Road runs through the area.</p><p>Ambattur and Pattaravakkam stations on the suburban line from Chennai Central to Arakkonam serve the area, with Thirumullaivoyal next along towards Avadi. A tutor from Villivakkam, Perambur or Avadi can take a local train and finish with an auto or walk. Colony houses mostly mean a doorstep visit, and newer apartment buildings may keep a gate register. The Chennai-Tiruvallur High Road is busy with commuter traffic at office hours, so lessons suit the late afternoon or on weekends. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ambattur",
+        "https://en.wikipedia.org/wiki/Thirumullaivoyal_railway_station",
+        "https://www.squareyards.com/ambattur-in-chennai-overview-4146"
+      ]
+    },
+    "avadi": {
+      "name": "Avadi",
+      "zone": "Mogappair, Ambattur & Avadi",
+      "type": "mixed",
+      "about": "<p>Avadi is a large suburb to the west of the city that became Tamil Nadu's 15th municipal corporation in 2019. It is known for a 1955 session of the Indian National Congress held here, and for major defence manufacturing and research establishments. Housing includes Tamil Nadu Housing Board estates, independent houses, plotted layouts and apartment projects, and Thirumullaivoyal, Pattabiram, Thirunindravur and Poonamallee are among its neighbours.</p><p>Avadi railway station on the Chennai Central to Arakkonam suburban line is a suburban terminal, and its first lines were electrified in November 1979. The Chennai-Tiruvallur High Road and the Chennai Outer Ring Road also pass through. Many tutors reach Avadi by local train and take an auto for the last leg, which works well for plotted layouts and housing-board homes. Defence areas and gated estates may need prior entry details, so share the address and a contact number with the tutor. Online classes are handy for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Avadi",
+        "https://en.wikipedia.org/wiki/Avadi_railway_station",
+        "https://www.squareyards.com/avadi-in-chennai-overview-1057"
+      ]
+    },
+    "perambur": {
+      "name": "Perambur",
+      "zone": "Perambur, Kolathur & North Chennai",
+      "type": "mixed",
+      "about": "<p>Perambur is one of the older parts of the city; it was among the villages presented to the British in 1742, and the Madras Railway set up its workshops here in 1856. It is densely populated, with a busy market, older independent houses and newer apartment buildings. Jawahar Nagar lies to the west, Vyasarpadi to the east, Madhavaram and Kodungaiyur to the north, and Ayanavaram and Purasawalkam to the south.</p><p>Three suburban stations serve the area: Perambur, Perambur Carriage Works and Perambur Loco Works, on the line from Chennai Central towards Avadi and Arakkonam, and Perambur is the second oldest railway station in the city after Royapuram. Tutors from Villivakkam, Kolathur or central Chennai often come by local train and walk or take an auto. In old streets expect a doorstep visit; in apartment buildings, a quick entry at the gate. Market roads are crowded in the evening, so book lessons a little earlier. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Perambur",
+        "https://en.wikipedia.org/wiki/Perambur_railway_station",
+        "https://www.squareyards.com/perambur-in-chennai-overview-1035"
+      ]
+    },
+    "villivakkam": {
+      "name": "Villivakkam",
+      "zone": "Perambur, Kolathur & North Chennai",
+      "type": "residential",
+      "about": "<p>Villivakkam is a densely populated residential neighbourhood in north-west Chennai, with independent houses and apartment buildings along its streets and a bus terminus off Konnur High Road. Kolathur and Korattur lie to the north, Perambur to the east and Anna Nagar and Padi to the south. A road subway built between 2007 and 2012 links the two sides of the railway line.</p><p>Villivakkam railway station is on the suburban line from Chennai Central to Arakkonam, so tutors from Perambur, Ambattur or Avadi can arrive by local train. Chennai Metro Phase II is building underground Red Line stations at Villivakkam, Villivakkam Bus Terminus and on the CTH Road, which are due later in the decade. Houses usually mean a doorstep visit and flats a gate entry. Roads near the station and bus terminus are busy at office hours, so late-afternoon and weekend lessons are easier. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Villivakkam",
+        "https://en.wikipedia.org/wiki/Red_Line_(Chennai_Metro)",
+        "https://www.squareyards.com/villivakkam-in-chennai-overview-1118"
+      ]
+    },
+    "kolathur": {
+      "name": "Kolathur",
+      "zone": "Perambur, Kolathur & North Chennai",
+      "type": "residential",
+      "about": "<p>Kolathur is a neighbourhood in north-west Chennai and one of the older housing colonies in the city, popular with middle-class families and working professionals. Homes are mainly independent houses and low- to mid-rise apartment buildings, with busy local markets and many small and medium-sized businesses. The area is known for its ornamental fish trade. Neighbouring areas include Korattur, Villivakkam, Perambur, Surapet, Madhavaram, Retteri, Ayanavaram and Anna Nagar.</p><p>Main links are the Perambur Red Hills Road, the Grand Northern Trunk Road and the Inner Ring Road. The nearest railway station is Villivakkam on the suburban line from Chennai Central, and Chennai Metro Phase II is building an underground Red Line station at Kolathur Junction, due later in the decade. Until then, tutors usually come by bus or train and finish with an auto. Independent houses mean a doorstep visit, while flats may need a gate entry. Red Hills Road is busiest at office hours, so evening lessons benefit from a slightly later start. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kolathur,_Chennai",
+        "https://www.squareyards.com/kolathur-in-chennai-overview-2391",
+        "https://en.wikipedia.org/wiki/Red_Line_(Chennai_Metro)"
+      ]
+    },
+    "royapuram": {
+      "name": "Royapuram",
+      "zone": "Perambur, Kolathur & North Chennai",
+      "type": "mixed",
+      "about": "<p>Royapuram grew as a settlement towards the end of the eighteenth century and is now one of the most densely populated parts of the city, next to the sea in north Chennai. Its shopping street is Mannarswamy Koil Street, and the area also has a busy fishing harbour at Kasimedu, old churches and the city's only functioning Parsi fire temple. Homes range from old family houses in narrow lanes to newer apartment buildings.</p><p>Royapuram railway station opened in 1856 as the first terminus in South India and holds the oldest surviving station buildings on Indian Railways; it is still served by suburban trains. In the old lanes, tutors usually walk the last part and arrive at the doorstep, while new apartment buildings may keep a gate register. Parking is limited near the market street and harbour, so train, bus or auto is the easier way in. Weekday evenings are crowded near the shops, so a slightly earlier lesson slot helps. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Royapuram",
+        "https://en.wikipedia.org/wiki/Royapuram_railway_station",
+        "https://www.squareyards.com/royapuram-in-chennai-overview-1115"
+      ]
+    },
+    "tondiarpet": {
+      "name": "Tondiarpet",
+      "zone": "Perambur, Kolathur & North Chennai",
+      "type": "mixed",
+      "about": "<p>Tondiarpet is in the northern part of Chennai near the Bay of Bengal and takes its name from a nineteenth-century saint whom locals called Thondiar. It is a busy trading and manufacturing area, with export houses, wholesale and retail shops and small factories alongside residential streets of older houses and apartment buildings. It borders George Town and falls in Zone I of the Chennai Corporation.</p><p>Tondiarpet metro station on the Blue Line opened in February 2021 as part of the northern extension to Wimco Nagar, and Sir Theagaraya College station is the next stop south. Tondiarpet railway station is on the suburban line towards Gummidipoondi. That gives tutors two rail options, with a short walk or auto from the station. Houses in the older streets mean a doorstep visit; apartment buildings may ask the tutor to sign in. Commercial roads are busiest in the working day, so evening or weekend lessons are usually smoother. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tondiarpet",
+        "https://en.wikipedia.org/wiki/Blue_Line_(Chennai_Metro)",
+        "https://www.squareyards.com/tondiarpet-in-chennai-overview-4195"
+      ]
+    }
+  },
+  "zone_facts": {
+    "Adyar, Besant Nagar & Mylapore": [
+      {
+        "fact": "The MRTS opened from Chennai Beach to Chepauk on 16 November 1995 and was extended to Thirumayilai on 19 October 1997.",
+        "source": "https://en.wikipedia.org/wiki/Chennai_Mass_Rapid_Transit_System"
+      },
+      {
+        "fact": "The MRTS section from Thirumayilai to Thiruvanmiyur opened on 26 January 2004, adding stations at Mandaveli, Greenways Road, Kotturpuram, Kasturba Nagar and Indira Nagar.",
+        "source": "https://en.wikipedia.org/wiki/Chennai_Mass_Rapid_Transit_System"
+      },
+      {
+        "fact": "Besant Nagar was developed by the Tamil Nadu Housing Board from the early 1970s to the early 1980s.",
+        "source": "https://en.wikipedia.org/wiki/Besant_Nagar"
+      },
+      {
+        "fact": "Adyar was formally incorporated into the city in 1948.",
+        "source": "https://en.wikipedia.org/wiki/Adyar,_Chennai"
+      },
+      {
+        "fact": "The East Coast Road begins at Thiruvanmiyur and runs south through Kottivakkam, Palavakkam, Neelankarai and Injambakkam.",
+        "source": "https://en.wikipedia.org/wiki/East_Coast_Road"
+      },
+      {
+        "fact": "Teynampet station on the Metro Blue Line opened on 25 May 2018.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Chennai_Metro)"
+      },
+      {
+        "fact": "Metro Line 3 (Purple Line) is under construction with stations at Thirumayilai, Mandaiveli, Greenways Road, Adyar Junction, Adyar Depot, Indira Nagar and Thiruvanmiyur.",
+        "source": "https://en.wikipedia.org/wiki/Line_3_(Chennai_Metro)"
+      },
+      {
+        "fact": "Metro Line 4 (Yellow Line) is under construction from Lighthouse through Kutchery Road, Thirumayilai, Alwarpet, Bharathidasan Road and Boat Club.",
+        "source": "https://en.wikipedia.org/wiki/Yellow_Line_(Chennai_Metro)"
+      }
+    ],
+    "T Nagar, Nungambakkam & Kodambakkam": [
+      {
+        "fact": "The South Line of the Chennai Suburban Railway opened in 1931 and has stations at Nungambakkam, Kodambakkam, Mambalam and Saidapet.",
+        "source": "https://en.wikipedia.org/wiki/South_Line,_Chennai_Suburban"
+      },
+      {
+        "fact": "Mambalam railway station was built in 1911.",
+        "source": "https://en.wikipedia.org/wiki/West_Mambalam"
+      },
+      {
+        "fact": "The Long Tank on the city's western edge was drained in 1923, and T Nagar was laid out in 1923–25 under the Mambalam town planning scheme.",
+        "source": "https://en.wikipedia.org/wiki/T._Nagar"
+      },
+      {
+        "fact": "Kodambakkam got one of the city's first flyovers in 1967.",
+        "source": "https://en.wikipedia.org/wiki/Kodambakkam"
+      },
+      {
+        "fact": "Metro Blue Line stations at AG–DMS, Teynampet, Nandanam and Saidapet opened on 25 May 2018, and Thousand Lights opened on 10 February 2019.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Chennai_Metro)"
+      },
+      {
+        "fact": "Green Line stations at Vadapalani and Ashok Nagar opened on 29 June 2015 as part of the first Koyambedu–Alandur section.",
+        "source": "https://en.wikipedia.org/wiki/Green_Line_(Chennai_Metro)"
+      },
+      {
+        "fact": "Metro Line 4 (Yellow Line) is under construction with stations at Nandanam, Panagal Park, Kodambakkam and Kodambakkam Powerhouse; its Poonamallee Bypass–Vadapalani section is planned to open on 11 October 2026.",
+        "source": "https://en.wikipedia.org/wiki/Yellow_Line_(Chennai_Metro)"
+      }
+    ],
+    "Velachery, Guindy & Tambaram": [
+      {
+        "fact": "Metro Blue Line stations at Little Mount, Guindy, Alandur, Nanganallur Road, Meenambakkam and Chennai Airport opened on 21 September 2016.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Chennai_Metro)"
+      },
+      {
+        "fact": "St Thomas Mount station on the Green Line opened on 14 October 2016.",
+        "source": "https://en.wikipedia.org/wiki/Green_Line_(Chennai_Metro)"
+      },
+      {
+        "fact": "At Kathipara junction in Guindy, the main road from the city centre, Mount–Poonamallee Road, Inner Ring Road, 100 Feet Road and GST Road meet.",
+        "source": "https://en.wikipedia.org/wiki/Guindy"
+      },
+      {
+        "fact": "The MRTS reached Velachery on 19 November 2007, and commercial service on the extension to Puzhuthivakkam, Adambakkam and St Thomas Mount began on 14 March 2026.",
+        "source": "https://en.wikipedia.org/wiki/Chennai_Mass_Rapid_Transit_System"
+      },
+      {
+        "fact": "The Chennai–Tindivanam section of the GST Road, formerly NH 45, is now part of National Highway 32.",
+        "source": "https://en.wikipedia.org/wiki/Grand_Southern_Trunk_Road"
+      },
+      {
+        "fact": "The Tambaram City Municipal Corporation was formed on 3 November 2021.",
+        "source": "https://en.wikipedia.org/wiki/Tambaram"
+      },
+      {
+        "fact": "Metro Line 5 (Red Line) is under construction south of Alandur and St Thomas Mount with stations including Adambakkam, Madipakkam, Kilkattalai, Medavakkam I, Medavakkam II and Perumbakkam, ending at Sholinganallur.",
+        "source": "https://en.wikipedia.org/wiki/Line_5_(Chennai_Metro)"
+      }
+    ],
+    "OMR & ECR": [
+      {
+        "fact": "Old Mahabalipuram Road, also called Rajiv Gandhi Salai or the IT Expressway, starts at Madhya Kailash and was declared State Highway 49A on 29 October 2008.",
+        "source": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_Salai"
+      },
+      {
+        "fact": "Perungudi station opened with the MRTS extension from Thiruvanmiyur to Velachery on 19 November 2007.",
+        "source": "https://en.wikipedia.org/wiki/Chennai_Mass_Rapid_Transit_System"
+      },
+      {
+        "fact": "Metro Line 3 (Purple Line) is under construction along the OMR with stations including Perungudi, Thoraipakkam, Sholinganallur, Semmancheri, Navallur and Siruseri, ending at SIPCOT 2.",
+        "source": "https://en.wikipedia.org/wiki/Line_3_(Chennai_Metro)"
+      },
+      {
+        "fact": "Metro Line 5 (Red Line) is under construction with its southern terminus at Sholinganallur, where it will meet Line 3.",
+        "source": "https://en.wikipedia.org/wiki/Line_5_(Chennai_Metro)"
+      },
+      {
+        "fact": "Sholinganallur was annexed into the Chennai Corporation in 2011 as ward 200.",
+        "source": "https://en.wikipedia.org/wiki/Sholinganallur"
+      },
+      {
+        "fact": "The Pallavaram–Thoraipakkam Radial Road links the OMR at Thoraipakkam with the GST Road.",
+        "source": "https://en.wikipedia.org/wiki/Thoraipakkam"
+      },
+      {
+        "fact": "Neelankarai lies on the East Coast Road, parallel to Thoraipakkam on the OMR.",
+        "source": "https://en.wikipedia.org/wiki/Neelankarai"
+      },
+      {
+        "fact": "The Chennai Metropolitan Development Authority has identified Kelambakkam as a growth node in the southern metropolitan corridor.",
+        "source": "https://en.wikipedia.org/wiki/Kelambakkam"
+      }
+    ],
+    "Anna Nagar, Kilpauk & Aminjikarai": [
+      {
+        "fact": "The underground Green Line section from Thirumangalam to Nehru Park, with stations at Anna Nagar Tower, Anna Nagar East, Shenoy Nagar, Pachaiyappa's College and Kilpauk Medical College, opened in May 2017.",
+        "source": "https://en.wikipedia.org/wiki/Green_Line_(Chennai_Metro)"
+      },
+      {
+        "fact": "Arumbakkam, Koyambedu and CMBT stations opened on 29 June 2015 as part of the first Green Line section from Koyambedu to Alandur.",
+        "source": "https://en.wikipedia.org/wiki/Green_Line_(Chennai_Metro)"
+      },
+      {
+        "fact": "Anna Nagar was developed by the Tamil Nadu Housing Board in the early 1970s following the 1968 World Trade Fair held in the area.",
+        "source": "https://en.wikipedia.org/wiki/Anna_Nagar"
+      },
+      {
+        "fact": "Poonamallee High Road was built in the 1850s as the Grand Western Trunk Road and runs through Kilpauk, Aminjikarai, Anna Nagar Arch, Arumbakkam and Koyambedu.",
+        "source": "https://en.wikipedia.org/wiki/Poonamallee_High_Road"
+      },
+      {
+        "fact": "The central arm of the Inner Ring Road runs from Kathipara Junction to Padi Junction, meeting the Poonamallee road at Koyambedu.",
+        "source": "https://en.wikipedia.org/wiki/Inner_Ring_Road,_Chennai"
+      },
+      {
+        "fact": "The Anna Nagar West bus terminus on the Inner Ring Road is one of the largest bus terminals in Chennai.",
+        "source": "https://en.wikipedia.org/wiki/Anna_Nagar_West"
+      },
+      {
+        "fact": "The Arumbakkam-Koyambedu roundabout was converted into a multi-level partial cloverleaf grade separator in 2011.",
+        "source": "https://en.wikipedia.org/wiki/Arumbakkam"
+      }
+    ],
+    "Vadapalani, KK Nagar & Porur": [
+      {
+        "fact": "Vadapalani and Ashok Nagar stations opened on 29 June 2015 on the first Chennai Metro Green Line section from Koyambedu to Alandur.",
+        "source": "https://en.wikipedia.org/wiki/Green_Line_(Chennai_Metro)"
+      },
+      {
+        "fact": "The Yellow Line (Chennai Metro Phase II) from Poonamallee to Vadapalani, with stations including Porur Junction, Valasaravakkam, Alwarthirunagar and Virugambakkam South, is under construction.",
+        "source": "https://en.wikipedia.org/wiki/Yellow_Line_(Chennai_Metro)"
+      },
+      {
+        "fact": "The Inner Ring Road links Koyambedu, Vadapalani and Kathipara on its central arm.",
+        "source": "https://en.wikipedia.org/wiki/Inner_Ring_Road,_Chennai"
+      },
+      {
+        "fact": "Ashok Nagar was established in 1964, and the Tamil Nadu Housing Board built middle-income flats there and in KK Nagar during the 1970s.",
+        "source": "https://en.wikipedia.org/wiki/Ashok_Nagar,_Chennai"
+      },
+      {
+        "fact": "KK Nagar was developed in the 1970s and early 1980s as a grid of rectangular sectors, each with a park near the centre.",
+        "source": "https://en.wikipedia.org/wiki/K._K._Nagar,_Chennai"
+      },
+      {
+        "fact": "Arcot Road, one of Chennai's arterial roads, runs through Vadapalani, Virugambakkam and Valasaravakkam to Porur Junction.",
+        "source": "https://en.wikipedia.org/wiki/Porur"
+      },
+      {
+        "fact": "The Mount-Poonamallee Road stretch at Porur has become one of the city's important IT corridors.",
+        "source": "https://en.wikipedia.org/wiki/Porur"
+      }
+    ],
+    "Mogappair, Ambattur & Avadi": [
+      {
+        "fact": "Pattaravakkam, Ambattur, Thirumullaivoyal, Annanur and Avadi are stations on the Chennai Central to Arakkonam suburban section.",
+        "source": "https://en.wikipedia.org/wiki/Thirumullaivoyal_railway_station"
+      },
+      {
+        "fact": "The suburban lines through Ambattur and Avadi were first electrified on 29 November 1979, with the Chennai Central-Tiruvallur section; more lines followed on 2 October 1986 with the Villivakkam-Avadi section.",
+        "source": "https://en.wikipedia.org/wiki/Avadi_railway_station"
+      },
+      {
+        "fact": "The Ambattur Industrial Estate was commissioned in 1964 and is described as one of the biggest small-scale industrial estates in South Asia.",
+        "source": "https://en.wikipedia.org/wiki/Ambattur"
+      },
+      {
+        "fact": "The Chennai-Tiruvallur High Road (NH 716) passes through Ambattur.",
+        "source": "https://en.wikipedia.org/wiki/Ambattur"
+      },
+      {
+        "fact": "Avadi became Tamil Nadu's 15th municipal corporation in 2019, and the Chennai Outer Ring Road passes through western Avadi.",
+        "source": "https://en.wikipedia.org/wiki/Avadi"
+      },
+      {
+        "fact": "Mogappair lies on the state highway between Ambattur and Anna Nagar, with its nearest metro stations at Thirumangalam and Koyambedu.",
+        "source": "https://en.wikipedia.org/wiki/Mogappair"
+      }
+    ],
+    "Perambur, Kolathur & North Chennai": [
+      {
+        "fact": "Royapuram railway station opened in June 1856 as the first railway terminus in South India and has the oldest surviving station buildings of Indian Railways.",
+        "source": "https://en.wikipedia.org/wiki/Royapuram_railway_station"
+      },
+      {
+        "fact": "The Madras Railway set up its workshops at Perambur in 1856, and Perambur station is the second oldest in the city after Royapuram.",
+        "source": "https://en.wikipedia.org/wiki/Perambur_railway_station"
+      },
+      {
+        "fact": "The Blue Line extension from Washermanpet to Wimco Nagar, including Sir Theagaraya College and Tondiarpet stations, opened on 14 February 2021.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Chennai_Metro)"
+      },
+      {
+        "fact": "Washermanpet metro station on the Blue Line opened on 10 February 2019.",
+        "source": "https://en.wikipedia.org/wiki/Blue_Line_(Chennai_Metro)"
+      },
+      {
+        "fact": "Chennai Metro Phase II Red Line stations are under construction at Kolathur Junction, Srinivasa Nagar and Villivakkam.",
+        "source": "https://en.wikipedia.org/wiki/Red_Line_(Chennai_Metro)"
+      },
+      {
+        "fact": "The northern arm of the Inner Ring Road runs from Padi Junction towards Manali, meeting NH 5 at Madhavaram Junction.",
+        "source": "https://en.wikipedia.org/wiki/Inner_Ring_Road,_Chennai"
+      },
+      {
+        "fact": "Villivakkam and Perambur are stations on the Chennai Central to Arakkonam suburban section.",
+        "source": "https://en.wikipedia.org/wiki/Villivakkam"
+      }
+    ]
+  }
+}
