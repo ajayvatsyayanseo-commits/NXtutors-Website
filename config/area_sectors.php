@@ -206,6 +206,35 @@ return [
         'unitech-uniworld-resorts' => 'Sector 33', // https://www.squareyards.com/gurgaon-residential-property/unitech-uniworld-resorts-the-residences/289/project
         'unitech-world-spa' => 'Sectors 30 & 41', // https://www.nobroker.in/unitech-the-world-spa-sector-30_gurgaon-prjt-5ba00ebd714b5687a7dc8e51
         'uppal-southend' => 'Sector 49', // https://www.squareyards.com/gurgaon-residential-property/uppal-southend/21151/project
+        // Second research pass, 30 Sep 2026.
+        'vatika-india-next-inxt' => 'Sector 82', // https://www.99acres.com/vatika-india-next-sector-82-gurgaon-npxid-r1842
+        'vatika-seven-elements' => 'Sector 89A', // https://www.squareyards.com/gurgaon-residential-property/vatika-seven-elements/390/project
+        'vatika-seven-lamps' => 'Sector 82', // https://www.squareyards.com/gurgaon-residential-property/vatika-seven-lamps/146/project
+        'vatika-signature-two' => 'Sector 82', // https://www.commonfloor.com/vatika-india-next-signature-two-gurgaon/povp-sr315r
+        'vatika-signature-villas' => 'Sector 82', // https://www.squareyards.com/gurgaon-residential-property/vatika-signature-villas/130/project
+        'vatika-sovereign-apartments' => 'Sector 49', // https://www.99acres.com/vatika-the-sovereign-apartments-sector-49-gurgaon-npxid-r138987
+        'vipul-aarohan-residences' => 'Sector 53', // https://www.squareyards.com/gurgaon-residential-property/vipul-aarohan/8427/project
+        'vipul-belmonte' => 'Sector 53', // https://www.squareyards.com/gurgaon-residential-property/vipul-belmonte/401/project
+        'vipul-greens' => 'Sector 48', // https://www.99acres.com/vipul-greens-sector-48-gurgaon-npxid-r12234
+        'vipul-tatvam-villas' => 'Sector 48', // https://www.99acres.com/vipul-tatvam-villa-sector-48-gurgaon-npxid-r33
+        'the-laburnum' => 'Sector 28', // https://www.nobroker.in/the-laburnum-sector-28_gurgaon-prjt-5e972c71a5a1662dac0a7cad
+        'the-heritage-city' => 'Sector 25', // https://www.squareyards.com/gurgaon-residential-property/unitech-heritage-city/366/project
+        'omaxe-gurgaon-mall-residences' => 'Sector 49', // https://www.squareyards.com/gurgaon-residential-property/omaxe-gurgaon-mall/120824/project
+        'dlf-carlton-estate' => 'Sector 53', // https://www.nobroker.in/carlton-estate--sector-53_gurgaon-prjt-5ba00ebd714b5687a7dc8c1e
+        'dlf-richmond-park' => 'Sector 43', // https://www.bigestate.io/in/project/dlf-richmond-park-by-dlf-in-sector-43-golf-course-road-gurgaon
+        'dlf-regency-park-1' => 'Sector 43', // https://www.commonfloor.com/dlf-regency-park-i-gurgaon/povp-9i20fo
+        'adani-samsara' => 'Sector 60', // https://www.adanirealty.com/residential-projects/gurugram/samsara
+        'adani-aangan-phase-2' => 'Sector 89A', // https://www.adanirealty.com/residential-projects/gurugram/aangan
+        'tulip-orange' => 'Sector 70', // https://www.squareyards.com/gurgaon-residential-property/tulip-orange/198/project
+        'dlf-new-town-heights-1' => 'Sector 90', // https://www.squareyards.com/gurgaon-residential-property/dlf-new-town-heights-i/184/project
+        'dlf-new-town-heights-2' => 'Sector 86', // https://www.squareyards.com/gurgaon-residential-property/dlf-new-town-heights-ii/156/project
+        'dlf-new-town-heights-3' => 'Sector 91', // https://www.squareyards.com/gurgaon-residential-property/dlf-new-town-heights-iii/186/project
+        'the-edge-tower-residences' => 'Sector 37D', // https://www.99acres.com/ramprastha-the-edge-towers-sector-37d-gurgaon-npxid-r159
+        'sare-homes' => 'Sector 92', // https://www.squareyards.com/gurgaon-residential-property/sare-home/87948/project
+        'raheja-uniworld-city-pockets' => 'Sector 30', // https://www.squareyards.com/gurgaon-residential-property/unitech-uniworld-city/357/project
+        'paras-exotica' => 'Sector 53', // https://www.squareyards.com/gurgaon-residential-property/parsvnath-exotica/307/project
+        'vipul-orchid-petals' => 'Sector 49', // https://www.oidpl.com/orchid-petals.php
+        'supertech-southend' => 'Sector 49', // https://www.squareyards.com/gurgaon-residential-property/s-s-southend/87917/project
         // Pages covering a sector range: the zone of the first sector.
         'sectors-2628' => 'Sector 26',
         'sectors-4546' => 'Sector 45',
