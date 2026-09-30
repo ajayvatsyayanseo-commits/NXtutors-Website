@@ -56,6 +56,10 @@
         // "+9178360 34313" as stored; schema wants one clean international number.
         'telephone' => ($nxtTel = preg_replace('/\D+/', '', (string) ($setting->phone ?? ''))) !== '' ? '+' . $nxtTel : '',
         'email' => $setting->email ?? '',
+        // The Google Business Profile ("Nxtutors Edtech - Home Tutors", Sector 66),
+        // so Google ties the listing and this site together.
+        'sameAs' => ['https://www.google.com/search?kgmid=/g/11z1lm_3_m'],
+        'hasMap' => 'https://www.google.com/maps/search/?api=1&query=NXTutors+Edtech+Sector+66+Gurugram',
       ],
       [
         '@type' => 'WebSite',
