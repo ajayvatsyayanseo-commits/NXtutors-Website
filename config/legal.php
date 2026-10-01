@@ -33,7 +33,8 @@ return [
 
     // CIN from the MCA record. GSTIN not found in public records yet: not printed while null.
     'cin' => env('LEGAL_CIN', 'U85499HR2025PTC139508'),
-    'gstin' => env('LEGAL_GSTIN'),
+    // GST REG-06 certificate, issued 27 Dec 2025.
+    'gstin' => env('LEGAL_GSTIN', '06AALCN1246M1Z7'),
 
     'email' => env('LEGAL_EMAIL', 'support@nxtutors.com'),
     'phone' => env('LEGAL_PHONE', '+91 78360 34313'),
@@ -43,7 +44,7 @@ return [
     // name is set, the pages say "Grievance Officer, NXTutors".
     // Named by the owner on 1 Oct 2026.
     'grievance_officer' => env('LEGAL_GRIEVANCE_OFFICER', 'Ajay Tiwary'),
-    'grievance_designation' => env('LEGAL_GRIEVANCE_DESIGNATION', 'Grievance Officer'),
+    'grievance_designation' => env('LEGAL_GRIEVANCE_DESIGNATION', 'Director and Grievance Officer'),
     // UNCONFIRMED: a dedicated mailbox is better; falls back to support@.
     'grievance_email' => env('LEGAL_GRIEVANCE_EMAIL', 'support@nxtutors.com'),
 
