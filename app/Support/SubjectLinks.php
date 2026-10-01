@@ -45,6 +45,225 @@ class SubjectLinks
         return $local->values()->concat($national)->values()->all();
     }
 
+    /** Link groups, in display order, with their headings. */
+    public const KINDS = [
+        'board' => 'By board',
+        'board_subject' => 'By board and subject',
+        'subject' => 'By subject',
+        'class' => 'By class',
+        'exam' => 'Entrance exams',
+        'audience' => 'More ways to find a tutor',
+        'other' => 'More',
+    ];
+
+    /** Entrance exams that have their own pages (subject_label). */
+    public const EXAMS = ['JEE', 'NEET', 'MHT-CET', 'MHT CET', 'CUET', 'KCET', 'WBJEE', 'BITSAT', 'COMEDK', 'EAMCET', 'NDA', 'CLAT'];
+
+    /** Board words and the board they stand for (ISC rides with ICSE, as parents treat them). */
+    private const BOARD_WORDS = ['ib' => 'IB', 'igcse' => 'IGCSE', 'icse' => 'ICSE', 'isc' => 'ICSE', 'cbse' => 'CBSE', 'ssc' => 'SSC/HSC', 'hsc' => 'SSC/HSC', 'state-board' => 'State'];
+
+    /**
+     * What kind of page a subject_pages entry is, inferred from the fields it
+     * already has (an optional 'kind' field wins):
+     * board + subject → board_subject; board alone → board; JEE/NEET/MHT-CET
+     * label → exam; a class or a school stage → class; gender, online, home
+     * or a stream → audience; a subject → subject.
+     */
+    public static function kind(array $p, string $key = ''): string
+    {
+        if (! empty($p['kind']) && isset(self::KINDS[$p['kind']])) {
+            return $p['kind'];
+        }
+        $sl = strtoupper(trim((string) ($p['subject_label'] ?? '')));
+        $board = trim((string) ($p['board'] ?? ''));
+        $subject = trim((string) ($p['subject'] ?? ''));
+
+        if ($board !== '' && $subject !== '') {
+            return 'board_subject';
+        }
+        if ($board !== '') {
+            return 'board';
+        }
+        if (in_array($sl, self::EXAMS, true) || preg_match('/^(jee|neet|mht-cet|cuet)-/', $key)) {
+            return 'exam';
+        }
+        if ($subject === '' && preg_match('/^(CBSE|ICSE|ISC|IB|IGCSE|SSC|HSC|STATE BOARD|MAHARASHTRA)\b/', $sl)) {
+            return 'board';
+        }
+        if (! empty($p['gender']) || in_array($sl, ['ONLINE', 'COMMERCE', 'SCIENCE STREAM', 'ARTS', 'HUMANITIES'], true)
+            || ($sl === 'HOME' && empty($p['class']))) {
+            return 'audience';
+        }
+        if (! empty($p['class']) || in_array($sl, ['PRIMARY', 'NURSERY AND KG', 'NURSERY & KG', 'KG', 'PRE-PRIMARY'], true)) {
+            return $subject !== '' ? 'subject_class' : 'class';
+        }
+        if ($subject !== '') {
+            return 'subject';
+        }
+
+        return 'other';
+    }
+
+    /**
+     * Boards a page is about: its 'board' field plus board words in its key
+     * ("ib-igcse-chemistry-tutor-gurgaon" is IB and IGCSE). ISC counts as ICSE.
+     *
+     * @return list<string>
+     */
+    public static function boardsOf(array $p, string $key = ''): array
+    {
+        $out = [];
+        $b = strtolower(trim((string) ($p['board'] ?? '')));
+        if ($b !== '') {
+            $out[] = self::BOARD_WORDS[$b] ?? strtoupper($b);
+        }
+        foreach (self::BOARD_WORDS as $word => $board) {
+            if (preg_match('/(^|-)' . preg_quote($word, '/') . '(-|$)/', $key)) {
+                $out[] = $board;
+            }
+        }
+
+        return array_values(array_unique($out));
+    }
+
+    /** Class numbers a page covers: "Class 10" → [10], "Class 6–8" → [6,7,8], primary → 1–5, nursery → [0]. */
+    public static function classNumbers(array $p): array
+    {
+        $c = (string) ($p['class'] ?? '');
+        if (preg_match('/(\d{1,2})\s*[–—-]\s*(\d{1,2})/u', $c, $m)) {
+            return range((int) $m[1], (int) $m[2]);
+        }
+        if (preg_match('/(\d{1,2})/', $c, $m)) {
+            return [(int) $m[1]];
+        }
+        $sl = strtolower((string) ($p['subject_label'] ?? ''));
+
+        return match (true) {
+            str_contains($sl, 'primary') && ! str_contains($sl, 'pre') => [1, 2, 3, 4, 5],
+            str_contains($sl, 'nursery') || $sl === 'kg' || str_contains($sl, 'pre-primary') => [0],
+            default => [],
+        };
+    }
+
+    /**
+     * Link text for a page: its H1 without the bracketed detail
+     * ("IB Tutors in Mumbai (PYP, MYP & Diploma)" → "IB Tutors in Mumbai").
+     */
+    public static function anchor(array $p): string
+    {
+        $h = trim((string) ($p['h1'] ?? $p['label'] ?? ''));
+        $short = trim((string) preg_replace('/\s*\(.*$/u', '', $h));
+
+        return $short !== '' ? $short : $h;
+    }
+
+    /**
+     * The live pages of one city, keyed by page key, each with its kind,
+     * boards, URL and link text. Memoised per request.
+     *
+     * @return array<string, array>
+     */
+    public static function cityPages(?string $citySlug): array
+    {
+        static $memo = [];
+        if (! $citySlug) {
+            return [];
+        }
+        $sig = $citySlug . '|' . count(self::live());
+
+        return $memo[$sig] ??= collect(self::live())
+            ->filter(fn ($p) => ($p['city_slug'] ?? null) === $citySlug)
+            ->map(fn ($p, $k) => $p + [
+                'key' => $k,
+                'kind' => self::kind($p, $k),
+                'boards' => self::boardsOf($p, $k),
+                'url' => url('/' . $k),
+                'anchor' => self::anchor($p),
+            ])
+            ->all();
+    }
+
+    /**
+     * A city's pages grouped by kind (board, board × subject, subject, class,
+     * exam, audience), for hub, zone and area link blocks. Board and board ×
+     * subject links follow $boardOrder when given (a zone's board mix).
+     * Cities without pages of their own get the national subject pillars.
+     *
+     * @param  list<string>  $boardOrder
+     * @return array<string, array{title:string, items:list<array{url:string,label:string,key:string}>}>
+     */
+    public static function forCityGrouped(?string $citySlug, array $boardOrder = []): array
+    {
+        $pages = self::cityPages($citySlug);
+        if ($pages === []) {
+            return ['subject' => ['title' => self::KINDS['subject'], 'items' => array_map(fn ($p) => $p + ['key' => ltrim(parse_url($p['url'], PHP_URL_PATH) ?? '', '/')], self::pillars())]];
+        }
+
+        $rank = self::boardRank($boardOrder);
+        $groups = [];
+        foreach ($pages as $k => $p) {
+            $kind = $p['kind'] === 'subject_class' ? 'class' : $p['kind'];
+            $groups[$kind][] = $p;
+        }
+
+        $out = [];
+        foreach (array_keys(self::KINDS) as $kind) {
+            if (empty($groups[$kind])) {
+                continue;
+            }
+            $items = $groups[$kind];
+            if (in_array($kind, ['board', 'board_subject'], true) && $rank) {
+                $items = self::sortByBoards($items, $boardOrder);
+            }
+            $out[$kind] = [
+                'title' => self::KINDS[$kind],
+                'items' => array_map(fn ($p) => ['url' => $p['url'], 'label' => $p['anchor'], 'key' => $p['key']], $items),
+            ];
+        }
+
+        return $out;
+    }
+
+    /**
+     * Pages sorted so those about the earliest board in $boardOrder come
+     * first; a stable sort, so config order holds otherwise.
+     *
+     * @param  list<array>  $items  pages with 'boards'
+     * @param  list<string>  $boardOrder
+     */
+    public static function sortByBoards(array $items, array $boardOrder): array
+    {
+        $rank = self::boardRank($boardOrder);
+        if (! $rank) {
+            return array_values($items);
+        }
+        $i = 0;
+        $keyed = array_map(function ($p) use ($rank, &$i) {
+            $best = PHP_INT_MAX;
+            foreach ($p['boards'] ?? [] as $b) {
+                $best = min($best, $rank[$b] ?? PHP_INT_MAX);
+            }
+
+            return [$best, $i++, $p];
+        }, array_values($items));
+        usort($keyed, fn ($a, $b) => [$a[0], $a[1]] <=> [$b[0], $b[1]]);
+
+        return array_column($keyed, 2);
+    }
+
+    /** @return array<string,int> normalised board => position */
+    private static function boardRank(array $boardOrder): array
+    {
+        $rank = [];
+        foreach (array_values($boardOrder) as $i => $b) {
+            $n = strtolower(trim((string) $b));
+            $n = self::BOARD_WORDS[$n] ?? (str_contains($n, 'ssc') || str_contains($n, 'hsc') || str_contains($n, 'maharashtra') ? 'SSC/HSC' : strtoupper($n));
+            $rank[$n] ??= $i;
+        }
+
+        return $rank;
+    }
+
     /**
      * The best subject page for a subject name found in a title or slug
      * ("maths", "physics", …), preferring the city's own page.

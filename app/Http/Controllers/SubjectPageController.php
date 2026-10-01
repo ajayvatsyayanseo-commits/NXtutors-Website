@@ -6,6 +6,8 @@ use App\NxtAi\DTO\TutorSearchCriteria;
 use App\NxtAi\Services\TutorSearchService;
 use App\Support\BlogTopics;
 use App\Support\CityHub;
+use App\Support\LinkNest;
+use App\Support\SubjectLinks;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
@@ -105,13 +107,26 @@ class SubjectPageController extends Controller
         })->filter()->values();
     }
 
-    /** Breadcrumb parent, sibling and child pages, and cities with this subject. */
+    /**
+     * Where to go next from a subject page. A city page links only within its
+     * own city (plus the national pages): the national family, the board
+     * ladder, the city's other subjects, its other pages and guides, its zones
+     * and a rotating set of its localities (App\Support\LinkNest). A national
+     * page links the national family and the cities with this subject.
+     * No URL appears in two blocks.
+     */
     private function related(string $key, array $page, array $pages): array
     {
+        $citySlug = $page['city_slug'] ?? null;
+        $live = fn ($p) => view()->exists('subjects.content.' . $p['view']);
+        // City pages: national pages or the same city; never another city's pages.
+        $inScope = fn ($p) => ! $citySlug || empty($p['city_slug']) || $p['city_slug'] === $citySlug;
+        $link = fn ($p, $k) => ['url' => url('/' . $k), 'label' => $citySlug && ($p['city_slug'] ?? null) === $citySlug ? SubjectLinks::anchor($p) : $p['h1']];
+
         $root = $page['parent'] ?? $key;
         $family = collect($pages)
-            ->filter(fn ($p, $k) => $k !== $key && ($k === $root || ($p['parent'] ?? null) === $root) && view()->exists('subjects.content.' . $p['view']))
-            ->map(fn ($p, $k) => ['url' => url('/' . $k), 'label' => $p['h1']]);
+            ->filter(fn ($p, $k) => $k !== $key && ($k === $root || ($p['parent'] ?? null) === $root) && $inScope($p) && $live($p))
+            ->map($link);
 
         // The same board's page elsewhere: IB Gurgaon <-> IB national, and
         // ICSE <-> ISC, which parents treat as one ladder.
@@ -119,29 +134,45 @@ class SubjectPageController extends Controller
         if (! empty($page['board'])) {
             $family = $family->merge(collect($pages)
                 ->filter(fn ($p, $k) => $k !== $key && ($p['subject'] ?? null) === ($page['subject'] ?? null)
-                    && $boardOf($p['board'] ?? null) === $boardOf($page['board']) && view()->exists('subjects.content.' . $p['view']))
-                ->map(fn ($p, $k) => ['url' => url('/' . $k), 'label' => $p['h1']]));
+                    && $boardOf($p['board'] ?? null) === $boardOf($page['board']) && $inScope($p) && $live($p))
+                ->map($link));
         }
 
-        $otherSubjects = collect($pages)
-            ->filter(fn ($p, $k) => empty($p['parent']) && ($p['subject'] ?? null) !== ($page['subject'] ?? null) && view()->exists('subjects.content.' . $p['view']))
-            ->map(fn ($p, $k) => ['url' => url('/' . $k), 'label' => $p['h1']]);
+        // Board hub <-> board x subject <-> class, subject <-> board x subject (same city).
+        $ladder = collect(LinkNest::ladder($key, $page));
 
-        // Same city: its other subject pages, then its published local guides
+        // Other subjects: the same city's subject and exam pages on a city
+        // page; the national pillars on a national page.
+        $otherSubjects = collect($pages)
+            ->filter(function ($p, $k) use ($key, $page, $citySlug, $live) {
+                if ($k === $key || ($p['subject'] ?? null) === ($page['subject'] ?? null) && ($p['subject_label'] ?? null) === ($page['subject_label'] ?? null) || ! $live($p)) {
+                    return false;
+                }
+                if ($citySlug) {
+                    return ($p['city_slug'] ?? null) === $citySlug && in_array(SubjectLinks::kind($p, $k), ['subject', 'exam'], true);
+                }
+
+                return empty($p['parent']) && empty($p['city_slug']);
+            })
+            ->map($link);
+
+        // Same city: its other pages, then its published local guides
         // (zone guides from config/zone_guides.php plus the fee post).
         $city = [];
-        if (! empty($page['city_slug'])) {
+        $zones = [];
+        $localities = [];
+        if ($citySlug) {
             $city = collect($pages)
-                ->filter(fn ($p, $k) => $k !== $key && ($p['city_slug'] ?? null) === $page['city_slug'] && view()->exists('subjects.content.' . $p['view']))
-                ->map(fn ($p, $k) => ['url' => url('/' . $k), 'label' => $p['h1']])
+                ->filter(fn ($p, $k) => $k !== $key && ($p['city_slug'] ?? null) === $citySlug && $live($p))
+                ->map($link)
                 ->values()->all();
             $slugs = collect(config('zone_guides.' . \App\Support\Zones::cityKey($page['city'] ?? ''), []))
                 ->pluck('guide')->filter()->unique()
-                ->prepend('home-tuition-fees-' . ($page['city_slug'] === 'gurugram' ? 'gurgaon' : $page['city_slug']))
+                ->prepend('home-tuition-fees-' . ($citySlug === 'gurugram' ? 'gurgaon' : $citySlug))
                 ->values()->all();
             try {
-                $titles = \Illuminate\Support\Facades\DB::table('blog_managment')->where('status', 't')->whereIn('slug', $slugs)->pluck('title', 'slug');
-            } catch (\Throwable $e) {
+                $titles = DB::table('blog_managment')->where('status', 't')->whereIn('slug', $slugs)->pluck('title', 'slug');
+            } catch (Throwable $e) {
                 $titles = collect();
             }
             foreach ($slugs as $slug) {
@@ -149,9 +180,37 @@ class SubjectPageController extends Controller
                     $city[] = ['url' => url('/blog/' . $slug), 'label' => $titles[$slug]];
                 }
             }
+
+            try {
+                $zones = LinkNest::zones($citySlug);
+                $localities = LinkNest::localities($citySlug, $key);
+            } catch (Throwable $e) {
+                Log::warning('Subject page nest failed', ['page' => $key, 'error' => $e->getMessage()]);
+            }
         }
 
-        return ['family' => $family->values()->all(), 'subjects' => $otherSubjects->values()->all(), 'city' => $city];
+        // One link per URL, first block wins; never this page itself.
+        $seen = [url('/' . $key) => true];
+        $unique = function ($items) use (&$seen) {
+            $out = [];
+            foreach ($items as $r) {
+                if (! isset($seen[$r['url']])) {
+                    $seen[$r['url']] = true;
+                    $out[] = $r;
+                }
+            }
+
+            return $out;
+        };
+
+        return [
+            'family' => $unique($family->values()->all()),
+            'ladder' => $unique($ladder->all()),
+            'subjects' => $unique($otherSubjects->values()->all()),
+            'city' => $unique($city),
+            'zones' => $zones,
+            'localities' => $localities,
+        ];
     }
 
     /** Guides for this subject, newest first. */

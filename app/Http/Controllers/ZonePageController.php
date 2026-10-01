@@ -52,13 +52,15 @@ class ZonePageController extends Controller
         $zoneDemand = AreaDemand::recentForZone($cityName, $zone);
 
         $siblings = ZonePages::live($city->slug)->reject(fn ($z) => $z->name === $zone)->values();
-        $subjects = SubjectLinks::forCity($city->slug);
+        // The city's subject / board / class / exam pages grouped by kind, boards
+        // in the zone's own order when its JSON entry has a "boards" list.
+        $nestGroups = SubjectLinks::forCityGrouped($city->slug, \App\Support\LinkNest::zoneBoards($city->slug, $zone));
 
         $metatitle = $seo['title'];
         $metadesc = $seo['desc'];
         $metakey = '';
 
         return view('city.zone', compact('city', 'zone', 'content', 'zoneAreas', 'seo', 'state', 'tips',
-            'guidePost', 'tutorCards', 'realInZone', 'zoneDemand', 'siblings', 'subjects', 'metatitle', 'metadesc', 'metakey'));
+            'guidePost', 'tutorCards', 'realInZone', 'zoneDemand', 'siblings', 'nestGroups', 'metatitle', 'metadesc', 'metakey'));
     }
 }

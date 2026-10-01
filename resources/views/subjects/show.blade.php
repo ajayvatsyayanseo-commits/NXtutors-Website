@@ -125,13 +125,14 @@
     ])])
 
     {{-- Where to go next: class, board and city pages that exist, then the other subjects. --}}
-    @if(count($related['family']) || count($related['subjects']) || !empty($page['city_slug']))
+    @if(count($related['family']) || count($related['ladder'] ?? []) || count($related['subjects']) || !empty($page['city_slug']))
       <section class="nx-sec" aria-labelledby="exploreTitle">
         <div class="nx-sec__head">
           <h2 class="nx-sec__title" id="exploreTitle">Find the right {{ \App\Support\SubjectLinks::lcLabel($page['subject_label'] ?? ($page['subject'] ?? '')) }} tutor faster</h2>
         </div>
         <ul class="nx-chips nx-chips--rail">
           @foreach($related['family'] as $r)<li><a class="nx-chip" href="{{ $r['url'] }}">{{ $r['label'] }}</a></li>@endforeach
+          @foreach($related['ladder'] ?? [] as $r)<li><a class="nx-chip" href="{{ $r['url'] }}">{{ $r['label'] }}</a></li>@endforeach
           @foreach($related['subjects'] as $r)<li><a class="nx-chip nx-chip--muted" href="{{ $r['url'] }}">{{ $r['label'] }}</a></li>@endforeach
           @if(!empty($page['city_slug']))
             {{-- "Gurgaon" for Gurugram: still what most parents type. --}}
@@ -153,6 +154,9 @@
         </ul>
       </section>
     @endif
+
+    {{-- The city's zones and a rotating set of its localities (App\Support\LinkNest). --}}
+    @include('subjects.partials.nest', ['related' => $related, 'page' => $page])
 
     @include('subjects.content.' . $page['view'], ['page' => $page, 'allAreas' => $allAreas])
 

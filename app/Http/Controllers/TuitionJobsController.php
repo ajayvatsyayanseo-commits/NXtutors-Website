@@ -80,12 +80,18 @@ class TuitionJobsController extends Controller
         $zones = collect();
         if ($zonesCfg) {
             $coverage = TutorCascade::realTutorsByZone($city, $cityName);
+            // Every active area under its zone (not the first six): this page is
+            // a crawl path to each area as well as a recruitment page.
+            $byZone = $areas->unique('slug')->groupBy(fn ($a) => CityHub::zoneOfArea($city, $cityName, $a) ?? '');
             $zones = collect($zonesCfg)->keys()->map(fn ($z) => [
                 'name' => $z,
                 'needed' => ($coverage[$z] ?? 0) < self::NEEDED_BELOW,
-                'areas' => $areas->filter(fn ($a) => CityHub::zoneOfArea($city, $cityName, $a) === $z)
-                    ->sortBy(fn ($a) => $a->name, SORT_NATURAL | SORT_FLAG_CASE)->take(6)->values(),
+                'areas' => collect($byZone[$z] ?? [])->sortBy(fn ($a) => $a->name, SORT_NATURAL | SORT_FLAG_CASE)->values(),
             ])->sortBy(fn ($z) => $z['needed'] ? 0 : 1)->values();
+            if (! empty($byZone[''])) {
+                $zones->push(['name' => 'Other areas of ' . $cityName, 'needed' => false,
+                    'areas' => collect($byZone[''])->sortBy(fn ($a) => $a->name, SORT_NATURAL | SORT_FLAG_CASE)->values()]);
+            }
         }
 
         $requests = AreaDemand::recentForCity($cityName);

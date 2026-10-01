@@ -174,17 +174,6 @@
       'aiPage' => ['type' => 'city', 'city' => $city->city_name],
     ])
 
-    {{-- Subject pages for this city (or the national ones). --}}
-    @php $citySubjects = \App\Support\SubjectLinks::forCity($city->slug); @endphp
-    @if(count($citySubjects))
-      <section class="nx-sec" aria-labelledby="bySubjectTitle">
-        <div class="nx-sec__head"><h2 class="nx-sec__title" id="bySubjectTitle">Home tutors in {{ $city->city_name }} by subject</h2></div>
-        <ul class="nx-chips nx-chips--rail">
-          @foreach($citySubjects as $sp)<li><a class="nx-chip" href="{{ $sp['url'] }}">{{ $sp['label'] }}</a></li>@endforeach
-        </ul>
-      </section>
-    @endif
-
     {{-- Zone pages that pass the ZonePages gate (written text + 3 areas). --}}
     @if(isset($hubZones) && $hubZones->count())
       <section class="nx-sec" aria-labelledby="byZoneTitle">
@@ -194,6 +183,12 @@
         </ul>
       </section>
     @endif
+
+    {{-- The city's subject pages grouped by kind: boards, board x subject,
+         subjects, classes, exams, audience (or the national pillars). --}}
+    @include('partials.nest-groups', ['groups' => \App\Support\SubjectLinks::forCityGrouped($city->slug), 'nestId' => 'bySubjectTitle',
+      'nestTitle' => 'Home tutors in ' . $city->city_name . ' by board, subject and class'])
+
 
     {{-- Areas: search + cards (nine, more by AJAX), then every area as a
          chip. The first chips show; the rest sit in "Show all", still in the

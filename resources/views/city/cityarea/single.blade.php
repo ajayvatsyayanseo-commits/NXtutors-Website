@@ -20,17 +20,18 @@
       ? asset('storage/city/'.$city->avatar)
       : asset('storage/Hero/heroimage-1280.webp');
 
-    // -------- Breadcrumb schema ----------
+    // -------- Breadcrumb: Home › City › Zone › Area ----------
+    // The zone is a level only when its page is live (ZonePages gate); the
+    // visible trail and the BreadcrumbList are built from the same list.
+    $crumbs = [['Home', $baseUrl], [$city?->city_name ?? 'City', $cityUrl]];
+    if (!empty($zoneName) && !empty($zoneUrl)) {
+      $crumbs[] = [$zoneName, $zoneUrl];
+    }
+    $crumbs[] = [$areaSeo['name'] ?? $area->name, $pageUrl];
     $breadcrumb = [
       "@context" => "https://schema.org",
       "@type" => "BreadcrumbList",
-      "itemListElement" => [
-        ["@type"=>"ListItem","position"=>1,"name"=>"Home","item"=>$baseUrl],
-        ["@type"=>"ListItem","position"=>2,"name"=>"India","item"=>url('/city')],
-        ["@type"=>"ListItem","position"=>3,"name"=>$areaState ?? "India","item"=>url('/city').'#'.\App\Support\Geo::stateSlug($areaState ?? '')],
-        ["@type"=>"ListItem","position"=>4,"name"=>$city?->city_name ?? "City","item"=>$cityUrl],
-        ["@type"=>"ListItem","position"=>5,"name"=>$areaSeo['name'] ?? $area->name,"item"=>$pageUrl],
-      ],
+      "itemListElement" => array_map(fn ($c, $i) => ["@type"=>"ListItem","position"=>$i + 1,"name"=>$c[0],"item"=>$c[1]], $crumbs, array_keys($crumbs)),
     ];
 
     // -------- Place schema ----------
@@ -122,13 +123,11 @@
       </div>
 
       <div class="hero-body">
-        <div class="crumb">
-          <a href="{{ url('/') }}">Home</a> <span>›</span>
-          <a href="{{ url('/city') }}">India</a> <span>›</span>
-          <a href="{{ url('/city') }}#{{ \App\Support\Geo::stateSlug($areaState ?? '') }}">{{ $areaState }}</a> <span>›</span>
-          <a href="{{ $cityUrl }}">{{ $city?->city_name ?? 'City' }}</a> <span>›</span>
-          <span>{{ $areaSeo['name'] ?? $area->name }}</span>
-        </div>
+        <nav class="crumb" aria-label="Breadcrumb">
+          @foreach($crumbs as $c)
+            @if($loop->last)<span aria-current="page">{{ $c[0] }}</span>@else<a href="{{ $c[1] }}">{{ $c[0] }}</a> <span aria-hidden="true">›</span>@endif
+          @endforeach
+        </nav>
 
         <h1 class="hero-title">{{ $areaSeo['h1'] ?? ($area->main_title ?? $area->name) }}</h1>
 
@@ -331,20 +330,6 @@
 
 
 
-    {{-- RELATED AREAS --}}
-@if(isset($relatedAreas) && $relatedAreas->count())
-<section class="cardx block section" id="related-areas">
-  {{-- Names and links only: other pages' descriptions copied here made
-       neighbouring pages look alike. Same-zone neighbours when known. --}}
-  <h2 class="h2"><span></span>@if($zoneName)More areas in {{ $zoneName }}@else Areas near {{ $areaSeo['name'] ?? $area->name }}@endif</h2>
-  <ul class="nxzone__areas">
-    @foreach(($neighbours ?? collect())->take(12) as $nb)
-      <li><a href="{{ url('/city/' . $city->slug . '/' . $nb->slug) }}">{{ $nb->name }}</a></li>
-    @endforeach
-  </ul>
-</section>
-@endif
-
     {{-- This area's own subject / board pages and local guides, then the
          way back up to the city, state and India. --}}
     @if(isset($areaPages) && $areaPages->count())
@@ -379,9 +364,10 @@
     </section>
     @endif
 
+    @include('city.cityarea.partials.area-nest')
+
     <nav class="nx-sec" aria-label="More places" style="margin-top:var(--nxt-s5)">
       <ul class="nx-chips nx-chips--rail">
-        @foreach(\App\Support\SubjectLinks::forCity($city?->slug) as $sp)<li><a class="nx-chip" href="{{ $sp['url'] }}">{{ $sp['label'] }}</a></li>@endforeach
         <li><a class="nx-chip" href="{{ $cityUrl }}">All areas in {{ $city?->city_name }}</a></li>
         <li><a class="nx-chip" href="{{ url('/city') }}#{{ \App\Support\Geo::stateSlug($areaState ?? '') }}">Other cities in {{ $areaState }}</a></li>
         <li><a class="nx-chip" href="{{ url('/city') }}">All cities in India</a></li>

@@ -868,7 +868,15 @@ public function compareDefaults(Request $request)
     // Google's index so they do not dilute the real guides.
     $metarobots = \App\Support\BlogTopics::of(trim((string) $blog->slug)) === 'city' ? 'noindex, follow' : null;
 
-    return view('blog.show', compact('blog','prev','next','related','canonical','metatitle','metakey','metadesc','pageTeachers','metarobots'));
+    // A post about one city ends with that city's hub, the zones its area
+    // links fall in and a few of its subject / board pages (App\Support\LinkNest).
+    try {
+        $cityNest = \App\Support\LinkNest::forBlog((string) $blog->slug, (string) ($blog->bdesc ?? ''));
+    } catch (\Throwable $e) {
+        $cityNest = null;
+    }
+
+    return view('blog.show', compact('blog','prev','next','related','canonical','metatitle','metakey','metadesc','pageTeachers','metarobots','cityNest'));
     }
 
     //  public function teachers(Request $request)
@@ -1314,6 +1322,19 @@ public function cityAreaShow($citySlug, $areaSlug)
     // The zone's own page, when it passes the ZonePages gate.
     $zoneUrl = \App\Support\ZonePages::liveUrl($city->slug, $zoneName);
 
+    // The link nest (App\Support\LinkNest): the zone page, 4-6 city pages
+    // picked by the zone's board mix, and nearby areas in the zone.
+    $nest = [
+        'zone' => $zoneName,
+        'zoneUrl' => $zoneUrl,
+        'pages' => \App\Support\LinkNest::forArea($city->slug, (string) $area->slug, $areaName, $zoneName),
+        // No known zone: the same-pincode and alphabetical neighbours instead.
+        'nearby' => $zoneName !== null
+            ? \App\Support\LinkNest::nearby($city->slug, $zoneName, (string) $area->slug)
+            : $relatedAreas->take(8)->map(fn ($a) => (object) ['name' => \App\Support\CityHub::cleanAreaName($a->name, $a->slug), 'slug' => $a->slug,
+                'url' => url('/city/' . $city->slug . '/' . $a->slug), 'zone' => null])->values()->all(),
+    ];
+
     // Anonymised recent requests near this area (App\Support\AreaDemand).
     $areaDemand = \App\Support\AreaDemand::recentFor($city->city_name, $areaName, $zoneName);
 
@@ -1355,7 +1376,7 @@ public function cityAreaShow($citySlug, $areaSlug)
             $metakey = '';
             $metadesc = $city->meta_desc;
 
-    return view('city.cityarea.single', compact('city', 'area','relatedAreas','tutors','tutorScope','metatitle','metakey','metadesc','areaPages','areaGuides','areaState','areaSeo','zoneName','zoneGuide','zoneAreas','areaDemand','tutorCards','glance','neighbours','zoneUrl'));
+    return view('city.cityarea.single', compact('city', 'area','relatedAreas','tutors','tutorScope','metatitle','metakey','metadesc','areaPages','areaGuides','areaState','areaSeo','zoneName','zoneGuide','zoneAreas','areaDemand','tutorCards','glance','neighbours','zoneUrl','nest'));
 }
    public function contactpage()
     {

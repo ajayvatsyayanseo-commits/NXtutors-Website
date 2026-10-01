@@ -319,6 +319,21 @@
       </ul>
     </section>
 
+    {{-- City posts: the city's hub, its zones and pages (App\Support\LinkNest). --}}
+    @if(!empty($cityNest))
+      @php $cnSeen = $postArea ? [url('/city/gurugram')] : []; @endphp
+      <section class="nxsec nx-sec" id="city-nest" aria-labelledby="cityNestTitle">
+        <div class="nx-sec__head">
+          <h2 class="nx-sec__title" id="cityNestTitle">More for families in {{ $cityNest['city'] }}</h2>
+        </div>
+        <ul class="nx-chips nx-chips--rail">
+          @unless(in_array($cityNest['hub'], $cnSeen, true))<li><a class="nx-chip" href="{{ $cityNest['hub'] }}">{{ $cityNest['hub_label'] }}</a></li>@endunless
+          @foreach($cityNest['zones'] as $z)<li><a class="nx-chip" href="{{ $z->url }}">Home tutors in {{ $z->name }}</a></li>@endforeach
+          @foreach($cityNest['pages'] as $p)<li><a class="nx-chip" href="{{ $p['url'] }}">{{ $p['label'] }}</a></li>@endforeach
+        </ul>
+      </section>
+    @endif
+
   </main>
 
   @include('include.footer')
