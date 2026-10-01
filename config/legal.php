@@ -22,17 +22,17 @@
 
 return [
 
-    // UNCONFIRMED: exact registered name as on the certificate of incorporation.
-    'entity_name' => env('LEGAL_ENTITY', 'NXTutors EdTech Private Limited'),
+    // MCA record (ZaubaCorp, as on 13 Jul 2026): incorporated 19 Dec 2025, RoC Delhi.
+    'entity_name' => env('LEGAL_ENTITY', 'NXTUTORS EDTECH PRIVATE LIMITED'),
 
     // Brand the public knows.
     'brand' => 'NXTutors',
 
-    // UNCONFIRMED: is this the registered office or only the operating office?
-    'address' => env('LEGAL_ADDRESS', 'BLK-2/49, M3M Cosmopolitan, off Golf Course Extension Road, Sector 66, Gurugram, Haryana 122101, India'),
+    // Registered office per the MCA record (COS/R/1L/BLK2/49, M3M Sec 66, Cosmopolitan, off Golf Extn Rd, Badshahpur, Gurgaon).
+    'address' => env('LEGAL_ADDRESS', 'COS/R/1L/BLK-2/49, M3M Cosmopolitan, Sector 66, off Golf Course Extension Road, Badshahpur, Gurugram, Haryana 122101, India'),
 
-    // UNCONFIRMED: Corporate Identification Number and GSTIN. Not printed while null.
-    'cin' => env('LEGAL_CIN'),
+    // CIN from the MCA record. GSTIN not found in public records yet: not printed while null.
+    'cin' => env('LEGAL_CIN', 'U85499HR2025PTC139508'),
     'gstin' => env('LEGAL_GSTIN'),
 
     'email' => env('LEGAL_EMAIL', 'support@nxtutors.com'),
@@ -41,7 +41,8 @@ return [
     // UNCONFIRMED: name of the Grievance Officer (Consumer Protection (E-Commerce)
     // Rules 2020 r.4(4)/(5) and IT Rules 2021 r.3(2) need a named person). Until a
     // name is set, the pages say "Grievance Officer, NXTutors".
-    'grievance_officer' => env('LEGAL_GRIEVANCE_OFFICER'),
+    // Named by the owner on 1 Oct 2026.
+    'grievance_officer' => env('LEGAL_GRIEVANCE_OFFICER', 'Ajay Tiwary'),
     'grievance_designation' => env('LEGAL_GRIEVANCE_DESIGNATION', 'Grievance Officer'),
     // UNCONFIRMED: a dedicated mailbox is better; falls back to support@.
     'grievance_email' => env('LEGAL_GRIEVANCE_EMAIL', 'support@nxtutors.com'),
