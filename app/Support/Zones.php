@@ -28,7 +28,8 @@ class Zones
         // Named places first ("sector 37d" is Dwarka Expressway, not sector 37).
         foreach ($zones as $zone => $z) {
             foreach ($z['names'] ?? [] as $name) {
-                if (str_contains($t, ' ' . $name . ' ') || str_contains($t, ' ' . $name)) {
+                // Whole word at the end: 'spr' must not match 'palm springs'.
+                if (preg_match('/ ' . preg_quote($name, '/') . '(?![a-z])/', $t) === 1) {
                     return $zone;
                 }
             }
