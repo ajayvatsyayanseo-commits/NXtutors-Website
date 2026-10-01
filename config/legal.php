@@ -45,13 +45,13 @@ return [
     // Named by the owner on 1 Oct 2026.
     'grievance_officer' => env('LEGAL_GRIEVANCE_OFFICER', 'Ajay Tiwary'),
     'grievance_designation' => env('LEGAL_GRIEVANCE_DESIGNATION', 'Director and Grievance Officer'),
-    // UNCONFIRMED: a dedicated mailbox is better; falls back to support@.
-    'grievance_email' => env('LEGAL_GRIEVANCE_EMAIL', 'support@nxtutors.com'),
+    // Dedicated mailbox, set up by the owner on 1 Oct 2026.
+    'grievance_email' => env('LEGAL_GRIEVANCE_EMAIL', 'grievance@nxtutors.com'),
 
     // Person who answers questions about personal data (DPDP Rules 2025 r.9).
     // UNCONFIRMED: falls back to the Grievance Officer.
     'privacy_contact' => env('LEGAL_PRIVACY_CONTACT'),
-    'privacy_email' => env('LEGAL_PRIVACY_EMAIL', 'support@nxtutors.com'),
+    'privacy_email' => env('LEGAL_PRIVACY_EMAIL', 'grievance@nxtutors.com'),
 
     // Courts with exclusive jurisdiction.
     'jurisdiction' => 'Gurugram, Haryana',

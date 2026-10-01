@@ -104,6 +104,10 @@
           <a class="nxbtn nxbtn--accent" href="{{ url('/contact') }}">Contact us</a>
           <a class="nxbtn" href="mailto:{{ $legal['grievance_email'] }}">{{ $legal['grievance_email'] }}</a>
         </div>
+        <p class="nxlegal-help__text">
+          {{ $legal['entity_name'] }}@if($legal['cin']) · CIN {{ $legal['cin'] }}@endif @if($legal['gstin'])· GSTIN {{ $legal['gstin'] }}@endif<br>
+          Registered office: {{ $legal['address'] }}
+        </p>
       </aside>
 
     </div>
