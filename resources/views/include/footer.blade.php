@@ -53,7 +53,7 @@
     <div class="footer-col footer-col--brand">
       <h3 class="footer-logo">NXTutors</h3>
       <p class="footer-desc">
-        Verified home and online tutors across India, from Gurugram and Delhi NCR to every major city.
+        Home and online tutors across India, from Gurugram and Delhi NCR to every major city.
         Trusted by 4,500+ parents for CBSE, ICSE, ISC, IB, IGCSE and state boards.
       </p>
 
@@ -95,8 +95,6 @@
         <li><a href="{{ url('/')}}/pricing-guide">Pricing Guide</a></li>
         <li><a href="{{ url('/')}}/authors">Our Authors</a></li>
         <li><a href="{{ url('/')}}/faqs">FAQs</a></li>
-        <li><a href="{{ url('/')}}/terms-conditions">Terms &amp; Conditions</a></li>
-        <li><a href="{{ url('/')}}/privacy-policy">Privacy Policy</a></li>
       </ul>
     </div>
 
@@ -143,6 +141,15 @@
   </div>
 
   <div class="footer-bottom">
+    {{-- Every policy page (App\Http\Controllers\LegalController::PAGES). --}}
+    <nav class="footer-legal" aria-label="Legal">
+      <span class="footer-legal__head">Legal</span>
+      <ul>
+        @foreach(\App\Http\Controllers\LegalController::PAGES as $legalSlug => $legalPage)
+          <li><a href="{{ url('/' . $legalSlug) }}">{{ $legalPage['label'] }}</a></li>
+        @endforeach
+      </ul>
+    </nav>
     <span>© <span id="year"></span> NXTutors — All rights reserved.</span>
   </div>
 </footer>

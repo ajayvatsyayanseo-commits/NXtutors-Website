@@ -677,12 +677,18 @@ public function userforget(Request $request){
 }
 public function verifyOtp(Request $request)
 {
-    $otp = $request->otp;
+    $otp = trim((string) $request->otp);
  
     $sessionEmail = session('emails');
  
         $user = Register::where('email', $sessionEmail)->first();
+        // The code must match the one we sent; the earlier /check-otp call is
+        // only a client-side hint and can be skipped.
+        if (! $user || $otp === '' || empty($user->otp) || ! hash_equals((string) $user->otp, $otp)) {
+            return response()->json(['message' => 'Invalid or expired OTP.', 'success' => false], 422);
+        }
         if ($user) {
+            $user->otp = null;
             $user->otp_status = 't';  
             $user->status ='t';
             $user->save();
@@ -699,13 +705,16 @@ public function verifyOtp(Request $request)
 
 public function everifyOtp(Request $request)
 {
-    $otp = $request->otp;
+    $otp = trim((string) ($request->eotp ?? $request->otp));
  
     $sessionEmail = session('emails');
  
         $user = Student_Enquiry_Managment::where('email', $sessionEmail)->first();
 
-        
+        // Same rule as verifyOtp: the sent code must match.
+        if (! $user || $otp === '' || empty($user->eotp) || ! hash_equals((string) $user->eotp, $otp)) {
+            return response()->json(['message' => 'Invalid or expired OTP.', 'success' => false], 422);
+        }
         if ($user) {
             $user->otp_status = 't';  
             $user->status ='t';

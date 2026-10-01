@@ -114,7 +114,9 @@
     {{-- HERO --}}
     <section class="cardx hero">
       <div class="hero-img">
-        <img src="{{ $cityImg }}" alt="{{ $city?->city_name ?? 'City' }}">
+        {{-- 160x110, full width on phones: thumbs (App\Support\Thumb); $cityImg stays the schema image. --}}
+        @php $cityImgSet = \App\Support\Thumb::srcset($cityImg, [320, 480, 640]); @endphp
+        <img src="{{ \App\Support\Thumb::url($cityImg, 320) }}"@if($cityImgSet !== '') srcset="{{ $cityImgSet }}" sizes="(max-width: 640px) 92vw, 160px"@endif alt="{{ $city?->city_name ?? 'City' }}" decoding="async">
       </div>
 
       <div class="hero-body">
@@ -142,7 +144,7 @@
             <div class="badge">⭐ Rating: <strong>{{ number_format((float)$area->average_rating, 1) }}/5</strong></div>
             <div class="badge">🗣 Reviews: <strong>{{ $areaReviewCount }}</strong></div>
           @endif
-          <div class="badge">✅ Verified Tutors</div>
+          <div class="badge">✅ Free demo class</div>
         </div>
 
         <div class="hero-cta">

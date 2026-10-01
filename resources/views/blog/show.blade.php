@@ -216,7 +216,7 @@
       <section class="nxsec nx-sec" aria-label="About the author">
         <article class="nx-card nx-author" style="max-width:720px">
           <div class="nx-author__top">
-            <img src="{{ $postAuthor['image'] ?: asset('frount/assets/images/tutor1.jpg') }}" alt="{{ $postAuthor['name'] }}" width="64" height="64" loading="lazy">
+            <img src="{{ $postAuthor['image'] ? \App\Support\Thumb::url($postAuthor['image'], 160) : asset('frount/assets/images/tutor1.jpg') }}" alt="{{ $postAuthor['name'] }}" width="64" height="64" loading="lazy" decoding="async">
             <div>
               <span class="nx-card__kicker">Written by</span>
               <h2 class="nx-card__title"><a href="{{ $postAuthor['author_url'] }}">{{ $postAuthor['name'] }}</a></h2>

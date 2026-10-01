@@ -639,7 +639,7 @@ function renderComparePieChart(tutors) {
             _compareId: matched.id || t.id || "",
             _wa: matched.wa || "#",
             _profile: matched.profile || "#",
-            img: matched.img || t.img || "",
+            img: matched.thumb || matched.img || t.img || "",
             rating: matched.rating || t.rating || "0.0",
             reviews: matched.reviews || t.reviews || "0"
           };

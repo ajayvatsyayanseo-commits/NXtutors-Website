@@ -230,4 +230,25 @@ class ZonePagesTest extends TestCase
         // An area in a zone that is not live links nowhere.
         $this->get('/city/gurugram/vatika-city-sector-49-gurugram')->assertOk()->assertDontSee('/zone/', false);
     }
+
+    public function test_tutor_cards_on_the_page_use_photo_thumbnails(): void
+    {
+        $this->writeZones(['Golf Course Road' => $this->golfCourseRoad()]);
+        // A real upload for one tutor (App\Support\Thumb only thumbnails files that exist).
+        $folder = 'uploads/zz-zonethumb-' . uniqid();
+        File::ensureDirectoryExists(public_path($folder));
+        $img = imagecreatetruecolor(900, 900);
+        imagejpeg($img, public_path($folder . '/face.jpg'));
+        DB::table('register')->where('user_id', 10)->update(['avatar' => basename($folder) . '/face.jpg']);
+
+        try {
+            $html = $this->get('/city/gurugram/zone/golf-course-road')->assertOk()->getContent();
+            $rel = $folder . '/face.jpg';
+            $this->assertStringContainsString('src="' . e(\App\Support\Thumb::url($rel, 480)) . '"', $html);
+            $this->assertStringContainsString('/img/t/640?src=' . rawurlencode($rel), $html);
+            $this->assertStringNotContainsString('src="' . asset($rel) . '"', $html);
+        } finally {
+            File::deleteDirectory(public_path($folder));
+        }
+    }
 }

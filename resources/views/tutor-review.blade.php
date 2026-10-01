@@ -74,7 +74,7 @@
     <aside class="rv-side">
       <div class="rv-panel">
         <div class="rv-tutor">
-          <img src="{{ $tutorImg }}" alt="{{ $teacher->name }}" onerror="this.src='{{ asset('frount/assets/images/tutor1.jpg') }}'">
+          <img src="{{ \App\Support\Thumb::url($tutorImg, 240) }}" alt="{{ $teacher->name }}" width="84" height="84" decoding="async" onerror="this.onerror = null; this.src = {{ json_encode(asset('frount/assets/images/tutor1.jpg'), JSON_UNESCAPED_SLASHES) }};">
           <div>
             <h1>Review {{ $teacher->name }}</h1>
             <p>

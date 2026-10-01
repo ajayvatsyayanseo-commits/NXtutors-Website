@@ -18,6 +18,9 @@ final class TutorCardMapper
             'ref' => $t['ref'] ?? null,
             'name' => $t['name'] ?? 'Tutor',
             'image_url' => $t['image_url'] ?? null,
+            // A small copy for the chat's 30px card icon (App\Support\Thumb);
+            // image_url stays the original.
+            'thumb_url' => ! empty($t['image_url']) ? \App\Support\Thumb::url((string) $t['image_url'], 96) : null,
             'profile_url' => $t['profile_url'] ?? null,
             'match_score' => $t['match_score'] ?? null,
         ];

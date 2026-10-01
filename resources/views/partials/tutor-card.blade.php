@@ -72,6 +72,16 @@
   $tcInitials = mb_strtoupper(mb_substr($tcWords[0] ?? 'T', 0, 1).(count($tcWords) > 1 ? mb_substr(end($tcWords), 0, 1) : ''));
   $tcHues = [['#4F46E5', '#7C3AED'], ['#0E7490', '#0891B2'], ['#B45309', '#D97706'], ['#9D174D', '#BE185D'], ['#166534', '#15803D'], ['#1D4ED8', '#2563EB']];
   $tcHue = $tcHues[crc32((string) $t->name) % count($tcHues)];
+
+  // A resized copy instead of the full upload (App\Support\Thumb): the photo
+  // is the card's width, which on a phone is the whole screen. If a thumb
+  // fails, the error handler falls back to the original, then the generic one.
+  $tcSrcset = $tcNoPhoto ? '' : \App\Support\Thumb::srcset($tcImg, [320, 480, 640]);
+  $tcSrc = $tcSrcset !== '' ? \App\Support\Thumb::url($tcImg, 480) : $tcImg;
+  if (! empty($compare) && ! $tcNoPhoto) {
+    // The compare dock shows a 34px face.
+    $compare['img'] = \App\Support\Thumb::url($tcImg, 96);
+  }
 @endphp
 <article class="tutor-card{{ $isSample ? ' tutor-card--sample' : '' }}">
   <div class="tutor-photo{{ $tcNoPhoto ? ' tutor-photo--mono' : '' }}">
@@ -84,8 +94,8 @@
         <text x="80" y="72" text-anchor="middle" font-family="'Bricolage Grotesque',Manrope,system-ui,sans-serif" font-size="40" font-weight="800" fill="#fff" letter-spacing="1">{{ $tcInitials }}</text>
       </svg>
     @else
-      <img src="{{ $tcImg }}" alt="{{ $t->name }}" loading="lazy" decoding="async"
-           onerror="this.src='{{ asset('frount/assets/images/tutor1.jpg') }}'">
+      <img src="{{ $tcSrc }}"@if($tcSrcset !== '') srcset="{{ $tcSrcset }}" sizes="(max-width: 640px) 92vw, 360px"@endif alt="{{ $t->name }}" loading="lazy" decoding="async"
+           onerror="if (this.srcset) { this.removeAttribute('srcset'); this.src = {{ json_encode($tcImg, JSON_UNESCAPED_SLASHES) }}; } else { this.onerror = null; this.src = {{ json_encode(asset('frount/assets/images/tutor1.jpg'), JSON_UNESCAPED_SLASHES) }}; }">
     @endif
 
     @if($isSample)

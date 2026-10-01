@@ -148,7 +148,8 @@
     </nav>
 
     <div class="hero city-hero">
-      <img src="{{ $cityImg }}" alt="Home tutors in {{ $city->city_name }}" width="130" height="130">
+      {{-- 130px (88px on phones): a 320px thumb, not the full upload; $cityImg stays the schema image. --}}
+      <img src="{{ \App\Support\Thumb::url($cityImg, 320) }}" alt="Home tutors in {{ $city->city_name }}" width="130" height="130" decoding="async">
       <div>
         {{-- The bare city name said nothing a parent searches for. The old
              name is added in brackets because "Gurgaon" still out-searches

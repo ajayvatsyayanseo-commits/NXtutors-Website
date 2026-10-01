@@ -156,9 +156,19 @@ Route::get('/pricing-guide', [HomeController::class, 'pricingguideIndex'])->name
 
 Route::get('/faqs', [HomeController::class, 'faqsIndex'])->name('faqs.index');
 
-Route::get('/terms-conditions', [HomeController::class, 'termsconditionsIndex'])->name('terms-conditions.index');
-
-Route::get('/privacy-policy', [HomeController::class, 'privacypolicyIndex'])->name('privacy-policy.index');
+// Policy pages: static, repo-versioned Blade (LegalController, config/legal.php).
+// The two original URLs keep their route names.
+Route::get('/terms-conditions', [\App\Http\Controllers\LegalController::class, 'show'])
+    ->defaults('slug', 'terms-conditions')->name('terms-conditions.index');
+Route::get('/privacy-policy', [\App\Http\Controllers\LegalController::class, 'show'])
+    ->defaults('slug', 'privacy-policy')->name('privacy-policy.index');
+foreach (array_keys(\App\Http\Controllers\LegalController::PAGES) as $legalSlug) {
+    if (in_array($legalSlug, ['terms-conditions', 'privacy-policy'], true)) {
+        continue;
+    }
+    Route::get('/' . $legalSlug, [\App\Http\Controllers\LegalController::class, 'show'])
+        ->defaults('slug', $legalSlug)->name('legal.' . $legalSlug);
+}
 
 Route::get('course', [HomeController::class, 'coursepage'])->name('course');
 

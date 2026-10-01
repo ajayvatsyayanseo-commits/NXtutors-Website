@@ -39,7 +39,7 @@
         @foreach($authors as $a)
           <article class="nx-card nx-author">
             <div class="nx-author__top">
-              <img src="{{ $a['image'] ?: asset('frount/assets/images/tutor1.jpg') }}" alt="{{ $a['name'] }}" width="64" height="64" loading="lazy">
+              <img src="{{ $a['image'] ? \App\Support\Thumb::url($a['image'], 160) : asset('frount/assets/images/tutor1.jpg') }}" alt="{{ $a['name'] }}" width="64" height="64" loading="lazy" decoding="async">
               <div>
                 <h2 class="nx-card__title"><a href="{{ $a['author_url'] }}">{{ $a['name'] }}</a></h2>
                 <span class="nx-card__meta">{{ $a['role'] }}</span>

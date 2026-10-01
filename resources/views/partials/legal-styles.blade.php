@@ -149,4 +149,60 @@ body.page .nxlegal-help__actions{
 @media (max-width: 559px){
   body.page .nxlegal-help__actions .nxbtn{ width: 100%; justify-content: center; }
 }
+/* ---- Static policy pages (resources/views/legal) ---- */
+body.page .nxlegal-toc__label--gap{ margin-top: var(--nxt-s4); }
+body.page .nxlegal-toc__list--plain{ list-style: none; padding-left: 0; }
+
+body.page .nxlegal-dates{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  margin: 0 0 var(--nxt-s4);
+  font-size: var(--nxt-t-xs);
+  color: var(--nxt-text-dim);
+}
+
+body.page .nxlegal-summary{
+  margin: 0 0 var(--nxt-s5);
+  padding: var(--nxt-s4) var(--nxt-s5);
+  border: 1px solid var(--nxt-line);
+  border-left: 4px solid var(--nxt-accent);
+  border-radius: var(--nxt-r-md);
+  background: var(--nxt-surface);
+  max-width: 78ch;
+}
+body.page .nxlegal-summary__head{
+  margin: 0 0 var(--nxt-s2);
+  font-size: var(--nxt-t-h4);
+  font-weight: 700;
+  color: var(--nxt-text);
+}
+body.page .nxlegal-summary ul{ margin: 0; padding-left: 1.2em; color: var(--nxt-text-dim); line-height: 1.65; }
+body.page .nxlegal-summary li{ margin-bottom: 4px; }
+body.page .nxlegal-summary__note{ margin: var(--nxt-s3) 0 0; font-size: var(--nxt-t-xs); color: var(--nxt-text-faint); }
+
+body.page .nxlegal-doc{ max-width: 78ch; color: var(--nxt-text-dim); line-height: 1.75; font-size: var(--nxt-t-body); }
+body.page .nxlegal-doc section{ padding-block: var(--nxt-s4); border-top: 1px solid var(--nxt-line); }
+body.page .nxlegal-doc section:first-child{ border-top: 0; padding-top: 0; }
+body.page .nxlegal-doc h2{
+  margin: 0 0 var(--nxt-s2);
+  font-family: var(--nxt-font-display);
+  font-size: var(--nxt-t-h3);
+  font-weight: 700;
+  letter-spacing: -.012em;
+  color: var(--nxt-text);
+  scroll-margin-top: var(--nxt-s6);
+}
+body.page .nxlegal-doc h3{ margin: var(--nxt-s4) 0 var(--nxt-s2); font-size: var(--nxt-t-h4); color: var(--nxt-text); }
+body.page .nxlegal-doc p{ margin: 0 0 var(--nxt-s3); }
+body.page .nxlegal-doc ul,
+body.page .nxlegal-doc ol{ margin: 0 0 var(--nxt-s3); padding-left: 1.3em; }
+body.page .nxlegal-doc li{ margin-bottom: 6px; }
+body.page .nxlegal-doc a{ color: var(--nxt-accent); }
+body.page .nxlegal-doc strong{ color: var(--nxt-text); }
+body.page .nxlegal-doc .nxlegal-table{ width: 100%; border-collapse: collapse; margin: 0 0 var(--nxt-s4); font-size: var(--nxt-t-sm); display: block; overflow-x: auto; }
+body.page .nxlegal-doc .nxlegal-table th,
+body.page .nxlegal-doc .nxlegal-table td{ text-align: left; vertical-align: top; padding: 8px 10px; border: 1px solid var(--nxt-line); }
+body.page .nxlegal-doc .nxlegal-table th{ color: var(--nxt-text); background: var(--nxt-surface); }
+body.page .nxlegal-help__text a{ color: var(--nxt-accent); }
 </style>

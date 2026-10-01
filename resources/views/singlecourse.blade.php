@@ -1078,7 +1078,7 @@
                                                     @if(empty($rowt->avatar))
                                                         <img src="{{ asset('frount/assets/images/tl-2/teacher-1.jpg') }}" alt="Teacher Image" class="nx-teacher-img">
                                                     @else
-                                                        <img src="{{ \App\Support\TutorPhoto::url($rowt->avatar) }}" alt="Teacher Image" class="nx-teacher-img">
+                                                        <img src="{{ \App\Support\Thumb::url(\App\Support\TutorPhoto::url($rowt->avatar), 240) }}" alt="Teacher Image" class="nx-teacher-img" width="110" height="110" loading="lazy" decoding="async">
                                                     @endif
 
                                                     <h5 class="nx-teacher-name">

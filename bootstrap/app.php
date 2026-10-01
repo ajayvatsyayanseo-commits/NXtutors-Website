@@ -13,6 +13,8 @@ return Application::configure(basePath: dirname(__DIR__))
             // The agent gateway. Separate file so routes/api.php stays
             // GET-only for the read-only tutor feed.
             Illuminate\Support\Facades\Route::group([], __DIR__.'/../routes/agent_gateway.php');
+            // Photo thumbnails: no session/cookies, so they stay cacheable.
+            Illuminate\Support\Facades\Route::group([], __DIR__.'/../routes/thumbs.php');
         },
         apiPrefix: '',
         commands: __DIR__.'/../routes/console.php',

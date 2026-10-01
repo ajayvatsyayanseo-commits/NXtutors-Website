@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   @php
     $metatitle = 'Home Tutors in India: Cities We Serve, by State | NXTutors';
-    $metadesc = 'Verified home tutors in ' . $city->count() . ' Indian cities, grouped by state: Delhi NCR, Gurugram, Mumbai, Bengaluru, Kolkata and more. Online tutoring everywhere in India.';
+    $metadesc = 'Home tutors in ' . $city->count() . ' Indian cities, grouped by state: Delhi NCR, Gurugram, Mumbai, Bengaluru, Kolkata and more. Online tutoring everywhere in India.';
   @endphp
   @include('include.header')
 

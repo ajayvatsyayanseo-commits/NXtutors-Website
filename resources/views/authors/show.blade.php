@@ -62,7 +62,7 @@
     <section class="nx-shero">
       <div class="nx-shero__main">
         <div class="nx-author__top">
-          <img src="{{ $author['image'] ?: asset('frount/assets/images/tutor1.jpg') }}" alt="{{ $author['name'] }}" width="64" height="64">
+          <img src="{{ $author['image'] ? \App\Support\Thumb::url($author['image'], 160) : asset('frount/assets/images/tutor1.jpg') }}" alt="{{ $author['name'] }}" width="64" height="64" decoding="async">
           <div>
             <span class="nx-card__kicker">{{ $isTeam ? 'Editorial team' : 'Author · NXTutors tutor' }}</span>
             <h1 class="nx-shero__title" style="margin:0">{{ $author['name'] }}</h1>

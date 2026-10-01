@@ -84,7 +84,7 @@
 
         @if($lead)
           <p class="nx-byline">
-            @if($lead['image'])<img src="{{ $lead['image'] }}" alt="{{ $lead['name'] }}" width="32" height="32" loading="lazy">@endif
+            @if($lead['image'])<img src="{{ \App\Support\Thumb::url($lead['image'], 96) }}" alt="{{ $lead['name'] }}" width="32" height="32" loading="lazy" decoding="async">@endif
             <span>Guide by <a href="{{ $lead['author_url'] ?? '#authors' }}">{{ $lead['name'] }}</a>@if($authors->count() > 1) with {{ $authors->slice(1)->pluck('name')->join(', ') }}@endif · {{ $lead['role'] }}</span>
           </p>
         @endif
@@ -177,7 +177,7 @@
           @foreach($authors as $a)
             <article class="nx-card nx-author">
               <div class="nx-author__top">
-                <img src="{{ $a['image'] ?: asset('frount/assets/images/tutor1.jpg') }}" alt="{{ $a['name'] }}" width="64" height="64" loading="lazy">
+                <img src="{{ $a['image'] ? \App\Support\Thumb::url($a['image'], 160) : asset('frount/assets/images/tutor1.jpg') }}" alt="{{ $a['name'] }}" width="64" height="64" loading="lazy" decoding="async">
                 <div>
                   <h3 class="nx-card__title">@if(!empty($a['author_url']))<a href="{{ $a['author_url'] }}">{{ $a['name'] }}</a>@else{{ $a['name'] }}@endif</h3>
                   <span class="nx-card__meta">{{ $a['role'] }}</span>

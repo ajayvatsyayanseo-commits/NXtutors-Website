@@ -97,6 +97,8 @@ coverage/
 /public/public/storage
 /public/uploads/user
 /public/uploads/private
+# Photo thumbnails, made at runtime on the server (App\Support\Thumb)
+/public/thumbs/
 
 /storage/*.key
 

@@ -489,8 +489,10 @@ html {
         <article class="nxcard" style="padding:18px;">
           <div style="display:flex;gap:22px;align-items:flex-start;flex-wrap:wrap;">
             <div class="nxhero-photo">
-              <img src="{{ $img }}" alt="{{ $tutor->name }}" width="190" height="230"
-                   onerror="this.src='{{ asset('frount/assets/images/tutor1.jpg') }}'">
+              {{-- 190px portrait: a 240/480 thumb, not the full upload. $img itself stays the og/schema image. --}}
+              @php $heroSrcset = \App\Support\Thumb::srcset2x($img, 240); @endphp
+              <img src="{{ \App\Support\Thumb::url($img, 240) }}"@if($heroSrcset !== '') srcset="{{ $heroSrcset }}"@endif alt="{{ $tutor->name }}" width="190" height="230" decoding="async"
+                   onerror="if (this.srcset) { this.removeAttribute('srcset'); this.src = {{ json_encode($img, JSON_UNESCAPED_SLASHES) }}; } else { this.onerror = null; this.src = {{ json_encode(asset('frount/assets/images/tutor1.jpg'), JSON_UNESCAPED_SLASHES) }}; }">
               @if($isSampleProfile)
                 <span class="badge-sample">Sample profile</span>
               @else
@@ -796,7 +798,7 @@ html {
               <article class="nxcard nxcard--soft nxscroll__card">
                 <div class="nxrv__head">
                   @if($rev->photoUrl())
-                    <img class="nxrv__avatar" src="{{ $rev->photoUrl() }}" alt="{{ $rev->name }}" loading="lazy" width="44" height="44">
+                    <img class="nxrv__avatar" src="{{ \App\Support\Thumb::url($rev->photoUrl(), 96) }}" alt="{{ $rev->name }}" loading="lazy" decoding="async" width="44" height="44">
                   @else
                     <span class="nxrv__avatar nxrv__avatar--initials" aria-hidden="true">{{ $rev->initials() }}</span>
                   @endif

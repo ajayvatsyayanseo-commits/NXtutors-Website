@@ -298,14 +298,16 @@ public function sitemapSection(string $section)
     '/pricing',
     '/pricing-guide',
     '/faqs',
-    '/terms-conditions',
-    '/privacy-policy',
     '/tutors',
     '/become-a-tutor',
 ];
     // Tutor-side pages (TuitionJobsController): India always; a state or city
     // only when something real is behind it (zones, a real tutor, requests).
     $staticUrls[] = '/how-we-verify-tutors';
+    // Policy pages (LegalController::PAGES), including /terms-conditions and /privacy-policy.
+    foreach (array_keys(\App\Http\Controllers\LegalController::PAGES) as $legalSlug) {
+        $staticUrls[] = '/' . $legalSlug;
+    }
     $staticUrls[] = '/tuition-jobs';
     foreach ((new \App\Http\Controllers\TuitionJobsController)->states() as $jobState) {
         if ($jobState['indexable'] && $jobState['name'] !== \App\Support\Geo::OTHER_STATE) {
@@ -708,6 +710,8 @@ public function compareAi(Request $request)
             'id' => $t->user_id,
             'name' => $t->name,
             'img' => $t->avatar ? \App\Support\TutorPhoto::url($t->avatar) : asset('frount/assets/images/tutor1.jpg'),
+            // Small copy for face icons (App\Support\Thumb); 'img' stays the original.
+            'thumb' => $t->avatar ? \App\Support\Thumb::url(\App\Support\TutorPhoto::url($t->avatar), 96) : asset('frount/assets/images/tutor1.jpg'),
             'rating' => number_format($rating, 1),
             'reviews' => $reviews,
             'score' => $score,
@@ -2174,22 +2178,6 @@ public function faqsIndex(){
           $metakey = $page->meta_keywords ?? null;
           $metadesc = $page->meta_description ?? null;
           return view('faqs' , compact('page','metatitle','metakey','metadesc'));
-    }
-
-public function termsconditionsIndex(){
-          $page = Page::Where('status', 't')->where('slug', 'terms-conditions')->first();
-          $metatitle = $page->meta_title ?? null;
-          $metakey = $page->meta_keywords ?? null;
-          $metadesc = $page->meta_description ?? null;
-          return view('terms-conditions' , compact('page','metatitle','metakey','metadesc'));
-    }
-
-public function privacypolicyIndex(){
-          $page = Page::Where('status', 't')->where('slug', 'privacy-policy')->first();
-          $metatitle = $page->meta_title ?? null;
-          $metakey = $page->meta_keywords ?? null;
-          $metadesc = $page->meta_description ?? null;
-          return view('privacy-policy' , compact('page','metatitle','metakey','metadesc'));
     }
 
 public function blogLoad(Request $request)

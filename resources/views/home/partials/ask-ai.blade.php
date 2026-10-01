@@ -372,7 +372,9 @@
       var pic = el('span', 'nxg-rc-icon');
       if (safeHref(t.image_url)) {
         var img = document.createElement('img');
-        img.src = t.image_url; img.alt = ''; img.width = 30; img.height = 30;
+        img.src = safeHref(t.thumb_url) ? t.thumb_url : t.image_url; img.alt = ''; img.width = 30; img.height = 30;
+        img.loading = 'lazy'; img.decoding = 'async';
+        img.onerror = function () { img.onerror = null; if (img.src !== t.image_url) img.src = t.image_url; };
         img.style.borderRadius = '8px'; img.style.objectFit = 'cover';
         pic.textContent = ''; pic.appendChild(img);
       } else { pic.textContent = '👤'; }

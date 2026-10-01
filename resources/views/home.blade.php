@@ -176,7 +176,7 @@
     </h1>
 
     <p class="nxh__sub">
-      Verified home and online tutors for school subjects, boards and entrance
+      Home and online tutors for school subjects, boards and entrance
       exams. Tell us what you want to learn and your locality — we return two
       or three real matches, not a directory to sift through.
     </p>
