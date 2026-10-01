@@ -40,7 +40,8 @@
       "name" => ($areaSeo['name'] ?? $area->name).', '.($city?->city_name ?? ''),
       "url" => $pageUrl,
       "image" => $cityImg,
-      "description" => $area->meta_desc ?? strip_tags($area->short_desc ?? ''),
+      // Generated, rule-safe description (CityHub::areaSeo), never the typed meta_desc.
+      "description" => $metadesc,
       "address" => [
         "@type" => "PostalAddress",
         "addressLocality" => $city?->city_name ?? "",
