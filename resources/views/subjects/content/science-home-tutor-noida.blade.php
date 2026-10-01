@@ -145,7 +145,7 @@
     {!! $ggA('sector-39', 'Sector 39') !!}, which has the Noida City Centre metro station, and
     {!! $ggA('sector-41', 'Sector 41') !!} on Dadri Road. The tutor comes straight to the door; the practical issue is
     parking on older lanes. Further out, {!! $ggA('sector-122', 'Sector 122') !!} is also plotted, laid out in Blocks A
-    to D, and residents mention waterlogging in the rains, so an online back-up for monsoon evenings is worth agreeing.
+    to D, and heavy rain can slow travel, so an online back-up for monsoon evenings is worth agreeing.
   </p>
       </div>
       <div class="nx-guide__card">
