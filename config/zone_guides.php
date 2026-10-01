@@ -191,7 +191,7 @@ return [
             'guide' => 'noida-expressway-and-extension-tuition-guide',
             'intro' => [
                 'The sectors towards the Greater Noida West border, Sectors 115 to 122, mix large gated societies with plotted sectors and old villages. Sectors 119 to 121 are mainly group housing, Sector 121 has one society of about 2,600 flats, and some societies are still being completed. Sectors 116 and 122 are plotted Noida Authority sectors, and Sector 115 is centred on Sorkha village and the Harit Upvan urban forest.',
-                'Getting here can be slow: Gaur Chowk, the junction towards Noida Extension, carries heavy daily traffic while an underpass is built, and residents report stray cattle on some roads. The nearest metro for Sectors 115 and 116 is Noida Sector 76 on the Aqua Line. A tutor who already teaches in the same cluster of sectors is usually the steadiest choice.',
+                'Getting here can be slow: Gaur Chowk, the junction towards Noida Extension, carries heavy daily traffic while an underpass is built, so allow extra time at peak hours. The nearest metro for Sectors 115 and 116 is Noida Sector 76 on the Aqua Line. A tutor who already teaches in the same cluster of sectors is usually the steadiest choice.',
             ],
             'tips' => [
                 'In a big society, ask whether the tutor already teaches another family there: it makes a regular slot easier to keep.',
@@ -230,7 +230,7 @@ return [
             'guide' => 'greater-noida-sectors-tuition-guide',
             'intro' => [
                 'South of Pari Chowk towards Kasna, this zone is mostly plotted and spacious. Sector 36 is privately owned independent houses on wide roads, plots dominate Sector 37, and Swarn Nagri mixes houses, floors and villas with a few apartment blocks. The Sigma sectors range from plots in gated colonies to newer premium towers in Sigma 3, while Pi 1 and Pi 2 are mostly apartment societies with villa enclaves and plotted colonies alongside. Tutors can be matched for all boards.',
-                'Metro access is less direct than near Pari Chowk. DELTA 1 is the usual station, with ALPHA 1, Pari Chowk and GNIDA Office serving some pockets, and the last leg is by auto or e-rickshaw. The Surajpur–Kasna road is known for potholes and roadside encroachment, parking is tight in parts of Sector 37, and residents of Pi mention Pari Chowk jams at peak hours, so a tutor on a two-wheeler from nearby is often easiest.',
+                'Metro access is less direct than near Pari Chowk. DELTA 1 is the usual station, with ALPHA 1, Pari Chowk and GNIDA Office serving some pockets, and the last leg is by auto or e-rickshaw. The Surajpur–Kasna road slows down at busy hours, parking is tight in parts of Sector 37, and Pari Chowk is busy at peak hours, so a tutor on a two-wheeler from nearby is often easiest.',
             ],
             'tips' => [
                 'In plotted streets that are still filling up, send the tutor a map pin and a landmark for the first visit.',
@@ -254,7 +254,7 @@ return [
             'guide' => 'greater-noida-sectors-tuition-guide',
             'intro' => [
                 'In the north-east of Greater Noida, beyond the Delta sectors, the Zeta and Eta sectors are greener, more open and away from the Pari Chowk corridor. Zeta 1 has wide roads and neat blocks, with society flats alongside villas, houses and builder floors; Zeta 2 is mostly ready apartments in societies; Eta 1 is largely independent houses on authority plots; and Eta 2 is an emerging sector of newer group-housing societies. Tutors can be matched for CBSE, ICSE and other boards.',
-                'Residents like the low traffic but note that public transport is limited and markets are not on the doorstep, and in Eta 2 they mention construction dust and roadside parking. GNIDA Office is the usual metro stop, with Depot and DELTA 1 serving some pockets, and Boraki and Dadri railway stations also serve the area. A tutor coming by metro usually needs an auto for the last leg.',
+                'Residents like the low traffic; public transport is limited and markets are not on the doorstep, and in Eta 2 construction is still going on in places. GNIDA Office is the usual metro stop, with Depot and DELTA 1 serving some pockets, and Boraki and Dadri railway stations also serve the area. A tutor coming by metro usually needs an auto for the last leg.',
             ],
             'tips' => [
                 'Tutors living in Zeta, Eta or the Delta sectors are the easiest to keep on a regular weekly slot.',

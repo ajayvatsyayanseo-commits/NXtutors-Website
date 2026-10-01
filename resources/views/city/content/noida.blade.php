@@ -192,7 +192,7 @@
   </p>
   <p>
     Traffic decides home tuition here. The expressway carries heavy peak-hour traffic, with slow-moving traffic
-    reported in both directions in the evening, and residents of Sector 137 also mention monsoon waterlogging. A tutor
+    reported in both directions in the evening, and travel slows further on heavy-rain evenings. A tutor
     from a neighbouring sector who can reach you on local roads is worth waiting a day for. The Aqua Line helps: much
     of it runs along the expressway, with stations including Noida Sector 137 and Sectors 142 to 148, so a tutor living
     on the line can often come by metro and take a short auto ride. For specialist subjects, a hybrid plan, with one
@@ -213,7 +213,7 @@
   </p>
   <p>
     Getting here can be slow. Gaur Chowk, the junction towards Noida Extension, carries heavy daily traffic while an
-    underpass is built, and residents mention stray cattle on the roads. The nearest metro for Sectors 115 and 116 is
+    underpass is built, so allow extra time at peak hours. The nearest metro for Sectors 115 and 116 is
     Noida Sector 76 on the Aqua Line, and an Aqua Line extension with stations including Sectors 122 and 123 has been
     approved but is not yet running. The practical answer is a tutor who already teaches in the same cluster of
     sectors, and in the big societies that can work well: many families live a short walk apart, so a tutor can see

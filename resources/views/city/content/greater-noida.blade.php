@@ -153,8 +153,8 @@
     In a plotted street the tutor comes to the door; in the Pi societies and the new Sigma 3 projects, add them to the
     visitor list first.
     Metro access is less direct than in the core. DELTA 1 is the usual station, with ALPHA 1, Pari Chowk and GNIDA
-    Office serving some pockets, and the last leg is by auto or e-rickshaw. The Surajpur–Kasna road is known for
-    potholes and roadside encroachment, and Sector 37 residents mention tight parking, so a tutor on a two-wheeler
+    Office serving some pockets, and the last leg is by auto or e-rickshaw. The Surajpur–Kasna road slows down at
+    busy hours, and parking is tight in parts of Sector 37, so a tutor on a two-wheeler
     from Pi, Sigma or Kasna is usually the easiest to schedule. In newer streets, send a map pin before the first visit.
   </p>
   </section>
@@ -193,9 +193,9 @@
     station at the end of the Aqua Line.
   </p>
   <p>
-    Residents like the low traffic and clean streets but point out that public transport is limited and markets are
-    not on the doorstep; Eta 2 residents add construction dust, roadside parking and a weak link from the station to
-    some societies. GNIDA Office, in Knowledge Park IV, is the usual metro stop, with Depot and DELTA 1 for some
+    Residents like the low traffic and clean streets; public transport is limited and markets are not on the
+    doorstep, and in Eta 2, where construction is still going on, the last stretch from the station to some societies
+    needs an auto. GNIDA Office, in Knowledge Park IV, is the usual metro stop, with Depot and DELTA 1 for some
     pockets, and Boraki and Dadri railway stations also serve the area. In practice, families here lean on tutors who
     live in Zeta, Eta or Delta, and on online classes for specialist subjects.
   </p>
