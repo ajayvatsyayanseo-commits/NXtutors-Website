@@ -41,7 +41,7 @@
         '@id' => $nxtHome . '#organization',
         'name' => 'NXTutors',
         'url' => $nxtHome,
-        'logo' => asset('uploads/logo/newlogo.png'),
+        'logo' => asset('uploads/logo/newlogo-512.png'),
         'description' => 'NXTutors is an AI-powered tutor matching platform that connects parents and students with ID-verified home and online tutors for CBSE, ICSE, IB, ISC and IGCSE, Classes 6–12.',
         'areaServed' => ['@type' => 'Country', 'name' => 'India'],
         'address' => [
@@ -1245,8 +1245,9 @@ body.page .nxh__sweep{
   @include('include.footer')
   <script src="{{ asset('frount/assets/js/nx-suggest.js') }}?v={{ $nxtAssetV ?? 1 }}" defer></script>
  
- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+ {{-- Chart.js only draws the tutor-comparison chart, opened on demand. --}}
+ <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2" defer></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
 <script>

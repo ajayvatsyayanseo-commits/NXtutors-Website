@@ -71,8 +71,13 @@
        <style> block in this file. --}}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet"
+  {{-- Loaded without blocking first paint: text shows in the fallback font
+       (display=swap) and switches when the web fonts arrive. --}}
+  <link rel="preload" as="style"
         href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Manrope:wght@400..800&display=swap">
+  <link rel="stylesheet" media="print" onload="this.media='all'"
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Manrope:wght@400..800&display=swap">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Manrope:wght@400..800&display=swap"></noscript>
 
   {{-- Cache buster: front-end CSS/JS are hand-edited (no build step), so a
        stale copy would otherwise mix old chrome with new pages. Keyed on the
@@ -95,15 +100,21 @@
   {{-- Colour roles (one job per colour); loaded last so it settles them. See nx-roles.css. --}}
   <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/nx-roles.css?v={{ $nxtAssetV }}" />
   <script src="{{ asset('frount/assets') }}/js/nx-hub.js?v={{ $nxtAssetV }}" defer></script>
-<link rel="icon" href="{{ asset('uploads/logo/newlogo.png') }}">
+<link rel="icon" type="image/png" sizes="48x48" href="{{ asset('uploads/logo/newlogo-48.png') }}">
+<link rel="apple-touch-icon" href="{{ asset('uploads/logo/newlogo-180.png') }}">
 </head>
 <body class="page">
   <a class="nxt-skip" href="#nxt-content">Skip to main content</a>
   <header class="topbar">
   <div class="topbar-left">
     <a href="{{ url('/') }}" aria-label="NXTutors — home">
-    <img src="{{ asset('uploads/logo/newlogo.png') }}"
-         width="42" height="42" alt="" />
+    {{-- 42px logo: 84px WebP for sharp 2x screens, 64px PNG fallback (the
+         1024px original was 1.3 MB on every page). --}}
+    <picture>
+      <source type="image/webp" srcset="{{ asset('uploads/logo/newlogo-84.webp') }}">
+      <img src="{{ asset('uploads/logo/newlogo-64.png') }}"
+           width="42" height="42" alt="" />
+    </picture>
     <span class="logo-text">NXTutors</span>
     <span class="logo-mark" aria-hidden="true"></span>
   </a>
@@ -434,11 +445,9 @@
 
  
 
-    <link
-  rel="stylesheet"
-  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-/>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+{{-- Leaflet (map picker) loads on demand: window.nxLoadLeaflet() in the
+     footer fetches its CSS and JS only when a visitor opens the map, so it
+     no longer blocks rendering on every page. --}}
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {

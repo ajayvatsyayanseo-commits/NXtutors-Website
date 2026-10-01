@@ -1531,6 +1531,8 @@ body.page .topbar-left a {
 }
 /* The logo file already carries its own rounded plate — no frame around it,
    or you get a box inside a box with a gap between them. */
+/* <picture> wrapper around the logo adds no box of its own. */
+body.page .topbar-left picture { display: contents; }
 body.page .topbar-left img {
   margin-right: -4px;        /* ponytail: cancels the PNG's own transparent margin; retune if the logo file is re-exported tight */
   width: 38px;

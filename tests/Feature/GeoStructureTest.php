@@ -1002,6 +1002,8 @@ class GeoStructureTest extends TestCase
 
     public function test_subject_pages_render_with_faq_schema_authors_and_links(): void
     {
+        // Renders every subject page (400+); an earlier chat test may have set a 120s limit.
+        set_time_limit(0);
         $this->withoutExceptionHandling();
         DB::table('register')->insert([
             ['user_id' => '1997', 'name' => 'Ajay Vatsyayan', 'city' => 'Wazirabad', 'join_as' => 'teacher', 'status' => 't', 'education' => 'B.Tech, Computer Science & Engineering (AKTU, 2014)', 'experience' => '14+'],

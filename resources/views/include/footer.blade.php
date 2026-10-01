@@ -619,10 +619,26 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  // Leaflet is fetched the first time the map is opened (see header).
+  function loadLeaflet(cb) {
+    if (window.L && window.L.map) { cb(); return; }
+    if (!document.getElementById("nxLeafletCss")) {
+      const css = document.createElement("link");
+      css.id = "nxLeafletCss";
+      css.rel = "stylesheet";
+      css.href = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
+      document.head.appendChild(css);
+    }
+    const js = document.createElement("script");
+    js.src = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js";
+    js.onload = cb;
+    document.head.appendChild(js);
+  }
+
   function openMapPicker() {
     locationMapWrap.style.display = "block";
     const stored = getStoredLocation();
-    initMap(stored.lat, stored.lon);
+    loadLeaflet(function () { initMap(stored.lat, stored.lon); });
     setTimeout(function () {
       if (map) map.invalidateSize();
     }, 200);
