@@ -7,7 +7,7 @@ return [
     ],
     [
         'How do I find maths tuition near me for Class 9?',
-        'Share your board (CBSE or ICSE), your area, preferred timings and budget with NXTutors. We shortlist two or three ID-verified Class 9 maths tutors who fit, keeping travel time at your slot in mind, and you choose one for a free demo class. If no suitable tutor is close by, online sessions are a good alternative.',
+        'Share your board (CBSE or ICSE), your area, preferred timings and budget with NXTutors. We shortlist two or three Class 9 maths tutors who fit, keeping travel time at your slot in mind, and you choose one for a free demo class. If no suitable tutor is close by, online sessions are a good alternative.',
     ],
     [
         'Does my child really need a maths tutor in Class 9 when there is no board exam?',

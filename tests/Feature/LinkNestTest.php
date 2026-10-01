@@ -251,7 +251,7 @@ class LinkNestTest extends TestCase
             }
             preg_match('/data-kind="board">(.*?)<\/ul>/s', $html, $m);
             $order = array_map(fn ($u) => parse_url($u, PHP_URL_PATH), (preg_match_all('/href="([^"]+)"/', $m[1], $h) ? $h[1] : []));
-            $this->assertSame(['/igcse-tutor-mumbai', '/ib-tutor-mumbai', '/icse-home-tutor-mumbai', '/cbse-home-tutor-mumbai'], $order);
+            $this->assertSame(['/igcse-tutor-mumbai', '/ib-tutor-mumbai', '/icse-home-tutor-mumbai', '/cbse-home-tutor-mumbai', '/maharashtra-board-tutor-mumbai'], $order);
 
             // Without the hint: config order.
             $this->assertSame([], LinkNest::zoneBoards('mumbai', 'Thane'));

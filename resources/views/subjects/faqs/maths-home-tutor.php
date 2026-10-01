@@ -7,7 +7,7 @@ return [
     ],
     [
         'How do I find a good maths home tutor near me?',
-        'Tell NXTutors the student\'s class, board, your area, preferred timings and budget. We shortlist two or three ID-verified maths tutors who fit, looking at travel time at your slot rather than just distance, and you try the one you prefer in a free demo class. If no suitable tutor is close enough, an online or hybrid arrangement with a specialist is often the better choice.',
+        'Tell NXTutors the student\'s class, board, your area, preferred timings and budget. We shortlist two or three maths tutors who fit, looking at travel time at your slot rather than just distance, and you try the one you prefer in a free demo class. If no suitable tutor is close enough, an online or hybrid arrangement with a specialist is often the better choice.',
     ],
     [
         'Is online maths tuition as good as home tuition?',

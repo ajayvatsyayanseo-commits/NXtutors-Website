@@ -7,7 +7,7 @@ return [
     ],
     [
         'How do I find a Class 11 physics tutor near me?',
-        'Share the board, whether your child is preparing for JEE or NEET, your area, preferred timings and budget with NXTutors. We shortlist two or three ID-verified Class 11 physics tutors who fit, considering travel time at your slot, and you choose one for a free demo class. If no suitable tutor is close by, online sessions with an experienced tutor work well.',
+        'Share the board, whether your child is preparing for JEE or NEET, your area, preferred timings and budget with NXTutors. We shortlist two or three Class 11 physics tutors who fit, considering travel time at your slot, and you choose one for a free demo class. If no suitable tutor is close by, online sessions with an experienced tutor work well.',
     ],
     [
         'Why is my child struggling in Class 11 physics after doing well in Class 10?',

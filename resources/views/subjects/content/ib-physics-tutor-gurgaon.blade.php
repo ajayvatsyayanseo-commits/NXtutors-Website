@@ -292,7 +292,7 @@
   <h2 id="ibp-start">Getting started</h2>
   <p>
     Tell us SL or HL, DP Year 1 or 2, where your child is finding it hard (content, Paper 1B, Paper 2, the IA), your
-    locality and your slots. We shortlist two or three ID-verified IB physics tutors; you pick one for a
+    locality and your slots. We shortlist two or three IB physics tutors; you pick one for a
     <a href="{{ url('/demo-class') }}">free demo class</a>, and switching is free. For IB chemistry, see our
     <a href="{{ url('/ib-igcse-chemistry-tutor-gurgaon') }}">IB and IGCSE chemistry tutor in Gurgaon</a> page.
   </p>

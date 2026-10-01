@@ -7,7 +7,7 @@ return [
     ],
     [
         'How do I find Class 12 maths tuition near me?',
-        'Share your board, area, preferred timings, budget and whether JEE or CUET is also a goal with NXTutors. We shortlist two or three ID-verified Class 12 maths tutors who fit, and you choose one for a free demo class. If no suitable tutor is nearby, online sessions with an experienced Class 12 tutor work well.',
+        'Share your board, area, preferred timings, budget and whether JEE or CUET is also a goal with NXTutors. We shortlist two or three Class 12 maths tutors who fit, and you choose one for a free demo class. If no suitable tutor is nearby, online sessions with an experienced Class 12 tutor work well.',
     ],
     [
         'Which chapters carry the most marks in CBSE Class 12 maths?',

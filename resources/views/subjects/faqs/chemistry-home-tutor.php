@@ -7,7 +7,7 @@ return [
     ],
     [
         'How do I find a chemistry home tutor near me?',
-        'Share the class, board, your area, preferred timings and budget with NXTutors. We shortlist two or three ID-verified chemistry tutors who fit, taking travel time at your slot into account, and you choose one for a free demo class. If no suitable tutor is close by, online chemistry sessions with an experienced tutor are a good alternative.',
+        'Share the class, board, your area, preferred timings and budget with NXTutors. We shortlist two or three chemistry tutors who fit, taking travel time at your slot into account, and you choose one for a free demo class. If no suitable tutor is close by, online chemistry sessions with an experienced tutor are a good alternative.',
     ],
     [
         'How do I choose the best chemistry home tutor for my child?',

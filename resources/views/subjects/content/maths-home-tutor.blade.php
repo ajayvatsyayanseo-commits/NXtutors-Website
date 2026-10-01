@@ -296,7 +296,7 @@
     <li><strong>Shortlist two or three matched tutors</strong> who fit the class, board and level, not just the subject name. A tutor strong at CBSE Class 10 is not automatically right for IB AA HL.</li>
     <li><strong>Arrange a free demo class</strong> with the tutor you prefer. It is a normal lesson on the student's current topic, so you see real teaching.</li>
     <li><strong>Let you switch at no cost.</strong> If the demo or the first few weeks do not work, tell us and we suggest someone else. There is no switching fee and no long contract.</li>
-    <li><strong>Only put forward ID-verified tutors.</strong> Every tutor goes through identity verification and a profile check before being shortlisted to a family.</li>
+    <li><strong>Put forward real, active tutors only.</strong> Tutors who join go through an ID check (see <a href="{{ url('/how-we-verify-tutors') }}">how we verify tutors</a>); sample profiles are never shortlisted.</li>
   </ol>
   <p>
     You can also browse <a href="{{ url('/tutors') }}">tutor profiles</a> yourself, or go straight to booking a

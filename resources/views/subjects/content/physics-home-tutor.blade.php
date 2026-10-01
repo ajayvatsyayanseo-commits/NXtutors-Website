@@ -321,7 +321,7 @@
   <h2 id="phy-start">Getting started with a physics tutor</h2>
   <p>
     Tell us the class, board, any entrance exam, your area, the days and times that suit you, home or online, and your
-    budget. We shortlist two or three ID-verified physics tutors who fit, you choose one for a free demo class, and you
+    budget. We shortlist two or three physics tutors who fit, you choose one for a free demo class, and you
     decide after that. If the fit is not right, at the demo or later, switching is free.
   </p>
   <p>

@@ -327,7 +327,7 @@
   <h2 id="m9-start">Getting started</h2>
   <p>
     Tell us the board (CBSE or ICSE), the school, your area, suitable slots, home or online, and your budget. We
-    shortlist two or three ID-verified maths tutors who fit, you pick one for a free demo class, and you decide after
+    shortlist two or three maths tutors who fit, you pick one for a free demo class, and you decide after
     that. If the match is not right, switching tutor is free.
   </p>
   <p>

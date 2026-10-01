@@ -295,7 +295,7 @@
   <p>
     Online sessions work well for NEET physics and fit evenings after coaching. In Gurugram, see our
     <a href="{{ url('/physics-home-tutor-gurgaon') }}">physics home tutor in Gurgaon</a> page. Tell us the class, the
-    coaching schedule, your area, slots and budget; we shortlist two or three ID-verified tutors, you choose one for a
+    coaching schedule, your area, slots and budget; we shortlist two or three tutors, you choose one for a
     free demo class, and switching later is free. <a href="{{ url('/demo-class') }}">Book a free demo class</a>.
   </p>
   </section>

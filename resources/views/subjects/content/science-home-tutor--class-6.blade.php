@@ -265,7 +265,7 @@
   </p>
   <p>
     Tell us the board and school, your area, suitable days and times, home, online or hybrid, and your budget. We
-    shortlist two or three ID-verified science tutors, you pick one for a free demo class, and if the fit is not
+    shortlist two or three science tutors, you pick one for a free demo class, and if the fit is not
     right later on, switching tutor is free. Families in Gurugram can also see our page for a
     <a href="{{ url('/science-home-tutor-gurgaon') }}">science home tutor in Gurgaon</a>. Otherwise,
     <a href="{{ url('/demo-class') }}">book a free demo class</a> or browse <a href="{{ url('/tutors') }}">our tutors</a>.

@@ -365,7 +365,7 @@
   </p>
   <p>
     To get started, tell us your child's board, which sciences need help, your area, preferred times, home or online,
-    and your budget. We shortlist two or three matched, ID-verified tutors, you choose one for a free demo class, and
+    and your budget. We shortlist two or three matched tutors, you choose one for a free demo class, and
     switching tutors later is free. NXTutors is based in Gurugram; families nearby can read our
     <a href="{{ url('/city/gurugram') }}">Gurugram guide</a>, and tutors in other cities are on our
     <a href="{{ url('/city') }}">cities page</a>. Browse <a href="{{ url('/tutors') }}">all tutors</a>, see the

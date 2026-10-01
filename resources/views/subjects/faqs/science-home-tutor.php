@@ -7,7 +7,7 @@ return [
     ],
     [
         'How do I find a good science home tutor near me?',
-        'Tell NXTutors your child\'s class, board, which sciences need help, your area, preferred timings, home or online, and your budget. We shortlist two or three ID-verified science tutors who fit all of it, looking at travel time at your slot rather than just distance, and you try the one you prefer in a free demo class. If no strong tutor is close enough, an online or hybrid arrangement with a specialist is often the better choice.',
+        'Tell NXTutors your child\'s class, board, which sciences need help, your area, preferred timings, home or online, and your budget. We shortlist two or three science tutors who fit all of it, looking at travel time at your slot rather than just distance, and you try the one you prefer in a free demo class. If no strong tutor is close enough, an online or hybrid arrangement with a specialist is often the better choice.',
     ],
     [
         'Is online science tuition as good as home tuition?',

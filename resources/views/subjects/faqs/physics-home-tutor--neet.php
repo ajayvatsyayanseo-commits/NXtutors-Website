@@ -7,7 +7,7 @@ return [
     ],
     [
         'How do I find a NEET physics tutor near me?',
-        'Share your child\'s class, coaching schedule, area, preferred timings and budget with NXTutors. We shortlist two or three ID-verified NEET physics tutors who fit, considering travel time at your slot, and you choose one for a free demo class. Many NEET students prefer online sessions in the evening after coaching, which also widens the choice of tutors.',
+        'Share your child\'s class, coaching schedule, area, preferred timings and budget with NXTutors. We shortlist two or three NEET physics tutors who fit, considering travel time at your slot, and you choose one for a free demo class. Many NEET students prefer online sessions in the evening after coaching, which also widens the choice of tutors.',
     ],
     [
         'How many physics questions are there in NEET?',

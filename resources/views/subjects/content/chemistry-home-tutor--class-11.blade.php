@@ -340,7 +340,7 @@
   </p>
   <p>
     Tell us the board, your area, preferred slots and budget, and whether an entrance exam is planned. We shortlist
-    two or three ID-verified chemistry tutors, you choose one for a free demo class, and switching later is free if
+    two or three chemistry tutors, you choose one for a free demo class, and switching later is free if
     the fit is wrong. In Gurugram, see our page for a
     <a href="{{ url('/chemistry-home-tutor-gurgaon') }}">chemistry tutor in Gurgaon</a>, or
     <a href="{{ url('/demo-class') }}">book a free demo class</a> to begin.

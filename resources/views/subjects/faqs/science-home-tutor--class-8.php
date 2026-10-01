@@ -7,7 +7,7 @@ return [
     ],
     [
         "How do I find science tuition for Class 8 near me?",
-        "Share the board, school, your area, preferred timings and budget with NXTutors. We shortlist two or three ID-verified Class 8 science tutors who can reach you at those times, and you pick one for a free demo class.",
+        "Share the board, school, your area, preferred timings and budget with NXTutors. We shortlist two or three Class 8 science tutors who can reach you at those times, and you pick one for a free demo class.",
     ],
     [
         "Does online science tuition work for Class 8?",

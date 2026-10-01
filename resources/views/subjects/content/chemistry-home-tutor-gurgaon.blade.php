@@ -57,7 +57,7 @@
   <p>
     Tell us the class, the exact course (CBSE, ISC, IB Chemistry SL or HL, IGCSE Chemistry 0620 Core or Extended), the
     goal (school, boards, NEET, JEE), which branch of chemistry is weak, your sector or society and your free slots.
-    We shortlist two or three ID-verified chemistry tutors within your budget, you choose one for a <strong>free demo
+    We shortlist two or three chemistry tutors within your budget, you choose one for a <strong>free demo
     class</strong>, and you can switch at no cost if the fit is wrong.
   </p>
   <p>

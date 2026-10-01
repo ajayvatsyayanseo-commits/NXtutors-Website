@@ -7,7 +7,7 @@ return [
     ],
     [
         'How do I find the best physics home tutor near me?',
-        'Share the class, board, any entrance exam, your area, preferred timings and budget with NXTutors. We shortlist two or three ID-verified physics tutors who fit, taking travel time at your slot into account, and you choose one for a free demo class. In the demo, check that the tutor diagnoses before teaching, lets your child attempt problems and knows the current paper pattern.',
+        'Share the class, board, any entrance exam, your area, preferred timings and budget with NXTutors. We shortlist two or three physics tutors who fit, taking travel time at your slot into account, and you choose one for a free demo class. In the demo, check that the tutor diagnoses before teaching, lets your child attempt problems and knows the current paper pattern.',
     ],
     [
         'Can I get a physics tutor for Class 12 near me who also helps with JEE or NEET?',

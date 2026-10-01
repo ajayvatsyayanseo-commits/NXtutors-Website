@@ -7,7 +7,7 @@ return [
     ],
     [
         'How do I find a physics tutor for Class 12 near me?',
-        'Share the board, any entrance exam, your area, preferred timings and budget with NXTutors. We shortlist two or three ID-verified Class 12 physics tutors who fit, taking travel time at your slot into account, and you choose one for a free demo class. If no suitable tutor is nearby, online sessions with an experienced Class 12 tutor work well.',
+        'Share the board, any entrance exam, your area, preferred timings and budget with NXTutors. We shortlist two or three Class 12 physics tutors who fit, taking travel time at your slot into account, and you choose one for a free demo class. If no suitable tutor is nearby, online sessions with an experienced Class 12 tutor work well.',
     ],
     [
         'Which chapters carry the most marks in CBSE Class 12 physics?',

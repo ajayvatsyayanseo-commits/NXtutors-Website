@@ -332,7 +332,7 @@
   <h2 id="m10-start">Getting started with a Class 10 maths tutor</h2>
   <p>
     Tell us the board (CBSE Standard, CBSE Basic or ICSE), the student's school, your area, the slots that suit you,
-    home or online, and your budget. We shortlist two or three ID-verified Class 10 maths tutors who fit, you choose one
+    home or online, and your budget. We shortlist two or three Class 10 maths tutors who fit, you choose one
     for a free demo class, and you decide after that. If the fit is not right, at the demo or later in the year,
     switching to another tutor is free.
   </p>

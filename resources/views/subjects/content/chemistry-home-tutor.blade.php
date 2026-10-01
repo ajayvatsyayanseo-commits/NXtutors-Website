@@ -255,7 +255,7 @@
     <li><strong>Notice how your child reacts.</strong> A student who is afraid to ask questions will not improve, however qualified the tutor.</li>
   </ul>
   <p>
-    At NXTutors we send you two or three matched, ID-verified tutors for each request so that you can compare, and
+    At NXTutors we send you two or three matched tutors for each request so that you can compare, and
     the first class with the one you choose is a free demo. If the tutor turns out not to be right later in the year,
     switching is free.
   </p>

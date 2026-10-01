@@ -300,7 +300,7 @@
   <h2 id="m11-start">Getting started</h2>
   <p>
     Tell us the board (CBSE, ISC, IB or A-level), the student's goals, your area, suitable slots, home or online, and
-    your budget. We shortlist two or three ID-verified maths tutors who match, you choose one for a free demo class,
+    your budget. We shortlist two or three maths tutors who match, you choose one for a free demo class,
     and you decide after that. Switching tutor later is free.
   </p>
   <p>

@@ -308,7 +308,7 @@
     students well because they fit around coaching timings and widen the choice of experienced tutors.
   </p>
   <p>
-    Tell us the class, coaching schedule, area, slots and budget. We shortlist two or three ID-verified NEET
+    Tell us the class, coaching schedule, area, slots and budget. We shortlist two or three NEET
     chemistry tutors, you choose one for a free demo class, and switching later is free. In Gurugram, see our page
     for a <a href="{{ url('/chemistry-home-tutor-gurgaon') }}">chemistry tutor in Gurgaon</a>, or
     <a href="{{ url('/demo-class') }}">book a free demo class</a> to start.

@@ -344,7 +344,7 @@
   <h2 id="m12-start">Getting started</h2>
   <p>
     Tell us the board, the student's targets (boards only, or JEE or CUET as well), your area, suitable slots, home or
-    online, and your budget. We shortlist two or three ID-verified maths tutors who fit, you choose one for a free
+    online, and your budget. We shortlist two or three maths tutors who fit, you choose one for a free
     demo class, and you decide after that. Switching tutor is free.
   </p>
   <p>

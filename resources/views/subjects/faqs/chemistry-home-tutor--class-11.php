@@ -7,7 +7,7 @@ return [
     ],
     [
         'How do I find a Class 11 chemistry tutor near me?',
-        'Share the board, your area, preferred timings, budget and whether an entrance exam is planned. We shortlist two or three ID-verified Class 11 chemistry tutors who fit, considering travel time at your slot, and you choose one for a free demo class. If nobody suitable is nearby, online sessions with an experienced tutor work well at this level.',
+        'Share the board, your area, preferred timings, budget and whether an entrance exam is planned. We shortlist two or three Class 11 chemistry tutors who fit, considering travel time at your slot, and you choose one for a free demo class. If nobody suitable is nearby, online sessions with an experienced tutor work well at this level.',
     ],
     [
         'Why is Class 11 chemistry so much harder than Class 10?',

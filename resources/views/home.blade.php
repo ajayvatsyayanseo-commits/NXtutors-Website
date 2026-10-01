@@ -42,7 +42,7 @@
         'name' => 'NXTutors',
         'url' => $nxtHome,
         'logo' => asset('uploads/logo/newlogo-512.png'),
-        'description' => 'NXTutors is an AI-powered tutor matching platform that connects parents and students with ID-verified home and online tutors for CBSE, ICSE, IB, ISC and IGCSE, Classes 6–12.',
+        'description' => 'NXTutors is an AI-powered tutor matching platform that connects parents and students with home and online tutors for CBSE, ICSE, IB, ISC and IGCSE, Classes 6–12.',
         'areaServed' => ['@type' => 'Country', 'name' => 'India'],
         'address' => [
           '@type' => 'PostalAddress',

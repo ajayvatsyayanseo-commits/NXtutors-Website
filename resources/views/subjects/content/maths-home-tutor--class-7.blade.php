@@ -310,7 +310,7 @@
   </p>
   <p>
     Tell us your child's board, school, area, preferred timings and home, online or hybrid. We shortlist two or three
-    ID-verified Class 7 maths tutors, you choose one for a free demo class, and switching later is free. Families in
+    Class 7 maths tutors, you choose one for a free demo class, and switching later is free. Families in
     Gurugram can visit our <a href="{{ url('/maths-home-tutor-gurgaon') }}">maths home tuition in Gurgaon</a> page, or
     <a href="{{ url('/demo-class') }}">book your free demo</a> now.
   </p>

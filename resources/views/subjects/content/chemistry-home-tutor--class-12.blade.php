@@ -361,7 +361,7 @@
     and works well if the tutor can see the notebook.
   </p>
   <p>
-    Tell us the board, your area, slots and budget. We shortlist two or three ID-verified Class 12 chemistry tutors,
+    Tell us the board, your area, slots and budget. We shortlist two or three Class 12 chemistry tutors,
     you choose one for a free demo class, and switching later is free. In Gurugram, see our page for a
     <a href="{{ url('/chemistry-home-tutor-gurgaon') }}">chemistry home tutor in Gurgaon</a>, or
     <a href="{{ url('/demo-class') }}">book a free demo class</a> now.

@@ -269,7 +269,7 @@
     before the demo; our <a href="{{ url('/pricing-guide') }}">pricing guide</a> has more detail.
   </p>
   <p>
-    Share the board, school, area, timings, mode and budget. We shortlist two or three ID-verified tutors, you choose
+    Share the board, school, area, timings, mode and budget. We shortlist two or three tutors, you choose
     one for a free demo class, and switching later is free. In Gurugram, see our
     <a href="{{ url('/science-home-tutor-gurgaon') }}">Gurgaon science tutor page</a>; anywhere else,
     <a href="{{ url('/demo-class') }}">book a free demo</a> to begin.

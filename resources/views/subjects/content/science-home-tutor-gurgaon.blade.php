@@ -57,7 +57,7 @@
     and a Class 6 child who has gone off science altogether needs someone else again.
   </p>
   <p>
-    From that we shortlist two or three science tutors. Each is ID-verified, fits your budget, teaches your board at your
+    From that we shortlist two or three science tutors. Each fits your budget, teaches your board at your
     child's level, and can realistically reach you at the time you want. You pick one for a <strong>free demo
     class</strong>, which is a normal lesson on whatever chapter school is on that week. If the fit is wrong, we arrange
     the next tutor; switching costs nothing.

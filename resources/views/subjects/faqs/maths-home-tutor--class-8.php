@@ -7,7 +7,7 @@ return [
     ],
     [
         'How do I find an ICSE Class 8 maths home tutor near me?',
-        'Tell NXTutors that your child is in ICSE Class 8, along with the school, your area, timings and budget. We shortlist two or three ID-verified tutors who know ICSE middle-school maths and can reach you, and you choose one for a free demo class. If no ICSE specialist is close by, online sessions widen the choice considerably.',
+        'Tell NXTutors that your child is in ICSE Class 8, along with the school, your area, timings and budget. We shortlist two or three tutors who know ICSE middle-school maths and can reach you, and you choose one for a free demo class. If no ICSE specialist is close by, online sessions widen the choice considerably.',
     ],
     [
         'What is in the CBSE Class 8 maths syllabus for 2026-27?',

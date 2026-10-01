@@ -7,7 +7,7 @@ return [
     ],
     [
         'How do I find the best teacher for Class 6 maths near me?',
-        'Tell NXTutors your child\'s board, school, area, timings and budget. We shortlist two or three ID-verified Class 6 maths tutors who fit, and you judge the best one in a free demo class. Look for a tutor who knows the Ganita Prakash book or your ICSE series, asks your child to explain their thinking and can name the gaps after one session.',
+        'Tell NXTutors your child\'s board, school, area, timings and budget. We shortlist two or three Class 6 maths tutors who fit, and you judge the best one in a free demo class. Look for a tutor who knows the Ganita Prakash book or your ICSE series, asks your child to explain their thinking and can name the gaps after one session.',
     ],
     [
         'What is in the Class 6 NCERT maths book Ganita Prakash?',

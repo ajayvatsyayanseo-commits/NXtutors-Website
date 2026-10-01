@@ -300,7 +300,7 @@
   </p>
   <p>
     Tell us the board, the goal (boards, JEE or NEET), your area, preferred slots and budget. We shortlist two or three
-    ID-verified tutors, you choose one for a free demo class, and switching later is free.
+    tutors, you choose one for a free demo class, and switching later is free.
     <a href="{{ url('/demo-class') }}">Book a free demo class</a> to begin.
   </p>
   </section>

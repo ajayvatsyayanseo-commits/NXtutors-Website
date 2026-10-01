@@ -7,7 +7,7 @@ return [
     ],
     [
         'How do I find a maths tutor for Class 5 near me?',
-        'Share your child\'s board and school, your area, suitable timings and budget with NXTutors. We shortlist two or three ID-verified Class 5 maths tutors who can reach you at your slot, and you choose one for a free demo class. If nobody suitable is close by, an online tutor is a good alternative for a settled child.',
+        'Share your child\'s board and school, your area, suitable timings and budget with NXTutors. We shortlist two or three Class 5 maths tutors who can reach you at your slot, and you choose one for a free demo class. If nobody suitable is close by, an online tutor is a good alternative for a settled child.',
     ],
     [
         'Is an online maths tutor good for a Class 5 child?',

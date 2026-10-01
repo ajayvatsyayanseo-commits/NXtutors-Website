@@ -314,8 +314,7 @@
   <p>
     To start, tell us the student's course (AA or AI), level (SL or HL), exam session, school year, what is going wrong,
     your sector or society, and the slots you prefer. We shortlist two or three matched IB maths tutors, you choose one
-    for a <a href="{{ url('/demo-class') }}">free demo class</a>, and switching tutor later is free. Every tutor is
-    ID-verified before being shortlisted. You can also browse <a href="{{ url('/tutors') }}">all tutors</a> first.
+    for a <a href="{{ url('/demo-class') }}">free demo class</a>, and switching tutor later is free. Tutors who join go through an ID check (see <a href="{{ url('/how-we-verify-tutors') }}">how we verify tutors</a>). You can also browse <a href="{{ url('/tutors') }}">all tutors</a> first.
   </p>
   </section>
 

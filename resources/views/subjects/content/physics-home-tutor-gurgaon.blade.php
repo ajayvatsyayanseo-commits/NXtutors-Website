@@ -64,7 +64,7 @@
     <li><strong>Budget.</strong> We shortlist only inside it.</li>
   </ul>
   <p>
-    You get two or three ID-verified physics tutors, pick one for a <strong>free demo class</strong>, and switch at no
+    You get two or three physics tutors, pick one for a <strong>free demo class</strong>, and switch at no
     cost if it is not right. For how physics tuition works beyond Gurugram, see our
     <a href="{{ url('/physics-home-tutor') }}">physics home tutor</a> page.
   </p>

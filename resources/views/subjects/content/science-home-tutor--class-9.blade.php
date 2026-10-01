@@ -367,7 +367,7 @@
   </p>
   <p>
     Tell us the board (CBSE or ICSE), which sciences need help, the school, your area, timings, mode and budget. We
-    shortlist two or three ID-verified tutors, you choose one for a free demo class, and switching later in the year is
+    shortlist two or three tutors, you choose one for a free demo class, and switching later in the year is
     free. In Gurugram, see our <a href="{{ url('/science-home-tutor-gurgaon') }}">science home tutor Gurgaon page</a>;
     anywhere else, <a href="{{ url('/demo-class') }}">book a free demo class</a> or browse
     <a href="{{ url('/tutors') }}">our tutors</a>.

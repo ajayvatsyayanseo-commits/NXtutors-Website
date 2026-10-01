@@ -7,7 +7,7 @@ return [
     ],
     [
         "How do I find a science home tutor for Class 7 near me?",
-        "Tell NXTutors the board, school, your locality, preferred timings and budget. We shortlist two or three ID-verified tutors who can reach you at those times, and you choose one for a free demo class. If nobody suitable is nearby, an online tutor is a good alternative.",
+        "Tell NXTutors the board, school, your locality, preferred timings and budget. We shortlist two or three tutors who can reach you at those times, and you choose one for a free demo class. If nobody suitable is nearby, an online tutor is a good alternative.",
     ],
     [
         "Which Class 7 science chapters need the most help?",

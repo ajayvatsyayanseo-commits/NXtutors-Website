@@ -304,7 +304,7 @@
   </p>
   <p>
     Tell us the board (CBSE or ICSE), school, area, timings and your preference for home, online or hybrid. We
-    shortlist two or three ID-verified Class 8 maths tutors, you pick one for a free demo class, and switching is free if
+    shortlist two or three Class 8 maths tutors, you pick one for a free demo class, and switching is free if
     the fit is not right. Gurugram families can start from our
     <a href="{{ url('/maths-home-tutor-gurgaon') }}">maths home tutor Gurgaon</a> page, or anyone can
     <a href="{{ url('/demo-class') }}">book a free demo class</a> today.

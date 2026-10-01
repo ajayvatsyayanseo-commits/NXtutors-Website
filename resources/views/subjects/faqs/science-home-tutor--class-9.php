@@ -7,7 +7,7 @@ return [
     ],
     [
         "How do I find home tuition for Class 9 CBSE near me?",
-        "Tell NXTutors the board, school, your area, timings and budget. We shortlist two or three ID-verified Class 9 science tutors who can reach you at those times, and you choose one for a free demo class. If nobody suitable is nearby, an experienced online tutor is a good option.",
+        "Tell NXTutors the board, school, your area, timings and budget. We shortlist two or three Class 9 science tutors who can reach you at those times, and you choose one for a free demo class. If nobody suitable is nearby, an experienced online tutor is a good option.",
     ],
     [
         "Which book is used for CBSE Class 9 science in 2026-27?",

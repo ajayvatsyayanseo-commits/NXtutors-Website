@@ -92,7 +92,7 @@
           <li><strong>{{ count($pages) + $posts->count() }}</strong><span>guides written or reviewed</span></li>
           @if($author['education'] !== '')<li><strong>Qualification</strong><span>{{ $author['education'] }}</span></li>@endif
           @if($author['experience'] !== '')<li><strong>{{ \App\Support\SubjectLinks::experience($author['experience']) }}</strong><span>of teaching</span></li>@endif
-          <li><strong>{{ $isTeam ? 'Reviewed' : 'Verified' }}</strong><span>{{ $isTeam ? 'every fact checked against the board' : 'ID-verified NXTutors tutor' }}</span></li>
+          <li><strong>{{ $isTeam ? 'Reviewed' : 'Verified' }}</strong><span>{{ $isTeam ? 'every fact checked against the board' : 'NXTutors tutor; passed the ID check' }}</span></li>
         </ul>
       </aside>
     </section>

@@ -295,7 +295,7 @@
     <a href="{{ url('/physics-home-tutor-gurgaon') }}">physics home tutor in Gurgaon</a> page; for international
     boards, the <a href="{{ url('/ib-physics-tutor-gurgaon') }}">IB physics</a> and
     <a href="{{ url('/igcse-physics-tutor-gurgaon') }}">IGCSE physics</a> pages. Tell us the class, coaching schedule,
-    area, slots and budget; we shortlist two or three ID-verified tutors, you choose one for a free demo class, and
+    area, slots and budget; we shortlist two or three tutors, you choose one for a free demo class, and
     switching later is free. <a href="{{ url('/demo-class') }}">Book a free demo class</a>.
   </p>
   </section>

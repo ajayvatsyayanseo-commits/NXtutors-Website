@@ -48,7 +48,7 @@
       <aside class="nx-shero__side" aria-label="How it works">
         <ul class="nx-stats nx-stats--stack">
           <li><strong>1</strong><span>Create your profile: subjects, classes, boards, fee</span></li>
-          <li><strong>2</strong><span>Add the areas you travel to, and get ID-verified</span></li>
+          <li><strong>2</strong><span>Add the areas you travel to, and complete the ID check</span></li>
           <li><strong>3</strong><span>We match you with families; the first class is a demo</span></li>
         </ul>
       </aside>

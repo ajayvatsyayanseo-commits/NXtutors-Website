@@ -268,7 +268,7 @@
   <h2 id="igp-start">Getting started</h2>
   <p>
     Tell us the grade, Core or Extended, whether the school uses Paper 5 or 6, the exam series, your locality and your
-    slots. We shortlist two or three ID-verified IGCSE physics tutors; you choose one for a
+    slots. We shortlist two or three IGCSE physics tutors; you choose one for a
     <a href="{{ url('/demo-class') }}">free demo class</a>, and switching is free. For physics tuition more broadly, see
     our <a href="{{ url('/physics-home-tutor') }}">physics home tutor</a> page and the
     <a href="{{ url('/physics-home-tutor-gurgaon') }}">physics home tutor in Gurgaon</a> page; for IGCSE chemistry, see

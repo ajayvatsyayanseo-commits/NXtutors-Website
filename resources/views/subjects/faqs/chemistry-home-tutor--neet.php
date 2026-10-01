@@ -7,7 +7,7 @@ return [
     ],
     [
         'How do I find a NEET chemistry tutor near me?',
-        'Share your class, coaching timings, area, preferred slots and budget with NXTutors. We shortlist two or three ID-verified NEET chemistry tutors who fit, considering travel time at your slot, and you choose one for a free demo class. Online sessions are a good option for NEET students because they fit around coaching hours.',
+        'Share your class, coaching timings, area, preferred slots and budget with NXTutors. We shortlist two or three NEET chemistry tutors who fit, considering travel time at your slot, and you choose one for a free demo class. Online sessions are a good option for NEET students because they fit around coaching hours.',
     ],
     [
         'How many chemistry questions are there in NEET?',

@@ -7,7 +7,7 @@ return [
     ],
     [
         'How do I find a maths tutor for Class 7 near me?',
-        'Share your child\'s board, school, area, preferred timings and budget with NXTutors. We shortlist two or three ID-verified Class 7 maths tutors who can reach you, and you choose one for a free demo class. If no suitable tutor is nearby, an online tutor with a shared whiteboard works well at this age.',
+        'Share your child\'s board, school, area, preferred timings and budget with NXTutors. We shortlist two or three Class 7 maths tutors who can reach you, and you choose one for a free demo class. If no suitable tutor is nearby, an online tutor with a shared whiteboard works well at this age.',
     ],
     [
         'What does the Class 7 NCERT maths book cover?',

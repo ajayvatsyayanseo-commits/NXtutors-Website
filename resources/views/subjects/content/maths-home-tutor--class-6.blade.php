@@ -288,7 +288,7 @@
   </p>
   <p>
     Share your child's board, school, area, timings and whether you prefer home, online or hybrid. We shortlist two or
-    three ID-verified tutors, you choose one for a free demo class, and if the match is not right, switching is free.
+    three matched tutors, you choose one for a free demo class, and if the match is not right, switching is free.
     In Gurugram, see our <a href="{{ url('/maths-home-tutor-gurgaon') }}">Gurgaon maths home tutor</a> page, or
     <a href="{{ url('/tutors') }}">browse tutors</a> anywhere.
   </p>

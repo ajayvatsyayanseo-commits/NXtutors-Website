@@ -341,7 +341,7 @@
   <h2 id="ibc-start">Getting started</h2>
   <p>
     Tell us the course (IGCSE 0620 Core or Extended, or IB Chemistry SL or HL), the grade or DP year, what is
-    worrying you, your locality and your slots. We shortlist two or three ID-verified tutors; you choose one for a
+    worrying you, your locality and your slots. We shortlist two or three tutors; you choose one for a
     <a href="{{ url('/demo-class') }}">free demo class</a>, and switching is free. For chemistry tuition in general see
     our <a href="{{ url('/chemistry-home-tutor') }}">chemistry home tutor</a> page and the
     <a href="{{ url('/chemistry-home-tutor-gurgaon') }}">chemistry home tutor in Gurgaon</a> page; for physics, see

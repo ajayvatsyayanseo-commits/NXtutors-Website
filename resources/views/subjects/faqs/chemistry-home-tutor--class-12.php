@@ -7,7 +7,7 @@ return [
     ],
     [
         'How do I find a chemistry home tutor for Class 12th near me?',
-        'Share the board, your area, preferred timings and budget with NXTutors. We shortlist two or three ID-verified Class 12 chemistry tutors who fit, taking travel time at your slot into account, and you choose one for a free demo class. If no suitable tutor is nearby, online sessions with an experienced Class 12 tutor work well.',
+        'Share the board, your area, preferred timings and budget with NXTutors. We shortlist two or three Class 12 chemistry tutors who fit, taking travel time at your slot into account, and you choose one for a free demo class. If no suitable tutor is nearby, online sessions with an experienced Class 12 tutor work well.',
     ],
     [
         'Which part of Class 12 chemistry carries the most marks?',

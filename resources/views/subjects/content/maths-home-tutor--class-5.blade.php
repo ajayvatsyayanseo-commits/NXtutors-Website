@@ -311,7 +311,7 @@
   </p>
   <p>
     To start, tell us the board and school, your area, suitable timings, home or online, and anything we should know
-    about your child. We shortlist two or three ID-verified tutors, you pick one for a free demo class, and switching
+    about your child. We shortlist two or three tutors, you pick one for a free demo class, and switching
     later is free if the fit is not right. Families in Gurugram can also see our page for a
     <a href="{{ url('/maths-home-tutor-gurgaon') }}">maths tutor in Gurgaon</a>, or
     <a href="{{ url('/demo-class') }}">book a free demo class</a> directly.

@@ -321,7 +321,7 @@
     <a href="{{ url('/physics-home-tutor-gurgaon') }}">physics home tutor in Gurgaon</a> page.
   </p>
   <p>
-    Tell us the board, any entrance exam, your area, slots and budget. We shortlist two or three ID-verified Class 12
+    Tell us the board, any entrance exam, your area, slots and budget. We shortlist two or three Class 12
     physics tutors, you choose one for a free demo class, and switching later is free.
     <a href="{{ url('/demo-class') }}">Book a free demo class</a> to begin.
   </p>

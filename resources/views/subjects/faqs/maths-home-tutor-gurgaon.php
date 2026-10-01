@@ -31,6 +31,6 @@ return [
     ],
     [
         'How soon can a maths tutor start?',
-        'Once you share your child\'s class, board, maths course, sector and preferred slots, we send you two or three matched tutors and help you book the free demo. For urgent cases, such as a mid-year school move or exams coming up, tell us and we prioritise tutors who can start within the week. All our tutors are ID-verified before being shortlisted.',
+        'Once you share your child\'s class, board, maths course, sector and preferred slots, we send you two or three matched tutors and help you book the free demo. For urgent cases, such as a mid-year school move or exams coming up, tell us and we prioritise tutors who can start within the week. Tutors who join go through an ID check before their profile goes live.',
     ],
 ];

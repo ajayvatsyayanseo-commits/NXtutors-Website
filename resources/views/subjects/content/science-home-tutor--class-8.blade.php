@@ -282,8 +282,7 @@
     shortlisted tutor's fee before the demo; our <a href="{{ url('/pricing-guide') }}">pricing guide</a> explains more.
   </p>
   <p>
-    Tell us the board, school, area, timings, home, online or hybrid, and budget. We shortlist two or three ID-verified
-    tutors, you choose one for a free demo class, and switching later is free. For families in Gurugram, see our
+    Tell us the board, school, area, timings, home, online or hybrid, and budget. We shortlist two or three tutors, you choose one for a free demo class, and switching later is free. For families in Gurugram, see our
     <a href="{{ url('/science-home-tutor-gurgaon') }}">science home tutors in Gurgaon</a>; otherwise
     <a href="{{ url('/demo-class') }}">book your free demo class</a>.
   </p>

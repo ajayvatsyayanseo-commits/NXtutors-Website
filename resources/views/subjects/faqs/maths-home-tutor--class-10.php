@@ -7,7 +7,7 @@ return [
     ],
     [
         'How do I find a Class 10 maths tutor near me?',
-        'Share the board (CBSE Standard, CBSE Basic or ICSE), your area, preferred timings and budget with NXTutors. We shortlist two or three ID-verified Class 10 maths tutors who fit, considering travel time at your slot, and you choose one for a free demo class. If no suitable tutor is nearby, online sessions with an experienced Class 10 tutor work well.',
+        'Share the board (CBSE Standard, CBSE Basic or ICSE), your area, preferred timings and budget with NXTutors. We shortlist two or three Class 10 maths tutors who fit, considering travel time at your slot, and you choose one for a free demo class. If no suitable tutor is nearby, online sessions with an experienced Class 10 tutor work well.',
     ],
     [
         'Is online maths tuition good enough for Class 10?',

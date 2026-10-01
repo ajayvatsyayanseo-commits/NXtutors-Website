@@ -7,7 +7,7 @@ return [
     ],
     [
         'How do I find maths tuition near me for Class 11?',
-        'Tell NXTutors your board (CBSE, ISC, IB or A-level), your area, preferred timings, budget and whether JEE is a goal. We shortlist two or three ID-verified Class 11 maths tutors who fit, and you choose one for a free demo class. Online sessions widen the choice if no specialist is nearby.',
+        'Tell NXTutors your board (CBSE, ISC, IB or A-level), your area, preferred timings, budget and whether JEE is a goal. We shortlist two or three Class 11 maths tutors who fit, and you choose one for a free demo class. Online sessions widen the choice if no specialist is nearby.',
     ],
     [
         'Why is Class 11 maths so much harder than Class 10?',

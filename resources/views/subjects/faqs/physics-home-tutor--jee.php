@@ -7,7 +7,7 @@ return [
     ],
     [
         'How do I find a JEE physics tutor near me?',
-        'Share your child\'s class, coaching schedule, target (JEE Main or Advanced), area, preferred timings and budget with NXTutors. We shortlist two or three ID-verified JEE physics tutors who fit, considering travel time at your slot, and you choose one for a free demo class. Online sessions are popular with JEE students because they fit late slots after coaching.',
+        'Share your child\'s class, coaching schedule, target (JEE Main or Advanced), area, preferred timings and budget with NXTutors. We shortlist two or three JEE physics tutors who fit, considering travel time at your slot, and you choose one for a free demo class. Online sessions are popular with JEE students because they fit late slots after coaching.',
     ],
     [
         'How many physics questions are there in JEE Main?',

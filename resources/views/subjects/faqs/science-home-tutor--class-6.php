@@ -7,7 +7,7 @@ return [
     ],
     [
         "How do I find science tuition for Class 6 near me?",
-        "Share your child's board and school, your area, suitable timings and budget with NXTutors. We shortlist two or three ID-verified science tutors who can reach you at those times, and you choose one for a free demo class. If no suitable tutor is close by, online sessions work well for most Class 6 chapters.",
+        "Share your child's board and school, your area, suitable timings and budget with NXTutors. We shortlist two or three science tutors who can reach you at those times, and you choose one for a free demo class. If no suitable tutor is close by, online sessions work well for most Class 6 chapters.",
     ],
     [
         "Does the tutor teach from the new NCERT Curiosity book?",

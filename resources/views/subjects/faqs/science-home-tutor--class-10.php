@@ -7,7 +7,7 @@ return [
     ],
     [
         'How do I find a science home tutor for Class 10 near me?',
-        'Share your child\'s board, which sciences need help, your area, preferred timings, home or online, and your budget with NXTutors. We shortlist two or three ID-verified tutors with Class 10 experience in that board who can reach you at your slot, and you choose one for a free demo class. If the best tutor for your child is not nearby, online or hybrid sessions are a good option.',
+        'Share your child\'s board, which sciences need help, your area, preferred timings, home or online, and your budget with NXTutors. We shortlist two or three tutors with Class 10 experience in that board who can reach you at your slot, and you choose one for a free demo class. If the best tutor for your child is not nearby, online or hybrid sessions are a good option.',
     ],
     [
         'Is online or home tuition better for Class 10 science?',
