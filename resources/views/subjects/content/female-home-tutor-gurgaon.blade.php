@@ -270,7 +270,7 @@
     flexible. We shortlist two or three tutors, you choose one for a free demo, and switching later is free. Start with
     <a href="{{ url('/tutors?gender=female&city=Gurugram&mode=home') }}">female home tutors in Gurugram</a>, book a
     <a href="{{ url('/demo-class') }}">free demo class</a>, or browse the
-    <a href="{{ url('/city/gurugram') }}">Gurugram tutors page</a>.
+    page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>.
   </p>
   </section>
 

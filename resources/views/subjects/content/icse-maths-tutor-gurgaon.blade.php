@@ -325,7 +325,7 @@
     Tell us the class, the school year, the ICSE or ISC topics causing trouble, your sector or society and the slots
     that suit you. We shortlist two or three matched ICSE maths tutors, you pick one for a
     <a href="{{ url('/demo-class') }}">free demo class</a>, and switching later is free. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>
-    before being shortlisted. You can also browse <a href="{{ url('/tutors') }}">tutors near you</a> first.
+    before being shortlisted. You can also browse <a href="{{ url('/tutors') }}">tutors near you</a> first, or every sector and zone on our page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>.
   </p>
   </section>
 

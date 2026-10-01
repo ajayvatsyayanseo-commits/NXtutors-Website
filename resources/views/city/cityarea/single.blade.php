@@ -5,7 +5,8 @@
   {{-- Title and description come from CityHub::areaSeo (built from the area's
        name), not the hand-typed Super Admin title, which ran to 100+ characters. --}}
   @php $metatitle = $areaSeo['title'] ?? ($area->meta_title ?? $area->main_title); @endphp
-  @php $metadesc = $areaSeo['desc'] ?? ($area->meta_desc ?? ''); @endphp
+  {{-- Never the typed meta_desc: it carried "best", "top" and old fees. --}}
+  @php $metadesc = $areaSeo['desc'] ?? ''; @endphp
   @include('include.header')
 @php use Illuminate\Support\Str; @endphp
   @php
@@ -249,7 +250,7 @@
       <aside class="sticky">
         <div class="cardx cta">
           <h2 class="h2"><span></span>Book Free Demo</h2>
-          <p>Tell us your class, subject & preferred timing. We’ll connect you with a verified tutor.</p>
+          <p>Tell us your class, subject & preferred timing. We’ll send two or three matched tutors, and the first class is a free demo.</p>
           <a class="btnx primary" href="{{ url('/contact') }}">Get a Call Back</a>
           <a class="btnx" href="{{ url('/tutors') }}">Explore Tutors</a>
         </div>

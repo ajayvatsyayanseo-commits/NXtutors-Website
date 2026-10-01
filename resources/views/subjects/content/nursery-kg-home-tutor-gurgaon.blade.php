@@ -280,8 +280,7 @@
   <p>
     Tell us your child's stage (Nursery, LKG or UKG), the preschool's approach, what you would like help with, your
     sector or society and the afternoon times that work. We shortlist two or three tutors, you choose one for a free
-    demo, and switching tutor later is free. Start from the <a href="{{ url('/city/gurugram') }}">Gurugram tutors
-    page</a>, browse <a href="{{ url('/tutors?class=UKG&city=Gurugram&mode=home') }}">Gurugram home tutors who list UKG</a>, or book
+    demo, and switching tutor later is free. Start from the page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>, browse <a href="{{ url('/tutors?class=UKG&city=Gurugram&mode=home') }}">Gurugram home tutors who list UKG</a>, or book
     a <a href="{{ url('/demo-class') }}">free demo class</a>.
   </p>
   </section>

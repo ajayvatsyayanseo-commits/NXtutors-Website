@@ -253,7 +253,7 @@
   <p>
     Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
     live. Tell us the course, the class, your sector or society and your slots, and we shortlist two or three biology
-    tutors. You can also browse by area on our <a href="{{ url('/city/gurugram') }}">Gurugram tutors page</a>, look
+    tutors. You can also browse by area on our page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>, look
     through <a href="{{ url('/tutors') }}">tutor profiles</a>, or book a <a href="{{ url('/demo-class') }}">free demo
     class</a>. For younger students, biology is part of science: see
     <a href="{{ url('/science-home-tutor-gurgaon') }}">science home tutors in Gurgaon</a>.

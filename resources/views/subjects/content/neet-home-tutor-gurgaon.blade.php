@@ -94,7 +94,7 @@
   <h2 id="ng-zones">NEET tuition across Gurugram's zones</h2>
   <p>
     How easy home tuition is depends on how many tutors live near you and which roads they must cross. Browse local
-    tutors from the <a href="{{ url('/city/gurugram') }}">Gurugram page</a>, sector by sector.
+    tutors from the page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>, sector by sector.
   </p>
   <div class="nx-table-wrap">
   <table class="nx-table">

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   @php $metatitle = 'Find Tutors - NXTutors'; @endphp
-  @php $metadesc = 'Find verified tutors near you.'; @endphp
+  @php $metadesc = 'Find home and online tutors near you by subject, class, board and locality. See fees before the demo, get two or three matched tutors and a free demo class.'; @endphp
   @include('include.header')
 
   {{-- ✅ Tutors List Schema (Breadcrumb + ItemList) --}}

@@ -313,7 +313,7 @@
       <ul class="nx-chips nx-chips--rail" style="margin-top:var(--nxt-s5)">
         @if($postArea)
           <li><a class="nx-chip" href="{{ url('/city/gurugram/'.$postArea->slug) }}">Home tutors in {{ $postArea->name }}</a></li>
-          <li><a class="nx-chip" href="{{ url('/city/gurugram') }}">Home tutors across Gurugram</a></li>
+          <li><a class="nx-chip" href="{{ url('/city/gurugram') }}">Home tutors in Gurgaon</a></li>
         @endif
         <li><a class="nx-chip" href="{{ url('/city') }}">Find a home tutor in your city</a></li>
       </ul>

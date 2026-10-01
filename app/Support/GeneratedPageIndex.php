@@ -22,7 +22,7 @@ class GeneratedPageIndex
 
     /**
      * Search title and description for an indexed page, or null to keep
-     * the stored ones. See config/generated_pages.php ('seo').
+     * the stored ones (only for pages without a 'seo' row). See config/generated_pages.php ('seo').
      *
      * @return array{title: string, desc: string}|null
      */
@@ -34,11 +34,11 @@ class GeneratedPageIndex
         }
         [$area, $city, $what] = $row;
 
-        $base = "Home Tutor in $area, $city – $what";
-        $title = mb_strlen($base . ' | NXTutors') <= 65 ? $base . ' | NXTutors' : $base;
-        $desc = "Home tutor for $what in $area, $city. See tutors near you with their fees, get two or three matched tutors and book a free demo class.";
-
-        return ['title' => $title, 'desc' => $desc];
+        // "{Subject} Home Tutor in {area}, Gurgaon – Class {n} | NXTutors" and a
+        // 140–160 character description with the free demo (App\Support\SeoText).
+        // An optional fourth entry words the description ("Class 11–12
+        // Accountancy (CBSE or ISC)").
+        return SeoText::generatedPage($area, $city, $what, $row[3] ?? null, trim((string) $page->slug));
     }
 
     /** @return list<string> */

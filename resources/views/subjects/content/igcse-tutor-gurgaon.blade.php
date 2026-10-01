@@ -263,7 +263,7 @@
     Tell us the board, syllabus code and tier (for example "Cambridge 0625 Extended"), the grade, your sector or
     society and your free slots. We shortlist two or three tutors, you see each fee first, and the first class is a
     <a href="{{ url('/demo-class') }}">free demo</a>. Browse <a href="{{ url('/tutors') }}">tutor profiles</a> or every
-    area on our <a href="{{ url('/city/gurugram') }}">Gurugram tutors page</a>.
+    area on our page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>.
   </p>
   </section>
 

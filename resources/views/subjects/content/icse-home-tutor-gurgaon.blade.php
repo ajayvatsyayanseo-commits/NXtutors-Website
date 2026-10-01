@@ -265,8 +265,7 @@
   <p>
     Tell us whether it is ICSE or ISC, the class, subjects, your sector or society and your slots. We shortlist two or
     three tutors and the first class is a <a href="{{ url('/demo-class') }}">free demo</a>. Browse
-    <a href="{{ url('/tutors') }}">tutor profiles</a> or all areas on our <a href="{{ url('/city/gurugram') }}">Gurugram
-    tutors page</a>.
+    <a href="{{ url('/tutors') }}">tutor profiles</a> or all areas on our page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>.
   </p>
   </section>
 

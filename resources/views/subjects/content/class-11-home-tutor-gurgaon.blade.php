@@ -325,7 +325,7 @@
     see <a href="{{ url('/maths-home-tutor-gurgaon') }}">maths</a>,
     <a href="{{ url('/physics-home-tutor-gurgaon') }}">physics</a> and
     <a href="{{ url('/chemistry-home-tutor-gurgaon') }}">chemistry</a> home tutors in Gurgaon, or browse by area on the
-    <a href="{{ url('/city/gurugram') }}">Gurugram tutors page</a>.
+    page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>.
   </p>
   </section>
 

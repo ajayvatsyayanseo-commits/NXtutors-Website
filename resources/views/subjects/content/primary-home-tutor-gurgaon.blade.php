@@ -314,7 +314,7 @@
   <p>
     Tell us your child's class, school programme, the subjects that need help, your sector or society and the times
     that work. We shortlist two or three primary tutors, you choose one for a free demo, and switching tutor later is
-    free. Start from our <a href="{{ url('/city/gurugram') }}">Gurugram tutors page</a> or book a
+    free. Start from our page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a> or book a
     <a href="{{ url('/demo-class') }}">free demo class</a>.
   </p>
   </section>

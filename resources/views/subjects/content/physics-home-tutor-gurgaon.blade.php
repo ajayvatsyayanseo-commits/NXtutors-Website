@@ -75,7 +75,7 @@
   <p>
     Senior-school physics students are short of time. Many leave school, go to coaching, and have a physics session
     squeezed in late. A tutor who is close in traffic, not just on the map, is what makes three sessions a week
-    sustainable. Browse tutors by locality on our <a href="{{ url('/city/gurugram') }}">Gurugram page</a>.
+    sustainable. Browse tutors by locality on our page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>.
   </p>
     <div class="nx-guide__cards">
       <div class="nx-guide__card">
@@ -370,7 +370,7 @@
   <p>
     Send us the class, the exact physics course, the goal (boards, JEE, NEET, IB or IGCSE), your sector and your free
     slots. Book a <a href="{{ url('/demo-class') }}">free demo class</a> or start from our
-    <a href="{{ url('/city/gurugram') }}">Gurugram page</a>. If chemistry needs attention too, see our
+    page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>. If chemistry needs attention too, see our
     <a href="{{ url('/chemistry-home-tutor-gurgaon') }}">chemistry home tutor in Gurgaon</a> page; for younger
     siblings, the <a href="{{ url('/science-home-tutor-gurgaon') }}">science home tutor in Gurgaon</a> page covers Classes
     6 to 10.

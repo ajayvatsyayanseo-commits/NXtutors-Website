@@ -239,7 +239,7 @@
   <p>
     Tell us the board, the subjects, any entrance exam, the coaching schedule and your sector or society. We shortlist
     two or three tutors for each subject, the first class is a free demo, and switching tutor later is free. Browse by
-    area on our <a href="{{ url('/city/gurugram') }}">Gurugram tutors page</a>.
+    area on our page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>.
   </p>
   </section>
 

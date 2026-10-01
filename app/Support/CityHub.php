@@ -179,11 +179,12 @@ class CityHub
     /**
      * Title, H1 and meta description for an area page, built from the area's
      * name. The hand-typed titles in Super Admin averaged 106 characters (Google
-     * shows about 60) and most repeated "Affordable, Female & Experienced";
-     * these are short, consistent, and name the place first.
+     * shows about 60) and most repeated "Affordable, Female & Experienced".
      *
-     * The description typed in Super Admin is kept when it is a sensible
-     * length; otherwise one is written from the name.
+     * The description typed in Super Admin is never used: in Sep 2026 many
+     * still said "best", "top", "affordable" or "₹500–₹2000/hr". Title and
+     * description come from App\Support\SeoText (the zone and, for housing
+     * societies, the sector feed the wording).
      *
      * @return array{name:string, title:string, h1:string, desc:string}
      */
@@ -199,24 +200,19 @@ class CityHub
             $name .= $pinIsUnique ? ' (' . $area->pincode . ')' : ' (' . ucwords(str_replace('-', ' ', trim((string) $area->slug, '-'))) . ')';
         }
 
-        // "Gurgaon" in the title because it is still what most people type;
-        // the H1 and the rest of the page use the current name.
-        $titleCity = Geo::akaOf($citySlug) && $citySlug === 'gurugram' ? Geo::akaOf($citySlug) : $cityName;
-        $base = 'Home Tutors in ' . $name . ', ' . $titleCity;
-        $title = mb_strlen($base . ' – CBSE, IB, JEE | NXTutors') <= 65
-            ? $base . ' – CBSE, IB, JEE | NXTutors'
-            : (mb_strlen($base . ' | NXTutors') <= 70 ? $base . ' | NXTutors' : $base);
+        // "Gurgaon" in the title and description because it is still what
+        // most people type; the H1 and the rest of the page use the current name.
+        $titleCity = SeoText::titleCity($citySlug, $cityName);
+        $sector = config('area_sectors.' . $citySlug . '.' . trim((string) ($area->slug ?? '')));
+        $sector = is_array($sector) ? ($sector['sector'] ?? null) : $sector;
 
-        $typed = trim(preg_replace('/\s+/u', ' ', strip_tags((string) ($area->meta_desc ?? ''))));
-        $desc = (mb_strlen($typed) >= 70 && mb_strlen($typed) <= 170 && ! str_contains($typed, 'NxtTutors') && stripos($typed, 'verified') === false)
-            ? $typed
-            : 'Home tutors in ' . $name . ', ' . $cityName . ' for CBSE, ICSE, IB and IGCSE, Classes 1–12, JEE and NEET. Most fees ₹800–2,500/hr; free demo class.';
+        $zone = self::zoneOfArea($citySlug, $cityName, $area);
 
         return [
             'name'  => $name,
-            'title' => $title,
+            'title' => SeoText::areaTitle($name, $titleCity, $zone !== null && strcasecmp($zone, $name) === 0),
             'h1'    => 'Home Tutors in ' . $name . ', ' . $cityName,
-            'desc'  => $desc,
+            'desc'  => SeoText::areaDesc($name, $titleCity, $zone, $sector ?: null, (string) ($area->slug ?? $name)),
         ];
     }
 

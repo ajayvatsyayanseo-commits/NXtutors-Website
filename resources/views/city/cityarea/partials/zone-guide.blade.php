@@ -37,6 +37,6 @@
   @endif
 
   <p class="nxzone__more">
-    See all areas and our full guide for <a href="{{ url('/city/'.$city->slug) }}">home tutors in {{ $city->city_name }}</a>.
+    See all areas and our full guide for <a href="{{ url('/city/'.$city->slug) }}">home tutors in {{ $city->slug === 'gurugram' ? 'Gurgaon' : $city->city_name }}</a>.
   </p>
 </section>

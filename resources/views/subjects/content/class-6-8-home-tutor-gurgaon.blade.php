@@ -319,7 +319,7 @@
     Tell us the class, board, subjects, your sector or society and the slots you can offer. We shortlist two or three
     tutors, and the first class is a free demo. <a href="{{ url('/demo-class') }}">Book a free demo</a>,
     <a href="{{ url('/tutors') }}">browse tutor profiles</a> or explore areas on the
-    <a href="{{ url('/city/gurugram') }}">Gurugram tutors page</a>. For subject pages, see
+    page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>. For subject pages, see
     <a href="{{ url('/maths-home-tutor-gurgaon') }}">maths home tutors in Gurgaon</a> and
     <a href="{{ url('/science-home-tutor-gurgaon') }}">science home tutors in Gurgaon</a>.
   </p>

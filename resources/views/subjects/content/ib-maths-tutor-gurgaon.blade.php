@@ -276,8 +276,7 @@
   </p>
   <p>
     For maths tuition across every board in the city, see our <a href="{{ url('/maths-home-tutor-gurgaon') }}">maths
-    home tutor in Gurgaon</a> page, or browse tutors by locality on the <a href="{{ url('/city/gurugram') }}">Gurugram
-    page</a>.
+    home tutor in Gurgaon</a> page, or browse tutors by locality on the page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>.
   </p>
   </section>
 

@@ -80,8 +80,7 @@
   <h2 id="mh-where">Where our maths tutors teach in Gurugram</h2>
   <p>
     Gurugram splits into zones with their own school mix and their own traffic patterns, and both shape the kind of
-    maths tutor a family needs. You can browse tutors near you on our <a href="{{ url('/city/gurugram') }}">Gurugram
-    page</a>, where each sector and society has its own listing.
+    maths tutor a family needs. You can browse tutors near you on our page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>, where each sector and society has its own listing.
   </p>
     <div class="nx-guide__cards">
       <div class="nx-guide__card">
@@ -391,7 +390,7 @@
     Tell us your child's class, board and exact maths course, your sector or society, and the slots that suit you. We
     come back with two or three matched maths tutors, you choose one for a free demo class, and you decide after that.
     Book a <a href="{{ url('/demo-class') }}">free demo class</a>, browse <a href="{{ url('/tutors') }}">tutors</a>, or
-    start from our <a href="{{ url('/city/gurugram') }}">Gurugram page</a>.
+    start from our page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>.
   </p>
   <p>
     Looking outside Gurugram? We also match maths tutors in <a href="{{ url('/city') }}">cities across India</a>.

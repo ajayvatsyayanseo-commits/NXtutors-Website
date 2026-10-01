@@ -301,7 +301,7 @@
     <a href="{{ url('/tutors') }}">browse tutor profiles</a>, see the
     <a href="{{ url('/icse-maths-tutor-gurgaon') }}">ICSE maths</a> and
     <a href="{{ url('/igcse-maths-tutor-gurgaon') }}">IGCSE maths</a> pages for Gurgaon, or browse by area on the
-    <a href="{{ url('/city/gurugram') }}">Gurugram tutors page</a>.
+    page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>.
   </p>
   </section>
 

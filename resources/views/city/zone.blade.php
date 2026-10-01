@@ -178,7 +178,7 @@
     <nav class="nx-sec" aria-label="More places">
       <ul class="nx-chips nx-chips--rail">
         @foreach($subjects as $sp)<li><a class="nx-chip" href="{{ $sp['url'] }}">{{ $sp['label'] }}</a></li>@endforeach
-        <li><a class="nx-chip" href="{{ $cityUrl }}">Home tutors in {{ $city->city_name }}</a></li>
+        <li><a class="nx-chip" href="{{ $cityUrl }}">Home tutors in {{ $city->slug === 'gurugram' ? 'Gurgaon' : $city->city_name }}</a></li>
         <li><a class="nx-chip" href="{{ url('/tuition-jobs/' . $city->slug) }}">Tuition jobs in {{ $city->city_name }}</a></li>
         <li><a class="nx-chip" href="{{ url('/city') }}">All cities in India</a></li>
       </ul>

@@ -328,7 +328,7 @@
     {!! $ggA('nirvana-country', 'Nirvana Country') !!}, {!! $ggA('sushant-lok-phase-i', 'Sushant Lok Phase I') !!} and
     {!! $ggA('sector-56', 'Sector 56') !!}. IB and IGCSE chemistry specialists are fewer than CBSE tutors, so hybrid
     plans are common. Organic mechanisms and IGCSE practical questions are easiest face to face; data-based practice
-    works well online. See all localities on our <a href="{{ url('/city/gurugram') }}">Gurugram page</a>.
+    works well online. See all localities on our page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>.
   </p>
   <p>
     Across NXTutors most sessions fall between <strong>₹800 and ₹2,500 an hour</strong>. IGCSE chemistry usually sits

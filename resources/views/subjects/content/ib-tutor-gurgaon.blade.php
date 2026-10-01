@@ -255,7 +255,7 @@
     To start, tell us the programme, year, subject and level (for example "DP1, Physics HL"), your sector or society
     and the slots that work. We shortlist two or three tutors and the first class is a
     <a href="{{ url('/demo-class') }}">free demo</a>. You can also browse <a href="{{ url('/tutors') }}">tutor
-    profiles</a> or all areas on our <a href="{{ url('/city/gurugram') }}">Gurugram tutors page</a>.
+    profiles</a> or all areas on our page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>.
   </p>
   </section>
 

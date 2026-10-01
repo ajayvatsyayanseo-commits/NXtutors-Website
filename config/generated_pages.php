@@ -75,8 +75,11 @@ return [
      * several of these for "home tutor near me" at positions 1-3, but the
      * stored titles led with the subject ("Best Accountancy Home Tutor ...")
      * and got no clicks. App\Support\GeneratedPageIndex::seo() builds
-     * "Home Tutor in {area}, {city} - {subject}" from these. Remove a line to
-     * fall back to the page's stored title.
+     * "{subject} Home Tutor in {area}, Gurgaon - Class {n} | NXTutors" and a
+     * description with the free demo from these (App\Support\SeoText). An
+     * optional fourth entry words the description: the accountancy pages
+     * target "accountancy home tutor class 11/12" (CBSE or ISC), never "IB
+     * accountancy". Remove a line to fall back to the page's stored title.
      */
     'seo' => [
         'gurugramdlf-phase-2ibmathematics' => ['DLF Phase 2', 'Gurugram', 'IB Maths, Class 6'],
@@ -105,13 +108,13 @@ return [
         'gurugramsector-58english-home-tutor-ib-class-6-home' => ['Sector 58', 'Gurugram', 'IB English, Class 6'],
         'gurugramsector-91physics-home-tutor-ib-class-11' => ['Sector 91', 'Gurugram', 'IB Physics, Class 11'],
         'gurugramdlf-phase-3ibphysics' => ['DLF Phase 3', 'Gurugram', 'IB Physics, Class 11'],
-        'best-accountancy-home-tutor-palam-vihar-gurugram-ib-class-11' => ['Palam Vihar', 'Gurugram', 'Accountancy, Class 11 (Commerce)'],
+        'best-accountancy-home-tutor-palam-vihar-gurugram-ib-class-11' => ['Palam Vihar', 'Gurugram', 'Accountancy, Class 11', 'Class 11–12 Accountancy (CBSE or ISC)'],
         'kolkatacamac-streetsocial-science-home-tutor-igcse-class-9' => ['Camac Street', 'Kolkata', 'IGCSE Social Science, Class 9'],
         'gurugramsector-88maths-home-tutor-ib-class-6' => ['Sector 88', 'Gurugram', 'IB Maths, Class 6'],
         'gurugram-sector-104-chemistry-home-tutor-cbse-class-11' => ['Sector 104', 'Gurugram', 'CBSE Chemistry, Class 11'],
-        'gurugramsector-4ibaccountancy' => ['Sector 4', 'Gurugram', 'Accountancy, Class 11 (Commerce)'],
-        'gurugramsector-12accountancy-ib-class-11-home-tutor' => ['Sector 12', 'Gurugram', 'Accountancy, Class 11 (Commerce)'],
-        'gurugramsector-44accountancy-home-tutor-ib-class-11' => ['Sector 44', 'Gurugram', 'Accountancy, Class 11 (Commerce)'],
+        'gurugramsector-4ibaccountancy' => ['Sector 4', 'Gurugram', 'Accountancy, Class 11', 'Class 11–12 Accountancy (CBSE or ISC)'],
+        'gurugramsector-12accountancy-ib-class-11-home-tutor' => ['Sector 12', 'Gurugram', 'Accountancy, Class 11', 'Class 11–12 Accountancy (CBSE or ISC)'],
+        'gurugramsector-44accountancy-home-tutor-ib-class-11' => ['Sector 44', 'Gurugram', 'Accountancy, Class 11', 'Class 11–12 Accountancy (CBSE or ISC)'],
         'gurugramdlf-phase-5igcsemathematics' => ['DLF Phase 5', 'Gurugram', 'IGCSE Maths, Class 9'],
         'kolkatagariahatgolpark-mathematics-jee-home-tutors' => ['Golpark, Gariahat', 'Kolkata', 'JEE Maths'],
         'gurugramcyber-cityigcsesocial-science-home-tutor' => ['Cyber City', 'Gurugram', 'IGCSE Social Science, Class 9'],

@@ -256,7 +256,7 @@
     For a single subject, start with the <a href="{{ url('/icse-maths-tutor-gurgaon') }}">ICSE maths tutors in
     Gurgaon</a> or <a href="{{ url('/igcse-maths-tutor-gurgaon') }}">IGCSE maths tutors in Gurgaon</a> pages. Or tell us
     the board, the subjects, your sector or society and your slots: we shortlist two or three tutors, and the first
-    class is a free demo. Browse by area on our <a href="{{ url('/city/gurugram') }}">Gurugram tutors page</a>.
+    class is a free demo. Browse by area on our page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>.
   </p>
   </section>
 

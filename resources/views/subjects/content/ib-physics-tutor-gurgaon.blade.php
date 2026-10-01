@@ -279,7 +279,7 @@
     {!! $ggA('emaar-palm-hills', 'Emaar Palm Hills') !!} and {!! $ggA('m3m-urbana-residences-sector-67-gurugram', 'M3M Urbana') !!},
     as well as families near the Aravali-side schools. Experienced IB physics tutors are a small group, so many
     families combine home and online sessions to get the right person. See all localities on our
-    <a href="{{ url('/city/gurugram') }}">Gurugram page</a>.
+    page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>.
   </p>
   <p>
     Across NXTutors most sessions fall between <strong>₹800 and ₹2,500 an hour</strong>; IB HL physics and IA guidance

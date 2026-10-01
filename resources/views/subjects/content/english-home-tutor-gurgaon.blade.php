@@ -248,7 +248,7 @@
   <p>
     Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
     live. Tell us the class, board, what is worrying you and your sector or society, and we shortlist two or three
-    English tutors for you. Or browse by area on our <a href="{{ url('/city/gurugram') }}">Gurugram tutors page</a>,
+    English tutors for you. Or browse by area on our page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>,
     look through <a href="{{ url('/tutors') }}">tutor profiles</a>, or book a
     <a href="{{ url('/demo-class') }}">free demo class</a>.
   </p>

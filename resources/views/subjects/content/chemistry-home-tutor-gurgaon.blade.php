@@ -70,7 +70,7 @@
   <p>
     Senior chemistry students often have coaching three or four evenings a week, so the tuition slot is usually late
     or at the weekend. We match on travel time at that hour. Browse tutors by locality on our
-    <a href="{{ url('/city/gurugram') }}">Gurugram page</a>.
+    page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>.
   </p>
     <div class="nx-guide__cards">
       <div class="nx-guide__card">
@@ -390,7 +390,7 @@
   <h2 id="cg-start">Getting started with a chemistry tutor in Gurugram</h2>
   <p>
     Tell us the class, the course, the goal and your locality. Book a <a href="{{ url('/demo-class') }}">free demo
-    class</a> or start from the <a href="{{ url('/city/gurugram') }}">Gurugram page</a>. If physics also needs work, see
+    class</a> or start from the page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>. If physics also needs work, see
     our <a href="{{ url('/physics-home-tutor-gurgaon') }}">physics home tutor in Gurgaon</a> page; for Classes 6 to 10,
     see <a href="{{ url('/science-home-tutor-gurgaon') }}">science home tutor in Gurgaon</a>.
   </p>

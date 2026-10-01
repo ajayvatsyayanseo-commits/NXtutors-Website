@@ -291,8 +291,7 @@
     economics tutors who fit, you choose one for a <a href="{{ url('/demo-class') }}">free demo class</a>, and you
     decide after that. Switching tutor later is free. Tutors who join go through an
     <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. You can also browse
-    <a href="{{ url('/tutors') }}">tutor profiles</a> or start from our <a href="{{ url('/city/gurugram') }}">Gurugram
-    page</a>.
+    <a href="{{ url('/tutors') }}">tutor profiles</a> or start from our page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>.
   </p>
   </section>
 

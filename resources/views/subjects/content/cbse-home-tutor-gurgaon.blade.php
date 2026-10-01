@@ -263,7 +263,7 @@
   <p>
     Tell us the class, subjects, your sector or society and free slots; we shortlist two or three CBSE tutors, and the
     first class is a <a href="{{ url('/demo-class') }}">free demo</a>. Browse <a href="{{ url('/tutors') }}">tutor
-    profiles</a> or all areas on our <a href="{{ url('/city/gurugram') }}">Gurugram tutors page</a>.
+    profiles</a> or all areas on our page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>.
   </p>
   </section>
 

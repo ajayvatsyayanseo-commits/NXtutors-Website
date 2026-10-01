@@ -74,7 +74,7 @@
     Science tuition usually runs two or three evenings a week, often squeezed between school, a sport and a maths
     session. In Gurugram that means the drive matters as much as the tutor. A tutor who is twenty minutes away at 3 pm
     can be fifty minutes away at 6 pm. Here is how the main zones work for science, and you can see tutors by locality
-    on our <a href="{{ url('/city/gurugram') }}">Gurugram page</a>.
+    on our page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>.
   </p>
     <div class="nx-guide__cards">
       <div class="nx-guide__card">
@@ -352,7 +352,7 @@
     Send us your child's class, board, the part of science that worries you, your sector or society, and the slots
     that suit. We come back with two or three matched tutors; you choose one for a free demo and decide afterwards.
     Book a <a href="{{ url('/demo-class') }}">free demo class</a> or start from our
-    <a href="{{ url('/city/gurugram') }}">Gurugram page</a>. Home, online and hybrid tuition are all available.
+    page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>. Home, online and hybrid tuition are all available.
   </p>
   </section>
 

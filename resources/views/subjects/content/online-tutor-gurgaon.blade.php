@@ -232,7 +232,7 @@
     demo, and switching tutor later is free. For IB and IGCSE families weighing formats, our
     <a href="{{ url('/blog/ib-igcse-tutoring-gurgaon-parents-guide') }}">IB and IGCSE tutoring guide for Gurgaon
     parents</a> adds course-specific advice. To browse local and online options by area, start from our
-    <a href="{{ url('/city/gurugram') }}">Gurugram tutors page</a>.
+    page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>.
   </p>
   </section>
 

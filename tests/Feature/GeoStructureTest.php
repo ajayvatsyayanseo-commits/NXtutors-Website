@@ -167,8 +167,8 @@ class GeoStructureTest extends TestCase
         config(['generated_pages.seo' => ['sector-49-cbse-maths' => ['Sector 49', 'Gurugram', 'CBSE Maths, Class 10']]]);
 
         $this->get('/p/sector-49-cbse-maths')->assertOk()
-            ->assertSee('<title>Home Tutor in Sector 49, Gurugram – CBSE Maths, Class 10</title>', false)
-            ->assertSee('Home tutor for CBSE Maths, Class 10 in Sector 49, Gurugram.', false);
+            ->assertSee('<title>CBSE Maths Home Tutor in Sector 49, Gurgaon – Class 10 | NXTutors</title>', false)
+            ->assertSee('CBSE Maths Class 10 home tutor', false);
     }
 
     public function test_new_area_pages_are_added_once_and_rolled_back(): void
@@ -898,7 +898,7 @@ class GeoStructureTest extends TestCase
         $g->assertSee(url('/city/faridabad'), false);
         $g->assertSee(url('/blog/maths-home-tutor-in-dlf-phase-4-best-home-tutors-near-you'), false);
 
-        $g->assertSee('Home tuition in Gurugram (Gurgaon): a complete guide for parents');
+        $g->assertSee('Home tuition in Gurgaon (Gurugram): a complete guide for parents');
         $g->assertSee('<a href="' . e(url('/city/gurugram/dlf-phase-4')) . '">Phase 4</a>', false);
         $g->assertDontSee('<a href="' . e(url('/city/gurugram/dlf-phase-1')) . '">', false);
 
@@ -936,6 +936,46 @@ class GeoStructureTest extends TestCase
             ->assertSee(url('/city/gurugram/dlf-phase-4'), false);
     }
 
+    /**
+     * Live-rendered area and /p/ pages: the legacy description typed into
+     * Super Admin ("best", "top", "affordable", ₹500–₹2000) never reaches the
+     * page, and title/description fit the rules. See App\Support\SeoText.
+     */
+    public function test_rendered_area_and_generated_pages_never_output_legacy_or_banned_meta(): void
+    {
+        $legacy = [
+            'sector-88' => ['Sector 88', 'Find best home tutors (female & experienced) in Sector 88 Gurugram for CBSE & ICSE. Online/offline lessons ₹500–₹2000/hr. Book today!'],
+            '-sector-59-' => ['Sector 59', 'Top home tutors near Sector 59 for CBSE, ICSE and IB. Affordable ₹500–₹2000/hr. Female and experienced tutors available.'],
+            '-sector-37c' => ['Sector 37C', 'Hire top home tutors in Sector 37C, Gurugram, for all boards and classes. Verified tutors, guaranteed results.'],
+            'adani-oyster-grande' => ['Adani Oyster Grande', 'Best tutors at Adani Oyster Grande'],
+            'palam-vihar' => ['Palam Vihar', 'No. 1 home tuition in Palam Vihar, cheapest fees in Gurgaon, book now and save on tuition fees today itself.'],
+        ];
+        foreach ($legacy as $slug => [$name, $typed]) {
+            DB::table('city_area_list_managment')->insert(['city_id' => 1, 'name' => $name, 'slug' => $slug, 'main_title' => 'x', 'meta_desc' => $typed, 'meta_title' => 'Best ' . $name . ' Tutors']);
+        }
+        DB::table('city_area_list_managment')->where('slug', 'dlf-phase-4')->update(['meta_desc' => $legacy['sector-88'][1]]);
+        Cache::flush();
+
+        $seen = [];
+        foreach (array_merge(array_keys($legacy), ['dlf-phase-4', 'vatika-city-sector-49-gurugram']) as $slug) {
+            [$title, $desc] = SeoMetaTest::meta($this->get('/city/gurugram/' . $slug)->assertOk()->getContent());
+            $this->assertSame([], \App\Support\SeoText::problems($title, $desc), "$slug: $title | $desc");
+            $this->assertStringNotContainsString('₹500', $desc);
+            $seen[] = $desc;
+        }
+        $this->assertSame(count($seen), count(array_unique($seen)));
+
+        // An indexed /p/ page whose stored meta is the old "Best ..." text.
+        DB::table('generated_pages')->insert(['slug' => 'gurugramsector-4ibaccountancy', 'title' => 'Best Accountancy Home Tutor', 'city' => 'Gurugram', 'location' => 'Sector 4',
+            'meta_title' => 'Best IB Accountancy Home Tutor in Sector 4', 'meta_description' => 'Top accountancy tutors, affordable ₹500/hr.']);
+        config(['generated_pages.indexable' => array_merge(config('generated_pages.indexable'), ['gurugramsector-4ibaccountancy']),
+            'generated_pages.seo.gurugramsector-4ibaccountancy' => ['Sector 4', 'Gurugram', 'Accountancy, Class 11', 'Class 11–12 Accountancy (CBSE or ISC)']]);
+        [$title, $desc] = SeoMetaTest::meta($this->get('/p/gurugramsector-4ibaccountancy')->assertOk()->getContent());
+        $this->assertSame([], \App\Support\SeoText::problems($title, $desc), "$title | $desc");
+        $this->assertStringContainsString('Accountancy', $title);
+        $this->assertStringNotContainsString('IB', $title . $desc);
+    }
+
     public function test_area_titles_and_h1s_are_built_from_the_area_name(): void
     {
         $this->assertSame('Vatika City, Sector 49', CityHub::cleanAreaName('(Vatika City, Sector 49 (Gurugram))'));
@@ -943,12 +983,13 @@ class GeoStructureTest extends TestCase
         $this->assertSame('Huda Plots', CityHub::cleanAreaName('', 'huda-plots-'));
 
         $seo = CityHub::areaSeo((object) ['name' => 'DLF Phase 4', 'slug' => 'dlf-phase-4', 'meta_desc' => 'x'], 'gurugram', 'Gurugram');
-        $this->assertSame('Home Tutors in DLF Phase 4, Gurgaon – CBSE, IB, JEE | NXTutors', $seo['title']);
+        $this->assertSame('Home Tutors in DLF Phase 4, Gurgaon – Free Demo | NXTutors', $seo['title']);
         $this->assertSame('Home Tutors in DLF Phase 4, Gurugram', $seo['h1']);
-        $this->assertStringStartsWith('Home tutors in DLF Phase 4, Gurugram', $seo['desc'], 'a 1-character typed description is replaced');
+        $this->assertStringContainsString('DLF Phase 4 (DLF City), Gurgaon', $seo['desc'], 'the typed description is never used');
+        $this->assertSame([], \App\Support\SeoText::problems($seo['title'], $seo['desc']));
 
         $long = CityHub::areaSeo((object) ['name' => 'Golf Course Road interface (E-Block side)', 'slug' => 'x'], 'gurugram', 'Gurugram');
-        $this->assertLessThanOrEqual(70, mb_strlen($long['title']));
+        $this->assertLessThanOrEqual(65, mb_strlen($long['title']));
 
         // Two areas with the same name get told apart.
         DB::table('city_area_list_managment')->insert([
@@ -962,7 +1003,7 @@ class GeoStructureTest extends TestCase
         $this->assertStringContainsString('HUDA plots (122001)', $a['h1']);
 
         $page = $this->withoutExceptionHandling()->get('/city/gurugram/dlf-phase-4');
-        $page->assertSee('<title>Home Tutors in DLF Phase 4, Gurgaon – CBSE, IB, JEE | NXTutors</title>', false);
+        $page->assertSee('<title>Home Tutors in DLF Phase 4, Gurgaon – Free Demo | NXTutors</title>', false);
         $page->assertSee('<h1 class="hero-title">Home Tutors in DLF Phase 4, Gurugram</h1>', false);
     }
 
@@ -1238,5 +1279,59 @@ class GeoStructureTest extends TestCase
         $this->assertStringContainsString('data-demo-subject="Guitar"', $html, 'no tutors yet: offered on request');
         $this->withoutExceptionHandling()->get('/become-a-tutor')->assertOk()
             ->assertSee('Home Tuition Jobs', false)->assertSee('Tutors needed')->assertSee('"@type":"FAQPage"', false);
+    }
+
+    public function test_thin_micro_area_pages_merge_into_their_parent(): void
+    {
+        $m = require database_path('migrations/seo/2026_10_04_100000_switch_off_thin_gurugram_micro_area_pages.php');
+        $slugs = (new \ReflectionClassConstant($m, 'SLUGS'))->getValue();
+        $redirects = config('area_redirects.gurugram');
+
+        // Every switched-off page 301s to a parent page that stays live, and vice versa.
+        $this->assertCount(39, $slugs);
+        $this->assertCount(31, array_keys($redirects, 'dlf-phase-1', true));
+        $this->assertSame('dlf-phase-4', $redirects['galleria-area']);
+        $this->assertSame('sushant-lok-phase-3', $redirects['sushant-lok-3']);
+        foreach ($slugs as $slug) {
+            $this->assertArrayHasKey($slug, $redirects, $slug);
+            $this->assertNotContains($redirects[$slug], $slugs, 'a parent is never itself switched off');
+            $this->get('/city/gurugram/' . $slug)->assertStatus(301)->assertRedirect(url('/city/gurugram/' . $redirects[$slug]));
+        }
+        $parents = ['dlf-phase-1', 'dlf-phase-2', 'dlf-phase-3', 'dlf-phase-4', 'dlf-phase-5', 'sushant-lok-phase-1', 'sushant-lok-phase-3'];
+        foreach (array_keys(array_filter($redirects, fn ($to) => in_array($to, $parents, true))) as $slug) {
+            $this->assertContains($slug, $slugs, $slug . ' redirects but is not switched off');
+        }
+
+        DB::table('city_area_list_managment')->insert([
+            ['city_id' => 1, 'name' => 'DLF Phase 1', 'slug' => 'dlf-phase-1', 'main_title' => 'x', 'status' => 't'],
+            ['city_id' => 1, 'name' => 'Deodar Marg corner plots', 'slug' => 'deodar-marg-corner-plots', 'main_title' => 'x', 'status' => 't'],
+            ['city_id' => 1, 'name' => 'Block F premium lanes', 'slug' => 'block-f-premium-lanes', 'main_title' => 'x', 'status' => 't'],
+            ['city_id' => 2, 'name' => 'Arjun Marg', 'slug' => 'arjun-marg', 'main_title' => 'x', 'status' => 't'], // another city: untouched
+        ]);
+        $status = fn ($slug, $city = 1) => DB::table('city_area_list_managment')->where('city_id', $city)->where('slug', $slug)->value('status');
+
+        $m->up();
+        Cache::flush();
+        $this->assertSame('f', $status('deodar-marg-corner-plots'));
+        $this->assertSame('f', $status('block-f-premium-lanes'));
+        $this->assertSame('t', $status('dlf-phase-1'));
+        $this->assertSame('t', $status('arjun-marg', 2));
+
+        $map = $this->get('/sitemap-areas-gurugram.xml')->assertOk();
+        $map->assertSee('/city/gurugram/dlf-phase-1<', false)->assertSee('/city/gurugram/dlf-phase-4', false)
+            ->assertDontSee('deodar-marg-corner-plots', false)->assertDontSee('block-f-premium-lanes', false);
+        // No links left from the hub or the parent page.
+        $this->get('/city/gurugram')->assertOk()->assertDontSee('deodar-marg-corner-plots', false)->assertDontSee('block-f-premium-lanes', false);
+        $this->get('/city/gurugram/dlf-phase-1')->assertOk()->assertDontSee('deodar-marg-corner-plots', false)->assertDontSee('Block F premium lanes');
+
+        // Even if a row is switched back on by hand, a redirected URL stays out of the sitemap.
+        DB::table('city_area_list_managment')->where('slug', 'block-f-premium-lanes')->update(['status' => 't']);
+        $this->get('/sitemap-areas-gurugram.xml')->assertDontSee('block-f-premium-lanes', false);
+        DB::table('city_area_list_managment')->where('slug', 'block-f-premium-lanes')->update(['status' => 'f']);
+
+        $m->down();
+        $this->assertSame('t', $status('deodar-marg-corner-plots'));
+        $this->assertSame('t', $status('block-f-premium-lanes'));
+        $this->assertSame('t', $status('dlf-phase-1'));
     }
 }

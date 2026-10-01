@@ -71,7 +71,7 @@
         <p class="nx-shero__lede">{{ $page['lede'] }}</p>
 
         <ul class="nx-trust">
-          <li>ID-verified tutors</li>
+          <li>Tutors who join go through an ID check</li>
           <li>2–3 matched tutors, not a long list</li>
           <li>Free demo class</li>
           <li>Home, online or both</li>
@@ -134,7 +134,8 @@
           @foreach($related['family'] as $r)<li><a class="nx-chip" href="{{ $r['url'] }}">{{ $r['label'] }}</a></li>@endforeach
           @foreach($related['subjects'] as $r)<li><a class="nx-chip nx-chip--muted" href="{{ $r['url'] }}">{{ $r['label'] }}</a></li>@endforeach
           @if(!empty($page['city_slug']))
-            <li><a class="nx-chip nx-chip--muted" href="{{ url('/city/' . $page['city_slug']) }}">All home tutors in {{ $page['city'] }}</a></li>
+            {{-- "Gurgaon" for Gurugram: still what most parents type. --}}
+            <li><a class="nx-chip nx-chip--muted" href="{{ url('/city/' . $page['city_slug']) }}">{{ $page['city_slug'] === 'gurugram' ? 'Home tutors in Gurgaon' : 'All home tutors in ' . $page['city'] }}</a></li>
           @else
             <li><a class="nx-chip nx-chip--muted" href="{{ url('/city') }}">Home tutors in your city</a></li>
           @endif

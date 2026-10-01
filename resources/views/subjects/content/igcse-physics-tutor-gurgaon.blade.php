@@ -255,8 +255,7 @@
     {!! $ggA('m3m-urbana-residences-sector-67-gurugram', 'M3M Urbana') !!}, with others from
     {!! $ggA('sector-56', 'Sector 56') !!}, {!! $ggA('sector-57', 'Sector 57') !!} and
     {!! $ggA('south-city-2', 'South City 2') !!}. IGCSE-experienced physics tutors are fewer than CBSE tutors, so online
-    or hybrid sessions widen the choice. See all localities on our <a href="{{ url('/city/gurugram') }}">Gurugram
-    page</a>.
+    or hybrid sessions widen the choice. See all localities on our page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>.
   </p>
   <p>
     Across NXTutors most sessions fall between <strong>₹800 and ₹2,500 an hour</strong>; IGCSE specialists usually sit

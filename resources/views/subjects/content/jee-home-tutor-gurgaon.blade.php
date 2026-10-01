@@ -94,7 +94,7 @@
   <p>
     Gurugram's zones differ in how many tutors live nearby and how easily they move at peak hours, and that shapes
     whether home, online or hybrid tuition makes sense. You can browse tutors near you from the
-    <a href="{{ url('/city/gurugram') }}">Gurugram page</a>, which lists each sector and society.
+    page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>, which lists each sector and society.
   </p>
     <div class="nx-guide__cards">
       <div class="nx-guide__card">

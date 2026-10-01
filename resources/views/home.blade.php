@@ -971,6 +971,12 @@ body.page .nxh__sweep{
       <section class="section" aria-labelledby="homeCitiesTitle">
         <div class="section-head">
           <h2 class="section-title" id="homeCitiesTitle">Home tutors across India</h2>
+          {{-- Our office is in Sector 66, Gurugram: a visible, descriptive link to the
+               Gurgaon hub, which has every zone, sector and subject page under it. --}}
+          <p class="section-subtitle">
+            Based in Sector 66, Gurugram: see <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>
+            by zone, sector and subject, or pick your city below.
+          </p>
         </div>
         <div class="nx-tabs nx-home-cities">
           <div class="nx-tabs__bar" role="tablist">

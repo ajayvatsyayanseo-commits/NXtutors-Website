@@ -77,9 +77,15 @@ class HomeController extends Controller
 
             $banner = Banner::Where('status', 't')->take(5)->get();
             $page = Page::Where('status', 't')->where('slug', 'home')->first();
-            $metatitle = $page->meta_title ?? null;
             $metakey = $page->meta_keywords ?? null;
-            $metadesc = $page->meta_description ?? null;
+
+            // Title and description from App\Support\SeoText, with the number
+            // of cities that have live area pages counted now (the typed
+            // description still said "24 cities" when there were 27).
+            $cityCounts = collect(\App\Support\Geo::counts())->filter(fn ($c) => ($c['areas'] ?? 0) > 0);
+            $homeSeo = \App\Support\SeoText::home($cityCounts->count(), $cityCounts->has('gurugram'));
+            $metatitle = $homeSeo['title'];
+            $metadesc = $homeSeo['desc'];
 
         return view('home', compact('teachers','category','courseStrip','blogs','banner','reviews','metatitle','metakey','metadesc'));
     }
@@ -208,7 +214,9 @@ private function areaSitemapUrls(?int $cityId, string $baseUrl): array
             foreach ($areas as $area) {
                 $loc = $baseUrl . '/city/' . ($area->city?->slug ?? '') . '/' . $area->slug;
                 // Two rows can share a slug (huda-plots-): list each URL once.
-                if (empty($area->city?->slug) || isset($urls[$loc])) {
+                // A URL that 301s elsewhere (config/area_redirects.php) never belongs here.
+                if (empty($area->city?->slug) || isset($urls[$loc])
+                    || config('area_redirects.' . $area->city->slug . '.' . $area->slug)) {
                     continue;
                 }
                 $urls[$loc] = [

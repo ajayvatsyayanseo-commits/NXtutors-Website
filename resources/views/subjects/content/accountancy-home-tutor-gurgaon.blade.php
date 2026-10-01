@@ -125,7 +125,7 @@
     <li><a href="{{ url('/p/gurugram-dlf-phase-5-business-studies-home-tutor-ib-class-11') }}">Business studies tutor in DLF Phase 5</a>, for the subject CBSE introduces alongside accountancy in Class 11.</li>
   </ul>
   <p>
-    Anywhere else, browse your sector from our <a href="{{ url('/city/gurugram') }}">Gurugram page</a>, where each
+    Anywhere else, browse your sector from our page of <a href="{{ url('/city/gurugram') }}">home tutors in Gurgaon</a>, where each
     sector and society has its own listing of nearby and online tutors.
   </p>
   </section>
