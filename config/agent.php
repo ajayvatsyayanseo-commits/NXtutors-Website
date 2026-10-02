@@ -38,6 +38,12 @@ return [
     'default_country_code' => env('AGENT_DEFAULT_COUNTRY_CODE', '91'),
 
     /*
+     * Lead Intake, for calls from the website to the WhatsApp side (account
+     * erasure: App\Services\AgentErasure). Signed with signing_key above.
+     */
+    'lead_intake_url' => env('LEAD_INTAKE_BASE_URL', 'https://xhjb3bqfi2tlgm5cpyyhcxcsvi0lhlpj.lambda-url.ap-south-1.on.aws'),
+
+    /*
      * Gateway requests per minute. Separate from the feed: the feed is one
      * scheduled sweep, the gateway is per-conversation and much chattier.
      */
