@@ -245,7 +245,11 @@ Route::get('/get-products-by-class/{ccatId}', [CategoryController::class, 'getPr
 
 
 
-Route::get('{slug}/teacher/{slug1}/{id}', [HomeController::class, 'singleteacherprofile'])->name('teacherprofile');
+// Old "/{city}/teacher/{name}/{id}" profile links (301 to the new URL). Never
+// "super": this pattern used to swallow /super/teacher/edit/{id}, so the
+// admin's tutor edit page answered 404 for everyone.
+Route::get('{slug}/teacher/{slug1}/{id}', [HomeController::class, 'singleteacherprofile'])
+    ->where('slug', '(?!super/)[^/]+')->name('teacherprofile');
 
 Route::middleware([TeacherMiddleware::class])->group(function () {
     Route::prefix('teacher')->name('teacher.')->group(function () {
@@ -404,6 +408,11 @@ Route::prefix('super')->name('super.')->group(function () {
         Route::get('teacher/edit/{id}', [RegisterController::class, 'teacheredit'])->name('teacher.edit');
         Route::put('teacher/edit/{id}', [RegisterController::class, 'teacherupdate'])->name('teacher.update');
         Route::delete('teacher/delete/{id}', [RegisterController::class, 'teacherdestroy'])->name('teacher.destroy');
+        // ID review: the photos a tutor sent (privately, via Lead Intake), and approve.
+        Route::get('teacher/{id}/document/{side}', [\App\Http\Controllers\SuperAdmin\TutorReviewDocumentController::class, 'show'])
+            ->whereNumber('id')->whereIn('side', ['front', 'back'])->name('teacher.document');
+        Route::post('teacher/{id}/approve', [\App\Http\Controllers\SuperAdmin\TutorReviewDocumentController::class, 'approve'])
+            ->whereNumber('id')->name('teacher.approve');
       
       Route::get('teacher/review', [ReviewModerationController::class, 'index'])->name('teacher.review');
       Route::get('refs', [\App\Http\Controllers\SuperAdmin\HandoffController::class, 'index'])->name('refs.index');
