@@ -53,7 +53,10 @@ class RegisterController extends Controller
   
     public function indexteacher()
     {
-        $pages = Register::where('join_as', 'teacher')->orderBy('id', 'DESC')->get();
+        // Tutors waiting for review first: they are the admin's to-do list.
+        $pages = Register::where('join_as', 'teacher')
+            ->orderByRaw("CASE WHEN status = 'p' THEN 0 ELSE 1 END")
+            ->orderBy('id', 'DESC')->get();
                  return view('super.user.teacherindex', compact('pages')); 
     }
       public function create()
@@ -534,7 +537,9 @@ public function userlogin(Request $request)
     // Check if user exists and passwords match
     if ($user && Hash::check($password, $user->password)) {
         if ($user->otp_status == 't') {
-            if($user->status=='t')
+            // A tutor pending review signs in too, to finish their profile; the
+            // public site still shows only 't' (see Register::canSignIn).
+            if ($user->canSignIn())
             {
 
             session(['email' => $user->email, 'userid' => $user->user_id , 'join_as' => $user->join_as]);
@@ -567,7 +572,9 @@ public function userlogin(Request $request)
 
             return response()->json([
                 'success' => true,
-                'message' => 'Login successful. Redirecting to dashboard.',
+                'message' => $user->isPendingReview()
+                    ? 'Login successful. Your profile is pending review: it goes live once our team has checked your ID.'
+                    : 'Login successful. Redirecting to dashboard.',
                 'redirect' => $redirectUrl // Send the redirect URL back to the client
             ]);
              session()->forget('currLoc');
@@ -794,7 +801,7 @@ public function teacherupdate(Request $request, $id)
         'phone' => 'required|numeric|unique:register,phone,' . $id,
         'dob' => 'nullable|date',
         'address' => 'nullable|string',
-        'status' => 'required|in:t,f',
+        'status' => 'required|in:t,f,p',
         'user_type' => 'nullable|string|in:Individual,Institute',
         'pincode' => 'nullable|string|max:10',
         'state' => 'nullable|string|max:100',

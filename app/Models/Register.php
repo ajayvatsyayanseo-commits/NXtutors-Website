@@ -55,6 +55,33 @@ class Register extends Model
     /** "Hidden until I turn it back on" — stored as a date nobody will reach. */
     public const HIDDEN_INDEFINITELY = '9999-12-31 00:00:00';
 
+    /**
+     * register.status: 't' live (public, Verified, signs in), 'f' inactive
+     * (cannot sign in), 'p' pending review: a tutor who signed up on
+     * WhatsApp and whose ID the team has not checked yet. They sign in and
+     * finish their profile, but every public query asks for 't', so nobody
+     * sees them until an admin sets 't'.
+     */
+    public const STATUS_LIVE = 't';
+
+    public const STATUS_INACTIVE = 'f';
+
+    public const STATUS_PENDING_REVIEW = 'p';
+
+    /** Admin labels, in the order the admin select shows them. */
+    public const STATUS_LABELS = ['p' => 'Pending review', 't' => 'Active', 'f' => 'Inactive'];
+
+    public function isPendingReview(): bool
+    {
+        return $this->status === self::STATUS_PENDING_REVIEW && $this->join_as === 'teacher';
+    }
+
+    /** May this account sign in? Live accounts, and tutors waiting for review. */
+    public function canSignIn(): bool
+    {
+        return $this->status === self::STATUS_LIVE || $this->isPendingReview();
+    }
+
     protected $casts = [
         'hidden_until' => 'datetime',
         'deletion_requested_at' => 'datetime',
@@ -234,8 +261,14 @@ public function getEffectiveCoursesAttribute()
     protected static function booted(): void
     {
         static::saving(function (self $model): void {
-            if (! $model->isDirty('phone')) {
+            // Also when the hash is missing: tutors created by the WhatsApp
+            // onboarding agent arrive by a plain INSERT with no hash, and get
+            // one the first time the site saves them (e.g. the admin's approval).
+            if (! $model->isDirty('phone') && filled($model->getAttribute('phone_hash'))) {
                 return;
+            }
+            if (! $model->isDirty('phone') && ! array_key_exists('phone_hash', $model->getAttributes())) {
+                return; // a partial select without the column: leave it alone
             }
             $phone = (string) ($model->phone ?? '');
             $model->phone_hash = $phone === ''
