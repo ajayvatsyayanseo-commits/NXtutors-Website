@@ -27,6 +27,24 @@ use App\Services\OpenAiTeacherGenerator;
 
 class RegisterController extends Controller
 {
+
+    /**
+     * The account that is signed in, whatever `id` a form carries.
+     *
+     * The password and profile forms used to trust a hidden `id` field and
+     * `findOrFail` it, so a POST with somebody else's id changed their password
+     * or their email: a takeover of any tutor or parent, with no sign-in. The
+     * session is the only thing that says who is acting.
+     */
+    private function signedInAccount(): Register
+    {
+        $userId = session('userid');
+        if (! $userId) {
+            abort(redirect()->route('login'));
+        }
+
+        return Register::where('user_id', $userId)->firstOrFail();
+    }
      public function index()
     {
         $pages = Register::where('join_as', 'student')->get();
@@ -390,6 +408,11 @@ private function generateTutorAvatar(): ?string
     ]);
 
     $data = $request->all();
+    // This public form has no sign-up UI any more (tutors apply on WhatsApp),
+    // but it is still reachable. With join_as=teacher it made a public tutor
+    // profile, badged Verified, with no review. Only students come this way.
+    $data['join_as'] = 'student';
+    unset($data['user_type'], $data['status'], $data['otp_status'], $data['user_id']);
 
     // if ($request->hasFile('avatar')) {
  
@@ -602,12 +625,14 @@ public function userforget(Request $request){
             return response()->json(['success' => false, 'error' => 'Email not found.']);
         }
 
-        $otp = rand(1000, 9999);
+        $otp = random_int(1000, 9999);
         $user->otp = $otp;
-        $user->otp_status = 'f'; // f = pending for forget
+        // otp_status is left alone: flipping it to 'f' here sent every later
+        // sign-in into the OTP branch, and a mistyped email locked the account.
         $user->save();
 
         session(['forget_email' => $request->email]);
+        session()->forget('forget_verified');
 
         // Send OTP email
         $subject = "Password Reset OTP";
@@ -644,6 +669,10 @@ public function userforget(Request $request){
             return response()->json(['success' => false, 'error' => 'Invalid OTP.']);
         }
 
+        // Step 3 trusts this, not the email alone: without it, anyone who
+        // knew an address could skip the code and set a new password.
+        session(['forget_verified' => $email]);
+
         return response()->json(['success' => true, 'message' => 'OTP verified.']);
     }
 
@@ -655,6 +684,9 @@ public function userforget(Request $request){
         ]);
 
         $email = session('forget_email');
+        if (! $email || session('forget_verified') !== $email) {
+            return response()->json(['success' => false, 'error' => 'Verify the OTP first.'], 403);
+        }
         $user = Register::where('email', $email)->first();
 
         if (!$user) {
@@ -664,11 +696,10 @@ public function userforget(Request $request){
         $user->password = Hash::make($request->newpassword);
         $user->c_password = $user->password;
 
-        $user->otp_status = 't';  
         $user->otp = null;
         $user->save();
 
-        session()->forget('forget_email');
+        session()->forget(['forget_email', 'forget_verified']);
 
         return response()->json(['success' => true, 'message' => 'Password updated successfully. Redirecting...']);
     }
@@ -689,8 +720,11 @@ public function verifyOtp(Request $request)
         }
         if ($user) {
             $user->otp = null;
-            $user->otp_status = 't';  
-            $user->status ='t';
+            $user->otp_status = 't';
+            // A tutor goes live after the team's ID review, not on an email code.
+            if ($user->join_as !== 'teacher') {
+                $user->status = 't';
+            }
             $user->save();
  
             session()->forget(['emails']);
@@ -1109,8 +1143,7 @@ $teacher_course_ids = $request->input('teacher_course_id', []);
 
         public function profileupdate(Request $request)
 {
-      $id = $request->id;
-    $page = Register::findOrFail($id);
+    $page = $this->signedInAccount();
 
     $formType = $request->input('form_type');
 
@@ -1238,8 +1271,7 @@ $teacher_course_ids = $request->input('teacher_course_id', []);
 
 public function teacherpasswordupdate(Request $request)
 {
-    $id = $request->id;
-    $teacher = Register::findOrFail($id);
+    $teacher = $this->signedInAccount();
 
     $validatedData = $request->validate([
         'newpassword' => 'required|string',
@@ -1264,8 +1296,7 @@ public function teacherpasswordupdate(Request $request)
 
 public function teacherprofileupdate(Request $request)
 {
-    $id = $request->id;
-    $page = Register::findOrFail($id);
+    $page = $this->signedInAccount();
 
     $formType = $request->input('form_type');
 
