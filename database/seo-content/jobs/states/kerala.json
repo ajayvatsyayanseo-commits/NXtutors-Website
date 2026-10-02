@@ -1,0 +1,80 @@
+{
+  "state": "Kerala",
+  "board": {
+    "name": "Pareeksha Bhavan, Kerala",
+    "site": "https://keralapareekshabhavan.in",
+    "summary": "Pareeksha Bhavan conducts Kerala's SSLC examination along with related examinations such as SSLC (HI), THSLC and AHSLC, as well as the LSS and USS scholarship examinations and the Kerala Teacher Eligibility Test (K-TET). Its site offers results, duplicate and migration certificates, and forms for date-of-birth and other corrections. For Classes 11 and 12, see the Directorate of Higher Secondary Education, Kerala (dhsekerala.gov.in), whose site did not load when we checked."
+  },
+  "intro": [
+    "Kerala has two tuition-jobs pages with zones, Kochi and Thiruvananthapuram, and tutors living in either city should pick their zones there. If you are in Kozhikode, Thrissur, Kollam, Kannur, Kottayam or another town, this page is your route in. Put your town and nearby localities on your profile, because home lessons are offered to the tutors nearest a family before anyone else is considered. You can also teach online, which is matched by subject, class and board instead of distance, so a tutor in Palakkad can be shortlisted for a student in another state.",
+    "Kerala students may sit the SSLC through Pareeksha Bhavan or study under CBSE, ICSE or another board, and the medium can be Malayalam or English. State each clearly. For higher secondary syllabi, the Directorate of Higher Secondary Education is the authority to check. For every request, the parent sees two or three tutors and the fee each has set; the first class is a free demo for the family, who can switch later if the match is not right. Tutors who handle THSLC or AHSLC students can mention that on their profile too."
+  ],
+  "towns": [
+    {
+      "name": "Kozhikode",
+      "note": "Say how far beyond Kozhikode you will travel for lessons."
+    },
+    {
+      "name": "Thrissur",
+      "note": "Your preferred classes in Thrissur can go on your profile."
+    },
+    {
+      "name": "Kollam",
+      "note": "Boards you teach in Kollam should all be listed."
+    },
+    {
+      "name": "Kannur",
+      "note": "Say whether lessons in Kannur run in English or Malayalam."
+    },
+    {
+      "name": "Kottayam",
+      "note": "Hours you can give in Kottayam belong on your profile."
+    },
+    {
+      "name": "Palakkad",
+      "note": "A tutor living in Palakkad can teach online across India."
+    },
+    {
+      "name": "Alappuzha",
+      "note": "Keep both options open from Alappuzha: home and online."
+    },
+    {
+      "name": "Malappuram",
+      "note": "Write down your Malappuram neighbourhood; nearby requests come first."
+    },
+    {
+      "name": "Kasaragod",
+      "note": "Online students can choose a Kasaragod tutor from anywhere."
+    },
+    {
+      "name": "Pathanamthitta",
+      "note": "Please list the Pathanamthitta localities you can reach."
+    },
+    {
+      "name": "Thalassery",
+      "note": "Tutors who live in Thalassery can mark nearby localities."
+    }
+  ],
+  "faqs": [
+    [
+      "Who sets the SSLC examination in Kerala?",
+      "Pareeksha Bhavan conducts the SSLC and related examinations such as THSLC and AHSLC, and publishes results on its site. If you teach Classes 11 and 12, the Directorate of Higher Secondary Education is the body to check for syllabus details."
+    ],
+    [
+      "Can a Kozhikode tutor teach online?",
+      "Yes. Online requests are matched on subject, class and board, so a tutor in Kozhikode, Kannur or Kollam can be shortlisted for students anywhere. Home requests stay local and go to the nearest suitable tutors first."
+    ],
+    [
+      "What happens after a parent sends a request?",
+      "We shortlist two or three tutors, nearest first and then wider. The parent sees each fee, books a free first class, and decides. Switching to a different tutor later costs the family nothing."
+    ],
+    [
+      "Is a police certificate needed?",
+      "No. Tutors who join go through an ID check, with a one-time code for phone or email and a government photo ID that our team reviews before the profile goes live. How we verify tutors has the details."
+    ],
+    [
+      "Where can I compare tutor plans?",
+      "On /pricing. Plans for tutors are paid, and each lists what it includes. The fee you charge for lessons is set by you."
+    ]
+  ]
+}

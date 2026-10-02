@@ -1,0 +1,76 @@
+{
+  "state": "Delhi",
+  "board": {
+    "name": "Central Board of Secondary Education (CBSE)",
+    "site": "https://www.cbse.gov.in",
+    "summary": "Delhi has no separate state board described here, so this box covers CBSE, the national board. Its 2026-27 secondary curriculum on cbseacademic.nic.in gives most major subjects an 80-mark board paper and 20 marks of internal assessment, asks for 33 per cent to pass, and puts about half of each paper into competency-focused questions. Under a notification of 14 February 2026, Class 10 has two board examinations from 2026: the first compulsory, the second optional for improving up to three subjects."
+  },
+  "intro": [
+    "Delhi has a detailed tuition-jobs page of its own, divided into zones such as Dwarka, Rohini and Mayur Vihar with Patparganj, each with the colonies a tutor can choose to cover. This state page is for tutors whose base sits outside those listed colonies, in places like Narela, Bawana, Najafgarh or Burari on the outer edge of the territory, and for anyone who wants to teach mostly online. Write your exact locality when you join. Home requests are offered to the nearest suitable tutors first, then to the same zone, so precise information is what gets a nearby family's request to you.",
+    "A Delhi student may be on CBSE, ICSE, IGCSE or IB, and the board each family follows is stated in their request. Tell us all the boards and classes you teach, and whether you prefer Hindi or English medium. Every request ends in a shortlist of two or three tutors; the family sees each fee you have set, takes a free first class, and is free to switch later if the fit is not right. Outer Delhi tutors can also say whether they will travel into a neighbouring zone, such as Rohini or Dwarka, for a home class."
+  ],
+  "towns": [
+    {
+      "name": "Narela",
+      "note": "Online students can choose a Narela tutor from anywhere."
+    },
+    {
+      "name": "Bawana",
+      "note": "Hours you can give in Bawana belong on your profile."
+    },
+    {
+      "name": "Najafgarh",
+      "note": "Say how far beyond Najafgarh you will travel for lessons."
+    },
+    {
+      "name": "Alipur",
+      "note": "You can run home visits in Alipur alongside online lessons."
+    },
+    {
+      "name": "Burari",
+      "note": "Online lessons let Burari tutors teach in other states."
+    },
+    {
+      "name": "Kanjhawala",
+      "note": "Teaching from home in Kanjhawala? Online classes work too."
+    },
+    {
+      "name": "Nangloi",
+      "note": "Write down your Nangloi neighbourhood; nearby requests come first."
+    },
+    {
+      "name": "Mundka",
+      "note": "Say whether lessons in Mundka run in English or Hindi."
+    },
+    {
+      "name": "Chhawla",
+      "note": "Put your strongest subjects for Chhawla students first."
+    },
+    {
+      "name": "Badarpur",
+      "note": "Distance comes first: give your Badarpur locality."
+    }
+  ],
+  "faqs": [
+    [
+      "My colony is not on the Delhi tuition-jobs page. Can I still join?",
+      "Yes. Name your locality when you join, and a request from a family near you can still reach you because matching goes nearest first. Online students are open to you whichever part of Delhi you live in."
+    ],
+    [
+      "Do I need to know CBSE's latest pattern?",
+      "If you teach CBSE students, it helps. The 2026-27 curriculum and sample papers are on cbseacademic.nic.in, and the two-examination rule for Class 10 from 2026 is set out on cbse.gov.in. Reading them before a demo lets you answer a parent's questions accurately."
+    ],
+    [
+      "How many tutors does a parent see?",
+      "Two or three. We start with the closest suitable tutors, then widen to the zone, the city and online. The parent sees each tutor's fee before the demo, the first class is free for the family, and they may switch later without a charge for doing so."
+    ],
+    [
+      "What ID do I need?",
+      "A government photo ID, which you upload after confirming your phone or email with a one-time code. Our team reviews it before your profile goes live. It is an identity check, not a police or background check; the How we verify tutors page explains more."
+    ],
+    [
+      "Are tutor plans free?",
+      "No, tutor plans are paid. The pricing page (/pricing) sets out what each plan includes. The amount you charge per lesson is your own decision and is shown to the parent before the demo."
+    ]
+  ]
+}

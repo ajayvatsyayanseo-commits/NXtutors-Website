@@ -1,0 +1,68 @@
+{
+  "state": "Chandigarh",
+  "board": {
+    "name": "Central Board of Secondary Education (CBSE)",
+    "site": "https://www.cbse.gov.in",
+    "summary": "Chandigarh is a Union Territory, so this box shows the national board rather than a state one. CBSE's 2026-27 secondary curriculum, on cbseacademic.nic.in, sets most major Class 10 subjects at an 80-mark board paper plus 20 marks of internal assessment, with 33 per cent needed to pass. From 2026 Class 10 has two board examinations: the first is compulsory and the second lets a student improve in up to three subjects. The Punjab and Haryana boards publish their own syllabi on pseb.ac.in and bseh.org.in."
+  },
+  "intro": [
+    "The Chandigarh tuition-jobs page already covers the city's sectors along with Mohali and Panchkula, grouped into zones, so most tutors here should start there and choose the zones they will travel to. This state page is for everything else: the villages and colonies on the edges of the Union Territory, and tutors who want to teach mainly online. If you live in Dhanas, Maloya or Khuda Lahora, add that place by name. Home requests go to the closest suitable tutors before anyone further off, and online requests ignore distance entirely, so either route can bring you students.",
+    "Because Chandigarh sits between Punjab and Haryana, a tutor may meet students on CBSE, ICSE, the Punjab board or the Haryana board, and the paper styles differ. List each board you are confident with, and read its pattern on the board's own site before a demo. When a parent sends a request, NXTutors puts forward two or three tutors with their fees visible; the first class is a free demo for the family, and you choose the fee you charge. When you set your range, mark only the sectors you will really visit, whether in the city, Mohali or Panchkula."
+  ],
+  "towns": [
+    {
+      "name": "Dhanas",
+      "note": "Tutors who live in Dhanas can mark nearby localities."
+    },
+    {
+      "name": "Maloya",
+      "note": "Students outside Maloya can still book you online."
+    },
+    {
+      "name": "Khuda Lahora",
+      "note": "Your preferred classes in Khuda Lahora can go on your profile."
+    },
+    {
+      "name": "Kaimbwala",
+      "note": "Online students can choose a Kaimbwala tutor from anywhere."
+    },
+    {
+      "name": "Daria",
+      "note": "Online lessons let Daria tutors teach in other states."
+    },
+    {
+      "name": "Behlana",
+      "note": "Put your strongest subjects for Behlana students first."
+    },
+    {
+      "name": "Raipur Khurd",
+      "note": "Keep both options open from Raipur Khurd: home and online."
+    },
+    {
+      "name": "Mauli Jagran",
+      "note": "Home lessons in Mauli Jagran go first to tutors nearby."
+    }
+  ],
+  "faqs": [
+    [
+      "Should I use this page or the Chandigarh city page?",
+      "If you live in the city's sectors, Mohali or Panchkula, the city tuition-jobs page has the zones and areas to pick from. Use this state page when you are based on the edge of the Union Territory or mainly want online students."
+    ],
+    [
+      "I teach Punjab board students. Is that useful in Chandigarh?",
+      "It can be. Students around the tricity may study under different boards, so naming the Punjab or Haryana board on your profile lets a request from such a family reach you. Read the current syllabus on pseb.ac.in or bseh.org.in before the demo."
+    ],
+    [
+      "How is a tutor chosen for a family?",
+      "NXTutors shortlists two or three tutors, closest first, then the same zone, the city and finally online. The parent sees every fee before booking, the first lesson is a free demo for them, and switching to another tutor later costs the family nothing."
+    ],
+    [
+      "Is the verification a police check?",
+      "No. Tutors who join go through an ID check: a one-time code to confirm phone or email, then a government photo ID that the team reviews before the profile is live. The How we verify tutors page has the details."
+    ],
+    [
+      "Where can I see what joining costs?",
+      "On /pricing. Tutor plans are paid and the page lists what each one includes. The fee you charge families is separate and set by you."
+    ]
+  ]
+}

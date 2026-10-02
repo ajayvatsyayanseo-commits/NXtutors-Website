@@ -24,8 +24,9 @@ class BecomeTutorController extends Controller
             ['I teach something that is not listed. Can I still join?', 'Yes. Add it to your profile subjects; if parents ask for it, we match you.'],
         ];
 
-        $metatitle = 'Home Tuition Jobs & Online Tutor Jobs in India | Teach on NXTutors';
-        $metadesc = 'Join NXTutors as a home or online tutor: school subjects, exams, languages, music, dance, coding and professional subjects. Get matched with families near you.';
+        // Joining intent only: the job queries ("home tuition jobs near me") belong to /tuition-jobs.
+        $metatitle = 'Become a Tutor on NXTutors – Join, Plans & ID Check';
+        $metadesc = 'How to join NXTutors as a home or online tutor: what you can teach, the ID check before your profile goes live, and tutor plans listed on our pricing page.';
         $canonical = url('/become-a-tutor');
 
         return view('pages.become-tutor', compact('areas', 'faqs', 'metatitle', 'metadesc', 'canonical'));

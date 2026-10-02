@@ -1278,7 +1278,7 @@ class GeoStructureTest extends TestCase
         $html = view('home.partials.explore')->render();
         $this->assertStringContainsString('data-demo-subject="Guitar"', $html, 'no tutors yet: offered on request');
         $this->withoutExceptionHandling()->get('/become-a-tutor')->assertOk()
-            ->assertSee('Home Tuition Jobs', false)->assertSee('Tutors needed')->assertSee('"@type":"FAQPage"', false);
+            ->assertSee('Become a Tutor on NXTutors', false)->assertSee('Tutors needed')->assertSee('"@type":"FAQPage"', false);
     }
 
     public function test_thin_micro_area_pages_merge_into_their_parent(): void
@@ -1333,5 +1333,160 @@ class GeoStructureTest extends TestCase
         $this->assertSame('t', $status('deodar-marg-corner-plots'));
         $this->assertSame('t', $status('block-f-premium-lanes'));
         $this->assertSame('t', $status('dlf-phase-1'));
+    }
+
+    /** Write jobs JSON fixtures into a temp folder and point JobsContent at it. */
+    private function jobsFixtures(array $files): string
+    {
+        $dir = sys_get_temp_dir() . DIRECTORY_SEPARATOR . 'nx-jobs-' . uniqid();
+        foreach ($files as $rel => $data) {
+            $path = $dir . DIRECTORY_SEPARATOR . str_replace('/', DIRECTORY_SEPARATOR, $rel);
+            @mkdir(dirname($path), 0777, true);
+            file_put_contents($path, json_encode($data, JSON_UNESCAPED_UNICODE));
+        }
+        @mkdir($dir, 0777, true);
+        config(['jobs_pages.dir' => $dir]);
+
+        return $dir;
+    }
+
+    private function jobsFixtureSet(): void
+    {
+        $faq = fn ($q) => [$q, 'Answer for tutors about ' . $q . ' See the tutor plans on our pricing page.'];
+        $this->jobsFixtures([
+            'cities/gurugram.json' => [
+                'intro' => ['GGN-INTRO-ONE about travel and housing for tutors.', 'GGN-INTRO-TWO about home and online work.'],
+                'zone_notes' => ['Golf Course Road' => 'GCR-NOTE gate entry needs your name at the desk.'],
+                'boards' => 'GGN-BOARDS paragraph about the boards tutors teach.',
+                'faqs' => [$faq('GGN-FAQ how do requests reach me?'), $faq('Can I teach online from Gurgaon?')],
+            ],
+            'states/haryana.json' => [
+                'state' => 'Haryana',
+                'board' => ['name' => 'Board of School Education Haryana', 'site' => 'https://bseh.org.in', 'summary' => 'HR-BOARD summary from the official site.'],
+                'intro' => ['HR-INTRO-ONE for tutors in the state.', 'HR-INTRO-TWO.'],
+                'towns' => [['name' => 'Rohtak', 'note' => 'ROHTAK-NOTE home tutoring where tutors live.'], ['name' => 'Hisar', 'note' => 'HISAR-NOTE online across the state.']],
+                'faqs' => [$faq('HR-FAQ which towns?')],
+            ],
+            'states/uttarakhand.json' => [
+                'state' => 'Uttarakhand',
+                'board' => ['name' => 'Uttarakhand Board of School Education', 'site' => 'https://ubse.uk.gov.in', 'summary' => 'UK-BOARD summary.'],
+                'intro' => ['UK-INTRO-ONE for tutors.'],
+                'towns' => [['name' => 'Dehradun', 'note' => 'DEHRADUN-NOTE home and online.']],
+                'faqs' => [$faq('UK-FAQ can I teach online?')],
+            ],
+            'topics/maths-tutor-jobs.json' => [
+                'title' => 'Maths Tutor Jobs: Home & Online Maths Tuition | NXTutors',
+                'description' => str_repeat('Maths tutor jobs on NXTutors. ', 5),
+                'h1' => 'Maths tutor jobs, home and online',
+                'intro' => ['MATHS-INTRO-ONE.', 'MATHS-INTRO-TWO.'],
+                'sections' => [['h2' => 'MATHS-SECTION classes and boards', 'paras' => ['MATHS-PARA.']]],
+                'faqs' => [$faq('MATHS-FAQ which classes?')],
+            ],
+        ]);
+    }
+
+    public function test_jobs_city_page_renders_written_modules_and_falls_back_to_the_template(): void
+    {
+        $this->jobsFixtureSet();
+        $html = $this->get('/tuition-jobs/gurugram')->assertOk()->getContent();
+        foreach (['GGN-INTRO-ONE', 'GGN-INTRO-TWO', 'GCR-NOTE gate entry', 'GGN-BOARDS', 'GGN-FAQ how do requests reach me?'] as $bit) {
+            $this->assertStringContainsString($bit, $html, $bit);
+        }
+        $this->assertStringContainsString('"@type":"FAQPage"', $html);
+        $this->assertStringContainsString('"name":"GGN-FAQ how do requests reach me?"', $html);
+        $this->assertStringContainsString('Tutors needed', $html, 'zone tags unchanged');
+        $this->assertStringContainsString(url('/city/gurugram/dlf-phase-4'), $html, 'areas still listed under zones');
+        // No template sentence that asserts demand without request data.
+        $this->assertStringNotContainsString('ask NXTutors for home and online tutors for CBSE, ICSE, IB and IGCSE', $html);
+
+        // No file: today's template, still no demand claim.
+        $mumbai = $this->get('/tuition-jobs/mumbai')->assertOk()->getContent();
+        $this->assertStringContainsString('How do I get home tuition jobs in Mumbai through NXTutors?', $mumbai);
+        $this->assertStringNotContainsString('GGN-INTRO', $mumbai);
+        $this->assertStringNotContainsString('JEE and NEET. Tell us', $mumbai);
+    }
+
+    public function test_jobs_state_pages_with_towns_and_new_state_slugs(): void
+    {
+        $this->jobsFixtureSet();
+        $hr = $this->get('/tuition-jobs/state/haryana')->assertOk();
+        $hr->assertSee('<h3>Rohtak</h3>', false)->assertSee('ROHTAK-NOTE')->assertSee('HR-INTRO-ONE')->assertSee('HR-BOARD summary')
+            ->assertSee('href="https://bseh.org.in"', false)->assertSee(url('/tuition-jobs/faridabad'), false)->assertSee(url('/city/faridabad'), false)
+            ->assertSee('"name":"HR-FAQ which towns?"', false)->assertDontSee('noindex', false);
+        $this->get('/tuition-jobs/state/rohtak')->assertNotFound(); // towns are sections, never URLs
+
+        // A state with a file but no city page.
+        $this->get('/tuition-jobs/state/uttarakhand')->assertOk()->assertSee('Home tuition jobs in Uttarakhand')
+            ->assertSee('<h3>Dehradun</h3>', false)->assertSee('UK-INTRO-ONE')->assertDontSee('noindex', false);
+        $this->get('/tuition-jobs')->assertOk()->assertSee(url('/tuition-jobs/state/uttarakhand'), false);
+        // No file: today's rendering.
+        $this->get('/tuition-jobs/state/west-bengal')->assertOk()->assertSee('Which cities in West Bengal does NXTutors cover?');
+        $this->get('/tuition-jobs/state/punjab')->assertNotFound();
+    }
+
+    public function test_jobs_topic_pages_need_their_text(): void
+    {
+        $this->jobsFixtureSet();
+        $r = $this->get('/maths-tutor-jobs')->assertOk();
+        $r->assertSee('<title>Maths Tutor Jobs: Home &amp; Online Maths Tuition | NXTutors</title>', false)
+            ->assertSee('Maths tutor jobs, home and online')->assertSee('MATHS-SECTION classes and boards')->assertSee('MATHS-PARA')
+            ->assertSee('"@type":"BreadcrumbList"', false)->assertSee('"name":"Tuition jobs","item":"' . url('/tuition-jobs') . '"', false)
+            ->assertSee('"@type":"FAQPage"', false)
+            ->assertSee(url('/pricing'), false)->assertSee(url('/become-a-tutor'), false)->assertSee(url('/how-we-verify-tutors'), false)
+            ->assertSee(url('/tuition-jobs/gurugram'), false)->assertSee(url('/maths-home-tutor'), false);
+        $this->withExceptionHandling()->get('/science-tutor-jobs')->assertNotFound();
+        $this->get('/tuition-jobs')->assertSee(url('/maths-tutor-jobs'), false)->assertDontSee(url('/science-tutor-jobs'), false);
+
+        $map = $this->get('/sitemap-pages.xml')->assertOk();
+        $map->assertSee('https://www.nxtutors.com/maths-tutor-jobs<', false)->assertDontSee('/science-tutor-jobs', false)
+            ->assertSee('/tuition-jobs/state/uttarakhand<', false)->assertSee('/tuition-jobs/state/haryana<', false)
+            ->assertDontSee('/tuition-jobs/delhi-ncr<', false);
+    }
+
+    public function test_jobs_hub_and_become_a_tutor_target_different_queries(): void
+    {
+        $title = fn ($html) => preg_match('#<title>(.*?)</title>#s', $html, $m) ? html_entity_decode(trim($m[1])) : '';
+        $desc = fn ($html) => preg_match('#<meta name="description" content="([^"]*)"#', $html, $m) ? html_entity_decode($m[1]) : '';
+        $hub = $this->get('/tuition-jobs')->assertOk()->getContent();
+        $join = $this->get('/become-a-tutor')->assertOk()->getContent();
+
+        $this->assertNotSame($title($hub), $title($join));
+        $this->assertStringContainsString('Home Tuition Jobs', $title($hub));
+        $this->assertStringNotContainsString('Jobs', $title($join));
+        $this->assertStringContainsString('Become a Tutor', $title($join));
+        foreach ([$hub, $join] as $html) {
+            $this->assertLessThanOrEqual(65, mb_strlen($title($html)), $title($html));
+            $this->assertGreaterThanOrEqual(140, mb_strlen($desc($html)), $desc($html));
+            $this->assertLessThanOrEqual(160, mb_strlen($desc($html)), $desc($html));
+        }
+    }
+
+    public function test_jobs_pages_have_no_job_posting_and_no_free_join_claims(): void
+    {
+        $this->jobsFixtureSet();
+        $freeJoin = '/free\s+(to\s+join|registration|sign[\s-]?up|of\s+cost)|join\s+(for\s+)?free|no\s+(joining|registration)\s+fee|registration\s+is\s+free|zero\s+fee/i';
+        foreach (['/tuition-jobs', '/tuition-jobs/state/haryana', '/tuition-jobs/state/uttarakhand', '/tuition-jobs/state/west-bengal',
+            '/tuition-jobs/gurugram', '/tuition-jobs/mumbai', '/tuition-jobs/delhi-ncr', '/maths-tutor-jobs', '/become-a-tutor'] as $url) {
+            $html = $this->get($url)->assertOk()->getContent();
+            $this->assertStringNotContainsString('JobPosting', $html, $url);
+            $this->assertDoesNotMatchRegularExpression($freeJoin, strip_tags($html), $url);
+            if (preg_match('#<title>(.*?)</title>#s', $html, $m)) {
+                $this->assertLessThanOrEqual(65, mb_strlen(html_entity_decode(trim($m[1]))), $url . ' title');
+            }
+        }
+        foreach (['resources/views/pages/tuition-jobs.blade.php', 'app/Http/Controllers/TuitionJobsController.php', 'resources/views/pages/become-tutor.blade.php'] as $f) {
+            $src = file_get_contents(base_path($f));
+            $this->assertDoesNotMatchRegularExpression($freeJoin, $src, $f);
+            $this->assertStringNotContainsString("'@type' => 'JobPosting'", $src, $f);
+        }
+    }
+
+    public function test_city_subject_pages_link_the_city_jobs_page_once(): void
+    {
+        $page = ['city_slug' => 'gurugram', 'city' => 'Gurugram', 'view' => 'no-such-view'];
+        $this->assertSame(['url' => url('/tuition-jobs/gurugram'), 'label' => 'Teach in Gurgaon'], \App\Support\LinkNest::jobsChip($page));
+        $this->assertNull(\App\Support\LinkNest::jobsChip(['view' => 'x']), 'national pages: no chip');
+        // A body that already links the jobs page gets no second link.
+        $this->assertNull(\App\Support\LinkNest::jobsChip(['city_slug' => 'ahmedabad', 'city' => 'Ahmedabad', 'view' => 'accountancy-home-tutor-ahmedabad']));
     }
 }

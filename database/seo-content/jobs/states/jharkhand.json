@@ -1,0 +1,80 @@
+{
+  "state": "Jharkhand",
+  "board": {
+    "name": "Jharkhand Academic Council (JAC), Ranchi",
+    "site": "https://jac.jharkhand.gov.in",
+    "summary": "The Jharkhand Academic Council, Ranchi, conducts the Secondary (Class 10) and Intermediate (Class 12) examinations, and also runs Madhyama and Madrasa examinations. It has conducted the Jharkhand Teacher Eligibility Test, with separate syllabi for Level 1 (Classes 1 to 5) and Level 2 (Classes 6 to 8). Its site links to e-books and eTextbooks, to JCERT and NCERT, and to DigiLocker, and publishes results, notices and its Act and rules."
+  },
+  "intro": [
+    "Two Jharkhand cities have their own tuition-jobs pages: Ranchi and Jamshedpur, each split into zones you can choose to cover. Everywhere else in the state, from Dhanbad and Bokaro to Deoghar, Hazaribagh or Dumka, starts here. Join with your town written clearly. NXTutors offers a home request to the closest suitable tutors before looking further out, which means a teacher in Giridih is the first name for a Giridih family who asks. Online lessons are open to you as well, and they do not depend on location at all. Chas and Phusro work the same way.",
+    "Students in Jharkhand can be on the JAC board, CBSE, ICSE or others, so list each one you teach and the medium. JAC posts its Secondary and Intermediate notices, results and links to eTextbooks on its own site, which is the place to check a syllabus question rather than a guidebook. With each request, the family receives two or three tutor profiles and sees the fee each tutor has set before a free first class; if it does not work out, they can switch. If you teach Madhyama or Intermediate classes, name those too."
+  ],
+  "towns": [
+    {
+      "name": "Dhanbad",
+      "note": "Boards you teach in Dhanbad should all be listed."
+    },
+    {
+      "name": "Bokaro Steel City",
+      "note": "In Bokaro Steel City, give your sector so Bokaro families nearby see you first."
+    },
+    {
+      "name": "Deoghar",
+      "note": "Your preferred classes in Deoghar can go on your profile."
+    },
+    {
+      "name": "Hazaribagh",
+      "note": "If you are based in Hazaribagh, add online hours too."
+    },
+    {
+      "name": "Giridih",
+      "note": "Say how far beyond Giridih you will travel for lessons."
+    },
+    {
+      "name": "Ramgarh",
+      "note": "Teaching from home in Ramgarh? Online classes work too."
+    },
+    {
+      "name": "Dumka",
+      "note": "Put your strongest subjects for Dumka students first."
+    },
+    {
+      "name": "Chas",
+      "note": "Chas tutors who also cover Bokaro can list Chas and Bokaro together."
+    },
+    {
+      "name": "Phusro",
+      "note": "Weekend or weekday slots in Phusro? You choose them."
+    },
+    {
+      "name": "Chaibasa",
+      "note": "Please list the Chaibasa localities you can reach."
+    },
+    {
+      "name": "Medininagar",
+      "note": "Start online from Medininagar before a nearby family asks."
+    }
+  ],
+  "faqs": [
+    [
+      "Can I join from Dhanbad even though it has no tuition-jobs page?",
+      "Yes. Use Dhanbad as your town. Home requests are matched by distance, so a family in Dhanbad is offered nearby tutors first. Online students can choose you whatever town you are in."
+    ],
+    [
+      "I have cleared the Jharkhand TET. Should I mention it?",
+      "You can list your qualifications on your profile; a parent reads them when comparing tutors. The council's site describes Level 1 for Classes 1 to 5 and Level 2 for Classes 6 to 8, so it helps to state which level you hold."
+    ],
+    [
+      "How does a request turn into a student?",
+      "A parent sends class, board, subject and location. We shortlist two or three tutors, nearest first, then zone, city and online. The family sees your fee, takes a free first class, and continues with you if it suits them; they can switch later without paying for the change."
+    ],
+    [
+      "Is there a police check?",
+      "No. Tutors who join go through an ID check: a one-time code for phone or email and a government photo ID reviewed by our team before the profile is live. Read How we verify tutors for details."
+    ],
+    [
+      "What do tutor plans include?",
+      "That is set out on /pricing. Plans are paid, and you can compare what each includes there. You set your own fee for lessons."
+    ]
+  ]
+}

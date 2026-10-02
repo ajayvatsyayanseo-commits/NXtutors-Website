@@ -327,6 +327,10 @@ public function sitemapSection(string $section)
             }
         }
     }
+    // National tutor-jobs topic pages (/maths-tutor-jobs, …), only once their text is written.
+    foreach (\App\Support\JobsContent::liveTopics() as $jobTopic) {
+        $staticUrls[] = '/' . $jobTopic;
+    }
 
     foreach ($staticUrls as $url) {
         $urls[] = [

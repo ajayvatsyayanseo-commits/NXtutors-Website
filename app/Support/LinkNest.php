@@ -46,6 +46,33 @@ class LinkNest
     }
 
     /**
+     * One "Teach in {City}" chip to /tuition-jobs/{city} for a city subject
+     * page, or null when the page is national or its written body already
+     * links the city's jobs page (one link per page is enough).
+     *
+     * @return array{url:string, label:string}|null
+     */
+    public static function jobsChip(array $page): ?array
+    {
+        $city = self::citySlugOf($page);
+        if (! $city) {
+            return null;
+        }
+        $url = url('/tuition-jobs/' . $city);
+        $view = 'subjects.content.' . ($page['view'] ?? '');
+        try {
+            $body = view()->exists($view) ? (string) @file_get_contents(view()->getFinder()->find($view)) : '';
+        } catch (\Throwable $e) {
+            $body = '';
+        }
+        if (str_contains($body, "/tuition-jobs/" . $city . "'") || str_contains($body, $url)) {
+            return null;
+        }
+
+        return ['url' => $url, 'label' => 'Teach in ' . self::cityLabel($city, $page['city'] ?? null)];
+    }
+
+    /**
      * Active area pages of a city grouped by zone, zones in config order,
      * areas by name; areas with no zone last under ''. Redirected slugs
      * (config/area_redirects.php) are left out.

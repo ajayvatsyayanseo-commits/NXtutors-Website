@@ -1,0 +1,84 @@
+{
+  "state": "Telangana",
+  "board": {
+    "name": "Directorate of Government Examinations (Board of Secondary Education), Telangana",
+    "site": "https://bse.telangana.gov.in",
+    "summary": "The Directorate of Government Examinations, an independent department under Secondary Education, Government of Telangana, conducts the SSC and OSSC public examinations twice a year; its site lists the March 2026 public examinations and the June 2026 advanced supplementary examinations. An examination reforms order on the site sets 80 marks of written examination and 20 marks of formative assessment per subject in Classes 9 and 10. Intermediate is run by the Telangana Board of Intermediate Education (tgbienew.cgg.gov.in)."
+  },
+  "intro": [
+    "Hyderabad, with Secunderabad, has a tuition-jobs page split into many zones, and tutors in the twin cities should pick their zones there. Elsewhere in Telangana, in Warangal, Karimnagar, Nizamabad, Khammam, Nalgonda and other towns, start from this page. Name your town and the localities you can reach. Home requests are matched by distance first: the nearest suitable tutors are offered a family's request before the search moves outward. Online lessons are matched by subject, class and board, so a tutor in Siddipet can teach a student in another state from day one.",
+    "Telangana students may take the SSC through the Directorate of Government Examinations, continue to Intermediate in groups such as MPC, BiPC, MEC and CEC, or follow CBSE, ICSE or another board. List the boards, groups and medium you teach. The directorate's site carries its examination order for Classes 9 and 10. For every request, two or three tutors are shortlisted, the family sees your fee before a free first class, and switching later is free for them. Tutors who help with the June advanced supplementary examinations can say so too."
+  ],
+  "towns": [
+    {
+      "name": "Warangal",
+      "note": "Warangal tutors can add Hanamkonda if they cover Warangal and Hanamkonda."
+    },
+    {
+      "name": "Karimnagar",
+      "note": "Say whether lessons in Karimnagar run in English or Telugu."
+    },
+    {
+      "name": "Nizamabad",
+      "note": "Home lessons in Nizamabad go first to tutors nearby."
+    },
+    {
+      "name": "Khammam",
+      "note": "Say how far beyond Khammam you will travel for lessons."
+    },
+    {
+      "name": "Mahabubnagar",
+      "note": "Tutors who live in Mahabubnagar can mark nearby localities."
+    },
+    {
+      "name": "Nalgonda",
+      "note": "Start online from Nalgonda before a nearby family asks."
+    },
+    {
+      "name": "Siddipet",
+      "note": "Write down your Siddipet neighbourhood; nearby requests come first."
+    },
+    {
+      "name": "Adilabad",
+      "note": "Students outside Adilabad can still book you online."
+    },
+    {
+      "name": "Suryapet",
+      "note": "Hours you can give in Suryapet belong on your profile."
+    },
+    {
+      "name": "Mancherial",
+      "note": "Nearby families in Mancherial see the closest tutors first."
+    },
+    {
+      "name": "Ramagundam",
+      "note": "Your preferred classes in Ramagundam can go on your profile."
+    },
+    {
+      "name": "Sangareddy",
+      "note": "Sangareddy tutors can list Intermediate groups such as MPC or BiPC."
+    }
+  ],
+  "faqs": [
+    [
+      "Should I list Intermediate groups like MPC or BiPC?",
+      "Yes. TGBIE names groups including MPC, BiPC, MEC and CEC, and a family's request may mention one. Listing the groups and subjects you teach makes it easier to match you correctly."
+    ],
+    [
+      "How is SSC marked in Classes 9 and 10?",
+      "An examination reforms order on the directorate's site sets 80 marks of written examination and 20 of formative assessment per subject. Confirm the current pattern at bse.telangana.gov.in before a demo."
+    ],
+    [
+      "How do requests reach me?",
+      "A parent sends class, board, subject and location. We shortlist two or three tutors, nearest first, then zone, city and online. The family sees your fee, has a free first class, and can switch later at no charge."
+    ],
+    [
+      "What verification do tutors go through?",
+      "An ID check. You confirm phone or email by one-time code and upload a government photo ID that the team reviews before your profile is live. It is not police verification; How we verify tutors explains it."
+    ],
+    [
+      "How much does it cost to join?",
+      "Tutor plans are paid; see /pricing for what each one includes. You choose your own fee per lesson."
+    ]
+  ]
+}

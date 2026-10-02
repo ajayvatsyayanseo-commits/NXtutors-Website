@@ -1,0 +1,92 @@
+{
+  "state": "Tamil Nadu",
+  "board": {
+    "name": "Directorate of Government Examinations, Tamil Nadu",
+    "site": "https://dge.tn.gov.in",
+    "summary": "The Directorate of Government Examinations conducts the State Board examinations for Std X (SSLC) and Std XII (Higher Secondary) in Tamil Nadu. The State Board of School Examinations was formed in 2011 by merging the Board of Secondary Education and the Board of Higher Secondary Examinations. The directorate has seven regional offices, holds special supplementary examinations for students who do not pass in March or April, and publishes a question bank and sample papers."
+  },
+  "intro": [
+    "Chennai and Coimbatore have their own tuition-jobs pages with zones, and tutors in either city should pick their zones there. Madurai, Tiruchirappalli, Salem, Tiruppur, Erode, Vellore and Tamil Nadu's other towns start from this page. Join with your town and nearby localities. A family's home request goes to the tutors closest to them before anyone further away is considered, so a Thanjavur tutor is offered Thanjavur families first. Online lessons are open to all tutors regardless of town, matched by subject, class and board, which lets you teach a student in another state from home.",
+    "A Tamil Nadu student may sit the SSLC or Higher Secondary through the Directorate of Government Examinations, or study under CBSE, ICSE or another board. The SSLC maths and science papers come in Tamil and English versions, so say which medium you teach. The directorate's question bank and sample papers are a good thing to read before a demo. Each request gives the parent two or three tutors and their fees, set by the tutors; the first class is a free demo, and switching later is free for families. Higher Secondary tutors should name their subjects."
+  ],
+  "towns": [
+    {
+      "name": "Madurai",
+      "note": "Students outside Madurai can still book you online."
+    },
+    {
+      "name": "Tiruchirappalli",
+      "note": "Please list the Tiruchirappalli localities you can reach."
+    },
+    {
+      "name": "Salem",
+      "note": "Your preferred classes in Salem can go on your profile."
+    },
+    {
+      "name": "Tiruppur",
+      "note": "Mark which areas near Tiruppur you will visit."
+    },
+    {
+      "name": "Erode",
+      "note": "Online students can choose a Erode tutor from anywhere."
+    },
+    {
+      "name": "Vellore",
+      "note": "Say how far beyond Vellore you will travel for lessons."
+    },
+    {
+      "name": "Thoothukudi",
+      "note": "Online lessons let Thoothukudi tutors teach in other states."
+    },
+    {
+      "name": "Tirunelveli",
+      "note": "Write down your Tirunelveli neighbourhood; nearby requests come first."
+    },
+    {
+      "name": "Thanjavur",
+      "note": "Put your strongest subjects for Thanjavur students first."
+    },
+    {
+      "name": "Dindigul",
+      "note": "Nearby families in Dindigul see the closest tutors first."
+    },
+    {
+      "name": "Hosur",
+      "note": "Keep both options open from Hosur: home and online."
+    },
+    {
+      "name": "Nagercoil",
+      "note": "Weekend or weekday slots in Nagercoil? You choose them."
+    },
+    {
+      "name": "Karur",
+      "note": "Home lessons in Karur go first to tutors nearby."
+    },
+    {
+      "name": "Kanchipuram",
+      "note": "A tutor living in Kanchipuram can teach online across India."
+    }
+  ],
+  "faqs": [
+    [
+      "Is the SSLC maths paper set in Tamil and English?",
+      "The directorate's March 2026 SSLC set shows maths and science in a Tamil and an English version. If you teach in one medium only, say so on your profile so you are not matched with a student using the other."
+    ],
+    [
+      "What if a student does not pass in March?",
+      "The directorate holds special supplementary examinations for Std X and XII students who do not pass in the March/April examinations. Tutors who help with that preparation can say so on their profile."
+    ],
+    [
+      "How is a tutor shortlisted?",
+      "We pick two or three tutors for each request, starting with the nearest, then the zone and city, then online. The family sees every fee, has a free first class, and may switch later at no cost."
+    ],
+    [
+      "What is the ID check for tutors?",
+      "A one-time code confirms your phone or email, and you upload a government photo ID that the team reviews before your profile goes live. It is not a police or background check. See How we verify tutors."
+    ],
+    [
+      "Are plans paid?",
+      "Yes. Tutor plans are paid and /pricing lists what each includes. Your lesson fee is separate and you set it."
+    ]
+  ]
+}

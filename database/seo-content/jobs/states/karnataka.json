@@ -1,0 +1,88 @@
+{
+  "state": "Karnataka",
+  "board": {
+    "name": "Karnataka School Examination and Assessment Board (KSEAB)",
+    "site": "https://kseab.karnataka.gov.in",
+    "summary": "The Karnataka School Examination and Assessment Board, under the Government of Karnataka, runs the SSLC examination at the end of Class 10 and the II PUC examination at the end of the pre-university course. Its 2026 notices refer to SSLC Examination 1 and 2, and registration for repeaters and private candidates is handled on the same site. The board publishes paper patterns and dates in its own circulars, so tutors should read those at source."
+  },
+  "intro": [
+    "Bengaluru has a tuition-jobs page with a large set of zones, and tutors there should choose their zones on that page. Elsewhere in Karnataka, including Mysuru, Mangaluru, Hubballi, Dharwad, Belagavi and Kalaburagi, you join from this state page with your town named. Home requests reach the closest suitable tutors first, so the town you give is what puts you in front of a nearby family. Online requests ignore distance and are matched by class, board and subject, which lets a tutor in Udupi or Tumakuru teach a student in another state.",
+    "A Karnataka student may sit the SSLC and II PUC examinations run by KSEAB, or study under CBSE, ICSE or another board. List all the boards you know, with the medium, whether Kannada or English. KSEAB's circulars on its own site are where the current SSLC and PUC details live. Every request ends with two or three tutors for the parent to compare; your fee, set by you, is shown before a free first class, and the family can switch later. Tutors who help II PUC students should name their PUC subjects as well."
+  ],
+  "towns": [
+    {
+      "name": "Mysuru",
+      "note": "Your preferred classes in Mysuru can go on your profile."
+    },
+    {
+      "name": "Mangaluru",
+      "note": "Write down your Mangaluru neighbourhood; nearby requests come first."
+    },
+    {
+      "name": "Hubballi",
+      "note": "Hubballi tutors who also cover Dharwad can list Hubballi and Dharwad both."
+    },
+    {
+      "name": "Dharwad",
+      "note": "You can run home visits in Dharwad alongside online lessons."
+    },
+    {
+      "name": "Belagavi",
+      "note": "Boards you teach in Belagavi should all be listed."
+    },
+    {
+      "name": "Kalaburagi",
+      "note": "Online students can choose a Kalaburagi tutor from anywhere."
+    },
+    {
+      "name": "Davanagere",
+      "note": "Nearby families in Davanagere see the closest tutors first."
+    },
+    {
+      "name": "Ballari",
+      "note": "Start online from Ballari before a nearby family asks."
+    },
+    {
+      "name": "Shivamogga",
+      "note": "Say whether lessons in Shivamogga run in English or Kannada."
+    },
+    {
+      "name": "Tumakuru",
+      "note": "Please list the Tumakuru localities you can reach."
+    },
+    {
+      "name": "Udupi",
+      "note": "Online lessons let Udupi tutors teach in other states."
+    },
+    {
+      "name": "Vijayapura",
+      "note": "Weekend or weekday slots in Vijayapura? You choose them."
+    },
+    {
+      "name": "Hassan",
+      "note": "Hours you can give in Hassan belong on your profile."
+    }
+  ],
+  "faqs": [
+    [
+      "Should I list SSLC and PUC separately?",
+      "Yes. KSEAB runs the SSLC examination after Class 10 and the II PUC examination after pre-university, and they suit different tutors. Listing each, with your subjects, helps the right request reach you. Check the board's circulars for the current pattern."
+    ],
+    [
+      "I am in Mysuru. Can Bengaluru families find me?",
+      "For home lessons, families are matched to tutors near them first, so a Bengaluru home request will normally go to Bengaluru tutors. For online lessons, a Bengaluru student can be shortlisted with a Mysuru tutor if the class and subject fit."
+    ],
+    [
+      "What does the family see?",
+      "Two or three shortlisted tutors with their fees. The first class is a free demo for the family, and if the match does not work later they can switch tutors at no cost to them."
+    ],
+    [
+      "How does verification work?",
+      "Tutors who join confirm a phone number or email with a one-time code and upload a government photo ID, which the team checks before the profile goes live. It is not a police or background check. See How we verify tutors."
+    ],
+    [
+      "Is joining paid?",
+      "Yes, tutor plans are paid, and /pricing lists what each includes. Your lesson fee is your own and is shown to the parent before the demo."
+    ]
+  ]
+}

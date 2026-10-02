@@ -27,7 +27,7 @@
     <section class="nx-shero">
       <div class="nx-shero__main">
         <span class="nx-card__kicker">For tutors and professionals</span>
-        <h1 class="nx-shero__title">Teach on NXTutors: home tuition and online teaching jobs</h1>
+        <h1 class="nx-shero__title">Become a tutor on NXTutors: join, choose a plan, pass the ID check</h1>
         <p class="nx-shero__lede">
           Parents across India tell us what their child needs; we send them two or three matched tutors. Join as a
           school tutor, exam coach, language teacher, music or dance teacher, coach or working professional, and get
@@ -43,7 +43,7 @@
           <a class="nx-cta nx-cta--primary" href="#" data-modal-target="tutorModal">Join as a tutor</a>
           <a class="nx-cta nx-cta--ghost" href="#categories">See what parents are asking for</a>
         </div>
-        <p class="nx-shero__lede nxjobs-cities">Tuition jobs: <a href="{{ url('/tuition-jobs') }}">all India, by state and city</a> · <a href="{{ url('/tuition-jobs/gurugram') }}">Gurgaon</a></p>
+        <p class="nx-shero__lede nxjobs-cities">Looking for work near you? <a href="{{ url('/tuition-jobs') }}">Home tuition jobs by state and city</a> · <a href="{{ url('/tuition-jobs/gurugram') }}">Gurgaon</a> · <a href="{{ url('/pricing') }}">Tutor plans</a> · <a href="{{ url('/how-we-verify-tutors') }}">How the ID check works</a></p>
       </div>
       <aside class="nx-shero__side" aria-label="How it works">
         <ul class="nx-stats nx-stats--stack">

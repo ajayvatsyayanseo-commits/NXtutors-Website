@@ -1,0 +1,88 @@
+{
+  "state": "West Bengal",
+  "board": {
+    "name": "West Bengal Board of Secondary Education (WBBSE)",
+    "site": "https://wbbse.wb.gov.in",
+    "summary": "The West Bengal Board of Secondary Education came into being in 1951 under the West Bengal Secondary Education Act of 1950 and took its present name in 1964. It conducts the secondary examination after Class 10, known as Madhyamik Pariksha, publishes some Class IX–X textbooks and issues an annual academic calendar; the 2026 calendar sets formative evaluation in Classes IX–X and summative evaluations during the year. Classes 11 and 12 come under the West Bengal Council of Higher Secondary Education (wbchse.wb.gov.in)."
+  },
+  "intro": [
+    "Kolkata, together with Salt Lake, New Town and Howrah, has a tuition-jobs page with zones, and tutors there should choose zones on that page. For Siliguri, Durgapur, Asansol, Bardhaman, Kharagpur and the rest of West Bengal, this page is the starting point. Join with your town and the localities you can reach. A home request goes first to the nearest suitable tutors, then outward to zone, city and online. Online lessons are matched on subject, class and board alone, so a tutor in Jalpaiguri or Bankura can teach a student anywhere in India.",
+    "West Bengal students may sit the Madhyamik through WBBSE and continue under the Council of Higher Secondary Education, or follow CBSE, ICSE or another board, in Bengali or English medium. List all of them. One point worth knowing: the board's 2026 academic calendar restates a rule that a teacher shall not engage in private tuition for personal gain, so if you also teach in a school, check the rules that apply to you. Each request ends with two or three tutors and their fees; the first class is a free demo."
+  ],
+  "towns": [
+    {
+      "name": "Siliguri",
+      "note": "Home lessons in Siliguri go first to tutors nearby."
+    },
+    {
+      "name": "Durgapur",
+      "note": "Write down your Durgapur neighbourhood; nearby requests come first."
+    },
+    {
+      "name": "Asansol",
+      "note": "Your preferred classes in Asansol can go on your profile."
+    },
+    {
+      "name": "Bardhaman",
+      "note": "Distance comes first: give your Bardhaman locality."
+    },
+    {
+      "name": "Kharagpur",
+      "note": "If you are based in Kharagpur, add online hours too."
+    },
+    {
+      "name": "Haldia",
+      "note": "Keep both options open from Haldia: home and online."
+    },
+    {
+      "name": "English Bazar (Malda)",
+      "note": "Say how far beyond English Bazar you will travel for lessons."
+    },
+    {
+      "name": "Krishnanagar",
+      "note": "Students outside Krishnanagar can still book you online."
+    },
+    {
+      "name": "Baharampur",
+      "note": "Teaching from home in Baharampur? Online classes work too."
+    },
+    {
+      "name": "Jalpaiguri",
+      "note": "A tutor living in Jalpaiguri can teach online across India."
+    },
+    {
+      "name": "Midnapore",
+      "note": "Put your strongest subjects for Midnapore students first."
+    },
+    {
+      "name": "Bankura",
+      "note": "Mark which areas near Bankura you will visit."
+    },
+    {
+      "name": "Cooch Behar",
+      "note": "Tutors who live in Cooch Behar can mark nearby localities."
+    }
+  ],
+  "faqs": [
+    [
+      "I teach in a school. Can I also tutor privately?",
+      "Check the rules that apply to your post first. WBBSE's 2026 academic calendar restates a 2018 notification that no teacher shall engage in private tuition for personal gain. NXTutors cannot advise on your service rules; ask your school or the board."
+    ],
+    [
+      "Should I list Madhyamik and Higher Secondary separately?",
+      "Yes. WBBSE conducts the Madhyamik after Class 10, while Classes 11 and 12 come under the Council of Higher Secondary Education. Listing each, with subjects and medium, helps requests reach the right tutor."
+    ],
+    [
+      "How does a family choose between tutors?",
+      "We shortlist two or three, nearest first, then zone, city and online. The parent sees each fee, books a free first class, and can switch later without paying for the change."
+    ],
+    [
+      "What is the ID check?",
+      "Tutors who join confirm phone or email with a one-time code and upload a government photo ID, which the team reviews before the profile goes live. It is not a police or background check; see How we verify tutors."
+    ],
+    [
+      "Do tutors pay a fee to NXTutors?",
+      "Tutor plans are paid. /pricing lists what each plan includes. The fee you charge families is your own."
+    ]
+  ]
+}

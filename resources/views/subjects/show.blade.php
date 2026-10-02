@@ -137,6 +137,10 @@
           @if(!empty($page['city_slug']))
             {{-- "Gurgaon" for Gurugram: still what most parents type. --}}
             <li><a class="nx-chip nx-chip--muted" href="{{ url('/city/' . $page['city_slug']) }}">{{ $page['city_slug'] === 'gurugram' ? 'Home tutors in Gurgaon' : 'All home tutors in ' . $page['city'] }}</a></li>
+            {{-- Tutors reading the page: one link to the city's tuition-jobs page, unless the body already has it. --}}
+            @if($jobsChip = \App\Support\LinkNest::jobsChip($page))
+              <li><a class="nx-chip nx-chip--muted" href="{{ $jobsChip['url'] }}">{{ $jobsChip['label'] }}</a></li>
+            @endif
           @else
             <li><a class="nx-chip nx-chip--muted" href="{{ url('/city') }}">Home tutors in your city</a></li>
           @endif

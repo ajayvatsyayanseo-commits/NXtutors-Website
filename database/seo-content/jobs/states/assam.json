@@ -1,0 +1,84 @@
+{
+  "state": "Assam",
+  "board": {
+    "name": "Assam State School Education Board (ASSEB)",
+    "site": "https://asseb.in",
+    "summary": "The Assam State School Education Board was formed under the Assam State School Education Board Act, 2024, by merging the Board of Secondary Education, Assam (SEBA) and the Assam Higher Secondary Education Council (AHSEC). It came into existence on 13 September 2024. The former SEBA now works as ASSEB Division I and the former AHSEC as Division II. The board says its site will change over time, and for now it links to each division's own home page for notices."
+  },
+  "intro": [
+    "Guwahati is the one Assam city with its own NXTutors tuition-jobs page, split into zones so a tutor can mark the parts of the city they are willing to reach. Outside Guwahati, the picture is different: a tutor in Silchar, Dibrugarh or Jorhat joins with their town named, and home lessons begin only when a family close by sends a request that fits. Meanwhile the same profile can take online lessons, which come from parents anywhere in India and do not depend on where you live. You can run both, keeping some evenings for nearby homes and fitting online classes around them.",
+    "The 2024 merger matters for anyone teaching state-board students: what used to be SEBA and AHSEC are now two divisions of one board, so check each division's page for the current syllabus before a demo. On your profile, list every board you can teach, whether that is the Assam board, CBSE, ICSE or something else, plus classes, subjects and medium. When a parent asks, NXTutors shortlists two or three tutors, nearest first and then wider, and the family sees your fee before a free first class. Mention Assamese, Bengali or English medium where it applies."
+  ],
+  "towns": [
+    {
+      "name": "Silchar",
+      "note": "Silchar sits in the Barak Valley; list the Silchar localities you cover."
+    },
+    {
+      "name": "Dibrugarh",
+      "note": "Keep both options open from Dibrugarh: home and online."
+    },
+    {
+      "name": "Jorhat",
+      "note": "Say how far beyond Jorhat you will travel for lessons."
+    },
+    {
+      "name": "Tezpur",
+      "note": "Students outside Tezpur can still book you online."
+    },
+    {
+      "name": "Nagaon",
+      "note": "Teaching from home in Nagaon? Online classes work too."
+    },
+    {
+      "name": "Tinsukia",
+      "note": "A tutor living in Tinsukia can teach online across India."
+    },
+    {
+      "name": "Bongaigaon",
+      "note": "Put your strongest subjects for Bongaigaon students first."
+    },
+    {
+      "name": "Dhubri",
+      "note": "Mark which areas near Dhubri you will visit."
+    },
+    {
+      "name": "Sivasagar",
+      "note": "Tutors who live in Sivasagar can mark nearby localities."
+    },
+    {
+      "name": "North Lakhimpur",
+      "note": "Hours you can give in North Lakhimpur belong on your profile."
+    },
+    {
+      "name": "Goalpara",
+      "note": "Weekend or weekday slots in Goalpara? You choose them."
+    },
+    {
+      "name": "Karimganj",
+      "note": "Online lessons let Karimganj tutors teach in other states."
+    }
+  ],
+  "faqs": [
+    [
+      "I live in Jorhat, not Guwahati. Can I still get home tuition work?",
+      "Yes, if a family near you asks. Home requests are matched by distance first, so your town and the areas you can reach decide what comes to you. Where nobody close by has asked, online lessons are the way to start teaching through NXTutors."
+    ],
+    [
+      "Which Assam board name should I use on my profile?",
+      "Since 13 September 2024 the state board is the Assam State School Education Board, with Division I covering the former SEBA classes and Division II the former AHSEC classes. Writing the division you teach, and the class range, helps parents understand your experience quickly."
+    ],
+    [
+      "How does a family's request reach me?",
+      "A parent tells NXTutors the class, board, subject and where they live. We shortlist two or three tutors, nearest first, then the same zone or city, then online. The family sees each tutor's fee, picks one for a free first class, and can switch later without paying for the change."
+    ],
+    [
+      "Do I need a police verification to join?",
+      "No. Tutors who join go through an ID check: you confirm your phone or email with a one-time code and upload a government photo ID that our team reviews before your profile goes live. The How we verify tutors page explains it. It is not a police or background check."
+    ],
+    [
+      "Is there a cost for tutors?",
+      "Tutor plans are paid, and each plan lists what it includes on our pricing page (/pricing). Your lesson fee is separate and is yours to set; parents see it before they book the demo."
+    ]
+  ]
+}

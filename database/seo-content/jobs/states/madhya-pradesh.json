@@ -1,0 +1,88 @@
+{
+  "state": "Madhya Pradesh",
+  "board": {
+    "name": "Board of Secondary Education, Madhya Pradesh (MPBSE), Bhopal",
+    "site": "https://mpbse.nic.in",
+    "summary": "The Board of Secondary Education, Madhya Pradesh (Madhyamik Shiksha Mandal), based in Bhopal, conducts the High School (Class 10) and Higher Secondary (Class 12) examinations. Its site carries circulars and orders, the examination time table, results and student services. For the 2026-27 session it has issued an admission and examination guide with instructions for filling in online applications, and it lists a toll-free helpline for queries."
+  },
+  "intro": [
+    "Indore and Bhopal each have a tuition-jobs page with zones, and tutors in those cities should pick their zones there. The rest of Madhya Pradesh, from Jabalpur and Gwalior to Ujjain, Sagar, Rewa and Satna, is covered here. Join with your town and the localities you can reach. A family's request for home lessons goes first to the tutors nearest them, then to their wider zone and city, and only after that to online tutors. Online lessons, though, are open to any tutor, so someone in Chhindwara can teach a student in another state from day one.",
+    "Students in Madhya Pradesh may study under the MP board in Bhopal, CBSE or another board, and in Hindi or English medium. Put all of these on your profile so requests line up with what you can teach. The board's admission and examination guide for 2026-27 and its circulars are on mpbse.nic.in. Each request ends with a shortlist of two or three tutors: the family sees the fee you set, has a free first class, and can switch later. If you cover Higher Secondary, list the subjects within your stream, such as physics, accountancy or biology."
+  ],
+  "towns": [
+    {
+      "name": "Jabalpur",
+      "note": "Put your strongest subjects for Jabalpur students first."
+    },
+    {
+      "name": "Gwalior",
+      "note": "Students outside Gwalior can still book you online."
+    },
+    {
+      "name": "Ujjain",
+      "note": "If you are based in Ujjain, add online hours too."
+    },
+    {
+      "name": "Sagar",
+      "note": "Write down your Sagar neighbourhood; nearby requests come first."
+    },
+    {
+      "name": "Rewa",
+      "note": "Boards you teach in Rewa should all be listed."
+    },
+    {
+      "name": "Satna",
+      "note": "Start online from Satna before a nearby family asks."
+    },
+    {
+      "name": "Dewas",
+      "note": "Online lessons let Dewas tutors teach in other states."
+    },
+    {
+      "name": "Ratlam",
+      "note": "Tutors who live in Ratlam can mark nearby localities."
+    },
+    {
+      "name": "Katni",
+      "note": "A tutor living in Katni can teach online across India."
+    },
+    {
+      "name": "Singrauli",
+      "note": "Say how far beyond Singrauli you will travel for lessons."
+    },
+    {
+      "name": "Chhindwara",
+      "note": "Distance comes first: give your Chhindwara locality."
+    },
+    {
+      "name": "Burhanpur",
+      "note": "Home lessons in Burhanpur go first to tutors nearby."
+    },
+    {
+      "name": "Khandwa",
+      "note": "Online students can choose a Khandwa tutor from anywhere."
+    }
+  ],
+  "faqs": [
+    [
+      "Can I join from Jabalpur or Gwalior?",
+      "Yes. Neither has a tuition-jobs page of its own yet, so join from this state page with your town named. Home requests go to the closest tutors first, and online students are open to you anywhere."
+    ],
+    [
+      "Should I mention MP board experience?",
+      "If you teach MPBSE High School or Higher Secondary students, list it with the medium. The board's 2026-27 guide and circulars on mpbse.nic.in are worth reading before a demo so you can speak to the current session."
+    ],
+    [
+      "How does NXTutors choose tutors for a family?",
+      "We shortlist two or three, starting with the nearest and then the zone, city and online. The parent sees each fee, books a free first class, and may switch tutor later at no charge."
+    ],
+    [
+      "What is checked when I join?",
+      "Your phone or email, through a one-time code, and a government photo ID that the team reviews before your profile is live. It is an identity check only, not a police check; see How we verify tutors."
+    ],
+    [
+      "Do I have to pay?",
+      "Tutor plans are paid. The pricing page, /pricing, shows what each plan includes. You decide your own fee for lessons."
+    ]
+  ]
+}

@@ -19,7 +19,7 @@ nxtutors.com is a tutor-matching platform (Laravel 12, repo `~/NXtutors-Website`
 1. No invented facts: no made-up statistics, counts, success rates, testimonials, quotes or named families.
 2. **Never call sample profiles verified.** Counts that include samples say "tutor profiles", not "verified tutors". Real tutors: Ajay Vatsyayan, Abhinandan Tiwary, Aaditya Kashyap, Parul (see `config/nx_authors.php`, `register.is_sample`).
 3. No school names; no people's names except the named author of that page.
-4. Exam/syllabus facts only from official sources (NTA, jeeadv.ac.in, CBSE/cbseacademic, CISCE, IBO, Cambridge, Pearson, College Board, UCAS, HBCSE/MTAI, and the state boards' and CET cells' own sites, e.g. mahahsscboard.in for Maharashtra SSC/HSC and cetcell.mahacet.org for MHT-CET). No unannounced dates.
+4. Exam/syllabus facts only from official sources (NTA, jeeadv.ac.in, CBSE/cbseacademic, CISCE, IBO, Cambridge, Pearson, College Board, UCAS, HBCSE/MTAI, and the state boards' and CET cells' own sites, e.g. mahahsscboard.in for Maharashtra SSC/HSC and cetcell.mahacet.org for MHT-CET; kseab.karnataka.gov.in and pue.karnataka.gov.in / kea.kar.nic.in (KCET); bse.telangana.gov.in, tgbie.cgg.gov.in and the TG EAPCET site; dge.tn.gov.in; wbbse.wb.gov.in, wbchse.wb.gov.in and wbjeeb.nic.in (WBJEE); gseb.org (GSEB, GUJCET); rajeduboard.rajasthan.gov.in; upmsp.edu.in). No unannounced dates.
 5. Named authors (Ajay, Abhinandan, Aaditya): never invent anecdotes, years or results for them.
 6. Privacy: request data is shown only through `App\Support\AreaDemand` (month + class + board + subject, ≥3 requests, opt-outs in `config/tutors.php demand_exclude_ids`).
 

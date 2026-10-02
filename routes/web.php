@@ -188,6 +188,10 @@ foreach (array_keys(config('subject_pages', [])) as $subjectPageKey) {
 Route::get('/tuition-jobs', [\App\Http\Controllers\TuitionJobsController::class, 'india'])->name('tuition-jobs.india');
 Route::get('/tuition-jobs/state/{state}', [\App\Http\Controllers\TuitionJobsController::class, 'state'])->where('state', '[a-z0-9-]+')->name('tuition-jobs.state');
 Route::get('/tuition-jobs/{city}', [\App\Http\Controllers\TuitionJobsController::class, 'show'])->where('city', '[a-z0-9-]+')->name('tuition-jobs');
+// National tutor-jobs topic pages, flat URLs (/maths-tutor-jobs, …): 404 until
+// database/seo-content/jobs/topics/{topic}.json exists (App\Support\JobsContent).
+Route::get('/{topic}', [\App\Http\Controllers\TuitionJobsController::class, 'topic'])
+    ->whereIn('topic', \App\Support\JobsContent::TOPICS)->name('tuition-jobs.topic');
 Route::get('/become-a-tutor', [\App\Http\Controllers\BecomeTutorController::class, 'show'])->name('become-tutor');
 Route::get('/how-we-verify-tutors', [\App\Http\Controllers\VerifyTutorsController::class, 'show'])->name('verify-tutors');
 Route::get('/authors', [\App\Http\Controllers\AuthorController::class, 'index'])->name('authors.index');

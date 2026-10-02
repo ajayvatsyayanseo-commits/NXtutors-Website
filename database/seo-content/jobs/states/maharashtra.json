@@ -1,0 +1,92 @@
+{
+  "state": "Maharashtra",
+  "board": {
+    "name": "Maharashtra State Board of Secondary and Higher Secondary Education, Pune",
+    "site": "https://www.mahahsscboard.in",
+    "summary": "The Maharashtra State Board of Secondary and Higher Secondary Education, with its head office in Pune, is an autonomous body under Maharashtra Act No. 41 of 1965. It conducts the SSC (Class 10) and HSC (Class 12) examinations through nine divisional boards, with a main and a supplementary examination each year. Its site explains the Class Improvement Scheme, marks verification, photocopies and revaluation, and offers digital marksheets on the board site and DigiLocker."
+  },
+  "intro": [
+    "Three Maharashtra cities have tuition-jobs pages with zones: Mumbai (with Thane and Navi Mumbai), Pune and Nagpur. Tutors there should choose zones on those pages. For Nashik, Chhatrapati Sambhajinagar, Kolhapur, Solapur, Amravati, Nanded and the state's other towns, this page is where you begin. Name your town and the parts of it you can reach. A home request is offered first to the nearest suitable tutors, so being exact about your base matters. Online lessons are matched on subject, class and board, not on where you live, and are open to you straight away.",
+    "Maharashtra students may take the SSC and HSC through the state board, which works through nine divisional boards, or follow CBSE, ICSE or another board. List each board you can teach and the medium, such as Marathi or English. The board's site has its evaluation pages and FAQs, which are worth reading before a demo. Every request gives the parent two or three tutors with fees visible; the first class is a free demo, you set the fee, and families may switch later. Tutors who teach junior college classes should name their HSC subjects."
+  ],
+  "towns": [
+    {
+      "name": "Nashik",
+      "note": "Weekend or weekday slots in Nashik? You choose them."
+    },
+    {
+      "name": "Chhatrapati Sambhajinagar",
+      "note": "Teaching from home in Chhatrapati Sambhajinagar? Online classes work too."
+    },
+    {
+      "name": "Kolhapur",
+      "note": "Your preferred classes in Kolhapur can go on your profile."
+    },
+    {
+      "name": "Solapur",
+      "note": "Nearby families in Solapur see the closest tutors first."
+    },
+    {
+      "name": "Amravati",
+      "note": "Hours you can give in Amravati belong on your profile."
+    },
+    {
+      "name": "Nanded",
+      "note": "Students outside Nanded can still book you online."
+    },
+    {
+      "name": "Sangli",
+      "note": "Sangli tutors who also cover Miraj can list Sangli and Miraj both."
+    },
+    {
+      "name": "Jalgaon",
+      "note": "Start online from Jalgaon before a nearby family asks."
+    },
+    {
+      "name": "Akola",
+      "note": "Tutors who live in Akola can mark nearby localities."
+    },
+    {
+      "name": "Latur",
+      "note": "Say how far beyond Latur you will travel for lessons."
+    },
+    {
+      "name": "Ahilyanagar",
+      "note": "Home lessons in Ahilyanagar go first to tutors nearby."
+    },
+    {
+      "name": "Satara",
+      "note": "Say whether lessons in Satara run in English or Marathi."
+    },
+    {
+      "name": "Dhule",
+      "note": "Mark which areas near Dhule you will visit."
+    },
+    {
+      "name": "Chandrapur",
+      "note": "Keep both options open from Chandrapur: home and online."
+    }
+  ],
+  "faqs": [
+    [
+      "I live in Thane. Which page should I use?",
+      "Thane is covered by the Mumbai tuition-jobs page, along with Navi Mumbai, so pick your zones there. This state page is for tutors in Nashik, Kolhapur, Solapur and other towns without a page of their own."
+    ],
+    [
+      "What should I know about SSC evaluation?",
+      "The state board's site sets out its evaluation pages and FAQs, including the Class Improvement Scheme and marks verification after results. A tutor who has read them can answer a parent's questions in the demo without guessing."
+    ],
+    [
+      "How are tutors matched to a family?",
+      "NXTutors shortlists two or three tutors, nearest first, then zone, city and online. The parent compares fees before the demo, the first class is free for the family, and switching later is free for them."
+    ],
+    [
+      "Do you do background checks?",
+      "No. Tutors who join go through an ID check: a one-time code confirms phone or email, and the team reviews a government photo ID before the profile goes live. How we verify tutors explains the steps."
+    ],
+    [
+      "What do tutor plans cost?",
+      "Tutor plans are paid, and /pricing lists each one and what it includes. Your lesson fee is set by you and shown to parents before they book."
+    ]
+  ]
+}

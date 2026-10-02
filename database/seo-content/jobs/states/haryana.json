@@ -1,0 +1,92 @@
+{
+  "state": "Haryana",
+  "board": {
+    "name": "Board of School Education Haryana (BSEH), Bhiwani",
+    "site": "https://bseh.org.in",
+    "summary": "The Board of School Education Haryana is based in Bhiwani. It conducts the Secondary (Class 10) and Senior Secondary (Class 12) examinations, which its site lists for February–March 2026, along with HOS examinations at both levels. Results appear on the board's site, and Secondary marks are also offered through DigiLocker. When we checked, part of the site showed a maintenance notice, so confirm the current syllabus and notices on bseh.org.in itself."
+  },
+  "intro": [
+    "Gurugram and Faridabad have their own tuition-jobs pages with detailed zones and sectors, and tutors who live in either city should begin there. This page covers the rest of Haryana: Panipat, Karnal, Ambala, Hisar, Rohtak, Sonipat and smaller district towns. When you join, give your town and the parts of it you can reach. Requests for home lessons go to the nearest suitable tutors first, so a Karnal teacher is offered Karnal families before anyone else is. Online lessons have no such limit, and a tutor in Sirsa or Jind can teach a student anywhere in India.",
+    "Haryana students may follow the state board in Bhiwani, CBSE, or another board, so be clear on your profile about which you teach and whether you work in Hindi or English. BSEH publishes its notices and results on bseh.org.in; check there for the current syllabus. For each request, NXTutors puts forward two or three tutors, the parent sees the fee you have chosen, and the first lesson is a free demo for the family, who can switch later if needed. If you prepare students for the HOS examinations at Secondary or Senior Secondary level, add that as well."
+  ],
+  "towns": [
+    {
+      "name": "Panipat",
+      "note": "A tutor living in Panipat can teach online across India."
+    },
+    {
+      "name": "Karnal",
+      "note": "Please list the Karnal localities you can reach."
+    },
+    {
+      "name": "Ambala",
+      "note": "Ambala tutors: say whether you cover Ambala City, Ambala Cantt or both."
+    },
+    {
+      "name": "Hisar",
+      "note": "Students outside Hisar can still book you online."
+    },
+    {
+      "name": "Rohtak",
+      "note": "Weekend or weekday slots in Rohtak? You choose them."
+    },
+    {
+      "name": "Sonipat",
+      "note": "Boards you teach in Sonipat should all be listed."
+    },
+    {
+      "name": "Yamunanagar",
+      "note": "Keep both options open from Yamunanagar: home and online."
+    },
+    {
+      "name": "Kurukshetra",
+      "note": "Tutors who live in Kurukshetra can mark nearby localities."
+    },
+    {
+      "name": "Bhiwani",
+      "note": "Bhiwani is home to the Haryana board's office; name your locality there."
+    },
+    {
+      "name": "Sirsa",
+      "note": "Distance comes first: give your Sirsa locality."
+    },
+    {
+      "name": "Rewari",
+      "note": "Put your strongest subjects for Rewari students first."
+    },
+    {
+      "name": "Jind",
+      "note": "Say whether lessons in Jind run in English or Hindi."
+    },
+    {
+      "name": "Kaithal",
+      "note": "Write down your Kaithal neighbourhood; nearby requests come first."
+    },
+    {
+      "name": "Palwal",
+      "note": "Teaching from home in Palwal? Online classes work too."
+    }
+  ],
+  "faqs": [
+    [
+      "I live in Rewari. Do I join through the Gurugram page?",
+      "No. Gurugram's page is for tutors who will travel within Gurugram's zones. If you are based in Rewari, join from here with Rewari as your town; a family near you can then be offered your name first, and online students are open to you as well."
+    ],
+    [
+      "Is BSEH experience useful?",
+      "It is if a family asks for help with the Haryana board. Name BSEH on your profile, along with the classes and medium. The board's site was partly under maintenance when we checked, so look up the current syllabus on bseh.org.in before a demo."
+    ],
+    [
+      "How are tutors picked for a request?",
+      "Two or three are shortlisted: the nearest first, then the zone and city, then online. The parent sees each fee, books a free first class, and can move to another tutor later without paying for the switch."
+    ],
+    [
+      "What is the ID check?",
+      "After a one-time code confirms your phone or email, you upload a government photo ID and the team reviews it before your profile is visible. That is the whole check; it is not a police or background check. The How we verify tutors page describes it."
+    ],
+    [
+      "Do tutors pay to be on NXTutors?",
+      "Yes, tutor plans are paid; /pricing shows what each plan includes. The fee you charge per lesson is separate and you set it."
+    ]
+  ]
+}

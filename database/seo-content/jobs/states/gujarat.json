@@ -1,0 +1,92 @@
+{
+  "state": "Gujarat",
+  "board": {
+    "name": "Gujarat Secondary and Higher Secondary Education Board (GSEB), Gandhinagar",
+    "site": "https://www.gseb.org",
+    "summary": "The Gujarat Secondary and Higher Secondary Education Board, based in Gandhinagar, conducts the SSC (Class 10) and HSC (Class 12) examinations. Its site handles exam registration, hall tickets, entry of internal and practical marks, marks verification, purak (supplementary) examinations and results, and hosts a question bank for Standards 9 to 12. The board's question paper archive issues SSC subject papers in Gujarati, English and Hindi medium, with Standard and Basic mathematics set as separate papers."
+  },
+  "intro": [
+    "Ahmedabad and Surat each have a tuition-jobs page with zones, which is where tutors in those two cities should set their travel range. For the rest of Gujarat, from Vadodara and Rajkot to Bhavnagar, Anand or Vapi, this page is the starting point. Name your town when you join. A family's home request is first offered to tutors who live closest to them, so a teacher in Jamnagar is not competing with someone in Ahmedabad for a student next door. Online lessons sit outside that rule: a parent anywhere can choose you, provided the subject, class and board fit.",
+    "GSEB issues SSC papers in Gujarati, English and Hindi medium, so the medium you teach in matters as much as the subject. Put it beside every subject on your profile, and add CBSE or any other board you also handle. GSEB's question bank for Standards 9 to 12, on its own site, is a sensible thing to look at before a demo. Each request brings a shortlist of two or three tutors; the parent sees your fee, which you set, and the first class is a free demo for them. Gujarati-medium tutors should say so up front."
+  ],
+  "towns": [
+    {
+      "name": "Vadodara",
+      "note": "Keep both options open from Vadodara: home and online."
+    },
+    {
+      "name": "Rajkot",
+      "note": "Online lessons let Rajkot tutors teach in other states."
+    },
+    {
+      "name": "Bhavnagar",
+      "note": "Your preferred classes in Bhavnagar can go on your profile."
+    },
+    {
+      "name": "Jamnagar",
+      "note": "Tutors who live in Jamnagar can mark nearby localities."
+    },
+    {
+      "name": "Gandhinagar",
+      "note": "Gandhinagar is where GSEB is based; list the Gandhinagar sectors you cover."
+    },
+    {
+      "name": "Anand",
+      "note": "A tutor living in Anand can teach online across India."
+    },
+    {
+      "name": "Nadiad",
+      "note": "Nearby families in Nadiad see the closest tutors first."
+    },
+    {
+      "name": "Junagadh",
+      "note": "Say how far beyond Junagadh you will travel for lessons."
+    },
+    {
+      "name": "Bharuch",
+      "note": "Please list the Bharuch localities you can reach."
+    },
+    {
+      "name": "Navsari",
+      "note": "Distance comes first: give your Navsari locality."
+    },
+    {
+      "name": "Vapi",
+      "note": "Hours you can give in Vapi belong on your profile."
+    },
+    {
+      "name": "Mehsana",
+      "note": "Home lessons in Mehsana go first to tutors nearby."
+    },
+    {
+      "name": "Morbi",
+      "note": "Put your strongest subjects for Morbi students first."
+    },
+    {
+      "name": "Valsad",
+      "note": "Online students can choose a Valsad tutor from anywhere."
+    }
+  ],
+  "faqs": [
+    [
+      "I teach GSEB in Gujarati medium. Is that worth listing?",
+      "Yes. GSEB sets SSC papers in Gujarati, English and Hindi medium, so a parent looking for Gujarati-medium help needs to know you teach in it. Put the medium beside each subject so matching does not send you a student whose books are in a different language."
+    ],
+    [
+      "Can a tutor in Rajkot get students from Ahmedabad?",
+      "For home lessons, distance comes first, so Ahmedabad families are normally matched to tutors near them. Online is different: an Ahmedabad or Surat student can choose a Rajkot tutor if the subject, class and board fit."
+    ],
+    [
+      "What happens when a family asks for a tutor?",
+      "NXTutors shortlists two or three, starting nearest and then widening to the zone, the city and online. The family compares fees before the demo, the first class is free for them, and they can switch tutor later at no charge."
+    ],
+    [
+      "How am I verified?",
+      "Through an ID check. You confirm your phone or email with a one-time code and upload a government photo ID; our team reviews it before your profile is published. See How we verify tutors. It is not a police check."
+    ],
+    [
+      "Where are the tutor plans listed?",
+      "On the pricing page, /pricing. Plans for tutors are paid, and that page shows what each includes. Your own lesson fee is separate and is up to you."
+    ]
+  ]
+}

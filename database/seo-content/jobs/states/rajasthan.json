@@ -1,0 +1,88 @@
+{
+  "state": "Rajasthan",
+  "board": {
+    "name": "Board of Secondary Education, Rajasthan (BSER), Ajmer",
+    "site": "https://rajeduboard.rajasthan.gov.in",
+    "summary": "The Board of Secondary Education, Rajasthan, at Ajmer, conducts the Secondary (Class 10) examination, the Senior Secondary (Class 12) examination in Arts, Science and Commerce, and the Praveshika and Varishtha Upadhyay examinations in Sanskrit education. Its 2026-27 Class 10 syllabus sets Hindi, English, Science, Social Science and Mathematics as one paper of 3:15 hours each, worth 80 marks plus 20 sessional marks, and uses NCERT books for science and mathematics."
+  },
+  "intro": [
+    "Jaipur is the Rajasthan city with its own tuition-jobs page, divided into zones you can choose from. If you live in Jodhpur, Udaipur, Kota, Ajmer, Bikaner or another town, join from here with your town named. Matching for home lessons looks at distance first, offering a family's request to the closest suitable tutors before widening, so the town and localities you list decide which requests can reach you. Online lessons run on a different basis: class, board and subject. A tutor in Bhilwara or Sikar can be shortlisted for a student anywhere in India.",
+    "Rajasthan students may follow the state board in Ajmer, CBSE or another board, and study in Hindi or English. Write each on your profile. The board's 2026-27 Class 10 syllabus, which uses NCERT books for science and maths, is on its own site and is a useful thing to know before a demo. Every request ends with a shortlist of two or three tutors, the family sees the fee you set, and the first class is a free demo. Senior Secondary tutors should name the stream, Arts, Science or Commerce, and their subjects."
+  ],
+  "towns": [
+    {
+      "name": "Jodhpur",
+      "note": "Distance comes first: give your Jodhpur locality."
+    },
+    {
+      "name": "Udaipur",
+      "note": "Online lessons let Udaipur tutors teach in other states."
+    },
+    {
+      "name": "Kota",
+      "note": "If you are based in Kota, add online hours too."
+    },
+    {
+      "name": "Ajmer",
+      "note": "Ajmer hosts the Rajasthan board's office; name your Ajmer locality."
+    },
+    {
+      "name": "Bikaner",
+      "note": "Keep both options open from Bikaner: home and online."
+    },
+    {
+      "name": "Alwar",
+      "note": "Say whether lessons in Alwar run in English or Hindi."
+    },
+    {
+      "name": "Bhilwara",
+      "note": "Say how far beyond Bhilwara you will travel for lessons."
+    },
+    {
+      "name": "Sikar",
+      "note": "Start online from Sikar before a nearby family asks."
+    },
+    {
+      "name": "Bharatpur",
+      "note": "Students outside Bharatpur can still book you online."
+    },
+    {
+      "name": "Sri Ganganagar",
+      "note": "Nearby families in Sri Ganganagar see the closest tutors first."
+    },
+    {
+      "name": "Pali",
+      "note": "Teaching from home in Pali? Online classes work too."
+    },
+    {
+      "name": "Tonk",
+      "note": "Online students can choose a Tonk tutor from anywhere."
+    },
+    {
+      "name": "Jhunjhunu",
+      "note": "A tutor living in Jhunjhunu can teach online across India."
+    }
+  ],
+  "faqs": [
+    [
+      "What does the RBSE Class 10 paper look like?",
+      "For 2026-27 the board's syllabus sets Hindi, English, Science, Social Science and Mathematics as one paper each of 3:15 hours, 80 marks plus 20 sessional. Check rajeduboard.rajasthan.gov.in for anything newer before a demo."
+    ],
+    [
+      "I teach in Kota. Can I take online students?",
+      "Yes. Online requests are matched by class, board and subject, so where you live does not limit them. Home requests, by contrast, go to the closest suitable tutors first, so list the Kota localities you can reach."
+    ],
+    [
+      "How does a parent pick a tutor?",
+      "NXTutors shortlists two or three, nearest first, then zone, city and online. The parent sees each fee, books a free first class, and may switch tutor later without paying for the switch."
+    ],
+    [
+      "Is my ID checked?",
+      "Yes. You confirm a phone number or email with a one-time code and upload a government photo ID, reviewed by our team before your profile goes live. It is not a police check. See How we verify tutors."
+    ],
+    [
+      "What do I pay?",
+      "Tutor plans are paid; /pricing shows what each plan includes. The fee you charge per lesson is your own decision."
+    ]
+  ]
+}
