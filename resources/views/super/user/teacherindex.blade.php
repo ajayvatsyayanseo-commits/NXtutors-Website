@@ -40,7 +40,7 @@
             <td>{{ $row->name }}</td>
             <td>{{ $row->email }}</td>
             <td>{{ $row->phone }}</td>
-            <td>{{ $row->status == 't' ? 'Active' : 'Pending' }}</td>
+            <td>@if($row->status === 'p')<strong>Pending review</strong>@else{{ \App\Models\Register::STATUS_LABELS[$row->status] ?? 'Inactive' }}@endif</td>
             <td>
               <a href="{{ route('super.teacher.edit', $row->id) }}"><i class="bi bi-pencil"></i></a> |
               <form action="{{ route('super.teacher.destroy', $row->id) }}"

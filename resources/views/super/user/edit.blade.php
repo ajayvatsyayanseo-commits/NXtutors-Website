@@ -184,7 +184,7 @@
                             @method('PUT')
 
                             @php
-                                $statuses = ['t' => 'Active', 'f' => 'Pending'];
+                                $statuses = \App\Models\Register::STATUS_LABELS;
                                 $userTypes = ['Individual' => 'For an Individual', 'Institute' => 'For an Institute'];
                             @endphp
 

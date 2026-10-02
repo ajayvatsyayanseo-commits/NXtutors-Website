@@ -38,7 +38,8 @@ class ResolveDashboardIdentity
             return $this->deny('unauthenticated', 'Sign in to continue.', 401);
         }
 
-        if ($identity->register->status !== 't') {
+        // A tutor pending review may use their dashboard to finish the profile.
+        if (! $identity->register->canSignIn()) {
             return $this->deny('account_inactive', 'This account is inactive. Message us on WhatsApp and we will sort it out.', 403);
         }
 
