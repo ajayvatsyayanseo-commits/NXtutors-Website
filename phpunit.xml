@@ -18,6 +18,8 @@
         </include>
     </source>
     <php>
+        <!-- The suite renders 600+ subject pages; 128M (CLI default) is no longer enough. -->
+        <ini name="memory_limit" value="1024M"/>
         <env name="APP_ENV" value="testing"/>
         <!-- Test-only value: phone numbers are hashed with it (AgentPseudonymiser). -->
         <env name="AGENT_HASH_PEPPER" value="phpunit-only-pepper"/>
