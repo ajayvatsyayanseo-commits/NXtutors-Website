@@ -610,6 +610,56 @@ class GeoStructureTest extends TestCase
         $this->assertSame($cityId, DB::table('city_managment')->where('slug', 'kolkata')->value('id'), 'the city row stays');
     }
 
+    public function test_kolkata_phase_2_areas_launch_safely(): void
+    {
+        $phase1 = require database_path('migrations/seo/2026_10_02_200000_kolkata_areas.php');
+        $phase2 = require database_path('migrations/seo/2026_10_05_100000_kolkata_areas_phase_2.php');
+        $faqs = require database_path('migrations/seo/2026_10_05_101000_faqs_for_kolkata_areas_phase_2.php');
+        $phase1->up();
+        $cityId = DB::table('city_managment')->where('slug', 'kolkata')->value('id');
+        $before = DB::table('city_area_list_managment')->where('city_id', $cityId)->count();
+        $phase2->up();
+        $phase2->up();
+        $faqs->up();
+        $faqs->up();
+
+        $old = json_decode(file_get_contents(database_path('seo-content/areas/kolkata-research.json')), true)['areas'];
+        $new = json_decode(file_get_contents(database_path('seo-content/areas/kolkata-research-2.json')), true)['areas'];
+        $this->assertGreaterThanOrEqual(20, count($new));
+        $this->assertSame([], array_intersect_key($new, $old), 'phase 2 adds only new slugs');
+        $this->assertSame($before + count($new), DB::table('city_area_list_managment')->where('city_id', $cityId)->count(), 'each area once, re-run safe');
+
+        $zones = config('zones.Kolkata');
+        foreach ($new as $slug => $a) {
+            $id = DB::table('city_area_list_managment')->where('slug', $slug)->where('page_schema', 'seo-2026-10-05-kolkata-2')->value('id');
+            $this->assertNotNull($id, $slug);
+            $this->assertSame($a['zone'], \App\Support\Zones::of('Kolkata', $a['name']), $slug);
+            // Exactly one zone's names match the area name (whole word).
+            $hits = array_filter($zones, function ($z) use ($a) {
+                foreach ($z['names'] as $n) {
+                    if (preg_match('/(?<![a-z])' . preg_quote($n, '/') . '(?![a-z])/', mb_strtolower($a['name']))) {
+                        return true;
+                    }
+                }
+
+                return false;
+            });
+            $this->assertCount(1, $hits, $slug . ' must match one zone');
+            $this->assertSame(4, DB::table('city_area_related_faqs_managment')->where('area_id', $id)->count(), $slug . ' FAQs');
+        }
+        // No phase-1 area changes zone.
+        foreach ($old as $slug => $a) {
+            $this->assertSame($a['zone'], CityHub::zoneOfArea('kolkata', 'Kolkata', (object) ['name' => $a['name'], 'slug' => $slug]), $slug);
+        }
+
+        $this->get('/city/kolkata/park-circus')->assertOk()->assertSee('Park Circus at a glance', false);
+
+        $faqs->down();
+        $phase2->down();
+        $this->assertSame(0, DB::table('city_area_list_managment')->where('page_schema', 'seo-2026-10-05-kolkata-2')->count());
+        $this->assertSame($before, DB::table('city_area_list_managment')->where('city_id', $cityId)->count(), 'phase-1 rows stay');
+    }
+
     public function test_bhopal_areas_launch_safely(): void
     {
         if (! DB::table('city_managment')->where('slug', 'bhopal')->exists()) {
@@ -862,6 +912,7 @@ class GeoStructureTest extends TestCase
     {
         $this->assertSame('boards', BlogTopics::of('cbse-class-10-maths-preparation'));
         $this->assertSame('entrance', BlogTopics::of('-neet-biology-ncertfirst'));
+        $this->assertSame('entrance', BlogTopics::of('wbjee-preparation-plan-kolkata'));
         $this->assertSame('city', BlogTopics::of('maths-home-tutor-in-dlf-phase-4-best-home-tutors-near-you'));
         $this->assertSame('dlf-phase-4', BlogTopics::localityOf('maths-home-tutor-in-dlf-phase-4-best-home-tutors-near-you'));
 

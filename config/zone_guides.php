@@ -1640,7 +1640,7 @@ return [
             ],
         ],
         'Lake Town, Dum Dum & Baguiati' => [
-            'guide' => 'salt-lake-and-new-town-tuition-guide',
+            'guide' => 'lake-town-dum-dum-baguiati-tuition-guide',
             'intro' => [
                 'Lake Town, Bangur Avenue, Kestopur, Baguiati and Dum Dum sit along VIP Road and Jessore Road on the north-eastern side of the city. VIP Road, finished in 1962, runs from Ultadanga to the airport past most of the zone. Lake Town and Bangur Avenue belong to South Dum Dum Municipality, while Kestopur and Baguiati are in the Bidhannagar Municipal Corporation. Homes range from older houses and builder floors to mid-rise flats and some gated complexes.',
                 'Dum Dum and Belgachia opened on the Blue Line on 12 November 1984, Dum Dum Junction is on the Sealdah to Ranaghat line and starts the Circular Railway, and since 22 August 2025 the Yellow Line has run from Noapara through Dum Dum Cantonment to the airport. The Ultadanga flyover opened in 2011 and the flyover over VIP Road at Baguiati in March 2015. Baguiati has no metro station of its own yet.',

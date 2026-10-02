@@ -28,7 +28,7 @@ class BlogTopics
         if (preg_match('/-in-[a-z0-9-]+-(best-home-tutors|near-you|coaching-at-home)/', $s) || str_contains($s, '-near-you')) {
             return 'city';
         }
-        if (preg_match('/\b(jee|neet|cuet|olympiad|rmo|inmo)\b/', str_replace('-', ' ', $s))) {
+        if (preg_match('/\b(jee|wbjee|neet|cuet|olympiad|rmo|inmo)\b/', str_replace('-', ' ', $s))) {
             return 'entrance';
         }
         if (preg_match('/\b(sat|ielts|toefl|dsat)\b/', str_replace('-', ' ', $s))) {

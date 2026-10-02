@@ -92,13 +92,13 @@
   <section class="nx-guide__sec">
   <h3 id="kl-ballygunge">Ballygunge, Gariahat and Alipore: the old south around the lake</h3>
   <p>
-    {!! $klA('ballygunge', 'Ballygunge') !!} is where wealthy families moving south from north Calcutta built large
+    {!! $klA('ballygunge', 'Ballygunge') !!} is where families moving south from north Calcutta built large
     mansions in the 1930s and 1940s; many streets now pair those houses with apartment blocks, and Gariahat Market
     spreads around the crossing. {!! $klA('bhowanipore', 'Bhowanipore') !!}, just south of the Maidan, was one of the
     villages the East India Company acquired in 1758 and today mixes older buildings with shops and offices.
     {!! $klA('kalighat', 'Kalighat') !!} grew up around its temple beside the Adi Ganga. {!! $klA('alipore', 'Alipore') !!}
     keeps colonial-era bungalows and government residences, with much of its land in institutional use. Further south,
-    {!! $klA('dhakuria', 'Dhakuria') !!} is a denser middle-class area of family houses, {!! $klA('jodhpur-park', 'Jodhpur Park') !!}
+    {!! $klA('dhakuria', 'Dhakuria') !!} is a denser area of family houses, {!! $klA('jodhpur-park', 'Jodhpur Park') !!}
     was divided into about 450 plots by a co-operative housing society in 1947, and
     {!! $klA('lake-gardens', 'Lake Gardens') !!} lies just south of the Rabindra Sarobar lake.
   </p>
@@ -118,7 +118,7 @@
     who settled here after 1947 shaped much of its present character. Beside it,
     {!! $klA('golf-green', 'Golf Green') !!} is mostly low-rise flats among green spaces and
     {!! $klA('regent-park', 'Regent Park') !!} is largely compact family flats. By 1949
-    {!! $klA('jadavpur', 'Jadavpur') !!} held about forty refugee colonies, Bijoygarh among them; it is now a busy mixed
+    {!! $klA('jadavpur', 'Jadavpur') !!} held about forty refugee colonies, {!! $klA('bijoygarh', 'Bijoygarh') !!} among them; it is now a busy mixed
     area with a large university campus and the 8B bus terminus. Along the main road towards Garia,
     {!! $klA('bansdroni', 'Bansdroni') !!} is almost wholly residential, {!! $klA('naktala', 'Naktala') !!} is known for
     its Durga Puja, {!! $klA('baghajatin', 'Baghajatin') !!} has little room left to build, and
@@ -138,7 +138,7 @@
   <h3 id="kl-behala">Behala and New Alipore: the Purple Line along Diamond Harbour Road</h3>
   <p>
     {!! $klA('behala', 'Behala') !!} is among the oldest and largest residential areas of the city, spread across wards 115
-    to 132 and taking in former villages such as Barisha, Sarsuna and Haridevpur. Old family houses stand next to newer
+    to 132 and taking in former villages such as {!! $klA('barisha', 'Barisha') !!}, {!! $klA('sarsuna', 'Sarsuna') !!} and {!! $klA('haridevpur', 'Haridevpur') !!}. Old family houses stand next to newer
     apartment buildings and builder floors, and Diamond Harbour Road is the spine. {!! $klA('new-alipore', 'New Alipore') !!}
     was laid out in the 1950s as a planned suburb and is still organised in lettered blocks of plot houses and apartment
     buildings. Further out, {!! $klA('thakurpukur', 'Thakurpukur') !!}, once part of the Barisha estate, is densely built
@@ -216,7 +216,7 @@
   <section class="nx-guide__sec">
   <h3 id="kl-laketown">Lake Town, Dum Dum and Baguiati: along VIP Road and Jessore Road</h3>
   <p>
-    VIP Road, finished in 1962, runs from Ultadanga to the airport and strings this zone together.
+    VIP Road, finished in 1962, runs from {!! $klA('ultadanga', 'Ultadanga') !!} to the airport and strings this zone together.
     {!! $klA('lake-town', 'Lake Town') !!} is a planned area of parks and a lake between VIP Road and Jessore Road, and
     {!! $klA('bangur-avenue', 'Bangur Avenue') !!}, its neighbour, is mostly low- and mid-rise flats; both fall under South
     Dum Dum Municipality. {!! $klA('kestopur', 'Kestopur') !!} and {!! $klA('baguiati', 'Baguiati') !!} belong to the
@@ -237,7 +237,7 @@
   <h3 id="kl-north">North Kolkata: heritage lanes from Bagbazar to Sinthee</h3>
   <p>
     This is the oldest part of the city. {!! $klA('bagbazar', 'Bagbazar') !!} grew from the historic village of Sutanuti
-    beside the Hooghly, and {!! $klA('sovabazar', 'Sovabazar') !!} was a wealthy merchant quarter whose family mansions have
+    beside the Hooghly, and {!! $klA('sovabazar', 'Sovabazar') !!} was a merchant quarter whose family mansions have
     held Durga Puja celebrations since 1757. {!! $klA('shyambazar', 'Shyambazar') !!} centres on its five-point crossing,
     with verandahed houses in the lanes behind. {!! $klA('maniktala', 'Maniktala') !!} was a separate municipality until the
     1923 Calcutta Municipal Act brought it into the city. {!! $klA('belgachia', 'Belgachia') !!} mixes ready two-bedroom

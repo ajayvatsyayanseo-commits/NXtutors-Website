@@ -549,23 +549,24 @@ return [
             'names' => ['shahibaug', 'asarwa', 'meghaninagar'],
         ],
     ],
-    // Kolkata (1 Oct 2026), from database/seo-content/areas/kolkata-research.json.
+    // Kolkata (1 Oct 2026), from database/seo-content/areas/kolkata-research.json;
+    // phase 2 (5 Oct 2026) names from kolkata-research-2.json.
     'Kolkata' => [
         'Behala & New Alipore' => [
             'sectors' => [],
-            'names' => ['behala', 'new alipore', 'thakurpukur'],
+            'names' => ['behala', 'new alipore', 'thakurpukur', 'joka', 'sarsuna', 'barisha', 'haridevpur'],
         ],
         'Ballygunge, Gariahat & Alipore' => [
             'sectors' => [],
-            'names' => ['ballygunge', 'bhowanipore', 'kalighat', 'alipore', 'dhakuria', 'jodhpur park', 'lake gardens', 'gariahat', 'elgin'],
+            'names' => ['ballygunge', 'bhowanipore', 'kalighat', 'alipore', 'dhakuria', 'jodhpur park', 'lake gardens', 'gariahat', 'elgin', 'park circus', 'southern avenue'],
         ],
         'Tollygunge, Jadavpur & Garia' => [
             'sectors' => [],
-            'names' => ['tollygunge', 'golf green', 'regent park', 'jadavpur', 'bansdroni', 'naktala', 'baghajatin', 'garia'],
+            'names' => ['tollygunge', 'golf green', 'regent park', 'jadavpur', 'bansdroni', 'naktala', 'baghajatin', 'garia', 'bijoygarh'],
         ],
         'Kasba & EM Bypass South' => [
             'sectors' => [],
-            'names' => ['kasba', 'santoshpur', 'mukundapur', 'patuli'],
+            'names' => ['kasba', 'santoshpur', 'mukundapur', 'patuli', 'tiljala', 'topsia', 'anandapur', 'haltu', 'survey park', 'ajoy nagar'],
         ],
         'Salt Lake' => [
             'sectors' => [],
@@ -577,15 +578,15 @@ return [
         ],
         'Lake Town, Dum Dum & Baguiati' => [
             'sectors' => [],
-            'names' => ['lake town', 'bangur avenue', 'kestopur', 'baguiati', 'dum dum incl nagerbazar'],
+            'names' => ['lake town', 'bangur avenue', 'kestopur', 'baguiati', 'dum dum incl nagerbazar', 'birati', 'kaikhali'],
         ],
         'North Kolkata' => [
             'sectors' => [],
-            'names' => ['shyambazar', 'bagbazar', 'sovabazar', 'maniktala', 'belgachia', 'sinthee'],
+            'names' => ['shyambazar', 'bagbazar', 'sovabazar', 'maniktala', 'belgachia', 'sinthee', 'hatibagan', 'ultadanga', 'kankurgachi', 'phoolbagan', 'beliaghata', 'beleghata', 'baranagar'],
         ],
         'Howrah' => [
             'sectors' => [],
-            'names' => ['shibpur', 'salkia', 'santragachi', 'howrah'],
+            'names' => ['shibpur', 'salkia', 'santragachi', 'howrah', 'liluah', 'bally', 'kadamtala'],
         ],
     ],
     // Bhopal (1 Oct 2026), from database/seo-content/areas/bhopal-research.json.
