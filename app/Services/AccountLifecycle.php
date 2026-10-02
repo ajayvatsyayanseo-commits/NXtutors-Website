@@ -133,6 +133,7 @@ class AccountLifecycle
         $email = $user->email ? Str::lower(trim($user->email)) : null;
         $phoneHash = $user->phone_hash;
         $files = array_filter([$user->avatar, $user->frount_image, $user->back_image, $user->degree]);
+        $phone = (string) ($user->phone ?? '');
 
         DB::transaction(function () use ($user, $userId, $email, $phoneHash): void {
             foreach (self::ERASE as $table => $columns) {
@@ -222,6 +223,18 @@ class AccountLifecycle
             }
         }
         Storage::disk('local')->deleteDirectory('tutor-verification/'.$userId);
+
+        // The WhatsApp side (Lead Intake, the onboarding agent) holds the same
+        // person too. Queued here, delivered by the purge job until confirmed;
+        // a failure must never undo or block the erasure above.
+        try {
+            $requestId = app(AgentErasure::class)->queue($userId, [$phone], $files);
+            if ($requestId) {
+                app(AgentErasure::class)->sendPending();
+            }
+        } catch (\Throwable $e) {
+            Log::warning('Agent erasure could not be queued', ['user_id' => $userId, 'error' => class_basename($e)]);
+        }
 
         Log::info('Account erased', ['user_id' => $userId]);
     }
