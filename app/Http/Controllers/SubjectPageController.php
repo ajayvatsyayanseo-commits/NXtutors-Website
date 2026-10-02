@@ -210,6 +210,8 @@ class SubjectPageController extends Controller
             'city' => $unique($city),
             'zones' => $zones,
             'localities' => $localities,
+            // The same page in the other NCR cities (App\Support\LinkNest::ncrSiblings).
+            'ncr' => $citySlug ? $unique(LinkNest::ncrSiblings($key, $page)) : [],
         ];
     }
 

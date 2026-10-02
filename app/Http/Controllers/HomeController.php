@@ -1209,8 +1209,14 @@ private function baseTeacherQuery()
     $hubTutors  = $this->pageTeachers($city->slug, null, 4);
     $hubCounts  = \App\Support\Geo::counts()[$city->slug] ?? ['tutors' => 0, 'areas' => 0, 'pages' => 0];
     $hubState   = \App\Support\Geo::stateOf($city->slug);
-    $hubNearby  = City::where('status', 't')->whereIn('slug', \App\Support\Geo::neighbours($city->slug))->orderBy('city_name')->get(['city_name', 'slug']);
-    $hubOthers  = City::where('status', 't')->where('slug', '!=', $city->slug)->whereNotIn('slug', $hubNearby->pluck('slug'))->orderBy('city_name')->get(['city_name', 'slug']);
+    // NCR city hubs link each other first (App\Support\LinkNest::NCR_GROUP), live hubs only, in group order.
+    $ncrSlugs   = \App\Support\LinkNest::ncrNeighbours($city->slug);
+    $hubNcr     = $ncrSlugs
+        ? City::where('status', 't')->whereIn('slug', $ncrSlugs)->get(['city_name', 'slug'])
+            ->sortBy(fn ($c) => array_search($c->slug, $ncrSlugs, true))->take(\App\Support\LinkNest::NCR_MAX)->values()
+        : collect();
+    $hubNearby  = City::where('status', 't')->whereIn('slug', \App\Support\Geo::neighbours($city->slug))->whereNotIn('slug', $hubNcr->pluck('slug'))->orderBy('city_name')->get(['city_name', 'slug']);
+    $hubOthers  = City::where('status', 't')->where('slug', '!=', $city->slug)->whereNotIn('slug', $hubNearby->pluck('slug')->merge($hubNcr->pluck('slug')))->orderBy('city_name')->get(['city_name', 'slug']);
     $hubGuides  = \App\Support\CityHub::guides($allAreas->pluck('slug')->map(fn ($s) => trim($s, '-'))->all(), 6,
         array_values(array_filter([$city->slug, strtolower((string) \App\Support\Geo::akaOf($city->slug))])));
 
@@ -1218,7 +1224,7 @@ private function baseTeacherQuery()
     $hubZones   = \App\Support\ZonePages::live($city->slug);
 
     return view('city.show', compact('city','areas','allAreas','metatitle','metakey','metadesc',
-        'hubPages','hubTracks','hubTutors','hubCounts','hubState','hubNearby','hubOthers','hubGuides','hubZones'));
+        'hubPages','hubTracks','hubTutors','hubCounts','hubState','hubNcr','hubNearby','hubOthers','hubGuides','hubZones'));
 }
 
 

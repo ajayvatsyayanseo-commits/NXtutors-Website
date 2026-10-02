@@ -335,6 +335,12 @@
         <h2 class="nx-sec__title" id="nearTitle">Home tutors in other cities</h2>
         <a class="nx-sec__action" href="{{ url('/city') }}">All cities by state →</a>
       </div>
+      @if(($hubNcr ?? collect())->count())
+        <h3 class="nx-card__kicker" style="margin:0 0 var(--nxt-s3)">Nearby in NCR</h3>
+        <ul class="nx-chips nx-chips--rail" data-block="ncr-hubs" style="margin-bottom:var(--nxt-s5)">
+          @foreach($hubNcr as $n)<li><a class="nx-chip" href="{{ url('/city/'.$n->slug) }}">Home tutors in {{ $n->slug === 'gurugram' ? 'Gurgaon' : \App\Support\Geo::displayName($n->slug, $n->city_name) }}</a></li>@endforeach
+        </ul>
+      @endif
       @if($hubNearby->count())
         <h3 class="nx-card__kicker" style="margin:0 0 var(--nxt-s3)">Nearby in {{ $hubState }}{{ in_array($city->slug, ['delhi-ncr','gurugram','faridabad']) ? ' and NCR' : '' }}</h3>
         <ul class="nx-chips nx-chips--rail" style="margin-bottom:var(--nxt-s5)">

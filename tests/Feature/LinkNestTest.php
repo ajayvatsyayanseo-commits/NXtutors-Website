@@ -217,8 +217,10 @@ class LinkNestTest extends TestCase
         }
 
         $subject = $this->paths($this->get('/maths-home-tutor-gurgaon')->assertOk()->getContent());
+        // The only other-city links are the same page in the NCR cities ("Nearby in NCR").
+        $ncr = array_map(fn ($l) => parse_url($l['url'], PHP_URL_PATH), LinkNest::ncrSiblings('maths-home-tutor-gurgaon', config('subject_pages.maths-home-tutor-gurgaon')));
         foreach (config('subject_pages') as $k => $p) {
-            if (! empty($p['city_slug']) && $p['city_slug'] !== 'gurugram') {
+            if (! empty($p['city_slug']) && $p['city_slug'] !== 'gurugram' && ! in_array('/' . $k, $ncr, true)) {
                 $this->assertNotContains('/' . $k, $subject, 'off-city link to ' . $k);
             }
         }
@@ -338,5 +340,91 @@ class LinkNestTest extends TestCase
         foreach (array_keys($this->mumbaiAreas) as $slug) {
             $this->assertStringContainsString('href="' . url('/city/mumbai/' . $slug) . '"', $html, $slug);
         }
+    }
+
+    public function test_ncr_siblings_link_the_same_live_page_in_the_other_ncr_cities(): void
+    {
+        $pages = config('subject_pages');
+        $paths = fn (string $k) => array_map(fn ($l) => parse_url($l['url'], PHP_URL_PATH), LinkNest::ncrSiblings($k, $pages[$k]));
+
+        // Gurgaon keys end in -gurgaon while the city slug is gurugram.
+        $noida = $paths('class-10-home-tutor-noida');
+        $this->assertContains('/class-10-home-tutor-delhi', $noida);
+        $this->assertContains('/class-10-home-tutor-gurgaon', $noida);
+        $this->assertContains('/class-10-home-tutor-noida', $paths('class-10-home-tutor-gurgaon'));
+
+        // "-greater-noida" is not read as "-noida"; never the page itself; at most five.
+        $gn = $paths('maths-home-tutor-greater-noida');
+        $this->assertContains('/maths-home-tutor-noida', $gn);
+        $this->assertNotContains('/maths-home-tutor-greater-noida', $gn);
+        $this->assertCount(5, $paths('maths-home-tutor-gurgaon'));
+
+        foreach (array_keys($pages) as $k) {
+            if (LinkNest::ncrCity($pages[$k]['city_slug'] ?? null) === null) {
+                $this->assertSame([], LinkNest::ncrSiblings($k, $pages[$k]), $k);
+                continue;
+            }
+            $links = LinkNest::ncrSiblings($k, $pages[$k]);
+            $this->assertLessThanOrEqual(LinkNest::NCR_MAX, count($links), $k);
+            foreach ($links as $l) {
+                $target = ltrim((string) parse_url($l['url'], PHP_URL_PATH), '/');
+                // Live pages only, in another NCR city.
+                $this->assertArrayHasKey($target, SubjectLinks::live(), $k . ' -> ' . $target);
+                $this->assertNotSame($pages[$k]['city_slug'], $pages[$target]['city_slug']);
+                $this->assertNotNull(LinkNest::ncrCity($pages[$target]['city_slug']));
+            }
+        }
+
+        // State-board pages link only the neighbours on the same board.
+        $this->assertEqualsCanonicalizing(['/up-board-tutor-greater-noida', '/up-board-tutor-ghaziabad'], $paths('up-board-tutor-noida'));
+        // A page type the neighbours do not have gets no links.
+        $this->assertSame([], $paths('mht-cet-tutor-mumbai'));
+        $this->assertSame('gurugram', LinkNest::ncrCity('Gurgaon'));
+        $this->assertNotContains('noida', LinkNest::ncrNeighbours('noida'));
+        $this->assertSame([], LinkNest::ncrNeighbours('mumbai'));
+    }
+
+    public function test_ncr_subject_page_shows_nearby_in_ncr_and_mumbai_does_not(): void
+    {
+        $html = $this->get('/class-10-home-tutor-noida')->assertOk()->getContent();
+        preg_match('#id="nearNcrTitle"(.*?)</section>#s', $html, $m);
+        $block = $m[1] ?? '';
+        $this->assertStringContainsString('Nearby in NCR', $block);
+        $this->assertStringContainsString('class="nx-chip" href="' . url('/class-10-home-tutor-delhi') . '"', $block);
+        $this->assertStringContainsString('class="nx-chip" href="' . url('/class-10-home-tutor-gurgaon') . '">Class 10 Home Tutors in Gurgaon</a>', $block);
+
+        $gurgaon = $this->get('/maths-home-tutor-gurgaon')->assertOk()->getContent();
+        preg_match('#id="nearNcrTitle"(.*?)</section>#s', $gurgaon, $g);
+        $this->assertSame(5, substr_count($g[1] ?? '', '<a '));
+        $this->assertStringContainsString(url('/maths-home-tutor-faridabad'), $g[1] ?? '');
+
+        $this->get('/maths-home-tutor-mumbai')->assertOk()->assertDontSee('Nearby in NCR');
+    }
+
+    public function test_ncr_city_hub_links_the_other_live_ncr_hubs(): void
+    {
+        DB::table('city_managment')->insert([
+            ['id' => 11, 'city_name' => 'Delhi', 'slug' => 'delhi', 'status' => 't'],
+            ['id' => 12, 'city_name' => 'Noida', 'slug' => 'noida', 'status' => 't'],
+            ['id' => 13, 'city_name' => 'Greater Noida', 'slug' => 'greater-noida', 'status' => 't'],
+            ['id' => 14, 'city_name' => 'Ghaziabad', 'slug' => 'ghaziabad', 'status' => 't'],
+            ['id' => 15, 'city_name' => 'Faridabad', 'slug' => 'faridabad', 'status' => 'f'],
+        ]);
+
+        $html = $this->get('/city/noida')->assertOk()->getContent();
+        preg_match('#data-block="ncr-hubs"(.*?)</ul>#s', $html, $m);
+        $block = $m[1] ?? '';
+        $this->assertStringContainsString('href="' . url('/city/gurugram') . '">Home tutors in Gurgaon</a>', $block);
+        foreach (['delhi', 'greater-noida', 'ghaziabad'] as $c) {
+            $this->assertStringContainsString('href="' . url('/city/' . $c) . '"', $block);
+        }
+        $this->assertStringNotContainsString('href="' . url('/city/noida') . '"', $block);
+        // Inactive hubs are not linked.
+        $this->assertStringNotContainsString(url('/city/faridabad'), $block);
+        $this->assertLessThanOrEqual(5, substr_count($block, '<a '));
+        // Each NCR hub once among the city chips (not again under "Across India").
+        $this->assertSame(1, substr_count($html, 'class="nx-chip" href="' . url('/city/delhi') . '"'));
+
+        $this->get('/city/mumbai')->assertOk()->assertDontSee('data-block="ncr-hubs"', false);
     }
 }

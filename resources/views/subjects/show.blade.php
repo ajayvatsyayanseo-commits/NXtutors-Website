@@ -162,6 +162,9 @@
     {{-- The city's zones and a rotating set of its localities (App\Support\LinkNest). --}}
     @include('subjects.partials.nest', ['related' => $related, 'page' => $page])
 
+    {{-- The same page in the neighbouring NCR cities (App\Support\LinkNest::ncrSiblings). --}}
+    @include('subjects.partials.ncr', ['related' => $related])
+
     @include('subjects.content.' . $page['view'], ['page' => $page, 'allAreas' => $allAreas])
 
     @if(count($faqs))

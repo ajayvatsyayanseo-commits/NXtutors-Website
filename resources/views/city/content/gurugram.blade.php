@@ -320,7 +320,8 @@
     form the marking scheme credits. CBSE introduced two board examinations for Class 10 from 2026, the second optional
     for students who want to improve their performance, which changes how some families plan the final months. Our
     {!! $ggP('cbse-home-tutor-gurgaon', 'CBSE home tutors in Gurgaon') !!} page covers Classes 6 to 12, and the
-    {!! $ggB('cbse-class-10-board-year-plan-gurgaon', 'CBSE Class 10 board-year plan for Gurgaon') !!} maps the year month by month.
+    {!! $ggB('cbse-class-10-board-year-plan-gurgaon', 'CBSE Class 10 board-year plan for Gurgaon') !!} maps the year month by month. Families on the Haryana state board (HBSE, Bhiwani) can use the
+    {!! $ggP('haryana-board-tutor-gurgaon', 'Haryana Board (HBSE) tutors in Gurgaon') !!} page for Classes 10 and 12.
   </p>
       </div>
       <div class="nx-guide__card">
@@ -454,7 +455,7 @@
     <li><strong>{!! $ggP('chemistry-home-tutor-gurgaon', 'Chemistry home tutors in Gurgaon') !!}.</strong> Chemistry splits into three parts that need different handling: Physical is numerical, Organic is mechanisms and patterns, and Inorganic is largely NCERT-based recall.</li>
     <li><strong>{!! $ggP('biology-home-tutor-gurgaon', 'Biology tutors in Gurgaon') !!}.</strong> Diagrams, precise terms and line-by-line NCERT reading, for boards and for NEET.</li>
     <li><strong>{!! $ggP('english-home-tutor-gurgaon', 'English home tutors in Gurgaon') !!}.</strong> Most often for ICSE and IB Literature, and for structured writing in the senior classes.</li>
-    <li><strong>{!! $ggP('accountancy-home-tutor-gurgaon', 'Accountancy home tutors in Gurgaon') !!}</strong> and <strong>{!! $ggP('economics-home-tutor-gurgaon', 'Economics tutors in Gurgaon') !!}.</strong> The two commerce subjects families ask about most in Classes 11 and 12.</li>
+    <li><strong>{!! $ggP('accountancy-home-tutor-gurgaon', 'Accountancy home tutors in Gurgaon') !!}</strong> and <strong>{!! $ggP('economics-home-tutor-gurgaon', 'Economics tutors in Gurgaon') !!}.</strong> The two core commerce subjects in Classes 11 and 12; the {!! $ggP('commerce-home-tutor-gurgaon', 'commerce home tutors in Gurgaon') !!} page covers the whole stream.</li>
   </ul>
   </section>
 

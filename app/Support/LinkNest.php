@@ -29,6 +29,86 @@ class LinkNest
     /** Each area should get at least this many links from the city's subject pages. */
     public const LOCALITY_COVER = 2;
 
+    /**
+     * The NCR neighbour group for cross-city links: city page slug => the
+     * suffixes its subject page keys use. Gurugram's city slug is "gurugram"
+     * but its page keys end in "-gurgaon" (what parents type).
+     */
+    public const NCR_GROUP = [
+        'gurugram' => ['gurgaon', 'gurugram'],
+        'delhi' => ['delhi'],
+        'noida' => ['noida'],
+        'greater-noida' => ['greater-noida'],
+        'ghaziabad' => ['ghaziabad'],
+        'faridabad' => ['faridabad'],
+    ];
+
+    public const NCR_MAX = 5;
+
+    /** The NCR group's city slug for a city slug or name ("Gurgaon" -> "gurugram"), or null. */
+    public static function ncrCity(?string $city): ?string
+    {
+        $c = mb_strtolower(trim((string) $city));
+        if ($c === '') {
+            return null;
+        }
+        $slug = isset(self::NCR_GROUP[$c]) ? $c : Geo::slugFor($c);
+
+        return isset(self::NCR_GROUP[$slug]) ? $slug : null;
+    }
+
+    /** The other NCR cities of an NCR city, in group order; [] outside the NCR. */
+    public static function ncrNeighbours(?string $city): array
+    {
+        $me = self::ncrCity($city);
+
+        return $me === null ? [] : array_values(array_filter(array_keys(self::NCR_GROUP), fn ($c) => $c !== $me));
+    }
+
+    /**
+     * "Nearby in NCR" for a city subject / board / class / exam page: the
+     * same page type in the other NCR cities, where that page is live
+     * (class-10-home-tutor-noida <-> class-10-home-tutor-delhi <->
+     * class-10-home-tutor-gurgaon). At most NCR_MAX links; [] outside the NCR.
+     *
+     * @return list<array{url:string, label:string, city:string}>
+     */
+    public static function ncrSiblings(string $key, array $page): array
+    {
+        $me = self::ncrCity($page['city_slug'] ?? null);
+        if ($me === null) {
+            return [];
+        }
+        $stem = null;
+        foreach (self::NCR_GROUP[$me] as $suffix) {
+            if (str_ends_with($key, '-' . $suffix)) {
+                $stem = substr($key, 0, -strlen('-' . $suffix));
+                break;
+            }
+        }
+        if ($stem === null || $stem === '') {
+            return [];
+        }
+
+        $live = SubjectLinks::live();
+        $out = [];
+        foreach (self::ncrNeighbours($me) as $city) {
+            foreach (self::NCR_GROUP[$city] as $suffix) {
+                $k = $stem . '-' . $suffix;
+                $p = $live[$k] ?? null;
+                if ($p && ($p['city_slug'] ?? null) === $city) {
+                    $out[] = ['url' => url('/' . $k), 'label' => SubjectLinks::anchor($p), 'city' => $city];
+                    break;
+                }
+            }
+            if (count($out) >= self::NCR_MAX) {
+                break;
+            }
+        }
+
+        return $out;
+    }
+
     /** City page URL slug for a city ("gurugram"), or null. */
     public static function citySlugOf(array $page): ?string
     {

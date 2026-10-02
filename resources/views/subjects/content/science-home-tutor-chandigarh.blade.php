@@ -176,7 +176,7 @@
     <tbody>
       <tr><td>{!! $cgA('sector-8', 'Sector 8') !!}, Chandigarh</td><td>Older first-phase sector of houses and low-rise blocks</td><td>A doorstep visit with no gate register. Madhya Marg fills in the evening rush, so start before it.</td></tr>
       <tr><td>{!! $cgA('sector-19', 'Sector 19') !!}, Chandigarh</td><td>Houses plus housing-board flats</td><td>Flats have no formal gate check. The Sadar Bazaar market is crowded in the evening, so agree parking.</td></tr>
-      <tr><td>{!! $cgA('sector-40', 'Sector 40') !!}, Chandigarh</td><td>Mid-budget housing-board flats and houses</td><td>On the Mohali side, so tutors from Mohali's phases come easily. Share block and flat number in advance.</td></tr>
+      <tr><td>{!! $cgA('sector-40', 'Sector 40') !!}, Chandigarh</td><td>Housing-board flats and houses</td><td>On the Mohali side, so tutors from Mohali's phases come easily. Share block and flat number in advance.</td></tr>
       <tr><td>{!! $cgA('mohali-phase-5', 'Mohali Phase 5') !!}</td><td>Independent houses of several sizes</td><td>Street parking at the door; tutors from neighbouring phases arrive quickly by scooter.</td></tr>
       <tr><td>{!! $cgA('mohali-sector-70', 'Mohali Sector 70') !!}</td><td>Apartment complexes, houses and builder floors</td><td>Give the tutor's name at the complex gate. Airport Road and the bypass are busy at office hours.</td></tr>
       <tr><td>{!! $cgA('panchkula-sector-15', 'Panchkula Sector 15') !!}</td><td>Mostly independent houses around a full sector market</td><td>The market's tuition centres mean many teachers already work nearby, which helps with home visits.</td></tr>

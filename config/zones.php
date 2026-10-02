@@ -16,10 +16,13 @@
 */
 
 return [
+    // Gurugram names added 2 Oct 2026 for area pages that matched no zone: Sushant Lok Phase 1-3, DLF Independent
+    // Floors (27-28) and Golf Course Extn as in database/seo-content/areas/gurugram-area-rewrite.json / gurugram-dlf-about.json;
+    // DLF New Town Heights (Sectors 86-91, config/area_sectors.php) and "Sectors 80-90" (81-90 are New Gurugram sectors).
     'Gurugram' => [
         'Golf Course Road' => [
             'sectors' => [27, 28, 42, 43, 52, 53, 54],
-            'names' => ['dlf phase', 'golf course road', 'sushant lok 1', 'sushant lok i', 'wazirabad', 'dlf city', 'ardee city'],
+            'names' => ['dlf phase', 'golf course road', 'sushant lok 1', 'sushant lok i', 'wazirabad', 'dlf city', 'ardee city', 'sushant lok phase 1', 'dlf independent floors 27'],
         ],
         'MG Road & Cyber City' => [
             'sectors' => [24, 25, 26, 29],
@@ -27,11 +30,11 @@ return [
         ],
         'Central Gurugram' => [
             'sectors' => [30, 31, 32, 33, 38, 39, 40, 41, 44, 45, 46],
-            'names' => ['huda city centre', 'south city 1','sushant lok 2', 'sushant lok ii', 'sushant lok 3', 'kanhai', 'jharsa'],
+            'names' => ['huda city centre', 'south city 1','sushant lok 2', 'sushant lok ii', 'sushant lok 3', 'kanhai', 'jharsa', 'sushant lok phase 2', 'sushant lok phase 3'],
         ],
         'Golf Course Extension Road' => [
             'sectors' => [55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66],
-            'names' => ['golf course extension', 'gcer', 'huda plots'],
+            'names' => ['golf course extension', 'golf course extn', 'gcer', 'huda plots'],
         ],
         'Sohna Road' => [
             'sectors' => [47, 48, 49, 50, 51, 67, 68, 69, 70, 71, 72],
@@ -43,7 +46,7 @@ return [
         ],
         'New Gurugram' => [
             'sectors' => [81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95],
-            'names' => ['new gurgaon', 'new gurugram', 'manesar'],
+            'names' => ['new gurgaon', 'new gurugram', 'manesar', 'dlf new town heights', 'sectors 80 90'],
         ],
         'Dwarka Expressway' => [
             'sectors' => [34, 35, 36, 37, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115],
