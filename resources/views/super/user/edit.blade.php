@@ -179,6 +179,45 @@
 
                         <a style="float:right;margin-top:-50px" href="{{ route('super.teacher.index') }}" class="btn btn-primary">Back</a>
 
+                        @if(session('success'))<div class="alert alert-success">{{ session('success') }}</div>@endif
+
+                        {{-- ID review (DPDP: the documents are private; they load through an admin-only route). --}}
+                        <div class="border rounded p-3 mb-4" style="background:#f8fafc">
+                            <div class="d-flex justify-content-between align-items-center flex-wrap" style="gap:12px">
+                                <h5 class="mb-0">ID verification
+                                    @if($page->status === 'p')<span class="badge bg-warning text-dark ms-2">Pending review</span>
+                                    @elseif($page->status === 't')<span class="badge bg-success ms-2">Approved</span>@endif
+                                </h5>
+                                @if($page->status === 'p')
+                                    <form method="POST" action="{{ route('super.teacher.approve', $page->id) }}"
+                                          onsubmit="return confirm('Approve {{ addslashes($page->name) }}? The profile becomes public and Verified.')">
+                                        @csrf
+                                        <button class="btn btn-success">Approve and publish</button>
+                                    </form>
+                                @endif
+                            </div>
+                            <div class="mt-2 text-muted">
+                                Document: <strong>{{ $page->document_type ?: 'not given' }}</strong>
+                                @if($page->document_number) · Number: <strong>{{ $page->document_number }}</strong>@endif
+                            </div>
+                            <div class="d-flex flex-wrap mt-3" style="gap:16px">
+                                @foreach(['front' => $page->frount_image, 'back' => $page->back_image] as $side => $stored)
+                                    <div>
+                                        <div class="small text-muted mb-1">{{ ucfirst($side) }}</div>
+                                        @if($stored)
+                                            <a href="{{ route('super.teacher.document', [$page->id, $side]) }}" target="_blank" rel="noopener">
+                                                <img src="{{ route('super.teacher.document', [$page->id, $side]) }}" alt="ID {{ $side }}"
+                                                     style="max-width:320px;max-height:220px;border:1px solid #ddd;border-radius:6px"
+                                                     onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'Could not load this file',className:'text-danger small'}))">
+                                            </a>
+                                        @else
+                                            <span class="small text-muted">Not sent</span>
+                                        @endif
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+
                         <form method="POST" action="{{ route('super.teacher.update',$page->id) }}" enctype="multipart/form-data">
                             @csrf
                             @method('PUT')
@@ -688,7 +727,7 @@ $(document).on('change', '.pid', function () {
 
 </script>
 <script>
-    document.getElementById('avatar').addEventListener('change', function(event) {
+    document.getElementById('avatar')?.addEventListener('change', function(event) {
         const [file] = event.target.files;
         if (file) {
             document.getElementById('blah').src = URL.createObjectURL(file);
@@ -697,7 +736,7 @@ $(document).on('change', '.pid', function () {
 </script>
 
 <script>
-    document.getElementById('degree').addEventListener('change', function(event) {
+    document.getElementById('degree')?.addEventListener('change', function(event) {
         const [file] = event.target.files;
         const img = document.getElementById('blah1');
         if (file) {
@@ -707,7 +746,7 @@ $(document).on('change', '.pid', function () {
     });
 </script>
 <script>
-    document.getElementById('frount_image').addEventListener('change', function(event) {
+    document.getElementById('frount_image')?.addEventListener('change', function(event) {
         const [file] = event.target.files;
         const img = document.getElementById('blah2');
         if (file) {
@@ -717,7 +756,7 @@ $(document).on('change', '.pid', function () {
     });
 </script>
 <script>
-    document.getElementById('back_image').addEventListener('change', function(event) {
+    document.getElementById('back_image')?.addEventListener('change', function(event) {
         const [file] = event.target.files;
         const img = document.getElementById('blah3');
         if (file) {
