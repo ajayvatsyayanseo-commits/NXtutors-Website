@@ -7,6 +7,7 @@ use App\Support\AreaDemand;
 use App\Support\CityHub;
 use App\Support\Geo;
 use App\Support\JobsContent;
+use App\Support\JobsPage;
 use App\Support\SubjectLinks;
 use App\Support\TutorCascade;
 use App\Support\ZonePages;
@@ -43,8 +44,11 @@ class TuitionJobsController extends Controller
         $states = $this->states();
         $online = TutorCascade::realOnlineTutors();
         $topics = $this->topicLinks();
+        $hub = JobsContent::hub();
+        $jobs = self::skeleton($hub, [], false, null) + ['intro' => $hub['intro'] ?? []];
 
-        $faqs = [
+        $faqs = $hub['faqs'] ?? [];
+        $faqs = $faqs !== [] ? $faqs : [
             ['How do I find home tuition or online tutor jobs in India on NXTutors?', 'Apply on WhatsApp with your subjects, classes, city and the areas you can travel to; our team sets up your tutor account with you. After our team checks your identity document, you appear on the matching city, area and subject pages and in the two or three tutors we shortlist for each family request.'],
             ['Can I teach online from any city?', 'Yes. Choose online or both on your profile. Online requests can come from families anywhere in India; home requests come only from the areas you list, so you are never sent across a city you cannot reach.'],
             ['Can I teach only Classes 1 to 5, or only part time?', 'Yes. Your profile lists the classes, subjects and boards you teach and the hours you are free, and requests are matched on those, so you can keep to primary classes or a few evenings a week.'],
@@ -59,7 +63,7 @@ class TuitionJobsController extends Controller
         $metarobots = null;
         $level = 'india';
 
-        return view('pages.tuition-jobs', compact('level', 'states', 'online', 'topics', 'faqs', 'metatitle', 'metadesc', 'canonical', 'metarobots'));
+        return view('pages.tuition-jobs', compact('level', 'states', 'online', 'topics', 'jobs', 'faqs', 'metatitle', 'metadesc', 'canonical', 'metarobots'));
     }
 
     public function state(string $state)
@@ -88,8 +92,16 @@ class TuitionJobsController extends Controller
         $canonical = url('/tuition-jobs/state/' . $state);
         $metarobots = $group['indexable'] ? null : 'noindex, follow';
         $level = 'state';
+        $citySlugs = $group['cities']->pluck('slug')->all();
+        $jobs = self::skeleton($content, $citySlugs, false, $label);
+        if ($jobs['boards'] === [] && ! empty($content['board'])) {
+            // No v2 board cards yet: the state board box becomes the one card.
+            $b = $content['board'];
+            $jobs['boards'] = JobsPage::boardCards([['key' => 'state', 'name' => $b['name'], 'site' => $b['site'], 'classes' => '', 'note' => $b['summary']]], $citySlugs);
+        }
+        $topics = $this->topicLinks();
 
-        return view('pages.tuition-jobs', compact('level', 'group', 'label', 'content', 'faqs', 'metatitle', 'metadesc', 'canonical', 'metarobots'));
+        return view('pages.tuition-jobs', compact('level', 'group', 'label', 'content', 'jobs', 'topics', 'faqs', 'metatitle', 'metadesc', 'canonical', 'metarobots'));
     }
 
     public function show(string $city)
@@ -157,8 +169,12 @@ class TuitionJobsController extends Controller
         // Nothing real behind the page yet: keep it for recruitment links, out of the index.
         $metarobots = self::cityIndexable($city) ? null : 'noindex, follow';
         $level = 'city';
+        $jobs = self::skeleton($content, [$city], false, $label);
+        $topics = $this->topicLinks();
+        // Subject and exam pages of the city, for the related links.
+        $cityLinks = array_intersect_key(SubjectLinks::forCityGrouped($city), array_flip(['subject', 'exam']));
 
-        return view('pages.tuition-jobs', compact('level', 'cityRow', 'cityName', 'label', 'zones', 'areas', 'requests', 'realHere', 'stateName', 'stateSlug', 'content', 'boardLinks', 'faqs', 'metatitle', 'metadesc', 'canonical', 'metarobots'));
+        return view('pages.tuition-jobs', compact('level', 'cityRow', 'cityName', 'label', 'zones', 'areas', 'requests', 'realHere', 'stateName', 'stateSlug', 'content', 'boardLinks', 'jobs', 'topics', 'cityLinks', 'faqs', 'metatitle', 'metadesc', 'canonical', 'metarobots'));
     }
 
     /** National topic page (/maths-tutor-jobs, /online-tutor-jobs, …): 404 until its text is written. */
@@ -181,8 +197,26 @@ class TuitionJobsController extends Controller
         $canonical = url('/' . $topic);
         $metarobots = null;
         $level = 'topic';
+        $jobs = self::skeleton($content, [], in_array($topic, JobsContent::PINK_TOPICS, true), null);
 
-        return view('pages.tuition-jobs', compact('level', 'topic', 'label', 'content', 'topicCities', 'parentLink', 'topics', 'faqs', 'metatitle', 'metadesc', 'canonical', 'metarobots'));
+        return view('pages.tuition-jobs', compact('level', 'topic', 'label', 'content', 'jobs', 'topicCities', 'parentLink', 'topics', 'faqs', 'metatitle', 'metadesc', 'canonical', 'metarobots'));
+    }
+
+    /**
+     * The shared components' data (App\Support\JobsPage): storyboard panels
+     * (null when switched off in config jobs_pages.storyboard), women-tutor
+     * section, why-cards and board cards, from the page's JSON or the defaults.
+     */
+    public static function skeleton(?array $src, array $citySlugs, bool $pink, ?string $place): array
+    {
+        return [
+            'story' => config('jobs_pages.storyboard', true) ? JobsPage::story($src['story'] ?? []) : null,
+            'women' => JobsPage::women($src['women'] ?? null),
+            'why' => JobsPage::why($src['why'] ?? []),
+            'boards' => JobsPage::boardCards($src['board_cards'] ?? [], $citySlugs),
+            'pink' => $pink,
+            'place' => $place,
+        ];
     }
 
     /** Zones, a real tutor, or three or more recent requests. Also used by the sitemap. */

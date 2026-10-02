@@ -1,9 +1,9 @@
 {
   "title": "Online Tutor Jobs in India: Teach From Anywhere | NXTutors",
-  "description": "Online tutor jobs with NXTutors: how online requests are matched on subject, board, class and hours, what families expect, setting up lessons and your fee.",
+  "description": "Online tutor jobs with NXTutors: how online requests are matched on subject, board and class, what families expect, setting up lessons and your fee.",
   "h1": "Online tutor jobs: teaching school students across India with NXTutors",
   "intro": [
-    "Online tutoring through NXTutors lets you teach families anywhere in India from wherever you live. A parent sends a request with the class, board, subject and the hours that suit, says they want online lessons, and we shortlist two or three tutors whose profiles match. For online work, your city does not decide whether you are matched; your subjects, boards, classes and free hours do. This page explains which students online suits, what families expect in an online lesson, how the tool for each class is agreed, how requests are routed, and how to set up your profile.",
+    "Online tutoring through NXTutors lets you teach families anywhere in India from wherever you live. A parent sends a request with the class, board and subject that suit, says they want online lessons, and we shortlist two or three tutors whose subject, board and class fit. For online work, your city does not decide whether you are matched; your subjects, boards and classes do. This page explains which students online suits, what families expect in an online lesson, how the tool for each class is agreed, how requests are routed, and how to set up your profile.",
     "You choose online only or home and online together, your hours and your fee for each class, and families see the fee before the demo. We do not promise a number of students; what reaches you depends on what you teach, when you are free and which families ask."
   ],
   "sections": [
@@ -31,7 +31,7 @@
     {
       "h2": "How online requests are matched",
       "paras": [
-        "Online requests are matched on subject, board, class and your available hours, never on where you live. For home requests, the shortlist starts with the nearest tutors and widens to the zone and the city; online tutors come next when no suitable tutor is close, and families who ask for online lessons are matched with online tutors. Each request goes to two or three tutors, not to everyone.",
+        "Online requests are matched on subject, board and class, never on where you live. For home requests, the shortlist starts with the nearest tutors and widens to the zone and the city; online tutors come next when no suitable tutor is close, and families who ask for online lessons are matched with online tutors. Each request goes to two or three tutors, not to everyone.",
         "Your fee per class is on your profile, and parents see it before the demo. Online removes your travel, which can affect what you charge, but class, board, subject, experience and frequency usually matter more than format. Across NXTutors, most home-tuition sessions fall between ₹800 and ₹2,500 an hour; Classes 11–12, IB/IGCSE and JEE/NEET sit toward the upper end; specialists for IB HL or JEE Advanced can charge more."
       ]
     },
@@ -39,7 +39,8 @@
       "h2": "Hybrid teaching with the same families",
       "paras": [
         "If you live within reach of some families, choose both on your profile. Hybrid patterns that work include one home class for new topics and handwritten practice with one or two online sessions for doubts and tests; home during term with short online sessions before each exam paper; and online on weekdays with a home class at the weekend for senior students who attend coaching.",
-        "Continuity matters more than format, so families value one tutor across both. Make your profile show the areas you can visit as well as your online hours, and agree with each family in advance which sessions happen where.", "Online tutoring also means your week can mix families from several cities. Keep a simple record for each student of the board, the chapters covered, test marks and the next topic, and share a short progress note with the parent every few weeks. Families who cannot see you arrive at the door rely on that note to know the lessons are working, and it makes any change of plan easier to discuss."
+        "Continuity matters more than format, so families value one tutor across both. Make your profile show the areas you can visit as well as your online hours, and agree with each family in advance which sessions happen where.",
+        "Online tutoring also means your week can mix families from several cities. Keep a simple record for each student of the board, the chapters covered, test marks and the next topic, and share a short progress note with the parent every few weeks. Families who cannot see you arrive at the door rely on that note to know the lessons are working, and it makes any change of plan easier to discuss."
       ]
     },
     {
@@ -51,11 +52,49 @@
     }
   ],
   "faqs": [
-    ["Can I take online tutor jobs from a small town?", "Yes. Online requests are matched on subject, board, class and your hours, not your location, so a tutor in a small town can teach families in any city. You need a reliable connection, a backup, and a way for the student's written work to be seen."],
-    ["Does NXTutors provide a video classroom?", "No. NXTutors matches tutors and families; it does not host lessons. You and the family agree the video-call and whiteboard tools before the demo, and class links go to a number or group the parent can see. That keeps the arrangement clear for both sides and lets you use the tools you already teach well with, as long as the family is comfortable with them."],
-    ["Which subjects suit online teaching?", "Senior and specialist subjects suit it well: IB, IGCSE, ISC, JEE and NEET work, economics with diagrams on a whiteboard, and English writing marked on shared documents. Young children in Classes 1 to 5 usually learn better at home, so be honest with those families."],
-    ["Who sets the fee for online classes?", "You do. Put your fee per class on your profile; parents see it before the free demo. Online saves you travel, which you may reflect in your fee, but the decision is yours. Keep your profile fee up to date, because it is what families compare when they choose between the two or three shortlisted tutors."],
-    ["Do online tutors also go through the ID check?", "Yes. Every tutor who joins confirms phone or email with a one-time code and uploads a government photo ID that our team reviews before the profile goes live. Passing adds a Verified badge to your profile; it confirms identity and is not a police or background check. See How we verify tutors for the full steps, including what the badge does not cover."],
-    ["Where are the tutor plans listed?", "On the pricing page, together with what each plan includes. Compare them before you sign up and choose one that fits the online hours you want to teach. The plan is separate from your fee to families, which you set yourself and which parents see before the demo."]
-  ]
+    [
+      "Can I take online tutor jobs from a small town?",
+      "Yes. Online requests are matched on subject, board and class, not your location, so a tutor in a small town can teach families in any city. You need a reliable connection, a backup, and a way for the student's written work to be seen."
+    ],
+    [
+      "Does NXTutors provide a video classroom?",
+      "No. NXTutors matches tutors and families; it does not host lessons. You and the family agree the video-call and whiteboard tools before the demo, and class links go to a number or group the parent can see. That keeps the arrangement clear for both sides and lets you use the tools you already teach well with, as long as the family is comfortable with them."
+    ],
+    [
+      "Which subjects suit online teaching?",
+      "Senior and specialist subjects suit it well: IB, IGCSE, ISC, JEE and NEET work, economics with diagrams on a whiteboard, and English writing marked on shared documents. Young children in Classes 1 to 5 usually learn better at home, so be honest with those families."
+    ],
+    [
+      "Who sets the fee for online classes?",
+      "You do. Put your fee per class on your profile; parents see it before the free demo. Online saves you travel, which you may reflect in your fee, but the decision is yours. Keep your profile fee up to date, because it is what families compare when they choose between the two or three shortlisted tutors."
+    ],
+    [
+      "Do online tutors also go through the ID check?",
+      "Yes. Every tutor who joins confirms phone or email with a one-time code and uploads a government photo ID that our team reviews before the profile goes live. Passing adds a Verified badge to your profile; it confirms identity and is not a police or background check. See How we verify tutors for the full steps, including what the badge does not cover."
+    ],
+    [
+      "Where are the tutor plans listed?",
+      "On the pricing page, together with what each plan includes. Compare them before you sign up and choose one that fits the online hours you want to teach. The plan is separate from your fee to families, which you set yourself and which parents see before the demo."
+    ]
+  ],
+  "story": [
+    "Sign up from anywhere in India with a one-time code, set your mode to online, and list the courses you teach and the hours you keep free each week.",
+    "Upload a government photo ID from the dashboard. Our team reviews it before your profile goes live; one ID number can be linked to one tutor account only.",
+    "With the Verified badge in place, your profile shows families in any city your courses, boards, setup, such as a writing tablet or document camera, and your fee.",
+    "A family asks for online lessons in your subject. Online requests are matched on subject, class and board, so you can be shortlisted wherever you live.",
+    "Agree the call and whiteboard tool with the parent before the demo, which is free for them. Send the link to the parent's number and teach a real lesson.",
+    "Teach online on the days agreed, keep the camera on and the parent able to check in, and add home lessons later if you also want local students."
+  ],
+  "women": {
+    "intro": "Teaching from home on your own schedule is fully possible on NXTutors: online is a complete choice, not a fallback. A woman tutor can set her profile to online only, keep hours that fit around her day and be matched with families in any city whose subject and board fit. If you later want home lessons, you choose the localities. Every tutor who joins goes through an ID check before the profile goes live, real tutors who pass carry the Verified badge, and each demo is held with a parent able to watch.",
+    "points": [
+      "Online only is a complete setting; no home visits are needed.",
+      "Choose your hours, including early mornings or late evenings.",
+      "Families anywhere in India can be matched with you.",
+      "Send the class link to the parent's number or a family group, never the child's private chat.",
+      "Keep the camera on and teach in a way the parent can observe.",
+      "Do not record classes without the parent's written consent.",
+      "Stop any arrangement that worries you and tell us through WhatsApp or the contact page."
+    ]
+  }
 }

@@ -5,13 +5,73 @@
     "Home and online lessons both have a place. A request from Hatigaon goes first to tutors in Hatigaon, then the rest of the GS Road and Dispur zone, then the city, then online, and the family is shown two or three tutors with fees before a free first demo; switching later costs them nothing. On the north bank, homes are spread out and tutors from the same side matter most. Bohag Bihu, Durga Puja and market days are sensible times to move a week's lesson online, and online tutors from across India can cover ICSE literature or specialist papers."
   ],
   "zone_notes": {
-    "Old City & Riverfront": "Guwahati railway station and the state bus terminal are in Paltan Bazaar, so tutors from across the city can arrive by train or bus, which makes this the easiest zone to reach. Many homes sit above or behind shop frontages, so a lane landmark and floor number matter, and the market streets are crowded through the working day.",
-    "Chandmari & Zoo Road": "Evening coaching batches fill the roads and students' calendars here, so a fixed weekday slot that does not clash with coaching is what keeps lessons regular. Lanes in Lachit Nagar and Chandmari are narrow for parking, and apartment buildings on Zoo Road often keep a visitor register.",
-    "GS Road & Dispur": "Buses from every direction pass through Ganeshguri, widening the pool of tutors who can reach this zone, and most families live in apartment buildings with two- and three-bedroom flats. Government office hours around the capital complex and the evening rush on GS Road are the two windows to avoid.",
-    "Beltola & Khanapara": "Most tutors arrive by city bus or auto along GS Road or the highway, with Narangi station an option for the Six Mile side. Large complexes in Basistha and Khanapara need the tower, flat and gate in advance, and lessons near Beltola Bazar are easier away from its twice-weekly market days.",
-    "Maligaon, Jalukbari & North Guwahati": "Kamakhya Junction in Maligaon and the bus depot at Adabari are the arrival points on the south bank, where apartment gates are common. North Guwahati, across the river and still being absorbed into the city, has spread-out houses and plots, so tutors who already live on the north bank are the practical choice."
+    "Old City & Riverfront": "Guwahati railway station and the state bus terminal are in Paltan Bazaar, so tutors from across the city can arrive by train or bus, which makes this the easiest zone to reach. Many homes sit above or behind shop frontages, so a lane landmark and floor number matter, and the market streets are crowded through the working day. Early morning, later evening or weekend slots avoid the busiest hours, and families here may want a specialist from across the city.",
+    "Chandmari & Zoo Road": "Evening coaching batches fill the roads and students' calendars here, so a fixed weekday slot that does not clash with coaching is what keeps lessons regular. Lanes in Lachit Nagar and Chandmari are narrow for parking, and apartment buildings on Zoo Road often keep a visitor register. Ask where to park in the narrower lanes, and give Zoo Road guards your name before the demo.",
+    "GS Road & Dispur": "Buses from every direction pass through Ganeshguri, widening the pool of tutors who can reach this zone, and most families live in apartment buildings with two- and three-bedroom flats. Government office hours around the capital complex and the evening rush on GS Road are the two windows to avoid. Ask for the building name, flat number and a guard's phone number, and note whether the home is a short walk off GS Road.",
+    "Beltola & Khanapara": "Most tutors arrive by city bus or auto along GS Road or the highway, with Narangi station an option for the Six Mile side. Large complexes in Basistha and Khanapara need the tower, flat and gate in advance, and lessons near Beltola Bazar are easier away from its twice-weekly market days. A specialist living far to the north can pair online classes with a nearby tutor's visits.",
+    "Maligaon, Jalukbari & North Guwahati": "Kamakhya Junction in Maligaon and the bus depot at Adabari are the arrival points on the south bank, where apartment gates are common. North Guwahati, across the river and still being absorbed into the city, has spread-out houses and plots, so tutors who already live on the north bank are the practical choice. On the south bank, agree whether Kamakhya Junction or a bus to Adabari Tiniali is easier, and switch to online during Durga Puja in Maligaon."
   },
   "boards": "Guwahati tutors teach Assam state board students, CBSE students and ICSE and ISC candidates. For state board work, take the syllabus, timetable and paper pattern only from the board's official notices, keeping in mind that the older SEBA and AHSEC names have been merged into a single state school education board. CBSE sample papers and marking schemes are on the CBSE academic site, and ICSE and ISC regulations on the CISCE site. State your medium of instruction on your profile, since it matters to state board families.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Assam State School Education Board (ASSEB)",
+      "site": "https://asseb.in/",
+      "classes": "Class 10; Higher Secondary (Classes 11–12)",
+      "note": "Assam's Class 10 examination was long run by SEBA and the higher secondary course by AHSEC; the state has since brought both under a single school education board, so notices may carry the new name. Work from the prescribed textbooks, teach in the school's medium of instruction, and take patterns only from official notices."
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "CBSE students in Guwahati range from Zoo Road apartments to GS Road flats, and some combine the board with engineering or medical entrance preparation, often alongside a coaching batch. Build from NCERT and the sample papers and marking schemes on cbseacademic.nic.in, and keep your slot clear of the student's coaching timetable.",
+      "page": "/cbse-home-tutor-guwahati"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "CISCE conducts the ICSE after Class 10 and the ISC after Class 12. Both reward complete written answers across a broad syllabus, and English literature texts are prescribed, so steady chapter-by-chapter revision matters. Online lessons can also bring ICSE literature specialists to Guwahati students; regulations are on cisce.org.",
+      "page": "/icse-home-tutor-guwahati"
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "Families following the IB Diploma in Guwahati usually find their specialist online, since those tutors are spread across India. If you teach Maths AA or AI, Physics or Chemistry at SL or HL, offering online classes is how you reach them; guide internal assessment without writing it, and use the ibo.org guides."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "Cambridge IGCSE students in Guwahati, like IB ones, usually work with an online specialist from elsewhere in India. A tutor who can teach command words, tier choice and past papers marked against the official scheme can serve them from anywhere. Syllabuses are on cambridgeinternational.org, with Pearson's site for Edexcel."
+    }
+  ],
+  "women": {
+    "intro": "Women tutors are welcome on NXTutors in Guwahati for home, online or hybrid teaching. You set the zones and hours: a tutor near Ganeshguri might take requests along GS Road and in Dispur, while one on the north bank keeps to North Guwahati and teaches south-bank students online. Every tutor who joins goes through the same ID check, families meet you at a free demo where we ask a parent to be present, and the safeguarding policy sets rules for tutors and parents. These are the platform's real controls, not a promise about how anyone behaves.",
+    "points": [
+      "Choose home, online or hybrid on your profile, and change it any time.",
+      "Add only the zones you are comfortable reaching; you can keep to one bank of the river or to routes along GS Road.",
+      "List your free hours so families can see them, and keep them clear of evening coaching times.",
+      "Meet each new family at the free demo, where we ask a parent to be at home.",
+      "In Zoo Road apartments and the large Basistha and Khanapara complexes, ask the family to put your name in the visitor register.",
+      "Arrange fees, timings and any messages through a parent, not the student.",
+      "Teach young children in a shared room with an adult present; online, keep cameras on.",
+      "If anything worries you, stop the classes and tell NXTutors, marked Safeguarding; in an emergency, call 112 first."
+    ]
+  },
+  "story": [
+    "Register with a one-time code to your phone or email, then add your subjects, classes, boards and medium, and the parts of Guwahati you can reach, south bank or north.",
+    "Upload a government photo ID. NXTutors reviews it before anything is published, and an ID number can belong to one tutor account only. The check confirms identity, not police records.",
+    "Once reviewed, your profile is live with the Verified badge, showing your boards, the zones you travel to, the hours you keep free and the fee you have set.",
+    "A family in Beltola or Chandmari asks for a tutor. We shortlist two or three: tutors living there first, then those who travel there, then the zone, the city and online.",
+    "The family sees your fee before booking. Lesson one is a free demo at their home where we ask a parent to be present, so you can judge the fit and the route.",
+    "Teach at homes in your zones, online for students across Assam and India, or both, for example a weekend visit and online classes around a coaching timetable."
+  ],
   "faqs": [
     [
       "How do Guwahati families' requests reach tutors?",
@@ -32,6 +92,18 @@
     [
       "Where can I read about tutor plans?",
       "The plans for tutors, and what each includes, are on /pricing. Lesson fees are separate: you decide your own, families see it before the free first demo, and a family that later prefers another tutor can switch at no cost. Read the plan details there before you sign up, so you know what you are choosing."
+    ],
+    [
+      "Can a woman tutor in Guwahati stay on one bank of the river?",
+      "Yes. You choose the zones you travel to, and home requests come from those zones, while the hours you keep free show families when you can teach, so a tutor in North Guwahati can take home lessons there and teach south-bank students online. Each new family meets you first at a free demo where we ask a parent to be at home."
+    ],
+    [
+      "Which boards do Guwahati families ask about?",
+      "The Assam state board, now a single school education board in place of SEBA and AHSEC, plus CBSE and CISCE's ICSE and ISC. IB and Cambridge IGCSE families usually look for an online specialist. List your boards, classes and medium of instruction on your profile."
+    ],
+    [
+      "Can I teach a Guwahati family partly at home and partly online?",
+      "Yes. Choose both modes and agree the split after the demo. Around Chandmari and Zoo Road, where evening coaching batches fill students' calendars, a weekend home lesson plus a short online class on a free weekday can be easier to keep than two visits."
     ]
   ]
 }

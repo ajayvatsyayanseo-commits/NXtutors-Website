@@ -26,6 +26,9 @@
                 rating, experience, fee or Compare; a "Sample profile" label,
                 and the 10-minute match as its action.
     $placeLabel optional search line ("In Sector 56", "In Haryana").
+    $gender     optional; defaults to $t->gender. A real, verified tutor who
+                is female gets the pink seal "Verified · Woman tutor"
+                (App\Support\TutorBadge); samples never do.
     $subjects, $boards, $expYears, $feeLabel
                 optional, for callers that already have them (search cards).
 
@@ -45,6 +48,8 @@
   }
   $place = implode(', ', $parts);
   $isSample = (bool) ($sample ?? ($t->is_sample ?? false));
+  $tcVerified = \App\Support\TutorBadge::verified($t, $isSample);
+  $tcWoman = \App\Support\TutorBadge::woman($t, $isSample, $gender ?? null);
 
   // What they teach, their boards, experience and fee: from the caller when it
   // has them, else from the tutor record (PublicTutorFieldMapper, the one place
@@ -101,10 +106,12 @@
     @if($isSample)
       <span class="badge-sample">Sample profile</span>
     @else
-      <span class="badge-verified">
+      @if($tcVerified)
+      <span class="badge-verified{{ $tcWoman ? ' badge-verified--woman' : '' }}">
         <svg width="11" height="11" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M6.5 11.3 3.4 8.2l1.1-1.1 2 2 4.9-4.9 1.1 1.1z"/></svg>
-        Verified
+        {{ $tcWoman ? 'Verified · Woman tutor' : 'Verified' }}
       </span>
+      @endif
 
       {{-- A score only when parents have given one; no "New" placeholder. --}}
       @if((int) $reviews > 0)

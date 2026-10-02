@@ -1,0 +1,184 @@
+/* ==========================================================================
+   NX JOBS: the tutor-side pages (/tuition-jobs, its state and city pages,
+   the flat *-tutor-jobs topics and /become-a-tutor). Loaded only there
+   (header.blade.php, $nxtJobsCss). Components in pages/jobs/partials.
+
+   Built on nxt-ds.css tokens and the nx-roles.css colour roles: marigold =
+   the action, sky = links, green = WhatsApp, pink = women tutors only.
+   Glass = translucent card + backdrop blur, with a solid fallback when
+   backdrop-filter is missing. Motion only via the small tilt script, off
+   for reduced motion and touch. Art boxes have fixed aspect ratios (no CLS).
+   ========================================================================== */
+
+body.page .nxj{--nxj-glass:rgba(16,26,46,.92);--nxj-glass-line:rgba(255,255,255,.14);--nxj-r:22px}
+
+/* ---- buttons ----------------------------------------------------------- */
+body.page .nxj-ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+body.page .nxj-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 20px;border-radius:999px;border:1px solid transparent;font-weight:800;font-size:.9375rem;line-height:1.2;text-decoration:none;transition:transform var(--nxt-fast) var(--nxt-ease),background var(--nxt-fast)}
+body.page .nxj-btn:hover{transform:translateY(-1px)}
+body.page .nxj-btn--act{background:var(--nxt-action);border-color:var(--nxt-action);color:var(--nxt-on-action)}
+body.page .nxj-btn--act:hover{background:#FFB940;color:var(--nxt-on-action)}
+body.page .nxj-btn--wa{background:var(--nxt-whatsapp);border-color:var(--nxt-whatsapp);color:#06301a}
+body.page .nxj-btn--wa:hover{background:#3BE07A;color:#06301a}
+body.page .nxj-btn--ghost{background:rgba(255,255,255,.04);border-color:var(--nxt-line-strong);color:var(--nxt-text)}
+body.page .nxj-btn--ghost:hover{background:var(--nxt-surface-3);color:var(--nxt-text)}
+body.page .nxj-btn--pink{background:var(--nx-pink-fill);border-color:var(--nx-pink-fill);color:#fff}
+body.page .nxj-btn--pink:hover{background:#D61F6E;color:#fff}
+
+/* ---- focus: one visible ring everywhere -------------------------------- */
+body.page .nxj a:focus-visible,body.page .nxj-btn:focus-visible,body.page .nxj summary:focus-visible,
+body.page .nxj-story__scroller:focus-visible,body.page .nxj-applybar a:focus-visible{outline:3px solid var(--nxt-focus);outline-offset:3px;border-radius:10px}
+
+/* ---- glass hero -------------------------------------------------------- */
+body.page .nxj-hero{position:relative;isolation:isolate;display:grid;gap:20px;grid-template-columns:minmax(0,1fr);padding:16px;margin-top:8px;border-radius:var(--nxj-r);overflow:hidden;border:1px solid var(--nxt-line)}
+body.page .nxj-hero__mesh{position:absolute;inset:0;z-index:-1;background:
+  radial-gradient(42% 60% at 10% 12%,rgba(76,154,255,.34),transparent 70%),
+  radial-gradient(40% 55% at 92% 8%,rgba(56,189,248,.22),transparent 70%),
+  radial-gradient(48% 60% at 78% 100%,rgba(245,165,36,.16),transparent 70%),
+  radial-gradient(40% 50% at 22% 100%,rgba(52,199,123,.10),transparent 70%),
+  linear-gradient(160deg,#0F1B33 0%,#0A1222 100%)}
+body.page .nxj--pink .nxj-hero__mesh{background:
+  radial-gradient(42% 60% at 10% 12%,rgba(244,114,182,.30),transparent 70%),
+  radial-gradient(40% 55% at 92% 8%,rgba(76,154,255,.24),transparent 70%),
+  radial-gradient(48% 60% at 78% 100%,rgba(244,114,182,.18),transparent 70%),
+  linear-gradient(160deg,#1B1430 0%,#0A1222 100%)}
+body.page .nxj-hero__card{position:relative;padding:20px 18px;border-radius:18px;background:var(--nxj-glass);border:1px solid var(--nxj-glass-line);box-shadow:var(--nxt-e3)}
+@supports ((-webkit-backdrop-filter:blur(2px)) or (backdrop-filter:blur(2px))){
+  body.page .nxj-hero__card{background:rgba(16,26,46,.58);-webkit-backdrop-filter:blur(18px) saturate(140%);backdrop-filter:blur(18px) saturate(140%)}
+}
+body.page .nxj-hero__promise{display:inline-flex;flex-wrap:wrap;gap:6px;margin:0 0 10px;padding:5px 12px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid var(--nxt-line-strong);color:var(--nxt-text);font-size:.8125rem;font-weight:700;letter-spacing:.01em}
+body.page .nxj-hero__where{color:var(--nxt-text-dim);font-weight:600}
+body.page .nxj-hero__title{font-family:var(--nxt-font-display);font-size:var(--nxt-t-h1);line-height:var(--nxt-lh-tight);font-weight:800;letter-spacing:-.015em;margin:0 0 12px;color:var(--nxt-text)}
+body.page .nxj-hero__lede{margin:0;max-width:62ch;color:#C9D3E3;font-size:1.0625rem;line-height:var(--nxt-lh-body)}
+body.page .nxj-hero__lede a,body.page .nxj-hero__meta a{color:var(--nxt-link);text-decoration:underline;text-underline-offset:3px}
+body.page .nxj-hero__meta{margin:14px 0 0;color:var(--nxt-text-dim);font-size:.875rem}
+body.page .nxj-modes{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0;padding:0}
+body.page .nxj-modes li{padding:6px 13px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid var(--nxt-line-strong);color:var(--nxt-text);font-size:.8125rem;font-weight:700}
+body.page .nxj-modes .nxj-modes__pink{padding:0;border-color:var(--nx-pink-line);background:var(--nx-pink-soft)}
+body.page .nxj-modes__pink a{display:block;padding:6px 13px;border-radius:999px;color:var(--nx-pink);text-decoration:none}
+body.page .nxj-modes__pink a:hover{text-decoration:underline}
+/* depth: the art floats in front of a tilted glass plate */
+body.page .nxj-hero__stage{perspective:900px;display:flex;align-items:center;justify-content:center}
+body.page .nxj-hero__art{--rx:0deg;--ry:0deg;--py:0px;position:relative;width:100%;max-width:440px;aspect-ratio:4/3;color:var(--nxt-text);transform-style:preserve-3d;transform:translateY(var(--py)) rotateX(var(--rx)) rotateY(var(--ry));transition:transform .5s var(--nxt-ease)}
+body.page .nxj-hero__art.is-live{transition:transform .12s linear}
+body.page .nxj-hero__plate{position:absolute;inset:8% 6%;border-radius:26px;background:linear-gradient(145deg,rgba(255,255,255,.10),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.12);transform:translateZ(-40px) rotate(-3deg);box-shadow:var(--nxt-e3)}
+body.page .nxj-hero__art>svg{position:relative;display:block;width:100%;height:100%;transform:translateZ(30px)}
+@media (min-width:960px){
+  body.page .nxj-hero{grid-template-columns:minmax(0,1.25fr) minmax(0,.9fr);align-items:center;padding:28px}
+  body.page .nxj-hero__card{padding:32px}
+}
+@media (prefers-reduced-motion:reduce){body.page .nxj-hero__art,body.page .nxj-btn{transition:none;transform:none}}
+
+/* ---- storyboard -------------------------------------------------------- */
+body.page .nxj-story__scroller{margin:14px 0 0;padding:4px 2px 12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+body.page .nxj-story__list{list-style:none;margin:0;padding:0;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(260px,82%);gap:14px}
+body.page .nxj-panel{position:relative;scroll-snap-align:start;margin:0;padding:14px 16px 18px;border-radius:18px;background:rgba(255,255,255,.045);border:1px solid var(--nxt-line-strong);box-shadow:var(--nxt-e2)}
+body.page .nxj-panel__art{aspect-ratio:4/3;border-radius:12px;overflow:hidden;background:rgba(255,255,255,.035);color:var(--nxt-text);display:flex;align-items:center;justify-content:center}
+body.page .nxj-panel__art>svg{display:block;width:100%;height:100%}
+body.page .nxj-panel__n{position:absolute;top:22px;left:22px;display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--nxt-text);color:#0A1020;font-weight:800;font-size:.9375rem;box-shadow:var(--nxt-e2)}
+body.page .nxj-panel__title{margin:14px 0 6px;font-size:1.0625rem;line-height:1.3;color:var(--nxt-text)}
+body.page .nxj-panel__text{margin:0;color:#C9D3E3;font-size:.9375rem;line-height:1.6}
+@media (min-width:900px){
+  body.page .nxj-story__scroller{margin:14px 0 0;padding:0;overflow:visible}
+  body.page .nxj-story__list{grid-auto-flow:row;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+  body.page .nxj-story__hint{display:none}
+}
+
+/* ---- why tutors choose us --------------------------------------------- */
+body.page .nxj-why{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+body.page .nxj-why__card{display:flex;gap:12px;padding:16px;border-radius:16px;background:rgba(255,255,255,.045);border:1px solid var(--nxt-line)}
+body.page .nxj-why__icon{flex:0 0 22px;margin-top:2px;color:var(--nxt-text-dim)}
+body.page .nxj-why h3{margin:0 0 4px;font-size:1rem;color:var(--nxt-text)}
+body.page .nxj-why p{margin:0;color:#C9D3E3;font-size:.9375rem;line-height:1.6}
+
+/* ---- board cards ------------------------------------------------------- */
+body.page .nxj-boards{display:grid;gap:14px;margin-top:14px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+body.page .nxj-board{max-width:none;padding:18px;border-radius:18px;background:rgba(255,255,255,.045);border:1px solid var(--nxt-line-strong)}
+body.page .nxj-board__head{display:flex;gap:12px;align-items:center;margin-bottom:10px}
+body.page .nxj-board__mark{flex:0 0 auto;min-width:52px;height:52px;padding:0 8px;display:grid;place-items:center;border-radius:14px;background:rgba(255,255,255,.08);border:1px solid var(--nxt-line-strong);color:var(--nxt-text);font-weight:800;font-size:.8125rem;letter-spacing:.04em}
+body.page .nxj-board h3{margin:0;font-size:1.0625rem;line-height:1.3}
+body.page .nxj-board h3 a{color:var(--nxt-text);text-decoration:underline;text-decoration-color:var(--nxt-link-line);text-underline-offset:3px}
+body.page .nxj-board__classes{margin:2px 0 0;color:var(--nxt-text-dim);font-size:.875rem}
+body.page .nxj-board>p{margin:0 0 10px;color:#C9D3E3;line-height:1.6;font-size:.9375rem}
+body.page .nxj-board__links{list-style:none;margin:0;padding:10px 0 0;border-top:1px solid var(--nxt-line);display:grid;gap:4px;font-size:.875rem;color:var(--nxt-text-dim)}
+body.page .nxj-board__links a{color:var(--nxt-link);text-decoration:underline;text-decoration-color:var(--nxt-link-line);text-underline-offset:3px}
+
+/* ---- zones / towns / states: glass tiles ------------------------------- */
+body.page .nxj .nxjobs-zones{gap:14px}
+body.page .nxj .nxjobs-zone{position:relative;padding:16px 18px;border-radius:18px;background:rgba(18,30,52,.9);border:1px solid var(--nxt-line-strong);box-shadow:var(--nxt-e1)}
+@supports ((-webkit-backdrop-filter:blur(2px)) or (backdrop-filter:blur(2px))){
+  body.page .nxj .nxjobs-zone{background:rgba(255,255,255,.05);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+}
+body.page .nxj .nxjobs-zone h3{margin:0 0 6px;font-size:1.0625rem}
+body.page .nxj .nxjobs-zone h3 a{color:var(--nxt-text);text-decoration:underline;text-decoration-color:var(--nxt-link-line);text-underline-offset:3px}
+body.page .nxj .nxjobs-zone p{color:#C9D3E3}
+body.page .nxj .nxjobs-zone__areas{font-size:.875rem}
+body.page .nxj .nxjobs-zone__areas a{color:var(--nxt-link)}
+body.page .nxj .nxjobs-zone__note{opacity:1}
+
+/* ---- prose ------------------------------------------------------------- */
+body.page .nxjobs-prose p{max-width:78ch;line-height:1.7;margin:0 0 12px;color:#D5DDEA}
+body.page .nxjobs-prose a,body.page .nxj-steps a,body.page .nxj-women a:not(.nxj-btn),body.page .nxj-plans a:not(.nxj-btn),body.page .nxj-panel a{color:var(--nxt-link);text-decoration:underline;text-decoration-color:var(--nxt-link-line);text-underline-offset:3px}
+
+/* ---- women tutors (pink role) ------------------------------------------ */
+body.page .nxj-women{display:grid;gap:18px;grid-template-columns:minmax(0,1fr);padding:20px 18px;border-radius:var(--nxj-r);background:linear-gradient(160deg,rgba(244,114,182,.10),rgba(255,255,255,.03));border:1px solid var(--nx-pink-line)}
+body.page .nxj-women__kicker{display:inline-block;margin:0 0 8px;padding:4px 12px;border-radius:999px;background:var(--nx-pink-soft);border:1px solid var(--nx-pink-line);color:var(--nx-pink);font-size:.8125rem;font-weight:800}
+body.page .nxj-women .nx-sec__title{margin:0 0 10px}
+body.page .nxj-women__text>p{margin:0 0 12px;max-width:70ch;color:#D5DDEA;line-height:1.65}
+body.page .nxj-women__list{list-style:none;margin:0 0 12px;padding:0;display:grid;gap:8px}
+body.page .nxj-women__list li{position:relative;padding-left:26px;color:#D5DDEA;line-height:1.55}
+body.page .nxj-women__list li::before{content:"";position:absolute;left:4px;top:.45em;width:11px;height:6px;border-left:2.5px solid var(--nx-pink);border-bottom:2.5px solid var(--nx-pink);transform:rotate(-45deg)}
+body.page .nxj-women__more{font-size:.875rem;color:var(--nxt-text-dim)}
+body.page .nxj-women__art{align-self:center;justify-self:center;width:100%;max-width:340px;aspect-ratio:4/3;color:var(--nx-pink)}
+body.page .nxj-women__art>svg{display:block;width:100%;height:100%}
+@media (min-width:900px){body.page .nxj-women{grid-template-columns:minmax(0,1.4fr) minmax(0,.8fr);padding:30px}}
+
+/* ---- live demand table (AreaDemand) ------------------------------------ */
+body.page .nxj-demand{margin-top:12px;overflow-x:auto;border-radius:16px;border:1px solid var(--nxt-line-strong)}
+body.page .nxj-demand table{width:100%;border-collapse:collapse;font-size:.9375rem}
+body.page .nxj-demand caption{caption-side:bottom;text-align:left;padding:10px 14px;color:var(--nxt-text-dim);font-size:.8125rem}
+body.page .nxj-demand th{text-align:left;padding:10px 14px;background:rgba(255,255,255,.06);color:var(--nxt-text);font-size:.8125rem;letter-spacing:.03em;text-transform:uppercase}
+body.page .nxj-demand td{padding:10px 14px;border-top:1px solid var(--nxt-line);color:#D5DDEA}
+body.page .nxj-demand td:first-child{white-space:nowrap;color:var(--nxt-text-dim);font-weight:700}
+
+/* ---- plans teaser ------------------------------------------------------ */
+body.page .nxj-plans{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding:20px;border-radius:18px;background:rgba(255,255,255,.045);border:1px dashed var(--nxt-line-strong)}
+body.page .nxj-plans>div{flex:1 1 320px}
+body.page .nxj-plans .nx-sec__title{margin:0 0 6px}
+body.page .nxj-plans p{margin:0;color:#C9D3E3;line-height:1.6;max-width:70ch}
+
+/* ---- FAQ, related, steps ---------------------------------------------- */
+body.page .nxj-faq .nx-faq__item>summary{min-height:44px}
+body.page .nxj-faq .nx-faq__item>p a{color:var(--nxt-link)}
+body.page .nxj-related__h{margin:16px 0 8px;font-size:.875rem;font-weight:700;color:var(--nxt-text-dim);letter-spacing:.02em}
+body.page .nxj-steps{list-style:none;counter-reset:nxjs;margin:14px 0 8px;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+body.page .nxj-steps li{counter-increment:nxjs;position:relative;padding:16px 16px 16px 58px;border-radius:16px;background:rgba(255,255,255,.045);border:1px solid var(--nxt-line)}
+body.page .nxj-steps li::before{content:counter(nxjs);position:absolute;left:16px;top:16px;width:30px;height:30px;display:grid;place-items:center;border-radius:50%;background:var(--nxt-text);color:#0A1020;font-weight:800}
+body.page .nxj-steps h3{margin:2px 0 4px;font-size:1rem}
+body.page .nxj-steps p{margin:0;color:#C9D3E3;line-height:1.6;font-size:.9375rem}
+
+/* ---- illustrations (partials/jobs-art) and their fallback -------------- */
+/* The art reads --nx-pink etc.; inside the art the pink is the fill shade, not the text shade. */
+body.page .nx-art{--nx-pink:#EC4899;display:block;width:100%;height:100%}
+body.page .nxj-art-fallback{display:block;width:100%;height:100%;color:var(--nxt-text)}
+
+/* ---- sticky mobile apply bar ------------------------------------------ */
+body.page .nxj-applybar{position:fixed;left:0;right:0;bottom:0;z-index:900;display:flex;gap:10px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(8,14,27,.96);border-top:1px solid var(--nxt-line-strong);box-shadow:0 -8px 24px rgba(3,7,18,.45)}
+body.page .nxj-applybar .nxj-btn{flex:1 1 0;min-height:48px;padding:0 12px}
+body.page .nxj-applybar .nxj-btn--wa{flex:0 1 40%}
+body.page.nxt-modal-open .nxj-applybar{display:none}
+@media (max-width:899px){body.page:has(.nxj-applybar) footer{padding-bottom:84px}}
+@media (min-width:900px){body.page .nxj-applybar{display:none}}
+
+/* ---- pink page theme (/female-tutor-jobs) ------------------------------ */
+body.page .nxj--pink .nxj-hero{border-color:var(--nx-pink-line)}
+body.page .nxj--pink .nxj-hero__promise{border-color:var(--nx-pink-line);background:var(--nx-pink-soft)}
+body.page .nxj--pink .nxj-panel{border-color:rgba(244,114,182,.28)}
+
+/* ---- small phones ------------------------------------------------------ */
+@media (max-width:400px){
+  body.page .nxj-hero{padding:10px}
+  body.page .nxj-hero__card{padding:16px 14px}
+  body.page .nxj-btn{padding:0 16px}
+  body.page .nxj-ctas .nxj-btn{flex:1 1 100%}
+}

@@ -5,16 +5,79 @@
     "Home work and online work fit together easily in Chennai. When a family in Velachery sends a request, the shortlist of two or three tutors starts with tutors in Velachery, then others in the same zone, then the rest of Chennai, then online tutors anywhere in India. Families see each tutor's fee before the free first demo and can switch later at no charge. A tutor near a suburban or MRTS station can cover a long stretch of line, while on the OMR, where many evenings are taken by office traffic, an online session for doubts can keep a student's week on track."
   ],
   "zone_notes": {
-    "Adyar, Besant Nagar & Mylapore": "The MRTS is the main rail link, with Thirumayilai and Mandaveli for Mylapore, Kasturba Nagar and Indira Nagar for Adyar, and Thiruvanmiyur for Besant Nagar, plus Teynampet on the Blue Line for Alwarpet. Mylapore's old houses sit on narrow lanes near the temple tank, so festival days there are better handled with a morning or online lesson.",
-    "T Nagar, Nungambakkam & Kodambakkam": "Suburban trains stop at Nungambakkam, Kodambakkam, Mambalam and Saidapet, and a tutor arriving by train is usually more punctual than one driving into these dense, market-led streets. Parking a car is hard in West Mambalam and old T Nagar, and shopping weekends and festival seasons slow every route in.",
-    "Velachery, Guindy & Tambaram": "Three rail systems serve parts of this zone: the Blue Line at Guindy and Alandur, the MRTS through Velachery to St Thomas Mount, and suburban trains along GST Road to Chromepet and Tambaram. Medavakkam and Pallikaranai have no station yet, so tutors there usually live nearby and ride a two-wheeler, and Kathipara and GST Road are heavy at office hours.",
-    "OMR & ECR": "Gated communities along the OMR often want a resident to approve each visitor, so being added once as a regular guest in the society app saves time at every lesson. Only Perungudi has a station and the Purple Line is still being built, so tutors here travel by two-wheeler, bus or cab, and online sessions help on the busiest evenings.",
-    "Anna Nagar, Kilpauk & Aminjikarai": "Anna Nagar's grid of numbered avenues makes homes quick to find, and Green Line stations from Thirumangalam to Shenoy Nagar and Arumbakkam put most of the zone within a short walk. Parking is limited near the 2nd Avenue shops and Purasawalkam's market streets, so book slots before the early-evening rush.",
-    "Vadapalani, KK Nagar & Porur": "Vadapalani and Ashok Nagar are on the Green Line and KK Nagar's numbered sectors are easy to navigate, but west of Vadapalani there is no working metro yet, so homes along Arcot Road and in Porur rely on bus or road travel. Tutors who live along Arcot Road or in Porur suit this side, outside office hours at Porur Junction.",
-    "Mogappair, Ambattur & Avadi": "The suburban line towards Arakkonam, with stations at Pattaravakkam, Ambattur, Annanur and Avadi, is the backbone, and a train plus short auto is the steadiest way to reach most homes. Defence areas and gated estates in Avadi may need entry details in advance, and Mogappair relies on Thirumangalam metro station or buses.",
-    "Perambur, Kolathur & North Chennai": "Suburban trains serve Perambur, Villivakkam and Tondiarpet, and the Blue Line reaches Washermanpet and Tondiarpet, so a tutor without a car can work much of this zone. Older lanes are narrow and parking is tight near the markets, so a door number with a landmark helps, and newer buildings take your name at the gate."
+    "Adyar, Besant Nagar & Mylapore": "The MRTS is the main rail link, with Thirumayilai and Mandaveli for Mylapore, Kasturba Nagar and Indira Nagar for Adyar, and Thiruvanmiyur for Besant Nagar, plus Teynampet on the Blue Line for Alwarpet. Mylapore's old houses sit on narrow lanes near the temple tank, so festival days there are better handled with a morning or online lesson. Besant Nagar's beach roads are crowded on weekend evenings, so weekday or morning slots suit home visits.",
+    "T Nagar, Nungambakkam & Kodambakkam": "Suburban trains stop at Nungambakkam, Kodambakkam, Mambalam and Saidapet, and a tutor arriving by train is usually more punctual than one driving into these dense, market-led streets. Parking a car is hard in West Mambalam and old T Nagar, and shopping weekends and festival seasons slow every route in. In West Mambalam a two-wheeler or a walk from the station is normal, and a landmark with the house number saves a search on the first visit.",
+    "Velachery, Guindy & Tambaram": "Three rail systems serve parts of this zone: the Blue Line at Guindy and Alandur, the MRTS through Velachery to St Thomas Mount, and suburban trains along GST Road to Chromepet and Tambaram. Medavakkam and Pallikaranai have no station yet, so tutors there usually live nearby and ride a two-wheeler, and Kathipara and GST Road are heavy at office hours. Set lessons just before or after the rush rather than inside it.",
+    "OMR & ECR": "Gated communities along the OMR often want a resident to approve each visitor, so being added once as a regular guest in the society app saves time at every lesson. Only Perungudi has a station and the Purple Line is still being built, so tutors here travel by two-wheeler, bus or cab, and online sessions help on the busiest evenings. Online-only tutors elsewhere in India can teach IB or IGCSE students here.",
+    "Anna Nagar, Kilpauk & Aminjikarai": "Anna Nagar's grid of numbered avenues makes homes quick to find, and Green Line stations from Thirumangalam to Shenoy Nagar and Arumbakkam put most of the zone within a short walk. Parking is limited near the 2nd Avenue shops and Purasawalkam's market streets, so book slots before the early-evening rush. Ask for the avenue or street number and block; the grid means little time is lost searching.",
+    "Vadapalani, KK Nagar & Porur": "Vadapalani and Ashok Nagar are on the Green Line and KK Nagar's numbered sectors are easy to navigate, but west of Vadapalani there is no working metro yet, so homes along Arcot Road and in Porur rely on bus or road travel. Tutors who live along Arcot Road or in Porur suit this side, outside office hours at Porur Junction. Late-afternoon or weekend lessons keep to time more easily.",
+    "Mogappair, Ambattur & Avadi": "The suburban line towards Arakkonam, with stations at Pattaravakkam, Ambattur, Annanur and Avadi, is the backbone, and a train plus short auto is the steadiest way to reach most homes. Defence areas and gated estates in Avadi may need entry details in advance, and Mogappair relies on Thirumangalam metro station or buses. Tell Mogappair families whether you come by bus, metro or two-wheeler, and avoid the Inner Ring Road rush.",
+    "Perambur, Kolathur & North Chennai": "Suburban trains serve Perambur, Villivakkam and Tondiarpet, and the Blue Line reaches Washermanpet and Tondiarpet, so a tutor without a car can work much of this zone. Older lanes are narrow and parking is tight near the markets, so a door number with a landmark helps, and newer buildings take your name at the gate. Market roads in Perambur and Royapuram are crowded in the evening, so a slightly earlier slot usually works."
   },
   "boards": "In Chennai you will teach Tamil Nadu State Board students for the SSLC and the Higher Secondary years, CBSE students, ICSE and ISC candidates, and some IB and IGCSE learners. For the state papers, read the time table, notifications and sample question papers through the Directorate of Government Examinations site and its notification portal. CBSE material is on the CBSE academic site and ICSE and ISC regulations on the CISCE site. Make your profile clear about the board you teach and whether you work with the Tamil or the English version of the state papers.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Tamil Nadu State Board (Directorate of Government Examinations)",
+      "site": "https://dge.tn.gov.in/",
+      "classes": "SSLC (Class 10); Higher Secondary (Classes 11–12)",
+      "note": "The Directorate of Government Examinations conducts the SSLC and Higher Secondary examinations for State Board students. In the Directorate's sample papers, SSLC Mathematics carries 100 marks and Science 75, each over three hours. Teach from the state textbooks, in the Tamil or English version the student uses, and read every notice on dge.tn.gov.in.",
+      "page": "/tamil-nadu-board-tutor-chennai"
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "CBSE families in Chennai are spread from Anna Nagar's avenues to the OMR's gated communities. Lessons should grow out of the NCERT chapter and be tested against the sample papers and marking schemes on cbseacademic.nic.in. Remember that the CBSE session starts in April, while State Board schools follow the calendar the state announces.",
+      "page": "/cbse-home-tutor-chennai"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "CISCE sets ICSE in Class 10 and ISC in Class 12, both long-answer papers across a wide syllabus, with prescribed English literature and project work. A Chennai tutor for these boards needs a revision cycle that returns to every chapter, plus timed writing. Regulations and specimen papers are on cisce.org.",
+      "page": "/icse-home-tutor-chennai"
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "IB Diploma students ask for help with a named course, Maths AA or AI at SL or HL, or Chemistry HL, and often with an IA or Extended Essay, which you may guide but must never write. Subject guides are on ibo.org; along the OMR, online sessions save a long evening drive.",
+      "page": "/ib-tutor-chennai"
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "IGCSE learners need command words, the correct tier and past papers marked against the official scheme. In Chennai, a tutor who keeps Cambridge and Pearson Edexcel papers apart, and checks which one the school follows, starts the demo on the right foot. Syllabuses are on cambridgeinternational.org.",
+      "page": "/igcse-tutor-chennai"
+    }
+  ],
+  "women": {
+    "intro": "NXTutors is taking on women tutors in Chennai for home, online and hybrid work. You decide the zones and the hours: a tutor in Mylapore can keep to the MRTS stations along the coast, one in Ambattur to the suburban line, and teach other families online. Every tutor who joins goes through the same ID check, families meet you first at a free demo where we ask a parent to be at home, and the safeguarding policy sets rules for both sides. These are the platform's actual controls, not promises about individual conduct.",
+    "points": [
+      "Set your mode to home, online or hybrid, and change it as your term changes.",
+      "Choose only the zones you will travel to; if you prefer stations to driving after dark, list areas near the MRTS, the metro or the suburban lines.",
+      "Keep your free hours current, so Chennai parents see at a glance when you teach.",
+      "Every new family begins with a free demo while a parent is home.",
+      "On the OMR, ask the family to add you as a regular guest in the society app, so visits are recorded at the gate.",
+      "Agree fees, timings and any changes with a parent, never through the student's private chat.",
+      "Teach younger children in a shared room with an adult at home; keep cameras on for online classes.",
+      "If something is not right, stop the classes and tell NXTutors with the word Safeguarding; call 112 first in an emergency."
+    ]
+  },
+  "story": [
+    "Sign up with a one-time code sent to your phone or email, then list your subjects, classes and boards, and whether you teach the Tamil or English version of State Board papers.",
+    "Upload a government photo ID. NXTutors reviews it before families can see your profile, and each ID can belong to only one tutor account. This is an identity check, nothing more.",
+    "When the team has reviewed it, your profile goes live with the Verified badge, showing the Chennai zones you reach, your free hours and the fee you decided.",
+    "A parent in Velachery or Anna Nagar sends a request. We shortlist two or three tutors, nearest first: those living there, then those travelling there, then the zone, the city and online.",
+    "The parent sees your fee before choosing a time. Your first class is a free demo at their home where we ask a parent to be present, so you can both judge the fit.",
+    "Teach where it suits you: at homes along your train or metro line, online for families across Chennai and India, or a mix such as a weekend visit plus online weekday classes."
+  ],
   "faqs": [
     [
       "How does a family in Chennai find me as a tutor?",
@@ -35,6 +98,18 @@
     [
       "Where can I see the tutor plans?",
       "All tutor plans, and what each includes, are on /pricing. Your hourly fee is separate and is yours to set; the family sees it before a free first demo, and a family that later wants a different tutor can switch at no charge, so the plan you choose and the fee you charge are independent decisions."
+    ],
+    [
+      "As a woman tutor in Chennai, can I limit where and when I teach?",
+      "Yes. You choose your travel zones, perhaps only the stations along one MRTS or suburban line, and home requests are matched to those zones, while the hours you list tell parents when you are free. Every family meets you first at a free demo where we ask a parent to be at home, and you can teach anyone else online."
+    ],
+    [
+      "Which boards can I teach through NXTutors in Chennai?",
+      "Chennai requests cover the Tamil Nadu State Board for SSLC and Higher Secondary, CBSE, CISCE's ICSE and ISC, and the IB Diploma and Cambridge IGCSE. Name the boards and classes you know, and for the State Board say whether you teach the Tamil or the English version."
+    ],
+    [
+      "Do hybrid arrangements suit families along the OMR?",
+      "They can. Where the OMR rush makes weekday visits hard, a tutor can teach at home on the weekend and online on one or two weekday evenings. Choose both modes on your profile and settle the pattern with the parent after the free demo."
     ]
   ]
 }

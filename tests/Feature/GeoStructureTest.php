@@ -1489,4 +1489,255 @@ class GeoStructureTest extends TestCase
         // A body that already links the jobs page gets no second link.
         $this->assertNull(\App\Support\LinkNest::jobsChip(['city_slug' => 'ahmedabad', 'city' => 'Ahmedabad', 'view' => 'accountancy-home-tutor-ahmedabad']));
     }
+
+    // ---- Tutor-jobs experience v2 (spec 2 Oct 2026): shared skeleton, honesty, pink role ----
+
+    private const JOBS_PAGES = ['/tuition-jobs', '/tuition-jobs/state/haryana', '/tuition-jobs/state/uttarakhand', '/tuition-jobs/state/west-bengal',
+        '/tuition-jobs/gurugram', '/tuition-jobs/mumbai', '/tuition-jobs/delhi-ncr', '/maths-tutor-jobs'];
+
+    public function test_every_jobs_page_type_renders_the_shared_skeleton(): void
+    {
+        $this->jobsFixtureSet();
+        foreach (array_merge(self::JOBS_PAGES, ['/become-a-tutor']) as $url) {
+            $html = $this->get($url)->assertOk()->getContent();
+            foreach (['class="nxj-hero"', 'Women tutors welcome', 'id="how-it-works"', 'id="women-tutors"', 'class="nxj-applybar"',
+                '/css/nx-jobs.css', '"@type":"HowTo"', 'Apply as a tutor', 'For women tutors: you set the terms', url('/safeguarding-policy')] as $bit) {
+                $this->assertStringContainsString($bit, $html, $url . ': ' . $bit);
+            }
+            $this->assertSame(6, substr_count($html, 'class="nxj-panel"'), $url . ': six storyboard panels');
+            $this->assertSame(6, substr_count($html, '"@type":"HowToStep"'), $url . ': HowTo mirrors the panels');
+            $this->assertSame(1, substr_count($html, '<h1'), $url . ': one H1');
+            // The pink chip welcomes; it never says "verified" for anyone on these pages.
+            $this->assertStringNotContainsString('badge-verified', $html, $url);
+        }
+        foreach (self::JOBS_PAGES as $url) {
+            $html = $this->get($url)->getContent();
+            $this->assertStringContainsString('Now taking on home, online and hybrid tutors', $html, $url);
+            $this->assertStringContainsString('Why tutors choose NXTutors', $html, $url);
+            $this->assertStringContainsString('Tutor plans and what each includes', $html, $url);
+            $this->assertStringContainsString('Related pages', $html, $url);
+        }
+        // Page-type modules still there.
+        $this->get('/tuition-jobs/gurugram')->assertSee('Where in Gurgaon tutors are needed')->assertSee('Tutors needed');
+        $this->get('/tuition-jobs/state/haryana')->assertSee('<h3>Rohtak</h3>', false)->assertSee('School boards in Haryana')
+            ->assertSee('class="nxj-board__mark" aria-hidden="true">BSEH<', false);
+        $this->get('/tuition-jobs')->assertSee('Tuition jobs by state and city');
+        // CSS only on the tutor-side pages.
+        $this->get('/city/gurugram')->assertOk()->assertDontSee('/css/nx-jobs.css', false);
+    }
+
+    public function test_jobs_pages_never_say_hiring_vacancy_open_free_to_join_or_job_posting(): void
+    {
+        $this->jobsFixtureSet();
+        $this->jobsFixtures(['topics/female-tutor-jobs.json' => $this->femaleTopicFixture()] + $this->readFixtureDir());
+        foreach (array_merge(self::JOBS_PAGES, ['/female-tutor-jobs', '/become-a-tutor']) as $url) {
+            $html = $this->get($url)->assertOk()->getContent();
+            $text = strip_tags((string) preg_replace('#<script\b[^>]*>.*?</script>#is', ' ', $html));
+            $this->assertStringNotContainsString('JobPosting', $html, $url);
+            $this->assertDoesNotMatchRegularExpression('/\bhiring\b|vacanc(y|ies) open|free\s+to\s+join|join\s+(for\s+)?free/i', $text, $url);
+        }
+        foreach (glob(resource_path('views/pages/jobs/partials/*.blade.php')) as $f) {
+            $this->assertDoesNotMatchRegularExpression('/\bhiring\b|free\s+to\s+join|JobPosting/i', (string) file_get_contents($f), basename($f));
+        }
+        $this->assertDoesNotMatchRegularExpression('/\bhiring\b|free\s+to\s+join/i', (string) file_get_contents(app_path('Support/JobsPage.php')));
+    }
+
+    public function test_storyboard_and_howto_go_together(): void
+    {
+        $this->jobsFixtureSet();
+        config(['jobs_pages.storyboard' => false]);
+        foreach (['/tuition-jobs', '/tuition-jobs/gurugram', '/maths-tutor-jobs', '/become-a-tutor'] as $url) {
+            $html = $this->get($url)->assertOk()->getContent();
+            $this->assertStringNotContainsString('"@type":"HowTo"', $html, $url);
+            $this->assertStringNotContainsString('id="how-it-works"', $html, $url);
+            $this->assertStringNotContainsString('href="#how-it-works"', $html, $url);
+            $this->assertStringContainsString('"@type":"FAQPage"', $html, $url);
+        }
+    }
+
+    public function test_v2_json_fields_fill_the_components_and_link_our_board_pages(): void
+    {
+        $this->jobsFixtures([
+            'hub.json' => [
+                'intro' => ['HUB-INTRO-ONE about tutoring work.'],
+                'story' => ['HUB-STORY-ONE caption.'],
+                'why' => ['HUB-WHY-TITLE. HUB-WHY-TEXT about matching.'],
+                'women' => ['intro' => 'HUB-WOMEN intro.', 'points' => ['HUB-WOMEN-POINT one.']],
+                'faqs' => [['HUB-FAQ question?', 'HUB-FAQ answer, see /pricing.']],
+            ],
+            'cities/gurugram.json' => [
+                'intro' => ['GGN-INTRO-ONE.'],
+                'zone_notes' => ['Golf Course Road' => 'GCR-NOTE.'],
+                'boards' => 'GGN-BOARDS paragraph.',
+                'faqs' => [['GGN-FAQ?', 'Answer.']],
+                'board_cards' => [
+                    ['key' => 'cbse', 'name' => 'CBSE', 'site' => 'https://www.cbse.gov.in', 'classes' => 'Classes 1–12', 'note' => 'GGN-CBSE-NOTE for tutors.'],
+                    ['key' => 'cisce', 'name' => 'CISCE (ICSE and ISC)', 'site' => 'https://cisce.org', 'classes' => 'ICSE Class 10, ISC Class 12', 'note' => 'GGN-CISCE-NOTE.'],
+                    ['key' => 'nope', 'name' => 'Ignored board'],
+                    ['key' => 'state', 'name' => 'Board of School Education Haryana (BSEH)', 'site' => 'javascript:alert(1)', 'classes' => 'Classes 1–12', 'note' => 'GGN-STATE-NOTE.'],
+                ],
+                'story' => ['GGN-STORY-ONE caption for Gurgaon.', '', 'GGN-STORY-THREE.'],
+                'women' => ['intro' => 'GGN-WOMEN intro.', 'points' => ['GGN-WOMEN-POINT one.', 'GGN-WOMEN-POINT two.']],
+            ],
+        ]);
+
+        $hub = $this->get('/tuition-jobs')->assertOk()->getContent();
+        foreach (['HUB-INTRO-ONE', 'HUB-STORY-ONE caption.', 'HUB-WHY-TITLE</h3>', 'HUB-WHY-TEXT', 'HUB-WOMEN intro.', 'HUB-WOMEN-POINT one.', '"name":"HUB-FAQ question?"'] as $bit) {
+            $this->assertStringContainsString($bit, $hub, $bit);
+        }
+        $this->assertStringContainsString(url('/pricing'), $hub);
+
+        $city = $this->get('/tuition-jobs/gurugram')->assertOk()->getContent();
+        foreach (['GGN-CBSE-NOTE', 'GGN-CISCE-NOTE', 'GGN-STATE-NOTE', 'href="https://www.cbse.gov.in"', 'Classes 1–12', '>CISCE<', '>BSEH<',
+            'GGN-STORY-ONE caption for Gurgaon.', 'GGN-STORY-THREE.', \App\Support\JobsPage::STORY[1][1], 'GGN-WOMEN intro.', 'GGN-WOMEN-POINT two.',
+            '"text":"GGN-STORY-ONE caption for Gurgaon."', 'Boards you can teach in Gurgaon'] as $bit) {
+            $this->assertStringContainsString($bit, $city, $bit);
+        }
+        $this->assertStringNotContainsString('Ignored board', $city);
+        $this->assertStringNotContainsString('javascript:alert', $city);
+        // Our own live board pages in the city, on the matching cards.
+        $pages = \App\Support\JobsPage::boardPages(['gurugram']);
+        $this->assertNotEmpty($pages['cbse'] ?? [], 'cbse-home-tutor-gurgaon is live');
+        foreach (['cbse', 'cisce'] as $k) {
+            $this->assertStringContainsString('href="' . $pages[$k][0]['url'] . '"', $city, $k);
+        }
+
+        // No v2 fields: the defaults.
+        $mumbai = $this->get('/tuition-jobs/mumbai')->assertOk()->getContent();
+        $this->assertStringContainsString(\App\Support\JobsPage::STORY[0][1], $mumbai);
+        $this->assertStringContainsString(e(\App\Support\JobsPage::WOMEN_POINTS[0]), $mumbai);
+    }
+
+    public function test_female_tutor_jobs_page_needs_its_json_and_is_pink(): void
+    {
+        $this->jobsFixtureSet();
+        $this->withExceptionHandling()->get('/female-tutor-jobs')->assertNotFound();
+        $this->get('/tuition-jobs')->assertDontSee(url('/female-tutor-jobs'), false)->assertSee('href="#women-tutors"', false);
+
+        $this->jobsFixtures(['topics/female-tutor-jobs.json' => $this->femaleTopicFixture()] + $this->readFixtureDir());
+        $html = $this->get('/female-tutor-jobs')->assertOk()->getContent();
+        foreach (['nxj--pink', 'Women tutor jobs, home and online', 'FEMALE-INTRO-ONE', 'FEMALE-SECTION', 'FEMALE-WOMEN intro.', 'FEMALE-STORY-ONE.',
+            '"@type":"FAQPage"', '"@type":"HowTo"', 'Apply as a woman tutor'] as $bit) {
+            $this->assertStringContainsString($bit, $html, $bit);
+        }
+        $this->assertSame(1, substr_count($html, 'id="women-tutors"'), 'the women section once, near the top');
+        $this->assertStringNotContainsString('badge-verified', $html);
+        if (isset(\App\Support\SubjectLinks::live()['female-home-tutor'])) {
+            $this->assertStringContainsString(url('/female-home-tutor'), $html);
+        }
+        // Now live: linked from the hub chip and listed in the sitemap.
+        $this->get('/tuition-jobs')->assertSee(url('/female-tutor-jobs'), false);
+        $this->get('/sitemap-pages.xml')->assertOk()->assertSee('/female-tutor-jobs<', false);
+    }
+
+    public function test_jobs_css_is_scoped_small_and_documents_the_pink_role(): void
+    {
+        $file = public_path('frount/assets/css/nx-jobs.css');
+        $this->assertFileExists($file);
+        $this->assertLessThanOrEqual(20 * 1024, filesize($file));
+        $css = (string) preg_replace('#/\*.*?\*/#s', '', (string) file_get_contents($file));
+        preg_match_all('/([^{}]+)\{/', $css, $m);
+        $checked = 0;
+        foreach ($m[1] as $sel) {
+            $sel = trim($sel);
+            if ($sel === '' || str_starts_with($sel, '@')) {
+                continue;
+            }
+            foreach (explode(',', $sel) as $one) {
+                $this->assertStringStartsWith('body.page', trim($one), 'selector: ' . trim($one));
+                $checked++;
+            }
+        }
+        $this->assertGreaterThan(50, $checked);
+        $this->assertStringContainsString('prefers-reduced-motion', $css);
+        $this->assertStringContainsString('@supports', $css, 'solid fallback for backdrop-filter');
+
+        $roles = (string) file_get_contents(public_path('frount/assets/css/nx-roles.css'));
+        $this->assertStringContainsString('--nx-pink:', $roles);
+        $this->assertMatchesRegularExpression('/pink\s+--nx-pink\s+women tutors only/', $roles);
+        $this->assertStringContainsString('.badge-verified--woman', $roles);
+    }
+
+    public function test_pink_verified_badge_only_for_real_verified_women_tutors(): void
+    {
+        Schema::table('register', fn ($t) => $t->boolean('is_sample')->default(false));
+        app()->forgetInstance('register.sample_column');
+        DB::table('register')->insert([
+            ['user_id' => 801, 'name' => 'Priya Real', 'city' => 'Gurgaon', 'join_as' => 'teacher', 'status' => 't', 'is_sample' => 0, 'gender' => 'female', 'pro_desc' => 'I teach maths for CBSE.'],
+            ['user_id' => 802, 'name' => 'Sample Woman', 'city' => 'Gurgaon', 'join_as' => 'teacher', 'status' => 't', 'is_sample' => 1, 'gender' => 'female', 'pro_desc' => 'I teach maths for CBSE.'],
+            ['user_id' => 803, 'name' => 'Rahul Real', 'city' => 'Gurgaon', 'join_as' => 'teacher', 'status' => 't', 'is_sample' => 0, 'gender' => 'male', 'pro_desc' => 'I teach maths for CBSE.'],
+            ['user_id' => 804, 'name' => 'Pending Woman', 'city' => 'Gurgaon', 'join_as' => 'teacher', 'status' => 'f', 'is_sample' => 0, 'gender' => 'female', 'pro_desc' => 'I teach maths for CBSE.'],
+        ]);
+        $card = function (int $uid) {
+            $t = \App\Models\Register::where('user_id', $uid)->first();
+
+            return view('partials.tutor-card', ['t' => $t, 'img' => '', 'chips' => [], 'rating' => '0.0', 'reviews' => 0,
+                'address' => '', 'city' => 'Gurgaon', 'waLink' => '#', 'profileUrl' => '#'])->render();
+        };
+        $this->assertStringContainsString('Verified · Woman tutor', $card(801));
+        $this->assertStringContainsString('badge-verified--woman', $card(801));
+        $this->assertStringNotContainsString('Woman tutor', $card(802), 'samples never');
+        $this->assertStringNotContainsString('badge-verified', $card(802));
+        $this->assertStringNotContainsString('Woman tutor', $card(803), 'not male tutors');
+        $this->assertStringContainsString('badge-verified', $card(803));
+        $this->assertStringNotContainsString('badge-verified', $card(804), 'not an inactive (unreviewed) profile');
+
+        // Search cards (TutorCardMapper arrays) carry gender separately.
+        $cards = app(\App\NxtAi\Services\TutorSearchService::class)->search(new \App\NxtAi\DTO\TutorSearchCriteria(
+            city: 'Gurugram', subject: 'Mathematics', limit: 10,
+        ))['cards'];
+        $html = view('subjects.partials.tutor-cards', ['cards' => $cards])->render();
+        $this->assertSame(1, substr_count($html, 'Verified · Woman tutor'), 'only the real woman tutor');
+
+        // Profile header.
+        $tok = fn ($id) => rtrim(strtr(base64_encode($id . '-nxt'), '+/', '-_'), '=');
+        $this->withoutExceptionHandling();
+        $this->get('/tutor/gurgaon/' . $tok(801) . '/priya-real')->assertOk()->assertSee('Verified · Woman tutor')->assertDontSee('Background verified');
+        $this->get('/tutor/gurgaon/' . $tok(802) . '/sample-woman')->assertOk()->assertDontSee('Woman tutor');
+        $this->get('/tutor/gurgaon/' . $tok(803) . '/rahul-real')->assertOk()->assertDontSee('Woman tutor');
+    }
+
+    public function test_become_a_tutor_lists_the_real_join_steps(): void
+    {
+        $html = $this->get('/become-a-tutor')->assertOk()->getContent();
+        $text = html_entity_decode(strip_tags($html));
+        $pos = -1;
+        foreach (['Apply on WhatsApp', 'Confirm with a one-time code', 'Complete your profile', 'Upload your ID', 'Team review, then live', 'Requests and the free demo'] as $step) {
+            $p = strpos($text, $step, max(0, $pos));
+            $this->assertNotFalse($p, $step);
+            $this->assertGreaterThan($pos, $p, $step . ' in order');
+            $pos = $p;
+        }
+        $this->assertStringContainsString('not a police or background check', $text);
+        $this->assertStringContainsString('id="join-steps"', $html);
+    }
+
+    /** Shape-3 topic fixture for /female-tutor-jobs. */
+    private function femaleTopicFixture(): array
+    {
+        return [
+            'title' => 'Female Tutor Jobs: Home & Online Tuition for Women | NXTutors',
+            'description' => str_repeat('Women tutor jobs on NXTutors. ', 5),
+            'h1' => 'Tutor jobs for women, at home and online',
+            'intro' => ['FEMALE-INTRO-ONE.', 'FEMALE-INTRO-TWO.'],
+            'sections' => [['h2' => 'FEMALE-SECTION choosing your areas', 'paras' => ['FEMALE-PARA.']]],
+            'faqs' => [['FEMALE-FAQ can I teach online only?', 'Yes.']],
+            'women' => ['intro' => 'FEMALE-WOMEN intro.', 'points' => ['FEMALE-WOMEN-POINT.']],
+            'story' => ['FEMALE-STORY-ONE.'],
+        ];
+    }
+
+    /** The files already in the current fixture folder, so a second jobsFixtures() call keeps them. */
+    private function readFixtureDir(): array
+    {
+        $dir = (string) config('jobs_pages.dir');
+        $out = [];
+        foreach (['cities', 'states', 'topics'] as $kind) {
+            foreach (glob($dir . DIRECTORY_SEPARATOR . $kind . DIRECTORY_SEPARATOR . '*.json') ?: [] as $f) {
+                $out[$kind . '/' . basename($f)] = json_decode((string) file_get_contents($f), true);
+            }
+        }
+
+        return $out;
+    }
 }

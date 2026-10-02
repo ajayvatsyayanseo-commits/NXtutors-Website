@@ -52,11 +52,49 @@
     }
   ],
   "faqs": [
-    ["Can I teach only early reading and phonics?", "Yes. Early reading is a specialist skill and a profile that says so clearly is matched to requests for young children, not to board-year literature. List the classes you take, and add primary English or phonics in your subjects so parents of five to seven year olds can find you."],
-    ["Do I need to know every board's English paper?", "No. Teach the boards you know and name them on your profile. Requests are matched on board as well as class, so an ICSE specialist is not sent IGCSE coursework requests unless the profile says IGCSE. Learn the current paper for any board you add."],
-    ["Can I teach English online to students across India?", "Yes. Choose online or both. Online requests are matched on subject, board, class and your hours rather than your city. Agree with each family how written work will reach you, such as a shared document or photos of the notebook, before the first lesson."],
-    ["What does a parent see before booking a demo with me?", "Your profile, including the classes, boards and subjects you teach, your areas and your fee per class. Parents see the fee before the demo, which is free for them, and they choose one of the two or three shortlisted tutors to try."],
-    ["What is checked when I join?", "Your identity. You confirm your phone or email with a one-time code and upload a government photo ID that our team reviews before your profile goes live, and you then carry a Verified badge. It is not a police check. How we verify tutors explains the process."],
-    ["How much does it cost an English tutor to join?", "The tutor plans, and what each one includes, are on our pricing page. Look at them before you sign up. The fee you charge families is your own decision and is shown to parents before the demo, separate from the plan you choose."]
-  ]
+    [
+      "Can I teach only early reading and phonics?",
+      "Yes. Early reading is a specialist skill and a profile that says so clearly is matched to requests for young children, not to board-year literature. List the classes you take, and add primary English or phonics in your subjects so parents of five to seven year olds can find you."
+    ],
+    [
+      "Do I need to know every board's English paper?",
+      "No. Teach the boards you know and name them on your profile. Requests are matched on board as well as class, so an ICSE specialist is not sent IGCSE coursework requests unless the profile says IGCSE. Learn the current paper for any board you add."
+    ],
+    [
+      "Can I teach English online to students across India?",
+      "Yes. Choose online or both. Online requests are matched on subject, board and class rather than your city. Agree with each family how written work will reach you, such as a shared document or photos of the notebook, before the first lesson."
+    ],
+    [
+      "What does a parent see before booking a demo with me?",
+      "Your profile, including the classes, boards and subjects you teach, your areas and your fee per class. Parents see the fee before the demo, which is free for them, and they choose one of the two or three shortlisted tutors to try."
+    ],
+    [
+      "What is checked when I join?",
+      "Your identity. You confirm your phone or email with a one-time code and upload a government photo ID that our team reviews before your profile goes live, and you then carry a Verified badge. It is not a police check. How we verify tutors explains the process."
+    ],
+    [
+      "How much does it cost an English tutor to join?",
+      "The tutor plans, and what each one includes, are on our pricing page. Look at them before you sign up. The fee you charge families is your own decision and is shown to parents before the demo, separate from the plan you choose."
+    ]
+  ],
+  "story": [
+    "Sign up with a one-time code and say which English you teach: early reading, grammar and writing, board literature for ICSE or ISC, or international-school English.",
+    "Upload a government photo ID through your dashboard; our team reviews it before your profile becomes visible, and an ID number can belong to only one tutor account.",
+    "Your profile goes live with the Verified badge, showing classes, boards, the skills you focus on, home or online, and the fee you set for each class.",
+    "A parent asks for help with a Class 10 student losing marks on letter writing, for instance. Two or three tutors who fit are shortlisted, nearest first for home lessons.",
+    "The family has seen your fee, and the demo is free for them. Ask for a recent piece of the student's writing and teach from that, not from a script.",
+    "Teach at home, online or both. Reading aloud, comprehension and essay feedback all work over video when the parent can see the screen; agree the pattern at the demo."
+  ],
+  "women": {
+    "intro": "A parent who would prefer a woman tutor for English, perhaps for a young reader or a daughter, can ask for one, and NXTutors respects that as the family's choice. Women English tutors decide how they work: lessons in the family's home, online, or a mix, in the localities and at the hours they choose. Every tutor who joins goes through an ID check before the profile goes live, real tutors who pass carry the Verified badge, and the first lesson with any family is a demo where we ask a parent to be present.",
+    "points": [
+      "Home, online or hybrid: English lessons adapt well to all three.",
+      "Only the localities you list are used for home requests.",
+      "Your hours are yours; parents see them before the demo.",
+      "The demo happens where we ask a parent to be at home or watching online.",
+      "Share reading lists and feedback through the parent's phone or a family group.",
+      "Ask to be added to the gate register or visitor app in a gated society.",
+      "Stop any classes that concern you and tell us; /safeguarding-policy has the full rules."
+    ]
+  }
 }

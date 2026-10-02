@@ -5,12 +5,67 @@
     "Home and online lessons both have a place here. A request from Sector 44 is matched with tutors in that sector first, then the rest of its zone, then elsewhere in the tricity, then online tutors, and the family sees two or three of them with fees shown before a free first demo; switching later costs them nothing. Because sector numbers make homes easy to find, home lessons are simple once the commute works. For Aerocity, outer Zirakpur or a specialist senior paper, an online session alongside home visits is often the practical answer for both sides."
   ],
   "zone_notes": {
-    "Chandigarh Sectors 1–30": "Most homes open straight onto the street, so the sector, block letter and house number, plus which bell to ring for a builder floor, are all you need; there is rarely a gate register. Start evening lessons before the return rush on Madhya Marg and Dakshin Marg, and agree parking near the Sector 22 market, Sadar Bazaar or the Sector 16 stadium.",
-    "Chandigarh Sectors 31–56 & Manimajra": "Housing-board flats in Sectors 38 to 47 use sub-sector, block and flat numbers that confuse first-time visitors, and the Sector 49 societies have a guard who should know your name before the demo. Manimajra mixes narrow old-town lanes with planned complexes, and Housing Board Chowk is the junction to avoid at its busiest.",
-    "Mohali": "Mohali's first eleven sectors are called phases, so learn the mapping, such as Phase 7 being Sector 61, and note that the early phases are houses while Phase 10 and Sector 70 add apartment complexes with gate registration. Aerocity has fewer tutors living inside it so far, so tutors from the phases, from Zirakpur or from Chandigarh's southern sectors near Phase 7 can cover it.",
-    "Panchkula & Zirakpur": "Panchkula Sector 20 and most of Zirakpur are gated societies where you register once at the gate and check visitor parking, while Sectors 8 and 15 are plotted houses and builder floors. Crossing into Chandigarh means Madhya Marg and Housing Board Chowk, and Navratra crowds around Mansa Devi Complex call for earlier or online lessons."
+    "Chandigarh Sectors 1–30": "Most homes open straight onto the street, so the sector, block letter and house number, plus which bell to ring for a builder floor, are all you need; there is rarely a gate register. Start evening lessons before the return rush on Madhya Marg and Dakshin Marg, and agree parking near the Sector 22 market, Sadar Bazaar or the Sector 16 stadium. Tutors coming from Panchkula, Mohali or Zirakpur should aim to arrive before that rush.",
+    "Chandigarh Sectors 31–56 & Manimajra": "Housing-board flats in Sectors 38 to 47 use sub-sector, block and flat numbers that confuse first-time visitors, and the Sector 49 societies have a guard who should know your name before the demo. Manimajra mixes narrow old-town lanes with planned complexes, and Housing Board Chowk is the junction to avoid at its busiest. Ask for the sub-sector, such as 44-A or 44-C, and agree parking in Manimajra's lanes before the first visit.",
+    "Mohali": "Mohali's first eleven sectors are called phases, so learn the mapping, such as Phase 7 being Sector 61, and note that the early phases are houses while Phase 10 and Sector 70 add apartment complexes with gate registration. Aerocity has fewer tutors living inside it so far, so tutors from the phases, from Zirakpur or from Chandigarh's southern sectors near Phase 7 can cover it. Plan around match days near the Phase 9 stadiums.",
+    "Panchkula & Zirakpur": "Panchkula Sector 20 and most of Zirakpur are gated societies where you register once at the gate and check visitor parking, while Sectors 8 and 15 are plotted houses and builder floors. Crossing into Chandigarh means Madhya Marg and Housing Board Chowk, and Navratra crowds around Mansa Devi Complex call for earlier or online lessons. A tutor who prefers not to cross can list only their own side and take other families online."
   },
   "boards": "Tricity tutors teach CBSE, ICSE and ISC, the Punjab School Education Board on the Mohali side, the Board of School Education Haryana in Panchkula, and IB or IGCSE. For the two state boards, confirm each year's syllabus and scheme on the board's own website and work from its prescribed books. CBSE sample papers and marking schemes are on the CBSE academic site, and ICSE and ISC regulations on the CISCE site. On your profile, name the boards you actually teach rather than listing all five.",
+  "board_cards": [
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "Across Chandigarh, Mohali and Panchkula, CBSE is the board almost every tutor meets. Build lessons on NCERT, use the sample papers and marking schemes on cbseacademic.nic.in, and train students to show every step. Families cross town lines, so one CBSE tutor may teach in two or three municipalities in the same week.",
+      "page": "/cbse-home-tutor-chandigarh"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "ICSE in Class 10 and ISC in Class 12 ask for full, structured answers over a wide syllabus, with prescribed English literature and project work in each subject. In the tricity, a CISCE tutor should plan steady revision of every chapter; regulations and specimen papers are on cisce.org.",
+      "page": "/icse-home-tutor-chandigarh"
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "IB Diploma students in the tricity need tutors who know the course by name: Maths Analysis and Approaches or Applications and Interpretation, at SL or HL, plus internal assessment that a tutor may guide but never write. Read the subject guides at ibo.org; online lessons let you reach families in all three towns.",
+      "page": "/ib-tutor-chandigarh"
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "For Cambridge IGCSE, or Pearson Edexcel's International GCSE, the job is technique: command words, the right tier, and past papers marked against the official scheme. Keep a bank of marked papers, and offer online sessions so a Mohali or Panchkula student can work with you between visits.",
+      "page": "/igcse-tutor-chandigarh"
+    }
+  ],
+  "women": {
+    "intro": "Women tutors are welcome on NXTutors across Chandigarh, Mohali, Panchkula and Zirakpur, for home lessons, online teaching or both. Because the tricity spans three municipalities, your choice of zones matters: you might keep to the plotted sectors you know and teach Zirakpur or Aerocity families online. Every tutor who joins goes through one ID check, every new family starts with a demo where we ask a parent to be at home, and the safeguarding policy lists rules for tutors and parents alike. That is how the platform works; it is not a promise about any individual.",
+    "points": [
+      "Choose home, online or hybrid, and update it whenever your timetable changes.",
+      "Select only the zones you want, such as Sectors 1–30 or the Mohali phases, and skip any town you would rather not reach in the evening.",
+      "List the hours you are free so tricity families can tell when you are able to come.",
+      "Meet a new family at the free demo, where we ask a parent to be at home, before agreeing regular classes.",
+      "In the Sector 49 societies, Panchkula Sector 20 and Zirakpur, ask the family to register you at the gate so visits are logged.",
+      "Keep every arrangement, from fees to timetable changes, with a parent rather than the student directly.",
+      "Teach young children in a shared room with an adult present, and keep cameras on for online lessons.",
+      "Stop any class that worries you and tell NXTutors, marking it Safeguarding; call 112 first in an emergency."
+    ]
+  },
+  "story": [
+    "Join from any of the three towns. Confirm your phone or email with a one-time code, then add your subjects, classes, boards and the tricity sectors and phases you can reach.",
+    "Upload a government photo ID; the team looks at it before your profile is published. The check confirms identity only, so it is not police verification or a background check.",
+    "Once approved, your profile goes live carrying the Verified badge, with your boards, the Chandigarh, Mohali or Panchkula zones you cover, your free hours and your fee.",
+    "A family in Sector 35 or Phase 7 asks for a tutor. The shortlist holds two or three names: nearby tutors first, then those travelling in, then the zone, the city and online.",
+    "The family can see your fee before they book, and lesson one is a free demo where we ask a parent to be present, so both sides can decide on fit, timing and route.",
+    "Teach at home in the sectors you chose, online for students anywhere, or both, perhaps a weekend visit across town with online classes on weekdays."
+  ],
   "faqs": [
     [
       "How do I get tuition requests across Chandigarh, Mohali and Panchkula?",
@@ -31,6 +86,18 @@
     [
       "Are tutor plans listed somewhere?",
       "Yes, on /pricing, along with what each plan includes. The fee for your lessons is yours to decide and appears on your profile, so families know it before booking the free first demo. If a family later wants to try someone else, the switch is free for them, which is why steady, prepared lessons matter."
+    ],
+    [
+      "Can women tutors in the tricity choose not to travel between towns?",
+      "Yes. Your travel areas are your choice, so you can list only Panchkula sectors, only the Mohali phases or only Chandigarh's sectors. Home requests follow those choices, and your listed hours tell families when you can visit. Families meet you first at a free demo where we ask a parent to be at home, and online teaching covers anyone further away."
+    ],
+    [
+      "Which boards can I teach in Chandigarh, Mohali and Panchkula?",
+      "Tricity families ask for CBSE, CISCE's ICSE and ISC, and the IB Diploma or Cambridge IGCSE, and some study under the Punjab or Haryana state boards depending on the town. List the boards and classes you know in depth, and check any state-board scheme on that board's own website."
+    ],
+    [
+      "Is a hybrid plan practical across the three towns?",
+      "Often, yes. If a family lives across a town line from you, a weekly home lesson plus one or two online classes keeps the trip to once a week. Tick both home and online on your profile, and agree the split with the parent after the demo."
     ]
   ]
 }

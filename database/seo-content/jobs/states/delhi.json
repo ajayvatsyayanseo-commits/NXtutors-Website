@@ -5,6 +5,36 @@
     "site": "https://www.cbse.gov.in",
     "summary": "Delhi has no separate state board described here, so this box covers CBSE, the national board. Its 2026-27 secondary curriculum on cbseacademic.nic.in gives most major subjects an 80-mark board paper and 20 marks of internal assessment, asks for 33 per cent to pass, and puts about half of each paper into competency-focused questions. Under a notification of 14 February 2026, Class 10 has two board examinations from 2026: the first compulsory, the second optional for improving up to three subjects."
   },
+  "board_cards": [
+    {
+      "key": "cbse",
+      "name": "Central Board of Secondary Education (CBSE)",
+      "site": "https://www.cbse.gov.in",
+      "classes": "Classes 1–12; board examinations in Classes 10 and 12",
+      "note": "Our Delhi page calls CBSE the board most Delhi students sit. Its 2026-27 secondary curriculum puts about half of each paper into competency-focused questions and gives most major subjects 80 marks of board paper and 20 of internal assessment. From 2026 Class 10 has two board examinations, the second optional for improving up to three subjects."
+    },
+    {
+      "key": "cisce",
+      "name": "Council for the Indian School Certificate Examinations (CISCE)",
+      "site": "https://cisce.org",
+      "classes": "ICSE (Class 10), ISC (Class 12)",
+      "note": "ICSE and ISC have a sizeable following in Delhi, according to our city page. A tutor taking these students should know that the syllabi run wider than CBSE in several subjects and that answers are expected in full. List them as separate lines and keep the council's specimen papers handy for demos."
+    },
+    {
+      "key": "ib",
+      "name": "International Baccalaureate (IB)",
+      "site": "https://www.ibo.org",
+      "classes": "Primary Years, Middle Years and Diploma Programmes",
+      "note": "A smaller group of Delhi students study for the IB, our city page notes. The Diploma combines final examinations with internally assessed work, and maths runs as Analysis and Approaches or Applications and Interpretation at Standard or Higher Level. Tutors guide the method of internal assessments without writing any of it."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge IGCSE",
+      "site": "https://www.cambridgeinternational.org",
+      "classes": "IGCSE, usually around Classes 9–10",
+      "note": "Cambridge IGCSE also serves a smaller group in Delhi. Preparation turns on command words, the right tier, Core or Extended, and past papers marked against the official scheme. An outer-Delhi tutor with IGCSE experience can mark online teaching, since these families often look across the city for a specialist."
+    }
+  ],
   "intro": [
     "Delhi has a detailed tuition-jobs page of its own, divided into zones such as Dwarka, Rohini and Mayur Vihar with Patparganj, each with the colonies a tutor can choose to cover. This state page is for tutors whose base sits outside those listed colonies, in places like Narela, Bawana, Najafgarh or Burari on the outer edge of the territory, and for anyone who wants to teach mostly online. Write your exact locality when you join. Home requests are offered to the nearest suitable tutors first, then to the same zone, so precise information is what gets a nearby family's request to you.",
     "A Delhi student may be on CBSE, ICSE, IGCSE or IB, and the board each family follows is stated in their request. Tell us all the boards and classes you teach, and whether you prefer Hindi or English medium. Every request ends in a shortlist of two or three tutors; the family sees each fee you have set, takes a free first class, and is free to switch later if the fit is not right. Outer Delhi tutors can also say whether they will travel into a neighbouring zone, such as Rohini or Dwarka, for a home class."
@@ -12,44 +42,64 @@
   "towns": [
     {
       "name": "Narela",
-      "note": "Online students can choose a Narela tutor from anywhere."
+      "note": "Narela tutors can join from this page even though our Delhi city page is organised by zones. Name your own block or pocket, then add any neighbouring areas you will visit. Home requests start with the tutors living nearest the family, and online students can come from anywhere."
     },
     {
       "name": "Bawana",
-      "note": "Hours you can give in Bawana belong on your profile."
+      "note": "If you live in Bawana and prefer to teach without travelling, choose online only; matching then depends on subject, class and board. If you are happy to visit nearby colonies, add them by name so a family close to you is offered your profile first."
     },
     {
       "name": "Najafgarh",
-      "note": "Say how far beyond Najafgarh you will travel for lessons."
+      "note": "Najafgarh tutors who are willing to travel into Dwarka should list the exact sectors, not the whole sub-city. That way you sit in the shortlist for requests you can reach on a weekday evening, and you are not offered families too far for regular classes."
     },
     {
       "name": "Alipur",
-      "note": "You can run home visits in Alipur alongside online lessons."
+      "note": "An Alipur tutor with free mornings can list them; some students, at home or online, prefer an early slot before school, while others want the late afternoon. Give every hour you can genuinely keep, and each request will show which one a family wants."
     },
     {
       "name": "Burari",
-      "note": "Online lessons let Burari tutors teach in other states."
+      "note": "Burari teachers with CBSE experience should mention the classes and the subjects separately, for instance Class 8 science and Class 10 maths. Requests carry class, board and subject together, and a specific profile matches more cleanly than a general one."
     },
     {
       "name": "Kanjhawala",
-      "note": "Teaching from home in Kanjhawala? Online classes work too."
+      "note": "Kanjhawala tutors who are happy to teach two children from one household, perhaps in different classes, can say so on their profile. A family with siblings may ask for exactly that, and the demo is the place to agree how the hour is shared."
     },
     {
       "name": "Nangloi",
-      "note": "Write down your Nangloi neighbourhood; nearby requests come first."
+      "note": "In Nangloi, a tutor who teaches in Hindi as well as English can say which medium suits each subject. A child who studies in one language is then not sent a tutor who teaches in the other, and stating it up front avoids a demo that does not suit anyone."
     },
     {
       "name": "Mundka",
-      "note": "Say whether lessons in Mundka run in English or Hindi."
+      "note": "Mundka tutors who cover senior classes can mark online hours for specialist subjects and keep home classes for younger students close by. That hybrid pattern is easy to show on the profile and lets a family pick the arrangement that suits their child."
     },
     {
       "name": "Chhawla",
-      "note": "Put your strongest subjects for Chhawla students first."
+      "note": "From Chhawla, give the precise locality where you live, then decide how far you will go for a home class. A short travel list keeps the requests you receive practical. Add ICSE, IB or IGCSE only if you have taught those courses yourself."
     },
     {
       "name": "Badarpur",
-      "note": "Distance comes first: give your Badarpur locality."
+      "note": "Badarpur tutors near the Faridabad side who can also visit there should add those Faridabad localities by name. The Faridabad tuition-jobs page has its own zones; listing specific places keeps home requests within reach while online teaching stays open across India."
     }
+  ],
+  "women": {
+    "intro": "Women who tutor from Delhi's outer villages and colonies, from Narela to Chhawla, can join NXTutors on their own terms. Choose home, online or hybrid teaching, name only the blocks and pockets you will visit, and set hours that fit your day. Every tutor who joins confirms a phone or email with a one-time code and uploads a government photo ID that our team reviews; real tutors who pass carry a Verified badge. Families meet you first at a demo class where we ask a parent to be at home, and you can end an arrangement and tell us whenever you need to.",
+    "points": [
+      "Pick home, online or hybrid teaching on your profile.",
+      "Give only the blocks, pockets or colonies you are happy to visit.",
+      "Keep the hours that suit you; evenings only is fine.",
+      "Meet each new family at a demo where we ask a parent to be at home.",
+      "In a gated society, ask for your name on the gate register or visitor app.",
+      "Teach in a shared room and keep messages with the parent.",
+      "Stop any classes that worry you and tell us straight away."
+    ]
+  },
+  "story": [
+    "Sign up from Narela, Najafgarh or any outer-Delhi locality with a one-time code sent to your phone or email. Add your block, the colonies you will visit and whether you teach online.",
+    "Upload a government photo ID through the dashboard. Our team reviews it against your profile, which stays pending until then, and one ID number can only ever belong to one tutor account.",
+    "With the review complete, your profile goes live with a Verified badge, showing the CBSE, ICSE, IB or IGCSE classes you teach, your medium and your fee.",
+    "A Delhi family near you sends a request naming the class, board and subject. Two or three tutors are shortlisted: nearest first, then the zone and the city, then online.",
+    "Your first class with the family is a free demo for them, and they saw your fee beforehand. Teach the topic the student is on at school this week.",
+    "If they carry on, you teach at home, online or both, on days agreed with the parent. Update your colonies and hours as your timetable changes."
   ],
   "faqs": [
     [
@@ -71,6 +121,18 @@
     [
       "Are tutor plans free?",
       "No, tutor plans are paid. The pricing page (/pricing) sets out what each plan includes. The amount you charge per lesson is your own decision and is shown to the parent before the demo."
+    ],
+    [
+      "Can a woman tutor in outer Delhi choose online only?",
+      "Yes. Set the profile to online only and you are matched by subject, class and board rather than distance. You can add home classes later, limited to the blocks you name. Every new family meets you at a demo where we ask a parent to be at home first."
+    ],
+    [
+      "Which boards should I list from Delhi?",
+      "Our Delhi page names CBSE as the board most students sit, with ICSE and ISC widely followed and a smaller group on the IB or Cambridge IGCSE. List only what you have taught, by class and subject, and the request will tell you a family's board."
+    ],
+    [
+      "What is a hybrid arrangement?",
+      "It means teaching the same student both at home and online, for instance a home class on weekdays and an online doubt session before a test. Mark both on your profile, give your home localities, and agree the split with the parent during the demo."
     ]
   ]
 }

@@ -5,6 +5,43 @@
     "site": "https://wbbse.wb.gov.in",
     "summary": "The West Bengal Board of Secondary Education came into being in 1951 under the West Bengal Secondary Education Act of 1950 and took its present name in 1964. It conducts the secondary examination after Class 10, known as Madhyamik Pariksha, publishes some Class IX–X textbooks and issues an annual academic calendar; the 2026 calendar sets formative evaluation in Classes IX–X and summative evaluations during the year. Classes 11 and 12 come under the West Bengal Council of Higher Secondary Education (wbchse.wb.gov.in)."
   },
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "West Bengal Board of Secondary Education (WBBSE), with WBCHSE for Classes 11–12",
+      "site": "https://wbbse.wb.gov.in",
+      "classes": "Madhyamik (Class 10); Higher Secondary under WBCHSE",
+      "note": "WBBSE came into being in 1951 under the West Bengal Secondary Education Act of 1950 and took its present name in 1964. It conducts Madhyamik Pariksha after Class 10, publishes some Class IX–X textbooks and issues an annual academic calendar; the 2026 calendar sets formative and summative evaluations in Classes IX–X. Higher Secondary sits with WBCHSE."
+    },
+    {
+      "key": "cbse",
+      "name": "Central Board of Secondary Education (CBSE)",
+      "site": "https://www.cbse.gov.in",
+      "classes": "Classes 1–12; board examinations in Classes 10 and 12",
+      "note": "Our Kolkata page says CBSE is widely taken in the city. A West Bengal tutor who teaches it alongside Madhyamik should label the two separately and plan CBSE lessons from NCERT and the current session's sample papers on cbseacademic.nic.in, since the paper styles differ."
+    },
+    {
+      "key": "cisce",
+      "name": "Council for the Indian School Certificate Examinations (CISCE)",
+      "site": "https://cisce.org",
+      "classes": "ICSE (Class 10), ISC (Class 12)",
+      "note": "ICSE and ISC have a long and strong following in Kolkata, according to our city page. Tutors taking these students need the council's prescribed texts, especially for English, and its specimen papers, and should model full, well organised answers in every demo."
+    },
+    {
+      "key": "ib",
+      "name": "International Baccalaureate (IB)",
+      "site": "https://www.ibo.org",
+      "classes": "Primary Years, Middle Years and Diploma Programmes",
+      "note": "A smaller group in Kolkata follow the IB, our city page notes. The Diploma blends final exams with internal assessment, and maths comes as Analysis and Approaches or Applications and Interpretation at SL or HL. A tutor elsewhere in Bengal with IB experience can teach these students online."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge IGCSE",
+      "site": "https://www.cambridgeinternational.org",
+      "classes": "IGCSE, usually around Classes 9–10",
+      "note": "Cambridge IGCSE is the other international course our Kolkata page mentions for a smaller group. Preparing students means reading command words carefully, choosing Core or Extended and marking past papers against the official scheme. List the subjects you have taught."
+    }
+  ],
   "intro": [
     "Kolkata, together with Salt Lake, New Town and Howrah, has a tuition-jobs page with zones, and tutors there should choose zones on that page. For Siliguri, Durgapur, Asansol, Bardhaman, Kharagpur and the rest of West Bengal, this page is the starting point. Join with your town and the localities you can reach. A home request goes first to the nearest suitable tutors, then outward to zone, city and online. Online lessons are matched on subject, class and board alone, so a tutor in Jalpaiguri or Bankura can teach a student anywhere in India.",
     "West Bengal students may sit the Madhyamik through WBBSE and continue under the Council of Higher Secondary Education, or follow CBSE, ICSE or another board, in Bengali or English medium. List all of them. One point worth knowing: the board's 2026 academic calendar restates a rule that a teacher shall not engage in private tuition for personal gain, so if you also teach in a school, check the rules that apply to you. Each request ends with two or three tutors and their fees; the first class is a free demo."
@@ -12,56 +49,76 @@
   "towns": [
     {
       "name": "Siliguri",
-      "note": "Home lessons in Siliguri go first to tutors nearby."
+      "note": "Siliguri tutors register through this West Bengal page, since our city page in the state is Kolkata's. Type your para or ward precisely: requests for home lessons go to the closest tutors before widening, and video lessons can reach students in any state."
     },
     {
       "name": "Durgapur",
-      "note": "Write down your Durgapur neighbourhood; nearby requests come first."
+      "note": "Durgapur tutors teaching Madhyamik and Higher Secondary should list them separately, since WBBSE runs the first and WBCHSE the second. A request usually says which, and the right label keeps you on the right shortlists."
     },
     {
       "name": "Asansol",
-      "note": "Your preferred classes in Asansol can go on your profile."
+      "note": "Asansol tutors who teach in Bengali, Hindi or English can mark the medium beside each subject. Where a request makes the student's language clear, matching on it saves a demo that would not suit the student."
     },
     {
       "name": "Bardhaman",
-      "note": "Distance comes first: give your Bardhaman locality."
+      "note": "College students in Bardhaman tutoring alongside their degree should list a weekly timetable they can keep through their own exams. Parents compare hours and fees across two or three tutors before choosing a demo."
     },
     {
       "name": "Kharagpur",
-      "note": "If you are based in Kharagpur, add online hours too."
+      "note": "Kharagpur tutors with senior physics, chemistry or maths can name the Higher Secondary subjects precisely. WBCHSE runs that stage, and a student comparing tutors looks at depth in the subject before anything else."
     },
     {
       "name": "Haldia",
-      "note": "Keep both options open from Haldia: home and online."
+      "note": "Haldia teachers who follow the WBBSE academic calendar, with its formative and summative evaluations in Classes IX and X, can mention how they plan around it. Parents may ask, and a clear answer at the demo is reassuring."
     },
     {
       "name": "English Bazar (Malda)",
-      "note": "Say how far beyond English Bazar you will travel for lessons."
+      "note": "English Bazar tutors who teach Bengali or English as subjects can say which classes they take and what they focus on, from grammar to essay writing. A short note on method gives a parent something concrete to compare."
     },
     {
       "name": "Krishnanagar",
-      "note": "Students outside Krishnanagar can still book you online."
+      "note": "Krishnanagar tutors whose strength is Classes 1 to 5 can keep that range on a line of its own. A parent of a young child is looking for something different from a Madhyamik family, and the separate entry helps you reach the right one."
     },
     {
       "name": "Baharampur",
-      "note": "Teaching from home in Baharampur? Online classes work too."
+      "note": "Baharampur tutors willing to teach two siblings in one visit can say so on the profile. Families with children in different classes may ask, and the demo is where to agree how the hour is divided."
     },
     {
       "name": "Jalpaiguri",
-      "note": "A tutor living in Jalpaiguri can teach online across India."
+      "note": "Jalpaiguri tutors willing to visit particular Siliguri localities can name them, while keeping their own town first. Exact place names, not a broad promise, keep the home requests you are offered practical on a school evening."
     },
     {
       "name": "Midnapore",
-      "note": "Put your strongest subjects for Midnapore students first."
+      "note": "Midnapore tutors should put down their precise locality before any wider list. Home matching begins at the family's address and widens step by step, so an exact base is what puts you in front of nearby parents."
     },
     {
       "name": "Bankura",
-      "note": "Mark which areas near Bankura you will visit."
+      "note": "Bankura tutors new to private teaching can start with the subjects they are surest of and add more later. A family reads your whole profile before the demo, and an accurate, narrower one tends to hold up better in that first lesson."
     },
     {
       "name": "Cooch Behar",
-      "note": "Tutors who live in Cooch Behar can mark nearby localities."
+      "note": "Cooch Behar tutors with Higher Secondary science, maths or commerce can name those subjects precisely and mark online to reach senior students across the state. Keep home lessons to the paras you reach comfortably."
     }
+  ],
+  "women": {
+    "intro": "Women who tutor in West Bengal, from Siliguri and Durgapur to Midnapore and Cooch Behar, can join NXTutors and teach on their own terms. Home lessons, video lessons or a mix are all possible. You name the paras and wards you will visit and the hours you will keep, and nothing else is assumed. Every tutor who joins confirms a phone or email with a one-time code and uploads a government photo ID, which our team reviews before the profile appears; real tutors who pass carry a Verified badge. A parent is at home for your first lesson with every family.",
+    "points": [
+      "Home, video or both, set on your profile and open to change.",
+      "Only the paras and wards you name are used for home requests.",
+      "Choose your hours; parents see them before any demo.",
+      "Your first lesson with a family has a parent at home.",
+      "In an apartment block, ask to be entered in the visitor register.",
+      "Settle fees and timings with the parent.",
+      "Worried? Stop the lessons and tell us on WhatsApp straight away."
+    ]
+  },
+  "story": [
+    "Begin from Siliguri, Asansol or any Bengal town by confirming your phone or email with a one-time code. Add your para, the places you will visit and whether you teach online.",
+    "Upload a government photo ID through the dashboard. Our team checks it while your profile remains pending, and an ID number can belong to one tutor account only.",
+    "Cleared, your profile goes live with the Verified badge, listing Madhyamik, Higher Secondary, CBSE or ICSE classes, subjects, medium and the fee you set for each lesson.",
+    "A nearby family requests a tutor for a class, board and subject. Two or three are shortlisted: whoever lives nearest first, then further out, then online.",
+    "The family has seen your fee, and the first lesson is a free demo for them. Teach the chapter the student is working through at school.",
+    "If they continue, you teach at home, online or both on days fixed with the parent, and keep your paras and hours current as students join."
   ],
   "faqs": [
     [
@@ -83,6 +140,18 @@
     [
       "Do tutors pay a fee to NXTutors?",
       "Tutor plans are paid. /pricing lists what each plan includes. The fee you charge families is your own."
+    ],
+    [
+      "Can a woman tutor in West Bengal avoid home visits?",
+      "Yes. Choose online only and you are shortlisted on subject, class and board, not where you live. If you add home lessons later, only your listed paras are used, and every new family meets you at a demo where we ask a parent to be at home."
+    ],
+    [
+      "Which boards should I list from West Bengal?",
+      "Madhyamik under WBBSE and Higher Secondary under WBCHSE if you teach them, plus CBSE, ICSE, ISC, IB or IGCSE only where you have real experience; our Kolkata page shows all of these in use. Each request names its board."
+    ],
+    [
+      "Can I mix home and online teaching?",
+      "Yes. Tick both, give your home paras and add online hours if they differ. Keep separate home and online students, or teach one student both ways, as agreed with the parent at the demo."
     ]
   ]
 }

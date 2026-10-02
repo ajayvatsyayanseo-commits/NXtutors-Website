@@ -5,12 +5,57 @@
     "Home lessons and online lessons combine naturally in the capital. A request from Pattom is matched first with tutors in Pattom, then the rest of the zone, then the city, then online, and the family sees two or three tutors with their fees before a free first demo; switching later is free for the family. Many parents around Kazhakkoottam work IT shifts, so a tutor who can move a long-workday lesson online is useful there, and families in gated villa communities value a tutor who sets up a standing gate entry in the first week."
   ],
   "zone_notes": {
-    "Kowdiar & Pattom": "Pattom, Vellayambalam and Kesavadasapuram are busy junctions with good bus links, which makes the zone easy to reach but slow at office hours, so slightly later evening slots hold better. Apartment buildings want your name and visiting days at the security desk once, while Kowdiar and Sasthamangalam houses need only the gate and a place for a scooter.",
-    "Peroorkada & Vattiyoorkavu": "Villas, independent houses and gated villa communities dominate, so expect a gate registration in the communities and a house name rather than a number elsewhere, with a map pin to help. Traffic follows government office hours around the Civil Station at Kudappanakunnu and school hours along MC Road in Nalanchira, and flyover work is planned at the Peroorkada junction.",
-    "Ulloor & Kazhakkoottam": "Apartment projects and villa communities along NH 66 register visitors, and many parents here work IT shifts, so a standing entry and an online fallback for long workdays help. Kazhakuttam station and frequent buses along NH 66 connect the corridor, while the hospital junction at Ulloor is crowded at peak hours.",
-    "Thycaud & Karamana": "With Thampanoor's railway station and the East Fort bus terminal close by, this is the easiest zone to reach by public transport. Karamana's old streets of wall-sharing houses favour a tutor on foot or scooter, Thirumala and Nemom are independent houses with doorstep access, and roads around Thampanoor and Poojappura are heaviest at office hours."
+    "Kowdiar & Pattom": "Pattom, Vellayambalam and Kesavadasapuram are busy junctions with good bus links, which makes the zone easy to reach but slow at office hours, so slightly later evening slots hold better. Apartment buildings want your name and visiting days at the security desk once, while Kowdiar and Sasthamangalam houses need only the gate and a place for a scooter. Tell families which junction you come from, since each draws on different bus routes.",
+    "Peroorkada & Vattiyoorkavu": "Villas, independent houses and gated villa communities dominate, so expect a gate registration in the communities and a house name rather than a number elsewhere, with a map pin to help. Traffic follows government office hours around the Civil Station at Kudappanakunnu and school hours along MC Road in Nalanchira, and flyover work is planned at the Peroorkada junction. Allow some buffer around the Peroorkada junction once flyover work starts.",
+    "Ulloor & Kazhakkoottam": "Apartment projects and villa communities along NH 66 register visitors, and many parents here work IT shifts, so a standing entry and an online fallback for long workdays help. Kazhakuttam station and frequent buses along NH 66 connect the corridor, while the hospital junction at Ulloor is crowded at peak hours. Ask for a standing entry in the first week, and route around the Ulloor junction at peak hours, especially for homes on the Akkulam road.",
+    "Thycaud & Karamana": "With Thampanoor's railway station and the East Fort bus terminal close by, this is the easiest zone to reach by public transport. Karamana's old streets of wall-sharing houses favour a tutor on foot or scooter, Thirumala and Nemom are independent houses with doorstep access, and roads around Thampanoor and Poojappura are heaviest at office hours. In Karamana, agree where a two-wheeler can be parked before the first lesson."
   },
   "boards": "Tutors in the capital teach Kerala State Board students in the SSLC and Higher Secondary years, plus CBSE and CISCE's ICSE and ISC. Take the exam pattern and timetable for state papers only from the state's official examination notices each year, and work from the state textbooks the school uses. CBSE sample papers and marking schemes are on the CBSE academic site, and ICSE and ISC regulations on the CISCE site. If you teach the state syllabus, list the medium too, Malayalam or English, because families ask for it.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Kerala State Board (Kerala Pareeksha Bhavan for SSLC; Higher Secondary)",
+      "site": "https://keralapareekshabhavan.in/",
+      "classes": "SSLC (Class 10); Higher Secondary (Classes 11–12)",
+      "note": "Students on the state syllabus sit the SSLC at the end of Class 10, with notices through Kerala Pareeksha Bhavan, and the Higher Secondary examination across Classes 11 and 12. Kerala's state schools usually reopen in June, later than CBSE's April start. Teach from the state textbooks, in Malayalam or English as the student uses."
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "In the capital, CBSE families live from Kowdiar and Pattom to the IT corridor along NH 66. Work from NCERT and test against the sample papers and marking schemes on cbseacademic.nic.in; Class 9 is where Maths and Science first become demanding, so close gaps then. Parents may ask how this year's paper is set.",
+      "page": "/cbse-home-tutor-thiruvananthapuram"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "CISCE sets the ICSE examination in Class 10 and the ISC in Class 12. Answers must be long and organised across a wide syllabus, and English includes prescribed literature, so the pressure is breadth rather than depth. A Thiruvananthapuram tutor plans revision that keeps returning to early chapters; regulations are on cisce.org.",
+      "page": "/icse-home-tutor-thiruvananthapuram"
+    }
+  ],
+  "women": {
+    "intro": "Women tutors are welcome on NXTutors in Thiruvananthapuram, for home lessons, online classes or a mix. You set the zones and hours: a tutor in Peroorkada can keep to the villas and houses around her, one near Thampanoor can use the station and bus terminal for trips across the city, and families on long IT shifts in Kazhakkoottam can be taught online. Every tutor who joins goes through one ID check, a parent is at home for the free demo, and the safeguarding policy sets rules on both sides.",
+    "points": [
+      "Choose home, online or hybrid on your profile; switch whenever you like.",
+      "List only the zones you want to reach, and leave out junctions such as Pattom or Ulloor at office hours if those trips do not suit you.",
+      "Your free hours show families when you can come, so add evening slots only if you want them.",
+      "Each new family meets you at a free demo while a parent is home.",
+      "In villa communities and NH 66 apartment projects, ask the family to arrange a standing entry so every visit is logged at the gate.",
+      "Keep fees, timings and messages with a parent, and teach young children in a shared room with an adult at home.",
+      "If anything troubles you, stop the classes and tell NXTutors, marked Safeguarding; call 112 first in an emergency."
+    ]
+  },
+  "story": [
+    "Join with a one-time code to your phone or email, then add your subjects, classes and boards, SSLC or Higher Secondary in Malayalam or English, CBSE or ICSE, and the zones you reach.",
+    "Upload a government photo ID. NXTutors reviews it before your profile goes public, and each ID number is linked to a single account. The check confirms identity, not background.",
+    "After review, your profile is live with the Verified badge, showing your boards and medium, your zones from Kowdiar to Karamana, your free hours and your fee.",
+    "A family in Pattom or Kazhakkoottam sends a request. We shortlist two or three tutors: the nearest first, then those who travel there, then the zone, the city and online.",
+    "The family sees your fee before booking, and the first lesson is a free demo at their home where we ask a parent to be present, so you can see the student's level and the route.",
+    "Teach at homes in your zones, online for students elsewhere in Kerala or India, or both, perhaps a weekend visit with online classes around IT shift hours."
+  ],
   "faqs": [
     [
       "How do requests from Thiruvananthapuram families reach me?",
@@ -31,6 +76,18 @@
     [
       "Where are the tutor plans described?",
       "On /pricing, where each tutor plan and what it includes is set out. You decide your own lesson fee; families see it before the free first demo, and they can switch to another tutor later without being charged, so a clear fee and a well-planned demo matter more than a long list of subjects."
+    ],
+    [
+      "Can women tutors in Thiruvananthapuram choose to teach close to home?",
+      "Yes. You choose the zones you travel to, and home requests follow them, while your listed hours show families when you are free, so you could teach at home only around Peroorkada or Kowdiar and take other students online. A parent is home for the free demo before any regular slot is agreed."
+    ],
+    [
+      "Which boards do families in the capital ask about?",
+      "The Kerala State Board, through the SSLC and Higher Secondary, plus CBSE and CISCE's ICSE and ISC. Families ask for the medium as well, Malayalam or English, so put boards, classes and medium on your profile rather than a subject alone."
+    ],
+    [
+      "Does hybrid tuition suit families in Kazhakkoottam?",
+      "It can. Many parents there work IT shifts, so a weekend home lesson plus an online class on a long workday keeps lessons going when a visit is hard. Choose both modes on your profile and agree the pattern with the parent after the demo."
     ]
   ]
 }

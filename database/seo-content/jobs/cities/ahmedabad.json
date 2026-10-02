@@ -5,20 +5,110 @@
     "GSEB, the Gujarat board, is taught in Gujarati, English and other media, so families give board, class and medium together, and a tutor should be clear about the language they teach in. CBSE, ICSE and ISC are also followed, and a smaller group take the IB Diploma or Cambridge IGCSE. In Bopal and Shela, families often pair a nearby home tutor for core subjects with online lessons for specialist ones, and online teaching widens the choice for IB, IGCSE and advanced senior papers across the city. Mid-January's Uttarayan is a time to agree lesson changes in advance."
   ],
   "zone_notes": {
-    "Navrangpura, Paldi & Ellisbridge": "Old High Court links the Blue and Red Lines, and Red Line stops at Paldi, Ellisbridge and APMC let tutors from the north or east bank ride in. Apartment buildings want your name with the watchman before the first visit, independent houses need a lane and landmark, and roads towards the bridges are slowest at office hours.",
-    "Satellite, Vastrapur & Bodakdev": "Thaltej Gam, Thaltej, Doordarshan Kendra and Gurukul Road stations serve the northern half, but Satellite, Jodhpur and Vastrapur have no station, so most tutors come by two-wheeler, auto or BRTS. Towers along SG Highway often log a visitor's phone number at the gate, and the service lanes thicken in the evening rush.",
-    "Prahlad Nagar, Bopal & Shela": "No metro station serves this corridor, so tutors who already live in Bopal, South Bopal or Shela keep weekly slots most easily, and a ride from across the river is hard to repeat. Township-style complexes may check you at the main gate and again at the tower, so allow extra time for the first visit and avoid ring-road junctions at office hours.",
-    "Naranpura, Gota & Chandkheda": "The Red Line runs through this zone from Vijay Nagar to Motera Stadium, and the Gandhinagar line means tutors from the capital can reach Chandkheda and Sabarmati by metro. Gota and Ghatlodia have no station, so a two-wheeler on your side of SG Highway is the practical way in, and Vijay Char Rasta crowds up in the evening.",
-    "Maninagar, Isanpur & Kankaria": "Maninagar railway station, Kankaria East on the Blue Line and Apparel Park bring tutors in by train, metro or BRTS, and low-rise blocks usually mean a quick call from the entrance before you go up. Sundays, holidays and the December carnival crowd the lake area, and market roads near Maninagar station fill in the evening.",
-    "Nikol, Naroda & Bapunagar": "Vastral, Amraiwadi and parts of Nikol sit on the Blue Line, while Bapunagar and old Naroda are doorstep visits in narrow lanes where a two-wheeler is far more practical than a car. Industrial shift times load the roads around Odhav and Naroda, so agree a fixed mid-evening lesson that avoids them.",
-    "Shahibaug, Asarwa & Meghaninagar": "Shahibaug apartment buildings usually confirm each visitor with a call to the flat, while older homes in Asarwa and Meghaninagar open onto the lane. The nearest metro stops are Shahpur, Gheekanta and Kalupur, so most tutors come by road, and traffic near the medical campuses in Asarwa stays heavy through the day."
+    "Navrangpura, Paldi & Ellisbridge": "Old High Court links the Blue and Red Lines, and Red Line stops at Paldi, Ellisbridge and APMC let tutors from the north or east bank ride in. Apartment buildings want your name with the watchman before the first visit, independent houses need a lane and landmark, and roads towards the bridges are slowest at office hours. If you ride the Red Line, this zone is the easiest one to add alongside your own neighbourhood.",
+    "Satellite, Vastrapur & Bodakdev": "Thaltej Gam, Thaltej, Doordarshan Kendra and Gurukul Road stations serve the northern half, but Satellite, Jodhpur and Vastrapur have no station, so most tutors come by two-wheeler, auto or BRTS. Towers along SG Highway often log a visitor's phone number at the gate, and the service lanes thicken in the evening rush. If you come by BRTS or two-wheeler, a late-afternoon or weekend-morning slot starts on time more often than one in the rush.",
+    "Prahlad Nagar, Bopal & Shela": "No metro station serves this corridor, so tutors who already live in Bopal, South Bopal or Shela keep weekly slots most easily, and a ride from across the river is hard to repeat. Township-style complexes may check you at the main gate and again at the tower, so allow extra time for the first visit and avoid ring-road junctions at office hours. Offer an online session for any subject the family cannot cover locally.",
+    "Naranpura, Gota & Chandkheda": "The Red Line runs through this zone from Vijay Nagar to Motera Stadium, and the Gandhinagar line means tutors from the capital can reach Chandkheda and Sabarmati by metro. Gota and Ghatlodia have no station, so a two-wheeler on your side of SG Highway is the practical way in, and Vijay Char Rasta crowds up in the evening. A Naranpura class that starts before the evening rush is simpler to keep.",
+    "Maninagar, Isanpur & Kankaria": "Maninagar railway station, Kankaria East on the Blue Line and Apparel Park bring tutors in by train, metro or BRTS, and low-rise blocks usually mean a quick call from the entrance before you go up. Sundays, holidays and the December carnival crowd the lake area, and market roads near Maninagar station fill in the evening. Weekday evenings or weekend mornings avoid the lake crowds, and telling the family your arrival station helps.",
+    "Nikol, Naroda & Bapunagar": "Vastral, Amraiwadi and parts of Nikol sit on the Blue Line, while Bapunagar and old Naroda are doorstep visits in narrow lanes where a two-wheeler is far more practical than a car. Industrial shift times load the roads around Odhav and Naroda, so agree a fixed mid-evening lesson that avoids them. Ask families to name their nearest Blue Line station so you can judge the trip before the demo.",
+    "Shahibaug, Asarwa & Meghaninagar": "Shahibaug apartment buildings usually confirm each visitor with a call to the flat, while older homes in Asarwa and Meghaninagar open onto the lane. The nearest metro stops are Shahpur, Gheekanta and Kalupur, so most tutors come by road, and traffic near the medical campuses in Asarwa stays heavy through the day. If you live elsewhere on the east bank this zone is usually a simple trip, and west-bank specialists can teach here online."
   },
   "boards": "Ahmedabad tutors teach GSEB, the Gujarat Secondary and Higher Secondary Education Board, which sets the SSC at the end of Standard 10 and separate HSC Science and HSC General exams at the end of Standard 12, alongside CBSE, ICSE and ISC, the IB and Cambridge IGCSE. GSEB's Standard 10 papers open with 24 compulsory one-mark items, and HSC Science papers begin with 50 multiple-choice questions on an OMR sheet. Read designs, question banks and results on gseb.org and the board's e-service site, CBSE material on cbseacademic.nic.in and CISCE documents on cisce.org.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Gujarat Secondary and Higher Secondary Education Board (GSEB)",
+      "site": "https://www.gseb.org/",
+      "classes": "SSC (Standard 10); HSC General and Science streams (Standard 12)",
+      "note": "GSEB's core Standard 10 papers share one design: three hours, 80 marks, four sections. HSC Science opens with 50 one-mark questions answered on an OMR sheet. Schools on the board teach in Gujarati, English and other media, and a student writes with the textbook's own terms, so state your teaching medium plainly. Read every design on gseb.org.",
+      "page": "/gujarat-board-tutor-ahmedabad"
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "CBSE students live on both banks, from Satellite towers to Chandkheda flats. Teach outward from the NCERT chapter, use the sample papers and marking schemes on cbseacademic.nic.in, and expect case-based and assertion–reason items in board years. The CBSE session opens in April, while GSEB schools follow their own calendar, so pace revision to each school's dates.",
+      "page": "/cbse-home-tutor-ahmedabad"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "ICSE at Class 10 and ISC at Class 12 run on a broad syllabus with long written answers and prescribed English literature. A tutor here plans repeated cycles through every chapter, sets timed writing and keeps an eye on the project work each subject carries. Specimen papers and regulations are published on cisce.org.",
+      "page": "/icse-home-tutor-ahmedabad"
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "Diploma students and parents name the exact course: Maths Analysis and Approaches or Applications and Interpretation, at Standard or Higher Level. Internal assessment counts towards the final grade, so you can coach the method of an IA or Extended Essay but never write it. Subject guides come through ibo.org, and the papers are sat in May.",
+      "page": "/ib-tutor-ahmedabad"
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "IGCSE teaching in Ahmedabad is largely exam craft: reading command words, choosing Core or Extended, and marking past papers strictly against the official scheme. Syllabuses sit on cambridgeinternational.org, or Pearson's site for Edexcel. Offering online sessions lets you teach IGCSE students on the far bank without adding a bridge crossing to every week.",
+      "page": "/igcse-tutor-ahmedabad"
+    }
+  ],
+  "women": {
+    "intro": "Women tutors are welcome on NXTutors in Ahmedabad, for home lessons, online classes or a mix of the two. You decide which of the seven zones you travel to and which hours you keep free, and home requests are matched to the zones you pick. A tutor in Paldi can keep to the Red Line stretch and teach families across the river online. Every tutor who joins goes through the same ID check, and families meet you first at a demo where we ask a parent to be at home. These are the controls the platform and its safeguarding policy actually set out, not a promise about anyone's conduct.",
+    "points": [
+      "Choose home, online or hybrid on your profile, and change it whenever your plans change.",
+      "List only the zones you want; if you would rather not cross a bridge after dark, keep to your own bank.",
+      "Keep the hours you are free current on your profile so Ahmedabad parents can see when you teach, and add late slots only if you want them.",
+      "The first class is a free demo where we ask a parent to be at home, so you meet the family before agreeing a weekly slot.",
+      "In Satellite, Bodakdev and Shahibaug buildings the gate confirms visitors; ask the family to register your name so every visit is logged.",
+      "Agree timings, fees and messages with the parent, not privately with the student, as the safeguarding policy asks.",
+      "For younger children, teach in a shared room with an adult at home; online, keep the camera on.",
+      "If anything feels wrong, stop the classes and tell NXTutors, marking it Safeguarding; in an emergency call 112 first."
+    ]
+  },
+  "story": [
+    "Sign up from anywhere in Ahmedabad, Maninagar or Bopal alike, using your phone or email and a one-time code. Add the subjects, classes, boards and Gujarati or English medium you teach.",
+    "Upload a government photo ID. The NXTutors team reviews it before anything goes live, and one ID number can be linked to only one tutor account. It confirms identity; it is not a police check.",
+    "Once the review is done, your profile goes live with the Verified badge, showing the zones you travel to, the hours you keep free and the fee you set yourself.",
+    "A family in Vastrapur, say, sends a request. We shortlist two or three tutors: those living nearby first, then those who travel there, then the zone, the wider city and online tutors.",
+    "The family sees your fee before booking. The first class is a free demo where we ask a parent to be at home, so both sides can judge the fit before a weekly slot is agreed.",
+    "Teach at the family's home on your side of the Sabarmati, online for students across the city or beyond, or mix both, such as weekday online classes and a weekend home session."
+  ],
   "faqs": [
-    ["How do Ahmedabad families get matched with me?", "A parent sends a request with the class, board and medium, subjects, area and timings. NXTutors chooses two or three tutors starting with those living in that area, then those who travel there, then the zone, Ahmedabad and online. The family sees each shortlisted tutor's fee and books a free demo before deciding."],
-    ["Can I teach online from Ahmedabad?", "Yes. Online is a separate choice on your profile, and online requests are matched on subject, board, class and your free hours, not your address. You might teach GSEB or CBSE students across Gujarat online in the evening while keeping home classes on your own side of the Sabarmati."],
-    ["Which side of the river should I cover?", "Usually your own. Crossing the Sabarmati at office hours is slow, so list the zones on your bank first, then add the other side only if a metro line, such as the Red Line through Old High Court, takes you there directly. Bopal and Shela suit tutors who already live in that corridor."],
-    ["What ID check do Ahmedabad tutors go through?", "The same as every tutor who joins: you confirm your phone or email with a one-time code and upload a government photo ID, which our team reviews before your profile goes live. It is not a police check. Real tutors who pass display a Verified badge; How we verify tutors (/how-we-verify-tutors) covers the details."],
-    ["Do tutors pay anything, and who sets the fee?", "Tutor plans are paid; the Pricing page (/pricing) lists what each includes. You decide your own lesson fee, shown to Ahmedabad families before the free demo. A family can switch tutor without any charge, so a well-planned first demo and a slot you keep every week matter more than anything else."]
+    [
+      "How do Ahmedabad families get matched with me?",
+      "A parent sends a request with the class, board and medium, subjects, area and timings. NXTutors chooses two or three tutors starting with those living in that area, then those who travel there, then the zone, Ahmedabad and online. The family sees each shortlisted tutor's fee and books a free demo before deciding."
+    ],
+    [
+      "Can I teach online from Ahmedabad?",
+      "Yes. Online is a separate choice on your profile, and online requests are not tied to your address, so subject, board and class decide where you fit. You might teach GSEB or CBSE students across Gujarat online in the evening while keeping home classes on your own side of the Sabarmati."
+    ],
+    [
+      "Which side of the river should I cover?",
+      "Usually your own. Crossing the Sabarmati at office hours is slow, so list the zones on your bank first, then add the other side only if a metro line, such as the Red Line through Old High Court, takes you there directly. Bopal and Shela suit tutors who already live in that corridor."
+    ],
+    [
+      "What ID check do Ahmedabad tutors go through?",
+      "The same as every tutor who joins: you confirm your phone or email with a one-time code and upload a government photo ID, which our team reviews before your profile goes live. It is not a police check. Real tutors who pass display a Verified badge; How we verify tutors (/how-we-verify-tutors) covers the details."
+    ],
+    [
+      "Do tutors pay anything, and who sets the fee?",
+      "Tutor plans are paid; the Pricing page (/pricing) lists what each includes. You decide your own lesson fee, shown to Ahmedabad families before the free demo. A family can switch tutor without any charge, so a well-planned first demo and a slot you keep every week matter more than anything else."
+    ],
+    [
+      "Can a woman tutor in Ahmedabad choose her own areas and hours?",
+      "Yes. You decide the zones you travel to, perhaps only the Red Line stretch from Paldi to Naranpura, and home requests are matched to those zones, while the hours you list show families when you are free. Each new family starts with a free demo where we ask a parent to be at home, and students across the river can be taught online."
+    ],
+    [
+      "Which boards do Ahmedabad families ask tutors for?",
+      "GSEB, the state board, for SSC and HSC, plus CBSE, CISCE's ICSE and ISC, and the IB Diploma and Cambridge IGCSE. GSEB schools teach in Gujarati, English and other media, so state on your profile exactly which boards, classes and medium you teach rather than a subject alone."
+    ],
+    [
+      "Can I split a week between home and online with an Ahmedabad family?",
+      "Yes. Choose both modes on your profile and agree the mix with the parent after the demo. If the family lives across the Sabarmati from you, one home lesson a week for written work plus an online class on a busy weekday keeps bridge crossings to a minimum."
+    ]
   ]
 }

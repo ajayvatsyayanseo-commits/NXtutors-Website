@@ -5,6 +5,43 @@
     "site": "https://bseh.org.in",
     "summary": "The Board of School Education Haryana is based in Bhiwani. It conducts the Secondary (Class 10) and Senior Secondary (Class 12) examinations, which its site lists for February–March 2026, along with HOS examinations at both levels. Results appear on the board's site, and Secondary marks are also offered through DigiLocker. When we checked, part of the site showed a maintenance notice, so confirm the current syllabus and notices on bseh.org.in itself."
   },
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Board of School Education Haryana (BSEH), Bhiwani",
+      "site": "https://bseh.org.in",
+      "classes": "Secondary (Class 10), Senior Secondary (Class 12); HOS examinations at both levels",
+      "note": "BSEH, based in Bhiwani, conducts the Secondary and Senior Secondary examinations, listed on its site for February–March 2026, plus HOS examinations at both levels. Results appear on the board's site, and Secondary marks are also offered through DigiLocker. Part of the site showed a maintenance notice when we checked, so confirm the syllabus there before a demo."
+    },
+    {
+      "key": "cbse",
+      "name": "Central Board of Secondary Education (CBSE)",
+      "site": "https://www.cbse.gov.in",
+      "classes": "Classes 1–12; board examinations in Classes 10 and 12",
+      "note": "Our Gurugram and Faridabad pages both describe CBSE as the board most of their students follow. For a Haryana tutor, that means knowing the current NCERT-based papers, the two Class 10 board examinations from 2026, and the competency questions in the sample papers on cbseacademic.nic.in."
+    },
+    {
+      "key": "cisce",
+      "name": "Council for the Indian School Certificate Examinations (CISCE)",
+      "site": "https://cisce.org",
+      "classes": "ICSE (Class 10), ISC (Class 12)",
+      "note": "ICSE and ISC have a loyal following in Faridabad and are named on our Gurugram page too. Tutors moving across from BSEH or CBSE should expect broader syllabi in some subjects and examiners who reward full, clearly set out working. Give ICSE and ISC their own lines on the profile."
+    },
+    {
+      "key": "ib",
+      "name": "International Baccalaureate (IB)",
+      "site": "https://www.ibo.org",
+      "classes": "Primary Years, Middle Years and Diploma Programmes",
+      "note": "Our Gurugram page lists the IB among the boards families there follow, and a request can be very specific, such as IB Maths Analysis and Approaches at Higher Level or a plan for an IB Physics internal assessment. A tutor who takes IB students needs to know the subject guides closely and must guide, never write, the internally assessed work."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge and Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org",
+      "classes": "IGCSE, usually around Classes 9–10",
+      "note": "Our Gurugram page names both Cambridge and Pearson IGCSE, and the Faridabad page lists Cambridge IGCSE for a smaller group. Preparation rests on reading command words, choosing Core or Extended and practising against mark schemes, and a request may name one paper, such as IGCSE Chemistry structured questions."
+    }
+  ],
   "intro": [
     "Gurugram and Faridabad have their own tuition-jobs pages with detailed zones and sectors, and tutors who live in either city should begin there. This page covers the rest of Haryana: Panipat, Karnal, Ambala, Hisar, Rohtak, Sonipat and smaller district towns. When you join, give your town and the parts of it you can reach. Requests for home lessons go to the nearest suitable tutors first, so a Karnal teacher is offered Karnal families before anyone else is. Online lessons have no such limit, and a tutor in Sirsa or Jind can teach a student anywhere in India.",
     "Haryana students may follow the state board in Bhiwani, CBSE, or another board, so be clear on your profile about which you teach and whether you work in Hindi or English. BSEH publishes its notices and results on bseh.org.in; check there for the current syllabus. For each request, NXTutors puts forward two or three tutors, the parent sees the fee you have chosen, and the first lesson is a free demo for the family, who can switch later if needed. If you prepare students for the HOS examinations at Secondary or Senior Secondary level, add that as well."
@@ -12,60 +49,80 @@
   "towns": [
     {
       "name": "Panipat",
-      "note": "A tutor living in Panipat can teach online across India."
+      "note": "Panipat tutors can choose how wide to cast the net: home lessons with families in their own sector or colony, online lessons with students across India, or both. Give the localities by name and, if you teach HOS candidates, add that too."
     },
     {
       "name": "Karnal",
-      "note": "Please list the Karnal localities you can reach."
+      "note": "Karnal teachers who know the BSEH Senior Secondary papers can say so with the subjects concerned. Requests carry the board as well as the class, and naming the Haryana board alongside CBSE lets a family who follows either one find you."
     },
     {
       "name": "Ambala",
-      "note": "Ambala tutors: say whether you cover Ambala City, Ambala Cantt or both."
+      "note": "In Ambala, say plainly whether you cover Ambala City, Ambala Cantt or both, and which localities in each. Home matching starts from the families nearest you, so this one detail decides which requests are worth offering to you."
     },
     {
       "name": "Hisar",
-      "note": "Students outside Hisar can still book you online."
+      "note": "A Hisar tutor who teaches senior maths or science can widen the pool by marking online teaching. Online requests are matched on subject, class and board; home lessons in Hisar still reach you first when you are among the nearest tutors."
     },
     {
       "name": "Rohtak",
-      "note": "Weekend or weekday slots in Rohtak? You choose them."
+      "note": "College students in Rohtak who tutor around their own lectures can list only the afternoons or weekends they have. Families see those hours alongside your fee before the demo, which keeps expectations clear from the very first message."
     },
     {
       "name": "Sonipat",
-      "note": "Boards you teach in Sonipat should all be listed."
+      "note": "A Sonipat tutor close to the Delhi border may be glad to take some students across it. If so, list the Delhi colonies by name; Delhi's own tuition-jobs page splits the city into zones, and naming real places keeps your shortlists realistic."
     },
     {
       "name": "Yamunanagar",
-      "note": "Keep both options open from Yamunanagar: home and online."
+      "note": "From Yamunanagar, a hybrid profile works: home lessons in your own part of town and online sessions for revision or for students further away. Say on the profile which days suit which, and agree the pattern with each parent at the demo."
     },
     {
       "name": "Kurukshetra",
-      "note": "Tutors who live in Kurukshetra can mark nearby localities."
+      "note": "Kurukshetra tutors teaching primary children should list Classes 1 to 5 as a separate range. Parents of young learners often look for patient reading, number work and help building a homework routine, and the shortlist depends on that fit."
     },
     {
       "name": "Bhiwani",
-      "note": "Bhiwani is home to the Haryana board's office; name your locality there."
+      "note": "Bhiwani is where the Haryana board has its office. Tutors here who prepare Secondary or Senior Secondary students can point to that experience, give the colonies they will visit, and check notices on bseh.org.in before each new student's demo."
     },
     {
       "name": "Sirsa",
-      "note": "Distance comes first: give your Sirsa locality."
+      "note": "Sirsa tutors writing their profile can describe how a typical lesson runs: a quick look at homework, new work, then practice. Parents comparing two or three tutors read this closely, and a clear picture of your method says more than a long list of qualifications."
     },
     {
       "name": "Rewari",
-      "note": "Put your strongest subjects for Rewari students first."
+      "note": "Rewari tutors should join from this page rather than the Gurugram one unless they travel into Gurugram's zones. Name your Rewari locality first; if you also visit specific Gurugram sectors, add those sectors by name instead of the whole city."
     },
     {
       "name": "Jind",
-      "note": "Say whether lessons in Jind run in English or Hindi."
+      "note": "Jind tutors can say whether lessons run in Hindi, English or a mix, and for which subjects. A family whose child studies in one medium will look for a tutor comfortable in it, and stating it saves both sides a demo that does not fit."
     },
     {
       "name": "Kaithal",
-      "note": "Write down your Kaithal neighbourhood; nearby requests come first."
+      "note": "Kaithal tutors who enjoy Classes 6 to 8 can say so plainly. Those years bridge primary arithmetic and secondary algebra and science, and gaps left there tend to show up later, so parents looking for steady help at that stage will see the fit."
     },
     {
       "name": "Palwal",
-      "note": "Teaching from home in Palwal? Online classes work too."
+      "note": "Palwal tutors near the Faridabad side who are happy to visit there can add particular Faridabad localities. The Faridabad tuition-jobs page has its own zones, and listing exact places keeps home requests practical while online teaching stays open nationwide."
     }
+  ],
+  "women": {
+    "intro": "Women who tutor in Haryana's towns, from Panipat and Karnal to Hisar and Palwal, can join NXTutors and decide how their teaching week looks. Teach in students' homes, online, or both. Choose the colonies and sectors you are willing to visit and the hours you want to keep. Before any profile goes live, the tutor confirms a phone or email with a one-time code and uploads a government photo ID for our team to review, and real tutors who pass carry a Verified badge. Families meet you at a demo where we ask a parent to be at home.",
+    "points": [
+      "Choose home, online or hybrid teaching, and switch whenever you wish.",
+      "Home requests use only the sectors and colonies you list.",
+      "Pick your hours; evenings or weekends only is perfectly fine.",
+      "Meet every new family at a demo while a parent is in.",
+      "Ask to be logged on the gate register or visitor app in a society.",
+      "Keep messages and fee talks with the parent, not the student.",
+      "If something troubles you, stop classes and tell us on WhatsApp."
+    ]
+  },
+  "story": [
+    "Sign up from any Haryana town with a one-time code sent to your phone or email. Add your sector or colony, the places you will visit and your choice of home, online or both.",
+    "Upload a government photo ID from the dashboard. Our team reviews it while your profile waits as pending, and that ID number cannot be used again for any other tutor account.",
+    "With the review done, your profile goes live with the Verified badge, showing the BSEH, CBSE, ICSE or other classes you teach, your subjects and your fee.",
+    "A family near you sends a request with class, board and subject. Two or three tutors are shortlisted, beginning with those who live nearest, then the wider town, then online.",
+    "The family sees your fee before the first lesson, which is a free demo for them. Teach the chapter the student is doing in school this week.",
+    "If they continue, lessons run at home, online or both, on days settled with the parent. Keep your sectors and hours up to date as your timetable changes."
   ],
   "faqs": [
     [
@@ -87,6 +144,18 @@
     [
       "Do tutors pay to be on NXTutors?",
       "Yes, tutor plans are paid; /pricing shows what each plan includes. The fee you charge per lesson is separate and you set it."
+    ],
+    [
+      "Can a woman tutor in Haryana teach online only?",
+      "Yes. Choose online only and requests come to you by subject, class and board, not by where you live. Home lessons can be added later and kept to the sectors you list. Every new family meets you at a demo where we ask a parent to be at home."
+    ],
+    [
+      "Which boards should I list from Haryana?",
+      "BSEH if you have taught it, at Secondary or Senior Secondary level, plus CBSE, ICSE, ISC, IB or IGCSE where you have real experience. Our Gurugram and Faridabad pages show all of these in use; the family's request names the board it follows."
+    ],
+    [
+      "Can I mix home and online teaching?",
+      "Yes. Mark both on your profile and give your home localities. Some tutors keep home students near them and online students elsewhere; others teach one student both ways. Agree any split with the parent at the demo lesson."
     ]
   ]
 }

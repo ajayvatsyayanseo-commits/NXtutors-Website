@@ -5,6 +5,43 @@
     "site": "https://mpbse.nic.in",
     "summary": "The Board of Secondary Education, Madhya Pradesh (Madhyamik Shiksha Mandal), based in Bhopal, conducts the High School (Class 10) and Higher Secondary (Class 12) examinations. Its site carries circulars and orders, the examination time table, results and student services. For the 2026-27 session it has issued an admission and examination guide with instructions for filling in online applications, and it lists a toll-free helpline for queries."
   },
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Board of Secondary Education, Madhya Pradesh (MPBSE), Bhopal",
+      "site": "https://mpbse.nic.in",
+      "classes": "High School (Class 10), Higher Secondary (Class 12)",
+      "note": "MPBSE, the Madhyamik Shiksha Mandal in Bhopal, conducts the High School and Higher Secondary examinations. Its site carries circulars and orders, the examination time table, results and student services, plus an admission and examination guide for 2026-27 with instructions for online applications. Tutors should read the time table and circulars there, not on forwarded copies."
+    },
+    {
+      "key": "cbse",
+      "name": "Central Board of Secondary Education (CBSE)",
+      "site": "https://www.cbse.gov.in",
+      "classes": "Classes 1–12; board examinations in Classes 10 and 12",
+      "note": "Our Bhopal and Indore pages both describe CBSE schools across those cities. For an MP tutor, teaching CBSE means NCERT-based lessons, the current session's sample papers from cbseacademic.nic.in, and being clear on the profile which classes are CBSE and which are MP Board."
+    },
+    {
+      "key": "cisce",
+      "name": "Council for the Indian School Certificate Examinations (CISCE)",
+      "site": "https://cisce.org",
+      "classes": "ICSE (Class 10), ISC (Class 12)",
+      "note": "CISCE schools teaching ICSE and ISC appear on both our Bhopal and Indore pages. A tutor coming from MP Board work should expect a broader syllabus in some subjects and examiners who credit well organised, complete answers; practise with the specimen papers on cisce.org first."
+    },
+    {
+      "key": "ib",
+      "name": "International Baccalaureate (IB)",
+      "site": "https://www.ibo.org",
+      "classes": "Primary Years, Middle Years and Diploma Programmes",
+      "note": "A smaller number of Bhopal and Indore students follow the IB, our city pages say. Diploma Mathematics is taught as Analysis and Approaches or Applications and Interpretation at Standard or Higher Level, and internally assessed work counts towards the grade, so a tutor guides that work without doing it."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge IGCSE",
+      "site": "https://www.cambridgeinternational.org",
+      "classes": "IGCSE, usually around Classes 9–10",
+      "note": "Cambridge IGCSE is the other international option our Bhopal and Indore pages mention for a smaller group. Our pages point to command words, choosing the correct tier and marking strictly against past schemes. MP tutors who know IGCSE can teach it online to students in other cities too."
+    }
+  ],
   "intro": [
     "Indore and Bhopal each have a tuition-jobs page with zones, and tutors in those cities should pick their zones there. The rest of Madhya Pradesh, from Jabalpur and Gwalior to Ujjain, Sagar, Rewa and Satna, is covered here. Join with your town and the localities you can reach. A family's request for home lessons goes first to the tutors nearest them, then to their wider zone and city, and only after that to online tutors. Online lessons, though, are open to any tutor, so someone in Chhindwara can teach a student in another state from day one.",
     "Students in Madhya Pradesh may study under the MP board in Bhopal, CBSE or another board, and in Hindi or English medium. Put all of these on your profile so requests line up with what you can teach. The board's admission and examination guide for 2026-27 and its circulars are on mpbse.nic.in. Each request ends with a shortlist of two or three tutors: the family sees the fee you set, has a free first class, and can switch later. If you cover Higher Secondary, list the subjects within your stream, such as physics, accountancy or biology."
@@ -12,56 +49,76 @@
   "towns": [
     {
       "name": "Jabalpur",
-      "note": "Put your strongest subjects for Jabalpur students first."
+      "note": "Jabalpur tutors join from this state page, since our Madhya Pradesh city pages cover Bhopal and Indore. Enter your colony precisely; matching for home lessons begins at the family's address, while online teaching lets you take students in other cities."
     },
     {
       "name": "Gwalior",
-      "note": "Students outside Gwalior can still book you online."
+      "note": "Gwalior tutors who have taught MP Board and CBSE can list both, each with its classes, because the request names the board. Add the medium you teach in, Hindi or English, for each subject so a family is not sent a tutor who does not fit."
     },
     {
       "name": "Ujjain",
-      "note": "If you are based in Ujjain, add online hours too."
+      "note": "Ujjain sits near Indore, and a tutor here may take a few Indore students as well. Indore's tuition-jobs page has its own zones; name the localities you could reach regularly, keep Ujjain first, and let online lessons cover anyone further."
     },
     {
       "name": "Sagar",
-      "note": "Write down your Sagar neighbourhood; nearby requests come first."
+      "note": "Sagar tutors should revise their hours whenever a new student fills a slot. Requests are matched to the times on your profile, and an up-to-date timetable means you are shortlisted only for families you can actually take on."
     },
     {
       "name": "Rewa",
-      "note": "Boards you teach in Rewa should all be listed."
+      "note": "Rewa tutors with a subject that can be hard to find locally, such as Higher Secondary biology or accountancy, can teach it online to students across the state. Keep home visits for the classes you take nearby, and give hours for each mode."
     },
     {
       "name": "Satna",
-      "note": "Start online from Satna before a nearby family asks."
+      "note": "Satna teachers preparing High School students can plan demo lessons around the board's own time table and circulars. Mention the classes and subjects you handle precisely, and add any Higher Secondary stream you teach as a separate line."
     },
     {
       "name": "Dewas",
-      "note": "Online lessons let Dewas tutors teach in other states."
+      "note": "Dewas tutors who are happy to visit nearby Indore localities can add them by name, while keeping Dewas colonies first. Home matching starts with the tutor living nearest the family, so your own locality matters more than how far you are willing to go."
     },
     {
       "name": "Ratlam",
-      "note": "Tutors who live in Ratlam can mark nearby localities."
+      "note": "Ratlam teachers who have stepped back from school teaching can describe the classes and subjects they handled, without naming a school. A parent choosing between profiles values that detail, and the demo lets you show the experience in practice."
     },
     {
       "name": "Katni",
-      "note": "A tutor living in Katni can teach online across India."
+      "note": "Katni tutors teaching Classes 1 to 5 should list that range separately from High School work. Parents of young children usually want patience, reading practice and number sense, and a separate line helps the shortlist place you with those families."
     },
     {
       "name": "Singrauli",
-      "note": "Say how far beyond Singrauli you will travel for lessons."
+      "note": "From Singrauli, online teaching widens your reach to students across Madhya Pradesh and beyond. Mark online, list your boards and class range, and keep home lessons to the localities you can comfortably reach after school."
     },
     {
       "name": "Chhindwara",
-      "note": "Distance comes first: give your Chhindwara locality."
+      "note": "Chhindwara tutors with Higher Secondary science or maths can say which subjects they take at that level. Senior students choose tutors on subject depth, and a precise list makes sure the requests you see match what you teach."
     },
     {
       "name": "Burhanpur",
-      "note": "Home lessons in Burhanpur go first to tutors nearby."
+      "note": "Before a demo, a Burhanpur tutor can ask the parent for a recent test paper and the chapter being taught. Building the lesson around that paper shows the family how you would work with their child week to week."
     },
     {
       "name": "Khandwa",
-      "note": "Online students can choose a Khandwa tutor from anywhere."
+      "note": "Khandwa tutors starting out can list a few classes and subjects they know thoroughly and add more as students come. Families read the whole profile before the demo, and a focused one reads more convincingly than a list of everything."
     }
+  ],
+  "women": {
+    "intro": "If you are a woman who teaches in Madhya Pradesh, in Jabalpur, Gwalior, Sagar or a smaller town, NXTutors lets you set the terms. Some tutors only visit homes in their own colony; some never leave the house and teach over video; others do a little of both. The colonies you write down are the only ones used for home requests, and your hours are printed on your profile for parents to see. Joining means a one-time code and a government photo ID checked by our team before you appear anywhere; real tutors who clear it wear the Verified badge.",
+    "points": [
+      "Visiting homes is optional; video-only is a full choice.",
+      "Requests for home lessons stay inside the colonies you name.",
+      "Parents see your hours before they ask for a demo.",
+      "Expect a parent at home when you meet a new family.",
+      "Gated colony? The family can enter your visits in the gate register.",
+      "Fees and schedules are settled with the mother or father, not the child.",
+      "You can end any arrangement; tell us on WhatsApp and we take it from there."
+    ]
+  },
+  "story": [
+    "A Gwalior maths teacher, say, opens the sign-up page and confirms her number with a one-time code. She notes her colony, two nearby ones she can reach, and that she teaches online too.",
+    "Next she uploads a government photo ID from her dashboard. Until our team has checked it against her details, the profile stays hidden, and nobody else can use that ID number.",
+    "Checked and cleared, her profile appears with the Verified badge: MP Board and CBSE Classes 9 and 10, Hindi and English medium, and a fee she chose herself.",
+    "When a parent a few streets away asks for help with Class 9 maths, two or three tutors who fit are shortlisted, closest first, and she can be one of them.",
+    "The parent already knows her fee. Her first lesson is a free demo for them, an ordinary class on the chapter the student is doing in school that week.",
+    "They decide to go ahead: two home lessons a week and a video session before tests, agreed with the parent. She updates her hours as the week fills."
   ],
   "faqs": [
     [
@@ -83,6 +140,18 @@
     [
       "Do I have to pay?",
       "Tutor plans are paid. The pricing page, /pricing, shows what each plan includes. You decide your own fee for lessons."
+    ],
+    [
+      "I'm a woman tutor in MP and would rather not travel. Is that possible?",
+      "Entirely. Tick online only, and your name comes up for requests on subject, class and board, wherever the student lives. If you later add home lessons, only the colonies you write down are used, and we ask a parent to be at home for every first lesson."
+    ],
+    [
+      "What boards should go on an MP tutor's profile?",
+      "Our Bhopal and Indore pages mention MP Board, CBSE, ICSE and ISC, and a smaller IB and Cambridge IGCSE group. Put down only those you have taught, subject by subject, with Hindi or English medium; each request states the family's board."
+    ],
+    [
+      "Could I visit some students and teach others over video?",
+      "Yes. Tick both modes, write your colonies for visits, and add video hours separately if they differ. One student can also have both, such as weekday visits and a video session before a test, if the parent agrees during the demo."
     ]
   ]
 }

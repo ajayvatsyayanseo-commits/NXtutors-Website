@@ -5,6 +5,43 @@
     "site": "https://bse.telangana.gov.in",
     "summary": "The Directorate of Government Examinations, an independent department under Secondary Education, Government of Telangana, conducts the SSC and OSSC public examinations twice a year; its site lists the March 2026 public examinations and the June 2026 advanced supplementary examinations. An examination reforms order on the site sets 80 marks of written examination and 20 marks of formative assessment per subject in Classes 9 and 10. Intermediate is run by the Telangana Board of Intermediate Education (tgbienew.cgg.gov.in)."
   },
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Directorate of Government Examinations (Board of Secondary Education), Telangana",
+      "site": "https://bse.telangana.gov.in",
+      "classes": "SSC and OSSC (Class 10); Intermediate under TGBIE",
+      "note": "The directorate, an independent department under Secondary Education, conducts the SSC and OSSC public examinations twice a year, in March and as advanced supplementary examinations in June. An examination reforms order on its site sets 80 marks of written examination and 20 of formative assessment per subject in Classes 9 and 10. Intermediate is run by TGBIE."
+    },
+    {
+      "key": "cbse",
+      "name": "Central Board of Secondary Education (CBSE)",
+      "site": "https://www.cbse.gov.in",
+      "classes": "Classes 1–12; board examinations in Classes 10 and 12",
+      "note": "Our Hyderabad page names CBSE as one of four broad kinds of examination families there sit. A Telangana tutor teaching it beside SSC should keep the two clearly labelled: a Telangana SSC maths student and a CBSE student need tutors who know that particular paper."
+    },
+    {
+      "key": "cisce",
+      "name": "Council for the Indian School Certificate Examinations (CISCE)",
+      "site": "https://cisce.org",
+      "classes": "ICSE (Class 10), ISC (Class 12)",
+      "note": "ICSE and ISC complete the Indian boards on our Hyderabad page. A tutor coming from SSC or Intermediate should allow for the council's broader syllabus in several subjects and for marking that rewards fully worked answers; the specimen papers on cisce.org are the right preparation."
+    },
+    {
+      "key": "ib",
+      "name": "International Baccalaureate (IB)",
+      "site": "https://www.ibo.org",
+      "classes": "Primary Years, Middle Years and Diploma Programmes",
+      "note": "Our Hyderabad page places the IB in the city's international schools. The Diploma mixes final exams with internal assessment, and maths comes as Analysis and Approaches or Applications and Interpretation, at Standard or Higher Level. An IB tutor elsewhere in Telangana can teach these students online."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge IGCSE",
+      "site": "https://www.cambridgeinternational.org",
+      "classes": "IGCSE, usually around Classes 9–10",
+      "note": "Cambridge IGCSE also sits in Hyderabad's international schools, our city page says. Preparation leans on command words, the right tier and past papers with mark schemes. Name IGCSE on your profile only if you have prepared students for it, and list the subjects."
+    }
+  ],
   "intro": [
     "Hyderabad, with Secunderabad, has a tuition-jobs page split into many zones, and tutors in the twin cities should pick their zones there. Elsewhere in Telangana, in Warangal, Karimnagar, Nizamabad, Khammam, Nalgonda and other towns, start from this page. Name your town and the localities you can reach. Home requests are matched by distance first: the nearest suitable tutors are offered a family's request before the search moves outward. Online lessons are matched by subject, class and board, so a tutor in Siddipet can teach a student in another state from day one.",
     "Telangana students may take the SSC through the Directorate of Government Examinations, continue to Intermediate in groups such as MPC, BiPC, MEC and CEC, or follow CBSE, ICSE or another board. List the boards, groups and medium you teach. The directorate's site carries its examination order for Classes 9 and 10. For every request, two or three tutors are shortlisted, the family sees your fee before a free first class, and switching later is free for them. Tutors who help with the June advanced supplementary examinations can say so too."
@@ -12,52 +49,72 @@
   "towns": [
     {
       "name": "Warangal",
-      "note": "Warangal tutors can add Hanamkonda if they cover Warangal and Hanamkonda."
+      "note": "Warangal tutors register through this Telangana page, since our city page in the state is Hyderabad's. Enter your colony exactly: a home request is offered to the closest tutors before anyone else, and video lessons let you teach students beyond the city."
     },
     {
       "name": "Karimnagar",
-      "note": "Say whether lessons in Karimnagar run in English or Telugu."
+      "note": "Karimnagar tutors with Intermediate experience should name the group and subjects, MPC, BiPC, MEC or CEC, rather than just Intermediate. A request may mention the group, and precise detail puts you on the shortlists that fit."
     },
     {
       "name": "Nizamabad",
-      "note": "Home lessons in Nizamabad go first to tutors nearby."
+      "note": "Nizamabad tutors who teach in Telugu, English or Urdu can mark the medium beside each subject. When a request makes the student's medium clear, matching on it saves a demo that would suit neither side."
     },
     {
       "name": "Khammam",
-      "note": "Say how far beyond Khammam you will travel for lessons."
+      "note": "Khammam tutors who prepare OSSC candidates can mention it on a separate line. The directorate conducts OSSC alongside SSC, and a family whose child is on that route will look for a tutor who already knows it."
     },
     {
       "name": "Mahabubnagar",
-      "note": "Tutors who live in Mahabubnagar can mark nearby localities."
+      "note": "Mahabubnagar tutors set their own fee and may set it differently for SSC and Intermediate classes. Families see it before a demo; a figure that matches the level you teach, stated once and clearly, keeps later conversations simple."
     },
     {
       "name": "Nalgonda",
-      "note": "Start online from Nalgonda before a nearby family asks."
+      "note": "Nalgonda teachers who help SSC students prepare for the June advanced supplementary examinations can say so as a separate line. A family whose child is retaking a paper will look for exactly that experience."
     },
     {
       "name": "Siddipet",
-      "note": "Write down your Siddipet neighbourhood; nearby requests come first."
+      "note": "Siddipet tutors who enjoy Classes 6 to 8 can make those years their focus, since they lead into the Class 9 and 10 papers with their 80 and 20 split. Families wanting a steady build-up before then will look for exactly this."
     },
     {
       "name": "Adilabad",
-      "note": "Students outside Adilabad can still book you online."
+      "note": "Adilabad tutors who teach Telugu, Hindi or English as subjects can say which classes they take and what they work on in a lesson. Parents choosing a language tutor often look at method, so a few clear sentences about yours help."
     },
     {
       "name": "Suryapet",
-      "note": "Hours you can give in Suryapet belong on your profile."
+      "note": "Suryapet tutors who understand the 80 and 20 split in Classes 9 and 10, written paper and formative assessment, can mention it. A parent may ask how you will support both parts, and a clear answer at the demo helps."
     },
     {
       "name": "Mancherial",
-      "note": "Nearby families in Mancherial see the closest tutors first."
+      "note": "A Mancherial tutor getting ready for a demo can ask the parent for the latest test and the chapter now in class. Teaching that chapter properly in the first lesson shows the family how the weeks ahead would look."
     },
     {
       "name": "Ramagundam",
-      "note": "Your preferred classes in Ramagundam can go on your profile."
+      "note": "Ramagundam tutors should write their exact locality before adding anywhere else they will visit. Home matching starts at the family's address and widens step by step, so a precise base puts you in front of nearby families first."
     },
     {
       "name": "Sangareddy",
-      "note": "Sangareddy tutors can list Intermediate groups such as MPC or BiPC."
+      "note": "Sangareddy tutors who can reach parts of Hyderabad may list those localities one by one, after their own area. Hyderabad's tuition-jobs page is organised into zones, and naming exact places keeps the home requests you see realistic."
     }
+  ],
+  "women": {
+    "intro": "Telangana's women tutors, in Warangal, Karimnagar, Khammam or a smaller town, are welcome to take students through NXTutors and keep the say over how. Lessons can be in a family's home, on video, or a mix. Home requests use only the colonies you write down, and parents see your hours before anything is booked. Nobody sees your profile until you have confirmed a phone or email by one-time code and our team has reviewed your government photo ID; real tutors who pass show the Verified badge. Each new family meets you while a parent is home.",
+    "points": [
+      "Choose visits, video or a mix in one step on your profile.",
+      "Colonies you do not list are never used for home lessons.",
+      "Parents read your hours before they ask for a demo.",
+      "A parent is home for each first lesson.",
+      "Gated community? The family can add you to its visitor app.",
+      "Timings and fees are agreed with the parent.",
+      "Something worrying? End the lessons and tell us through WhatsApp or the contact page."
+    ]
+  },
+  "story": [
+    "We send a one-time code to your phone or email to begin. You add your Telangana town, the colonies you can reach and whether you teach online.",
+    "We ask for a government photo ID, uploaded from your dashboard, and our team reviews it. Until then your profile stays hidden, and that ID number cannot be used for another account.",
+    "We publish your profile with the Verified badge once it clears review, showing SSC, Intermediate groups, CBSE or ICSE classes, your subjects and the fee you chose.",
+    "We shortlist two or three tutors when a family nearby asks for help with a class, board and subject, looking at the closest tutors first, then wider, then online.",
+    "We show the family your fee before the first lesson, which is a free demo for them. You teach whatever chapter the student is studying at school.",
+    "We step back once the family decides to continue: you teach at home, online or both on days agreed with the parent, and keep your profile current."
   ],
   "faqs": [
     [
@@ -79,6 +136,18 @@
     [
       "How much does it cost to join?",
       "Tutor plans are paid; see /pricing for what each one includes. You choose your own fee per lesson."
+    ],
+    [
+      "Is video-only teaching open to women tutors in Telangana?",
+      "It is. Tick online only and requests reach you on subject, class and board rather than location. Home visits, if you add them later, are limited to the colonies you write down, and every family's first lesson has a parent at home."
+    ],
+    [
+      "Which boards might a Telangana family name?",
+      "Our Hyderabad page mentions the Telangana state board, CBSE, ICSE and ISC, plus the IB and Cambridge IGCSE in international schools. List only what you have taught, with medium and Intermediate group where it applies; the request says which board."
+    ],
+    [
+      "Could I teach some students at home and some on video?",
+      "Yes, that is hybrid. Tick both modes, write your colonies for visits and add video hours if they differ. A single student can also mix the two, such as weekday visits and a video session before a test, if the parent agrees."
     ]
   ]
 }

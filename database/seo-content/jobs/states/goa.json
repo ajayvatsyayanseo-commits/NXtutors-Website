@@ -5,6 +5,29 @@
     "site": "https://www.gbshse.info",
     "summary": "The school examination board for Goa's secondary and higher secondary stages; check gbshse.info directly for its current syllabus, timetables and notices."
   },
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Goa Board of Secondary and Higher Secondary Education (GBSHSE)",
+      "site": "https://www.gbshse.info",
+      "classes": "Secondary and higher secondary stages",
+      "note": "GBSHSE is Goa's school examination board for the secondary and higher secondary stages. Its site did not load when we prepared this page, so we have not summarised its syllabus or paper pattern. Before a demo, read the current syllabus, timetables and notices on gbshse.info itself, and list the levels and the medium you teach."
+    },
+    {
+      "key": "cbse",
+      "name": "Central Board of Secondary Education (CBSE)",
+      "site": "https://www.cbse.gov.in",
+      "classes": "Classes 1–12; board examinations in Classes 10 and 12",
+      "note": "A Goa tutor who has taught CBSE classes can list them next to GBSHSE work. The national board keeps its curriculum, sample papers and marking schemes on cbseacademic.nic.in, and these change from session to session, so check the current year before planning a demo rather than reusing old notes."
+    },
+    {
+      "key": "cisce",
+      "name": "Council for the Indian School Certificate Examinations (CISCE)",
+      "site": "https://cisce.org",
+      "classes": "ICSE (Class 10), ISC (Class 12)",
+      "note": "If ICSE or ISC teaching is part of your experience, give it a separate line on your profile. The council's courses differ from GBSHSE and CBSE in scope and in how answers are marked, and its regulations and specimen papers on cisce.org are the reliable source when preparing."
+    }
+  ],
   "intro": [
     "There is no NXTutors city tuition-jobs page in Goa yet, so tutors in Panaji, Margao, Vasco da Gama, Mapusa, Ponda and the state's smaller towns join from here. Name your town and the localities you can reach. A request for home lessons goes first to the nearest suitable tutors, then further out, so a precise base helps a family nearby see your profile. Online lessons are matched by subject, class and board instead of location, so a tutor in Bicholim or Quepem can be shortlisted for a student in another state.",
     "Goa students may follow GBSHSE, CBSE, ICSE or another board, so list every board and medium you teach. Read the current syllabus and timetables on the board's own site before a demo. For each request, the family receives two or three tutor profiles with fees shown; the first class is a free demo, you set your own fee, and families who want a change later can switch without paying for it. Name the classes you prefer, from primary to higher secondary, and whether you are free on weekday afternoons, evenings or weekends. Tutors in North Goa and South Goa towns follow the same steps."
@@ -12,40 +35,60 @@
   "towns": [
     {
       "name": "Panaji",
-      "note": "Write down your Panaji neighbourhood; nearby requests come first."
+      "note": "Tutors who live in Panaji, the state capital, have no separate city page to join from yet, so this Goa page is the way in. Enter your ward or neighbourhood precisely: that is where home matching starts, and video lessons can still reach students in any state."
     },
     {
       "name": "Margao",
-      "note": "Weekend or weekday slots in Margao? You choose them."
+      "note": "Margao tutors serving South Goa families can list the localities they reach comfortably after school hours. Add every board you have taught, GBSHSE, CBSE or ICSE, with the medium, because a family's request names the board and the shortlist follows it."
     },
     {
       "name": "Vasco da Gama",
-      "note": "If you are based in Vasco da Gama, add online hours too."
+      "note": "Vasco da Gama tutors who teach English or Konkani as subjects can describe the skills they work on, reading, grammar and writing, and the classes they take. Families compare two or three tutors, and a specific account of what happens in your lessons helps them decide."
     },
     {
       "name": "Mapusa",
-      "note": "Say whether lessons in Mapusa run in English or Hindi."
+      "note": "A Mapusa tutor preparing a demo can ask the parent for the latest school test and the chapter in progress. Teaching that chapter well, rather than talking about yourself, is what a family remembers when choosing between the tutors on its shortlist."
     },
     {
       "name": "Ponda",
-      "note": "Students outside Ponda can still book you online."
+      "note": "Ponda tutors who teach younger children should list Classes 1 to 5 apart from secondary classes. Parents of primary students tend to look for patience, reading and number work, and a separate line helps the shortlist place you with the right families."
     },
     {
       "name": "Bicholim",
-      "note": "Online students can choose a Bicholim tutor from anywhere."
+      "note": "Bicholim tutors whose timetable fills up should update their hours on the profile straight away. Requests are matched to the times you show, and an out-of-date timetable only leads to shortlists you cannot accept."
     },
     {
       "name": "Curchorem",
-      "note": "Put your strongest subjects for Curchorem students first."
+      "note": "Curchorem tutors teaching a board year, at the end of the secondary or higher secondary stage, can say how they handle paper practice and revision. Younger students usually need concepts first and board candidates need timed papers, so a profile that shows both helps families judge."
     },
     {
       "name": "Sanquelim",
-      "note": "Home lessons in Sanquelim go first to tutors nearby."
+      "note": "Sanquelim tutors with senior subjects at the higher secondary stage can mark online teaching to reach students in other towns. Name the subjects and classes precisely, and check the current syllabus on the board's own site before planning a demo."
     },
     {
       "name": "Quepem",
-      "note": "Hours you can give in Quepem belong on your profile."
+      "note": "From Quepem, list the exact locality you live in and any nearby villages you can visit. Matching for home lessons begins with the closest tutors, then widens, so the more precise your details, the more relevant the requests offered to you."
     }
+  ],
+  "women": {
+    "intro": "From Panaji and Margao to Quepem and Sanquelim, women in Goa who teach are welcome to take on students through NXTutors. You are the one who decides: lessons in families' homes, lessons over video, or some of each. Pick the neighbourhoods you are prepared to visit and leave out any you are not. Hours are yours to set. Before your profile is shown to anyone, you confirm a phone or email by one-time code and our team looks over a government photo ID; real tutors who clear it get the Verified badge. Families meet you at a demo while a parent is in the house.",
+    "points": [
+      "Teaching mode is your call: home visits, video lessons, or both.",
+      "Only villages and wards you name are used for home requests.",
+      "Mornings, evenings, weekends: list whichever hours suit you.",
+      "A parent stays in the house for the first lesson.",
+      "Lessons happen in a common room, never a closed one, with an adult around.",
+      "Talk timings and fees through with the parent.",
+      "Something not right? End the classes and message us; we look into every report."
+    ]
+  },
+  "story": [
+    "Begin with a one-time code to your phone or email. Tell us your Goa town, the wards or villages you could visit, and whether video lessons are part of your plan.",
+    "Next, a government photo ID goes up from your dashboard. Someone on our team compares it with your profile; until then nothing is public, and no ID can be reused for a second account.",
+    "Cleared tutors go live carrying the Verified badge. Parents can read which GBSHSE, CBSE or ICSE classes you take, your subjects, your teaching language and the fee you chose.",
+    "When a Goan family asks for help, they give the class, board and subject. Out of the tutors who fit, two or three are put forward, closest first, then wider, then online.",
+    "Parents know your fee before they meet you, and that first meeting is a no-cost demo for them. Use it to teach whatever the student is studying in school right now.",
+    "Should they decide to continue, lessons go ahead at their home, over video or both, on days you and the parent fix. Revise your wards and hours whenever life changes."
   ],
   "faqs": [
     [
@@ -67,6 +110,18 @@
     [
       "Are tutor plans paid?",
       "Yes. /pricing lists each tutor plan and what it includes. Your lesson fee is your own decision."
+    ],
+    [
+      "As a woman tutor in Goa, can I keep to a few places?",
+      "Yes. Only the wards and villages you write down are used for home requests, and you may pick video lessons alone if you prefer. A parent is in the house for the first lesson with any family, and our safeguarding policy lists the habits we expect of everyone."
+    ],
+    [
+      "What boards might Goan families name?",
+      "GBSHSE at the secondary or higher secondary stage, and in some homes CBSE or the council's ICSE and ISC. Put down only those you have taught, with the teaching language beside each subject; each family's request states its board, and shortlists follow it."
+    ],
+    [
+      "Could I teach partly at home and partly online?",
+      "Yes, that mix is what we call hybrid. Tick both modes, give the wards you will visit, and agree with each parent at the demo how the week splits, say a home lesson midweek and a video session the night before a test."
     ]
   ]
 }

@@ -5,18 +5,108 @@
     "Jaipur families study under four broad systems: CBSE, the Board of Secondary Education, Rajasthan (RBSE), CISCE's ICSE and ISC, and, in a smaller group, the IB or Cambridge IGCSE. For RBSE students the medium is part of the request, so state whether you teach in Hindi, English or both. Address detail matters here, because sector and scheme numbers repeat across Vidhyadhar Nagar, Jawahar Nagar, Chitrakoot and Mansarovar. Online teaching lets a tutor anywhere in India take Jaipur students, which matters most for IB, IGCSE and senior specialist papers, and it helps on exam weeks when a cross-city trip is hard to fit."
   ],
   "zone_notes": {
-    "C-Scheme, Bani Park & Vidhyadhar Nagar": "C-Scheme apartment buildings want your name and lesson time with security, while Bani Park and Vidhyadhar Nagar houses are doorstep visits; always get the sector number for Vidhyadhar Nagar. Only the southern edge has Pink Line stations, parking in C-Scheme is scarce in office hours, and roads near the station fill in the evening.",
-    "Raja Park, Jawahar Nagar & Bapu Nagar": "Most homes are houses or builder floors, so there is rarely a gate desk, but ask for the Jawahar Nagar sector or an inner-lane landmark in Raja Park and Bajaj Nagar. No metro station lies inside this zone and market roads crowd in the evening, so a tutor who already lives here, with a spot to park a two-wheeler, has the easier week.",
-    "Vaishali Nagar & West Jaipur": "Pink Line stations at Mansarovar, Shyam Nagar, Vivek Vihar, Ram Nagar and Civil Lines help tutors reach Nirman Nagar, Shyam Nagar and Sodala, but Vaishali Nagar and Chitrakoot have none. Always get the sector with a Chitrakoot address, register at the gate of Vaishali Nagar gated communities, and leave slack for Ajmer Road in the evening.",
-    "Mansarovar & Sanganer": "Housing board blocks in Mansarovar and Pratap Nagar are usually doorstep visits, but similar addresses repeat, so ask for the scheme or sector as well as the flat. The Pink Line starts at Mansarovar, Gopalpura Bypass is crowded with coaching students through the day, and Sanganer's older lanes are easier on a two-wheeler.",
-    "Malviya Nagar, Jagatpura & Tonk Road": "There is no metro here yet, only Durgapura, Getor Jagatpura and Gandhinagar railway stations, so most tutors come by scooter or car. Jagatpura's gated complexes register you at the gate with tower and flat, crossing Tonk Road at peak hours is slow, and Malviya Nagar's market roads fill in the evening, so earlier slots straight after school work well."
+    "C-Scheme, Bani Park & Vidhyadhar Nagar": "C-Scheme apartment buildings want your name and lesson time with security, while Bani Park and Vidhyadhar Nagar houses are doorstep visits; always get the sector number for Vidhyadhar Nagar. Only the southern edge has Pink Line stations, parking in C-Scheme is scarce in office hours, and roads near the station fill in the evening. Weekend mornings or slightly later evening slots are easier for a visiting tutor.",
+    "Raja Park, Jawahar Nagar & Bapu Nagar": "Most homes are houses or builder floors, so there is rarely a gate desk, but ask for the Jawahar Nagar sector or an inner-lane landmark in Raja Park and Bajaj Nagar. No metro station lies inside this zone and market roads crowd in the evening, so a tutor who already lives here, with a spot to park a two-wheeler, has the easier week. Weekend mornings avoid the busiest shopping hours.",
+    "Vaishali Nagar & West Jaipur": "Pink Line stations at Mansarovar, Shyam Nagar, Vivek Vihar, Ram Nagar and Civil Lines help tutors reach Nirman Nagar, Shyam Nagar and Sodala, but Vaishali Nagar and Chitrakoot have none. Always get the sector with a Chitrakoot address, register at the gate of Vaishali Nagar gated communities, and leave slack for Ajmer Road in the evening. Ask whether the family is near Shyam Nagar, Sodala or Nirman Nagar, which decides whether the metro helps.",
+    "Mansarovar & Sanganer": "Housing board blocks in Mansarovar and Pratap Nagar are usually doorstep visits, but similar addresses repeat, so ask for the scheme or sector as well as the flat. The Pink Line starts at Mansarovar, Gopalpura Bypass is crowded with coaching students through the day, and Sanganer's older lanes are easier on a two-wheeler. On Gopalpura Bypass, late-evening or weekend lessons are easier, and newer projects in Sanganer register visitors at the gate.",
+    "Malviya Nagar, Jagatpura & Tonk Road": "There is no metro here yet, only Durgapura, Getor Jagatpura and Gandhinagar railway stations, so most tutors come by scooter or car. Jagatpura's gated complexes register you at the gate with tower and flat, crossing Tonk Road at peak hours is slow, and Malviya Nagar's market roads fill in the evening, so earlier slots straight after school work well. Ask which side of Tonk Road the family lives on before the demo."
   },
   "boards": "Jaipur tutors teach RBSE, CBSE, CISCE's ICSE and ISC, and for a smaller group the IB or Cambridge IGCSE. RBSE, the Board of Secondary Education, Rajasthan, was set up in Jaipur in 1957 and has worked from Ajmer since 1961; it runs the Secondary exam after Class 10 and the Senior Secondary exam after Class 12, and its Class 10 papers carry 80 marks plus 20 sessional marks from school. Read the current syllabus and prospectus on rajeduboard.rajasthan.gov.in, CBSE material on cbseacademic.nic.in and CISCE documents on cisce.org.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Board of Secondary Education, Rajasthan (RBSE)",
+      "site": "https://rajeduboard.rajasthan.gov.in/",
+      "classes": "Secondary (Class 10); Senior Secondary (Class 12)",
+      "note": "RBSE prescribes NCERT textbooks in subjects such as maths, science and English, and each Class 10 paper carries 80 marks plus 20 sessional marks from school. Where a textbook's printed syllabus differs from the board website, the website counts. The syllabus is published in Hindi and English, so teach in the student's medium.",
+      "page": "/rajasthan-board-tutor-jaipur"
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "CBSE is one of the four systems Jaipur families study under. Lessons built on NCERT carry over neatly, since RBSE also prescribes NCERT books in core subjects, but CBSE has its own sample papers and marking schemes on cbseacademic.nic.in. A steady rhythm of chapter, test and correction works across Jaipur's colonies.",
+      "page": "/cbse-home-tutor-jaipur"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "ICSE at Class 10 and ISC at Class 12 reward full, well-organised written answers across a wide syllabus, and English includes prescribed literature. A Jaipur tutor for these boards needs the current text list, a revision plan that reaches every chapter, and time for project work. Regulations are on cisce.org.",
+      "page": "/icse-home-tutor-jaipur"
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "The IB Diploma mixes final exams with internal assessment, and Mathematics comes as Analysis and Approaches or Applications and Interpretation, at Standard or Higher Level. Jaipur's IB students are a smaller group, so an online offer widens your reach. Guide each IA without writing it, using the ibo.org guides.",
+      "page": "/ib-tutor-jaipur"
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "Cambridge IGCSE is about exam craft: command words, the right tier and past papers marked against the official scheme. A Jaipur tutor who keeps marked papers by topic and offers online sessions can teach students from Vaishali Nagar to Jagatpura. Syllabuses sit on cambridgeinternational.org, with Pearson's site for Edexcel.",
+      "page": "/igcse-tutor-jaipur"
+    }
+  ],
+  "women": {
+    "intro": "Women tutors are welcome on NXTutors in Jaipur for home, online and hybrid teaching. You choose your zones and hours: a tutor in Mansarovar can keep to the Pink Line stations and the housing board blocks around her, another in Raja Park to the houses on its inner lanes, and both can teach families across the city online. Every tutor who joins goes through the same ID check, families meet you at a free demo where we ask a parent to be present, and the safeguarding policy sets rules for both sides.",
+    "points": [
+      "Choose home, online or hybrid, and adjust it as your timetable shifts.",
+      "Add only the zones you will travel to; if crossing Tonk Road or Ajmer Road late in the evening does not suit you, leave those areas off.",
+      "Mark the hours you keep free, so a Jaipur family can tell at a glance when you teach.",
+      "Meet each new family at a free demo where we ask a parent to be at home before agreeing to regular classes.",
+      "In C-Scheme buildings and the Jagatpura and Vaishali Nagar complexes, ask to be registered at the gate so visits are recorded.",
+      "Settle fees, timings and messages with a parent rather than the student.",
+      "Teach young children in a shared room with an adult at home, and keep cameras on online.",
+      "If anything worries you, stop the classes and tell NXTutors, marked Safeguarding; call 112 first in an emergency."
+    ]
+  },
+  "story": [
+    "Register with a one-time code to your phone or email, then add subjects, classes and boards, RBSE in Hindi or English medium included, and the Jaipur colonies and schemes you can reach.",
+    "Upload a government photo ID for the NXTutors team to review before your profile goes live. It confirms who you are and is not a police or background check.",
+    "Once the review is complete, your profile appears with the Verified badge, listing your boards, travel zones from C-Scheme to Mansarovar, free hours and your own fee.",
+    "A family in Malviya Nagar or Vidhyadhar Nagar sends a request. We shortlist two or three: tutors living there, then those who travel there, then the zone, the city and online.",
+    "The family sees your fee before booking. Your first class is a free demo at their home where we ask a parent to be present, so you can judge level, timing and route.",
+    "Teach at homes in the colonies you chose, online for students across Rajasthan and India, or both, such as a weekend visit with online weekday classes."
+  ],
   "faqs": [
-    ["How do Jaipur requests come to a tutor?", "A Jaipur parent sends the class, board and medium, subjects, colony with its sector or scheme, and free hours. NXTutors shortlists two or three tutors: those in that colony first, then those who travel there, then the zone, Jaipur and online. Your fee is visible to the family on the shortlist before the free first demo."],
-    ["Can I teach online as a Jaipur tutor?", "Yes. Turn on online lessons and requests reach you by subject, board, class and free hours, whatever city the family is in. An RBSE tutor who teaches in Hindi and English, for instance, can take online students across Rajasthan alongside home classes in the colonies near home."],
-    ["Which Jaipur colonies should I add as travel areas?", "Add your own zone, then any colony you can reach without crossing Tonk Road or the Ajmer Road corridor at peak hour. If you live near a Pink Line station, the stretch from Mansarovar to Civil Lines opens up. Give each colony a fair test: you must reach it on time every week."],
-    ["Is police verification needed to teach on NXTutors?", "No. Tutors who join complete an ID check, not a police check: a one-time code confirms your phone or email, then you upload a government photo ID, which our team reviews before your profile goes live. Real tutors who pass show a Verified badge. How we verify tutors (/how-we-verify-tutors) explains the process."],
-    ["Are tutor plans free in Jaipur?", "No. Tutor plans are paid, and what each one includes is on the Pricing page (/pricing). Your lesson fee is up to you, and Jaipur families see it before booking the free demo. Parents may switch tutor without paying anything, so a tutor who keeps the agreed time every week is the one families hold on to."]
+    [
+      "How do Jaipur requests come to a tutor?",
+      "A Jaipur parent sends the class, board and medium, subjects, colony with its sector or scheme, and free hours. NXTutors shortlists two or three tutors: those in that colony first, then those who travel there, then the zone, Jaipur and online. Your fee is visible to the family on the shortlist before the free first demo."
+    ],
+    [
+      "Can I teach online as a Jaipur tutor?",
+      "Yes. Turn on online lessons and requests are no longer tied to your colony; subject, board and class decide the fit, whatever city the family is in. An RBSE tutor who teaches in Hindi and English, for instance, can take online students across Rajasthan alongside home classes in the colonies near home."
+    ],
+    [
+      "Which Jaipur colonies should I add as travel areas?",
+      "Add your own zone, then any colony you can reach without crossing Tonk Road or the Ajmer Road corridor at peak hour. If you live near a Pink Line station, the stretch from Mansarovar to Civil Lines opens up. Give each colony a fair test: you must reach it on time every week."
+    ],
+    [
+      "Is police verification needed to teach on NXTutors?",
+      "No. Tutors who join complete an ID check, not a police check: a one-time code confirms your phone or email, then you upload a government photo ID, which our team reviews before your profile goes live. Real tutors who pass show a Verified badge. How we verify tutors (/how-we-verify-tutors) explains the process."
+    ],
+    [
+      "Are tutor plans free in Jaipur?",
+      "No. Tutor plans are paid, and what each one includes is on the Pricing page (/pricing). Your lesson fee is up to you, and Jaipur families see it before booking the free demo. Parents may switch tutor without paying anything, so a tutor who keeps the agreed time every week is the one families hold on to."
+    ],
+    [
+      "Can women tutors in Jaipur keep to colonies near home?",
+      "Yes. You choose your travel zones, home requests are matched to those zones, and your free hours tell families when you teach, so you might take home lessons only in Mansarovar and along the Pink Line and teach other families online. Each new family meets you first at a free demo where we ask a parent to be present."
+    ],
+    [
+      "Which boards do Jaipur families study under?",
+      "Four broad systems: CBSE, RBSE (the Board of Secondary Education, Rajasthan), CISCE's ICSE and ISC, and for a smaller group the IB or Cambridge IGCSE. For RBSE students, families also name the medium, Hindi or English, so put boards, classes and medium on your profile."
+    ],
+    [
+      "Can I teach a Jaipur family partly at home and partly online?",
+      "Yes. Choose both modes and agree the split with the parent after the demo. Where Ajmer Road or Tonk Road makes a weekday trip slow, a weekend home lesson plus an online class during exam weeks keeps the plan going without extra travel."
+    ]
   ]
 }

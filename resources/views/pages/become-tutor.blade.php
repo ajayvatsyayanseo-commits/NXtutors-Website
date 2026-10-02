@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  @php $nxtJobsCss = true; @endphp
   @include('include.header')
   @php
     $ld = [
@@ -11,48 +12,42 @@
         ['@type' => 'FAQPage', 'mainEntity' => array_map(fn ($f) => ['@type' => 'Question', 'name' => $f[0], 'acceptedAnswer' => ['@type' => 'Answer', 'text' => $f[1]]], $faqs)],
       ],
     ];
+    // HowTo only while the storyboard renders (config jobs_pages.storyboard).
+    if (!empty($jobs['story'])) {
+      $ld['@graph'][] = \App\Support\JobsPage::howTo($jobs['story'], $canonical);
+    }
   @endphp
   <script type="application/ld+json">{!! json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
 </head>
 <body class="page">
 <div class="shell">
 <main class="main">
-  <div class="container nx-subject">
+  <div class="container nx-subject nxj">
 
     <nav class="nx-crumbs" aria-label="Breadcrumb">
       <a href="{{ url('/') }}">Home</a> <span aria-hidden="true">›</span>
       <span aria-current="page">Teach on NXTutors</span>
     </nav>
 
-    <section class="nx-shero">
-      <div class="nx-shero__main">
-        <span class="nx-card__kicker">For tutors and professionals</span>
-        <h1 class="nx-shero__title">Become a tutor on NXTutors: join, choose a plan, pass the ID check</h1>
-        <p class="nx-shero__lede">
-          Parents across India tell us what their child needs; we send them two or three matched tutors. Join as a
-          school tutor, exam coach, language teacher, music or dance teacher, coach or working professional, and get
-          matched with families near you or online.
-        </p>
-        <ul class="nx-trust">
-          <li>Families come to you</li>
-          <li>Home, online or both</li>
-          <li>Choose your areas and timings</li>
-          <li>Verified badge after ID check</li>
-        </ul>
-        <div class="nx-cta-row">
-          <a class="nx-cta nx-cta--primary" href="#" data-modal-target="tutorModal">Join as a tutor</a>
-          <a class="nx-cta nx-cta--ghost" href="#categories">See what parents are asking for</a>
-        </div>
-        <p class="nx-shero__lede nxjobs-cities">Looking for work near you? <a href="{{ url('/tuition-jobs') }}">Home tuition jobs by state and city</a> · <a href="{{ url('/tuition-jobs/gurugram') }}">Gurgaon</a> · <a href="{{ url('/pricing') }}">Tutor plans</a> · <a href="{{ url('/how-we-verify-tutors') }}">How the ID check works</a></p>
-      </div>
-      <aside class="nx-shero__side" aria-label="How it works">
-        <ul class="nx-stats nx-stats--stack">
-          <li><strong>1</strong><span>Create your profile: subjects, classes, boards, fee</span></li>
-          <li><strong>2</strong><span>Add the areas you travel to, and complete the ID check</span></li>
-          <li><strong>3</strong><span>We match you with families; the first class is a demo</span></li>
-        </ul>
-      </aside>
+    @include('pages.jobs.partials.hero', [
+      'h1' => 'Become a tutor on NXTutors: join, choose a plan, pass the ID check',
+      'kicker' => 'for tutors and professionals',
+      'lede' => 'Parents across India tell us what their child needs; we send them two or three matched tutors. Join as a school tutor, exam coach, language teacher, music or dance teacher, coach or working professional, and get matched with families near you or online.',
+    ])
+    <p class="nx-sec__sub nxjobs-cities"><a href="#join-steps">How joining works, step by step</a> · <a href="#categories">What parents are asking for</a> · <a href="{{ url('/tuition-jobs') }}">Home tuition jobs by state and city</a> · <a href="{{ url('/tuition-jobs/gurugram') }}">Gurgaon</a> · <a href="{{ url('/pricing') }}">Tutor plans</a> · <a href="{{ url('/how-we-verify-tutors') }}">How the ID check works</a></p>
+
+    <section class="nx-sec" id="join-steps" aria-labelledby="stepsTitle">
+      <div class="nx-sec__head"><h2 class="nx-sec__title" id="stepsTitle">How joining works, step by step</h2></div>
+      <p class="nx-sec__sub">What happens from your first message to your first class, as the site works today.</p>
+      <ol class="nxj-steps">
+        @foreach($steps as [$stepTitle, $stepText])
+          <li><h3>{{ $stepTitle }}</h3><p>{{ \App\Support\JobsContent::rich($stepText) }}</p></li>
+        @endforeach
+      </ol>
+      <p class="nx-sec__sub">Tutor plans and what each includes are on our <a href="{{ url('/pricing') }}">pricing page</a>; read them before you apply. The ID check is explained on <a href="{{ url('/how-we-verify-tutors') }}">how we verify tutors</a>.</p>
     </section>
+
+    @if(!empty($jobs['story']))@include('pages.jobs.partials.story', ['panels' => $jobs['story'], 'storyTitle' => 'From applying to your first class'])@endif
 
     <section class="nx-sec" id="categories" aria-labelledby="catTitle">
       <div class="nx-sec__head">
@@ -95,6 +90,8 @@
       </div>
     </section>
 
+    @include('pages.jobs.partials.women', ['women' => $jobs['women']])
+
     <section class="nx-sec" aria-labelledby="faqTitle">
       <div class="nx-sec__head"><h2 class="nx-sec__title" id="faqTitle">Questions from tutors</h2></div>
       <div class="nx-faq">
@@ -116,6 +113,7 @@
 
   </div>
 </main>
+@include('pages.jobs.partials.applybar', ['jobs' => $jobs])
 @include('include.footer')
 </div>
 </body>

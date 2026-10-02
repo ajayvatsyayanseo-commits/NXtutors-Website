@@ -5,13 +5,73 @@
     "Home lessons and online lessons both fit in Patna. When a family in Kankarbagh asks for a tutor, NXTutors shortlists two or three, taking tutors from Kankarbagh first, then the rest of the zone, then the city, then online, and the family sees each fee before a free first demo. Switching later is free for them. Coaching batch changeovers shape traffic on Bhootnath Road and around Boring Road, so fix lesson times around them. For a specialist senior paper, an online tutor from another city can work alongside a local one who handles the school subjects."
   ],
   "zone_notes": {
-    "Boring Road & Patliputra": "Boring Road itself is mostly shops, offices and coaching classes, so families live a turn away in colonies such as Sri Krishna Puri, Nageshwar Colony and Kidwaipuri, where a lane landmark matters more than the road name. There is no metro here yet, homes are mostly houses with a door or single gate, and Digha's towers register visitors.",
-    "Bailey Road & Danapur": "Metro work is under way beneath Bailey Road, so travel is by two-wheeler, auto or car, and a tutor from the same stretch, Saguna More with Danapur or Raja Bazar with Rukanpura, keeps lessons regular. Townships issue visitor entries at the main gate, and homes inside Danapur Cantonment follow their own entry procedure, which the family should confirm.",
-    "Kankarbagh & Rajendra Nagar": "This is the zone the metro already serves, so tutors near Bhootnath or Malahi Pakri stations can arrive by Blue Line and finish by auto. Rajendra Nagar uses numbered roads, Kadamkuan's lanes are tight for parking, and coaching changeover hours fill Bhootnath Road.",
-    "Gandhi Maidan, Ashok Rajpath & Old Patna": "Ashok Rajpath is busy at college opening and closing times, and Patna City's older lanes have hard-to-follow house numbers, so a shop or gali landmark and a phone number help. The riverfront expressway gives tutors from the north-west a quicker way in, and in the old city a two-wheeler or e-rickshaw beats a car.",
-    "Anisabad, Gardanibagh & Phulwari": "The Anisabad roundabout is the slowest point of most trips at peak hours, so tutors who live on the same side of it are the practical match. Government housing campuses in Gardanibagh and newer buildings in Phulwari Sharif check visitors at the gate, while plotted lanes let a tutor arrive at the door."
+    "Boring Road & Patliputra": "Boring Road itself is mostly shops, offices and coaching classes, so families live a turn away in colonies such as Sri Krishna Puri, Nageshwar Colony and Kidwaipuri, where a lane landmark matters more than the road name. There is no metro here yet, homes are mostly houses with a door or single gate, and Digha's towers register visitors. Set lessons before the evening rush at the Boring Road crossing, or teach in your own colony.",
+    "Bailey Road & Danapur": "Metro work is under way beneath Bailey Road, so travel is by two-wheeler, auto or car, and a tutor from the same stretch, Saguna More with Danapur or Raja Bazar with Rukanpura, keeps lessons regular. Townships issue visitor entries at the main gate, and homes inside Danapur Cantonment follow their own entry procedure, which the family should confirm. Ask whether the township can issue a standing pass for a regular tutor.",
+    "Kankarbagh & Rajendra Nagar": "This is the zone the metro already serves, so tutors near Bhootnath or Malahi Pakri stations can arrive by Blue Line and finish by auto. Rajendra Nagar uses numbered roads, Kadamkuan's lanes are tight for parking, and coaching changeover hours fill Bhootnath Road. Ask for the road number and house or building name in Rajendra Nagar and a precise lane landmark in Kadamkuan, and fix lessons away from the hours when coaching batches change over.",
+    "Gandhi Maidan, Ashok Rajpath & Old Patna": "Ashok Rajpath is busy at college opening and closing times, and Patna City's older lanes have hard-to-follow house numbers, so a shop or gali landmark and a phone number help. The riverfront expressway gives tutors from the north-west a quicker way in, and in the old city a two-wheeler or e-rickshaw beats a car. Plan online sessions on days when big events are held at the Maidan, and ask flat buildings to note your name at the gate.",
+    "Anisabad, Gardanibagh & Phulwari": "The Anisabad roundabout is the slowest point of most trips at peak hours, so tutors who live on the same side of it are the practical match. Government housing campuses in Gardanibagh and newer buildings in Phulwari Sharif check visitors at the gate, while plotted lanes let a tutor arrive at the door. For specialist subjects taught by tutors in north Patna, online sessions fill the gap."
   },
   "boards": "Patna tutors teach BSEB matric and intermediate students, CBSE, ICSE and ISC, and a smaller number of IB and IGCSE learners. For BSEB work, read model papers, patterns and notices on the Bihar School Examination Board's official website, because they change and forwarded copies go out of date. CBSE sample papers and marking schemes are on the CBSE academic site, and ICSE and ISC regulations on the CISCE site. State on your profile which board you teach and whether you teach in Hindi, English or both.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Bihar School Examination Board (BSEB)",
+      "site": "https://biharboardonline.bihar.gov.in/",
+      "classes": "Matric (Class 10); Intermediate (Class 12)",
+      "note": "BSEB conducts Bihar's Class 10 matric and Class 12 intermediate examinations. A tutor for a BSEB student should work from the prescribed textbooks and the board's own model and past papers, and teach in the language the student reads most easily, whether Hindi, English or a mix. Take patterns only from the official site."
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "Patna's CBSE students sit beside BSEB, CISCE and a few international ones, and some are at ease in Hindi, some in English, many in a mix. Ground lessons in NCERT, practise against CBSE sample papers and marking schemes, and keep your hours clear of coaching batch changeovers on Bhootnath Road and Boring Road.",
+      "page": "/cbse-home-tutor-patna"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "ICSE at Class 10 and ISC at Class 12 set long written papers over a wide syllabus, with literature texts in English. Patna tutors who know these papers can also teach ISC electives online to students across India. Read the regulations and specimen papers on cisce.org.",
+      "page": "/icse-home-tutor-patna"
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "Families following the IB Diploma in Patna, often after a move from another city, usually find the closest specialist online. IB assesses coursework as well as final papers, and a tutor may guide an Internal Assessment or Extended Essay but never write it. Use the subject guides on ibo.org."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "IGCSE students in Patna are a smaller group who usually learn with online specialists. IGCSE rewards past-paper practice against the official mark scheme, along with command words and the right tier; check whether the school uses Cambridge or Pearson Edexcel. Syllabuses are on cambridgeinternational.org."
+    }
+  ],
+  "women": {
+    "intro": "Women tutors are welcome to join NXTutors in Patna for home, online or hybrid teaching. You pick the localities and hours: a tutor in Kankarbagh can stay near the Bhootnath and Malahi Pakri metro stations, one in Sri Krishna Puri within the colonies off Boring Road, and families further away can learn online. Every tutor who registers clears the same ID check, a parent is home for the free demo, and the safeguarding policy applies to both sides. These are working controls, not promises about individuals.",
+    "points": [
+      "Choose home, online or both on your profile, and update it whenever needed.",
+      "Add only localities you want; trips across the Anisabad roundabout or along Bailey Road late in the day can be left out.",
+      "List your free hours and keep them clear of the student's coaching batch.",
+      "Every new family meets you at a free demo, where we ask a parent to be present, before regular classes.",
+      "In Digha's towers, Bailey Road townships and Gardanibagh campuses, ask the family to tell the gate your name so visits are logged.",
+      "Agree fees, timing and messages with a parent rather than the student.",
+      "Teach younger children with an adult at home, in a shared room; online, keep cameras on.",
+      "If anything worries you, stop and report it to NXTutors marked Safeguarding; call 112 first in an emergency."
+    ]
+  },
+  "story": [
+    "Sign up using a one-time code on your phone or email, then add subjects, classes and boards, BSEB, CBSE or ICSE, the language you teach in, and the Patna localities you reach.",
+    "Upload a government photo ID, which our team checks before your profile appears. Each ID number is tied to one tutor account, and the check is about identity, not police records.",
+    "Once checked, your profile is live with the Verified badge, showing your boards and language, your localities from Danapur to Patna City, your free hours and your fee.",
+    "A parent in Rajendra Nagar or Shastri Nagar sends a request. NXTutors suggests two or three tutors, nearest first, then those who travel to the colony, the zone, the city and online.",
+    "The family sees your fee before booking. The first class is a free demo at home with a parent there, so you can judge the student, the lane and the timing.",
+    "Then teach at homes in your localities, online for students across Bihar and India, or both, perhaps a Sunday visit with online classes around a coaching timetable."
+  ],
   "faqs": [
     [
       "How do tuition requests in Patna get to tutors?",
@@ -32,6 +92,18 @@
     [
       "Where are the tutor plan details?",
       "On /pricing, which lists the tutor plans and what each includes. Your lesson fee is a separate matter that you decide; it is visible to families before their free first demo, and if a family later switches to someone else, it costs them nothing, so the relationship rests on the teaching itself."
+    ],
+    [
+      "Can a woman tutor in Patna take home lessons only in her own colony?",
+      "Yes. You set the localities, and home requests follow them, while your hours tell families when you are free, so you could teach at home only around Kankarbagh or Boring Road and take other students online. A parent is home for the free demo, so you meet the family before agreeing to a timetable."
+    ],
+    [
+      "Which boards do Patna families ask about?",
+      "BSEB matric and intermediate, CBSE, CISCE's ICSE and ISC, and for a smaller number, the IB or Cambridge IGCSE, usually through online specialists. Families also mention language, Hindi, English or a mix, so list boards, classes and teaching language on your profile."
+    ],
+    [
+      "Can I mix home and online classes with a Patna family?",
+      "Yes. Pick both modes and agree the split after the demo. If evening traffic at the Anisabad roundabout or on Bailey Road makes weekday trips slow, a weekend home lesson plus online classes on weekdays tends to hold up better."
     ]
   ]
 }

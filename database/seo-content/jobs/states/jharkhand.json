@@ -5,6 +5,43 @@
     "site": "https://jac.jharkhand.gov.in",
     "summary": "The Jharkhand Academic Council, Ranchi, conducts the Secondary (Class 10) and Intermediate (Class 12) examinations, and also runs Madhyama and Madrasa examinations. It has conducted the Jharkhand Teacher Eligibility Test, with separate syllabi for Level 1 (Classes 1 to 5) and Level 2 (Classes 6 to 8). Its site links to e-books and eTextbooks, to JCERT and NCERT, and to DigiLocker, and publishes results, notices and its Act and rules."
   },
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Jharkhand Academic Council (JAC), Ranchi",
+      "site": "https://jac.jharkhand.gov.in",
+      "classes": "Secondary (Class 10), Intermediate (Class 12); Madhyama and Madrasa examinations",
+      "note": "JAC conducts the Secondary and Intermediate examinations, along with Madhyama and Madrasa papers, and has run the Jharkhand Teacher Eligibility Test with separate Level 1 and Level 2 syllabi. Its site links to e-books and eTextbooks, JCERT and NCERT, so a tutor can build demo material from the same books students use."
+    },
+    {
+      "key": "cbse",
+      "name": "Central Board of Secondary Education (CBSE)",
+      "site": "https://www.cbse.gov.in",
+      "classes": "Classes 1–12; board examinations in Classes 10 and 12",
+      "note": "CBSE features on both our Ranchi and Jamshedpur pages. A Jharkhand tutor teaching it should plan from NCERT and the current session's sample papers on cbseacademic.nic.in, and list the CBSE classes separately from JAC ones, since the request will say which board the student sits."
+    },
+    {
+      "key": "cisce",
+      "name": "Council for the Indian School Certificate Examinations (CISCE)",
+      "site": "https://cisce.org",
+      "classes": "ICSE (Class 10), ISC (Class 12)",
+      "note": "ICSE and ISC appear on both our Ranchi and Jamshedpur pages, which also name ICSE literature among the subjects where online lessons widen a family's choice. A tutor here should know the council's prescribed texts and specimen papers, and expect answers to be judged on full, organised working."
+    },
+    {
+      "key": "ib",
+      "name": "International Baccalaureate (IB)",
+      "site": "https://www.ibo.org",
+      "classes": "Primary Years, Middle Years and Diploma Programmes",
+      "note": "Our Ranchi and Jamshedpur pages note that families following the IB usually find their specialist online, since such tutors are spread across India. If you have taught IB subjects, mark online teaching and name the Diploma subjects and the levels, Standard or Higher, you know."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge IGCSE",
+      "site": "https://www.cambridgeinternational.org",
+      "classes": "IGCSE, usually around Classes 9–10",
+      "note": "Cambridge IGCSE students in Jharkhand, according to our city pages, mostly work with an online specialist from elsewhere. An IGCSE-trained tutor living here can be that specialist for students in other cities; prepare with past papers and mark schemes and name the tiers you teach."
+    }
+  ],
   "intro": [
     "Two Jharkhand cities have their own tuition-jobs pages: Ranchi and Jamshedpur, each split into zones you can choose to cover. Everywhere else in the state, from Dhanbad and Bokaro to Deoghar, Hazaribagh or Dumka, starts here. Join with your town written clearly. NXTutors offers a home request to the closest suitable tutors before looking further out, which means a teacher in Giridih is the first name for a Giridih family who asks. Online lessons are open to you as well, and they do not depend on location at all. Chas and Phusro work the same way.",
     "Students in Jharkhand can be on the JAC board, CBSE, ICSE or others, so list each one you teach and the medium. JAC posts its Secondary and Intermediate notices, results and links to eTextbooks on its own site, which is the place to check a syllabus question rather than a guidebook. With each request, the family receives two or three tutor profiles and sees the fee each tutor has set before a free first class; if it does not work out, they can switch. If you teach Madhyama or Intermediate classes, name those too."
@@ -12,48 +49,68 @@
   "towns": [
     {
       "name": "Dhanbad",
-      "note": "Boards you teach in Dhanbad should all be listed."
+      "note": "No tuition-jobs page exists for Dhanbad, so tutors there sign up through this state page. What matters most is the locality you put down: home requests travel outwards from the family, nearest tutor first. Want students beyond Dhanbad too? Tick online as well."
     },
     {
       "name": "Bokaro Steel City",
-      "note": "In Bokaro Steel City, give your sector so Bokaro families nearby see you first."
+      "note": "Living in Bokaro Steel City and happy to visit Chas as well? Then write both, with the sectors or localities you mean. A travel list built from real places keeps the home requests you see within easy reach after school hours."
     },
     {
       "name": "Deoghar",
-      "note": "Your preferred classes in Deoghar can go on your profile."
+      "note": "Deoghar tutors who prepare students for JAC's Madhyama examinations can mention it separately. The council conducts them alongside Secondary and Intermediate, and a family whose child is on that route will look for a tutor who knows it."
     },
     {
       "name": "Hazaribagh",
-      "note": "If you are based in Hazaribagh, add online hours too."
+      "note": "Hazaribagh teachers who have cleared the Jharkhand TET can say so, along with the level, Level 1 for Classes 1 to 5 or Level 2 for Classes 6 to 8. Parents of younger students can then see that you have studied that stage formally."
     },
     {
       "name": "Giridih",
-      "note": "Say how far beyond Giridih you will travel for lessons."
+      "note": "If you study at college in Giridih and tutor on the side, give only the afternoons or weekends you can keep every week. Families see those hours, and the fee you set, before they ever book a demo with you."
     },
     {
       "name": "Ramgarh",
-      "note": "Teaching from home in Ramgarh? Online classes work too."
+      "note": "Ramgarh lies close to Ranchi, and some tutors here may be glad to visit Ranchi students. Ranchi's own tuition-jobs page divides the city into zones; add only the localities you could reach regularly, and keep Ramgarh itself first."
     },
     {
       "name": "Dumka",
-      "note": "Put your strongest subjects for Dumka students first."
+      "note": "Retired teachers in Dumka who want a few students can describe the stages and subjects they taught, without naming any school. A parent reading two or three profiles side by side looks for exactly that kind of concrete experience."
     },
     {
       "name": "Chas",
-      "note": "Chas tutors who also cover Bokaro can list Chas and Bokaro together."
+      "note": "Chas tutors who teach JAC Secondary classes can point families to the board's eTextbooks when planning revision. Mention the subjects and classes exactly, and say whether you prefer Hindi or English for teaching, since requests often make the medium clear."
     },
     {
       "name": "Phusro",
-      "note": "Weekend or weekday slots in Phusro? You choose them."
+      "note": "In Phusro, a profile that separates primary classes from Secondary and Intermediate work is easier for families to read. A Class 3 parent and a Class 12 student need different things from a tutor, and the shortlist is built on that difference."
     },
     {
       "name": "Chaibasa",
-      "note": "Please list the Chaibasa localities you can reach."
+      "note": "Chaibasa tutors with senior maths or science can teach Intermediate students across the state over video while keeping home lessons local. Show both modes, give separate hours if needed, and settle the pattern with each family at the demo."
     },
     {
       "name": "Medininagar",
-      "note": "Start online from Medininagar before a nearby family asks."
+      "note": "Some families still call Medininagar by its older name, Daltonganj, so write your locality the way people nearby say it. Home matching starts from the tutor closest to the family, and a familiar name helps parents see that you are within reach."
     }
+  ],
+  "women": {
+    "intro": "Women who tutor in Jharkhand, in Dhanbad, Bokaro, Deoghar or a smaller town, can take students through NXTutors without giving up control of their week. Home visits, video lessons or both: you decide. Only the localities you write down are used for home requests, and the hours on your profile are the hours families see. To join, a tutor enters a one-time code and uploads a government photo ID that our team reviews before anything goes live; real tutors who clear it carry the Verified badge. A parent is at home for your first lesson with each family.",
+    "points": [
+      "Pick visits, video or both, and revise the choice when you like.",
+      "Write down only the localities you want; nowhere else is used for home requests.",
+      "Your hours appear on the profile, so families plan around them.",
+      "Each family's first lesson has a parent at home.",
+      "In a colony with a gate register, ask the family to enter your visits.",
+      "Fees and timings are agreed with the parent, never with the child alone.",
+      "Uneasy about anything? Stop the lessons and message us on WhatsApp."
+    ]
+  },
+  "story": [
+    "Step one is a one-time code to your phone or email. Name your Jharkhand town, the localities you can visit and whether video lessons are part of your plan.",
+    "Step two: from the dashboard, upload a government photo ID. Our team checks it against your details while the profile waits, and that ID number can never back a second account.",
+    "Step three: cleared profiles go live with the Verified badge, listing JAC, CBSE or ICSE classes, your subjects, the language you teach in and your own fee.",
+    "Step four: a family near you asks for a tutor, giving class, board and subject. Two or three are put forward, closest first, then further out, then online.",
+    "Step five: the parent already knows your fee, and your first lesson is a free demo for the family. Teach whatever chapter the student has in school this week.",
+    "Step six: if they go ahead, you teach at home, over video or both, on days you fix with the parent. Keep your hours and localities current."
   ],
   "faqs": [
     [
@@ -75,6 +132,18 @@
     [
       "What do tutor plans include?",
       "That is set out on /pricing. Plans are paid, and you can compare what each includes there. You set your own fee for lessons."
+    ],
+    [
+      "As a woman tutor in Jharkhand, can I avoid home visits?",
+      "Yes. Choose online only and your name comes up for requests on subject, class and board. Should you add home visits later, only the localities you write down are used. A parent is at home for the first lesson with every new family."
+    ],
+    [
+      "Which boards come up for Jharkhand tutors?",
+      "JAC at Secondary or Intermediate level, CBSE, and ICSE and ISC, which our Ranchi and Jamshedpur pages both describe. IB and IGCSE families there usually look online. List only the boards you have taught; the request names the family's board."
+    ],
+    [
+      "Can I mix home and video teaching?",
+      "You can; that is a hybrid profile. Tick both, give the localities for visits, and add video hours if they differ. Some tutors keep separate students for each mode, others teach one student both ways, as agreed with the parent at the demo."
     ]
   ]
 }

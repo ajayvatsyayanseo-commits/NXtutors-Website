@@ -5,6 +5,29 @@
     "site": "https://bseodisha.ac.in",
     "summary": "The Board of Secondary Education, Odisha conducts the annual HSC examination at the end of Class 10, along with the Madhyama and SOSC examinations, publishes the scheme of studies and Class IX–X textbooks, and runs the OSSTET teacher eligibility test. The Council of Higher Secondary Education (chseodisha.nic.in), an autonomous body under the School and Mass Education Department set up under the Odisha Higher Secondary Education Act 1982, prepares the +2 syllabus, conducts the examinations and publishes results."
   },
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Board of Secondary Education, Odisha (BSE) and Council of Higher Secondary Education (CHSE)",
+      "site": "https://bseodisha.ac.in",
+      "classes": "HSC (Class 10) under BSE; +2 (Classes 11–12) under CHSE",
+      "note": "In Odisha the annual HSC examination comes at the end of Class 10 and is run by BSE, which also conducts Madhyama and SOSC examinations, publishes the scheme of studies and Class IX–X textbooks, and runs OSSTET. The +2 syllabus, examinations and results belong to CHSE (chseodisha.nic.in), an autonomous council set up under a 1982 Act."
+    },
+    {
+      "key": "cbse",
+      "name": "Central Board of Secondary Education (CBSE)",
+      "site": "https://www.cbse.gov.in",
+      "classes": "Classes 1–12; board examinations in Classes 10 and 12",
+      "note": "If you have taught CBSE classes in Odisha, show them next to your BSE or CHSE work. Note that CBSE's Class 10 is not called HSC, so label each board clearly. The current curriculum, sample papers and marking schemes are on cbseacademic.nic.in."
+    },
+    {
+      "key": "cisce",
+      "name": "Council for the Indian School Certificate Examinations (CISCE)",
+      "site": "https://cisce.org",
+      "classes": "ICSE (Class 10), ISC (Class 12)",
+      "note": "Should your experience include ICSE or ISC, a separate entry helps families following those courses find you. The council's syllabi and marking differ from both BSE Odisha and CBSE, and cisce.org carries the regulations and specimen papers to read before a first lesson."
+    }
+  ],
   "intro": [
     "Odisha has no NXTutors city tuition-jobs page yet, so tutors across the state, in Bhubaneswar, Cuttack, Rourkela, Berhampur, Sambalpur or smaller towns, all start here. Write your town and the localities you can reach. When a parent asks for home lessons, NXTutors offers the request to the nearest suitable tutors first and only then looks further out, so a precise base helps you. Online lessons work on a separate basis, matching subject, class and board, which means a tutor in Baripada or Jeypore can be shortlisted for a student in any state.",
     "In Odisha, Class 10 is examined by the Board of Secondary Education and the +2 stage by the Council of Higher Secondary Education; families may also follow CBSE, ICSE or another board, in Odia or English medium. List each board and medium you teach, and check the scheme of studies on the board's site before a demo. Every request produces two or three tutors for the family to compare; your fee is shown before a free first class, and switching later is free for them. Name the +2 stream you teach, if any."
@@ -12,52 +35,72 @@
   "towns": [
     {
       "name": "Bhubaneswar",
-      "note": "Start online from Bhubaneswar before a nearby family asks."
+      "note": "Bhubaneswar is the state capital, but NXTutors has no city page there yet, so tutors join through this one. What brings a nearby family your profile is your locality, written precisely, because home requests start with the tutor closest to them. Online students can live anywhere."
     },
     {
       "name": "Cuttack",
-      "note": "A tutor living in Cuttack can teach online across India."
+      "note": "Cuttack tutors who are willing to visit particular Bhubaneswar localities can add them by name, keeping Cuttack areas first. Families are matched to the nearest suitable tutors, so a list of exact places beats a promise to cover both cities."
     },
     {
       "name": "Rourkela",
-      "note": "Home lessons in Rourkela go first to tutors nearby."
+      "note": "Rourkela tutors set their own fee per class and can change it later. Families see the figure on your profile before a demo, so state a fee that reflects the level you teach; it is never bargained over after the first lesson."
     },
     {
       "name": "Berhampur",
-      "note": "Weekend or weekday slots in Berhampur? You choose them."
+      "note": "Berhampur tutors who teach in Odia and English can mark the medium against each subject. When a request makes the medium clear, matching on it saves both the family and you from a demo that does not fit the student."
     },
     {
       "name": "Sambalpur",
-      "note": "Keep both options open from Sambalpur: home and online."
+      "note": "Sambalpur teachers working with +2 students should name the CHSE subjects they teach, not just the level. Senior students choose on subject depth, and a precise list puts you on shortlists that match your real strengths."
     },
     {
       "name": "Puri",
-      "note": "Nearby families in Puri see the closest tutors first."
+      "note": "Puri tutors who teach English or Odia as subjects can say which classes they take and whether they focus on grammar, reading or writing. Parents choosing a language tutor often look at method, and a short description of yours helps."
     },
     {
       "name": "Balasore",
-      "note": "Put your strongest subjects for Balasore students first."
+      "note": "Balasore teachers who taught in school for many years and now want a few private students can describe the stages they know, without naming the school. That concrete detail helps a parent choose from a shortlist of two or three."
     },
     {
       "name": "Bhadrak",
-      "note": "Write down your Bhadrak neighbourhood; nearby requests come first."
+      "note": "Bhadrak tutors with OSSTET can mention it alongside the classes it relates to. A parent of a younger student may value seeing that you have studied teaching formally, and the detail sits naturally next to your primary or middle classes."
     },
     {
       "name": "Baripada",
-      "note": "Online lessons let Baripada tutors teach in other states."
+      "note": "Baripada tutors who teach Classes 1 to 5 can list that range by itself. Parents of small children usually want patience, reading and early number work, and a separate entry helps the shortlist place you with those families."
     },
     {
       "name": "Jharsuguda",
-      "note": "Say how far beyond Jharsuguda you will travel for lessons."
+      "note": "From Jharsuguda, online teaching widens your reach while home lessons stay local. Mark both modes, give separate hours if they differ, and agree a pattern with each family at the demo, such as home lessons midweek and a video session before tests."
     },
     {
       "name": "Angul",
-      "note": "Online students can choose a Angul tutor from anywhere."
+      "note": "Angul tutors new to private tuition can start with a few classes they know thoroughly. Families compare two or three profiles before the demo, and a short, accurate one tends to read better than a claim to teach everything."
     },
     {
       "name": "Jeypore",
-      "note": "Mark which areas near Jeypore you will visit."
+      "note": "Jeypore tutors should begin with their own locality, typed exactly, and only then list nearby places. Shortlists for home lessons start with the tutor living closest and move outward, so the precise base decides which families see you."
     }
+  ],
+  "women": {
+    "intro": "Are you a woman who tutors in Odisha, in Bhubaneswar, Cuttack, Rourkela or a smaller town? NXTutors lets you decide how and where you teach. You can visit students' homes, teach over video, or do both, and the localities you list are the only ones used for home requests. Your hours sit on your profile for parents to see. Before you appear to any family, you confirm a phone or email by one-time code and our team reviews a government photo ID you upload; real tutors who clear the review carry the Verified badge. We ask a parent to be at home for each first lesson.",
+    "points": [
+      "Visits, video or both? Decide on your profile; change it whenever.",
+      "Which localities? Only those you list are used.",
+      "Which hours? Yours, shown before any demo is booked.",
+      "Who is home at the first lesson? A parent, every time.",
+      "Gated colony? Ask the family to enter you in the gate register.",
+      "Who arranges fees? You and the parent, directly.",
+      "Something wrong? Stop the classes and tell us on WhatsApp or the contact page."
+    ]
+  },
+  "story": [
+    "How do I start? Enter a one-time code sent to your phone or email, then add your Odisha town, the localities you can reach and whether you teach online.",
+    "What about ID? Upload a government photo ID from your dashboard. Our team checks it while the profile waits as pending, and the same ID cannot open a second tutor account.",
+    "When am I visible? After the review. Your profile then carries the Verified badge and lists your BSE, CHSE or CBSE classes, subjects, medium and fee.",
+    "How do requests come? A family near you names a class, board and subject; two or three tutors are shortlisted, nearest first, then further out, then online.",
+    "What happens at the demo? The family already knows your fee, and the first lesson is free for them. Teach the chapter the student is doing in school.",
+    "And then? If they continue, you teach at home, online or both, on days agreed with the parent, and keep your localities and hours current."
   ],
   "faqs": [
     [
@@ -79,6 +122,18 @@
     [
       "How do tutor plans work?",
       "They are paid, and /pricing lists what each plan includes. You set your own lesson fee."
+    ],
+    [
+      "Can a woman tutor in Odisha avoid home visits?",
+      "Yes. Choose online only and you are shortlisted on subject, class and board rather than location. If you add home lessons later, only your listed localities are used, and a parent is at home for the first lesson with every family."
+    ],
+    [
+      "Which boards should an Odisha tutor list?",
+      "BSE for HSC classes and CHSE for +2 subjects, if you teach them, and CBSE, ICSE or ISC only where you have real experience. Label each clearly, since Odisha's HSC is Class 10. The family's request names its board."
+    ],
+    [
+      "Can I combine visits and video lessons?",
+      "Yes, as a hybrid profile. Tick both, list your localities, and add video hours if different. You may keep separate students for each or teach one student both ways, as agreed with the parent at the demo."
     ]
   ]
 }

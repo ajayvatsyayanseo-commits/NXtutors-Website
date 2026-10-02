@@ -5,6 +5,29 @@
     "site": "https://bse.ap.gov.in",
     "summary": "The Board of Secondary Education, Andhra Pradesh, working through the Directorate of Government Examinations, conducts the SSC public examinations at the end of Class 10 and the advanced supplementary (ASE) examinations that follow; its site lists the March 2026 public examinations and the May 2026 ASE. It publishes model question papers, blueprints and weightage tables, including those for the SSC public examination 2027. Intermediate is under the Board of Intermediate Education, Andhra Pradesh (bie.ap.gov.in)."
   },
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Board of Secondary Education, Andhra Pradesh (BSEAP)",
+      "site": "https://bse.ap.gov.in",
+      "classes": "Class 10 SSC; Intermediate (Classes 11–12) under BIEAP",
+      "note": "BSEAP runs the SSC public examinations at the end of Class 10 through the Directorate of Government Examinations, followed by advanced supplementary (ASE) examinations. Its site publishes model papers, blueprints and weightage tables, including those for the SSC 2027 examination, so a tutor can plan revision chapter by chapter against the board's own weightage. Intermediate sits with BIEAP at bie.ap.gov.in."
+    },
+    {
+      "key": "cbse",
+      "name": "Central Board of Secondary Education (CBSE)",
+      "site": "https://www.cbse.gov.in",
+      "classes": "Classes 1–12; board examinations in Classes 10 and 12",
+      "note": "If you teach CBSE classes in Andhra Pradesh, work from the national board's own documents: the curriculum and sample papers sit on cbseacademic.nic.in and examination notices on cbse.gov.in. Name the classes and subjects you cover, and check the current year's pattern before a demo instead of relying on an older one."
+    },
+    {
+      "key": "cisce",
+      "name": "Council for the Indian School Certificate Examinations (CISCE)",
+      "site": "https://cisce.org",
+      "classes": "ICSE (Class 10), ISC (Class 12)",
+      "note": "CISCE sets the ICSE examination after Class 10 and the ISC after Class 12. A tutor who has taught these courses should list them separately from SSC or CBSE work, because the syllabi and the way answers are marked are not the same. The council's regulations and specimen papers are on cisce.org."
+    }
+  ],
   "intro": [
     "NXTutors has no city tuition-jobs page in Andhra Pradesh yet, so tutors in Visakhapatnam, Vijayawada, Guntur, Nellore, Tirupati and every other town join from this page. Give your town and the localities you can reach. Home lessons are matched by distance: the closest suitable tutors are offered a family's request first, then the search widens. Online lessons are matched by subject, class and board instead, so a tutor in Kakinada or Kurnool can teach a student in another state without leaving home. Coastal and inland towns alike can be listed, from Srikakulam in the north to Anantapur further south.",
     "Andhra Pradesh students may take the SSC through BSEAP and Intermediate through BIEAP, or follow CBSE, ICSE or another board, in Telugu or English medium. List each board and medium on your profile. BSEAP publishes model question papers, blueprints and weightage tables for the 2027 SSC examination on its site, which are worth reading before a demo. Every request ends with two or three tutors and their fees; the first class is a free demo, and families can switch later. If you teach Intermediate, name the subjects and say whether your students are in the first or second year."
@@ -12,60 +35,80 @@
   "towns": [
     {
       "name": "Visakhapatnam",
-      "note": "Home lessons in Visakhapatnam go first to tutors nearby."
+      "note": "In a city the size of Visakhapatnam, writing the whole city on a profile helps nobody. Name the neighbourhoods you can genuinely reach after school hours, because home requests are offered to the closest suitable tutors first. Add online hours as well if you want students from other districts."
     },
     {
       "name": "Vijayawada",
-      "note": "If you are based in Vijayawada, add online hours too."
+      "note": "Vijayawada tutors who teach both SSC and Intermediate subjects should list them as separate lines. The first comes under BSEAP and the second under BIEAP, and families usually say which one in their request. Online students elsewhere in the state can be offered your profile too."
     },
     {
       "name": "Guntur",
-      "note": "Teaching from home in Guntur? Online classes work too."
+      "note": "If you live in Guntur and are willing to visit students in a neighbouring town, add that town to your travel list; otherwise keep to the localities you know well. A short, accurate list means the home requests offered to you are ones you can actually reach."
     },
     {
       "name": "Nellore",
-      "note": "Tutors who live in Nellore can mark nearby localities."
+      "note": "Many Nellore tutors could work a hybrid week: home classes in their own part of town on weekdays and online sessions for students further away at weekends. Say which days belong to which on your profile, so a family's request fits the week you really have."
     },
     {
       "name": "Tirupati",
-      "note": "Please list the Tirupati localities you can reach."
+      "note": "From Tirupati you can be shortlisted for online students anywhere in India when your subject, class and board fit the request. For home lessons, matching starts with tutors who live closest to the family, so give your locality and not only the city name."
     },
     {
       "name": "Kurnool",
-      "note": "Online students can choose a Kurnool tutor from anywhere."
+      "note": "Kurnool tutors preparing Class 10 students can read the board's own model papers and weightage tables before a demo and plan from them. Mention which classes you take, from primary up to SSC or Intermediate, and the medium you are comfortable teaching in."
     },
     {
       "name": "Kakinada",
-      "note": "Write down your Kakinada neighbourhood; nearby requests come first."
+      "note": "Women tutors in Kakinada can keep to home classes in their own locality, take only online students, or mix the two. Each choice is set on the profile and can be changed later, and the hours you list are the hours families see."
     },
     {
       "name": "Rajamahendravaram",
-      "note": "Keep both options open from Rajamahendravaram: home and online."
+      "note": "Many families still say Rajahmundry rather than Rajamahendravaram, so write your locality the way people nearby know it. Home lessons are matched nearest first, and a clear, familiar locality name helps a family close to you recognise that you are within reach."
     },
     {
       "name": "Kadapa",
-      "note": "A tutor living in Kadapa can teach online across India."
+      "note": "A Kadapa tutor who teaches senior maths or science online can work with Intermediate students across the state. List the Intermediate subjects you handle, check the current pattern on the BIEAP site, and keep home classes to the parts of Kadapa you can reach comfortably."
     },
     {
       "name": "Anantapur",
-      "note": "Hours you can give in Anantapur belong on your profile."
+      "note": "In Anantapur, college students who tutor part-time should be exact about their free hours: evenings after college, weekends, or both. Families see your timings next to your fee before the demo, so a realistic timetable avoids cancelled classes later on."
     },
     {
       "name": "Eluru",
-      "note": "Say whether lessons in Eluru run in English or Telugu."
+      "note": "Teachers in Eluru who already work with the SSC blueprint can say so plainly. The board publishes blueprints and weightage tables, and parents often ask how revision will follow them. Add CBSE or other boards only if you have taught them yourself."
     },
     {
       "name": "Ongole",
-      "note": "Boards you teach in Ongole should all be listed."
+      "note": "For Ongole, a profile that lists primary classes separately from Classes 9 and 10 works better than one wide range. Parents of younger children want patience and routine, SSC families want paper practice, and the shortlist depends on that fit."
     },
     {
       "name": "Srikakulam",
-      "note": "Your preferred classes in Srikakulam can go on your profile."
+      "note": "Srikakulam tutors who prefer to teach from home can choose online only; matching then runs on subject, class and board rather than distance. Agree the video tool with each family before the first class, and send the class link to the parent's phone."
     },
     {
       "name": "Vizianagaram",
-      "note": "Say how far beyond Vizianagaram you will travel for lessons."
+      "note": "If you live in Vizianagaram and also travel into Visakhapatnam, add the particular Visakhapatnam localities you can reach instead of the whole city. Home requests from either place will then come to you when you are among the nearer tutors."
     }
+  ],
+  "women": {
+    "intro": "Women tutors across Andhra Pradesh, from Visakhapatnam to Anantapur, are welcome on NXTutors for home, online or hybrid teaching. You decide the localities you travel to, the hours you keep free and whether home visits are part of your week at all. Every tutor who joins goes through an ID check before the profile goes live, and real tutors who pass carry a Verified badge. The first class is a demo where we ask a parent to be at home, so you meet the family before regular classes begin. Our safeguarding policy sets out habits that protect the student and you.",
+    "points": [
+      "Pick home, online or a mix of both, and change it later.",
+      "List only the localities you are comfortable travelling to.",
+      "Set your own teaching hours; evenings or weekends only is fine.",
+      "Meet the family at the demo, where we ask a parent to be at home.",
+      "Teach in a shared room while another adult is in the house.",
+      "Keep messages with the parent rather than privately with the student.",
+      "If anything worries you, stop the classes and tell us on WhatsApp or the contact page."
+    ]
+  },
+  "story": [
+    "Sign up from anywhere in Andhra Pradesh and confirm your phone or email with a one-time code. Then add your town, the localities you can reach and whether you teach at home, online or both.",
+    "Upload a government photo ID from your dashboard. Our team reviews it against your profile; each ID number can belong to only one tutor account, and the profile stays pending until the review is done.",
+    "When the review is complete, your profile goes live with the Verified badge. Families see your boards, such as SSC under BSEAP or CBSE, along with your classes, subjects and the fee you set.",
+    "A family in your town sends a request with the class, board and subject. We shortlist two or three tutors, starting with those who live nearest, then wider, then online.",
+    "The first class is a free demo for the family, and they have already seen your fee. Teach a normal lesson on the chapter the student is doing in school this week.",
+    "If the family goes ahead, you teach at their home, online, or both, on the days you agreed. Fees and timings are settled with the parent, and you can update your profile whenever you like."
   ],
   "faqs": [
     [
@@ -87,6 +130,18 @@
     [
       "Do tutors pay?",
       "Yes, tutor plans are paid, and /pricing lists what each includes. Your fee per lesson is your own decision."
+    ],
+    [
+      "Can women tutors in Andhra Pradesh choose online only?",
+      "Yes. Set your profile to online only and you are matched by subject, class and board instead of distance. You can add home classes later, limited to the localities you pick. The demo still happens where we ask a parent to be present, and our safeguarding policy explains the habits we ask both sides to follow."
+    ],
+    [
+      "Which boards can I list from Andhra Pradesh?",
+      "List every board you have actually taught: SSC under BSEAP, Intermediate under BIEAP, CBSE, ICSE or ISC. Add the medium for each. Families state the board in their request, so an accurate list keeps you on shortlists that fit and off the ones that do not."
+    ],
+    [
+      "What does hybrid teaching mean for a tutor here?",
+      "Hybrid means one tutor runs both home and online classes for the same student, for example a weekday class at home and a weekend online session for doubts. Mark home and online on your profile, then agree the split with the parent during the demo."
     ]
   ]
 }

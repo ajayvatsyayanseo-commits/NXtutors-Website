@@ -5,13 +5,75 @@
     "As a tutor in Bhopal you can teach at home, online, or both. A request from Arera Colony goes first to tutors living there, then to the rest of the zone, then across Bhopal, then online, and the family is shown two or three tutors with fees visible before the free first demo. Switching later costs the family nothing. Living near an Orange Line station widens your reach in the centre, while tutors in Misrod, Katara Hills or along Kolar Road are the practical choice for their own stretch, with online lessons for students further away."
   ],
   "zone_notes": {
-    "Arera Colony, Shahpura & Kolar Road": "In Arera Colony, ask for the E-sector and house number; the older sectors are bungalows and independent houses where you walk straight to the door, with Bittan Market as a landmark. Kolar Road, Chuna Bhatti and Bawadiya Kalan are largely gated projects that need your name at the gate, and the link roads fill at office hours.",
-    "MP Nagar, TT Nagar & Shivaji Nagar": "MP Nagar and Board Office Square are Orange Line stations, which helps because parking in MP Nagar's commercial blocks is tight. Government quarters in TT Nagar, Shivaji Nagar and Tulsi Nagar often have no street address, so ask for the block and quarter number, and in Jahangirabad expect to park at the lane mouth and walk.",
-    "Hoshangabad Road, Misrod & Katara Hills": "Most homes sit inside gated townships or apartment projects, so expect to be added to a gate list or visitor app before a demo. Public transport thins away from the main road, so tutors living in Misrod, Bagmugaliya or Katara Hills are the easiest fit, and Hoshangabad Road is heavy in both directions at office hours.",
-    "BHEL, Awadhpuri & Ayodhya Bypass": "Township quarters are identified by sector and quarter number rather than street, parking is usually easy, and plant shift timings shape traffic, so ask the family when shifts change. Saket Nagar is close to Alkapuri station on the open Orange Line section, while widening work on Ayodhya Bypass makes tutors from the same side more practical.",
-    "Old City, Lalghati & Bairagarh": "Many doors in the Old City and Bairagarh cannot be reached by car, so a two-wheeler parked where the lane narrows and a mosque, temple or market corner as a landmark are the norm. On Idgah Hills the roads climb and wind, and evening traffic at Lalghati Chouraha and on VIP Road favours an afternoon or early-evening slot."
+    "Arera Colony, Shahpura & Kolar Road": "In Arera Colony, ask for the E-sector and house number; the older sectors are bungalows and independent houses where you walk straight to the door, with Bittan Market as a landmark. Kolar Road, Chuna Bhatti and Bawadiya Kalan are largely gated projects that need your name at the gate, and the link roads fill at office hours. Before a first visit to Chuna Bhatti or Bawadiya Kalan, ask for the tower and flat number.",
+    "MP Nagar, TT Nagar & Shivaji Nagar": "MP Nagar and Board Office Square are Orange Line stations, which helps because parking in MP Nagar's commercial blocks is tight. Government quarters in TT Nagar, Shivaji Nagar and Tulsi Nagar often have no street address, so ask for the block and quarter number, and in Jahangirabad expect to park at the lane mouth and walk. The metro is often the better choice here, and in Jahangirabad an afternoon slot before market traffic peaks is easier to keep.",
+    "Hoshangabad Road, Misrod & Katara Hills": "Most homes sit inside gated townships or apartment projects, so expect to be added to a gate list or visitor app before a demo. Public transport thins away from the main road, so tutors living in Misrod, Bagmugaliya or Katara Hills are the easiest fit, and Hoshangabad Road is heavy in both directions at office hours. On the busiest weekdays, an online session can replace the drive.",
+    "BHEL, Awadhpuri & Ayodhya Bypass": "Township quarters are identified by sector and quarter number rather than street, parking is usually easy, and plant shift timings shape traffic, so ask the family when shifts change. Saket Nagar is close to Alkapuri station on the open Orange Line section, while widening work on Ayodhya Bypass makes tutors from the same side more practical. Ask for the sector, quarter number and a landmark before your first visit.",
+    "Old City, Lalghati & Bairagarh": "Many doors in the Old City and Bairagarh cannot be reached by car, so a two-wheeler parked where the lane narrows and a mosque, temple or market corner as a landmark are the norm. On Idgah Hills the roads climb and wind, and evening traffic at Lalghati Chouraha and on VIP Road favours an afternoon or early-evening slot. On Idgah Hills, ask for the house or building name as well as the number."
   },
   "boards": "In Bhopal you will meet MP Board students, CBSE students, ICSE and ISC candidates under CISCE, and a smaller number of IB and IGCSE learners. For MP Board work, take the timetable, paper pattern and any rule changes from the Board of Secondary Education, Madhya Pradesh website, and teach from its prescribed books. CBSE sample papers and marking schemes are on the CBSE academic site; ICSE and ISC regulations are on the CISCE site. Mention on your profile whether you teach in Hindi, English or both.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Board of Secondary Education, Madhya Pradesh (MP Board)",
+      "site": "https://mpbse.nic.in/",
+      "classes": "Class 10 (High School); Class 12 (Higher Secondary)",
+      "note": "The MP Board conducts the state's Class 10 and Class 12 examinations, and its students may write them in Hindi or English medium. Teach from the board's prescribed books, and take the timetable, paper pattern and any rule change only from mpbse.nic.in. State clearly on your profile which medium you teach in."
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "CBSE students in Bhopal range from Arera Colony bungalows to Hoshangabad Road townships. Work outward from the NCERT chapter, practise with the sample papers and marking schemes on cbseacademic.nic.in, and insist on full written steps. The session opens in April, while MP Board and ICSE schools keep their own calendars.",
+      "page": "/cbse-home-tutor-bhopal"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "Bhopal's CISCE students sit ICSE in Class 10 and ISC in Class 12. Expect a broad syllabus, long answers, English literature texts and project work in each subject; a tutor who plans revision cycles through every chapter, with timed writing, serves them well. Use the regulations and specimen papers on cisce.org.",
+      "page": "/icse-home-tutor-bhopal"
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "A smaller group of Bhopal students follow the IB Diploma. Maths runs as Analysis and Approaches or Applications and Interpretation, at Standard or Higher Level, and internal assessment counts towards the grade. Offering online sessions widens your reach to these families, and ibo.org carries the subject guides.",
+      "page": "/ib-tutor-bhopal"
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "Cambridge IGCSE candidates in Bhopal are a smaller group than CBSE or MP Board students, and they need exam craft: command words, the right tier and past papers marked strictly. Read the syllabus on cambridgeinternational.org, or Pearson's site for Edexcel, and be ready to teach some sessions online.",
+      "page": "/igcse-tutor-bhopal"
+    }
+  ],
+  "women": {
+    "intro": "NXTutors welcomes women tutors in Bhopal for home, online or hybrid teaching. You set where you go and when: a tutor in Arera Colony can keep to the E-sectors and MP Nagar, and teach families in BHEL or the Old City online if that trip does not suit her. Every tutor who joins goes through the same ID check, families meet you at a free demo where we ask a parent to be present, and the safeguarding policy sets rules both sides follow. These are working controls, not promises about anyone's conduct.",
+    "points": [
+      "Choose home, online or hybrid on your profile; you can change it later.",
+      "Add only the zones you will travel to. Orange Line stops at MP Nagar, Board Office Square and Alkapuri can make evening trips simpler.",
+      "Show the hours you keep free on your profile, so Bhopal families know which evenings you can offer.",
+      "The first class is a demo where we ask a parent to be at home, so you meet the family before agreeing to continue.",
+      "In Kolar Road and Hoshangabad Road townships, ask the family to put your name on the gate list or visitor app so each visit is recorded.",
+      "Arrange timings, fees and any messages through a parent, not the student's personal phone.",
+      "Hold classes for young children in a shared room while an adult is home; keep cameras on online.",
+      "If something worries you, stop the classes and tell us, marking it Safeguarding; call 112 in an emergency."
+    ]
+  },
+  "story": [
+    "Start on your phone: confirm it, or your email, with a one-time code, then add your subjects, classes, boards such as MP Board or CBSE, and whether you teach in Hindi or English.",
+    "Next, upload a government photo ID. Our team reviews it before your profile can go live. This confirms who you are; it is not police verification or a background check.",
+    "After the review, the profile is published with the Verified badge, listing the Bhopal zones you cover, from Arera Colony to BHEL, your free hours and your own fee.",
+    "A parent in Shahpura or Misrod asks for a tutor. NXTutors picks two or three: tutors living in that area first, then those who travel there, then the zone, the city and online.",
+    "Before booking, the parent sees your fee. Your first class is a free demo with them present, a chance to check the student's level and the journey before you commit.",
+    "Then teach at home, online or both: a weekly visit within your own zone, online classes for families elsewhere in Bhopal, or students in other cities across India."
+  ],
   "faqs": [
     [
       "How would a Bhopal family's request reach me?",
@@ -32,6 +94,18 @@
     [
       "How much do tutor plans cost?",
       "Plan details, including what each tutor plan offers, are published on /pricing; please check there rather than relying on older figures passed around. What you charge per lesson is up to you, families see that fee before a free first demo, and they can switch to another tutor later without any charge."
+    ],
+    [
+      "Can a woman tutor in Bhopal teach at home only in her own area?",
+      "Yes. You choose the zones you travel to and the hours you keep free, so you could take home requests only around Arera Colony and MP Nagar, for example, and teach everyone else online. Each family meets you first at a free demo where we ask a parent to be at home."
+    ],
+    [
+      "Which boards will Bhopal families ask me about?",
+      "Mainly CBSE and the MP Board, run by the Board of Secondary Education, Madhya Pradesh, along with CISCE's ICSE and ISC and a smaller number of IB and Cambridge IGCSE students. List the boards, classes and medium you actually teach, rather than a subject alone."
+    ],
+    [
+      "Does a hybrid plan work for Bhopal families on the outskirts?",
+      "It can. For homes off Hoshangabad Road or along the Ayodhya Bypass, where the drive is long, a tutor might visit once a week for new topics and written practice, then teach a shorter online class midweek. Select both modes and agree the mix after the demo."
     ]
   ]
 }

@@ -99,6 +99,8 @@
   <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/nx-hub.css?v={{ $nxtAssetV }}" />
   {{-- Colour roles (one job per colour); loaded last so it settles them. See nx-roles.css. --}}
   <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/nx-roles.css?v={{ $nxtAssetV }}" />
+  {{-- Tutor-side pages only (/tuition-jobs/*, the jobs topics, /become-a-tutor): they set $nxtJobsCss. --}}
+  @if(!empty($nxtJobsCss))<link rel="stylesheet" href="{{ asset('frount/assets') }}/css/nx-jobs.css?v={{ $nxtAssetV }}" />@endif
   <script src="{{ asset('frount/assets') }}/js/nx-hub.js?v={{ $nxtAssetV }}" defer></script>
 <link rel="icon" type="image/png" sizes="48x48" href="{{ asset('uploads/logo/newlogo-48.png') }}">
 <link rel="apple-touch-icon" href="{{ asset('uploads/logo/newlogo-180.png') }}">

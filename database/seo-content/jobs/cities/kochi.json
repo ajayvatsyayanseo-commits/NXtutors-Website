@@ -5,13 +5,75 @@
     "Home and online lessons sit side by side for Kochi tutors. A request from Edappally is matched first with tutors there, then the rest of the northern zone, then across Kochi, then online, and the family is shown two or three tutors with fees before a free first demo; switching later costs them nothing. A tutor near a Blue Line station can reach a long stretch from Aluva to Tripunithura. Across the harbour, tutors who live on the islands or use the Water Metro fit better, with online sessions covering specialist subjects."
   ],
   "zone_notes": {
-    "Central Ernakulam": "The towers along Marine Drive use a reception or security desk and have their own visitor parking rules, while Pachalam and Thevara keep older houses on quieter roads. Kaloor, Town Hall, Ernakulam South and Kadavanthra are Blue Line stations, and Kadavanthra Junction is among the busiest crossings for tutors who drive.",
-    "Edappally & North Kochi": "The oldest stretch of the metro, from Aluva to Palarivattom, runs through this zone, so a tutor near a station can reach most homes with a short auto ride rather than driving through Edappally junction. Shift changes at Kalamassery's industrial gates and container traffic on the highway slow the roads, and Aluva's riverbank draws festival crowds at Sivarathri.",
-    "Kakkanad & East Kochi": "There is no metro station here yet and the Pink Line is under construction, so the Seaport–Airport Road carries most trips and timing matters more than anywhere else in Kochi. Gated communities in Kakkanad register every visitor, while Vennala and Thammanam can draw on tutors coming via Vyttila or Palarivattom stations.",
-    "Vyttila & Tripunithura": "Vyttila is Kochi's main interchange, where buses, the Blue Line and the Water Metro meet, which gives this zone one of the widest choices of tutors who can arrive by train. Maradu's high-rise complexes have standard gate registration, and Tripunithura's old town is crowded during its temple festival.",
-    "West Kochi & Islands": "There is no metro across the harbour, so the Water Metro to Fort Kochi, Vypin and Mattancherry, or the Goshree bridges and Thoppumpady, set the routes. Most families live in independent houses where the tutor comes straight to the door, but parking is scarce in Fort Kochi and Mattancherry's lanes."
+    "Central Ernakulam": "The towers along Marine Drive use a reception or security desk and have their own visitor parking rules, while Pachalam and Thevara keep older houses on quieter roads. Kaloor, Town Hall, Ernakulam South and Kadavanthra are Blue Line stations, and Kadavanthra Junction is among the busiest crossings for tutors who drive. Thevara has no station, so the auto leg is longer, and event days at the Kaloor stadium slow nearby roads.",
+    "Edappally & North Kochi": "The oldest stretch of the metro, from Aluva to Palarivattom, runs through this zone, so a tutor near a station can reach most homes with a short auto ride rather than driving through Edappally junction. Shift changes at Kalamassery's industrial gates and container traffic on the highway slow the roads, and Aluva's riverbank draws festival crowds at Sivarathri. Houses in Aluva town usually have space to park at the gate.",
+    "Kakkanad & East Kochi": "There is no metro station here yet and the Pink Line is under construction, so the Seaport–Airport Road carries most trips and timing matters more than anywhere else in Kochi. Gated communities in Kakkanad register every visitor, while Vennala and Thammanam can draw on tutors coming via Vyttila or Palarivattom stations. Book weekday classes after the office rush towards the IT parks, or use weekend mornings, and ask where to park inside the community.",
+    "Vyttila & Tripunithura": "Vyttila is Kochi's main interchange, where buses, the Blue Line and the Water Metro meet, which gives this zone one of the widest choices of tutors who can arrive by train. Maradu's high-rise complexes have standard gate registration, and Tripunithura's old town is crowded during its temple festival. Car trips through the Vyttila and Kundannoor junctions are slow at peak hours, so metro plus a short auto keeps time better; visitor parking in Maradu is usually inside the complex.",
+    "West Kochi & Islands": "There is no metro across the harbour, so the Water Metro to Fort Kochi, Vypin and Mattancherry, or the Goshree bridges and Thoppumpady, set the routes. Most families live in independent houses where the tutor comes straight to the door, but parking is scarce in Fort Kochi and Mattancherry's lanes. From Ernakulam, the Water Metro and a short walk from the jetty is often steadier than the bridges, and earlier slots avoid the tourist streets."
   },
   "boards": "Kochi tutors teach the Kerala State Board, through the SSLC and the Higher Secondary course, as well as CBSE and CISCE's ICSE and ISC. Take the scheme of each state examination and its dates only from the state's official notices, and teach from the state textbooks the school uses. CBSE sample papers and marking schemes are on the CBSE academic site, and ICSE and ISC regulations on the CISCE site. Say on your profile whether you teach in Malayalam medium, English medium or both, since families ask for the medium along with the board.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Kerala State Board (Kerala Pareeksha Bhavan for SSLC; Higher Secondary)",
+      "site": "https://keralapareekshabhavan.in/",
+      "classes": "SSLC (Class 10); Higher Secondary (Classes 11–12)",
+      "note": "On the state syllabus, the first public examination is the SSLC at the end of Class 10, conducted through Kerala Pareeksha Bhavan; Classes 11 and 12 form the Higher Secondary course, where students choose a subject group and are examined separately. Students may write in Malayalam or English, so teach in the child's medium."
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "CBSE schools in Kochi start their session in April, earlier than the state calendar, which shifts when revision and model papers fall. Teach from NCERT and the sample papers and marking schemes on cbseacademic.nic.in. A tutor near a Blue Line station can reach CBSE students from Aluva to Tripunithura.",
+      "page": "/cbse-home-tutor-kochi"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "CISCE sets the ICSE examination in Class 10 and the ISC in Class 12, both long written papers over a wide syllabus with English literature and project work. Kochi tutors for these boards, including ISC senior sciences, can widen their reach by teaching some students online. Use cisce.org for regulations.",
+      "page": "/icse-home-tutor-kochi"
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "A smaller group of Kochi students take the IB Diploma. Maths comes as Analysis and Approaches or Applications and Interpretation, at SL or HL, and internally assessed work counts towards the grade, which a tutor may guide but never write. Online lessons let you reach these families anywhere; guides are on ibo.org.",
+      "page": "/ib-tutor-kochi"
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "Cambridge IGCSE candidates in Kochi are fewer than state or CBSE students, and they need command words, the right tier and past papers marked strictly against the official scheme. Confirm whether the school follows Cambridge or Pearson Edexcel, then plan from the syllabus on cambridgeinternational.org.",
+      "page": "/igcse-tutor-kochi"
+    }
+  ],
+  "women": {
+    "intro": "Kochi has room for women tutors who want to teach in families' homes, online from their own home, or both, and NXTutors leaves the map to you. Someone living near Kaloor might take only homes an auto ride from a Blue Line stop; someone in Fort Kochi might stay on the islands she reaches by Water Metro, with Kakkanad students taught on screen. All tutors clear one ID check before going live, the opening class happens with a parent in the house, and our safeguarding policy binds tutors and parents equally.",
+    "points": [
+      "Home, online or a mix: set it on your profile and revise it as terms change.",
+      "Travel areas are your call; the harbour and the Seaport–Airport Road make natural edges if you would rather not cross them in the evening.",
+      "Mark which hours are open, and keep late ones off if you prefer.",
+      "Families try a free demo with you while a parent is in, before any weekly plan.",
+      "Marine Drive desks, Kakkanad community gates and Maradu complexes keep visitor records; get the family to add your name first.",
+      "Talk money, timetable and messages over with a parent, not through the student's phone.",
+      "Little ones should be taught where an adult can see the lesson; on screen, both cameras on.",
+      "Uneasy? Pause the classes and write to NXTutors flagged Safeguarding; danger means 112 first."
+    ]
+  },
+  "story": [
+    "Begin by verifying your phone or email through a one-time code. Then list what you teach, SSLC Maths in Malayalam, ISC Physics or CBSE English, and the Kochi zones within reach.",
+    "A scan of a government photo ID follows, and our team reviews it before families can find you. One ID number per account; the review is about identity, not background.",
+    "Approved profiles go live carrying the Verified badge, along with the medium you teach in, the zones you cover, the times you keep open and your chosen fee.",
+    "Say a family near Edappally asks for help. They get two or three names: tutors from their own locality, tutors who travel in, then northern Kochi, the whole city, then online.",
+    "Your fee is visible to them before they book a time. Lesson one is the free demo at their home, where we ask a parent to be present, a fair test of fit for both sides.",
+    "From there you might teach homes along one metro or ferry route, students across Kerala on screen, or split a family's week between a Saturday visit and a Wednesday online class."
+  ],
   "faqs": [
     [
       "How does a Kochi family's request come to me?",
@@ -32,6 +94,18 @@
     [
       "How do the tutor plans work?",
       "Each tutor plan, and what it includes, is described on /pricing. Your lesson fee is set by you and displayed to families before their free first demo, and families can move to another tutor later without paying for the switch. Choose a plan there, then set a fee that reflects your board and level."
+    ],
+    [
+      "Could I, as a woman tutor, keep my Kochi home lessons on the islands?",
+      "Certainly. Pick Fort Kochi, Mattancherry or Vypin as your travel areas, set the hours that suit you, and home requests are matched with those areas in mind; Ernakulam students can still learn from you online. We ask the parent to be at home for the demo, so you see the household first."
+    ],
+    [
+      "What boards might Kochi parents ask me to teach?",
+      "The Kerala State Board's SSLC and Higher Secondary come first, then CBSE and CISCE's ICSE and ISC, with a smaller group on the IB Diploma or Cambridge IGCSE. Medium counts here, so state Malayalam, English or both beside each board and class you list."
+    ],
+    [
+      "Would a home-plus-online week work for a Kakkanad family?",
+      "Quite possibly. Kakkanad has no metro station yet and its main road crawls at office hours, so one weekend visit for new chapters, with an online class midweek, often beats two weekday drives. Turn on both modes and agree the rhythm with the parent after the demo."
     ]
   ]
 }

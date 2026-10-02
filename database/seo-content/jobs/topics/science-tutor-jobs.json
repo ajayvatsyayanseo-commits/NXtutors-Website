@@ -5,8 +5,7 @@
   "intro": [
     "Science tutoring through NXTutors covers a wide span: integrated science for a Class 7 child, three separate papers for an ICSE Class 10 student, and Class 12 physics, chemistry or biology alongside NEET or JEE. Each piece of work starts when a parent sends a request with the class, board, the science that is giving trouble and their locality. We then shortlist two or three tutors whose profiles match. This page explains what parents expect from a science tutor at each stage and board, what the demo class is, how requests are routed, and how to describe yourself so that the right families reach you.",
     "You decide which sciences and classes you teach, where you travel, whether you work online, and your fee for each class. Parents see that fee before the demo. We make no promise about the number of requests you will see; that depends on your subjects, your location and the requests that come in."
-  ]
-  ,
+  ],
   "sections": [
     {
       "h2": "Science from Class 6 to Class 12: what each stage needs",
@@ -53,11 +52,49 @@
     }
   ],
   "faqs": [
-    ["Can I teach just one science, such as chemistry?", "Yes. An ICSE or senior student may need one science only, and a CBSE student may have a single weak area such as physics numericals. List the exact subjects, classes and boards you teach, and you will be matched to requests that ask for those, not to every science request."],
-    ["Do science tutors need to help with practical files?", "Only if you offer it. Senior science on CBSE and ISC includes practical assessment and, for ISC, project work and a practical file. If you can prepare students for practicals and vivas, say so on your profile; if not, leave it off so families know what to expect."],
-    ["Can I teach NEET or JEE science online to students in other cities?", "Yes. Set your profile to online or both. Online requests are matched on subject, board, class or exam and your free hours, never on where you live. Agree the video tool and a way to see written working with each family before the first lesson."],
-    ["How are home science requests shared out?", "Closest first: tutors living in the family's area, then those who list that area as somewhere they travel, then the zone and the city, then online tutors. Two or three tutors are shortlisted for each request, so it never goes to a long list."],
-    ["Is the NXTutors ID check the same as police verification?", "No. You confirm your phone or email with a one-time code and upload a government photo ID for our team to review before the profile goes live. It confirms identity and gives a Verified badge; it is not a police or criminal background check. How we verify tutors has the detail."],
-    ["Where can I see the cost of joining?", "On the pricing page. It lists the tutor plans and what each one includes, so you can compare them before signing up. That is separate from the fee you charge families, which you choose yourself and which parents see before the demo."]
-  ]
+    [
+      "Can I teach just one science, such as chemistry?",
+      "Yes. An ICSE or senior student may need one science only, and a CBSE student may have a single weak area such as physics numericals. List the exact subjects, classes and boards you teach, and you will be matched to requests that ask for those, not to every science request."
+    ],
+    [
+      "Do science tutors need to help with practical files?",
+      "Only if you offer it. Senior science on CBSE and ISC includes practical assessment and, for ISC, project work and a practical file. If you can prepare students for practicals and vivas, say so on your profile; if not, leave it off so families know what to expect."
+    ],
+    [
+      "Can I teach NEET or JEE science online to students in other cities?",
+      "Yes. Set your profile to online or both. Online requests are matched on subject, board and class or exam, never on where you live. Agree the video tool and a way to see written working with each family before the first lesson."
+    ],
+    [
+      "How are home science requests shared out?",
+      "Closest first: tutors living in the family's area, then those who list that area as somewhere they travel, then the zone and the city, then online tutors. Two or three tutors are shortlisted for each request, so it never goes to a long list."
+    ],
+    [
+      "Is the NXTutors ID check the same as police verification?",
+      "No. You confirm your phone or email with a one-time code and upload a government photo ID for our team to review before the profile goes live. It confirms identity and gives a Verified badge; it is not a police or criminal background check. How we verify tutors has the detail."
+    ],
+    [
+      "Where can I see the cost of joining?",
+      "On the pricing page. It lists the tutor plans and what each one includes, so you can compare them before signing up. That is separate from the fee you charge families, which you choose yourself and which parents see before the demo."
+    ]
+  ],
+  "story": [
+    "Confirm your phone or email with a one-time code and list the sciences you teach: integrated science for Classes 6 to 8, or physics, chemistry and biology separately, each with its boards.",
+    "Upload a government photo ID from the dashboard. A team member reviews it against your details; the profile stays pending until then, and that ID cannot be reused for another account.",
+    "Once you pass, the Verified badge appears on your profile, with your science subjects, classes, boards such as CBSE, ICSE or IGCSE, your mode of teaching and your fee.",
+    "A family asks for, perhaps, ICSE Class 10 chemistry. Two or three tutors whose subjects and board fit are shortlisted, starting with those who live nearest.",
+    "Your fee is already visible to the parent, and the demo costs the family nothing. Teach the current chapter, using a diagram or numerical from the student's own book.",
+    "Teach at home, online with a shared whiteboard, or both. Some senior students prefer doubt sessions online between home classes; agree any such pattern with the parent at the demo."
+  ],
+  "women": {
+    "intro": "Some parents ask for a woman tutor for their child's science, and NXTutors treats that as a family preference, nothing more: physics, chemistry and biology are taught well by tutors of every background. Women science tutors on NXTutors decide whether they teach at home, online or both, which localities they visit and which hours they keep. Every tutor who joins goes through an ID check before appearing to families, real tutors who pass display the Verified badge, and every new family starts with a demo while a parent is present.",
+    "points": [
+      "Choose home, online or hybrid; diagrams, simulations and worked numericals all travel well over video.",
+      "Name only the localities you will visit.",
+      "Keep the hours that suit you, including weekends only.",
+      "Meet each family at a demo where we ask a parent to be present.",
+      "For online classes, ask that the student sits in a shared room with the camera on.",
+      "Arrange fees and schedules with the parent, not the student.",
+      "If something feels wrong, stop and tell us; /safeguarding-policy sets out how we act."
+    ]
+  }
 }

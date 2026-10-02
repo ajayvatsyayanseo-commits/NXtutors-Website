@@ -5,6 +5,29 @@
     "site": "https://pseb.ac.in",
     "summary": "The Punjab School Education Board, at Vidya Bhawan in SAS Nagar (Mohali), publishes syllabi, books, a question bank, the structure of question papers and model test papers, and runs an open school branch. Its 2026 notices include certificates for Classes 8, 10 and 12 on DigiLocker, joint merit lists for the March 2026 Class 10 and Class 12 examinations, and a note on the subject Punjab History and Culture for Classes 10 and 12 in 2026-27."
   },
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Punjab School Education Board (PSEB), SAS Nagar (Mohali)",
+      "site": "https://pseb.ac.in",
+      "classes": "Class 10 and Class 12 examinations; certificates for Classes 8, 10 and 12",
+      "note": "PSEB, at Vidya Bhawan in SAS Nagar, publishes syllabi, books, a question bank, the structure of question papers and model test papers, and runs an open school branch. Its 2026 notices put Class 8, 10 and 12 certificates on DigiLocker and add a note on Punjab History and Culture for Classes 10 and 12 in 2026-27."
+    },
+    {
+      "key": "cbse",
+      "name": "Central Board of Secondary Education (CBSE)",
+      "site": "https://www.cbse.gov.in",
+      "classes": "Classes 1–12; board examinations in Classes 10 and 12",
+      "note": "Punjab tutors who have taught CBSE can list those classes alongside PSEB ones. Keep them as separate lines, because paper structures differ, and plan any CBSE demo from the current curriculum and sample papers on cbseacademic.nic.in rather than an earlier session's material."
+    },
+    {
+      "key": "cisce",
+      "name": "Council for the Indian School Certificate Examinations (CISCE)",
+      "site": "https://cisce.org",
+      "classes": "ICSE (Class 10), ISC (Class 12)",
+      "note": "ICSE or ISC experience, if you have it, deserves its own entry. The council's syllabi are arranged differently from PSEB and CBSE, and answers are marked to its own scheme, so read the regulations and specimen papers on cisce.org before teaching a new student."
+    }
+  ],
   "intro": [
     "Mohali is covered by NXTutors' Chandigarh tuition-jobs page, so tutors living there should pick their zones on that page. The rest of Punjab, including Ludhiana, Amritsar, Jalandhar, Patiala and Bathinda, does not yet have city pages and starts here. Put your town and the localities you can reach on your profile. A family's home request is offered to the closest suitable tutors before anyone further off, so a Patiala tutor is the first option for a Patiala family. Online lessons sit outside that rule; they are matched on subject, class and board, and you can take them from any town.",
     "Punjab students may follow PSEB, CBSE, ICSE or another board, and study in Punjabi, Hindi or English. Say which on your profile. PSEB publishes its question bank, the structure of its question papers and model test papers on its own site, which is the place to check before a demo. For each request NXTutors shortlists two or three tutors; the family sees the fee you set, the first class is a free demo, and switching later costs the family nothing. If you also teach Punjab History and Culture, list it as a separate subject."
@@ -12,60 +35,80 @@
   "towns": [
     {
       "name": "Ludhiana",
-      "note": "You can run home visits in Ludhiana alongside online lessons."
+      "note": "Ludhiana is large enough that naming the whole city on a profile tells a family very little. Put down the colony or sector you live in and the few others you can reach after school; home requests are offered closest first, and online teaching stays open nationwide."
     },
     {
       "name": "Amritsar",
-      "note": "Put your strongest subjects for Amritsar students first."
+      "note": "Amritsar tutors who teach in Punjabi, Hindi or English can mark the medium against each subject. When a family's request makes the medium clear, matching on it avoids a demo lesson that suits neither the student nor you."
     },
     {
       "name": "Jalandhar",
-      "note": "Boards you teach in Jalandhar should all be listed."
+      "note": "Jalandhar tutors willing to visit students in Phagwara or Kapurthala can add the exact localities there. Real place names, not a vague radius, keep the home requests you are shown within reach on a school evening."
     },
     {
       "name": "Patiala",
-      "note": "A tutor living in Patiala can teach online across India."
+      "note": "Patiala teachers preparing Class 10 or 12 students can work from PSEB's question bank and model test papers when planning a demo. Name the classes and subjects you handle, and mention Punjab History and Culture if you teach it."
     },
     {
       "name": "Bathinda",
-      "note": "Online students can choose a Bathinda tutor from anywhere."
+      "note": "Bathinda tutors with a specialist senior subject, Class 12 physics or accountancy for instance, can teach it online to students across Punjab. Home visits can stay within your own colonies; give separate hours for each mode."
     },
     {
       "name": "Hoshiarpur",
-      "note": "Teaching from home in Hoshiarpur? Online classes work too."
+      "note": "Hoshiarpur tutors preparing a demo can ask the parent for the student's latest test and the chapter now in class. Teaching that chapter in the first lesson shows a family exactly how you would help."
     },
     {
       "name": "Pathankot",
-      "note": "Nearby families in Pathankot see the closest tutors first."
+      "note": "Pathankot tutors who prefer middle school can highlight Classes 6 to 8. Those years connect arithmetic with algebra and general science with physics, chemistry and biology, and a parent worried about that shift will look for someone who knows it well."
     },
     {
       "name": "Moga",
-      "note": "Students outside Moga can still book you online."
+      "note": "A Moga tutor willing to teach siblings in one visit can say so on the profile. Families with two children at different levels may ask, and the demo is the moment to agree how the hour is divided between them."
     },
     {
       "name": "Phagwara",
-      "note": "Start online from Phagwara before a nearby family asks."
+      "note": "Phagwara tutors should write their exact locality first and only then add nearby places they will visit. Home matching works outward from the family, nearest tutor first, so a precise base matters more than a long travel list."
     },
     {
       "name": "Firozpur",
-      "note": "Say how far beyond Firozpur you will travel for lessons."
+      "note": "From Firozpur, a hybrid pattern makes sense for many subjects: home lessons for students nearby and video sessions for others or for revision. Show both on the profile with hours for each, and agree the split at the demo."
     },
     {
       "name": "Kapurthala",
-      "note": "Say whether lessons in Kapurthala run in English or Punjabi."
+      "note": "Kapurthala tutors who have taught PSEB and CBSE can list both boards with their classes. Each family's request names its board, so covering both, where your experience is genuine, puts you on either kind of shortlist."
     },
     {
       "name": "Sangrur",
-      "note": "Keep both options open from Sangrur: home and online."
+      "note": "Sangrur tutors teaching senior science, maths or commerce can name the exact Class 11 and 12 subjects. Senior students compare tutors on subject depth, and marking online lets you reach them across the state."
     },
     {
       "name": "Barnala",
-      "note": "Please list the Barnala localities you can reach."
+      "note": "Barnala tutors new to private teaching can begin with the classes they know most thoroughly and widen the list with experience. A family reads your whole profile before the demo, and a short, honest one is easier to trust than a claim to cover everything."
     },
     {
       "name": "Batala",
-      "note": "If you are based in Batala, add online hours too."
+      "note": "Batala tutors who prepare students through the board's open school branch can say so as a separate line. A family whose child studies that way will look for exactly this experience, and PSEB's site sets out the current details."
     }
+  ],
+  "women": {
+    "intro": "Women who tutor in Punjab, from Ludhiana and Amritsar to Bathinda and Batala, can join NXTutors and run their teaching their own way. Choose home lessons, video lessons or a mix; write down the colonies and sectors you are willing to visit; keep the hours that fit your family life. Nothing is shown to parents until you have confirmed a phone or email with a one-time code and our team has reviewed a government photo ID; real tutors who clear it carry the Verified badge. Every new family meets you at a demo where we ask a parent to be at home.",
+    "points": [
+      "Decide on home, video or both, and revise it when you like.",
+      "Write down only the colonies and sectors you will visit.",
+      "Keep the hours you want; parents see them in advance.",
+      "Meet each new family where we ask a parent to be at home.",
+      "Teach in a shared room where another adult is in the house.",
+      "Agree timings and fees with the parent only.",
+      "Stop any lessons that make you uneasy, and tell us through WhatsApp or the contact page."
+    ]
+  },
+  "story": [
+    "Open the sign-up page and confirm your phone or email with a one-time code. Fill in your Punjab town, the colonies you can reach, your teaching medium and whether you teach over video.",
+    "Send in a government photo ID from your dashboard. Our team compares it with your details before anything is published, and an ID number can belong to one tutor account only.",
+    "Go live with the Verified badge once cleared. Parents can read your PSEB, CBSE or ICSE classes, subjects, language of teaching and the fee you chose.",
+    "Get shortlisted when a family near you asks for help with a class, board and subject. Two or three tutors are put forward, closest first, then wider, then online.",
+    "Give the demo. The family saw your fee beforehand and the first lesson costs them nothing; teach the chapter the student is doing at school.",
+    "Start teaching if they continue, at home, over video or both, on days agreed with the parent. Keep your colonies and hours up to date."
   ],
   "faqs": [
     [
@@ -87,6 +130,18 @@
     [
       "What do plans include?",
       "Tutor plans are paid and /pricing shows what each includes. The fee you charge for lessons is set by you."
+    ],
+    [
+      "Can a woman tutor in Punjab teach over video only?",
+      "Yes. Pick online only and your name comes up for requests on subject, class and board, not location. Home lessons, if you add them later, use only the colonies you list, and every new family meets you at a demo where we ask a parent to be at home."
+    ],
+    [
+      "Which boards should a Punjab tutor list?",
+      "PSEB with the classes you teach, and CBSE, ICSE or ISC only if you have taught them yourself. Note your medium, Punjabi, Hindi or English, beside each subject. The family's request always says which board it follows."
+    ],
+    [
+      "Can I mix home and video lessons?",
+      "Yes. Tick both modes, give the colonies for home lessons and add video hours if they differ. You can keep separate home and video students, or teach one student both ways if the parent agrees at the demo."
     ]
   ]
 }

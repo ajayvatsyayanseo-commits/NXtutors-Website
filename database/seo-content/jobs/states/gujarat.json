@@ -5,6 +5,43 @@
     "site": "https://www.gseb.org",
     "summary": "The Gujarat Secondary and Higher Secondary Education Board, based in Gandhinagar, conducts the SSC (Class 10) and HSC (Class 12) examinations. Its site handles exam registration, hall tickets, entry of internal and practical marks, marks verification, purak (supplementary) examinations and results, and hosts a question bank for Standards 9 to 12. The board's question paper archive issues SSC subject papers in Gujarati, English and Hindi medium, with Standard and Basic mathematics set as separate papers."
   },
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Gujarat Secondary and Higher Secondary Education Board (GSEB), Gandhinagar",
+      "site": "https://www.gseb.org",
+      "classes": "SSC (Class 10), HSC (Class 12); question bank for Standards 9–12",
+      "note": "GSEB sets SSC papers in Gujarati, English and Hindi medium, with Standard and Basic mathematics as separate papers, so a tutor has to know both the medium and the maths level before a demo. The board's site also hosts a question bank for Standards 9 to 12 and handles purak (supplementary) examinations."
+    },
+    {
+      "key": "cbse",
+      "name": "Central Board of Secondary Education (CBSE)",
+      "site": "https://www.cbse.gov.in",
+      "classes": "Classes 1–12; board examinations in Classes 10 and 12",
+      "note": "Our Ahmedabad and Surat pages both list CBSE among the boards Gujarat families follow. Teaching it well means working from NCERT and the current sample papers on cbseacademic.nic.in, and telling apart a CBSE request from a GSEB one even when the chapter names look alike."
+    },
+    {
+      "key": "cisce",
+      "name": "Council for the Indian School Certificate Examinations (CISCE)",
+      "site": "https://cisce.org",
+      "classes": "ICSE (Class 10), ISC (Class 12)",
+      "note": "ICSE and ISC appear on our Ahmedabad and Surat pages as well. A tutor coming from GSEB work will find the ICSE syllabus broader in several subjects and the papers strict about complete working, so practise with the council's specimen papers and list the two courses separately."
+    },
+    {
+      "key": "ib",
+      "name": "International Baccalaureate (IB)",
+      "site": "https://www.ibo.org",
+      "classes": "Primary Years, Middle Years and Diploma Programmes",
+      "note": "Our Gujarat city pages describe the IB Diploma as a mix of final exams and internally assessed coursework, with maths offered as Analysis and Approaches or Applications and Interpretation at Standard or Higher Level. An IB tutor may coach method for the coursework but must leave the writing to the student."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge IGCSE",
+      "site": "https://www.cambridgeinternational.org",
+      "classes": "IGCSE, usually around Classes 9–10",
+      "note": "For Cambridge IGCSE, our Ahmedabad and Surat pages stress reading command words closely, picking the right tier and marking past papers against the official scheme. A Gujarati-medium GSEB student and an IGCSE candidate need different teachers, so name IGCSE only if you have prepared students for it."
+    }
+  ],
   "intro": [
     "Ahmedabad and Surat each have a tuition-jobs page with zones, which is where tutors in those two cities should set their travel range. For the rest of Gujarat, from Vadodara and Rajkot to Bhavnagar, Anand or Vapi, this page is the starting point. Name your town when you join. A family's home request is first offered to tutors who live closest to them, so a teacher in Jamnagar is not competing with someone in Ahmedabad for a student next door. Online lessons sit outside that rule: a parent anywhere can choose you, provided the subject, class and board fit.",
     "GSEB issues SSC papers in Gujarati, English and Hindi medium, so the medium you teach in matters as much as the subject. Put it beside every subject on your profile, and add CBSE or any other board you also handle. GSEB's question bank for Standards 9 to 12, on its own site, is a sensible thing to look at before a demo. Each request brings a shortlist of two or three tutors; the parent sees your fee, which you set, and the first class is a free demo for them. Gujarati-medium tutors should say so up front."
@@ -12,60 +49,80 @@
   "towns": [
     {
       "name": "Vadodara",
-      "note": "Keep both options open from Vadodara: home and online."
+      "note": "Vadodara is one of Gujarat's larger cities, but our Gujarat city pages so far cover Ahmedabad and Surat, so Vadodara tutors register here. Precise area names matter: a family's home request is offered to whoever lives closest first, then to tutors further out."
     },
     {
       "name": "Rajkot",
-      "note": "Online lessons let Rajkot tutors teach in other states."
+      "note": "A Rajkot tutor can work with Ahmedabad or Surat students online if the subject, class and board fit, while home lessons stay with Rajkot families nearby. Put the medium next to each subject, because GSEB papers come in Gujarati, English and Hindi."
     },
     {
       "name": "Bhavnagar",
-      "note": "Your preferred classes in Bhavnagar can go on your profile."
+      "note": "Bhavnagar tutors who teach Class 10 maths should state whether they handle the Standard paper, the Basic paper or both. GSEB sets them separately, and a parent's request may name one, so this detail decides whether you are the right match."
     },
     {
       "name": "Jamnagar",
-      "note": "Tutors who live in Jamnagar can mark nearby localities."
+      "note": "In Jamnagar, a profile that starts with your strongest classes reads better than a list of every subject you once studied. Families compare two or three tutors at once, along with their fees, and a clear focus helps them choose you for the right reason."
     },
     {
       "name": "Gandhinagar",
-      "note": "Gandhinagar is where GSEB is based; list the Gandhinagar sectors you cover."
+      "note": "Gandhinagar is the state capital and home to the board's office. Tutors here can mention GSEB experience alongside any CBSE or ICSE classes, and name the sectors they will visit, since home requests reach the nearest suitable tutors before anyone further away."
     },
     {
       "name": "Anand",
-      "note": "A tutor living in Anand can teach online across India."
+      "note": "Anand tutors willing to visit students in Nadiad can add those Nadiad localities by name. Listing particular places rather than a whole town keeps the home requests you receive practical, and online teaching remains open for students elsewhere."
     },
     {
       "name": "Nadiad",
-      "note": "Nearby families in Nadiad see the closest tutors first."
+      "note": "College students in Nadiad who tutor part-time can offer just the hours left free by their own classes. Parents see your timings and fee before they book the demo, so stating realistic hours from day one saves rescheduling later."
     },
     {
       "name": "Junagadh",
-      "note": "Say how far beyond Junagadh you will travel for lessons."
+      "note": "Junagadh teachers preparing students for purak, the board's supplementary examination, can show that as a separate line. A family whose child is retaking a paper will search for exactly that kind of help, and the board's site carries the related notices."
     },
     {
       "name": "Bharuch",
-      "note": "Please list the Bharuch localities you can reach."
+      "note": "From Bharuch, a hybrid pattern often fits: home lessons for students in your own area and online sessions for others. Mark both on your profile, give hours for each if they differ, and settle the split with every parent at the demo class."
     },
     {
       "name": "Navsari",
-      "note": "Distance comes first: give your Navsari locality."
+      "note": "Navsari tutors decide their own fee and can set it per class. Families read it on your profile before the demo; because the figure is known up front, the conversation after a good first lesson is about timings, not money."
     },
     {
       "name": "Vapi",
-      "note": "Hours you can give in Vapi belong on your profile."
+      "note": "Vapi tutors who have taught both GSEB and CBSE should list each with its classes, since a family's request may name either board. Use GSEB's question bank and CBSE's sample papers when preparing, and read the current year's versions."
     },
     {
       "name": "Mehsana",
-      "note": "Home lessons in Mehsana go first to tutors nearby."
+      "note": "Mehsana tutors who teach HSC commerce, accounts, statistics or economics, can name each subject and the medium. GSEB's question bank for Standards 9 to 12 gives practice material, and a demo built on it shows a parent how you would prepare their child."
     },
     {
       "name": "Morbi",
-      "note": "Put your strongest subjects for Morbi students first."
+      "note": "Morbi tutors working with younger children should separate Classes 1 to 5 from secondary classes on their profile. Parents of primary students tend to want patient reading and number work and a steady homework habit, and the shortlist is built on that fit."
     },
     {
       "name": "Valsad",
-      "note": "Online students can choose a Valsad tutor from anywhere."
+      "note": "Valsad tutors who teach senior science or commerce can reach HSC students across Gujarat online. Keep home classes to the localities you know, list the HSC subjects precisely, and check the board's current notices before planning a demo lesson."
     }
+  ],
+  "women": {
+    "intro": "Gujarat's women tutors, in Vadodara, Rajkot, Gandhinagar or a smaller town, can take on students through NXTutors on terms that suit them. Teach in families' homes, over video, or both. List only the areas you are willing to travel to, and the hours that fit around your own commitments. Each tutor who joins first confirms a phone or email by one-time code, then uploads a government photo ID that our team reviews; real tutors who clear it carry the Verified badge. New families meet you at a demo lesson where we ask a parent to be at home.",
+    "points": [
+      "Home, video or a mix: set it on your profile and change it later.",
+      "Name the areas you will travel to; others are left out.",
+      "Hours are yours, including weekends or evenings only.",
+      "Every first lesson is a demo where we ask a parent to be at home.",
+      "In a society with a visitor app or gate register, ask to be entered.",
+      "Discuss timings and fees with the parent directly.",
+      "You can stop any arrangement and tell us through WhatsApp or the contact page."
+    ]
+  },
+  "story": [
+    "Start from any Gujarat town by entering a one-time code sent to your phone or email. Add the areas you can reach, your teaching medium and whether you teach at home or online.",
+    "Upload a government photo ID through your dashboard. Our team checks it before your profile is shown to anyone, and an ID number can never be attached to more than one tutor account.",
+    "Once checked, your profile goes live with the Verified badge, listing your GSEB, CBSE, ICSE, IB or IGCSE classes, your medium, your subjects and your own fee.",
+    "A family close to you asks for a tutor and names class, board and subject. We shortlist two or three, closest first, then the wider city, then online tutors.",
+    "Parents see your fee before the first lesson, a free demo for them. Teach the chapter currently in school, in the medium the student studies in.",
+    "If the family continues, you teach at home, online or both, on days fixed with the parent. Keep your areas and hours current so new requests suit your week."
   ],
   "faqs": [
     [
@@ -87,6 +144,18 @@
     [
       "Where are the tutor plans listed?",
       "On the pricing page, /pricing. Plans for tutors are paid, and that page shows what each includes. Your own lesson fee is separate and is up to you."
+    ],
+    [
+      "Can a woman tutor in Gujarat choose where she teaches?",
+      "Yes. Home requests only use the areas you list, and you can choose video lessons alone. A parent is at home for the demo with every new family, and our safeguarding policy sets out the habits we ask tutors and parents to follow."
+    ],
+    [
+      "Which boards do Gujarat families mention?",
+      "Our Ahmedabad and Surat pages list GSEB, CBSE, ICSE and ISC, and a group following the IB or Cambridge IGCSE. Name only the boards you have taught, with the medium beside each subject; the request always states the family's board."
+    ],
+    [
+      "Can I teach some students at home and some online?",
+      "Yes. Tick both home and online, list the areas for home visits and add online hours. You could also teach one student both ways, such as weekday lessons at home and an online session before a test, if the parent agrees at the demo."
     ]
   ]
 }

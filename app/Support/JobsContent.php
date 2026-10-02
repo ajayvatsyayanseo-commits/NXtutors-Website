@@ -11,6 +11,14 @@ namespace App\Support;
  *                             "towns": [{"name","note"}, ..], "faqs": [[q, a], ..]}
  *   topics/{topic-slug}.json {"title","description","h1","intro": [..],
  *                             "sections": [{"h2","paras": [..]}, ..], "faqs": [[q, a], ..]}
+ *   hub.json                 {"intro": [..], "story": [6], "women": {..}, "why": [..], "faqs": [..]}
+ *
+ * v2 fields (spec 2 Oct 2026), optional on cities, states, topics and the hub:
+ *   "board_cards": [{"key": "cbse|cisce|ib|igcse|state", "name", "site", "classes", "note"}, ..]
+ *   "women": {"intro": "..", "points": [..]}
+ *   "story": [six captions for the storyboard panels, in order]
+ * Absent or unusable v2 fields come back empty and the page uses its
+ * defaults (App\Support\JobsPage).
  *
  * Every reader returns null when the file is absent, unreadable or has no
  * usable text, so the page falls back to its template (city, state) or 404s
@@ -19,7 +27,13 @@ namespace App\Support;
 class JobsContent
 {
     /** National subject / mode jobs pages, served at /{slug} (flat URLs). */
-    public const TOPICS = ['maths-tutor-jobs', 'science-tutor-jobs', 'english-tutor-jobs', 'primary-tutor-jobs', 'online-tutor-jobs'];
+    public const TOPICS = ['maths-tutor-jobs', 'science-tutor-jobs', 'english-tutor-jobs', 'primary-tutor-jobs', 'online-tutor-jobs', 'female-tutor-jobs'];
+
+    /** Topic pages drawn in the pink women-tutor role (nx-roles.css). */
+    public const PINK_TOPICS = ['female-tutor-jobs'];
+
+    /** Board card keys, in display order. */
+    public const BOARD_KEYS = ['cbse', 'cisce', 'ib', 'igcse', 'state'];
 
     /** The parent-side national page each topic links to (null: none). */
     public const TOPIC_PARENT = [
@@ -28,6 +42,7 @@ class JobsContent
         'english-tutor-jobs' => 'english-home-tutor',
         'primary-tutor-jobs' => null,
         'online-tutor-jobs' => null,
+        'female-tutor-jobs' => 'female-home-tutor',
     ];
 
     /** Short link text for a topic page. */
@@ -37,6 +52,7 @@ class JobsContent
         'english-tutor-jobs' => 'English tutor jobs',
         'primary-tutor-jobs' => 'Primary (Class 1–5) tutor jobs',
         'online-tutor-jobs' => 'Online tutor jobs',
+        'female-tutor-jobs' => 'Women tutor jobs, home and online',
     ];
 
     /** Cities a topic page links to, in order (only those with an active city page are used). */
@@ -54,7 +70,7 @@ class JobsContent
         if (! preg_match('/^[a-z0-9-]+$/', $slug)) {
             return null;
         }
-        $file = self::dir() . DIRECTORY_SEPARATOR . $kind . DIRECTORY_SEPARATOR . $slug . '.json';
+        $file = self::dir() . DIRECTORY_SEPARATOR . ($kind !== '' ? $kind . DIRECTORY_SEPARATOR : '') . $slug . '.json';
         $key = $file . '|' . (is_file($file) ? filemtime($file) . ':' . filesize($file) : 'none');
         if (array_key_exists($key, $memo)) {
             return $memo[$key];
@@ -105,7 +121,7 @@ class JobsContent
             }
         }
 
-        return ['intro' => $intro, 'zone_notes' => $notes, 'boards' => self::str($d['boards'] ?? ''), 'faqs' => self::faqs($d['faqs'] ?? [])];
+        return ['intro' => $intro, 'zone_notes' => $notes, 'boards' => self::str($d['boards'] ?? ''), 'faqs' => self::faqs($d['faqs'] ?? [])] + self::v2($d);
     }
 
     /**
@@ -135,7 +151,7 @@ class JobsContent
             }
         }
 
-        return ['state' => $name, 'board' => $board, 'intro' => $intro, 'towns' => $towns, 'faqs' => self::faqs($d['faqs'] ?? [])];
+        return ['state' => $name, 'board' => $board, 'intro' => $intro, 'towns' => $towns, 'faqs' => self::faqs($d['faqs'] ?? [])] + self::v2($d);
     }
 
     /**
@@ -160,7 +176,86 @@ class JobsContent
             }
         }
 
-        return ['title' => $title, 'description' => self::str($d['description'] ?? ''), 'h1' => $h1, 'intro' => $intro, 'sections' => $sections, 'faqs' => self::faqs($d['faqs'] ?? [])];
+        return ['title' => $title, 'description' => self::str($d['description'] ?? ''), 'h1' => $h1, 'intro' => $intro, 'sections' => $sections, 'faqs' => self::faqs($d['faqs'] ?? [])] + self::v2($d);
+    }
+
+    /**
+     * The India hub's own text (jobs/hub.json); null when absent.
+     *
+     * @return array{intro: list<string>, why: list<array{title:string, text:string}>, faqs: list<array{0:string,1:string}>, board_cards: list<array>, women: array|null, story: array<int,string>}|null
+     */
+    public static function hub(): ?array
+    {
+        $d = self::read('', 'hub');
+        if (! $d) {
+            return null;
+        }
+
+        return ['intro' => self::paras($d['intro'] ?? []), 'why' => self::why($d['why'] ?? []), 'faqs' => self::faqs($d['faqs'] ?? [])] + self::v2($d);
+    }
+
+    /**
+     * The v2 fields shared by every file.
+     *
+     * @return array{board_cards: list<array{key:string,name:string,site:string,classes:string,note:string}>, women: array{intro:string, points: list<string>}|null, story: array<int,string>}
+     */
+    private static function v2(?array $d): array
+    {
+        $cards = [];
+        foreach ((array) ($d['board_cards'] ?? []) as $c) {
+            $key = is_array($c) ? strtolower(self::str($c['key'] ?? '')) : '';
+            if (! in_array($key, self::BOARD_KEYS, true) || self::str($c['name'] ?? '') === '') {
+                continue;
+            }
+            $site = self::str($c['site'] ?? '');
+            $cards[] = [
+                'key' => $key,
+                'name' => self::str($c['name']),
+                'site' => preg_match('#^https?://#i', $site) ? $site : '',
+                'classes' => self::str($c['classes'] ?? ''),
+                'note' => self::str($c['note'] ?? ''),
+            ];
+        }
+        $women = null;
+        if (is_array($d['women'] ?? null)) {
+            $intro = self::str($d['women']['intro'] ?? '');
+            $points = self::paras($d['women']['points'] ?? []);
+            if ($intro !== '' || $points !== []) {
+                $women = ['intro' => $intro, 'points' => $points];
+            }
+        }
+        // Captions keep their panel position; a blank one falls back to that panel's default.
+        $story = [];
+        foreach (array_slice(array_values((array) ($d['story'] ?? [])), 0, 6) as $i => $cap) {
+            if (self::str($cap) !== '') {
+                $story[$i] = self::str($cap);
+            }
+        }
+
+        return ['board_cards' => $cards, 'women' => $women, 'story' => $story];
+    }
+
+    /** "why" items: strings ("Title. Text", or text alone) or {"title","text"}. */
+    private static function why(mixed $v): array
+    {
+        $out = [];
+        foreach ((array) $v as $w) {
+            if (is_array($w)) {
+                $t = self::str($w['title'] ?? '');
+                $x = self::str($w['text'] ?? '');
+            } else {
+                $x = self::str($w);
+                $t = '';
+                if (preg_match('/^([^.:!?]{3,60})[.:]\s+(.+)$/su', $x, $m)) {
+                    [$t, $x] = [trim($m[1]), trim($m[2])];
+                }
+            }
+            if ($x !== '') {
+                $out[] = ['title' => $t, 'text' => $x];
+            }
+        }
+
+        return $out;
     }
 
     /** Topic slugs whose page is live (JSON present and usable), in TOPICS order. */
@@ -197,7 +292,7 @@ class JobsContent
     {
         $html = e((string) $text);
         $html = preg_replace_callback(
-            '#(?<![\w/.])/(pricing|how-we-verify-tutors|become-a-tutor|demo-class|tutors|tuition-jobs(?:/[a-z0-9-]+){0,2}|[a-z0-9-]+-tutor-jobs)(?![\w/-])#',
+            '#(?<![\w/.])/(pricing|how-we-verify-tutors|become-a-tutor|demo-class|safeguarding-policy|tutor-terms|female-home-tutor|tutors|tuition-jobs(?:/[a-z0-9-]+){0,2}|[a-z0-9-]+-tutor-jobs)(?![\w/-])#',
             fn ($m) => '<a href="' . e(url('/' . $m[1])) . '">/' . e($m[1]) . '</a>',
             $html
         );

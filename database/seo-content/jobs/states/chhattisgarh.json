@@ -5,6 +5,29 @@
     "site": "https://cgbse.nic.in",
     "summary": "The Chhattisgarh Board of Secondary Education, Raipur, conducts the High School (Class 10) and Higher Secondary (Class 12) examinations. In 2026 it held a main examination and a second main ('avsar') examination at both levels, each followed by revaluation and recounting results. The board states that cgbse.nic.in is its only official website and asks students and parents to check it regularly. It also conducts the D.El.Ed. examinations."
   },
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Chhattisgarh Board of Secondary Education (Chhattisgarh Madhyamik Shiksha Mandal), Raipur",
+      "site": "https://cgbse.nic.in",
+      "classes": "High School (Class 10), Higher Secondary (Class 12)",
+      "note": "CGBSE conducts the High School and Higher Secondary examinations. In 2026 it held a main examination and a second main ('avsar') examination at both levels, each followed by revaluation and recounting results. The board says cgbse.nic.in is its only official website, so a tutor should take patterns and notices from there and nowhere else."
+    },
+    {
+      "key": "cbse",
+      "name": "Central Board of Secondary Education (CBSE)",
+      "site": "https://www.cbse.gov.in",
+      "classes": "Classes 1–12; board examinations in Classes 10 and 12",
+      "note": "Tutors in Chhattisgarh who teach CBSE classes can list them alongside state board work. The national board's curriculum, sample papers and marking schemes are published on cbseacademic.nic.in; read the current session's documents before a demo, and name the exact classes and subjects you have taught rather than a broad range."
+    },
+    {
+      "key": "cisce",
+      "name": "Council for the Indian School Certificate Examinations (CISCE)",
+      "site": "https://cisce.org",
+      "classes": "ICSE (Class 10), ISC (Class 12)",
+      "note": "For any tutor here who has taught ICSE or ISC, those courses deserve their own line on the profile. The council's syllabi run differently from both CGBSE and CBSE, and its regulations and specimen papers on cisce.org are the right place to check the current pattern before a first lesson."
+    }
+  ],
   "intro": [
     "There is no NXTutors city tuition-jobs page in Chhattisgarh yet, so tutors in Raipur, Bhilai, Durg, Bilaspur, Korba and the state's other towns join from this page. Name your town and the localities you can reach. A request for home lessons goes first to the tutors nearest the family, which is why a clear base matters. Online lessons do not depend on distance; they are matched by subject, class and board, so a tutor in Jagdalpur or Ambikapur can be shortlisted for a student in any state. Bilaspur, Korba and Raigarh tutors follow the same steps.",
     "Chhattisgarh students may be on the state board in Raipur, CBSE or another board, in Hindi or English medium. Put every board and medium you teach on your profile. The board says cgbse.nic.in is its only official site, so take syllabus and exam details from there rather than from forwarded messages. For each request, the family sees two or three tutors and the fee each has set; the first class is a free demo, and switching later is free for them. If you help students preparing for the second main ('avsar') examination, add that to your profile too."
@@ -12,44 +35,64 @@
   "towns": [
     {
       "name": "Raipur",
-      "note": "Please list the Raipur localities you can reach."
+      "note": "Raipur is both the state capital and the seat of the state board, though NXTutors has not built a Raipur city page. Tutors here therefore join through this state page, and what decides which home requests reach you is the colony you enter, so be exact about it."
     },
     {
       "name": "Bhilai",
-      "note": "Bhilai tutors can add Durg if they cover both Bhilai and Durg."
+      "note": "Bhilai tutors who can also visit students in Durg should add the specific Durg localities to their travel list. A family's request is offered first to tutors who live nearest, then to those who travel there, so a clear list keeps you in the right shortlists."
     },
     {
       "name": "Durg",
-      "note": "Home lessons in Durg go first to tutors nearby."
+      "note": "In Durg, tutors who prepare students for the second main ('avsar') examination can say so as its own line. Families whose child is taking that examination will look for exactly this help, and the board's site carries its notices and results."
     },
     {
       "name": "Bilaspur",
-      "note": "Online lessons let Bilaspur tutors teach in other states."
+      "note": "Bilaspur tutors set their own fee, and it can differ by class: a Class 4 hour and a Higher Secondary physics hour need not cost the same. Parents see the figure on your profile before the demo, so there is no haggling afterwards."
     },
     {
       "name": "Korba",
-      "note": "Students outside Korba can still book you online."
+      "note": "Korba teachers with senior science or maths can list the Higher Secondary subjects they teach. Senior students in smaller towns often look online for a subject specialist, so marking online hours alongside home classes gives you both kinds of request."
     },
     {
       "name": "Rajnandgaon",
-      "note": "You can run home visits in Rajnandgaon alongside online lessons."
+      "note": "Rajnandgaon tutors who are new to private tuition can start with a few classes they know well and add more later. Families see your classes, subjects, hours and fee before the demo, so a modest, accurate profile reads better than a long one."
     },
     {
       "name": "Raigarh",
-      "note": "Weekend or weekday slots in Raigarh? You choose them."
+      "note": "College students in Raigarh can take tuition in the hours their own timetable leaves free. Put those hours on the profile, mark home or online, and keep your locality precise so home requests reach you only from families you can actually reach."
     },
     {
       "name": "Jagdalpur",
-      "note": "Say how far beyond Jagdalpur you will travel for lessons."
+      "note": "From Jagdalpur, online teaching lets a tutor work with students far beyond Bastar while keeping home classes local. A hybrid profile, with both home and online marked and separate hours for each, makes that arrangement clear to families from the start."
     },
     {
       "name": "Ambikapur",
-      "note": "Boards you teach in Ambikapur should all be listed."
+      "note": "Former school teachers in Ambikapur returning to teaching through private tuition can describe the classes and subjects they taught, without naming the school. Parents want to know which stage you know most deeply, and a short, concrete description says more than a list of degrees."
     },
     {
       "name": "Dhamtari",
-      "note": "Hours you can give in Dhamtari belong on your profile."
+      "note": "Dhamtari tutors teaching younger children should list Classes 1 to 5 separately from High School classes. Parents of primary students look for patient reading, number work and a homework routine, and a separate line lets the shortlist place you correctly."
     }
+  ],
+  "women": {
+    "intro": "Women who teach in Chhattisgarh, in Raipur, Bhilai, Bilaspur or a smaller town, can join NXTutors and decide exactly how they work. Choose home, online or hybrid; name only the colonies you will visit; keep the hours that suit your household. Every tutor who joins goes through an ID check, a one-time code and a government photo ID reviewed by our team, and real tutors who pass carry a Verified badge. Each new family meets you at a demo where we ask a parent to be at home. If something is not right, you stop and tell us.",
+    "points": [
+      "Set home, online or hybrid teaching, and change it when you need to.",
+      "Home requests use only the colonies you list.",
+      "Choose your hours; families see them with your fee.",
+      "Every family starts with a demo where we ask a parent to be at home.",
+      "Teach in a shared room with an adult in the house.",
+      "Ask to be added to the gate or visitor register where there is one.",
+      "Stop classes any time and tell us on WhatsApp or the contact page."
+    ]
+  },
+  "story": [
+    "Sign up from Raipur, Bhilai or any Chhattisgarh town with a one-time code on your phone or email. Add the colonies you can reach and whether you teach at home, online or both.",
+    "Upload a government photo ID through the tutor dashboard. Our team reviews it before your profile becomes visible; one ID number can be linked to one tutor account only.",
+    "Once reviewed, your profile is live with the Verified badge, showing CGBSE or CBSE classes, subjects, the medium you teach in and the fee you have decided on.",
+    "A family close to you sends a request with class, board and subject. Two or three tutors are shortlisted, nearest first, then further out, then those teaching online.",
+    "The first class is a free demo for the family, who have already seen your fee. Teach the chapter the student is on in school, as a normal lesson.",
+    "If the family continues, you teach at home, online or both on the days you agree with the parent. Keep your profile current as your week fills."
   ],
   "faqs": [
     [
@@ -71,6 +114,18 @@
     [
       "Are tutor plans free?",
       "No; every tutor plan is paid, and /pricing explains what you get with each. Separately, you decide what to charge Raipur, Bhilai or Bilaspur families per lesson."
+    ],
+    [
+      "Can women tutors in Chhattisgarh teach only online?",
+      "Yes. Choose online only and requests reach you by subject, class and board rather than by where you live. You can add home classes later and restrict them to the colonies you choose. Every new family meets you first at a demo where we ask a parent to be at home."
+    ],
+    [
+      "Which boards can I list from Chhattisgarh?",
+      "List CGBSE with the levels you teach, High School or Higher Secondary, and add CBSE, ICSE or ISC only if you have taught them. Families name the board in their request, so an honest list keeps you on shortlists where your experience fits."
+    ],
+    [
+      "Can I combine home and online students from here?",
+      "Yes. Mark both home and online on your profile, give your home localities, and list online hours separately if they differ. Some tutors teach one student at home on weekdays and online before tests; agree that pattern with the parent at the demo."
     ]
   ]
 }

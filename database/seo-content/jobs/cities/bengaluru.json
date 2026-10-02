@@ -8,15 +8,77 @@
     "Koramangala, HSR & Bellandur": "Bellandur and Sarjapur Road are mostly gated towers where the security desk registers every visitor, while Koramangala's inner blocks and HSR's sectors are doorstep visits once you have the block, sector, main and cross numbers. Crossing the Outer Ring Road at office opening or closing time makes weekday lessons hard to keep, so tutors on the same side of the ORR, or near Central Silk Board on the Yellow Line, are the natural fit.",
     "Jayanagar, JP Nagar & Banashankari": "This planned south is mostly independent houses in numbered blocks, stages and phases, so there is rarely a gate list and the house number with its cross and main road is all you need. The Green Line runs through Jayanagar, Banashankari and JP Nagar to Kanakapura Road, letting a tutor arrive by metro and walk, though the newer apartment projects further south do register visitors.",
     "BTM, Bannerghatta Road & Electronic City": "The Yellow Line, open since August 2025, links BTM Layout, Silk Board, Bommanahalli and Electronic City, so a tutor living a few stops away can cover the whole Hosur Road side. Electronic City's large apartment communities keep gate lists and office shift changes shape local traffic, and on Bannerghatta Road the Pink Line is not yet open, so travel there is by road.",
-    "Indiranagar & Old Airport Road": "Indiranagar and the stretch towards Baiyappanahalli sit on the Purple Line, and Domlur has a bus terminus, so this compact eastern belt is workable without a vehicle. Start lessons before the evening crowd builds on 100 Feet Road, and expect to give your name at the gate in CV Raman Nagar's township and gated complexes.",
+    "Indiranagar & Old Airport Road": "Indiranagar and the stretch towards Baiyappanahalli sit on the Purple Line, and Domlur has a bus terminus, so this compact eastern belt is workable without a vehicle. Start lessons before the evening crowd builds on 100 Feet Road, and expect to give your name at the gate in CV Raman Nagar's township and gated complexes. Baiyappanahalli is the nearest station for the last leg to CV Raman Nagar.",
     "Whitefield, Marathahalli & KR Puram": "Homes here are mostly apartment towers and gated villa communities, and some security desks ask for photo ID on a first visit, so carry it. The Purple Line runs from KR Puram to Whitefield, but Marathahalli has no open station yet, so time weekday lessons between school and the office rush on the ORR and Whitefield Main Road.",
-    "Hennur, Kalyan Nagar & Banaswadi": "No metro runs through this zone yet, so tutors who already live in Hennur, Kalyan Nagar, HRBR Layout or Banaswadi have the clearest advantage for regular weekday lessons. Kalyan Nagar and HRBR Layout are mostly houses and builder floors on numbered blocks, while Thanisandra's gated complexes need your name and phone number at the security desk.",
-    "Hebbal, RT Nagar & Yelahanka": "Airport and office traffic funnels through the Hebbal flyover, so a tutor living on the family's side of it keeps evening slots far more reliably. Yelahanka New Town houses are doorstep visits and newer societies register visitors at the gate, and with the Blue Line stations still under construction nearly everyone arrives by road.",
-    "Malleshwaram, Rajajinagar & Yeshwanthpur": "The Green Line links Malleshwaram, Rajajinagar, Mahalakshmi Layout and Yeshwanthpur, and most homes are houses or small buildings a short walk or auto ride from a station. Sadashivanagar's larger houses may have a guard at the gate and Yeshwanthpur's complexes keep registers, while Chord Road and Tumkur Road slow down at peak hours.",
-    "Vijayanagar, RR Nagar & Kengeri": "The Purple Line runs west through Vijayanagar, RR Nagar and Kengeri, so a tutor anywhere along it can avoid Mysore Road at rush hour. Plotted layouts in Basaveshwaranagar and Nagarbhavi are houses with room for a two-wheeler, though some streets are steep, and apartment projects in RR Nagar and Kengeri keep a visitor list.",
+    "Hennur, Kalyan Nagar & Banaswadi": "No metro runs through this zone yet, so tutors who already live in Hennur, Kalyan Nagar, HRBR Layout or Banaswadi have the clearest advantage for regular weekday lessons. Kalyan Nagar and HRBR Layout are mostly houses and builder floors on numbered blocks, while Thanisandra's gated complexes need your name and phone number at the security desk. In HRBR Layout, ask where a two-wheeler can be parked near the cafe streets.",
+    "Hebbal, RT Nagar & Yelahanka": "Airport and office traffic funnels through the Hebbal flyover, so a tutor living on the family's side of it keeps evening slots far more reliably. Yelahanka New Town houses are doorstep visits and newer societies register visitors at the gate, and with the Blue Line stations still under construction nearly everyone arrives by road. In RT Nagar's market lanes agree a parking spot, and in Yelahanka ask for the New Town stage or an Old Town landmark.",
+    "Malleshwaram, Rajajinagar & Yeshwanthpur": "The Green Line links Malleshwaram, Rajajinagar, Mahalakshmi Layout and Yeshwanthpur, and most homes are houses or small buildings a short walk or auto ride from a station. Sadashivanagar's larger houses may have a guard at the gate and Yeshwanthpur's complexes keep registers, while Chord Road and Tumkur Road slow down at peak hours. Malleshwaram addresses use cross and main road numbers, and its market roads fill in the evening.",
+    "Vijayanagar, RR Nagar & Kengeri": "The Purple Line runs west through Vijayanagar, RR Nagar and Kengeri, so a tutor anywhere along it can avoid Mysore Road at rush hour. Plotted layouts in Basaveshwaranagar and Nagarbhavi are houses with room for a two-wheeler, though some streets are steep, and apartment projects in RR Nagar and Kengeri keep a visitor list. Ask for a map pin in Basaveshwaranagar before the first visit.",
     "Frazer Town, Richmond Town & Ulsoor": "Ulsoor and Richmond Town are a walk from Halasuru and Trinity stations on the Purple Line, but Frazer Town and Cooke Town have no open station, so plan an auto from the nearest one or come by road. Heritage bungalows share lanes with apartment buildings where a guard often stands at the entrance, and the shopping streets fill up in the evenings."
   },
-  "boards": "In Bengaluru you will meet Karnataka state board students in SSLC and PUC, CBSE students, CISCE's ICSE and ISC candidates, and some IB and Cambridge IGCSE learners. For the state papers, read the subject blueprints, model question papers and notices on the KSEAB site, and the PUC textbooks and model papers on the Department of School Education (Pre-University) site. For CBSE, work from the sample papers and marking schemes on the CBSE academic site; for ICSE and ISC, the CISCE site. Teach the board you know well, and say so plainly on your profile.",
+  "boards": "Bengaluru tutors meet Karnataka state board students in SSLC and PUC, CBSE students, CISCE's ICSE and ISC candidates, and IB and Cambridge IGCSE learners. Take state blueprints and model papers only from the KSEAB and pre-university department sites, and say plainly on your profile which boards you teach.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Karnataka School Examination and Assessment Board (KSEAB)",
+      "site": "https://kseab.karnataka.gov.in/",
+      "classes": "SSLC (Class 10); I and II PUC (Classes 11–12)",
+      "note": "The board sets the SSLC after Class 10 and the II PUC paper after the second pre-university year, while the Department of School Education (Pre-University) shapes what is taught and publishes PUC books in Kannada and English medium. Its chapter blueprints, model papers and question banks are a state-board tutor's working kit.",
+      "page": "/karnataka-board-tutor-bengaluru"
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "CBSE schools draw students from every zone, Whitefield to Vijayanagar. Start from the NCERT chapter, then move to the sample papers and marking schemes on cbseacademic.nic.in, where board questions increasingly test application. In Classes 11 and 12 one plan can serve the board and entrance practice, since both rest on NCERT.",
+      "page": "/cbse-home-tutor-bengaluru"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "ICSE and ISC reward long, well-organised written answers and carry prescribed English texts. Bengaluru tutors who know the literature set and the project work every subject requires are easier for families to choose. Regulations and specimen papers are on cisce.org.",
+      "page": "/icse-home-tutor-bengaluru"
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "IB families here ask for Maths AA or AI at SL or HL, or for Physics and Chemistry, by course name. Internal assessment counts towards the grade, so a tutor coaches the method but never writes the IA or Extended Essay. Read the subject guide through ibo.org before a demo.",
+      "page": "/ib-tutor-bengaluru"
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "Cambridge IGCSE, and Pearson Edexcel's International GCSE, reward technique: command words, the right tier and past papers marked strictly against the official scheme. A specialist may live across the ORR from the family, so an online session between home visits often keeps the weekly plan intact.",
+      "page": "/igcse-tutor-bengaluru"
+    }
+  ],
+  "women": {
+    "intro": "Women tutors are welcome on NXTutors in Bengaluru, whether you want home visits in your own layout, online classes from home, or a hybrid week. You pick the zones and the hours, so a tutor in Jayanagar can keep to the Green Line belt and one in Whitefield to the Purple Line, teaching everyone else online. Each tutor who joins passes the same ID check, and the first lesson is a demo where we ask a parent to be present. These are the controls the platform has, not a promise about anyone's conduct.",
+    "points": [
+      "Pick home, online or both, and switch whenever your week changes.",
+      "Add only the zones you want; if you prefer not to cross the ORR or the Hebbal flyover in the evening, leave those areas off.",
+      "Meet each family first at the free demo, held where we ask a parent to be at home.",
+      "In Whitefield, Sarjapur Road and Electronic City towers, ask to be pre-registered at the security desk so every visit is logged, and carry photo ID.",
+      "Keep fees, timings and messages with a parent rather than the student's own phone.",
+      "Teach younger children in a shared room with an adult in the house; online, keep cameras on.",
+      "Stop any arrangement that worries you and tell NXTutors, marked Safeguarding; for danger, call 112 first."
+    ]
+  },
+  "story": [
+    "Register with your phone or email and a one-time code, then list what you teach, from SSLC Maths in Kannada medium to ISC Chemistry or IB Physics, and the Bengaluru zones you reach.",
+    "Upload a government photo ID for the team to review. Until that review is done your profile stays pending; the check confirms identity and is not a police or background check.",
+    "When the review is complete, your profile is published with the Verified badge, along with your boards, travel zones, free hours and the fee you have chosen.",
+    "A parent in HSR Layout or Malleshwaram sends a request. NXTutors shortlists two or three tutors, starting with those living closest, then those who travel there, the zone, the city and online.",
+    "The parent sees your fee on the shortlist before booking, and the first class is a free demo with them at home, so you can judge the student and the route.",
+    "Then teach the way that suits you: home lessons along your metro line, online classes for students across Bengaluru or India, or a weekly visit with online sessions in between."
+  ],
   "faqs": [
     [
       "How do tuition requests in Bengaluru reach me?",
@@ -37,6 +99,18 @@
     [
       "What does it cost to be listed as a tutor?",
       "The tutor plans, and what each of them includes, are listed on /pricing, so check the current options there. Separately, you set your own lesson fee, and families see it on your profile before the free first demo. Families can switch tutors later at no cost, so steady, well-prepared lessons are what keep a student with you."
+    ],
+    [
+      "I am a woman tutor in Bengaluru. Can I keep home lessons close to where I live?",
+      "Yes. Choose the zones you will travel to, perhaps only your own layout and one metro line; home requests come from those zones, and your listed hours show parents when you teach. You meet each family at a demo where we ask a parent to be at home, and can teach other students online."
+    ],
+    [
+      "Which boards can I teach in Bengaluru?",
+      "Requests span the Karnataka board's SSLC and PUC, CBSE, CISCE's ICSE and ISC, and the IB Diploma and Cambridge IGCSE. Put only the boards and classes you know well on your profile, and say whether you teach PUC subjects in Kannada or English medium."
+    ],
+    [
+      "Can I work a hybrid week with one Bengaluru family?",
+      "Yes. Tick both home and online and agree the split with the parent after the demo. Across the ORR belt, one workable pattern is a weekend home session for new topics and written work, with a shorter online class midweek when traffic makes a visit hard to keep."
     ]
   ]
 }

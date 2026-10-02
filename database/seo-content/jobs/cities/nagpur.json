@@ -5,18 +5,105 @@
     "Nagpur's students divide mainly between the Maharashtra State Board and the national boards. The State Board sets the SSC at the end of Class 10 and the HSC at the end of Class 12, and for the state board families also give the medium, so a tutor should say which language they teach in. CBSE and ICSE students need someone who knows their own syllabus, and IB or Cambridge IGCSE families can combine a local tutor with online lessons from elsewhere. CBSE's session opens in April and state-board schools in Maharashtra usually reopen in June, so a tutor teaching both should plan around two calendars."
   ],
   "zone_notes": {
-    "Central West Nagpur": "Sitabuldi, Shankar Nagar Square, LAD Square, Congress Nagar, Zero Mile Freedom Park and Kasturchand Park stations cover the zone, which helps because parking near the Dharampeth market lanes and Dhantoli's clinics is scarce in the evening. Government colonies and apartment buildings want your name at the gate, while bungalows and older houses open onto the road.",
-    "Hingna Road and Ring Road": "Plotted layouts in Pratap Nagar, Trimurti Nagar and Jaitala usually let you park at the door, though many layouts look alike, so ask for the lane and plot number. Subhash Nagar and Rachana Ring Road Junction stations plus an auto bring tutors from the centre, and lessons should start after the Ring Road evening peak.",
-    "Wardha Road": "Homes are mostly apartment buildings with visitor registers, plus houses and villas in Besa's newer layouts, and most are an auto ride from an Orange Line station such as Ujjwal Nagar, Airport or Jaiprakash Nagar. Wardha Road is heavy at morning and evening peaks, and the underpass near Manish Nagar adds delay before early-evening lessons.",
-    "North Nagpur": "Most of Koradi Road, Mankapur and Zingabai Takli is some way from a metro station, so tutors with a two-wheeler or living in North Nagpur keep slots most easily. Government colonies in Seminary Hills have gated entrances where you may be asked for identification, and Katol and Chhindwara Roads are easier after the office peak.",
-    "East and South-East Nagpur": "The Aqua Line's eastern section, with stations such as Vaishnodevi Square, runs towards Old Pardi Naka, but Manewada and Hudkeshwar have no metro, so a two-wheeler or a home base in the south-east matters. Large new complexes in Wathoda and Hudkeshwar register visitors, plotted houses need the layout name and a map pin, and Bhandara Road carries heavy goods traffic at peak hours."
+    "Central West Nagpur": "Sitabuldi, Shankar Nagar Square, LAD Square, Congress Nagar, Zero Mile Freedom Park and Kasturchand Park stations cover the zone, which helps because parking near the Dharampeth market lanes and Dhantoli's clinics is scarce in the evening. Government colonies and apartment buildings want your name at the gate, while bungalows and older houses open onto the road. Book after-school slots before the evening shopping rush, and allow extra time in Civil Lines on days of official events.",
+    "Hingna Road and Ring Road": "Plotted layouts in Pratap Nagar, Trimurti Nagar and Jaitala usually let you park at the door, though many layouts look alike, so ask for the lane and plot number. Subhash Nagar and Rachana Ring Road Junction stations plus an auto bring tutors from the centre, and lessons should start after the Ring Road evening peak. Newer apartments in Jaitala and Pratap Nagar may keep a visitor register.",
+    "Wardha Road": "Homes are mostly apartment buildings with visitor registers, plus houses and villas in Besa's newer layouts, and most are an auto ride from an Orange Line station such as Ujjwal Nagar, Airport or Jaiprakash Nagar. Wardha Road is heavy at morning and evening peaks, and the underpass near Manish Nagar adds delay before early-evening lessons. Ask the gate to note your name and visiting days for every week.",
+    "North Nagpur": "Most of Koradi Road, Mankapur and Zingabai Takli is some way from a metro station, so tutors with a two-wheeler or living in North Nagpur keep slots most easily. Government colonies in Seminary Hills have gated entrances where you may be asked for identification, and Katol and Chhindwara Roads are easier after the office peak. Near Sadar's Mount Road, arrive a little early because parking is hard in the evening.",
+    "East and South-East Nagpur": "The Aqua Line's eastern section, with stations such as Vaishnodevi Square, runs towards Old Pardi Naka, but Manewada and Hudkeshwar have no metro, so a two-wheeler or a home base in the south-east matters. Large new complexes in Wathoda and Hudkeshwar register visitors, plotted houses need the layout name and a map pin, and Bhandara Road carries heavy goods traffic at peak hours. Allow extra time on the main road before Wardhaman Nagar lessons."
   },
   "boards": "Nagpur tutors teach the Maharashtra State Board, whose SSC comes at the end of Class 10 and HSC at the end of Class 12, alongside CBSE, ICSE and ISC, with IB and Cambridge IGCSE students able to add online specialists. State Board families also choose a medium, so name yours on your profile. Take patterns and timetables only from official notices: mahahsscboard.in for SSC and HSC, cetcell.mahacet.org for MHT-CET, cbseacademic.nic.in for CBSE and cisce.org for CISCE, with the IB and Cambridge sites for international courses.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Maharashtra State Board of Secondary and Higher Secondary Education",
+      "site": "https://mahahsscboard.in/",
+      "classes": "SSC (Class 10); HSC (Class 12)",
+      "note": "The state board sets the SSC at the end of Class 10 and the HSC at the end of Class 12, writing papers from its own textbooks. SSC maths is two 40-mark papers with 20 internal marks, and science comes as two activity sheets. Families choose a medium, so say which one you teach, and read mahahsscboard.in."
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "Nagpur's CBSE students need a tutor who knows how CBSE sets the paper: NCERT-based, with sample papers and marking schemes published on cbseacademic.nic.in. The CBSE year starts cleanly in April, a good time to rebuild weak chapters before school pressure rises. Ask for the locality and the road it sits off.",
+      "page": "/cbse-home-tutor-nagpur"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "CISCE's ICSE in Class 10 and ISC in Class 12 reward complete written answers across a wide syllabus, with set literature in English, so steady revision of every chapter and regular timed writing matter most. Nagpur tutors for these boards should work through the specimen papers on cisce.org.",
+      "page": "/icse-home-tutor-nagpur"
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "IB Diploma families in Nagpur can pair a local tutor with an online specialist from elsewhere in India. If you teach Maths AA or AI, or a science at SL or HL, online classes let you reach them; coach the internal assessment without writing it, using the ibo.org guides."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "Cambridge IGCSE students here can combine local help with online lessons. A tutor who handles command words, tier choice and past papers marked against the official scheme, for Cambridge or Pearson Edexcel, can support them from a home in Nagpur or anywhere. Syllabuses are on cambridgeinternational.org."
+    }
+  ],
+  "women": {
+    "intro": "Women tutors can join NXTutors in Nagpur to teach at home, online or both. You decide where and when: a tutor in Dharampeth might keep to the stations around Sitabuldi and Shankar Nagar, one in Pratap Nagar to the plotted layouts nearby, with other families taught online. Each tutor who registers clears the same ID check, every family starts with a free demo while a parent is in, and the safeguarding policy lays down rules for tutors and parents. That is what the platform offers, not a promise about any person.",
+    "points": [
+      "Choose home, online or a hybrid mix, and revise it whenever you like.",
+      "Name only the zones you want to reach; Wardha Road and Bhandara Road can be left off if late trips there do not suit you.",
+      "List the free hours you want Nagpur families to see, and leave late evenings out if you prefer.",
+      "Your first meeting with any family is the free demo, where we ask a parent to be at home.",
+      "In Seminary Hills colonies and the Wathoda and Wardha Road apartments, ask the family to tell the gate your name and days so visits are noted.",
+      "Settle fees and timings with a parent, and keep chat with the student off private apps.",
+      "With young children, teach where an adult can see; online, both cameras stay on.",
+      "If something troubles you, end the classes and report it to NXTutors as Safeguarding; dial 112 first in an emergency."
+    ]
+  },
+  "story": [
+    "Open an account with a one-time code on your phone or email, then add subjects, classes and boards, the state board's SSC or HSC included, plus the Nagpur zones you can reach.",
+    "Then upload a government photo ID; our team checks it before your profile is shown. An ID number belongs to one tutor account only, and the check covers identity, not background.",
+    "After approval, your profile appears with the Verified badge, listing your boards and medium, your Nagpur zones, the hours you keep free and the fee you settled on.",
+    "A family in Manish Nagar or Sadar posts a request. NXTutors names two or three tutors: those nearest first, then tutors who travel to that area, the zone, the city, then online.",
+    "Before booking, the family can see your fee. The first session is a free demo at their home with a parent there, so you can check the level and the ride.",
+    "From then on, teach at homes in your zones, online for students anywhere in India, or both, for instance a Sunday visit with online classes during the week."
+  ],
   "faqs": [
-    ["How are Nagpur tutors chosen for a family?", "A family submits the class, board and medium, subjects, locality with the road it sits off, and free hours. NXTutors then shortlists two or three tutors, closest first: that locality, tutors who travel there, the zone, Nagpur and online. If you are on that shortlist, the family sees your fee before booking a free demo."],
-    ["Can I teach online students from Nagpur?", "Yes. If you select online teaching, requests reach you by subject, board, class and the hours you have free, regardless of where the student lives. A Nagpur tutor can teach State Board or CBSE students in other cities online and still keep home classes in the localities near home."],
-    ["Which Nagpur zones can I cover without a car?", "With a metro pass, Central West Nagpur, the Hingna Road side and Wardha Road are the easiest, using the Aqua and Orange Lines plus an auto. North Nagpur, Manewada and Hudkeshwar mostly need a two-wheeler. Add only the localities you can reach on time on the days you teach."],
-    ["Do I need police verification to join?", "No. NXTutors does an ID check, not a police check. You confirm your phone or email with a one-time code and upload a government photo ID, which our team reviews before the profile goes live; real tutors who pass carry a Verified badge. Read How we verify tutors (/how-we-verify-tutors) for the full steps."],
-    ["What will joining cost a Nagpur tutor?", "Tutor plans are paid, and the Pricing page (/pricing) sets out what each one includes. You choose your own lesson fee, and Nagpur families see it on your profile before the free demo. Parents can change tutor at no cost, so turning up on time and showing progress is what keeps the student."]
+    [
+      "How are Nagpur tutors chosen for a family?",
+      "A family submits the class, board and medium, subjects, locality with the road it sits off, and free hours. NXTutors then shortlists two or three tutors, closest first: that locality, tutors who travel there, the zone, Nagpur and online. If you are on that shortlist, the family sees your fee before booking a free demo."
+    ],
+    [
+      "Can I teach online students from Nagpur?",
+      "Yes. If you select online teaching, requests are not tied to your locality, so subject, board and class decide the fit, regardless of where the student lives. A Nagpur tutor can teach State Board or CBSE students in other cities online and still keep home classes in the localities near home."
+    ],
+    [
+      "Which Nagpur zones can I cover without a car?",
+      "With a metro pass, Central West Nagpur, the Hingna Road side and Wardha Road are the easiest, using the Aqua and Orange Lines plus an auto. North Nagpur, Manewada and Hudkeshwar mostly need a two-wheeler. Add only the localities you can reach on time on the days you teach."
+    ],
+    [
+      "Do I need police verification to join?",
+      "No. NXTutors does an ID check, not a police check. You confirm your phone or email with a one-time code and upload a government photo ID, which our team reviews before the profile goes live; real tutors who pass carry a Verified badge. Read How we verify tutors (/how-we-verify-tutors) for the full steps."
+    ],
+    [
+      "What will joining cost a Nagpur tutor?",
+      "Tutor plans are paid, and the Pricing page (/pricing) sets out what each one includes. You choose your own lesson fee, and Nagpur families see it on your profile before the free demo. Parents can change tutor at no cost, so turning up on time and showing progress is what keeps the student."
+    ],
+    [
+      "Can a woman tutor in Nagpur teach only in nearby layouts?",
+      "Yes. List just the zones you want, and home requests will follow them, with your free hours showing families when you can come; families further off can learn with you online. Every family first meets you at a free demo while a parent is home, so nothing regular starts before that."
+    ],
+    [
+      "Which boards should a Nagpur tutor know?",
+      "Mainly the Maharashtra State Board's SSC and HSC, plus CBSE and CISCE's ICSE and ISC; IB and Cambridge IGCSE families can add online specialists. State Board families also pick a medium, so list boards, classes and medium rather than a subject alone."
+    ],
+    [
+      "Does a hybrid plan suit families in Manewada or Hudkeshwar?",
+      "It can. With no metro in those localities, one home visit a week for written work, plus online sessions on other days, saves repeated trips across the city. Pick both home and online on your profile, and fix the split with the parent after the demo."
+    ]
   ]
 }

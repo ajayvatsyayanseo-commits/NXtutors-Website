@@ -5,20 +5,109 @@
     "CBSE is the most common board in Ghaziabad, ICSE and ISC have a steady following, and the IB and Cambridge IGCSE serve a smaller group. Ghaziabad is in Uttar Pradesh, so UP Board schools matter too, and UPMSP runs their High School and Intermediate exams. Home tuition suits the plotted colonies, where trips between homes are short. In Govindpuram, Madhuban Bapudham and parts of the NH-9 belt the metro is not close, so families often look for a tutor in the same colony or township and add online sessions for a specialist senior subject."
   ],
   "zone_notes": {
-    "Indirapuram": "Pockets change from apartment societies to builder floors, so check which: a society needs your name and phone at security, a floor needs the pocket number and a landmark. Vaishali station suits the Nyay, Abhay and Gyan pockets and Noida Electronic City the Ahinsa pockets, and weekday lessons run better once the Kala Pathar Road and CISF Road office rush has passed.",
-    "Vaishali & Kaushambi": "Kaushambi and Vaishali are the last two Blue Line stops, so tutors from East Delhi and Noida can arrive on foot or by e-rickshaw. Sectors 7 and 9 and Kaushambi have society gates while the older sectors are builder floors, and the roundabout near Vaishali station is busiest at office hours, so mid-afternoon or later-evening slots hold up.",
-    "Vasundhara": "No metro station stands inside Vasundhara: Vaishali serves Sectors 13 to 18, Mohan Nagar the northern sectors and Shyam Park Sectors 11 and 12, usually with an e-rickshaw after. The Sector 11 and 16 markets crowd the inner lanes in the evening, so a tutor who rides a scooter in from Indirapuram or Vaishali is often easiest to schedule.",
-    "Sahibabad & Rajendra Nagar": "Red Line stations above GT Road, from Shaheed Nagar and Raj Bagh to Rajendra Nagar, Shyam Park and Mohan Nagar, sit close to most colonies, and car parking in the inner lanes is tight. Most homes open straight onto the lane, so ask for block, floor and a landmark, and avoid slots that clash with shift changes on GT Road.",
-    "Surya Nagar & Ramprastha": "This compact plotted pocket has no society gates and no station inside it, so tutors come from Dilshad Garden or Jhilmil on the Red Line, Kaushambi or Vaishali on the Blue Line, then an auto. Tutors living just across the border in East Delhi can serve it well, with one fixed after-school slot that avoids the border-road office rush.",
-    "Raj Nagar, Kavi Nagar & Old Ghaziabad": "Almost every home here is plotted, so you come to the door, but rail reaches only the edges: Shaheed Sthal, the Ghaziabad Namo Bharat station and Guldhar, then an auto. Evening traffic on Hapur Road, around Meerut Mod and near the District Centre is the main delay, and Govindpuram and Madhuban Bapudham suit a tutor who lives nearby.",
-    "Raj Nagar Extension & NH-9 Corridor": "Raj Nagar Extension and Siddharth Vihar are mainly high-rise societies that want you on the visitor list before the demo, while Vijay Nagar and Pratap Vihar are older and largely plotted. Guldhar Namo Bharat station helps Raj Nagar Extension, the larger townships off NH-9 have no metro, and highway junctions slow down at office hours."
+    "Indirapuram": "Pockets change from apartment societies to builder floors, so check which: a society needs your name and phone at security, a floor needs the pocket number and a landmark. Vaishali station suits the Nyay, Abhay and Gyan pockets and Noida Electronic City the Ahinsa pockets, and weekday lessons run better once the Kala Pathar Road and CISF Road office rush has passed. Keep an online session in reserve for specialist senior subjects.",
+    "Vaishali & Kaushambi": "Kaushambi and Vaishali are the last two Blue Line stops, so tutors from East Delhi and Noida can arrive on foot or by e-rickshaw. Sectors 7 and 9 and Kaushambi have society gates while the older sectors are builder floors, and the roundabout near Vaishali station is busiest at office hours, so mid-afternoon or later-evening slots hold up. Ask for the tower and flat in the society sectors, and the floor and a landmark in the older ones.",
+    "Vasundhara": "No metro station stands inside Vasundhara: Vaishali serves Sectors 13 to 18, Mohan Nagar the northern sectors and Shyam Park Sectors 11 and 12, usually with an e-rickshaw after. The Sector 11 and 16 markets crowd the inner lanes in the evening, so a tutor who rides a scooter in from Indirapuram or Vaishali is often easiest to schedule. A weekend morning is another option when the inner lanes are busy.",
+    "Sahibabad & Rajendra Nagar": "Red Line stations above GT Road, from Shaheed Nagar and Raj Bagh to Rajendra Nagar, Shyam Park and Mohan Nagar, sit close to most colonies, and car parking in the inner lanes is tight. Most homes open straight onto the lane, so ask for block, floor and a landmark, and avoid slots that clash with shift changes on GT Road. Late-afternoon or weekend lessons usually start on time.",
+    "Surya Nagar & Ramprastha": "This compact plotted pocket has no society gates and no station inside it, so tutors come from Dilshad Garden or Jhilmil on the Red Line, Kaushambi or Vaishali on the Blue Line, then an auto. Tutors living just across the border in East Delhi can serve it well, with one fixed after-school slot that avoids the border-road office rush. Ask the family for the block letter and house number, which is usually enough here.",
+    "Raj Nagar, Kavi Nagar & Old Ghaziabad": "Almost every home here is plotted, so you come to the door, but rail reaches only the edges: Shaheed Sthal, the Ghaziabad Namo Bharat station and Guldhar, then an auto. Evening traffic on Hapur Road, around Meerut Mod and near the District Centre is the main delay, and Govindpuram and Madhuban Bapudham suit a tutor who lives nearby. Specialist subjects can be taught online where the metro is not close.",
+    "Raj Nagar Extension & NH-9 Corridor": "Raj Nagar Extension and Siddharth Vihar are mainly high-rise societies that want you on the visitor list before the demo, while Vijay Nagar and Pratap Vihar are older and largely plotted. Guldhar Namo Bharat station helps Raj Nagar Extension, the larger townships off NH-9 have no metro, and highway junctions slow down at office hours. Tutors living in the same township are the easiest match, and an online option helps for specialist subjects."
   },
   "boards": "Ghaziabad tutors teach CBSE most often, ICSE and ISC for a steady group, and the IB or Cambridge IGCSE for a smaller one. As the city is in Uttar Pradesh, UP Board schools matter as well: UPMSP runs the High School exam at the end of Class 10 and the Intermediate at the end of Class 12, with its own model papers and an OMR multiple-choice section. Families are asked for board and class together. Use upmsp.edu.in for UP Board syllabuses and model papers, cbseacademic.nic.in for CBSE, cisce.org for ICSE and ISC, and the IB and Cambridge sites for theirs.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Uttar Pradesh Madhyamik Shiksha Parishad (UPMSP, UP Board)",
+      "site": "https://upmsp.edu.in/",
+      "classes": "High School (Class 10); Intermediate (Class 12)",
+      "note": "UPMSP runs the High School and Intermediate examinations. High School Maths and Science are 70-mark written papers that open with one-mark multiple-choice questions on an OMR sheet, plus 30 marks of internal or practical work in school. Students register in advance in Classes 9 and 11. Ask the medium, Hindi or English, before the demo."
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "CBSE is the most common board in Ghaziabad, from Indirapuram's societies to Raj Nagar's plotted lanes. Teach from NCERT, practise with the sample papers and marking schemes on cbseacademic.nic.in, and drill full written working. A Class 9 CBSE Science student and an ISC Chemistry candidate need different tutors, so list classes precisely.",
+      "page": "/cbse-home-tutor-ghaziabad"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "ICSE and ISC have a steady following here. CISCE sets ICSE at Class 10 and ISC at Class 12, and both expect detailed, well-structured answers across a wide syllabus, with English literature and project work. Keep the current specimen papers from cisce.org to hand when you plan revision.",
+      "page": "/icse-home-tutor-ghaziabad"
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "The IB Diploma serves a smaller group in Ghaziabad. It combines externally marked exams with internal assessment, and Maths comes as Analysis and Approaches or Applications and Interpretation, at SL and HL. Tutors guide an IA without writing it; ibo.org has the subject guides, and online sessions reach families across the NCR.",
+      "page": "/ib-tutor-ghaziabad"
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "Cambridge IGCSE here is largely about technique: command words, the Core or Extended route, and past papers worked against their mark schemes. A tutor near the Blue Line can reach Vaishali and Kaushambi students at home and teach others online. Syllabuses are on cambridgeinternational.org, and Pearson's site covers Edexcel.",
+      "page": "/igcse-tutor-ghaziabad"
+    }
+  ],
+  "women": {
+    "intro": "Women tutors are welcome on NXTutors in Ghaziabad for home lessons, online teaching or a hybrid week. You choose the zones and hours: a tutor in Vaishali might stay within walking distance of the Blue Line stations, another in Raj Nagar Extension within her own township, and teach other families online. Every tutor who joins goes through the same ID check, families meet you first at a free demo where we ask a parent to be at home, and the safeguarding policy applies to everyone. These are controls you can use, not a promise about anyone's conduct.",
+    "points": [
+      "Pick home, online or hybrid on your profile, and update it whenever you like.",
+      "Add only the zones you want to reach; if late trips along NH-9 or GT Road do not suit you, leave those areas off.",
+      "Mark the hours you are free so Ghaziabad parents know when you can visit or teach online.",
+      "The first lesson is a free demo where we ask a parent to be present, so you meet the family before committing.",
+      "In Indirapuram, Kaushambi and Raj Nagar Extension societies, ask to be added to the visitor list so every visit is recorded at the gate.",
+      "Settle timings, fees and messages with a parent rather than the student.",
+      "Teach young children in a shared room with an adult at home; keep the camera on for online classes.",
+      "Stop any arrangement that troubles you and tell NXTutors, marked Safeguarding; call 112 first in an emergency."
+    ]
+  },
+  "story": [
+    "Start with a one-time code to your phone or email, then add your subjects, classes and boards, whether CBSE, ICSE or UP Board in Hindi or English, and the Ghaziabad zones you can reach.",
+    "Upload a government photo ID. NXTutors reviews it before the profile goes public, and each ID number can sit on only one tutor account. It is an identity check, not police verification.",
+    "After review, the profile goes live with the Verified badge, listing your boards, the zones from Indirapuram to Raj Nagar that you cover, your free hours and your own fee.",
+    "A parent in Vasundhara or Kavi Nagar sends a request. We shortlist two or three tutors: those living in that area first, then tutors who travel there, then the zone, the city and online.",
+    "The parent sees your fee before booking. The first class is a free demo at home where we ask a parent to be present, so you can see the student's level and the route.",
+    "Teach at homes near you, online for students in other cities, or both, perhaps a weekend visit to a Raj Nagar Extension tower and online classes during the week."
+  ],
   "faqs": [
-    ["How does a Ghaziabad request turn into a class?", "A parent tells us the class, board, subjects, locality or society and suitable times. We shortlist two or three tutors in a fixed order: people in that locality, then those who travel there, then the zone, Ghaziabad and online tutors. If you are picked, the family sees your fee, books a free demo and decides after it."],
-    ["Can a Ghaziabad tutor teach students outside the city?", "Yes, through online lessons. If you switch on online teaching, requests reach you by subject, board, class and the hours you have free, wherever the family lives. Many tutors here keep home classes in nearby colonies on weekdays and take online students from other cities in the remaining slots."],
-    ["Which Ghaziabad zones work well without a car?", "Vaishali & Kaushambi and Sahibabad & Rajendra Nagar sit on the Blue and Red Lines, and Indirapuram has two Blue Line stations nearby. Vasundhara, Surya Nagar and Raj Nagar need an e-rickshaw or auto after the train, and Raj Nagar Extension is easier with a two-wheeler or the Guldhar Namo Bharat station."],
-    ["Will I need a police verification certificate?", "NXTutors does not run a police or background check. Instead, tutors who join confirm their phone or email with a one-time code and upload a government photo ID for our team to review before the profile goes live. Real tutors who pass get a Verified badge, explained on How we verify tutors (/how-we-verify-tutors)."],
-    ["What does it cost me to be listed?", "Tutor plans are paid, and what each plan includes is set out on the Pricing page (/pricing); we do not publish plan prices here. Your own lesson fee is up to you and appears on your profile before a Ghaziabad family books its free demo, and families can change tutor at no charge."]
+    [
+      "How does a Ghaziabad request turn into a class?",
+      "A parent tells us the class, board, subjects, locality or society and suitable times. We shortlist two or three tutors in a fixed order: people in that locality, then those who travel there, then the zone, Ghaziabad and online tutors. If you are picked, the family sees your fee, books a free demo and decides after it."
+    ],
+    [
+      "Can a Ghaziabad tutor teach students outside the city?",
+      "Yes, through online lessons. If you switch on online teaching, requests are not tied to your locality, so subject, board and class decide the fit wherever the family lives. Many tutors here keep home classes in nearby colonies on weekdays and take online students from other cities in the remaining slots."
+    ],
+    [
+      "Which Ghaziabad zones work well without a car?",
+      "Vaishali & Kaushambi and Sahibabad & Rajendra Nagar sit on the Blue and Red Lines, and Indirapuram has two Blue Line stations nearby. Vasundhara, Surya Nagar and Raj Nagar need an e-rickshaw or auto after the train, and Raj Nagar Extension is easier with a two-wheeler or the Guldhar Namo Bharat station."
+    ],
+    [
+      "Will I need a police verification certificate?",
+      "NXTutors does not run a police or background check. Instead, tutors who join confirm their phone or email with a one-time code and upload a government photo ID for our team to review before the profile goes live. Real tutors who pass get a Verified badge, explained on How we verify tutors (/how-we-verify-tutors)."
+    ],
+    [
+      "What does it cost me to be listed?",
+      "Tutor plans are paid, and what each plan includes is set out on the Pricing page (/pricing); we do not publish plan prices here. Your own lesson fee is up to you and appears on your profile before a Ghaziabad family books its free demo, and families can change tutor at no charge."
+    ],
+    [
+      "Can I work as a woman tutor in Ghaziabad only near home?",
+      "Yes. You choose the zones you travel to and the hours you keep free, so you could take home requests only in your own township or near your Blue Line station and teach other students online. Each new family meets you first at a free demo where we ask a parent to be at home."
+    ],
+    [
+      "Which boards do Ghaziabad families need tutors for?",
+      "CBSE most often, ICSE and ISC for a steady group, the IB Diploma or Cambridge IGCSE for a smaller one, and the UP Board's High School and Intermediate, where the medium of teaching, Hindi or English, matters as much as the subject. Put board, class and medium on your profile."
+    ],
+    [
+      "Does a hybrid plan suit Raj Nagar Extension or Crossings Republik?",
+      "It can. Where the NH-9 junctions are slow at office hours, one home lesson a week for written practice plus online classes in between keeps a student on track. Tick both home and online on your profile, and agree the mix with the parent after the demo."
+    ]
   ]
 }

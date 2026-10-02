@@ -5,18 +5,108 @@
     "A UP Board student taught in Hindi, an ISC student and an IGCSE student need different tutors even in the same subject, so board, class and medium are matched together. CBSE is widely followed, CISCE's ICSE and ISC have a strong, long-standing presence, a smaller number take the IB or Cambridge IGCSE, and many families are in UP Board schools. Home tuition is easiest where you live in the same khands or sectors as the family. For senior specialist subjects such as ISC Physics, IB Maths or JEE work, an online class lets a tutor across the city teach a student in the outer townships."
   ],
   "zone_notes": {
-    "Gomti Nagar, Indira Nagar & Chinhat": "Munshi Pulia, Indira Nagar, Bhootnath Market and Lekhraj Market stations serve Indira Nagar and the older Gomti Nagar khands, but Chinhat and the Extension have no station and need road travel. Townships in the Extension and along Faizabad Road can issue a standing entry pass in the first week, and Shaheed Path fills with office traffic in the evening.",
-    "Mahanagar, Aliganj & Jankipuram": "Aliganj runs in lettered sectors and Vikas Nagar in numbered ones, so ask for sector and house number, and a map pin in Jankipuram Extension, where some lanes are new. Badshahnagar, IT College and Vishwavidyalaya stations help the southern colonies, while Jankipuram suits a tutor living north of the Ring Road.",
-    "Hazratganj, Lalbagh & Aminabad": "Car parking is scarce, so riding the Red Line to Hazratganj, Sachivalaya or Charbagh and walking is the steadiest way in. Older buildings often have no guard or lift, so get the floor number and a landmark at the entrance, and avoid late-afternoon and evening market peaks in Aminabad and Chowk.",
-    "Alambagh, Ashiyana & Rajajipuram": "Krishna Nagar station serves LDA Colony and Ashiyana, Alambagh serves Rajajipuram, and Transport Nagar or Amausi suit Sarojini Nagar, each with a short auto ride. Plotted sectors let you park at the door, gated complexes in Alambagh and Sarojini Nagar register you before the demo, and Kanpur Road is heaviest at office hours.",
-    "Sushant Golf City, Vrindavan Yojana & Telibagh": "No station serves this belt, so tutors who already live in these townships or nearby keep slots most easily. Gated towers expect visitor registration and often an approved entry pass for a regular teacher, while Telibagh houses open onto the lane, and Raebareli Road is slow at school and office times."
+    "Gomti Nagar, Indira Nagar & Chinhat": "Munshi Pulia, Indira Nagar, Bhootnath Market and Lekhraj Market stations serve Indira Nagar and the older Gomti Nagar khands, but Chinhat and the Extension have no station and need road travel. Townships in the Extension and along Faizabad Road can issue a standing entry pass in the first week, and Shaheed Path fills with office traffic in the evening. A tutor living in the same khands keeps an early-evening slot most reliably.",
+    "Mahanagar, Aliganj & Jankipuram": "Aliganj runs in lettered sectors and Vikas Nagar in numbered ones, so ask for sector and house number, and a map pin in Jankipuram Extension, where some lanes are new. Badshahnagar, IT College and Vishwavidyalaya stations help the southern colonies, while Jankipuram suits a tutor living north of the Ring Road. On the Kapoorthala and Nishatganj market roads parking is hard, so ask for a side lane or come by metro to IT College.",
+    "Hazratganj, Lalbagh & Aminabad": "Car parking is scarce, so riding the Red Line to Hazratganj, Sachivalaya or Charbagh and walking is the steadiest way in. Older buildings often have no guard or lift, so get the floor number and a landmark at the entrance, and avoid late-afternoon and evening market peaks in Aminabad and Chowk. Be ready to call up on the first visit; weekend mornings, weekday afternoons or online sessions are easiest to keep.",
+    "Alambagh, Ashiyana & Rajajipuram": "Krishna Nagar station serves LDA Colony and Ashiyana, Alambagh serves Rajajipuram, and Transport Nagar or Amausi suit Sarojini Nagar, each with a short auto ride. Plotted sectors let you park at the door, gated complexes in Alambagh and Sarojini Nagar register you before the demo, and Kanpur Road is heaviest at office hours. Set a class time that avoids the Kanpur Road peak rather than one that has to cross it.",
+    "Sushant Golf City, Vrindavan Yojana & Telibagh": "No station serves this belt, so tutors who already live in these townships or nearby keep slots most easily. Gated towers expect visitor registration and often an approved entry pass for a regular teacher, while Telibagh houses open onto the lane, and Raebareli Road is slow at school and office times. Ask for the tower and flat number in advance, and for senior specialist subjects consider teaching online if you live across the city."
   },
   "boards": "Lucknow tutors teach CBSE, CISCE's ICSE and ISC, which have a long-standing presence here, the UP Board, and for a smaller group the IB or Cambridge IGCSE. The UP Board, formally UPMSP, was set up in 1921 at Prayagraj, where its head office remains, and holds the High School exam in Class 10 and the Intermediate in Class 12. Read syllabuses, model papers and registration notices on upmsp.edu.in, CISCE regulations and specimen papers on cisce.org and CBSE material on cbseacademic.nic.in, and check IB and Cambridge course guides on their own sites.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Uttar Pradesh Madhyamik Shiksha Parishad (UPMSP, UP Board)",
+      "site": "https://upmsp.edu.in/",
+      "classes": "High School (Class 10); Intermediate (Class 12)",
+      "note": "The UP Board fixes paperwork early: Class 9 and Class 11 students must be registered in advance through their school, and the rules on who may sit High School and Intermediate are set out each year. The 2026-27 Intermediate maths model paper carries 100 marks with no practical. Teach in the student's medium, Hindi or English.",
+      "page": "/up-board-tutor-lucknow"
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "CBSE is widely followed in Lucknow, from Gomti Nagar's khands to Alambagh's sectors. Build on NCERT and the sample papers and marking schemes on cbseacademic.nic.in, with a steady rhythm of chapter, test and full paper. A tutor on the Red Line can reach CBSE students in Hazratganj, Charbagh and Alambagh without a car.",
+      "page": "/cbse-home-tutor-lucknow"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "With so many Lucknow students on CISCE, tutors who know ICSE (Class 10) and ISC (Class 12) well are easier to find here than in many cities. The papers expect long, organised answers, English literature is prescribed, and project work counts, so plan full-syllabus revision. Regulations are on cisce.org.",
+      "page": "/icse-home-tutor-lucknow"
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "A smaller number of Lucknow students take the IB Diploma, where internally assessed work counts beside final exams and Maths is taken as AA or AI at SL or HL. If the right teacher lives across the city, an online lesson avoids the trip. Guides are on ibo.org.",
+      "page": "/ib-tutor-lucknow"
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "Cambridge IGCSE is about exam technique: command words, the correct tier, and past papers marked against the official scheme. Lucknow's IGCSE students are a smaller group, so tutors who teach online as well as at home can reach them across the city. Check the syllabus on Cambridge's or Pearson's own site before the demo.",
+      "page": "/igcse-tutor-lucknow"
+    }
+  ],
+  "women": {
+    "intro": "Lucknow's women tutors can take home lessons, online students or both through NXTutors, on their own terms. Draw your own map: an Indira Nagar tutor might stick to the khands around Munshi Pulia and Lekhraj Market, an Aliganj tutor to its lettered sectors, and township families in Sushant Golf City can be taught on screen. One ID check applies to all tutors before profiles appear, parents stay home for the opening demo, and our safeguarding policy holds both sides to the same rules.",
+    "points": [
+      "Home, online or a blend is a profile setting you can alter any week.",
+      "Leave the Ring Road or Kanpur Road out of your travel areas if evening crossings there do not appeal.",
+      "Your open hours tell Lucknow families when you teach, so mark only the ones you want.",
+      "Nothing regular begins until the free demo, held while a parent is home.",
+      "Townships in Gomti Nagar Extension and Sushant Golf City issue entry passes; ask the family to sort yours so visits are on record.",
+      "Money, timings and messages go through a parent, never the student's own chat.",
+      "Teach small children in a room that an adult can see; online, cameras stay on at both ends.",
+      "Worried? Halt the classes and contact NXTutors with Safeguarding in the subject; if anyone is in danger, 112 comes first."
+    ]
+  },
+  "story": [
+    "Your account starts with a one-time code on phone or email. Add what you teach, UP Board in Hindi or English, ISC, ICSE or CBSE, and the Lucknow khands and sectors you can reach.",
+    "Then a government photo ID goes to our team, who review it before your profile can appear. One ID number belongs to one tutor; this establishes identity, not a police record.",
+    "Once cleared, the profile is published with its Verified badge, naming your boards, your zones between Aliganj and Alambagh, the hours you have free and your own fee.",
+    "Picture a parent in Gomti Nagar asking for help. They receive two or three names: tutors from their khand, tutors willing to come in, then the zone, all of Lucknow, then online.",
+    "They can read your fee before choosing a slot. Lesson one is a free demo in their home, with a parent around, so both of you can judge the fit.",
+    "Afterwards, teach in homes across your zones, online for students across Uttar Pradesh and further, or both, say a Saturday township visit plus two online evenings."
+  ],
   "faqs": [
-    ["How does a Lucknow family's request reach tutors?", "The family sends one request with board, class and medium, subjects, khand or sector and timings. We pick two or three tutors in order of distance: same locality, those who travel there, the rest of the zone, Lucknow and then online. The family sees each fee before booking a free demo class with the tutor they prefer."],
-    ["Can I teach online students while living in Lucknow?", "Yes. With online switched on, requests reach you on subject, board, class and the hours you list, wherever the student is. A Lucknow tutor can teach UP Board or ISC students in other cities online in the evening and still keep home lessons in nearby khands or sectors."],
-    ["Which Lucknow zones can I reach by metro?", "The Red Line reaches four zones: Alambagh and the Kanpur Road side, the old centre at Hazratganj and Charbagh, the southern Trans-Gomti colonies at Badshahnagar and IT College, and Indira Nagar. Gomti Nagar Extension, Jankipuram and the Shaheed Path townships need a two-wheeler or car, so add them only if you have one."],
-    ["What does the NXTutors ID check involve?", "When you join, you verify your phone or email with a one-time code and upload a government photo ID. Our team reviews that ID before your profile goes live, and real tutors who pass carry a Verified badge. NXTutors does not run a police check; How we verify tutors (/how-we-verify-tutors) gives the full steps."],
-    ["Is there a cost to join as a tutor in Lucknow?", "Yes, tutor plans are paid; see the Pricing page (/pricing) for what each includes. The lesson fee is yours to set, and Lucknow families see it on your profile before their free demo. Switching tutor costs a family nothing, so a reliable slot and clear teaching in the board's own pattern keep students."]
+    [
+      "How does a Lucknow family's request reach tutors?",
+      "The family sends one request with board, class and medium, subjects, khand or sector and timings. We pick two or three tutors in order of distance: same locality, those who travel there, the rest of the zone, Lucknow and then online. The family sees each fee before booking a free demo class with the tutor they prefer."
+    ],
+    [
+      "Can I teach online students while living in Lucknow?",
+      "Yes. With online switched on, requests are not tied to your khand, only to subject, board and class, wherever the student is. A Lucknow tutor can teach UP Board or ISC students in other cities online in the evening and still keep home lessons in nearby khands or sectors."
+    ],
+    [
+      "Which Lucknow zones can I reach by metro?",
+      "The Red Line reaches four zones: Alambagh and the Kanpur Road side, the old centre at Hazratganj and Charbagh, the southern Trans-Gomti colonies at Badshahnagar and IT College, and Indira Nagar. Gomti Nagar Extension, Jankipuram and the Shaheed Path townships need a two-wheeler or car, so add them only if you have one."
+    ],
+    [
+      "What does the NXTutors ID check involve?",
+      "When you join, you verify your phone or email with a one-time code and upload a government photo ID. Our team reviews that ID before your profile goes live, and real tutors who pass carry a Verified badge. NXTutors does not run a police check; How we verify tutors (/how-we-verify-tutors) gives the full steps."
+    ],
+    [
+      "Is there a cost to join as a tutor in Lucknow?",
+      "Yes, tutor plans are paid; see the Pricing page (/pricing) for what each includes. The lesson fee is yours to set, and Lucknow families see it on your profile before their free demo. Switching tutor costs a family nothing, so a reliable slot and clear teaching in the board's own pattern keep students."
+    ],
+    [
+      "Is it possible for a woman tutor in Lucknow to teach only close to home?",
+      "It is. Mark only the zones near you, for example the Indira Nagar khands along the Red Line; home matching starts from those zones, your free hours tell families when you can come, and township families can learn from you online. A parent is home for the demo, so you meet them first."
+    ],
+    [
+      "What boards do Lucknow parents usually name?",
+      "CBSE is widely followed, CISCE's ICSE and ISC have a long-standing presence, many families are in UP Board schools for High School and Intermediate, and a smaller group take the IB or Cambridge IGCSE. UP Board parents mention the medium too, so record board, class and medium."
+    ],
+    [
+      "Could I split a Lucknow student's week between home and online?",
+      "Yes. Switch on both modes and settle the rhythm with the parent after the demo. No station serves Sushant Golf City or Vrindavan Yojana, so a weekend visit for written practice, with online sessions on weekdays, saves a long Raebareli Road drive."
+    ]
   ]
 }

@@ -5,6 +5,43 @@
     "site": "https://biharboardonline.bihar.gov.in",
     "summary": "The Bihar School Examination Board, Patna, runs the Matric (Class 10) and Intermediate (Class 12) examinations. Its site carries the 2026 exam routines for both, model papers, the Class 9, Class 10 and Class 11–12 syllabi, and the passing criteria for Matric and Intermediate. It also handles secondary registration in 2026 for the 2027 examination, compartment and special examinations, scrutiny applications, and BBOSE examinations, and lists the board's divisional offices."
   },
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Bihar School Examination Board (BSEB), Patna",
+      "site": "https://biharboardonline.bihar.gov.in",
+      "classes": "Matric (Class 10), Intermediate (Class 12)",
+      "note": "BSEB conducts the Matric and Intermediate examinations and posts the exam routines, model papers, the Class 9, Class 10 and Class 11–12 syllabi and the passing criteria on its own site. It also handles compartment and special examinations and BBOSE examinations. A Bihar Board tutor can build demo lessons straight from those model papers."
+    },
+    {
+      "key": "cbse",
+      "name": "Central Board of Secondary Education (CBSE)",
+      "site": "https://www.cbse.gov.in",
+      "classes": "Classes 1–12; board examinations in Classes 10 and 12",
+      "note": "Our Patna page names CBSE as one of the boards Patna students sit. A tutor in Bihar who teaches CBSE should use NCERT-based material and the current sample papers on cbseacademic.nic.in, and say on the profile whether lessons run in Hindi, English or a mix of the two."
+    },
+    {
+      "key": "cisce",
+      "name": "Council for the Indian School Certificate Examinations (CISCE)",
+      "site": "https://cisce.org",
+      "classes": "ICSE (Class 10), ISC (Class 12)",
+      "note": "ICSE and ISC appear on our Patna page alongside the Bihar board and CBSE. These courses usually run in English and reward complete written answers, so a tutor should practise with the council's specimen papers and list ICSE and ISC separately from Matric or Intermediate experience."
+    },
+    {
+      "key": "ib",
+      "name": "International Baccalaureate (IB)",
+      "site": "https://www.ibo.org",
+      "classes": "Primary Years, Middle Years and Diploma Programmes",
+      "note": "A smaller number of Patna students follow the IB, our city page notes, often after a family moves from another city, and they usually find the closest specialist online. An IB-trained tutor in Bihar should mark online teaching and name the Diploma subjects and levels they have taught."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge IGCSE",
+      "site": "https://www.cambridgeinternational.org",
+      "classes": "IGCSE, usually around Classes 9–10",
+      "note": "Cambridge IGCSE students in Bihar, like IB students, often look online for help, according to our Patna page. If you teach it, list the subjects and tiers you know, and plan demos around past papers, command words and the official mark schemes."
+    }
+  ],
   "intro": [
     "Patna has its own NXTutors tuition-jobs page, with zones and areas you can tick when you set up your travel range. The rest of Bihar is covered from this state page. If you teach from Gaya, Bhagalpur, Muzaffarpur or a smaller district town, put that town on your profile: a home request is offered to the closest suitable tutors before anyone further away, so being specific about where you live works in your favour. Online classes are open to you from day one, wherever in Bihar you are, because those requests are matched on subject, class and board rather than location.",
     "Bihar Board students prepare for Matric and Intermediate examinations whose routines, model papers and syllabi the board posts on its own site, and a tutor who reads them there will handle demo questions with more confidence. If you also teach CBSE or another board, say so, and state the medium, Hindi or English. Each request leads to a shortlist of two or three tutors; the parent compares fees, which you set yourself, before a free first class. Tutors who prepare students for compartment or special examinations can say so as well, since the board runs both."
@@ -12,60 +49,80 @@
   "towns": [
     {
       "name": "Gaya",
-      "note": "Teaching from home in Gaya? Online classes work too."
+      "note": "A Gaya tutor who wants home students should give the precise mohalla or colony, since requests go nearest first. Matric and Intermediate preparation under BSEB can be listed with the subjects you handle, and online teaching widens the circle well beyond Gaya."
     },
     {
       "name": "Bhagalpur",
-      "note": "Say how far beyond Bhagalpur you will travel for lessons."
+      "note": "Bhagalpur tutors can say whether they teach in Hindi, English or a mix; our Patna page notes that many Bihar students are comfortable with a blend. Matching on language as well as board saves a family and a tutor from a demo that does not fit."
     },
     {
       "name": "Muzaffarpur",
-      "note": "If you are based in Muzaffarpur, add online hours too."
+      "note": "In Muzaffarpur, a profile that separates Classes 1 to 5 from Matric and Intermediate classes is easier to match. Pick the range you enjoy teaching, add the evening slots you can keep, and mark online if you are open to students elsewhere in Bihar."
     },
     {
       "name": "Darbhanga",
-      "note": "Your preferred classes in Darbhanga can go on your profile."
+      "note": "Darbhanga teachers who already prepare students with BSEB model papers can mention that on their profile. Parents often want to know how a tutor plans revision for the board paper, and the demo is the place to show it with a real question."
     },
     {
       "name": "Purnia",
-      "note": "Home lessons in Purnia go first to tutors nearby."
+      "note": "Purnia tutors who prefer not to travel can choose online only. Requests then arrive by subject, class and board, and you agree the call tool with each family beforehand. Women tutors who want home classes can restrict them to their own neighbourhood."
     },
     {
       "name": "Begusarai",
-      "note": "Boards you teach in Begusarai should all be listed."
+      "note": "From Begusarai, a hybrid week is possible: home lessons for nearby families and online lessons for revision or for students in other towns. Note on your profile which days are for which, so requests match the time you actually have."
     },
     {
       "name": "Ara",
-      "note": "Nearby families in Ara see the closest tutors first."
+      "note": "Ara tutors with Intermediate commerce, accountancy, business studies or economics, should name each subject rather than simply writing commerce. BSEB's Class 11–12 syllabus on its own site is the reference; read the current version before a demo with a new student."
     },
     {
       "name": "Bihar Sharif",
-      "note": "Say whether lessons in Bihar Sharif run in English or Hindi."
+      "note": "Bihar Sharif tutors should write the locality they live in, not just the town, because home requests are offered to the closest suitable tutors first. Add every board you have taught, BSEB, CBSE or ICSE, rather than one general label."
     },
     {
       "name": "Katihar",
-      "note": "Online lessons let Katihar tutors teach in other states."
+      "note": "If you teach compartment or special examination candidates in Katihar, the board's site lists those examinations alongside the main ones. Mention such preparation as a separate line, because a family in that situation will look for exactly that help."
     },
     {
       "name": "Chhapra",
-      "note": "Hours you can give in Chhapra belong on your profile."
+      "note": "Chhapra teachers with senior science or maths can reach Intermediate students across Bihar online. Keep home classes to the localities you can manage after school hours, and use the board's Class 11–12 syllabus on its site when you plan a demo."
     },
     {
       "name": "Hajipur",
-      "note": "Mark which areas near Hajipur you will visit."
+      "note": "Hajipur tutors who are willing to visit students in nearby Patna localities can name those localities on their profile instead of the whole city. Home requests from there will then include you when you are among the nearer tutors."
     },
     {
       "name": "Sasaram",
-      "note": "A tutor living in Sasaram can teach online across India."
+      "note": "A Sasaram tutor starting out can begin with a short list of subjects and classes and add more after the first few students. A narrower, honest profile keeps the requests you receive within what you can teach well."
     },
     {
       "name": "Motihari",
-      "note": "Students outside Motihari can still book you online."
+      "note": "Motihari tutors who teach primary children at home should say so plainly. Parents of young children often want a steady routine, patient reading and number work, and a demo that shows how you will handle homework through the week."
     },
     {
       "name": "Siwan",
-      "note": "Keep both options open from Siwan: home and online."
+      "note": "Women tutors in Siwan can keep home classes to their own part of town, teach only online, or combine both. We ask the parent to stay at home for the demo, and the profile only goes live after our team reviews a government photo ID."
     }
+  ],
+  "women": {
+    "intro": "Women in Bihar who teach, whether school teachers, graduates or college students tutoring part-time, can join NXTutors on terms they set. Pick home, online or hybrid. Name the mohallas and colonies you will visit, or none at all if you prefer online only. Choose the hours you can give. Every tutor who joins confirms a phone or email with a one-time code and uploads a government photo ID that our team reviews; real tutors who pass carry a Verified badge. The demo class takes place where we ask a parent to be at home, and you can stop any arrangement and tell us.",
+    "points": [
+      "Home, online or hybrid: you choose, and can switch later.",
+      "Only the localities you list are used for home requests.",
+      "Your hours go on the profile; take evenings or weekends only if you like.",
+      "Meet every family at a demo where we ask a parent to be present.",
+      "Hold classes where another adult is at home, in a shared room.",
+      "Agree fees and schedules with the parent directly.",
+      "Something worries you? Stop the classes and tell us on WhatsApp."
+    ]
+  },
+  "story": [
+    "Join from Gaya, Bhagalpur or any Bihar town by confirming your phone or email with a one-time code. Pick home, online or both, and list the colonies you can reach.",
+    "Upload a government photo ID from the tutor dashboard. Our team reviews it against your profile before it goes live, and the same ID number cannot be used for a second account.",
+    "Once you pass the review, your profile is live with a Verified badge, showing the Bihar Board, CBSE or ICSE classes you teach, your language and the fee you set.",
+    "A parent near you sends a request with class, board and subject. Two or three tutors are shortlisted, starting with whoever lives closest, then further out, then online tutors.",
+    "The family sees your fee before the first class, which is a free demo for them. Teach a normal lesson on the student's current chapter, in the language they are comfortable with.",
+    "If they continue, you teach at home, online or both on the days agreed with the parent. Keep your timings and localities current so future requests fit your week."
   ],
   "faqs": [
     [
@@ -87,6 +144,18 @@
     [
       "How do tutor plans work?",
       "Plans are paid. What each plan includes is set out on /pricing, and you can compare them there before choosing. Your hourly fee is separate and up to you."
+    ],
+    [
+      "Can women tutors in Bihar limit where they travel?",
+      "Yes. Home requests use only the localities you list, so name just the colonies or mohallas you are comfortable visiting. You can also choose online only. Every demo has a parent at home, and our safeguarding policy sets out habits for both tutors and families."
+    ],
+    [
+      "Which boards do Bihar families ask about?",
+      "Our Patna page lists BSEB, CBSE, ICSE and ISC, with a smaller number on IB or Cambridge IGCSE who usually find specialists online. List only the boards you have taught, with the language you teach in, and the request will tell you which one a family follows."
+    ],
+    [
+      "Can I teach some students at home and others online?",
+      "Yes. Mark both home and online on your profile. Home requests come from families near the localities you list, while online requests come from anywhere the subject, class and board fit. You can also teach one student both ways if the parent agrees at the demo."
     ]
   ]
 }

@@ -5,6 +5,29 @@
     "site": "https://www.hpbose.org",
     "summary": "The Himachal Pradesh Board of School Education, at Gyan Alok Parisar in Dharamshala (Kangra), has worked since 1969. It conducts the Matric (Class 10) and Plus Two (Class 12) examinations, runs the state open school (SOS) examinations, and holds a Teacher Eligibility Test. Its site lists syllabi, model papers, a competency-based question bank for Matric, OMR specimens and step-wise marking instructions, along with date sheets, results and re-evaluation notices."
   },
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Himachal Pradesh Board of School Education (HPBOSE), Dharamshala",
+      "site": "https://www.hpbose.org",
+      "classes": "Matric (Class 10), Plus Two (Class 12); state open school examinations",
+      "note": "HPBOSE, working from Dharamshala since 1969, runs the Matric and Plus Two examinations and the state open school papers. Its site lists syllabi, model papers, a competency-based question bank for Matric, OMR specimens and step-wise marking instructions. A tutor can rehearse answers against those marking steps before teaching a Matric demo."
+    },
+    {
+      "key": "cbse",
+      "name": "Central Board of Secondary Education (CBSE)",
+      "site": "https://www.cbse.gov.in",
+      "classes": "Classes 1–12; board examinations in Classes 10 and 12",
+      "note": "Himachal tutors with CBSE experience can show it beside HPBOSE classes. The national board posts its curriculum, sample papers and marking schemes on cbseacademic.nic.in, and these documents are revised session by session, so plan each demo from the current year's versions rather than older printouts."
+    },
+    {
+      "key": "cisce",
+      "name": "Council for the Indian School Certificate Examinations (CISCE)",
+      "site": "https://cisce.org",
+      "classes": "ICSE (Class 10), ISC (Class 12)",
+      "note": "Any ICSE or ISC teaching you have done belongs on a separate line. The council's courses are organised differently from HPBOSE and CBSE and mark answers in their own way. Its regulations, syllabi and specimen papers on cisce.org are where to confirm the current pattern before you start with a new student."
+    }
+  ],
   "intro": [
     "Himachal Pradesh has no NXTutors city tuition-jobs page yet, so tutors in Shimla, Dharamshala, Mandi, Solan, Kullu and the state's other towns all begin here. Write your town and the localities you are willing to visit. A home request is offered first to the nearest suitable tutors and then further out, so being specific helps a family close to you find your profile. Online lessons are matched by subject, class and board, not location, which lets a tutor in Chamba or Hamirpur teach a student in any state. Una, Solan and Palampur tutors join the same way.",
     "Himachal students may sit the Matric and Plus Two through HPBOSE or follow CBSE, ICSE or another board, in Hindi or English medium. List each board and medium you teach. HPBOSE's competency-based question bank for Matric, its model papers and step-wise marking instructions are on hpbose.org, and reading them before a demo is sensible. For every request, two or three tutors are shortlisted; the family sees your fee before a free first class and can switch later at no cost. If you help Plus Two students with a particular stream, such as science or commerce, name it."
@@ -12,52 +35,72 @@
   "towns": [
     {
       "name": "Shimla",
-      "note": "Hours you can give in Shimla belong on your profile."
+      "note": "Shimla is the state capital but has no NXTutors city page, so Shimla tutors join here. Give the ward or locality where you live and only the areas you can realistically reach for a regular class; home requests go nearest first, while online lessons have no such limit."
     },
     {
       "name": "Dharamshala",
-      "note": "Dharamshala hosts HPBOSE's office; list your Dharamshala locality."
+      "note": "Dharamshala is home to the state board, and tutors who know its Matric question bank and marking instructions can say so. Name the localities you will visit, list the Plus Two subjects you teach, and check the board's notices before each new demo."
     },
     {
       "name": "Mandi",
-      "note": "Say how far beyond Mandi you will travel for lessons."
+      "note": "Mandi tutors with a specialist subject, such as Plus Two physics or accountancy, can teach it online to students well beyond the district. Home visits within Mandi can sit alongside; give both sets of hours so families know what is possible."
     },
     {
       "name": "Solan",
-      "note": "Weekend or weekday slots in Solan? You choose them."
+      "note": "Solan tutors should know that a family can switch to another tutor at no cost to them if the fit is not right. That is part of how matching works, so treat a change as feedback on fit rather than a verdict on your teaching."
     },
     {
       "name": "Kullu",
-      "note": "You can run home visits in Kullu alongside online lessons."
+      "note": "Kullu tutors might settle into a hybrid week: home lessons with students close by and online sessions for those further up or down the valley. Put both on the profile, give hours for each and agree the pattern with each family at the demo."
     },
     {
       "name": "Hamirpur",
-      "note": "Students outside Hamirpur can still book you online."
+      "note": "Hamirpur teachers with Plus Two science or maths can reach senior students across the state online. Keep your home list to the places you know, name the subjects precisely, and use the board's model papers when you plan a first lesson."
     },
     {
       "name": "Una",
-      "note": "Online lessons let Una tutors teach in other states."
+      "note": "Una tutors who teach Hindi or Sanskrit as subjects can say which classes they take and how they work on grammar and writing. Language tutors are compared on method as much as knowledge, and a short description of your approach helps a parent choose."
     },
     {
       "name": "Bilaspur",
-      "note": "Home lessons in Bilaspur go first to tutors nearby."
+      "note": "Bilaspur in Himachal shares its name with a town in Chhattisgarh, so add your district or locality clearly when you join. Matching for home lessons begins with the tutors nearest the family, and a clear address keeps you on the right shortlists."
     },
     {
       "name": "Palampur",
-      "note": "Teaching from home in Palampur? Online classes work too."
+      "note": "Palampur teachers who know the Matric step-wise marking instructions can use them in revision, showing a student where each step is rewarded. Mention it on your profile with the subjects concerned; for a board-year family, that is a concrete reason to choose you."
     },
     {
       "name": "Nahan",
-      "note": "Please list the Nahan localities you can reach."
+      "note": "Nahan tutors who prepare students for the state open school examinations can mention that separately. The board runs those papers alongside Matric and Plus Two, and a family whose child is studying through the open school will look for that experience."
     },
     {
       "name": "Chamba",
-      "note": "Write down your Chamba neighbourhood; nearby requests come first."
+      "note": "From Chamba, online teaching widens the circle well beyond the district while home lessons stay local. Mark online, give the class range and boards you cover, and agree the call tool with each parent before the first lesson."
     },
     {
       "name": "Baddi",
-      "note": "A tutor living in Baddi can teach online across India."
+      "note": "Baddi tutors who have taught both HPBOSE and CBSE should list each board with its classes. A family's request names its board, and a profile that covers both lets you be shortlisted for either, as long as you have taught it yourself."
     }
+  ],
+  "women": {
+    "intro": "Himachal's women tutors, in Shimla, Dharamshala, Mandi or a small hill town, can join NXTutors and decide how and where they teach. Home visits, online lessons or a mix are all possible, and you list only the localities you want to reach and the hours you want to keep. Every tutor who joins confirms a phone or email by one-time code and uploads a government photo ID that our team reviews before the profile goes live; real tutors who pass carry a Verified badge. The first lesson with any family is a demo where we ask a parent to be at home.",
+    "points": [
+      "Choose home, online or hybrid, and alter it as your season changes.",
+      "Home requests use only the wards and localities you list.",
+      "Set your own hours, including weekends only.",
+      "A parent is at home for the first lesson with every family.",
+      "Teach in a shared room while another adult is in the house.",
+      "Settle timings and fees with the parent, not the student.",
+      "Stop any classes that worry you and tell us through WhatsApp or the contact page."
+    ]
+  },
+  "story": [
+    "Sign up from any Himachal town using a one-time code sent to your phone or email. Add your ward or locality, the places you will reach, and whether you teach online too.",
+    "Upload a government photo ID from your dashboard. A member of our team reviews it while the profile stays pending, and no ID number can serve more than one tutor account.",
+    "After review, your profile goes live with the Verified badge, showing your HPBOSE or CBSE classes, your subjects, the medium you teach in and the fee you have set.",
+    "A family near you sends a request with the class, board and subject. Two or three tutors are shortlisted, nearest first, then wider, then online.",
+    "The parent has seen your fee before the first lesson, which is a free demo for the family. Teach the chapter the student is working on at school.",
+    "If they carry on, you teach at home, online or both, on days agreed with the parent. Update your localities and hours whenever your week changes."
   ],
   "faqs": [
     [
@@ -79,6 +122,18 @@
     [
       "Where are tutor plans explained?",
       "On /pricing. Tutor plans are paid, and the page lists what each includes. You choose your own lesson fee."
+    ],
+    [
+      "Can a woman tutor in Himachal keep to online lessons?",
+      "Yes. Choose online only and you are matched by subject, class and board, not location. If you later add home lessons, they use only the localities you list. Each new family meets you at a demo where we ask a parent to be at home."
+    ],
+    [
+      "Which boards can I list from Himachal Pradesh?",
+      "List HPBOSE with the levels you teach, Matric, Plus Two or the state open school, and add CBSE, ICSE or ISC only if you have taught them. A family's request states its board, and the shortlist follows that."
+    ],
+    [
+      "Can I combine home and online students in a hill town?",
+      "Yes. Mark both modes, give the localities you will visit, and list online hours separately if they differ. You might keep a few home students nearby and teach others online, or teach one student both ways, as agreed with the parent at the demo."
     ]
   ]
 }

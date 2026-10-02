@@ -6,21 +6,109 @@
   ],
   "zone_notes": {
     "Golf Course Road": "Families live either in floors across the DLF phases, where a parking plan and a clear house number matter, or in gated towers in Sectors 42, 43, 53 and 54, where a visitor entry must be set up before you arrive. Office traffic along the road and around the Rapid Metro is the real limit, so slots soon after the school bus drop, or after the evening office rush, are easiest to keep.",
-    "MG Road & Cyber City": "Homes sit in pockets between office blocks in Sectors 24, 25, 26 and 29, Sikanderpur and Nathupur, and the roads fill twice a day in both directions, so a tutor based in the DLF phases or a neighbouring sector is the most punctual. Many parents here get home late, which suits tutors who can offer weekday online classes plus a longer weekend home session.",
-    "Central Gurugram": "HUDA plots with builder floors and houses, mid-rise apartments in Sector 39 and rented homes around Kanhai and Jharsa make this a mix of doorstep visits and building entries. Lying between NH-48 and Sohna Road, it can be reached from the DLF side, Sohna Road and Golf Course Extension Road, and a Yellow Line rider can finish from Millennium City Centre by auto.",
-    "Golf Course Extension Road": "Sectors 55 to 66 are mostly large gated societies with visitor apps, guard calls and a long walk from gate to tower, and some stop visitor entry after a set evening hour, which caps the latest slot you can offer. Children here often reach home later from school, so start a little after the bus drop; weekend mornings are usually easier to fill.",
+    "MG Road & Cyber City": "Homes sit in pockets between office blocks in Sectors 24, 25, 26 and 29, Sikanderpur and Nathupur, and the roads fill twice a day in both directions, so a tutor based in the DLF phases or a neighbouring sector is the most punctual. Many parents here get home late, which suits tutors who can offer weekday online classes plus a longer weekend home session. For board-year students, keep the weekday slot steady rather than moving it.",
+    "Central Gurugram": "HUDA plots with builder floors and houses, mid-rise apartments in Sector 39 and rented homes around Kanhai and Jharsa make this a mix of doorstep visits and building entries. Lying between NH-48 and Sohna Road, it can be reached from the DLF side, Sohna Road and Golf Course Extension Road, and a Yellow Line rider can finish from Millennium City Centre by auto. In Classes 11 and 12, families here may want a separate specialist per subject.",
+    "Golf Course Extension Road": "Sectors 55 to 66 are mostly large gated societies with visitor apps, guard calls and a long walk from gate to tower, and some stop visitor entry after a set evening hour, which caps the latest slot you can offer. Children here often reach home later from school, so start a little after the bus drop; weekend mornings are usually easier to fill. NXTutors has its own office in Sector 66, on this road.",
     "Sohna Road": "Gated towers, villa and floor enclaves and plotted homes across Sectors 47 to 51 and 67 to 72, South City 2 and Badshahpur each need a different first visit: a guard call, an app pre-approval or just a parking spot. The road is slow at school and office hours, so take families on your own side of Sohna Road first rather than crossing it at the wrong moment.",
-    "Southern Peripheral Road": "Sectors 73 to 80 are newer high-rise societies, some still growing around finished towers, with longer distances between them and fewer tutors living inside the belt. Tutors based on Golf Course Extension Road or in the Sohna Road sectors reach it most comfortably, and a weekly home session plus online classes is a common plan for Classes 11 and 12.",
-    "New Gurugram": "Sectors 81 to 95 off NH-48 are largely newer gated societies spread over a wide area, with long drives between them and building work still going on in several sectors. Fewer tutors live here, so a tutor from further away who keeps one fixed weekly slot, offers weekend mornings and teaches online in between can serve these families well.",
-    "Dwarka Expressway": "Sectors 34 to 37 and 99 to 115 are mostly high-rise societies, many handed over recently, and families often move in part-way through a school year needing to catch up with a new school or board. Where a tower's gate app is not running yet the guard needs your details before each class, and tutors living along the expressway or in Palam Vihar reach the most societies.",
-    "Old Gurugram": "Sectors 1 to 23 and Palam Vihar are mostly HUDA plots with houses and builder floors, plus Housing Board flats near Basai Road, so most visits go straight to the door and trips between homes are short. Gurgaon Railway Station, Palam Vihar Halt and IFFCO Chowk help a few tutors, but most come by road, and evenings near the markets and NH-48 run slower than afternoons."
+    "Southern Peripheral Road": "Sectors 73 to 80 are newer high-rise societies, some still growing around finished towers, with longer distances between them and fewer tutors living inside the belt. Tutors based on Golf Course Extension Road or in the Sohna Road sectors reach it most comfortably, and a weekly home session plus online classes is a common plan for Classes 11 and 12. Teaching two children in one society makes a weekly trip easier to keep through exam season.",
+    "New Gurugram": "Sectors 81 to 95 off NH-48 are largely newer gated societies spread over a wide area, with long drives between them and building work still going on in several sectors. Fewer tutors live here, so a tutor from further away who keeps one fixed weekly slot, offers weekend mornings and teaches online in between can serve these families well. Keep one regular slot rather than moving it, since the family plans around it.",
+    "Dwarka Expressway": "Sectors 34 to 37 and 99 to 115 are mostly high-rise societies, many handed over recently, and families often move in part-way through a school year needing to catch up with a new school or board. Where a tower's gate app is not running yet the guard needs your details before each class, and tutors living along the expressway or in Palam Vihar reach the most societies. Expect catch-up work after a change of school or board.",
+    "Old Gurugram": "Sectors 1 to 23 and Palam Vihar are mostly HUDA plots with houses and builder floors, plus Housing Board flats near Basai Road, so most visits go straight to the door and trips between homes are short. Gurgaon Railway Station, Palam Vihar Halt and IFFCO Chowk help a few tutors, but most come by road, and evenings near the markets and NH-48 run slower than afternoons. Parents here may ask one tutor to teach two siblings in the same visit."
   },
-  "boards": "Gurugram tutors are asked for CBSE, for CISCE's ICSE and ISC, and for the IB Diploma and Cambridge IGCSE, often within the same society, while HBSE, Haryana's state board, conducts the state's Class 10 and 12 exams. Read each board's own material before a demo: CBSE curricula and sample papers on cbseacademic.nic.in, CISCE regulations and specimen papers on cisce.org, IB subject guides through ibo.org, Cambridge syllabuses and past papers on cambridgeinternational.org, and HBSE notices on bseh.org.in. On your profile, list the exact boards and classes you teach rather than a subject alone.",
+  "boards": "Gurugram tutors are asked for CBSE, CISCE's ICSE and ISC, the IB Diploma and Cambridge IGCSE, often within one society, and HBSE is Haryana's state board. Read each board's own material before a demo, and on your profile list exact boards and classes, not a subject alone.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Board of School Education Haryana (HBSE)",
+      "site": "https://bseh.org.in/",
+      "classes": "Class 10 (Secondary); Class 12 (Senior Secondary)",
+      "note": "Because Gurugram is in Haryana, HBSE conducts the state's Class 10 and Class 12 examinations for schools on its rolls. Families who name it often ask about the medium, Hindi or English, as well as the class. Read the board's notices and model papers on bseh.org.in, and list HBSE on your profile only if you teach it."
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "CBSE runs through every Gurugram zone, from Old Gurugram's HUDA plots to the Dwarka Expressway towers. Families who move in mid-year often need gaps closed, since a student arriving from a state board may find CBSE's pace and competency-based questions unfamiliar. Build from NCERT and the sample papers on cbseacademic.nic.in.",
+      "page": "/cbse-home-tutor-gurgaon"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "ICSE (Class 10) and ISC (Class 12) cover more content per subject than CBSE and expect longer, more precise written answers, especially in English Language, Literature, History and the sciences. A Gurugram tutor should know the prescribed texts and each subject's project work; cisce.org carries the regulations.",
+      "page": "/icse-home-tutor-gurgaon"
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "IB requests in Gurugram are unusually specific: Maths Analysis and Approaches at Higher Level, a Physics internal assessment plan, a Chemistry HL topic. The IA carries real weight, and a tutor may guide it but never write it. Know the subject guide from ibo.org before the demo; specialists often teach weekend home sessions with online classes between.",
+      "page": "/ib-tutor-gurgaon"
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "Parents name the paper, such as IGCSE Additional Maths or Chemistry structured questions. Teach the command words, the right tier and past papers marked against the official scheme, and check whether the school follows Cambridge or Pearson Edexcel before you plan. Syllabuses are on cambridgeinternational.org.",
+      "page": "/igcse-tutor-gurgaon"
+    }
+  ],
+  "women": {
+    "intro": "NXTutors, whose own office is in Sector 66, welcomes women tutors across Gurugram's nine zones for home, online and hybrid work. You choose the sectors and hours: a tutor in Old Gurugram might keep to the HUDA plots around her, while one on Golf Course Extension Road stays within its societies and teaches New Gurugram families online. Some societies stop visitor entry after a set evening hour, so check before offering late slots. Every tutor who joins passes the same ID check, and the first class is a demo where we ask a parent to be present.",
+    "points": [
+      "Choose home, online or hybrid, and change it as your week changes.",
+      "List only the zones you want; leave out sectors that would mean crossing Sohna Road or NH-48 in the evening rush.",
+      "Meet each family at a free demo where we ask a parent to be at home before agreeing a regular slot.",
+      "In gated towers, ask the family to pre-approve you on the visitor app or with the guard, so every visit is logged.",
+      "Agree fees, timings and messages with a parent, not the student's own phone.",
+      "Teach younger children in a shared room with an adult at home; keep cameras on for online classes.",
+      "Stop any arrangement that worries you and tell NXTutors, marked Safeguarding; call 112 first in an emergency."
+    ]
+  },
+  "story": [
+    "Sign up with a one-time code to your phone or email, then add what you teach, from Class 8 Maths to IB Physics HL or ICSE English, and the Gurugram sectors you can reach.",
+    "Upload a government photo ID for our team, working from Sector 66, to review. Your profile stays pending until then; the check confirms identity and is not a police or background check.",
+    "Once it is reviewed, your profile goes live with the Verified badge, showing your boards, your travel zones, the hours you keep free and the fee you set.",
+    "A parent in Sector 57 or Palam Vihar sends a request. NXTutors shortlists two or three tutors: those in the area first, then those who travel there, the zone, the city and online.",
+    "The family sees your fee before booking, and the first class is a free demo at home where we ask a parent to be present, so you can judge the student and the gate routine.",
+    "Teach in the sectors you chose, online for families across India, or both, such as a weekend home session in New Gurugram with online classes on weekday evenings."
+  ],
   "faqs": [
-    ["How do tuition requests in Gurugram reach me?", "A parent sends the class, board, subjects, sector and preferred timings, and NXTutors shortlists two or three tutors: those living in that area first, then those who travel there, then the zone, the city and online tutors. If you are on the shortlist, the family sees your fee and can book a free first demo with you."],
-    ["Can I teach online while living in Gurugram?", "Yes. Choose home, online or both on your profile. Online requests are matched on subject, board, class and the hours you keep free, never on your sector, so a Gurugram tutor can take an evening online class for a family in another state and still teach at home nearby on weekends."],
-    ["Which Gurugram sectors should I add as travel areas?", "Add only sectors you can reach on time every week. Sohna Road and Golf Course Road are slow at school and office hours, so many tutors keep to one side of them. New Gurugram and the Southern Peripheral Road have fewer tutors living nearby, so if you can reach those sectors, include them."],
-    ["Is there a police check before I can teach?", "No. Tutors who join go through an ID check instead: you confirm your phone or email with a one-time code and upload a government photo ID, which our team reviews before the profile goes live. Real tutors who pass show a Verified badge. The page How we verify tutors (/how-we-verify-tutors) sets out each step."],
-    ["Do I pay to join, and who sets my fee?", "Tutor plans are paid, and what each plan includes is listed on the Pricing page (/pricing). Your hourly fee is entirely your decision, and families see it on your profile before the free demo. Switching tutors costs parents nothing, so punctual, well-planned lessons are what keep a Gurugram family with you."]
+    [
+      "How do tuition requests in Gurugram reach me?",
+      "A parent sends the class, board, subjects, sector and preferred timings, and NXTutors shortlists two or three tutors: those living in that area first, then those who travel there, then the zone, the city and online tutors. If you are on the shortlist, the family sees your fee and can book a free first demo with you."
+    ],
+    [
+      "Can I teach online while living in Gurugram?",
+      "Yes. Choose home, online or both on your profile. Online requests are never tied to your sector, as subject, board and class decide the fit, so a Gurugram tutor can take an evening online class for a family in another state and still teach at home nearby on weekends."
+    ],
+    [
+      "Which Gurugram sectors should I add as travel areas?",
+      "Add only sectors you can reach on time every week. Sohna Road and Golf Course Road are slow at school and office hours, so many tutors keep to one side of them. New Gurugram and the Southern Peripheral Road have fewer tutors living nearby, so if you can reach those sectors, include them."
+    ],
+    [
+      "Is there a police check before I can teach?",
+      "No. Tutors who join go through an ID check instead: you confirm your phone or email with a one-time code and upload a government photo ID, which our team reviews before the profile goes live. Real tutors who pass show a Verified badge. The page How we verify tutors (/how-we-verify-tutors) sets out each step."
+    ],
+    [
+      "Do I pay to join, and who sets my fee?",
+      "Tutor plans are paid, and what each plan includes is listed on the Pricing page (/pricing). Your hourly fee is entirely your decision, and families see it on your profile before the free demo. Switching tutors costs parents nothing, so punctual, well-planned lessons are what keep a Gurugram family with you."
+    ],
+    [
+      "Can women tutors in Gurugram keep to societies near home?",
+      "Yes. You choose your travel sectors and home requests are matched to them, with your listed hours telling families when you are free, so you could take home requests only along Golf Course Extension Road or in Old Gurugram and teach others online. Every new family meets you first at a free demo where we ask a parent to be at home."
+    ],
+    [
+      "Which boards are Gurugram tutors asked for?",
+      "CBSE, CISCE's ICSE and ISC, the IB Diploma and Cambridge IGCSE, sometimes all within one society, plus HBSE, Haryana's state board. Requests can be precise, such as IB Maths AA at Higher Level, so list exact courses, boards and classes rather than a subject alone."
+    ],
+    [
+      "Does a hybrid plan work for New Gurugram and the Southern Peripheral Road?",
+      "It can. These belts have longer drives between societies and fewer tutors living inside them, so a weekly home session for new topics and written work, with online classes in between, lets a tutor from further away serve a family well. Choose both modes and agree the split after the demo."
+    ]
   ]
 }

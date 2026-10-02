@@ -5,19 +5,108 @@
     "Families here follow the boards common across the NCR: CBSE most widely, ICSE and ISC, and the IB or Cambridge IGCSE for a smaller group. Greater Noida is in Uttar Pradesh, so UPMSP, the state board, is in the mix too, and its students sit the High School and Intermediate exams. Density is the upside in Greater Noida West, where a tutor teaching in one tower can often take another student nearby. In the quieter sectors fewer tutors live close by, so many families pair a local tutor with online lessons for a specialist subject."
   ],
   "zone_notes": {
-    "Greater Noida West": "Almost every home is a flat in a gated township or tower belt, so the family should approve you on the visitor app or gate register and share the tower and flat before the first class. With no working metro station, plan around Gaur Chowk and Ek Murti Chowk in the evening, and use the density: one tower can hold more than one student.",
-    "Alpha–Delta & Pari Chowk": "The original core is mostly houses and builder floors on authority plots, so there is no society gate, apart from the towers in Builders Area. ALPHA 1, DELTA 1, Pari Chowk and GNIDA Office stations make it the easiest zone to reach by Aqua Line plus e-rickshaw, but avoid crossing Pari Chowk at peak hour.",
-    "Omega, Chi & Phi": "Omega 1 and the Chi 2 and Chi 5 societies are gated, while Chi 3 and Phi 3 are mostly independent houses, so ask which entry applies before you go. Pari Chowk and Knowledge Park II are the stations, buses and shared autos are thin deeper in, and a slightly earlier evening slot avoids the Pari Chowk office jam.",
-    "Pi, Sigma & Sectors 36–37": "Sectors 36 and 37 and Swarn Nagri are mostly plotted homes on wide roads, while the Pi sectors and Sigma 3 have societies that will want your name with security first. DELTA 1 is the usual station with an auto for the last leg, and afternoon or early-evening slots dodge the Surajpur–Kasna road at its busiest.",
-    "Zeta & Eta": "Zeta 1 mixes society flats with villas and floors, Eta 1 is largely plotted houses and Eta 2 has newer societies with building work still going on. Public transport is limited and GNIDA Office station usually needs an auto after it, so tutors living in Zeta, Eta or the Delta sectors keep regular slots most easily.",
-    "Omicron, Mu & Xu": "Most homes are houses and villas on authority plots with no gate pass, though Omicron 1 is high-rise and the authority flat blocks in Mu 2 keep a register. Autos and buses rarely come inside some of these sectors, so a tutor with a two-wheeler, or one living in a neighbouring Omicron, Mu, Xu or Sigma sector, is the dependable fit."
+    "Greater Noida West": "Almost every home is a flat in a gated township or tower belt, so the family should approve you on the visitor app or gate register and share the tower and flat before the first class. With no working metro station, plan around Gaur Chowk and Ek Murti Chowk in the evening, and use the density: one tower can hold more than one student. In newer sectors, ask for a map pin and the right gate.",
+    "Alpha–Delta & Pari Chowk": "The original core is mostly houses and builder floors on authority plots, so there is no society gate, apart from the towers in Builders Area. ALPHA 1, DELTA 1, Pari Chowk and GNIDA Office stations make it the easiest zone to reach by Aqua Line plus e-rickshaw, but avoid crossing Pari Chowk at peak hour. Around Jagat Farm, ask where to park on the block's inner road; tutors living in the Alpha to Delta sectors avoid Pari Chowk altogether.",
+    "Omega, Chi & Phi": "Omega 1 and the Chi 2 and Chi 5 societies are gated, while Chi 3 and Phi 3 are mostly independent houses, so ask which entry applies before you go. Pari Chowk and Knowledge Park II are the stations, buses and shared autos are thin deeper in, and a slightly earlier evening slot avoids the Pari Chowk office jam. Give security your name, phone number and vehicle a day before the first class.",
+    "Pi, Sigma & Sectors 36–37": "Sectors 36 and 37 and Swarn Nagri are mostly plotted homes on wide roads, while the Pi sectors and Sigma 3 have societies that will want your name with security first. DELTA 1 is the usual station with an auto for the last leg, and afternoon or early-evening slots dodge the Surajpur–Kasna road at its busiest. In plotted streets still filling up, a map pin and a landmark help on the first visit.",
+    "Zeta & Eta": "Zeta 1 mixes society flats with villas and floors, Eta 1 is largely plotted houses and Eta 2 has newer societies with building work still going on. Public transport is limited and GNIDA Office station usually needs an auto after it, so tutors living in Zeta, Eta or the Delta sectors keep regular slots most easily. In Eta 2, plan your route and gate entry in advance, and pair specialist subjects with online classes.",
+    "Omicron, Mu & Xu": "Most homes are houses and villas on authority plots with no gate pass, though Omicron 1 is high-rise and the authority flat blocks in Mu 2 keep a register. Autos and buses rarely come inside some of these sectors, so a tutor with a two-wheeler, or one living in a neighbouring Omicron, Mu, Xu or Sigma sector, is the dependable fit. In plotted homes you come straight to the door."
   },
   "boards": "Greater Noida tutors teach CBSE most widely, then ICSE and ISC, with the IB Diploma and Cambridge IGCSE for a smaller group. Being in Uttar Pradesh, the city also has UPMSP students, who sit the High School exam at the end of Class 10 and the Intermediate at the end of Class 12. Families are asked for the board with every request, because a tutor's strengths rarely carry over cleanly from one to another. Check UP Board syllabuses and model papers on upmsp.edu.in and CBSE material on cbseacademic.nic.in, and read CISCE, IB and Cambridge documents on their own websites.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Uttar Pradesh Madhyamik Shiksha Parishad (UPMSP, UP Board)",
+      "site": "https://upmsp.edu.in/",
+      "classes": "High School (Class 10); Intermediate (Class 12)",
+      "note": "Greater Noida's UP Board students sit UPMSP's High School exam after Class 10 and the Intermediate after Class 12. Papers run three and a quarter hours with a reading period at the start, and High School subjects carry school-awarded marks beside the written paper. The board links NCERT textbooks; take every syllabus from upmsp.edu.in."
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "CBSE is the most widely followed board in Greater Noida, in Alpha's plotted homes and in Greater Noida West's towers alike. Build lessons on NCERT, rehearse with the cbseacademic.nic.in sample papers and marking schemes, and treat Class 9 Science and Class 12 Physics as separate entries on your profile.",
+      "page": "/cbse-home-tutor-greater-noida"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "CISCE's ICSE (Class 10) and ISC (Class 12) syllabi are broad and the answers long, with prescribed English texts and project work in each subject. Greater Noida tutors who teach them plan revision that keeps returning to early chapters. Find the regulations and specimen papers on cisce.org.",
+      "page": "/icse-home-tutor-greater-noida"
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "IB Diploma grades mix final exams with internal assessments, and IB Maths has two courses, Analysis and Approaches and Applications and Interpretation, each at SL or HL. A tutor may guide an IA or Extended Essay but never write it. Read the guides on ibo.org; online lessons reach families across the NCR.",
+      "page": "/ib-tutor-greater-noida"
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "Cambridge IGCSE turns on exam technique: command words, the Core or Extended tier, and plenty of past papers. A tutor along the Aqua Line can teach IGCSE students at home in the Alpha to Delta sectors and online further afield. Syllabuses are on cambridgeinternational.org, with Pearson's site for Edexcel.",
+      "page": "/igcse-tutor-greater-noida"
+    }
+  ],
+  "women": {
+    "intro": "Women tutors are welcome on NXTutors in Greater Noida, for home, online or hybrid teaching. You control where and when you work: a tutor in Alpha might keep to the Aqua Line stations and the plotted sectors around them, while one in Greater Noida West teaches within her own tower belt and takes other students online. Each tutor who joins goes through the same ID check, families meet you first at a free demo where we ask a parent to be present, and the safeguarding policy binds everyone. These are tools, not promises about anyone's conduct.",
+    "points": [
+      "Choose home, online or both, and switch modes whenever you need to.",
+      "List only the sectors you will travel to; if you would rather not cross Pari Chowk or Gaur Chowk late in the evening, leave those zones off.",
+      "Families see the slots you list as free, so add only the ones you want.",
+      "Meet each family first at a free demo, where we ask a parent to be at home.",
+      "In Greater Noida West and the Pi and Omega societies, ask to be approved on the visitor app or gate register so each visit is logged.",
+      "Keep fees, timings and messages with a parent, not the student's private number.",
+      "Teach young children in a shared room with an adult at home, and keep cameras on online.",
+      "If anything worries you, stop the classes and tell NXTutors under Safeguarding; in an emergency call 112 first."
+    ]
+  },
+  "story": [
+    "Begin with a one-time code to your phone or email, then add subjects, classes, boards and the Greater Noida sectors you can reach, from Alpha and Beta to the West's tower belt.",
+    "Upload a government photo ID, which the NXTutors team reviews before your profile goes live. One ID number fits one tutor account, and the check confirms identity, not background.",
+    "When it is approved, your profile appears with the Verified badge, listing your boards, travel sectors, the hours you keep free and the fee you set yourself.",
+    "A family in Omega or Greater Noida West sends a request. We shortlist two or three: tutors living there, then those who travel there, then the zone, the city and online tutors.",
+    "The family sees your fee before booking, and the first class is a free demo at their home where we ask a parent to be present, so you can judge the student and the trip.",
+    "Teach at home within your sectors, online for students anywhere, or both, for example a weekly visit in the West's towers with online classes on other weekdays."
+  ],
   "faqs": [
-    ["How are Greater Noida families matched to tutors?", "Each family sends one request with the class, board, subjects, sector or society and timings. NXTutors returns two or three tutors, nearest first: the same area, then tutors who travel there, then the zone, the city and finally online. The family sees each shortlisted tutor's fee and books a free demo class."],
-    ["Do I need to live in Greater Noida to get students here?", "No. Home requests favour tutors who live in or travel to the area, but online requests ignore location and match on subject, board, class and your free hours. A tutor anywhere can teach Greater Noida students online, and many families here pair a nearby tutor with an online specialist."],
-    ["Which zones should I list if I ride the Aqua Line?", "Alpha–Delta & Pari Chowk is the easiest, with ALPHA 1 and DELTA 1 inside it, followed by parts of Pi and Sigma and Omega 2 near Pari Chowk. For Greater Noida West, Zeta, Eta, Omicron and Xu, plan a two-wheeler or e-rickshaw leg before you add them."],
-    ["How does NXTutors check a new tutor?", "New tutors confirm a phone number or email through a one-time code and upload a government photo ID. The team reviews that ID before the profile goes live, and real tutors who pass receive a Verified badge. It is an ID check, not a police check; the How we verify tutors page (/how-we-verify-tutors) has the full process."],
-    ["Are tutor plans free, and who decides the fee?", "Tutor plans are paid, and you can compare what each includes on the Pricing page (/pricing). The fee for your lessons is set by you and shown to Greater Noida families before their free demo. Parents may switch tutor without paying anything extra, so regular, punctual classes matter."]
+    [
+      "How are Greater Noida families matched to tutors?",
+      "Each family sends one request with the class, board, subjects, sector or society and timings. NXTutors returns two or three tutors, nearest first: the same area, then tutors who travel there, then the zone, the city and finally online. The family sees each shortlisted tutor's fee and books a free demo class."
+    ],
+    [
+      "Do I need to live in Greater Noida to get students here?",
+      "No. Home requests favour tutors who live in or travel to the area, but online requests ignore location and rest on subject, board and class. A tutor anywhere can teach Greater Noida students online, and many families here pair a nearby tutor with an online specialist."
+    ],
+    [
+      "Which zones should I list if I ride the Aqua Line?",
+      "Alpha–Delta & Pari Chowk is the easiest, with ALPHA 1 and DELTA 1 inside it, followed by parts of Pi and Sigma and Omega 2 near Pari Chowk. For Greater Noida West, Zeta, Eta, Omicron and Xu, plan a two-wheeler or e-rickshaw leg before you add them."
+    ],
+    [
+      "How does NXTutors check a new tutor?",
+      "New tutors confirm a phone number or email through a one-time code and upload a government photo ID. The team reviews that ID before the profile goes live, and real tutors who pass receive a Verified badge. It is an ID check, not a police check; the How we verify tutors page (/how-we-verify-tutors) has the full process."
+    ],
+    [
+      "Are tutor plans free, and who decides the fee?",
+      "Tutor plans are paid, and you can compare what each includes on the Pricing page (/pricing). The fee for your lessons is set by you and shown to Greater Noida families before their free demo. Parents may switch tutor without paying anything extra, so regular, punctual classes matter."
+    ],
+    [
+      "Can women tutors in Greater Noida keep to their own sectors?",
+      "Yes. Your travel sectors are your choice, and home requests are matched to them, while your free hours tell families when you can teach, so you might teach at home only around the Aqua Line stations and take other students online. Every new family meets you first at a free demo where we ask a parent to be at home."
+    ],
+    [
+      "Which boards can I teach in Greater Noida?",
+      "Requests come for CBSE most widely, then ICSE and ISC, with the IB Diploma and Cambridge IGCSE for a smaller group, and for UPMSP's High School and Intermediate, since the city is in Uttar Pradesh. List each board and class you teach, and your medium for UP Board."
+    ],
+    [
+      "Is a hybrid week realistic in Greater Noida West?",
+      "Yes. With no working metro station and slow evening traffic at Gaur Chowk, a weekly home visit for written work plus online classes in between keeps the timetable steady. Choose both modes on your profile and agree the pattern with the parent after the demo."
+    ]
   ]
 }

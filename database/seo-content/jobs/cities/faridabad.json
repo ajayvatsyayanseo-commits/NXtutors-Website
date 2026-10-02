@@ -5,20 +5,109 @@
     "Most Faridabad students follow CBSE, ICSE and ISC have a loyal following, a smaller group study for the IB or Cambridge IGCSE, and because this is Haryana, the state board matters too. HBSE schools may teach in Hindi or English, so families state the medium with the class, and a tutor who teaches HBSE students in that language is the match. Neharpar families, and those in the outer southern sectors, often pair one home lesson with online sessions. A tutor living in south Delhi can also serve the northern sectors, since the Violet Line avoids the Mathura Road queues at the border."
   ],
   "zone_notes": {
-    "NIT & Old Faridabad": "Homes are houses and floors on old, look-alike lanes in numbered NIT parts, Jawahar Colony and Dabua, so ask for the NIT part, house number and a market landmark. Bata Chowk and Neelam Chowk Ajronda serve NIT and Old Faridabad station the old town, and the railway crossing and market roads jam in the evening, so after-school or weekend-morning slots work.",
-    "Central Sectors (Mathura Road)": "The HSVP grid is mostly houses and builder floors, with the lettered blocks and pockets of Sector 10 and a few gated buildings in Sectors 12, 17 and 21C. Stations sit inside or beside many sectors, from Neelam Chowk Ajronda to Escorts Mujesar, while Mathura Road, the Badkhal flyover and the Sector 15 and 16 markets slow down at the evening peak.",
-    "Sectors 28–31 & 37": "Each northern sector is close to a Violet Line stop, so south Delhi tutors can reach it as easily as Faridabad ones. Builder floors in Sector 28 often share one entrance with an intercom, so get the floor and bell, and societies in Sector 29 register you at the gate; roads towards Mathura Road fill at office hours.",
-    "Surajkund & Sainik Colony": "Sectors 43, 45 and 46 mix apartment complexes with guarded gates and plotted homes, while Sainik Colony and Sector 48 are mostly houses that need only an address. No station climbs the hill, so plan an auto from a Violet Line stop or a two-wheeler, and expect the Surajkund–Badkhal Road to be busy at school timings and during the February crafts mela.",
-    "Ballabhgarh & Southern Sectors": "Old-town lanes such as Adarsh Nagar and Sanjay Colony suit a two-wheeler rather than a car, while the group housing of Sectors 62 and 65 registers tutors at the gate. Sihi and the Ballabhgarh terminus, plus EMU trains, bring tutors from the north, and factory shift changes load Sohna Road and the roads near Sectors 22 and 57.",
-    "Greater Faridabad (Sectors 75–80)": "Almost every home here is in a society, so the family adds you to the visitor list or gate app and shares the tower and flat. Metro riders use Escorts Mujesar or Sihi for Sectors 75 to 77 and Bata Chowk for 78 to 80, then an auto across the canal, and the Sector 79 shopping street crowds in the evening.",
-    "Greater Faridabad (Sectors 81–89)": "Sectors 81 to 83 and 85 are mostly gated societies that expect a visitor pass, while Sector 84 runs in lettered blocks and Sector 87 has plots that need a block and house number. There is no metro inside Neharpar and Kheri Road clogs in the evening, so a tutor living here is easiest to schedule, or one home lesson plus online."
+    "NIT & Old Faridabad": "Homes are houses and floors on old, look-alike lanes in numbered NIT parts, Jawahar Colony and Dabua, so ask for the NIT part, house number and a market landmark. Bata Chowk and Neelam Chowk Ajronda serve NIT and Old Faridabad station the old town, and the railway crossing and market roads jam in the evening, so after-school or weekend-morning slots work. Add an online offer for senior board subjects.",
+    "Central Sectors (Mathura Road)": "The HSVP grid is mostly houses and builder floors, with the lettered blocks and pockets of Sector 10 and a few gated buildings in Sectors 12, 17 and 21C. Stations sit inside or beside many sectors, from Neelam Chowk Ajronda to Escorts Mujesar, while Mathura Road, the Badkhal flyover and the Sector 15 and 16 markets slow down at the evening peak. In Sector 10, ask for the block and pocket as well as the house number.",
+    "Sectors 28–31 & 37": "Each northern sector is close to a Violet Line stop, so south Delhi tutors can reach it as easily as Faridabad ones. Builder floors in Sector 28 often share one entrance with an intercom, so get the floor and bell, and societies in Sector 29 register you at the gate; roads towards Mathura Road fill at office hours. Sarai suits Sector 37, and the Sector 28 or Mewla Maharajpur stops suit 28 to 31.",
+    "Surajkund & Sainik Colony": "Sectors 43, 45 and 46 mix apartment complexes with guarded gates and plotted homes, while Sainik Colony and Sector 48 are mostly houses that need only an address. No station climbs the hill, so plan an auto from a Violet Line stop or a two-wheeler, and expect the Surajkund–Badkhal Road to be busy at school timings and during the February crafts mela. Switch to online on mela days.",
+    "Ballabhgarh & Southern Sectors": "Old-town lanes such as Adarsh Nagar and Sanjay Colony suit a two-wheeler rather than a car, while the group housing of Sectors 62 and 65 registers tutors at the gate. Sihi and the Ballabhgarh terminus, plus EMU trains, bring tutors from the north, and factory shift changes load Sohna Road and the roads near Sectors 22 and 57. Fix a weekend or early-evening slot with some buffer.",
+    "Greater Faridabad (Sectors 75–80)": "Almost every home here is in a society, so the family adds you to the visitor list or gate app and shares the tower and flat. Metro riders use Escorts Mujesar or Sihi for Sectors 75 to 77 and Bata Chowk for 78 to 80, then an auto across the canal, and the Sector 79 shopping street crowds in the evening. Allow extra time for the first visits and keep an online session as a fallback.",
+    "Greater Faridabad (Sectors 81–89)": "Sectors 81 to 83 and 85 are mostly gated societies that expect a visitor pass, while Sector 84 runs in lettered blocks and Sector 87 has plots that need a block and house number. There is no metro inside Neharpar and Kheri Road clogs in the evening, so a tutor living here is easiest to schedule, or one home lesson plus online. Call the gate before each early visit until the guards know you."
   },
   "boards": "Faridabad tutors are asked mainly for CBSE, then ICSE and ISC, with the IB Diploma and Cambridge IGCSE for a smaller group. The Board of School Education Haryana, usually called HBSE, conducts the state's Class 10 and Class 12 exams, its papers follow the board's own pattern, and schools may teach in Hindi or English, so name your teaching medium on the profile. Read HBSE notices and model papers on bseh.org.in, CBSE material on cbseacademic.nic.in and CISCE documents on cisce.org, and use the IB and Cambridge sites for international syllabuses and past papers.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Board of School Education Haryana (HBSE)",
+      "site": "https://bseh.org.in/",
+      "classes": "Class 10 (Secondary); Class 12 (Senior Secondary)",
+      "note": "HBSE conducts Haryana's Class 10 and Class 12 examinations and sets papers to its own pattern. Schools on the board may teach in Hindi or English, so families name the medium along with the class, and a tutor should explain terms the way the textbook does. Take model papers and notices only from bseh.org.in."
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "Most Faridabad students follow CBSE, from NIT's old lanes to the Greater Faridabad societies. Teach from the NCERT chapter, check answers against the sample papers and marking schemes on cbseacademic.nic.in, and give board-year students timed practice. The Violet Line also lets a south Delhi CBSE tutor reach the northern sectors.",
+      "page": "/cbse-home-tutor-faridabad"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "ICSE and ISC have a loyal following in Faridabad. CISCE's Class 10 and Class 12 papers cover a lot of ground and expect full, organised answers, with literature texts in English and project work in most subjects. Regulations and specimen papers are on cisce.org.",
+      "page": "/icse-home-tutor-faridabad"
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "A smaller group of Faridabad students take the IB Diploma, where internal assessment counts alongside the final papers and Maths comes as Analysis and Approaches or Applications and Interpretation, at SL or HL. Guide an IA but never write it. Subject guides are on ibo.org, and online sessions widen your reach.",
+      "page": "/ib-tutor-faridabad"
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "Cambridge IGCSE rewards technique: reading command words, choosing Core or Extended, and practising against mark schemes. For students in Surajkund or Greater Faridabad, a tutor who mixes one home visit with online sessions saves a long weekly drive. Syllabuses are on cambridgeinternational.org, and Pearson's site covers Edexcel.",
+      "page": "/igcse-tutor-faridabad"
+    }
+  ],
+  "women": {
+    "intro": "NXTutors is taking on women tutors in Faridabad for home, online and hybrid teaching. You decide the zones and hours: a tutor in the central sectors might stay along the Violet Line from Badkhal Mor to Escorts Mujesar, while Greater Faridabad families across the canal are taught online. Every tutor who joins passes through the same ID check, families meet you first at a free demo where we ask a parent to be present, and the safeguarding policy sets the rules for both sides. That is the platform's real framework, not a promise about any individual.",
+    "points": [
+      "Set home, online or hybrid on your profile and change it whenever you need.",
+      "Add only the zones you want; leave out areas across the canal or the railway crossing if you would rather not travel there in the evening.",
+      "Keep your free hours up to date so Faridabad parents can see which evenings you teach.",
+      "Meet each new family at a free demo, where we ask a parent to be at home, before agreeing a weekly slot.",
+      "In the Sector 75–89 societies and Charmwood Village, ask the family to add you to the visitor list or gate app so visits are recorded.",
+      "Arrange fees, timing and messages with a parent, not privately with the student.",
+      "Teach young children in a shared room with an adult present; keep cameras on for online lessons.",
+      "If anything concerns you, stop the classes and report it to NXTutors as Safeguarding; in an emergency, call 112 first."
+    ]
+  },
+  "story": [
+    "Join with a one-time code on your phone or email, then add your subjects, classes and boards, HBSE in Hindi or English medium included, and the Faridabad sectors you can reach.",
+    "Upload a government photo ID. Our team reviews it before your profile appears to families; one ID links to one tutor account, and the check is about identity, not a police record.",
+    "With the review done, your profile is live with the Verified badge, showing your boards, travel sectors from NIT to Neharpar, the hours you keep free and your fee.",
+    "A family in Sector 15 or Sector 85 sends a request. NXTutors shortlists two or three tutors: those living nearby, then those who travel there, then the zone, the city and online.",
+    "They see your fee before booking. Lesson one is a free demo at their home where we ask a parent to be present, so you can both judge the fit before fixing a weekly time.",
+    "Then teach at home in the sectors you chose, online for students anywhere, or both, for instance one visit across the canal each week and online classes on other days."
+  ],
   "faqs": [
-    ["How will Faridabad families find me?", "Families do not browse a job board. A parent sends one request with class, board, subjects, sector and timings, and NXTutors puts forward two or three tutors: first those living in that sector, then those travelling there, then the zone, Faridabad and online tutors. The family sees your fee and can book a free demo."],
-    ["Can I mix home classes in Faridabad with online teaching?", "Yes, and many tutors do. Choose home, online or both on your profile. Home requests depend on the sectors you add, while online requests are matched only on subject, board, class and free hours, so a Neharpar family or a student in another state can both reach you in the same week."],
-    ["Should I add Greater Faridabad if I live in the old city?", "Only if you can cross the canal on time every week. There is no metro in Neharpar, so Violet Line riders need an auto from Escorts Mujesar, Sihi, Bata Chowk or Neelam Chowk Ajronda, and Kheri Road clogs in the evening. A weekend home session with online classes between can make it workable."],
-    ["Do I need a police check to teach through NXTutors?", "No police check is involved. Tutors who join go through an ID check: a one-time code confirms your phone or email, and you upload a government photo ID that our team reviews before your profile goes live. Real tutors who pass carry a Verified badge; How we verify tutors (/how-we-verify-tutors) explains it."],
-    ["Are there charges for tutors?", "Yes. Tutor plans are paid, and the Pricing page (/pricing) sets out what each plan includes. What you charge per lesson is your decision, and Faridabad parents see that fee before the free demo. Because parents can switch tutor without paying, steady attendance and clear progress keep a family with you."]
+    [
+      "How will Faridabad families find me?",
+      "Families do not browse a job board. A parent sends one request with class, board, subjects, sector and timings, and NXTutors puts forward two or three tutors: first those living in that sector, then those travelling there, then the zone, Faridabad and online tutors. The family sees your fee and can book a free demo."
+    ],
+    [
+      "Can I mix home classes in Faridabad with online teaching?",
+      "Yes, and many tutors do. Choose home, online or both on your profile. Home requests depend on the sectors you add, while online requests are not tied to your address and rest on subject, board and class, so a Neharpar family or a student in another state can both reach you in the same week."
+    ],
+    [
+      "Should I add Greater Faridabad if I live in the old city?",
+      "Only if you can cross the canal on time every week. There is no metro in Neharpar, so Violet Line riders need an auto from Escorts Mujesar, Sihi, Bata Chowk or Neelam Chowk Ajronda, and Kheri Road clogs in the evening. A weekend home session with online classes between can make it workable."
+    ],
+    [
+      "Do I need a police check to teach through NXTutors?",
+      "No police check is involved. Tutors who join go through an ID check: a one-time code confirms your phone or email, and you upload a government photo ID that our team reviews before your profile goes live. Real tutors who pass carry a Verified badge; How we verify tutors (/how-we-verify-tutors) explains it."
+    ],
+    [
+      "Are there charges for tutors?",
+      "Yes. Tutor plans are paid, and the Pricing page (/pricing) sets out what each plan includes. What you charge per lesson is your decision, and Faridabad parents see that fee before the free demo. Because parents can switch tutor without paying, steady attendance and clear progress keep a family with you."
+    ],
+    [
+      "Can a woman tutor in Faridabad stay on one side of the canal?",
+      "Yes. Choose only the zones you want, such as the central sectors along Mathura Road, and home requests come from those zones, while the hours you set show parents when you are free. Families meet you at a free demo where we ask a parent to be at home, and Greater Faridabad students can be taught online if you prefer."
+    ],
+    [
+      "Which boards should a Faridabad tutor be ready for?",
+      "CBSE for most students, then ICSE and ISC, a smaller group on the IB Diploma or Cambridge IGCSE, and HBSE, Haryana's state board, taught in Hindi or English. List the boards, classes and medium you actually teach, rather than a subject on its own."
+    ],
+    [
+      "Can I teach Faridabad students if I live in south Delhi?",
+      "Yes. The Violet Line runs into the northern and central sectors, so a south Delhi tutor can add Sectors 28 to 31 and 37 or the Mathura Road sectors as travel areas. Matching runs nearest first, so families there see you alongside tutors who live locally."
+    ]
   ]
 }

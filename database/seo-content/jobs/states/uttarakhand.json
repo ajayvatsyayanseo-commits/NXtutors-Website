@@ -5,6 +5,29 @@
     "site": "https://ubse.uk.gov.in",
     "summary": "The Uttarakhand Board of School Education, at Ramnagar in Nainital district, conducts the High School (Class 10) and Intermediate (Class 12) examinations. It grew out of a regional office of the Uttar Pradesh board set up at Ramnagar in 1996, and the present council was constituted by a government order of 11 December 2008. Its site publishes syllabi, paper designs, question banks, model answer sheets, and improvement and scrutiny processes. A Class 10 or 12 candidate takes the board examination in the subjects passed in Class 9 or 11."
   },
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Uttarakhand Board of School Education (Uttarakhand Vidyalayi Shiksha Parishad), Ramnagar",
+      "site": "https://ubse.uk.gov.in",
+      "classes": "High School (Class 10), Intermediate (Class 12)",
+      "note": "The board, at Ramnagar in Nainital district, grew out of a 1996 regional office of the UP board; the present council dates from a government order of 11 December 2008. It conducts High School and Intermediate examinations and publishes syllabi, paper designs, question banks and model answer sheets. A candidate sits the subjects passed in Class 9 or 11."
+    },
+    {
+      "key": "cbse",
+      "name": "Central Board of Secondary Education (CBSE)",
+      "site": "https://www.cbse.gov.in",
+      "classes": "Classes 1–12; board examinations in Classes 10 and 12",
+      "note": "An Uttarakhand tutor with CBSE experience can show it next to state board classes, labelled separately. Plan any CBSE demo from the curriculum, sample papers and marking schemes for the current session on cbseacademic.nic.in, since these change and older material may mislead."
+    },
+    {
+      "key": "cisce",
+      "name": "Council for the Indian School Certificate Examinations (CISCE)",
+      "site": "https://cisce.org",
+      "classes": "ICSE (Class 10), ISC (Class 12)",
+      "note": "ICSE or ISC teaching, where you have done it, should sit on its own line. The council arranges its syllabi and marks its papers in its own way, distinct from the Uttarakhand board and CBSE; its regulations and specimen papers on cisce.org are what to read before a demo."
+    }
+  ],
   "intro": [
     "NXTutors does not yet have a city tuition-jobs page anywhere in Uttarakhand, so this state page is where tutors here start, whether you live in Dehradun, Haridwar, Roorkee, Haldwani or a hill town. Write your town and the localities you can reach. When a family asks for home lessons, the request goes to the nearest suitable tutors first, then further out, so a clear base is what puts you in line for a student nearby. Online lessons are not tied to place at all and are matched by subject, class and board, so you can start teaching before a nearby family has asked.",
     "Uttarakhand students may be on the state board at Ramnagar, CBSE, ICSE or another board, in Hindi or English medium. List every board and medium you teach. The board's own site carries its High School and Intermediate syllabi, paper designs and question banks, which are the right place to check before a demo. Each request ends with two or three tutors for the parent to compare; your fee, set by you, is visible before a free first class, and families can switch later. Intermediate tutors should name their stream and subjects too."
@@ -12,52 +35,72 @@
   "towns": [
     {
       "name": "Dehradun",
-      "note": "Nearby families in Dehradun see the closest tutors first."
+      "note": "Dehradun tutors register here because there is no Uttarakhand city page yet. Type the colony you live in exactly; that is where home matching starts, before it widens to the rest of the city. Video lessons can carry your profile to other states."
     },
     {
       "name": "Haridwar",
-      "note": "Home lessons in Haridwar go first to tutors nearby."
+      "note": "Haridwar tutors willing to go into Roorkee, or the other way round, can add the exact localities they mean. A list built from real place names keeps the home requests you are offered within reach after the school day."
     },
     {
       "name": "Roorkee",
-      "note": "If you are based in Roorkee, add online hours too."
+      "note": "Students at college in Roorkee who also tutor should list a timetable they can hold through their own exams. Parents see those hours next to your fee when they compare tutors, and a steady slot matters more to them than a long one."
     },
     {
       "name": "Haldwani",
-      "note": "Haldwani tutors who also cover Kathgodam can list Haldwani and Kathgodam."
+      "note": "Haldwani tutors teaching Intermediate subjects can name them precisely, physics, chemistry, maths, biology or commerce. Note too that a candidate takes the board examination in the subjects passed in Class 11, so a parent may ask about continuity."
     },
     {
       "name": "Rudrapur",
-      "note": "Tutors who live in Rudrapur can mark nearby localities."
+      "note": "Rudrapur tutors with Intermediate commerce, accountancy, business studies or economics, can name each subject and the medium. The board's question banks and model answer sheets are a sound base for a demo with a new student."
     },
     {
       "name": "Kashipur",
-      "note": "Please list the Kashipur localities you can reach."
+      "note": "Kashipur tutors who use the board's question banks and model answer sheets can say so. Parents of High School students often want to see how answers should be set out, and a demo built on those papers shows it."
     },
     {
       "name": "Rishikesh",
-      "note": "Online students can choose a Rishikesh tutor from anywhere."
+      "note": "Rishikesh tutors who teach English or Hindi can describe what a lesson focuses on, reading, grammar or writing, and for which classes. A family choosing a language tutor wants to know the method, and a short, specific note helps."
     },
     {
       "name": "Nainital",
-      "note": "Write down your Nainital neighbourhood; nearby requests come first."
+      "note": "Nainital tutors can combine a few home students close by with online students further away. Show both modes with their hours, and agree with each parent at the demo how lessons will run in weeks when travel is harder."
     },
     {
       "name": "Almora",
-      "note": "Keep both options open from Almora: home and online."
+      "note": "Almora tutors whose strength is Classes 1 to 5 should keep that range separate from High School classes. Parents of small children want something quite different from a board-year family, and the separate entry makes the shortlist more accurate."
     },
     {
       "name": "Pithoragarh",
-      "note": "A tutor living in Pithoragarh can teach online across India."
+      "note": "From Pithoragarh, online teaching lets a tutor reach students across Uttarakhand and beyond. Mark online, list the classes and boards you cover, and keep home visits to the places you can reach comfortably."
     },
     {
       "name": "Kotdwar",
-      "note": "Hours you can give in Kotdwar belong on your profile."
+      "note": "Kotdwar tutors should write the precise locality where they live before adding anywhere else. Home matching widens step by step from the family, nearest first, so an exact base is what makes nearby parents see you."
     },
     {
       "name": "Ramnagar",
-      "note": "Ramnagar hosts the Uttarakhand board's office; list your Ramnagar locality."
+      "note": "Ramnagar is where the state board has its office. Tutors here can point to state board experience, check paper designs on ubse.uk.gov.in before each demo, and add CBSE or ICSE classes only if they have taught them."
     }
+  ],
+  "women": {
+    "intro": "Women who tutor in Uttarakhand, from Dehradun and Haldwani to Almora and Pithoragarh, can join NXTutors and set their own pattern. Some will visit homes close by, some will teach only online, and some will do both; all three are possible. You list the localities you are happy to reach and the hours you keep. Every tutor who joins confirms a phone or email by one-time code and uploads a government photo ID that our team reviews before anything is shown; real tutors who pass carry a Verified badge. We ask a parent to be at home for each first lesson.",
+    "points": [
+      "Three ways to teach: home, online or a mix; choose and change freely.",
+      "Home requests stay inside the localities you list.",
+      "Your hours, including weekends only, are shown to parents.",
+      "A parent is at home whenever you meet a new family.",
+      "Lessons take place in a shared room with an adult in the house.",
+      "Fees and timings are agreed with the parent.",
+      "Any worry at all: stop the lessons and tell us through WhatsApp or the contact page."
+    ]
+  },
+  "story": [
+    "From Dehradun, Haldwani or a hill town, sign up with a one-time code to your phone or email and add your locality, the places you will reach and whether you teach online.",
+    "From your dashboard, upload a government photo ID. Our team checks it while the profile stays pending; no ID number can be linked to a second tutor account.",
+    "From the moment it is cleared, your profile shows the Verified badge, listing state board, CBSE or ICSE classes, subjects, medium and your own fee.",
+    "From a family near you comes a request naming class, board and subject. Two or three tutors are shortlisted, nearest first, then further out, then online.",
+    "From the first lesson, a free demo for the family who have seen your fee, teach the chapter the student is doing in school that week.",
+    "From then on, if they continue, lessons run at home, online or both on days agreed with the parent; keep your localities and hours current."
   ],
   "faqs": [
     [
@@ -79,6 +122,18 @@
     [
       "Are tutor plans paid?",
       "Yes. /pricing lists each tutor plan and what it includes. Your lesson fee is separate and up to you."
+    ],
+    [
+      "Can a woman tutor in Uttarakhand teach only online?",
+      "Yes. Online-only profiles are matched on subject, class and board, not location. If you add home lessons later, only the localities you list are used, and every new family meets you first at a demo where we ask a parent to be at home."
+    ],
+    [
+      "Which boards should an Uttarakhand tutor list?",
+      "The state board, with High School or Intermediate subjects, and CBSE, ICSE or ISC only if you have taught them. Note the medium you teach in. Every request names the family's board, and shortlists follow it."
+    ],
+    [
+      "Can I teach some students at home and others online?",
+      "Yes. Tick both modes, give your home localities and add online hours if they differ. A home student can also move to online lessons in weeks when travel is difficult, if the parent agrees."
     ]
   ]
 }

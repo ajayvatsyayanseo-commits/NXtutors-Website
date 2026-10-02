@@ -5,17 +5,79 @@
     "For a tutor living in Kolkata, home and online lessons can go together. A request from Salt Lake is matched first with tutors in Salt Lake, then the rest of that zone, then the city, then online tutors, and the family sees two or three of them with their fees before a free first demo. Switching later costs the family nothing. If you live near a Blue or Green Line station you can serve a long stretch of the city by metro, and during the Puja weeks, when the heritage lanes and Gariahat fill up, moving some lessons online keeps students on track."
   ],
   "zone_notes": {
-    "Behala & New Alipore": "The Purple Line along Diamond Harbour Road, from Joka through Behala Chowrasta to Majerhat, lets a tutor reach most of Behala with a short auto at the end. New Alipore is organised by lettered blocks and has its own suburban stations, while Diamond Harbour Road is slow in the evening peak for anyone coming by road.",
-    "Ballygunge, Gariahat & Alipore": "Netaji Bhavan, Jatin Das Park, Kalighat and Rabindra Sarobar on the Blue Line serve most homes, and Ballygunge, Dhakuria and Lake Gardens are on the Sealdah South lines. Older houses need the right floor and bell, buildings with a staffed gate want your name in advance, and the Gariahat crossing is busiest at weekends and before Durga Puja.",
-    "Tollygunge, Jadavpur & Garia": "The Blue Line runs the length of this zone, from Mahanayak Uttam Kumar for Tollygunge to Kavi Nazrul for Garia, and Jadavpur, Baghajatin and Garia also have suburban stations. Homes are mostly family houses in the lanes with straight-to-the-door visits, but the 8B crossing in Jadavpur gets crowded at college and office hours.",
+    "Behala & New Alipore": "The Purple Line along Diamond Harbour Road, from Joka through Behala Chowrasta to Majerhat, lets a tutor reach most of Behala with a short auto at the end. New Alipore is organised by lettered blocks and has its own suburban stations, while Diamond Harbour Road is slow in the evening peak for anyone coming by road. Ask for the Purple Line stop and plan the auto from it; a road trip suits afternoons or weekend mornings.",
+    "Ballygunge, Gariahat & Alipore": "Netaji Bhavan, Jatin Das Park, Kalighat and Rabindra Sarobar on the Blue Line serve most homes, and Ballygunge, Dhakuria and Lake Gardens are on the Sealdah South lines. Older houses need the right floor and bell, buildings with a staffed gate want your name in advance, and the Gariahat crossing is busiest at weekends and before Durga Puja. A weekday afternoon or online session keeps the routine going in Puja weeks.",
+    "Tollygunge, Jadavpur & Garia": "The Blue Line runs the length of this zone, from Mahanayak Uttam Kumar for Tollygunge to Kavi Nazrul for Garia, and Jadavpur, Baghajatin and Garia also have suburban stations. Homes are mostly family houses in the lanes with straight-to-the-door visits, but the 8B crossing in Jadavpur gets crowded at college and office hours. Weekend mornings are the calmest slot, and a tutor on the metro keeps time better than one driving.",
     "Kasba & EM Bypass South": "The Orange Line along the bypass, from Kavi Subhash to Beleghata, is the newest way in, and Ballygunge Junction, Jadavpur and Baghajatin serve the western edge. Many families near the bypass live in complexes that register visitors at the gate, so ask for a standing entry, while Patuli homes are found by block and plot number.",
-    "Salt Lake": "Salt Lake is mostly independent houses on plots in lettered blocks, so there is usually no gate register, and the block letter, house number and nearest avenue are how tutors find the door. The Green Line runs from Sector V through Central Park and City Centre to Sealdah and Howrah, and roads towards Sector V fill at office hours.",
-    "New Town & Rajarhat": "Almost every home here is in a gated complex, so the security desk will want your name, phone number, tower and flat before the first class. The Orange Line stations in New Town are still under construction, so a tutor already living in New Town, Rajarhat or Baguiati, or one who takes the Green Line to Sector V and a cab, is the practical match.",
-    "Lake Town, Dum Dum & Baguiati": "Dum Dum is among the easiest places in the city to reach by train or metro, with the Blue and Yellow Lines and the Sealdah suburban lines, while Baguiati has no metro station of its own yet. Addresses in Baguiati and Kestopur spread over several sub-localities off VIP Road, which also carries airport traffic in the evening peak.",
-    "North Kolkata": "Public transport beats a car here: Shyambazar, Sovabazar Sutanuti, Girish Park and Belgachia are on the Blue Line, and the last steps are often on foot through narrow lanes. Most visits are to a family house or small building at street level with no gate formality, but Puja season brings crowds into the heritage lanes.",
-    "Howrah": "The Green Line now runs under the Hooghly to Howrah and Howrah Maidan, so a tutor on that line can cover Shibpur and Salkia, and ferries cross from the Golabari and Bandhaghat ghats. Santragachi's gated complexes have gate rules to share in advance, and the Kona Expressway is slow at office hours."
+    "Salt Lake": "Salt Lake is mostly independent houses on plots in lettered blocks, so there is usually no gate register, and the block letter, house number and nearest avenue are how tutors find the door. The Green Line runs from Sector V through Central Park and City Centre to Sealdah and Howrah, and roads towards Sector V fill at office hours. Just ask which bell to ring, and prefer early evenings or weekends.",
+    "New Town & Rajarhat": "Almost every home here is in a gated complex, so the security desk will want your name, phone number, tower and flat before the first class. The Orange Line stations in New Town are still under construction, so a tutor already living in New Town, Rajarhat or Baguiati, or one who takes the Green Line to Sector V and a cab, is the practical match. Use online sessions for subjects with few local tutors.",
+    "Lake Town, Dum Dum & Baguiati": "Dum Dum is among the easiest places in the city to reach by train or metro, with the Blue and Yellow Lines and the Sealdah suburban lines, while Baguiati has no metro station of its own yet. Addresses in Baguiati and Kestopur spread over several sub-localities off VIP Road, which also carries airport traffic in the evening peak. Leave a margin around the evening peak, and ask for an exact landmark off VIP Road.",
+    "North Kolkata": "Public transport beats a car here: Shyambazar, Sovabazar Sutanuti, Girish Park and Belgachia are on the Blue Line, and the last steps are often on foot through narrow lanes. Most visits are to a family house or small building at street level with no gate formality, but Puja season brings crowds into the heritage lanes. Mid-afternoon or later evening avoids the Shyambazar crossing, and lessons can move earlier or online in Puja weeks.",
+    "Howrah": "The Green Line now runs under the Hooghly to Howrah and Howrah Maidan, so a tutor on that line can cover Shibpur and Salkia, and ferries cross from the Golabari and Bandhaghat ghats. Santragachi's gated complexes have gate rules to share in advance, and the Kona Expressway is slow at office hours. Ask for an exact lane landmark in Salkia and old Shibpur before the first visit."
   },
   "boards": "Kolkata tutors teach ICSE and ISC, CBSE, the West Bengal Madhyamik and Higher Secondary, and some IB and IGCSE. For Madhyamik, read the examination routine and the annual academic calendar on the WBBSE site; for Higher Secondary, the semester rules, question pattern and subject sets on the WBCHSE site. CBSE papers are explained on the CBSE academic site and ICSE and ISC on the CISCE site. If you also teach at a WBBSE-recognised school, read the board's published rules on private tuition by its teachers before taking students.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "West Bengal Board of Secondary Education (WBBSE) and West Bengal Council of Higher Secondary Education (WBCHSE)",
+      "site": "https://wbbse.wb.gov.in/",
+      "classes": "Madhyamik (Class 10); Higher Secondary (Classes 11–12)",
+      "note": "WBBSE runs the school years to Class 10 and the Madhyamik Pariksha; WBCHSE runs Classes 11 and 12 and now examines Higher Secondary in four semesters, two of them entirely multiple choice. A Bengali-medium student writes science with the textbook's Bengali terms, so practise in the exam's medium. Check wbchse.wb.gov.in as well.",
+      "page": "/west-bengal-board-tutor-kolkata"
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "CBSE is widely taken in Kolkata, alongside the strong CISCE following. Build lessons on NCERT, test against the sample papers and marking schemes on cbseacademic.nic.in, and close Class 9 gaps early, because the Class 10 board year leans on them. Metro lines make cross-city CBSE work practical for tutors without a car.",
+      "page": "/cbse-home-tutor-kolkata"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "CISCE's ICSE and ISC have a long and strong following here. The ICSE Class 10 Mathematics paper is three hours and 80 marks with 20 marks of internal assessment, while ISC Mathematics pairs an 80-mark theory paper with 20 marks of project work, and in Class 12 a visiting examiner holds the viva.",
+      "page": "/icse-home-tutor-kolkata"
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "A smaller group of Kolkata students follow the IB Diploma, which blends final exams with internal assessment; Mathematics comes as Analysis and Approaches or Applications and Interpretation, at SL or HL. Guide an IA or Extended Essay, never write it, and prepare from the subject guides on ibo.org.",
+      "page": "/ib-tutor-kolkata"
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "Cambridge IGCSE rewards command words, tier choice and past-paper practice, and some students take the Pearson Edexcel version instead, so confirm which before the demo. Students moving from IGCSE into the state's Higher Secondary or ISC may need help adjusting; plan any bridging work from cambridgeinternational.org.",
+      "page": "/igcse-tutor-kolkata"
+    }
+  ],
+  "women": {
+    "intro": "Across Kolkata and Howrah, NXTutors is open to women tutors teaching at home, online or both. Where you go and when is up to you: a Behala tutor might keep to the Purple Line, a Garia tutor to the Blue Line stations, and New Town families can learn from either on screen. A single ID check covers every tutor before a profile goes live, parents remain at home for the first demo, and our safeguarding policy sets the same expectations for tutors and families alike.",
+    "points": [
+      "Choose home, online or hybrid, and change it when your timetable does.",
+      "Add only zones you want to reach; you can keep evening lessons near your own metro or suburban line.",
+      "Set the hours you keep free so families see when you teach; add late slots only if you want them.",
+      "Every new family meets you first at a free demo where we ask a parent to be at home.",
+      "In New Town, Santragachi and EM Bypass complexes, ask the family to register you with security so each visit is logged.",
+      "Agree fees, timings and messages with a parent; for young children, teach in a shared room with an adult at home.",
+      "If something worries you, stop the classes and tell NXTutors, marked Safeguarding; in an emergency call 112 first."
+    ]
+  },
+  "story": [
+    "Sign up with a one-time code on your phone or email, then add subjects, classes and boards, from ICSE and ISC to Madhyamik in Bengali or English, and the Kolkata zones you can reach.",
+    "Upload a government photo ID. Our team reviews it before your profile can be seen, and each ID number can be linked to only one account. It is an identity check only.",
+    "When reviewed, your profile goes live with the Verified badge, listing your boards and medium, the zones from Howrah to Salt Lake you cover, your free hours and your fee.",
+    "Suppose a Jadavpur family asks for a tutor. They are offered two or three: people from their para first, then those who travel in, the wider zone, the rest of the city, then online.",
+    "Your fee is on view before they book, and the opening class is a free demo in their home with a parent around, which lets you size up the student and the journey.",
+    "Teach at homes along your metro or suburban line, online for students across Bengal and India, or both, such as a weekend visit with online classes on weekdays."
+  ],
   "faqs": [
     [
       "How do requests from Kolkata families come to me?",
@@ -36,6 +98,18 @@
     [
       "What plans do tutors use?",
       "The tutor plans and what each one includes are listed on /pricing; check there before you choose. Your lesson fee is set by you and shown to families before their free first demo, and families who later prefer another tutor can switch without paying for the change, so the fee and the plan are separate choices."
+    ],
+    [
+      "Can a woman tutor in Kolkata keep home lessons near her metro line?",
+      "Yes. You choose the zones you travel to, and home requests follow those zones, while your listed hours show families when you are free, so you could take home lessons only near Blue Line stations from Tollygunge to Garia and teach other families online. Each new family meets you first at a free demo where we ask a parent to be at home."
+    ],
+    [
+      "Which boards will Kolkata families ask me to teach?",
+      "ICSE and ISC, which have a long and strong following, CBSE, the West Bengal Madhyamik and Higher Secondary, and for a smaller group the IB or Cambridge IGCSE. Teaching language matters for the state boards, so list your boards, classes and medium on your profile."
+    ],
+    [
+      "Is hybrid tuition practical for New Town families?",
+      "Yes, and it can be the simplest plan while the Orange Line stations there are still under construction. A weekly home lesson for new chapters and written practice, with online classes in between, cuts the cross-city trips. Choose both modes and agree the mix after the demo."
     ]
   ]
 }

@@ -5,6 +5,43 @@
     "site": "https://asseb.in",
     "summary": "The Assam State School Education Board was formed under the Assam State School Education Board Act, 2024, by merging the Board of Secondary Education, Assam (SEBA) and the Assam Higher Secondary Education Council (AHSEC). It came into existence on 13 September 2024. The former SEBA now works as ASSEB Division I and the former AHSEC as Division II. The board says its site will change over time, and for now it links to each division's own home page for notices."
   },
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Assam State School Education Board (ASSEB)",
+      "site": "https://asseb.in",
+      "classes": "Division I (former SEBA, secondary); Division II (former AHSEC, higher secondary)",
+      "note": "ASSEB came into existence on 13 September 2024 under the Assam State School Education Board Act, 2024, merging SEBA and AHSEC. The former SEBA now works as Division I and the former AHSEC as Division II. The board says its site will change over time and, for now, links to each division's home page for notices, so check there before a demo."
+    },
+    {
+      "key": "cbse",
+      "name": "Central Board of Secondary Education (CBSE)",
+      "site": "https://www.cbse.gov.in",
+      "classes": "Classes 1–12; board examinations in Classes 10 and 12",
+      "note": "Our Guwahati page lists CBSE among the boards families there follow. For a tutor in Assam, that means reading the current curriculum and sample papers on cbseacademic.nic.in rather than an older year's, and naming each CBSE class and subject you teach so a request asking for CBSE is matched to you."
+    },
+    {
+      "key": "cisce",
+      "name": "Council for the Indian School Certificate Examinations (CISCE)",
+      "site": "https://cisce.org",
+      "classes": "ICSE (Class 10), ISC (Class 12)",
+      "note": "ICSE and ISC students also appear on our Guwahati page. Tutors who know these courses should list them apart from ASSEB and CBSE work: ICSE covers more ground in several subjects and expects full working, and ISC in Classes 11 and 12 has its own papers. The council publishes its regulations on cisce.org."
+    },
+    {
+      "key": "ib",
+      "name": "International Baccalaureate (IB)",
+      "site": "https://www.ibo.org",
+      "classes": "Primary Years, Middle Years and Diploma Programmes",
+      "note": "Our Guwahati page notes that families following the IB usually find their specialist online, since such tutors are spread across India. An IB tutor based in Assam can therefore mark online teaching and list the Diploma subjects and levels, Standard or Higher, that they have taught."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge IGCSE",
+      "site": "https://www.cambridgeinternational.org",
+      "classes": "IGCSE, usually around Classes 9–10",
+      "note": "Cambridge IGCSE families in Assam, our Guwahati page says, mostly look online for a specialist. If you have taught IGCSE, say which subjects and whether you know the Core and Extended routes, and prepare demos with past papers and their mark schemes, which carry most of the weight in preparation."
+    }
+  ],
   "intro": [
     "Guwahati is the one Assam city with its own NXTutors tuition-jobs page, split into zones so a tutor can mark the parts of the city they are willing to reach. Outside Guwahati, the picture is different: a tutor in Silchar, Dibrugarh or Jorhat joins with their town named, and home lessons begin only when a family close by sends a request that fits. Meanwhile the same profile can take online lessons, which come from parents anywhere in India and do not depend on where you live. You can run both, keeping some evenings for nearby homes and fitting online classes around them.",
     "The 2024 merger matters for anyone teaching state-board students: what used to be SEBA and AHSEC are now two divisions of one board, so check each division's page for the current syllabus before a demo. On your profile, list every board you can teach, whether that is the Assam board, CBSE, ICSE or something else, plus classes, subjects and medium. When a parent asks, NXTutors shortlists two or three tutors, nearest first and then wider, and the family sees your fee before a free first class. Mention Assamese, Bengali or English medium where it applies."
@@ -12,52 +49,72 @@
   "towns": [
     {
       "name": "Silchar",
-      "note": "Silchar sits in the Barak Valley; list the Silchar localities you cover."
+      "note": "Silchar tutors can teach Barak Valley students at home and reach the rest of India online. Name the localities you will visit after school hours, and say which ASSEB division you prepare students for, secondary or higher secondary, so requests arrive at the right level."
     },
     {
       "name": "Dibrugarh",
-      "note": "Keep both options open from Dibrugarh: home and online."
+      "note": "If you are based in Dibrugarh, decide first whether home classes, online classes or both suit your week. Home requests go to the nearest suitable tutors, while online ones are matched on subject, class and board. Either way, list the hours you can keep each week."
     },
     {
       "name": "Jorhat",
-      "note": "Say how far beyond Jorhat you will travel for lessons."
+      "note": "Jorhat has no tuition-jobs page of its own, but tutors here join through this state page. Add your neighbourhood so a nearby family can be offered your profile, and add CBSE or ICSE classes if you have taught them alongside the state board."
     },
     {
       "name": "Tezpur",
-      "note": "Students outside Tezpur can still book you online."
+      "note": "College students in Tezpur who tutor alongside their studies can list only evening or weekend slots. Families see those hours before the demo, so nobody is surprised later. Mention the subjects you are strongest in first, not every subject you once studied."
     },
     {
       "name": "Nagaon",
-      "note": "Teaching from home in Nagaon? Online classes work too."
+      "note": "Nagaon teachers moving from the old SEBA and AHSEC names to ASSEB can mention both on a profile for now, because parents may still use the older names. Check the division sites for current notices before a demo."
     },
     {
       "name": "Tinsukia",
-      "note": "A tutor living in Tinsukia can teach online across India."
+      "note": "Tinsukia tutors who want students beyond the town should switch on online teaching. You will then be shortlisted wherever the class, board and subject fit, while home requests still reach you first from families in your own part of Tinsukia."
     },
     {
       "name": "Bongaigaon",
-      "note": "Put your strongest subjects for Bongaigaon students first."
+      "note": "A Bongaigaon tutor with primary experience can say so clearly. Parents of young children usually want reading, number work and steady homework habits, and a profile that names Classes 1 to 5 separately makes it easier to place you with those families."
     },
     {
       "name": "Dhubri",
-      "note": "Mark which areas near Dhubri you will visit."
+      "note": "Dhubri tutors who teach English as a subject, grammar, comprehension and writing, can describe how they work on each, since parents of secondary students may ask about written answers. Name the classes and the ASSEB division you prepare students for, and add online hours if you want students further afield."
     },
     {
       "name": "Sivasagar",
-      "note": "Tutors who live in Sivasagar can mark nearby localities."
+      "note": "In Sivasagar, tutors who teach in more than one medium should list each against the subjects concerned. A parent's request names the board and often the medium, and matching on both keeps you away from requests you cannot teach comfortably."
     },
     {
       "name": "North Lakhimpur",
-      "note": "Hours you can give in North Lakhimpur belong on your profile."
+      "note": "North Lakhimpur tutors working with senior students can list the higher secondary subjects they teach under Division II. Specialist senior subjects are often easier to cover online, so mark online hours if you are willing to teach students further afield."
     },
     {
       "name": "Goalpara",
-      "note": "Weekend or weekday slots in Goalpara? You choose them."
+      "note": "From Goalpara you can set a hybrid pattern: home lessons for students close by and online sessions for revision or for families elsewhere. Agree that split with each parent at the demo, and record it in your timetable before regular classes start."
     },
     {
       "name": "Karimganj",
-      "note": "Online lessons let Karimganj tutors teach in other states."
+      "note": "Karimganj tutors should give the exact locality, not just the town, since matching for home lessons begins with whoever lives nearest. If you also teach online, add the board and class range you cover so out-of-town requests fit your experience."
     }
+  ],
+  "women": {
+    "intro": "From Silchar to Tinsukia, women who tutor in Assam can join NXTutors and keep full say over how they work. Home, online or hybrid is your choice; so are the localities you visit and the hours you list. Before any profile goes live, the tutor confirms a phone or email with a one-time code and uploads a government photo ID for our team to review. Real tutors who pass carry a Verified badge. You meet each family at a demo class where we ask a parent to be present, and you may stop at any point and tell us.",
+    "points": [
+      "Choose home, online or hybrid teaching on your profile.",
+      "Name the exact localities you will visit, and no others.",
+      "Keep the timings you want; families see them before the demo.",
+      "The first class is a demo, where we ask a parent to be at home.",
+      "In a gated complex, ask to be added to the visitor register.",
+      "Arrange classes and fees with the parent, not with the child.",
+      "Stop the classes whenever you need to and let us know."
+    ]
+  },
+  "story": [
+    "Start on WhatsApp or the sign-up form and confirm your phone or email with a one-time code. Add your Assam town and the neighbourhoods you can reach, or choose online only.",
+    "From your dashboard, upload a government photo ID with its front and back. A team member checks it against your profile before anything is shown, and one ID can only belong to one account.",
+    "After the review, your profile is live and carries the Verified badge. It lists the ASSEB division, CBSE or ICSE classes you teach, your subjects, your medium and the fee you have chosen.",
+    "A parent near you asks for a tutor and names the class, board and subject. Two or three tutors are shortlisted, nearest first, then further out, then online.",
+    "Your first class with the family is a free demo for them, and your fee is already on the profile they saw. Teach the topic the student is on in school.",
+    "If the family continues, classes run at home, online or both, on days agreed with the parent. Keep your hours and localities up to date so new requests stay a good fit."
   ],
   "faqs": [
     [
@@ -79,6 +136,18 @@
     [
       "Is there a cost for tutors?",
       "Tutor plans are paid, and each plan lists what it includes on our pricing page (/pricing). Your lesson fee is separate and is yours to set; parents see it before they book the demo."
+    ],
+    [
+      "Can a woman tutor in Assam teach only online?",
+      "Yes. Choose online only when you set up your profile, and requests reach you by subject, class and board rather than by where you live. You can add home classes later and limit them to localities you choose. Every demo takes place where we ask a parent to be present."
+    ],
+    [
+      "Which boards should an Assam tutor list?",
+      "List ASSEB with the division you teach, and add CBSE, ICSE, ISC, IB or IGCSE only if you have taught them. Our Guwahati page notes that IB and IGCSE families there usually find specialists online, so mark online teaching if those courses are your strength."
+    ],
+    [
+      "Can I combine home and online students?",
+      "Yes, that is a hybrid profile. Mark both home and online, list the localities you will visit, and give online hours separately if they differ. With one student you might teach at home on weekdays and online before tests; agree that with the parent at the demo."
     ]
   ]
 }

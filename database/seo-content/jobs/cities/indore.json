@@ -5,17 +5,106 @@
     "Indore families study under several boards: CBSE across the city, the state's MP Board, CISCE's ICSE and ISC, and a smaller group following the IB or Cambridge IGCSE. Board, class and medium are matched together, and for MP Board students a tutor who can move between Hindi and English terms is often worth asking for. Palasia is an education hub, so many students want school support fitted around their coaching timetable. In Rau, Silicon City, Bicholi Mardana and the newer Super Corridor townships fewer tutors live close by, so online sessions for specialist subjects work alongside a nearby home tutor."
   ],
   "zone_notes": {
-    "Vijay Nagar & AB Road": "This is the zone the metro serves, from Vijay Nagar Chauraha, Meghdoot Garden, Hira Nagar, MR 10 Road or the Super Corridor stations. In the IDA schemes ask for scheme, sector and plot, in a Super Corridor township get your name on the gate register before the demo, and start before the evening rush around Vijay Nagar's squares.",
-    "Palasia & Central Indore": "There is no open metro station here, so tutors come by bus, auto or two-wheeler, and evening parking near Palasia and Geeta Bhawan squares is tight. Many students attend coaching nearby, so ask for that timetable and fit your slot around it; LIG Colony houses are doorstep visits, while Geeta Bhawan's societies use a register.",
-    "Nipania, Bicholi & Ring Road": "A metro rider can come to Malviya Nagar Chauraha for Mahalaxmi Nagar and Nipania and finish by auto; elsewhere, a tutor already working along the Ring Road is the natural fit. Ring Road junctions crowd at office closing time and Khajrana's temple junction is busy on festival days, and Bicholi Mardana has fewer tutors living close by.",
-    "Bhawarkua, Rajendra Nagar & Rau": "There is no metro, so tutors use city buses along AB Road or a two-wheeler, and a landmark helps find houses around busy Bhawarkua. Early evening or later slots are steadier there, AB Road towards Rau is heavier at school and office closing times, and in Rau and Silicon City a tutor from Rajendra Nagar or Bijalpur is the likely fit."
+    "Vijay Nagar & AB Road": "This is the zone the metro serves, from Vijay Nagar Chauraha, Meghdoot Garden, Hira Nagar, MR 10 Road or the Super Corridor stations. In the IDA schemes ask for scheme, sector and plot, in a Super Corridor township get your name on the gate register before the demo, and start before the evening rush around Vijay Nagar's squares. A tutor living along the Yellow Line can serve most of this zone without driving.",
+    "Palasia & Central Indore": "There is no open metro station here, so tutors come by bus, auto or two-wheeler, and evening parking near Palasia and Geeta Bhawan squares is tight. Many students attend coaching nearby, so ask for that timetable and fit your slot around it; LIG Colony houses are doorstep visits, while Geeta Bhawan's societies use a register. A tutor who comes by auto or two-wheeler is often easier to keep than one who drives.",
+    "Nipania, Bicholi & Ring Road": "A metro rider can come to Malviya Nagar Chauraha for Mahalaxmi Nagar and Nipania and finish by auto; elsewhere, a tutor already working along the Ring Road is the natural fit. Ring Road junctions crowd at office closing time and Khajrana's temple junction is busy on festival days, and Bicholi Mardana has fewer tutors living close by. There, pair a nearby tutor's visits with online sessions for specialist subjects.",
+    "Bhawarkua, Rajendra Nagar & Rau": "There is no metro, so tutors use city buses along AB Road or a two-wheeler, and a landmark helps find houses around busy Bhawarkua. Early evening or later slots are steadier there, AB Road towards Rau is heavier at school and office closing times, and in Rau and Silicon City a tutor from Rajendra Nagar or Bijalpur is the likely fit. Register at the gate of any newer gated project before the first visit."
   },
   "boards": "Indore tutors teach CBSE, the MP Board, CISCE's ICSE and ISC, and for a smaller group the IB or Cambridge IGCSE. MP Board students may study in Hindi or English, so state on your profile which medium you teach and whether you can explain terms in both. Take MP Board rules and dates only from the board's official notices on mpbse.nic.in, CBSE curricula and sample papers from cbseacademic.nic.in, and CISCE regulations from cisce.org, and use the IB and Cambridge sites for subject guides and past papers before a demo.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Board of Secondary Education, Madhya Pradesh (MP Board)",
+      "site": "https://mpbse.nic.in/",
+      "classes": "Class 10 (High School); Class 12 (Higher Secondary)",
+      "note": "Indore's MP Board students sit the Board of Secondary Education, Madhya Pradesh examinations at Class 10 and Class 12, and may study in Hindi or English. A tutor who can explain terms in both media is useful here. Take rules, dates and paper patterns only from mpbse.nic.in, and teach from the board's prescribed books."
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "CBSE schools are spread across Indore, from Vijay Nagar's IDA schemes to the Rau side. Ground lessons in NCERT, practise against the sample papers and marking schemes on cbseacademic.nic.in, and fit your slot around any coaching the student attends near Palasia or Bhawarkua.",
+      "page": "/cbse-home-tutor-indore"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "Indore's CISCE schools teach towards ICSE in Class 10 and ISC in Class 12. Answers are long, the syllabus is wide and English has set literature, so a tutor here needs a revision plan that reaches every chapter and leaves room for project work. Use cisce.org for regulations and specimen papers.",
+      "page": "/icse-home-tutor-indore"
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "A smaller group of Indore students follow the IB Diploma, taught as named courses such as Maths Analysis and Approaches or Applications and Interpretation, at Standard or Higher Level. Internally assessed work counts towards the grade, and a tutor guides it without writing it. Subject guides are on ibo.org.",
+      "page": "/ib-tutor-indore"
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "For Cambridge IGCSE, command words, the correct tier and marking against past schemes matter most. With fewer IGCSE students than CBSE or MP Board ones, a tutor who adds online teaching can serve families anywhere in Indore. Read the syllabus on cambridgeinternational.org, or Pearson's site for Edexcel.",
+      "page": "/igcse-tutor-indore"
+    }
+  ],
+  "women": {
+    "intro": "Women tutors are welcome on NXTutors in Indore for home lessons, online classes or both. You choose the zones and hours: a tutor in Vijay Nagar could stay near the Yellow Line stations and the IDA schemes, while one in Rajendra Nagar keeps to the AB Road side and teaches Nipania families online. Every tutor who joins passes the same ID check, families meet you first at a free demo where we ask a parent to be at home, and the safeguarding policy sets rules for everyone. These are working controls, not a promise about any individual.",
+    "points": [
+      "Choose home, online or hybrid on your profile; change it as you need.",
+      "Add only the zones you want; if crossing the Ring Road in the evening does not suit you, keep to your own side.",
+      "Keep your free hours current so Indore families know when you can teach.",
+      "Every new family starts with a free demo where we ask a parent to be at home.",
+      "In Super Corridor townships and Geeta Bhawan societies, ask the family to put your name on the gate register before the demo.",
+      "Arrange fees and timings with a parent, and keep messages off the student's personal phone.",
+      "Teach younger children in a shared room with an adult at home; online, keep cameras on.",
+      "Stop any class that worries you and tell NXTutors, marked Safeguarding; call 112 first in an emergency."
+    ]
+  },
+  "story": [
+    "Join with a one-time code to your phone or email, then list your subjects, classes, boards and medium, MP Board in Hindi or English included, and the Indore zones you can reach.",
+    "Upload a government photo ID. Our team reviews it before your profile appears, and each ID number can be tied to only one tutor account. This is an identity check only.",
+    "After review, your profile is published with the Verified badge, showing your boards, travel zones from Vijay Nagar to Rau, the hours you keep free and your own fee.",
+    "A family in Palasia or Nipania sends a request. NXTutors shortlists two or three: tutors living there, then those who travel there, then the zone, the city and online tutors.",
+    "The family sees your fee first, and lesson one is a free demo at their home where we ask a parent to be present, so you can check the level and the journey.",
+    "Then teach at homes in your zones, online for students across India, or both, perhaps a weekend visit around a coaching timetable with online classes on weekdays."
+  ],
   "faqs": [
-    ["How do Indore families find a tutor through NXTutors?", "Each family sends a single request: class, board and medium, subjects, scheme or colony and preferred hours. NXTutors answers with two or three tutors in order of nearness: same area, then those who travel there, then the zone, Indore and online. The family compares the fees shown and books a free demo with one."],
-    ["Can an Indore tutor teach online as well?", "Yes. Select online on your profile and you can be matched to students anywhere on subject, board, class and the hours you have free. An MP Board tutor comfortable in Hindi and English terms, for example, can take online students across Madhya Pradesh and keep home classes near home."],
-    ["Which Indore zones should I list?", "List your own zone first and any other you can reach on time every week. With the Yellow Line, the Vijay Nagar schemes and Super Corridor are easy from any station on it; for Palasia, the Ring Road side or Rau, think about the evening squares and junctions you would cross."],
-    ["Does NXTutors run a police check on Indore tutors?", "No. NXTutors checks identity instead: you confirm your phone or email with a one-time code and upload a government photo ID, and our team reviews it before your profile goes live. Real tutors who pass carry a Verified badge on their profile, and How we verify tutors (/how-we-verify-tutors) describes each step."],
-    ["How much does it cost an Indore tutor to join?", "Tutor plans are paid, and you can see what each plan includes on the Pricing page (/pricing). What you charge for lessons is your decision, shown to Indore families before the free demo. Parents can switch tutor at no cost, so lessons that fit around school and coaching timetables keep families with you."]
+    [
+      "How do Indore families find a tutor through NXTutors?",
+      "Each family sends a single request: class, board and medium, subjects, scheme or colony and preferred hours. NXTutors answers with two or three tutors in order of nearness: same area, then those who travel there, then the zone, Indore and online. The family compares the fees shown and books a free demo with one."
+    ],
+    [
+      "Can an Indore tutor teach online as well?",
+      "Yes. Select online on your profile and you can teach students anywhere, since online requests are not tied to your address but to subject, board and class. An MP Board tutor comfortable in Hindi and English terms, for example, can take online students across Madhya Pradesh and keep home classes near home."
+    ],
+    [
+      "Which Indore zones should I list?",
+      "List your own zone first and any other you can reach on time every week. With the Yellow Line, the Vijay Nagar schemes and Super Corridor are easy from any station on it; for Palasia, the Ring Road side or Rau, think about the evening squares and junctions you would cross."
+    ],
+    [
+      "Does NXTutors run a police check on Indore tutors?",
+      "No. NXTutors checks identity instead: you confirm your phone or email with a one-time code and upload a government photo ID, and our team reviews it before your profile goes live. Real tutors who pass carry a Verified badge on their profile, and How we verify tutors (/how-we-verify-tutors) describes each step."
+    ],
+    [
+      "How much does it cost an Indore tutor to join?",
+      "Tutor plans are paid, and you can see what each plan includes on the Pricing page (/pricing). What you charge for lessons is your decision, shown to Indore families before the free demo. Parents can switch tutor at no cost, so lessons that fit around school and coaching timetables keep families with you."
+    ],
+    [
+      "Can a woman tutor in Indore limit home visits to her own area?",
+      "Yes. You choose the zones you travel to and the hours you keep free, so you might teach at home only in the Vijay Nagar schemes and take other students online. Home requests follow the zones you pick, and each new family meets you at a free demo where we ask a parent to be present."
+    ],
+    [
+      "Which boards do Indore families ask tutors about?",
+      "CBSE across the city, the MP Board run by the Board of Secondary Education, Madhya Pradesh, CISCE's ICSE and ISC, and for a smaller group the IB or Cambridge IGCSE. Say on your profile which boards and classes you teach, and in which medium."
+    ],
+    [
+      "Does hybrid tuition work for Indore students who attend coaching?",
+      "It can. Where a student spends evenings at coaching in Palasia or Bhawarkua, a weekend home lesson for written work plus a short online class on a free weekday may fit better than two visits. Select home and online, and agree the pattern after the demo."
+    ]
   ]
 }

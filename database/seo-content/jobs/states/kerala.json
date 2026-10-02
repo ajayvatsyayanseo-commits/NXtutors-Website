@@ -5,6 +5,43 @@
     "site": "https://keralapareekshabhavan.in",
     "summary": "Pareeksha Bhavan conducts Kerala's SSLC examination along with related examinations such as SSLC (HI), THSLC and AHSLC, as well as the LSS and USS scholarship examinations and the Kerala Teacher Eligibility Test (K-TET). Its site offers results, duplicate and migration certificates, and forms for date-of-birth and other corrections. For Classes 11 and 12, see the Directorate of Higher Secondary Education, Kerala (dhsekerala.gov.in), whose site did not load when we checked."
   },
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Pareeksha Bhavan, Kerala (with DHSE for Classes 11–12)",
+      "site": "https://keralapareekshabhavan.in",
+      "classes": "SSLC (Class 10) and related examinations; Higher Secondary under DHSE",
+      "note": "Pareeksha Bhavan conducts the SSLC examination together with SSLC (HI), THSLC and AHSLC, the LSS and USS scholarship examinations and K-TET. For Classes 11 and 12, the Directorate of Higher Secondary Education (dhsekerala.gov.in) is the authority; its site did not load when we checked, so confirm the current Higher Secondary pattern there directly."
+    },
+    {
+      "key": "cbse",
+      "name": "Central Board of Secondary Education (CBSE)",
+      "site": "https://www.cbse.gov.in",
+      "classes": "Classes 1–12; board examinations in Classes 10 and 12",
+      "note": "Our Kochi and Thiruvananthapuram pages both list CBSE among the boards Kerala families follow. A tutor taking CBSE students should prepare from NCERT and the current sample papers on cbseacademic.nic.in, and keep CBSE classes apart from SSLC ones on the profile so the right requests reach them."
+    },
+    {
+      "key": "cisce",
+      "name": "Council for the Indian School Certificate Examinations (CISCE)",
+      "site": "https://cisce.org",
+      "classes": "ICSE (Class 10), ISC (Class 12)",
+      "note": "ICSE and ISC are named on both our Kerala city pages. Moving from SSLC to ICSE means a different syllabus order and papers that expect complete working and full written answers. The council's specimen papers on cisce.org are the right base for a first lesson."
+    },
+    {
+      "key": "ib",
+      "name": "International Baccalaureate (IB)",
+      "site": "https://www.ibo.org",
+      "classes": "Primary Years, Middle Years and Diploma Programmes",
+      "note": "Our Kochi page notes that a smaller group of Kochi students take the IB Diploma, and that online lessons widen their choice of tutor to anywhere in India. An IB tutor in Kerala can mark online teaching and list the Diploma subjects and levels they have taught."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge IGCSE",
+      "site": "https://www.cambridgeinternational.org",
+      "classes": "IGCSE, usually around Classes 9–10",
+      "note": "Cambridge IGCSE is the other international course our Kochi page mentions for a smaller group. A tutor who knows it should list the subjects and say whether they teach Core, Extended or both, and use past papers with mark schemes to plan a demo."
+    }
+  ],
   "intro": [
     "Kerala has two tuition-jobs pages with zones, Kochi and Thiruvananthapuram, and tutors living in either city should pick their zones there. If you are in Kozhikode, Thrissur, Kollam, Kannur, Kottayam or another town, this page is your route in. Put your town and nearby localities on your profile, because home lessons are offered to the tutors nearest a family before anyone else is considered. You can also teach online, which is matched by subject, class and board instead of distance, so a tutor in Palakkad can be shortlisted for a student in another state.",
     "Kerala students may sit the SSLC through Pareeksha Bhavan or study under CBSE, ICSE or another board, and the medium can be Malayalam or English. State each clearly. For higher secondary syllabi, the Directorate of Higher Secondary Education is the authority to check. For every request, the parent sees two or three tutors and the fee each has set; the first class is a free demo for the family, who can switch later if the match is not right. Tutors who handle THSLC or AHSLC students can mention that on their profile too."
@@ -12,48 +49,68 @@
   "towns": [
     {
       "name": "Kozhikode",
-      "note": "Say how far beyond Kozhikode you will travel for lessons."
+      "note": "Kozhikode tutors register through this Kerala page because our Kerala city pages so far cover Kochi and Thiruvananthapuram. The locality you enter decides which home requests come to you first; online lessons let you teach students across India from home."
     },
     {
       "name": "Thrissur",
-      "note": "Your preferred classes in Thrissur can go on your profile."
+      "note": "Thrissur tutors who teach in Malayalam and English can mark the medium against each subject. When a family's request makes the medium clear, matching on it saves a demo lesson that would not suit the student or you."
     },
     {
       "name": "Kollam",
-      "note": "Boards you teach in Kollam should all be listed."
+      "note": "A Kollam tutor willing to teach two children from one family in a single visit, perhaps at different levels, can say so. Some families ask for that, and the demo is where you agree how the time is split between them."
     },
     {
       "name": "Kannur",
-      "note": "Say whether lessons in Kannur run in English or Malayalam."
+      "note": "Kannur tutors willing to visit Thalassery as well can add the particular Thalassery localities they mean. A list of real places, rather than a whole town, keeps the home requests offered to you within comfortable reach after school."
     },
     {
       "name": "Kottayam",
-      "note": "Hours you can give in Kottayam belong on your profile."
+      "note": "Kottayam teachers preparing students for the LSS or USS scholarship examinations can mention that on a separate line. Pareeksha Bhavan conducts both, and a family preparing for them will look for a tutor who has done that work before."
     },
     {
       "name": "Palakkad",
-      "note": "A tutor living in Palakkad can teach online across India."
+      "note": "In Palakkad, as everywhere on NXTutors, the fee is yours to set, class by class if you like. Parents see it before they meet you, and a fair figure for the level you teach, stated clearly, avoids bargaining later."
     },
     {
       "name": "Alappuzha",
-      "note": "Keep both options open from Alappuzha: home and online."
+      "note": "Alappuzha tutors who teach English can say whether they focus on grammar, reading or writing, and for which classes. Parents of secondary students may ask about written answers, and a demo built on a recent school test shows how you would help."
     },
     {
       "name": "Malappuram",
-      "note": "Write down your Malappuram neighbourhood; nearby requests come first."
+      "note": "Malappuram tutors who teach Higher Secondary subjects should name them exactly and read the DHSE site for current details before a demo. Senior students tend to compare tutors on subject depth, and a precise list puts you on the right shortlists."
     },
     {
       "name": "Kasaragod",
-      "note": "Online students can choose a Kasaragod tutor from anywhere."
+      "note": "Kasaragod tutors drawn to middle-school teaching can mark Classes 6 to 8 as their focus. Those years link early arithmetic to algebra and general science to separate subjects, and a family worried about that transition will look for exactly this."
     },
     {
       "name": "Pathanamthitta",
-      "note": "Please list the Pathanamthitta localities you can reach."
+      "note": "Pathanamthitta tutors with K-TET can mention it alongside the classes it relates to. Parents of younger children may value a tutor who has studied that stage formally, and the detail sits naturally next to your primary or middle school classes."
     },
     {
       "name": "Thalassery",
-      "note": "Tutors who live in Thalassery can mark nearby localities."
+      "note": "Thalassery tutors should give their exact locality rather than the town name alone. Home matching widens step by step from the family's address, so precise details bring a nearby family your profile before tutors who live further away."
     }
+  ],
+  "women": {
+    "intro": "Women who tutor in Kerala, from Kozhikode and Kannur to Kollam and Pathanamthitta, can join NXTutors and keep their own terms. Teach at students' homes, online, or both, and list just the localities you want to reach and the hours you want to keep. Each tutor who joins confirms a phone or email with a one-time code and uploads a government photo ID that our team reviews before the profile is shown; real tutors who pass carry a Verified badge. Every new family starts with a demo where we ask a parent to be at home, and you can stop at any point and tell us.",
+    "points": [
+      "Select home, online or hybrid, and update it whenever you wish.",
+      "List the localities you will visit; home requests stay within them.",
+      "Choose your own hours, including early mornings or weekends.",
+      "A parent is at home for the first lesson with each family.",
+      "Ask to be entered in the visitor register in a flat complex.",
+      "Agree fees and timings with the parent, not the student.",
+      "Stop lessons that worry you and tell us on WhatsApp or the contact page."
+    ]
+  },
+  "story": [
+    "Sign up from any Kerala town with a one-time code to your phone or email. Add your locality, the places you will visit, your medium and whether you teach online.",
+    "Upload a government photo ID through your dashboard. Our team reviews it while the profile stays pending, and the same ID number can never be linked to a second tutor.",
+    "Once reviewed, your profile goes live with the Verified badge, listing SSLC, Higher Secondary, CBSE or ICSE classes, your subjects and the fee you set.",
+    "A family close to you sends a request with class, board and subject. Two or three tutors are shortlisted: nearest first, then wider, then online.",
+    "The family has seen your fee, and the first lesson is a free demo for them. Teach the topic the student is covering at school this week.",
+    "If they continue, lessons happen at home, online or both, on days settled with the parent. Keep your localities and hours current as students join."
   ],
   "faqs": [
     [
@@ -75,6 +132,18 @@
     [
       "Where can I compare tutor plans?",
       "On /pricing. Plans for tutors are paid, and each lists what it includes. The fee you charge for lessons is set by you."
+    ],
+    [
+      "Can a woman tutor in Kerala teach only online?",
+      "Yes. Online-only profiles are shortlisted by subject, class and board, not location. If you add home lessons later, only your listed localities are used, and each new family meets you at a demo where we ask a parent to be at home."
+    ],
+    [
+      "Which boards should a Kerala tutor list?",
+      "SSLC and the Higher Secondary course if you teach them, plus CBSE, ICSE or ISC, and IB or IGCSE, which our Kochi page mentions for a smaller group. List only what you have taught, with the medium; the request names the family's board."
+    ],
+    [
+      "Can I combine home and online students?",
+      "Yes. Mark both, give your home localities and add online hours if they differ. You may also teach one student both ways, for example at home on weekdays and online before a test, if the parent agrees at the demo."
     ]
   ]
 }

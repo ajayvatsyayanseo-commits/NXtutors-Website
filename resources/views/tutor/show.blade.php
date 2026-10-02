@@ -472,7 +472,11 @@ html {
   <main class="main">
 
     {{-- A model profile is shown for what it is (config/tutors.php). --}}
-    @php $isSampleProfile = ! empty($tutor->is_sample); @endphp
+    @php
+      $isSampleProfile = ! empty($tutor->is_sample);
+      // Pink seal for a real, verified woman tutor (App\Support\TutorBadge); never on samples.
+      $isWomanVerified = \App\Support\TutorBadge::woman($tutor, $isSampleProfile);
+    @endphp
     @if($isSampleProfile)
       <section class="nxsec">
         <div class="nx-sample-note">
@@ -496,9 +500,9 @@ html {
               @if($isSampleProfile)
                 <span class="badge-sample">Sample profile</span>
               @else
-              <span class="badge-verified">
+              <span class="badge-verified{{ $isWomanVerified ? ' badge-verified--woman' : '' }}">
                 <svg width="11" height="11" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M6.5 11.3 3.4 8.2l1.1-1.1 2 2 4.9-4.9 1.1 1.1z"/></svg>
-                Verified
+                {{ $isWomanVerified ? 'Verified · Woman tutor' : 'Verified' }}
               </span>
               @endif
             </div>
@@ -513,7 +517,7 @@ html {
               </div>
 
               <div class="nxstat">
-                @unless($isSampleProfile)<span class="nxchip nxchip--ok">✅ Verified</span>@endunless
+                @unless($isSampleProfile)<span class="nxchip nxchip--ok{{ $isWomanVerified ? ' nxchip--woman' : '' }}">✅ {{ $isWomanVerified ? 'Verified · Woman tutor' : 'Verified' }}</span>@endunless
                 <span class="nxchip">{{ $chip }}</span>
 
                 @if($expYears !== '')
@@ -564,7 +568,7 @@ html {
           <div class="nxdivider"></div>
 
           <div class="nxlead" style="margin:0;">
-            @unless($isSampleProfile)<div>✅ Background verified</div>@endunless
+            @unless($isSampleProfile)<div>✅ ID checked by our team</div>@endunless
             <div>✅ Free demo guidance</div>
             <div>✅ Regular progress tracking</div>
           </div>

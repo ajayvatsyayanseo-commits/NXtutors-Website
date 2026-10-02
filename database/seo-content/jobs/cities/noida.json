@@ -5,19 +5,109 @@
     "CBSE is the board most Noida families follow, ICSE is widely taught, and some schools offer the IB or Cambridge IGCSE. Because Noida is in Uttar Pradesh, UP Board schools are present too, so a tutor who knows the High School and Intermediate papers has a place here. Online teaching widens the field, which matters most for IB, IGCSE and senior specialist subjects. On the Expressway and near Noida Extension, families often pair one home session a week with online classes in between, which lets a tutor from another part of the city take on a student there."
   ],
   "zone_notes": {
-    "Old Noida": "Sectors 11 to 33 are mainly independent houses and builder floors on Authority plots, with bungalows in Sector 15A, so there is rarely a gate pass to arrange. Blue Line stations at Sectors 15, 16 and 18 and Botanical Garden put many homes within walking distance, but book outside the evening rush towards the DND and the Mahamaya Flyover.",
-    "Central Noida": "No Noida zone suits a metro rider more: the Blue Line stops at Sector 34, Noida City Centre, Golf Course and Sector 52, and the Aqua Line starts at Sector 51. Plotted lettered blocks in Sectors 50 and 51 mean doorstep visits, group-housing blocks need one visitor-list entry, and Dadri Main Road and Amrapali Road slow down at peak hours.",
-    "Sector 62 Belt": "Sectors 55, 56, 61 and 62 sit beside a large office belt on NH-9, with cooperative societies in Sector 62 and plotted houses or Authority flats in Sectors 55 and 56. Office rush hour is the main limit here, so after-school slots or ones after the evening peak are easier to keep, and a CGHS society needs your name at the gate once.",
-    "Sectors 70–82": "Sectors 74 to 79 are high-rise gated societies where security and the block need your name before the first class, while Sectors 70 to 73 and 82 are lower-rise floors, houses and pocket housing. Aqua Line stops at Sector 50, Sector 76, Sector 101 and NSEZ help, and living inside the belt avoids the Vikas Marg and Sector 71/51 bottlenecks.",
-    "Noida Expressway": "Sectors 92 to 168 are mostly high-rise gated societies, with a few plotted sectors near the start such as 92, 99 and 108, and large complexes can take a while from gate to tower. The Expressway is slow in both directions at peak hours, so tutors in neighbouring sectors using local roads or the Aqua Line stations keep time most reliably.",
-    "Near Noida Extension": "Sectors 119 to 121 are mainly large group-housing societies, some still being finished, while Sectors 116 and 122 are plotted and Sector 115 centres on Sorkha village. Getting in through Gaur Chowk is slow at peak hours while an underpass is built, so a tutor who already teaches in the same cluster, or who starts online, suits these families."
+    "Old Noida": "Sectors 11 to 33 are mainly independent houses and builder floors on Authority plots, with bungalows in Sector 15A, so there is rarely a gate pass to arrange. Blue Line stations at Sectors 15, 16 and 18 and Botanical Garden put many homes within walking distance, but book outside the evening rush towards the DND and the Mahamaya Flyover. Ask where to park, because older lanes and market roads fill in the evening.",
+    "Central Noida": "No Noida zone suits a metro rider more: the Blue Line stops at Sector 34, Noida City Centre, Golf Course and Sector 52, and the Aqua Line starts at Sector 51. Plotted lettered blocks in Sectors 50 and 51 mean doorstep visits, group-housing blocks need one visitor-list entry, and Dadri Main Road and Amrapali Road slow down at peak hours. Living along either line, you can reach most of this zone without driving.",
+    "Sector 62 Belt": "Sectors 55, 56, 61 and 62 sit beside a large office belt on NH-9, with cooperative societies in Sector 62 and plotted houses or Authority flats in Sectors 55 and 56. Office rush hour is the main limit here, so after-school slots or ones after the evening peak are easier to keep, and a CGHS society needs your name at the gate once. Sectors 55 and 56 have no station inside, so expect a two-wheeler, auto or cab ride.",
+    "Sectors 70–82": "Sectors 74 to 79 are high-rise gated societies where security and the block need your name before the first class, while Sectors 70 to 73 and 82 are lower-rise floors, houses and pocket housing. Aqua Line stops at Sector 50, Sector 76, Sector 101 and NSEZ help, and living inside the belt avoids the Vikas Marg and Sector 71/51 bottlenecks. Keep the same weekly slot so security learns your name.",
+    "Noida Expressway": "Sectors 92 to 168 are mostly high-rise gated societies, with a few plotted sectors near the start such as 92, 99 and 108, and large complexes can take a while from gate to tower. The Expressway is slow in both directions at peak hours, so tutors in neighbouring sectors using local roads or the Aqua Line stations keep time most reliably. A hybrid plan, one home session a week with online classes between, makes a longer trip practical.",
+    "Near Noida Extension": "Sectors 119 to 121 are mainly large group-housing societies, some still being finished, while Sectors 116 and 122 are plotted and Sector 115 centres on Sorkha village. Getting in through Gaur Chowk is slow at peak hours while an underpass is built, so a tutor who already teaches in the same cluster, or who starts online, suits these families. If you already teach another family in a society, a second one there is easier to keep."
   },
   "boards": "Noida tutors mostly teach CBSE, with ICSE widely taught and the IB and Cambridge IGCSE in some schools. Noida is in Uttar Pradesh, so UPMSP, the UP Board, matters too: its students sit the High School exam in Class 10 and the Intermediate in Class 12, papers of three and a quarter hours, including a reading period, and an OMR multiple-choice section. Read UPMSP syllabuses and model papers on upmsp.edu.in, CBSE material on cbseacademic.nic.in, CISCE documents on cisce.org, and IB and Cambridge guides on their own sites before a demo.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Uttar Pradesh Madhyamik Shiksha Parishad (UPMSP, UP Board)",
+      "site": "https://upmsp.edu.in/",
+      "classes": "High School (Class 10); Intermediate (Class 12)",
+      "note": "Noida sits in Uttar Pradesh, so UP Board schools stand beside CBSE, ICSE and international ones. UPMSP papers look different even where chapters match: three and a quarter hours with a reading period, an OMR multiple-choice section, and a pass mark split between the written paper and the school's own marks. Check upmsp.edu.in every year.",
+      "page": "/up-board-tutor-noida"
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "CBSE is the most common board in Noida, from plotted houses near Sector 18 to the Expressway towers. A tutor who teaches CBSE Class 12 Chemistry well is not automatically right for ICSE Class 10, so list classes and boards precisely, and practise with the board's sample papers on cbseacademic.nic.in.",
+      "page": "/cbse-home-tutor-noida"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "ICSE (Class 10) and ISC (Class 12), set by CISCE, cover more content per subject than CBSE and expect longer, more precise answers. An ICSE tutor should know the prescribed Literature texts and each subject's internal assessment project; the detail is published on cisce.org.",
+      "page": "/icse-home-tutor-noida"
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "In the IB Diploma, grades depend on internal assessments as well as final exams, and in Maths the student must be on the right course, AA or AI, at SL or HL. A tutor can guide an IA or Extended Essay but must not write it, which IB academic-integrity rules forbid. Guides are on ibo.org.",
+      "page": "/ib-tutor-noida"
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "Cambridge IGCSE rewards technique: command words, Core versus Extended papers, and practice with past papers and mark schemes. A tutor near the Aqua or Blue Line can visit Noida students at home, and online sessions widen the reach and remove the commute. Syllabuses are on cambridgeinternational.org.",
+      "page": "/igcse-tutor-noida"
+    }
+  ],
+  "women": {
+    "intro": "NXTutors welcomes women tutors in Noida for home, online or hybrid teaching. You set the sectors and the hours: a tutor in Central Noida can stay within walking distance of the Blue and Aqua Line stops, one on the Expressway within her own cluster of societies, and anyone further away can learn online. Every new tutor goes through the same ID check, families start with a free demo while a parent is home, and the safeguarding policy applies to everyone. These are controls, not a promise about behaviour.",
+    "points": [
+      "Pick home, online or hybrid, and change it whenever your plans move.",
+      "Add only the sectors you are happy to reach; skip the Expressway or Gaur Chowk at night if that does not suit you.",
+      "Your free hours show Noida families when you teach, so late slots are optional.",
+      "Each family meets you first at a free demo, with a parent in the house.",
+      "In Sectors 74 to 79 and the Expressway societies, ask to be added to the visitor list once so every entry is logged.",
+      "Talk fees and timings through with a parent, and keep messages off the student's own phone.",
+      "For young children, teach in a common room with an adult at home; online, cameras stay on.",
+      "If anything feels wrong, stop and tell NXTutors under Safeguarding; in danger, call 112 before anything else."
+    ]
+  },
+  "story": [
+    "Sign up with a one-time code on your phone or email, then set out your subjects, classes and boards, from CBSE and ICSE to UP Board or IB, and the Noida sectors you reach.",
+    "Upload a government photo ID next. The team checks it before families can find you, and every ID number links to a single tutor account. It is an identity check, not a police one.",
+    "When approved, your profile goes up with the Verified badge, listing your boards, your sectors from Old Noida to the Expressway, your free hours and your fee.",
+    "A parent in Sector 50 or Sector 137 asks for a tutor. NXTutors shortlists two or three, sector neighbours first, then travellers to it, the zone, all of Noida and online.",
+    "The parent sees your fee before booking, and your first class is a free demo with them at home, enough to judge the student and the gate-to-tower walk.",
+    "Then teach at homes in your sectors, online for students in any city, or both, for example a weekend visit on the Expressway with online classes midweek."
+  ],
   "faqs": [
-    ["What happens after a Noida parent asks for a tutor?", "The parent gives the class, board, subjects, sector and free hours. We then pick two or three tutors, starting with anyone who lives in that sector, then tutors who travel there, then the rest of the zone, Noida as a whole and online. Shortlisted tutors have their fee shown to the family before a free first demo."],
-    ["I live in Noida. Can I also take online students?", "You can. Mark online on your profile, alone or with home tuition. Online requests are matched on the subject, board, class and the hours you are free, not on which sector you live in, so you can teach a student anywhere in India and keep nearby home classes on other evenings."],
-    ["How should I pick travel areas in Noida?", "Pick sectors you can reach on time each week, not just the nearest on a map. A Blue or Aqua Line station near you opens up Old Noida, Central Noida and the Expressway sectors; if you drive, think about the DND, NH-9 and Gaur Chowk at the hour you would be travelling."],
-    ["What checks do I go through before teaching?", "Every tutor who joins goes through an ID check, not a police check. You confirm your phone or email with a one-time code and upload a government photo ID, and our team reviews it before your profile goes live; real tutors who pass get a Verified badge. Details are on How we verify tutors (/how-we-verify-tutors)."],
-    ["Is joining free, and what do I charge?", "No, tutor plans are paid; the Pricing page (/pricing) lists each plan and what it covers. You set your own hourly fee, and a Noida family sees it before booking the free demo. Parents can switch tutor at no cost, so keeping the agreed slot every week is what holds a student."]
+    [
+      "What happens after a Noida parent asks for a tutor?",
+      "The parent gives the class, board, subjects, sector and free hours. We then pick two or three tutors, starting with anyone who lives in that sector, then tutors who travel there, then the rest of the zone, Noida as a whole and online. Shortlisted tutors have their fee shown to the family before a free first demo."
+    ],
+    [
+      "I live in Noida. Can I also take online students?",
+      "You can. Mark online on your profile, alone or with home tuition. Online requests are not tied to which sector you live in; subject, board and class decide the fit, so you can teach a student anywhere in India and keep nearby home classes on other evenings."
+    ],
+    [
+      "How should I pick travel areas in Noida?",
+      "Pick sectors you can reach on time each week, not just the nearest on a map. A Blue or Aqua Line station near you opens up Old Noida, Central Noida and the Expressway sectors; if you drive, think about the DND, NH-9 and Gaur Chowk at the hour you would be travelling."
+    ],
+    [
+      "What checks do I go through before teaching?",
+      "Every tutor who joins goes through an ID check, not a police check. You confirm your phone or email with a one-time code and upload a government photo ID, and our team reviews it before your profile goes live; real tutors who pass get a Verified badge. Details are on How we verify tutors (/how-we-verify-tutors)."
+    ],
+    [
+      "Is joining free, and what do I charge?",
+      "No, tutor plans are paid; the Pricing page (/pricing) lists each plan and what it covers. You set your own hourly fee, and a Noida family sees it before booking the free demo. Parents can switch tutor at no cost, so keeping the agreed slot every week is what holds a student."
+    ],
+    [
+      "Can women tutors in Noida work only in sectors near home?",
+      "Yes. Choose the sectors you travel to, and home requests follow them, while the hours you keep free tell parents when you can come; students elsewhere can be taught online. A parent is at home for the free demo, so you meet the family and see the society's entry routine before committing."
+    ],
+    [
+      "Which boards are Noida tutors asked to teach?",
+      "CBSE most often, ICSE widely, and the IB or Cambridge IGCSE in some schools, plus the UP Board's High School and Intermediate, since Noida is in Uttar Pradesh. A profile listing exact boards and classes is matched more accurately than one listing a subject alone."
+    ],
+    [
+      "Does hybrid teaching suit the Noida Expressway?",
+      "It suits the Expressway well. Traffic is slow both ways at peak hours, so one home lesson a week with online classes in between lets a tutor from further away teach a specialist subject. Choose both modes on your profile and agree the pattern after the demo."
+    ]
   ]
 }

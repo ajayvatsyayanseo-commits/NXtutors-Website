@@ -5,13 +5,59 @@
     "Home and online lessons work together here. A request from Peelamedu goes first to tutors in Peelamedu, then the rest of the zone, then the city, then online, and the family sees two or three tutors, each with a fee shown before the free first demo; switching later costs the family nothing. A tutor without a vehicle can still cover a lot of ground by town bus from Gandhipuram or by local train, while Kovaipudur, Vadavalli and outer Kalapatti are better served by tutors who live nearby, with online lessons for specialist subjects."
   ],
   "zone_notes": {
-    "RS Puram, Race Course & Gandhipuram": "Town buses from the Gandhipuram terminus reach every part of the city and Coimbatore Junction and Coimbatore North are close, so a tutor without a vehicle can work this zone easily. RS Puram and Tatabad's numbered streets make houses easy to find, apartments have a guard at the entrance, and the main streets fill with evening shoppers.",
-    "Saravanampatti, Ganapathy & Thudiyalur": "Saravanampatti's gated complexes and villa communities use visitor apps or gate lists, Ganapathy is dense streets of houses where a landmark helps, and Thudiyalur's houses have their own gates. Sathy Road has no railway and is heaviest when offices open and close, but MEMU trains reach Thudiyalur station from the city.",
-    "Peelamedu, Kalapatti & Avinashi Road": "Avinashi Road's junctions make crossing it slow, so tutors living on the same side of the road as the family save time. Kalapatti's layouts are spread out, with streets that are not widely known, so a map pin before the first class helps, and the road is busiest in the morning and early evening.",
-    "Ramanathapuram, Singanallur & Trichy Road": "Trichy Road is busy at rush hour, especially at the Singanallur junction, so tutors from the family's own side of the road keep lessons regular. Smaller apartment buildings in Sowripalayam and Ramanathapuram have a watchman who should know the class days, and the Singanallur bus terminus and railway station add travel options.",
-    "Podanur, Kuniyamuthur & Vadavalli": "Most homes across this south and west zone are independent houses where the tutor parks at the gate, though villa communities and the gated part of Kovaipudur keep a visitor list. Kovaipudur and Vadavalli sit at the city's edge, so local tutors with online support fit, and Podanur Junction and the Ukkadam bus terminus are the arrival points."
+    "RS Puram, Race Course & Gandhipuram": "Town buses from the Gandhipuram terminus reach every part of the city and Coimbatore Junction and Coimbatore North are close, so a tutor without a vehicle can work this zone easily. RS Puram and Tatabad's numbered streets make houses easy to find, apartments have a guard at the entrance, and the main streets fill with evening shoppers. A class soon after school avoids the evening shopping crowd.",
+    "Saravanampatti, Ganapathy & Thudiyalur": "Saravanampatti's gated complexes and villa communities use visitor apps or gate lists, Ganapathy is dense streets of houses where a landmark helps, and Thudiyalur's houses have their own gates. Sathy Road has no railway and is heaviest when offices open and close, but MEMU trains reach Thudiyalur station from the city. Ask for a standing entry once you are chosen; a class after the evening office rush or on a weekend morning suits working parents.",
+    "Peelamedu, Kalapatti & Avinashi Road": "Avinashi Road's junctions make crossing it slow, so tutors living on the same side of the road as the family save time. Kalapatti's layouts are spread out, with streets that are not widely known, so a map pin before the first class helps, and the road is busiest in the morning and early evening. A class that begins after the evening rush is easier for tutors coming from the city side.",
+    "Ramanathapuram, Singanallur & Trichy Road": "Trichy Road is busy at rush hour, especially at the Singanallur junction, so tutors from the family's own side of the road keep lessons regular. Smaller apartment buildings in Sowripalayam and Ramanathapuram have a watchman who should know the class days, and the Singanallur bus terminus and railway station add travel options. Start lessons before or after the evening rush at Singanallur rather than during it.",
+    "Podanur, Kuniyamuthur & Vadavalli": "Most homes across this south and west zone are independent houses where the tutor parks at the gate, though villa communities and the gated part of Kovaipudur keep a visitor list. Kovaipudur and Vadavalli sit at the city's edge, so local tutors with online support fit, and Podanur Junction and the Ukkadam bus terminus are the arrival points. In a big area such as Kurichi, ask for the street name and a landmark before the first class."
   },
   "boards": "Coimbatore tutors teach Tamil Nadu State Board students in the SSLC and Higher Secondary years, CBSE students, and ICSE and ISC candidates. For state papers, read the time table, notifications and sample question papers from the Directorate of Government Examinations site and its notification portal, and work from the state textbooks the school uses. CBSE sample papers and marking schemes are on the CBSE academic site, and ICSE and ISC regulations are on the CISCE site. Mention whether you teach the Tamil or English version of the state papers.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Tamil Nadu State Board (Directorate of Government Examinations)",
+      "site": "https://dge.tn.gov.in/",
+      "classes": "SSLC (Class 10); Higher Secondary (Classes 11–12)",
+      "note": "Coimbatore's State Board students sit the SSLC after Class 10 and the Higher Secondary examination at the end of Class 12, both conducted by the Directorate of Government Examinations, which has a regional office in Coimbatore. Theory papers begin in March. Teach from the state textbooks, in the Tamil or English version the child uses."
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "CBSE students in Coimbatore need a tutor who works outward from the NCERT chapter and checks answers against the board's own sample papers and marking schemes on cbseacademic.nic.in. Because Class 11 and 12 NCERT content also sits under the entrance tests, one well-built plan can serve both, from Saravanampatti to Podanur.",
+      "page": "/cbse-home-tutor-coimbatore"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "ICSE and ISC are among the boards Coimbatore families name, and their difficulty is breadth. Plan a revision cycle that returns to every chapter, set timed written practice, and watch the project and internal assessment work each subject carries. Regulations and specimen papers are on cisce.org.",
+      "page": "/icse-home-tutor-coimbatore"
+    }
+  ],
+  "women": {
+    "intro": "Women tutors are welcome on NXTutors in Coimbatore for home visits, online classes or a hybrid mix. You pick the zones you travel to and the hours you keep free: a tutor in RS Puram might cover the town-bus routes around Gandhipuram, and teach families at the city's edge in Vadavalli or Kalapatti online. Everyone who joins goes through the same ID check, and a parent is at home for the free demo. These are the real controls the platform offers, not promises about anyone's behaviour.",
+    "points": [
+      "Choose home, online or both; you can switch later.",
+      "List only the zones you are happy to reach, for example those on your own side of Avinashi Road or Trichy Road.",
+      "Mark the hours you keep free, so families see when you can come, and leave late evenings off if you wish.",
+      "Meet each new family at the free demo, where we ask a parent to be present, before agreeing a regular slot.",
+      "In Saravanampatti complexes, ask the family to put you on the visitor app or gate list, so each visit is logged.",
+      "Keep messages, fees and changes of time with a parent rather than the student.",
+      "Teach young children in a shared room with an adult at home, and keep cameras on online.",
+      "If something worries you, stop the classes and tell NXTutors, marking it Safeguarding; dial 112 first in an emergency."
+    ]
+  },
+  "story": [
+    "Create your profile with a one-time code to your phone or email, then add subjects, classes, the State Board, CBSE or CISCE, and the Coimbatore zones you can reach yourself.",
+    "Upload a government photo ID. The team reviews it before families can see you, and one ID number links to only one account. It confirms identity; it is not a background check.",
+    "After review, your profile is live with the Verified badge, showing the areas you travel to, from RS Puram to Saravanampatti, your free hours and the fee you set.",
+    "A parent in Peelamedu or Ganapathy sends a request. NXTutors draws up a shortlist of two or three, starting with tutors who live nearby, then those who travel there, the zone, the city and online.",
+    "The parent sees your fee before booking, and the first class is a free demo with them at home, so you can gauge the student and the journey.",
+    "Then teach at homes on your side of the city, online for students in Vadavalli or anywhere in India, or both, such as a weekend visit with online weekday lessons."
+  ],
   "faqs": [
     [
       "How do Coimbatore families' requests reach me?",
@@ -32,6 +78,18 @@
     [
       "Where do I find tutor plan details?",
       "All tutor plans, with what each includes, are on /pricing. Your lesson fee is your own, and families see it before booking a free first demo; if a family later wants a different tutor, the switch costs them nothing. Check /pricing before you choose a plan, and keep your fee clear on your profile."
+    ],
+    [
+      "Can I teach as a woman tutor in Coimbatore without travelling far?",
+      "Yes. Limit your travel areas to the zones near you, such as RS Puram and Gandhipuram, and home requests are matched to those areas, while the hours you set simply tell families when you are free. Families meet you first at a free demo where we ask a parent to be at home, and students further away can be taught online."
+    ],
+    [
+      "Which boards do Coimbatore families ask about?",
+      "Requests come under the Tamil Nadu State Board for SSLC and Higher Secondary, CBSE, and CISCE's ICSE and ISC. List only the boards and classes you teach well, and for the State Board say whether you work with the Tamil or the English version of the papers."
+    ],
+    [
+      "Is hybrid tuition practical for families at the city's edge?",
+      "Yes. In Kovaipudur, Vadavalli or Kalapatti, where a specialist may live far away, a weekly home lesson for written work can be paired with online classes on other days. Select home and online on your profile, and settle the split with the parent after the demo."
     ]
   ]
 }

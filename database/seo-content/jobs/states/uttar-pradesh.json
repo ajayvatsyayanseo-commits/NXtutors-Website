@@ -5,6 +5,43 @@
     "site": "https://upmsp.edu.in",
     "summary": "Madhyamik Shiksha Parishad, Uttar Pradesh, set up in 1921 at Prayagraj, prescribes courses and textbooks and conducts the High School (Class 10) and Intermediate (Class 12) examinations. Its 2026-27 Class 10 mathematics and science syllabi each set a 70-mark written paper with 30 marks of internal or practical assessment, and 33 to pass. The site also carries model papers, a question bank, a month-wise academic calendar, online scrutiny of answer books and the Samadhan portal."
   },
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Madhyamik Shiksha Parishad, Uttar Pradesh (UPMSP), Prayagraj",
+      "site": "https://upmsp.edu.in",
+      "classes": "High School (Class 10), Intermediate (Class 12)",
+      "note": "UPMSP, set up at Prayagraj in 1921, prescribes courses and textbooks and conducts the High School and Intermediate examinations. Its 2026-27 Class 10 maths and science syllabi each set a 70-mark written paper with 30 marks of internal or practical assessment, and 33 to pass. Model papers, a question bank and a month-wise academic calendar sit on its site."
+    },
+    {
+      "key": "cbse",
+      "name": "Central Board of Secondary Education (CBSE)",
+      "site": "https://www.cbse.gov.in",
+      "classes": "Classes 1–12; board examinations in Classes 10 and 12",
+      "note": "Our Noida, Ghaziabad and Greater Noida pages call CBSE the most common board there, and our Lucknow page says it is widely followed. A UP tutor who teaches both CBSE and UP Board should label each class, because the papers and internal marks are set out differently."
+    },
+    {
+      "key": "cisce",
+      "name": "Council for the Indian School Certificate Examinations (CISCE)",
+      "site": "https://cisce.org",
+      "classes": "ICSE (Class 10), ISC (Class 12)",
+      "note": "Our Lucknow page describes a strong, long-standing ICSE and ISC presence in the city, and the NCR pages list a steady following. A tutor taking ICSE English or ISC science should know the council's prescribed texts and specimen papers, and show complete working in every demo answer."
+    },
+    {
+      "key": "ib",
+      "name": "International Baccalaureate (IB)",
+      "site": "https://www.ibo.org",
+      "classes": "Primary Years, Middle Years and Diploma Programmes",
+      "note": "A smaller number of Lucknow and NCR students take the IB, our city pages say. The Diploma mixes final exams with internally assessed work, and its maths runs as Analysis and Approaches or Applications and Interpretation at SL or HL. Elsewhere in UP, IB tutors can reach these students online."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge IGCSE",
+      "site": "https://www.cambridgeinternational.org",
+      "classes": "IGCSE, usually around Classes 9–10",
+      "note": "Cambridge IGCSE serves a smaller group in Lucknow, Noida, Ghaziabad and Greater Noida, according to our pages. Preparation is largely technique: command words, the Core or Extended route and past papers with mark schemes. Our Lucknow page notes that a UP Board student and an IGCSE student need different tutors."
+    }
+  ],
   "intro": [
     "Four Uttar Pradesh cities have their own tuition-jobs pages with zones: Lucknow, Noida, Greater Noida and Ghaziabad. Tutors living in any of them should pick their zones there. For Kanpur, Agra, Varanasi, Prayagraj, Meerut, Bareilly and the state's many other towns, this page is the way in. Put your town and nearby localities on your profile. Home requests are offered first to the tutors nearest the family, and only then to the wider zone, city and online tutors. Online lessons have no location rule, so a tutor in Gorakhpur or Jhansi can teach students elsewhere in India.",
     "UP students may be on the UP Board, CBSE, ICSE or another board, in Hindi or English medium. Write each one you teach. UPMSP's 2026-27 Class 10 syllabi, model papers and question bank are on upmsp.edu.in, and reading the relevant one before a demo helps. Each request ends with a shortlist of two or three tutors: the parent sees the fee you have set, the first class is a free demo, and the family can switch later. Intermediate tutors should name their subjects as well, and High School tutors can add whether they help with project work."
@@ -12,64 +49,84 @@
   "towns": [
     {
       "name": "Kanpur",
-      "note": "Online lessons let Kanpur tutors teach in other states."
+      "note": "Kanpur is a big city without its own NXTutors page, so the locality you enter carries real weight: a family is offered the tutors living nearest first. Add the mohallas and colonies you can reach in an evening, and switch on online if you would also like students elsewhere."
     },
     {
       "name": "Agra",
-      "note": "Start online from Agra before a nearby family asks."
+      "note": "Agra tutors teaching UP Board Class 10 maths or science can plan revision around the 70-mark written paper and 30 marks of internal or practical work. Put the medium beside each subject; the family usually makes clear which language their child studies in."
     },
     {
       "name": "Varanasi",
-      "note": "Boards you teach in Varanasi should all be listed."
+      "note": "A Varanasi tutor comfortable with both Hindi and English can say which subjects go in which. Students here may sit UP Board, CBSE or ICSE, so name every board you have actually taught, class by class, rather than a single label."
     },
     {
       "name": "Prayagraj",
-      "note": "UP Board was set up at Prayagraj in 1921; list your Prayagraj locality."
+      "note": "Prayagraj is home to the UP board's office, and its site carries the question bank and model papers a tutor can use when preparing a first lesson. Mention any Intermediate subjects you teach as separate lines, with Hindi or English medium."
     },
     {
       "name": "Meerut",
-      "note": "If you are based in Meerut, add online hours too."
+      "note": "A tutor in Meerut can take Noida or Ghaziabad students online straight away. For home lessons, the nearest tutors are offered first, so a Meerut address mostly brings Meerut families; add exact NCR localities only if you really travel there."
     },
     {
       "name": "Bareilly",
-      "note": "Students outside Bareilly can still book you online."
+      "note": "Bareilly tutors who would rather not travel can set the profile to online only. A request's subject, class and board decide the match from then on, not your address. Agree the video app and the class link with the parent before starting."
     },
     {
       "name": "Aligarh",
-      "note": "Put your strongest subjects for Aligarh students first."
+      "note": "Students in Aligarh who tutor between their own lectures should offer a timetable they can keep through exam season too. Parents read your hours beside your fee before they pick a demo, and gaps that appear later are hard to explain."
     },
     {
       "name": "Moradabad",
-      "note": "Hours you can give in Moradabad belong on your profile."
+      "note": "Moradabad teachers who prepare students using the board's month-wise academic calendar can say so. It helps a parent see how the year will be paced, and the calendar on upmsp.edu.in is worth reading before a demo."
     },
     {
       "name": "Gorakhpur",
-      "note": "Please list the Gorakhpur localities you can reach."
+      "note": "Gorakhpur teachers who spent years in a classroom and now take private students can describe the classes and subjects they taught, without naming the school. A parent reading two or three profiles looks for that concrete detail."
     },
     {
       "name": "Jhansi",
-      "note": "Nearby families in Jhansi see the closest tutors first."
+      "note": "Jhansi tutors whose strength is the early years can show Classes 1 to 5 on a line of their own. Families with a child in those classes want different things from a Class 10 family, and keeping the two apart makes shortlisting more accurate."
     },
     {
       "name": "Saharanpur",
-      "note": "You can run home visits in Saharanpur alongside online lessons."
+      "note": "Saharanpur tutors might run a mixed week: visits to students nearby, video sessions for those further off or for revision before tests. Showing both, with hours for each, lets a parent pick the arrangement that suits their child."
     },
     {
       "name": "Mathura",
-      "note": "Your preferred classes in Mathura can go on your profile."
+      "note": "Mathura tutors should put down their precise colony first. Matching for home lessons begins at the family's address and widens in steps, zone, city and then online, so a vague base means nearby families may never see you."
     },
     {
       "name": "Ayodhya",
-      "note": "Keep both options open from Ayodhya: home and online."
+      "note": "Ayodhya tutors who are new to private teaching can start with the subjects they are most confident in and add others later. Parents compare two or three profiles side by side, and a narrow, accurate one stands up better at the demo."
     },
     {
       "name": "Firozabad",
-      "note": "Teaching from home in Firozabad? Online classes work too."
+      "note": "Firozabad teachers who know both UP Board and CBSE should list each with the classes they have taught. Every request names the family's board, and having both on the profile, if your experience is real, opens either kind of shortlist."
     },
     {
       "name": "Muzaffarnagar",
-      "note": "Mark which areas near Muzaffarnagar you will visit."
+      "note": "Muzaffarnagar tutors with Intermediate physics, chemistry, maths or biology can name those subjects exactly and mark online to reach senior students beyond the town. Keep home visits to the colonies you can reach on a school evening."
     }
+  ],
+  "women": {
+    "intro": "Women who tutor in Uttar Pradesh, whether in Kanpur, Varanasi, Agra or a district town, can join NXTutors and keep their own rules. You may teach in students' homes, online, or both. You may list only the mohallas and colonies you want, and you may keep the hours that suit you. The tutor confirms a phone or email by one-time code and uploads a government photo ID, and our team reviews it before the profile goes live; real tutors who clear it carry the Verified badge. A parent is at home for your first lesson with any family.",
+    "points": [
+      "You may teach at home, online or both, and change your mind.",
+      "You may limit home lessons to the colonies you name.",
+      "You may set your own hours; parents see them first.",
+      "You meet each new family where we ask a parent to be at home.",
+      "You may ask to be logged in a society's gate register or visitor app.",
+      "You arrange timings and fees with the parent, not the student.",
+      "You may stop any classes and tell us on WhatsApp or the contact page."
+    ]
+  },
+  "story": [
+    "The tutor signs up from any UP town with a one-time code on phone or email, then adds a mohalla or colony, the places she or he will visit and online availability.",
+    "The tutor uploads a government photo ID from the dashboard. Our team reviews it while the profile waits as pending, and that ID number cannot open another tutor account.",
+    "The profile goes live with a Verified badge after review, showing UP Board, CBSE or ICSE classes, subjects, Hindi or English medium and the tutor's own fee.",
+    "A family nearby sends a request with class, board and subject. Two or three tutors are shortlisted, starting with the nearest, then the zone and city, then online.",
+    "The family already knows the tutor's fee, and the first lesson is a free demo for them, taught on the chapter the student is doing in school.",
+    "If the family continues, lessons go ahead at home, online or both, on days fixed with the parent, and the tutor keeps localities and hours up to date."
   ],
   "faqs": [
     [
@@ -91,6 +148,18 @@
     [
       "What are the tutor plans?",
       "Paid plans, listed with what each includes on /pricing. The fee you charge per lesson is yours to set."
+    ],
+    [
+      "Can women tutors in UP choose not to travel?",
+      "Yes. An online-only profile is shortlisted on subject, class and board rather than distance. If you add home lessons later, only your listed colonies are used, and every new family meets you at a demo where we ask a parent to be at home."
+    ],
+    [
+      "Which boards do UP families follow?",
+      "Our Lucknow and NCR pages list UP Board, CBSE, ICSE and ISC, and a smaller group on the IB or Cambridge IGCSE. List only the boards you have taught, with medium; each request states the family's board."
+    ],
+    [
+      "Can I keep both home and online students?",
+      "Yes. Tick both modes, give your home colonies and add online hours if they differ. One student can also be taught both ways, such as home lessons midweek and an online session before tests, if the parent agrees at the demo."
     ]
   ]
 }

@@ -5,6 +5,29 @@
     "site": "https://jkbose.nic.in",
     "summary": "The school examination board for Jammu and Kashmir; check jkbose.nic.in directly for its current syllabus, date sheets and notices."
   },
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Jammu and Kashmir Board of School Education (JKBOSE)",
+      "site": "https://jkbose.nic.in",
+      "classes": "School examinations; check the board's site for the classes it examines",
+      "note": "JKBOSE is the school examination board for Jammu and Kashmir. We have not summarised its syllabus or paper pattern here, because the details should come from the board itself: read the current syllabus, date sheets and notices on jkbose.nic.in before a demo, and list on your profile the classes and medium you teach."
+    },
+    {
+      "key": "cbse",
+      "name": "Central Board of Secondary Education (CBSE)",
+      "site": "https://www.cbse.gov.in",
+      "classes": "Classes 1–12; board examinations in Classes 10 and 12",
+      "note": "A tutor in Jammu and Kashmir who has taught CBSE classes can list them beside JKBOSE work. The national board keeps its current curriculum, sample papers and marking schemes on cbseacademic.nic.in; working from that session's documents, not an earlier year's, keeps a demo lesson accurate."
+    },
+    {
+      "key": "cisce",
+      "name": "Council for the Indian School Certificate Examinations (CISCE)",
+      "site": "https://cisce.org",
+      "classes": "ICSE (Class 10), ISC (Class 12)",
+      "note": "ICSE and ISC experience is worth a line of its own if you have it. The council's syllabi and its approach to marking differ from both JKBOSE and CBSE, and cisce.org carries the regulations and specimen papers a tutor should look at before preparing a student."
+    }
+  ],
   "intro": [
     "NXTutors has no city tuition-jobs page in Jammu and Kashmir yet, so tutors in Srinagar, Jammu, Anantnag, Baramulla and other towns start from this page. Write your town and the localities you can reach for home lessons. When a family asks for a tutor at home, the request goes to the nearest suitable tutors before the search widens, so your base matters. Online lessons are matched by subject, class and board rather than place, which means a tutor in Kathua or Kupwara can be shortlisted for a student anywhere in India.",
     "Students in Jammu and Kashmir may study under JKBOSE, CBSE or another board, so list each board you teach along with the medium. Take syllabus and exam details from the board's own site rather than from secondhand sources. For every request, NXTutors puts forward two or three tutors; the family sees the fee you set before a free first class, and if the match does not work out later, they can switch without paying for it. Tutors in the Jammu division and the Kashmir division follow the same steps; just name your own town and the classes you prefer to take."
@@ -12,44 +35,64 @@
   "towns": [
     {
       "name": "Srinagar",
-      "note": "Say whether lessons in Srinagar run in English or Hindi."
+      "note": "As NXTutors has no Srinagar city page, tutors from the city register on this state page. Exact locality first, then any others you visit: home requests always begin with the nearest tutor and only later widen, and video lessons can still reach students elsewhere in India."
     },
     {
       "name": "Jammu",
-      "note": "You can run home visits in Jammu alongside online lessons."
+      "note": "Jammu tutors should name their own mohalla or colony and any nearby areas they can reach for regular lessons. Then add every board you have taught, JKBOSE, CBSE or ICSE, with the classes for each, because the family's request states its board."
     },
     {
       "name": "Anantnag",
-      "note": "If you are based in Anantnag, add online hours too."
+      "note": "Anantnag teachers who would rather stay put can tick online only. From then on, it is the subject, class and board in a request that decide whether your name comes up, not the town you live in. Settle the video app with the parent before lesson one."
     },
     {
       "name": "Baramulla",
-      "note": "A tutor living in Baramulla can teach online across India."
+      "note": "Some college students in Baramulla tutor in the gaps of their own week. If that is you, write down exactly those gaps, say Tuesday and Thursday afternoons, and nothing more. Parents read your hours and fee before they book anything."
     },
     {
       "name": "Sopore",
-      "note": "Weekend or weekday slots in Sopore? You choose them."
+      "note": "For Sopore tutors who enjoy the early years, a separate entry for Classes 1 to 5 makes sense. Families with small children usually want someone unhurried who builds reading and arithmetic slowly; say clearly that this is the stage you teach."
     },
     {
       "name": "Kathua",
-      "note": "Nearby families in Kathua see the closest tutors first."
+      "note": "Kathua tutors can run two kinds of week at once: visits to homes close by and video sessions with students elsewhere. Showing both modes, each with its own hours, tells a parent up front how you could work with their child."
     },
     {
       "name": "Udhampur",
-      "note": "Write down your Udhampur neighbourhood; nearby requests come first."
+      "note": "Udhampur teachers with senior science or maths can widen their reach by marking online teaching. Keep home lessons to the localities you know well, name the senior subjects precisely, and check the board's current notices before a demo."
     },
     {
       "name": "Rajouri",
-      "note": "Say how far beyond Rajouri you will travel for lessons."
+      "note": "Women who tutor in Rajouri decide for themselves whether to visit homes in their own locality, keep to video lessons, or do a bit of each. Whichever it is, the first meeting with a family happens with a parent in the house, and the ID check comes before any profile is shown."
     },
     {
       "name": "Pulwama",
-      "note": "Mark which areas near Pulwama you will visit."
+      "note": "Pulwama tutors should write the precise locality they live in, not just the district. Matching for home lessons starts with the tutors closest to the family, then widens, so exact details are what bring a nearby family your profile."
     },
     {
       "name": "Kupwara",
-      "note": "Please list the Kupwara localities you can reach."
+      "note": "Kupwara tutors who teach in more than one medium can list each beside the subjects concerned. A family's request often makes the medium clear, and matching on it spares both sides a demo lesson that does not suit the student."
     }
+  ],
+  "women": {
+    "intro": "Women who tutor in Jammu and Kashmir, whether in Srinagar, Jammu or a district town, can join NXTutors and keep the choices in their own hands. Visit students' homes, teach over video, or mix the two; write down just the localities you are comfortable with; keep hours that suit your household. Nothing is shown to families until you have entered a one-time code and our team has looked at a government photo ID you upload, and real tutors who clear that review display the Verified badge. A parent is in the house for your first lesson with any family.",
+    "points": [
+      "Visits, video or both: the decision is yours and can be revised.",
+      "Families outside the localities you write down are not offered your home lessons.",
+      "Hours are set by you and shown to parents up front.",
+      "Your opening lesson with any family has a parent in the house.",
+      "Teach in a room shared with the household, not a closed one.",
+      "Classes and money are discussed with the parent alone.",
+      "Worried about anything? Pause the lessons and message us; switching costs families nothing."
+    ]
+  },
+  "story": [
+    "It begins with a one-time code to your phone or email. Say which J&K town you are in, the mohallas you could visit, and whether video lessons suit you.",
+    "Then a government photo ID goes up from your dashboard. A team member compares it with your details; until that is done your profile is hidden, and the ID cannot be reused elsewhere.",
+    "Cleared profiles appear with the Verified badge. Families can read which JKBOSE or CBSE classes you take, your subjects, the language you teach in and what you charge.",
+    "Somewhere near you, a parent asks for help with a class, board and subject. Out of the tutors who fit, two or three are put forward: closest first, then wider, then online.",
+    "Parents know your fee before meeting you, and the opening lesson is a free demo for them. Make it an ordinary class on whatever the student is studying now.",
+    "Should the family carry on, lessons happen at their home, over video or both, on days you fix with the parent. Change your hours or areas whenever life changes."
   ],
   "faqs": [
     [
@@ -71,6 +114,18 @@
     [
       "What does it cost tutors?",
       "Being listed needs a paid tutor plan; the pricing page at /pricing compares them. What you charge a J&K family per lesson is a separate matter that you decide."
+    ],
+    [
+      "As a woman tutor here, may I stick to video lessons?",
+      "Certainly. Tick online only and your name comes up for requests on the basis of subject, class and board. Should you later want home visits, only the localities you write down are used, and every family's first lesson has a parent in the house."
+    ],
+    [
+      "What boards might families in J&K name?",
+      "JKBOSE, and in some homes CBSE or the council's ICSE and ISC. Write down only those you have actually taught, class by class. Before any demo, check the current syllabus on that board's own website."
+    ],
+    [
+      "Is a mix of visits and video lessons allowed?",
+      "It is, and we call it hybrid. Tick both, write the localities for visits and give video hours if they differ. Some tutors keep separate students for each; others see one student at home midweek and online before a test, as agreed with the parent."
     ]
   ]
 }

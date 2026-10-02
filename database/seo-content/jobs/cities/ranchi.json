@@ -5,12 +5,72 @@
     "Ranchi tutors can combine home and online lessons. A request from Morabadi is matched first with tutors in Morabadi, then elsewhere in the northern zone, then across the city, then online, and the family sees two or three tutors with fees before a free first demo; switching later costs them nothing. Event days at the Morabadi ground and cricket matches in Dhurwa fill the nearby roads, and those are the evenings when an online lesson keeps the routine going. For ICSE literature, IB or senior specialist papers, online tutors from across India can work alongside the local one."
   ],
   "zone_notes": {
-    "Kanke Road, Morabadi & Bariatu": "Apartment buildings on Kanke Road and in Bariatu keep a gate register, so the guard should have your name and the flat number before the demo. Homes towards Kanke suit tutors from the northern colonies, since Kanke Road from the centre is slow at office closing time, and events at the Morabadi ground fill the surrounding roads.",
-    "Lalpur, Kokar & Namkum": "Lalpur is a busy business district with limited parking near the chowk, so many tutors finish the trip by auto or e-rickshaw, and Ranchi Junction is close by. Kokar's apartment blocks register visitors, while Namkum's spread-out homes suit a tutor with their own two-wheeler and a map pin to the enclave gate.",
-    "Harmu, Argora & Ratu Road": "Harmu Housing Colony and Ashok Nagar are plotted colonies where you can usually park at the door, while Pundag's enclaves need gate registration and Kadru's narrow lanes favour a two-wheeler. Bypass Road and Argora Chowk are congested at peak hours, though the Ratu Road elevated corridor now lifts through traffic above the old road.",
-    "Doranda, Hinoo & Hatia": "Staff colonies and sector roads mean easy parking in Dhurwa and Hatia, though some colonies ask visitors to sign in, and Doranda's market roads are busier. Homes further south towards Tupudana are spread out, so a tutor with a two-wheeler from Hatia or Dhurwa fits, and match days near the stadium call for a morning or online slot."
+    "Kanke Road, Morabadi & Bariatu": "Apartment buildings on Kanke Road and in Bariatu keep a gate register, so the guard should have your name and the flat number before the demo. Homes towards Kanke suit tutors from the northern colonies, since Kanke Road from the centre is slow at office closing time, and events at the Morabadi ground fill the surrounding roads. On days with big events at the ground, a morning or online lesson works better.",
+    "Lalpur, Kokar & Namkum": "Lalpur is a busy business district with limited parking near the chowk, so many tutors finish the trip by auto or e-rickshaw, and Ranchi Junction is close by. Kokar's apartment blocks register visitors, while Namkum's spread-out homes suit a tutor with their own two-wheeler and a map pin to the enclave gate. Fix a slot slightly away from the office and market rush near the chowk.",
+    "Harmu, Argora & Ratu Road": "Harmu Housing Colony and Ashok Nagar are plotted colonies where you can usually park at the door, while Pundag's enclaves need gate registration and Kadru's narrow lanes favour a two-wheeler. Bypass Road and Argora Chowk are congested at peak hours, though the Ratu Road elevated corridor now lifts through traffic above the old road. Leave a little buffer for evening slots, or start after the office rush.",
+    "Doranda, Hinoo & Hatia": "Staff colonies and sector roads mean easy parking in Dhurwa and Hatia, though some colonies ask visitors to sign in, and Doranda's market roads are busier. Homes further south towards Tupudana are spread out, so a tutor with a two-wheeler from Hatia or Dhurwa fits, and match days near the stadium call for a morning or online slot. Ask which gate to use and the sector or colony name before the first visit."
   },
   "boards": "Ranchi tutors teach JAC, CBSE, ICSE and ISC students, and some IB and IGCSE learners. For JAC, take the syllabus, model papers and dates from the Jharkhand Academic Council's official website and teach from its prescribed textbooks. CBSE sample papers and marking schemes are on the CBSE academic site, which matters because many marks now reward applying an idea, and ICSE and ISC regulations are on the CISCE site. Be specific on your profile about which board and which classes you take.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Jharkhand Academic Council (JAC)",
+      "site": "https://jac.jharkhand.gov.in/",
+      "classes": "Class 10; Class 12 (Intermediate)",
+      "note": "JAC is Jharkhand's state board and conducts the Class 10 and Class 12 examinations for its affiliated schools. Many Ranchi students write these papers, so a JAC tutor works from the prescribed textbooks and the council's own question style, and takes syllabus, model papers and dates only from jac.jharkhand.gov.in."
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "A Class 12 CBSE student aiming at engineering needs different help from a Class 10 JAC student, so Ranchi families match board and class together. For CBSE, many marks now reward applying an idea, so use the sample papers and marking schemes on cbseacademic.nic.in, and note that the session starts in April.",
+      "page": "/cbse-home-tutor-ranchi"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "CISCE sets the ICSE at Class 10 and the ISC at Class 12, with long answers over a wide syllabus and prescribed English literature. Ranchi students on these boards can combine a local tutor with online lessons for ICSE literature or a senior specialist paper. Read the regulations on cisce.org.",
+      "page": "/icse-home-tutor-ranchi"
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "Ranchi's IB families usually find a specialist online, since IB tutors are spread across India. If you teach Diploma Maths AA or AI, Physics or Chemistry, an online profile reaches them; coach the internal assessment without writing any of it, and keep the ibo.org guide for each subject to hand."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "Cambridge IGCSE students in Ranchi, like IB ones, usually study with an online specialist. What they need is technique: command words, the Core or Extended tier, and past papers marked against the official scheme. A tutor anywhere can offer it; syllabuses are on cambridgeinternational.org and Pearson's site."
+    }
+  ],
+  "women": {
+    "intro": "Women who teach can join NXTutors in Ranchi for home lessons, online classes or a combination. The zones and hours are yours to set: someone in Harmu or Ashok Nagar might keep to the plotted colonies close by, someone in Bariatu to the Kanke Road side, with other families taught online. All tutors face the same ID check, a parent is home for the free demo, and the safeguarding policy sets out rules for tutors and parents. These are controls the platform really has, not assurances about anyone.",
+    "points": [
+      "Home, online or hybrid: pick one on your profile and change it later if you wish.",
+      "Name only the zones you want; trips across Argora Chowk or along Kanke Road at closing time can stay off your list.",
+      "Families see the free hours you list, so leave out any you do not want.",
+      "No regular class starts before the free demo, which happens where we ask a parent to be at home.",
+      "Kanke Road and Kokar apartment blocks keep gate registers; ask the family to give the guard your name first.",
+      "Keep fees, timing and messages between you and a parent, not the student's own phone.",
+      "Teach small children in a room an adult can see into; online, keep both cameras on.",
+      "If you are uneasy about anything, stop the classes and tell NXTutors, marked Safeguarding; dial 112 first in an emergency."
+    ]
+  },
+  "story": [
+    "Make an account with a one-time code on your phone or email, then fill in subjects, classes and boards, JAC, CBSE or ICSE, plus the Ranchi areas you can reach.",
+    "A government photo ID comes next, and the team looks it over before anything goes public. Each ID fits one tutor account; the check confirms identity and is not a police check.",
+    "Once it is approved, your profile is published with the Verified badge, naming your boards, your Ranchi zones from Morabadi to Hatia, your free hours and your fee.",
+    "A family in Lalpur or Doranda asks for a tutor. NXTutors lines up two or three, starting with tutors in that area, then tutors who travel there, the zone, the city and online.",
+    "They see your fee before booking, and the first lesson is a free demo at their home with a parent in, so you can gauge the student and the route.",
+    "Teach at homes across your chosen zones, online for students in other states, or both, perhaps one weekend visit with online classes fitted around coaching."
+  ],
   "faqs": [
     [
       "How are Ranchi tuition requests shared with tutors?",
@@ -31,6 +91,18 @@
     [
       "How do I find out about tutor plans?",
       "Visit /pricing, where the tutor plans and what each includes are set out. You fix your own lesson fee, which families see before booking the free first demo, and families can move to a different tutor later without paying for the change, so the plan you pick does not decide what you charge."
+    ],
+    [
+      "Can a woman tutor in Ranchi teach only in nearby colonies?",
+      "Yes. Choose the zones you want and home requests will follow them, with your free hours telling families when you can teach, so you could take home lessons only around Harmu and Argora and teach other students online. Families meet you at a free demo where we ask a parent to be at home before any regular class begins."
+    ],
+    [
+      "Which boards do Ranchi families ask about?",
+      "JAC, Jharkhand's state board, alongside CBSE and CISCE's ICSE and ISC, while IB and Cambridge IGCSE families usually look for an online specialist. Board and class are matched together, so list exactly which boards and classes you teach on your profile."
+    ],
+    [
+      "Is a hybrid arrangement sensible for Tupudana or Namkum families?",
+      "Often it is. Homes there are spread out, so a tutor with a two-wheeler can visit once a week for written practice and teach the rest online. Tick both home and online on your profile and settle the split with the parent after the demo."
     ]
   ]
 }

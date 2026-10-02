@@ -5,6 +5,50 @@
     "site": "https://www.cbse.gov.in",
     "summary": "Chandigarh is a Union Territory, so this box shows the national board rather than a state one. CBSE's 2026-27 secondary curriculum, on cbseacademic.nic.in, sets most major Class 10 subjects at an 80-mark board paper plus 20 marks of internal assessment, with 33 per cent needed to pass. From 2026 Class 10 has two board examinations: the first is compulsory and the second lets a student improve in up to three subjects. The Punjab and Haryana boards publish their own syllabi on pseb.ac.in and bseh.org.in."
   },
+  "board_cards": [
+    {
+      "key": "cbse",
+      "name": "Central Board of Secondary Education (CBSE)",
+      "site": "https://www.cbse.gov.in",
+      "classes": "Classes 1–12; board examinations in Classes 10 and 12",
+      "note": "Chandigarh is a Union Territory, so the national board is the one most tutors here meet first. CBSE's 2026-27 secondary curriculum sets most major Class 10 subjects at an 80-mark paper plus 20 marks of internal assessment, and from 2026 Class 10 has a compulsory first board examination and an optional second one for improvement."
+    },
+    {
+      "key": "cisce",
+      "name": "Council for the Indian School Certificate Examinations (CISCE)",
+      "site": "https://cisce.org",
+      "classes": "ICSE (Class 10), ISC (Class 12)",
+      "note": "Our Chandigarh city page lists ICSE and ISC among the boards in the tricity. Tutors who take these students should expect longer syllabi in subjects such as English and maths, and papers that give credit for full working. List ICSE and ISC as their own lines, and use the council's specimen papers before a demo."
+    },
+    {
+      "key": "ib",
+      "name": "International Baccalaureate (IB)",
+      "site": "https://www.ibo.org",
+      "classes": "Primary Years, Middle Years and Diploma Programmes",
+      "note": "The IB appears on our Chandigarh page too. In the Diploma, internal assessment counts alongside the final papers, and maths comes as Analysis and Approaches or Applications and Interpretation, each at Standard or Higher Level. A tutor may guide the method of an internal assessment, but the work itself must stay the student's own."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge IGCSE",
+      "site": "https://www.cambridgeinternational.org",
+      "classes": "IGCSE, usually around Classes 9–10",
+      "note": "For Cambridge IGCSE students in the tricity, our city page points to exam craft: reading command words, choosing the right tier and marking past papers against the official scheme. Online lessons widen the choice for these families, so an IGCSE tutor on the edge of the UT can usefully mark online teaching."
+    },
+    {
+      "key": "state",
+      "name": "Punjab School Education Board (PSEB), SAS Nagar (Mohali)",
+      "site": "https://pseb.ac.in",
+      "classes": "Class 10 and Class 12 examinations",
+      "note": "Our Chandigarh page notes that on the Mohali side, including Zirakpur, some families study under PSEB. The board publishes syllabi, a question bank, the structure of question papers and model test papers. A tutor near the Punjab edge of the UT can list PSEB experience so those requests reach them."
+    },
+    {
+      "key": "state",
+      "name": "Board of School Education Haryana (BSEH), Bhiwani",
+      "site": "https://bseh.org.in",
+      "classes": "Secondary (Class 10), Senior Secondary (Class 12)",
+      "note": "In Panchkula, our city page says, the Haryana board is the state option. BSEH conducts the Secondary and Senior Secondary examinations and posts results on its site. Part of the site showed a maintenance notice when we checked, so confirm the current syllabus there before teaching a Haryana board student."
+    }
+  ],
   "intro": [
     "The Chandigarh tuition-jobs page already covers the city's sectors along with Mohali and Panchkula, grouped into zones, so most tutors here should start there and choose the zones they will travel to. This state page is for everything else: the villages and colonies on the edges of the Union Territory, and tutors who want to teach mainly online. If you live in Dhanas, Maloya or Khuda Lahora, add that place by name. Home requests go to the closest suitable tutors before anyone further off, and online requests ignore distance entirely, so either route can bring you students.",
     "Because Chandigarh sits between Punjab and Haryana, a tutor may meet students on CBSE, ICSE, the Punjab board or the Haryana board, and the paper styles differ. List each board you are confident with, and read its pattern on the board's own site before a demo. When a parent sends a request, NXTutors puts forward two or three tutors with their fees visible; the first class is a free demo for the family, and you choose the fee you charge. When you set your range, mark only the sectors you will really visit, whether in the city, Mohali or Panchkula."
@@ -12,36 +56,56 @@
   "towns": [
     {
       "name": "Dhanas",
-      "note": "Tutors who live in Dhanas can mark nearby localities."
+      "note": "Tutors who live in Dhanas can name it as their base and add the city sectors they are willing to visit. Requests for home lessons go to the nearest suitable tutors first, so a short, honest list of sectors serves you better than the whole city. Online teaching is open across India."
     },
     {
       "name": "Maloya",
-      "note": "Students outside Maloya can still book you online."
+      "note": "If you tutor from Maloya, start by deciding whether you want home classes at all, online only, or a mix, and say so on your profile. Families see your hours and fee before the demo, so set both carefully."
     },
     {
       "name": "Khuda Lahora",
-      "note": "Your preferred classes in Khuda Lahora can go on your profile."
+      "note": "A tutor based in Khuda Lahora who has taught CBSE and the Punjab board can list both, since tricity families may follow either. Read the current pattern on cbseacademic.nic.in or pseb.ac.in before a demo, and pick the classes you are most confident with."
     },
     {
       "name": "Kaimbwala",
-      "note": "Online students can choose a Kaimbwala tutor from anywhere."
+      "note": "College students in Kaimbwala who tutor part-time can offer afternoon or weekend slots only. Add the subjects you are strongest in first. If home visits into the sectors are not practical for you, online students give you a way to start without travel."
     },
     {
       "name": "Daria",
-      "note": "Online lessons let Daria tutors teach in other states."
+      "note": "Daria tutors should give the exact locality they live in, then the sectors they will travel to. Matching for home lessons follows that order, nearest first, then the zone and city, then online, so precise details are what bring nearby families your profile."
     },
     {
       "name": "Behlana",
-      "note": "Put your strongest subjects for Behlana students first."
+      "note": "Before a first lesson with a family in the nearby sectors, a Behlana tutor can ask the parent for the student's latest test and the chapter now being taught. Arriving with a plan for that chapter turns the demo into a normal class rather than an interview."
     },
     {
       "name": "Raipur Khurd",
-      "note": "Keep both options open from Raipur Khurd: home and online."
+      "note": "From Raipur Khurd, a hybrid arrangement can work well: home lessons with families close by and online lessons for students elsewhere in the tricity or beyond. Agree the split with each parent at the demo and keep your timetable on the profile up to date."
     },
     {
       "name": "Mauli Jagran",
-      "note": "Home lessons in Mauli Jagran go first to tutors nearby."
+      "note": "Tutors in Mauli Jagran who are near Panchkula can add Haryana board experience if they have it, along with CBSE or ICSE. The board a family follows is stated in the request, so listing every board you teach widens the requests you are shortlisted for."
     }
+  ],
+  "women": {
+    "intro": "Women tutors living on the edge of Chandigarh, in Dhanas, Behlana, Maloya or nearby, can join NXTutors for home, online or hybrid work. You choose the sectors you visit and the hours you teach, and you can teach entirely online if you prefer not to travel. Tutors who join confirm a phone or email with a one-time code and upload a government photo ID for review before the profile goes live; real tutors who pass carry a Verified badge. Each new family starts with a demo where we ask a parent to be at home, and you can stop at any time and tell us.",
+    "points": [
+      "Choose home, online or hybrid, and update it as your week changes.",
+      "List only the sectors and villages you want to visit.",
+      "Set your own hours; families see them before the demo.",
+      "Meet the family at a demo where we ask a parent to be at home.",
+      "Where a society uses a gate register or visitor app, ask to be added.",
+      "Keep contact with the parent, not privately with the student.",
+      "If you are uneasy, stop the classes and tell us through WhatsApp or the contact page."
+    ]
+  },
+  "story": [
+    "Confirm your phone or email with a one-time code, then add your base on the edge of the UT and the city sectors you will visit, or choose to teach online only.",
+    "Upload a government photo ID from your dashboard. Our team checks it against the details on your profile, which stays pending until review, and one ID can be linked to one tutor account only.",
+    "After the review, your profile goes live with the Verified badge, listing CBSE, ICSE, Punjab or Haryana board classes, the subjects you teach and the fee you have set.",
+    "A tricity family sends a request naming class, board and subject. We shortlist two or three tutors: the nearest first, then the zone and city, then online.",
+    "The family has seen your fee and books the first class as a free demo. Teach the chapter the student is doing in school, as you would in any normal lesson.",
+    "If the family carries on, you teach at their home, online or both, on days agreed with the parent. Keep your sectors and hours current as your timetable fills."
   ],
   "faqs": [
     [
@@ -63,6 +127,18 @@
     [
       "Where can I see what joining costs?",
       "On /pricing. Tutor plans are paid and the page lists what each one includes. The fee you charge families is separate and set by you."
+    ],
+    [
+      "Can a woman tutor here teach only in a few sectors?",
+      "Yes. Home requests use only the sectors and villages you list, so name just the places you are comfortable visiting. You can also teach online only. Every new family begins with a demo where we ask a parent to be at home, and our safeguarding policy sets out the habits we expect on both sides."
+    ],
+    [
+      "Which boards will tricity families mention?",
+      "CBSE is the national board, and our Chandigarh page also lists ICSE and ISC, the IB and Cambridge IGCSE, the Punjab board on the Mohali side and the Haryana board in Panchkula. Name every board you have taught; the request will state the one the family follows."
+    ],
+    [
+      "Can I teach online students outside Chandigarh from here?",
+      "Yes. Online requests are matched by subject, class and board rather than location, so a tutor in Dhanas or Maloya can be shortlisted for a student in another state. Agree the call tool with the family before the first class and send the link to the parent."
     ]
   ]
 }

@@ -5,6 +5,43 @@
     "site": "https://www.mahahsscboard.in",
     "summary": "The Maharashtra State Board of Secondary and Higher Secondary Education, with its head office in Pune, is an autonomous body under Maharashtra Act No. 41 of 1965. It conducts the SSC (Class 10) and HSC (Class 12) examinations through nine divisional boards, with a main and a supplementary examination each year. Its site explains the Class Improvement Scheme, marks verification, photocopies and revaluation, and offers digital marksheets on the board site and DigiLocker."
   },
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Maharashtra State Board of Secondary and Higher Secondary Education, Pune",
+      "site": "https://www.mahahsscboard.in",
+      "classes": "SSC (Class 10), HSC (Class 12)",
+      "note": "The Maharashtra State Board, an autonomous body under Maharashtra Act No. 41 of 1965 with its head office in Pune, conducts SSC and HSC through nine divisional boards, with a main and a supplementary examination each year. Its site explains the Class Improvement Scheme, marks verification, photocopies and revaluation, which a tutor may be asked about."
+    },
+    {
+      "key": "cbse",
+      "name": "Central Board of Secondary Education (CBSE)",
+      "site": "https://www.cbse.gov.in",
+      "classes": "Classes 1–12; board examinations in Classes 10 and 12",
+      "note": "CBSE is listed on our Mumbai, Pune and Nagpur pages. A Maharashtra tutor who takes CBSE students alongside SSC ones should keep the two apart: NCERT-based chapters and the sample papers on cbseacademic.nic.in for CBSE, the state board's own textbooks and papers for SSC."
+    },
+    {
+      "key": "cisce",
+      "name": "Council for the Indian School Certificate Examinations (CISCE)",
+      "site": "https://cisce.org",
+      "classes": "ICSE (Class 10), ISC (Class 12)",
+      "note": "Our Mumbai page sets SSC Class 10 Algebra, ICSE Physics and IB Chemistry HL side by side as three different jobs. ICSE and ISC appear on our Pune and Nagpur pages too. Tutors who teach the council's courses should prepare from its specimen papers and list ICSE and ISC as separate lines."
+    },
+    {
+      "key": "ib",
+      "name": "International Baccalaureate (IB)",
+      "site": "https://www.ibo.org",
+      "classes": "Primary Years, Middle Years and Diploma Programmes",
+      "note": "The IB appears on our Mumbai and Pune pages, where international programmes add internally assessed work to final exams. Maths runs as Analysis and Approaches or Applications and Interpretation at Standard or Higher Level. Our Pune page is blunt about internal assessment: a tutor may talk it through but must never write it."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge IGCSE",
+      "site": "https://www.cambridgeinternational.org",
+      "classes": "IGCSE, usually around Classes 9–10",
+      "note": "Cambridge IGCSE is mentioned for a smaller group of Pune students and on our Mumbai page; our Nagpur page notes that IGCSE families there may combine a local tutor with an online specialist. Prepare with past papers, command words and the right tier, Core or Extended."
+    }
+  ],
   "intro": [
     "Three Maharashtra cities have tuition-jobs pages with zones: Mumbai (with Thane and Navi Mumbai), Pune and Nagpur. Tutors there should choose zones on those pages. For Nashik, Chhatrapati Sambhajinagar, Kolhapur, Solapur, Amravati, Nanded and the state's other towns, this page is where you begin. Name your town and the parts of it you can reach. A home request is offered first to the nearest suitable tutors, so being exact about your base matters. Online lessons are matched on subject, class and board, not on where you live, and are open to you straight away.",
     "Maharashtra students may take the SSC and HSC through the state board, which works through nine divisional boards, or follow CBSE, ICSE or another board. List each board you can teach and the medium, such as Marathi or English. The board's site has its evaluation pages and FAQs, which are worth reading before a demo. Every request gives the parent two or three tutors with fees visible; the first class is a free demo, you set the fee, and families may switch later. Tutors who teach junior college classes should name their HSC subjects."
@@ -12,60 +49,80 @@
   "towns": [
     {
       "name": "Nashik",
-      "note": "Weekend or weekday slots in Nashik? You choose them."
+      "note": "Nashik tutors register through this state page, as our Maharashtra city pages cover Mumbai, Pune and Nagpur. Enter your nagar precisely, because home requests always start with the nearest tutor; video lessons can bring students from anywhere."
     },
     {
       "name": "Chhatrapati Sambhajinagar",
-      "note": "Teaching from home in Chhatrapati Sambhajinagar? Online classes work too."
+      "note": "Some families still say Aurangabad, so a Chhatrapati Sambhajinagar tutor can write the locality the way neighbours know it. Then list SSC and HSC classes separately from any CBSE or ICSE ones, since each request names its board."
     },
     {
       "name": "Kolhapur",
-      "note": "Your preferred classes in Kolhapur can go on your profile."
+      "note": "Kolhapur tutors who teach in Marathi and English can put the medium against each subject. A family whose child studies in one language looks for a tutor who teaches in it, and stating it up front avoids an awkward demo."
     },
     {
       "name": "Solapur",
-      "note": "Nearby families in Solapur see the closest tutors first."
+      "note": "Solapur tutors who are comfortable teaching two siblings in one visit can mention it on the profile. A family may ask for that, and agreeing at the demo how the time is split between the two children avoids confusion later."
     },
     {
       "name": "Amravati",
-      "note": "Hours you can give in Amravati belong on your profile."
+      "note": "Amravati tutors new to NXTutors should know that families may switch tutor later without paying for the change. Treat it as part of finding the right fit; a clear profile and a well-prepared demo make a mismatch less likely in the first place."
     },
     {
       "name": "Nanded",
-      "note": "Students outside Nanded can still book you online."
+      "note": "Nanded teachers who help students with the state board's supplementary examination or the Class Improvement Scheme can mention it separately. Families in that situation look for a tutor who knows the process, which is set out on the board's site."
     },
     {
       "name": "Sangli",
-      "note": "Sangli tutors who also cover Miraj can list Sangli and Miraj both."
+      "note": "Sangli tutors willing to visit students in particular parts of a neighbouring town can name those places. Listing real localities, rather than a broad radius, keeps the home requests you are offered within comfortable reach after school."
     },
     {
       "name": "Jalgaon",
-      "note": "Start online from Jalgaon before a nearby family asks."
+      "note": "Jalgaon tutors who like working with Classes 6 to 8 can make that their focus. Those years carry students from arithmetic into algebra and from general science into separate subjects, and a family uneasy about that step looks for a tutor who knows it."
     },
     {
       "name": "Akola",
-      "note": "Tutors who live in Akola can mark nearby localities."
+      "note": "Akola tutors who teach Classes 1 to 5 can keep that range on its own line. Parents of young children tend to look for patient reading, early arithmetic and a routine for homework, and that separate line helps the shortlist find you."
     },
     {
       "name": "Latur",
-      "note": "Say how far beyond Latur you will travel for lessons."
+      "note": "Latur teachers with HSC science or maths can name the exact subjects they take, and mark online to reach senior students across the state. Keep your home list to the areas you can reach without strain on a school evening."
     },
     {
       "name": "Ahilyanagar",
-      "note": "Home lessons in Ahilyanagar go first to tutors nearby."
+      "note": "Ahilyanagar was earlier called Ahmednagar, and some parents may still use the old name. Write your locality the familiar way, list the boards you teach, and remember that home requests reach the nearest suitable tutors first."
     },
     {
       "name": "Satara",
-      "note": "Say whether lessons in Satara run in English or Marathi."
+      "note": "Satara tutors with SSC board-year students can describe how they run timed practice and revision in the final months. Younger students need explanation first and board candidates need papers, so a profile that shows you can do both reassures a parent."
     },
     {
       "name": "Dhule",
-      "note": "Mark which areas near Dhule you will visit."
+      "note": "Dhule tutors new to private teaching can begin with a short list of classes and subjects and widen it later. A family compares two or three profiles before the demo, and a focused one is easier to trust than a list of everything."
     },
     {
       "name": "Chandrapur",
-      "note": "Keep both options open from Chandrapur: home and online."
+      "note": "Some Chandrapur tutors may also be able to visit students in Nagpur. Nagpur's tuition-jobs page has its own zones; listing the specific localities you would visit regularly, after your own Chandrapur area, keeps home requests realistic."
     }
+  ],
+  "women": {
+    "intro": "Across Maharashtra's towns, from Nashik and Kolhapur to Amravati and Chandrapur, women who tutor can join NXTutors and decide exactly how they work. Home lessons, online lessons or a hybrid of the two are all on offer, and only the areas you name are used for home requests. Your hours are shown to parents before any demo. Every tutor who joins confirms a phone or email by one-time code and uploads a government photo ID for our team to review; the profile stays hidden until then, and real tutors who pass display the Verified badge.",
+    "points": [
+      "Home, online or hybrid: one tick on the profile, changeable any time.",
+      "Name the nagars and areas you will visit; home requests stay within them.",
+      "Parents see your available hours before booking a demo.",
+      "First lessons happen where we ask a parent to be at home.",
+      "In a housing society, ask to be logged in the visitor app or gate register.",
+      "Discuss timings and fees with the parent.",
+      "If anything feels wrong, stop the classes and write to us on WhatsApp."
+    ]
+  },
+  "story": [
+    "Sign-up. A one-time code confirms your phone or email. Then add your Maharashtra town, the areas you can reach, your teaching medium and whether you also teach online.",
+    "ID. From the dashboard you upload a government photo ID. Our team reviews it while your profile waits; one ID number is tied to one tutor account only.",
+    "Live. Cleared profiles appear with the Verified badge, listing SSC, HSC, CBSE or ICSE classes, your subjects, your medium and the fee you decided on for each lesson.",
+    "Request. A family near you asks for a tutor and names class, board and subject. Two or three tutors are shortlisted, closest first, then the wider city, then online.",
+    "Demo. The family has already seen your fee, and the first lesson is a free demo for them. Teach whatever chapter the student is on in school.",
+    "Teaching. If they continue, lessons happen at home, online or both, on days fixed with the parent. Update your areas and hours as the week fills."
   ],
   "faqs": [
     [
@@ -87,6 +144,18 @@
     [
       "What do tutor plans cost?",
       "Tutor plans are paid, and /pricing lists each one and what it includes. Your lesson fee is set by you and shown to parents before they book."
+    ],
+    [
+      "Can women tutors in Maharashtra stay online only?",
+      "Yes. An online-only profile is shortlisted on subject, class and board, not on where you live. If you add home lessons later, they use only the areas you name, and the first lesson with each new family is a demo where we ask a parent to be at home."
+    ],
+    [
+      "Which boards do Maharashtra families mention?",
+      "SSC and HSC under the state board, CBSE, ICSE and ISC, and, as our Mumbai and Pune pages note, the IB and Cambridge IGCSE. List only what you have taught, with medium and classes; every request names the family's board."
+    ],
+    [
+      "Is hybrid teaching possible?",
+      "Yes. Tick home and online, give the areas for home lessons and online hours if they differ. Some tutors keep separate home and online students; others teach one student at home on weekdays and online before tests, as agreed with the parent."
     ]
   ]
 }

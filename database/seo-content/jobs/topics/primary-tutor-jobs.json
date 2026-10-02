@@ -51,11 +51,49 @@
     }
   ],
   "faqs": [
-    ["Are there tuition jobs for Class 1 to 5 near me?", "Primary requests are matched nearest first, so the areas you list decide which families can see you. Add every locality you can reach reliably after school, and requests from families there are offered to tutors in or travelling to that area before anyone further away. We do not publish counts; what reaches you depends on families nearby."],
-    ["Can I teach all subjects for a primary child?", "Yes, and at this level one tutor for all core subjects is the usual arrangement: reading, English, maths, EVS and Hindi. A single tutor sees how a reading difficulty also affects maths word problems and EVS answers. Name the subjects you cover, and any you would rather leave out."],
-    ["Is online tuition possible for Class 1 to 5?", "It can be, in limited cases: a Class 5 child already comfortable on a laptop, or a short reading or Hindi session with a parent beside the child. Home teaching suits young children better. If you offer online, agree the call tool with the parent and keep the child's notebook on camera."],
-    ["How often do primary children have tuition?", "Shorter and more frequent works better at this age. For all subjects plus homework, three to five sessions a week is a common starting plan, reviewed after about a month. One weak subject, such as Hindi, may need only two sessions a week."],
-    ["What does the NXTutors ID check cover?", "Identity. You confirm your phone or email with a one-time code and upload a government photo ID, which our team reviews before your profile goes live. Tutors who pass carry a Verified badge. It is not a police or background check, which is why families also use the demo and simple safety habits."],
-    ["Is there a cost to join as a primary tutor?", "Our pricing page lists the tutor plans and what each includes; check it before you sign up. The fee you charge for each class is set by you and is shown to parents before the free demo, separately from your plan."]
-  ]
+    [
+      "Are there tuition jobs for Class 1 to 5 near me?",
+      "Primary requests are matched nearest first, so the areas you list decide which families can see you. Add every locality you can reach reliably after school, and requests from families there are offered to tutors in or travelling to that area before anyone further away. We do not publish counts; what reaches you depends on families nearby."
+    ],
+    [
+      "Can I teach all subjects for a primary child?",
+      "Yes, and at this level one tutor for all core subjects is the usual arrangement: reading, English, maths, EVS and Hindi. A single tutor sees how a reading difficulty also affects maths word problems and EVS answers. Name the subjects you cover, and any you would rather leave out."
+    ],
+    [
+      "Is online tuition possible for Class 1 to 5?",
+      "It can be, in limited cases: a Class 5 child already comfortable on a laptop, or a short reading or Hindi session with a parent beside the child. Home teaching suits young children better. If you offer online, agree the call tool with the parent and keep the child's notebook on camera."
+    ],
+    [
+      "How often do primary children have tuition?",
+      "Shorter and more frequent works better at this age. For all subjects plus homework, three to five sessions a week is a common starting plan, reviewed after about a month. One weak subject, such as Hindi, may need only two sessions a week."
+    ],
+    [
+      "What does the NXTutors ID check cover?",
+      "Identity. You confirm your phone or email with a one-time code and upload a government photo ID, which our team reviews before your profile goes live. Tutors who pass carry a Verified badge. It is not a police or background check, which is why families also use the demo and simple safety habits."
+    ],
+    [
+      "Is there a cost to join as a primary tutor?",
+      "Our pricing page lists the tutor plans and what each includes; check it before you sign up. The fee you charge for each class is set by you and is shown to parents before the free demo, separately from your plan."
+    ]
+  ],
+  "story": [
+    "Sign up with a one-time code and add the primary classes you teach, the subjects you cover, such as reading, maths, EVS and Hindi, and the localities near you.",
+    "Upload a government photo ID from the dashboard. Our team reviews it before any family can see you, and the same ID cannot be used for a second profile.",
+    "Your profile goes live with the Verified badge, showing Classes 1 to 5, your subjects, the after-school hours you keep and the fee you have set.",
+    "A parent close by asks for help with a Class 2 child's reading, for example. Primary work is close-to-home, so tutors living nearest are shortlisted first.",
+    "The demo is free for the family, and your fee is already known. Keep it short and friendly, where we ask a parent to be at home, and show how a normal session would run.",
+    "Teach in a shared room at the family's home, in short sessions on the days agreed, and keep homework and progress notes going through the parent."
+  ],
+  "women": {
+    "intro": "Families with young children sometimes ask for a woman tutor, and NXTutors treats that as their preference rather than a rule about who can teach small children. For women who tutor Classes 1 to 5, the work is usually close to home, so the controls matter: you choose the localities you visit, the after-school hours you keep, and whether some work is online. Every tutor who joins goes through an ID check before the profile goes live, real tutors who pass carry the Verified badge, and each first lesson is a demo where we ask a parent to be at home.",
+    "points": [
+      "Keep home visits to the few localities you can reach after school.",
+      "Pick the days and hours that suit you; short, regular sessions suit young children.",
+      "Online is possible for older primary children with a parent nearby.",
+      "Expect a parent at home for the demo and an adult in the house for every lesson.",
+      "Teach in a shared room, never a closed bedroom.",
+      "Keep messages with the parent; do not contact the child directly.",
+      "Stop any arrangement that worries you and tell us; /safeguarding-policy explains how we act on reports."
+    ]
+  }
 }

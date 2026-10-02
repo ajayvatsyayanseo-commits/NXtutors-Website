@@ -5,6 +5,43 @@
     "site": "https://kseab.karnataka.gov.in",
     "summary": "The Karnataka School Examination and Assessment Board, under the Government of Karnataka, runs the SSLC examination at the end of Class 10 and the II PUC examination at the end of the pre-university course. Its 2026 notices refer to SSLC Examination 1 and 2, and registration for repeaters and private candidates is handled on the same site. The board publishes paper patterns and dates in its own circulars, so tutors should read those at source."
   },
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Karnataka School Examination and Assessment Board (KSEAB)",
+      "site": "https://kseab.karnataka.gov.in",
+      "classes": "SSLC (Class 10), II PUC (pre-university, second year)",
+      "note": "KSEAB runs the SSLC examination after Class 10 and the II PUC examination at the end of pre-university. Its 2026 notices refer to SSLC Examination 1 and 2, and repeaters and private candidates register on the same site. Paper patterns and dates sit in the board's own circulars, which a tutor should read at source rather than second-hand."
+    },
+    {
+      "key": "cbse",
+      "name": "Central Board of Secondary Education (CBSE)",
+      "site": "https://www.cbse.gov.in",
+      "classes": "Classes 1–12; board examinations in Classes 10 and 12",
+      "note": "Our Bengaluru page lists CBSE alongside the state's SSLC and PUC route. A Karnataka tutor taking CBSE students should plan from NCERT and the current session's sample papers on cbseacademic.nic.in, and keep CBSE and SSLC classes as separate lines so each request lands correctly."
+    },
+    {
+      "key": "cisce",
+      "name": "Council for the Indian School Certificate Examinations (CISCE)",
+      "site": "https://cisce.org",
+      "classes": "ICSE (Class 10), ISC (Class 12)",
+      "note": "ICSE and ISC also appear on our Bengaluru page. Compared with SSLC, the ICSE syllabus tends to cover more ground in several subjects, and the council's examiners look for complete, well laid out answers. Keep the specimen papers from cisce.org at hand when you prepare a first lesson."
+    },
+    {
+      "key": "ib",
+      "name": "International Baccalaureate (IB)",
+      "site": "https://www.ibo.org",
+      "classes": "Primary Years, Middle Years and Diploma Programmes",
+      "note": "Our Bengaluru page notes that a Karnataka SSLC student and an IB Diploma Chemistry student need very different teachers. In the Diploma, internal assessment counts with the final exams, and maths comes as Analysis and Approaches or Applications and Interpretation at Standard or Higher Level. Coach the method; never write the coursework."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge IGCSE",
+      "site": "https://www.cambridgeinternational.org",
+      "classes": "IGCSE, usually around Classes 9–10",
+      "note": "For Cambridge IGCSE, our Bengaluru page puts command words, the correct tier and marking against official schemes on a par with content. A tutor elsewhere in Karnataka who knows IGCSE well can mark online teaching, since such families are matched on subject and board rather than distance."
+    }
+  ],
   "intro": [
     "Bengaluru has a tuition-jobs page with a large set of zones, and tutors there should choose their zones on that page. Elsewhere in Karnataka, including Mysuru, Mangaluru, Hubballi, Dharwad, Belagavi and Kalaburagi, you join from this state page with your town named. Home requests reach the closest suitable tutors first, so the town you give is what puts you in front of a nearby family. Online requests ignore distance and are matched by class, board and subject, which lets a tutor in Udupi or Tumakuru teach a student in another state.",
     "A Karnataka student may sit the SSLC and II PUC examinations run by KSEAB, or study under CBSE, ICSE or another board. List all the boards you know, with the medium, whether Kannada or English. KSEAB's circulars on its own site are where the current SSLC and PUC details live. Every request ends with two or three tutors for the parent to compare; your fee, set by you, is shown before a free first class, and the family can switch later. Tutors who help II PUC students should name their PUC subjects as well."
@@ -12,56 +49,76 @@
   "towns": [
     {
       "name": "Mysuru",
-      "note": "Your preferred classes in Mysuru can go on your profile."
+      "note": "A tutor in Mysuru can be put forward for Bengaluru students online when the subject, class and board match, while home lessons stay with Mysuru families nearby. Write your layout or locality precisely, and list SSLC, PUC and any CBSE or ICSE classes separately."
     },
     {
       "name": "Mangaluru",
-      "note": "Write down your Mangaluru neighbourhood; nearby requests come first."
+      "note": "Mangaluru tutors who teach in English and Kannada can show which medium goes with which subject. A family's request often makes the medium clear, so this one detail decides whether a demo is worth both sides' time."
     },
     {
       "name": "Hubballi",
-      "note": "Hubballi tutors who also cover Dharwad can list Hubballi and Dharwad both."
+      "note": "Hubballi and Dharwad sit side by side, and a tutor in one may be glad to visit the other. If so, name the specific Dharwad localities you can reach instead of the whole city, so the home requests offered to you stay practical."
     },
     {
       "name": "Dharwad",
-      "note": "You can run home visits in Dharwad alongside online lessons."
+      "note": "College students in Dharwad who tutor around their own classes can list only the weekday afternoons or weekend slots they keep free. Parents compare those hours and your fee with two other tutors before choosing a demo."
     },
     {
       "name": "Belagavi",
-      "note": "Boards you teach in Belagavi should all be listed."
+      "note": "Belagavi teachers preparing students for SSLC Examination 2 can say so as its own line. Families whose child is sitting the second examination will look for that experience, and the board's circulars give the current details."
     },
     {
       "name": "Kalaburagi",
-      "note": "Online students can choose a Kalaburagi tutor from anywhere."
+      "note": "From Kalaburagi, online teaching opens up students across Karnataka and beyond, while home lessons stay within your own part of town. Tick both modes, give separate hours if they differ, and agree any split with the parent at the demo."
     },
     {
       "name": "Davanagere",
-      "note": "Nearby families in Davanagere see the closest tutors first."
+      "note": "Davanagere tutors teaching II PUC should name the subjects, not just the level: physics, chemistry, mathematics, biology or commerce subjects. Senior students compare tutors on that detail, and a clear list puts you on the right shortlists."
     },
     {
       "name": "Ballari",
-      "note": "Start online from Ballari before a nearby family asks."
+      "note": "Ballari tutors with II PUC commerce, accountancy, business studies, economics or statistics, should name each subject rather than writing commerce. KSEAB's circulars set the current pattern, and a demo planned from them shows a student how marks are awarded."
     },
     {
       "name": "Shivamogga",
-      "note": "Say whether lessons in Shivamogga run in English or Kannada."
+      "note": "Shivamogga tutors can use the profile to explain how they teach: how a lesson starts, how homework is checked, how progress is shared with parents. Families compare shortlists closely, and a clear method stands out more than a long list of subjects."
     },
     {
       "name": "Tumakuru",
-      "note": "Please list the Tumakuru localities you can reach."
+      "note": "Tumakuru tutors who teach primary children can list Classes 1 to 5 by themselves. Parents of young learners usually look for patience, reading and early number work, and separating that range from SSLC classes helps the shortlist match you well."
     },
     {
       "name": "Udupi",
-      "note": "Online lessons let Udupi tutors teach in other states."
+      "note": "Udupi tutors should put down the exact locality they live in, then any neighbouring places they will visit. Home matching works outward from the family, nearest tutor first, so a precise address brings nearby requests to you before anyone further away."
     },
     {
       "name": "Vijayapura",
-      "note": "Weekend or weekday slots in Vijayapura? You choose them."
+      "note": "A Vijayapura tutor starting out can begin with a short list of classes and subjects and grow it later. Families see everything on the profile before the demo, so a focused, honest list reads more convincingly than one that claims every subject."
     },
     {
       "name": "Hassan",
-      "note": "Hours you can give in Hassan belong on your profile."
+      "note": "Hassan tutors who know both KSEAB and CBSE patterns can list each board with its classes. The family's request names its board, so covering both, where you genuinely have, lets you be shortlisted for either kind of student."
     }
+  ],
+  "women": {
+    "intro": "Women who tutor across Karnataka, in Mysuru, Mangaluru, Hubballi or a district town, can join NXTutors and shape their own teaching week. Visit students at home, teach online or combine the two, and list only the layouts and localities you are comfortable reaching. The hours you keep are the hours families see. Each tutor who joins confirms a phone or email by one-time code and uploads a government photo ID for our team to review before the profile appears; real tutors who pass carry a Verified badge. Your first lesson with any family is a demo where we ask a parent to be at home.",
+    "points": [
+      "Home, online or hybrid is your decision, and you can change it.",
+      "Only the layouts and localities you list are used for home requests.",
+      "Choose your hours; weekends only is fine.",
+      "Every first lesson is a demo where we ask a parent to be at home.",
+      "In an apartment complex, ask to be added to the visitor app or gate register.",
+      "Keep all messages about classes with the parent.",
+      "Stop any arrangement that worries you and tell us through WhatsApp or the contact page."
+    ]
+  },
+  "story": [
+    "Join from any Karnataka town by entering a one-time code sent to your phone or email. Add your layout or locality, the places you will visit and your preferred medium.",
+    "Upload a government photo ID from the tutor dashboard. Our team reviews it before your profile is shown, and an ID number can be tied to only one tutor account.",
+    "Once you clear the review, your profile is live with the Verified badge, showing SSLC, PUC, CBSE or ICSE classes, your subjects and the fee you chose.",
+    "A family nearby sends a request naming class, board and subject. Two or three tutors are shortlisted, nearest first, then the wider city, then online.",
+    "Your fee is already on the profile the family saw, and the first lesson is a free demo for them. Teach the chapter the student has in school this week.",
+    "If the family continues, lessons run at home, online or both on days agreed with the parent. Keep your localities and hours current as students join."
   ],
   "faqs": [
     [
@@ -83,6 +140,18 @@
     [
       "Is joining paid?",
       "Yes, tutor plans are paid, and /pricing lists what each includes. Your lesson fee is your own and is shown to the parent before the demo."
+    ],
+    [
+      "Can women tutors in Karnataka choose online only?",
+      "Yes. Online-only profiles are matched by subject, class and board, wherever the student lives. If you add home lessons later, they use only the localities you list, and each new family meets you at a demo where we ask a parent to be at home."
+    ],
+    [
+      "Which boards do Karnataka families ask for?",
+      "Our Bengaluru page lists the state's SSLC and PUC route, CBSE, ICSE and ISC, and the IB and Cambridge IGCSE. Name only the boards you have taught, with the medium for each; every request states the family's board."
+    ],
+    [
+      "Can I teach some students at home and some online?",
+      "Yes. Mark both modes, give the localities for home lessons, and add online hours if they differ. A hybrid arrangement with one student, such as home lessons on weekdays and online sessions before tests, is agreed with the parent at the demo."
     ]
   ]
 }

@@ -5,6 +5,43 @@
     "site": "https://dge.tn.gov.in",
     "summary": "The Directorate of Government Examinations conducts the State Board examinations for Std X (SSLC) and Std XII (Higher Secondary) in Tamil Nadu. The State Board of School Examinations was formed in 2011 by merging the Board of Secondary Education and the Board of Higher Secondary Examinations. The directorate has seven regional offices, holds special supplementary examinations for students who do not pass in March or April, and publishes a question bank and sample papers."
   },
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Directorate of Government Examinations, Tamil Nadu (State Board)",
+      "site": "https://dge.tn.gov.in",
+      "classes": "SSLC (Std X), Higher Secondary (Std XII)",
+      "note": "The Directorate of Government Examinations conducts the State Board examinations for Std X (SSLC) and Std XII. The State Board of School Examinations was formed in 2011 by merging two earlier boards. The directorate has seven regional offices, holds special supplementary examinations for students who do not pass in March or April, and publishes a question bank and sample papers."
+    },
+    {
+      "key": "cbse",
+      "name": "Central Board of Secondary Education (CBSE)",
+      "site": "https://www.cbse.gov.in",
+      "classes": "Classes 1–12; board examinations in Classes 10 and 12",
+      "note": "Our Chennai and Coimbatore pages both list CBSE. A Tamil Nadu tutor who teaches it beside the State Board should plan CBSE lessons from NCERT and the current sample papers on cbseacademic.nic.in, and label each class by board so that a request for one does not reach a tutor of the other."
+    },
+    {
+      "key": "cisce",
+      "name": "Council for the Indian School Certificate Examinations (CISCE)",
+      "site": "https://cisce.org",
+      "classes": "ICSE (Class 10), ISC (Class 12)",
+      "note": "ICSE and ISC appear on our Coimbatore page in some depth and on our Chennai page as well. A tutor coming from State Board teaching should expect the council's syllabus to be ordered differently and its examiners to credit full, organised working; the specimen papers on cisce.org are the place to start."
+    },
+    {
+      "key": "ib",
+      "name": "International Baccalaureate (IB)",
+      "site": "https://www.ibo.org",
+      "classes": "Primary Years, Middle Years and Diploma Programmes",
+      "note": "Our Chennai page contrasts a Class 7 State Board learner with an IB Chemistry HL candidate to show how differently they must be taught. The Diploma mixes final exams with internally assessed coursework, and maths comes as Analysis and Approaches or Applications and Interpretation, each at Standard or Higher Level."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge IGCSE",
+      "site": "https://www.cambridgeinternational.org",
+      "classes": "IGCSE, usually around Classes 9–10",
+      "note": "For Cambridge IGCSE, our Chennai page says success comes from command words, the correct tier and past papers marked against the official scheme. A tutor elsewhere in Tamil Nadu who knows IGCSE can teach it online, since those requests are matched on subject and board rather than distance."
+    }
+  ],
   "intro": [
     "Chennai and Coimbatore have their own tuition-jobs pages with zones, and tutors in either city should pick their zones there. Madurai, Tiruchirappalli, Salem, Tiruppur, Erode, Vellore and Tamil Nadu's other towns start from this page. Join with your town and nearby localities. A family's home request goes to the tutors closest to them before anyone further away is considered, so a Thanjavur tutor is offered Thanjavur families first. Online lessons are open to all tutors regardless of town, matched by subject, class and board, which lets you teach a student in another state from home.",
     "A Tamil Nadu student may sit the SSLC or Higher Secondary through the Directorate of Government Examinations, or study under CBSE, ICSE or another board. The SSLC maths and science papers come in Tamil and English versions, so say which medium you teach. The directorate's question bank and sample papers are a good thing to read before a demo. Each request gives the parent two or three tutors and their fees, set by the tutors; the first class is a free demo, and switching later is free for families. Higher Secondary tutors should name their subjects."
@@ -12,60 +49,80 @@
   "towns": [
     {
       "name": "Madurai",
-      "note": "Students outside Madurai can still book you online."
+      "note": "Madurai has no NXTutors city page yet, so tutors there join from here. Give the nagar or area you live in and those you can reach for a weekday lesson. Home requests go to the closest suitable tutors first; online teaching reaches students across India."
     },
     {
       "name": "Tiruchirappalli",
-      "note": "Please list the Tiruchirappalli localities you can reach."
+      "note": "Tiruchirappalli tutors who teach SSLC maths or science should say whether they teach in Tamil, English or both. The directorate's SSLC papers come in Tamil and English versions, so the medium decides whether you suit a particular student."
     },
     {
       "name": "Salem",
-      "note": "Your preferred classes in Salem can go on your profile."
+      "note": "Salem tutors who will teach two children from the same home in one visit can say so on the profile. Families with siblings may ask, and the demo is where you agree how the time is shared and which subjects come first."
     },
     {
       "name": "Tiruppur",
-      "note": "Mark which areas near Tiruppur you will visit."
+      "note": "Tiruppur is close to Coimbatore, which has its own tuition-jobs page with zones. A Tiruppur tutor who can reach a few Coimbatore localities may add them, after their own town, so home requests stay within comfortable reach."
     },
     {
       "name": "Erode",
-      "note": "Online students can choose a Erode tutor from anywhere."
+      "note": "Erode tutors who teach Std XI and XII commerce or computer science can name each subject. Senior students compare tutors on depth in one subject, and the directorate's question bank gives you material for a focused demo."
     },
     {
       "name": "Vellore",
-      "note": "Say how far beyond Vellore you will travel for lessons."
+      "note": "Vellore teachers who help students prepare for the special supplementary examinations can show that as its own line. Families whose child did not pass in March or April look for that experience, and the directorate's site gives the details."
     },
     {
       "name": "Thoothukudi",
-      "note": "Online lessons let Thoothukudi tutors teach in other states."
+      "note": "Thoothukudi tutors interested in Std VI to VIII can make those classes their focus. They connect arithmetic with algebra and general science with separate subjects, and a parent unsure about that transition looks for a tutor who knows it well."
     },
     {
       "name": "Tirunelveli",
-      "note": "Write down your Tirunelveli neighbourhood; nearby requests come first."
+      "note": "Tirunelveli tutors teaching Std XII subjects should name each one precisely, not just Higher Secondary. Senior students compare tutors on subject depth, and the directorate's question bank and sample papers are sensible to read before a demo."
     },
     {
       "name": "Thanjavur",
-      "note": "Put your strongest subjects for Thanjavur students first."
+      "note": "Thanjavur tutors who teach Tamil or English as subjects can describe the classes and the skills they focus on: reading, grammar or writing. A language tutor is chosen on method, and a few clear sentences about yours help a parent decide."
     },
     {
       "name": "Dindigul",
-      "note": "Nearby families in Dindigul see the closest tutors first."
+      "note": "Dindigul tutors preparing a first lesson can ask the parent for a recent test paper and the lesson in progress. A demo built on that paper shows the family how you would work with their child every week."
     },
     {
       "name": "Hosur",
-      "note": "Keep both options open from Hosur: home and online."
+      "note": "Hosur sits on the Karnataka border, so a tutor here may meet families on Tamil Nadu's State Board and on Karnataka's SSLC. List each board you have taught separately; if you can reach particular Bengaluru localities, add them by name after Hosur itself."
     },
     {
       "name": "Nagercoil",
-      "note": "Weekend or weekday slots in Nagercoil? You choose them."
+      "note": "Nagercoil tutors should write the exact locality they live in before adding anywhere else. Home matching starts from the family's address and widens step by step, so a precise base keeps nearby requests coming to you first."
     },
     {
       "name": "Karur",
-      "note": "Home lessons in Karur go first to tutors nearby."
+      "note": "Karur tutors starting out in private tuition can begin with the classes and subjects they know most thoroughly. A family compares two or three profiles before the demo, and a focused, accurate one is easier to trust."
     },
     {
       "name": "Kanchipuram",
-      "note": "A tutor living in Kanchipuram can teach online across India."
+      "note": "Some Kanchipuram tutors may be able to reach parts of Chennai. If so, name those localities one by one after your own town; Chennai's tuition-jobs page is organised by zones, and specific places keep requests realistic."
     }
+  ],
+  "women": {
+    "intro": "In Tamil Nadu, women who tutor, from Madurai and Salem to Nagercoil and Hosur, can work through NXTutors on their own terms. Decide whether you visit homes, teach over video, or both. Pick the nagars you are willing to reach and leave the rest out; set the hours that fit your household. Families do not see you until you have confirmed a phone or email by one-time code and our team has gone through a government photo ID you upload; real tutors who clear that step show the Verified badge. Your first lesson with any family happens while a parent is home.",
+    "points": [
+      "Visits, video or both: tick what suits you and change it later.",
+      "Nagars you leave off the list never bring home requests.",
+      "The hours you enter are what parents see.",
+      "First lessons take place while a parent is home.",
+      "Flat complex with a visitor register? Ask the family to enter your name.",
+      "Talk fees and timings over with the parent.",
+      "Uneasy at any point? Stop the lessons and message us; we look into every report."
+    ]
+  },
+  "story": [
+    "On your side: a one-time code to your phone or email, then your Tamil Nadu town, the areas you can reach, the medium you teach in and whether online lessons suit you.",
+    "Behind the scenes: you upload a government photo ID from the dashboard and our team checks it. The profile is not shown until then, and that ID number belongs to your account alone.",
+    "What families see: the Verified badge once you clear review, the State Board, CBSE or ICSE classes you take, your subjects, your medium and the fee you have fixed.",
+    "When a request comes: a family close by gives class, board and subject, and two or three tutors are put forward, those living closest first, then wider, then online.",
+    "At the demo: the family has already read your fee and pays nothing for this first lesson. Teach the lesson their child is studying at school that week.",
+    "Afterwards: if they continue, you teach at home, online or both, on days settled with the parent, and you keep your areas and hours current."
   ],
   "faqs": [
     [
@@ -87,6 +144,18 @@
     [
       "Are plans paid?",
       "Yes. Tutor plans are paid and /pricing lists what each includes. Your lesson fee is separate and you set it."
+    ],
+    [
+      "As a woman tutor in Tamil Nadu, can I teach purely over video?",
+      "Yes. Tick online only and your name comes up for requests on subject, class and board, wherever the family lives. Should you add visits later, only the nagars you list are used, and a parent is home for every first lesson."
+    ],
+    [
+      "What boards might Tamil Nadu families name?",
+      "Our Chennai and Coimbatore pages mention the State Board, CBSE, ICSE and ISC, with IB and Cambridge IGCSE in Chennai. Write down only those you have taught, with Tamil or English medium beside each subject; every request states its board."
+    ],
+    [
+      "May I keep some students at home and others on video?",
+      "You may; that is hybrid. Tick both, list the nagars for visits and give video hours if they differ. One student can have both too, say a visit midweek and a video revision session before a test, if the parent agrees at the demo."
     ]
   ]
 }

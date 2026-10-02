@@ -11,6 +11,11 @@
      indigo    --nxt-ai      anything AI: NXT AI chat, AI compare, TutorTwin
      green     --nxt-whatsapp only buttons that open WhatsApp
      green     --nxt-verify  only "verified" and success
+     pink      --nx-pink     women tutors only (added 2 Oct 2026): the "Women tutors
+                             welcome" chip, the women-tutor sections and the
+                             pink seal "Verified · Woman tutor" on REAL, verified
+                             female tutors (App\Support\TutorBadge). Never on
+                             samples, never as a general accent.
      white     selected state (a chosen tab, filter or toggle), dark text on it
 
    Gold stars on ratings stay gold: that is a convention every parent reads.
@@ -28,7 +33,15 @@
   --nxt-ai-line:rgba(129,140,248,.45);
   --nxt-selected-bg:#EEF2F9;
   --nxt-selected-ink:#0A1020;
+  --nx-pink:#F9A8D4;            /* pink text on dark, 10:1 on the ground */
+  --nx-pink-fill:#BE185D;       /* pink fill, white text 6.2:1 */
+  --nx-pink-soft:rgba(244,114,182,.14);
+  --nx-pink-line:rgba(244,114,182,.5);
 }
+
+/* ---- women tutors: pink (see the role list above) ---------------------- */
+body.page .badge-verified.badge-verified--woman{border-color:var(--nx-pink-line);background:rgba(40,6,24,.92);color:var(--nx-pink)}
+body.page .nxchip.nxchip--woman{border-color:var(--nx-pink-line);background:var(--nx-pink-soft);color:var(--nx-pink)}
 
 /* ---- links and information: sky blue ---------------------------------- */
 body.page .main p > a:not([class]),

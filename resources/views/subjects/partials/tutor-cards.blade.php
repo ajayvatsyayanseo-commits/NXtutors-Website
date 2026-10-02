@@ -34,6 +34,7 @@
     'waLink' => $waLink,
     'profileUrl' => $profile,
     'sample' => ! empty($c['is_sample']),
+    'gender' => $c['gender'] ?? null,
     'placeLabel' => $c['place_label'] ?? null,
     'subjects' => (array) ($c['subjects'] ?? []),
     'boards' => (array) ($c['boards'] ?? []),

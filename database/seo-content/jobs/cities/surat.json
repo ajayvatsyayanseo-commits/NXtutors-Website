@@ -5,18 +5,107 @@
     "Many Surat students study under GSEB, the Gujarat Secondary and Higher Secondary Education Board, in Gujarati, English or another medium, so board and medium are matched together, and a Gujarati-medium GSEB student and an IGCSE candidate need different teachers. CBSE, ICSE and ISC are also followed, with the IB and Cambridge IGCSE for a smaller group. Home tuition works well when you stay on your own bank of the river. On the northern edge, in Amroli and Mota Varachha, families can pair a nearby tutor for regular subjects with an online specialist for senior papers, which suits tutors who teach both ways."
   ],
   "zone_notes": {
-    "Adajan, Pal & Rander": "Crossing the Tapi bridges at office hours is the slowest part of any trip here, so tutors who live on the western bank keep slots most easily. Pal and Palanpur societies want your name and the flat at the gate, Rander's old lanes need a landmark and a place for your two-wheeler, and BRTS corridors start at Adajan Patiya and Pal RTO.",
-    "Central Surat, Athwa & Ghod Dod Road": "Nanpura's narrow lanes suit a tutor on a two-wheeler or in an auto rather than a car hunting for parking. On Ghod Dod Road and around Parle Point, start straight after school, before the evening shopping crowd fills the road, and because the zone sits mid-city, tutors from Adajan, Piplod and City Light can reach it easily.",
-    "Piplod, Vesu & Dumas Road": "Nearly every home is in a gated society, so ask the family to arrange a standing visitor entry after the demo instead of fresh registration each week. Gaurav Path's BRTS lane brings in tutors who travel by bus, the Red Line is not open to passengers yet, and VIP Road and Dumas Road peak at office hours and weekend evenings.",
-    "Udhna, Althan & Pandesara": "Housing board blocks and small buildings usually mean going straight to the flat, while Althan and Bhatar societies register you at the gate desk once. Udhna Junction and the Sitilink corridor help, industrial shift changes fill the highway and estate roads, and tutors from Bhatar, City Light or Vesu can reach Althan without crossing the river.",
-    "Katargam, Varachha & Sarthana": "Diamond-unit shift times shape traffic in Katargam and Varachha, so choose an evening slot that starts after the shift rush. Smaller apartment buildings are a walk-up, newer Mota Varachha and Sarthana societies note visitors on the first day, and Sitilink runs from Katargam Darwaja towards Kosad and along Canal Road to Sarthana."
+    "Adajan, Pal & Rander": "Crossing the Tapi bridges at office hours is the slowest part of any trip here, so tutors who live on the western bank keep slots most easily. Pal and Palanpur societies want your name and the flat at the gate, Rander's old lanes need a landmark and a place for your two-wheeler, and BRTS corridors start at Adajan Patiya and Pal RTO. Mention a Sitilink stop if you travel by bus.",
+    "Central Surat, Athwa & Ghod Dod Road": "Nanpura's narrow lanes suit a tutor on a two-wheeler or in an auto rather than a car hunting for parking. On Ghod Dod Road and around Parle Point, start straight after school, before the evening shopping crowd fills the road, and because the zone sits mid-city, tutors from Adajan, Piplod and City Light can reach it easily. Its central position makes it an easy zone to add to almost any travel list.",
+    "Piplod, Vesu & Dumas Road": "Nearly every home is in a gated society, so ask the family to arrange a standing visitor entry after the demo instead of fresh registration each week. Gaurav Path's BRTS lane brings in tutors who travel by bus, the Red Line is not open to passengers yet, and VIP Road and Dumas Road peak at office hours and weekend evenings. A fixed weekday slot outside those peaks is the one most likely to hold all year.",
+    "Udhna, Althan & Pandesara": "Housing board blocks and small buildings usually mean going straight to the flat, while Althan and Bhatar societies register you at the gate desk once. Udhna Junction and the Sitilink corridor help, industrial shift changes fill the highway and estate roads, and tutors from Bhatar, City Light or Vesu can reach Althan without crossing the river. Agree a class time that falls after the shift traffic has cleared.",
+    "Katargam, Varachha & Sarthana": "Diamond-unit shift times shape traffic in Katargam and Varachha, so choose an evening slot that starts after the shift rush. Smaller apartment buildings are a walk-up, newer Mota Varachha and Sarthana societies note visitors on the first day, and Sitilink runs from Katargam Darwaja towards Kosad and along Canal Road to Sarthana. Amroli and Mota Varachha sit on the northern edge, so families there may pair a nearby tutor with an online specialist for senior papers."
   },
   "boards": "Surat tutors teach GSEB in Gujarati, English or another medium, as well as CBSE, ICSE and ISC, the IB Diploma and Cambridge IGCSE. GSEB sets the SSC at the end of Standard 10 and separate HSC Science and HSC General exams at the end of Standard 12; its board-published paper designs build each Standard 10 paper with a compulsory section of one-mark objective items. Read paper designs, question banks and results on gseb.org and the board's e-service site, GUJCET notices from the board, CBSE material on cbseacademic.nic.in and CISCE documents on cisce.org.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Gujarat Secondary and Higher Secondary Education Board (GSEB)",
+      "site": "https://www.gseb.org/",
+      "classes": "SSC (Standard 10); HSC General and Science streams (Standard 12)",
+      "note": "GSEB conducts Surat's Standard 10 and Standard 12 public examinations, and many students study under it in Gujarati, English or another medium. The board says its schools teach Standard 12 physics, chemistry, biology and maths from NCERT textbooks, and GUJCET, its entrance test, is offered in Gujarati, English and Hindi. Read gseb.org first."
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "Surat's CBSE students live on both banks of the Tapi, from Adajan to Varachha. Ground lessons in NCERT and grade practice against the marking schemes on cbseacademic.nic.in. The CBSE year opens in April while GSEB and other schools publish their own calendars, so plan revision around each school's dates.",
+      "page": "/cbse-home-tutor-surat"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "The CISCE council sets ICSE for Class 10 and ISC for Class 12. Both expect long, organised answers across a wide syllabus, with English literature and project work, so Surat tutors for these boards build revision cycles that revisit early chapters. Specimen papers are on cisce.org.",
+      "page": "/icse-home-tutor-surat"
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "IB Diploma results combine final papers with internal assessment, and its Mathematics comes as AA or AI, each at Standard or Higher Level. Surat tutors who coach the IA without writing it, and know the subject guide from ibo.org, can teach Piplod or Vesu students at home and others online.",
+      "page": "/ib-tutor-surat"
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "For Cambridge IGCSE, command words, the correct tier and marked past papers carry most of the weight. A Gujarati-medium GSEB student and an IGCSE candidate need different teachers, so list IGCSE only if you know it well, and check whether the school follows Cambridge or Pearson Edexcel.",
+      "page": "/igcse-tutor-surat"
+    }
+  ],
+  "women": {
+    "intro": "NXTutors in Surat is open to women tutors for home, online and hybrid work. Set your own zones and hours: a tutor in Adajan or Pal can stay on the western bank, avoiding the Tapi bridges at office hours, while one in Vesu keeps to the societies nearby and teaches Katargam students online. Everyone who joins goes through one ID check, a parent sits in on the free demo at home, and the safeguarding policy sets rules for both sides. These are real controls, not a pledge about any person.",
+    "points": [
+      "Home, online or hybrid can be selected and changed on your profile at any time.",
+      "Your travel areas are your choice; staying on one bank of the Tapi is a perfectly good plan.",
+      "The hours you list as free tell Surat families when you teach, so late slots are optional.",
+      "Every family starts with a free demo where we ask a parent to be at home.",
+      "In Piplod, Vesu and Pal societies, ask the family to arrange a standing visitor entry so each visit is recorded at the gate.",
+      "Settle fees and timings with a parent, and do not move lesson chat to the student's private phone.",
+      "Teach young children where an adult can see; for online lessons, keep cameras on.",
+      "Uneasy about anything? Stop the classes and inform NXTutors with the word Safeguarding; ring 112 first in an emergency."
+    ]
+  },
+  "story": [
+    "Start with a one-time code on your phone or email, then add subjects, classes and boards, GSEB in Gujarati or English included, and the Surat zones on your side of the Tapi.",
+    "Upload a government photo ID; the team checks it before you appear to families. An ID number can belong to only one tutor account, and the check is about identity alone.",
+    "After approval, your profile is live with the Verified badge, showing your boards and medium, your zones from Rander to Sarthana, your free hours and your fee.",
+    "A family in Athwa or Udhna sends a request. NXTutors suggests two or three tutors: neighbours first, then tutors who travel to that area, then the zone, the city and online.",
+    "The family sees your fee before they book. Your first class is a free demo at their home where we ask a parent to be present, so you can judge the level and the bridge crossing.",
+    "Teach at homes on your bank, online for students across Gujarat and India, or both, perhaps a weekend visit to Vesu with online classes during the week."
+  ],
   "faqs": [
-    ["How does tuition work reach Surat tutors?", "Through matched requests, not open listings. A parent gives the class, board and medium, subjects, area and timings, and NXTutors sends back two or three tutors, closest first: same area, then tutors who travel there, then the zone, Surat and online. The parent sees your fee on the shortlist and books a free demo."],
-    ["Can Surat tutors take online students too?", "Yes. Choose online, home or both. Online requests are matched only on subject, board, class and the hours you are free, so you could teach a GSEB student in Gujarati medium in another district online and still take home classes on your own side of the Tapi."],
-    ["Should I offer home classes on both banks of the Tapi?", "Only if you can cross a bridge on time every week. It is usually easier to keep home classes on your own bank and offer online lessons across the river. If you live south of the Tapi, Piplod, City Light, Vesu, Althan and the old centre are within reach without a bridge."],
-    ["How does the ID check work for Surat tutors?", "When you join, you confirm a phone number or email with a one-time code and upload a government photo ID. Our team reviews it before your profile goes live, and real tutors who pass get a Verified badge. It is an ID check, not a police check; How we verify tutors (/how-we-verify-tutors) explains more."],
-    ["Do I need to buy a plan to teach in Surat?", "Yes, tutor plans are paid, and the Pricing page (/pricing) sets out what each plan covers. You set your own lesson fee, which Surat families see on your profile before the free demo. Parents can change tutor without paying more, so arriving on time through the shift-change rush keeps a family with you."]
+    [
+      "How does tuition work reach Surat tutors?",
+      "Through matched requests, not open listings. A parent gives the class, board and medium, subjects, area and timings, and NXTutors sends back two or three tutors, closest first: same area, then tutors who travel there, then the zone, Surat and online. The parent sees your fee on the shortlist and books a free demo."
+    ],
+    [
+      "Can Surat tutors take online students too?",
+      "Yes. Choose online, home or both. Online requests are not tied to your address and rest on subject, board and class, so you could teach a GSEB student in Gujarati medium in another district online and still take home classes on your own side of the Tapi."
+    ],
+    [
+      "Should I offer home classes on both banks of the Tapi?",
+      "Only if you can cross a bridge on time every week. It is usually easier to keep home classes on your own bank and offer online lessons across the river. If you live south of the Tapi, Piplod, City Light, Vesu, Althan and the old centre are within reach without a bridge."
+    ],
+    [
+      "How does the ID check work for Surat tutors?",
+      "When you join, you confirm a phone number or email with a one-time code and upload a government photo ID. Our team reviews it before your profile goes live, and real tutors who pass get a Verified badge. It is an ID check, not a police check; How we verify tutors (/how-we-verify-tutors) explains more."
+    ],
+    [
+      "Do I need to buy a plan to teach in Surat?",
+      "Yes, tutor plans are paid, and the Pricing page (/pricing) sets out what each plan covers. You set your own lesson fee, which Surat families see on your profile before the free demo. Parents can change tutor without paying more, so arriving on time through the shift-change rush keeps a family with you."
+    ],
+    [
+      "Can a woman tutor in Surat stay on one bank of the Tapi?",
+      "Yes. You list the zones you travel to, and home requests follow them, while the hours you keep free show parents when you can come, so you can keep home lessons on the western bank and teach the rest online. A parent is at home for the free demo, so you meet the family before agreeing a weekly time."
+    ],
+    [
+      "Which boards should a Surat tutor be ready for?",
+      "GSEB, in Gujarati, English or another medium, plus CBSE, CISCE's ICSE and ISC, the IB Diploma and Cambridge IGCSE. List the boards, classes and medium you actually teach, since a Gujarati-medium Standard 9 student and an IGCSE candidate need different tutors."
+    ],
+    [
+      "How does a hybrid plan work with a Surat family?",
+      "Choose both modes, then agree the split with the parent after the demo. If reaching the family means a bridge crossing at office hours or roads crowded at diamond-unit shift times, a weekend home lesson with online classes midweek is easier to keep."
+    ]
   ]
 }
