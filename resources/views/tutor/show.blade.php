@@ -219,33 +219,13 @@
   $expYears = preg_match('/\d+(?:\.\d+)?\+?/', $exp, $expMatch) ? $expMatch[0] : '';
   $expText  = ($expYears !== '' && $exp === $expYears) ? $exp.' years' : $exp;
 
-  // The About text is plain text from the tutor's profile form. Blank lines
-  // separate blocks; a block whose lines all start with "•" or "-" is a list;
-  // a short single line is a heading; anything else is a paragraph. Every
-  // piece is escaped, because this is tutor input rendered on a public page.
+  // The About text is plain text from the tutor's profile form; the About
+  // section builds its cards from it (App\Support\TutorAbout).
   $aboutText = trim(str_replace("\r", '', (string)($tutor->profile_desc ?? '')));
   // A tutor who has written a full bio does not need the templated blocks
   // ("About X – Board Tutor in Area", methodology, home vs online, why parents
   // choose): they only repeat it, and repeated boilerplate reads as thin content.
   $richBio = mb_strlen(trim(strip_tags(((string) ($tutor->profile ?? '')).' '.((string) ($tutor->profile_desc ?? ''))))) >= 600;
-  $aboutHtml = null;
-  if ($aboutText !== '') {
-    $aboutHtml = '';
-    foreach (preg_split('/\n\s*\n/', $aboutText) as $block) {
-      $lines = array_values(array_filter(array_map('trim', explode("\n", $block)), 'strlen'));
-      if (!$lines) continue;
-      $isList = count(array_filter($lines, fn ($l) => preg_match('/^[•\-]\s*/u', $l))) === count($lines);
-      if ($isList) {
-        $aboutHtml .= '<ul class="nxabout__list">';
-        foreach ($lines as $l) $aboutHtml .= '<li>'.e(preg_replace('/^[•\-]\s*/u', '', $l)).'</li>';
-        $aboutHtml .= '</ul>';
-      } elseif (count($lines) === 1 && mb_strlen($lines[0]) <= 80 && !preg_match('/[.!?]$/u', $lines[0])) {
-        $aboutHtml .= '<h3 class="nxabout__h">'.e(rtrim($lines[0], ':')).'</h3>';
-      } else {
-        $aboutHtml .= '<p>'.implode('<br>', array_map('e', $lines)).'</p>';
-      }
-    }
-  }
 
   // The short line under the name: the tutor's own 160-character summary when
   // they wrote one, otherwise the start of the About text.
@@ -326,18 +306,6 @@ html {
     backdrop-filter: blur(10px);
   }
   .nxcard--soft{box-shadow:0 12px 30px rgba(0,0,0,.28);}
-
-  /* About text, built from the tutor's plain-text profile */
-  .nxabout{line-height:1.8;font-size:15px;}
-  .nxabout p{margin:0 0 12px;}
-  /* About 70 characters a line: at full card width it ran ~135, and the eye
-     lost its place going back to the start of each line. */
-  body.page .nxcard--soft .nxabout p,body.page .nxcard--soft .nxabout__list,body.page .nxcard--soft .nxabout__h,
-  body.page .nxabout p,body.page .nxabout__list{max-width:62ch;} /* outranks .nxcard--soft p{max-width:none} */
-  .nxabout__h{font-size:16px;font-weight:800;margin:18px 0 8px;}
-  .nxabout__h:first-child{margin-top:0;}
-  .nxabout__list{margin:0 0 12px;padding-left:20px;}
-  .nxabout__list li{margin:4px 0;}
 
   .nxclamp-4{
   display:-webkit-box;
@@ -464,6 +432,7 @@ html {
   .nxacc__body{margin-top:10px;color:rgba(226,232,240,.82);font-size:14px;line-height:1.7;}
 </style>
  <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/home.css?v={{ $nxtAssetV ?? 1 }}" />
+ <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/nx-about.css?v={{ $nxtAssetV ?? 1 }}" />
 </head>
 
 <body class="page">
@@ -614,15 +583,11 @@ html {
          side panel and every chat question carries their context. --}}
     @include('home.partials.ask-ai', ['kbTutor' => $tutor])
 
-   <section class="nxsec" id="aboutTutor" style="padding-top:20px;">
-  <div class="nxsec__head">
-    <h2 class="nxh2">About {{ $tutor->name }}</h2>
-  </div>
-
-  <div class="nxcard nxcard--soft" style="padding:20px;">
-    <div class="nxabout">{!! $aboutHtml ?? '<p>'.e($summaryText).'</p>' !!}</div>
-  </div>
-</section>
+    @include('tutor.partials.about-tank', [
+      'about' => \App\Support\TutorAbout::parse($aboutText, $travelAreas),
+      'fallbackText' => $summaryText,
+      'qualText' => $qual !== '' ? $qual : $deg,
+    ])
 
 
     {{-- ✅ 2) Teaching Details (courses + coursess fallback) --}}
