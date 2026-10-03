@@ -811,4 +811,176 @@ return [
             'names' => ['maligaon', 'adabari', 'jalukbari', 'north guwahati'],
         ],
     ],
+    // Bhubaneswar (6 Oct 2026, capital launch), from database/seo-content/areas/bhubaneswar-research.json.
+    'Bhubaneswar' => [
+        'North Bhubaneswar (Patia & Chandrasekharpur)' => [
+            'sectors' => [],
+            'names' => ['patia', 'chandrasekharpur', 'sailashree vihar'],
+        ],
+        'Central & East Bhubaneswar (Saheed Nagar & Rasulgarh)' => [
+            'sectors' => [],
+            'names' => ['saheed nagar', 'satya nagar', 'kharavela nagar', 'rasulgarh', 'mancheswar', 'laxmisagar'],
+        ],
+        'West Bhubaneswar (Nayapalli & Jaydev Vihar)' => [
+            'sectors' => [],
+            'names' => ['nayapalli', 'jaydev vihar', 'acharya vihar', 'irc village', 'baramunda'],
+        ],
+        'South Bhubaneswar (Old Town & Bapuji Nagar)' => [
+            'sectors' => [],
+            'names' => ['old town', 'samantarapur', 'bapuji nagar', 'pokhariput'],
+        ],
+        'South-West Bhubaneswar (Khandagiri & Patrapada)' => [
+            'sectors' => [],
+            'names' => ['khandagiri', 'jagamara', 'kalinga nagar', 'patrapada'],
+        ],
+    ],
+    // Raipur (6 Oct 2026, capital launch), from database/seo-content/areas/raipur-research.json.
+    'Raipur' => [
+        'Central Raipur' => [
+            'sectors' => [],
+            'names' => ['samta colony', 'fafadih', 'gudhiyari', 'devendra nagar', 'pandri'],
+        ],
+        'East Raipur' => [
+            'sectors' => [],
+            'names' => ['shankar nagar', 'avanti vihar', 'telibandha', 'mowa', 'daldal seoni', 'saddu'],
+        ],
+        'South Raipur' => [
+            'sectors' => [],
+            'names' => ['new rajendra nagar', 'pachpedi naka', 'amlidih', 'mahaveer nagar', 'bhatagaon', 'kamal vihar', 'kaushalya mata vihar'],
+        ],
+        'West Raipur' => [
+            'sectors' => [],
+            'names' => ['kota', 'tatibandh', 'sarona', 'kabir nagar'],
+        ],
+    ],
+    // Dehradun (6 Oct 2026, capital launch), from database/seo-content/areas/dehradun-research.json.
+    'Dehradun' => [
+        'Rajpur Road & Dalanwala' => [
+            'sectors' => [],
+            'names' => ['rajpur road', 'karanpur', 'dalanwala', 'jakhan', 'rajpur', 'malsi'],
+        ],
+        'Sahastradhara & Raipur' => [
+            'sectors' => [],
+            'names' => ['sahastradhara road', 'kishanpur', 'raipur road', 'raipur'],
+        ],
+        'Haridwar Road' => [
+            'sectors' => [],
+            'names' => ['race course', 'nehru colony', 'jogiwala', 'doiwala'],
+        ],
+        'Vasant Vihar & Chakrata Road' => [
+            'sectors' => [],
+            'names' => ['vasant vihar', 'indira nagar', 'indra nagar colony', 'ballupur', 'gms road', 'kanwali', 'prem nagar'],
+        ],
+        'Saharanpur Road & Clement Town' => [
+            'sectors' => [],
+            'names' => ['patel nagar', 'majra', 'turner road', 'clement town'],
+        ],
+    ],
+    // Vijayawada (6 Oct 2026, capital launch), from database/seo-content/areas/vijayawada-research.json.
+    'Vijayawada' => [
+        'Central Vijayawada' => [
+            'sectors' => [],
+            'names' => ['governorpet', 'gandhinagar', 'suryaraopet', 'labbipet', 'moghalrajpuram'],
+        ],
+        'Benz Circle & Patamata' => [
+            'sectors' => [],
+            'names' => ['benz circle', 'patamata', 'currency nagar', 'ramavarappadu'],
+        ],
+        'Eluru Road & North' => [
+            'sectors' => [],
+            'names' => ['gunadala', 'machavaram', 'satyanarayanapuram', 'ajit singh nagar'],
+        ],
+        'One Town & West' => [
+            'sectors' => [],
+            'names' => ['one town', 'old city', 'vidyadharapuram', 'bhavanipuram', 'gollapudi'],
+        ],
+        'Kanuru & Poranki' => [
+            'sectors' => [],
+            'names' => ['kanuru', 'tadigadapa', 'poranki', 'penamaluru'],
+        ],
+    ],
+    // Gandhinagar (6 Oct 2026, capital launch), from database/seo-content/areas/gandhinagar-research.json.
+    'Gandhinagar' => [
+        'Sectors 16–30 & Pethapur' => [
+            'sectors' => [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
+            'names' => ['sector 21', 'sectors 16 22 and 23', 'sectors 25 and 26', 'sector 30', 'pethapur'],
+        ],
+        'Sectors 1–8 & Infocity' => [
+            'sectors' => [1, 2, 3, 4, 5, 6, 7, 8],
+            'names' => ['sectors 2 and 3', 'sectors 6 7 and 8', 'infocity', 'vavol'],
+        ],
+        'Kudasan & Sargasan' => [
+            'sectors' => [],
+            'names' => ['kudasan', 'sargasan', 'randesan'],
+        ],
+        'Koba, Raysan & GIFT City' => [
+            'sectors' => [],
+            'names' => ['raysan', 'koba', 'gift city', 'adalaj'],
+        ],
+    ],
+    // Jammu (6 Oct 2026, capital launch), from database/seo-content/areas/jammu-research.json.
+    'Jammu' => [
+        'Rail Head & New City' => [
+            'sectors' => [],
+            'names' => ['gandhi nagar', 'nanak nagar', 'shastri nagar'],
+        ],
+        'Trikuta & Channi' => [
+            'sectors' => [],
+            'names' => ['trikuta nagar', 'channi himmat', 'channi rama', 'bathindi'],
+        ],
+        'Kunjwani & Sainik Colony' => [
+            'sectors' => [],
+            'names' => ['sainik colony', 'greater kailash', 'kunjwani'],
+        ],
+        'Old City & Sidhra' => [
+            'sectors' => [],
+            'names' => ['old city', 'raghunath bazar', 'purani mandi', 'pacca danga', 'rehari colony', 'bakshi nagar', 'sidhra'],
+        ],
+        'Janipur & Akhnoor Road' => [
+            'sectors' => [],
+            'names' => ['janipur', 'talab tillo', 'paloura', 'roop nagar'],
+        ],
+    ],
+    // Srinagar (6 Oct 2026, capital launch), from database/seo-content/areas/srinagar-research.json.
+    'Srinagar' => [
+        'Civil Lines' => [
+            'sectors' => [],
+            'names' => ['rajbagh', 'jawahar nagar', 'lal chowk', 'sonwar'],
+        ],
+        'Karan Nagar & Bemina' => [
+            'sectors' => [],
+            'names' => ['karan nagar', 'batamaloo', 'bemina'],
+        ],
+        'Airport Road' => [
+            'sectors' => [],
+            'names' => ['hyderpora', 'peerbagh', 'sanat nagar', 'rawalpora'],
+        ],
+        'Natipora & Nowgam' => [
+            'sectors' => [],
+            'names' => ['natipora', 'barzulla', 'nowgam', 'bagh e mehtab'],
+        ],
+        'North City' => [
+            'sectors' => [],
+            'names' => ['soura', 'buchpora', 'lal bazar', 'zadibal', 'nowshera', 'hazratbal'],
+        ],
+    ],
+    // Puducherry (6 Oct 2026, capital launch), from database/seo-content/areas/puducherry-research.json.
+    'Puducherry' => [
+        'Heritage Town' => [
+            'sectors' => [],
+            'names' => ['white town', 'french quarter', 'tamil quarter', 'heritage town', 'muthialpet'],
+        ],
+        'Mudaliarpet & Ariyankuppam' => [
+            'sectors' => [],
+            'names' => ['mudaliarpet', 'nellithope and anna nagar', 'nellithope', 'anna nagar', 'ariyankuppam', 'manavely', 'veerampattinam', 'thavalakuppam'],
+        ],
+        'Lawspet & ECR' => [
+            'sectors' => [],
+            'names' => ['lawspet', 'karuvadikuppam', 'kamaraj nagar', 'kalapet'],
+        ],
+        'Reddiarpalayam & Villianur' => [
+            'sectors' => [],
+            'names' => ['reddiarpalayam', 'saram', 'thattanchavady', 'villianur'],
+        ],
+    ],
 ];

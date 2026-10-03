@@ -2219,4 +2219,472 @@ return [
             ],
         ],
     ],
+    // Bhubaneswar (6 Oct 2026, capital launch), from database/seo-content/areas/bhubaneswar-zone-guides.json.
+    'Bhubaneswar' => [
+        'North Bhubaneswar (Patia & Chandrasekharpur)' => [
+            'guide' => 'bhubaneswar-home-tuition-guide',
+            'intro' => [
+                'Patia, Chandrasekharpur and Sailashree Vihar form the northern end of Bhubaneswar, where former villages surrounded by forest and farmland became part of the city as it grew north. Chandrasekharpur takes in smaller colonies such as Damana, Infocity, Niladri Vihar, Rail Vihar, Nalco Nagar and Gajapati Nagar. Housing ranges from apartment complexes and builder floors to houses on numbered plots, with IT offices and large education campuses close to many homes.',
+                'Nandankanan Road is the main route through the zone, running north towards the zoological park in the Chandaka forest. Patia station lies on the Howrah-Chennai main line and the Kharagpur-Puri line, and Bhubaneswar New station, opened in July 2018, serves the northern edge of the city. No metro runs in Bhubaneswar, so most tutors come by two-wheeler or car, using the train and an auto only when they live further away.',
+            ],
+            'tips' => [
+                'Give the colony name as well as the area, such as Damana, Niladri Vihar or Rail Vihar within Chandrasekharpur, plus the plot or block number, so the tutor finds the right lane first time.',
+                'Nandankanan Road slows when offices and colleges open and close, so fix a weekday lesson outside those hours or choose a tutor who already lives in the northern colonies.',
+                'Apartment complexes in Patia usually register visitors at the gate; pass the tutor\'s name to the guard before the demo so the first lesson starts on time.',
+            ],
+        ],
+        'Central & East Bhubaneswar (Saheed Nagar & Rasulgarh)' => [
+            'guide' => 'bhubaneswar-home-tuition-guide',
+            'intro' => [
+                'Saheed Nagar, Satya Nagar, Kharavela Nagar, Rasulgarh, Mancheswar and Laxmisagar cover the busy centre and east of the city. Kharavela Nagar is Unit 3 of the capital planned in 1948, while Saheed Nagar was laid out around 1960 as the tenth unit and is now known for its shops on Janpath. Satya Nagar was farmland before the city reached it, and Rasulgarh and Laxmisagar sit on the main road between Cuttack and Puri.',
+                'This side of the city has the most railway stations. Vani Vihar station in Saheed Nagar doubles as a crossing point to Rasulgarh, Mancheswar station has five platforms and the East Coast Railway\'s carriage repair workshop, and Bhubaneswar station is within easy reach of Kharavela Nagar and Laxmisagar. Mancheswar\'s industrial estate lies along National Highway 16, with residential colonies around it, and many homes across the zone are flats with a guard at the entrance.',
+            ],
+            'tips' => [
+                'Janpath and the Cuttack-Puri road fill up in the evening, so give the tutor a lane landmark rather than a shop, and leave some margin around the start time.',
+                'In Mancheswar, name the residential colony and a landmark away from the industrial roads; a tutor sent to a factory gate can lose the first part of the lesson.',
+                'A tutor living on the far side of the railway can still reach Rasulgarh or Saheed Nagar through the Vani Vihar crossing, so do not rule them out on the map alone.',
+            ],
+        ],
+        'West Bhubaneswar (Nayapalli & Jaydev Vihar)' => [
+            'guide' => 'bhubaneswar-home-tuition-guide',
+            'intro' => [
+                'Nayapalli, Jaydev Vihar, Acharya Vihar, IRC Village and Baramunda make up the colonies west of the old centre, many of them developed by the Bhubaneswar Development Authority beyond the first planned units. Ekamra Kanan, the botanical garden created in Nayapalli in 1985 and the city\'s largest park, is the obvious landmark. IRC Village began as cottages for delegates to the Indian Roads Congress session of 1982, and Acharya Vihar falls within the area of the 1968 master plan.',
+                'Baramunda\'s bus terminal, opened in March 2024, is the largest in Odisha, and city bus routes make the western colonies easier than most to reach without a vehicle. National Highway 16 runs along the eastern side of the zone, and Bhubaneswar and Vani Vihar are the nearest stations for most homes. Housing is a mix of flats, independent houses and builder floors, so some visits start at a gate register and others at the front door.',
+            ],
+            'tips' => [
+                'So many colonies sit next to each other here that a tutor from the neighbouring colony is often available; ask for one before looking across the city.',
+                'Roads near the highway and the park entrances get crowded on evenings and holidays, so a slightly earlier or later slot keeps lessons regular.',
+                'For homes near Baramunda, give a landmark away from the bus terminal entrance, where long-distance buses arriving and leaving can hold up the last stretch.',
+            ],
+        ],
+        'South Bhubaneswar (Old Town & Bapuji Nagar)' => [
+            'guide' => 'bhubaneswar-home-tuition-guide',
+            'intro' => [
+                'Old Town, Samantarapur, Bapuji Nagar and Pokhariput cover the south of the city, where Bhubaneswar began. Old Town grew around the Lingaraja temple, in its present form since the late eleventh century, and the Bindusagar tank, and its neighbourhoods developed from old villages; Samantarapur is now Ward 59 of the municipal corporation. Bapuji Nagar is Unit 1 of the planned capital, known for its Unit 1 market, and Pokhariput lies on the southern fringe near the airport.',
+                'Bhubaneswar station at Master Canteen, opened in 1896 and now the headquarters station of the East Coast Railway, is beside Bapuji Nagar, and Lingaraj Temple Road station on Ekamra Marg serves the temple side. Homes range from older houses in narrow lanes to newer two- and three-bedroom apartment buildings. In the inner lanes most homes open straight onto the street, and a two-wheeler or e-rickshaw is easier than a car.',
+            ],
+            'tips' => [
+                'In Old Town and Samantarapur, send a temple or lane landmark and a phone number before the first class, as narrow lanes can be hard to find from a map pin alone.',
+                'Temple festivals, including the Lingaraja temple\'s Rukuna Ratha Yatra on Ashokashtami, draw large crowds, so check the festival calendar when fixing the weekly timetable.',
+                'Near Bapuji Nagar\'s market, parking is limited in the evening; give a residential lane as the meeting point rather than the market itself.',
+            ],
+        ],
+        'South-West Bhubaneswar (Khandagiri & Patrapada)' => [
+            'guide' => 'bhubaneswar-home-tuition-guide',
+            'intro' => [
+                'Khandagiri, Jagamara, Kalinga Nagar and Patrapada form the newer south-western side of Bhubaneswar, a mix of planned colonies, unplanned colonies and former villages. Khandagiri is named after the hill that, with Udayagiri beside it, holds rock-cut caves from the second or first century BCE. Kalinga Nagar is mostly builder floors and multi-storey buildings, with a public park in its K-8 sector, while Patrapada has grown along National Highway 16 around a large medical campus.',
+                'Khandagiri Square is a major stop on the city bus network, and a bus depot stands nearby, so tutors without a vehicle can reach the Khandagiri and Jagamara side. Further out the picture changes: much of the housing in Kalinga Nagar and Patrapada is new, apartment complexes have staffed gates, and a two-wheeler or car is the practical way in. A tutor from within the zone, or from Baramunda or Pokhariput, is the easiest match.',
+            ],
+            'tips' => [
+                'For a new complex in Patrapada or Kalinga Nagar, share the complex name, tower and flat number and register the tutor at the gate before the demo.',
+                'Khandagiri Square gets busy at weekends when visitors come to the caves, so weekday evening lessons are usually easier to keep than weekend ones here.',
+                'When the right specialist lives in the north of the city, combine home lessons with online sessions rather than asking for a long ride each week.',
+            ],
+        ],
+    ],
+    // Raipur (6 Oct 2026, capital launch), from database/seo-content/areas/raipur-zone-guides.json.
+    'Raipur' => [
+        'Central Raipur' => [
+            'guide' => 'raipur-home-tuition-guide',
+            'intro' => [
+                'Samta Colony, Gudhiyari, Devendra Nagar, Pandri and Fafadih form the old middle of Raipur, grouped around Raipur Junction, which opened in 1888. Samta Colony is a settled neighbourhood with its own banks and temples, Gudhiyari is mostly flats beside busy shopping streets, and Devendra Nagar is laid out in numbered sectors of houses and builder floors. Pandri\'s commercial streets once held the city bus stand, and Fafadih Chowk is where the expressway towards Nava Raipur begins.',
+                'Because these localities sit so close to the station and to one another, a family here can usually draw on tutors from almost every part of the city, and a tutor arriving by train has only a short ride left. Most homes are houses or builder floors, so the tutor comes straight to the door. The difficulty is the evening rush on the station roads and in the Pandri markets, which can make a late tutor out of a reliable one.',
+            ],
+            'tips' => [
+                'Give the sector and house number in Devendra Nagar, or a lane landmark in Gudhiyari and Samta Colony, rather than just the locality name.',
+                'Fix the lesson before the evening build-up on the station roads and around Pandri\'s markets, or choose a tutor who lives in your own colony.',
+                'If the tutor travels by train to Raipur Junction, agree a start time that leaves room for the auto ride from the station.',
+            ],
+        ],
+        'East Raipur' => [
+            'guide' => 'raipur-home-tuition-guide',
+            'intro' => [
+                'Shankar Nagar and Avanti Vihar, off VIP Road, are established residential areas of apartments, builder floors, villas and houses, with autos and cabs easy to find. Telibandha surrounds the lake built in 1835, now a promenade on Gaurav Path known as Marine Drive. North-east along Vidhan Sabha Road, Mowa and Daldal Seoni mix apartments, villas and houses, and Saddu is still filling in, largely plots on which families are building their own homes.',
+                'This side of Raipur moves only by road, since the narrow-gauge line through Telibandha was closed and turned into the expressway. Tutors come by two-wheeler, car or auto, and the expressway from Fafadih helps those coming from the centre. Apartment complexes keep visitor registers, while Saddu\'s spread-out plots need a map pin. Avanti Vihar near Shankar Nagar and Avani Vihar near Mowa are two different places, so a full address avoids a wasted first trip.',
+            ],
+            'tips' => [
+                'Write the address in full and say whether you mean Avanti Vihar off VIP Road or Avani Vihar near Mowa, so the tutor does not end up in the wrong colony.',
+                'Homes near Telibandha Lake should allow extra time on weekend and evening lessons, when the lakefront draws crowds.',
+                'In Saddu and Daldal Seoni, look first for tutors living along Vidhan Sabha Road, and keep lesson times clear of office-hour traffic on it.',
+            ],
+        ],
+        'South Raipur' => [
+            'guide' => 'raipur-home-tuition-guide',
+            'intro' => [
+                'New Rajendra Nagar, Pachpedi Naka, Amlidih, Mahaveer Nagar, Bhatagaon and Kamal Vihar spread along the Ring Road and Dhamtari Road. New Rajendra Nagar sits where NH-30 meets NH-53, and Pachpedi Naka is the junction of Dhamtari Road and the Ring Road. Amlidih and Mahaveer Nagar are mostly houses, villas and plots, Bhatagaon holds the inter-state bus terminal that opened in November 2021, and Kamal Vihar, now Kaushalya Mata Vihar, is a planned township in numbered sectors.',
+                'Planned layouts make homes in this zone simple to find once a tutor has the sector, block and plot number, and the bus terminal is a landmark everyone recognises. Many families live in independent houses, so arrival is usually at the door, though apartment blocks ask for a visitor\'s name. The pressure points are the big junctions: Pachpedi Naka carries heavy and commercial traffic, and roads near the terminal get busy as long-distance buses arrive and depart.',
+            ],
+            'tips' => [
+                'For Kamal Vihar, send the sector, block and plot number and mention both names, Kamal Vihar and Kaushalya Mata Vihar, since tutors may know either.',
+                'Pick a tutor who lives on your side of Pachpedi Naka, so the weekly trip does not depend on crossing the junction at a busy hour.',
+                'In Bhatagaon, use the bus terminal as the first landmark and avoid lesson times that clash with long-distance departures and arrivals.',
+            ],
+        ],
+        'West Raipur' => [
+            'guide' => 'raipur-home-tuition-guide',
+            'intro' => [
+                'Kota, Tatibandh, Sarona and Kabir Nagar make up the Bhilai side of Raipur. Kota runs along the Great Eastern Road, mostly apartments with some houses and plots, and the Hirapur vegetable market close by. Tatibandh is centred on the chowk where NH-53 meets Ring Road No. 2 and where the expressway to Bilaspur begins. Sarona has wide roads, parks and its own station, and Kabir Nagar is a large planned colony of houses and flat blocks near the highway.',
+                'West Raipur is where local trains genuinely help: Sarona and Saraswati Nagar stations serve this side as well as Raipur Junction, so a tutor can travel part of the way by rail. The national highway carries heavy vehicles through the day, which makes crossing it the slowest part of many trips. Kabir Nagar\'s block and house numbers make homes easy to find, while Tatibandh\'s apartment complexes register every visitor at the gate.',
+            ],
+            'tips' => [
+                'Choose a tutor who lives on your side of the highway or the Great Eastern Road, so lessons do not depend on a crossing at peak hours.',
+                'In Tatibandh\'s apartment complexes, ask the gate whether a tutor who comes every week can be given a standing visitor pass.',
+                'If a tutor comes by local train, Sarona station is a handy meeting point; agree the time with a little margin for the auto ride.',
+            ],
+        ],
+    ],
+    // Dehradun (6 Oct 2026, capital launch), from database/seo-content/areas/dehradun-zone-guides.json.
+    'Dehradun' => [
+        'Rajpur Road & Dalanwala' => [
+            'guide' => 'dehradun-home-tuition-guide',
+            'intro' => [
+                'Rajpur Road, Karanpur, Dalanwala, Jakhan, Rajpur and Malsi follow the road that leaves the city centre near the Clock Tower and climbs the valley towards Mussoorie. Old bungalows and independent houses line the lower stretch behind its shops and restaurants, Karanpur is a compact student neighbourhood of builder floors and small blocks, Dalanwala keeps green, quiet lanes of roomy homes, and Jakhan, Rajpur and Malsi on the upper slopes mix family houses, villas and newer apartment complexes.',
+                'There is no metro here: the proposed Metro Neo would put an interchange at Ghantaghar, but its project report has only been submitted. Tutors arrive by two-wheeler, car or auto, and the Dehradun Cantonment, whose board dates from 1913 and has its office at Garhi Cantt, borders the upper part of the zone with its own visitor rules. Evening shoppers crowd the lower road, while the upper valley turns cold and dark early in winter.',
+            ],
+            'tips' => [
+                'In Jakhan, Rajpur and Malsi, set winter lessons a little earlier in the evening, and choose a tutor who already lives on the upper side of Rajpur Road or in Kishanpur.',
+                'In Karanpur, avoid the hour when college classes let out in the afternoon, and give the tutor a shop name or lane number, because builder floors and shopfronts look alike.',
+                'In Malsi\'s newer complexes, register the tutor at the main gate before the demo and ask whether a regular visitor pass can follow once lessons are fixed.',
+            ],
+        ],
+        'Sahastradhara & Raipur' => [
+            'guide' => 'dehradun-home-tuition-guide',
+            'intro' => [
+                'Sahastradhara Road, Kishanpur and Raipur Road make up the north-east of Dehradun, where much of the city\'s newer housing has gone up. Sahastradhara Road heads out towards the Sahastradhara springs, with apartment complexes, builder floors, houses and plots and an office park on its lower stretch. Kishanpur sits where this corridor leaves the Rajpur Road belt and is mostly flats, while Raipur Road runs east past colonies of plots, villas and independent houses towards Raipur.',
+                'Raipur would be the eastern end of the proposed Metro Neo east-west corridor, with planned stops such as Upper Nathanpur and Hathikhana Chowk, but the line has not been approved for construction, so travel is by road. Gated complexes are common, so first visits usually start at a guard\'s desk. Office closing time slows the lower part of Sahastradhara Road, and homes further out towards Raipur tend to have fewer tutors living close by.',
+            ],
+            'tips' => [
+                'Send the guard the tutor\'s name, flat number and arrival time before the demo, and check where a two-wheeler can be parked inside the complex.',
+                'Schedule lessons on the lower Sahastradhara Road either before office closing time or well after it, when the traffic towards the city has eased.',
+                'Towards Raipur, widen the search to tutors from Dalanwala or Karanpur, and use online lessons for specialist subjects and for heavy-rain days in the monsoon.',
+            ],
+        ],
+        'Haridwar Road' => [
+            'guide' => 'dehradun-home-tuition-guide',
+            'intro' => [
+                'Race Course, Nehru Colony, Jogiwala and Doiwala run south-east along Haridwar Road, from long-settled city housing out to a separate town on National Highway 7. Race Course is mostly individual plots with some two- and three-bedroom flats, Nehru Colony near Fuwara Chowk is an older market locality with shops, banks and coaching centres, Jogiwala has grown around a busy junction linking the highway and the ring road, and Doiwala is a market town and tehsil of the district.',
+                'Doiwala grew after its railway station opened in 1900 and sits on the Laksar-Dehradun line between Harrawala and Kansrao, so a tutor there can travel by train as well as by road; the city\'s airport is also in Doiwala. In the city part of the zone, the proposed Metro Neo lists planned stops at Araghar Chowk and Nehru Colony, but nothing is being built. Jogiwala Chowk and the junctions towards Haridwar Road are slowest at office hours.',
+            ],
+            'tips' => [
+                'In Nehru Colony\'s market lanes, share an exact lane landmark and expect the tutor to come by two-wheeler, since evening shoppers fill the streets.',
+                'Around Jogiwala Chowk, set lessons outside office hours, or pick a tutor from Nehru Colony or Mohkampur who can arrive without crossing the centre.',
+                'In Doiwala, look first for a tutor living in the town or along the highway, and add online lessons for subjects whose specialist is based in Dehradun.',
+            ],
+        ],
+        'Vasant Vihar & Chakrata Road' => [
+            'guide' => 'dehradun-home-tuition-guide',
+            'intro' => [
+                'Vasant Vihar, Indira Nagar, Ballupur, GMS Road, Kanwali and Prem Nagar form the western housing belt of Dehradun along and off Chakrata Road. Vasant Vihar has good roads and apartment complexes beside builder floors and houses, Indira Nagar, often written Indra Nagar Colony, is mostly plots and ready houses, Ballupur grew around one of the main junctions heading west, GMS Road mixes showrooms with apartment complexes, Kanwali adds larger gated townships, and Prem Nagar sits at the western edge.',
+                'The proposed Metro Neo east-west corridor would begin at Ballupur Chowk, but it is still a plan, so tutors use two-wheelers, cars, autos and shared three-wheelers on the main roads, with Balliwala Chowk the nearest main bus stop for Vasant Vihar and Kanwali. Because the colonies sit side by side, tutors can move between them without entering the centre. Chakrata Road is heavy at office hours.',
+            ],
+            'tips' => [
+                'Match within the belt: a tutor from Vasant Vihar, Ballupur, GMS Road or Kanwali can usually reach any of the others without touching the city centre.',
+                'On GMS Road, start lessons early in the evening before shopping traffic builds, or choose a home in the quieter lanes behind the main road for doorstep arrival.',
+                'In Prem Nagar, prefer a tutor who lives nearby on Chakrata Road, and if your home is inside a defence area, confirm how a visitor is admitted before the demo.',
+            ],
+        ],
+        'Saharanpur Road & Clement Town' => [
+            'guide' => 'dehradun-home-tuition-guide',
+            'intro' => [
+                'Patel Nagar, Majra, Turner Road and Clement Town cover the south and south-west of Dehradun, around Saharanpur Road and the Inter State Bus Terminal. Patel Nagar, between Saharanpur Road and the centre, is known for its industrial area and builder floors; Majra is a developing locality where three-bedroom flats are common; Turner Road is largely independent houses; and Clement Town is a separate cantonment town, green and quiet, with a strong Tibetan Buddhist presence and a large stupa inaugurated in 2002.',
+                'This side of the city is its travel gateway: the ISBT handles intercity buses, electric city buses started in 2022, National Highway 307 leaves for Saharanpur, and Dehradun railway station in Govind Nagar, opened in 1899, is the terminus of the Laksar-Dehradun line. The proposed north-south Metro Neo corridor would run from the ISBT through Sewla Kalan, Lalpul and Patthari Bagh to the station, and a new four-lane bypass is under construction near Turner Road, so some routes may shift.',
+            ],
+            'tips' => [
+                'Keep lessons clear of the peak hours around the bus terminal and the industrial area, when shift and office traffic slows Saharanpur Road and Patel Nagar.',
+                'Inside Clement Town, check the cantonment\'s visitor procedure and give the tutor any pass or entry details before the first class.',
+                'In Patel Nagar\'s builder floors, share the floor number and the bell to ring, and pick a tutor from Turner Road or Majra for steady evening lessons.',
+            ],
+        ],
+    ],
+    // Vijayawada (6 Oct 2026, capital launch), from database/seo-content/areas/vijayawada-zone-guides.json.
+    'Vijayawada' => [
+        'Central Vijayawada' => [
+            'guide' => 'vijayawada-home-tuition-guide',
+            'intro' => [
+                'Gandhinagar, Governorpet, Suryaraopet, Labbipet and Moghalrajpuram form the commercial heart of Vijayawada. The Central mandal, headquartered at Gandhinagar, was created in 2018 from the old urban mandal. Governorpet is a textile trading district with its own state transport bus station, Labbipet is chiefly two- and three-bedroom flats near Bandar Road, Suryaraopet mixes flats, houses and clinics, and Moghalrajpuram lies under hills holding fifth-century cave shrines to Shiva.',
+                'No zone is simpler to reach. Vijayawada Junction, in use since 1888, stands in neighbouring Hanumanpet, and city buses and autos converge on the centre, so a tutor from almost any suburb can come without a vehicle. The difficulty is the last stretch: shop frontages, station traffic and scarce parking mean tutors arrive on two-wheelers or on foot, and most families live in the lanes behind the main streets rather than on them.',
+            ],
+            'tips' => [
+                'Give a lane landmark, such as a shop, temple or the cave hill in Moghalrajpuram, rather than only the street name, because homes sit behind the commercial frontage.',
+                'Avoid train arrival times and the market rush near the Junction; an evening slot after the shops quieten is the easiest to keep each week.',
+                'In Labbipet and Suryaraopet apartment buildings, give the guard the tutor\'s name and the flat number before the free demo.',
+            ],
+        ],
+        'Benz Circle & Patamata' => [
+            'guide' => 'vijayawada-home-tuition-guide',
+            'intro' => [
+                'Benz Circle, Patamata, Currency Nagar and Ramavarappadu make up the east-central zone around the city\'s busiest junction, where National Highways 16 and 65 meet and Bandar Road begins. Homes at Benz Circle are mostly low- and mid-rise flats; Patamata, a village panchayat until 1985, is largely two- and three-bedroom apartments between the junction and Auto Nagar; Currency Nagar mixes builder floors, houses and flats; and Ramavarappadu joined the metropolitan area in 2017.',
+                'A two-phase flyover, completed in November 2021, carries highway traffic over Benz Circle, and the Inner Ring Road, opened in 2016, links the Ramavarappadu ring with the Gollapudi Y-junction in the west. Ramavarappadu has a station on the Vijayawada-Nidadavolu loop line, and Madhura Nagar is close by. A metro has been planned through this area but none is running, so tutors still travel by road and the junction sets the timing.',
+            ],
+            'tips' => [
+                'Choose a tutor who lives on your own side of Benz Circle, so lessons never depend on crossing the junction at office hours.',
+                'Most buildings in Patamata and around the junction ask visitors to sign in, so share the block and flat number with the gate in advance.',
+                'A tutor from the western suburbs can take the Inner Ring Road to Ramavarappadu and skip the city centre; suggest it before the first visit.',
+            ],
+        ],
+        'Eluru Road & North' => [
+            'guide' => 'vijayawada-home-tuition-guide',
+            'intro' => [
+                'Gunadala, Machavaram, Satyanarayanapuram and Ajit Singh Nagar are the established colonies along and beside Eluru Road, one of the city\'s two main arteries. Gunadala, merged into the corporation in 1985, mixes traditional houses with newer flats below its hilltop Marian shrine. Machavaram is houses, villas and plots, Satyanarayanapuram is mostly flats between the business streets and the northern colonies, and Ajit Singh Nagar has stayed residential, with independent houses next to Payakapuram.',
+                'Rail is unusually close for a residential zone. Gunadala is a satellite station on the main line, now being upgraded to ease crowding at Vijayawada Junction, and Madhuranagar, open since 1899, serves the branch lines towards Gudivada and Machilipatnam. Most homes here are houses rather than gated buildings, so a tutor comes straight to the door, and colony lanes that look alike make a clear house number the main thing a family needs to send.',
+            ],
+            'tips' => [
+                'Plan online lessons or new timings for the days of the Gunadala shrine festival in February, when very large crowds fill the area.',
+                'Send the house number with a nearby landmark, because the colonies around Machavaram and Ajit Singh Nagar have many similar lanes.',
+                'A tutor who lives within these colonies, or along Eluru Road, can often ride over quickly; leave some margin at office hours.',
+            ],
+        ],
+        'One Town & West' => [
+            'guide' => 'vijayawada-home-tuition-guide',
+            'intro' => [
+                'One Town, Vidyadharapuram, Bhavanipuram and Gollapudi cover the old city and the western side along the Krishna. One Town takes in neighbourhoods such as Arjuna Veedhi, Islampet, Kothapet and Winchipet, with some of the busiest markets in the city. Vidyadharapuram, below the Kanaka Durga temple hill, mixes flats, villas and plots. Bhavanipuram grew from vacant plots into a trading suburb after the 1990s, and Gollapudi, on the Hyderabad road, joined the metropolitan area in 2017.',
+                'Two pieces of road changed travel here: the six-lane Kanaka Durga flyover, opened in 2020, runs from Bhavanipuram towards the main bus station across NH 65, and the Inner Ring Road starts at the Gollapudi Y-junction. Rayanapadu station was developed as a satellite to Vijayawada Junction. In the old city\'s lanes, though, a tutor parks a two-wheeler and walks, while western apartment buildings may keep a register at the gate.',
+            ],
+            'tips' => [
+                'For a One Town home, share a precise lane landmark and a phone number, and expect the tutor to walk the final part on foot.',
+                'Around Navaratri the roads near the temple hill are packed, so Vidyadharapuram families may move lessons online or shift the timing.',
+                'A tutor from Bhavanipuram, Gollapudi or Vidyadharapuram avoids the highway rush and suits a fixed evening slot.',
+            ],
+        ],
+        'Kanuru & Poranki' => [
+            'guide' => 'vijayawada-home-tuition-guide',
+            'intro' => [
+                'Kanuru, Tadigadapa, Poranki and Penamaluru form the newer belt along Bandar Road on the city\'s eastern edge. On 31 December 2020 the first three were merged with Yenamalakuduru into one municipality. Kanuru, known as an educational hub, is mostly apartments; Tadigadapa leans towards villas and larger three-bedroom flats; Poranki mixes flats, houses, villas and plots beside a quieter canal road; and Penamaluru, a mandal headquarters by the river, sits on the Gudivada-Vijayawada road.',
+                'There is little rail on this side, with Nidamanuru and Ramavarappadu the nearest stations, so tutors come by two-wheeler, auto or city bus along Bandar Road; buses also link Penamaluru with the main bus station and the railway station. Villa communities and apartment projects generally check visitors at the gate, while plotted lanes allow doorstep arrival. Because this is the outer edge of the city, a tutor from the same belt matters more here than elsewhere.',
+            ],
+            'tips' => [
+                'Ask a villa or apartment project\'s security desk for a standing visitor pass, so a regular tutor is not stopped at every lesson.',
+                'Avoid the hours when classes start and end near Kanuru\'s teaching institutions; the canal road is a good alternative when Bandar Road is slow.',
+                'If the right specialist lives across the city, keep online lessons for that subject and a nearby tutor for the rest.',
+            ],
+        ],
+    ],
+    // Gandhinagar (6 Oct 2026, capital launch), from database/seo-content/areas/gandhinagar-zone-guides.json.
+    'Gandhinagar' => [
+        'Sectors 16–30 & Pethapur' => [
+            'guide' => 'gandhinagar-home-tuition-guide',
+            'intro' => [
+                'This zone covers the capital\'s administrative core and the old town beside it. Sectors 16, 22 and 23 sit around the Sector-16 metro station, with state offices in 16 and homes in 22 and 23. Sector 21 adds a busy shopping area, Sectors 25 and 26 combine housing with the state industrial estate, and Sector 30 is known for government quarters in numbered blocks. Pethapur, once a princely state\'s seat and a separate municipality until June 2020, completes the zone.',
+                'Since 11 January 2026 the Yellow Line has run through the zone to Mahatma Mandir, with stations at Akshardham, Juna Sachivalaya, Sector-16 and Sector-24 on the way. Gandhinagar Capital railway station is in Sector 14. Most homes in the sectors are independent houses or low flats reached straight from the sector road, so a tutor usually parks at the gate. Sector 30 and Pethapur have no station, and tutors reach them by two-wheeler or car.',
+            ],
+            'tips' => [
+                'Give the sector, block letter and plot or quarter number in the request; in Sector 30 the government blocks are numbered, and that is how a tutor finds the right door.',
+                'Office hours around the secretariat and the Sector 26 industrial estate slow the roads, so ask for a late-afternoon or weekend slot rather than one at the end of the working day.',
+                'In Pethapur\'s old lanes send a landmark and a map pin before the demo, and in a newer gated colony leave the tutor\'s name at the gate.',
+            ],
+        ],
+        'Sectors 1–8 & Infocity' => [
+            'guide' => 'gandhinagar-home-tuition-guide',
+            'intro' => [
+                'The lower-numbered sectors were among the first laid out on the capital\'s grid, where lettered roads cross numbered roads at junctions such as CH-1 and JA-1. Sectors 2 and 3 are mainly independent and duplex houses in lettered blocks, and Sectors 6, 7 and 8 each keep their own shopping and community centre. Infocity, the city\'s main IT office area, sits alongside, and Vavol, a former village merged in 2020, has grown into a neighbourhood of apartment projects and bungalow schemes.',
+                'The Yellow Line reached this side of the city on 16 September 2024, with Sector-1 and Infocity among the first stations, and Sector-10A followed in April 2025. A tutor coming from Ahmedabad or from another sector can ride to Infocity or Sector-1 and finish by auto. Vavol has no station of its own, so tutors there mostly use K Road or the Uvarsad–Vavol Road. Traffic towards the IT offices builds at the start and end of the working day.',
+            ],
+            'tips' => [
+                'In the grid sectors, quote the nearest lettered junction with the block and plot number; it is usually all a tutor needs to reach the door.',
+                'In Vavol\'s gated apartment projects, share the tower, flat number and a phone number with the gate before the first lesson so the tutor is not held at the entrance.',
+                'Keep lessons clear of the hours when Infocity\'s offices open and close, or ask for a tutor who already lives in Sectors 2 to 8 and does not use the main roads.',
+            ],
+        ],
+        'Kudasan & Sargasan' => [
+            'guide' => 'gandhinagar-home-tuition-guide',
+            'intro' => [
+                'Kudasan, Sargasan and Randesan were villages until 18 June 2020, when the municipal corporation took them in. Town planning schemes have since given them new roads and plots, and apartment buildings now make up most of the housing. Kudasan mixes plotted homes and flats, Sargasan sits next to Infocity and Sector 3 with mostly two- and three-bedroom apartments, and Randesan, along the Ahmedabad–Gandhinagar Road, is largely three-bedroom flats with a few bungalow colonies.',
+                'Randesan and Dholakuva Circle stations opened on the Yellow Line in September 2024, Infocity station is the usual stop for Sargasan, and Kudasan residents tend to use Sector-1. The line runs one way into the capital and the other way to Ahmedabad, so tutors from either city can come by metro and finish by auto. Gated societies ask for the visitor\'s name, and the highway approaches are slowest during office hours.',
+            ],
+            'tips' => [
+                'Register the tutor with your society\'s guard, or in its visitor app, before the demo, and keep the same arrangement for every lesson.',
+                'Ask for a tutor living in Kudasan, Sargasan or Randesan itself; the three localities adjoin each other, so short trips make an evening slot easier to keep.',
+                'If the student commutes on the Yellow Line, plan a short online session for doubts on weekday evenings and keep the home lesson for the weekend.',
+            ],
+        ],
+        'Koba, Raysan & GIFT City' => [
+            'guide' => 'gandhinagar-home-tuition-guide',
+            'intro' => [
+                'The southern zone runs from the city\'s edge towards the Sabarmati and Ahmedabad. Raysan and Koba, both merged into the corporation in June 2020, have filled with apartment buildings, villas, row houses and plots. GIFT City is a planned business and finance district on the river, where homes are flats in high-rise towers. Adalaj, a census town since 2001 known for its carved stepwell, has grown along the highway around the cloverleaf where two main roads meet.',
+                'Koba has three Yellow Line stations, Koba Circle, Juna Koba and Koba Gaam, opened during 2025, and Raysan has its own stop. One station further on, the Violet Line branch to GIFT City begins; it opened to the public on 17 September 2024, and an extension towards Shahpur is approved but not yet open. Adalaj has no station, and families there usually use Tapovan Circle. Towers and gated societies check every visitor.',
+            ],
+            'tips' => [
+                'For a GIFT City tower, register the tutor with building security and send the tower and flat number ahead, since entry is controlled.',
+                'Choose a tutor who lives near the Yellow or Violet Line, or in Raysan or Koba, so the trip does not depend on the highway at office hours.',
+                'In Adalaj, bungalows allow doorstep arrival but gated projects ask for a name; where travel is long, mix home lessons with online classes.',
+            ],
+        ],
+    ],
+    // Jammu (6 Oct 2026, capital launch), from database/seo-content/areas/jammu-zone-guides.json.
+    'Jammu' => [
+        'Rail Head & New City' => [
+            'guide' => 'jammu-home-tuition-guide',
+            'intro' => [
+                'Gandhi Nagar, Nanak Nagar and Shastri Nagar form the oldest part of Jammu\'s planned new city on the left bank of the Tawi, grouped around Jammu Tawi railway station. Gandhi Nagar combines a large market with single-storey government quarters, private houses and some newer flats. Nanak Nagar is mostly independent houses on plotted lanes, split across three wards, while Shastri Nagar has a Housing Board colony where two-bedroom homes are the usual size.',
+                'Tutors arrive by two-wheeler, auto or car, and the station brings in anyone who travels by train. An elevated road carries through traffic into Gandhi Nagar, the Jewel Chowk road leads across to the old city, and flyover work between Satwari Chowk and Last Morh brings diversions until it is done. Inner-lane houses mean the tutor comes straight to the door, but government quarters may stop visitors at a gate first.',
+            ],
+            'tips' => [
+                'Give Gol Market Chowk or Last Morh as the landmark along with your lane, because those are the two points every local tutor already knows.',
+                'Book lessons before the Gandhi Nagar market roads fill up in the evening, or pick a tutor who lives in Nanak Nagar or Shastri Nagar and needs no main road at all.',
+                'If you live in government quarters, check how visitors are let in and tell the tutor before the demo so the first lesson starts on time.',
+            ],
+        ],
+        'Trikuta & Channi' => [
+            'guide' => 'jammu-home-tuition-guide',
+            'intro' => [
+                'Trikuta Nagar, Channi Himmat, Channi Rama and Bathindi cover the sector colonies and newer housing on the eastern side of the left bank. Trikuta Nagar is a Jammu Development Authority layout running from Sector 1 to Sector 9, including 5A, and Channi Himmat is a Housing Board colony also arranged in numbered sectors. Channi Rama and Bathindi have grown more recently, with two-bedroom homes in demand and many new flats rising among the houses.',
+                'Jammu Tawi is the main station for this zone, and the NH-44 bypass runs along its eastern edge. A road from Channi Himmat\'s first junction passes Sectors 4 and 7 to reach the bypass at Deeli, and Bhatindi Morh marks where Bathindi meets the highway. Houses in the older sectors give doorstep arrival, while newer apartment buildings in Bathindi may ask visitors to sign in, and some lanes in Channi Rama are hard to find.',
+            ],
+            'tips' => [
+                'In Trikuta Nagar and Channi Himmat, share the sector and house number; in Channi Rama\'s newer lanes, send a map pin as well, so the first visit does not go astray.',
+                'Look for a tutor from the same cluster of sectors, so that weekday lessons avoid the busy junctions near the station and the bypass.',
+                'For a flat in Bathindi, give the gate the tutor\'s name before the demo and ask whether a regular visitor entry can be kept for later lessons.',
+            ],
+        ],
+        'Kunjwani & Sainik Colony' => [
+            'guide' => 'jammu-home-tuition-guide',
+            'intro' => [
+                'Sainik Colony, Greater Kailash and Kunjwani sit in the south and south-east of Jammu, where the highway enters the city. Sainik Colony is a large plotted colony split into two wards, with its Extension still being built. Greater Kailash mixes houses with apartment buildings, and many homes are within walking distance of shops. Kunjwani grew around Kunjwani Chowk, where the Pathankot and Bishnah roads arrive and the bypass towards Nagrota starts, with homes in lanes behind the showrooms.',
+                'Bari Brahmana and Jammu Tawi are the stations nearest to this zone, but almost every tutor comes by road. A four-lane flyover from Kunjwani Chowk towards Satwari is being completed, and a link road is planned from the Sainik Colony junction to Purmandal Chowk. Greater Kailash Chowk, also called Trikuta Nagar Chowk, is listed in the master plan as needing a grade separator, a clear sign that it gets crowded at peak times.',
+            ],
+            'tips' => [
+                'Choose a tutor who already lives in Sainik Colony or Greater Kailash, so that lessons do not depend on crossing the highway junctions at office hours.',
+                'In Kunjwani, describe your lane by the shop or showroom at its corner, since homes lie off the main road and are easy to miss beside the busy chowk.',
+                'In an apartment building in Greater Kailash, register the tutor\'s name at the gate ahead of the demo; for a plotted house, the house number is enough.',
+            ],
+        ],
+        'Old City & Sidhra' => [
+            'guide' => 'jammu-home-tuition-guide',
+            'intro' => [
+                'The old city, Rehari Colony, Bakshi Nagar and Sidhra lie on the right bank of the Tawi. The old city\'s neighbourhoods, among them Purani Mandi, Pacca Danga, Kanak Mandi and Gumat, are narrow lanes opening into small squares, with older houses close together. Rehari and Bakshi Nagar are long-settled residential areas of houses on established lanes, each covered by two wards. Sidhra, on the river at the foot of the Shivalik hills, is newer and still building.',
+                'Raghunath Bazar, Kanak Mandi Road and Residency Road are among Jammu\'s busiest streets, so tutors in the core prefer a two-wheeler and sometimes finish the trip on foot. A road from the Rehari bridge joins Rehari with the old city, and Bakshi Nagar\'s road leads out to Akhnoor Road. Sidhra connects to the old city by its own bridge and to the southern colonies by the NH-44 bypass, and its apartment complexes may register visitors.',
+            ],
+            'tips' => [
+                'In the old city, send the name of the nearest square or shop and the exact lane, because a tutor on a two-wheeler cannot reach every doorway.',
+                'Families in Rehari and Bakshi Nagar can draw on tutors from Janipur and Talab Tillo without a river crossing, which makes a regular evening slot easier to keep.',
+                'In Sidhra, consider a mix of home lessons with a nearby tutor and online lessons with a specialist, as the right subject expert may live across the city.',
+            ],
+        ],
+        'Janipur & Akhnoor Road' => [
+            'guide' => 'jammu-home-tuition-guide',
+            'intro' => [
+                'Janipur, Talab Tillo, Paloura and Roop Nagar make up the north and west of the right bank. Janipur is a large area of four wards with a Jammu Development Authority colony and New Janipur along the foothills. Roop Nagar is a planned colony of plotted houses with a local shopping area of its own. Paloura spreads across three wards with much newer plotted housing, and Talab Tillo combines homes with a busy commercial chowk near Akhnoor Road.',
+                'Janipur Road runs towards Amphalla Chowk, Sarwal Road links Rehari Chungi with Paloura Chowk, and a further road joins Akhnoor Road to Paloura Chowk. Janipur Road and Sarwal Road are often congested, and narrow lanes leave little room to park, so a tutor on a two-wheeler is the practical choice. Minibuses, autos and cabs are easy to find around Talab Tillo, and Jammu Tawi station is on the other bank of the river.',
+            ],
+            'tips' => [
+                'Set an early-evening lesson time in Janipur and Roop Nagar, before traffic on Janipur Road builds, and keep the same slot every week.',
+                'In Paloura\'s newer plotted layouts, send a map pin before the first visit, because lanes can look alike and not every one is marked.',
+                'Around Talab Tillo Chowk, give a lane landmark rather than the chowk itself, and allow a little margin for the evening crowd at the market.',
+            ],
+        ],
+    ],
+    // Srinagar (6 Oct 2026, capital launch), from database/seo-content/areas/srinagar-zone-guides.json.
+    'Srinagar' => [
+        'Civil Lines' => [
+            'guide' => 'srinagar-home-tuition-guide',
+            'intro' => [
+                'Lal Chowk, Jawahar Nagar, Rajbagh and Sonwar form the riverside centre of Srinagar along the Jhelum. Lal Chowk is the main business district, with its clock tower roundabout and shops lining Residency Road. Jawahar Nagar was laid out by the government with wide roads, parks and equal plots, Rajbagh is known by its parts such as Pathan Bagh and Rajbagh Extension, and Sonwar Bagh stretches beneath the Takht-i-Sulaiman hill through colonies like Palpora and Indira Nagar.',
+                'Because this zone is the middle of the city, tutors can reach it from almost every direction, and a family here usually has the widest choice of home tutors. Most homes away from the market are independent houses where the tutor parks at the gate and walks in. The pressure points are timing rather than access: school opening and closing hours and the evening market crowd around Lal Chowk fill the main roads, so slots work better just after them.',
+            ],
+            'tips' => [
+                'In Rajbagh and Sonwar, write the exact part of the locality, such as Kursoo Rajbagh or Indira Nagar, plus a landmark, so the tutor does not search the whole area on the first visit.',
+                'Fix the lesson for late afternoon, once the school traffic has passed and before the evening shopping crowd builds near Lal Chowk.',
+                'Ask for a tutor from Jawahar Nagar, Rajbagh or Sonwar itself; a short ride across the centre is easy to keep up through the whole session.',
+            ],
+        ],
+        'Karan Nagar & Bemina' => [
+            'guide' => 'srinagar-home-tuition-guide',
+            'intro' => [
+                'Karan Nagar, Batamaloo and Bemina run west from the city centre. Karan Nagar is one of the two government-planned residential zones and holds the first civil colony declared in 1942, with Aali Kadal, Safa Kadal and Nawabazar around it. Batamaloo was for years the site of the main city bus stand, since moved to Qamarwari, and keeps busy shops and workshops. Bemina, once called Abhimanyupur, was developed into planned housing colonies by the Srinagar Development Authority.',
+                'Getting around this zone depends on two corridors. The city bypass passes Bemina on its way to Tengpora, Hyderpora and Sanat Nagar, which suits tutors who live along it, and the roads into Batamaloo and Karan Nagar carry market and daytime campus traffic. Bemina\'s colony lanes are the easiest for a tutor, with doorstep arrival and space to park; the older lanes of Karan Nagar and Batamaloo need a precise lane name and landmark sent ahead of the first lesson.',
+            ],
+            'tips' => [
+                'In Bemina, give the colony name, such as Boatman Colony or MIG Colony, along with the block or lane, because the area is made up of many separate colonies.',
+                'Avoid the bypass at peak hours: mid-afternoon or a later evening slot keeps a tutor\'s journey from Tengpora or Hyderpora predictable.',
+                'Batamaloo\'s main roads are busiest with market traffic in the morning and evening, so an after-lunch or early afternoon lesson there is often smoother.',
+            ],
+        ],
+        'Airport Road' => [
+            'guide' => 'srinagar-home-tuition-guide',
+            'intro' => [
+                'Hyderpora, Peerbagh, Sanat Nagar and Rawalpora lie on the south-western side of Srinagar, on the way towards the airport in Budgam district. Hyderpora has grown from a village on the edge of the city into a busy suburb of houses and plots and is known for its many coaching centres. Peerbagh is built around a planned cooperative colony, Sanat Nagar has its own post office that also serves Rawalpora, and Chanapora, Parray Pora and Baghat are close by.',
+                'Almost every home here is an independent house in a colony lane, so a tutor rings the bell directly with no gate procedure. The four-lane bypass through Sanat Nagar and Hyderpora links this zone with Bemina and Pantha Chowk, and a small bridge beside the railway bridge over the Doodhganga joins Rawalpora with Bagh-e-Mehtab. Because so many students already attend coaching here, families usually look for a one-to-one tutor to support a coaching course rather than replace it.',
+            ],
+            'tips' => [
+                'If your child goes to coaching in Hyderpora, share the coaching timetable in the request so the tutor\'s slot fits around it rather than clashing.',
+                'Tutors living in Rawalpora, Sanat Nagar or Peerbagh can reach each other\'s colonies quickly; ask for one from inside the zone to avoid the busy airport road.',
+                'Send the colony name, such as Ibrahim Colony or Peerbagh Cooperative Colony, since residents rarely use the wider locality name as an address.',
+            ],
+        ],
+        'Natipora & Nowgam' => [
+            'guide' => 'srinagar-home-tuition-guide',
+            'intro' => [
+                'Natipora, Barzulla, Nowgam and Bagh-e-Mehtab make up the southern edge of Srinagar. Natipora is mostly family houses in lanes off the main road, Barzulla sits beside Rambagh and Hyderpora with shops along its road, and Nowgam holds Srinagar railway station, opened in 2008 on the Jammu–Baramulla line. Bagh-e-Mehtab, on the Doodhganga, was an orchard before it became a government housing colony surrounded by private colonies, with Chanapora and Nowgam as neighbours.',
+                'Two pieces of infrastructure shape travel here. The flyover towards the city centre has ramps at Natipora and Barzulla, giving tutors from Lal Chowk or Jawahar Nagar a quick route over the ground-level roads, and since June 2025 through trains from Jammu run to the station at Nowgam, so a tutor from Budgam or Pampore can arrive by rail. Homes are houses in colony lanes, so arrival is straight to the door once the tutor is off the main road.',
+            ],
+            'tips' => [
+                'If your tutor comes from the city centre, suggest the flyover and a ramp near your home; it saves time compared with the busy roads beneath it.',
+                'For a tutor travelling by train from Budgam or Pampore, choose a slot that fits the train times and allows for the short auto ride from Nowgam station.',
+                'In Bagh-e-Mehtab, mention whether you live in the government colony or a private colony, and which side of the Doodhganga bridge, when you share the address.',
+            ],
+        ],
+        'North City' => [
+            'guide' => 'srinagar-home-tuition-guide',
+            'intro' => [
+                'Nowshera, Zadibal, Lal Bazar, Soura, Buchpora and Hazratbal form the northern part of Srinagar, between Dal Lake, Anchar Lake and Khushal Sar. Nowshera was laid out in the fifteenth century with the Nallah Mar canal, Zadibal sits on the eastern bank of Khushal Sar, Lal Bazar groups streets such as Rose Lane and Bagwanpora, Soura lies near the 90 Feet Road, Buchpora has grown from farmland into colonies, and Hazratbal spreads along the north-western shore of Dal Lake.',
+                'House types vary more here than anywhere else in the city. The old lanes of Zadibal and Nowshera are narrow, so tutors usually leave a vehicle on the main road and walk the final stretch, while Buchpora\'s newer colonies and Hazratbal neighbourhoods like Naseem Bagh and Zakura have doors a tutor can drive up to. With university and engineering campuses close to Hazratbal, families in this zone can often find senior-class subject tutors living nearby.',
+            ],
+            'tips' => [
+                'For homes in the old lanes of Zadibal or Nowshera, tell the tutor where to park and which turning to walk down, so the first visit starts on time.',
+                'Around Hazratbal, name the neighbourhood, such as Naseem Bagh, Habak or Tailbal, because the wider area covers many separate parts along the lake.',
+                'Roads near Soura\'s medical institute stay busy through the day; a late afternoon or evening slot with a tutor from Buchpora or Lal Bazar is usually easiest.',
+            ],
+        ],
+    ],
+    // Puducherry (6 Oct 2026, capital launch), from database/seo-content/areas/puducherry-zone-guides.json.
+    'Puducherry' => [
+        'Heritage Town' => [
+            'guide' => 'puducherry-home-tuition-guide',
+            'intro' => [
+                'White Town, the Tamil Quarter and Muthialpet make up the old heart of Puducherry. The colonial grid was split by a canal into a French Quarter by the sea and a Tamil Quarter inland, and French street names still hang on many corners. Of roughly 1,200 buildings listed as heritage, around 900 stand on the Tamil side. Muthialpet, to the north, covers seven municipal wards, including the fishing hamlet of Vaithikuppam on the shore.',
+                'Most families here live in houses that open onto the street, so a tutor rings the bell rather than signing a register. Puducherry railway station on South Boulevard, the end of the branch line from Villupuram opened in 1879, and the nearby bus stand bring in tutors who do not ride. The seafront along Rock Beach and the shopping streets draw crowds in the evenings, at weekends and on festival days, which shapes when lessons can run smoothly.',
+            ],
+            'tips' => [
+                'Book weekday slots in White Town and the Tamil Quarter; weekend evenings bring visitors to the seafront and heritage streets, and parking or even riding through becomes slow.',
+                'Send the street name exactly as it appears on the corner sign, many of them French, plus the house number, so a tutor new to the old town finds the door first time.',
+                'Muthialpet families can widen the search to tutors living along Karuvadikuppam Road on the Lawspet side, which runs straight into the area.',
+            ],
+        ],
+        'Mudaliarpet & Ariyankuppam' => [
+            'guide' => 'puducherry-home-tuition-guide',
+            'intro' => [
+                'Mudaliarpet, Nellithope with Anna Nagar, Ariyankuppam, Manavely, Veerampattinam and Thavalakuppam stretch south from the town along the Cuddalore road. Mudaliarpet was a commune of its own until it merged with Pondicherry into one municipality, and it still has a municipal office, as does Nellithope near the bus stand. Across the Sankaraparani river, Ariyankuppam is a commune and town laid out in a grid, with the Indo-Roman site of Arikamedu just beyond it.',
+                'Further out the feel turns coastal and semi-rural. Manavely is a census town that became its own constituency after delimitation, Veerampattinam is the largest coastal village of the Puducherry region, and Thavalakuppam lines the old NH-45A with plotted roads branching off. Buses towards Bahour, Madukarai, Chinna Veerampattinam and Cuddalore pass through, so tutors without a vehicle can still come. Homes range from apartment blocks in Mudaliarpet to village lanes and gated plots further south.',
+            ],
+            'tips' => [
+                'Mark the fifth Friday of the Aadi car festival at Veerampattinam, a public holiday in Puducherry, and the busy festival weeks around it as online or rest days in advance.',
+                'South of the river, a tutor who lives in Ariyankuppam or Manavely is easier to keep than one riding down the Cuddalore road at office hours.',
+                'For apartment buildings on the Mudaliarpet main road, give the building name and flat number to the gate; for village homes, name the nearest temple or bus stop.',
+            ],
+        ],
+        'Lawspet & ECR' => [
+            'guide' => 'puducherry-home-tuition-guide',
+            'intro' => [
+                'Lawspet, Karuvadikuppam, Kamaraj Nagar and Kalapet form the northern side of town inside Oulgaret Municipality, which grew from a commune set up under a French decree of 1880 into a municipality in 1994 and now has 42 wards. Lawspet stayed thinly settled until about 1990, then filled with government housing and private homes, and today it is one of the most densely populated parts of town, with many educational institutions and the airport.',
+                'Kamaraj Nagar is a settled residential belt of colonies such as Krishna Nagar, Rainbow Nagar and Venkata Nagar. Kalapet, annexed by the French in 1703, sits apart at the northern tip of the district, ringed by Viluppuram district and the sea. The East Coast Road runs through the zone towards Chennai, so a tutor living along it can serve several localities. Visits differ a lot here: colony houses, apartment gates, government quarters and campus residences.',
+            ],
+            'tips' => [
+                'Avoid the hours when schools and colleges open and close on Airport Road and College Road; a later evening slot is steadier for Lawspet homes.',
+                'In Kalapet, ask first how a visitor is admitted to campus residences, and look first for tutors in Kalapet itself or on the Lawspet side, adding online tutors to widen the choice.',
+                'Kamaraj Nagar and Krishna Nagar families can draw on tutors from both Lawspet and the old town, so mention the nearest colony name in your request.',
+            ],
+        ],
+        'Reddiarpalayam & Villianur' => [
+            'guide' => 'puducherry-home-tuition-guide',
+            'intro' => [
+                'Reddiarpalayam, Saram, Thattanchavady and Villianur make up the western side of Puducherry, leading out towards Villupuram. The first three are revenue villages of Oulgaret Municipality and settled residential areas: Reddiarpalayam, a separate constituency from 1974 to 2006, has many government employees and professionals around Pon Nagar, Jawahar Nagar and Kavery Nagar; Saram is a quiet pocket near the main bus stand; and Thattanchavady is known for plotted land and builder floors.',
+                'Villianur is a town in its own right, a commune panchayat and taluk headquarters on the Sankaraparani, and was the third-largest town of the district at the 2001 census. Its station in Sulthanpet sits on the broad-gauge line to Puducherry, and NH-45A carries road traffic towards Villupuram, so tutors can come by train, bus or two-wheeler. Homes across the zone are mostly houses and plots, which makes doorstep arrival the usual pattern.',
+            ],
+            'tips' => [
+                'Saram\'s closeness to the main bus stand means tutors from Villianur, Ariyankuppam and Lawspet can all reach it by bus, so a larger pool is realistic here.',
+                'In Villianur, avoid temple festival days in the town centre and share a landmark near the station or a well-known temple for the first visit.',
+                'For Thattanchavady\'s builder floors, send the floor number and ask the tutor to call from the gate; plotted streets with house numbers rarely need more than a map pin.',
+            ],
+        ],
+    ],
 ];

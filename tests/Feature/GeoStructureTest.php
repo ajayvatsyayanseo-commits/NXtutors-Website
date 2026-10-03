@@ -860,6 +860,175 @@ class GeoStructureTest extends TestCase
         $this->assertSame($cityId, DB::table('city_managment')->where('slug', 'guwahati')->value('id'), 'the city row stays');
     }
 
+    /**
+     * The eight state capitals launched together on 6 Oct 2026: slug =>
+     * [city name, launch migration, FAQ migration, area to render, its zone].
+     */
+    private const CAPITALS = [
+        'bhubaneswar' => ['Bhubaneswar', '2026_10_06_100000_launch_bhubaneswar_city_and_areas', '2026_10_06_101000_faqs_for_bhubaneswar_areas', 'saheed-nagar', 'Saheed Nagar', 'Central & East Bhubaneswar (Saheed Nagar & Rasulgarh)'],
+        'raipur' => ['Raipur', '2026_10_06_110000_launch_raipur_city_and_areas', '2026_10_06_111000_faqs_for_raipur_areas', 'telibandha', 'Telibandha', 'East Raipur'],
+        'dehradun' => ['Dehradun', '2026_10_06_120000_launch_dehradun_city_and_areas', '2026_10_06_121000_faqs_for_dehradun_areas', 'dalanwala', 'Dalanwala', 'Rajpur Road & Dalanwala'],
+        'vijayawada' => ['Vijayawada', '2026_10_06_130000_launch_vijayawada_city_and_areas', '2026_10_06_131000_faqs_for_vijayawada_areas', 'benz-circle', 'Benz Circle', 'Benz Circle & Patamata'],
+        'gandhinagar' => ['Gandhinagar', '2026_10_06_140000_launch_gandhinagar_city_and_areas', '2026_10_06_141000_faqs_for_gandhinagar_areas', 'kudasan', 'Kudasan', 'Kudasan & Sargasan'],
+        'jammu' => ['Jammu', '2026_10_06_150000_launch_jammu_city_and_areas', '2026_10_06_151000_faqs_for_jammu_areas', 'trikuta-nagar', 'Trikuta Nagar', 'Trikuta & Channi'],
+        'srinagar' => ['Srinagar', '2026_10_06_160000_launch_srinagar_city_and_areas', '2026_10_06_161000_faqs_for_srinagar_areas', 'rajbagh', 'Rajbagh', 'Civil Lines'],
+        'puducherry' => ['Puducherry', '2026_10_06_170000_launch_puducherry_city_and_areas', '2026_10_06_171000_faqs_for_puducherry_areas', 'lawspet', 'Lawspet', 'Lawspet & ECR'],
+    ];
+
+    private function assertCapitalLaunchesSafely(string $slug): void
+    {
+        [$name, $launchFile, $faqFile, $area, $areaName, $zone] = self::CAPITALS[$slug];
+        $research = json_decode((string) @file_get_contents(database_path("seo-content/areas/$slug-research.json")), true) ?: [];
+        $this->assertNotEmpty($research['areas'] ?? [], "$slug-research.json is missing or has no areas");
+        $this->assertNull(DB::table('city_managment')->where('slug', $slug)->value('id'), "$slug: no fixture row, the launch creates it");
+
+        $launch = require database_path("migrations/seo/$launchFile.php");
+        $faqs = require database_path("migrations/seo/$faqFile.php");
+        $launch->up();
+        $launch->up();
+        $faqs->up();
+        $faqs->up();
+
+        $city = DB::table('city_managment')->where('slug', $slug)->first();
+        $this->assertSame($name, $city->city_name);
+        $this->assertSame('t', $city->status);
+        $this->assertLessThanOrEqual(255, mb_strlen($city->city_desc), "$slug city_desc");
+        $this->assertLessThanOrEqual(65, mb_strlen($city->meta_title), "$slug meta_title");
+        $this->assertGreaterThanOrEqual(140, mb_strlen($city->meta_desc), "$slug meta_desc");
+        $this->assertLessThanOrEqual(160, mb_strlen($city->meta_desc), "$slug meta_desc");
+        foreach ([$city->city_desc, $city->meta_title, $city->meta_desc] as $s) {
+            $this->assertDoesNotMatchRegularExpression('/verified|\bbest\b|\btop\b/i', $s, $slug);
+        }
+
+        // Every researched area is inserted once and maps to exactly one zone, its own.
+        $this->assertSame(count($research['areas']), DB::table('city_area_list_managment')->where('city_id', $city->id)->count(), "$slug areas");
+        $zones = config('zones.' . $name);
+        $this->assertSame(array_keys($zones), array_keys(config('zone_guides.' . $name, [])), "$slug: zone guides cover the same zones");
+        foreach ($research['areas'] as $aslug => $a) {
+            $text = ' ' . trim(preg_replace('/\s+/', ' ', preg_replace('/[^\p{L}\p{N}\s]+/u', ' ', mb_strtolower(CityHub::cleanAreaName($a['name'], $aslug))))) . ' ';
+            $hits = array_keys(array_filter($zones, fn ($z) => collect($z['names'])->contains(fn ($n) => preg_match('/ ' . preg_quote($n, '/') . '(?![a-z])/', $text) === 1)));
+            $this->assertSame([$a['zone']], $hits, "$slug/$aslug maps to exactly one zone");
+            $this->assertSame($a['zone'], \App\Support\Zones::of($name, $a['name']), "$slug/$aslug");
+        }
+        $this->assertSame($zone, \App\Support\Zones::of($name, $areaName));
+
+        // FAQs: every pair in {slug}-faqs.json, once.
+        $faqJson = json_decode((string) @file_get_contents(database_path("seo-content/areas/$slug-faqs.json")), true);
+        $areaIds = DB::table('city_area_list_managment')->where('city_id', $city->id)->pluck('id');
+        if (is_array($faqJson)) {
+            $this->assertSame(array_sum(array_map('count', $faqJson)), DB::table('city_area_related_faqs_managment')->whereIn('area_id', $areaIds)->count(), "$slug FAQs");
+        }
+
+        $this->get("/city/$slug/$area")->assertOk()->assertSee("$areaName at a glance", false);
+        $this->get("/city/$slug")->assertOk()->assertSee($name);
+
+        $faqs->down();
+        $this->assertSame(0, DB::table('city_area_related_faqs_managment')->whereIn('area_id', $areaIds)->count(), "$slug FAQs removed");
+        $launch->down();
+        $this->assertSame(0, DB::table('city_area_list_managment')->where('page_schema', 'seo-2026-10-06-' . $slug)->count());
+        $this->assertNull(DB::table('city_managment')->where('slug', $slug)->value('id'), "$slug: the row this launch created goes");
+
+        if (! is_array($faqJson)) {
+            $this->markTestIncomplete("database/seo-content/areas/$slug-faqs.json is not there yet: FAQ count not checked");
+        }
+    }
+
+    private function assertCapitalJobsPage(string $slug): void
+    {
+        [$name, $launchFile] = self::CAPITALS[$slug];
+        (require database_path("migrations/seo/$launchFile.php"))->up();
+        Cache::flush();
+        $page = $this->get("/tuition-jobs/$slug")->assertOk();
+        if (! is_file(database_path("seo-content/jobs/cities/$slug.json"))) {
+            $this->markTestIncomplete("database/seo-content/jobs/cities/$slug.json is not there yet: /tuition-jobs/$slug text not checked");
+        }
+        $page->assertSee("Where in $name tutors are needed");
+    }
+
+    public function test_bhubaneswar_launches_safely(): void { $this->assertCapitalLaunchesSafely('bhubaneswar'); }
+
+    public function test_raipur_launches_safely(): void { $this->assertCapitalLaunchesSafely('raipur'); }
+
+    public function test_dehradun_launches_safely(): void { $this->assertCapitalLaunchesSafely('dehradun'); }
+
+    public function test_vijayawada_launches_safely(): void { $this->assertCapitalLaunchesSafely('vijayawada'); }
+
+    public function test_gandhinagar_launches_safely(): void { $this->assertCapitalLaunchesSafely('gandhinagar'); }
+
+    public function test_jammu_launches_safely(): void { $this->assertCapitalLaunchesSafely('jammu'); }
+
+    public function test_srinagar_launches_safely(): void { $this->assertCapitalLaunchesSafely('srinagar'); }
+
+    public function test_puducherry_launches_safely(): void { $this->assertCapitalLaunchesSafely('puducherry'); }
+
+    public function test_bhubaneswar_jobs_page(): void { $this->assertCapitalJobsPage('bhubaneswar'); }
+
+    public function test_raipur_jobs_page(): void { $this->assertCapitalJobsPage('raipur'); }
+
+    public function test_dehradun_jobs_page(): void { $this->assertCapitalJobsPage('dehradun'); }
+
+    public function test_vijayawada_jobs_page(): void { $this->assertCapitalJobsPage('vijayawada'); }
+
+    public function test_gandhinagar_jobs_page(): void { $this->assertCapitalJobsPage('gandhinagar'); }
+
+    public function test_jammu_jobs_page(): void { $this->assertCapitalJobsPage('jammu'); }
+
+    public function test_srinagar_jobs_page(): void { $this->assertCapitalJobsPage('srinagar'); }
+
+    public function test_puducherry_jobs_page(): void { $this->assertCapitalJobsPage('puducherry'); }
+
+    public function test_all_eight_capital_hubs_render_together(): void
+    {
+        foreach (self::CAPITALS as $slug => [$name, $launchFile]) {
+            (require database_path("migrations/seo/$launchFile.php"))->up();
+        }
+        Cache::flush();
+        foreach (self::CAPITALS as $slug => [$name]) {
+            $this->get("/city/$slug")->assertOk()->assertSee($name)->assertSee("/city/$slug/", false);
+        }
+        // The capitals sit under their states on the jobs pages; Puducherry has no
+        // jobs/states file and keeps the template text.
+        $this->get('/tuition-jobs/state/odisha')->assertOk()->assertSee(url('/tuition-jobs/bhubaneswar'), false)->assertSee(url('/city/bhubaneswar'), false);
+        $this->get('/tuition-jobs/state/jammu-and-kashmir')->assertOk()->assertSee(url('/tuition-jobs/srinagar'), false)->assertSee(url('/tuition-jobs/jammu'), false);
+        $this->get('/tuition-jobs/state/puducherry')->assertOk()->assertSee('Puducherry');
+    }
+
+    public function test_capital_names_do_not_collide(): void
+    {
+        $this->assertSame('raipur', Geo::slugFor('Raipur'));
+        $this->assertSame('', Geo::slugFor('Raipur Road'), 'a Dehradun road, not the Raipur city page');
+        $this->assertSame('Sahastradhara & Raipur', \App\Support\Zones::of('Dehradun', 'Raipur Road'));
+        $this->assertSame('Rajpur Road & Dalanwala', \App\Support\Zones::of('Dehradun', 'Rajpur Road'));
+        $this->assertSame('puducherry', Geo::slugFor('Pondicherry'));
+        $this->assertSame('Pondicherry', Geo::akaOf('puducherry'));
+        $this->assertSame('Puducherry', \App\Support\Zones::cityKey('Pondicherry'));
+        $this->assertSame('Sectors 16–30 & Pethapur', \App\Support\Zones::of('Gandhinagar', 'Sector 24'));
+        $this->assertSame('Sectors 1–8 & Infocity', \App\Support\Zones::of('Gandhinagar', 'Sector 2'));
+        $this->assertSame('Sectors 16–30 & Pethapur', \App\Support\Zones::of('Gandhinagar', 'Sector 21'));
+        foreach (['bhubaneswar' => 'odisha', 'raipur' => 'chhattisgarh', 'dehradun' => 'uttarakhand', 'vijayawada' => 'andhra-pradesh',
+            'gandhinagar' => 'gujarat', 'jammu' => 'jammu-and-kashmir', 'srinagar' => 'jammu-and-kashmir', 'puducherry' => 'puducherry'] as $city => $state) {
+            $this->assertSame($state, Geo::stateSlug(Geo::stateOf($city)), $city);
+        }
+        $this->assertContains('srinagar', Geo::neighbours('jammu'));
+        $this->assertContains('ahmedabad', Geo::neighbours('gandhinagar'));
+    }
+
+    public function test_capital_guides_publish_once_and_roll_back(): void
+    {
+        $m = require database_path('migrations/seo/2026_10_06_180000_publish_capital_city_guides.php');
+        $ready = array_values(array_filter($m::slugs(), fn ($s) => is_file(database_path("seo-content/blog/$s.html")) && is_file(database_path("seo-content/blog/$s.json"))));
+        $before = DB::table('blog_managment')->count();
+        $m->up();
+        $m->up();
+        $this->assertSame($before + count($ready), DB::table('blog_managment')->count());
+        $this->assertSame('2026-10-06', DB::table('blog_managment')->where('slug', 'home-tuition-fees-raipur')->value('date') ?? '2026-10-06');
+        $m->down();
+        $this->assertSame($before, DB::table('blog_managment')->count());
+        if (count($ready) < 16) {
+            $this->markTestIncomplete('Only ' . count($ready) . ' of 16 capital guides have their .html and .json: ' . implode(', ', array_diff($m::slugs(), $ready)) . ' missing');
+        }
+    }
+
     public function test_city_names_map_to_city_pages_whatever_the_spelling(): void
     {
         $this->assertSame('gurugram', Geo::slugFor('Gurgaon'));

@@ -1,0 +1,391 @@
+{
+  "areas": {
+    "patia": {
+      "name": "Patia",
+      "zone": "North Bhubaneswar (Patia & Chandrasekharpur)",
+      "type": "mixed",
+      "about": "<p>Patia is one of the main localities of north Bhubaneswar. Like Chandrasekharpur and Mancheswar, it was once a village surrounded by forest and farmland before the city grew around it. Today it has a mix of apartment complexes and independent houses, with villas and residential plots at different stages of development, and large education and IT campuses nearby. Nandankanan Road is the main road through the locality, and Chandrasekharpur, Raghunathpur, Kalarahanga and Sailashree Vihar are its neighbours.</p><p>Patia has its own small railway station on the Howrah-Chennai main line, and Bhubaneswar New station serves the northern side of the city, so a tutor travelling from elsewhere can come by train and finish the trip by auto. There is no metro running in Bhubaneswar, and most tutors arrive by two-wheeler or car. Apartment complexes usually ask visitors to register at the gate, while houses on plotted lanes allow doorstep arrival. Nandankanan Road is busiest when offices and colleges open and close, so agree a weekday slot away from those times. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/patia-in-bhubaneswar-overview-2973",
+        "https://en.wikipedia.org/wiki/List_of_neighbourhoods_in_Bhubaneswar",
+        "https://en.wikipedia.org/wiki/Patia_railway_station",
+        "https://en.wikipedia.org/wiki/Bhubaneswar_New_railway_station"
+      ]
+    },
+    "chandrasekharpur": {
+      "name": "Chandrasekharpur",
+      "zone": "North Bhubaneswar (Patia & Chandrasekharpur)",
+      "type": "mixed",
+      "about": "<p>Chandrasekharpur is a large residential and commercial area in north Bhubaneswar, one of the later additions to the city developed by the Bhubaneswar Development Authority. It takes in several smaller colonies, including Damana, Infocity, Sailashree Vihar, Niladri Vihar, Rail Vihar, Nalco Nagar and Gajapati Nagar. Housing ranges from low-rise apartment buildings and builder floors to independent houses on residential plots, and the IT offices around Infocity sit close to the homes.</p><p>Nandankanan Road is the main road through the area, with Niladri Vihar Road and a network of internal colony roads, and Patia lies just to the north. For tutors, the clear colony names make addresses easy to find: share the colony, lane and house or block number before the first class. Apartment buildings may keep a visitor register, while houses allow doorstep arrival and easy two-wheeler parking. Patia and Bhubaneswar New stations are the nearest railway stations on this side of the city. Office traffic on Nandankanan Road peaks in the morning and evening, so a fixed slot outside those hours works well. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chandrasekharpur",
+        "https://en.wikipedia.org/wiki/List_of_neighbourhoods_in_Bhubaneswar",
+        "https://en.wikipedia.org/wiki/Bhubaneswar",
+        "https://www.squareyards.com/chandrasekharpur-in-bhubaneswar-overview-2961"
+      ]
+    },
+    "sailashree-vihar": {
+      "name": "Sailashree Vihar",
+      "zone": "North Bhubaneswar (Patia & Chandrasekharpur)",
+      "type": "residential",
+      "about": "<p>Sailashree Vihar is a planned residential colony in the Chandrasekharpur area of north Bhubaneswar, one of the newer colonies laid out by the Bhubaneswar Development Authority. Independent houses and flats are both common, with apartment buildings of two to four bedrooms alongside plotted homes on organised colony roads. Niladri Vihar, Damana, Infocity, Pathargadia, Gadakan and Kanan Vihar are its neighbours.</p><p>Because the colony is laid out on a grid of numbered plots, a tutor usually needs only the plot or building number and a nearby landmark to find a home. Most tutors come by two-wheeler or car from Chandrasekharpur, Patia or Damana, and Patia station on the Howrah-Chennai main line is the closest railway link for anyone travelling further. Independent houses allow doorstep arrival; apartment buildings may ask the tutor to sign in at the gate. The roads connecting the colony to the IT offices get busy at office hours, so evening classes run more smoothly with a tutor who lives in the same part of the city. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/sailashree-vihar-in-bhubaneswar-overview-21575",
+        "https://en.wikipedia.org/wiki/List_of_neighbourhoods_in_Bhubaneswar",
+        "https://en.wikipedia.org/wiki/Bhubaneswar"
+      ]
+    },
+    "saheed-nagar": {
+      "name": "Saheed Nagar",
+      "zone": "Central & East Bhubaneswar (Saheed Nagar & Rasulgarh)",
+      "type": "mixed",
+      "about": "<p>Saheed Nagar was planned by the state's General Administration Department around 1960 as the tenth unit of Bhubaneswar, after the first nine units of the new capital. It was laid out as a residential area but is now mainly known as a high-street shopping district along Janpath. The locality is bounded by the East Coast Railway line on the east, Janpath on the west and the national highway on the north, with Satya Nagar to the south and Rasulgarh and the Mancheswar industrial area next door.</p><p>Independent houses and flats both remain common in the inner lanes behind the main road. Vani Vihar railway station lies within Saheed Nagar, and local people use it to cross the tracks towards Rasulgarh, which is handy for tutors living on the other side. Most tutors arrive by two-wheeler or auto; parking on Janpath is limited, so give a lane landmark rather than a shop name. The market area is crowded in the evenings, so an early-evening or weekend morning slot is easier to keep. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Saheed_Nagar",
+        "https://en.wikipedia.org/wiki/Vani_Vihar_railway_station",
+        "https://www.squareyards.com/saheed-nagar-in-bhubaneswar-overview-21563"
+      ]
+    },
+    "satya-nagar": {
+      "name": "Satya Nagar",
+      "zone": "Central & East Bhubaneswar (Saheed Nagar & Rasulgarh)",
+      "type": "residential",
+      "about": "<p>Satya Nagar is a central Bhubaneswar locality lying just south of Saheed Nagar. Like Saheed Nagar, it was farmland before the city spread over it, rather than part of the original planned units. Today it is a busy residential and commercial area with apartment buildings and builder projects, shops along its main roads, and a large IT tower under construction. Jharpada, Bomikhal and Kharavela Nagar are its other neighbours.</p><p>Janpath runs close by and leads to Bhubaneswar railway station, which makes the locality easy to reach for tutors coming from the south of the city, while Vani Vihar station is just beyond Saheed Nagar to the north. National Highway 16 is also near. Most homes are flats, so expect the building guard to ask for the tutor's name and the flat number; telling the guard in advance saves time on the first visit. Roads around the shopping streets are crowded in the evenings, so pick a regular slot with some margin, or use online classes for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/satya-nagar-in-bhubaneswar-overview-21606",
+        "https://en.wikipedia.org/wiki/Saheed_Nagar",
+        "https://en.wikipedia.org/wiki/List_of_neighbourhoods_in_Bhubaneswar"
+      ]
+    },
+    "kharavela-nagar": {
+      "name": "Kharavela Nagar (Unit 3)",
+      "zone": "Central & East Bhubaneswar (Saheed Nagar & Rasulgarh)",
+      "type": "mixed",
+      "about": "<p>Kharavela Nagar, also known as Unit 3, is one of the original numbered units of the planned capital, laid out after the foundation of the new Bhubaneswar in 1948. Each unit was designed with its own school, shopping centre, dispensary and play areas, and Kharavela Nagar keeps that mix of homes, markets and offices today. Apartment buildings stand alongside hotels, shops and a small industrial area, and Satya Nagar, Jharpada, BJB Nagar and Madhusudan Nagar are its neighbours.</p><p>Bhubaneswar railway station is close, which suits tutors who travel in by train from other parts of the city. Residents mention markets within walking distance and well-lit streets, and the central position means tutors from Satya Nagar, Saheed Nagar and the other units can usually reach a home here easily. Most visits are to a flat, so share the building name and flat number with the guard before the demo. Roads around the markets and the station are busiest at office hours and in the evenings, so agree a fixed slot outside the rush. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_neighbourhoods_in_Bhubaneswar",
+        "https://en.wikipedia.org/wiki/Bhubaneswar",
+        "https://www.squareyards.com/kharavela-nagar-in-bhubaneswar-overview-21618"
+      ]
+    },
+    "rasulgarh": {
+      "name": "Rasulgarh",
+      "zone": "Central & East Bhubaneswar (Saheed Nagar & Rasulgarh)",
+      "type": "mixed",
+      "about": "<p>Rasulgarh is a locality in eastern Bhubaneswar, centred on the busy Rasulgarh square on the road between Cuttack and Puri. It adjoins Saheed Nagar across the railway line and sits next to the Mancheswar industrial area, so homes here share space with workshops, offices and shops. Housing includes apartments, builder floors and independent houses, and Jharpada, Koradakanta and Bomikhal are its neighbours.</p><p>Vani Vihar railway station connects Rasulgarh with Saheed Nagar, and many local people use it to cross the tracks between the two, while Mancheswar station is also close. For tutors, that means a tutor living in Saheed Nagar or Satya Nagar can reach most Rasulgarh homes without a long ride. Apartment buildings may keep a visitor register; houses allow doorstep arrival. The square and the main road carry heavy traffic at office hours, so evening classes are easier with a tutor from the same side of the railway line, and online sessions work well when a specialist subject teacher lives across the city. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vani_Vihar_railway_station",
+        "https://en.wikipedia.org/wiki/Saheed_Nagar",
+        "https://en.wikipedia.org/wiki/Laxmisagar",
+        "https://www.squareyards.com/rasulgarh-in-bhubaneswar-overview-21562"
+      ]
+    },
+    "mancheswar": {
+      "name": "Mancheswar",
+      "zone": "Central & East Bhubaneswar (Saheed Nagar & Rasulgarh)",
+      "type": "mixed",
+      "about": "<p>Mancheswar is in the eastern part of Bhubaneswar and, like Patia and Chandrasekharpur, was once a village before it was absorbed into the city. It is known mainly for the Mancheswar Industrial Estate, developed by the state's industrial infrastructure corporation along National Highway 16, which houses engineering and fabrication units, warehouses and logistics offices along with residential pockets, shops and clinics. Rasulgarh and Saheed Nagar are close neighbours.</p><p>Mancheswar railway station, on the Howrah-Chennai main line and the Kharagpur-Puri line, has five platforms and also holds the East Coast Railway's carriage repair workshop. Families here usually live in the residential colonies around the estate rather than on the industrial roads, so give the tutor the colony name and a landmark away from the factory gates. Most tutors come by two-wheeler from Rasulgarh, Saheed Nagar or Chandrasekharpur. Goods vehicles and office traffic make the highway busiest during working hours, so early-evening or weekend classes are simpler to keep regular. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mancheswar_Industrial_Estate",
+        "https://en.wikipedia.org/wiki/Mancheswar_railway_station",
+        "https://en.wikipedia.org/wiki/List_of_neighbourhoods_in_Bhubaneswar"
+      ]
+    },
+    "laxmisagar": {
+      "name": "Laxmisagar",
+      "zone": "Central & East Bhubaneswar (Saheed Nagar & Rasulgarh)",
+      "type": "residential",
+      "about": "<p>Laxmisagar is an established neighbourhood in eastern Bhubaneswar on the main Cuttack-Puri road, between the Rasulgarh and Kalpana squares. The wider area includes Chintamanishwar, BJB Nagar and the Canal Road side, and Kharavela Nagar lies close by. Housing is mainly apartment buildings of one to three bedrooms, with older homes in the lanes, and the locality has several neighbourhood temples and local markets.</p><p>Residents rate the area well for public transport, easy auto and cab availability and markets within walking distance, which also helps tutors who do not drive. Bhubaneswar railway station is within easy reach for tutors travelling in from other parts of the city, and Rasulgarh and Kalpana squares are the usual landmarks for directions. For a flat, share the building name and floor with the guard before the first class; for a house in the lanes, a temple or market landmark helps. The Cuttack-Puri road is busy at office hours, so evening sessions are easiest with a tutor from Laxmisagar, Rasulgarh or Kharavela Nagar. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Laxmisagar",
+        "https://en.wikipedia.org/wiki/List_of_neighbourhoods_in_Bhubaneswar",
+        "https://www.squareyards.com/laxmi-sagar-in-bhubaneswar-overview-2951"
+      ]
+    },
+    "nayapalli": {
+      "name": "Nayapalli",
+      "zone": "West Bhubaneswar (Nayapalli & Jaydev Vihar)",
+      "type": "residential",
+      "about": "<p>Nayapalli is a large residential area in central-west Bhubaneswar and one of the localities developed by the Bhubaneswar Development Authority as the city grew beyond its original units. Housing is a mix of apartment buildings, independent houses, builder floors and some remaining land parcels. Ekamra Kanan, the city's largest park and botanical garden, lies in Nayapalli, and the main city stadium on Bidyut Marg is nearby. Jaydev Vihar, Surya Nagar, IRC Village, Acharya Vihar and Madhusudan Nagar are its neighbours.</p><p>Because so many colonies surround it, Nayapalli has a large pool of potential tutors within a short ride, and many families choose a tutor from the same or a neighbouring colony. National Highway 16 runs along the eastern side, and Bhubaneswar and Vani Vihar are the nearest railway stations. Apartment buildings usually ask visitors to register at the gate, while independent houses allow doorstep arrival. Traffic near the highway and the park entrances builds in the evenings and on holidays, so plan class times with some margin. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/nayapalli-in-bhubaneswar-overview-21565",
+        "https://en.wikipedia.org/wiki/Ekamra_Kanan",
+        "https://en.wikipedia.org/wiki/Kalinga_Stadium",
+        "https://en.wikipedia.org/wiki/Bhubaneswar"
+      ]
+    },
+    "jaydev-vihar": {
+      "name": "Jaydev Vihar",
+      "zone": "West Bhubaneswar (Nayapalli & Jaydev Vihar)",
+      "type": "mixed",
+      "about": "<p>Jaydev Vihar is a locality in the central-north of Bhubaneswar, one of the areas developed by the Bhubaneswar Development Authority. It mixes homes with hotels, offices and restaurants around Jaydev Vihar square. Housing ranges from independent houses to low-rise and mid-rise apartment buildings, and nearby localities include Old Nayapalli, Gajapati Nagar, Vani Vihar and Acharya Vihar.</p><p>National Highway 16 is the closest highway, and Nandankanan Road connects the locality with Chandrasekharpur and Patia to the north, so tutors can come from either the central units or the northern colonies. Ekamra Kanan is a short ride away. Bhubaneswar and Vani Vihar are the nearest railway stations; there is no metro running in the city, so most tutors arrive by two-wheeler, car or auto. Apartment buildings usually have a guard who will ask for the flat number, while houses allow doorstep arrival. Traffic around the square is heavy at office hours, so choose a weekday slot that avoids the evening rush. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/jaydev-vihar-in-bhubaneswar-overview-2965",
+        "https://en.wikipedia.org/wiki/Bhubaneswar",
+        "https://en.wikipedia.org/wiki/List_of_neighbourhoods_in_Bhubaneswar"
+      ]
+    },
+    "acharya-vihar": {
+      "name": "Acharya Vihar",
+      "zone": "West Bhubaneswar (Nayapalli & Jaydev Vihar)",
+      "type": "residential",
+      "about": "<p>Acharya Vihar is a residential area in central Bhubaneswar, within the part of the city covered by the 1968 master plan. Independent houses and flats are both common, and demand comes mostly from families wanting a central address. The locality is linked by National Highway 16 and is known by its busy square; Nayapalli, Jaydev Vihar, Saheed Nagar, Madhusudan Nagar, IRC Village and Vani Vihar surround it, and the Regional Science Park is close by.</p><p>Its central position means tutors can come from the older units to the south, from Saheed Nagar to the east or from Nayapalli to the west. Vani Vihar and Bhubaneswar are the nearest railway stations, and most tutors arrive by two-wheeler or auto. Houses on colony lanes allow doorstep arrival, while apartment buildings may ask the tutor to sign in. The square and the highway are busy at office hours, so pick a regular slot away from the evening peak, and consider online classes when the right specialist tutor lives on the far side of the city. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/acharya-vihar-in-bhubaneswar-overview-21664",
+        "https://en.wikipedia.org/wiki/List_of_neighbourhoods_in_Bhubaneswar"
+      ]
+    },
+    "irc-village": {
+      "name": "IRC Village",
+      "zone": "West Bhubaneswar (Nayapalli & Jaydev Vihar)",
+      "type": "residential",
+      "about": "<p>IRC Village takes its name from the Indian Roads Congress, whose national session Bhubaneswar hosted in 1982. With too few hotels in the city at the time, small cottages were built in the Nayapalli area to house the visiting engineers and officials. After the conference the settlement stayed, and it grew into a permanent residential locality with parks and planned streets. Today it combines apartment complexes, independent houses and some commercial buildings.</p><p>IRC Village lies within the wider Nayapalli area and borders Baramunda, while Surya Nagar and Acharya Vihar are close by, so tutors who already teach in these colonies can take on a home here without a long journey. Bhubaneswar railway station is the nearest main station. The planned streets make houses easy to locate: share the plot or house number and a nearby park or market as a landmark. Apartment complexes usually register visitors at the gate. Roads towards the highway get busy at office hours, so evening classes are simplest with a tutor from Nayapalli or Baramunda. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://kalingatv.com/features/irc-village-bhubaneswar-when-a-conference-turned-an-open-field-into-a-premier-locality/",
+        "https://www.thestatesman.com/india/from-a-sleepy-village-to-a-timeless-landmark-the-story-of-bhubaneswars-irc-village-1503507893.html",
+        "https://en.wikipedia.org/wiki/Baramunda"
+      ]
+    },
+    "baramunda": {
+      "name": "Baramunda",
+      "zone": "West Bhubaneswar (Nayapalli & Jaydev Vihar)",
+      "type": "mixed",
+      "about": "<p>Baramunda is a locality on the western side of the new capital area of Bhubaneswar, bordered by Surya Nagar, IRC Village, Jagamara, Nayapalli and Gopabandhu Nagar. It is home to the Baramunda inter-state bus terminal, opened in March 2024 and the largest bus terminal in Odisha, so the area mixes homes with transport, shops and services. Housing is mostly two- and three-bedroom apartment buildings, with independent houses in the surrounding colonies.</p><p>The bus terminal and city bus routes make Baramunda one of the easiest localities in Bhubaneswar to reach without a vehicle, and residents note easy auto and cab availability and markets within walking distance. Lingaraj Temple Road and Bhubaneswar are the nearest railway stations. For tutors, flats in apartment buildings usually mean gate registration, while houses allow doorstep arrival. Roads around the bus terminal are busiest when long-distance buses arrive and leave, so give the tutor a landmark away from the terminal entrance and settle a regular slot with some margin. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Baramunda",
+        "https://en.wikipedia.org/wiki/Babasaheb_Bhimrao_Ambedkar_Bus_Terminal",
+        "https://www.squareyards.com/baramunda-in-bhubaneswar-overview-21588"
+      ]
+    },
+    "old-town": {
+      "name": "Old Town",
+      "zone": "South Bhubaneswar (Old Town & Bapuji Nagar)",
+      "type": "mixed",
+      "about": "<p>Old Town is the historic heart of Bhubaneswar, the original temple town that existed long before the planned capital. It is centred on the Lingaraja temple, whose present form dates from the late eleventh century, and the sacred Bindusagar tank, with many other temples in the Kalinga style around them. Most of its neighbourhoods, such as Gouri Nagar, Lingaraj Nagar, Basisthanagar, Sriram Nagar and Samantarapur, grew from old villages, and homes are a mix of older houses in narrow lanes and newer apartment buildings.</p><p>Lingaraj Temple Road railway station, open since 1896, serves the area, and Bhubaneswar station is a short ride north. In the inner lanes a two-wheeler or e-rickshaw is far easier than a car, and most homes allow doorstep arrival, so share a temple or lane landmark and a phone number before the first class. Temple festivals, including the annual chariot festival of the Lingaraja temple, bring large crowds, so plan around festival days and keep a fixed weekday slot. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lingaraja_Temple",
+        "https://en.wikipedia.org/wiki/List_of_neighbourhoods_in_Bhubaneswar",
+        "https://en.wikipedia.org/wiki/Lingaraj_Temple_Road_railway_station",
+        "https://www.squareyards.com/old-town-in-bhubaneswar-overview-2953"
+      ]
+    },
+    "samantarapur": {
+      "name": "Samantarapur",
+      "zone": "South Bhubaneswar (Old Town & Bapuji Nagar)",
+      "type": "residential",
+      "about": "<p>Samantarapur is a former village in south Bhubaneswar that is now a ward of the municipal corporation and is counted as part of the wider Old Town area. It lies near Brahmeswarpatna and the Tankapani Road side, with Gouri Nagar and the Lingaraja temple quarter close by. Housing has shifted from village homes towards apartment buildings of three and four bedrooms and residential plots, and the locality has several schools and colleges of its own.</p><p>Lingaraj Temple Road and Bhubaneswar are the nearest railway stations, so a tutor coming from another part of the city can take a train and an auto for the last stretch. Most tutors, though, arrive by two-wheeler from Old Town, Bapuji Nagar or the Kalpana Square side. Older lanes are narrow, so a two-wheeler is easier than a car, and a clear landmark helps on the first visit. Newer apartment buildings usually ask visitors to sign in. Roads towards Old Town get crowded on temple festival days, so check the calendar when fixing the class timetable. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Samantarapur",
+        "https://www.squareyards.com/old-town-in-bhubaneswar-overview-2953",
+        "https://www.squareyards.com/samantarapur-in-bhubaneswar-overview-21676"
+      ]
+    },
+    "bapuji-nagar": {
+      "name": "Bapuji Nagar (Unit 1)",
+      "zone": "South Bhubaneswar (Old Town & Bapuji Nagar)",
+      "type": "mixed",
+      "about": "<p>Bapuji Nagar is Unit 1 of the planned capital, one of the original residential units laid out after the foundation of new Bhubaneswar in 1948, each with its own school, shopping centre, dispensary and play areas. It is reached mainly by Janpath, Rajpath and Udyan Marg, and its well-known Unit 1 market serves much of the surrounding area. Housing today includes two- and three-bedroom apartment buildings alongside older homes, and Ganga Nagar, Forest Park, BJB Nagar and the Kalpana Square side are its neighbours.</p><p>Bhubaneswar railway station is very close by Janpath, and the airport lies a short way to the south-west, which makes Bapuji Nagar one of the most accessible localities in the city. Tutors can come by train and walk or take an auto for the last stretch, or ride in by two-wheeler. Market roads are crowded in the evenings and parking near the shops is limited, so give a residential lane landmark rather than the market itself. Apartment buildings may ask the tutor to register at the gate. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_neighbourhoods_in_Bhubaneswar",
+        "https://en.wikipedia.org/wiki/Bhubaneswar",
+        "https://www.squareyards.com/bapuji-nagar-in-bhubaneswar-overview-2945",
+        "https://en.wikipedia.org/wiki/Biju_Patnaik_International_Airport"
+      ]
+    },
+    "pokhariput": {
+      "name": "Pokhariput",
+      "zone": "South Bhubaneswar (Old Town & Bapuji Nagar)",
+      "type": "residential",
+      "about": "<p>Pokhariput is a settled residential pocket on the southern fringe of Bhubaneswar, close to the airport. Independent houses and flats both fill the area, with newer two- and three-bedroom apartment buildings among the older plotted homes. Sundarpada, Dumduma, Gandamunda, Kapila Prasad, Bhimpur and Arya Village are its neighbours, and Jagamara lies to the west.</p><p>The Lingaraja temple quarter of Old Town is a short ride away, and Lingaraj Temple Road is the nearest railway station, with Bhubaneswar station further north. Most tutors arrive by two-wheeler or car, often from Jagamara, Old Town or the colonies around the airport. On plotted lanes the tutor can usually come straight to the door, so a lane name and a nearby shop or temple as a landmark are enough; apartment buildings may keep a gate register. Roads near the airport and towards the city centre get busy at office hours, so a fixed early-evening slot with a tutor from the southern side of the city is the most practical choice. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/pokhariput-in-bhubaneswar-overview-2955",
+        "https://en.wikipedia.org/wiki/List_of_neighbourhoods_in_Bhubaneswar",
+        "https://www.squareyards.com/jagamara-in-bhubaneswar-overview-21566"
+      ]
+    },
+    "khandagiri": {
+      "name": "Khandagiri",
+      "zone": "South-West Bhubaneswar (Khandagiri & Patrapada)",
+      "type": "residential",
+      "about": "<p>Khandagiri is a locality in western Bhubaneswar named after the Khandagiri hill, which with neighbouring Udayagiri holds ancient rock-cut caves dating from the second or first century BCE. The residential area around the hill has grown quickly, with independent houses and two- and three-bedroom apartment buildings. Jagamohan Nagar, Dumuduma, Shankarpur, Ghatikia, Kalinga Nagar, Naragoda and Jagamara surround it.</p><p>Khandagiri Square is a major bus stop on the city bus network, and the Khandagiri-Chandaka road and access to National Highway 16 link the locality with the rest of Bhubaneswar, so tutors without a vehicle can still reach it easily. A city bus depot also stands at Khandagiri. Houses on plotted lanes allow doorstep arrival, while apartment buildings usually ask for the tutor's name at the gate. The square is busy at office hours and on weekends when visitors come to the caves, so weekday evening classes with a tutor from Khandagiri, Jagamara or Kalinga Nagar are the easiest to keep regular. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Udayagiri_and_Khandagiri_caves",
+        "https://www.squareyards.com/khandagiri-in-bhubaneswar-overview-2968",
+        "https://en.wikipedia.org/wiki/List_of_neighbourhoods_in_Bhubaneswar",
+        "https://en.wikipedia.org/wiki/Baramunda"
+      ]
+    },
+    "jagamara": {
+      "name": "Jagamara",
+      "zone": "South-West Bhubaneswar (Khandagiri & Patrapada)",
+      "type": "residential",
+      "about": "<p>Jagamara is part of western Bhubaneswar, a newer side of the city made up of planned colonies, unplanned colonies and former villages. It borders Baramunda and lies between Khandagiri and the airport side, with Pokhariput, Surya Nagar, Gandamunda and Dumuduma as other neighbours. Housing is varied: apartment buildings of two to four bedrooms, villas, residential plots and builder floors.</p><p>The Baramunda bus terminal and the city bus routes through Khandagiri Square are close, which helps tutors who travel by bus, and Lingaraj Temple Road is the nearest railway station. Most tutors arrive by two-wheeler or auto, often from Khandagiri, Baramunda or Pokhariput. On plotted streets the tutor can come straight to the door, so a lane name and landmark are enough; apartment buildings may ask the tutor to sign in at the gate. Roads towards Khandagiri Square and the bus terminal are busiest at office hours, so a fixed early-evening slot and a tutor from the same side of the city keep classes regular. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_neighbourhoods_in_Bhubaneswar",
+        "https://en.wikipedia.org/wiki/Baramunda",
+        "https://www.squareyards.com/jagamara-in-bhubaneswar-overview-21566"
+      ]
+    },
+    "kalinga-nagar": {
+      "name": "Kalinga Nagar",
+      "zone": "South-West Bhubaneswar (Khandagiri & Patrapada)",
+      "type": "residential",
+      "about": "<p>Kalinga Nagar is a residential area on the south-western fringe of Bhubaneswar, close to Khandagiri. Its housing is mostly builder floors and multi-storey apartment buildings, with newer projects still coming up, and Tamando, Shyampur and Khandagiri are among its neighbours. The Bhubaneswar Development Authority has developed a large public park in the K-8 sector of Kalinga Nagar, with an open gym, yoga space and walking paths.</p><p>National Highway 16 runs close by, and roads towards Khandagiri link the area with the rest of the city. Bhubaneswar railway station is the main station for longer trips. Most tutors come by two-wheeler or car from Khandagiri, Jagamara or Patrapada, so a tutor living on this side of the city is the most practical match for regular classes. Share the sector, building name and floor before the first visit, as multi-storey buildings usually check visitors at the gate. Roads near the highway get busy at office hours, and online classes are a good option when the right specialist tutor lives in the north of the city. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/kalinga-nagar-in-bhubaneswar-overview-2966",
+        "https://www.bda.gov.in/project-details/27",
+        "https://en.wikipedia.org/wiki/List_of_neighbourhoods_in_Bhubaneswar"
+      ]
+    },
+    "patrapada": {
+      "name": "Patrapada",
+      "zone": "South-West Bhubaneswar (Khandagiri & Patrapada)",
+      "type": "mixed",
+      "about": "<p>Patrapada is a growing locality on the south-western fringe of Bhubaneswar, along National Highway 16. It has developed as a residential, commercial and healthcare centre around a large medical campus, with apartment projects of two bedrooms and upwards, residential plots and some villas. Patrapada Main Road links its housing pockets, and Khandagiri and Kalinga Nagar are the nearest established localities.</p><p>Much of the housing here is new, so many families live in recently built apartment complexes with security at the gate; give the tutor the complex name and tower number and register them in advance. Plotted homes allow doorstep arrival. Bhubaneswar railway station is the main station for the area, and a personal vehicle is the practical way to reach Patrapada, so most tutors come by two-wheeler or car from Khandagiri or Kalinga Nagar. Highway traffic is heaviest at office hours, so choose a fixed slot outside the evening rush, and use online classes when a specialist tutor lives across the city. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/patrapada-in-bhubaneswar-overview-2954",
+        "https://en.wikipedia.org/wiki/List_of_neighbourhoods_in_Bhubaneswar"
+      ]
+    }
+  },
+  "zone_facts": {
+    "North Bhubaneswar (Patia & Chandrasekharpur)": [
+      {
+        "fact": "Patia, Chandrasekharpur and Mancheswar were villages surrounded by forests and farms that became part of the city as it developed northwards.",
+        "source": "https://en.wikipedia.org/wiki/List_of_neighbourhoods_in_Bhubaneswar"
+      },
+      {
+        "fact": "Chandrasekharpur includes Damana, Infocity, Sailashree Vihar, Niladri Vihar, Rail Vihar, Nalco Nagar and Gajapati Nagar.",
+        "source": "https://en.wikipedia.org/wiki/List_of_neighbourhoods_in_Bhubaneswar"
+      },
+      {
+        "fact": "Nayapalli, Jayadev Vihar, Chandrasekharpur and Sailashree Vihar are among the areas developed by the Bhubaneswar Development Authority beyond the original planned units.",
+        "source": "https://en.wikipedia.org/wiki/Bhubaneswar"
+      },
+      {
+        "fact": "Bhubaneswar New railway station opened in July 2018 as a satellite terminal on the city's northern side, between Mancheswar and Barang.",
+        "source": "https://en.wikipedia.org/wiki/Bhubaneswar_New_railway_station"
+      },
+      {
+        "fact": "Patia railway station (PTAB) lies on the Howrah-Chennai main line and the Kharagpur-Puri line.",
+        "source": "https://en.wikipedia.org/wiki/Patia_railway_station"
+      },
+      {
+        "fact": "Nandankanan Zoological Park, in the environs of the Chandaka forest north of the city, was inaugurated on 29 December 1960.",
+        "source": "https://en.wikipedia.org/wiki/Nandankanan_Zoological_Park"
+      },
+      {
+        "fact": "A metro line from Trisulia to the airport, with planned stations including Patia Square, Damana Square, Jaydev Vihar Square, Acharya Vihar Square and Vani Vihar, was planned; the project is on hold and no metro runs in the city.",
+        "source": "https://en.wikipedia.org/wiki/Bhubaneswar_Metro"
+      }
+    ],
+    "Central & East Bhubaneswar (Saheed Nagar & Rasulgarh)": [
+      {
+        "fact": "Saheed Nagar was planned by the General Administration Department of the Government of Odisha around 1960 as the 10th unit of Bhubaneswar.",
+        "source": "https://en.wikipedia.org/wiki/Saheed_Nagar"
+      },
+      {
+        "fact": "Saheed Nagar is bounded by the East Coast Railway line on the east, Janpath on the west and the national highway on the north, and adjoins Rasulgarh and the Mancheswar industrial area.",
+        "source": "https://en.wikipedia.org/wiki/Saheed_Nagar"
+      },
+      {
+        "fact": "Saheed Nagar and Satya Nagar were farmland and lie outside the original 1968 master-plan core of central Bhubaneswar.",
+        "source": "https://en.wikipedia.org/wiki/List_of_neighbourhoods_in_Bhubaneswar"
+      },
+      {
+        "fact": "Vani Vihar railway station (BNBH) is in Saheed Nagar; local people use it to cross from Saheed Nagar to Rasulgarh.",
+        "source": "https://en.wikipedia.org/wiki/Vani_Vihar_railway_station"
+      },
+      {
+        "fact": "Mancheswar railway station (MCS) has five platforms and houses the East Coast Railway's carriage repair workshop.",
+        "source": "https://en.wikipedia.org/wiki/Mancheswar_railway_station"
+      },
+      {
+        "fact": "Mancheswar Industrial Estate, developed by the Odisha Industrial Infrastructure Development Corporation, is connected to National Highway 16 and Mancheswar railway station.",
+        "source": "https://en.wikipedia.org/wiki/Mancheswar_Industrial_Estate"
+      },
+      {
+        "fact": "Laxmisagar lies on the main Cuttack-Puri road between Rasulgarh and Kalpana squares.",
+        "source": "https://en.wikipedia.org/wiki/Laxmisagar"
+      }
+    ],
+    "West Bhubaneswar (Nayapalli & Jaydev Vihar)": [
+      {
+        "fact": "Ekamra Kanan, a 500-acre botanical garden and the city's largest park, was created in 1985 in Nayapalli.",
+        "source": "https://en.wikipedia.org/wiki/Ekamra_Kanan"
+      },
+      {
+        "fact": "Kalinga Stadium, on Bidyut Marg, is situated near the Nayapalli area.",
+        "source": "https://en.wikipedia.org/wiki/Kalinga_Stadium"
+      },
+      {
+        "fact": "IRC Village began as cottages built to house delegates of the Indian Roads Congress session held in Bhubaneswar in 1982.",
+        "source": "https://kalingatv.com/features/irc-village-bhubaneswar-when-a-conference-turned-an-open-field-into-a-premier-locality/"
+      },
+      {
+        "fact": "Baramunda lies west of the new capital and borders Surya Nagar, IRC Village, Jagamara, Nayapalli and Gopabandhu Nagar.",
+        "source": "https://en.wikipedia.org/wiki/Baramunda"
+      },
+      {
+        "fact": "The bus terminal at Baramunda was inaugurated in March 2024 and is the largest bus terminal in Odisha, with the state road transport corporation as its main operator.",
+        "source": "https://en.wikipedia.org/wiki/Babasaheb_Bhimrao_Ambedkar_Bus_Terminal"
+      },
+      {
+        "fact": "National Highway 16 (formerly NH-5) and Asian Highway 45 pass through Bhubaneswar.",
+        "source": "https://en.wikipedia.org/wiki/Bhubaneswar"
+      }
+    ],
+    "South Bhubaneswar (Old Town & Bapuji Nagar)": [
+      {
+        "fact": "The foundation of the new capital at Bhubaneswar was laid on 13 April 1948; the planned city was divided into units, each with a high school, shopping centre, dispensary and play areas.",
+        "source": "https://en.wikipedia.org/wiki/Bhubaneswar"
+      },
+      {
+        "fact": "Bapuji Nagar is Unit 1, Ashok Nagar Unit 2, Kharavela Nagar Unit 3 and Bhouma Nagar Unit 4 of the planned city.",
+        "source": "https://en.wikipedia.org/wiki/List_of_neighbourhoods_in_Bhubaneswar"
+      },
+      {
+        "fact": "South Bhubaneswar is the original historical Bhubaneswar; apart from BJB Nagar its localities, including Old Town, Samantarapur and Kapileswar, were villages.",
+        "source": "https://en.wikipedia.org/wiki/List_of_neighbourhoods_in_Bhubaneswar"
+      },
+      {
+        "fact": "The Lingaraja temple in Old Town dates in its present form from the last decade of the eleventh century, and its annual Rukuna Ratha Yatra is held on Ashokashtami.",
+        "source": "https://en.wikipedia.org/wiki/Lingaraja_Temple"
+      },
+      {
+        "fact": "Bhubaneswar railway station, at Master Canteen, opened in 1896 and is the headquarters station of the East Coast Railway zone.",
+        "source": "https://en.wikipedia.org/wiki/Bhubaneswar_railway_station"
+      },
+      {
+        "fact": "Lingaraj Temple Road railway station (LGTR), on Ekamra Marg at Palashpalli, lies on the Howrah-Chennai main line.",
+        "source": "https://en.wikipedia.org/wiki/Lingaraj_Temple_Road_railway_station"
+      },
+      {
+        "fact": "Samantarapur, formerly a village, is now Ward No. 59 of the municipal corporation.",
+        "source": "https://en.wikipedia.org/wiki/Samantarapur"
+      }
+    ],
+    "South-West Bhubaneswar (Khandagiri & Patrapada)": [
+      {
+        "fact": "The Udayagiri and Khandagiri caves occupy two adjacent hills, with 15 caves on Khandagiri, and date from the second or first century BCE.",
+        "source": "https://en.wikipedia.org/wiki/Udayagiri_and_Khandagiri_caves"
+      },
+      {
+        "fact": "Western Bhubaneswar, including Baramunda, Jagamara and Khandagiri, is a relatively new part of the city made up of planned colonies, unplanned colonies and villages, with Patrapada, Kalinga Nagar and Pokhariput on its fringes.",
+        "source": "https://en.wikipedia.org/wiki/List_of_neighbourhoods_in_Bhubaneswar"
+      },
+      {
+        "fact": "The Bhubaneswar Development Authority has developed a 10-acre park in the K-8 sector of Kalinga Nagar.",
+        "source": "https://www.bda.gov.in/project-details/27"
+      },
+      {
+        "fact": "A bus depot at Khandagiri, linked to the Baramunda bus terminal project, has parking for 300 buses.",
+        "source": "https://en.wikipedia.org/wiki/Baramunda"
+      },
+      {
+        "fact": "The Bhubaneswar Development Authority was established on 1 September 1983 and plans an area of 556 revenue villages around the city.",
+        "source": "https://en.wikipedia.org/wiki/Bhubaneswar_Development_Authority"
+      }
+    ]
+  }
+}

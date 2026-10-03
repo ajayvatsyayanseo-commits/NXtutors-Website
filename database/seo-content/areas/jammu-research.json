@@ -1,0 +1,325 @@
+{
+  "areas": {
+    "gandhi-nagar": {
+      "name": "Gandhi Nagar",
+      "zone": "Rail Head & New City",
+      "type": "mixed",
+      "about": "<p>Gandhi Nagar is one of the main planned colonies of the new city on the left bank of the Tawi, with Nanak Nagar, Preet Nagar and Shastri Nagar as its neighbours. It combines residential lanes with a large market, and the city's master plan names it, along with the old city, as a place for specialised shopping. Part of the colony is single-storey government housing, alongside private houses and some newer flats. Gol Market Chowk and Last Morh are the two landmarks most people use for directions.</p><p>The elevated road from Bikram Chowk, opened in 2017, carries through traffic into Gandhi Nagar, and the road via Jewel Chowk links the colony with the old city. Work on a further flyover from Satwari Chowk to Last Morh began in 2025, so expect diversions on that stretch for now. Jammu Tawi railway station is close by. For tutors, houses on the inner lanes mean doorstep arrival, while government quarters may have a gate check. The market roads are busiest in the evening, so agree a fixed slot with some margin. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/gandhi-nagar-jammu-overview-piffid",
+        "https://huddobps.jk.gov.in/JMP2032.pdf",
+        "https://www.tribuneindia.com/news/archive/features/finally-bikram-chowk-flyover-to-be-thrown-open-on-may-6-401686",
+        "https://www.dailyexcelsior.com/work-on-satwari-to-last-morh-gandhi-nagar-flyover-takes-off-2/"
+      ]
+    },
+    "nanak-nagar": {
+      "name": "Nanak Nagar",
+      "zone": "Rail Head & New City",
+      "type": "residential",
+      "about": "<p>Nanak Nagar is an established residential colony in the new city, next to Gandhi Nagar, Trikuta Nagar and Shastri Nagar. It is large enough to be split into three municipal wards, Nanak Nagar East, West and North. Homes are mostly independent houses on plotted lanes, with some builder floors and a few apartment buildings. A road runs from Nanak Nagar towards Preet Nagar via Khalsa Chowk.</p><p>Because it sits between Gandhi Nagar and Trikuta Nagar, Nanak Nagar is easy for tutors who already teach in either colony, and Jammu Tawi railway station is nearby for anyone coming by train. Most tutors arrive by two-wheeler, car or auto. In a house the tutor comes straight to the door, so share the sector or lane landmark and a phone number before the first visit. Roads towards the Gandhi Nagar market fill up in the evening, so an early slot or one agreed in advance helps classes start on time. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/nanak-nagar-jammu-overview-piffid",
+        "https://en.wikipedia.org/wiki/Jammu_Municipal_Corporation",
+        "https://huddobps.jk.gov.in/JMP2032.pdf"
+      ]
+    },
+    "shastri-nagar": {
+      "name": "Shastri Nagar",
+      "zone": "Rail Head & New City",
+      "type": "residential",
+      "about": "<p>Shastri Nagar is a residential colony in the new city with Nanak Nagar, Gandhi Nagar and Digiana as its neighbours. The Jammu and Kashmir Housing Board developed a housing colony here, and Shastri Nagar is a municipal ward of its own. Homes are a mix of independent houses and flats, with two-bedroom homes the most common, and a loop road connects Gandhi Nagar, Shastri Nagar and Nai Basti with the national highway.</p><p>For families, this means a tutor living in Gandhi Nagar, Nanak Nagar or Trikuta Nagar can usually take on a home here without a difficult journey. Jammu Tawi railway station and the local bus stand are close, though most tutors still come by two-wheeler or auto. Houses allow doorstep arrival, while a building with several flats may want the tutor's name at the entrance. Plan regular classes around the evening rush on the roads towards Gandhi Nagar, and use online sessions when a specialist subject teacher lives on the other side of the river. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/shastri-nagar-jammu-overview-piffid",
+        "https://jkhousingboard.jk.gov.in/",
+        "https://en.wikipedia.org/wiki/Jammu_Municipal_Corporation",
+        "https://huddobps.jk.gov.in/JMP2032.pdf"
+      ]
+    },
+    "trikuta-nagar": {
+      "name": "Trikuta Nagar",
+      "zone": "Trikuta & Channi",
+      "type": "residential",
+      "about": "<p>Trikuta Nagar is a large planned colony of the Jammu Development Authority in the southern part of the city, laid out in numbered sectors from Sector 1 to Sector 9, including a Sector 5A. Most of the colony is made up of independent houses on plots, with some flats, and it has its own shopping areas. Nanak Nagar, Gandhi Nagar and Channi Himmat are its neighbours.</p><p>Jammu Tawi railway station lies close to the colony, and roads connect Trikuta Nagar with the NH-44 bypass along the canal and via the marble market. Trikuta Nagar Chowk, also known as Greater Kailash Chowk, is the main junction on the colony's eastern side. For a home tutor, the sector number and house number are usually enough to find the home, and arrival is at the doorstep. Junctions near the station and the bypass get busy at peak hours, so agree a fixed weekday slot. Home tutors from Nanak Nagar or Channi Himmat are a practical match. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://jda.jk.gov.in/page/innerpage/trikuta-nagar.php",
+        "https://www.99acres.com/trikuta-nagar-jammu-overview-piffid",
+        "https://huddobps.jk.gov.in/JMP2032.pdf"
+      ]
+    },
+    "channi-himmat": {
+      "name": "Channi Himmat",
+      "zone": "Trikuta & Channi",
+      "type": "residential",
+      "about": "<p>Channi Himmat is a planned housing colony developed by the Jammu and Kashmir Housing Board on the eastern side of the new city, divided into numbered sectors with local shopping areas. It sits near Narwal, Sunjwan and Trikuta Nagar, and was on the eastern edge of the city when the municipal limits were extended in 2003. Homes are mainly independent houses on Housing Board plots, and the area is covered by several municipal wards.</p><p>A road runs from the first junction of the colony through Sectors 4 and 7 to the NH-44 bypass at Deeli, which helps tutors coming from the highway side, while those from Trikuta Nagar and Gandhi Nagar come in through the colony's own roads. Jammu Tawi is the nearest main railway station. Tutors mostly use a two-wheeler or auto, and houses mean doorstep arrival, so share the sector and house number. Ask for a tutor from Channi Himmat or Trikuta Nagar for regular evening classes, and keep online lessons for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://jkhousingboard.jk.gov.in/",
+        "https://www.99acres.com/channi-himmat-jammu-overview-piffid",
+        "https://huddobps.jk.gov.in/JMP2032.pdf",
+        "https://en.wikipedia.org/wiki/Jammu_Municipal_Corporation"
+      ]
+    },
+    "channi-rama": {
+      "name": "Channi Rama",
+      "zone": "Trikuta & Channi",
+      "type": "residential",
+      "about": "<p>Channi Rama is a residential area on the eastern side of Jammu, near Chowadhi, Sunjwan and Bathindi, and next to Channi Himmat. It shares a municipal ward with Narwal Bala. The city's master plan lists Channi Rama among existing residential areas that an earlier plan had wrongly marked as green land. Two-bedroom homes are the most sought-after configuration here, and the area continues to see new construction.</p><p>Jammu Tawi railway station is the nearest main station, and the NH-44 bypass runs along the eastern edge of this part of the city. Most tutors reach Channi Rama by two-wheeler or auto from Channi Himmat, Trikuta Nagar or Bathindi. Lanes in the newer pockets can be hard to find on a first visit, so send a map pin and a nearby landmark. Where the family lives in a flat, tell the guard or neighbours that a tutor will be coming. A tutor from the same side of the city makes regular evening classes easiest. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/channi-rama-jammu-overview-piffid",
+        "https://huddobps.jk.gov.in/JMP2032.pdf",
+        "https://en.wikipedia.org/wiki/Jammu_Municipal_Corporation"
+      ]
+    },
+    "bathindi": {
+      "name": "Bathindi",
+      "zone": "Trikuta & Channi",
+      "type": "residential",
+      "about": "<p>Bathindi, also written Bhatindi, is one of the newer residential areas on the eastern side of Jammu, near Channi Rama, Channi Himmat and Sunjwan. It has grown quickly, with many new flats alongside independent houses, and local markets are close by for daily shopping. Bhatindi Morh, where it meets NH-44, is the main landmark for directions, and the master plan proposes link roads from there towards Sunjwan and Chowadi near Sainik Colony.</p><p>For home tuition, the area's position on the eastern side means tutors usually come from Channi Himmat, Channi Rama or Trikuta Nagar, or from across the city by the bypass. Jammu Tawi is the nearest main railway station. Apartment buildings may ask a visitor to sign in at the gate, so share the tutor's name in advance, while houses allow doorstep arrival. Traffic builds at the highway junction in the evening, so fix a regular class time with some margin, and consider online classes for subjects where a specialist lives far away. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/bathindi-jammu-overview-piffid",
+        "https://huddobps.jk.gov.in/JMP2032.pdf"
+      ]
+    },
+    "sainik-colony": {
+      "name": "Sainik Colony",
+      "zone": "Kunjwani & Sainik Colony",
+      "type": "residential",
+      "about": "<p>Sainik Colony is a large residential colony on the south-eastern side of Jammu, near Chowadhi, Sunjwan and Greater Kailash. It is big enough to form two municipal wards, Sainik Colony-1 and Sainik Colony-2. Homes are mainly independent houses on plots, with plots still being built on in Sainik Colony Extension, and local markets serve daily needs. The colony is close to NH-44.</p><p>The nearest railway stations are Bari Brahmana and Jammu Tawi, and a link road is planned from the Sainik Colony junction to NH-44 at Purmandal Chowk via Chowadi. Most tutors reach the colony by two-wheeler or car along the highway from Kunjwani or Greater Kailash. In a house the tutor comes to the door, so share the sector and house number and a phone number for the first visit. Highway junctions are busiest at office hours, so a tutor living in Sainik Colony or Greater Kailash is the most practical choice for regular weekday classes, with online sessions for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/sainik-colony-jammu-overview-piffid",
+        "https://en.wikipedia.org/wiki/Jammu_Municipal_Corporation",
+        "https://huddobps.jk.gov.in/JMP2032.pdf"
+      ]
+    },
+    "greater-kailash": {
+      "name": "Greater Kailash",
+      "zone": "Kunjwani & Sainik Colony",
+      "type": "residential",
+      "about": "<p>Greater Kailash is a residential colony in the southern part of Jammu, positioned near Kunjwani, Trikuta Nagar, Sainik Colony and Channi Himmat, and it is a municipal ward of its own. Trikuta Nagar Chowk, also known as Greater Kailash Chowk, is the junction most people use as a landmark. Housing is a mix of independent houses and apartment buildings, with food outlets and shops within walking distance of many homes.</p><p>NH-44 connects the colony with the rest of the city, and Jammu Tawi and Bari Brahmana are the nearest railway stations. Tutors usually come by two-wheeler, car or auto from Trikuta Nagar, Channi Himmat or Sainik Colony. Apartment buildings may keep a visitor register at the gate, so share the tutor's name beforehand; houses mean doorstep arrival. The city's master plan marks Greater Kailash Chowk as a junction that needs a grade separator, which tells you it gets busy, so keep classes to a fixed time away from the evening peak. Online classes help for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/greater-kailash-jammu-overview-piffid",
+        "https://huddobps.jk.gov.in/JMP2032.pdf",
+        "https://en.wikipedia.org/wiki/Jammu_Municipal_Corporation"
+      ]
+    },
+    "kunjwani": {
+      "name": "Kunjwani",
+      "zone": "Kunjwani & Sainik Colony",
+      "type": "mixed",
+      "about": "<p>Kunjwani is a busy junction locality on the southern side of Jammu, near Narwal, Gangyal and Greater Kailash. Kunjwani Chowk is where the Pathankot road and the Bishnah road meet the city, and the NH-44 bypass towards Nagrota begins here, running along the eastern edge of the city and across the Tawi via Narwal Bala and Sidhra. Homes sit in lanes off the highway, with shops and showrooms on the main road and the Gangyal industrial estate nearby.</p><p>A four-lane flyover from Kunjwani Chowk to Satwari, built by the national highways authority to take through traffic over Satwari Chowk, is being completed; once it opens, travel towards the airport side and Gandhi Nagar should be easier. Jammu Tawi railway station is close. For tutors, homes off the highway are easier to reach by two-wheeler, and a lane landmark avoids confusion near the junction. Highway traffic is heavy at peak hours, so pick a class time outside the rush. Online sessions work well for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/kunjwani-jammu-overview-piffid",
+        "https://huddobps.jk.gov.in/JMP2032.pdf",
+        "https://www.dailyexcelsior.com/58-km-jammu-nagrota-ring-road-being-thrown-open-to-traffic-in-dec/"
+      ]
+    },
+    "old-city": {
+      "name": "Old City (Raghunath Bazar, Purani Mandi and Pacca Danga)",
+      "zone": "Old City & Sidhra",
+      "type": "mixed",
+      "about": "<p>Jammu's old city stands on the right bank of the Tawi, overlooking the river from the north, while the newer neighbourhoods spread across the left bank. It is the oldest part of the city, and its neighbourhoods include Purani Mandi, Pacca Danga, Fattu Chowgan, Kanak Mandi and Gumat, and the old layout has narrow lanes that open into small squares. Homes in the core are typically older houses along these lanes.</p><p>Raghunath Bazar, Kanak Mandi Road and Residency Road are among the busiest streets in the city, so tutors here usually prefer a two-wheeler and a precise lane landmark, and some lanes are easier to reach on foot. The road through Jewel Chowk links the old city with Gandhi Nagar, and Jammu Tawi railway station is across the river on the new city side. Arrival is usually at the house door. Market hours make the evenings crowded, so agree a fixed class time with the tutor, and use online classes for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jammu",
+        "https://huddobps.jk.gov.in/JMP2032.pdf"
+      ]
+    },
+    "rehari-colony": {
+      "name": "Rehari Colony",
+      "zone": "Old City & Sidhra",
+      "type": "residential",
+      "about": "<p>Rehari Colony, usually just called Rehari, is a residential area on the old city side of Jammu, divided into two municipal wards, Rehari North and Rehari South. Bakshi Nagar, Janipur and Subhash Nagar are close neighbours. Rehari Chowk and Rehari Chungi are the main landmarks: roads run from Rehari Chowk towards Paloura and Toph Sherkhania, and Sarwal Road runs from Rehari Chungi to Paloura Chowk. Homes are mainly houses along residential lanes.</p><p>A road from the Rehari bridge links the area with BC Road and the rest of the old city, so tutors from the old city, Bakshi Nagar and Janipur can all reach Rehari without crossing the river. Jammu Tawi railway station is on the far side of the Tawi, so most tutors come by two-wheeler or auto. In a house the tutor arrives at the door, so give the lane name and a phone number before the first class. Sarwal Road and Janipur Road are busy in the evening, so choose a fixed slot that avoids the rush. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jammu_Municipal_Corporation",
+        "https://huddobps.jk.gov.in/JMP2032.pdf",
+        "https://www.99acres.com/bakshi-nagar-jammu-overview-piffid",
+        "https://www.99acres.com/janipur-jammu-overview-piffid"
+      ]
+    },
+    "bakshi-nagar": {
+      "name": "Bakshi Nagar",
+      "zone": "Old City & Sidhra",
+      "type": "residential",
+      "about": "<p>Bakshi Nagar is a residential area on the old city side of the Tawi, near Shakti Nagar, Subhash Nagar and Rehari Colony, and it borders Talab Tillo to the west. It is covered by two municipal wards, Bakshi Nagar and Gurha Bakshi Nagar. Homes are mostly independent houses on established lanes, and the Bakshi Nagar road links the area with Akhnoor Road. Hospitals and shops nearby make it a practical, long-settled neighbourhood for families.</p><p>Its location between Rehari, Talab Tillo and the old city means tutors from all three can reach it easily, and Akhnoor Road gives a straight route from the Talab Tillo side. Jammu Tawi railway station lies across the river, so most tutors use a two-wheeler, car or auto. Arrival at a house is at the doorstep; share the lane landmark and a phone number for the first visit. Keep a fixed weekday slot outside the evening rush, and use online classes when the right specialist lives on the other side of the river. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/bakshi-nagar-jammu-overview-piffid",
+        "https://en.wikipedia.org/wiki/Talab_Tillo",
+        "https://en.wikipedia.org/wiki/Jammu_Municipal_Corporation",
+        "https://huddobps.jk.gov.in/JMP2032.pdf"
+      ]
+    },
+    "sidhra": {
+      "name": "Sidhra",
+      "zone": "Old City & Sidhra",
+      "type": "residential",
+      "about": "<p>Sidhra lies on the foothills of the Shivalik range on the banks of the Tawi, on the north-eastern side of Jammu, and NH-44 runs through it. A bridge over the Tawi connects Sidhra with the old city, while the highway from the other direction connects it with the new city. It is one of the fast-developing residential areas on the edge of Jammu, with new houses and apartment buildings, and the city's master plan proposes a satellite township around Sidhra, Majeen and Rangoura.</p><p>The NH-44 bypass from Kunjwani to Nagrota passes through Sidhra, so tutors can come by the bypass from the southern colonies or over the bridge from the old city. Public transport is available, but most tutors use a two-wheeler or car. Apartment complexes may register visitors at the gate. Because good specialist tutors may live across the city, online classes are worth considering alongside a home tutor. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sidhra",
+        "https://www.99acres.com/sidhra-jammu-overview-piffid",
+        "https://huddobps.jk.gov.in/JMP2032.pdf"
+      ]
+    },
+    "janipur": {
+      "name": "Janipur",
+      "zone": "Janipur & Akhnoor Road",
+      "type": "residential",
+      "about": "<p>Janipur is an established residential area in the north of Jammu, on the right bank of the Tawi, near Sarwal and Rehari Colony. It is large enough to be split into four municipal wards, and the Jammu Development Authority developed a housing colony here, with a further part known as New Janipur along the foothills. Homes are mostly independent houses on plots, and the area has banks, showrooms and markets within walking distance.</p><p>Janipur Road runs towards Amphalla Chowk, the Ambgrota road passes Janipur Chowk and the housing colony, and the Paloura road links Janipur Road with Paloura Chowk. Public transport and autos are easy to find, but Janipur Road and Sarwal Road are often congested, and parking on narrow lanes can be tight, so a tutor on a two-wheeler is the practical choice. Arrival at a house is at the doorstep. Fix an early-evening slot, and pick a tutor from Janipur, Rehari, Roop Nagar or Paloura for regular classes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.99acres.com/janipur-jammu-overview-piffid",
+        "https://jda.jk.gov.in/page/innerpage/trikuta-nagar.php",
+        "https://huddobps.jk.gov.in/JMP2032.pdf",
+        "https://en.wikipedia.org/wiki/Jammu_Municipal_Corporation"
+      ]
+    },
+    "talab-tillo": {
+      "name": "Talab Tillo",
+      "zone": "Janipur & Akhnoor Road",
+      "type": "mixed",
+      "about": "<p>Talab Tillo is a busy residential and commercial area in the western part of Jammu, bordered by Bohri, Canal Road and Bakshi Nagar. Talab Tillo Chowk is the main commercial hub, with banks, shops and eateries, and other parts include Udheywala, Anand Nagar, Gol Pulli and Pakka Gharat. Homes range from older houses on settled lanes to newer plotted colonies.</p><p>The area lies close to Akhnoor Road, and Talab Tillo Road links it with the canal side, so mini-buses, autos and cabs are easy to find. Jammu Tawi railway station is on the other bank of the river. For tutors, the area around the chowk gets crowded in the evenings, so ask for a lane landmark and plan the class time with some margin. Houses mean doorstep arrival. Tutors from Bakshi Nagar, Janipur and Udheywala can reach Talab Tillo easily, and online classes cover subjects where the right specialist lives elsewhere. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Talab_Tillo",
+        "https://huddobps.jk.gov.in/JMP2032.pdf",
+        "https://en.wikipedia.org/wiki/Jammu_Municipal_Corporation"
+      ]
+    },
+    "paloura": {
+      "name": "Paloura",
+      "zone": "Janipur & Akhnoor Road",
+      "type": "residential",
+      "about": "<p>Paloura lies on the north-western side of Jammu, on the right bank of the Tawi, and is covered by three municipal wards that carry the Paloura name. The Jammu Development Authority has a layout plan for urban development in Paloura, including a housing colony, and much of the newer housing is in plotted layouts. Paloura Chowk is the main landmark, and nearby areas include Muthi, Janipur and the Talab Tillo side.</p><p>Sarwal Road runs from Rehari Chungi to Paloura Chowk, the Paloura road links the chowk with Janipur Road, and a link road connects Akhnoor Road with Paloura Chowk, so tutors can come in from Rehari, Janipur or Talab Tillo. Jammu Tawi railway station is across the river, so most tutors travel by two-wheeler or auto. Lanes in the newer plotted parts can be hard to find, so send a map pin before the first visit. Keep a regular slot outside the evening rush on Sarwal Road, and consider online classes for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://jda.jk.gov.in/page/innerpage/trikuta-nagar.php",
+        "https://huddobps.jk.gov.in/JMP2032.pdf",
+        "https://en.wikipedia.org/wiki/Jammu_Municipal_Corporation"
+      ]
+    },
+    "roop-nagar": {
+      "name": "Roop Nagar",
+      "zone": "Janipur & Akhnoor Road",
+      "type": "residential",
+      "about": "<p>Roop Nagar is a residential colony in the north of Jammu, developed by the Jammu Development Authority, which also set up a local shopping area for the colony. It lies along the foothills on the right bank of the Tawi, in the same belt as New Janipur and Bantalab, and Janipur is its closest large neighbour. Homes are mostly independent houses on plots in a planned layout.</p><p>For families, the nearest pool of home tutors is usually in Roop Nagar itself, Janipur and Paloura, and online classes widen the choice for specialist subjects. Jammu Tawi railway station lies across the river, so tutors mostly come by two-wheeler or car. Share a clear landmark and a phone number for the first visit; arrival at a house is at the doorstep. Traffic on Janipur Road builds in the evening, so a tutor based nearby and a fixed weekday slot keep classes regular. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://jda.jk.gov.in/page/innerpage/trikuta-nagar.php",
+        "https://huddobps.jk.gov.in/JMP2032.pdf"
+      ]
+    }
+  },
+  "zone_facts": {
+    "Rail Head & New City": [
+      {
+        "fact": "Jammu straddles the Tawi: the old city overlooks the river from the north (right bank) while the new neighbourhoods are spread around the southern side (left bank).",
+        "source": "https://en.wikipedia.org/wiki/Jammu"
+      },
+      {
+        "fact": "The elevated corridor from Bikram Chowk to Gandhi Nagar was opened in May 2017 to carry Kathua and RS Pura route traffic.",
+        "source": "https://www.tribuneindia.com/news/archive/features/finally-bikram-chowk-flyover-to-be-thrown-open-on-may-6-401686"
+      },
+      {
+        "fact": "NHAI began work on a flyover from Satwari Chowk to Last Morh, Gandhi Nagar, on 11 March 2025, with traffic diversions during construction.",
+        "source": "https://www.dailyexcelsior.com/work-on-satwari-to-last-morh-gandhi-nagar-flyover-takes-off-2/"
+      },
+      {
+        "fact": "The Jammu Master Plan 2032 says BC Road via Jewel Chowk is an important link between the city centre and Gandhi Nagar, and that Gandhi Nagar has specialised markets.",
+        "source": "https://huddobps.jk.gov.in/JMP2032.pdf"
+      },
+      {
+        "fact": "Gandhi Nagar North, Gandhi Nagar South, Shastri Nagar and Nanak Nagar (East, West and North) are wards of the Jammu Municipal Corporation.",
+        "source": "https://en.wikipedia.org/wiki/Jammu_Municipal_Corporation"
+      },
+      {
+        "fact": "The Jammu and Kashmir Housing Board has a housing colony at Shastri Nagar.",
+        "source": "https://jkhousingboard.jk.gov.in/"
+      }
+    ],
+    "Trikuta & Channi": [
+      {
+        "fact": "Jammu Tawi railway station on Railway Road opened to passenger traffic on 2 December 1972 and has seven platforms.",
+        "source": "https://en.wikipedia.org/wiki/Jammu_Tawi_railway_station"
+      },
+      {
+        "fact": "The Jammu Development Authority publishes layout plans for Trikuta Nagar Sectors 1 to 9, including Sector 5A.",
+        "source": "https://jda.jk.gov.in/page/innerpage/trikuta-nagar.php"
+      },
+      {
+        "fact": "Channi Himmat Housing Colony is a Jammu and Kashmir Housing Board colony.",
+        "source": "https://jkhousingboard.jk.gov.in/"
+      },
+      {
+        "fact": "When the Jammu Municipal Corporation limits were extended in 2003, they reached Narwal Bala and Channi Himmat in the east.",
+        "source": "https://huddobps.jk.gov.in/JMP2032.pdf"
+      },
+      {
+        "fact": "Municipal wards in this area include Channi Himmat Housing Colony, Channi Himmat Thangar, Channi Himmat Biza, Channi Biza Trikuta Nagar and Channi Rama/Narwal Bala.",
+        "source": "https://en.wikipedia.org/wiki/Jammu_Municipal_Corporation"
+      },
+      {
+        "fact": "The master plan lists a road from the railway station along the canal to the NH-44 bypass via Trikuta Nagar, and a link road from Bhatindi Morh on NH-44 towards Sainik Colony via Sunjwan.",
+        "source": "https://huddobps.jk.gov.in/JMP2032.pdf"
+      }
+    ],
+    "Kunjwani & Sainik Colony": [
+      {
+        "fact": "The NH bypass along the eastern side of Jammu takes off from Kunjwani and crosses the Tawi to link NH-44 with the Srinagar road north of the city.",
+        "source": "https://huddobps.jk.gov.in/JMP2032.pdf"
+      },
+      {
+        "fact": "A four-lane Kunjwani-Satwari flyover over Satwari Chowk is being completed by the national highways authority.",
+        "source": "https://www.dailyexcelsior.com/58-km-jammu-nagrota-ring-road-being-thrown-open-to-traffic-in-dec/"
+      },
+      {
+        "fact": "Trikuta Nagar Chowk is also known as Greater Kailash Chowk, and the master plan lists it among junctions needing a grade separator.",
+        "source": "https://huddobps.jk.gov.in/JMP2032.pdf"
+      },
+      {
+        "fact": "Sainik Colony-1, Sainik Colony-2 and Greater Kailash are wards of the Jammu Municipal Corporation.",
+        "source": "https://en.wikipedia.org/wiki/Jammu_Municipal_Corporation"
+      },
+      {
+        "fact": "Bari Brahmana (BBMN) and Jammu Tawi (JAT) are stations of the Jammu railway area on the line through Jammu.",
+        "source": "https://en.wikipedia.org/wiki/List_of_railway_stations_in_Jammu_and_Kashmir"
+      },
+      {
+        "fact": "Jammu Airport lies along the Ranbir Singh Pora road and is operated for civilian flights by the Airports Authority of India.",
+        "source": "https://en.wikipedia.org/wiki/Jammu_Airport"
+      }
+    ],
+    "Old City & Sidhra": [
+      {
+        "fact": "The master plan notes that the old city's narrow alleys open into squares at Purani Mandi, Pacca Danga, Fattu Chowgan and Jain Mandir Chowk.",
+        "source": "https://huddobps.jk.gov.in/JMP2032.pdf"
+      },
+      {
+        "fact": "Sidhra lies on the Tawi with NH-44 running through it; a bridge over the Tawi connects it with the old city.",
+        "source": "https://en.wikipedia.org/wiki/Sidhra"
+      },
+      {
+        "fact": "The Jammu Master Plan 2032 proposes a satellite township at Sidhra, Majeen and Rangoura.",
+        "source": "https://huddobps.jk.gov.in/JMP2032.pdf"
+      },
+      {
+        "fact": "Rehari North, Rehari South, Bakshi Nagar, Gurha Bakshi Nagar and Pacca Danga are wards of the Jammu Municipal Corporation.",
+        "source": "https://en.wikipedia.org/wiki/Jammu_Municipal_Corporation"
+      }
+    ],
+    "Janipur & Akhnoor Road": [
+      {
+        "fact": "Talab Tillo lies in the western part of Jammu, bordered by Bohri, Canal Road and Bakshi Nagar, and close to Akhnoor Road.",
+        "source": "https://en.wikipedia.org/wiki/Talab_Tillo"
+      },
+      {
+        "fact": "Janipur (North, South, Central and West), three Paloura wards and Talab Tillo North are wards of the Jammu Municipal Corporation.",
+        "source": "https://en.wikipedia.org/wiki/Jammu_Municipal_Corporation"
+      },
+      {
+        "fact": "The Jammu Development Authority's colonies include Janipur and Roop Nagar, and it has a layout plan for Paloura.",
+        "source": "https://jda.jk.gov.in/page/innerpage/trikuta-nagar.php"
+      },
+      {
+        "fact": "The master plan places Pacca Danga, New Janipur, Roop Nagar and Bantalab along the foothills on the right bank of the Tawi.",
+        "source": "https://huddobps.jk.gov.in/JMP2032.pdf"
+      },
+      {
+        "fact": "Sarwal Road runs from Rehari Chungi to Paloura Chowk, and Janipur Road runs towards Amphalla Chowk.",
+        "source": "https://huddobps.jk.gov.in/JMP2032.pdf"
+      }
+    ]
+  }
+}

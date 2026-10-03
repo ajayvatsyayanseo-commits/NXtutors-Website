@@ -1,0 +1,339 @@
+{
+  "areas": {
+    "samta-colony": {
+      "name": "Samta Colony",
+      "zone": "Central Raipur",
+      "type": "residential",
+      "about": "<p>Samta Colony is a residential colony in the heart of Raipur, administered by the Raipur Municipal Corporation and placed close to the city's main market area and to Raipur Junction. It is bordered by Choubey Colony, Amanaka, Bajrang Nagar, Gokul Nagar and Amapara, and Kota lies alongside. The colony has a dozen places of worship, including temples and a Jain mandir, and several banks and schools serve it, so most daily needs are met within the neighbourhood.</p><p>Being so central, Samta Colony is easy to reach for tutors from almost every side of the city, and Raipur Junction is close for anyone coming in by train. Most tutors arrive by two-wheeler or auto. If the home is an independent house the tutor simply comes to the door; for a flat, share the building name and floor in advance. Roads towards the station and the market are busiest in the evening, so a fixed slot agreed at the start keeps classes regular, and online sessions suit subjects where the right specialist lives further away. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Samta_Colony",
+        "https://en.wikipedia.org/wiki/Raipur_Junction_railway_station",
+        "https://www.squareyards.com/kota-in-raipur-overview-50399"
+      ]
+    },
+    "fafadih": {
+      "name": "Fafadih",
+      "zone": "Central Raipur",
+      "type": "mixed",
+      "about": "<p>Fafadih is a central Raipur locality close to Raipur Junction, and Fafadih Chowk is the city end of the six-lane, access-controlled expressway to Nava Raipur, which crosses the Great Eastern Road on flyovers and an elevated corridor along its route. Around the chowk, flats, plots and office spaces sit side by side, and Devendra Nagar and Pandri are its close neighbours.</p><p>For families, the expressway makes Fafadih one of the easier places to reach from Shankar Nagar, Telibandha and the newer eastern side of the city, while Raipur Junction is close for tutors who come by train. The BRTS buses that link the railway station with Nava Raipur also run through this side of the city. Tutors usually use a two-wheeler or auto. Main-road buildings are busy with shops and offices, so give a clear landmark and the building name, and check whether visitors sign in. Evening traffic builds around the chowk and the station roads, so pick a time with some margin or a tutor who lives nearby. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Raipur%E2%80%93Naya_Raipur_Expressway",
+        "https://www.squareyards.com/fafadih-in-raipur-overview-50411",
+        "https://www.squareyards.com/devendra-nagar-in-raipur-overview-50409",
+        "https://en.wikipedia.org/wiki/Raipur_and_Naya_Raipur_Bus_Rapid_Transit_System"
+      ]
+    },
+    "gudhiyari": {
+      "name": "Gudhiyari",
+      "zone": "Central Raipur",
+      "type": "residential",
+      "about": "<p>Gudhiyari is a residential locality close to Raipur Junction, the city's main railway station on the Howrah-Nagpur-Mumbai line, which opened in 1888. Shrinagar, Gokul Nagar and Ramnagar are its immediate neighbours, and Devendra Nagar counts it among its adjoining localities. Property portals describe its housing as mainly flats in two- and four-bedroom sizes, and the area has its own busy local shopping streets.</p><p>Its closeness to the station is useful for tutors who travel in by train, and those based in Samta Colony, Kota or Devendra Nagar can usually reach it easily by two-wheeler. A two-wheeler is generally the simplest way through the inner lanes, and a clear landmark helps on the first visit. For flats, tell the guard or caretaker the tutor's name before the demo class. Roads leading to the station are busiest in the evening, so agree a regular slot that avoids the rush, and consider online lessons for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/gudhiyari-in-raipur-overview-50479",
+        "https://en.wikipedia.org/wiki/Raipur_Junction_railway_station",
+        "https://www.squareyards.com/devendra-nagar-in-raipur-overview-50409"
+      ]
+    },
+    "devendra-nagar": {
+      "name": "Devendra Nagar",
+      "zone": "Central Raipur",
+      "type": "residential",
+      "about": "<p>Devendra Nagar is a central residential locality between Pandri and Fafadih, with numbered sectors such as Sector 4, and with Moudhapara, Byron Bazar, Khamtarai, Shrinagar and Lodhipara among the localities around it. The area is dominated by independent houses, and builder floors and two-bedroom homes are what most tenants look for here. Raipur Junction is the nearest main railway station.</p><p>Because most homes are houses or builder floors, tutors usually arrive straight at the door rather than through a society gate, which keeps the first visit simple: share the sector, house number and a nearby landmark. Tutors from Pandri, Fafadih and Shankar Nagar are within easy reach, and the expressway that starts at Fafadih helps those coming from the eastern side of the city. Two-wheelers are the usual choice. The main roads around the commercial areas get crowded towards evening, so an early-evening or weekend slot fixed in advance works well. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/devendra-nagar-in-raipur-overview-50409",
+        "https://en.wikipedia.org/wiki/Raipur%E2%80%93Naya_Raipur_Expressway",
+        "https://en.wikipedia.org/wiki/Raipur_Junction_railway_station"
+      ]
+    },
+    "pandri": {
+      "name": "Pandri",
+      "zone": "Central Raipur",
+      "type": "mixed",
+      "about": "<p>Pandri is a central Raipur locality with busy commercial streets, and Pandri Road is counted among the city's main roads. For many years it was known for the city's main bus stand, which closed once the new inter-state bus terminal at Bhatagaon became operational in November 2021. Housing is mainly ready-to-move independent houses, followed by apartments and plots, and Devendra Nagar and Fafadih are neighbouring localities.</p><p>For tuition, the mix of houses and flats means arrival is usually at the door, though apartment buildings may ask for the tutor's name at the gate. Pandri is central enough that tutors from Devendra Nagar, Shankar Nagar, Telibandha and the station side can reach it easily by two-wheeler or auto, and Raipur Junction is close for anyone travelling by train. Market streets are crowded in the evenings and on festival days, so pick a weekday slot with some margin and share a precise landmark rather than just the market name. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/pandri-in-raipur-overview-85615",
+        "https://en.wikipedia.org/wiki/Inter-State_Bus_Terminal,_Raipur",
+        "https://en.wikipedia.org/wiki/Raipur"
+      ]
+    },
+    "shankar-nagar": {
+      "name": "Shankar Nagar",
+      "zone": "East Raipur",
+      "type": "residential",
+      "about": "<p>Shankar Nagar is a well-known residential locality of Raipur, surrounded by Telibandha, Avanti Vihar, VIP Colony, Jivan Vihar and Khamardih. Its housing includes apartment buildings, builder floors, villas and independent houses, with two- and three-bedroom flats making up much of what is on offer and independent houses much sought after by buyers. Residents rate it well for public transport and for the easy availability of autos and cabs.</p><p>Raipur Junction can be reached via the expressway to Nava Raipur, and VIP Road leads out towards the airport, so tutors from both the central and eastern parts of the city find Shankar Nagar convenient. Apartment buildings usually register visitors at the gate, so give the tutor's name and the flat number to the guard before the demo class; houses and builder floors allow doorstep arrival. Residents mention traffic jams at busy times, so choose a slot outside the evening peak or a tutor who lives in Shankar Nagar or Avanti Vihar. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/shankar-nagar-in-raipur-overview-50425",
+        "https://en.wikipedia.org/wiki/Raipur%E2%80%93Naya_Raipur_Expressway",
+        "https://www.squareyards.com/avanti-vihar-in-raipur-overview-78087"
+      ]
+    },
+    "avanti-vihar": {
+      "name": "Avanti Vihar",
+      "zone": "East Raipur",
+      "type": "residential",
+      "about": "<p>Avanti Vihar is a residential colony that is generally treated as part of the wider Shankar Nagar area, lying just off VIP Road. It has quick access to Telibandha, Pandri and Raipur Junction, and property portals describe its homes as mainly two- and three-bedroom apartments along with villas. Residents note that markets are within walking distance and that autos, city buses and cabs are easy to find.</p><p>The colony's position between Shankar Nagar, Telibandha and VIP Road gives families a wide pool of tutors living nearby, and Raipur Junction is within reach for tutors arriving by train. Villas and houses mean doorstep arrival, while apartment buildings typically keep a visitor register, so share the block and flat number in advance. The name is close to Avani Vihar, a different locality near Mowa, so give the full address and a landmark when booking the first class. Evening sessions run most smoothly when the tutor lives in the same part of the city. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/avanti-vihar-in-raipur-overview-78087",
+        "https://www.squareyards.com/shankar-nagar-in-raipur-overview-50425",
+        "https://www.squareyards.com/avani-vihar-in-raipur-overview-82197"
+      ]
+    },
+    "telibandha": {
+      "name": "Telibandha",
+      "zone": "East Raipur",
+      "type": "mixed",
+      "about": "<p>Telibandha takes its name from the old village around Telibandha Lake, built in 1835 and now popularly called Marine Drive, a lakeside promenade on Gaurav Path with gardens, food stalls and a musical fountain. Anupam Nagar, Janta Colony, New Rajendra Nagar and Amlidih are among the neighbouring localities. Homes are mainly independent houses and apartments in two- and three-bedroom sizes, and many office spaces sit along the main roads.</p><p>The narrow-gauge Telibandha station has closed, and the old line through the area was converted into the expressway between Raipur Junction and Nava Raipur, so road rather than rail is how most people now move through Telibandha. Tutors usually arrive by two-wheeler, car or auto. The lakefront fills up in the evenings and at weekends, so for homes close to it, plan class times with some margin. Apartment buildings may need the tutor's name at the gate, while houses allow doorstep arrival. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Telibandha_Lake",
+        "https://en.wikipedia.org/wiki/Telibandha_railway_station",
+        "https://www.squareyards.com/telibandha-in-raipur-overview-50441"
+      ]
+    },
+    "mowa": {
+      "name": "Mowa",
+      "zone": "East Raipur",
+      "type": "residential",
+      "about": "<p>Mowa was counted as a census town of Raipur district and is now part of the city's growing north-eastern side. It lies next to Vidhan Sabha Road, with Daldal Seoni and Avani Vihar as close neighbours and Shankar Nagar, Khamardih Road, VIP Road and Fafadih not far off. Housing is a mix of apartments, villas, independent houses and plots, and three-bedroom homes are in strong demand.</p><p>Raipur Junction is reached via Mandi Road, and tutors from Shankar Nagar, Telibandha and the Vidhan Sabha Road colonies can usually get here easily. Most come by two-wheeler or car. In gated colonies and apartment buildings, register the tutor at the gate; for houses and villas, a landmark and phone number are enough. Vidhan Sabha Road carries steady traffic at office hours, so a fixed slot outside the evening peak, or online classes for specialist subjects, keeps lessons regular. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mowa,_Chhattisgarh",
+        "https://www.squareyards.com/mowa-in-raipur-overview-50407",
+        "https://www.squareyards.com/daldal-seoni-in-raipur-overview-50537"
+      ]
+    },
+    "daldal-seoni": {
+      "name": "Daldal Seoni",
+      "zone": "East Raipur",
+      "type": "residential",
+      "about": "<p>Daldal Seoni is a residential locality close to Vidhan Sabha Road, Mowa and Avani Vihar, and Daldal Seoni Main Road is one of the routes from this side of the city towards the Bhanpuri industrial area. Property portals list apartments, plots and independent houses here, with two-bedroom flats common in the newer buildings, and many complexes have shops and daily-needs stores attached.</p><p>Families here usually find tutors among those living in Mowa, Avani Vihar and the colonies along Vidhan Sabha Road, which keeps travel manageable for regular classes. Tutors mostly arrive by two-wheeler or car, and Raipur Junction is the main railway station for anyone coming from further away. For apartment buildings with round-the-clock security, give the guard the tutor's name before the first visit; for houses, share the lane and a landmark. Office-hour traffic on Vidhan Sabha Road is worth avoiding when fixing a time, and online classes work well for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/daldal-seoni-in-raipur-overview-50537",
+        "https://www.squareyards.com/mowa-in-raipur-overview-50407"
+      ]
+    },
+    "saddu": {
+      "name": "Saddu",
+      "zone": "East Raipur",
+      "type": "residential",
+      "about": "<p>Saddu is a growing residential area on Raipur's north-eastern side, near Vidhan Sabha Road, Ama Seoni and Parsulidih. Most of what is on offer here is residential plots on which families build independent houses, while apartments are what many buyers look for. NH-130B gives the area a road link out of the city, VIP Road leads towards the airport, and the Bhanpuri industrial hub is within reach.</p><p>Because Saddu is spread out and still filling in, tutors usually come by two-wheeler or car rather than auto, and a shared map pin helps on the first visit. Tutors from Mowa, Daldal Seoni and the Vidhan Sabha Road colonies are the most practical match for regular home classes, and Raipur Junction is the main station for anyone travelling in by train. Plotted homes mean doorstep arrival; apartment complexes will ask for the tutor's name at the gate. For subjects where the right teacher lives in the central city, online classes are a sensible option. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/saddu-in-raipur-overview-50421",
+        "https://www.squareyards.com/mowa-in-raipur-overview-50407"
+      ]
+    },
+    "new-rajendra-nagar": {
+      "name": "New Rajendra Nagar",
+      "zone": "South Raipur",
+      "type": "residential",
+      "about": "<p>New Rajendra Nagar is a residential locality with Shailendra Nagar, Tagore Nagar and Priyadarshini Nagar as its neighbours. It sits where major arterial roads meet, including NH-30 and the Telibandha ring road section of NH-53, and the road via Amlidih leads on towards the airport. Homes are apartment buildings and independent houses built by city-based developers, and the Katora Talab and Rajendra Nagar markets are close by for daily shopping.</p><p>Its central position and road links make New Rajendra Nagar easy to reach from Telibandha, Amlidih, Pachpedi Naka and Shankar Nagar, so families usually have a good choice of tutors nearby. Most tutors come by two-wheeler or auto, and Raipur Junction is the main station for train travel. Apartment buildings typically ask visitors to sign in, while houses allow doorstep arrival. Traffic builds at the arterial junctions during office hours, so set a regular slot that avoids the evening rush. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/new-rajendra-nagar-in-raipur-overview-50509",
+        "https://www.squareyards.com/telibandha-in-raipur-overview-50441",
+        "https://www.squareyards.com/pachpedi-naka-in-raipur-overview-50507"
+      ]
+    },
+    "pachpedi-naka": {
+      "name": "Pachpedi Naka",
+      "zone": "South Raipur",
+      "type": "mixed",
+      "about": "<p>Pachpedi Naka is a busy junction where Dhamtari Road meets the Ring Road, and the locality around it has grown into a mix of homes, hospitals and commercial frontage, with NH-30 and NH-53 passing alongside. Housing is mainly apartments and independent houses, with two- and three-bedroom flats most sought after by tenants, and Boriyakhurd, Amlidih, New Rajendra Nagar and Santoshi Nagar are neighbouring localities.</p><p>For tutors, the junction is a meeting point of routes, so homes here can be reached from the central city, Telibandha and the Dhamtari Road colonies alike. Because the junction carries heavy traffic, including commercial vehicles, it is worth choosing a home tutor who lives on the same side of the Ring Road and fixing class times away from the busiest hours. Parking beside main-road buildings can be tight, so a two-wheeler is easiest, and apartment buildings usually ask for the tutor's name at the gate. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/pachpedi-naka-in-raipur-overview-50507",
+        "https://www.squareyards.com/amlidih-in-raipur-overview-78089",
+        "https://www.squareyards.com/new-rajendra-nagar-in-raipur-overview-50509"
+      ]
+    },
+    "amlidih": {
+      "name": "Amlidih",
+      "zone": "South Raipur",
+      "type": "residential",
+      "about": "<p>Amlidih is a residential locality with Telibandha and the Kamal Vihar township among its neighbours, along with Deopuri, Dunda, Lalpur, Mahaveer Nagar, Vishal Nagar, New Rajendra Nagar and Pachpedi Naka. Independent houses and plots make up most of the homes for sale, with some apartments and builder floors, and the newer layouts here have wide roads. Amlidih Main Road is one of the routes towards the airport.</p><p>Because so many homes are independent houses, tutors usually arrive at the doorstep; some plotted layouts are recent, so a map pin and a landmark make the first visit easier. Tutors living in Telibandha, Mahaveer Nagar or New Rajendra Nagar are close by, and most travel by two-wheeler or car. Main roads leading to the Ring Road get busy at office hours, so evening classes go more smoothly with a fixed time agreed in advance. Online lessons are a practical choice when the specialist a child needs lives across the city. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/amlidih-in-raipur-overview-78089",
+        "https://www.squareyards.com/new-rajendra-nagar-in-raipur-overview-50509",
+        "https://www.squareyards.com/telibandha-in-raipur-overview-50441"
+      ]
+    },
+    "mahaveer-nagar": {
+      "name": "Mahaveer Nagar",
+      "zone": "South Raipur",
+      "type": "residential",
+      "about": "<p>Mahaveer Nagar is a residential locality near Vishal Nagar, Amlidih and New Rajendra Nagar, and VIP Road also lists it among its neighbours. Homes here are a mix of villas, apartments and residential plots, and the large number of plots for sale gives much of the area an independent-house character, with play areas for children and attached markets in some of the newer complexes.</p><p>For a tutor, the visit depends on the type of home: villas and houses mean doorstep arrival, while apartment complexes usually register visitors at the gate, so share the block and flat number in advance. Tutors from Amlidih, New Rajendra Nagar, Telibandha and the VIP Road side are the nearest pool, and most come by two-wheeler or car. Raipur Junction is the main railway station for those travelling from further away. Roads towards the Ring Road junctions are busier at office hours, so plan evening classes with some margin and use online sessions for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/sale/plots-for-sale-in-mahaveer-nagar-raipur",
+        "https://www.squareyards.com/amlidih-in-raipur-overview-78089",
+        "https://www.squareyards.com/vip-road-in-raipur-overview-85629"
+      ]
+    },
+    "bhatagaon": {
+      "name": "Bhatagaon",
+      "zone": "South Raipur",
+      "type": "residential",
+      "about": "<p>Bhatagaon is a residential locality near Kathadih, Kandul and Professor Colony, where two- and three-bedroom apartments dominate the housing, alongside a good number of plots. The Ravanbhata-Bhatagaon area is home to Raipur's inter-state bus terminal, which became operational on 15 November 2021, replaced the old bus stand at Pandri and serves routes to several neighbouring states.</p><p>The bus terminal makes Bhatagaon a well-known landmark, which helps tutors find their way on the first visit, and Raipur Junction is the main station for rail travel. Most tutors arrive by two-wheeler or auto. Apartment complexes generally register visitors, so pass the tutor's name to the guard before the demo class; plotted houses allow doorstep arrival. Roads near the terminal are busier when long-distance buses arrive and leave, so agree a regular slot that avoids those times, and choose a tutor from Bhatagaon or the nearby colonies for evening classes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/bhatagaon-in-raipur-overview-50481",
+        "https://en.wikipedia.org/wiki/Inter-State_Bus_Terminal,_Raipur"
+      ]
+    },
+    "kamal-vihar": {
+      "name": "Kamal Vihar (Kaushalya Mata Vihar)",
+      "zone": "South Raipur",
+      "type": "residential",
+      "about": "<p>Kamal Vihar is a planned township developed by the Raipur Development Authority as its Town Development Scheme No. 4, and it is also known as Kaushalya Mata Vihar, though many people still use the name Kamal Vihar. The township is divided into numbered sectors, with plotted independent houses alongside row houses and apartment blocks built under the authority's housing schemes. It lies on the Dhamtari Road side of the city, with Amlidih among its neighbours.</p><p>Because the layout is planned, homes are easy to locate by sector and plot or block number, so share these with the tutor along with a phone number. Houses mean doorstep arrival, while apartment blocks may have a guard who asks for the visitor's name. Many families here find tutors from Amlidih, Pachpedi Naka or the Dhamtari Road colonies, and most tutors come by two-wheeler or car. As the township is still filling up, online classes are a practical option for specialist subjects or exam preparation. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://rda.cgstate.gov.in/site/news",
+        "https://www.thehitavada.com/Encyc/2023/4/26/Kamal-Vihar-to-be-renamed-as-Kaushalya-Vihar-CM.html",
+        "https://www.squareyards.com/amlidih-in-raipur-overview-78089"
+      ]
+    },
+    "kota": {
+      "name": "Kota",
+      "zone": "West Raipur",
+      "type": "residential",
+      "about": "<p>Kota is a residential locality lying along the Great Eastern Road, with Amanaka, Samta Colony and Kota Colony as neighbours. Gudhiyari Road, Kota Road and Hirapur Road link it with the surrounding areas, and the Gogaon industrial area is close by. Its housing is mainly apartments, three-bedroom flats in particular, alongside independent houses, plots and builder floors, and the Hirapur vegetable market is among the local shopping spots.</p><p>Raipur Junction is reached via Kota Road, which suits tutors who travel by train, while tutors from Samta Colony, Gudhiyari and Tatibandh can usually ride over. Apartment buildings generally ask visitors to sign in at the gate, so share the tutor's name and flat number ahead of the demo class; houses allow doorstep arrival. The Great Eastern Road carries heavy traffic through the day, so a tutor who lives on the same side of it, and a class time fixed in advance, make regular lessons easier. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/kota-in-raipur-overview-50399",
+        "https://en.wikipedia.org/wiki/Samta_Colony",
+        "https://en.wikipedia.org/wiki/Raipur_Junction_railway_station"
+      ]
+    },
+    "tatibandh": {
+      "name": "Tatibandh",
+      "zone": "West Raipur",
+      "type": "residential",
+      "about": "<p>Tatibandh is a residential area on the Bhilai side of Raipur, where NH-53 and Ring Road No. 2 meet at Tatibandh Chowk. A flyover and junction upgrade at the chowk has been completed on the national highway, and the chowk is also the starting point of the Raipur-Bilaspur Expressway. Homes are mainly two- and three-bedroom apartments, along with villas and plots, and Sarona, Kabir Nagar, Hirapur, Gogaon and the local RDA Colony are its neighbours.</p><p>Sarona railway station is close for local trains, and Raipur Junction handles long-distance travel. Tutors from Kabir Nagar, Hirapur, Sarona and Kota can reach most homes easily by two-wheeler or car. Many families live in apartment complexes, so register the tutor at the gate and ask whether a regular visitor pass is possible. Heavy vehicles use the national highway through the day, so classes are easier to keep on time with a tutor living on the same side of the highway, and online classes help for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/tatibandh-in-raipur-overview-50387",
+        "https://indiainvestmentgrid.gov.in/opportunities/nip-project/615597",
+        "https://en.wikipedia.org/wiki/Raipur%E2%80%93Bilaspur_Expressway"
+      ]
+    },
+    "sarona": {
+      "name": "Sarona",
+      "zone": "West Raipur",
+      "type": "residential",
+      "about": "<p>Sarona is a residential locality near Amanaka and Tatibandh, and it has its own railway station, one of the smaller stations serving Raipur alongside Saraswati Nagar and WRS Colony. Property portals describe the area as having wide roads, with apartments, houses and plots, and residents point to its green areas and parks.</p><p>The local station lets tutors travel by train from other parts of the city and finish the journey by auto, while those living in Tatibandh, Kabir Nagar or Amanaka can simply ride over. A city bus depot is also nearby, and Saraswati Nagar station is another rail option close at hand. Apartment complexes usually register visitors at the gate, so share the tutor's name with security before the demo class; for houses, a lane landmark is enough. The highway side of Sarona is busiest at office hours, so a fixed slot outside the evening rush works well, with online classes as an option for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.squareyards.com/sarona-in-raipur-overview-50483",
+        "https://en.wikipedia.org/wiki/Raipur",
+        "https://www.squareyards.com/tatibandh-in-raipur-overview-50387"
+      ]
+    },
+    "kabir-nagar": {
+      "name": "Kabir Nagar",
+      "zone": "West Raipur",
+      "type": "residential",
+      "about": "<p>Kabir Nagar is a large colony developed by the Chhattisgarh Housing Board near the Raipur-Bhilai-Durg highway, with thousands of homes built over several phases. Ring Road No. 2, Hirapur Road and Gudhiyari Road connect it with Tatibandh, Gogaon and Bhothali, and Mohba Bazar, Hirapur and Kota Colony are its neighbours. Housing ranges from independent houses to multi-storey blocks of smaller flats.</p><p>Because it is a planned colony, homes are easy to find by block and house number, which helps on a tutor's first visit; independent houses allow doorstep arrival, while flat blocks may have a caretaker who asks for the visitor's name. Tutors from Tatibandh, Hirapur, Kota and Gudhiyari are within easy reach, mostly by two-wheeler. Raipur Junction and Sarona station are the nearest rail options. Ring Road traffic is heaviest at office hours, so a fixed evening slot that avoids the rush keeps classes regular. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://cghb.gov.in/TendersDoc/Club%20Project/Kabir%20Nagar/DPR.pdf",
+        "https://www.squareyards.com/sale/property-for-sale-in-kabir-nagar-raipur",
+        "https://www.squareyards.com/tatibandh-in-raipur-overview-50387"
+      ]
+    }
+  },
+  "zone_facts": {
+    "Central Raipur": [
+      {
+        "fact": "Raipur Junction (station code R) opened in 1888 on Station Road and lies on the Bilaspur-Nagpur section of the Howrah-Nagpur-Mumbai line and the Raipur-Vizianagaram branch line; it is an A-1 category station of the Raipur division, South East Central Railway.",
+        "source": "https://en.wikipedia.org/wiki/Raipur_Junction_railway_station"
+      },
+      {
+        "fact": "The Raipur-Naya Raipur Expressway (Atal Path) is a six-lane, access-controlled expressway running from Fafadih in Raipur to Shadani Darbar in Naya Raipur, with four flyovers and one elevated corridor over the GE Road.",
+        "source": "https://en.wikipedia.org/wiki/Raipur%E2%80%93Naya_Raipur_Expressway"
+      },
+      {
+        "fact": "The Pandri bus stand was closed after the new inter-state bus terminal at Ravanbhata-Bhatagaon became operational on 15 November 2021.",
+        "source": "https://en.wikipedia.org/wiki/Inter-State_Bus_Terminal,_Raipur"
+      },
+      {
+        "fact": "Samta Colony is a residential area in central Raipur administered by the Raipur Municipal Corporation, bordered by Choubey Colony, Amanaka, Bajrang Nagar, Gokul Nagar and Amapara.",
+        "source": "https://en.wikipedia.org/wiki/Samta_Colony"
+      },
+      {
+        "fact": "The Raipur and Naya Raipur BRTS was inaugurated on 2 November 2016; one route links the railway station with the capitol complex in Naya Raipur.",
+        "source": "https://en.wikipedia.org/wiki/Raipur_and_Naya_Raipur_Bus_Rapid_Transit_System"
+      },
+      {
+        "fact": "Pandri Road, the Great Eastern Road and VIP Road are among Raipur's main roads, and the city is planned by the Raipur Municipal Corporation and the Raipur Development Authority.",
+        "source": "https://en.wikipedia.org/wiki/Raipur"
+      }
+    ],
+    "East Raipur": [
+      {
+        "fact": "Telibandha Lake, popularly called Marine Drive, was built in 1835 and named after the village of Telibandha.",
+        "source": "https://en.wikipedia.org/wiki/Telibandha_Lake"
+      },
+      {
+        "fact": "Telibandha railway station on the narrow-gauge Raipur-Dhamtari branch line is closed; its track was removed and the alignment converted into the expressway towards Nava Raipur.",
+        "source": "https://en.wikipedia.org/wiki/Telibandha_railway_station"
+      },
+      {
+        "fact": "Mowa is a census town of Raipur district on the city's north-eastern side.",
+        "source": "https://en.wikipedia.org/wiki/Mowa,_Chhattisgarh"
+      },
+      {
+        "fact": "Nava Raipur (Atal Nagar), the planned greenfield city being built as the new state capital, is administered by the Nava Raipur Atal Nagar Vikas Pradhikaran and linked to Raipur by the Atal Path expressway.",
+        "source": "https://en.wikipedia.org/wiki/Nava_Raipur"
+      },
+      {
+        "fact": "Avanti Vihar lies off VIP Road and is generally treated as part of the Shankar Nagar area; Avani Vihar is a separate locality near Mowa and Daldal Seoni.",
+        "source": "https://www.squareyards.com/avanti-vihar-in-raipur-overview-78087"
+      },
+      {
+        "fact": "Mowa connects to Raipur Junction via Mandi Road and lies near Vidhan Sabha Road, Daldal Seoni and Avani Vihar.",
+        "source": "https://www.squareyards.com/mowa-in-raipur-overview-50407"
+      }
+    ],
+    "South Raipur": [
+      {
+        "fact": "Raipur's inter-state bus terminal stands on 25 acres in the Ravanbhata-Bhatagaon area; it was inaugurated on 20 August 2021 and became operational on 15 November 2021.",
+        "source": "https://en.wikipedia.org/wiki/Inter-State_Bus_Terminal,_Raipur"
+      },
+      {
+        "fact": "Kamal Vihar is the Raipur Development Authority's Town Development Scheme No. 4, with numbered sectors and EWS row houses built in several sectors.",
+        "source": "https://rda.cgstate.gov.in/site/news"
+      },
+      {
+        "fact": "The renaming of Kamal Vihar as Kaushalya Vihar was announced in April 2023.",
+        "source": "https://www.thehitavada.com/Encyc/2023/4/26/Kamal-Vihar-to-be-renamed-as-Kaushalya-Vihar-CM.html"
+      },
+      {
+        "fact": "Pachpedi Naka is the junction of Dhamtari Road and the Ring Road, with NH-30 and NH-53 passing alongside.",
+        "source": "https://www.squareyards.com/pachpedi-naka-in-raipur-overview-50507"
+      },
+      {
+        "fact": "New Rajendra Nagar lies at the meeting point of NH-30 and NH-53 (Telibandha Ring Road).",
+        "source": "https://www.squareyards.com/new-rajendra-nagar-in-raipur-overview-50509"
+      },
+      {
+        "fact": "The Raipur-Abhanpur rail line towards Naya Raipur was narrow gauge until 2019 and has since been converted to broad gauge.",
+        "source": "https://www.downtoearth.org.in/air/how-india-moves-local-trains-and-city-buses-are-raipurs-most-affordable-commute-options-but-least-trustworthy"
+      }
+    ],
+    "West Raipur": [
+      {
+        "fact": "A flyover and junction development at Tatibandh Chowk on the Raipur-Arang section of NH-53 was taken up in December 2019 and has received its completion certificate.",
+        "source": "https://indiainvestmentgrid.gov.in/opportunities/nip-project/615597"
+      },
+      {
+        "fact": "The Raipur-Bilaspur Expressway starts at Tatibandh in Raipur and ends at Darrighat in Bilaspur; it was completed in May 2019.",
+        "source": "https://en.wikipedia.org/wiki/Raipur%E2%80%93Bilaspur_Expressway"
+      },
+      {
+        "fact": "Sarona, Saraswati Nagar and WRS Colony are smaller railway stations serving Raipur besides Raipur Junction.",
+        "source": "https://en.wikipedia.org/wiki/Raipur"
+      },
+      {
+        "fact": "Kabir Nagar is a Chhattisgarh Housing Board colony near the Raipur-Bhilai-Durg highway.",
+        "source": "https://cghb.gov.in/TendersDoc/Club%20Project/Kabir%20Nagar/DPR.pdf"
+      },
+      {
+        "fact": "Kota lies along the Great Eastern Road and is linked by Gudhiyari Road, Kota Road and Hirapur Road.",
+        "source": "https://www.squareyards.com/kota-in-raipur-overview-50399"
+      },
+      {
+        "fact": "NH-53 and Ring Road No. 2 pass through Tatibandh, linking it towards Bhilai and the Bhanpuri industrial area.",
+        "source": "https://www.squareyards.com/tatibandh-in-raipur-overview-50387"
+      }
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "intro": [
+    "Dehradun lies in a valley, and its five zones follow the main roads out of the centre. Rajpur Road & Dalanwala climbs from the Clock Tower towards Mussoorie; Sahastradhara & Raipur takes the north-east and east; Haridwar Road runs south-east out to Doiwala; Vasant Vihar & Chakrata Road is the western housing belt around Ballupur Chowk; and Saharanpur Road & Clement Town covers the south-west and south, with the ISBT and the Clement Town cantonment. No Metro Neo line runs anywhere yet, because the project is only proposed, so a tutor here works by two-wheeler, car or auto, and the localities you can reach at lesson time matter more than how close they look on a map.",
+    "Families here ask for tutors on the Uttarakhand Board of School Education, which conducts the state's High School (Class 10) and Intermediate (Class 12) examinations, on CBSE, on CISCE's ICSE and ISC, and in smaller numbers on the IB or Cambridge IGCSE. For a UBSE student, work from the prescribed books and from the syllabus, sample papers, question banks and paper designs the board publishes on its own website, and take every date only from its notices. Language counts as well: some students follow a lesson most easily in Hindi, some in English and many in both, so say on your profile which you teach in.",
+    "Housing shapes the work. Gated complexes in Malsi, Kishanpur, Sahastradhara Road and Kanwali register visitors at the gate; Dalanwala, Race Course, Indira Nagar and Prem Nagar are mostly independent houses where you ring the bell at the door; and defence areas near Prem Nagar and the Clement Town cantonment have their own entry rules. Each parent request gets a shortlist of two or three tutors from NXTutors, built outward from the same locality to the zone, the city and online, and your fee is on show before the family books a free first demo. Online lessons also let you teach students in Doiwala or anywhere in India from your own desk."
+  ],
+  "zone_notes": {
+    "Rajpur Road & Dalanwala": "Tutors living along the Rajpur Road belt, in Karanpur, Jakhan or Kishanpur, reach most homes here without crossing the centre. Expect builder floors above shops in Karanpur, front doors in Dalanwala and gate registers in Malsi's newer complexes. The lower road fills with evening shoppers, weekend traffic heads up the valley, and the upper slopes turn cold early in winter, so offer families an earlier slot in those months.",
+    "Sahastradhara & Raipur": "Apartments lead on Sahastradhara Road and in Kishanpur, so most first visits start with your name at a society gate; ask about a standing pass after the demo. Raipur Road colonies mix houses, villas and flats. Fewer tutors live out towards Raipur, so a tutor based in Dalanwala, Karanpur or Canal Road can add Raipur Road to the profile if the trip suits, and should avoid office closing time on the lower Sahastradhara stretch.",
+    "Haridwar Road": "Race Course, Jogiwala and Doiwala are mostly independent houses and plots, so you arrive at the door, while flats in Nehru Colony may log visitors. The junctions towards Haridwar Road and Jogiwala Chowk are busiest at office hours. Doiwala is a town of its own on National Highway 7, with a railway station on the Laksar-Dehradun line, so a tutor who lives there or along the highway is the practical match for its families.",
+    "Vasant Vihar & Chakrata Road": "The western belt is compact: from Ballupur, Vasant Vihar, GMS Road, Kanwali or Indira Nagar you can reach the other localities without going through the centre. Kanwali's gated townships and the GMS Road complexes register tutors at the gate, while Indira Nagar is mostly independent houses. Prem Nagar, on the western edge along Chakrata Road, has defence areas with their own entry rules, so list it only if you live nearby.",
+    "Saharanpur Road & Clement Town": "The ISBT sits in this zone and Dehradun railway station is reached via Saharanpur Road, so it is the easiest part of the city to reach from elsewhere in the valley. Patel Nagar is builder floors and houses, where you ring the bell at the building door, and in Majra three-bedroom flats are the most common home. Inside Clement Town cantonment, ask the family how visitors are admitted, and keep lessons clear of ISBT peak traffic and industrial-area shift times."
+  },
+  "boards": "Dehradun tutors teach the Uttarakhand Board of School Education (UBSE), CBSE, CISCE's ICSE and ISC, and a smaller number of IB and Cambridge IGCSE students. For UBSE, the board's official website publishes syllabi, sample and previous years' papers, question banks, model answer sheets and paper designs for Class 10 and Classes 11–12; work from those and the prescribed books. For CBSE, use the sample papers and marking schemes at cbseacademic.nic.in; for ICSE and ISC, the regulations at cisce.org. Say on your profile which boards you teach and in which language.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Uttarakhand Board of School Education (UBSE)",
+      "site": "https://ubse.uk.gov.in/",
+      "classes": "High School (Class 10); Intermediate (Class 12)",
+      "note": "UBSE, Uttarakhand Vidyalayi Shiksha Parishad, is based at Ramnagar in Nainital district and conducts the state's High School and Intermediate examinations. Its site carries syllabi, sample and old papers, question banks and paper designs, so build lessons on those and the prescribed books, in Hindi, English or both, and rely on the board's notices alone for dates.",
+      "page": "/uttarakhand-board-tutor-dehradun"
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "Dehradun's CBSE students sit alongside UBSE, CISCE and a few international learners. Anchor your teaching in NCERT, test students on the board's own sample papers and marking schemes, and fix timings around the student's school day and the traffic of your zone, such as the evening rush on lower Rajpur Road or at Ballupur Chowk.",
+      "page": "/cbse-home-tutor-dehradun"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "CISCE's Class 10 (ICSE) and Class 12 (ISC) papers reward full, well-organised written answers over a broad syllabus, with close reading of English literature texts. If you know them, teach nearby and offer ISC electives online to students in other states too. Regulations and specimen papers sit on cisce.org.",
+      "page": "/icse-home-tutor-dehradun"
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "IB Diploma families in Dehradun usually find the nearest real specialist online. The Internal Assessment and Extended Essay count as well as the exams; a tutor may guide them but never writes them. Use the subject guides on ibo.org, and name the IB subjects and levels, SL or HL, that you take."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "IGCSE learners in Dehradun are a smaller group who often study with online specialists. Marks come from steady past-paper practice checked against official mark schemes, careful reading of command words and entry at the right tier. Confirm whether the school uses Cambridge or Pearson Edexcel, and read the syllabus on cambridgeinternational.org."
+    }
+  ],
+  "women": {
+    "intro": "NXTutors in Dehradun welcomes women tutors for home, online or hybrid work, and you decide where and when: a tutor in Vasant Vihar might keep to the western belt around Ballupur Chowk, one in Dalanwala to Race Course and Nehru Colony next door, and anyone can teach students further away online. The ID check is identical for every tutor who signs up, we ask a parent to be at home for the free demo, and the safeguarding policy covers both sides. Treat these as controls built into how the platform works, not assurances about any one household.",
+    "points": [
+      "Set your mode, home, online or both, and update it as your own timetable changes.",
+      "List only the localities you want to travel to; a long winter-evening ride up to Malsi or out to Prem Nagar can simply be left off.",
+      "Agree lesson times at the demo that work for you, including an earlier start in the cold winter months.",
+      "No regular class starts before a free demo, and we ask a parent to be at home for the demo.",
+      "In the gated complexes of Malsi, Kishanpur or Kanwali, ask the family to leave your name with the guard so your visits are logged.",
+      "Keep fee talk, timings and messages between you and a parent, not the child.",
+      "For young learners, use a common room with an adult in the house, and keep video switched on for online classes.",
+      "If something feels wrong, end the lesson and send NXTutors a Safeguarding report; dial 112 first in an emergency."
+    ]
+  },
+  "story": [
+    "Create your account by confirming a one-time code sent by text or email, then list subjects, classes, boards such as UBSE, CBSE or ICSE, your teaching language and the Dehradun localities within reach.",
+    "Next comes identity: a government photo ID, which our team looks at before any profile appears. One ID number can belong to one tutor account only, and the check confirms who you are.",
+    "After approval the profile is published with a Verified badge and shows your boards, the localities you serve between Rajpur and Clement Town, the language you teach in and your own fee.",
+    "Say a Kishanpur or Patel Nagar parent asks for help. NXTutors puts forward two or three tutors, starting with the closest, widening to tutors who travel into that zone, then all of Dehradun, then online.",
+    "Your fee is on view before the family books anything. Lesson one is a free demo, and we ask a parent to be at home for the demo, which lets you size up the learner, the route and the slot.",
+    "Then teach in homes across your chosen localities, online for students in Doiwala, elsewhere in Uttarakhand or anywhere in India, or both, perhaps a weekend home lesson with weekday classes online."
+  ],
+  "faqs": [
+    [
+      "How do Dehradun tuition requests reach a tutor?",
+      "A family enters the class, board, subjects, locality with a landmark and the lesson times that suit them. NXTutors then proposes two or three tutors, searching the same locality first, then its zone, then the rest of Dehradun, then online tutors. Accurate localities and boards on your profile help you appear for the right families."
+    ],
+    [
+      "Can I teach students outside Uttarakhand online from Dehradun?",
+      "Yes. Online teaching reaches learners across India, so a Dehradun tutor can keep home lessons close by and add online students in other cities. Parents after a home tutor are shown nearby profiles first, yet any family that opts for online lessons may be matched with you, whatever city they live in."
+    ],
+    [
+      "Which Dehradun localities should go on my profile?",
+      "Just the ones you can get to reliably when lessons happen. Someone in Kanwali might cover GMS Road, Ballupur and Vasant Vihar, while one in Jakhan might keep to Rajpur Road, Kishanpur and Malsi. Crossing the centre in the evening is slow, so a short, accurate list beats a long, hopeful one."
+    ],
+    [
+      "What does the ID check involve?",
+      "Expect two steps: a one-time code to confirm your phone or email, then a government photo ID that the team looks at before the profile is published. Tutors who clear it show a Verified badge. It covers identity alone, not police or background records; /how-we-verify-tutors explains it."
+    ],
+    [
+      "Where can I see tutor plans and what they include?",
+      "On /pricing, which lists each tutor plan and what it includes; plans are paid. Your lesson fee is separate and set by you. Families see it before the free first demo, and if a family later switches tutor, that costs them nothing, so the arrangement rests on your teaching."
+    ],
+    [
+      "Can a woman tutor in Dehradun teach at home only in her own locality?",
+      "Yes. Home requests follow the localities you list, so you could teach in person only around Dalanwala or Vasant Vihar and take everyone else online. We ask a parent to be at home for the free demo, which means you see the household before committing to a timetable."
+    ],
+    [
+      "Do I need to know the Uttarakhand board to tutor in Dehradun?",
+      "Not necessarily. Families here also ask about CBSE, CISCE's ICSE and ISC, and in smaller numbers IB or Cambridge IGCSE. If you do teach UBSE students, work from the board's own syllabus, sample papers, question banks and paper designs on ubse.uk.gov.in, and list each board you cover on your profile."
+    ],
+    [
+      "Is a home-plus-online arrangement possible with one Dehradun family?",
+      "Yes. Tick both modes on your profile and settle the mix with the parent once the demo is done. On heavy-rain monsoon days or cold winter evenings in the upper valley, an online session in place of the home visit keeps the week's lesson going without a long trip."
+    ]
+  ]
+}

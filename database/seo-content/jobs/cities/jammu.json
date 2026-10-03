@@ -1,0 +1,110 @@
+{
+  "intro": [
+    "Jammu sits on both banks of the Tawi, and its five zones split along the river. On the left bank, Rail Head & New City groups Gandhi Nagar, Nanak Nagar and Shastri Nagar beside Jammu Tawi station; Trikuta & Channi covers the sector colonies and newer flats to the east; and Kunjwani & Sainik Colony takes in the south and south-east. On the right bank, Old City & Sidhra joins the old lanes with Rehari, Bakshi Nagar and Sidhra, and Janipur & Akhnoor Road spreads north and west through Janipur, Roop Nagar, Paloura and Talab Tillo. With no metro in the city, tutors get about on two-wheelers, in cars or by auto, and the side of the river you live on shapes the homes you can reach.",
+    "Requests in Jammu name the Jammu and Kashmir Board of School Education (JKBOSE), CBSE, or CISCE's ICSE and ISC, and a few families follow the IB or Cambridge IGCSE. JKBOSE conducts the public examinations of the secondary and higher secondary classes and prescribes the syllabus and textbooks; its website carries the syllabus, textbooks, model test papers, a question bank and date sheets. Prepare from those and the prescribed books, and rely on the board's own notices for any date. Medium of teaching counts too: one student understands a proof fastest in English, another wants it explained in Hindi first, so your profile should say which you use.",
+    "Housing changes the first visit. The numbered sectors of Trikuta Nagar and Channi Himmat, the plotted lanes of Nanak Nagar, Janipur and Roop Nagar, and the old city's lanes are mostly houses where you go straight to the door; government quarters in Gandhi Nagar and apartment buildings in Bathindi, Greater Kailash and Sidhra may log visitors at the gate. When a parent sends a request, NXTutors shortlists two or three tutors, starting in the same locality and widening to the zone, the city and online, and the family sees your fee before a free first demo. Online lessons let you teach students elsewhere in Jammu and Kashmir or anywhere in India."
+  ],
+  "zone_notes": {
+    "Rail Head & New City": "Gandhi Nagar, Nanak Nagar and Shastri Nagar border one another, so a tutor living in any of them can build a compact set of homes close by. Expect doorstep arrival on plotted lanes, a name at the entrance of flats, and possibly a gate check at the government quarters in Gandhi Nagar. The flyover being built from Satwari Chowk to Last Morh brings diversions, and the market roads fill in the evening, so offer families early slots.",
+    "Trikuta & Channi": "Addresses in Trikuta Nagar and Channi Himmat are sector and house numbers, which keeps first visits simple; Channi Rama and Bathindi have newer lanes where a map pin from the family saves time. Bathindi's apartment buildings may ask you to sign in. Junctions near Jammu Tawi station, the NH-44 bypass and Bhatindi Morh are busy at peak hours, so a tutor based in the sectors keeps weekday lessons regular.",
+    "Kunjwani & Sainik Colony": "Most trips here run along NH-44 between Kunjwani Chowk, Greater Kailash and Sainik Colony, so stay clear of office-hour peaks at the highway junctions and at Greater Kailash Chowk. Sainik Colony is plotted houses split across two wards, with Extension plots still being built on, so ask for a map pin. The Kunjwani–Satwari flyover is being completed; until it opens, leave margin on trips towards Satwari.",
+    "Old City & Sidhra": "In the old city, a two-wheeler and a precise landmark, a square, a shop or a lane name, matter more than a postal address, and the last stretch is sometimes on foot. Rehari and Bakshi Nagar are settled lanes of houses that tutors from Janipur or Talab Tillo reach without crossing the river. Sidhra is newer, with apartment complexes that register visitors, and links to the old city by its own bridge.",
+    "Janipur & Akhnoor Road": "Janipur, Roop Nagar and Paloura are largely plotted colonies, so you arrive at the door, but the newer lanes in Paloura can be hard to find without a map pin. Janipur Road and Sarwal Road fill up in the evening and parking on narrow lanes is tight, so a two-wheeler and an early-evening slot suit this zone. Around Talab Tillo, minibuses and autos are easy to find near Akhnoor Road."
+  },
+  "boards": "A Jammu tutor may teach JKBOSE students one evening and CBSE, ICSE or ISC students the next, with an occasional IB or Cambridge IGCSE learner. For JKBOSE, the board's official website lists the syllabus, textbooks, model test papers, a question bank and date sheets, and publishes results separately for its Jammu and Kashmir divisions; plan lessons around them and the prescribed books. CBSE keeps sample papers and marking schemes on cbseacademic.nic.in, and CISCE keeps ICSE and ISC regulations on cisce.org. Name every board and the teaching medium on your profile.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Jammu and Kashmir Board of School Education (JKBOSE)",
+      "site": "https://jkbose.jk.gov.in/",
+      "classes": "Class 10 (secondary); Classes 11–12 (higher secondary)",
+      "note": "JKBOSE conducts the public examinations of the secondary and higher secondary classes in Jammu and Kashmir and prescribes the syllabus and textbooks. Its site carries the syllabus, textbooks, model test papers and a question bank, so build lessons on those, teach in the language the student follows most easily, and take dates only from the board's own notices.",
+      "page": "/jkbose-tutor-jammu"
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "Jammu's CBSE students learn beside JKBOSE, CISCE and a few international learners. Root each lesson in NCERT, practise on the board's own sample papers and marking schemes, and fit your hours around the student's school day and your zone's traffic, such as the evening market rush in Gandhi Nagar or on Janipur Road.",
+      "page": "/cbse-home-tutor-jammu"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "ICSE in Class 10 and ISC in Class 12 test a wide syllabus through long written answers, with set literature texts in English. If you know these papers, teach near home and offer ISC electives online to students in other cities as well. Regulations and specimen papers are on cisce.org.",
+      "page": "/icse-home-tutor-jammu"
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "IB Diploma families in Jammu, often after a move from another city, usually reach the nearest specialist online. Coursework such as the Internal Assessment and the Extended Essay is marked as well as the exams, and a tutor's job is to advise on it, not to write any of it. Work from the subject guides on ibo.org and list the subjects and levels, SL or HL, you take."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "IGCSE learners in Jammu are a small group who mostly study with online specialists. Marks grow with regular past papers checked against the official schemes, attention to what each command word asks for, and the correct tier of entry. Check whether the school follows Cambridge or Pearson Edexcel, and read the syllabus on cambridgeinternational.org."
+    }
+  ],
+  "women": {
+    "intro": "Women tutors are welcome on NXTutors in Jammu for home, online or hybrid teaching, and the choices about where and when stay with you. A tutor in Trikuta Nagar might keep to the sectors and Channi Himmat next door, one in Janipur to Roop Nagar and Paloura, and students further away can learn online. Every tutor who signs up clears the same ID check, we ask a parent to be at home for the free demo, and one safeguarding policy applies to tutor and family alike. These are working controls in how the platform runs, not promises about any household.",
+    "points": [
+      "Pick home, online or both on your profile, and change it whenever your week changes.",
+      "List only the localities you want; a late trip across the river or out along the highway to Sidhra can simply stay off the list.",
+      "Settle lesson times with the parent at the demo, including an earlier start on short winter evenings.",
+      "No regular class begins before a free demo, and we ask a parent to be at home for the demo.",
+      "In apartment buildings in Bathindi, Greater Kailash or Sidhra, ask the family to give your name at the gate so visits are logged.",
+      "Discuss fees, timings and messages with a parent rather than the student.",
+      "Teach young children in a shared room with an adult at home, and keep video on for online lessons.",
+      "If something feels wrong, stop the lesson and report it to NXTutors marked Safeguarding; call 112 first in an emergency."
+    ]
+  },
+  "story": [
+    "Start by confirming a one-time code sent to your phone or email, then add your subjects, classes, boards such as JKBOSE, CBSE or ICSE, your teaching language and the Jammu localities you can reach.",
+    "Then upload a government photo ID, which our team reviews before any profile goes live. One ID number links to one tutor account, and the check confirms identity, not police records.",
+    "Once approved, your profile carries the Verified badge and shows your boards, your teaching language, the localities you cover from Paloura to Sainik Colony, and the fee you set.",
+    "A parent in Nanak Nagar or Talab Tillo asks for a tutor. NXTutors puts forward two or three, closest first, then tutors who travel to that locality, then the zone, the city and online.",
+    "The family sees your fee before booking. The first class is a free demo, and we ask a parent to be at home for it, so you can judge the student, the route and the slot.",
+    "After that, teach in homes on your side of the Tawi, online for students elsewhere in Jammu and Kashmir or across India, or both, such as a weekend visit with weekday lessons online."
+  ],
+  "faqs": [
+    [
+      "How does a Jammu tuition request reach me?",
+      "A parent fills in the class, board and subjects, the locality with a landmark, and the times that suit the family. From there NXTutors builds a shortlist of two or three, beginning in that locality and moving out to its zone, the rest of Jammu and online tutors. An accurate list of localities and boards decides whether you appear."
+    ],
+    [
+      "Can I teach online from Jammu to students in other states?",
+      "Yes. Online lessons reach students anywhere in India, so you can keep home teaching to your own side of the Tawi and take on online learners from other states. Families wanting a home tutor see nearby profiles first, but a family that picks online tuition can be matched with you wherever they live."
+    ],
+    [
+      "Which Jammu localities should I list on my profile?",
+      "Only those you can reach reliably at lesson time. A tutor in Gandhi Nagar might cover Nanak Nagar, Shastri Nagar and Trikuta Nagar, while one in Janipur might keep to Roop Nagar, Paloura and Rehari. Crossing the river in the evening rush takes longer, so a short, honest list works better than a long one."
+    ],
+    [
+      "How does the ID check work for a Jammu tutor?",
+      "Two steps: you confirm your phone or email with a one-time code, then upload a government photo ID that the team reviews before your profile is published. Tutors who pass carry a Verified badge. It confirms identity only and is not a police or background check; /how-we-verify-tutors has the details."
+    ],
+    [
+      "Where do I find the tutor plans?",
+      "On /pricing. Tutor plans are paid, and that page shows what each one covers. The fee you charge for lessons is a separate figure that you decide; parents see it ahead of the free first demo, and because they can change tutor later at no charge, steady teaching is what keeps a family."
+    ],
+    [
+      "Do I need to teach JKBOSE to find students in Jammu?",
+      "No, though say so clearly if you do. Families here also ask about CBSE, CISCE's ICSE and ISC, and in smaller numbers IB or Cambridge IGCSE. For JKBOSE students, work from the syllabus, textbooks, model test papers and question bank on the board's official website, and list every board you cover."
+    ],
+    [
+      "Can a woman tutor in Jammu teach at home only near her own colony?",
+      "Yes. Requests for home lessons are matched to the localities on your profile, so in-person teaching can stay around Trikuta Nagar or Janipur while other students learn with you online. We ask a parent to be at home for the free demo, which lets you meet the household first."
+    ],
+    [
+      "Can one Jammu family have both home and online lessons with me?",
+      "Yes. Tick home and online on your profile, then settle the split with the parent once the demo is over. When evening traffic on the highway or around the Gandhi Nagar markets makes a weekday trip slow, an online session keeps the week's lesson on track, with a home visit at the weekend."
+    ]
+  ]
+}

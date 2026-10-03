@@ -43,13 +43,13 @@
     }
   ],
   "intro": [
-    "Ahmedabad and Surat each have a tuition-jobs page with zones, which is where tutors in those two cities should set their travel range. For the rest of Gujarat, from Vadodara and Rajkot to Bhavnagar, Anand or Vapi, this page is the starting point. Name your town when you join. A family's home request is first offered to tutors who live closest to them, so a teacher in Jamnagar is not competing with someone in Ahmedabad for a student next door. Online lessons sit outside that rule: a parent anywhere can choose you, provided the subject, class and board fit.",
+    "Ahmedabad, Surat and Gandhinagar (/tuition-jobs/gandhinagar) each have a tuition-jobs page with zones, which is where tutors in those cities should set their travel range. For the rest of Gujarat, from Vadodara and Rajkot to Bhavnagar, Anand or Vapi, this page is the starting point. Name your town when you join. A family's home request is first offered to tutors who live closest to them, so a teacher in Jamnagar is not competing with someone in Ahmedabad for a student next door. Online lessons sit outside that rule: a parent anywhere can choose you, provided the subject, class and board fit.",
     "GSEB issues SSC papers in Gujarati, English and Hindi medium, so the medium you teach in matters as much as the subject. Put it beside every subject on your profile, and add CBSE or any other board you also handle. GSEB's question bank for Standards 9 to 12, on its own site, is a sensible thing to look at before a demo. Each request brings a shortlist of two or three tutors; the parent sees your fee, which you set, and the first class is a free demo for them. Gujarati-medium tutors should say so up front."
   ],
   "towns": [
     {
       "name": "Vadodara",
-      "note": "Vadodara is one of Gujarat's larger cities, but our Gujarat city pages so far cover Ahmedabad and Surat, so Vadodara tutors register here. Precise area names matter: a family's home request is offered to whoever lives closest first, then to tutors further out."
+      "note": "Vadodara is one of Gujarat's larger cities, but our Gujarat city pages so far cover Ahmedabad, Surat and Gandhinagar, so Vadodara tutors register here. Precise area names matter: a family's home request is offered to whoever lives closest first, then to tutors further out."
     },
     {
       "name": "Rajkot",
@@ -65,7 +65,7 @@
     },
     {
       "name": "Gandhinagar",
-      "note": "Gandhinagar is the state capital and home to the board's office. Tutors here can mention GSEB experience alongside any CBSE or ICSE classes, and name the sectors they will visit, since home requests reach the nearest suitable tutors before anyone further away."
+      "note": "Gandhinagar is the state capital and home to the board's office, and it has its own NXTutors city page (/city/gandhinagar) and tuition-jobs page (/tuition-jobs/gandhinagar). Tutors here can mention GSEB experience alongside any CBSE or ICSE classes, and name the sectors they will visit, since home requests reach the nearest suitable tutors before anyone further away."
     },
     {
       "name": "Anand",

@@ -1,0 +1,108 @@
+{
+  "intro": [
+    "Raipur divides into four zones for tuition. Central Raipur is the old core around Raipur Junction: Samta Colony, Gudhiyari, Devendra Nagar, Pandri and Fafadih, mostly houses and builder floors, with flats in Gudhiyari. East Raipur runs from Shankar Nagar, Avanti Vihar and Telibandha out along Vidhan Sabha Road to Mowa, Daldal Seoni and Saddu, where apartment complexes and plotted houses sit side by side. South Raipur follows the Ring Road and Dhamtari Road through New Rajendra Nagar, Pachpedi Naka, Amlidih, Mahaveer Nagar, Bhatagaon and Kamal Vihar. West Raipur is the Bhilai side: Kota, Tatibandh, Sarona and Kabir Nagar. The city has no metro, so tutors travel by two-wheeler, auto or car.",
+    "In Raipur classrooms the Chhattisgarh state board runs alongside CBSE and CISCE's ICSE and ISC, while IB and Cambridge IGCSE reach fewer students. The Chhattisgarh Board of Secondary Education, headquartered in the city, conducts the High School (Class 10) and Higher Secondary (Class 12) examinations and names cgbse.nic.in as its only official website, which is where papers, notices and dates should come from. Plenty of children speak Chhattisgarhi or Hindi at home and study in English at school, so your teaching medium matters as much as your board. Record both on the profile, with the classes you have genuinely taught.",
+    "Home and online work both fit here. When a family in Shankar Nagar sends a request, NXTutors shortlists two or three tutors: those living in Shankar Nagar first, then tutors who travel there, then the rest of East Raipur and the city, then online tutors. The family sees each tutor's fee before a free first demo and can switch later at no cost. Evening traffic on the station roads, on Vidhan Sabha Road and on the national highway at Tatibandh decides which homes you can reach on time, so list only the localities you can manage and teach the rest online, including students elsewhere in India."
+  ],
+  "zone_notes": {
+    "Central Raipur": "Central Raipur is compact and close to Raipur Junction, so a tutor who comes by train can reach Samta Colony, Gudhiyari or Fafadih with a short auto ride. Devendra Nagar and Pandri are mostly houses, so you arrive at the door; Gudhiyari's flats and the buildings around Fafadih Chowk may ask your name at the gate. Station roads and Pandri's markets fill up in the evening, so ask for a slot before the rush.",
+    "East Raipur": "East Raipur is wide, so it pays to pick one end. Shankar Nagar, Avanti Vihar and Telibandha suit tutors coming from the centre by the expressway from Fafadih; Mowa, Daldal Seoni and Saddu suit tutors living along Vidhan Sabha Road, which is busy at office hours. Apartment complexes keep visitor registers, Saddu's plots need a map pin, and Avanti Vihar off VIP Road is not Avani Vihar near Mowa.",
+    "South Raipur": "South Raipur runs along the Ring Road and Dhamtari Road. Kamal Vihar's sector and plot numbers make homes easy to find, Amlidih and Mahaveer Nagar are largely plotted houses with doorstep arrival, and Bhatagaon and Pachpedi Naka lean towards apartments with gate registers. Crossing Pachpedi Naka at office hours is slow, and roads by the Bhatagaon bus terminal fill as long-distance buses come and go, so keep your localities on one side.",
+    "West Raipur": "Local trains help most in West Raipur: Sarona and Saraswati Nagar stations serve it, and Raipur Junction is reached along Kota Road. Heavy vehicles use NH-53 and the Great Eastern Road through the day, so list localities on your own side of the highway. Tatibandh and Kota complexes register visitors, and a regular tutor can ask about a standing pass, while Kabir Nagar's block and house numbers make addresses simple."
+  },
+  "boards": "A Raipur tutor's board list usually starts with CGBSE, at High School or Higher Secondary level, then CBSE and CISCE's ICSE and ISC; IB and IGCSE students are fewer and often learn online. The state board names cgbse.nic.in as its sole official website, and that is where its notices, papers and results belong. For CBSE, use cbseacademic.nic.in; for ICSE and ISC, cisce.org; for IB and Cambridge, their own syllabus pages. On your profile, pair every board with its classes and your teaching medium.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Chhattisgarh Board of Secondary Education (CGBSE)",
+      "site": "https://cgbse.nic.in",
+      "classes": "High School (Class 10); Higher Secondary (Class 12)",
+      "note": "Known in Hindi as Chhattisgarh Madhyamik Shiksha Mandal and based in Raipur, the board conducts the High School and Higher Secondary examinations. Teach from its prescribed books and its own papers, be ready to explain in Hindi when a student needs it, and take patterns, dates and notices only from cgbse.nic.in.",
+      "page": "/chhattisgarh-board-tutor-raipur"
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "NCERT books carry every CBSE paper, and some Raipur students also have JEE or NEET in view. Families want a tutor who builds concepts and full written board answers together. Work from the sample papers and marking schemes on cbseacademic.nic.in, and set lesson times around the student's coaching batch and evening traffic.",
+      "page": "/cbse-home-tutor-raipur"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "ICSE at Class 10 and ISC at Class 12 mean long written papers, a broad syllabus and prescribed English literature. What helps most is a tutor who maps the year chapter by chapter with projects and practicals in view. Raipur tutors who know ISC electives can also teach them online across India. Regulations and specimen papers are on cisce.org.",
+      "page": "/icse-home-tutor-raipur"
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "IB Diploma students in Raipur, often from families who moved to the city for work, usually learn with an online specialist. IB grades include coursework: a tutor can advise on an Internal Assessment or Extended Essay, but the writing must stay the student's own. Subject guides are on ibo.org, and online availability should be clear on your profile."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "IGCSE students in Raipur are a smaller group, mostly taught by online specialists. Marks come from timed past papers checked against the official mark scheme, command words and the right tier. Confirm whether the school follows Cambridge or Pearson Edexcel before the demo; Cambridge syllabuses are on cambridgeinternational.org."
+    }
+  ],
+  "women": {
+    "intro": "Raipur's women tutors can teach in students' homes, online, or a mix of the two, and the reach is theirs to define. Someone living in Shankar Nagar might take home lessons only in Avanti Vihar and Telibandha, someone in Kota only in Samta Colony and Gudhiyari, with all other students online. Each tutor clears one identical ID check on joining, for the free demo we ask a parent to be at home, and our safeguarding policy binds both sides. Treat these as controls in your own hands rather than assurances about particular households.",
+    "points": [
+      "Choose home, online or both, and change the setting whenever your week changes.",
+      "List only the Raipur localities you want to visit; trips across Pachpedi Naka or the Tatibandh highway late in the day can be left out.",
+      "Decide which hours you offer, and agree the timetable, fees and messages with a parent rather than the student.",
+      "No regular class starts before a free demo, and for that demo we ask a parent to be at home.",
+      "In apartment complexes in Shankar Nagar, Mowa or Tatibandh, ask the family to give your name at the gate so visits are logged.",
+      "Teach younger children in a shared room with an adult at home; online, keep cameras on.",
+      "Feel uneasy at any point? Stop the class and tell NXTutors, marking the message Safeguarding; in an emergency, ring 112 before anything else."
+    ]
+  },
+  "story": [
+    "Join from Raipur with a one-time code sent to your phone or email. Then enter your subjects and classes, the boards you teach (CGBSE, CBSE, ICSE), your medium and the colonies within your reach.",
+    "Next, a government photo ID goes up through your dashboard. A team member looks at it before families can see you; it establishes identity only and is not police or background screening.",
+    "After that review the Verified badge appears and your profile goes public, listing boards, medium, the Raipur localities you cover, perhaps around Kota or perhaps out in Saddu, and your fee.",
+    "Say a Devendra Nagar or Amlidih parent asks for help. Two or three tutors are put forward: people in that colony first, then those who travel in, then the zone, the rest of Raipur and online.",
+    "Your fee is on screen before the parent books anything. The opening lesson is a free demo, and we ask a parent to be at home for that demo, so both sides meet before fixing a timetable.",
+    "Then teach at homes in your localities, online for students across Chhattisgarh and India, or both, perhaps a weekend home visit with online classes on weekdays."
+  ],
+  "faqs": [
+    [
+      "How do Raipur tuition requests reach a tutor?",
+      "It starts with the family's form: class, board, subjects, colony and landmark, plus preferred lesson times. From that, NXTutors proposes two or three tutors, people in the same colony ahead of those who travel there, then the zone, then wider Raipur, then online. Precise colonies and boards on your profile are what place you."
+    ],
+    [
+      "Can a Raipur tutor teach students in other states online?",
+      "Yes. Online students can be anywhere in the country, so home classes near your colony and online students in other states fit together. Home-tuition requests show local profiles before anyone else, yet a family that opts for online lessons may be matched with a Raipur tutor regardless of its own city."
+    ],
+    [
+      "Which Raipur localities should I put on my profile?",
+      "Just the ones you can reliably reach when lessons happen. Someone based in Kota could take Samta Colony and Gudhiyari; someone in Mowa might keep to Vidhan Sabha Road. Office-hour crossings of the Tatibandh highway or the Pachpedi Naka junction are slow, which is why a tight, honest list works better."
+    ],
+    [
+      "What does the ID check involve for a Raipur tutor?",
+      "Two steps. You confirm a phone number or email address with a one-time code, then upload a government-issued photo ID that our team looks at before your profile is published, after which the Verified badge shows. It checks identity only, not police records; /how-we-verify-tutors explains the process."
+    ],
+    [
+      "Where can I see the tutor plans?",
+      "Every tutor plan is paid, and /pricing lists them with what each covers. What you charge for a lesson is a different matter and is decided by you. Parents read it before the free first demo, and since a family can switch tutor later without paying, regular good teaching is what holds students."
+    ],
+    [
+      "Can a woman tutor in Raipur take home lessons only near her own colony?",
+      "Yes. Home requests only come from the colonies you list, so home teaching could stay around Shankar Nagar or Kabir Nagar while every other student learns online with you. For the free demo we ask a parent to be at home, which lets you meet the family before any regular timetable is fixed."
+    ],
+    [
+      "Which boards can I list as a Raipur tutor?",
+      "CGBSE High School or Higher Secondary, CBSE, ICSE and ISC, and IB or Cambridge IGCSE if you have taught them, usually online. Families name the board and often the medium, Hindi, English or both, so list each board, class and teaching medium honestly to land on shortlists where you fit."
+    ],
+    [
+      "Can I mix home and online lessons with one Raipur family?",
+      "Yes. Tick both home and online on the profile, then settle the balance with the parent once the demo is over. When weekday rides along Vidhan Sabha Road or the Great Eastern Road drag at office hours, a Saturday or Sunday home lesson plus weekday online sessions tends to last the school year."
+    ]
+  ]
+}

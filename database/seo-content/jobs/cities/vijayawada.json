@@ -1,0 +1,110 @@
+{
+  "intro": [
+    "Vijayawada spreads along the Krishna in five zones that feel quite different to teach in. Central Vijayawada, around Governorpet, Gandhinagar and Labbipet, is the old commercial core beside Vijayawada Junction, where families live in lanes behind shops or in apartment buildings. Benz Circle & Patamata grew around the meeting point of National Highways 16 and 65 and is mostly flats. Eluru Road & North, from Gunadala to Ajit Singh Nagar, is largely independent houses on colony lanes. One Town & West runs from the old city to Bhavanipuram and Gollapudi, and Kanuru & Poranki stretches along Bandar Road to Penamaluru, with villas and newer apartment projects. No metro runs yet, so tutors travel by two-wheeler, auto, city bus or local train.",
+    "Students here may sit the SSC examination at the end of Class 10, run by the Board of Secondary Education, Andhra Pradesh, and then take Intermediate under the Board of Intermediate Education, Andhra Pradesh. Other families choose CBSE or the CISCE route through ICSE and ISC, while IB and Cambridge IGCSE learners are fewer. List SSC and Intermediate as separate lines on your profile, with the subjects and the year you take, and state your teaching medium: Telugu, English or both. For state-board work, take model papers, blueprints and weightage tables from the board's own website rather than forwarded copies, and check the current pattern before a demo.",
+    "Home and online lessons both fit Vijayawada. Say a Patamata parent needs a Class 9 maths tutor: NXTutors looks for tutors living in Patamata, widens to Benz Circle, Currency Nagar and Ramavarappadu, then to all of Vijayawada, and adds online tutors last, offering the parent two or three names with fees shown up front. The parent's first lesson is a free demo, and moving to someone else later costs the family nothing. Plan your localities around the pinch points: Benz Circle at office hours, the station roads in Gandhinagar, Bandar Road's evening shopping traffic and Eluru Road at peak times."
+  ],
+  "zone_notes": {
+    "Central Vijayawada": "Governorpet, Gandhinagar, Suryaraopet, Labbipet and Moghalrajpuram are the easiest homes in the city to reach by train or bus, because Vijayawada Junction and the Governorpet bus station are here. The hard part is the last stretch: shopping streets and station roads stay crowded, car parking is scarce, and many homes sit in lanes behind shops. Come by two-wheeler, ask for a lane landmark, and expect Labbipet's apartment guards to ask your name.",
+    "Benz Circle & Patamata": "Benz Circle, Patamata, Currency Nagar and Ramavarappadu surround the junction where National Highways 16 and 65 meet, and crossing it at office hours is the slowest part of most trips. List only the side you can reach comfortably, or come in from the west along the Inner Ring Road to the Ramavarappadu ring. Most homes are flats, so expect building gates and sign-in registers, especially around Benz Circle and Patamata.",
+    "Eluru Road & North": "Gunadala, Machavaram, Satyanarayanapuram and Ajit Singh Nagar are mostly houses on colony lanes, so you arrive at the door and need a house number and landmark more than a gate pass. Gunadala and Madhuranagar stations help if you come by train. Eluru Road is busy at office hours, and in February the festival at the Gunadala shrine draws very large crowds, so offer online lessons to families that week.",
+    "One Town & West": "The old city lanes of One Town suit a two-wheeler or e-rickshaw, and you may walk the final stretch, while Vidyadharapuram, Bhavanipuram and Gollapudi to the west are reached along the Kanaka Durga flyover and National Highway 65. Tutors living at the western end keep western homes more easily than tutors crossing from the centre. Expect heavy crowds near the hilltop temple during Navaratri, and plan online sessions for those days.",
+    "Kanuru & Poranki": "Kanuru, Tadigadapa, Poranki and Penamaluru line Bandar Road at the eastern edge of the city, so a tutor living on this belt is the practical match for weekly home lessons. Villa communities and apartment projects check visitors at a gated entrance, so ask the family about a regular pass. Roads near Kanuru's teaching institutions fill as classes begin and end, and the canal road through Poranki is a quieter way in during the evening."
+  },
+  "boards": "Expect to meet SSC students under the Board of Secondary Education, Andhra Pradesh, Intermediate students under the Board of Intermediate Education, Andhra Pradesh, CBSE learners, and ICSE and ISC candidates of CISCE, plus fewer IB and IGCSE students. For SSC, the board's website publishes model question papers, blueprints and weightage tables; read them at the source, since forwarded copies age quickly. CBSE keeps its specimen papers and marking guidance on its academic website, and CISCE posts its own regulations online. Show your boards, classes and teaching medium on your profile.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Board of Secondary Education, Andhra Pradesh (BSEAP)",
+      "site": "https://bse.ap.gov.in/",
+      "classes": "Class 10 SSC; Intermediate (Classes 11–12) under BIEAP",
+      "note": "BSEAP conducts the SSC public examinations at the end of Class 10 through the Directorate of Government Examinations, and its site carries model question papers, blueprints and weightage tables, so revision can follow the board's own weightage chapter by chapter. Intermediate belongs to the Board of Intermediate Education, Andhra Pradesh, at bie.ap.gov.in. Teach in the medium the student reads most easily.",
+      "page": "/ap-board-tutor-vijayawada"
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "Vijayawada's CBSE students sit alongside SSC, Intermediate and CISCE learners, and many think in Telugu while studying in English. Build lessons on NCERT, practise with the board's specimen papers and its marking guidance, and on Bandar Road or near Benz Circle keep your hours clear of the evening traffic.",
+      "page": "/cbse-home-tutor-vijayawada"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10) and ISC (Class 12)",
+      "note": "The council's two certificates, ICSE after Class 10 and ISC after Class 12, ask for long written answers across a wide syllabus, with English literature texts of their own. List them apart from SSC or CBSE work on your profile, since syllabi and marking differ, and keep the council's current regulations at hand on cisce.org.",
+      "page": "/icse-home-tutor-vijayawada"
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "IB families in Vijayawada are few, many having relocated, and they often learn with an online specialist. The Diploma counts internal coursework alongside the final examinations: you may advise on IA drafts or the EE, but the writing must remain the student's. Plan from the subject guides on ibo.org."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "IGCSE students here are a small group, and many work with tutors online. The course rewards regular past-paper practice checked against the official mark scheme, attention to command words and the correct tier. Ask which awarding body, Cambridge or Pearson Edexcel, sets the student's papers before the demo."
+    }
+  ],
+  "women": {
+    "intro": "Women who teach are welcome on NXTutors in Vijayawada, at students' homes, online or in a mix. You decide where and when: a tutor in Satyanarayanapuram might keep to the colonies around Eluru Road, one in Kanuru to the Bandar Road belt, and families across the river or the city can learn with you online. Each tutor who joins clears the same ID check before the profile goes live. A new family starts with a free demo, and we ask a parent to be at home for it. These are working controls, not promises about any individual.",
+    "points": [
+      "Choose home lessons, online lessons or a mix, and change the choice whenever you like.",
+      "Add only the localities you want; crossing Benz Circle at office hours can simply be left out.",
+      "List your free hours honestly, around your own work or studies, and keep them current.",
+      "Meet each new family at a free demo, for which we ask a parent to be at home.",
+      "In villa communities and apartment projects, ask the family to register your name with security so each visit is recorded.",
+      "Agree fees, timings and messages with a parent, not with the student.",
+      "Teach younger children in a shared room with an adult in the house, and keep cameras on online.",
+      "If something feels wrong, end the lesson and tell NXTutors; in an emergency, call 112 first."
+    ]
+  },
+  "story": [
+    "Create your account with a one-time code to your phone or email, and fill in what you teach: subjects, classes, SSC, Intermediate or CBSE, your medium and the Vijayawada localities you can reach.",
+    "Add a government photo ID from your dashboard. The team looks at it before anyone can see your profile, one ID number maps to one account, and the check is of identity, not police records.",
+    "After the review your profile is public with the Verified badge, listing boards, medium, hours, the fee you charge and the localities you cover, anywhere from Gollapudi to Penamaluru.",
+    "A Moghalrajpuram or Currency Nagar parent asks for a tutor. The shortlist of two or three starts with tutors living closest, then widens to tutors who travel there, the zone, the city and online.",
+    "Your fee is visible to the parent before anything is booked. The opening lesson is a free demo, with a parent asked to be at home, so you can weigh up the student, the route and the timing.",
+    "From there, teach in homes near you, teach online to students anywhere in Andhra Pradesh or India, or combine the two, say a Saturday visit plus online sessions on weekday evenings."
+  ],
+  "faqs": [
+    [
+      "How do tuition requests in Vijayawada reach tutors?",
+      "A parent fills in the class, board, subjects, locality and a landmark, plus the hours that suit the child. From that, NXTutors draws up two or three tutors: those living in the same locality come first, the zone next, the wider city after that and online tutors last. Precise localities, boards and medium on your profile decide whether you appear."
+    ],
+    [
+      "Can a Vijayawada tutor teach students in other states online?",
+      "Yes. Online teaching is not tied to Vijayawada, so you can visit homes near you and also take students in Hyderabad, Chennai or anywhere else in India. Home requests show local tutors first, while parents who pick online tuition are matched on subject, class and board, wherever they and you happen to be."
+    ],
+    [
+      "How many Vijayawada localities should my profile list?",
+      "Just those you could reach every week at the lesson hour. A tutor in Bhavanipuram might cover Gollapudi and Vidyadharapuram, while one in Poranki stays on the Bandar Road belt. Crossing Benz Circle or the station roads at office hours is slow, so a short, honest list serves you better than the whole city."
+    ],
+    [
+      "What does the ID check involve?",
+      "Two steps: a one-time code confirms your phone or email, and you upload a government photo ID that the team reviews before the profile is published. Real tutors who clear it carry a Verified badge. The check confirms identity only; it is not a police or background check. Details are on /how-we-verify-tutors."
+    ],
+    [
+      "Where can I see the tutor plans?",
+      "On /pricing, which sets out each tutor plan and what it includes; the plans are paid. The fee you charge for lessons is a separate matter and entirely yours. Parents see it before the free demo, and because changing tutor is free for them, good teaching is what keeps a student with you."
+    ],
+    [
+      "Can a woman tutor in Vijayawada teach at home only near her own colony?",
+      "Yes. Home requests reach you only for the localities you add, and your listed hours show families when you are free. You might take home lessons just around Machavaram or Labbipet and teach everyone else online. Each new family begins with a free demo, and we ask a parent to be at home for it."
+    ],
+    [
+      "Should I list SSC and Intermediate separately?",
+      "Yes. SSC at the end of Class 10 comes under the Board of Secondary Education, Andhra Pradesh, and Intermediate under the Board of Intermediate Education, Andhra Pradesh. Families say which one they need, so separate lines with subjects, year and medium put you on the shortlists that genuinely fit."
+    ],
+    [
+      "Can I combine home and online classes with one Vijayawada family?",
+      "Yes. Tick both modes on your profile and settle the mix with the parent once the demo is over. If evening traffic on Bandar Road or Eluru Road slows weekday visits, or a festival crowds Gunadala or the temple hill, a Saturday home lesson with weekday sessions online usually keeps the timetable intact."
+    ]
+  ]
+}

@@ -58,6 +58,17 @@ class Geo
         'patna'              => ['state' => 'Bihar',            'metro' => false, 'aka' => null,        'aliases' => []],
         'ranchi'             => ['state' => 'Jharkhand',        'metro' => false, 'aka' => null,        'aliases' => []],
         'tata'               => ['state' => 'Jharkhand',        'metro' => false, 'aka' => 'Jamshedpur','aliases' => ['jamshedpur', 'tatanagar'], 'display' => 'Jamshedpur'],
+        // State capitals launched together on 6 Oct 2026. Dehradun has a "Raipur Road"
+        // area: it is a Dehradun zone name, never an alias of the Raipur city page.
+        'bhubaneswar'        => ['state' => 'Odisha',           'metro' => false, 'aka' => null,        'aliases' => []],
+        'raipur'             => ['state' => 'Chhattisgarh',     'metro' => false, 'aka' => null,        'aliases' => []],
+        'dehradun'           => ['state' => 'Uttarakhand',      'metro' => false, 'aka' => null,        'aliases' => []],
+        'vijayawada'         => ['state' => 'Andhra Pradesh',   'metro' => false, 'aka' => null,        'aliases' => []],
+        'gandhinagar'        => ['state' => 'Gujarat',          'metro' => false, 'aka' => null,        'aliases' => []],
+        'jammu'              => ['state' => 'Jammu and Kashmir','metro' => false, 'aka' => null,        'aliases' => []],
+        'srinagar'           => ['state' => 'Jammu and Kashmir','metro' => false, 'aka' => null,        'aliases' => []],
+        // Puducherry has no jobs/states file: its state page keeps the template text.
+        'puducherry'         => ['state' => 'Puducherry',       'metro' => false, 'aka' => 'Pondicherry','aliases' => ['pondicherry']],
     ];
 
     public const OTHER_STATE = 'Other cities';

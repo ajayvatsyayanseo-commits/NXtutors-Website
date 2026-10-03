@@ -285,14 +285,14 @@ class JobsContent
 
     /**
      * Escape a content string and turn our own site paths written in it
-     * ("/pricing", "(/how-we-verify-tutors)") into links. JSON content is
+     * ("/pricing", "(/how-we-verify-tutors)", "/city/raipur") into links. JSON content is
      * plain text, so this is the only markup it ever gets.
      */
     public static function rich(?string $text): \Illuminate\Support\HtmlString
     {
         $html = e((string) $text);
         $html = preg_replace_callback(
-            '#(?<![\w/.])/(pricing|how-we-verify-tutors|become-a-tutor|demo-class|safeguarding-policy|tutor-terms|female-home-tutor|tutors|tuition-jobs(?:/[a-z0-9-]+){0,2}|[a-z0-9-]+-tutor-jobs)(?![\w/-])#',
+            '#(?<![\w/.])/(pricing|how-we-verify-tutors|become-a-tutor|demo-class|safeguarding-policy|tutor-terms|female-home-tutor|tutors|tuition-jobs(?:/[a-z0-9-]+){0,2}|city/[a-z0-9-]+|[a-z0-9-]+-tutor-jobs)(?![\w/-])#',
             fn ($m) => '<a href="' . e(url('/' . $m[1])) . '">/' . e($m[1]) . '</a>',
             $html
         );

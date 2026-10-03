@@ -2,16 +2,16 @@
   "state": "Jammu and Kashmir",
   "board": {
     "name": "Jammu and Kashmir Board of School Education (JKBOSE)",
-    "site": "https://jkbose.nic.in",
-    "summary": "The school examination board for Jammu and Kashmir; check jkbose.nic.in directly for its current syllabus, date sheets and notices."
+    "site": "https://jkbose.jk.gov.in/",
+    "summary": "The school examination board for Jammu and Kashmir; check jkbose.jk.gov.in directly for its current syllabus, date sheets and notices."
   },
   "board_cards": [
     {
       "key": "state",
       "name": "Jammu and Kashmir Board of School Education (JKBOSE)",
-      "site": "https://jkbose.nic.in",
+      "site": "https://jkbose.jk.gov.in/",
       "classes": "School examinations; check the board's site for the classes it examines",
-      "note": "JKBOSE is the school examination board for Jammu and Kashmir. We have not summarised its syllabus or paper pattern here, because the details should come from the board itself: read the current syllabus, date sheets and notices on jkbose.nic.in before a demo, and list on your profile the classes and medium you teach."
+      "note": "JKBOSE is the school examination board for Jammu and Kashmir. We have not summarised its syllabus or paper pattern here, because the details should come from the board itself: read the current syllabus, date sheets and notices on jkbose.jk.gov.in before a demo, and list on your profile the classes and medium you teach."
     },
     {
       "key": "cbse",
@@ -29,17 +29,17 @@
     }
   ],
   "intro": [
-    "NXTutors has no city tuition-jobs page in Jammu and Kashmir yet, so tutors in Srinagar, Jammu, Anantnag, Baramulla and other towns start from this page. Write your town and the localities you can reach for home lessons. When a family asks for a tutor at home, the request goes to the nearest suitable tutors before the search widens, so your base matters. Online lessons are matched by subject, class and board rather than place, which means a tutor in Kathua or Kupwara can be shortlisted for a student anywhere in India.",
+    "Srinagar and Jammu now have their own NXTutors tuition-jobs pages (/tuition-jobs/srinagar and /tuition-jobs/jammu); tutors in Anantnag, Baramulla and other towns start from this page. Write your town and the localities you can reach for home lessons. When a family asks for a tutor at home, the request goes to the nearest suitable tutors before the search widens, so your base matters. Online lessons are matched by subject, class and board rather than place, which means a tutor in Kathua or Kupwara can be shortlisted for a student anywhere in India.",
     "Students in Jammu and Kashmir may study under JKBOSE, CBSE or another board, so list each board you teach along with the medium. Take syllabus and exam details from the board's own site rather than from secondhand sources. For every request, NXTutors puts forward two or three tutors; the family sees the fee you set before a free first class, and if the match does not work out later, they can switch without paying for it. Tutors in the Jammu division and the Kashmir division follow the same steps; just name your own town and the classes you prefer to take."
   ],
   "towns": [
     {
       "name": "Srinagar",
-      "note": "As NXTutors has no Srinagar city page, tutors from the city register on this state page. Exact locality first, then any others you visit: home requests always begin with the nearest tutor and only later widen, and video lessons can still reach students elsewhere in India."
+      "note": "Srinagar has its own NXTutors city page (/city/srinagar) and tuition-jobs page (/tuition-jobs/srinagar), which show the zones families ask from. Exact locality first, then any others you visit: home requests always begin with the nearest tutor and only later widen, and video lessons can still reach students elsewhere in India."
     },
     {
       "name": "Jammu",
-      "note": "Jammu tutors should name their own mohalla or colony and any nearby areas they can reach for regular lessons. Then add every board you have taught, JKBOSE, CBSE or ICSE, with the classes for each, because the family's request states its board."
+      "note": "Jammu has its own NXTutors city page (/city/jammu) and tuition-jobs page (/tuition-jobs/jammu). Jammu tutors should name their own mohalla or colony and any nearby areas they can reach for regular lessons. Then add every board you have taught, JKBOSE, CBSE or ICSE, with the classes for each, because the family's request states its board."
     },
     {
       "name": "Anantnag",
@@ -97,7 +97,7 @@
   "faqs": [
     [
       "Where do I check JKBOSE syllabus details?",
-      "On the board's own site, jkbose.nic.in. It did not load when we prepared this page, so we have not summarised it here; check it directly before a demo rather than relying on secondhand notes."
+      "On the board's own site, jkbose.jk.gov.in, which lists the syllabus, model test papers and date sheets. Check it directly before a demo rather than relying on secondhand notes."
     ],
     [
       "Can I teach online from Srinagar or Jammu?",

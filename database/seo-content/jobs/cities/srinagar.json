@@ -1,0 +1,110 @@
+{
+  "intro": [
+    "Tuition work in Srinagar is spread across five zones that we group for planning home visits. The Civil Lines along the Jhelum hold Lal Chowk, Jawahar Nagar, Rajbagh and Sonwar; Karan Nagar, Batamaloo and Bemina run west; Hyderpora, Peerbagh, Sanat Nagar and Rawalpora form the Airport Road side; Natipora, Barzulla, Nowgam and Bagh-e-Mehtab make up the south; and North City stretches from Nowshera and Zadibal to Soura, Buchpora and Hazratbal. Almost every family lives in a house on a colony lane or in an older mohalla rather than a tower, so a tutor usually reaches the door without a visitor register. The real skill is reading addresses, which are given as small colony names.",
+    "Students here study under the Jammu and Kashmir Board of School Education, CBSE and CISCE's ICSE and ISC, while IB and Cambridge IGCSE learners are fewer and usually work with online specialists. JKBOSE conducts the Class 10 secondary examination and the Class 11 and Class 12 higher secondary examinations, and its official website publishes the syllabus, textbooks, model test papers, a question bank and date sheets. Work from those materials rather than forwarded copies. Many children read their textbooks in English but reason more comfortably in the language spoken at home, so a tutor who can explain in both is useful; say on your profile which languages you teach in.",
+    "Home and online work both fit Srinagar's year. The long winter break, with its short, cold days, is when many families move lessons earlier in the day or switch some weeks online, so tutors who offer both modes can keep their students through the season. When a family in Sanat Nagar, for example, asks for a tutor, NXTutors shortlists two or three, starting with tutors in that locality, then the Airport Road zone, then the city, then online, and each fee is in front of the family before the free first demo; a later change of tutor costs the family nothing. Online students can come from anywhere in India."
+  ],
+  "zone_notes": {
+    "Civil Lines": "The centre is reachable from every side, and the Gogji Bagh ramp of the flyover brings tutors from the south over the busy roads. Homes behind Lal Chowk's shopfronts sit in lanes, so ask for the lane and a landmark, while Jawahar Nagar's planned plots are easy to follow. Rajbagh and Sonwar families give a part of the locality, such as Kursoo Rajbagh or Iqbal Colony, as the address. Fix lessons after the school rush.",
+    "Karan Nagar & Bemina": "Bemina's planned colonies sit on the four-lane bypass, so a tutor living near Tengpora, Hyderpora or Sanat Nagar can come straight down it outside peak hours and arrive at the door with space to park. Daytime traffic around a large institutional complex in Karan Nagar and the market roads of Batamaloo call for later slots and precise lane directions.",
+    "Airport Road": "Houses on residential plots and colony lanes mean doorstep arrival without visitor registers. The bypass through Sanat Nagar and Hyderpora and the steady traffic towards the airport decide your travel windows, and tutors usually take side lanes into Peerbagh. Hyderpora is known for its many coaching centres, so ask a family for the student's batch timings before you agree a slot, and keep home lessons for the topics a batch rushes.",
+    "Natipora & Nowgam": "This zone has two quick ways in: the flyover ramps at Natipora and Barzulla for tutors coming from the centre, and Srinagar railway station at Nowgam for tutors living on the Budgam or Pampore side, with a short auto ride to finish. Tutors from Rawalpora can cross to Bagh-e-Mehtab by the small bridge beside the railway bridge. Homes are houses in colony lanes, and evening slots after the office rush travel most easily.",
+    "North City": "Housing varies most here. In the old lanes of Nowshera and Zadibal, park on the main road and walk the last stretch, while Buchpora's newer colonies and the Hazratbal neighbourhoods allow arrival at the door. Through traffic on the roads from Buchpora towards Ganderbal builds at peak hours, and the lakefront roads near Hazratbal fill up at times. List only the localities you can reach in the late afternoon, when most lessons here are set."
+  },
+  "boards": "Srinagar tutors teach JKBOSE students for the Class 10 secondary and Class 11 and 12 higher secondary examinations, CBSE students working from NCERT books, CISCE's ICSE and ISC candidates, and fewer IB and Cambridge IGCSE learners, usually online. For JKBOSE, read the syllabus, textbooks, model test papers, question bank and date sheets on the board's official website, which has separate Kashmir and Jammu division sections; for CBSE use the CBSE academic site, and for ICSE and ISC the CISCE site. Your profile should say which boards and classes you take.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Jammu and Kashmir Board of School Education (JKBOSE)",
+      "site": "https://jkbose.jk.gov.in/",
+      "classes": "Class 10 (Secondary); Classes 11 and 12 (Higher Secondary)",
+      "note": "JKBOSE conducts the Class 10 secondary examination and the Class 11 and 12 higher secondary examinations, with separate Kashmir and Jammu divisions. A tutor for a JKBOSE student should teach from the prescribed textbooks, use the board's own model test papers and question bank, and read dates and notices only on the official site, not in forwarded messages.",
+      "page": "/jkbose-tutor-srinagar"
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "CBSE students in Srinagar sit beside JKBOSE and CISCE ones. Ground lessons in the NCERT books, practise on the board's sample papers with their marking schemes, and help students who have done a lot of objective practice to write full, stepped answers again. The same NCERT base supports JEE and NEET, so careful chapter work pays twice.",
+      "page": "/cbse-home-tutor-srinagar"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "ICSE (Class 10) and ISC (Class 12) papers are long and written, covering a broad syllabus, with English literature texts and project work in several subjects. Coverage is the challenge, so plan revision in rounds and set timed writing well before the papers. Regulations and specimen papers are on cisce.org.",
+      "page": "/icse-home-tutor-srinagar"
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "IB Diploma students in Srinagar are few, and they usually find a specialist online. The IB counts coursework alongside the final exams, and a tutor can coach a student through the Internal Assessment and Extended Essay, but the work must remain the student's own. Work from the subject guides on ibo.org and teach to the command terms."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "IGCSE learners in Srinagar usually study with online specialists. Regular past-paper practice marked against the official mark schemes is the core of the work; teach students to read command words and to sit the correct tier. Check whether the school follows Cambridge or Pearson Edexcel, and read the syllabus on that board's own site."
+    }
+  ],
+  "women": {
+    "intro": "NXTutors welcomes women tutors in Srinagar for home, online or hybrid work. Your profile decides the localities you travel to and the hours you show: a tutor living in Jawahar Nagar might keep to the Civil Lines, one in Hyderpora to the colonies beside the bypass, and students further off can be taught online. Since most homes here are houses on colony lanes, you meet each family at its own door. The same ID check applies to every tutor who registers, we ask a parent to be at home for the demo, and the safeguarding policy covers families and tutors alike. Treat these as practical controls, not promises about any one person.",
+    "points": [
+      "Pick home, online or both, and change the setting whenever your plans change.",
+      "Name only the localities you are happy to visit; you can stay within North City lanes you know or skip long bypass trips at peak hours.",
+      "Show the hours you are free, and trim them in winter if shorter days suit you better.",
+      "No regular classes begin before a free demo, and we ask a parent to be at home for it.",
+      "Settle fees, timings and messages with a parent, not with the student.",
+      "With younger children, teach in a shared room while an adult is at home; online, keep cameras switched on.",
+      "Joining involves a one-time code on your phone or email and a government photo ID that the team reviews.",
+      "If something feels wrong, end the lesson and report it to NXTutors marked Safeguarding; in an emergency, call 112 first."
+    ]
+  },
+  "story": [
+    "Start on your phone: confirm your number or email with a one-time code, then list subjects, classes, boards such as JKBOSE, CBSE or ICSE, your teaching languages and the Srinagar localities within your reach.",
+    "Next, add a government photo ID. The team reviews it before anyone sees your profile, and one ID can sit on only one tutor account. This confirms who you are; it does not look at police records.",
+    "After the review, your profile opens to families with the Verified badge, your boards, the localities you cover between Hazratbal and Nowgam, home, online or both, and the fee you have set.",
+    "Say a parent in Bemina or Rajbagh asks for a tutor. NXTutors puts together two or three names, beginning with tutors closest to that colony and widening to the zone, Srinagar and online.",
+    "The family sees your fee before booking. Your first class with them is a free demo in their home, and we ask a parent to be at home, so you see the student, the route and the hour.",
+    "From there, teach in homes you can reach, online for learners across India, or a blend, such as home visits during term and online lessons when the winter break shortens the days."
+  ],
+  "faqs": [
+    [
+      "How do tuition requests in Srinagar reach tutors?",
+      "A parent fills in the class, board, subjects, colony with a landmark and the mode they want: home, online or both. NXTutors replies with two or three tutors, looking at the same locality first, then its zone, then elsewhere in Srinagar, then online. Clear localities and boards on your profile decide whether you are considered."
+    ],
+    [
+      "Can I teach students outside Jammu and Kashmir online from Srinagar?",
+      "Yes. Online lessons reach students across India, so you might visit homes near your own colony and teach other students online. Families asking for home tuition are shown nearby profiles first, while a family that picks online tuition can be matched with you whichever city it is in."
+    ],
+    [
+      "Which Srinagar localities should I add to my profile?",
+      "Only those you can get to week after week at the agreed hour. A tutor in Sanat Nagar might cover Hyderpora, Rawalpora and Bemina along the bypass, while one in Lal Bazar might keep to Zadibal, Nowshera and Soura. Think about winter too: a short, accurate list is easier to keep up when the days are short."
+    ],
+    [
+      "What does the ID check involve?",
+      "You confirm a phone number or email with a one-time code and add a government photo ID, which the team reviews before your profile is published. Tutors who pass show a Verified badge. This is a check of identity only, not of police records or background; /how-we-verify-tutors explains it in full."
+    ],
+    [
+      "Is there a charge to join as a tutor?",
+      "Yes, tutor plans are paid, and /pricing lists each plan and what it includes. That is separate from your lesson fee, which you set yourself and which families see before their free first demo. If a family later switches tutor, it costs them nothing, so steady teaching is what keeps a student."
+    ],
+    [
+      "Can a woman tutor in Srinagar take home lessons only near her own colony?",
+      "Yes. Localities on your profile decide where home requests come from, so you could visit homes only around Rajbagh or Hazratbal and teach every other student online. We ask a parent to be at home for the free demo, which lets you meet the family before settling on a timetable."
+    ],
+    [
+      "Which boards can I teach in Srinagar?",
+      "School students here follow JKBOSE, CBSE or CISCE's ICSE and ISC, while IB and Cambridge IGCSE learners are fewer and usually taught online. Put your boards, classes and teaching languages on the profile, and for JKBOSE students rely on the prescribed textbooks and the model test papers on the board's site."
+    ],
+    [
+      "Can I combine home and online classes with one Srinagar family?",
+      "Yes. Select both modes and settle the mix with the parent after the demo. Many families keep home lessons through the term and move some or all classes online during the long winter break, when days are short and cold, so a tutor who offers both can continue without a gap."
+    ]
+  ]
+}

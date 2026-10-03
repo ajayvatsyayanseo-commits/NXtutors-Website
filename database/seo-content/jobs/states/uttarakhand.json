@@ -29,13 +29,13 @@
     }
   ],
   "intro": [
-    "NXTutors does not yet have a city tuition-jobs page anywhere in Uttarakhand, so this state page is where tutors here start, whether you live in Dehradun, Haridwar, Roorkee, Haldwani or a hill town. Write your town and the localities you can reach. When a family asks for home lessons, the request goes to the nearest suitable tutors first, then further out, so a clear base is what puts you in line for a student nearby. Online lessons are not tied to place at all and are matched by subject, class and board, so you can start teaching before a nearby family has asked.",
+    "Dehradun now has its own NXTutors city tuition-jobs page (/tuition-jobs/dehradun); for the rest of Uttarakhand this state page is where tutors start, whether you live in Haridwar, Roorkee, Haldwani or a hill town. Write your town and the localities you can reach. When a family asks for home lessons, the request goes to the nearest suitable tutors first, then further out, so a clear base is what puts you in line for a student nearby. Online lessons are not tied to place at all and are matched by subject, class and board, so you can start teaching before a nearby family has asked.",
     "Uttarakhand students may be on the state board at Ramnagar, CBSE, ICSE or another board, in Hindi or English medium. List every board and medium you teach. The board's own site carries its High School and Intermediate syllabi, paper designs and question banks, which are the right place to check before a demo. Each request ends with two or three tutors for the parent to compare; your fee, set by you, is visible before a free first class, and families can switch later. Intermediate tutors should name their stream and subjects too."
   ],
   "towns": [
     {
       "name": "Dehradun",
-      "note": "Dehradun tutors register here because there is no Uttarakhand city page yet. Type the colony you live in exactly; that is where home matching starts, before it widens to the rest of the city. Video lessons can carry your profile to other states."
+      "note": "Dehradun has its own NXTutors city page (/city/dehradun) and tuition-jobs page (/tuition-jobs/dehradun), which show the zones families ask from. Type the colony you live in exactly; that is where home matching starts, before it widens to the rest of the city. Video lessons can carry your profile to other states."
     },
     {
       "name": "Haridwar",
@@ -104,8 +104,8 @@
   ],
   "faqs": [
     [
-      "There is no Dehradun tuition-jobs page. Can I still join?",
-      "Yes. Join from this state page with Dehradun as your town and list the localities you can reach. A family near you is offered nearby tutors first, and online students are open to you from the start."
+      "Is there a Dehradun tuition-jobs page?",
+      "Yes: /tuition-jobs/dehradun shows the Dehradun zones families ask from. Join with Dehradun as your town and list the localities you can reach. A family near you is offered nearby tutors first, and online students are open to you from the start."
     ],
     [
       "Can a Class 12 student change subjects from Class 11?",

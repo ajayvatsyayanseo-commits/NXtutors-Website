@@ -1,0 +1,108 @@
+{
+  "intro": [
+    "Tuition work in Puducherry town falls into four zones that we use to plan home visits. Heritage Town is the old Boulevard Town, with White Town and the Tamil Quarter on either side of the Grand Canal and Muthialpet to the north. Mudaliarpet & Ariyankuppam runs south along the Cuddalore road to Manavely, Veerampattinam and Thavalakuppam. Lawspet & ECR covers Lawspet, Karuvadikuppam, Kamaraj Nagar and the separate Kalapet enclave inside Oulgaret Municipality, and Reddiarpalayam & Villianur takes in Saram, Thattanchavady and the town of Villianur. Families mostly live in independent houses or on plots, with apartment buildings, builder floors and government quarters in the newer parts, so a tutor more often rings at a door than signs a gate register.",
+    "The board picture here is unusual, and worth understanding before you set up a profile. Puducherry has no school board of its own. The Directorate of School Education ran orientation programmes in 2024 for a swap from the state syllabus to the CBSE syllabus, and its result analyses list Class 10 and Class 12 results as CBSE from 2025. It also publishes separate state-board SSLC and +2 result analyses for private schools, so some students still follow that syllabus. Alongside them you will meet CISCE students and a smaller number following IB or Cambridge IGCSE. Ask each family which syllabus the school follows, and in which year it changed.",
+    "Home and online work both suit the town. Buses, the railway stations at Puducherry and Villianur, and two-wheelers carry tutors between zones, but shopping evenings in the old town, the Cuddalore road at office hours and festival days in Veerampattinam and Villianur all shape when a home lesson can start. Take a Lawspet parent looking for help: NXTutors proposes two or three tutors, drawn from Lawspet first, then the Lawspet & ECR zone, then elsewhere in Puducherry, then online. Your fee is in front of that parent before a free first demo, and if they move to another tutor later, it costs them nothing. Online students can come from anywhere in India."
+  ],
+  "zone_notes": {
+    "Heritage Town": "White Town and Tamil Quarter homes are mostly old houses opening onto the street, so you ring and are let in at the front door; ask for the street name as signed, since many are French. Puducherry railway station and the main bus stand are close if you travel without a vehicle. Shopping streets, the central market and the seafront crowd on evenings and weekends, so weekday afternoon slots are easiest to hold.",
+    "Mudaliarpet & Ariyankuppam": "This is a long zone, so list only the stretch you can cover. Mudaliarpet and Nellithope have apartment buildings where visitors sign in at the gate, while Ariyankuppam's grid streets and the plots in Thavalakuppam usually mean arriving at a door or family gate. Buses towards Veerampattinam, Bahour and Cuddalore, and route 2A through Manavely, help if you do not ride. Check the Aadi-month car festival dates at Veerampattinam before fixing Friday classes.",
+    "Lawspet & ECR": "Lawspet's government housing campuses and apartment blocks may record visitors at the entrance, while colony houses let you come to the door; in Kalapet, campus residences have their own entry rules, so ask the family first. The East Coast Road links Lawspet, Krishna Nagar and Kalapet, so a tutor living along it can serve several localities. Airport Road is slowest when schools and other institutions open and close, so start lessons after that rush.",
+    "Reddiarpalayam & Villianur": "Saram and Thattanchavady sit near the main bus stand and a major junction, which makes them easy to reach by bus, though the junction is busy at office hours. Builder floors in Thattanchavady usually mean a phone call from the gate, while Reddiarpalayam is mostly houses. Villianur is a separate town with its own railway station in Sulthanpet on the Villupuram line; tutors living there are the steadiest match, and temple festival days crowd its centre."
+  },
+  "boards": "In Puducherry you will mostly teach CBSE, which the territory's government schools now follow after leaving the state syllabus. Some private schools keep the state-board SSLC and +2 syllabus, CISCE families take ICSE and ISC, and a few learners follow IB or Cambridge IGCSE, often with online help. Take CBSE patterns from cbseacademic.nic.in, ICSE and ISC rules from cisce.org, and anything about the state-board syllabus in Puducherry from the Directorate of School Education's own website. Name each syllabus and class you cover on your profile.",
+  "board_cards": [
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "Government schools in Puducherry have moved from the state syllabus to CBSE, and the Directorate's result analyses show Class 10 and Class 12 as CBSE from 2025. So a student may have begun on one syllabus and be finishing on another. Teach from NCERT, rehearse with the board's own specimen questions and marking guidance, and look early for gaps the change left.",
+      "page": "/cbse-home-tutor-puducherry"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "Class 10 ICSE; Class 12 ISC",
+      "note": "These two examinations reward full written answers over a broad syllabus, and English includes set literature texts. If you know them well, you can take ICSE and ISC students at home in your own part of Puducherry and teach senior electives online to learners elsewhere. The council's regulations and specimen papers are on cisce.org.",
+      "page": "/icse-home-tutor-puducherry"
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Classes 11–12 (DP)",
+      "note": "Only a handful of Puducherry families follow the IB Diploma, so expect much of this work to be online. Coursework counts alongside the final papers: you can coach a student through the criteria for an Internal Assessment or the Extended Essay, but the work itself must stay entirely theirs. Subject guides sit on ibo.org."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "Classes 9–10",
+      "note": "Expect few IGCSE students locally and more of them online. Effective lessons lean on timed past papers checked against the published mark schemes, on what each command word asks for, and on core versus extended tiers. Ask early which awarding body the school uses, because Cambridge and Pearson Edexcel syllabuses are not the same."
+    },
+    {
+      "key": "state",
+      "name": "State-board syllabus, SSLC and +2 (SSLC)",
+      "site": "https://schooledn.py.gov.in/",
+      "classes": "SSLC (Class 10); +2 (Class 12)",
+      "note": "Puducherry has no board of its own, and only some private schools still follow the state-board SSLC and +2 syllabus; the Directorate of School Education publishes separate state-board result analyses for them. Before teaching such a student, confirm with the family which syllabus the school uses, work from its prescribed textbooks, and take every date and notice from official sources only."
+    }
+  ],
+  "women": {
+    "intro": "Women who teach in Puducherry can work at home visits, online or a blend of the two through NXTutors. You decide where you go: a Muthialpet tutor may prefer to stay among the old-town wards, a Reddiarpalayam tutor among the nearby Oulgaret colonies, and anyone further away can learn with you on screen. Many homes here open straight onto the street, so a first visit usually means knocking at the family's own door. Identical ID steps apply to everyone who signs up, we ask a parent to be at home for the demo, and our safeguarding policy protects families and tutors alike. None of this is a promise about any individual; these are simply the controls you have.",
+    "points": [
+      "Switch between home, online and hybrid on your profile at any time.",
+      "Keep your localities tight, for example only the Heritage Town streets, and drop trips down the Cuddalore road at office hours if they do not suit you.",
+      "Block out festival days in Veerampattinam or Villianur and any hours you are not free.",
+      "Regular lessons begin only after a free demo, and we ask a parent to be at home for the demo.",
+      "For Lawspet housing campuses and apartment blocks, have the family pass your name to the gate beforehand.",
+      "Agree payment, timing and messages with the parent, never only with the child.",
+      "Keep lessons with young children in a shared room with an adult in the house, and keep video on for online classes.",
+      "Should anything feel wrong, end the session and tell NXTutors, marking it Safeguarding; ring 112 first in an emergency."
+    ]
+  },
+  "story": [
+    "Sign up from your phone with a one-time code sent to your number or email, then list what you teach: subjects, classes, CBSE, state-board SSLC or +2, ICSE, and the Puducherry localities you can travel to.",
+    "Add a government photo ID next. Our team looks at it before families can see you, each ID number links to a single tutor account, and the step confirms identity rather than any record.",
+    "When that is done, families can open your profile with its Verified badge, your syllabuses, your localities between Kalapet and Thavalakuppam, your mode of teaching and the fee you set.",
+    "Suppose a Mudaliarpet or Saram parent asks for help. NXTutors names two or three tutors, closest to that address first, then the rest of the zone, the wider town and finally online.",
+    "The parent reads your fee before booking. Your first lesson is a free demo at their home, and we ask a parent to be at home for the demo, so you see the child, the street and the timing.",
+    "From then on, teach the homes within your reach, online learners from anywhere in India, or both, say weekday visits plus an online session whenever a festival fills the roads."
+  ],
+  "faqs": [
+    [
+      "How does a Puducherry family's request come to me?",
+      "The parent tells NXTutors the class, the syllabus the school uses, the subjects, the locality with a nearby landmark and the mode wanted. We then put forward two or three tutors, nearest to that locality first, widening to the zone, the town and online. Accurate localities and syllabuses on your profile are what bring you into that shortlist."
+    ],
+    [
+      "Which syllabus will Puducherry students ask me to teach?",
+      "Mostly CBSE, which government schools in the territory have moved to from the state syllabus. Some private schools still follow the state-board SSLC and +2 syllabus, and you will also meet CISCE students and a few IB or IGCSE learners. List every syllabus and class you teach, and confirm the school's syllabus with each family."
+    ],
+    [
+      "Am I limited to Puducherry students if I teach online?",
+      "No. Online learners can be anywhere in India, so a mix works well: home lessons in the localities near you and online lessons for students in other towns. Parents who want someone at their door are shown nearby tutors first, but parents who pick online classes may be matched with you wherever they live."
+    ],
+    [
+      "Which Puducherry localities should I add to my profile?",
+      "Pick the ones you could reach every week without strain. A Lawspet tutor might cover Karuvadikuppam, Kamaraj Nagar and Kalapet along the East Coast Road; an Ariyankuppam tutor might keep to Manavely, Veerampattinam and Thavalakuppam. Keep the list realistic, because a family expects the same slot all term."
+    ],
+    [
+      "How do you check a tutor's identity?",
+      "Two steps: a one-time code to your phone or email, and a government photo ID that our team reviews before your profile appears. Tutors who pass carry a Verified badge. It confirms identity only and does not look into criminal records or your background; the full process is on /how-we-verify-tutors."
+    ],
+    [
+      "Is joining NXTutors free for tutors?",
+      "No, tutor plans are paid; /pricing sets out every plan and its features. The fee for your lessons is a different thing: you choose it, and each family reads it before the free first demo. Families may switch tutors later at no cost to them, so good, reliable teaching is what holds a student."
+    ],
+    [
+      "Can a woman tutor in Puducherry teach at home only near her own locality?",
+      "Yes. Home requests follow the localities you list, so you might take home students only around Muthialpet or Reddiarpalayam and teach everyone else online. We ask a parent to be at home for the free demo, which means you meet the family in person before any regular timetable is agreed."
+    ],
+    [
+      "Can one Puducherry family have both home and online lessons with me?",
+      "Yes. Turn on both modes, then settle the split with the parent once the demo is done. One home lesson a week, with online sessions on festival days or when the Cuddalore road and the old town's shopping streets are crowded, keeps the timetable going without long gaps through the school year."
+    ]
+  ]
+}

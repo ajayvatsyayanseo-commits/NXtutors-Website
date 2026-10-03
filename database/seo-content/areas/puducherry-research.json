@@ -1,0 +1,333 @@
+{
+  "areas": {
+    "white-town": {
+      "name": "White Town (French Quarter)",
+      "zone": "Heritage Town",
+      "type": "mixed",
+      "about": "<p>White Town, the old French Quarter of Puducherry, is the seaward half of the historic Boulevard Town, separated from the Tamil Quarter by the Grand Canal that once divided the colonial settlement into French and Indian quarters. Its straight streets keep colonial-era buildings and many French street names, and they run down to Rock Beach, the city's main seafront promenade on the Bay of Bengal. Independent houses and heritage buildings are the usual homes, set among guest houses, cafés, offices and French cultural institutions.</p><p>Most tuition visits here are to a house with its own street door rather than a gated block, so the street name and house number are usually all a tutor needs. The Tamil Quarter and Muthialpet are the nearest residential neighbours, and Puducherry railway station on the southern boulevard is close for tutors arriving by train. The seafront and heritage streets fill with visitors in the evenings and at weekends, so a two-wheeler is easier than a car and weekday slots are simpler to keep. Online classes suit subjects where the right teacher lives elsewhere in the city. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Pondicherry",
+        "https://en.wikipedia.org/wiki/Promenade_Beach",
+        "https://www.squareyards.com/white-town-in-pondicherry-overview-50291",
+        "https://en.wikipedia.org/wiki/Puducherry_railway_station"
+      ]
+    },
+    "tamil-quarter": {
+      "name": "Tamil Quarter (Heritage Town)",
+      "zone": "Heritage Town",
+      "type": "mixed",
+      "about": "<p>The Tamil Quarter is the inland half of Puducherry's old Boulevard Town, on the western side of the Grand Canal that once separated the French and Indian quarters of the colonial settlement. It holds most of the town's listed heritage: of about 1,200 buildings identified as heritage buildings in the city, around 900 are in the Tamil Quarter. Traditional street-facing houses stand alongside the town's busiest shopping streets, the central market and many small family businesses.</p><p>Homes here are mostly older houses opening straight onto the street, so a tutor usually arrives at the front door after a quick phone call. Puducherry railway station on the southern boulevard and the main bus stand are both close to the old town, which helps tutors who come in by train or bus from Villianur, Lawspet or Ariyankuppam. Shopping streets are crowded in the evenings and on festival days, so a two-wheeler and a fixed weekday slot keep classes regular. White Town across the canal and Muthialpet to the north are the nearest neighbourhoods for finding a tutor. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Pondicherry",
+        "https://www.pdymun.in/images/pdf/Puducherry%20Smart%20City%20Proposal%202017.pdf",
+        "https://en.wikipedia.org/wiki/Puducherry_railway_station"
+      ]
+    },
+    "muthialpet": {
+      "name": "Muthialpet",
+      "zone": "Heritage Town",
+      "type": "residential",
+      "about": "<p>Muthialpet is the northern part of Puducherry town and the name of an assembly constituency covering seven wards of Pondicherry Municipality: Muthialpet West, Muthialpet East, Solai Nagar, Vaithikuppam, Thiruvalluvar Nagar, Perumal Koil and Kurusukuppam. It has a market complex more than a century old and a clock tower, and its shoreline includes the fishing hamlet of Vaithikuppam, where temple processions gather on the beach for the Masi Magam festival. Homes are mainly independent houses, with some small apartment buildings.</p><p>Muthialpet sits close to the Boulevard Town, White Town and the beach, and Karuvadikuppam Road runs through it towards the Lawspet side, so tutors from the old town and from Oulgaret can both reach it easily. In a house the tutor simply comes to the door; in a small apartment building, share the flat number and a phone number before the first visit. The roads around the market are busy at peak hours, so agree a regular slot with some margin, and keep online classes in mind for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Muthialpet",
+        "https://en.wikipedia.org/wiki/Muthialpet_Assembly_constituency",
+        "https://www.pdymun.in/constituencies.php",
+        "https://www.magicbricks.com/Muthialpet-in-Pondicherry-Overview"
+      ]
+    },
+    "mudaliarpet": {
+      "name": "Mudaliarpet",
+      "zone": "Mudaliarpet & Ariyankuppam",
+      "type": "mixed",
+      "about": "<p>Mudaliarpet was once a separate commune of French India and was amalgamated with the Pondicherry commune to form today's Pondicherry Municipality, which still keeps a municipal office here. It is also one of the municipality's 33 wards and lies on the Cuddalore Main Road, the route that continues south through Ariyankuppam towards Cuddalore. Homes range from older independent houses to apartment buildings, including some taller blocks, with shops, offices, a police station and daily markets along the main road.</p><p>Its position on the Cuddalore road means tutors can travel in from the town centre and the bus stand side or from Ariyankuppam further south. Houses on the side streets allow doorstep arrival, while apartment buildings may ask visitors to sign in at the gate, so give the tutor the building name and flat number in advance. The main road carries heavy traffic at office hours, so weekday evening classes run more smoothly with a tutor from Mudaliarpet or the nearby wards, and online classes help when a specialist teacher lives across town. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://www.pdymun.in/historical-background.php",
+        "https://www.pdymun.in/puducherry-municipality-details.php",
+        "https://www.pdymun.in/constituencies.php",
+        "https://www.magicbricks.com/Mudaliarpet-in-Pondicherry-Overview"
+      ]
+    },
+    "nellithope": {
+      "name": "Nellithope and Anna Nagar",
+      "zone": "Mudaliarpet & Ariyankuppam",
+      "type": "residential",
+      "about": "<p>Nellithope is a residential part of Puducherry town within Pondicherry Municipality, and it gives its name to an assembly constituency. Nellithope and the neighbouring Anna Nagar are both municipal wards, and the municipality runs a local office at Nellithope. The area is close to the Pondicherry bus stand and a major signal junction, with markets, schools and clinics nearby, and its housing is a mix of independent houses, residential plots and apartment buildings.</p><p>Being near the bus stand makes Nellithope one of the easier areas for tutors who travel by bus from Lawspet, Mudaliarpet or Villianur, with a short walk or auto ride for the last stretch. Houses usually mean the tutor comes straight to the door; for flats, give the building name and floor and let the guard know in advance. Roads around the bus stand stay busy for much of the day, so a two-wheeler is the simplest way in and a fixed weekday time helps classes start on time. For subjects where the right tutor lives further away, online classes work well. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Nellithope_Assembly_constituency",
+        "https://www.pdymun.in/puducherry-municipality-details.php",
+        "https://www.magicbricks.com/Nellithope-in-Pondicherry-Overview",
+        "https://www.magicbricks.com/Anna-Nagar-in-Pondicherry-Overview"
+      ]
+    },
+    "ariyankuppam": {
+      "name": "Ariyankuppam",
+      "zone": "Mudaliarpet & Ariyankuppam",
+      "type": "residential",
+      "about": "<p>Ariyankuppam, formerly written Ariancoupom, is a town, commune and assembly constituency on the southern side of Puducherry, on the old NH-45A between Puducherry and Cuddalore. Its streets are straight and laid out in a grid, much like the Boulevard Town, and the Sankaraparani river flows through the area, with the Chunnambar boat house on its bank. Arikamedu, the ancient Indo-Roman trading site excavated in the 1940s, lies just outside the town, and Manavely, Veerampattinam and Thavalakuppam are among the localities around it.</p><p>Local buses from Puducherry towards Veerampattinam, Bahour, Madukarai and Cuddalore run through Ariyankuppam, so tutors without a vehicle can still reach it, and the Cuddalore road links it with Mudaliarpet and the town centre. Homes include independent houses, plots and a few apartment buildings; the grid streets make houses easy to find, so give the cross-street name for the first visit. The Cuddalore road is busy at peak hours, so allow some margin for tutors travelling from town or choose one who lives in Ariyankuppam, and use online classes for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ariyankuppam",
+        "https://en.wikipedia.org/wiki/Ariankuppam_Assembly_constituency",
+        "https://www.magicbricks.com/Ariyankuppam-in-Pondicherry-Overview"
+      ]
+    },
+    "manavely": {
+      "name": "Manavely",
+      "zone": "Mudaliarpet & Ariyankuppam",
+      "type": "residential",
+      "about": "<p>Manavely is a census town in Ariyankuppam commune, bordered by Kakkayanthope to the north, Veerampattinam to the east, the Sankaraparani river to the south and Ariyankuppam to the west. After delimitation it became an assembly constituency of its own. The Ariyankuppam to Chinna Veerampattinam road links it with Puducherry, and Manavely Main Road joins the Cuddalore highway near the Ariyankuppam police station. The river meets the Bay of Bengal at nearby Chinna Veerampattinam beach.</p><p>Bus route 2A of the Puducherry road transport corporation, between Puducherry and Chinna Veerampattinam, runs through Manavely, and buses on the Cuddalore road stop at Ariyankuppam, so tutors who travel by bus can reach the area. The nearest pool of home tutors is in Ariyankuppam, Veerampattinam and the Mudaliarpet side of town. Give the tutor a street name and a landmark such as a temple or the main road junction for the first visit, and ask whether the home is a house with doorstep arrival or a flat with a gate. Festival days around Veerampattinam bring crowds, so plan classes around them. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Manavely",
+        "https://en.wikipedia.org/wiki/Ariyankuppam"
+      ]
+    },
+    "veerampattinam": {
+      "name": "Veerampattinam",
+      "zone": "Mudaliarpet & Ariyankuppam",
+      "type": "residential",
+      "about": "<p>Veerampattinam is the largest coastal village in the Puducherry region, on the coast between Puducherry and Cuddalore in the Ariyankuppam area. It has a long beach and is known for the car festival of its old Sengazhuneer Amman temple, held over six Fridays of the Tamil month of Aadi, with the fifth Friday declared a public holiday by the Government of Puducherry. The Masi Magam gathering of temple deities on the beach is another major event. The village has its own government schools and frequent bus services from Puducherry.</p><p>Manavely and Ariyankuppam are the nearest neighbourhoods, so tutors living there are the most practical choice for regular home classes. Homes in the village lanes are easiest to find with a landmark near the temple or the main road, so share one along with a phone number before the demo. During the festival weeks roads become crowded, so plan class times around them or switch to online sessions for those days. Online tutors are also useful for advanced or specialist subjects that are hard to cover locally. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Veerampattinam",
+        "https://en.wikipedia.org/wiki/Ariyankuppam",
+        "https://en.wikipedia.org/wiki/Manavely"
+      ]
+    },
+    "thavalakuppam": {
+      "name": "Thavalakuppam",
+      "zone": "Mudaliarpet & Ariyankuppam",
+      "type": "residential",
+      "about": "<p>Thavalakuppam is a panchayat village and revenue village in Ariyankuppam commune, with the Sankaraparani river forming its northern border and Abishegapakkam to its west. It lies on the Puducherry to Cuddalore highway, the old NH-45A, beyond Ariyankuppam, and the Thavalakuppam to Embalam state road, Pudukuppam Road and Nallavadu Road branch off here. Edayarpalayam and Nanamedu fall under its village panchayat, and residential plots have been laid out along the roads leading off the highway.</p><p>Buses from Puducherry to Bahour, Madukarai and Karaiyamputhur run through Ariyankuppam and Thavalakuppam, which helps tutors who travel by bus. Families here usually find home tutors in Thavalakuppam itself, in Ariyankuppam or on the Mudaliarpet side of town, and online classes widen the choice for specialist subjects. Homes on plotted roads usually have their own gate, so arrival is straightforward; give a landmark on the highway or the name of the side road. Highway traffic is heaviest at peak hours, so a slightly earlier or later class slot runs more smoothly. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Thavalakuppam",
+        "https://en.wikipedia.org/wiki/Abishegapakkam",
+        "https://www.magicbricks.com/Thavalakuppam-in-Pondicherry-Overview"
+      ]
+    },
+    "lawspet": {
+      "name": "Lawspet",
+      "zone": "Lawspet & ECR",
+      "type": "mixed",
+      "about": "<p>Lawspet is one of the most densely populated parts of Puducherry and lies within Oulgaret Municipality. It was thinly settled until about 1990, when government residences and privately owned buildings began to spread across it, and it is now known for its many educational institutions. Its neighbourhoods include Karuvadikuppam, Pethuchettypet, Ashok Nagar, Kumaran Nagar, Kurinji Nagar, Shanthi Nagar and Pudupet, with Airport Road and College Road as its main roads, and Puducherry's airport is in Lawspet too.</p><p>Housing is a mix of government quarters, independent houses, builder floors and apartment buildings, so visit arrangements vary: government housing campuses and apartment blocks may check visitors at the gate, while houses on colony streets allow doorstep arrival. The East Coast Road passes through Lawspet, which helps tutors coming from Kalapet or Kamaraj Nagar. Airport Road and College Road are busiest when schools and colleges open and close, so plan class times around those hours. Online sessions suit subjects where the right specialist lives elsewhere in the city. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lawspet",
+        "https://en.wikipedia.org/wiki/Pondicherry_Airport",
+        "https://oulmun.in/wards.php",
+        "https://www.magicbricks.com/Lawspet-in-Pondicherry-Overview"
+      ]
+    },
+    "karuvadikuppam": {
+      "name": "Karuvadikuppam",
+      "zone": "Lawspet & ECR",
+      "type": "mixed",
+      "about": "<p>Karuvadikuppam is one of the eight revenue villages that make up Oulgaret Municipality and is also one of its wards. It is usually counted among the main areas of Lawspet, along with Pethuchettypet, and Karuvadikuppam Road runs from here into Muthialpet in Pondicherry Municipality. Along its main road there are temples, shops and showrooms, with residential streets behind them.</p><p>Because it is close to both Lawspet and Muthialpet, Karuvadikuppam is convenient for tutors from the Oulgaret side and from the northern wards of the old town. Most tutors come by two-wheeler or bus, and Puducherry railway station and the main bus stand are the nearest transport hubs for anyone travelling from further away. Houses on the residential streets allow doorstep arrival, while flats may need the tutor's name given at the gate, so share the details before the first class. Traffic on the main road builds in the evening, so agree a fixed weekday time with a little margin, and use online classes for specialist subjects or when the right tutor lives across the city. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://oulmun.in/about-oulgaret-municipality.php",
+        "https://en.wikipedia.org/wiki/Lawspet",
+        "https://www.pdymun.in/",
+        "https://www.magicbricks.com/Karuvadikuppam-in-Pondicherry-Overview"
+      ]
+    },
+    "kamaraj-nagar": {
+      "name": "Kamaraj Nagar",
+      "zone": "Lawspet & ECR",
+      "type": "residential",
+      "about": "<p>Kamaraj Nagar is an assembly constituency within Oulgaret Municipality whose segments are Brindavanam, Kamaraj Nagar, Krishna Nagar, Rainbow Nagar, Sithankudi, Venkata Nagar and Venkateshwara Nagar; Krishna Nagar, Rainbow Nagar, Kamaraj Nagar and Brindhavanam are also municipal wards. It is a settled residential belt close to the town's main commercial streets, with a park shared by Kamaraj Nagar, Venkata Nagar and Rainbow Nagar and shops within walking distance.</p><p>Homes are a mix of independent houses, builder floors and apartment buildings, so a tutor may arrive at a front door or at a building gate where a visitor's name is noted. Krishna Nagar has easy access to the East Coast Road, which helps tutors coming from Lawspet or Kalapet, and the old town is close for tutors from Muthialpet and the Boulevard Town. The commercial roads nearby are busy in the evening, so keep classes to a regular slot agreed in advance. Online classes are a good option for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kamaraj_Nagar_Assembly_constituency",
+        "https://oulmun.in/wards.php",
+        "https://www.magicbricks.com/Krishna-Nagar-in-Pondicherry-Overview",
+        "https://www.magicbricks.com/Rainbow-Nagar-in-Pondicherry-Overview"
+      ]
+    },
+    "kalapet": {
+      "name": "Kalapet",
+      "zone": "Lawspet & ECR",
+      "type": "mixed",
+      "about": "<p>Kalapet is the northernmost enclave of Pondicherry district, annexed by the French in 1703 and cut off from the rest of the territory by Tamil Nadu: Viluppuram district surrounds it on three sides and the Bay of Bengal lies to the east. It lies along the East Coast Road, is one of the revenue villages of Oulgaret Municipality and has its own assembly constituency. A large university campus is here, and residential plots, houses and a few builder floors near the beach and the main road make up much of the housing.</p><p>Because Kalapet sits apart from the main town along the East Coast Road, families often look for tutors living in Kalapet itself or on the Lawspet side, and online classes widen the choice considerably. Tutors usually arrive by two-wheeler or by bus along the East Coast Road. Homes on plotted streets allow doorstep arrival, while campus residences have their own entry rules, so check with the family how a visitor is admitted. Allow some margin for traffic on the East Coast Road at peak hours when fixing a weekly slot. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kalapet",
+        "https://en.wikipedia.org/wiki/Kalapet_Assembly_constituency",
+        "https://oulmun.in/about-oulgaret-municipality.php",
+        "https://www.magicbricks.com/Kalapet-in-Pondicherry-Overview"
+      ]
+    },
+    "reddiarpalayam": {
+      "name": "Reddiarpalayam",
+      "zone": "Reddiarpalayam & Villianur",
+      "type": "residential",
+      "about": "<p>Reddiarpalayam is one of the eight revenue villages that form Oulgaret Municipality and is also a municipal ward; it was a separate assembly constituency from 1974 to 2006. It is a largely residential locality where many government employees and professionals live, with Pon Nagar, Jawahar Nagar and Kavery Nagar among the nearby areas and the Shanmugapuram market close by. Housing includes independent houses and residential plots, with some apartment buildings.</p><p>Puducherry railway station connects Reddiarpalayam with the rest of the city, and Villianur station lies on the same line towards Villupuram. Most tutors, though, come by two-wheeler or bus. Visits are mostly to houses, where the tutor arrives at the door; a colony name and a landmark such as a bus stop or temple help on the first day. Main roads into town get busy at office hours, so evening slots with a tutor from Reddiarpalayam or a neighbouring colony are the most dependable, and online classes cover specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://oulmun.in/about-oulgaret-municipality.php",
+        "https://en.wikipedia.org/wiki/Reddiarpalayam_Assembly_constituency",
+        "https://www.99acres.com/reddiarpalayam-pondicherry-overview-piffid",
+        "https://www.magicbricks.com/Reddiarpalayam-in-Pondicherry-Overview"
+      ]
+    },
+    "saram": {
+      "name": "Saram",
+      "zone": "Reddiarpalayam & Villianur",
+      "type": "residential",
+      "about": "<p>Saram is one of the eight revenue villages that make up Oulgaret Municipality and is also one of its wards. It is a residential locality close to the main bus stand and a major town junction, with independent houses, residential plots and small apartment buildings, and families here describe it as a calm area suited to family living.</p><p>Its closeness to the bus stand makes Saram easy to reach for tutors coming by bus from Villianur, Ariyankuppam, Lawspet or the old town, and Puducherry railway station is the main station for anyone arriving by train. In houses the tutor comes straight to the door, while apartment buildings may want the visitor's name given to the guard, so share the flat number in advance. The roads around the bus stand and the junction are busy at office hours, so pick a weekday slot outside the evening peak or choose a tutor living in Saram or the neighbouring wards. Online classes are a practical choice for specialist subjects or when the right tutor lives in another part of Puducherry. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://oulmun.in/about-oulgaret-municipality.php",
+        "https://oulmun.in/wards.php",
+        "https://www.magicbricks.com/Saram-in-Pondicherry-Overview"
+      ]
+    },
+    "thattanchavady": {
+      "name": "Thattanchavady",
+      "zone": "Reddiarpalayam & Villianur",
+      "type": "residential",
+      "about": "<p>Thattanchavady is one of the eight revenue villages of Oulgaret Municipality and gives its name to an assembly constituency. It is also a municipal ward, listed alongside the wards of Pakkamudayanpet and Thilaspet in the municipality's ward delimitation, and plotted residential land and builder-floor homes are common here. Saram and Reddiarpalayam are among the other Oulgaret revenue villages on this side of the municipality.</p><p>For families in Thattanchavady, tutors from the surrounding Oulgaret wards and from the old town are the most practical choice, and online classes widen the options for specialist subjects. Most tutors come by two-wheeler or bus, and Puducherry railway station and the main bus stand are the nearest transport hubs for anyone coming from further away. Houses on plotted streets allow doorstep arrival, while builder floors may need a phone call from the gate, so share a clear landmark and the floor number before the first class. Keep a fixed weekday slot with some margin for office-hour traffic on the main roads. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://oulmun.in/about-oulgaret-municipality.php",
+        "https://oulmun.in/wards.php",
+        "https://en.wikipedia.org/wiki/Thattanchavady_Assembly_constituency",
+        "https://www.magicbricks.com/Thattanchavady-in-Pondicherry-Overview"
+      ]
+    },
+    "villianur": {
+      "name": "Villianur",
+      "zone": "Reddiarpalayam & Villianur",
+      "type": "mixed",
+      "about": "<p>Villianur, Villenour in French, is a commune panchayat and the headquarters of Villianur taluk, and it forms part of the Puducherry urban agglomeration; at the 2001 census it was the third-largest town in the district after Puducherry and Ozhukarai. It stands on the banks of the Sankaraparani river on the road towards Villupuram, with industries around it, and its main landmarks are the old Thirukameeswarar temple and the Our Lady of Lourdes shrine.</p><p>Villianur railway station, in the Sulthanpet area, is on the line between Villupuram Junction and Puducherry, which gives tutors coming from the town a rail option alongside buses and two-wheelers. Families usually find home tutors within Villianur itself or in the nearby areas on the town side, and online classes widen the choice for specialist subjects. Homes include houses on the town streets and plots on the surrounding roads, so arrival is usually at the door or gate; share a landmark near the temple or the station. Temple festival days bring crowds to the centre, so plan class times around them. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Villianur",
+        "https://en.wikipedia.org/wiki/Villianur_railway_station",
+        "https://en.wikipedia.org/wiki/Pondicherry",
+        "https://www.magicbricks.com/Villianur-in-Pondicherry-Overview"
+      ]
+    }
+  },
+  "zone_facts": {
+    "Heritage Town": [
+      {
+        "fact": "Puducherry was separated by a canal into the French Quarter and the Indian (Tamil) Quarter; French street names and French-style avenues survive in the old districts.",
+        "source": "https://en.wikipedia.org/wiki/Pondicherry"
+      },
+      {
+        "fact": "About 1,200 buildings in Puducherry have been identified as heritage buildings by INTACH: about 300 in the French Quarter and about 900 in the Tamil Quarter.",
+        "source": "https://www.pdymun.in/images/pdf/Puducherry%20Smart%20City%20Proposal%202017.pdf"
+      },
+      {
+        "fact": "Puducherry railway station (PDY), on South Boulevard, is the terminus of the Villupuram-Puducherry branch line built in 1879; it is in the Tiruchirappalli division of Southern Railway.",
+        "source": "https://en.wikipedia.org/wiki/Puducherry_railway_station"
+      },
+      {
+        "fact": "Rock Beach, also called Promenade Beach, is the main seafront stretch of the city along the Bay of Bengal.",
+        "source": "https://en.wikipedia.org/wiki/Promenade_Beach"
+      },
+      {
+        "fact": "Muthialpet Assembly constituency covers wards 1-4 and 6-8 of Puducherry Municipality.",
+        "source": "https://en.wikipedia.org/wiki/Muthialpet_Assembly_constituency"
+      },
+      {
+        "fact": "Pondicherry Municipality wards 1-8 are Muthialpet West, Muthialpet East, Solai Nagar, Vaithikuppam, V.O.C. Nagar, Thiruvalluvar Nagar, Perumal Koil and Kurusukuppam.",
+        "source": "https://www.pdymun.in/constituencies.php"
+      }
+    ],
+    "Mudaliarpet & Ariyankuppam": [
+      {
+        "fact": "Pondicherry Municipality comprises the former communes of Pondicherry and Mudaliarpet, has 33 wards and a population of 2.44 lakh (2011 census).",
+        "source": "https://www.pdymun.in/puducherry-municipality-details.php"
+      },
+      {
+        "fact": "Under the Pondicherry Municipalities Act, 1973 (in force from 26 January 1974), the Pondicherry and Mudaliarpet communes were amalgamated into a single municipality.",
+        "source": "https://www.pdymun.in/historical-background.php"
+      },
+      {
+        "fact": "Pondicherry Municipality has local offices at Mudaliarpet and Nellithope; Nellithope and Anna Nagar are municipal wards.",
+        "source": "https://www.pdymun.in/puducherry-municipality-details.php"
+      },
+      {
+        "fact": "Ariyankuppam is a town, commune, sub-taluk and assembly constituency between Puducherry and Cuddalore on NH-45A; its streets are laid out in a grid.",
+        "source": "https://en.wikipedia.org/wiki/Ariyankuppam"
+      },
+      {
+        "fact": "Arikamedu, near Ariyankuppam, is an archaeological site excavated in the 1940s that shows ancient trade with Rome.",
+        "source": "https://en.wikipedia.org/wiki/Ariyankuppam"
+      },
+      {
+        "fact": "Manavely is a census town in Ariyankuppam commune and became a separate assembly constituency after delimitation.",
+        "source": "https://en.wikipedia.org/wiki/Manavely"
+      },
+      {
+        "fact": "The fifth Friday of the Aadi-month car festival at Veerampattinam's Sengazhuneer Amman temple is a public holiday declared by the Government of Puducherry.",
+        "source": "https://en.wikipedia.org/wiki/Ariyankuppam"
+      }
+    ],
+    "Lawspet & ECR": [
+      {
+        "fact": "Oulgaret (Uzhavarkarai) began as a commune panchayat under a French decree of 12 March 1880 and became a municipality on 14 January 1994.",
+        "source": "https://oulmun.in/about-oulgaret-municipality.php"
+      },
+      {
+        "fact": "Oulgaret Municipality is made up of eight revenue villages: Alankuppam, Kalapet, Pillaichavady, Oulgaret, Karuvadikuppam, Saram, Reddiarpalayam and Thattanchavady.",
+        "source": "https://oulmun.in/about-oulgaret-municipality.php"
+      },
+      {
+        "fact": "Oulgaret Municipality has 42 wards under the ward delimitation notified in the Gazette of Puducherry on 7 March 2019.",
+        "source": "https://oulmun.in/wards.php"
+      },
+      {
+        "fact": "Pondicherry Airport is at Lawspet; it was built in 1989, a new terminal opened in January 2013, and flights resumed under the UDAN scheme in August 2017.",
+        "source": "https://en.wikipedia.org/wiki/Pondicherry_Airport"
+      },
+      {
+        "fact": "Lawspet was sparsely populated until about 1990, when government residences and private buildings began to come up.",
+        "source": "https://en.wikipedia.org/wiki/Lawspet"
+      },
+      {
+        "fact": "Kalapet, annexed by the French in 1703, is the northernmost enclave of Pondicherry district and lies along the East Coast Road.",
+        "source": "https://en.wikipedia.org/wiki/Kalapet"
+      },
+      {
+        "fact": "The East Coast Road connects Puducherry with Chennai to the north and Cuddalore to the south.",
+        "source": "https://www.pdymun.in/images/pdf/Puducherry%20Smart%20City%20Proposal%202017.pdf"
+      },
+      {
+        "fact": "Kamaraj Nagar Assembly constituency segments are Brindavanam, Kamaraj Nagar, Krishna Nagar, Rainbow Nagar, Sithankudi, Venkata Nagar and Venkateshwara Nagar.",
+        "source": "https://en.wikipedia.org/wiki/Kamaraj_Nagar_Assembly_constituency"
+      }
+    ],
+    "Reddiarpalayam & Villianur": [
+      {
+        "fact": "Reddiarpalayam was a separate assembly constituency from the 1974 election until the 2006 election.",
+        "source": "https://en.wikipedia.org/wiki/Reddiarpalayam_Assembly_constituency"
+      },
+      {
+        "fact": "Thattanchavady is an assembly constituency of the Union Territory of Puducherry.",
+        "source": "https://en.wikipedia.org/wiki/Thattanchavady_Assembly_constituency"
+      },
+      {
+        "fact": "Villianur is a commune panchayat and the headquarters of Villianur taluk, part of the Puducherry urban agglomeration, on the banks of the Sankaraparani river.",
+        "source": "https://en.wikipedia.org/wiki/Villianur"
+      },
+      {
+        "fact": "Villianur railway station (VI), in Sulthanpet, is a passenger station on the Villupuram Junction-Puducherry broad-gauge section.",
+        "source": "https://en.wikipedia.org/wiki/Villianur_railway_station"
+      },
+      {
+        "fact": "NH-45A connects Puducherry with Villupuram and NH-66 connects it with Tindivanam.",
+        "source": "https://www.pdymun.in/images/pdf/Puducherry%20Smart%20City%20Proposal%202017.pdf"
+      },
+      {
+        "fact": "The Puducherry government has proposed upgrading the Villianur and Ariyankuppam commune panchayats into municipalities.",
+        "source": "https://en.wikipedia.org/wiki/Pondicherry"
+      }
+    ]
+  },
+  "board_facts": [
+    {
+      "fact": "Puducherry has no school board of its own. In April-May 2024 the Directorate of School Education ran orientation programmes for heads of institutions, inspecting officers and teachers titled 'Ensuring a smooth swap from State Syllabus to CBSE Syllabus'.",
+      "source": "https://schooledn.py.gov.in/CBSE/cbsetrg.html"
+    },
+    {
+      "fact": "The Directorate's result-analysis pages list Class 10 results as 'SSLC' up to 2024 and as 'CBSE 10' from 2025, and Class 12 results as '+2' up to 2024 and as 'CBSE 12' from 2025, with separate 'State Board' analyses also published for 2026.",
+      "source": "https://schooledn.py.gov.in/Exams/sslcResult.html"
+    },
+    {
+      "fact": "From 2026 the Directorate of School Education also publishes separate State Board (SSLC and +2) result analyses for private schools in the Puducherry and Karaikal regions, alongside the CBSE ones.",
+      "source": "https://schooledn.py.gov.in/Exams/Results%202026/12th%20STATE%20BOARD%20RESULT-2026%20Eng%20%26%20Tamil.pdf"
+    }
+  ]
+}

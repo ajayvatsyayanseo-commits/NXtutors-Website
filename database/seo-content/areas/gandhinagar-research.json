@@ -1,0 +1,302 @@
+{
+ "areas": {
+  "sector-21": {
+   "name": "Sector 21",
+   "zone": "Sectors 16–30 & Pethapur",
+   "type": "mixed",
+   "about": "<p>Sector 21 is one of the thirty numbered sectors of Gandhinagar's planned grid, and it combines homes with a well-known shopping area of clothing showrooms, restaurants and a cinema. Housing is mostly independent houses on planned plots, so many tuition homes sit on quieter internal roads a short walk from the shops. Neighbouring sectors include 16, 22 and 28.</p><p>Akshardham station on the Yellow Line, opened in January 2026, was planned to serve the Sector 21 market along with Sectors 10B and 18, and Gandhinagar Capital railway station is in Sector 14. As everywhere in the city, an address is read as sector, block letter and plot number, which makes a first visit simple for a tutor who already knows the grid. Independent houses allow doorstep arrival and easier parking than the market frontage, and because the shopping area gets busy in the evenings, a fixed weekday slot agreed in advance keeps classes regular. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+   "sources": [
+    "https://www.99acres.com/sector-21-gandhinagar-overview-piffid",
+    "https://deshgujarat.com/2026/01/09/5-new-stations-to-open-on-ahmedabad-gandhinagar-metro-route-key-destinations-within-walking-distance/",
+    "https://en.wikipedia.org/wiki/Gandhinagar_Capital_railway_station"
+   ]
+  },
+  "sectors-16-22-23": {
+   "name": "Sectors 16, 22 and 23",
+   "zone": "Sectors 16–30 & Pethapur",
+   "type": "mixed",
+   "about": "<p>Sectors 16, 22 and 23 form a block of central Gandhinagar that the Sector-16 metro station was built to serve. Sector 16 has many state government offices, while Sectors 22 and 23 are more residential, with flats and independent houses along the planned sector roads. As in every sector, each was laid out with its own shopping centre and community facilities, so daily errands rarely take families far from home.</p><p>Sector-16 station opened on the Yellow Line in January 2026, on the stretch that continues to Sector-24 and Mahatma Mandir, and Gandhinagar Capital railway station in Sector 14 is the main rail stop. The Sector 21 shopping area lies next to Sector 22. Government office hours bring weekday traffic at the start and end of the working day, so late-afternoon or weekend tuition slots tend to suit. Flats may ask visitors to sign in at the entrance, while independent houses allow doorstep arrival; giving the block letter and plot or house number avoids confusion on the first visit. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+   "sources": [
+    "https://deshgujarat.com/2026/01/09/5-new-stations-to-open-on-ahmedabad-gandhinagar-metro-route-key-destinations-within-walking-distance/",
+    "https://deshgujarat.com/2026/01/11/pm-modi-inaugurates-sachivalaya-mahatma-mandir-route-of-ahmedabad-gandhinagar-metro/",
+    "https://www.99acres.com/property-in-sector-22-gandhinagar-ffid",
+    "https://en.wikipedia.org/wiki/Gandhinagar_Capital_railway_station"
+   ]
+  },
+  "sectors-25-26": {
+   "name": "Sectors 25 and 26",
+   "zone": "Sectors 16–30 & Pethapur",
+   "type": "mixed",
+   "about": "<p>Sectors 25 and 26 sit side by side in Gandhinagar's grid and are grouped in one municipal ward together with the area of Randheja village. Sector 26 contains the state industrial estate, so workshops and small units share the area with homes, while Sector 25 is mainly residential, with shops, banks and restaurants within easy reach. Neighbouring sectors include 14, 23, 24 and 27.</p><p>Gandhinagar Capital railway station is in neighbouring Sector 14, and Sector-24 station on the Yellow Line, opened in January 2026, lies in the adjoining sector. As planned across the capital, government and private housing stand side by side, and most homes are reached directly from the sector roads, so a tutor can usually park outside and come to the door. Weekday working hours make the roads around the industrial estate busier, so an early-evening or weekend slot is often easier. For subjects that need a specialist teacher, online classes can sit alongside a home tutor from a nearby sector. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+   "sources": [
+    "https://www.99acres.com/sector-25-gandhinagar-overview-piffid",
+    "https://www.99acres.com/sector-26-gandhinagar-overview-piffid",
+    "https://deshgujarat.com/2021/09/30/more-on-gandhinagar-municipal-corporation-election-2021/",
+    "https://en.wikipedia.org/wiki/Yellow_Line_(Ahmedabad_Metro)"
+   ]
+  },
+  "sector-30": {
+   "name": "Sector 30",
+   "zone": "Sectors 16–30 & Pethapur",
+   "type": "residential",
+   "about": "<p>Sector 30 is known as the Gandhinagar sector of state government quarters, where many government staff and their families live. Alongside the quarters there are independent houses and apartment buildings put up by private builders, and a few shopping complexes cover daily needs. NH-147 cuts through the sector, and Gandhinagar–Vijapur Road, GEB Colony Road and CH Road link it with the rest of the city. Neighbouring areas include Sector 28, Sector 22 and Pethapur.</p><p>Gandhinagar Capital railway station is in Sector 14, and the Yellow Line reaches the central sectors at stations such as Sector-16 and Mahatma Mandir, so most tutors here travel by two-wheeler or car. Government housing is laid out in numbered blocks, so sharing the block and quarter number helps a tutor find the right door, and where a colony has a gate, the family's name may be asked for. Families in apartment buildings should mention the tower and floor. Traffic on NH-147 builds at office hours, so an after-school slot agreed in advance keeps classes on track. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+   "sources": [
+    "https://www.99acres.com/sector-30-gandhinagar-overview-piffid",
+    "https://en.wikipedia.org/wiki/Gandhinagar_Capital_railway_station",
+    "https://deshgujarat.com/2026/01/09/5-new-stations-to-open-on-ahmedabad-gandhinagar-metro-route-key-destinations-within-walking-distance/"
+   ]
+  },
+  "pethapur": {
+   "name": "Pethapur",
+   "zone": "Sectors 16–30 & Pethapur",
+   "type": "residential",
+   "about": "<p>Pethapur is an old town on the edge of Gandhinagar that is older than the capital itself. It was the seat of a small princely state, and land that once belonged to that state became the site of the new city after Gujarat was formed in 1960. The town became known for block-making, the craft of carving printing blocks. Pethapur was a separate municipality until June 2020, when it was merged into Gandhinagar Municipal Corporation, and a town planning scheme now guides its newer growth.</p><p>Today the older town sits beside newer bungalow colonies and apartment projects, and neighbouring areas include Sectors 28, 29 and 30 and Randheja. There is no metro station in Pethapur, and Gandhinagar Capital railway station in Sector 14 is the main rail stop, so tutors usually come by two-wheeler or car from the neighbouring sectors. In the old town lanes a clear landmark helps on the first visit, while gated colonies may ask visitors to sign in at the gate. Parents looking for a specialist subject teacher can combine a nearby home tutor with online classes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pethapur_State",
+    "https://deshgujarat.com/2020/06/18/pethapur-municipality-and-18-villages-to-be-merged-to-gandhinagar-municipal-corporation-limits/",
+    "https://www.99acres.com/pethapur-gandhinagar-overview-piffid",
+    "https://guda.gujarat.gov.in/tpscheme.htm"
+   ]
+  },
+  "sectors-2-3": {
+   "name": "Sectors 2 and 3",
+   "zone": "Sectors 1–8 & Infocity",
+   "type": "residential",
+   "about": "<p>Sectors 2 and 3 are established residential sectors of Gandhinagar that share a municipal ward with the Infocity area and part of Kudasan. Like other sectors they are split into lettered blocks, such as Sector 2C, and housing is largely independent and duplex houses on planned plots, with government and private homes side by side. Neighbouring areas include Sector 1, Infocity and Sargasan, which lies next to Sector 3.</p><p>The Yellow Line runs close to these sectors, with Sector-1 and Infocity stations opened in September 2024, and city buses stop nearby, while Gandhinagar Capital railway station in Sector 14 handles rail travel. Independent houses mean doorstep arrival and easy parking for a tutor, and because every address follows the sector, block and plot pattern, a tutor who knows the grid can find a home quickly. Office traffic towards Infocity slows the main roads at the start and end of the working day, so a tuition slot outside those hours works well. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+   "sources": [
+    "https://www.99acres.com/sector-2-gandhinagar-overview-piffid",
+    "https://deshgujarat.com/2021/09/30/more-on-gandhinagar-municipal-corporation-election-2021/",
+    "https://www.squareyards.com/rent/independent-houses-for-rent-in-sector-3-gandhinagar",
+    "https://en.wikipedia.org/wiki/Yellow_Line_(Ahmedabad_Metro)"
+   ]
+  },
+  "sectors-6-7-8": {
+   "name": "Sectors 6, 7 and 8",
+   "zone": "Sectors 1–8 & Infocity",
+   "type": "residential",
+   "about": "<p>Sectors 6, 7 and 8 are three neighbouring residential sectors of Gandhinagar's original grid, grouped in one municipal ward together with voters from Randesan, Raysan, Kudasan and Koba. As planned for every sector of the capital, each has its own shopping centre and community facilities and a mix of government and private housing, and independent houses on numbered plots are a common sight.</p><p>The city's letter roads (K, KH, G, GH, CH, CHH and J) cross the number roads (1 to 7) to form the grid around these sectors, and junctions take their names from them, such as CH-1 or JA-1, so a junction name plus the block and plot number is usually enough to guide a tutor. Gandhinagar Capital railway station is in Sector 14, and the Yellow Line connects the capital's stations with Ahmedabad. Independent houses allow doorstep arrival and parking at the gate, and tutors living in the same ward, in places such as Randesan or Kudasan, are not far away. Home lessons can be combined with online classes for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+   "sources": [
+    "https://deshgujarat.com/2021/09/30/more-on-gandhinagar-municipal-corporation-election-2021/",
+    "https://gandhinagarmunicipal.com/home/city-at-a-glance/",
+    "https://www.squareyards.com/rent/independent-houses-for-rent-in-sector-7-gandhinagar",
+    "https://en.wikipedia.org/wiki/Yellow_Line_(Ahmedabad_Metro)"
+   ]
+  },
+  "infocity": {
+   "name": "Infocity",
+   "zone": "Sectors 1–8 & Infocity",
+   "type": "mixed",
+   "about": "<p>Infocity is Gandhinagar's information technology hub, an office district where several large IT companies have their bases, set beside the city's residential sectors. The homes around it are mainly in Sectors 2 and 3 and in Sargasan, Kudasan and Randesan, areas that have drawn many IT staff to live close to work, and the Infocity area shares a municipal ward with Sectors 2 and 3 and part of Kudasan.</p><p>Infocity station on the Yellow Line opened in September 2024, between Sector-1 and Dholakuva Circle stations, so a tutor coming from Ahmedabad or from Gandhinagar's sectors can travel by metro and walk or take an auto for the last leg. Office traffic is heaviest at the start and end of the working day, so tuition slots in the late afternoon or at weekends tend to run more smoothly. Families in apartment buildings nearby should register the tutor's name at the gate, while houses in the sectors allow doorstep arrival. Online classes are a practical option for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gandhinagar_district",
+    "https://en.wikipedia.org/wiki/Yellow_Line_(Ahmedabad_Metro)",
+    "https://deshgujarat.com/2021/09/30/more-on-gandhinagar-municipal-corporation-election-2021/",
+    "https://www.99acres.com/randesan-gandhinagar-overview-piffid"
+   ]
+  },
+  "vavol": {
+   "name": "Vavol",
+   "zone": "Sectors 1–8 & Infocity",
+   "type": "residential",
+   "about": "<p>Vavol is a former village beside Gandhinagar's sectors that was merged into the municipal corporation in June 2020 and now shares a municipal ward with Kolvada. It has grown quickly as an apartment area, with dozens of residential projects completed and many more under construction, alongside bungalow schemes and the older village core. Town planning schemes cover Vavol together with Vasna Hadmatiya, Sargasan and Uvarsad, and Sectors 4 and 5, including Sector 5C, are close neighbours.</p><p>K Road and the Uvarsad–Vavol Road pass through the locality, and NH-147 is close, which links Vavol with Infocity and Sargasan. There is no metro station in Vavol itself, so tutors usually come by two-wheeler or car. Most new homes are in gated apartment societies, so parents should share the tower, flat number and a phone number for the gate so the tutor is not held up at the entrance. Roads towards the highway are busier at office hours, so an after-school slot fixed in advance is useful. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+   "sources": [
+    "https://www.99acres.com/vavol-gandhinagar-overview-piffid",
+    "https://deshgujarat.com/2020/06/18/pethapur-municipality-and-18-villages-to-be-merged-to-gandhinagar-municipal-corporation-limits/",
+    "https://deshgujarat.com/2021/09/30/more-on-gandhinagar-municipal-corporation-election-2021/",
+    "https://guda.gujarat.gov.in/tpscheme.htm"
+   ]
+  },
+  "kudasan": {
+   "name": "Kudasan",
+   "zone": "Kudasan & Sargasan",
+   "type": "residential",
+   "about": "<p>Kudasan is a former village beside Gandhinagar's sectors that was merged into the municipal corporation in June 2020 and has since become a busy housing area. Several town planning schemes cover it together with Koba, Sargasan, Randesan, Raysan, Por and Dholakuva, and new roads and plots have followed. Homes are a mix of independent houses, plotted developments and apartment buildings, with flats making up much of the newer construction.</p><p>Neighbouring areas include Randesan, Urjanagar and Sargasan, and Kudasan sits close to both SG Highway and the Koba road that links Ahmedabad with the capital. Sector-1 station on the Yellow Line is the usual metro stop for the area, so tutors coming by metro finish the trip by auto or two-wheeler. For apartment homes, share the tower and flat number with the guard in advance; plotted houses allow doorstep arrival. Traffic on the highway approaches is heavier during office hours, so a fixed slot outside the rush helps. Specialist subjects can also be covered online. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+   "sources": [
+    "https://www.99acres.com/kudasan-gandhinagar-overview-piffid",
+    "https://deshgujarat.com/2020/06/18/pethapur-municipality-and-18-villages-to-be-merged-to-gandhinagar-municipal-corporation-limits/",
+    "https://guda.gujarat.gov.in/tpscheme.htm",
+    "https://en.wikipedia.org/wiki/Yellow_Line_(Ahmedabad_Metro)"
+   ]
+  },
+  "sargasan": {
+   "name": "Sargasan",
+   "zone": "Kudasan & Sargasan",
+   "type": "residential",
+   "about": "<p>Sargasan lies next to Infocity and Sector 3 and close to SG Highway, and it was one of the villages merged into Gandhinagar Municipal Corporation in June 2020. Town planning schemes shared with Kudasan, Por, Dholakuva, Vavol and Vasna Hadmatiya have shaped its growth. Housing is mainly apartment buildings, with two- and three-bedroom flats making up much of the resale market, alongside independent homes and residential plots.</p><p>Infocity station on the Yellow Line is the metro stop usually used from Sargasan; the line runs one way to Mahatma Mandir in the heart of the capital and the other way to Motera Stadium in Ahmedabad, and Gandhinagar Capital railway station serves rail travel. Most tutor visits are to gated apartment societies, so the family should give the guard the tutor's name and share the tower and flat number. Highway traffic is heavier during office hours, so an after-school slot avoids the worst of it, and online classes can cover subjects that need a specialist. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+   "sources": [
+    "https://www.99acres.com/sargasan-gandhinagar-overview-piffid",
+    "https://deshgujarat.com/2020/06/18/pethapur-municipality-and-18-villages-to-be-merged-to-gandhinagar-municipal-corporation-limits/",
+    "https://guda.gujarat.gov.in/tpscheme.htm",
+    "https://en.wikipedia.org/wiki/Yellow_Line_(Ahmedabad_Metro)"
+   ]
+  },
+  "randesan": {
+   "name": "Randesan",
+   "zone": "Kudasan & Sargasan",
+   "type": "residential",
+   "about": "<p>Randesan is a former village merged into Gandhinagar Municipal Corporation in June 2020 that now has its own station on the Yellow Line, opened in September 2024. The Ahmedabad–Gandhinagar Road (SH-71) runs alongside the locality and the Gandhinagar bypass road also connects it, while Infocity is close by, which has drawn many IT staff to live here. Housing is mainly apartment buildings, with three-bedroom flats the most common, plus some bungalow colonies.</p><p>Neighbouring areas include Kudasan, Urjanagar and Raysan, and town planning schemes link Randesan with Kudasan, Raysan, Koba, Dholakuva and Indroda. Randesan station sits between Dholakuva Circle and Raysan stations, so a tutor can travel by metro from Ahmedabad or from the sectors and walk or take an auto for the last stretch. In gated societies, parents should give the guard the tutor's name in advance; at bungalows the tutor can come straight to the door. SH-71 is busiest at office hours, so evening classes work better when fixed for a time outside the rush. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+   "sources": [
+    "https://www.99acres.com/randesan-gandhinagar-overview-piffid",
+    "https://en.wikipedia.org/wiki/Yellow_Line_(Ahmedabad_Metro)",
+    "https://deshgujarat.com/2020/06/18/pethapur-municipality-and-18-villages-to-be-merged-to-gandhinagar-municipal-corporation-limits/",
+    "https://guda.gujarat.gov.in/tpscheme.htm"
+   ]
+  },
+  "raysan": {
+   "name": "Raysan",
+   "zone": "Koba, Raysan & GIFT City",
+   "type": "residential",
+   "about": "<p>Raysan was a peripheral village until June 2020, when it was brought within Gandhinagar city limits, and it has since filled with multi-storey apartment buildings, villas, row houses and residential plots. It lies near Koba, Randesan and GIFT City, and town planning schemes tie it to Koba, Kudasan and Randesan. Adalaj also counts Raysan among its neighbours.</p><p>Raysan has its own station on the Yellow Line, opened in September 2024, and the next stop, GNLU, is where the branch to GIFT City begins, which suits tutors who live along either line. SH-71, the Ahmedabad–Gandhinagar Road, is close, and the road towards GIFT City passes nearby. Most homes are in gated societies, so share the tower and flat number with the gate in advance, while villas and row houses usually allow doorstep arrival. Peak traffic towards GIFT City and Ahmedabad shapes timings, so a slot after the evening rush or at the weekend tends to work smoothly. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+   "sources": [
+    "https://www.99acres.com/raysan-gandhinagar-overview-piffid",
+    "https://en.wikipedia.org/wiki/Yellow_Line_(Ahmedabad_Metro)",
+    "https://deshgujarat.com/2020/06/18/pethapur-municipality-and-18-villages-to-be-merged-to-gandhinagar-municipal-corporation-limits/",
+    "https://guda.gujarat.gov.in/tpscheme.htm"
+   ]
+  },
+  "koba": {
+   "name": "Koba",
+   "zone": "Koba, Raysan & GIFT City",
+   "type": "residential",
+   "about": "<p>Koba is a former village between Ahmedabad and Gandhinagar that was merged into Gandhinagar Municipal Corporation in June 2020. Three Yellow Line stations carry its name: Koba Circle, opened in April 2025, and Juna Koba and Koba Gaam, opened in September 2025. SH-71, the Ahmedabad–Gandhinagar Road, passes close by, and GIFT City and Ahmedabad's airport are both within easy reach.</p><p>Housing ranges from two- to five-bedroom apartments to independent homes, and several town planning schemes cover Koba together with Kudasan and Raysan, which are also its neighbours. With metro stations on hand, a tutor can travel from either city and walk or take an auto from the station. Gated societies usually ask for the visitor's name, so tell the guard in advance; at independent homes the tutor comes straight to the door. Office traffic on SH-71 peaks early and late in the working day, so fix the class time around it. Online classes can add a specialist subject where needed. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+   "sources": [
+    "https://www.99acres.com/koba-gandhinagar-overview-piffid",
+    "https://en.wikipedia.org/wiki/Yellow_Line_(Ahmedabad_Metro)",
+    "https://deshgujarat.com/2020/06/18/pethapur-municipality-and-18-villages-to-be-merged-to-gandhinagar-municipal-corporation-limits/",
+    "https://guda.gujarat.gov.in/tpscheme.htm"
+   ]
+  },
+  "gift-city": {
+   "name": "GIFT City",
+   "zone": "Koba, Raysan & GIFT City",
+   "type": "mixed",
+   "about": "<p>GIFT City is a planned business and finance district on the bank of the Sabarmati in Gandhinagar district, designed as an integrated city with offices, homes and community facilities; a little over a fifth of its planned built-up space is residential. Homes here are flats in high-rise towers, many of them twenty-five storeys or taller, and new residential projects are still being added as the district fills up.</p><p>The Violet Line branch of the metro, opened in September 2024, runs from GNLU through PDEU to GIFT City station and connects with the Yellow Line to Gandhinagar's sectors and Ahmedabad; an extension beyond GIFT City towards Shahpur has been approved but is not yet open. Nearby residential areas include Raysan and Koba. The towers have controlled entry, so the family should register the tutor with building security and share the tower and flat number in advance. Weekday office traffic is heavy at the start and end of the working day, so evening slots after the rush, weekends or online classes suit many families. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+   "sources": [
+    "https://en.wikipedia.org/wiki/GIFT_City",
+    "https://en.wikipedia.org/wiki/Violet_Line_(Ahmedabad_Metro)",
+    "https://www.99acres.com/property-in-gift-city-gandhinagar-ffid"
+   ]
+  },
+  "adalaj": {
+   "name": "Adalaj",
+   "zone": "Koba, Raysan & GIFT City",
+   "type": "residential",
+   "about": "<p>Adalaj is a census town in Gandhinagar district, raised from village status in 2001, at the meeting point of the Sarkhej–Gandhinagar Highway (part of NH 147) and State Highway 41, which cross at a cloverleaf interchange in the middle of the town. It is famous for its carved stepwell, five storeys deep and built in 1499, and the town has urbanised quickly in recent years, with bungalow schemes along the highway and apartment projects towards Vaishnodevi Circle.</p><p>Neighbouring places include Raysan, Vadsar and Bhat on the Gandhinagar side and Gota and Chandkheda on the Ahmedabad side, and town planning schemes cover Adalaj alone and together with Por. The metro does not reach Adalaj itself; Tapovan Circle station on the Yellow Line is the usual stop, followed by an auto or a pick-up. Bungalows let the tutor come straight to the door, while gated projects need the visitor's name at the gate. Highway traffic is heavy at office hours, so tuition is easier in the late afternoon or at weekends. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Adalaj",
+    "https://www.99acres.com/property-in-adalaj-ahmedabad-north-ffid",
+    "https://guda.gujarat.gov.in/tpscheme.htm"
+   ]
+  }
+ },
+ "zone_facts": {
+  "Sectors 16–30 & Pethapur": [
+   {
+    "fact": "Gandhinagar Capital railway station (GNC) is in Sector 14; the redeveloped station was inaugurated on 16 July 2021.",
+    "source": "https://en.wikipedia.org/wiki/Gandhinagar_Capital_railway_station"
+   },
+   {
+    "fact": "The Sachivalaya–Mahatma Mandir section of the Yellow Line opened on 11 January 2026 with five stations: Akshardham, Juna Sachivalaya (Old Secretariat), Sector-16, Sector-24 and Mahatma Mandir.",
+    "source": "https://deshgujarat.com/2026/01/11/pm-modi-inaugurates-sachivalaya-mahatma-mandir-route-of-ahmedabad-gandhinagar-metro/"
+   },
+   {
+    "fact": "Sector-16 station serves Sectors 16, 22 and 23; Akshardham station serves Sectors 10B and 18 and the Sector 21 market.",
+    "source": "https://deshgujarat.com/2026/01/09/5-new-stations-to-open-on-ahmedabad-gandhinagar-metro-route-key-destinations-within-walking-distance/"
+   },
+   {
+    "fact": "Mahatma Mandir, the state convention and exhibition centre, is in Sector 13C; the Yellow Line ends at Mahatma Mandir station.",
+    "source": "https://en.wikipedia.org/wiki/Mahatma_Mandir"
+   },
+   {
+    "fact": "Pethapur was a small princely state; after Gujarat was formed in 1960, land that had been part of it became the site of Gandhinagar. The town was known for block-making.",
+    "source": "https://en.wikipedia.org/wiki/Pethapur_State"
+   },
+   {
+    "fact": "Pethapur municipality was merged into Gandhinagar Municipal Corporation on 18 June 2020.",
+    "source": "https://deshgujarat.com/2020/06/18/pethapur-municipality-and-18-villages-to-be-merged-to-gandhinagar-municipal-corporation-limits/"
+   },
+   {
+    "fact": "In the 2021 ward map, Ward 1 covers Sectors 25 and 26 and the area of Randheja village.",
+    "source": "https://deshgujarat.com/2021/09/30/more-on-gandhinagar-municipal-corporation-election-2021/"
+   }
+  ],
+  "Sectors 1–8 & Infocity": [
+   {
+    "fact": "Gandhinagar was planned by H. K. Mewada and Prakash M. Apte and developed in the 1960s; it was established on 16 March 1960.",
+    "source": "https://en.wikipedia.org/wiki/Gandhinagar"
+   },
+   {
+    "fact": "The city is divided into thirty sectors set around the central government complex; letter roads (K, KH, G, GH, CH, CHH, J) cross number roads (1 to 7), and junctions are named after them, such as CH-1 or JA-1.",
+    "source": "https://gandhinagarmunicipal.com/home/city-at-a-glance/"
+   },
+   {
+    "fact": "Each sector was planned with its own shopping and community centre, primary school, health centre and housing.",
+    "source": "https://gandhinagarmunicipal.com/home/city-at-a-glance/"
+   },
+   {
+    "fact": "The Yellow Line from Motera Stadium to Sector-1 opened on 16 September 2024, including Sector-1, Infocity, Dholakuva Circle, Randesan, Raysan and GNLU stations.",
+    "source": "https://en.wikipedia.org/wiki/Yellow_Line_(Ahmedabad_Metro)"
+   },
+   {
+    "fact": "Sector-10A and Sachivalaya stations opened on 27 April 2025.",
+    "source": "https://en.wikipedia.org/wiki/Yellow_Line_(Ahmedabad_Metro)"
+   },
+   {
+    "fact": "In the 2021 ward map, Ward 9 covers Sectors 2 and 3 with Infocity and part of Kudasan, and Ward 10 covers Sectors 6, 7 and 8 with parts of Randesan, Raysan, Kudasan and Koba.",
+    "source": "https://deshgujarat.com/2021/09/30/more-on-gandhinagar-municipal-corporation-election-2021/"
+   },
+   {
+    "fact": "Infocity houses IT companies and is Gandhinagar's main IT office area.",
+    "source": "https://en.wikipedia.org/wiki/Gandhinagar_district"
+   }
+  ],
+  "Kudasan & Sargasan": [
+   {
+    "fact": "Kudasan, Raisan (Raysan), Randesan, Sargasan and Koba were among the villages merged into Gandhinagar Municipal Corporation on 18 June 2020, along with parts of Dholakuva, Uvarsad and Indroda.",
+    "source": "https://deshgujarat.com/2020/06/18/pethapur-municipality-and-18-villages-to-be-merged-to-gandhinagar-municipal-corporation-limits/"
+   },
+   {
+    "fact": "Gandhinagar Urban Development Authority town planning schemes include No. 6 Kudasan–Sargasan–Dholakuva, No. 7 Sargasan–Kudasan–Por and No. 22 Kudasan–Randesan.",
+    "source": "https://guda.gujarat.gov.in/tpscheme.htm"
+   },
+   {
+    "fact": "Town planning scheme No. 18 covers Kudasan, Randesan and Raisan, and No. 5 covers Dholakuva, Kudasan, Randesan and Indroda.",
+    "source": "https://guda.gujarat.gov.in/tpscheme.htm"
+   },
+   {
+    "fact": "Randesan and Dholakuva Circle stations on the Yellow Line opened on 16 September 2024.",
+    "source": "https://en.wikipedia.org/wiki/Yellow_Line_(Ahmedabad_Metro)"
+   },
+   {
+    "fact": "Infocity station, the Yellow Line stop beside Sargasan, opened on 16 September 2024.",
+    "source": "https://en.wikipedia.org/wiki/Yellow_Line_(Ahmedabad_Metro)"
+   }
+  ],
+  "Koba, Raysan & GIFT City": [
+   {
+    "fact": "The Violet Line branch from GNLU through PDEU to GIFT City, with three stations, was inaugurated on 16 September 2024 and opened to the public on 17 September 2024.",
+    "source": "https://en.wikipedia.org/wiki/Violet_Line_(Ahmedabad_Metro)"
+   },
+   {
+    "fact": "Koba Circle station opened on 27 April 2025, and Juna Koba and Koba Gaam stations opened on 28 September 2025.",
+    "source": "https://en.wikipedia.org/wiki/Yellow_Line_(Ahmedabad_Metro)"
+   },
+   {
+    "fact": "An extension of the Violet Line from GIFT City towards Shahpur, with three stations, has been approved and is not yet open.",
+    "source": "https://en.wikipedia.org/wiki/Violet_Line_(Ahmedabad_Metro)"
+   },
+   {
+    "fact": "GIFT City lies on the bank of the Sabarmati in Gandhinagar district; its planned built-up space is about 67% commercial, 22% residential and 11% social facilities.",
+    "source": "https://en.wikipedia.org/wiki/GIFT_City"
+   },
+   {
+    "fact": "Adalaj became a census town in 2001; the Sarkhej–Gandhinagar Highway (part of NH 147) and State Highway 41 meet there at a cloverleaf interchange.",
+    "source": "https://en.wikipedia.org/wiki/Adalaj"
+   },
+   {
+    "fact": "Town planning schemes No. 1 (Koba–Raysan) and No. 19 (Raisan–Randesan–Koba) cover the Koba and Raysan area.",
+    "source": "https://guda.gujarat.gov.in/tpscheme.htm"
+   }
+  ]
+ }
+}

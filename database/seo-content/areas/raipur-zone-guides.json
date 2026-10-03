@@ -1,0 +1,50 @@
+{
+  "Central Raipur": {
+    "intro": [
+      "Samta Colony, Gudhiyari, Devendra Nagar, Pandri and Fafadih form the old middle of Raipur, grouped around Raipur Junction, which opened in 1888. Samta Colony is a settled neighbourhood with its own banks and temples, Gudhiyari is mostly flats beside busy shopping streets, and Devendra Nagar is laid out in numbered sectors of houses and builder floors. Pandri's commercial streets once held the city bus stand, and Fafadih Chowk is where the expressway towards Nava Raipur begins.",
+      "Because these localities sit so close to the station and to one another, a family here can usually draw on tutors from almost every part of the city, and a tutor arriving by train has only a short ride left. Most homes are houses or builder floors, so the tutor comes straight to the door. The difficulty is the evening rush on the station roads and in the Pandri markets, which can make a late tutor out of a reliable one."
+    ],
+    "tips": [
+      "Give the sector and house number in Devendra Nagar, or a lane landmark in Gudhiyari and Samta Colony, rather than just the locality name.",
+      "Fix the lesson before the evening build-up on the station roads and around Pandri's markets, or choose a tutor who lives in your own colony.",
+      "If the tutor travels by train to Raipur Junction, agree a start time that leaves room for the auto ride from the station."
+    ],
+    "guide": "raipur-home-tuition-guide"
+  },
+  "East Raipur": {
+    "intro": [
+      "Shankar Nagar and Avanti Vihar, off VIP Road, are established residential areas of apartments, builder floors, villas and houses, with autos and cabs easy to find. Telibandha surrounds the lake built in 1835, now a promenade on Gaurav Path known as Marine Drive. North-east along Vidhan Sabha Road, Mowa and Daldal Seoni mix apartments, villas and houses, and Saddu is still filling in, largely plots on which families are building their own homes.",
+      "This side of Raipur moves only by road, since the narrow-gauge line through Telibandha was closed and turned into the expressway. Tutors come by two-wheeler, car or auto, and the expressway from Fafadih helps those coming from the centre. Apartment complexes keep visitor registers, while Saddu's spread-out plots need a map pin. Avanti Vihar near Shankar Nagar and Avani Vihar near Mowa are two different places, so a full address avoids a wasted first trip."
+    ],
+    "tips": [
+      "Write the address in full and say whether you mean Avanti Vihar off VIP Road or Avani Vihar near Mowa, so the tutor does not end up in the wrong colony.",
+      "Homes near Telibandha Lake should allow extra time on weekend and evening lessons, when the lakefront draws crowds.",
+      "In Saddu and Daldal Seoni, look first for tutors living along Vidhan Sabha Road, and keep lesson times clear of office-hour traffic on it."
+    ],
+    "guide": "raipur-home-tuition-guide"
+  },
+  "South Raipur": {
+    "intro": [
+      "New Rajendra Nagar, Pachpedi Naka, Amlidih, Mahaveer Nagar, Bhatagaon and Kamal Vihar spread along the Ring Road and Dhamtari Road. New Rajendra Nagar sits where NH-30 meets NH-53, and Pachpedi Naka is the junction of Dhamtari Road and the Ring Road. Amlidih and Mahaveer Nagar are mostly houses, villas and plots, Bhatagaon holds the inter-state bus terminal that opened in November 2021, and Kamal Vihar, also known as Kaushalya Mata Vihar, is a planned township in numbered sectors.",
+      "Planned layouts make homes in this zone simple to find once a tutor has the sector, block and plot number, and the bus terminal is a landmark everyone recognises. Many families live in independent houses, so arrival is usually at the door, though apartment blocks ask for a visitor's name. The pressure points are the big junctions: Pachpedi Naka carries heavy and commercial traffic, and roads near the terminal get busy as long-distance buses arrive and depart."
+    ],
+    "tips": [
+      "For Kamal Vihar, send the sector, block and plot number and mention both names, Kamal Vihar and Kaushalya Mata Vihar, since tutors may know either.",
+      "Pick a tutor who lives on your side of Pachpedi Naka, so the weekly trip does not depend on crossing the junction at a busy hour.",
+      "In Bhatagaon, use the bus terminal as the first landmark and avoid lesson times that clash with long-distance departures and arrivals."
+    ],
+    "guide": "raipur-home-tuition-guide"
+  },
+  "West Raipur": {
+    "intro": [
+      "Kota, Tatibandh, Sarona and Kabir Nagar make up the Bhilai side of Raipur. Kota runs along the Great Eastern Road, mostly apartments with some houses and plots, and the Hirapur vegetable market close by. Tatibandh is centred on the chowk where NH-53 meets Ring Road No. 2 and where the expressway to Bilaspur begins. Sarona has wide roads, parks and its own station, and Kabir Nagar is a large planned colony of houses and flat blocks near the highway.",
+      "West Raipur is where local trains genuinely help: Sarona and Saraswati Nagar stations serve this side as well as Raipur Junction, so a tutor can travel part of the way by rail. The national highway carries heavy vehicles through the day, which makes crossing it the slowest part of many trips. Kabir Nagar's block and house numbers make homes easy to find, while Tatibandh's apartment complexes register every visitor at the gate."
+    ],
+    "tips": [
+      "Choose a tutor who lives on your side of the highway or the Great Eastern Road, so lessons do not depend on a crossing at peak hours.",
+      "In Tatibandh's apartment complexes, ask the gate whether a tutor who comes every week can be given a standing visitor pass.",
+      "If a tutor comes by local train, Sarona station is a handy meeting point; agree the time with a little margin for the auto ride."
+    ],
+    "guide": "raipur-home-tuition-guide"
+  }
+}
