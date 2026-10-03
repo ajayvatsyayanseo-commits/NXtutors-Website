@@ -40,6 +40,16 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+
+        // Parents (App\Models\NxtParent), Phase 1 of the parent dashboard.
+        // A guard of its own so a parent session never mixes with a student's
+        // `register` session or a Super Admin's `web` one: each guard keeps its
+        // own key in the session, so being logged in on one says nothing about
+        // the others. Only /parent/* uses it (App\Http\Middleware\AuthenticateParent).
+        'parent' => [
+            'driver' => 'session',
+            'provider' => 'parents',
+        ],
     ],
 
     /*
@@ -63,6 +73,11 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => env('AUTH_MODEL', App\Models\User::class),
+        ],
+
+        'parents' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\NxtParent::class,
         ],
 
         // 'users' => [

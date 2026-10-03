@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use App\Http\Controllers\Api\AgentGatewayController;
+use App\Http\Controllers\Api\ParentLoginCodeController;
 use App\Http\Controllers\Api\StudentAgentController;
 use App\Http\Middleware\VerifyAgentSignature;
 use Illuminate\Support\Facades\Route;
@@ -76,4 +77,18 @@ Route::middleware([VerifyAgentSignature::class, 'throttle:agent-gateway'])
             ->name('students.consent');
         Route::post('/students/{ref}/alerts', [StudentAgentController::class, 'recordAlert'])
             ->name('students.alerts');
+    });
+
+/*
+ * Lead Intake asks for a parent's WhatsApp login code (App\Services\ParentLogin).
+ * Under /internal/agent beside the Ref reads, but here rather than in
+ * routes/api.php, which must stay GET-only. The controller also refuses every
+ * agent but lead_intake_agent.
+ */
+Route::middleware([VerifyAgentSignature::class, 'throttle:agent-gateway'])
+    ->prefix('internal/agent')
+    ->name('internal.agent.')
+    ->group(function (): void {
+        Route::post('/parent-login/code', ParentLoginCodeController::class)
+            ->name('parent-login.code');
     });

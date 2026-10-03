@@ -1,0 +1,133 @@
+/* ==========================================================================
+   Parent account pages (/parent/*), Phase 1 of the parent dashboard, 3 Oct 2026.
+
+   Phone-first and calm, in the same water as the tutor profile "tank"
+   (nx-about.css): one glass card on a quiet slate ground, light from the top.
+   Only the site tokens (nxt-ds.css, nx-roles.css) are used and colours keep
+   their roles: marigold = the one action on the screen, WhatsApp green = only
+   the button that opens WhatsApp, sky = links, verify green = success,
+   white = the selected tab. Nothing here is AI, so there is no indigo.
+   Markup: resources/views/parent/*.blade.php. Loaded via $nxtParentCss.
+   ========================================================================== */
+body.page .nxp{padding:clamp(32px,7vw,88px) 16px clamp(48px,8vw,96px);color:var(--nxt-text,#EEF2F9)}
+body.page .nxp__wrap{max-width:480px;margin:0 auto}
+body.page .nxp__wrap--wide{max-width:760px}
+
+/* ---- heading ---- */
+body.page .nxp__head{text-align:center;margin:0 0 var(--nxt-s5,24px)}
+body.page .nxp__head--left{text-align:left}
+body.page .nxp__eyebrow{font:700 .75rem/1.4 var(--nxt-font-body);letter-spacing:.08em;text-transform:uppercase;
+  color:var(--nxt-text-faint,#78869F);margin:0 0 6px}
+body.page .nxp__title{font:800 var(--nxt-t-h1,2rem)/1.15 var(--nxt-font-display);letter-spacing:-.02em;margin:0 0 8px;color:var(--nxt-text)}
+body.page .nxp__sub{color:var(--nxt-text-dim,#A6B3CA);font-size:.9375rem;line-height:1.65;margin:0}
+
+/* ---- the glass card ---- */
+body.page .nxp__card{position:relative;overflow:hidden;isolation:isolate;
+  border-radius:var(--nxt-r-lg,22px);border:1px solid var(--nxt-line,rgba(255,255,255,.09));
+  background:
+    radial-gradient(120% 60% at 50% -10%,rgba(108,176,255,.10),transparent 60%),
+    linear-gradient(180deg,#12203A 0%,#0E192D 45%,#0B1424 100%);
+  box-shadow:var(--nxt-e3);padding:clamp(20px,4vw,32px)}
+body.page .nxp__card + .nxp__card{margin-top:var(--nxt-s4,16px)}
+body.page .nxp__card h2{font:700 var(--nxt-t-h3,1.25rem)/1.3 var(--nxt-font-display);margin:0 0 4px;color:var(--nxt-text)}
+body.page .nxp__card .nxp__lead{color:var(--nxt-text-dim);font-size:.875rem;line-height:1.6;margin:0 0 var(--nxt-s4,16px)}
+
+/* ---- method tabs: radios, so they work without JavaScript ---- */
+body.page .nxp__radio{position:absolute;opacity:0;pointer-events:none}
+body.page .nxp__tabs{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:4px;margin:0 0 var(--nxt-s5,24px);
+  border-radius:var(--nxt-r-pill,999px);background:var(--nxt-surface,rgba(255,255,255,.045));border:1px solid var(--nxt-line)}
+body.page .nxp__tab{display:flex;align-items:center;justify-content:center;min-height:44px;padding:0 10px;margin:0;cursor:pointer;
+  border-radius:var(--nxt-r-pill,999px);font:700 .875rem/1.2 var(--nxt-font-body);color:var(--nxt-text-dim);text-align:center;
+  transition:background var(--nxt-fast,.15s),color var(--nxt-fast,.15s)}
+body.page .nxp__tab:hover{color:var(--nxt-text)}
+body.page #nxp-m-wa:checked ~ .nxp__tabs label[for="nxp-m-wa"],
+body.page #nxp-m-email:checked ~ .nxp__tabs label[for="nxp-m-email"]{background:var(--nxt-selected-bg,#EEF2F9);color:var(--nxt-selected-ink,#0A1020)}
+body.page #nxp-m-wa:focus-visible ~ .nxp__tabs label[for="nxp-m-wa"],
+body.page #nxp-m-email:focus-visible ~ .nxp__tabs label[for="nxp-m-email"]{outline:2px solid var(--nxt-focus,#8FC2FF);outline-offset:2px}
+body.page #nxp-m-wa:checked ~ .nxp__panel--email,
+body.page #nxp-m-email:checked ~ .nxp__panel--wa{display:none}
+
+/* ---- fields ---- */
+body.page .nxp__field{margin:0 0 var(--nxt-s4,16px)}
+body.page .nxp__field label,
+body.page .nxp__label{display:block;margin:0 0 8px;font-size:.875rem;font-weight:700;color:var(--nxt-text)}
+body.page .nxp__field small{display:block;margin-top:6px;font-size:.8125rem;color:var(--nxt-text-faint)}
+body.page .nxp__input{width:100%;min-height:52px;padding:0 16px;border-radius:var(--nxt-r-sm,10px);
+  border:1px solid var(--nxt-line-strong,rgba(255,255,255,.16));background:rgba(255,255,255,.06);
+  color:var(--nxt-text);font:500 1rem var(--nxt-font-body);outline:none}
+body.page .nxp__input::placeholder{color:var(--nxt-text-faint)}
+body.page .nxp__input[readonly]{color:var(--nxt-text-dim);background:var(--nxt-surface)}
+body.page .nxp__phone{display:flex;align-items:stretch;border-radius:var(--nxt-r-sm,10px);overflow:hidden;
+  border:1px solid var(--nxt-line-strong);background:rgba(255,255,255,.06)}
+body.page .nxp__phone:focus-within{border-color:var(--nxt-focus,#8FC2FF);box-shadow:0 0 0 3px rgba(143,194,255,.28)}
+body.page .nxp__phone span{display:flex;align-items:center;padding:0 12px 0 16px;color:var(--nxt-text-dim);font-weight:700;border-right:1px solid var(--nxt-line)}
+body.page .nxp__phone .nxp__input{border:0;border-radius:0;background:transparent;box-shadow:none}
+body.page .nxp__code-input{letter-spacing:.4em;font:700 1.375rem var(--nxt-font-display);text-align:center}
+body.page .nxp__is-invalid{border-color:var(--nxt-danger,#FF6B6B)}
+
+/* ---- buttons: one marigold per screen ---- */
+body.page .nxp__btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:52px;padding:0 20px;
+  border-radius:var(--nxt-r-sm,10px);border:1px solid transparent;cursor:pointer;text-decoration:none;
+  font:800 1rem/1.2 var(--nxt-font-body);transition:background var(--nxt-fast,.15s),transform var(--nxt-fast,.15s)}
+body.page .nxp__btn:active{transform:translateY(1px)}
+body.page .nxp__btn--action{background:var(--nxt-action,#F5A524);border-color:var(--nxt-action,#F5A524);color:var(--nxt-on-action,#0A1020)}
+body.page .nxp__btn--action:hover{background:#FFB940;color:var(--nxt-on-action,#0A1020)}
+body.page .nxp__btn--wa{background:var(--nxt-whatsapp,#25D366);border-color:var(--nxt-whatsapp,#25D366);color:#06301a}
+body.page .nxp__btn--wa:hover{background:#3ee07c;color:#06301a}
+body.page .nxp__btn--ghost{background:transparent;border-color:var(--nxt-line-strong);color:var(--nxt-text)}
+body.page .nxp__btn--ghost:hover{background:var(--nxt-surface-2);color:var(--nxt-text)}
+body.page .nxp__btn--inline{display:inline-flex;width:auto;min-height:44px}
+body.page .nxp__btn svg{flex:0 0 auto}
+
+/* ---- the WhatsApp steps ---- */
+body.page .nxp__steps{list-style:none;counter-reset:nxp;margin:0 0 var(--nxt-s4,16px);padding:0;display:grid;gap:10px}
+body.page .nxp__steps li{counter-increment:nxp;position:relative;padding-left:34px;font-size:.875rem;line-height:1.55;color:var(--nxt-text-dim)}
+body.page .nxp__steps li::before{content:counter(nxp);position:absolute;left:0;top:0;width:24px;height:24px;border-radius:50%;
+  display:grid;place-items:center;font-size:.75rem;font-weight:800;background:var(--nxt-surface-3);color:var(--nxt-text)}
+body.page .nxp__code{margin-top:var(--nxt-s5,24px);padding-top:var(--nxt-s5,24px);border-top:1px solid var(--nxt-line)}
+body.page .nxp__code.is-hidden{display:none}
+body.page .nxp__have-code{display:block;margin:12px auto 0;padding:6px;background:none;border:0;cursor:pointer;
+  font:600 .875rem var(--nxt-font-body);color:var(--nxt-link,#6CB0FF);text-decoration:underline;
+  text-decoration-color:var(--nxt-link-line);text-underline-offset:3px}
+
+/* ---- messages ---- */
+body.page .nxp__alert{display:flex;gap:10px;align-items:flex-start;margin:0 0 var(--nxt-s4,16px);padding:12px 14px;
+  border-radius:var(--nxt-r-sm,10px);font-size:.875rem;line-height:1.55}
+body.page .nxp__alert--error{background:var(--nxt-danger-soft,rgba(255,107,107,.13));border:1px solid rgba(255,107,107,.4);color:#FFD2D2}
+body.page .nxp__alert--ok{background:var(--nxt-verify-soft,rgba(52,199,123,.14));border:1px solid rgba(52,199,123,.4);color:#C9F5DC}
+body.page .nxp__err{display:block;margin-top:6px;font-size:.8125rem;color:#FFB4B4}
+
+/* ---- links ---- */
+body.page .nxp a:not([class]),
+body.page .nxp__link{color:var(--nxt-link,#6CB0FF);font-weight:600;text-decoration:underline;
+  text-decoration-color:var(--nxt-link-line);text-underline-offset:3px;cursor:pointer}
+body.page .nxp__alt{margin:var(--nxt-s4,16px) 0 0;text-align:center;font-size:.875rem;color:var(--nxt-text-dim)}
+body.page .nxp__foot{margin:var(--nxt-s5,24px) 0 0;text-align:center;font-size:.875rem;line-height:1.6;color:var(--nxt-text-dim)}
+
+/* ---- your family ---- */
+body.page .nxp__kids{display:grid;gap:12px;margin:0 0 var(--nxt-s5,24px)}
+body.page .nxp__kid{display:grid;grid-template-columns:auto 1fr auto;gap:16px;align-items:center;
+  padding:16px 18px;border-radius:var(--nxt-r-md,16px);background:var(--nxt-surface,rgba(255,255,255,.045));border:1px solid var(--nxt-line)}
+body.page .nxp__avatar{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;
+  font:800 1.25rem var(--nxt-font-display);background:var(--nxt-surface-3);color:var(--nxt-text);border:1px solid var(--nxt-line-strong)}
+body.page .nxp__kid h2{font:700 1.25rem/1.25 var(--nxt-font-display);margin:0;color:var(--nxt-text)}
+body.page .nxp__kid p{margin:2px 0 0;font-size:.875rem;color:var(--nxt-text-dim)}
+body.page .nxp__tag{font-size:.75rem;font-weight:700;padding:3px 10px;border-radius:var(--nxt-r-pill,999px);
+  color:var(--nxt-text-dim);background:var(--nxt-surface-2);border:1px solid var(--nxt-line-strong);white-space:nowrap}
+body.page .nxp__soon{display:flex;gap:12px;align-items:flex-start;padding:16px 18px;border-radius:var(--nxt-r-md,16px);
+  border:1px dashed var(--nxt-line-strong);color:var(--nxt-text-dim);font-size:.9rem;line-height:1.6}
+body.page .nxp__soon b{color:var(--nxt-text)}
+body.page .nxp__empty{padding:20px;border-radius:var(--nxt-r-md,16px);background:var(--nxt-surface);border:1px solid var(--nxt-line);
+  color:var(--nxt-text-dim);font-size:.9rem;line-height:1.6;margin:0 0 var(--nxt-s5,24px)}
+body.page .nxp__bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-top:var(--nxt-s5,24px)}
+body.page .nxp__bar form{margin:0}
+body.page .nxp__row{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center}
+
+@media (max-width:560px){
+  body.page .nxp__kid{grid-template-columns:auto 1fr;padding:14px}
+  body.page .nxp__kid .nxp__tag{grid-column:2;justify-self:start}
+  body.page .nxp__avatar{width:44px;height:44px;font-size:1.05rem}
+}
+@media (prefers-reduced-motion:reduce){
+  body.page .nxp__btn{transition:none}
+}

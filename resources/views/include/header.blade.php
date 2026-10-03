@@ -101,6 +101,8 @@
   <link rel="stylesheet" href="{{ asset('frount/assets') }}/css/nx-roles.css?v={{ $nxtAssetV }}" />
   {{-- Tutor-side pages only (/tuition-jobs/*, the jobs topics, /become-a-tutor): they set $nxtJobsCss. --}}
   @if(!empty($nxtJobsCss))<link rel="stylesheet" href="{{ asset('frount/assets') }}/css/nx-jobs.css?v={{ $nxtAssetV }}" />@endif
+  {{-- Parent account pages only (/parent/*): they set $nxtParentCss. --}}
+  @if(!empty($nxtParentCss))<link rel="stylesheet" href="{{ asset('frount/assets') }}/css/nx-parent.css?v={{ $nxtAssetV }}" />@endif
   <script src="{{ asset('frount/assets') }}/js/nx-hub.js?v={{ $nxtAssetV }}" defer></script>
 <link rel="icon" type="image/png" sizes="48x48" href="{{ asset('uploads/logo/newlogo-48.png') }}">
 <link rel="apple-touch-icon" href="{{ asset('uploads/logo/newlogo-180.png') }}">

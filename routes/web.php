@@ -327,6 +327,26 @@ Route::post('/cartlist', [OrderController::class, 'updateCart'])->name('cartlist
   Route::post('/consent/{id}/{token}', [\App\Http\Controllers\ParentalConsentController::class, 'confirm'])
       ->middleware('throttle:public-form')->name('consent.confirm');
 
+// Parent accounts (Phase 1 of the parent dashboard). The `parent` guard only:
+// a parent session opens nothing under /user or /super, and a student or
+// admin session opens nothing here. Accounts are made by the team in
+// /super/families; there is no parent sign-up yet.
+Route::prefix('parent')->name('parent.')->group(function () {
+    Route::get('/login', [\App\Http\Controllers\Parent\ParentAuthController::class, 'show'])->name('login');
+    Route::post('/login/code', [\App\Http\Controllers\Parent\ParentAuthController::class, 'verifyCode'])
+        ->middleware('throttle:public-form')->name('login.code');
+    Route::post('/login/email', [\App\Http\Controllers\Parent\ParentAuthController::class, 'emailLogin'])
+        ->middleware('throttle:public-form')->name('login.email');
+
+    Route::middleware(\App\Http\Middleware\AuthenticateParent::class)->group(function () {
+        Route::get('/', [\App\Http\Controllers\Parent\ParentHomeController::class, 'home'])->name('home');
+        Route::get('/account', [\App\Http\Controllers\Parent\ParentHomeController::class, 'account'])->name('account');
+        Route::post('/account', [\App\Http\Controllers\Parent\ParentHomeController::class, 'updateDetails'])->name('account.update');
+        Route::post('/account/password', [\App\Http\Controllers\Parent\ParentHomeController::class, 'updatePassword'])->name('account.password');
+        Route::post('/logout', [\App\Http\Controllers\Parent\ParentAuthController::class, 'logout'])->name('logout');
+    });
+});
+
 Route::prefix('super')->name('super.')->group(function () {
 
     // Super Admin Login
@@ -420,6 +440,15 @@ Route::prefix('super')->name('super.')->group(function () {
       Route::get('refs', [\App\Http\Controllers\SuperAdmin\HandoffController::class, 'index'])->name('refs.index');
       Route::get('ref/{code}', [\App\Http\Controllers\SuperAdmin\HandoffController::class, 'show'])->name('refs.show');
       Route::get('search-gaps', [\App\Http\Controllers\SuperAdmin\SearchGapsController::class, 'index'])->name('search.gaps');
+      // Families: parent accounts and the children linked to them.
+      Route::get('families', [\App\Http\Controllers\SuperAdmin\FamilyController::class, 'index'])->name('families.index');
+      Route::get('families/create', [\App\Http\Controllers\SuperAdmin\FamilyController::class, 'create'])->name('families.create');
+      Route::post('families', [\App\Http\Controllers\SuperAdmin\FamilyController::class, 'store'])->name('families.store');
+      Route::get('families/{family}/edit', [\App\Http\Controllers\SuperAdmin\FamilyController::class, 'edit'])->whereNumber('family')->name('families.edit');
+      Route::put('families/{family}', [\App\Http\Controllers\SuperAdmin\FamilyController::class, 'update'])->whereNumber('family')->name('families.update');
+      Route::post('families/{family}/children', [\App\Http\Controllers\SuperAdmin\FamilyController::class, 'linkChild'])->whereNumber('family')->name('families.children.store');
+      Route::put('families/{family}/children/{child}', [\App\Http\Controllers\SuperAdmin\FamilyController::class, 'updateChild'])->whereNumber(['family', 'child'])->name('families.children.update');
+      Route::delete('families/{family}/children/{child}', [\App\Http\Controllers\SuperAdmin\FamilyController::class, 'unlinkChild'])->whereNumber(['family', 'child'])->name('families.children.destroy');
       Route::post('teacher/review/{id}/approve', [ReviewModerationController::class, 'approve'])->whereNumber('id')->name('teacher.review.approve');
       Route::post('teacher/review/{id}/reject', [ReviewModerationController::class, 'reject'])->whereNumber('id')->name('teacher.review.reject');
       Route::delete('teacher/review/{id}', [ReviewModerationController::class, 'destroy'])->whereNumber('id')->name('teacher.review.destroy');

@@ -52,6 +52,7 @@
           <a class="list-group-item list-group-item-action" href="{{ route('super.teacher.review') }}">Teacher Review</a>
           <a class="list-group-item list-group-item-action" href="{{ route('super.search.gaps') }}">Search &amp; tutor gaps</a>
           <a class="list-group-item list-group-item-action" href="{{ route('super.user.index') }}">Student</a>
+          <a class="list-group-item list-group-item-action" href="{{ route('super.families.index') }}">Families</a>
 
            <a class="list-group-item list-group-item-action" href="{{ route('super.premium-schools.index') }}">Premium Schools</a>
 
