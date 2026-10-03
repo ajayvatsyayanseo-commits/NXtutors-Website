@@ -70,6 +70,10 @@ class ChatController
         if ($onScreen !== []) {
             $context->referencedTutors = $onScreen;
             $history['items'][] = ['role' => 'assistant', 'content' => $this->onScreenHint($onScreen)];
+            // On a profile the page sends only the visitor's saved place.
+            if ($pageHint = $this->pageHint($request->pageContext())) {
+                $history['items'][] = ['role' => 'assistant', 'content' => $pageHint];
+            }
         } elseif ($pageHint = $this->pageHint($request->pageContext())) {
             // Not on a tutor profile: tell the model which page the parent is
             // reading, so "find me a tutor" means one near this city or area.
@@ -234,21 +238,27 @@ class ChatController
     {
         $place = implode(', ', array_filter([$page['area'] ?? null, $page['city'] ?? null]));
         $what = implode(' ', array_filter([$page['board'] ?? null, $page['subject'] ?? null, $page['class'] ?? null]));
+        // The place came from the location the visitor saved on the site (all
+        // of it, or the area within the page's city), not from the page itself.
+        $saved = ($page['location_source'] ?? null) === 'visitor';
+        $pagePlace = $saved ? (string) ($page['city'] ?? '') : $place;
 
         if ($place === '' && $what === '' && empty($page['topic'])) {
             return null;
         }
 
         $where = match ($page['type'] ?? 'other') {
-            'city' => 'the city page for '.$place,
-            'area' => 'the area page for '.$place,
-            'subject' => 'the page for '.($what !== '' ? $what.' ' : '').'home tutors'.($place !== '' ? ' in '.$place : ''),
+            'city' => 'the city page for '.$pagePlace,
+            'area' => 'the area page for '.$pagePlace,
+            'subject' => 'the page for '.($what !== '' ? $what.' ' : '').'home tutors'.($pagePlace !== '' ? ' in '.$pagePlace : ''),
             'blog' => 'a guide'.(! empty($page['topic']) ? ' titled "'.$page['topic'].'"' : ''),
-            default => 'a page'.($place !== '' ? ' about '.$place : ''),
+            default => 'a page'.($place !== '' && ! $saved ? ' about '.$place : ''),
         };
 
-        return '(The parent is reading '.$where.'. '
-            .($place !== '' ? 'When they ask for tutors, fees or availability without naming a place, use '.$place.' as the location. ' : '')
+        return '('.($saved && $where === 'a page' ? '' : 'The parent is reading '.$where.'. ')
+            .($saved && $place !== '' ? 'The parent already set their location on the site: '.$place.'. ' : '')
+            .($place !== '' ? 'When they ask for tutors, fees or availability without naming a place, use '.$place.' as the location. '
+                .'Do not ask for their city, area or sector. ' : '')
             .($what !== '' ? 'Unless they say otherwise, assume they mean '.$what.'. ' : '')
             .'If they name a different place, subject or class, follow what they say. Do not mention this note.)';
     }

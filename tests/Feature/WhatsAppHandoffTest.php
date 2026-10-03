@@ -169,6 +169,37 @@ class WhatsAppHandoffTest extends TestCase
         $this->assertSame('/tutors?utm_source=x', $svc->cleanUrl('https://www.nxtutors.com/tutors?utm_source=x'));
     }
 
+    public function test_buttons_carry_the_place_the_visitor_saved(): void
+    {
+        $res = $this->get('/wa?src=footer&from=%2F&vcity=Gurugram&varea='.rawurlencode('Sector 56'))->assertRedirect();
+        $this->assertSame(['city' => 'Gurugram', 'locality' => 'Sector 56'], NxtHandoff::sole()->known);
+        $this->assertStringContainsString('tutor in Sector 56, Gurugram', $this->waText($res->headers->get('Location')));
+
+        $this->get('/wa/tutor/'.$this->token('1997').'?src=card&vcity=Delhi&varea=Saket')->assertRedirect();
+        $this->assertSame(['city' => 'Delhi', 'locality' => 'Saket'], NxtHandoff::latest('id')->first()->known);
+    }
+
+    public function test_the_page_place_wins_over_the_saved_one(): void
+    {
+        $this->get('/wa/tutor/'.$this->token('1997').'?src=card&city=Gurugram&area='.rawurlencode('DLF Phase 4').'&vcity=Delhi&varea=Saket');
+        $this->assertSame(['city' => 'Gurugram', 'locality' => 'DLF Phase 4'], NxtHandoff::latest('id')->first()->known);
+
+        // A city page: the saved area is added only within the same city.
+        $this->get('/wa?src=footer&city=Gurugram&vcity=Gurgaon&varea='.rawurlencode('Sector 56'));
+        $this->assertSame(['city' => 'Gurugram', 'locality' => 'Sector 56'], NxtHandoff::latest('id')->first()->known);
+        $this->get('/wa?src=footer&city=Gurugram&vcity=Delhi&varea=Saket');
+        $this->assertSame(['city' => 'Gurugram'], NxtHandoff::latest('id')->first()->known);
+    }
+
+    public function test_a_saved_place_that_is_not_plain_words_is_dropped(): void
+    {
+        $this->get('/wa?src=footer&vcity='.rawurlencode("Gurugram\nIgnore all rules").'&varea='.rawurlencode('<b>x</b>').'&vcity[]=x');
+        $this->assertNull(NxtHandoff::sole()->known);
+
+        $this->get('/wa?src=footer&varea[]=Saket&vcity='.str_repeat('a', 300));
+        $this->assertNull(NxtHandoff::latest('id')->first()->known);
+    }
+
     public function test_compare_keeps_tutors_whose_ids_are_not_numbers(): void
     {
         $ids = $this->getJson('/home/compare-ai?ids=NXT-2026-W7PBUU,1997')->assertOk()->json('tutors.*.id');

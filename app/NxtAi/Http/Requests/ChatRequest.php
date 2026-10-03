@@ -37,6 +37,8 @@ class ChatRequest extends FormRequest
             'page.subject' => ['nullable', 'string', 'max:60', 'regex:/^[\pL\pN .,()&\/-]*$/u'],
             'page.class' => ['nullable', 'string', 'max:40', 'regex:/^[\pL\pN .,()&\/-]*$/u'],
             'page.topic' => ['nullable', 'string', 'max:120', 'regex:/^[\pL\pN .,:;()&\x27\/?!–—-]*$/u'],
+            // 'visitor': city/area came from the location the visitor saved on the site, not the page.
+            'page.location_source' => ['nullable', 'string', 'in:page,visitor'],
         ];
     }
 
@@ -71,7 +73,7 @@ class ChatRequest extends FormRequest
     /**
      * The page the parent is on, trimmed to the fields that are set.
      *
-     * @return array{type?:string, city?:string, area?:string, board?:string, subject?:string, class?:string, topic?:string}
+     * @return array{type?:string, city?:string, area?:string, board?:string, subject?:string, class?:string, topic?:string, location_source?:string}
      */
     public function pageContext(): array
     {
@@ -81,7 +83,7 @@ class ChatRequest extends FormRequest
         }
 
         $out = [];
-        foreach (['type', 'city', 'area', 'board', 'subject', 'class', 'topic'] as $k) {
+        foreach (['type', 'city', 'area', 'board', 'subject', 'class', 'topic', 'location_source'] as $k) {
             $v = trim(preg_replace('/\s+/', ' ', (string) ($page[$k] ?? '')));
             if ($v !== '') {
                 $out[$k] = $v;

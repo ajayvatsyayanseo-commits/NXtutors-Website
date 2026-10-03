@@ -50,7 +50,13 @@
       $aiType !== 'home' => 'Looking for a home or online tutor?',
       default => 'Tell me the subject, class and your area, or tap one of these:',
   };
+  // The footer's WhatsApp buttons and demo form are rendered after this and
+  // outside its scope; they read the page context from here.
+  if (empty($kbTutor)) {
+      request()->attributes->set('nx.ai_page', $aiPage);
+  }
 @endphp
+@include('include.saved-place-js')
 {{-- The chat's styles live in home.css. The home page and tutor profiles
      already load it; everywhere else it is loaded here, once. --}}
 @if(!request()->routeIs('home', 'tutor.newshow', 'tutor.show'))
@@ -292,7 +298,21 @@
   window.nxgProfileTutorName = @json(!empty($kbTutor) && empty($kbTutor->is_sample) ? (string) $kbTutor->name : '');
   // The page this chat sits on (city / area / subject / guide); see the
   // $aiPage note at the top of this file.
+  // On a tutor profile only the visitor's saved place is sent (the profile
+  // itself goes as profile_tutor_id).
   window.nxgPageContext = @json(empty($kbTutor) ? (object) $aiPage : (object) []);
+  var pageOwnContext = window.nxgPageContext;
+  function withSavedPlace() {
+    window.nxgPageContext = window.nxSavedPlace ? window.nxSavedPlace(pageOwnContext) : pageOwnContext;
+    return window.nxgPageContext;
+  }
+  withSavedPlace();
+  document.addEventListener('nx:location', withSavedPlace);
+  // Home greeting: with a saved place there is no need to ask for the area.
+  var welcome = thread.querySelector('.nxg-welcome .nxg-text');
+  if (welcome && window.nxgPageContext.location_source === 'visitor' && /and your area/.test(welcome.textContent)) {
+    welcome.textContent = 'Tell me the subject and class, or tap one of these:';
+  }
   var csrf = (document.querySelector('meta[name="csrf-token"]') || {}).content || '';
   // Kept for this browser tab, so a reload continues the same chat (and the
   // WhatsApp Ref carries all of it), instead of starting over.
@@ -587,7 +607,7 @@
         // without the parent naming anyone.
         profile_tutor_id: window.nxgProfileTutorId || null,
         compare_ids: compareIds(),
-        page: window.nxgPageContext || null
+        page: withSavedPlace()
       })
     })
     .then(function (res) { return res.json().then(function (d) { return { status: res.status, data: d }; }); })
@@ -653,7 +673,7 @@
     waLink.addEventListener('click', function (e) {
       e.preventDefault();
       var win = window.open('', '_blank');
-      var ctx = window.nxgPageContext || {};
+      var ctx = withSavedPlace();
       var tutorIds = window.nxgProfileTutorId ? [window.nxgProfileTutorId] : compareIds();
       fetch(@json(route('wa.handoff')), {
         method: 'POST',
