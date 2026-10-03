@@ -296,7 +296,7 @@
     Tell us five things: class, board, the branch of science that troubles your child, the language of their answers,
     and your colony with a landmark and free afternoons. A shortlist of two or three science tutors comes back with
     fees attached; choose one and the first class is a free demo. Anyone who joins as a tutor goes through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is live. When distance or timing rules
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified. When distance or timing rules
     out every nearby tutor, an online or mixed plan is offered instead. The NXTutors office is in Sector 66, Gurugram,
     and lessons run online nationwide; our
     <a href="{{ url('/maths-home-tutor-bhubaneswar') }}">maths tutor page for Bhubaneswar</a> and the

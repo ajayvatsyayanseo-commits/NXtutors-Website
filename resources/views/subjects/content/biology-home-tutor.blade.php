@@ -320,7 +320,7 @@
     Tell us the class, board or exam, the chapters or skills that worry your child, your area and slots, home or
     online, and a budget. We shortlist two or three matched biology tutors, you choose one for a free demo class, and
     you can switch tutor later at no cost. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. Browse
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. Browse
     <a href="{{ url('/tutors') }}">tutor profiles</a> or book a <a href="{{ url('/demo-class') }}">free demo class</a>.
   </p>
   <p>

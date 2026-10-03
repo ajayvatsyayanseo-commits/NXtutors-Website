@@ -265,7 +265,7 @@
     Send us the level, DP year, exam session, your maths course, what is going wrong, and your khand, sector or
     society with free times. Two or three matched tutors come back; the first class is a
     <a href="{{ url('/demo-class') }}">free demo</a>, and a later switch costs nothing. Every tutor who signs up passes
-    an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is live, and
+    an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified, and
     <a href="{{ url('/tutors') }}">tutor profiles</a> are open to browse. For other international-track science, see
     <a href="{{ url('/igcse-physics-tutor-ghaziabad') }}">IGCSE physics</a> and
     <a href="{{ url('/ib-igcse-chemistry-tutor-ghaziabad') }}">IB and IGCSE chemistry</a> tutors in Ghaziabad.

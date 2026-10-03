@@ -211,7 +211,7 @@
   </ul>
   <p>
     The first class is free. Every tutor who joins clears an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>
-    before the profile is published; that confirms identity, while the demo shows teaching. If the match is wrong, the
+    before the profile is marked Verified; that confirms identity, while the demo shows teaching. If the match is wrong, the
     next shortlisted tutor comes for a demo of their own, and switching later is free too.
   </p>
   </section>

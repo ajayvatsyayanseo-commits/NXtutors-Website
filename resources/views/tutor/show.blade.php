@@ -67,7 +67,12 @@
   $metaSubj = collect($metaCaps['subjects'] ?? [])->merge($subjectsTaught)->merge($metaAuthor['subjects'] ?? [])->first($isSubj) ?? '';
   $metaRole  = trim($metaSubj . ' Home Tutor');
   $metatitle = $tutor->name . ' – ' . $metaRole . ($metaCity !== '' ? ' in ' . $metaCity : '') . ' | NXTutors';
-  $metadesc  = 'Profile of ' . $tutor->name . (empty($tutor->is_sample) ? ', a verified ' : ', a sample profile of a ') . strtolower($metaRole)
+  // The Verified seal and every "verified" word on this page, in the
+  // schema and the meta follow one rule (App\Support\TutorBadge): real, live
+  // and ID-approved by the team. A live tutor awaiting the ID check is not.
+  $tutorVerified = \App\Support\TutorBadge::verified($tutor, ! empty($tutor->is_sample));
+  $metaArticle = preg_match('/^[aeiou]/i', $metaRole) ? 'an ' : 'a ';
+  $metadesc  = 'Profile of ' . $tutor->name . (! empty($tutor->is_sample) ? ', a sample profile of ' . $metaArticle : ($tutorVerified ? ', a verified ' : ', ' . $metaArticle)) . strtolower($metaRole)
              . ($metaCity !== '' ? ' in ' . $metaCity : '')
              . '. See subjects, boards, experience and fees, and book a free demo class on NXTutors.';
   $ogImage   = $img;
@@ -80,7 +85,7 @@
     "@id"      => $canonical."#profilepage",
     "url"      => $canonical,
     "name"     => ($tutor->name ?? 'Tutor') . ($city ? " | Home Tutor in $city" : " | Tutor Profile"),
-    "description" => "View verified tutor profile".($city ? " in $city" : "").". Book a demo class and chat on WhatsApp with NXTutors.",
+    "description" => "View ".($tutorVerified ? "verified " : "")."tutor profile".($city ? " in $city" : "").". Book a demo class and chat on WhatsApp with NXTutors.",
     "inLanguage"  => "en-IN",
     "isPartOf" => [
       "@type" => "WebSite",
@@ -115,7 +120,7 @@
     "url"      => $canonical,
     "image"    => $img,
     "jobTitle" => "Tutor",
-    "description" => "Verified tutor".($city ? " in $city" : "")." for school students. Book demo and get personalised guidance via NXTutors.",
+    "description" => ($tutorVerified ? "Verified tutor" : "Tutor").($city ? " in $city" : "")." for school students. Book demo and get personalised guidance via NXTutors.",
     "address" => array_filter([
       "@type" => "PostalAddress",
       "streetAddress"    => $area ?: null,
@@ -444,7 +449,7 @@ html {
     @php
       $isSampleProfile = ! empty($tutor->is_sample);
       // Pink seal for a real, verified woman tutor (App\Support\TutorBadge); never on samples.
-      $isWomanVerified = \App\Support\TutorBadge::woman($tutor, $isSampleProfile);
+      $isWomanVerified = \App\Support\TutorBadge::woman($tutor, $isSampleProfile, null, $tutorVerified);
     @endphp
     @if($isSampleProfile)
       <section class="nxsec">
@@ -468,7 +473,7 @@ html {
                    onerror="if (this.srcset) { this.removeAttribute('srcset'); this.src = {{ json_encode($img, JSON_UNESCAPED_SLASHES) }}; } else { this.onerror = null; this.src = {{ json_encode(asset('frount/assets/images/tutor1.jpg'), JSON_UNESCAPED_SLASHES) }}; }">
               @if($isSampleProfile)
                 <span class="badge-sample">Sample profile</span>
-              @else
+              @elseif($tutorVerified)
               <span class="badge-verified{{ $isWomanVerified ? ' badge-verified--woman' : '' }}">
                 <svg width="11" height="11" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M6.5 11.3 3.4 8.2l1.1-1.1 2 2 4.9-4.9 1.1 1.1z"/></svg>
                 {{ $isWomanVerified ? 'Verified · Woman tutor' : 'Verified' }}
@@ -486,7 +491,7 @@ html {
               </div>
 
               <div class="nxstat">
-                @unless($isSampleProfile)<span class="nxchip nxchip--ok{{ $isWomanVerified ? ' nxchip--woman' : '' }}">✅ {{ $isWomanVerified ? 'Verified · Woman tutor' : 'Verified' }}</span>@endunless
+                @if($tutorVerified)<span class="nxchip nxchip--ok{{ $isWomanVerified ? ' nxchip--woman' : '' }}">✅ {{ $isWomanVerified ? 'Verified · Woman tutor' : 'Verified' }}</span>@endif
                 <span class="nxchip">{{ $chip }}</span>
 
                 @if($expYears !== '')
@@ -537,7 +542,7 @@ html {
           <div class="nxdivider"></div>
 
           <div class="nxlead" style="margin:0;">
-            @unless($isSampleProfile)<div>✅ ID checked by our team</div>@endunless
+            @if($tutorVerified)<div>✅ ID checked by our team</div>@endif
             <div>✅ Free demo guidance</div>
             <div>✅ Regular progress tracking</div>
           </div>
@@ -758,7 +763,7 @@ html {
 
         <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;">
           <div class="nxk">Parents Reviews</div>
-          @unless($isSampleProfile)<span class="nxchip nxchip--ok">✅ Verified</span>@endunless
+          @if($tutorVerified)<span class="nxchip nxchip--ok">✅ Verified</span>@endif
         </div>
 
         @if(!empty($reviews) && $reviews->count())
@@ -834,7 +839,7 @@ html {
       <div class="nxcard nxcard--soft" style="padding:16px;">
         <div class="nxlead" style="line-height:1.8;">
           <p>
-            {{ $tutor->name }} is {{ $isSampleProfile ? 'a sample profile of a tutor' : 'a verified tutor' }} in {{ $area ?: $city }} who focuses on concept clarity, regular practice,
+            {{ $tutor->name }} is {{ $isSampleProfile ? 'a sample profile of a tutor' : ($tutorVerified ? 'a verified tutor' : 'a tutor') }} in {{ $area ?: $city }} who focuses on concept clarity, regular practice,
             and confident exam preparation for {{ $classStr }}. Parents looking for a trusted {{ $boardStr }} tutor often
             need three things: consistent teaching, measurable progress, and a learning plan that fits the student’s pace.
             This is exactly what {{ $tutor->name }} aims to deliver through structured lessons, smart homework, and weekly revisions.
@@ -972,7 +977,7 @@ html {
     <section class="nxsec">
       <div class="nxsec__head">
         <h2 class="nxh2">Why Parents Choose {{ $tutor->name }}</h2>
-        <p class="nxlead">Verified profile, progress tracking and personalised teaching</p>
+        <p class="nxlead">{{ $tutorVerified ? 'Verified profile' : 'Tutor profile' }}, progress tracking and personalised teaching</p>
       </div>
 
       <div class="nxcard nxcard--soft" style="padding:16px;">
@@ -982,7 +987,7 @@ html {
             <li>Regular chapter tests and improvement tracking</li>
             <li>Exam-oriented practice with important questions</li>
             <li>Friendly teaching style with doubt clearing</li>
-            <li>Verified tutor profile with parent reviews</li>
+            <li>{{ $tutorVerified ? 'Verified tutor profile with parent reviews' : 'Tutor profile with parent reviews' }}</li>
           </ul>
         </div>
       </div>

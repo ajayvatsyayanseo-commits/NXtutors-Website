@@ -34,6 +34,6 @@ return [
     ],
     [
         'How do I know the tutor is who they say they are?',
-        'Tutors who join NXTutors go through an ID check: they confirm their phone or email with a one-time code and upload a government photo ID that our team reviews before the profile goes live. For home sessions in gated societies, register the tutor on your visitor app as well.',
+        'Tutors who join NXTutors go through an ID check: they confirm their phone or email with a one-time code and upload a government photo ID that our team reviews before the profile is marked Verified. For home sessions in gated societies, register the tutor on your visitor app as well.',
     ],
 ];

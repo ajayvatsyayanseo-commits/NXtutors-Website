@@ -213,8 +213,7 @@
     <li><strong>Ask for a plan.</strong> By the end of the demo you should hear the next four to six weeks in outline, tied to your child's school calendar.</li>
   </ol>
   <p>
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live. You get two or three matched tutors, see each one's fee before the demo, and switching tutor later is free.
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. You get two or three matched tutors, see each one's fee before the demo, and switching tutor later is free.
   </p>
   </section>
 

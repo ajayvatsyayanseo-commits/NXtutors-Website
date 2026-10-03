@@ -251,8 +251,7 @@
   <p>
     Tell us the class, board and main goal, the days the batch meets if there is one, your colony and a landmark,
     and the evenings still free. Two or three physics tutors come back with fees, and you choose whom to meet for the
-    free demo. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their
-    profile goes live. A poor fit leads to a second demo, and switching later is free. If nobody suitable can come at
+    free demo. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. A poor fit leads to a second demo, and switching later is free. If nobody suitable can come at
     your hour, an online or mixed plan is offered. NXTutors works from Sector 66, Gurugram, and teaches online across
     India; our national <a href="{{ url('/physics-home-tutor') }}">physics home tutor</a> page covers other cities.
   </p>

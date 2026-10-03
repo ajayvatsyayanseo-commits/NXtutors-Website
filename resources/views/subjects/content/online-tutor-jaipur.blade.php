@@ -206,7 +206,7 @@
   <p>
     Keep the device in a shared room with the door open, especially for younger children. Use the app and link the
     family set up, and know who is on the call. Tutors who join NXTutors go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live; it is not a police or
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified; it is not a police or
     background check, so meet the tutor in the free demo and judge for yourself. Recording policy, if any, should be
     agreed openly between you and the tutor. Our comparison of
     <a href="{{ url('/blog/home-tutor-vs-online-tutor') }}">home and online tutoring</a> covers more trade-offs.

@@ -249,7 +249,7 @@
   </ol>
   <p>
     You receive two or three tutors, local, online or both, see each fee before the demo, and can switch later for
-    free. Tutors who join pass an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before going live.
+    free. Tutors who join pass an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the Verified badge appears.
   </p>
   </section>
 

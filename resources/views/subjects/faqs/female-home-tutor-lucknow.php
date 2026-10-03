@@ -15,7 +15,7 @@ return [
     ],
     [
         'Do female tutors on NXTutors go through a check?',
-        'Every tutor who joins confirms a phone or email with a one-time code and uploads a government photo ID that our team reviews before the profile goes live, and real tutors who pass get a Verified badge. It is not a police or background check, and some profiles are labelled samples.',
+        'Every tutor who joins confirms a phone or email with a one-time code and uploads a government photo ID that our team reviews before the profile is marked Verified. It is not a police or background check, and some profiles are labelled samples.',
     ],
     [
         'Which Lucknow areas are easiest for a tutor without a car?',

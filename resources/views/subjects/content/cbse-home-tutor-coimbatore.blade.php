@@ -224,7 +224,7 @@
   </ol>
   <p>
     Two or three tutors are matched for you, each fee is shown before the demo, and a later switch is free. Tutors who
-    join pass an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before going live.
+    join pass an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the Verified badge appears.
   </p>
   </section>
 

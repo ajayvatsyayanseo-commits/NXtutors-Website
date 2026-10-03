@@ -282,8 +282,7 @@
   <p>
     Send the four facts above, your locality and the slots you can offer. We reply with two or three matched tutors;
     you pick one for a <a href="{{ url('/demo-class') }}">free demo class</a>, and changing tutor later costs nothing.
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live, and you can browse <a href="{{ url('/tutors') }}">tutor profiles</a> first. For the sciences, see
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified, and you can browse <a href="{{ url('/tutors') }}">tutor profiles</a> first. For the sciences, see
     <a href="{{ url('/ib-physics-tutor-bengaluru') }}">IB physics</a> and
     <a href="{{ url('/ib-igcse-chemistry-tutor-bengaluru') }}">IB and IGCSE chemistry</a> tutors in Bengaluru.
   </p>

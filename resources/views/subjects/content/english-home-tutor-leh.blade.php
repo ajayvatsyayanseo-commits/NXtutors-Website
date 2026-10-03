@@ -219,8 +219,7 @@
   <p>
     Send the class and board, the skill that worries you, your locality with a landmark, your free days in term and
     in winter, and whether you prefer home, online or both. We reply with two or three matched tutors and their fees.
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live. For other subjects see <a href="{{ url('/maths-home-tutor-leh') }}">maths</a> and
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. For other subjects see <a href="{{ url('/maths-home-tutor-leh') }}">maths</a> and
     <a href="{{ url('/science-home-tutor-leh') }}">science</a> tutors in Leh. English teachers in and around Leh can
     find open requests on <a href="{{ url('/tuition-jobs/leh') }}">Leh tuition jobs</a>.
   </p>

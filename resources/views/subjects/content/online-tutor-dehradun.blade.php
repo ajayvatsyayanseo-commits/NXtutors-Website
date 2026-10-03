@@ -150,7 +150,7 @@
     results widen past the city, first to the rest of Uttarakhand and then to online tutors across India, and each card
     shows the tutor's base. Locality pages follow the same order: the area itself, then the zone, then Dehradun, then
     online. So an online card often means that the specialist you wanted is not within practical reach. Tutors who
-    register pass an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before a profile is published. That
+    register pass an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before a profile is marked Verified. That
     confirms identity only; it is not a police or background check, so the demo is where you judge the teaching.
   </p>
   </section>

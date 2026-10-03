@@ -233,7 +233,7 @@
   </ol>
   <p>
     Two or three tutors are matched to you, fees are shown before the demo, and you can change tutor later for free.
-    Tutors who join pass an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is listed.
+    Tutors who join pass an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   </section>
 

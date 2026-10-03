@@ -222,7 +222,7 @@
   <p>
     Your shortlist has two or three tutors with fees shown before the demo; if the first is not right, the next demo
     is arranged, and a later switch is free. Tutors who join pass an <a href="{{ url('/how-we-verify-tutors') }}">ID
-    check</a> before their profile is published.
+    check</a> before their profile is marked Verified.
   </p>
   </section>
 

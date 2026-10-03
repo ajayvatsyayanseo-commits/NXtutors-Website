@@ -216,7 +216,7 @@
   <section class="nx-guide__sec">
   <h2 id="ahnk-safe">Keeping home lessons with young children safe</h2>
   <ul>
-    <li>Tutors who join go through an ID check: a one-time code for the phone or email and a government photo ID that our team reviews before the profile goes live. It is not a police check; see <a href="{{ url('/how-we-verify-tutors') }}">how we verify tutors</a>.</li>
+    <li>Tutors who join go through an ID check: a one-time code for the phone or email and a government photo ID that our team reviews before the profile is marked Verified. It is not a police check; see <a href="{{ url('/how-we-verify-tutors') }}">how we verify tutors</a>.</li>
     <li>On the first day, match the person at the door against the name and photo on your shortlist.</li>
     <li>Use the living room or dining table, keep the door open, and have an adult at home for every lesson.</li>
     <li>Give the society gate the tutor's name in advance, or for an independent house, the lane and a nearby landmark.</li>

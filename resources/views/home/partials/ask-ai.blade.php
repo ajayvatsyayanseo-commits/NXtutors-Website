@@ -170,7 +170,7 @@
             $kb = array_values(array_filter([
               ['About ' . $kbTutor->name, 'Profile',
                trim(($kbTutor->education ? $kbTutor->education . '. ' : '') .
-                    ($kbTutor->experience ? $kbTutor->experience . ' experience.' : '')) ?: 'Verified tutor on NXTutors.'],
+                    ($kbTutor->experience ? $kbTutor->experience . ' experience.' : '')) ?: 'Tutor on NXTutors.'],
               $kbSubjects ? ['Subjects taught', 'Subjects', implode(', ', $kbSubjects)] : null,
               !empty($kbTutor->budget)
                 ? ['Fees', 'Fees', (function ($b) { $f = (new \App\NxtAi\Support\PublicTutorFieldMapper)->parseFee($b); return $f['label'] ? $f['label'] . (empty($f['per_hour']) ? ' per class' : '') : $b; })((string) $kbTutor->budget) . '. Final fee depends on class and location.']

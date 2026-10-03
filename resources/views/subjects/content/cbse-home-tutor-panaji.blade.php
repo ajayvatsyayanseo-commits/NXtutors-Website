@@ -235,7 +235,7 @@
   <p>
     To begin, share the class, the subjects, your locality and a landmark, and your free hours, then request a
     <a href="{{ url('/demo-class') }}">free demo class</a>. Every tutor who joins passes an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is published, and you can look
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified, and you can look
     through <a href="{{ url('/tutors') }}">tutor profiles</a> yourself. Teachers can see
     <a href="{{ url('/tuition-jobs/panaji') }}">tuition jobs in Panaji</a>, and the
     <a href="{{ url('/blog/panaji-home-tuition-guide') }}">Panaji home tuition guide</a> covers every zone.

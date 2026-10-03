@@ -244,7 +244,7 @@
   </ol>
   <p>
     The first class is a free demo, switching later is free, and tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   </section>
 

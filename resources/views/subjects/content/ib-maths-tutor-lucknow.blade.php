@@ -278,7 +278,7 @@
     Send the course, level, exam session, DP year, the problem in a sentence, your locality with its khand, sector or
     block, and your free slots. You receive two or three matched tutors, pick one for a
     <a href="{{ url('/demo-class') }}">free demo class</a>, and switching tutor later is free. Tutors who join go through
-    an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live, and you can browse
+    an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified, and you can browse
     <a href="{{ url('/tutors') }}">tutor profiles</a> first. For the sciences, see
     <a href="{{ url('/ib-physics-tutor-lucknow') }}">IB physics</a> and
     <a href="{{ url('/ib-igcse-chemistry-tutor-lucknow') }}">IB and IGCSE chemistry</a> tutors in Lucknow.

@@ -297,7 +297,7 @@
     Five facts do the job: the class; the course named in full (HSC, CHSE +2 Science, CBSE Standard or Basic, ICSE,
     ISC, IB or IGCSE); your locality plus a landmark; the days and hours you can offer; and what you hope to spend.
     Back come two or three maths tutors with their fees, and you pick one for the free demo. Tutors who join go
-    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before a profile is published. When no
+    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before a profile is marked Verified. When no
     suitable tutor can get to your side of Bhubaneswar at your hour, we propose online or part-online lessons. Our team
     works from Sector 66, Gurugram, and teaches online all over India; see the national
     <a href="{{ url('/maths-home-tutor') }}">maths home tutor</a> page, and the

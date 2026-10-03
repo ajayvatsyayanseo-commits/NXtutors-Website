@@ -216,7 +216,7 @@
     <li><strong>An adult at home, always.</strong> Hold sessions in a shared room, a dining table or a corner of the living room, with the door open.</li>
     <li><strong>The gate first.</strong> In CGHS societies and RWA-gated blocks, give the guard the tutor's name before the first visit; in plotted colonies, share the block, house number, floor and a map pin.</li>
     <li><strong>Check the face against the profile.</strong> The person who arrives should match the name and photo on the profile we shared.</li>
-    <li><strong>Know what the ID check covers.</strong> Tutors who join go through an ID check: a one-time code and a government photo ID reviewed by our team before the profile goes live. It is not a police or background check. See <a href="{{ url('/how-we-verify-tutors') }}">how we verify tutors</a>.</li>
+    <li><strong>Know what the ID check covers.</strong> Tutors who join go through an ID check: a one-time code and a government photo ID reviewed by our team before the profile is marked Verified. It is not a police or background check. See <a href="{{ url('/how-we-verify-tutors') }}">how we verify tutors</a>.</li>
   </ul>
   </section>
 

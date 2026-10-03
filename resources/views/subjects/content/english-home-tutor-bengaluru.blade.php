@@ -211,7 +211,7 @@
     Send us the class, the board, what worries you most (reading, writing formats, grammar, literature or speaking),
     your neighbourhood with its block, stage or sector, and the times that suit. We come back with two or three
     matched tutors and their fees, the first class is a free demo, and switching tutor later is free. Tutors who join
-    go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. You can
+    go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. You can
     also browse <a href="{{ url('/tutors') }}">tutor profiles</a> or book a <a href="{{ url('/demo-class') }}">free
     demo class</a>.
   </p>

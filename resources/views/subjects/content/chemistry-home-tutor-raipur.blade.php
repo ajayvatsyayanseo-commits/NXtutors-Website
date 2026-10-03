@@ -246,8 +246,7 @@
     timings if any, a landmark near home and the evenings on offer. Our reply lists two or three chemistry teachers,
     fee beside each name, and you invite one to a free demo. Not the right person? Another demo is arranged, and
     switching later is also free.
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live. Where travel rules out every good match, lessons can move online wholly or in part. Our
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. Where travel rules out every good match, lessons can move online wholly or in part. Our
     office is in Sector 66, Gurugram. For related subjects, see
     <a href="{{ url('/physics-home-tutor-raipur') }}">physics</a> and
     <a href="{{ url('/biology-home-tutor-raipur') }}">biology</a> tutors in Raipur, and the

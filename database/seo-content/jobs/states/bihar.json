@@ -101,7 +101,7 @@
     },
     {
       "name": "Siwan",
-      "note": "Women tutors in Siwan can keep home classes to their own part of town, teach only online, or combine both. We ask the parent to stay at home for the demo, and the profile only goes live after our team reviews a government photo ID."
+      "note": "Women tutors in Siwan can keep home classes to their own part of town, teach only online, or combine both. We ask the parent to stay at home for the demo, and the Verified badge appears only after our team reviews a government photo ID."
     }
   ],
   "women": {
@@ -118,8 +118,8 @@
   },
   "story": [
     "Join from Gaya, Bhagalpur or any Bihar town by confirming your phone or email with a one-time code. Pick home, online or both, and list the colonies you can reach.",
-    "Upload a government photo ID from the tutor dashboard. Our team reviews it against your profile before it goes live, and the same ID number cannot be used for a second account.",
-    "Once you pass the review, your profile is live with a Verified badge, showing the Bihar Board, CBSE or ICSE classes you teach, your language and the fee you set.",
+    "Upload a government photo ID from the tutor dashboard. Our team reviews it against your profile before it is marked Verified, and the same ID number cannot be used for a second account.",
+    "Once you pass the review, your profile carries the Verified badge, showing the Bihar Board, CBSE or ICSE classes you teach, your language and the fee you set.",
     "A parent near you sends a request with class, board and subject. Two or three tutors are shortlisted, starting with whoever lives closest, then further out, then online tutors.",
     "The family sees your fee before the first class, which is a free demo for them. Teach a normal lesson on the student's current chapter, in the language they are comfortable with.",
     "If they continue, you teach at home, online or both on the days agreed with the parent. Keep your timings and localities current so future requests fit your week."
@@ -139,7 +139,7 @@
     ],
     [
       "What does the identity check involve?",
-      "You confirm a phone number or email with a one-time code and upload a government photo ID; the team reviews it before your profile goes live. Details are on the How we verify tutors page. It is an ID check only, not police verification."
+      "You confirm a phone number or email with a one-time code and upload a government photo ID; the team reviews it before your profile is marked Verified. Details are on the How we verify tutors page. It is an ID check only, not police verification."
     ],
     [
       "How do tutor plans work?",

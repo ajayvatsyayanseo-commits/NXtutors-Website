@@ -217,8 +217,7 @@
     <li>Agree in advance what the tutor may bring, and keep snacks and toilet breaks with a family member.</li>
   </ul>
   <p>
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live. It is not a police or background check, so these habits still matter.
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. It is not a police or background check, so these habits still matter.
   </p>
   </section>
 

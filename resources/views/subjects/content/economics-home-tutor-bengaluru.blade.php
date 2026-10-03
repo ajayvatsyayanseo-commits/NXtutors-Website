@@ -248,7 +248,7 @@
     Tell us the course and year, which part is weakest (definitions, diagrams, numericals or evaluation), your
     neighbourhood, suitable times, and home, online or a mix. We send two or three matched tutors with fees, the first
     class is a <a href="{{ url('/demo-class') }}">free demo</a>, and switching tutor later is free. Tutors who join go
-    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   <p>
     Related pages: <a href="{{ url('/cbse-home-tutor-bengaluru') }}">CBSE tutors in Bengaluru</a>,

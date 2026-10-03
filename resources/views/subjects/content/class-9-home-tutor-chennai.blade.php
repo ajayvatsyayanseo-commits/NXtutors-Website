@@ -227,7 +227,7 @@
   </ol>
   <p>
     The first class with the tutor you pick is a free demo, and changing tutor later is free. Tutors who join go
-    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile goes live; it is not a
+    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified; it is not a
     police or background check.
   </p>
   </section>

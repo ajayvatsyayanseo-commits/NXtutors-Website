@@ -233,7 +233,7 @@
     Send the class, the board, the science that gives most trouble, your locality plus a landmark, and the free
     afternoons. Two or three science tutors come back with fees; pick one for a free demo. If that tutor does not suit,
     the next on the list gives a demo, and changing later is free too. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. If no suitable tutor can travel at your hour, we suggest lessons that are partly or wholly <a href="{{ url('/online-tutor-panaji') }}">online</a>.
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. If no suitable tutor can travel at your hour, we suggest lessons that are partly or wholly <a href="{{ url('/online-tutor-panaji') }}">online</a>.
     NXTutors is based in Sector 66, Gurugram, and teaches online nationwide. For the next subjects up, see the
     <a href="{{ url('/maths-home-tutor-panaji') }}">maths</a>, <a href="{{ url('/physics-home-tutor-panaji') }}">physics</a>
     and <a href="{{ url('/chemistry-home-tutor-panaji') }}">chemistry</a> pages for Panaji.

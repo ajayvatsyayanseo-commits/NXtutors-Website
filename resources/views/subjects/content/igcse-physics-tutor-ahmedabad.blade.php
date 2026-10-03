@@ -260,8 +260,7 @@
   <p>
     Send the grade, tier, practical paper, exam series, locality and preferred times; you receive two or three matched
     tutors, the first lesson is a <a href="{{ url('/demo-class') }}">free demo</a>, and moving to another tutor later is
-    free. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile
-    goes live. See <a href="{{ url('/tutors') }}">tutor profiles</a>, plus
+    free. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. See <a href="{{ url('/tutors') }}">tutor profiles</a>, plus
     <a href="{{ url('/igcse-maths-tutor-ahmedabad') }}">IGCSE maths</a> and
     <a href="{{ url('/ib-igcse-chemistry-tutor-ahmedabad') }}">IB and IGCSE chemistry</a> tutors in Ahmedabad.
   </p>

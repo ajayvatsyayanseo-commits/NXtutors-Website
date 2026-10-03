@@ -201,8 +201,7 @@
   </ol>
   <p>
     If the answers disappoint, we line up a demo with the next tutor on your list; switching later costs nothing.
-    Every tutor who joins goes through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile
-    goes live.
+    Every tutor who joins goes through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified.
   </p>
   </section>
 

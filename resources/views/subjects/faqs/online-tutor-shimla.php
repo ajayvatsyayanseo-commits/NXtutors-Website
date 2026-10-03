@@ -27,6 +27,6 @@ return [
     ],
     [
         'How do I know an online tutor is safe?',
-        'Tutors who join go through an ID check before their profile goes live; it confirms identity, not a police record. Keep lessons on a family device in a shared room, send links to a parent\'s phone, keep video on and use the free demo to judge the teaching.',
+        'Tutors who join go through an ID check before their profile is marked Verified; it confirms identity, not a police record. Keep lessons on a family device in a shared room, send links to a parent\'s phone, keep video on and use the free demo to judge the teaching.',
     ],
 ];

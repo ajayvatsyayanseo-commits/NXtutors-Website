@@ -229,7 +229,7 @@
   </ul>
   <p>
     If it does not work, the next tutor on your shortlist can take a demo, and switching later costs nothing. Every tutor
-    who joins completes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is published.
+    who joins completes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified.
   </p>
   </section>
 

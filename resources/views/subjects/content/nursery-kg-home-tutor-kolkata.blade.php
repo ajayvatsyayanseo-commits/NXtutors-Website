@@ -206,7 +206,7 @@
   </ul>
   <p>
     Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>: a one-time code on their
-    phone or email and a government photo ID that our team reviews before the profile goes live. It is not a police or
+    phone or email and a government photo ID that our team reviews before the profile is marked Verified. It is not a police or
     background check, so these home rules still matter.
   </p>
   </section>

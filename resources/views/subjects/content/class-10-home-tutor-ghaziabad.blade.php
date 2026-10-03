@@ -243,8 +243,7 @@
     <li><strong>Check the route and timing</strong> the tutor would use every week.</li>
   </ol>
   <p>
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live. See also our <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist</a>.
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. See also our <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist</a>.
   </p>
   </section>
 

@@ -236,8 +236,7 @@
     guide</a> has more detail.
   </p>
   <p>
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live. For other subjects, see our <a href="{{ url('/maths-home-tutor-faridabad') }}">maths</a> and
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. For other subjects, see our <a href="{{ url('/maths-home-tutor-faridabad') }}">maths</a> and
     <a href="{{ url('/science-home-tutor-faridabad') }}">science</a> tutors in Faridabad. English teachers can find open
     requests on the <a href="{{ url('/tuition-jobs/faridabad') }}">Faridabad tuition jobs</a> page.
   </p>

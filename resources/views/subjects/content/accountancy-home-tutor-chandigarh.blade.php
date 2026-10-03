@@ -226,8 +226,7 @@
   </ul>
   <p>
     If the fit is wrong, we arrange a demo with the next tutor on your shortlist, and changing tutor later is free.
-    Tutors who join NXTutors go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their
-    profile is published.
+    Tutors who join NXTutors go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   </section>
 

@@ -256,7 +256,7 @@
   <p>
     Tell us the class, the board, NEET plans, the chapters that trouble your child, the medium of study, your locality
     and times, home or online, and a budget. We send two or three matched biology tutors with fees, and tutors who join
-    go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. For the
+    go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. For the
     other sciences, see our <a href="{{ url('/physics-home-tutor-guwahati') }}">physics</a> and
     <a href="{{ url('/chemistry-home-tutor-guwahati') }}">chemistry</a> pages for Guwahati. Biology teachers in the city
     can see open requests on <a href="{{ url('/tuition-jobs/guwahati') }}">Guwahati tuition jobs</a>.

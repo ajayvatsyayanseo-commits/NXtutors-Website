@@ -249,7 +249,7 @@
     Share the board, class and Class 12 option, the chapters that need work, your area and a landmark, the times that suit,
     and home, online or both. We come back with two or three matched tutors and their fees; the first class is a
     <a href="{{ url('/demo-class') }}">free demo</a>, and switching tutor later is free. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   <p>
     Commerce students may also want <a href="{{ url('/economics-home-tutor-coimbatore') }}">economics tutors in

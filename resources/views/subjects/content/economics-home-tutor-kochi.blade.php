@@ -249,7 +249,7 @@
     Tell us the course, year and medium, the skill that needs most help, your area and a landmark, convenient times and
     the format you want. We put forward two or three tutors with their fees; the first class is a
     <a href="{{ url('/demo-class') }}">free demo</a>, and changing tutor afterwards is free. Tutors who join go through
-    an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   <p>
     Other pages for Kochi families: <a href="{{ url('/cbse-home-tutor-kochi') }}">CBSE tutors</a>,

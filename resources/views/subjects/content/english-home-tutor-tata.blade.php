@@ -242,8 +242,7 @@
   <p>
     Send the class and board, the skill you are worried about, your locality with a landmark (and zone number in
     Birsanagar), your days and times, home or online, and a budget. We reply with two or three matched English tutors
-    and their fees. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before
-    their profile goes live. Our <a href="{{ url('/maths-home-tutor-tata') }}">maths</a> and
+    and their fees. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. Our <a href="{{ url('/maths-home-tutor-tata') }}">maths</a> and
     <a href="{{ url('/science-home-tutor-tata') }}">science</a> pages cover other subjects in Jamshedpur, and English
     teachers in the city can see open requests on <a href="{{ url('/tuition-jobs/tata') }}">Jamshedpur tuition jobs</a>.
   </p>

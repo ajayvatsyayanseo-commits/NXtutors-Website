@@ -229,7 +229,7 @@
   <p>
     If the fit is wrong, another tutor from your shortlist can give a separate demo, and changing tutor later is free.
     Keep lessons in a shared room while an adult is home. Tutors who join complete an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   </section>
 

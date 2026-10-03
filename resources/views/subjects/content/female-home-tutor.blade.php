@@ -214,7 +214,7 @@
   <h3>What the NXTutors ID check covers</h3>
   <p>
     Tutors who join go through an ID check. They confirm their phone number or email with a one-time code, and they
-    upload a government photo ID that our team reviews before the profile goes live. Real tutors who pass carry a
+    upload a government photo ID that our team reviews before the profile is marked Verified. Real tutors who pass carry a
     <strong>Verified</strong> badge on their card and profile. The full process is on our
     <a href="{{ url('/how-we-verify-tutors') }}">how we verify tutors</a> page.
   </p>

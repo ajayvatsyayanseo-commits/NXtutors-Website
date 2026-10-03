@@ -227,7 +227,7 @@
   <p>
     Send the class, board, the part of English that worries you, the language your child finds easiest, your locality
     with a landmark and the free afternoons. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. If no one suitable can
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. If no one suitable can
     travel, we suggest <a href="{{ url('/online-tutor-panaji') }}">online lessons</a>. NXTutors works from Sector 66,
     Gurugram, and teaches online across India; you can also read about
     <a href="{{ url('/cbse-home-tutor-panaji') }}">CBSE tutors in Panaji</a>. English teachers in Panaji can see open

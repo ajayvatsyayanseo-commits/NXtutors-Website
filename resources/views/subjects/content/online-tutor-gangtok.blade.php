@@ -109,7 +109,7 @@
     Online names can also turn up when you asked for home tuition. If few tutors near you fit the request, the list
     widens step by step, from your locality to its zone, then the whole city, then tutors in the rest of the state and
     across India who teach online, and each card shows where the tutor lives. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. It is an identity check,
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. It is an identity check,
     not a police or background check, so the demo remains the real test of the teaching.
   </p>
   </section>

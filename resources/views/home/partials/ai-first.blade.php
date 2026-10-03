@@ -86,7 +86,7 @@
       <h3>Where AI stops and people start</h3>
     </div>
     <ul>
-      <li><strong>A person verifies every real tutor</strong>, and sample profiles are clearly marked as samples.</li>
+      <li><strong>A person checks the ID of every tutor who joins</strong>; the Verified badge appears only after that review, and sample profiles are clearly marked as samples.</li>
       <li><strong>The free demo class decides</strong>, not an algorithm: you meet the tutor before you commit.</li>
       <li><strong>Teachers set the plan</strong> and have the final say on how your child learns.</li>
       <li><strong>The AI can make mistakes</strong>, and we say so. Check important answers with the teacher.</li>

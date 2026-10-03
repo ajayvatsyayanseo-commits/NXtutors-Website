@@ -243,7 +243,7 @@
     Send the class, the board and medium, the main concern, your locality and side of the river, the times that
     suit, and a budget. We return two or three matched English tutors with fees; the first class with the one you
     choose is a free demo, and switching later is free. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. You can also browse
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. You can also browse
     <a href="{{ url('/tutors') }}">tutor profiles</a> or book a <a href="{{ url('/demo-class') }}">free demo class</a>
     directly.
   </p>

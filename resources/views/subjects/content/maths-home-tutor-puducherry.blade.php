@@ -286,7 +286,7 @@
     Five details make the shortlist sharper: the class; the syllabus by name (CBSE Standard or Basic, state-board
     SSLC or +2, ICSE, ISC, IB or IGCSE); your area with a landmark a newcomer could find; the days and times you can
     offer; and a budget. We reply with two or three matched maths tutors and their fees, and tutors who join go
-    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. If nobody
+    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. If nobody
     suitable can reach your part of town at your hour, we suggest an online or mixed plan. NXTutors works from Sector
     66, Gurugram, and teaches online across India; the national <a href="{{ url('/maths-home-tutor') }}">maths home
     tutor</a> page shows how we match in other cities, and the

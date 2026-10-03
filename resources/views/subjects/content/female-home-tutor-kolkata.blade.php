@@ -202,7 +202,7 @@
   <h2 id="fmko-check">What is checked before she appears, and what the demo is for</h2>
   <p>
     Everyone who joins as a tutor confirms a phone number or email by one-time code and uploads a government photo ID,
-    which a member of our team looks at before the profile is published; real tutors who clear this show a Verified
+    which a member of our team looks at before the profile is marked Verified; real tutors who clear this show a Verified
     badge. That is an identity check only. It is not a police or background check and it tells you nothing about how
     well she teaches; the full steps are on <a href="{{ url('/how-we-verify-tutors') }}">how we verify tutors</a>. Any
     profile marked as a sample is a placeholder: unverified and not bookable.

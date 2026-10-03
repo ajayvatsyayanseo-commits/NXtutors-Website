@@ -297,7 +297,7 @@
   <p>
     You get two or three matched tutors, each with their fee visible before you book, and the opening class is a free
     demo; changing tutor later costs nothing. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is published. For more demo questions,
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified. For more demo questions,
     see our <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">checklist for parents</a>.
   </p>
   </section>

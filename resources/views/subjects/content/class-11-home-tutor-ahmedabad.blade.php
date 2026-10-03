@@ -253,7 +253,7 @@
   </ul>
   <p>
     You pay nothing for this first lesson, and moving to another tutor later costs nothing either. Every tutor who
-    joins passes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is published.
+    joins passes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified.
   </p>
   </section>
 

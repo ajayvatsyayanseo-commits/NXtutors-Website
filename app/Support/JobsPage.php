@@ -26,7 +26,7 @@ class JobsPage
     public const STORY = [
         ['Sign up with a one-time code', 'Apply on WhatsApp and our team sets up your tutor account with you. The first time you log in, a one-time code sent to your email confirms the account is yours.'],
         ['Upload your ID; our team reviews it', 'In your dashboard, add a government photo ID: Aadhaar, voter ID, passport or driving licence. A document number can belong to one account only, and our team reviews it.'],
-        ['Your profile goes live with the Verified badge', 'After the review your profile carries the Verified badge and shows what families need: your subjects, classes, boards, fee per class and the areas you teach in.'],
+        ['Your profile carries the Verified badge', 'After the review your profile carries the Verified badge and shows what families need: your subjects, classes, boards, fee per class and the areas you teach in.'],
         ['A family nearby sends a request', 'Families tell us the class, board, subject and area. We shortlist two or three tutors who fit, nearest first, instead of sending the request to everyone.'],
         ['Free demo; the family sees your fee first', 'The first class is a free demo, so the family decides after meeting you. Your fee per class is on your profile, so they have seen it before the demo.'],
         ['Teach at home, online or both', 'Teach at home in the areas you chose, online from wherever you are, or a mix of the two. Change your areas and hours from your dashboard whenever your week changes.'],
@@ -67,7 +67,7 @@ class JobsPage
         ['Confirm with a one-time code', 'The first time you log in, we email you a one-time code. Entering it confirms the account is yours.'],
         ['Complete your profile', 'In your dashboard, add your subjects, classes and boards, your fee per class, whether you teach at home, online or both, and the areas you travel to.'],
         ['Upload your ID', 'In the Documents section, choose Aadhaar, voter ID, passport or driving licence, enter the number and upload the front and back. A document number can be linked to one account only.'],
-        ['Team review, then live', 'Our team reviews your ID before your profile is active; real tutors who pass carry the Verified badge. It is an identity check, not a police or background check.'],
+        ['Team review, then Verified', 'Our team reviews your ID before your profile is marked Verified. It is an identity check, not a police or background check.'],
         ['Requests and the free demo', 'When a family near you (or online) asks for what you teach, you can be one of the two or three tutors we share. The first class is a free demo, and the family has seen your fee.'],
     ];
 

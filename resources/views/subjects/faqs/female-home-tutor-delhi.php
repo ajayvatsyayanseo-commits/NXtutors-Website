@@ -23,7 +23,7 @@ return [
     ],
     [
         'Are the female tutors on NXTutors verified?',
-        'Tutors who join go through an ID check: a one-time code on phone or email and a government photo ID that our team reviews before the profile goes live. Real tutors who pass carry a Verified badge. It is not a police or background check, and sample profiles are labelled as samples and never shown as verified.',
+        'Tutors who join go through an ID check: a one-time code on phone or email and a government photo ID that our team reviews before the profile is marked Verified. Real tutors who pass carry a Verified badge. It is not a police or background check, and sample profiles are labelled as samples and never shown as verified.',
     ],
     [
         'Does a female home tutor charge more in Delhi?',

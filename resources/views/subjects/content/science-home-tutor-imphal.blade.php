@@ -234,7 +234,7 @@
     Tell us the class, the board, your locality and leikai, the afternoons that are free and the branch that worries you
     most. We reply with two or three science tutors and their fees, and you choose one for the free demo. If it does not
     feel right, another tutor can take the next demo, and switching later is free. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. You can also browse
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. You can also browse
     <a href="{{ url('/tutors') }}">tutor profiles</a>, read the national
     <a href="{{ url('/science-home-tutor') }}">science home tutor</a> page or the
     <a href="{{ url('/blog/imphal-home-tuition-guide') }}">Imphal home tuition guide</a>. Science teachers in the city

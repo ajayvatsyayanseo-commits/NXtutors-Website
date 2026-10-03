@@ -247,8 +247,7 @@
   <p>
     Start by sending your child's class, board and medium, any NEET plans, the units that are hurting, your sector or
     locality, suitable times and a budget. A shortlist of two or three biology tutors follows, every fee included.
-    Each person who signs up to teach goes through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before a
-    profile appears. For the other sciences, see the <a href="{{ url('/physics-home-tutor-gandhinagar') }}">physics</a> and
+    Each person who signs up to teach goes through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before a profile is marked Verified. For the other sciences, see the <a href="{{ url('/physics-home-tutor-gandhinagar') }}">physics</a> and
     <a href="{{ url('/chemistry-home-tutor-gandhinagar') }}">chemistry</a> tutor pages for Gandhinagar; the national
     <a href="{{ url('/biology-home-tutor') }}">biology home tutor</a> guide covers IGCSE and IB in depth. If you teach biology
     and live in Gandhinagar, current family requests are on

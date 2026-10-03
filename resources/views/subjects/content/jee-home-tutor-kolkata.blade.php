@@ -234,7 +234,7 @@
     Send the class, board, target (Main, or Main and Advanced), subjects, coaching days and your neighbourhood with its
     block, para or tower. We send two or three matched tutors, and you book a
     <a href="{{ url('/demo-class') }}">free demo class</a>. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. Students aiming at medicine
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. Students aiming at medicine
     can read the <a href="{{ url('/neet-home-tutor-kolkata') }}">NEET home tutor in Kolkata</a> page, and teachers can see open
     requests on <a href="{{ url('/tuition-jobs/kolkata') }}">Kolkata tuition jobs</a>. Our topic plans for
     <a href="{{ url('/blog/jee-maths-topicwise-prep') }}">JEE maths</a>,

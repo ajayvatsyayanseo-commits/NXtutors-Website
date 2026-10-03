@@ -249,7 +249,7 @@
     Send the class, the paper by name (ICSE, ISC, CBSE, Madhyamik, Higher Secondary, IGCSE or IB), the skill that
     worries you most, the language your child is comfortable in, your neighbourhood with a landmark, your days and
     times, and a budget. We reply with two or three matched tutors and their fees. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. NXTutors works from
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. NXTutors works from
     Sector 66, Gurugram, and teaches online across India. Families who also need
     <a href="{{ url('/maths-home-tutor-kolkata') }}">maths</a> or <a href="{{ url('/science-home-tutor-kolkata') }}">science</a>
     help in Kolkata can start from those pages, and English teachers living in the city can find open requests on the

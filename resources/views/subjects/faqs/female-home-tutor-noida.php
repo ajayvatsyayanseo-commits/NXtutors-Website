@@ -19,7 +19,7 @@ return [
     ],
     [
         'Are female tutors on NXTutors police-verified?',
-        'No. What every new tutor completes is an identity check: phone or email confirmed by a one-time code, and a government photo ID examined by our team before the profile is published. That is not a police or background check, so use the free demo to meet her and form your own view.',
+        'No. What every new tutor completes is an identity check: phone or email confirmed by a one-time code, and a government photo ID examined by our team before the profile is marked Verified. That is not a police or background check, so use the free demo to meet her and form your own view.',
     ],
     [
         'What if no female tutor can reach us at our time?',

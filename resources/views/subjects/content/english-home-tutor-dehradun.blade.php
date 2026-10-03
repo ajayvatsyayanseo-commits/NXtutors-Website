@@ -265,7 +265,7 @@
     For a shortlist, tell us your child's class and board, the English skill that concerns you, the language your
     child feels most at home in, your locality with a landmark, the days and hours that work, and what you would like
     to spend. Two or three matched tutors come back with their fees. Anyone joining NXTutors as a tutor goes through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is published. Dehradun pages for
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified. Dehradun pages for
     <a href="{{ url('/maths-home-tutor-dehradun') }}">maths</a> and
     <a href="{{ url('/science-home-tutor-dehradun') }}">science</a> tutors cover other subjects, and local English
     teachers looking for students can open <a href="{{ url('/tuition-jobs/dehradun') }}">Dehradun tuition jobs</a>.

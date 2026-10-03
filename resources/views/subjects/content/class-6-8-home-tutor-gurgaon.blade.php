@@ -281,7 +281,7 @@
     Our <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist for parents</a> has more
     questions. If the first tutor is not the right fit, we arrange a demo with the next one on the shortlist, and
     switching tutor later is free. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>
-    before their profile goes live.
+    before their profile is marked Verified.
   </p>
   </section>
 

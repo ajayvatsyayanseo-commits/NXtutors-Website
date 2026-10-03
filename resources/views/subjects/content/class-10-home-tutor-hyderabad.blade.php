@@ -236,7 +236,7 @@
   </ol>
   <p>
     If the match is wrong, the next tutor on your shortlist can take a demo, and changing tutor later is free. Tutors
-    who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live,
+    who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified,
     and our <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist</a> has more questions.
   </p>
   </section>

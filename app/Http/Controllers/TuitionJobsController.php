@@ -49,7 +49,7 @@ class TuitionJobsController extends Controller
 
         $faqs = $hub['faqs'] ?? [];
         $faqs = $faqs !== [] ? $faqs : [
-            ['How do I find home tuition or online tutor jobs in India on NXTutors?', 'Apply on WhatsApp with your subjects, classes, city and the areas you can travel to; our team sets up your tutor account with you. After our team checks your identity document, you appear on the matching city, area and subject pages and in the two or three tutors we shortlist for each family request.'],
+            ['How do I find home tuition or online tutor jobs in India on NXTutors?', 'Apply on WhatsApp with your subjects, classes, city and the areas you can travel to; our team sets up your tutor account with you. You appear on the matching city, area and subject pages and in the two or three tutors we shortlist for each family request; the Verified badge follows once our team has checked your identity document.'],
             ['Can I teach online from any city?', 'Yes. Choose online or both on your profile. Online requests can come from families anywhere in India; home requests come only from the areas you list, so you are never sent across a city you cannot reach.'],
             ['Can I teach only Classes 1 to 5, or only part time?', 'Yes. Your profile lists the classes, subjects and boards you teach and the hours you are free, and requests are matched on those, so you can keep to primary classes or a few evenings a week.'],
             ['Who sets the fee?', 'You do. Put your fee per class on your profile; families see it before the free demo class. ' . self::FEE_SENTENCE],
@@ -76,7 +76,7 @@ class TuitionJobsController extends Controller
         $faqs = $content['faqs'] ?? [];
         if ($faqs === []) {
             $faqs = [
-                ['How do I get tuition jobs in ' . $label . '?', 'Apply on WhatsApp with your city and the areas you can travel to; our team sets up your profile with you. After our identity check you appear on the pages for your city and areas, and in shortlists for families near you. Online classes can come from anywhere in India.'],
+                ['How do I get tuition jobs in ' . $label . '?', 'Apply on WhatsApp with your city and the areas you can travel to; our team sets up your profile with you. You appear on the pages for your city and areas, and in shortlists for families near you; the Verified badge follows our identity check. Online classes can come from anywhere in India.'],
                 ['Which cities in ' . $label . ' does NXTutors cover?', 'The cities listed on this page have their own tutor pages for families. If your town is not listed, apply anyway: add your town and online teaching, and we open new cities where tutors and families are.'],
                 ['Who sets the fee?', 'You do; families see it before the free demo class. ' . self::FEE_SENTENCE],
             ];
@@ -147,7 +147,7 @@ class TuitionJobsController extends Controller
         $faqs = $content['faqs'] ?? [];
         if ($faqs === []) {
             $faqs = [
-                ['How do I get home tuition jobs in ' . $label . ' through NXTutors?', 'Apply on WhatsApp and list the areas of ' . $cityName . ' you can travel to. After our team checks your identity document, you appear on those area pages and in our shortlists, and families book a free demo class with you.'],
+                ['How do I get home tuition jobs in ' . $label . ' through NXTutors?', 'Apply on WhatsApp and list the areas of ' . $cityName . ' you can travel to. You appear on those area pages and in our shortlists, families book a free demo class with you, and the Verified badge follows once our team has checked your identity document.'],
                 ['How much can a home tutor earn in ' . $label . '?', 'You set your own fee per class, and families see it before the demo. ' . self::FEE_SENTENCE],
                 ['Can I teach online as well as at home?', 'Yes. Choose home, online or both. Online classes can come from families anywhere in India; home requests come from the areas you list.'],
                 ['What does it cost to join?', 'See the tutor plans on our pricing page before you sign up; what each plan includes is listed there.'],

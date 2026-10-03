@@ -166,8 +166,7 @@
     search widens step by step, to tutors elsewhere in Karnataka and then across India who teach online, and every
     card shows where the tutor is based. Locality pages follow the same order: tutors in the area, then the zone,
     then the city, then online. An online name on your list usually means the specialist you need does not live
-    within easy reach. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before
-    the profile goes live; it is not a police or background check, so judge the teaching in the demo.
+    within easy reach. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified; it is not a police or background check, so judge the teaching in the demo.
   </p>
   </section>
 

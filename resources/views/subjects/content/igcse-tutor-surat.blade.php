@@ -222,7 +222,7 @@
   <p>
     Every request gets a shortlist of two or three tutors, each showing a fee up front, and a later change of tutor
     costs you nothing. Anyone joining as a tutor goes through an <a href="{{ url('/how-we-verify-tutors') }}">ID
-    check</a> before the profile is published.
+    check</a> before the profile is marked Verified.
   </p>
   </section>
 

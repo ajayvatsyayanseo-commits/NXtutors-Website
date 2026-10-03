@@ -255,7 +255,7 @@
   </ol>
   <p>
     Each request brings two or three matched tutors, with fees shown before any demo and free switching later on.
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. More
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. More
     questions are in our <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist</a>.
   </p>
   </section>

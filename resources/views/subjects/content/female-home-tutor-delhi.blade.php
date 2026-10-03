@@ -202,7 +202,7 @@
   <h2 id="dfm-check">What the ID check covers, and what the demo is for</h2>
   <p>
     Every tutor who joins completes an ID check. A one-time code confirms their phone or email, and our team looks at
-    an uploaded government photo ID before any profile is published; genuine tutors who clear it carry a Verified
+    an uploaded government photo ID before any profile is marked Verified; genuine tutors who clear it carry a Verified
     badge. The check is about identity only: no police or background check is involved, and it cannot tell you how
     well someone teaches. The
     details are on <a href="{{ url('/how-we-verify-tutors') }}">how we verify tutors</a>. Sample profiles are labelled

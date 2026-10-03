@@ -170,7 +170,7 @@
     @include('partials.page-assist', [
       'assistTeachers' => $hubTutors,
       'assistTitle' => 'Suggested home tutors in '.$city->city_name,
-      'assistSub' => 'Verified tutors first, then sample profiles, which are marked',
+      'assistSub' => 'Real tutors first, then sample profiles, which are marked',
       'aiPage' => ['type' => 'city', 'city' => $city->city_name],
     ])
 

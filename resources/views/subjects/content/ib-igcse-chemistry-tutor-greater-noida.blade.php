@@ -266,7 +266,7 @@
     Give us the course, tier or level, school year, the topics causing trouble, your sector or society and the times
     you are free. We return two or three matched names; book a <a href="{{ url('/demo-class') }}">free demo</a> with
     whichever you prefer, and swap later at no cost. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profiles go live. Explore
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profiles are marked Verified. Explore
     <a href="{{ url('/tutors') }}">tutor profiles</a>, or open our <a href="{{ url('/ib-physics-tutor-greater-noida') }}">IB
     physics</a> and <a href="{{ url('/igcse-physics-tutor-greater-noida') }}">IGCSE physics</a> pages for Greater
     Noida, and the <a href="{{ url('/neet-home-tutor-greater-noida') }}">NEET</a> page for students also preparing for

@@ -282,7 +282,7 @@
     A useful request names the course and level, the exam session, the DP year, the trouble spots, your colony or
     nearest metro station and two or three possible slots. Two or three matched tutors come back to you, one of them
     takes a <a href="{{ url('/demo-class') }}">free demo class</a>, and a later change of tutor costs nothing. Every
-    tutor who joins passes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before going live; you are
+    tutor who joins passes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the Verified badge appears; you are
     welcome to look through <a href="{{ url('/tutors') }}">tutor profiles</a> beforehand. Science students can also use
     our pages for
     <a href="{{ url('/ib-physics-tutor-delhi') }}">IB physics</a> and

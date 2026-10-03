@@ -241,8 +241,7 @@
     Tell us the class and board, the science that is slipping, your locality with a landmark, and the free
     afternoons in term and in winter. Our shortlist names two or three science tutors with their fees; the one you
     choose gives a free demo. When no one suitable can travel at your hour, the suggestion becomes an online or mixed
-    plan. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before
-    their profile goes live. For the senior years see <a href="{{ url('/physics-home-tutor-leh') }}">physics</a>,
+    plan. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. For the senior years see <a href="{{ url('/physics-home-tutor-leh') }}">physics</a>,
     <a href="{{ url('/chemistry-home-tutor-leh') }}">chemistry</a> and
     <a href="{{ url('/biology-home-tutor-leh') }}">biology</a> tutors in Leh, or the
     <a href="{{ url('/cbse-home-tutor-leh') }}">CBSE home tutors in Leh</a> page for all subjects. Science teachers

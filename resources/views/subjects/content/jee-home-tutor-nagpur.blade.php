@@ -244,7 +244,7 @@
     Tell us the class, board and medium, the target exam, subjects, coaching days, your locality and the road it is
     off, and the times that work. Book a <a href="{{ url('/demo-class') }}">free demo class</a> or browse
     <a href="{{ url('/tutors') }}">tutor profiles</a>. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. For medical entrance, see the
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. For medical entrance, see the
     <a href="{{ url('/neet-home-tutor-nagpur') }}">NEET home tutor in Nagpur</a> page; teachers can find students on
     <a href="{{ url('/tuition-jobs/nagpur') }}">Nagpur tuition jobs</a>.
   </p>

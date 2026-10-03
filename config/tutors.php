@@ -31,4 +31,18 @@ return [
     'demand_exclude_ids' => [],
 
     'match_promise' => 'We match you with a verified tutor in 10 minutes',
+
+    /*
+    | New tutors (owner decision, 3 Oct 2026). While hiring fast, a real tutor
+    | who signs up goes live at once, and the Verified badge appears only after
+    | the team has checked the ID and pressed Approve (register.id_verified_at).
+    | Set TUTORS_PUBLISH_BEFORE_REVIEW=false to go back to "approve first, then
+    | live": new tutors then stay pending ('p') until approved.
+    |
+    | Every new real tutor sends one "New tutor to check" email to
+    | review_email (App\Services\TutorIntake), in both modes.
+    */
+    'publish_before_review' => (bool) env('TUTORS_PUBLISH_BEFORE_REVIEW', true),
+
+    'review_email' => env('TUTOR_REVIEW_EMAIL', 'support@nxtutors.com'),
 ];

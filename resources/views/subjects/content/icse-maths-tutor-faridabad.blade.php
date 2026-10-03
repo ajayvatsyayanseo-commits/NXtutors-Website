@@ -266,8 +266,7 @@
   </ol>
   <p>
     We put forward two or three tutors with fees on view before the demo; the first class is free and so is a later
-    change of tutor. Each tutor completes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> with us before
-    the profile is published.
+    change of tutor. Each tutor completes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> with us before the profile is marked Verified.
   </p>
   </section>
 

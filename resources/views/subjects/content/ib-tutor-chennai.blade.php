@@ -221,7 +221,7 @@
   </ol>
   <p>
     There are two or three tutors on your shortlist, with fees shown up front and a free switch if needed later. Tutors
-    who sign up go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profiles go live.
+    who sign up go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profiles are marked Verified.
   </p>
   </section>
 

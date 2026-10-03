@@ -179,7 +179,7 @@
   <section class="nx-guide__sec">
   <h2 id="gnfm-checks">What do our checks cover, and what is left for the demo?</h2>
   <p>
-    Before any profile is published, the tutor verifies a phone number or email by one-time code and submits government photo ID, which our team checks by hand; real tutors who clear this get a Verified badge. That establishes who she is, nothing more. There is no police or background screening, and no judgement of her teaching; details are on <a href="{{ url('/how-we-verify-tutors') }}">how we verify tutors</a>. Sample profiles are labelled, carry no badge and cannot be booked.
+    Before any profile is marked Verified, the tutor verifies a phone number or email by one-time code and submits government photo ID, which our team checks by hand; real tutors who clear this get a Verified badge. That establishes who she is, nothing more. There is no police or background screening, and no judgement of her teaching; details are on <a href="{{ url('/how-we-verify-tutors') }}">how we verify tutors</a>. Sample profiles are labelled, carry no badge and cannot be booked.
   </p>
   <p>
     Teaching quality is for you to judge in the free demo. Stay within earshot, watch whether your child or the tutor does most of the writing, and ask for a rough plan of the first four weeks. Later, get your child's own verdict, out of the tutor's hearing for a teenager. A no means the next shortlisted tutor gives a separate demo; any switch after that is free too. The <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist</a> suggests more to look for.

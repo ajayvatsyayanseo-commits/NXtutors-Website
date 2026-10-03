@@ -223,7 +223,7 @@
     <li>Keep lessons in a shared room, with an adult at home who can look in.</li>
     <li>Use the meeting link the family controls or one you have confirmed, and keep the camera on for both sides.</li>
     <li>Keep all messages to the parent's number for younger students.</li>
-    <li>Know what the ID check covers: tutors who join confirm a one-time code and upload a government photo ID that our team reviews before the profile goes live. It is not a police or background check. See <a href="{{ url('/how-we-verify-tutors') }}">how we verify tutors</a>.</li>
+    <li>Know what the ID check covers: tutors who join confirm a one-time code and upload a government photo ID that our team reviews before the profile is marked Verified. It is not a police or background check. See <a href="{{ url('/how-we-verify-tutors') }}">how we verify tutors</a>.</li>
   </ul>
   </section>
 

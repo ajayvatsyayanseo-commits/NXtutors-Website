@@ -202,7 +202,7 @@
   <p>
     An adult should always be at home during sessions, and lessons should happen in a shared room with the door
     open. Tutors who join NXTutors go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>: a one-time
-    code for phone or email and a government photo ID reviewed by the team before the profile goes live. This is not
+    code for phone or email and a government photo ID reviewed by the team before the profile is marked Verified. This is not
     a police or background check, so meet the tutor at the demo, ask questions and trust your judgement. In gated
     complexes, register the tutor with the guard before the first visit; in houses and builder floors, share a
     landmark so the tutor does not wander looking for the gate. If you would prefer a woman tutor, our

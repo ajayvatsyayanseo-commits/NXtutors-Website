@@ -3,7 +3,7 @@
 
 @section('summary')
 <ul>
-  <li>Tutors who join go through an ID check before their profile goes live. It confirms <strong>who</strong> the tutor is. It is <strong>not</strong> a police verification or a criminal background check.</li>
+  <li>Tutors who join go through an ID check before their profile is marked Verified. It confirms <strong>who</strong> the tutor is. It is <strong>not</strong> a police verification or a criminal background check.</li>
   <li>Parents stay responsible for supervising their child. Be at home for the demo, check the tutor against the profile, and keep young children's classes in a shared room.</li>
   <li>Tutors must follow clear rules: talk to the parent, not privately to the child; no recording without consent; no physical punishment.</li>
   <li>If anything worries you, stop the classes and tell us. In an emergency, call 112 first. For a child in distress, call 1098.</li>
@@ -19,7 +19,7 @@
 <section>
   <h2 id="what-we-do">2. What NXTutors does</h2>
   <ul>
-    <li><strong>ID check before a profile goes live.</strong> Tutors confirm their phone or email with a one-time code and upload a government photo ID. Our team reviews it, and the profile stays pending until it is made active. Each ID number can be linked to only one tutor account. See <a href="{{ url('/how-we-verify-tutors') }}">How we verify tutors</a>.</li>
+    <li><strong>ID check before a profile is marked Verified.</strong> Tutors confirm their phone or email with a one-time code and upload a government photo ID. Our team reviews it, and the Verified badge appears only after that review. Each ID number can be linked to only one tutor account. See <a href="{{ url('/how-we-verify-tutors') }}">How we verify tutors</a>.</li>
     <li><strong>The Verified badge</strong> is shown only on real tutors who passed the check. Sample profiles are labelled and are never bookable.</li>
     <li><strong>A free demo first</strong>, so you meet the tutor before committing, and <strong>free switching</strong> if a tutor is not right.</li>
     <li><strong>Tutor declarations.</strong> Tutors confirm that they have not been convicted of, and are not facing a charge for, an offence involving children, a sexual offence or an offence of violence.</li>

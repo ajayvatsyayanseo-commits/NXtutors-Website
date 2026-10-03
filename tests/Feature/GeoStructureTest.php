@@ -2100,7 +2100,7 @@ class GeoStructureTest extends TestCase
         $html = $this->get('/become-a-tutor')->assertOk()->getContent();
         $text = html_entity_decode(strip_tags($html));
         $pos = -1;
-        foreach (['Apply on WhatsApp', 'Confirm with a one-time code', 'Complete your profile', 'Upload your ID', 'Team review, then live', 'Requests and the free demo'] as $step) {
+        foreach (['Apply on WhatsApp', 'Confirm with a one-time code', 'Complete your profile', 'Upload your ID', 'Team review, then Verified', 'Requests and the free demo'] as $step) {
             $p = strpos($text, $step, max(0, $pos));
             $this->assertNotFalse($p, $step);
             $this->assertGreaterThan($pos, $p, $step . ' in order');

@@ -241,7 +241,7 @@
   <p>
     Send the class and board, the skill that concerns you most, your locality with a landmark, your days and times,
     home or online, and a budget. We shortlist two or three English tutors with fees, and tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. The national
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. The national
     <a href="{{ url('/english-home-tutor') }}">English home tutor</a> guide covers IGCSE and IB English in depth, and
     our <a href="{{ url('/maths-home-tutor-ranchi') }}">maths</a> and <a href="{{ url('/science-home-tutor-ranchi') }}">science</a>
     pages for Ranchi cover other subjects. English teachers in Ranchi can see open requests on

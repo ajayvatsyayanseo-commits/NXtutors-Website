@@ -184,15 +184,29 @@
                         {{-- ID review (DPDP: the documents are private; they load through an admin-only route). --}}
                         <div class="border rounded p-3 mb-4" style="background:#f8fafc">
                             <div class="d-flex justify-content-between align-items-center flex-wrap" style="gap:12px">
+                                @php $idVerified = $page->isIdVerified(); @endphp
                                 <h5 class="mb-0">ID verification
-                                    @if($page->status === 'p')<span class="badge bg-warning text-dark ms-2">Pending review</span>
-                                    @elseif($page->status === 't')<span class="badge bg-success ms-2">Approved</span>@endif
+                                    @if($page->status === 'p')<span class="badge bg-warning text-dark ms-2">Pending review</span>@endif
+                                    @if($idVerified)<span class="badge bg-success ms-2">Verified</span>
+                                    @elseif($page->join_as === 'teacher' && $page->status === 't')<span class="badge bg-secondary ms-2">Live · Not verified yet</span>@endif
                                 </h5>
                                 @if($page->status === 'p')
                                     <form method="POST" action="{{ route('super.teacher.approve', $page->id) }}"
                                           onsubmit="return confirm('Approve {{ addslashes($page->name) }}? The profile becomes public and Verified.')">
                                         @csrf
                                         <button class="btn btn-success">Approve and publish</button>
+                                    </form>
+                                @elseif($page->join_as === 'teacher' && $page->status === 't' && ! $idVerified && empty($page->is_sample))
+                                    <form method="POST" action="{{ route('super.teacher.approve', $page->id) }}"
+                                          onsubmit="return confirm('ID checked for {{ addslashes($page->name) }}? This turns the Verified badge on.')">
+                                        @csrf
+                                        <button class="btn btn-success">Approve ID: turn Verified badge on</button>
+                                    </form>
+                                @elseif($idVerified && \App\Models\Register::hasIdVerifiedColumn())
+                                    <form method="POST" action="{{ route('super.teacher.unverify', $page->id) }}"
+                                          onsubmit="return confirm('Remove the Verified badge from {{ addslashes($page->name) }}? The profile stays live.')">
+                                        @csrf
+                                        <button class="btn btn-outline-danger">Remove Verified</button>
                                     </form>
                                 @endif
                             </div>

@@ -234,7 +234,7 @@
   </ul>
   <p>
     Not the right fit? Tell us and we arrange the next demo on the shortlist; a later switch is free as well. Tutors
-    who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   </section>
 

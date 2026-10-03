@@ -221,8 +221,7 @@
     their fees, and you choose one for a <a href="{{ url('/demo-class') }}">free demo class</a>. After the demo, ask
     yourself whether the tutor looked at a marked school answer first, whether your child wrote or spoke something,
     and whether there is a clear next step; if not, the next tutor on your list gives a demo, and a later switch is free.
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live. The <a href="{{ url('/maths-home-tutor-shimla') }}">maths</a> and
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. The <a href="{{ url('/maths-home-tutor-shimla') }}">maths</a> and
     <a href="{{ url('/science-home-tutor-shimla') }}">science</a> pages for Shimla cover other subjects, and English
     teachers looking for students can open <a href="{{ url('/tuition-jobs/shimla') }}">Shimla tuition jobs</a>.
   </p>

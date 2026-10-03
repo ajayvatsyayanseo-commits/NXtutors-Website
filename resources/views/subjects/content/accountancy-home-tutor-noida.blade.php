@@ -236,8 +236,7 @@
     fees guide</a> explains what moves them.
   </p>
   <p>
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live; book a <a href="{{ url('/demo-class') }}">free demo class</a> once you have chosen. Commerce students often
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified; book a <a href="{{ url('/demo-class') }}">free demo class</a> once you have chosen. Commerce students often
     need economics too, so see our <a href="{{ url('/economics-home-tutor-noida') }}">economics tutors in Noida</a>;
     for other subjects, <a href="{{ url('/english-home-tutor-noida') }}">English</a>,
     <a href="{{ url('/maths-home-tutor-noida') }}">maths</a> and

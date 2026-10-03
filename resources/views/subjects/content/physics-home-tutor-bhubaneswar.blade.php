@@ -253,8 +253,7 @@
     Write to us with the class, the board, the main goal, the evenings already taken by school or coaching, your colony
     with a landmark, and the evenings that remain. You receive two or three physics tutors and their fees and pick one
     for a free demo; if that one is not right, another demo follows, and moving to a different tutor later costs
-    nothing. Every tutor who signs up passes through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before
-    the profile appears. Where no one suitable can travel at your hour, the plan becomes online or part-online. Our
+    nothing. Every tutor who signs up passes through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified. Where no one suitable can travel at your hour, the plan becomes online or part-online. Our
     office is in Sector 66, Gurugram, and we teach online throughout India; see the national
     <a href="{{ url('/physics-home-tutor') }}">physics home tutor</a> page, our
     <a href="{{ url('/chemistry-home-tutor-bhubaneswar') }}">chemistry tutor page for Bhubaneswar</a>, and the

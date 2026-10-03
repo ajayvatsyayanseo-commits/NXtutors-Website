@@ -229,7 +229,7 @@
     Send the class, the board and, for GSEB, the medium; the main worry; your locality and nearest station if any;
     the times that suit; and a budget. We reply with two or three matched English tutors and their fees, and the first
     class with the one you choose is a free demo. You can switch tutor later at no cost. Tutors who join go through
-    an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live; you can browse
+    an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified; you can browse
     <a href="{{ url('/tutors') }}">tutor profiles</a> or book a <a href="{{ url('/demo-class') }}">free demo class</a>
     directly.
   </p>

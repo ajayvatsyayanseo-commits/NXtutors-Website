@@ -274,7 +274,7 @@
     inorganic) where marks go missing, the coaching days, your colony with a landmark, and the evenings that are free.
     In return you get two or three chemistry tutors and their fees; choose one for the free demo, ask for another demo
     if it does not fit, and switch later at no cost. Tutors who sign up face an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before going live. Should nobody suitable be able to
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the Verified badge appears. Should nobody suitable be able to
     travel, we plan online or mixed lessons. We are based in Sector 66, Gurugram, and teach online nationwide; the <a href="{{ url('/physics-home-tutor-bhubaneswar') }}">physics</a> and
     <a href="{{ url('/biology-home-tutor-bhubaneswar') }}">biology</a> pages for Bhubaneswar and the
     <a href="{{ url('/blog/bhubaneswar-home-tuition-guide') }}">city tuition guide</a> cover the rest.

@@ -236,8 +236,7 @@
   </ol>
   <p>
     When the fit is wrong, we bring in another tutor from the shortlist for a separate demo, and any later change is
-    free. Each tutor completes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> on joining, before the
-    profile is visible.
+    free. Each tutor completes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> on joining, before the profile is marked Verified.
   </p>
   </section>
 

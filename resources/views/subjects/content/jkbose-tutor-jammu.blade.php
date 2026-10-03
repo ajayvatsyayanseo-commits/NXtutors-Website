@@ -402,7 +402,7 @@
   <p>
     You receive two or three matched tutors, each with a visible fee, and the first lesson costs nothing. If the fit is
     wrong, another demo follows, and changing tutor at any later point is also free. Every tutor who joins passes an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is shown. More checks are in the
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified. More checks are in the
     <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist for parents</a>.
   </p>
   </section>

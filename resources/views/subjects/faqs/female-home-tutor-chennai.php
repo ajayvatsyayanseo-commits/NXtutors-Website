@@ -19,7 +19,7 @@ return [
     ],
     [
         'Are female tutors on NXTutors background checked?',
-        'No. Tutors who join go through an ID check: a one-time code for phone or email and a government photo ID that our team reviews before the profile goes live. Real tutors who pass carry a Verified badge. It is not a police or background check, so judge the teaching yourself at the demo.',
+        'No. Tutors who join go through an ID check: a one-time code for phone or email and a government photo ID that our team reviews before the profile is marked Verified. Real tutors who pass carry a Verified badge. It is not a police or background check, so judge the teaching yourself at the demo.',
     ],
     [
         'Do female tutors charge more in Chennai?',

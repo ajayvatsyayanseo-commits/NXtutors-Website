@@ -236,7 +236,7 @@
   <p>
     Send the class, syllabus and medium, what you want the tutor to work on, and your locality. We shortlist two or
     three matched English tutors with fees, the first class is a free demo, and switching later costs nothing. Tutors
-    who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
     Browse <a href="{{ url('/tutors') }}">tutor profiles</a> or book a <a href="{{ url('/demo-class') }}">free demo
     class</a>.
   </p>

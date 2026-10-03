@@ -238,8 +238,7 @@
   </ul>
   <p>
     Not convinced? We line up another shortlisted tutor for a separate demo, and a change later in the year is free.
-    Every tutor who signs up completes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile
-    is shown to parents. More
+    Every tutor who signs up completes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified to parents. More
     ideas are in our <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist</a>.
   </p>
   </section>

@@ -196,7 +196,7 @@
   </ol>
   <p>
     Each request brings two or three matched tutors with fees visible up front, and changing tutor later costs
-    nothing. Before a profile goes live, the tutor passes an <a href="{{ url('/how-we-verify-tutors') }}">ID
+    nothing. Before a profile is marked Verified, the tutor passes an <a href="{{ url('/how-we-verify-tutors') }}">ID
     check</a>.
   </p>
   </section>

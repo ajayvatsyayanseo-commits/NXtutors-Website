@@ -186,10 +186,10 @@
   </section>
 
   <section class="nx-guide__sec">
-  <h2 id="ahfm-checks">What is checked before a profile appears, and what only the demo shows</h2>
+  <h2 id="ahfm-checks">What is checked before a profile is marked Verified, and what only the demo shows</h2>
   <p>
     Tutors who join go through an ID check: a one-time code confirms the phone number or email, a government photo ID
-    is uploaded, and our team reviews it before the profile is published. Real tutors who clear it show a Verified
+    is uploaded, and our team reviews it before the profile is marked Verified. Real tutors who clear it show a Verified
     badge. This is an identity check only, not a police or background check, and it does not measure teaching; the
     details are on <a href="{{ url('/how-we-verify-tutors') }}">how we verify tutors</a>. Sample profiles are marked as
     samples, are not verified and cannot be booked.

@@ -21,7 +21,7 @@
     ['Do you provide home tutors and online tutors across India?', 'Yes. NXTutors supports home tutoring, online tutoring, institute mentoring and hybrid learning across India based on tutor availability and feasibility.'],
     ['Which classes and boards are supported?', 'We support Classes 6–12 across CBSE, ICSE, IB, ISC and IGCSE boards, including foundation support and board exam preparation.'],
     ['Do you support JEE and NEET preparation?', 'Yes. We match students with specialised JEE/NEET mentors for Physics, Chemistry, Maths and Biology based on goals, level and schedule.'],
-    ['Are tutors verified on NXTutors?', 'Yes. Tutors who join confirm their phone or email with a one-time code and upload a government photo ID, which our team reviews before the profile goes live; tutors who pass carry a Verified badge. Profiles marked Sample profile are examples, not bookable tutors. The free demo class lets you judge the teaching yourself.'],
+    ['Are tutors verified on NXTutors?', 'Yes. Tutors who join confirm their phone or email with a one-time code and upload a government photo ID, which our team reviews before the profile is marked Verified. Profiles marked Sample profile are examples, not bookable tutors. The free demo class lets you judge the teaching yourself.'],
     ['How does the trial/demo class work?', 'A demo is a normal session to evaluate teaching style and student comfort. After the demo, you can continue with the same tutor or request a different match.'],
     ['What are the typical fees for tutors?', 'Fees depend on class, subject and experience. In most cases, tutoring ranges from ₹800 to ₹2500 per hour. We shortlist tutors aligned to your budget range.'],
     ['Can I change the tutor after hiring?', 'Yes. If the match is not working, we help you switch quickly by recommending alternate verified tutors with better fit.'],
@@ -1150,7 +1150,7 @@ body.page .nxh__sweep{
         <summary>Are tutors verified on NXTutors?</summary>
         <p>
           Yes. Tutors who join confirm their phone or email with a one-time code and upload a government photo ID,
-          which our team reviews before the profile goes live; tutors who pass carry a Verified badge. Profiles
+          which our team reviews before the profile is marked Verified. Profiles
           marked Sample profile are examples, not bookable tutors. The free demo class lets you judge the teaching
           yourself. <a href="{{ url('/how-we-verify-tutors') }}">How we verify tutors</a>.
         </p>

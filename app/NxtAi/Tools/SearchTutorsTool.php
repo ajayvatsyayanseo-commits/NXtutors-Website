@@ -101,6 +101,9 @@ final class SearchTutorsTool implements Tool
                     'city' => $c['city'] ?? null,
                     'subjects' => $c['subjects'] ?? [],
                     'fee_label' => $c['fee_label'] ?? null,
+                    // Only for a tutor whose ID the team approved; absent otherwise, so the
+                    // model has nothing to call "verified" (App\Support\TutorBadge).
+                    ...(! empty($c['id_verified']) ? ['id_verified' => true] : []),
                     'rating' => $c['rating'] ?? null,
                     'match_score' => $c['match_score'] ?? null,
                     'match_reasons' => $c['match_reasons'] ?? [],

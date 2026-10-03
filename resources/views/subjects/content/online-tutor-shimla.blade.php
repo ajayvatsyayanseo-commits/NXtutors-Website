@@ -128,8 +128,7 @@
   <p>
     Online names can turn up in a home-tuition search too. If a Shimla request finds too few local matches, the search
     reaches out to the rest of Himachal Pradesh and then to online teachers nationwide, and each card states the
-    tutor's base; an online card usually signals that the right specialist lives too far to visit. Before any profile
-    goes live, the tutor passes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>. That establishes who they
+    tutor's base; an online card usually signals that the right specialist lives too far to visit. Before any profile is marked Verified, the tutor passes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>. That establishes who they
     are, nothing more (it is not a police or background check), so the demo remains your test of the teaching.
   </p>
   </section>

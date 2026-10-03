@@ -195,7 +195,7 @@
   </ul>
   <p>
     Keep the session in a shared room with an adult at home. Every tutor who joins goes through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is shown; it confirms identity only,
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified; it confirms identity only,
     so your own judgement at the demo still counts. If it does not feel right, we arrange another tutor, and a later
     change is free too. Our <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist</a> has
     more questions.

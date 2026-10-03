@@ -230,7 +230,7 @@
     Send us the board, the class, the skill that worries you, your area with a landmark, suitable times and the format
     you prefer. You will get a shortlist of two or three tutors, each fee shown up front; your child's first class
     is a <a href="{{ url('/demo-class') }}">free demo</a>, and a later change of tutor costs nothing. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   <p>
     For whole-board help in the city, look at our <a href="{{ url('/cbse-home-tutor-coimbatore') }}">Coimbatore CBSE

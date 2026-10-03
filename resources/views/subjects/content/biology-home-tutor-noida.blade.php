@@ -233,7 +233,7 @@
   </p>
   <p>
     To begin, send the class, board, goal, sector and free evenings. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. For the other sciences,
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. For the other sciences,
     see <a href="{{ url('/chemistry-home-tutor-noida') }}">chemistry tutors in Noida</a> and our
     <a href="{{ url('/maths-home-tutor-noida') }}">maths tutors in Noida</a>. Biology teachers can find open requests on
     the <a href="{{ url('/tuition-jobs/noida') }}">Noida tuition jobs</a> page.

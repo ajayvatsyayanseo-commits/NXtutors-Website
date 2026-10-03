@@ -34,6 +34,6 @@ return [
     ],
     [
         'Are the tutors checked before they teach?',
-        'Tutors who join NXTutors go through an ID check: they confirm their phone or email with a one-time code and upload a government photo ID that our team reviews before the profile goes live. It is an identity check, not a police check, so meet the tutor at the demo.',
+        'Tutors who join NXTutors go through an ID check: they confirm their phone or email with a one-time code and upload a government photo ID that our team reviews before the profile is marked Verified. It is an identity check, not a police check, so meet the tutor at the demo.',
     ],
 ];

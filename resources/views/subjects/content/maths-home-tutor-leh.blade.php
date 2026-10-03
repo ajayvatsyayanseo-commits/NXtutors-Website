@@ -280,7 +280,7 @@
     with a landmark such as a market, a community hall or the cluster name; where a vehicle can stop; the days and
     times you can offer in term and in winter; and a budget. Our reply names two or three maths tutors with their fees; you
     pick whom to meet at the free demo. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. Our office is in
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. Our office is in
     Sector 66, Gurugram; online lessons reach every state. The national
     <a href="{{ url('/maths-home-tutor') }}">maths home tutor</a> page shows how we match elsewhere, the
     <a href="{{ url('/cbse-home-tutor-leh') }}">CBSE home tutors in Leh</a> page covers the other subjects, and the

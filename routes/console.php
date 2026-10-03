@@ -66,6 +66,13 @@ Schedule::command('accounts:purge-deleted')
     ->everyTenMinutes()
     ->withoutOverlapping(10);
 
+// New WhatsApp tutors (inserted by the onboarding agent): live at once while
+// config tutors.publish_before_review is on, and one "New tutor to check"
+// email each to the reviewer (App\Services\TutorIntake).
+Schedule::command('tutors:review-intake')
+    ->everyMinute()
+    ->withoutOverlapping(5);
+
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->purpose('Display an inspiring quote');

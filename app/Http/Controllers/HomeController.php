@@ -921,7 +921,8 @@ public function compareDefaults(Request $request)
         $result = $service->search($criteria($mode, min($offset + $limit, 60)));
         $cards = array_slice($result['cards'] ?? [], $offset, $limit);
         $exact = ($result['relaxed'] ?? null) ? 0 : (int) ($result['matched'] ?? 0);
-        // What the bar counts: verified (real) tutors only, never samples.
+        // What the bar counts: real tutors only, never samples (the bar says
+        // "tutors": a live tutor may still be waiting for the ID check).
         // Home counts only real tutors in the city itself, not those the
         // cascade brought in from the state or online.
         $exactReal = ($result['relaxed'] ?? null) ? 0 : (int) ($mode === 'online' ? ($result['real'] ?? 0) : ($result['real_local'] ?? 0));
@@ -1657,7 +1658,7 @@ public function cityAreaShow($citySlug, $areaSlug)
     $effective = $tutor->effective_courses;
 
     // ✅ Simple “chip” build from first effective course
-    $chip = 'Verified Tutor';
+    $chip = 'Tutor';
     if ($effective && $effective->count()) {
         $c = $effective->first();
         $parts = [];
@@ -1882,7 +1883,7 @@ $realUserId = str_replace('-nxt', '', $decoded);
     $effective = $tutor->effective_courses;
 
     // ✅ Simple “chip” build from first effective course
-    $chip = 'Verified Tutor';
+    $chip = 'Tutor';
     if ($effective && $effective->count()) {
         $c = $effective->first();
         $parts = [];

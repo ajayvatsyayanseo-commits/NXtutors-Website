@@ -217,7 +217,7 @@
   </ul>
   <p>
     Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>: a one-time code and a
-    government photo ID reviewed by our team before the profile goes live. It is not a police or background check,
+    government photo ID reviewed by our team before the profile is marked Verified. It is not a police or background check,
     so your own judgement in the demo still counts.
   </p>
   </section>

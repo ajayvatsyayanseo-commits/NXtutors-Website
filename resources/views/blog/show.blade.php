@@ -241,7 +241,7 @@
     @include('partials.page-assist', [
       'assistTeachers' => $pageTeachers ?? collect(),
       'assistTitle' => 'Want a tutor for this?',
-      'assistSub' => 'Verified tutors first, then sample profiles, which are marked',
+      'assistSub' => 'Real tutors first, then sample profiles, which are marked',
       'aiPage' => ['type' => 'blog', 'topic' => (string) $blog->title],
     ])
 

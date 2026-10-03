@@ -213,7 +213,7 @@
     Send the board and class, the Class 12 option if known, the chapters giving trouble, your area and nearest station,
     good times and your choice of home, online or both. We reply with two or three matched tutors and fees, your child
     has a <a href="{{ url('/demo-class') }}">free demo class</a>, and changing tutor later is free. Tutors who join go
-    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   <p>
     Commerce students often need more than one subject: see <a href="{{ url('/economics-home-tutor-chennai') }}">economics

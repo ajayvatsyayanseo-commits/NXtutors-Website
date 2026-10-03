@@ -241,7 +241,7 @@
     Tell us the class, the board, the medium your child studied science in, whether NEET is part of the plan, your
     locality, the times that suit and a budget. We shortlist two or three biology tutors with fees, you choose one for
     a free demo, and switching later costs nothing. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. The national
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. The national
     <a href="{{ url('/biology-home-tutor') }}">biology home tutor guide</a> covers every board; for younger classes see
     <a href="{{ url('/science-home-tutor-nagpur') }}">science home tutors in Nagpur</a>, and for maths alongside
     biology, <a href="{{ url('/maths-home-tutor-nagpur') }}">maths home tutors in Nagpur</a>. Biology teachers in the

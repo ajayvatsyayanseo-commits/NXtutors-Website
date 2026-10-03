@@ -247,7 +247,7 @@
   <section class="nx-guide__sec">
   <h2 id="hynk-safety">How do you keep home visits safe with a young child?</h2>
   <ul>
-    <li>Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live; it is not a police or background check, so stay involved.</li>
+    <li>Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified; it is not a police or background check, so stay involved.</li>
     <li>An adult family member should always be at home during sessions.</li>
     <li>Use a shared room with the door open, never a closed bedroom.</li>
     <li>Register the tutor at the gate or visitor app, and check the person matches the profile.</li>

@@ -574,7 +574,7 @@
   <h2 id="gg-safety">Safety at home lessons</h2>
   <p>
     Tutors who join NXTutors go through an ID check: they confirm their phone or email with a one-time code and upload a
-    government photo ID that our team reviews before the profile goes live. It is not a police or background check, so
+    government photo ID that our team reviews before the profile is marked Verified. It is not a police or background check, so
     <a href="{{ url('/how-we-verify-tutors') }}">read how we check tutors</a>, meet the tutor at the free demo, and follow
     the simple habits most Gurugram families already use: schedule sessions when an adult is at home, hold them in a
     shared room rather than a bedroom, and register the tutor on your society's visitor app or with the gate so entry

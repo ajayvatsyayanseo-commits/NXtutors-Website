@@ -4,7 +4,7 @@
 @section('summary')
 <ul>
   <li>You teach as an <strong>independent professional</strong>, not as an employee or agent of NXTutors. You set your own fee and are responsible for your classes and your taxes.</li>
-  <li>Your profile must be true. You pass an ID check before it goes live, and the Verified badge confirms identity only.</li>
+  <li>Your profile must be true. You pass an ID check before it is marked Verified, and the Verified badge confirms identity only.</li>
   <li>The first class with a family we match you with is a <strong>free demo</strong>, and you charge the fee shown on your profile.</li>
   <li>Paid plans buy visibility, AI tools and lead views. They do not guarantee leads, students or income, and are refunded only as the <a href="{{ url('/refund-policy') }}">Refund Policy</a> says.</li>
   <li>Child safety comes first. Breaking the <a href="{{ url('/safeguarding-policy') }}">Safeguarding Policy</a> can mean immediate removal.</li>
@@ -50,7 +50,7 @@
 <section>
   <h2 id="id-check">5. The ID check and the Verified badge</h2>
   <ul>
-    <li>You confirm your phone number or email address with a one-time code and upload a government photo ID: its type, its number and photos of its front and back. Your profile stays pending until our team reviews the ID and makes the profile active.</li>
+    <li>You confirm your phone number or email address with a one-time code and upload a government photo ID: its type, its number and photos of its front and back. Your profile may be live before this review, but the Verified badge appears on it only after our team has reviewed the ID.</li>
     <li>Each ID document number can be linked to only one tutor account.</li>
     <li>If you pass, your card and profile carry a Verified badge. The badge confirms identity only. You must never describe it as a police verification, a background check or a quality rating.</li>
     <li>We may ask you to repeat the check, or to provide further documents, such as proof of address or a police clearance certificate where you teach young children at home. We may refuse, pause or remove a profile if the check cannot be completed.</li>

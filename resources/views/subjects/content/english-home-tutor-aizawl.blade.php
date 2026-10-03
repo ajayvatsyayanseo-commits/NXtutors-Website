@@ -231,7 +231,7 @@
     <a href="{{ url('/demo-class') }}">free demo class</a>. After it, check three things: the tutor studied a marked
     piece of school work, your child produced some writing or speech, and you know what happens next. If any is
     missing, the next tutor on your list gives a demo, and a later change of tutor is free. Every tutor who joins
-    passes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is published. For other
+    passes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified. For other
     subjects see the Aizawl <a href="{{ url('/maths-home-tutor-aizawl') }}">maths</a> and
     <a href="{{ url('/science-home-tutor-aizawl') }}">science</a> pages; English teachers who want students nearby
     can browse <a href="{{ url('/tuition-jobs/aizawl') }}">Aizawl tuition jobs</a>.

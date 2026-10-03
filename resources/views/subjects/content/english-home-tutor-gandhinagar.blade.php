@@ -246,8 +246,7 @@
     To ask for tutors, tell us your child's class and board, which part of English is the worry (reading, writing,
     grammar, literature or speaking), whether Gujarati or English comes more easily, your sector and block or
     locality, the days and hours that suit, and a budget. You get two or three names back, each with a fee. Anyone who
-    joins as a tutor goes through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is
-    published. Looking for help in other subjects too? Try the
+    joins as a tutor goes through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified. Looking for help in other subjects too? Try the
     <a href="{{ url('/maths-home-tutor-gandhinagar') }}">maths</a> and
     <a href="{{ url('/science-home-tutor-gandhinagar') }}">science</a> pages for Gandhinagar. Teachers of English who
     live here can see what families are asking for on <a href="{{ url('/tuition-jobs/gandhinagar') }}">Gandhinagar

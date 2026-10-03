@@ -267,8 +267,7 @@
     Five details are enough: the class; the syllabus by its full name (JKBOSE, CBSE Standard or Basic, ICSE, ISC, IB or
     IGCSE); your locality and a landmark; the days and hours that work, including any change you expect over the winter
     break; and a budget. We reply with two or three matched maths tutors and their fees, and you choose one for the free
-    demo. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile
-    goes live. If no suitable tutor can reach your part of Srinagar at that hour, we suggest an online or mixed plan.
+    demo. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. If no suitable tutor can reach your part of Srinagar at that hour, we suggest an online or mixed plan.
     NXTutors works from Sector 66, Gurugram, and teaches online across India; the national
     <a href="{{ url('/maths-home-tutor') }}">maths home tutor</a> page shows how we work elsewhere, and you can browse
     profiles on <a href="{{ url('/tutors') }}">our tutors page</a>.

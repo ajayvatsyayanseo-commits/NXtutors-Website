@@ -220,7 +220,7 @@
     Send the class, board and medium, the target exam, subjects, coaching days, your locality and nearest crossroads or
     station, and the times that suit. We come back with two or three matched tutors; book a
     <a href="{{ url('/demo-class') }}">free demo class</a> or browse <a href="{{ url('/tutors') }}">tutor profiles</a>.
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
     For medicine, read <a href="{{ url('/neet-home-tutor-ahmedabad') }}">NEET home tutor in Ahmedabad</a>; teachers can
     find students on <a href="{{ url('/tuition-jobs/ahmedabad') }}">Ahmedabad tuition jobs</a>.
   </p>

@@ -227,7 +227,7 @@
     <li>The travel plan avoids your junction's peak, with an online fallback.</li>
   </ol>
   <p>
-    Not convinced? We line up the next demo, and changing tutor later costs nothing. Before a profile goes live, tutors
+    Not convinced? We line up the next demo, and changing tutor later costs nothing. Before a profile is marked Verified, tutors
     who join complete an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>; <a href="{{ url('/tutors') }}">tutor profiles</a>
     are open to browse.
   </p>

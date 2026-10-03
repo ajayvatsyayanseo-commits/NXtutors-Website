@@ -272,7 +272,7 @@
     A useful message covers class, board, the skill in trouble (reading, writing, grammar, literature or speech), the
     language your child thinks in, a colony and landmark, workable days and hours, and a budget. Back come two or three
     English teachers, fees attached. Anyone joining as a tutor passes an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before going live. Need another subject? Try
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the Verified badge appears. Need another subject? Try
     <a href="{{ url('/maths-home-tutor-raipur') }}">maths</a> or
     <a href="{{ url('/science-home-tutor-raipur') }}">science</a> tuition in Raipur. Teachers of English based here
     will find families' requests on <a href="{{ url('/tuition-jobs/raipur') }}">Raipur tuition jobs</a>.

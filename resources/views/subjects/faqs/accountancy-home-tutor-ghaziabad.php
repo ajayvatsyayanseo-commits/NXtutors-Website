@@ -31,6 +31,6 @@ return [
     ],
     [
         'Is the demo free, and how do I know the tutor is genuine?',
-        'The first class with the tutor you choose is a free demo, and switching later is free. Tutors who join confirm a phone or email with a one-time code and upload a government photo ID, which our team reviews before the profile goes live. Register the tutor at your society gate too.',
+        'The first class with the tutor you choose is a free demo, and switching later is free. Tutors who join confirm a phone or email with a one-time code and upload a government photo ID, which our team reviews before the profile is marked Verified. Register the tutor at your society gate too.',
     ],
 ];

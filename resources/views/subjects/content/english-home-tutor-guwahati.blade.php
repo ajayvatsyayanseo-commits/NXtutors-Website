@@ -252,7 +252,7 @@
     Send the class or age, the board, the skill that worries you, the language your child is most comfortable in, your
     locality with a landmark, your days and times, home or online, and a budget. We reply with two or three matched
     English tutors and their fees, and tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. For other subjects, see
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. For other subjects, see
     our <a href="{{ url('/maths-home-tutor-guwahati') }}">maths</a> and
     <a href="{{ url('/science-home-tutor-guwahati') }}">science</a> pages for Guwahati. English teachers living in the
     city can see open requests on <a href="{{ url('/tuition-jobs/guwahati') }}">Guwahati tuition jobs</a>.

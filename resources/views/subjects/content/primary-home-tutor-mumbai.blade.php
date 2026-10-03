@@ -224,7 +224,7 @@
   <p>
     If the match does not feel right, the next tutor on your shortlist can come for their own demo, and switching
     later costs nothing. Keep lessons in a shared room with an adult at home. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   </section>
 

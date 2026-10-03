@@ -256,7 +256,7 @@
   <p>
     Send us the class and board, the Class 12 option if relevant, the chapters that hurt, your colony with block or
     pocket, the nearest metro station, free days and a budget. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live, and you can book a
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified, and you can book a
     <a href="{{ url('/demo-class') }}">free demo class</a> with the one you prefer. Commerce students who also need
     economics help can see our <a href="{{ url('/economics-home-tutor-delhi') }}">economics tutors in Delhi</a>
     page; for English, see <a href="{{ url('/english-home-tutor-delhi') }}">English tutors in Delhi</a>; and if maths

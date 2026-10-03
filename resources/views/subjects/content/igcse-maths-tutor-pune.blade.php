@@ -257,7 +257,7 @@
   <p>
     Send us the syllabus code, tier, series, grade, your area and free slots. We match two or three tutors, you choose
     one for a <a href="{{ url('/demo-class') }}">free demo class</a>, and switching tutor later is free. Tutors who join go
-    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. Browse
+    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. Browse
     <a href="{{ url('/tutors') }}">tutor profiles</a>, or see <a href="{{ url('/igcse-physics-tutor-pune') }}">IGCSE physics</a>
     and <a href="{{ url('/ib-igcse-chemistry-tutor-pune') }}">IB and IGCSE chemistry</a> tutors in Pune and our
     <a href="{{ url('/maths-home-tutor-pune') }}">maths home tutors in Pune</a> page.

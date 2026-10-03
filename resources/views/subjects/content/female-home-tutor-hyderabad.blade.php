@@ -191,10 +191,10 @@
   </section>
 
   <section class="nx-guide__sec">
-  <h2 id="hyfm-check">What is checked before a tutor appears, and what should the demo tell you?</h2>
+  <h2 id="hyfm-check">What is checked before a tutor is marked Verified, and what should the demo tell you?</h2>
   <p>
     Tutors who join go through an ID check. A one-time code confirms their phone or email, and the team reviews a
-    government photo ID they upload before the profile goes live. Real tutors who clear it carry a Verified badge.
+    government photo ID they upload before the profile is marked Verified. Real tutors who clear it carry a Verified badge.
     It is not a police or background check and does not measure teaching. The full process is on
     <a href="{{ url('/how-we-verify-tutors') }}">how we verify tutors</a>. Sample profiles are clearly labelled,
     are never verified and cannot be booked.

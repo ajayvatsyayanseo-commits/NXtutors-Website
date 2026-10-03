@@ -224,7 +224,7 @@
     and nearest junction or BRTS stop, preferred days, whether lessons should be at home or online, and the budget.
     You get two or three matched economics tutors back, and your first class with the one you pick is a
     <a href="{{ url('/demo-class') }}">free demo</a>. Every tutor who joins passes an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before going live, and the
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the Verified badge appears, and the
     <a href="{{ url('/tutors') }}">tutor profiles</a> are open to browse. Commerce students who also take accounts can
     see <a href="{{ url('/accountancy-home-tutor-surat') }}">accountancy tutors in Surat</a>; for English, <a href="{{ url('/english-home-tutor-surat') }}">English home tutors in Surat</a>.
     Economics teachers can find students on <a href="{{ url('/tuition-jobs/surat') }}">Surat tuition jobs</a>.

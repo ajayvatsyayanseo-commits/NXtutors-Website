@@ -242,7 +242,7 @@
   <p>
     Send the class, the board and option, the chapters that are hurting, the language of the answers, your
     neighbourhood with a landmark, preferred days and a budget. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. Commerce students often
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. Commerce students often
     want help in economics too: see our <a href="{{ url('/economics-home-tutor-kolkata') }}">economics tutor in
     Kolkata</a> page. The national <a href="{{ url('/accountancy-home-tutor') }}">accountancy home tutor</a> guide
     goes chapter by chapter, and our <a href="{{ url('/english-home-tutor-kolkata') }}">English</a> and

@@ -216,7 +216,7 @@
     home is inside an official colony, and the evenings that are free. We send two or three chemistry tutors with
     their fees, and you choose one for the free demo. If the first is not right, a second demo follows, and a later
     change of tutor is free. When no one suitable can travel to you, we suggest an online or part-online plan. Tutors
-    who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
     The national <a href="{{ url('/chemistry-home-tutor') }}">chemistry home tutor</a> page shows how we match elsewhere,
     and <a href="{{ url('/biology-home-tutor-itanagar') }}">biology</a> and
     <a href="{{ url('/physics-home-tutor-itanagar') }}">physics</a> tutors in Itanagar cover the rest of the stream.

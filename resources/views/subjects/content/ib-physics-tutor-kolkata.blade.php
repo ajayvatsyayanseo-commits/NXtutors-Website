@@ -244,8 +244,7 @@
     <li><strong>The route.</strong> Which line or road, and what happens in Puja week?</li>
   </ol>
   <p>
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live. If the demo does not fit, the next matched tutor gets their own free demo.
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. If the demo does not fit, the next matched tutor gets their own free demo.
   </p>
   </section>
 

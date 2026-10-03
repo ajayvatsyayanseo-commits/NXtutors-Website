@@ -297,8 +297,7 @@
   <p>
     Tell us the course, level or tier, the exam session, the topics causing trouble, your locality and free slots. You
     receive two or three matched tutors and a <a href="{{ url('/demo-class') }}">free demo class</a>; switching later is
-    free. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile
-    goes live, and <a href="{{ url('/tutors') }}">tutor profiles</a> are open to browse. For other subjects, see
+    free. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified, and <a href="{{ url('/tutors') }}">tutor profiles</a> are open to browse. For other subjects, see
     <a href="{{ url('/ib-maths-tutor-bengaluru') }}">IB maths</a>, <a href="{{ url('/ib-physics-tutor-bengaluru') }}">IB
     physics</a>, <a href="{{ url('/igcse-maths-tutor-bengaluru') }}">IGCSE maths</a> and
     <a href="{{ url('/igcse-physics-tutor-bengaluru') }}">IGCSE physics</a> tutors in Bengaluru, or the

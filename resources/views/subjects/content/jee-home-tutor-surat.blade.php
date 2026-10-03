@@ -230,7 +230,7 @@
     Send the class, board and medium, target exam, subjects, coaching days, your locality with the nearest junction or
     BRTS stop, and the times that suit. Book a <a href="{{ url('/demo-class') }}">free demo class</a> or browse
     <a href="{{ url('/tutors') }}">tutor profiles</a>. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. For medicine, see
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. For medicine, see
     <a href="{{ url('/neet-home-tutor-surat') }}">NEET home tutor in Surat</a>; teachers can find students on
     <a href="{{ url('/tuition-jobs/surat') }}">Surat tuition jobs</a>.
   </p>

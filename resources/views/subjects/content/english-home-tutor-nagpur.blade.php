@@ -246,7 +246,7 @@
     Send the class, the board, the medium of instruction if your child is on the State Board, what worries you most,
     your locality, the times that suit and a budget. We come back with two or three matched English tutors, each fee
     shown, and the first class with the one you choose is a free demo. Switching tutor later is free. Tutors who join
-    go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live; you can also
+    go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified; you can also
     browse <a href="{{ url('/tutors') }}">tutor profiles</a> or book a <a href="{{ url('/demo-class') }}">free demo
     class</a>.
   </p>

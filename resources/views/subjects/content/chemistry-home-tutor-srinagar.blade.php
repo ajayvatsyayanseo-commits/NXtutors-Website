@@ -247,7 +247,7 @@
     landmark and the evenings that are free. A shortlist of two or three chemistry tutors comes back with fees, and you
     choose one for the free demo. If that first tutor is wrong for your child, the next demo is with someone else on the
     list, and a later change costs nothing. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. Where no one suitable can
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. Where no one suitable can
     travel to you, we propose online or part-online lessons. NXTutors is based in Sector 66, Gurugram, and teaches
     online throughout India; the <a href="{{ url('/physics-home-tutor-srinagar') }}">physics home tutor in Srinagar</a>
     page covers the companion subject.

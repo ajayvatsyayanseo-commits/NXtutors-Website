@@ -284,7 +284,7 @@
     Tell us the class, board and exact course, which of the four skills seems weakest, your area, times, home or
     online, and a budget. We shortlist two or three economics tutors who fit, and you choose one for a
     <a href="{{ url('/demo-class') }}">free demo class</a>. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   <p>
     Commerce students often need help with accountancy too: see our

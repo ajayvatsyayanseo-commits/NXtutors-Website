@@ -79,6 +79,9 @@ final class CompareTutorsTool implements Tool
                     'classes' => $c['classes'] ?? [],
                     'teaching_modes' => $c['teaching_modes'] ?? [],
                     'experience_label' => $c['experience_label'] ?? null,
+                    // Only for a tutor whose ID the team approved; absent otherwise, so the
+                    // model has nothing to call "verified" (App\Support\TutorBadge).
+                    ...(! empty($c['id_verified']) ? ['id_verified' => true] : []),
                     'rating' => $c['rating'] ?? null,
                     'review_count' => $c['review_count'] ?? null,
                     'fee_label' => $c['fee_label'] ?? null,

@@ -226,7 +226,7 @@
   <p>
     Keep sessions in a shared room with a door open and an adult at home throughout. Register the tutor with the
     watchman, lobby desk or society app once, so entry is routine and recorded. Tutors who join NXTutors go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live; it is not a police check,
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified; it is not a police check,
     so use the demo to meet the tutor yourself and trust your judgement.
   </p>
   </section>

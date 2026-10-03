@@ -236,7 +236,7 @@
     Tell us the course, the class, the weakest skill, your area, suitable times, and home, online or a mix. We send two
     or three matched tutors with their fees, the first class is a <a href="{{ url('/demo-class') }}">free demo</a>, and
     switching later is free. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>
-    before their profile goes live.
+    before their profile is marked Verified.
   </p>
   <p>
     Related: <a href="{{ url('/cbse-home-tutor-chennai') }}">CBSE tutors in Chennai</a>,

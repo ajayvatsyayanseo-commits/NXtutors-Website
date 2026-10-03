@@ -209,7 +209,7 @@
   </ul>
   <p>
     If the fit is wrong, the next tutor on the shortlist can come for a demo, and switching later costs nothing. Tutors
-    who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live; keep
+    who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified; keep
     lessons in a shared room with an adult at home. See our <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo
     class checklist</a>.
   </p>

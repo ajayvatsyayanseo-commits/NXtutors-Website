@@ -210,7 +210,7 @@ class NxtSchemaBuilder
             '@context' => 'https://schema.org',
             '@type'    => 'Person',
             '@id'      => $url . '#tutor',
-            'name'     => 'Verified Tutor (Representative)',
+            'name'     => 'NXTutors Tutor (Representative)',
             'jobTitle' => $isSkill ? 'Instructor' : 'Tutor',
             'worksFor' => [
                 '@type' => 'Organization',

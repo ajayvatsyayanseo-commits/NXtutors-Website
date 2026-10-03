@@ -233,8 +233,7 @@
   </p>
   <p>
     Send us the class, board, medium and goal, your sector or colony and nearest station, and the evenings that are
-    free. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile
-    goes live. See also our <a href="{{ url('/chemistry-home-tutor-faridabad') }}">chemistry</a> and
+    free. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. See also our <a href="{{ url('/chemistry-home-tutor-faridabad') }}">chemistry</a> and
     <a href="{{ url('/maths-home-tutor-faridabad') }}">maths</a> tutors in Faridabad. Biology teachers can find open
     requests on the <a href="{{ url('/tuition-jobs/faridabad') }}">Faridabad tuition jobs</a> page.
   </p>

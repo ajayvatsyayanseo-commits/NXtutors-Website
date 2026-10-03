@@ -157,7 +157,7 @@
   <p>
     Online names can show up on a home search too. A Ghaziabad locality page orders its list by distance: people living in that locality, then people who already
     travel to it, then the wider zone and city, and finally online teachers, with every card naming the tutor's base. An online name usually means the specialist you asked for does not live within easy reach. Tutors
-    who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live;
+    who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified;
     it confirms identity, so the demo is still where you judge the teaching.
   </p>
   </section>

@@ -9,7 +9,7 @@
   the two are labelled apart. Styles: public/frount/assets/css/nx-about.css.
 
   In: $tutor, $about (TutorAbout::parse), $fallbackText, $img, $isSampleProfile,
-      $isWomanVerified, $reviewCount, $avgRating, $qualText
+      $isWomanVerified, $tutorVerified, $reviewCount, $avgRating, $qualText
 --}}
 @php
   $first = \Illuminate\Support\Str::before(trim($tutor->name), ' ') ?: $tutor->name;
@@ -47,7 +47,7 @@
     <div class="nxtank__face">
       <img src="{{ \App\Support\Thumb::url($img, 120) }}" alt="" width="84" height="84" loading="lazy" decoding="async"
            onerror="this.onerror=null;this.src={{ json_encode(asset('frount/assets/images/tutor1.jpg'), JSON_UNESCAPED_SLASHES) }};">
-      @unless($isSampleProfile)<span class="nxtank__tick{{ $isWomanVerified ? ' nxtank__tick--woman' : '' }}" aria-hidden="true">✓</span>@endunless
+      @if($tutorVerified ?? false)<span class="nxtank__tick{{ $isWomanVerified ? ' nxtank__tick--woman' : '' }}" aria-hidden="true">✓</span>@endif
     </div>
     <div>
       <h2 class="nxtank__eyebrow" id="nxtank-h">About {{ $tutor->name }}</h2>
@@ -60,7 +60,7 @@
       @endif
       @if($isSampleProfile)
         <span class="nxtank__seal nxtank__seal--sample">Sample profile</span>
-      @else
+      @elseif($tutorVerified ?? false)
         <span class="nxtank__seal{{ $isWomanVerified ? ' nxtank__seal--woman' : '' }}"><span aria-hidden="true">✓</span> ID checked by the NXTutors team</span>
       @endif
     </div>

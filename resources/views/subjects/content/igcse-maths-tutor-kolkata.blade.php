@@ -242,8 +242,7 @@
     <li><strong>The route.</strong> Which station or road, at what time, and the plan for the Puja weeks.</li>
   </ol>
   <p>
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live. If the first demo does not fit, the next matched tutor gets their own free demo.
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. If the first demo does not fit, the next matched tutor gets their own free demo.
   </p>
   </section>
 

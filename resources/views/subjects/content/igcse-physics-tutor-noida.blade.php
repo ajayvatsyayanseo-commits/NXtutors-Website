@@ -280,8 +280,7 @@
   <p>
     Tell us the grade, tier, practical paper, exam series, your sector and society, and the slots that work. We send two
     or three matched tutors, the first class is a <a href="{{ url('/demo-class') }}">free demo</a>, and switching tutor
-    later is free. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their
-    profile goes live, and you can browse <a href="{{ url('/tutors') }}">tutor profiles</a> first. See also
+    later is free. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified, and you can browse <a href="{{ url('/tutors') }}">tutor profiles</a> first. See also
     <a href="{{ url('/igcse-maths-tutor-noida') }}">IGCSE maths</a> and
     <a href="{{ url('/ib-igcse-chemistry-tutor-noida') }}">IB and IGCSE chemistry</a> tutors in Noida.
   </p>

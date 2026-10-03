@@ -264,7 +264,7 @@
     sector or society, the slots that suit you, and whether you want home, online or a mix. We come back with two or
     three matched accountancy tutors, you choose one for a <a href="{{ url('/demo-class') }}">free demo class</a>,
     and you decide after that. Switching tutor later is free. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   <p>
     Commerce students often need a second subject too: see <a href="{{ url('/economics-home-tutor-gurgaon') }}">economics

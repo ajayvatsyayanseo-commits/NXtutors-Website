@@ -31,6 +31,6 @@ return [
     ],
     [
         'Is the first class free, and are tutors checked?',
-        'Yes, the first class with the tutor you choose is a free demo, and switching later is free. Tutors who join go through an ID check: a one-time code on phone or email and a government photo ID that our team reviews before the profile goes live.',
+        'Yes, the first class with the tutor you choose is a free demo, and switching later is free. Tutors who join go through an ID check: a one-time code on phone or email and a government photo ID that our team reviews before the profile is marked Verified.',
     ],
 ];

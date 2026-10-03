@@ -19,7 +19,7 @@ return [
     ],
     [
         'Are female tutors on NXTutors background-checked?',
-        'Tutors who join go through an ID check: a one-time code confirms their phone or email and our team reviews a government photo ID before the profile goes live. It is not a police or background check. Keep lessons in a shared room and judge the teaching yourself in the free demo.',
+        'Tutors who join go through an ID check: a one-time code confirms their phone or email and our team reviews a government photo ID before the profile is marked Verified. It is not a police or background check. Keep lessons in a shared room and judge the teaching yourself in the free demo.',
     ],
     [
         'How should I prepare for a female tutor\'s first visit?',

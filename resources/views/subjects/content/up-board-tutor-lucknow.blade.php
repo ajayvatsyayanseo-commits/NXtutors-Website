@@ -327,8 +327,7 @@
   </ol>
   <p>
     We send two or three matched tutors and show each fee before you book; the first class is a free demo and switching
-    tutor later is free. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before
-    their profile goes live. The <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist</a>
+    tutor later is free. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. The <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist</a>
     has more questions to try.
   </p>
   </section>

@@ -216,7 +216,7 @@
   </ol>
   <p>
     Two or three matched tutors, every fee visible beforehand, a free first class and a free switch later if needed.
-    Tutors who join complete an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before going live.
+    Tutors who join complete an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the Verified badge appears.
   </p>
   </section>
 

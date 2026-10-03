@@ -222,7 +222,7 @@
   <p>
     You pay nothing for this first lesson. When the match is wrong, a second tutor from the shortlist can take their
     own demo, and moving to someone else mid-year costs nothing either. Every tutor who signs up passes an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before going live, and our
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the Verified badge appears, and our
     <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">checklist for demo classes</a> lists further questions.
   </p>
   </section>

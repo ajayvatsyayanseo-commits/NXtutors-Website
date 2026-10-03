@@ -268,7 +268,7 @@
     Send us the course, level, exam session, DP year, what is going wrong, your sector and society, and your free slots.
     We reply with two or three matched tutors, you pick one for a <a href="{{ url('/demo-class') }}">free demo class</a>,
     and switching tutor later is free. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID
-    check</a> before their profile goes live, and you can browse <a href="{{ url('/tutors') }}">tutor profiles</a> first.
+    check</a> before their profile is marked Verified, and you can browse <a href="{{ url('/tutors') }}">tutor profiles</a> first.
     For the sciences, see <a href="{{ url('/ib-physics-tutor-noida') }}">IB physics</a> and
     <a href="{{ url('/ib-igcse-chemistry-tutor-noida') }}">IB and IGCSE chemistry</a> tutors in Noida.
   </p>

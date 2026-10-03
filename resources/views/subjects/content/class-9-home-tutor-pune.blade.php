@@ -236,7 +236,7 @@
   </ol>
   <p>
     The first lesson with your chosen tutor is a free demo. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live, and switching tutor later
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified, and switching tutor later
     is free. See also our <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist</a>.
   </p>
   </section>

@@ -239,8 +239,7 @@
   <p>
     Tell us the class, the board, whichever of physics, chemistry or biology is weakest, the locality and a
     landmark, and the free afternoons. A list of two or three science tutors comes back, each with a fee; pick one to
-    meet at the free demo. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their
-    profile goes live. Should no good fit be able to travel to you then, we propose online lessons or a mix.
+    meet at the free demo. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. Should no good fit be able to travel to you then, we propose online lessons or a mix.
     The NXTutors office is in Sector 66, Gurugram; online classes reach every state. For maths, see the
     <a href="{{ url('/maths-home-tutor-raipur') }}">maths home tutor in Raipur</a> page; for the senior years, the
     <a href="{{ url('/biology-home-tutor-raipur') }}">biology</a> and

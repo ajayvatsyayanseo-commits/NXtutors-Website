@@ -56,11 +56,14 @@ class Register extends Model
     public const HIDDEN_INDEFINITELY = '9999-12-31 00:00:00';
 
     /**
-     * register.status: 't' live (public, Verified, signs in), 'f' inactive
-     * (cannot sign in), 'p' pending review: a tutor who signed up on
-     * WhatsApp and whose ID the team has not checked yet. They sign in and
-     * finish their profile, but every public query asks for 't', so nobody
-     * sees them until an admin sets 't'.
+     * register.status: 't' live (public, signs in), 'f' inactive (cannot
+     * sign in), 'p' pending review: a tutor whose ID the team has not checked
+     * yet and who is not public yet (config tutors.publish_before_review off).
+     * They sign in and finish their profile, but every public query asks for
+     * 't', so nobody sees them until an admin approves.
+     *
+     * Live is not Verified: the Verified badge needs register.id_verified_at,
+     * set only by the admin's Approve after the ID check (isIdVerified()).
      */
     public const STATUS_LIVE = 't';
 
@@ -87,7 +90,109 @@ class Register extends Model
         'deletion_requested_at' => 'datetime',
         'delete_after' => 'datetime',
         'deleted_at' => 'datetime',
+        'id_verified_at' => 'datetime',
+        'review_notified_at' => 'datetime',
     ];
+
+    /**
+     * Whether register.id_verified_at exists yet. The deploy runs migrations
+     * after the code is live; until then the old badge rule (real + live)
+     * applies. Checked once per application instance.
+     */
+    public static function hasIdVerifiedColumn(): bool
+    {
+        $key = 'register.id_verified_column';
+        if (! app()->bound($key)) {
+            try {
+                app()->instance($key, \Illuminate\Support\Facades\Schema::hasColumn('register', 'id_verified_at'));
+            } catch (\Throwable $e) {
+                app()->instance($key, false);
+            }
+        }
+
+        return app($key);
+    }
+
+    /** Whether register.review_notified_at (the "email sent once" marker) exists yet. */
+    public static function hasReviewNotifiedColumn(): bool
+    {
+        $key = 'register.review_notified_column';
+        if (! app()->bound($key)) {
+            try {
+                app()->instance($key, \Illuminate\Support\Facades\Schema::hasColumn('register', 'review_notified_at'));
+            } catch (\Throwable $e) {
+                app()->instance($key, false);
+            }
+        }
+
+        return app($key);
+    }
+
+    /**
+     * user_ids of every tutor who may carry the Verified badge: real (not a
+     * sample), live ('t') and approved after the ID check. One small query
+     * per request (only approved tutors), so any card can ask by user_id
+     * whatever columns its own query selected. Forgotten on every save.
+     *
+     * @return array<string,true>
+     */
+    public static function idVerifiedUserIds(): array
+    {
+        $key = 'register.id_verified_ids';
+        if (! app()->bound($key)) {
+            $ids = [];
+            try {
+                $ids = \Illuminate\Support\Facades\DB::table('register')
+                    ->where('join_as', 'teacher')
+                    ->where('status', self::STATUS_LIVE)
+                    ->whereNotNull('id_verified_at')
+                    ->when(self::hasSampleColumn(), fn ($q) => $q->where(fn ($w) => $w->where('is_sample', 0)->orWhereNull('is_sample')))
+                    ->pluck('user_id')
+                    ->map(fn ($id) => (string) $id)
+                    ->flip()
+                    ->map(fn () => true)
+                    ->all();
+            } catch (\Throwable $e) {
+                $ids = [];
+            }
+            app()->instance($key, $ids);
+        }
+
+        return app($key);
+    }
+
+    public static function forgetIdVerifiedCache(): void
+    {
+        app()->forgetInstance('register.id_verified_ids');
+    }
+
+    /**
+     * The one rule for the Verified badge on this tutor (App\Support\TutorBadge).
+     */
+    public function isIdVerified(): bool
+    {
+        return $this->join_as === 'teacher'
+            && \App\Support\TutorBadge::verified($this, (bool) ($this->is_sample ?? false));
+    }
+
+    /**
+     * Live tutors whose ID the team has not approved yet, and tutors still
+     * pending review: the admin's "awaiting ID check" list. Real accounts only
+     * (a phone on record, not a sample), so generated profiles stay out.
+     */
+    public function scopeAwaitingIdCheck($query)
+    {
+        $query->where('join_as', 'teacher')
+            ->whereNotNull('phone')->where('phone', '!=', '')
+            ->when(self::hasSampleColumn(), fn ($q) => $q->where(fn ($w) => $w->where('is_sample', 0)->orWhereNull('is_sample')));
+
+        if (! self::hasIdVerifiedColumn()) {
+            return $query->where('status', self::STATUS_PENDING_REVIEW);
+        }
+
+        return $query->where(fn ($w) => $w->where('status', self::STATUS_PENDING_REVIEW)
+            ->orWhere(fn ($l) => $l->where('status', self::STATUS_LIVE)->whereNull('id_verified_at')));
+    }
 
     /**
      * Tutors that may appear on any public surface: listings, profile pages,
@@ -260,6 +365,11 @@ public function getEffectiveCoursesAttribute()
      */
     protected static function booted(): void
     {
+        // A status change or an approval moves a tutor in or out of the
+        // Verified set; the next card in this request must see it.
+        static::saved(fn () => self::forgetIdVerifiedCache());
+        static::deleted(fn () => self::forgetIdVerifiedCache());
+
         static::saving(function (self $model): void {
             // Also when the hash is missing: tutors created by the WhatsApp
             // onboarding agent arrive by a plain INSERT with no hash, and get

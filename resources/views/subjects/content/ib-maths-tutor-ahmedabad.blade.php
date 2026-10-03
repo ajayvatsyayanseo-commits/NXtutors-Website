@@ -275,7 +275,7 @@
     To start, tell us the course and level, the exam session and DP year, which topics are slipping, your locality
     and the times that suit you. You get two or three matched profiles; the first lesson with the one you pick is a
     <a href="{{ url('/demo-class') }}">free demo</a>, and changing tutor later costs nothing. Tutors who join go
-    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live, and you can
+    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified, and you can
     look through <a href="{{ url('/tutors') }}">tutor profiles</a> at any time. Science help sits on our
     <a href="{{ url('/ib-physics-tutor-ahmedabad') }}">IB physics</a> and
     <a href="{{ url('/ib-igcse-chemistry-tutor-ahmedabad') }}">IB and IGCSE chemistry</a> pages for Ahmedabad.

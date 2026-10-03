@@ -234,7 +234,7 @@
     Write to us with the class and board, whether NEET is on the cards, the units giving trouble, your locality, the
     hours you can offer and a budget. Back come two or three biology tutors with fees, and you can
     <a href="{{ url('/demo-class') }}">book a free demo class</a>. Every tutor who joins completes an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is published. The Gangtok
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified. The Gangtok
     <a href="{{ url('/physics-home-tutor-gangtok') }}">physics</a> and
     <a href="{{ url('/chemistry-home-tutor-gangtok') }}">chemistry</a> pages cover the other sciences, and our national
     <a href="{{ url('/biology-home-tutor') }}">biology home tutor</a> page goes deeper into IB and IGCSE. Biology

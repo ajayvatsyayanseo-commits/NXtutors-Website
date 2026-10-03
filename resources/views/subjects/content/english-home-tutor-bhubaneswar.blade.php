@@ -258,7 +258,7 @@
     Name the class and board; the worry, whether reading, writing, grammar, literature or speaking; the language
     your child finds easiest; your colony and a landmark; workable days and hours; and a spending limit. Two or three
     suitable English tutors come back with their fees. Each tutor who signs up passes an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is published. Looking for other
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified. Looking for other
     subjects? Try our Bhubaneswar <a href="{{ url('/maths-home-tutor-bhubaneswar') }}">maths</a> and
     <a href="{{ url('/science-home-tutor-bhubaneswar') }}">science</a> tutor pages. Teachers of English living locally
     will find student requests under <a href="{{ url('/tuition-jobs/bhubaneswar') }}">Bhubaneswar tuition jobs</a>.

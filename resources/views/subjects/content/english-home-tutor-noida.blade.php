@@ -224,7 +224,7 @@
   <p>
     Tell us the class, the board (and the medium, for UP Board), the English worry, your sector or society, good days
     and times, and a budget. We shortlist two or three tutors; those who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. For other subjects, see
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. For other subjects, see
     our <a href="{{ url('/maths-home-tutor-noida') }}">maths tutors in Noida</a> and
     <a href="{{ url('/science-home-tutor-noida') }}">science tutors in Noida</a>. English teachers can find open Noida
     requests on the <a href="{{ url('/tuition-jobs/noida') }}">Noida tuition jobs</a> page.

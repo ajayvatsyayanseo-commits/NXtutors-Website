@@ -161,7 +161,7 @@
     You may see online tutors even after asking for home tuition. When too few tutors close to you fit the request,
     the results reach out step by step: your locality, its zone, the rest of Aizawl, then tutors in Mizoram and
     elsewhere in India who teach online. Every card states the tutor's base. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is published; this is not a police
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified; this is not a police
     or background check, so let the demo decide. You can <a href="{{ url('/tutors?mode=online') }}">browse online
     tutors</a> straight away.
   </p>

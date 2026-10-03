@@ -241,7 +241,7 @@
     Tell us the class and board, the chapters that are hurting, your locality and society, free weekdays, home or
     online, and a budget. We send two or three matched tutors with their fees, and you pick one for a
     <a href="{{ url('/demo-class') }}">free demo class</a>. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live, and you can also browse
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified, and you can also browse
     <a href="{{ url('/tutors') }}">tutor profiles</a>.
   </p>
   <p>

@@ -208,8 +208,7 @@
   </ul>
   <p>
     If the answers fall short, we set up a demo with the next tutor on your shortlist, and switching later is free.
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live.
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   </section>
 

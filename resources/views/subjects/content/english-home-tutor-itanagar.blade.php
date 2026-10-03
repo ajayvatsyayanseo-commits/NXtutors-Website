@@ -221,7 +221,7 @@
   <p>
     Write to us with the class, the board, the weakest skill, a landmark near home, the days and hours that suit,
     and whether you want home, online or both. A shortlist of two or three tutors, fees included, comes back. Every tutor who joins
-    passes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is published. Other
+    passes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified. Other
     subjects: <a href="{{ url('/maths-home-tutor-itanagar') }}">maths</a> and
     <a href="{{ url('/science-home-tutor-itanagar') }}">science</a> tutors in Itanagar. English teachers in the capital
     region can find open requests on <a href="{{ url('/tuition-jobs/itanagar') }}">Itanagar tuition jobs</a>.

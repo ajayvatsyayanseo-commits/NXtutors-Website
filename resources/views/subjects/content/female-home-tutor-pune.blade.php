@@ -184,11 +184,10 @@
   </section>
 
   <section class="nx-guide__sec">
-  <h2 id="pnfm-check">Checks before she is listed, and judging her at the demo</h2>
+  <h2 id="pnfm-check">Checks before she gets the Verified badge, and judging her at the demo</h2>
   <p>
     Tutors who join go through an ID check. A one-time code confirms the phone or email, a government photo ID is
-    uploaded, and our team looks at it before any profile is published; real tutors who clear it carry a Verified
-    label. It is not a police or background check, and it says nothing about teaching. Details are on
+    uploaded, and our team looks at it before any profile is marked Verified. It is not a police or background check, and it says nothing about teaching. Details are on
     <a href="{{ url('/how-we-verify-tutors') }}">how we verify tutors</a>. Any sample profile is marked as one;
     samples carry no verification and cannot be booked.
   </p>

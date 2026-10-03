@@ -170,7 +170,7 @@
     Online names can appear even when you searched for home tuition. When few nearby tutors fit, the list widens from
     your locality to its zone, then the rest of Srinagar, then tutors elsewhere in Jammu and Kashmir and across India
     who teach online, and each card says where the tutor is based. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live; it is not a police or
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified; it is not a police or
     background check, so judge the teaching in the demo.
   </p>
   </section>

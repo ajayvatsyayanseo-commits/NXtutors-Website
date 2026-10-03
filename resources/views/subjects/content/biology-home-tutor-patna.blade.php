@@ -256,7 +256,7 @@
   <p>
     Tell us the class, board, whether NEET is planned, the chapters causing trouble, your language preference, your
     locality and times, and a budget. We send two or three matched biology tutors and their fees. Tutors who join go
-    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. For the other
+    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. For the other
     sciences, see <a href="{{ url('/physics-home-tutor-patna') }}">physics</a> and
     <a href="{{ url('/chemistry-home-tutor-patna') }}">chemistry</a> tutors in Patna; the national
     <a href="{{ url('/biology-home-tutor') }}">biology home tutor</a> guide covers IGCSE and IB in depth. Biology

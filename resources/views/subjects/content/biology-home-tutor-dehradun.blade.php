@@ -249,7 +249,7 @@
     For a shortlist, tell us the class and board, whether NEET is on the plan, which chapters are hurting, the
     language your child is easiest in, your locality, the hours you can offer and a spending limit. You get two or
     three biology tutors with fees. Anyone joining as a tutor passes an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is published. For physics and
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified. For physics and
     chemistry, see the <a href="{{ url('/physics-home-tutor-dehradun') }}">physics</a> and
     <a href="{{ url('/chemistry-home-tutor-dehradun') }}">chemistry</a> tutor pages for Dehradun; the national
     <a href="{{ url('/biology-home-tutor') }}">biology home tutor</a> guide covers IGCSE and IB in more depth. Biology

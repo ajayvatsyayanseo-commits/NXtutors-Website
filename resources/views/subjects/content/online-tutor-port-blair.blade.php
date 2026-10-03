@@ -176,7 +176,7 @@
     Searching for home tuition does not hide online tutors. If too few tutors near you fit, the results reach out step
     by step: your locality, its zone, the rest of the city, and then online tutors in other places, with every card
     showing the tutor's base. Anyone who joins as a tutor goes through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is published. That check is not a
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified. That check is not a
     police or background check, so the demo is where you judge the teaching.
   </p>
   </section>

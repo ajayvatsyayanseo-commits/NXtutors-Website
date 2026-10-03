@@ -226,7 +226,7 @@
     Share the class, board or exam, the chapters that worry your child, your area and nearest station, and the times
     that suit. We shortlist two or three biology tutors with their fees, the first class is a free demo, and you can
     switch tutor later at no cost. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID
-    check</a> before their profile goes live. Browse <a href="{{ url('/tutors') }}">tutor profiles</a> or book a
+    check</a> before their profile is marked Verified. Browse <a href="{{ url('/tutors') }}">tutor profiles</a> or book a
     <a href="{{ url('/demo-class') }}">free demo class</a>.
   </p>
   <p>

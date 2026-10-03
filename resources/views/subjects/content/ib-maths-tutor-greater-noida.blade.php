@@ -279,8 +279,7 @@
     To start, tell us the course, level, exam session, DP year and what is going wrong, plus your sector or society and
     the times you can offer. Two or three matched tutors come back to you; pick one for a
     <a href="{{ url('/demo-class') }}">free demo class</a>. If the match stops working later, a switch costs nothing.
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before anything is
-    published, and <a href="{{ url('/tutors') }}">tutor profiles</a> are open to browse. On the science side, see our
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the Verified badge appears, and <a href="{{ url('/tutors') }}">tutor profiles</a> are open to browse. On the science side, see our
     <a href="{{ url('/ib-physics-tutor-greater-noida') }}">IB physics</a> and
     <a href="{{ url('/ib-igcse-chemistry-tutor-greater-noida') }}">IB and IGCSE chemistry</a> pages for Greater Noida.
   </p>

@@ -246,7 +246,7 @@
     good times, and whether you prefer home, online or both. You will receive a shortlist of two or three tutors with
     their fees, your child's first class with the chosen tutor is a <a href="{{ url('/demo-class') }}">free demo</a>,
     and a switch to someone else later costs nothing. Tutors who join go through
-    an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   <p>
     Families wanting help across a whole board can look at our

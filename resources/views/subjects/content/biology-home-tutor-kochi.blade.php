@@ -246,8 +246,7 @@
   <p>
     Tell us the class, syllabus and medium, whether NEET is part of the plan, your locality and suitable times. We
     shortlist two or three biology tutors with fees, the first class is a free demo, and switching later costs
-    nothing. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their
-    profile goes live. Browse <a href="{{ url('/tutors') }}">tutor profiles</a> or book a
+    nothing. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. Browse <a href="{{ url('/tutors') }}">tutor profiles</a> or book a
     <a href="{{ url('/demo-class') }}">free demo class</a>.
   </p>
   <p>

@@ -258,7 +258,7 @@
   <p>
     Tell us the class, school board, subjects, batch hours if any, and your locality with a landmark. We send two or
     three matched tutors, and you book a <a href="{{ url('/demo-class') }}">free first class</a> with the one you like.
-    Tutors who join pass an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live,
+    Tutors who join pass an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified,
     and <a href="{{ url('/tutors') }}">tutor profiles</a> can be browsed any time. Engineering aspirants should see
     <a href="{{ url('/jee-home-tutor-bhubaneswar') }}">JEE home tutors in Bhubaneswar</a>, and teachers can find students
     through <a href="{{ url('/tuition-jobs/bhubaneswar') }}">Bhubaneswar tuition jobs</a>.

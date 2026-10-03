@@ -262,8 +262,7 @@
     Tell us the class, the board, the branch of science that worries your child, the ward with a landmark, and the
     afternoons that are free. Two or three science tutors come back with fees attached; choose one for the free demo.
     If that tutor does not suit, another from the list gives the next demo, and changing tutor later is free too.
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live. If nobody suitable can come at your hour, we propose lessons that are partly or wholly online. For the next
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. If nobody suitable can come at your hour, we propose lessons that are partly or wholly online. For the next
     subject, see our <a href="{{ url('/maths-home-tutor-kohima') }}">maths home tutor in Kohima</a> page, and for the
     board itself the <a href="{{ url('/nagaland-board-tutor-kohima') }}">Nagaland Board tutor</a> page.
   </p>

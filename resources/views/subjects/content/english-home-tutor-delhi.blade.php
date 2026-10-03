@@ -258,8 +258,7 @@
   <p>
     Send us the class and board, what worries you most (reading, writing, grammar, literature or speaking), your colony
     with its block or pocket, the nearest metro station, free days and a budget. We reply with two or three matched
-    tutors; tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile
-    goes live. Families who also need maths or science help can see our
+    tutors; tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. Families who also need maths or science help can see our
     <a href="{{ url('/maths-home-tutor-delhi') }}">maths tutors in Delhi</a> and
     <a href="{{ url('/science-home-tutor-delhi') }}">science tutors in Delhi</a>.
   </p>

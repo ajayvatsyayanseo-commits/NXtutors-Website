@@ -227,7 +227,7 @@
   <p>
     Send the class, board, what worries you and your area with a landmark. We shortlist two or three matched English
     tutors with their fees; the first class is a free demo and switching later is free. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. Browse
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. Browse
     <a href="{{ url('/tutors') }}">tutor profiles</a> or book a <a href="{{ url('/demo-class') }}">free demo class</a>.
   </p>
   <p>

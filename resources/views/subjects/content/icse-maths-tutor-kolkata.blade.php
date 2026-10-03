@@ -237,7 +237,7 @@
   </ol>
   <p>
     You choose from two or three matched tutors, and each fee is shown before the demo. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. Our
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. Our
     <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist</a> has more.
   </p>
   </section>

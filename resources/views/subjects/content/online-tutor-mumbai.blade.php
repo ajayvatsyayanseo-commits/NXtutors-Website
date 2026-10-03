@@ -161,8 +161,7 @@
     you asked for does not live within easy reach, and it is worth a look before you widen the search yourself.
   </p>
   <p>
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live; it is not a police or background check, so judge the teaching yourself in the demo.
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified; it is not a police or background check, so judge the teaching yourself in the demo.
   </p>
   </section>
 

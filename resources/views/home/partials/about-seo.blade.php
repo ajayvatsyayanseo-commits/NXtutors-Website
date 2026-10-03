@@ -30,7 +30,7 @@
           We look at five things together: the subject and exam, the class and board, where you live (for home
           tuition), your preferred timings, and your budget. For home tuition we start with tutors in your area,
           then nearby areas, then the rest of your city. For online classes, location does not matter, so we
-          look for the best fit anywhere in India. Verified tutors always come first.
+          look for the best fit anywhere in India. Real tutors always come first.
         </p>
       </div>
       <div>

@@ -249,7 +249,7 @@
   <p>
     Tell us the class, the syllabus, the subject that worries you most, the booklet language you are considering and
     your locality. Then book a <a href="{{ url('/demo-class') }}">free demo class</a>. Tutors who join complete an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live, and you can browse
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified, and you can browse
     <a href="{{ url('/tutors') }}">tutor profiles</a> any time. Engineering aspirants should see
     <a href="{{ url('/jee-home-tutor-puducherry') }}">JEE home tutors in Puducherry</a>, and teachers can find requests on
     <a href="{{ url('/tuition-jobs/puducherry') }}">Puducherry tuition jobs</a>.

@@ -212,8 +212,7 @@
   </ol>
   <p>
     We suggest two or three matched tutors and show each fee ahead of the demo; changing tutor later is free. Every
-    tutor who joins goes through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is
-    published. Our <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist</a> adds general
+    tutor who joins goes through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified. Our <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist</a> adds general
     questions.
   </p>
   </section>

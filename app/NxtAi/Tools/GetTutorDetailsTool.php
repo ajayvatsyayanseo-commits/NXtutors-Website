@@ -66,6 +66,9 @@ final class GetTutorDetailsTool implements Tool
                 'boards' => $card['boards'] ?? [],
                 'teaching_modes' => $card['teaching_modes'] ?? [],
                 'experience_label' => $card['experience_label'] ?? null,
+                // Only for a tutor whose ID the team approved; absent otherwise, so the
+                // model has nothing to call "verified" (App\Support\TutorBadge).
+                ...(! empty($card['id_verified']) ? ['id_verified' => true] : []),
                 'rating' => $card['rating'] ?? null,
                 'review_count' => $card['review_count'] ?? null,
                 'fee_label' => $card['fee_label'] ?? null,

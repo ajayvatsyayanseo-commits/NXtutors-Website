@@ -249,8 +249,7 @@
   </ul>
   <p>
     The demo is free, and if it does not work, another tutor from your shortlist can give one. Changing later carries no
-    charge. Every tutor who joins completes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the
-    profile appears.
+    charge. Every tutor who joins completes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified.
   </p>
   </section>
 

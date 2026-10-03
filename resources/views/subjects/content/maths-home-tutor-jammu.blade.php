@@ -276,7 +276,7 @@
     Send five details: the class; the syllabus by name (JKBOSE, CBSE Standard or Basic, ICSE, ISC, IB or IGCSE); your
     colony and a nearby landmark; the days and hours you can offer; and a budget. We reply with two or three matched
     maths tutors and their fees, and you pick one for a free demo. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. If nobody suitable can
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. If nobody suitable can
     reach your colony at that hour, we suggest an online or mixed plan. NXTutors works from Sector 66, Gurugram, and
     teaches online across India; the national <a href="{{ url('/maths-home-tutor') }}">maths home tutor</a> page
     explains how matching works elsewhere.

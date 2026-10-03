@@ -23,7 +23,7 @@ return [
     ],
     [
         'Are the female tutors listed for Mumbai verified?',
-        'Tutors who join go through an ID check: a one-time code on phone or email and a government photo ID that our team reviews before the profile goes live. Real tutors who pass carry a Verified badge. It is not a police or background check. Sample profiles are labelled as samples, are never verified and cannot be booked.',
+        'Tutors who join go through an ID check: a one-time code on phone or email and a government photo ID that our team reviews before the profile is marked Verified. Real tutors who pass carry a Verified badge. It is not a police or background check. Sample profiles are labelled as samples, are never verified and cannot be booked.',
     ],
     [
         'What happens to home lessons on heavy monsoon days?',

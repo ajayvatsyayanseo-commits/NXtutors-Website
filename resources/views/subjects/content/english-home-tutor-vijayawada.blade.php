@@ -264,7 +264,7 @@
     A useful request names the class and board, the part of English that concerns you most, whether your child is
     more comfortable in Telugu or English, your locality with a landmark, the times you can offer and a rough budget.
     You get back two or three matched tutors, fees included. Every tutor who joins NXTutors goes through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. For other subjects, see
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. For other subjects, see
     the <a href="{{ url('/maths-home-tutor-vijayawada') }}">maths</a> and
     <a href="{{ url('/science-home-tutor-vijayawada') }}">science</a> tutor pages for Vijayawada, and the
     <a href="{{ url('/blog/vijayawada-home-tuition-guide') }}">Vijayawada home tuition guide</a> for the city as a

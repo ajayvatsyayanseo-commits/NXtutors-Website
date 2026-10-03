@@ -330,7 +330,7 @@
   <p>
     Send the class and board (HSLC, council or CBSE), your locality and leikai with a landmark, the free afternoons and
     a rough budget. We reply with two or three maths tutors and their rates; you pick one for the free demo. Tutors who
-    join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before a profile is published. Where
+    join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before a profile is marked Verified. Where
     no suitable tutor can reach your leikai at your hour, lessons can run online instead. NXTutors is run from Sector
     66, Gurugram. More: <a href="{{ url('/maths-home-tutor') }}">maths tutoring across India</a>, the
     <a href="{{ url('/blog/imphal-home-tuition-guide') }}">Imphal home tuition guide</a>, the

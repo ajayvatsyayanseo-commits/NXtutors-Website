@@ -226,7 +226,7 @@
   <p>
     Watch whether your child does most of the solving. If the fit is wrong, the next tutor on your shortlist gives
     their own demo, and switching later is free. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   </section>
 

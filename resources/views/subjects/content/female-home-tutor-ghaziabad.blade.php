@@ -190,7 +190,7 @@
   <h2 id="fmgz-check">What our checks cover, and what the demo shows</h2>
   <p>
     Tutors who join go through an ID check: a one-time code confirms phone or email, and a government photo ID is
-    reviewed by our team before the profile goes live; real tutors who pass show a Verified badge. It confirms identity,
+    reviewed by our team before the profile is marked Verified. It confirms identity,
     not teaching, and it is not a police or background check. Details are on
     <a href="{{ url('/how-we-verify-tutors') }}">how we verify tutors</a>. Sample profiles are labelled as samples and
     are never shown as verified.

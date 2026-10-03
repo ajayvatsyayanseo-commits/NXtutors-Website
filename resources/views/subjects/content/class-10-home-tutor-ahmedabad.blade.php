@@ -226,7 +226,7 @@
   <p>
     The first lesson costs nothing. If the fit is wrong, a second tutor from the shortlist can take a demo, and
     switching mid-year is free. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>
-    before going live, and our <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist</a>
+    before the Verified badge appears, and our <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist</a>
     lists more questions.
   </p>
   </section>

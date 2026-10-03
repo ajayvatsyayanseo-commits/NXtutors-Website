@@ -118,7 +118,7 @@
     Even a home-tuition request can show online tutors. Where local matches are thin, results spread outward in
     stages, from your own area to tutors willing to travel to it, then the zone, then the whole capital region, and
     last of all online tutors from other parts of India; every card names the tutor's base. Anyone joining as a tutor
-    completes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile appears. That confirms
+    completes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified. That confirms
     identity only; it is not a police or background check, which is why the demo is where you judge the teaching.
   </p>
   </section>

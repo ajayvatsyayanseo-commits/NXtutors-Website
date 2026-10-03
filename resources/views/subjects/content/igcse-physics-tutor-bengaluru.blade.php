@@ -294,8 +294,7 @@
   <p>
     Tell us the grade, tier, series, the school's practical paper if you know it, your locality and free slots. You
     receive two or three matched tutors and a <a href="{{ url('/demo-class') }}">free demo class</a>, and changing tutor
-    later costs nothing. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before
-    their profile goes live; <a href="{{ url('/tutors') }}">tutor profiles</a> are open to browse. See also
+    later costs nothing. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified; <a href="{{ url('/tutors') }}">tutor profiles</a> are open to browse. See also
     <a href="{{ url('/igcse-maths-tutor-bengaluru') }}">IGCSE maths</a> and
     <a href="{{ url('/ib-igcse-chemistry-tutor-bengaluru') }}">IB and IGCSE chemistry</a> tutors in Bengaluru.
   </p>

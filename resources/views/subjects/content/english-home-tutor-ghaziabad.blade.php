@@ -230,8 +230,7 @@
   <h2 id="engz-start">How to start</h2>
   <p>
     Send us the class, the board and medium, what worries you about English, your colony, khand or sector, free slots
-    and a budget. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their
-    profile goes live. For other subjects, see our <a href="{{ url('/maths-home-tutor-ghaziabad') }}">maths</a> and
+    and a budget. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. For other subjects, see our <a href="{{ url('/maths-home-tutor-ghaziabad') }}">maths</a> and
     <a href="{{ url('/science-home-tutor-ghaziabad') }}">science</a> tutors in Ghaziabad. English teachers can find
     open requests on the <a href="{{ url('/tuition-jobs/ghaziabad') }}">Ghaziabad tuition jobs</a> page.
   </p>

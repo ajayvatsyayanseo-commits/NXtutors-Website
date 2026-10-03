@@ -221,8 +221,7 @@
   </ol>
   <p>
     If the fit is wrong, tell us and we arrange the next tutor on the shortlist. A later change of tutor is free too.
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live.
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   </section>
 

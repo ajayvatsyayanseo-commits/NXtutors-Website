@@ -246,7 +246,7 @@
     Write to us with the class, the board, the main goal (HSSLC, CBSE, JEE or NEET), the ward and a landmark, and the
     evenings on offer. Two or three physics tutors come back with fees attached; one teaches the free demo, a second
     demo with another is available if needed, and swapping later is free. Every tutor who joins passes an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is published, and when travel at your
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified, and when travel at your
     hour will not work we propose lessons wholly or partly online. See the national
     <a href="{{ url('/physics-home-tutor') }}">physics home tutor</a> page for the wider service, and the
     <a href="{{ url('/chemistry-home-tutor-kohima') }}">chemistry home tutor in Kohima</a> page covers the companion

@@ -230,7 +230,7 @@
   <p>
     Not convinced? Another tutor from your shortlist can take their own demo, and moving to someone else later in the
     year costs nothing. Every tutor who joins completes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>
-    before going live, though that checks identity, not teaching. Our
+    before the Verified badge appears, though that checks identity, not teaching. Our
     <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">checklist for demo classes</a> has further questions.
   </p>
   </section>

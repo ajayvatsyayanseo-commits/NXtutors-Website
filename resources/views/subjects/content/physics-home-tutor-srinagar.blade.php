@@ -222,7 +222,7 @@
   <h2 id="sgp-book">How do you ask for a physics shortlist?</h2>
   <p>
     Let us know the class and board, whether the aim is the school exam, JEE or NEET, which days coaching takes, where you live with a landmark, and which evenings are open. You get two or three physics tutors with fees, pick one for a free demo, and can ask for a second demo if it does not fit; a later change of tutor is free too. Tutors
-    who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. If no
+    who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. If no
     suitable tutor can come at that hour, we suggest an online or part-online plan. NXTutors works from Sector 66,
     Gurugram, and teaches online nationwide; the national <a href="{{ url('/physics-home-tutor') }}">physics home tutor</a>
     page covers other cities.

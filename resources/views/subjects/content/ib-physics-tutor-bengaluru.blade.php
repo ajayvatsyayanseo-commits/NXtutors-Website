@@ -296,8 +296,7 @@
   <p>
     Send the level, DP year, exam session, the themes causing trouble, your locality and free slots. You get two or
     three matched tutors and a <a href="{{ url('/demo-class') }}">free demo class</a>; changing tutor later is free.
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live. For the rest of the Diploma sciences and maths, see <a href="{{ url('/ib-maths-tutor-bengaluru') }}">IB maths</a>
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. For the rest of the Diploma sciences and maths, see <a href="{{ url('/ib-maths-tutor-bengaluru') }}">IB maths</a>
     and <a href="{{ url('/ib-igcse-chemistry-tutor-bengaluru') }}">IB and IGCSE chemistry</a> tutors in Bengaluru.
   </p>
   </section>

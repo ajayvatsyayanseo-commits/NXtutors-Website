@@ -236,7 +236,7 @@
   <p>
     Every request brings a shortlist of two or three tutors with their fees shown up front; the first lesson is a
     free demo, and moving to a different tutor later is also free. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   </section>
 

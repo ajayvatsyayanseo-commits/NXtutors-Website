@@ -22,7 +22,7 @@
     if (!empty($t->teaching_mode)) $chips[] = $t->teaching_mode;
     $chips = array_slice(array_values(array_unique(array_filter($chips))), 0, 3);
 
-    $chip = $chips ? implode(' + ', array_slice($chips, 0, 2)) : 'Verified Tutor';
+    $chip = $chips ? implode(' + ', array_slice($chips, 0, 2)) : 'Tutor';
 
     $rating  = number_format((float)($t->rating_avg ?? 0), 1);
     $reviews = (int)($t->reviews_count ?? 0);

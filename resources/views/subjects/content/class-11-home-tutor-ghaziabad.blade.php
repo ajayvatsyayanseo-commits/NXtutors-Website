@@ -240,8 +240,7 @@
     <li><strong>What does progress look like by October?</strong> Ask for something measurable.</li>
   </ol>
   <p>
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live. The <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist</a> has more.
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. The <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist</a> has more.
   </p>
   </section>
 

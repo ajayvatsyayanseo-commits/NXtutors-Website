@@ -23,7 +23,7 @@ return [
     ],
     [
         'Are the female tutors shown for Gurugram verified?',
-        'Tutors who join go through an ID check: a one-time code on phone or email and a government photo ID reviewed by our team before the profile goes live. Real tutors who pass carry a Verified badge. It is not a police or background check. Sample profiles are labelled, never verified, and cannot be booked.',
+        'Tutors who join go through an ID check: a one-time code on phone or email and a government photo ID reviewed by our team before the profile is marked Verified. Real tutors who pass carry a Verified badge. It is not a police or background check. Sample profiles are labelled, never verified, and cannot be booked.',
     ],
     [
         'What does a female home tutor cost in Gurgaon?',

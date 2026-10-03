@@ -294,7 +294,7 @@
     Send the course, level, session, DP year, the trouble spot, your locality and the hours you can offer. Two or
     three matched tutors come back to you; one of them gives a <a href="{{ url('/demo-class') }}">free demo class</a>,
     and a later change of tutor costs nothing. Every tutor who joins passes an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before going live, and
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the Verified badge appears, and
     <a href="{{ url('/tutors') }}">tutor profiles</a> are open to browse. On the science side, look at <a href="{{ url('/ib-physics-tutor-chennai') }}">IB physics</a> and
     <a href="{{ url('/ib-igcse-chemistry-tutor-chennai') }}">IB and IGCSE chemistry</a> tutors in Chennai.
   </p>

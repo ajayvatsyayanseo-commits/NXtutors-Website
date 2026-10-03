@@ -276,7 +276,7 @@
   </ol>
   <p>
     We suggest two or three matched tutors and show each fee before the demo; the first class is free and switching
-    tutor later is free. Tutor profiles go live only after an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>.
+    tutor later is free. Tutor profiles are marked Verified only after an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>.
     The <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist</a> has more ideas.
   </p>
   </section>

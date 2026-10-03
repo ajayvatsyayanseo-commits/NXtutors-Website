@@ -27,7 +27,7 @@ class BecomeTutorController extends Controller
 
         // Joining intent only: the job queries ("home tuition jobs near me") belong to /tuition-jobs.
         $metatitle = 'Become a Tutor on NXTutors – Join, Plans & ID Check';
-        $metadesc = 'How to join NXTutors as a home or online tutor: what you can teach, the ID check before your profile goes live, and tutor plans listed on our pricing page.';
+        $metadesc = 'How to join NXTutors as a home or online tutor: what you can teach, the ID check behind the Verified badge, and tutor plans listed on our pricing page.';
         $canonical = url('/become-a-tutor');
         // The same storyboard and women-tutor components as the jobs pages, plus the step list.
         $jobs = TuitionJobsController::skeleton(null, [], false, null);

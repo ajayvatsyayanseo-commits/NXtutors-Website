@@ -74,6 +74,9 @@ final class PublicTutorFieldMapper
             'description' => $this->snippet((string) ($t->profile_desc ?? $t->profile ?? $t->pro_desc ?? '')),
             // A model profile, shown honestly as a sample (config/tutors.php).
             'is_sample' => (bool) ($t->is_sample ?? false),
+            // The Verified badge: real, live and ID-approved (App\Support\TutorBadge).
+            // Live alone is not Verified; nothing may call this tutor verified otherwise.
+            'id_verified' => \App\Support\TutorBadge::verified($t, (bool) ($t->is_sample ?? false)),
             'image_url' => $this->imageUrl($t->avatar),
             'profile_url' => $this->profileUrl($t),
         ];

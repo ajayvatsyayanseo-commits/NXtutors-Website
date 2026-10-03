@@ -244,7 +244,7 @@
   <p>
     The demo with the tutor you choose is free. If it does not work, the next tutor on the shortlist gives their own,
     and changing tutor later costs nothing. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   </section>
 

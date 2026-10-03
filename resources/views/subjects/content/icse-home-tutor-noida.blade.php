@@ -239,7 +239,7 @@
   </ol>
   <p>
     We send two or three matched tutors with their fees shown up front, and a later switch costs nothing. Every tutor who
-    joins goes through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is published.
+    joins goes through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified.
   </p>
   </section>
 

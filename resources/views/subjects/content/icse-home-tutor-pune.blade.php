@@ -221,7 +221,7 @@
   </ol>
   <p>
     You get two or three matched tutors and see each fee in advance; switching later costs nothing. Tutors who join go
-    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   </section>
 

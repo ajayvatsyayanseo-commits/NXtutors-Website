@@ -15,7 +15,7 @@ return [
     ],
     [
         'Are female tutors on NXTutors background-checked?',
-        'Every tutor who joins goes through an ID check: a one-time code confirms phone or email, and a government photo ID is reviewed by our team before the profile goes live. Real tutors who pass show a Verified badge. It confirms identity only, not a police or background check, so judge teaching at the free demo.',
+        'Every tutor who joins goes through an ID check: a one-time code confirms phone or email, and a government photo ID is reviewed by our team before the profile is marked Verified. Real tutors who pass show a Verified badge. It confirms identity only, not a police or background check, so judge teaching at the free demo.',
     ],
     [
         'Can a woman tutor teach Haryana board students in Hindi?',

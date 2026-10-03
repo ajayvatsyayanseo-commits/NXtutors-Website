@@ -252,7 +252,7 @@
   <p>
     Useful details: class, board, NEET yes or no, the units that worry you, your child's stronger language, the
     locality, free hours and a budget. You receive two or three biology teachers with fees listed. Tutors who join
-    pass an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before going live. Related pages:
+    pass an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the Verified badge appears. Related pages:
     <a href="{{ url('/chemistry-home-tutor-raipur') }}">chemistry</a> and
     <a href="{{ url('/physics-home-tutor-raipur') }}">physics</a> tuition in Raipur, the
     <a href="{{ url('/blog/raipur-home-tuition-guide') }}">Raipur home tuition guide</a>, and the national

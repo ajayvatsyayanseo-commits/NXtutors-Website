@@ -247,7 +247,7 @@
     Send the class and board, the skill that worries you (reading, writing, grammar, literature or speaking), the
     language your child is most comfortable in, your colony and a landmark, your days and times, and a budget. We reply
     with two or three matched tutors and their fees, and tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. For other subjects, see our
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. For other subjects, see our
     <a href="{{ url('/maths-home-tutor-patna') }}">maths</a> and <a href="{{ url('/science-home-tutor-patna') }}">science</a>
     tutor pages for Patna. English teachers in the city can find open requests on
     <a href="{{ url('/tuition-jobs/patna') }}">Patna tuition jobs</a>.

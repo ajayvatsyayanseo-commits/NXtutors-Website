@@ -252,8 +252,7 @@
   <p>
     Tell us the class, the course (ISC, CBSE, Higher Secondary, NEET, IGCSE or IB), the chapters that worry your child,
     your neighbourhood and landmark, your times and a budget. We send two or three matched biology tutors with fees.
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live. Students taking the other sciences can use our <a href="{{ url('/physics-home-tutor-kolkata') }}">physics</a>
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. Students taking the other sciences can use our <a href="{{ url('/physics-home-tutor-kolkata') }}">physics</a>
     and <a href="{{ url('/chemistry-home-tutor-kolkata') }}">chemistry</a> pages for Kolkata, and younger students the
     <a href="{{ url('/science-home-tutor-kolkata') }}">science home tutor in Kolkata</a> page. Biology teachers in the
     city can see open requests on <a href="{{ url('/tuition-jobs/kolkata') }}">Kolkata tuition jobs</a>.

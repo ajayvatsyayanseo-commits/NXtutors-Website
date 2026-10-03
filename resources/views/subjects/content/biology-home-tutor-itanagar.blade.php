@@ -226,7 +226,7 @@
   <p>
     Tell us the class and board, whether NEET is on the plan, which chapters are hurting, where you live and when your
     child is free. A shortlist of two or three biology tutors with fees comes back. Everyone who joins as a tutor
-    passes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is published. The other
+    passes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified. The other
     sciences: <a href="{{ url('/chemistry-home-tutor-itanagar') }}">chemistry</a> and
     <a href="{{ url('/physics-home-tutor-itanagar') }}">physics</a> tutors in Itanagar; IGCSE and IB biology are
     treated at length on the national <a href="{{ url('/biology-home-tutor') }}">biology home tutor</a> page. Biology

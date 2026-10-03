@@ -206,8 +206,7 @@
   <h2 id="fg-check">Checks before and after the demo</h2>
   <p>
     Tutors who join go through an ID check: they confirm a phone number or email with a one-time code and upload a
-    government photo ID that our team reviews before the profile goes live, and real tutors who pass carry a Verified
-    badge. It is not a police or background check, and it says nothing about teaching; the details are on
+    government photo ID that our team reviews before the profile is marked Verified. It is not a police or background check, and it says nothing about teaching; the details are on
     <a href="{{ url('/how-we-verify-tutors') }}">how we verify tutors</a>. Sample profiles you may see on some pages are
     labelled as samples, are never verified and cannot be booked.
   </p>

@@ -228,7 +228,7 @@
   </ol>
   <p>
     Not the right fit? Another shortlisted tutor can take a demo instead, and a change later on costs nothing. Every
-    tutor who joins completes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is published.
+    tutor who joins completes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified.
   </p>
   </section>
 

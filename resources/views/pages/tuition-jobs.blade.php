@@ -52,7 +52,7 @@
     } else {
       $heroH1 = 'Home tuition jobs in ' . $label . ($label !== $cityName ? ' (' . $cityName . ')' : '');
       $heroKicker = 'in ' . $cityName;
-      $heroLede = 'Tell NXTutors what you teach and which areas of ' . $cityName . ' you can reach, at home, online or both. Once our team has checked your identity, you appear on those area pages and in the shortlists we send to families.';
+      $heroLede = 'Tell NXTutors what you teach and which areas of ' . $cityName . ' you can reach, at home, online or both. You appear on those area pages and in the shortlists we send to families, and the Verified badge follows once our team has checked your identity.';
     }
 
     // Related links per page type.

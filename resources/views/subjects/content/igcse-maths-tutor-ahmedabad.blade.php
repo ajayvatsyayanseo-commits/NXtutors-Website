@@ -251,8 +251,7 @@
   <p>
     Share the syllabus code, tier, exam series, grade, your locality and preferred times. We reply with two or three
     matched tutors; the opening lesson is a <a href="{{ url('/demo-class') }}">free demo</a>, and a later change of
-    tutor is free. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before
-    their profile goes live. Browse <a href="{{ url('/tutors') }}">tutor profiles</a> any time, and for Cambridge
+    tutor is free. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. Browse <a href="{{ url('/tutors') }}">tutor profiles</a> any time, and for Cambridge
     sciences see <a href="{{ url('/igcse-physics-tutor-ahmedabad') }}">IGCSE physics</a> and
     <a href="{{ url('/ib-igcse-chemistry-tutor-ahmedabad') }}">IB and IGCSE chemistry</a> in Ahmedabad.
   </p>

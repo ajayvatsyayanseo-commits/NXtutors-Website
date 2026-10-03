@@ -222,7 +222,7 @@
     block or stage, the times that suit and whether you want home, online or both. We reply with two or three matched
     tutors and their fees, your child takes a <a href="{{ url('/demo-class') }}">free demo class</a>, and switching
     tutor later is free. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>
-    before their profile goes live.
+    before their profile is marked Verified.
   </p>
   <p>
     Commerce students often need a second subject: see our <a href="{{ url('/economics-home-tutor-bengaluru') }}">economics

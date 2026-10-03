@@ -235,7 +235,7 @@
     Tell us the class, the board or exam, the chapters that worry your child, your neighbourhood and nearest station,
     the times that work, and a budget. We send two or three matched biology tutors with their fees; you choose one for
     a free demo class, and you can switch later at no cost. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. The national
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. The national
     <a href="{{ url('/biology-home-tutor') }}">biology home tutor guide</a> covers each board in more depth, and
     younger students can start from our <a href="{{ url('/science-home-tutor-mumbai') }}">science home tutors in
     Mumbai</a> page; for the maths side of a science stream, see <a href="{{ url('/maths-home-tutor-mumbai') }}">maths

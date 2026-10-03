@@ -224,7 +224,7 @@
   <p>
     Not the right fit? Another tutor from the shortlist can give a separate demo, and a later change of tutor is free
     too. Hold lessons in the living or dining area while an adult is home. Every tutor who signs up passes an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is published.
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified.
   </p>
   </section>
 

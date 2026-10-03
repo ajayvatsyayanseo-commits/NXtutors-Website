@@ -213,8 +213,7 @@
     Tell us the class, the board, whether the aim is the board paper, JEE or NEET, the days already taken by any
     batch, a landmark near your home and which evenings are open. We return two or three matched physics tutors with their fees, and
     you choose whom to meet at the free demo. If the first demo is not right, a second follows, and a later change of tutor costs
-    nothing. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile
-    goes live. The national <a href="{{ url('/physics-home-tutor') }}">physics home tutor</a> page covers other cities,
+    nothing. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. The national <a href="{{ url('/physics-home-tutor') }}">physics home tutor</a> page covers other cities,
     and <a href="{{ url('/maths-home-tutor-itanagar') }}">maths</a> and
     <a href="{{ url('/chemistry-home-tutor-itanagar') }}">chemistry</a> tutors in Itanagar complete the science stream.
   </p>

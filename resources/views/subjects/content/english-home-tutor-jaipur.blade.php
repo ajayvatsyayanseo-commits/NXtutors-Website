@@ -227,8 +227,7 @@
   </ul>
   <p>
     If the match is not right, tell us and we set up the next tutor on the shortlist; switching later is free as well.
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live.
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   </section>
 

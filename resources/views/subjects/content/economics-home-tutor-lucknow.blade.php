@@ -206,7 +206,7 @@
   </ol>
   <p>
     If not, we arrange a demo with the next tutor on the shortlist; switching later is free as well. Tutors who join
-    complete an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    complete an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   </section>
 

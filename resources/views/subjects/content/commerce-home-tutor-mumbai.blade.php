@@ -255,7 +255,7 @@
     Send us the class, the board, every subject by its exact name, the subjects causing most trouble, your locality
     and nearest station, home, online or both, and the times that work. We reply with two or three tutors; the first
     class with the one you choose is a free <a href="{{ url('/demo-class') }}">demo class</a>. Tutors who join go
-    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live, and you can
+    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified, and you can
     browse <a href="{{ url('/tutors') }}">tutor profiles</a> yourself. Commerce teachers in the city can find students
     on the <a href="{{ url('/tuition-jobs/mumbai') }}">Mumbai tuition jobs</a> page.
   </p>

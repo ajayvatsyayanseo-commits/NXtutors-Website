@@ -266,7 +266,7 @@
   </ol>
   <p>
     We send two or three matched tutors with their fees shown up front; the first class is a free demo, and a later
-    change of tutor is free. Profiles go live only after the tutor passes our
+    change of tutor is free. The Verified badge appears only after the tutor passes our
     <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>.
   </p>
   </section>

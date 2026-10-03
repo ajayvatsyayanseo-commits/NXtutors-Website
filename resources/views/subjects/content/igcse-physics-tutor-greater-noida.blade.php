@@ -270,7 +270,7 @@
     Send the tier, Paper 5 or Paper 6, the exam series and the school year, along with your sector or society and a
     few possible slots. Two or three tutors will be suggested, the opening session is a
     <a href="{{ url('/demo-class') }}">free demo</a>, and a later change of tutor carries no charge. Tutors who join go
-    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>, done before any profile is published. Scan
+    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>, done before any profile is marked Verified. Scan
     <a href="{{ url('/tutors') }}">tutor profiles</a> now if you like, or visit our <a href="{{ url('/igcse-maths-tutor-greater-noida') }}">IGCSE
     maths</a> and <a href="{{ url('/ib-igcse-chemistry-tutor-greater-noida') }}">IGCSE chemistry</a> pages for Greater
     Noida.

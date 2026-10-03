@@ -290,7 +290,7 @@
     Share the grade, board and code, tier, series, worrying topics, your colony or metro station and a few possible
     slots. We suggest two or three matched tutors, you pick one for a <a href="{{ url('/demo-class') }}">free demo
     class</a>, and a later switch costs nothing. Tutors who join pass an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is published. You can also look at
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. You can also look at
     <a href="{{ url('/tutors') }}">tutor profiles</a>, our <a href="{{ url('/maths-home-tutor-delhi') }}">maths home
     tutors in Delhi</a> page for other boards, the national <a href="{{ url('/igcse-maths-tutor') }}">IGCSE maths
     tutor</a> guide, and the Cambridge science pages for <a href="{{ url('/igcse-physics-tutor-delhi') }}">IGCSE

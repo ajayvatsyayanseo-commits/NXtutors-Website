@@ -252,7 +252,7 @@
     Send the board, class and medium, the Class 12 option if known, the chapters causing trouble, your locality and
     nearest junction, suitable times and your preferred format. We suggest two or three tutors with their fees, the
     first class is a <a href="{{ url('/demo-class') }}">free demo</a>, and you can switch tutor later at no cost. Tutors
-    who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   <p>
     Commerce students may also want <a href="{{ url('/economics-home-tutor-thiruvananthapuram') }}">economics tutors in

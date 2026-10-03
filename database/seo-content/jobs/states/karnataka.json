@@ -101,7 +101,7 @@
     }
   ],
   "women": {
-    "intro": "Women who tutor across Karnataka, in Mysuru, Mangaluru, Hubballi or a district town, can join NXTutors and shape their own teaching week. Visit students at home, teach online or combine the two, and list only the layouts and localities you are comfortable reaching. The hours you keep are the hours families see. Each tutor who joins confirms a phone or email by one-time code and uploads a government photo ID for our team to review before the profile appears; real tutors who pass carry a Verified badge. Your first lesson with any family is a demo where we ask a parent to be at home.",
+    "intro": "Women who tutor across Karnataka, in Mysuru, Mangaluru, Hubballi or a district town, can join NXTutors and shape their own teaching week. Visit students at home, teach online or combine the two, and list only the layouts and localities you are comfortable reaching. The hours you keep are the hours families see. Each tutor who joins confirms a phone or email by one-time code and uploads a government photo ID for our team to review before the profile is marked Verified. Your first lesson with any family is a demo where we ask a parent to be at home.",
     "points": [
       "Home, online or hybrid is your decision, and you can change it.",
       "Only the layouts and localities you list are used for home requests.",
@@ -114,8 +114,8 @@
   },
   "story": [
     "Join from any Karnataka town by entering a one-time code sent to your phone or email. Add your layout or locality, the places you will visit and your preferred medium.",
-    "Upload a government photo ID from the tutor dashboard. Our team reviews it before your profile is shown, and an ID number can be tied to only one tutor account.",
-    "Once you clear the review, your profile is live with the Verified badge, showing SSLC, PUC, CBSE or ICSE classes, your subjects and the fee you chose.",
+    "Upload a government photo ID from the tutor dashboard. Our team reviews it before your profile is marked Verified, and an ID number can be tied to only one tutor account.",
+    "Once you clear the review, your profile carries the Verified badge, showing SSLC, PUC, CBSE or ICSE classes, your subjects and the fee you chose.",
     "A family nearby sends a request naming class, board and subject. Two or three tutors are shortlisted, nearest first, then the wider city, then online.",
     "Your fee is already on the profile the family saw, and the first lesson is a free demo for them. Teach the chapter the student has in school this week.",
     "If the family continues, lessons run at home, online or both on days agreed with the parent. Keep your localities and hours current as students join."
@@ -135,7 +135,7 @@
     ],
     [
       "How does verification work?",
-      "Tutors who join confirm a phone number or email with a one-time code and upload a government photo ID, which the team checks before the profile goes live. It is not a police or background check. See How we verify tutors."
+      "Tutors who join confirm a phone number or email with a one-time code and upload a government photo ID, which the team checks before the profile is marked Verified. It is not a police or background check. See How we verify tutors."
     ],
     [
       "Is joining paid?",

@@ -251,8 +251,7 @@
     <li><strong>Can you teach online on coaching nights?</strong> Flexibility helps in the final months.</li>
   </ol>
   <p>
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live. Our <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist</a> lists more.
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. Our <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist</a> lists more.
   </p>
   </section>
 

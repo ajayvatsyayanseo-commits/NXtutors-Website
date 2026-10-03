@@ -230,8 +230,7 @@
     advice on choosing a stream holds in Patna.
   </p>
   <p>
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live. Most commerce students take economics too, so see our <a href="{{ url('/economics-home-tutor-patna') }}">economics
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. Most commerce students take economics too, so see our <a href="{{ url('/economics-home-tutor-patna') }}">economics
     tutor in Patna</a> page; the national <a href="{{ url('/accountancy-home-tutor') }}">accountancy home tutor</a>
     guide has a chapter-by-chapter table, and our <a href="{{ url('/english-home-tutor-patna') }}">English</a> and
     <a href="{{ url('/maths-home-tutor-patna') }}">maths</a> pages cover other subjects. Teachers can find open

@@ -233,8 +233,7 @@
   </ul>
   <p>
     Unhappy with the fit? The next name on your shortlist can come for a separate demo, and swapping tutor later is
-    free. Each tutor who signs up completes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before going
-    live on the site.
+    free. Each tutor who signs up completes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the Verified badge appears on the site.
   </p>
   </section>
 

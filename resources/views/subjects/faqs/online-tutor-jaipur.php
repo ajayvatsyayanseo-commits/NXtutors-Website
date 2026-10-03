@@ -23,7 +23,7 @@ return [
     ],
     [
         'Is online tuition safe for children?',
-        'Keep the device in a shared room, use the app the family set up and know who is on the call. Tutors who join go through an ID check before their profile goes live, though it is not a police or background check. Meet the tutor at the free demo and agree any recording policy openly.',
+        'Keep the device in a shared room, use the app the family set up and know who is on the call. Tutors who join go through an ID check before their profile is marked Verified, though it is not a police or background check. Meet the tutor at the free demo and agree any recording policy openly.',
     ],
     [
         'Is online tuition cheaper in Jaipur?',

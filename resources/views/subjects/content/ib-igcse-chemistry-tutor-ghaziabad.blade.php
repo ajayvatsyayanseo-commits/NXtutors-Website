@@ -279,7 +279,7 @@
     Send the course and code, the tier or level, the exam series or session, a recent test, your khand, sector or
     colony and free times. You will get two or three matched tutors; the first class is a
     <a href="{{ url('/demo-class') }}">free demo</a>, and you can change tutor later at no cost. Each tutor clears an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> on joining, before the profile is shown, and
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> on joining, before the profile is marked Verified, and
     <a href="{{ url('/tutors') }}">tutor profiles</a> are open to browse. For the other sciences, see
     <a href="{{ url('/ib-physics-tutor-ghaziabad') }}">IB physics</a> and
     <a href="{{ url('/igcse-physics-tutor-ghaziabad') }}">IGCSE physics</a> tutors in Ghaziabad.

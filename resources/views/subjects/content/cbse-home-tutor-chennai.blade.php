@@ -224,7 +224,7 @@
   </ol>
   <p>
     Expect two or three matched tutors, each fee visible before the demo, and a free change of tutor if needed later.
-    Tutors joining NXTutors pass an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before going live.
+    Tutors joining NXTutors pass an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the Verified badge appears.
   </p>
   </section>
 

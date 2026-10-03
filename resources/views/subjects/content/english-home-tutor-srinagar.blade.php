@@ -246,7 +246,7 @@
     Class, board, the area of English that concerns you most, the language your child finds easiest, locality plus a
     landmark, preferred days and hours, and a budget. A shortlist of two or three English tutors comes back with fees
     attached. Tutors who join NXTutors go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is published. Srinagar parents can also
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified. Srinagar parents can also
     look at our <a href="{{ url('/maths-home-tutor-srinagar') }}">maths</a> and
     <a href="{{ url('/science-home-tutor-srinagar') }}">science</a> tutor pages, and local English teachers can browse
     families' requests on <a href="{{ url('/tuition-jobs/srinagar') }}">Srinagar tuition jobs</a>.

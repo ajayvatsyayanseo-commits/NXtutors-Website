@@ -84,8 +84,8 @@
   },
   "story": [
     "Begin with a one-time code to your phone or email. Tell us your Goa town, the wards or villages you could visit, and whether video lessons are part of your plan.",
-    "Next, a government photo ID goes up from your dashboard. Someone on our team compares it with your profile; until then nothing is public, and no ID can be reused for a second account.",
-    "Cleared tutors go live carrying the Verified badge. Parents can read which GBSHSE, CBSE or ICSE classes you take, your subjects, your teaching language and the fee you chose.",
+    "Next, a government photo ID goes up from your dashboard. Someone on our team compares it with your profile; until then there is no Verified badge, and no ID can be reused for a second account.",
+    "Cleared tutors carry the Verified badge. Parents can read which GBSHSE, CBSE or ICSE classes you take, your subjects, your teaching language and the fee you chose.",
     "When a Goan family asks for help, they give the class, board and subject. Out of the tutors who fit, two or three are put forward, closest first, then wider, then online.",
     "Parents know your fee before they meet you, and that first meeting is a no-cost demo for them. Use it to teach whatever the student is studying in school right now.",
     "Should they decide to continue, lessons go ahead at their home, over video or both, on days you and the parent fix. Revise your wards and hours whenever life changes."
@@ -105,7 +105,7 @@
     ],
     [
       "Is there a police check?",
-      "No. Tutors who join go through an ID check: a one-time code confirms phone or email, and our team reviews a government photo ID before the profile goes live. See How we verify tutors."
+      "No. Tutors who join go through an ID check: a one-time code confirms phone or email, and our team reviews a government photo ID before the profile is marked Verified. See How we verify tutors."
     ],
     [
       "Are tutor plans paid?",

@@ -23,7 +23,7 @@ return [
     ],
     [
         'How do we keep online lessons safe?',
-        'Use a shared room, a family account for calls and a parent\'s number for messages. Stay within earshot for younger children, and never share passwords or documents during lessons. Tutors who join go through an ID check before their profile goes live; it is not a police or background check, so stay involved.',
+        'Use a shared room, a family account for calls and a parent\'s number for messages. Stay within earshot for younger children, and never share passwords or documents during lessons. Tutors who join go through an ID check before their profile is marked Verified; it is not a police or background check, so stay involved.',
     ],
     [
         'Is online tuition cheaper in Hyderabad?',

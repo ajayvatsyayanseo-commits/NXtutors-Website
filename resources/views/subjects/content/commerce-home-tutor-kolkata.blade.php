@@ -247,7 +247,7 @@
   </ul>
   <p>
     The demo with the tutor you choose is free, and you can switch tutor later at no cost. Tutors who join go through
-    an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live; it is not a police or
+    an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified; it is not a police or
     background check.
   </p>
   </section>

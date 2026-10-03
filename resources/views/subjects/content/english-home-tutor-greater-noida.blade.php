@@ -268,7 +268,7 @@
   </p>
   <p>
     Send us the class, board, the English worry, your sector and tower or plot, free days and a budget. Tutors who join
-    go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. For other
+    go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. For other
     subjects, see our <a href="{{ url('/maths-home-tutor-greater-noida') }}">maths</a> and
     <a href="{{ url('/science-home-tutor-greater-noida') }}">science</a> tutors in Greater Noida. English teachers can
     find open requests on the <a href="{{ url('/tuition-jobs/greater-noida') }}">Greater Noida tuition jobs</a> page.

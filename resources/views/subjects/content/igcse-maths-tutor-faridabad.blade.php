@@ -268,7 +268,7 @@
   </ol>
   <p>
     You receive two or three matched tutors and see each one's fee before the demo; the first class costs nothing,
-    and changing tutor later is free. Before any tutor profile goes live, the tutor completes an
+    and changing tutor later is free. Before any tutor profile is marked Verified, the tutor completes an
     <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> with our team.
   </p>
   </section>

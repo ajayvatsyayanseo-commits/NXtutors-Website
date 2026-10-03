@@ -149,7 +149,7 @@
   </ol>
   <p>
     NXTutors does not run its own video classroom; the tutor and family agree a tool they both find easy. Tutors who join
-    go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   </section>
 

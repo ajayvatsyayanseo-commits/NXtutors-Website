@@ -223,8 +223,7 @@
     <li>A short plan for the next month and how progress will be shown to you.</li>
   </ul>
   <p>
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live. If the fit is wrong, the next tutor on your shortlist can give a demo, and switching later is free. More
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. If the fit is wrong, the next tutor on your shortlist can give a demo, and switching later is free. More
     questions are in our <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist</a>.
   </p>
   </section>

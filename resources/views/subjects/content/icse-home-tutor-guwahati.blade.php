@@ -227,8 +227,7 @@
     <li>For ISC, how they guide projects and the practical file while leaving the work to the student.</li>
   </ol>
   <p>
-    Each request brings two or three matched tutors, fees visible before the demo, and a free switch later on. No
-    profile goes live until the tutor has passed our <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>.
+    Each request brings two or three matched tutors, fees visible before the demo, and a free switch later on. No profile carries the Verified badge until the tutor has passed our <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>.
   </p>
   </section>
 

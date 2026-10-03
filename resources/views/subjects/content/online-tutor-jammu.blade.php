@@ -151,7 +151,7 @@
     locality first, then from its zone, then from the city, then online tutors from the region and across India, and
     each card shows the tutor's home city. When that happens, the subject you asked for probably has no specialist
     within easy reach. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> of their
-    phone or email and a government photo ID before the profile is shown. It is not a police or background check, so
+    phone or email and a government photo ID before the profile is marked Verified. It is not a police or background check, so
     the demo remains the real test of the teaching itself.
   </p>
   </section>

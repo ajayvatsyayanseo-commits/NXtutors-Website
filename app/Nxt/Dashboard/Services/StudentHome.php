@@ -341,7 +341,7 @@ class StudentHome
             'name' => $tutor->name,
             'avatar' => $tutor->avatar,
             'city' => $tutor->city,
-            'verified' => $this->tutors->isVerified($tutorUserId),
+            'verified' => $this->tutors->showsVerifiedBadge($tutor),
         ] : null;
     }
 

@@ -226,7 +226,7 @@
     what she noticed and what the first month would cover. Be wary of a tutor who simply does today's homework without
     looking at how the child thinks. If the match is not right, ask for the next tutor on the shortlist; changing tutor
     later is also free. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>
-    before their profile goes live.
+    before their profile is marked Verified.
   </p>
   </section>
 

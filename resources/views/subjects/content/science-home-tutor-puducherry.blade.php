@@ -276,7 +276,7 @@
     Send the class and syllabus (CBSE, state-board SSLC or ICSE), the strand that worries you most, your area with a
     landmark, the afternoons that suit you, and whether your child is more at ease with explanations in Tamil, English
     or both. We return two or three science tutors with fees, and you choose one for a free demo. Tutors who join go
-    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. If no suitable
+    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. If no suitable
     tutor can reach you at that hour, we suggest an online or part-online plan. NXTutors works from Sector 66,
     Gurugram, and teaches online across India. For later years, see the
     <a href="{{ url('/physics-home-tutor-puducherry') }}">physics</a> and

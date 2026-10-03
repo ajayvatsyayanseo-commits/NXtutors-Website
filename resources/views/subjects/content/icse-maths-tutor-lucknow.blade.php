@@ -271,7 +271,7 @@
     Send the class, the textbook, what is going wrong, your locality with its sector or khand, and your free slots.
     You will see two or three matched tutors, the first class is a <a href="{{ url('/demo-class') }}">free demo</a>, and
     switching tutor later is free. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID
-    check</a> before their profile goes live, and you can browse <a href="{{ url('/tutors') }}">tutor profiles</a>.
+    check</a> before their profile is marked Verified, and you can browse <a href="{{ url('/tutors') }}">tutor profiles</a>.
     For Cambridge students, see <a href="{{ url('/igcse-maths-tutor-lucknow') }}">IGCSE maths tutors in Lucknow</a>.
   </p>
   </section>

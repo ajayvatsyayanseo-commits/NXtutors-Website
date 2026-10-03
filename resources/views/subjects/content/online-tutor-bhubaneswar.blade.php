@@ -134,7 +134,7 @@
     first, then the zone, then the rest of Bhubaneswar, and after that online tutors elsewhere in Odisha and India, with
     each card saying where the tutor is based. An online name on your list usually means the subject or board you asked
     for has no close match nearby. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID
-    check</a> before their profile goes live; it is not a police or background check, so let the demo be your judge of
+    check</a> before their profile is marked Verified; it is not a police or background check, so let the demo be your judge of
     the teaching.
   </p>
   </section>

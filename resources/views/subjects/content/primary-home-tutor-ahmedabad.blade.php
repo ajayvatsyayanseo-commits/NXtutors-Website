@@ -209,7 +209,7 @@
   </ol>
   <p>
     The demo is free. If it does not feel right, another tutor from your shortlist can take a demo too, and changing
-    tutor later costs nothing. Tutors who join go through an ID check before their profile goes live; see
+    tutor later costs nothing. Tutors who join go through an ID check before their profile is marked Verified; see
     <a href="{{ url('/how-we-verify-tutors') }}">how we verify tutors</a> and our
     <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo checklist</a>.
   </p>

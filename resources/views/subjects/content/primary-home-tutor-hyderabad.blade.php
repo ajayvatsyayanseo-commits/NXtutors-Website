@@ -225,7 +225,7 @@
   </ol>
   <p>
     The first class is free, and switching later is free too. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live; stay at home for the
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified; stay at home for the
     demo, and choose a shared room for regular lessons.
   </p>
   </section>

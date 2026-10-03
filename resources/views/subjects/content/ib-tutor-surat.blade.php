@@ -225,8 +225,7 @@
   </ol>
   <p>
     The shortlist has two or three tutors, each fee shows before the demo, and you can change tutor later at no cost.
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live.
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   </section>
 

@@ -56,7 +56,7 @@
     or a mix, with a monthly figure you are comfortable with. Our reply names two or three suitable tutors, each
     with their fee shown before you meet. The first lesson with the one you choose is a free demo, and if the match
     stops working later, moving to another tutor costs nothing. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. For this city we sort
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. For this city we sort
     the shortlist by four things:
   </p>
   <ul>

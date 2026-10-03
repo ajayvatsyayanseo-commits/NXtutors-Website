@@ -23,7 +23,7 @@ return [
     ],
     [
         'How do we keep home visits safe for a young child?',
-        'Tutors who join go through an ID check before their profile goes live, but it is not a police or background check, so stay involved. Keep an adult at home during every session, use a shared room with the door open, register the tutor at the gate, and confirm the person matches the profile.',
+        'Tutors who join go through an ID check before their profile is marked Verified, but it is not a police or background check, so stay involved. Keep an adult at home during every session, use a shared room with the door open, register the tutor at the gate, and confirm the person matches the profile.',
     ],
     [
         'What does a nursery or KG tutor cost in Hyderabad?',

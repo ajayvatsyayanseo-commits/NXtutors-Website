@@ -214,8 +214,7 @@
   </ol>
   <p>
     Not convinced? The next name on your shortlist gives a demo of their own, and moving to a different tutor later
-    costs nothing. Every tutor who joins passes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the
-    profile is published. The <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">parents' demo
+    costs nothing. Every tutor who joins passes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified. The <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">parents' demo
     checklist</a> suggests further questions.
   </p>
   </section>

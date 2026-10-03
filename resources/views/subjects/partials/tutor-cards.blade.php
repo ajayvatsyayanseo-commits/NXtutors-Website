@@ -34,6 +34,8 @@
     'waLink' => $waLink,
     'profileUrl' => $profile,
     'sample' => ! empty($c['is_sample']),
+    // Verified only when the search mapper says so (App\Support\TutorBadge).
+    'verified' => ! empty($c['id_verified']),
     'gender' => $c['gender'] ?? null,
     'placeLabel' => $c['place_label'] ?? null,
     'subjects' => (array) ($c['subjects'] ?? []),

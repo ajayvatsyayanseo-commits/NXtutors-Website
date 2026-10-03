@@ -221,7 +221,7 @@
   <p>
     Tell us the class and board, which subjects need help, coaching days, your locality and society, and the times
     that work. Book a <a href="{{ url('/demo-class') }}">free demo class</a> or browse <a href="{{ url('/tutors') }}">tutor
-    profiles</a>. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before going live.
+    profiles</a>. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the Verified badge appears.
     Engineering instead? See <a href="{{ url('/jee-home-tutor-pune') }}">JEE home tutor in Pune</a>. Teachers can find
     students through <a href="{{ url('/tuition-jobs/pune') }}">Pune tuition jobs</a>.
   </p>

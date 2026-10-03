@@ -330,7 +330,7 @@
     Tell us the class, board, what worries you (reading, writing, grammar, literature, speaking or a specific exam),
     your area, preferred days and times, home or online, and a budget. We shortlist two or three matched tutors,
     you choose one for a free demo class, and if it does not work out you can switch tutor at no cost. Tutors who join
-    go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. You can also
+    go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. You can also
     browse <a href="{{ url('/tutors') }}">tutor profiles</a> yourself or book a
     <a href="{{ url('/demo-class') }}">free demo class</a> directly.
   </p>

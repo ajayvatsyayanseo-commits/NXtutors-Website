@@ -48,7 +48,7 @@
         <ul class="nx-stats nx-stats--stack">
           <li><strong>1</strong><span>Tutor confirms their phone or email</span></li>
           <li><strong>2</strong><span>Tutor uploads a government photo ID</span></li>
-          <li><strong>3</strong><span>Our team reviews it before the profile goes live</span></li>
+          <li><strong>3</strong><span>Our team reviews it before the profile is marked Verified</span></li>
         </ul>
       </aside>
     </section>
@@ -66,7 +66,7 @@
         </article>
         <article class="nx-card">
           <h3 class="nx-card__title">3. Review by our team</h3>
-          <p class="nx-card__meta">Our team looks at the uploaded ID against the details on the profile. A profile stays pending until it is made active, and only active tutors are shortlisted for families.</p>
+          <p class="nx-card__meta">Our team looks at the uploaded ID against the details on the profile. The Verified badge appears only after this review, so a new tutor's profile can be live without it for a while: look for the badge on the card and profile.</p>
         </article>
         <article class="nx-card">
           <h3 class="nx-card__title">4. The Verified badge</h3>

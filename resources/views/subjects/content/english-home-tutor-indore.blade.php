@@ -246,7 +246,7 @@
   </ul>
   <p>
     If the fit is wrong, we arrange a demo with the next tutor on the shortlist; switching later is also free. Tutors
-    who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   </section>
 

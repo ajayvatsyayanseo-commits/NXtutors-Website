@@ -26,6 +26,8 @@
                 rating, experience, fee or Compare; a "Sample profile" label,
                 and the 10-minute match as its action.
     $placeLabel optional search line ("In Sector 56", "In Haryana").
+    $verified   optional bool; the Verified seal when the caller already
+                knows it (search card arrays). Else TutorBadge::verified($t).
     $gender     optional; defaults to $t->gender. A real, verified tutor who
                 is female gets the pink seal "Verified · Woman tutor"
                 (App\Support\TutorBadge); samples never do.
@@ -48,8 +50,10 @@
   }
   $place = implode(', ', $parts);
   $isSample = (bool) ($sample ?? ($t->is_sample ?? false));
-  $tcVerified = \App\Support\TutorBadge::verified($t, $isSample);
-  $tcWoman = \App\Support\TutorBadge::woman($t, $isSample, $gender ?? null);
+  // One rule (App\Support\TutorBadge): real, live and ID-approved. Search
+  // cards pass $verified (their arrays carry id_verified) instead of a row.
+  $tcVerified = ! $isSample && (isset($verified) ? (bool) $verified : \App\Support\TutorBadge::verified($t, $isSample));
+  $tcWoman = \App\Support\TutorBadge::woman($t, $isSample, $gender ?? null, $tcVerified);
 
   // What they teach, their boards, experience and fee: from the caller when it
   // has them, else from the tutor record (PublicTutorFieldMapper, the one place

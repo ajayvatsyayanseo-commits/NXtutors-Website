@@ -258,7 +258,7 @@
   <p>
     Send the class, the subjects, the medium your child writes in, your locality with a landmark and the hours that
     suit you, then book a <a href="{{ url('/demo-class') }}">free demo class</a>. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. If nobody suitable can
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. If nobody suitable can
     travel at your hour, see <a href="{{ url('/online-tutor-panaji') }}">online tutors for Panaji</a>. Teachers who
     know the Goa Board syllabus can find requests on <a href="{{ url('/tuition-jobs/panaji') }}">Panaji tuition
     jobs</a>, and the <a href="{{ url('/blog/panaji-home-tuition-guide') }}">Panaji home tuition guide</a> covers every

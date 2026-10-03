@@ -262,8 +262,7 @@
   <p>
     Mention the class and board, NEET plans if any, the chapters that worry you, your child's easiest language, your
     colony and available hours, and a budget. A shortlist of two or three biology tutors arrives with fees. Everyone
-    who registers to teach passes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is
-    published. For the other sciences, see <a href="{{ url('/physics-home-tutor-bhubaneswar') }}">physics</a> and
+    who registers to teach passes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified. For the other sciences, see <a href="{{ url('/physics-home-tutor-bhubaneswar') }}">physics</a> and
     <a href="{{ url('/chemistry-home-tutor-bhubaneswar') }}">chemistry</a> tutors in Bhubaneswar; the national
     <a href="{{ url('/biology-home-tutor') }}">biology home tutor</a> guide covers IGCSE and IB in depth, and the
     <a href="{{ url('/blog/bhubaneswar-home-tuition-guide') }}">Bhubaneswar home tuition guide</a> covers every zone.

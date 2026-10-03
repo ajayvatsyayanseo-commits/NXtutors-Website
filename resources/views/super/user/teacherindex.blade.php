@@ -17,6 +17,12 @@
 <div class="card border-0 shadow-sm">
   <div class="card-body">
 
+    {{-- The ID-check to-do list: pending tutors, and live tutors whose ID is not approved yet. --}}
+    <div class="mb-3">
+      <a href="{{ route('super.teacher.index') }}" class="btn btn-sm {{ ($filter ?? 'all') === 'all' ? 'btn-dark' : 'btn-outline-dark' }}">All teachers</a>
+      <a href="{{ route('super.teacher.index', ['filter' => 'awaiting']) }}" class="btn btn-sm {{ ($filter ?? 'all') === 'awaiting' ? 'btn-warning' : 'btn-outline-warning' }}">Awaiting ID check ({{ $awaitingCount ?? 0 }})</a>
+    </div>
+
 
     <div class="table-responsive">
       <table class="table table-striped w-100 datatable">
@@ -28,6 +34,7 @@
             <th>Email</th>
             <th>Phone</th>
             <th>Status</th>
+            <th>ID check</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -41,6 +48,7 @@
             <td>{{ $row->email }}</td>
             <td>{{ $row->phone }}</td>
             <td>@if($row->status === 'p')<strong>Pending review</strong>@else{{ \App\Models\Register::STATUS_LABELS[$row->status] ?? 'Inactive' }}@endif</td>
+            <td>@if(! empty($row->is_sample))<span class="text-muted">Sample</span>@elseif($row->isIdVerified())<span class="badge bg-success">Verified</span>@else<span class="badge bg-warning text-dark">Not verified yet</span>@endif</td>
             <td>
               <a href="{{ route('super.teacher.edit', $row->id) }}"><i class="bi bi-pencil"></i></a> |
               <form action="{{ route('super.teacher.destroy', $row->id) }}"

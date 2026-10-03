@@ -275,7 +275,7 @@
     Tell us the course, level, exam session and DP year, what is going wrong, your khand, sector or society, and when
     the student is free. Two or three matched tutors come back to you; the first class with your choice is a
     <a href="{{ url('/demo-class') }}">free demo</a>, and a later change of tutor costs nothing. Everyone who joins as a
-    tutor goes through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is published, and
+    tutor goes through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified, and
     <a href="{{ url('/tutors') }}">tutor profiles</a> are open to browse. Science students can turn to our
     <a href="{{ url('/ib-physics-tutor-ghaziabad') }}">IB physics</a> and
     <a href="{{ url('/ib-igcse-chemistry-tutor-ghaziabad') }}">IB and IGCSE chemistry</a> pages for Ghaziabad.

@@ -217,7 +217,7 @@
   </ol>
   <p>
     If the fit is wrong, say so and we set up the next demo; changing tutor later is free too. Tutors who join NXTutors go
-    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live, and you can browse
+    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified, and you can browse
     <a href="{{ url('/tutors') }}">tutor profiles</a> yourself.
   </p>
   </section>

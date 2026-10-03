@@ -236,7 +236,7 @@
     the days and times that work, home or online, and a budget. Any family can request an accountancy tutor; we come
     back with two or three matches, each with a fee, and the first class with the one you pick is a free
     <a href="{{ url('/demo-class') }}">demo class</a>. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live, and you can browse
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified, and you can browse
     <a href="{{ url('/tutors') }}">tutor profiles</a> yourself.
   </p>
   <p>

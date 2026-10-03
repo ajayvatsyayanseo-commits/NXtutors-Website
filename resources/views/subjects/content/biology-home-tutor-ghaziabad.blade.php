@@ -263,7 +263,7 @@
   </p>
   <p>
     Send us the class, board, medium and goal, your khand, sector or colony, and free evenings. Tutors who join go
-    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. See also our
+    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. See also our
     <a href="{{ url('/chemistry-home-tutor-ghaziabad') }}">chemistry</a> and
     <a href="{{ url('/maths-home-tutor-ghaziabad') }}">maths</a> tutors in Ghaziabad. Biology teachers can find open
     requests on the <a href="{{ url('/tuition-jobs/ghaziabad') }}">Ghaziabad tuition jobs</a> page.

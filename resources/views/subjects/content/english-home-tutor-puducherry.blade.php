@@ -249,8 +249,7 @@
   <p>
     To begin, tell us the class and board, the skill you most want improved, whether Tamil explanations would help,
     your area with a landmark, the days that work and your budget. A shortlist of two or three tutors follows, fees
-    included; tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their
-    profile goes live. You may also want the <a href="{{ url('/maths-home-tutor-puducherry') }}">maths</a> or
+    included; tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. You may also want the <a href="{{ url('/maths-home-tutor-puducherry') }}">maths</a> or
     <a href="{{ url('/science-home-tutor-puducherry') }}">science</a> pages for Puducherry. English teachers based in
     the town can browse requests on <a href="{{ url('/tuition-jobs/puducherry') }}">Puducherry tuition jobs</a>.
   </p>

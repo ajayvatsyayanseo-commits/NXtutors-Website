@@ -271,8 +271,7 @@
   <p>
     Send the course, tier or level, grade or DP year, exam session, locality and good times. Two or three matched tutors
     reach you, the first class is a <a href="{{ url('/demo-class') }}">free demo</a>, and switching later costs nothing.
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live. Look through <a href="{{ url('/tutors') }}">tutor profiles</a>, or see
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. Look through <a href="{{ url('/tutors') }}">tutor profiles</a>, or see
     <a href="{{ url('/ib-physics-tutor-ahmedabad') }}">IB physics</a> and
     <a href="{{ url('/igcse-physics-tutor-ahmedabad') }}">IGCSE physics</a> tutors in Ahmedabad.
   </p>

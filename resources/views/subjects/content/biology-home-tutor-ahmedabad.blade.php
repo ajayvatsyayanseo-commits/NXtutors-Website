@@ -256,7 +256,7 @@
     Tell us the class, board and medium, whether NEET is in the plan, the chapters that worry your child, your
     locality, the times that suit and a budget. We send two or three matched biology tutors with fees, the first class
     with the one you pick is a free demo, and switching later is free. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. Younger students can start
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. Younger students can start
     with <a href="{{ url('/science-home-tutor-ahmedabad') }}">science home tutors in Ahmedabad</a>, and students taking
     maths alongside biology can see <a href="{{ url('/maths-home-tutor-ahmedabad') }}">maths home tutors in
     Ahmedabad</a>. Biology teachers in the city can find students on the

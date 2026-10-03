@@ -265,7 +265,7 @@
     Send the class, the school's medium, Mathematics or Applied Mathematics for Classes 11 and 12, any entrance plan,
     your locality with a landmark, the free afternoons and the fee you have in mind. We reply with two or three maths
     tutors and their fees, and one of them gives the free <a href="{{ url('/demo-class') }}">demo class</a>. Tutors who
-    join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before a profile goes live. If nobody
+    join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before a profile is marked Verified. If nobody
     suitable can reach your lane at your hour, part or all of the plan can move to an
     <a href="{{ url('/online-tutor-port-blair') }}">online tutor</a>. The national
     <a href="{{ url('/maths-home-tutor') }}">maths home tutor</a> page explains the wider service, the

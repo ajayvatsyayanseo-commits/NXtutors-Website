@@ -264,7 +264,7 @@
     landmark such as the nearest market or sector; whether the home is inside an official colony; the days and times
     you can offer; and the most you would like to spend per session. We come back with two or three matched maths tutors and their fees, and you choose
     one for the free demo. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>
-    before their profile goes live. NXTutors works from Sector 66, Gurugram, and teaches online across India; the
+    before their profile is marked Verified. NXTutors works from Sector 66, Gurugram, and teaches online across India; the
     national <a href="{{ url('/maths-home-tutor') }}">maths home tutor</a> page shows how we match elsewhere, and the
     <a href="{{ url('/cbse-home-tutor-itanagar') }}">CBSE home tutors in Itanagar</a> page covers the other subjects.
   </p>

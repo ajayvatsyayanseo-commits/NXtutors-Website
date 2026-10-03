@@ -232,7 +232,7 @@
   </ul>
   <p>
     If the fit is poor, we arrange the next demo from your shortlist, and switching later is free. Tutors who join
-    go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is published.
+    go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   </section>
 

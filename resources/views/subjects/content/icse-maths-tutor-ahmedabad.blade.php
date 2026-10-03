@@ -261,7 +261,7 @@
     Tell us the class, the textbook series, recent test marks, your locality and free slots. Two or three matched
     tutors come back to you with their fees shown, the first lesson is a <a href="{{ url('/demo-class') }}">free
     demo</a>, and switching later is free. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live; browse
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified; browse
     <a href="{{ url('/tutors') }}">tutor profiles</a> whenever you like.
   </p>
   </section>

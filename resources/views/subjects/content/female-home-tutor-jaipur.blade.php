@@ -189,11 +189,10 @@
   </section>
 
   <section class="nx-guide__sec">
-  <h2 id="jpfm-checks">Checks before she is listed, and judging her at the demo</h2>
+  <h2 id="jpfm-checks">Checks before she gets the Verified badge, and judging her at the demo</h2>
   <p>
     Tutors who join NXTutors go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>: they confirm
-    their phone or email with a one-time code and upload a government photo ID that the team reviews before the
-    profile goes live, and real tutors who pass carry a Verified badge. It is not a police or background check, and
+    their phone or email with a one-time code and upload a government photo ID that the team reviews before the profile is marked Verified. It is not a police or background check, and
     some profiles on the site are samples, so the demo is where you judge. Watch whether she asks about your child
     before teaching, whether your child does the writing, and whether she can explain the board's paper. The first
     lesson is free, and if it does not work out, switching to another tutor later costs nothing.

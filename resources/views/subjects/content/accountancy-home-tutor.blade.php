@@ -349,7 +349,7 @@
     Tell us the class, board and exact course, the chapters that are hurting, your area, preferred times, home or
     online, and a budget. We shortlist two or three accountancy tutors who fit all of it, and you choose one for a
     <a href="{{ url('/demo-class') }}">free demo class</a>. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. If the first tutor is
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. If the first tutor is
     not right, switching is free.
   </p>
   <p>

@@ -224,7 +224,7 @@
   </ul>
   <p>
     The first class with the tutor you choose is free, and switching to another tutor later is free too. Tutors who
-    join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   </section>
 

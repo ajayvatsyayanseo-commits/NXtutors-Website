@@ -210,7 +210,7 @@
   <section class="nx-guide__sec">
   <h2 id="ahon-safe">How do you keep online lessons safe?</h2>
   <ul>
-    <li>Tutors who join go through an ID check before their profile goes live; see <a href="{{ url('/how-we-verify-tutors') }}">how we verify tutors</a>. It is not a police check.</li>
+    <li>Tutors who join go through an ID check before their profile is marked Verified; see <a href="{{ url('/how-we-verify-tutors') }}">how we verify tutors</a>. It is not a police check.</li>
     <li>Keep the device in a shared space, and let a parent hold the meeting link.</li>
     <li>Agree that messages go to a parent's number, not only the child's.</li>
     <li>Recording is a matter for the family and tutor to agree openly; never share personal photos or details beyond the lesson.</li>

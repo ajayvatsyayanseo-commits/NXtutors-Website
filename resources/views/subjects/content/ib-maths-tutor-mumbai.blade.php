@@ -270,7 +270,7 @@
     Send us the course, level, exam session, DP year, what is going wrong, your station or locality and the slots you
     can offer. We come back with two or three matched tutors, you choose one for a
     <a href="{{ url('/demo-class') }}">free demo class</a>, and switching tutor later is free. Tutors who join go through
-    an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. You can also browse
+    an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. You can also browse
     <a href="{{ url('/tutors') }}">tutor profiles</a> first. For the sciences, see
     <a href="{{ url('/ib-physics-tutor-mumbai') }}">IB physics</a> and
     <a href="{{ url('/ib-igcse-chemistry-tutor-mumbai') }}">IB and IGCSE chemistry</a> tutors in Mumbai.

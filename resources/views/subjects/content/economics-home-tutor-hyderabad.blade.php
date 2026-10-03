@@ -257,7 +257,7 @@
     Share the course, the year, the skill that worries you most, your colony, the times that suit and your preferred
     format. We return two or three matched tutors with fees; the first class is a
     <a href="{{ url('/demo-class') }}">free demo</a>, and switching later costs nothing. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   <p>
     See also <a href="{{ url('/cbse-home-tutor-hyderabad') }}">CBSE tutors in Hyderabad</a>,

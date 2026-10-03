@@ -233,8 +233,7 @@
   <p>
     To ask for tutors, send your child's class and board, the English skill that worries you, your locality with a
     landmark or bus stop, the days and times that suit, and a budget. Two or three matched tutors come back with their
-    fees. Tutors who join NXTutors go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the
-    profile goes live. The <a href="{{ url('/maths-home-tutor-shillong') }}">maths</a> and
+    fees. Tutors who join NXTutors go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified. The <a href="{{ url('/maths-home-tutor-shillong') }}">maths</a> and
     <a href="{{ url('/science-home-tutor-shillong') }}">science</a> pages for Shillong cover other subjects, and English
     teachers looking for students can open <a href="{{ url('/tuition-jobs/shillong') }}">Shillong tuition jobs</a>.
   </p>

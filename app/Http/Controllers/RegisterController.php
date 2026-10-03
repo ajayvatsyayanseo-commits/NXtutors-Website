@@ -51,13 +51,24 @@ class RegisterController extends Controller
                  return view('super.user.index', compact('pages'));  
     }
   
-    public function indexteacher()
+    public function indexteacher(Request $request)
     {
-        // Tutors waiting for review first: they are the admin's to-do list.
-        $pages = Register::where('join_as', 'teacher')
-            ->orderByRaw("CASE WHEN status = 'p' THEN 0 ELSE 1 END")
-            ->orderBy('id', 'DESC')->get();
-                 return view('super.user.teacherindex', compact('pages')); 
+        // Tutors waiting for the ID check first (pending, then live but not
+        // verified yet): they are the admin's to-do list. ?filter=awaiting
+        // shows only those.
+        $awaitingIds = Register::query()->awaitingIdCheck()->pluck('id')->all();
+        $filter = $request->query('filter') === 'awaiting' ? 'awaiting' : 'all';
+
+        $query = Register::where('join_as', 'teacher')
+            ->when($filter === 'awaiting', fn ($q) => $q->whereIn('id', $awaitingIds ?: [0]))
+            ->orderByRaw("CASE WHEN status = 'p' THEN 0 ELSE 1 END");
+        if ($awaitingIds) {
+            $query->orderByRaw('CASE WHEN id IN ('.implode(',', array_map('intval', $awaitingIds)).') THEN 0 ELSE 1 END');
+        }
+        $pages = $query->orderBy('id', 'DESC')->get();
+        $awaitingCount = count($awaitingIds);
+
+        return view('super.user.teacherindex', compact('pages', 'filter', 'awaitingCount'));
     }
       public function create()
   
@@ -396,7 +407,12 @@ private function generateTutorAvatar(): ?string
     $data['date'] = date('Y-m-d, h:i:s a');
 
 
-    Register::create($data);
+    $created = Register::create($data);
+
+    // A real tutor added by hand: the reviewer gets the "New tutor to check"
+    // email. The admin picked the status here, so the publish rule is not
+    // applied; the Verified badge still waits for Approve.
+    app(\App\Services\TutorIntake::class)->registered($created, \App\Services\TutorIntake::SOURCE_ADMIN, false);
 
     return redirect()->route('super.user.index')->with('success', 'Teacher created successfully.');
  }
@@ -728,7 +744,8 @@ public function verifyOtp(Request $request)
         if ($user) {
             $user->otp = null;
             $user->otp_status = 't';
-            // A tutor goes live after the team's ID review, not on an email code.
+            // A tutor's status follows App\Services\TutorIntake (publish rule and
+            // ID review), never an email code.
             if ($user->join_as !== 'teacher') {
                 $user->status = 't';
             }

@@ -237,7 +237,7 @@
   </ol>
   <p>
     The first class is free and switching later costs nothing. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live; our
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified; our
     <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo checklist</a> has more ideas.
   </p>
   </section>

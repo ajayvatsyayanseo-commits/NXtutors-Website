@@ -34,7 +34,7 @@ class TutorDirectory
     {
         return $this->mapper->toPublicArray($tutor) + [
             'user_id' => $tutor->user_id,
-            'verified' => $this->isVerified((string) $tutor->user_id),
+            'verified' => $this->showsVerifiedBadge($tutor),
             'reliability' => $this->reliability((string) $tutor->user_id),
         ];
     }
@@ -141,6 +141,17 @@ class TutorDirectory
     public function isVerified(string $tutorUserId): bool
     {
         return $this->verificationSummary($tutorUserId)['verified'];
+    }
+
+    /**
+     * The badge a family sees in the app: the documents above AND the site's
+     * one Verified rule (App\Support\TutorBadge: real, live, ID approved by
+     * the team). A tutor live before the ID check never shows as verified.
+     * Lead gating stays on isVerified() alone.
+     */
+    public function showsVerifiedBadge(Register $tutor): bool
+    {
+        return $tutor->isIdVerified() && $this->isVerified((string) $tutor->user_id);
     }
 
     /**

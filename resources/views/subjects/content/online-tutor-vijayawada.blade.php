@@ -129,8 +129,7 @@
     Searching for home tuition can still bring up online names. A locality page shows tutors based in that locality,
     then those elsewhere in its zone, then the wider city, then online tutors from further away, and each card states
     where the tutor lives. If an online tutor appears early in the list, the subject you need is probably not taught close
-    by. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile
-    goes live; it is not a police or background check, so the demo is where you judge the teaching.
+    by. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified; it is not a police or background check, so the demo is where you judge the teaching.
   </p>
   </section>
 

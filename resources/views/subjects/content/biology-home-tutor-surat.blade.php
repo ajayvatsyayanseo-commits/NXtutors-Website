@@ -232,7 +232,7 @@
     Tell us the class, board and medium, whether NEET is part of the plan, the chapters that worry your child, your
     locality and side of the river, the times that suit and a budget. We send two or three matched biology tutors
     with fees, the first class with your choice is a free demo, and switching later is free. Tutors who join go
-    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. For maths
+    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. For maths
     alongside biology, see <a href="{{ url('/maths-home-tutor-surat') }}">maths home tutors in Surat</a>. Biology
     teachers living in the city can find students on the <a href="{{ url('/tuition-jobs/surat') }}">Surat tuition
     jobs</a> page.

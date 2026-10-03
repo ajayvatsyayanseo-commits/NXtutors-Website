@@ -219,7 +219,7 @@
   <p>
     The first class with the tutor you choose is a free demo. If it does not work, the next shortlisted tutor gives
     their own, and switching later is free. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   </section>
 

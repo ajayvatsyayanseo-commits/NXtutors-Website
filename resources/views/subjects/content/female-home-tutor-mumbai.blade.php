@@ -210,8 +210,7 @@
   <h2 id="fmmb-check">What does the ID check cover, and what is the demo for?</h2>
   <p>
     Tutors who join go through an ID check. They confirm a phone number or email with a one-time code and upload a
-    government photo ID, which our team reviews before the profile can go live; real tutors who pass show a Verified
-    badge. This is not a police check or a background check, and it tells you nothing about how well someone teaches.
+    government photo ID, which our team reviews before the profile is marked Verified. This is not a police check or a background check, and it tells you nothing about how well someone teaches.
     The full process is on <a href="{{ url('/how-we-verify-tutors') }}">how we verify tutors</a>. Any sample profile
     you see is marked as a sample, is not verified and cannot be booked.
   </p>

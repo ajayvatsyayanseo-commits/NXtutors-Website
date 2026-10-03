@@ -225,7 +225,7 @@
     Send the class, board, main concern, your locality and nearest metro station if any, preferred days and times,
     home or online, and a budget. We shortlist two or three English tutors with fees, you pick one for a free demo,
     and switching later costs nothing. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID
-    check</a> before their profile goes live; you can also browse <a href="{{ url('/tutors') }}">tutor profiles</a>
+    check</a> before their profile is marked Verified; you can also browse <a href="{{ url('/tutors') }}">tutor profiles</a>
     or book a <a href="{{ url('/demo-class') }}">free demo class</a> yourself.
   </p>
   <p>

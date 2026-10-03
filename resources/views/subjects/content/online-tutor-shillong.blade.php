@@ -157,8 +157,7 @@
     A search for home tuition can still show online names. When too few local tutors match a Shillong request, results
     widen beyond the city, first to the rest of Meghalaya and then to online tutors across India, and every card shows
     where the tutor is based. Locality pages follow the same order: the area, then its zone, then Shillong, then online.
-    Tutors who register go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before a profile goes
-    live. That check is about identity, not a police or background check; the quality of the teaching is something
+    Tutors who register go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before a profile is marked Verified. That check is about identity, not a police or background check; the quality of the teaching is something
     you judge in the demo.
   </p>
   </section>

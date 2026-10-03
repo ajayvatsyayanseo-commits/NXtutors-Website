@@ -249,7 +249,7 @@
     and your free evenings in term and in winter. Two or three chemistry tutors come back with their fees; you pick
     one to give the free demo, a second demo is arranged if needed, and switching later is free. If nobody suitable
     can reach you, the shortlist turns to online or mixed options. Each tutor who joins clears an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is shown. See the national
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified. See the national
     <a href="{{ url('/chemistry-home-tutor') }}">chemistry home tutor</a> page, and
     <a href="{{ url('/biology-home-tutor-leh') }}">biology</a> and <a href="{{ url('/physics-home-tutor-leh') }}">physics</a>
     tutors in Leh for the rest of the stream. Chemistry teachers in and around Leh can browse open requests on

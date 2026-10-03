@@ -135,7 +135,7 @@
     Even a search for home tuition can show online tutors. If too few nearby tutors match, results spread outward:
     your locality first, then its zone, then the whole of Panaji, then online tutors from the rest of Goa and from other
     states, with every card naming the tutor's base. Each tutor who joins passes an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before going live. That check is about identity, not a
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the Verified badge appears. That check is about identity, not a
     police record, so the demo remains your real test of the teaching.
   </p>
   </section>

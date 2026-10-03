@@ -223,7 +223,7 @@
     Send the class, board, target exams, subjects, coaching days, locality and society, and the slots that work; we come
     back with two or three matched tutors. Book a <a href="{{ url('/demo-class') }}">free demo class</a> or look through
     <a href="{{ url('/tutors') }}">tutor profiles</a>. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. Preparing for medicine?
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. Preparing for medicine?
     Read <a href="{{ url('/neet-home-tutor-pune') }}">NEET home tutor in Pune</a>. Teachers can find students on
     <a href="{{ url('/tuition-jobs/pune') }}">Pune tuition jobs</a>.
   </p>

@@ -11,7 +11,7 @@ return [
     ],
     [
         'Are female tutors on NXTutors verified?',
-        'Tutors who join go through an ID check: a one-time code for phone or email and a government photo ID reviewed by the team before the profile goes live. Real tutors who pass carry a Verified badge. It is not a police or background check, so judge the tutor yourself at the free demo.',
+        'Tutors who join go through an ID check: a one-time code for phone or email and a government photo ID reviewed by the team before the profile is marked Verified. Real tutors who pass carry a Verified badge. It is not a police or background check, so judge the tutor yourself at the free demo.',
     ],
     [
         'What time of day suits a woman tutor travelling in Jaipur?',

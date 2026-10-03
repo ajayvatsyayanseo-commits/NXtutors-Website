@@ -229,7 +229,7 @@
   </ul>
   <p>
     If it is not a fit, the next tutor on the shortlist gives their own demo, and switching later is free. Tutors who
-    join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is published.
+    join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
     The <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist</a> has more ideas.
   </p>
   </section>

@@ -261,7 +261,7 @@
     Write in with the class, the board, the main goal, any coaching days, your locality and a landmark, and the
     evenings still free. You receive two or three physics tutors with their fees and choose whom to meet for the free
     demo. A poor fit leads to a second demo, and swapping tutor later costs nothing. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. If nobody suitable can come
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. If nobody suitable can come
     at your hour, we offer an online or part-online plan; NXTutors has its office in Sector 66, Gurugram, and teaches
     online in every state. The national <a href="{{ url('/physics-home-tutor') }}">physics home tutor</a> page covers
     other cities, and for the other sciences see <a href="{{ url('/chemistry-home-tutor-raipur') }}">chemistry</a> and

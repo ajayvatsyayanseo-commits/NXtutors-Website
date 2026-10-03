@@ -232,7 +232,7 @@
     speaking), your neighbourhood and nearest station, the days and times that work, and a budget. We come back with
     two or three matched English tutors, each with a fee, and the first class with the one you choose is a free demo.
     If the fit changes later, switching tutor is free. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live, and you can browse
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified, and you can browse
     <a href="{{ url('/tutors') }}">tutor profiles</a> or book a <a href="{{ url('/demo-class') }}">free demo class</a>
     directly.
   </p>

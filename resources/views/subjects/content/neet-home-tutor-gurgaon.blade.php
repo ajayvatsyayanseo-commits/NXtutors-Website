@@ -231,8 +231,7 @@
     <li><strong>An online fallback</strong> agreed in advance for days when traffic or rain makes travel unrealistic.</li>
   </ul>
   <p>
-    Tutors who join NXTutors go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile
-    goes live. If anything about a tutor's conduct concerns you, tell us straight away.
+    Tutors who join NXTutors go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. If anything about a tutor's conduct concerns you, tell us straight away.
   </p>
   </section>
 

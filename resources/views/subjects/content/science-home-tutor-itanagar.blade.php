@@ -228,7 +228,7 @@
     official colony, and the free afternoons. A shortlist of two or three science tutors with fees follows, and you
     choose whom to meet for the free demo. Where nobody suitable can come at your hour, we propose online or blended
     lessons. Every tutor who joins completes an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is published. Senior classes:
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified. Senior classes:
     <a href="{{ url('/physics-home-tutor-itanagar') }}">physics</a>,
     <a href="{{ url('/chemistry-home-tutor-itanagar') }}">chemistry</a> and
     <a href="{{ url('/biology-home-tutor-itanagar') }}">biology</a> tutors in the capital.

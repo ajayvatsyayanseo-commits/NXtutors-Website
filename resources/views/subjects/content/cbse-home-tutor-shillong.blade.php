@@ -235,8 +235,7 @@
   </ol>
   <p>
     Your shortlist has two or three tutors, each fee shown. The opening class is a free demo, and switching tutor at
-    any later point is free as well. Tutors who join NXTutors go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the
-    profile goes live. More questions are in the
+    any later point is free as well. Tutors who join NXTutors go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified. More questions are in the
     <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist</a>.
   </p>
   </section>

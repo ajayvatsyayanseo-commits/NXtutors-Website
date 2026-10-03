@@ -156,7 +156,7 @@
     Expect online profiles even on a home-tuition search. If too few nearby tutors match, results spread outward from
     your ward to its zone, the rest of Kohima, then online tutors in Nagaland and the rest of India, with each card
     labelled by location. Every tutor who joins passes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>
-    before the profile is visible; that is not a police or background check, so let the demo lesson decide.
+    before the profile is marked Verified; that is not a police or background check, so let the demo lesson decide.
   </p>
   </section>
 

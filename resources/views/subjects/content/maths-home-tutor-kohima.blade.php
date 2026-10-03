@@ -297,8 +297,7 @@
     Send the class; the board, and for HSLC whether your child takes Mathematics A or Mathematics B; the ward, a
     landmark and whether the house is above or below the road; the free afternoons; and the fee range you have in
     mind. Two or three maths tutors come back with their fees attached, and one of them gives the free demo. Every tutor
-    who joins goes through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is
-    published. Where nobody suitable can come to your ward at that time, part or all of the plan can move online.
+    who joins goes through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified. Where nobody suitable can come to your ward at that time, part or all of the plan can move online.
     Our office is in Sector 66, Gurugram; the national <a href="{{ url('/maths-home-tutor') }}">maths home tutor</a>
     page explains the wider service, the <a href="{{ url('/blog/kohima-home-tuition-guide') }}">Kohima home tuition
     guide</a> walks through each zone, and <a href="{{ url('/tutors') }}">tutor profiles</a> can be browsed any time.

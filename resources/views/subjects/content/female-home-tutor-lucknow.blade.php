@@ -191,8 +191,7 @@
   <h2 id="fmlk-checks">The ID check, and what it cannot tell you</h2>
   <p>
     Tutors who join go through an ID check: they confirm a phone number or email with a one-time code and upload a
-    government photo ID, which our team reviews before the profile goes live, and real tutors who pass carry a Verified
-    badge. This is not a police or background check; some profiles on the site are also labelled as samples. Read
+    government photo ID, which our team reviews before the profile is marked Verified. This is not a police or background check; some profiles on the site are also labelled as samples. Read
     <a href="{{ url('/how-we-verify-tutors') }}">how we verify tutors</a>. What no check can tell you is whether she
     explains well, keeps time and suits your child; the free demo is for that. If it does not work, another shortlisted
     tutor can give a demo, and changing later is free. Our <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo

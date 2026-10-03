@@ -261,7 +261,7 @@
     Send the class, the textbook series if you know it, the last school test, your khand, sector or colony, and free
     times. We return two or three matched tutors; the first class is a <a href="{{ url('/demo-class') }}">free
     demo</a>, and changing tutor later is free. Anyone joining as a tutor passes an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is published, and you can browse
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified, and you can browse
     <a href="{{ url('/tutors') }}">tutor profiles</a> first.
   </p>
   </section>

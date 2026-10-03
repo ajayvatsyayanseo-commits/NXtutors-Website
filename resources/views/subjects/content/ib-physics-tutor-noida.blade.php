@@ -280,7 +280,7 @@
     Tell us the level, DP year, what is going wrong, your sector and society, and the slots that work. You get two or
     three matched tutors to choose from; the first lesson is a <a href="{{ url('/demo-class') }}">free demo</a> and a
     later change of tutor costs nothing. Each tutor who joins clears an <a href="{{ url('/how-we-verify-tutors') }}">ID
-    check</a> before the profile appears, and you can look through <a href="{{ url('/tutors') }}">tutor profiles</a>
+    check</a> before the profile is marked Verified, and you can look through <a href="{{ url('/tutors') }}">tutor profiles</a>
     yourself. For related subjects, see
     <a href="{{ url('/ib-maths-tutor-noida') }}">IB maths</a> and
     <a href="{{ url('/ib-igcse-chemistry-tutor-noida') }}">IB and IGCSE chemistry</a> tutors in Noida.

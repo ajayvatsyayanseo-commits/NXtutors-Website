@@ -267,7 +267,7 @@
   </ol>
   <p>
     You see two or three matched tutors with fees before the demo; the first class is free and a later switch is free.
-    A tutor's profile goes live only after an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>.
+    A tutor's profile is marked Verified only after an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>.
   </p>
   </section>
 

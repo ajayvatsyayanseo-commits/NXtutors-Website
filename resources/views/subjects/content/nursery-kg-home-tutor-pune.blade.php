@@ -217,7 +217,7 @@
   </ul>
   <p>
     Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>: a one-time code for phone
-    or email and a government photo ID reviewed by our team before the profile goes live. It is not a police or
+    or email and a government photo ID reviewed by our team before the profile is marked Verified. It is not a police or
     background check, so these household habits still matter. If you would prefer a woman tutor, our
     <a href="{{ url('/female-home-tutor-pune') }}">female home tutors in Pune</a> page shows how to ask.
   </p>

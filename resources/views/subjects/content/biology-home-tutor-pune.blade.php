@@ -234,7 +234,7 @@
     Tell us the class, the board or entrance test, the chapters that worry your child, your locality, the times that
     work, home or online, and a budget. We send two or three matched biology tutors with fees; the first class with
     the one you choose is a free demo, and switching later is free. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. The national
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. The national
     <a href="{{ url('/biology-home-tutor') }}">biology home tutor guide</a> covers each board in more depth, and a
     student taking maths alongside biology can see <a href="{{ url('/maths-home-tutor-pune') }}">maths home tutors in
     Pune</a>. Biology teachers in the city can find students on the

@@ -413,6 +413,8 @@ Route::prefix('super')->name('super.')->group(function () {
             ->whereNumber('id')->whereIn('side', ['front', 'back'])->name('teacher.document');
         Route::post('teacher/{id}/approve', [\App\Http\Controllers\SuperAdmin\TutorReviewDocumentController::class, 'approve'])
             ->whereNumber('id')->name('teacher.approve');
+        Route::post('teacher/{id}/unverify', [\App\Http\Controllers\SuperAdmin\TutorReviewDocumentController::class, 'unverify'])
+            ->whereNumber('id')->name('teacher.unverify');
       
       Route::get('teacher/review', [ReviewModerationController::class, 'index'])->name('teacher.review');
       Route::get('refs', [\App\Http\Controllers\SuperAdmin\HandoffController::class, 'index'])->name('refs.index');

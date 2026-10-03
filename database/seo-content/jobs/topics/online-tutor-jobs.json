@@ -47,7 +47,7 @@
       "h2": "Your online profile, the ID check and plans",
       "paras": [
         "Set your mode to online or both, and list the hours you keep free on weekdays and at weekends. Be specific about courses, for example IB Physics HL, IGCSE Chemistry Extended, ISC English, CBSE Class 12 maths or NEET biology, and describe your setup: writing tablet, whiteboard, document camera. A clear photo and a short note on how you run an online lesson help parents picture it.",
-        "Tutors who join go through an ID check before their profile goes live: a one-time code confirms phone or email, and our team reviews an uploaded government photo ID. Tutors who pass carry a Verified badge. It confirms identity only and is not a police or background check; How we verify tutors describes it. Tutor plans, with what each includes, are listed on the pricing page."
+        "Tutors who join go through an ID check before their profile is marked Verified: a one-time code confirms phone or email, and our team reviews an uploaded government photo ID. Tutors who pass carry a Verified badge. It confirms identity only and is not a police or background check; How we verify tutors describes it. Tutor plans, with what each includes, are listed on the pricing page."
       ]
     }
   ],
@@ -70,7 +70,7 @@
     ],
     [
       "Do online tutors also go through the ID check?",
-      "Yes. Every tutor who joins confirms phone or email with a one-time code and uploads a government photo ID that our team reviews before the profile goes live. Passing adds a Verified badge to your profile; it confirms identity and is not a police or background check. See How we verify tutors for the full steps, including what the badge does not cover."
+      "Yes. Every tutor who joins confirms phone or email with a one-time code and uploads a government photo ID that our team reviews before the profile is marked Verified. Passing adds a Verified badge to your profile; it confirms identity and is not a police or background check. See How we verify tutors for the full steps, including what the badge does not cover."
     ],
     [
       "Where are the tutor plans listed?",
@@ -79,14 +79,14 @@
   ],
   "story": [
     "Sign up from anywhere in India with a one-time code, set your mode to online, and list the courses you teach and the hours you keep free each week.",
-    "Upload a government photo ID from the dashboard. Our team reviews it before your profile goes live; one ID number can be linked to one tutor account only.",
+    "Upload a government photo ID from the dashboard. Our team reviews it before your profile is marked Verified; one ID number can be linked to one tutor account only.",
     "With the Verified badge in place, your profile shows families in any city your courses, boards, setup, such as a writing tablet or document camera, and your fee.",
     "A family asks for online lessons in your subject. Online requests are matched on subject, class and board, so you can be shortlisted wherever you live.",
     "Agree the call and whiteboard tool with the parent before the demo, which is free for them. Send the link to the parent's number and teach a real lesson.",
     "Teach online on the days agreed, keep the camera on and the parent able to check in, and add home lessons later if you also want local students."
   ],
   "women": {
-    "intro": "Teaching from home on your own schedule is fully possible on NXTutors: online is a complete choice, not a fallback. A woman tutor can set her profile to online only, keep hours that fit around her day and be matched with families in any city whose subject and board fit. If you later want home lessons, you choose the localities. Every tutor who joins goes through an ID check before the profile goes live, real tutors who pass carry the Verified badge, and each demo is held with a parent able to watch.",
+    "intro": "Teaching from home on your own schedule is fully possible on NXTutors: online is a complete choice, not a fallback. A woman tutor can set her profile to online only, keep hours that fit around her day and be matched with families in any city whose subject and board fit. If you later want home lessons, you choose the localities. Every tutor who joins goes through an ID check before the profile is marked Verified, and each demo is held with a parent able to watch.",
     "points": [
       "Online only is a complete setting; no home visits are needed.",
       "Choose your hours, including early mornings or late evenings.",

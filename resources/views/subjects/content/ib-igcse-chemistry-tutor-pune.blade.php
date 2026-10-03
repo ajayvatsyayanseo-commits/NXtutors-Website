@@ -255,8 +255,7 @@
   </ol>
   <p>
     We send two or three matched tutors and show each fee before the demo; the first class is free and switching tutor
-    later is free. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their
-    profile goes live.
+    later is free. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   </section>
 

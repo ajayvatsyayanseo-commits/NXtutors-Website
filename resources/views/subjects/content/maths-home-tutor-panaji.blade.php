@@ -273,7 +273,7 @@
     Send the class, the board spelt out (Goa Board SSC or HSSC, CBSE Standard or Basic, ICSE, ISC, IB or IGCSE), your
     locality with a landmark, the free days and times, and the fee you have in mind. Two or three maths tutors come
     back with their rates; choose one for the free demo. Each tutor who joins goes through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is published. When nobody suitable
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified. When nobody suitable
     can come at your time, a part-online or fully online plan is the fallback; see
     <a href="{{ url('/online-tutor-panaji') }}">online tutors for Panaji</a>. Our office is in Sector 66, Gurugram, and
     online lessons run India-wide. You can also read the national <a href="{{ url('/maths-home-tutor') }}">maths home

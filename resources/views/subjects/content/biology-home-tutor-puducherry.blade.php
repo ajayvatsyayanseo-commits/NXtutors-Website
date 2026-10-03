@@ -246,7 +246,7 @@
   <p>
     Send us the class, the syllabus, whether NEET is planned, the chapters that worry your child, the language that
     helps most, your area and free times, and a budget. We return two or three biology tutors with fees, and tutors
-    who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
     For the other sciences, see the <a href="{{ url('/physics-home-tutor-puducherry') }}">physics</a> and
     <a href="{{ url('/chemistry-home-tutor-puducherry') }}">chemistry</a> pages for Puducherry; the national
     <a href="{{ url('/biology-home-tutor') }}">biology home tutor</a> guide covers IGCSE and the IB in depth. Biology

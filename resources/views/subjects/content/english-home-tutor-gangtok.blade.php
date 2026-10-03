@@ -232,7 +232,7 @@
     Let us know the class and board, the area of English that concerns you most, whether your child is more at ease
     in English or Nepali, your locality with a landmark, the times that suit and a budget. A shortlist of two or three
     English tutors with fees follows. Every tutor who joins completes an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is published. You can also
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified. You can also
     <a href="{{ url('/tutors') }}">browse tutor profiles</a> or <a href="{{ url('/demo-class') }}">book a free demo
     class</a>. For other subjects, see the Gangtok <a href="{{ url('/maths-home-tutor-gangtok') }}">maths</a> and
     <a href="{{ url('/science-home-tutor-gangtok') }}">science</a> tutor pages. English teachers based in Gangtok can

@@ -122,7 +122,7 @@
     Locality pages work the same way for home tuition: they list tutors in that locality, then in the zone, then across
     the city, then online tutors further out, and each card says where the tutor is based. If an online tutor appears
     early in the list, there may be no one nearby for that subject. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live; it is not a police or
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified; it is not a police or
     background check, so judge the teaching at the demo.
   </p>
   </section>

@@ -229,8 +229,7 @@
     <li>Does the tutor explain afterwards what they noticed and what they would do over the next month?</li>
   </ul>
   <p>
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live. If the demo does not suit, another tutor on the shortlist can come, and switching later is free. Our
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. If the demo does not suit, another tutor on the shortlist can come, and switching later is free. Our
     <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist</a> has more ideas.
   </p>
   </section>

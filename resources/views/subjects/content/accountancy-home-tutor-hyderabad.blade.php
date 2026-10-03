@@ -229,8 +229,7 @@
     Send the course and year, the chapters that are hurting, your colony or community with a landmark, the hours that
     work and whether you prefer home, online or both. We shortlist two or three accountancy tutors with their fees,
     the first class is a <a href="{{ url('/demo-class') }}">free demo</a>, and moving to another tutor later is free.
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live.
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   <p>
     Many commerce students also want help with <a href="{{ url('/economics-home-tutor-hyderabad') }}">economics in

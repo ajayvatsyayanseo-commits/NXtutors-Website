@@ -225,7 +225,7 @@
   <p>
     Each request brings two or three matched tutors with their fees listed in advance; the opening class is free, and
     changing tutor afterwards is free as well. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a>
-    before their profile goes live.
+    before their profile is marked Verified.
   </p>
   </section>
 

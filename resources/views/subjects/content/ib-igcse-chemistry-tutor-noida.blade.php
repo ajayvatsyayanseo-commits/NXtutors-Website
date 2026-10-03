@@ -276,7 +276,7 @@
     Share the course, level or tier, grade and the chemistry that is going wrong, along with your sector, society and
     free evenings. Two or three matched tutors come back to you; pick one for a
     <a href="{{ url('/demo-class') }}">free demo</a>, and change tutor later at no cost if the fit fades. Every tutor who
-    joins passes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is visible, and
+    joins passes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified, and
     <a href="{{ url('/tutors') }}">tutor profiles</a> are open to browse. See
     also <a href="{{ url('/ib-physics-tutor-noida') }}">IB physics</a> and
     <a href="{{ url('/igcse-physics-tutor-noida') }}">IGCSE physics</a> tutors in Noida.

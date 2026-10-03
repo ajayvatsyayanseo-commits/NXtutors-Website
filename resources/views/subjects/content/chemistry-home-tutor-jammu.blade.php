@@ -248,7 +248,7 @@
     Send the class and syllabus, the exam that matters most, the weakest branch, any batch days, your colony with a
     landmark, and the evenings you can offer. Our shortlist names two or three chemistry tutors with
     fees beside each, and you decide who takes the free demo. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. If the first choice does
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. If the first choice does
     not fit, a second demo follows, and changing tutor later is free. Where nobody suitable can reach you, we propose
     online or part-online lessons. Our office is in Sector 66, Gurugram, and lessons run online nationwide.
   </p>

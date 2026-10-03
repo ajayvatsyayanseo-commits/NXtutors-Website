@@ -27,6 +27,6 @@ return [
     ],
     [
         'How do I keep my child safe in online lessons?',
-        'Tutors who join go through an ID check before their profile goes live, though it is not a police check. Keep the device in a shared room, let a parent hold the meeting link, make sure messages go to a parent\'s number, and agree openly on whether lessons are recorded.',
+        'Tutors who join go through an ID check before their profile is marked Verified, though it is not a police check. Keep the device in a shared room, let a parent hold the meeting link, make sure messages go to a parent\'s number, and agree openly on whether lessons are recorded.',
     ],
 ];

@@ -227,8 +227,7 @@
     Send the class and board, the main goal (board marks, JEE or NEET), days already used by a batch, a landmark
     near home and your free evenings. You will get two or three physics tutors with fees attached, and you decide
     who gives the free demo. A poor first demo leads to a second with someone else, and a later switch is free.
-    Every tutor who joins passes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile
-    appears. For other cities, see the national <a href="{{ url('/physics-home-tutor') }}">physics home tutor</a>
+    Every tutor who joins passes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified. For other cities, see the national <a href="{{ url('/physics-home-tutor') }}">physics home tutor</a>
     page; in Leh,
     <a href="{{ url('/maths-home-tutor-leh') }}">maths</a> and <a href="{{ url('/chemistry-home-tutor-leh') }}">chemistry</a>
     tutors round off the science stream. Physics teachers in and around Leh can see open requests on

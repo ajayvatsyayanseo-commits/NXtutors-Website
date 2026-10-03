@@ -23,7 +23,7 @@ return [
     ],
     [
         'How do I keep home lessons safe for a young child?',
-        'Tutors who join NXTutors go through an ID check of their phone or email and a government photo ID before their profile goes live; it is not a police check. On the first day, match the visitor to the shortlist photo, use a shared room with the door open, and make sure an adult is at home.',
+        'Tutors who join NXTutors go through an ID check of their phone or email and a government photo ID before their profile is marked Verified; it is not a police check. On the first day, match the visitor to the shortlist photo, use a shared room with the door open, and make sure an adult is at home.',
     ],
     [
         'What does an early-years tutor cost in Ahmedabad?',

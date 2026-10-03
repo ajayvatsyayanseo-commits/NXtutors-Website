@@ -259,7 +259,7 @@
   <p>
     The first lesson with the tutor you pick is a free demo. If the fit is wrong, the next tutor on your shortlist can
     give a demo, and switching later is free. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. See also our
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. See also our
     <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">demo class checklist</a>.
   </p>
   </section>

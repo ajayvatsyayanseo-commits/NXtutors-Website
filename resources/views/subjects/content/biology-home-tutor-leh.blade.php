@@ -228,7 +228,7 @@
     Tell us the class, the board, whether NEET is planned, the unit that is causing trouble, your locality with a
     landmark and the free evenings in term and in winter. We send two or three biology tutors with their fees, and you
     choose one for the free demo; if it is not right, the next tutor gives a demo, and changing later is free. Tutors
-    who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
     For the rest of the stream see <a href="{{ url('/chemistry-home-tutor-leh') }}">chemistry</a> and
     <a href="{{ url('/physics-home-tutor-leh') }}">physics</a> tutors in Leh, or the
     <a href="{{ url('/cbse-home-tutor-leh') }}">CBSE home tutors in Leh</a> page. Biology teachers in and around Leh

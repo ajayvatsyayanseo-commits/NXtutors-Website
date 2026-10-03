@@ -233,8 +233,7 @@
     Tell us the class, the syllabus, the main exam, the branch that loses marks, coaching days, your locality and a
     landmark, and which evenings are free. We send two or three chemistry tutors with fees, and you choose one for the
     free demo; a mismatch means the next demo comes from someone else on the list, and switching later is free. Every
-    tutor who joins passes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is
-    published. When travel will not work, <a href="{{ url('/online-tutor-panaji') }}">online</a> or mixed lessons are
+    tutor who joins passes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified. When travel will not work, <a href="{{ url('/online-tutor-panaji') }}">online</a> or mixed lessons are
     the answer. Our office is in Sector 66, Gurugram, with online teaching India-wide; see the national
     <a href="{{ url('/chemistry-home-tutor') }}">chemistry home tutor</a> page and, for Panaji, the
     <a href="{{ url('/physics-home-tutor-panaji') }}">physics</a> and <a href="{{ url('/maths-home-tutor-panaji') }}">maths</a>

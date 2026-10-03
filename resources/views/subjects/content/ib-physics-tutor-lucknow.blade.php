@@ -274,8 +274,7 @@
   <p>
     Tell us the level, DP year, what is difficult, your locality and your free slots. You receive two or three matched
     tutors, the first class is a <a href="{{ url('/demo-class') }}">free demo</a>, and switching tutor later is free.
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live, and you can browse <a href="{{ url('/tutors') }}">tutor profiles</a>. For other sciences, see
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified, and you can browse <a href="{{ url('/tutors') }}">tutor profiles</a>. For other sciences, see
     <a href="{{ url('/ib-igcse-chemistry-tutor-lucknow') }}">IB and IGCSE chemistry</a> and, for younger Cambridge
     students, <a href="{{ url('/igcse-physics-tutor-lucknow') }}">IGCSE physics</a> tutors in Lucknow.
   </p>

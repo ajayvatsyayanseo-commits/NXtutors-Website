@@ -233,8 +233,7 @@
     <li><strong>Agree the online back-up</strong> for days when traffic or weather makes travel unrealistic, so the week does not lose its session.</li>
   </ul>
   <p>
-    Tutors who join NXTutors go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live. For home sessions, having an adult at home and using a common area are sensible habits for any family.
+    Tutors who join NXTutors go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. For home sessions, having an adult at home and using a common area are sensible habits for any family.
   </p>
   </section>
 

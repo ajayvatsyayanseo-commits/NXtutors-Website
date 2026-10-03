@@ -245,7 +245,7 @@
   <p>
     Tell us the class, board, NEET plans if any, the chapters your child finds hard, your locality and times, home or
     online, and a budget. We send two or three matched biology tutors with fees, and tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. For the other sciences,
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. For the other sciences,
     see our <a href="{{ url('/physics-home-tutor-ranchi') }}">physics</a> and
     <a href="{{ url('/chemistry-home-tutor-ranchi') }}">chemistry</a> pages for Ranchi, and the national
     <a href="{{ url('/biology-home-tutor') }}">biology home tutor</a> guide for IGCSE and IB detail. Biology teachers

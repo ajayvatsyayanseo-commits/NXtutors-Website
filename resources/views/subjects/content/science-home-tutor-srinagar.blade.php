@@ -219,7 +219,7 @@
   <h2 id="sgs-start">How do you get a science shortlist?</h2>
   <p>
     Share the class, the board, the branch of science that troubles your child, your locality plus a landmark, and the afternoons that are free, noting any change over the winter break. A shortlist of two or three science tutors arrives with fees attached; choose one for a free demo. Should that tutor not suit, another from the list gives the next demo, and changing tutor later is also free. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. If nobody suitable can come at your time, we propose lessons that are partly or wholly online. Our office is in Sector 66, Gurugram, and online lessons run nationwide; for the next subject up, see our
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. If nobody suitable can come at your time, we propose lessons that are partly or wholly online. Our office is in Sector 66, Gurugram, and online lessons run nationwide; for the next subject up, see our
     <a href="{{ url('/maths-home-tutor-srinagar') }}">maths home tutor in Srinagar</a> page.
   </p>
   <p>

@@ -253,8 +253,7 @@
   <p>
     The class, the board, whether NEET is on the plan, the chapters giving trouble, the language your child learns most
     easily in, your locality and preferred times, and a budget. You receive two or three matched biology tutors, fees
-    included. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their
-    profile is published. For the other two sciences, visit our
+    included. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. For the other two sciences, visit our
     <a href="{{ url('/physics-home-tutor-srinagar') }}">physics</a> and
     <a href="{{ url('/chemistry-home-tutor-srinagar') }}">chemistry</a> pages for Srinagar; the national
     <a href="{{ url('/biology-home-tutor') }}">biology home tutor guide</a> treats IGCSE and IB at length. Biology teachers

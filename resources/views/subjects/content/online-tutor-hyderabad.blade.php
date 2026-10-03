@@ -233,7 +233,7 @@
     <li>Use the family's account for the call, not a private one set up by the student.</li>
     <li>Keep communication with the tutor on a parent's number or in a group that includes a parent.</li>
     <li>Never share passwords, bank details or personal documents during lessons.</li>
-    <li>Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live; it is not a police or background check, so stay involved.</li>
+    <li>Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified; it is not a police or background check, so stay involved.</li>
   </ul>
   </section>
 

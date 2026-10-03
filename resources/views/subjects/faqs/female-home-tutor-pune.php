@@ -19,7 +19,7 @@ return [
     ],
     [
         'Are female tutors on NXTutors background-checked?',
-        'Tutors who join go through an ID check: a one-time code for phone or email and a government photo ID reviewed by our team before the profile goes live. Real tutors who pass show a Verified badge. It is not a police or background check, so keep lessons in a shared room with an adult at home.',
+        'Tutors who join go through an ID check: a one-time code for phone or email and a government photo ID reviewed by our team before the profile is marked Verified. Real tutors who pass show a Verified badge. It is not a police or background check, so keep lessons in a shared room with an adult at home.',
     ],
     [
         'Do female home tutors in Pune charge more?',

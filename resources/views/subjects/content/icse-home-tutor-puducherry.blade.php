@@ -250,8 +250,7 @@
   </ol>
   <p>
     The shortlist holds two or three tutors with fees visible before the demo, and a later change of tutor costs
-    nothing. Every tutor who joins passes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the
-    profile is published.
+    nothing. Every tutor who joins passes an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified.
   </p>
   </section>
 

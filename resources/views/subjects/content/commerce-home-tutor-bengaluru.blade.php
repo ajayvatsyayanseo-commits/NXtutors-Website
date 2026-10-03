@@ -256,7 +256,7 @@
     ones are hardest, where you live, whether lessons should be at home, online or a mix, and your free times. Two or
     three tutors come back to you, and your first lesson with the one you pick is a
     <a href="{{ url('/demo-class') }}">free demo class</a>. Each tutor clears an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> on joining, before the profile is visible, and
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> on joining, before the profile is marked Verified, and
     <a href="{{ url('/tutors') }}">tutor profiles</a> are open to browse. If you teach commerce yourself,
     <a href="{{ url('/tuition-jobs/bengaluru') }}">tuition jobs in Bengaluru</a> shows families looking for help.
   </p>

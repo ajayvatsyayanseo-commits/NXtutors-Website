@@ -140,7 +140,7 @@
     list widens in steps: tutors in your area, tutors who travel there, your zone, the rest of the town, then tutors
     elsewhere in India who teach online, and every card states where the tutor is based. Such a name usually signals
     that the specialist you described is not available nearby. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is published. It is an identity check,
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. It is an identity check,
     not a police or background check, so the demo remains your real test of the teaching.
   </p>
   </section>

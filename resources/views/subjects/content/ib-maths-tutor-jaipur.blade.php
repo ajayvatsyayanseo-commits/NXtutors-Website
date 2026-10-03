@@ -313,7 +313,7 @@
   <p>
     Send the five lines above. We come back with two or three matched tutors, you pick one for a
     <a href="{{ url('/demo-class') }}">free demo class</a>, and switching tutor later is free. Tutors who join go
-    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. You can
+    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. You can
     also browse <a href="{{ url('/tutors') }}">tutor profiles</a>. For the sciences, see
     <a href="{{ url('/ib-physics-tutor-jaipur') }}">IB physics</a> and
     <a href="{{ url('/ib-igcse-chemistry-tutor-jaipur') }}">IB and IGCSE chemistry</a> tutors in Jaipur.

@@ -208,7 +208,7 @@
     To start, send the class and board, the target (JEE Main, Main and Advanced, or JEE alongside MHT CET), the subjects,
     coaching days, your locality and nearest station, and the times that work. Book a
     <a href="{{ url('/demo-class') }}">free demo class</a> or browse <a href="{{ url('/tutors') }}">tutor profiles</a>.
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
     If medicine is the goal instead, read the <a href="{{ url('/neet-home-tutor-mumbai') }}">NEET home tutor in Mumbai</a>
     page; teachers looking for students can see <a href="{{ url('/tuition-jobs/mumbai') }}">Mumbai tuition jobs</a>.
   </p>

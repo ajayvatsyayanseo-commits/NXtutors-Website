@@ -39,6 +39,8 @@ final class TutorCardMapper
             'education' => $t['education'] ?? null,
             'match_reasons' => $t['match_reasons'] ?? [],
             'is_sample' => (bool) ($t['is_sample'] ?? false),
+            // Present only for a tutor who carries the Verified badge (TutorBadge).
+            'id_verified' => ! empty($t['id_verified']) && empty($t['is_sample']) ? true : null,
             'experience_years' => $t['experience_years'] ?? null,
             'place_label' => $t['place_label'] ?? null,
         ];

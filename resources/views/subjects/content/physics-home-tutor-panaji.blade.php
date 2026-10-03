@@ -230,7 +230,7 @@
     Send the class and board, the main aim (board, JEE or NEET), coaching days, your locality with a landmark and the
     evenings that are free. Back come two or three physics tutors with their fees. Pick one for the free demo; if it
     does not click, another tutor from the list gives the next demo, and any later change costs nothing. Tutors who join go
-    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is published. If no one
+    through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. If no one
     suitable can come at your hour, we suggest an <a href="{{ url('/online-tutor-panaji') }}">online</a> or
     part-online plan. NXTutors works from Sector 66, Gurugram, and teaches online across India; the national
     <a href="{{ url('/physics-home-tutor') }}">physics home tutor</a> page covers other cities, and the

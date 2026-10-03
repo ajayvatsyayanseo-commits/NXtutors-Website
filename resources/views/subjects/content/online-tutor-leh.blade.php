@@ -129,8 +129,7 @@
   </ol>
   <p>
     If the first demo is not right, the next tutor on your shortlist gives one, and switching tutor later is free.
-    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes
-    live.
+    Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   </section>
 

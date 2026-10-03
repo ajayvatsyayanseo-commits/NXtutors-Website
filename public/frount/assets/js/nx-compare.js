@@ -315,7 +315,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .filter(x => x.v >= 60)
         .slice(0, 3)
         .map(x => strengthLabels[x.k]);
-      const heroTags = (winnerStrengths.length ? winnerStrengths : ["Verified tutor", "Free demo class"])
+      const heroTags = (winnerStrengths.length ? winnerStrengths : ["Free demo class"])
         .map(t => `<span>${esc(t)}</span>`).join("");
 
       // How clear the win is, so the copy can be honest about a close call.

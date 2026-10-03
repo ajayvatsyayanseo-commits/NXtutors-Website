@@ -222,7 +222,7 @@
     landmark, convenient times, and whether lessons should be at home, online or a mix. A shortlist of two or three
     tutors follows, each with a fee you can compare; the opening class is a <a href="{{ url('/demo-class') }}">free
     demo</a>, and moving to a different tutor later costs nothing. Tutors who
-    join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live.
+    join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified.
   </p>
   <p>
     Commerce students often add <a href="{{ url('/economics-home-tutor-kochi') }}">economics tuition in Kochi</a>,

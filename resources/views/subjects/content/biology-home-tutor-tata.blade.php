@@ -260,7 +260,7 @@
   <p>
     Tell us the class, course, NEET plans, the chapters causing trouble, your locality and landmark, your times, home
     or online, and a budget. We send two or three matched biology tutors and their fees, and tutors who join go through
-    an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. See our
+    an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. See our
     <a href="{{ url('/physics-home-tutor-tata') }}">physics</a> and <a href="{{ url('/chemistry-home-tutor-tata') }}">chemistry</a>
     pages for Jamshedpur for the other sciences. Biology teachers in the city can find open requests on
     <a href="{{ url('/tuition-jobs/tata') }}">Jamshedpur tuition jobs</a>.

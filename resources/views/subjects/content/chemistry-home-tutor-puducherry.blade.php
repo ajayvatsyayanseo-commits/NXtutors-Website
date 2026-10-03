@@ -273,7 +273,7 @@
     any coaching days, your area and a landmark, and the evenings that are free. A shortlist of two or three chemistry
     tutors comes back with their fees, and you choose whom to meet at a free demo. If the first choice is wrong, a second demo follows, and a
     later change of tutor costs nothing. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. If no suitable tutor can
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. If no suitable tutor can
     reach you, we propose online lessons or a mix of home and online. Our office is in Sector 66, Gurugram, and
     our online tutoring reaches every part of India. For the other sciences, see the <a href="{{ url('/physics-home-tutor-puducherry') }}">physics</a>
     and <a href="{{ url('/biology-home-tutor-puducherry') }}">biology</a> tutor pages for Puducherry, or the

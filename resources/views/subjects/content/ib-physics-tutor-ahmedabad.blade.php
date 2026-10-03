@@ -282,8 +282,7 @@
   <p>
     Let us know the level, DP year, exam session, the trouble spots, your locality and good times. Two or three matched
     tutors come back to you; the first lesson is a <a href="{{ url('/demo-class') }}">free demo</a> and a later switch
-    costs nothing. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before
-    their profile goes live. See <a href="{{ url('/tutors') }}">tutor profiles</a>, and for related subjects,
+    costs nothing. Tutors who join go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. See <a href="{{ url('/tutors') }}">tutor profiles</a>, and for related subjects,
     <a href="{{ url('/ib-maths-tutor-ahmedabad') }}">IB maths</a> and
     <a href="{{ url('/ib-igcse-chemistry-tutor-ahmedabad') }}">IB and IGCSE chemistry</a> tutors in Ahmedabad.
   </p>

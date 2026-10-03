@@ -303,7 +303,7 @@
   <p>
     You receive two or three matched profiles, each with the tutor's fee visible before you book; the demo costs
     nothing, and so does changing tutor later. Tutors who join go through an
-    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile goes live. For a longer list, see the
+    <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before their profile is marked Verified. For a longer list, see the
     <a href="{{ url('/blog/demo-class-checklist-for-parents') }}">parents' demo checklist</a>.
   </p>
   </section>

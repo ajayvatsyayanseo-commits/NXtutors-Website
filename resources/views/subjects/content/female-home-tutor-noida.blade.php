@@ -198,8 +198,7 @@
   <h2 id="fmno-check">What our checks cover, and what only the demo can show</h2>
   <p>
     Every tutor who joins completes an ID check. A one-time code confirms her phone or email, and she uploads a
-    government photo ID that our team looks at before her profile is published; real tutors who clear it show a
-    Verified badge. This confirms identity only. It is not a police or background check and tells you nothing about her
+    government photo ID that our team looks at before her profile is marked Verified. This confirms identity only. It is not a police or background check and tells you nothing about her
     teaching. The steps are set out on <a href="{{ url('/how-we-verify-tutors') }}">how we verify tutors</a>. Any sample
     profile is marked as one, carries no verification and cannot be booked.
   </p>

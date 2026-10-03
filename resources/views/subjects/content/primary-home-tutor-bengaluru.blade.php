@@ -209,7 +209,7 @@
   </ul>
   <p>
     If the match is wrong, the next shortlisted tutor gives their own demo; switching later is free. Tutors who join
-    go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is published.
+    go through an <a href="{{ url('/how-we-verify-tutors') }}">ID check</a> before the profile is marked Verified.
   </p>
   </section>
 
