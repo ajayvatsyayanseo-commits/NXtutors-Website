@@ -43,7 +43,7 @@ class WhatsAppController extends Controller
             'source_url' => (string) $request->query('from', ''),
             'primary_tutor_id' => $userId,
             'tutors' => [['id' => $userId, 'role' => 'primary']],
-            'known' => $this->handoffs->knownFromPage($request->query()),
+            'known' => $this->knownFromQuery($request),
         ]);
 
         return $this->away($this->handoffs->waUrl($this->handoffs->textFor($h), $h));
@@ -63,7 +63,7 @@ class WhatsAppController extends Controller
             'kind' => $kind,
             'intent' => 'general',
             'source_url' => (string) $request->query('from', ''),
-            'known' => $this->handoffs->knownFromPage($request->query()),
+            'known' => $this->knownFromQuery($request),
         ]);
 
         return $this->away($this->handoffs->waUrl($this->handoffs->textFor($h), $h));
@@ -125,6 +125,17 @@ class WhatsAppController extends Controller
         $text = $kind === 'demo_form' && ! empty($v['text']) ? (string) $v['text'] : $this->handoffs->textFor($h);
 
         return response()->json(['ok' => true, 'code' => $h->code, 'url' => $this->handoffs->waUrl($text, $h)]);
+    }
+
+    /**
+     * `known` from the button's page context (Wa::query), plus the place the
+     * visitor saved on the site (vcity / varea, added in the browser on click).
+     */
+    private function knownFromQuery(Request $request): array
+    {
+        $saved = fn (string $k) => is_string($v = $request->query($k)) && mb_strlen($v) <= 100 ? $v : null;
+
+        return $this->handoffs->withVisitorPlace($this->handoffs->knownFromPage($request->query()), $saved('vcity'), $saved('varea'));
     }
 
     private function isBot(Request $request): bool

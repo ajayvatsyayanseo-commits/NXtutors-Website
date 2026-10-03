@@ -5,6 +5,7 @@ namespace App\Services;
 use App\Models\NxtHandoff;
 use App\Models\Setting;
 use App\NxtAi\Services\TutorSearchService;
+use App\NxtAi\Support\CityNormalizer;
 use App\NxtAi\Support\PublicTutorFieldMapper;
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Str;
@@ -379,5 +380,32 @@ class WhatsAppHandoff
             'city' => $page['city'] ?? null,
             'locality' => $page['area'] ?? null,
         ]);
+    }
+
+    /**
+     * Fill city/locality from the location the visitor saved on the site
+     * (nx_city / nx_area). The page's own place always wins; the saved area is
+     * used under the page's city only when it is the same city.
+     */
+    public function withVisitorPlace(array $known, ?string $city, ?string $area): array
+    {
+        $saved = $this->cleanKnown(['city' => $city, 'locality' => $area]);
+        if ($saved === []) {
+            return $known;
+        }
+
+        if (empty($known['city'])) {
+            if (isset($saved['city'])) {
+                $known['city'] = $saved['city'];
+            }
+            if (empty($known['locality']) && isset($saved['locality'])) {
+                $known['locality'] = $saved['locality'];
+            }
+        } elseif (empty($known['locality']) && isset($saved['city'], $saved['locality'])
+            && CityNormalizer::normalize($saved['city']) === CityNormalizer::normalize((string) $known['city'])) {
+            $known['locality'] = $saved['locality'];
+        }
+
+        return $known;
     }
 }

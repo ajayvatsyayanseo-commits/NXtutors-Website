@@ -10,6 +10,10 @@ namespace App\Support;
  *   Wa::tutor($t->user_id, 'card', $aiPage ?? [])   tutor cards
  *   Wa::tutor($tutor->user_id, 'profile')             profile "Book a demo"
  *   Wa::page('footer')                                any other button
+ *
+ * On click the browser adds vcity / varea, the place the visitor saved on the
+ * site (include/footer.blade.php); WhatsAppController uses them only to fill
+ * a place the page does not give.
  */
 final class Wa
 {
