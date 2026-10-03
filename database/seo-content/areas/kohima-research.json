@@ -1,0 +1,250 @@
+{
+  "areas": {
+    "kohima-village": {
+      "name": "Kohima Village (Bara Basti)",
+      "zone": "North Kohima & Kohima Village",
+      "type": "residential",
+      "about": "<p>Kohima Village, known by its older name Kewhira and historically as Bara Basti, is the original settlement from which Nagaland's capital takes its name. Oral tradition holds that it is more than seven hundred years old, and it is run through its own village council rather than as one of the municipal wards. It occupies the high ground on the north-eastern side of the town, which is why the classic view of the Kohima skyline shows the village on top. The 2011 census counted 15,734 residents, making it a sizeable community in its own right.</p><p>Kitsübozou lies right beside it, with Daklane and Naga Bazaar a little further into the town. Homes here are spread across the slope, so ask the family for a clear landmark and the nearest point a taxi can reach before the first visit. Buses and taxis are the usual way around Kohima, and rain is heaviest from June to September, so build in extra time on wet evenings. Students preparing for the NBSE HSLC or HSSLC examinations can mix home visits with online sessions for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kohima_Village",
+        "https://en.wikipedia.org/wiki/Kohima",
+        "https://en.wikipedia.org/wiki/Kitsübozou_Ward"
+      ]
+    },
+    "peraciezie": {
+      "name": "Peraciezie",
+      "zone": "North Kohima & Kohima Village",
+      "type": "residential",
+      "about": "<p>Peraciezie is the first of the nineteen municipal wards of Kohima and sits towards the northern end of the city. It shares this part of town with Bayavü Hill and Sepfüzou, while Naga Bazaar lies to its south-east on the way into the central area. The ward has several neighbourhood schools of its own, so many children here study close to home, and evening tuition slots fit easily around the school day.</p><p>For a tutor coming from the southern wards, the trip runs through the busy central stretch of the town, so early-evening sessions are easier to keep on time if they avoid the hour when offices close. Kohima is a hill city, and many homes sit above or below the road on stepped paths, so share a pin and a landmark when booking a demo. Families who follow the Nagaland Board of School Education can also ask for tutors who know the HSLC and HSSLC pattern, with online support for subjects that are harder to staff locally. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Peraciezie_Ward",
+        "https://en.wikipedia.org/wiki/Administrative_divisions_of_Kohima"
+      ]
+    },
+    "bayavu-hill": {
+      "name": "Bayavü Hill",
+      "zone": "North Kohima & Kohima Village",
+      "type": "mixed",
+      "about": "<p>Bayavü Hill is a ward on the northern side of Kohima, divided into Upper Bayavü Hill and Lower Bayavü Hill and grouped in the municipal list with neighbouring Sepfüzou. It is more than a residential hill: the head office of the Nagaland Board of School Education stands at Upper Bayavü Hill, so the area sees regular visitors on working days alongside the families who live here.</p><p>Peraciezie is its immediate neighbour, and Naga Bazaar is the next ward towards the town centre. For families in this area, having the board office nearby is handy when there are HSLC or HSSLC registration questions, though a tutor's job is the study plan rather than paperwork. Lanes climb between Upper and Lower Bayavü Hill, so tell the tutor which level the house is on. In the monsoon, from June to September, leave room for slower travel, and keep an online slot ready as a fallback. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bayavü_Hill_Ward",
+        "https://nbsenl.edu.in/",
+        "https://en.wikipedia.org/wiki/Administrative_divisions_of_Kohima"
+      ]
+    },
+    "naga-bazaar": {
+      "name": "Naga Bazaar",
+      "zone": "North Kohima & Kohima Village",
+      "type": "residential",
+      "about": "<p>Naga Bazaar is a ward in the northern half of Kohima, sub-divided into Upper Naga Bazaar and Lower Naga Bazaar. It sits between Peraciezie and Bayavü Hill to the north-west and Daklane and the central New Market area to the south, which makes it a convenient link between the older northern neighbourhoods and the town centre. The ward has its own primary and middle schools, so younger children here usually study within the neighbourhood.</p><p>A tutor can be matched from Naga Bazaar itself or from Daklane, New Market or Kitsübozou next door. When you book, say whether the home is in the upper or lower part of the ward, so the tutor heads to the right part of the ward first time. Taxis are the usual last leg for tutors who do not live nearby. Classes 9 and 10 students preparing for the HSLC examination of the Nagaland board often benefit from a fixed weekly routine, with extra sessions added online before tests. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Naga_Bazaar_Ward",
+        "https://en.wikipedia.org/wiki/Administrative_divisions_of_Kohima"
+      ]
+    },
+    "kitsubozou": {
+      "name": "Kitsübozou",
+      "zone": "North Kohima & Kohima Village",
+      "type": "residential",
+      "about": "<p>Kitsübozou is a ward on the eastern side of central Kohima, set right beside Kohima Village, the old settlement that gave the city its name. It was incorporated in 1970 and has a long-standing local council of its own, which marked its golden jubilee in 2020. Daklane and Naga Bazaar lie to its west, linking it with the main town.</p><p>The neighbourhood has a few primary and private schools, so tuition demand usually centres on homework support for younger children and board preparation for older ones. Because it adjoins Kohima Village, a tutor living in either area can cover both, which keeps travel short. Kohima's homes are spread over the slopes, so a clear landmark and the nearest road point are worth sharing before the demo class. Evening traffic gathers in the town centre when offices close, so tutors travelling from the southern wards may prefer slightly later slots, and online lessons work well on heavy-rain days between June and September. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kitsübozou_Ward",
+        "https://en.wikipedia.org/wiki/Kohima_Village",
+        "https://en.wikipedia.org/wiki/Administrative_divisions_of_Kohima"
+      ]
+    },
+    "daklane": {
+      "name": "Daklane",
+      "zone": "Main Town & Midland",
+      "type": "residential",
+      "about": "<p>Daklane is a central Kohima ward that sits between Naga Bazaar to the north and New Market to the south, with Kitsübozou and Kohima Village a short climb to the east. Its position makes it one of the easier neighbourhoods for tutors to reach from almost any part of the city, since most routes across town pass through or near the central wards.</p><p>The ward has its own government middle school and private schools, as well as higher-education institutions. For home tuition, that means demand from primary children up to Class 12. Daytime traffic is heavier around the central market area, so after-school slots that begin once the morning and evening peaks have passed are usually smoother. Families following the Nagaland Board of School Education can ask for HSLC or HSSLC experience, while CBSE students can request a tutor who knows that syllabus. For less common subjects, online tutors fill the gap. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Daklane_Ward",
+        "https://en.wikipedia.org/wiki/Administrative_divisions_of_Kohima"
+      ]
+    },
+    "new-market": {
+      "name": "New Market",
+      "zone": "Main Town & Midland",
+      "type": "mixed",
+      "about": "<p>New Market is a ward in the middle of Kohima, sitting just south of Daklane and north of Midland. It lies in the town's central stretch and is one of the most familiar addresses in the city for anyone travelling by taxi or bus.</p><p>That central position helps when booking a tutor: people living in Daklane, Midland, Naga Bazaar and Officers' Hill are all close at hand. The flip side is traffic at office hours, so a tutor coming from the outer wards will usually keep time better with a session that starts after the evening peak. Parking on the central roads can be tight, so if the home has a spot for a scooter, mention it. For Classes 11 and 12, especially science and commerce subjects under the HSSLC, families sometimes combine a home tutor for the core subject with an online tutor for a second subject. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/New_Market_Ward",
+        "https://en.wikipedia.org/wiki/Administrative_divisions_of_Kohima",
+        "https://en.wikipedia.org/wiki/Kohima"
+      ]
+    },
+    "midland": {
+      "name": "Midland",
+      "zone": "Main Town & Midland",
+      "type": "mixed",
+      "about": "<p>Midland is a central Kohima ward incorporated in 1970 and sub-divided into three neighbourhoods: Upper Midland, Middle Midland and Lower Midland. It sits just south of New Market, on high ground with a wide view over the city. The ward has a strong community life organised through its own Midland council and several congregations.</p><p>When you ask for a tutor, say which of the three parts you live in, so the tutor heads to the right part of the ward. Officers' Hill lies to the west and the Chandmari wards are to the south, so tutors from those neighbourhoods can reach Midland easily. Being close to the town centre, the roads here are busiest when offices open and close, which is worth keeping in mind for weekday timings. In the rainy months from June to September, a switch to online for a session or two keeps the study plan on track. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Midland_Ward",
+        "https://en.wikipedia.org/wiki/Administrative_divisions_of_Kohima",
+        "https://en.wikipedia.org/wiki/Kohima_War_Cemetery"
+      ]
+    },
+    "officers-hill": {
+      "name": "Officers' Hill (Thegabakha)",
+      "zone": "Main Town & Midland",
+      "type": "residential",
+      "about": "<p>Officers' Hill, officially Thegabakha, is a ward on the western side of central Kohima. In the municipal ward list it is grouped with an adjoining neighbourhood, and it sits between the Midland area to the east and PR Hill and Merhülietsa to the south and west. The ward has a government primary school, and many families send older children to schools in the neighbouring wards.</p><p>Because it is close to both the town centre and the southern wards, a tutor living in Midland, New Market, PR Hill or the Chandmari area can usually cover Officers' Hill without a long ride. The hill roads here can be narrow, so let the tutor know where to leave a two-wheeler and which gate or steps lead to the house. Weekday evenings are busiest around the central market, so starting a little later can help. Students in Classes 9 to 12 on the Nagaland board, or on CBSE, can ask for a tutor with matching experience during the free demo. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Thegabakha_Ward",
+        "https://en.wikipedia.org/wiki/Administrative_divisions_of_Kohima"
+      ]
+    },
+    "upper-chandmari": {
+      "name": "Upper Chandmari",
+      "zone": "Chandmari & PR Hill",
+      "type": "residential",
+      "about": "<p>Upper Chandmari is a ward on the southern side of central Kohima, named alongside Lower Chandmari, which forms a separate ward of its own. Its neighbourhood schools include a higher secondary school, so many students here study through to Class 12 close to home. PR Hill lies to the west, and Midland and the town centre are to the north.</p><p>For a parent arranging tuition, the main thing to share is whether the house is in Upper or Lower Chandmari, since the two names are easy to mix up when giving directions. Tutors from Lower Chandmari, PR Hill or Midland are the most natural match for regular weekly visits. Board-year students preparing for the HSLC or HSSLC examinations of the Nagaland Board of School Education usually want extra sessions from the winter onwards, so it is sensible to fix a timetable early. When the monsoon is at its heaviest, between June and September, an online session can stand in for a home visit. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Upper_Chandmari_Ward",
+        "https://en.wikipedia.org/wiki/Administrative_divisions_of_Kohima"
+      ]
+    },
+    "lower-chandmari": {
+      "name": "Lower Chandmari",
+      "zone": "Chandmari & PR Hill",
+      "type": "residential",
+      "about": "<p>Lower Chandmari is the neighbouring ward to Upper Chandmari on the southern side of central Kohima, with Midland to its north. It has a government middle school and other schools within the ward; families should share a clear landmark when giving directions.</p><p>Most tutors who reach Lower Chandmari come from the Chandmari wards themselves, Midland or New Market, all close by. Give a nearby landmark and the nearest stop where a taxi can drop off, especially for a first visit, and say whether there is space to park a scooter. Weekday roads towards the centre are busy at office hours, so late-afternoon or evening slots are usually easier. For younger children, a home tutor two or three times a week often works well, while senior students can add online classes in subjects such as accountancy or computer science. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lower_Chandmari_Ward",
+        "https://en.wikipedia.org/wiki/Kohima_Lotha_Baptist_Church",
+        "https://en.wikipedia.org/wiki/Administrative_divisions_of_Kohima"
+      ]
+    },
+    "pr-hill": {
+      "name": "PR Hill",
+      "zone": "Chandmari & PR Hill",
+      "type": "mixed",
+      "about": "<p>PR Hill, short for P.R. Hill, is a ward on the south-western side of central Kohima, together with Lower PR Hill and a neighbouring area in the same municipal ward. The Capital Cultural Centre, a well-known public venue, is located here, which makes PR Hill an easy name to give to taxi drivers.</p><p>Officers' Hill lies to the north, Upper Chandmari to the east, and Agri Farm and Merhülietsa to the west, so tutors from any of those neighbourhoods can reach PR Hill for regular sessions. Lower PR Hill has its own schools, so tuition demand here runs from primary classes up to board years. Homes are spread across the slopes, so a clear landmark and the right level of the hill save time on the first visit. In the rainy months from June to September, families often keep one weekly session online. CBSE students and those on the Nagaland board can each ask for a tutor who knows their syllabus. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Police_Reserve_Hill_Ward",
+        "https://en.wikipedia.org/wiki/Lower_Police_Reserve_Hill_Ward",
+        "https://en.wikipedia.org/wiki/Administrative_divisions_of_Kohima"
+      ]
+    },
+    "lerie": {
+      "name": "Lerie",
+      "zone": "Lerie & Agri Farm",
+      "type": "residential",
+      "about": "<p>Lerie is a neighbourhood at the southern end of Kohima, grouped in the municipal ward list with New Ministers' Hill and New Reserve. The ward has several schools and a college, and the Kohima Botanical Garden lies within New Ministers' Hill, which gives this edge of the town a well-known public landmark.</p><p>Being at the far southern end, Lerie is closest to the Agri Farm, PR Hill and Chandmari wards, and a tutor living in one of those is usually the most practical choice. Tutors coming from the northern wards have to cross the busy centre, so later evening slots or weekend sessions tend to suit them better. Kohima is built on hill slopes, so share a landmark and say whether the house is above or below the road. When heavy rain sets in between June and September, an online session keeps the week's work going. Families following the Nagaland Board of School Education can request HSLC or HSSLC experience. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lerie_Ward",
+        "https://en.wikipedia.org/wiki/New_Ministers'_Hill_Ward",
+        "https://en.wikipedia.org/wiki/Administrative_divisions_of_Kohima",
+        "https://en.wikipedia.org/wiki/Kohima"
+      ]
+    },
+    "agri-farm": {
+      "name": "Agri Farm",
+      "zone": "Lerie & Agri Farm",
+      "type": "residential",
+      "about": "<p>Agri Farm is a ward on the south-western side of Kohima. The same municipal ward also covers Upper Mediezie, known locally as Upper Agri, along with the Electrical and Forest neighbourhoods, so a family in any of these will usually give Agri Farm as the reference point. Lower Mediezie, or Lower Agri, belongs to the adjoining ward with Merhülietsa.</p><p>PR Hill is the next neighbourhood to the east, and Lerie and New Ministers' Hill are to the south, so tutors living in those areas are well placed for regular visits. If you live in one of the smaller neighbourhoods inside the ward, mention its name as well as Agri Farm, so the tutor is not left searching between them. Weekday traffic towards the town centre builds up at office hours, so early-evening sessions starting after the peak are usually smoother. Online classes are a good way to cover specialist subjects in Classes 11 and 12. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Agri_Farm_Ward",
+        "https://en.wikipedia.org/wiki/Administrative_divisions_of_Kohima"
+      ]
+    },
+    "merhulietsa": {
+      "name": "Merhülietsa",
+      "zone": "Lerie & Agri Farm",
+      "type": "residential",
+      "about": "<p>Merhülietsa is a ward on the western side of Kohima. In the municipal ward list it also includes Lower Mediezie, known locally as Lower Agri, and it sits next to Agri Farm and Officers' Hill. Pulie Badze, the peak to the south-west, overlooks this side of the city. The ward has a government middle school and private schools, so families here can find most classes close to home.</p><p>Tutors from Agri Farm, PR Hill or Officers' Hill are the nearest options for regular home visits. Merhülietsa is on the western edge of the town, so when a tutor is coming from the northern wards, plan slots that avoid the evening rush through the centre. Paths on the hillside can be steep, so tell the tutor the nearest road point and landmark. The rainy season from June to September is a good time to keep one session a week online. Students preparing for NBSE or CBSE board examinations can ask for a tutor who knows their board's paper pattern. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Merhülietsa_Ward",
+        "https://en.wikipedia.org/wiki/Administrative_divisions_of_Kohima",
+        "https://en.wikipedia.org/wiki/Kohima"
+      ]
+    }
+  },
+  "zone_facts": {
+    "North Kohima & Kohima Village": [
+      {
+        "fact": "Kohima Village is also known as Kewhira and was historically referred to as Bara Basti; the 2011 census recorded 15,734 residents.",
+        "source": "https://en.wikipedia.org/wiki/Kohima_Village"
+      },
+      {
+        "fact": "Oral tradition says Kohima Village is more than 700 years old; the city takes its name from this original settlement.",
+        "source": "https://en.wikipedia.org/wiki/Kohima"
+      },
+      {
+        "fact": "Peraciezie is Ward No. 1 of the Kohima Municipal Council; Bayavü Hill and Sepfüzou together form Ward No. 2.",
+        "source": "https://en.wikipedia.org/wiki/Administrative_divisions_of_Kohima"
+      },
+      {
+        "fact": "The Nagaland Board of School Education, which conducts the HSLC and HSSLC examinations, has its office at Upper Bayavü Hill, Kohima.",
+        "source": "https://nbsenl.edu.in/"
+      },
+      {
+        "fact": "Naga Bazaar (Ward No. 4) is sub-divided into Upper Naga Bazaar and Lower Naga Bazaar.",
+        "source": "https://en.wikipedia.org/wiki/Naga_Bazaar_Ward"
+      },
+      {
+        "fact": "Kitsübozou (Ward No. 5) was incorporated in 1970.",
+        "source": "https://en.wikipedia.org/wiki/Kitsübozou_Ward"
+      }
+    ],
+    "Main Town & Midland": [
+      {
+        "fact": "Daklane is Ward No. 7 and New Market is Ward No. 8 of the Kohima Municipal Council.",
+        "source": "https://en.wikipedia.org/wiki/Administrative_divisions_of_Kohima"
+      },
+      {
+        "fact": "Midland (Ward No. 9) was incorporated in 1970 and is sub-divided into Upper Midland, Middle Midland and Lower Midland.",
+        "source": "https://en.wikipedia.org/wiki/Midland_Ward"
+      },
+      {
+        "fact": "Thegabakha, also known as Officers' Hill, is part of Ward No. 10.",
+        "source": "https://en.wikipedia.org/wiki/Thegabakha_Ward"
+      },
+      {
+        "fact": "Buses and taxis are the main public transport in Kohima.",
+        "source": "https://en.wikipedia.org/wiki/Kohima"
+      },
+      {
+        "fact": "Kohima is not connected to the rail network; the nearest stations are Dimapur and Chümoukedima Shokhüvi.",
+        "source": "https://en.wikipedia.org/wiki/Kohima"
+      }
+    ],
+    "Chandmari & PR Hill": [
+      {
+        "fact": "Upper Chandmari is Ward No. 12 and Lower Chandmari is Ward No. 13 of the Kohima Municipal Council.",
+        "source": "https://en.wikipedia.org/wiki/Administrative_divisions_of_Kohima"
+      },
+      {
+        "fact": "Ward No. 19 covers P.R. Hill, Lower P.R. Hill and one adjoining neighbourhood.",
+        "source": "https://en.wikipedia.org/wiki/Administrative_divisions_of_Kohima"
+      },
+      {
+        "fact": "The Kohima Capital Cultural Center is located at P.R. Hill.",
+        "source": "https://en.wikipedia.org/wiki/Police_Reserve_Hill_Ward"
+      }
+    ],
+    "Lerie & Agri Farm": [
+      {
+        "fact": "In the municipal ward list, New Ministers' Hill, Lerie and New Reserve form one ward.",
+        "source": "https://en.wikipedia.org/wiki/Administrative_divisions_of_Kohima"
+      },
+      {
+        "fact": "Agri Farm, Upper Mediezie (Upper Agri), Electrical and Forest together form Ward No. 17.",
+        "source": "https://en.wikipedia.org/wiki/Administrative_divisions_of_Kohima"
+      },
+      {
+        "fact": "Merhülietsa and Lower Mediezie (Lower Agri) together form Ward No. 18.",
+        "source": "https://en.wikipedia.org/wiki/Administrative_divisions_of_Kohima"
+      },
+      {
+        "fact": "The Kohima Botanical Garden is located in New Ministers' Hill Ward.",
+        "source": "https://en.wikipedia.org/wiki/Kohima"
+      },
+      {
+        "fact": "Pulie Badze lies to the south-west of Kohima, overlooking the city.",
+        "source": "https://en.wikipedia.org/wiki/Kohima"
+      }
+    ]
+  }
+}

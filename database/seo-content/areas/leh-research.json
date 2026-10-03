@@ -1,0 +1,258 @@
+{
+  "areas": {
+    "main-bazaar-old-town": {
+      "name": "Main Bazaar & Old Town",
+      "zone": "Leh Town Centre",
+      "type": "mixed",
+      "about": "<p>The Main Bazaar is the commercial heart of Leh, and the old town rises on the slope behind it towards the historic palace. Manikhang is the stretch between the main bazaar and the old Stalam path that leads up to the palace, and four large stupas at that point traditionally mark the beginning of historic Leh. The main market is also the address of a district library and several government offices, so family homes here sit alongside shops and public buildings.</p><p>Homes in the old town are reached through narrow lanes, so a tutor usually walks the last stretch rather than stopping at a gate. Share a clear lane landmark before the first class, because old-town addresses are hard for a newcomer to find. The bazaar is busiest in the summer months, so early-morning or late-evening slots tend to be easier to keep. In the long winter break many families shift to online classes or fix a midday slot, when the day is warmest. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Leh",
+        "https://saras.cbse.gov.in/saras/AffiliatedList/ListOfSchdirReport"
+      ]
+    },
+    "housing-colony": {
+      "name": "Housing Colony",
+      "zone": "Leh Town Centre",
+      "type": "mixed",
+      "about": "<p>Housing Colony is a residential colony of Leh with its own main market and a community hall, which most local families use as meeting points and landmarks. A government degree college also has its address in the colony, and a government school here is affiliated to CBSE, so the area combines family homes with institutional and market activity rather than being purely residential.</p><p>For a first visit, naming the main market or the community hall as a landmark makes the home easy to find. Tutors who already teach around the Main Bazaar can often add a home here on the same evening round, which helps families find a regular weekday slot. If your home has limited parking, mention it in advance so a tutor coming by car can plan. Winter mornings are very cold, so many families prefer afternoon slots between December and February, or keep one online class a week during the long winter break. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://leh.nic.in/public-utility-category/colleges/",
+        "https://saras.cbse.gov.in/saras/AffiliatedList/ListOfSchdirReport"
+      ]
+    },
+    "changspa": {
+      "name": "Changspa",
+      "zone": "Leh Town Centre",
+      "type": "residential",
+      "about": "<p>Changspa, also spelt Chanspa, is a village-locality on the edge of Leh town, rising towards the hilltop where a white-domed stupa built in 1991 stands on a steep hill facing Leh Palace. Addresses in the area sometimes name Sheldan alongside Changspa, and the locality is treated as part of Leh itself rather than a separate town. It is a hillside area of family homes, lanes and fields rather than a market district.</p><p>For a home tutor this means doorstep tuition, so sharing the house name and the nearest lane marker matters more than a building number. The lanes towards the hilltop are steep, so tutors coming from the bazaar side usually ride or drive rather than walk. The main lane gets busy in the summer season, so families who want a quiet hour often choose early-evening slots. In the long winter break, combining fewer home visits with online classes keeps board preparation on track. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Shanti_Stupa,_Ladakh",
+        "https://en.wikipedia.org/wiki/Snow_Leopard_Conservancy_India_Trust",
+        "https://en.wikipedia.org/wiki/Leh"
+      ]
+    },
+    "sankar": {
+      "name": "Sankar",
+      "zone": "Leh Town Centre",
+      "type": "residential",
+      "about": "<p>Sankar is a village-locality immediately to the north-west of Leh town, set among trees above the town in the lee of the Khardung La side of the mountains. It is home to a small monastery that is a daughter-establishment of the monastery at Spituk, and census records list the village as Sankar Yourtung, one of the villages of Leh tehsil next to the town itself. It is a quiet residential area of family homes and fields.</p><p>Sankar is close enough to the town centre that tutors living in Leh can include it in a weekday round. A clear landmark, such as the monastery lane or a nearby shop, helps on the first visit because house numbers are not always used. The lanes climb uphill, so tutors usually come by two-wheeler or car, and families should mention where a vehicle can stop. During the coldest months many families here move to shorter home sessions or online classes for subjects like maths and physics. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sankar_Monastery",
+        "https://en.wikipedia.org/wiki/Leh_district",
+        "https://en.wikipedia.org/wiki/Leh"
+      ]
+    },
+    "choglamsar": {
+      "name": "Choglamsar",
+      "zone": "Choglamsar, Spituk & West",
+      "type": "mixed",
+      "about": "<p>Choglamsar, also spelt Chuglamsar, is a census town on the bank of the Indus River, at the point where the Leh–Manali Highway leaves the Indus valley and turns north towards Leh. It recorded a population of 10,754 in the 2011 census. Government offices, including the electricity division and a polytechnic, sit alongside homes, horticultural nurseries, golf links and a polo ground, so this is a mixed area rather than a purely residential one.</p><p>Choglamsar is also a junction: one circular road runs to Leh through Spituk and another through Saboo, so tutors from either side can reach it without going through the town centre. Since 2019 a suspension bridge across the Indus has also linked it with Stok and Chuchot Yokma. The highway carries heavy traffic in the summer season, so slots that avoid the busiest hours are easier to keep. In winter, many families combine a weekend home class with online sessions on weekdays. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Choglamsar",
+        "https://leh.nic.in/public-utility-category/electricity/",
+        "https://saras.cbse.gov.in/saras/AffiliatedList/ListOfSchdirReport"
+      ]
+    },
+    "saboo": {
+      "name": "Saboo",
+      "zone": "Choglamsar, Spituk & West",
+      "type": "residential",
+      "about": "<p>Saboo is a village of Leh tehsil, with 259 households recorded in the 2011 census, and it shares its postal area with Choglamsar. Its name is said to come from the Ladakhi words for soil and fine quality, and local history records that it was made the capital of Ladakh in the fourteenth century. Today it is a residential village of family homes and fields, and addresses in the area include Saboothang.</p><p>One of the two circular roads between Choglamsar and Leh runs through Saboo, so tutors travelling from the town or from Choglamsar can plan a single route covering several homes. Families should share the cluster name and a nearby landmark, since homes are spread out across the village. There are no society gates to deal with, but parking space near the house should be agreed if the tutor comes by car. In the long winter break, families often move to online classes or fix a midday slot. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Saboo,_Leh",
+        "https://en.wikipedia.org/wiki/Choglamsar",
+        "https://saras.cbse.gov.in/saras/AffiliatedList/ListOfSchdirReport"
+      ]
+    },
+    "spituk": {
+      "name": "Spituk",
+      "zone": "Choglamsar, Spituk & West",
+      "type": "residential",
+      "about": "<p>Spituk, also written Spaythub and originally known as Pethup, meaning exemplary in the local language, is a census town south-west of Leh town in Leh tehsil. The 2011 census recorded 4,047 residents. Its old monastery is the parent establishment of the smaller monastery at Sankar, and the settlement is made up mainly of family homes in the Indus valley.</p><p>One of the two circular roads that link Choglamsar with Leh runs through Spituk, so it is reachable both from the town and from the Choglamsar side. Tutors usually come by two-wheeler or car, and a clear landmark on the main road helps on the first visit. Evening traffic towards the town builds in the summer season, so an earlier slot is often easier to keep. Families wanting a specialist teacher for senior classes often pair a local home tutor with online sessions, especially during the long winter break. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Spituk",
+        "https://en.wikipedia.org/wiki/Choglamsar",
+        "https://en.wikipedia.org/wiki/Sankar_Monastery"
+      ]
+    },
+    "phyang": {
+      "name": "Phyang",
+      "zone": "Choglamsar, Spituk & West",
+      "type": "residential",
+      "about": "<p>Phyang, earlier written Fiang, is one of the largest inhabited villages of Ladakh, spread along a south-facing valley in the Ladakh Range to the west of Leh. It is made up of eight clusters: Phulungs, Phyang, Tsakma, Changmachan, Gaon, Thangnak, Chusgo and Mankhang, and it recorded 352 households in the 2011 census. The village is known for its monastery, and homes are family houses among fields.</p><p>Because the village is long and divided into clusters, families should tell a tutor which cluster they live in before the first class. A government high school in the village is affiliated to CBSE, so most students here follow the CBSE syllabus. Tutors usually travel by car or two-wheeler from Leh or Spituk, so weekend or late-afternoon slots are common. Online classes work well for senior science and maths, especially during the long winter break when travel takes longer. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Phyang",
+        "https://en.wikipedia.org/wiki/Leh_district",
+        "https://saras.cbse.gov.in/saras/AffiliatedList/ListOfSchdirReport"
+      ]
+    },
+    "stok": {
+      "name": "Stok",
+      "zone": "Indus Valley South & East",
+      "type": "residential",
+      "about": "<p>Stok is a village in the Indus valley to the south-east of Leh, on the southern bank of the Indus River and in Chushot tehsil. It recorded 300 households in the 2011 census and is known for its palace, the present residence of the former royal family of Ladakh. The village lies below the Stok Chu valley, and homes are traditional and newer family houses among fields.</p><p>Since 2019 a long suspension bridge over the Indus has linked Stok and Chuchot Yokma with Choglamsar, so tutors living in Choglamsar can cross the river rather than going round by road. A government high school in the village is affiliated to CBSE. Homes are reached at the doorstep, and a clear landmark helps because houses are spread out. During the long winter break, when early mornings are very cold, many families switch to online classes or a midday home slot. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Stok",
+        "https://en.wikipedia.org/wiki/Choglamsar",
+        "https://en.wikipedia.org/wiki/Leh"
+      ]
+    },
+    "chuchot": {
+      "name": "Chuchot",
+      "zone": "Indus Valley South & East",
+      "type": "residential",
+      "about": "<p>Chuchot is a group of three villages on the Indus to the south of Leh: Chuchot Gongma, Chuchot Yokma and Chuchot Shamma. Chuchot Gongma lies in Chushot tehsil on the bank of the Indus River, surrounded by mountain ranges, with farmland near the river and open land further back. Chuchot Shamma lies along the Hemis road, and the villages are made up of family homes and fields.</p><p>A bridge over the Indus connects Choglamsar with Chuchot Yokma, so tutors based in Choglamsar can reach this side of the river directly. Families should say which of the three villages they live in, since each has its own lanes and landmarks. Doorstep tuition is the norm, and a tutor coming by car will need somewhere to park near the house. Tutors coming from Leh often prefer weekend slots, and online classes are a practical option for senior subjects and for the long winter break. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chuchot_Gongma",
+        "https://en.wikipedia.org/wiki/Choglamsar",
+        "https://saras.cbse.gov.in/saras/AffiliatedList/ListOfSchdirReport"
+      ]
+    },
+    "shey": {
+      "name": "Shey",
+      "zone": "Indus Valley South & East",
+      "type": "residential",
+      "about": "<p>Shey is a village of Leh tehsil in the upper Indus valley to the east of Leh, on the road towards Hemis. It was founded as the summer capital of Ladakh in the tenth century and was the old seat of the Ladakhi kings before Leh grew in importance with Central Asian trade. The 2011 census recorded 398 households, and homes are traditional family houses among fields along the Indus.</p><p>Tutors teaching in Thiksey or Choglamsar can often add a home in Shey to the same trip, which makes a regular weekly slot easier to arrange. Most families live in houses with space to stop a vehicle outside, so home visits are simple once the route is known. Tutors usually travel by car or two-wheeler from the town, so late-afternoon or weekend slots are common. Many families combine home lessons with online classes during the long winter break, when early mornings are very cold. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Shey",
+        "https://en.wikipedia.org/wiki/Leh"
+      ]
+    },
+    "thiksey": {
+      "name": "Thiksey",
+      "zone": "Indus Valley South & East",
+      "type": "residential",
+      "about": "<p>Thiksey is a village in the Indus valley to the east of Leh and is the headquarters of its own block and tehsil, so it has the block and tehsil offices that serve the surrounding villages. The 2011 census recorded 433 households, and the village is known for its large monastery. Homes are mainly family houses among fields.</p><p>Families here often look for a tutor who already teaches in Shey or Choglamsar and can add another home to the same route. A government high school in the village is affiliated to CBSE, so most students follow the CBSE syllabus. Share the cluster name and a clear landmark for the first visit, as houses are spread out. Weekend slots suit tutors travelling from the town, and online classes cover subjects or levels that are hard to find locally, especially in the long winter break. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Thiksey",
+        "https://en.wikipedia.org/wiki/Leh_district",
+        "https://saras.cbse.gov.in/saras/AffiliatedList/ListOfSchdirReport"
+      ]
+    }
+  },
+  "zone_facts": {
+    "Leh Town Centre": [
+      {
+        "fact": "Leh lies on the bank of the Indus River at an altitude of about 3,500 metres.",
+        "source": "https://en.wikipedia.org/wiki/Leh"
+      },
+      {
+        "fact": "The 2011 census recorded Leh's population as 30,870.",
+        "source": "https://en.wikipedia.org/wiki/Leh"
+      },
+      {
+        "fact": "The Ladakh Autonomous Hill Development Council (LAHDC) is in charge of governance in Leh; it has 30 councillors, 26 elected and 4 nominated.",
+        "source": "https://en.wikipedia.org/wiki/Leh"
+      },
+      {
+        "fact": "Ladakh became a union territory on 31 October 2019.",
+        "source": "https://en.wikipedia.org/wiki/Ladakh"
+      },
+      {
+        "fact": "Manikhang is the area of the old town between the main bazaar and the historic Stalam path that leads up to the palace.",
+        "source": "https://en.wikipedia.org/wiki/Leh"
+      },
+      {
+        "fact": "Leh has a cold desert climate with long, cold winters from late November to early March.",
+        "source": "https://en.wikipedia.org/wiki/Leh"
+      },
+      {
+        "fact": "Kushok Bakula Rimpochee Airport has flights to and from Delhi, Jammu, Srinagar and Chandigarh.",
+        "source": "https://en.wikipedia.org/wiki/Leh"
+      }
+    ],
+    "Choglamsar, Spituk & West": [
+      {
+        "fact": "Choglamsar was designated a census town in the 2011 census, which recorded its population as 10,754.",
+        "source": "https://en.wikipedia.org/wiki/Choglamsar"
+      },
+      {
+        "fact": "Spituk is a census town in Leh district; the 2011 census recorded 4,047 residents.",
+        "source": "https://en.wikipedia.org/wiki/Spituk"
+      },
+      {
+        "fact": "Two circular roads go to Leh via Choglamsar: one through Spituk and the other through Saboo.",
+        "source": "https://en.wikipedia.org/wiki/Choglamsar"
+      },
+      {
+        "fact": "At Choglamsar the Leh–Manali Highway leaves the Indus valley and heads north towards Leh.",
+        "source": "https://en.wikipedia.org/wiki/Choglamsar"
+      },
+      {
+        "fact": "The Leh–Manali Highway forms part of NH3; the Manali–Leh road began serving as the second land approach to Ladakh in 1989.",
+        "source": "https://en.wikipedia.org/wiki/Leh–Manali_Highway"
+      },
+      {
+        "fact": "Phyang comprises eight clusters: Phulungs, Phyang, Tsakma, Changmachan, Gaon, Thangnak, Chusgo and Mankhang.",
+        "source": "https://en.wikipedia.org/wiki/Phyang"
+      },
+      {
+        "fact": "Saboo recorded 259 households in the 2011 census.",
+        "source": "https://en.wikipedia.org/wiki/Saboo,_Leh"
+      }
+    ],
+    "Indus Valley South & East": [
+      {
+        "fact": "Stok lies in Chushot tehsil on the southern bank of the Indus and recorded 300 households in 2011.",
+        "source": "https://en.wikipedia.org/wiki/Stok"
+      },
+      {
+        "fact": "Maitri Bridge, built in 2019, connects Choglamsar to Chuchot Yokma and Stok and is the longest suspension bridge over the Indus.",
+        "source": "https://en.wikipedia.org/wiki/Choglamsar"
+      },
+      {
+        "fact": "Shey was founded as the summer capital of Ladakh in the tenth century and lies in the upper Indus valley.",
+        "source": "https://en.wikipedia.org/wiki/Shey"
+      },
+      {
+        "fact": "Thiksey is the headquarters of its own block and tehsil and recorded 433 households in 2011.",
+        "source": "https://en.wikipedia.org/wiki/Thiksey"
+      },
+      {
+        "fact": "Chuchot Gongma is a village of Chushot tehsil on the bank of the Indus River.",
+        "source": "https://en.wikipedia.org/wiki/Chuchot_Gongma"
+      },
+      {
+        "fact": "Shey recorded 398 households in the 2011 census.",
+        "source": "https://en.wikipedia.org/wiki/Shey"
+      }
+    ]
+  },
+  "board_facts": {
+    "summary": "CBSE's own affiliation list (SARAS) has Ladakh as a separate state entry, and government high and higher secondary schools across Leh district, including Leh town, Housing Colony, Stok, Phyang, Thiksey and Chuchot, are CBSE-affiliated alongside private schools. Name CBSE for Leh. No official page read says whether any Ladakh school still takes JKBOSE exams, so do not claim JKBOSE and do not state a switch year.",
+    "facts": [
+      {
+        "fact": "CBSE's SARAS affiliation list has a separate state entry for Ladakh and lists affiliated schools in both Leh and Kargil districts.",
+        "source": "https://saras.cbse.gov.in/saras/AffiliatedList/ListOfSchdirReport"
+      },
+      {
+        "fact": "Most of the schools on that list for Leh district are government schools, including government high and higher secondary schools in Leh town, Housing Colony, Stok, Phyang, Thiksey and Chuchot.",
+        "source": "https://saras.cbse.gov.in/saras/AffiliatedList/ListOfSchdirReport"
+      },
+      {
+        "fact": "CBSE's regional office at Mohali has jurisdiction over Chandigarh, Punjab, Jammu & Kashmir and the UT of Ladakh.",
+        "source": "https://www.cbse.gov.in/cbsenew/ro.html"
+      },
+      {
+        "fact": "Ladakh's School Education Department was established in 2019, after Ladakh became a union territory, and manages the government schools in both districts.",
+        "source": "https://ladakh.gov.in/school-education-department/"
+      },
+      {
+        "fact": "CBSE affiliation in the list is at secondary and senior secondary level; the board pattern for primary and middle classes is not stated on the official pages read.",
+        "source": "https://saras.cbse.gov.in/saras/AffiliatedList/ListOfSchdirReport"
+      }
+    ],
+    "uncertainty": [
+      "Wikipedia's JKBOSE article still calls JKBOSE the main board for J&K and Ladakh, but it cites a 2010 profile; the JKBOSE official site (jkbose.jk.gov.in) did not mention Ladakh when checked. Treat JKBOSE as outdated for Ladakh unless an official notice says otherwise.",
+      "No official circular giving the date of the move from JKBOSE to CBSE could be read (dse.ladakh.gov.in returned no readable text and web search was unavailable), so no switch year should be published."
+    ],
+    "sources_checked": [
+      "https://ladakh.gov.in/school-education-department/",
+      "https://leh.nic.in/departments/education/",
+      "https://jkbose.jk.gov.in/",
+      "https://saras.cbse.gov.in/saras/AffiliatedList/ListOfSchdirReport",
+      "https://www.cbse.gov.in/cbsenew/ro.html",
+      "https://en.wikipedia.org/wiki/Jammu_and_Kashmir_Board_of_School_Education"
+    ]
+  }
+}

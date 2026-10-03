@@ -1,0 +1,38 @@
+{
+  "Aberdeen & Old Town": {
+    "guide": "port-blair-home-tuition-guide",
+    "intro": [
+      "Aberdeen Bazaar, Phoenix Bay and Haddo form the old core of Sri Vijaya Puram (Port Blair). Aberdeen and Haddo were already stations of the settlement by 1871, and the clock tower at Aberdeen is a long-standing landmark that helps with directions. Aberdeen Bazaar is the city's shopping centre, with homes above shops and in side lanes. Phoenix Bay is the bay-side locality from which inter-island ships sail, and government offices such as Transport Bhawan stand among family homes there.",
+      "Schooling here is unusually varied in language. The Directorate of Education lists English- and Telugu-medium primary schools at Haddo, Hindi- and Telugu-medium government senior secondary schools there, and a Tamil-medium primary school on the Aberdeen side. Every one follows CBSE at the board stage, but a child taught in Telugu or Hindi may want a tutor who can explain in that language. Mention the medium when you ask, together with the lane and a landmark."
+    ],
+    "tips": [
+      "Near Aberdeen Bazaar, book a slot before the evening shopping crowd builds, or use a weekend morning, and give the clock tower or a shop as the meeting point.",
+      "If you live close to the Phoenix Bay jetty, check ship days and avoid hours when passengers and vehicles are gathering there.",
+      "In a Haddo government quarters block, send the block and quarter number and the nearest gate before the first visit."
+    ]
+  },
+  "Junglighat & Central Localities": {
+    "guide": "port-blair-home-tuition-guide",
+    "intro": [
+      "Junglighat, Delanipur, School Line, Dairy Farm and Bathubasti are the settled residential localities at the centre of Sri Vijaya Puram (Port Blair). Junglighat, School Line and Dairy Farm are revenue villages of the Port Blair tehsil. Government secondary schools at Junglighat, Delanipur and Dairy Farm, and a senior secondary school at School Line, are on the Directorate of Education's list of CBSE-affiliated schools. Bathubasti, also written Bathu Basti, has its own bazaar and a mix of houses and apartment buildings.",
+      "Because these localities sit close together, this is the part of the city where one tutor can most easily see two families in an evening. Where a school stops at Class 10, families tend to look for help at the move into Class 11, mostly in science and maths. Where senior classes are nearby, as at School Line, requests lean towards Physics, Chemistry, Biology, Maths and Accountancy. Houses usually mean a doorstep visit; apartment buildings need the floor and flat number."
+    ],
+    "tips": [
+      "In a Bathubasti apartment building, tell the tutor the floor, the flat number and where a visitor may park, and start before the evening market gets busy.",
+      "House numbers alone are hard to follow in Junglighat and Delanipur, so add the lane name and a nearby landmark to your request.",
+      "If your child moves to a new school for Class 11, fix the tutor's weekly slot after the new timetable is known, not before."
+    ]
+  },
+  "Expansion Villages": {
+    "guide": "port-blair-home-tuition-guide",
+    "intro": [
+      "Garacharma, Dollygunj, Prothrapur, Brookshabad and Austinabad are among the ten villages the island administration planned in 2011 to bring into Port Blair's municipal limits, citing a substantial rise in housing and commercial activity next to the town; the limits were expanded in 2015. Garacharma is a census town just outside the old boundary, Prothrapur is one of the larger settlements of South Andaman Island, and only parts of Brookshabad and Austinabad were included, so some homes sit inside the city and some just outside.",
+      "Homes here are mostly houses on their own plots, so tutors usually come straight to the door, but newer lanes are hard to find from a number. Prothrapur has a CBSE-affiliated government senior secondary school, which keeps Class 11 and 12 demand local. Tutors who live in the centre may travel out only on set days, so a weekend home class paired with online lessons in the week is a common pattern, and it also helps on wet monsoon evenings."
+    ],
+    "tips": [
+      "Send a map pin and a landmark before the first visit; newer homes on plotted land are rarely found from the house number alone.",
+      "Agree the weekly pattern before the demo, since a tutor coming from the central localities may be able to visit only on fixed days.",
+      "For Class 11 and 12, pair a home tutor for the main subject with an online specialist for a second subject such as physics or accountancy."
+    ]
+  }
+}

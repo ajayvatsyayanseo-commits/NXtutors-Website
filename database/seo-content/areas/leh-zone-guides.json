@@ -1,0 +1,38 @@
+{
+  "Leh Town Centre": {
+    "guide": "leh-home-tuition-guide",
+    "intro": [
+      "Main Bazaar and the old town, Housing Colony, Changspa and Sankar make up the centre of Leh. The bazaar is the town's commercial heart, and the old town rises behind it towards the palace, with Manikhang, marked by four large stupas, between the bazaar and the old Stalam path. Housing Colony has its own main market and community hall. Changspa climbs towards the hilltop stupa, and Sankar is a quiet village of homes and fields just north-west of town.",
+      "Because these localities sit close together, this is the part of Leh where one tutor can most easily teach several families in a single evening. Homes vary a great deal, though: old-town houses are reached on foot through narrow lanes, Housing Colony is a planned colony with clear markets to steer by, and Changspa and Sankar are uphill, so tutors usually come by two-wheeler or car. A clear lane landmark matters more than any house number."
+    ],
+    "tips": [
+      "For an old-town home, name the nearest lane landmark and describe the walk from the bazaar; newcomers rarely find these houses from an address alone.",
+      "In Housing Colony, the main market or the community hall is the easiest meeting point for a tutor's first visit.",
+      "The bazaar is busiest in the summer months, so early-morning or later-evening slots tend to start on time more often."
+    ]
+  },
+  "Choglamsar, Spituk & West": {
+    "guide": "leh-home-tuition-guide",
+    "intro": [
+      "Choglamsar, Spituk, Saboo and Phyang lie south and west of Leh town. Choglamsar, a census town on the Indus with 10,754 people in 2011, is where the Leh–Manali Highway turns north towards Leh, and it mixes homes with offices and nurseries. Spituk, a census town of 4,047 residents, is mainly family houses. Saboo shares Choglamsar's postal area, and Phyang, to the west, is a long village of eight clusters along a south-facing valley.",
+      "The road pattern is what helps tutors here. Two circular roads join Choglamsar to Leh, one passing through Spituk and the other through Saboo, so a tutor can cover several homes in a loop without returning through the bazaar. Phyang is further out and stands on its own, so families there often rely on weekend home lessons, afternoon slots or online classes. Most homes have a doorstep entrance rather than a gate."
+    ],
+    "tips": [
+      "In Phyang, name your cluster, such as Tsakma, Gaon or Mankhang, because the village is long and each cluster has its own lanes.",
+      "Ask for a tutor who already uses the Spituk or Saboo road; a route that passes your door is the one most likely to last all year.",
+      "The highway is busiest in summer, so keep lessons clear of its heaviest hours, and agree early which winter weeks move online."
+    ]
+  },
+  "Indus Valley South & East": {
+    "guide": "leh-home-tuition-guide",
+    "intro": [
+      "Stok, Chuchot, Shey and Thiksey are the villages of the Indus valley south and east of Leh. Stok, in Chushot tehsil on the river's southern bank, recorded 300 households in 2011 and lies below the Stok Chu valley. Chuchot is three villages: Gongma on the riverbank, Yokma, and Shamma along the Hemis road. Shey and Thiksey sit upriver on the road east, and Thiksey is the headquarters of its own block and tehsil.",
+      "Homes here are spread out among fields and reached at the doorstep, usually with space to park, so the route is the thing to settle first. Since 2019 a suspension bridge over the Indus has linked Choglamsar with Chuchot Yokma and Stok, which brings tutors living on the Choglamsar side much closer. Further east, a tutor already teaching in Shey can often take on a family in Thiksey on the same trip."
+    ],
+    "tips": [
+      "In Chuchot, say whether you live in Gongma, Yokma or Shamma; each village has its own lanes and landmarks.",
+      "For Stok and Chuchot Yokma, look first at tutors based in Choglamsar, who can cross by the bridge rather than going round by road.",
+      "Weekend home lessons with one or two online hours on weekdays suit families in Shey and Thiksey, especially through the long winter break."
+    ]
+  }
+}

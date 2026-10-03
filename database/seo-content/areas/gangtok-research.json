@@ -1,0 +1,263 @@
+{
+  "areas": {
+    "development-area": {
+      "name": "Development Area",
+      "zone": "Central Gangtok & Tibet Road",
+      "type": "mixed",
+      "about": "<p>Development Area is one of the wards of the Gangtok Municipal Corporation and a long-established part of the city proper. The city development plan prepared by the state's Urban Development and Housing Department describes it as a mix of residential, commercial and public buildings, with banks, government offices, schools, hostels and clinics set among the homes. Buildings here are mostly four or five storeys high and built of reinforced concrete, with some older wooden houses still standing.</p><p>For a family arranging home tuition, this usually means a flat in a multi-storey building on a steep road, so tell the tutor the floor, the building name and whether the entrance is at road level or down a flight of steps. Gangtok has no railway or metro; tutors get around by shared taxi, on foot or on a two-wheeler, and evening traffic on the central roads is heavy, so a fixed slot with some margin helps. In the monsoon, allow extra time in heavy rain, and consider online classes for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Gangtok_Municipal_Corporation",
+        "https://web.archive.org/web/20110205091805/http://jnnurm.nic.in/nurmudweb/toolkit/GangtokCdp/Chapter-4.pdf"
+      ]
+    },
+    "arithang": {
+      "name": "Arithang",
+      "zone": "Central Gangtok & Tibet Road",
+      "type": "residential",
+      "about": "<p>Arithang is a residential suburb next to Gangtok's core urban area and is split into two municipal wards, Arithang-I and Arithang-II. Because it lies so close to the centre, the city development plan notes that commercial buildings have been coming up along its roads and that a large share of homes are rented, with reinforced-concrete buildings standing alongside smaller, older houses.</p><p>Many families here live in rented flats in buildings set into the hillside, where the front door may be several flights above or below the road. Share a clear roadside landmark, the building name and the floor before the demo class. Being so near the town centre, Arithang is easy for a tutor who already teaches in central Gangtok to add on the same evening. Most tutors walk the last stretch or come by shared taxi, as parking on narrow, steep roads is limited. Allow extra time on days of heavy rain, and use online classes when the right subject teacher lives elsewhere in the city. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Gangtok_Municipal_Corporation",
+        "https://web.archive.org/web/20110205091805/http://jnnurm.nic.in/nurmudweb/toolkit/GangtokCdp/Chapter-4.pdf"
+      ]
+    },
+    "tibet-road": {
+      "name": "Tibet Road",
+      "zone": "Central Gangtok & Tibet Road",
+      "type": "mixed",
+      "about": "<p>Tibet Road lies just off MG Marg, Gangtok's main shopping street, and takes its name from the old trade route to Tibet along which mules once carried goods. The city development plan describes it as the second most important commercial centre in the city and one of its most densely built areas, with homes, offices, public buildings and many hotels side by side. Most buildings are reinforced concrete, with a few older wooden houses, and Tibet Road is also one of the municipal wards.</p><p>Families here often live above or behind shops, so the tutor needs the building name and a nearby shop or junction as a landmark. MG Marg and the roads around it are busy with shoppers, especially in the evenings and during holiday seasons, so a regular weekday slot agreed in advance works better than fixing times on the day. Tutors usually walk in from the nearest taxi point, since parking near the market is scarce. Online classes are a practical fallback when the right teacher lives on the far side of the city. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://web.archive.org/web/20110205091805/http://jnnurm.nic.in/nurmudweb/toolkit/GangtokCdp/Chapter-4.pdf",
+        "https://en.wikipedia.org/wiki/Gangtok_Municipal_Corporation",
+        "https://en.wikipedia.org/wiki/Gangtok"
+      ]
+    },
+    "pani-house": {
+      "name": "Pani House",
+      "zone": "Central Gangtok & Tibet Road",
+      "type": "residential",
+      "about": "<p>Pani House is a hillside locality along the National Highway and one of the wards of the Gangtok Municipal Corporation. The city development plan describes it as primarily residential, with steep slopes, homes above and below the road, and a number of hotels built along the highway frontage. Unlike the central market wards it has few commercial buildings, so daily shopping usually means a trip into town.</p><p>For tutors, the highway makes Pani House simple to reach by shared taxi, but homes are often reached by steps or footpaths from the road, so describe the route from the nearest stop clearly before the first visit. Houses mean doorstep arrival, while flats in larger buildings may need a call from the entrance. The highway carries heavy through traffic, so leave some margin in the evening, and allow extra time in heavy monsoon rain. Families looking for a specialist subject teacher can combine a local tutor with online sessions. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://web.archive.org/web/20110205091805/http://jnnurm.nic.in/nurmudweb/toolkit/GangtokCdp/Chapter-4.pdf",
+        "https://en.wikipedia.org/wiki/Gangtok_Municipal_Corporation"
+      ]
+    },
+    "deorali": {
+      "name": "Deorali",
+      "zone": "Deorali, Tadong & Ranipool",
+      "type": "mixed",
+      "about": "<p>Deorali sits on the National Highway along the southern growth axis that the city development plan traces from Selep towards Ranipool, and the plan names it with Tadong and Ranipool as fringe areas facing the most pressure for new building. It describes Deorali as a fast-emerging commercial and institutional hub, with business premises, government offices, a post office, banks, a telephone exchange, clinics and schools, as well as newer hotels, restaurants and commercial centres. The municipal ward here is Deorali-Upper Syari.</p><p>Homes range from flats above shops on the main road to houses on the lanes above and below it. The plan identifies Deorali junction as one of the busiest traffic points in the city and the way into Syari, so plan class timings around the evening peak and give the tutor a landmark on the correct side of the junction. Shared taxis along the highway make it convenient for tutors coming from Tadong or the town centre. In heavy rain, allow extra time. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://web.archive.org/web/20110205091805/http://jnnurm.nic.in/nurmudweb/toolkit/GangtokCdp/Chapter-4.pdf",
+        "https://en.wikipedia.org/wiki/Gangtok_Municipal_Corporation"
+      ]
+    },
+    "tadong": {
+      "name": "Tadong",
+      "zone": "Deorali, Tadong & Ranipool",
+      "type": "mixed",
+      "about": "<p>Tadong, made up of Upper and Lower Tadong, lies on the National Highway on Gangtok's southern side, the direction in which the city development plan says most growth is heading. Upper Tadong is a census town within the Gangtok Municipal Corporation, which has Tadong and Tadong 6th Mile wards, with Daragaon-Lumsey as a further ward. The plan describes this belt, including the Fifth Mile area, as a fast-emerging commercial and institutional hub, with government offices, schools, colleges, and car showrooms and workshops along the highway.</p><p>Housing ranges from flats in multi-storey buildings on the highway to houses on the slopes behind them. The Daragaon bazaar stretch is named in the plan as a traffic pinch point, so evening sessions run more smoothly with a tutor who already lives in Tadong or nearby Deorali. Shared taxis run along the highway, and the last stretch to a hillside home is often on foot. Give the building name and floor, and allow extra time in heavy monsoon rain. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://web.archive.org/web/20110205091805/http://jnnurm.nic.in/nurmudweb/toolkit/GangtokCdp/Chapter-4.pdf",
+        "https://en.wikipedia.org/wiki/Upper_Tadong",
+        "https://en.wikipedia.org/wiki/Gangtok_Municipal_Corporation"
+      ]
+    },
+    "ranipool": {
+      "name": "Ranipool",
+      "zone": "Deorali, Tadong & Ranipool",
+      "type": "mixed",
+      "about": "<p>Ranipool is a small suburban town on the bank of the Ranikhola, at the junction of National Highway 10 and National Highway 717A, and it falls within the Gangtok Municipal Corporation as one of its wards. Three routes meet here, towards Gangtok, Singtam and Pakyong, and National Highway 310 also begins at Ranipool. Alongside homes, the town has schools, an agriculture college, a science centre and pharmaceutical units, giving it a mix of residential and institutional land.</p><p>As a junction town with frequent taxis and buses, Ranipool is easy for a tutor to reach, and it lies on the road towards Pakyong Airport. The city development plan names Ranipool, with Deorali and Tadong, among the fringe areas where most new building is taking place, so families live in a mix of newer flats and older houses. Junction traffic is heaviest at peak hours, so agree a fixed slot with some margin, and allow extra time in heavy rain. Online classes widen the choice of tutor for senior classes. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ranipool",
+        "https://en.wikipedia.org/wiki/Gangtok_Municipal_Corporation",
+        "https://web.archive.org/web/20110205091805/http://jnnurm.nic.in/nurmudweb/toolkit/GangtokCdp/Chapter-4.pdf"
+      ]
+    },
+    "syari": {
+      "name": "Syari",
+      "zone": "Syari, Chandmari & Tathangchen",
+      "type": "residential",
+      "about": "<p>Syari sits on the eastern side of the ridge and is primarily residential. The city development plan notes a large amount of state and central government staff housing here, along with a few public buildings, health centres, offices and government schools, but relatively few shops. Upper Syari forms part of the Deorali-Upper Syari ward of the Gangtok Municipal Corporation, and Lower Syari is one of the suburbs the plan picked out for extended services.</p><p>Because many homes are in government housing colonies and residential buildings, tutors should expect to give their name at a colony entrance or call the family on arrival, so share the block and quarter number in advance. Traffic into Syari passes through Deorali junction, which the plan names as the main bottleneck, so evening classes are easiest with a tutor who lives in Syari or Deorali. The roads here are steep, and in heavy rain extra time helps. Online classes suit specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://web.archive.org/web/20110205091805/http://jnnurm.nic.in/nurmudweb/toolkit/GangtokCdp/Chapter-4.pdf",
+        "https://en.wikipedia.org/wiki/Gangtok_Municipal_Corporation"
+      ]
+    },
+    "chandmari": {
+      "name": "Chandmari",
+      "zone": "Syari, Chandmari & Tathangchen",
+      "type": "residential",
+      "about": "<p>Chandmari is a ward of the Gangtok Municipal Corporation on the city's eastern slope, where the city development plan describes a line of settlements growing from Chandmari to Syari. The plan lists homes alongside public facilities such as greenhouses, schools, a monastery and a telephone office, and it names Chandmari, with Syari, Tathangchen and Bojoghari, among the areas around the Indira Bypass that can take some of the city's growth.</p><p>Housing is mostly residential buildings and houses on the slope, many reached by steps or footpaths from the road, so give the tutor directions from the nearest taxi point and a phone number for the first visit. Nearby Tathangchen and Syari widen the pool of tutors who can reach the area easily. Most tutors come by shared taxi or two-wheeler; evening traffic on the bypass and the central roads is heavy, so a fixed weekday slot helps. Allow extra time in heavy monsoon rain, and use online classes when the right subject teacher lives elsewhere. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://web.archive.org/web/20110205091805/http://jnnurm.nic.in/nurmudweb/toolkit/GangtokCdp/Chapter-4.pdf",
+        "https://en.wikipedia.org/wiki/Gangtok_Municipal_Corporation"
+      ]
+    },
+    "tathangchen": {
+      "name": "Tathangchen",
+      "zone": "Syari, Chandmari & Tathangchen",
+      "type": "residential",
+      "about": "<p>Tathangchen sits on the eastern side of Gangtok and is a ward of the municipal corporation. The city development plan describes it as mixed in use but mainly residential, with schools, a teacher-training institute, government offices, greenhouses, a power station and a water storage tank among the homes. It is one of the revenue blocks around and below the Indira Bypass that the plan identified as able to absorb some of the city's growth.</p><p>Homes are spread across the hillside, from houses with their own entrance to small residential buildings, so the tutor will need the exact path or flight of steps from the road. Tutors living in Chandmari, Syari or the town centre can usually get here by taxi or two-wheeler. Steep slopes and monsoon rain can slow travel, so allow extra time on wet days and agree a backup online session for weeks of heavy rain. Online classes also help for senior specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://web.archive.org/web/20110205091805/http://jnnurm.nic.in/nurmudweb/toolkit/GangtokCdp/Chapter-4.pdf",
+        "https://en.wikipedia.org/wiki/Gangtok_Municipal_Corporation"
+      ]
+    },
+    "sichey": {
+      "name": "Sichey",
+      "zone": "Sichey, Burtuk & Bojoghari",
+      "type": "residential",
+      "about": "<p>Sichey is spread across Upper, Middle and Lower Sichey, and the municipal corporation has separate Upper Sichey and Lower Sichey wards. The Indira Bypass road runs through Middle Sichey, and the city development plan describes Upper Sichey as predominantly residential, with the city's football stadium, the district courts and district administration offices, a few hotels, and private and government schools. Buildings are mostly reinforced concrete, with some wooden houses.</p><p>Sichey's position on the bypass makes it reachable for tutors from Burtuk, Chandmari and the town centre. Families in flats should share the floor and building name with the tutor, while houses on the slopes may be reached by steps from the road. Traffic on the bypass is busiest at office hours, so pick a weekday slot outside the evening rush, and allow extra time in heavy rain. Online classes are a sensible fallback for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Gangtok_Municipal_Corporation",
+        "https://web.archive.org/web/20110205091805/http://jnnurm.nic.in/nurmudweb/toolkit/GangtokCdp/Chapter-4.pdf",
+        "https://en.wikipedia.org/wiki/Sikkim_State_Election_Commission"
+      ]
+    },
+    "burtuk": {
+      "name": "Burtuk",
+      "zone": "Sichey, Burtuk & Bojoghari",
+      "type": "residential",
+      "about": "<p>Burtuk is a ward of the Gangtok Municipal Corporation, and the revenue blocks of Burtuk and Upper Burtuk are grouped with Sicheygaon and Upper Sicheygaon in the same assembly constituency. The city development plan listed Burtuk among the suburban areas around the city that were growing and needed to be brought into its water and sewerage networks. As across much of Gangtok, homes stand on compacted ground beside steep roads.</p><p>Its close link with Sichey means tutors already teaching in Sichey or along the Indira Bypass are usually the most practical match for regular visits. Most tutors arrive by shared taxi or two-wheeler and walk the last stretch, so give clear directions and a phone number before the first class. In the monsoon, allow extra time in heavy rain, and keep an online session as a backup on very wet days. Online classes also widen the choice of tutor for senior science and maths. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Gangtok_Municipal_Corporation",
+        "https://en.wikipedia.org/wiki/Upper_Burtuk_Assembly_constituency",
+        "https://web.archive.org/web/20110205091805/http://jnnurm.nic.in/nurmudweb/toolkit/GangtokCdp/Chapter-4.pdf"
+      ]
+    },
+    "bojoghari": {
+      "name": "Bojoghari",
+      "zone": "Sichey, Burtuk & Bojoghari",
+      "type": "residential",
+      "about": "<p>Bojoghari is a suburb of Gangtok that forms part of the Bojoghari-2nd Mile ward of the municipal corporation. The city development plan named it, with Syari, Tathangchen and Chandmari, among the areas around and below the Indira Bypass that could absorb some of the city's growth, and it listed Bojoghari among the suburbs to be brought into the city's water supply and sewerage plans.</p><p>Like the rest of Gangtok, homes here climb the slopes beside the roads, so a house or building may be reached by steps above or below the road. Tutors from Chandmari, Tathangchen, Sichey and the bypass corridor are the most practical match for regular visits. Most arrive by shared taxi or two-wheeler, so give the tutor a landmark and a phone number before the first class. Allow extra time in heavy monsoon rain, and use online classes for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Gangtok_Municipal_Corporation",
+        "https://web.archive.org/web/20110205091805/http://jnnurm.nic.in/nurmudweb/toolkit/GangtokCdp/Chapter-4.pdf"
+      ]
+    }
+  },
+  "zone_facts": {
+    "Central Gangtok & Tibet Road": [
+      {
+        "fact": "Gangtok is in the eastern Himalayan range at an elevation of 1,650 m.",
+        "source": "https://en.wikipedia.org/wiki/Gangtok"
+      },
+      {
+        "fact": "Gangtok is administered by the Gangtok Municipal Corporation; its first elections, for 15 wards, were held on 27 April 2010, and it now has 19 wards, including Development Area, Arithang-I, Arithang-II, Tibet Road, Pani House and Lower MG Marg-Lall Bazaar.",
+        "source": "https://en.wikipedia.org/wiki/Gangtok_Municipal_Corporation"
+      },
+      {
+        "fact": "The city development plan identifies MG Marg, Tibet Road and Kazi Road as the core business district of the city.",
+        "source": "https://web.archive.org/web/20110205091805/http://jnnurm.nic.in/nurmudweb/toolkit/GangtokCdp/Chapter-4.pdf"
+      },
+      {
+        "fact": "Tibet Road is named after the earlier trade route to Tibet, along which mules carried goods.",
+        "source": "https://web.archive.org/web/20110205091805/http://jnnurm.nic.in/nurmudweb/toolkit/GangtokCdp/Chapter-4.pdf"
+      },
+      {
+        "fact": "A cable car with three stops connects lower Gangtok suburbs with the Legislative Assembly in central Gangtok and the upper suburbs.",
+        "source": "https://en.wikipedia.org/wiki/Gangtok"
+      },
+      {
+        "fact": "Gangtok is a linear city that has developed along its arterial roads, especially the former National Highway 31A.",
+        "source": "https://en.wikipedia.org/wiki/Gangtok"
+      }
+    ],
+    "Deorali, Tadong & Ranipool": [
+      {
+        "fact": "The primary growth axis for Gangtok is to the south and south-west along the Selep-Ranipool stretch of the national highway, and Deorali, Tadong and Ranipool are fringe areas under increasing pressure for land development.",
+        "source": "https://web.archive.org/web/20110205091805/http://jnnurm.nic.in/nurmudweb/toolkit/GangtokCdp/Chapter-4.pdf"
+      },
+      {
+        "fact": "National Highway 10, earlier known as National Highway 31A, connects Gangtok to Siliguri in West Bengal.",
+        "source": "https://en.wikipedia.org/wiki/Gangtok"
+      },
+      {
+        "fact": "NH 10 runs from Siliguri via Sevoke, Melli, Rangpo, Majitar, Singtam and Ranipool to Gangtok.",
+        "source": "https://en.wikipedia.org/wiki/National_Highway_10_(India)"
+      },
+      {
+        "fact": "Ranipool is at the junction of NH 10 and NH 717A, and NH 310 towards Nathula begins there.",
+        "source": "https://en.wikipedia.org/wiki/Ranipool"
+      },
+      {
+        "fact": "Upper Tadong is a census town within the Gangtok Municipal Corporation; it had a population of 14,670 at the 2001 census.",
+        "source": "https://en.wikipedia.org/wiki/Upper_Tadong"
+      },
+      {
+        "fact": "Pakyong Airport, which serves Gangtok, was inaugurated on 24 September 2018.",
+        "source": "https://en.wikipedia.org/wiki/Pakyong_Airport"
+      },
+      {
+        "fact": "The nearest major railway station is New Jalpaiguri Junction in Siliguri.",
+        "source": "https://en.wikipedia.org/wiki/Gangtok"
+      },
+      {
+        "fact": "The Sivok-Rangpo railway line is under construction, with completion targeted for December 2027 and a later extension to Gangtok planned.",
+        "source": "https://en.wikipedia.org/wiki/Sivok%E2%80%93Rangpo_railway_line"
+      }
+    ],
+    "Syari, Chandmari & Tathangchen": [
+      {
+        "fact": "The city development plan notes several settlements growing along and off the Indira Bypass and on the eastern slope from Chandmari to Syari.",
+        "source": "https://web.archive.org/web/20110205091805/http://jnnurm.nic.in/nurmudweb/toolkit/GangtokCdp/Chapter-4.pdf"
+      },
+      {
+        "fact": "Areas below the Indira Bypass and the revenue blocks of Syari, Tathangchen, Chandmari and Bojoghari are identified as able to absorb some of Gangtok's growth.",
+        "source": "https://web.archive.org/web/20110205091805/http://jnnurm.nic.in/nurmudweb/toolkit/GangtokCdp/Chapter-4.pdf"
+      },
+      {
+        "fact": "Syari, on the eastern side of the ridge, has a large number of state and central government employee housing buildings; traffic enters it through Deorali junction.",
+        "source": "https://web.archive.org/web/20110205091805/http://jnnurm.nic.in/nurmudweb/toolkit/GangtokCdp/Chapter-4.pdf"
+      },
+      {
+        "fact": "The Indira Bypass is one of the major regional roads converging at or passing through Gangtok, along with the national highway, the North Sikkim Highway and JN Road.",
+        "source": "https://web.archive.org/web/20110205091805/http://jnnurm.nic.in/nurmudweb/toolkit/GangtokCdp/Chapter-4.pdf"
+      },
+      {
+        "fact": "Chandmari, Tathangchen and Deorali-Upper Syari are wards of the Gangtok Municipal Corporation.",
+        "source": "https://en.wikipedia.org/wiki/Gangtok_Municipal_Corporation"
+      }
+    ],
+    "Sichey, Burtuk & Bojoghari": [
+      {
+        "fact": "Upper Sichey, Lower Sichey, Burtuk and Bojoghari-2nd Mile are wards of the Gangtok Municipal Corporation.",
+        "source": "https://en.wikipedia.org/wiki/Gangtok_Municipal_Corporation"
+      },
+      {
+        "fact": "The Indira Bypass road passes through Middle Sichey.",
+        "source": "https://en.wikipedia.org/wiki/Sikkim_State_Election_Commission"
+      },
+      {
+        "fact": "Upper Sichey is predominantly residential and has the city's football stadium, the district courts and the district collectorate office.",
+        "source": "https://web.archive.org/web/20110205091805/http://jnnurm.nic.in/nurmudweb/toolkit/GangtokCdp/Chapter-4.pdf"
+      },
+      {
+        "fact": "The revenue blocks of Sicheygaon, Upper Sicheygaon, Burtuk and Upper Burtuk fall in the same assembly constituency of Gangtok district.",
+        "source": "https://en.wikipedia.org/wiki/Upper_Burtuk_Assembly_constituency"
+      },
+      {
+        "fact": "Bojoghari, Burtuk, Sichey and Lower Sichey were listed in the city development plan among suburban areas to be covered by water supply and sewerage.",
+        "source": "https://web.archive.org/web/20110205091805/http://jnnurm.nic.in/nurmudweb/toolkit/GangtokCdp/Chapter-4.pdf"
+      }
+    ]
+  },
+  "board_facts": {
+    "summary": "No official site checked names a Sikkim state school board. Gangtok's schools are affiliated with CBSE, CISCE (ICSE/ISC) or NIOS, and CBSE schools in Sikkim come under the CBSE Regional Office, Guwahati. No readable official Sikkim government page states that government schools are CBSE-affiliated, so pages should use only the general wording 'schools in Gangtok follow CBSE or CISCE (ICSE/ISC)' and send families to cbse.gov.in / cisce.org for specifics.",
+    "facts": [
+      {
+        "fact": "The CBSE Regional Office in Guwahati covers Assam, Nagaland, Manipur, Meghalaya, Tripura, Sikkim, Arunachal Pradesh and Mizoram.",
+        "source": "https://cbse.gov.in/cbsenew/RO.html"
+      },
+      {
+        "fact": "Gangtok's schools are run by the state government or by private and religious organisations, mainly use English and Nepali as the medium of instruction, and are affiliated with the Indian Certificate of Secondary Education (CISCE), the Central Board of Secondary Education or the National Institute of Open Schooling.",
+        "source": "https://en.wikipedia.org/wiki/Gangtok"
+      },
+      {
+        "fact": "Sikkim had 1,157 schools: 765 run by the state government, seven central government schools and 385 private schools (Governor's address, 2010).",
+        "source": "https://en.wikipedia.org/wiki/Sikkim"
+      }
+    ],
+    "not_confirmed": "The Education Department pages on sikkim.gov.in and education.sikkim.gov.in were read and contain no statement on board affiliation. Wikipedia's Sikkim article mentions a state-approved open-schooling board (BOSSE); this was not confirmed on an official government site and should not be named on pages."
+  }
+}

@@ -179,7 +179,7 @@ class BlogGurgaonClusterTest extends TestCase
         'guwahati-tuition-guide',
     ];
 
-    /** State capitals launched on 6 Oct 2026 (2026_10_06_180000_publish_capital_city_guides). */
+    /** State capitals launched on 6 Oct 2026 (2026_10_06_180000_publish_capital_city_guides) and 7 Oct 2026 (2026_10_07_130000_publish_capital_city_guides_2). */
     private const CAPITALS = [
         'home-tuition-fees-bhubaneswar', 'bhubaneswar-home-tuition-guide',
         'home-tuition-fees-raipur', 'raipur-home-tuition-guide',
@@ -189,6 +189,17 @@ class BlogGurgaonClusterTest extends TestCase
         'home-tuition-fees-jammu', 'jammu-home-tuition-guide',
         'home-tuition-fees-srinagar', 'srinagar-home-tuition-guide',
         'home-tuition-fees-puducherry', 'puducherry-home-tuition-guide',
+        'home-tuition-fees-shimla', 'shimla-home-tuition-guide',
+        'home-tuition-fees-panaji', 'panaji-home-tuition-guide',
+        'home-tuition-fees-shillong', 'shillong-home-tuition-guide',
+        'home-tuition-fees-imphal', 'imphal-home-tuition-guide',
+        'home-tuition-fees-agartala', 'agartala-home-tuition-guide',
+        'home-tuition-fees-gangtok', 'gangtok-home-tuition-guide',
+        'home-tuition-fees-aizawl', 'aizawl-home-tuition-guide',
+        'home-tuition-fees-kohima', 'kohima-home-tuition-guide',
+        'home-tuition-fees-itanagar', 'itanagar-home-tuition-guide',
+        'home-tuition-fees-port-blair', 'port-blair-home-tuition-guide',
+        'home-tuition-fees-leh', 'leh-home-tuition-guide',
     ];
 
     private function migration(): object

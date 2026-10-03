@@ -69,6 +69,25 @@ class Geo
         'srinagar'           => ['state' => 'Jammu and Kashmir','metro' => false, 'aka' => null,        'aliases' => []],
         // Puducherry has no jobs/states file: its state page keeps the template text.
         'puducherry'         => ['state' => 'Puducherry',       'metro' => false, 'aka' => 'Pondicherry','aliases' => ['pondicherry']],
+        // Eleven more capitals launched together on 7 Oct 2026. Only Himachal Pradesh and
+        // Goa have jobs/states files; the other nine state pages keep the template text.
+        // Locality names shared with older cities (Gangtok's "Development Area" and
+        // "Chandmari", Shillong's "Police Bazar", Leh's "Old Town") are zone names
+        // inside their own city, never aliases here.
+        'shimla'             => ['state' => 'Himachal Pradesh', 'metro' => false, 'aka' => null,        'aliases' => []],
+        'panaji'             => ['state' => 'Goa',              'metro' => false, 'aka' => 'Panjim',    'aliases' => ['panjim']],
+        'shillong'           => ['state' => 'Meghalaya',        'metro' => false, 'aka' => null,        'aliases' => []],
+        'imphal'             => ['state' => 'Manipur',          'metro' => false, 'aka' => null,        'aliases' => []],
+        'agartala'           => ['state' => 'Tripura',          'metro' => false, 'aka' => null,        'aliases' => []],
+        'gangtok'            => ['state' => 'Sikkim',           'metro' => false, 'aka' => null,        'aliases' => []],
+        'aizawl'             => ['state' => 'Mizoram',          'metro' => false, 'aka' => null,        'aliases' => []],
+        'kohima'             => ['state' => 'Nagaland',         'metro' => false, 'aka' => null,        'aliases' => []],
+        'itanagar'           => ['state' => 'Arunachal Pradesh','metro' => false, 'aka' => null,        'aliases' => ['naharlagun']],
+        // Renamed Sri Vijaya Puram on 13 Sep 2024 (PIB); the admin row and URL keep
+        // "Port Blair", which is still what most people type. The aka is the new name,
+        // so the hub H1 reads "Port Blair (Sri Vijaya Puram)", not "Port Blair (Port Blair)".
+        'port-blair'         => ['state' => 'Andaman and Nicobar Islands', 'metro' => false, 'aka' => 'Sri Vijaya Puram', 'display' => 'Sri Vijaya Puram (Port Blair)', 'aliases' => ['port blair', 'sri vijaya puram', 'sri vijayapuram', 'sri vijaya puram port blair']],
+        'leh'                => ['state' => 'Ladakh',           'metro' => false, 'aka' => null,        'aliases' => []],
     ];
 
     public const OTHER_STATE = 'Other cities';

@@ -1,0 +1,50 @@
+{
+  "North Agartala": {
+    "guide": "agartala-home-tuition-guide",
+    "intro": [
+      "Kunjaban, Indranagar and Abhoynagar make up the northern side of Agartala, where the plains of the Haora River give way to low hills. Kunjaban rises on a green hillock crowned by a palace built in 1917 that is now becoming a cultural museum, and the municipal corporation runs its North zone office from Kumari Tilla there. Indranagar is known for its Kali temple, and Abhoynagar, also written Abhaynagar, for a shrine from the late nineteenth century.",
+      "For home tuition, the three localities lean on one another. A tutor living in Indranagar can reach Abhoynagar easily, and one based in Kunjaban can cover both, with tutors from Krishnanagar and Banamalipur in the centre forming the next circle. The things to plan around are seasonal rather than daily: the Diwali fair at the Indranagar temple and the spring festival at Abhoynagar bring crowds to the local roads for a few days each year."
+    ],
+    "tips": [
+      "On the Kunjaban hill roads, send the tutor a landmark on the slope and a phone number, since homes can be hard to spot on a first visit.",
+      "In the week of the Diwali fair at Indranagar, move that lesson to an earlier hour or teach it online.",
+      "Abhoynagar families can also ask for tutors from central Krishnanagar, who can reach the north without a long trip."
+    ]
+  },
+  "Central Agartala": {
+    "guide": "agartala-home-tuition-guide",
+    "intro": [
+      "Krishnanagar, Ramnagar, Banamalipur, Joynagar and Melarmath form the core of Agartala. Krishnanagar, with Ujjayanta Palace on its western side, is one of the most densely populated parts of the city and holds a market every Tuesday and Friday. Ramnagar is an early planned neighbourhood laid out as a grid of about twelve numbered divisions. Joynagar sits beside Battala Bazaar, and Melarmath lies on the 2019 flyover linking Police Lines with Fire Brigade Chowmuhani.",
+      "Central homes are within reach of tutors from every zone, so the choice here is usually wide. The difficulty is congestion at certain hours: market evenings in Krishnanagar, the daily bustle around Battala Bazaar and office closing time on roads into the centre can all delay a tutor. Banamalipur, which shares a ward with Dimsagar, is a little calmer and links the centre with the eastern localities around Dhaleswar."
+    ],
+    "tips": [
+      "In Ramnagar, give the division number, such as Ramnagar No. 4, plus one landmark; that is usually enough for a new tutor.",
+      "In Krishnanagar, avoid starting lessons at market time on Tuesday and Friday evenings.",
+      "In Joynagar, point the tutor to a lane landmark rather than the bazaar, and plan the Durga Puja immersion days online."
+    ]
+  },
+  "East Agartala": {
+    "guide": "agartala-home-tuition-guide",
+    "intro": [
+      "Dhaleswar, Shibnagar and Jogendranagar make up the residential east of Agartala. Dhaleswar, also spelt Dhaleshwar, has several schools, its own post office and the corporation's East zone office at Ashram Chowmuhani. Shibnagar is split into two wards, Shibnagar and Paschim Shibnagar, and has a historic mosque as its landmark. Jogendranagar stretches over three wards with Aralia alongside and has its own railway station on the Lumding to Sabroom line.",
+      "This zone suits families who want a tutor from close by, because the localities run into one another from Banamalipur outwards: a tutor in Dhaleswar can reach Shibnagar, and one in Shibnagar can reach Jogendranagar. Most visits are by two-wheeler or auto. The local roads carry extra traffic at school opening and closing, so lessons placed later in the afternoon or in the early evening tend to start on time."
+    ],
+    "tips": [
+      "Use Ashram Chowmuhani or Math Chowmuhani as the reference point when sending directions in Dhaleswar.",
+      "In Jogendranagar, say whether you live in Jogendranagar, Uttar Jogendranagar or Purba Jogendranagar, and name a spot near Station Road.",
+      "Shibnagar families should state which of the two wards they are in, since the names cover separate areas."
+    ]
+  },
+  "South Agartala": {
+    "guide": "agartala-home-tuition-guide",
+    "intro": [
+      "Badharghat, Arundhutinagar and Pratapgarh make up the southern side of Agartala. Badharghat, also written Badarghat, covers two wards and is where the main Agartala railway station is listed; the corporation's South zone office is near the TV Centre. Arundhutinagar also spans two wards and is known for the oldest church in the city, from the 1930s. Pratapgarh reaches from Town Pratapgarh near Melarmath down to its Paschim and Purba wards.",
+      "Since the flyover from Police Lines to Fire Brigade Chowmuhani opened in 2019, the south has been easier for tutors living in the centre to reach, so families here can consider tutors in Melarmath and Krishnanagar as well as those in neighbouring southern wards. Around the station, traffic picks up when trains arrive and leave. Because every locality in this zone spans more than one ward, precise directions matter more than usual."
+    ],
+    "tips": [
+      "Near the station in Badharghat, leave the tutor some margin around train times when fixing the slot.",
+      "In Pratapgarh, say Town, Paschim or Purba Pratapgarh, because the three parts lie some way apart.",
+      "Arundhutinagar families should name their ward and a nearby landmark, and mention whether a flat needs a call at the gate."
+    ]
+  }
+}

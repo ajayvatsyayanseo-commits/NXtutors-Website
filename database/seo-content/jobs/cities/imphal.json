@@ -1,0 +1,86 @@
+{
+  "intro": [
+    "Tuition work in Imphal is organised into three zones. Uripok, Thangmeiband & Lamphel is the western side of Imphal West, with Langol and the district offices at Lamphelpat; Sagolband, Keishampat & Singjamei runs from Thangal Bazar and Paona Bazar, the city's trading centre, south through Sagolband, Keishampat and Kwakeithel to Singjamei; and Wangkhei, Khurai & Porompat lies across the river in Imphal East, with Chingmeirong and the district offices at Porompat. Most homes sit in close-set neighbourhoods called leikais, many sharing family names, so the working skill here is reading a leikai, a lane and a landmark. Most tutors get about by two-wheeler or auto.",
+    "Two state bodies set the school route in Manipur. The Board of Secondary Education, Manipur conducts the High School Leaving Certificate examination at Class 10 and publishes its results on its website. The Council of Higher Secondary Education, Manipur covers Classes 11 and 12: its site carries the curriculum and syllabus for both classes, guidelines for internal assessment, new question paper designs, previous question papers, the academic calendar and Class 12 results. Other Imphal students follow CBSE. Teach from those official documents rather than forwarded copies, and state clearly on your profile which boards, classes and streams you take.",
+    "Over a school year in Imphal, home and online teaching tend to work side by side. Some families move a lesson online on days of heavy monsoon rain, and board-year students may ask for extra sessions as their examinations approach. Take a request from Keishampat: NXTutors draws up two or three names, looking first at tutors in Keishampat itself, next across the Sagolband, Keishampat & Singjamei zone, then wider Imphal, and online last. Parents read each fee before the free first demo and can later change tutor without paying. Because online learners may live anywhere in India, your work need not stop at the homes you can ride to."
+  ],
+  "zone_notes": {
+    "Uripok, Thangmeiband & Lamphel": "Homes in Uripok and Langol sit across many small leikais with inner lanes that suit a two-wheeler better than a car, so ask each family for the leikai and a landmark before the first visit. Thangmeiband is known for its schools, so say clearly on your profile whether you take Class 10 and Class 12 board-year students. Around Lamphelpat, the Imphal West district headquarters, roads fill when offices open and close, and some homes sit inside gated campuses where the guard needs your name.",
+    "Sagolband, Keishampat & Singjamei": "Thangal Bazar and Paona Bazar are the busiest streets in Imphal during shopping hours, so homes on the lanes behind the shops suit early weekend mornings or evenings after trading quietens. Further south, Sagolband, Keishampat, Kwakeithel and Singjamei are dense leikais where names such as Thokchom Leikai appear in more than one locality, so confirm the locality as well as the leikai. Singjamei and Chingamakha form one catchment that a single tutor can easily cover.",
+    "Wangkhei, Khurai & Porompat": "This zone lies east of the river in Imphal East, so tutors living on the western side cross by the central bridges, which are busy in the late afternoon; living east of the river makes after-school slots easier to keep. Porompat holds the Imphal East district offices and Chingmeirong has several schools, so avoid office and school opening and closing times. Khurai covers many separate leikais, and Chingmeirong splits into Nongchup and Nongpok: check which part before you set off."
+  },
+  "boards": "Imphal tutors teach students of the Board of Secondary Education, Manipur, which conducts the High School Leaving Certificate examination at Class 10, and of the Council of Higher Secondary Education, Manipur, which publishes the curriculum, syllabus, question paper designs, internal assessment guidelines and previous papers for Classes 11 and 12. Other families follow CBSE, working from NCERT books. Read patterns, notices and calendars only on each body's official website, and use the CBSE academic site for CBSE material. Your profile should say which boards, classes and streams you teach.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Board of Secondary Education, Manipur (BOSEM) and Council of Higher Secondary Education, Manipur (COHSEM)",
+      "site": "https://bosem.in/",
+      "classes": "HSLC (Class 10, BOSEM); Classes 11–12 (COHSEM)",
+      "note": "Two bodies share the state route. BOSEM conducts the High School Leaving Certificate examination at Class 10 and posts its results on bosem.in. COHSEM (cohsem.nic.in) publishes the curriculum and syllabus for Classes 11 and 12, internal assessment guidelines, new question paper designs, previous question papers and the academic calendar. Take patterns and dates only from those two official sites.",
+      "page": "/manipur-board-tutor-imphal"
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "CBSE students in Imphal can live in any leikai, next door to a state-board family, so your area list matters more than the board. Build lessons on the NCERT textbooks, practise with the sample papers and marking schemes on the CBSE academic site, and keep Class 10 and Class 12 students on a steady weekly rhythm through the year.",
+      "page": "/cbse-home-tutor-imphal"
+    }
+  ],
+  "women": {
+    "intro": "Women who teach in Imphal can work at home, online or in a hybrid pattern on NXTutors, and the profile is where those limits are set. Pick the localities you are willing to visit and the hours you want to show. Someone based in Uripok could restrict home visits to the western leikais and Lamphel; someone in Khurai might stay east of the river and teach the rest online. The same ID check applies to every tutor who registers, a parent is asked to be at home for the demo, and our safeguarding policy protects both sides. These are controls, not promises about any person.",
+    "points": [
+      "Switch between home, online and hybrid teaching from your profile at any time.",
+      "Name only the localities you will visit, even if that means one side of the river.",
+      "Publish the hours that suit you, and teach online on heavy-rain days whenever you choose.",
+      "Every new student starts with a free demo, and we ask a parent to be at home for it.",
+      "Settle the fee, the timetable and any messages with the parent rather than the child.",
+      "With younger children, sit in a common room while an adult is in the house; online, cameras stay on.",
+      "Registration needs a one-time code sent to your phone or email, plus a government photo ID for the team to review.",
+      "Uneasy during a lesson? End it and send NXTutors a report marked Safeguarding; for an emergency, dial 112 before anything else."
+    ]
+  },
+  "story": [
+    "Sign up from a phone. A one-time code confirms your number or email, and then you fill in subjects, classes, boards like BOSEM, COHSEM or CBSE, and the parts of Imphal you can travel to.",
+    "Add a government photo ID next. Our team looks at it before any family sees you, and one ID can sit on only one tutor account. This proves identity only; it is not a police or background check.",
+    "Once that review is through, families can see your boards, the leikais you cover anywhere from Uripok to Porompat, your choice of home, online or both, and your own fee.",
+    "Picture a parent in Sagolband or Wangkhei asking for help. NXTutors lists two or three tutors, looking at that locality first, then its zone, then wider Imphal, then online teachers.",
+    "Your fee is visible to the family before they book. The opening class is a free demo in the student's home with a parent asked to be in, so you learn the lane, the child and the timing.",
+    "After the demo, you might keep home visits for nearby leikais, teach online learners from any part of India, or combine both, switching to a screen on days of heavy monsoon rain."
+  ],
+  "faqs": [
+    [
+      "How do tuition requests in Imphal reach tutors?",
+      "A parent fills in the class, board, subjects, locality with its leikai and a landmark, and the mode wanted: home, online or both. NXTutors then shortlists two or three tutors, checking the same locality first, then its zone, then the rest of Imphal, then online. Your listed localities and boards decide whether you are considered."
+    ],
+    [
+      "Can I teach students outside Manipur online while living in Imphal?",
+      "Yes. Online classes are open to learners anywhere in India, so home students near your leikai and online students further away can sit side by side in your week. Nearby profiles come first for home requests; for online requests, where the family lives does not limit the match."
+    ],
+    [
+      "Which Imphal localities should I list on my profile?",
+      "List the places you can reliably reach on time, week after week. Someone living in Keishampat could cover Kwakeithel, Sagolband and Singjamei; someone in Wangkhei might stick to Khurai and Chingmeirong. Factor in the late-afternoon river crossing, because a shorter list you always honour beats a long one."
+    ],
+    [
+      "What does the ID check involve?",
+      "First a one-time code to your phone or email, then a government photo ID, which our team checks before families can find you. It establishes who you are and nothing more; there is no police or background check. Each step is described on /how-we-verify-tutors."
+    ],
+    [
+      "Do I pay to join NXTutors as a tutor in Imphal?",
+      "Yes. Tutor plans carry a charge, listed with their features on /pricing. Your lesson fee is a separate matter: you decide it, and parents read it on your profile before their free first demo. Since a family may change tutor without paying anything, regular, careful teaching is what keeps a student."
+    ],
+    [
+      "Can a woman tutor in Imphal take home lessons only near her own locality?",
+      "Yes. Home requests only come from the localities you list, so a tutor could keep visits to the leikais around Thangmeiband, or around Khurai, and take everyone else online. A parent is asked to be at home for the free demo, giving you a chance to meet the family first."
+    ],
+    [
+      "Which boards can I teach in Imphal?",
+      "Students here follow the Board of Secondary Education, Manipur for the Class 10 HSLC examination, the Council of Higher Secondary Education, Manipur for Classes 11 and 12, or CBSE. List your boards, classes and streams, and work from the syllabus and question paper designs on the council's official website."
+    ],
+    [
+      "Can I mix home and online classes with one Imphal family?",
+      "Yes. Tick both modes on your profile and settle the pattern with the parent once the demo is done. A common arrangement is regular visits during term with a switch to a screen when monsoon rain is heavy, which keeps the timetable unbroken for the student."
+    ]
+  ]
+}

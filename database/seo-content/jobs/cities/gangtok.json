@@ -1,0 +1,100 @@
+{
+  "intro": [
+    "Gangtok is a hill city that grew along its arterial roads, and NXTutors splits it into four zones. Central Gangtok & Tibet Road is the old core of market wards and multi-storey flats. Deorali, Tadong & Ranipool follows the national highway south towards the junction town on the Ranikhola. Syari, Chandmari & Tathangchen lies on the eastern slope, with a lot of government staff housing in Syari. Sichey, Burtuk & Bojoghari runs along the bypass road. There is no railway or metro, so tutors travel by shared taxi, on a two-wheeler or on foot, and many homes sit above or below the road, reached by steps.",
+    "Schools in Gangtok follow CBSE or CISCE, so a tutor here works either with CBSE syllabuses and NCERT books or with the ICSE and ISC papers set by CISCE. CBSE schools in Sikkim come under the board's Guwahati regional office. If a family mentions any other board, ask which body sets the school's examinations and read that body's official site before the first lesson. IB and Cambridge or Pearson IGCSE teaching from Gangtok is likely to be online work for students in other cities, and that is a real option for a specialist living here.",
+    "When a parent in Tadong or Syari sends a request, NXTutors shortlists two or three tutors, looking first at tutors who live in that locality, then at those who travel there, then across the zone and the city, and finally at online tutors. The family sees each tutor's fee before a free first demo, and switching later is free for them. Steep roads and evening traffic at Deorali junction or on the central streets make short trips valuable, so list the localities you can reach comfortably. In heavy monsoon rain, an online lesson can stand in for a home visit."
+  ],
+  "zone_notes": {
+    "Central Gangtok & Tibet Road": "Development Area, Arithang, Tibet Road and Pani House sit close together, so one tutor can often teach two or three children in an evening by walking or taking a shared taxi between them. Homes are mostly flats in four- or five-storey buildings, often above shops or below the road, so ask for the building name, floor and a shop landmark. Market crowds peak in the evenings and holiday seasons; keep that in mind when you agree a start time.",
+    "Deorali, Tadong & Ranipool": "This zone strings along the national highway, where shared taxis and buses run often, so a tutor on the highway can reach homes up and down the belt. Deorali junction and the Daragaon bazaar stretch in Tadong slow evening traffic, so tutors living on the family's side of them keep lessons regular. New buildings keep going up here; ask for a junction or mile landmark as well as the building name before your first visit.",
+    "Syari, Chandmari & Tathangchen": "Syari has many government staff housing colonies, where you will usually give your name at the entrance or call the family, so ask for the block and quarter number in advance. Chandmari and Tathangchen are reached along the bypass road, and many homes there lie down steps or footpaths from the nearest taxi point. A tutor living on this eastern slope can cover all three without crossing Deorali junction at the evening peak.",
+    "Sichey, Burtuk & Bojoghari": "The bypass road runs through Middle Sichey and links this zone with Chandmari and Tathangchen, so tutors along that road can cover Sichey, Burtuk and Bojoghari together. The bypass is busiest at office hours, so a lesson starting before or after the rush is easier to keep. The football stadium and district offices in Upper Sichey make handy meeting landmarks, and many houses are reached by steps above or below the road."
+  },
+  "boards": "Gangtok's schools follow CBSE or CISCE, so tutoring work here means CBSE from Class 1 to 12, or ICSE at Class 10 and ISC at Class 12. Read CBSE sample papers, marking schemes and curriculum documents on cbseacademic.nic.in and ICSE and ISC regulations and specimen papers on cisce.org, because forwarded copies go out of date. If you also teach IB or IGCSE, expect that work to be online, and state on your profile exactly which boards and classes you cover.",
+  "board_cards": [
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "CBSE is one of the two boards Gangtok's schools follow, and CBSE schools in Sikkim come under its Guwahati regional office. Build lessons on NCERT textbooks, practise against CBSE sample papers and marking schemes, and in Classes 10 and 12 time full papers. Arrange evening lessons around Deorali junction and the central streets at peak hours.",
+      "page": "/cbse-home-tutor-gangtok"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "Some Gangtok schools follow CISCE, so you may teach ICSE students in Class 10 and ISC students in Class 12. These papers ask for long, precise written answers across a wide syllabus, and English includes set literature texts. Take regulations and specimen papers from cisce.org, and offer ISC electives online if no family nearby needs them."
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "IB teaching from Gangtok will mostly be online, for students in other cities or families who have moved here mid-course. The Diploma assesses coursework alongside final papers, and a tutor may guide an Internal Assessment or Extended Essay against the criteria but never write it. Use the subject guides published on ibo.org."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "Treat IGCSE as online work from Gangtok unless a local family asks. Lessons depend on timed past papers marked against the official mark schemes, on what each command word demands, and on the right tier. Ask first whether the school uses Cambridge or Pearson Edexcel, since the syllabuses differ; Cambridge's are on cambridgeinternational.org."
+    }
+  ],
+  "women": {
+    "intro": "Women tutors in Gangtok are welcome to join NXTutors for home visits, online lessons or a mix of both. You choose where you travel: a tutor in Tadong might keep to the highway belt between Deorali and Ranipool, one in Sichey to the bypass road, and students further away can learn with you online. Many homes here are flats or houses reached by steps from the road, so ask for clear directions before a first visit. Everyone who joins faces an identical ID check, a parent is asked to be home for the demo, and the safeguarding policy applies to families and tutors equally.",
+    "points": [
+      "Pick home visits, online teaching or hybrid when you build your profile, and switch modes later if your plans change.",
+      "Name only the localities you are happy to visit, such as the central wards, and leave out trips across Deorali junction late in the day.",
+      "Every new family starts with a free demo; we ask a parent to be at home for the demo.",
+      "Before a first visit to a Syari housing colony or a large building, ask the family to leave your name at the entrance.",
+      "Settle fees, lesson times and messages with the parent rather than the child alone.",
+      "With younger children, teach where another adult in the house can see you, and on screen keep your camera switched on.",
+      "On days of heavy monsoon rain, agree with the family to move the lesson online.",
+      "If something feels wrong, end the lesson and tell NXTutors, marking your message Safeguarding; in an emergency, ring 112 before anything else."
+    ]
+  },
+  "story": [
+    "Register by entering the one-time code NXTutors sends to your phone or email. Then list what you teach, CBSE or ICSE and ISC, which classes, and the Gangtok localities within your reach.",
+    "Upload a government photo ID for our team to review before your profile appears in any Gangtok shortlist. The check confirms who you are and nothing more; it is not a police or background check.",
+    "After the review, your profile goes live with the Verified badge, showing your boards, the localities you cover from Arithang to Ranipool, whether you teach in homes or on screen, and your fee.",
+    "A parent in Chandmari or Tadong asks for a tutor. The shortlist of two or three starts with tutors living closest, then those who travel there, then the zone, the city and online.",
+    "Your fee is on view before the family books. The first lesson is a free demo in their home with a parent asked to be in, which lets you judge the student and the route.",
+    "From there, teach in homes on your list, online to learners elsewhere in India, or a blend, perhaps visits on dry days and screen lessons through the wettest monsoon weeks."
+  ],
+  "faqs": [
+    [
+      "How do tuition requests in Gangtok reach tutors?",
+      "Through a family's request, which gives the class, board, subjects, locality and a landmark. NXTutors answers it with two or three names, looking at tutors resident in that locality before those who visit it, then widening to the zone, Gangtok as a whole and online. Accurate localities and boards on your profile matter."
+    ],
+    [
+      "Which boards will I teach as a tutor in Gangtok?",
+      "CBSE, and ICSE or ISC for students in CISCE schools, since Gangtok's schools follow one of those two boards. IB and IGCSE work is likely to be online, for students in other cities. If a family names another board, check that board's official site. List every board and class you can teach on your profile."
+    ],
+    [
+      "Which Gangtok localities should I add to my profile?",
+      "Only the ones you can reach regularly at lesson time. A tutor in Tadong may cover Deorali and Ranipool along the highway, while one in Sichey may keep to Burtuk and Bojoghari on the bypass road. On steep roads and around busy junctions, a short and accurate list serves you far more than a long one."
+    ],
+    [
+      "Can I teach students outside Sikkim online from Gangtok?",
+      "Yes. Online teaching through NXTutors is not tied to your city, so you can visit homes near you on some days and teach learners in other states by video on others. Families wanting home tuition see nearby tutors first, while a family that opts for online lessons can be matched with you from anywhere."
+    ],
+    [
+      "What does the ID check involve for tutors?",
+      "Two steps. You confirm your phone number or email with a one-time code, then upload a government photo ID that the team looks at before your profile goes live. Tutors who clear it carry a Verified badge. The check is about identity only, never a police or background check; /how-we-verify-tutors explains it."
+    ],
+    [
+      "Where can I see tutor plans and what they include?",
+      "On /pricing, which lists the tutor plans and what each one includes. Plans are paid. Your lesson fee is separate and set by you; families see it before their free first demo, and if a family later switches to another tutor, it costs them nothing."
+    ],
+    [
+      "Can a woman tutor in Gangtok take home lessons only close to where she lives?",
+      "Yes. Home requests follow the localities you list, so you could visit homes only in the central wards or only along the bypass road and teach every other student online. Each new family meets you first at a free demo, and a parent is asked to be home for it."
+    ],
+    [
+      "Can one Gangtok family have both home and online lessons with me?",
+      "Yes. Tick both modes on your profile and settle the mix with the parent once the demo is over. One weekly visit plus screen lessons on other days works well here, and it also covers days of heavy monsoon rain, when travel on the hillside roads takes longer."
+    ]
+  ]
+}

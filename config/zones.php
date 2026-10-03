@@ -983,4 +983,204 @@ return [
             'names' => ['reddiarpalayam', 'saram', 'thattanchavady', 'villianur'],
         ],
     ],
+    // Eleven capitals (7 Oct 2026 launch). Names are stored the way Zones::of compares them:
+    // lower case, punctuation dropped, diacritics kept (Kohima's "Bayavü" also listed as "bayavu";
+    // "Officers' Hill" becomes "officers hill"). Port Blair's key is its Geo display name.
+    // Shimla (7 Oct 2026, capital launch), from database/seo-content/areas/shimla-research.json.
+    'Shimla' => [
+        'Ridge, Lakkar Bazar & Jakhu' => [
+            'sectors' => [],
+            'names' => ['lakkar bazar', 'lakkar bazaar', 'jakhu', 'bharari', 'the ridge'],
+        ],
+        'Sanjauli & Dhalli' => [
+            'sectors' => [],
+            'names' => ['sanjauli', 'dhalli', 'bhattakufar'],
+        ],
+        'Chhota Shimla, Kasumpti & New Shimla' => [
+            'sectors' => [],
+            'names' => ['chhota shimla', 'kasumpti', 'panthaghati', 'new shimla', 'vikasnagar', 'vikas nagar', 'khalini'],
+        ],
+        'Boileauganj, Summer Hill & Totu' => [
+            'sectors' => [],
+            'names' => ['boileauganj', 'summer hill', 'totu', 'tutikandi'],
+        ],
+    ],
+    // Panaji (7 Oct 2026, capital launch), from database/seo-content/areas/panaji-research.json.
+    'Panaji' => [
+        'Central Panaji & Altinho' => [
+            'sectors' => [],
+            'names' => ['fontainhas', 'altinho', 'campal', 'st inez'],
+        ],
+        'Miramar, Dona Paula & Taleigao' => [
+            'sectors' => [],
+            'names' => ['miramar', 'caranzalem', 'dona paula', 'taleigao'],
+        ],
+        'Santa Cruz, Merces & Ribandar' => [
+            'sectors' => [],
+            'names' => ['santa cruz', 'merces', 'bambolim', 'ribandar'],
+        ],
+        'Porvorim & North Bank' => [
+            'sectors' => [],
+            'names' => ['porvorim', 'socorro', 'penha de franca'],
+        ],
+    ],
+    // Shillong (7 Oct 2026, capital launch), from database/seo-content/areas/shillong-research.json.
+    'Shillong' => [
+        'Police Bazar & Jaiaw' => [
+            'sectors' => [],
+            'names' => ['police bazar', 'police bazaar', 'jaiaw', 'mawkhar', 'mawprem'],
+        ],
+        'Laban & Upper Shillong' => [
+            'sectors' => [],
+            'names' => ['laban', 'lawsohtun', 'upper shillong'],
+        ],
+        'Laitumkhrah & Rynjah' => [
+            'sectors' => [],
+            'names' => ['laitumkhrah', 'malki', 'nongthymmai', 'rynjah', 'umpling', 'madanrting'],
+        ],
+        'Mawlai & Pynthorumkhrah' => [
+            'sectors' => [],
+            'names' => ['mawlai', 'pynthorumkhrah', 'nongmynsong'],
+        ],
+    ],
+    // Imphal (7 Oct 2026, capital launch), from database/seo-content/areas/imphal-research.json.
+    'Imphal' => [
+        'Uripok, Thangmeiband & Lamphel' => [
+            'sectors' => [],
+            'names' => ['uripok', 'thangmeiband', 'langol', 'lamphel', 'lamphelpat'],
+        ],
+        'Sagolband, Keishampat & Singjamei' => [
+            'sectors' => [],
+            'names' => ['sagolband', 'keishampat', 'kwakeithel', 'singjamei', 'thangal bazar', 'paona bazar'],
+        ],
+        'Wangkhei, Khurai & Porompat' => [
+            'sectors' => [],
+            'names' => ['wangkhei', 'khurai', 'porompat', 'chingmeirong'],
+        ],
+    ],
+    // Agartala (7 Oct 2026, capital launch), from database/seo-content/areas/agartala-research.json.
+    'Agartala' => [
+        'North Agartala' => [
+            'sectors' => [],
+            'names' => ['kunjaban', 'indranagar', 'abhoynagar'],
+        ],
+        'Central Agartala' => [
+            'sectors' => [],
+            'names' => ['krishnanagar', 'ramnagar', 'banamalipur', 'joynagar', 'melarmath'],
+        ],
+        'East Agartala' => [
+            'sectors' => [],
+            'names' => ['dhaleswar', 'shibnagar', 'jogendranagar'],
+        ],
+        'South Agartala' => [
+            'sectors' => [],
+            'names' => ['badharghat', 'arundhutinagar', 'pratapgarh'],
+        ],
+    ],
+    // Gangtok (7 Oct 2026, capital launch), from database/seo-content/areas/gangtok-research.json.
+    'Gangtok' => [
+        'Central Gangtok & Tibet Road' => [
+            'sectors' => [],
+            'names' => ['development area', 'arithang', 'tibet road', 'pani house'],
+        ],
+        'Deorali, Tadong & Ranipool' => [
+            'sectors' => [],
+            'names' => ['deorali', 'tadong', 'ranipool'],
+        ],
+        'Syari, Chandmari & Tathangchen' => [
+            'sectors' => [],
+            'names' => ['syari', 'chandmari', 'tathangchen'],
+        ],
+        'Sichey, Burtuk & Bojoghari' => [
+            'sectors' => [],
+            'names' => ['sichey', 'burtuk', 'bojoghari'],
+        ],
+    ],
+    // Aizawl (7 Oct 2026, capital launch), from database/seo-content/areas/aizawl-research.json.
+    'Aizawl' => [
+        'Durtlang, Chaltlang & Bawngkawn' => [
+            'sectors' => [],
+            'names' => ['durtlang', 'chaltlang', 'bawngkawn', 'ramhlun', 'zemabawk'],
+        ],
+        'Chanmari, Zarkawt & Dawrpui' => [
+            'sectors' => [],
+            'names' => ['chanmari', 'zarkawt', 'dawrpui'],
+        ],
+        'Tuikual, Vaivakawn & Luangmual' => [
+            'sectors' => [],
+            'names' => ['tuikual', 'vaivakawn', 'luangmual', 'tanhril'],
+        ],
+        'Khatla, Mission Veng & Kulikawn' => [
+            'sectors' => [],
+            'names' => ['khatla', 'mission veng', 'bethlehem', 'kulikawn'],
+        ],
+    ],
+    // Kohima (7 Oct 2026, capital launch), from database/seo-content/areas/kohima-research.json.
+    'Kohima' => [
+        'North Kohima & Kohima Village' => [
+            'sectors' => [],
+            'names' => ['kohima village', 'bara basti', 'kewhira', 'peraciezie', 'bayavü', 'bayavu', 'naga bazaar', 'naga bazar', 'kitsübozou', 'kitsubozou'],
+        ],
+        'Main Town & Midland' => [
+            'sectors' => [],
+            'names' => ['daklane', 'new market', 'midland', 'officers hill', 'officer hill', 'thegabakha'],
+        ],
+        'Chandmari & PR Hill' => [
+            'sectors' => [],
+            'names' => ['upper chandmari', 'lower chandmari', 'chandmari', 'pr hill'],
+        ],
+        'Lerie & Agri Farm' => [
+            'sectors' => [],
+            'names' => ['lerie', 'agri farm', 'merhülietsa', 'merhulietsa'],
+        ],
+    ],
+    // Itanagar (7 Oct 2026, capital launch), from database/seo-content/areas/itanagar-research.json.
+    'Itanagar' => [
+        'Itanagar North (Chimpu & Ganga)' => [
+            'sectors' => [],
+            'names' => ['chimpu', 'chandranagar', 'vivek vihar', 'ganga market'],
+        ],
+        'Central Itanagar' => [
+            'sectors' => [],
+            'names' => ['niti vihar', 'bank tinali', 'e sector', 'c sector', 'zero point', 'p sector'],
+        ],
+        'Naharlagun & Papu Nallah' => [
+            'sectors' => [],
+            'names' => ['papu nallah', 'barapani', 'polo colony', 'naharlagun'],
+        ],
+        'Nirjuli, Banderdewa & Doimukh' => [
+            'sectors' => [],
+            'names' => ['nirjuli', 'banderdewa', 'doimukh'],
+        ],
+    ],
+    // Sri Vijaya Puram (Port Blair) (7 Oct 2026, capital launch), from database/seo-content/areas/port-blair-research.json.
+    'Sri Vijaya Puram (Port Blair)' => [
+        'Aberdeen & Old Town' => [
+            'sectors' => [],
+            'names' => ['aberdeen', 'phoenix bay', 'haddo'],
+        ],
+        'Junglighat & Central Localities' => [
+            'sectors' => [],
+            'names' => ['delanipur', 'junglighat', 'school line', 'dairy farm', 'bathubasti', 'bathu basti'],
+        ],
+        'Expansion Villages' => [
+            'sectors' => [],
+            'names' => ['dollygunj', 'garacharma', 'prothrapur', 'brookshabad', 'austinabad'],
+        ],
+    ],
+    // Leh (7 Oct 2026, capital launch), from database/seo-content/areas/leh-research.json.
+    'Leh' => [
+        'Leh Town Centre' => [
+            'sectors' => [],
+            'names' => ['main bazaar', 'main bazar', 'old town', 'housing colony', 'changspa', 'sankar'],
+        ],
+        'Choglamsar, Spituk & West' => [
+            'sectors' => [],
+            'names' => ['choglamsar', 'saboo', 'spituk', 'phyang'],
+        ],
+        'Indus Valley South & East' => [
+            'sectors' => [],
+            'names' => ['stok', 'chuchot', 'shey', 'thiksey'],
+        ],
+    ],
 ];

@@ -1,0 +1,50 @@
+{
+  "North Kohima & Kohima Village": {
+    "guide": "kohima-home-tuition-guide",
+    "intro": [
+      "Kohima Village, Kitsübozou, Peraciezie, Bayavü Hill and Naga Bazaar make up the northern side of Kohima. Kohima Village, also known as Kewhira, is the original settlement that gave the city its name and is run by its own village council. Peraciezie is Ward No. 1 of the municipal council, Bayavü Hill is home to the Nagaland Board of School Education office at its upper end, and Naga Bazaar is split into upper and lower parts.",
+      "For tuition, this zone runs most smoothly with a tutor who lives in it. Kitsübozou and Kohima Village sit side by side, and Naga Bazaar connects Peraciezie and Bayavü Hill with the centre, so short trips between neighbouring wards are easy to keep up every week. Homes are spread across the slope, often above or below the road, and a tutor travelling from the southern wards has to pass through the busy town centre first."
+    ],
+    "tips": [
+      "In Kohima Village, tell the tutor the nearest point a taxi can reach as well as a landmark, because many homes are a walk from the road.",
+      "Say whether you live in the upper or lower part of Naga Bazaar or Bayavü Hill, so the first visit starts at the right level.",
+      "If the tutor lives in the southern wards, choose a slot after the evening office rush in the centre has eased."
+    ]
+  },
+  "Main Town & Midland": {
+    "guide": "kohima-home-tuition-guide",
+    "intro": [
+      "Daklane, New Market, Midland and Officers' Hill form the central wards of Kohima. Daklane is Ward No. 7 and New Market Ward No. 8, the stretch most routes across the town pass through. Midland, incorporated in 1970, has three parts: Upper, Middle and Lower Midland. Officers' Hill, officially Thegabakha, lies on the western side of the centre, between Midland and the PR Hill and Merhülietsa side of town.",
+      "Because these wards sit in the middle, tutors can reach them from almost any direction, and families here usually have the widest choice of home tutors. The difficulty is timing rather than access. Roads around the market are busiest when offices open and close, and parking on the central roads can be tight, so the hour of the lesson matters more here than the distance the tutor has to travel."
+    ],
+    "tips": [
+      "Start lessons after the evening office peak, when the roads around New Market and Daklane have cleared.",
+      "In Midland, say whether the home is in Upper, Middle or Lower Midland; the name alone covers three neighbourhoods.",
+      "On Officers' Hill, tell the tutor where a two-wheeler can be parked and which steps or gate lead to the house."
+    ]
+  },
+  "Chandmari & PR Hill": {
+    "guide": "kohima-home-tuition-guide",
+    "intro": [
+      "Upper Chandmari, Lower Chandmari and PR Hill sit on the southern side of central Kohima. Upper Chandmari is Ward No. 12 and Lower Chandmari Ward No. 13, two separate wards whose similar names are easily mixed up. PR Hill, short for P.R. Hill, shares Ward No. 19 with Lower PR Hill and one adjoining neighbourhood, and the Capital Cultural Centre there gives taxi drivers a clear reference point.",
+      "This is a compact zone, so a tutor living in one of the Chandmari wards, PR Hill or nearby Midland can usually reach any home in it for a weekly lesson. Upper Chandmari and Lower PR Hill have schools of their own, so demand runs from primary classes to board years. Board-year students often add sessions as the exams approach, which is easier when a regular slot is already fixed."
+    ],
+    "tips": [
+      "Always write Upper or Lower Chandmari in full, with a landmark, so the tutor goes to the right ward first time.",
+      "Share the stop where a taxi can drop off and whether there is room for a scooter near the house.",
+      "Fix the board-year timetable early in the session, so extra sessions before the HSLC, HSSLC or CBSE papers fit around it."
+    ]
+  },
+  "Lerie & Agri Farm": {
+    "guide": "kohima-home-tuition-guide",
+    "intro": [
+      "Lerie, Agri Farm and Merhülietsa form the southern and western edge of Kohima. Lerie is grouped in the ward list with New Ministers' Hill, where the Kohima Botanical Garden is, and New Reserve. Agri Farm, Ward No. 17, also covers Upper Mediezie, known as Upper Agri, and the Electrical and Forest neighbourhoods. Merhülietsa, Ward No. 18, includes Lower Mediezie, or Lower Agri, and sits beside Agri Farm and Officers' Hill.",
+      "Sitting at the far end of town, this zone depends most on where the tutor lives. Tutors from Agri Farm, PR Hill or the Chandmari wards are the practical choice for weekly home visits. A tutor from the northern wards would cross the whole town and the busy centre, so that kind of match usually works better with weekend or later evening sessions, or with some lessons held online."
+    ],
+    "tips": [
+      "Give the small neighbourhood name as well as the ward, for example Upper Agri or Lower Agri, so the tutor is not searching between them.",
+      "Ask for a tutor from Agri Farm, PR Hill or Chandmari first; a nearby tutor is far easier to keep through the year.",
+      "Keep one weekly lesson online during the June to September rains, when travel across the hillside is slowest."
+    ]
+  }
+}

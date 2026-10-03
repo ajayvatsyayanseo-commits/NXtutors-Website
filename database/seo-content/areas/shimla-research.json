@@ -1,0 +1,281 @@
+{
+  "areas": {
+    "lakkar-bazar": {
+      "name": "Lakkar Bazar",
+      "zone": "Ridge, Lakkar Bazar & Jakhu",
+      "type": "mixed",
+      "about": "<p>Lakkar Bazar is the old market that runs off the eastern end of the Ridge, right in the middle of Shimla, and it is known for its wooden crafts and gift shops. Homes here are mostly older hillside buildings above and behind the shopfronts, and new housing is limited because the area is compact and already built up. Jakhu, Bharari, the Mall Road and Lower Bazaar are its neighbours.</p><p>Most of central Shimla can be reached on foot from Lakkar Bazar, and cars are not allowed on the Mall Road above it, so a tutor who lives in the central wards often walks to the lesson. Tutors coming from other parts of the city usually leave their vehicle lower down and finish the trip on foot, so share the nearest landmark and the stairway or lane that leads to the home. The market is busiest in the evenings and during the tourist season, which makes a fixed afternoon or early-evening slot easier. Allow extra time in heavy rain or snow, and use online classes when the right subject specialist lives across the city. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_Ridge,_Shimla",
+        "https://www.squareyards.com/lakkar-bazar-in-shimla-overview-51777",
+        "https://en.wikipedia.org/wiki/Mall_Road,_Shimla"
+      ]
+    },
+    "jakhu": {
+      "name": "Jakhu",
+      "zone": "Ridge, Lakkar Bazar & Jakhu",
+      "type": "residential",
+      "about": "<p>Jakhu takes its name from Jakhu Hill, the highest peak in Shimla, which rises above the Ridge and is crowned by the Hanuman temple. The Jakhu ward of the Shimla Municipal Corporation covers the homes on the slopes below the summit, between the Ridge and Lakkar Bazar on one side and Sanjauli, which sits below the hill on the other. Homes sit on the hillside below the forested summit, and the slopes are steep.</p><p>The temple can be reached on foot, by taxi or by the Jakhu ropeway, which opened in 2017 and links a point near the city centre to the summit, but family homes are usually reached by the hill roads and footpaths. Tutors from Lakkar Bazar, Bharari or Sanjauli are the most practical match, since they already know the lanes. Give the tutor a clear landmark and say whether the last stretch is on foot. Weekend and festival crowds head up to the temple, especially around Dussehra, so weekday slots tend to run more smoothly, and allow extra time when it rains or snows. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jakhoo",
+        "https://en.wikipedia.org/wiki/Shimla",
+        "https://en.wikipedia.org/wiki/Sanjauli",
+        "https://en.wikipedia.org/wiki/Shimla_Municipal_Corporation"
+      ]
+    },
+    "bharari": {
+      "name": "Bharari",
+      "zone": "Ridge, Lakkar Bazar & Jakhu",
+      "type": "residential",
+      "about": "<p>Bharari is a residential area of central Shimla and ward number one of the Shimla Municipal Corporation, within the Shimla Urban assembly seat. Property listings here include flats, builder floors and independent houses, and newer apartment buildings stand alongside older homes on the slopes. It lies close to the Mall Road and Lakkar Bazar, with Sanjauli and Lalpani among the other nearby localities, and the Auckland Tunnel is a local reference point.</p><p>Because it is so close to the city centre, Bharari is within reach of tutors who live in the central wards, and many of them come on foot or by local taxi rather than by car. For a flat in a newer building, tell the guard the tutor's name before the first class; for an older house, share the nearest landmark and say whether there are steps down to the door. Parking is limited on the narrow hill roads, so tutors usually prefer to walk the last stretch. Plan slots that avoid the evening rush near the Mall, and allow extra time in heavy rain or snow. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Shimla_Municipal_Corporation",
+        "https://www.squareyards.com/sale/property-for-sale-in-bharari-shimla",
+        "https://www.squareyards.com/lakkar-bazar-in-shimla-overview-51777",
+        "https://www.squareyards.com/sanjauli-in-shimla-overview-51757"
+      ]
+    },
+    "sanjauli": {
+      "name": "Sanjauli",
+      "zone": "Sanjauli & Dhalli",
+      "type": "mixed",
+      "about": "<p>Sanjauli is the main suburb of Shimla and one of its most populous parts. It lies below Jakhu Hill and includes Sanjauli Bazaar, Engine Ghar, Cemetery Road, Chalaunthi, Dhingu Dhar, Shanan and the Housing Board Colony. Housing ranges from apartment buildings and builder floors to independent houses and plots, and the busy Sanjauli Chowk with its shops is the local centre.</p><p>The Shimla-Dhalli bypass section of National Highway 5 passes through Sanjauli, Circular Road links it with the rest of the city, and a tunnel connects it with Dhalli. A footpath also leads down towards the Mall Road side, so some tutors walk in from the centre. Neighbouring Dhalli, Bharari, Lalpani and Bhattakufar give a wide pool of nearby tutors. Flats in larger buildings may keep a visitor register, while houses on the lanes allow doorstep arrival; name a landmark near the Chowk for the first visit. The Chowk and the bypass are busiest at office and school hours, so agree a slot outside the peak, and allow extra time in heavy rain or snow. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sanjauli",
+        "https://www.squareyards.com/sanjauli-in-shimla-overview-51757",
+        "https://en.wikipedia.org/wiki/Shimla"
+      ]
+    },
+    "dhalli": {
+      "name": "Dhalli",
+      "zone": "Sanjauli & Dhalli",
+      "type": "mixed",
+      "about": "<p>Dhalli is the easternmost point of the main city of Shimla, set among deodar forests on the Sanjauli-Dhalli ridge, between Sanjauli on one side and Kufri and Mashobra on the other. It became part of the Shimla Municipal Corporation in 2006-07 and is now split into Upper Dhalli and Lower Dhalli wards. It has grown into one of the more densely populated parts of the city, with flats in apartment buildings alongside older homes, and it is the site of a large apple market for Shimla and Kinnaur.</p><p>National Highway 5 runs through Dhalli, and the Dhalli tunnel links it with Sanjauli and the rest of the city, so tutors from Sanjauli are the most natural match. Newer buildings by the Sanjauli-Dhalli bypass may have covered parking and a guard, while older homes are reached by lanes off the main road. The apple trading season brings extra trucks to the highway, so build some margin into lesson times then, and allow extra time in heavy rain or snow. Online classes help when a specialist teacher lives on the western side of the city. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dhalli",
+        "https://en.wikipedia.org/wiki/Shimla",
+        "https://en.wikipedia.org/wiki/Shimla_Municipal_Corporation",
+        "https://www.squareyards.com/sale/property-for-sale-in-dhalli-shimla"
+      ]
+    },
+    "bhattakufar": {
+      "name": "Bhattakufar",
+      "zone": "Sanjauli & Dhalli",
+      "type": "residential",
+      "about": "<p>Bhattakufar, also written Bhattakufer, is a residential ward of the Shimla Municipal Corporation in the Kasumpti assembly seat, on the eastern side of the city. It sits in the group of eastern wards with Sanjauli Chowk, Upper and Lower Dhalli, Shanti Vihar and Sangti, and property listings place it among the immediate neighbours of Sanjauli, Dhalli and Malyana. Homes here are spread along the hill slopes of the eastern side of the city.</p><p>For a family in Bhattakufar, the easiest tutors to find are those already teaching in Sanjauli, Dhalli or Malyana, who know the local roads. Before the first class, tell the tutor whether the home is a house reached by a lane or steps, or a flat in a building with a gate, and share a landmark and phone number. Hill roads can be narrow, so a two-wheeler or local taxi is often simpler than a car. Keep a fixed weekday slot that avoids the school-hour rush on the main roads, and allow extra time when it rains or snows. Online classes are a good choice for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Shimla_Municipal_Corporation",
+        "https://www.squareyards.com/sanjauli-in-shimla-overview-51757",
+        "https://www.squareyards.com/localities-in-shimla"
+      ]
+    },
+    "chhota-shimla": {
+      "name": "Chhota Shimla",
+      "zone": "Chhota Shimla, Kasumpti & New Shimla",
+      "type": "mixed",
+      "about": "<p>Chhota Shimla, also spelt Chotta Shimla, is one of the most densely populated and important parts of the city, set between deodar and oak forests. It holds the headquarters of several state departments, including the state Secretariat and the state police headquarters at Nigam Vihar, alongside older residences, walking paths and institutional layouts that keep a colonial-era feel. The Combermere Bridge, the first pucca bridge in Shimla, is a local landmark.</p><p>The area links the city centre with Sanjauli, New Shimla and Kasumpti, and the roads onward lead to Panthaghati, Vikasnagar, Mehli and Malyana, so tutors from any of these localities can reach it easily. Many homes are older residences near the offices, and any campus or building with a guard may ask for the visitor's name at the gate. Office traffic builds around the Secretariat at the start and end of the working day, so lessons are easiest to fix in the late afternoon or early evening after the rush. Allow extra time in heavy rain or snow, and use online classes for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chotta_Shimla",
+        "https://en.wikipedia.org/wiki/Shimla_Municipal_Corporation",
+        "https://www.squareyards.com/sale/property-for-sale-in-chotta-shimla-shimla"
+      ]
+    },
+    "kasumpti": {
+      "name": "Kasumpti",
+      "zone": "Chhota Shimla, Kasumpti & New Shimla",
+      "type": "residential",
+      "about": "<p>Kasumpti, also written Kasumpati, is a residential part of south-eastern Shimla and one of the wards of the Shimla Municipal Corporation; it also gives its name to the assembly seat that covers much of this side of the city. It shares its postal code with New Shimla and Panthaghati, and it lies on the road that links Chhota Shimla with Panthaghati and New Shimla.</p><p>Because it sits between Chhota Shimla, Panthaghati, Vikasnagar and New Shimla, Kasumpti is one of the easier places in the city to find a home tutor, with a pool of tutors living in the neighbouring wards. Homes range from older houses on the slopes to flats in apartment buildings, so ask the family whether the tutor should come to a door or to a building gate, and share the nearest bus stop or landmark. Office traffic towards the Secretariat in Chhota Shimla is heaviest at the start and end of the working day, so lessons run more smoothly outside those hours. Winters bring snowfall here, so allow extra time and keep online classes as a fallback on snow days. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kasumpati",
+        "https://en.wikipedia.org/wiki/Chotta_Shimla",
+        "https://en.wikipedia.org/wiki/Panthaghati",
+        "https://en.wikipedia.org/wiki/Shimla_Municipal_Corporation"
+      ]
+    },
+    "panthaghati": {
+      "name": "Panthaghati",
+      "zone": "Chhota Shimla, Kasumpti & New Shimla",
+      "type": "residential",
+      "about": "<p>Panthaghati is a suburb in south-eastern Shimla, set between deodar and pine forests, and the first part of the city that travellers reach when arriving from Junga and Chail. It lies on National Highway 5 and links Kasumpti, New Shimla, Chhota Shimla and the inter-state bus terminal. It has grown into one of the major residential suburbs, with apartments, government housing, builder floors, villas and independent houses, along with markets and a Buddhist monastery.</p><p>Neighbouring New Shimla, Malyana, Khalini, Kasumpti and Mehli give families a good choice of tutors living nearby. Many newer homes are in gated apartment projects, where the tutor's name should be registered at the gate before the first class, while older houses allow doorstep arrival. The highway through Panthaghati carries daily commuters into the city, so evening lessons are easier after the office traffic has eased. Allow extra time in heavy rain or snow, and choose online classes when the right specialist lives on the far side of Shimla. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Panthaghati",
+        "https://www.squareyards.com/panthaghati-in-shimla-overview-28074",
+        "https://www.squareyards.com/sale/property-for-sale-in-panthaghati-shimla"
+      ]
+    },
+    "new-shimla": {
+      "name": "New Shimla",
+      "zone": "Chhota Shimla, Kasumpti & New Shimla",
+      "type": "residential",
+      "about": "<p>New Shimla is the most modern planned part of the city, built on steep slopes and ridges with pine and deodar forests around it. It was developed mainly by the state housing and urban development authority, especially from the 1980s, to ease crowding in the older areas, and it is divided into phases and numbered residential sectors. Wider roads, apartment colonies, government housing, small markets and parks set it apart from the old town, and listings show flats, builder floors and independent houses.</p><p>New Shimla joined the Shimla Municipal Corporation in 2006-07 and is now one of its wards. Chhota Shimla, Khalini, Vikasnagar, Kanlog and Panthaghati are its neighbours, so a tutor from any of these areas can reach the family easily. Give the sector number, block and flat number, and ask whether the colony gate keeps a visitor register. The planned roads make finding homes simpler than in the old town, but the routes into the city get busy at office hours, so pick a regular slot outside the peak, and allow extra time in heavy rain or snow. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/New_Shimla",
+        "https://en.wikipedia.org/wiki/Shimla",
+        "https://en.wikipedia.org/wiki/Shimla_Municipal_Corporation",
+        "https://www.squareyards.com/sale/property-for-sale-in-new-shimla-shimla"
+      ]
+    },
+    "vikasnagar": {
+      "name": "Vikasnagar",
+      "zone": "Chhota Shimla, Kasumpti & New Shimla",
+      "type": "residential",
+      "about": "<p>Vikasnagar is a residential ward of the Shimla Municipal Corporation in the Kasumpti assembly seat, on the south-eastern side of the city. It lies next to New Shimla and is one of the areas reached from Chhota Shimla on the roads towards Panthaghati, Mehli and Malyana, so it sits within the city's newer residential belt rather than the old town. Homes are spread across the hillside around the ward's local roads.</p><p>For tutors, Vikasnagar's position is its main advantage: Chhota Shimla, Kasumpti, New Shimla, Khalini and Panthaghati are all close by, which gives families a wide pool of tutors to choose from. Tell the tutor whether the home is a flat behind a building gate or a house reached by a lane or steps, and share a landmark for the first visit. Traffic towards the Secretariat builds at the start and end of the working day, so late-afternoon and evening lessons usually start on time. In winter, allow extra time in heavy rain or snow, and keep online classes as a backup for snow days or specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Shimla_Municipal_Corporation",
+        "https://en.wikipedia.org/wiki/Chotta_Shimla",
+        "https://en.wikipedia.org/wiki/New_Shimla"
+      ]
+    },
+    "khalini": {
+      "name": "Khalini",
+      "zone": "Chhota Shimla, Kasumpti & New Shimla",
+      "type": "residential",
+      "about": "<p>Khalini is a residential ward of the Shimla Municipal Corporation in the Kasumpti assembly seat, in the southern part of the city. It is one of the areas next to New Shimla, along with Vikasnagar and Kanlog, and property listings also place it among the neighbours of Panthaghati, with Malyana and Mehli nearby. It is a hillside residential area rather than a market district.</p><p>Families in Khalini can usually find a tutor who already teaches in New Shimla, Kanlog, Vikasnagar or Chhota Shimla, since all of them are close by. Before the first class, share the house or building name, a landmark and a phone number, and say whether the last stretch is on foot or by steps. Two-wheelers and local taxis handle the narrow hill roads better than larger cars, and parking near homes can be limited. Choose a regular slot that avoids the office rush towards Chhota Shimla, allow extra time in heavy rain or snow, and use online classes for subjects where the right teacher lives further away. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Shimla_Municipal_Corporation",
+        "https://en.wikipedia.org/wiki/New_Shimla",
+        "https://www.squareyards.com/panthaghati-in-shimla-overview-28074"
+      ]
+    },
+    "boileauganj": {
+      "name": "Boileauganj",
+      "zone": "Boileauganj, Summer Hill & Totu",
+      "type": "mixed",
+      "about": "<p>Boileauganj lies on the western side of central Shimla and is one of the city's key road junctions, linking the centre with Summer Hill and Totu and carrying traffic towards Mandi and Dharamshala on National Highways 5 and 205. Shops line the junction, homes spread over the surrounding slopes, and newer apartment projects have been built nearby. The former Viceregal Lodge on Observatory Hill and the Kamna Devi temple on Prospect Hill are well-known landmarks close by.</p><p>Neighbouring Summer Hill, Chaura Maidan, Tutikandi and Totu give families plenty of tutors living within easy reach, and the junction's bus links help tutors coming from other parts of the city. Because the junction gets congested and parking is short, tutors often prefer to arrive by bus or on foot for the last stretch, so share a clear landmark and the lane or steps to the home. Avoid the busiest office and school hours when fixing a regular slot, and allow extra time in heavy rain or snow. Online classes are a practical fallback for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Boileauganj,_Shimla",
+        "https://www.squareyards.com/boileauganj-in-shimla-overview-51709",
+        "https://en.wikipedia.org/wiki/Shimla_Municipal_Corporation"
+      ]
+    },
+    "summer-hill": {
+      "name": "Summer Hill",
+      "zone": "Boileauganj, Summer Hill & Totu",
+      "type": "residential",
+      "about": "<p>Summer Hill, also called Potter's Hill, is one of the seven hills on which Shimla was built, on the western side of the city among pine and deodar slopes. It is a quiet residential suburb with homes spread across the forested hillside and a state university campus, and the former Viceregal Lodge stands on neighbouring Observatory Hill. Boileauganj, Chaura Maidan, Tutikandi, Kyari, Bagh and Annadale are among the nearby localities.</p><p>Summer Hill has its own station on the Kalka-Shimla Railway, the stop before the Shimla terminus, so a tutor living along the line can sometimes come by the toy train, though most use local buses or two-wheelers through Boileauganj. Homes are often reached by lanes and steps rather than directly from the road, so give a landmark near the station or the main road and say how far the walk is. Student traffic around the campus is heaviest at the start and end of the day, which makes later evening lessons simpler. Allow extra time in heavy rain or snow, and use online classes for specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Summer_Hill,_Shimla",
+        "https://en.wikipedia.org/wiki/Kalka%E2%80%93Shimla_railway",
+        "https://www.squareyards.com/summer-hill-in-shimla-overview-51723",
+        "https://en.wikipedia.org/wiki/Shimla"
+      ]
+    },
+    "totu": {
+      "name": "Totu",
+      "zone": "Boileauganj, Summer Hill & Totu",
+      "type": "residential",
+      "about": "<p>Totu is a suburb on the western side of Shimla under the Shimla Municipal Corporation, which it joined in 2006-07. It sits at a lower height than the city centre, has a local market with several banks and temples, and is known as one of the foggiest parts of Shimla during the monsoon. The Jutogh cantonment lies close by, and the airport at Jubbarhatti is on this side of the city.</p><p>Totu is served by Jutogh station on the Kalka-Shimla Railway, the stop below Summer Hill on the line towards Kalka, and the road through Boileauganj and Summer Hill links it with central Shimla. Most tutors come by bus, two-wheeler or local taxi, and a tutor from Totu, Summer Hill or Boileauganj is the easiest match for regular classes. Homes near the cantonment may have their own entry rules, so check how a visitor is admitted. Monsoon fog and winter snow can slow the roads, so allow extra time then, and keep online classes as a fallback. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Totu,_Shimla",
+        "https://en.wikipedia.org/wiki/Jutogh",
+        "https://en.wikipedia.org/wiki/Kalka%E2%80%93Shimla_railway",
+        "https://en.wikipedia.org/wiki/Shimla"
+      ]
+    },
+    "tutikandi": {
+      "name": "Tutikandi",
+      "zone": "Boileauganj, Summer Hill & Totu",
+      "type": "mixed",
+      "about": "<p>Tutikandi is a part of Shimla city on National Highway 5, among deodar trees on the western side, and a ward of the Shimla Municipal Corporation. Its main feature is the city's Inter State Bus Terminal, which turned what was once an out-of-the-way area into a well-connected transit point. A traditional mud, stone and wood house from the 1920s and the old zoo in the forest are local landmarks.</p><p>The bus terminal means that tutors from many parts of the city, and from towns along the highway, can reach Tutikandi by bus, and local buses link it with Boileauganj, Summer Hill and the centre. Families living near the terminal should give a precise landmark, since the area around it is busy with buses and taxis. Boileauganj, Summer Hill, Chaura Maidan and Kanlog are among the nearby localities. Arrival times of long-distance buses make the highway busy at certain hours, so agree a fixed slot with some margin, and allow extra time in heavy rain or snow. Online classes suit specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tutikandi",
+        "https://en.wikipedia.org/wiki/Shimla_Municipal_Corporation",
+        "https://www.squareyards.com/boileauganj-in-shimla-overview-51709"
+      ]
+    }
+  },
+  "zone_facts": {
+    "Ridge, Lakkar Bazar & Jakhu": [
+      {
+        "fact": "The Ridge is a large open space in the centre of Shimla that runs east to west alongside the Mall Road and joins it at Scandal Point; at its eastern end it leads to Lakkar Bazaar.",
+        "source": "https://en.wikipedia.org/wiki/The_Ridge,_Shimla"
+      },
+      {
+        "fact": "Automobiles, except emergency vehicles, are not allowed on the Mall Road, which lies a level below the Ridge; the Town Hall on the Mall houses the Shimla Municipal Corporation.",
+        "source": "https://en.wikipedia.org/wiki/Mall_Road,_Shimla"
+      },
+      {
+        "fact": "Lower Bazaar, just below the Middle Bazaar and Mall Road, is a no-vehicle zone where only ambulances and municipal vehicles are allowed.",
+        "source": "https://en.wikipedia.org/wiki/Lower_Bazaar,_Shimla"
+      },
+      {
+        "fact": "Jakhu Hill is the highest peak in Shimla; the Jakhu ropeway linking a point near the city centre to the temple opened in 2017.",
+        "source": "https://en.wikipedia.org/wiki/Jakhoo"
+      },
+      {
+        "fact": "Bharari is ward 1 and Jakhu is ward 16 of the Shimla Municipal Corporation, both in the Shimla Urban assembly constituency.",
+        "source": "https://en.wikipedia.org/wiki/Shimla_Municipal_Corporation"
+      }
+    ],
+    "Sanjauli & Dhalli": [
+      {
+        "fact": "Sanjauli is the main suburb of Shimla.",
+        "source": "https://en.wikipedia.org/wiki/Shimla"
+      },
+      {
+        "fact": "The Shimla-Dhalli bypass section of National Highway 5 passes through Sanjauli, which lies below Jakhu Hill and adjoins Dhalli via a tunnel.",
+        "source": "https://en.wikipedia.org/wiki/Sanjauli"
+      },
+      {
+        "fact": "Dhalli, Totu and New Shimla were brought under the Shimla Municipal Corporation in 2006-07.",
+        "source": "https://en.wikipedia.org/wiki/Shimla"
+      },
+      {
+        "fact": "Dhalli is the easternmost point of the main city, between Sanjauli and Kufri/Mashobra, and hosts a large apple market for Shimla and Kinnaur districts.",
+        "source": "https://en.wikipedia.org/wiki/Dhalli"
+      },
+      {
+        "fact": "Sanjauli Chowk (ward 19) is in Shimla Urban, while Upper Dhalli, Lower Dhalli and Bhattakufar (wards 20, 21 and 23) are in the Kasumpti assembly constituency.",
+        "source": "https://en.wikipedia.org/wiki/Shimla_Municipal_Corporation"
+      }
+    ],
+    "Chhota Shimla, Kasumpti & New Shimla": [
+      {
+        "fact": "Chotta Shimla holds the headquarters of several state departments, including the Himachal Pradesh Secretariat and the state police headquarters at Nigam Vihar.",
+        "source": "https://en.wikipedia.org/wiki/Chotta_Shimla"
+      },
+      {
+        "fact": "Combermere Bridge in Chotta Shimla was the first pucca bridge of Shimla.",
+        "source": "https://en.wikipedia.org/wiki/Chotta_Shimla"
+      },
+      {
+        "fact": "New Shimla was developed mainly by the state housing and urban development authority, especially in the 1980s, and is divided into phases and numbered residential sectors.",
+        "source": "https://en.wikipedia.org/wiki/New_Shimla"
+      },
+      {
+        "fact": "Panthaghati lies on NH-5 in south-eastern Shimla and is the first part of the city reached when arriving from Junga and Chail.",
+        "source": "https://en.wikipedia.org/wiki/Panthaghati"
+      },
+      {
+        "fact": "Panthaghati, Kasumpati, Chotta Shimla, Vikasnagar, New Shimla, Khalini and Kanlog are wards 26 to 34 (with Kangnadhar and Pateog) of the Shimla Municipal Corporation, all in the Kasumpti assembly constituency.",
+        "source": "https://en.wikipedia.org/wiki/Shimla_Municipal_Corporation"
+      }
+    ],
+    "Boileauganj, Summer Hill & Totu": [
+      {
+        "fact": "The Kalka-Shimla Railway, a 762 mm narrow-gauge line, opened for traffic on 9 November 1903; its stations in and near Shimla city are Taradevi, Jutogh, Summer Hill and the Shimla terminus.",
+        "source": "https://en.wikipedia.org/wiki/Kalka%E2%80%93Shimla_railway"
+      },
+      {
+        "fact": "UNESCO added the Kalka-Shimla Railway to the Mountain Railways of India World Heritage Site on 8 July 2008.",
+        "source": "https://en.wikipedia.org/wiki/Kalka%E2%80%93Shimla_railway"
+      },
+      {
+        "fact": "Boileauganj is a key junction connecting central Shimla with Summer Hill and Totu, and with Mandi and Dharamshala via National Highways 5 and 205.",
+        "source": "https://en.wikipedia.org/wiki/Boileauganj,_Shimla"
+      },
+      {
+        "fact": "Totu houses the Jutogh railway station of the Kalka-Shimla Railway and lies near the Jutogh cantonment, established in 1843.",
+        "source": "https://en.wikipedia.org/wiki/Totu,_Shimla"
+      },
+      {
+        "fact": "Tutikandi, on National Highway 5, is home to Shimla's Inter State Bus Terminal.",
+        "source": "https://en.wikipedia.org/wiki/Tutikandi"
+      },
+      {
+        "fact": "Summer Hill is ward 5, Totu ward 6, Boileauganj ward 8 and Tutikandi ward 10 of the Shimla Municipal Corporation.",
+        "source": "https://en.wikipedia.org/wiki/Shimla_Municipal_Corporation"
+      }
+    ]
+  }
+}

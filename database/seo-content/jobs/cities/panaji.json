@@ -1,0 +1,108 @@
+{
+  "intro": [
+    "Panaji is a compact capital, and tuition work here falls into four zones. Central Panaji & Altinho is the old core: Fontainhas houses opening onto lanes, government quarters on Altinho, and flats above shops in Campal and St Inez. Miramar, Dona Paula & Taleigao follows the seafront south, where high-rise buildings on Taleigao's former fields stand beside the village wards of Caranzalem. Santa Cruz, Merces & Ribandar is the eastern ring of village wards on Tiswadi island, and Porvorim & North Bank lies across the Mandovi in Bardez, reached by three bridges. Expect a gate register in apartment buildings and a door straight off the lane in the older wards.",
+    "Panaji students are taught for the Goa Board of Secondary and Higher Secondary Education and CBSE, and in smaller numbers for CISCE's ICSE and ISC, the IB Diploma or Cambridge IGCSE. The Goa Board is a statutory body set up in 1975; its official website says it lays down the syllabi, prescribes textbooks for secondary and higher secondary classes, and conducts the SSC and HSSC examinations. A tutor for a Goa Board student should work from those prescribed books and take every notice, timetable and pattern only from gbshse.in, not from forwarded copies. Ask each family which board the school follows before the demo.",
+    "Home and online work both fit the city. When a parent in Taleigao asks for a tutor, NXTutors shortlists two or three, looking at tutors in Taleigao first, then the rest of that zone, then Panaji as a whole, then online. The parent sees each fee before a free first demo, and switching later costs them nothing. Travel is mostly by two-wheeler, car or bus, with the KTC stand at Patto at the centre; the bridges to Porvorim, the Ribandar causeway and the seafront road in the busy months shape when a lesson can start. Online students can be anywhere in India."
+  ],
+  "zone_notes": {
+    "Central Panaji & Altinho": "Fontainhas and the other heritage wards are old houses opening onto narrow lanes, so you arrive at the door but should plan where to leave a two-wheeler. Government quarters on Altinho may ask visitors at the gate, and the hill roads carry office traffic on weekdays. Campal's cultural and sports venues crowd the main road on event days, and the shopping roads of St Inez fill in the evening; the KTC stand at Patto helps if you travel by bus.",
+    "Miramar, Dona Paula & Taleigao": "Expect apartment buildings with visitor books in Miramar and in Taleigao, where farmland has given way to high-rise housing, and doorstep visits in the village wards of Caranzalem. The road from Miramar to Dona Paula runs along the beach and fills with visitors at weekends and in the busy months, so use inner roads and offer weekday slots. Living in Taleigao or St Inez puts the whole zone within easy reach.",
+    "Santa Cruz, Merces & Ribandar": "Santa Cruz, Merces, Bambolim and Ribandar are village wards turning into suburbs, with family houses beside newer buildings and gated quarters near Bambolim's large institutional grounds. You will come in by the old Santa Cruz road, the national highway or the Ribandar causeway, each busy at office times. Karmali on the Konkan Railway is on this side, and families on Chorao or Divar who use the Ribandar ferry often prefer online evening lessons.",
+    "Porvorim & North Bank": "Porvorim, Socorro and Penha de Franca sit across the Mandovi in Bardez, so if you live in Panaji, every home lesson there means a bridge crossing and a stretch of NH 66, both busiest when offices open and close. Tutors living on the north bank have the easier round. Porvorim's apartment complexes register visitors at the gate, while in Socorro and Penha de Franca a ward name and the church usually get you to the right door."
+  },
+  "boards": "In Panaji you may teach Goa Board SSC and HSSC students or CBSE students, along with some ICSE and ISC learners and a smaller group on the IB Diploma or Cambridge IGCSE, often taught online. Read Goa Board syllabi, textbook lists and examination notices on gbshse.in, CBSE sample papers and marking schemes on cbseacademic.nic.in, and ICSE and ISC regulations on cisce.org. On your profile, name each board and class you teach, and confirm the school's board with every family at the demo.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Goa Board of Secondary and Higher Secondary Education (GBSHSE)",
+      "site": "https://www.gbshse.in/",
+      "classes": "SSC (Standard X); HSSC (Standard XII)",
+      "note": "The Goa Board, set up in 1975 under a state Act, prepares the syllabi, prescribes textbooks for secondary and higher secondary classes, conducts the SSC and HSSC examinations and declares the results. Teach a Goa Board student from those prescribed books, use the board's own papers and circulars, and take every date and pattern from gbshse.in only.",
+      "page": "/goa-board-tutor-panaji"
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "Panaji's CBSE students learn alongside Goa Board, CISCE and a few international-board peers, so confirm the board before you plan anything. Build lessons on the NCERT books, then practise with CBSE's sample papers and marking schemes. For students across the river in Porvorim, a mix of home and online sessions can keep weekly lessons steady.",
+      "page": "/cbse-home-tutor-panaji"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "ICSE in Class 10 and ISC in Class 12 ask for long written answers across a broad syllabus, and English includes set literature texts. If you know these papers well, you can take ICSE students at home in your part of Panaji and teach ISC electives online to learners elsewhere. Regulations and specimen papers are on cisce.org."
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "IB Diploma students in Panaji, often from families who have moved to Goa, usually work with online specialists. Coursework counts alongside the final papers: you may coach a student through the Internal Assessment and Extended Essay criteria, but the work itself must remain the student's own. Subject guides are on ibo.org."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "Expect few IGCSE students locally and more of them online. Good lessons lean on timed past papers checked against the published mark scheme, on what each command word asks for and on the right tier. Check early whether the school uses Cambridge or Pearson Edexcel, because the syllabuses differ."
+    }
+  ],
+  "women": {
+    "intro": "Women tutors are welcome to teach with NXTutors in Panaji, at homes, online or both. You choose the areas: a tutor in Fontainhas may keep to the central wards she can walk to, one in Taleigao to the seafront zone, and one in Porvorim to the north bank without crossing the river at all. Every tutor who joins goes through the same ID check, we ask a parent to be at home for the demo, and the safeguarding policy covers families and tutors alike. These are working controls you hold, not promises about any individual.",
+    "points": [
+      "Choose home, online or hybrid teaching on your profile, and change it whenever you need to.",
+      "List only the areas you want; leave out bridge crossings to Porvorim or the seafront road in the busy months if they do not suit you.",
+      "Agree lesson times with the parent at the demo and decline any slot that does not fit your day.",
+      "Regular lessons start only after a free demo, and we ask a parent to be at home for the demo.",
+      "For apartment buildings in Miramar, Taleigao or Porvorim, ask the family to give your name to the gate in advance.",
+      "Settle fees, timing and messages with a parent, not with the student alone.",
+      "Teach young children in a shared room with an adult at home, and keep cameras on for online classes.",
+      "If anything worries you, stop the lesson and report it to NXTutors marked Safeguarding; call 112 first in an emergency."
+    ]
+  },
+  "story": [
+    "Sign up with a one-time code sent to your phone or email, then add your subjects, classes and boards, whether Goa Board SSC or HSSC, CBSE or ICSE, and the Panaji areas you can reach.",
+    "Upload a government photo ID, which our team reviews before your profile appears. Each ID number links to one tutor account, and the check confirms identity only; it is not a police or background check.",
+    "Once the check is done, your profile goes live with the Verified badge, showing your boards, your areas anywhere from Porvorim to Dona Paula, your teaching mode and the fee you set.",
+    "A parent in Santa Cruz or Campal sends a request. NXTutors suggests two or three tutors, nearest to that home first, then the rest of the zone, the wider city and online.",
+    "The parent sees your fee before booking. The first class is a free demo at their home, and we ask a parent to be at home for the demo, so you meet the family first.",
+    "Then teach at homes in your chosen areas, online for students anywhere in India, or both, perhaps home lessons on the north bank and online sessions on days when the bridges are busy."
+  ],
+  "faqs": [
+    [
+      "How does a tuition request in Panaji reach a tutor?",
+      "A parent tells NXTutors the class, board, subjects, area with a landmark and whether home or online lessons are wanted. We then put forward two or three tutors, nearest to that area first, then its zone, Panaji as a whole and online. Accurate areas and boards on your profile bring you into that shortlist."
+    ],
+    [
+      "Which boards do Panaji students follow?",
+      "Mainly two: the Goa Board, through its SSC and HSSC examinations, and CBSE. You will also meet ICSE and ISC students, plus a few learners on the IB Diploma or Cambridge IGCSE. Name every board and class you take on your profile, and read Goa Board notices and patterns only on gbshse.in, its official site."
+    ],
+    [
+      "Can I live in Panaji and teach students elsewhere online?",
+      "Yes. Online lessons are open to students anywhere in India, so you can teach at homes near you and take online students in other states. Parents who want a home tutor see local profiles first, but a parent who chooses online classes may be matched with you wherever they live."
+    ],
+    [
+      "Which Panaji areas should I put on my profile?",
+      "Only those you can reach every week at lesson time. A tutor in Taleigao might cover St Inez, Caranzalem and Dona Paula; one in Porvorim might stay with Socorro and Penha de Franca rather than cross the bridges. A short, honest list works better than a long one, because families expect the same slot all term."
+    ],
+    [
+      "What does the ID check involve?",
+      "You confirm your phone or email with a one-time code and upload a government photo ID, which our team reviews before your profile goes live. Tutors who pass carry a Verified badge. It is an identity check only, not a police or background check, and the full process is explained on /how-we-verify-tutors."
+    ],
+    [
+      "Is joining NXTutors free for tutors in Panaji?",
+      "No. Tutor plans are paid, and /pricing lists each plan and what it includes. Your lesson fee is separate: you set it, and families see it before their free first demo. Because a family can switch tutor at no cost, steady, careful teaching is what keeps a student with you."
+    ],
+    [
+      "Can a woman tutor in Panaji teach at home only near where she lives?",
+      "Yes. Home requests follow the areas on your profile, so you could take home students only in the central wards or around Porvorim and teach everyone else online. We ask a parent to be at home for the demo, so you meet the family before agreeing any regular timetable."
+    ],
+    [
+      "Can I combine home and online lessons with one Panaji family?",
+      "Yes. Turn on both modes and agree the split with the parent after the demo. For a family across the river from you, one home lesson a week with online sessions on other days cuts bridge crossings at office times and keeps the timetable steady through the monsoon and the busy season."
+    ]
+  ]
+}

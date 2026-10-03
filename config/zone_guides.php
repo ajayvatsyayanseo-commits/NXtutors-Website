@@ -2687,4 +2687,530 @@ return [
             ],
         ],
     ],
+    // Eleven capitals (7 Oct 2026 launch), each copied from database/seo-content/areas/{slug}-zone-guides.json.
+    // Shimla (7 Oct 2026, capital launch), from database/seo-content/areas/shimla-zone-guides.json.
+    'Shimla' => [
+        'Ridge, Lakkar Bazar & Jakhu' => [
+            'guide' => 'shimla-home-tuition-guide',
+            'intro' => [
+                'Lakkar Bazar, Jakhu and Bharari make up the central zone around the Ridge, the open space in the middle of Shimla that meets the Mall Road at Scandal Point. Lakkar Bazar is the old market at the Ridge\'s eastern end, with homes in older buildings above and behind the shops. Jakhu climbs the slopes below the city\'s highest peak, and Bharari, ward one of the corporation, mixes newer apartment buildings with older houses near the Mall.',
+                'Vehicles other than emergency ones are not allowed on the Mall Road, and Lower Bazaar below it is a no-vehicle zone too, so this is a part of Shimla where tutors mostly walk. Someone living in the central wards can usually come on foot; a tutor from further out parks lower down and climbs the last stretch. The Jakhu ropeway, opened in 2017, serves the temple at the summit rather than family homes on the slopes.',
+            ],
+            'tips' => [
+                'Describe the walk, not just the address: name the nearest landmark on the Ridge or in Lakkar Bazar and say whether the door is up or down a flight of steps.',
+                'The market lanes get crowded in the evenings and in the holiday season, so a fixed afternoon or early-evening slot is the one most likely to hold.',
+                'Ask for a tutor from Bharari, Jakhu or the other central wards first; for a specialist subject, an online tutor saves a cross-city climb.',
+            ],
+        ],
+        'Sanjauli & Dhalli' => [
+            'guide' => 'shimla-home-tuition-guide',
+            'intro' => [
+                'Sanjauli, Dhalli and Bhattakufar are the eastern suburbs, the most populous side of Shimla. Sanjauli, the city\'s main suburb, sits below Jakhu Hill and takes in Sanjauli Bazaar, Engine Ghar, Chalaunthi, Dhingu Dhar and the Housing Board Colony, with flats, builder floors and houses around the Chowk. Dhalli, the easternmost point of the main city, joined the corporation in 2006-07 and holds a large apple market. Bhattakufar lies among the eastern wards beside Sanjauli and Dhalli.',
+                'Getting around here is mostly by road. The Shimla-Dhalli bypass of National Highway 5 passes through Sanjauli, a tunnel connects it with Dhalli, and Circular Road links the suburb with the rest of the city, so tutors on two-wheelers and in local taxis cover this zone easily. Newer buildings by the bypass may have a guard and covered parking, while older homes sit on lanes off the main road and are reached on foot.',
+            ],
+            'tips' => [
+                'Give a landmark near Sanjauli Chowk or the Dhalli tunnel; both are points every tutor on this side of the city already knows.',
+                'The Chowk and the bypass are slowest at office and school hours, and the apple trading months add trucks on the highway, so keep a little margin in the lesson time.',
+                'A tutor already teaching in Sanjauli, Dhalli or Malyana is the easiest weekly match; use online classes when the specialist you want lives on the western side.',
+            ],
+        ],
+        'Chhota Shimla, Kasumpti & New Shimla' => [
+            'guide' => 'shimla-home-tuition-guide',
+            'intro' => [
+                'Chhota Shimla, Kasumpti, Panthaghati, New Shimla, Vikasnagar and Khalini form the south-eastern zone, the largest group of wards in this guide. Chhota Shimla holds the state Secretariat and several department headquarters among older homes, and its Combermere Bridge was the first pucca bridge in Shimla. New Shimla was developed mainly by the state housing and urban development authority from the 1980s, in phases and numbered sectors, with apartment colonies, government housing and wider roads.',
+                'Panthaghati, on National Highway 5, is the first part of the city reached from Junga and Chail and mixes apartments, government housing, builder floors and houses. Kasumpti, Vikasnagar and Khalini are hillside residential wards around New Shimla, all in the Kasumpti assembly seat. Because six wards sit close together, families here usually have the widest choice of nearby tutors, and many trips avoid the city centre altogether.',
+            ],
+            'tips' => [
+                'In New Shimla, send the phase, sector, block and flat number; in gated projects in Panthaghati, register the tutor\'s name at the gate before the demo.',
+                'Office traffic around the Secretariat in Chhota Shimla peaks at the start and end of the working day, so late-afternoon or evening lessons start on time more often.',
+                'Widen the search across the zone: a tutor from Kasumpti, Vikasnagar or Khalini can usually reach New Shimla or Panthaghati without crossing the centre.',
+            ],
+        ],
+        'Boileauganj, Summer Hill & Totu' => [
+            'guide' => 'shimla-home-tuition-guide',
+            'intro' => [
+                'Boileauganj, Summer Hill, Totu and Tutikandi make up the western side of Shimla. Boileauganj is a key junction linking the centre with Summer Hill and Totu and carrying traffic towards Mandi and Dharamshala on National Highways 5 and 205. Summer Hill, also called Potter\'s Hill, is a quiet residential suburb among pine and deodar slopes. Totu lies lower down near the Jutogh cantonment, and Tutikandi, on National Highway 5, holds the city\'s Inter State Bus Terminal.',
+                'This is the one zone with suburban rail. The Kalka-Shimla Railway, opened in 1903, stops at Summer Hill and at Jutogh, which serves Totu, before the Shimla terminus, so a tutor living along the line can sometimes come by train. Most tutors still use local buses or two-wheelers through Boileauganj, and the bus terminal at Tutikandi brings in tutors from across the city and from towns along the highway.',
+            ],
+            'tips' => [
+                'If you live near Summer Hill or Jutogh station, or close to the Tutikandi bus terminal, mention it in the request so tutors who travel by train or bus can be included.',
+                'Homes near the Jutogh cantonment may have their own visitor rules; check how a tutor is let in and pass that on before the first class.',
+                'Totu is one of the foggiest parts of Shimla in the monsoon, so agree in advance that a lesson moves online on the worst fog or snow days.',
+            ],
+        ],
+    ],
+    // Panaji (7 Oct 2026, capital launch), from database/seo-content/areas/panaji-zone-guides.json.
+    'Panaji' => [
+        'Central Panaji & Altinho' => [
+            'guide' => 'panaji-home-tuition-guide',
+            'intro' => [
+                'Fontainhas, Altinho, Campal and St Inez make up the oldest and most central part of Panaji. Fontainhas is the Latin quarter at the foot of Altinho hill, with Portuguese-style family houses opening onto narrow lanes. Altinho rises above it, mixing government quarters and official residences with private homes and offices. Campal, laid out as a commercial zone in 1830, holds the city\'s cultural and sports venues, and St Inez places flats above busy shopping complexes near the southern creek.',
+                'Being the centre of the city, this zone is the easiest for most tutors to reach, and the Kadamba bus stand at Patto helps those without their own vehicle. The difficulty is space rather than distance: lanes in Fontainhas are narrow, Altinho\'s roads wind round the hill, and parking near the door is rarely certain. Office traffic on Altinho and event days at Campal crowd the roads, so the calmest lessons fall on ordinary weekday afternoons and early evenings.',
+            ],
+            'tips' => [
+                'In Fontainhas, send the tutor a lane landmark and suggest a place to leave a two-wheeler, because the old streets have little room to park at the door.',
+                'On Altinho, share the quarter or block number in advance, since gate staff at government quarters may ask who the visitor is coming to see.',
+                'Before fixing the demo in Campal, check whether an exhibition or festival is on that day at the cultural venues, and pick a quieter date if it is.',
+            ],
+        ],
+        'Miramar, Dona Paula & Taleigao' => [
+            'guide' => 'panaji-home-tuition-guide',
+            'intro' => [
+                'Miramar, Caranzalem, Dona Paula and Taleigao run along Panaji\'s western seafront and up onto the southern plateau. Miramar sits where the Mandovi meets the sea, with apartment buildings and houses behind the beach road. Caranzalem keeps old wards such as Aivao, Dando and Quevnem off the Miramar to Dona Paula road. Dona Paula is the headland where the Mandovi and Zuari meet, and Taleigao, once rice fields, is now largely high-rise housing around its older village wards.',
+                'Most newer homes here are flats in gated buildings, so a tutor\'s name usually has to reach the guard before the first visit, while village wards in Caranzalem and Taleigao still allow a knock at the door. The seafront road carries visitors in the evening, at weekends and through the main season, which makes inner roads and fixed weekday slots the sensible plan. St Inez lies just north of Taleigao, so tutors living there or in the city centre are well placed.',
+            ],
+            'tips' => [
+                'Ask a tutor coming to Miramar or Dona Paula to use the inner residential roads rather than the seafront road, which is slowest on evenings and weekends.',
+                'For Caranzalem or Taleigao village wards, give the ward name and the parish church as a landmark; for flats, send the building name and a gate contact.',
+                'Look first for a tutor living in Taleigao or St Inez, who can reach any part of this zone without crossing the busier central roads.',
+            ],
+        ],
+        'Santa Cruz, Merces & Ribandar' => [
+            'guide' => 'panaji-home-tuition-guide',
+            'intro' => [
+                'Santa Cruz, Merces, Bambolim and Ribandar form Panaji\'s eastern side, where the city gives way to village wards. Santa Cruz starts at the Char Khambe junction and has eleven wards with family houses and newer buildings on old paddy land. Merces, between the Mandovi and Bambolim, has its own panchayat. Bambolim mixes residential pockets with a large institutional campus, and Ribandar is joined to the city by a causeway of 1633 and has a ferry wharf for Chorao and Divar.',
+                'Karmali station on the Konkan Railway, the nearest railhead to the capital, lies on this side of the city. Tutors arrive along the old Santa Cruz road, the national highway or the Ribandar causeway, and each of these fills at office times. Ward houses need only a clear landmark, while gated quarters and apartment buildings, especially near the Bambolim campus, need entry arranged beforehand. A tutor who already lives in this zone is far easier to keep through the year.',
+            ],
+            'tips' => [
+                'Tell a tutor coming to Santa Cruz which side of the village to enter, from the city road or the highway, so the first visit does not start with a detour.',
+                'In Bambolim, name the gate or approach road and share the security desk\'s number, since a large campus sits beside the homes.',
+                'Families on Chorao or Divar who reach the mainland by the Ribandar ferry can keep weekday evenings online and save home lessons for weekends.',
+            ],
+        ],
+        'Porvorim & North Bank' => [
+            'guide' => 'panaji-home-tuition-guide',
+            'intro' => [
+                'Porvorim, Socorro and Penha de Franca lie across the Mandovi from Panaji on the north bank, in Bardez. Porvorim sits on NH 66, holds the state\'s Assembly and Secretariat complex in Alto Porvorim, and has grown from a crossroads market into a large residential area of apartment complexes and independent houses. Socorro has seven wards, one of them named Porvorim, and Penha de Franca, also called Britona, was once part of the old village of Serula with Socorro.',
+                'Three bridges cross the Mandovi between Panaji and Porvorim, the newest being Atal Setu, which opened to traffic in February 2019 and carries NH 66. Those approaches and the highway are busiest when offices open and close, so the river decides most tutoring plans here. A tutor who lives on the north bank can keep a weekday slot with little trouble, while one coming over from Panaji should be booked outside the office rush.',
+            ],
+            'tips' => [
+                'Ask for a tutor living in Porvorim, Socorro or Penha de Franca first; crossing the river twice a week is the main reason arrangements break down.',
+                'In Socorro and Penha de Franca, give the ward name and the church or the road to Sangolda as a landmark for the first visit.',
+                'If the only suitable tutor lives in Panaji, mix home lessons with online ones so the bridge is crossed fewer times each week.',
+            ],
+        ],
+    ],
+    // Shillong (7 Oct 2026, capital launch), from database/seo-content/areas/shillong-zone-guides.json.
+    'Shillong' => [
+        'Police Bazar & Jaiaw' => [
+            'guide' => 'shillong-home-tuition-guide',
+            'intro' => [
+                'Police Bazar, Mawkhar, Jaiaw and Mawprem form the historic middle of Shillong. Police Bazar, known in Khasi as Khyndailad, is the city\'s main commercial hub, with homes along roads such as Jail Road, Quinton Road and Thana Road. Mawkhar was one of two villages taken into the municipality in 1878, and that old village also covered Jaiaw and part of Mawprem. Mawkhar sits beside the Iewduh (Bara Bazar) market and the Jhalupara bus stand on GS Road.',
+                'Being central, these localities are within reach of tutors from most parts of the city, so families here tend to see a wide shortlist. What needs planning is the hour rather than the journey. The shopping streets of Police Bazar and the market around Bara Bazar are crowded through the day, while Jaiaw and Mawprem are reached by sloping lanes off the hill roads, where a newcomer can easily miss the right turning on a first visit.',
+            ],
+            'tips' => [
+                'If your flat is above a shop in Police Bazar or Mawkhar, send the building name, the floor and a phone number before the demo.',
+                'In Mawprem, say whether you are in Upper or Lower Mawprem and name a church, shop or bus stop close to the house.',
+                'Book a slot after trading hours near Bara Bazar; mid-afternoon is the hardest time for a tutor to get through the market area.',
+            ],
+        ],
+        'Laban & Upper Shillong' => [
+            'guide' => 'shillong-home-tuition-guide',
+            'intro' => [
+                'Laban was the second village brought into the Shillong municipality in 1878, and its old area took in Lumparing, Madan Laban, Kench\'s Trace and Rilbong, names residents still use to say where they live. Laban, Lumparing and Kenches Trace are municipal wards today. Lawsohtun, a census town, is a quieter residential pocket on the Laban side, and Upper Shillong rises towards Shillong Peak, taking in villages such as Nonglyer and Laitmynsaw spread over the hillside.',
+                'The zone splits in two for tuition. Laban and Lawsohtun share tutors easily, and the routes through Rilbong and Bara Bazar connect them with the centre, so tutors from the central wards are also an option. Upper Shillong sits well above the main town and fewer tutors live close by, so families often keep a home tutor for younger children and add online lessons for senior subjects, with earlier slots on cold or misty evenings.',
+            ],
+            'tips' => [
+                'In Laban, name the part you live in, such as Lumparing, Madan Laban, Kench\'s Trace or Rilbong, rather than Laban alone.',
+                'In Lawsohtun, mention if the last part of the way is a footpath with no space to park.',
+                'In Upper Shillong, agree an earlier lesson time for winter and check any entry arrangements a visiting tutor needs.',
+            ],
+        ],
+        'Laitumkhrah & Rynjah' => [
+            'guide' => 'shillong-home-tuition-guide',
+            'intro' => [
+                'Laitumkhrah, named after the Khasi word for free and the Umkhrah river that rises there, is known as a centre of education with a busy local market. Malki, which includes Dhankheti and Risa Colony, lies between it and the city centre, and Nongthymmai, meaning the new village, includes Jingkieng and Motinagar. Further out are Rynjah, reached via Goraline, Umpling, which shares Rynjah\'s post office, and Madanrting, a census town with its own village durbar on the main road.',
+                'With so many students living around Laitumkhrah, demand for home tuition is steady, and a tutor can string several homes together along one road: Malki to Laitumkhrah, on to Rynjah and Umpling, or from Nongthymmai to Madanrting. Distances inside the zone are short, so timing is what decides how smoothly lessons run. School and college hours fill Laitumkhrah\'s streets at opening and closing times, which is why many families here settle on a later evening slot.',
+            ],
+            'tips' => [
+                'In Rynjah, give the bylane number along with a landmark, since lanes are often known by number.',
+                'In Madanrting, where new lanes may not show on a map, meet a new tutor at a named bus stop for the first visit.',
+                'In Laitumkhrah and Malki flats, share the building name and floor, and say which entrance and where a two-wheeler can park.',
+            ],
+        ],
+        'Mawlai & Pynthorumkhrah' => [
+            'guide' => 'shillong-home-tuition-guide',
+            'intro' => [
+                'Mawlai is one of Shillong\'s historic neighbourhoods and a large census town made up of several localities, including Mawlai Mawiong, Mawlai Nongpdeng, Mawlai Mawdatbaki and Kynton Massar; it meets Jaiaw on the city side. Pynthorumkhrah, another census town, includes Langkyrding and borders Mawpat, Nongmynsong and Shyiap. Nongmynsong, earlier called Lalchand Basti, lies between Pynthorumkhrah and Rynjah and is served by taxis and buses from the city centre.',
+                'This zone rewards choosing a tutor who lives nearby. Mawlai is spread out, so tutors from Jaiaw handle the nearer parts while families further out usually do better with a tutor from Mawlai itself. In Pynthorumkhrah and Nongmynsong, families often look within the same cluster because crossing the city at peak times is slow. Many homes sit on slopes reached by steps or narrow lanes, which is worth mentioning before a first visit.',
+            ],
+            'tips' => [
+                'Tell the tutor which Mawlai locality you live in and the nearest stop, such as Mawiong, Nonglum or Mawlai Pump.',
+                'In Pynthorumkhrah and Nongmynsong, use stops such as Umkdait or Laitlum as the meeting point for a first visit.',
+                'Say whether a car can reach your gate or only a two-wheeler, and mention any steps down from the road.',
+            ],
+        ],
+    ],
+    // Imphal (7 Oct 2026, capital launch), from database/seo-content/areas/imphal-zone-guides.json.
+    'Imphal' => [
+        'Uripok, Thangmeiband & Lamphel' => [
+            'guide' => 'imphal-home-tuition-guide',
+            'intro' => [
+                'Uripok, Thangmeiband, Langol and Lamphel make up the western side of Imphal, all in Imphal West district. Lamphelpat is the district headquarters, so government offices stand among homes and the Lamphel Sana Keithel market. Uripok is a long-settled locality of small leikais such as Polem, Yambem and Khaidem Leikai, while Thangmeiband, with around fifty thousand residents, reaches as far as Langol Tarung and part of the Thangal Bazar trading area.',
+                'For home tuition this side of the city works as one catchment: a tutor living in Uripok or Langol can usually add a family in Thangmeiband or Lamphel without a long ride. Most tutors come by two-wheeler or auto, and the inner lanes suit two wheels. Timing matters more than distance here, because traffic near Lamphelpat follows office hours and roads towards the market fill up in the late afternoon.',
+            ],
+            'tips' => [
+                'In Langol, say which neighbourhood you mean, such as Lairembi Leikai or Aying Leikai, because the name covers several separate places.',
+                'Near Lamphelpat, start lessons after offices close; if the home is inside a gated campus, give the guard the tutor\'s name beforehand.',
+                'In Thangmeiband, send the leikai name and a landmark in writing, since homes are spread across many named lanes.',
+            ],
+        ],
+        'Sagolband, Keishampat & Singjamei' => [
+            'guide' => 'imphal-home-tuition-guide',
+            'intro' => [
+                'Sagolband, Keishampat, Kwakeithel, Singjamei and the Thangal Bazar and Paona Bazar trading area form the central and southern belt of Imphal West. Thangal Bazar lies west of Kangla Fort, on the western bank of the Imphal River, and the Ima Keithel market complex stands on its main road. Sagolband takes in Kakhulong, Old Lambulane and part of Paona Bazar, and Singjamei pairs with Chingamakha near the Imphal East boundary.',
+                'The localities here sit close together, so a tutor based in Keishampat, Kwakeithel or Sagolband can reach most homes in the belt for a weekly class. The harder part is finding the door: many leikais and leiraks carry similar family names, and the bazaar lanes are crowded in shopping hours. A written address with the lane and a landmark, plus a class time that avoids the market rush, keeps visits regular.',
+            ],
+            'tips' => [
+                'For homes behind the Thangal Bazar or Paona Bazar shopfronts, choose weekend mornings or evenings after the shops quieten, and ask the tutor to come by two-wheeler.',
+                'In Sagolband and Keishampat, give the leikai, the leirak or lane, and a landmark, because neighbouring lanes often share family names.',
+                'Treat Singjamei and Chingamakha as one area when looking for a tutor, and keep Keishampat and Kwakeithel tutors in the running too.',
+            ],
+        ],
+        'Wangkhei, Khurai & Porompat' => [
+            'guide' => 'imphal-home-tuition-guide',
+            'intro' => [
+                'Wangkhei, Khurai, Porompat and Chingmeirong lie east of the Imphal River in Imphal East district. Porompat is the district headquarters; the district was formed in 1997, and the 2011 census counted a little over six thousand residents in Porompat itself. Khurai is a wide spread of leikais from Konsam to Chingangbam, Chingmeirong divides into Nongchup and Nongpok, and Kangla Nongpok Torban on the eastern riverbank is a familiar reference point for directions.',
+                'The deciding question on this side is where the tutor starts. A tutor living in Khurai, Kongba or Wangkhei can visit every week without crossing the river, whereas one coming from the western localities meets the central bridges at their busiest in the late afternoon. Office hours shape traffic around Porompat, and school opening and closing times matter around Chingmeirong. Online lessons often fill the gap for senior specialist subjects.',
+            ],
+            'tips' => [
+                'Ask for a tutor who already lives east of the river, so weekly visits do not depend on the busy central bridges.',
+                'In Chingmeirong, say whether you are in the Nongchup or Nongpok part, and avoid school opening and closing times.',
+                'Around Porompat, book a slot after offices close, and keep an online option ready for heavy-rain evenings in the monsoon.',
+            ],
+        ],
+    ],
+    // Agartala (7 Oct 2026, capital launch), from database/seo-content/areas/agartala-zone-guides.json.
+    'Agartala' => [
+        'North Agartala' => [
+            'guide' => 'agartala-home-tuition-guide',
+            'intro' => [
+                'Kunjaban, Indranagar and Abhoynagar make up the northern side of Agartala, where the plains of the Haora River give way to low hills. Kunjaban rises on a green hillock crowned by a palace built in 1917 that is now becoming a cultural museum, and the municipal corporation runs its North zone office from Kumari Tilla there. Indranagar is known for its Kali temple, and Abhoynagar, also written Abhaynagar, for a shrine from the late nineteenth century.',
+                'For home tuition, the three localities lean on one another. A tutor living in Indranagar can reach Abhoynagar easily, and one based in Kunjaban can cover both, with tutors from Krishnanagar and Banamalipur in the centre forming the next circle. The things to plan around are seasonal rather than daily: the Diwali fair at the Indranagar temple and the spring festival at Abhoynagar bring crowds to the local roads for a few days each year.',
+            ],
+            'tips' => [
+                'On the Kunjaban hill roads, send the tutor a landmark on the slope and a phone number, since homes can be hard to spot on a first visit.',
+                'In the week of the Diwali fair at Indranagar, move that lesson to an earlier hour or teach it online.',
+                'Abhoynagar families can also ask for tutors from central Krishnanagar, who can reach the north without a long trip.',
+            ],
+        ],
+        'Central Agartala' => [
+            'guide' => 'agartala-home-tuition-guide',
+            'intro' => [
+                'Krishnanagar, Ramnagar, Banamalipur, Joynagar and Melarmath form the core of Agartala. Krishnanagar, with Ujjayanta Palace on its western side, is one of the most densely populated parts of the city and holds a market every Tuesday and Friday. Ramnagar is an early planned neighbourhood laid out as a grid of about twelve numbered divisions. Joynagar sits beside Battala Bazaar, and Melarmath lies on the 2019 flyover linking Police Lines with Fire Brigade Chowmuhani.',
+                'Central homes are within reach of tutors from every zone, so the choice here is usually wide. The difficulty is congestion at certain hours: market evenings in Krishnanagar, the daily bustle around Battala Bazaar and office closing time on roads into the centre can all delay a tutor. Banamalipur, which shares a ward with Dimsagar, is a little calmer and links the centre with the eastern localities around Dhaleswar.',
+            ],
+            'tips' => [
+                'In Ramnagar, give the division number, such as Ramnagar No. 4, plus one landmark; that is usually enough for a new tutor.',
+                'In Krishnanagar, avoid starting lessons at market time on Tuesday and Friday evenings.',
+                'In Joynagar, point the tutor to a lane landmark rather than the bazaar, and plan the Durga Puja immersion days online.',
+            ],
+        ],
+        'East Agartala' => [
+            'guide' => 'agartala-home-tuition-guide',
+            'intro' => [
+                'Dhaleswar, Shibnagar and Jogendranagar make up the residential east of Agartala. Dhaleswar, also spelt Dhaleshwar, has several schools, its own post office and the corporation\'s East zone office at Ashram Chowmuhani. Shibnagar is split into two wards, Shibnagar and Paschim Shibnagar, and has a historic mosque as its landmark. Jogendranagar stretches over three wards with Aralia alongside and has its own railway station on the Lumding to Sabroom line.',
+                'This zone suits families who want a tutor from close by, because the localities run into one another from Banamalipur outwards: a tutor in Dhaleswar can reach Shibnagar, and one in Shibnagar can reach Jogendranagar. Most visits are by two-wheeler or auto. The local roads carry extra traffic at school opening and closing, so lessons placed later in the afternoon or in the early evening tend to start on time.',
+            ],
+            'tips' => [
+                'Use Ashram Chowmuhani or Math Chowmuhani as the reference point when sending directions in Dhaleswar.',
+                'In Jogendranagar, say whether you live in Jogendranagar, Uttar Jogendranagar or Purba Jogendranagar, and name a spot near Station Road.',
+                'Shibnagar families should state which of the two wards they are in, since the names cover separate areas.',
+            ],
+        ],
+        'South Agartala' => [
+            'guide' => 'agartala-home-tuition-guide',
+            'intro' => [
+                'Badharghat, Arundhutinagar and Pratapgarh make up the southern side of Agartala. Badharghat, also written Badarghat, covers two wards and is where the main Agartala railway station is listed; the corporation\'s South zone office is near the TV Centre. Arundhutinagar also spans two wards and is known for the oldest church in the city, from the 1930s. Pratapgarh reaches from Town Pratapgarh near Melarmath down to its Paschim and Purba wards.',
+                'Since the flyover from Police Lines to Fire Brigade Chowmuhani opened in 2019, the south has been easier for tutors living in the centre to reach, so families here can consider tutors in Melarmath and Krishnanagar as well as those in neighbouring southern wards. Around the station, traffic picks up when trains arrive and leave. Because every locality in this zone spans more than one ward, precise directions matter more than usual.',
+            ],
+            'tips' => [
+                'Near the station in Badharghat, leave the tutor some margin around train times when fixing the slot.',
+                'In Pratapgarh, say Town, Paschim or Purba Pratapgarh, because the three parts lie some way apart.',
+                'Arundhutinagar families should name their ward and a nearby landmark, and mention whether a flat needs a call at the gate.',
+            ],
+        ],
+    ],
+    // Gangtok (7 Oct 2026, capital launch), from database/seo-content/areas/gangtok-zone-guides.json.
+    'Gangtok' => [
+        'Central Gangtok & Tibet Road' => [
+            'guide' => 'gangtok-home-tuition-guide',
+            'intro' => [
+                'Development Area, Arithang, Tibet Road and Pani House make up the centre of Gangtok. The city development plan describes MG Marg, Tibet Road and Kazi Road as the core business district, and Tibet Road, named after the old mule route to Tibet, as one of the most densely built parts of the city. Development Area mixes homes with offices, banks and clinics, Arithang is a largely rented residential suburb beside the core, and Pani House climbs a slope along the highway.',
+                'Almost every route across Gangtok runs through these wards, so central families can usually choose from the widest set of home tutors. What limits a match here is the hour, not the journey. Shoppers and office traffic crowd the central roads in the evening, parking near the market is hard to find, and many homes are in multi-storey buildings or reached by steps from the road, so tutors tend to walk the final stretch from a taxi point.',
+            ],
+            'tips' => [
+                'On Tibet Road, give a nearby shop or junction as well as the building name, because many flats sit above or behind shops.',
+                'In Arithang and Pani House, say whether your door is up or down a flight of steps from the road and where the steps begin.',
+                'Book a fixed weekday slot well ahead rather than agreeing times on the day, since the market roads are busiest in the evening.',
+            ],
+        ],
+        'Deorali, Tadong & Ranipool' => [
+            'guide' => 'gangtok-home-tuition-guide',
+            'intro' => [
+                'Deorali, Tadong and Ranipool line the national highway on Gangtok\'s southern side, the direction the city development plan describes as the city\'s main growth axis, from Selep towards Ranipool. Deorali is a busy commercial and institutional hub whose junction leads into Syari. Tadong has Upper and Lower parts, with Upper Tadong a census town inside the municipal corporation. Ranipool sits on the Ranikhola at the meeting of NH 10 and NH 717A.',
+                'Shared taxis run along this corridor through the day, so a tutor who lives anywhere on the highway can usually reach families in all three areas. Homes range from flats above shops on the main road to houses on the lanes and slopes behind them, and new buildings keep appearing. The two places to plan around are Deorali junction and the Daragaon bazaar stretch in Tadong, both named in the plan as points where traffic slows.',
+            ],
+            'tips' => [
+                'Tell the tutor which side of the highway your building is on and give a landmark near the nearest taxi stop.',
+                'If the tutor must pass Deorali junction or the Daragaon stretch, start the class after the evening peak has eased.',
+                'For senior science or maths in Ranipool, consider pairing a highway-based home tutor with an online specialist.',
+            ],
+        ],
+        'Syari, Chandmari & Tathangchen' => [
+            'guide' => 'gangtok-home-tuition-guide',
+            'intro' => [
+                'Syari, Chandmari and Tathangchen lie on the eastern slope of the ridge, where the city development plan describes settlements growing from Chandmari to Syari and lists all three among the areas near the Indira Bypass able to take some of the city\'s growth. Syari is mainly residential, with a large share of state and central government staff housing. Chandmari is a ward of homes on the slope, and Tathangchen is mostly residential with some public offices.',
+                'This is a quieter, home-centred part of Gangtok, with relatively few shops, so most tuition happens in family homes or government quarters. Traffic into Syari passes through Deorali junction, which matters for any tutor coming from the highway side. Within the zone, Chandmari and Tathangchen are close neighbours, and a tutor who lives on the eastern slope can usually cover more than one of the three areas in an evening.',
+            ],
+            'tips' => [
+                'In a government housing colony, send the block and quarter number and tell the tutor whether to call from the entrance.',
+                'Choose a tutor who already lives in Syari, Chandmari, Tathangchen or Deorali for evening classes on weekdays.',
+                'Give directions from the nearest taxi point to your steps or footpath, as many homes here sit off the road.',
+            ],
+        ],
+        'Sichey, Burtuk & Bojoghari' => [
+            'guide' => 'gangtok-home-tuition-guide',
+            'intro' => [
+                'Sichey, Burtuk and Bojoghari sit along and around the Indira Bypass. Sichey spans Upper, Middle and Lower Sichey, with the bypass running through the middle part, and the city development plan describes Upper Sichey as predominantly residential, with the football stadium and district offices nearby. Burtuk is a ward next to Sichey, and Bojoghari forms part of the Bojoghari-2nd Mile ward; the plan named both among the suburbs growing around the city.',
+                'The bypass ties this zone together and links it with Chandmari and the centre, so tutors who already teach along it are the natural match for regular visits. Homes are a mix of flats in concrete buildings and houses on the slopes, often reached by steps above or below the road. Office-hour traffic on the bypass is the main thing to time around, and on very wet days an online lesson keeps the week\'s work moving.',
+            ],
+            'tips' => [
+                'Say whether you are in Upper, Middle or Lower Sichey, so the tutor starts from the right level of the bypass.',
+                'Look first for a tutor based in Sichey, Burtuk or Bojoghari, then along the bypass towards Chandmari.',
+                'Keep one online session in reserve for heavy monsoon days, agreed with the tutor before the season starts.',
+            ],
+        ],
+    ],
+    // Aizawl (7 Oct 2026, capital launch), from database/seo-content/areas/aizawl-zone-guides.json.
+    'Aizawl' => [
+        'Durtlang, Chaltlang & Bawngkawn' => [
+            'guide' => 'aizawl-home-tuition-guide',
+            'intro' => [
+                'Durtlang, Chaltlang, Bawngkawn, Ramhlun and Zemabawk make up the high northern belt of Aizawl. Durtlang sits on the hilltop and is the highest point in the city, and both Durtlang and Chaltlang were villages that became part of Aizawl by the early 1960s. Chaltlang and Bawngkawn share one municipal ward, Ramhlun is a cluster of five named parts with Laipuitlang beside it, and Zemabawk spreads across North, South, East and West with Falkland and Thuampui alongside.',
+                'For home tuition, this belt runs most smoothly when the tutor also lives in it. A tutor from Bawngkawn or Chaltlang can reach Durtlang and Ramhlun without going through the centre, while Thuampui and Zemabawk tutors suit the Zemabawk side, near the Zuangtui industrial estate. Homes are multi-storey buildings on the slopes, often with the family\'s floor above or below the road, and rental housing blocks in Falkland may note visitors at the entrance, so first visits need clear directions.',
+            ],
+            'tips' => [
+                'For Durtlang, which sits at the top of the ridge, keep a little extra margin on rainy evenings between April and October.',
+                'In Zemabawk or Falkland, give the tutor the block or building name and explain how a visitor is let in.',
+                'Name the exact part of Ramhlun or Zemabawk, such as Ramhlun North or Zemabawk East, so the tutor heads to the right slope.',
+            ],
+        ],
+        'Chanmari, Zarkawt & Dawrpui' => [
+            'guide' => 'aizawl-home-tuition-guide',
+            'intro' => [
+                'Chanmari, Zarkawt and Dawrpui form the centre of Aizawl. Chanmari and Zarkawt share a municipal ward with Electric Veng, and Zarkawt includes McDonald Hill, where the state Directorate of School Education has its office and where the first high school in the Mizo hills opened in February 1944. Dawrpui Veng holds Bara Bazar, the city\'s main shopping centre, and shares a ward with Saron Veng, Chhinga Veng and Tuithang Veng.',
+                'Being in the middle, these vengs can draw tutors from every other cluster, so families here usually have the widest choice of home tutors. The difficulty is the hour of the lesson. Market roads around Bara Bazar stay busy through much of the day and junctions fill at office times, so a slot outside those peaks keeps lessons on time. Housing is multi-storey and close to the road, and tutors on two-wheelers often park and walk the last part.',
+            ],
+            'tips' => [
+                'Avoid booking classes during market and office hours; a later evening slot is usually easier for a tutor heading into the centre.',
+                'Say Dawrpui Veng or Dawrpui Vengthar in full, because the two are separate localities in different wards.',
+                'Tell the tutor where a two-wheeler can be left near your building, since parking close to central roads can be tight.',
+            ],
+        ],
+        'Tuikual, Vaivakawn & Luangmual' => [
+            'guide' => 'aizawl-home-tuition-guide',
+            'intro' => [
+                'Tuikual, Vaivakawn, Luangmual and Tanhril run from the edge of central Aizawl out to the city\'s outskirts. Tuikual, with its North and South parts, shares a ward with Dinthar; Vaivakawn sits where the district\'s Tuikual group meets the Kanan, Chawnpui and Zonuam group; and Luangmual\'s ward reaches Tanhril, Sakawrtuichhun, Rangvamual and Phunchawng. Tanhril is home to the permanent campus of the state\'s central university, set on a wide stretch of forested hillside on the outskirts.',
+                'Valleys decide tutor matches here more than anywhere else. The right tutor for Tuikual is usually one living in Dinthar, Vaivakawn or Dawrpui Vengthar on the same side, while Chawnpui, Zonuam and Luangmual tutors are the natural fit for the Tanhril end. Families on the outskirts often find a smaller pool of nearby home tutors and use online classes for specialist subjects. Housing follows the city pattern of multi-storey buildings on steep slopes.',
+            ],
+            'tips' => [
+                'Ask a shortlisted tutor to confirm the route before the demo, because a valley can make a nearby-looking tutor a long ride.',
+                'For homes in campus housing at Tanhril, check the visitor rules and tell the tutor how to be admitted.',
+                'Keep one weekly lesson online if the subject specialist you want lives in the centre or on the far side of the city.',
+            ],
+        ],
+        'Khatla, Mission Veng & Kulikawn' => [
+            'guide' => 'aizawl-home-tuition-guide',
+            'intro' => [
+                'Khatla, Mission Veng, Bethlehem and Kulikawn form a largely residential cluster of Aizawl. Khatla shares a ward with Khatla South and Mission Venglang, and the district groups it with Khatla East, Bungkawn, Maubawk and Lawipu. Mission Veng and Mission Vengthlang share a ward with Salem Veng, Dam Veng and Venghnuai, with the city\'s large football stadium at Mualpui. Bethlehem pairs with College Veng, and Kulikawn\'s ward includes Tlangnuam, Saikhamakawn, Melthum and Hlimen.',
+                'Each of these localities has close neighbours that make sensible tutor bases: Bungkawn or Maubawk for Khatla, Venghnuai or Thakthing for Mission Veng, Republic or Venghlui for Bethlehem, and Tlangnuam or Saikhamakawn for Kulikawn. A tutor from within the cluster can hold a regular weekday timetable without heading into the centre. Homes are stepped into the hillside, so stairs from the road are common, and roads near the stadium get crowded on match days.',
+            ],
+            'tips' => [
+                'Check the football fixtures before fixing a slot in Mission Veng or Salem Veng, and avoid match-day hours.',
+                'Mention the entrance and the number of flights of stairs, since many homes here sit below or above the road.',
+                'In Bethlehem, say whether you live in Bethlehem Veng or Bethlehem Vengthlang, which are separate parts of the same ward.',
+            ],
+        ],
+    ],
+    // Kohima (7 Oct 2026, capital launch), from database/seo-content/areas/kohima-zone-guides.json.
+    'Kohima' => [
+        'North Kohima & Kohima Village' => [
+            'guide' => 'kohima-home-tuition-guide',
+            'intro' => [
+                'Kohima Village, Kitsübozou, Peraciezie, Bayavü Hill and Naga Bazaar make up the northern side of Kohima. Kohima Village, also known as Kewhira, is the original settlement that gave the city its name and is run by its own village council. Peraciezie is Ward No. 1 of the municipal council, Bayavü Hill is home to the Nagaland Board of School Education office at its upper end, and Naga Bazaar is split into upper and lower parts.',
+                'For tuition, this zone runs most smoothly with a tutor who lives in it. Kitsübozou and Kohima Village sit side by side, and Naga Bazaar connects Peraciezie and Bayavü Hill with the centre, so short trips between neighbouring wards are easy to keep up every week. Homes are spread across the slope, often above or below the road, and a tutor travelling from the southern wards has to pass through the busy town centre first.',
+            ],
+            'tips' => [
+                'In Kohima Village, tell the tutor the nearest point a taxi can reach as well as a landmark, because many homes are a walk from the road.',
+                'Say whether you live in the upper or lower part of Naga Bazaar or Bayavü Hill, so the first visit starts at the right level.',
+                'If the tutor lives in the southern wards, choose a slot after the evening office rush in the centre has eased.',
+            ],
+        ],
+        'Main Town & Midland' => [
+            'guide' => 'kohima-home-tuition-guide',
+            'intro' => [
+                'Daklane, New Market, Midland and Officers\' Hill form the central wards of Kohima. Daklane is Ward No. 7 and New Market Ward No. 8, the stretch most routes across the town pass through. Midland, incorporated in 1970, has three parts: Upper, Middle and Lower Midland. Officers\' Hill, officially Thegabakha, lies on the western side of the centre, between Midland and the PR Hill and Merhülietsa side of town.',
+                'Because these wards sit in the middle, tutors can reach them from almost any direction, and families here usually have the widest choice of home tutors. The difficulty is timing rather than access. Roads around the market are busiest when offices open and close, and parking on the central roads can be tight, so the hour of the lesson matters more here than the distance the tutor has to travel.',
+            ],
+            'tips' => [
+                'Start lessons after the evening office peak, when the roads around New Market and Daklane have cleared.',
+                'In Midland, say whether the home is in Upper, Middle or Lower Midland; the name alone covers three neighbourhoods.',
+                'On Officers\' Hill, tell the tutor where a two-wheeler can be parked and which steps or gate lead to the house.',
+            ],
+        ],
+        'Chandmari & PR Hill' => [
+            'guide' => 'kohima-home-tuition-guide',
+            'intro' => [
+                'Upper Chandmari, Lower Chandmari and PR Hill sit on the southern side of central Kohima. Upper Chandmari is Ward No. 12 and Lower Chandmari Ward No. 13, two separate wards whose similar names are easily mixed up. PR Hill, short for P.R. Hill, shares Ward No. 19 with Lower PR Hill and one adjoining neighbourhood, and the Capital Cultural Centre there gives taxi drivers a clear reference point.',
+                'This is a compact zone, so a tutor living in one of the Chandmari wards, PR Hill or nearby Midland can usually reach any home in it for a weekly lesson. Upper Chandmari and Lower PR Hill have schools of their own, so demand runs from primary classes to board years. Board-year students often add sessions as the exams approach, which is easier when a regular slot is already fixed.',
+            ],
+            'tips' => [
+                'Always write Upper or Lower Chandmari in full, with a landmark, so the tutor goes to the right ward first time.',
+                'Share the stop where a taxi can drop off and whether there is room for a scooter near the house.',
+                'Fix the board-year timetable early in the session, so extra sessions before the HSLC, HSSLC or CBSE papers fit around it.',
+            ],
+        ],
+        'Lerie & Agri Farm' => [
+            'guide' => 'kohima-home-tuition-guide',
+            'intro' => [
+                'Lerie, Agri Farm and Merhülietsa form the southern and western edge of Kohima. Lerie is grouped in the ward list with New Ministers\' Hill, where the Kohima Botanical Garden is, and New Reserve. Agri Farm, Ward No. 17, also covers Upper Mediezie, known as Upper Agri, and the Electrical and Forest neighbourhoods. Merhülietsa, Ward No. 18, includes Lower Mediezie, or Lower Agri, and sits beside Agri Farm and Officers\' Hill.',
+                'Sitting at the far end of town, this zone depends most on where the tutor lives. Tutors from Agri Farm, PR Hill or the Chandmari wards are the practical choice for weekly home visits. A tutor from the northern wards would cross the whole town and the busy centre, so that kind of match usually works better with weekend or later evening sessions, or with some lessons held online.',
+            ],
+            'tips' => [
+                'Give the small neighbourhood name as well as the ward, for example Upper Agri or Lower Agri, so the tutor is not searching between them.',
+                'Ask for a tutor from Agri Farm, PR Hill or Chandmari first; a nearby tutor is far easier to keep through the year.',
+                'Keep one weekly lesson online during the June to September rains, when travel across the hillside is slowest.',
+            ],
+        ],
+    ],
+    // Itanagar (7 Oct 2026, capital launch), from database/seo-content/areas/itanagar-zone-guides.json.
+    'Itanagar' => [
+        'Itanagar North (Chimpu & Ganga)' => [
+            'guide' => 'itanagar-home-tuition-guide',
+            'intro' => [
+                'Chimpu, Chandranagar, Vivek Vihar and Ganga Market make up the northern end of Itanagar, where the municipal area begins and the Chimpu and Senki rivers meet. Chimpu is largely official campuses and staff quarters, Chandranagar has its market and forest colony above the highway, Vivek Vihar climbs from the Senki towards a hilltop part and the Jollang Road, and Ganga Market is a main shopping street with banks and the sectors behind it.',
+                'Visits here fall into two patterns. Many families live in government colonies where the guard at the gate asks a visitor\'s name, so the tutor\'s details should reach the gate before the first lesson. Others live in private houses on the hillsides, where a tutor parks outside and walks straight in. Ganga Market\'s shared-taxi counter and auto stand help tutors who do not drive, since they can ride in and walk the last stretch.',
+            ],
+            'tips' => [
+                'If you live in a staff colony in Chimpu or Chandranagar, give the gate the tutor\'s name and the lesson time a day ahead of the demo.',
+                'Tutors arriving by shared taxi can get down at Ganga Market; tell them which sector lane to walk up, such as H Sector or the Old Ganga Market side.',
+                'Avoid the evening market rush and office hours on the highway; a late-afternoon or weekend-morning slot is the steadiest choice here.',
+            ],
+        ],
+        'Central Itanagar' => [
+            'guide' => 'itanagar-home-tuition-guide',
+            'intro' => [
+                'Central Itanagar runs from E-Sector, opposite the Civil Secretariat, past Bank Tinali and Niti Vihar to C-Sector and the Zero Point junction. Offices, bank branches, markets and government housing sit side by side. Niti Vihar is the quiet residential part, with official bungalows and staff colonies, while C-Sector has a daily market road climbing from the highway and Zero Point leads on to A and B Sectors and the ridge near the old brick Ita Fort.',
+                'Because this is the administrative centre, timing matters more than distance. The stretch in front of the Secretariat and the Bank Tinali junction fill up when offices and schools close, so early-evening and weekend lessons are easier to keep. Official compounds usually check visitors at the gate, private houses mean doorstep arrival, and parking is tight near the markets, which makes a two-wheeler or shared taxi the tutor\'s most practical way in.',
+            ],
+            'tips' => [
+                'Say whether you are in an official compound or a private house in Niti Vihar or C-Sector, so the tutor knows whether to expect a gate check.',
+                'Near Bank Tinali or the C-Sector market, suggest where a two-wheeler can be left, since parking close to the shops is limited.',
+                'Fix lessons after the office closing rush on the Secretariat stretch; a tutor from E-Sector or Bank Tinali can then cover the whole zone.',
+            ],
+        ],
+        'Naharlagun & Papu Nallah' => [
+            'guide' => 'itanagar-home-tuition-guide',
+            'intro' => [
+                'Papu Nallah, Barapani, Polo Colony and Naharlagun form the second town of the capital region and the stretch that links it to Itanagar. Papu Nallah sits midway on the highway with hillside colonies on both sides, Barapani is Naharlagun\'s western entry beside the Pachin River, Polo Colony is a residential slope above the Lagun and Pachin rivers, and Naharlagun spreads from its daily market and A and B Sectors up to G Extension.',
+                'Naharlagun is a foothill town run as part of the Itanagar Capital Complex, and its railway station, opened in April 2014, links the region with Guwahati and Delhi. For tuition, most homes are government quarters or independent houses, so arrival is either a quick name at the gate or straight to the door. Tutors living in Naharlagun cover Barapani and Polo Colony easily, while Papu Nallah can be reached from either town.',
+            ],
+            'tips' => [
+                'For homes in E, F or G Sector or G Extension, tell the tutor to take an auto from the daily market for the climb rather than walking up.',
+                'In Papu Nallah, a tutor from Zero Point or from Barapani can both work well; mention which side of the highway your lane is on.',
+                'Through traffic between the two towns peaks in the morning and evening, so a slot after the evening rush keeps the lesson on time.',
+            ],
+        ],
+        'Nirjuli, Banderdewa & Doimukh' => [
+            'guide' => 'itanagar-home-tuition-guide',
+            'intro' => [
+                'Nirjuli, Banderdewa and Doimukh are the smaller towns at the south-eastern end of the capital region. Nirjuli lies on NH-415 beyond Naharlagun, with the Par and Dikrong rivers nearby and a large technical campus divided by the highway. Banderdewa sits on the Dikrong at the Assam border, where NH-415 begins, and is the main check gate between the two states. Doimukh is a separate subdivision and block of Papum Pare district.',
+                'Fewer tutors live in these towns, so families often pair a home tutor from Naharlagun for the main subject with online lessons for the rest. A regular weekly slot makes the journey worthwhile for a visiting tutor. Staff and campus colonies register visitors at the gate, while private houses mean doorstep arrival. A tutor coming from outside Arunachal Pradesh may need a permit, so they should check the official rules before the first visit.',
+            ],
+            'tips' => [
+                'Ask for a tutor from Naharlagun or Nirjuli and offer a fixed weekly time, which makes the trip to Banderdewa or Doimukh practical.',
+                'Keep one lesson a week online for subjects where no local tutor is free; the same tutor can often teach both ways.',
+                'If a tutor is travelling in from Assam, ask them to check the official permit rules well before the demo date.',
+            ],
+        ],
+    ],
+    // Sri Vijaya Puram (Port Blair) (7 Oct 2026, capital launch), from database/seo-content/areas/port-blair-zone-guides.json.
+    'Sri Vijaya Puram (Port Blair)' => [
+        'Aberdeen & Old Town' => [
+            'guide' => 'port-blair-home-tuition-guide',
+            'intro' => [
+                'Aberdeen Bazaar, Phoenix Bay and Haddo form the old core of Sri Vijaya Puram (Port Blair). Aberdeen and Haddo were already stations of the settlement by 1871, and the clock tower at Aberdeen is a long-standing landmark that helps with directions. Aberdeen Bazaar is the city\'s shopping centre, with homes above shops and in side lanes. Phoenix Bay is the bay-side locality from which inter-island ships sail, and government offices such as Transport Bhawan stand among family homes there.',
+                'Schooling here is unusually varied in language. The Directorate of Education lists English- and Telugu-medium primary schools at Haddo, Hindi- and Telugu-medium government senior secondary schools there, and a Tamil-medium primary school on the Aberdeen side. Every one follows CBSE at the board stage, but a child taught in Telugu or Hindi may want a tutor who can explain in that language. Mention the medium when you ask, together with the lane and a landmark.',
+            ],
+            'tips' => [
+                'Near Aberdeen Bazaar, book a slot before the evening shopping crowd builds, or use a weekend morning, and give the clock tower or a shop as the meeting point.',
+                'If you live close to the Phoenix Bay jetty, check ship days and avoid hours when passengers and vehicles are gathering there.',
+                'In a Haddo government quarters block, send the block and quarter number and the nearest gate before the first visit.',
+            ],
+        ],
+        'Junglighat & Central Localities' => [
+            'guide' => 'port-blair-home-tuition-guide',
+            'intro' => [
+                'Junglighat, Delanipur, School Line, Dairy Farm and Bathubasti are the settled residential localities at the centre of Sri Vijaya Puram (Port Blair). Junglighat, School Line and Dairy Farm are revenue villages of the Port Blair tehsil. Government secondary schools at Junglighat, Delanipur and Dairy Farm, and a senior secondary school at School Line, are on the Directorate of Education\'s list of CBSE-affiliated schools. Bathubasti, also written Bathu Basti, has its own bazaar and a mix of houses and apartment buildings.',
+                'Because these localities sit close together, this is the part of the city where one tutor can most easily see two families in an evening. Where a school stops at Class 10, families tend to look for help at the move into Class 11, mostly in science and maths. Where senior classes are nearby, as at School Line, requests lean towards Physics, Chemistry, Biology, Maths and Accountancy. Houses usually mean a doorstep visit; apartment buildings need the floor and flat number.',
+            ],
+            'tips' => [
+                'In a Bathubasti apartment building, tell the tutor the floor, the flat number and where a visitor may park, and start before the evening market gets busy.',
+                'House numbers alone are hard to follow in Junglighat and Delanipur, so add the lane name and a nearby landmark to your request.',
+                'If your child moves to a new school for Class 11, fix the tutor\'s weekly slot after the new timetable is known, not before.',
+            ],
+        ],
+        'Expansion Villages' => [
+            'guide' => 'port-blair-home-tuition-guide',
+            'intro' => [
+                'Garacharma, Dollygunj, Prothrapur, Brookshabad and Austinabad are among the ten villages the island administration planned in 2011 to bring into Port Blair\'s municipal limits, citing a substantial rise in housing and commercial activity next to the town; the limits were expanded in 2015. Garacharma is a census town just outside the old boundary, Prothrapur is one of the larger settlements of South Andaman Island, and only parts of Brookshabad and Austinabad were included, so some homes sit inside the city and some just outside.',
+                'Homes here are mostly houses on their own plots, so tutors usually come straight to the door, but newer lanes are hard to find from a number. Prothrapur has a CBSE-affiliated government senior secondary school, which keeps Class 11 and 12 demand local. Tutors who live in the centre may travel out only on set days, so a weekend home class paired with online lessons in the week is a common pattern, and it also helps on wet monsoon evenings.',
+            ],
+            'tips' => [
+                'Send a map pin and a landmark before the first visit; newer homes on plotted land are rarely found from the house number alone.',
+                'Agree the weekly pattern before the demo, since a tutor coming from the central localities may be able to visit only on fixed days.',
+                'For Class 11 and 12, pair a home tutor for the main subject with an online specialist for a second subject such as physics or accountancy.',
+            ],
+        ],
+    ],
+    // Leh (7 Oct 2026, capital launch), from database/seo-content/areas/leh-zone-guides.json.
+    'Leh' => [
+        'Leh Town Centre' => [
+            'guide' => 'leh-home-tuition-guide',
+            'intro' => [
+                'Main Bazaar and the old town, Housing Colony, Changspa and Sankar make up the centre of Leh. The bazaar is the town\'s commercial heart, and the old town rises behind it towards the palace, with Manikhang, marked by four large stupas, between the bazaar and the old Stalam path. Housing Colony has its own main market and community hall. Changspa climbs towards the hilltop stupa, and Sankar is a quiet village of homes and fields just north-west of town.',
+                'Because these localities sit close together, this is the part of Leh where one tutor can most easily teach several families in a single evening. Homes vary a great deal, though: old-town houses are reached on foot through narrow lanes, Housing Colony is a planned colony with clear markets to steer by, and Changspa and Sankar are uphill, so tutors usually come by two-wheeler or car. A clear lane landmark matters more than any house number.',
+            ],
+            'tips' => [
+                'For an old-town home, name the nearest lane landmark and describe the walk from the bazaar; newcomers rarely find these houses from an address alone.',
+                'In Housing Colony, the main market or the community hall is the easiest meeting point for a tutor\'s first visit.',
+                'The bazaar is busiest in the summer months, so early-morning or later-evening slots tend to start on time more often.',
+            ],
+        ],
+        'Choglamsar, Spituk & West' => [
+            'guide' => 'leh-home-tuition-guide',
+            'intro' => [
+                'Choglamsar, Spituk, Saboo and Phyang lie south and west of Leh town. Choglamsar, a census town on the Indus with 10,754 people in 2011, is where the Leh–Manali Highway turns north towards Leh, and it mixes homes with offices and nurseries. Spituk, a census town of 4,047 residents, is mainly family houses. Saboo shares Choglamsar\'s postal area, and Phyang, to the west, is a long village of eight clusters along a south-facing valley.',
+                'The road pattern is what helps tutors here. Two circular roads join Choglamsar to Leh, one passing through Spituk and the other through Saboo, so a tutor can cover several homes in a loop without returning through the bazaar. Phyang is further out and stands on its own, so families there often rely on weekend home lessons, afternoon slots or online classes. Most homes have a doorstep entrance rather than a gate.',
+            ],
+            'tips' => [
+                'In Phyang, name your cluster, such as Tsakma, Gaon or Mankhang, because the village is long and each cluster has its own lanes.',
+                'Ask for a tutor who already uses the Spituk or Saboo road; a route that passes your door is the one most likely to last all year.',
+                'The highway is busiest in summer, so keep lessons clear of its heaviest hours, and agree early which winter weeks move online.',
+            ],
+        ],
+        'Indus Valley South & East' => [
+            'guide' => 'leh-home-tuition-guide',
+            'intro' => [
+                'Stok, Chuchot, Shey and Thiksey are the villages of the Indus valley south and east of Leh. Stok, in Chushot tehsil on the river\'s southern bank, recorded 300 households in 2011 and lies below the Stok Chu valley. Chuchot is three villages: Gongma on the riverbank, Yokma, and Shamma along the Hemis road. Shey and Thiksey sit upriver on the road east, and Thiksey is the headquarters of its own block and tehsil.',
+                'Homes here are spread out among fields and reached at the doorstep, usually with space to park, so the route is the thing to settle first. Since 2019 a suspension bridge over the Indus has linked Choglamsar with Chuchot Yokma and Stok, which brings tutors living on the Choglamsar side much closer. Further east, a tutor already teaching in Shey can often take on a family in Thiksey on the same trip.',
+            ],
+            'tips' => [
+                'In Chuchot, say whether you live in Gongma, Yokma or Shamma; each village has its own lanes and landmarks.',
+                'For Stok and Chuchot Yokma, look first at tutors based in Choglamsar, who can cross by the bridge rather than going round by road.',
+                'Weekend home lessons with one or two online hours on weekdays suit families in Shey and Thiksey, especially through the long winter break.',
+            ],
+        ],
+    ],
 ];

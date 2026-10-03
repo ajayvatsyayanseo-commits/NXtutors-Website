@@ -1,0 +1,50 @@
+{
+  "Itanagar North (Chimpu & Ganga)": {
+    "guide": "itanagar-home-tuition-guide",
+    "intro": [
+      "Chimpu, Chandranagar, Vivek Vihar and Ganga Market make up the northern end of Itanagar, where the municipal area begins and the Chimpu and Senki rivers meet. Chimpu is largely official campuses and staff quarters, Chandranagar has its market and forest colony above the highway, Vivek Vihar climbs from the Senki towards a hilltop part and the Jollang Road, and Ganga Market is a main shopping street with banks and the sectors behind it.",
+      "Visits here fall into two patterns. Many families live in government colonies where the guard at the gate asks a visitor's name, so the tutor's details should reach the gate before the first lesson. Others live in private houses on the hillsides, where a tutor parks outside and walks straight in. Ganga Market's shared-taxi counter and auto stand help tutors who do not drive, since they can ride in and walk the last stretch."
+    ],
+    "tips": [
+      "If you live in a staff colony in Chimpu or Chandranagar, give the gate the tutor's name and the lesson time a day ahead of the demo.",
+      "Tutors arriving by shared taxi can get down at Ganga Market; tell them which sector lane to walk up, such as H Sector or the Old Ganga Market side.",
+      "Avoid the evening market rush and office hours on the highway; a late-afternoon or weekend-morning slot is the steadiest choice here."
+    ]
+  },
+  "Central Itanagar": {
+    "guide": "itanagar-home-tuition-guide",
+    "intro": [
+      "Central Itanagar runs from E-Sector, opposite the Civil Secretariat, past Bank Tinali and Niti Vihar to C-Sector and the Zero Point junction. Offices, bank branches, markets and government housing sit side by side. Niti Vihar is the quiet residential part, with official bungalows and staff colonies, while C-Sector has a daily market road climbing from the highway and Zero Point leads on to A and B Sectors and the ridge near the old brick Ita Fort.",
+      "Because this is the administrative centre, timing matters more than distance. The stretch in front of the Secretariat and the Bank Tinali junction fill up when offices and schools close, so early-evening and weekend lessons are easier to keep. Official compounds usually check visitors at the gate, private houses mean doorstep arrival, and parking is tight near the markets, which makes a two-wheeler or shared taxi the tutor's most practical way in."
+    ],
+    "tips": [
+      "Say whether you are in an official compound or a private house in Niti Vihar or C-Sector, so the tutor knows whether to expect a gate check.",
+      "Near Bank Tinali or the C-Sector market, suggest where a two-wheeler can be left, since parking close to the shops is limited.",
+      "Fix lessons after the office closing rush on the Secretariat stretch; a tutor from E-Sector or Bank Tinali can then cover the whole zone."
+    ]
+  },
+  "Naharlagun & Papu Nallah": {
+    "guide": "itanagar-home-tuition-guide",
+    "intro": [
+      "Papu Nallah, Barapani, Polo Colony and Naharlagun form the second town of the capital region and the stretch that links it to Itanagar. Papu Nallah sits midway on the highway with hillside colonies on both sides, Barapani is Naharlagun's western entry beside the Pachin River, Polo Colony is a residential slope above the Lagun and Pachin rivers, and Naharlagun spreads from its daily market and A and B Sectors up to G Extension.",
+      "Naharlagun is a foothill town run as part of the Itanagar Capital Complex, and its railway station, opened in April 2014, links the region with Guwahati and Delhi. For tuition, most homes are government quarters or independent houses, so arrival is either a quick name at the gate or straight to the door. Tutors living in Naharlagun cover Barapani and Polo Colony easily, while Papu Nallah can be reached from either town."
+    ],
+    "tips": [
+      "For homes in E, F or G Sector or G Extension, tell the tutor to take an auto from the daily market for the climb rather than walking up.",
+      "In Papu Nallah, a tutor from Zero Point or from Barapani can both work well; mention which side of the highway your lane is on.",
+      "Through traffic between the two towns peaks in the morning and evening, so a slot after the evening rush keeps the lesson on time."
+    ]
+  },
+  "Nirjuli, Banderdewa & Doimukh": {
+    "guide": "itanagar-home-tuition-guide",
+    "intro": [
+      "Nirjuli, Banderdewa and Doimukh are the smaller towns at the south-eastern end of the capital region. Nirjuli lies on NH-415 beyond Naharlagun, with the Par and Dikrong rivers nearby and a large technical campus divided by the highway. Banderdewa sits on the Dikrong at the Assam border, where NH-415 begins, and is the main check gate between the two states. Doimukh is a separate subdivision and block of Papum Pare district.",
+      "Fewer tutors live in these towns, so families often pair a home tutor from Naharlagun for the main subject with online lessons for the rest. A regular weekly slot makes the journey worthwhile for a visiting tutor. Staff and campus colonies register visitors at the gate, while private houses mean doorstep arrival. A tutor coming from outside Arunachal Pradesh may need a permit, so they should check the official rules before the first visit."
+    ],
+    "tips": [
+      "Ask for a tutor from Naharlagun or Nirjuli and offer a fixed weekly time, which makes the trip to Banderdewa or Doimukh practical.",
+      "Keep one lesson a week online for subjects where no local tutor is free; the same tutor can often teach both ways.",
+      "If a tutor is travelling in from Assam, ask them to check the official permit rules well before the demo date."
+    ]
+  }
+}

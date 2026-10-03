@@ -1,0 +1,108 @@
+{
+  "intro": [
+    "Agartala is a compact capital on the plains of the Haora River that rises into low hills on its northern side, and the municipal corporation groups its wards into four zones. North Agartala takes in Kunjaban, Indranagar and Abhoynagar; Central Agartala is the old core around Krishnanagar, Ramnagar, Banamalipur, Joynagar and Melarmath; East Agartala runs through Dhaleswar, Shibnagar and Jogendranagar; and South Agartala covers Badharghat, Arundhutinagar and Pratapgarh. Homes are a mix of houses on lanes and flats in buildings with a gate. Tutors get about by two-wheeler, auto or city bus, and the flyover from Police Lines to Fire Brigade Chowmuhani links the southern wards with the centre.",
+    "Schools in Agartala follow the Tripura Board of Secondary Education, CBSE or CISCE, and a smaller number of students take an international board. TBSE conducts the Madhyamik examination at Class 10 and the Higher Secondary (+2 stage) examination at Class 12, and its official website carries the syllabus for Classes 9 to 12, model question papers and the academic calendar. A tutor for a TBSE student should teach from that syllabus and take patterns and dates only from the board's own site, never from forwarded copies. On your profile, state the boards and classes you teach and the language you teach in.",
+    "Home and online lessons both fit in Agartala. When a Dhaleswar family requests a tutor, NXTutors puts forward two or three, considering tutors in Dhaleswar first, then those who travel there, then the rest of the city, then online tutors, and the family sees each fee before a free first demo. Switching later is free for them. Timing shapes the week more than distance does: market days in Krishnanagar, evenings near Battala Bazaar, school hours in Dhaleswar and festival dates in the north. You can also teach students elsewhere in Tripura or India online, which suits senior and specialist papers."
+  ],
+  "zone_notes": {
+    "North Agartala": "North Agartala climbs from the plains into low hills, so a trip up to Kunjaban means the hill road, which a two-wheeler handles easily. Indranagar and Abhoynagar sit side by side, and a tutor living in either, or in Banamalipur, can cover both. Note the festival dates: the three-day Diwali fair at the Indranagar temple and the spring festival at Abhoynagar fill local roads, so offer online lessons on those days.",
+    "Central Agartala": "The centre is the old core, and tutors cross it from every side. Timing decides punctuality: Krishnanagar's market runs on Tuesday and Friday, Battala Bazaar beside Joynagar is busiest in the evening, and office hours fill the main roads. Ramnagar's numbered divisions make homes easy to find; in Krishnanagar and Joynagar ask for a lane landmark, and plan online lessons for the Durga Puja immersion days near Joynagar.",
+    "East Agartala": "The east is chiefly residential, with directions built around chowmuhanis such as Ashram Chowmuhani and Math Chowmuhani in Dhaleswar, and Station Road in Jogendranagar. School opening and closing bring extra traffic in Dhaleswar, so later afternoon slots run more smoothly. Shibnagar and Jogendranagar are each split into several wards, so confirm the ward before the first visit; Jogendranagar station also has passenger trains towards Agartala.",
+    "South Agartala": "Agartala's main railway station is listed at Badharghat, and its surroundings get busier around train times, so leave a margin for lessons nearby. The flyover from Police Lines to Fire Brigade Chowmuhani makes the south reachable for tutors living in the centre, and the reverse. Arundhutinagar spans two wards and Pratapgarh three, one of them in the Central zone, so ask the family for the ward name as well as a landmark."
+  },
+  "boards": "Agartala tutors teach students of the Tripura Board of Secondary Education, CBSE and CISCE's ICSE and ISC, and a smaller number following the IB or Cambridge IGCSE. TBSE conducts the Madhyamik examination at Class 10 and the Higher Secondary examination at Class 12; its syllabus, model question papers and academic calendar are on its official website. CBSE sample papers and marking schemes are on the CBSE academic site, and ICSE and ISC regulations on the CISCE site. Say on your profile which boards and classes you teach.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Tripura Board of Secondary Education (TBSE)",
+      "site": "https://tbse.tripura.gov.in/",
+      "classes": "Madhyamik (Class 10); Higher Secondary, +2 stage (Class 12)",
+      "note": "TBSE, set up under the Tripura Board of Secondary Education Act, 1973, conducts the Madhyamik examination for Class 10 and the Higher Secondary examination for Class 12. Its site publishes the syllabus for Classes 9 to 12, model question papers and the academic calendar. Teach from that syllabus, practise on the official model papers, and check dates there rather than in forwarded messages.",
+      "page": "/tripura-board-tutor-agartala"
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "Agartala's CBSE students sit alongside TBSE and CISCE ones, so confirm which board a child follows before the demo, since chapter order and paper styles differ. Build lessons on the NCERT textbooks, practise with CBSE sample papers and their marking schemes, and for senior students link chapter work to JEE or NEET preparation when the family asks for it.",
+      "page": "/cbse-home-tutor-agartala"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "ICSE at Class 10 and ISC at Class 12 set long written papers over a broad syllabus, so revision has to come round more than once, with steady practice in full written answers. Tutors in Agartala who know these papers can also teach ISC subjects online to students elsewhere in India. Read the regulations and specimen papers on cisce.org."
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "Few Agartala students take the IB Diploma, and their families usually find the right specialist online. The programme assesses coursework as well as final papers, and a tutor may guide an Internal Assessment or Extended Essay but must never write it. Use the subject guides on ibo.org and the school's own assessment calendar."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "Agartala has a small group of IGCSE learners, most of them taught online. Practise past papers against the official mark schemes, teach the command words, and confirm the tier and whether the school uses Cambridge or Pearson Edexcel before planning the year. Syllabuses are on cambridgeinternational.org."
+    }
+  ],
+  "women": {
+    "intro": "Women tutors are welcome on NXTutors in Agartala, whether you want to teach at homes, online or a mix of the two. The localities you add decide where home requests come from: someone living in Dhaleswar could stay among the East zone chowmuhanis, someone in Ramnagar within its numbered divisions and the neighbouring wards, and anyone further off can learn with you online. The same ID check applies to every tutor, we ask a parent to be at home for the demo, and one safeguarding policy applies to families and tutors. Read these as working controls, not as promises about individual families.",
+    "points": [
+      "Pick home, online or hybrid teaching and switch the setting as your plans change.",
+      "Add only the localities you want to visit; staying inside your own zone and skipping cross-centre trips at office hours is fine.",
+      "Every new family starts with a free demo, and we ask a parent to be at home for it.",
+      "Where a flat has a gate, ask the family to give your name at the gate ahead of the first visit.",
+      "Settle fees, timetable and messages with a parent, not the student.",
+      "Teach young children in a shared room with an adult in the house, and keep cameras on for online lessons.",
+      "Registration needs a one-time code on your phone or email plus a government photo ID for the team to review.",
+      "If something seems wrong, end the lesson and tell NXTutors under Safeguarding; for an emergency, ring 112 first."
+    ]
+  },
+  "story": [
+    "Sign up with a one-time code sent to your phone or email, then add your subjects, classes and boards, whether TBSE, CBSE or ICSE, and the Agartala localities you can reach.",
+    "Next, upload a government photo ID. The team looks at it before your profile appears; it confirms who you are and is not a police or background check, and every tutor goes through it alike.",
+    "Once the check is passed, your profile goes live with the Verified badge, showing your boards and classes, the localities you cover from Kunjaban to Badharghat, the mode you teach in and your fee.",
+    "A parent in Ramnagar or Shibnagar sends a request. NXTutors suggests two or three tutors, nearest first, then those who travel to that locality, then the rest of Agartala and online tutors.",
+    "The parent sees your fee before booking anything. Your first class there is a free demo, we ask a parent to be at home for it, and you get to see the student, the lane and the route.",
+    "Then teach at homes in your localities, online for students across Tripura and India, or both, perhaps home lessons through the week and online classes on Durga Puja or other festival days."
+  ],
+  "faqs": [
+    [
+      "How does a tuition request in Agartala come to me?",
+      "A parent enters the class, board, subjects, locality and landmark, and chooses home, online or both. NXTutors puts together two or three tutors, starting with the same locality, then tutors who travel there, then elsewhere in Agartala, then online. Clear localities and boards on your profile are what put you on that list."
+    ],
+    [
+      "Can I teach students outside Tripura online from Agartala?",
+      "Yes. Online students can be anywhere in India, so a tutor might take home lessons near Krishnanagar and online lessons for a family in another state. A family wanting home tuition is shown nearby tutors first; one that picks online lessons can be matched with a tutor in any city, including you."
+    ],
+    [
+      "Which Agartala localities belong on my tutor profile?",
+      "The ones you can reliably reach at lesson time every week. Living in Dhaleswar, you might add Shibnagar, Banamalipur and Indranagar; living in Badharghat, perhaps Arundhutinagar, Pratapgarh and, over the flyover, Melarmath. Families are better served by a short list you can keep than by a long one you cannot."
+    ],
+    [
+      "What does the ID check involve for an Agartala tutor?",
+      "Two steps: a one-time code confirms your phone number or email, and you upload a government photo ID that the team reviews before your profile is published. Passing adds a Verified badge. The check is about identity alone, not police or background records; /how-we-verify-tutors has the details."
+    ],
+    [
+      "Do tutors pay to join NXTutors in Agartala?",
+      "Yes. Tutor plans are paid, and the plans with their inclusions are set out on /pricing. What you charge for lessons is your own decision, shown to families before their free first demo. Because a family can switch tutor at no cost, careful, regular teaching is what keeps a student."
+    ],
+    [
+      "As a woman tutor in Agartala, can I limit home visits to my own area?",
+      "Yes. Home requests follow the localities on your profile, so you might take home students only around Krishnanagar or Joynagar and teach the rest online. We ask a parent to be at home for the free demo, which lets you meet the family before you commit to a timetable."
+    ],
+    [
+      "Which boards can I teach in Agartala?",
+      "Students here follow the Tripura Board of Secondary Education, CBSE or CISCE's ICSE and ISC, and a smaller number take the IB or Cambridge IGCSE, usually with online specialists. For TBSE Madhyamik and Higher Secondary students, work from the board's syllabus and model question papers on its official website."
+    ],
+    [
+      "Can one Agartala family have both home and online lessons with me?",
+      "Yes. Select both modes and agree the mix with the parent after the demo. One workable pattern is home lessons in ordinary weeks and online classes on festival days, such as the Durga Puja immersion days in Joynagar or the Diwali fair near Indranagar, so lessons carry on without a gap."
+    ]
+  ]
+}

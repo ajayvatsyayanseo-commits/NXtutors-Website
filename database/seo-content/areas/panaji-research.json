@@ -1,0 +1,277 @@
+{
+  "areas": {
+    "fontainhas": {
+      "name": "Fontainhas",
+      "zone": "Central Panaji & Altinho",
+      "type": "mixed",
+      "about": "<p>Fontainhas is the old Latin quarter of Panaji, built on reclaimed land at the foot of Altinho hill with Ourem Creek on its eastern side. It took shape in the late eighteenth century, and its houses still follow the Portuguese colonial style: colourful facades in pale yellow, green or blue, red-tiled roofs and narrow, winding streets. Together with Sao Tome and Mala, it forms the heritage core of the city, and Portuguese is still heard in many homes here.</p><p>For a tutor, this is a neighbourhood of old family houses opening straight onto the lane, so doorstep arrival is normal and there is no society gate to clear. The streets are narrow and parking is tight, so many tutors walk in from the main city roads or come on a two-wheeler. Visitors fill the lanes during the annual February art festival and in the main tourist season, so a weekday afternoon or early evening slot is the easiest time for a class. Families in Altinho and the city-centre wards are next door. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Fontainhas_(quarter)",
+        "https://en.wikipedia.org/wiki/Panaji",
+        "https://en.wikipedia.org/wiki/Corporation_of_the_City_of_Panaji"
+      ]
+    },
+    "altinho": {
+      "name": "Altinho",
+      "zone": "Central Panaji & Altinho",
+      "type": "mixed",
+      "about": "<p>Altinho, whose Portuguese name means high, is the hill neighbourhood that rises above central Panaji and the Fontainhas quarter. It is one of the city's long-established residential areas, with government servant quarters and official residences alongside private homes. The hill also holds several central and state government offices and the city's radio and television station complexes, so offices and homes sit side by side on its slopes.</p><p>Because much of the housing is government accommodation or older independent homes, a tutor visit usually means a doorstep arrival; in staff quarters, share the block or quarter number in advance in case the gate staff ask. The roads up the hill are narrow and wind round the slope, so a tutor coming from the city centre or Fontainhas below is a practical choice, and parking near the house is worth confirming before the first class. Office hours bring extra traffic to the hill on weekdays, so a slot after offices close tends to be calmer. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Altinho,_Goa",
+        "https://en.wikipedia.org/wiki/Panaji",
+        "https://en.wikipedia.org/wiki/Corporation_of_the_City_of_Panaji"
+      ]
+    },
+    "campal": {
+      "name": "Campal",
+      "zone": "Central Panaji & Altinho",
+      "type": "mixed",
+      "about": "<p>Campal lies in the northern part of Panaji. It was laid out as a commercial zone in 1830 and today combines homes with some of the city's main public venues: a major arts and cultural centre, the state's main indoor sports complex, a football ground, a multiplex cinema and the grounds used for trade fairs and exhibitions. A tall historic cannon marks the roadside entrance to the area.</p><p>Families here live close to the city centre, Miramar and the Fontainhas side of Panaji, so tutors who already teach in central wards can reach Campal easily. Exhibitions, festivals and events at the cultural venues can bring heavy traffic and parking pressure to the main road, so it helps to check the events calendar and avoid fixing the first demo class on a big event day. Give the tutor a clear landmark and say whether your home is a flat or a house; for apartment buildings, tell the guard to expect the visitor. Online classes are a simple backup during busy festival weeks. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Campal",
+        "https://en.wikipedia.org/wiki/Panaji"
+      ]
+    },
+    "st-inez": {
+      "name": "St Inez",
+      "zone": "Central Panaji & Altinho",
+      "type": "mixed",
+      "about": "<p>St Inez, also written Santa Inez, is a ward of the Corporation of the City of Panaji on the south side of the city centre. It takes its name from the St Inez creek, one of the two creeks that bound Panaji, which rises from the fields and hills of Taleigao, Caranzalem and Dona Paula and flows into the Mandovi. Taleigao lies to its south, and Tonca, Miramar and Boca de Vaca are close by.</p><p>The area mixes homes with busy shopping complexes, so many families live in apartment buildings above or behind shops, with older houses in the side lanes. For a building, share the floor and flat number and the guard's phone number; for a house, a clear landmark helps on the first visit. The roads around the shopping complexes are busiest in the evening, so a late-afternoon slot or a fixed weekend morning keeps classes on time. Tutors living in Taleigao, Campal or central Panaji can usually reach St Inez quickly, and online lessons suit specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Corporation_of_the_City_of_Panaji",
+        "https://en.wikipedia.org/wiki/Panaji",
+        "https://en.wikipedia.org/wiki/St_Inez_Creek",
+        "https://en.wikipedia.org/wiki/Taleig%C3%A3o"
+      ]
+    },
+    "miramar": {
+      "name": "Miramar",
+      "zone": "Miramar, Dona Paula & Taleigao",
+      "type": "residential",
+      "about": "<p>Miramar is Panaji's beach neighbourhood, where the Mandovi river meets the Arabian Sea. Known in Portuguese times as Porta de Gaspar Dias, it is one of only two beaches inside the city, the other being Caranzalem. Away from the seafront, Miramar is a residential area with several colleges and schools, a long-established tennis club and cafes, and it falls within the Corporation of the City of Panaji alongside Tonca and Caranzalem.</p><p>The beach is one of the most visited in Goa and stays busy through the year, so the seafront road can be slow in the evening and at weekends. For a home tuition, ask the tutor to approach through the inner residential roads and fix a regular weekday slot. Many homes are in apartment buildings where visitors sign in at the gate, so share the building name, flat number and a phone number for the guard. Campal, Tonca and Caranzalem are neighbours, and tutors from St Inez or central Panaji are well placed. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Miramar,_Goa",
+        "https://en.wikipedia.org/wiki/Panaji",
+        "https://en.wikipedia.org/wiki/Corporation_of_the_City_of_Panaji"
+      ]
+    },
+    "caranzalem": {
+      "name": "Caranzalem",
+      "zone": "Miramar, Dona Paula & Taleigao",
+      "type": "residential",
+      "about": "<p>Caranzalem is a neighbourhood on the west side of Panaji, on Tiswadi island, reached through Miramar along the Miramar to Dona Paula road, which runs parallel to its long sandy beach. Its principal wards include Aivao, Bazar Vaddo, Borchem Bhat, Cavialvaddo, Dando, Firgozvaddo and Quevnem, and the parish also takes in the Dona Paula side. It is part of the Corporation of the City of Panaji.</p><p>Caranzalem is known locally as a fishing centre, and its old wards keep a village layout, so many homes sit in lanes off the beach road while others are in apartment buildings. In a ward house, the tutor can usually come to the door, but a ward name and a landmark such as the church help on the first visit. In a building, the guard will normally note visitor details. The beach road draws visitors in the tourist season, so evening slots on weekdays are steadier than weekends. Miramar, Taleigao and Dona Paula are next door, which widens the pool of nearby tutors. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Caranzalem",
+        "https://en.wikipedia.org/wiki/Taleig%C3%A3o",
+        "https://en.wikipedia.org/wiki/Corporation_of_the_City_of_Panaji"
+      ]
+    },
+    "dona-paula": {
+      "name": "Dona Paula",
+      "zone": "Miramar, Dona Paula & Taleigao",
+      "type": "residential",
+      "about": "<p>Dona Paula is the southern headland of Panaji, at the point where the Mandovi and Zuari rivers meet before flowing into the Arabian Sea. It was earlier called Oddavell, and it is both a residential neighbourhood and one of the city's well-known viewpoints. The Governor's official residence and a national ocean research institute are located here, and the area sits next to Caranzalem, Taleigao and Odxel.</p><p>Life here changes with the season: the viewpoint road gets crowded during the tourist months, while the monsoon is calm. Families often plan tuition around this, keeping a regular weekday slot and allowing extra travel time on holiday weekends. Whether you live in a house or an apartment building, tell the tutor which approach road to take and confirm parking before the first visit. Tutors who already teach in Caranzalem or Taleigao can reach Dona Paula easily, and online classes work well for higher-class specialist subjects. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dona_Paula",
+        "https://en.wikipedia.org/wiki/Panaji",
+        "https://en.wikipedia.org/wiki/Caranzalem"
+      ]
+    },
+    "taleigao": {
+      "name": "Taleigao",
+      "zone": "Miramar, Dona Paula & Taleigao",
+      "type": "mixed",
+      "about": "<p>Taleigao is a neighbourhood in the south of Panaji on Tiswadi island, bordered by the Arabian Sea to the west, fields to the east, Odxel, Vaiguinim and Dona Paula to the south and St Inez and Bhatlem to the north. In Portuguese times it was a rice-growing village, but large areas of its farmland have since been built over with high-rise housing, turning it into an urban settlement. The state university campus sits on the Taleigao plateau.</p><p>Most new homes are in apartment buildings, where visitors register at the gate, while the older village wards still have independent houses reached by narrow lanes. Share the building or ward name, a landmark such as the parish church, and a phone number for the gate before the first class. Taleigao is close to St Inez, Caranzalem and Dona Paula, so there is a good chance of finding a tutor living nearby. Traffic towards the city builds on the main roads at office and school times, so an early-evening slot is often easier for both sides. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Taleig%C3%A3o",
+        "https://en.wikipedia.org/wiki/Panaji"
+      ]
+    },
+    "santa-cruz": {
+      "name": "Santa Cruz",
+      "zone": "Santa Cruz, Merces & Ribandar",
+      "type": "residential",
+      "about": "<p>Santa Cruz is a large village lying immediately south-east of Panaji on Tiswadi island and works as a suburb of the capital. The Char Khambe junction marks the edge between the busy city and the quieter village. Santa Cruz is divided into eleven wards, including Bandh Vaddo, Bondir, Cabesa, Primeiro Bairro and Segundo Bairro, and it borders Merces to the north-east, Bambolim to the south-east and Taleigao to the south-west, with the Ourem estuary to the north.</p><p>Much of the old paddy land has turned into housing, so the village now mixes family houses in the wards with apartment buildings closer to the main roads. The old Santa Cruz to Panaji road and the national highway are the main links, so tutors travelling from the city or Taleigao should be told which side of the village to enter. For houses, a ward name and a landmark are enough; for buildings, share the gate details. Morning and evening traffic on the city road is the main thing to plan a class around. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Santa_Cruz,_Goa",
+        "https://en.wikipedia.org/wiki/Panaji"
+      ]
+    },
+    "merces": {
+      "name": "Merces",
+      "zone": "Santa Cruz, Merces & Ribandar",
+      "type": "residential",
+      "about": "<p>Merces lies in the north-eastern part of Panaji, entirely on Tiswadi island, between the Mandovi and Bambolim. It is governed by its own village panchayat and shares an assembly constituency with neighbouring Santa Cruz. Its postcode is 403005, and it is linked by road to Panaji, Bambolim, Miramar and Caranzalem, so families here look to the city for work, shopping and studies.</p><p>Housing in Merces is a mix of village homes, villas and newer apartments, so the tutor's first visit is easiest with a clear landmark, the ward name and, for a building, the flat number and the guard's contact. Tutors coming from Panaji, Santa Cruz or Ribandar usually travel by two-wheeler or car, and a regular weekday slot outside office travel times keeps classes predictable. Karmali on the Konkan Railway is the nearest railway station to the capital and lies in Tiswadi taluka on this eastern side of the city. For specialist board subjects, online classes are a practical way to widen the choice of teacher. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Merces,_Goa",
+        "https://en.wikipedia.org/wiki/Panaji",
+        "https://en.wikipedia.org/wiki/Karmali_railway_station"
+      ]
+    },
+    "bambolim": {
+      "name": "Bambolim",
+      "zone": "Santa Cruz, Merces & Ribandar",
+      "type": "mixed",
+      "about": "<p>Bambolim is a census town in the south-eastern part of Panaji, entirely on Tiswadi island. It is known mainly as the home of the state's medical college and its large hospital campus, and it also has its own beach. Santa Cruz lies to its north-west and Merces to its north, while Siridao sits at the southern end of the city.</p><p>Because a large institutional campus sits next to the residential pockets, families in gated quarters or apartment buildings should arrange gate entry for the tutor, while those in village houses can simply share a landmark. Tell the tutor which gate or approach road to use and share a contact for the security desk. Bambolim is on the eastern edge of the city, so it is worth asking a tutor from Santa Cruz, Merces or Taleigao rather than someone from the north bank. Karmali on the Konkan Railway is the nearest railway station to the capital for visitors travelling by train. Shift-working parents often find a fixed online slot easier to manage. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bambolim",
+        "https://en.wikipedia.org/wiki/Santa_Cruz,_Goa",
+        "https://en.wikipedia.org/wiki/Panaji",
+        "https://en.wikipedia.org/wiki/Karmali_railway_station"
+      ]
+    },
+    "ribandar": {
+      "name": "Ribandar",
+      "zone": "Santa Cruz, Merces & Ribandar",
+      "type": "residential",
+      "about": "<p>Ribandar lies between Panaji and Old Goa on Tiswadi island, separated from the city by the Ourem estuary where it meets the Mandovi. It is linked to Panaji by a historic causeway built in 1633 and by a newer road to its south, and its ferry wharf is one of the main ways across to the islands of Chorao and Divar. The name comes from the Konkani for the wharves of the kings, and Ribandar is part of the Corporation of the City of Panaji.</p><p>For a house in the old village, a doorstep visit with a landmark is enough, while an apartment building will need gate details shared in advance. The causeway is the main route from the city, and evening traffic towards Old Goa can make it slow, so agree on a regular slot that avoids the rush. Families on Chorao or Divar who come to Ribandar by ferry often choose online classes for evenings. Karmali station on the Konkan Railway, the nearest railway station to Panaji, is on this eastern side. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ribandar",
+        "https://en.wikipedia.org/wiki/Corporation_of_the_City_of_Panaji",
+        "https://en.wikipedia.org/wiki/Karmali_railway_station"
+      ]
+    },
+    "porvorim": {
+      "name": "Porvorim",
+      "zone": "Porvorim & North Bank",
+      "type": "mixed",
+      "about": "<p>Porvorim sits on the north bank of the Mandovi, directly across the river from Panaji, and lies on the Mumbai to Goa highway, NH 66. Three bridges across the Mandovi, the latest being Atal Setu, connect it to the capital. The Goa Legislative Assembly and the Secretariat work from one complex in Alto Porvorim, the upper part of the town, and a bench of the High Court is also here, so Porvorim is often described as the working capital alongside Panaji.</p><p>The town grew from a village market at the crossroads of the Panaji to Mapusa highway and the Socorro to Sangolda road into a large residential area. Families live in apartment complexes with gate registration as well as independent houses on the side roads, so share the building name or a landmark and a gate contact. The highway and bridge approach are busiest at office times, so tutors coming from Panaji should plan around that. Tutors living in Porvorim itself, Socorro or Penha de Franca are the easiest match. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Porvorim",
+        "https://en.wikipedia.org/wiki/Atal_Setu_(Goa)",
+        "https://en.wikipedia.org/wiki/Panaji"
+      ]
+    },
+    "socorro": {
+      "name": "Socorro",
+      "zone": "Porvorim & North Bank",
+      "type": "residential",
+      "about": "<p>Socorro is a census town in Bardez taluka, on the north side of the Mandovi, and one of the villages that make up greater Porvorim. Its panchayat has seven wards: Ambirna, Arrarim, Carrem, Maina, Porvorim, Vaddem and Zosvaddo. Socorro was once part of the larger village of Serula, which was later divided into Salvador do Mundo, Penha de Franca, Pomburpa and Socorro, and its parish church stands at Zosvaddo.</p><p>Recent growth has brought many new residents and houses to Socorro, so the area mixes old village homes with newer bungalows and apartment buildings. For a first class, share the ward name, a landmark such as the church or the road to Sangolda, and a phone number for any building gate. Tutors from Porvorim reach Socorro by local roads, while those coming from Panaji cross the Mandovi and travel up NH 66, which is busy at office times. A fixed early-evening slot and an online backup for monsoon days work well here. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Socorro,_Goa",
+        "https://en.wikipedia.org/wiki/Porvorim"
+      ]
+    },
+    "penha-de-franca": {
+      "name": "Penha de Franca",
+      "zone": "Porvorim & North Bank",
+      "type": "residential",
+      "about": "<p>Penha de Franca, also known as Britona, is a town in the Bardez sub-district of North Goa, lying north of Panaji on the far bank of the Mandovi. It takes its name from its church's patroness, Nossa Senhora da Penha de Franca, a name shared with a district of Lisbon. It was once part of the old village of Serula, together with Socorro, Pomburpa and Salvador do Mundo, and today it sits beside the Porvorim belt.</p><p>For a house, the tutor can usually come to the door after a phone call for directions, and for a building, share the gate contact. A landmark such as the church and the ward name make the first visit easy. Families often look for a tutor living in Porvorim or Socorro, since crossing from Panaji means using the river bridges and NH 66, which are busiest at office times. For subjects where no tutor lives nearby, online classes with a teacher from elsewhere in Goa or outside the state are a practical choice. Home tutors from nearby areas and online tutors are available on NXTutors, with a free demo class.</p>",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Penha_de_Fran%C3%A7a,_Goa",
+        "https://en.wikipedia.org/wiki/Socorro,_Goa",
+        "https://en.wikipedia.org/wiki/Porvorim"
+      ]
+    }
+  },
+  "zone_facts": {
+    "Central Panaji & Altinho": [
+      {
+        "fact": "Panaji was elevated from a town to a city on 22 March 1843.",
+        "source": "https://en.wikipedia.org/wiki/Panaji"
+      },
+      {
+        "fact": "Panaji's central wards include Sao Tome, Fontainhas, Mala, Portais, Altinho, Cortin, Praca da Igreja, Tar, Bazar, Japao and Boca de Vaca.",
+        "source": "https://en.wikipedia.org/wiki/Panaji"
+      },
+      {
+        "fact": "Besides the Mandovi river, Panaji is bounded by two creeks, Ourem creek and St Inez creek.",
+        "source": "https://en.wikipedia.org/wiki/Panaji"
+      },
+      {
+        "fact": "Fontainhas, the old Latin quarter, lies at the foot of Altinho hill on reclaimed land, with Ourem creek on its east, and dates from around 1770.",
+        "source": "https://en.wikipedia.org/wiki/Fontainhas_(quarter)"
+      },
+      {
+        "fact": "Campal was laid out as a commercial zone in 1830 and is named after Campal de Dom Manuel.",
+        "source": "https://en.wikipedia.org/wiki/Campal"
+      },
+      {
+        "fact": "The KTC bus stand at Patto is Panaji's central bus stand for Kadamba Transport Corporation and other buses.",
+        "source": "https://en.wikipedia.org/wiki/Panaji"
+      },
+      {
+        "fact": "The Corporation of the City of Panaji has 30 wards in 4 zones and became a municipal corporation under the City of Panaji Corporation Act, 2002.",
+        "source": "https://en.wikipedia.org/wiki/Corporation_of_the_City_of_Panaji"
+      }
+    ],
+    "Miramar, Dona Paula & Taleigao": [
+      {
+        "fact": "Miramar lies where the Mandovi river meets the Arabian Sea and was known in Portuguese times as Porta de Gaspar Dias.",
+        "source": "https://en.wikipedia.org/wiki/Miramar,_Goa"
+      },
+      {
+        "fact": "Miramar and Caranzalem are the two beaches within Panaji.",
+        "source": "https://en.wikipedia.org/wiki/Miramar,_Goa"
+      },
+      {
+        "fact": "The Miramar to Dona Paula road runs parallel to Caranzalem beach.",
+        "source": "https://en.wikipedia.org/wiki/Caranzalem"
+      },
+      {
+        "fact": "Dona Paula is at the point where the Mandovi and Zuari rivers meet before entering the Arabian Sea; it was earlier called Oddavell.",
+        "source": "https://en.wikipedia.org/wiki/Dona_Paula"
+      },
+      {
+        "fact": "Taleigao is bordered by the Arabian Sea to the west, Odxel, Vaiguinim and Dona Paula to the south and St Inez and Bhatlem to the north.",
+        "source": "https://en.wikipedia.org/wiki/Taleig%C3%A3o"
+      },
+      {
+        "fact": "Large areas of Taleigao's former farmland have been built over with high-rise housing, turning the village into an urban settlement.",
+        "source": "https://en.wikipedia.org/wiki/Taleig%C3%A3o"
+      }
+    ],
+    "Santa Cruz, Merces & Ribandar": [
+      {
+        "fact": "Karmali railway station, on the Konkan Railway in Tiswadi taluka, is the closest railway station to Panaji; it opened on 24 August 1997.",
+        "source": "https://en.wikipedia.org/wiki/Karmali_railway_station"
+      },
+      {
+        "fact": "Ribandar is linked to Panaji by a causeway built in 1633 across the Ourem estuary, and its ferry wharf serves Chorao and Divar islands.",
+        "source": "https://en.wikipedia.org/wiki/Ribandar"
+      },
+      {
+        "fact": "Santa Cruz lies immediately south-east of Panaji, borders Merces, Bambolim and Taleigao, and has eleven wards.",
+        "source": "https://en.wikipedia.org/wiki/Santa_Cruz,_Goa"
+      },
+      {
+        "fact": "The Char Khambe junction marks the boundary between the city of Panaji and the village of Santa Cruz.",
+        "source": "https://en.wikipedia.org/wiki/Santa_Cruz,_Goa"
+      },
+      {
+        "fact": "Merces lies in north-eastern Panaji between the Mandovi and Bambolim, is governed by a panchayat and shares an assembly constituency with Santa Cruz.",
+        "source": "https://en.wikipedia.org/wiki/Merces,_Goa"
+      },
+      {
+        "fact": "Bambolim is a census town in the south-eastern part of Panaji and has the state's only allopathic medical college.",
+        "source": "https://en.wikipedia.org/wiki/Bambolim"
+      }
+    ],
+    "Porvorim & North Bank": [
+      {
+        "fact": "Porvorim lies on the north bank of the Mandovi, across from Panaji, on the Mumbai to Goa highway NH 66.",
+        "source": "https://en.wikipedia.org/wiki/Porvorim"
+      },
+      {
+        "fact": "The Goa Legislative Assembly and Secretariat function from one complex in Alto Porvorim; the Assembly complex was inaugurated in March 2000.",
+        "source": "https://en.wikipedia.org/wiki/Panaji"
+      },
+      {
+        "fact": "Atal Setu, the third bridge over the Mandovi, links Panaji and Porvorim, carries NH 66 and opened to traffic on 5 February 2019.",
+        "source": "https://en.wikipedia.org/wiki/Atal_Setu_(Goa)"
+      },
+      {
+        "fact": "Porvorim grew from a village market at the crossroads of the Panaji to Mapusa highway and the Socorro to Sangolda road.",
+        "source": "https://en.wikipedia.org/wiki/Porvorim"
+      },
+      {
+        "fact": "Socorro's panchayat has seven wards, including one named Porvorim, and the old village of Serula was divided into Socorro, Penha de Franca, Pomburpa and Salvador do Mundo.",
+        "source": "https://en.wikipedia.org/wiki/Socorro,_Goa"
+      },
+      {
+        "fact": "Penha de Franca lies in Bardez sub-district, north of Panaji.",
+        "source": "https://en.wikipedia.org/wiki/Penha_de_Fran%C3%A7a,_Goa"
+      }
+    ]
+  }
+}

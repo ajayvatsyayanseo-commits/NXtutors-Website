@@ -1,0 +1,108 @@
+{
+  "intro": [
+    "Shimla is a hill city spread along ridges and slopes, and its four zones on NXTutors follow that shape. Ridge, Lakkar Bazar & Jakhu is the compact centre, where cars are not allowed on the Mall Road and tutors often walk; Sanjauli & Dhalli runs east along National Highway 5; Chhota Shimla, Kasumpti & New Shimla is the south-eastern belt of government offices, planned sectors and growing suburbs such as Panthaghati; and Boileauganj, Summer Hill & Totu covers the west, with stations on the Kalka-Shimla Railway and the Inter State Bus Terminal at Tutikandi. For a tutor, the useful question is which of these localities you can get to by lesson time, whether on foot, by bus, on a two-wheeler or by local taxi.",
+    "Students you meet here may follow the Himachal Pradesh Board of School Education, whose Matric (Class 10) and Plus Two (Class 12) examinations are run from its headquarters at Dharamshala, or CBSE, ICSE and ISC under CISCE, or, usually through online lessons, the IB and Cambridge IGCSE. HPBOSE posts its syllabus, model papers and marking guides at hpbose.org; pair those with the prescribed textbooks and rely on the board's notices for every date. Your profile should name the boards you cover and the language of instruction you offer, whether Hindi, English or a mix of the two.",
+    "Housing decides the first visit. Newer apartment buildings in Bharari, Dhalli and the gated projects of Panthaghati and New Shimla may register you at the gate; older houses in Lakkar Bazar, Kasumpti or Summer Hill are often reached by a lane or a flight of steps; and homes near the Jutogh cantonment can have their own entry rules. Every parent request produces two or three suggested tutors, chosen from the same locality first and then from the zone, the city and online, and the family can see your hourly fee before booking the free first lesson. On snow days, or for students across Himachal Pradesh and the rest of India, you can teach online instead."
+  ],
+  "zone_notes": {
+    "Ridge, Lakkar Bazar & Jakhu": "Expect to walk. Cars are not allowed on the Mall Road and Lower Bazaar is a no-vehicle zone, so tutors living in the central wards usually come on foot, and those from further out park lower down. Lakkar Bazar homes sit above shops, Jakhu homes are up steep footpaths, and Bharari's newer buildings may log visitors. Evening and holiday-season crowds on the Ridge make afternoon slots easier, and festival weekends fill the paths up Jakhu Hill.",
+    "Sanjauli & Dhalli": "Sanjauli is the main suburb, and a tutor living there can often cover Dhalli and Bhattakufar as well, since National Highway 5 and the Dhalli tunnel link them. Sanjauli Chowk and the bypass are busiest at office and school hours. Newer Dhalli buildings along the bypass may have a guard and covered parking, while lane houses mean arriving at the door. In the apple trading season, extra trucks use the highway, so build in margin.",
+    "Chhota Shimla, Kasumpti & New Shimla": "Six wards sit side by side here, Chhota Shimla, Kasumpti, Panthaghati, New Shimla, Vikasnagar and Khalini, so a tutor based in one can reach the others. New Shimla's phases and numbered sectors make addresses easy to follow, and Panthaghati's gated projects register visitors at the gate. Office traffic to the Secretariat at the start and end of the working day, plus commuters on the highway through Panthaghati, make late-afternoon and evening lessons the steadier choice; winter brings snow.",
+    "Boileauganj, Summer Hill & Totu": "The western zone is the easiest to reach without a vehicle: buses run through the Boileauganj junction, the Inter State Bus Terminal sits at Tutikandi, and the Kalka-Shimla Railway stops at Summer Hill and at Jutogh for Totu. Parking at the junction is short, Summer Hill homes are reached by lanes and steps, and homes near the Jutogh cantonment can have their own visitor rules. Totu turns foggy in the monsoon, so offer online lessons on those days."
+  },
+  "boards": "Tutors in Shimla teach the Himachal Pradesh Board of School Education (HPBOSE), CBSE, ICSE and ISC, and, mostly online, the IB Diploma and Cambridge or Pearson Edexcel IGCSE. The official places to check patterns are hpbose.org for HPBOSE Matric and Plus Two, cbseacademic.nic.in for CBSE sample papers and marking schemes, cisce.org for ICSE and ISC regulations and specimen papers, ibo.org for IB subject guides, and the Cambridge and Pearson sites for IGCSE syllabi. Name every board you teach, and the language you teach in, on your profile.",
+  "board_cards": [
+    {
+      "key": "state",
+      "name": "Himachal Pradesh Board of School Education (HPBOSE)",
+      "site": "https://hpbose.org/",
+      "classes": "Matric (Class 10); Plus Two (Class 12)",
+      "note": "HPBOSE is headquartered at Dharamshala in Kangra district and runs the state's Matric and Plus Two examinations. Its website carries the syllabus, model papers, step-wise marking guides, competency-based question banks and OMR specimens. Plan lessons around those and the prescribed textbooks, explain in Hindi, English or both as the student prefers, and check dates against the board's notices alone.",
+      "page": "/himachal-board-tutor-shimla"
+    },
+    {
+      "key": "cbse",
+      "name": "CBSE",
+      "site": "https://cbseacademic.nic.in/",
+      "classes": "Classes 1–12",
+      "note": "In Shimla, CBSE students are taught alongside HPBOSE and CISCE learners. NCERT textbooks come first, then practice on the sample papers and marking schemes CBSE itself releases. Fit the timetable to the school day and to local rush hours, such as office time towards the Secretariat or evenings at Sanjauli Chowk.",
+      "page": "/cbse-home-tutor-shimla"
+    },
+    {
+      "key": "cisce",
+      "name": "CISCE (ICSE and ISC)",
+      "site": "https://cisce.org/",
+      "classes": "ICSE (Class 10); ISC (Class 12)",
+      "note": "ICSE in Class 10 and ISC in Class 12 cover a broad syllabus, the papers favour complete and clearly organised written answers, and English includes prescribed literature. Tutors comfortable with these courses can teach close to home and take ISC elective students online from other cities. The regulations and specimen papers are on cisce.org."
+    },
+    {
+      "key": "ib",
+      "name": "IB Diploma Programme",
+      "site": "https://www.ibo.org/",
+      "classes": "Diploma Programme (Classes 11–12)",
+      "note": "Shimla families looking for IB Diploma help usually end up with an online specialist. Coursework such as the Internal Assessment and the Extended Essay carries marks, and tutors coach the student through it without writing any of it. Use the ibo.org subject guides, and list the subjects and the SL or HL levels you cover."
+    },
+    {
+      "key": "igcse",
+      "name": "Cambridge / Pearson Edexcel IGCSE",
+      "site": "https://www.cambridgeinternational.org/",
+      "classes": "IGCSE (Classes 9–10)",
+      "note": "Shimla's IGCSE students often work with online specialists. Scores improve with steady past-paper work checked against official mark schemes, careful reading of command words and the right choice of tier. First confirm whether the school follows Cambridge or Pearson Edexcel, then read that board's syllabus on its own site."
+    }
+  ],
+  "women": {
+    "intro": "Women tutors are welcome on NXTutors in Shimla for home, online or hybrid teaching, on terms they set. A tutor living in New Shimla might take home students only in the south-eastern wards from Khalini to Panthaghati, another in Sanjauli only on the eastern side out to Dhalli, and both can teach anyone further away by video, which also helps on snowy days. The same ID check applies to every tutor who joins, we ask a parent to be at home for the demo, and the safeguarding policy protects both sides. Think of these as the platform's working rules rather than promises about any one family.",
+    "points": [
+      "Choose home, online or both as your mode, and switch it as your weeks change.",
+      "Add only the localities you are happy to reach; a late winter trip from Totu over to Dhalli need not be on the list.",
+      "Settle lesson times with the family at the demo, and ask for an earlier finish once winter days get short.",
+      "Regular lessons begin only after a free demo, and we ask a parent to be at home for the demo.",
+      "Where a building in Bharari, Dhalli or Panthaghati has a guard, have the family register your name there so each visit is recorded.",
+      "Talk fees, timings and messages through with a parent rather than with the child.",
+      "Teach younger children in a common room while an adult is at home, and keep the camera on for online lessons.",
+      "If anything feels wrong, stop the lesson and report it to NXTutors through Safeguarding; in an emergency, ring 112 first."
+    ]
+  },
+  "story": [
+    "Begin by entering a one-time code sent to your phone or email, then fill in subjects, classes, boards like HPBOSE, CBSE or ICSE, the language you teach in and the Shimla localities within your reach.",
+    "Next, upload a government photo ID for our team to review before the profile is published. Each ID number is tied to a single tutor account; the review establishes who you are, nothing more.",
+    "After approval, the profile shows your boards, the parts of Shimla you serve, from Sanjauli to Summer Hill, your teaching language and the hourly fee you have chosen.",
+    "A parent in Panthaghati or Boileauganj sends a request. NXTutors suggests two or three tutors, starting with those living closest, then those who already travel into the zone, then the wider city, then online.",
+    "Your fee is visible to the family before anything is booked. Lesson one is a free demo, we ask a parent to be at home for the demo, and you get to see the learner, the route and the timing.",
+    "From there, teach at home in the localities you picked, online for learners elsewhere in Himachal Pradesh or across India, or a mix, for example home visits in autumn and video lessons on snowy days."
+  ],
+  "faqs": [
+    [
+      "How does a Shimla tuition request reach me?",
+      "Through the shortlist. A parent states the class, board, subjects, locality and preferred timings, and NXTutors suggests two or three tutors, beginning with those in that locality and widening to its zone, the rest of Shimla and online. Keeping your localities and boards accurate is what puts you in front of suitable families."
+    ],
+    [
+      "Can I teach students outside Himachal Pradesh online from Shimla?",
+      "Yes. Video lessons are not tied to a place, so you might teach at home near your own ward and take online students from other states. Home-tuition requests show nearby tutors first, while a family anywhere in India that picks online lessons can be matched with you."
+    ],
+    [
+      "Which Shimla localities should I list on my profile?",
+      "The ones you can get to on time, week after week. Someone in Sanjauli might choose Dhalli, Bhattakufar and Bharari; someone in Boileauganj might choose Summer Hill, Tutikandi and Totu. Steps, walking stretches and winter weather all lengthen a journey here, so keep the list realistic rather than long."
+    ],
+    [
+      "What does the ID check involve?",
+      "First you confirm your phone number or email with a one-time code; then you upload a government photo ID, which the team looks at before your profile is published. The check establishes identity and does not include police or background screening. The page /how-we-verify-tutors sets out each step."
+    ],
+    [
+      "Is there a cost to join as a tutor in Shimla?",
+      "Yes, tutor plans are paid, and /pricing explains each plan and what comes with it. The fee for your lessons is a separate matter that you decide. Parents see that fee before the free first demo and can change tutor later without paying, so good teaching is what keeps a student with you."
+    ],
+    [
+      "Can a woman tutor in Shimla take home lessons only near where she lives?",
+      "Yes. Home requests reach you only for the localities on your profile, so you could keep in-person teaching to New Shimla or Summer Hill and teach other students by video. We ask a parent to be at home for the demo, letting you see the household before you commit to a timetable."
+    ],
+    [
+      "Do I need to teach the Himachal board to tutor in Shimla?",
+      "No. Students here may also follow CBSE, ICSE or ISC, and some take the IB or IGCSE, often online. If you take on HPBOSE students, base your teaching on the board's own resources at hpbose.org and the prescribed textbooks, and show every board you teach on your profile."
+    ],
+    [
+      "Can I combine home and online lessons with one Shimla family?",
+      "Yes. Select both modes on your profile and work out the split with the parent after the demo. When heavy rain or snow slows the hill roads, or monsoon fog hangs over Totu, switching that week's class to video keeps the student on schedule without a difficult trip."
+    ]
+  ]
+}
