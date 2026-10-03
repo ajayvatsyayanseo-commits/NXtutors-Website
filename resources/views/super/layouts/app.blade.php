@@ -40,6 +40,12 @@
         <div class="list-group">
           <a class="list-group-item list-group-item-action" href="{{ route('super.dashboard') }}">Dashboard</a>
           <a class="list-group-item list-group-item-action" href="{{ route('super.users.index') }}">Users</a>
+          @php($nxNewEnquiries = \App\Services\Enquiries\EnquiryFeed::newCount())
+          <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="{{ route('super.enquiries.index') }}">
+            Enquiries
+            @if($nxNewEnquiries > 0)<span class="badge bg-warning text-dark rounded-pill" title="New enquiries: {{ $nxNewEnquiries }}">New: {{ $nxNewEnquiries }}</span>@endif
+          </a>
+
           <a class="list-group-item list-group-item-action" href="{{ route('super.blog.index') }}">Blog</a>
 
           <a class="list-group-item list-group-item-action" href="{{ route('super.banner.index') }}">Banner</a>

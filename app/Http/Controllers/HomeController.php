@@ -1396,7 +1396,52 @@ public function cityAreaShow($citySlug, $areaSlug)
           $metakey = $page->meta_keywords ?? null;
           $metadesc = $page->meta_description ?? null;
           return view('contact', compact('page','metatitle','metakey','metadesc'));
-    } 
+    }
+
+    /**
+     * POST /enquiry: the /contact form. This method was missing, so every
+     * contact-page message failed with a server error and was lost. Stored in
+     * contact_enquiries (or demo_leads if the deploy's migration has not run
+     * yet) and listed in Super Admin → Enquiries.
+     */
+    public function storeenquiry(Request $request, \App\Services\Enquiries\EnquiryFeed $feed)
+    {
+        $v = $request->validate([
+            'name' => ['required', 'string', 'max:120'],
+            'email' => ['required', 'email', 'max:191'],
+            'phone' => ['required', 'string', 'max:20', 'regex:/^[0-9+\-\s()]{8,20}$/'],
+            'message' => ['nullable', 'string', 'max:3000'],
+        ]);
+
+        $referer = (string) $request->headers->get('referer', '');
+        $page = \App\Services\Enquiries\EnquiryNormaliser::cleanUrl($referer) ?? url('/contact');
+        $utm = \App\Services\Enquiries\EnquiryNormaliser::utmFrom($referer);
+        $device = \App\Services\Enquiries\EnquiryNormaliser::device($request->userAgent());
+
+        if (\App\Services\Enquiries\EnquirySources::exists('contact_enquiries')) {
+            $row = \App\Models\ContactEnquiry::create([
+                'name' => trim($v['name']),
+                'email' => mb_strtolower(trim($v['email'])),
+                'phone' => trim($v['phone']),
+                'message' => $v['message'] ?? null,
+                'source_page' => $page,
+                'utm' => $utm,
+                'device' => $device,
+            ]);
+            $feed->record('contact_enquiries', $row->id);
+        } else {
+            $row = \App\Models\DemoLead::create([
+                'name' => trim($v['name']),
+                'phone' => mb_substr(trim($v['phone']), 0, 20),
+                'service' => 'contact',
+                'message' => trim(($v['message'] ?? '') . "\nEmail: " . $v['email']),
+                'source_page' => $page,
+            ]);
+            $feed->record('demo_leads', $row->id, ['source' => 'contact', 'device' => $device, 'utm' => $utm]);
+        }
+
+        return redirect()->back()->with('success', 'Thank you. We have your message and will get back to you with tutor options.');
+    }
 
 
  private function getHomeTeachers(int $limit = 6, int $offset = 0, string $search = '', string $place = '')

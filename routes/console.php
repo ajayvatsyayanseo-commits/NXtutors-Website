@@ -73,6 +73,19 @@ Schedule::command('tutors:review-intake')
     ->everyMinute()
     ->withoutOverlapping(5);
 
+// Super Admin > Enquiries: pick up any enquiry stored by a path that does not
+// call EnquiryFeed::record() (sends no emails), and the 9:00 IST morning
+// digest (config enquiries.digest, env ENQUIRY_DIGEST).
+Schedule::command('enquiries:sync')
+    ->everyFifteenMinutes()
+    ->withoutOverlapping(10);
+
+Schedule::command('enquiries:digest')
+    ->dailyAt((string) config('enquiries.digest_time', '09:00'))
+    ->timezone('Asia/Kolkata')
+    ->when(fn () => (bool) config('enquiries.digest', true))
+    ->withoutOverlapping(30);
+
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->purpose('Display an inspiring quote');

@@ -437,6 +437,14 @@ Route::prefix('super')->name('super.')->group(function () {
             ->whereNumber('id')->name('teacher.unverify');
       
       Route::get('teacher/review', [ReviewModerationController::class, 'index'])->name('teacher.review');
+      // Enquiries: every family enquiry from every form, with follow-up (App\Services\Enquiries).
+      Route::get('enquiries', [\App\Http\Controllers\SuperAdmin\EnquiryController::class, 'index'])->name('enquiries.index');
+      Route::post('enquiries/search', [\App\Http\Controllers\SuperAdmin\EnquiryController::class, 'search'])->name('enquiries.search');
+      Route::get('enquiries/export', [\App\Http\Controllers\SuperAdmin\EnquiryController::class, 'export'])->name('enquiries.export');
+      Route::post('enquiries/bulk', [\App\Http\Controllers\SuperAdmin\EnquiryController::class, 'bulk'])->name('enquiries.bulk');
+      Route::get('enquiries/{lead}', [\App\Http\Controllers\SuperAdmin\EnquiryController::class, 'show'])->whereNumber('lead')->name('enquiries.show');
+      Route::post('enquiries/{lead}', [\App\Http\Controllers\SuperAdmin\EnquiryController::class, 'update'])->whereNumber('lead')->name('enquiries.update');
+      Route::post('enquiries/{lead}/duplicate', [\App\Http\Controllers\SuperAdmin\EnquiryController::class, 'duplicate'])->whereNumber('lead')->name('enquiries.duplicate');
       Route::get('refs', [\App\Http\Controllers\SuperAdmin\HandoffController::class, 'index'])->name('refs.index');
       Route::get('ref/{code}', [\App\Http\Controllers\SuperAdmin\HandoffController::class, 'show'])->name('refs.show');
       Route::get('search-gaps', [\App\Http\Controllers\SuperAdmin\SearchGapsController::class, 'index'])->name('search.gaps');

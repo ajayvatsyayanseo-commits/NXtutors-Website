@@ -122,6 +122,12 @@ class WhatsAppController extends Controller
             'known' => (array) ($v['known'] ?? []),
         ]);
 
+        // The demo form saved its enquiry a moment ago in this same session:
+        // show the Ref on it in Super Admin → Enquiries.
+        if ($kind === 'demo_form' && $request->hasSession() && ($leadId = $request->session()->pull('enquiries.demo_lead_id'))) {
+            app(\App\Services\Enquiries\EnquiryFeed::class)->attachRef('demo_leads', (int) $leadId, (string) $h->code);
+        }
+
         $text = $kind === 'demo_form' && ! empty($v['text']) ? (string) $v['text'] : $this->handoffs->textFor($h);
 
         return response()->json(['ok' => true, 'code' => $h->code, 'url' => $this->handoffs->waUrl($text, $h)]);

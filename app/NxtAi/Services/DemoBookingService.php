@@ -95,6 +95,12 @@ final class DemoBookingService
             $locked->result_reference = (string) $lead->id;
             $locked->save();
 
+            // Super Admin → Enquiries, once the booking is committed. Never throws.
+            $leadId = $lead->id;
+            DB::afterCommit(fn () => app(\App\Services\Enquiries\EnquiryFeed::class)->record('demo_leads', $leadId, array_filter([
+                'board' => isset($p['board']) && is_string($p['board']) ? $p['board'] : null,
+            ])));
+
             return [
                 'status' => 'confirmed',
                 'reference' => (string) $lead->id,

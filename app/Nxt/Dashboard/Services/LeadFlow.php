@@ -285,6 +285,14 @@ class LeadFlow
                 'city' => $lead->city,
             ]);
 
+            // Super Admin → Enquiries, once committed (legacy backfills are skipped there). Never throws.
+            if ($lead->legacy_enquiry_id === null && $lead->legacy_demo_lead_id === null) {
+                $leadId = (string) $lead->id;
+                DB::afterCommit(fn () => app(\App\Services\Enquiries\EnquiryFeed::class)->record('nxt_leads', $leadId, array_filter([
+                    'board' => is_string($lead->board ?? null) ? $lead->board : null,
+                ])));
+            }
+
             return $lead;
         });
     }

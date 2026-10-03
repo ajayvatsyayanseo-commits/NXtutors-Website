@@ -74,6 +74,11 @@ $sub_ids = $request->input('sub_id', []);
     }
 
 
+    // Super Admin → Enquiries (and the "New enquiry" email). Never throws.
+    app(\App\Services\Enquiries\EnquiryFeed::class)->record('student_enquiry_managment', $managment->id, [
+        'device' => \App\Services\Enquiries\EnquiryNormaliser::device($request->userAgent()),
+    ]);
+
     $courses = Student_Enquiry_Course::where('enquiry_id', $managment->id)->get();
 
     //dd($courses);
@@ -134,7 +139,17 @@ $sub_ids = $request->input('sub_id', []);
     </html>
     ";
 
-    $headers  = "From: $from\r\n";
+    // Send from the site's own address; the parent's address (validated, no
+    // line breaks) goes in Reply-To, so the header cannot be spoofed or injected.
+    $siteFrom = (string) (config('mail.from.address') ?: 'support@nxtutors.com');
+    if (! filter_var($siteFrom, FILTER_VALIDATE_EMAIL) || str_ends_with($siteFrom, '@example.com')) {
+        $siteFrom = 'support@nxtutors.com';
+    }
+    $replyTo = filter_var(str_replace(["\r", "\n"], '', (string) $from), FILTER_VALIDATE_EMAIL);
+    $headers  = "From: NXTutors <$siteFrom>\r\n";
+    if ($replyTo) {
+        $headers .= "Reply-To: $replyTo\r\n";
+    }
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
