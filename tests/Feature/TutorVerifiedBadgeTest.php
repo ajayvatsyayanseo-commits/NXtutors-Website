@@ -218,7 +218,7 @@ class TutorVerifiedBadgeTest extends TestCase
     {
         Mail::fake();
         $this->tutor(['user_id' => '931', 'is_sample' => 1, 'status' => 'p']);
-        $this->tutor(['user_id' => '932', 'phone' => null, 'email' => null]); // the admin's AI generator: no phone
+        $this->tutor(['user_id' => '932', 'phone' => null, 'email' => null]); // no phone: not a WhatsApp sign-up, so no intake email
         $this->tutor(['user_id' => '933', 'review_notified_at' => now()]);    // existed before the migration
         $this->tutor(['user_id' => '934', 'join_as' => 'student', 'status' => 'p']);
 
@@ -293,5 +293,30 @@ class TutorVerifiedBadgeTest extends TestCase
         $verified = DB::table('register')->whereNotNull('id_verified_at')->pluck('user_id')->sort()->values()->all();
         $this->assertSame(['951', '1997'], $verified);
         $this->assertSame(0, DB::table('register')->where('join_as', 'teacher')->whereNull('review_notified_at')->count(), 'no email for existing tutors');
+    }
+
+    public function test_original_live_tutors_without_a_phone_keep_the_badge(): void
+    {
+        $first = database_path('migrations/seo/2026_10_07_140000_add_id_verified_at_to_register.php');
+        $fix = require database_path('migrations/seo/2026_10_07_142000_restore_verified_for_original_tutors_without_phone.php');
+        (require $first)->down();
+        DB::table('register')->insert([
+            ['user_id' => '961', 'name' => 'Original No Phone', 'join_as' => 'teacher', 'status' => 't', 'is_sample' => 0, 'phone' => null],
+            ['user_id' => '962', 'name' => 'Sample No Phone', 'join_as' => 'teacher', 'status' => 't', 'is_sample' => 1, 'phone' => null],
+            ['user_id' => '963', 'name' => 'Inactive No Phone', 'join_as' => 'teacher', 'status' => 'f', 'is_sample' => 0, 'phone' => null],
+        ]);
+        (require $first)->up();
+        $fix->up();
+
+        $this->assertSame(['961'], DB::table('register')->whereNotNull('id_verified_at')->pluck('user_id')->all());
+        $this->assertTrue(Register::where('user_id', '961')->first()->isIdVerified());
+
+        // A new WhatsApp sign-up after the fix (has a phone) still waits for Approve.
+        $new = $this->tutor(['user_id' => 'NXT-2026-NEW009', 'phone' => '9310300099']);
+        $fix->up();
+        $this->assertNull($new->fresh()->id_verified_at);
+
+        $fix->down();
+        $this->assertNull(DB::table('register')->where('user_id', '961')->value('id_verified_at'));
     }
 }
